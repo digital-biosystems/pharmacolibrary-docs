@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;epoprostenol&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/&quot;},{&quot;label&quot;:&quot;Nicolas_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Blaser_2021_6_keto_prostaglandin_F1&quot;,&quot;label&quot;:&quot;Blaser_2021 \u00b7 6-keto-prostaglandin F1\u03b1&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/pd_Blaser_2021_6_keto_prostaglandin_F1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # epoprostenol — `Epoprostenol_Nicolas2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,9 +23,11 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is epoprostenol's own; they describe 6-keto-prostacyclin F1a. Extracted — 6-keto-prostacyclin F1a: CL 84.9 l h -1, V 23.7 l, kabs 0.688 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k a: this record has 0.688, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has epoprostenol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:55.392879+00:00) predates the upstream re-run (2026-10-05 15:23:21.186765+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `epoprostenol`, measured `6-keto-prostacyclin F1a`.
 
@@ -34,24 +36,24 @@ Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal o
   ·  DOI: [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x)
 
 ## Model component
-<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="extracted" stale="true" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted, plus 3 covariate effects.
+**Parameters:** 5 extracted, plus 3 covariate effects.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, CLm/F, V/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 84.92 | l h -1 | 2.358888888888889e-05 | [l] / [h] | 3.61 | exact (1.0) | Nicolas_2012_table_1:row0:col1, Nicolas_2012_table_1:row0:col2, Nicolas_2012_table_1:row0:col3 | — | not captured |
-| V (l) | `Q61` · V | 23.74 | l | 0.023739999999999997 | [l] | 12.12 | exact (1.0) | Nicolas_2012_table_1:row1:col1, Nicolas_2012_table_1:row1:col2, Nicolas_2012_table_1:row1:col3 | — | not captured |
+| CL (l h -1 ) | `Q351` · CLm/F | 84.92 | l h -1 | 2.358888888888889e-05 | [l] / [h] | 3.61 | exact (1.0) | Nicolas_2012_table_1:row0:col1, Nicolas_2012_table_1:row0:col2, Nicolas_2012_table_1:row0:col3 | — | not captured |
+| V (l) | `Q367` · Vm/F | 23.74 | l | 0.023739999999999997 | [l] | 12.12 | exact (1.0) | Nicolas_2012_table_1:row1:col1, Nicolas_2012_table_1:row1:col2, Nicolas_2012_table_1:row1:col3 | — | not captured |
 | theta_q44_food | `Q900` · theta_q44_food | 1.69 | not captured | not captured | not captured | 3.41 | not captured (not captured) | Nicolas_2012_table_1:row2:col1, Nicolas_2012_table_1:row2:col2, Nicolas_2012_table_1:row2:col3 | — | not captured |
 | theta_q44_food | `Q900` · theta_q44_food | 3.57 | not captured | not captured | not captured | 50.98 | not captured (not captured) | Nicolas_2012_table_1:row3:col1, Nicolas_2012_table_1:row3:col2, Nicolas_2012_table_1:row3:col3 | — | not captured |
 | theta_q83_food | `Q900` · theta_q83_food | 0.22 | not captured | not captured | not captured | 11.33 | not captured (not captured) | Nicolas_2012_table_1:row4:col1, Nicolas_2012_table_1:row4:col2, Nicolas_2012_table_1:row4:col3 | — | not captured |
-| k a | `Q49` · kabs | 0.688 | 1/h | 0.00019111111111111108 | 1/h | not captured | review_gapfill (0.7) | Axelsen_2024:review | — | not captured |
+| estimated apparent clearance | `Q27` · CL/F | 43.9 | L/h | 1.2194444444444445e-05 | L/h | not captured | review_gapfill (0.7) | Vizza_2017:review | — | not captured |
+| apparent volume of distribution | `Q76` · V/F | 458.0 | L | 0.458 | L | not captured | review_gapfill (0.7) | Vizza_2017:review | — | not captured |
+| absorption rate constant | `Q49` · kabs | 2.16 | h−1 | 0.0006000000000000001 | 1/h | not captured | review_gapfill (0.7) | Vizza_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,17 +63,26 @@ Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal o
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'PK parameters' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col1', 'tab_1:row2:col2'])
 - covariate effect for Q44 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q83 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-keto-prostacyclin F1a
+- metabolite 6-keto-prostacyclin f1a: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite 6-keto-prostacyclin f1a: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=6-keto-prostacyclin F1a
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 6 linked by role; re-tagged 6-keto-prostacyclin F1a→parent ×15
+- molar mass: none of 1 PubChem candidate(s) is '6-keto-prostacyclin F1a' (LLM) — left in mass units
+- molar mass: none found for '6-keto-prostacyclin F1a' — its concentrations stay mass-only
+- gap-filled Q27 (CL/F) from Vizza_2017's review values (primary lacked it)
+- gap-filled Q76 (V/F) from Vizza_2017's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Axelsen_2024's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Vizza_2017's review values (primary lacked it)
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (15 record(s))
@@ -79,19 +90,28 @@ Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.083 (1/12 fields) | 11 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[k a]` | 0.688 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[cl]` | 84.92 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 84.92 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q44_food]` | 1.69 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q83_food]` | 0.22 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q83_food]` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q87_food]` | not captured | 3.57 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v]` | 23.74 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v]` | not captured | 23.74 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | epoprostenol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | 6-keto-prostacyclin F1a | unknown | mismatch |
 
 </details>
 
@@ -108,14 +128,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 0.25 | 0.194 | 0.776 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nicolas_2012_table_1:row0:col1', 'Nicolas_2012_table_1:row0:col2', 'Nicolas_2012_table_1:row0:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Axelsen_2024:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nicolas_2012_table_1:row1:col1', 'Nicolas_2012_table_1:row1:col2', 'Nicolas_2012_table_1:row1:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 84.92 | not captured | not captured | ['Nicolas_2012_table_1:row0:col1', 'Nicolas_2012_table_1:row0:col2', 'Nicolas_2012_table_1:row0:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Vizza_2017:review'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nicolas_2012_table_1:row0:col1', 'Nicolas_2012_table_1:row0:col2', 'Nicolas_2012_table_1:row0:col3'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nicolas_2012_table_1:row1:col1', 'Nicolas_2012_table_1:row1:col2', 'Nicolas_2012_table_1:row1:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Vizza_2017:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Vizza_2017:review'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 84.9 L/h | not captured | not captured | ['Nicolas_2012_table_1:row0:col1', 'Nicolas_2012_table_1:row0:col2', 'Nicolas_2012_table_1:row0:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 23.7 L | not captured | not captured | ['Nicolas_2012_table_1:row1:col1', 'Nicolas_2012_table_1:row1:col2', 'Nicolas_2012_table_1:row1:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 43.9 L/h | not captured | not captured | ['Vizza_2017:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 458 L | not captured | not captured | ['Vizza_2017:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -156,12 +177,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_modelica.zip" download>Epoprostenol_Nicolas2012_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_modelica.zip" download>Epoprostenol_Nicolas2012_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_fmi.zip" download>Epoprostenol_Nicolas2012_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_matlab.zip" download>Epoprostenol_Nicolas2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_matlab_simbio.zip" download>Epoprostenol_Nicolas2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_sbml.zip" download>Epoprostenol_Nicolas2012_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_cellml.zip" download>Epoprostenol_Nicolas2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_cellml.zip" download>Epoprostenol_Nicolas2012_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -169,7 +190,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.688 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.16 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference/Epoprostenol_Nicolas2012_reference_sim_controls.json"></dbs-fmusim>
 
@@ -178,4 +199,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 21:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:23 UTC</sub>

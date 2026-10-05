@@ -17,7 +17,7 @@ Catridecacog is a recombinant coagulation factor XIII A-subunit used to treat in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 20:14 | 2:00 | 0/0/0 | 0/0/0 | 0/0/0 | 15,969/859 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
+| 2026-10-05 17:39 | 0:20 | 0/0/0 | 0/0/0 | 0/0/0 | 11,168/349 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
 
 ## popPK records
 
@@ -51,10 +51,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Pasca_2022.pdf` | Pasca S et al., The pharmacokinetics of recombinant FXI…, Journal of thrombosis and t… (2022) | popPK | 9 | [10.1007/s11239-022-02700-x](https://doi.org/10.1007/s11239-022-02700-x) | [36094687](https://pubmed.ncbi.nlm.nih.gov/36094687) | The paper is a direct PK comparison study for catridecacog, but the provided evidence contains only study design and demographic details, with no specific numeric PK parameter values (e.g., CL, V, t1/2) listed. |
-| `Zanon_2023.pdf` | Zanon E et al., A multicenter, real-world experience wi…, Blood transfusion = Trasfus… (2023) | popPK | 8 | [10.2450/2022.0121-22](https://doi.org/10.2450/2022.0121-22) | [36580025](https://pubmed.ncbi.nlm.nih.gov/36580025) | The study reports pharmacokinetic assessments for catridecacog, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Pasca_2022.pdf` | Pasca S et al., The pharmacokinetics of recombinant FXI…, Journal of thrombosis and t… (2022) | popPK | 8 | [10.1007/s11239-022-02700-x](https://doi.org/10.1007/s11239-022-02700-x) | [36094687](https://pubmed.ncbi.nlm.nih.gov/36094687) | The paper reports a comparison of pharmacokinetic profiles for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosage and demographic comparisons. |
+| `Zanon_2023.pdf` | Zanon E et al., A multicenter, real-world experience wi…, Blood transfusion = Trasfus… (2023) | popPK | 8 | [10.2450/2022.0121-22](https://doi.org/10.2450/2022.0121-22) | [36580025](https://pubmed.ncbi.nlm.nih.gov/36580025) | The study reports pharmacokinetic assessments for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosing ranges and clinical outcomes. |
 
-<sub>queue written 2026-09-18T20:14:24.699950+00:00</sub>
+<sub>queue written 2026-10-05T17:39:28.337875+00:00</sub>
 
 ## Screened and excluded
 
@@ -71,14 +71,14 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Mitchell_2017 | irrelevant | 0 | 0 | The paper is a case report on acquired factor XIII deficiency and does not involve catridecacog or report any pharmacokinetic parameters. |
 | popPK | Muszbek_2018 | irrelevant | 0 | 0 | The paper is a review of laboratory diagnosis and clinical consequences of anti-Factor XIII antibodies, not a pharmacokinetic study of catridecacog. |
 | popPK | Palumbo_2008 | irrelevant | 0 | 0 | The paper investigates the role of Factor XIII in tumor metastasis and does not report any pharmacokinetic parameters for catridecacog. |
-| popPK | Pasca_2022 | relevant | 9 | 0 | The paper is a direct PK comparison study for catridecacog, but the provided evidence contains only study design and demographic details, with no specific numeric PK parameter values (e.g., CL, V, t1/2) listed. |
-| popPK | Pasca_2023 | irrelevant | 0 | 0 | The provided text consists solely of editorial corrections regarding author affiliations and names, containing no pharmacokinetic data or study results for catridecacog. |
+| popPK | Pasca_2022 | relevant | 8 | 2 | The paper reports a comparison of pharmacokinetic profiles for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosage and demographic comparisons. |
+| popPK | Pasca_2023 | irrelevant | 0 | 0 | The provided text is a correction notice regarding author affiliations and names, containing no pharmacokinetic data or parameters for catridecacog. |
 | popPK | Reynolds_2005 | irrelevant | 0 | 0 | The study evaluates recombinant Factor XIII (rFXIII), not catridecacog. |
 | popPK | Souri_2015 | irrelevant | 0 | 0 | The paper is a mechanistic study on coagulation Factor XIII and fibrin cross-linking, not a pharmacokinetic study of catridecacog. |
 | popPK | Souri_2023 | irrelevant | 0 | 0 | The paper investigates the mechanism of antibody inhibition of Factor XIII activation and is not a pharmacokinetic study of catridecacog. |
 | popPK | Souri_2023_2 | irrelevant | 0 | 0 | The paper focuses on the mechanisms of anti-Factor XIII autoantibodies and does not report pharmacokinetic parameters for catridecacog. |
 | popPK | Wada_2013 | irrelevant | 0 | 0 | The paper describes a case of congenital Factor XIII-B deficiency and alloantibody development, not a pharmacokinetic study of catridecacog. |
-| popPK | Zanon_2023 | relevant | 8 | 0 | The study reports pharmacokinetic assessments for catridecacog, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Zanon_2023 | relevant | 8 | 2 | The study reports pharmacokinetic assessments for catridecacog in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only dosing ranges and clinical outcomes. |
 | PD | Zanon_2023 | not_relevant | 2 | 0 | The paper reports pharmacokinetic (PK) profiles and clinical outcomes (bleeding events) but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) linking drug concentration to effect. |
 
 ---

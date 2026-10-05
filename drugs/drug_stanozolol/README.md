@@ -18,7 +18,7 @@ Stanozolol is an anabolic steroid used to promote growth and treat conditions in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 01:02 | 1:14 | 0/0/0 | 0/0/0 | 0/0/0 | 1,648/174 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/2 | 0/0 | 0 |
+| 2026-10-05 10:27 | 0:49 | 0/0/0 | 0/0/0 | 0/0/0 | 13,587/522 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/3 | 1/0 | 0 |
 
 ## popPK records
 
@@ -49,44 +49,43 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Lu_2001.pdf` | Lu B et al., Molecular cloning and functional charac…, Molecular and cellular bioc… (2001) | pd | 4 | [10.1023/a:1012752107129](https://doi.org/10.1023/a:1012752107129) | [11768233](https://www.ncbi.nlm.nih.gov/pubmed/11768233) | metadata signals extractable PD data (IC50) |
 | `Masonis_1996.pdf` | Masonis AE et al., Effects of the androgenic/anabolic ster…, The Journal of pharmacology… (1996) | pd | 4 | not captured | [8858992](https://www.ncbi.nlm.nih.gov/pubmed/8858992) | metadata signals extractable PD data (Emax) |
 | `Rathi_2025.pdf` | Rathi A et al., FDA-approved drugs as PIM-1 kinase inhi…, International journal of bi… (2025) | pd | 4 | [10.1016/j.ijbiomac.2024.139107](https://doi.org/10.1016/j.ijbiomac.2024.139107) | [39722389](https://www.ncbi.nlm.nih.gov/pubmed/39722389) | metadata signals extractable PD data (IC50) |
-| `Sternberg_2025.pdf` | Sternberg J et al., In Vitro Metabolism of Doping Agents (S…, Metabolites (2025) | pgx | 7 | [10.3390/metabo15070452](https://doi.org/10.3390/metabo15070452) | [40710553](https://www.ncbi.nlm.nih.gov/pubmed/40710553) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-09-30T01:02:28.453600+00:00</sub>
+<sub>queue written 2026-10-05T10:27:11.895395+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chen_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tacrolimus, not stanozolol. |
+| popPK | Chen_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tacrolimus, not stanozolol. |
 | PD | Chen_2022 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PPK) of tacrolimus and the effect of posaconazole on its clearance, containing no pharmacodynamic (PD) or exposure-response analysis for stanozolol. |
-| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment regarding post-mortem inspection delays and does not contain any pharmacokinetic data or parameters for stanozolol. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper discusses post-mortem inspection delays and detection sensitivity for pathogens and contaminants, containing no pharmacokinetic data for stanozolol. |
 | PD | EFSA_2020 | not_relevant | 0 | 0 | The paper discusses the impact of delayed post-mortem inspection on the detection of pathogens and contaminants, including general mentions of pharmacologically active substances, but does not report any pharmacodynamic or exposure-response data for stanozolol. |
 | popPK | Fernández_1994 | irrelevant | 0 | 0 | The study is a mechanistic investigation of stanozolol's interaction with glucocorticoid-binding sites in rat liver microsomes and does not report pharmacokinetic disposition parameters. |
 | PGx | Grundy_1999 | not_relevant | 0 | 0 | The paper uses stanozolol as a pharmacological tool to modulate hepatic lipase activity, but does not report pharmacogenomic effects on the PK or PD parameters of stanozolol itself. |
 | popPK | Lu_2001 | irrelevant | 0 | 0 | The paper is a molecular biology study on the canine androgen receptor, using stanozolol only as a ligand in binding assays, and contains no pharmacokinetic parameters. |
 | PD | Lu_2001 | not_relevant | 3 | 5 | The paper reports an IC50 value for stanozolol in a competition binding assay, which is a pharmacodynamic parameter, but it is a single-point in vitro binding affinity measurement rather than a full exposure-response or dose-response curve analysis with multiple parameters (like Emax or slope) derived from a PK/PD model. |
 | popPK | Masonis_1996 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
-| popPK | Ni_2013 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for ciclosporin, with stanozolol serving only as a covariate affecting ciclosporin clearance rather than being the subject drug. |
+| popPK | Ni_2013 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ciclosporin, with stanozolol only mentioned as a covariate affecting ciclosporin clearance. |
 | PD | Ni_2013 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for ciclosporin where stanozolol is identified as a covariate affecting clearance, but it does not report any pharmacodynamic (PD) or exposure-response relationship for stanozolol itself. |
-| popPK | Pokushalov_2025 | irrelevant | 0 | 0 | The study investigates the efficacy of EF-M2 in canine osteoarthritis and does not involve stanozolol or report any pharmacokinetic parameters. |
+| popPK | Pokushalov_2025 | irrelevant | 0 | 0 | The study investigates the efficacy of EF-M2 in canine osteoarthritis and does not report pharmacokinetic parameters for stanozolol. |
 | PD | Pokushalov_2025 | not_relevant | 0 | 0 | The paper studies EF-M2 (Immutalon) in canine osteoarthritis and does not mention stanozolol or report any pharmacodynamic parameters for it. |
 | popPK | Rathi_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on PIM-1 kinase inhibition and does not report any pharmacokinetic parameters for stanozolol. |
 | PD | Rathi_2025 | not_relevant | 0 | 0 | The paper identifies stanozolol as a binder via docking and MD simulations but provides no experimental PD data, concentration-effect analysis, or numeric PD parameters for stanozolol. |
-| popPK | Roberts_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dextroamphetamine, and stanozolol is only mentioned as a comparator in the introduction regarding hair melanin binding. |
+| popPK | Roberts_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dextroamphetamine, not stanozolol. |
 | PD | Roberts_2015 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis of dextroamphetamine, not stanozolol, and contains no pharmacodynamic (PD) or exposure-response modeling. |
 | popPK | Salvador_2008 | irrelevant | 0 | 0 | The paper describes the development of immunochemical assays (ELISA) for detection and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Salvador_2008 | not_relevant | 0 | 0 | The paper describes the development of ELISA assays for detecting stanozolol and its metabolite, reporting analytical parameters like IC50 for the assay itself, but contains no pharmacodynamic or exposure-response data for the drug. |
 | popPK | Salvador_2010 | irrelevant | 0 | 0 | The paper describes an analytical method (ELISA) for detecting stanozolol in urine and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Salvador_2010 | not_relevant | 0 | 0 | The paper describes an analytical method (ELISA/SPE) for detecting stanozolol metabolites and reports analytical parameters (IC50 of the assay, LOD, recovery), but does not report any pharmacodynamic or exposure-response relationship for the drug itself. |
-| PGx | Sternberg_2025 | not_relevant | 0 | 0 | The study investigates tissue-specific metabolism (seminal vesicle vs. liver) in vitro and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Tanago_2014 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on receptor transactivation and does not report any pharmacokinetic parameters for stanozolol. |
+| PGx | Sternberg_2025 | not_relevant | 0 | 0 | The paper investigates in vitro tissue-specific metabolism (seminal vesicle vs. liver) and does not report pharmacogenomic effects of gene variants on PK/PD parameters. |
+| popPK | Tanago_2014 | irrelevant | 0 | 0 | The study is an in-vitro reporter gene assay investigating the transactivational properties of stanozolol on the medaka vitamin D receptor, not a pharmacokinetic study. |
 | PD | Tanago_2014 | not_relevant | 1 | 0 | The paper mentions stanozolol as a low-potency synergist in a qualitative manner but does not provide specific numeric PD parameters (e.g., EC50, Emax) or a detailed concentration-response curve for it. |
 
 ---

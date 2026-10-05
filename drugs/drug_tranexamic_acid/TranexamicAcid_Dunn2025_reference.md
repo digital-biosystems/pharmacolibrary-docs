@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Dunn_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_original_dataset&quot;,&quot;label&quot;:&quot;Gilliot_2022_original_dataset&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tranexamic acid — `TranexamicAcid_Dunn2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.412). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.467). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record contains blood clearance CLb of 8.59, central volume V1 of 10.7, inter-compartmental blood flow Qb of 28.9, peripheral volume V2 of 15.0, and an oral absorption lag time of 0.16, with weight covariate effects of 0.89 on clearance and flow and 0.44 on the volumes. The rejection reason is an unreachable or orphan compartment or unlinked metabolite in the topology. A second reader also disagreed on several fields: it read an oral absorption rate constant of 0.18 and an oral bioavailability fraction of 0.56 where this record has no values, and it assigned linear-fractional covariate forms to the clearance and volume parameters where this record lists them differently or not at all. Extracted — tranexamic acid: CLb 8.59, V1 10.7, Qb 28.9, V2 15, tlag 0.16.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:00.965338+00:00) predates the upstream re-run (2026-10-05 17:02:06.154350+00:00). Current validate status: `rejected`.
 
 ## Citation
 Dunn A et al., Evaluating Tranexamic Acid Dosing Strat…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70031](https://doi.org/10.1002/jcph.70031)
 
 ## Model component
-<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Dunn2025_reference" status="rejected" stale="false" population="pregnant individuals" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Dunn2025_reference" status="rejected" stale="true" population="pregnant individuals" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.
@@ -42,11 +44,11 @@ Dunn A et al., Evaluating Tranexamic Acid Dosing Strat…, Journal of clinical p
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL b | `Q23` · CLb | 8.59 | not captured | not captured | not captured | not captured | space_fold (0.95) | jcph70031-tbl-0002:row3:col1, jcph70031-tbl-0002:row3:col2 | — | not captured |
-| Vc b | `Q63` · V1 | 10.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | jcph70031-tbl-0002:row4:col1, jcph70031-tbl-0002:row4:col2 | — | not captured |
-| Q b | `Q54` · Qb | 28.9 | not captured | not captured | not captured | not captured | space_fold (0.95) | jcph70031-tbl-0002:row5:col1, jcph70031-tbl-0002:row5:col2 | — | not captured |
-| Vp b | `Q64` · V2 | 15.0 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | jcph70031-tbl-0002:row6:col1, jcph70031-tbl-0002:row6:col2 | — | not captured |
-| Tlagoral | `Q83` · tlag | 0.16 | not captured | not captured | not captured | not captured | llm (0.6) | jcph70031-tbl-0002:row10:col2 | — | not captured |
+| CL b | `Q23` · CLb | 8.59 | L/h | 2.3861111111111113e-06 | L/h | not captured | space_fold (0.95) | jcph70031-tbl-0002:row3:col1, jcph70031-tbl-0002:row3:col2 | — | not captured |
+| Vc b | `Q63` · V1 | 10.7 | L | 0.0107 | L | not captured | llm_confirmed (0.6) | jcph70031-tbl-0002:row4:col1, jcph70031-tbl-0002:row4:col2 | — | not captured |
+| Q b | `Q54` · Qb | 28.9 | L/h | 8.027777777777777e-06 | L/h | not captured | space_fold (0.95) | jcph70031-tbl-0002:row5:col1, jcph70031-tbl-0002:row5:col2 | — | not captured |
+| Vp b | `Q64` · V2 | 15.0 | L | 0.015 | L | not captured | llm_confirmed (0.6) | jcph70031-tbl-0002:row6:col1, jcph70031-tbl-0002:row6:col2 | — | not captured |
+| Tlagoral | `Q83` · tlag | 0.16 | h | 576.0 | h | not captured | llm (0.6) | jcph70031-tbl-0002:row10:col2 | — | not captured |
 | weight_on_cl_and_q | `Q900` · weight_on_cl_and_q | 0.89 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph70031-tbl-0002:row12:col2 | — | not captured |
 | weight_on_vc_and_vp | `Q900` · weight_on_vc_and_vp | 0.44 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph70031-tbl-0002:row13:col2 | — | not captured |
 
@@ -58,15 +60,18 @@ Dunn A et al., Evaluating Tranexamic Acid Dosing Strat…, Journal of clinical p
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'σadditive' routed out of structural estimates ('Within‐subject variability (WSV)')
+- table section iiv: 'σproportional' routed out of structural estimates ('Within‐subject variability (WSV)')
 - dropped unlinked row (NIL): 'Kaoral' — extend the ontology if this is a real PK parameter (source ['jcph70031-tbl-0002:row7:col1', 'jcph70031-tbl-0002:row7:col2'])
 - dropped unlinked row (NIL): 'KaIM' — extend the ontology if this is a real PK parameter (source ['jcph70031-tbl-0002:row8:col1', 'jcph70031-tbl-0002:row8:col2'])
 - dropped unlinked row (NIL): 'Foral' — extend the ontology if this is a real PK parameter (source ['jcph70031-tbl-0002:row9:col2'])
 - covariate level 'Weight on CL and Q' → Q900:weight_on_cl_and_q = 0.89 (linear_fractional on Q23)
 - covariate level 'Weight on Vc and Vp' → Q900:weight_on_vc_and_vp = 0.44 (linear_fractional on Q23)
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['jcph70031-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['jcph70031-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'Q' from footnote/prose loose number None (source ['jcph70031-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V' from footnote/prose loose number None (source ['jcph70031-tbl-0002:footnote']); the table cell was unparseable — needs review
+- implicit units: 'CL b' → L/h (from the paper text: "Table 2 footnote b states: 'CLi=8.59L/h·(WT80)0.89...'")
+- implicit units: 'Vc b' → L (from the paper text: "Table 2 footnote b states: 'Vci=10.7L·(WT80)0.44...'")
+- implicit units: 'Q b' → L/h (from the paper text: "Table 2 footnote b states: 'Qi=28.9L/h·(WT80)0.89'")
+- implicit units: 'Vp b' → L (from the paper text: "Table 2 footnote b states: 'Vpi=15.0L·(WT80)0.44...'")
+- implicit units: 'Tlagoral' → h (from the paper text: "Paper text states: '...while 0.16 h was the estimated typical oral absorption lag time (Tlagoral).'")
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Vc b); Q64 (Vp b)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tranexamic acid
 - model equation 'CLi = 8.59*(WT/8)^0.75' not bound — neither LHS nor base term 'WT' linked to an ontology parameter
@@ -100,18 +105,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.412 (7/17 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.467 (7/15 fields) | 8 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[cl b].covariate_forms` | ['linear_fractional', 'linear_fractional'] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[foral]` | not captured | 0.56 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kaoral]` | not captured | 0.18 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q22_weight]` | not captured | 0.89 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v1_weight]` | not captured | 0.44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc b].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[theta_q61_weight]` | not captured | 0.44 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[weight_on_cl_and_q]` | 0.89 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[weight_on_vc_and_vp]` | 0.44 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | tranexamic acid | tranexamic_acid | mismatch |
@@ -133,13 +136,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q23 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70031-tbl-0002:row3:col1', 'jcph70031-tbl-0002:row3:col2'] |
-| C5_unit_missing_Q54 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70031-tbl-0002:row5:col1', 'jcph70031-tbl-0002:row5:col2'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['jcph70031-tbl-0002:row4:col1', 'jcph70031-tbl-0002:row4:col2'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['jcph70031-tbl-0002:row6:col1', 'jcph70031-tbl-0002:row6:col2'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['jcph70031-tbl-0002:row10:col2'] |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70031-tbl-0002:row3:col1', 'jcph70031-tbl-0002:row3:col2'] |
+| C5_dimension_Q54 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70031-tbl-0002:row5:col1', 'jcph70031-tbl-0002:row5:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph70031-tbl-0002:row4:col1', 'jcph70031-tbl-0002:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph70031-tbl-0002:row6:col1', 'jcph70031-tbl-0002:row6:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['jcph70031-tbl-0002:row10:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.59 | not captured | not captured | ['jcph70031-tbl-0002:row3:col1', 'jcph70031-tbl-0002:row3:col2'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 8.59 L/h | not captured | not captured | ['jcph70031-tbl-0002:row3:col1', 'jcph70031-tbl-0002:row3:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 10.7 L | not captured | not captured | ['jcph70031-tbl-0002:row4:col1', 'jcph70031-tbl-0002:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 15 L | not captured | not captured | ['jcph70031-tbl-0002:row6:col1', 'jcph70031-tbl-0002:row6:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -164,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-06 03:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:02 UTC</sub>

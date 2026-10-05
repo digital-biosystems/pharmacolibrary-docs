@@ -4,7 +4,7 @@
 
 # nandrolone — `Nandrolone_Wijnand1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,6 +24,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:28:16.527575+00:00) predates the upstream re-run (2026-10-05 10:13:21.383722+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `nandrolone decanoate`, measured `nandrolone`.
 
 ## Citation
@@ -31,19 +33,19 @@ Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinolog
   ·  DOI: [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019)
 
 ## Model component
-<dbs-pgx drug="nandrolone" model-id="Nandrolone_Wijnand1985_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="nandrolone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="nandrolone" model-id="Nandrolone_Wijnand1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="nandrolone" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mean nandrolone serum clearance | `Q22` · CL | 1.55 | 1 X h-1 X kg-1 | not captured | [1x] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | Wijnand_1985:abstract | — | not captured |
+| mean nandrolone serum clearance | `Q351` · CLm/F | 1.55 | L/h | 4.305555555555556e-07 | L/h | not captured | exact (1.0) | Wijnand_1985:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,13 +60,16 @@ Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinolog
 ## Departures & gaps
 
 **Interpretation flags:**
+- covariate category for kabs from footnote/prose kept as documentation only (['Wijnand_1985:abstract'])
 - covariate category for t1/2z from footnote/prose kept as documentation only (['Wijnand_1985:abstract'])
 - unit_dimension_unknown: '1 X h-1 X kg-1' (CL)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nandrolone
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- implicit units: 'mean nandrolone serum clearance' → L/h (from the popPK convention: 'No unit is stated in the provided text or table captions. For a total clearance parameter with a value of 1.55, L/h is t')
+- metabolite nandrolone: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nandrolone
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 2 linked by role; re-tagged nandrolone→parent ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
@@ -79,15 +84,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
 <details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[half-life of hydrolysis of nandrolone decanoate in serum]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean half-life]` | not captured | 4.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean half-life]` | not captured | 6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean nandrolone serum clearance].parameter_id` | Q351 | Q22 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | nandrolone decanoate | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | nandrolone | unknown | mismatch |
 
@@ -106,9 +111,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wijnand_1985:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Wijnand_1985:abstract'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | 1 X h-1 X kg-1 | not captured | not captured | ['Wijnand_1985:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.55 | not captured | not captured | ['Wijnand_1985:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
@@ -134,4 +139,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 17:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 10:13 UTC</sub>

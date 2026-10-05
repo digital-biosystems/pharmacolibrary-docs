@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Liu_2022 \u00b7 simultaneous_modeling&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_reference&quot;,&quot;label&quot;:&quot;Ren_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rivaroxaban — `Rivaroxaban_Liu2022_simultaneous_modeling`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,19 +23,21 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of egfr_on_cl_f: this record has 0.53, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:39:39.438222+00:00) predates the upstream re-run (2026-10-05 15:44:40.221253+00:00). Current validate status: `extracted`.
 
 ## Citation
 Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica Sinica (2022)
   ·  DOI: [10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9)
 
 ## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Liu2022_simultaneous_modeling" status="accepted_with_caveats" stale="false" population="Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Liu2022_simultaneous_modeling" status="extracted" stale="true" population="Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted, plus 2 covariate effects.
+**Parameters:** 3 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -46,7 +48,6 @@ Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica S
 | CL/F (L/h) | `Q27` · CL/F | 5.03 | L/h | 1.3972222222222224e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row4:col3, tab_2:row4:col5, tab_2:row4:col6 | — | not captured |
 | egfr_on_cl_f | `Q900` · egfr_on_cl_f | 0.53 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row5:col3, tab_2:row5:col5, tab_2:row5:col6 | — | not captured |
 | V/F (L) | `Q76` · V/F | 40.3 | L | 0.040299999999999996 | [l] | not captured | exact (1.0) | tab_2:row6:col3, tab_2:row6:col5, tab_2:row6:col6 | — | not captured |
-| ω CL | `Q22` · CL | 8 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col5, tab_2:row8:col6 | — | not captured |
 | egfr_on_pt_base | `Q900` · egfr_on_pt_base | -0.0872 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row14:col3, tab_2:row14:col5 | — | not captured |
 
 <details class="legend">
@@ -61,13 +62,14 @@ Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica S
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- table section iiv: 'ω CL' routed out of structural estimates ('Between-subject variability (%CV)')
+- table section iiv: 'ω PTbase' routed out of structural estimates ('Between-subject variability (%CV)')
+- table section iiv: 'ω slope' routed out of structural estimates ('Between-subject variability (%CV)')
 - covariate level 'eGFR on CL/F' → Q900:egfr_on_cl_f = 0.53 (linear_fractional on Q27)
 - dropped unlinked row (NIL): 'PT base (s)' — extend the ontology if this is a real PK parameter (source ['tab_2:row12:col3', 'tab_2:row12:col5', 'tab_2:row12:col6'])
 - dropped unlinked row (NIL): 'TBIL on PT base' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col3', 'tab_2:row13:col5', 'tab_2:row13:col6'])
 - covariate level 'eGFR on PT base' → Q900:egfr_on_pt_base = -0.0872 (linear_fractional on Q27)
 - dropped PD-category row 'slope (s•L•μg -1 )' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row15:col3', 'tab_2:row15:col5', 'tab_2:row15:col6'])
-- routed 'ω PTbase' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'ω slope' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rivaroxaban
@@ -87,15 +89,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (9/12 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[egfr_on_cl_f]` | 0.53 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_egfr]` | not captured | 0.53 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ω cl]` | 8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | rivaroxaban | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | rivaroxaban | unknown | mismatch |
 
 </details>
 
@@ -109,14 +112,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col3', 'tab_2:row4:col5', 'tab_2:row4:col6'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row3:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row6:col3', 'tab_2:row6:col5', 'tab_2:row6:col6'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col5', 'tab_2:row8:col6'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 5.03 L/h | not captured | not captured | ['tab_2:row4:col3', 'tab_2:row4:col5', 'tab_2:row4:col6'] |
@@ -153,8 +155,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_modelica.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_fmi.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_modelica.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_fmi.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_matlab.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_matlab_simbio.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_sbml.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -175,4 +177,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 21:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:44 UTC</sub>

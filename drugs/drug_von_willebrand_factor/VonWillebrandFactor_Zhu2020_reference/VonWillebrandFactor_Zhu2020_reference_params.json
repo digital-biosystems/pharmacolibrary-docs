@@ -1,15 +1,9 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "VonWillebrandFactor_Zhu2020_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  35.0,
-  140.0,
-  700.0
  ],
  "parameters": {
   "Cl": 9.061111111111112e-09,
@@ -18,15 +12,15 @@
   "VdPerKg": 5.5299999999999996e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 3.5e-05,
+  "adminMass": 0.0001,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 30301.144911630807
+  "central.C": 30277.793278045287
  },
  "reference_peaks": {
-  "central.C": 0.008430325396626255
+  "central.C": 0.024086623614820734
  },
  "stop_time": 1555200.0,
  "template": "PK_1C_enteral",

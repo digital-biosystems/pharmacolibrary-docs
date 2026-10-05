@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;levocarnitine&quot;,&quot;href&quot;:&quot;drugs/drug_levocarnitine/&quot;},{&quot;label&quot;:&quot;Wu_2014 \u00b7 PD spike activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# spike activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# spike activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -11,17 +11,23 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+
 ## What this record describes
 
-**As extracted:** L-carnitine; D-methionine (measured concentrations) drives spike activity: direct sigmoid Emax (Hill) effect.
+**As extracted:** L-carnitine (concentrations from the PK model of Fornasini_2007) drives spike activity (in % inhibition): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> L-carnitine inhibits spike activity in neuronal networks via a sigmoidal Emax mechanism, with an EC50 of 0.22 mM and a Hill coefficient (nH) of 1.62. The paper suggests this effect is mediated by GABA A receptor agonism, as evidenced by competitive interactions with the antagonist bicuculline.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Wu C et al., Antioxidants L-carnitine and D-methioni…, Journal of neural transmiss… (2014)
@@ -30,10 +36,8 @@ Wu C et al., Antioxidants L-carnitine and D-methioni…, Journal of neural trans
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC 50 (mM) 1.06 ± 0.06 2.48 ± 0.15 4.29 ± 0.15 | `Q321` · not captured | 7.39 | mM | not captured | llm (not captured) | tab_0:row5:col1 |
-| PD (effect) | EC 50 (mM) 1.06 ± 0.06 2.48 ± 0.15 4.29 ± 0.15 | `Q321` · not captured | 10.52 | mM | not captured | llm (not captured) | tab_0:row5:col3 |
-| PD (effect) | Y-int | `Q324` · not captured | 0.01 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
-| PD (effect) | Y-int | `Q324` · not captured | 0.02 | not captured | not captured | llm (not captured) | tab_0:row8:col4 |
+| PD (effect) | EC 50 | `Q321` · not captured | 0.22 | mM | not captured | llm (not captured) | Wu_2014:pdv3 |
+| PD (effect) | n H | `Q325` · not captured | 1.62 | not captured | not captured | llm (not captured) | Wu_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

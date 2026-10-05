@@ -17,13 +17,13 @@ Apraglutide is an investigational drug in the alimentary tract and metabolism ca
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:10 | 0:56 | 0/1/0 | 0/0/0 | 0/0/0 | 1,452/258 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 10:56 | 0:37 | 0/1/0 | 0/0/0 | 0/0/0 | 18,011/834 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bolognani_2023_reference](drugs/drug_apraglutide/Apraglutide_Bolognani2023_reference.md) | — | 1-compartment (no model) | 0 | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bolognani_2023_reference](drugs/drug_apraglutide/Apraglutide_Bolognani2023_reference.md) | — | 1-compartment (no model) | 0 | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -34,29 +34,29 @@ Apraglutide is an investigational drug in the alimentary tract and metabolism ca
 ## Coverage
 
 - **PubMed hits:** 11 matched, 8 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bolognani_2023.pdf` | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | popPK | 10 | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) | [37316329](https://pubmed.ncbi.nlm.nih.gov/37316329) | The paper reports quantitative PK parameters (clearance and volume of distribution) for apraglutide in the text, though specific values for half-life or intercompartmental clearance are not explicitly listed in the provided evidence. |
-| `Hargrove_2020.pdf` | Hargrove DM et al., Pharmacological Characterization of Apr…, The Journal of pharmacology… (2020) | popPK | 9 | [10.1124/jpet.119.262238](https://doi.org/10.1124/jpet.119.262238) | [32075870](https://pubmed.ncbi.nlm.nih.gov/32075870) | The paper reports quantitative PK parameters (clearance and half-life) for apraglutide in rat IV studies, with values explicitly provided in the text. |
+| `Bolognani_2023.pdf` | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | popPK | 10 | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) | [37316329](https://pubmed.ncbi.nlm.nih.gov/37316329) | The study reports quantitative PK parameters (clearance and volume of distribution) for apraglutide in healthy humans, with specific numeric ranges provided in the abstract. |
+| `Hargrove_2020.pdf` | Hargrove DM et al., Pharmacological Characterization of Apr…, The Journal of pharmacology… (2020) | popPK | 9 | [10.1124/jpet.119.262238](https://doi.org/10.1124/jpet.119.262238) | [32075870](https://pubmed.ncbi.nlm.nih.gov/32075870) | The abstract provides specific quantitative PK parameters (clearance and half-life) for apraglutide in rats, monkeys, and minipigs. |
+| `Greig_2026.pdf` | Greig G et al., Pharmacokinetics and Safety of Single-D…, Clinical pharmacology in dr… (2026) | popPK | 8 | [10.1002/cpdd.70006](https://doi.org/10.1002/cpdd.70006) | [41545784](https://pubmed.ncbi.nlm.nih.gov/41545784) | The study reports quantitative PK parameters (Cmax, AUC) for apraglutide in humans, but lacks compartmental model parameters (CL, V, t1/2) and full concentration-time data. |
 
-<sub>queue written 2026-09-30T02:10:54.995462+00:00</sub>
+<sub>queue written 2026-10-05T10:56:11.478916+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Greig_2024 | relevant | 4 | 2 | The study reports PK parameters (Cmax, AUC) for apraglutide, but lacks compartmental model parameters (CL, V, t1/2) and specific numeric values are limited to summary statistics in the abstract. |
-| popPK | Greig_2026 | relevant | 4 | 2 | The study reports exposure metrics (AUC, Cmax) for apraglutide but lacks compartmental PK parameters (CL, V, t1/2) and specific numeric values are limited to summary statistics rather than full disposition profiles. |
+| popPK | Greig_2024 | irrelevant | 4 | 2 | The study reports summary PK metrics (Cmax, AUC) but lacks compartmental parameters (CL, V, t1/2) required for population PK modeling. |
 | PD | Hargrove_2020 | not_relevant | 3 | 1 | The text describes PK parameters and qualitatively states that apraglutide has greater in vivo pharmacodynamic activity (intestinal growth) than other peptides, but it does not provide numeric PD parameters (e.g., Emax, EC50) or an explicit concentration-effect curve in the provided text. |
-| popPK | Nordell_2026 | relevant | 8 | 2 | The paper is a PK study including apraglutide in its dataset, but specific numeric parameter values for apraglutide are located in Table S1 (supplementary material) which is not provided in the evidence. |
+| popPK | Nordell_2026 | relevant | 8 | 2 | The paper is a PK study including apraglutide, but specific numeric parameter values for apraglutide are located in Table S1 (supplementary material) which is not provided in the evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 00:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 10:56 UTC</sub>

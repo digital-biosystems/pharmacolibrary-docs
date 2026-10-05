@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;emicizumab&quot;,&quot;href&quot;:&quot;drugs/drug_emicizumab/&quot;},{&quot;label&quot;:&quot;Retout_2020 \u00b7 estimate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emicizumab_Retout2020_estimate&quot;,&quot;label&quot;:&quot;Retout_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_emicizumab/Emicizumab_Retout2020_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # emicizumab — `Emicizumab_Retout2020_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,16 +21,18 @@
 
 The record lists CL/F 28.7, V/F 25.9 and KA 72.5 for emicizumab, but the model builder left clearance, volume of distribution, absorption rate constant and absorption lag time without extracted values, so library placeholder numbers stood in for them. The absorption rate constant was invented by defaulting, which the adjudication marked as not acceptable. The model also assumes bioavailability F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. Extracted — emicizumab: CL/F 28.7, V/F 25.9, kabs 72.5.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has emicizumab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.741800+00:00) predates the upstream re-run (2026-10-05 18:44:43.985850+00:00). Current validate status: `extracted`.
 
 ## Citation
 Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z)
 
 ## Model component
-<dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_estimate" status="model_quarantined" stale="false" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_estimate" status="extracted" stale="true" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -37,13 +40,11 @@ Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacoki
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 28.7 | not captured | not captured | not captured | not captured | exact (1.0) | Tab4:row2:col2, Tab4:row6:col2 | — | not captured |
-| V/F | `Q76` · V/F | 25.9 | not captured | not captured | not captured | not captured | exact (1.0) | Tab4:row3:col2, Tab4:row7:col2 | — | not captured |
-| KA | `Q49` · kabs | 72.5 | not captured | not captured | not captured | not captured | exact (1.0) | Tab4:row4:col2, Tab4:row8:col2 | — | not captured |
+| CL/F | `Q27` · CL/F | 0.272 | L/h | 7.555555555555557e-08 | L/h | not captured | exact (1.0) | Tab4:row2:col2 | — | 28.7 (None% RSE) |
+| V/F | `Q76` · V/F | 10.4 | L | 0.010400000000000001 | L | not captured | exact (1.0) | Tab4:row3:col2 | — | 25.9 (None% RSE) |
+| KA | `Q49` · kabs | 0.536 | 1/h | 0.0001488888888888889 | 1/h | not captured | exact (1.0) | Tab4:row4:col2 | — | 72.5 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,14 +53,25 @@ Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacoki
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
+- table section iiv: 'CL/F' routed out of structural estimates ('Inter-individual variabilitya')
+- table section iiv: 'V/F' routed out of structural estimates ('Inter-individual variabilitya')
+- table section iiv: 'KA' routed out of structural estimates ('Inter-individual variabilitya')
+- table section iiv: 'Correlation CL/F–V/F' routed out of structural estimates ('Inter-individual variabilitya')
 - dropped unlinked row (NIL): 'Fixed effects (BW 70 kg; ALB 45 g/L; age &lt; 30 years)' — extend the ontology if this is a real PK parameter (source ['Tab4:row1:col2'])
-- routed 'Correlation CL/F–V/F' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped duplicate Q27 ('Effect of BW on CL/F', value '0.911') — already have one for this compound
 - dropped duplicate Q76 ('Effect of BW on V/F', value '1.00') — already have one for this compound
 - dropped unlinked row (NIL): 'Condition numbere' — extend the ontology if this is a real PK parameter (source ['Tab4:row20:col2'])
+- implicit units: 'CL/F' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for CL/F in the provided text or table captions. However, CL/F is an appare')
+- implicit units: 'V/F' → L (from the popPK convention: 'The paper does not explicitly state the unit for V/F in the provided text or table captions. V/F is an apparent volume o')
+- implicit units: 'KA' → 1/h (from the popPK convention: 'The paper does not explicitly state the unit for KA in the provided text or table captions. KA is a first-order absorpti')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=emicizumab
 - population split: 'estimate' subgroup of Retout_2020 (paper reports 4 populations: 1.5 mg/kg qw, 3 mg/kg q2w, 6 mg/kg q4w, estimate)
+- molar mass: none found for 'emicizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell Tab4:row6:col3 = '8.6b'
@@ -102,14 +114,27 @@ Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl/f]` | 0.272 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 0.272 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 0.536 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.536 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | 10.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | not captured | 10.4 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | emicizumab | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | emicizumab | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -124,11 +149,14 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row2:col2', 'Tab4:row6:col2'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab4:row4:col2', 'Tab4:row8:col2'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row3:col2', 'Tab4:row7:col2'] |
+| C1_half_life_beta | pass | 26.8 | 26.503 | 0.9889 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row2:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row4:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row3:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.272 L/h | not captured | not captured | ['Tab4:row2:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 10.4 L | not captured | not captured | ['Tab4:row3:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -165,21 +193,26 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_modelica.zip" download>Emicizumab_Retout2020_estimate_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_fmi.zip" download>Emicizumab_Retout2020_estimate_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_matlab.zip" download>Emicizumab_Retout2020_estimate_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_matlab_simbio.zip" download>Emicizumab_Retout2020_estimate_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_sbml.zip" download>Emicizumab_Retout2020_estimate_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_cellml.zip" download>Emicizumab_Retout2020_estimate_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate.svg" alt="Emicizumab_Retout2020_estimate diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 105 mg, single dose, first-order absorption (ka 0.536 /h, F 1). Doses in the paper: 105, 210, 420 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_emicizumab/Emicizumab_Retout2020_estimate/Emicizumab_Retout2020_estimate_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Emicizumab_Retout2020_estimate_params.json` · controls `Emicizumab_Retout2020_estimate_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:44 UTC</sub>

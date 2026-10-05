@@ -14,19 +14,29 @@ Sodium selenite is a selenium supplement used to treat or prevent selenium defic
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q414626](https://www.wikidata.org/wiki/Q414626) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| selenite | metabolite | 126.968 | O3Se-2 | PubChem | [1090](https://pubchem.ncbi.nlm.nih.gov/compound/1090) | Jayachandran_2021 |
+| selenium | metabolite | 78.971 | Se | PubChem | [6326970](https://pubchem.ncbi.nlm.nih.gov/compound/6326970) | Guo_1991 |
+| sodium_selenite (sodium selenite) | metabolite | 128.97 | H2O3Se | DrugBank | [1091](https://pubchem.ncbi.nlm.nih.gov/compound/1091) | Guo_1991, Jayachandran_2021, Zheng_2019 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 16:57 | 5:51 | 0/1/2 | 0/0/0 | 0/0/0 | 58,760/20,090 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 09:55 | 6:36 | 1/1/1 | 0/0/0 | 0/0/0 | 68,738/22,615 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q20 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Guo_1991_reference](drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md) | — | 1-compartment (no model) | 8 | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Jayachandran_2021_reference](drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md) | held back | 1-compartment, oral | 3 | Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D (2021) | [10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zheng_2019_reference](drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md) | — | 1-compartment (no model) | 3 | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Jayachandran_2021_reference](drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference.md) | held back | 1-compartment, oral | 3 | Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D (2021) | [10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q20 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Guo_1991_reference](drugs/drug_sodium_selenite/SodiumSelenite_Guo1991_reference.md) | — | 1-compartment (no model) | 8 | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zheng_2019_reference](drugs/drug_sodium_selenite/SodiumSelenite_Zheng2019_reference.md) | — | 1-compartment (no model) | 3 | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) |
 
 ## ADME sites
 
@@ -53,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 19 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -62,17 +72,17 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Guo_1991.pdf` | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | popPK | 10 | not captured | [1664167](https://pubmed.ncbi.nlm.nih.gov/1664167) | The paper reports a human PK study for sodium selenite with explicit numeric values for clearance, volume, half-life, and absorption rate in the text. |
-| `Zeng_2020.pdf` | Zeng X et al., Pharmacokinetics of Sodium Selenite in…, Biological trace element re… (2020) | popPK | 10 | [10.1007/s12011-019-01928-8](https://doi.org/10.1007/s12011-019-01928-8) | [31656014](https://pubmed.ncbi.nlm.nih.gov/31656014) | The paper is a direct pharmacokinetic study of sodium selenite in rats reporting compartmental models, but the specific numeric parameter values are not present in the provided evidence text. |
-| `Zheng_2019.pdf` | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | popPK | 10 | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) | [30465172](https://pubmed.ncbi.nlm.nih.gov/30465172) | The study reports quantitative pharmacokinetic parameters (half-lives, Tmax, dosing intervals) for sodium selenite in ducklings, with specific numeric values provided in the text. |
+| `Guo_1991.pdf` | Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991) | popPK | 10 | not captured | [1664167](https://pubmed.ncbi.nlm.nih.gov/1664167) | The paper reports quantitative compartmental pharmacokinetic parameters (CL, Vc, half-lives) for sodium selenite in humans, with all numeric values explicitly provided in the text. |
+| `Zeng_2020.pdf` | Zeng X et al., Pharmacokinetics of Sodium Selenite in…, Biological trace element re… (2020) | popPK | 10 | [10.1007/s12011-019-01928-8](https://doi.org/10.1007/s12011-019-01928-8) | [31656014](https://pubmed.ncbi.nlm.nih.gov/31656014) | The study reports compartmental PK models for sodium selenite in rats, but the specific numeric parameter values are not present in the provided evidence. |
+| `Zheng_2019.pdf` | Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019) | popPK | 10 | [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8) | [30465172](https://pubmed.ncbi.nlm.nih.gov/30465172) | The study reports quantitative pharmacokinetic parameters (half-lives, Tmax, dosing intervals) for sodium selenite in ducklings, with key values provided in the abstract. |
 
-<sub>queue written 2026-09-26T16:51:34.389437+00:00</sub>
+<sub>queue written 2026-10-05T09:49:01.226585+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Zeng_2020 | relevant | 10 | 0 | The paper is a direct pharmacokinetic study of sodium selenite in rats reporting compartmental models, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Zeng_2020 | relevant | 10 | 0 | The study reports compartmental PK models for sodium selenite in rats, but the specific numeric parameter values are not present in the provided evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 16:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 09:49 UTC</sub>

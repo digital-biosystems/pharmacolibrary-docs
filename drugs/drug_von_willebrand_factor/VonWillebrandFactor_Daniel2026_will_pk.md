@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Daniel_2026 \u00b7 will_pk&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Bauer2023_pdvwf_fviii_model&quot;,&quot;label&quot;:&quot;Bauer_2023_pdvwf_fviii_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_pdvwf_fviii_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Bauer2023_rvwf_model&quot;,&quot;label&quot;:&quot;Bauer_2023_rvwf_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;VonWillebrandFactor_Schning2026_reference&quot;,&quot;label&quot;:&quot;Sch\u00f6ning_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Schning2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Valke2024_reference&quot;,&quot;label&quot;:&quot;Valke_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Valke2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Wong2025_reference&quot;,&quot;label&quot;:&quot;Wong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Wong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Zhu2020_reference&quot;,&quot;label&quot;:&quot;Zhu_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;VonWillebrandFactor_Al2025_final&quot;,&quot;label&quot;:&quot;Al_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/VonWillebrandFactor_Al2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # von Willebrand factor — `VonWillebrandFactor_Daniel2026_will_pk`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,18 +21,20 @@
 
 The peripheral distribution volume V2 was extracted with the unit IU/mL, a concentration unit, so the structural parameter has a dimension mismatch. The clearance of 447 mL/h and volume of 193 mL are implausible in magnitude for von Willebrand factor, consistent with a unit or scale extraction error. A second reader assigned different values, reading CL as 74.2 mL/h and V as 4537 mL, and read a baseline VWF of 0.28 where this record has none, showing the garbled labels (e.g. the clearance label) were misparsed. The record also lacks the link between VWF:Ag and factor VIII interconversion that the second reader identified. Extracted — von willebrand factor: V2 0.3 IU/mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has von Willebrand factor, the second reading VWF:Ag; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has von Willebrand factor, the second reading high-purity VWF concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:07.932443+00:00) predates the upstream re-run (2026-10-05 20:06:37.913019+00:00). Current validate status: `rejected`.
 
 ## Citation
 Daniel MY et al., Modeling response to high-purity von Wi…, Blood advances (2026)
   ·  DOI: [10.1182/bloodadvances.2025017898](https://doi.org/10.1182/bloodadvances.2025017898)
 
 ## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_will_pk" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_will_pk" status="rejected" stale="true" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
@@ -42,7 +44,7 @@ Daniel MY et al., Modeling response to high-purity von Wi…, Blood advances (20
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 𝑉𝑉𝑣𝑣𝑉𝑉𝑉𝑉 2 (IU/mL) | `Q64` · V2 | 0.30 | IU/mL | not captured | [IU] / [ml] | not captured | llm (0.6) | Daniel_2026_table_S4:row5:col4 | — | not captured |
+| 𝑉𝑉𝑣𝑣𝑉𝑉𝑉𝑉 2 (IU/mL) | `Q64` · V2 | 0.30 | mL | 3e-07 | L | not captured | llm (0.6) | Daniel_2026_table_S4:row5:col4 | — | not captured |
 | 𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝑉𝑉𝑉𝑉𝑉𝑉 (mL/h) | `Q22` · CL | 447 | mL/h | 1.2416666666666666e-07 | [ml] / [h] | not captured | llm (0.6) | Daniel_2026_table_S4:row8:col2 | — | not captured |
 | 𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝑉𝑉𝑉𝑉𝑉𝑉 (mL) | `Q61` · V | 193 | mL | 0.000193 | [ml] | not captured | llm (0.6) | Daniel_2026_table_S4:row9:col2 | — | not captured |
 | 𝑄𝑄𝑉𝑉𝑉𝑉𝑉𝑉 (mL) | `Q30` · Q | 3290 | mL | not captured | [ml] | not captured | llm (0.6) | Daniel_2026_table_S4:row10:col2, Daniel_2026_table_S4:row10:col4 | — | not captured |
@@ -64,7 +66,8 @@ Daniel MY et al., Modeling response to high-purity von Wi…, Blood advances (20
 - dropped unlinked row (NIL): '𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝑉𝑉𝑉𝑉𝑉𝑉 2N (IU/mL)' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row6:col4'])
 - dropped unlinked row (NIL): '𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝑉𝑉𝑉𝑉𝑉𝑉 3 (IU/mL)' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row7:col2', 'Daniel_2026_table_S4:row7:col4'])
 - unit_dimension_mismatch: '𝑄𝑄𝑉𝑉𝑉𝑉𝑉𝑉 (mL)' → Q30 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped unlinked row (NIL): '𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 (mL/h)' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row11:col2', 'Daniel_2026_table_S4:row11:col4'])
+- unit_dimension_mismatch: '𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 (mL/h)' → Q61 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q61 ('𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉 (mL/h)', value '159') — already have one for this compound
 - dropped unlinked row (NIL): '𝑉𝑉𝑉𝑉𝑉𝑉𝐹𝐹𝐹𝐹𝐹𝐹 (IU/mL)' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row12:col2', 'Daniel_2026_table_S4:row12:col4'])
 - dropped unlinked row (NIL): '𝐶𝐶𝐵𝐵𝑉𝑉𝑉𝑉𝐹𝐹𝐹𝐹𝐹𝐹 (IU/mL)1,2' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row13:col4'])
 - dropped unlinked row (NIL): '𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝑉𝑉𝑉𝑉𝐹𝐹𝐹𝐹𝐹𝐹 (IU/mL) 2N,3' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row14:col2', 'Daniel_2026_table_S4:row14:col4'])
@@ -78,10 +81,14 @@ Daniel MY et al., Modeling response to high-purity von Wi…, Blood advances (20
 - dropped unlinked row (NIL): '𝐵𝐵𝑉𝑉' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row28:col2'])
 - dropped unlinked row (NIL): '𝛽𝛽 𝑉𝑉𝑉𝑉𝑉𝑉𝑉𝑉' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row30:col2'])
 - dropped unlinked row (NIL): '𝛽𝛽 𝐶𝐶𝐵𝐵𝑉𝑉𝑉𝑉𝑉𝑉 𝐾𝐾𝑠𝑠𝑒𝑒𝐴𝐴𝑒𝑒𝑒𝑒𝑠𝑠' — extend the ontology if this is a real PK parameter (source ['Daniel_2026_table_S4:row32:col4'])
+- implicit units: '𝑉𝑉𝑣𝑣𝑉𝑉𝑉𝑉 2 (IU/mL)' → mL (from the paper text: "The text states: 'Population estimates for VWF:Ag were ... 4537 mL for volume of distribution (VVWF:Ag)'. Although the p")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=von Willebrand factor
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: 1 first-order transfer(s) across 2 compounds → general_linear
 - status held at route_to_review — not promoted
 - population split: 'will-pk' subgroup of Daniel_2026 (paper reports 4 populations: bauer et al (6), bukkems et al (7), value, will-pk)
+- molar mass: none found for 'von_willebrand_factor' — its concentrations stay mass-only
+- molar mass: none found for 'von Willebrand factor' — its concentrations stay mass-only
 - gap-filled Q49 (kabs) from Schöning_2026's review values (primary lacked it)
 
 **Extraction notes:**
@@ -96,20 +103,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
 <details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['vwf:ag', 'factor viii', 'interconversion']] | mismatch |
-| `gpt-oss:120b` | `parameters[absorption rate constant (kapop) [h-1]]` | 0.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[baselinevwf]` | not captured | 0.28 | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [['von willebrand factor', 'fviii', 'interconversion']] | [['vwf:ag', 'fviii:c', 'interconversion'], ['vwf:ag', 'vwf:act', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[bbbbbbbbbbbbbbbbvvvvvv]` | 447 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clvwf o blood group]` | not captured | 157.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clvwf]` | not captured | 74.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[qqvvvvvv]` | 3290 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vvvvvvvv 2]` | 0.30 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vvwf]` | not captured | 4537 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | von Willebrand factor | high-purity VWF concentrate | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | von Willebrand factor | VWF:Ag | mismatch |
 
 </details>
@@ -131,11 +138,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q30 | fail | [length] ** 3 | mL | not captured | not captured | ['Daniel_2026_table_S4:row10:col2', 'Daniel_2026_table_S4:row10:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Schöning_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Daniel_2026_table_S4:row9:col2'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | IU/mL | not captured | not captured | ['Daniel_2026_table_S4:row5:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Daniel_2026_table_S4:row5:col4'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 447.0 | not captured | not captured | ['Daniel_2026_table_S4:row8:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.447 L/h | not captured | not captured | ['Daniel_2026_table_S4:row8:col2'] |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.193 L | not captured | not captured | ['Daniel_2026_table_S4:row9:col2'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.0003 L | not captured | not captured | ['Daniel_2026_table_S4:row5:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -160,4 +168,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 23:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:06 UTC</sub>

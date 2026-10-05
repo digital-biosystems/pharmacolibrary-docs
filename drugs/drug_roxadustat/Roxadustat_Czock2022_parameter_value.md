@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Czock_2022 \u00b7 parameter_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Czock2022_eskd&quot;,&quot;label&quot;:&quot;Czock_2022_eskd&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_eskd.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy&quot;,&quot;label&quot;:&quot;Czock_2022_healthy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy_fasting&quot;,&quot;label&quot;:&quot;Czock_2022_healthy_fasting&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_fasting.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy_fed&quot;,&quot;label&quot;:&quot;Czock_2022_healthy_fed&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_fed.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy_sca&quot;,&quot;label&quot;:&quot;Czock_2022_healthy_sca&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy_sca.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_liver_cirrhosis_cp_b&quot;,&quot;label&quot;:&quot;Czock_2022_liver_cirrhosis_cp_b&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_liver_cirrhosis_cp_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_parameter_value&quot;,&quot;label&quot;:&quot;Czock_2022_parameter_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Roxadustat_Czock2022_severe_renal_impairment&quot;,&quot;label&quot;:&quot;Czock_2022_severe_renal_impairment&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_severe_renal_impairment.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Reki2021_reference&quot;,&quot;label&quot;:&quot;Reki\u0107_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Reki2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Reki2021_reference&quot;,&quot;label&quot;:&quot;Reki\u0107_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Reki2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # roxadustat — `Roxadustat_Czock2022_parameter_value`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,18 +21,20 @@
 
 Simulated as the paper dosed it, the model's terminal half-life (11.8 h) and peak concentration (0.00135 vs 0.01) deviate beyond tolerance from the reported values. The absorption rate constant ka was not reported in the source, so a default value was substituted, and the lag time before absorption (Tlag) likewise had no source value and was left at a placeholder default; the adjudication deemed the invented absorption not acceptable. The builder also assumed F=1 and Fm=1 with apparent (/F) parameterization and first-order depot input. The fu parameter carries a reported unit of 'h' despite being a fraction, and that unit could not be converted to SI, so the parameter arrived without an SI value. Extracted — roxadustat: tmax 9, t1/2z 10, AUC 480 h·ng/mL per mg, CL/F 2.29 L/h, fu 0.94 h, V/F 39 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 480, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:21.355179+00:00) predates the upstream re-run (2026-10-05 21:36:56.470081+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x)
 
 ## Model component
-<dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_parameter_value" status="needs_review" stale="false" population="chronic kidney disease patients" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_parameter_value" status="needs_review" stale="true" population="healthy volunteers and chronic kidney disease patients" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -42,8 +44,8 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tpeak E1 = tpeak EPO | `Q56` · tmax | 9 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row19:col3 | — | not captured |
-| TED50 = t½ EPO | `Q57` · t1/2z | 10 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row26:col3, Tab2:row26:col4 | — | not captured |
+| tpeak E1 = tpeak EPO | `Q56` · tmax | 9 | h | 32400.0 | h | not captured | llm_confirmed (0.6) | Tab2:row19:col3 | — | not captured |
+| TED50 = t½ EPO | `Q57` · t1/2z | 10 | h | 36000.0 | h | not captured | llm (0.6) | Tab2:row26:col3, Tab2:row26:col4 | — | not captured |
 | AUC (h·ng/mL per mg) | `Q88` · AUC | 480 | h·ng/mL per mg | not captured | [[h] · [ng]] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row2:col15, Czock_2022_table_1:row2:col16 | — | not captured |
 | CL/F (L/h) | `Q27` · CL/F | 2.29 | L/h | 6.361111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Czock_2022_table_1:row6:col15, Czock_2022_table_1:row6:col16 | — | not captured |
 | fu (%) | `Q46` · fu | 0.94 | h | not captured | [h] | not captured | exact (1.0) | Czock_2022_table_1:row10:col7 | — | not captured |
@@ -58,26 +60,23 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | Kinetics Cmax ROXA | Q32 | not captured | llm_confirmed |
+| CE05 EPO = Cthreshold ROXA | Q900 | not captured | llm |
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped duplicate Q32 ('Dynamics E1 peak = Cpeak EPO', value None) — already have one for this compound
 - dropped PD-category row 'CE50 = roxadustat concentration producing half-maximum E1 EPO = 150 IU/L' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row24:col3'])
 - dropped PD-category row 'Hill coefficient' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row29:col3'])
-- dropped unlinked row (NIL): 'CE05 EPO = Cthreshold ROXA' — extend the ontology if this is a real PK parameter (source ['Tab2:row30:col3'])
 - dropped unlinked row (NIL): 'AUEC1 EPO' — extend the ontology if this is a real PK parameter (source ['Tab2:row31:col4', 'Tab2:row38:col3', 'Tab2:row38:col4'])
 - dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Czock_2022_table_1:row1:col7'])
 - unit_dimension_unknown: 'h·ng/mL per mg' (AUC)
 - unit_dimension_unknown: 'ng/mL per mg' (Cmax)
 - dropped duplicate Q32 ('Cmax (ng/mL per mg)', value '65') — already have one for this compound
 - dropped duplicate Q57 ('t½ or t½α and t½ß (h)', value '15.7') — already have one for this compound
+- implicit units: 'tpeak E1 = tpeak EPO' → h (from the paper text: "The text states: 'This peak occurs 8–10 h (time to peak concentration (tpeak)) after roxadustat administration (Table 2)")
+- implicit units: 'TED50 = t½ EPO' → h (from the paper text: "The text states: 'Subsequently, the EPO concentrations decrease again, with a t½ of 13 h (Table 2).' The parameter TED50")
+- implicit units: 'AUC (h·ng/mL per mg)' — the LLM proposed 'h·ng/mL/mg', whose dimension does not fit Q88; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=roxadustat
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -166,19 +165,20 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss:120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd/f]` | 39.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | 480 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auec1 epo]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ce05 epo = cthreshold roxa]` | not captured | not captured | only_one_extracted |
 
 </details>
 
@@ -197,9 +197,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 11.8 | 11.805 | 1.0004 | 0.25 | reported t½β |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row6:col15', 'Czock_2022_table_1:row6:col16'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Tab2:row19:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab2:row26:col3', 'Tab2:row26:col4'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Czock_2022:review'] |
-| C5_unit_missing_Q56 | fail | [time] | not captured | not captured | not captured | ['Tab2:row19:col3'] |
-| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Tab2:row26:col3', 'Tab2:row26:col4'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | h·ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row2:col15', 'Czock_2022_table_1:row2:col16'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -255,25 +255,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_modelica.zip" download>Roxadustat_Czock2022_parameter_value_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_fmi.zip" download>Roxadustat_Czock2022_parameter_value_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_fmi.zip" download>Roxadustat_Czock2022_parameter_value_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_matlab.zip" download>Roxadustat_Czock2022_parameter_value_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_matlab_simbio.zip" download>Roxadustat_Czock2022_parameter_value_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_sbml.zip" download>Roxadustat_Czock2022_parameter_value_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_cellml.zip" download>Roxadustat_Czock2022_parameter_value_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value.svg" alt="Roxadustat_Czock2022_parameter_value diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 70 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 70–280 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Roxadustat_Czock2022_parameter_value_params.json` · controls `Roxadustat_Czock2022_parameter_value_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 01:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:36 UTC</sub>

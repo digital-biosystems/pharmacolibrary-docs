@@ -18,7 +18,7 @@ Migalastat is used to treat Fabry disease. It is authorised in the European Unio
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:57 | 4:26 | 0/0/0 | 0/0/0 | 0/0/1 | 12,895/1,382 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/6 | 4/0 | 0 |
+| 2026-10-05 11:49 | 1:49 | 0/0/0 | 0/0/0 | 0/0/1 | 44,056/2,312 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/6 | 4/0 | 0 |
 
 ## popPK records
 
@@ -66,17 +66,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Leonowens_2022.pdf` | Leonowens C et al., Population Pharmacokinetics of Oral Mig…, Clinical pharmacology in dr… (2022) | popPK | 10 | [10.1002/cpdd.1160](https://doi.org/10.1002/cpdd.1160) | [36331497](https://pubmed.ncbi.nlm.nih.gov/36331497) | The paper describes a population PK model for migalastat, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Bach_2023.pdf` | Bach T et al., Pharmacometric model of agalsidase-miga…, Journal of pharmacokinetics… (2023) | popPK | 8 | [10.1007/s10928-022-09830-y](https://doi.org/10.1007/s10928-022-09830-y) | [36376611](https://pubmed.ncbi.nlm.nih.gov/36376611) | The paper describes a pharmacometric model for migalastat, but the specific numeric parameter values are not present in the provided evidence text. |
-| `Johnson_2013.pdf` | Johnson FK et al., Pharmacokinetics and Safety of Migalast…, Clinical pharmacology in dr… (2013) | popPK | 8 | [10.1002/cpdd.1](https://doi.org/10.1002/cpdd.1) | [27121667](https://pubmed.ncbi.nlm.nih.gov/27121667) | The paper reports key PK parameters (AUC, Cmax, t1/2) for migalastat, but lacks specific clearance (CL) or volume (V) values required for full population PK modeling. |
 | `Johnson_2024.pdf` | Johnson FK et al., Pharmacokinetic evaluation of single-do…, PloS one (2024) | pd | 5 | [10.1371/journal.pone.0314030](https://doi.org/10.1371/journal.pone.0314030) | [39636942](https://www.ncbi.nlm.nih.gov/pubmed/39636942) | metadata signals extractable PD data (EC50) |
 | `Gossan_2015.pdf` | Gossan DP et al., Glycosidase inhibitors from the roots o…, Phytochemistry (2015) | pd | 4 | [10.1016/j.phytochem.2014.10.029](https://doi.org/10.1016/j.phytochem.2014.10.029) | [25468536](https://www.ncbi.nlm.nih.gov/pubmed/25468536) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T02:57:24.691570+00:00</sub>
+<sub>queue written 2026-10-05T11:47:53.549283+00:00</sub>
 
 ## Screened and excluded
 
@@ -84,20 +81,20 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Asano_2000 | irrelevant | 0 | 0 | The paper studies 1-deoxygalactonojirimycin (miglustat) in vitro for Fabry disease, not migalastat, and contains no pharmacokinetic parameters. |
 | popPK | Bach_2023 | relevant | 8 | 0 | The paper describes a pharmacometric model for migalastat, but the specific numeric parameter values are not present in the provided evidence text. |
-| popPK | Battaglia_2026 | irrelevant | 0 | 0 | The study evaluates dapagliflozin in Fabry disease patients, with migalastat serving only as a background therapy/comparator, and no pharmacokinetic parameters for migalastat are reported. |
-| popPK | Benjamin_2009 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study assessing enzyme activity and substrate reduction in cell lines, not a pharmacokinetic study reporting disposition parameters for migalastat. |
+| popPK | Battaglia_2026 | irrelevant | 0 | 0 | The study evaluates the renal effects of dapagliflozin in Fabry disease patients, with migalastat serving only as a background therapy/comparator, and no pharmacokinetic parameters for migalastat are reported. |
+| popPK | Benjamin_2009 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of migalastat's effect on enzyme levels in cell lines, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Benjamin_2017 | irrelevant | 0 | 0 | The paper describes a pharmacogenetic assay for patient selection and reports pharmacodynamic outcomes, not pharmacokinetic parameters for migalastat. |
 | PD | Benjamin_2017 | not_relevant | 2 | 1 | The paper validates a pharmacogenetic assay using clinical PD outcomes (WBC activity, biomarkers) but does not report a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50) for migalastat. |
 | PGx | Besada_2021 | not_relevant | 0 | 0 | The paper evaluates new pharmacological chaperones (PBXs) for Fabry disease and does not report pharmacogenomic effects on the PK or PD parameters of migalastat. |
 | popPK | Bichet_2021 | irrelevant | 0 | 0 | The paper is a pharmacodynamic biomarker study assessing lyso-Gb3 levels and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for migalastat. |
 | PD | Bichet_2021 | not_relevant | 2 | 0 | The paper assesses the correlation between a biomarker (lyso-Gb3) and clinical outcomes, finding no significant relationship, and does not report a concentration-effect or dose-response model with numeric PD parameters for migalastat. |
-| PGx | Bichet_2021 | not_relevant | 0 | 0 | The paper evaluates the utility of a biomarker (lyso-Gb3) for monitoring treatment response in Fabry disease patients but does not report how specific gene variants or genotypes alter the pharmacokinetic or pharmacodynamic parameters of migalastat. |
+| PGx | Bichet_2021 | not_relevant | 0 | 0 | The paper evaluates lyso-Gb3 as a biomarker for treatment response but does not report how specific gene variants or genotypes alter the PK or PD parameters of migalastat. |
 | popPK | Bichet_2023 | irrelevant | 0 | 0 | The paper is a Delphi consensus study on clinical management and monitoring guidelines for Fabry disease, not a pharmacokinetic study, and contains no quantitative PK parameters for migalastat. |
 | PD | Bichet_2023 | not_relevant | 0 | 0 | The paper is a consensus guideline (Delphi study) regarding clinical management and monitoring, containing no pharmacokinetic or pharmacodynamic modeling or numeric PD parameters. |
 | PGx | Eleftheriadis_2025 | not_relevant | 0 | 0 | The paper is a clinical case report describing the efficacy and safety of migalastat in a patient with a specific GLA mutation, but it does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Fantur_2012 | not_relevant | 0 | 0 | The paper discusses pharmacological chaperones for GM1-gangliosidosis and Morquio B disease, not migalastat. |
 | popPK | Germain_2012 | irrelevant | 1 | 0 | The paper is a pharmacodynamic study reporting enzyme activity and substrate levels, not a pharmacokinetic study with quantitative disposition parameters (CL, V, Q, ka) for migalastat. |
-| PGx | Germain_2019 | not_relevant | 0 | 0 | The paper reports clinical efficacy outcomes (PD) of migalastat in Fabry disease patients but does not report pharmacokinetic (PK) parameters or specific pharmacogenomic effects on PK/PD metrics. |
+| PGx | Germain_2019 | not_relevant | 2 | 5 | The paper reports clinical efficacy outcomes (PD) in patients with specific GLA variants, but does not report pharmacokinetic (PK) parameters or a quantitative pharmacogenomic effect size (e.g., change in AUC/Cmax) driven by the genotype. |
 | popPK | Giugliani_2013 | irrelevant | 0 | 0 | The study reports safety and pharmacodynamic effects (GL-3 levels, enzyme activity) but does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for migalastat. |
 | PD | Giugliani_2013 | not_relevant | 3 | 1 | The paper reports qualitative pharmacodynamic effects (decreases in GL-3) and dose trends in a small cohort but does not provide numeric PD parameters (Emax, EC50) or a quantitative exposure-response model. |
 | popPK | Gossan_2015 | irrelevant | 0 | 0 | The paper describes the isolation and enzymatic inhibition of natural products from Glyphaea brevis and does not involve migalastat or pharmacokinetic parameters. |
@@ -108,9 +105,9 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Johnson_2024 | not_relevant | 0 | 0 | The paper evaluates pharmacokinetics in subjects with ESRD and dialysis, focusing on renal impairment rather than genetic variants or pharmacogenomics. |
 | popPK | Kato_2005 | irrelevant | 0 | 0 | The paper discusses the biological properties and enzyme inhibition of 1-deoxyazasugars, not the pharmacokinetics of migalastat. |
 | PD | Kato_2005 | not_relevant | 0 | 0 | The paper discusses the biological properties and enzyme inhibition (Ki/IC50) of 1-deoxyazasugars (DNJ derivatives) but does not mention migalastat or report any pharmacodynamic exposure-response or dose-response relationship for it. |
-| popPK | Leonowens_2022 | relevant | 10 | 0 | The paper describes a population PK model for migalastat, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| PGx | Leonowens_2022 | not_relevant | 0 | 0 | The paper investigates the impact of renal function (eGFR) and demographics on migalastat PK, but does not report any pharmacogenomic effects (gene variants/genotypes). |
-| PGx | Lukas_2013 | not_relevant | 0 | 0 | The paper characterizes GLA mutations and their response to the pharmacological chaperone DGJ (1-deoxygalactonojirimycin), not migalastat. |
+| popPK | Leonowens_2022 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
+| PGx | Leonowens_2022 | not_relevant | 0 | 0 | The paper focuses on renal impairment as a covariate for migalastat PK, not on genetic variants or pharmacogenomics. |
+| PGx | Lukas_2013 | not_relevant | 0 | 0 | The paper focuses on the functional characterization of GLA mutations and their correlation with Fabry disease phenotypes and biomarkers, not on the pharmacokinetics or pharmacodynamics of migalastat. |
 | PGx | Lukas_2020 | not_relevant | 0 | 0 | The paper discusses 1-deoxygalactonojirimycin (DGJ), not migalastat, and focuses on in vitro enzyme activity rather than clinical PK/PD parameters. |
 | PGx | McCarron_2026 | not_relevant | 2 | 5 | The paper reports clinical outcomes and biomarker changes in a real-world cohort but does not analyze how specific genotypes quantitatively alter pharmacokinetic or pharmacodynamic parameters of migalastat. |
 | PGx | Monticelli_2023 | not_relevant | 0 | 0 | The paper investigates curcumin for Fabry disease and does not mention migalastat or its pharmacokinetic/pharmacodynamic parameters. |
@@ -120,7 +117,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ramaswami_2025 | irrelevant | 2 | 0 | The paper explicitly states that pharmacokinetic results were reported previously and focuses on safety and efficacy outcomes, with no quantitative PK parameter values present in the provided evidence. |
 | PD | Ramaswami_2025 | not_relevant | 1 | 0 | The text reports qualitative stability of pharmacodynamic markers (lyso-Gb3) and clinical outcomes but does not provide numeric PD parameters or an exposure-response relationship. |
 | PGx | Ramaswami_2025 | not_relevant | 0 | 0 | The paper reports safety and efficacy outcomes in a general adolescent population with Fabry disease, but does not analyze how specific gene variants or genotypes alter the pharmacokinetic or pharmacodynamic parameters of migalastat. |
-| PGx | Saeed_2022 | not_relevant | 0 | 0 | The paper is a review of Fabry disease and its cardiac manifestations, mentioning migalastat only as a treatment option without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Saeed_2022 | not_relevant | 0 | 0 | The paper is a review of Fabry disease and cardiac manifestations, mentioning migalastat only as a general treatment option without reporting any pharmacogenomic effects on PK or PD parameters. |
 | popPK | Welford_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lucerastat, with migalastat serving only as a comparator and no pharmacokinetic parameters reported. |
 | PD | Welford_2018 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50, % reduction) for lucerastat, not migalastat; migalastat is only mentioned as a comparator without specific numeric PD data provided in the text. |
 | PGx | Yam_2005 | not_relevant | 0 | 0 | The paper describes the mechanism of action of a chemical chaperone (1-deoxygalactonojirimycin) in Fabry disease, not the pharmacogenomics of migalastat. |

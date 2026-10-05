@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;melagatran&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melagatran_Eriksson2003_reference&quot;,&quot;label&quot;:&quot;Eriksson_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melagatran/Melagatran_Eriksson2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # melagatran
 
@@ -14,18 +15,27 @@ Melagatran is a direct thrombin inhibitor that was investigated as an antithromb
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q27084209](https://www.wikidata.org/wiki/Q27084209) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| melagatran | parent | 429.513 | C22H31N5O4 | DrugBank | — | Cullberg_2005, Eriksson_2003 |
+| ximelagatran | metabolite | 473.574 | C24H35N5O5 | PubChem | [9574101](https://pubchem.ncbi.nlm.nih.gov/compound/9574101) | Cullberg_2005 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 20:20 | 2:07 | 0/2/0 | 0/0/0 | 0/0/0 | 12,040/976 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-05 15:00 | 4:15 | 0/1/1 | 0/0/0 | 0/0/0 | 45,834/11,264 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cullberg_2005_patients with acute deep vein thrombosis](drugs/drug_melagatran/Melagatran_Cullberg2005_patients_with_acute_deep_vein_thromb.md) | — | — (no model) | 0 | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Eriksson_2003_orthopaedic surgery patients](drugs/drug_melagatran/Melagatran_Eriksson2003_orthopaedic_surgery_patients.md) | — | — (no model) | 0 | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cullberg_2005_reference](drugs/drug_melagatran/Melagatran_Cullberg2005_reference.md) | held back | 1-compartment, oral | 3 | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Eriksson_2003_reference](drugs/drug_melagatran/Melagatran_Eriksson2003_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
 
 ## ADME sites
 
@@ -46,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,25 +65,25 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bååthe_2006.pdf` | Bååthe S et al., Population pharmacokinetics of melagatr…, Clinical pharmacokinetics (2006) | popPK | 10 | [10.2165/00003088-200645080-00004](https://doi.org/10.2165/00003088-200645080-00004) | [16884319](https://pubmed.ncbi.nlm.nih.gov/16884319) | The paper is a population PK study of melagatran, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Cullberg_2005.pdf` | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | popPK | 10 | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) | [15903126](https://pubmed.ncbi.nlm.nih.gov/15903126) | The paper reports a population pharmacokinetic analysis for melagatran with explicit numeric values for clearance (27.3 L/h) and volume of distribution (176 L) present in the text. |
-| `Eriksson_2003.pdf` | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | popPK | 10 | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) | [12844328](https://pubmed.ncbi.nlm.nih.gov/12844328) | The paper is a population PK study of melagatran and explicitly reports numeric values for clearance (5.3 and 22.9 L/h) and volume of distribution (15.5 and 159 L) in the results section. |
-| `Bergqvist_2004.pdf` | Bergqvist D et al., Pharmacokinetics, preliminary efficacy…, Clinical drug investigation (2004) | popPK | 8 | [10.2165/00044011-200424030-00001](https://doi.org/10.2165/00044011-200424030-00001) | [17516699](https://pubmed.ncbi.nlm.nih.gov/17516699) | The study reports a one-compartment PK model and bioavailability for melagatran, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
+| `Bååthe_2006.pdf` | Bååthe S et al., Population pharmacokinetics of melagatr…, Clinical pharmacokinetics (2006) | popPK | 10 | [10.2165/00003088-200645080-00004](https://doi.org/10.2165/00003088-200645080-00004) | [16884319](https://pubmed.ncbi.nlm.nih.gov/16884319) | The paper describes a population PK model for melagatran in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Cullberg_2005.pdf` | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | popPK | 10 | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) | [15903126](https://pubmed.ncbi.nlm.nih.gov/15903126) | The abstract explicitly reports population mean clearance (27.3 L/h) and volume of distribution (176 L) for melagatran. |
+| `Eriksson_2003.pdf` | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | popPK | 10 | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) | [12844328](https://pubmed.ncbi.nlm.nih.gov/12844328) | The paper reports a population pharmacokinetic model for melagatran in humans with specific numeric values for clearance and volume of distribution provided in the abstract. |
+| `Bergqvist_2004.pdf` | Bergqvist D et al., Pharmacokinetics, preliminary efficacy…, Clinical drug investigation (2004) | popPK | 8 | [10.2165/00044011-200424030-00001](https://doi.org/10.2165/00044011-200424030-00001) | [17516699](https://pubmed.ncbi.nlm.nih.gov/17516699) | The study reports a one-compartment PK model and bioavailability for melagatran, but specific numeric values for clearance, volume, or half-life are not present in the provided text. |
 | `Bredberg_2003.pdf` | Bredberg E et al., Ximelagatran, an oral direct thrombin i…, Clinical pharmacokinetics (2003) | pgx | 7 | [10.2165/00003088-200342080-00005](https://doi.org/10.2165/00003088-200342080-00005) | [12846597](https://www.ncbi.nlm.nih.gov/pubmed/12846597) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-09-06T05:15:14.462254+00:00</sub>
+<sub>queue written 2026-10-05T14:56:36.969509+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bergqvist_2004 | relevant | 8 | 2 | The study reports a one-compartment PK model and bioavailability for melagatran, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
+| popPK | Bergqvist_2004 | relevant | 8 | 2 | The study reports a one-compartment PK model and bioavailability for melagatran, but specific numeric values for clearance, volume, or half-life are not present in the provided text. |
 | PGx | Bredberg_2003 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving CYP enzymes, not pharmacogenomic effects of gene variants on melagatran PK/PD. |
-| popPK | Bååthe_2006 | relevant | 10 | 2 | The paper is a population PK study of melagatran, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Bååthe_2006 | relevant | 10 | 2 | The paper describes a population PK model for melagatran in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | PGx | Clement_2003 | not_relevant | 0 | 0 | The paper describes in vitro biotransformation mechanisms of ximelagatran to melagatran but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Elg_1997 | irrelevant | 1 | 0 | The study focuses on enzyme inhibition kinetics and antithrombotic efficacy (IC50) in a rat model, not on pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| popPK | Elg_1997 | irrelevant | 1 | 0 | The study focuses on enzyme inhibition kinetics (Ki, kon) and antithrombotic efficacy in a rat model, not on the pharmacokinetic disposition parameters (CL, V, ka) of melagatran. |
 | PGx | Nowak_2002 | not_relevant | 0 | 0 | The paper is a general pharmacological review of direct thrombin inhibitors and does not report any pharmacogenomic effects or gene-variant specific PK/PD data for melagatran. |
 | popPK | Nylander_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of platelet activation and does not report pharmacokinetic parameters for melagatran. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 20:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 14:56 UTC</sub>

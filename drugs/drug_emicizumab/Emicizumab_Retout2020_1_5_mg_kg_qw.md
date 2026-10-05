@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;emicizumab&quot;,&quot;href&quot;:&quot;drugs/drug_emicizumab/&quot;},{&quot;label&quot;:&quot;Retout_2020 \u00b7 1_5_mg_kg_qw&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emicizumab_Retout2020_estimate&quot;,&quot;label&quot;:&quot;Retout_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_emicizumab/Emicizumab_Retout2020_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # emicizumab — `Emicizumab_Retout2020_1_5_mg_kg_qw`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,24 +21,26 @@
 
 The paper reports only summary exposure metrics for emicizumab (t1/2z 26.8 day, Cmax,SS 54.9 μg/mL, tmax,SS 2.51 day, Ctrough,SS 51.1 μg/mL, AUCss,τ 375 μg×day/mL, Cav,SS 53.5 μg/mL) and between-subject variability ranges (CL/F 56.4 to 30.0%, V/F 60.7 to 28.1%), but no actual clearance, volume, ka or Tlag values. The builder substituted placeholder defaults for these, and the invented absorption (defaulted ka) was judged not acceptable. The record also assumes apparent parameterization (F=1, Fm=1, no molar correction) with first-order depot input, which a second reader disputes, preferring a mechanistic parameterization; the second reader also drops the two BPV entries and reports Cmax,SS/Ctrough,SS 1.08 and t1/2,abs 1.61, values absent from this record. One reported unit could not be converted to SI, so that parameter arrived without an SI value. Extracted — emicizumab: t1/2z 26.8 day, Cmax 54.9 μg/mL, tmax 2.51 day, Ctrough 51.1 μg/mL, AUCSS 375 μg × day/mL, Cavg 53.5 μg/mL, CL/F 56.4 %, V/F 60.7 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has emicizumab, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.690516+00:00) predates the upstream re-run (2026-10-05 18:44:43.985850+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z)
 
 ## Model component
-<dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_1_5_mg_kg_qw" status="model_quarantined" stale="false" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_1_5_mg_kg_qw" status="needs_review" stale="true" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 8 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,6 +48,7 @@ Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacoki
 | Cmax,SS (μg/mL) | `Q32` · Cmax | 54.9 | μg/mL | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Retout_2020_table_5:row3:col1 | — | not captured |
 | tmax,SS (day) | `Q56` · tmax | 2.51 | day | 216863.99999999997 | [d] | not captured | llm_confirmed (0.6) | Retout_2020_table_5:row4:col1 | — | not captured |
 | Ctrough,SS (μg/mL) | `Q37` · Ctrough | 51.1 | μg/mL | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Retout_2020_table_5:row5:col1 | — | not captured |
+| Cmax,SS/Ctrough,SS (–) | `Q33` · Cmax_ratio | 1.08 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Retout_2020_table_5:row6:col1 | — | not captured |
 | AUCss,τ (μg × day/mL) | `Q18` · AUCSS | 375 | μg × day/mL | not captured | [[d] · [µg]] / [ml] | not captured | llm_confirmed (0.6) | Retout_2020_table_5:row7:col1 | — | not captured |
 | Cav,SS (μg/mL) | `Q71` · Cavg | 53.5 | μg/mL | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Retout_2020_table_5:row8:col1 | — | not captured |
 | BPV on CL/F from 56.4 to 30.0% | `Q27` · CL/F | 56.4 | % | not captured | % | not captured | boundary (0.8) | Retout_2020:results_prose | — | not captured |
@@ -59,14 +63,15 @@ Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacoki
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('t1/2,abs (day)', value '1.61') — already have one for this compound
-- dropped unlinked row (NIL): 'Cmax,SS/Ctrough,SS (–)' — extend the ontology if this is a real PK parameter (source ['Retout_2020_table_5:row6:col1'])
 - unit_dimension_unknown: 'μg × day/mL' (AUCSS)
 - salvaged Q27 ('BPV on CL/F from 56.4 to 30.0%'=56.4) from results prose — parameter table was unreadable
 - salvaged Q76 ('BPV on V/F from 60.7 to 28.1%'=60.7) from results prose — parameter table was unreadable
+- implicit units: 'AUCss,τ (μg × day/mL)' — the LLM proposed 'μg × day/mL', whose dimension does not fit Q18; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=emicizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: '1.5 mg/kg qw' subgroup of Retout_2020 (paper reports 4 populations: 1.5 mg/kg qw, 3 mg/kg q2w, 6 mg/kg q4w, estimate)
+- molar mass: none found for 'emicizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell Tab4:row6:col3 = '8.6b'
@@ -114,17 +119,32 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.643 (9/14 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.091 (2/22 fields) | 20 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[aucss,τ]` | 375 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[aucss,τ]` | not captured | 375 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bpv on cl/f from 56.4 to 30.0%]` | 56.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bpv on v/f from 60.7 to 28.1%]` | 60.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cav,ss]` | 53.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cav,ss]` | not captured | 53.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[classical cl/f exponent]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax,ss/ctrough,ss]` | 1.08 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax,ss/ctrough,ss]` | not captured | 1.08 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax,ss]` | 54.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax,ss]` | not captured | 54.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ctrough,ss]` | 51.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ctrough,ss]` | not captured | 51.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2,abs]` | not captured | 1.61 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | 26.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 26.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax,ss]` | 2.51 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax,ss]` | not captured | 2.51 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | emicizumab | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | emicizumab | unknown | mismatch |
 
 </details>
 
@@ -138,7 +158,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Retout_2020_table_5:row3:col1'] |
@@ -204,4 +224,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:44 UTC</sub>

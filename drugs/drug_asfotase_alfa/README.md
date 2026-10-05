@@ -17,7 +17,7 @@ Asfotase alfa is an enzyme replacement therapy used to treat hypophosphatasia. I
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:12 | 1:56 | 0/0/0 | 0/0/0 | 0/0/0 | 3,939/317 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 0/1 | 0 |
+| 2026-10-05 10:57 | 0:51 | 0/0/0 | 0/0/0 | 0/0/0 | 16,983/1,278 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 0/1 | 0 |
 
 ## popPK records
 
@@ -51,24 +51,24 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Pan_2021.pdf` | Pan WJ et al., Pharmacokinetics of Asfotase Alfa in Ad…, Journal of clinical pharmac… (2021) | popPK | 8 | [10.1002/jcph.1870](https://doi.org/10.1002/jcph.1870) | [33822385](https://pubmed.ncbi.nlm.nih.gov/33822385) | The study reports PK parameters for asfotase alfa, but only qualitative trends and a median half-life are provided in the text, lacking specific numeric values for clearance, volume, or population model parameters. |
+| `Pan_2021.pdf` | Pan WJ et al., Pharmacokinetics of Asfotase Alfa in Ad…, Journal of clinical pharmac… (2021) | popPK | 8 | [10.1002/jcph.1870](https://doi.org/10.1002/jcph.1870) | [33822385](https://pubmed.ncbi.nlm.nih.gov/33822385) | The study reports PK parameters for asfotase alfa, but only median half-life (~5 days) is explicitly provided in the text, while specific clearance and volume values are not listed. |
 
-<sub>queue written 2026-09-30T02:12:51.434874+00:00</sub>
+<sub>queue written 2026-10-05T10:56:43.273516+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ahmed_2025 | irrelevant | 0 | 0 | The paper is a general tutorial on rare disease drug development and does not contain any specific pharmacokinetic data or parameters for asfotase_alfa. |
+| popPK | Ahmed_2025 | irrelevant | 0 | 0 | The paper is a general tutorial on rare disease drug development and does not contain specific pharmacokinetic data for asfotase_alfa. |
 | PD | Ahmed_2025 | not_relevant | 0 | 0 | The text is a general tutorial on rare disease drug development and does not contain specific data, models, or numeric parameters for asfotase alfa. |
 | PGx | Conti_2026 | not_relevant | 0 | 0 | The paper reports clinical outcomes of asfotase alfa therapy in patients with specific ALPL mutations but does not analyze how these genotypes alter the drug's pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Dahir_2024 | irrelevant | 0 | 0 | The study evaluates efzimfotase alfa, not asfotase alfa, which is the required subject drug. |
+| popPK | Dahir_2024 | irrelevant | 0 | 0 | The study evaluates efzimfotase alfa, not asfotase alfa. |
 | PD | Dahir_2024 | not_relevant | 3 | 1 | The abstract describes qualitative dose-dependent reductions in biomarkers (PPi, PLP) but does not provide numeric PD parameters (e.g., Emax, EC50) or specific concentration-effect data points. |
-| popPK | Freitas_2018 | irrelevant | 0 | 0 | The paper is a clinical case report focusing on bone microarchitecture outcomes and does not report any pharmacokinetic parameters for asfotase alfa. |
+| popPK | Freitas_2018 | irrelevant | 0 | 0 | This is a clinical case report focusing on bone microarchitecture outcomes, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | PGx | Gill_2025 | not_relevant | 0 | 0 | The paper is a case report of a patient with hypophosphatasia who is planned to start asfotase alfa, but it does not report any pharmacokinetic or pharmacodynamic data or the effect of the ALPL variant on the drug's response. |
 | popPK | Hidaka_2023 | irrelevant | 0 | 0 | The paper is a clinical case report focusing on therapeutic efficacy and biomarker changes (pyrophosphate levels) rather than pharmacokinetic disposition parameters. |
 | PD | Hidaka_2023 | not_relevant | 2 | 1 | The paper is a single-patient case report describing clinical improvement and biomarker reduction (PPi) over time, but it does not provide drug concentration data or fit a pharmacodynamic model to derive numeric PD parameters like Emax or EC50. |
-| PGx | Hidaka_2023 | not_relevant | 0 | 0 | The paper reports a clinical case of treatment response and identifies a pathogenic variant, but it does not report a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of asfotase alfa. |
+| PGx | Hidaka_2023 | not_relevant | 0 | 0 | The paper reports a clinical case of treatment response and a novel pathogenic variant, but does not analyze how the genotype affects the pharmacokinetics or pharmacodynamics of asfotase alfa. |
 | popPK | Kim_2020 | irrelevant | 0 | 0 | The paper is a review of single enzyme nanoparticles and does not report quantitative pharmacokinetic parameters for asfotase_alfa. |
 | popPK | Kishnani_2021 | irrelevant | 0 | 0 | The paper is a clinical outcome analysis focusing on ALPL variant states and efficacy/safety, reporting no quantitative pharmacokinetic parameters (CL, V, t1/2) for asfotase alfa. |
 | PD | Kishnani_2021 | not_relevant | 1 | 0 | The paper analyzes clinical outcomes based on genetic variant status (biallelic vs monoallelic) rather than drug exposure or dose, and does not report any concentration-effect or dose-response PD parameters. |
@@ -77,19 +77,19 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Lipiński_2026 | not_relevant | 0 | 0 | The paper is a narrative review of hypophosphatasia diagnosis and treatment, describing the disease mechanism and general use of asfotase alfa, but it does not report specific pharmacogenomic effects of gene variants on the PK or PD parameters of asfotase alfa. |
 | popPK | Nakano_2019 | irrelevant | 0 | 0 | The paper is an in-vitro gene therapy study focusing on ALP activity and calcification, not a pharmacokinetic study reporting disposition parameters for asfotase_alfa. |
 | PD | Nakano_2019 | not_relevant | 0 | 0 | The paper describes a gene therapy study using iPSCs and TALENs; it mentions asfotase alfa only as background context and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for the drug. |
-| PGx | Orimo_2016 | not_relevant | 0 | 0 | The paper is a review of the pathophysiology of hypophosphatasia and the history of asfotase alfa, but it does not report any pharmacogenomic studies linking specific gene variants to changes in the drug's pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Pan_2021 | relevant | 8 | 2 | The study reports PK parameters for asfotase alfa, but only qualitative trends and a median half-life are provided in the text, lacking specific numeric values for clearance, volume, or population model parameters. |
+| PGx | Orimo_2016 | not_relevant | 0 | 0 | The paper is a review of the pathophysiology of hypophosphatasia and the history of asfotase alfa approval, containing no data on pharmacogenomic effects on PK or PD parameters. |
+| popPK | Pan_2021 | relevant | 8 | 2 | The study reports PK parameters for asfotase alfa, but only median half-life (~5 days) is explicitly provided in the text, while specific clearance and volume values are not listed. |
 | PD | Pan_2021 | not_relevant | 1 | 0 | The paper reports only pharmacokinetic (PK) parameters (exposure, half-life, dose proportionality) and explicitly refers to previously published pharmacodynamic results, providing no numeric PD parameters or concentration-effect data in this text. |
 | PGx | Pan_2021 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetics of asfotase alfa in a general patient population and does not investigate the impact of specific gene variants or genotypes on PK/PD parameters. |
 | PGx | Prakash_2025 | not_relevant | 0 | 0 | The paper describes a clinical case of hypophosphatasia and the response to asfotase alfa therapy, but it does not report a pharmacogenomic study linking specific gene variants to changes in the drug's pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Seefried_2021 | irrelevant | 1 | 0 | The study reports pharmacodynamic outcomes (PPi and PLP concentrations) rather than quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for asfotase alfa. |
 | PGx | Stürznickel_2021 | not_relevant | 0 | 0 | The paper reports clinical efficacy and biochemical changes in patients with ALPL mutations but does not analyze how specific genetic variants affect the pharmacokinetics or pharmacodynamics of asfotase alfa. |
-| popPK | Tang_2026 | irrelevant | 0 | 0 | The paper is a machine learning study on exosomal miRNAs in rheumatoid arthritis and does not involve asfotase_alfa or pharmacokinetic parameters. |
+| popPK | Tang_2026 | irrelevant | 0 | 0 | The paper is a study on exosomal miRNAs in rheumatoid arthritis and contains no pharmacokinetic data for asfotase_alfa. |
 | PD | Tang_2026 | not_relevant | 0 | 0 | The paper focuses on miRNA biomarkers for sarcopenia in rheumatoid arthritis and does not report any pharmacodynamic or exposure-response data for asfotase alfa. |
 | popPK | Whyte_2021 | irrelevant | 0 | 0 | The paper discusses vitamin B6 deficiency and PLP levels in a patient with hypophosphatasia, not the pharmacokinetic parameters of asfotase alfa. |
 | PD | Whyte_2021 | not_relevant | 0 | 0 | The paper describes a case of vitamin B6 deficiency in a patient with hypophosphatasia and does not report any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for asfotase alfa. |
 | PGx | Zervou_2025 | not_relevant | 0 | 0 | The paper describes a clinical case series of neuropathic pain in HPP patients and mentions asfotase alfa treatment, but it does not report any pharmacogenomic analysis or data on how genetic variants affect the pharmacokinetics or pharmacodynamics of asfotase alfa. |
-| PGx | dAngelo_2025 | not_relevant | 0 | 0 | The paper is a case report describing the clinical efficacy and safety of asfotase alfa in a patient with hypophosphatasia, but it does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | dAngelo_2025 | not_relevant | 0 | 0 | The paper is a case report describing the clinical efficacy and safety of asfotase alfa in a patient with hypophosphatasia, but it does not report a pharmacogenomic effect (i.e., how a gene variant alters the PK or PD parameters of the drug itself). |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -4,7 +4,7 @@
 
 # lusutrombopag — `Lusutrombopag_Katsube2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.037). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,18 +20,20 @@
 
 Fab is defined as the fraction of drug reaching systemic circulation, a dimensionless quantity, but the record lists it with unit h; Km is defined as a measure of enzyme-substrate affinity (a concentration-like quantity) but is listed as 0.0320 /h, a rate constant unit. These dimension mismatches on structural parameters triggered the refusal. The record also lacks an SI value for V2/F, whose unit could not be converted, and the second reader reports additional covariate and peripheral-volume parameters (e.g. V4/F 3.48 L, CL/F ethnicity effect 0.868, sex effect 0.874, weight effect on Q6 1.00) absent from this record. Extracted — lusutrombopag: CL/F 0.874 L/h, Q3/F 0.872 L/h, V3/F 9.04 L, Q/F 0.0265 L/h, Fab 1 h, Km 0.032 /h, kel 0.00863 /h, kabs 0.166 /h, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of effect of subject population: this record has none, the second reading 1.46; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lusutrombopag, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:35.653560+00:00) predates the upstream re-run (2026-10-05 19:48:10.706823+00:00). Current validate status: `rejected`.
 
 ## Citation
 Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4)
 
 ## Model component
-<dbs-pgx drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="false" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="true" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
 
 **Parameterization:** CL/F, Q/F, Q3/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -64,6 +66,7 @@ Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacok
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'Standard deviation for additive residual error [× 104/µL]' routed out of structural estimates ('Standard deviation for proportional residual error [CV%]')
 - dropped unlinked row (NIL): 'Effect of WT' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col1', 'Tab2:row10:col1', 'Tab2:row15:col1'])
 - dropped unlinked row (NIL): 'Effect of sex' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col1'])
 - dropped unlinked row (NIL): 'Effect of ethnicity' — extend the ontology if this is a real PK parameter (source ['Tab2:row6:col1'])
@@ -126,22 +129,38 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.643 (18/28 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.037 (1/27 fields) | 26 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[effect of subject population]` | not captured | 1.46 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka solution in the fed state]` | 0.166 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km [/h]].parameter_id` | Q1 | Q51 | mismatch |
-| `gpt-oss:120b` | `parameters[lag time solution in the fed state]` | 0.568 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss:120b` | `parameters[2 mg tablet in the fed state]` | not captured | 0.857 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[3 mg tablet in the fed state]` | not captured | 0.843 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` | 1.00 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f1 of solution in the fasted state]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kl [/h]]` | 0.00863 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kl [/h]]` | not captured | 0.00863 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km [/h]]` | 0.0320 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km [/h]]` | not captured | 0.0320 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3/f [l/h]]` | 0.872 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3/f [l/h]]` | not captured | 0.872 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q4/f [l/h]]` | 0.0265 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q4/f [l/h]]` | not captured | 0.0265 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[solution in the fed state]` | not captured | 0.884 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_ethnicity]` | not captured | 0.868 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_sex]` | not captured | 0.874 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q61_wt]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical cl/f].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[typical cl/f]` | 0.874 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical cl/f]` | not captured | 0.874 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical v3/f]` | 9.04 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[typical v3/f]` | not captured | 9.04 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f [l]]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f [l]]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v4/f [l]]` | not captured | 3.48 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | lusutrombopag | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | lusutrombopag | unknown | mismatch |
 
 </details>
 
@@ -194,4 +213,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 22:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:48 UTC</sub>

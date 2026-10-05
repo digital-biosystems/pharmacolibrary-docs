@@ -4,7 +4,7 @@
 
 # concizumab — `Concizumab_Agers2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — concizumab: Fab 93 %, CL 0.14 ml/h/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 93, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has concizumab, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:17.848069+00:00) predates the upstream re-run (2026-10-05 18:31:54.949953+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014)
   ·  DOI: [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009)
 
 ## Model component
-<dbs-pgx drug="concizumab" model-id="Concizumab_Agers2014_reference" status="needs_review" stale="false" population="Cynomolgus monkeys" measured-compound="concizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="concizumab" model-id="Concizumab_Agers2014_reference" status="needs_review" stale="true" population="Cynomolgus monkeys" measured-compound="concizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -60,6 +62,7 @@ Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal o
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=concizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'concizumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -74,15 +77,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 93 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability]` | 93 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 93 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 0.14 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance]` | not captured | 0.14 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[target clearance saturation level]` | not captured | 0.54 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | concizumab | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | concizumab | unknown | mismatch |
 
 </details>
 
@@ -137,4 +144,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:31 UTC</sub>

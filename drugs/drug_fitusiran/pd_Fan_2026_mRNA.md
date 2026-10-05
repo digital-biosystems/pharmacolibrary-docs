@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fitusiran&quot;,&quot;href&quot;:&quot;drugs/drug_fitusiran/&quot;},{&quot;label&quot;:&quot;Fan_2026 \u00b7 PD target mRNA&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fitusiran_Sten2023_reference&quot;,&quot;label&quot;:&quot;Sten_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fitusiran/Fitusiran_Sten2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# target mRNA — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.43). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+# target mRNA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.43). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,19 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Free cytoplasmic siRNA (measured concentrations) drives target mRNA (in unknown): indirect response — drug inhibits the loss of target mRNA.
+**As extracted:** Fitusiran (concentrations from this paper's PK model) drives target mRNA (in %): indirect response — drug inhibits the production of target mRNA.
 
 **Model:** No model was generated from this record.
 
-> Fitusiran (GalNAc-siRNA) liver/cytoplasmic siRNA concentrations (nM) drive target mRNA knockdown via a sequential mPBPK-PD model in which the siRNA promotes mRNA degradation (indirect response), with mRNA production described through 10 transit compartments (rate ktrm); the paper reports target mRNA turnover of 0.0012 h−1 (protein turnover 0.039 h−1) and human parameters including KDEGD 0.014 h−1, RTOT0 14.34 nM, koff 0.023 h−1, and fesc 0.037 nM−1·h−1, but does not state IC50/Emax-type potency values.
+> Fitusiran concentrations (nM) inhibit the production of target mRNA (measured in %) via a proportional indirect response mechanism, characterized by a maximum inhibition (Smax) of 33.79, a half-maximal inhibitory concentration (SC50) of 0.0050 nM, and a Hill coefficient (γ1) of 0.074. The model also includes a degradation rate constant (kdeg, m) of 0.00016 1/h for the target mRNA.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Fan_2026`
-- **model family:** `indirect_response_ii`
-- **driver:** `conc_no_pk`
+- **model family:** `indirect_response_i`
+- **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026)
@@ -37,65 +36,10 @@ Fan X et al., A computational model-powered platform…, Molecular therapy. Nucl
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | ka (1/h) — Micea | `Q49` · not captured | 1.48 | units | not captured | exact (not captured) | tbl1:row3:col2 |
-| PK (driver) | ka (1/h) — Ratsb | `Q49` · not captured | 0.71 | units | not captured | exact (not captured) | tbl1:row3:col3 |
-| PK (driver) | ka (1/h) — Monkeysc | `Q49` · not captured | 0.38 | units | not captured | exact (not captured) | tbl1:row3:col4 |
-| PK (driver) | ka (1/h) — Humansa | `Q49` · not captured | 0.23 | units | not captured | exact (not captured) | tbl1:row3:col5 |
-| PK (driver) | Fu (1/h) — Micea | `Q46` · not captured | 0.0066 | units | not captured | exact (not captured) | tbl1:row4:col2 |
-| PK (driver) | Fu (1/h) — Ratsb | `Q46` · not captured | 0.21 | units | not captured | exact (not captured) | tbl1:row4:col3 |
-| PK (driver) | Fu (1/h) — Monkeysc | `Q46` · not captured | 0.39 | units | not captured | exact (not captured) | tbl1:row4:col4 |
-| PK (driver) | Fu (1/h) — Humansa | `Q46` · not captured | 39.32 | units | not captured | exact (not captured) | tbl1:row4:col5 |
-| PK (driver) | PSLiver (L/h) — Micea | `Q358` · not captured | 0.96 | L/h | not captured | llm (not captured) | tbl1:row5:col2 |
-| PK (driver) | PSLiver (L/h) — Ratsb | `Q358` · not captured | 211 | L/h | not captured | llm (not captured) | tbl1:row5:col3 |
-| PK (driver) | PSLiver (L/h) — Monkeysc | `Q358` · not captured | 56.73 | L/h | not captured | llm (not captured) | tbl1:row5:col4 |
-| PK (driver) | PSLiver (L/h) — Humansa | `Q358` · not captured | 144.7 | L/h | not captured | llm (not captured) | tbl1:row5:col5 |
-| PK (driver) | KDEGD (1/h) — Humansa | `Q358` · not captured | 0.014 | units | not captured | llm (not captured) | tbl1:row8:col5 |
-| PD (effect) | RTOT0 (nM) — Micea | `Q333` · not captured | 33.1 | nM | not captured | llm (not captured) | tbl1:row9:col2 |
-| PD (effect) | RTOT0 (nM) — Ratsb | `Q333` · not captured | 33.1 | nM | not captured | llm (not captured) | tbl1:row9:col3 |
-| PD (effect) | RTOT0 (nM) — Monkeysc | `Q333` · not captured | 33.1 | nM | not captured | llm (not captured) | tbl1:row9:col4 |
-| PD (effect) | RTOT0 (nM) — Humansa | `Q333` · not captured | 14.34 | nM | not captured | llm (not captured) | tbl1:row9:col5 |
-| PK (driver) | Vm (nmol/h) — Micea | `Q66` · not captured | 0.98 | nmol/h | not captured | special_case (not captured) | tbl1:row10:col2 |
-| PK (driver) | Vm (nmol/h) — Ratsb | `Q66` · not captured | 1.94 | nmol/h | not captured | special_case (not captured) | tbl1:row10:col3 |
-| PK (driver) | Vm (nmol/h) — Monkeysc | `Q66` · not captured | 5.81 | nmol/h | not captured | special_case (not captured) | tbl1:row10:col4 |
-| PK (driver) | Vm (nmol/h) — Humansa | `Q66` · not captured | 4.37 | nmol/h | not captured | special_case (not captured) | tbl1:row10:col5 |
-| PK (driver) | Km (∗105 nM) — Micea | `Q1` · not captured | 27.44 | units | not captured | exact (not captured) | tbl1:row11:col2 |
-| PK (driver) | Km (∗105 nM) — Ratsb | `Q1` · not captured | 37.73 | units | not captured | exact (not captured) | tbl1:row11:col3 |
-| PK (driver) | Km (∗105 nM) — Monkeysc | `Q1` · not captured | 27.44 | units | not captured | exact (not captured) | tbl1:row11:col4 |
-| PK (driver) | Km (∗105 nM) — Humansa | `Q1` · not captured | 97.75 | units | not captured | exact (not captured) | tbl1:row11:col5 |
-| PD (effect) | koff (1/h) — Micea | `Q330` · not captured | 0.021 | units | not captured | exact (not captured) | tbl1:row12:col2 |
-| PD (effect) | koff (1/h) — Ratsb | `Q330` · not captured | 0.021 | units | not captured | exact (not captured) | tbl1:row12:col3 |
-| PD (effect) | koff (1/h) — Monkeysc | `Q330` · not captured | 0.021 | units | not captured | exact (not captured) | tbl1:row12:col4 |
-| PD (effect) | koff (1/h) — Humansa | `Q330` · not captured | 0.023 | units | not captured | exact (not captured) | tbl1:row12:col5 |
-| PK (driver) | fesc — Humansa | `Q358` · not captured | 0.037 | nM−1·h−1 | not captured | llm (not captured) | tbl1:row14:col5 |
-| PD (effect) | kint (1/h) — Micea | `Q334` · not captured | 7.84 | nM−1·h−1 | not captured | exact (not captured) | tbl1:row15:col2 |
-| PD (effect) | kint (1/h) — Ratsb | `Q334` · not captured | 1215 | nM−1·h−1 | not captured | exact (not captured) | tbl1:row15:col3 |
-| PD (effect) | kint (1/h) — Monkeysc | `Q334` · not captured | 2.01 | nM−1·h−1 | not captured | exact (not captured) | tbl1:row15:col4 |
-| PD (effect) | kint (1/h) — Humansa | `Q334` · not captured | 4.69 | nM−1·h−1 | not captured | exact (not captured) | tbl1:row15:col5 |
-| PK (driver) | Kass (∗10−6 h−1) — Ratsb | `Q47` · not captured | 0.0051 | nM | not captured | llm (not captured) | tbl1:row20:col3 |
-| PD (effect) | Kdis (∗10−3 h−1) — Micea | `Q331` · not captured | 0.14 | nM | not captured | llm (not captured) | tbl1:row21:col2 |
-| PD (effect) | Kdis (∗10−3 h−1) — Ratsb | `Q331` · not captured | 0.073 | nM | not captured | llm (not captured) | tbl1:row21:col3 |
-| PD (effect) | Kdis (∗10−3 h−1) — Monkeysc | `Q331` · not captured | 0.14 | nM | not captured | llm (not captured) | tbl1:row21:col4 |
-| PD (effect) | Kdis (∗10−3 h−1) — Humansa | `Q331` · not captured | 0.0061 | nM | not captured | llm (not captured) | tbl1:row21:col5 |
-| PK (driver) | KDEGE (∗10−6 h−1) — Micea | `Q358` · not captured | 0.0083 | nM | not captured | llm (not captured) | tbl1:row22:col2 |
-| PK (driver) | KDEGE (∗10−6 h−1) — Ratsb | `Q47` · not captured | 0.014 | nM | not captured | llm (not captured) | tbl1:row22:col3 |
-| PK (driver) | KDEGE (∗10−6 h−1) — Monkeysc | `Q47` · not captured | 0.0083 | nM | not captured | llm (not captured) | tbl1:row22:col4 |
-| PK (driver) | KDEGE (∗10−6 h−1) — Humansa | `Q358` · not captured | 0.0076 | nM | not captured | llm (not captured) | tbl1:row22:col5 |
-| PD (effect) | kdeg, m (1/h) — Micea | `Q328` · not captured | 0.0012 | nM | not captured | llm_confirmed (not captured) | tbl1:row26:col2 |
-| PD (effect) | kdeg, m (1/h) — Ratsb | `Q328` · not captured | 0.0022 | nM | not captured | llm_confirmed (not captured) | tbl1:row26:col3 |
-| PD (effect) | kdeg, m (1/h) — Monkeysc | `Q328` · not captured | 0.0015 | nM | not captured | llm_confirmed (not captured) | tbl1:row26:col4 |
-| PD (effect) | kdeg, m (1/h) — Humansa | `Q328` · not captured | 0.00016 | nM | not captured | llm_confirmed (not captured) | tbl1:row26:col5 |
-| PD (effect) | kdeg, p (1/h) — Micea | `Q328` · not captured | 0.039 | nM | not captured | llm_confirmed (not captured) | tbl1:row27:col2 |
-| PD (effect) | kdeg, p (1/h) — Monkeysc | `Q328` · not captured | 0.083 | nM | not captured | llm_confirmed (not captured) | tbl1:row27:col4 |
-| PD (effect) | kdeg, p (1/h) — Humansa | `Q328` · not captured | 0.037 | nM | not captured | llm_confirmed (not captured) | tbl1:row27:col5 |
-| PK (driver) | Smax — Micea | `Q32` · not captured | 33.79 | nM | not captured | llm (not captured) | tbl1:row28:col2 |
-| PK (driver) | Smax — Ratsb | `Q32` · not captured | 66.48 | nM | not captured | llm (not captured) | tbl1:row28:col3 |
-| PK (driver) | Smax — Monkeysc | `Q32` · not captured | 33.79 | nM | not captured | llm (not captured) | tbl1:row28:col4 |
-| PK (driver) | Smax — Humansa | `Q32` · not captured | 33.79 | nM | not captured | llm (not captured) | tbl1:row28:col5 |
-| PD (effect) | SC50 (nM) — Micea | `Q322` · not captured | 12.74 | nM | not captured | llm (not captured) | tbl1:row29:col2 |
-| PD (effect) | SC50 (nM) — Ratsb | `Q322` · not captured | 0.050 | nM | not captured | llm (not captured) | tbl1:row29:col3 |
-| PD (effect) | SC50 (nM) — Monkeysc | `Q322` · not captured | 20.93 | nM | not captured | llm (not captured) | tbl1:row29:col4 |
-| PD (effect) | SC50 (nM) — Humansa | `Q322` · not captured | 0.0050 | nM | not captured | llm (not captured) | tbl1:row29:col5 |
-| PK (driver) | γ1 — Humansa | `Q89` · not captured | 0.074 | not captured | not captured | llm (not captured) | tbl1:row30:col5 |
+| PD (effect) | kdeg, m | `Q328` · not captured | 0.00016 | 1/h | not captured | llm (not captured) | Fan_2026:pdv3 |
+| PD (effect) | Smax | `Q323` · not captured | 33.79 | not captured | not captured | llm (not captured) | Fan_2026:pdv3 |
+| PD (effect) | SC50 | `Q322` · not captured | 0.0050 | nM | not captured | llm (not captured) | Fan_2026:pdv3 |
+| PD (effect) | γ1 | `Q325` · not captured | 0.074 | not captured | not captured | llm (not captured) | Fan_2026:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -186,19 +130,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

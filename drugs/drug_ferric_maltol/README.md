@@ -18,7 +18,7 @@ Ferric maltol is an oral trivalent iron preparation used to treat iron-deficienc
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:15 | 0:43 | 0/0/0 | 0/0/0 | 0/0/0 | 3,613/289 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 2/1 | 0 |
+| 2026-10-05 19:59 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 25,710/866 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 2/1 | 0 |
 
 ## popPK records
 
@@ -47,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 2  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -57,21 +57,20 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cai_2023.pdf` | Cai Z et al., Simultaneous determination of maltol an…, Journal of chromatography.… (2023) | popPK | 8 | [10.1016/j.jchromb.2023.123760](https://doi.org/10.1016/j.jchromb.2023.123760) | [37270862](https://pubmed.ncbi.nlm.nih.gov/37270862) | The study reports quantitative PK parameters (half-life and urinary excretion percentage) for the active moiety maltol following ferric maltol administration, but lacks full compartmental model parameters like clearance or volume of distribution. |
+| `Cai_2023.pdf` | Cai Z et al., Simultaneous determination of maltol an…, Journal of chromatography.… (2023) | popPK | 8 | [10.1016/j.jchromb.2023.123760](https://doi.org/10.1016/j.jchromb.2023.123760) | [37270862](https://pubmed.ncbi.nlm.nih.gov/37270862) | The study reports half-lives and urinary excretion percentages for maltol (the ligand of ferric maltol) in humans, but lacks full compartmental parameters like CL and V. |
 
-<sub>queue written 2026-09-30T03:15:44.990863+00:00</sub>
+<sub>queue written 2026-10-05T19:59:18.242388+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Allen_2021 | relevant | 8 | 2 | The paper describes a population PK study for ferric maltol (via maltol glucuronide) in children, but specific numeric parameter values (CL, V, etc.) are not present in the text or provided supplementary material, only qualitative descriptions and references to figures. |
+| popPK | Allen_2021 | relevant | 8 | 2 | The study reports population pharmacokinetic modeling of maltol glucuronide (the metabolite of ferric maltol) in children, but specific numeric parameter values (CL, V, etc.) are not present in the provided text or supplementary tables, only qualitative descriptions and references to figures. |
 | popPK | Barrand_1991 | relevant | 8 | 4 | The study reports quantitative PK parameters (half-lives of ~70 min for iron and ~12 min for maltol) for ferric maltol in rats, but lacks a full compartmental model or clearance/volume values. |
-| popPK | Bokemeyer_2017 | relevant | 4 | 5 | The paper reports standard non-compartmental PK parameters (AUC, Cmax, t1/2) for the maltol moiety of ferric maltol, but lacks compartmental parameters (CL, V) and population modeling. |
-| popPK | Gass_2026 | irrelevant | 2 | 0 | The study mentions PK assessment but the provided evidence contains no quantitative pharmacokinetic parameter values (e.g., CL, V, ka) for ferric maltol. |
-| popPK | Kang_2026 | irrelevant | 0 | 0 | The paper is a computational study on drug-food interaction prediction using knowledge graphs and does not report any pharmacokinetic parameters for ferric_maltol. |
+| popPK | Gass_2026 | irrelevant | 2 | 0 | The study mentions PK assessment but the provided evidence contains no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for ferric maltol. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The paper describes a computational model for predicting drug-food interactions and does not report pharmacokinetic parameters for ferric_maltol. |
 | PD | Kang_2026 | not_relevant | 0 | 0 | The paper describes a machine learning model for predicting drug-food interactions and does not report any pharmacodynamic or exposure-response data for ferric maltol. |
-| popPK | Khoury_2021 | irrelevant | 1 | 0 | The paper is a narrative review of ferric maltol that discusses pharmacology and efficacy but does not report original quantitative pharmacokinetic parameter values (e.g., CL, V, ka) in the provided evidence. |
+| popPK | Khoury_2021 | irrelevant | 2 | 0 | This is a narrative review of ferric maltol that discusses pharmacology and efficacy but does not report original quantitative pharmacokinetic parameter values (CL, V, etc.) in the provided text. |
 | popPK | Singh_2022 | irrelevant | 0 | 0 | The paper is a review/overview of nano-formulations for iron deficiency anaemia and does not report original quantitative pharmacokinetic parameters for ferric maltol. |
 | popPK | unknown_2019 | irrelevant | 0 | 0 | no_text gate: only 32 chars of text extracted (&lt; 400) |
 | PD | unknown_2019 | not_relevant | 0 | 0 | The provided text is only a title/header for conference oral presentations and contains no data, analysis, or parameters regarding ferric maltol or any pharmacodynamic relationship. |

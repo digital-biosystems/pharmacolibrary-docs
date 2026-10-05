@@ -18,7 +18,7 @@ Zinc orotate is a zinc-containing mineral supplement that has been investigated 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 01:50 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 1,186/154 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-05 10:15 | 0:10 | 0/0/0 | 0/0/0 | 0/0/0 | 4,014/161 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -43,16 +43,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Andermann_1982.pdf` | Andermann G et al., The bioavailability and pharmacokinetic…, European journal of drug me… (1982) | popPK | 9 | [10.1007/BF03189570](https://doi.org/10.1007/BF03189570) | [7173277](https://pubmed.ncbi.nlm.nih.gov/7173277) | The paper is a pharmacokinetic study of zinc orotate in rabbits, but the provided evidence contains only qualitative descriptions of the parameters without any numeric values. |
+| `Andermann_1982.pdf` | Andermann G et al., The bioavailability and pharmacokinetic…, European journal of drug me… (1982) | popPK | 9 | [10.1007/BF03189570](https://doi.org/10.1007/BF03189570) | [7173277](https://pubmed.ncbi.nlm.nih.gov/7173277) | The study reports pharmacokinetic parameters (alpha, beta, Ka) for zinc orotate in rabbits, but the specific numeric values are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-30T01:50:40.586263+00:00</sub>
+<sub>queue written 2026-10-05T10:15:22.325619+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Andermann_1982 | relevant | 9 | 0 | The paper is a pharmacokinetic study of zinc orotate in rabbits, but the provided evidence contains only qualitative descriptions of the parameters without any numeric values. |
-| popPK | Eby_2006 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for common cold treatment and does not report any pharmacokinetic parameters for zinc orotate. |
+| popPK | Andermann_1982 | relevant | 9 | 2 | The study reports pharmacokinetic parameters (alpha, beta, Ka) for zinc orotate in rabbits, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Eby_2006 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of zinc orotate for cold treatment and does not report any pharmacokinetic parameters. |
 | PD | Eby_2006 | not_relevant | 1 | 0 | The paper reports a negative clinical trial outcome with no concentration-effect data, PK/PD modeling, or numeric PD parameters. |
 
 ---

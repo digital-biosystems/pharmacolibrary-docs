@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;luspatercept&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/&quot;},{&quot;label&quot;:&quot;Chen_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # luspatercept — `Luspatercept_Chen2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 The paper reports CL/F (0.532 L/day), V/F (8.39 L) and covariate effects, but no ka; the model builder defaulted ka and Tlag to library placeholders, and adjudication flagged the invented absorption as not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction). The covariate effects on CL/F and V/F (weight, albumin) were defined but only the reference individual was simulated, so those scenarios were not exercised. Extracted — luspatercept: CL/F 0.532 L/day, V/F 8.39 L, kabs 0.41.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has luspatercept, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:35.600552+00:00) predates the upstream re-run (2026-10-05 21:19:43.726808+00:00). Current validate status: `extracted`.
 
 ## Citation
 Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696)
 
 ## Model component
-<dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2021_reference" status="needs_review" stale="false" population="adult patients with β-thalassemia" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2021_reference" status="extracted" stale="true" population="adults with beta-thalassemia" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 3 covariate effects.
@@ -40,13 +42,11 @@ Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical p
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F, L/day | `Q27` · CL/F | 0.532 | L/day | 6.1574074074074075e-09 | [l] / [d] | not captured | exact (1.0) | jcph1696-tbl-0002:row3:col1, jcph1696-tbl-0002:row3:col2 | — | not captured |
 | V1/F, L | `Q76` · V/F | 8.39 | L | 0.00839 | [l] | not captured | exact (1.0) | jcph1696-tbl-0002:row4:col1, jcph1696-tbl-0002:row4:col2 | — | not captured |
-| Ka (1/day) | `Q49` · kabs | 0.410 | not captured | not captured | not captured | not captured | exact (1.0) | jcph1696-tbl-0002:row5:col1, jcph1696-tbl-0002:row5:col2 | — | not captured |
+| Ka (1/day) | `Q49` · kabs | 0.410 | 1/day | 4.74537037037037e-06 | 1/h | not captured | exact (1.0) | jcph1696-tbl-0002:row5:col1, jcph1696-tbl-0002:row5:col2 | — | not captured |
 | weight_kg_on_cl_f | `Q900` · weight_kg_on_cl_f | 0.809 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1696-tbl-0002:row6:col1, jcph1696-tbl-0002:row6:col2 | — | not captured |
 | albumin_g_l_on_cl_f | `Q900` · albumin_g_l_on_cl_f | -0.886 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1696-tbl-0002:row8:col1, jcph1696-tbl-0002:row8:col2 | — | not captured |
 | weight_kg_on_v1_f | `Q900` · weight_kg_on_v1_f | 0.718 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1696-tbl-0002:row9:col1, jcph1696-tbl-0002:row9:col2 | — | not captured |
@@ -59,9 +59,8 @@ Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical p
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
 
 **Interpretation flags:**
 - covariate level 'Weight, kg on CL/F' → Q900:weight_kg_on_cl_f = 0.809 (linear_fractional on Q27)
@@ -71,8 +70,10 @@ Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical p
 - dropped unlinked row (NIL): 'RBCT burden (units/24 weeks) on V1/F' — extend the ontology if this is a real PK parameter (source ['jcph1696-tbl-0002:row10:col1', 'jcph1696-tbl-0002:row10:col2'])
 - routed 'Interindividual variability of CL/F (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'Interindividual variability of V1/F (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- implicit units: 'Ka (1/day)' → 1/day (from the paper text: "The parameter list explicitly states 'Ka (1/day) = 0.410'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=luspatercept
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V1/F, L' is the general volume)
+- molar mass: none found for 'luspatercept' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -93,14 +94,33 @@ Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical p
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[albumin_g_l_on_cl_f]` | -0.886 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 0.532 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 0.532 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 0.410 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.410 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_cl_f_albumin]` | not captured | -0.886 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_v1_f_weight]` | not captured | 0.718 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f]` | 8.39 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f]` | not captured | 8.39 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[weight_kg_on_cl_f]` | 0.809 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[weight_kg_on_cl_f]` | not captured | 0.809 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[weight_kg_on_v1_f]` | 0.718 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | luspatercept | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | luspatercept | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -117,8 +137,8 @@ _Every reader agrees on every compared field of this record._
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1696-tbl-0002:row3:col1', 'jcph1696-tbl-0002:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph1696-tbl-0002:row5:col1', 'jcph1696-tbl-0002:row5:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1696-tbl-0002:row4:col1', 'jcph1696-tbl-0002:row4:col2'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['jcph1696-tbl-0002:row5:col1', 'jcph1696-tbl-0002:row5:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.0222 L/h | not captured | not captured | ['jcph1696-tbl-0002:row3:col1', 'jcph1696-tbl-0002:row3:col2'] |
@@ -155,12 +175,12 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_modelica.zip" download>Luspatercept_Chen2021_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_modelica.zip" download>Luspatercept_Chen2021_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_fmi.zip" download>Luspatercept_Chen2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_matlab.zip" download>Luspatercept_Chen2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_matlab_simbio.zip" download>Luspatercept_Chen2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_sbml.zip" download>Luspatercept_Chen2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_cellml.zip" download>Luspatercept_Chen2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_cellml.zip" download>Luspatercept_Chen2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -168,7 +188,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 14 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 14–87.5 mg.
+**Administration: oral** — 14 mg, single dose, first-order absorption (ka 0.0171 /h, F 1). Doses in the paper: 14–87.5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_luspatercept/Luspatercept_Chen2021_reference/Luspatercept_Chen2021_reference_sim_controls.json"></dbs-fmusim>
 
@@ -177,4 +197,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 01:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:19 UTC</sub>

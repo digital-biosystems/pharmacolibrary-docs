@@ -18,7 +18,7 @@ Ferric hydroxide is a trivalent iron compound classified as an oral iron prepara
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:15 | 0:59 | 0/0/0 | 0/0/0 | 0/0/0 | 6,018/344 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/4 | 3/0 | 0 |
+| 2026-10-05 19:58 | 0:38 | 0/0/0 | 0/0/0 | 0/0/0 | 23,350/859 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/4 | 3/0 | 0 |
 
 ## popPK records
 
@@ -43,22 +43,22 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Geisser_1984.pdf` | Geisser P et al., Iron pharmacokinetics after administrat…, Arzneimittel-Forschung (1984) | popPK | 9 | not captured | [6543131](https://pubmed.ncbi.nlm.nih.gov/6543131) | The paper is a pharmacokinetic study of ferric-hydroxide-polymaltose complex in rats, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
-| `Geisser_1987.pdf` | Geisser P et al., Pharmacokinetics of iron salts and ferr…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3566862](https://pubmed.ncbi.nlm.nih.gov/3566862) | The paper describes a pharmacokinetic study of ferric hydroxide-polymaltose complex in rats and humans, but the provided evidence contains only qualitative descriptions of parameters (constants, volumes) without any specific numeric values. |
+| `Geisser_1984.pdf` | Geisser P et al., Iron pharmacokinetics after administrat…, Arzneimittel-Forschung (1984) | popPK | 9 | not captured | [6543131](https://pubmed.ncbi.nlm.nih.gov/6543131) | The study reports pharmacokinetic parameters (clearance, volume, elimination constants) for ferric-hydroxide-polymaltose complex in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Geisser_1987.pdf` | Geisser P et al., Pharmacokinetics of iron salts and ferr…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3566862](https://pubmed.ncbi.nlm.nih.gov/3566862) | The study reports pharmacokinetic parameters (invasion/elimination constants, distribution volumes) for ferric hydroxide-polymaltose complex in rats, but the specific numeric values are not present in the provided evidence. |
 
-<sub>queue written 2026-09-30T03:15:01.502484+00:00</sub>
+<sub>queue written 2026-10-05T19:58:36.255078+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cao_2025 | irrelevant | 2 | 1 | The study focuses on Ferric Carboxymaltose (FCM), not ferric hydroxide, and reports iron distribution parameters (Kpt, AUC) rather than standard PK parameters for the specific drug entity ferric hydroxide. |
-| popPK | Geisser_1984 | relevant | 9 | 0 | The paper is a pharmacokinetic study of ferric-hydroxide-polymaltose complex in rats, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
-| popPK | Geisser_1987 | relevant | 8 | 0 | The paper describes a pharmacokinetic study of ferric hydroxide-polymaltose complex in rats and humans, but the provided evidence contains only qualitative descriptions of parameters (constants, volumes) without any specific numeric values. |
-| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle PK modeling and does not report quantitative PK parameters for ferric hydroxide. |
+| popPK | Cao_2025 | irrelevant | 2 | 1 | The study models the pharmacokinetics of ferric carboxymaltose (FCM), not ferric hydroxide, and while FCM contains a ferric hydroxide core, the reported parameters (Kpt, clearance rates) are for the FCM formulation/iron distribution, not the specific drug entity ferric hydroxide. |
+| popPK | Geisser_1984 | relevant | 9 | 2 | The study reports pharmacokinetic parameters (clearance, volume, elimination constants) for ferric-hydroxide-polymaltose complex in rats, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Geisser_1987 | relevant | 8 | 0 | The study reports pharmacokinetic parameters (invasion/elimination constants, distribution volumes) for ferric hydroxide-polymaltose complex in rats, but the specific numeric values are not present in the provided evidence. |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a general review of pharmacokinetic modeling for nanoparticles and does not report specific quantitative PK parameters for ferric hydroxide. |
 | PD | Parrot_2026 | not_relevant | 0 | 0 | The text is a review of pharmacokinetic modeling frameworks for nanoparticles and does not report any specific pharmacodynamic or exposure-response data for ferric hydroxide. |
-| popPK | Stefanelli_1984 | irrelevant | 2 | 0 | The study uses ferric hydroxide phosphate colloid as a tracer to label reticuloendothelial iron pools rather than as a subject drug for PK parameter estimation, and no standard PK parameters (CL, V, ka) are reported. |
-| popPK | Takada_2022 | irrelevant | 0 | 0 | The study reports population PK parameters for roxadustat, not ferric hydroxide (which is only mentioned as a phosphate binder covariate). |
+| popPK | Stefanelli_1984 | irrelevant | 2 | 0 | The study uses ferric hydroxide phosphate colloid as a tracer to label reticuloendothelial iron pools, reporting iron pool sizes (mumol) rather than pharmacokinetic disposition parameters (CL, V, ka) for the drug itself. |
+| popPK | Takada_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for roxadustat, not ferric hydroxide. |
 | PD | Takada_2022 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for roxadustat, not ferric hydroxide, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 
 ---

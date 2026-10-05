@@ -18,7 +18,7 @@ Oxandrolone is an anabolic steroid used to treat failure to thrive. It is an app
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 00:50 | 1:08 | 0/0/0 | 0/0/0 | 0/0/0 | 1,630/130 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-05 10:21 | 0:27 | 0/0/0 | 0/0/0 | 0/0/0 | 21,426/294 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -49,14 +49,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Linakis_2020.pdf` | Linakis MW et al., Stability of Oxandrolone in Medium-Chai…, The journal of pediatric ph… (2020) | popPK | 9 | [10.5863/1551-6776-25.3.220](https://doi.org/10.5863/1551-6776-25.3.220) | [32265605](https://pubmed.ncbi.nlm.nih.gov/32265605) | The study reports pharmacokinetics for oxandrolone, but the specific numeric disposition parameters (CL, V, etc.) are not present in the provided abstract text, only bioavailability. |
 | `Huml_2020.pdf` | Huml L et al., Stanazolol derived ELISA as a sensitive…, Steroids (2020) | pd | 4 | [10.1016/j.steroids.2019.108550](https://doi.org/10.1016/j.steroids.2019.108550) | [31812623](https://www.ncbi.nlm.nih.gov/pubmed/31812623) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T00:50:56.858978+00:00</sub>
+<sub>queue written 2026-10-05T10:21:37.902242+00:00</sub>
 
 ## Screened and excluded
 
@@ -79,16 +78,16 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Huml_2020 | not_relevant | 0 | 0 | The paper describes the development of an ELISA assay for detecting anabolic steroids; the reported IC50 values refer to the analytical sensitivity of the immunoassay, not to the pharmacodynamic response of the drug in a biological system. |
 | popPK | Kriström_2023 | irrelevant | 0 | 0 | The study focuses on growth outcomes in Turner syndrome and uses oxandrolone as a co-administered growth promoter, without reporting any pharmacokinetic parameters for oxandrolone. |
 | PD | Kriström_2023 | not_relevant | 0 | 0 | The paper focuses on growth hormone dose-response in Turner syndrome; oxandrolone is mentioned only as a co-medication without any specific pharmacodynamic analysis, exposure-response modeling, or numeric PD parameters reported for it. |
-| popPK | Linakis_2020 | relevant | 9 | 2 | The study reports pharmacokinetics for oxandrolone, but the specific numeric disposition parameters (CL, V, etc.) are not present in the provided abstract text, only bioavailability. |
+| popPK | Linakis_2020 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
 | popPK | Menke_2010 | irrelevant | 0 | 0 | The study is a clinical trial assessing growth outcomes and safety of oxandrolone in Turner syndrome, not a pharmacokinetic study, and reports no PK parameters. |
 | popPK | Miller_2009 | irrelevant | 0 | 0 | The paper is a clinical review of oxandrolone's efficacy in thermal injury and does not report any pharmacokinetic parameters. |
 | PD | Miller_2009 | not_relevant | 1 | 0 | The text is a qualitative review of clinical outcomes (lean body mass, wound healing) without reporting any numeric concentration-effect data, dose-response curves, or PD parameters. |
-| popPK | Namias_2007 | irrelevant | 0 | 0 | The paper is a review of burn care that mentions oxandrolone's safety and efficacy but does not report any pharmacokinetic parameters or quantitative disposition data. |
+| popPK | Namias_2007 | irrelevant | 0 | 0 | The paper is a general review of burn care that mentions oxandrolone's safety and efficacy but provides no pharmacokinetic parameters or quantitative disposition data. |
 | popPK | Sas_2014 | irrelevant | 0 | 0 | The paper is a clinical review/recommendation regarding safety and efficacy in Turner syndrome, containing no pharmacokinetic parameters or quantitative disposition data for oxandrolone. |
 | PD | Sas_2014 | not_relevant | 2 | 1 | The text is a review summarizing clinical outcomes (height gain) and safety recommendations based on dose ranges, but it does not report a pharmacodynamic model, concentration-effect relationship, or specific numeric PD parameters like Emax or EC50. |
 | popPK | Segal_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiviral activity and does not report pharmacokinetic parameters for oxandrolone. |
-| popPK | Sheffield-Moore_1999 | irrelevant | 0 | 0 | The study focuses on muscle protein synthesis and amino acid transport, not pharmacokinetic disposition parameters (CL, V, t1/2) for oxandrolone. |
-| popPK | Sheffield-Moore_2000 | irrelevant | 0 | 0 | The study investigates muscle protein synthesis and breakdown using stable isotopes, not pharmacokinetic disposition parameters for oxandrolone. |
+| popPK | Sheffield-Moore_1999 | irrelevant | 0 | 0 | The study investigates muscle protein synthesis and amino acid transport, not the pharmacokinetic disposition parameters (CL, V, ka) of oxandrolone. |
+| popPK | Sheffield-Moore_2000 | irrelevant | 0 | 0 | The study investigates muscle protein synthesis rates using stable isotopes, not the pharmacokinetic disposition parameters (CL, V, t1/2) of oxandrolone. |
 | popPK | unknown_1997 | irrelevant | 0 | 0 | no_text gate: only 27 chars of text extracted (&lt; 400) |
 | PD | unknown_1997 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters to derive a pharmacodynamic relationship. |
 

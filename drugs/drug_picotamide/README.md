@@ -18,7 +18,7 @@ Picotamide is a platelet aggregation inhibitor, an antithrombotic drug used to p
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 05:18 | 1:30 | 0/0/0 | 0/1/0 | 0/0/0 | 1,250/3,786 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 15:13 | 1:02 | 0/0/0 | 0/1/0 | 0/0/0 | 41,419/722 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Li_2021_unknown](drugs/drug_picotamide/pd_Li_2021_unknown.md) | smooth muscle contraction ← picotamide · direct Emax (saturable) effect | — | Li B et al., Picotamide inhibits a wide spectrum of…, Pharmacology research & per… (2021) | [10.1002/prp2.771](https://doi.org/10.1002/prp2.771) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Collins_1996_TXB2](drugs/drug_picotamide/pd_Collins_1996_TXB2.md) | thromboxane B2 release ← picotamide · direct Emax (saturable) effect | — | Collins CE et al., Picotamide inhibition of excess in vitr…, Alimentary pharmacology & t… (1996) | [10.1111/j.0953-0673.1996.00315.x](https://doi.org/10.1111/j.0953-0673.1996.00315.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -48,10 +48,10 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Anfossi_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of platelet aggregation and does not report any pharmacokinetic parameters. |
-| popPK | Buccellati_2006 | irrelevant | 0 | 0 | The study focuses on the pharmacological characterization of 2NTX-99, a different drug, and does not report pharmacokinetic parameters for picotamide. |
+| popPK | Buccellati_2006 | irrelevant | 0 | 0 | The study characterizes the pharmacological and pharmacokinetic properties of 2NTX-99, a new chemical entity related to picotamide, but does not report PK parameters for picotamide itself. |
 | popPK | Collins_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thromboxane inhibition and does not report pharmacokinetic parameters for picotamide. |
 | popPK | Gresele_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of platelet inhibition and does not report any pharmacokinetic parameters. |
-| popPK | Li_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of smooth muscle contraction in porcine arteries and does not report any pharmacokinetic parameters for picotamide. |
+| popPK | Li_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of smooth muscle contraction in porcine arteries and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for picotamide. |
 | popPK | Liu_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and in vitro anti-platelet activity of picotamide analogs, containing no pharmacokinetic data. |
 | popPK | Liu_2015_2 | irrelevant | 0 | 0 | The paper is an in-vitro synthesis and antiplatelet activity study, not a pharmacokinetic study, and reports no disposition parameters for picotamide. |
 | popPK | Liu_2021 | irrelevant | 0 | 0 | The study is an in-vitro synthesis and biological evaluation of novel compounds where picotamide is used only as a positive control, with no pharmacokinetic parameters reported. |

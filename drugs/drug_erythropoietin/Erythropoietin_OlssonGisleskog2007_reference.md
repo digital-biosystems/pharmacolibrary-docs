@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;erythropoietin&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/&quot;},{&quot;label&quot;:&quot;Olsson-Gisleskog_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erythropoietin_Chakraborty2005_reference&quot;,&quot;label&quot;:&quot;Chakraborty_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # erythropoietin — `Erythropoietin_OlssonGisleskog2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +20,20 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is erythropoietin's own; they describe recombinant human erythropoietin. Extracted — recombinant human erythropoietin: V 6 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has recombinant human erythropoietin, the second reading recombinant human erythropoietin (rHuEPO); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has none, the second reading 30; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:55.785161+00:00) predates the upstream re-run (2026-10-05 21:06:25.101854+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `recombinant human erythropoietin`, measured `erythropoietin`.
 
 ## Citation
 Olsson-Gisleskog P et al., Population pharmacokinetics meta-analys…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746020-00004](https://doi.org/10.2165/00003088-200746020-00004)
 
 ## Model component
-<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_OlssonGisleskog2007_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="recombinant human erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_OlssonGisleskog2007_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -58,33 +61,36 @@ Olsson-Gisleskog P et al., Population pharmacokinetics meta-analys…, Clinical 
 
 **Interpretation flags:**
 - dropped value-less row: 'Total clearance'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=recombinant human erythropoietin
+- dropped value-less row: 'first-order absorption rate constant (k(a))'
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=erythropoietin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'erythropoietin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Olsson-Gisleskog_2007_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Olsson-Gisleskog_2007_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 30 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of subcutaneous rhuepo]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | recombinant human erythropoietin | recombinant human erythropoietin (rHuEPO) | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | recombinant human erythropoietin | erythropoietin | mismatch |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | 160 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[subcutaneous bioavailability]` | not captured | 30 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total clearance]` | not captured | not captured | only_one_extracted |
 
 </details>
 
@@ -138,4 +144,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 00:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:06 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Henrich_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ticagrelor — `Ticagrelor_Henrich2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.522). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record reports CL 8.51 L/h, central volume 17.0 L, peripheral volume 51.4 L, intercompartmental clearance 3.19 L/h and absorption rate constant 5.95 1/h for ticagrelor, but F and Tlag were substituted with defaults rather than explicit estimates. A second reader also disagreed on several extracted values: they read additional intercompartmental clearance parameters (0.0071, 0.0082, 3.63, 6.57 and 2.49) that this record lacks, and read one distribution clearance as absent where this record has 0.724. Extracted — ticagrelor: CL 8.51 L/h, V 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q3: this record has none, the second reading 0.0071; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q3: this record has none, the second reading 0.0071; it also differs on 10 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:30.538223+00:00) predates the upstream re-run (2026-10-05 16:22:46.025179+00:00). Current validate status: `extracted`.
 
 ## Citation
 Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
 ## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Henrich2021_reference" status="needs_review" stale="false" population="" measured-compound="ticagrelor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Henrich2021_reference" status="extracted" stale="true" population="" measured-compound="ticagrelor" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.
@@ -38,8 +40,6 @@ Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometri
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 8.51 | L/h | 2.363888888888889e-06 | L/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
@@ -64,27 +64,28 @@ Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.545 (12/22 fields) | 10 |
+| `gpt-oss:120b` | partly confirmed | 0.522 (12/23 fields) | 11 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q314]` | 0.724 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q316]` | 0.14 | 0.14 | mismatch |
-| `gpt-oss:120b` | `values[Q317]` | 3.65 | 3.65 | mismatch |
-| `gpt-oss:120b` | `values[Q325]` | not captured | 3.63 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 0.14 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q317]` | 3.65 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q325]` | not captured | 2.49 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q329]` | not captured | 6.57 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q343]` | not captured | 2.49 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q334]` | not captured | 2.21 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q3]` | not captured | 0.0071 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | not captured | 0.0082 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 0.00820 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q61]` | 17.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q63]` | not captured | 17.0 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q900]` | not captured | 0.140 | only_one_extracted |
 
 </details>
 
@@ -155,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.1 mg, single dose, first-order absorption (ka 5.95 /h, F 0.9). Doses in the paper: 0.1–16 mg.
+**Administration: oral** — 180 mg, single dose, first-order absorption (ka 5.95 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 180 mg oral (B01AC24) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_sim_controls.json"></dbs-fmusim>
 
@@ -164,4 +165,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 23:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 16:22 UTC</sub>

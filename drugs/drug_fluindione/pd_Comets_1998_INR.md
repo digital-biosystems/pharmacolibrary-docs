@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fluindione&quot;,&quot;href&quot;:&quot;drugs/drug_fluindione/&quot;},{&quot;label&quot;:&quot;Comets_1998 \u00b7 PD INR&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fluindione&quot;,&quot;href&quot;:&quot;drugs/drug_fluindione/&quot;},{&quot;label&quot;:&quot;Comets_1998 \u00b7 PD International Normalized Ratio&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# INR — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+# International Normalized Ratio — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Fluindione drives INR (in ratio): indirect response — drug inhibits the loss of INR.
+**As extracted:** Fluindione drives International Normalized Ratio: indirect response — drug inhibits the loss of International Normalized Ratio.
 
 **Model:** No model was generated from this record.
 
-> Fluindione concentrations act on INR (ratio) via an indirect response model in which INR is produced and eliminated; among tested models, the paper selected (by log-likelihood ratio test) inhibition of INR elimination by fluindione. The excerpts do not report potency (IC50/Imax) or rate (kin, kout) values with units.
+> Fluindione plasma concentrations inhibit the elimination of the International Normalized Ratio (INR) via an indirect response model. The paper does not provide specific numerical values for potency or rate parameters such as IC50, Emax, or kout.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Comets_1998`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998)

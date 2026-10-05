@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Chen_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nadroparin — `Nadroparin_Chen2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,9 +21,11 @@
 
 The model was built, but nadroparin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nadroparin: CL/F 0.211 L/h, V/F 1.55 L, kabs 0.495 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 0.211, the second reading 0.063; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nadroparin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:06.167938+00:00) predates the upstream re-run (2026-10-05 15:01:11.044941+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `nadroparin`, measured `anti-Xa`.
 
@@ -31,7 +34,7 @@ Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmaco
   ·  DOI: [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673)
 
 ## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="model_quarantined" stale="false" population="neonates and infants under 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="extracted" stale="true" population="neonates and infants under 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -39,11 +42,9 @@ Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmaco
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 0.211 | L/h | 5.8611111111111115e-08 | [l] / [h] | not captured | exact (1.0) | T2:row3:col1, T2:row3:col2, T2:row3:col3, T2:row3:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 0.211 | L/h | 5.8611111111111115e-08 | [l] / [h] | not captured | exact (1.0) | T2:row3:col1, T2:row3:col2, T2:row3:col3, T2:row3:col4 | — | 26.5 (None% RSE) |
 | Vd/F (L) | `Q76` · V/F | 1.55 | L | 0.0015500000000000002 | [l] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
 | ka (h-1) | `Q49` · kabs | 0.495 | h-1 | 0.0001375 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4 | — | not captured |
 
@@ -55,12 +56,14 @@ Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'CL/F' routed out of structural estimates ('Inter-individual variability (%CV)')
+- table section residual_error: 'Proportional residual error' routed out of structural estimates ('Residual variability (%CV)')
 - dropped duplicate Q27 ('CL/F_CLCR', value '0.238') — already have one for this compound
-- dropped duplicate Q27 ('CL/F', value '26.5') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=anti-Xa
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- molar mass: no plausible PubChem entry for 'anti-Xa' ('anti-Xa activity') — left in mass units
+- molar mass: none found for 'nadroparin' — its concentrations stay mass-only
+- molar mass: none found for 'anti-Xa' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'anti-Xa', not nadroparin — the review values are the parent's
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -72,15 +75,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[cl/f].value` | 0.211 | 0.063 | mismatch |
 | `gpt-oss:120b` | `parameters[ka].value` | 0.495 | 0.073 | mismatch |
 | `gpt-oss:120b` | `parameters[vd/f].value` | 1.55 | 0.02 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | nadroparin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | anti-Xa | unknown | mismatch |
 
 </details>
 
@@ -151,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 20:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:01 UTC</sub>

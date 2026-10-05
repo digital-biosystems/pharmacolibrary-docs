@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 population_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Li2025v2_percentage_relative_standard_error&quot;,&quot;label&quot;:&quot;Li_2025_2_percentage_relative_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Li2025v2_percentage_relative_standard_error.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10&quot;,&quot;label&quot;:&quot;Li_2025_neonates_and_infants_birth_to_2_y_n_10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Li2025_population_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,9 +21,11 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — protein c: CL 7.14, V 60.7.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].rse_percent`: this record has none, the second reading 6.76; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:30.497223+00:00) predates the upstream re-run (2026-10-05 15:21:55.754549+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `protein C concentrate`, measured `protein C`.
 
@@ -32,9 +34,9 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
   ·  DOI: [10.1016/j.rpth.2025.102859](https://doi.org/10.1016/j.rpth.2025.102859)
 
 ## Model component
-<dbs-pgx drug="protein C" model-id="ProteinC_Li2025_population_estimate" status="needs_review" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="protein C" model-id="ProteinC_Li2025_population_estimate" status="needs_review" stale="true" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
@@ -44,8 +46,8 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL, dL/h | `Q22` · CL | 7.14 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tbl4:row1:col1 | — | 0.0992 (None% RSE) |
-| Vd, dL | `Q61` · V | 60.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tbl4:row2:col1 | — | 0.0505 (None% RSE) |
+| CL, dL/h | `Q22` · CL | 7.14 | dL/h | 1.9833333333333332e-07 | [dl] / [h] | not captured | exact (1.0) | tbl4:row1:col1 | — | 0.0992 (None% RSE) |
+| Vd, dL | `Q61` · V | 60.7 | dL | 0.006070000000000001 | [dl] | not captured | exact (1.0) | tbl4:row2:col1 | — | 0.0505 (None% RSE) |
 | effect_of_age_on_endo | `Q900` · effect_of_age_on_endo | 0.589 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl4:row7:col1 | — | not captured |
 | theta_v_age | `Q900` · theta_v_age | -0.112 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl4:row9:col1 | — | not captured |
 
@@ -63,6 +65,8 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 - dropped unlinked row (NIL): 'Effect of SCPCD indication on ENDO' — extend the ontology if this is a real PK parameter (source ['tbl4:row8:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=protein C
 - population split: 'population estimate' subgroup of Li_2025 (paper reports 4 populations: adolescents (≥12 to &lt;16 y) (n = 3), adults (≥16 y)(n = 9), neonates and infants (birth to &lt;2 y) (n = 10), population estimate)
+- molar mass: none found for 'protein_c' — its concentrations stay mass-only
+- molar mass: none found for 'protein C' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -92,14 +96,14 @@ Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice i
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.714 (10/14 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -107,6 +111,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[effect_of_age_on_endo].rse_percent` | not captured | 12.7 | mismatch |
 | `gpt-oss:120b` | `parameters[theta_v_age].rse_percent` | not captured | -32.8 | mismatch |
 | `gpt-oss:120b` | `parameters[vd].rse_percent` | not captured | 5.07 | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | protein C | protein C concentrate | mismatch |
 
 </details>
 
@@ -125,10 +130,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 2.63 | 5.893 | 2.2407 | 0.25 | reported t½β |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl4:row1:col1'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tbl4:row2:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl4:row1:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl4:row2:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.14 | not captured | not captured | ['tbl4:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.714 L/h | not captured | not captured | ['tbl4:row1:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.07 L | not captured | not captured | ['tbl4:row2:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -163,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 14:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:21 UTC</sub>

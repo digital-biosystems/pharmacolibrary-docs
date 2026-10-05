@@ -17,7 +17,7 @@ Olipudase alfa is an enzyme therapy used to treat acid sphingomyelinase deficien
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:41 | 1:14 | 0/0/0 | 0/0/0 | 0/0/0 | 1,482/138 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 0/1 | 0 |
+| 2026-10-05 11:16 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 19,264/621 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 0/1 | 0 |
 
 ## popPK records
 
@@ -45,33 +45,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full text wanted
-
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kaddi_2018.pdf` | Kaddi CD et al., Quantitative Systems Pharmacology Model…, CPT: pharmacometrics & syst… (2018) | popPK | 6 | [10.1002/psp4.12304](https://doi.org/10.1002/psp4.12304) | [29920993](https://pubmed.ncbi.nlm.nih.gov/29920993) | The paper models olipudase alfa PK/PD as the subject drug, but the evidence contains no numeric disposition parameter values; they likely reside in supplementary material or figures not provided. |
-| `Wasserstein_2015.pdf` | Wasserstein MP et al., Successful within-patient dose escalati…, Molecular genetics and meta… (2015) | popPK | 5 | [10.1016/j.ymgme.2015.05.013](https://doi.org/10.1016/j.ymgme.2015.05.013) | [26049896](https://pubmed.ncbi.nlm.nih.gov/26049896) | A phase 1b PK study of olipudase alfa reporting half-life values (20.9–23.4 h), but no clearance/volume parameters and full PK parameter tables appear to be elsewhere. |
-
-<sub>queue written 2026-09-30T02:41:11.057017+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Aldosari_2019 | irrelevant | 1 | 0 | In-vitro formulation/encapsulation study with no PK disposition parameters for olipudase alfa. |
 | PD | Aldosari_2019 | not_relevant | 2 | 1 | In vitro formulation study comparing liposomal vs free rhASM effects in fibroblasts; no concentration-effect modeling or numeric PD parameters (Emax/EC50) reported. |
-| popPK | Diaz_2021 | relevant | 8 | 2 | PK study of olipudase alfa in children reporting CL, Vss, AUC, t1/2z, but the numeric PK values are only in Supplementary Table B, not provided in the evidence. |
+| popPK | Diaz_2021 | relevant | 8 | 2 | The study reports PK parameters (CL, Vss, t1/2) for olipudase alfa, but the specific numeric values are located in Supplementary Table B, which is not included in the provided evidence. |
 | popPK | Kaddi_2018 | relevant | 6 | 1 | The paper models olipudase alfa PK/PD as the subject drug, but the evidence contains no numeric disposition parameter values; they likely reside in supplementary material or figures not provided. |
-| popPK | Kirouac_2019 | irrelevant | 0 | 0 | This is a commentary on QSP model reproducibility with no olipudase alfa PK parameters or numeric values. |
+| popPK | Kirouac_2019 | irrelevant | 0 | 0 | The paper is a review on the reproducibility of QSP models and does not report any pharmacokinetic parameters for olipudase_alfa. |
 | PD | Kirouac_2019 | not_relevant | 0 | 0 | Paper is about reproducibility of QSP model code sharing; no olipudase alfa PD or exposure-response data. |
-| popPK | Kumar_2024 | irrelevant | 1 | 0 | This is a narrative review of pathophysiology and treatment response with no PK parameters or numeric disposition values for olipudase alfa. |
-| PGx | Kumar_2024 | not_relevant | 0 | 0 | Review of ASMD pathophysiology and treatment response; no gene variant effect on olipudase alfa PK/PD parameters reported. |
-| popPK | Thurberg_2016 | irrelevant | 2 | 0 | This is a pharmacodynamic/biomarker efficacy study with no PK disposition parameters (CL, V, half-life) for olipudase alfa reported. |
-| popPK | Thurberg_2020 | irrelevant | 2 | 0 | This is an efficacy/pharmacodynamic biomarker study (lipids, hepatic SM) with no PK disposition parameters reported. |
+| popPK | Kumar_2024 | irrelevant | 0 | 0 | The paper is a review article focusing on pathophysiology and treatment response, not a primary pharmacokinetic study reporting quantitative disposition parameters for olipudase alfa. |
+| PGx | Kumar_2024 | not_relevant | 0 | 0 | The paper is a review of the pathophysiology of ASMD and the mechanism of action of olipudase alfa, focusing on sphingomyelin accumulation, but it does not report pharmacogenomic effects (gene variants affecting PK/PD) of the drug. |
+| popPK | Thurberg_2016 | irrelevant | 0 | 0 | The study reports pharmacodynamic biomarkers (liver sphingomyelin levels) and safety data, but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for olipudase alfa. |
+| popPK | Thurberg_2020 | irrelevant | 0 | 0 | The paper reports pharmacodynamic biomarkers (sphingomyelin levels, lipid profiles) and efficacy outcomes, but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for olipudase alfa. |
 | PD | Thurberg_2020 | not_relevant | 3 | 2 | Reports longitudinal biomarker (lyso-SM, hepatic SM, lipids) changes on ERT in n=5, but no concentration- or dose-effect relationship or numeric PD parameters (Emax/EC50/slope) are stated or derivable. |
-| popPK | Wasserstein_2015 | relevant | 5 | 3 | A phase 1b PK study of olipudase alfa reporting half-life values (20.9–23.4 h), but no clearance/volume parameters and full PK parameter tables appear to be elsewhere. |
+| popPK | Wasserstein_2015 | relevant | 4 | 2 | The study reports a circulating half-life range (20.9-23.4h) for olipudase alfa, but lacks other quantitative disposition parameters like clearance or volume of distribution. |
 | popPK | Wasserstein_2022 | irrelevant | 2 | 0 | This is an efficacy/safety trial abstract with no PK disposition parameters (CL, V, half-life) reported; any PK data would be in other publications or supplementary material not provided. |
 | PD | Wasserstein_2022 | not_relevant | 2 | 1 | Reports only group-level efficacy endpoint changes vs placebo; no concentration-effect or dose-response PD parameters (Emax, EC50, etc.) are stated or derivable. |
 

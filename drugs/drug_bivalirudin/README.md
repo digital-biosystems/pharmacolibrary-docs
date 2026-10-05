@@ -14,23 +14,31 @@ Bivalirudin is a direct thrombin inhibitor used as an anticoagulant, notably in 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q4919218](https://www.wikidata.org/wiki/Q4919218) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| bivalirudin | parent | 2180.29 | C98H138N24O33 | DrugBank | [16129704](https://pubchem.ncbi.nlm.nih.gov/compound/16129704) | Zhang_2012 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 18:42 | 2:13 | 0/1/0 | 1/0/0 | 0/0/0 | 26,912/3,727 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/0 | 1/0 | 0 |
+| 2026-10-05 14:14 | 2:45 | 0/1/0 | 1/0/0 | 0/0/0 | 38,481/7,604 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | — | 2-compartment (no model) | 4 | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | — | 2-compartment (no model) | 4 | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2012_ACT](drugs/drug_bivalirudin/pd_Zhang_2012_ACT.md) | activated clotting time ← bivalirudin · direct sigmoid Emax (Hill) effect | — | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2012_ACT](drugs/drug_bivalirudin/pd_Zhang_2012_ACT.md) | activated clotting time biomarker turnover ← bivalirudin | — | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 ## ADME sites
 
@@ -52,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -61,16 +69,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Han_2019.pdf` | Han S et al., Pharmacokinetic and Pharmacodynamic Mod…, Pharmaceutical research (2019) | popPK | 9 | [10.1007/s11095-019-2676-6](https://doi.org/10.1007/s11095-019-2676-6) | [31396727](https://pubmed.ncbi.nlm.nih.gov/31396727) | The paper describes a population PK model for a bivalirudin generic, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Han_2019.pdf` | Han S et al., Pharmacokinetic and Pharmacodynamic Mod…, Pharmaceutical research (2019) | popPK | 10 | [10.1007/s11095-019-2676-6](https://doi.org/10.1007/s11095-019-2676-6) | [31396727](https://pubmed.ncbi.nlm.nih.gov/31396727) | The paper describes a population PK model for bivalirudin (generic CTB-001) in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 
-<sub>queue written 2026-09-06T16:51:55.908900+00:00</sub>
+<sub>queue written 2026-10-05T14:12:07.516715+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Han_2019 | relevant | 9 | 0 | The paper describes a population PK model for a bivalirudin generic, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Jatis_2024 | irrelevant | 1 | 0 | The study focuses on the relationship between bivalirudin dose and aPTT response (pharmacodynamics/monitoring) rather than reporting quantitative pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Han_2019 | relevant | 10 | 0 | The paper describes a population PK model for bivalirudin (generic CTB-001) in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Jatis_2024 | irrelevant | 1 | 0 | The study analyzes the relationship between bivalirudin dose and aPTT response (pharmacodynamics/monitoring) rather than reporting quantitative pharmacokinetic parameters like clearance or volume of distribution. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 18:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 14:12 UTC</sub>

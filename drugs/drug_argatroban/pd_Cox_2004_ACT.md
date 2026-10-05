@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;argatroban&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/&quot;},{&quot;label&quot;:&quot;Cox_2004 \u00b7 PD activated clotting time&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Cox_2004_ACT&quot;,&quot;label&quot;:&quot;Cox_2004 \u00b7 ACT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/pd_Cox_2004_ACT.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Argatroban_Cox2004_reference&quot;,&quot;label&quot;:&quot;Cox_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Cox2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Argatroban_Akimoto2011_reference&quot;,&quot;label&quot;:&quot;Akimoto_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Akimoto2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Cox_2004_ACT&quot;,&quot;label&quot;:&quot;Cox_2004 \u00b7 ACT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/pd_Cox_2004_ACT.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# activated clotting time — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+# activated clotting time — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -18,15 +18,15 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Argatroban plasma concentration (ng/mL) was related to activated clotting time (sec) by a sigmoid Emax model (direct effect; no effect-compartment or turnover mechanism described), with E0 = 148 sec, Emax = 316 sec, EC50 = 1920 ng/mL; gamma is not reported in the excerpts.
+> Argatroban plasma concentrations (ng/mL) directly stimulate the activated clotting time (ACT, sec) via a sigmoid Emax model, with a baseline (E0) of 148 sec, a maximum effect (Emax) of 316 sec, an EC50 of 1920 ng/mL, and a Hill coefficient (gamma) of 1.13. The paper describes argatroban as a direct thrombin inhibitor that reversibly binds the active site of thrombin to prevent fibrin formation, but does not explicitly detail the mechanistic link between this binding and the specific PD model parameters provided.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cox_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004)
@@ -35,9 +35,10 @@ Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical p
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E max (sec) | `Q320` · not captured | 316 | sec | not captured | review_gapfill (not captured) | Cox_2004:review |
-| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 1920 | ng/mL | not captured | review_gapfill (not captured) | Cox_2004:review |
-| PD (effect) | E 0 (sec) | `Q324` · not captured | 148 | sec | not captured | review_gapfill (not captured) | Cox_2004:review |
+| PD (effect) | Emax | `Q320` · not captured | 316 | sec | not captured | llm (not captured) | Cox_2004:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1920 | ng/mL | not captured | llm (not captured) | Cox_2004:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 148 | sec | not captured | llm (not captured) | Cox_2004:pdv3 |
+| PD (effect) | gamma | `Q325` · not captured | 1.13 | not captured | not captured | llm (not captured) | Cox_2004:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,17 +55,13 @@ Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical p
 | E0 | 148 sec | 148 s |
 | Emax | 316 sec | 316 s |
 | EC50 | 1920 ng/mL | 0.00192 kg/m3 |
-| gamma | 1 | — |
+| gamma | 1.13 | — |
 
 Closed-form check points (response, SI): `at_0` = 148, `at_EC50` = 306, `at_inf` = 464
 
-Deviations:
-
-- `defaulted_parameters` — gamma
-
 ## Review
 
-Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 | check | status | note |
 |---|---|---|
@@ -73,11 +70,7 @@ Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 | `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
 | `T2_direction` | pass | the response rises, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
+| `T4_defaults` | pass | nothing defaulted |
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -86,12 +79,12 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_modelica.zip" download>Argatroban_Cox2004_PD_act_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_modelica.zip" download>Argatroban_Cox2004_PD_act_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_fmi.zip" download>Argatroban_Cox2004_PD_act_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_matlab.zip" download>Argatroban_Cox2004_PD_act_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_sbml.zip" download>Argatroban_Cox2004_PD_act_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_cellml.zip" download>Argatroban_Cox2004_PD_act_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_sbml.zip" download>Argatroban_Cox2004_PD_act_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_cellml.zip" download>Argatroban_Cox2004_PD_act_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

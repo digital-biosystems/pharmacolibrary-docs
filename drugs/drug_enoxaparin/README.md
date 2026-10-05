@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;enoxaparin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Oualha2018_reference&quot;,&quot;label&quot;:&quot;Oualha_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # enoxaparin
 
@@ -17,14 +18,15 @@ Enoxaparin is a low molecular weight heparin used as an antithrombotic to preven
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 20:49 | 14:02 | 0/1/1 | 0/0/0 | 0/0/0 | 132,585/11,244 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-05 15:17 | 10:25 | 1/1/1 | 0/0/0 | 0/0/0 | 156,210/27,263 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/8 | 8/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_value_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | held back | 1-compartment, oral | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_iiv_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | held back | 1-compartment, oral | 2 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> | [Oualha_2018_reference](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Zufferey_2021_reference](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_reference.md) | — | 1-compartment (no model) | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Derbalah_2022_reference](drugs/drug_enoxaparin/Enoxaparin_Derbalah2022_reference.md) | — | 1-compartment (no model) | 0 | Derbalah A et al., Optimal dosing of enoxaparin in overwei…, British journal of clinical… (2022) | [10.1111/bcp.15459](https://doi.org/10.1111/bcp.15459) |
 
 ## ADME sites
 
@@ -46,8 +48,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 66 matched, 36 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -56,52 +58,51 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Carreño_2024.pdf` | Carreño FO et al., Characterizing Enoxaparin's Population…, Clinical pharmacokinetics (2024) | popPK | 10 | [10.1007/s40262-024-01388-x](https://doi.org/10.1007/s40262-024-01388-x) | [38955947](https://pubmed.ncbi.nlm.nih.gov/38955947) | The paper describes a population pharmacokinetic study for enoxaparin, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence. |
-| `Moffett_2017.pdf` | Moffett BS et al., Enoxaparin Population Pharmacokinetics…, Therapeutic drug monitoring (2017) | popPK | 10 | [10.1097/FTD.0000000000000435](https://doi.org/10.1097/FTD.0000000000000435) | [28937536](https://pubmed.ncbi.nlm.nih.gov/28937536) | The paper describes a population PK study for enoxaparin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| `Moffett_2018.pdf` | Moffett BS et al., Population Pharmacokinetics of Enoxapar…, The Annals of pharmacothera… (2018) | popPK | 10 | [10.1177/1060028017734234](https://doi.org/10.1177/1060028017734234) | [28962537](https://pubmed.ncbi.nlm.nih.gov/28962537) | The paper describes a population PK model for enoxaparin with identified covariates, but specific numeric parameter estimates (CL, V, Q) are not provided in the text, likely residing in tables or supplementary material not included. |
-| `Oualha_2018.pdf` | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | popPK | 10 | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) | [29423936](https://pubmed.ncbi.nlm.nih.gov/29423936) | The paper reports a population PK model for enoxaparin with explicit numeric values for typical clearance (1.23 l/h) and volume of distribution (14.6 l) in the text. |
-| `Patel_2013.pdf` | Patel JP et al., Population pharmacokinetics of enoxapar…, Circulation (2013) | popPK | 10 | [10.1161/CIRCULATIONAHA.113.003198](https://doi.org/10.1161/CIRCULATIONAHA.113.003198) | [23940396](https://pubmed.ncbi.nlm.nih.gov/23940396) | The paper describes a population PK study of enoxaparin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Duffull_2005.pdf` | Duffull SB et al., Analysis of population pharmacokinetic…, Journal of biopharmaceutica… (2005) | popPK | 9 | [10.1081/bip-200040824](https://doi.org/10.1081/bip-200040824) | [15702605](https://pubmed.ncbi.nlm.nih.gov/15702605) | The paper describes a population PK study for enoxaparin, but the specific numeric parameter values are not present in the provided evidence. |
+| `Carreño_2024.pdf` | Carreño FO et al., Characterizing Enoxaparin's Population…, Clinical pharmacokinetics (2024) | popPK | 10 | [10.1007/s40262-024-01388-x](https://doi.org/10.1007/s40262-024-01388-x) | [38955947](https://pubmed.ncbi.nlm.nih.gov/38955947) | The paper describes a population pharmacokinetic model for enoxaparin in pediatric patients, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence. |
+| `Moffett_2017.pdf` | Moffett BS et al., Enoxaparin Population Pharmacokinetics…, Therapeutic drug monitoring (2017) | popPK | 10 | [10.1097/FTD.0000000000000435](https://doi.org/10.1097/FTD.0000000000000435) | [28937536](https://pubmed.ncbi.nlm.nih.gov/28937536) | The paper describes a population PK study of enoxaparin in infants, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Moffett_2018.pdf` | Moffett BS et al., Population Pharmacokinetics of Enoxapar…, The Annals of pharmacothera… (2018) | popPK | 10 | [10.1177/1060028017734234](https://doi.org/10.1177/1060028017734234) | [28962537](https://pubmed.ncbi.nlm.nih.gov/28962537) | The paper describes a population PK model for enoxaparin in pediatric patients, but the specific numeric parameter estimates (CL, V, Q, etc.) are not provided in the abstract or evidence text. |
+| `Oualha_2018.pdf` | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | popPK | 10 | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) | [29423936](https://pubmed.ncbi.nlm.nih.gov/29423936) | The paper reports a population PK model for enoxaparin with explicit numeric values for typical clearance (1.23 l/h) and volume of distribution (14.6 l) in the abstract. |
+| `Patel_2013.pdf` | Patel JP et al., Population pharmacokinetics of enoxapar…, Circulation (2013) | popPK | 10 | [10.1161/CIRCULATIONAHA.113.003198](https://doi.org/10.1161/CIRCULATIONAHA.113.003198) | [23940396](https://pubmed.ncbi.nlm.nih.gov/23940396) | The paper describes a population PK model for enoxaparin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Duffull_2005.pdf` | Duffull SB et al., Analysis of population pharmacokinetic…, Journal of biopharmaceutica… (2005) | popPK | 9 | [10.1081/bip-200040824](https://doi.org/10.1081/bip-200040824) | [15702605](https://pubmed.ncbi.nlm.nih.gov/15702605) | The paper describes a population PK model for enoxaparin, but the specific numeric parameter values are not present in the provided evidence. |
 | `Antonijoan_2009.pdf` | Antonijoan RM et al., Comparative pharmacodynamic time-course…, International journal of cl… (2009) | pd | 5 | [10.5414/cpp47726](https://doi.org/10.5414/cpp47726) | [19954711](https://www.ncbi.nlm.nih.gov/pubmed/19954711) | metadata signals extractable PD data (Emax) |
 | `Francis_2008.pdf` | Francis CW, New issues in oral anticoagulants, Hematology. American Societ… (2008) | pgx | 8 | [10.1182/asheducation-2008.1.259](https://doi.org/10.1182/asheducation-2008.1.259) | [19074093](https://www.ncbi.nlm.nih.gov/pubmed/19074093) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Becattini_2012.pdf` | Becattini C et al., Old and new oral anticoagulants for ven…, Thrombosis research (2012) | pgx | 7 | [10.1016/j.thromres.2011.12.014](https://doi.org/10.1016/j.thromres.2011.12.014) | [22264937](https://www.ncbi.nlm.nih.gov/pubmed/22264937) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Ufer_2010.pdf` | Ufer M, Comparative efficacy and safety of the…, Thrombosis and haemostasis (2010) | pgx | 7 | [10.1160/TH09-09-0659](https://doi.org/10.1160/TH09-09-0659) | [20135071](https://www.ncbi.nlm.nih.gov/pubmed/20135071) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Duan_2016.pdf` | Duan L et al., Comparison of rivaroxaban mono-therapy…, Clinica chimica acta; inter… (2016) | pgx | 5 | [10.1016/j.cca.2016.05.002](https://doi.org/10.1016/j.cca.2016.05.002) | [27155586](https://www.ncbi.nlm.nih.gov/pubmed/27155586) | metadata signals extractable PGX data (CYP2C9) |
 
-<sub>queue written 2026-09-05T20:42:34.920358+00:00</sub>
+<sub>queue written 2026-10-05T15:08:02.584287+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Antonijoan_2009 | irrelevant | 2 | 1 | The study reports pharmacodynamic parameters (anti-Xa activity, half-life of effect) rather than pharmacokinetic disposition parameters (clearance, volume of distribution) for enoxaparin. |
-| popPK | Barrett_2012 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of apixaban, with enoxaparin serving only as a co-administered agent for interaction assessment, and no quantitative PK parameters for enoxaparin are reported. |
+| popPK | Antonijoan_2009 | irrelevant | 2 | 2 | The study reports pharmacodynamic parameters (anti-Xa activity, AUC, half-life of effect) rather than pharmacokinetic disposition parameters (clearance, volume of distribution) for enoxaparin. |
+| popPK | Barrett_2012 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of apixaban, with enoxaparin serving only as a co-administered agent for interaction assessment, and no quantitative PK parameters (CL, V, etc.) for enoxaparin are reported. |
 | PD | Barrett_2012 | not_relevant | 3 | 2 | The study reports peak pharmacodynamic effects (anti-Xa activity) for single doses and combinations, but does not provide a concentration-effect curve, dose-response model, or numeric PD parameters (e.g., EC50, Emax) for enoxaparin. |
 | PGx | Becattini_2012 | not_relevant | 0 | 0 | The paper is a general review of oral anticoagulants and does not report any pharmacogenomic effects on enoxaparin PK/PD parameters. |
-| PGx | Becerra_2017 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (phenytoin affecting rivaroxaban), not a pharmacogenomic effect on enoxaparin. |
-| PGx | Bistervels_2022 | not_relevant | 0 | 0 | The paper investigates the effect of polypharmacy (drug-drug interactions) on bleeding risk, not the effect of gene variants/genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Becerra_2017 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (phenytoin and rivaroxaban) and does not report any pharmacogenomic effect on enoxaparin. |
+| PGx | Bistervels_2022 | not_relevant | 0 | 0 | The study investigates the effect of polypharmacy (drug-drug interactions) on bleeding risk, not the effect of a specific gene variant or genotype on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Burroughs_2025 | not_relevant | 0 | 0 | The paper is a survey of clinician prescribing practices and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Carreño_2024 | relevant | 10 | 0 | The paper describes a population pharmacokinetic study for enoxaparin, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence. |
-| popPK | Derbalah_2022 | relevant | 10 | 4 | The paper is a population PK study of enoxaparin, but the specific numeric parameter estimates (CL, V, ka) are located in Table 2, which is not included in the provided evidence. |
+| popPK | Carreño_2024 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for enoxaparin in pediatric patients, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence. |
 | PGx | Duan_2016 | not_relevant | 0 | 0 | The study investigates rivaroxaban and warfarin pharmacogenomics, not enoxaparin. |
-| popPK | Duffull_2005 | relevant | 9 | 0 | The paper describes a population PK study for enoxaparin, but the specific numeric parameter values are not present in the provided evidence. |
-| popPK | Duffull_2015 | irrelevant | 0 | 0 | The paper is a general review on the methodology of repeated population analyses and does not report specific quantitative pharmacokinetic parameters for enoxaparin. |
+| popPK | Duffull_2005 | relevant | 9 | 0 | The paper describes a population PK model for enoxaparin, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Duffull_2015 | irrelevant | 0 | 0 | The paper is a general review of population pharmacokinetic methodology and does not report specific quantitative PK parameters for enoxaparin. |
 | PGx | Francis_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for warfarin (CYP2C9, VKORC1) and compares new oral anticoagulants to enoxaparin, but does not report any pharmacogenomic effects on the PK or PD of enoxaparin. |
 | PGx | Helft_2006 | not_relevant | 0 | 0 | The text is a general review of 2005 thrombosis research and does not report any pharmacogenomic effects on the PK or PD of enoxaparin. |
-| PGx | Melandri_2009 | not_relevant | 0 | 0 | The paper reviews the clinical efficacy and safety of tenecteplase and enoxaparin in acute myocardial infarction but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Moffett_2017 | relevant | 10 | 0 | The paper describes a population PK study for enoxaparin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Moffett_2018 | relevant | 10 | 2 | The paper describes a population PK model for enoxaparin with identified covariates, but specific numeric parameter estimates (CL, V, Q) are not provided in the text, likely residing in tables or supplementary material not included. |
-| popPK | Moscaroli_2017 | irrelevant | 0 | 0 | The study focuses on the radiolabeling and imaging of FGF-2, using enoxaparin only as a binding partner for affinity assays, and does not report pharmacokinetic parameters for enoxaparin. |
+| PGx | Melandri_2009 | not_relevant | 0 | 0 | The paper reviews tenecteplase and mentions enoxaparin only as an adjunctive therapy with age-based dosing, without reporting any pharmacogenomic effects on enoxaparin PK/PD. |
+| popPK | Moffett_2017 | relevant | 10 | 0 | The paper describes a population PK study of enoxaparin in infants, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Moffett_2018 | relevant | 10 | 2 | The paper describes a population PK model for enoxaparin in pediatric patients, but the specific numeric parameter estimates (CL, V, Q, etc.) are not provided in the abstract or evidence text. |
+| popPK | Moscaroli_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of radiolabeled FGF-2, with enoxaparin serving only as a binding partner in an in vitro affinity assay. |
 | PD | Moscaroli_2017 | not_relevant | 0 | 0 | The paper reports binding affinity (Kd) and biological activity (EC50) for FGF-2, not a pharmacodynamic or exposure-response relationship for enoxaparin. |
 | PGx | Murray_2015 | not_relevant | 0 | 0 | The paper describes a clinical anticoagulation program and mentions guidelines for VKOR1/CYP2C9 testing, but it does not report specific pharmacogenomic effects on the PK or PD parameters of enoxaparin. |
-| PGx | Panfili_2012 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic adverse effect (bladder hypotonia) of ranolazine, not a pharmacogenomic effect on the PK or PD of enoxaparin. |
-| popPK | Patel_2013 | relevant | 10 | 0 | The paper describes a population PK study of enoxaparin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| PGx | Peixoto_2020 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (DDIs) between antineoplastic agents and anticoagulants, not pharmacogenomic effects of gene variants on enoxaparin PK/PD. |
-| PGx | Phillips_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for warfarin and clinical management of enoxaparin in special populations (obesity, renal impairment), but does not report a genetic variant affecting enoxaparin PK/PD. |
+| PGx | Panfili_2012 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic adverse effect of ranolazine (bladder hypotonia) and discusses ranolazine metabolism (CYP3A4/2D6), but does not report any pharmacogenomic effect on the PK or PD parameters of enoxaparin. |
+| popPK | Patel_2013 | relevant | 10 | 2 | The paper describes a population PK model for enoxaparin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Peixoto_2020 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (DDI) between antineoplastic agents and anticoagulants, not pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Phillips_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for warfarin and dosing considerations for enoxaparin based on obesity and renal function, but does not report any genetic variants affecting enoxaparin PK/PD. |
 | PGx | Ufer_2010 | not_relevant | 0 | 0 | The paper is a review of novel oral anticoagulants (dabigatran, rivaroxaban, apixaban) and does not report pharmacogenomic effects on enoxaparin. |
 | PGx | Vaughns_2015 | not_relevant | 0 | 0 | The paper is a review of pharmacokinetics and pharmacogenetics in obese adolescents but does not report specific pharmacogenomic effects on enoxaparin PK/PD parameters. |
-| PGx | Wei_2024 | not_relevant | 0 | 0 | The paper is a protocol for a trial comparing rivaroxaban and enoxaparin; it does not report results or pharmacogenomic effects on enoxaparin PK/PD. |
-| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of milvexian, with enoxaparin serving only as a clinical comparator for efficacy outcomes rather than the subject of PK analysis. |
+| PGx | Wei_2024 | not_relevant | 0 | 0 | The paper is a protocol for a clinical trial comparing rivaroxaban and enoxaparin; it does not report results or specific pharmacogenomic effects on PK/PD parameters. |
+| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of milvexian, with enoxaparin serving only as a clinical comparator for efficacy outcomes. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 20:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 15:09 UTC</sub>

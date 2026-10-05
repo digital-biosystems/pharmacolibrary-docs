@@ -17,7 +17,7 @@ Alglucerase is an enzyme replacement therapy that was used to treat Gaucher dise
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:08 | 0:51 | 0/0/0 | 0/0/0 | 0/0/0 | 4,416/551 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 10:34 | 0:08 | 0/0/0 | 0/0/0 | 0/0/0 | 2,867/223 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -53,17 +53,17 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Grabowski_2009.pdf` | Grabowski GA et al., Dose-response relationships for enzyme…, Genetics in medicine : offi… (2009) | pd | 4 | [10.1097/GIM.0b013e31818e2c19](https://doi.org/10.1097/GIM.0b013e31818e2c19) | [19265748](https://www.ncbi.nlm.nih.gov/pubmed/19265748) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-30T02:08:18.272260+00:00</sub>
+<sub>queue written 2026-10-05T10:34:35.828720+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Germain_2001 | not_relevant | 2 | 0 | The paper reports a case of neutralizing antibody development associated with a specific GBA genotype, but it does not provide quantitative pharmacokinetic or pharmacodynamic parameter data (e.g., clearance, half-life, AUC) to establish a pharmacogenomic effect size. |
-| popPK | Grabowski_2009 | irrelevant | 0 | 0 | The study focuses on dose-response relationships for clinical efficacy (hematological and visceral parameters) rather than pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Grabowski_2009 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
 | popPK | Hollak_1997 | irrelevant | 0 | 0 | The study investigates metabolic and clinical outcomes (REE, organ volume, blood counts) of alglucerase therapy, not pharmacokinetic parameters. |
 | PD | Hollak_1997 | not_relevant | 2 | 1 | The study reports clinical outcomes (organ volume, REE, counts) after a fixed dose of alglucerase but does not provide exposure data (concentrations) or fit a dose-response model to derive numeric PD parameters like Emax or EC50. |
-| PGx | Vigan_2014 | not_relevant | 0 | 0 | The study models biomarker response to ERT and explicitly states that genotype (N370S/N370S) had no significant impact on the pharmacodynamic parameters. |
+| PGx | Vigan_2014 | not_relevant | 2 | 5 | The paper models biomarker response to ERT and tests genotype (N370S/N370S) as a covariate, but the abstract and results indicate that genotype was not a significant covariate (only age, sex, and splenectomy were significant), and it does not report a pharmacokinetic parameter. |
 | popPK | Whittington_1992 | irrelevant | 0 | 0 | The paper is a therapeutic review that explicitly states pharmacokinetic information is limited and does not report any quantitative disposition parameters for alglucerase. |
 | PD | Whittington_1992 | not_relevant | 1 | 0 | The text is a qualitative review that explicitly states pharmacodynamic information is limited and provides no numeric PD parameters or exposure-response data. |
 | PGx | Zimran_1994 | not_relevant | 0 | 0 | The study explicitly states that no correlation was found between genotype and the response to treatment. |

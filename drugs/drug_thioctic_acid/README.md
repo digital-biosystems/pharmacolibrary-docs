@@ -20,30 +20,19 @@ Thioctic acid (alpha-lipoic acid) is used for conditions of the alimentary tract
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| thioctic_acid | metabolite | 206.326 | — | DrugBank | — | Field_2021 |
+| alpha lipoic acid (thioctic_acid) | parent | 206.326 | C8H14O2S2 | DrugBank | [6112](https://pubchem.ncbi.nlm.nih.gov/compound/6112) | Field_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:04 | 1:25 | 0/1/0 | 1/0/0 | 0/0/0 | 14,639/3,296 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
+| 2026-10-05 12:03 | 4:17 | 0/1/0 | 0/0/0 | 0/0/0 | 91,407/7,320 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 2 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">fish</span> | [Zhang_2021_ROS](drugs/drug_thioctic_acid/pd_Zhang_2021_ROS.md) | reactive oxygen species ← alpha-lipoic acid · direct Emax (saturable) effect | — | Zhang W et al., α-Lipoic Acid Exerts Its Antiviral Effe…, Virologica Sinica (2021) | [10.1007/s12250-021-00440-5](https://doi.org/10.1007/s12250-021-00440-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">fish</span> | [Zhang_2021_VHSV_G](drugs/drug_thioctic_acid/pd_Zhang_2021_VHSV_G.md) | VHSV G gene mRNA expression ← alpha-lipoic acid · direct Emax (saturable) effect | — | Zhang W et al., α-Lipoic Acid Exerts Its Antiviral Effe…, Virologica Sinica (2021) | [10.1007/s12250-021-00440-5](https://doi.org/10.1007/s12250-021-00440-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">fish</span> | [Zhang_2021_VHSV_plaque_formation](drugs/drug_thioctic_acid/pd_Zhang_2021_VHSV_plaque_formation.md) | VHSV plaque formation ← alpha-lipoic acid · direct Emax (saturable) effect | — | Zhang W et al., α-Lipoic Acid Exerts Its Antiviral Effe…, Virologica Sinica (2021) | [10.1007/s12250-021-00440-5](https://doi.org/10.1007/s12250-021-00440-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">fish</span> | [Zhang_2021_cell_viability](drugs/drug_thioctic_acid/pd_Zhang_2021_cell_viability.md) | cell viability ← alpha-lipoic acid · direct Emax (saturable) effect | — | Zhang W et al., α-Lipoic Acid Exerts Its Antiviral Effe…, Virologica Sinica (2021) | [10.1007/s12250-021-00440-5](https://doi.org/10.1007/s12250-021-00440-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">fish</span> | [Zhang_2021_relative_mRNA](drugs/drug_thioctic_acid/pd_Zhang_2021_relative_mRNA.md) | IRF7 expression ← alpha-lipoic acid · direct Emax (saturable) effect | — | Zhang W et al., α-Lipoic Acid Exerts Its Antiviral Effe…, Virologica Sinica (2021) | [10.1007/s12250-021-00440-5](https://doi.org/10.1007/s12250-021-00440-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">fish</span> | [Zhang_2021_survival_rate](drugs/drug_thioctic_acid/pd_Zhang_2021_survival_rate.md) | survival rate ← alpha-lipoic acid · direct Emax (saturable) effect | — | Zhang W et al., α-Lipoic Acid Exerts Its Antiviral Effe…, Virologica Sinica (2021) | [10.1007/s12250-021-00440-5](https://doi.org/10.1007/s12250-021-00440-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 1 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
 
 ## ADME sites
 
@@ -67,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 24 matched, 24 returned
 - **screened:** 5  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -76,39 +65,39 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Field_2021.pdf` | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | popPK | 9 | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) | [34687502](https://pubmed.ncbi.nlm.nih.gov/34687502) | The study reports population PK in sea lions with numeric ALA half-lives and Cmax values, although detailed model parameters are not shown. |
+| `Field_2021.pdf` | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | popPK | 10 | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) | [34687502](https://pubmed.ncbi.nlm.nih.gov/34687502) | The study reports population pharmacokinetic parameters (t1/2, CMAX) for alpha lipoic acid (thioctic acid) in California sea lions, with specific numeric values provided in the abstract. |
 | `Nobakht-Haghighi_2018.pdf` | Nobakht-Haghighi N et al., Regulation of aging and oxidative stres…, Molecular and cellular bioc… (2018) | pd | 4 | [10.1007/s11010-018-3363-3](https://doi.org/10.1007/s11010-018-3363-3) | [29696608](https://www.ncbi.nlm.nih.gov/pubmed/29696608) | metadata signals extractable PD data (EC50) |
 | `Walimbe_2025.pdf` | Walimbe AS et al., Expanded Clinical Phenotype and the Rol…, American journal of medical… (2025) | pgx | 5 | [10.1002/ajmg.a.64014](https://doi.org/10.1002/ajmg.a.64014) | [39898461](https://www.ncbi.nlm.nih.gov/pubmed/39898461) | metadata signals extractable PGX data (SLC5A6) |
 
-<sub>queue written 2026-09-30T03:03:51.319395+00:00</sub>
+<sub>queue written 2026-10-05T12:00:28.065744+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Cheng_2025 | not_relevant | 0 | 0 | Thioctic acid is used as a hydrogel component, with no pharmacogenomic analysis or PK/PD parameter reported. |
-| PGx | El_2026 | not_relevant | 0 | 0 | The paper studies lipoic acid priming and antioxidant responses in wheat exposed to ZnO nanoparticles, without gene variants or pharmacokinetic/pharmacodynamic parameters for thioctic acid. |
-| PGx | Galea_2012 | not_relevant | 0 | 0 | The review mentions alpha-lipoic acid treatment in Abcd1-null mice but does not report a pharmacogenomic effect on any thioctic_acid pharmacokinetic or pharmacodynamic parameter. |
-| popPK | Lahiani_2016 | irrelevant | 0 | 0 | This is an in-vitro neuroprotection study with no pharmacokinetic disposition parameters or numeric PK values. |
+| PGx | Cheng_2025 | not_relevant | 0 | 0 | The paper describes a drug delivery system for oral ulcers and does not investigate pharmacogenomic effects on the PK or PD of thioctic acid. |
+| PGx | El_2026 | not_relevant | 0 | 0 | The paper investigates the phytotoxic effects of nanoparticles on wheat and the protective role of lipoic acid in plants, containing no human pharmacogenomic data or PK/PD parameters for thioctic acid. |
+| PGx | Galea_2012 | not_relevant | 0 | 0 | The paper is a review of oxidative stress mechanisms in neurodegenerative diseases and does not report pharmacogenomic effects on the PK or PD of thioctic acid. |
+| popPK | Lahiani_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of a synthetic conjugate's neuroprotective effects, reporting no pharmacokinetic parameters for thioctic acid. |
 | PD | Lahiani_2016 | not_relevant | 0 | 0 | The reported EC50 of 10 μM is for the AD3 α-lipoic-acid/Tempol PEG conjugate, not thioctic acid itself, and no thioctic-acid-specific exposure- or dose-response relationship is provided. |
-| popPK | Lockhart_2000 | irrelevant | 0 | 0 | This is an in-vitro neurotoxicity study with no pharmacokinetic disposition parameters for thioctic acid. |
-| popPK | Madawala_2011 | irrelevant | 0 | 0 | This is an in-vitro synthesis and analytical study with no pharmacokinetic disposition parameters or values for thioctic acid. |
+| popPK | Lockhart_2000 | irrelevant | 0 | 0 | The study is an in-vitro neurotoxicity assay measuring cell viability (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Madawala_2011 | irrelevant | 0 | 0 | The study focuses on the synthesis and in vitro antioxidant activity of lipoic acid conjugates, not on the pharmacokinetics of thioctic acid. |
 | PD | Madawala_2011 | not_relevant | 1 | 1 | The paper reports an in vitro DPPH EC50 of 0.21 for a diacylglycerol–dihydrolipoic acid conjugate, but no dose/concentration-effect relationship or PD parameters for thioctic (lipoic) acid itself. |
-| popPK | Mythili_2006 | irrelevant | 0 | 0 | This is a pharmacodynamic cardiotoxicity study with no quantitative pharmacokinetic parameters for thioctic acid. |
+| popPK | Mythili_2006 | irrelevant | 0 | 0 | The study is a mechanistic investigation of cardiac myofilament function in rats, not a pharmacokinetic study, and reports no disposition parameters for thioctic acid. |
 | PD | Mythili_2006 | not_relevant | 3 | 1 | The study reports qualitative restoration of calcium-sensitivity and a reduced hill coefficient after a single LA dose, but provides no numeric LA exposure/dose-response parameters or extractable concentration-effect relationship in the supplied text. |
 | popPK | Nobakht-Haghighi_2018 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
 | PD | Nobakht-Haghighi_2018 | not_relevant | 0 | 0 | The provided text describes a biological aging/oxidative-stress study but reports no extractable thioctic-acid exposure- or dose-response relationship or numeric PD parameters. |
-| PGx | Peng_2004 | not_relevant | 0 | 0 | The paper concerns flunitrazepam metabolism and NADPH-cytochrome P-450 reductase activity, not thioctic acid or a genetic variant/genotype/phenotype effect on a PK/PD parameter. |
-| PGx | Saito_2018 | not_relevant | 1 | 8 | HLA-DRB1*04:06/*04:03 are associated with alpha-lipoic-acid-induced insulin autoimmune syndrome, but no genotype effect on a thioctic_acid PK or PD parameter is reported. |
-| PGx | Schauer_2025 | not_relevant | 0 | 1 | The study evaluates genotype-associated changes in urinary detoxification biomarkers after a multi-ingredient supplement regimen, but reports no pharmacokinetic or pharmacodynamic parameter for thioctic acid. |
-| PGx | Talaverón-Rey_2023 | not_relevant | 1 | 8 | PANK2 variants are linked to cellular response to alpha-lipoic acid, but the paper reports no pharmacokinetic or fitted pharmacodynamic parameter for thioctic acid. |
-| PGx | Torchia_2025 | not_relevant | 0 | 0 | The review only mentions alpha lipoic acid (thioctic acid) as a preclinical treatment and reports no gene variant or genotype effects on its pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Venkatraman_2004 | irrelevant | 0 | 0 | This study evaluates thioctic-acid derivatives for pharmacological activity but reports no quantitative pharmacokinetic disposition parameters. |
-| PGx | Vesnina_2026 | not_relevant | 0 | 0 | This review discusses genetic regulation of the citric acid cycle and mentions alpha-lipoic acid, but reports no genotype-dependent pharmacokinetic or pharmacodynamic parameter for thioctic acid. |
-| PGx | Walimbe_2025 | not_relevant | 0 | 0 | The paper describes SLC5A6 deficiency and clinical response to lipoic acid supplementation but reports no pharmacokinetic or pharmacodynamic parameter of thioctic acid or fitted genotype effect size. |
-| popPK | Wang_2013 | irrelevant | 0 | 0 | This is a cellular oxidative-stress study, not a pharmacokinetic study, and reports no thioctic-acid disposition parameters. |
-| PGx | Wang_2013 | not_relevant | 0 | 0 | The paper does not study thioctic_acid pharmacokinetics or pharmacodynamics, nor report effects of genetic variants, genotypes, or phenotypes on PK/PD parameters. |
-| popPK | Zhang_2021 | irrelevant | 0 | 0 | This antiviral cell and fish efficacy study reports EC50 and CC50 but no quantitative pharmacokinetic disposition parameters for thioctic acid. |
+| PGx | Peng_2004 | not_relevant | 0 | 0 | The paper investigates the metabolism of flunitrazepam, not thioctic acid. |
+| PGx | Saito_2018 | not_relevant | 0 | 0 | The paper discusses alpha-lipoic acid (not thioctic acid) and mentions an HLA association with an adverse event (insulin autoimmune syndrome), but does not report a pharmacogenomic effect on PK or PD parameters of thioctic acid. |
+| PGx | Schauer_2025 | not_relevant | 0 | 0 | The study investigates the effect of a liver support supplement (containing alpha-lipoic acid) on urinary biomarkers and does not report pharmacokinetic or pharmacodynamic parameters of thioctic acid itself. |
+| PGx | Talaverón-Rey_2023 | not_relevant | 0 | 0 | The paper investigates the therapeutic mechanism of alpha-lipoic acid in cellular models of PKAN, not the pharmacokinetics or pharmacodynamics of the drug itself in relation to genetic variants. |
+| PGx | Torchia_2025 | not_relevant | 0 | 0 | The paper discusses ifosfamide-induced encephalopathy and mentions alpha lipoic acid (thioctic acid) only as a preclinical agent, without reporting any pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Venkatraman_2004 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacological activity (PPARgamma agonism, anti-inflammatory effects) of novel alpha-lipoic acid derivatives, not the pharmacokinetics of thioctic acid itself. |
+| PGx | Vesnina_2026 | not_relevant | 0 | 0 | The paper is a review of citric acid cycle genetics and nutrigenetics, mentioning alpha-lipoic acid only as a nutrient affecting TCA cycle regulation, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Walimbe_2025 | not_relevant | 0 | 0 | The paper describes a transporter deficiency affecting the absorption of lipoic acid (thioctic acid) but does not report quantitative pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, EC50) or fitted effect sizes for the drug. |
+| popPK | Wang_2013 | irrelevant | 0 | 0 | The paper is a mechanistic cell biology study on peroxisomal oxidative stress and does not report pharmacokinetic parameters for thioctic acid. |
+| PGx | Wang_2013 | not_relevant | 0 | 0 | The paper discusses peroxisomal and mitochondrial oxidative stress mechanisms and does not mention thioctic acid or any pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Zhang_2021 | irrelevant | 0 | 0 | The study investigates the antiviral mechanism of alpha-lipoic acid in fish cells and animals, reporting no pharmacokinetic parameters (CL, V, ka, etc.). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 09:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 12:00 UTC</sub>

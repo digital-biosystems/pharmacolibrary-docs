@@ -4,7 +4,7 @@
 
 # avatrombopag — `Avatrombopag_Liu2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — avatrombopag: CL/F 7.85 L/h, V/F 199 L, kabs 0.582 /h, MTT 1.33 h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has avatrombopag, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:14.992274+00:00) predates the upstream re-run (2026-10-05 17:23:36.818827+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
   ·  DOI: [10.3390/ph18060903](https://doi.org/10.3390/ph18060903)
 
 ## Model component
-<dbs-pgx drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="avatrombopag" model-id="Avatrombopag_Liu2025v2_reference" status="needs_review" stale="true" population="healthy Chinese adults" measured-compound="avatrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -41,10 +43,10 @@ Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 7.85 | L/h | 2.1805555555555555e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row2:col1 | — | not captured |
-| Vd/F (L) | `Q76` · V/F | 199 | L | 0.199 | [l] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row3:col1 | — | not captured |
-| ka (/h) | `Q49` · kabs | 0.582 | /h | 0.00016166666666666665 | [1] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row4:col1 | — | not captured |
-| MTT (h) | `Q81` · MTT | 1.33 | h | not captured | [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row5:col1 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 7.85 | L/h | 2.1805555555555555e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row2:col1 | — | 0.182 (None% RSE) |
+| Vd/F (L) | `Q76` · V/F | 199 | L | 0.199 | [l] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row3:col1 | — | 0.159 (None% RSE) |
+| ka (/h) | `Q49` · kabs | 0.582 | /h | 0.00016166666666666665 | [1] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row4:col1 | — | 0.504 (None% RSE) |
+| MTT (h) | `Q81` · MTT | 1.33 | h | not captured | [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row5:col1 | — | 0.131 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,14 +56,14 @@ Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'CL/F' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'Vd/F' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'KA' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'MTT' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'OCC [KA]' routed out of structural estimates ('Between-subject variability')
 - dropped unlinked row (NIL): 'COV1 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row6:col1'])
 - dropped unlinked row (NIL): 'COV2 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row7:col1'])
 - dropped unlinked row (NIL): 'COV3 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row8:col1'])
-- dropped duplicate Q27 ('CL/F', value '0.182') — already have one for this compound
-- dropped duplicate Q76 ('Vd/F', value '0.159') — already have one for this compound
-- dropped duplicate Q49 ('KA', value '0.504') — already have one for this compound
-- dropped duplicate Q81 ('MTT', value '0.131') — already have one for this compound
-- dropped duplicate Q49 ('OCC [KA]', value '0.913') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=avatrombopag
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -98,14 +100,21 @@ Liu X et al., Investigation of the, Pharmaceuticals (Basel, Swi… (2025)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | avatrombopag | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | avatrombopag | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -162,4 +171,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 19:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:23 UTC</sub>

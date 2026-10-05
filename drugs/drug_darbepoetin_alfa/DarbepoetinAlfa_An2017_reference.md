@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;An_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Jeon2021_reference&quot;,&quot;label&quot;:&quot;Jeon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Jeon2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # darbepoetin alfa — `DarbepoetinAlfa_An2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,19 +21,21 @@
 
 The absorption rate constant kabs, meaning a first-order absorption rate constant, is given with the unit L/h, which does not match the dimension of a rate constant (per time), so the structural parameter failed the dimension check. The record was also built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned no value for either parameter (clearance 0.05 L/h/kg and kabs 0.062 L/h), disagreeing with both extracted values. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the clearance of darbe: this record has 0.05, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:31.439964+00:00) predates the upstream re-run (2026-10-05 20:54:55.670913+00:00). Current validate status: `rejected`.
 
 ## Citation
 An G et al., Population Pharmacokinetics of Darbepoe…, Journal of pharmaceutical s… (2017)
   ·  DOI: [10.1016/j.xphs.2017.02.001](https://doi.org/10.1016/j.xphs.2017.02.001)
 
 ## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="false" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="true" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,8 +44,9 @@ An G et al., Population Pharmacokinetics of Darbepoe…, Journal of pharmaceutic
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The clearance of Darbe | `Q22` · CL | 0.05 | L/h/kg | 9.722222222222224e-07 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | An_2017:abstract, An_2017:abstract | — | not captured |
-| the estimated absorption rate (i.e., ka) of Darbe | `Q49` · kabs | 0.062 | L/h | not captured | [l] / [h] | not captured | llm_confirmed (0.6) | An_2017:abstract | — | not captured |
+| clearance of Darbe | `Q22` · CL | 0.05 | L/h/kg | 9.722222222222224e-07 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | An_2017:abstract, An_2017:abstract | — | not captured |
+| absorption rate (i.e., ka) of Darbe | `Q49` · kabs | 0.062 | L/h | not captured | [l] / [h] | not captured | llm_confirmed (0.6) | An_2017:abstract | — | not captured |
+| Vz (L) | `Q61` · V | 16.23 | L | 0.01623 | L | not captured | review_gapfill (0.7) | Jeon_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,12 +56,14 @@ An G et al., Population Pharmacokinetics of Darbepoe…, Journal of pharmaceutic
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'the estimated absorption rate (i.e., ka) of Darbe' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (The clearance of Darbe)
+- unit_dimension_mismatch: 'absorption rate (i.e., ka) of Darbe' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (clearance of Darbe)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=darbepoetin_alfa
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'darbepoetin_alfa' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q61 (V) from Jeon_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -73,14 +78,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[the clearance of darbe]` | 0.05 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[the estimated absorption rate (i.e., ka) of darbe]` | 0.062 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate (i.e., ka) of darbe]` | 0.062 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate (i.e., ka) of darbe]` | not captured | 0.062 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance of darbe]` | 0.05 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance of darbe]` | not captured | 0.05 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | darbepoetin_alfa | unknown | mismatch |
 
 </details>
 
@@ -99,9 +108,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['An_2017:abstract', 'An_2017:abstract'] |
 | C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['An_2017:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jeon_2021:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.05 | not captured | not captured | ['An_2017:abstract', 'An_2017:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.5 L/h | not captured | not captured | ['An_2017:abstract', 'An_2017:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 16.2 L | not captured | not captured | ['Jeon_2021:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -126,4 +137,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 00:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:54 UTC</sub>

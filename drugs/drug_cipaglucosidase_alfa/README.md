@@ -17,20 +17,11 @@ Cipaglucosidase alfa is an enzyme therapy used to treat glycogen storage disease
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:25 | 0:47 | 0/0/0 | 1/0/0 | 0/0/0 | 1,908/166 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/6 | 4/1 | 0 |
+| 2026-10-05 11:14 | 1:34 | 0/0/0 | 0/0/0 | 0/0/0 | 59,529/1,310 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/6 | 4/1 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Byrne_2024_2_CK](drugs/drug_cipaglucosidase_alfa/pd_Byrne_2024_2_CK.md) | serum creatine kinase ← cipaglucosidase alfa (rhGAA) · direct Emax (saturable) effect | — | Byrne BJ et al., Cipaglucosidase alfa plus miglustat: li…, Frontiers in neurology (2024) | [10.3389/fneur.2024.1451512](https://doi.org/10.3389/fneur.2024.1451512) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Byrne_2024_2_Hex4](drugs/drug_cipaglucosidase_alfa/pd_Byrne_2024_2_Hex4.md) | urinary Hex4 ← cipaglucosidase alfa (rhGAA) · direct Emax (saturable) effect | — | Byrne BJ et al., Cipaglucosidase alfa plus miglustat: li…, Frontiers in neurology (2024) | [10.3389/fneur.2024.1451512](https://doi.org/10.3389/fneur.2024.1451512) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Byrne_2024_2_Kuptake](drugs/drug_cipaglucosidase_alfa/pd_Byrne_2024_2_Kuptake.md) | intracellular GAA enzyme activity uptake ← cipaglucosidase alfa (rhGAA) · direct Emax (saturable) effect | — | Byrne BJ et al., Cipaglucosidase alfa plus miglustat: li…, Frontiers in neurology (2024) | [10.3389/fneur.2024.1451512](https://doi.org/10.3389/fneur.2024.1451512) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Byrne_2024_2_muscle_glycogen_content](drugs/drug_cipaglucosidase_alfa/pd_Byrne_2024_2_muscle_glycogen_content.md) | muscle glycogen content ← cipaglucosidase alfa (rhGAA) · direct Emax (saturable) effect | — | Byrne BJ et al., Cipaglucosidase alfa plus miglustat: li…, Frontiers in neurology (2024) | [10.3389/fneur.2024.1451512](https://doi.org/10.3389/fneur.2024.1451512) |
 
 ## ADME sites
 
@@ -60,25 +51,25 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Anding_2023 | irrelevant | 0 | 0 | The study focuses on alglucosidase alfa and avalglucosidase alfa, not cipaglucosidase alfa, and does not report quantitative PK parameters for the target drug. |
-| popPK | Byrne_2024 | relevant | 4 | 2 | The paper reports PK parameters (AUC, half-life) for cipaglucosidase alfa, but the specific numeric values are located in Supplementary Section S2 which is not provided in the evidence. |
+| popPK | Anding_2023 | irrelevant | 0 | 0 | The study focuses on alglucosidase alfa and avalglucosidase alfa, not cipaglucosidase alfa, and does not report PK parameters for the target drug. |
+| popPK | Byrne_2024 | relevant | 8 | 2 | The paper reports population PK analysis and half-life changes for cipaglucosidase alfa, but specific numeric parameter values (CL, V, Q) are located in the supplementary material which is not provided. |
 | PD | Byrne_2024 | not_relevant | 2 | 1 | The paper reports descriptive changes in pharmacodynamic biomarkers (CK, Hex4) and efficacy endpoints over time, but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Byrne_2024_2 | irrelevant | 2 | 1 | The paper is a mechanistic review that discusses PK concepts and cites specific values (e.g., half-life, AUC changes) from other studies, but it does not report original quantitative disposition parameters (CL, V, Q, ka) or a compartmental model for cipaglucosidase alfa. |
-| popPK | Corsini_2025 | irrelevant | 0 | 0 | The paper is a review of enzyme replacement therapy strategies for Pompe disease and does not report original quantitative pharmacokinetic parameters for cipaglucosidase alfa. |
-| popPK | Han_2016 | irrelevant | 0 | 0 | The study focuses on the efficacy of enzyme replacement therapy (rhGAA) in mice and does not report pharmacokinetic parameters for cipaglucosidase_alfa. |
-| popPK | Lim_2017 | irrelevant | 0 | 0 | The study focuses on immune tolerance and efficacy in mice using rhGAA (not cipaglucosidase_alfa) and does not report pharmacokinetic parameters. |
-| popPK | Masat_2016 | irrelevant | 0 | 0 | The paper focuses on the immunogenicity (antibody titers, T-cell responses) of Myozyme (rhGAA) in Pompe disease, not the pharmacokinetics of cipaglucosidase alfa. |
-| popPK | Mendelsohn_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting functional and respiratory outcomes (FVC, 6MWT) rather than pharmacokinetic parameters (CL, V, ka) for cipaglucosidase alfa. |
-| popPK | Nowlin_2026 | irrelevant | 0 | 0 | The study investigates focused ultrasound delivery of enzyme replacement therapy (alglucosidase alfa/avalglucosidase alfa) in mice and does not report pharmacokinetic parameters for cipaglucosidase alfa. |
-| popPK | Roberts_2025 | irrelevant | 0 | 0 | The paper is an indirect treatment comparison of efficacy outcomes (FVC, 6MWT) and does not report pharmacokinetic parameters for cipaglucosidase_alfa. |
+| popPK | Byrne_2024_2 | irrelevant | 4 | 2 | The paper is a mechanistic review that cites PK parameters (half-life, AUC) from other studies but does not report original quantitative compartmental PK model parameters (CL, V, Q) for cipaglucosidase alfa. |
+| popPK | Corsini_2025 | irrelevant | 0 | 0 | The paper is a review of treatment strategies for Pompe disease and does not report quantitative pharmacokinetic parameters for cipaglucosidase alfa. |
+| popPK | Han_2016 | irrelevant | 0 | 0 | The study investigates the effect of propranolol on the efficacy of enzyme replacement therapy (rhGAA) in mice, focusing on therapeutic outcomes (weight, glycogen) rather than reporting quantitative pharmacokinetic parameters (CL, V, t1/2) for cipaglucosidase_alfa. |
+| popPK | Lim_2017 | irrelevant | 0 | 0 | The study focuses on immune tolerance and efficacy in GAA-KO mice, not the pharmacokinetic disposition parameters of cipaglucosidase_alfa. |
+| popPK | Masat_2016 | irrelevant | 0 | 0 | The paper studies the immunogenicity of Myozyme (alglucosidase alfa) in Pompe disease, not the pharmacokinetics of cipaglucosidase alfa. |
+| popPK | Mendelsohn_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting functional and respiratory outcomes (FVC, 6MWT) rather than pharmacokinetic parameters (CL, V, t1/2) for cipaglucosidase alfa. |
+| popPK | Nowlin_2026 | irrelevant | 0 | 0 | The study investigates the delivery of alglucosidase alfa and avalglucosidase alfa (not cipaglucosidase alfa) in mice and reports histological/biochemical outcomes rather than quantitative pharmacokinetic parameters. |
+| popPK | Roberts_2025 | irrelevant | 0 | 0 | The paper is an indirect treatment comparison of efficacy outcomes (FVC, 6MWT) and does not report any pharmacokinetic parameters for cipaglucosidase alfa. |
 | PD | Roberts_2025 | not_relevant | 0 | 0 | The paper is an indirect treatment comparison of clinical efficacy outcomes (FVC, 6MWT) and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters. |
-| popPK | Schneider_2018 | irrelevant | 0 | 0 | The study focuses on recombinant human acid alpha-glucosidase (rhGAA) for Pompe disease, not cipaglucosidase alfa (which is for Fabry disease), and no quantitative PK parameters are provided. |
-| PGx | Schoser_2021 | not_relevant | 0 | 0 | The paper reports a clinical trial comparing two treatments for Pompe disease but does not analyze how specific gene variants or genotypes affect the pharmacokinetics or pharmacodynamics of cipaglucosidase alfa. |
-| popPK | Schoser_2026 | irrelevant | 0 | 0 | The paper is a clinical position statement regarding therapeutic stability corridors in Pompe disease and reports clinical efficacy outcomes (FVC, 6MWT) rather than pharmacokinetic parameters (CL, V, ka) for cipaglucosidase alfa. |
-| PGx | Schoser_2026 | not_relevant | 0 | 0 | The paper defines clinical stability thresholds for Pompe disease treatment but does not report pharmacogenomic effects on PK or PD parameters. |
-| popPK | Thurberg_2006 | irrelevant | 0 | 0 | The paper is a histopathological study of Pompe disease treatment and does not report any pharmacokinetic parameters for cipaglucosidase_alfa. |
-| popPK | Zhu_2004 | irrelevant | 0 | 0 | The paper studies recombinant human acid alpha-glucosidase (rhGAA), not cipaglucosidase alfa, and focuses on glycogen clearance rather than quantitative PK parameters. |
-| popPK | Zhu_2009 | irrelevant | 0 | 0 | The paper focuses on the efficacy of a glycoengineered enzyme (rhGAA) in a mouse model and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for cipaglucosidase_alfa. |
+| popPK | Schneider_2018 | irrelevant | 0 | 0 | The study investigates recombinant human acid alpha-glucosidase (rhGAA) for Pompe disease, not cipaglucosidase alfa (which is for Fabry disease). |
+| PGx | Schoser_2021 | not_relevant | 0 | 0 | The paper reports a clinical trial comparing two treatments for Pompe disease but does not analyze how specific gene variants or genotypes alter the pharmacokinetic or pharmacodynamic parameters of cipaglucosidase alfa. |
+| popPK | Schoser_2026 | irrelevant | 0 | 0 | The paper is a clinical position statement regarding therapeutic stability thresholds (FVC, 6MWT) for Pompe disease treatments and does not report pharmacokinetic parameters (CL, V, ka) for cipaglucosidase alfa. |
+| PGx | Schoser_2026 | not_relevant | 0 | 0 | The paper discusses clinical therapeutic stability thresholds for Pompe disease treatments but does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Thurberg_2006 | irrelevant | 0 | 0 | The study is a histopathological analysis of muscle biopsies in Pompe disease patients and does not report any pharmacokinetic parameters for cipaglucosidase alfa. |
+| popPK | Zhu_2004 | irrelevant | 0 | 0 | The study focuses on the efficacy of a modified enzyme (neo-rhGAA) for glycogen clearance in Pompe mice, not on the pharmacokinetic parameters (CL, V, etc.) of cipaglucosidase alfa. |
+| popPK | Zhu_2009 | irrelevant | 0 | 0 | The study focuses on the efficacy of a glycoengineered enzyme in a mouse model of Pompe disease and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for cipaglucosidase_alfa. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

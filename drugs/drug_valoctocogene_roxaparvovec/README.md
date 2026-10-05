@@ -17,19 +17,13 @@ Valoctocogene roxaparvovec is a gene therapy used to treat hemophilia A. It is a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 23:17 | 1:46 | 0/1/0 | 0/1/0 | 0/0/0 | 77,413/1,693 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/8 | 10/0 | 0 |
+| 2026-10-05 20:00 | 1:21 | 0/1/0 | 0/0/0 | 0/0/0 | 51,995/552 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/8 | 10/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | — | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cao_2025_IgG](drugs/drug_valoctocogene_roxaparvovec/pd_Cao_2025_IgG.md) | IgG ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | — | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## ADME sites
 
@@ -55,7 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 6 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -64,16 +58,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mahlangu_2023.pdf` | Mahlangu J et al., Two-Year Outcomes of Valoctocogene Roxa…, The New England journal of… (2023) | popPK | 8 | [10.1056/NEJMoa2211075](https://doi.org/10.1056/NEJMoa2211075) | [36812433](https://pubmed.ncbi.nlm.nih.gov/36812433) | The paper reports a population PK model for valoctocogene roxaparvovec with a specific numeric half-life (123 weeks) for the transgene-derived factor VIII production system, though other detailed parameters like clearance or volume are not explicitly listed in the text. |
+| `Mahlangu_2023.pdf` | Mahlangu J et al., Two-Year Outcomes of Valoctocogene Roxa…, The New England journal of… (2023) | popPK | 8 | [10.1056/NEJMoa2211075](https://doi.org/10.1056/NEJMoa2211075) | [36812433](https://pubmed.ncbi.nlm.nih.gov/36812433) | The paper reports a population PK model for the transgene-derived factor VIII (the product of the gene therapy) with a specific half-life value (123 weeks), which is the primary pharmacokinetic parameter for this gene therapy. |
 
-<sub>queue written 2026-09-18T23:17:07.829442+00:00</sub>
+<sub>queue written 2026-10-05T20:00:10.213979+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Agarwal_2024 | irrelevant | 2 | 1 | The study reports vector DNA biodistribution and shedding kinetics (clearance times, peak concentrations) rather than standard pharmacokinetic parameters (CL, V, ka) for the drug, and no compartmental PK model is presented. |
-| popPK | Cao_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not valoctocogene roxaparvovec, which is only mentioned as a context for AAV gene therapy. |
+| popPK | Agarwal_2024 | irrelevant | 2 | 1 | The study reports vector DNA biodistribution and shedding kinetics (clearance times, peak concentrations) rather than standard pharmacokinetic parameters (CL, V, ka) for the drug substance or its therapeutic protein product. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not valoctocogene roxaparvovec. |
 | popPK | Long_2019 | irrelevant | 2 | 0 | The study reports pharmacodynamic parameters (FVIII-SQ Cmax and AUC) rather than pharmacokinetic disposition parameters (CL, V, ka) for the vector or transgene. |
 | popPK | Long_2021 | irrelevant | 0 | 0 | The paper focuses exclusively on immunogenicity (antibody titers and cellular responses) and does not report pharmacokinetic parameters such as clearance, volume, or half-life for valoctocogene roxaparvovec. |
 | popPK | Long_2024 | irrelevant | 0 | 0 | The paper focuses on immunogenicity (antibodies and cellular immune responses) and safety outcomes, not pharmacokinetic disposition parameters like clearance or volume. |
@@ -84,4 +78,4 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Suoranta_2022 | irrelevant | 0 | 0 | The paper is a review on AAV vector safety and engineering strategies, containing no pharmacokinetic data or quantitative disposition parameters for valoctocogene roxaparvovec. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 23:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 20:00 UTC</sub>

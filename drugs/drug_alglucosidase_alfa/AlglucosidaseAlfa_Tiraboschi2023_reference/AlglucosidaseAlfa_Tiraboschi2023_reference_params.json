@@ -1,14 +1,9 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 100 mg parenteral (A16AB07)",
  "model_id": "AlglucosidaseAlfa_Tiraboschi2023_reference",
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  1400.0,
-  2800.0
  ],
  "parameters": {
   "Cl": 2.175e-07,
@@ -16,14 +11,14 @@
   "VdPerKg": 4.7e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0014,
+  "adminMass": 0.0001,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662048
+  "central.C": 660.0000000662046
  },
  "reference_peaks": {
-  "central.C": 0.4172029013624408
+  "central.C": 0.029800207716521383
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

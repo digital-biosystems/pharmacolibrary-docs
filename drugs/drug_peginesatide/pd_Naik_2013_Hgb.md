@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;peginesatide&quot;,&quot;href&quot;:&quot;drugs/drug_peginesatide/&quot;},{&quot;label&quot;:&quot;Naik_2013 \u00b7 PD hemoglobin&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# hemoglobin — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+# hemoglobin — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Peginesatide (concentrations from this paper's PK model) drives hemoglobin (in g/dL): indirect response — drug inhibits the loss of hemoglobin.
+**As extracted:** Peginesatide (concentrations from this paper's PK model) drives hemoglobin (in g/dL): indirect response — drug stimulates the production of hemoglobin.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
-> Peginesatide plasma concentrations (ng/mL) stimulate the endogenous production rate of progenitor cells, modeled with a modified precursor-dependent lifespan indirect response model of hemoglobin (g/dL), with EC50 401 ng/mL (bootstrap median 417 ng/mL, 95% CI 128 ng/mL), baseline hemoglobin 11.5 g/dL, mean transit time for progenitor cells 462 h and for red blood cells 1640 h (red cell life span ~67.5 days); the paper does not state the Emax value for peginesatide in the excerpts.
+> Peginesatide plasma concentrations (ng/mL) stimulate the endogenous production rate of red blood cell progenitor cells via a modified precursor-dependent lifespan indirect response model, with an estimated EC50 of 401 ng/mL and a maximum effect (Emax) of 0.542. The model incorporates a mean transit time for progenitor cells of 462 hours and for red blood cells of 1640 hours, alongside a baseline hemoglobin of 11.5 g/dL.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Naik_2013`
-- **model family:** `indirect_response_ii`
+- **model family:** `indirect_response_iii`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
@@ -34,70 +34,21 @@ Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Final Estimate (% SEM) | `Q321` · not captured | 401 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col1 |
-| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Median Bootstrap Estimate | `Q321` · not captured | 417 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col2 |
-| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Bootstrap 95% CI1 | `Q321` · not captured | 128 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col3 |
-| PD (effect) | Hemoglobin at baseline, in g/dL — Final Estimate (% SEM) | `Q324` · not captured | 11.5 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row3:col1 |
-| — | Hemoglobin at baseline, in g/dL — Median Bootstrap Estimate | `Q100` · not captured | 11.5 | not captured | not captured | llm_corrected (not captured) | pone-0066422-t007:row3:col2 |
-| — | Hemoglobin at baseline, in g/dL — Bootstrap 95% CI1 | `Q100` · not captured | 11.4 | not captured | not captured | llm_corrected (not captured) | pone-0066422-t007:row3:col3 |
-| PK (driver) | Mean transit time for red blood cells (MTT),in hours — Final Estimate (% SEM) | `Q81` · not captured | 1640 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col1 |
-| PK (driver) | Mean transit time for red blood cells (MTT),in hours — Median Bootstrap Estimate | `Q81` · not captured | 1610 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col2 |
-| PK (driver) | Mean transit time for red blood cells (MTT),in hours — Bootstrap 95% CI1 | `Q81` · not captured | 1330 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col3 |
-| PK (driver) | Mean transit time for progenitor cells (MTP),in hours — Final Estimate (% SEM) | `Q81` · not captured | 462 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col1 |
-| PK (driver) | Mean transit time for progenitor cells (MTP),in hours — Median Bootstrap Estimate | `Q81` · not captured | 447 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col2 |
-| PK (driver) | Mean transit time for progenitor cells (MTP),in hours — Bootstrap 95% CI1 | `Q81` · not captured | 348.4 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col3 |
-| PD (effect) | ω2 on EC50 — Final Estimate (% SEM) | `Q321` · not captured | 8.92 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col1 |
-| PD (effect) | ω2 on EC50 — Median Bootstrap Estimate | `Q321` · not captured | 9.47 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col2 |
-| PD (effect) | ω2 on EC50 — Bootstrap 95% CI1 | `Q321` · not captured | 3.61 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col3 |
-| variability | ω2 on BL Hgb — Final Estimate (% SEM) | `Q312` · not captured | 0.00485 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col1 |
-| variability | ω2 on BL Hgb — Median Bootstrap Estimate | `Q312` · not captured | 0.00476 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col2 |
-| variability | ω2 on BL Hgb — Bootstrap 95% CI1 | `Q312` · not captured | 0.00393 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col3 |
-| variability | ω2 on CF — Final Estimate (% SEM) | `Q312` · not captured | 10.6 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col1 |
-| variability | ω2 on CF — Median Bootstrap Estimate | `Q312` · not captured | 11.6 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col2 |
-| variability | ω2 on CF — Bootstrap 95% CI1 | `Q312` · not captured | 7.244 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col3 |
-| variability | σ2 (additive component) — Final Estimate (% SEM) | `Q315` · not captured | 0.00478 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col1 |
-| variability | σ2 (additive component) — Median Bootstrap Estimate | `Q315` · not captured | 0.00475 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col2 |
-| variability | σ2 (additive component) — Bootstrap 95% CI1 | `Q315` · not captured | 0.0044 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col3 |
+| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50) | `Q321` · not captured | 401 | ng/mL | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Maximum pharmacologic effect (Emax) | `Q320` · not captured | 0.542 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Hemoglobin at baseline | `Q324` · not captured | 11.5 | g/dL | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Mean transit time for red blood cells (MTT) | `Q338` · not captured | 1640 | hours | not captured | llm (not captured) | Naik_2013:pdv3 |
+| PD (effect) | Mean transit time for progenitor cells (MTP) | `Q338` · not captured | 462 | hours | not captured | llm (not captured) | Naik_2013:pdv3 |
+| model term | Residual effect of previous erythropoiesisstimulating agent dose (RSA) | `Q900` · not captured | 0.153 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| model term | Correction factor (CF) | `Q900` · not captured | 2.75E–4 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| variability | ω2 on EC50 | `Q312` · not captured | 8.92 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| variability | ω2 on BL Hgb | `Q312` · not captured | 0.00485 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
+| variability | ω2 on RSA Effect | `Q312` · not captured | 0.0130 | not captured | not captured | llm (not captured) | Naik_2013:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Peginesatide_Naik2013_PD_hgb` — turnover (indirect response type II), `response = E0/(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 11.5 g/dL | 115 kg/m3 |
-| Emax | 1 | — |
-| EC50 | 401 ng/mL | 0.000401 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 115, `at_EC50` = 230, `at_inf` = inf
-
-Deviations:
-
-- `defaulted_parameters` — Emax, gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | effect_direction 'stimulation' |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: Emax |
-
-Advisory:
-
-- defaulted: Emax — a row the paper has and the record lacks
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -131,14 +82,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_modelica.zip" download>Peginesatide_Naik2013_PD_hgb_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_matlab.zip" download>Peginesatide_Naik2013_PD_hgb_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_sbml.zip" download>Peginesatide_Naik2013_PD_hgb_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_peginesatide/Peginesatide_Naik2013_PD_hgb/Peginesatide_Naik2013_PD_hgb_cellml.zip" download>Peginesatide_Naik2013_PD_hgb_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

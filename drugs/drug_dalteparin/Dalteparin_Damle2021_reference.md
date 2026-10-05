@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dalteparin&quot;,&quot;href&quot;:&quot;drugs/drug_dalteparin/&quot;},{&quot;label&quot;:&quot;Damle_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dalteparin_Schoemaker1996_reference&quot;,&quot;label&quot;:&quot;Schoemaker_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dalteparin/Dalteparin_Schoemaker1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dalteparin — `Dalteparin_Damle2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -20,7 +21,11 @@
 
 The record describes dalteparin in pediatric venous thromboembolism patients with a two-compartment structure, first-order absorption (kabs = 1.04 1/h) and clearance CL/F = 929 mL/h. The volume parameter V2/F = 7180 mL is defined as the volume of the peripheral compartment, but the model structure leaves that compartment without a path from the dose, making it an orphan compartment. No other failed checks or builder deviations are reported. Extracted — dalteparin: CL/F 929, V2/F 7.18e+03, kabs 1.04, V/F 1.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading dalteparin → anti-xa (none). That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:27.644184+00:00) predates the upstream re-run (2026-10-05 14:09:39.459714+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `dalteparin`, measured `anti-Xa`.
 
@@ -29,22 +34,19 @@ Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical p
   ·  DOI: [10.1002/jcph.1716](https://doi.org/10.1002/jcph.1716)
 
 ## Model component
-<dbs-pgx drug="dalteparin" model-id="Dalteparin_Damle2021_reference" status="rejected" stale="false" population="pediatric patients with venous thromboembolism" measured-compound="anti-Xa" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="dalteparin" model-id="Dalteparin_Damle2021_reference" status="extracted" stale="true" population="pediatric patients with venous thromboembolism" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
-**Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F θ1, mL/h | `Q27` · CL/F | 929 | not captured | not captured | not captured | 9.41 | llm_confirmed (0.6) | jcph1716-tbl-0002:row1:col1, jcph1716-tbl-0002:row1:col2, jcph1716-tbl-0002:row1:col3 | — | 0.0369 (67.5% RSE) |
-| V/F θ2, mL | `Q82` · V2/F | 7180 | not captured | not captured | not captured | 15 | llm_corrected (0.6) | jcph1716-tbl-0002:row2:col1, jcph1716-tbl-0002:row2:col2, jcph1716-tbl-0002:row2:col3 | — | not captured |
-| Ka θ3, 1/h | `Q49` · kabs | 1.04 | not captured | not captured | not captured | 71.8 | llm_confirmed (0.6) | jcph1716-tbl-0002:row3:col1, jcph1716-tbl-0002:row3:col2, jcph1716-tbl-0002:row3:col3 | — | not captured |
-| WT in V/F θ7 | `Q76` · V/F | 1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | jcph1716-tbl-0002:row6:col1 | — | 1.73 (69.4% RSE) |
+| CL/F θ1, mL/h | `Q27` · CL/F | 929 | mL/h | 2.580555555555555e-07 | [ml] / [h] | 9.41 | llm_confirmed (0.6) | jcph1716-tbl-0002:row1:col1, jcph1716-tbl-0002:row1:col2, jcph1716-tbl-0002:row1:col3 | — | 0.0369 (67.5% RSE) |
+| V/F θ2, mL | `Q76` · V/F | 7180 | mL | 0.00718 | [ml] | 15 | llm_confirmed (0.6) | jcph1716-tbl-0002:row2:col1, jcph1716-tbl-0002:row2:col2, jcph1716-tbl-0002:row2:col3 | — | 1.73 (69.4% RSE) |
+| Ka θ3, 1/h | `Q49` · kabs | 1.04 | 1/h | 0.0002888888888888889 | [1] / [h] | 71.8 | llm_confirmed (0.6) | jcph1716-tbl-0002:row3:col1, jcph1716-tbl-0002:row3:col2, jcph1716-tbl-0002:row3:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,12 +56,16 @@ Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical p
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'WT in CL/F θ6' — extend the ontology if this is a real PK parameter (source ['jcph1716-tbl-0002:row5:col1'])
+- dropped duplicate Q27 ('WT in CL/F θ6', value '0.75') — already have one for this compound
+- dropped duplicate Q76 ('WT in V/F θ7', value '1') — already have one for this compound
 - dropped value-less row: 'AGE in CL/F θ8'
 - dropped unlinked row (NIL): 'SEX = 1 in CL/F θ14' — extend the ontology if this is a real PK parameter (source ['jcph1716-tbl-0002:row8:col1', 'jcph1716-tbl-0002:row8:col2', 'jcph1716-tbl-0002:row8:col3'])
 - dropped duplicate Q27 ('CANCERST = 1 in CL/F θ15', value '0.885') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=anti-Xa
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- molar mass: no plausible PubChem entry for 'anti-Xa' ('anti-Xa') — left in mass units
+- molar mass: none found for 'dalteparin' — its concentrations stay mass-only
+- molar mass: none found for 'anti-Xa' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'anti-Xa', not dalteparin — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell jcph1716-tbl-0002:row1:col4 = '913 (770‐1080)'
@@ -78,19 +84,41 @@ Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical p
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.9 (9/10 fields) | 1 |
+
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['dalteparin', 'anti-xa', 'none']] | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1716-tbl-0002:row1:col1', 'jcph1716-tbl-0002:row1:col2', 'jcph1716-tbl-0002:row1:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['jcph1716-tbl-0002:row3:col1', 'jcph1716-tbl-0002:row3:col2', 'jcph1716-tbl-0002:row3:col3'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['jcph1716-tbl-0002:row6:col1'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | not captured | not captured | not captured | ['jcph1716-tbl-0002:row2:col1', 'jcph1716-tbl-0002:row2:col2', 'jcph1716-tbl-0002:row2:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1716-tbl-0002:row1:col1', 'jcph1716-tbl-0002:row1:col2', 'jcph1716-tbl-0002:row1:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph1716-tbl-0002:row3:col1', 'jcph1716-tbl-0002:row3:col2', 'jcph1716-tbl-0002:row3:col3'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1716-tbl-0002:row2:col1', 'jcph1716-tbl-0002:row2:col2', 'jcph1716-tbl-0002:row2:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.929 L/h | not captured | not captured | ['jcph1716-tbl-0002:row1:col1', 'jcph1716-tbl-0002:row1:col2', 'jcph1716-tbl-0002:row1:col3'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 7.18 L | not captured | not captured | ['jcph1716-tbl-0002:row2:col1', 'jcph1716-tbl-0002:row2:col2', 'jcph1716-tbl-0002:row2:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -104,9 +132,19 @@ Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical p
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab.zip" download>Dalteparin_Damle2021_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab_simbio.zip" download>Dalteparin_Damle2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_sbml.zip" download>Dalteparin_Damle2021_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_cellml.zip" download>Dalteparin_Damle2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -115,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 18:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:09 UTC</sub>

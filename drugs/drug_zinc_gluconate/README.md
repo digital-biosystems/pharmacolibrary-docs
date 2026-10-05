@@ -18,21 +18,11 @@ Zinc gluconate is a zinc supplement used for the common cold. It is an approved 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 01:50 | 8:33 | 0/0/0 | 0/2/0 | 0/0/0 | 51,568/1,961 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 0/13 | 11/2 | 0 |
+| 2026-10-05 10:15 | 4:40 | 0/0/0 | 0/0/0 | 0/0/0 | 164,897/5,451 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 0/13 | 11/2 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Chen_2026_EPO](drugs/drug_zinc_gluconate/pd_Chen_2026_EPO.md) | plasma erythropoietin ← zinc · stimulation effect | — | Chen YH et al., Oyster-derived Zinc Exhibits Superior A…, Biological trace element re… (2026) | [10.1007/s12011-026-05073-x](https://doi.org/10.1007/s12011-026-05073-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Chen_2026_RBC](drugs/drug_zinc_gluconate/pd_Chen_2026_RBC.md) | red blood cell count ← zinc · stimulation effect | — | Chen YH et al., Oyster-derived Zinc Exhibits Superior A…, Biological trace element re… (2026) | [10.1007/s12011-026-05073-x](https://doi.org/10.1007/s12011-026-05073-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Houston_2017_EC50](drugs/drug_zinc_gluconate/pd_Houston_2017_EC50.md) | antiviral plaque reduction (EC50 response) ← pomegranate rind extract (PRE) · inhibition effect | — | Houston DMJ et al., Potentiated virucidal activity of pomeg…, PloS one (2017) | [10.1371/journal.pone.0179291](https://doi.org/10.1371/journal.pone.0179291) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Houston_2017_MTS](drugs/drug_zinc_gluconate/pd_Houston_2017_MTS.md) | viable cell percentage (MTS assay) ← pomegranate rind extract (PRE) · inhibition effect | — | Houston DMJ et al., Potentiated virucidal activity of pomeg…, PloS one (2017) | [10.1371/journal.pone.0179291](https://doi.org/10.1371/journal.pone.0179291) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Houston_2017_log_reduction](drugs/drug_zinc_gluconate/pd_Houston_2017_log_reduction.md) | virucidal log reduction of HSV-1 ← pomegranate rind extract (PRE) · inhibition effect | — | Houston DMJ et al., Potentiated virucidal activity of pomeg…, PloS one (2017) | [10.1371/journal.pone.0179291](https://doi.org/10.1371/journal.pone.0179291) |
 
 ## ADME sites
 
@@ -62,100 +52,100 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Siepmann_2005.pdf` | Siepmann M et al., The pharmacokinetics of zinc from zinc…, International journal of cl… (2005) | popPK | 8 | [10.5414/cpp43562](https://doi.org/10.5414/cpp43562) | [16372518](https://pubmed.ncbi.nlm.nih.gov/16372518) | The study reports PK parameters (Cmax, AUC) for zinc gluconate, but only as relative differences compared to zinc oxide, lacking absolute numeric values for clearance, volume, or half-life. |
+| `Siepmann_2005.pdf` | Siepmann M et al., The pharmacokinetics of zinc from zinc…, International journal of cl… (2005) | popPK | 8 | [10.5414/cpp43562](https://doi.org/10.5414/cpp43562) | [16372518](https://pubmed.ncbi.nlm.nih.gov/16372518) | The study reports quantitative PK parameters (Cmax, AUC, Tmax) for zinc gluconate in humans, but specific clearance or volume values are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-09-30T01:50:07.401013+00:00</sub>
+<sub>queue written 2026-10-05T10:14:46.885069+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akinleye_2025 | irrelevant | 0 | 0 | The study focuses on a matrix metalloproteinase-2 inhibitory peptide fused to elastin-like polypeptide, not zinc_gluconate. |
-| popPK | Ali_2026 | irrelevant | 0 | 0 | The paper is a review of radiolabelled nanoparticles (ZnO, iron oxide, gold) for cancer therapy and does not report pharmacokinetic parameters for the drug zinc_gluconate. |
-| popPK | Alnajar_2021 | irrelevant | 0 | 0 | The paper is an ecotoxicology study on microplastics in mussels, not a pharmacokinetic study of zinc gluconate. |
-| popPK | Alobaid_2025 | irrelevant | 0 | 0 | The paper is an in-vitro materials science study on wound dressings and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Araujo-Lima_2017 | irrelevant | 1 | 0 | The study is explicitly in vitro and in silico, lacking in vivo quantitative disposition parameters (CL, V, etc.) for zinc gluconate. |
-| popPK | Aubeux_2020 | irrelevant | 0 | 0 | The study investigates the release of hydrocortisone acetate from a zinc oxide eugenol sealer, not the pharmacokinetics of zinc gluconate. |
-| popPK | Babcock_1982 | irrelevant | 2 | 0 | The study uses zinc sulfate (ZnSO4) for loading and zinc-65 for tracing, not zinc gluconate, and no specific numeric PK parameters are provided in the text. |
-| popPK | Bauer_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ciliary function and does not report any pharmacokinetic parameters for zinc gluconate. |
+| popPK | Akinleye_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of an MMP-2 inhibitory peptide fusion protein, not zinc gluconate. |
+| popPK | Ali_2026 | irrelevant | 0 | 0 | The paper is a review of radiolabeled nanoparticles (ZnO, iron oxide, gold) for cancer therapy and does not report pharmacokinetic parameters for the drug zinc gluconate. |
+| popPK | Alnajar_2021 | irrelevant | 0 | 0 | The study investigates the toxicological effects of microplastics on mussels and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Alobaid_2025 | irrelevant | 0 | 0 | The paper describes the antimicrobial activity of a silver-zinc nanozeolite wound dressing in an in vitro biofilm model and does not report any pharmacokinetic parameters for zinc gluconate. |
+| popPK | Araujo-Lima_2017 | irrelevant | 1 | 0 | The study uses in vitro and in silico approaches to evaluate toxicology and mutagenicity, not in vivo pharmacokinetic disposition parameters (CL, V, t1/2) for zinc gluconate. |
+| popPK | Aubeux_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of hydrocortisone acetate released from a zinc oxide eugenol sealer, not the drug zinc gluconate. |
+| popPK | Babcock_1982 | irrelevant | 2 | 0 | The study uses zinc sulfate (ZnSO4) and radioactive zinc (Zn-65) rather than zinc gluconate, and no specific numeric PK parameters are provided in the text. |
+| popPK | Bauer_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ciliary beat frequency and PKC activity, not a pharmacokinetic study reporting disposition parameters for zinc gluconate. |
 | popPK | Bayati_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of copper/zinc superoxide dismutase (SOD), not zinc gluconate. |
-| popPK | Bolatimi_2023 | irrelevant | 0 | 0 | The study is a mechanistic in vivo investigation of zinc supplementation's therapeutic effects on NAFLD in mice and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for zinc gluconate. |
-| popPK | Bremner_1977 | irrelevant | 0 | 0 | The paper discusses urinary zinc excretion in thyrotoxicosis but does not report pharmacokinetic parameters (CL, V, ka, etc.) for zinc gluconate. |
-| popPK | Cai_2026 | irrelevant | 0 | 0 | The paper describes a zinc nanoparticle for cancer therapy and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Chaplygina_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial dynamics in cell cultures, not a pharmacokinetic study, and does not report any disposition parameters for zinc gluconate. |
-| popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on bioavailability and anti-anemic efficacy in rats and Caco-2 cells, reporting absorption percentages rather than pharmacokinetic parameters (CL, V, ka) for zinc gluconate, which is used only as a comparator. |
+| popPK | Bolatimi_2023 | irrelevant | 0 | 0 | The study is a mechanistic/therapeutic investigation of zinc supplementation in a disease model and does not report pharmacokinetic parameters (CL, V, ka, etc.) for zinc gluconate. |
+| popPK | Bremner_1977 | irrelevant | 0 | 0 | The study investigates urinary zinc excretion in relation to thyroid status and does not report pharmacokinetic parameters (CL, V, ka, etc.) for zinc gluconate. |
+| popPK | Cai_2026 | irrelevant | 0 | 0 | The paper describes a zinc nanoparticle formulation for cancer therapy and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Chaplygina_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial dynamics in mouse cell cultures using exogenous zinc, not a pharmacokinetic study of zinc gluconate. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on oyster-derived zinc, with zinc gluconate serving only as a comparator in in-vitro bioavailability assays and in-vivo efficacy tests, without reporting specific PK parameters (CL, V, ka) for zinc gluconate. |
 | popPK | Chowdhury_2021 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study on inflammasome activation and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Colozza_2021 | irrelevant | 0 | 0 | The paper is a mechanistic study on WNT signaling and ubiquitination, not a pharmacokinetic study of zinc gluconate. |
-| popPK | Daniel_2024 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antifungal activity of zinc oxide nanoparticles, not a pharmacokinetic study of zinc gluconate. |
+| popPK | Colozza_2021 | irrelevant | 0 | 0 | The paper is a review of molecular biology mechanisms (WNT signaling, ubiquitination) and does not contain any pharmacokinetic data for zinc gluconate. |
+| popPK | Daniel_2024 | irrelevant | 0 | 0 | The study investigates the in vitro antifungal activity of zinc oxide nanoparticles, not the pharmacokinetics of zinc gluconate. |
 | popPK | Davidson_2010 | irrelevant | 0 | 0 | The paper is a causality analysis regarding zinc-induced anosmia and does not report any pharmacokinetic parameters. |
 | PD | Davidson_2010 | not_relevant | 1 | 0 | The paper is a qualitative causality analysis using Bradford Hill criteria and does not report any numeric pharmacodynamic parameters or concentration-effect curves. |
-| popPK | Eby_2006 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for common cold treatment and does not report any pharmacokinetic parameters for zinc gluconate. |
+| popPK | Eby_2006 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of zinc gluconate for cold treatment and reports no pharmacokinetic parameters (CL, V, ka, etc.). |
 | PD | Eby_2006 | not_relevant | 1 | 0 | The paper reports a clinical trial with binary outcomes (asymptomatic status) and no concentration-effect or dose-response modeling with numeric PD parameters. |
-| popPK | Gao_2010 | irrelevant | 0 | 0 | The paper focuses on the SAR of MMP-13 inhibitors and does not report pharmacokinetic parameters for zinc_gluconate. |
+| popPK | Gao_2010 | irrelevant | 0 | 0 | The paper focuses on the SAR of MMP-13 inhibitors, not the pharmacokinetics of zinc gluconate. |
 | popPK | Gholamalizadeh_2023 | irrelevant | 0 | 0 | The paper is a systematic review of dietary supplements in cervical cancer and does not report any pharmacokinetic parameters for zinc gluconate. |
-| popPK | Giallourou_2018 | irrelevant | 0 | 0 | The paper describes a mouse model of Campylobacter jejuni infection and does not report any pharmacokinetic parameters for zinc gluconate. |
-| popPK | Gilbert_1987 | irrelevant | 1 | 0 | The study measures salivary concentrations of zinc from a dentifrice rather than systemic pharmacokinetic parameters (CL, V, ka) for zinc gluconate. |
-| popPK | Gudgin_1995 | irrelevant | 0 | 0 | The study focuses on zinc(II) phthalocyanine (ZnPc), not zinc gluconate, and addresses fluorescence artifacts rather than reporting quantitative PK parameters for the target drug. |
+| popPK | Giallourou_2018 | irrelevant | 0 | 0 | The paper describes a mouse model of Campylobacter jejuni infection and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Gilbert_1987 | irrelevant | 1 | 0 | The study measures salivary concentrations and oral retention of zinc from a dentifrice, not systemic pharmacokinetic parameters (CL, V, ka) for zinc gluconate. |
+| popPK | Gudgin_1995 | irrelevant | 0 | 0 | The study investigates zinc(II) phthalocyanine (ZnPc), not zinc gluconate, and focuses on fluorescence artifacts rather than quantitative PK parameters for the target drug. |
 | popPK | Guillard_1984 | irrelevant | 0 | 0 | The study investigates zinc sulfate and zinc pantothenate, not zinc gluconate. |
-| popPK | He_2022 | irrelevant | 0 | 0 | The paper focuses on virtual screening for tuberculosis inhibitors and does not involve zinc_gluconate or report any pharmacokinetic parameters. |
-| popPK | Houston_2017 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral study where zinc gluconate is used as a co-administered agent to potentiate virucidal activity, not as a subject drug for pharmacokinetic analysis. |
-| popPK | Ilosvai_2023 | irrelevant | 0 | 0 | The study focuses on zinc ferrite nanoparticles as MRI contrast agents, not the pharmacokinetics of the drug zinc gluconate. |
-| popPK | Isele_1995 | irrelevant | 0 | 0 | The study investigates zinc phthalocyanine, not zinc gluconate. |
-| popPK | Jain_2025 | irrelevant | 0 | 0 | The paper is a review of zinc oxide (ZnO) nanoparticles, not zinc gluconate, and does not report quantitative PK parameters for the target drug. |
-| popPK | Janniger_2017 | irrelevant | 0 | 0 | The paper describes a clinical efficacy study for a topical nitric-zinc preparation for warts and contains no pharmacokinetic parameters or quantitative disposition data for zinc gluconate. |
-| popPK | Jebahi_2025 | irrelevant | 0 | 0 | The study focuses on zinc oxide nanoparticles (ZnONPs), not zinc gluconate, and reports in-vitro/computational pharmacokinetics rather than quantitative disposition parameters for the target drug. |
-| popPK | Jena_2026 | irrelevant | 0 | 0 | The study investigates zinc oxide nanoparticles for Parkinson's disease in Drosophila and does not involve zinc gluconate or pharmacokinetic parameter estimation. |
-| popPK | Khadem_2025 | irrelevant | 0 | 0 | The paper is an in-silico study on Cis-aconitate decarboxylase inhibitors and does not involve zinc_gluconate or report any pharmacokinetic parameters for it. |
-| popPK | Kidd_1994 | irrelevant | 0 | 0 | The study investigates the immunological effects of zinc-methionine on phagocytic function in turkeys, not the pharmacokinetic disposition parameters of zinc gluconate. |
-| popPK | Konduru_2014 | irrelevant | 2 | 3 | The study investigates zinc oxide nanoparticles (ZnO NPs), not the specific drug zinc gluconate, and reports nanoparticle clearance kinetics rather than standard pharmacokinetic parameters for the drug. |
-| popPK | Kong_2021 | irrelevant | 0 | 0 | The paper studies immunomodulatory drugs (thalidomide, lenalidomide, etc.) and does not report pharmacokinetic parameters for zinc_gluconate. |
-| popPK | Krausová_1990 | irrelevant | 0 | 0 | The study investigates zinc metabolism in diabetes but does not report pharmacokinetic parameters (CL, V, ka) for zinc gluconate as a drug. |
-| popPK | Kroll_1991 | irrelevant | 0 | 0 | The paper describes the molecular biology of copper-zinc superoxide dismutase in bacteria and contains no pharmacokinetic data for zinc gluconate. |
+| popPK | He_2022 | irrelevant | 0 | 0 | The paper focuses on virtual screening for tuberculosis drug candidates (mtbDHFR inhibitors) and does not involve the pharmacokinetics of zinc_gluconate. |
+| popPK | Houston_2017 | irrelevant | 0 | 0 | The study is an in-vitro virology investigation of antiviral activity and does not report any pharmacokinetic parameters for zinc gluconate. |
+| popPK | Ilosvai_2023 | irrelevant | 0 | 0 | The study investigates zinc ferrite nanoparticles as MRI contrast agents, not the pharmacokinetics of the drug zinc gluconate. |
+| popPK | Isele_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of zinc phthalocyanine (ZnPc), not zinc gluconate. |
+| popPK | Jain_2025 | irrelevant | 0 | 0 | The paper is a review of zinc oxide (ZnO) nanoparticles, not zinc gluconate, and contains no original quantitative PK parameters. |
+| popPK | Janniger_2017 | irrelevant | 0 | 0 | The study evaluates the clinical efficacy of a topical nitric-zinc preparation for warts and does not report any pharmacokinetic parameters for zinc gluconate. |
+| popPK | Jebahi_2025 | irrelevant | 0 | 0 | The study focuses on zinc oxide nanoparticles (ZnONPs), not the drug zinc gluconate, and the pharmacokinetics mentioned are likely in-silico predictions for phytochemicals rather than quantitative disposition parameters for the subject drug. |
+| popPK | Jena_2026 | irrelevant | 0 | 0 | The study investigates the therapeutic efficacy of zinc oxide nanoparticles in a Drosophila model of Parkinson's disease, not the pharmacokinetics of zinc gluconate. |
+| popPK | Khadem_2025 | irrelevant | 0 | 0 | The paper is an in-silico study identifying novel inhibitors for the enzyme cis-aconitate decarboxylase (CAD) and does not investigate the pharmacokinetics of zinc gluconate. |
+| popPK | Kidd_1994 | irrelevant | 0 | 0 | The study investigates the immunological effects of zinc-methionine on Salmonella clearance in turkeys, not the pharmacokinetic parameters of zinc gluconate. |
+| popPK | Konduru_2014 | irrelevant | 0 | 0 | The study investigates zinc oxide nanoparticles (ZnO NPs), not the drug zinc gluconate. |
+| popPK | Kong_2021 | irrelevant | 0 | 0 | The paper studies immunomodulatory drugs (thalidomide, lenalidomide, etc.) and does not involve zinc_gluconate. |
+| popPK | Krausová_1990 | irrelevant | 0 | 0 | The study investigates zinc metabolism in diabetic patients but does not report pharmacokinetic parameters (CL, V, ka) for the specific drug zinc gluconate. |
+| popPK | Kroll_1991 | irrelevant | 0 | 0 | The paper describes the molecular biology of copper-zinc superoxide dismutase in bacteria, not the pharmacokinetics of zinc gluconate. |
 | popPK | Li_1995 | irrelevant | 0 | 0 | The study investigates zinc acexamate, not zinc gluconate. |
 | popPK | Lin_2015 | irrelevant | 0 | 0 | The paper is a review of metallic nanoparticles (gold, silver, zinc oxide) and does not report pharmacokinetic parameters for the drug zinc gluconate. |
-| popPK | Lu_2023 | irrelevant | 0 | 0 | The paper studies zinc ferrite nanoclusters for bioimaging, not the pharmacokinetics of the drug zinc gluconate. |
-| popPK | Merali_1976 | irrelevant | 0 | 0 | The study investigates the protective effects of zinc chloride (ZnCl2) on cadmium-induced toxicity in rats and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Muroi_2015 | irrelevant | 0 | 0 | The paper studies the mechanistic effects of the fungicide ziram on protein degradation in macrophages and does not involve zinc_gluconate or pharmacokinetic parameters. |
-| popPK | Nawaz_2021 | irrelevant | 0 | 0 | The study focuses on zinc oxide nanoparticles (ZnONPs) for bilirubin photolysis, not the pharmacokinetics of zinc gluconate. |
-| popPK | Neyrolles_2021 | irrelevant | 0 | 0 | The paper is a commentary on zinc toxicity mechanisms in macrophages and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Nishiyama_1994 | irrelevant | 0 | 0 | The study investigates the effect of zinc sulphate (not zinc gluconate) on thyroid hormone metabolism and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Lu_2023 | irrelevant | 0 | 0 | The paper describes zinc ferrite nanoclusters for bioimaging, not the pharmacokinetics of the drug zinc gluconate. |
+| popPK | Merali_1976 | irrelevant | 0 | 0 | The study investigates the protective effects of zinc chloride on cadmium-induced toxicity in rats and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Muroi_2015 | irrelevant | 0 | 0 | The study investigates the mechanistic effects of the fungicide ziram on protein degradation in macrophages and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Nawaz_2021 | irrelevant | 0 | 0 | The study investigates zinc oxide nanoparticles (ZnONPs) for bilirubin photolysis, not the pharmacokinetics of zinc gluconate. |
+| popPK | Neyrolles_2021 | irrelevant | 0 | 0 | The paper is a commentary on the mechanism of zinc toxicity in macrophages and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Nishiyama_1994 | irrelevant | 0 | 0 | The study investigates the effect of zinc supplementation on thyroid hormone metabolism and does not report pharmacokinetic parameters (CL, V, ka, etc.) for zinc gluconate. |
 | popPK | ORourke_1972 | irrelevant | 0 | 0 | no_text gate: only 134 chars of text extracted (&lt; 400) |
 | popPK | Opoka_2010 | irrelevant | 0 | 0 | The study investigates the mechanism of gastric ulcer healing using zinc hydroaspartate, not the pharmacokinetics of zinc gluconate. |
-| popPK | Pakrashi_1995 | irrelevant | 0 | 0 | The study investigates the effect of tobacco on seminal gland markers (including zinc levels) and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Pakrashi_1995 | irrelevant | 0 | 0 | The study investigates the effect of tobacco on seminal fluid markers (including zinc) and does not report pharmacokinetic parameters for zinc gluconate. |
 | popPK | Pan_2021 | irrelevant | 0 | 0 | The paper investigates zinc oxide nanoparticles for cancer therapy and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Pandranki_2018 | irrelevant | 0 | 0 | The paper is a clinical dental study comparing root canal filling materials (ZOE vs. Endoflas) and does not involve zinc gluconate or pharmacokinetic analysis. |
-| popPK | Pfrimer_2014 | irrelevant | 0 | 0 | The study measures urinary excretion of zinc in healthy subjects but does not involve the administration of zinc gluconate or report pharmacokinetic parameters (CL, V, ka) for the drug. |
-| popPK | Qureshi_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on HDAC6 and cytoskeletal dynamics, not a pharmacokinetic study of zinc gluconate. |
-| popPK | Rawat_2023 | irrelevant | 0 | 0 | The paper studies taxifolin as an inhibitor of adenosine deaminase and does not report pharmacokinetic parameters for zinc_gluconate. |
-| popPK | Read_2017 | irrelevant | 0 | 0 | The paper investigates the mechanistic role of zinc in inhibiting IFN-λ3 signaling and viral clearance, not the pharmacokinetics of zinc gluconate. |
-| popPK | Ripa_1995 | irrelevant | 0 | 0 | The text is a qualitative review of zinc status in diabetes and does not report any quantitative pharmacokinetic parameters for zinc gluconate. |
+| popPK | Pandranki_2018 | irrelevant | 0 | 0 | The study is a clinical evaluation of root canal filling materials (Zinc Oxide Eugenol) and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Pfrimer_2014 | irrelevant | 0 | 0 | The study measures urinary excretion of elemental zinc in healthy subjects, not the pharmacokinetics of the drug zinc gluconate. |
+| popPK | Qureshi_2026 | irrelevant | 0 | 0 | The paper describes the mechanistic role of the HDAC6 Zinc Finger Ubiquitin-Binding domain in neuronal cells and contains no pharmacokinetic data for zinc gluconate. |
+| popPK | Rawat_2023 | irrelevant | 0 | 0 | The study investigates the molecular interaction of taxifolin with human adenosine deaminase and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Read_2017 | irrelevant | 0 | 0 | The paper investigates the mechanistic role of zinc in inhibiting interferon signaling and viral clearance, not the pharmacokinetics of zinc gluconate. |
+| popPK | Ripa_1995 | irrelevant | 0 | 0 | The paper is a review discussing zinc status in diabetes and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for zinc gluconate. |
 | popPK | Rosmanith_1975 | irrelevant | 0 | 0 | no_text gate: only 164 chars of text extracted (&lt; 400) |
-| popPK | Rubio_2007 | irrelevant | 2 | 0 | The paper is a general review of zinc as an element and does not report specific quantitative pharmacokinetic parameters for the drug zinc gluconate. |
-| popPK | Russo_1995 | irrelevant | 0 | 0 | The study investigates zinc-mesoporphyrin, not zinc gluconate. |
-| popPK | Saddik_2022 | irrelevant | 0 | 0 | The study focuses on azithromycin-loaded zinc oxide nanoparticles for wound healing and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Sadikot_2025 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study on zinc's role in mitochondrial function and bacterial clearance, not a pharmacokinetic study reporting disposition parameters for zinc gluconate. |
-| popPK | Sanchez-Rosario_2026 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial study of BMDC combined with metals, not a pharmacokinetic study of zinc gluconate. |
+| popPK | Rubio_2007 | irrelevant | 1 | 0 | The paper is a general review of zinc as an element and does not report specific quantitative pharmacokinetic parameters for the drug zinc gluconate. |
+| popPK | Russo_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of zinc-mesoporphyrin, not zinc gluconate. |
+| popPK | Saddik_2022 | irrelevant | 0 | 0 | The study focuses on the formulation and wound-healing efficacy of azithromycin-loaded zinc oxide nanoparticles, not the pharmacokinetics of zinc gluconate. |
+| popPK | Sadikot_2025 | irrelevant | 0 | 0 | The study investigates the mechanistic role of zinc in mitochondrial function and immune response in macrophages, not the pharmacokinetic disposition parameters of zinc gluconate. |
+| popPK | Sanchez-Rosario_2026 | irrelevant | 0 | 0 | The study is an in-vitro antimicrobial investigation of metal-BMDC complexes against bacteria, not a pharmacokinetic study of zinc gluconate. |
 | popPK | Sandstead_1995 | irrelevant | 0 | 0 | The paper is a review discussing toxicity and requirements of trace elements, not a pharmacokinetic study reporting quantitative disposition parameters for zinc gluconate. |
-| popPK | Schuindt_2026 | irrelevant | 0 | 0 | The paper is a microbiology study on zinc resistance genes in bacteria, not a pharmacokinetic study of zinc gluconate. |
-| popPK | Scott_2021 | irrelevant | 0 | 0 | The paper describes a recombinant zinc finger protein for HIV-1 transcriptional activation and contains no pharmacokinetic data for zinc gluconate. |
-| popPK | Siepmann_2005 | relevant | 8 | 2 | The study reports PK parameters (Cmax, AUC) for zinc gluconate, but only as relative differences compared to zinc oxide, lacking absolute numeric values for clearance, volume, or half-life. |
-| popPK | Singh_2022 | irrelevant | 0 | 0 | The paper studies zinc oxide nanoparticles (not zinc gluconate) in an in-vitro binding and cytotoxicity context, with no pharmacokinetic parameters reported. |
-| popPK | Siposova_2023 | irrelevant | 0 | 0 | The paper studies zeolite-dye composites for anti-amyloidogenic properties and does not involve zinc_gluconate or pharmacokinetic parameter estimation. |
-| popPK | Slinko_2014 | irrelevant | 0 | 0 | The study is a mechanistic investigation of zinc gluconate's effect on inflammation and mortality in sepsis, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Schuindt_2026 | irrelevant | 0 | 0 | The paper is a microbiology study on zinc resistance genes in Chromobacterium violaceum and does not report pharmacokinetic parameters for zinc gluconate. |
+| popPK | Scott_2021 | irrelevant | 0 | 0 | The paper describes a zinc finger protein for HIV-1 transcriptional activation and does not involve the drug zinc gluconate or its pharmacokinetics. |
+| popPK | Siepmann_2005 | relevant | 8 | 4 | The study reports quantitative PK parameters (Cmax, AUC, Tmax) for zinc gluconate in humans, but specific clearance or volume values are not explicitly listed in the provided text. |
+| popPK | Singh_2022 | irrelevant | 0 | 0 | The study investigates the molecular interaction of zinc oxide nanoparticles with a dye and protein in vitro, not the pharmacokinetics of zinc gluconate. |
+| popPK | Siposova_2023 | irrelevant | 0 | 0 | The paper studies zeolite-dye composites for anti-amyloidogenic properties and does not involve zinc gluconate or its pharmacokinetics. |
+| popPK | Slinko_2014 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicology investigation of zinc gluconate's effect on sepsis survival and inflammation in mice, reporting no pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Staessen_1995 | irrelevant | 0 | 0 | The paper is an epidemiological study on lead exposure and renal function/blood pressure, not a pharmacokinetic study of zinc gluconate. |
-| popPK | Sällsten_1994 | irrelevant | 0 | 0 | The study investigates mercury pharmacokinetics and the effect of DMPS on metal excretion, with zinc only measured as a secondary biomarker, not as the subject drug for PK parameter estimation. |
+| popPK | Sällsten_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mercury (Hg) and the effect of DMPS on its excretion, not the pharmacokinetics of zinc gluconate. |
 | popPK | Takeda_2018 | irrelevant | 0 | 0 | The paper investigates the effect of zinc deficiency on ectoenzyme activity and ATP clearance, not the pharmacokinetics of zinc gluconate as a drug. |
-| popPK | Tang_2019 | irrelevant | 0 | 0 | The paper focuses on radiolabeling zinc sulfide quantum dots for PET imaging and does not report pharmacokinetic parameters for the drug zinc gluconate. |
+| popPK | Tang_2019 | irrelevant | 0 | 0 | The study focuses on the radiolabeling of zinc sulfide quantum dots for PET imaging, not the pharmacokinetics of the drug zinc gluconate. |
 | popPK | Tang_2025 | irrelevant | 0 | 0 | The paper describes a nanomedicine for atherosclerosis therapy and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Wastney_1986 | irrelevant | 0 | 0 | The study investigates zinc metabolism using radioactive 65Zn tracers rather than the specific drug zinc_gluconate, and no pharmacokinetic parameters for zinc_gluconate are reported. |
-| popPK | Xie_2008 | irrelevant | 0 | 0 | The study focuses on esomeprazole zinc, not zinc gluconate, and does not report PK parameters for the target drug. |
+| popPK | Wastney_1986 | irrelevant | 1 | 0 | The study investigates zinc metabolism using radioactive zinc (65Zn) rather than the specific drug formulation zinc gluconate, and no specific pharmacokinetic parameter values are provided in the text. |
+| popPK | Xie_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of esomeprazole zinc, not zinc gluconate. |
 | popPK | Xu_2025 | irrelevant | 0 | 0 | The paper describes a zinc-loureirin B nanozyme for osteoarthritis therapy and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Xue_2026 | irrelevant | 0 | 0 | The paper is a molecular biology study on zinc finger proteins in Arabidopsis and does not involve the drug zinc gluconate or pharmacokinetics. |
-| popPK | Yan_2021 | irrelevant | 0 | 0 | The study focuses on a zinc-ion-coordinated microgel delivery system for BSA, not the pharmacokinetics of the drug zinc gluconate. |
-| popPK | Youssef_2023 | irrelevant | 0 | 0 | The paper is a clinical trial comparing the efficacy of intralesional zinc sulfate (not zinc gluconate) for treating warts and reports no pharmacokinetic parameters. |
-| popPK | Yu_2022 | irrelevant | 0 | 0 | The study investigates the neurotoxic effects of zinc chloride exposure in zebrafish and does not report pharmacokinetic parameters for zinc gluconate. |
-| popPK | Zafar_2023 | irrelevant | 0 | 0 | The paper is a microbiology study on Streptococcus pneumoniae virulence and zinc homeostasis, not a pharmacokinetic study of zinc gluconate. |
-| popPK | van_1994 | irrelevant | 0 | 0 | The study investigates zinc phthalocyanine, not zinc gluconate, and focuses on fluorescence kinetics rather than standard PK parameters for the target drug. |
+| popPK | Xue_2026 | irrelevant | 0 | 0 | The paper studies zinc finger proteins in Arabidopsis plants and contains no pharmacokinetic data for zinc gluconate. |
+| popPK | Yan_2021 | irrelevant | 0 | 0 | The study focuses on a zinc-coordinated microgel delivery system and reports PK parameters for a model drug (bovine serum albumin), not for zinc gluconate. |
+| popPK | Youssef_2023 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the therapeutic efficacy of intralesional zinc sulfate for warts, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.). |
+| popPK | Yu_2022 | irrelevant | 0 | 0 | The study investigates the neurotoxicity and behavioral effects of zinc chloride exposure in zebrafish, not the pharmacokinetics of zinc gluconate. |
+| popPK | Zafar_2023 | irrelevant | 0 | 0 | The paper is a microbiology study on Streptococcus pneumoniae virulence and zinc homeostasis genes, not a pharmacokinetic study of zinc gluconate. |
+| popPK | van_1994 | irrelevant | 0 | 0 | The study investigates zinc phthalocyanine (a photosensitizer), not zinc gluconate. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

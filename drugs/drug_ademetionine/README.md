@@ -18,7 +18,7 @@ Ademetionine (S-adenosylmethionine) is an amino-acid derivative used as a dietar
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 01:36 | 34:09 | 0/0/0 | 1/0/1 | 0/0/0 | 232,915/10,579 | ollama / qwen3.8:27b-mtp-q8_0 | 29 | 6/45 | 26/3 | 0 |
+| 2026-10-05 10:28 | 9:36 | 0/0/0 | 1/0/0 | 0/0/0 | 308,231/12,016 | ollama / qwen3.8:27b-mtp-q8_0 | 29 | 6/45 | 26/3 | 0 |
 
 ## popPK records
 
@@ -28,13 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025_CD279_PD_1_mRNA_expression](drugs/drug_ademetionine/pd_Gao_2025_CD279_PD_1_mRNA_expression.md) | CD279 (PD-1) mRNA expression ← S-adenosylmethionine · direct sigmoid Emax (Hill) effect | — | Gao GJ et al., S-adenosylmethionine enhances anti-PD-1…, Discover oncology (2025) | [10.1007/s12672-025-03753-z](https://doi.org/10.1007/s12672-025-03753-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025_EZH2_mRNA_expression](drugs/drug_ademetionine/pd_Gao_2025_EZH2_mRNA_expression.md) | EZH2 mRNA expression ← S-adenosylmethionine · direct sigmoid Emax (Hill) effect | — | Gao GJ et al., S-adenosylmethionine enhances anti-PD-1…, Discover oncology (2025) | [10.1007/s12672-025-03753-z](https://doi.org/10.1007/s12672-025-03753-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025_OS](drugs/drug_ademetionine/pd_Gao_2025_OS.md) | overall survival ← S-adenosylmethionine · direct sigmoid Emax (Hill) effect | — | Gao GJ et al., S-adenosylmethionine enhances anti-PD-1…, Discover oncology (2025) | [10.1007/s12672-025-03753-z](https://doi.org/10.1007/s12672-025-03753-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025_apoptosis](drugs/drug_ademetionine/pd_Gao_2025_apoptosis.md) | apoptosis ← S-adenosylmethionine · direct sigmoid Emax (Hill) effect | — | Gao GJ et al., S-adenosylmethionine enhances anti-PD-1…, Discover oncology (2025) | [10.1007/s12672-025-03753-z](https://doi.org/10.1007/s12672-025-03753-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025_cell_migration](drugs/drug_ademetionine/pd_Gao_2025_cell_migration.md) | cell migration ← S-adenosylmethionine · direct sigmoid Emax (Hill) effect | — | Gao GJ et al., S-adenosylmethionine enhances anti-PD-1…, Discover oncology (2025) | [10.1007/s12672-025-03753-z](https://doi.org/10.1007/s12672-025-03753-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025_cell_viability](drugs/drug_ademetionine/pd_Gao_2025_cell_viability.md) | cell viability ← S-adenosylmethionine · direct sigmoid Emax (Hill) effect | — | Gao GJ et al., S-adenosylmethionine enhances anti-PD-1…, Discover oncology (2025) | [10.1007/s12672-025-03753-z](https://doi.org/10.1007/s12672-025-03753-z) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Rühs_2012_HCY](drugs/drug_ademetionine/pd_R_hs_2012_HCY.md) | homocysteine biomarker turnover ← methotrexate | — | Rühs H et al., Population PK/PD model of homocysteine…, PloS one (2012) | [10.1371/journal.pone.0046015](https://doi.org/10.1371/journal.pone.0046015) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_2000_ANC_nadir](drugs/drug_ademetionine/pd_Zhou_2000_ANC_nadir.md) | absolute neutrophil count nadir ← SAM486A · direct sigmoid Emax (Hill) effect | — | Zhou H et al., Population pharmacokinetics/toxicodynam…, Journal of clinical pharmac… (2000) | [10.1177/00912700022008946](https://doi.org/10.1177/00912700022008946) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_2000_percent_decrease_in_neutrophil_count_from_baseline_to_nadir](drugs/drug_ademetionine/pd_Zhou_2000_percent_decrease_in_neutrophil_count_from_baseline.md) | percent decrease in neutrophil count from baseline to nadir ← SAM486A · direct Emax (saturable) effect | — | Zhou H et al., Population pharmacokinetics/toxicodynam…, Journal of clinical pharmac… (2000) | [10.1177/00912700022008946](https://doi.org/10.1177/00912700022008946) |
 
 ## ADME sites
 
@@ -68,7 +63,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Giulidori_1984.pdf` | Giulidori P et al., Pharmacokinetics of S-adenosyl-L-methio…, European journal of clinica… (1984) | popPK | 10 | not captured | [6489422](https://pubmed.ncbi.nlm.nih.gov/6489422) | The paper reports quantitative pharmacokinetic parameters (Vd, t1/2, CL) for S-adenosyl-L-methionine (ademetionine) in healthy volunteers with all numeric values explicitly present in the text. |
+| `Giulidori_1984.pdf` | Giulidori P et al., Pharmacokinetics of S-adenosyl-L-methio…, European journal of clinica… (1984) | popPK | 10 | not captured | [6489422](https://pubmed.ncbi.nlm.nih.gov/6489422) | The paper reports quantitative pharmacokinetic parameters (Vd, t1/2, CL) for S-adenosyl-L-methionine (ademetionine) in humans with all numeric values present in the abstract. |
 | `Bhutkar_2025.pdf` | Bhutkar M et al., Structure-based identification of herba…, FEBS letters (2025) | pd | 4 | [10.1002/1873-3468.70054](https://doi.org/10.1002/1873-3468.70054) | [40353321](https://www.ncbi.nlm.nih.gov/pubmed/40353321) | metadata signals extractable PD data (IC50) |
 | `Buker_2020.pdf` | Buker SM et al., A Mass Spectrometric Assay of METTL3/ME…, SLAS discovery : advancing… (2020) | pd | 4 | [10.1177/2472555219878408](https://doi.org/10.1177/2472555219878408) | [31585521](https://www.ncbi.nlm.nih.gov/pubmed/31585521) | metadata signals extractable PD data (IC50) |
 | `Choi_2015.pdf` | Choi HJ et al., Evaluation of anti-coccidial effects of…, Archives of pharmacal resea… (2015) | pd | 4 | [10.1007/s12272-014-0400-y](https://doi.org/10.1007/s12272-014-0400-y) | [24824336](https://www.ncbi.nlm.nih.gov/pubmed/24824336) | metadata signals extractable PD data (EC50) |
@@ -94,14 +89,14 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Van_1992.pdf` | Van Loon JA et al., Human kidney thiopurine methyltransfera…, Biochemical pharmacology (1992) | pgx | 5 | [10.1016/0006-2952(92)90416-g](https://doi.org/10.1016/0006-2952(92)90416-g) | [1510725](https://www.ncbi.nlm.nih.gov/pubmed/1510725) | metadata signals extractable PGX data (TPMT) |
 | `Wennerstrand_2017.pdf` | Wennerstrand P et al., In Vitro Protein Stability of Two Natur…, ACS omega (2017) | pgx | 5 | [10.1021/acsomega.7b00801](https://doi.org/10.1021/acsomega.7b00801) | [30023734](https://www.ncbi.nlm.nih.gov/pubmed/30023734) | metadata signals extractable PGX data (TPMT) |
 
-<sub>queue written 2026-09-30T01:32:16.218763+00:00</sub>
+<sub>queue written 2026-10-05T10:21:39.704718+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Abato_2022 | not_relevant | 0 | 0 | The paper investigates the impact of MTHFR genotype on ischemic stroke injury and cellular markers (MAT2A, HIF-1α, Nrf2, SOD2), but does not report pharmacokinetic or pharmacodynamic parameters of ademetionine. |
-| popPK | Abirami_2023 | irrelevant | 0 | 0 | The paper is a review on chemical scaffolds for leishmaniasis and does not contain pharmacokinetic data for ademetionine. |
+| PGx | Abato_2022 | not_relevant | 0 | 0 | The study investigates the impact of MTHFR deficiency on ischemic stroke injury and cellular mechanisms, not the pharmacokinetics or pharmacodynamics of ademetionine. |
+| popPK | Abirami_2023 | irrelevant | 0 | 0 | The paper is a review of heterocyclic scaffolds for treating Leishmaniasis and does not contain pharmacokinetic data for ademetionine. |
 | PD | Abirami_2023 | not_relevant | 0 | 0 | The paper is a review of heterocyclic scaffolds for Leishmaniasis and does not mention ademetionine or report any pharmacodynamic data for it. |
 | PGx | Agusa_2011 | not_relevant | 0 | 0 | The paper discusses arsenic metabolism and AS3MT polymorphisms, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | PGx | Agusa_2015 | not_relevant | 0 | 0 | The paper discusses arsenic metabolism and AS3MT polymorphisms, not the pharmacokinetics or pharmacodynamics of ademetionine. |
@@ -110,12 +105,12 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Al-Hamashi_2021 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for a PRMT inhibitor (AH237), not pharmacodynamic or exposure-response data for ademetionine. |
 | popPK | Allali-Hassani_2019 | irrelevant | 0 | 0 | The paper describes the discovery of a chemical probe for PRDM9 and contains no pharmacokinetic data for ademetionine. |
 | PD | Allali-Hassani_2019 | not_relevant | 0 | 0 | The paper reports pharmacodynamics for MRK-740 (a PRDM9 inhibitor), not ademetionine. |
-| popPK | Alum_2026 | irrelevant | 0 | 0 | The study focuses on the neuroprotective effects of Jimson weed extract against methotrexate-induced toxicity and does not involve ademetionine or report any pharmacokinetic parameters. |
+| popPK | Alum_2026 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of Jimson weed extract on methotrexate-induced toxicity in rats and does not involve ademetionine or report any pharmacokinetic parameters. |
 | PD | Alum_2026 | not_relevant | 0 | 0 | The paper studies Jimson weed extract, not ademetionine, and reports no exposure-response or dose-response PD parameters for the target drug. |
 | PGx | Aposhian_1997 | not_relevant | 0 | 0 | The paper discusses arsenic metabolism and methyltransferase enzymes, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | PGx | Bahous_2019 | not_relevant | 0 | 0 | The paper studies the effects of MTHFR deficiency and folate diet on brain aging and biochemistry in mice, but does not involve the administration or pharmacokinetics/pharmacodynamics of the drug ademetionine. |
 | popPK | Bakker_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of biperiden, not ademetionine. |
-| popPK | Balaña-Fouce_1986 | irrelevant | 0 | 0 | The paper studies the enzyme S-adenosylmethionine decarboxylase in rabbit liver and does not report pharmacokinetic parameters for ademetionine. |
+| popPK | Balaña-Fouce_1986 | irrelevant | 0 | 0 | The study investigates the enzymatic properties of S-adenosylmethionine decarboxylase in rabbit liver, not the pharmacokinetics of ademetionine. |
 | PD | Balaña-Fouce_1986 | not_relevant | 0 | 0 | The paper describes in vitro enzyme kinetics and inhibition of S-adenosylmethionine decarboxylase by hydrazone compounds, not the pharmacodynamics of ademetionine in a biological system. |
 | popPK | Benyon_1984 | irrelevant | 0 | 0 | The study investigates the mechanism of histamine release in mast cells using methyltransferase inhibitors, not the pharmacokinetics of ademetionine. |
 | popPK | Bergeron_1994 | irrelevant | 0 | 0 | The paper is a structure-activity study of polyamine analogues and does not report pharmacokinetic parameters for ademetionine. |
@@ -125,7 +120,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Bhattacharya_2019 | not_relevant | 0 | 0 | The paper studies the mechanism of action of sinefungin in Leishmania, not the pharmacogenomics of ademetionine in humans. |
 | popPK | Bhutkar_2025 | irrelevant | 0 | 0 | no_text gate: only 149 chars of text extracted (&lt; 400) |
 | PD | Bhutkar_2025 | not_relevant | 0 | 0 | The paper focuses on structure-based identification of inhibitors for a viral methyltransferase and does not report pharmacodynamic or exposure-response data for ademetionine. |
-| popPK | Blusztajn_1985 | irrelevant | 0 | 0 | The paper studies enzymatic kinetics of phosphatidylethanolamine N-methyltransferase in rat brain, not the pharmacokinetics of ademetionine. |
+| popPK | Blusztajn_1985 | irrelevant | 0 | 0 | The study examines enzymatic kinetics of phosphatidylethanolamine N-methyltransferase in rat brain, not the pharmacokinetics of ademetionine. |
 | PD | Blusztajn_1985 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Michaelis-Menten/Hill parameters) for PeMT in rat brain homogenates, not a pharmacodynamic exposure-response relationship for the drug ademetionine in a biological system. |
 | popPK | Bobiļeva_2021 | irrelevant | 0 | 0 | The paper focuses on the design of SARS-CoV-2 methyltransferase inhibitors and reports enzymatic IC50 values, not pharmacokinetic parameters for ademetionine. |
 | PD | Bobiļeva_2021 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic IC50 values for SARS-CoV-2 methyltransferase inhibitors, not pharmacodynamic or exposure-response data for ademetionine. |
@@ -135,19 +130,19 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Borcherding_1988 | not_relevant | 0 | 0 | The paper discusses neplanocin A analogues and their inhibition of AdoHcy hydrolase, not ademetionine, and reports in vitro IC50 values for antiviral activity rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | popPK | Bouvet_2010 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of SARS-CoV methyltransferases and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Bouvet_2010 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic inhibition (IC50) of viral methyltransferases by aurintricarboxylic acid, not a pharmacodynamic exposure-response relationship for the drug ademetionine. |
-| PGx | Breen_2005 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics of azathioprine, not ademetionine. |
+| PGx | Breen_2005 | not_relevant | 0 | 0 | The paper focuses on azathioprine pharmacogenetics, not ademetionine. |
 | popPK | Brun_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of CGP 40 215, not ademetionine. |
-| popPK | Buckner_2002 | irrelevant | 0 | 0 | The paper is a mechanistic study on Trypanosoma brucei methyltransferase and does not involve ademetionine pharmacokinetics. |
+| popPK | Buckner_2002 | irrelevant | 0 | 0 | The paper describes the enzymatic activity of a methyltransferase in Trypanosoma brucei and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Buckner_2002 | not_relevant | 0 | 0 | The paper reports enzyme kinetics (Km/Vmax) and cytotoxicity EC50 values for a parasite enzyme and its substrates, not a pharmacodynamic exposure-response relationship for the drug ademetionine. |
 | popPK | Buker_2020 | irrelevant | 0 | 0 | The paper describes a mass spectrometric assay for RNA methyltransferase activity and does not involve the drug ademetionine or pharmacokinetic parameters. |
 | PD | Buker_2020 | not_relevant | 0 | 0 | The paper describes a mass spectrometry assay for METTL3/METTL14 activity and reports IC50 values for enzyme inhibitors (SAH, SFG), but does not involve the drug ademetionine or any pharmacodynamic/exposure-response analysis for it. |
-| popPK | Bukovska_1994 | irrelevant | 0 | 0 | The paper describes the purification and biochemical characterization of the enzyme cystathionine beta-synthase in E. coli, not the pharmacokinetics of ademetionine. |
+| popPK | Bukovska_1994 | irrelevant | 0 | 0 | The paper describes the expression and purification of an enzyme (cystathionine beta-synthase) in E. coli and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Bukovska_1994 | not_relevant | 0 | 0 | The paper describes the purification and biochemical characterization of the enzyme cystathionine beta-synthase, not the pharmacodynamics of the drug ademetionine. |
 | popPK | Burger_2015 | irrelevant | 0 | 0 | The paper describes the inhibition of Plasmodium falciparum spermidine synthase and does not involve the drug ademetionine or its pharmacokinetics. |
 | PD | Burger_2015 | not_relevant | 0 | 0 | The paper focuses on the drug ademetionine's target (Plasmodium falciparum spermidine synthase) and reports IC50 values for novel inhibitors (compounds 8 and 9), but does not report any pharmacodynamic or exposure-response data for ademetionine itself. |
-| popPK | Cacciatore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on MAT2A in prostate cancer and does not report pharmacokinetic parameters for ademetionine. |
+| popPK | Cacciatore_2024 | irrelevant | 0 | 0 | The paper investigates the epigenetic role of the enzyme MAT2A in prostate cancer, not the pharmacokinetics of the drug ademetionine. |
 | PD | Cacciatore_2024 | not_relevant | 0 | 0 | The paper investigates MAT2A inhibitors (PF-9366, AG-270) in prostate cancer models and does not report any pharmacodynamic or exposure-response data for ademetionine. |
-| PGx | Cannon_2002 | not_relevant | 0 | 0 | The paper describes a stereospecific assay for quantifying S-adenosylmethionine (AdoMet) and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
+| PGx | Cannon_2002 | not_relevant | 0 | 0 | The paper describes a stereospecific assay for quantifying S-adenosylmethionine and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
 | PGx | Casal_2016 | not_relevant | 0 | 0 | The paper focuses on developing a method to measure COMT activity in rat hepatocytes and does not report pharmacogenomic effects on the PK/PD of ademetionine. |
 | PGx | Catcott_2017 | not_relevant | 0 | 0 | The paper describes a mass spectrometry method for identifying enzyme-substrate pairs and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
 | PGx | Chang_2019 | not_relevant | 0 | 0 | The paper reports a congenital metabolic disorder (NGLY1 deficiency) affecting endogenous methionine metabolism, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
@@ -156,7 +151,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Chen_2019 | irrelevant | 0 | 0 | The paper focuses on the discovery of a DOT1L inhibitor (massonianoside B) and does not involve ademetionine or report any pharmacokinetic parameters. |
 | PD | Chen_2019 | not_relevant | 0 | 0 | The paper reports on a novel DOT1L inhibitor (massonianoside B), not ademetionine, and provides no exposure-response or dose-response data for the target drug. |
 | PGx | Chiba_1988 | not_relevant | 0 | 0 | The paper investigates SAM metabolism in HL-60 cells and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
-| PGx | Cho_2022 | not_relevant | 0 | 0 | The paper investigates the hepatoprotective effects of S-adenosylmethionine (SAMe) against acetaminophen toxicity in cell lines, not the pharmacokinetics or pharmacodynamics of ademetionine itself. |
+| PGx | Cho_2022 | not_relevant | 0 | 0 | The study investigates the hepatoprotective mechanism of S-adenosylmethionine (SAMe) against acetaminophen toxicity in cell lines, not the pharmacokinetics or pharmacodynamics of ademetionine itself. |
 | popPK | Choi_2015 | irrelevant | 0 | 0 | no_text gate: only 154 chars of text extracted (&lt; 400) |
 | PD | Choi_2015 | not_relevant | 0 | 0 | The paper evaluates the anti-coccidial effects of a different compound (1-[4-(4-nitrophenoxy)phenyl]propane-1-one) in Toxoplasma gondii and does not mention ademetionine. |
 | PGx | Christensen_2025 | not_relevant | 0 | 0 | The paper studies the effects of choline/betaine supplementation on embryonic development and one-carbon metabolites in a mouse model, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
@@ -177,7 +172,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Dowden_2010 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for PRMTs, which is a pharmacological potency metric, not a pharmacodynamic (exposure-response) relationship for the drug ademetionine in a biological system. |
 | popPK | Drake_2014 | irrelevant | 0 | 0 | The paper describes an in-vitro assay for histone methyltransferase activity and does not involve ademetionine or pharmacokinetic parameters. |
 | PD | Drake_2014 | not_relevant | 0 | 0 | The paper describes an in vitro enzymatic assay for NSD1 and does not report any pharmacodynamic or exposure-response data for ademetionine. |
-| popPK | Dreute_2025 | irrelevant | 0 | 0 | The paper investigates the synergistic effects of metabolic inhibitors (GNE-140 and BMS-986205) on cancer cells and does not involve ademetionine or report any pharmacokinetic parameters. |
+| popPK | Dreute_2025 | irrelevant | 0 | 0 | The paper focuses on the synergistic inhibition of metabolic enzymes (LDH and IDO1/Complex I) in cancer cells and does not involve ademetionine or report any pharmacokinetic parameters. |
 | PD | Dreute_2025 | not_relevant | 0 | 0 | The paper investigates the synergistic effects of (R)-GNE-140 and BMS-986205 on cancer cells and does not mention or analyze ademetionine. |
 | popPK | Dufe_2005 | irrelevant | 0 | 0 | The paper describes the cloning and structural characterization of an enzyme (spermidine synthase) and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Dufe_2005 | not_relevant | 0 | 0 | The paper describes the cloning and structural characterization of a spermidine synthase enzyme, not the pharmacodynamics of the drug ademetionine. |
@@ -191,7 +186,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Fofou-Caillierez_2019 | not_relevant | 0 | 0 | The paper investigates the association between gene variants and neural tube defects via the methionine synthase pathway, but does not report pharmacokinetic or pharmacodynamic parameters for the drug ademetionine. |
 | popPK | Fuller_1987 | irrelevant | 0 | 0 | The paper studies the mechanism of heat shock sensitization by alpha-difluoromethylornithine in cell lines and does not involve ademetionine or pharmacokinetic parameters. |
 | PD | Fuller_1987 | not_relevant | 0 | 0 | The paper studies alpha-difluoromethylornithine (DFMO), not ademetionine. |
-| popPK | Gajić_2026 | irrelevant | 0 | 0 | The study investigates the effects of diazepam on human umbilical arteries in an in-vitro model and does not involve ademetionine or pharmacokinetic parameters. |
+| popPK | Gajić_2026 | irrelevant | 0 | 0 | The study investigates the effects of diazepam on human umbilical arteries in an in vitro model and does not involve ademetionine or pharmacokinetic parameters. |
 | PD | Gajić_2026 | not_relevant | 0 | 0 | The paper investigates the effects of diazepam, not ademetionine, and does not report any exposure-response or dose-response relationship for ademetionine. |
 | popPK | Gao_2025 | irrelevant | 0 | 0 | The paper investigates the mechanistic effects of S-adenosylmethionine (SAM) on uveal melanoma cells and does not report any pharmacokinetic parameters for ademetionine. |
 | popPK | Girgin_2023 | irrelevant | 0 | 0 | The paper is an in silico and in vitro study on acetylcholinesterase inhibition for Alzheimer's disease, containing no pharmacokinetic parameters for ademetionine. |
@@ -207,13 +202,13 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Haughan_1993 | not_relevant | 0 | 0 | The paper studies sinefungin, not ademetionine, and reports IC50 values for a different drug. |
 | popPK | Hausdorff_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro enzymatic inhibition of SARS-CoV-2 nsp14 by adenosine mimetics, and does not involve the drug ademetionine or report any pharmacokinetic parameters. |
 | PD | Hausdorff_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for novel adenosine mimetics targeting coronavirus nsp14, not pharmacodynamic or exposure-response data for the drug ademetionine. |
-| PGx | He_2025 | not_relevant | 0 | 0 | The paper discusses folic acid and MTHFR polymorphisms in the context of sperm quality and RNA splicing, not the pharmacokinetics or pharmacodynamics of ademetionine. |
-| popPK | Heide_2025 | irrelevant | 0 | 0 | The paper investigates NNMT inhibition in cancer-associated fibroblasts and does not involve ademetionine or report any pharmacokinetic parameters for it. |
+| PGx | He_2025 | not_relevant | 0 | 0 | The paper focuses on folic acid and male fertility, not ademetionine, and does not report pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Heide_2025 | irrelevant | 0 | 0 | The paper investigates NNMT inhibition in cancer models and does not involve ademetionine or its pharmacokinetics. |
 | PD | Heide_2025 | not_relevant | 0 | 0 | The paper investigates NNMT inhibition in cancer and does not mention ademetionine or report any pharmacodynamic or exposure-response data for it. |
 | popPK | Hernandez_2019 | irrelevant | 0 | 0 | The paper describes the development of antiviral inhibitors for Dengue and Zika viruses and does not involve ademetionine pharmacokinetics. |
 | PD | Hernandez_2019 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for antiviral compounds against viral enzymes, not pharmacodynamic or exposure-response relationships for the drug ademetionine. |
-| popPK | Hing_2023 | irrelevant | 0 | 0 | The paper focuses on PRMT5 inhibitors and leukemia mechanisms, and does not study ademetionine pharmacokinetics. |
-| PGx | Ho_2013 | not_relevant | 0 | 0 | The study investigates genetic determinants of endogenous metabolites (HCY, SAM, SAH) in healthy volunteers, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
+| popPK | Hing_2023 | irrelevant | 0 | 0 | The paper focuses on PRMT5 inhibitors and leukemia models, not the pharmacokinetics of ademetionine. |
+| PGx | Ho_2013 | not_relevant | 0 | 0 | The study investigates the effects of MTHFR and MTR polymorphisms on endogenous one-carbon metabolism biomarkers (homocysteine, SAM, SAH) in healthy volunteers, not on the pharmacokinetic or pharmacodynamic parameters of the drug ademetionine. |
 | PGx | Hogarth_2008 | not_relevant | 0 | 0 | The paper investigates the effect of thiopurine drugs on DNA methylation and SAM/SAH levels, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | PGx | Houlder_2017 | not_relevant | 0 | 0 | The paper investigates gene expression related to methotrexate pharmacology in rheumatoid nodules and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
 | popPK | Hsueh_2020 | irrelevant | 0 | 0 | The study investigates genetic polymorphisms and developmental delay, not the pharmacokinetics of ademetionine. |
@@ -225,10 +220,10 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Indika_2021 | not_relevant | 0 | 0 | The paper is a review of sulfur amino acid metabolism in autism and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
 | PGx | Ineichen_2014 | not_relevant | 0 | 0 | The study investigates genetic associations with multiple sclerosis onset and does not report pharmacokinetic or pharmacodynamic parameters for ademetionine. |
 | PGx | Inoue-Choi_2012 | not_relevant | 0 | 0 | The paper studies S-adenosylmethionine (SAM) as a metabolite in one-carbon metabolism, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
-| popPK | Jeong_2026 | irrelevant | 0 | 0 | The paper focuses on NSD2 inhibitors for cancer treatment and does not study ademetionine or report any pharmacokinetic parameters for it. |
+| popPK | Jeong_2026 | irrelevant | 0 | 0 | The paper focuses on NSD2 inhibitors for cancer treatment and does not involve ademetionine or its pharmacokinetics. |
 | PD | Jeong_2026 | not_relevant | 0 | 0 | The paper focuses on NSD2 inhibitors (IACS-17596, IACS-17817) and does not mention or study ademetionine. |
-| PGx | Joshi_2026 | not_relevant | 0 | 0 | The paper investigates the effect of a TPMT variant on thiopurine metabolism and SAM binding, not on the pharmacokinetics or pharmacodynamics of ademetionine. |
-| popPK | Joun_2025 | irrelevant | 0 | 0 | The paper focuses on the epigenetic mechanism of PRDM9 in glioblastoma and does not involve ademetionine or report any pharmacokinetic parameters for it. |
+| PGx | Joshi_2026 | not_relevant | 0 | 0 | The paper focuses on thiopurine S-methyltransferase (TPMT) and thiopurines, not ademetionine. |
+| popPK | Joun_2025 | irrelevant | 0 | 0 | The paper investigates the mechanism of drug tolerance in glioblastoma via PRDM9 and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Joun_2025 | not_relevant | 0 | 0 | The paper investigates the mechanism of drug tolerance in glioblastoma (PRDM9) and does not report any pharmacodynamic or exposure-response analysis for ademetionine. |
 | PGx | Kammel_2022 | not_relevant | 0 | 0 | The paper describes bacterial enzyme mechanisms (GrcA/PflB) and is unrelated to human pharmacogenomics or ademetionine. |
 | PGx | Karaca_2014 | not_relevant | 0 | 0 | The paper focuses on cystathionine beta-synthase deficiency and homocystinuria, not the pharmacokinetics or pharmacodynamics of ademetionine. |
@@ -243,25 +238,25 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Krause_2000 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic kinetics (Km, Ki, IC50) for Plasmodium falciparum ODC inhibitors, not pharmacodynamic exposure-response relationships for the drug ademetionine in a biological system. |
 | popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper focuses on androgen receptor-driven polyamine synthesis in prostate cancer and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Kumar_2026 | not_relevant | 0 | 0 | The paper focuses on androgen receptor-driven polyamine synthesis in prostate cancer and does not report any pharmacodynamic or exposure-response data for ademetionine. |
-| PGx | Kunjapur_2016 | not_relevant | 0 | 0 | The paper focuses on metabolic engineering of E. coli for vanillin production and does not involve human pharmacogenomics or the drug ademetionine. |
-| popPK | Landersdorfer_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetic interaction between piperacillin and flucloxacillin, and ademetionine is not the subject drug. |
+| PGx | Kunjapur_2016 | not_relevant | 0 | 0 | The paper focuses on metabolic engineering in E. coli for vanillin production, not pharmacogenomics or the pharmacokinetics/pharmacodynamics of ademetionine in humans. |
+| popPK | Landersdorfer_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetic interaction between piperacillin and flucloxacillin, and ademetionine is not mentioned or studied. |
 | PD | Landersdorfer_2008 | not_relevant | 0 | 0 | The paper studies a PK interaction between piperacillin and flucloxacillin, not ademetionine, and reports no PD parameters. |
 | PGx | Larif_2013 | not_relevant | 0 | 0 | The paper focuses on the structural basis of a TPMT mutation affecting thiopurine metabolism, not ademetionine pharmacokinetics or pharmacodynamics. |
 | PGx | Leclerc_2019 | not_relevant | 0 | 0 | The paper investigates the effects of MTHFR deficiency on liver pathology and metabolic pathways, but does not report pharmacokinetic or pharmacodynamic parameters for the drug ademetionine. |
-| PGx | Lee_1999 | not_relevant | 0 | 0 | The paper studies the metabolism of 2-mercaptopyrazine in rat liver, not the pharmacokinetics or pharmacodynamics of ademetionine in humans. |
+| PGx | Lee_1999 | not_relevant | 0 | 0 | The paper studies the metabolism of 2-mercaptopyrazine in rats and does not involve ademetionine or human pharmacogenomics. |
 | PGx | Lee_2010 | not_relevant | 0 | 0 | The paper describes the synthesis of a chemical analogue of S-adenosylmethionine for enzyme analysis and does not report pharmacogenomic effects on the PK/PD of ademetionine. |
-| PGx | Lee_2018 | not_relevant | 0 | 0 | The paper investigates the effect of AHCY overexpression on endogenous metabolite levels (SAM, SAH, homocysteine) in a disease model, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
+| PGx | Lee_2018 | not_relevant | 0 | 0 | The paper studies the effect of AHCY overexpression on endogenous metabolites (SAM/SAH) in mice, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
 | popPK | Li_2016 | irrelevant | 0 | 0 | The paper describes an immunoassay for S-adenosylhomocysteine and DNA methyltransferase activity, not a pharmacokinetic study of ademetionine. |
 | PD | Li_2016 | not_relevant | 0 | 0 | The paper describes an assay for DNA methyltransferase activity and reports IC50 values for specific inhibitors (Lomeguatrib, 5-Azacytidine, etc.), but does not report any pharmacodynamic or exposure-response relationship for ademetionine. |
 | PGx | Li_2017 | not_relevant | 0 | 0 | The paper investigates the role of MTHFR phosphorylation and variants in cell cycle regulation and histone methylation, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
 | PGx | Li_2021 | not_relevant | 0 | 0 | The paper is a review of SAM-dependent methyltransferases and their genetic polymorphisms, not a study on the pharmacokinetics or pharmacodynamics of ademetionine. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of trilaciclib and its drug-drug interactions, and does not mention or report parameters for ademetionine. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of trilaciclib and its interactions with other drugs, not ademetionine. |
 | PD | Li_2022 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic drug-drug interactions and PK modeling for topotecan clearance, but does not report any pharmacodynamic (PD) or exposure-response relationship for ademetionine (which is not even the subject of the study). |
 | PGx | Li_2024 | not_relevant | 0 | 0 | The paper describes a method for measuring TPMT activity using thiopurines, not ademetionine. |
 | popPK | Li_2024_2 | irrelevant | 0 | 0 | The paper focuses on the development of NNMT inhibitors and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Li_2024_2 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for NNMT inhibitors, not pharmacodynamic or exposure-response data for ademetionine. |
-| PGx | Li_2025 | not_relevant | 0 | 0 | The paper focuses on rice grain weight genetics and S-adenosylmethionine metabolism in plants, not the pharmacogenomics of ademetionine in humans. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper focuses on dengue virus NS5 methyltransferase inhibitors and does not involve ademetionine or pharmacokinetic parameters. |
+| PGx | Li_2025 | not_relevant | 0 | 0 | The paper focuses on rice genetics and grain weight, not human pharmacogenomics or ademetionine pharmacokinetics. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes antiviral screening for dengue virus and does not involve ademetionine pharmacokinetics. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper reports IC50/EC50 values for dengue virus NS5 methyltransferase inhibitors (e.g., SGC0946), not for ademetionine. |
 | popPK | Libby_1995 | irrelevant | 0 | 0 | The paper studies cationic porphyrins as enzyme inhibitors and does not involve ademetionine or pharmacokinetic parameters. |
 | PD | Libby_1995 | not_relevant | 0 | 0 | The paper studies cationic porphyrin derivatives as enzyme inhibitors, not ademetionine, and reports no exposure-response or dose-response relationship for the target drug. |
@@ -275,56 +270,56 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Liu_2020 | not_relevant | 0 | 0 | The paper is a review on folic acid supplementation and DNA methylation, not a pharmacogenomic study of ademetionine PK/PD. |
 | popPK | Liu_2026 | irrelevant | 0 | 0 | The paper investigates the role of m6A RNA modification in Parkinson's disease and mentions S-adenosylmethionine (SAMe) as a therapeutic agent, but it does not report any pharmacokinetic parameters for ademetionine. |
 | PD | Liu_2026 | not_relevant | 0 | 0 | The paper investigates the role of m6A methylation and SAMe supplementation in a mouse model of Parkinson's disease, but does not report any pharmacodynamic or exposure-response analysis for ademetionine. |
-| popPK | Lochman_2026 | irrelevant | 0 | 0 | The study investigates the biotransformation of obefazimod, not ademetionine. |
+| popPK | Lochman_2026 | irrelevant | 0 | 0 | The study focuses on the biotransformation of obefazimod in sheep and nematodes, not the pharmacokinetics of ademetionine. |
 | PD | Lochman_2026 | not_relevant | 0 | 0 | The paper focuses on the biotransformation and metabolic pathways of obefazimod, not ademetionine, and does not report any pharmacodynamic or exposure-response parameters. |
-| popPK | Loesberg_1991 | irrelevant | 0 | 0 | The paper studies the mitochondrial effects of MIBG and methylGAG in cell lines and does not involve ademetionine or pharmacokinetic parameters. |
+| popPK | Loesberg_1991 | irrelevant | 0 | 0 | The paper studies the mitochondrial effects of MIBG and methylGAG in cell lines and does not involve ademetionine pharmacokinetics. |
 | PD | Loesberg_1991 | not_relevant | 0 | 0 | The paper studies m-iodobenzylguanidine and methylglyoxal bis (guanylhydrazone), not ademetionine. |
-| popPK | Luka_2008 | irrelevant | 0 | 0 | The paper is a mechanistic enzymology study on glycine N-methyltransferase and does not report pharmacokinetic parameters for ademetionine. |
+| popPK | Luka_2008 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on glycine N-methyltransferase kinetics and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Luka_2008 | not_relevant | 0 | 0 | The paper describes the enzymatic kinetics of GNMT inhibition by folate, not the pharmacodynamics of the drug ademetionine. |
-| popPK | Luo_2025 | irrelevant | 0 | 0 | The paper studies a SARS-CoV-2 NSP14 inhibitor (C10), not ademetionine, and reports PK parameters for C10 in mice. |
+| popPK | Luo_2025 | irrelevant | 0 | 0 | The paper describes a SARS-CoV-2 NSP14 inhibitor (C10) and does not involve ademetionine or its pharmacokinetics. |
 | PD | Luo_2025 | not_relevant | 0 | 0 | The paper studies the antiviral compound C10 (an NSP14 inhibitor), not ademetionine. |
 | popPK | Luzhkov_2007 | irrelevant | 0 | 0 | The paper is a virtual screening and bioassay study for dengue virus methyltransferase inhibitors and does not involve ademetionine pharmacokinetics. |
 | PD | Luzhkov_2007 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for a novel compound against a dengue virus enzyme, not a pharmacodynamic or exposure-response relationship for the drug ademetionine. |
-| PGx | Lyall_2017 | not_relevant | 0 | 0 | The paper investigates the transcriptional effects of methyl donor deficient diets on lipid metabolism in NAFLD models and does not report pharmacokinetic or pharmacodynamic parameters of ademetionine. |
-| popPK | Ma_2016 | irrelevant | 0 | 0 | The study investigates folic acid supplementation and cognitive outcomes, not the pharmacokinetics of ademetionine. |
-| PGx | Ma_2018 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring TPMT activity using thiopurines, not the pharmacokinetics or pharmacodynamics of ademetionine. |
+| PGx | Lyall_2017 | not_relevant | 0 | 0 | The paper investigates the effects of dietary methyl donor restriction on lipid metabolism and gene expression in mice, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
+| popPK | Ma_2016 | irrelevant | 0 | 0 | The study investigates the effects of folic acid supplementation on cognitive function and biomarkers (including S-adenosylmethionine) in humans, but does not report pharmacokinetic parameters for ademetionine. |
+| PGx | Ma_2018 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring TPMT activity in the context of thiopurine therapy, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | popPK | Mackie_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and characterization of NTMT1/2 inhibitors and does not involve ademetionine or report any pharmacokinetic parameters. |
 | PD | Mackie_2020 | not_relevant | 0 | 0 | The paper reports biochemical IC50 values for NTMT1/2 inhibitors, not pharmacodynamic or exposure-response relationships for ademetionine. |
-| PGx | Majumdar_2019 | not_relevant | 0 | 0 | The paper investigates plant polyamine metabolism in maize and its role in resistance to fungal infection, not the pharmacokinetics or pharmacodynamics of the drug ademetionine in humans. |
+| PGx | Majumdar_2019 | not_relevant | 0 | 0 | The paper studies plant polyamine metabolism in maize and does not involve the drug ademetionine or human pharmacogenomics. |
 | popPK | Malarkey_1989 | irrelevant | 0 | 0 | The study focuses on the toxicity of anguidine and the protective effects of atropine and S-adenosylmethionine, not the pharmacokinetics of ademetionine. |
 | PD | Malarkey_1989 | not_relevant | 0 | 0 | The paper studies the protective effects of atropine and S-adenosylmethionine (SAMe) against anguidine toxicity, not the pharmacodynamics of ademetionine itself, and reports no numeric PD parameters for ademetionine. |
 | popPK | Manni_1995 | irrelevant | 0 | 0 | The paper studies the biochemical effects of a SAMDC inhibitor (CGP 48664) in cell culture and does not report pharmacokinetic parameters for ademetionine. |
-| popPK | Mathur_2017 | irrelevant | 0 | 0 | The paper is a review of bacteriocin-antimicrobial synergy and does not contain any pharmacokinetic data or parameters for ademetionine. |
+| popPK | Mathur_2017 | irrelevant | 0 | 0 | The paper is a review of bacteriocin-antimicrobial synergy and does not contain any pharmacokinetic data for ademetionine. |
 | PD | Mathur_2017 | not_relevant | 0 | 0 | The paper is a review of bacteriocin-antimicrobial synergy and does not contain any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for ademetionine. |
-| PGx | Mazzeo_2018 | not_relevant | 0 | 0 | The paper investigates heat stress response mechanisms in tomato plants using proteomics and does not involve the drug ademetionine or human pharmacogenomics. |
-| popPK | Mezcord_2026 | irrelevant | 0 | 0 | The paper investigates the interaction between vitamin B12 and cefiderocol in bacteria, which is unrelated to the pharmacokinetics of ademetionine. |
+| PGx | Mazzeo_2018 | not_relevant | 0 | 0 | The paper investigates heat stress response mechanisms in tomato plants using proteomics and is unrelated to human pharmacogenomics or ademetionine. |
+| popPK | Mezcord_2026 | irrelevant | 0 | 0 | The paper investigates the interaction between vitamin B12 and cefiderocol in Acinetobacter baumannii, and does not involve ademetionine or its pharmacokinetics. |
 | PD | Mezcord_2026 | not_relevant | 0 | 0 | The paper investigates the interaction between Vitamin B12 and the antibiotic cefiderocol in bacteria, not the pharmacodynamics of ademetionine. |
 | popPK | Mi_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on polyamine transport in prostate cancer cell lines and does not involve ademetionine or pharmacokinetic parameters. |
 | PGx | Mikael_2013 | not_relevant | 0 | 0 | The paper investigates the effects of MTHFR genotype and folate deficiency on inflammatory mediators and metabolic intermediates in mice, but does not report pharmacokinetic or pharmacodynamic parameters for the drug ademetionine. |
 | PGx | Milek_2009 | not_relevant | 0 | 0 | The paper investigates the effect of S-adenosylmethionine (SAM) on 6-mercaptopurine pharmacodynamics, not the pharmacokinetics or pharmacodynamics of ademetionine itself. |
 | PGx | Mizunuma_2004 | not_relevant | 0 | 0 | The paper studies S-adenosylmethionine (AdoMet) in yeast cell cycle regulation, not the pharmacokinetics or pharmacodynamics of the drug ademetionine in humans. |
-| PGx | Mokmak_2009 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenetics of 6-mercaptopurine (6MP) and TPMT, not ademetionine. |
+| PGx | Mokmak_2009 | not_relevant | 0 | 0 | The paper focuses on molecular dynamics simulations of thiopurine S-methyltransferase (TPMT) and 6-mercaptopurine, not ademetionine. |
 | popPK | Montgomery_2014 | irrelevant | 0 | 0 | The paper is a meta-analysis of cognitive performance in mice using S-adenosylmethionine (SAM), not a pharmacokinetic study of ademetionine, and contains no PK parameters. |
 | PGx | Morris_2016 | not_relevant | 0 | 0 | The paper focuses on the biosynthetic gene discovery of benzylisoquinoline alkaloids in yeast and does not discuss ademetionine pharmacokinetics or pharmacodynamics. |
 | PGx | Mu_2024 | not_relevant | 0 | 0 | The paper is a general review of S-methyltransferases and does not report specific pharmacogenomic effects on the PK or PD of ademetionine. |
 | PGx | Muriello_2017 | not_relevant | 0 | 0 | The paper discusses a genetic mutation causing a metabolic disorder (hypermethioninemia) and does not report pharmacokinetic or pharmacodynamic effects of the drug ademetionine. |
-| popPK | Myers_2026 | irrelevant | 0 | 0 | The paper studies BMX-001 (a manganese porphyrin) and does not involve ademetionine or report any pharmacokinetic parameters. |
+| popPK | Myers_2026 | irrelevant | 0 | 0 | The study investigates the radioprotective and anti-fibrotic mechanisms of BMX-001 in mice and does not involve ademetionine or report any pharmacokinetic parameters. |
 | PD | Myers_2026 | not_relevant | 0 | 0 | The paper studies BMX-001, not ademetionine, and reports qualitative mechanistic findings without numeric PD parameters. |
 | PGx | Nascimento_2018 | not_relevant | 0 | 0 | The paper studies protein accumulation in oil palms affected by a disease and does not involve ademetionine or human pharmacogenomics. |
-| PGx | Nazki_2014 | not_relevant | 0 | 0 | The paper is a review of folate metabolism and genetics, with no mention of ademetionine or its pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Nazki_2014 | not_relevant | 0 | 0 | The paper is a review of folate metabolism and genetics, and does not mention ademetionine or its pharmacokinetic/pharmacodynamic parameters. |
 | popPK | Nishibori_1991 | irrelevant | 0 | 0 | The paper studies the enzyme inhibition of histamine N-methyltransferase by 9-amino-1,2,3,4-tetrahydroacridine and does not involve ademetionine or its pharmacokinetics. |
 | PD | Nishibori_1991 | not_relevant | 0 | 0 | The paper studies 9-amino-1,2,3,4-tetrahydroacridine (THA), not ademetionine. |
-| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not mention ademetionine or report any pharmacokinetic parameters for it. |
+| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not contain any pharmacokinetic data for ademetionine. |
 | PD | Nureye_2025 | not_relevant | 0 | 0 | The paper is a review of medicinal plants for hypertension in Ethiopia and does not contain any pharmacodynamic or exposure-response data for ademetionine. |
 | popPK | Ogawa_1997 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Ogawa_1997 | not_relevant | 0 | 0 | The paper focuses on the recombinant expression of rat glycine N-methyltransferase and the structural effects of N-terminal acetylation on S-adenosylmethionine binding, not on the pharmacodynamics of ademetionine. |
 | popPK | Orleni_2024 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of tazemetostat, not ademetionine. |
 | PD | Orleni_2024 | not_relevant | 0 | 0 | The paper is a review of tazemetostat, not ademetionine, and contains no numeric PD parameters or exposure-response analysis. |
 | PGx | Otterness_1985 | not_relevant | 0 | 0 | The paper studies Thiopurine methyltransferase (TPMT) and its substrates (6-MP, Ado-Met), but does not report pharmacokinetic or pharmacodynamic parameters for the drug ademetionine itself. |
-| PGx | Pan_2019 | not_relevant | 0 | 0 | The paper studies wheat genotypes and waterlogging stress, not human pharmacogenomics or ademetionine. |
+| PGx | Pan_2019 | not_relevant | 0 | 0 | The paper studies wheat genotypes and waterlogging stress, not human pharmacogenomics or ademetionine pharmacokinetics. |
 | PGx | Papakostas_2012 | not_relevant | 0 | 0 | The paper is a review of folates and SAMe for depression and does not report pharmacogenomic effects on the PK/PD of ademetionine. |
 | PGx | Papakostas_2014 | not_relevant | 0 | 0 | The paper studies L-methylfolate, not ademetionine, and reports clinical efficacy (HDRS-28) rather than PK/PD parameters. |
-| popPK | Pardali_2020 | irrelevant | 0 | 0 | The paper is a review of antitrypanosomal drug design and does not report pharmacokinetic parameters for ademetionine. |
+| popPK | Pardali_2020 | irrelevant | 0 | 0 | The paper is an in-vitro structure-activity relationship (SAR) study of guanylhydrazone analogues for antitrypanosomal activity and does not involve ademetionine or pharmacokinetic parameters. |
 | PD | Pardali_2020 | not_relevant | 0 | 0 | The paper is a structure-activity relationship (SAR) study of guanylhydrazone analogues against trypanosomes and does not involve the drug ademetionine or report any pharmacodynamic exposure-response models. |
 | PGx | Popp_2009 | not_relevant | 0 | 0 | The paper investigates the association between homocysteine metabolism markers and Alzheimer's disease pathology, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | popPK | Porter_1984 | irrelevant | 0 | 0 | The paper studies methionine analogs and S-adenosylmethionine biosynthesis in cell culture, not the pharmacokinetics of ademetionine. |
@@ -336,29 +331,29 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Pujari_2022 | not_relevant | 0 | 0 | The paper reports enzyme kinetics (Km, IC50) for mycobacterial MenG inhibition by unrelated compounds (Ro 48-8071, DG70), not a pharmacodynamic or exposure-response relationship for the drug ademetionine. |
 | PGx | Reid_2019 | not_relevant | 0 | 0 | The paper investigates the metabolism and CYP inhibition of verbascoside, not the pharmacogenomics of ademetionine. |
 | PGx | Rensvold_2022 | not_relevant | 0 | 0 | The paper focuses on mitochondrial protein functions and disease mechanisms, not pharmacogenomics of ademetionine. |
-| popPK | Robeyns_2024 | irrelevant | 0 | 0 | The study focuses on the metabolic effects of Torin1 in cell lines and does not involve ademetionine or pharmacokinetic parameter estimation. |
+| popPK | Robeyns_2024 | irrelevant | 0 | 0 | The study investigates the metabolic effects of Torin1 in mouse cells and does not involve ademetionine or its pharmacokinetics. |
 | PD | Robeyns_2024 | not_relevant | 0 | 0 | The paper studies Torin1, not ademetionine, and focuses on untargeted metabolomics rather than pharmacodynamic modeling. |
 | PGx | Robledo_2021 | not_relevant | 0 | 0 | The paper studies RNA-protein interactions of the enzyme MetK in bacteria, not the pharmacogenomics of the drug ademetionine. |
-| PGx | Rome_2022 | not_relevant | 0 | 0 | The paper studies the metabolic effects of GNMT deficiency and dietary methionine restriction on SAM levels, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
-| popPK | Ruiz_1998 | irrelevant | 0 | 0 | The paper studies S-adenosylmethionine (SAM) as a substrate for an enzyme, not ademetionine as a drug, and contains no pharmacokinetic parameters. |
+| PGx | Rome_2022 | not_relevant | 0 | 0 | The paper investigates the metabolic effects of GNMT deficiency and dietary methionine restriction on SAM levels and liver function, but does not report pharmacokinetic or pharmacodynamic parameters of the drug ademetionine. |
+| popPK | Ruiz_1998 | irrelevant | 0 | 0 | The study characterizes a bacterial enzyme using S-adenosylmethionine (SAM) as a substrate, not ademetionine (SAMe) pharmacokinetics in a biological subject. |
 | PD | Ruiz_1998 | not_relevant | 0 | 0 | The paper describes enzyme kinetics (Km, Hill coefficient) and photolabeling of a bacterial methyltransferase, not pharmacodynamic exposure-response relationships for the drug ademetionine in a biological system. |
-| popPK | Rühs_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of methotrexate and homocysteine, not ademetionine. |
+| popPK | Rühs_2012 | irrelevant | 0 | 0 | The study models the pharmacokinetics of methotrexate and the pharmacodynamics of homocysteine, not ademetionine. |
 | popPK | Saletu_2002 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation using EEG and psychometry, reporting no quantitative pharmacokinetic parameters for ademetionine. |
 | PD | Saletu_2002 | not_relevant | 2 | 1 | The study reports qualitative EEG and psychometric changes over time after fixed-dose infusions but does not provide plasma concentration data or numeric PD parameters (e.g., EC50, Emax) to establish an exposure-response relationship. |
 | popPK | Santisree_2018 | irrelevant | 0 | 0 | The paper is a plant proteomics study on nitric oxide in chickpea and does not involve the drug ademetionine or pharmacokinetic parameters. |
 | PD | Santisree_2018 | not_relevant | 0 | 0 | The paper studies nitric oxide (NO) donors in chickpea plants, not the drug ademetionine. |
-| popPK | Sarris_2018 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for depression and does not report any pharmacokinetic parameters for ademetionine. |
+| popPK | Sarris_2018 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of SAMe for depression and does not report any pharmacokinetic parameters. |
 | PGx | Scheuermann_2003 | not_relevant | 0 | 0 | The paper discusses the structure of thiopurine methyltransferase (TPMT) and its role in thiopurine metabolism, not ademetionine. |
-| PGx | Scheuermann_2004 | not_relevant | 0 | 0 | The paper investigates the structural dynamics of thiopurine methyltransferase (TPMT) using a SAM analogue, not the pharmacokinetics or pharmacodynamics of ademetionine. |
+| PGx | Scheuermann_2004 | not_relevant | 0 | 0 | The paper investigates the structural dynamics of the TPMT enzyme using a SAM analogue (sinefungin) and does not report pharmacokinetic or pharmacodynamic parameters for ademetionine. |
 | PGx | Seneff_2026 | not_relevant | 0 | 0 | The paper discusses melatonin metabolism and deuterium homeostasis, not the pharmacogenomics of ademetionine. |
-| popPK | Sharma_2025 | irrelevant | 0 | 0 | The paper describes a genetically encoded fluorescent reporter for polyamines (spermidine/spermine) and does not involve the drug ademetionine or report any pharmacokinetic parameters. |
+| popPK | Sharma_2025 | irrelevant | 0 | 0 | The paper describes a genetically encoded fluorescent reporter for polyamines and does not involve ademetionine or pharmacokinetic modeling. |
 | PD | Sharma_2025 | not_relevant | 0 | 0 | The paper describes a genetically encoded fluorescent reporter for polyamines and does not investigate the pharmacodynamics of ademetionine. |
-| popPK | Sharma_2026 | irrelevant | 0 | 0 | The paper investigates the role of polyamines in iron buffering and ferroptosis, and does not involve ademetionine or pharmacokinetic parameters. |
+| popPK | Sharma_2026 | irrelevant | 0 | 0 | The paper investigates the role of polyamines in iron buffering and ferroptosis, and does not involve ademetionine or its pharmacokinetics. |
 | PD | Sharma_2026 | not_relevant | 0 | 0 | The paper discusses polyamines and ferroptosis mechanisms, not ademetionine pharmacodynamics or exposure-response relationships. |
 | PGx | Shi_2009 | not_relevant | 0 | 0 | The paper discusses the metabolism of neonicotinoid insecticides, not ademetionine. |
-| popPK | Sikorski_2019 | irrelevant | 0 | 0 | The paper studies the toxicological effects of glyphosate on duckweed (Lemna minor) and does not involve ademetionine or pharmacokinetic parameters. |
+| popPK | Sikorski_2019 | irrelevant | 0 | 0 | The study investigates the toxicological effects of glyphosate on duckweed (Lemna minor) and does not involve ademetionine or pharmacokinetic modeling. |
 | PD | Sikorski_2019 | not_relevant | 0 | 0 | The paper studies the toxicological effects of glyphosate on duckweed, not the pharmacodynamics of ademetionine. |
-| popPK | Silva_2023 | irrelevant | 0 | 0 | The paper focuses on the structure-activity relationship of acridine derivatives for leishmaniasis and does not involve ademetionine or pharmacokinetic parameters. |
+| popPK | Silva_2023 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study of acridine derivatives for leishmaniasis and does not involve ademetionine pharmacokinetics. |
 | PD | Silva_2023 | not_relevant | 0 | 0 | The paper reports in vitro SAR and IC50/EC50 values for acridine derivatives against Leishmania, not a pharmacodynamic or exposure-response relationship for ademetionine. |
 | PGx | Singh_2021 | not_relevant | 0 | 0 | The paper studies arsenic toxicity in castor plants, not the pharmacogenomics of ademetionine in humans. |
 | popPK | Siu_2002 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of SAM486A, not ademetionine. |
@@ -368,37 +363,37 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Stanek_1993 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for a new compound (4-amidinoindan-1-one 2'-amidinohydrazone) inhibiting SAMDC, not pharmacodynamic or exposure-response data for ademetionine. |
 | popPK | Stramentinoli_1987 | irrelevant | 2 | 0 | The paper is a review summarizing pharmacokinetic data without providing original quantitative parameter values in the evidence. |
 | PD | Stramentinoli_1987 | not_relevant | 1 | 0 | The text is a summary of a review or general article describing PK and qualitative PD (anti-inflammatory/analgesic) without providing specific numeric PD parameters or concentration-effect curves. |
-| popPK | Sullivan_1983 | irrelevant | 0 | 0 | The paper describes in-vitro enzyme kinetics of methionine adenosyltransferase isozymes, not the pharmacokinetic disposition of ademetionine. |
+| popPK | Sullivan_1983 | irrelevant | 0 | 0 | The paper describes in vitro enzyme kinetics of methionine adenosyltransferase isozymes in rat liver and kidney, not the pharmacokinetic disposition of ademetionine. |
 | PD | Sullivan_1983 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Km, Hill coefficients) for methionine adenosyltransferase isozymes, not a pharmacodynamic exposure-response or dose-response relationship for the drug ademetionine in a biological system. |
-| popPK | Sutto-Ortiz_2023 | irrelevant | 0 | 0 | The paper is a review of the biochemistry of the Respiratory Syncytial Virus (RSV) L protein and does not mention ademetionine or report any pharmacokinetic parameters. |
+| popPK | Sutto-Ortiz_2023 | irrelevant | 0 | 0 | The paper is a review of the biochemistry of the Respiratory Syncytial Virus L protein and contains no pharmacokinetic data for ademetionine. |
 | PD | Sutto-Ortiz_2023 | not_relevant | 0 | 0 | The paper is a structural biology review of the RSV L protein and does not contain any pharmacodynamic or exposure-response data for ademetionine. |
 | popPK | Tchantchou_2008 | irrelevant | 0 | 0 | The study investigates the mechanistic effect of S-adenosylmethionine (SAM) on glutathione S-transferase activity in vitro and in mice, but does not report any pharmacokinetic parameters for ademetionine. |
 | popPK | Tekwani_1992 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of enzyme inhibitors for Trypanosoma brucei and does not involve ademetionine pharmacokinetics. |
 | PD | Tekwani_1992 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (IC50, Ki) for S-adenosylmethionine analogues against Trypanosoma brucei, not pharmacodynamic or exposure-response data for the drug ademetionine. |
 | PGx | Teng_2011 | not_relevant | 0 | 0 | The paper studies the metabolic consequences of BHMT deletion on endogenous metabolites (homocysteine, SAM, lipids) and does not report the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
-| PGx | Thapa_2023 | not_relevant | 0 | 0 | The paper studies the effect of an AHCY gene variant on aging and metabolite levels in C. elegans, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
+| PGx | Thapa_2023 | not_relevant | 0 | 0 | The paper studies the effect of an AHCY mutation on C. elegans longevity and methionine metabolite levels, not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
 | PGx | Tian_2024 | not_relevant | 0 | 0 | The paper focuses on QTL mapping for stem strength in rapeseed and does not involve ademetionine or human pharmacogenomics. |
 | PGx | Tong_2015 | not_relevant | 0 | 0 | The study investigates the effect of ademetionine on CYP450 activity in rats, not the effect of a gene variant on ademetionine's PK/PD. |
-| PGx | Torres_2025 | not_relevant | 0 | 0 | The paper investigates the role of the SEL1L-HRD1 ERAD complex in neuronal one-carbon metabolism and motor function, and does not report on the pharmacokinetics or pharmacodynamics of ademetionine. |
-| PGx | Torres_2026 | not_relevant | 0 | 0 | The paper investigates the role of the SEL1L-HRD1 ERAD pathway in neuronal function and one-carbon metabolism in mice, and does not report on the pharmacokinetics or pharmacodynamics of ademetionine. |
+| PGx | Torres_2025 | not_relevant | 0 | 0 | The paper investigates the role of the SEL1L-HRD1 ERAD complex in neuronal one-carbon metabolism and does not report pharmacokinetic or pharmacodynamic effects of ademetionine. |
+| PGx | Torres_2026 | not_relevant | 0 | 0 | The paper investigates the role of the SEL1L-HRD1 ERAD pathway in neuronal function and one-carbon metabolism in mice, and does not report pharmacokinetic or pharmacodynamic effects of ademetionine. |
 | popPK | Ujihira_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of GCDCA-S, not ademetionine. |
 | PD | Ujihira_2025 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetic (PK) modeling of an endogenous biomarker (GCDCA-S) and transporter inhibition, not on the pharmacodynamic (PD) or exposure-response relationship of ademetionine. |
 | PGx | Urbančič_2019 | not_relevant | 0 | 0 | The paper investigates the methylation of selenocysteine by TPMT, not the pharmacokinetics or pharmacodynamics of ademetionine. |
-| PGx | Van_1992 | not_relevant | 0 | 0 | The paper studies the photoaffinity labeling of TPMT with S-adenosyl-L-methionine (Ado-Met) as a ligand, not the pharmacokinetics or pharmacodynamics of ademetionine as a therapeutic drug. |
-| PGx | Varela-Rey_2013 | not_relevant | 0 | 0 | The paper discusses alcohol-induced cancer and DNA methylation mechanisms involving SAMe, but does not report pharmacogenomic effects on the PK or PD of ademetionine as a therapeutic drug. |
+| PGx | Van_1992 | not_relevant | 0 | 0 | The paper studies the photoaffinity labeling of thiopurine methyltransferase (TPMT) using S-adenosyl-L-methionine (Ado-Met) as a ligand, rather than reporting pharmacogenomic effects on the PK/PD of ademetionine itself. |
+| PGx | Varela-Rey_2013 | not_relevant | 0 | 0 | The paper discusses alcohol-induced cancer and DNA methylation mechanisms involving SAMe, but does not report pharmacogenomic effects on the PK or PD of ademetionine as a therapeutic agent. |
 | popPK | Vaubourgeix_2009 | irrelevant | 0 | 0 | The paper investigates the inhibition of mycobacterial enzymes by S-adenosyl-N-decyl-aminoethyl, not the pharmacokinetics of ademetionine. |
 | PD | Vaubourgeix_2009 | not_relevant | 0 | 0 | The paper investigates a novel inhibitor of mycobacterial enzymes, not the pharmacodynamics of ademetionine. |
 | popPK | Votruba_1990 | irrelevant | 0 | 0 | The study investigates the antiviral mechanism of an AHPA ester in cell culture, not the pharmacokinetics of ademetionine. |
 | PGx | Wachter_2019 | not_relevant | 0 | 0 | The paper discusses bacterial sRNA regulation in Coxiella burnetii and is unrelated to ademetionine pharmacogenomics. |
-| popPK | Walton_2024 | irrelevant | 0 | 0 | The paper investigates PRMT1 inhibition in renal cell carcinoma and does not mention ademetionine or report any pharmacokinetic parameters. |
+| popPK | Walton_2024 | irrelevant | 0 | 0 | The paper investigates PRMT1 inhibition in renal cell carcinoma and does not study ademetionine or its pharmacokinetics. |
 | PGx | Wan_2004 | not_relevant | 0 | 0 | The paper describes a mass spectrometry method for detecting methylation products and does not report pharmacogenomic effects on the PK or PD of ademetionine. |
-| popPK | Wang_2003 | irrelevant | 0 | 0 | The paper describes an in-vitro enzymatic assay for methionine adenosyltransferase activity and does not report pharmacokinetic parameters for ademetionine. |
+| popPK | Wang_2003 | irrelevant | 0 | 0 | The study describes an in-vitro enzymatic assay for methionine adenosyltransferase activity and reports kinetic parameters (Km, Vmax) for the enzyme, not pharmacokinetic disposition parameters for ademetionine. |
 | PD | Wang_2003 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring enzyme activity (MAT) and reports enzyme kinetics (Km, Vmax, Hill coefficient), not a pharmacodynamic exposure-response or dose-response relationship for the drug ademetionine. |
-| popPK | Wang_2021 | irrelevant | 0 | 0 | The paper is a review on anti-SARS-CoV-2 drug discovery and does not contain any pharmacokinetic data for ademetionine. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | The paper is a review of structural biology and drug discovery for SARS-CoV-2 and does not contain pharmacokinetic data for ademetionine. |
 | PD | Wang_2021 | not_relevant | 0 | 0 | The paper is a review of structural biology and computational methods for anti-SARS-CoV-2 drug discovery and does not report any pharmacodynamic or exposure-response data for ademetionine. |
 | popPK | Wang_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on gastric cancer and 5-fluorouracil resistance, with no pharmacokinetic data for ademetionine. |
 | PD | Wang_2025 | not_relevant | 0 | 0 | The paper investigates the molecular mechanism of 5-fluorouracil resistance mediated by NNMT and does not report any pharmacodynamic or exposure-response relationship for ademetionine. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a structural and mechanistic study of the enzyme OkaE and its substrate okaramine, not a pharmacokinetic study of the drug ademetionine. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper describes the structural and mechanistic insights of an enzyme (OkaE) involved in natural product synthesis, not the pharmacokinetics of ademetionine. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper describes the structural and mechanistic basis of the enzyme OkaE (a natural product biosynthetic enzyme) and does not involve the drug ademetionine or any pharmacodynamic/exposure-response analysis. |
 | PGx | Weile_2021 | not_relevant | 0 | 0 | The paper focuses on MTHFR enzyme function and variant classification, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | PGx | Weiner_2014 | not_relevant | 0 | 0 | The paper investigates the effect of MTR and MTHFR polymorphisms on genomic DNA methylation levels, not on the pharmacokinetics or pharmacodynamics of ademetionine. |
@@ -408,9 +403,9 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Wright_1991 | irrelevant | 0 | 0 | The paper studies the antimalarial compound MDL 73811 in Plasmodium falciparum and does not involve ademetionine or pharmacokinetic parameters. |
 | PGx | Wu_2021 | not_relevant | 0 | 0 | The paper investigates MTHFR knockdown and folate depletion in cancer cells, not the pharmacokinetics or pharmacodynamics of ademetionine. |
 | PGx | Xavier_2017 | not_relevant | 0 | 0 | The paper focuses on genome-scale metabolic models and cofactor essentiality in prokaryotes, with no mention of ademetionine or pharmacogenomics. |
-| popPK | Yang_1988 | irrelevant | 0 | 0 | The paper is a mechanistic enzymology study on choline synthesis in mammary tissue and does not report pharmacokinetic parameters for ademetionine. |
+| popPK | Yang_1988 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of choline synthesis in mammary tissue and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Yang_1988 | not_relevant | 0 | 0 | The paper describes the enzymatic kinetics of phosphatidylethanolamine N-methyltransferase (PeMT) using S-adenosylmethionine (AdoMet) as a substrate, not the pharmacodynamic response to the drug ademetionine. |
-| popPK | Yang_2026 | irrelevant | 0 | 0 | The paper focuses on a PBPK-PD model for oxytocin, not ademetionine. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The study focuses on oxytocin pharmacokinetics and uterine contraction, not ademetionine. |
 | PD | Yang_2026 | not_relevant | 0 | 0 | The paper focuses on oxytocin, not ademetionine. |
 | popPK | Yao_2026 | irrelevant | 0 | 0 | The paper describes a METTL9 inhibitor and does not involve ademetionine or report any pharmacokinetic parameters. |
 | PD | Yao_2026 | not_relevant | 0 | 0 | The paper reports an IC50 for a novel METTL9 inhibitor (METTL9i), not ademetionine, and does not contain any pharmacodynamic or exposure-response data for the target drug. |
@@ -420,12 +415,12 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Zhao_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of S-adenosylmethionine (SAM) on gastric cancer cell lines, not a pharmacokinetic study of ademetionine. |
 | popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper is a review of the SAM-m6A axis and plant-derived compounds, not a pharmacokinetic study of ademetionine. |
 | PD | Zhao_2026 | not_relevant | 0 | 0 | The paper is a review of the SAM-m6A axis and plant-derived compounds, containing no specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters for ademetionine. |
-| popPK | Zhaxi_2026 | irrelevant | 0 | 0 | The paper is a multi-omics study on chicken gut microbiota and muscle fatty acid composition, unrelated to ademetionine pharmacokinetics. |
+| popPK | Zhaxi_2026 | irrelevant | 0 | 0 | The study investigates gut microbiota and fatty acid composition in chickens, with no pharmacokinetic data for ademetionine. |
 | popPK | Zhou_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of SAM486A (an S-adenosylmethionine decarboxylase inhibitor), not ademetionine. |
 | popPK | Zhu_2018 | irrelevant | 0 | 0 | The paper focuses on computational interaction mechanisms of PRMT5 inhibitors and does not report pharmacokinetic parameters for ademetionine. |
 | PD | Zhu_2018 | not_relevant | 0 | 0 | The paper focuses on computational docking and molecular dynamics of PRMT5 inhibitors (ademetionine/SAM analogs) and does not report in vivo pharmacokinetic or pharmacodynamic exposure-response relationships for ademetionine. |
 | PGx | van_2023 | not_relevant | 0 | 0 | The paper investigates the effect of MTHFR genotype on placental DNA methylation and one-carbon metabolites (SAM/SAH), not the pharmacokinetics or pharmacodynamics of the drug ademetionine. |
-| PGx | Šmid_2024 | not_relevant | 0 | 0 | The paper investigates the endogenous role of TPMT and its regulation, not the pharmacokinetics or pharmacodynamics of ademetionine. |
+| PGx | Šmid_2024 | not_relevant | 0 | 0 | The paper focuses on the endogenous role of TPMT in redox processes and SAM consumption, not on the pharmacokinetics or pharmacodynamics of ademetionine. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

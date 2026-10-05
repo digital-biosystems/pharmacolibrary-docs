@@ -1,15 +1,9 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "ProteinC_Troisi2024_reference",
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  500.0,
-  1000.0,
-  2000.0
  ],
  "parameters": {
   "Cl": 1.638888888888889e-07,
@@ -17,14 +11,14 @@
   "VdPerKg": 0.00028571428571428574,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0005,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662155
+  "central.C": 660.0000000662064
  },
  "reference_peaks": {
-  "central.C": 0.02493864226470213
+  "central.C": 0.0004987728901975372
  },
  "stop_time": 432000.0,
  "template": "PK_1C",

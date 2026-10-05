@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Epoprostenol_Keizer2010_reference",
  "molar_masses": {
   "central.C": 0.35246510000000003
@@ -8,11 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  0.2,
-  32.0
- ],
  "parameters": {
   "Cl": 1.6861111111111112e-06,
   "F": 1.0,
@@ -20,14 +15,14 @@
   "VdPerKg": 0.00016142857142857145,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 2.0000000000000002e-07,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662042
+  "central.C": 660.0000000662124
  },
  "reference_peaks": {
-  "central.C": 1.6930102198193012e-05
+  "central.C": 0.0008464977359954224
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

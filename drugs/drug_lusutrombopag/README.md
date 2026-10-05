@@ -14,23 +14,31 @@ Lusutrombopag is a medicine used to treat thrombocytopenia, a condition of low b
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q27265116](https://www.wikidata.org/wiki/Q27265116) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| lusutrombopag | parent | 591.54 | C29H32Cl2N2O5S | DrugBank | [49843517](https://pubchem.ncbi.nlm.nih.gov/compound/49843517) | Katsube_2019 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 22:35 | 2:00 | 0/1/0 | 1/0/0 | 0/0/0 | 77,014/1,446 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 19:54 | 7:01 | 0/1/0 | 1/0/0 | 0/0/0 | 133,419/19,733 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Katsube_2019_reference](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | held back | 1-compartment, oral | 9 | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.037). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Katsube_2019_reference](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | — | 1-compartment (no model) | 9 | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Katsube_2019_PLT](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | platelet count ← lusutrombopag · indirect response — drug inhibits the production of platelet count | — | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Katsube_2019_PLT](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | platelet counts ← lusutrombopag · indirect response — drug stimulates the production of platelet counts | — | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## ADME sites
 
@@ -61,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -70,15 +78,15 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Katsube_2016.pdf` | Katsube T et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2016) | popPK | 10 | [10.1007/s40262-016-0411-6](https://doi.org/10.1007/s40262-016-0411-6) | [27209291](https://pubmed.ncbi.nlm.nih.gov/27209291) | The paper describes a population PK/PD model for lusutrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Katsube_2016.pdf` | Katsube T et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2016) | popPK | 10 | [10.1007/s40262-016-0411-6](https://doi.org/10.1007/s40262-016-0411-6) | [27209291](https://pubmed.ncbi.nlm.nih.gov/27209291) | The paper describes a population PK model for lusutrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-18T22:33:23.532360+00:00</sub>
+<sub>queue written 2026-10-05T19:48:01.183507+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Katsube_2016 | relevant | 10 | 0 | The paper describes a population PK/PD model for lusutrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Katsube_2016 | relevant | 10 | 0 | The paper describes a population PK model for lusutrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 22:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 19:48 UTC</sub>

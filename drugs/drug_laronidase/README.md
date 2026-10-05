@@ -17,18 +17,11 @@ Laronidase is an enzyme replacement therapy used to treat mucopolysaccharidosis 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:33 | 1:44 | 0/0/0 | 1/0/0 | 0/0/0 | 7,192/2,347 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 11:16 | 1:05 | 0/0/0 | 0/0/0 | 0/0/0 | 29,338/1,940 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uCS](drugs/drug_laronidase/pd_Qi_2019_uCS.md) | urinary chondroitin sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uDS](drugs/drug_laronidase/pd_Qi_2019_uDS.md) | urinary dermatan sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y) |
 
 ## ADME sites
 
@@ -56,10 +49,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baldo_2015 | irrelevant | 0 | 0 | The paper is a review of approved enzymes and their mechanisms/adverse effects, containing no original pharmacokinetic data or quantitative disposition parameters for laronidase. |
+| popPK | Baldo_2015 | irrelevant | 0 | 0 | The paper is a review of approved enzymes and their mechanisms/adverse effects, containing no quantitative pharmacokinetic parameters for laronidase. |
 | popPK | Giugliani_2009 | irrelevant | 1 | 0 | The paper is a dose-optimization trial focusing on pharmacodynamic endpoints (GAG excretion, liver volume) and safety, with no quantitative pharmacokinetic parameters (CL, V, t1/2) reported for laronidase. |
 | PD | Giugliani_2009 | not_relevant | 3 | 1 | The paper reports a dose-optimization trial comparing different dosing regimens but only provides qualitative conclusions (e.g., "no significant differences," "near-maximal reductions") without reporting specific numeric PD parameters (like Emax, EC50) or detailed concentration-effect curves in the provided text. |
-| popPK | Giugliani_2017 | irrelevant | 0 | 0 | The paper is a clinical trial focused on immune tolerance induction and anti-drug antibody titers, reporting no pharmacokinetic parameters (CL, V, t1/2) for laronidase. |
+| popPK | Giugliani_2017 | irrelevant | 0 | 0 | The study focuses on immune tolerance induction and anti-drug antibody titers, not pharmacokinetic disposition parameters. |
 | popPK | Harmatz_2024 | irrelevant | 0 | 0 | The study evaluates lepunafusp alfa (JR-171), not laronidase, which is only mentioned as a comparator for efficacy. |
 | popPK | He_2013 | irrelevant | 0 | 0 | The paper focuses on the production and glycosylation of recombinant alpha-L-iduronidase (IDUA) in Arabidopsis seeds, not the pharmacokinetics of laronidase. |
 | PD | He_2013 | not_relevant | 0 | 0 | The paper focuses on the production, glycosylation, and enzymatic kinetics of recombinant IDUA in Arabidopsis seeds, containing no pharmacokinetic or pharmacodynamic data for laronidase in vivo. |
@@ -67,11 +60,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PGx | Jameson_2013_2 | not_relevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy and safety of laronidase in MPS I patients and does not report any pharmacogenomic analysis or gene-variant effects on PK/PD parameters. |
 | PGx | Jameson_2016 | not_relevant | 0 | 0 | The paper is a Cochrane review evaluating the clinical efficacy and safety of laronidase in MPS I patients, but it does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Jameson_2019 | not_relevant | 0 | 0 | The paper is a clinical trial review of laronidase efficacy and safety in MPS I, reporting no pharmacogenomic analysis or gene-variant specific PK/PD effects. |
-| popPK | Mayer_2015 | irrelevant | 2 | 0 | The study focuses on the formulation and biodistribution of laronidase nanocapsules rather than reporting quantitative population pharmacokinetic parameters (CL, V, Q, ka) for the drug itself. |
-| popPK | Pardridge_2018 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of valanafusp alpha, with laronidase serving only as a comparator for which no specific quantitative parameters are reported in the evidence. |
-| popPK | Qi_2019 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vestronidase alfa, not laronidase. |
-| popPK | Wraith_2007 | irrelevant | 2 | 0 | The paper is a clinical efficacy/safety study that mentions pharmacokinetics in the objective but provides no quantitative PK parameter values (CL, V, t1/2) in the evidence. |
-| popPK | Xue_2016 | irrelevant | 0 | 0 | The paper is a meta-analysis focusing on the relationship between anti-drug antibodies and pharmacodynamic/clinical outcomes, not a pharmacokinetic study reporting quantitative disposition parameters for laronidase. |
+| popPK | Mayer_2015 | irrelevant | 2 | 0 | The study focuses on the formulation and biodistribution of laronidase nanocapsules, reporting qualitative improvements in clearance profile and enzyme activity rather than quantitative population pharmacokinetic parameters (CL, V, ka) for the drug itself. |
+| popPK | Pardridge_2018 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of valanafusp alpha, with laronidase serving only as a comparator for which no specific numeric parameters are provided in the text. |
+| popPK | Qi_2019 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vestronidase alfa, not laronidase. |
+| popPK | Wraith_2007 | irrelevant | 2 | 0 | The study mentions pharmacokinetics in the objective but the provided evidence contains only clinical efficacy and safety results, with no quantitative PK parameter values (CL, V, t1/2) reported. |
+| popPK | Xue_2016 | irrelevant | 0 | 0 | The paper is a meta-analysis focusing on the relationship between anti-drug antibodies and pharmacodynamic/clinical outcomes, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for laronidase. |
 | PD | Xue_2016 | not_relevant | 3 | 1 | The paper is a meta-analysis reporting qualitative inverse relationships between antibody levels and GAG reduction, but it does not provide a formal PK/PD model or specific numeric PD parameters (e.g., Emax, EC50) for laronidase exposure. |
 
 ---

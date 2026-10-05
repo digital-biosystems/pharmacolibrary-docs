@@ -16,7 +16,7 @@
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL (`Q22`)
 - **effect:** not quantified
-- **phenotype groups:** the paper's groups mapped to standard phenotypes
+- **phenotype groups:** only some of the paper's groups could be mapped to standard phenotypes
 - **study type:** risk association (case–control or cohort study)
 
 ### Notes from the extraction

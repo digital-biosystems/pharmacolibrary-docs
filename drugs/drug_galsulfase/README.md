@@ -17,18 +17,11 @@ Galsulfase is an enzyme replacement therapy used to treat mucopolysaccharidosis 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:17 | 1:33 | 0/0/0 | 0/1/0 | 0/0/0 | 5,613/1,680 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
+| 2026-10-05 10:37 | 1:37 | 0/0/0 | 0/0/0 | 0/0/0 | 26,305/3,746 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uCS](drugs/drug_galsulfase/pd_Qi_2019_uCS.md) | urinary chondroitin sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uDS](drugs/drug_galsulfase/pd_Qi_2019_uDS.md) | urinary dermatan sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y) |
 
 ## ADME sites
 
@@ -48,38 +41,38 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jones_1998.pdf` | Jones MZ et al., Recombinant caprine 3H-[N-acetylglucosa…, Journal of molecular neuros… (1998) | popPK | 10 | [10.1385/JMN:11:3:223](https://doi.org/10.1385/JMN:11:3:223) | [10344792](https://pubmed.ncbi.nlm.nih.gov/10344792) | The paper reports quantitative pharmacokinetic parameters (half-lives) for human N-acetylgalactosamine-4-sulfatase (galsulfase) in rats. |
-| `Ruane_2016.pdf` | Ruane T et al., Pharmacodynamics, pharmacokinetics and…, Molecular genetics and meta… (2016) | popPK | 8 | [10.1016/j.ymgme.2015.10.006](https://doi.org/10.1016/j.ymgme.2015.10.006) | [26776148](https://pubmed.ncbi.nlm.nih.gov/26776148) | The study reports PK parameters (AUC, Cmax) for galsulfase in cats, but specific numeric values are not provided in the text, only relative comparisons. |
+| `Ruane_2016.pdf` | Ruane T et al., Pharmacodynamics, pharmacokinetics and…, Molecular genetics and meta… (2016) | popPK | 8 | [10.1016/j.ymgme.2015.10.006](https://doi.org/10.1016/j.ymgme.2015.10.006) | [26776148](https://pubmed.ncbi.nlm.nih.gov/26776148) | The study reports pharmacokinetic parameters (AUC, Cmax) for galsulfase in cats, but specific numeric values are not provided in the text, likely residing in figures or tables not included in the evidence. |
 
-<sub>queue written 2026-09-30T02:17:17.244999+00:00</sub>
+<sub>queue written 2026-10-05T10:36:44.929674+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Auclair_2006 | irrelevant | 1 | 0 | The study focuses on intra-articular efficacy in feline MPS VI and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for galsulfase. |
-| popPK | Auclair_2007 | irrelevant | 0 | 0 | The study focuses on the efficacy of intra-articular administration in feline MPS VI and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for galsulfase. |
-| popPK | Baldo_2015 | irrelevant | 0 | 0 | The paper is a review of approved enzymes and their mechanisms/adverse effects, containing no original pharmacokinetic data or quantitative disposition parameters for galsulfase. |
+| popPK | Auclair_2006 | irrelevant | 0 | 0 | The study focuses on the efficacy of intra-articular enzyme replacement therapy in cats and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for galsulfase. |
+| popPK | Auclair_2007 | irrelevant | 0 | 0 | The study is a preclinical efficacy/toxicology study in cats focusing on joint pathology and antibody titers, with no pharmacokinetic parameters (CL, V, t1/2) reported. |
+| popPK | Baldo_2015 | irrelevant | 0 | 0 | The paper is a review of approved enzymes and their mechanisms/adverse effects, containing no quantitative pharmacokinetic parameters for galsulfase. |
 | popPK | Brands_2013 | irrelevant | 0 | 0 | The paper focuses on genotype-phenotype correlations and antibody response to galsulfase, not on pharmacokinetic disposition parameters. |
 | PD | Brands_2013 | not_relevant | 2 | 1 | The paper focuses on genotype-phenotype correlations and immunogenicity (antibody titers and in vitro inhibition), but does not report a pharmacodynamic exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for galsulfase. |
-| popPK | Harper_1993 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of lysosomal sulfate efflux and does not report pharmacokinetic parameters for galsulfase. |
+| popPK | Harper_1993 | irrelevant | 0 | 0 | The paper describes in vitro lysosomal sulfate efflux and enzyme activity, not the pharmacokinetic disposition parameters (CL, V, etc.) of the drug galsulfase. |
+| popPK | Jones_1998 | irrelevant | 2 | 0 | The study reports half-lives for rh4S (galsulfase) in rats but does not provide clearance, volume of distribution, or compartmental model parameters in the text. |
 | popPK | Qi_2019 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vestronidase alfa, not galsulfase. |
-| popPK | Ruane_2016 | relevant | 8 | 2 | The study reports PK parameters (AUC, Cmax) for galsulfase in cats, but specific numeric values are not provided in the text, only relative comparisons. |
+| popPK | Ruane_2016 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (AUC, Cmax) for galsulfase in cats, but specific numeric values are not provided in the text, likely residing in figures or tables not included in the evidence. |
 | PD | Ruane_2016 | not_relevant | 2 | 1 | The study compares PK and PD outcomes between two infusion durations but reports no concentration-effect or dose-response modeling, nor any numeric PD parameters (e.g., Emax, EC50). |
 | popPK | White_2008 | irrelevant | 0 | 0 | The paper describes in-vitro neutralizing antibody assays for galsulfase and does not report any pharmacokinetic disposition parameters. |
 | PD | White_2008 | not_relevant | 0 | 0 | The paper describes the development and comparison of in vitro neutralizing antibody assays for galsulfase, but does not report any pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters. |
-| popPK | White_2008_2 | irrelevant | 0 | 0 | The paper describes an immunoassay for measuring antibody response to galsulfase and contains no pharmacokinetic parameters. |
-| popPK | unknown_2005 | irrelevant | 2 | 0 | The text is a regulatory and clinical trial overview that mentions pharmacokinetics were evaluated but does not provide any quantitative PK parameter values (CL, V, t1/2, etc.). |
+| popPK | White_2008_2 | irrelevant | 0 | 0 | The paper describes an immunoassay for measuring antibody response to galsulfase, not a pharmacokinetic study with disposition parameters. |
+| popPK | unknown_2005 | irrelevant | 0 | 0 | The text is a regulatory and clinical trial overview that mentions pharmacokinetics were evaluated but provides no quantitative PK parameters (CL, V, t1/2, etc.). |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

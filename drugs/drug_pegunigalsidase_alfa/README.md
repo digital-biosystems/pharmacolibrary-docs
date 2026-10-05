@@ -17,7 +17,7 @@ Pegunigalsidase alfa is an enzyme replacement therapy used to treat Fabry diseas
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:47 | 1:00 | 0/0/0 | 0/0/0 | 0/0/0 | 1,728/170 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/6 | 5/0 | 0 |
+| 2026-10-05 11:18 | 1:24 | 0/0/0 | 0/0/0 | 0/0/0 | 63,670/756 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/6 | 5/0 | 0 |
 
 ## popPK records
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -51,9 +51,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Schiffmann_2019.pdf` | Schiffmann R et al., Pegunigalsidase alfa, a novel PEGylated…, Journal of inherited metabo… (2019) | popPK | 7 | [10.1002/jimd.12080](https://doi.org/10.1002/jimd.12080) | [30834538](https://pubmed.ncbi.nlm.nih.gov/30834538) | PK study of pegunigalsidase alfa with half-life values (53–121 h) reported, but clearance/volume parameters likely in figures/supplementary material not provided. |
+| `Schiffmann_2019.pdf` | Schiffmann R et al., Pegunigalsidase alfa, a novel PEGylated…, Journal of inherited metabo… (2019) | popPK | 8 | [10.1002/jimd.12080](https://doi.org/10.1002/jimd.12080) | [30834538](https://pubmed.ncbi.nlm.nih.gov/30834538) | The study reports the mean terminal plasma half-life (53-121 hours) for pegunigalsidase alfa in humans, but lacks other quantitative disposition parameters like clearance or volume of distribution. |
 
-<sub>queue written 2026-09-30T02:47:28.530523+00:00</sub>
+<sub>queue written 2026-10-05T11:18:22.515562+00:00</sub>
 
 ## Screened and excluded
 
@@ -61,17 +61,18 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Azevedo_2020 | irrelevant | 0 | 0 | A narrative review of Fabry disease therapies with no PK parameters for pegunigalsidase alfa. |
 | PD | Azevedo_2020 | not_relevant | 1 | 0 | Narrative review of Fabry disease therapies with no concentration-effect or dose-response analysis or numeric PD parameters for pegunigalsidase alfa. |
-| popPK | Azimpour_2025 | irrelevant | 0 | 0 | This is a health-state utility (EQ-5D) study in Fabry disease, not a PK study; no pharmacokinetic parameters for pegunigalsidase alfa are reported. |
-| popPK | Brussee_2026 | irrelevant | 0 | 0 | This is a population-PK study of lucerastat, a different drug; pegunigalsidase alfa is not the subject and no values for it appear. |
+| popPK | Azimpour_2025 | irrelevant | 0 | 0 | The paper reports health state utility values (EQ-5D-3L) for quality of life and economic evaluation, not pharmacokinetic parameters. |
+| popPK | Brussee_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lucerastat, not pegunigalsidase alfa. |
 | PD | Brussee_2026 | not_relevant | 0 | 0 | Paper is about lucerastat (not pegunigalsidase alfa) and reports only a population PK model with exposure/dose adaptation, no PD or concentration-effect parameters. |
-| popPK | Germain_2024 | irrelevant | 3 | 2 | This is a narrative review of efficacy/safety; only a half-life (~80 h) is mentioned with no CL, V, or population-PK model parameters, and no full PK values are provided. |
-| PGx | Germain_2024 | not_relevant | 0 | 0 | Review of pegunigalsidase alfa efficacy/safety; no gene variant effect on PK/PD parameters reported. |
+| popPK | Germain_2024 | irrelevant | 2 | 0 | The paper is a clinical review of efficacy and safety that mentions a ~40-fold increase in half-life (~80h) but does not report quantitative compartmental PK parameters (CL, V, Q) or a population PK model. |
+| PGx | Germain_2024 | not_relevant | 0 | 0 | The paper describes the clinical development and efficacy of pegunigalsidase alfa but does not report any pharmacogenomic analysis or gene variant effects on its PK/PD parameters. |
 | popPK | Gómez-Cerezo_2025 | irrelevant | 1 | 0 | This is a narrative review of immunogenicity in Fabry disease ERT; pegunigalsidase alfa is discussed qualitatively (half-life mentioned but no numeric PK parameters like CL, V, or a PK model are reported). |
 | PD | Gómez-Cerezo_2025 | not_relevant | 1 | 0 | Narrative review of ADA immunogenicity in Fabry ERT; no concentration- or dose-effect analysis or numeric PD parameters for pegunigalsidase alfa. |
-| popPK | Lenders_2023 | irrelevant | 3 | 2 | This is an in-vitro antibody/serum stability study, not a PK study; only fold-changes in AUC/half-life are given, with no CL, V, or population-PK parameters for pegunigalsidase-alfa. |
-| popPK | Lenders_2025 | irrelevant | 2 | 1 | This is an anti-drug antibody assay-methods study; pegunigalsidase alfa's half-life (~80 h) is only mentioned qualitatively with no PK model or quantitative disposition parameters reported. |
-| PGx | Perretta_2025 | not_relevant | 2 | 1 | Review mentions pegunigalsidase alfa's prolonged half-life generally but reports no gene variant effect on its PK/PD parameters. |
-| popPK | Schiffmann_2019 | relevant | 7 | 3 | PK study of pegunigalsidase alfa with half-life values (53–121 h) reported, but clearance/volume parameters likely in figures/supplementary material not provided. |
+| popPK | Lenders_2023 | irrelevant | 2 | 1 | The study is an in-vitro immunological characterization of antibody effects on enzyme stability, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, Q) for pegunigalsidase_alfa. |
+| popPK | Lenders_2025 | irrelevant | 1 | 0 | The paper focuses on immunological methods for measuring anti-drug antibodies and only mentions the half-life qualitatively without providing quantitative PK parameters like clearance or volume. |
+| popPK | Lenders_2025_2 | relevant | 4 | 5 | The study reports pharmacokinetic data (AUC, half-life) for pegunigalsidase alfa in humans, but lacks standard compartmental parameters (CL, V, Q) and relies on enzyme activity assays rather than direct drug concentration measurements. |
+| PGx | Perretta_2025 | not_relevant | 0 | 0 | The paper is a general review of Fabry disease treatments and does not report specific pharmacogenomic effects on the PK or PD of pegunigalsidase alfa. |
+| popPK | Schiffmann_2019 | relevant | 8 | 3 | The study reports the mean terminal plasma half-life (53-121 hours) for pegunigalsidase alfa in humans, but lacks other quantitative disposition parameters like clearance or volume of distribution. |
 | PD | Schiffmann_2019 | not_relevant | 3 | 2 | Dose-ranging design with PK and Gb3/renal outcomes reported descriptively, but no concentration-effect or dose-response relationship or numeric PD parameters (Emax, EC50, slope) are stated or derivable. |
 
 ---

@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fitusiran&quot;,&quot;href&quot;:&quot;drugs/drug_fitusiran/&quot;},{&quot;label&quot;:&quot;Fan_2026 \u00b7 humansa&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fitusiran_Sten2023_reference&quot;,&quot;label&quot;:&quot;Sten_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fitusiran/Fitusiran_Sten2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fitusiran — `Fitusiran_Fan2026_humansa`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +22,18 @@
 
 The record is not a compartmental population PK model: no distribution volume and no clearance or elimination rate are reported, as it is an exposure/outcome paper. A dimension mismatch was flagged on a structural parameter, and the Km unit could not be converted to SI, so the parameter lacked an SI value. The second reader additionally reported four parameters absent from this record: fesc 0.037, kdegd 0.014, kpliver 0.18, and psliver 144.7. Extracted — fitusiran: kabs 0.23 units, fu 39.3 units, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8 units, koff 0.023 units, kint 4.69 nM−1·h−1, KD 0.0061 nM.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fesc: this record has none, the second reading 0.037; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fitusiran, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.860611+00:00) predates the upstream re-run (2026-10-05 19:26:36.829458+00:00). Current validate status: `rejected`.
 
 ## Citation
 Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026)
   ·  DOI: [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936)
 
 ## Model component
-<dbs-pgx drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="false" population="mice, rats, monkeys, and humans" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="true" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -44,14 +45,14 @@ Fan X et al., A computational model-powered platform…, Molecular therapy. Nucl
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (1/h) | `Q49` · kabs | 0.23 | units | not captured | [units] | not captured | exact (1.0) | tbl1:row3:col5 | — | not captured |
-| Fu (1/h) | `Q46` · fu | 39.32 | units | not captured | [units] | not captured | exact (1.0) | tbl1:row4:col5 | — | not captured |
+| ka (1/h) | `Q49` · kabs | 0.23 | 1/h | 6.38888888888889e-05 | 1/h | not captured | exact (1.0) | tbl1:row3:col5 | — | not captured |
+| Fu (1/h) | `Q46` · fu | 39.32 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row4:col5 | — | not captured |
 | RTOT0 (nM) | `Q333` · Rtot | 14.34 | nM | not captured | [nM] | not captured | llm (0.6) | tbl1:row9:col5 | — | not captured |
 | Vm (nmol/h) | `Q66` · Vmax | 4.37 | nmol/h | not captured | [nM] / [h] | not captured | special_case (0.95) | tbl1:row10:col5 | — | not captured |
-| Km (∗105 nM) | `Q1` · Km | 97.75 | units | not captured | [units] | not captured | exact (1.0) | tbl1:row11:col5 | — | not captured |
-| koff (1/h) | `Q330` · koff | 0.023 | units | not captured | [units] | not captured | exact (1.0) | tbl1:row12:col5 | — | not captured |
-| kint (1/h) | `Q334` · kint | 4.69 | nM−1·h−1 | not captured | [1] / [[h] · [nM]] | not captured | exact (1.0) | tbl1:row15:col5 | — | not captured |
-| Kdis (∗10−3 h−1) | `Q331` · KD | 0.0061 | nM | not captured | [nM] | not captured | llm (0.6) | tbl1:row21:col5 | — | not captured |
+| Km (∗105 nM) | `Q1` · Km | 97.75 | not captured | not captured | not captured | not captured | exact (1.0) | tbl1:row11:col5 | — | not captured |
+| koff (1/h) | `Q330` · koff | 0.023 | 1/h | 6.3888888888888885e-06 | 1/h | not captured | exact (1.0) | tbl1:row12:col5 | — | not captured |
+| kint (1/h) | `Q334` · kint | 4.69 | 1/h | 0.001302777777777778 | 1/h | not captured | exact (1.0) | tbl1:row15:col5 | — | not captured |
+| KDEGE (∗10−6 h−1) | `Q47` · kel | 0.0076 | 1/h | 2.111111111111111e-06 | 1/h | not captured | llm (0.6) | tbl1:row22:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,33 +62,36 @@ Fan X et al., A computational model-powered platform…, Molecular therapy. Nucl
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'ka (1/h)' → Q49 (unit '[luminosity] / [length] ** 2' vs ontology '1 / [time]') — route to review
 - dropped unlinked row (NIL): 'PSLiver (L/h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row5:col5'])
 - dropped unlinked row (NIL): 'KPLiver' — extend the ontology if this is a real PK parameter (source ['tbl1:row6:col5'])
 - dropped unlinked row (NIL): 'KPRem' — extend the ontology if this is a real PK parameter (source ['tbl1:row7:col5'])
 - dropped unlinked row (NIL): 'KDEGD (1/h)' — extend the ontology if this is a real PK parameter (source ['tbl1:row8:col5'])
 - unit_dimension_mismatch: 'RTOT0 (nM)' → Q333 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - unit_dimension_mismatch: 'Vm (nmol/h)' → Q66 (unit '[substance] / [time]' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'Km (∗105 nM)' → Q1 (unit '[luminosity] / [length] ** 2' vs ontology '[mass] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'koff (1/h)' → Q330 (unit '[luminosity] / [length] ** 2' vs ontology '1 / [time]') — route to review
 - dropped unlinked row (NIL): 'fesc' — extend the ontology if this is a real PK parameter (source ['tbl1:row14:col5'])
 - unit_dimension_unknown: 'nM−1·h−1' (kint)
 - dropped PD-category row 'Ksyn (nM/h)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row19:col5'])
 - dropped unlinked row (NIL): 'Kass (∗10−6 h−1)' — extend the ontology if this is a real PK parameter (source ['tbl1:row20:col5'])
-- unit_dimension_mismatch: 'Kdis (∗10−3 h−1)' → Q331 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 'KDEGE (∗10−6 h−1)' — extend the ontology if this is a real PK parameter (source ['tbl1:row22:col5'])
+- dropped unlinked row (NIL): 'Kdis (∗10−3 h−1)' — extend the ontology if this is a real PK parameter (source ['tbl1:row21:col5'])
 - dropped PD-category row 'kdeg, m (1/h)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row26:col5'])
 - dropped PD-category row 'kdeg, p (1/h)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row27:col5'])
 - dropped unlinked row (NIL): 'Smax' — extend the ontology if this is a real PK parameter (source ['tbl1:row28:col5'])
 - dropped PD-category row 'SC50 (nM)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row29:col5'])
 - dropped unlinked row (NIL): 'γ1' — extend the ontology if this is a real PK parameter (source ['tbl1:row30:col5'])
 - dropped unlinked row (NIL): 'γ2' — extend the ontology if this is a real PK parameter (source ['tbl1:row31:col5'])
+- implicit units: 'ka (1/h)' → 1/h (from the paper text: "The text states: 'FU and ka represent the apparent clearance in plasma and the first-order absorption rate of GalNAc-SiR")
+- implicit units: 'Km (∗105 nM)' — the LLM proposed 'nM', whose dimension does not fit Q1; left unset
+- implicit units: 'koff (1/h)' → 1/h (from the paper text: "The text states: 'kon and koff are the association and dissociation rate constants for GalNAc binding to ASGPR'. Dissoci")
+- implicit units: 'kint (1/h)' → 1/h (from the paper text: "The text states: 'kint and kcle represent the cellular internalization rate of bound ASGPR and the cleavage rate of GalN")
+- implicit units: 'KDEGE (∗10−6 h−1)' → 1/h (from the paper text: "The text states: 'The estimated endosomal siRNA degradation rate constant (KDEGE) was 0.0083 h−1'. This explicitly provi")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fitusiran
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'humansa' subgroup of Fan_2026 (paper reports 4 populations: humansa, micea, monkeysc, ratsb)
+- molar mass: none found for 'fitusiran' — its concentrations stay mass-only
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -96,21 +100,27 @@ Fan X et al., A computational model-powered platform…, Molecular therapy. Nucl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.75 (12/16 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.444 (8/18 fields) | 10 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['fitusiran', 'target mrna', 'interconversion'], ['target mrna', 'target protein', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[fesc]` | not captured | 0.037 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kdegd]` | not captured | 0.014 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kdege]` | 0.0076 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kdis]` | not captured | 0.0061 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kpliver]` | not captured | 0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[psliver]` | not captured | 144.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rtot0].parameter_id` | Q333 | Q86 | mismatch |
+| `gpt-oss:120b` | `parameters[γ1]` | not captured | 0.074 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | fitusiran | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | fitusiran | unknown | mismatch |
 
 </details>
 
@@ -125,14 +135,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q1 | fail | [luminosity] / [length] ** 2 | units | not captured | not captured | ['tbl1:row11:col5'] |
-| C5_dimension_Q330 | fail | [luminosity] / [length] ** 2 | units | not captured | not captured | ['tbl1:row12:col5'] |
-| C5_dimension_Q331 | fail | [length] | nM | not captured | not captured | ['tbl1:row21:col5'] |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q330 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row12:col5'] |
 | C5_dimension_Q333 | fail | [length] | nM | not captured | not captured | ['tbl1:row9:col5'] |
-| C5_dimension_Q49 | fail | [luminosity] / [length] ** 2 | units | not captured | not captured | ['tbl1:row3:col5'] |
+| C5_dimension_Q334 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row15:col5'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row22:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl1:row3:col5'] |
 | C5_dimension_Q66 | fail | [substance] / [time] | nmol/h | not captured | not captured | ['tbl1:row10:col5'] |
-| C5_unit_missing_Q334 | fail | 1 / [time] | nM−1·h−1 | not captured | not captured | ['tbl1:row15:col5'] |
+| C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tbl1:row11:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -158,4 +169,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 22:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:26 UTC</sub>

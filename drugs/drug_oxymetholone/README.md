@@ -18,22 +18,11 @@ Oxymetholone is an androgenic anabolic steroid used to treat anemia. It is an ap
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 00:51 | 0:30 | 0/0/0 | 2/0/0 | 0/0/0 | 1,758/148 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-05 10:22 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 26,035/128 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Fürstenberger_2012_11_oxofluoxymesterone_formation](drugs/drug_oxymetholone/pd_F_rstenberger_2012_11_oxofluoxymesterone_formation.md) | 11-oxofluoxymesterone formation ← fluoxymesterone · direct sigmoid Emax (Hill) effect | — | Fürstenberger C et al., The anabolic androgenic steroid fluoxym…, Toxicological sciences : an… (2012) | [10.1093/toxsci/kfs022](https://doi.org/10.1093/toxsci/kfs022) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Fürstenberger_2012_MR](drugs/drug_oxymetholone/pd_F_rstenberger_2012_MR.md) | mineralocorticoid receptor transactivation (beta-galactosidase activity) ← fluoxymesterone · direct sigmoid Emax (Hill) effect | — | Fürstenberger C et al., The anabolic androgenic steroid fluoxym…, Toxicological sciences : an… (2012) | [10.1093/toxsci/kfs022](https://doi.org/10.1093/toxsci/kfs022) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Fürstenberger_2012_cortisone_formation](drugs/drug_oxymetholone/pd_F_rstenberger_2012_cortisone_formation.md) | cortisone formation ← fluoxymesterone · direct sigmoid Emax (Hill) effect | — | Fürstenberger C et al., The anabolic androgenic steroid fluoxym…, Toxicological sciences : an… (2012) | [10.1093/toxsci/kfs022](https://doi.org/10.1093/toxsci/kfs022) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Fürstenberger_2012_percent_of_control](drugs/drug_oxymetholone/pd_F_rstenberger_2012_percent_of_control.md) | percent of control ← fluoxymesterone · direct sigmoid Emax (Hill) effect | — | Fürstenberger C et al., The anabolic androgenic steroid fluoxym…, Toxicological sciences : an… (2012) | [10.1093/toxsci/kfs022](https://doi.org/10.1093/toxsci/kfs022) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Khan_2012_ROS](drugs/drug_oxymetholone/pd_Khan_2012_ROS.md) | reactive oxygen species production ← oxymetholone and metabolites 2-7 · inhibition effect | — | Khan NT et al., Synthesis of some potent immunomodulato…, Chemistry Central journal (2012) | [10.1186/1752-153X-6-153](https://doi.org/10.1186/1752-153X-6-153) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Khan_2012_unknown](drugs/drug_oxymetholone/pd_Khan_2012_unknown.md) | T-cell proliferation ← oxymetholone and metabolites 2-7 · inhibition effect | — | Khan NT et al., Synthesis of some potent immunomodulato…, Chemistry Central journal (2012) | [10.1186/1752-153X-6-153](https://doi.org/10.1186/1752-153X-6-153) |
 
 ## ADME sites
 
@@ -73,7 +62,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Huml_2020.pdf` | Huml L et al., Stanazolol derived ELISA as a sensitive…, Steroids (2020) | pd | 4 | [10.1016/j.steroids.2019.108550](https://doi.org/10.1016/j.steroids.2019.108550) | [31812623](https://www.ncbi.nlm.nih.gov/pubmed/31812623) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T00:51:27.376707+00:00</sub>
+<sub>queue written 2026-10-05T10:22:01.275626+00:00</sub>
 
 ## Screened and excluded
 
@@ -93,7 +82,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Huml_2020 | irrelevant | 0 | 0 | The paper describes an ELISA assay for detecting anabolic steroids and reports cross-reactivity percentages, not pharmacokinetic parameters for oxymetholone. |
 | PD | Huml_2020 | not_relevant | 0 | 0 | The paper describes the development of an ELISA assay for detecting anabolic steroids; the reported IC50 values refer to the analytical sensitivity of the immunoassay, not to a pharmacodynamic exposure-response relationship for oxymetholone. |
 | popPK | Khan_2012 | irrelevant | 0 | 0 | The paper is a study on the microbial transformation and in-vitro biological activity of oxymetholone metabolites, containing no pharmacokinetic data. |
-| popPK | Pavlatos_2001 | irrelevant | 1 | 0 | The paper is a review article that summarizes pharmacokinetics but does not provide original quantitative disposition parameters or numeric values in the provided evidence. |
+| popPK | Pavlatos_2001 | irrelevant | 2 | 0 | This is a review article that summarizes pharmacokinetics but does not provide original quantitative disposition parameters or specific numeric values in the evidence. |
 | popPK | Tomoda_1999 | irrelevant | 0 | 0 | The study focuses on the hemodynamic effects of oxymetholone on left ventricular dimensions in heart failure, not on pharmacokinetic parameters. |
 | PD | Tomoda_1999 | not_relevant | 2 | 1 | The text provides only a qualitative summary of the study's conclusion regarding the effect of oxymetholone on left ventricular dimensions, without reporting any numeric PD parameters, dose-response curves, or exposure-response data. |
 

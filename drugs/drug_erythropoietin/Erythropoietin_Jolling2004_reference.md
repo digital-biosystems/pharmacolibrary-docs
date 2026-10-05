@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;erythropoietin&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/&quot;},{&quot;label&quot;:&quot;Jolling_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erythropoietin_Chakraborty2005_reference&quot;,&quot;label&quot;:&quot;Chakraborty_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # erythropoietin — `Erythropoietin_Jolling2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,47 +22,42 @@
 
 The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The plausibility check flagged the clearance and volume magnitudes as implausible, consistent with a unit/scale extraction error. A second reader also disputed the dose compound and primary analyte naming (pegylated human erythropoietin vs PEG-EPO) and could not confirm the bioavailability (48.8%), clearance (0.728 mL/h), absorption rate constant (0.0618 h⁻¹), intercompartmental clearance (0.373 mL/h) and lag time (3.13 h) values. Extracted — pegylated human erythropoietin: CL 0.728 mL/h, V1 15.8 mL, Q 0.373 mL/h, V2 6.99 mL, kabs 0.0618 h(-1), tlag 3.13 h, Fab 48.8 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pegylated human erythropoietin, the second reading PEG-EPO; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pegylated human erythropoietin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:55.778643+00:00) predates the upstream re-run (2026-10-05 21:06:19.430220+00:00). Current validate status: `rejected`.
 
 ## Citation
 Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004)
   ·  DOI: [10.1002/jps.20200](https://doi.org/10.1002/jps.20200)
 
 ## Model component
-<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="true" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.728 | mL/h | 2.022222222222222e-10 | [ml] / [h] | not captured | exact (1.0) | Jolling_2004:abstract, Jolling_2004:abstract, Jolling_2004:abstract | — | not captured |
-| Vc | `Q63` · V1 | 15.8 | mL | 1.58e-05 | [ml] | not captured | exact (1.0) | Jolling_2004:abstract, Jolling_2004:abstract, Jolling_2004:abstract | — | not captured |
-| Q | `Q30` · Q | 0.373 | mL/h | 1.0361111111111111e-10 | [ml] / [h] | not captured | exact (1.0) | Jolling_2004:abstract | — | not captured |
-| Vp | `Q64` · V2 | 6.99 | mL | 6.99e-06 | [ml] | not captured | exact (1.0) | Jolling_2004:abstract, Jolling_2004:abstract | — | not captured |
-| Ka | `Q49` · kabs | 0.0618 | h(-1) | 1.7166666666666666e-05 | [1] / [h] | not captured | exact (1.0) | Jolling_2004:abstract, Jolling_2004:abstract | — | not captured |
-| Tlag | `Q83` · tlag | 3.13 | h | 11268.0 | [h] | not captured | exact (1.0) | Jolling_2004:abstract | — | not captured |
-| F | `Q40` · Fab | 48.8 | % | not captured | not captured | not captured | exact (1.0) | Jolling_2004:abstract, Jolling_2004:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'CL' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'Vc' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'Q' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'Vp' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'Ka' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'Tlag' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
+- table section iiv: 'F' routed out of structural estimates ('The interindividual variability in CL, Vc, Vp, Ka, and F was estimated at 10.7, 14.7, 16.6, 11.0, and 13.6%, respectively.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pegylated human erythropoietin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Jolling_2004_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
@@ -75,22 +69,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 48.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 0.728 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f]` | 48.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 0.0618 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` | 0.373 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tlag]` | 3.13 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | 15.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vp]` | 6.99 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | pegylated human erythropoietin | PEG-EPO | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | pegylated human erythropoietin | PEG-EPO | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | pegylated human erythropoietin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | pegylated human erythropoietin | unknown | mismatch |
 
 </details>
 
@@ -104,20 +90,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract', 'Jolling_2004:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jolling_2004:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract', 'Jolling_2004:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jolling_2004:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.728 | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract', 'Jolling_2004:abstract'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | fail | clearance within physiological range | 0.000728 L/h | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract', 'Jolling_2004:abstract'] |
-| C9_phys_window_Q63 | fail | volume within physiological range | 0.0158 L | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract', 'Jolling_2004:abstract'] |
-| C9_phys_window_Q64 | fail | volume within physiological range | 0.00699 L | not captured | not captured | ['Jolling_2004:abstract', 'Jolling_2004:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -142,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 00:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:06 UTC</sub>

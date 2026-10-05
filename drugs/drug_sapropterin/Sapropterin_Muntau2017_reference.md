@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;sapropterin&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/&quot;},{&quot;label&quot;:&quot;Muntau_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sapropterin_Feillet2008_reference&quot;,&quot;label&quot;:&quot;Feillet_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sapropterin_Feillet2008_reference&quot;,&quot;label&quot;:&quot;Feillet_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sapropterin — `Sapropterin_Muntau2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,17 +23,17 @@ The record for children &lt;4 years with BH4-responsive phenylketonuria reports 
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `sapropterin dihydrochloride`, measured `sapropterin (BH4)`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:29.008057+00:00) predates the upstream re-run (2026-10-05 11:23:00.007180+00:00). Current validate status: `rejected`.
 
 ## Citation
 Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017)
   ·  DOI: [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x)
 
 ## Model component
-<dbs-pgx drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="false" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin (BH4)" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="true" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted, plus 2 covariate effects.
+**Parameters:** 5 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -42,14 +42,13 @@ Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 2780 | L/h | 0.0007722222222222223 | [l] / [h] | 2.0 | exact (1.0) | Tab3:row1:col1, Tab3:row1:col2, Muntau_2017_table_4:row0:col1, Muntau_2017_table_4:row0:col2, Muntau_2017_table_4:row0:col3, Muntau_2017_table_4:row0:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 2789 | L/h | 0.0007747222222222222 | [l] / [h] | 2.0 | exact (1.0) | Tab3:row1:col1, Tab3:row1:col2, Muntau_2017_table_4:row0:col1, Muntau_2017_table_4:row0:col2, Muntau_2017_table_4:row0:col3, Muntau_2017_table_4:row0:col4 | — | not captured |
 | V/F (L) | `Q76` · V/F | 3870 | L | 3.87 | [l] | 5.9 | exact (1.0) | Tab3:row2:col1, Tab3:row2:col2, Muntau_2017_table_4:row2:col1, Muntau_2017_table_4:row2:col2, Muntau_2017_table_4:row2:col3, Muntau_2017_table_4:row2:col4 | — | not captured |
 | Ka (1/h) | `Q49` · kabs | 0.234 | 1/h | 6.500000000000001e-05 | 1/h | 6.6 | exact (1.0) | Tab3:row3:col1, Tab3:row3:col2 | — | not captured |
 | LAG (h) | `Q83` · tlag | 0.342 | h | 1231.2 | [h] | 2.8 | llm (0.6) | Tab3:row4:col1, Tab3:row4:col2 | — | not captured |
 | C0 (μg/L) | `Q86` · C0 | 12.6 | μg/L | not captured | [µg] / [l] | 7.8 | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2 | — | not captured |
-| % of reference | `Q87` · Frel | 10.9 | not captured | not captured | not captured | not captured | llm (0.6) | Muntau_2017_table_4:row1:col1, Muntau_2017_table_4:row1:col2, Muntau_2017_table_4:row1:col3, Muntau_2017_table_4:row1:col4, Muntau_2017_table_4:row3:col1, Muntau_2017_table_4:row3:col2, Muntau_2017_table_4:row3:col3, Muntau_2017_table_4:row3:col4 | — | not captured |
-| theta_q314_weight | `Q900` · theta_q314_weight | 0.839 | not captured | not captured | not captured | 1.8 | not captured (not captured) | Tab3:row6:col1, Tab3:row6:col2 | — | not captured |
-| theta_q314_weight | `Q900` · theta_q314_weight | 0.573 | not captured | not captured | not captured | 3.3 | not captured (not captured) | Tab3:row7:col1, Tab3:row7:col2 | — | not captured |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.839 | not captured | not captured | not captured | 1.8 | not captured (not captured) | Tab3:row6:col1, Tab3:row6:col2 | — | not captured |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.573 | not captured | not captured | not captured | 3.3 | not captured (not captured) | Tab3:row7:col1, Tab3:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,17 +59,10 @@ Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal o
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'C0 (μg/L)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped value-less row: 'SE'
-- dropped value-less row: 'CL/F'
-- dropped value-less row: 'V/F'
-- dropped value-less row: 'LAG'
-- dropped value-less row: 'K a'
-- dropped value-less row: 'C0'
-- dropped value-less row: 'CV'
-- dropped value-less row: 'NE'
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Ka (1/h)' → 1/h (from the paper text: 'Table 3 lists "Ka (1/h)0.234"; text states "0.234 h−1 for Ka".')
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sapropterin (BH4)
+- dropped unlinked row (NIL): '% of reference' — extend the ontology if this is a real PK parameter (source ['Muntau_2017_table_4:row1:col1', 'Muntau_2017_table_4:row1:col2', 'Muntau_2017_table_4:row1:col3', 'Muntau_2017_table_4:row1:col4', 'Muntau_2017_table_4:row3:col1', 'Muntau_2017_table_4:row3:col2', 'Muntau_2017_table_4:row3:col3', 'Muntau_2017_table_4:row3:col4'])
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Ka (1/h)' → 1/h (from the paper text: "Table 3 lists 'Ka (1/h)' and the text states '0.234 h−1 for Ka'.")
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sapropterin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 
@@ -85,7 +77,7 @@ Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal o
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Muntau_2017_table_4:row0:col1', 'Muntau_2017_table_4:row0:col2', 'Muntau_2017_table_4:row0:col3', 'Muntau_2017_table_4:row0:col4'] |
@@ -95,7 +87,7 @@ Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal o
 | C5_dimension_Q86 | fail | [mass] / [length] ** 3 | μg/L | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 2.78e+03 L/h | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Muntau_2017_table_4:row0:col1', 'Muntau_2017_table_4:row0:col2', 'Muntau_2017_table_4:row0:col3', 'Muntau_2017_table_4:row0:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 2.79e+03 L/h | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Muntau_2017_table_4:row0:col1', 'Muntau_2017_table_4:row0:col2', 'Muntau_2017_table_4:row0:col3', 'Muntau_2017_table_4:row0:col4'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 3.87e+03 L | not captured | not captured | ['Tab3:row2:col1', 'Tab3:row2:col2', 'Muntau_2017_table_4:row2:col1', 'Muntau_2017_table_4:row2:col2', 'Muntau_2017_table_4:row2:col3', 'Muntau_2017_table_4:row2:col4'] |
 
 <details class="legend">
@@ -121,4 +113,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 10:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 11:23 UTC</sub>

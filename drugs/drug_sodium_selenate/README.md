@@ -18,7 +18,7 @@ Sodium selenate is a selenium supplement used to supply the essential mineral se
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 01:38 | 4:17 | 0/0/0 | 1/0/0 | 0/0/0 | 5,256/315 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/5 | 2/0 | 0 |
+| 2026-10-05 09:48 | 1:02 | 0/0/0 | 1/0/0 | 0/0/0 | 24,896/1,287 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/5 | 2/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Proietti_2018_nM](drugs/drug_sodium_selenate/pd_Proietti_2018_nM.md) | cytosolic calcium concentration ← sodium selenate (SeO42-) · direct Emax (saturable) effect | — | Proietti P et al., Selenium maintains Ca2+ homeostasis in…, PloS one (2018) | [10.1371/journal.pone.0201523](https://doi.org/10.1371/journal.pone.0201523) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Proietti_2018_Ca2_c](drugs/drug_sodium_selenate/pd_Proietti_2018_Ca2_c.md) | intracellular [Ca2+]C ← sodium selenate · direct Emax (saturable) effect | — | Proietti P et al., Selenium maintains Ca2+ homeostasis in…, PloS one (2018) | [10.1371/journal.pone.0201523](https://doi.org/10.1371/journal.pone.0201523) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Proietti_2018_Ca2_entry](drugs/drug_sodium_selenate/pd_Proietti_2018_Ca2_entry.md) | Ca2+ entry ← sodium selenate · direct Emax (saturable) effect | — | Proietti P et al., Selenium maintains Ca2+ homeostasis in…, PloS one (2018) | [10.1371/journal.pone.0201523](https://doi.org/10.1371/journal.pone.0201523) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -78,7 +79,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Knox_2019 | not_relevant | 1 | 0 | The paper reports PK parameters (half-life) and qualitative efficacy/toxicity observations but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Kuperman_2018 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | popPK | Li_2024 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
-| PGx | Moses_2022 | not_relevant | 0 | 0 | The paper investigates perivascular spaces as a biomarker for disease severity in bvFTD and does not report any pharmacogenomic effects on the PK or PD of sodium selenate. |
+| PGx | Moses_2022 | not_relevant | 0 | 0 | The paper investigates perivascular spaces as a biomarker for disease severity in bvFTD patients treated with sodium selenate, but it does not report any pharmacogenomic effects on the drug's pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Preitner_2026 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of ACI-16664 in tauopathy mice and does not involve sodium selenate. |
 | PD | Preitner_2026 | not_relevant | 0 | 0 | The paper discusses the drug ACI-16664, not sodium selenate, and does not report any pharmacodynamic or exposure-response parameters. |
 | popPK | Proietti_2018 | irrelevant | 0 | 0 | The study investigates the mechanistic effect of sodium selenate on calcium homeostasis in sheep lymphomonocytes (in vitro/ex vivo) and does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |

@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Edoxaban_Zou2025_reference",
+ "molar_masses": {
+  "central.C": 0.54806
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  30.0,
+  60.0
+ ],
+ "parameters": {
+  "Cl": 1.1908333333333333e-05,
+  "F": 1.0,
+  "MM": 0.54806,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0037285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "k12": 9.142188165176672e-06,
+  "k21": 6.946466116771793e-06,
+  "ka": 0.0010305555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3157.0848483345453
+ },
+ "reference_peaks": {
+  "central.C": 9.318954279391453e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

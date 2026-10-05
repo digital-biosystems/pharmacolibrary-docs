@@ -13,18 +13,26 @@ Eptifibatide is a platelet aggregation inhibitor used to treat conditions such a
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q2295855](https://www.wikidata.org/wiki/Q2295855) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| eptifibatide | parent | 831.965 | C35H49N11O9S2 | PubChem | [448812](https://pubchem.ncbi.nlm.nih.gov/compound/448812) | Liu_2020, Wang_2015 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 22:04 | 3:50 | 0/2/0 | 0/0/0 | 0/0/0 | 19,179/1,479 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-05 15:54 | 3:07 | 0/1/1 | 0/0/0 | 0/0/0 | 40,029/7,463 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020_healthy Chinese subjects](drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md) | — | — (no model) | 0 | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015_healthy Chinese volunteers](drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md) | — | — (no model) | 0 | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020_reference](drugs/drug_eptifibatide/Eptifibatide_Liu2020_reference.md) | — | 1-compartment (no model) | 3 | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015_reference](drugs/drug_eptifibatide/Eptifibatide_Wang2015_reference.md) | — | 2-compartment (no model) | 3 | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
 
 ## ADME sites
 
@@ -46,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,31 +63,31 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Liu_2020.pdf` | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | popPK | 10 | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) | [31197974](https://pubmed.ncbi.nlm.nih.gov/31197974) | The study reports quantitative PK parameters for eptifibatide, including a 3-compartment model, clearance (0.11 L/min), and half-life (148.19 minutes). |
-| `Wang_2015.pdf` | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | popPK | 10 | [10.5414/CP202196](https://doi.org/10.5414/CP202196) | [26104033](https://pubmed.ncbi.nlm.nih.gov/26104033) | The paper reports a population PK model for eptifibatide with explicit numeric values for CL, V1, Q, and V2 in the text. |
+| `Liu_2020.pdf` | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | popPK | 10 | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) | [31197974](https://pubmed.ncbi.nlm.nih.gov/31197974) | The study reports quantitative PK parameters for eptifibatide in humans, including a 3-compartment model, clearance (0.11 L/min), and half-life (148.19 minutes). |
+| `Wang_2015.pdf` | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | popPK | 10 | [10.5414/CP202196](https://doi.org/10.5414/CP202196) | [26104033](https://pubmed.ncbi.nlm.nih.gov/26104033) | The paper reports a population PK model for eptifibatide with explicit numeric values for CL, V1, Q, and V2 in the abstract. |
 | `Cox_2004.pdf` | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | pd | 5 | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) | [15317826](https://www.ncbi.nlm.nih.gov/pubmed/15317826) | metadata signals extractable PD data (PK-PD) |
 
-<sub>queue written 2026-09-05T22:03:56.255588+00:00</sub>
+<sub>queue written 2026-10-05T15:51:45.981855+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bourdon_2006 | irrelevant | 0 | 0 | The paper is a mechanistic study on P2Y1 receptor desensitization where eptifibatide is used only as a comparator agent, and no pharmacokinetic parameters are reported. |
+| popPK | Bourdon_2006 | irrelevant | 0 | 0 | The study is a mechanistic investigation of P2Y1 receptor desensitization in platelets, and eptifibatide is used only as a comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Bourdon_2006 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of MRS2365 (a P2Y1 agonist) and only mentions eptifibatide qualitatively as a control for shape change, without reporting any exposure-response or dose-response data for eptifibatide. |
-| popPK | Cox_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of argatroban, with eptifibatide serving only as a co-administered comparator agent without reported PK parameters. |
-| popPK | Fatma_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on antiviral activity, not a pharmacokinetic study, and reports no PK parameters for eptifibatide. |
-| PGx | Gao_2009 | not_relevant | 0 | 0 | The paper investigates the mechanism of eptifibatide-induced thrombocytopenia involving Fc receptors and integrin signaling, but does not report pharmacogenomic effects on standard PK or PD parameters. |
-| popPK | Gilchrist_2003 | irrelevant | 2 | 0 | The text is a narrative review describing the mechanism and history of eptifibatide without providing any quantitative pharmacokinetic parameter values (e.g., CL, V, t1/2). |
+| popPK | Cox_2004 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for argatroban, while eptifibatide is only a co-administered comparator agent. |
+| popPK | Fatma_2020 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of eptifibatide as an antiviral agent, reporting no pharmacokinetic parameters. |
+| PGx | Gao_2009 | not_relevant | 0 | 0 | The paper investigates the mechanism of eptifibatide-induced thrombocytopenia involving Fc receptors and integrin signaling, not the effect of a gene variant on the drug's pharmacokinetics or standard pharmacodynamics. |
+| popPK | Gilchrist_2003 | irrelevant | 2 | 0 | The text is a narrative review describing the mechanism and history of eptifibatide dosing without providing specific quantitative pharmacokinetic parameter values (CL, V, etc.). |
 | PD | Gilchrist_2003 | not_relevant | 2 | 0 | The text is a qualitative review of eptifibatide's mechanism and clinical development history, mentioning PK modeling and dose optimization but providing no numeric PD parameters, concentration-effect curves, or specific exposure-response data. |
-| popPK | Hantgan_2002 | irrelevant | 0 | 0 | The study is a biophysical/mechanistic investigation of tirofiban's effect on GpIIb/IIIa structure, with eptifibatide mentioned only as a comparator, and no pharmacokinetic parameters are reported. |
+| popPK | Hantgan_2002 | irrelevant | 0 | 0 | The study is a biophysical/mechanistic analysis of tirofiban's effect on GpIIb/IIIa structure, with eptifibatide mentioned only as a comparator, and no pharmacokinetic parameters are reported. |
 | popPK | Marciniak_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of platelet inhibition and receptor binding, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PGx | Meisel_2004 | not_relevant | 2 | 0 | The text is a review abstract discussing the general role of platelet glycoprotein polymorphisms in cardiovascular disease and drug response, but it does not report specific quantitative pharmacokinetic or pharmacodynamic effects of a genotype on eptifibatide. |
 | PGx | Nordeen_2013 | not_relevant | 0 | 0 | The paper focuses on clopidogrel resistance and CYP2C19 genotyping, not eptifibatide pharmacogenomics. |
 | PGx | Schrör_2003 | not_relevant | 0 | 0 | The paper explicitly states there is no clear evidence that the biological activity of the agents is modified by gene polymorphism (HPA-1). |
-| popPK | Stephens_1998 | irrelevant | 0 | 0 | The paper is a mechanistic study on platelet aggregation signaling and does not report any pharmacokinetic parameters for eptifibatide. |
+| popPK | Stephens_1998 | irrelevant | 0 | 0 | The paper is a mechanistic study on platelet aggregation signaling and does not report pharmacokinetic parameters for eptifibatide. |
 | PD | Stephens_1998 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of a synthetic peptide (Ppep) mimicking GpIIb, not the drug eptifibatide. |
 | PGx | Toljan_2019 | not_relevant | 0 | 0 | The paper focuses on clopidogrel pharmacogenetics and a case of thrombosis; eptifibatide is only mentioned as a rescue therapy without any analysis of its PK/PD parameters or genetic influence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 22:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 15:51 UTC</sub>

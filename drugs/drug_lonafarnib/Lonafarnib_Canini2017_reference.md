@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;lonafarnib&quot;,&quot;href&quot;:&quot;drugs/drug_lonafarnib/&quot;},{&quot;label&quot;:&quot;Canini_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lonafarnib_Canini2017_reference&quot;,&quot;label&quot;:&quot;Canini_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lonafarnib — `Lonafarnib_Canini2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,31 +21,30 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — lonafarnib: kabs 0.43 1/h, V/F 223 L, kel 0.045 1/h, V 7.88.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lonafarnib, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:29.692926+00:00) predates the upstream re-run (2026-10-05 11:29:01.795878+00:00). Current validate status: `extracted`.
 
 ## Citation
 Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communications (2017)
   ·  DOI: [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043)
 
 ## Model component
-<dbs-pgx drug="lonafarnib" model-id="Lonafarnib_Canini2017_reference" status="needs_review" stale="false" population="patients with chronic hepatitis delta virus infection" measured-compound="lonafarnib" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="lonafarnib" model-id="Lonafarnib_Canini2017_reference" status="extracted" stale="true" population="patients with chronic hepatitis delta virus infection" measured-compound="lonafarnib" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka [hr–1] | `Q49` · kabs | 0.43 | 1/h | 0.00011944444444444444 | 1/h | 83 | llm_confirmed (0.6) | hep41043-tbl-0001:row2:col2, hep41043-tbl-0001:row2:col3 | — | not captured |
 | Vd/F [L] | `Q76` · V/F | 223 | L | 0.223 | [l] | 49 | llm_confirmed (0.6) | hep41043-tbl-0001:row3:col2, hep41043-tbl-0001:row3:col3 | — | not captured |
 | ke [hr–1] | `Q47` · kel | 0.045 | 1/h | 1.2499999999999999e-05 | 1/h | 39 | llm_confirmed (0.6) | hep41043-tbl-0001:row4:col2, hep41043-tbl-0001:row4:col3 | — | not captured |
-| V0 [log10 IU/mL] | `Q61` · V | 7.88 | not captured | not captured | not captured | 5.7 | llm (0.6) | hep41043-tbl-0001:row8:col2, hep41043-tbl-0001:row8:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,21 +53,26 @@ Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communic
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 't0 [hr]' — extend the ontology if this is a real PK parameter (source ['hep41043-tbl-0001:row1:col2', 'hep41043-tbl-0001:row1:col3'])
 - dropped PD-category row 'Emax' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['hep41043-tbl-0001:row5:col2'])
 - dropped PD-category row 'EC50 [ng/mL]' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['hep41043-tbl-0001:row6:col2', 'hep41043-tbl-0001:row6:col3'])
 - dropped unlinked row (NIL): 'h' — extend the ontology if this is a real PK parameter (source ['hep41043-tbl-0001:row7:col2'])
+- dropped unlinked row (NIL): 'V0 [log10 IU/mL]' — extend the ontology if this is a real PK parameter (source ['hep41043-tbl-0001:row8:col2', 'hep41043-tbl-0001:row8:col3'])
 - dropped unlinked row (NIL): 'δ [d–1]' — extend the ontology if this is a real PK parameter (source ['hep41043-tbl-0001:row9:col2'])
 - dropped unlinked row (NIL): 'c [d–1]' — extend the ontology if this is a real PK parameter (source ['hep41043-tbl-0001:row10:col2', 'hep41043-tbl-0001:row10:col3'])
-- implicit units: 'ka [hr–1]' → 1/h (from the paper text: "The text states: 'The drug absorption rate was estimated as ka = 0.43/hour'.")
-- implicit units: 'ke [hr–1]' → 1/h (from the paper text: "The text states: 'the elimination rate ke as 0.045/hour'.")
-- implicit units: 'V0 [log10 IU/mL]' — the LLM proposed 'log10 IU/mL', whose dimension does not fit Q61; left unset
+- implicit units: 'ka [hr–1]' → 1/h (from the paper text: "The text states: 'The drug absorption rate was estimated as ka = 0.43/hour'")
+- implicit units: 'ke [hr–1]' → 1/h (from the paper text: "The text states: 'the elimination rate ke as 0.045/hour'")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lonafarnib
-- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- derived CL/F=10.035 L/h from Ke × V/F = CL/F (Q47 × Q76); not separately reported
 
 **Extraction notes:**
 - unparsed cell hep41043-tbl-0001:row6:col1 = 'LNF concentration leading to 50% of effectiveness'
@@ -75,22 +80,14 @@ Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
 
-<details><summary>3 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[v0 [log10 iu/ml]]` | 7.88 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | lonafarnib | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | lonafarnib | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -102,13 +99,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['hep41043-tbl-0001:row4:col2', 'hep41043-tbl-0001:row4:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['hep41043-tbl-0001:row2:col2', 'hep41043-tbl-0001:row2:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['hep41043-tbl-0001:row3:col2', 'hep41043-tbl-0001:row3:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['hep41043-tbl-0001:row8:col2', 'hep41043-tbl-0001:row8:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q76 | pass | volume within physiological range | 223 L | not captured | not captured | ['hep41043-tbl-0001:row3:col2', 'hep41043-tbl-0001:row3:col3'] |
@@ -129,21 +125,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference/Lonafarnib_Canini2017_reference_modelica.zip" download>Lonafarnib_Canini2017_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference/Lonafarnib_Canini2017_reference_fmi.zip" download>Lonafarnib_Canini2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference/Lonafarnib_Canini2017_reference.svg" alt="Lonafarnib_Canini2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.43 /h, F 1). Doses in the paper: 100, 200 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference/Lonafarnib_Canini2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference/Lonafarnib_Canini2017_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Lonafarnib_Canini2017_reference_params.json` · controls `Lonafarnib_Canini2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 12:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 11:29 UTC</sub>

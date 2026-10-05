@@ -17,7 +17,7 @@ Pabinafusp alfa is an investigational enzyme replacement therapy being studied f
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:46 | 5:16 | 0/0/0 | 0/0/0 | 0/0/0 | 23,782/970 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-05 11:17 | 0:53 | 0/0/0 | 0/0/0 | 0/0/0 | 29,108/1,017 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -36,37 +36,27 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Okuyama_2019.pdf` | Okuyama T et al., Iduronate-2-Sulfatase with Anti-human T…, Molecular therapy : the jou… (2019) | popPK | 8 | [10.1016/j.ymthe.2018.12.005](https://doi.org/10.1016/j.ymthe.2018.12.005) | [30595526](https://pubmed.ncbi.nlm.nih.gov/30595526) | This is the first-in-human PK study of JR-141 (pabinafusp alfa), but the evidence contains only qualitative PK descriptions (peak at 3 hr, dose-dependent, no accumulation) with no numeric CL/V/half-life values, which likely reside in figures or supplementary material not provided. |
-
-<sub>queue written 2026-09-30T02:46:27.812291+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Boado_2013 | irrelevant | 0 | 0 | The study focuses on a different drug (HIRMAb-IDS fusion protein) and does not report pharmacokinetic parameters for pabinafusp_alfa. |
-| popPK | Boado_2014 | irrelevant | 0 | 0 | The study investigates the HIRMAb-IDS fusion protein, not pabinafusp_alfa. |
-| popPK | Cardone_2006 | irrelevant | 0 | 0 | The paper describes a gene therapy study for Hunter syndrome in mice and does not involve the drug pabinafusp_alfa or report any pharmacokinetic parameters. |
-| popPK | Costain_2025 | irrelevant | 0 | 0 | The study investigates iduronate 2-sulfatase (IDS) and its fusion constructs, not pabinafusp alfa. |
-| popPK | Ellison_2023 | irrelevant | 0 | 0 | The paper describes a stem cell gene therapy study for MPSII and does not involve the drug pabinafusp_alfa or report any pharmacokinetic parameters. |
-| popPK | Fu_2018 | irrelevant | 0 | 0 | The paper describes a gene therapy study for MPS II in mice and does not involve the drug pabinafusp_alfa or report any pharmacokinetic parameters. |
+| popPK | Boado_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of iduronate 2-sulfatase (IDS) and a HIRMAb-IDS fusion protein, not pabinafusp alfa. |
+| popPK | Boado_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of a HIRMAb-IDS fusion protein, not pabinafusp_alfa. |
+| popPK | Cardone_2006 | irrelevant | 0 | 0 | The paper describes a gene therapy study for Hunter syndrome in mice and does not report pharmacokinetic parameters for pabinafusp_alfa. |
+| popPK | Costain_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of iduronate 2-sulfatase (IDS) fusion proteins, not pabinafusp alfa. |
+| popPK | Ellison_2023 | irrelevant | 0 | 0 | The paper describes a gene therapy study in mice for MPSII and does not report pharmacokinetic parameters for pabinafusp_alfa. |
+| popPK | Fu_2018 | irrelevant | 0 | 0 | The paper describes a gene therapy study for MPS II in mice and does not report pharmacokinetic parameters for pabinafusp_alfa. |
 | popPK | Giugliani_2021 | irrelevant | 3 | 0 | This is an efficacy/safety phase 2 trial abstract; no PK disposition parameters (CL, V, half-life) for pabinafusp alfa are reported or referenced. |
 | PD | Giugliani_2021 | not_relevant | 3 | 1 | Only qualitative dose-group comparisons (1/2/4 mg/kg) with descriptive GAG reductions; no numeric PD parameters or concentration-effect relationships reported. |
-| popPK | Lu_2011 | irrelevant | 0 | 0 | The study investigates a different drug (HIRMAb-IDS fusion protein) and does not report pharmacokinetic parameters for pabinafusp_alfa. |
-| popPK | Marazza_2020 | irrelevant | 0 | 0 | The paper is a mechanistic study on protein quality control in Hunter's syndrome and does not involve pabinafusp_alfa or report any pharmacokinetic parameters. |
-| popPK | Morimoto_2021 | irrelevant | 2 | 0 | This is a pharmacodynamic efficacy study in MPS II mice with no PK disposition parameters (CL, V, half-life) reported, and no numeric PK values appear in the evidence. |
-| popPK | Okuyama_2019 | relevant | 8 | 2 | This is the first-in-human PK study of JR-141 (pabinafusp alfa), but the evidence contains only qualitative PK descriptions (peak at 3 hr, dose-dependent, no accumulation) with no numeric CL/V/half-life values, which likely reside in figures or supplementary material not provided. |
+| popPK | Lu_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of an IgG-iduronate-2-sulfatase fusion protein, not pabinafusp_alfa. |
+| popPK | Marazza_2020 | irrelevant | 0 | 0 | The paper investigates the intracellular fate and quality control of Iduronate 2-Sulfatase (IDS) mutants in Hunter's syndrome, not the pharmacokinetics of pabinafusp_alfa. |
+| popPK | Morimoto_2021 | irrelevant | 0 | 0 | The paper is a preclinical efficacy study in mice focusing on neurocognitive outcomes and heparan sulfate clearance, with no quantitative pharmacokinetic parameters (CL, V, etc.) reported for pabinafusp alfa. |
+| popPK | Okuyama_2019 | irrelevant | 0 | 0 | The study evaluates JR-141 (iduronate-2-sulfatase with anti-human transferrin receptor antibody), not pabinafusp_alfa. |
 | popPK | Smith_2025 | irrelevant | 0 | 0 | The paper focuses on transferrin receptor antibodies for brain delivery and does not mention pabinafusp_alfa or report its pharmacokinetic parameters. |
 | popPK | Smolyarchuk_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for verenafusp alfa, not pabinafusp alfa. |
 | popPK | Xie_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for idursulfase (iduronate-2-sulfatase), not pabinafusp_alfa. |
-| popPK | Yesiltepe_2026 | irrelevant | 0 | 0 | The paper focuses on a different drug (NewroBus) and a preclinical animal model, with no mention of pabinafusp_alfa or its pharmacokinetic parameters. |
-| popPK | Zhou_2012 | irrelevant | 0 | 0 | The paper studies enzyme fusion proteins (HIRMAb-IDS) in mice, not pabinafusp_alfa. |
+| popPK | Yesiltepe_2026 | irrelevant | 0 | 0 | The paper describes a preclinical animal model for drug delivery and does not report pharmacokinetic parameters for pabinafusp_alfa. |
+| popPK | Zhou_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of enzyme fusion proteins (HIRMAb-IDS) in mice, not pabinafusp_alfa. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

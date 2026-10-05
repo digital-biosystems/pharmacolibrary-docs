@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Zinc_Ekobena2025_reference",
  "molar_masses": {
   "central.C": 0.06538
@@ -7,10 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  50.0
  ],
  "parameters": {
   "Cl": 1.4e-07,
@@ -20,15 +16,15 @@
   "VdPerKg": 0.0001657142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 5e-05,
+  "adminMass": 0.0001,
   "ka": 0.0007222222222222223,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 6981.703601020008
+  "central.C": 6980.224966930247
  },
  "reference_peaks": {
-  "central.C": 0.004020264705158077
+  "central.C": 0.008040534471315437
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

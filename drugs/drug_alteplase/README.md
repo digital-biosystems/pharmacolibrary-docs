@@ -17,7 +17,7 @@ Alteplase is a clot-dissolving enzyme used to treat blood clots in conditions su
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 16:19 | 2:05 | 0/0/0 | 0/1/0 | 0/0/0 | 1,544/262 | ollama / qwen3.8:27b-mtp-q8_0 | 34 | 0/25 | 14/20 | 0 |
+| 2026-10-05 13:36 | 5:11 | 0/0/0 | 1/0/0 | 0/0/0 | 171,370/4,707 | ollama / qwen3.8:27b-mtp-q8_0 | 34 | 13/26 | 14/20 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | name ← BM 06.021 · stimulation effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | thrombolysis ← alteplase · direct linear effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
 
 ## ADME sites
 
@@ -63,77 +63,77 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Liu_2022.pdf` | Liu CJ et al., [Effects of fulvic acid on photosynthet…, Ying yong sheng tai xue bao… (2022) | pd | 4 | [10.13287/j.1001-9332.202205.014](https://doi.org/10.13287/j.1001-9332.202205.014) | [35730089](https://www.ncbi.nlm.nih.gov/pubmed/35730089) | metadata signals extractable PD data (concentrationeffect) |
 | `Martin_1993.pdf` | Martin U et al., Differential fibrinolytic properties of…, Blood coagulation & fibrino… (1993) | pd | 4 | [10.1097/00001721-199304000-00004](https://doi.org/10.1097/00001721-199304000-00004) | [8388740](https://www.ncbi.nlm.nih.gov/pubmed/8388740) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-06T16:19:22.757438+00:00</sub>
+<sub>queue written 2026-10-05T13:32:24.835114+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Alemseged_2021 | not_relevant | 0 | 0 | The paper compares two different drugs (tenecteplase vs alteplase) and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Alemseged_2021_2 | not_relevant | 0 | 0 | The paper compares the clinical efficacy of tenecteplase and alteplase in stroke patients but does not report pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
-| PGx | Altuntaş_2020 | not_relevant | 0 | 0 | The paper studies proline signaling in maize plants, not the pharmacogenomics of alteplase in humans. |
-| popPK | Aslan_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety analysis comparing stroke outcomes, not a pharmacokinetic study, and contains no PK parameters for alteplase. |
-| popPK | Battini_2024 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study on drug-drug interaction signal detection in FAERS and does not report any pharmacokinetic parameters for alteplase. |
+| PGx | Alemseged_2021 | not_relevant | 0 | 0 | The paper compares two different drugs (tenecteplase vs alteplase) and does not report any pharmacogenomic effects (gene variants) on the PK or PD of alteplase. |
+| PGx | Alemseged_2021_2 | not_relevant | 0 | 0 | The paper compares the clinical efficacy of tenecteplase versus alteplase but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Altuntaş_2020 | not_relevant | 0 | 0 | The paper studies the effect of proline on photosynthesis in maize plants, not the pharmacogenomics of alteplase. |
+| popPK | Aslan_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety analysis of stroke outcomes, not a pharmacokinetic study, and reports no disposition parameters for alteplase. |
+| popPK | Battini_2024 | irrelevant | 0 | 0 | The paper describes a machine learning method for drug-drug interaction signal detection in the FAERS database and does not report any pharmacokinetic parameters for alteplase. |
 | PD | Battini_2024 | not_relevant | 0 | 0 | The paper focuses on pharmacovigilance signal detection and temporal plausibility of drug-drug interactions in the FAERS database; it does not report any pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for alteplase. |
-| PGx | Bechmann_2024 | not_relevant | 0 | 0 | The paper compares the biochemical and fibrinolytic properties of two tenecteplase products (originator vs. copy) and does not investigate the impact of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Bechmann_2024 | not_relevant | 0 | 0 | The paper compares the biochemical and fibrinolytic properties of two tenecteplase products (originator vs. copy) and does not investigate the effect of human gene variants on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Cannon_1998 | irrelevant | 2 | 2 | The study reports pharmacokinetic parameters (clearance, half-life) for TNK-tPA, with alteplase serving only as a comparator agent for which no quantitative PK values are provided in the text. |
-| PGx | Davydov_2001 | not_relevant | 0 | 0 | The paper is a review of tenecteplase and does not report any pharmacogenomic effects on the PK or PD of alteplase. |
+| PGx | Davydov_2001 | not_relevant | 0 | 0 | The paper is a review of tenecteplase pharmacokinetics and efficacy compared to alteplase, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | DeWood_1993 | irrelevant | 0 | 0 | The study investigates the efficacy and safety of duteplase (a different rt-PA variant) in myocardial infarction and does not report pharmacokinetic parameters for alteplase. |
 | PD | DeWood_1993 | not_relevant | 2 | 1 | The study explicitly states that no dose-response relationship was observed, and while it reports dose ranges and success rates, it does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model. |
 | popPK | Dhar_2022 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study comparing thrombolytic outcomes, not a pharmacokinetic study, and reports no quantitative PK parameters (CL, V, etc.) for alteplase. |
 | PD | Dhar_2022 | not_relevant | 0 | 0 | The paper is a clinical efficacy and safety comparison of two thrombolytic agents using clinical endpoints (mRS, NIHSS) and does not report any pharmacokinetic data, concentration-effect relationships, or numeric pharmacodynamic parameters (e.g., Emax, EC50). |
-| popPK | Diprose_2025 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating reperfusion outcomes in stroke patients, not a pharmacokinetic study, and contains no PK parameters for alteplase. |
-| PGx | Dunn_2001 | not_relevant | 0 | 0 | The paper is a review of tenecteplase pharmacology and clinical trials comparing it to alteplase, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Diprose_2025 | irrelevant | 0 | 0 | The study is a clinical trial evaluating reperfusion outcomes in stroke patients, not a pharmacokinetic study, and contains no PK parameters for alteplase. |
+| PGx | Dunn_2001 | not_relevant | 0 | 0 | The paper compares the pharmacokinetics and efficacy of tenecteplase versus alteplase but does not report any pharmacogenomic effects (gene variants) on these parameters. |
 | PD | Eppler_1998 | not_relevant | 0 | 0 | not captured |
-| popPK | Erameh_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ribavirin for Lassa fever, not alteplase. |
+| popPK | Erameh_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ribavirin, not alteplase. |
 | PD | Erameh_2020 | not_relevant | 0 | 0 | The paper is a study protocol for ribavirin in Lassa fever, not alteplase, and reports no numeric PD parameters. |
-| PGx | Gorchakova_2004 | not_relevant | 2 | 10 | The study reports a null association between the PlA1 polymorphism and clinical outcomes (salvage index, infarct size) rather than a pharmacokinetic or pharmacodynamic parameter of alteplase. |
-| popPK | Goyal_2016 | irrelevant | 0 | 0 | The paper is a clinical meta-analysis of endovascular thrombectomy efficacy and does not report any pharmacokinetic parameters for alteplase. |
-| PGx | Gołębiowska-Pikania_2017 | not_relevant | 0 | 0 | The paper studies protein abundance and freezing tolerance in winter barley, which is unrelated to the pharmacokinetics or pharmacodynamics of alteplase. |
+| PGx | Gorchakova_2004 | not_relevant | 0 | 0 | The study investigates the effect of the Pl A polymorphism on myocardial salvage (clinical outcome) after reperfusion therapy, not on the pharmacokinetic or pharmacodynamic parameters of alteplase itself. |
+| popPK | Goyal_2016 | irrelevant | 0 | 0 | This is a clinical efficacy meta-analysis of endovascular thrombectomy, not a pharmacokinetic study, and alteplase is only mentioned as a covariate. |
+| PGx | Gołębiowska-Pikania_2017 | not_relevant | 0 | 0 | The paper studies proteomic changes in winter barley related to cold hardening and freezing tolerance, not pharmacogenomics or alteplase. |
 | PGx | Gusev_2018 | not_relevant | 0 | 0 | The text is a general historical overview of thrombolytic therapy and does not report any pharmacogenomic effects on PK or PD parameters. |
 | PGx | Hailu_2022 | not_relevant | 0 | 0 | The paper is a clinical review comparing the efficacy and safety of tenecteplase versus alteplase, with no mention of pharmacogenomics or gene variants affecting PK/PD parameters. |
 | popPK | Hantgan_1998 | irrelevant | 0 | 0 | The study focuses on the mechanism of action of argatroban, using alteplase only as a thrombolytic agent in an in-vitro clot system, and reports no pharmacokinetic parameters for alteplase. |
 | PD | Hantgan_1998 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50) for argatroban, not alteplase; alteplase is only used as a thrombolytic agent in the experimental setup. |
 | popPK | Harder_2000 | irrelevant | 2 | 1 | This is a review article on drug interactions that mentions alteplase's elimination half-life (5-10 minutes) but does not report original quantitative PK parameters like clearance, volume, or compartmental model values. |
 | PD | Harder_2000 | not_relevant | 1 | 0 | The text is a qualitative review of drug interactions and clinical management, containing no numeric PD parameters, concentration-effect curves, or dose-response data for alteplase. |
-| popPK | Hazra_2015 | irrelevant | 0 | 0 | The paper studies the enzymatic kinetics of Rubisco activase in tobacco plants and does not involve the drug alteplase or pharmacokinetics. |
+| popPK | Hazra_2015 | irrelevant | 0 | 0 | The paper studies the enzymatic kinetics of Rubisco activase in tobacco plants and is unrelated to the pharmacokinetics of alteplase. |
 | PD | Hazra_2015 | not_relevant | 0 | 0 | The paper describes the enzymatic kinetics of Rubisco activase (a plant protein) and does not involve the drug alteplase or any pharmacodynamic modeling. |
 | popPK | Hernández-Gago_2026 | irrelevant | 0 | 0 | The paper is a systematic review of dosing strategies for high-alert medications in obese pediatric patients and does not report quantitative pharmacokinetic parameters for alteplase. |
 | PD | Hernández-Gago_2026 | not_relevant | 0 | 0 | The paper is a systematic review of dosing strategies and PK alterations in obese pediatric patients and does not report any pharmacodynamic (PD) or exposure-response analysis for alteplase. |
-| popPK | Jia_2025 | irrelevant | 0 | 0 | The paper focuses on the formulation and stability of an enrofloxacin-colistin combination injection and does not study alteplase or report any pharmacokinetic parameters for it. |
+| popPK | Jia_2025 | irrelevant | 0 | 0 | The paper focuses on the formulation of enrofloxacin and colistin, not the pharmacokinetics of alteplase. |
 | PD | Jia_2025 | not_relevant | 0 | 0 | The paper focuses on the formulation, stability, and toxicity of an enrofloxacin-colistin combination, not on alteplase, and does not report any pharmacodynamic or exposure-response modeling. |
-| PGx | Kazemali_2014 | not_relevant | 0 | 0 | The paper describes the design and in vitro characterization of a novel chimeric protein (CT-b) and does not report any pharmacogenomic effects of gene variants on the PK or PD of alteplase. |
-| PGx | Khairy_2016 | not_relevant | 0 | 0 | The paper studies the effect of nitric oxide on heavy metal toxicity in tobacco plants, not the pharmacogenomics of alteplase. |
+| PGx | Kazemali_2014 | not_relevant | 0 | 0 | The paper describes the design and in vitro characterization of a novel chimeric plasminogen activator (CT-b) and does not report any pharmacogenomic effects of gene variants on the PK or PD of alteplase. |
+| PGx | Khairy_2016 | not_relevant | 0 | 0 | The paper studies plant physiology (tobacco) and heavy metal toxicity, not human pharmacogenomics or alteplase. |
 | popPK | Kheiri_2018 | irrelevant | 0 | 0 | The paper is a clinical meta-analysis comparing efficacy and safety outcomes, not a pharmacokinetic study reporting quantitative disposition parameters for alteplase. |
 | PD | Kheiri_2018 | not_relevant | 0 | 0 | The paper is a meta-analysis of clinical outcomes (efficacy/safety) comparing tenecteplase and alteplase; it does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters (e.g., Emax, EC50) for alteplase. |
 | PGx | Kheiri_2018 | not_relevant | 0 | 0 | The paper compares two different drugs (tenecteplase vs. alteplase) and does not report pharmacogenomic effects of genetic variants on the PK or PD of alteplase. |
-| PGx | Kostis_2002 | not_relevant | 0 | 0 | The paper compares the pharmacokinetics of two different drugs (lanoteplase vs. alteplase) but does not report any pharmacogenomic effects (gene variants) on these parameters. |
+| PGx | Kostis_2002 | not_relevant | 0 | 0 | The paper compares the pharmacokinetics of lanoteplase and alteplase but does not report any pharmacogenomic effects (gene variants) on these parameters. |
 | PGx | Kundu_2013 | not_relevant | 0 | 0 | The paper studies plant-virus interactions in Vigna mungo and does not involve alteplase or human pharmacogenomics. |
-| PGx | Lakra_2019 | not_relevant | 0 | 0 | The paper studies salinity stress response in rice genotypes and does not involve alteplase or human pharmacogenomics. |
+| PGx | Lakra_2019 | not_relevant | 0 | 0 | The paper studies salinity stress responses in rice genotypes using proteomics and does not involve alteplase or human pharmacogenomics. |
 | popPK | Lapchak_2004 | irrelevant | 0 | 0 | The study is a behavioral pharmacology trial in rabbits comparing efficacy, not a pharmacokinetic study, and reports no quantitative disposition parameters (CL, V, etc.) for alteplase. |
 | PD | Lapchak_2004_2 | not_relevant | 3 | 2 | The paper focuses on the dose-response of NXY-059 and its combination with tenecteplase, but does not report a pharmacodynamic model or numeric PD parameters (e.g., EC50, Emax) for alteplase itself. |
 | PGx | Larsen_1991 | not_relevant | 0 | 0 | The paper compares engineered protein variants (delta FE1X/FE3X) to wild-type t-PA, which is a drug modification study, not a pharmacogenomic study of human genetic variants affecting drug response. |
-| PGx | Li_2010 | not_relevant | 0 | 0 | The paper studies epistasis in potato tuber traits, not pharmacogenomics of alteplase. |
-| PGx | Li_2023 | not_relevant | 0 | 0 | The paper studies cold tolerance in apple blossoms and is unrelated to the pharmacokinetics or pharmacodynamics of alteplase. |
+| PGx | Li_2010 | not_relevant | 0 | 0 | The paper studies epistasis in potato genetics, not human pharmacogenomics or alteplase. |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper studies apple transcriptomes and cold tolerance, not human pharmacogenomics or alteplase. |
 | popPK | Liu_2022 | irrelevant | 0 | 0 | The paper is a plant physiology study on cucumber and fulvic acid, unrelated to alteplase pharmacokinetics. |
 | PD | Liu_2022 | not_relevant | 0 | 0 | The paper studies the effect of fulvic acid on cucumber plants, not the pharmacodynamics of alteplase. |
 | popPK | Logallo_2015 | irrelevant | 2 | 5 | The paper is a review of tenecteplase where alteplase serves as a comparator, and while Table 3 lists alteplase PK parameters (CL, t1/2), the study's primary subject is tenecteplase. |
 | PD | Logallo_2015 | not_relevant | 1 | 0 | The text is a qualitative review discussing the therapeutic potential of tenecteplase compared to alteplase, with no numeric PD parameters, concentration-effect curves, or dose-response data provided. |
-| PGx | Longstaff_2008 | not_relevant | 0 | 0 | The text is a review discussing the mechanism of fibrin binding and the development of thrombolytic agents, but it does not report any specific pharmacogenomic effects (gene variants) on the PK or PD of alteplase. |
+| PGx | Longstaff_2008 | not_relevant | 0 | 0 | The paper is a review of the structure and fibrin-binding properties of tPA variants, not a study on pharmacogenomics or genetic variants affecting PK/PD. |
 | PD | Lutomski_1995 | not_relevant | 1 | 0 | The text is a general review of pharmacokinetic optimization for thromboembolic disorders and mentions alteplase only in the context of standard dosing and clinical outcomes, without providing any numeric PD parameters or concentration-effect data. |
-| popPK | Martin_1991 | irrelevant | 2 | 3 | The study focuses on the recombinant plasminogen activator BM 06.022, with alteplase serving only as a comparator for which limited comparative values (clearance range, half-life) are provided rather than a primary PK characterization. |
-| popPK | Martin_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic comparison of fibrinolytic activity where alteplase serves only as a comparator, with no pharmacokinetic parameters reported. |
-| popPK | Martin_1999 | irrelevant | 1 | 0 | The paper focuses on the pharmacokinetics of reteplase, with alteplase serving only as a reference comparator for half-life without providing specific quantitative disposition parameters for alteplase. |
+| popPK | Martin_1991 | irrelevant | 2 | 5 | The study focuses on the pharmacokinetics of a recombinant plasminogen activator (BM 06.022), with alteplase serving only as a comparator for which limited reference values are provided. |
+| popPK | Martin_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic comparison of fibrinolytic activity where alteplase serves as a comparator, not a pharmacokinetic study. |
+| popPK | Martin_1999 | irrelevant | 1 | 0 | The paper focuses on the pharmacokinetics of reteplase, with alteplase serving only as a reference comparator for half-life without providing quantitative disposition parameters for alteplase itself. |
 | PD | Martin_1999 | not_relevant | 2 | 1 | The text is a review of reteplase dosing that qualitatively mentions a linear regression for AUC-patency and compares half-lives to alteplase, but it does not provide specific numeric PD parameters (e.g., slope, intercept, Emax, EC50) or an extractable concentration-effect curve for alteplase. |
 | popPK | Marè_2024 | irrelevant | 2 | 0 | The paper is a review comparing alteplase and tenecteplase without reporting original quantitative pharmacokinetic parameter values in the provided evidence. |
 | PD | Marè_2024 | not_relevant | 2 | 0 | The paper is a review comparing pharmacokinetic properties and clinical outcomes, but it does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or an extractable exposure-response curve for alteplase. |
-| PGx | Melandri_2009 | not_relevant | 0 | 0 | The paper reviews the clinical efficacy and safety of tenecteplase compared to alteplase but does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Melandri_2009 | not_relevant | 0 | 0 | The paper reviews tenecteplase (a variant of alteplase) but does not report pharmacogenomic effects of human gene variants on the PK or PD of alteplase. |
 | PGx | Meng_2024 | not_relevant | 0 | 0 | The paper is a clinical trial comparing the efficacy and safety of tenecteplase versus alteplase, with no analysis of gene variants or pharmacogenomic effects on PK/PD parameters. |
 | popPK | Mohamed_2022 | irrelevant | 0 | 0 | The paper is a review of drug interactions for RAAS blockers where alteplase is mentioned only as a co-administered agent associated with angioedema risk, with no pharmacokinetic parameters reported. |
 | PD | Mohamed_2022 | not_relevant | 0 | 0 | The paper is a review of drug interactions for RAAS blockers and mentions alteplase only as a qualitative risk factor for angioedema, providing no numeric PD parameters or exposure-response data. |
-| popPK | Murthy_2020 | irrelevant | 0 | 0 | The study is a clinical outcome analysis of intracerebral hemorrhage and does not report any pharmacokinetic parameters for alteplase. |
-| popPK | Nägele_2025 | irrelevant | 0 | 0 | The study is an MRI imaging analysis of blood-brain barrier leakage in stroke patients and does not report any pharmacokinetic parameters for alteplase. |
-| PGx | Ogden_2020 | not_relevant | 0 | 0 | The paper studies drought tolerance in sorghum plants and does not involve human pharmacogenomics or alteplase. |
+| popPK | Murthy_2020 | irrelevant | 0 | 0 | The study is a clinical outcome analysis of intracerebral hemorrhage patients and does not report any pharmacokinetic parameters for alteplase. |
+| popPK | Nägele_2025 | irrelevant | 0 | 0 | The study investigates blood-brain barrier leakage using MRI in stroke patients, where alteplase is only mentioned as a treatment administered to a subset of patients, not as the subject of pharmacokinetic analysis. |
+| PGx | Ogden_2020 | not_relevant | 0 | 0 | The paper studies drought tolerance in sorghum plants and is unrelated to human pharmacogenomics or alteplase. |
 | popPK | Pei_2026 | irrelevant | 0 | 0 | The study is a clinical cohort analysis of biomarkers associated with neurological deterioration, not a pharmacokinetic study, and contains no PK parameters for alteplase. |
 | PD | Pei_2026 | not_relevant | 0 | 0 | The study analyzes the association between baseline biomarkers (CitH3, MPO-DNA) and clinical outcomes, not the pharmacodynamic relationship between alteplase exposure/dose and its effect. |
 | popPK | Piechowski-Jozwiak_2022 | irrelevant | 0 | 0 | The paper is a review of desmoteplase pharmacokinetics, and alteplase is only mentioned as a comparator or background agent without original quantitative PK parameter values for alteplase being reported. |
@@ -142,60 +142,60 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Raigani_2017 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (AUC, t1/2, CL) and plasma activity levels, but does not report any pharmacodynamic effect (e.g., clot lysis, fibrinogen degradation) or exposure-response relationship. |
 | popPK | Renard_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of imatinib, not alteplase. |
 | PD | Renard_2015 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of imatinib and drug-drug interactions, not on alteplase, and does not report any pharmacodynamic or exposure-response parameters for alteplase. |
-| popPK | Renaud_2020 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for glenzocimab, not alteplase. |
-| PGx | Rowe_2026 | not_relevant | 0 | 0 | The study evaluates the safety of tenecteplase in stroke mimics versus acute ischemic stroke and does not investigate any gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Renaud_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for glenzocimab (ACT017), not alteplase. |
+| PGx | Rowe_2026 | not_relevant | 0 | 0 | The study evaluates the safety of tenecteplase in stroke mimics versus acute ischemic stroke and does not investigate pharmacogenomic effects on PK or PD parameters. |
 | popPK | Scheer_2026 | irrelevant | 0 | 0 | The study is a pharmacodynamic model for thrombolysis efficacy and does not report any pharmacokinetic parameters (CL, V, etc.) for alteplase. |
 | PGx | Shi_2024 | not_relevant | 0 | 0 | The paper is a case report of an adverse event (angioedema) and does not report any pharmacogenomic effects on PK or PD parameters. |
-| PGx | Sibbing_2005 | not_relevant | 0 | 0 | The study reports no significant association between the PAI-1 4G/5G polymorphism and the efficacy (myocardial salvage) of alteplase, and does not report changes in PK/PD parameters. |
-| PGx | Silva_2025 | not_relevant | 0 | 0 | The paper is a narrative review of tenecteplase (a variant of alteplase) in stroke and does not report pharmacogenomic effects of gene variants on PK/PD parameters. |
+| PGx | Sibbing_2005 | not_relevant | 0 | 0 | The study investigates the effect of the PAI-1 4G/5G polymorphism on clinical outcomes (myocardial salvage, infarct size) rather than on the pharmacokinetic or pharmacodynamic parameters of alteplase itself. |
+| PGx | Silva_2025 | not_relevant | 0 | 0 | The paper is a narrative review comparing tenecteplase and alteplase in stroke treatment and does not report pharmacogenomic effects on PK or PD parameters. |
 | popPK | Solbes_2026 | irrelevant | 0 | 0 | The study is a clinical outcomes analysis of intrapleural enzyme therapy dosing and does not report any pharmacokinetic parameters for alteplase. |
 | popPK | Stump_1989 | irrelevant | 0 | 0 | The study focuses on pharmacodynamics (coagulation parameters and clinical outcomes) rather than pharmacokinetic disposition parameters (CL, V, t1/2) for alteplase. |
 | PD | Stump_1989 | not_relevant | 3 | 2 | The paper reports descriptive statistics (mean/SD) for peak drug levels and nadir biomarker levels, as well as correlations with clinical outcomes, but does not provide a quantitative exposure-response model or specific PD parameters (e.g., EC50, Emax) linking drug concentration to effect. |
-| popPK | Tang_2023 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of tenecteplase, with alteplase serving only as an active comparator in the background description without reported quantitative PK parameters. |
+| popPK | Tang_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tenecteplase, not alteplase. |
 | PD | Tang_2023 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tenecteplase, not alteplase, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| PGx | Tang_2025 | not_relevant | 0 | 0 | The paper is a case report on the clinical efficacy of tenecteplase in stroke and does not report any pharmacogenomic effects on PK or PD parameters. |
-| popPK | Tanswell_1991 | irrelevant | 2 | 1 | The text is a review summarizing general pharmacokinetic properties (e.g., half-life, Km) without reporting original quantitative disposition parameters (CL, V, Q) from a specific study. |
+| PGx | Tang_2025 | not_relevant | 0 | 0 | The paper is a case report on the clinical outcome of tenecteplase administration and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Tanswell_1991 | irrelevant | 2 | 1 | The paper is a review summarizing known pharmacokinetics without presenting original quantitative parameter values (CL, V, Q) for a specific study population. |
 | popPK | Thelengana_2019 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy and safety outcomes (stroke recovery, hemorrhage) comparing tenecteplase and alteplase, and does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for alteplase. |
 | PD | Thelengana_2019 | not_relevant | 1 | 0 | The paper is a clinical meta-analysis comparing efficacy and safety outcomes of tenecteplase versus alteplase; it does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Thomas_2022 | irrelevant | 0 | 0 | The paper is a review of dimethyl fumarate (DMF) and does not study alteplase or report any pharmacokinetic parameters for it. |
+| popPK | Thomas_2022 | irrelevant | 0 | 0 | The paper is a review of dimethyl fumarate and does not contain any pharmacokinetic data for alteplase. |
 | PD | Thomas_2022 | not_relevant | 0 | 0 | The paper is a review of dimethyl fumarate and does not contain any pharmacodynamic or exposure-response data for alteplase. |
-| PGx | Toljan_2019 | not_relevant | 0 | 0 | The paper focuses on clopidogrel pharmacogenetics and a case of thrombosis; alteplase is only mentioned as a rescue therapy without any analysis of its PK/PD parameters or genetic influence. |
-| PGx | Van_1999 | not_relevant | 0 | 0 | The paper compares two different drugs (tenecteplase vs alteplase) in a clinical trial and does not report any pharmacogenomic effects or gene variants influencing PK/PD parameters. |
-| PGx | Verstraete_2000 | not_relevant | 0 | 0 | The text describes the development and clinical efficacy of third-generation thrombolytic drugs compared to alteplase, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Wang_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for meropenem, not alteplase. |
+| PGx | Toljan_2019 | not_relevant | 0 | 0 | The paper reports a case of carotid stent thrombosis in a clopidogrel ultrarapid metabolizer, but does not report pharmacogenomic effects on the PK or PD parameters of alteplase. |
+| PGx | Van_1999 | not_relevant | 0 | 0 | The paper is a clinical trial comparing the efficacy and safety of tenecteplase and alteplase, with no analysis of gene variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Verstraete_2000 | not_relevant | 0 | 0 | The paper discusses third-generation thrombolytic agents and their pharmacokinetic/pharmacodynamic properties compared to alteplase, but does not report any pharmacogenomic effects (gene variants/genotypes) on these parameters. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of meropenem, not alteplase. |
 | PD | Wang_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) of meropenem and dose optimization based on PK targets (T&gt;MIC), not on the pharmacodynamics (PD) of alteplase. |
 | popPK | Wang_2024 | irrelevant | 2 | 1 | The paper is a review of tenecteplase where alteplase serves as a comparator, and the only alteplase PK value (clearance) is a single animal data point cited from a reference rather than original study data. |
 | PD | Wang_2024 | not_relevant | 2 | 1 | The paper is a narrative review comparing tenecteplase and alteplase that cites animal PK/PD data (e.g., clearance, fibrin specificity) and clinical trial outcomes, but it does not present or derive numeric PD parameters (Emax, EC50, etc.) or an exposure-response curve for alteplase in the text provided. |
-| popPK | Wehrfritz_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dipyrone (metamizole), not alteplase. |
+| popPK | Wehrfritz_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dipyrone (metamizole) and its metabolites, not alteplase. |
 | PD | Wehrfritz_2026 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of dipyrone (metamizole), not alteplase, and does not report any pharmacodynamic or exposure-response parameters. |
-| PGx | Weston_2007 | not_relevant | 0 | 0 | The paper studies plant physiology (Rubisco activase in maple trees) and has no relation to human pharmacogenomics or alteplase. |
+| PGx | Weston_2007 | not_relevant | 0 | 0 | The paper studies photosynthesis and Rubisco activase in red maple trees, not pharmacogenomics or alteplase. |
 | popPK | Wooster_1999 | irrelevant | 0 | 0 | The paper is a review of reteplase, and while it mentions alteplase as a comparator, it does not report quantitative pharmacokinetic parameters for alteplase. |
 | PD | Wooster_1999 | not_relevant | 1 | 0 | The paper is a qualitative review of reteplase that mentions alteplase only for comparison of mechanism and clinical outcomes, without providing any numeric PD parameters or exposure-response data for alteplase. |
-| PGx | Xu_2018 | not_relevant | 0 | 0 | The paper studies heat tolerance in fine fescue plants and is unrelated to human pharmacogenomics or alteplase. |
+| PGx | Xu_2018 | not_relevant | 0 | 0 | The paper studies heat tolerance in fine fescue plants, not pharmacogenomics of alteplase. |
 | PGx | Xu_2024 | not_relevant | 0 | 0 | The paper investigates a pharmacological combination therapy (PAI-1 inhibitor + rtPA) rather than the effect of a specific gene variant or genotype on pharmacokinetics or pharmacodynamics. |
 | popPK | Yang_2023 | relevant | 8 | 2 | The paper is an in silico PK-PD study of alteplase that uses a compartmental model, but the specific numeric PK parameter values (clearance, volume, rate constants) are referenced as being in Tables 1 and 2 or previous studies, which are not fully provided in the evidence. |
 | popPK | Yang_2024 | irrelevant | 2 | 0 | The paper is an in silico simulation study that does not report original quantitative pharmacokinetic parameter values (such as clearance or volume) for alteplase. |
-| popPK | Yong_2024 | irrelevant | 0 | 0 | The paper is a clinical cohort study evaluating treatment outcomes and dosing efficacy, not a pharmacokinetic study, and contains no PK parameters. |
+| popPK | Yong_2024 | irrelevant | 0 | 0 | The study is a clinical cohort analysis of treatment outcomes for pleural infections and does not report any pharmacokinetic parameters (CL, V, t1/2) for alteplase. |
 | popPK | den_1998 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing lanoteplase and alteplase, reporting angiographic outcomes rather than pharmacokinetic parameters for alteplase. |
-| popPK | unknown_2016 | irrelevant | 0 | 0 | The evidence contains only a conference title with no pharmacokinetic data or study details. |
+| popPK | unknown_2016 | irrelevant | 0 | 0 | no_text gate: only 48 chars of text extracted (&lt; 400) |
 | PD | unknown_2016 | not_relevant | 0 | 0 | The provided text is only a conference title and contains no data, analysis, or parameters regarding alteplase pharmacodynamics. |
-| popPK | unknown_2017 | irrelevant | 0 | 0 | The evidence consists only of a conference title and contains no pharmacokinetic data or parameters for alteplase. |
+| popPK | unknown_2017 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | unknown_2017 | not_relevant | 0 | 0 | The provided text is only a title for a meeting abstract collection and contains no data, analysis, or parameters regarding alteplase pharmacodynamics. |
-| popPK | unknown_2017_2 | irrelevant | 0 | 0 | The provided evidence contains only a conference title and no pharmacokinetic data or parameters for alteplase. |
+| popPK | unknown_2017_2 | irrelevant | 0 | 0 | no_text gate: only 20 chars of text extracted (&lt; 400) |
 | PD | unknown_2017_2 | not_relevant | 0 | 0 | The provided text is a header for conference proceedings and contains no scientific content, data, or analysis regarding alteplase pharmacodynamics. |
-| popPK | unknown_2018 | irrelevant | 0 | 0 | The evidence consists only of a conference citation with no pharmacokinetic data or study content. |
+| popPK | unknown_2018 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is only a conference header and contains no data, analysis, or mention of alteplase pharmacodynamics. |
-| popPK | unknown_2018_2 | irrelevant | 0 | 0 | The evidence consists only of a conference title and contains no pharmacokinetic data or parameters for alteplase. |
+| popPK | unknown_2018_2 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | unknown_2018_2 | not_relevant | 0 | 0 | The provided text is only a header for conference abstracts and contains no specific data, models, or parameters for alteplase. |
-| popPK | unknown_2018_3 | irrelevant | 0 | 0 | The provided evidence is only a title for a book of abstracts with no content, data, or specific study details regarding alteplase pharmacokinetics. |
+| popPK | unknown_2018_3 | irrelevant | 0 | 0 | no_text gate: only 28 chars of text extracted (&lt; 400) |
 | PD | unknown_2018_3 | not_relevant | 0 | 0 | The provided text is only a title/header for a book of abstracts and contains no data, analysis, or parameters regarding alteplase pharmacodynamics. |
-| popPK | unknown_2021 | irrelevant | 0 | 0 | The evidence consists only of a conference title and contains no pharmacokinetic data or parameters for alteplase. |
+| popPK | unknown_2021 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | PD | unknown_2021 | not_relevant | 0 | 0 | The provided text is only a header for conference abstracts and contains no specific data, models, or parameters for alteplase. |
-| popPK | unknown_2022 | irrelevant | 0 | 0 | The evidence consists only of a conference title with no pharmacokinetic data or specific study content. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
 | PD | unknown_2022 | not_relevant | 0 | 0 | The provided text is only a title of a conference abstract collection and contains no data, analysis, or parameters regarding alteplase pharmacodynamics. |
-| popPK | unknown_2023 | irrelevant | 0 | 0 | The provided evidence contains only a conference title and no pharmacokinetic data or text regarding alteplase. |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
 | PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is only a conference header and contains no data, analysis, or parameters regarding alteplase pharmacodynamics. |
-| popPK | unknown_2024 | irrelevant | 0 | 0 | The provided evidence contains no scientific content, only a placeholder indicating the full text is in a separate PDF file. |
+| popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
 | PD | unknown_2024 | not_relevant | 0 | 0 | The provided text is a placeholder for a PDF file and contains no scientific content, data, or PD parameters. |
 
 ---

@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fernández-Naveira_2019_resp](drugs/drug_sodium_chloride/pd_Fern_ndez_Naveira_2019_resp.md) | growth rate ← sodium chloride · direct sigmoid Emax (Hill) effect | — | Fernández-Naveira Á et al., Effect of salinity on C1-gas fermentati…, AMB Express (2019) | [10.1186/s13568-019-0837-y](https://doi.org/10.1186/s13568-019-0837-y) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gabriel_2021_growth_inhibition](drugs/drug_sodium_chloride/pd_Gabriel_2021_growth_inhibition.md) | growth inhibition ← NaCl · direct sigmoid Emax (Hill) effect | — | Gabriel A et al., Effects of Long-Term Exposure to Increa…, Archives of environmental c… (2021) | [10.1007/s00244-021-00845-z](https://doi.org/10.1007/s00244-021-00845-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Fernández-Naveira_2019_resp](drugs/drug_sodium_chloride/pd_Fern_ndez_Naveira_2019_resp.md) | growth rate ← sodium chloride · direct sigmoid Emax (Hill) effect | — | Fernández-Naveira Á et al., Effect of salinity on C1-gas fermentati…, AMB Express (2019) | [10.1186/s13568-019-0837-y](https://doi.org/10.1186/s13568-019-0837-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Gabriel_2021_growth_inhibition](drugs/drug_sodium_chloride/pd_Gabriel_2021_growth_inhibition.md) | growth inhibition ← NaCl · direct sigmoid Emax (Hill) effect | — | Gabriel A et al., Effects of Long-Term Exposure to Increa…, Archives of environmental c… (2021) | [10.1007/s00244-021-00845-z](https://doi.org/10.1007/s00244-021-00845-z) |
 
 ## Pharmacogenomics (PGx)
 

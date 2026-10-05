@@ -17,18 +17,11 @@ Idursulfase is an enzyme replacement therapy used to treat mucopolysaccharidosis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:38 | 2:00 | 0/0/0 | 1/0/0 | 0/0/0 | 17,513/2,101 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/6 | 6/0 | 0 |
+| 2026-10-05 11:10 | 1:32 | 0/0/0 | 0/0/0 | 0/0/0 | 42,790/2,334 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/6 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uCS](drugs/drug_idursulfase/pd_Qi_2019_uCS.md) | urinary chondroitin sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uDS](drugs/drug_idursulfase/pd_Qi_2019_uDS.md) | urinary dermatan sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y) |
 
 ## ADME sites
 
@@ -65,19 +58,18 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PGx | Chan_2019 | not_relevant | 0 | 0 | The paper describes newborn screening for mucopolysaccharidoses using enzyme activity and genotyping, but does not report pharmacokinetic or pharmacodynamic parameters of the drug idursulfase. |
 | popPK | Giugliani_2017 | irrelevant | 0 | 0 | The study focuses on immunogenicity and pharmacodynamics (uGAGs) rather than pharmacokinetics, and no quantitative PK parameters (CL, V, t1/2) for idursulfase are reported. |
 | PD | Giugliani_2017 | not_relevant | 2 | 1 | The study compares uGAG levels between antibody-positive and antibody-negative groups but does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Hammon_2021 | irrelevant | 0 | 0 | The study focuses on cerliponase alfa, not idursulfase. |
+| popPK | Hammon_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cerliponase alfa, not idursulfase. |
 | PD | Hammon_2021 | not_relevant | 0 | 0 | The paper focuses on PK allometric scaling and dose selection for cerliponase alfa, not idursulfase, and does not report any pharmacodynamic or exposure-response parameters. |
-| PGx | Huang_2026 | not_relevant | 0 | 0 | The paper investigates the structural and metabolic consequences of a novel IDS gene mutation in MPS II, but does not report pharmacokinetic or pharmacodynamic parameters of the drug idursulfase. |
-| popPK | Kohn_2015 | irrelevant | 0 | 0 | The paper is a proteomic study on fish embryos where iduronate 2-sulfatase is identified as a biomarker protein, not a pharmacokinetic study of the drug idursulfase. |
-| popPK | Muenzer_2022 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for intrathecal idursulfase and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Huang_2026 | not_relevant | 0 | 0 | The paper investigates the structural and metabolic consequences of a novel IDS gene mutation in MPS II, but does not report any pharmacokinetic or pharmacodynamic effects of idursulfase therapy. |
+| popPK | Kohn_2015 | irrelevant | 0 | 0 | The paper is a proteomic study in hapuku fish that identifies iduronate 2-sulfatase (the enzyme targeted by idursulfase) as a biomarker, but does not report pharmacokinetic parameters for the drug idursulfase. |
+| popPK | Muenzer_2022 | irrelevant | 0 | 0 | The paper reports clinical efficacy outcomes (cognitive scores, GAG levels) for intrathecal idursulfase but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) or a PK model. |
 | PGx | Muenzer_2022_2 | not_relevant | 0 | 0 | The paper reports a post-hoc analysis of clinical efficacy (DAS-II scores) by genotype, but does not report pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, biomarker levels) modified by the genotype. |
-| PGx | Pano_2015 | not_relevant | 5 | 8 | The paper reports genotype-associated differences in pharmacodynamic biomarkers (uGAG, liver size) and safety, but does not report pharmacokinetic parameters or fitted pharmacogenomic effect sizes. |
-| popPK | Qi_2019 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vestronidase alfa, not idursulfase. |
-| popPK | Rekowski_2025 | irrelevant | 0 | 0 | The paper is a methodological guideline (CONSORT-DEFINE) for reporting clinical trials and does not contain original pharmacokinetic data for idursulfase. |
+| popPK | Qi_2019 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vestronidase alfa (MPS VII), not idursulfase (MPS II). |
+| popPK | Rekowski_2025 | irrelevant | 0 | 0 | The paper is a methodological guideline for reporting clinical trials and does not contain any pharmacokinetic data for idursulfase. |
 | PD | Rekowski_2025 | not_relevant | 0 | 0 | The paper is a methodological guideline (CONSORT-DEFINE) for reporting early-phase dose-finding trials and does not report specific pharmacodynamic data or parameters for idursulfase. |
-| PGx | Vollebregt_2022 | not_relevant | 5 | 5 | The paper reports that CRIM-negative genotypes are associated with higher antibody titers and reduced drug efficacy (uGAG levels), but it does not report a direct pharmacokinetic effect (e.g., clearance, half-life) of the genotype on the drug itself, nor does it provide a fitted quantitative effect size for a PK parameter. |
+| PGx | Vollebregt_2022 | not_relevant | 0 | 0 | The paper reports the effect of anti-drug antibodies (an immune response) on pharmacokinetics, not the effect of a specific gene variant or genotype on the drug's PK/PD parameters. |
 | PD | Xie_2015 | not_relevant | 2 | 1 | The study reports pharmacokinetic parameters and a linear dose-exposure relationship (dose vs AUC/Cmax), but it does not report any pharmacodynamic (effect) data or exposure-response relationship. |
-| popPK | Zhou_2012 | irrelevant | 0 | 0 | The study focuses on a novel IgG-iduronate 2-sulfatase fusion protein for MPS-II, not the drug idursulfase, and reports biodistribution percentages rather than quantitative PK parameters for idursulfase. |
+| popPK | Zhou_2012 | irrelevant | 0 | 0 | The study focuses on a novel IgG-iduronate 2-sulfatase fusion protein in mice, not the pharmacokinetics of the drug idursulfase. |
 | PD | Zhou_2012 | not_relevant | 1 | 1 | The paper reports binding affinity (EC50) and tissue distribution data for a fusion protein, but does not report a pharmacodynamic exposure-response or dose-response relationship for idursulfase enzyme activity or clinical outcomes. |
 | PGx | Zubaida_2019 | not_relevant | 0 | 0 | The paper reports genetic variants causing the disease (MPS-II) and reduced enzyme activity, but does not report pharmacogenomic effects on the PK/PD of the drug idursulfase. |
 

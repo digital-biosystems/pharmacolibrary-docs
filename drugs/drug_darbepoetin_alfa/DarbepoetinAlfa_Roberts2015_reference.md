@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;Roberts_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DarbepoetinAlfa_Doshi2010_reference&quot;,&quot;label&quot;:&quot;Doshi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Doshi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Jeon2021_reference&quot;,&quot;label&quot;:&quot;Jeon_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Jeon2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Kawakami2009_reference&quot;,&quot;label&quot;:&quot;Kawakami_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Kawakami2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;DarbepoetinAlfa_Roberts2015_reference&quot;,&quot;label&quot;:&quot;Roberts_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # darbepoetin alfa — `DarbepoetinAlfa_Roberts2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,20 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading darbepoetin alfa; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:31.460238+00:00) predates the upstream re-run (2026-10-05 20:55:13.720271+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `darbepoetin_alfa`, measured `erythropoietin`.
 
 ## Citation
 Roberts JK et al., Population Pharmacokinetics of Darbepoe…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-015-0286-y](https://doi.org/10.1007/s40262-015-0286-y)
 
 ## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Roberts2015_reference" status="curated_candidate" stale="false" population="hypothermic neonates with hypoxic-ischemic encephalopathy" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Roberts2015_reference" status="extracted" stale="true" population="hypothermic neonates with hypoxic-ischemic encephalopathy" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -40,8 +44,8 @@ Roberts JK et al., Population Pharmacokinetics of Darbepoe…, Clinical pharmaco
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 0.0465 | L/h | 1.2916666666666667e-08 | [l] / [h] | not captured | exact (1.0) | Roberts_2015:abstract | — | not captured |
-| volume of distribution | `Q61` · V | 1.58 | L | 0.00158 | [l] | not captured | exact (1.0) | Roberts_2015:abstract | — | not captured |
+| darbepoetin alfa clearance | `Q22` · CL | 0.0465 | L/h | 1.2916666666666667e-08 | [l] / [h] | not captured | llm_confirmed (0.6) | Roberts_2015:abstract | — | not captured |
+| darbepoetin alfa volume of distribution | `Q61` · V | 1.58 | L | 0.00158 | [l] | not captured | llm_confirmed (0.6) | Roberts_2015:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,10 +55,12 @@ Roberts JK et al., Population Pharmacokinetics of Darbepoe…, Clinical pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=darbepoetin_alfa
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=erythropoietin
+- molar mass: no plausible PubChem entry for 'erythropoietin' ('erythropoietin') — left in mass units
+- molar mass: none found for 'darbepoetin_alfa' — its concentrations stay mass-only
+- molar mass: none found for 'erythropoietin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record measures 'erythropoietin', not darbepoetin_alfa — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Roberts_2015_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -66,16 +72,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance]` | 0.0465 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 1.58 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | darbepoetin_alfa | darbepoetin alfa | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | darbepoetin_alfa | darbepoetin alfa | mismatch |
+| `gpt-oss:120b` | `parameters[clearance]` | not captured | 0.0465 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[darbepoetin alfa clearance]` | 0.0465 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[darbepoetin alfa volume of distribution]` | 1.58 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 1.58 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | darbepoetin_alfa | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | erythropoietin | unknown | mismatch |
 
 </details>
 
@@ -129,8 +137,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_modelica.zip" download>DarbepoetinAlfa_Roberts2015_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_fmi.zip" download>DarbepoetinAlfa_Roberts2015_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_modelica.zip" download>DarbepoetinAlfa_Roberts2015_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_fmi.zip" download>DarbepoetinAlfa_Roberts2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_matlab.zip" download>DarbepoetinAlfa_Roberts2015_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_matlab_simbio.zip" download>DarbepoetinAlfa_Roberts2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_darbepoetin_alfa/DarbepoetinAlfa_Roberts2015_reference/DarbepoetinAlfa_Roberts2015_reference_sbml.zip" download>DarbepoetinAlfa_Roberts2015_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -151,4 +159,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 00:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:55 UTC</sub>

@@ -18,7 +18,7 @@ Metenolone is an anabolic steroid that has been used to promote muscle growth an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 00:46 | 1:26 | 0/0/0 | 0/0/0 | 0/0/0 | 3,720/291 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-05 10:04 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 5,000/213 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -45,7 +45,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Abdul_2024.pdf` | Abdul Karim A et al., Biotransformation of metenolone acetate…, Steroids (2024) | pd | 4 | [10.1016/j.steroids.2023.109345](https://doi.org/10.1016/j.steroids.2023.109345) | [37984606](https://www.ncbi.nlm.nih.gov/pubmed/37984606) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T00:46:33.418115+00:00</sub>
+<sub>queue written 2026-10-05T10:04:55.772504+00:00</sub>
 
 ## Screened and excluded
 
@@ -53,7 +53,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Abdul_2024 | irrelevant | 0 | 0 | The study focuses on microbial biotransformation and in-vitro aromatase inhibition, not pharmacokinetic disposition parameters. |
 | PD | Abdul_2024 | not_relevant | 0 | 0 | The paper reports in vitro aromatase inhibition IC50 values for metabolites, which is a pharmacological potency assay, not a pharmacodynamic (exposure-response) relationship for the drug metenolone itself. |
-| popPK | Anes_2024 | irrelevant | 0 | 0 | The paper is a review on immunology (Type I Interferons in TB/HIV) and contains no pharmacokinetic data for metenolone. |
+| popPK | Anes_2024 | irrelevant | 0 | 0 | The paper is a review of immunology regarding tuberculosis and HIV, containing no pharmacokinetic data for metenolone. |
 | popPK | Garbrecht_1981 | irrelevant | 0 | 0 | The study focuses on lipid metabolism side effects (hyperlipoproteinaemia) and does not report any pharmacokinetic parameters for methenolone. |
 | PD | Garbrecht_1981 | not_relevant | 1 | 0 | The paper reports a qualitative observation of hyperlipoproteinaemia and explicitly states there was no relationship between cholesterol levels and dosage, providing no numeric PD parameters or concentration-effect data. |
 | popPK | Hraiech_2017 | irrelevant | 0 | 0 | The paper is a study on Staphylococcus aureus pneumonia in mice and does not involve metenolone or pharmacokinetic parameters. |

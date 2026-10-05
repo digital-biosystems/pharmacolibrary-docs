@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;aminocaproic acid&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/&quot;},{&quot;label&quot;:&quot;Ross_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminocaproicAcid_Ross2007_reference&quot;,&quot;label&quot;:&quot;Ross_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminocaproicAcid_Ross2007_reference&quot;,&quot;label&quot;:&quot;Ross_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AminocaproicAcid_Stricker2013_reference&quot;,&quot;label&quot;:&quot;Stricker_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aminocaproic acid — `AminocaproicAcid_Ross2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.812). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,9 +21,11 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.098, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q57: this record has none, the second reading 2.3; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:01.999119+00:00) predates the upstream re-run (2026-10-05 16:28:23.843886+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `ε-aminocaproic acid`, measured `aminocaproic_acid`.
 
@@ -32,7 +34,7 @@ Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of v
   ·  DOI: [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016)
 
 ## Model component
-<dbs-pgx drug="aminocaproic acid" model-id="AminocaproicAcid_Ross2007_reference" status="curated_candidate" stale="false" population="healthy adult horses" measured-compound="aminocaproic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="aminocaproic acid" model-id="AminocaproicAcid_Ross2007_reference" status="extracted" stale="true" population="healthy adult horses" measured-compound="aminocaproic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -58,20 +60,18 @@ Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of v
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss:120b` | partly confirmed | 0.812 (13/16 fields) | 3 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 0.098 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q59]` | 0.26 | 0.26 | mismatch |
-| `gpt-oss:120b` | `values[Q60]` | 2.3 | 2.3 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | not captured | 2.3 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q75]` | not captured | 151.0 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q900]` | 477.3 | not captured | only_one_extracted |
 
@@ -127,7 +127,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_modelica.zip" download>AminocaproicAcid_Ross2007_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_modelica.zip" download>AminocaproicAcid_Ross2007_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_fmi.zip" download>AminocaproicAcid_Ross2007_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_matlab.zip" download>AminocaproicAcid_Ross2007_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_matlab_simbio.zip" download>AminocaproicAcid_Ross2007_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -149,4 +149,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-06 02:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 16:28 UTC</sub>

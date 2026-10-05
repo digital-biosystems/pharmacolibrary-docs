@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;alglucosidase alfa&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/&quot;},{&quot;label&quot;:&quot;Barzel_2026 \u00b7 qi_et_al_2018_23_plasma&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlglucosidaseAlfa_Tiraboschi2023_reference&quot;,&quot;label&quot;:&quot;Tiraboschi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlglucosidaseAlfa_Tiraboschi2023_reference&quot;,&quot;label&quot;:&quot;Tiraboschi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alglucosidase alfa — `AlglucosidaseAlfa_Barzel2026_qi_et_al_2018_23_plasma`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.35). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — alglucosidase alfa: V 4.46, kel 0.9 d−1, k12 0.94 d−1, k21 0.11 d−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:53.828032+00:00) predates the upstream re-run (2026-10-05 10:36:33.622019+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2)
 
 ## Model component
-<dbs-pgx drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_qi_et_al_2018_23_plasma" status="needs_review" stale="false" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_qi_et_al_2018_23_plasma" status="needs_review" stale="true" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -73,6 +75,7 @@ Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacoki
 - bound model equation to Q22 (CL): CL = 1.97 * (TBW/20)^0.587Q = 0.931 * (TBW/20)^0.587Vc =1.52 * (TBW/20)^0.483Vp = 3.11 * (TBW/20)^0.483
 - Q22 (CL) is equation-defined: value moved to equation-variable 'CL'; equation kept verbatim
 - population split: 'qi et al., 2018 [23]plasma' subgroup of Barzel_2026 (paper reports 5 populations: gras-colomer et al., 2021 [25]plasma/leukocyteθ, qi et al., 2018 [23]plasma, tiraboschi et al., 2023 [22]plasma, troy et al., 2020 [26]serum/csf*, tuffal et al., 2023 [21]plasma)
+- molar mass: none found for 'alglucosidase_alfa' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -102,16 +105,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.35 (7/20 fields) | 13 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cendo]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss:120b` | `parameters[cendo]` | not captured | 0.93 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | alglucosidase_alfa | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | alglucosidase_alfa | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[km]` | not captured | 0.451 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ktrans]` | not captured | 0.581 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/q2]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/q2]` | not captured | 0.931 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3]` | not captured | 1.87 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q]` | not captured | 86.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v3]` | not captured | 1.31 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc/v1]` | not captured | 1.52 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vm]` | not captured | 9.82 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vp/v2]` | not captured | 3.11 | only_one_extracted |
 
 </details>
 
@@ -167,4 +179,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 00:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 10:36 UTC</sub>

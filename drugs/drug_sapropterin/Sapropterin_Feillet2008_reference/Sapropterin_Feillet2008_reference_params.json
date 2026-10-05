@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Sapropterin_Feillet2008_reference",
+ "molar_masses": {
+  "central.C": 0.2412471
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 0.0005833333333333334,
   "F": 1.0,
+  "MM": 0.2412471,
   "Tlag": 0.0,
   "VdPerKg": 0.11928571428571429,
   "adminCount": 1.0,

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Argatroban_Cox2004_reference",
+ "molar_masses": {
+  "central.C": 0.50864
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.75,
+  2.1,
+  24.5
+ ],
+ "parameters": {
+  "Cl": 6.11111111111111e-06,
+  "F": 1.0,
+  "MM": 0.50864,
+  "VdPerKg": 0.00015714285714285713,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.75e-06,
+  "k12": 0.0002525252525252525,
+  "k21": 0.00021367521367521368,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662094
+ },
+ "reference_peaks": {
+  "central.C": 2.7986576329972345e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

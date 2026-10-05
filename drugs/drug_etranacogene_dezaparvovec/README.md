@@ -17,17 +17,11 @@ Etranacogene dezaparvovec is a gene therapy used to treat hemophilia B. It is au
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 21:35 | 3:13 | 0/0/0 | 0/1/0 | 0/0/0 | 115,606/1,819 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-05 18:57 | 1:01 | 0/0/0 | 0/0/0 | 0/0/0 | 45,334/502 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cao_2025_IgG](drugs/drug_etranacogene_dezaparvovec/pd_Cao_2025_IgG.md) | IgG ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## ADME sites
 
@@ -58,14 +52,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Anguela_2024 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy and safety outcomes (bleeding rates, FIX activity) rather than a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
 | popPK | Astermark_2025 | irrelevant | 0 | 0 | The paper evaluates laboratory assay variability (OSA vs CA) for measuring Factor IX activity, not the pharmacokinetic disposition parameters (CL, V, etc.) of the gene therapy vector itself. |
 | PGx | Astermark_2025 | not_relevant | 0 | 0 | The paper evaluates the performance of laboratory assays (OSA vs CA) for measuring Factor IX activity, not the effect of a gene variant on PK/PD parameters. |
-| popPK | Cao_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not etranacogene_dezaparvovec, which is only mentioned as a context for AAV gene therapy. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not etranacogene_dezaparvovec. |
 | popPK | García-Diego_2024 | irrelevant | 0 | 0 | The paper is a multi-criteria decision analysis (MCDA) for value assessment and does not report any pharmacokinetic parameters or quantitative disposition data for etranacogene dezaparvovec. |
 | popPK | Klamroth_2024 | irrelevant | 0 | 0 | The paper is an indirect treatment comparison of efficacy (bleeding rates) and does not report any pharmacokinetic parameters for etranacogene dezaparvovec. |
 | popPK | Puzzo_2025 | irrelevant | 0 | 0 | The paper is a review of liver-directed gene therapy that mentions etranacogene dezaparvovec only as an approved product without reporting any quantitative pharmacokinetic parameters. |
 | popPK | Rana_2025 | irrelevant | 0 | 0 | The paper is a narrative review of clinical trials focusing on efficacy and immunogenicity, and it does not report quantitative pharmacokinetic parameters for etranacogene dezaparvovec. |
 | popPK | Serrafi_2026 | irrelevant | 0 | 0 | The paper is a narrative review of gene therapy in hemophilia that discusses etranacogene dezaparvovec clinically but does not report any quantitative pharmacokinetic parameters (CL, V, Q, ka, etc.). |
 | PD | Wojciechowski_2025 | not_relevant | 0 | 0 | The paper reports a population PK/PD model for fidanacogene elaparvovec, not etranacogene dezaparvovec. |
-| popPK | Youssef_2026 | irrelevant | 0 | 0 | The paper is a review on pharmacovigilance in cell and gene therapy and does not report quantitative pharmacokinetic parameters for etranacogene_dezaparvovec. |
+| popPK | Youssef_2026 | irrelevant | 0 | 0 | The paper is a review on pharmacovigilance and risk management for cell and gene therapies, containing no quantitative pharmacokinetic parameters for etranacogene_dezaparvovec. |
 | PD | Youssef_2026 | not_relevant | 0 | 0 | The paper is a review on pharmacovigilance and safety monitoring for cell and gene therapies; it does not report any PK/PD data, exposure-response relationships, or numeric PD parameters for etranacogene dezaparvovec. |
 
 ---

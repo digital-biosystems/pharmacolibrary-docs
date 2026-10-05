@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;marstacimab&quot;,&quot;href&quot;:&quot;drugs/drug_marstacimab/&quot;},{&quot;label&quot;:&quot;Nayak_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Marstacimab_Nayak2026_reference&quot;,&quot;label&quot;:&quot;Nayak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_marstacimab/Marstacimab_Nayak2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # marstacimab — `Marstacimab_Nayak2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,18 +20,20 @@
 
 For marstacimab (3-compartment structure), the coverage check expected 6 parameters but found 5, with tlag (2 h) neither emitted nor given a placeholder value. The model builder substituted assumed placeholder values for the missing first-order transfer rate constants k13 and k31, which describe distribution between the central (V1, 3.61 L) and peripheral (V2, 4.99 L) compartments and correspond to the intercompartmental clearance Q (0.00489 L/h). A second reader returned null for all six parameters — CL (0.0188 L/h), tlag, Q, total volume of distribution (8.6 L), Vc, and Vp — so no independent confirmation of any value exists. Extracted — marstacimab: Cmax 12.2, V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L, Q 0.00489 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of -cl: this record has 0.0188, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has marstacimab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:38.745638+00:00) predates the upstream re-run (2026-10-05 19:00:04.988425+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5)
 
 ## Model component
-<dbs-pgx drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="needs_review" stale="false" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="needs_review" stale="true" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="3C"></dbs-pgx>
 
-**Model structure:** 3-compartment, IV mammillary model — template `PK_3C`.  
+**Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
@@ -57,9 +58,6 @@ Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['k13', 'k31']
-
 **Interpretation flags:**
 - dropped value-less row: 'Parameter'
 - dropped PD-category row 'Baseline peak TGA, P BASE (nM) 37.8' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_6:row3:col1', 'tab_6:row3:col2', 'tab_6:row3:col3', 'tab_6:row3:col4'])
@@ -70,11 +68,13 @@ Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 - salvaged Q83 ('-Lag time (h)'=2) from results prose — parameter table was unreadable
 - salvaged Q64 ('V p'=4.99) from results prose — parameter table was unreadable
 - salvaged Q61 ('total volume of distribution'=8.6) from results prose — parameter table was unreadable
+- implicit units: 'Maximum peak TGA, P MAX (nM) 91.4' — the LLM proposed 'nM', whose dimension does not fit Q32; left unset
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V c (L)); Q22 (-CL (L/h)); Q64 (V p); Q61 (total volume of distribution)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=marstacimab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
+- molar mass: none found for 'marstacimab' — its concentrations stay mass-only
 - gap-filled Q30 (Q) from Nayak_2026's review values (primary lacked it)
 
 **Extraction notes:**
@@ -91,18 +91,27 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.167 (3/18 fields) | 15 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['marstacimab', 'total tfpi', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[-cl]` | 0.0188 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[-lag time]` | 2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[-q]` | 0.00489 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 0.0188 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a]` | not captured | 0.00742 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | not captured | 2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q]` | not captured | 0.00489 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total volume of distribution]` | 8.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total volume of distribution]` | not captured | 8.60 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v c]` | 3.61 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v c]` | not captured | 3.61 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v p]` | 4.99 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vp]` | not captured | 4.99 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | marstacimab | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | marstacimab | unknown | mismatch |
 
 </details>
 
@@ -161,25 +170,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_modelica.zip" download>Marstacimab_Nayak2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_fmi.zip" download>Marstacimab_Nayak2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_3C.fmu" download>PK_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_fmi.zip" download>Marstacimab_Nayak2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab.zip" download>Marstacimab_Nayak2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab_simbio.zip" download>Marstacimab_Nayak2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sbml.zip" download>Marstacimab_Nayak2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_cellml.zip" download>Marstacimab_Nayak2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference.svg" alt="Marstacimab_Nayak2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 150 mg infusion over 10 min, single dose. Doses in the paper: 150, 300 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_params.json" metaurl="assets/fmu/PK_3C.vr.json" wasmurl="assets/fmu/PK_3C.js" controlsurl="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3C` · parameters `Marstacimab_Nayak2026_reference_params.json` · controls `Marstacimab_Nayak2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:00 UTC</sub>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor VII&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/&quot;},{&quot;label&quot;:&quot;Rivard_1994 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_adults_with_haemophilia_a&quot;,&quot;label&quot;:&quot;Klitgaard_2008_adults_with_haemophilia_a_or_b_9_jansen_data_on_file_2001&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_adults_with_haemophilia_a.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_healthy_japanese_and_cauc&quot;,&quot;label&quot;:&quot;Klitgaard_2008_healthy_japanese_and_caucasian_volunteers_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_healthy_japanese_and_cauc.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_healthy_volunteers_11_12&quot;,&quot;label&quot;:&quot;Klitgaard_2008_healthy_volunteers_11_12&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_healthy_volunteers_11_12.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_japanese_patients_with_ha&quot;,&quot;label&quot;:&quot;Klitgaard_2008_japanese_patients_with_haemophilia_a_or_b_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_japanese_patients_with_ha.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_nonbleeding_patients_with&quot;,&quot;label&quot;:&quot;Klitgaard_2008_nonbleeding_patients_with_cirrhosis_and_prolonged_pt_10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_nonbleeding_patients_with.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_noncirrhotic_patients_und&quot;,&quot;label&quot;:&quot;Klitgaard_2008_noncirrhotic_patients_undergoing_liver_resection_27_klitgaard_data_on_file_2005&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_noncirrhotic_patients_und.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_paediatric_patients_with&quot;,&quot;label&quot;:&quot;Klitgaard_2008_paediatric_patients_with_haemophilia_a_or_b_8&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_paediatric_patients_with.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_patients_undergoing_olt_m&quot;,&quot;label&quot;:&quot;Klitgaard_2008_patients_undergoing_olt_multiple_dose_study_20_erichsen_klitgaard_data_on_file_2004&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_undergoing_olt_m.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_patients_undergoing_olt_s&quot;,&quot;label&quot;:&quot;Klitgaard_2008_patients_undergoing_olt_single_dose_study_17_jansen_data_on_file_2001&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_undergoing_olt_s.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_patients_with_cirrhosis_a&quot;,&quot;label&quot;:&quot;Klitgaard_2008_patients_with_cirrhosis_and_ugib_18&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_with_cirrhosis_a.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_patients_with_cirrhosis_a&quot;,&quot;label&quot;:&quot;Klitgaard_2008_patients_with_cirrhosis_and_ugib_19_unpublished_data_klitgaard_data_on_file_2004&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_with_cirrhosis_a.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorVii_Klitgaard2008_patients_with_traumatic_b&quot;,&quot;label&quot;:&quot;Klitgaard_2008_patients_with_traumatic_blunt_and_or_penetrating_injury_2_23&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/CoagulationFactorVii_Klitgaard2008_patients_with_traumatic_b.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # coagulation factor VII — `CoagulationFactorVii_Rivard1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,9 +21,11 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — coagulation factor vii: t1/2z 6.49 hours, CL 5 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has factor VII, the second reading factor VII concentrate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has factor VII concentrate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:14.023993+00:00) predates the upstream re-run (2026-10-05 17:55:56.340922+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `factor VII concentrate`, measured `factor VII`.
 
@@ -31,9 +34,9 @@ Rivard GE et al., Clinical study of recovery and half-lif…, Transfusion (1994)
   ·  DOI: [10.1046/j.1537-2995.1994.341195065036.x](https://doi.org/10.1046/j.1537-2995.1994.341195065036.x)
 
 ## Model component
-<dbs-pgx drug="coagulation factor VII" model-id="CoagulationFactorVii_Rivard1994_reference" status="needs_review" stale="false" population="patients with congenital FVII deficiency" measured-compound="factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="coagulation factor VII" model-id="CoagulationFactorVii_Rivard1994_reference" status="needs_review" stale="true" population="patients with congenital FVII deficiency" measured-compound="factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
@@ -54,14 +57,17 @@ Rivard GE et al., Clinical study of recovery and half-lif…, Transfusion (1994)
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'mean recovery value obtained for FVII concentrate' — extend the ontology if this is a real PK parameter (source ['Rivard_1994:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=factor VII
+- molar mass: none found for 'coagulation_factor_vii' — its concentrations stay mass-only
+- molar mass: none found for 'factor VII' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Zenklusen_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Rivard_1994_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Rivard_1994_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -70,15 +76,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance]` | 5.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | 6.49 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | factor VII | factor VII concentrate | mismatch |
+| `gpt-oss:120b` | `parameters[half-life]` | not captured | 6.49 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean recovery value]` | not captured | 110.53 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | factor VII concentrate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | factor VII | unknown | mismatch |
 
 </details>
 
@@ -133,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 20:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:55 UTC</sub>

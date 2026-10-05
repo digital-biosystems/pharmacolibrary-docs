@@ -18,7 +18,7 @@ Uridine triacetate is an approved medicine classified among other products for t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:16 | 3:15 | 0/0/0 | 0/0/0 | 0/0/0 | 6,099/823 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-05 12:10 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 14,763/1,219 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -56,31 +56,31 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Saif_2007.pdf` | Saif MW et al., DIHYDROPYRIMIDINE DEHYDROGENASE DEFICIE…, Pakistan journal of medical… (2007) | pgx | 5 | not captured | [18846242](https://www.ncbi.nlm.nih.gov/pubmed/18846242) | metadata signals extractable PGX data (DPYD) |
 | `Saif_2016.pdf` | Saif MW et al., Benefit of uridine triacetate (Vistogar…, Cancer chemotherapy and pha… (2016) | pgx | 5 | [10.1007/s00280-016-3063-1](https://doi.org/10.1007/s00280-016-3063-1) | [27278667](https://www.ncbi.nlm.nih.gov/pubmed/27278667) | metadata signals extractable PGX data (DPYD) |
 
-<sub>queue written 2026-09-30T03:16:25.628084+00:00</sub>
+<sub>queue written 2026-10-05T12:09:32.479709+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Al_2021 | not_relevant | 1 | 2 | Reports clinical and biochemical improvement with uridine triacetate in a patient with a UMPS mutation, but does not quantify a genotype-dependent pharmacokinetic or pharmacodynamic parameter. |
-| PGx | Baldeo_2018 | not_relevant | 0 | 0 | The case describes thymidylate synthase variation and response to uridine triacetate but does not report its effect on any uridine triacetate pharmacokinetic or pharmacodynamic parameter. |
-| popPK | Hidalgo_2000 | irrelevant | 2 | 1 | PN401 (uridine triacetate) was administered, but only 5-FU PK parameters are reported and uridine exposure is described qualitatively without disposition values. |
-| PGx | Jacob_2022 | not_relevant | 1 | 2 | The paper reports DPYD deficiency associated with severe 5-FU toxicity, but does not report a pharmacogenomic effect on any uridine triacetate PK or PD parameter. |
-| PGx | Kats_2023 | not_relevant | 0 | 0 | The paper only notes normal DPYD genotypes in two fluorouracil overdose patients and reports no pharmacokinetic or pharmacodynamic effect on uridine triacetate. |
-| PGx | Leung_2021 | not_relevant | 0 | 0 | The case describes DPYD-associated 5-fluorouracil toxicity and response to uridine triacetate, but reports no genotype-related PK or PD parameter for uridine triacetate. |
-| PGx | Li_2022 | not_relevant | 0 | 0 | The paper only mentions DPYD genotyping as a future consideration for capecitabine/5-FU toxicity and reports no genotype-related PK or PD effect for uridine triacetate. |
-| popPK | Ma_2017 | irrelevant | 1 | 0 | This clinical antidote study reports outcomes and safety but no quantitative pharmacokinetic disposition parameters for uridine triacetate. |
+| PGx | Al_2021 | not_relevant | 0 | 0 | The paper reports a clinical case of a genetic disorder treated with uridine triacetate but does not analyze how the genotype affects the drug's pharmacokinetics or pharmacodynamics. |
+| PGx | Baldeo_2018 | not_relevant | 2 | 0 | The paper is a case report describing the clinical efficacy of uridine triacetate in a patient with a specific genotype, but it does not report quantitative changes in PK or PD parameters of uridine triacetate itself. |
+| popPK | Hidalgo_2000 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for fluorouracil (5-FU), not uridine triacetate (PN401), and only provides qualitative descriptions of uridine concentrations without quantitative PK model parameters for the subject drug. |
+| PGx | Jacob_2022 | not_relevant | 0 | 0 | The paper is a case report on the clinical use of uridine triacetate for toxicity management and does not report pharmacokinetic or pharmacodynamic parameters of uridine triacetate itself. |
+| PGx | Kats_2023 | not_relevant | 0 | 0 | The paper describes clinical management of overdose without the drug and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Leung_2021 | not_relevant | 2 | 1 | The paper reports a clinical case of uridine triacetate use in a patient with a DPYD variant, but it does not report pharmacokinetic or pharmacodynamic parameters of uridine triacetate itself being altered by the genotype. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper is a case report of capecitabine toxicity that only speculates about the future utility of DPYD genotyping and does not report any pharmacogenomic effects on PK or PD parameters of uridine triacetate. |
+| popPK | Ma_2017 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study of uridine triacetate as an antidote, reporting survival and toxicity outcomes rather than pharmacokinetic parameters. |
 | PD | Ma_2017 | not_relevant | 1 | 0 | Reports clinical survival and toxicity outcomes after uridine triacetate treatment but provides no exposure- or dose-response analysis and no numeric PD parameters or effect-versus-concentration relationship. |
-| PGx | Matar_2026 | not_relevant | 0 | 0 | The case reports DPYD genotype and severe 5-FU toxicity, but does not evaluate a pharmacokinetic or pharmacodynamic parameter of uridine triacetate. |
+| PGx | Matar_2026 | not_relevant | 0 | 0 | The paper is a case report of fatal 5-FU toxicity despite uridine triacetate rescue and does not report a pharmacogenomic effect on the PK or PD parameters of uridine triacetate itself. |
 | popPK | Miller_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter interactions (IC50 values) and does not report pharmacokinetic disposition parameters (CL, V, etc.) for uridine triacetate. |
-| PGx | Natarajan_2023 | not_relevant | 0 | 0 | The case reports normal DPD polymorphism/activity and 5-FU neurotoxicity treated with uridine triacetate, but does not evaluate a genomic effect on any uridine triacetate PK or PD parameter. |
-| popPK | Saif_2006 | irrelevant | 0 | 0 | The study reports 5-FU pharmacokinetics, but no quantitative disposition parameters or numeric PK values for PN401 (uridine triacetate). |
-| PGx | Saif_2007 | not_relevant | 0 | 0 | Reports DPD deficiency/genotype associated with 5-FU-related toxicity, but does not report a pharmacokinetic or pharmacodynamic parameter of uridine triacetate. |
-| PGx | Saif_2016 | not_relevant | 0 | 0 | Reports DPYD deficiency associated with 5-FU toxicity and response to uridine triacetate, but does not report a pharmacokinetic or pharmacodynamic parameter of uridine triacetate affected by genotype or phenotype. |
-| PGx | Saif_2019 | not_relevant | 0 | 0 | The paper discusses TYMS genotypes and capecitabine neurotoxicity, but reports no pharmacokinetic or pharmacodynamic parameter for uridine triacetate. |
-| PGx | Shamaei_2025 | not_relevant | 0 | 0 | The paper describes a DPYD*2A-associated toxicity case involving capecitabine/fluorouracil and uridine triacetate treatment, but reports no pharmacokinetic or pharmacodynamic parameter of uridine triacetate. |
-| popPK | Wan_2026 | irrelevant | 1 | 0 | TAU is a coadministered enhancer of trifluridine exposure, with no quantitative uridine-triacetate disposition parameters reported in the provided evidence. |
-| popPK | Zurayk_2019 | irrelevant | 0 | 0 | This case report and review describes clinical use of uridine triacetate but provides no quantitative pharmacokinetic disposition parameters. |
+| PGx | Natarajan_2023 | not_relevant | 0 | 0 | The paper is a case report of 5-FU toxicity treated with uridine triacetate and does not report pharmacogenomic effects on the PK or PD parameters of uridine triacetate itself. |
+| popPK | Saif_2006 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 5-fluorouracil, not uridine triacetate (PN401), which is used as a rescue agent. |
+| PGx | Saif_2007 | not_relevant | 0 | 0 | The paper discusses DPD deficiency and its effect on 5-Fluorouracil and capecitabine, not uridine triacetate. |
+| PGx | Saif_2016 | not_relevant | 2 | 5 | The paper reports clinical outcomes (toxicity delay) in DPYD-deficient patients treated with uridine triacetate, but does not report pharmacokinetic or pharmacodynamic parameters of uridine triacetate itself. |
+| PGx | Saif_2019 | not_relevant | 0 | 0 | The paper discusses capecitabine pharmacogenetics and toxicity, but does not report any pharmacokinetic or pharmacodynamic parameters for uridine triacetate. |
+| PGx | Shamaei_2025 | not_relevant | 0 | 0 | The paper is a case report on DPD deficiency and capecitabine toxicity, mentioning uridine triacetate only as a rescue treatment without reporting any pharmacokinetic or pharmacodynamic parameters for uridine triacetate itself. |
+| popPK | Wan_2026 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of trifluridine (FTD) and the effect of uridine triacetate (TAU) as a co-administered enzyme inhibitor, rather than reporting quantitative disposition parameters (CL, V, etc.) for uridine triacetate itself. |
+| popPK | Zurayk_2019 | irrelevant | 0 | 0 | The paper is a clinical case report regarding the therapeutic use of uridine triacetate as an antidote for capecitabine toxicity, not a pharmacokinetic study reporting quantitative disposition parameters for uridine triacetate. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

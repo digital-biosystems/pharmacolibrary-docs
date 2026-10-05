@@ -17,7 +17,7 @@ Alpha1-antitrypsin (as Respreeza) is used to treat lung disease caused by an inh
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 14:35 | 1:23 | 0/0/0 | 0/0/0 | 0/0/0 | 14,640/814 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 3/3 | 5/2 | 0 |
+| 2026-10-05 16:28 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 34,755/638 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 3/3 | 5/2 | 0 |
 
 ## popPK records
 
@@ -42,9 +42,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2023.pdf` | Li Z et al., Evaluation of body weight-based dosing,…, Pulmonary pharmacology & th… (2023) | popPK | 10 | [10.1016/j.pupt.2023.102265](https://doi.org/10.1016/j.pupt.2023.102265) | [37923165](https://pubmed.ncbi.nlm.nih.gov/37923165) | The paper describes a population PK model for alfa1-antitrypsin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Li_2023.pdf` | Li Z et al., Evaluation of body weight-based dosing,…, Pulmonary pharmacology & th… (2023) | popPK | 10 | [10.1016/j.pupt.2023.102265](https://doi.org/10.1016/j.pupt.2023.102265) | [37923165](https://pubmed.ncbi.nlm.nih.gov/37923165) | The paper describes a population pharmacokinetic model for alfa1-antitrypsin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-16T14:35:51.922932+00:00</sub>
+<sub>queue written 2026-10-05T16:27:49.757960+00:00</sub>
 
 ## Screened and excluded
 
@@ -63,9 +63,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Gómez-Perales_2021 | not_relevant | 0 | 0 | The paper discusses the myth of iodine allergy in nuclear medicine and does not contain any pharmacodynamic or exposure-response data for alpha-1 antitrypsin. |
 | popPK | Hogg_2004 | irrelevant | 0 | 0 | The paper is a pathophysiology review of COPD and does not report any pharmacokinetic parameters for alfa1 antitrypsin. |
 | popPK | Karbach_1985 | irrelevant | 0 | 0 | The study uses alpha-1-antitrypsin as a diagnostic marker for intestinal protein loss in Crohn's disease, not as a subject drug for pharmacokinetic parameter estimation. |
-| popPK | Kaslik_1999 | irrelevant | 0 | 0 | The paper is a structural/biochemical NMR study of the interaction between alpha1-proteinase inhibitor and trypsin, not a pharmacokinetic study of the drug alfa1-antitrypsin. |
+| popPK | Kaslik_1999 | irrelevant | 0 | 0 | The paper is a structural/biochemical NMR study of trypsin and its complex with alpha1-proteinase inhibitor, not a pharmacokinetic study of alfa1-antitrypsin as a drug. |
 | PD | Kaslik_1999 | not_relevant | 0 | 0 | The paper reports structural and biochemical properties (pKa, NMR signal characteristics) of a trypsin inhibitor complex, not a pharmacodynamic exposure-response or dose-response relationship for the drug. |
-| popPK | Li_2023 | relevant | 10 | 0 | The paper describes a population PK model for alfa1-antitrypsin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Li_2023 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for alfa1-antitrypsin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | popPK | Lin_2018 | irrelevant | 0 | 0 | The paper is a case report on ginseng-induced liver injury where alpha-1 antitrypsin is only mentioned as a normal diagnostic serology test, not as a subject drug for PK analysis. |
 | popPK | Lu_2025 | irrelevant | 0 | 0 | The study is a mechanistic investigation of pioglitazone's effect on protein accumulation in AATD models, not a pharmacokinetic study of alfa1-antitrypsin, and reports no PK parameters. |
 | popPK | Molmenti_1993 | irrelevant | 0 | 0 | The paper is a mechanistic study on the tissue expression of alpha-1-antitrypsin mRNA in enterocytes and Paneth cells, containing no pharmacokinetic parameters. |

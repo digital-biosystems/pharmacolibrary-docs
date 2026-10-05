@@ -17,15 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> Concizumab plasma concentration (ng/mL) drives peak thrombin generation (nmol/L) in EXPLORER3 via a sigmoidal Emax model fitted to the logarithm of peak TG; mechanistically concizumab binds TFPI (Kunitz-2 domain), relieving TFPI's inhibition of the initiation phase of coagulation and thereby enhancing thrombin generation. The estimated typical EC50 was 63 ng/mL (record: 62.2 ng/mL, 95% CI 52.4–72, BSV 62.6% CV) with baseline 81.5 ng/mL (95% CI 75.4–87.5, BSV 19.5% CV); no Imax/Emax, ke0, or kin/kout values are given.
+> Concizumab plasma concentration (ng/mL) stimulates peak thrombin generation (nmol/L) via a sigmoidal Emax model, with an estimated EC50 of 63 ng/mL. The paper describes the mechanism as concizumab inhibiting tissue factor pathway inhibitor (TFPI), thereby enhancing thrombin generation potential.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Eichler_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
-- **tier:** population
-- **effect:** inhibition/unknown
+- **tier:** descriptive
+- **effect:** stimulation/unknown
 
 ## Citation
 Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019)
@@ -34,18 +34,7 @@ Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline (ng/mL) — Estimate | `Q324` · not captured | 81.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col1 |
-| PD (effect) | Baseline (ng/mL) — 95% CI (lower) | `Q324` · not captured | 75.4 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col2 |
-| PD (effect) | Baseline (ng/mL) — 95% CI (upper) | `Q324` · not captured | 87.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col3 |
-| PD (effect) | Baseline (ng/mL) — Relative standard error (%) | `Q324` · not captured | 3.77 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col4 |
-| PD (effect) | Baseline (ng/mL) — Between‐subject variability (% CV) | `Q324` · not captured | 19.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col5 |
-| PD (effect) | Baseline (ng/mL) — Shrinkage (%) | `Q324` · not captured | 10.2 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col6 |
-| PD (effect) | EC50 (ng/mL) — Estimate | `Q321` · not captured | 62.2 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col1 |
-| PD (effect) | EC50 (ng/mL) — 95% CI (lower) | `Q321` · not captured | 52.4 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col2 |
-| PD (effect) | EC50 (ng/mL) — 95% CI (upper) | `Q321` · not captured | 72 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col3 |
-| PD (effect) | EC50 (ng/mL) — Relative standard error (%) | `Q321` · not captured | 8.02 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col4 |
-| PD (effect) | EC50 (ng/mL) — Between‐subject variability (% CV) | `Q321` · not captured | 62.6 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col5 |
-| PD (effect) | EC50 (ng/mL) — Shrinkage (%) | `Q321` · not captured | 21.3 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col6 |
+| PD (effect) | EC50 | `Q321` · not captured | 63 | ng/mL | not captured | llm (not captured) | Eichler_2019:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -4,7 +4,7 @@
 
 # dextran — `Dextran_Schwarz1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,15 +20,17 @@
 
 The terminal half-life of 24 h is labeled as belonging to dextran 60 (Macrodex) while the record's measured compound is dextran 1, a dimension mismatch on a structural parameter that failed the consistency check. The record was built from the abstract alone, so the reported summary statistics (Ae 75%, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h) stood in for a fitted model. A second reader returned no values for all four parameters, disagreeing with each of the extracted values. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean cumulative asymptotic elimination of dextran in the urine: this record has 75, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:31.990731+00:00) predates the upstream re-run (2026-10-05 21:48:18.057325+00:00). Current validate status: `rejected`.
 
 ## Citation
 Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981)
 
 ## Model component
-<dbs-pgx drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -58,6 +60,9 @@ Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International jou
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dextran 1
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: no plausible PubChem entry for 'dextran 1' ('dextran 1') — left in mass units
+- molar mass: none found for 'dextran' — its concentrations stay mass-only
+- molar mass: none found for 'dextran 1' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -67,21 +72,18 @@ Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International jou
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[mean cumulative asymptotic elimination of dextran in the urine]` | 75 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean renal clearance]` | 137 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean total clearance]` | 187 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal half-life of dextran 60]` | 24 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id` | Q91 | Q44 | mismatch |
 
 </details>
 
@@ -129,4 +131,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 04:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:48 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;antithrombin III&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AntithrombinIii_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # antithrombin III
 
@@ -17,16 +18,15 @@ Antithrombin III is a blood protein used to treat or prevent excessive clotting,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 17:09 | 0:48 | 0/4/0 | 0/0/0 | 0/0/0 | 19,352/1,011 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 13:41 | 2:41 | 1/2/0 | 0/0/0 | 0/0/0 | 33,619/6,982 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Carlson_1984_rabbits](drugs/drug_antithrombin_iii/AntithrombinIii_Carlson1984_rabbits.md) | — | — (no model) | 0 | Carlson TH et al., In vivo behavior of radioiodinated rabb…, The Journal of clinical inv… (1984) | [10.1172/JCI111401](https://doi.org/10.1172/JCI111401) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Collen_1977_adults with venous thrombosis and controls](drugs/drug_antithrombin_iii/AntithrombinIii_Collen1977_adults_with_venous_thrombosis_and.md) | — | — (no model) | 0 | Collen D et al., Metabolism of antithrombin III (heparin…, European journal of clinica… (1977) | [10.1111/j.1365-2362.1977.tb01566.x](https://doi.org/10.1111/j.1365-2362.1977.tb01566.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kim_2020_liver transplant recipients](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_liver_transplant_recipients.md) | — | — (no model) | 0 | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Knot_1987_healthy volunteers](drugs/drug_antithrombin_iii/AntithrombinIii_Knot1987_healthy_volunteers.md) | — | — (no model) | 0 | Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2020_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Carlson_1984_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Carlson1984_reference.md) | — | 1-compartment (no model) | 0 | Carlson TH et al., In vivo behavior of radioiodinated rabb…, The Journal of clinical inv… (1984) | [10.1172/JCI111401](https://doi.org/10.1172/JCI111401) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Knot_1987_reference](drugs/drug_antithrombin_iii/AntithrombinIii_Knot1987_reference.md) | — | 1-compartment (no model) | 0 | Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987) | — |
 
 ## ADME sites
 
@@ -49,7 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 26 matched, 17 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -58,23 +58,23 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Collen_1977.pdf` | Collen D et al., Metabolism of antithrombin III (heparin…, European journal of clinica… (1977) | popPK | 10 | [10.1111/j.1365-2362.1977.tb01566.x](https://doi.org/10.1111/j.1365-2362.1977.tb01566.x) | [65284](https://pubmed.ncbi.nlm.nih.gov/65284) | The paper reports quantitative pharmacokinetic parameters (half-life, fractional catabolic rate, intravascular fraction) for antithrombin III in a two-compartment model, with all numeric values explicitly present in the text. |
-| `Kim_2020.pdf` | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | popPK | 10 | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) | [31840271](https://pubmed.ncbi.nlm.nih.gov/31840271) | The paper reports a population PK model for antithrombin III with explicit numeric values for volume of distribution and clearance in the abstract. |
-| `Aibiki_2007.pdf` | Aibiki M et al., Differences in antithrombin III activit…, Shock (Augusta, Ga.) (2007) | popPK | 9 | [10.1097/shk.0b013e31803422c4](https://doi.org/10.1097/shk.0b013e31803422c4) | [17515857](https://pubmed.ncbi.nlm.nih.gov/17515857) | The paper is a pharmacokinetic study of antithrombin III using a two-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not present in the provided text, which only describes trends and statistical comparisons. |
-| `Carlson_1984.pdf` | Carlson TH et al., In vivo behavior of radioiodinated rabb…, The Journal of clinical inv… (1984) | popPK | 9 | [10.1172/JCI111401](https://doi.org/10.1172/JCI111401) | [6376543](https://pubmed.ncbi.nlm.nih.gov/6376543) | The study reports quantitative compartmental fractions and fractional catabolic rates for antithrombin III in rabbits, providing specific numeric values for disposition parameters. |
-| `Knot_1987.pdf` | Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987) | popPK | 9 | not captured | [3445222](https://pubmed.ncbi.nlm.nih.gov/3445222) | The study reports quantitative PK parameters (half-life, catabolic rate constant) and biodistribution data for antithrombin III in humans using a three-compartment model. |
+| `Collen_1977.pdf` | Collen D et al., Metabolism of antithrombin III (heparin…, European journal of clinica… (1977) | popPK | 10 | [10.1111/j.1365-2362.1977.tb01566.x](https://doi.org/10.1111/j.1365-2362.1977.tb01566.x) | [65284](https://pubmed.ncbi.nlm.nih.gov/65284) | The paper reports quantitative pharmacokinetic parameters (half-life, fractional catabolic rate, intravascular fraction) for antithrombin III in humans using a two-compartment model. |
+| `Kim_2020.pdf` | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | popPK | 10 | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) | [31840271](https://pubmed.ncbi.nlm.nih.gov/31840271) | The paper reports a population PK model for antithrombin III with specific numeric values for volume of distribution and clearance provided in the abstract. |
+| `Aibiki_2007.pdf` | Aibiki M et al., Differences in antithrombin III activit…, Shock (Augusta, Ga.) (2007) | popPK | 9 | [10.1097/shk.0b013e31803422c4](https://doi.org/10.1097/shk.0b013e31803422c4) | [17515857](https://pubmed.ncbi.nlm.nih.gov/17515857) | The study reports a two-compartment PK model for antithrombin III in humans, but specific numeric parameter values (CL, V, t1/2) are not explicitly listed in the provided text, only qualitative comparisons and p-values. |
+| `Carlson_1984.pdf` | Carlson TH et al., In vivo behavior of radioiodinated rabb…, The Journal of clinical inv… (1984) | popPK | 9 | [10.1172/JCI111401](https://doi.org/10.1172/JCI111401) | [6376543](https://pubmed.ncbi.nlm.nih.gov/6376543) | The study reports quantitative compartmental fractions and fractional catabolic rates for antithrombin III in rabbits, supporting a three-compartment model. |
+| `Knot_1987.pdf` | Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987) | popPK | 9 | not captured | [3445222](https://pubmed.ncbi.nlm.nih.gov/3445222) | The study reports quantitative pharmacokinetic parameters (half-life, catabolic rate constant) and biodistribution data for antithrombin III in humans using a three-compartment model. |
 
-<sub>queue written 2026-09-06T16:22:37.903477+00:00</sub>
+<sub>queue written 2026-10-05T13:39:00.893588+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aibiki_2007 | relevant | 9 | 2 | The paper is a pharmacokinetic study of antithrombin III using a two-compartment model, but the specific numeric parameter values (CL, V, t1/2) are not present in the provided text, which only describes trends and statistical comparisons. |
-| popPK | Raner_2024 | irrelevant | 0 | 0 | The paper is a meta-analysis of heparin and protamine dosing where antithrombin III is only a secondary biomarker, not the subject drug for PK parameter extraction. |
-| popPK | Schipper_1982 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for fibrinogen, not antithrombin III, which is used only as a therapeutic agent to correct activity levels. |
-| popPK | Suzuki_2021 | irrelevant | 0 | 0 | The paper is a clinical biomarker study where antithrombin III is only a measured outcome variable, not the subject of a pharmacokinetic analysis. |
-| popPK | Völler_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of recombinant asparaginase, and antithrombin III is only mentioned as a laboratory value that did not influence the PK of the subject drug. |
+| popPK | Aibiki_2007 | relevant | 9 | 2 | The study reports a two-compartment PK model for antithrombin III in humans, but specific numeric parameter values (CL, V, t1/2) are not explicitly listed in the provided text, only qualitative comparisons and p-values. |
+| popPK | Raner_2024 | irrelevant | 0 | 0 | The paper is a meta-analysis of heparin and protamine dosing strategies where antithrombin III is only a secondary biomarker, not the subject of a pharmacokinetic model. |
+| popPK | Schipper_1982 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for fibrinogen (the subject of the turnover study), not for antithrombin III, which was used as a therapeutic agent to correct deficiency. |
+| popPK | Suzuki_2021 | irrelevant | 0 | 0 | The study investigates syndecan-1 as a biomarker for organ dysfunction and lists antithrombin III only as a laboratory outcome variable, not as the subject of a pharmacokinetic analysis. |
+| popPK | Völler_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of recombinant asparaginase, not antithrombin III, which is only mentioned as a covariate with no effect on the subject drug's PK. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 17:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 13:39 UTC</sub>

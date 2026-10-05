@@ -17,7 +17,7 @@ Susoctocog alfa is a porcine recombinant form of antihemophilic factor (factor V
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 22:15 | 1:25 | 0/0/0 | 0/0/0 | 0/0/0 | 28,500/1,275 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/5 | 12/0 | 0 |
+| 2026-10-05 19:34 | 0:24 | 0/0/0 | 0/0/0 | 0/0/0 | 12,959/488 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/5 | 12/0 | 0 |
 
 ## popPK records
 
@@ -51,9 +51,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Heeg_2025.pdf` | Heeg J et al., Pharmacokinetic strategies for achievin…, Journal of thrombosis and h… (2025) | popPK | 9 | [10.1016/j.jtha.2025.07.033](https://doi.org/10.1016/j.jtha.2025.07.033) | [40812597](https://pubmed.ncbi.nlm.nih.gov/40812597) | The paper reports quantitative non-compartmental PK parameters (clearance, half-life, recovery) for susoctocog alfa in humans, with specific numeric values and IQRs provided in the text. |
+| `Heeg_2025.pdf` | Heeg J et al., Pharmacokinetic strategies for achievin…, Journal of thrombosis and h… (2025) | popPK | 9 | [10.1016/j.jtha.2025.07.033](https://doi.org/10.1016/j.jtha.2025.07.033) | [40812597](https://pubmed.ncbi.nlm.nih.gov/40812597) | The study reports quantitative non-compartmental PK parameters (clearance, half-life, recovery) for susoctocog alfa in human patients with acquired hemophilia A. |
 
-<sub>queue written 2026-09-18T22:15:05.841931+00:00</sub>
+<sub>queue written 2026-10-05T19:34:14.586828+00:00</sub>
 
 ## Screened and excluded
 
@@ -64,7 +64,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ciavarella_1984 | irrelevant | 0 | 0 | The paper reports on the clinical efficacy of porcine factor VIII (Hyate:C) for hemophilia, not the pharmacokinetics of susoctocog alfa, and contains no PK parameter values. |
 | popPK | Cross-Najafi_2022 | irrelevant | 0 | 0 | The paper is a review of liver xenotransplantation mechanisms and does not report pharmacokinetic parameters for susoctocog alfa. |
 | popPK | Dingle_1979 | irrelevant | 0 | 0 | The paper describes the isolation and characterization of a catabolic factor from porcine synovium and contains no pharmacokinetic data for susoctocog alfa. |
-| popPK | Ellgaard_2017 | irrelevant | 0 | 0 | The paper evaluates virus clearance in the manufacturing process for turoctocog alfa, not the pharmacokinetics of susoctocog alfa. |
+| popPK | Ellgaard_2017 | irrelevant | 0 | 0 | The study evaluates virus clearance in the manufacturing process for turoctocog alfa, not the pharmacokinetics of susoctocog alfa. |
 | popPK | Finsterbusch_2009 | irrelevant | 0 | 0 | The paper is a review of porcine circovirus virology and has no relation to the pharmacokinetics of susoctocog alfa. |
 | popPK | Fragner_2022 | irrelevant | 0 | 0 | The paper is a retrospective clinical study on diagnostic delays in Acquired Hemophilia A and does not report any pharmacokinetic parameters for susoctocog alfa. |
 | popPK | Franzo_2019 | irrelevant | 0 | 0 | The paper is a metagenomic study on viral agents in pigs and does not involve the drug susoctocog_alfa or any pharmacokinetic analysis. |
@@ -77,7 +77,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Jiménez-Yuste_2015 | irrelevant | 0 | 0 | The study evaluates turoctocog alfa, not susoctocog alfa. |
 | popPK | Kuhnert_1991 | irrelevant | 0 | 0 | The paper is a genomic sequence analysis of porcine TNF genes and contains no pharmacokinetic data for susoctocog_alfa. |
 | popPK | Li_2020 | irrelevant | 0 | 0 | The paper is a cell culture study on porcine embryonic germ cells and does not involve the drug susoctocog_alfa or any pharmacokinetic parameters. |
-| popPK | Lillicrap_2016 | irrelevant | 0 | 0 | The paper discusses Obizur (porcine FVIII), not susoctocog alfa, and contains no quantitative PK parameters. |
+| popPK | Lillicrap_2016 | irrelevant | 0 | 0 | The paper discusses Obizur (porcine recombinant factor VIII), not susoctocog alfa, and contains no quantitative PK parameters for the target drug. |
 | popPK | Liu_2020 | irrelevant | 0 | 0 | The paper is a virology study on Porcine deltacoronavirus and interferon signaling, containing no pharmacokinetic data for susoctocog alfa. |
 | popPK | Ma_2014 | irrelevant | 0 | 0 | The paper is a study on porcine-induced pluripotent stem cells and microRNAs, containing no pharmacokinetic data for susoctocog_alfa. |
 | popPK | Miesbach_2024 | irrelevant | 0 | 0 | The paper is a real-world safety and effectiveness study (PASS) reporting clinical outcomes and inhibitor titers, not a pharmacokinetic study with quantitative disposition parameters (CL, V, etc.). |
@@ -94,13 +94,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Quintana-Molina_2004 | irrelevant | 0 | 0 | The paper is a clinical review of surgical outcomes in hemophilia patients and does not report pharmacokinetic parameters for susoctocog alfa. |
 | popPK | Saenko_2003 | irrelevant | 0 | 0 | The paper is a review of recombinant coagulation factors (FVIII/FIX) and does not report quantitative pharmacokinetic parameters for susoctocog alfa. |
 | popPK | Shima_2016 | irrelevant | 0 | 0 | The paper is a review of alternative therapies for hemophilia inhibitors and does not report any quantitative pharmacokinetic parameters for susoctocog alfa. |
-| popPK | Stasyshyn_2017 | irrelevant | 2 | 0 | The paper is a clinical trial focused on safety and efficacy, and the provided evidence contains no quantitative pharmacokinetic parameter values (e.g., clearance, volume, half-life) for susoctocog alfa. |
+| popPK | Stasyshyn_2017 | irrelevant | 2 | 0 | The paper describes a clinical trial of rVIII-SingleChain (not susoctocog alfa) and the provided evidence contains no quantitative pharmacokinetic parameter values (CL, V, etc.). |
 | popPK | Stroobant_1984 | irrelevant | 0 | 0 | The paper describes the purification and properties of porcine platelet-derived growth factor (PDGF) and does not involve the drug susoctocog_alfa or any pharmacokinetic parameters. |
 | popPK | Tawaragi_1990 | irrelevant | 0 | 0 | The paper describes the gene structure of porcine C-type natriuretic peptide and does not involve susoctocog_alfa or pharmacokinetic parameters. |
 | popPK | Wilkin_1984 | irrelevant | 0 | 0 | The paper discusses autoantibodies against insulin and does not involve susoctocog_alfa or any pharmacokinetic parameters. |
-| popPK | Yu_2025 | irrelevant | 2 | 3 | This is a clinical case report describing altered half-life due to pathology, not a pharmacokinetic study reporting standard disposition parameters (CL, V, Q) or population models. |
+| popPK | Yu_2025 | irrelevant | 2 | 2 | This is a clinical case report describing altered half-life due to pathology, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, Q) or a compartmental model. |
 | popPK | Zheng_2025 | irrelevant | 0 | 0 | The paper is a review of host restriction factors against porcine epidemic diarrhea virus (PEDV) and contains no information regarding the drug susoctocog_alfa or its pharmacokinetics. |
-| popPK | Zhu_2021 | irrelevant | 0 | 0 | The study focuses on Factor VIII (FVIII) pharmacokinetics, not susoctocog alfa. |
+| popPK | Zhu_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Factor VIII (FVIII) in haemophilia A patients, not susoctocog alfa. |
 | PD | Zhu_2021 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of Factor VIII and dosing simulations for target attainment, with no analysis of pharmacodynamic (PD) or exposure-response relationships. |
 | popPK | de_2021 | irrelevant | 0 | 0 | The paper is a surgical retrospective review regarding congenital diaphragmatic hernia repair and contains no pharmacokinetic data for susoctocog_alfa. |
 | popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |

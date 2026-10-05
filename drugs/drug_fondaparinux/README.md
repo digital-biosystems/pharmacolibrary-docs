@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fondaparinux&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # fondaparinux
 
@@ -14,23 +15,31 @@ Fondaparinux is an antithrombotic drug used to treat and prevent blood clots, in
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q27077698](https://www.wikidata.org/wiki/Q27077698) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| fondaparinux | parent | 1508.26 | C31H53N3O49S8 | DrugBank | [49852292](https://pubchem.ncbi.nlm.nih.gov/compound/49852292) | Michaličková_2022 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 22:25 | 4:30 | 0/1/0 | 0/1/0 | 0/0/0 | 30,027/1,274 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-05 15:57 | 2:33 | 1/0/0 | 1/0/0 | 0/0/0 | 36,463/5,193 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2022_dialysis-dependent chronic kidney disease patients](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne.md) | — | — (no model) | 0 | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span> | [Michaličková_2022_reference](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chang_2016_unknown](drugs/drug_fondaparinux/pd_Chang_2016_unknown.md) | coagulation activity ← argatroban, dabigatran, rivaroxaban, apixaban, fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chang_2016_thrombin_activity](drugs/drug_fondaparinux/pd_Chang_2016_thrombin_activity.md) | thrombin activity ← fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
 
 ## ADME sites
 
@@ -52,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -61,35 +70,35 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Delavenne_2010.pdf` | Delavenne X et al., Population pharmacokinetics of fondapar…, Thrombosis and haemostasis (2010) | popPK | 10 | [10.1160/TH10-02-0127](https://doi.org/10.1160/TH10-02-0127) | [20539905](https://pubmed.ncbi.nlm.nih.gov/20539905) | The paper describes a population PK study for fondaparinux, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Delavenne_2012.pdf` | Delavenne X et al., Pharmacokinetics of fondaparinux 1.5 mg…, European journal of clinica… (2012) | popPK | 10 | [10.1007/s00228-012-1263-0](https://doi.org/10.1007/s00228-012-1263-0) | [22447298](https://pubmed.ncbi.nlm.nih.gov/22447298) | The paper describes a population PK study of fondaparinux using NONMEM, but the evidence provided only contains summary exposure metrics (AUC, Cmax, Cmin) and percentage differences, lacking the specific numeric values for clearance, volume, or rate constants. |
-| `Hanada_2018.pdf` | Hanada K et al., Population pharmacokinetics and pharmac…, International journal of cl… (2018) | popPK | 10 | [10.5414/CP203169](https://doi.org/10.5414/CP203169) | [29595122](https://pubmed.ncbi.nlm.nih.gov/29595122) | The paper is a population PK study of fondaparinux, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains the abstract. |
-| `Michaličková_2022.pdf` | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | popPK | 10 | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) | [34414464](https://pubmed.ncbi.nlm.nih.gov/34414464) | The paper reports a population PK model for fondaparinux with explicit numeric values for clearance (0.05289 L/h) and volume of distribution (5.55 L) in the abstract. |
-| `Hester_2014.pdf` | Hester W et al., Thromboprophylaxis with fondaparinux in…, Thrombosis research (2014) | popPK | 9 | [10.1016/j.thromres.2013.11.019](https://doi.org/10.1016/j.thromres.2013.11.019) | [24508189](https://pubmed.ncbi.nlm.nih.gov/24508189) | The study is a PK analysis of fondaparinux, but the specific numeric parameter values are not present in the provided text, which only describes the results qualitatively. |
+| `Delavenne_2010.pdf` | Delavenne X et al., Population pharmacokinetics of fondapar…, Thrombosis and haemostasis (2010) | popPK | 10 | [10.1160/TH10-02-0127](https://doi.org/10.1160/TH10-02-0127) | [20539905](https://pubmed.ncbi.nlm.nih.gov/20539905) | The paper describes a population pharmacokinetic study of fondaparinux, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Delavenne_2012.pdf` | Delavenne X et al., Pharmacokinetics of fondaparinux 1.5 mg…, European journal of clinica… (2012) | popPK | 10 | [10.1007/s00228-012-1263-0](https://doi.org/10.1007/s00228-012-1263-0) | [22447298](https://pubmed.ncbi.nlm.nih.gov/22447298) | The paper describes a population PK model for fondaparinux, but the specific numeric parameter values (CL, V, Q, ka) are not listed in the provided abstract text, only relative exposure changes. |
+| `Hanada_2018.pdf` | Hanada K et al., Population pharmacokinetics and pharmac…, International journal of cl… (2018) | popPK | 10 | [10.5414/CP203169](https://doi.org/10.5414/CP203169) | [29595122](https://pubmed.ncbi.nlm.nih.gov/29595122) | The study is a population PK analysis of fondaparinux in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Michaličková_2022.pdf` | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | popPK | 10 | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) | [34414464](https://pubmed.ncbi.nlm.nih.gov/34414464) | The study reports specific quantitative population PK parameters (CL, Vd) for fondaparinux in the abstract. |
+| `Hester_2014.pdf` | Hester W et al., Thromboprophylaxis with fondaparinux in…, Thrombosis research (2014) | popPK | 9 | [10.1016/j.thromres.2013.11.019](https://doi.org/10.1016/j.thromres.2013.11.019) | [24508189](https://pubmed.ncbi.nlm.nih.gov/24508189) | The study reports a population PK model for fondaparinux in humans, but the specific numeric parameter values (CL, V, ka) are described qualitatively (e.g., "lower estimates") without explicit numbers in the provided text. |
 | `Becattini_2012.pdf` | Becattini C et al., Old and new oral anticoagulants for ven…, Thrombosis research (2012) | pgx | 7 | [10.1016/j.thromres.2011.12.014](https://doi.org/10.1016/j.thromres.2011.12.014) | [22264937](https://www.ncbi.nlm.nih.gov/pubmed/22264937) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Lieu_2002.pdf` | Lieu C et al., Fondaparinux sodium is not metabolised…, Clinical pharmacokinetics (2002) | pgx | 7 | [10.2165/00003088-200241002-00003](https://doi.org/10.2165/00003088-200241002-00003) | [12383041](https://www.ncbi.nlm.nih.gov/pubmed/12383041) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Peixoto_2020.pdf` | Peixoto de Miranda ÉJF et al., Drug-Drug Interactions of 257 Antineopl…, Clinical and applied thromb… (2020) | pgx | 7 | [10.1177/1076029620936325](https://doi.org/10.1177/1076029620936325) | [32862668](https://www.ncbi.nlm.nih.gov/pubmed/32862668) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-05T22:23:54.819860+00:00</sub>
+<sub>queue written 2026-10-05T15:55:51.890213+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Becattini_2012 | not_relevant | 0 | 0 | The paper is a general review of oral anticoagulants and does not report any pharmacogenomic effects on fondaparinux PK/PD parameters. |
-| popPK | Buyue_2012 | irrelevant | 0 | 0 | The study is a mechanistic investigation of thrombin generation and factor IXa inhibition, not a pharmacokinetic study, and reports no disposition parameters for fondaparinux. |
-| popPK | Chang_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring Hill coefficients and IC50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Delavenne_2010 | relevant | 10 | 0 | The paper describes a population PK study for fondaparinux, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| popPK | Delavenne_2012 | relevant | 10 | 2 | The paper describes a population PK study of fondaparinux using NONMEM, but the evidence provided only contains summary exposure metrics (AUC, Cmax, Cmin) and percentage differences, lacking the specific numeric values for clearance, volume, or rate constants. |
-| popPK | Hanada_2018 | relevant | 10 | 0 | The paper is a population PK study of fondaparinux, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains the abstract. |
-| popPK | Hester_2014 | relevant | 9 | 2 | The study is a PK analysis of fondaparinux, but the specific numeric parameter values are not present in the provided text, which only describes the results qualitatively. |
+| popPK | Buyue_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thrombin generation inhibition, not a pharmacokinetic study, and fondaparinux is used as a comparator agent. |
+| popPK | Chang_2016 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assay measuring Hill coefficients and IC50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Delavenne_2010 | relevant | 10 | 0 | The paper describes a population pharmacokinetic study of fondaparinux, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Delavenne_2012 | relevant | 10 | 2 | The paper describes a population PK model for fondaparinux, but the specific numeric parameter values (CL, V, Q, ka) are not listed in the provided abstract text, only relative exposure changes. |
+| popPK | Hanada_2018 | relevant | 10 | 0 | The study is a population PK analysis of fondaparinux in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Hester_2014 | relevant | 9 | 2 | The study reports a population PK model for fondaparinux in humans, but the specific numeric parameter values (CL, V, ka) are described qualitatively (e.g., "lower estimates") without explicit numbers in the provided text. |
 | PGx | Lieu_2002 | not_relevant | 0 | 0 | The paper investigates in vitro metabolism and CYP inhibition of fondaparinux but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
-| popPK | Michaličková_2022_2 | irrelevant | 0 | 0 | The provided text is a correction notice for citation errors in a table and contains no pharmacokinetic data or numeric parameter values for fondaparinux. |
+| popPK | Michaličková_2022_2 | irrelevant | 0 | 0 | The provided text is a correction notice for citation errors in a table and contains no pharmacokinetic data or parameter values. |
 | PGx | Peixoto_2020 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (DDI) between antineoplastics and anticoagulants, not pharmacogenomic effects of gene variants on fondaparinux PK/PD. |
-| popPK | Turpie_2009 | irrelevant | 2 | 0 | The paper describes a simulation based on a population PK model but does not report the specific quantitative parameter values (CL, V, etc.) for fondaparinux in the provided evidence. |
-| PGx | Weitz_2010 | not_relevant | 0 | 0 | The text is a general overview of new oral anticoagulants and mentions fondaparinux only as a comparator for route of administration, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Turpie_2009 | irrelevant | 2 | 0 | The paper describes a clinical trial and simulation study but does not report original quantitative PK parameters (CL, V, etc.) for fondaparinux in the provided text. |
+| PGx | Weitz_2010 | not_relevant | 0 | 0 | The text is a general overview of new oral anticoagulants and mentions fondaparinux only as a background comparison, without reporting any specific pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Weitz_2011 | not_relevant | 0 | 0 | The paper is a review of new oral anticoagulants and mentions fondaparinux only as a background comparison, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| popPK | Zufferey_2018 | irrelevant | 2 | 0 | The study focuses on time-to-event analysis of bleeding risk and uses anti-Xa activities as a covariate, but does not report quantitative pharmacokinetic parameters (CL, V, ka) for fondaparinux. |
+| popPK | Zufferey_2018 | irrelevant | 2 | 0 | The study focuses on time-to-event analysis of bleeding risk and uses anti-Xa activity as a covariate, but does not report quantitative pharmacokinetic parameters (CL, V, ka) for fondaparinux. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 22:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 15:55 UTC</sub>

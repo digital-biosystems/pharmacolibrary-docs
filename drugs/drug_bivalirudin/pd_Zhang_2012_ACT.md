@@ -17,22 +17,36 @@
 
 **Model:** No model was generated from this record.
 
-> Bivalirudin plasma concentration (mg/L) stimulates activated clotting time (ACT, s) via a sigmoid Emax model; the excerpts do not state the Emax, EC50, gamma, or any mechanism beyond direct thrombin inhibition.
+> Bivalirudin plasma concentrations (mg/L) stimulate the activated clotting time (ACT, s) via a sigmoid Emax model with an additive effect, characterized by an Emax of 318 s, an EC50 of 2.44 mg/L, and a baseline (E0) of 134 s. The model includes a parameter θRBC for EC50 with a value of 1.70, but the paper excerpts do not explicitly describe the underlying physiological mechanism or rate constants (e.g., ke0) for this relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Zhang_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012)
   ·  DOI: [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 318 | s | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 2.44 | mg/L | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 134 | s | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| model term | θRBC for EC50 | `Q900` · not captured | 1.70 | not captured | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| variability | IIV Emax | `Q312` · not captured | 6.80 | % | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| variability | IIV EC50 | `Q312` · not captured | 46.4 | % | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| variability | IIV E0 | `Q312` · not captured | 4.10 | % | not captured | llm (not captured) | Zhang_2012:pdv3 |
+| variability | Proportional error | `Q315` · not captured | 4.67 | % | not captured | llm (not captured) | Zhang_2012:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

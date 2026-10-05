@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Saleh_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # eltrombopag — `Eltrombopag_Saleh2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — eltrombopag: V 12 L, tlag 0.947 h, CL 104 ml min -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption lag time: this record has 0.947, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:52.558548+00:00) predates the upstream re-run (2026-10-05 18:34:40.329322+00:00). Current validate status: `rejected`.
 
 ## Citation
 Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of drug me… (2019)
   ·  DOI: [10.1007/s13318-018-0490-x](https://doi.org/10.1007/s13318-018-0490-x)
 
 ## Model component
-<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="needs_review" stale="false" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="rejected" stale="true" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -38,13 +40,13 @@ Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution of the central and peripheral compartments | `Q61` · V | 12 | L | 0.012 | [l] | not captured | llm_confirmed (0.6) | Saleh_2019:abstract, Saleh_2019:abstract | — | not captured |
+| distributional clearance | `Q22` · CL | 0.762 | L/h | 2.1166666666666667e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Saleh_2019:abstract | — | not captured |
+| volume of distribution of the central and peripheral compartments | `Q64` · V2 | 12 | L | 0.012 | [l] | not captured | boundary_compartment (0.9) | Saleh_2019:abstract, Saleh_2019:abstract | — | not captured |
 | absorption lag time | `Q83` · tlag | 0.947 | h | 3409.2 | [h] | not captured | exact (1.0) | Saleh_2019:abstract | — | not captured |
-| creatinine clearance (CRCL) | `Q22` · CL | 104.0 | ml min -1 | 1.7333333333333332e-06 | L/h | not captured | review_gapfill (0.7) | Farrell_2014:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,14 +56,11 @@ Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'distributional clearance' — extend the ontology if this is a real PK parameter (source ['Saleh_2019:abstract'])
 - dropped unlinked row (NIL): 'total bilirubin' — extend the ontology if this is a real PK parameter (source ['Saleh_2019:abstract'])
 - covariate category for CL from footnote/prose kept as documentation only (['Saleh_2019:abstract'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (volume of distribution of the central and peripheral compartments)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (distributional clearance); Q64 (volume of distribution of the central and peripheral compartments)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=eltrombopag
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Farrell_2014's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
@@ -74,15 +73,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[absorption lag time]` | 0.947 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[creatinine clearance]` | 104.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption lag time]` | not captured | 0.947 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distributional clearance]` | 0.762 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distributional clearance]` | not captured | 0.762 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution of the central and peripheral compartments]` | 12 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution of the central compartment]` | not captured | 12 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution of the peripheral compartment]` | not captured | 10.9 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | eltrombopag | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | eltrombopag | unknown | mismatch |
 
 </details>
 
@@ -96,16 +101,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Farrell_2014:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Saleh_2019:abstract', 'Saleh_2019:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Saleh_2019:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Saleh_2019:abstract', 'Saleh_2019:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Saleh_2019:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 104.0 | not captured | not captured | ['Farrell_2014:review'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.24 L/h | not captured | not captured | ['Farrell_2014:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 12 L | not captured | not captured | ['Saleh_2019:abstract', 'Saleh_2019:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.762 | not captured | not captured | ['Saleh_2019:abstract'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.762 L/h | not captured | not captured | ['Saleh_2019:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 12 L | not captured | not captured | ['Saleh_2019:abstract', 'Saleh_2019:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -119,19 +124,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -140,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:34 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/&quot;},{&quot;label&quot;:&quot;van_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fibrinogen, human — `FibrinogenHuman_van2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,14 +21,18 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fibrinogen human: CL 716 ml/h, V 24.9 L.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 363, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.500802+00:00) predates the upstream re-run (2026-10-05 19:04:49.486405+00:00). Current validate status: `needs_review`.
 
 ## Citation
 van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026)
   ·  DOI: [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468)
 
 ## Model component
-<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_van2026_reference" status="needs_review" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_van2026_reference" status="needs_review" stale="true" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -61,9 +65,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.083 (1/12 fields) | 11 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q174]` | 0.199 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q17]` | 363 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q189]` | 1.35 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 716.15 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 50.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q36]` | 0.505 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | 0.029 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 24.87 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q65]` | 10.58 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q74]` | 345 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -118,4 +138,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:04 UTC</sub>

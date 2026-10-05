@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "VonWillebrandFactor_Valke2024_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.527777777777778e-08,
+  "F": 1.0,
+  "VdPerKg": 5.585714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 7.743677181017335e-06,
+  "k21": 3.305434255215915e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662067
+ },
+ "reference_peaks": {
+  "central.C": 0.001573241806573022
+ },
+ "stop_time": 162000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

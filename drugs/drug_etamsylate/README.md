@@ -14,15 +14,26 @@ Etamsylate (ethamsylate) is a chemical compound used as an antihemorrhagic, a sy
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q2000876](https://www.wikidata.org/wiki/Q2000876) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| etamsylate | parent | 263.31 | C10H17NO5S | DrugBank | — | Paine_2023 |
+| 2,5-dihydroxybenzene sulphonate | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 21:31 | 2:44 | 0/0/0 | 0/0/0 | 0/0/0 | 48,934/1,893 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-05 18:56 | 3:41 | 0/0/1 | 0/0/0 | 0/0/0 | 70,977/9,020 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Paine_2023_reference](drugs/drug_etamsylate/Etamsylate_Paine2023_reference.md) | — | 1-compartment (no model) | 2 | Paine SW et al., Novel holistic pharmacokinetic model ap…, Journal of veterinary pharm… (2023) | [10.1111/jvp.13387](https://doi.org/10.1111/jvp.13387) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -33,8 +44,8 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 13 matched, 12 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -43,29 +54,28 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Helmy_2013.pdf` | Helmy SA et al., A new and simple HPLC method for determ…, Saudi pharmaceutical journa… (2013) | popPK | 10 | [10.1016/j.jsps.2012.12.001](https://doi.org/10.1016/j.jsps.2012.12.001) | [24227961](https://pubmed.ncbi.nlm.nih.gov/24227961) | The paper describes a PK study for etamsylate and lists parameters, but the specific numeric values are not present in the provided evidence. |
-| `Paine_2023.pdf` | Paine SW et al., Novel holistic pharmacokinetic model ap…, Journal of veterinary pharm… (2023) | popPK | 9 | [10.1111/jvp.13387](https://doi.org/10.1111/jvp.13387) | [37255256](https://pubmed.ncbi.nlm.nih.gov/37255256) | The study reports a compartmental PK model for etamsylate (via its metabolite 2,5-HBSA) in horses, but specific numeric parameter values (CL, V, etc.) for etamsylate are not explicitly listed in the provided text, only typical values for the shared metabolite. |
-| `Yamboliev_1992.pdf` | Yamboliev I et al., In vitro and in situ absorption of etam…, Die Pharmazie (1992) | popPK | 8 | not captured | [1518887](https://pubmed.ncbi.nlm.nih.gov/1518887) | The study reports quantitative absorption parameters (ka, t1/2) for etamsylate in an in situ animal model, which are readable in the provided text. |
+| `Helmy_2013.pdf` | Helmy SA et al., A new and simple HPLC method for determ…, Saudi pharmaceutical journa… (2013) | popPK | 10 | [10.1016/j.jsps.2012.12.001](https://doi.org/10.1016/j.jsps.2012.12.001) | [24227961](https://pubmed.ncbi.nlm.nih.gov/24227961) | The study reports pharmacokinetic parameters for etamsylate in humans, but the specific numeric values are not present in the provided evidence. |
+| `Paine_2023.pdf` | Paine SW et al., Novel holistic pharmacokinetic model ap…, Journal of veterinary pharm… (2023) | popPK | 10 | [10.1111/jvp.13387](https://doi.org/10.1111/jvp.13387) | [37255256](https://pubmed.ncbi.nlm.nih.gov/37255256) | The study reports a population PK model for etamsylate's active metabolite (2,5-HBSA) in horses, with typical clearance and bioavailability values provided in the abstract. |
+| `Yamboliev_1992.pdf` | Yamboliev I et al., In vitro and in situ absorption of etam…, Die Pharmazie (1992) | popPK | 6 | not captured | [1518887](https://pubmed.ncbi.nlm.nih.gov/1518887) | The study reports quantitative absorption parameters (ka, t1/2) for etamsylate in rats, though it is primarily an in vitro/in situ absorption study rather than a full systemic PK model. |
 
-<sub>queue written 2026-09-18T21:31:42.970108+00:00</sub>
+<sub>queue written 2026-10-05T18:53:16.031295+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Belal_2011 | irrelevant | 0 | 0 | The paper describes analytical methods for quantifying etamsylate and does not report any pharmacokinetic disposition parameters (CL, V, ka, etc.). |
-| popPK | Dayrens_1983 | irrelevant | 0 | 0 | The paper is an in-vivo immunological study assessing anti-inflammatory and immunostimulant activities, not a pharmacokinetic study, and contains no PK parameters for etamsylate. |
-| popPK | El-Masry_2020 | irrelevant | 2 | 0 | The study focuses on in-vitro release and in-silico prediction of plasma profiles without reporting original quantitative PK parameters (CL, V, etc.) for etamsylate. |
-| popPK | Helmy_2013 | relevant | 10 | 0 | The paper describes a PK study for etamsylate and lists parameters, but the specific numeric values are not present in the provided evidence. |
-| popPK | Herrería-Bustillo_2023 | irrelevant | 1 | 0 | The study is an in-vitro thromboelastography (TEG) analysis of etamsylate's effect on coagulation, not a pharmacokinetic study, and does not report quantitative disposition parameters like clearance or volume of distribution for etamsylate. |
+| popPK | Belal_2011 | irrelevant | 0 | 0 | The paper describes analytical methods for quantifying etamsylate and reports degradation kinetics, but does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for the drug. |
+| popPK | Dayrens_1983 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo immunological assay in mice measuring anti-inflammatory and immunostimulant activities, not a pharmacokinetic study reporting disposition parameters for etamsylate. |
+| popPK | El-Masry_2020 | irrelevant | 2 | 0 | The study focuses on in-vitro release and in-silico prediction of plasma profiles without reporting measured quantitative PK parameters (CL, V, etc.) for etamsylate in the provided evidence. |
+| popPK | Helmy_2013 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for etamsylate in humans, but the specific numeric values are not present in the provided evidence. |
+| popPK | Herrería-Bustillo_2023 | irrelevant | 0 | 0 | The study is an in-vitro thromboelastography (TEG) analysis of etamsylate's effect on coagulation in canine blood, not a pharmacokinetic study reporting disposition parameters like clearance or volume of distribution. |
 | popPK | Huang_2025 | irrelevant | 0 | 0 | The study investigates analytical interference of ethamsylate on creatinine assays, not pharmacokinetic disposition parameters. |
 | PD | Huang_2025 | not_relevant | 0 | 0 | The paper analyzes analytical interference of ethamsylate on creatinine assay methods, not a pharmacodynamic or exposure-response relationship for the drug's biological effect. |
-| popPK | Jozsa_1983 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of etamsylate on intraocular pressure and aqueous humor formation, not its pharmacokinetic disposition parameters. |
-| popPK | Leminen_2012 | irrelevant | 0 | 0 | The paper is a review of tranexamic acid where etamsylate is only mentioned as a comparator drug, and no pharmacokinetic parameters for etamsylate are reported. |
+| popPK | Jozsa_1983 | irrelevant | 0 | 0 | The study measures intraocular pressure and aqueous humor formation, not systemic pharmacokinetic parameters (CL, V, t1/2) for etamsylate. |
+| popPK | Leminen_2012 | irrelevant | 0 | 0 | The paper is a review of tranexamic acid, and etamsylate is only mentioned as a comparator drug without any pharmacokinetic data. |
 | PD | Leminen_2012 | not_relevant | 0 | 0 | The paper is a review of tranexamic acid and only mentions etamsylate as a comparator without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for etamsylate. |
 | popPK | Nong_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new cinnamic acid derivatives where etamsylate is used only as a comparator for in-vitro coagulation activity, with no pharmacokinetic parameters reported. |
 | PD | Nong_2017 | not_relevant | 3 | 2 | The paper reports a single IC50 value for etamsylate in an in vitro platelet aggregation assay for comparison, but does not provide a full concentration-effect curve, dose-response relationship, or PK/PD model parameters (Emax, slope, etc.) for etamsylate. |
-| popPK | Paine_2023 | relevant | 9 | 2 | The study reports a compartmental PK model for etamsylate (via its metabolite 2,5-HBSA) in horses, but specific numeric parameter values (CL, V, etc.) for etamsylate are not explicitly listed in the provided text, only typical values for the shared metabolite. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 18:53 UTC</sub>

@@ -18,7 +18,7 @@ Sepiapterin is used to treat phenylketonuria, a metabolic disorder. It is author
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:58 | 5:36 | 0/0/0 | 0/0/0 | 0/0/2 | 15,409/1,933 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-05 11:32 | 2:11 | 0/0/0 | 0/0/0 | 0/0/2 | 51,077/2,881 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCG2 (BCRP)** | `Q74` · AUClast | transport | [Gao_2024_2](drugs/drug_sepiapterin/pgx_Gao_2024_2_ABCG2_BCRP_Q74.md) | Gao L et al., Clinical Assessment of Breast Cancer Re…, Drugs in R&D (2024) | [10.1007/s40268-024-00488-0](https://doi.org/10.1007/s40268-024-00488-0) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCB1** | `Q74` · AUClast | transport | [Gao_2024_2](drugs/drug_sepiapterin/pgx_Gao_2024_2_ABCB1_Q74.md) | Gao L et al., Clinical Assessment of Breast Cancer Re…, Drugs in R&D (2024) | [10.1007/s40268-024-00488-0](https://doi.org/10.1007/s40268-024-00488-0) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **PAH** | `Q321` · EC50 | target | [Lah_2026](drugs/drug_sepiapterin/pgx_Lah_2026_PAH_Q321.md) | Lah M et al., Sepiapterin: A Distinct, Dual Mechanism…, Advances in therapy (2026) | [10.1007/s12325-026-03607-2](https://doi.org/10.1007/s12325-026-03607-2) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
@@ -44,15 +44,17 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| absorption | liver | `ABCG2` substrate | DrugBank actor |
+| absorption | blood-brain barrier | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` transport | paper PGx gene |
+| absorption | liver | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` transport | paper PGx gene |
+| absorption | small intestine | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
-<sub>Actors without a tissue in the table: ABCG2 (BCRP) (transport), DHFR (substrate), PAH (binder), PAH (target), SPR (substrate), Tetrahydrobiopterin (other).</sub>
+<sub>Actors without a tissue in the table: DHFR (substrate), PAH (binder), PAH (target), SPR (substrate), Tetrahydrobiopterin (other).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -63,7 +65,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 49 matched, 47 returned
-- **screened:** 5  ·  **relevant:** 2
+- **screened:** 5  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -73,58 +75,59 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Gao_2024_3.pdf` | Gao L et al., Relative Oral Bioavailability and Food…, Clinical pharmacology in dr… (2024) | popPK | 5 | [10.1002/cpdd.1363](https://doi.org/10.1002/cpdd.1363) | [38156759](https://pubmed.ncbi.nlm.nih.gov/38156759) | Sepiapterin is the subject drug in a PK study, but the evidence contains only relative exposure ratios (bioavailability/food effect) with no numeric disposition parameters (CL, V, t½) or model values, which are not present in the provided text. |
+| `Smith_2019.pdf` | Smith N et al., Phase I clinical evaluation of CNSA-001…, Molecular genetics and meta… (2019) | popPK | 8 | [10.1016/j.ymgme.2019.02.001](https://doi.org/10.1016/j.ymgme.2019.02.001) | [30922814](https://pubmed.ncbi.nlm.nih.gov/30922814) | The study reports PK parameters (Cmax, Tmax) for sepiapterin in humans, but lacks quantitative disposition parameters like clearance, volume, or half-life. |
 | `Meyer_2019.pdf` | Meyer JT et al., Pharmacological Assessment of Sepiapter…, The Journal of pharmacology… (2019) | pd | 5 | [10.1124/jpet.119.257105](https://doi.org/10.1124/jpet.119.257105) | [31110114](https://www.ncbi.nlm.nih.gov/pubmed/31110114) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Blasko_2002.pdf` | Blasko E et al., Mechanistic studies with potent and sel…, The Journal of biological c… (2002) | pd | 4 | [10.1074/jbc.M105691200](https://doi.org/10.1074/jbc.M105691200) | [11689556](https://www.ncbi.nlm.nih.gov/pubmed/11689556) | metadata signals extractable PD data (IC50) |
 | `Gunnett_2005.pdf` | Gunnett CA et al., Mechanisms of inducible nitric oxide sy…, Arteriosclerosis, thrombosi… (2005) | pd | 4 | [10.1161/01.ATV.0000172626.00296.ba](https://doi.org/10.1161/01.ATV.0000172626.00296.ba) | [15933248](https://www.ncbi.nlm.nih.gov/pubmed/15933248) | metadata signals extractable PD data (EC50) |
 | `Gao_2024.pdf` | Gao L et al., A Phase 1 Study to Assess the Pharmacok…, Pharmaceuticals (Basel, Swi… (2024) | pgx | 7 | [10.3390/ph17111411](https://doi.org/10.3390/ph17111411) | [39598323](https://www.ncbi.nlm.nih.gov/pubmed/39598323) | metadata signals extractable PGX data (ABCG2, PK/PD-context) |
 
-<sub>queue written 2026-09-30T02:57:52.072374+00:00</sub>
+<sub>queue written 2026-10-05T11:31:00.915870+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Andrade_2019 | not_relevant | 0 | 0 | Study of lizard color polymorphism genetics; no drug PK/PD pharmacogenomic effects reported. |
+| PGx | Andrade_2019 | not_relevant | 0 | 0 | The paper discusses evolutionary genetics and pigmentation in lizards, not the pharmacokinetics or pharmacodynamics of sepiapterin as a drug in humans. |
 | popPK | Blasko_2002 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | PD | Blasko_2002 | not_relevant | 0 | 0 | Paper describes iNOS dimerization inhibitor mechanistic studies; no sepiapterin exposure- or dose-response PD relationship or numeric PD parameters reported. |
-| PGx | Eslamiyeh_2025 | not_relevant | 1 | 1 | Paper describes an SPR gene variant causing sepiapterin reductase deficiency; no drug (sepiapterin) PK/PD parameter is reported. |
+| PGx | Eslamiyeh_2025 | not_relevant | 0 | 0 | The paper describes a genetic variant causing a metabolic enzyme deficiency (sepiapterin reductase deficiency) and its structural impact, but does not report a pharmacogenomic effect on the PK or PD of sepiapterin as a drug. |
 | popPK | Gao_2024 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
-| PGx | Gao_2024 | not_relevant | 0 | 0 | Phase 1 PK/safety study in healthy participants; no gene variant/genotype effects on sepiapterin PK/PD reported. |
-| popPK | Gao_2024_3 | irrelevant | 5 | 1 | Sepiapterin is the subject drug in a PK study, but the evidence contains only relative exposure ratios (bioavailability/food effect) with no numeric disposition parameters (CL, V, t½) or model values, which are not present in the provided text. |
-| popPK | Gao_2026 | irrelevant | 3 | 2 | This is an ethnic sensitivity/exposure-prediction analysis reporting only relative fold-changes in BH4 exposure, not sepiapterin disposition parameters (CL, V, ka) or a population-PK model with numeric values. |
-| PGx | Gao_2026_2 | not_relevant | 0 | 0 | Paper reports sepiapterin PK and concentration-QTc effects but no gene variant/genotype effect on any PK or PD parameter. |
+| PGx | Gao_2024 | not_relevant | 0 | 0 | The study assesses PK and safety in healthy Japanese and non-Japanese participants but does not report pharmacogenomic effects based on specific gene variants or genotypes. |
+| popPK | Gao_2024_3 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
+| popPK | Gao_2026 | irrelevant | 2 | 0 | The paper is a predictive ethnic bridging analysis based on genetic polymorphisms and does not report original quantitative PK parameters (CL, V, ka) for sepiapterin, only relative fold-changes in metabolite exposure. |
+| PGx | Gao_2026_2 | not_relevant | 0 | 0 | The paper reports a thorough QT study in healthy subjects and does not investigate the impact of gene variants or genotypes on the pharmacokinetics or pharmacodynamics of sepiapterin. |
 | popPK | Gibraeil_2000 | irrelevant | 0 | 0 | In-vitro pharmacology study of 4-ABH(4); sepiapterin is only a co-incubation comparator with no PK parameters. |
 | popPK | Gunnett_2005 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
 | PD | Gunnett_2005 | not_relevant | 0 | 0 | Only a title is provided; no sepiapterin PD or exposure-response data or parameters are reported. |
-| PGx | Himmelreich_2021 | not_relevant | 2 | 1 | Review of BH4 deficiency gene variants and clinical phenotypes; no pharmacokinetic or pharmacodynamic effect of variants on sepiapterin is reported. |
-| popPK | Ikemoto_2008 | irrelevant | 0 | 0 | In-vitro cell biology study of DAHP effects on HUVEC; sepiapterin is only a supplementation reagent with no PK parameters reported. |
+| PGx | Himmelreich_2021 | not_relevant | 0 | 0 | The paper reviews genetic variants in BH4 synthesis genes and their clinical phenotypes, but does not report pharmacokinetic or pharmacodynamic parameters of sepiapterin. |
+| popPK | Ikemoto_2008 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of DAHP and sepiapterin on cytokine-induced gene expression in endothelial cells, reporting no pharmacokinetic parameters. |
 | PD | Ikemoto_2008 | not_relevant | 2 | 1 | In-vitro dose-response of DAHP (not sepiapterin) on VCAM-1/BH4 is described qualitatively with no numeric PD parameters or extractable effect-concentration curves; sepiapterin is only a rescue supplement. |
-| PGx | Ishikawa_2016 | not_relevant | 3 | 2 | Sepiapterin is used as a corrective treatment in iPSC-derived neurons; no gene variant effect on sepiapterin PK/PD parameters is reported. |
-| PGx | Jacobson_1981 | not_relevant | 1 | 3 | Sepiapterin is studied as an endogenous pteridine in Drosophila tRNA queuine metabolism, not as a drug with gene-variant effects on its PK/PD parameters. |
-| PGx | Jones_2026 | not_relevant | 1 | 1 | Narrative review mentions sepiapterin only as a therapy option; no gene variant effect on its PK/PD parameters reported. |
-| PGx | Jung-Klawitter_2019 | not_relevant | 0 | 0 | Review on diagnostic analytics of neurotransmitter/pterin biomarkers; no pharmacogenomic effect on sepiapterin PK/PD reported. |
-| PGx | Klaassen_2025 | not_relevant | 4 | 3 | Predicts BH4/sepiapterin responsiveness by PAH genotype categorically, but no measured PK/PD parameter change (e.g., Phe reduction magnitude) per genotype is reported. |
-| popPK | La_2013 | irrelevant | 1 | 0 | Sepiapterin is used only as an intracavernosal pharmacological probe; no PK disposition parameters are reported. |
+| PGx | Ishikawa_2016 | not_relevant | 2 | 0 | The paper reports that sepiapterin treatment improves phenotypes in PTPS-deficient iPSCs, but it does not report a pharmacogenomic effect (i.e., how a specific genotype alters the PK/PD of sepiapterin itself); rather, it uses sepiapterin as a therapeutic agent to correct a metabolic defect. |
+| PGx | Jacobson_1981 | not_relevant | 0 | 0 | The paper studies the effect of pteridines on queuine incorporation in Drosophila, not the pharmacokinetics or pharmacodynamics of sepiapterin as a drug in humans. |
+| PGx | Jones_2026 | not_relevant | 0 | 0 | The paper is a narrative review of nutritional and therapeutic strategies for PKU and does not report specific pharmacogenomic effects on the PK or PD of sepiapterin. |
+| PGx | Jung-Klawitter_2019 | not_relevant | 0 | 0 | The paper is a review of analytical methods for diagnosing inborn errors of metabolism and does not report pharmacogenomic effects on the PK/PD of sepiapterin. |
+| PGx | Klaassen_2025 | not_relevant | 0 | 0 | The paper reports genotype-phenotype correlations for PKU and predicts BH4 responsiveness, but does not report measured pharmacokinetic or pharmacodynamic parameters of sepiapterin. |
+| popPK | La_2013 | irrelevant | 0 | 0 | The study investigates the physiological effect of sepiapterin on erectile function in rats, not its pharmacokinetic disposition parameters. |
 | PD | La_2013 | not_relevant | 3 | 2 | Sepiapterin effect is only a qualitative presence/absence comparison (ICP/MAP augmentation, P&lt;0.05) with no dose-response, concentration-effect data, or numeric PD parameters (no Emax/EC50 for sepiapterin) reported. |
-| PGx | Latremoliere_2018 | not_relevant | 2 | 3 | Sepiapterin is discussed only as a biomarker of SPR inhibition; no gene variant effect on sepiapterin PK/PD parameters is reported. |
-| PGx | McHugh_2008 | not_relevant | 0 | 0 | Proteomic changes in sepiapterin reductase from paroxetine exposure; no gene variant effect on PK/PD parameters of sepiapterin. |
+| PGx | Latremoliere_2018 | not_relevant | 0 | 0 | The paper discusses sepiapterin as a biomarker for target engagement and SPR as a drug target, but does not report a pharmacogenomic effect (gene variant) on the PK or PD of sepiapterin. |
+| PGx | McHugh_2008 | not_relevant | 0 | 0 | The paper reports proteomic changes (expression of sepiapterin reductase) in response to paroxetine, not the effect of a genetic variant on the PK/PD of sepiapterin. |
 | popPK | Meyer_2019 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
-| PGx | Nezhad_2024 | not_relevant | 0 | 0 | Paper reports BH4 biosynthesis gene mutations in HPA patients; sepiapterin is not studied and no PK/PD parameters are reported. |
-| popPK | Ohashi_2011 | irrelevant | 1 | 0 | In-vitro/mechanistic transporter study with no quantitative PK disposition parameters for sepiapterin reported in the evidence. |
-| PGx | Pearl_2007 | not_relevant | 0 | 0 | Review of pediatric neurotransmitter disorders; no pharmacogenomic effect on sepiapterin PK/PD reported. |
+| PGx | Nezhad_2024 | not_relevant | 0 | 0 | The paper reports genetic variants in BH4 biosynthesis genes causing a metabolic disorder, but does not report pharmacogenomic effects on the PK or PD parameters of sepiapterin as a drug. |
+| popPK | Ohashi_2011 | irrelevant | 1 | 0 | The study is mechanistic/in-vitro focused on membrane transporters (ENT1/ENT2) and does not report quantitative population pharmacokinetic parameters (CL, V, ka) for sepiapterin. |
+| PGx | Pearl_2007 | not_relevant | 0 | 0 | The text is a general overview of pediatric neurotransmitter disorders and does not report pharmacogenomic effects on the PK or PD of sepiapterin. |
+| popPK | Qi_2015 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sapropterin (BH4), not sepiapterin. |
 | PD | Qi_2015 | not_relevant | 0 | 0 | This is a population PK-only analysis (CL/F, V/F, absorption) of sapropterin; no concentration-effect or dose-response PD relationship (e.g., Phe reduction vs exposure) is modeled or quantified. |
 | popPK | Shaban_2024 | irrelevant | 0 | 0 | Sepiapterin appears only as "sepiapterin reductase" in an in-silico enzyme target; no PK parameters for sepiapterin are reported. |
 | PD | Shaban_2024 | not_relevant | 0 | 0 | Sepiapterin appears only as "sepiapterin reductase" in in silico docking; no sepiapterin exposure- or dose-response PD data or parameters are reported. |
-| popPK | Sigel_1987 | irrelevant | 0 | 0 | The paper reports PK parameters for piritrexim, not sepiapterin, which is only mentioned as a biochemical probe substrate. |
-| popPK | Smith_2019 | irrelevant | 4 | 2 | A Phase I PK study of sepiapterin, but only Cmax/Tmax are reported; no CL, V, half-life, or compartmental/population-PK parameters, and no numeric disposition values are present. |
-| popPK | Tiefenbacher_2000 | irrelevant | 0 | 0 | Sepiapterin is used only as an in-vitro incubation substrate in a vascular reactivity study, with no pharmacokinetic parameters reported. |
+| popPK | Sigel_1987 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for piritrexim, not sepiapterin, which is only mentioned as a substrate for dihydrofolate reductase. |
+| popPK | Smith_2019 | relevant | 8 | 2 | The study reports PK parameters (Cmax, Tmax) for sepiapterin in humans, but lacks quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Tiefenbacher_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular reactivity and does not report any pharmacokinetic parameters for sepiapterin. |
 | PD | Tiefenbacher_2000 | not_relevant | 2 | 1 | Sepiapterin was used as a fixed incubation condition in ex vivo vessel studies; dose-response curves are to agonists (histamine, serotonin, etc.), not to sepiapterin, and no sepiapterin concentration-effect parameters (Emax, EC50) are reported or derivable. |
-| popPK | Tiefenbacher_2003 | irrelevant | 0 | 0 | This is a pharmacodynamic study of sepiapterin in ischemia/reperfusion with no PK parameters or numeric disposition values reported. |
-| PGx | Verbeek_2008 | not_relevant | 2 | 3 | Reports SPR mutation effects on endogenous CSF/urine metabolites, not on PK/PD parameters of administered sepiapterin. |
-| popPK | Williams_2025 | irrelevant | 3 | 0 | This is a narrative review discussing sepiapterin PK qualitatively with no numeric disposition parameters present in the evidence. |
+| popPK | Tiefenbacher_2003 | irrelevant | 0 | 0 | The study investigates the cardioprotective effects of sepiapterin in rats but does not report any pharmacokinetic parameters (CL, V, t1/2, etc.). |
+| PGx | Verbeek_2008 | not_relevant | 0 | 0 | The paper describes a genetic disorder (sepiapterin reductase deficiency) and its diagnostic markers, but does not report a pharmacogenomic effect on the PK or PD of a specific drug. |
+| popPK | Williams_2025 | irrelevant | 2 | 0 | The paper is a review article discussing sepiapterin's pharmacokinetics but does not provide original quantitative disposition parameters (CL, V, etc.) in the provided text. |
 | PD | Williams_2025 | not_relevant | 2 | 1 | Narrative review discussing sepiapterin's PD qualitatively; no numeric PD parameters or effect-concentration data extractable from the abstract. |
-| PGx | de_2018 | not_relevant | 0 | 0 | No sepiapterin administration or PK/PD parameters; only endogenous BH4 pathway enzyme expression in mice. |
+| PGx | de_2018 | not_relevant | 0 | 0 | The paper investigates the impact of the parkin genotype on endogenous BH4 biosynthesis enzymes (including sepiapterin reductase) in a disease model, not the pharmacokinetics or pharmacodynamics of sepiapterin as an administered drug. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

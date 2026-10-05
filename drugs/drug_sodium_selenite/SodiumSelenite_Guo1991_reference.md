@@ -4,7 +4,7 @@
 
 # sodium selenite — `SodiumSelenite_Guo1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,9 +20,11 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium selenite: t1/2γ 1.8 h, t1/2ka 3.2 h, AUC 3 ng.h.ml-1, CL 32 ml.kg-1.h-1, V 1.45 L.kg-1, AUMC 130 S1, MRT 55 h, t1/2z 3.4 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 3, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:31.639508+00:00) predates the upstream re-run (2026-10-05 09:49:15.827153+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `sodium selenite`, measured `selenium`.
 
@@ -30,7 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991)
 
 ## Model component
-<dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Guo1991_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="selenium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Guo1991_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="selenium" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -47,6 +49,7 @@ Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue b
 | AUC | `Q88` · AUC | 3 | ng.h.ml-1 | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Guo_1991:abstract, Guo_1991:abstract | — | not captured |
 | CL | `Q22` · CL | 32 | ml.kg-1.h-1 | 6.222222222222221e-07 | [ml] / [[h] · [kg]] | not captured | exact (1.0) | Guo_1991:abstract | — | not captured |
 | Vc | `Q61` · V | 1.45 | L.kg-1 | 0.10149999999999999 | [l] / [kg] | not captured | exact (1.0) | Guo_1991:abstract, Guo_1991:abstract | — | not captured |
+| Cp | `Q900` · equation variable | 36 | ng.ml-1 | not captured | [ng] / [ml] | not captured | llm (0.6) | Guo_1991:abstract, Guo_1991:abstract | — | not captured |
 | AUMC (S1) | `Q20` · AUMC | 130 | S1 | not captured | [s1] | not captured | exact (1.0) | Guo_1991:abstract, Guo_1991:abstract | — | not captured |
 | MRT | `Q53` · MRT | 55 | h | 198000.0 | [h] | not captured | exact (1.0) | Guo_1991:abstract, Guo_1991:abstract | — | not captured |
 | T1/2 | `Q57` · t1/2z | 3.4 | h | 12240.0 | [h] | not captured | exact (1.0) | Guo_1991:abstract | — | not captured |
@@ -60,7 +63,6 @@ Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue b
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Tp' — extend the ontology if this is a real PK parameter (source ['Guo_1991:abstract', 'Guo_1991:abstract'])
-- dropped unlinked row (NIL): 'Cp' — extend the ontology if this is a real PK parameter (source ['Guo_1991:abstract', 'Guo_1991:abstract'])
 - unit_dimension_unknown: 'S1' (AUMC)
 - dropped unlinked row (NIL): 'VRT' — extend the ontology if this is a real PK parameter (source ['Guo_1991:abstract', 'Guo_1991:abstract'])
 - dropped duplicate Q22 ('Cl', value 57) — already have one for this compound
@@ -75,22 +77,36 @@ Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue b
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.667 (10/15 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.095 (2/21 fields) | 19 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[auc]` | 3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cp]` | not captured | 36 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[aumc]` | 130 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[aumc]` | not captured | 130 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | 32 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 32 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cp]` | 36 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mrt]` | 55 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | 3.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 3.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2g]` | 1.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2g]` | not captured | 1.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2ka]` | 3.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2ka]` | not captured | 3.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tp]` | not captured | 6.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc]` | 1.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc]` | not captured | 1.45 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vrt]` | not captured | 174 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | sodium selenite | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | selenium | unknown | mismatch |
 
 </details>
 
@@ -153,4 +169,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 16:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 09:49 UTC</sub>

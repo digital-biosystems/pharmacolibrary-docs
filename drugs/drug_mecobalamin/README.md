@@ -18,18 +18,11 @@ Mecobalamin is a vitamin B12 analogue used as an antianemic medicine to treat vi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:34 | 1:48 | 0/0/0 | 1/0/0 | 0/0/0 | 15,108/1,544 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/13 | 4/0 | 0 |
+| 2026-10-05 21:00 | 2:02 | 0/0/0 | 0/0/0 | 0/0/0 | 72,428/1,687 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/13 | 4/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Mezcord_2026_bacterial_viable_count](drugs/drug_mecobalamin/pd_Mezcord_2026_bacterial_viable_count.md) | name ← methylcobalamin · inhibition effect | — | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Mezcord_2026_cefiderocol_MIC](drugs/drug_mecobalamin/pd_Mezcord_2026_cefiderocol_MIC.md) | name ← methylcobalamin · inhibition effect | — | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
 
 ## ADME sites
 
@@ -59,51 +52,51 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hotta_2024.pdf` | Hotta K et al., Pharmacokinetic profiles of methylcobal…, Journal of pharmacological… (2024) | popPK | 9 | [10.1016/j.vascn.2024.107552](https://doi.org/10.1016/j.vascn.2024.107552) | [39245417](https://pubmed.ncbi.nlm.nih.gov/39245417) | The paper is a primary PK study for methylcobalamin (mecobalamin) in rats, but the provided evidence contains only qualitative descriptions (e.g., "complete bioavailability") and lacks specific numeric parameter values like CL, V, or t1/2. |
+| `Hotta_2024.pdf` | Hotta K et al., Pharmacokinetic profiles of methylcobal…, Journal of pharmacological… (2024) | popPK | 10 | [10.1016/j.vascn.2024.107552](https://doi.org/10.1016/j.vascn.2024.107552) | [39245417](https://pubmed.ncbi.nlm.nih.gov/39245417) | The study reports pharmacokinetic parameters for methylcobalamin (mecobalamin) in rats, but the specific numeric values (CL, V, etc.) are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-30T03:34:26.879711+00:00</sub>
+<sub>queue written 2026-10-05T20:59:51.790108+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bonato_2020 | irrelevant | 0 | 0 | The paper is a review on PFAS environmental pollution and oxidative stress, and does not contain any pharmacokinetic data for mecobalamin. |
+| popPK | Bonato_2020 | irrelevant | 0 | 0 | The paper is a review on PFAS environmental pollution and has no relation to mecobalamin pharmacokinetics. |
 | PD | Bonato_2020 | not_relevant | 0 | 0 | The paper is a review on PFAS environmental pollution and antioxidant responses, with no mention of mecobalamin or any pharmacodynamic modeling. |
-| popPK | Csanaky_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of arsenic species in rats, with methylcobalamin (mecobalamin) serving only as a mechanistic probe/inhibitor target rather than the subject drug for PK parameter estimation. |
-| popPK | Cui_2025 | irrelevant | 0 | 0 | The paper is a bibliometric analysis of botanical interventions for diabetic neuropathy and does not contain any pharmacokinetic data or parameters for mecobalamin. |
+| popPK | Csanaky_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of arsenic species (arsenate/arsenite) in rats, using methylcobalamin (mecobalamin) only as a mechanistic probe/inhibitor, not as the subject drug for PK parameter estimation. |
+| popPK | Cui_2025 | irrelevant | 0 | 0 | The paper is a bibliometric analysis of botanical interventions for diabetic neuropathy and contains no pharmacokinetic data for mecobalamin. |
 | PD | Cui_2025 | not_relevant | 0 | 0 | The paper is a bibliometric analysis of botanical interventions for diabetic neuropathy and does not contain any pharmacokinetic or pharmacodynamic data for mecobalamin. |
 | popPK | Devi_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyanocobalamin (and its metabolite methylcobalamin), not mecobalamin. |
-| popPK | Erickson_2024 | irrelevant | 0 | 0 | The paper focuses on AKT degraders and breast cancer signaling, with no mention of mecobalamin or pharmacokinetic parameters. |
+| popPK | Erickson_2024 | irrelevant | 0 | 0 | The paper studies AKT degraders in breast cancer cells and does not involve mecobalamin or its pharmacokinetics. |
 | PD | Erickson_2024 | not_relevant | 0 | 0 | The paper focuses on AKT degraders (INY-05-040) and breast cancer cell lines, with no mention of mecobalamin or any pharmacodynamic modeling for it. |
-| popPK | Gao_2026 | irrelevant | 0 | 0 | The paper is a clinical case report on nerve entrapment rehabilitation where mecobalamin is used as a co-administered injectate, with no pharmacokinetic parameters reported. |
-| popPK | Gieselmann_2026 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of an HIV-1 broadly neutralizing antibody (007), not the drug mecobalamin. |
+| popPK | Gao_2026 | irrelevant | 0 | 0 | The paper describes a clinical rehabilitation protocol for nerve entrapment where mecobalamin is used as a co-administered injectate, not as the subject of a pharmacokinetic study. |
+| popPK | Gieselmann_2026 | irrelevant | 0 | 0 | The paper describes an HIV-1 broadly neutralizing antibody and its structural/functional characterization, with no mention of mecobalamin or pharmacokinetic parameters. |
 | PD | Gieselmann_2026 | not_relevant | 0 | 0 | The paper characterizes an HIV-1 broadly neutralizing antibody (007) and does not involve the drug mecobalamin or report any pharmacodynamic parameters for it. |
 | popPK | Gómez-Perales_2021 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
 | PD | Gómez-Perales_2021 | not_relevant | 0 | 0 | The paper discusses the concept of iodine allergy in nuclear medicine and does not contain any pharmacodynamic or exposure-response data for mecobalamin. |
-| popPK | Halawani_2026 | irrelevant | 0 | 0 | The paper is a neuroscience study on axon regeneration and AhR signaling, and does not contain any pharmacokinetic data or parameters for mecobalamin. |
+| popPK | Halawani_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on axon regeneration and AhR signaling, with no pharmacokinetic data for mecobalamin. |
 | PD | Halawani_2026 | not_relevant | 0 | 0 | The paper investigates the role of the aryl hydrocarbon receptor (AhR) in axon regeneration and does not involve the drug mecobalamin or report any pharmacodynamic parameters for it. |
-| popPK | Hotta_2020 | irrelevant | 2 | 0 | The paper describes a bioanalytical method and mentions a PK study application, but no quantitative pharmacokinetic parameter values (CL, V, t1/2, etc.) are present in the provided evidence. |
-| popPK | Hotta_2024 | relevant | 9 | 2 | The paper is a primary PK study for methylcobalamin (mecobalamin) in rats, but the provided evidence contains only qualitative descriptions (e.g., "complete bioavailability") and lacks specific numeric parameter values like CL, V, or t1/2. |
-| popPK | Kashyap_2024 | irrelevant | 2 | 0 | The study investigates the bioavailability of cyanocobalamin (Vitamin B12), not mecobalamin, and while it uses a PK model, the subject drug is incorrect. |
-| popPK | Koyama_1997 | irrelevant | 0 | 0 | The study investigates cyanide metabolism and vitamin B12 analogues in uraemic patients, not the pharmacokinetic disposition parameters (CL, V, etc.) of mecobalamin. |
-| popPK | Liang_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for lenalidomide, not mecobalamin. |
+| popPK | Hotta_2020 | irrelevant | 2 | 0 | The paper describes a bioanalytical method and mentions a PK study application, but no quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) are provided in the evidence. |
+| popPK | Hotta_2024 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for methylcobalamin (mecobalamin) in rats, but the specific numeric values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Kashyap_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyanocobalamin (Vitamin B12), not mecobalamin. |
+| popPK | Koyama_1997 | irrelevant | 0 | 0 | The study investigates cyanide metabolism and thiocyanate levels in uraemic patients, not the pharmacokinetic disposition parameters (CL, V, etc.) of mecobalamin. |
+| popPK | Liang_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lenalidomide, not mecobalamin. |
 | PD | Liang_2024 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PPK) of lenalidomide and its association with adverse events, but it does not report a pharmacodynamic (PD) model or exposure-response relationship with numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Mezcord_2026 | irrelevant | 0 | 0 | The paper investigates the interaction between vitamin B12 (methylcobalamin) and cefiderocol in bacteria, focusing on resistance mechanisms and molecular docking, rather than reporting pharmacokinetic parameters for mecobalamin. |
-| popPK | Msa_2026 | irrelevant | 0 | 0 | The paper is a clinical pilot study on micronutrient supplementation and biomarker shifts, not a pharmacokinetic study, and contains no PK parameters for mecobalamin. |
+| popPK | Mezcord_2026 | irrelevant | 0 | 0 | The paper investigates the interaction between vitamin B12 (methylcobalamin) and cefiderocol in bacteria, focusing on resistance mechanisms and molecular docking, not the pharmacokinetics of mecobalamin. |
+| popPK | Msa_2026 | irrelevant | 0 | 0 | The study is a clinical trial of micronutrient supplementation reporting biomarker changes (homocysteine, VEGF), not a pharmacokinetic study of mecobalamin. |
 | PGx | Nakamura_2002 | not_relevant | 0 | 0 | The study examines the effect of MTHFR genotype on homocysteine levels and the efficacy of mecobalamin on methylmalonic acid, but does not report pharmacokinetic or pharmacodynamic parameters of mecobalamin itself (e.g., absorption, distribution, metabolism, or specific receptor response) modified by genotype. |
-| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not mention mecobalamin or report any pharmacokinetic parameters for it. |
+| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not contain any pharmacokinetic data for mecobalamin. |
 | PD | Nureye_2025 | not_relevant | 0 | 0 | The paper is a review of medicinal plants for hypertension in Ethiopia and does not contain any pharmacodynamic or exposure-response data for mecobalamin. |
-| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacokinetic data or mention of mecobalamin. |
+| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacokinetic data for mecobalamin. |
 | PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacodynamic or exposure-response data for mecobalamin. |
-| popPK | Pereira_2021 | irrelevant | 0 | 0 | The paper is a review on seaweed-derived neuroprotective agents and does not mention mecobalamin or report any pharmacokinetic parameters for it. |
+| popPK | Pereira_2021 | irrelevant | 0 | 0 | The paper is a review on seaweed diets for neurodegenerative diseases and does not contain pharmacokinetic data for mecobalamin. |
 | PD | Pereira_2021 | not_relevant | 0 | 0 | The paper is a review on seaweed diets and neurodegenerative diseases and does not contain any pharmacodynamic or exposure-response data for mecobalamin. |
-| popPK | Sun_2015 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of the Qishe pill, and mecobalamin is only mentioned as a comparator drug in the background. |
+| popPK | Sun_2015 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of the Qishe pill, a traditional Chinese medicine formulation, and does not report data for mecobalamin. |
 | PD | Sun_2015 | not_relevant | 0 | 0 | The paper is a study protocol for population pharmacokinetics (PK) of a traditional Chinese medicine pill and does not report any pharmacodynamic (PD) or exposure-response data for mecobalamin. |
-| popPK | Wang_2026 | irrelevant | 2 | 0 | The study focuses on oxcarbazepine as the primary subject for PK modeling, with mecobalamin serving only as a co-loaded agent without reported quantitative disposition parameters. |
+| popPK | Wang_2026 | irrelevant | 2 | 0 | The study focuses on oxcarbazepine pharmacokinetics in a trigeminal neuralgia model, with mecobalamin serving only as a co-loaded agent without reported quantitative PK parameters. |
 | PD | Wang_2026 | not_relevant | 2 | 1 | The paper reports qualitative pharmacodynamic outcomes (pain threshold increase, neuropeptide normalization) and PK parameters (bioavailability, Tmax) but does not provide a concentration-effect or dose-response curve or numeric PD parameters (e.g., EC50, Emax) for mecobalamin. |
 | popPK | Warita_2026 | irrelevant | 0 | 0 | The paper is a clinical practice guideline addendum that mentions mecobalamin as a therapy but does not report any quantitative pharmacokinetic parameters or models. |
-| popPK | Zhang_2008 | irrelevant | 1 | 0 | The paper is a review of clinical efficacy and mechanism without original quantitative pharmacokinetic parameter values. |
-| popPK | unknown_1998 | irrelevant | 2 | 0 | The text is a monograph overview/review of methylcobalamin pharmacokinetics without providing specific quantitative disposition parameters or original study data. |
+| popPK | Zhang_2008 | irrelevant | 2 | 0 | This is a review article discussing clinical efficacy and general pharmacokinetics without reporting original quantitative disposition parameters or specific numeric values. |
+| popPK | unknown_1998 | irrelevant | 2 | 0 | The text is a descriptive overview/monograph of methylcobalamin (mecobalamin) without providing any specific quantitative pharmacokinetic parameter values (CL, V, t1/2, etc.). |
 | popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, analysis, or mention of mecobalamin pharmacodynamics. |
 | popPK | unknown_2017 | irrelevant | 0 | 0 | no_text gate: only 20 chars of text extracted (&lt; 400) |

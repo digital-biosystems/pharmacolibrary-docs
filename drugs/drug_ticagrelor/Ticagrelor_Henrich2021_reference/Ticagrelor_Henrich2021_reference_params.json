@@ -1,16 +1,12 @@
 {
+ "dose_source": "WHO ATC DDD 180 mg oral (B01AC24)",
  "model_id": "Ticagrelor_Henrich2021_reference",
  "molar_masses": {
-  "C_central": 0.522568
+  "central.C": 0.522568
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
- ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  0.1,
-  16.0
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.363888888888889e-06,
@@ -20,17 +16,17 @@
   "VdPerKg": 0.00024285714285714289,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1.0000000000000001e-07,
+  "adminMass": 0.00018,
   "k12": 5.212418300653595e-05,
   "k21": 1.723951578037181e-05,
   "ka": 0.0016527777777777778,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 909.6081521668766
+  "central.C": 893.606896024585
  },
  "reference_peaks": {
-  "C_central": 1.3206284374449748e-06
+  "central.C": 0.0023673062629602274
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

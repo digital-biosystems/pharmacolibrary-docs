@@ -18,17 +18,11 @@ Phenindione is an anticoagulant of the vitamin K antagonist type, used to preven
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 05:17 | 0:40 | 0/0/0 | 0/1/0 | 0/0/0 | 1,300/292 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/9 | 11/0 | 0 |
+| 2026-10-05 15:11 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 22,897/822 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/9 | 11/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.407). The first reading is what the record holds.">cross-check: disputed</span> | [Comets_2012_INR](drugs/drug_phenindione/pd_Comets_2012_INR.md) | INR ← fluindione · indirect response — drug inhibits the production of INR | — | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
 
 ## ADME sites
 
@@ -63,10 +57,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Chakravarty_2020 | irrelevant | 0 | 0 | The paper is a simulation study on control strategies for propofol anesthesia and does not involve phenindione. |
 | popPK | Chen_2025 | irrelevant | 0 | 0 | The paper is a clinical trial protocol for inspiratory muscle training in tracheostomized patients and does not involve phenindione or pharmacokinetic parameters. |
 | popPK | Cheng_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for intravenous immunoglobulin (IgG), not phenindione. |
-| popPK | Comets_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fluindione, not phenindione, which is only mentioned as a related drug class member. |
+| popPK | Comets_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fluindione, not phenindione, which is only mentioned as a related drug class. |
 | popPK | Darville_2021 | irrelevant | 0 | 0 | The paper is a review of immune mechanisms in pelvic inflammatory disease and does not contain any pharmacokinetic data for phenindione. |
 | popPK | Dumas_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of immunoglobulin (Ig20Gly), not phenindione. |
-| PGx | Espana_2017 | not_relevant | 0 | 0 | The study investigates the role of ABC transporters in cell models but does not report any genetic variants or genotypes affecting pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Espana_2017 | not_relevant | 0 | 0 | The study investigates the role of ABC transporters in cell models but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | FREMONT_1964 | irrelevant | 0 | 0 | The provided evidence contains only the title of a pharmacodynamics study, with no quantitative pharmacokinetic parameters or data for phenindione. |
 | PD | FREMONT_1964 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric data, parameters, or curves required to extract a PD relationship. |
 | popPK | Freedman_1994 | irrelevant | 0 | 0 | The paper is a review of drug interactions with oral anticoagulants and does not report original quantitative pharmacokinetic parameters for phenindione. |

@@ -18,7 +18,7 @@ Molidustat is an antianemic drug candidate investigated for the treatment of ane
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 01:19 | 5:23 | 0/0/0 | 0/0/0 | 0/0/0 | 260,027/3,742 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/9 | 8/0 | 0 |
+| 2026-10-05 21:32 | 2:39 | 0/0/0 | 0/0/0 | 0/0/0 | 109,020/1,366 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/9 | 8/0 | 0 |
 
 ## popPK records
 
@@ -52,37 +52,37 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Böttcher_2018.pdf` | Böttcher M et al., First-in-man-proof of concept study wit…, British journal of clinical… (2018) | popPK | 8 | [10.1111/bcp.13584](https://doi.org/10.1111/bcp.13584) | [29575006](https://pubmed.ncbi.nlm.nih.gov/29575006) | The study reports PK parameters for molidustat, but only the terminal half-life range (4.64-10.40 h) is explicitly provided in the text, while other quantitative disposition parameters like clearance and volume are not listed. |
+| `Böttcher_2018.pdf` | Böttcher M et al., First-in-man-proof of concept study wit…, British journal of clinical… (2018) | popPK | 6 | [10.1111/bcp.13584](https://doi.org/10.1111/bcp.13584) | [29575006](https://pubmed.ncbi.nlm.nih.gov/29575006) | The study reports molidustat PK in humans but only provides a range for half-life (4.64-10.40 h) without specific clearance, volume, or compartmental model parameters. |
 | `Janssens_2021.pdf` | Janssens LK et al., Sensing an Oxygen Sensor: Development a…, Analytical chemistry (2021) | pd | 4 | [10.1021/acs.analchem.1c02923](https://doi.org/10.1021/acs.analchem.1c02923) | [34677954](https://www.ncbi.nlm.nih.gov/pubmed/34677954) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-19T01:18:53.335144+00:00</sub>
+<sub>queue written 2026-10-05T21:31:37.866926+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akizawa_2019 | irrelevant | 1 | 0 | The paper is a study protocol describing the design of Phase III trials and does not report any quantitative pharmacokinetic parameter values for molidustat. |
+| popPK | Akizawa_2019 | irrelevant | 0 | 0 | This is a study design and rationale paper for clinical trials, reporting no quantitative pharmacokinetic parameter values. |
 | PD | Akizawa_2019 | not_relevant | 0 | 0 | The paper is a protocol describing the design of three Phase III clinical trials and does not report any results, data, or numeric pharmacodynamic parameters. |
-| popPK | Bi_2024 | irrelevant | 2 | 0 | Molidustat is used as a negative control/comparator to demonstrate lack of OATP1B transport, and no quantitative PK parameters (CL, V, etc.) for molidustat are reported in the evidence. |
+| popPK | Bi_2024 | irrelevant | 2 | 0 | Molidustat is a neutral comparator used to demonstrate lack of OATP1B transport, and no quantitative PK parameters (CL, V, etc.) are reported for it in the evidence. |
 | popPK | Boegel_2024 | irrelevant | 2 | 1 | The study is primarily pharmacodynamic (erythropoiesis) in cats and only reports sparse plasma concentration ranges (Cmax/C24h) without deriving or reporting quantitative PK parameters like clearance, volume, or half-life. |
-| popPK | Böttcher_2018 | relevant | 8 | 4 | The study reports PK parameters for molidustat, but only the terminal half-life range (4.64-10.40 h) is explicitly provided in the text, while other quantitative disposition parameters like clearance and volume are not listed. |
-| popPK | Cui_2025 | irrelevant | 0 | 0 | The study evaluates enarodustat (SAL-0951), not molidustat. |
-| popPK | Imai_2024 | irrelevant | 1 | 0 | The study is a clinical comparison of drug potency and cost, reporting hemoglobin levels and dose escalation rather than quantitative pharmacokinetic disposition parameters (CL, V, etc.) for molidustat. |
-| popPK | Jain_2025 | irrelevant | 1 | 0 | The paper is a review of analytical methods and general pharmacology for HIF-PHIs, and the provided evidence contains no specific quantitative PK parameter values for molidustat. |
+| popPK | Böttcher_2018 | relevant | 6 | 2 | The study reports molidustat PK in humans but only provides a range for half-life (4.64-10.40 h) without specific clearance, volume, or compartmental model parameters. |
+| popPK | Cui_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of enarodustat (SAL-0951), not molidustat. |
+| popPK | Imai_2024 | irrelevant | 0 | 0 | The study is a clinical comparison of drug potency and cost, reporting hemoglobin levels and doses, but it does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for molidustat. |
+| popPK | Jain_2025 | irrelevant | 2 | 0 | This is a review article discussing synthesis and analysis of HIF-PHIs, and the provided evidence contains no specific quantitative pharmacokinetic parameter values for molidustat. |
 | popPK | Janssens_2021 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
 | PD | Janssens_2021 | not_relevant | 0 | 0 | The paper describes the development of activity-based assays for HIF heterodimerization and does not report pharmacodynamic or exposure-response data for molidustat. |
-| popPK | Li_2020 | irrelevant | 0 | 0 | The study is a mechanistic/efficacy trial in mice focusing on anemia and renal pathology, with no pharmacokinetic parameters reported. |
-| popPK | Mendoza-Reinoso_2022 | irrelevant | 0 | 0 | The paper is a mechanistic study on macrophage efferocytosis and HIF-1α signaling, not a pharmacokinetic study of molidustat. |
-| popPK | Nakai_2024 | irrelevant | 2 | 0 | The study focuses on mechanistic gene expression and qualitative pharmacokinetic differences in mice, and no quantitative PK parameter values (CL, V, etc.) for molidustat are present in the evidence. |
+| popPK | Li_2020 | irrelevant | 0 | 0 | The study is a pharmacodynamic/efficacy trial in mice focusing on anemia and renal function, with no pharmacokinetic parameters reported. |
+| popPK | Mendoza-Reinoso_2022 | irrelevant | 0 | 0 | The paper is a mechanistic study on macrophage efferocytosis and HIF-1α signaling in mice, using Roxadustat (a different drug) as a tool, and contains no pharmacokinetic data for molidustat. |
+| popPK | Nakai_2024 | irrelevant | 2 | 0 | The study focuses on gene expression and therapeutic mechanisms in mice, and while it mentions pharmacokinetics, no quantitative PK parameters (CL, V, etc.) for molidustat are provided in the evidence. |
 | PD | Nakai_2024 | not_relevant | 2 | 1 | The paper describes qualitative drug-specific mechanisms and gene expression changes in mice but does not report numeric PD parameters or quantitative exposure-response curves for molidustat. |
-| popPK | Sadiku_2017 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study using molidustat as a tool to inhibit PHD2, and it does not report any pharmacokinetic parameters (CL, V, etc.) for the drug. |
-| popPK | Shitamori_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of roxadustat (ROX) in cats, with molidustat (MOL) serving only as a background comparator or approved reference drug, not the subject of the PK analysis. |
+| popPK | Sadiku_2017 | irrelevant | 0 | 0 | The study investigates the immunological effects of molidustat on neutrophil inflammation in mice and does not report any pharmacokinetic parameters (CL, V, etc.) for the drug. |
+| popPK | Shitamori_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of roxadustat in cats, with molidustat serving only as a comparator or background context. |
 | popPK | Susi_2025 | irrelevant | 0 | 0 | The paper is a review of feline therapeutics (buprenorphine, gabapentin, frunevetmab, SGLT2 inhibitors) and does not mention molidustat or provide any pharmacokinetic parameters for it. |
 | PD | Susi_2025 | not_relevant | 1 | 0 | The paper is a clinical review that discusses the mechanism of action and general pharmacokinetic data for molidustat in cats, but it does not report specific numeric pharmacodynamic parameters (such as Emax, EC50, or dose-response curves) or perform a PK/PD modeling analysis. |
-| popPK | Takano_2022 | irrelevant | 2 | 0 | The study focuses on the mechanistic clearance pathways (transporters and excretion routes) rather than reporting quantitative population pharmacokinetic parameters like CL, V, or ka for molidustat. |
-| popPK | Yamamoto_2019 | irrelevant | 0 | 0 | The paper is a study protocol describing the design of Phase 3 trials and does not report any quantitative pharmacokinetic parameter values for molidustat. |
+| popPK | Takano_2022 | irrelevant | 2 | 0 | The study focuses on the mechanism of clearance and species differences in excretion routes (urinary/biliary percentages) rather than reporting quantitative population pharmacokinetic parameters like CL, V, or ka. |
+| popPK | Yamamoto_2019 | irrelevant | 0 | 0 | This is a study design and rationale paper for Phase III trials, reporting no quantitative pharmacokinetic parameter values. |
 | PD | Yamamoto_2019 | not_relevant | 0 | 0 | The paper is a study protocol describing the design and rationale of two Phase III trials; it does not report any results, data, or numeric pharmacodynamic parameters. |
-| popPK | Yang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of roxadustat (FG-4592) on myeloablation and engraftment in mice, not its pharmacokinetic parameters, and molidustat is not the subject drug. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of roxadustat (FG-4592) on hematopoietic stem cell transplantation in mice, not its pharmacokinetic parameters. |
 | PGx | van_2021 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (atazanavir inhibiting UGT1A1) rather than a pharmacogenomic effect based on a specific gene variant or genotype. |
 
 ---

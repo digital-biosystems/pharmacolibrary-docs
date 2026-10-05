@@ -26,7 +26,7 @@ Eliglustat is a medicine used to treat Gaucher's disease. It is authorised in th
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:10 | 12:47 | 0/1/2 | 0/0/0 | 0/0/0 | 89,468/47,840 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 12/1 | 10/0 | 0 |
+| 2026-10-05 10:31 | 0:09 | 0/1/2 | 0/0/0 | 0/0/0 | 7,094/92 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 12/1 | 10/0 | 0 |
 
 ## popPK records
 
@@ -34,7 +34,7 @@ Eliglustat is a medicine used to treat Gaucher's disease. It is authorised in th
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Li_2020_84_mg_bid_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_bid_a.md) | — | 1-compartment (no model) | 1 | JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020) | [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Li_2020_84_mg_qd_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_qd_a.md) | — | 1-compartment (no model) | 1 | JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020) | [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wolthuis_2025_reference](drugs/drug_eliglustat/Eliglustat_Wolthuis2025_reference.md) | — | 1-compartment (no model) | 0 | Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wolthuis_2025_reference](drugs/drug_eliglustat/Eliglustat_Wolthuis2025_reference.md) | — | 1-compartment (no model) | 0 | Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3) |
 
 ## ADME sites
 
@@ -65,8 +65,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
-- **screened:** 13  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 13  ·  **relevant:** 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded
@@ -78,7 +78,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Reddy_2025 | irrelevant | not captured | not captured | Eliglustat is used only as a probe substrate in PBPK simulations to evaluate rifampin DDI predictions, with no original quantitative PK parameters reported. |
 | popPK | Vykoukal_2025 | irrelevant | not captured | not captured | The paper investigates the mechanistic anti-tumor effects of eliglustat in cell lines and mouse models but contains no quantitative pharmacokinetic data or population-PK modeling. |
 | popPK | Wang_2019_2 | relevant | not captured | not captured | The paper reports quantitative noncompartmental pharmacokinetic parameters (clearance, AUC, Cmax) for eliglustat in rats but does not contain population or compartmental model estimates. |
+| popPK | Wolthuis_2025 | relevant | 8 | 2 | The paper uses a population PK model for eliglustat to simulate pediatric dosing, but the specific numeric parameter values (CL, V, Q, ka) are not listed in the text or tables, only simulation outcomes (Cavg, Cmax) and a reference to adult IV clearance. |
 | popPK | Zhan_2025 | irrelevant | not captured | not captured | Eliglustat is used solely as an internal standard for givinostat quantification, with no pharmacokinetic parameters reported for it. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 01:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 10:31 UTC</sub>

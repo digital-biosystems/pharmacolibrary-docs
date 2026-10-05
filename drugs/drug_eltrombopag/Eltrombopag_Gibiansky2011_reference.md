@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Gibiansky_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eltrombopag_Gibiansky2011_reference&quot;,&quot;label&quot;:&quot;Gibiansky_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # eltrombopag — `Eltrombopag_Gibiansky2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record, built from the paper's abstract only, reports eltrombopag apparent parameters CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L and Q/F 0.399 L/h with a two-compartment structure and first-order depot input. The absorption parameters ka and Tlag were missing from the source, so library defaults were used in their place, and the invented ka was judged not acceptable. Bioavailability was assumed to be 1 (F=1, Fm=1, no molar correction), giving an apparent parameterization, which a second reader disputed, preferring a mechanistic parameterization, and the second reader also returned no values for the four apparent parameters. Extracted — eltrombopag: CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:52.554572+00:00) predates the upstream re-run (2026-10-05 18:34:34.229324+00:00). Current validate status: `extracted`.
 
 ## Citation
 Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clinical pharmac… (2011)
   ·  DOI: [10.1177/0091270010375427](https://doi.org/10.1177/0091270010375427)
 
 ## Model component
-<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="needs_review" stale="false" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="extracted" stale="true" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.
@@ -38,8 +40,6 @@ Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clini
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance (CL/F) | `Q27` · CL/F | 0.668 | L/h | 1.8555555555555557e-07 | [l] / [h] | not captured | exact (1.0) | Gibiansky_2011:abstract | — | not captured |
@@ -61,17 +61,16 @@ Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clini
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'typical eltrombopag CL/F' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ('typical eltrombopag CL/F', value 33) — already have one for this compound
-- unit_dimension_mismatch: 'CL/F' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ('CL/F', value 68) — already have one for this compound
-- unit_dimension_mismatch: 'Vc/F' → Q290 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q290 ('Vc/F', value 55) — already have one for this compound
+- dropped value-less row: 'Eltrombopag CL/F, Vc/F, Q/F, and Vp/F'
+- dropped value-less row: 'parameters'
+- dropped value-less row: 'typical eltrombopag CL/F'
+- dropped value-less row: 'CL/F'
+- dropped value-less row: 'Vc/F'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=eltrombopag
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Gibiansky_2011_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Gibiansky_2011_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -80,17 +79,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance]` | 0.668 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent volume of the central compartment]` | 8.76 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent volume of the peripheral compartment]` | 11.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 0.668 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distributional clearance]` | 0.399 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/f]` | not captured | 0.399 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc/f]` | not captured | 8.76 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vp/f]` | not captured | 11.3 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | eltrombopag | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | eltrombopag | unknown | mismatch |
 
 </details>
 
@@ -148,8 +152,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_modelica.zip" download>Eltrombopag_Gibiansky2011_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_fmi.zip" download>Eltrombopag_Gibiansky2011_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_modelica.zip" download>Eltrombopag_Gibiansky2011_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_fmi.zip" download>Eltrombopag_Gibiansky2011_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_matlab.zip" download>Eltrombopag_Gibiansky2011_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_matlab_simbio.zip" download>Eltrombopag_Gibiansky2011_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference/Eltrombopag_Gibiansky2011_reference_sbml.zip" download>Eltrombopag_Gibiansky2011_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -170,4 +174,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 18:34 UTC</sub>

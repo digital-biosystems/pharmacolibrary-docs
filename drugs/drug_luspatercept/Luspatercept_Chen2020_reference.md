@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;luspatercept&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/&quot;},{&quot;label&quot;:&quot;Chen_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # luspatercept — `Luspatercept_Chen2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,19 +19,21 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of age_years_on_cl_f: this record has -0.534, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:35.594454+00:00) predates the upstream re-run (2026-10-05 21:19:33.625847+00:00). Current validate status: `extracted`.
 
 ## Citation
 Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521)
 
 ## Model component
-<dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="curated_candidate" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="extracted" stale="true" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Parameters:** 3 extracted, plus 5 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -41,6 +43,11 @@ Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 | CL/F, L/day | `Q27` · CL/F | 0.469 | L/day | 5.42824074074074e-09 | [l] / [d] | not captured | exact (1.0) | psp412521-tbl-0002:row3:col1, psp412521-tbl-0002:row3:col2 | — | not captured |
 | V1/F, L | `Q76` · V/F | 9.20 | L | 0.0092 | [l] | not captured | exact (1.0) | psp412521-tbl-0002:row4:col1, psp412521-tbl-0002:row4:col2 | — | not captured |
 | K a, 1/day | `Q49` · kabs | 0.456 | 1/day | 5.277777777777778e-06 | [1] / [d] | not captured | space_fold (0.95) | psp412521-tbl-0002:row5:col1, psp412521-tbl-0002:row5:col2 | — | not captured |
+| weight_kg_on_cl_f | `Q900` · weight_kg_on_cl_f | 0.768 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row6:col1, psp412521-tbl-0002:row6:col2 | — | not captured |
+| age_years_on_cl_f | `Q900` · age_years_on_cl_f | -0.534 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row7:col1, psp412521-tbl-0002:row7:col2 | — | not captured |
+| albumin_g_l_on_cl_f | `Q900` · albumin_g_l_on_cl_f | -1.18 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row8:col1, psp412521-tbl-0002:row8:col2 | — | not captured |
+| weight_kg_on_v1_f | `Q900` · weight_kg_on_v1_f | 0.878 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row9:col1, psp412521-tbl-0002:row9:col2 | — | not captured |
+| albumin_g_l_on_v1_f | `Q900` · albumin_g_l_on_v1_f | -0.609 | not captured | not captured | not captured | not captured | not captured (not captured) | psp412521-tbl-0002:row10:col1, psp412521-tbl-0002:row10:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,15 +61,16 @@ Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics 
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Weight, kg, on CL/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row6:col1', 'psp412521-tbl-0002:row6:col2'])
-- dropped unlinked row (NIL): 'Age, years, on CL/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row7:col1', 'psp412521-tbl-0002:row7:col2'])
-- dropped unlinked row (NIL): 'Albumin, g/L, on CL/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row8:col1', 'psp412521-tbl-0002:row8:col2'])
-- dropped unlinked row (NIL): 'Weight, kg, on V1/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row9:col1', 'psp412521-tbl-0002:row9:col2'])
-- dropped unlinked row (NIL): 'Albumin, g/L, on V1/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row10:col1', 'psp412521-tbl-0002:row10:col2'])
+- covariate level 'Weight, kg, on CL/F' → Q900:weight_kg_on_cl_f = 0.768 (linear_fractional on Q27)
+- covariate level 'Age, years, on CL/F' → Q900:age_years_on_cl_f = -0.534 (linear_fractional on Q27)
+- covariate level 'Albumin, g/L, on CL/F' → Q900:albumin_g_l_on_cl_f = -1.18 (linear_fractional on Q27)
+- covariate level 'Weight, kg, on V1/F' → Q900:weight_kg_on_v1_f = 0.878 (linear_fractional on Q27)
+- covariate level 'Albumin, g/L, on V1/F' → Q900:albumin_g_l_on_v1_f = -0.609 (linear_fractional on Q27)
 - routed 'Interindividual variability of CL/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'Interindividual variability of V1/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=luspatercept
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V1/F, L' is the general volume)
+- molar mass: none found for 'luspatercept' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -88,14 +96,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.529 (9/17 fields) | 8 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[age_years_on_cl_f]` | -0.534 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[theta_cl_f_age]` | not captured | -0.534 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_cl_f_weight]` | not captured | 0.768 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_v1_f_weight]` | not captured | 0.878 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[weight_kg_on_cl_f]` | 0.768 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[weight_kg_on_v1_f]` | 0.878 | not captured | only_one_extracted |
 
 </details>
 
@@ -112,6 +126,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412521-tbl-0002:row3:col1', 'psp412521-tbl-0002:row3:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412521-tbl-0002:row5:col1', 'psp412521-tbl-0002:row5:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412521-tbl-0002:row4:col1', 'psp412521-tbl-0002:row4:col2'] |
@@ -151,7 +166,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_modelica.zip" download>Luspatercept_Chen2020_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_modelica.zip" download>Luspatercept_Chen2020_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_fmi.zip" download>Luspatercept_Chen2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_matlab.zip" download>Luspatercept_Chen2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_matlab_simbio.zip" download>Luspatercept_Chen2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -173,4 +188,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 01:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:19 UTC</sub>

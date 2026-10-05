@@ -4,7 +4,7 @@
 
 # sodium selenite — `SodiumSelenite_Jayachandran2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,9 +20,11 @@
 
 The model was built, but sodium selenite's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — sodium selenite: kabs 0.642 h−1, CL/F 1.59 L/h, V/F 42.5 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:40:31.642516+00:00) predates the upstream re-run (2026-10-05 09:49:08.574503+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `sodium selenite`, measured `selenite`.
 
@@ -31,7 +33,7 @@ Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D 
   ·  DOI: [10.1007/s40268-021-00340-9](https://doi.org/10.1007/s40268-021-00340-9)
 
 ## Model component
-<dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Jayachandran2021_reference" status="model_quarantined" stale="false" population="patients with metastatic cancer" measured-compound="selenite" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Jayachandran2021_reference" status="extracted" stale="true" population="patients with metastatic cancer" measured-compound="selenite" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -39,8 +41,6 @@ Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka, h−1 | `Q49` · kabs | 0.642 | h−1 | 0.00017833333333333335 | [1] / [h] | 16 | exact (1.0) | Tab1:row1:col1 | — | not captured |
@@ -55,7 +55,8 @@ Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'BASE, μg' — extend the ontology if this is a real PK parameter (source ['Tab1:row4:col1', 'Tab1:row4:col2'])
+- table section iiv: 'BASE, μg' routed out of structural estimates ('Interindividual variability%CV (RSE, %)')
+- dropped unlinked row (NIL): 'BASE, μg' — extend the ontology if this is a real PK parameter (source ['Tab1:row4:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=selenite
 
 **Extraction notes:**
@@ -68,13 +69,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['sodium selenite', 'selenium', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[base]` | not captured | 5270 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | sodium selenite | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | selenite | unknown | mismatch |
@@ -148,4 +148,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 16:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 09:49 UTC</sub>

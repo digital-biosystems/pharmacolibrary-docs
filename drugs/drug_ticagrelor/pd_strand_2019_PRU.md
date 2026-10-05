@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PD P2Y12 reaction units&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PD P2Y12 reaction units (PRU)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Li2016_reference&quot;,&quot;label&quot;:&quot;Li_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# P2Y12 reaction units — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# P2Y12 reaction units (PRU) — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,13 +14,13 @@
 
 ## What this record describes
 
-**As extracted:** Ticagrelor (concentrations from this paper's PK model) drives P2Y12 reaction units (in PRU): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ticagrelor (concentrations from this paper's PK model) drives P2Y12 reaction units (PRU): direct sigmoid Emax (Hill) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Ticagrelor plasma concentration (nmol l–1) drives inhibition of PRU via a direct sigmoid Emax model (Emax 98.5%, EC50 116 nmol l–1, γ 1.59); the paper does not state an indirect/turnover mechanism, and using the sum of ticagrelor plus AR-C124910XX as driver was not significantly better than ticagrelor alone.
+> Ticagrelor plasma concentrations directly inhibit P2Y12 reaction units (PRU) via a sigmoid Emax model, with an EC50 of 116 nmol l–1, a maximal effect (Emax) of 98.5%, and a steepness exponent (γ) of 1.59. The model estimates baseline PRU levels at 311 for the ONSET/OFFSET study and 261 for the PEGASUS-TIMI 54 study.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Åstrand_2019`
 - **model family:** `sigmoid_emax`
@@ -35,32 +35,13 @@
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | CL/F (l h –1 ) — Estimate | `Q27` · not captured | 16.6 | l h –1 | not captured | exact (not captured) | bcp13812-tbl-0002:row1:col1 |
-| PK (driver) | CL/F (l h –1 ) — BSV (%) | `Q27` · not captured | 24 | l h –1 | not captured | exact (not captured) | bcp13812-tbl-0002:row1:col3 |
-| PK (driver) | Q/F (l h –1 ) — Estimate | `Q69` · not captured | 10.4 | l h –1 | not captured | exact (not captured) | bcp13812-tbl-0002:row2:col1 |
-| PK (driver) | Q/F (l h –1 ) — BSV (%) | `Q69` · not captured | 95 | l h –1 | not captured | exact (not captured) | bcp13812-tbl-0002:row2:col3 |
-| PK (driver) | Vc/F (l) — Estimate | `Q290` · not captured | 156 | l | not captured | exact (not captured) | bcp13812-tbl-0002:row3:col1 |
-| PK (driver) | Vp/F (l) — Estimate | `Q82` · not captured | 55.8 | l | not captured | exact (not captured) | bcp13812-tbl-0002:row4:col1 |
-| PK (driver) | KTR (h −1 ) — Estimate | `Q306` · not captured | 10.1 | h −1 | not captured | exact (not captured) | bcp13812-tbl-0002:row5:col1 |
-| PK (driver) | KTR (h −1 ) — BSV (%) | `Q306` · not captured | 54 | h −1 | not captured | exact (not captured) | bcp13812-tbl-0002:row5:col3 |
-| PK (driver) | Absorption lag time prior MI (h) — Estimate | `Q83` · not captured | 0.48 | h | not captured | llm_confirmed (not captured) | bcp13812-tbl-0002:row6:col1 |
-| PK (driver) | F rel — Estimate | `Q87` · not captured | 1 | not captured | not captured | exact (not captured) | bcp13812-tbl-0002:row7:col1 |
-| PK (driver) | F rel — BSV (%) | `Q87` · not captured | 32 | not captured | not captured | exact (not captured) | bcp13812-tbl-0002:row7:col3 |
-| variability | Proportional residual error ticagrelor (%) — Estimate | `Q316` · not captured | 32 | not captured | not captured | llm_confirmed (not captured) | bcp13812-tbl-0002:row8:col1 |
-| PK (driver) | CL m /F (l h –1 ) — Estimate | `Q351` · not captured | 10.2 | l h –1 | not captured | space_fold (not captured) | bcp13812-tbl-0002:row9:col1 |
-| PK (driver) | CL m /F (l h –1 ) — BSV (%) | `Q351` · not captured | 28 | l h –1 | not captured | space_fold (not captured) | bcp13812-tbl-0002:row9:col3 |
-| PK (driver) | F m — Estimate | `Q45` · not captured | 0.22 | not captured | not captured | space_fold (not captured) | bcp13812-tbl-0002:row10:col1 |
-| PK (driver) | Q m /F (l h –1 ) — Estimate | `Q69` · not captured | 4.41 | l h –1 | not captured | llm (not captured) | bcp13812-tbl-0002:row11:col1 |
-| PK (driver) | Vc m /F (l) — Estimate | `Q290` · not captured | 7.04 | l | not captured | llm_corrected (not captured) | bcp13812-tbl-0002:row12:col1 |
-| PK (driver) | Vp m /F (l) — Estimate | `Q82` · not captured | 42.3 | l | not captured | llm_corrected (not captured) | bcp13812-tbl-0002:row13:col1 |
-| PK (driver) | Vp m /F (l) — BSV (%) | `Q82` · not captured | 37 | l | not captured | llm_corrected (not captured) | bcp13812-tbl-0002:row13:col3 |
-| variability | Proportional residual error metabolite (%) — Estimate | `Q316` · not captured | 26 | not captured | not captured | llm_confirmed (not captured) | bcp13812-tbl-0002:row14:col1 |
-| PD (effect) | EC 50 (nmol l –1 ) — Estimate | `Q321` · not captured | 116 | nmol l –1 | not captured | space_fold (not captured) | bcp13812-tbl-0002:row17:col1 |
-| PD (effect) | EC 50 (nmol l –1 ) — BSV (%) | `Q321` · not captured | 66 | nmol l –1 | not captured | space_fold (not captured) | bcp13812-tbl-0002:row17:col3 |
-| PD (effect) | PRU baseline ‐EC 50 correlation — BSV (%) | `Q321` · not captured | 0.33 | nmol l–1 | not captured | llm_corrected (not captured) | bcp13812-tbl-0002:row18:col3 |
-| PD (effect) | E max (%) — Estimate | `Q320` · not captured | 98.5 | not captured | not captured | space_fold (not captured) | bcp13812-tbl-0002:row19:col1 |
-| PD (effect) | Steepness of exposure‐response (γ) — Estimate | `Q325` · not captured | 1.59 | not captured | not captured | llm_corrected (not captured) | bcp13812-tbl-0002:row20:col1 |
-| variability | Additive residual error PRU (at PRU = 300) — Estimate | `Q317` · not captured | 47.6 | at PRU = 300 | not captured | llm_confirmed (not captured) | bcp13812-tbl-0002:row21:col1 |
+| PD (effect) | PRU baseline ONSET/OFFSET | `Q324` · not captured | 311 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| PD (effect) | PRU baseline PEGASUS | `Q324` · not captured | 261 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| PD (effect) | EC 50 | `Q321` · not captured | 116 | nmol l –1 | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 98.5 | % | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| PD (effect) | Steepness of exposure‐response | `Q325` · not captured | 1.59 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| model term | Exponent for PRU error | `Q900` · not captured | 0.48 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
+| variability | Additive residual error PRU (at PRU = 300) | `Q315` · not captured | 47.6 | not captured | not captured | llm (not captured) | Åstrand_2019:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,21 +55,20 @@
 
 | parameter | value (paper units) | SI |
 |---|---|---|
-| E0 | 0 | — |
-| Emax | -98.5 PRU | — |
+| E0 | 311 | — |
+| Emax | -98.5 % | -0.985 1 |
 | EC50 | 116 nmol l –1 | 0.000116 mol/m3 |
 | gamma | 1.59 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -49.25, `at_inf` = -98.5
+Closed-form check points (response, SI): `at_0` = 311, `at_EC50` = 310.5, `at_inf` = 310
 
 Deviations:
 
-- `defaulted_parameters` — E0
-- `pd_binding_inhibition_sign` — effect_direction=inhibition with a positive Emax (Q320) — sign flipped
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 | check | status | note |
 |---|---|---|
@@ -97,11 +77,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.55%) |
 | `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
+| `T4_defaults` | pass | nothing defaulted |
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -110,7 +86,7 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_modelica.zip" download>Ticagrelor_strand2019_PD_pru_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_modelica.zip" download>Ticagrelor_strand2019_PD_pru_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_fmi.zip" download>Ticagrelor_strand2019_PD_pru_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_matlab.zip" download>Ticagrelor_strand2019_PD_pru_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

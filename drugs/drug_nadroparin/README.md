@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # nadroparin
 
@@ -17,22 +18,16 @@ Nadroparin is an anticoagulant of the heparin group used to prevent and treat bl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 20:29 | 8:34 | 0/1/3 | 1/0/0 | 0/0/0 | 98,703/19,325 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-05 15:09 | 9:15 | 2/1/1 | 0/0/0 | 0/0/0 | 127,420/27,511 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chen_2024_reference](drugs/drug_nadroparin/Nadroparin_Chen2024_reference.md) | held back | 1-compartment, oral | 3 | Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Jaspers_2022_reference](drugs/drug_nadroparin/Nadroparin_Jaspers2022_reference.md) | held back | 1-compartment, oral | 2 (+2 cov.) | Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Piwowarczyk_2023_shrinkage](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_shrinkage.md) | held back | 1-compartment, IV | 1 | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piwowarczyk_2023_estimate_unit](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_estimate_unit.md) | — | 1-compartment (no model) | 3 | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: disputed</span> | [Jaspers_2022_anti_Xa](drugs/drug_nadroparin/pd_Jaspers_2022_anti_Xa.md) | anti-Xa level ← nadroparin · stimulation effect | — | Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Chen_2024_reference](drugs/drug_nadroparin/Nadroparin_Chen2024_reference.md) | held back | 1-compartment, oral | 3 | Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Piwowarczyk_2023_reference](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Jaspers_2022_reference](drugs/drug_nadroparin/Nadroparin_Jaspers2022_reference.md) | — | 1-compartment (no model) | 2 (+2 cov.) | Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.2). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Laporte_1999_reference](drugs/drug_nadroparin/Nadroparin_Laporte1999_reference.md) | — | 1-compartment (no model) | 0 | Laporte S et al., Population pharmacokinetic of nadropari…, European journal of pharmac… (1999) | [10.1016/s0928-0987(98)00064-5](https://doi.org/10.1016/s0928-0987(98)00064-5) |
 
 ## ADME sites
 
@@ -55,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -64,17 +59,17 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Laporte_1999.pdf` | Laporte S et al., Population pharmacokinetic of nadropari…, European journal of pharmac… (1999) | popPK | 10 | [10.1016/s0928-0987(98)00064-5](https://doi.org/10.1016/s0928-0987(98)00064-5) | [10210734](https://pubmed.ncbi.nlm.nih.gov/10210734) | The text explicitly provides the quantitative population PK model equations for apparent clearance and volume of distribution for nadroparin. |
-| `Romano_2023.pdf` | Romano LGR et al., Population pharmacokinetics of nadropar…, British journal of clinical… (2023) | popPK | 10 | [10.1111/bcp.15634](https://doi.org/10.1111/bcp.15634) | [36495312](https://pubmed.ncbi.nlm.nih.gov/36495312) | The paper is a population PK study of nadroparin, but the specific numeric parameter values (e.g., typical CL, V, ka) are not present in the provided abstract text. |
-| `Diepstraten_2015.pdf` | Diepstraten J et al., Population pharmacodynamic model for lo…, European journal of clinica… (2015) | popPK | 9 | [10.1007/s00228-014-1760-4](https://doi.org/10.1007/s00228-014-1760-4) | [25304008](https://pubmed.ncbi.nlm.nih.gov/25304008) | The paper reports a population model for nadroparin with explicit numeric values for clearance (CL=23.0 mL/min) and central volume (V1=7.0 L) in the abstract. |
+| `Laporte_1999.pdf` | Laporte S et al., Population pharmacokinetic of nadropari…, European journal of pharmac… (1999) | popPK | 10 | [10.1016/s0928-0987(98)00064-5](https://doi.org/10.1016/s0928-0987(98)00064-5) | [10210734](https://pubmed.ncbi.nlm.nih.gov/10210734) | The paper reports a population PK model for nadroparin in children with explicit numeric formulas for clearance and volume of distribution. |
+| `Romano_2023.pdf` | Romano LGR et al., Population pharmacokinetics of nadropar…, British journal of clinical… (2023) | popPK | 10 | [10.1111/bcp.15634](https://doi.org/10.1111/bcp.15634) | [36495312](https://pubmed.ncbi.nlm.nih.gov/36495312) | The paper describes a population PK model for nadroparin in humans, but the specific numeric parameter values (e.g., typical CL, V, ka) are not present in the provided abstract text. |
+| `Diepstraten_2015.pdf` | Diepstraten J et al., Population pharmacodynamic model for lo…, European journal of clinica… (2015) | popPK | 9 | [10.1007/s00228-014-1760-4](https://doi.org/10.1007/s00228-014-1760-4) | [25304008](https://pubmed.ncbi.nlm.nih.gov/25304008) | The paper reports a population model for nadroparin with specific numeric values for clearance (CL) and central volume of distribution (V1) derived from anti-Xa levels. |
 
-<sub>queue written 2026-09-05T20:20:53.458612+00:00</sub>
+<sub>queue written 2026-10-05T15:01:02.949369+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Romano_2023 | relevant | 10 | 2 | The paper is a population PK study of nadroparin, but the specific numeric parameter values (e.g., typical CL, V, ka) are not present in the provided abstract text. |
+| popPK | Romano_2023 | relevant | 10 | 2 | The paper describes a population PK model for nadroparin in humans, but the specific numeric parameter values (e.g., typical CL, V, ka) are not present in the provided abstract text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 20:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 15:01 UTC</sub>

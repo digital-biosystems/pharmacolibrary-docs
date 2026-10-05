@@ -18,17 +18,11 @@ Glycerol phenylbutyrate is used to treat inherited urea cycle disorders. It is a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:31 | 2:44 | 0/0/0 | 1/0/0 | 0/0/0 | 23,685/5,006 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 4/7 | 2/0 | 0 |
+| 2026-10-05 11:05 | 0:52 | 0/0/0 | 0/0/0 | 0/0/0 | 30,647/787 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 4/7 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.679). The first reading is what the record holds.">cross-check: disputed</span> | [Zhou_2026_VAS](drugs/drug_glycerol_phenylbutyrate/pd_Zhou_2026_VAS.md) | pain intensity ← gabapentin · delayed effect through an effect compartment | — | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
 ## ADME sites
 
@@ -60,16 +54,17 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Monteleone_2013.pdf` | Monteleone JP et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2013) | popPK | 10 | [10.1002/jcph.92](https://doi.org/10.1002/jcph.92) | [23775211](https://pubmed.ncbi.nlm.nih.gov/23775211) | The paper describes a population PK model for glycerol phenylbutyrate, but the specific numeric parameter values are not present in the provided evidence. |
+| `Monteleone_2013.pdf` | Monteleone JP et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2013) | popPK | 10 | [10.1002/jcph.92](https://doi.org/10.1002/jcph.92) | [23775211](https://pubmed.ncbi.nlm.nih.gov/23775211) | The paper describes a population PK model for glycerol phenylbutyrate, but the specific numeric parameter values are not present in the provided evidence text. |
+| `McGuire_2010.pdf` | McGuire BM et al., Pharmacology and safety of glycerol phe…, Hepatology (Baltimore, Md.) (2010) | popPK | 8 | [10.1002/hep.23589](https://doi.org/10.1002/hep.23589) | [20512995](https://pubmed.ncbi.nlm.nih.gov/20512995) | The study reports qualitative PK characteristics (delayed release, steady state time) and metabolite levels for glycerol phenylbutyrate in humans, but specific quantitative parameter values (CL, V, ka) are not present in the provided text. |
 | `Jung_2021.pdf` | Jung WJ et al., Dose Optimization of Vancomycin Using a…, Clinical therapeutics (2021) | pd | 5 | [10.1016/j.clinthera.2020.10.016](https://doi.org/10.1016/j.clinthera.2020.10.016) | [33358258](https://www.ncbi.nlm.nih.gov/pubmed/33358258) | metadata signals extractable PD data (Exposure-Response) |
 | `Greenberg_1996.pdf` | Greenberg JW et al., Influence of lipoteichoic acid structur…, Infection and immunity (1996) | pd | 4 | [10.1128/iai.64.8.3318-3325.1996](https://doi.org/10.1128/iai.64.8.3318-3325.1996) | [8757870](https://www.ncbi.nlm.nih.gov/pubmed/8757870) | metadata signals extractable PD data (IC50) |
 | `Zernig_1988.pdf` | Zernig G et al., The mitochondrial high-capacity low-aff…, European journal of pharmac… (1988) | pd | 4 | [10.1016/0014-2999(88)90472-4](https://doi.org/10.1016/0014-2999(88)90472-4) | [2853075](https://www.ncbi.nlm.nih.gov/pubmed/2853075) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T02:29:52.966229+00:00</sub>
+<sub>queue written 2026-10-05T11:05:15.569800+00:00</sub>
 
 ## Screened and excluded
 
@@ -87,11 +82,11 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Candel_2012 | not_relevant | 0 | 0 | The paper discusses daptomycin and other antibiotics for Gram-positive bacteria and does not mention glycerol phenylbutyrate or report any PD parameters. |
 | popPK | Chetter_2020 | irrelevant | 0 | 0 | The paper is a study on glycogen phosphorylase inhibitors (flavonoids) and does not involve glycerol phenylbutyrate or report any pharmacokinetic parameters for it. |
 | PD | Chetter_2020 | not_relevant | 0 | 0 | The paper studies synthetic flavonoid derivatives as glycogen phosphorylase inhibitors and does not mention glycerol phenylbutyrate or report any pharmacodynamic modeling for it. |
-| popPK | Fong_2025 | irrelevant | 0 | 0 | The paper is an in silico docking study targeting Cav3.1 channels, and glycerol phenylbutyrate is only mentioned as a ranked drug candidate without any pharmacokinetic parameter reporting. |
+| popPK | Fong_2025 | irrelevant | 0 | 0 | The paper is an in silico study focusing on montelukast and T-type calcium channels, with no mention of glycerol phenylbutyrate or its pharmacokinetics. |
 | PD | Fong_2025 | not_relevant | 0 | 0 | The paper focuses on in silico molecular docking and Monte Carlo simulations for montelukast targeting T-type calcium channels; it does not contain any pharmacodynamic or exposure-response data for glycerol phenylbutyrate. |
 | popPK | Greenberg_1996 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
 | PD | Greenberg_1996 | not_relevant | 0 | 0 | The paper discusses macrophage scavenger receptor recognition of lipoteichoic acid and does not mention glycerol phenylbutyrate or any pharmacodynamic modeling. |
-| popPK | Gross_2017 | irrelevant | 0 | 0 | The study focuses on efavirenz pharmacogenetics and treatment outcomes, not glycerol phenylbutyrate pharmacokinetics. |
+| popPK | Gross_2017 | irrelevant | 0 | 0 | The study focuses on efavirenz pharmacogenetics and HIV treatment outcomes, not glycerol phenylbutyrate pharmacokinetics. |
 | PD | Gross_2017 | not_relevant | 0 | 0 | The paper focuses on CYP2B6 genotypes and efavirenz treatment outcomes, containing no data or analysis regarding glycerol phenylbutyrate or its pharmacodynamics. |
 | popPK | Jung_2021 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
 | PD | Jung_2021 | not_relevant | 0 | 0 | The paper focuses on vancomycin, not glycerol phenylbutyrate. |
@@ -103,7 +98,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Kosmopoulou_2004 | not_relevant | 0 | 0 | The paper studies the binding of indirubin-5-sulphonate, not glycerol phenylbutyrate, and reports enzyme inhibition kinetics (Ki/IC50) rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | popPK | Kun_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro binding assays of glycogen phosphorylase inhibitors, not the pharmacokinetics of glycerol phenylbutyrate. |
 | PD | Kun_2023 | not_relevant | 0 | 0 | The paper is a medicinal chemistry study on glycogen phosphorylase inhibitors and does not involve glycerol phenylbutyrate or any pharmacodynamic modeling. |
-| popPK | Longo_2021 | irrelevant | 2 | 0 | The study mentions PK analyses but only provides qualitative descriptions of metabolite stability and ratios, lacking specific quantitative disposition parameters (CL, V, ka) for glycerol phenylbutyrate. |
+| popPK | Longo_2021 | irrelevant | 2 | 0 | The study describes qualitative PK findings (hydrolysis, absorption, metabolism) but does not report quantitative disposition parameters (CL, V, ka, etc.) for glycerol phenylbutyrate or its metabolites in the provided text. |
 | PD | Longo_2021 | not_relevant | 2 | 1 | The paper reports PK parameters and clinical efficacy (ammonia reduction) but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., EC50, Emax) linking exposure to effect. |
 | popPK | Lung_1996 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on dynorphine analogues and contains no pharmacokinetic data for glycerol phenylbutyrate. |
 | PD | Lung_1996 | not_relevant | 0 | 0 | The paper reports in vitro binding and functional assay data (IC50) for dynorphine analogues, not pharmacodynamic exposure-response or dose-response relationships for glycerol phenylbutyrate. |
@@ -111,28 +106,28 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Mali_2019 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of vancomycin, not glycerol phenylbutyrate, and contains no pharmacodynamic or exposure-response analysis. |
 | popPK | Mathomes_2023 | irrelevant | 0 | 0 | The paper studies baicalein as a glycogen phosphorylase inhibitor and contains no pharmacokinetic data for glycerol phenylbutyrate. |
 | PD | Mathomes_2023 | not_relevant | 0 | 0 | The paper studies baicalein, not glycerol phenylbutyrate. |
-| popPK | McGuire_2010 | irrelevant | 2 | 0 | The paper describes qualitative pharmacokinetic characteristics (delayed release, steady state timing) and safety, but does not report quantitative disposition parameters (CL, V, ka) or a compartmental model for glycerol phenylbutyrate. |
+| popPK | McGuire_2010 | relevant | 8 | 2 | The study reports qualitative PK characteristics (delayed release, steady state time) and metabolite levels for glycerol phenylbutyrate in humans, but specific quantitative parameter values (CL, V, ka) are not present in the provided text. |
 | PD | McGuire_2010 | not_relevant | 2 | 1 | The paper reports PK parameters (peak levels, time to steady state) and qualitative comparisons of metabolite excretion, but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for glycerol phenylbutyrate. |
-| popPK | Monteleone_2013 | relevant | 10 | 0 | The paper describes a population PK model for glycerol phenylbutyrate, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Monteleone_2013 | relevant | 10 | 0 | The paper describes a population PK model for glycerol phenylbutyrate, but the specific numeric parameter values are not present in the provided evidence text. |
 | PD | Monteleone_2013 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling and dose simulations for exposure metrics (PAA, PBA, PAGN), without reporting any pharmacodynamic (PD) models, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Oikonomakos_2000 | irrelevant | 0 | 0 | The paper studies the mechanism of flavopiridol inhibition of glycogen phosphorylase and does not involve glycerol phenylbutyrate or pharmacokinetic parameters. |
 | PD | Oikonomakos_2000 | not_relevant | 0 | 0 | The paper studies flavopiridol, not glycerol phenylbutyrate, and reports in vitro enzyme kinetics (IC50) rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | popPK | Oikonomakos_2006 | irrelevant | 0 | 0 | The paper discusses iminosugars as inhibitors of glycogen phosphorylase and does not involve glycerol phenylbutyrate or pharmacokinetic parameters. |
 | PD | Oikonomakos_2006 | not_relevant | 0 | 0 | The paper discusses iminosugars as inhibitors of glycogen phosphorylase, not glycerol phenylbutyrate, and reports enzyme IC50s rather than drug PD parameters. |
-| popPK | Ramos-Guerra_2025 | irrelevant | 0 | 0 | The paper is a clinical study on immunotherapy response prediction in lung cancer and does not involve glycerol phenylbutyrate or pharmacokinetic parameters. |
+| popPK | Ramos-Guerra_2025 | irrelevant | 0 | 0 | The paper is a clinical study on immunotherapy response prediction in lung cancer and contains no pharmacokinetic data for glycerol phenylbutyrate. |
 | PD | Ramos-Guerra_2025 | not_relevant | 0 | 0 | The paper focuses on predicting immunotherapy response in NSCLC using peripheral blood biomarkers and does not involve glycerol phenylbutyrate or any pharmacodynamic modeling. |
-| popPK | Wang_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ornithine phenylacetate (L-OPA) and its metabolite phenylacetic acid (PAA), not glycerol phenylbutyrate, which is only mentioned as a comparator in the background. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ornithine phenylacetate (and its metabolites PAA/PAGN), not glycerol phenylbutyrate, which is only mentioned as a comparator in the background. |
 | PD | Wang_2021 | not_relevant | 3 | 2 | The paper analyzes PK and correlates exposure with adverse events but explicitly concludes there is no correlation, and does not report a fitted PD model or numeric PD parameters (Emax, EC50, etc.). |
-| popPK | Wang_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of l-ornithine phenylacetate (L-OPA), not glycerol phenylbutyrate, which is only mentioned as a comparator in the background. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of L-ornithine phenylacetate, not glycerol phenylbutyrate. |
 | PD | Wang_2022 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of l-ornithine phenylacetate (L-OPA), not glycerol phenylbutyrate, and explicitly states that ammonia (the PD marker) was omitted from the final model. |
-| PGx | Xu_2010 | not_relevant | 0 | 0 | The paper investigates hematopoietic stem cell transplantation outcomes and does not mention glycerol phenylbutyrate or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Xu_2010 | not_relevant | 0 | 0 | The paper compares stem cell transplant sources (PBSCT vs G-BM/G-PB) in leukemia patients and does not investigate pharmacogenomics or PK/PD of glycerol phenylbutyrate. |
 | popPK | Xu_2023 | irrelevant | 0 | 0 | The paper describes a computational method for antibody design and contains no pharmacokinetic data for glycerol phenylbutyrate. |
 | PD | Xu_2023 | not_relevant | 0 | 0 | The paper describes a computational method (AB-Gen) for antibody library design and contains no pharmacodynamic or exposure-response data for glycerol phenylbutyrate. |
 | popPK | Zamora-Díaz_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacological interaction of sulforaphane and gabapentin in a pain model and does not involve glycerol phenylbutyrate or report its pharmacokinetic parameters. |
 | PD | Zamora-Díaz_2025 | not_relevant | 0 | 0 | The paper studies sulforaphane and gabapentin, not glycerol phenylbutyrate. |
 | popPK | Zernig_1988 | irrelevant | 0 | 0 | The paper studies nitrendipine binding in mitochondria and does not involve glycerol phenylbutyrate or pharmacokinetic parameters. |
 | PD | Zernig_1988 | not_relevant | 0 | 0 | The paper investigates the regulation of a mitochondrial binding site by nucleotides and does not involve glycerol phenylbutyrate or any pharmacodynamic modeling of that drug. |
-| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of gabapentin (GBP), not glycerol phenylbutyrate. |
+| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of gabapentin, not glycerol phenylbutyrate. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -4,7 +4,7 @@
  "molar_masses": {
   "C_M1": 0.35583,
   "C_M2": 0.3078,
-  "C_central": 0.321822
+  "central.C": 0.321822
  },
  "note": "Values for the shared PK_3M_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observable_labels": {
@@ -13,7 +13,7 @@
   "C_central": "clopidogrel"
  },
  "observables": [
-  "C_central",
+  "central.C",
   "C_M1",
   "C_M2"
  ],
@@ -44,10 +44,8 @@
   "q1_m11": 0.0003085760000000001,
   "q1_m21": 0.0021600320000000005,
   "q21": 0.0002349166666666667,
-  "q23": 0.00016331388888888887,
-  "q32": 0.00016331388888888887,
-  "qm21_m22": 1.2433333333333332e-06,
-  "qm22_m21": 1.2433333333333332e-06
+  "qm21_m22": 0.00016331388888888887,
+  "qm22_m21": 0.00016331388888888887
  },
  "pgx": {
   "effects": {
@@ -121,14 +119,14 @@
   ]
  },
  "reference_peak_times": {
-  "C_M1": 2372.428774967463,
-  "C_M2": 2699.738135755836,
-  "C_central": 2597.194388777555
+  "C_M1": 2373.1107348060746,
+  "C_M2": 3374.640582796452,
+  "central.C": 2770.3406813627253
  },
  "reference_peaks": {
-  "C_M1": 0.00011455568731216878,
-  "C_M2": 0.0024632527095759596,
-  "C_central": 3.073872859776374e-06
+  "C_M1": 0.00011458370622370195,
+  "C_M2": 0.000756276897553151,
+  "central.C": 3.4105006939161183e-06
  },
  "stop_time": 86400.0,
  "template": "PK_3M_3C",

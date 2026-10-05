@@ -17,7 +17,7 @@ Pegzilarginase is an enzyme medicine used to treat hyperargininemia, a rare meta
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:50 | 0:41 | 0/0/0 | 0/0/0 | 0/0/0 | 1,300/246 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/2 | 0/0 | 0 |
+| 2026-10-05 11:21 | 0:43 | 0/0/0 | 0/0/0 | 0/0/0 | 25,621/466 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/3 | 1/0 | 0 |
 
 ## popPK records
 
@@ -41,29 +41,18 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 12 matched, 4 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Ghosh_2026.pdf` | Ghosh A et al., Efficacy and safety of pegzilarginase i…, EClinicalMedicine (2026) | popPK | 7 | [10.1016/j.eclinm.2026.104021](https://doi.org/10.1016/j.eclinm.2026.104021) | [42404437](https://pubmed.ncbi.nlm.nih.gov/42404437) | PK study of pegzilarginase as subject drug, but CL, V, AUC, and half-life values are only described qualitatively with no numeric parameter values in the evidence. |
-
-<sub>queue written 2026-09-30T02:50:49.328527+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ghosh_2026 | relevant | 7 | 2 | PK study of pegzilarginase as subject drug, but CL, V, AUC, and half-life values are only described qualitatively with no numeric parameter values in the evidence. |
 | PD | Ghosh_2026 | not_relevant | 3 | 2 | Reports PK and descriptive PD outcomes (pArg reduction, ornithine, GMFM) in n=3, but no concentration-effect or dose-response relationship or numeric PD parameters (Emax/EC50/slope) are stated or derivable. |
-| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 62 chars of text extracted (&lt; 400) |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
 | PD | unknown_2023 | not_relevant | 0 | 0 | Text is only a conference abstract listing (ESICM LIVES 2023) with no pegzilarginase PD data or parameters. |
-| popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 61 chars of text extracted (&lt; 400) |
+| popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
 | PD | unknown_2024 | not_relevant | 0 | 0 | Only a list of best abstracts with no PD or exposure-response content for pegzilarginase; no numeric PD parameters available. |
 
 ---

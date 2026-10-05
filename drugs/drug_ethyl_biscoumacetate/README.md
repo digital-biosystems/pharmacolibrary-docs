@@ -18,7 +18,7 @@ Ethyl biscoumacetate is a vitamin K antagonist that was used as an anticoagulant
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 22:09 | 4:28 | 0/0/0 | 0/0/0 | 0/0/0 | 29,498/1,680 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/3 | 4/0 | 0 |
+| 2026-10-05 15:54 | 0:10 | 0/0/0 | 0/0/0 | 0/0/0 | 3,802/186 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/3 | 4/0 | 0 |
 
 ## popPK records
 
@@ -50,13 +50,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Perlík_1994.pdf` | Perlík F et al., Pharmacokinetics of ethyl biscoumacetat…, International journal of cl… (1994) | popPK | 9 | not captured | [7874379](https://pubmed.ncbi.nlm.nih.gov/7874379) | The study reports quantitative PK parameters (half-life) for ethyl biscoumacetate in humans, but lacks other key disposition parameters like clearance or volume of distribution. |
+| `Copie_1993.pdf` | Copie X et al., [Effect of dimethicone on pharmacokinet…, Therapie (1993) | popPK | 8 | not captured | [8351679](https://pubmed.ncbi.nlm.nih.gov/8351679) | The study reports PK parameters for ethyl biscoumacetate in humans, but only Cmax values are explicitly provided in the text, while other quantitative parameters (CL, V, AUC) are mentioned as non-significant or implied without specific numeric values. |
 
-<sub>queue written 2026-09-05T22:09:11.236879+00:00</sub>
+<sub>queue written 2026-10-05T15:54:19.146484+00:00</sub>
 
 ## Screened and excluded
 
@@ -65,7 +66,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Au_2008 | irrelevant | 0 | 0 | The paper is a review of pharmacogenomics for 4-hydroxycoumarin anticoagulants (e.g., warfarin) and does not report quantitative pharmacokinetic parameters for ethyl_biscoumacetate. |
 | popPK | Breckenridge_1985 | irrelevant | 0 | 0 | The study investigates warfarin, difenacoum, and brodifacoum, not ethyl_biscoumacetate. |
 | popPK | Chen_2011 | irrelevant | 0 | 0 | The study focuses on the metabolism and nephrotoxicity of aristolochic acid I, and ethyl_biscoumacetate is not mentioned or studied. |
-| popPK | Copie_1993 | irrelevant | 2 | 1 | The study reports only peak concentration and qualitative statements about AUC, lacking the specific quantitative disposition parameters (CL, V, ka, half-life) required for extraction. |
+| popPK | Copie_1993 | relevant | 8 | 2 | The study reports PK parameters for ethyl biscoumacetate in humans, but only Cmax values are explicitly provided in the text, while other quantitative parameters (CL, V, AUC) are mentioned as non-significant or implied without specific numeric values. |
 | PD | Copie_1993 | not_relevant | 2 | 1 | The study reports only a comparison of mean PK/PD parameters between two conditions (with/without dimethicone) and finds no significant difference in PD; it does not provide a concentration-effect curve, Emax, EC50, or any numeric PD model parameters. |
 | popPK | Curto_2017 | irrelevant | 0 | 0 | The paper is a review on dental management of edoxaban and does not report pharmacokinetic parameters for ethyl_biscoumacetate. |
 | popPK | Curto_2017_2 | irrelevant | 0 | 0 | The paper is a review on dental management of novel oral anticoagulants (dabigatran, etc.) and does not report pharmacokinetic parameters for ethyl_biscoumacetate. |

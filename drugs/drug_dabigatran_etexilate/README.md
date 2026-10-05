@@ -14,17 +14,26 @@ Dabigatran etexilate is a direct thrombin inhibitor anticoagulant used to preven
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q20078502](https://www.wikidata.org/wiki/Q20078502) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dabigatran etexilate | parent | 627.733 | C34H41N7O5 | DrugBank | [6445226](https://pubchem.ncbi.nlm.nih.gov/compound/6445226) | Liu_2022 |
+| dabigatran | metabolite | 471.521 | C25H25N7O3 | PubChem | [216210](https://pubchem.ncbi.nlm.nih.gov/compound/216210) | Liu_2022 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-05 17:23 | 2:43 | 0/1/0 | 0/0/0 | 0/0/0 | 21,298/5,144 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 14:08 | 2:13 | 0/0/1 | 0/0/0 | 0/0/0 | 32,480/6,226 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | — | 1-compartment (no model) | 0 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | — | 1-compartment (no model) | 1 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
 
 ## ADME sites
 
@@ -57,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 19 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -66,19 +75,19 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Röshammar_2021.pdf` | Röshammar D et al., Pharmacokinetic modeling and simulation…, Journal of thrombosis and h… (2021) | popPK | 10 | [10.1111/jth.15277](https://doi.org/10.1111/jth.15277) | [33636042](https://pubmed.ncbi.nlm.nih.gov/33636042) | The paper describes a population PK model for dabigatran etexilate, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Ollier_2015.pdf` | Ollier E et al., In vitro and in vivo evaluation of drug…, Fundamental & clinical phar… (2015) | popPK | 9 | [10.1111/fcp.12154](https://doi.org/10.1111/fcp.12154) | [26392328](https://pubmed.ncbi.nlm.nih.gov/26392328) | The paper describes a population PK study for dabigatran etexilate, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Röshammar_2021.pdf` | Röshammar D et al., Pharmacokinetic modeling and simulation…, Journal of thrombosis and h… (2021) | popPK | 10 | [10.1111/jth.15277](https://doi.org/10.1111/jth.15277) | [33636042](https://pubmed.ncbi.nlm.nih.gov/33636042) | The paper describes a population PK model for dabigatran etexilate in children, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Ollier_2015.pdf` | Ollier E et al., In vitro and in vivo evaluation of drug…, Fundamental & clinical phar… (2015) | popPK | 9 | [10.1111/fcp.12154](https://doi.org/10.1111/fcp.12154) | [26392328](https://pubmed.ncbi.nlm.nih.gov/26392328) | The study reports a population PK model for dabigatran etexilate in humans, but the specific numeric parameter values are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-06T16:28:40.989655+00:00</sub>
+<sub>queue written 2026-10-05T14:06:37.086363+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Halton_2016 | irrelevant | 2 | 0 | The study reports only a single dose-normalized trough concentration and validates an existing adult model, without providing original quantitative PK parameters (CL, V, ka) for dabigatran etexilate. |
+| popPK | Halton_2016 | irrelevant | 2 | 0 | The study reports only a single dose-normalized trough concentration and validates an existing adult model, without providing original quantitative PK parameters (CL, V, ka) for the adolescent population. |
 | popPK | Liu_2024 | irrelevant | 2 | 0 | The study is a modeling/simulation paper that retrieves PK parameters from previously published literature rather than reporting original quantitative disposition parameters for dabigatran etexilate in the provided evidence. |
-| popPK | Ollier_2015 | relevant | 9 | 0 | The paper describes a population PK study for dabigatran etexilate, but the specific numeric parameter values are not present in the provided evidence text. |
-| popPK | Röshammar_2021 | relevant | 10 | 0 | The paper describes a population PK model for dabigatran etexilate, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Ollier_2015 | relevant | 9 | 0 | The study reports a population PK model for dabigatran etexilate in humans, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Röshammar_2021 | relevant | 10 | 0 | The paper describes a population PK model for dabigatran etexilate in children, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 17:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 14:06 UTC</sub>

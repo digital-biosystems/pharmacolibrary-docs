@@ -17,11 +17,17 @@ Lepirudin is a direct thrombin inhibitor that was used as an anticoagulant in co
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 05:14 | 2:52 | 0/0/0 | 0/0/0 | 0/0/0 | 17,947/1,464 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/4 | 2/0 | 0 |
+| 2026-10-05 14:55 | 0:30 | 0/0/0 | 0/1/0 | 0/0/0 | 13,889/571 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/4 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Fenyvesi_2003_ECT](drugs/drug_lepirudin/pd_Fenyvesi_2003_ECT.md) | ecarin clotting time ← lepirudin · direct linear effect | — | Fenyvesi T et al., Effects of lepirudin, argatroban and me…, Thrombosis research (2003) | [10.1016/j.thromres.2003.08.013](https://doi.org/10.1016/j.thromres.2003.08.013) |
 
 ## ADME sites
 
@@ -58,7 +64,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Petros_2006.pdf` | Petros S et al., The effect of different anticoagulants…, Blood coagulation & fibrino… (2006) | pd | 4 | [10.1097/01.mbc.0000214708.73374.ce](https://doi.org/10.1097/01.mbc.0000214708.73374.ce) | [16479195](https://www.ncbi.nlm.nih.gov/pubmed/16479195) | metadata signals extractable PD data (IC50) |
 | `Sun_2022.pdf` | Sun Y et al., Molecular dynamic and pharmacological s…, British journal of pharmaco… (2022) | pd | 4 | [10.1111/bph.15816](https://doi.org/10.1111/bph.15816) | [35135035](https://www.ncbi.nlm.nih.gov/pubmed/35135035) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-06T05:14:03.908482+00:00</sub>
+<sub>queue written 2026-10-05T14:55:32.600942+00:00</sub>
 
 ## Screened and excluded
 
@@ -72,7 +78,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Bauer_2006 | not_relevant | 1 | 0 | The text is a general review of new anticoagulants that qualitatively mentions predictable dose-response relationships but provides no specific numeric PD parameters or exposure-response data for lepirudin. |
 | popPK | Cruz-González_2012 | irrelevant | 0 | 0 | The paper is a review of argatroban, not lepirudin, and lepirudin is only mentioned as a comparator agent without any quantitative PK parameters provided. |
 | PD | Cruz-González_2012 | not_relevant | 1 | 0 | The paper is a review of argatroban (not lepirudin) and only qualitatively mentions pharmacodynamic properties without providing numeric PD parameters or exposure-response data. |
-| popPK | Eaton_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dabigatran, not lepirudin, which is only mentioned as a comparator in the discussion. |
+| popPK | Eaton_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of dabigatran and idarucizumab, not lepirudin. |
 | PD | Eaton_2026 | not_relevant | 0 | 0 | not captured |
 | popPK | Exner_2019 | irrelevant | 0 | 0 | The study is an in-vitro investigation of the binding specificity of an activated charcoal product, not a pharmacokinetic study reporting disposition parameters for lepirudin. |
 | PD | Exner_2019 | not_relevant | 0 | 0 | The study investigates the binding specificity of an activated charcoal product on anticoagulants in vitro, not the pharmacodynamic exposure-response relationship of lepirudin itself. |
@@ -102,12 +108,12 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Morishima_2013 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of antithrombotic and hemorrhagic effects where lepirudin is a comparator agent, and no pharmacokinetic parameters are reported. |
 | popPK | Nowak_1997 | irrelevant | 1 | 0 | The paper is a clinical case report describing the use of r-hirudin (lepirudin) for anticoagulation during hemodialysis, reporting only dosing and therapeutic blood levels, but lacking any quantitative pharmacokinetic parameters (CL, V, ka, etc.) or compartmental modeling. |
 | popPK | Petros_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thrombin generation and does not report pharmacokinetic parameters for lepirudin. |
-| popPK | Petruk_2023 | irrelevant | 0 | 0 | The paper describes the development and biophysical characterization of a stapled peptide (sHVF18) for inflammation, not the pharmacokinetics of lepirudin. |
+| popPK | Petruk_2023 | irrelevant | 0 | 0 | The paper describes a novel peptide compound (sHVF18) targeting TLR/CD14 and does not involve lepirudin or report its pharmacokinetic parameters. |
 | PD | Petruk_2023 | not_relevant | 0 | 0 | The paper studies the peptide sHVF18, not lepirudin, and does not report any pharmacodynamic parameters for lepirudin. |
 | popPK | Redwan_2009 | irrelevant | 0 | 0 | The paper is a review of animal-derived pharmaceutical proteins and does not contain any pharmacokinetic data or parameters for lepirudin. |
-| popPK | Sakor_2023 | irrelevant | 0 | 0 | The paper is a computational study on knowledge graphs for drug-drug interactions in COVID-19 and does not report any pharmacokinetic parameters for lepirudin. |
+| popPK | Sakor_2023 | irrelevant | 0 | 0 | The paper describes a knowledge graph framework for COVID-19 drug interactions and does not contain any pharmacokinetic data for lepirudin. |
 | PD | Sakor_2023 | not_relevant | 0 | 0 | The paper is a computational framework for constructing a knowledge graph of drug-drug interactions and does not report any pharmacokinetic or pharmacodynamic data, models, or numeric parameters for lepirudin. |
-| popPK | Sanhajariya_2020 | irrelevant | 0 | 0 | The paper is an in silico simulation study on snake venom pharmacokinetics and does not involve lepirudin. |
+| popPK | Sanhajariya_2020 | irrelevant | 0 | 0 | The study is an in silico simulation of snake venom pharmacokinetics and does not involve lepirudin. |
 | PD | Sanhajariya_2020 | not_relevant | 0 | 0 | The paper is an in silico pharmacokinetic (PK) simulation study of snake venom components and does not involve lepirudin or report any pharmacodynamic (PD) or exposure-response relationships. |
 | popPK | Seybert_2006 | irrelevant | 0 | 0 | The paper is a review discussing the clinical use of bivalirudin for HIT, with lepirudin mentioned only as a comparator, and no quantitative pharmacokinetic parameters are reported. |
 | popPK | Sun_2022 | irrelevant | 0 | 0 | The study focuses on molecular dynamics and pharmacological effects of hirudin variants, not the pharmacokinetics of lepirudin. |

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/&quot;},{&quot;label&quot;:&quot;Khayat_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fibrinogen, human — `FibrinogenHuman_Khayat2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,9 +21,11 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fibrinogen human: Cmax 1.3 g/l, t1/2z 60.6 h, V 5 L/kg, kabs 1.22 /h, tlag 1.23 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fibrinogen concentrate, the second reading fibrinogen_human; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of incremental in vivo recovery: this record has none, the second reading 1.86. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.479043+00:00) predates the upstream re-run (2026-10-05 19:06:03.322362+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `fibrinogen concentrate`, measured `fibrinogen`.
 
@@ -32,10 +34,10 @@ Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation 
   ·  DOI: [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182)
 
 ## Model component
-<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="false" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="true" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -48,7 +50,6 @@ Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation 
 | half-life ( t1/2 ) | `Q57` · t1/2z | 60.6 | h | 218160.0 | [h] | not captured | llm (0.6) | Khayat_2023:abstract | — | not captured |
 | Vd threshold | `Q61` · V | 5.0 | L/kg | 0.35000000000000003 | L | not captured | review_gapfill (0.7) | Hernández-Gago_2026:review | — | not captured |
 | absorption rate constant | `Q49` · kabs | 1.22 | /h | 0.0003388888888888889 | 1/h | not captured | review_gapfill (0.7) | Bandín-Vilar_2022:review | — | not captured |
-| absorption lag time (ALAG1) | `Q83` · tlag | 1.23 | h | 4428.0 | h | not captured | review_gapfill (0.7) | Jia_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,37 +61,32 @@ Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'incremental in vivo recovery (IVR)' — extend the ontology if this is a real PK parameter (source ['Khayat_2023:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fibrinogen
+- molar mass: none found for 'fibrinogen_human' — its concentrations stay mass-only
+- molar mass: none found for 'fibrinogen' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of CL from Ma_2026: its label names a different analyte ('colistin') — 'The clearance (CL) value for colistin'
 - gap-filled Q61 (V) from Hernández-Gago_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Bandín-Vilar_2022's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Jia_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Khayat_2023_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption lag time]` | 1.23 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 1.22 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 1.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` | 60.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd threshold]` | 5.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | fibrinogen concentrate | fibrinogen_human | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fibrinogen | fibrinogen_human | mismatch |
+| `gpt-oss:120b` | `parameters[incremental in vivo recovery]` | not captured | 1.86 | only_one_extracted |
 
 </details>
 
@@ -110,7 +106,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bandín-Vilar_2022:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Khayat_2023:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hernández-Gago_2026:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jia_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 350 L | not captured | not captured | ['Hernández-Gago_2026:review'] |
 
@@ -147,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:06 UTC</sub>

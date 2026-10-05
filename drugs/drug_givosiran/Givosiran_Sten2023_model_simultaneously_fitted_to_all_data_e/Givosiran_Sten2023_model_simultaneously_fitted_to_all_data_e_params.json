@@ -1,0 +1,34 @@
+{
+ "dose_source": "paper",
+ "model_id": "Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  25.0,
+  300.0
+ ],
+ "parameters": {
+  "Cl": 6.6111111111111115e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002585714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "k21": 6.260364842454395e-07,
+  "ka": 4.361111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662059
+ },
+ "reference_peaks": {
+  "central.C": 1.0793201056291074e-09
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

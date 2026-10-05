@@ -17,15 +17,15 @@ Avalglucosidase alfa is an enzyme medication used to treat glycogen storage dise
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 02:22 | 8:13 | 0/3/0 | 0/0/0 | 0/0/0 | 108,896/31,936 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 2/1 | 0 |
+| 2026-10-05 11:11 | 12:01 | 0/3/0 | 0/0/0 | 0/0/0 | 249,454/33,603 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 2/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_20_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_20_mg_kg.md) | — | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_40_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_40_mg_kg.md) | — | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_estimate_cv](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv.md) | — | 2-compartment (no model) | 8 (+3 cov.) | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_20_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_20_mg_kg.md) | — | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_40_mg_kg](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_40_mg_kg.md) | — | 1-compartment (no model) | 0 | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tiraboschi_2023_estimate_cv](drugs/drug_avalglucosidase_alfa/AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv.md) | — | 2-compartment (no model) | 8 (+3 cov.) | Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09874-8](https://doi.org/10.1007/s10928-023-09874-8) |
 
 ## ADME sites
 
@@ -46,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,9 +55,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Tuffal_2023.pdf` | Tuffal G et al., Population Pharmacokinetic Modeling and…, Therapeutic drug monitoring (2023) | popPK | 10 | [10.1097/FTD.0000000000001086](https://doi.org/10.1097/FTD.0000000000001086) | [37556417](https://pubmed.ncbi.nlm.nih.gov/37556417) | The paper describes a population PK model for avalglucosidase alfa, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence, likely residing in tables or figures not included. |
+| `Tuffal_2023.pdf` | Tuffal G et al., Population Pharmacokinetic Modeling and…, Therapeutic drug monitoring (2023) | popPK | 10 | [10.1097/FTD.0000000000001086](https://doi.org/10.1097/FTD.0000000000001086) | [37556417](https://pubmed.ncbi.nlm.nih.gov/37556417) | The paper describes a population PK model for avalglucosidase alfa in humans, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence, likely residing in tables or figures not included. |
 
-<sub>queue written 2026-09-30T02:13:54.946526+00:00</sub>
+<sub>queue written 2026-10-05T10:59:41.562916+00:00</sub>
 
 ## Screened and excluded
 
@@ -65,8 +65,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | PD | Anding_2023 | not_relevant | 1 | 0 | The paper is a preclinical study in mice focusing on the mechanism of M6P receptor binding and the effect of miglustat on enzyme stability/activity, but it does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., EC50, Emax) for avalglucosidase alfa. |
 | popPK | Mendelsohn_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting functional and respiratory outcomes (FVC, 6MWT) rather than pharmacokinetic parameters (CL, V, t1/2) for avalglucosidase alfa. |
-| PGx | Schoser_2026 | not_relevant | 0 | 0 | The paper is a position statement defining clinical therapeutic corridors for Pompe disease ERT and does not report pharmacogenomic effects on PK/PD parameters. |
-| popPK | Tuffal_2023 | relevant | 10 | 2 | The paper describes a population PK model for avalglucosidase alfa, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence, likely residing in tables or figures not included. |
+| PGx | Schoser_2026 | not_relevant | 0 | 0 | The paper defines clinical therapeutic stability thresholds for Pompe disease treatments but does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | Tuffal_2023 | relevant | 10 | 2 | The paper describes a population PK model for avalglucosidase alfa in humans, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence, likely residing in tables or figures not included. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 01:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 10:59 UTC</sub>

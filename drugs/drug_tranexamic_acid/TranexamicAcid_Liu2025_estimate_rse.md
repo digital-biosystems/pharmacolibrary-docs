@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Liu_2025 \u00b7 estimate_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_original_dataset&quot;,&quot;label&quot;:&quot;Gilliot_2022_original_dataset&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TranexamicAcid_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Li2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TranexamicAcid_Gilliot2022_reference&quot;,&quot;label&quot;:&quot;Gilliot_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tranexamic acid — `TranexamicAcid_Liu2025_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record lists Q (labelled CL2, L/h) without a value, so the peripheral compartment has no connection to the central compartment and the structure check flagged an unreachable compartment. The remaining parameters are present: CL = 4.7 L/h, V1 = 4.9 L, V2 = 11.1 L, and a separate CL2 typical value of 17.0 L/h. Relative standard errors for CL, Q, V1 and V2 were not recorded in this record, though a second reader reported 6.89%, 21.36%, 9.86% and 6.83% respectively; the second reader otherwise agreed on the analyte being tranexamic acid. Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:01.146804+00:00) predates the upstream re-run (2026-10-05 17:02:25.932126+00:00). Current validate status: `rejected`.
 
 ## Citation
 Liu Y et al., Population Pharmacokinetics of Tranexam…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S493485](https://doi.org/10.2147/DDDT.S493485)
 
 ## Model component
-<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_estimate_rse" status="rejected" stale="false" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_estimate_rse" status="rejected" stale="true" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -42,10 +44,10 @@ Liu Y et al., Population Pharmacokinetics of Tranexam…, Drug design, developme
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL1 (L/h) | `Q22` · CL | 4.7 | L/h | 1.3055555555555556e-06 | [l] / [h] | not captured | llm (0.6) | Liu_2025_table_4:row0:col2 | — | not captured |
-| V1 (L) | `Q63` · V1 | 4.9 | L | 0.004900000000000001 | [l] | not captured | exact (1.0) | Liu_2025_table_4:row2:col2 | — | not captured |
-| V2 (L) | `Q64` · V2 | 11.1 | L | 0.0111 | [l] | not captured | exact (1.0) | Liu_2025_table_4:row3:col2 | — | not captured |
-| CL2 | `Q900` · CL2 | 17.0 | L/h | 4.722222222222222e-06 | not captured | not captured | not captured (not captured) | Liu_2025_table_4:row1:col2 | — | not captured |
+| CL1 (L/h) | `Q22` · CL | 4.7 | L/h | 1.3055555555555556e-06 | [l] / [h] | 6.89 | llm (0.6) | Liu_2025_table_4:row0:col2 | — | not captured |
+| V1 (L) | `Q63` · V1 | 4.9 | L | 0.004900000000000001 | [l] | 9.86 | exact (1.0) | Liu_2025_table_4:row2:col2 | — | not captured |
+| V2 (L) | `Q64` · V2 | 11.1 | L | 0.0111 | [l] | 6.83 | exact (1.0) | Liu_2025_table_4:row3:col2 | — | not captured |
+| CL2 | `Q900` · CL2 | 17.0 | L/h | 4.722222222222222e-06 | not captured | 21.36 | not captured (not captured) | Liu_2025_table_4:row1:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,7 +66,7 @@ Liu Y et al., Population Pharmacokinetics of Tranexam…, Drug design, developme
 - bound model equation to Q30 (Q): CL2 = CL2 typical * (1+0.75*Sex)CL1=CL1 typical * (Age/55)^0 75
 - model equation 'CL1 = CL1 typical * (BW/70)^0.75CL2=CL2 typical * (BW/70)^0.75V1= V1 typical * (BW/70)^1V2= V2 typical * (BW/70)^1' not bound — neither LHS nor base term 'CL1' linked to an ontology parameter
 - Q30 (Q) is equation-defined: value moved to equation-variable 'CL2 (L/h)'; equation kept verbatim
-- population split: 'estimate (% rse)' subgroup of Liu_2025 (paper reports 3 populations: covariate effect, estimate (% rse), the final model)
+- population split: 'estimate (% rse)' subgroup of Liu_2025 (paper reports 2 populations: estimate (% rse), the final model)
 
 **Extraction notes:**
 - unparsed cell Liu_2025_table_4:row0:col3 = '0.28 (37) (0.03)'
@@ -84,18 +86,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl1].rse_percent` | not captured | 6.89 | mismatch |
-| `gpt-oss:120b` | `parameters[cl2].rse_percent` | not captured | 21.36 | mismatch |
-| `gpt-oss:120b` | `parameters[v1].rse_percent` | not captured | 9.86 | mismatch |
-| `gpt-oss:120b` | `parameters[v2].rse_percent` | not captured | 6.83 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | tranexamic acid | tranexamic_acid | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | tranexamic acid | tranexamic_acid | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | tranexamic acid | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | tranexamic acid | unknown | mismatch |
 
 </details>
 
@@ -145,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-06 03:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 17:02 UTC</sub>

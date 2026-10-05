@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;edoxaban&quot;,&quot;href&quot;:&quot;drugs/drug_edoxaban/&quot;},{&quot;label&quot;:&quot;Zou_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Edoxaban_Zou2025_reference&quot;,&quot;label&quot;:&quot;Zou_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_edoxaban/Edoxaban_Zou2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Edoxaban_Edwina2025_reference&quot;,&quot;label&quot;:&quot;Edwina_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_edoxaban/Edoxaban_Edwina2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # edoxaban — `Edoxaban_Zou2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -24,12 +25,14 @@ Although the paper reports edoxaban values such as CL/F 42.87 L/h, Ka 3.71 1/h, 
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.285084+00:00) predates the upstream re-run (2026-10-05 14:43:16.893362+00:00). Current validate status: `extracted`.
+
 ## Citation
 Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248)
 
 ## Model component
-<dbs-pgx drug="edoxaban" model-id="Edoxaban_Zou2025_reference" status="model_quarantined" stale="false" population="pediatric patients" measured-compound="edoxaban" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="edoxaban" model-id="Edoxaban_Zou2025_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="edoxaban" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.
@@ -37,16 +40,14 @@ Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics &
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Apparent clearance, CL/F (L/h) a | `Q27` · CL/F | 42.87 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | psp413248-tbl-0001:row1:col1 | — | not captured |
-| Absorption rate constant, Ka (1/h) | `Q49` · kabs | 3.71 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | psp413248-tbl-0001:row2:col1 | — | not captured |
+| Apparent clearance, CL/F (L/h) a | `Q27` · CL/F | 42.87 | L/h | 1.1908333333333333e-05 | L/h | not captured | llm_confirmed (0.6) | psp413248-tbl-0001:row1:col1 | — | not captured |
+| Absorption rate constant, Ka (1/h) | `Q49` · kabs | 3.71 | 1/h | 0.0010305555555555556 | 1/h | not captured | llm_confirmed (0.6) | psp413248-tbl-0001:row2:col1 | — | not captured |
 | Apparent central compartment volume, Vc/F (L) | `Q290` · V1/F | 261 | L | 0.261 | [l] | not captured | llm_corrected (0.6) | psp413248-tbl-0001:row3:col1 | — | not captured |
 | Apparent inter‐compartmental clearance, Q/F (L/h) | `Q69` · Q/F | 8.59 | L/h | 2.3861111111111113e-06 | [l] / [h] | not captured | llm_corrected (0.6) | psp413248-tbl-0001:row4:col1 | — | not captured |
 | Apparent peripheral compartment volume, Vp/F (L) | `Q82` · V2/F | 343.5 | L | 0.3435 | [l] | not captured | llm_corrected (0.6) | psp413248-tbl-0001:row5:col1 | — | not captured |
-| Transit rate constant, Ktr (1/h) | `Q306` · ktr | 47.5 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | psp413248-tbl-0001:row6:col1 | — | not captured |
+| Transit rate constant, Ktr (1/h) | `Q306` · ktr | 47.5 | 1/h | 0.013194444444444444 | 1/h | not captured | llm_confirmed (0.6) | psp413248-tbl-0001:row6:col1 | — | not captured |
 | theta_q22_egfr | `Q900` · theta_q22_egfr | 0.268 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413248-tbl-0001:row10:col1 | — | not captured |
 
 <details class="legend">
@@ -61,13 +62,19 @@ Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics &
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped PD-category row 'Hill coefficient of maturation function, HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp413248-tbl-0001:row8:col1'])
 - dropped unlinked row (NIL): 'Post‐menstrual age (PMA) at half max of the maturation function, TM50' — extend the ontology if this is a real PK parameter (source ['psp413248-tbl-0001:row9:col1'])
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Apparent clearance, CL/F (L/h) a' → L/h (from the paper text: "The paper text states: 'the typical value for systemic CL/F was 42.9 L/h' and the abstract mentions 'clearance ... was e")
+- implicit units: 'Absorption rate constant, Ka (1/h)' → 1/h (from the paper text: "The paper text states: 'Ka was 3.71 h−1'.")
+- implicit units: 'Transit rate constant, Ktr (1/h)' → 1/h (from the paper text: "The paper text states: 'Ktr were estimated as 15 and 47.5 h−1, respectively'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=edoxaban
-- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -89,14 +96,15 @@ Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics &
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row1:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413248-tbl-0001:row3:col1'] |
+| C5_dimension_Q306 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row2:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row4:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413248-tbl-0001:row5:col1'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row1:col1'] |
-| C5_unit_missing_Q306 | fail | 1 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row6:col1'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['psp413248-tbl-0001:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 42.9 L/h | not captured | not captured | ['psp413248-tbl-0001:row1:col1'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 261 L | not captured | not captured | ['psp413248-tbl-0001:row3:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 344 L | not captured | not captured | ['psp413248-tbl-0001:row5:col1'] |
 
@@ -131,21 +139,26 @@ Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics &
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_modelica.zip" download>Edoxaban_Zou2025_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_fmi.zip" download>Edoxaban_Zou2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_matlab.zip" download>Edoxaban_Zou2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_matlab_simbio.zip" download>Edoxaban_Zou2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_sbml.zip" download>Edoxaban_Zou2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_cellml.zip" download>Edoxaban_Zou2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference.svg" alt="Edoxaban_Zou2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 3.71 /h, F 1). Doses in the paper: 30, 60 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_edoxaban/Edoxaban_Zou2025_reference/Edoxaban_Zou2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Edoxaban_Zou2025_reference_params.json` · controls `Edoxaban_Zou2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 20:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 14:43 UTC</sub>

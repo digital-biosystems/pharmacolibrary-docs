@@ -18,7 +18,7 @@ Limaprost is a vasodilator compound classified as an antiplatelet (antithromboti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 05:14 | 0:51 | 0/0/0 | 0/0/0 | 0/0/0 | 2,137/435 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 3/7 | 9/1 | 0 |
+| 2026-10-05 14:56 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 5,577/273 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 3/7 | 9/1 | 0 |
 
 ## popPK records
 
@@ -52,10 +52,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Park_2010.pdf` | Park YS et al., Pharmacokinetic characteristics of a va…, Clinical and applied thromb… (2010) | popPK | 10 | [10.1177/1076029609334125](https://doi.org/10.1177/1076029609334125) | [19825922](https://pubmed.ncbi.nlm.nih.gov/19825922) | The paper reports quantitative pharmacokinetic parameters (CL, T1/2, AUC, etc.) for limaprost in healthy volunteers, with all numeric values explicitly present in the text. |
-| `Chen_2015.pdf` | Chen H et al., Single- and multiple-dose pharmacokinet…, Clinical drug investigation (2015) | popPK | 8 | [10.1007/s40261-014-0265-3](https://doi.org/10.1007/s40261-014-0265-3) | [25586152](https://pubmed.ncbi.nlm.nih.gov/25586152) | The study reports quantitative non-compartmental PK parameters (tmax, t1/2, Cmax, AUC) for limaprost in humans, with values explicitly present in the text. |
+| `Park_2010.pdf` | Park YS et al., Pharmacokinetic characteristics of a va…, Clinical and applied thromb… (2010) | popPK | 10 | [10.1177/1076029609334125](https://doi.org/10.1177/1076029609334125) | [19825922](https://pubmed.ncbi.nlm.nih.gov/19825922) | The study reports quantitative pharmacokinetic parameters (CL, T1/2, AUC, etc.) for limaprost in human volunteers, with all values explicitly listed in the text. |
+| `Chen_2015.pdf` | Chen H et al., Single- and multiple-dose pharmacokinet…, Clinical drug investigation (2015) | popPK | 8 | [10.1007/s40261-014-0265-3](https://doi.org/10.1007/s40261-014-0265-3) | [25586152](https://pubmed.ncbi.nlm.nih.gov/25586152) | The study reports quantitative PK parameters (tmax, t1/2, Cmax, AUC) for limaprost in humans, though specific clearance (CL) and volume (V) values are not explicitly listed in the text. |
 
-<sub>queue written 2026-09-06T05:14:56.066566+00:00</sub>
+<sub>queue written 2026-10-05T14:55:58.392461+00:00</sub>
 
 ## Screened and excluded
 
@@ -78,7 +78,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Meng_2024 | irrelevant | 2 | 0 | The paper describes a bioanalytical method for limaprost quantification and mentions its use in a PK study, but it does not report any quantitative pharmacokinetic parameter values (e.g., CL, V, t1/2) in the provided evidence. |
 | popPK | Murai_1989 | irrelevant | 0 | 0 | The evidence contains only the title and no quantitative pharmacokinetic parameters or data for limaprost. |
 | popPK | Murata_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of NGF expression and does not report any pharmacokinetic parameters for limaprost. |
-| popPK | Nakade_2008 | relevant | 4 | 5 | The study reports standard PK parameters (AUC, Cmax, t1/2) for limaprost, but it is a bioequivalence study rather than a population PK study, and specific values for clearance (CL) or volume (V) are not explicitly listed in the text. |
+| popPK | Nakade_2008 | relevant | 4 | 5 | The study reports standard non-compartmental PK parameters (AUC, Cmax, t1/2) for limaprost in humans, but lacks the specific compartmental or population PK parameters (CL, V, Q, ka) required for high-relevance extraction. |
 | popPK | Park_2024 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing pain outcomes, not a pharmacokinetic study, and contains no PK parameters for limaprost. |
 | popPK | Saito_1994 | irrelevant | 0 | 0 | The study focuses on the physiological effect of limaprost on peripheral skin temperature and does not report any pharmacokinetic parameters. |
 | popPK | Sato_1997 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for erectile dysfunction and does not report any pharmacokinetic parameters for limaprost. |

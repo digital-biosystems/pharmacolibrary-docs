@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;aminocaproic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminocaproicAcid_Ross2007_reference&quot;,&quot;label&quot;:&quot;Ross_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminocaproicAcid_Ross2007_reference&quot;,&quot;label&quot;:&quot;Ross_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AminocaproicAcid_Stricker2013_reference&quot;,&quot;label&quot;:&quot;Stricker_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # aminocaproic acid
 
@@ -15,17 +15,28 @@ Aminocaproic acid is an antifibrinolytic medicine used to treat or prevent bleed
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q255968](https://www.wikidata.org/wiki/Q255968) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| aminocaproic_acid (epsilon-aminocaproic acid) | metabolite | 131.173 | C6H13NO2 | DrugBank | [564](https://pubchem.ncbi.nlm.nih.gov/compound/564) | Eaton_2015, Stricker_2013, Stricker_2015 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 02:43 | 2:27 | 1/0/0 | 0/0/0 | 0/0/0 | 28,402/4,533 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-05 16:34 | 5:51 | 2/0/2 | 0/0/0 | 0/0/0 | 62,176/22,139 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.812). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span> | [Stricker_2013_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2013_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Stricker PA et al., Population pharmacokinetics of epsilon-…, British journal of anaesthe… (2013) | [10.1093/bja/aes507](https://doi.org/10.1093/bja/aes507) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Eaton_2015_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Eaton2015_reference.md) | — | 1-compartment (no model) | 1 | Eaton MP et al., Pharmacokinetics of ε-Aminocaproic Acid…, Anesthesiology (2015) | [10.1097/ALN.0000000000000616](https://doi.org/10.1097/ALN.0000000000000616) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Stricker_2015_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2015_reference.md) | — | 2-compartment (no model) | 4 | Stricker PA et al., Population pharmacokinetics of ϵ-aminoc…, British journal of anaesthe… (2015) | [10.1093/bja/aeu459](https://doi.org/10.1093/bja/aeu459) |
 
 ## ADME sites
 
@@ -50,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 2  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -59,23 +70,23 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Eaton_2015.pdf` | Eaton MP et al., Pharmacokinetics of ε-Aminocaproic Acid…, Anesthesiology (2015) | popPK | 10 | [10.1097/ALN.0000000000000616](https://doi.org/10.1097/ALN.0000000000000616) | [25723765](https://pubmed.ncbi.nlm.nih.gov/25723765) | The paper reports a population PK model for aminocaproic acid in neonates with a specific quantitative clearance value (5.07 l/h) and dosing parameters derived from the model. |
-| `Ririe_2002.pdf` | Ririe DG et al., The pharmacokinetics of epsilon-aminoca…, Anesthesia and analgesia (2002) | popPK | 10 | [10.1097/00000539-200201000-00008](https://doi.org/10.1097/00000539-200201000-00008) | [11772798](https://pubmed.ncbi.nlm.nih.gov/11772798) | The paper is a relevant PK study for aminocaproic acid, but the specific numeric parameter values are not present in the provided abstract text. |
-| `Stricker_2013.pdf` | Stricker PA et al., Population pharmacokinetics of epsilon-…, British journal of anaesthe… (2013) | popPK | 10 | [10.1093/bja/aes507](https://doi.org/10.1093/bja/aes507) | [23353035](https://pubmed.ncbi.nlm.nih.gov/23353035) | The paper reports a population PK model for aminocaproic acid with explicit numeric values for clearance, intercompartmental clearance, and volumes of distribution in the text. |
-| `Stricker_2015.pdf` | Stricker PA et al., Population pharmacokinetics of ϵ-aminoc…, British journal of anaesthe… (2015) | popPK | 10 | [10.1093/bja/aeu459](https://doi.org/10.1093/bja/aeu459) | [25586726](https://pubmed.ncbi.nlm.nih.gov/25586726) | The paper reports a population PK model for aminocaproic acid with explicit numeric values for clearance, volume of distribution, and intercompartmental clearance in the abstract. |
-| `Maxwell_2023.pdf` | Maxwell L et al., Pharmacokinetics of aminocaproic acid i…, Journal of veterinary pharm… (2023) | popPK | 9 | [10.1111/jvp.13124](https://doi.org/10.1111/jvp.13124) | [36994984](https://pubmed.ncbi.nlm.nih.gov/36994984) | The study reports a three-compartment model and terminal half-life for aminocaproic acid in horses, but specific numeric values for clearance, volume, and intercompartmental clearance are not explicitly listed in the provided text. |
+| `Eaton_2015.pdf` | Eaton MP et al., Pharmacokinetics of ε-Aminocaproic Acid…, Anesthesiology (2015) | popPK | 10 | [10.1097/ALN.0000000000000616](https://doi.org/10.1097/ALN.0000000000000616) | [25723765](https://pubmed.ncbi.nlm.nih.gov/25723765) | The study reports a population PK model for aminocaproic acid in neonates with specific numeric values for clearance (5.07 l/h) and dosing parameters. |
+| `Maxwell_2023.pdf` | Maxwell L et al., Pharmacokinetics of aminocaproic acid i…, Journal of veterinary pharm… (2023) | popPK | 10 | [10.1111/jvp.13124](https://doi.org/10.1111/jvp.13124) | [36994984](https://pubmed.ncbi.nlm.nih.gov/36994984) | The study reports a three-compartment model and terminal half-life (24.2 h) for aminocaproic acid in horses, but specific clearance, volume, and intercompartmental clearance values are not explicitly listed in the provided text. |
+| `Ririe_2002.pdf` | Ririe DG et al., The pharmacokinetics of epsilon-aminoca…, Anesthesia and analgesia (2002) | popPK | 10 | [10.1097/00000539-200201000-00008](https://doi.org/10.1097/00000539-200201000-00008) | [11772798](https://pubmed.ncbi.nlm.nih.gov/11772798) | The study reports a population PK model for aminocaproic acid in children, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Stricker_2013.pdf` | Stricker PA et al., Population pharmacokinetics of epsilon-…, British journal of anaesthe… (2013) | popPK | 10 | [10.1093/bja/aes507](https://doi.org/10.1093/bja/aes507) | [23353035](https://pubmed.ncbi.nlm.nih.gov/23353035) | The paper reports a population pharmacokinetic model for aminocaproic acid with specific numeric values for clearance, volume of distribution, and inter-compartmental clearance provided in the abstract. |
+| `Stricker_2015.pdf` | Stricker PA et al., Population pharmacokinetics of ϵ-aminoc…, British journal of anaesthe… (2015) | popPK | 10 | [10.1093/bja/aeu459](https://doi.org/10.1093/bja/aeu459) | [25586726](https://pubmed.ncbi.nlm.nih.gov/25586726) | The paper reports a population pharmacokinetic model for aminocaproic acid with explicit numeric values for clearance, volume of distribution, and intercompartmental clearance in the abstract. |
 
-<sub>queue written 2026-09-06T02:41:41.649077+00:00</sub>
+<sub>queue written 2026-10-05T16:28:45.645943+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gupta_2026 | irrelevant | 0 | 0 | The study is a clinical trial comparing blood loss outcomes, not a pharmacokinetic study, and reports no PK parameters for aminocaproic acid. |
-| popPK | Janecki_1991 | irrelevant | 0 | 0 | The paper is an in-vitro study on Sertoli cell tight junctions where aminocaproic acid is used only as an antiprotease control, not as a subject drug for pharmacokinetic analysis. |
-| popPK | Maxwell_2023 | relevant | 9 | 4 | The study reports a three-compartment model and terminal half-life for aminocaproic acid in horses, but specific numeric values for clearance, volume, and intercompartmental clearance are not explicitly listed in the provided text. |
-| popPK | Ririe_2002 | relevant | 10 | 2 | The paper is a relevant PK study for aminocaproic acid, but the specific numeric parameter values are not present in the provided abstract text. |
+| popPK | Gupta_2026 | irrelevant | 0 | 0 | The study is a clinical trial comparing blood loss outcomes in total knee arthroplasty and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for aminocaproic acid. |
+| popPK | Janecki_1991 | irrelevant | 0 | 0 | The study is an in vitro investigation of Sertoli cell tight junctions where aminocaproic acid is used only as an antiprotease control, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Maxwell_2023 | relevant | 10 | 4 | The study reports a three-compartment model and terminal half-life (24.2 h) for aminocaproic acid in horses, but specific clearance, volume, and intercompartmental clearance values are not explicitly listed in the provided text. |
+| popPK | Ririe_2002 | relevant | 10 | 2 | The study reports a population PK model for aminocaproic acid in children, but the specific numeric parameter values are not present in the provided abstract text. |
 | popPK | Wagner_2017 | irrelevant | 1 | 0 | The study is an in vitro assessment of drug sequestration in an ECMO circuit and does not report pharmacokinetic disposition parameters (CL, V, ka) for aminocaproic acid. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-06 02:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 16:29 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;hydroxocobalamin&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/&quot;},{&quot;label&quot;:&quot;Houeto_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_reference&quot;,&quot;label&quot;:&quot;Houeto_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_reference&quot;,&quot;label&quot;:&quot;de_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydroxocobalamin — `Hydroxocobalamin_Houeto1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The paper (Houeto_1996, smoke inhalation victims) was read at abstract level only, so summary statistics stood in for a fitted model. The builder substituted defaults for ka and Tlag, which were not reported in the source, and the invented absorption rate constant was judged not acceptable. The record also assumes F=1 and Fm=1 with an apparent parameterization (first-order depot input implying extravascular dosing), and a second reader disputes this parameterization, favoring a mechanistic one, and reports null for all four parameter values (t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h). Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of renal and total body clearance: this record has 0.31, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:13.488754+00:00) predates the upstream re-run (2026-10-05 20:52:07.172889+00:00). Current validate status: `extracted`.
 
 ## Citation
 Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996)
   ·  DOI: [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809)
 
 ## Model component
-<dbs-pgx drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="needs_review" stale="false" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="extracted" stale="true" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -38,8 +40,6 @@ Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicolo
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Distribution half-life | `Q59` · t1/2α | 1.86 | h | 6696.0 | [h] | not captured | llm (0.6) | Houeto_1996:abstract | — | not captured |
@@ -72,22 +72,20 @@ Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss:120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | 0.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution half-life]` | 1.86 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` | 26.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[renal and total body clearance]` | 0.31 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance]` | not captured | 0.31 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 0.83 | only_one_extracted |
 
 </details>
 
@@ -144,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_modelica.zip" download>Hydroxocobalamin_Houeto1996_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_modelica.zip" download>Hydroxocobalamin_Houeto1996_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_fmi.zip" download>Hydroxocobalamin_Houeto1996_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_matlab.zip" download>Hydroxocobalamin_Houeto1996_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference/Hydroxocobalamin_Houeto1996_reference_matlab_simbio.zip" download>Hydroxocobalamin_Houeto1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -166,4 +164,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 00:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 20:52 UTC</sub>

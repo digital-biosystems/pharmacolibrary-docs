@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/&quot;},{&quot;label&quot;:&quot;Jia_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;FibrinogenHuman_Ma2026_reference&quot;,&quot;label&quot;:&quot;Ma_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fibrinogen, human — `FibrinogenHuman_Jia2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,29 +19,30 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q290: this record has 4.75, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q83: this record has none, the second reading 1.23. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:00.472803+00:00) predates the upstream re-run (2026-10-05 19:02:57.425888+00:00). Current validate status: `extracted`.
 
 ## Citation
 Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026)
   ·  DOI: [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6)
 
 ## Model component
-<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Jia2026_reference" status="curated_candidate" stale="false" population="" measured-compound="fibrinogen_human" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Jia2026_reference" status="extracted" stale="true" population="" measured-compound="fibrinogen_human" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| apparent clearance (CL/F) | `Q27` · CL/F | 7.48 | L/h | 2.077777777777778e-06 | L/h | not captured | review (0.7) | Jia_2026:review | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 7.48 | L/h | 2.077777777777778e-06 | L/h | not captured | review (0.7) | Jia_2026:review | — | not captured |
 | Vd/F (L) | `Q76` · V/F | 4.75 | L | 0.00475 | L | not captured | review (0.7) | Jia_2026:review | — | not captured |
-| absorption lag time (ALAG1) | `Q83` · tlag | 1.23 | h | 4428.0 | h | not captured | review (0.7) | Jia_2026:review | — | not captured |
-| absorption rate constant (Ka) | `Q49` · kabs | 0.14 | /h | 3.888888888888889e-05 | 1/h | not captured | review (0.7) | Jia_2026:review | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.14 | 1/h | 3.888888888888889e-05 | 1/h | not captured | review (0.7) | Jia_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,6 +52,7 @@ Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of cl
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
@@ -59,21 +61,18 @@ Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q290]` | 4.75 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` | 61.5 | 65.8 | mismatch |
-| `gpt-oss:120b` | `values[Q316]` | 0.0825 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q317]` | 4.085 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q83]` | not captured | 1.23 | only_one_extracted |
 
 </details>
 
@@ -87,13 +86,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jia_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jia_2026:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jia_2026:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jia_2026:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 7.48 L/h | not captured | not captured | ['Jia_2026:review'] |
@@ -130,11 +128,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_modelica.zip" download>FibrinogenHuman_Jia2026_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_modelica.zip" download>FibrinogenHuman_Jia2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_fmi.zip" download>FibrinogenHuman_Jia2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_matlab.zip" download>FibrinogenHuman_Jia2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_matlab_simbio.zip" download>FibrinogenHuman_Jia2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_sbml.zip" download>FibrinogenHuman_Jia2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_sbml.zip" download>FibrinogenHuman_Jia2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_cellml.zip" download>FibrinogenHuman_Jia2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
@@ -143,7 +141,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 1). Doses in the paper: 5, 10 mg.
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference/FibrinogenHuman_Jia2026_reference_sim_controls.json"></dbs-fmusim>
 
@@ -152,4 +150,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 21:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 19:02 UTC</sub>

@@ -17,15 +17,24 @@ Apadamtase alfa (recombinant ADAMTS13) is an enzyme used to treat thrombotic thr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 16:30 | 7:53 | 0/3/0 | 0/0/0 | 0/0/0 | 59,866/18,257 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/10 | 11/0 | 0 |
+| 2026-10-05 13:42 | 1:17 | 0/3/0 | 1/0/0 | 0/0/0 | 45,182/1,433 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/10 | 11/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [McBride_2025_reference](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_McBride2025_reference.md) | — | 1-compartment (no model) | 0 | McBride C et al., Quantitative Systems Pharmacology Model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70063](https://doi.org/10.1002/psp4.70063) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_estimate](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_estimate.md) | — | 2-compartment (no model) | 4 | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_shrinkage](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_shrinkage.md) | — | 1-compartment (no model) | 0 | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_estimate](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_estimate.md) | — | 2-compartment (no model) | 4 | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_shrinkage](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_shrinkage.md) | — | 1-compartment (no model) | 0 | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Patel_2025_LDH](drugs/drug_apadamtase_alfa/pd_Patel_2025_LDH.md) | elevated LDH ← ADAMTS13 · direct sigmoid Emax (Hill) effect | — | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Patel_2025_LDH_2](drugs/drug_apadamtase_alfa/pd_Patel_2025_LDH_2.md) | elevated LDH ← ADAMTS13 · direct sigmoid Emax (Hill) effect | — | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Patel_2025_TTP](drugs/drug_apadamtase_alfa/pd_Patel_2025_TTP.md) | thrombocytopenia ← ADAMTS13 · direct sigmoid Emax (Hill) effect | — | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Patel_2025_TTP_2](drugs/drug_apadamtase_alfa/pd_Patel_2025_TTP_2.md) | thrombocytopenia ← ADAMTS13 · direct sigmoid Emax (Hill) effect | — | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
 
 ## ADME sites
 
@@ -45,8 +54,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
-- **screened:** 4  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **screened:** 4  ·  **relevant:** 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 2
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded
@@ -57,11 +66,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | DeYoung_2022 | irrelevant | 0 | 0 | The paper is a mechanistic review of ADAMTS13 regulation and does not report quantitative population pharmacokinetic parameters for apadamtase_alfa. |
 | popPK | Hafez_2022 | irrelevant | 0 | 0 | The paper is a clinical observational study on ADAMTS13 activity in COVID-19 patients and does not report pharmacokinetic parameters for apadamtase_alfa. |
 | popPK | Hrdinová_2018 | irrelevant | 0 | 0 | The paper is a review of the immunopathogenesis of TTP focusing on ADAMTS13, not a pharmacokinetic study of apadamtase_alfa. |
-| popPK | Kim_2026 | irrelevant | 0 | 0 | The paper studies recombinant ADAMTS-1, not apadamtase_alfa, and does not report PK parameters for the target drug. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates recombinant ADAMTS-1, not apadamtase_alfa, and while it includes a PK profile for ADAMTS-1 in mice, it is for the wrong drug. |
 | popPK | Kwak_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of MDTCS and MDTCS-Fc (ADAMTS13 fragments), not apadamtase_alfa. |
-| PGx | Liu-Chen_2018 | not_relevant | 0 | 0 | The paper describes an mRNA therapy for ADAMTS13, not the drug apadamtase_alfa, and does not report pharmacogenomic effects on its PK/PD. |
+| PGx | Liu-Chen_2018 | not_relevant | 0 | 0 | The paper describes a preclinical mRNA therapy study in mice and does not report pharmacogenomic effects on the PK/PD of apadamtase_alfa. |
 | popPK | Matsumoto_2021 | irrelevant | 0 | 0 | The paper is a review of TTP pathogenesis and treatments, does not focus on apadamtase_alfa, and contains no pharmacokinetic parameters. |
 | popPK | Moore_2023 | irrelevant | 0 | 0 | The paper discusses ADAMTS13 antibody assays for TTP diagnosis and does not report pharmacokinetic parameters for apadamtase_alfa. |
+| popPK | Patel_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rADAMTS13 (recombinant ADAMTS13), not apadamtase_alfa. |
 | popPK | Pruss_2011 | irrelevant | 0 | 0 | The study focuses on von Willebrand factor (VWF) mutations and does not involve the drug apadamtase_alfa. |
 | popPK | Rayes_2007 | irrelevant | 0 | 0 | The paper investigates the proteolysis of von Willebrand factor by ADAMTS-13 and does not involve the drug apadamtase_alfa or report any pharmacokinetic parameters. |
 | popPK | Rossato_2023 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic and behavioral outcomes in a mouse model, and no quantitative pharmacokinetic parameter values (CL, V, etc.) are present in the provided evidence. |
@@ -71,4 +81,4 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Wu_2018 | irrelevant | 0 | 0 | The paper studies the mechanism of VWF and ADAMTS-13 in traumatic brain injury and does not report pharmacokinetic parameters for apadamtase_alfa. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-06 16:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 13:41 UTC</sub>

@@ -14,17 +14,34 @@ Fostamatinib, a protein kinase inhibitor, is used to treat thrombocytopenia. It 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q5473550](https://www.wikidata.org/wiki/Q5473550) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| fostamatinib | parent | 580.46 | C23H26FN6O9P | DrugBank | [11671467](https://pubchem.ncbi.nlm.nih.gov/compound/11671467) | Boström_2014 |
+| R406 | metabolite | 628.632 | C28H29FN6O8S | PubChem | [11984591](https://pubchem.ncbi.nlm.nih.gov/compound/11984591) | Boström_2014 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 22:33 | 1:07 | 0/1/0 | 0/0/0 | 0/0/0 | 31,485/1,107 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-05 19:47 | 2:34 | 0/0/1 | 1/0/1 | 0/0/0 | 28,196/6,762 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | — | 1-compartment (no model) | 0 | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | — | 1-compartment (no model) | 1 | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Boström_2014_DBP](drugs/drug_fostamatinib/pd_Bostr_m_2014_DBP.md) | DBP ← R406 · direct Emax (saturable) effect | — | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Boström_2014_SBP](drugs/drug_fostamatinib/pd_Bostr_m_2014_SBP.md) | SBP ← R406 · direct linear effect | — | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Maringwa_2015_ACR20](drugs/drug_fostamatinib/pd_Maringwa_2015_ACR20.md) | ACR20 ← R406 · categorical (graded) response model | — | Maringwa J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2015) | [10.1002/jcph.406](https://doi.org/10.1002/jcph.406) |
 
 ## ADME sites
 
@@ -57,7 +74,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -66,27 +83,27 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Boström_2014.pdf` | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | popPK | 9 | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) | [24895144](https://pubmed.ncbi.nlm.nih.gov/24895144) | The paper reports a population PK model for the active metabolite R406 with a specific CL/F value (18.7 L/h), but other parameters like volume and half-life are not explicitly listed in the provided text. |
+| `Boström_2014.pdf` | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | popPK | 9 | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) | [24895144](https://pubmed.ncbi.nlm.nih.gov/24895144) | The study reports a population PK model for the active metabolite R406 (CL/F 18.7 L/h) following fostamatinib dosing, but other specific parameters like V and Q are not explicitly listed in the text. |
 | `Maringwa_2015.pdf` | Maringwa J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2015) | pd | 5 | [10.1002/jcph.406](https://doi.org/10.1002/jcph.406) | [25280085](https://www.ncbi.nlm.nih.gov/pubmed/25280085) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Moore_2019.pdf` | Moore DC et al., Fostamatinib for the treatment of immun…, American journal of health-… (2019) | pgx | 7 | [10.1093/ajhp/zxz052](https://doi.org/10.1093/ajhp/zxz052) | [30951590](https://www.ncbi.nlm.nih.gov/pubmed/30951590) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-18T22:32:07.980615+00:00</sub>
+<sub>queue written 2026-10-05T19:45:18.055910+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ahmadinia_2026 | not_relevant | 0 | 0 | The paper is a narrative review of immunopathogenic mechanisms and therapeutic targets in autoimmune HIT, and does not report pharmacogenomic effects on the PK or PD of fostamatinib. |
-| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper is a review of autoimmune hemolytic anemia pathogenesis and treatments, mentioning fostamatinib only as a therapeutic option without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Duran_2019 | not_relevant | 0 | 0 | The paper investigates the effect of the drug R406 (fostamatinib metabolite) on P-glycoprotein-mediated drug resistance in cell lines, but does not report any pharmacogenomic effects (gene variants/genotypes) on the PK or PD of fostamatinib. |
+| PGx | Ahmadinia_2026 | not_relevant | 0 | 0 | The paper is a narrative review discussing the therapeutic mechanisms of fostamatinib in autoimmune diseases and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper is a review of pathogenesis and therapeutic strategies for autoimmune hemolytic anemia and does not report pharmacogenomic effects on fostamatinib PK/PD. |
+| PGx | Duran_2019 | not_relevant | 0 | 0 | The paper investigates the effect of fostamatinib's metabolite (R406) on P-glycoprotein-mediated drug resistance, not the effect of a gene variant on fostamatinib's PK/PD. |
 | PGx | Flinn_2016 | not_relevant | 0 | 0 | The paper reports clinical efficacy based on cell-of-origin subtypes (GCB/ABC) but does not report pharmacokinetic or pharmacodynamic parameters or specific gene variants affecting drug metabolism. |
-| PGx | Gkouskou_2024 | not_relevant | 0 | 0 | The paper is a review on nutrigenetics and obesity that only mentions fostamatinib in the context of in silico predictions for repurposing, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| popPK | Maringwa_2015 | irrelevant | 2 | 0 | The paper focuses on pharmacodynamic modeling of efficacy (ACR20) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for fostamatinib. |
-| PGx | Martin_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibitors/inducers) rather than pharmacogenomic effects of gene variants on PK/PD parameters. |
+| PGx | Gkouskou_2024 | not_relevant | 0 | 0 | The paper is a review on nutrigenetics and obesity that only mentions fostamatinib as a potential repurposing target based on in silico predictions, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Maringwa_2015 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic modeling of efficacy (ACR20) and exposure-response relationships rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for fostamatinib. |
+| PGx | Martin_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions with CYP3A4 inhibitors/inducators, not the effect of a specific gene variant or genotype on pharmacokinetics. |
 | PGx | Moore_2019 | not_relevant | 0 | 0 | The paper is a general review of fostamatinib's pharmacology and clinical use, mentioning CYP3A4 metabolism but not reporting any specific pharmacogenomic effects of gene variants on PK or PD parameters. |
-| popPK | Thoma_2015 | irrelevant | 0 | 0 | The paper describes a different Syk inhibitor (Compound 5) and does not report pharmacokinetic parameters for fostamatinib. |
+| popPK | Thoma_2015 | irrelevant | 0 | 0 | The study focuses on a different Syk inhibitor (Compound 5) in rats, not fostamatinib. |
 | PD | Thoma_2015 | not_relevant | 0 | 0 | The text is an abstract that mentions activity in a rat PK/PD model but provides no numeric PD parameters, curves, or specific exposure-response data. |
 | PGx | Xu_2025 | not_relevant | 0 | 0 | The paper identifies fostamatinib as a potential anti-aging drug via computational screening but does not report any pharmacogenomic effects on its PK or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 22:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 19:45 UTC</sub>
