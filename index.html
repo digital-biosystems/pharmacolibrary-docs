@@ -559,8 +559,10 @@
     (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
       var DB = null, loading = false, LEX = null, ENGINE = null, BUSY = false;
       var TURNS = [];                 // turn elements, re-attached when docsify re-renders the page
-      var EXAMPLES = ['clearance of metformin', 'CYP2C19 and clopidogrel', 'PD models of warfarin',
-                      'clearance of midazolam in children', 'papers on semaglutide after 2023'];
+      var EXAMPLES = ['clearance of metformin', 'What is the difference between CL and CL/F?', 'CYP2C19 and clopidogrel',
+                      'PD models of warfarin', 'clearance of midazolam in children', 'papers on semaglutide after 2023'];
+      var HIST = [];                  // {q, a} of earlier turns, for follow-up questions in words
+      var GLOSS = null;               // the glossary's load, once
 
       function el(id) {
         var live = document.querySelectorAll('.markdown-section [id="' + id + '"]');
@@ -627,6 +629,14 @@
       function askScript() { return window.pkAsk ? Promise.resolve() : script('assets/js/pk-ask.js'); }
       function llmScript() { return window.pkAskLLM ? Promise.resolve() : script('assets/js/pk-ask-llm.js'); }
       function lexicon() { if (!LEX) LEX = window.pkAsk.lexiconFromDB(DB); return LEX; }
+      // the glossary explanations are made of (assets/chat/glossary.json); a failed fetch leaves
+      // explanation questions to the model's general knowledge, said so
+      function glossary() {
+        if (!GLOSS) GLOSS = fetch('assets/chat/glossary.json').then(function (r) { return r.ok ? r.json() : null; })
+          .catch(function () { return null; })
+          .then(function (g) { window.pkAsk.withGlossary(lexicon(), g); return g; });
+        return GLOSS;
+      }
 
       // ── the conversation ──────────────────────────────────────────────────────────
       function scrollDown() { var l = el('pkq-log'); if (l) l.scrollTop = l.scrollHeight; }
@@ -666,8 +676,8 @@
         a.appendChild(chips); a.appendChild(text); turn.appendChild(a);
         TURNS.push(turn); log.appendChild(turn); scrollDown();
 
-        askScript().then(function () {
-          return window.pkAsk.answer(q, DB, lexicon(), { engine: ENGINE, explain: !!ENGINE });
+        askScript().then(glossary).then(function () {
+          return window.pkAsk.answer(q, DB, lexicon(), { engine: ENGINE, explain: !!ENGINE, history: HIST.slice(-3) });
         }).then(function (ans) {
           var plan = ans.plan;
           window.pkAsk.understood(plan).forEach(function (b) { chips.appendChild(node('span', 'pkq-chip', b)); });
@@ -685,12 +695,31 @@
           // the prose when a model wrote one that survived the checks, else the summary
           text.className = 'pkq-text';
           text.textContent = ans.explanation || ans.summary;
-          if (!ans.explanation && ans.dropped.length) {
+          var gl = ans.glossary || [], titles = gl.map(function (e) { return e.title; }).join(', ');
+          if (ans.general && !ans.explanation && gl.length) {      // keywords: the glossary entries themselves
+            text.textContent = '';
+            gl.forEach(function (e) {
+              var para = node('p'); para.style.margin = '0 0 6px';
+              para.appendChild(node('strong', null, e.title + '. '));
+              para.appendChild(document.createTextNode(e.text));
+              text.appendChild(para);
+            });
+            a.appendChild(node('span', 'pkq-sub', 'From the site glossary (draft definitions, pending expert review)' +
+              (ENGINE ? '.' : '. Choose a language model in the list below for an answer in your own words.')));
+          } else if (ans.general && ans.explanation) {             // a model, in words
+            a.appendChild(node('span', 'pkq-sub', 'Answered by ' + ENGINE.name + (gl.length
+              ? ' from the site glossary — ' + titles + ' (draft definitions, pending expert review).'
+              : ' from general knowledge: no glossary entry covers this, so check it against a textbook.') +
+              (ans.dropped.length ? ' ' + ans.dropped.length + ' sentence(s) giving a drug-specific number were dropped — values come from the data.' : '')));
+          }
+          HIST.push({ q: q, a: ans.explanation || ans.summary, intent: plan.intent });
+          if (!ans.explanation && ans.dropped.length && !ans.general) {
             a.appendChild(node('span', 'pkq-sub', ENGINE.name + '’s prose was withheld: it used a number or a claim the rows do not hold.'));
           }
-          if (ans.explanation) {
+          if (ans.explanation && !ans.general) {
             a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + ENGINE.name +
-              ', its numbers checked against the rows' + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') + '.'));
+              ', its numbers checked against the rows' + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') +
+              (gl.length ? '; the why draws on the site glossary — ' + titles : '') + '.'));
           }
           if (ans.sql) {
             var box = node('div', 'pkq-table');
@@ -803,7 +832,7 @@
         state: function () { return this._s; },
         start: function (questions, modelKey, opts) {
           var s = this._s = { done: false, log: [], results: [] };
-          Promise.all([askScript(), llmScript()]).then(function () {
+          Promise.all([askScript(), llmScript()]).then(glossary).then(function () {
             return window.pkAskLLM.load(modelKey, function (t) { if (s.log.length < 400) s.log.push(t); });
           }).then(function (eng) {
             s.log.push('loaded ' + eng.id);
@@ -848,7 +877,7 @@
           el('pkq-status').hidden = true;
           el('pkq-ui').hidden = false;
           attach();
-          askScript().then(function () { lexicon(); });       // warm the lexicon before the first question
+          askScript().then(glossary);          // warm the lexicon and the glossary before the first question
           setTimeout(modeInit, 300);
           askFromHash();
         }).catch(function (e) { loading = false; status(String(e.message || e), true); });

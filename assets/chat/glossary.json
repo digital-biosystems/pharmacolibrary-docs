@@ -1,0 +1,685 @@
+{
+ "about": "Short definitions behind the 'Ask the data' page's explanations (IMPROVEMENTS_CHAT.md: glossary). Each entry: id, terms (what a reader types), qcodes (ontology codes it explains), text (≤ 80 words). An explanation question is answered from the entries it matches — directly without a model, as the model's source with one.",
+ "status": "draft",
+ "drafted_by": "Claude (claude-opus-5-5), 2026-10-05",
+ "reviewed_by": null,
+ "entries": [
+  {
+   "id": "cl",
+   "title": "Clearance (CL)",
+   "terms": [
+    "clearance",
+    "cl",
+    "total clearance",
+    "systemic clearance"
+   ],
+   "qcodes": [
+    "Q22"
+   ],
+   "text": "Clearance (CL) is the volume of plasma (or blood) cleared of drug per unit time, in L/h. It links the elimination rate to the concentration: rate = CL × C. At steady state the average concentration is dose rate ÷ CL, so CL sets the maintenance dose. CL can only be estimated on its own when the dose reaching the circulation is known — after intravenous dosing."
+  },
+  {
+   "id": "cl_f",
+   "title": "Apparent clearance (CL/F)",
+   "terms": [
+    "cl/f",
+    "apparent clearance",
+    "oral clearance",
+    "apparent oral clearance"
+   ],
+   "qcodes": [
+    "Q27"
+   ],
+   "text": "CL/F is apparent clearance: clearance divided by bioavailability F. After oral (or other extravascular) dosing only the fraction F of the dose reaches the circulation, and from concentrations alone CL and F cannot be separated, so models estimate their ratio. Because F ≤ 1, CL/F ≥ CL; it equals CL only when F = 1. Comparing CL/F between studies assumes F was similar."
+  },
+  {
+   "id": "v",
+   "title": "Volume of distribution (V)",
+   "terms": [
+    "volume of distribution",
+    "vd",
+    "v",
+    "volume"
+   ],
+   "qcodes": [
+    "Q61",
+    "Q63",
+    "Q65"
+   ],
+   "text": "The volume of distribution (V, Vd) relates the amount of drug in the body to its plasma concentration: amount = V × C. It is an apparent volume, not a physical space — a drug bound in tissues can have a V of hundreds of litres. V governs the loading dose and, with CL, the half-life (t1/2 = ln2 × V / CL). In compartment models V1 (Vc) is the central and V2, V3 the peripheral volumes."
+  },
+  {
+   "id": "v_f",
+   "title": "Apparent volume (V/F)",
+   "terms": [
+    "v/f",
+    "apparent volume",
+    "apparent volume of distribution",
+    "v1/f",
+    "vc/f"
+   ],
+   "qcodes": [
+    "Q76",
+    "Q290",
+    "Q82",
+    "Q78"
+   ],
+   "text": "V/F is the apparent volume of distribution after extravascular dosing: volume divided by bioavailability F. As with CL/F, V and F cannot be separated without intravenous data, so the ratio is what an oral study estimates. V1/F and V2/F are the apparent central and peripheral volumes."
+  },
+  {
+   "id": "peripheral",
+   "title": "Peripheral compartments (V2, V3, Q)",
+   "terms": [
+    "peripheral volume",
+    "v2",
+    "v3",
+    "peripheral compartment",
+    "intercompartmental clearance",
+    "q",
+    "distribution clearance"
+   ],
+   "qcodes": [
+    "Q64",
+    "Q77",
+    "Q30",
+    "Q69",
+    "Q99"
+   ],
+   "text": "In a two- or three-compartment model the drug moves between a central compartment (V1, plasma and well-perfused tissue) and one or two peripheral compartments (V2, V3). The intercompartmental clearance Q is the flow-like parameter for that exchange, in L/h; it shapes the fast distribution phase seen after a dose."
+  },
+  {
+   "id": "compartments",
+   "title": "Compartment models",
+   "terms": [
+    "compartment model",
+    "one-compartment",
+    "two-compartment",
+    "three-compartment",
+    "compartmental model",
+    "1-compartment",
+    "2-compartment"
+   ],
+   "qcodes": [],
+   "text": "A compartment model describes the body as one, two or three well-mixed spaces connected by first-order transfers. One compartment gives a single exponential decline; two or three give a fast distribution phase followed by slower elimination. The number of compartments is chosen to fit the observed concentration curve, not to match organs."
+  },
+  {
+   "id": "ka",
+   "title": "Absorption rate constant (ka)",
+   "terms": [
+    "absorption rate constant",
+    "ka",
+    "absorption rate",
+    "first-order absorption",
+    "kabs"
+   ],
+   "qcodes": [
+    "Q49",
+    "Q95"
+   ],
+   "text": "The absorption rate constant ka (1/h) describes first-order uptake from the dosing site into the circulation: the fraction of the remaining dose absorbed per hour. A larger ka gives an earlier, higher peak. When ka is slower than elimination the terminal decline reflects absorption instead (flip-flop kinetics)."
+  },
+  {
+   "id": "f",
+   "title": "Bioavailability (F)",
+   "terms": [
+    "bioavailability",
+    "f",
+    "absolute bioavailability",
+    "relative bioavailability",
+    "frel",
+    "fab"
+   ],
+   "qcodes": [
+    "Q40",
+    "Q87"
+   ],
+   "text": "Bioavailability F is the fraction of an administered dose that reaches the systemic circulation unchanged, between 0 and 1. Incomplete absorption and first-pass metabolism in gut wall and liver lower it. Absolute F needs an intravenous reference; relative bioavailability (Frel) compares two formulations or routes without one."
+  },
+  {
+   "id": "tlag",
+   "title": "Lag time (tlag)",
+   "terms": [
+    "lag time",
+    "tlag",
+    "absorption lag",
+    "alag"
+   ],
+   "qcodes": [
+    "Q83"
+   ],
+   "text": "The lag time (tlag) is a delay between dosing and the start of absorption — tablet disintegration, gastric emptying. Before tlag the model assumes no drug enters the circulation. A transit-compartment chain describes the same delay more smoothly."
+  },
+  {
+   "id": "transit",
+   "title": "Transit compartments (ktr, MTT)",
+   "terms": [
+    "transit compartment",
+    "transit compartments",
+    "mean transit time",
+    "mtt",
+    "ktr"
+   ],
+   "qcodes": [
+    "Q81",
+    "Q306"
+   ],
+   "text": "A transit-compartment model passes the dose through a chain of n compartments before absorption, each with rate constant ktr; the mean transit time is MTT = (n + 1) / ktr. It produces a gradual, delayed rise in concentration, often fitting oral data better than a single lag time."
+  },
+  {
+   "id": "half_life",
+   "title": "Half-life (t1/2)",
+   "terms": [
+    "half-life",
+    "half life",
+    "t1/2",
+    "elimination half-life",
+    "terminal half-life",
+    "halflife"
+   ],
+   "qcodes": [
+    "Q57",
+    "Q59",
+    "Q60",
+    "Q89"
+   ],
+   "text": "The half-life (t1/2) is the time for the concentration to fall by half. In a one-compartment model t1/2 = ln2 × V / CL, so it depends on both. Multi-compartment drugs have several half-lives (α, β, γ); the terminal one governs accumulation and the roughly 4–5 half-lives needed to approach steady state."
+  },
+  {
+   "id": "kel",
+   "title": "Elimination rate constant (kel)",
+   "terms": [
+    "elimination rate constant",
+    "kel",
+    "k10",
+    "ke"
+   ],
+   "qcodes": [
+    "Q47"
+   ],
+   "text": "The elimination rate constant kel (or k10, 1/h) is the fraction of drug in the central compartment eliminated per unit time: kel = CL / V. It is a derived parameter; models are usually parameterised in CL and V instead."
+  },
+  {
+   "id": "cmax_tmax",
+   "title": "Cmax and tmax",
+   "terms": [
+    "cmax",
+    "tmax",
+    "peak concentration",
+    "time to peak",
+    "maximum concentration"
+   ],
+   "qcodes": [
+    "Q32",
+    "Q56"
+   ],
+   "text": "Cmax is the highest observed concentration after a dose and tmax the time it occurs. They are read from the data (non-compartmental), not model parameters; faster absorption raises Cmax and shortens tmax."
+  },
+  {
+   "id": "auc",
+   "title": "AUC",
+   "terms": [
+    "auc",
+    "area under the curve",
+    "exposure"
+   ],
+   "qcodes": [
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q74",
+    "Q88"
+   ],
+   "text": "AUC is the area under the concentration–time curve, the usual measure of total exposure (mg·h/L). For a single dose, AUC from zero to infinity = F × dose / CL; at steady state the AUC over one dosing interval equals it. AUC0–t stops at the last sample, AUC∞ extrapolates beyond it."
+  },
+  {
+   "id": "clr",
+   "title": "Renal and non-renal clearance",
+   "terms": [
+    "renal clearance",
+    "clr",
+    "non-renal clearance",
+    "hepatic clearance",
+    "clh"
+   ],
+   "qcodes": [
+    "Q26",
+    "Q25"
+   ],
+   "text": "Total clearance is the sum of routes: renal clearance (CLR, filtration and secretion into urine) plus non-renal clearance (mostly hepatic metabolism and biliary excretion). Renal clearance can be measured from urine; splitting the routes shows which patients — renal or hepatic impairment — need dose changes."
+  },
+  {
+   "id": "fu",
+   "title": "Fraction unbound (fu)",
+   "terms": [
+    "fraction unbound",
+    "fu",
+    "protein binding",
+    "unbound fraction",
+    "free fraction"
+   ],
+   "qcodes": [
+    "Q46"
+   ],
+   "text": "The fraction unbound (fu) is the share of drug in plasma not bound to proteins such as albumin. Only unbound drug crosses membranes, is filtered and acts on targets, so fu matters when binding changes — hypoalbuminaemia, displacement by another drug."
+  },
+  {
+   "id": "michaelis",
+   "title": "Michaelis–Menten elimination (Km, Vmax)",
+   "terms": [
+    "michaelis-menten",
+    "michaelis menten",
+    "km",
+    "vmax",
+    "nonlinear elimination",
+    "saturable elimination",
+    "nonlinear"
+   ],
+   "qcodes": [
+    "Q1",
+    "Q66"
+   ],
+   "text": "Michaelis–Menten elimination is saturable: rate = Vmax × C / (Km + C). Well below Km it behaves linearly (CL ≈ Vmax / Km); near or above Km clearance falls as concentration rises, so exposure grows more than in proportion to dose. Phenytoin and high-dose ethanol are classic examples."
+  },
+  {
+   "id": "fm",
+   "title": "Fraction metabolised (fm)",
+   "terms": [
+    "fraction metabolised",
+    "fraction metabolized",
+    "fm",
+    "formation fraction",
+    "metabolite formation"
+   ],
+   "qcodes": [
+    "Q45",
+    "Q370"
+   ],
+   "text": "The fraction metabolised fm is the share of a parent drug's clearance that forms a given metabolite. Parent–metabolite models split the parent's clearance by fm into each metabolite's compartment; a prodrug's activation (clopidogrel to its active thiol) is such a pathway."
+  },
+  {
+   "id": "poppk",
+   "title": "Population PK",
+   "terms": [
+    "population pk",
+    "poppk",
+    "population pharmacokinetics",
+    "nonmem",
+    "mixed effects",
+    "nonlinear mixed effects",
+    "population model"
+   ],
+   "qcodes": [],
+   "text": "Population pharmacokinetics fits one model to sparse data from many patients at once (nonlinear mixed-effects modelling, e.g. NONMEM). It estimates typical parameter values, their variability between and within individuals (IIV, IOV), residual error, and covariates — weight, age, renal function, genotype — that explain part of the variability."
+  },
+  {
+   "id": "iiv",
+   "title": "Inter-individual variability (IIV)",
+   "terms": [
+    "iiv",
+    "inter-individual variability",
+    "interindividual variability",
+    "between-subject variability",
+    "bsv",
+    "eta",
+    "omega"
+   ],
+   "qcodes": [
+    "Q312"
+   ],
+   "text": "Inter-individual variability (IIV) is how much a parameter differs between patients beyond what covariates explain, usually log-normal and reported as a coefficient of variation (CV%) or variance ω². Inter-occasion variability (IOV) is the variation within one patient between dosing occasions."
+  },
+  {
+   "id": "iov",
+   "title": "Inter-occasion variability (IOV)",
+   "terms": [
+    "iov",
+    "inter-occasion variability",
+    "interoccasion variability",
+    "between-occasion variability"
+   ],
+   "qcodes": [
+    "Q313"
+   ],
+   "text": "Inter-occasion variability (IOV) is the change in a patient's own parameter from one dosing occasion to another, separate from the difference between patients (IIV). Large IOV limits how well a past measurement predicts the next dose."
+  },
+  {
+   "id": "residual",
+   "title": "Residual error",
+   "terms": [
+    "residual error",
+    "residual variability",
+    "proportional error",
+    "additive error",
+    "sigma",
+    "ruv"
+   ],
+   "qcodes": [
+    "Q315",
+    "Q316",
+    "Q317"
+   ],
+   "text": "Residual error is the difference between observed and model-predicted concentrations left after individual parameters — assay noise, sampling-time errors, model misspecification. It is commonly proportional (a CV%), additive (a concentration), or both combined."
+  },
+  {
+   "id": "covariate",
+   "title": "Covariates",
+   "terms": [
+    "covariate",
+    "covariates",
+    "covariate effect",
+    "allometric",
+    "allometric scaling",
+    "body weight effect"
+   ],
+   "qcodes": [],
+   "text": "A covariate is a patient characteristic — weight, age, creatinine clearance, genotype, co-medication — that shifts a parameter's typical value. Allometric scaling is a common one: CL ∝ (weight/70)^0.75 and V ∝ weight/70. Reported covariate equations let a model predict for a patient unlike the study average."
+  },
+  {
+   "id": "ec50",
+   "title": "EC50",
+   "terms": [
+    "ec50",
+    "potency",
+    "half-maximal effective concentration"
+   ],
+   "qcodes": [
+    "Q321"
+   ],
+   "text": "EC50 is the concentration producing half of the maximal effect (Emax) — a measure of potency: the lower the EC50, the less drug is needed. It belongs to the Emax model, E = E0 + Emax × C / (EC50 + C)."
+  },
+  {
+   "id": "ic50",
+   "title": "IC50",
+   "terms": [
+    "ic50",
+    "half-maximal inhibitory concentration"
+   ],
+   "qcodes": [
+    "Q322"
+   ],
+   "text": "IC50 is the concentration producing half of the maximal inhibition (Imax), the inhibitory counterpart of EC50. In PD models it scales how strongly a drug suppresses a baseline process, E = E0 × (1 − Imax × C / (IC50 + C))."
+  },
+  {
+   "id": "emax",
+   "title": "Emax / Imax",
+   "terms": [
+    "emax",
+    "imax",
+    "maximal effect",
+    "maximum effect",
+    "emax model",
+    "sigmoid emax",
+    "efficacy"
+   ],
+   "qcodes": [
+    "Q320",
+    "Q323"
+   ],
+   "text": "Emax is the largest effect a drug can produce (Imax for inhibition) — its efficacy, as opposed to potency (EC50). In the Emax model the effect rises with concentration and levels off at Emax; the sigmoid form adds a Hill coefficient for steepness."
+  },
+  {
+   "id": "hill",
+   "title": "Hill coefficient (γ)",
+   "terms": [
+    "hill coefficient",
+    "hill",
+    "gamma",
+    "sigmoidicity"
+   ],
+   "qcodes": [
+    "Q325"
+   ],
+   "text": "The Hill coefficient (γ) sets the steepness of a sigmoid concentration–effect curve: E = E0 + Emax × C^γ / (EC50^γ + C^γ). γ = 1 is the plain Emax model; larger values make the transition from no effect to full effect sharper."
+  },
+  {
+   "id": "e0",
+   "title": "Baseline (E0)",
+   "terms": [
+    "baseline",
+    "e0",
+    "baseline effect"
+   ],
+   "qcodes": [
+    "Q324",
+    "Q336"
+   ],
+   "text": "E0 is the baseline — the response without drug, such as resting heart rate or an untreated biomarker level. Drug effects in PD models are expressed as changes from it."
+  },
+  {
+   "id": "indirect",
+   "title": "Indirect response models",
+   "terms": [
+    "indirect response",
+    "indirect response model",
+    "turnover model",
+    "kin",
+    "kout",
+    "idr"
+   ],
+   "qcodes": [
+    "Q327",
+    "Q328"
+   ],
+   "text": "An indirect response model describes a drug acting on the production (kin) or loss (kout) of a response rather than on the response itself; the response R follows dR/dt = kin − kout × R. Four types: inhibition of production (I), inhibition of loss (II), stimulation of production (III), stimulation of loss (IV). The effect lags behind concentration — warfarin's effect on INR is a classic case."
+  },
+  {
+   "id": "ke0",
+   "title": "Effect compartment (ke0)",
+   "terms": [
+    "ke0",
+    "effect compartment",
+    "effect site",
+    "biophase",
+    "hysteresis"
+   ],
+   "qcodes": [
+    "Q326"
+   ],
+   "text": "An effect-compartment (link) model explains a delay between plasma concentration and effect by a hypothetical effect site that equilibrates with plasma at rate ke0. Small ke0 means a slow equilibration and a counter-clockwise hysteresis loop when effect is plotted against plasma concentration."
+  },
+  {
+   "id": "exposure_response",
+   "title": "Dose–response and exposure–response",
+   "terms": [
+    "exposure-response",
+    "exposure response",
+    "dose-response",
+    "dose response",
+    "concentration-effect",
+    "concentration effect",
+    "pk/pd",
+    "pkpd",
+    "pk-pd"
+   ],
+   "qcodes": [],
+   "text": "A dose–response model relates the effect to the dose alone; an exposure– or concentration–response model relates it to a measured or modelled concentration (Cmax, AUC, or the time course). Linking a PD model to a PK model (PK/PD) lets the effect be simulated for any dosing regimen; this site marks which PD records are driven by a PK record."
+  },
+  {
+   "id": "metaboliser",
+   "title": "Metaboliser phenotypes",
+   "terms": [
+    "poor metaboliser",
+    "poor metabolizer",
+    "intermediate metaboliser",
+    "intermediate metabolizer",
+    "normal metaboliser",
+    "normal metabolizer",
+    "extensive metaboliser",
+    "extensive metabolizer",
+    "ultrarapid metaboliser",
+    "ultrarapid metabolizer",
+    "rapid metaboliser",
+    "metaboliser",
+    "metabolizer",
+    "pm",
+    "im",
+    "um"
+   ],
+   "qcodes": [],
+   "text": "Metaboliser phenotypes describe how active a drug-metabolising enzyme is, predicted from genotype: poor (little or no activity), intermediate, normal (formerly 'extensive'), rapid and ultrarapid (more than normal). For a drug cleared by the enzyme, poor metabolisers have higher exposure; for a prodrug activated by it (codeine by CYP2D6, clopidogrel by CYP2C19) they form less active drug."
+  },
+  {
+   "id": "activity_score",
+   "title": "Genotype, star alleles and activity score",
+   "terms": [
+    "activity score",
+    "star allele",
+    "star alleles",
+    "allele",
+    "diplotype",
+    "genotype",
+    "phenotype"
+   ],
+   "qcodes": [],
+   "text": "A genotype is a person's pair of alleles (a diplotype, written in star-allele notation such as CYP2D6 *1/*4). Each allele is assigned a function value; for CYP2D6 their sum is the activity score, which is translated into a metaboliser phenotype. Guidelines map the phenotype, not the raw genotype, to dosing recommendations."
+  },
+  {
+   "id": "cpic",
+   "title": "CPIC and DPWG guidelines",
+   "terms": [
+    "cpic",
+    "dpwg",
+    "pharmacogenomic guideline",
+    "pgx guideline",
+    "clinpgx",
+    "pharmgkb"
+   ],
+   "qcodes": [],
+   "text": "CPIC (Clinical Pharmacogenetics Implementation Consortium) and DPWG (Dutch Pharmacogenetics Working Group) publish peer-reviewed guidelines on adjusting drug choice or dose by genotype. ClinPGx (formerly PharmGKB) curates them with the underlying gene–drug evidence; this site's PGx view groups drugs by those sources."
+  },
+  {
+   "id": "pgx",
+   "title": "Pharmacogenomics (PGx)",
+   "terms": [
+    "pharmacogenomics",
+    "pharmacogenetics",
+    "pgx"
+   ],
+   "qcodes": [],
+   "text": "Pharmacogenomics (PGx) studies how genetic variation changes drug response — through drug-metabolising enzymes (CYP2D6, CYP2C19, CYP2C9), transporters (SLCO1B1, ABCB1) or drug targets (VKORC1). In this knowledge base a PGx record ties a gene's phenotype to the PK or PD parameter it changes, with the size of the change."
+  },
+  {
+   "id": "cyp",
+   "title": "Cytochrome P450 enzymes",
+   "terms": [
+    "cytochrome p450",
+    "cyp",
+    "cyp2d6",
+    "cyp2c19",
+    "cyp2c9",
+    "cyp3a4",
+    "cyp3a5",
+    "cyp1a2",
+    "enzyme"
+   ],
+   "qcodes": [],
+   "text": "Cytochrome P450 (CYP) enzymes, mainly in the liver and gut wall, metabolise most drugs. Several are genetically polymorphic — CYP2D6, CYP2C19, CYP2C9, CYP3A5 — giving the metaboliser phenotypes; others, like CYP3A4, vary mostly through inhibition and induction by other drugs."
+  },
+  {
+   "id": "transporter",
+   "title": "Drug transporters",
+   "terms": [
+    "transporter",
+    "transporters",
+    "slco1b1",
+    "oatp1b1",
+    "abcb1",
+    "p-gp",
+    "p-glycoprotein",
+    "abcg2",
+    "bcrp"
+   ],
+   "qcodes": [],
+   "text": "Drug transporters move drugs across membranes — uptake into the liver (OATP1B1, gene SLCO1B1), efflux from gut and brain (P-glycoprotein, ABCB1; BCRP, ABCG2). Genetic variants or inhibitors change exposure; reduced SLCO1B1 function, for example, raises statin levels and myopathy risk."
+  },
+  {
+   "id": "prodrug",
+   "title": "Prodrugs and metabolites",
+   "terms": [
+    "prodrug",
+    "active metabolite",
+    "metabolite",
+    "parent drug",
+    "parent-metabolite"
+   ],
+   "qcodes": [],
+   "text": "A prodrug is inactive until metabolised to an active form (codeine to morphine, clopidogrel to its thiol metabolite). A parent–metabolite model describes the parent's concentrations and those of one or more metabolites formed from it, linked by the fraction metabolised."
+  },
+  {
+   "id": "record",
+   "title": "Records on this site",
+   "terms": [
+    "record",
+    "records",
+    "model record",
+    "extracted model"
+   ],
+   "qcodes": [],
+   "text": "On this site a record is one model extracted from one paper — a PK, PD or PGx model with its parameters, the population studied and the paper it came from. A record that could be built into an executable model carries a model_id and a page with a simulation."
+  },
+  {
+   "id": "gapfill",
+   "title": "link_method: exact and review_gapfill",
+   "terms": [
+    "review_gapfill",
+    "gap-fill",
+    "gapfill",
+    "gap filled",
+    "link_method",
+    "exact"
+   ],
+   "qcodes": [],
+   "text": "Each extracted value records how it was linked to the paper (link_method). 'exact' means it was read from that paper; 'review_gapfill' means the paper lacked it and the value was taken from a review so the model could run. A gap-filled value is marked so it is not mistaken for the paper's own finding."
+  },
+  {
+   "id": "si",
+   "title": "value_si and unit_si",
+   "terms": [
+    "value_si",
+    "unit_si",
+    "si units",
+    "unit_canonical"
+   ],
+   "qcodes": [],
+   "text": "Values are kept as reported (value, unit_verbatim) and converted to SI base units (value_si in unit_si: m³/s for a clearance, m³ for a volume, 1/s for a rate constant, s for a time). The SI value is for comparing papers; to read L/h multiply m³/s by 3.6 million."
+  },
+  {
+   "id": "status",
+   "title": "Review status",
+   "terms": [
+    "curated_candidate",
+    "accepted_with_caveats",
+    "status",
+    "review status",
+    "reviewer"
+   ],
+   "qcodes": [],
+   "text": "A record's status is the review verdict: curated_candidate passed the automated reviewer's checks, accepted_with_caveats passed with noted reservations, and other statuses mark records held back. Only reviewed records are built into executable models."
+  },
+  {
+   "id": "steady_state",
+   "title": "Steady state",
+   "terms": [
+    "steady state",
+    "steady-state",
+    "accumulation",
+    "css"
+   ],
+   "qcodes": [
+    "Q34"
+   ],
+   "text": "At steady state, intake and elimination balance over each dosing interval, so concentrations repeat from dose to dose. It is reached after about 4–5 terminal half-lives; the average steady-state concentration equals dose rate × F / CL."
+  },
+  {
+   "id": "loading_maintenance",
+   "title": "Loading and maintenance dose",
+   "terms": [
+    "loading dose",
+    "maintenance dose",
+    "dosing rate"
+   ],
+   "qcodes": [],
+   "text": "A loading dose fills the volume of distribution quickly (loading dose ≈ target concentration × V / F); the maintenance dose replaces what is eliminated (dose rate ≈ target concentration × CL / F). This page does not give dosing advice — these relations explain what the parameters mean."
+  }
+ ]
+}

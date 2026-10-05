@@ -65,6 +65,9 @@
     pkdriven: /\b((driven by|linked to|coupled (to|with)) (a |an |the )?(pk|pharmacokinetic)( model)?|pk[- ](driven|linked)|pk[- ]?pd)\b/,
     pd: /\b(pd|pharmacodynamic\w*|effects?|responses?|biomarkers?|exposure[- ]response|concentration[- ]effect)\b/,
     papers: /\b(papers?|stud(y|ies)|publications?|literature|references?|articles?)\b/,
+    // a question about what something means, not about the data
+    explain: /\b(difference between|differences between|differ(s|ence)? from|distinguish|stands? for|what does .+ mean|meaning of|definition of|define|explain|describe what|what is meant|why (is|are|do|does|would|should)|how (does|do|is|are) .+ (work|relate|differ|calculated|derived|estimated)|when (is|are|do|does|should) .+ (used|reported)|is .+ the same as)\b/,
+    whatis: /^(what|whats|what s|who) (is|are|s) (an? |the )?/,
     models: /\b(models?|records?|simulat\w*)\b/
   };
   // who was studied: a reader's word → LIKE patterns over record.population (PK records carry it)
@@ -100,6 +103,7 @@
     records: 'models and records',
     gapfill: 'values a review supplied (not the paper)',
     search: 'search of names',
+    explain: 'a question about meaning, not about the data',
     missing: 'a drug with nothing extracted yet',
     choose: 'which drug?',
     out_of_scope: 'not a question about the data',
@@ -197,7 +201,7 @@
     var toks = text ? text.split(' ') : [];
     var used = toks.map(function () { return false; });
     var plan = { question: question, text: text, drugs: [], params: null, genes: [],
-                 missing: [], corrected: [], suggestions: [], rest: [], population: null, year: null };
+                 missing: [], corrected: [], suggestions: [], rest: [], population: null, year: null, terms: [] };
     // 'after 2020', 'since 2015', 'before 2000', 'in 2024' — a paper's year
     var ym = /\b(after|since|from|before|until|in) ((?:19|20)\d\d)\b/.exec(text);
     if (ym) plan.year = { op: { after: '>', since: '>=', from: '>=', before: '<', until: '<=', 'in': '=' }[ym[1]], y: +ym[2] };
@@ -227,9 +231,12 @@
         } else if (ph in lex.gene && (n > 1 || /\d/.test(ph) || ph.length >= 4)) {
           if (plan.genes.indexOf(lex.gene[ph]) < 0) plan.genes.push(lex.gene[ph]);
           hit = true;
-        } else if (ph in lex.param && !plan.params && (n > 1 || ph.length > 1)) {
-          // a lone one-letter word ('f', 'v') is a parameter only when nothing else is asked
-          if (ph.length > 1 || toks.length <= 3) { plan.params = { codes: lex.param[ph].codes, label: lex.param[ph].label, matched: ph }; hit = true; }
+        } else if (ph in lex.param && (n > 1 || ph.length > 1)) {
+          // the first parameter is the one asked for; every one is a term ('CL and CL/F')
+          var pe = { codes: lex.param[ph].codes, label: lex.param[ph].label, matched: ph };
+          if (!plan.params) plan.params = pe;
+          if (!plan.terms.some(function (x) { return x.label === pe.label; })) plan.terms.push(pe);
+          hit = true;
         }
         if (hit) for (var k = i; k < i + n; k++) used[k] = true;
       }
@@ -270,8 +277,24 @@
     return plan;
   }
 
+  // "what is the difference between CL and CL/F", "what does EC50 mean", "what is a poor
+  // metaboliser": no drug named and a question about meaning. A drug makes it a data question
+  // (possibly with a 'why' the prose may reason about); so does a population or a year.
+  function isExplain(p) {
+    if (p.drugs.length || p.missing.length || p.population || p.year) return false;
+    if (CUES.explain.test(p.text)) return true;
+    if (!CUES.whatis.test(p.text)) return false;
+    // 'what is EC50' / 'what is a poor metaboliser': nothing left beyond the term itself
+    var left = p.rest.filter(function (w) {
+      return ['metaboliser', 'metabolizer', 'metabolisers', 'metabolizers', 'model', 'models'].indexOf(w) < 0 &&
+             !Object.keys(CUES).some(function (k) { return k !== 'whatis' && k !== 'explain' && CUES[k].test(w); });
+    });
+    return left.length <= 2;
+  }
+
   function intentOf(p) {
     var t = p.text;
+    if (isExplain(p)) return 'explain';
     // every drug named is one the KB has nothing extracted for: say that, do not widen to all drugs
     if (p.missing.length && !p.drugs.length) return 'missing';
     // a name that could be several drugs: ask, rather than answer for all drugs
@@ -375,6 +398,14 @@
               "ORDER BY d.generic_name, r.domain, r.stem LIMIT 300;";
         title = 'models and records — ' + who;
         break;
+      case 'explain':
+        if (!p.terms.length) return { sql: null, title: 'explanation' };
+        var tc = [];
+        p.terms.forEach(function (x) { tc = tc.concat(x.codes); });
+        sql = "SELECT parameter_id AS code, name, category, units, synonyms FROM qcode\n" +
+              "WHERE parameter_id IN (" + inList(tc) + ")\nORDER BY parameter_id LIMIT 50;";
+        title = 'ontology entries — ' + p.terms.map(function (x) { return x.label; }).join(', ');
+        break;
       case 'choose':
         var opts = [];
         p.suggestions.forEach(function (s) { opts = opts.concat(s.options); });
@@ -413,6 +444,10 @@
   }
 
   function summarize(p, res) {
+    if (p.intent === 'explain')
+      return 'This asks what something means rather than for data. Choose a language model in the list below ' +
+             'for an answer in words' + (p.terms.length ? '; the ontology’s entries for ' +
+             p.terms.map(function (x) { return x.label; }).join(' and ') + ' are below.' : '.');
     if (p.intent === 'choose')
       return 'More than one drug matches “' + p.suggestions.map(function (s) { return s.word; }).join('”, “') +
              '” — pick one above.';
@@ -486,7 +521,7 @@
   // → Promise<string> } — WebLLM on the page (pk-ask-llm.js), Ollama in test/query_eval.js.
 
   var MODEL_INTENTS = ['param_values', 'disagree', 'pgx', 'dose_response', 'pd_models', 'papers',
-                       'records', 'gapfill', 'search', 'out_of_scope', 'other'];
+                       'records', 'gapfill', 'search', 'explain', 'out_of_scope', 'other'];
   var INTENT_HELP = {
     param_values: 'values of a PK or PD parameter (clearance, volume, half-life, absorption rate, bioavailability, EC50, Emax…)',
     disagree: 'drugs whose papers report very different values of one parameter',
@@ -497,6 +532,7 @@
     records: 'what models or records the database holds for a drug',
     gapfill: 'values a review supplied because the paper lacked them',
     search: 'look up a name',
+    explain: 'what a term, parameter, model or method means, or how two differ — answered in words, no data',
     out_of_scope: 'personal medical or dosing advice, or not about this database',
     other: 'about the data, but none of the above (counts, rankings, comparisons across tables)'
   };
@@ -517,6 +553,7 @@
     ['Does the INR model of warfarin depend on the concentration?', { intent: 'pd_models', drugs: ['warfarin'], parameter: '', gene: '', population: '' }],
     ['How much ibuprofen should I give my 4-year-old?', { intent: 'out_of_scope', drugs: ['ibuprofen'], parameter: '', gene: '', population: '' }],
     ['Which drug has the most papers?', { intent: 'other', drugs: [], parameter: '', gene: '', population: '' }],
+    ['Why do some papers report V/F instead of V?', { intent: 'explain', drugs: [], parameter: 'V/F', gene: '', population: '' }],
     ['volume of distribution of vancomycin in newborns', { intent: 'param_values', drugs: ['vancomycin'], parameter: 'volume of distribution', gene: '', population: 'newborns' }]
   ];
 
@@ -524,12 +561,14 @@
   var OUT_OF_SCOPE = /\b(should i|can i (take|give|use)|how much (should|can|do|to) (i|we|you) (take|give)|my (dose|dosage|child|son|daughter|baby|doctor|wife|husband|mother|father)|dose for (me|my)|safe for me|i am taking|i'm taking|im taking)\b/;
   // what a keyword reading cannot do: counts, rankings, aggregates
   var AGGREGATE = /\b(most|least|highest|lowest|largest|smallest|how many|number of|count|average|mean|median|top \d+|rank\w*|per (drug|gene|paper)|each drug|(more|fewer|less) than \d+|at least \d+)\b|\bboth\b.+\band\b/;
+  var FOLLOW_UP = /^(and|also|so|then|what about|how about|and what about|and how about|same for|what of)\b/;
   var FILLER = ('model models record records paper papers study studies data database known ' +
                 'available report reports there kb library pk pd pgx parameter parameters ' +
                 'value values extracted').split(' ');
 
   // Does the keyword reading leave something unread that a model could read?
   function needsModel(p) {
+    if (p.intent === 'explain') return false;      // answered in words already; nothing to look up
     if (p.corrected.length) return true;          // 'weather' read as feather: let the model weigh in
     if (p.intent === 'missing' || p.intent === 'choose') return false;
     if (p.intent === 'search') return true;
@@ -623,7 +662,17 @@
     var named = p.drugs.some(function (d) { return !p.corrected.some(function (c) { return c.from === d.matched; }); }) ||
                 !!p.params || p.genes.length > 0;
     if (it === 'out_of_scope' && named) it = p.intent;
-    if (LOCKED.indexOf(p.intent) >= 0 && it !== 'out_of_scope' && it !== 'other') it = p.intent;
+    // 'explain' only where the keywords found no data cue, or the wording asks for a meaning:
+    // "PD models driven by a PK model" is a list of records, not a definition
+    if (it === 'explain' && !(['search', 'records'].indexOf(p.intent) >= 0 || CUES.explain.test(p.text) ||
+                              CUES.whatis.test(p.text))) it = p.intent;
+    // 'explain' only where the keywords found no data cue, or the wording asks for a meaning:
+    // "PD models driven by a PK model" is a list of records, not a definition
+    if (it === 'explain' && !(['search', 'records'].indexOf(p.intent) >= 0 || CUES.explain.test(p.text) ||
+                              CUES.whatis.test(p.text))) it = p.intent;
+    if (LOCKED.indexOf(p.intent) >= 0 && it !== 'out_of_scope' && it !== 'other' &&
+        !(it === 'explain' && !q.drugs.length)) it = p.intent;
+    if (it === 'explain' && q.drugs.length) it = p.intent === 'explain' ? 'records' : p.intent;
     // a count or a ranking has no template: a small model often reaches for the nearest one
     // ('records' for "how many drugs have…"), which answers a different question
     if (AGGREGATE.test(p.text) && it !== 'out_of_scope') it = 'other';
@@ -668,7 +717,8 @@
   // ── the explanation: the model's words, the rows' numbers ───────────────────────────────
   var EXPLAIN_COLS = ['drug', 'parameter', 'value', 'unit', 'compound', 'population', 'paper', 'gene', 'mechanism',
                       'response', 'model_family', 'driver_kind', 'year', 'title', 'n', 'spread', 'domain', 'status'];
-  function explainMessages(question, plan, res, summary) {
+  function explainMessages(question, plan, res, summary, general, entries) {
+    var ref = (entries || []).map(function (e) { return '[' + e.title + '] ' + e.text; }).join('\n');
     var r = res && res[0];
     var cols = r ? r.columns.filter(function (c) { return EXPLAIN_COLS.indexOf(c) >= 0; }) : [];
     if (r && !cols.length) cols = r.columns.slice(0, 6);
@@ -677,12 +727,76 @@
     }) : [];
     return [
       { role: 'system', content: 'Answer the question in at most three short sentences for a pharmacologist, from the ' +
-        'database result below only. Use only numbers that appear in the summary or the rows; do not compute ' +
-        'averages. No advice, no outside knowledge, no lists.' },
+        'database result below' + (general ? ', adding general pharmacology where the question asks why or how' : ' only') +
+        '. Use only numbers that appear in the summary or the rows; do not compute averages. No advice, ' +
+        (general ? '' : 'no outside knowledge, ') + 'no lists.' +
+        (ref ? '\nFor the why or how, the site glossary says (use it, do not contradict it; if it does not ' +
+               'explain the case, say what the data show and that the reason is not in the data):\n' + ref : '') },
       { role: 'user', content: 'Question: ' + question + '\nSummary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
         ' in all):\n' + cols.join(' | ') + '\n' + rows.join('\n') }
     ];
   }
+  // ── the glossary (docs/assets/chat/glossary.json): what explanations are made of ─────────
+  function withGlossary(lex, data) {
+    lex.glossary = (data && data.entries) || [];
+    lex.glossaryStatus = (data && data.status) || null;
+    lex.glossary.forEach(function (e) { e._terms = (e.terms || []).map(norm).filter(Boolean); });
+    return lex;
+  }
+  // entries the question names — by a term in its words, or by a parameter it resolved —
+  // in the order the question names them, at most three
+  function glossaryFor(p, lex) {
+    var text = ' ' + p.text.replace(/[?!.,]/g, ' ').replace(/\s+/g, ' ') + ' ';
+    var codes = {};
+    p.terms.forEach(function (x, i) { x.codes.forEach(function (c) { if (!(c in codes)) codes[c] = text.indexOf(' ' + x.matched + ' '); }); });
+    var hits = [];
+    (lex.glossary || []).forEach(function (e) {
+      var at = -1;
+      e._terms.forEach(function (t) {
+        var i = text.indexOf(' ' + t + ' ');
+        if (i >= 0 && (at < 0 || i < at)) at = i;
+      });
+      (e.qcodes || []).forEach(function (c) { if (c in codes && (at < 0 || codes[c] < at)) at = Math.max(0, codes[c]); });
+      if (at >= 0) hits.push([at, e]);
+    });
+    hits.sort(function (a, b) { return a[0] - b[0]; });
+    var seen = {};
+    return hits.map(function (h) { return h[1]; }).filter(function (e) { return !seen[e.id] && (seen[e.id] = 1); }).slice(0, 3);
+  }
+
+  // an answer in words, from general knowledge — the conversation so far for follow-ups, the
+  // ontology's names for the terms, and no data
+  function generalMessages(question, p, history, entries) {
+    var terms = p.terms.map(function (x) { return x.label; }).join('; ');
+    var ref = (entries || []).map(function (e) { return '[' + e.title + '] ' + e.text; }).join('\n');
+    var m = [{ role: 'system', content:
+      'You are a pharmacometrics tutor on a website about a pharmacokinetics, pharmacodynamics and ' +
+      'pharmacogenomics knowledge base. Answer in plain language, in at most five sentences. Explain ' +
+      'concepts; do not give values for specific drugs and do not give medical or dosing advice.' +
+      (terms ? ' The question names these parameters: ' + terms + '.' : '') +
+      (ref ? '\nThe site glossary says (answer from it, in your own words, and do not contradict it):\n' + ref : '') }];
+    (history || []).slice(-3).forEach(function (h) {
+      m.push({ role: 'user', content: h.q }, { role: 'assistant', content: String(h.a || '').slice(0, 400) });
+    });
+    m.push({ role: 'user', content: question });
+    return m;
+  }
+  // a general answer may explain; a value for a named drug must come from the data, so a
+  // sentence naming a drug with a number goes
+  function checkGeneral(text, lex) {
+    var kept = [], dropped = [];
+    String(text || '').replace(/<think>[\s\S]*?<\/think>/g, '').replace(/^\s*(\d+[.)]|[-*•])\s+/gm, '')
+      .split(/(?<=[.!?])\s+|\n+/).forEach(function (sent) {
+        sent = sent.trim();
+        if (!sent) return;
+        var toks = norm(sent).split(' '), drug = false;
+        for (var i = 0; i < toks.length && !drug; i++)
+          drug = (toks[i] in lex.drug && toks[i].length > 3) || (i + 1 < toks.length && (toks[i] + ' ' + toks[i + 1]) in lex.drug);
+        (drug && numbersIn(sent).length ? dropped : kept).push(sent);
+      });
+    return { text: kept.join(' '), dropped: dropped };
+  }
+
   function numbersIn(s) {
     return (String(s).replace(/(\d),(\d{3})\b/g, '$1$2').match(/-?\d+(\.\d+)?(e-?\d+)?/gi) || []).map(Number);
   }
@@ -696,7 +810,7 @@
     return (norm(s).match(/[a-z][a-z0-9-]{3,}/g) || []).filter(function (w) { return STOP.indexOf(w) < 0; })
       .map(function (w) { return w.replace(/(es|s)$/, ''); });         // 'records' and 'record(s)' alike
   }
-  function checkExplanation(text, res, extra, question, shown) {
+  function checkExplanation(text, res, extra, question, shown, general) {
     var r = res && res[0];
     var cells = [String(extra || '')];
     if (r) r.values.slice(0, shown || 12).forEach(function (v) { v.forEach(function (x) { if (x !== null) cells.push(String(x)); }); });
@@ -716,7 +830,7 @@
         if (!sent) return;
         var nums = numbersIn(sent);
         // a checked number ties a sentence to the rows; without one it needs a word from them
-        var grounded = nums.length > 0 || words(sent).some(function (w) { return vocab[w] && !asked[w]; });
+        var grounded = general || nums.length > 0 || words(sent).some(function (w) { return vocab[w] && !asked[w]; });
         if (nums.every(ok) && !(nums.length && STATS.test(sent)) && grounded) kept.push(sent);
         else dropped.push(sent);
       });
@@ -733,6 +847,10 @@
     var out = { question: question, by: 'keywords', explanation: null, dropped: [], modelError: null };
     var p = parse(question, lex);
     if (OUT_OF_SCOPE.test(p.text)) p.intent = 'out_of_scope';
+    // "and what about V/F?" after an explanation is the same kind of question, not a data query
+    var prev = (opts.history || []).slice(-1)[0];
+    if (prev && prev.intent === 'explain' && FOLLOW_UP.test(p.text) && !p.drugs.length && !p.missing.length &&
+        p.intent !== 'out_of_scope') p.intent = 'explain';
     var step = Promise.resolve(p);
     if (eng && p.intent !== 'out_of_scope' && (opts.always || needsModel(p))) {
       step = eng.json(planMessages(question, p), PLAN_SCHEMA).then(function (m) {
@@ -749,18 +867,47 @@
                       'or medical advice — ask a doctor or pharmacist.';
         return out;
       }
+      if (plan.intent === 'explain') {
+        // words, not data: no query and no table. The glossary answers on its own; a model
+        // answers from it (or, where it has no entry, from general knowledge — said so)
+        out.glossary = glossaryFor(plan, lex);
+        out.general = true;
+        if (!eng && out.glossary.length) {
+          out.sql = null; out.title = 'glossary'; out.res = [];
+          out.summary = out.glossary.map(function (e) { return e.title + ': ' + e.text; }).join('\n\n');
+          return out;
+        }
+        if (eng) {
+          out.sql = null; out.title = 'explanation'; out.res = [];
+          return eng.text(generalMessages(question, plan, opts.history, out.glossary), 260).then(function (t) {
+            var c = checkGeneral(t, lex);
+            out.explanation = c.text || null; out.dropped = c.dropped;
+            out.summary = c.text ? '' : out.glossary.map(function (e) { return e.title + ': ' + e.text; }).join('\n\n') ||
+                                        'The model gave no usable explanation.';
+            return out;
+          });
+        }
+        out.general = false;            // keywords, no entry: the ontology rows below, if any
+      }
       if (plan.intent === 'other' && !eng) plan.intent = 'search';
       if (plan.intent === 'other') return modelSQL(question, db, eng, out);
       var q = toSQL(plan);
       out.sql = q.sql; out.title = q.title;
-      out.res = db.exec(q.sql);
+      out.res = q.sql ? db.exec(q.sql) : [];
       return out;
     }).then(function (o) {
+      if (o.general) return o;
+      if (o.plan.intent === 'explain') { o.summary = summarize(o.plan, o.res); return o; }
       o.summary = o.summary || summarize(o.plan, o.res);
       if (!eng || !opts.explain || !o.res || !o.res[0] || !o.res[0].values.length) return o;
       if (['search', 'missing', 'choose'].indexOf(o.plan.intent) >= 0) return o;   // nothing to say in prose
-      return eng.text(explainMessages(question, o.plan, o.res, o.summary), 160).then(function (t) {
-        var c = checkExplanation(t, o.res, o.summary, question, 12);
+      // a data question that also asks why ('why is CL/F of metformin reported, not CL'): the
+      // prose may reason generally; its numbers still have to be the rows'
+      var why = CUES.explain.test(o.plan.text);
+      var entries = why ? glossaryFor(o.plan, lex) : [];
+      o.glossary = entries;
+      return eng.text(explainMessages(question, o.plan, o.res, o.summary, why, entries), why ? 220 : 160).then(function (t) {
+        var c = checkExplanation(t, o.res, o.summary, question, 12, why);
         o.explanation = c.text || null; o.dropped = c.dropped;
         return o;
       }, function (e) { o.modelError = String(e && e.message || e); return o; });
@@ -816,7 +963,8 @@
               PLAN_SCHEMA: PLAN_SCHEMA, MODEL_INTENTS: MODEL_INTENTS, needsModel: needsModel,
               planMessages: planMessages, mergePlan: mergePlan, guardSQL: guardSQL, schemaCard: schemaCard,
               sqlMessages: sqlMessages, explainMessages: explainMessages, checkExplanation: checkExplanation,
-              stripLimit: stripLimit, answer: answer };
+              stripLimit: stripLimit, answer: answer, generalMessages: generalMessages, checkGeneral: checkGeneral,
+              withGlossary: withGlossary, glossaryFor: glossaryFor };
   root.pkAsk = api;
   if (typeof module === 'object' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);
