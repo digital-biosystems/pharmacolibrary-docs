@@ -6,16 +6,12 @@
   <div id="pkq-status" class="pkq-status">Loading the knowledge database…</div>
   <div id="pkq-ui" hidden>
     <div id="pkq-log" class="pkq-log" aria-live="polite"></div>
-    <div id="pkq-llmbox" class="pkq-llmbox" hidden>
-      <p>A small language model can read questions the keywords miss and answer in prose. It runs on your GPU (WebGPU) and downloads once into this browser; nothing is sent anywhere. It never supplies a number: values come from the database, and a sentence with a number the rows do not hold is dropped.</p>
-      <p class="pkq-row"><select id="pkq-llm-model" aria-label="Model"></select><button id="pkq-llm-load" class="pkq-btn" type="button">Download and enable</button></p>
-      <p id="pkq-llm-status" class="pkq-meta" aria-live="polite"></p>
-    </div>
     <div class="pkq-bar">
-      <button id="pkq-mode" class="pkq-mode" type="button" aria-expanded="false" title="Language model (optional)">keywords</button>
+      <select id="pkq-mode" class="pkq-mode" aria-label="How questions are read"><option value="">keywords (no LLM)</option></select>
       <input id="pkq-ask" type="text" enterkeyhint="send" placeholder="Ask about a drug, a parameter, a gene…" autocomplete="off" aria-label="Your question">
       <button id="pkq-askbtn" class="pkq-send" type="button" aria-label="Ask">Ask</button>
     </div>
+    <p id="pkq-llmnote" class="pkq-llmnote" aria-live="polite">A small language model can read questions the keywords miss and answer in prose. It runs on your GPU (WebGPU) and downloads once into this browser; nothing is sent anywhere. It never supplies a number: values come from the database, and a sentence with a number the rows do not hold is dropped.</p>
   </div>
 </div>
 

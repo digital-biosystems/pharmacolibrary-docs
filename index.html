@@ -118,10 +118,6 @@
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
       border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; color: #0f172a; }
     .pkq-sqlbox .err { color: #b91c1c; }
-    .pkq-llmbox { border-top: 1px solid #e2e8f0; padding: 8px 14px; font-size: 13px; color: #475569;
-      background: #f8fafc; }
-    .pkq-llmbox p { margin: 4px 0; }
-    .pkq-llmbox select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 100%; }
     .pkq-bar { display: flex; gap: 8px; align-items: center; padding: 10px; border-top: 1px solid #e2e8f0;
       background: #fff; }
     .pkq-bar input { flex: 1; min-width: 0; font: inherit; font-size: 15px; padding: 9px 12px;
@@ -130,8 +126,11 @@
     .pkq-send { font: inherit; font-size: 14px; padding: 8px 16px; border-radius: 999px; cursor: pointer;
       background: var(--theme-color, #0074d9); color: #fff; border: 0; }
     .pkq-send:disabled { opacity: .5; cursor: default; }
-    .pkq-mode { font: inherit; font-size: 12px; padding: 6px 10px; border-radius: 999px; cursor: pointer;
-      border: 1px solid #cbd5e1; background: #fff; color: #64748b; white-space: nowrap; }
+    .pkq-mode { font: inherit; font-size: 12px; padding: 7px 8px; border-radius: 999px; cursor: pointer;
+      border: 1px solid #cbd5e1; background: #fff; color: #475569; max-width: 230px; }
+    .pkq-llmnote { margin: 0; padding: 0 16px 8px; font-size: 11.5px; line-height: 1.45; color: #94a3b8;
+      background: #fff; }
+    .pkq-llmnote .pkq-llmstatus { color: #166534; font-weight: 600; }
     .pkq-mode.on { border-color: #86efac; background: #f0fdf4; color: #166534; }
     /* the database description sits below the chat, small */
     .markdown-section #pkq ~ h2 { font-size: 15px; margin-top: 28px; color: #475569; border: 0; }
@@ -139,7 +138,8 @@
     .markdown-section #pkq ~ table td, .markdown-section #pkq ~ table th { padding: 3px 8px; }
     @media (max-width: 600px) {
       #pkq-ui { height: calc(100vh - 110px); border-radius: 0; border-left: 0; border-right: 0; }
-      .pkq-mode { padding: 6px 8px; }
+      .pkq-bar { flex-wrap: wrap; }
+      .pkq-mode { order: -1; flex: 1 0 100%; max-width: none; }
     }
     /* ── sites page ────────────────────────────────────────────────────────────
        Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
@@ -723,57 +723,77 @@
         });
       }
 
-      // ── the optional model: opt-in, sizes stated, nothing until the reader asks ─────────
-      var LLM_KEY = 'pkq-llm-model';
-      function llmStatus(msg) { var s = el('pkq-llm-status'); if (s) s.textContent = msg; }
-      function mode() {
-        var b = el('pkq-mode'); if (!b) return;
-        b.textContent = ENGINE ? ENGINE.name : 'keywords';
-        b.className = 'pkq-mode' + (ENGINE ? ' on' : '');
-        b.title = ENGINE ? ENGINE.name + ' reads the questions and answers in prose' : 'Answers from keywords; click to add a language model';
+      // ── how questions are read: one list — keywords, or a model ──────────────────────────
+      // Choosing a model starts its download (once, into this browser) and enables it; choosing
+      // keywords switches it off and frees the GPU. The list says which models are already
+      // downloaded. A model chosen before and still cached is enabled again on the next visit.
+      var LLM_KEY = 'pkq-llm-model', CHOICE = '', SUPPORT = null, CACHED = {};
+      function llmStatus(msg) {
+        var note = el('pkq-llmnote'); if (!note) return;
+        var st = note.querySelector('.pkq-llmstatus');
+        if (!st) { st = node('strong', 'pkq-llmstatus'); note.insertBefore(st, note.firstChild); }
+        st.textContent = msg ? msg + ' ' : '';
       }
-      function llmPanel() {
-        var box = el('pkq-llmbox'), sel = el('pkq-llm-model'), btn = el('pkq-mode');
-        if (!box) return;
-        box.hidden = !box.hidden;
-        if (btn) btn.setAttribute('aria-expanded', String(!box.hidden));
-        if (box.hidden || !sel || sel.options.length) return;
+      function remember(key) { try { localStorage.setItem(LLM_KEY, key); } catch (e) { /* a convenience only */ } }
+      function modeList() {                    // (re)build the options from MODELS and the cache
+        var sel = el('pkq-mode');
+        if (!sel || !window.pkAskLLM) return;
+        while (sel.options.length > 1) sel.remove(1);
+        window.pkAskLLM.MODELS.forEach(function (m) {
+          var o = node('option', null, m.label + (SUPPORT && !SUPPORT.ok ? ' (needs WebGPU)'
+            : CACHED[m.key] ? ' · downloaded' : ' · ' + m.gb + ' GB download'));
+          o.value = m.key;
+          o.disabled = !!(SUPPORT && !SUPPORT.ok);
+          o.title = m.label + ': ' + m.gb + ' GB download, about ' + m.vram + ' GB of GPU memory';
+          sel.appendChild(o);
+        });
+        sel.value = CHOICE;
+        sel.className = 'pkq-mode' + (ENGINE ? ' on' : '');
+      }
+      function modeInit() {
         llmScript().then(function () { return window.pkAskLLM.support(); }).then(function (sup) {
-          var last = null;
-          try { last = localStorage.getItem(LLM_KEY); } catch (e) { /* storage blocked: no default */ }
-          window.pkAskLLM.MODELS.forEach(function (m) {
-            var o = node('option', null, m.label + ' — ' + m.gb + ' GB download, ~' + m.vram + ' GB GPU memory');
-            o.value = m.key;
-            if (m.key === last) o.selected = true;
-            sel.appendChild(o);
-          });
-          if (ENGINE) { el('pkq-llm-load').textContent = 'Enabled'; el('pkq-llm-load').disabled = true; }
-          if (!sup.ok) {
-            el('pkq-llm-load').disabled = true;
-            llmStatus('Not available here: ' + sup.why + '. Asking still works without it.');
-            return;
-          }
-          return window.pkAskLLM.cached(sel.value).then(function (c) {
-            if (c && !ENGINE) llmStatus('Already downloaded in this browser — enabling loads it onto the GPU.');
+          SUPPORT = sup;
+          modeList();
+          if (!sup.ok) { llmStatus('Language models are not available here: ' + sup.why + '.'); return; }
+          // which models are downloaded — asks WebLLM, so only once the page is idle
+          return Promise.all(window.pkAskLLM.MODELS.map(function (m) {
+            return window.pkAskLLM.cached(m.key).then(function (c) { CACHED[m.key] = c; });
+          })).then(function () {
+            modeList();
+            var last = null;
+            try { last = localStorage.getItem(LLM_KEY); } catch (e) { /* storage blocked */ }
+            if (last && CACHED[last] && !ENGINE && !CHOICE) choose(last);
           });
         }).catch(function (e) { llmStatus(String(e.message || e)); });
       }
-      function llmLoad() {
-        var sel = el('pkq-llm-model'), btn = el('pkq-llm-load');
-        if (!sel || !btn) return;
-        btn.disabled = true;
-        llmScript().then(function () {
-          return window.pkAskLLM.load(sel.value, function (t) { llmStatus(t); });
+      function choose(key) {
+        var sel = el('pkq-mode'), prev = ENGINE;
+        CHOICE = key || '';
+        remember(CHOICE);
+        if (sel) sel.value = CHOICE;
+        if (!CHOICE) {                          // keywords: the model off, its GPU memory freed
+          ENGINE = null; modeList(); llmStatus('');
+          if (prev && prev.unload) prev.unload();
+          return;
+        }
+        var m = window.pkAskLLM.MODELS.filter(function (x) { return x.key === CHOICE; })[0];
+        var token = CHOICE;
+        ENGINE = null; modeList();
+        if (prev && prev.unload) prev.unload();
+        llmStatus((CACHED[CHOICE] ? 'Loading ' : 'Downloading ') + m.label + '… questions are read by keywords until it is ready.');
+        window.pkAskLLM.load(CHOICE, function (text, frac) {
+          if (CHOICE !== token) return;
+          var pct = typeof frac === 'number' && frac > 0 ? ' ' + Math.round(frac * 100) + ' %' : '';
+          llmStatus((CACHED[token] ? 'Loading ' : 'Downloading ') + m.label + '…' + pct);
         }).then(function (eng) {
-          ENGINE = eng;
-          try { localStorage.setItem(LLM_KEY, sel.value); } catch (e) { /* a convenience only */ }
-          btn.textContent = 'Enabled';
-          llmStatus(eng.name + ' is on: answers come in prose; the numbers still come from the database.');
-          mode();
-          setTimeout(function () { var b = el('pkq-llmbox'); if (b) b.hidden = true; }, 1800);
+          if (CHOICE !== token) { eng.unload(); return; }       // the reader chose something else meanwhile
+          ENGINE = eng; CACHED[token] = true;
+          modeList();
+          llmStatus(m.label + ' is on — answers in prose.');
         }).catch(function (e) {
-          btn.disabled = false;
-          llmStatus('Could not load the model: ' + String(e.message || e));
+          if (CHOICE !== token) return;
+          CHOICE = ''; remember(''); modeList();
+          llmStatus('Could not load ' + m.label + ': ' + String(e.message || e) + '. Back to keywords.');
         });
       }
 
@@ -820,15 +840,16 @@
       }
 
       function boot() {
-        if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; attach(); mode(); return; }
+        if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; attach(); modeList(); llmStatus(ENGINE ? ENGINE.name + ' is on — answers in prose.' : ''); return; }
         if (loading) return;
         loading = true;
         window.pkdb.load(status).then(function (db) {
           DB = db;
           el('pkq-status').hidden = true;
           el('pkq-ui').hidden = false;
-          attach(); mode();
+          attach();
           askScript().then(function () { lexicon(); });       // warm the lexicon before the first question
+          setTimeout(modeInit, 300);
           askFromHash();
         }).catch(function (e) { loading = false; status(String(e.message || e), true); });
       }
@@ -846,10 +867,11 @@
           var t = ev.target;
           if (!t || !document.getElementById('pkq')) return;
           if (t.id === 'pkq-askbtn') { var i = el('pkq-ask'); if (!BUSY && i.value.trim()) { ask(i.value); i.value = ''; } return; }
-          if (t.id === 'pkq-mode') { llmPanel(); return; }
-          if (t.id === 'pkq-llm-load') { llmLoad(); return; }
           var c = t.closest && t.closest('button.pkq-chip[data-ask]');
           if (c) ask(c.dataset.ask);
+        });
+        document.addEventListener('change', function (ev) {
+          if (ev.target && ev.target.id === 'pkq-mode') choose(ev.target.value);
         });
         document.addEventListener('keydown', function (ev) {
           var t = ev.target;
