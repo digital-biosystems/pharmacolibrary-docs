@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Ding_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Ding1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,19 +15,17 @@
 
 > **Species: monkey.** This record comes from an animal study (monkey), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The model was built but has not been simulated yet.**
+**The azathioprine record was rejected because the 8-hydroxymercaptopurine metabolite has no path from the dose (an unlinked metabolite), and the model was built from the paper's abstract only, so summary statistics stood in for a fitted model.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is azathioprine's own; they describe 6-mercaptopurine.
+The azathioprine model forms two metabolites, 6-mercaptopurine and 8-hydroxymercaptopurine, but 8-hydroxymercaptopurine was formed with no compartment (n_cmt: 0) and no link parameter, leaving it unreachable from the dose. Because only the abstract was read, the reported values for 6-mercaptopurine — terminal half-life 41.6 min, apparent clearance 48.4 ml/min/kg, apparent volume of distribution 1.76 liters/kg — are summary statistics rather than a fitted model. A second reader also disagreed on the dose compound (azathioprine), the primary analyte, the relation of azathioprine to 6-mercaptopurine (hydrolysis versus metabolism), the parameterization (mechanistic versus apparent), and could not confirm the three parameter values. Extracted — 6-mercaptopurine: t1/2z 41.6 min, CLm,norm/F 48.4 ml/min/kg, Vm,norm/F 1.76 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:36:15.291051+00:00) predates the upstream re-run (2026-10-03 10:36:32.761780+00:00). Current validate status: `rejected`.
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-mercaptopurine`.
 
@@ -35,9 +33,9 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
-**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** CLm,norm/F, Vm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -68,8 +66,6 @@ Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and 
 - row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures '6-mercaptopurine', not azathioprine — the review values are the parent's
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-mercaptopurine
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Ding_1979_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -119,17 +115,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -138,8 +123,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_1979` / `Ding_1979::reference`)
-- model: `../../../knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Ding1979_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_Ding1979_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

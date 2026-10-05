@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/&quot;},{&quot;label&quot;:&quot;de_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_de2023_reference&quot;,&quot;label&quot;:&quot;de_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_de2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisone — `Prednisone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,15 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The record was rejected because the prednisolone parameter CLm/F (27.6 L/h), an apparent metabolite clearance, was labelled as an allometrically scaled unbound clearance and volume of distribution, a dimension mismatch on a structural parameter.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is prednisone's own; they describe prednisolone.
+The value 27.6 L/h is defined as CLm/F, the apparent clearance of the metabolite prednisolone formed from prednisone, but its verbatim label describes the unbound clearance (CLu) and volume of distribution of free prednisolone allometrically scaled to 70 kg, so the parameter's meaning and its label do not match dimensionally. A second reader also extracted a volume of distribution of free prednisolone of 101 that is absent from this record, and the two readers disagreed on how the ciclosporin cotreatment effect on CLu (67%) and the 27.6 L/h clearance were assigned. The record was additionally built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — prednisolone: CLm/F 27.6 L/h, CLu 67 %.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ciclosporin cotreatment decreased clu: this record has none, the second reading 67; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -30,18 +32,20 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
   ·  DOI: [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610)
 
 ## Model component
-<dbs-pgx drug="prednisone" model-id="Prednisone_de2023_reference" status="curated_candidate" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisone" model-id="Prednisone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance (CLU ) | `Q22` · CL | 27.6 | L/h | 7.666666666666667e-06 | [l] / [h] | not captured | exact (1.0) | de_2023:abstract | — | not captured |
-| volume of distribution of free prednisolone | `Q61` · V | 101 | L | 0.101 | [l] | not captured | llm_confirmed (0.6) | de_2023:abstract | — | not captured |
+| The clearance (CLU ) and volume of distribution of free prednisolone allometrically scaled to 70 kg | `Q351` · CLm/F | 27.6 | L/h | 7.666666666666667e-06 | [l] / [h] | not captured | exact (1.0) | de_2023:abstract | — | not captured |
+| Ciclosporin cotreatment decreased CLU by | `Q24` · CLu | 67 | % | not captured | [%] | not captured | llm_confirmed (0.6) | de_2023:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,7 +55,13 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=prednisolone
+- unit_dimension_mismatch: 'Ciclosporin cotreatment decreased CLU by' → Q24 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- metabolite prednisolone: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=prednisolone
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 1 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'prednisolone', not prednisone — the review values are the parent's
 
@@ -60,30 +70,42 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[ciclosporin cotreatment decreased clu by]` | 67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ciclosporin cotreatment decreased clu]` | not captured | 67 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance]` | not captured | 27.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[the clearance (clu ) and volume of distribution of free prednisolone allometrically scaled to 70 kg]` | 27.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution of free prednisolone]` | not captured | 101 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['de_2023:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['de_2023:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 27.6 | not captured | not captured | ['de_2023:abstract'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q24 | fail | dimensionless | % | not captured | not captured | ['de_2023:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['de_2023:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 27.6 L/h | not captured | not captured | ['de_2023:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 101 L | not captured | not captured | ['de_2023:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=prednisolone) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -93,37 +115,19 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_prednisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2023` / `de_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/Prednisone_de2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/Prednisone_de2023_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/Prednisone_de2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_modelica.zip" download>Prednisone_de2023_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_fmi.zip" download>Prednisone_de2023_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_matlab.zip" download>Prednisone_de2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_matlab_simbio.zip" download>Prednisone_de2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_sbml.zip" download>Prednisone_de2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_cellml.zip" download>Prednisone_de2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference.svg" alt="Prednisone_de2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_prednisone/Prednisone_de2023_reference/Prednisone_de2023_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Prednisone_de2023_reference_params.json` · controls `Prednisone_de2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 05:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 19:50 UTC</sub>

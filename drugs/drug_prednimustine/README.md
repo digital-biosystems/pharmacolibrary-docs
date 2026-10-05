@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Prednimustine has been used in trials studying the treatment of Lymphoma.
+Prednimustine is an alkylating antineoplastic agent, a nitrogen mustard analogue that has been investigated as a cancer treatment. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7239694](https://www.wikidata.org/wiki/Q7239694) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

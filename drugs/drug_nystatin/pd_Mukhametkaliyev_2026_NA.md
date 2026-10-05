@@ -15,19 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Natamycin (measured concentrations) drives neuraminidase activity (in unknown) (inhibition; the model form was not identified).
+**As extracted:** Nystatin (measured concentrations) drives neuraminidase activity: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> In fluorescence-based neuraminidase assays, nystatin (and natamycin, filipin) concentration-dependently inhibited NDV neuraminidase activity, with an IC50 of 0.0117 ± 0.0029 mg/mL for nystatin (filipin 0.0043 ± 0.0015 mg/mL; natamycin 0.0220 ± 0.0138 mg/mL). The paper does not define a specific PD mechanism, suggesting the inhibition likely reflects nonspecific membrane-mediated effects rather than direct enzymatic inhibition.
+> Nystatin concentration (mg/mL) inhibits neuraminidase activity via a sigmoid Emax model, with an IC50 of 0.0117 mg/mL. The paper does not specify the precise kinetic mechanism, noting that effects likely arise from a combination of glycoprotein association and indirect membrane-mediated mechanisms rather than specific protein inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Mukhametkaliyev_2026`
-- **model family:** `unknown`
+- **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Mukhametkaliyev A et al., Antiviral Activity of Polyene Macrolide…, Molecules (Basel, Switzerla… (2026)
@@ -36,9 +36,7 @@ Mukhametkaliyev A et al., Antiviral Activity of Polyene Macrolide…, Molecules 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Natamycin — Mean IC50 ± SD | `Q322` · not captured | 0.0220 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row1:col4 |
-| PD (effect) | Filipin — Mean IC50 ± SD | `Q322` · not captured | 0.0043 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row2:col4 |
-| PD (effect) | Nystatin — Mean IC50 ± SD | `Q322` · not captured | 0.0117 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row3:col4 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.0117 | mg/mL | not captured | llm (not captured) | Mukhametkaliyev_2026:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Celecoxib, a selective cyclooxygenase-2 (COX-2) inhibitor, is a nonsteroidal anti-inflammatory drug (NSAID) which is known for its decreased risk of causing gastrointestinal bleeding compared to other NSAIDS.[A181544] It is used to manage symptoms of various types of arthritis pain and in familial adenomatous polyposis (FAP) to reduce precancerous polyps in the colon.[A181532] It is marketed by Pfizer under the brand name Celebrex, and was initially granted FDA approval in 1998.[L7604] 
+Celecoxib is a non-steroidal anti-inflammatory drug (a COX-2 inhibitor) used to treat pain and inflammatory joint conditions such as osteoarthritis, rheumatoid arthritis, and ankylosing spondylitis, and also familial adenomatous polyposis. It is an approved medicine, widely used for these conditions, though it carries a boxed warning and one EU product has been withdrawn.
 
-Interestingly, selective COX-2 inhibitors (especially celecoxib), have been evaluated as potential cancer chemopreventive and therapeutic drugs in clinical trials for a variety of malignancies.[A34124]
-
-**Indication.** Celecoxib is indicated for symptomatic treatment of adult osteoarthritis (OA) and adult rheumatoid arthritis (RA).[L7646] Celecoxib is not a substitute for aspirin for cardiovascular event prophylaxis.[L7646] 
-
-It may be also be used to treat acute pain from various sources, juvenile rheumatoid arthritis in children over 2, ankylosing spondylitis, and primary dysmenorrhea.[L7646]
-
-Celecoxib, in combination with [tramadol], is indicated for the management of acute pain in adults severe enough to require an opioid analgesic and in whom alternative treatments are inadequate.[L38949]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408801](https://www.wikidata.org/wiki/Q408801) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -72,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` metabolism, `CYP2C8` metabolism/substrate, `CYP2C9` metabolism/substrate, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…About 57% of an oral dose of celecoxib is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` inhibitor, `ABCC4` inhibitor | DrugBank actor |
 

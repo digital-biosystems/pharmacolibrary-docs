@@ -4,7 +4,7 @@
 
 # tocopherol (vit E) — `TocopherolVitE_Violet2020_iv_d6_tocopherol`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 The elimination rate constant for alpha-tocopherol was reported with the unit 'Ke', which could not be converted to SI, so the parameter reached the model build without a usable SI value and failed the dimension check. A second reader disagrees on the dosed and measured compound (d6-α-tocopherol rather than alpha-tocopherol) and on almost all parameter values: Cmax 0.48 vs 0.20 µM, Tmax 7.7 vs 8.5 h, AUC0–72h 17.5 vs 8.6 µM×h, half-life 30.0 vs 39.0 h, elimination rate 0.024 vs 0.019, and a fractional absorption of 0.537 that this record lacks entirely. These conflicting readings leave the record's numbers unreliable. Extracted — alpha-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7, AUCt 17.5.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alpha-tocopherol, the second reading d6-α-tocopherol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alpha-tocopherol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:49.902992+00:00) predates the upstream re-run (2026-10-05 08:59:35.595449+00:00). Current validate status: `rejected`.
 
 ## Citation
 Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
   ·  DOI: [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309)
 
 ## Model component
-<dbs-pgx drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -43,9 +45,9 @@ Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
 |---|---|---|---|---|---|---|---|---|---|---|
 | Elimination rate (Ke) | `Q47` · kel | 0.024 | Ke | not captured | [ke] | not captured | exact (1.0) | Violet_2020_table_2:row0:col2, Violet_2020_table_2:row1:col2 | — | not captured |
 | Half-life (h) | `Q57` · t1/2z | 30.0 | h | 108000.0 | [h] | not captured | llm (0.6) | Violet_2020_table_2:row2:col2, Violet_2020_table_2:row3:col2 | — | not captured |
-| Cmax (µM)a | `Q32` · Cmax | 0.48 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row4:col2, Violet_2020_table_2:row5:col2 | — | not captured |
-| Tmax (h)b | `Q56` · tmax | 7.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row6:col2, Violet_2020_table_2:row7:col2 | — | not captured |
-| AUC0–72h (µM × h)d | `Q19` · AUCt | 17.5 | not captured | not captured | not captured | not captured | llm (0.6) | Violet_2020_table_2:row10:col2, Violet_2020_table_2:row11:col2 | — | not captured |
+| Cmax (µM)A | `Q32` · Cmax | 0.48 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row4:col2, Violet_2020_table_2:row5:col2 | — | not captured |
+| Tmax (h)B | `Q56` · tmax | 7.7 | h | 27720.0 | h | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row6:col2, Violet_2020_table_2:row7:col2 | — | not captured |
+| AUC0–72h (µM × h)C | `Q19` · AUCt | 17.5 | not captured | not captured | not captured | not captured | llm (0.6) | Violet_2020_table_2:row10:col2, Violet_2020_table_2:row11:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,11 +59,15 @@ Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
 **Interpretation flags:**
 - column 'iv d6-α-tocopherol' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_mismatch: 'Elimination rate (Ke)' → Q47 (unit '[current] * [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q19 ('AUC0–8h (µM × h)e', value '2.86') — already have one for this compound
+- dropped duplicate Q19 ('AUC0–8h (µM × h)C', value '2.86') — already have one for this compound
+- implicit units: 'Cmax (µM)A' — the LLM proposed 'µM', whose dimension does not fit Q32; left unset
+- implicit units: 'Tmax (h)B' → h (from the paper text: "The parameter label in the input explicitly includes the unit: 'Tmax (h)B = 7.7'.")
+- implicit units: 'AUC0–72h (µM × h)C' — the LLM proposed 'µM × h', whose dimension does not fit Q19; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alpha-tocopherol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'iv d6-α-tocopherol' subgroup of Violet_2020 (paper reports 2 populations: iv d6-α-tocopherol, po d3-α-tocopherol)
+- molar mass: none found for 'tocopherol_vit_e' — its concentrations stay mass-only
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
@@ -78,20 +84,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc0-72h (um × h)d].value` | 17.5 | 8.6 | mismatch |
+| `gpt-oss:120b` | `parameters[auc0-72h (um × h)c].value` | 17.5 | 8.6 | mismatch |
 | `gpt-oss:120b` | `parameters[cmax (um)a].value` | 0.48 | 0.20 | mismatch |
 | `gpt-oss:120b` | `parameters[elimination rate].value` | 0.024 | 0.019 | mismatch |
 | `gpt-oss:120b` | `parameters[fractional absorption, 0-72 hoursc]` | not captured | 0.537 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life].value` | 30.0 | 39.0 | mismatch |
+| `gpt-oss:120b` | `parameters[ldl % enrichment, auc]` | not captured | 0.019 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tmax (h)b].value` | 7.7 | 8.5 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | alpha-tocopherol | d6-α-tocopherol | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | alpha-tocopherol | d6-α-tocopherol | mismatch |
+| `gpt-oss:120b` | `parameters[vldl % enrichment, auc]` | not captured | 0.016 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | alpha-tocopherol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | alpha-tocopherol | unknown | mismatch |
 
 </details>
 
@@ -112,10 +120,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C2_base_Q56 | pass | 7.7 | 7.7 | 1.0 | 0.05 | footnote reference category |
 | C2_base_Q57 | pass | 30.0 | 30.0 | 1.0 | 0.05 | footnote reference category |
 | C5_dimension_Q47 | fail | [current] * [time] | Ke | not captured | not captured | ['Violet_2020_table_2:row0:col2', 'Violet_2020_table_2:row1:col2'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row6:col2', 'Violet_2020_table_2:row7:col2'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row2:col2', 'Violet_2020_table_2:row3:col2'] |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Violet_2020_table_2:row10:col2', 'Violet_2020_table_2:row11:col2'] |
 | C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Violet_2020_table_2:row4:col2', 'Violet_2020_table_2:row5:col2'] |
-| C5_unit_missing_Q56 | fail | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row6:col2', 'Violet_2020_table_2:row7:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -141,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 01:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 08:59 UTC</sub>

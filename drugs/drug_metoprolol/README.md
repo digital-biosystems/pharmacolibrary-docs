@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Metoprolol is a selective beta-1 blocker commonly employed as the succinate and tartrate derivatives depending if the formulation is designed to be of immediate release or extended release.[A175159, L5530] The possibility of the generation of these formulations comes from the lower systemic bioavailability of the succinate derivative.[T274] To this date, it is one of the preferred beta-blockers in general clinical guidelines and it is widely prescribed in the Netherlands, New Zealand, and the US.[A175162] Metoprolol was developed since 1969 by US Pharmaceutical Holdings I and FDA approved in 1978.[L5527]
+Metoprolol is a selective beta blocker used for heart conditions such as high blood pressure, angina, arrhythmias, heart failure, and after myocardial infarction. It is widely used worldwide and appears on the WHO list of essential medicines.
 
-**Indication.** Metoprolol is indicated for the treatment of angina, heart failure, myocardial infarction, atrial fibrillation, atrial flutter and hypertension.[A175141,L36065,L45553]
-
-Some off-label uses of metoprolol include supraventricular tachycardia and thyroid storm.[A175141]
-
-All the indications of metoprolol are part of cardiovascular diseases. These conditions correspond to a number of diseases that involve the function of the heart and blood vessels. The underlying causes of these conditions are variable and can be due to genetic disposition, lifestyle decisions such as smoking, obesity, diet, and lack of exercise, and comorbidity with other conditions such as diabetes. The cardiovascular diseases are the leading cause of death on a global scale.[L5533]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409468](https://www.wikidata.org/wiki/Q409468) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -47,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…it is almost completely absorbed in the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |

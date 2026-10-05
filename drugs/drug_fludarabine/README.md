@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fludarabine is a chemotherapeutic agent used in the treatment of hematological malignancies. It is commonly marketed under the brand name Fludara.
+Fludarabine is a purine analogue anticancer drug used to treat certain blood cancers such as chronic lymphocytic leukaemia. It is an approved medicine and is also being studied for other uses.
 
-**Indication.** For the treatment of adult patients with B-cell chronic lymphocytic leukemia (CLL) who have not responded to or whose disease has progressed during treatment with at least one standard alkylating-agent containing regimen
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72478349](https://www.wikidata.org/wiki/Q72478349) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -27,15 +27,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 20:47 | 0:50 | 0/2/1 | 0/1/0 | 0/0/0 | 26,096/711 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 9/14 | 20/4 | 0 |
+| 2026-09-26 20:47 | 0:50 | 0/3/0 | 0/1/0 | 0/0/0 | 26,096/711 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 9/14 | 20/4 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Varela-González-Aller_2025_shrinkage](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_shrinkage.md) | held back | 1-compartment, IV | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) | — | parent + metabolite (no model) | 5 (+1 cov.) | Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood and marrow… (2017) | [10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Varela-González-Aller_2025_estimates_rse](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_estimates_rse.md) | — | 1-compartment (no model) | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'shrinkage (%)' is a table statistic/structure column, not a study…</sub><br><sub>route_to: `human_review`</sub> | [Varela-González-Aller_2025_shrinkage](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_shrinkage.md) | — | 1-compartment (no model) | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
 
 ## Pharmacodynamics (PD)
 
@@ -65,7 +65,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 108 matched, 54 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

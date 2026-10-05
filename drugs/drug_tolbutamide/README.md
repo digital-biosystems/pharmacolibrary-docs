@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Tolbutamide is an oral antihyperglycemic agent used for the treatment of non-insulin-dependent diabetes mellitus (NIDDM). It is structurally similar to acetohexamide, chlorpropamide and tolazamide and belongs to the sulfonylurea class of insulin secretagogues, which act by stimulating β cells of the pancreas to release insulin. Sulfonylureas increase both basal insulin secretion and meal-stimulated insulin release. Medications in this class differ in their dose, rate of absorption, duration of action, route of elimination and binding site on their target pancreatic β cell receptor. Sulfonylureas also increase peripheral glucose utilization, decrease hepatic gluconeogenesis and may increase the number and sensitivity of insulin receptors. Sulfonylureas are associated with weight gain, though less so than insulin. Due to their mechanism of action, sulfonylureas may cause hypoglycemia and require consistent food intake to decrease this risk. The risk of hypoglycemia is increased in elderly, debilitated and malnourished individuals. Tolbutamide appears to be metabolized in the liver. Tolbutamide and its metabolites are excreted in urine (75-85%) and feces.
+Tolbutamide is a sulfonylurea blood-glucose-lowering drug used to treat type 2 diabetes and maturity-onset diabetes of the young type 2, and it also serves as a diagnostic agent in tests for diabetes. It is an approved medication, though it is not authorised in the European Union.
 
-**Indication.** For treatment of NIDDM (non-insulin-dependent diabetes mellitus) in conjunction with diet and exercise.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414275](https://www.wikidata.org/wiki/Q414275) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -27,19 +27,21 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:30 | 10:58 | 1/0/1 | 0/0/1 | 0/0/0 | 211,726/29,777 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 14/2 | 4/0 | 0 |
+| 2026-10-05 05:09 | 8:17 | 1/0/1 | 1/0/1 | 0/0/0 | 145,295/20,800 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 14/2 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shi_2021_reference](drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021) | [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kirchheiner_2002_reference](drugs/drug_tolbutamide/Tolbutamide_Kirchheiner2002_reference.md) | — | 1-compartment (no model) | 1 | Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogenetics (2002) | [10.1097/00008571-200203000-00004](https://doi.org/10.1097/00008571-200203000-00004) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shi_2021_reference](drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021) | [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Kirchheiner_2002_reference](drugs/drug_tolbutamide/Tolbutamide_Kirchheiner2002_reference.md) | — | 1-compartment (no model) | 2 | Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogenetics (2002) | [10.1097/00008571-200203000-00004](https://doi.org/10.1097/00008571-200203000-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Akiyoshi_1995_K_ATP_channel_current](drugs/drug_tolbutamide/pd_Akiyoshi_1995_K_ATP_channel_current.md) | K-ATP channel current ← tolbutamide · direct sigmoid Emax (Hill) effect | — | Akiyoshi M et al., A new hypoglycemic agent, A-4166, inhib…, The American journal of phy… (1995) | [10.1152/ajpendo.1995.268.2.E185](https://doi.org/10.1152/ajpendo.1995.268.2.E185) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Akiyoshi_1995_whole_cell_K_ATP_channel_current](drugs/drug_tolbutamide/pd_Akiyoshi_1995_whole_cell_K_ATP_channel_current.md) | whole cell K-ATP channel current ← tolbutamide · direct sigmoid Emax (Hill) effect | — | Akiyoshi M et al., A new hypoglycemic agent, A-4166, inhib…, The American journal of phy… (1995) | [10.1152/ajpendo.1995.268.2.E185](https://doi.org/10.1152/ajpendo.1995.268.2.E185) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Schwanstecher_1994_KATP_channel_activity](drugs/drug_tolbutamide/pd_Schwanstecher_1994_KATP_channel_activity.md) | KATP-channel activity ← tolbutamide · direct sigmoid Emax (Hill) effect | — | Schwanstecher M et al., Location of the sulphonylurea receptor…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb17078.x](https://doi.org/10.1111/j.1476-5381.1994.tb17078.x) |
 
 ## ADME sites
@@ -54,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` substrate | DrugBank actor |
 | excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
-| excretion | small intestine | <sub>“…a single orally administered dose…”</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC8 (inhibitor), ABCC9 (blocker), CYP2C18 (substrate), KCNJ1 (inhibitor).</sub>
 
@@ -82,7 +84,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Horiuchi_2014.pdf` | Horiuchi M et al., Effects of peritoneal dialysis on pharm…, Drug metabolism and pharmac… (2014) | popPK | 8 | [10.2133/dmpk.dmpk-13-rg-067](https://doi.org/10.2133/dmpk.dmpk-13-rg-067) | [24025988](https://pubmed.ncbi.nlm.nih.gov/24025988) | The study reports a pharmacokinetic model for tolbutamide in rats, but the specific numeric parameter values are not present in the provided evidence text. |
 | `Jayasagar_2000.pdf` | Jayasagar G et al., Effect of clarithromycin on the pharmac…, Drug metabolism and drug in… (2000) | popPK | 8 | [10.1515/dmdi.2000.16.3.207](https://doi.org/10.1515/dmdi.2000.16.3.207) | [11116754](https://pubmed.ncbi.nlm.nih.gov/11116754) | The study reports qualitative changes (percent increases) in tolbutamide PK parameters but lacks the specific numeric values for clearance, volume, or half-life in the provided text. |
 
-<sub>queue written 2026-10-03T18:51:48.951348+00:00</sub>
+<sub>queue written 2026-10-05T05:02:30.093424+00:00</sub>
 
 ## Screened and excluded
 
@@ -115,4 +117,4 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Wosilait_1981 | irrelevant | 0 | 0 | The study is an in-vitro binding competition study focused on warfarin, with tolbutamide serving only as a displacing agent, and no pharmacokinetic parameters for tolbutamide are reported. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-03 18:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 05:02 UTC</sub>

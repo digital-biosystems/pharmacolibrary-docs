@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Acadesine (AICA-riboside) is a purine nucleoside analog with anti-ischemic properties that is currently being studied (Phase 3) for the prevention of adverse cardiovascular outcomes in patients undergoing coronary artery bypass graft (CABG) surgery. It is being developed jointly by PeriCor and Schering-Plough. Acadesine has been granted Orphan Drug Designation for B-CLL in the EU.
+Acadesine is an investigational heart medication studied for cardiac conditions. It has not been approved and remains under investigation, so it is not in routine clinical use.
 
-**Indication.** Investigated for use/treatment in cardiac reperfusion injury, cardiovascular disorders, and coronary artery disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4671562](https://www.wikidata.org/wiki/Q4671562) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

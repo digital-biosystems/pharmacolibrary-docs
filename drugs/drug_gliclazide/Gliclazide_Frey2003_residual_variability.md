@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;gliclazide&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/&quot;},{&quot;label&quot;:&quot;Frey_2003 \u00b7 residual_variability&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gliclazide_Frey2003_intersubject_variability&quot;,&quot;label&quot;:&quot;Frey_2003_intersubject_variability&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Frey2003_intersubject_variability.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gliclazide_Frey2003_parameters&quot;,&quot;label&quot;:&quot;Frey_2003_parameters&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Frey2003_parameters.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gliclazide_Frey2003_residual_variability&quot;,&quot;label&quot;:&quot;Frey_2003_residual_variability&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gliclazide_Mim2023_reference&quot;,&quot;label&quot;:&quot;Mim_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gliclazide — `Gliclazide_Frey2003_residual_variability`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,26 +23,29 @@ The paper (Frey_2003, Type 2 diabetic patients) reports gliclazide AUCt of 47 mg
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:08.242448+00:00) predates the upstream re-run (2026-10-05 01:12:09.182398+00:00). Current validate status: `rejected`.
+
 ## Citation
 Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x)
 
 ## Model component
-<dbs-pgx drug="gliclazide" model-id="Gliclazide_Frey2003_residual_variability" status="needs_review" stale="false" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gliclazide" model-id="Gliclazide_Frey2003_residual_variability" status="rejected" stale="true" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Gliclazide AUC 50 (mg.h ml -1 ) | `Q19` · AUCt | 47 | mg.h ml -1 | not captured | [[h] · [mg]] / [ml] | not captured | llm_corrected (0.6) | tab_1:row9:col2, tab_1:row9:col4 | — | not captured |
 | apparent clearance | `Q27` · CL/F | 15 | ml min -1 | 2.5e-07 | L/h | not captured | exact (1.0) | Frey_2003:results_prose | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 19 | l | 0.019 | L | not captured | exact (1.0) | Frey_2003:results_prose | — | not captured |
+| Absorption rate constant (/h) | `Q49` · kabs | 1.4 | /h | 0.00038888888888888887 | 1/h | not captured | review_gapfill (0.7) | Mim_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,12 +53,6 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Baseline FPG (mmol l -1 )' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col4'])
@@ -75,6 +72,7 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 - population split: 'residual variability' subgroup of Frey_2003 (paper reports 3 populations: intersubject variability, parameters, residual variability)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Mim_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell tab_1:row4:col3 = '1 7'
@@ -90,6 +88,7 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row9:col2', 'tab_1:row9:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Mim_2023:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.9 L/h | not captured | not captured | ['Frey_2003:results_prose'] |
@@ -123,30 +122,15 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_modelica.zip" download>Gliclazide_Frey2003_residual_variability_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_fmi.zip" download>Gliclazide_Frey2003_residual_variability_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_matlab.zip" download>Gliclazide_Frey2003_residual_variability_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_matlab_simbio.zip" download>Gliclazide_Frey2003_residual_variability_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_sbml.zip" download>Gliclazide_Frey2003_residual_variability_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_cellml.zip" download>Gliclazide_Frey2003_residual_variability_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability.svg" alt="Gliclazide_Frey2003_residual_variability diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 15 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 15, 30, 60, 90, 135 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability/Gliclazide_Frey2003_residual_variability_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Gliclazide_Frey2003_residual_variability_params.json` · controls `Gliclazide_Frey2003_residual_variability_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 21:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 01:12 UTC</sub>

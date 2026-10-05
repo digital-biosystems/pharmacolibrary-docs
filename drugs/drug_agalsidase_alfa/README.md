@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Agalsidase alfa is a recombinant human α-galactosidase A similar to [agalsidase beta]. While patients generally do not experience a clinically significant difference in outcomes between the two drugs, some patients may experience greater benefit with agalsidase beta.[A220228,A220233] Use of agalsidase beta has decreased in Europe, in favor of agalsidase alfa, after a contamination event in 2009.[A220343]
+Agalsidase alfa is an enzyme replacement therapy used to treat Fabry disease. It is authorised in the European Union and is an approved medicine.
 
-Agalsidase alfa was granted EMA approval on 3 August 2001.[L16413]
-
-**Indication.** Agalsidase alfa is indicated in the treatment of Fabry disease.[L16398]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q288705](https://www.wikidata.org/wiki/Q288705) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GLA (other), Globotriaosylceramide (metabolizer), Globotriaosylceramide (target), M6PR (substrate).</sub>
 

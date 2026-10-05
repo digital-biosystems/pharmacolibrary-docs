@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The dabrafenib parent–metabolite model was held back because only 4 of 10 expected parameters were covered; the peripheral volumes and intercompartmental clearances (V2/F 5.23 L, Q/F 3.85 L/h, and hydroxy-dabrafenib V1/F 19.6 L, V2/F 25.7 L, Q/F 7.39 L/h) were neither emitted nor defaulted.**
+**The dabrafenib parent–metabolite model was held back because the builder assumed bioavailability F=1 (and Fm=1, no molar correction) for all apparent parameters (CL/F 17.7 L/h, V1/F 39.5 L, etc.), an assumption judged not acceptable.**
 
-The record lists ten parameters for the two-compartment parent model and the two-compartment hydroxy-dabrafenib metabolite model, but the coverage check found only 4 covered against 10 expected, leaving V1/F, Q/F and V2/F for both molecules unmatched. The model builder assumed F=1 and Fm=1 with no molar correction, so all parameters are apparent (adjusted for bioavailability). A second reader also disagreed on the dosed compound, reading dabrafenib with trametinib rather than dabrafenib alone, and on the identifier assigned to the absorption rate constant kabs (1.8 1/h). Extracted — dabrafenib: CL/F 17.7 L/h, V1/F 39.5 L, kabs 1.8 1/h, Q/F 3.85 L/h, V2/F 5.23 L, tlag 0.5 h; hydroxy-dabrafenib: V1/F 19.6 L, CL/F 22.8 L/h, Q/F 7.39 L/h, V2/F 25.7 L.
+All reported parameters are apparent values adjusted for bioavailability — CL/F 17.7 L/h, V1/F 39.5 L, kabs 1.8 1/h, Q/F 3.85 L/h, tlag 0.50 h for dabrafenib, and CL/F 22.8 L/h, V1/F 19.6 L, Q/F 7.39 L/h, V2/F 25.7 L for hydroxy-dabrafenib — but the model builder substituted F=1 and Fm=1 without molar correction, a deviation flagged as not acceptable. A second reader also disagreed on the dosed compound (dabrafenib alone versus dabrafenib with trametinib) and on the identifier for the absorption rate constant kabs. Extracted — dabrafenib: CL/F 17.7 L/h, V1/F 39.5 L, kabs 1.8 1/h, Q/F 3.85 L/h, V2/F 5.23 L, tlag 0.5 h; hydroxy-dabrafenib: V1/F 19.6 L, CL/F 22.8 L/h, Q/F 7.39 L/h, V2/F 25.7 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -137,11 +137,11 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T3_metabolite_output[hydroxy-dabrafenib] | not captured | pass | not captured | 0.0006071710741942506 | not captured | C_M1 (hydroxy-dabrafenib) must rise above 0 when the parent is dosed |
 | T3_molar_mass[hydroxy-dabrafenib] | not captured | pass | not captured | {'MW': 0.519562, 'MW_m1': 0.535559} | not captured | formation is molecule-for-molecule |
 | T3_output_variable | not captured | pass | C_central (measured=dabrafenib) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 10 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V1/F', 'Q/F', 'V1/F', 'V2/F', 'Q/F', 'V2/F'] |
+| T3_param_coverage | not captured | pass | 10 scholar param(s) emitted or defaulted | 10 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_shared_parameters | not captured | pass | 4 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_shared_parameters | not captured | skipped | not captured | not captured | not captured | parent–metabolite template: every compound has its own slot |
 | T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -162,7 +162,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_modelica.zip" download>Dabrafenib_Balakirouchenane2020_base_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_modelica.zip" download>Dabrafenib_Balakirouchenane2020_base_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_fmi.zip" download>Dabrafenib_Balakirouchenane2020_base_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_9C.fmu" download>PK_3M_9C.fmu</a> <span class="pk-size">(1.4 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_matlab.zip" download>Dabrafenib_Balakirouchenane2020_base_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

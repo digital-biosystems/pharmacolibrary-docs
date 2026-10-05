@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A thiazide diuretic with actions and uses similar to those of hydrochlorothiazide. (From Martindale, The Extra Pharmacopoeia, 30th ed, p812)
+Chlorothiazide is a thiazide diuretic used to treat high blood pressure, congestive heart failure, nephrotic syndrome, and anasarka. It is an approved medicine for humans and is also approved for veterinary use, and remains in clinical use.
 
-**Indication.** Chlorothiazide is indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy. It is also indicated in the management of hypertension either as the sole therapeutic agent or to enhance the effectiveness of other antihypertensive drugs in the more severe forms of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2603363](https://www.wikidata.org/wiki/Q2603363) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,10 +44,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly absorbed following oral administration.…”</sub> | prose |
-| metabolism | kidney | <sub>“…eliminated rapidly by the kidney…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-| excretion | mammary gland | <sub>“…is excreted in breast milk…”</sub> | prose |
+| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CA1 (inhibitor), CA2 (inhibitor), SLC12A3 (inhibitor).</sub>
 

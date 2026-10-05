@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Phenacetin was withdrawn from the Canadian market in June 1973 due to concerns regarding nephropathy (damage to or disease of the kidney).
+Phenacetin is a non-opioid painkiller and fever reducer that was once used to treat pain and high temperature. It has been withdrawn from the market because it was found to be carcinogenic and harmful to the kidneys.
 
-**Indication.** Used principally as an analgesic.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419175](https://www.wikidata.org/wiki/Q419175) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

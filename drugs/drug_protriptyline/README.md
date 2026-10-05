@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Protriptyline hydrochloride is a dibenzocycloheptene-derivative tricyclic antidepressant (TCA). TCAs are structurally similar to phenothiazines. They contain a tricyclic ring system with an alkyl amine substituent on the central ring. In non-depressed individuals, protriptyline does not affect mood or arousal, but may cause sedation. In depressed individuals, protriptyline exerts a positive effect on mood. TCAs are potent inhibitors of serotonin and norepinephrine reuptake. In addition, TCAs down-regulate cerebral cortical &beta;-adrenergic receptors and sensitize post-synaptic serotonergic receptors with chronic use. The antidepressant effects of TCAs are thought to be due to an overall increase in serotonergic neurotransmission. TCAs also block histamine H<sub>1</sub> receptors, alpha<sub>1</sub>-adrenergic receptors and muscarinic receptors, which accounts for their sedative, hypotensive and anticholinergic effects (e.g. blurred vision, dry mouth, constipation, urinary retention), respectively. See toxicity section below for a complete listing of side effects. Protriptyline may be used for the treatment of depression.
+Protriptyline is a tricyclic antidepressant used to treat depression, including neurotic disorders. It is an approved medicine, though it is not widely used today and is mainly reserved for cases where other antidepressants are unsuitable.
 
-**Indication.** For the treatment of depression.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408432](https://www.wikidata.org/wiki/Q408432) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…cumulative urinary excretion during 16 days, which accounts for approximately 50% of the t…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

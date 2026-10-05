@@ -4,7 +4,7 @@
 
 # granisetron — `Granisetron_Li2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,14 +20,18 @@
 
 The extracted parameters for granisetron give a volume of distribution of 1.5462161 mL and total clearance of 0.25423392 mL/h, magnitudes far below any physiological window for granisetron in healthy adults, consistent with a unit/scale extraction error (the labels read mL and mL/h). The absorption rate constant of 0.0179879 1/h is also very slow. The rejection was based on this implausible clearance/volume magnitude. Extracted — granisetron: kabs 0.018, V 1.55 mL, CL 0.254 mL/h.
 
+Independently confirmed by `gpt-oss:120b`.
+
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:08.767445+00:00) predates the upstream re-run (2026-10-04 13:55:25.469239+00:00). Current validate status: `rejected`.
 
 ## Citation
 Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1154026](https://doi.org/10.3389/fphar.2023.1154026)
 
 ## Model component
-<dbs-pgx drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -39,7 +43,7 @@ Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacolog
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (1/h) | `Q49` · kabs | 0.0179879 | not captured | not captured | not captured | 3.6330732 | exact (1.0) | T3:row3:col1, T3:row3:col2, T3:row3:col3, T3:row7:col2, T3:row7:col3 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.0179879 | 1/h | 4.996638888888889e-06 | 1/h | 3.6330732 | exact (1.0) | T3:row3:col1, T3:row3:col2, T3:row3:col3, T3:row7:col2, T3:row7:col3 | — | not captured |
 | V (mL) | `Q61` · V | 1.5462161 | mL | 1.5462161e-06 | [ml] | 13.121334 | exact (1.0) | T3:row4:col1, T3:row4:col2, T3:row4:col3, T3:row8:col1, T3:row8:col2, T3:row8:col3 | — | not captured |
 | CL (mL/h) | `Q22` · CL | 0.25423392 | mL/h | 7.062053333333333e-11 | [ml] / [h] | 5.5226182 | exact (1.0) | T3:row5:col1, T3:row5:col2, T3:row5:col3, T3:row9:col1, T3:row9:col2, T3:row9:col3 | — | not captured |
 
@@ -51,7 +55,9 @@ Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacolog
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'σ' routed out of structural estimates ('Residual error')
 - column 'bootstrap' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: "The parameter is Ka (absorption rate constant). The paper text describes it as a 'first-order absorption' process (Eq. 4")
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V (mL)); Q22 (CL (mL/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=granisetron
 
@@ -61,6 +67,21 @@ Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacolog
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
+
+_Every reader agrees on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -69,8 +90,8 @@ Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacolog
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row9:col1', 'T3:row9:col2', 'T3:row9:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row3:col1', 'T3:row3:col2', 'T3:row3:col3', 'T3:row7:col2', 'T3:row7:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row4:col1', 'T3:row4:col2', 'T3:row4:col3', 'T3:row8:col1', 'T3:row8:col2', 'T3:row8:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['T3:row3:col1', 'T3:row3:col2', 'T3:row3:col3', 'T3:row7:col2', 'T3:row7:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.25423392 | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row9:col1', 'T3:row9:col2', 'T3:row9:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | fail | clearance within physiological range | 0.000254 L/h | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row9:col1', 'T3:row9:col2', 'T3:row9:col3'] |
@@ -99,4 +120,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 12:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:55 UTC</sub>

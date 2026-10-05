@@ -11,19 +11,9 @@
 
 ## About
 
-**Description.** Buprenorphine is a weak partial mu-opioid receptor agonist and a weak kappa-opioid receptor antagonist used for the treatment of severe pain.[A186283,A186292] It is also commonly used as an alternative to [methadone] for the treatment of severe opioid addiction.[L46571] Buprenorphine is commercially available as the brand name product Suboxone which is formulated in a 4:1 fixed-dose combination product along with [naloxone], a non-selective competitive opioid receptor antagonist. Combination with naloxone is intended to reduce the abuse potential of Suboxone, as naloxone is poorly absorbed by the oral route (and has no effect when taken orally), but would reverse the opioid agonist effects of buprenorphine if injected intravenously.[A186289,L46571] Buprenorphine has poor gastrointestinal absorption and is therefore formulated as a sublingual tablet.
+Buprenorphine is an opioid used to treat pain and opioid dependence, including heroin dependence. It is widely used and authorised in the European Union, mainly for opioid-related disorders, and is also approved for veterinary use.
 
-Buprenorphine has a number of unique pharmacokinetic and pharmacodynamic properties that make it a preferred agent for the treatment of conditions requiring high doses of strong opioids.[A186286] For example, buprenorphine dissociates from opioid receptors very slowly, resulting in a long duration of action and relief from pain or withdrawal symptoms for upwards of 24-36 hours. Use of once-daily buprenorphine may benefit individuals who have developed tolerance to other potent opioids and who require larger and more frequent doses. Buprenorphine may also be a preferred agent over [methadone] (which is also commonly used to treat severe pain and opioid use disorder), as it has less effect on Qtc interval prolongation,[A186271,A186274] fewer drug interactions, reduced risk of sexual side effects,[A186298] and an improved safety profile with a lower risk of overdose and respiratory depression.[A186263,A186266,A186269]
-
-Buprenorphine acts as a partial mu-opioid receptor agonist with a high affinity for the receptor, but lower intrinsic activity compared to other full mu-opioid agonists such as [heroin], [oxycodone], or
-
-**Indication.** Buprenorphine is available in different formulations, such as sublingual tablets, buccal films, transdermal films, and injections, alone or in combination with [naloxone].
-
-The buccal film, intramuscular or intravenous injection, and transdermal formulation are indicated for the management of pain severe enough to require an opioid analgesic and for which alternate treatments are inadequate.[L46566, L46576, L46581]
-
-The extended-release subcutaneous injections of buprenorphine are indicated for the treatment of moderate to severe opioid use disorder in patients who have initiated treatment with a single dose of a transmucosal buprenorphine product or who are already being treated with buprenorphine. Injections are part of a complete treatment plan that includes counselling and psychosocial support.[L46561]
-
-Sublingual tablets and buccal films, in combination with naloxone, are indicated for the maintenance treatment of opioid dependence as part of a complete treatment plan that includes counselling and psychosocial support.[L42285, L46571]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407721](https://www.wikidata.org/wiki/Q407721) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -94,9 +84,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `COMT` target, `CYP3A5` substrate, `UGT2B7` metabolism | DrugBank actor |
 | metabolism | liver | `COMT` target, `CYP2C19` inhibitor, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A1` metabolism, `UGT2B7` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` substrate, `UGT1A1` metabolism, `UGT2B7` metabolism | DrugBank actor |
-| excretion | bile duct | <sub>“…primarily eliminated via feces…”</sub> | prose |
-| excretion | kidney | <sub>“…10 - 30% of the dose is excreted in urine…”</sub> | prose |
-| excretion | liver | <sub>“…metabolized by the liver…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CYP2C18 (substrate), CYP3A (metabolism), OPRD1 (target), OPRK1 (target), OPRL1 (target), OPRM1 (partial agonist), OPRM1 (target), PDYN (target), SLC6A3 (transport).</sub>
 

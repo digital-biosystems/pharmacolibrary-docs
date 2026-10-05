@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Salbutamol (Albuterol [USAN]) is a short-acting, selective beta2-adrenergic receptor agonist used in the treatment of asthma and COPD. It is 29 times more selective for beta2 receptors than beta1 receptors giving it higher specificity for pulmonary beta receptors versus beta1-adrenergic receptors located in the heart. Salbutamol is formulated as a racemic mixture of the R- and S-isomers. The R-isomer has 150 times greater affinity for the beta2-receptor than the S-isomer and the S-isomer has been associated with toxicity. This lead to the development of levalbuterol, the single R-isomer of salbutamol. However, the high cost of levalbuterol compared to salbutamol has deterred wide-spread use of this enantiomerically pure version of the drug. Salbutamol is generally used for acute episodes of bronchospasm caused by bronchial asthma, chronic bronchitis and other chronic bronchopulmonary disorders such as chronic obstructive pulmonary disorder (COPD). It is also used prophylactically for exercise-induced asthma.[Label,A174379,A174400]
+Salbutamol is a bronchodilator used to treat asthma, bronchospasm and other obstructive lung diseases. It is widely used worldwide, appears on the WHO list of essential medicines, and is available on prescription.
 
-**Indication.** Salbutamol is indicated for (i) the symptomatic relief and prevention of bronchospasm due to bronchial asthma, chronic bronchitis, reversible obstructive airway disease, and other chronic bronchopulmonary disorders in which bronchospasm is a complicating factor, and/or (ii) the acute prophylaxis against exercise-induced bronchospasm and other stimuli known to induce bronchospasm.[Label,F3265,F3268]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410358](https://www.wikidata.org/wiki/Q410358) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -67,11 +67,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…the portion of the dose which is swallowed and absorbed in the gut…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…A small fraction is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine in 24 hours…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (unknown).</sub>
 

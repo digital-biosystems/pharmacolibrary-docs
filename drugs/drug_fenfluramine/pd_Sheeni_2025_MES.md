@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;fenfluramine&quot;,&quot;href&quot;:&quot;drugs/drug_fenfluramine/&quot;},{&quot;label&quot;:&quot;Sheeni_2025 \u00b7 PD antiseizure activity&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;fenfluramine&quot;,&quot;href&quot;:&quot;drugs/drug_fenfluramine/&quot;},{&quot;label&quot;:&quot;Sheeni_2025 \u00b7 PD seizure protection&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# antiseizure activity — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+# seizure protection — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,17 +15,17 @@
 
 ## What this record describes
 
-**As extracted:** L-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine drive antiseizure activity (in unknown) (stimulation; the model form was not identified).
+**As extracted:** L-fenfluramine (measured concentrations) drives seizure protection (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> The paper describes a direct concentration-response relationship where plasma and brain concentrations of l-fenfluramine, d-fenfluramine, l-norfenfluramine, and d-norfenfluramine drive binary antiseizure activity in the MES model, with l-norfenfluramine exhibiting a plasma TC50 of 128 ng/mL. The specific pharmacodynamic mechanism (e.g., Emax, effect compartment) is not stated, and no rate constants (ke0, kin, kout) are provided.
+> The paper describes a direct concentration-response relationship where l-fenfluramine plasma or brain concentrations drive seizure protection in the MES model, with an EC50 of 114 ng/mL. The provided excerpts do not specify the underlying mechanism of action (e.g., inhibition of production or elimination) or rate constants.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Sheeni_2025`
-- **model family:** `unknown`
-- **driver:** `not_resolved`
+- **model family:** `sigmoid_emax`
+- **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 
@@ -36,7 +36,9 @@ Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Plasma TC50 (ng/mL) — l‐Norfenfluramine as metabolite of l‐fenfluramine | `Q321` · not captured | 128 | ng/mL | not captured | llm (not captured) | epi18542-tbl-0003:row4:col3 |
+| PD (effect) | EC50 | `Q321` · not captured | 114 | ng/mL | not captured | llm (not captured) | Sheeni_2025:pdv3 |
+| PD (effect) | Bottom | `Q324` · not captured | 0 | not captured | not captured | llm (not captured) | Sheeni_2025:pdv3 |
+| PD (effect) | Top | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | Sheeni_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -76,9 +78,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

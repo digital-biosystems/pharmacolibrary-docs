@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A glucocorticoid employed, usually as eye drops, in the treatment of allergic and inflammatory conditions of the eye. It has also been used topically in the treatment of various skin disorders. (From Martindale, The Extra Pharmacopoeia, 30th ed, p732)
+Fluorometholone is a corticosteroid used to treat inflammation, including inflammatory eye conditions and skin disorders. It is an approved medicine, applied topically to the eye or skin, and is available in many combination products.
 
-**Indication.** For the ophthalmic treatment of corticosteroid-responsive inflammation of the palpebral and bulbar conjunctiva, cornea and anterior segment of the globe.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q607349](https://www.wikidata.org/wiki/Q607349) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

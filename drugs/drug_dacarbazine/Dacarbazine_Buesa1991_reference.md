@@ -4,7 +4,7 @@
 
 # dacarbazine — `Dacarbazine_Buesa1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,14 +24,12 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:27.608622+00:00) predates the upstream re-run (2026-10-03 08:43:07.321354+00:00). Current validate status: `rejected`.
-
 ## Citation
 Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991)
   ·  DOI: [10.1007/BF00685826](https://doi.org/10.1007/BF00685826)
 
 ## Model component
-<dbs-pgx drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

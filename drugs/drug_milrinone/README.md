@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Heart failure is a multifactorial condition that affects roughly 1-2% of the adult population. Often the result of long-term myocardial ischemia, cardiomyopathy, or other cardiac insults, heart failure results from an inability of the heart to perfuse peripheral tissues with sufficient oxygen and metabolites, resulting in complex systemic pathologies. Heart failure is underpinned by numerous physiological changes, including alteration in β-adrenergic signalling and cyclic adenosine monophosphate (cAMP) production, which affects the heart's contractile function and cardiac output.[A228323] Milrinone is a second-generation bipyridine phosphodiesterase (PDE) inhibitor created through chemical modification of [amrinone].[A228333] As a PDE-III inhibitor, milrinone results in increased cAMP levels and improves cardiac function and peripheral vasodilation in acute decongested heart failure.[A228338, A11759, A228323, A228333, A228348, L31483]
+Milrinone is a phosphodiesterase inhibitor used as a cardiotonic and vasodilator for congestive heart failure. It is an approved drug, used mainly in hospital settings for acute cardiac support.
 
-Milrinone was originally synthesized at the Sterling Winthrop Research Institute in the 1980s.[A228333] It was approved by the FDA on December 31, 1987, and was marketed under the trademark PRIMACOR® by Sanofi-Aventis US before being discontinued.[L31483]
-
-**Indication.** Milrinone is indicated for the short-term (48 hours or less) treatment of patients with acute decompensated heart failure. Milrinone administration should occur together with close monitoring using appropriate electrocardiographic equipment and should occur in a facility equipped for the immediate treatment of potential cardiac events, including ventricular arrhythmias.[L31483]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q847399](https://www.wikidata.org/wiki/Q847399) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,7 +34,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…primarily excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PDE3A (inhibitor).</sub>
 

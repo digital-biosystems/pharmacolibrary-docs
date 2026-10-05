@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Idursulfase is a purified form of human iduronate-2-sulfatase, a lysosomal enzyme. Idursulfase is produced by recombinant DNA technology in a human cell line. Idursulfase is an enzyme that hydrolyzes the 2-sulfate esters of terminal iduronate sulfate residues from the glycosaminoglycans dermatan sulfate and heparan sulfate in the lysosomes of various cell types. Idursulfase is a 525-amino acid glycoprotein with a molecular weight of approximately 76 kilodaltons. The enzyme contains eight asparagine-linked glycosylation sites occupied by complex oligosaccharide structures. The enzyme activity of idursulfase is dependent on the post-translational modification of a specific cysteine to formylglycine.
+Idursulfase is an enzyme replacement therapy used to treat mucopolysaccharidosis II (Hunter syndrome). It is authorised in the European Union and used as an approved medicine for this rare condition.
 
-**Indication.** For the treatment of Hunter syndrome in adults and children ages 5 and older.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415801](https://www.wikidata.org/wiki/Q415801) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

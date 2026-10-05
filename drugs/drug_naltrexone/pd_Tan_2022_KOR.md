@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/&quot;},{&quot;label&quot;:&quot;Tan_2022 \u00b7 PD KOR occupancy&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # KOR occupancy — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
@@ -16,17 +15,17 @@
 
 ## What this record describes
 
-**As extracted:** Samidorphan (measured concentrations) drives KOR occupancy (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Naltrexone (concentrations from the PK model of Christie_2025) drives KOR occupancy (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> In rats, naltrexone (subcutaneous doses 0.01–1.0 mg/kg) produced a dose-dependent increase in kappa opioid receptor (KOR) occupancy in brain, measured 30 minutes post-dose by displacement of the tracer GR103545, plotted against unbound brain concentrations; the paper does not state the KOR EC50 for naltrexone (only MOR EC50 = 15.5 nM), and at the clinically relevant unbound brain concentration of 33.5 nM naltrexone occupied KOR by 9.4%. No mechanism beyond direct receptor binding/occupancy (sigmoid Emax-type relationship) is described, and no Imax, kin, kout, ke0, or gamma values are given.
+> Naltrexone unbound brain concentrations drive kappa opioid receptor (KOR) occupancy via a direct Emax binding mechanism, with the paper reporting an EC50 of 15.5 nM for MOR but not providing a specific EC50 or Imax value for KOR. The study notes that at a clinically relevant unbound brain concentration of 33.5 nM, naltrexone achieved 9.4% KOR occupancy, whereas it did not bind to DOR.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Tan_2022`
-- **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **model family:** `emax`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 

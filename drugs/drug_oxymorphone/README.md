@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** An opioid analgesic with actions and uses similar to those of morphine, apart from an absence of cough suppressant activity. It is used in the treatment of moderate to severe pain, including pain in obstetrics. It may also be used as an adjunct to anesthesia (From Martindale, The Extra Pharmacopoeia, 30th ed, p1092). On June 8, 2017, FDA requested Endo Pharmaceuticals to remove the medication from the market due to opioid misuse and abuse risks associated with the product's injectable reformulation.
+Oxymorphone is an opioid painkiller used to treat moderate to severe pain. It is an approved medicine, also approved for veterinary use, and is used mainly in North America rather than the European Union.
 
-**Indication.** For the treatment of moderate-to-severe pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423380](https://www.wikidata.org/wiki/Q423380) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -35,11 +35,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…49% was excreted over a five-day period in the urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted unchanged in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…principally in the liver…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (target), OPRM1 (target).</sub>
 

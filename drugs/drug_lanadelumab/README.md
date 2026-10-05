@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Lanadelumab, also known as DX-2930, is a human IgG1 monoclonal antibody designed for subcutaneous self-injection.[L4538] It is a fully human immunoglobulin, k-light-chain made in recombinant Chinese Hamster Ovary cells.[L4537] It has been granted priority review, breakthrough therapy, and orphan drug designations for rare diseases based on the results of clinical trials.[A38676] Lanadelumab was approved for use in patients with hereditary angioedema by the FDA in August 2018,[L4537] followed by Health Canada in October 2018[L49226] and the EMA in November 2018.[L49221]
+Lanadelumab, a monoclonal antibody, is used to treat hereditary angioedema. It is authorised in the European Union and is an approved medicine.
 
-**Indication.** Lanadelumab is indicated for prophylaxis to prevent attacks in adult and pediatric patients aged 2 years and older with hereditary angioedema.[L45108,L49221] In Canada, it is indicated for use only in adults and adolescents.[L49226]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q25326708](https://www.wikidata.org/wiki/Q25326708) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Cirincione_2017_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Exenatide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Ng2018_reference&quot;,&quot;label&quot;:&quot;Ng_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Ng2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_combined_single_and_multiple_dose_m&quot;,&quot;label&quot;:&quot;Cirincione_2017_combined_single_and_multiple_dose_models_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_combined_single_and_multiple_dose_m&quot;,&quot;label&quot;:&quot;Cirincione_2017_combined_single_and_multiple_dose_models_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_single_dose_model_iv&quot;,&quot;label&quot;:&quot;Cirincione_2017_single_dose_model_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_iiv&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_iiv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_reference&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_reference&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Exenatide_Gao2011_reference&quot;,&quot;label&quot;:&quot;Gao_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Gao2011_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Exenatide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # exenatide — `Exenatide_Cirincione2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.741). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.815). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,11 +21,11 @@
 
 The source reports only CL/F (9.1 l/h) and V (7.04 l) for exenatide; no absorption rate constant or lag time was extracted, so library placeholder values were used in their place, and the invented ka was flagged as not acceptable. The model was built with an apparent parameterization assuming F=1 and Fm=1 without molar correction, using first-order depot input for extravascular dosing. A second reader also disagreed on several extracted values, e.g. reading 1.35 and 96 where this record had none, and 100 where this record had 1. Extracted — exenatide: CL/F 9.1 l h−1, V 7.04 l.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:59.301563+00:00) predates the upstream re-run (2026-10-03 16:57:32.767596+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:59.301563+00:00) predates the upstream re-run (2026-10-04 23:58:39.184912+00:00). Current validate status: `rejected`.
 
 ## Citation
 Cirincione B et al., Population pharmacokinetics of exenatide, British journal of clinical… (2017)
@@ -34,7 +34,7 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 ## Model component
 <dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
@@ -67,19 +67,13 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
 - table section iiv: 'Cl_int (l h −1 )' routed out of structural estimates ('IIV(%)')
 - table section iiv: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR' routed out of structural estimates ('IIV(%)')
 - table section iiv: 'K m (pg ml −1 )' routed out of structural estimates ('IIV(%)')
 - table section iiv: 'Vc_int (l)' routed out of structural estimates ('IIV(%)')
 - table section iiv: 'Vc=Vc_int⋅weight84.8Vc_wtkg' routed out of structural estimates ('IIV(%)')
-- unit_dimension_mismatch: 'Cl_int (l h −1 )' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [mass] / [time]') — route to review
+- unit_dimension_mismatch: 'Cl_int (l h −1 )' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
 - unit_dimension_mismatch: 'Cl_eGFR' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('Cl = Cl_int ⋅eGFR80 Cl_eGFR', value None) — already have one for this compound
@@ -99,8 +93,6 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- built from REVIEW reference values (Cirincione_2017_2) — secondary source
-- volume reported by review
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -112,15 +104,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.741 (20/27 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.815 (22/27 fields) | 5 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl = cl_int ⋅egfr80 cl_egfr]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl_egfr].parameter_id` | Q22 | Q31 | mismatch |
-| `gpt-oss:120b` | `parameters[k a_max]` | 12.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc=vc_int⋅weight84.8vc_wtkg]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc_int].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | exenatide | unknown | mismatch |
@@ -200,13 +190,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.005 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 0.005, 0.01 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Exenatide_Cirincione2017v2_reference_params.json` · controls `Exenatide_Cirincione2017v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 16:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 23:58 UTC</sub>

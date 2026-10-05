@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A cardiac glycoside sometimes used in place of digoxin. It has a longer half-life than digoxin; toxic effects, which are similar to those of digoxin, are longer lasting. (From Martindale, The Extra Pharmacopoeia, 30th ed, p665)
+Digitoxin is a cardiac glycoside used to treat atrial fibrillation, supraventricular tachycardia, and congestive heart failure. It has been withdrawn from use in some markets, though it remains an approved drug elsewhere.
 
-**Indication.** For the treatment and management of congestive cardiac insufficiency, arrhythmias and heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423890](https://www.wikidata.org/wiki/Q423890) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

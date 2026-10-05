@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that sitagliptin inhibits the production of active GLP-1 via a proportional indirect response mechanism, but the paper excerpts are unavailable to confirm the specific mechanism or provide any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

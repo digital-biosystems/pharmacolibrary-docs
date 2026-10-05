@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_strand_2019_PRU&quot;,&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/pd_strand_2019_PRU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,9 +19,9 @@
 
 ### Reviewer guidance
 
-**The record was held back because the AR-C124910XX metabolite distribution parameters — Q/F 4.41 l/h, V1/F 7.04 l and V2/F 42.3 l — were neither extracted nor defaulted, leaving only 4 of 10 expected parameters covered.**
+**The ticagrelor parent–metabolite record was held back because the builder assumed F=1, Fm=1 without molar correction (apparent parameterization), a deviation judged not acceptable, and covariate effects were never simulated.**
 
-The ticagrelor parent parameters (CL/F 16.6 l/h, Q/F 10.4 l/h, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h−1, tlag 0.48 h) and the metabolite clearance CL/F 10.2 l/h with fm 0.22 were present, but the metabolite's intercompartmental clearance and both volumes of distribution were missing from the record. In addition, the model builder assumed F=1 and Fm=1 with no molar correction, an apparent parameterization, and the covariate effects defined in the record (e.g. the exponent 0.48 for the PRU error) were not exercised — only the reference individual was simulated. Extracted — ticagrelor: CL/F 16.6 l h –1, Q/F 10.4 l h –1, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h −1, tlag 0.48 h, Frel 1; AR-C124910XX: CL/F 10.2 l h –1, fm 0.22, Q/F 4.41 l h –1, V1/F 7.04 l, V2/F 42.3 l.
+The model defines covariate effects (e.g., exponent_for_pru_error 0.48), but only the reference individual was simulated, so the covariate scenarios were not exercised. The builder substituted F=1 and Fm=1 with no molar correction, making the parameterization apparent; this deviation was adjudicated as not acceptable. Reported parameters include ticagrelor CL/F 16.6 l/h, V1/F 156 l, V2/F 55.8 l, Q/F 10.4 l/h, kabs 10.1 h−1, tlag 0.48 h, and metabolite AR-C124910XX CL/F 10.2 l/h, V1/F 7.04 l, V2/F 42.3 l, Q/F 4.41 l/h, fm 0.22. Extracted — ticagrelor: CL/F 16.6 l h –1, Q/F 10.4 l h –1, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h −1, tlag 0.48 h, Frel 1; AR-C124910XX: CL/F 10.2 l h –1, fm 0.22, Q/F 4.41 l h –1, V1/F 7.04 l, V2/F 42.3 l.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -151,9 +151,9 @@ The ticagrelor parent parameters (CL/F 16.6 l/h, Q/F 10.4 l/h, V1/F 156 l, V2/F 
 | T3_metabolite_output[AR-C124910XX] | not captured | pass | not captured | 7.186543637316374e-05 | not captured | C_M1 (AR-C124910XX) must rise above 0 when the parent is dosed |
 | T3_molar_mass[AR-C124910XX] | not captured | pass | not captured | {'MW': 0.522568, 'MW_m1': 0.478518} | not captured | formation is molecule-for-molecule |
 | T3_output_variable | not captured | pass | C_central (measured=ticagrelor) | C_central | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 10 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['Q/F', 'V1/F', 'V2/F', 'Q/F', 'V1/F', 'V2/F'] |
+| T3_param_coverage | not captured | pass | 10 scholar param(s) emitted or defaulted | 10 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | 2096 | 0.00035783688727179276 | not captured | unresolved concentration unit (exp 'nmol l–1', sim 'kg/m3') |
 
 <details class="legend">
@@ -175,7 +175,7 @@ The ticagrelor parent parameters (CL/F 16.6 l/h, Q/F 10.4 l/h, V1/F 156 l, V2/F 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_modelica.zip" download>Ticagrelor_strand2019_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_modelica.zip" download>Ticagrelor_strand2019_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_fmi.zip" download>Ticagrelor_strand2019_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_9C.fmu" download>PK_3M_9C.fmu</a> <span class="pk-size">(1.4 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_matlab.zip" download>Ticagrelor_strand2019_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

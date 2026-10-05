@@ -8,11 +8,17 @@
 - **molar mass:** 176.1687 g/mol (C10H8O3) — DrugBank
 - **groups:** investigational
 
+## About
+
+Hymecromone is a coumarin compound used as a bile-therapy drug for biliary and liver-related conditions. It is not authorised in the European Union and is currently considered investigational.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q904431](https://www.wikidata.org/wiki/Q904431) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 13:52 | 12:58 | 0/0/0 | 2/0/0 | 0/0/0 | 285,879/7,990 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 7/17 | 10/1 | 0 |
+| 2026-10-04 14:26 | 3:03 | 0/0/0 | 1/0/0 | 0/0/0 | 89,104/4,576 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 7/17 | 10/1 | 0 |
 
 ## popPK records
 
@@ -22,11 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Tsitrina_2021_HA](drugs/drug_hymecromone/pd_Tsitrina_2021_HA.md) | hyaluronan secretion ← 4-methylumbelliferone · inhibition effect | — | Tsitrina AA et al., Inhibition of hyaluronan secretion by n…, Glycobiology (2021) | [10.1093/glycob/cwab038](https://doi.org/10.1093/glycob/cwab038) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Weiz_2024_unknown](drugs/drug_hymecromone/pd_Weiz_2024_unknown.md) | cell proliferation ← phloroglucinol-rutinoside · inhibition effect | — | Weiz G et al., Rutinosides-derived from Sarocladium st…, Microbial cell factories (2024) | [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Tsitrina_2021_hyaluronan_deposition](drugs/drug_hymecromone/pd_Tsitrina_2021_hyaluronan_deposition.md) | name ← unknown · inhibition effect | — | Tsitrina AA et al., Inhibition of hyaluronan secretion by n…, Glycobiology (2021) | [10.1093/glycob/cwab038](https://doi.org/10.1093/glycob/cwab038) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Tsitrina_2021_hyaluronan_secretion](drugs/drug_hymecromone/pd_Tsitrina_2021_hyaluronan_secretion.md) | name ← unknown · inhibition effect | — | Tsitrina AA et al., Inhibition of hyaluronan secretion by n…, Glycobiology (2021) | [10.1093/glycob/cwab038](https://doi.org/10.1093/glycob/cwab038) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Tsitrina_2021_hyaluronic_acid_concentration](drugs/drug_hymecromone/pd_Tsitrina_2021_hyaluronic_acid_concentration.md) | name ← unknown · inhibition effect | — | Tsitrina AA et al., Inhibition of hyaluronan secretion by n…, Glycobiology (2021) | [10.1093/glycob/cwab038](https://doi.org/10.1093/glycob/cwab038) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Weiz_2024_cell_viability](drugs/drug_hymecromone/pd_Weiz_2024_cell_viability.md) | cell viability ← 4-methylumbelliferone · direct sigmoid Emax (Hill) effect | — | Weiz G et al., Rutinosides-derived from Sarocladium st…, Microbial cell factories (2024) | [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -73,23 +75,23 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `van_2014.pdf` | van Beusekom CD et al., Comparing the glucuronidation capacity…, Journal of veterinary pharm… (2014) | pgx | 7 | [10.1111/jvp.12067](https://doi.org/10.1111/jvp.12067) | [23888985](https://www.ncbi.nlm.nih.gov/pubmed/23888985) | metadata signals extractable PGX data (UGT1A6, PK/PD-context) |
 | `Hu_2024.pdf` | Hu DG et al., Activation of Cryptic Donor Splice Site…, Drug metabolism and disposi… (2024) | pgx | 5 | [10.1124/dmd.123.001565](https://doi.org/10.1124/dmd.123.001565) | [38565302](https://www.ncbi.nlm.nih.gov/pubmed/38565302) | metadata signals extractable PGX data (UGT1A8) |
 
-<sub>queue written 2026-09-18T13:47:29.127785+00:00</sub>
+<sub>queue written 2026-10-04T14:23:13.923858+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Adachi_2005 | not_relevant | 0 | 0 | The paper studies the role of Bcrp1 in the efflux of glucuronide and sulfate conjugates of 4-methylumbelliferone and E3040, not hymecromone. |
+| PGx | Adachi_2005 | not_relevant | 0 | 0 | The paper studies the role of Bcrp1 in the efflux of 4-methylumbelliferone and E3040, not hymecromone. |
 | popPK | Albinhassan_2021 | irrelevant | 0 | 0 | The paper investigates the anticancer activity of Avicennia marina extracts and does not involve hymecromone or pharmacokinetic parameters. |
 | PD | Albinhassan_2021 | not_relevant | 0 | 0 | The paper investigates plant extracts (Avicennia marina), not the drug hymecromone, and reports only IC50 values for cytotoxicity without any PK/PD modeling or exposure-response analysis for the specified compound. |
 | popPK | Augsten_2023 | irrelevant | 0 | 0 | The study focuses on in-vitro cytotoxicity of coumarin-triazole hybrids, with hymecromone serving only as a reference compound and no quantitative PK parameters reported. |
 | PGx | Bock_1993 | not_relevant | 0 | 0 | The paper investigates paracetamol glucuronidation, not hymecromone. |
 | PGx | Cao_2017 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by phthalate esters and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
-| popPK | Carlson-Stevermer_2020 | irrelevant | 0 | 0 | The paper focuses on genome editing strategies for Pompe disease (GAA gene) and does not involve the drug hymecromone or its pharmacokinetics. |
+| popPK | Carlson-Stevermer_2020 | irrelevant | 0 | 0 | The paper focuses on genome editing strategies for genetic diseases and does not involve hymecromone or pharmacokinetic parameters. |
 | PD | Carlson-Stevermer_2020 | not_relevant | 0 | 0 | The paper focuses on CRISPR-Cas9 genome editing strategies and in silico modeling for Pompe disease, with no mention of hymecromone or any pharmacodynamic exposure-response relationship for that drug. |
-| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by thyroid hormones (T3/T4) and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by thyroid hormones (T3/T4) and does not mention hymecromone or any gene variants affecting its pharmacokinetics or pharmacodynamics. |
 | PGx | Collier_2002 | not_relevant | 0 | 0 | The paper investigates UGT expression in the placenta and does not mention hymecromone or any pharmacokinetic/pharmacodynamic parameters for this specific drug. |
-| popPK | Cunha_2013 | irrelevant | 0 | 0 | The paper describes an in-vitro carboxylesterase assay for ionic liquids and does not involve hymecromone or pharmacokinetic parameters. |
+| popPK | Cunha_2013 | irrelevant | 0 | 0 | The paper describes an in-vitro enzyme assay for ionic liquid toxicity and does not involve hymecromone or its pharmacokinetics. |
 | PD | Cunha_2013 | not_relevant | 0 | 0 | The paper describes an in vitro enzyme inhibition assay for ionic liquids and does not mention hymecromone or report any pharmacodynamic parameters for it. |
 | popPK | Di_2017 | irrelevant | 0 | 0 | The paper focuses on enterolactone and antibody-directed enzyme prodrug therapy, not hymecromone. |
 | PD | Di_2017 | not_relevant | 0 | 0 | The paper focuses on the development of an antibody-enzyme fusion (D7-hβG) for prodrug activation and does not report any pharmacodynamic or exposure-response relationship for hymecromone. |
@@ -101,24 +103,24 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Gao_2019 | not_relevant | 0 | 0 | The paper studies the inhibition of UGT isoforms by parthenolide and micheliolide, not the pharmacogenomics of hymecromone. |
 | popPK | García-Vilas_2013 | irrelevant | 0 | 0 | The paper studies 4-methylumbelliferone, not hymecromone, and focuses on in vitro/in vivo angiogenesis mechanisms rather than pharmacokinetic parameters. |
 | PGx | Hamamoto-Hardman_2020 | not_relevant | 0 | 0 | The paper focuses on morphine metabolism in horses and does not mention hymecromone. |
-| popPK | Hanioka_2006 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on UGT enzyme induction in HepG2 cells and does not report pharmacokinetic parameters for hymecromone. |
+| popPK | Hanioka_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of UGT enzyme induction in HepG2 cells and does not report pharmacokinetic parameters for hymecromone. |
 | PD | Hanioka_2006 | not_relevant | 0 | 0 | The paper studies the induction of UGT enzymes by beta-naphthoflavone and does not mention hymecromone or report any pharmacodynamic parameters for it. |
 | popPK | Haron_2014 | irrelevant | 0 | 0 | The paper is an in-vitro study on UGT inhibition by mitragynine, ketamine, and buprenorphine, and does not mention hymecromone or report any pharmacokinetic parameters for it. |
 | PD | Haron_2014 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of mitragynine and other compounds on UGT enzymes, not the pharmacodynamics of hymecromone. |
-| PGx | Haron_2014 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by mitragynine and other compounds, but does not mention hymecromone or report pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Haron_2014 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by mitragynine and other compounds, but does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | popPK | Hasibuan_2020 | irrelevant | 0 | 0 | The paper investigates the anticancer activity of Vernonia amygdalina extracts on breast cancer cells and does not involve hymecromone or pharmacokinetic parameters. |
 | PD | Hasibuan_2020 | not_relevant | 0 | 0 | The paper studies the anticancer activity of plant extracts (Vernonia amygdalina) and does not mention or analyze the drug hymecromone. |
 | PGx | Hu_2024 | not_relevant | 0 | 0 | The paper investigates UGT1A splice variants and their expression in cancer tissues but does not mention hymecromone or report any pharmacokinetic/pharmacodynamic parameters for this specific drug. |
 | popPK | Ismail_2010 | irrelevant | 0 | 0 | The paper is an in-vitro study on UGT inhibition by herbal extracts and does not involve hymecromone or report any pharmacokinetic parameters. |
 | PD | Ismail_2010 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory effects of herbal extracts on UGT isoforms and does not mention or study the drug hymecromone. |
-| PGx | Ismail_2010 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT isoforms by herbal extracts using 4-methylumbelliferone as a substrate, and does not involve hymecromone or pharmacogenomic variants. |
+| PGx | Ismail_2010 | not_relevant | 0 | 0 | The paper investigates herbal extract inhibition of UGT enzymes using 4-methylumbelliferone as a substrate and does not mention hymecromone or any gene variants. |
 | popPK | Jeong_2024 | irrelevant | 0 | 0 | The paper is a mechanistic/chemical study on tyrosinase inhibition by dihydrocoumarins and does not involve hymecromone or pharmacokinetic parameters. |
 | PD | Jeong_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for novel dihydrocoumarins, not pharmacodynamic modeling or exposure-response relationships for the drug hymecromone. |
 | PGx | Jia_2015 | not_relevant | 0 | 0 | The paper investigates the UGT inhibition potential of zaltoprofen, not the pharmacokinetics or pharmacodynamics of hymecromone. |
 | PGx | Järvinen_2017 | not_relevant | 0 | 0 | The paper studies the transport of glucuronides by MRP/BCRP transporters but does not mention hymecromone or any pharmacogenomic effect on its PK/PD parameters. |
 | popPK | Kandil_2026 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis of hybrid ProTides using hymecromone (4MU) as a structural component, and it does not report any pharmacokinetic parameters for hymecromone. |
 | PD | Kandil_2026 | not_relevant | 0 | 0 | The paper describes the synthesis and characterization of novel coumarin-stavudine hybrid ProTides and does not contain any pharmacodynamic or exposure-response data for hymecromone. |
-| PGx | Knights_2010 | not_relevant | 0 | 0 | The paper investigates spironolactone and canrenone, not hymecromone, and focuses on drug-drug interactions rather than pharmacogenomics. |
+| PGx | Knights_2010 | not_relevant | 0 | 0 | The paper investigates spironolactone and canrenone, not hymecromone. |
 | popPK | Lewis_2007 | irrelevant | 0 | 0 | no_text gate: only 136 chars of text extracted (&lt; 400) |
 | PD | Lewis_2007 | not_relevant | 0 | 0 | The paper focuses on the structural biology and substrate selectivity of UGT enzymes, not on the pharmacodynamics or exposure-response of hymecromone. |
 | popPK | Li_2019 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of XueBiJing compounds and antibiotics, and does not mention or report data for hymecromone. |
@@ -132,7 +134,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Liu_2019 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by PFASs and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | popPK | Lokeshwar_2010 | irrelevant | 0 | 0 | The paper studies 4-methylumbelliferone, not hymecromone, and focuses on antitumor mechanisms rather than pharmacokinetic parameters. |
 | PD | Lokeshwar_2010 | not_relevant | 0 | 0 | The paper studies 4-methylumbelliferone, not hymecromone, and does not report PK/PD modeling or exposure-response relationships for the target drug. |
-| PGx | Lokman_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effects of 4-methylumbelliferone (hymecromone) on ovarian cancer cells but does not report any pharmacogenomic effects (gene variant/genotype) on its PK or PD parameters. |
+| PGx | Lokman_2019 | not_relevant | 0 | 0 | The paper studies 4-methylumbelliferone and carboplatin in ovarian cancer, not hymecromone, and does not report pharmacogenomic effects on PK/PD parameters. |
 | PGx | Lu_2013 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by isoliquiritigenin, not the pharmacogenomics of hymecromone. |
 | popPK | Mano_2004 | irrelevant | 0 | 0 | The study investigates in-vitro glucuronidation of 4-methylumbelliferone and does not involve hymecromone or report any pharmacokinetic parameters. |
 | PD | Mano_2004 | not_relevant | 0 | 0 | The paper investigates the effects of beta-estradiol and propofol on UGT enzymes, not hymecromone. |
@@ -150,7 +152,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Pattanawongsa_2015 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Pattanawongsa_2015 | not_relevant | 0 | 0 | The paper focuses on the inhibition of UDP-glucuronosyltransferase enzymes by canagliflozin and dapagliflozin, and does not contain any data or analysis regarding hymecromone. |
 | PGx | Pattanawongsa_2015 | not_relevant | 0 | 0 | The paper discusses canagliflozin and dapagliflozin, not hymecromone. |
-| PGx | Qi_2015 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by podophyllotoxin derivatives and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Qi_2015 | not_relevant | 0 | 0 | The paper studies the inhibition of UGT enzymes by podophyllotoxin analogues and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Rong_2024 | not_relevant | 0 | 0 | The paper studies the drug icaritin and its inhibition of UGT enzymes, not hymecromone, and does not report pharmacogenomic effects. |
 | popPK | Rosser_2022 | irrelevant | 2 | 0 | The study is a pharmacodynamic trial measuring hyaluronan levels, not a pharmacokinetic study, and it does not report quantitative PK parameters (CL, V, ka) for hymecromone, only citing a literature half-life. |
 | PGx | Rowland_2008 | not_relevant | 0 | 0 | The paper investigates the effect of albumin and fatty acids on UGT enzyme kinetics for substrates like propofol and 4-methylumbelliferone, but does not mention hymecromone or any pharmacogenomic variants. |
@@ -160,10 +162,10 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Sancenon_2015 | irrelevant | 0 | 0 | The paper describes the development of an in vitro enzymatic assay for alkaline phosphatase and does not involve hymecromone or report any pharmacokinetic parameters. |
 | PD | Sancenon_2015 | not_relevant | 0 | 0 | The paper describes the development of an enzymatic assay for alkaline phosphatase and reports in vitro IC50 values for sodium orthovanadate, but it does not contain any data, analysis, or mention of the drug hymecromone. |
 | PGx | Sasaki_2011 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of 4-methylumbelliferone glucuronide (4-MUG), not hymecromone. |
-| PGx | Shan_2014 | not_relevant | 0 | 0 | The paper studies UGT inhibition by herbal compounds (bavachalcone/corylin) and does not mention hymecromone or any pharmacogenomic effects. |
-| popPK | Shiratani_2008 | irrelevant | 0 | 0 | The study focuses on UDP-glucuronosyltransferase activities in mice and rats using substrates like estradiol and morphine, and does not involve hymecromone or report its pharmacokinetic parameters. |
+| PGx | Shan_2014 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of bavachalcone and corylin on UGT enzymes, not the pharmacogenomics of hymecromone. |
+| popPK | Shiratani_2008 | irrelevant | 0 | 0 | The study investigates UDP-glucuronosyltransferase activities in mice and rats using various substrates (e.g., estradiol, 4-nitrophenol, mycophenolic acid) and does not mention hymecromone. |
 | PD | Shiratani_2008 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (UGT activity) for various substrates in mice and rats, not a pharmacodynamic or exposure-response relationship for the drug hymecromone. |
-| PGx | Strassburg_2000 | not_relevant | 0 | 0 | The paper studies UGT polymorphisms in the small intestine but does not mention hymecromone or report specific PK/PD parameters for this drug. |
+| PGx | Strassburg_2000 | not_relevant | 0 | 0 | The paper studies UGT polymorphisms in the small intestine generally but does not mention hymecromone or its specific PK/PD parameters. |
 | popPK | Tian_2018 | irrelevant | 0 | 0 | The paper focuses on green tea catechins and raloxifene pharmacokinetics, with no mention of hymecromone. |
 | PD | Tian_2018 | not_relevant | 0 | 0 | The paper focuses on green tea catechins as UGT inhibitors and their interaction with raloxifene; it does not contain any pharmacodynamic or exposure-response data for hymecromone. |
 | popPK | Tsitrina_2021 | irrelevant | 0 | 0 | The paper is a mechanistic study on hyaluronan synthesis inhibition and does not report any pharmacokinetic parameters for hymecromone. |
@@ -173,7 +175,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Udomuksorn_2007 | not_relevant | 0 | 0 | The paper investigates UGT1A1 mutations and their effect on bilirubin and other substrates, but does not mention or test hymecromone. |
 | PGx | Uno_2018 | not_relevant | 0 | 0 | The paper characterizes UGT1A enzymes in cynomolgus macaques and does not mention hymecromone or report pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Uno_2020 | not_relevant | 0 | 0 | The paper characterizes UGT enzymes in common marmosets and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
-| popPK | Wang_2011 | irrelevant | 0 | 0 | The study investigates the renal disposition of 4-methylumbelliferone and its glucuronide, not hymecromone. |
+| popPK | Wang_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 4-methylumbelliferone and its glucuronide in rat kidneys, not hymecromone. |
 | PGx | Wang_2014 | not_relevant | 0 | 0 | The paper characterizes zebrafish UGT enzymes and their substrate specificity but does not mention hymecromone or report pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT enzymes by bromophenols and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Wang_2021 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving belinostat and UGT enzymes, and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
@@ -182,10 +184,10 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Weiz_2024 | irrelevant | 0 | 0 | The paper describes the enzymatic synthesis and anti-tumoral activity of rutinoside derivatives, not the pharmacokinetics of hymecromone. |
 | popPK | Xie_2017 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
 | PD | Xie_2017 | not_relevant | 0 | 0 | The paper focuses on in vitro inhibition of UGT enzymes by ursolic and oleanolic acid, not on the pharmacodynamics of hymecromone. |
-| PGx | Xu_2014 | not_relevant | 0 | 0 | The paper studies the inhibition of UGT2B enzymes by bakuchiol and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Xu_2014 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT2B7 by bakuchiol and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | popPK | Xu_2022 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal activity of 4-methylumbelliferone derivatives, not the pharmacokinetics of hymecromone. |
 | PD | Xu_2022 | not_relevant | 0 | 0 | The paper reports in vitro antifungal activity (EC50) for novel 4-methylumbelliferone derivatives, not hymecromone, and does not contain any pharmacokinetic or pharmacodynamic modeling. |
-| PGx | Xu_2023 | not_relevant | 0 | 0 | The paper investigates the interaction of dietary flavonoids with UGT2B7 and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Xu_2023 | not_relevant | 0 | 0 | The paper investigates the interaction of dietary flavonoids with UGT2B7 and does not mention hymecromone or report pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Yin_2021 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving Dabrafenib and UGT enzymes, not the pharmacogenomics of hymecromone. |
 | PGx | Zamek-Gliszczynski_2006 | not_relevant | 0 | 0 | The paper studies the biliary excretion of 4-methylumbelliferyl glucuronide and sulfate, not hymecromone. |
 | PGx | Zamek-Gliszczynski_2006_2 | not_relevant | 0 | 0 | The paper studies acetaminophen, 4-methylumbelliferone, and harmol, not hymecromone. |
@@ -194,7 +196,7 @@ _25 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Zhang_2016 | not_relevant | 0 | 0 | The paper investigates the inhibition of UGT2B7 by atractylenolides and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | popPK | Zhang_2017 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on tanshinones inhibiting UGTs and does not report pharmacokinetic parameters for hymecromone. |
 | PD | Zhang_2017 | not_relevant | 0 | 0 | The paper studies tanshinones (from Danshen), not hymecromone, and reports in vitro enzyme inhibition (IC50/Ki) rather than a pharmacodynamic exposure-response relationship for the target drug. |
-| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of quercetin and its metabolite on UGT enzymes, not the pharmacokinetics or pharmacodynamics of hymecromone. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of quercetin on UGT enzymes and does not mention hymecromone or any pharmacogenomic effects on its PK/PD parameters. |
 | popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract collection and contains no scientific content, data, or PD parameters for hymecromone. |
 | PGx | van_2014 | not_relevant | 0 | 0 | The paper studies feline and canine liver glucuronidation capacity using prototypic substrates (naphthol, estradiol, morphine) and does not mention hymecromone or human pharmacogenomics. |

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dapagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/&quot;},{&quot;label&quot;:&quot;Sokolov_2023 \u00b7 PD basal insulin dose&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Sokolov_2023_HbA1c&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sokolov_2023_basal_insulin&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 basal insulin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_basal_insulin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Sokolov_2023_glucose&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # basal insulin dose — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -16,7 +15,11 @@
 
 **As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives basal insulin dose (in IU/mL): direct Emax (saturable) effect.
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
+
+> Dapagliflozin exposure (24-h AUC) inhibits the basal insulin dose via a proportional Emax model, with a maximum inhibition (Imaxins) of 0.0941 and an exposure for half-maximal inhibition (IAUC50ins) of 38.8 ng/mL*h. The paper describes this as a negative association between basal insulin dose reduction and dapagliflozin concentration but does not specify a mechanistic rate constant (e.g., ke0) or direct production/elimination mechanism.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Sokolov_2023`
 - **model family:** `emax`
@@ -40,66 +43,25 @@ Sokolov V et al., Effectiveness of dapagliflozin as an in…, Frontiers in pharm
 </details>
 
 
-## Exposure-response model
-
-`Dapagliflozin_Sokolov2023_PD_basal_insulin` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | -0.0941 IU/mL | — |
-| EC50 | 38.8 ng/mL*h | — |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.04705, `at_inf` = -0.0941
-
-Deviations:
-
-- `defaulted_parameters` — E0, gamma
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
-- `pd_binding_exposure_unit_unresolved` — 'ng/mL*h' — the x axis is in the paper's unit, not SI
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.26%) |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-- exposure unit not resolved to SI — the x axis is in the paper's unit
-
-
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_modelica.zip" download>Dapagliflozin_Sokolov2023_PD_basal_insulin_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_fmi.zip" download>Dapagliflozin_Sokolov2023_PD_basal_insulin_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_matlab.zip" download>Dapagliflozin_Sokolov2023_PD_basal_insulin_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_sbml.zip" download>Dapagliflozin_Sokolov2023_PD_basal_insulin_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_cellml.zip" download>Dapagliflozin_Sokolov2023_PD_basal_insulin_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_dapagliflozin/Dapagliflozin_Sokolov2023_PD_basal_insulin/Dapagliflozin_Sokolov2023_PD_basal_insulin_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Dapagliflozin_Sokolov2023_PD_basal_insulin_params.json` · controls `Dapagliflozin_Sokolov2023_PD_basal_insulin_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

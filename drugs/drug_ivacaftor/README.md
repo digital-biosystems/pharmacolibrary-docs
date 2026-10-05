@@ -10,19 +10,9 @@
 
 ## About
 
-**Description.** Ivacaftor (also known as Kalydeco or VX-770) is a drug used for the management of Cystic Fibrosis (CF). It is manufactured and distributed by Vertex Pharmaceuticals. It was approved by the Food and Drug Administration on January 31, 2012[L768], and by Health Canada in late 2012.[L6841]  Ivacaftor is administered as a monotherapy and also administered in combination with other drugs for the management of CF.[L6814,L6979,L6847]
+Ivacaftor is a medicine used to treat cystic fibrosis. It is authorised in the European Union and is an approved drug.
 
-Cystic Fibrosis is an autosomal recessive disorder caused by one of several different mutations in the gene for the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) protein, an ion channel involved in the transport of chloride and sodium ions across cell membranes. CFTR is active in epithelial cells of organs such as of the lungs, pancreas, liver, digestive system, and reproductive tract. Alterations in the CFTR gene result in altered production, misfolding, or function of the protein and consequently abnormal fluid and ion transport across cell membranes.[A20298, A20299] As a result, CF patients produce thick, sticky mucus that clogs the ducts of organs where it is produced making patients more susceptible to complications such as infections, lung damage, pancreatic insufficiency, and malnutrition.[A20302]
-
-Prior to the development of ivacaftor, management of CF primarily involved therapies for the control of infections, nutritional support, clearance of mucus, and management of symptoms rather than improvements in the underlying disease process or lung function (FEV1). Notably, ivacaftor was the first medication approved for the management of the underlying causes of CF (abnormalities in CFTR protein function) rather than control of symptoms.[A20297]
-
-**Indication.** When used as monotherapy as the product Kalydeco, ivacaftor is indicated for the treatment of cystic fibrosis (CF) in patients aged one month and older who have one mutation in the CFTR gene that is responsive to ivacaftor potentiation based on clinical and/or _in vitro_ assay data.[L41320, L46337]
-
-When used in combination with the drug [lumacaftor] as the product Orkambi, ivacaftor is indicated for the management of CF in patients aged one year and older who are homozygous for the _F508del_ mutation in the CFTR gene. If the patient’s genotype is unknown, an FDA-cleared CF mutation test should be used to detect the presence of the _F508del_ mutation on both alleles of the CFTR gene.[L43060]
-
-When used in combination with [tezacaftor] in the product Symdeko, it is used to manage CF in patients 12 years and older who have at least one mutation in the CFTR gene or patients aged 12 or older who are shown to be homozygous for the F508del mutation.[L6814]
-
-When used in combination with tezacaftor and [elexacaftor] in the product Trikafta, it is indicated for the treatment of cystic fibrosis in patients 12 years of age and older who have at least one _F508del_ mutation in the CFTR gene.[L9395]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6095693](https://www.wikidata.org/wiki/Q6095693) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -53,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly eliminated in the feces after metabolic conversion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CFTR (potentiator).</sub>
 

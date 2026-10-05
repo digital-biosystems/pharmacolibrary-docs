@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Mercury chloride (HgCl2) is a highly toxic compound that volatizes slightly at ordinary temperature and appreciably at 100 degrees C. It is corrosive to mucous membranes and used as a topical antiseptic and disinfectant. Mercuric chloride was used to disinfect wounds by Arab physicians in the Middle Ages but modern medicine has since deemed it unsafe for use. [T112]
+Mercuric chloride, also known as corrosive sublimate, is a mercury compound that has been used as an antiseptic and disinfectant for skin and other surfaces. It is no longer in common medical use because of its high toxicity, and it is currently regarded as an experimental substance rather than an approved medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q143200](https://www.wikidata.org/wiki/Q143200) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

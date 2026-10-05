@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;Chiang_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ondansetron — `Ondansetron_Chiang2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,16 +19,18 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 33, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 24.6, the second reading 17; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:16.266787+00:00) predates the upstream re-run (2026-10-04 14:07:08.640198+00:00). Current validate status: `extracted`.
 
 ## Citation
 Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412)
 
 ## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021v2_reference" status="curated_candidate" stale="false" population="patients undergoing surgery" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021v2_reference" status="extracted" stale="true" population="patients" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.
@@ -38,11 +40,11 @@ Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 24.6 | L/h | 6.833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | T4:row2:col2, T4:row2:col3, Chiang_2021_2_table_3:row4:col1 | — | 30 (None% RSE) |
-| VC (L) | `Q63` · V1 | 63.3 | L | 0.0633 | [l] | not captured | exact (1.0) | T4:row3:col2, T4:row3:col3 | — | 23 (None% RSE) |
+| CL (L/h) | `Q22` · CL | 24.6 | L/h | 6.833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | T4:row2:col2, T4:row2:col3, Chiang_2021_2_table_3:row4:col1 | — | not captured |
+| VC (L) | `Q63` · V1 | 63.3 | L | 0.0633 | [l] | not captured | exact (1.0) | T4:row3:col2, T4:row3:col3 | — | not captured |
 | Q (L/h) | `Q30` · Q | 211 | L/h | 5.861111111111111e-05 | [l] / [h] | not captured | exact (1.0) | T4:row4:col2, T4:row4:col3 | — | not captured |
 | VT (L) | `Q61` · V | 107 | L | 0.107 | [l] | not captured | llm (0.6) | T4:row5:col2, T4:row5:col3 | — | not captured |
-| KP | `Q410` · Kp | 0.145 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row6:col2, T4:row6:col3 | — | 33 (None% RSE) |
+| KP | `Q410` · Kp | 0.145 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row6:col2, T4:row6:col3 | — | not captured |
 | V 2 (l) | `Q64` · V2 | 108.0 | l | 0.108 | L | not captured | review_gapfill (0.7) | Lee_2016:review | — | not captured |
 
 <details class="legend">
@@ -53,9 +55,12 @@ Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'IIV CL' routed out of structural estimates ('Inter-individual Variability (CV%)')
+- table section iiv: 'IIV VC' routed out of structural estimates ('Inter-individual Variability (CV%)')
+- table section iiv: 'IIV KP' routed out of structural estimates ('Inter-individual Variability (CV%)')
+- table section residual_error: 'RVplasma' routed out of structural estimates ('Residual Variability (CV%)')
 - column 'population pharmacokinetic parameters' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'B for (VC, AGE)' — extend the ontology if this is a real PK parameter (source ['T4:row7:col2', 'T4:row7:col3'])
-- dropped unlinked row (NIL): 'RVplasma' — extend the ontology if this is a real PK parameter (source ['T4:row15:col3'])
 - dropped value-less row: 't1/2 (h)' (captured trailing unit 'h' for child rows)
 - dropped value-less row: 'MRT (h)' (captured trailing unit 'h' for child rows)
 - dropped value-less row: 'AUC0−∞ (h·μg/L)' (captured trailing unit 'h·μg/L' for child rows)
@@ -74,7 +79,7 @@ Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -84,11 +89,11 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl (l/h) systemic clearance]` | not captured | 24.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 33 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q (l/h) inter-compartmental distribution clearance]` | not captured | 211 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` | 211 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c (l) volume of the central compartment]` | not captured | 63.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl].value` | 24.6 | 17 | mismatch |
+| `gpt-oss:120b` | `parameters[kp].value` | 0.145 | 9 | mismatch |
+| `gpt-oss:120b` | `parameters[q].value` | 211 | 7 | mismatch |
+| `gpt-oss:120b` | `parameters[vc].value` | 63.3 | 14 | mismatch |
+| `gpt-oss:120b` | `parameters[vt].value` | 107 | 9 | mismatch |
 
 </details>
 
@@ -147,8 +152,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_modelica.zip" download>Ondansetron_Chiang2021v2_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_fmi.zip" download>Ondansetron_Chiang2021v2_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_modelica.zip" download>Ondansetron_Chiang2021v2_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_fmi.zip" download>Ondansetron_Chiang2021v2_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_matlab.zip" download>Ondansetron_Chiang2021v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_matlab_simbio.zip" download>Ondansetron_Chiang2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_sbml.zip" download>Ondansetron_Chiang2021v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -169,4 +174,4 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 13:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 14:07 UTC</sub>

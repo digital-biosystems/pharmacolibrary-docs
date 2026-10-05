@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 1500 mg oral (A10BB03)",
  "model_id": "Tolbutamide_Shi2021_reference",
  "molar_masses": {
   "central.C": 0.27034800000000003
@@ -7,10 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  2100.0
  ],
  "parameters": {
   "Cl": 2.3916666666666664e-05,
@@ -20,15 +16,15 @@
   "VdPerKg": 0.00148,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0021,
+  "adminMass": 0.0015,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 5891.106445704857
+  "central.C": 5891.343988688179
  },
  "reference_peaks": {
-  "central.C": 0.005658691174074906
+  "central.C": 0.004041912934683814
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

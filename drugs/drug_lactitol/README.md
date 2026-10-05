@@ -10,17 +10,15 @@
 
 ## About
 
-**Description.** Lactitol, also known as 4-β-D-galactopyranosyl-D-glucitol, is a sugar alcohol synthesized from [lactose].[A190918] It is used in food manufacturing as a nutritive sweetener and is approximately 35% as sweet as table sugar (i.e. [sucrose]).[A190912] Clinically, lactitol has been investigated for use as an osmotic laxative and, along with other non-absorbable disaccharides such as [lactulose], in the treatment of hepatic encephalopathy in patients with cirrhosis.[A190915,A190918]
+Lactitol is an osmotic laxative used to treat constipation. It is an approved drug and is widely used as a laxative.
 
-Pizensy, an oral lactitol powder for solution, was approved by the FDA for use in chronic idiopathic constipation in February 2020.[L11803]
-
-**Indication.** Lactitol is indicated for the treatment of chronic idiopathic constipation in adults.[L11803]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415020](https://www.wikidata.org/wiki/Q415020) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 19:21 | 6:41 | 0/0/0 | 0/1/1 | 0/0/0 | 141,788/3,576 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/4 | 4/0 | 0 |
+| 2026-10-04 15:56 | 1:59 | 0/0/0 | 0/0/2 | 0/0/0 | 69,902/2,245 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/4 | 4/0 | 0 |
 
 ## popPK records
 
@@ -30,11 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span> | [Oku_2007_diarrhea](drugs/drug_lactitol/pd_Oku_2007_diarrhea.md) | diarrhea ← xylitol · categorical (graded) response model | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Oku_2005_breath_hydrogen](drugs/drug_lactitol/pd_Oku_2005_breath_hydrogen.md) | name ← lactose · stimulation effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Oku_2005_serum_glucose](drugs/drug_lactitol/pd_Oku_2005_serum_glucose.md) | name ← lactose · stimulation effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Oku_2005_serum_insulin](drugs/drug_lactitol/pd_Oku_2005_serum_insulin.md) | name ← lactose · stimulation effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Oku_2005_transitory_diarrhea](drugs/drug_lactitol/pd_Oku_2005_transitory_diarrhea.md) | name ← lactose · stimulation effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Oku_2005_transitory_diarrhea](drugs/drug_lactitol/pd_Oku_2005_transitory_diarrhea.md) | transitory diarrhea ← lactitol · direct linear effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Oku_2007_cumulative_incidence_of_diarrhea](drugs/drug_lactitol/pd_Oku_2007_cumulative_incidence_of_diarrhea.md) | cumulative incidence of diarrhea ← lactitol · direct linear effect | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Oku_2007_cumulative_incidence_of_diarrhea_2](drugs/drug_lactitol/pd_Oku_2007_cumulative_incidence_of_diarrhea_2.md) | cumulative incidence of diarrhea ← lactitol · direct linear effect | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
 
 ## ADME sites
 
@@ -42,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | small intestine | <sub>“…Lactitol is not absorbed in the gastrointestinal tract to any significant extent…”</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -63,22 +59,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|---|---|
 | popPK | Delas_1991 | irrelevant | 0 | 0 | The paper is a clinical efficacy and tolerability study for constipation and does not report any pharmacokinetic parameters for lactitol. |
 | PD | Delas_1991 | not_relevant | 1 | 0 | The paper reports only qualitative clinical efficacy and tolerability percentages for a fixed dose, with no concentration-effect data, dose-response curve, or numeric PD parameters. |
-| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a safety re-evaluation of erythritol, not lactitol, and contains no pharmacokinetic parameters for the target drug. |
+| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper evaluates erythritol, not lactitol, and contains no pharmacokinetic data for the target drug. |
 | PD | EFSA_2023 | not_relevant | 0 | 0 | The paper is a risk assessment for erythritol (E 968), not lactitol, and does not report a pharmacodynamic model or numeric PD parameters for lactitol. |
-| popPK | Evstafeva_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 2-octynohydroxamic acid, and lactitol is only mentioned as a standard comparator for hepatic encephalopathy treatment without any PK data. |
-| popPK | Giorgi_2010 | irrelevant | 0 | 0 | The paper focuses on the synthesis of PEGylated lactose analogs for enzyme inhibition studies, not on the pharmacokinetic parameters of lactitol. |
-| popPK | Giorgi_2012 | irrelevant | 2 | 0 | The study focuses on the synthesis and bioavailability of PEGylated lactose analogs (not lactitol itself) for anti-parasitic use, and no quantitative PK parameters (CL, V, etc.) for lactitol are reported in the evidence. |
-| popPK | Grimble_2007 | irrelevant | 0 | 0 | The paper is a review of amino acid toxicity where lactitol is only mentioned as a comparator for laxative thresholds, with no PK parameters reported. |
+| popPK | Evstafeva_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 2-octynohydroxamic acid, not lactitol, which is only mentioned as a standard comparator for hepatic encephalopathy treatment. |
+| popPK | Giorgi_2010 | irrelevant | 0 | 0 | The paper is a mechanistic/chemical synthesis study on PEGylated lactose analogs for enzyme inhibition, not a pharmacokinetic study of lactitol. |
+| popPK | Giorgi_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PEGylated lactose analogs (drug conjugates) for treating Chagas disease, not the disposition parameters of lactitol itself. |
+| popPK | Grimble_2007 | irrelevant | 0 | 0 | The paper is a review of gastrointestinal toxicity of amino acids, and lactitol is only mentioned as a comparator for laxative thresholds without any pharmacokinetic parameter reporting. |
 | PD | Grimble_2007 | not_relevant | 1 | 0 | The paper is a qualitative review of adverse effects for arginine and related amino acids; it mentions lactitol only as a comparative threshold for laxative effect without providing any numeric PD parameters or concentration-effect curves for lactitol. |
 | popPK | Heredia_1988 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing lactitol and lactulose for hepatic encephalopathy and does not report any pharmacokinetic parameters. |
 | PD | Heredia_1988 | not_relevant | 1 | 0 | The paper is a clinical efficacy trial comparing two drugs with no pharmacokinetic data, concentration measurements, or quantitative dose-response modeling. |
-| popPK | Iwasa_2015 | irrelevant | 0 | 0 | The paper is a review of pathophysiology and management of hepatic encephalopathy that mentions lactitol only as a therapeutic agent without reporting any pharmacokinetic parameters. |
-| popPK | Krupa_2017 | irrelevant | 0 | 0 | The study focuses on tadalafil as the subject drug, with lactitol serving only as a crystalline matrix former/comparator, and no PK parameters for lactitol are reported. |
-| popPK | Luo_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of docetaxel liposomes, using lactitol only as a structural component for liver targeting, not as the subject drug. |
+| popPK | Iwasa_2015 | irrelevant | 0 | 0 | The paper is a review of hepatic encephalopathy management that mentions lactitol as a treatment but contains no pharmacokinetic data or quantitative disposition parameters. |
+| popPK | Krupa_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tadalafil, with lactitol used only as a formulation excipient (matrix former). |
+| popPK | Luo_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of docetaxel liposomes, where lactitol is only a component of the liposome's surface modification (CHS-DD-LA), not the subject drug. |
 | PD | Luo_2016 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and tissue distribution of docetaxel liposomes, not on the pharmacodynamics or exposure-response relationship of lactitol. |
 | popPK | Morgan_1987 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for hepatic encephalopathy and does not report any pharmacokinetic parameters for lactitol. |
 | PD | Morgan_1987 | not_relevant | 1 | 0 | The study is a clinical efficacy trial comparing two drugs with dose titration to a clinical endpoint (stool frequency), but it does not report pharmacokinetic data, exposure-response modeling, or numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Nie_2021 | irrelevant | 0 | 0 | Lactitol is used only as a chemical precursor to synthesize lipids for liposome targeting studies, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Nie_2021 | irrelevant | 0 | 0 | Lactitol is used as a chemical precursor to synthesize lipids for liposome drug delivery, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Oku_2005 | irrelevant | 0 | 0 | The study is a lactose tolerance and breath hydrogen test assessing gastrointestinal tolerance and fermentation, not a pharmacokinetic study reporting disposition parameters like clearance or volume for lactitol. |
 | PD | Oku_2005 | not_relevant | 3 | 2 | The study reports dose-response data for diarrhea incidence (thresholds) and breath hydrogen AUC, but lacks numeric PD parameters (e.g., EC50, Emax) or a fitted concentration-effect model. |
 | popPK | Oku_2007 | irrelevant | 0 | 0 | The study estimates non-effective dose levels for diarrhea induction (toxicology/safety) rather than reporting pharmacokinetic disposition parameters like clearance, volume, or half-life. |
@@ -89,10 +85,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Salerno_1994 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for hepatic encephalopathy and does not report any pharmacokinetic parameters for lactitol. |
 | PD | Salerno_1994 | not_relevant | 3 | 0 | The paper reports qualitative dose-response trends (higher dose more effective) but provides no numeric PD parameters, concentration-effect curves, or quantitative data to derive Emax/EC50. |
 | popPK | Soontornchai_1998 | irrelevant | 2 | 0 | The study focuses on intestinal transit and digestibility (recovery percentages) rather than reporting quantitative pharmacokinetic disposition parameters like clearance, volume of distribution, or compartmental model parameters. |
-| popPK | Strobel_1985 | irrelevant | 0 | 0 | The study focuses on the synthesis and cellular retention of 125I-labeled lactitol derivatives as tracers for protein catabolism, not on the pharmacokinetic disposition parameters of lactitol itself. |
-| PGx | Taylor_2016 | not_relevant | 0 | 0 | The paper describes the engineering of a bacterial transcription factor (LacI) to respond to lactitol as a ligand, which is a synthetic biology study, not a pharmacogenomic study of lactitol's PK/PD in humans. |
-| popPK | Walder_1988 | irrelevant | 0 | 0 | The study reports clinical efficacy and dose-response (ED50) for constipation, but contains no pharmacokinetic parameters (CL, V, ka, etc.) for lactitol. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource for drug exposure detection and does not report pharmacokinetic parameters for lactitol. |
+| popPK | Strobel_1985 | irrelevant | 0 | 0 | The study investigates the chemistry of radioactive labels for protein catabolism using lactitol as a structural component of a tracer, not the pharmacokinetics of lactitol itself. |
+| PGx | Taylor_2016 | not_relevant | 0 | 0 | The paper describes the engineering of a bacterial transcription factor to bind lactitol as a synthetic biology tool, not the pharmacokinetics or pharmacodynamics of lactitol in humans. |
+| popPK | Walder_1988 | irrelevant | 0 | 0 | The study reports clinical efficacy and dose-response (ED50) for constipation, but does not provide pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource for drug screening and does not report pharmacokinetic parameters for lactitol. |
 | PD | Zhao_2025 | not_relevant | 0 | 0 | The paper describes a metabolomics database for drug exposure detection and does not report any pharmacodynamic or exposure-response analysis for lactitol. |
 
 ---

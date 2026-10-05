@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Barbexaclone, a salt compound of propylhexedrine and phenobarbital, is a potent antiepileptic. By weight, barbexaclone is 40% propylhexedrine and 60% phenobarbital.  While barbexaclone has sedative properties, propylhexedrine has psychostimulant properties intended to offset these sedative effects. Pharmacokinetic studies have demonstrated that the pharmacokinetics of phenobarbital given as barbexaclone are not affected by propylhexedrine. Several reports from Spanish and Italian literature suggest that barbexaclone is at least as effective as phenobarbital in adults and children, while being better tolerated and having less sedative properties.  These reports were conducted in a small series of patients in the 1970s and 1980s, and have yet to be confirmed by larger controlled trials.  Despite the lack of controlled trials, barbexaclone was used widely in Turkey until it was discontinued in 2009. 
+Barbexaclone is a barbiturate derivative classified as an antiepileptic, used for epilepsy. It is considered experimental and does not appear to be an approved medicine today.
 
-Barbexaclone exists in 25mg and 100mg tablets. 100mg of barbexaclone is equivalent to 60mg of phenobarbital. With this difference in potency in mind, other pharmacokinetic considerations such as dose titration, daily dosing, and optimal plasma concentration can be considered the same as for the equivalent amount of phenobarbital. 
-
-There has been a case of barbexaclone abuse due to the amphetamine like properties of propylhexedrine, although the comparative abuse potential is much lower than amphetamine.
-
-**Indication.** Created for the treatment for epilepsy, with the intent of creating an antiepileptic with less sedative properties than phenobarbital.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409549](https://www.wikidata.org/wiki/Q409549) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,8 +32,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | <sub>“…Phenobarbital was observed to reach the blood more slowly…”</sub> | prose |
-| absorption | brain | <sub>“…propylhexedrine was seen to penetrate the blood brain barrier rapidly…”</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

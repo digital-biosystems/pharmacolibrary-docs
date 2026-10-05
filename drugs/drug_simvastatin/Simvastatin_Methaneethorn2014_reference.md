@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Methaneethorn_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kovalenko2025_reference&quot;,&quot;label&quot;:&quot;Kovalenko_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_wierczek2024_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_wierczek2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friedrich_2014_HDL_C&quot;,&quot;label&quot;:&quot;Friedrich_2014 \u00b7 HDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Friedrich_2014_HDL_C.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friedrich_2014_LDL_C&quot;,&quot;label&quot;:&quot;Friedrich_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Friedrich_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Methaneethorn2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**The simvastatin model was rejected because its structure leaves a metabolite unreachable: the metabolism link from nelfinavir to M8 has no path from the administered dose.**
+**This paper's disposition core is incomplete.**
 
-The record describes a general linear structure for simvastatin in healthy adults with absorption rate constant 0.7 h-1, volume of distribution 161.12 L, and clearance 12.2 L/h. The structure links simvastatin to simvastatin hydroxy acid by metabolism and nelfinavir to M8 by metabolism, but the nelfinavir-to-M8 branch is an orphan with no connection from the dose, which is the stated reason for rejection. A second reader also recast the simvastatin-to-simvastatin hydroxy acid link as hydrolysis rather than metabolism and read no values for the absorption rate constant and volume of distribution, disagreeing with the recorded 0.7 h-1 and 161.12 L. Extracted — simvastatin: kabs 0.7 h -1, V 161 L, CL 12.2 L/h.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Devineni_2015) cannot stand in for this paper's evidence. Extracted — simvastatin: kabs 0.7 h -1, V 161 L, CL 12.2 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading simvastatin, nelfinavir; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:30.979439+00:00) predates the upstream re-run (2026-10-02 19:12:47.640704+00:00). Current validate status: `needs_review`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Methaneethorn J et al., Pharmacokinetic modeling of simvastatin…, Annual International Confer… (2014)
   ·  DOI: [10.1109/EMBC.2014.6944925](https://doi.org/10.1109/EMBC.2014.6944925)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Methaneethorn2014_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Methaneethorn2014_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -79,11 +77,11 @@ Methaneethorn J et al., Pharmacokinetic modeling of simvastatin…, Annual Inter
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 - unparsed cell Methaneethorn_2014_table_1:row1:col1 = 'Ka(N) (h-1)'
-- unparsed cell Methaneethorn_2014_table_1:row6:col1 = 'Kc(N) (h-1)'
-- unparsed cell Methaneethorn_2014_table_1:row7:col1 = 'Kc(NM) (h-1)'
+- unparsed cell Methaneethorn_2014_table_1:row6:col1 = 'Ke(N) (h-1)'
+- unparsed cell Methaneethorn_2014_table_1:row7:col1 = 'Ke(NM) (h-1)'
 - unparsed cell Methaneethorn_2014_table_1:row12:col1 = 'Ka(S) (h-1)'
 - unparsed cell Methaneethorn_2014_table_1:row17:col1 = 'Ka(S) (h-1)'
-- unparsed cell Methaneethorn_2014_table_1:row18:col1 = 'Kc(SM) (h-1)'
+- unparsed cell Methaneethorn_2014_table_1:row18:col1 = 'Ke(SM) (h-1)'
 
 ## Validation
 
@@ -92,18 +90,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[ka]` | 0.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd]` | 161.12 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd]` | not captured | 161.12 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | simvastatin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | simvastatin | unknown | mismatch |
+| `gpt-oss:120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['nelfinavir', 'm8', 'metabolism']] | [['simvastatin', 'simvastatin hydroxy acid', 'hydrolysis'], ['nelfinavir', 'nelfinavir m8', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | simvastatin | simvastatin, nelfinavir | mismatch |
 
 </details>
 
@@ -159,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 19:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 03:26 UTC</sub>

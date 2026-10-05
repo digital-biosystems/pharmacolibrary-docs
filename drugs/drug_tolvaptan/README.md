@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Tolvaptan is used to treat low blood sodium levels (hyponatremia) associated with various conditions like congestive heart failure, cirrhosis, and syndrome of inappropriate antidiuretic hormones (SIADH). FDA approved on May 19, 2009.
+Tolvaptan is a vasopressin receptor antagonist used to treat low blood sodium (hyponatremia) linked to heart failure, cirrhosis, or inappropriate antidiuretic hormone secretion, and is also authorised for autosomal dominant polycystic kidney disease. It remains in use, with authorised products in the European Union, though it carries a boxed warning.
 
-**Indication.** Treatment of symptomatic and resistant to fluid restriction euvolemic or hypervolemic hyponatremia associated with congestive heart failure, SIADH, and cirrhosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q426132](https://www.wikidata.org/wiki/Q426132) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 

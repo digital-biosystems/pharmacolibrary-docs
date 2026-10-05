@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Epanolol is an beta blocker.
+Epanolol is a selective beta blocker that was developed as an antihypertensive drug. It is considered experimental and does not appear to be an approved medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4859855](https://www.wikidata.org/wiki/Q4859855) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

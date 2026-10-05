@@ -9,12 +9,9 @@
 
 ## About
 
-**Description.** Desirudin is a direct inhibitor of human thrombin. It has a protein structure that is similar to that of hirudin, the naturally occurring anticoagulant present in the peripharyngeal glands in the medicinal leech, Hirudo medicinalis. Hirudin is a single polypeptide chain of 65 amino acids residues and contains three disulfide bridges. Desirudin has a chemical formula of C287H440N80O110S6 with a molecular weight of 6963.52.
+Desirudin is a recombinant peptide anticoagulant, a direct thrombin inhibitor, that was used to prevent venous thrombosis. It was approved in the European Union but its marketing authorisation has been withdrawn, so it is no longer in use there.
 
-It is mainly indicated for the prevention of deep vein thrombosis in hip replacement surgery patients. 
-Common side effects include: Bleeding gums, collection of blood under the skin, coughing up blood, deep, dark purple bruise and difficulty with breathing or swallowing.
-
-**Indication.** Indicated as prophylaxis of deep vein thrombosis for patients undergoing hip replacement surgery.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q28852444](https://www.wikidata.org/wiki/Q28852444) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,8 +35,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…primarily eliminated and metabolized by the kidney…”</sub> | prose |
-| excretion | kidney | <sub>“…Urine (40% to 50% as unchanged drug)…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CPA1 (substrate).</sub>
 

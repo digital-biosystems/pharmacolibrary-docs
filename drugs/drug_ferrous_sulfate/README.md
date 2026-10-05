@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Ferrous sulfate is an oral iron medicine used to treat iron deficiency and related anemias. It is widely used and appears on the WHO list of essential medicines.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q214863](https://www.wikidata.org/wiki/Q214863) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Naratriptan is a triptan drug that is selective for the 5-hydroxytryptamine1 receptor subtype. It is typically used for the treatment of migraine headaches.
+Naratriptan is a serotonin 5-HT1 receptor agonist used to treat migraine attacks. It is an approved medicine and is used widely as an antimigraine drug.
 
-**Indication.** For the acute treatment of migraine attacks with or without aura in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421315](https://www.wikidata.org/wiki/Q421315) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Well absorbed (74% oral biovaility)…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `MAOA` substrate | DrugBank actor |
 | metabolism | liver | `MAOA` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |

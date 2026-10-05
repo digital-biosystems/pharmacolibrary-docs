@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Intravenous susoctocog alfa is a recombinant, B-domain deleted, porcine sequence antihaemophilic factor VIII (FVIII) product that has recently been approved for the treatment of bleeding episodes in adults with acquired haemophilia A (AHA). AHA is a rare bleeding disorder that results in a prolonged clotting time as measured by the activated partial thromboplastin time (aPTT) assay, a conventional in vitro test for biological activity of factor VIII. Patients with AHA have normal Factor VIII genes for coagulation pathways but develop inhibitory autoantibodies directed against Factor VIII. These autoantibodies neutralize circulating human factor VIII and create a functional deficiency of this procoagulant protein. Susoctocog alfa serves to temporarily restore the inhibited endogenous Factor VIII for effective hemostasis. 
+Susoctocog alfa is a porcine recombinant form of antihemophilic factor (factor VIII), a blood coagulation factor used to treat bleeding in clotting factor deficiency. It is an approved medicine, listed for blood coagulation disorders, though its exact authorised regions are not specified in the available facts.
 
-In a global, prospective, controlled, multi-center Phase 2/3 open-label clinical trial, all patients responded to susoctocog alfa treatment within 24 hours [L1129]. Susoctocog alfa is a glycoprotein containing a 90 kDa heavy chain and a 80 kDa light chain with the naturally-occuring B domain replaced with a twenty-four amino acid linker.
-
-Susoctocog alfa was approved by the FDA in October 2014 and is marketed under the brand name Obizur for intravenous injection. It is the first recombinant porcine FVIII treatment approved for AHA that allows physicians to manage the treatment's efficacy and safety by measuring factor VIII activity levels in addition to clinical assessments [L1129]. The recombinant porcine sequence allows less susceptibility to inactivation by circulating human factor VIII antibodies.
-
-**Indication.** Indicated for the treatment of bleeding episodes in adults with acquired hemophilia A.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q84976438](https://www.wikidata.org/wiki/Q84976438) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

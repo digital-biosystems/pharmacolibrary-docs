@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Di_2010 \u00b7 r_carvedilol_enantiomer&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,13 +18,13 @@
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**The carvedilol record from Di_2010 was rejected because it is an exposure/outcome paper, not a compartmental population PK model: no distribution volume and no clearance or elimination are reported, and the only parameter, C0 = 500 ng/ml, has a dimension mismatch on a structural parameter.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+The paper reports no distribution volume and no clearance or elimination rate for carvedilol in rats with secondary hypertension (L-NAME model) and control rats, so the record is not a compartmental population PK model; it is an exposure/outcome paper. The single parameter, C0 (observed drug concentration extrapolated to time 0) = 500 ng/ml, failed a dimension check on a structural parameter. The unit ng/ml could not be converted to SI, so the parameter was carried without an SI value. A second reader also disagreed on the model structure, listing carvedilol–s-carvedilol and carvedilol–r-carvedilol interconversion links where this record has none, and on a parameter value of 0.989 where this record has none. Extracted — carvedilol: C0 500 ng/ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading carvedilol → s-carvedilol (interconversion); carvedilol → r-carvedilol (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Di Verniero CA et al., Enantioselective pharmacokinetic-pharma…, The Journal of pharmacy and… (2010)

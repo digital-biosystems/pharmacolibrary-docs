@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Dong2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,11 +19,11 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.493, the second reading 0.739; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.493, the second reading 0.739; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:52.755575+00:00) predates the upstream re-run (2026-10-03 12:21:17.734970+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:52.755575+00:00) predates the upstream re-run (2026-10-05 00:39:07.299719+00:00). Current validate status: `extracted`.
 
 ## Citation
 Dong Q et al., Understanding adefovir pharmacokinetics…, European journal of clinica… (2024)
@@ -66,19 +66,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.462 (6/13 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q27]` | 0.493 | 0.739 | mismatch |
-| `gpt-oss:120b` | `values[Q313]` | not captured | 400 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q313]` | not captured | 235 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q353]` | not captured | 4.89 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q355]` | not captured | 0.493 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q40]` | 73.6 | 59.0 | mismatch |
-| `gpt-oss:120b` | `values[Q46]` | 3.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q49]` | 2.29 | 5.18 | mismatch |
+| `gpt-oss:120b` | `values[Q46]` | 3.0 | 1 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | 6.59 | 6.38 | mismatch |
 
 </details>
 
@@ -134,7 +133,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_modelica.zip" download>Metformin_Dong2024_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_modelica.zip" download>Metformin_Dong2024_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_fmi.zip" download>Metformin_Dong2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_matlab.zip" download>Metformin_Dong2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_matlab_simbio.zip" download>Metformin_Dong2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -147,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 2.29 /h, F 1). Dose in the paper: 10 mg.
+**Administration: oral** — 2000 mg, single dose, first-order absorption (ka 2.29 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg oral (A10BA02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Dong2024_reference/Metformin_Dong2024_reference_sim_controls.json"></dbs-fmusim>
 
@@ -156,4 +155,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 12:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:39 UTC</sub>

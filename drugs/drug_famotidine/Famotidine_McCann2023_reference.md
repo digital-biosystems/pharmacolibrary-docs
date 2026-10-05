@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;famotidine&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/&quot;},{&quot;label&quot;:&quot;McCann_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ikawa_2007_DpH&quot;,&quot;label&quot;:&quot;Ikawa_2007 \u00b7 DpH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/pd_Ikawa_2007_DpH.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # famotidine — `Famotidine_McCann2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,16 +19,18 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 42, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 42, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:59.660066+00:00) predates the upstream re-run (2026-10-04 09:00:14.961642+00:00). Current validate status: `extracted`.
 
 ## Citation
 McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2)
 
 ## Model component
-<dbs-pgx drug="famotidine" model-id="Famotidine_McCann2023_reference" status="curated_candidate" stale="false" population="" measured-compound="famotidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="famotidine" model-id="Famotidine_McCann2023_reference" status="extracted" stale="true" population="" measured-compound="famotidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -40,8 +42,8 @@ McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacoki
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 6.5 | L/h | 1.8055555555555557e-06 | L/h | not captured | review (0.7) | McCann_2023:review | — | not captured |
 | volume of distribution | `Q61` · V | 226.0 | L | 0.226 | L | not captured | review (0.7) | McCann_2023:review | — | not captured |
-| lag time | `Q83` · tlag | 2.5 | h | 9000.0 | h | not captured | review (0.7) | McCann_2023:review | — | not captured |
 | first-order absorption rate constants (Ka) | `Q49` · kabs | 0.325 | h−1 | 9.027777777777779e-05 | 1/h | not captured | review (0.7) | McCann_2023:review | — | not captured |
+| lag time | `Q83` · tlag | 2.5 | h | 9000.0 | h | not captured | review (0.7) | McCann_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,9 +66,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (6/16 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -75,11 +77,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `values[Q325]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q37]` | not captured | 0.7 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q40]` | 0.67 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q43]` | not captured | 66.3 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q44]` | 66.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q45]` | not captured | 17.6 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q83]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q87]` | not captured | 75 | only_one_extracted |
 
 </details>
 
@@ -157,4 +155,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 04:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 09:00 UTC</sub>

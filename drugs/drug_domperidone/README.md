@@ -10,27 +10,41 @@
 
 ## About
 
-**Description.** A specific blocker of dopamine receptors. It speeds gastrointestinal peristalsis, causes prolactin release, and is used as antiemetic and tool in the study of dopaminergic mechanisms.
+Domperidone is a dopamine-blocking medicine used to treat nausea and vomiting and to help the stomach empty, and it is also taken to boost milk production. It is an approved medicine, widely used in many countries for these stomach-related problems, though it is not authorised in the United States.
 
-**Indication.** For management of dyspepsia, heartburn, epigastric pain, nausea, and vomiting.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424238](https://www.wikidata.org/wiki/Q424238) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| domperidone | parent | 425.911 | C22H24ClN5O2 | DrugBank | [3151](https://pubchem.ncbi.nlm.nih.gov/compound/3151) | Dailly_2008 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 11:57 | 4:04 | 0/1/0 | 0/0/0 | 0/0/1 | 60,142/5,521 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 3/5 | 8/0 | 0 |
+| 2026-10-04 13:52 | 4:16 | 0/1/0 | 1/0/0 | 0/0/1 | 66,021/8,936 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 3/5 | 8/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_reference](drugs/drug_domperidone/Domperidone_Dailly2008_reference.md) | — | 1-compartment (no model) | 3 | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_reference](drugs/drug_domperidone/Domperidone_Dailly2008_reference.md) | — | 1-compartment (no model) | 3 | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Claassen_2005_I_Kr](drugs/drug_domperidone/pd_Claassen_2005_I_Kr.md) | HERG currents ← domperidone · direct sigmoid Emax (Hill) effect | — | Claassen S et al., Comparison of the effects of metoclopra…, Pharmacology (2005) | [10.1159/000083234](https://doi.org/10.1159/000083234) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | **ABCB1** | `Q44` · fe | transport | [Borst_2013](drugs/drug_domperidone/pgx_Borst_2013_ABCB1_Q44.md) | Borst P et al., P-glycoprotein ABCB1: a major player in…, The Journal of clinical inv… (2013) | [10.1172/JCI70430](https://doi.org/10.1172/JCI70430) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | **ABCB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Borst_2013](drugs/drug_domperidone/pgx_Borst_2013_ABCB1_Q100.md) | Borst P et al., P-glycoprotein ABCB1: a major player in…, The Journal of clinical inv… (2013) | [10.1172/JCI70430](https://doi.org/10.1172/JCI70430) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -68,7 +82,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 82 matched, 60 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -77,12 +91,12 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dailly_2008.pdf` | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | popPK | 10 | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) | [18685840](https://pubmed.ncbi.nlm.nih.gov/18685840) | The paper is a population PK study of domperidone and explicitly reports numeric values for Cl/F, Vd/F, and Ka in the abstract. |
-| `Heykants_1981.pdf` | Heykants J et al., On the pharmacokinetics of domperidone…, European journal of drug me… (1981) | popPK | 9 | [10.1007/BF03189516](https://doi.org/10.1007/BF03189516) | [7250152](https://pubmed.ncbi.nlm.nih.gov/7250152) | The paper is a primary PK study for domperidone reporting a compartmental model and half-life, but specific numeric values for clearance, volume, or rate constants are not present in the provided abstract text. |
-| `Wu_2002.pdf` | Wu MS et al., Determination of domperidone in human p…, Acta pharmacologica Sinica (2002) | popPK | 9 | not captured | [11918857](https://pubmed.ncbi.nlm.nih.gov/11918857) | The study reports quantitative PK parameters (Tmax, Cmax, T1/2) for domperidone in humans, but lacks specific values for clearance (CL) or volume of distribution (V). |
-| `Bose_2013.pdf` | Bose A et al., Convolution and validation of in vitro-…, European journal of drug me… (2013) | popPK | 8 | [10.1007/s13318-012-0116-7](https://doi.org/10.1007/s13318-012-0116-7) | [23264125](https://pubmed.ncbi.nlm.nih.gov/23264125) | The study reports PK parameters (ka, absorption) for domperidone, but the specific numeric values are not present in the provided evidence text. |
-| `Devandla_2015.pdf` | Devandla A et al., Effect of rifampicin pretreatment on th…, Drug metabolism and persona… (2015) | popPK | 8 | [10.1515/dmpt-2015-0004](https://doi.org/10.1515/dmpt-2015-0004) | [26353177](https://pubmed.ncbi.nlm.nih.gov/26353177) | The study reports quantitative PK parameters (Cmax, AUC, t1/2) for domperidone, but only as percentage changes relative to baseline, without providing the absolute numeric values for clearance, volume, or half-life. |
-| `Heykants_1981_2.pdf` | Heykants J et al., On the pharmacokinetics of domperidone…, European journal of drug me… (1981) | popPK | 8 | [10.1007/BF03189513](https://doi.org/10.1007/BF03189513) | [7250149](https://pubmed.ncbi.nlm.nih.gov/7250149) | The study reports quantitative PK parameters (half-lives) for domperidone in dogs, but lacks specific values for clearance, volume, or human data. |
+| `Dailly_2008.pdf` | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | popPK | 10 | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) | [18685840](https://pubmed.ncbi.nlm.nih.gov/18685840) | The paper reports a population pharmacokinetic model for domperidone with explicit numeric values for clearance, volume of distribution, and absorption rate constant in the abstract. |
+| `Heykants_1981.pdf` | Heykants J et al., On the pharmacokinetics of domperidone…, European journal of drug me… (1981) | popPK | 10 | [10.1007/BF03189516](https://doi.org/10.1007/BF03189516) | [7250152](https://pubmed.ncbi.nlm.nih.gov/7250152) | The study reports quantitative PK parameters for domperidone in humans, but specific numeric values for clearance, volume, or rate constants are not present in the provided abstract text. |
+| `Heykants_1981_2.pdf` | Heykants J et al., On the pharmacokinetics of domperidone…, European journal of drug me… (1981) | popPK | 9 | [10.1007/BF03189513](https://doi.org/10.1007/BF03189513) | [7250149](https://pubmed.ncbi.nlm.nih.gov/7250149) | The study reports quantitative PK parameters (half-lives, model type) for domperidone in rats and dogs, but specific values for clearance, volume, or ka are not fully detailed in the provided abstract text. |
+| `Wu_2002.pdf` | Wu MS et al., Determination of domperidone in human p…, Acta pharmacologica Sinica (2002) | popPK | 9 | not captured | [11918857](https://pubmed.ncbi.nlm.nih.gov/11918857) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, T1/2) for domperidone in humans, though clearance and volume values are not explicitly listed in the provided text. |
+| `Bose_2013.pdf` | Bose A et al., Convolution and validation of in vitro-…, European journal of drug me… (2013) | popPK | 8 | [10.1007/s13318-012-0116-7](https://doi.org/10.1007/s13318-012-0116-7) | [23264125](https://pubmed.ncbi.nlm.nih.gov/23264125) | The study reports pharmacokinetic parameters (absorption rate constant, AUC, Cmax) for domperidone, but the specific numeric values are not present in the provided evidence text. |
+| `Devandla_2015.pdf` | Devandla A et al., Effect of rifampicin pretreatment on th…, Drug metabolism and persona… (2015) | popPK | 8 | [10.1515/dmpt-2015-0004](https://doi.org/10.1515/dmpt-2015-0004) | [26353177](https://pubmed.ncbi.nlm.nih.gov/26353177) | The study reports quantitative PK parameters (Cmax, AUC, MRT, t1/2) for domperidone in humans, but specific numeric values are not explicitly listed in the provided abstract text, only percentage changes. |
 | `Corsi_1991.pdf` | Corsi M et al., Pharmacological analysis of 5-hydroxytr…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12494.x](https://doi.org/10.1111/j.1476-5381.1991.tb12494.x) | [1797331](https://www.ncbi.nlm.nih.gov/pubmed/1797331) | metadata signals extractable PD data (EC50) |
 | `Etchegoyen_1986.pdf` | Etchegoyen GS et al., Binding and effects of catecholestrogen…, European journal of pharmac… (1986) | pd | 4 | [10.1016/0014-2999(86)90329-8](https://doi.org/10.1016/0014-2999(86)90329-8) | [3021471](https://www.ncbi.nlm.nih.gov/pubmed/3021471) | metadata signals extractable PD data (EC50) |
 | `Kan_2025.pdf` | Kan JY et al., Darunavir inhibits dengue virus replica…, Biochemical pharmacology (2025) | pd | 4 | [10.1016/j.bcp.2025.116839](https://doi.org/10.1016/j.bcp.2025.116839) | [40024350](https://www.ncbi.nlm.nih.gov/pubmed/40024350) | metadata signals extractable PD data (EC50) |
@@ -101,28 +115,28 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Essa_2012.pdf` | Essa EA et al., Preparation and characterization of dom…, Pakistan journal of pharmac… (2012) | pgx | 5 | not captured | [23009995](https://www.ncbi.nlm.nih.gov/pubmed/23009995) | metadata signals extractable PGX data (CYP3A4) |
 | `Parkman_2011.pdf` | Parkman HP et al., Domperidone treatment for gastroparesis…, Digestive diseases and scie… (2011) | pgx | 5 | [10.1007/s10620-010-1472-2](https://doi.org/10.1007/s10620-010-1472-2) | [21063774](https://www.ncbi.nlm.nih.gov/pubmed/21063774) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-09-18T11:53:58.169320+00:00</sub>
+<sub>queue written 2026-10-04T13:48:37.709551+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Athukuri_2017 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (piperine) rather than a pharmacogenomic effect (gene variant/genotype). |
-| popPK | Barthelmebs_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of renal vascular receptors where domperidone is used solely as a D2-receptor antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Barthelmebs_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of renal vascular receptors where domperidone is used as a D2 antagonist, not a pharmacokinetic study of domperidone. |
 | PD | Barthelmebs_1991 | not_relevant | 0 | 0 | The study reports PD parameters (EC50, Emax) for bromocriptine, not domperidone; domperidone is used only as a qualitative antagonist to confirm receptor subtype. |
-| popPK | Biewenga_2015 | irrelevant | 2 | 2 | The study is a thorough QT/QTc safety trial that reports only exposure metrics (AUC, Cmax) and lacks quantitative disposition parameters like clearance, volume, or half-life. |
-| popPK | Bose_2013 | relevant | 8 | 0 | The study reports PK parameters (ka, absorption) for domperidone, but the specific numeric values are not present in the provided evidence text. |
-| popPK | Claassen_2005 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel blockade and does not report pharmacokinetic parameters. |
+| popPK | Biewenga_2015 | irrelevant | 2 | 2 | The study is a thorough QT/QTc safety trial that reports only exposure metrics (AUC, Cmax) and ECG data, lacking the specific disposition parameters (CL, V, ka, t1/2) required for population PK modeling. |
+| popPK | Bose_2013 | relevant | 8 | 0 | The study reports pharmacokinetic parameters (absorption rate constant, AUC, Cmax) for domperidone, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Claassen_2005 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel blockade, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Corsi_1991 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Corsi_1991 | not_relevant | 0 | 0 | The paper analyzes the effects of 5-hydroxytryptamine on the human urinary bladder and does not mention domperidone or report any pharmacodynamic parameters for it. |
-| popPK | Devandla_2015 | relevant | 8 | 2 | The study reports quantitative PK parameters (Cmax, AUC, t1/2) for domperidone, but only as percentage changes relative to baseline, without providing the absolute numeric values for clearance, volume, or half-life. |
+| popPK | Devandla_2015 | relevant | 8 | 4 | The study reports quantitative PK parameters (Cmax, AUC, MRT, t1/2) for domperidone in humans, but specific numeric values are not explicitly listed in the provided abstract text, only percentage changes. |
 | PGx | Doggrell_2014 | not_relevant | 0 | 0 | The paper is a review of cardiac safety and pharmacodynamics (QT prolongation) but does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | PGx | Duvignaud_2020 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for treating SARS-CoV-2 and does not report pharmacogenomic effects on domperidone PK/PD. |
 | PGx | Essa_2012 | not_relevant | 0 | 0 | The paper focuses on formulation development (solid dispersions) to improve dissolution and bioavailability, not on pharmacogenomic effects of gene variants on PK/PD parameters. |
 | popPK | Etchegoyen_1986 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Etchegoyen_1986 | not_relevant | 0 | 0 | The paper focuses on catecholestrogens and receptor binding in guinea-pig membranes, with no mention of domperidone or its pharmacodynamics. |
-| popPK | Heykants_1981 | relevant | 9 | 2 | The paper is a primary PK study for domperidone reporting a compartmental model and half-life, but specific numeric values for clearance, volume, or rate constants are not present in the provided abstract text. |
-| popPK | Heykants_1981_2 | relevant | 8 | 3 | The study reports quantitative PK parameters (half-lives) for domperidone in dogs, but lacks specific values for clearance, volume, or human data. |
+| popPK | Heykants_1981 | relevant | 10 | 2 | The study reports quantitative PK parameters for domperidone in humans, but specific numeric values for clearance, volume, or rate constants are not present in the provided abstract text. |
+| popPK | Heykants_1981_2 | relevant | 9 | 3 | The study reports quantitative PK parameters (half-lives, model type) for domperidone in rats and dogs, but specific values for clearance, volume, or ka are not fully detailed in the provided abstract text. |
 | PGx | Ioannou_2016 | not_relevant | 0 | 0 | The study is a survey of prescribing practices and drug interactions, not a pharmacogenomic study investigating the effect of genetic variants on domperidone PK/PD. |
 | popPK | Kan_2025 | irrelevant | 0 | 0 | no_text gate: only 103 chars of text extracted (&lt; 400) |
 | PD | Kan_2025 | not_relevant | 0 | 0 | The paper discusses darunavir and dengue virus, not domperidone, and does not report any pharmacodynamic or exposure-response data for the target drug. |
@@ -130,35 +144,35 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Kurosawa_1991 | not_relevant | 0 | 0 | The paper reports pharmacological characterization of dopamine receptors in guinea pig stomach smooth muscle; domperidone is mentioned only as a DA2 antagonist that had no effect, with no exposure-response or dose-response relationship for domperidone itself. |
 | PGx | Maher_2017 | not_relevant | 0 | 0 | The paper uses domperidone as an internal standard for a bioanalytical method and does not report any pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Marechal_2006 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (CYP3A4 inhibition) involving domperidone, not pharmacogenomic effects (gene variants) on its PK/PD. |
-| popPK | McGonigle_1988 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study in human retina, not a pharmacokinetic study, and domperidone is only mentioned as a ligand for binding affinity characterization. |
+| popPK | McGonigle_1988 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay characterizing D2 sites in human retina, not a pharmacokinetic study of domperidone. |
 | PD | McGonigle_1988 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding kinetics (Kd, Bmax) for spiroperidol and mentions domperidone's affinity for binding sites, but it does not report a pharmacodynamic exposure-response or dose-response relationship for domperidone in a physiological or clinical context. |
 | PGx | Michaud_2010 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (clarithromycin inhibiting domperidone metabolism) and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | PGx | Michaud_2010_2 | not_relevant | 0 | 0 | The study characterizes CYP3A isoforms and cytochrome b5 modulation in vitro but does not report the effect of a specific gene variant or genotype on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Naidoo_2019 | not_relevant | 0 | 0 | The paper discusses sex differences in drug interactions, not pharmacogenomic effects (gene variants) on domperidone PK/PD. |
 | popPK | Nomoto_2005 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
 | PGx | Nomoto_2005 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic variations in Parkinson's disease treatment but does not report pharmacogenomic effects on domperidone. |
-| PGx | Patoine_2014 | not_relevant | 0 | 0 | The study investigates the effect of diabetes (a disease state) on CYP3a activity, not the effect of a specific gene variant or genotype on pharmacokinetics. |
+| PGx | Patoine_2014 | not_relevant | 0 | 0 | The study investigates the effect of diabetes (a disease state) on CYP3a activity, not the effect of a specific gene variant or genotype on domperidone pharmacokinetics. |
 | PGx | Rossi_2010 | not_relevant | 0 | 0 | The paper reviews the safety risk of long QT syndrome associated with domperidone but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Rump_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor modulation in human atria, not a pharmacokinetic study, and domperidone is used only as a tool compound. |
+| popPK | Rump_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor modulation in human atrial tissue, not a pharmacokinetic study of domperidone. |
 | PD | Rump_1995 | not_relevant | 3 | 2 | The study reports a pKB value for domperidone as a D2 antagonist in an ex vivo electrophysiology/neurotransmission assay, which is a pharmacological potency parameter rather than a pharmacodynamic exposure-response or dose-response relationship for the drug's therapeutic effect. |
-| PGx | Satoh_2003 | not_relevant | 0 | 0 | The paper investigates the interaction between drugs and estrogen metabolism, not the pharmacokinetics or pharmacodynamics of domperidone. |
+| PGx | Satoh_2003 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of 29 drugs on estradiol oxidation, not the pharmacokinetics or pharmacodynamics of domperidone. |
 | popPK | Schuurkes_1985 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
 | PD | Schuurkes_1985 | not_relevant | 0 | 0 | The paper is an in-vitro/in-vivo pharmacological study on guinea pigs focusing on qualitative or semi-quantitative effects on gut preparation, not a clinical PK/PD or exposure-response analysis with numeric PD parameters for domperidone. |
 | PGx | Simard_2004 | not_relevant | 0 | 0 | The paper identifies CYP3A4 as the metabolic enzyme for domperidone using in vitro systems but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters in humans. |
 | PGx | Swain_2013 | not_relevant | 0 | 0 | The paper reports a lack of neurotoxicity (clinical observation) for domperidone in a mouse model, but does not report changes in specific pharmacokinetic or pharmacodynamic parameters. |
-| PGx | Tanda_1994 | not_relevant | 0 | 0 | The paper investigates the hemodynamic effects of dopamine on tumor blood flow in rats and uses domperidone only as a receptor antagonist to characterize the mechanism, without reporting any pharmacogenomic effects on domperidone's PK or PD parameters. |
+| PGx | Tanda_1994 | not_relevant | 0 | 0 | The paper investigates the hemodynamic effects of dopamine on tumor blood flow and uses domperidone only as a receptor antagonist to characterize the mechanism, without reporting any pharmacogenomic effects on domperidone's PK or PD parameters. |
 | PGx | Templeton_2016 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions with CYP3A4 inhibitors using PBPK modeling, not on pharmacogenomic variants affecting domperidone PK/PD. |
 | PGx | Ung_2009 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (erythromycin inhibiting CYP3A4) rather than a pharmacogenomic effect (gene variant/genotype) on domperidone PK/PD. |
 | popPK | Vayssette_1986 | irrelevant | 0 | 0 | no_text gate: only 54 chars of text extracted (&lt; 400) |
 | PD | Vayssette_1986 | not_relevant | 0 | 0 | The paper focuses on dopamine receptors in pancreatic acinar cells from dogs and does not mention domperidone or report any pharmacodynamic or exposure-response data for it. |
 | PGx | Wang_2012 | not_relevant | 2 | 5 | The study reports associations between SNPs and clinical outcomes (efficacy/side effects) rather than specific pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Ward_2004 | not_relevant | 0 | 0 | The paper characterizes CYP enzymes involved in domperidone metabolism in vitro but does not report pharmacogenomic effects of specific gene variants on PK or PD parameters. |
-| popPK | Wu_2023 | irrelevant | 2 | 0 | The study reports only non-compartmental bioequivalence metrics (Cmax, AUC, T1/2) and geometric mean ratios, lacking the specific compartmental or population PK parameters (CL, V, Q, ka) required for extraction. |
+| popPK | Wu_2023 | relevant | 4 | 2 | The study reports non-compartmental PK parameters (Cmax, AUC, T1/2) for domperidone, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only bioequivalence ratios. |
 | PGx | Yamsani_2014 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (silymarin) rather than a pharmacogenomic effect (gene variant/genotype). |
 | PGx | Youssef_2014 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (pioglitazone/ondansetron) on domperidone metabolism, not the effect of a gene variant or genotype on PK/PD parameters. |
 | PGx | Zhou_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction study for cilostazol and ambroxol, using domperidone only as an internal standard, and contains no pharmacogenomic data. |
-| PGx | Zidan_2020 | not_relevant | 2 | 5 | The paper uses in silico methods to predict genes associated with adverse drug reactions (like QT prolongation) rather than reporting measured pharmacokinetic or pharmacodynamic parameter changes based on specific genotypes. |
+| PGx | Zidan_2020 | not_relevant | 2 | 5 | The paper uses in silico methods to predict genes associated with adverse drug reactions (like QT prolongation) but does not report measured pharmacokinetic or pharmacodynamic parameter changes linked to specific genotypes. |
 | PGx | unknown_2016 | not_relevant | 0 | 0 | The text discusses drug-drug interactions (CYP3A4 inhibitors) and safety risks, but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 11:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 13:48 UTC</sub>

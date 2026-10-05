@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;cisapride&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/&quot;},{&quot;label&quot;:&quot;Michiels_1987 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisapride_Preechagoon1999_reference&quot;,&quot;label&quot;:&quot;Preechagoon_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisapride — `Cisapride_Michiels1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,15 +23,17 @@
 
 The rejection reason is a dimension mismatch on a structural parameter in the one-compartment cisapride model (species: rats, rabbits and dogs). The terminal plasma half-life of cisapride has a unit (h) but no extracted value, so that parameter is incomplete. The record was built from the paper's abstract alone, meaning the reported clearance (91 ml/min.kg), volume of distribution (4.7 l/kg) and absolute bioavailability (23 %) are summary statistics standing in for a fitted model. A second reader disputed all of these values, reading the bioavailability, clearance and volume as absent and agreeing the half-life has no value. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 23, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:57.240413+00:00) predates the upstream re-run (2026-10-04 13:41:10.158437+00:00). Current validate status: `rejected`.
 
 ## Citation
 Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987)
 
 ## Model component
-<dbs-pgx drug="cisapride" model-id="Cisapride_Michiels1987_reference" status="rejected" stale="false" population="rats, rabbits and dogs" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cisapride" model-id="Cisapride_Michiels1987_reference" status="rejected" stale="true" population="rats, rabbits and dogs" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -72,22 +75,27 @@ Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Fors
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 23 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability of oral cisapride]` | 23 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absolute bioavailability of oral cisapride]` | not captured | 23 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[plasma clearance]` | 91 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma clearance]` | not captured | 91 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal plasma half-life of cisapride]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal plasma half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 4.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 4.7 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
 
 </details>
 
@@ -134,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 11:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:41 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;canagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/&quot;},{&quot;label&quot;:&quot;Yao_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canagliflozin_Yao2023_estimates&quot;,&quot;label&quot;:&quot;Yao_2023_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_iiv&quot;,&quot;label&quot;:&quot;Yao_2023_iiv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_reference&quot;,&quot;label&quot;:&quot;Yao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yao_2023_change_of_urine_glucose_excretion_corrected_by_FPG&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 change of urine glucose excretion corrected by FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/pd_Yao_2023_change_of_urine_glucose_excretion_corrected_by_FPG.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yao_2023_fasting_plasma_glucose&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 fasting plasma glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/pd_Yao_2023_fasting_plasma_glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yao_2023_hemoglobin_A1c&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 hemoglobin A1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/pd_Yao_2023_hemoglobin_A1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canagliflozin_Yao2023_reference&quot;,&quot;label&quot;:&quot;Yao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Yao_2023_UGEc&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 \u0394UGEc&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/pd_Yao_2023_UGEc.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # canagliflozin — `Canagliflozin_Yao2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,30 +19,33 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 10.3, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[fed].parameter_id`: this record has Q40, the second reading Q43. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:24.141684+00:00) predates the upstream re-run (2026-10-04 22:24:09.384131+00:00). Current validate status: `extracted`.
 
 ## Citation
 Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934)
 
 ## Model component
-<dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Yao2023_reference" status="curated_candidate" stale="false" population="healthy subjects and patients with type 2 diabetes" measured-compound="dapagliflozin, canagliflozin, empagliflozin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Yao2023_reference" status="extracted" stale="true" population="healthy subjects and patients with T2DM" measured-compound="canagliflozin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 5.69 | L/h | 1.5805555555555558e-06 | [l] / [h] | not captured | exact (1.0) | psp412934-tbl-0001:row2:col4, psp412934-tbl-0001:row11:col4, psp412934-tbl-0001:row18:col4 | — | not captured |
-| Vc (L) | `Q63` · V1 | 5.63 | L | 0.00563 | [l] | not captured | exact (1.0) | psp412934-tbl-0001:row3:col4, psp412934-tbl-0001:row12:col4, psp412934-tbl-0001:row19:col4 | — | not captured |
-| VT (L) | `Q61` · V | 22.0 | L | 0.022 | [l] | not captured | llm (0.6) | psp412934-tbl-0001:row5:col4, psp412934-tbl-0001:row14:col4, psp412934-tbl-0001:row21:col4 | — | not captured |
-| K t (h−1) | `Q47` · kel | 5.67 | h−1 | 0.001575 | [1] / [h] | not captured | llm (0.6) | psp412934-tbl-0001:row6:col4, psp412934-tbl-0001:row15:col4, psp412934-tbl-0001:row22:col4 | — | not captured |
-| CLD | `Q30` · Q | 12.8 | not captured | not captured | not captured | not captured | exact (1.0) | psp412934-tbl-0001:row13:col4 | — | not captured |
+| CL (L/h) | `Q22` · CL | 4.25 | L/h | 1.1805555555555556e-06 | [l] / [h] | 6.10 | exact (1.0) | psp412934-tbl-0001:row2:col2, psp412934-tbl-0001:row2:col3, psp412934-tbl-0001:row11:col2, psp412934-tbl-0001:row11:col3, psp412934-tbl-0001:row18:col2, psp412934-tbl-0001:row18:col3 | — | 2.50 (None% RSE) |
+| Vc (L) | `Q63` · V1 | 30.6 | L | 0.030600000000000002 | [l] | 9.50 | exact (1.0) | psp412934-tbl-0001:row3:col2, psp412934-tbl-0001:row3:col3, psp412934-tbl-0001:row12:col2, psp412934-tbl-0001:row12:col3, psp412934-tbl-0001:row19:col2, psp412934-tbl-0001:row19:col3 | — | 9.44 (None% RSE) |
+| CLD | `Q30` · Q | 1.37 | L/h | 3.805555555555556e-07 | L/h | 13.5 | exact (1.0) | psp412934-tbl-0001:row4:col2, psp412934-tbl-0001:row4:col3, psp412934-tbl-0001:row13:col2, psp412934-tbl-0001:row13:col3, psp412934-tbl-0001:row20:col2, psp412934-tbl-0001:row20:col3 | — | 12.8 (None% RSE) |
+| VT (L) | `Q61` · V | 28.3 | L | 0.028300000000000002 | [l] | 26.5 | llm (0.6) | psp412934-tbl-0001:row5:col2, psp412934-tbl-0001:row5:col3, psp412934-tbl-0001:row14:col2, psp412934-tbl-0001:row14:col3, psp412934-tbl-0001:row21:col2, psp412934-tbl-0001:row21:col3 | — | not captured |
+| K t (h−1) | `Q47` · kel | 4.13 | h−1 | 0.0011472222222222222 | [1] / [h] | 6.90 | llm (0.6) | psp412934-tbl-0001:row6:col2, psp412934-tbl-0001:row6:col3, psp412934-tbl-0001:row15:col2, psp412934-tbl-0001:row15:col3, psp412934-tbl-0001:row22:col2, psp412934-tbl-0001:row22:col3 | — | not captured |
+| Fed | `Q40` · Fab | 0.254 | not captured | not captured | not captured | 29.8 | llm (0.6) | psp412934-tbl-0001:row7:col2, psp412934-tbl-0001:row7:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,13 +58,61 @@ Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics &
 - `defaulted_parameters`: ['k21']
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dapagliflozin, canagliflozin, empagliflozin
-- population split: 'iiv (%)' subgroup of Yao_2023 (paper reports 2 populations: estimates, iiv (%))
-- built from REVIEW reference values (Yao_2023) — secondary source
-- volume reported by review
+- table section iiv: 'CL (L/h)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Vc (L)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'VT (L)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'K t (h−1)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'CLD' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'FPGbaseline (mg/dL)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Pfmax1 (mg/dL)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Pfmax3 (mg/dL)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Pfmax4 (mg/dL)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'K fp (week−1)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'SLOPEfd (mg/dL2)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'HbA1cbaseline (%)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Phmax1 (%)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Phmax3 (%)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Phmax4 (%)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'K hp (week−1)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'DIShp (%/100 weeks)' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'K out (week−1)' routed out of structural estimates ('IIV (%)')
+- column 'definition' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped PD-category row 'Emax (g/(mg/dL))' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yao_2023_table_2:row1:col2', 'Yao_2023_table_2:row1:col3'])
+- dropped PD-category row 'Dapa‐EC50 (ng/mL·h)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yao_2023_table_2:row2:col2', 'Yao_2023_table_2:row2:col3'])
+- dropped PD-category row 'Cana‐EC50 (ng/mL·h)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yao_2023_table_2:row3:col2', 'Yao_2023_table_2:row3:col3'])
+- dropped PD-category row 'Empa‐EC50 (ng/mL·h)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yao_2023_table_2:row4:col2', 'Yao_2023_table_2:row4:col3'])
+- dropped unlinked row (NIL): 'FPGbaseline (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row8:col2', 'Yao_2023_table_2:row8:col3'])
+- dropped unlinked row (NIL): 'Pfmax1 (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row9:col2', 'Yao_2023_table_2:row9:col3'])
+- dropped unlinked row (NIL): 'Pfmax2 (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row10:col2', 'Yao_2023_table_2:row10:col3'])
+- dropped unlinked row (NIL): 'Pfmax3 (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row11:col2', 'Yao_2023_table_2:row11:col3'])
+- dropped unlinked row (NIL): 'Pfmax4 (mg/dL)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row12:col2', 'Yao_2023_table_2:row12:col3'])
+- dropped unlinked row (NIL): 'K fp (week−1)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row13:col2', 'Yao_2023_table_2:row13:col3'])
+- dropped unlinked row (NIL): 'DISfp (mg/dl/100 weeks)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row14:col2', 'Yao_2023_table_2:row14:col3'])
+- dropped PD-category row 'SLOPEfd (mg/dL2)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yao_2023_table_2:row15:col2', 'Yao_2023_table_2:row15:col3'])
+- dropped unlinked row (NIL): 'HbA1cbaseline (%)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row17:col2', 'Yao_2023_table_2:row17:col3'])
+- dropped unlinked row (NIL): 'Phmax1 (%)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row18:col2', 'Yao_2023_table_2:row18:col3'])
+- dropped unlinked row (NIL): 'Phmax2 (%)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row19:col2', 'Yao_2023_table_2:row19:col3'])
+- dropped unlinked row (NIL): 'Phmax3 (%)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row20:col2', 'Yao_2023_table_2:row20:col3'])
+- dropped unlinked row (NIL): 'Phmax4 (%)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row21:col2', 'Yao_2023_table_2:row21:col3'])
+- dropped unlinked row (NIL): 'K hp (week−1)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row22:col2', 'Yao_2023_table_2:row22:col3'])
+- dropped unlinked row (NIL): 'DIShp (%/100 weeks)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row23:col2', 'Yao_2023_table_2:row23:col3'])
+- dropped PD-category row 'K out (week−1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yao_2023_table_2:row24:col2', 'Yao_2023_table_2:row24:col3'])
+- dropped unlinked row (NIL): 'K in2 (%/week)' — extend the ontology if this is a real PK parameter (source ['Yao_2023_table_2:row25:col2', 'Yao_2023_table_2:row25:col3'])
+- implicit units: 'CLD' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance (CLD). In population pharmacokinetic modeling, clearances are conventio')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=canagliflozin
 
 **Extraction notes:**
-- LLM selected parameter table(s) 1
+- unparsed cell Yao_2023_table_2:row17:col1 = 'The estimated population HbA1c baseline level'
+- unparsed cell Yao_2023_table_2:row18:col1 = 'Maximal placebo effects on HbA1c in naïve group'
+- unparsed cell Yao_2023_table_2:row19:col1 = 'Maximal placebo effects on HbA1c in non‐naïve group'
+- unparsed cell Yao_2023_table_2:row20:col1 = 'Maximal placebo effects on HbA1c in add‐on group'
+- unparsed cell Yao_2023_table_2:row21:col1 = 'Maximal placebo effects on HbA1c in mixed group'
+- unparsed cell Yao_2023_table_2:row22:col1 = 'HbA1c rate constant of placebo effect'
+- unparsed cell Yao_2023_table_2:row23:col1 = 'Disease progression rate of HbA1c'
+- unparsed cell Yao_2023_table_2:row24:col1 = 'Decrease rate of HbA1c'
+- unparsed cell Yao_2023_table_2:row25:col1 = 'Increase rate of HbA1c independent of FPG'
+- companion parameter table 2 transcribed (60 record(s))
+- no LLM table selection; kept 2 deterministically-scored parameter table(s)
 
 ## Validation
 
@@ -70,19 +121,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.941 (16/17 fields) | 1 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
-| `gpt-oss:120b` | `values[Q30]` | 10.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q315]` | not captured | 0.457 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q316]` | 0.457 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q317]` | 0.462 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q320]` | 0.606 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q321]` | 56.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fed].parameter_id` | Q40 | Q43 | mismatch |
 
 </details>
 
@@ -96,19 +141,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412934-tbl-0001:row2:col4', 'psp412934-tbl-0001:row11:col4', 'psp412934-tbl-0001:row18:col4'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412934-tbl-0001:row6:col4', 'psp412934-tbl-0001:row15:col4', 'psp412934-tbl-0001:row22:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412934-tbl-0001:row5:col4', 'psp412934-tbl-0001:row14:col4', 'psp412934-tbl-0001:row21:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412934-tbl-0001:row3:col4', 'psp412934-tbl-0001:row12:col4', 'psp412934-tbl-0001:row19:col4'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412934-tbl-0001:row13:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.69 | not captured | not captured | ['psp412934-tbl-0001:row2:col4', 'psp412934-tbl-0001:row11:col4', 'psp412934-tbl-0001:row18:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412934-tbl-0001:row2:col2', 'psp412934-tbl-0001:row2:col3', 'psp412934-tbl-0001:row11:col2', 'psp412934-tbl-0001:row11:col3', 'psp412934-tbl-0001:row18:col2', 'psp412934-tbl-0001:row18:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412934-tbl-0001:row4:col2', 'psp412934-tbl-0001:row4:col3', 'psp412934-tbl-0001:row13:col2', 'psp412934-tbl-0001:row13:col3', 'psp412934-tbl-0001:row20:col2', 'psp412934-tbl-0001:row20:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412934-tbl-0001:row6:col2', 'psp412934-tbl-0001:row6:col3', 'psp412934-tbl-0001:row15:col2', 'psp412934-tbl-0001:row15:col3', 'psp412934-tbl-0001:row22:col2', 'psp412934-tbl-0001:row22:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412934-tbl-0001:row5:col2', 'psp412934-tbl-0001:row5:col3', 'psp412934-tbl-0001:row14:col2', 'psp412934-tbl-0001:row14:col3', 'psp412934-tbl-0001:row21:col2', 'psp412934-tbl-0001:row21:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412934-tbl-0001:row3:col2', 'psp412934-tbl-0001:row3:col3', 'psp412934-tbl-0001:row12:col2', 'psp412934-tbl-0001:row12:col3', 'psp412934-tbl-0001:row19:col2', 'psp412934-tbl-0001:row19:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.25 | not captured | not captured | ['psp412934-tbl-0001:row2:col2', 'psp412934-tbl-0001:row2:col3', 'psp412934-tbl-0001:row11:col2', 'psp412934-tbl-0001:row11:col3', 'psp412934-tbl-0001:row18:col2', 'psp412934-tbl-0001:row18:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.69 L/h | not captured | not captured | ['psp412934-tbl-0001:row2:col4', 'psp412934-tbl-0001:row11:col4', 'psp412934-tbl-0001:row18:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 22 L | not captured | not captured | ['psp412934-tbl-0001:row5:col4', 'psp412934-tbl-0001:row14:col4', 'psp412934-tbl-0001:row21:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 5.63 L | not captured | not captured | ['psp412934-tbl-0001:row3:col4', 'psp412934-tbl-0001:row12:col4', 'psp412934-tbl-0001:row19:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.25 L/h | not captured | not captured | ['psp412934-tbl-0001:row2:col2', 'psp412934-tbl-0001:row2:col3', 'psp412934-tbl-0001:row11:col2', 'psp412934-tbl-0001:row11:col3', 'psp412934-tbl-0001:row18:col2', 'psp412934-tbl-0001:row18:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 28.3 L | not captured | not captured | ['psp412934-tbl-0001:row5:col2', 'psp412934-tbl-0001:row5:col3', 'psp412934-tbl-0001:row14:col2', 'psp412934-tbl-0001:row14:col3', 'psp412934-tbl-0001:row21:col2', 'psp412934-tbl-0001:row21:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 30.6 L | not captured | not captured | ['psp412934-tbl-0001:row3:col2', 'psp412934-tbl-0001:row3:col3', 'psp412934-tbl-0001:row12:col2', 'psp412934-tbl-0001:row12:col3', 'psp412934-tbl-0001:row19:col2', 'psp412934-tbl-0001:row19:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -140,7 +185,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference/Canagliflozin_Yao2023_reference_modelica.zip" download>Canagliflozin_Yao2023_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference/Canagliflozin_Yao2023_reference_modelica.zip" download>Canagliflozin_Yao2023_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference/Canagliflozin_Yao2023_reference_fmi.zip" download>Canagliflozin_Yao2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference/Canagliflozin_Yao2023_reference_matlab.zip" download>Canagliflozin_Yao2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference/Canagliflozin_Yao2023_reference_matlab_simbio.zip" download>Canagliflozin_Yao2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -162,4 +207,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 16:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 22:24 UTC</sub>

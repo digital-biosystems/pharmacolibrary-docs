@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13647](https://go.drugbank.com/drugs/DB13647) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Semustine (MeCCNU) is a nitrosourea alkylating agent that has been investigated as an anticancer drug. It is not an approved medicine and remains investigational, with no authorisation in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1230937](https://www.wikidata.org/wiki/Q1230937) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Skinner_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,18 +17,20 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The duloxetine record was held back because the model builder assumed F=1, Fm=1 and no molar correction, and left the absorption lag time (Tlag) at a default instead of an explicit estimate.**
+
+The record for duloxetine (Skinner_2004, women with urinary incontinence and healthy women) contains CL/F 52.6 l/h, V/F 954 l and Ka 0.257 h−1, but the apparent-parameter assumption (F=1, Fm=1, no molar correction) was judged not acceptable, and Tlag was defaulted rather than estimated. A second reader also extracted additional parameters absent from this record, including AUC0–t 824.5, AUC0–∞ 699.3, Cmax 49.8, λz 0.072 and tmax 0.139, and did not confirm the Ka value of 0.257 h−1. Extracted — duloxetine: CL/F 52.6 l h -1, V/F 954 l, kabs 0.257 h -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-t: this record has none, the second reading 824.5; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004)
   ·  DOI: [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x)
 
 ## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="curated_candidate" stale="false" population="women with urinary incontinence and healthy women" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="needs_review" stale="false" population="women with urinary incontinence and healthy women" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -36,6 +38,8 @@ Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal o
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (l h -1 ) | `Q27` · CL/F | 52.6 | l h -1 | 1.4611111111111112e-05 | L/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
@@ -112,7 +116,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=duloxetine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | 1.3768285319493181e-05 | not captured | non-numeric value |
 | T1_cmax | reference | skipped | not captured | 1.3768285319493181e-05 | not captured | non-numeric value |
 | T1_t_half_terminal | reference | skipped | not captured | 12.560066348166535 | not captured | non-numeric value |
@@ -137,8 +141,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_modelica.zip" download>Duloxetine_Skinner2004_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_fmi.zip" download>Duloxetine_Skinner2004_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_modelica.zip" download>Duloxetine_Skinner2004_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_fmi.zip" download>Duloxetine_Skinner2004_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab.zip" download>Duloxetine_Skinner2004_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab_simbio.zip" download>Duloxetine_Skinner2004_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sbml.zip" download>Duloxetine_Skinner2004_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

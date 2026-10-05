@@ -13,16 +13,16 @@
 
 ## What this record describes
 
-**As extracted:** Insulin degludec and insulin aspart drive glucose infusion rate (in unknown): delayed effect through an effect compartment.
+**As extracted:** Insulin degludec drives glucose infusion rate (in mg/[kg × min]): indirect response — drug inhibits the production of glucose infusion rate.
 
 **Model:** No model was generated from this record.
 
-> In Japanese patients with type 1 diabetes, a population PK/PD model linked separate IDeg and IAsp insulin concentrations to glucose infusion rate (GIR) via two separate insulin-action effect compartments (one for IDeg, one for IAsp, each with its own turnover and insulin sensitivity parameter), whose contributions were additive on the GIR scale; the paper does not report numeric potency or rate parameter values (no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma are given in the excerpts).
+> The paper describes a PK/PD model where the insulin action of IDeg and IAsp, derived from their respective PK compartments, acts additively on the glucose infusion rate (GIR) via separate turnover and insulin sensitivity parameters, rather than the indirect response mechanism stated in the record. The paper does not provide specific numerical values for potency or rate parameters (e.g., IC50, ke0, kout) in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Haahr_2016`
-- **model family:** `effect_compartment`
+- **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
 - **tier:** population
 - **effect:** stimulation/additive

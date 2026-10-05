@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Dibekacin is an aminoglycoside antibiotic marketed in Japan [L5623].
+Dibekacin is an aminoglycoside antibiotic, related to kanamycin, used to treat bacterial infections. It is an approved medicine and is used mainly in Japan and some other Asian countries, given by injection or as eye drops.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3706873](https://www.wikidata.org/wiki/Q3706873) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

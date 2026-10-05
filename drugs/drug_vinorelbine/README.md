@@ -10,25 +10,9 @@
 
 ## About
 
-**Description.** Vinorelbine is an anti-mitotic chemotherapy drug that is used in the treatment of several types of malignancies, including breast cancer and non-small cell lung cancer (NSCLC) [L1998].  It was initially approved in the USA in 1990's for the treatment of NSCLC [L2010].
+Vinorelbine, a Vinca alkaloid, is an anticancer medicine used to treat breast cancer, ovarian cancer, non-small-cell lung carcinoma, and mixed-cellularity Hodgkin's lymphoma. It is an approved medicine and is included on the WHO list of essential medicines, indicating broad international use.
 
-It is a third-generation vinca alkaloid. The introduction of third-generation drugs (vinorelbine, gemcitabine, taxanes) in platinum combination improved survival of patients with advanced NSCLC, with very similar results from the various drugs. Treatment toxicities are considerable in the combination treatment setting [A32347].
-
-A study was done on the clearance rate of vinorelbine on individuals with various single polymorphonuclear mutations.  It was found that there was 4.3-fold variation in vinorelbine clearance across the cohort, suggesting a strong influence of genetics on the clearance of this drug [L2002].
-
-**Indication.** Vinorelbine tartrate is indicated for adults in the treatment of advanced non-small cell lung cancer (NSCLC), as a single therapy or in combination with other chemotherapeutic drugs [L1998].
-
-Used in relapsed or refractory Hodgkin lymphoma, in combination with other chemotherapy agents [L2011].
- 
-For the treatment of desmoid tumor or aggressive fibromatosis, in combination with methotrexate [L2011].
-
-For the treatment of recurrent or metastatic squamous cell head and neck cancer [L2011].
-
-For the treatment of recurrent ovarian cancer [L2011].
-
-For the treatment of metastatic breast cancer, in patients previously treated with anthracyline and/or taxane therapy [L2011].
-
-For the treatment of HER2-positive, trastuzumab-resistant, advanced breast cancer in patients previously treated with a taxane, in combination with trastuzumab and everolimus [L2011].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420532](https://www.wikidata.org/wiki/Q420532) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -52,9 +36,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…fecal elimination accounting for an additional 30% to 60%…”</sub> | prose |
-| excretion | kidney | <sub>“…Urinary excretion of unchanged drug accounts for less than 20% of an intravenous dose…”</sub> | prose |
-| excretion | liver | <sub>“…Vinorelbine undergoes substantial hepatic elimination in humans…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: BCL2 (downregulator), MAP4 (modulator), MAPK1 (activator), TUBB (inhibitor), TUBB (target).</sub>
 

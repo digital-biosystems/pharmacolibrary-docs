@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 1000 mg parenteral (J01AA07)",
  "model_id": "Tetracycline_Singh2026_reference",
  "molar_masses": {
   "central.C": 0.4444346
@@ -8,14 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  35.0,
-  70.0,
-  140.0,
-  210.0,
-  280.0
- ],
  "parameters": {
   "Cl": 8.333333333333334e-09,
   "F": 1.0,
@@ -23,15 +15,15 @@
   "VdPerKg": 8.285714285714285e-06,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 3.5e-05,
+  "adminMass": 0.001,
   "k12": 3.448275862068965e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662042
+  "central.C": 660.0000000662017
  },
  "reference_peaks": {
-  "central.C": 0.06006306868399238
+  "central.C": 1.7160876760388568
  },
  "stop_time": 259200.0,
  "template": "PK_2C",

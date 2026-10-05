@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Niacin is a B vitamin used to treat vitamin deficiencies as well as hyperlipidemia, dyslipidemia, hypertriglyceridemia, and to reduce the risk of myocardial infarctions.[L7550,L7553,L7556,L7559,L7562,L7565]
+Nicotinic acid, the acid form of vitamin B3, is used to treat pellagra and familial hyperlipidemia, and acts as a lipid-lowering agent and peripheral vasodilator. It is an approved medicine and nutraceutical, widely available as a vitamin supplement and lipid-modifying drug, though no EU-wide marketing authorisation is recorded.
 
-**Indication.** Niacin is indicated to prevent vitamin deficiencies in pediatric and adult patients receiving parenteral nutrition as part of multivitamin intravenous injections.[L7550,L7553,L7556,L7559] Niacin oral tablets are indicated as a monotherapy or in combination with simvastatin or lovastatin to treat primary hyperlipidemia and mixed dyslipidemia.[L7562,L7565] It can also be used to reduce the risk of nonfatal myocardial infarctions in patients with a history of myocardial infarction and hyperlipidemia.[L7562,L7565] Niacin is also indicated with bile acid binding resins to treat atherosclerosis in patients with coronary artery disease and hyperlipidemia or to treat primary hyperlipidemia.[L7562,L7565] Finally niacin is indicated to treat severe hypertriglyceridemia.[L7562,L7565]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q134658](https://www.wikidata.org/wiki/Q134658) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -33,8 +33,8 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iwaki_1996_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Iwaki1996_reference.md) | — | parent + metabolite (no model) | 3 | Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and disposi… (1996) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Wu_1989_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | — | 1-compartment (no model) | 4 | Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Iwaki_1996_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Iwaki1996_reference.md) | — | parent + metabolite (no model) | 3 | Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and disposi… (1996) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Wu_1989_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | — | 1-compartment (no model) | 4 | Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989) | — |
 
 ## ADME sites
 
@@ -47,10 +47,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A5` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>“…have been identified in human urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…69.5% of a dose of niacin is recovered in urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DGAT2 (inhibitor), HCAR2 (target), HCAR3 (target), NNMT (binder), QPRT (binder), SERPINA7 (inhibitor), SLC16A1 (substrate), SLC16A3 (unknown), SLC5A8 (unknown).</sub>
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Trazodone is triazolopyridine derivative from the serotonin receptor antagonists and reuptake inhibitors (SARIs) class of antidepressants.[A181180] It is used in adults and has been shown to be comparable in efficacy to other drugs such as tricyclic antidepressants (TCAs), selective serotonin reuptake inhibitors (SSRIs), and serotonin-norepinephrine receptor inhibitor (SNRIs) in the treatment of depression.[T646] A unique feature of this drug is that it does not promote the anxiety symptoms, sexual symptoms, or insomnia, which are commonly associated with SSRI and SNRI therapy.[T646] Trazodone acts on various receptors, including certain histamine, serotonin, and adrenergic receptors, distinguishing it from other antidepressants that cover a narrow range of neurotransmitters.[T646] It was initially granted FDA approval in 1981.[L3484]
+Trazodone is an antidepressant used for depression, and also for conditions such as anxiety, insomnia, sleep-wake disorders, delirium and neurotic disorders. It is an approved medicine in widespread clinical use, though it carries a boxed warning.
 
-**Indication.** Trazodone is indicated for the treatment of major depressive disorder (MDD).[L3484] It has been used off-label for adjunct therapy in alcohol dependence, and off-label to treat anxiety and insomnia.[L3484] It may also be used off-label to treat symptoms of dementia, Alzheimer’s disease, schizophrenia, eating disorders, and fibromyalgia due to its effects on various neurotransmitter receptors.[A31634]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411457](https://www.wikidata.org/wiki/Q411457) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,8 +44,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted unchanged in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

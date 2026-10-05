@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Piretanide (INN, trade names Arelix, Eurelix, Tauliz) has been synthesized in 1973 at Hoechst AG (Germany) as a loop diuretic compound by using a then-new method for introducing cyclic amine residues in an aromatic nucleus in the presence of other aromatically bonded functional groups.
+Piretanide is a loop (high-ceiling) diuretic used to treat conditions involving fluid retention, such as oedema and hypertension. It is an approved medicine, though it is not widely used and is not authorised across the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3905617](https://www.wikidata.org/wiki/Q3905617) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Coagulation Factor XIII A-Subunit (Recombinant), also known as catridecacog, is a recombinant form of the Factor XIII-A2 homodimer composed of two factor XIII (FXIII) A-subunits [FDA Label]. For people with congenital deficiency or mutation of Factor XIII, a rare bleeding disorder, exogenous replacement of this key coagulation factor is essential for management and prevention of bleeding episodes. 
+Catridecacog is a recombinant coagulation factor XIII A-subunit used to treat inherited blood coagulation disorders, specifically factor XIII deficiency. It is approved and authorised in the European Union, though it is a specialised product used in a small patient population.
 
-Also known as Fibrin Stabilizing Factor (FSF), Factor XIII is an endogenously available coagulation factor and the final enzyme within the blood coagulation cascade. Within the body, FXIII circulates as a heterotetramer composed of 2 catalytic A-subunits and 2 non-catalytic B-subunits (FXIII-A2B2) [A32363]. When activated by thrombin at the site of injury, the FXIII A2B2 pro-enzyme is cleaved resulting in activation of the catalytic A-subunit and dissociation from its carrier B-subunit. As a result, the active transglutaminase from subunit A cross-links fibrin and other proteins resulting in increased mechanical strength and resistance to fibrinolysis of the fibrin clot. This contributes to enhanced platelet and clot adhesion to injured tissue, thereby improving blood coagulation and maintenance of hemostasis [A18581].
-
-When supplied as the recombinant form, Coagulation Factor XIII A-Subunit (Recombinant) binds to free human FXIII B-subunit resulting in a heterotetramer (rA2B2) with a similar activity profile and half-life as the endogenously available form. In patients with congenital factor XIII A-subunit deficiency, this product (marketed as Tretten) is indicated for the routine prophylaxis of bleeding. In these patients, activated rFXIII has been shown to increase the mechanical strength of fibrin clots, slow down fibrinolysis, and to enhance platelet adhesion to the site of injury. As the half-life of endogenous Factor XIII is long (5-11 days), prophylactic therapy with the replacement of FXIII can be given every 4-6 to maintain hemostasis[A32363].  
-
-Other dr
-
-**Indication.** For routine prophylaxis of bleeding in patients with congenital factor XIII A-Subunit deficiency.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q16858452](https://www.wikidata.org/wiki/Q16858452) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

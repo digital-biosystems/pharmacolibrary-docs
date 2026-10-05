@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/&quot;},{&quot;label&quot;:&quot;Phelps_2013 \u00b7 covariate_estimate_standard_error&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inositol — `Inositol_Phelps2013_covariate_estimate_standard_error`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,18 +21,20 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — inositol: V 0.511 l/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central volume of distribution: this record has 0.5115, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has inositol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:22.676564+00:00) predates the upstream re-run (2026-10-05 07:48:30.604098+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013)
   ·  DOI: [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162)
 
 ## Model component
-<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="needs_review" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="needs_review" stale="true" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
@@ -41,7 +44,7 @@ Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| central volume of distribution | `Q61` · V | 0.5115 | l/kg | 0.035805000000000003 | L | not captured | boundary (0.8) | Phelps_2013:discussion_prose | — | not captured |
+| central volume of distribution | `Q61` · V | 0.5115 | l/kg | 0.035805000000000003 | L | not captured | boundary_compartment (0.9) | Phelps_2013:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,9 +67,10 @@ Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research
 - dropped value-less row: 'k (elimination rate; Cl/V)'
 - dropped value-less row: 't1/2 (half-life; 0.693/k)' (captured trailing unit 'half-life; 0.693/k' for child rows)
 - dropped value-less row: 'E (endogenous concentration; R/Cl)'
-- salvaged Q61 ('central volume of distribution'=0.5115) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=myo-inositol
+- salvaged Q63 ('central volume of distribution'=0.5115) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inositol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution' is the general volume)
 - status held at route_to_review — not promoted
 - population split: 'covariate estimate(standard error)' subgroup of Phelps_2013 (paper reports 2 populations: covariate estimate(standard error), estimate)
 
@@ -77,18 +81,21 @@ Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[central volume of distribution]` | 0.5115 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central volume of distribution]` | not captured | 0.5115 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | inositol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | inositol | unknown | mismatch |
 
 </details>
 
@@ -141,4 +148,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 22:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 07:48 UTC</sub>

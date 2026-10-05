@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Hydrogen peroxide is the simplest peroxide with a chemical formula H2O2. Hydrogen peroxide is an unstable compound in the presence of a base or catalyst, and is typically stored with a stabilizer in a weakly acidic solution. If heated to its boiling point, it may undergo potentially explosive thermal decomposition. Hydrogen peroxide is formed in the body of mammals during reduction of oxygen either directly in a two-electron transfer reaction [L2024]. As a natural product of metabolism, it readily undergoes decomposition by catalase in normal cells [L2024]. 
+Hydrogen peroxide is an antiseptic used to disinfect wounds and skin, treat mouth and ear infections, and remove seborrheic keratoses. It is widely available as an approved medicine for human use and is also approved for veterinary use, with some investigational applications.
 
-Due to its potent and broad-spectrum antimicrobial actions, hydrogen peroxide is used in both liquid and gas form for preservative, disinfection and sterilization applications as an oxidative biocide [A32369]. It is used in industrial and cosmetic applications as a bleaching agent. Hydrogen peroxide is also considered as a generally recognized as safe compound by the FDA [L2024]; it is used as an antimicrobial agent in starch and cheese products, and as an oxidizing and reducing agent in products containing dried eggs, dried egg whites, and dried egg yolks.
-
-**Indication.** Indicated to be used as a disinfectant and sterilizer.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q171877](https://www.wikidata.org/wiki/Q171877) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…catalase, an enzyme found in blood and most tissues…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ALPG (inhibitor), CAT (substrate), GPX1 (substrate), PTPN1 (inhibitor).</sub>
 

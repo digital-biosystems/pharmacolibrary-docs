@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Xamoterol is a β1-adrenoceptor partial agonist that has shown to improve systolic and diastolic function in studies with heart failure patients. It modulates the sympathetic control of the heart but has no agonist action on β2-adrenoceptors.
+Xamoterol is a beta-1 adrenergic receptor agonist used as a cardiac stimulant in heart conditions. It has been approved as a medicine, though it is not widely used today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4021708](https://www.wikidata.org/wiki/Q4021708) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

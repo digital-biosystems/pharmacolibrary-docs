@@ -21,17 +21,11 @@ In the laboratory, it is used while performing the Karl Fischer equation, which 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 23:57 | 1:46 | 0/0/0 | 1/0/0 | 0/0/0 | 45,852/1,445 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/3 | 2/0 | 0 |
+| 2026-10-04 17:14 | 0:52 | 0/0/0 | 0/0/0 | 0/0/0 | 38,748/428 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/3 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Singh_2021_mitophagy](drugs/drug_sodium_tartrate/pd_Singh_2021_mitophagy.md) | name ← GSK3357679A · stimulation effect | — | Singh F et al., Pharmacological rescue of impaired mito…, eLife (2021) | [10.7554/elife.67604](https://doi.org/10.7554/elife.67604) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -50,13 +44,13 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Coveney_1987 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the radiotracer technetium-99m MAG3, with sodium tartrate serving only as an excipient in the kit formulation. |
-| popPK | Gharge_2025 | irrelevant | 0 | 0 | The paper focuses on in-vitro antidiabetic activity and computational ADMET analysis of rhodanine-thiazole hybrids, not sodium tartrate pharmacokinetics. |
+| popPK | Coveney_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the radiotracer technetium-99m MAG3, where sodium tartrate is merely an excipient in the kit formulation, not the subject drug. |
+| popPK | Gharge_2025 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro activity of rhodanine-thiazole hybrids, not the pharmacokinetics of sodium tartrate. |
 | popPK | Gómez-Perales_2021 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
 | PD | Gómez-Perales_2021 | not_relevant | 0 | 0 | The paper discusses the concept of iodine allergy in nuclear medicine and does not contain any pharmacodynamic or exposure-response data for sodium tartrate. |
-| popPK | Ha_1996 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study investigating the effects of ammonium salts on GABAA receptors, not a pharmacokinetic study of sodium tartrate. |
-| popPK | Nicholson_1938 | irrelevant | 0 | 0 | Sodium tartrate is used as a nephrotoxic agent to induce kidney damage, not as the subject drug for pharmacokinetic parameter estimation. |
-| popPK | Singh_2021 | irrelevant | 0 | 0 | The paper investigates mitophagy in Parkinson's disease models using LRRK2 inhibitors and does not study sodium tartrate or report any pharmacokinetic parameters. |
+| popPK | Ha_1996 | irrelevant | 0 | 0 | The study investigates the in-vitro effects of ammonium salts on GABAA receptor ligand binding, not the pharmacokinetics of sodium tartrate. |
+| popPK | Nicholson_1938 | irrelevant | 0 | 0 | The study uses sodium tartrate as a nephrotoxic agent to induce kidney damage in dogs, rather than measuring the pharmacokinetic parameters of sodium tartrate itself. |
+| popPK | Singh_2021 | irrelevant | 0 | 0 | The paper investigates mitophagy in LRRK2 mutant mice and does not report pharmacokinetic parameters for sodium tartrate. |
 | popPK | Suborna_2024 | irrelevant | 0 | 0 | The paper is a food science study on solar drying of country bean seeds where sodium tartrate is used only as a pretreatment agent, not as a subject drug for pharmacokinetic analysis. |
 | PD | Suborna_2024 | not_relevant | 0 | 0 | The paper is a food science study on solar drying techniques and pretreatments for beans, reporting no pharmacodynamic or exposure-response relationships for sodium tartrate. |
 

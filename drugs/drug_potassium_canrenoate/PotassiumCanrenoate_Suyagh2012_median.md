@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;potassium canrenoate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/&quot;},{&quot;label&quot;:&quot;Suyagh_2012 \u00b7 median&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -12,17 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 0.13, model 10.2); t6_deviations.**
+**The potassium canrenoate/canrenone model's simulated terminal half-life (10.222239476695405 h) does not reproduce the paper's reported value (0.13 h, ratio 78.6326), and the absorption rate constant ka was never reported, so library defaults were used.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is potassium canrenoate's own; they describe canrenone. Extracted — canrenone: CL/F 1.33 L/hr, V/F 19.6 L, t1/2z 12.1 hr.
+Simulating the model as the paper dosed it gives a terminal half-life of 10.222239476695405 h for canrenone, versus the paper's 0.13 h — a 78.6326-fold discrepancy, far outside tolerance; comparisons against other reported half-lives (4.38, 4.14, 19.57, 19.58 h) also fail. The absorption rate constant ka (and Tlag) are not reported in the source, so placeholder defaults were substituted, and the model assumes F=1, Fm=1 with no molar correction in an apparent (/F) parameterization with first-order depot input. A second reader also disagreed on the dosed compound (potassium canrenoate vs unknown), the primary analyte, and the V/F parameter identification, reading a weight-normalized volume of 5.35 L/kg where this record has none. Extracted — canrenone: CL/F 1.33 L/hr, V/F 19.6 L, t1/2z 12.1 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `potassium canrenoate`, measured `canrenone`.
 
@@ -126,7 +127,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=canrenone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_beta | reference | pass | 11.2 | 10.222239476695405 | 0.9127 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.13 | 10.222239476695405 | 78.6326 | hr→SI vs simulated h |
 | T1_t_half_terminal | reference | fail | 0.13 | 10.222239476695405 | 78.6326 | min→SI vs simulated h |
@@ -156,19 +157,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_modelica.zip" download>PotassiumCanrenoate_Suyagh2012_median_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_modelica.zip" download>PotassiumCanrenoate_Suyagh2012_median_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_fmi.zip" download>PotassiumCanrenoate_Suyagh2012_median_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_matlab.zip" download>PotassiumCanrenoate_Suyagh2012_median_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_matlab_simbio.zip" download>PotassiumCanrenoate_Suyagh2012_median_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_sbml.zip" download>PotassiumCanrenoate_Suyagh2012_median_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_cellml.zip" download>PotassiumCanrenoate_Suyagh2012_median_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median.svg" alt="PotassiumCanrenoate_Suyagh2012_median diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median/PotassiumCanrenoate_Suyagh2012_median_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `PotassiumCanrenoate_Suyagh2012_median_params.json` · controls `PotassiumCanrenoate_Suyagh2012_median_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

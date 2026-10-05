@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Rauwolfia alkaloids from the whole root were used to treat high blood pressure, acting as centrally acting antiadrenergic agents. They are now largely obsolete in modern medicine, having been replaced by newer antihypertensive drugs with more predictable effects and fewer side effects.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

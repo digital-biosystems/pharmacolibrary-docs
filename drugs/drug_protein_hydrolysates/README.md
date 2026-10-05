@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Protein hydrolysates, products of protein breakdown, are used as a source of amino acids in solutions for parenteral nutrition. They are classified under I.V. solutions for parenteral nutrition, indicating use in clinical nutrition given intravenously.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q76603507](https://www.wikidata.org/wiki/Q76603507) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

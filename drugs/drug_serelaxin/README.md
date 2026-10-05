@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Recombinant human relaxin is a hormone produced during pregnancy that facilitates the birth process by causing a softening and lengthening of the cervix and the pubic symphysis (the place where the pubic bones come together).It is a heterodimer protein secreted by the corpus luteum and placenta during pregnancy.
+Serelaxin, a recombinant form of human relaxin, was investigated as a treatment for heart failure. It remains investigational; a marketing application in the European Union was refused, so it is not authorised there.
 
-**Indication.** Investigated for use/treatment in cardiovascular disorders, congestive heart failure, infertility, peripheral vascular disease, and scleroderma.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7453086](https://www.wikidata.org/wiki/Q7453086) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 

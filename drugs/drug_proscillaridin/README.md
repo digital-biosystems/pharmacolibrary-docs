@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Proscillaridin is a cardiac glycoside that is derived from plants of the genus Scilla and in Drimia maritima (Scilla maritima). Studies suggest the potential cytotoxic and anticancer property of proscillaridin, based on evidence of the drug potently disrupting topoisomerase I and II activity at nanomolar drug concentrations [A27193] and triggering cell death and blocking cell proliferation of glioblastoma cell lines [A27194].
+Proscillaridin is a cardiac glycoside from squill that has been used as a cardiotonic agent, mainly for heart conditions such as heart failure. It is currently considered experimental and does not appear to be an approved medicine in major markets such as the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7250550](https://www.wikidata.org/wiki/Q7250550) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

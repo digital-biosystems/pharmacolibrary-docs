@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Bendamustine is a nitrogen mustard drug which has been used in the treatment of chronic lymphocytic leukemia (CLL) and indolent B-cell non-Hodgkin lymphoma (NHL).  Bendamustine is a bifunctional mechlorethamine derivative capable of forming electrophilic alkyl groups that covalently bond to other molecules. Through this function as an alkylating agent, bendamustine causes intra- and inter-strand crosslinks between DNA bases resulting in cell death.  It is active against both active and quiescent cells, although the exact mechanism of action is unknown.
+Bendamustine is an alkylating anticancer drug used to treat blood cancers such as chronic lymphocytic leukemia and several types of lymphoma, including mantle cell and non-Hodgkin lymphoma. It is an approved medicine and appears on the WHO list of essential medicines, so it is widely used in cancer care.
 
-**Indication.** Bendamustine is indicated for use in the treatment of  indolent B-cell non-Hodgkin lymphoma (NHL) that has progressed during or within six months of treatment with [rituximab] or a rituximab-containing regimen.[L50632]
-
-The indication for chronic lymphocytic leukemia (CLL) was removed from the US drug label in April 2024.[L50632]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425745](https://www.wikidata.org/wiki/Q425745) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -35,8 +33,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | metabolism | liver | `CYP1A2` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…approximately 25% of the dose was recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…Approximately 50% of the dose was recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
 

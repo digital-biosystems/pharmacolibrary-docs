@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Strontium chloride (Sr-89), initially FDA-approved in 1993, is used as a paliative therapeutic option to help relieve the pain from bone metastases. Strontium chloride is mainly used in cases of metastatic castrate-resistant prostate cancer.[A31264] Bone metastases is a common and severe complication presented in advanced stages of the disease. It is usually presented mainly in patients with prostatic and breast cancer, as well as in cancer of lung, bladder and thyroid. There has been some cases of apparent tumor regression which has given it a potential tumoricidal effect.[A31263]
+Strontium-89 chloride is a bone-seeking radiopharmaceutical used to relieve pain from cancer that has spread to the bones. It is an approved medicine and is used in hospitals with nuclear medicine facilities for pain palliation.
 
-**Indication.** Strontium-89 Chloride Injection is indicated as a paliative for the relief of bone pain in patients with skeletal metastases. It is impotant to confirm the presence of bone metastases prior the beginning of therapy.[A31264]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27262770](https://www.wikidata.org/wiki/Q27262770) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,9 +31,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…either by the bile or from the plasma…”</sub> | prose |
-| excretion | kidney | <sub>“…elimination is done mainly by urinary excretion…”</sub> | prose |
-| excretion | small intestine | <sub>“…suggests an absorption into the gastrointestinal tract…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ALPG (cofactor), ALPL (cofactor), Adenosine triphosphate (ATP) (cofactor), CACNA1I (inducer), SLC8A1 (inducer).</sub>
 

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** A vasodilator agent found to be effective in a variety of peripheral circulation disorders. It has various other potentially useful pharmacological effects. Its mechanism may involve block of calcium channels.
+Bencyclane is a vasodilator and calcium channel blocker classified as a peripheral vasodilator, used for problems with blood flow in the limbs. It appears to be only experimental today and is not authorised in the European Union, so its current use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q723117](https://www.wikidata.org/wiki/Q723117) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

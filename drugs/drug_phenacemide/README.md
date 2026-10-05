@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Phenacemide is used to control certain seizures in the treatment of epilepsy. This medicine acts on the central nervous system (CNS) to reduce the number and severity of seizures.
+Phenacemide is an antiepileptic drug used to treat complex partial seizures. It is classified among other antiepileptics, and it has been described as a developmental toxicant, though the available facts do not state whether it remains in use.
 
-**Indication.** Used to control certain seizures in the treatment of epilepsy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3742404](https://www.wikidata.org/wiki/Q3742404) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Metabolized in the liver by hepatic microsomal enzymes…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SCN1A (inhibitor).</sub>
 

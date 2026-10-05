@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A cardioselective beta-1-adrenergic antagonist with no partial agonist activity.
+Betaxolol is a selective beta blocker used to treat high blood pressure and to lower pressure in the eye in open-angle glaucoma and ocular hypertension. It is an approved medicine, available both as a cardiovascular drug and as an eye preparation for glaucoma.
 
-**Indication.** For the management of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q794162](https://www.wikidata.org/wiki/Q794162) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -65,8 +65,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…There is a small and consistent first-pass effect…”</sub> | prose |
-| absorption | small intestine | <sub>“…Absorption of an oral dose is complete…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2D6` metabolism/substrate | DrugBank actor |
 

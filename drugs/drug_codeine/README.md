@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** The relief of pain (analgesia) is a primary goal for enhancing the quality of life of patients and for increasing the ability of patients to engage in day to day activities. Codeine, an opioid analgesic, was originally approved in the US in 1950 and is a drug used to decrease pain by increasing the threshold for pain without impairing consciousness or altering other sensory functions. Opiates such as codeine are derived from the poppy plant, _Papaver somniferum_ (Papaveraceae).[A175096]
+Codeine is an opioid used to treat pain and to suppress cough. It is widely used around the world, often combined with non-opioid painkillers, and is included on the WHO list of essential medicines.
 
-Codeine is utilized as a central analgesic, sedative, hypnotic, antinociceptive, and antiperistaltic agent, and is also recommended in certain diseases with incessant coughing.[LABEL,A175096]
-
-**Indication.** Codeine sulfate is a form of this drug that is commonly used. It is available in tablet form [FDA label] and indicated for the relief of mild to moderately severe pain, where the use of an opioid analgesic is appropriate [FDA label].
-
-The solution form is used by itself or combined in a syrup with other drugs and is used as a cough suppressant in adults aged 18 and above [L5521], [L5524].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q174723](https://www.wikidata.org/wiki/Q174723) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -34,18 +30,18 @@ The solution form is used by itself or combined in a syrup with other drugs and 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-03 10:33 | 32:39 | 2/3/1 | 1/0/0 | 0/0/28 | 579,723/91,464 | ollama / qwen3.8:27b-mtp-q8_0 | 31 | 22/9 | 18/13 | 0 |
+| 2026-10-03 10:33 | 32:39 | 1/3/2 | 1/0/0 | 0/0/28 | 579,723/91,464 | ollama / qwen3.8:27b-mtp-q8_0 | 31 | 22/9 | 18/13 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ashraf_2024_reference](drugs/drug_codeine/Codeine_Ashraf2024_reference.md) | — | general linear (no model) | 10 | Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span> | [Thigpen_2019_reference](drugs/drug_codeine/Codeine_Thigpen2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | James C Thigpen et al., Opioids: A Review of Pharmacokinetics a…, European journal of drug me… (2019) | [10.1007/s13318-019-00552-0](https://doi.org/10.1007/s13318-019-00552-0) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Shah_1990_reference](drugs/drug_codeine/Codeine_Shah1990_reference.md) | — | 1-compartment (no model) | 4 | Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2026_reference](drugs/drug_codeine/Codeine_Anderson2026_reference.md) | — | parent + metabolite (no model) | 0 | Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaesthesia (2026) | [10.1002/pan.70227](https://doi.org/10.1002/pan.70227) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Capparelli_2005_reference](drugs/drug_codeine/Codeine_Capparelli2005_reference.md) | — | 1-compartment (no model) | 2 | Capparelli EV et al., Multicenter study to determine antibody…, Antimicrobial agents and ch… (2005) | [10.1128/aac.49.10.4121-4127.2005](https://doi.org/10.1128/aac.49.10.4121-4127.2005) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gretler_2020_reference](drugs/drug_codeine/Codeine_Gretler2020_reference.md) | — | 1-compartment (no model) | 3 | Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020) | [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Ashraf_2024_reference](drugs/drug_codeine/Codeine_Ashraf2024_reference.md) | model (no simulator) | 1-compartment general linear | 10 | Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Shah_1990_reference](drugs/drug_codeine/Codeine_Shah1990_reference.md) | — | 1-compartment (no model) | 4 | Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2026_reference](drugs/drug_codeine/Codeine_Anderson2026_reference.md) | — | parent + metabolite (no model) | 0 | Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaesthesia (2026) | [10.1002/pan.70227](https://doi.org/10.1002/pan.70227) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Capparelli_2005_reference](drugs/drug_codeine/Codeine_Capparelli2005_reference.md) | — | 1-compartment (no model) | 2 | Capparelli EV et al., Multicenter study to determine antibody…, Antimicrobial agents and ch… (2005) | [10.1128/aac.49.10.4121-4127.2005](https://doi.org/10.1128/aac.49.10.4121-4127.2005) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gretler_2020_reference](drugs/drug_codeine/Codeine_Gretler2020_reference.md) | — | 1-compartment (no model) | 3 | Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020) | [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004) |
 
 ## Pharmacodynamics (PD)
 
@@ -109,7 +105,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `COMT` metabolism, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `COMT` metabolism, `CYP2B6` metabolism, `CYP2D6` formation/substrate, `CYP3A4` substrate, `SLC22A1` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…About 90% of the total dose of codeine is excreted by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (regulator), OPRM1 (target), UGT2B4 (substrate).</sub>
 
@@ -123,7 +119,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 773 matched, 103 returned
 - **screened:** 28  ·  **relevant:** 4
-- **records:** 6  ·  extracted 2  ·  needs_review 1  ·  rejected 3  ·  stale 5
+- **records:** 6  ·  extracted 1  ·  needs_review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

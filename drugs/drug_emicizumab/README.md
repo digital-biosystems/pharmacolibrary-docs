@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Emicizumab is a humanized recombinant monoclonal antibody that mimics the function of the coagulation Factor VIII and it has the capacity to bind simultaneously to activated Factor IX and Factor X. The ability of Emicizumab to bind to all these three different factors allows it to overcome immunogenicity and unstable hemostatic efficacy produced by previous Factor VII agents. Emicizumab was originated as an improved form of hBS23 and it was approved on November 16, 2017.[A31279, L1016] It was created by Chugai Pharmaceuticals Co. Ltd. and co-developed with Roche and Genentech.[L1015]
+Emicizumab, a monoclonal antibody, is used to treat hemophilia A. It is an approved medicine authorised in the European Union.
 
-**Indication.** The main function of Emicizumab is the prevention of bleeding episodes. Thus, Emicizumab is approved for the routine prophylaxis to prevent or reduce the frequency of bleeding episodes of adult and pediatric patients with hemophilia A with or without Factor VIII inhibitors.[L4657]
-
-Hemophilia A is a deficiency of coagulation Factor VIII which causes a serious bleeding disorder. The standard treatment is done with the administration of recombinant or serum-deriver Factor VIII which induces the formation of anti-factor VIII alloantibodies (Factor VIII inhibitors) and renders the standard treatment ineffective.[A31286]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27155409](https://www.wikidata.org/wiki/Q27155409) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

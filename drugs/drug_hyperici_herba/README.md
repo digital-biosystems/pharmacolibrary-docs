@@ -7,6 +7,12 @@
 - **DrugBank:** [DB01323](https://go.drugbank.com/drugs/DB01323) · **PubChem:** not captured
 - **groups:** approved, investigational, nutraceutical
 
+## About
+
+St John's wort (Hypericum perforatum) flowering tops are used as a herbal antidepressant for mild to moderate depression. It is widely available as an over-the-counter herbal remedy and nutraceutical, and is approved in several countries.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q158289](https://www.wikidata.org/wiki/Q158289) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

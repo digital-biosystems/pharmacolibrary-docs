@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** An inhalation anesthetic. Currently, methoxyflurane is rarely used for surgical, obstetric, or dental anesthesia. If so employed, it should be administered with nitrous oxide to achieve a relatively light level of anesthesia, and a neuromuscular blocking agent given concurrently to obtain the desired degree of muscular relaxation. (From AMA Drug Evaluations Annual, 1994, p180)
+Methoxyflurane is an inhalational anaesthetic that has also been used at low doses for pain relief. It was largely withdrawn as a general anaesthetic because of kidney toxicity, but a low-dose inhaled formulation remains available for short-term pain relief in some countries such as Australia.
 
-In the US, methoxyflurane is one of the products that have been withdrawn or removed from the market for reasons of safety or effectiveness.[L43942]
-
-**Indication.** For use in the induction and maintenance of general anesthesia
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411594](https://www.wikidata.org/wiki/Q411594) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Zinc sulfate is the inorganic compound with the formula ZnSO4 and historically known as "white vitriol". It is on the World Health Organization's List of Essential Medicines, a list of the most important medication needed in a basic health system.
+Zinc sulfate is a zinc salt used as a mineral supplement to treat or prevent zinc deficiency, and can also be added to intravenous solutions as an electrolyte. It is an approved medicine, widely available as a supplement, and also has investigational uses.
 
-**Indication.** This medication is a mineral used to treat or prevent low levels of zinc alone and together with oral rehydration therapy (ORT). It is also used as a topical astringent. Zinc Sulfate Injection, USP is indicated for use as a supplement to intravenous solutions given for TPN.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q204954](https://www.wikidata.org/wiki/Q204954) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -52,10 +52,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed, primarily from the duodenum and ileum…”</sub> | prose |
-| excretion | bile duct | <sub>“…Primarily fecal (approximately 90%)…”</sub> | prose |
-| excretion | kidney | <sub>“…to a lesser extent in the urine…”</sub> | prose |
-| excretion | skin | <sub>“…in perspiration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: MIR-146A (target).</sub>
 

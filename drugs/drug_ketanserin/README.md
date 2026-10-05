@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;ketanserin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketanserin_Michiels1988_reference&quot;,&quot;label&quot;:&quot;Michiels_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Trenk1983_reference&quot;,&quot;label&quot;:&quot;Trenk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Hanff2005_reference&quot;,&quot;label&quot;:&quot;Hanff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketanserin_Michiels1988_reference&quot;,&quot;label&quot;:&quot;Michiels_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Hanff2005_reference&quot;,&quot;label&quot;:&quot;Hanff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Trenk1983_reference&quot;,&quot;label&quot;:&quot;Trenk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ketanserin
 
@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Ketanserin has been investigated for the treatment of Septic Shock, Severe Sepsis, and Diabetic Foot Ulcer.
+Ketanserin is a serotonin antagonist that has been used as an antihypertensive drug and to treat chronic skin ulcers. It is currently considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415997](https://www.wikidata.org/wiki/Q415997) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -26,15 +28,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 02:18 | 14:24 | 2/1/1 | 1/0/0 | 0/0/0 | 126,206/25,671 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-09-28 02:18 | 14:24 | 1/1/2 | 1/0/0 | 0/0/0 | 126,206/25,671 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Michiels_1988_reference](drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1988) | — |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span> | [Trenk_1983_reference](drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovascular p… (1983) | [10.1097/00005344-198311000-00018](https://doi.org/10.1097/00005344-198311000-00018) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Hanff_2005_reference](drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hanff LM et al., Population pharmacokinetics of ketanser…, Fundamental & clinical phar… (2005) | [10.1111/j.1472-8206.2005.00354.x](https://doi.org/10.1111/j.1472-8206.2005.00354.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Hanff_2005_reference](drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hanff LM et al., Population pharmacokinetics of ketanser…, Fundamental & clinical phar… (2005) | [10.1111/j.1472-8206.2005.00354.x](https://doi.org/10.1111/j.1472-8206.2005.00354.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Trenk_1983_reference](drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovascular p… (1983) | [10.1097/00005344-198311000-00018](https://doi.org/10.1097/00005344-198311000-00018) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.087). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kurowski_1985_reference](drugs/drug_ketanserin/Ketanserin_Kurowski1985_reference.md) | — | parent + metabolite (no model) | 6 | Kurowski M, Bioavailability and pharmacokinetics of…, European journal of clinica… (1985) | [10.1007/BF00544359](https://doi.org/10.1007/BF00544359) |
 
 ## Pharmacodynamics (PD)
@@ -62,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 212 matched, 24 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

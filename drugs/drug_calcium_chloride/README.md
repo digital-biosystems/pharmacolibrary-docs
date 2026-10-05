@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12A&quot;,&quot;href&quot;:&quot;atc/A12A.md&quot;},{&quot;label&quot;:&quot;calcium chloride&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumChloride_Ansari2022_reference&quot;,&quot;label&quot;:&quot;Ansari_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumChloride_Ansari2022_reference&quot;,&quot;label&quot;:&quot;Ansari_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # calcium chloride
 
@@ -11,38 +11,38 @@
 
 ## About
 
-**Description.** Calcium chloride is an ionic compound of calcium and chlorine. It is highly soluble in water and it is deliquescent. It is a salt that is solid at room temperature, and it behaves as a typical ionic halide. It has several common applications such as brine for refrigeration plants, ice and dust control on roads, and in cement. It can be produced directly from limestone, but large amounts are also produced as a by-product of the Solvay process. Because of its hygroscopic nature, it must be kept in tightly-sealed containers.
+Calcium chloride is a calcium salt used to treat conditions such as cardiac arrest and tetany, and as a calcium supplement or electrolyte additive. It is an approved medicine, used mainly in hospital settings for intravenous electrolyte replacement and emergency care.
 
-**Indication.** For the treatment of hypocalcemia in those conditions requiring a prompt increase in blood plasma calcium levels, for the treatment of magnesium intoxication due to overdosage of magnesium sulfate, and used to combat the deleterious effects of hyperkalemia as measured by electrocardiographic (ECG), pending correction of the increased potassium level in the extracellular fluid.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q208451](https://www.wikidata.org/wiki/Q208451) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| calcium | metabolite | 40.078 | Ca | PubChem | [5460341](https://pubchem.ncbi.nlm.nih.gov/compound/5460341) | Ansari_2022 |
+| calcium_chloride | metabolite | 110.984 | CaCl2 | DrugBank | [5284359](https://pubchem.ncbi.nlm.nih.gov/compound/5284359) | Ansari_2022, Ansari_2025 |
+| ionized calcium | metabolite | 40.078 | Ca+2 | PubChem | [271](https://pubchem.ncbi.nlm.nih.gov/compound/271) | Ansari_2025 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 23:50 | 0:18 | 1/1/0 | 1/1/0 | 0/0/0 | 6,039/359 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-05 08:38 | 4:49 | 1/1/0 | 1/0/0 | 0/0/0 | 100,973/10,825 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Ansari_2022_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ansari JR et al., Calcium chloride for the prevention of…, Journal of clinical anesthe… (2022) | [10.1016/j.jclinane.2022.110796](https://doi.org/10.1016/j.jclinane.2022.110796) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ansari_2025_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2025_reference.md) | — | 2-compartment (no model) | 3 | Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025) | [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ansari_2022_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ansari JR et al., Calcium chloride for the prevention of…, Journal of clinical anesthe… (2022) | [10.1016/j.jclinane.2022.110796](https://doi.org/10.1016/j.jclinane.2022.110796) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ansari_2025_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2025_reference.md) | — | 2-compartment (no model) | 3 | Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025) | [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_log_M](drugs/drug_calcium_chloride/pd_Ali_2012_log_M.md) | log M ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_relaxation_activity_of_rabbit_jejunum_KCl_induced_contractions](drugs/drug_calcium_chloride/pd_Ali_2012_relaxation_activity_of_rabbit_jejunum_KCl_induced_c.md) | relaxation activity of rabbit jejunum (KCl-induced contractions) ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_relaxation_activity_of_rabbit_jejunum_spontaneous_contractions](drugs/drug_calcium_chloride/pd_Ali_2012_relaxation_activity_of_rabbit_jejunum_spontaneous_c.md) | relaxation activity of rabbit jejunum (spontaneous contractions) ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_time_to_death_of_Ascaridia_galli](drugs/drug_calcium_chloride/pd_Ali_2012_time_to_death_of_Ascaridia_galli.md) | time to death of Ascaridia galli ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_time_to_death_of_Raillietina_spiralis](drugs/drug_calcium_chloride/pd_Ali_2012_time_to_death_of_Raillietina_spiralis.md) | time to death of Raillietina spiralis ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_time_to_paralysis_of_Ascaridia_galli](drugs/drug_calcium_chloride/pd_Ali_2012_time_to_paralysis_of_Ascaridia_galli.md) | time to paralysis of Ascaridia galli ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Ali_2012_time_to_paralysis_of_Raillietina_spiralis](drugs/drug_calcium_chloride/pd_Ali_2012_time_to_paralysis_of_Raillietina_spiralis.md) | time to paralysis of Raillietina spiralis ← Verbascum thapsus crude aqueous methanolic extract · direct Emax (saturable) effect | — | Ali N et al., Anthelmintic and relaxant activities of…, BMC complementary and alter… (2012) | [10.1186/1472-6882-12-29](https://doi.org/10.1186/1472-6882-12-29) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Noguchi_2024_inhibition_of_CaCl2_induced_contraction_in_Ca2_free_medium](drugs/drug_calcium_chloride/pd_Noguchi_2024_inhibition_of_CaCl2_induced_contraction_in_Ca2_.md) | % inhibition of CaCl2-induced contraction in Ca2+-free medium ← piperine and piperlongumine (compared with diltiazem) · direct sigmoid Emax (Hill) effect | — | Noguchi K et al., Relaxant Effects of Piperine and Piperl…, Biological & pharmaceutical… (2024) | [10.1248/bpb.b23-00694](https://doi.org/10.1248/bpb.b23-00694) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Noguchi_2024_relaxation_of_KCl_induced_tonic_contraction](drugs/drug_calcium_chloride/pd_Noguchi_2024_relaxation_of_KCl_induced_tonic_contraction.md) | % relaxation of KCl-induced tonic contraction ← piperine and piperlongumine (compared with diltiazem) · direct sigmoid Emax (Hill) effect | — | Noguchi K et al., Relaxant Effects of Piperine and Piperl…, Biological & pharmaceutical… (2024) | [10.1248/bpb.b23-00694](https://doi.org/10.1248/bpb.b23-00694) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Noguchi_2024_relaxation_of_basal_contractile_tone](drugs/drug_calcium_chloride/pd_Noguchi_2024_relaxation_of_basal_contractile_tone.md) | % relaxation of basal contractile tone ← piperine and piperlongumine (compared with diltiazem) · direct sigmoid Emax (Hill) effect | — | Noguchi K et al., Relaxant Effects of Piperine and Piperl…, Biological & pharmaceutical… (2024) | [10.1248/bpb.b23-00694](https://doi.org/10.1248/bpb.b23-00694) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Noguchi_2024_suppression_of_histamine_induced_phasic_contraction_in_Ca2_free_medium](drugs/drug_calcium_chloride/pd_Noguchi_2024_suppression_of_histamine_induced_phasic_contrac.md) | % suppression of histamine-induced phasic contraction in Ca2+-free medium ← piperine and piperlongumine (compared with diltiazem) · direct sigmoid Emax (Hill) effect | — | Noguchi K et al., Relaxant Effects of Piperine and Piperl…, Biological & pharmaceutical… (2024) | [10.1248/bpb.b23-00694](https://doi.org/10.1248/bpb.b23-00694) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Turnbull_2014_twitch_stress](drugs/drug_calcium_chloride/pd_Turnbull_2014_twitch_stress.md) | twitch stress ← calcium chloride · direct Emax (saturable) effect | — | Turnbull IC et al., Advancing functional engineered cardiac…, FASEB journal : official pu… (2014) | [10.1096/fj.13-228007](https://doi.org/10.1096/fj.13-228007) |
 
 ## ADME sites
 
@@ -50,10 +50,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…urinary excretion accounts for the remaining 20%…”</sub> | prose |
-| metabolism | small intestine | <sub>“…Approximately 80% of body calcium is excreted in the feces as insoluble salts…”</sub> | prose |
-| excretion | bile duct | <sub>“…excreted in the feces as insoluble salts…”</sub> | prose |
-| excretion | kidney | <sub>“…urinary excretion accounts for the remaining 20%…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: S100A13 (unknown).</sub>
 
@@ -67,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 48 matched, 23 returned
 - **screened:** 4  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -76,10 +76,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ansari_2022.pdf` | Ansari JR et al., Calcium chloride for the prevention of…, Journal of clinical anesthe… (2022) | popPK | 10 | [10.1016/j.jclinane.2022.110796](https://doi.org/10.1016/j.jclinane.2022.110796) | [35447502](https://pubmed.ncbi.nlm.nih.gov/35447502) | The study reports quantitative population pharmacokinetic parameters (clearance and volume of distribution) for calcium chloride directly in the text. |
-| `Ansari_2025.pdf` | Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025) | popPK | 10 | [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248) | [39361822](https://pubmed.ncbi.nlm.nih.gov/39361822) | The paper reports a population pharmacokinetic model for calcium chloride with explicit numeric values for clearance, volume, and half-life in the text. |
+| `Ansari_2022.pdf` | Ansari JR et al., Calcium chloride for the prevention of…, Journal of clinical anesthe… (2022) | popPK | 10 | [10.1016/j.jclinane.2022.110796](https://doi.org/10.1016/j.jclinane.2022.110796) | [35447502](https://pubmed.ncbi.nlm.nih.gov/35447502) | The study reports quantitative population pharmacokinetic parameters (clearance and volume of distribution) for calcium chloride in humans. |
+| `Ansari_2025.pdf` | Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025) | popPK | 10 | [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248) | [39361822](https://pubmed.ncbi.nlm.nih.gov/39361822) | The study reports a population pharmacokinetic model for calcium chloride with specific numeric values for clearance, volume, and half-life in the text. |
 
-<sub>queue written 2026-09-26T11:26:30.185239+00:00</sub>
+<sub>queue written 2026-10-05T08:34:40.082009+00:00</sub>
 
 ## Screened and excluded
 
@@ -87,27 +87,27 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Aldawsari_2021 | irrelevant | 0 | 0 | The study focuses on the formulation of apigenin beads where calcium chloride is used only as a crosslinking agent, not as the subject drug for pharmacokinetic analysis. |
 | PD | Aldawsari_2021 | not_relevant | 0 | 0 | The paper focuses on the formulation of apigenin beads where calcium chloride is used only as a crosslinking agent, and no pharmacodynamic or exposure-response relationship for calcium chloride is reported. |
-| popPK | Ali_2011 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract where calcium chloride is used as a reagent to induce contractions, not as the subject drug for pharmacokinetic analysis. |
-| popPK | Ali_2012 | irrelevant | 0 | 0 | The paper investigates the pharmacological effects of a plant extract using calcium chloride as a reagent for dose-response curves, not as a subject drug for pharmacokinetic analysis. |
-| popPK | Benny_2022 | irrelevant | 0 | 0 | The paper is a microbiology study on Agrobacterium transformation where calcium chloride is used as a reagent for cell competency, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Ali_2011 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract's antispasmodic effects, using calcium chloride only as a tool to induce contractions, not as a subject drug for PK analysis. |
+| popPK | Ali_2012 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract on worms and rabbit jejunum, using calcium chloride only as a reagent for concentration-response curves, not as a subject drug for PK analysis. |
+| popPK | Benny_2022 | irrelevant | 0 | 0 | The paper describes a method for bacterial transformation using calcium chloride as a reagent, not a pharmacokinetic study of calcium chloride as a drug. |
 | PD | Benny_2022 | not_relevant | 0 | 0 | The paper reports a dose-response relationship for silver nanoparticles (AgNPs) on Agrobacterium, not for calcium chloride; calcium chloride is used as a standard reagent in the transformation protocol, and no PD parameters are derived for it. |
-| PGx | Bodnár_2025 | not_relevant | 0 | 0 | The paper focuses on the formulation of an ABCG2 inhibitor using calcium chloride as a crosslinking agent, not on the pharmacokinetics or pharmacodynamics of calcium chloride itself, and does not report any pharmacogenomic effects. |
-| popPK | Carrillo-López_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium-sensing receptor activation by lanthanum, not a pharmacokinetic study of calcium chloride. |
+| PGx | Bodnár_2025 | not_relevant | 0 | 0 | The paper focuses on the formulation of an ABCG2 inhibitor using alginate microcapsules and does not report pharmacogenomic effects on the PK/PD of calcium chloride. |
+| popPK | Carrillo-López_2010 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of lanthanum's effect on the calcium-sensing receptor, not a pharmacokinetic study of calcium chloride. |
 | PGx | Ciriello_2022 | not_relevant | 0 | 0 | The paper studies the effect of calcium chloride on basil plant growth and metabolism, not human pharmacokinetics or pharmacodynamics. |
 | PGx | Colosi_2014 | not_relevant | 0 | 0 | The paper describes the fabrication of tissue engineering scaffolds using calcium chloride as a cross-linking agent, not the pharmacokinetics or pharmacodynamics of calcium chloride as a drug in relation to genetic variants. |
-| PGx | Gress_2016 | not_relevant | 0 | 0 | The paper studies the protective effects of a plant extract (Dig1) against Roundup toxicity in rats and does not involve calcium_chloride or any pharmacogenomic analysis. |
-| popPK | Hill_2007 | irrelevant | 0 | 0 | The study investigates the diffusion and mineralization of calcium chloride in hydrogels (in-vitro/materials science), not the pharmacokinetics of the drug in a biological system. |
-| popPK | Liu_2013 | irrelevant | 0 | 0 | The paper describes the fabrication of microfluidic particles using calcium chloride as a cross-linking agent, not a pharmacokinetic study of the drug. |
-| popPK | Menon_1986 | irrelevant | 0 | 0 | The paper is a cytochemical study on epidermal enzymes where calcium chloride is used only as a buffer component, not as a subject drug for pharmacokinetic analysis. |
-| PGx | Morrow_1986 | not_relevant | 0 | 0 | The paper investigates the effect of calcium chloride on ethanol sensitivity in genetically distinct mouse lines, rather than how a gene variant alters the pharmacokinetics or pharmacodynamics of calcium chloride itself. |
-| popPK | Noguchi_2024 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of piperine and piperlongumine on coronary artery contraction, using calcium chloride only as a reagent to induce contraction, not as the subject drug for pharmacokinetic analysis. |
-| popPK | Pantan_2014 | irrelevant | 0 | 0 | The study investigates the vasorelaxant effects of 16-O-acetyldihydroisosteviol, using calcium chloride only as a tool to induce contraction, and contains no pharmacokinetic parameters. |
+| PGx | Gress_2016 | not_relevant | 0 | 0 | The paper investigates the protective effects of a plant extract (Dig1) against Roundup toxicity in rats and does not report any pharmacogenomic effects on the PK/PD of calcium_chloride. |
+| popPK | Hill_2007 | irrelevant | 0 | 0 | The study investigates the diffusion and mineralization of calcium chloride in hydrogels (in vitro materials science), not the pharmacokinetics of the drug in a biological system. |
+| popPK | Liu_2013 | irrelevant | 0 | 0 | The paper describes the fabrication of microfluidic particles using calcium chloride as a cross-linking agent, not a pharmacokinetic study of calcium chloride. |
+| popPK | Menon_1986 | irrelevant | 0 | 0 | The paper is a cytochemical study on enzyme localization in epidermis where calcium chloride is used only as a buffer component, not as a subject drug for PK analysis. |
+| PGx | Morrow_1986 | not_relevant | 0 | 0 | The paper investigates the effect of calcium chloride on ethanol sensitivity in mice, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of calcium chloride itself. |
+| popPK | Noguchi_2024 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of piperine and piperlongumine on porcine coronary arteries, using calcium chloride only as a reagent to induce contraction, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Pantan_2014 | irrelevant | 0 | 0 | The study investigates the vasorelaxant effects of 16-O-acetyldihydroisosteviol in rat aorta, using calcium chloride only as a tool to induce contraction, not as the subject drug for pharmacokinetic analysis. |
 | PD | Pantan_2014 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of 16-O-acetyldihydroisosteviol (ADIS), not calcium chloride; calcium chloride is used only as a tool compound to induce contraction. |
-| popPK | Sharon_2021 | irrelevant | 0 | 0 | The study focuses on the in-vitro release and cytotoxicity of topotecan from PLGA spheres where calcium chloride is a co-loaded excipient, not a pharmacokinetic study of calcium chloride. |
-| popPK | Song_2026 | irrelevant | 0 | 0 | The paper is an ecotoxicology study on aquatic plants and does not report pharmacokinetic parameters for calcium chloride. |
-| popPK | Thomas_2018 | irrelevant | 0 | 0 | The paper describes the synthesis of calcium alginate microspheres using calcium chloride as a crosslinking agent, not a pharmacokinetic study of calcium chloride as a drug. |
-| popPK | Turnbull_2014 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic investigation of engineered cardiac tissues, not a pharmacokinetic study, and calcium chloride is used as a pharmacological agent rather than the subject of PK analysis. |
+| popPK | Sharon_2021 | irrelevant | 0 | 0 | The study is an in-vitro formulation and cytotoxicity study of topotecan co-loaded with calcium chloride, not a pharmacokinetic study of calcium chloride. |
+| popPK | Song_2026 | irrelevant | 0 | 0 | The study is an ecotoxicology assessment of deicers on aquatic plants, not a pharmacokinetic study of calcium chloride in an animal or human subject. |
+| popPK | Thomas_2018 | irrelevant | 0 | 0 | The paper describes the use of calcium chloride as a crosslinking agent for alginate microspheres, not as a drug subject to pharmacokinetic analysis. |
+| popPK | Turnbull_2014 | irrelevant | 0 | 0 | The study is an in vitro functional biology paper using calcium chloride as a pharmacological agent to assess dose-response (EC50), not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Yang_2022 | not_relevant | 0 | 0 | The paper studies the effect of Gukang Capsules on CYP450 enzymes, not the effect of a gene variant on the PK/PD of calcium chloride. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 11:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 08:34 UTC</sub>

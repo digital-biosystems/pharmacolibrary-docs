@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Ever since its discovery and availability for sale and use in the late 1940s, lidocaine has become an exceptionally commonly used medication [T583]. In particular, lidocaine's principal mode of action in acting as a local anesthetic that numbs the sensations of tissues means the agent is indicated for facilitating local anesthesia for a large variety of surgical procedures [F4349, L5930, L5948]. It ultimately elicits its numbing activity by blocking sodium channels so that the neurons of local tissues that have the medication applied on are transiently incapable of signaling the brain regarding sensations [F4349, L5930, L5948]. In doing so, however, it can block or decrease muscle contractile, resulting in effects like vasodilation, hypotension, and irregular heart rate, among others [F4349, L5930, L5948]. As a result, lidocaine is also considered a class Ib anti-arrhythmic agent [L5930, L5948, F4468]. Nevertheless, lidocaine's local anesthetic action sees its use in many medical situations or circumstances that may benefit from its action, including the treatment of premature ejaculation [A177625].
+Lidocaine is a local anesthetic used to numb pain, for example on skin, in the mouth and throat, and for burns, and it is also used as an antiarrhythmic for heart rhythm problems such as ventricular fibrillation and tachycardia. It is widely used worldwide, is listed among WHO essential medicines, and is also approved for veterinary use.
 
-Regardless, lidocaine is currently available as a relatively non-expensive generic medication that is written for in millions of prescriptions internationally on a yearly basis. It is even included in the World Health Organization's List of Essential Medicines [L6055].
-
-**Indication.** Lidocaine is an anesthetic of the amide group indicated for production of local or regional anesthesia by infiltration techniques such as percutaneous injection and intravenous regional anesthesia by peripheral nerve block techniques such as brachial plexus and intercostal and by central neural techniques such as lumbar and caudal epidural blocks [F4349, L5930].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q216935](https://www.wikidata.org/wiki/Q216935) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -26,8 +24,8 @@ Regardless, lidocaine is currently available as a relatively non-expensive gener
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Bursi_2017_reference](drugs/drug_lidocaine/Lidocaine_Bursi2017_reference.md) | held back | 1-compartment general linear | 3 (+5 cov.) | Bursi R et al., Evaluation of the Population Pharmacoki…, European journal of drug me… (2017) | [10.1007/s13318-017-0400-7](https://doi.org/10.1007/s13318-017-0400-7) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Reichel_1998_reference](drugs/drug_lidocaine/Lidocaine_Reichel1998_reference.md) | held back | 1-compartment, IV | 1 | Reichel C et al., The lignocaine metabolite (MEGX) liver…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00829.x](https://doi.org/10.1046/j.1365-2125.1998.00829.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q63 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Bursi_2017_reference](drugs/drug_lidocaine/Lidocaine_Bursi2017_reference.md) | — | general linear (no model) | 3 (+5 cov.) | Bursi R et al., Evaluation of the Population Pharmacoki…, European journal of drug me… (2017) | [10.1007/s13318-017-0400-7](https://doi.org/10.1007/s13318-017-0400-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Reichel_1998_reference](drugs/drug_lidocaine/Lidocaine_Reichel1998_reference.md) | — | parent + metabolite (no model) | 1 | Reichel C et al., The lignocaine metabolite (MEGX) liver…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00829.x](https://doi.org/10.1046/j.1365-2125.1998.00829.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [He_2025_reference](drugs/drug_lidocaine/Lidocaine_He2025_reference.md) | — | general linear (no model) | 1 | He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, development an… (2025) | [10.2147/DDDT.S485389](https://doi.org/10.2147/DDDT.S485389) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2021_0_3_solution_iv](drugs/drug_lidocaine/Lidocaine_Kim2021_0_3_solution_iv.md) | — | general linear (no model) | 4 | Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021) | [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2021_0_3_solution_sc](drugs/drug_lidocaine/Lidocaine_Kim2021_0_3_solution_sc.md) | — | general linear (no model) | 4 | Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021) | [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203) |
@@ -76,13 +74,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | brain | <sub>“…lidocaine crosses the blood-brain…”</sub> | prose |
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | kidney | `ABCB1` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | lung | <sub>“…quickly absorbed from the upper airway, tracheobronchial tree, and alveoli…”</sub> | prose |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skin | <sub>“…readily absorbed across mucous membranes and damaged skin…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ORM1` unknown, `ORM2` unknown | DrugBank actor |
@@ -90,7 +88,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` metabolism/substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` metabolism/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excretion of unchanged lidocaine and its metabolites occurs predominantly via the kidney…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EGFR (target), SCN10A (inhibitor), SCN11A (blocker), SCN4A (unknown), SCN5A (inhibitor), SCN5A (target), SCN9A (inhibitor).</sub>
 

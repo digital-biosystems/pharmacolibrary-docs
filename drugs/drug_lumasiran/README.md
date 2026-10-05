@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Lumasiran is a small interfering RNA used in the treatment of primary hyperoxaluria type 1 (PH1).[L23554] This condition, caused by a deficiency in the enzyme alanine-glyoxylate aminotransferase, leads to an accumulation of oxalate, causing calcium crystal formation.[L23554] These patients experience frequent kidney stones, nephrocalcinosis, and renal failure.[L23554]
+Lumasiran, a small interfering RNA medicine, is used to treat primary hyperoxaluria. It is authorised in the European Union.
 
-Oxlumo, producted by Alnylam Pharmaceuticals, represents the first approved treatment for PH1.[L23394] Prior to this approval, therapy consisted of symptomatic treatment such as hyperhydration, inhibitors of crystallization, [pyridoxine], and renal transplant.[L23554]
-
-Lumasiran was granted FDA approval on 23 November 2020.[L23394]
-
-**Indication.** Lumasiran is indicated for the treatment of primary hyperoxaluria type 1 (PH1) to lower urinary and plasma oxalate levels in pediatric and adult patients.[L23394,L23519,L43413]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q100692768](https://www.wikidata.org/wiki/Q100692768) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…7-26% of a dose of lumasiran is recovered in the urine as the unmetabolized parent compoun…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Hydroxyacid oxidase 1 mRNA (antisense oligonucleotide).</sub>
 

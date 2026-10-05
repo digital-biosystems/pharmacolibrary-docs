@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Theodrenaline is under investigation in clinical trial NCT01311414 (Effect of Cafedrine/Theodrenaline and Urapidil on Cerebral Oxygenation).
+Theodrenaline is a chemical compound classified as a cardiac stimulant among adrenergic agents, and has been described as an antihypertensive drug. It is considered investigational and is not an authorised medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7782198](https://www.wikidata.org/wiki/Q7782198) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

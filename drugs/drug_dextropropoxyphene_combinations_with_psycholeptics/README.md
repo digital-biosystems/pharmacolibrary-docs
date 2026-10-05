@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+This combination of the opioid painkiller dextropropoxyphene with psycholeptics was used to relieve pain. It is no longer available because dextropropoxyphene was withdrawn from the market after safety concerns, including risks to the heart in overdose.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

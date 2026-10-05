@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Arbutamine, administered through a closed-loop, computer-controlled drug-delivery system, is indicated to elicit acute cardiovascular responses, similar to those produced by exercise, in order to aid in diagnosing the presence or absence of coronary artery disease in patients who cannot exercise adequately .
+Arbutamine is a cardiotonic beta-adrenergic agonist, a cardiac stimulant used for heart conditions. It has approved status, but no European Union authorisation is recorded, so it appears to be only limited in use.
 
-**Indication.** Used to elicit acute cardiovascular responses (cardiac stumulant), similar to those produced by exercise, in order to aid in diagnosing the presence or absence of coronary artery disease (CAD) in patients who cannot exercise adequately.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4784959](https://www.wikidata.org/wiki/Q4784959) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

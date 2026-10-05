@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Phenelzine, with the formula β-phenylethylhydrazine, is a monoamine oxidase inhibiting antidepressant that is effective in the treatment of panic disorder and social anxiety disorder.[A15753] It was developed by Parke Davis and originally FDA approved on June 9th, 1961. It is currently approved under prescription by the name of Nardil.
+Phenelzine is a monoamine oxidase inhibitor antidepressant used to treat depression, including neurotic disorders. It remains an approved medicine, though it is not authorised centrally in the European Union and is used relatively rarely.
 
-**Indication.** Phenelzine is indicated for the treatment of nonendogenous, neurotic or atypical depression for patients that do not tolerate other forms of therapy.[L1356] 
-
-Atypical depression has a high prevalence rate, starts in early life, tends to last longer, is more likely to occur in people with bipolar disorder, has a high comorbidity with anxiety disorder and carries more risk of suicidal behavior. It is important to specify the atypical feature to predict the clinical course of depression and hence generate the best treatment and service. The featuring symptoms of the atypical feature include mood reactivity, two or more of this symptoms: 1) increased appetite, 2) increased sleep, 3) leaden paralysis and 4) interpersonal rejection sensitivity and should not have melancholic or catatonic features of depression.[A31917]
-
-Neurotic depression is a depression of an emotionally unstable person. It is a secondary condition to major personality disorder, neuroses and drug use disorders. Likewise, a primary depression with a family history of depression spectrum disease would fit in this category.[A31922]
-
-A nonendogenous depression is characterized by a disturbance in mood and general outlook. The physical symptoms tend to be less severe and it often occurs in response to stressful life events that keep occurring over a large period of time generating a continuous stress in the daily living.[A31924]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1747559](https://www.wikidata.org/wiki/Q1747559) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,13 +30,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor, `MAOA` substrate/target, `MAOB` substrate/target | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inducer, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `CYP3A7` inhibitor, `MAOA` substrate/target | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate/target | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` substrate/target | DrugBank actor |
-| excretion | kidney | <sub>“…79% of the dose found in the urine in the first 96 hours…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABAT (inhibitor), AOC3 (inhibitor), GAD65 (inhibitor), GPT (inhibitor), GPT2 (inhibitor).</sub>
 

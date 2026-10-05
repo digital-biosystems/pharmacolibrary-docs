@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Ferric maltol is an iron(III) atom complexed with 3 maltol molecules to increase the bioavailability compared to iron(II), without depositing it in the duodenum as insoluble ferric hydroxide and phosphate.[A189288] Ferric maltol has been described in literature since at least the late 1980s as a potential treatment for iron deficiency.[A189291]
+Ferric maltol is an oral trivalent iron preparation used to treat iron-deficiency anemia. It is an approved medicine, authorised in the European Union.
 
-Ferric maltol was initially granted FDA approval on July 25, 2019, for use in adults. [L10974] On December 22, 2025, the FDA expanded this indication to include pediatric patients aged 10 years and older. [L54873,L54878]
-
-**Indication.** Ferric maltol is indicated for the treatment of iron deficiency in adults and pediatric patients aged 10 years and older.[L10974,L54873]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27283748](https://www.wikidata.org/wiki/Q27283748) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,11 +30,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Ferric maltol dissociates in the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `UGT1A6` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A6` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…39.8-60% of an oral dose of ferric maltol is excreted in the urine as a glucuronide conjug…”</sub> | prose |
-| excretion | small intestine | <sub>“…unabsorbed ferric maltol is eliminated in the feces…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ITGB3 (substrate), SLC11A2 (substrate).</sub>
 

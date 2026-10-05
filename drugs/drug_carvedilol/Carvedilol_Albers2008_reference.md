@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Albers_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The carvedilol absorption rate constant kabs is reported as 0.62 with unit 'l h -1', a dimension mismatch for a first-order rate constant, so the record was rejected.**
+**The carvedilol absorption rate constant kabs is recorded as 0.62 l h-1, a dimensionally wrong unit for a first-order rate constant (should be h-1), so the record was rejected.**
 
-In the Albers_2008 paediatric carvedilol model, kabs is defined as an absorption rate constant, whose unit must be reciprocal time (h^-1), but the record carries the unit 'l h -1' (litres per hour), which does not match that dimension. This unit could not be converted to SI, so the parameter reached the model without an SI value and the dimension check on this structural parameter failed. The other parameters (CL/F 37.6 l/h, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l/h, tlag 0.15 h) are dimensionally consistent. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
+In the Albers_2008 paediatric congestive heart failure model, kabs is listed with unit 'l h -1', which does not match a rate constant's dimension of inverse time; the reported unit could not be converted to SI, so the parameter reached the record without an SI value. A second reader gave 2.67 for this parameter instead of the recorded 0.62, disagreeing with the extracted value. The other parameters (CL/F 37.6 l h-1, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l h-1, tlag 0.15 h) show no stated problems. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q7: this record has none, the second reading 2.67. That field does not shape the model.
 

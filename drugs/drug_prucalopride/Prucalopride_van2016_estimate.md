@@ -4,7 +4,7 @@
 
 # prucalopride — `Prucalopride_van2016_estimate`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 The parameter labelled K a1 (h−1) with value 0.792 h−1 is described as the half-life of the absorption phase, so the reported unit and meaning conflict in dimensions, triggering the structural-parameter mismatch. The record also omits prucalopride clearance: a second reader extracted 22.9 l h−1 for it, while this record has no value. The second reader further disagrees on k a2, reading no value where this record gives 3.87 h−1, and on the precision of Q, V2 and V3, for which this record has no relative standard errors while the second reader reports 15%, 3.3% and 7.9% respectively. Extracted — prucalopride: V2 446, Q 16.9, V3 248, t1/2ka 0.792 h−1, k21 3.87 h−1, MTT 0.734 h, Fab 0.858.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clpru‐usa‐12 (l h-1)a: this record has none, the second reading 22.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clpru‐usa‐12 (l h-1)a: this record has none, the second reading 22.9; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:30.705364+00:00) predates the upstream re-run (2026-10-04 16:44:43.154167+00:00). Current validate status: `needs_review`.
 
 ## Citation
 van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016)
   ·  DOI: [10.1002/prp2.236](https://doi.org/10.1002/prp2.236)
 
 ## Model component
-<dbs-pgx drug="prucalopride" model-id="Prucalopride_van2016_estimate" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prucalopride" model-id="Prucalopride_van2016_estimate" status="needs_review" stale="true" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -37,14 +39,14 @@ van Schaick E et al., Development of a population pharmacokin…, Pharmacology r
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V2 (l)a | `Q64` · V2 | 446 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | prp2236-tbl-0003:row4:col1 | — | not captured |
-| Q (l h−1)a | `Q30` · Q | 16.9 | not captured | not captured | not captured | not captured | llm (0.6) | prp2236-tbl-0003:row5:col1 | — | not captured |
-| V3 (l)a | `Q77` · V3 | 248 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | prp2236-tbl-0003:row6:col1 | — | not captured |
-| K a1 (h−1) | `Q95` · t1/2ka | 0.792 | h−1 | not captured | [1] / [h] | not captured | llm (0.6) | prp2236-tbl-0003:row7:col1 | — | not captured |
+| V2 (l)a | `Q64` · V2 | 446 | L | 0.446 | L | not captured | llm_confirmed (0.6) | prp2236-tbl-0003:row4:col1 | — | not captured |
+| Q (l h−1)a | `Q30` · Q | 16.9 | L/h | 4.694444444444444e-06 | L/h | not captured | llm (0.6) | prp2236-tbl-0003:row5:col1 | — | not captured |
+| V3 (l)a | `Q77` · V3 | 248 | L | 0.248 | L | not captured | llm_confirmed (0.6) | prp2236-tbl-0003:row6:col1 | — | not captured |
+| K a1 (h−1) | `Q49` · kabs | 0.792 | h−1 | 0.00022 | [1] / [h] | not captured | llm (0.6) | prp2236-tbl-0003:row7:col1 | — | not captured |
 | K a2 (h−1) | `Q302` · k21 | 3.87 | h−1 | 0.001075 | [1] / [h] | not captured | llm (0.6) | prp2236-tbl-0003:row8:col1 | — | not captured |
 | MTIME (h) | `Q81` · MTT | 0.734 | h | not captured | [h] | not captured | llm (0.6) | prp2236-tbl-0003:row9:col1 | — | not captured |
 | F1 | `Q40` · Fab | 0.858 | not captured | not captured | not captured | not captured | exact (1.0) | prp2236-tbl-0003:row10:col1 | — | not captured |
@@ -59,13 +61,14 @@ van Schaick E et al., Development of a population pharmacokin…, Pharmacology r
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'CLPRU‐USA‐12 (l h−1)a' — extend the ontology if this is a real PK parameter (source ['prp2236-tbl-0003:row2:col1'])
 - dropped unlinked row (NIL): 'CLSPD555‐303 (l h−1)a' — extend the ontology if this is a real PK parameter (source ['prp2236-tbl-0003:row3:col1'])
-- unit_dimension_mismatch: 'K a1 (h−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
+- implicit units: 'V2 (l)a' → L (from the paper text: "The table caption for Table 3 lists 'CL, clearance; CV, coefficient of variation; F1, bioavaila' but the text explicitly")
+- implicit units: 'Q (l h−1)a' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Q in the provided text or table caption. Intercompartmental clearance i')
+- implicit units: 'V3 (l)a' → L (from the popPK convention: 'The paper does not explicitly state the unit for V3 in the provided text or table caption. Volume of distribution is con')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=prucalopride
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- status held at route_to_review — not promoted
 - population split: 'estimate' subgroup of van_2016 (paper reports 3 populations: estimate, pru‐usa‐12, spd555‐303)
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - companion parameter table 4 transcribed (29 record(s))
@@ -73,19 +76,18 @@ van Schaick E et al., Development of a population pharmacokin…, Pharmacology r
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.625 (10/16 fields) | 6 |
+| `gpt-oss:120b` | partly confirmed | 0.667 (10/15 fields) | 5 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[clpru‐usa‐12 (l h-1)a]` | not captured | 22.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a1].parameter_id` | Q95 | Q49 | mismatch |
 | `gpt-oss:120b` | `parameters[k a2]` | 3.87 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q (l h-1)a].rse_percent` | not captured | 15 | mismatch |
 | `gpt-oss:120b` | `parameters[v2 (l)a].rse_percent` | not captured | 3.3 | mismatch |
@@ -106,12 +108,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['prp2236-tbl-0003:row5:col1'] |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['prp2236-tbl-0003:row8:col1'] |
-| C5_dimension_Q95 | fail | 1 / [time] | h−1 | not captured | not captured | ['prp2236-tbl-0003:row7:col1'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['prp2236-tbl-0003:row5:col1'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['prp2236-tbl-0003:row4:col1'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | not captured | not captured | not captured | ['prp2236-tbl-0003:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['prp2236-tbl-0003:row7:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['prp2236-tbl-0003:row4:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['prp2236-tbl-0003:row6:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q64 | pass | volume within physiological range | 446 L | not captured | not captured | ['prp2236-tbl-0003:row4:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -125,9 +128,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -136,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 22:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 16:44 UTC</sub>

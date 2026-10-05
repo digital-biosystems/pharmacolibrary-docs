@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Nadolol is a nonselective beta adrenal receptor blocker that is used to lower blood pressure.[L7922,L7925] Nonselective beta adrenal receptor blockers may no longer be first line in the treatment of hypertension as newer generations of beta adrenal receptor blockers have higher selectivity and offer better rates of adverse effects.[A34177]
+Nadolol is a non-selective beta blocker used to treat high blood pressure, angina, and other heart conditions such as long QT syndrome. It is an approved medicine, used mainly in cardiovascular care, though it is not authorised in the European Union.
 
-Nadolol was granted FDA approval on 10 December 1979.[L7922]
-
-**Indication.** Nadolol is indicated to treat angina pectoris and hypertension.[L7922] Another product formulated with [bendroflumethiazide] is indicated to treat hypertension.[L7925]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424952](https://www.wikidata.org/wiki/Q424952) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -60,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ORM1` binder | DrugBank actor |
-| excretion | bile duct | <sub>“…15% in the feces after 72 hours…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` substrate, `SLC47A2` substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` substrate | DrugBank actor |
 

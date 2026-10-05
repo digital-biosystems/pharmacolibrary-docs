@@ -10,19 +10,9 @@
 
 ## About
 
-**Description.** Meloxicam is a nonsteroidal anti-inflammatory drug (NSAID) used to relieve various types of pain, including pain caused by musculoskeletal conditions, osteoarthritis, and rheumatoid arthritis.[A190189] With a longer half-life than most other NSAIDS, it is a favorable option for those who require once-daily dosing. Meloxicam is available in oral, transdermal, and intravenous formulations. It is a preferential COX-2 inhibitor, purportedly reducing the risk of adverse gastrointestinal tract effects, however, this is a topic of controversy.[A190198,A190201]
+Meloxicam is a nonsteroidal anti-inflammatory drug used to treat osteoarthritis and other forms of arthritis. It is an approved medicine, also approved for veterinary use, and is widely used for inflammatory joint disease.
 
-**Indication.** Meloxicam on its own is indicated for:
-
-- the symptomatic treatment of arthritis and osteoarthritis. [L11398]
-- the pauciarticular and polyarticular course of Juvenile Rheumatoid Arthritis (JRA) in patients aged 2 years old or above. [L11398]
-- the management of moderate-to-severe pain, alone or in combination with non-NSAID analgesics. [L53323]
-
-Meloxicam, in combination with [bupivacaine], is indicated for postsurgical analgesia in adult patients for up to 72 hours following soft tissue surgical procedures, foot and ankle procedures, and other orthopedic procedures in which direct exposure to articular cartilage is avoided.[L50427]
-
-Meloxicam, in combination with [Rizatriptan] is indicated for the acute treatment of migraine with or without aura in adults.[L52405]
-
-Off-label uses include the treatment of dental or post-surgical pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414028](https://www.wikidata.org/wiki/Q414028) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,11 +33,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…The absolute bioavailability oral capsules after a dose was 89%…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…About 1.6% of the parent drug is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` binder | DrugBank actor |
 | excretion | liver | `ABCC4` binder | DrugBank actor |
 

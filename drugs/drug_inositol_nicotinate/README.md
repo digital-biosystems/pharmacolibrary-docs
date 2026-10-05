@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Inositol nicotinate, also known as Inositol hexaniacinate/hexanicotinate or "no-flush niacin", is a niacin ester and vasodilator. It is used in food supplements as a source of niacin (vitamin B3), where hydrolysis of 1 g (1.23 mmol) inositol hexanicotinate yields 0.91 g nicotinic acid and 0.22 g inositol. Niacin exists in different forms including nicotinic acid, nicotinamide and other derivatives such as inositol nicotinate. It is associated with reduced flushing compared to other vasodilators by being broken down into the metabolites and inositol at a slower rate. Nicotinic acid plays an essential role in many important metabolic processes and has been used as lipid-lowering agent. Inositol nicotinate is prescribed in Europe under the name Hexopal as a symptomatic treatment for severe intermittent claudication and Raynaud’s phenomenon.
+Inositol nicotinate is a vasodilator of the nicotinic acid group, once used to improve peripheral blood flow. It has been withdrawn and is no longer in use.
 
-**Indication.** Indicated as a dietary supplement for the source of niacin. Has been investigated for potential beneficial effects on serum lipids. In Europe, inositol hexanicotinate is indicated as a patented drug known as Hexopal, which is therapeutically indicated for the symptomatic relief of severe intermittent claudication and Raynaud’s phenomenon.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6036641](https://www.wikidata.org/wiki/Q6036641) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,10 +30,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed from stomach and upper small intestines into the bloodstream…”</sub> | prose |
-| absorption | stomach | <sub>“…absorbed from stomach and upper small intestines…”</sub> | prose |
-| metabolism | blood | <sub>“…hydrolysis by plasma esterases…”</sub> | prose |
-| excretion | small intestine | <sub>“…Unabsorbed inositol nicotinate is detected in feces…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | stomach | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP5F1B (inhibitor), DGAT2 (inhibitor), HCAR2 (target), HCAR3 (target), SLC5A8 (substrate).</sub>
 

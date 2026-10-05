@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Hydrochlorothiazide is the most commonly prescribed thiazide diuretic.[A185138] It is indicated to treat edema and hypertension.[A185138,L8447,L8450] Hydrochlorothiazide use is common but declining in favour of angiotensin converting enzyme inhibitors.[A185138] Many combination products are available containing hydrochlorothiazide and angiotensin converting enzyme inhibitors[L8390,L8423] or angiotensin II receptor blockers.[L7426,L7459]
+Hydrochlorothiazide is a thiazide diuretic used to treat high blood pressure, heart failure, and fluid retention conditions such as nephrotic syndrome and nephrogenic diabetes insipidus. It is widely used, appears on the WHO list of essential medicines, and is available alone and in many fixed combinations with blood pressure drugs.
 
-Hydrochlorothiazide was granted FDA approval on 12 February 1959.[L8444]
-
-**Indication.** Hydrochlorothiazide is indicated alone or in combination for the management of edema associated with congestive heart failure, hepatic cirrhosis, nephrotic syndrome, acute glomerulonephritis, chronic renal failure, and corticosteroid and estrogen therapy.[L8447,L8450] Hydrochlorothiazide is also indicated alone or in combination for the management of hypertension.[A185138,L8447,L8450,L45663]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423930](https://www.wikidata.org/wiki/Q423930) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

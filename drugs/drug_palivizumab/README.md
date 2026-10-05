@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Humanized monoclonal antibody (IgG1k) produced by recombinant DNA technology, directed to an epitope in the A antigenic site of the F protein of respiratory syncytial virus (RSV). Synagis is a composite of human (95%) and murine (5%) antibody sequences. The human heavy chain sequence was derived from the constant domains of human IgG1 and the variable framework regions of the VH genes Cor (1) and Cess (2). The human lightchain sequence was derived from the constant domain of Ck and the variable framework regions of the VL gene K104 withJk-4. Palivizumab is expressed from a stable murine (mouse) myeloma cell line (NS0). Palivizumab is composed of to heavy chains (50.6 kDa each) and two light chains (27.6 kDa each), contains 1-2% carbohydrate by weight and has a molecular weight of 147.7 kDa +/- 1 kDa (MALDI-TOF)
+Palivizumab is a monoclonal antibody used to help prevent serious respiratory syncytial virus infection, particularly in children at high risk such as those with heart or lung disease. It is an approved medicine and is authorised in the European Union, where it is used widely as a preventive treatment during the RSV season.
 
-**Indication.** For prophylaxis of respiratory diseases casued by respiratory syncytial virus.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412765](https://www.wikidata.org/wiki/Q412765) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -1,22 +1,36 @@
 {
+ "dose_source": "paper",
  "model_id": "Doxycycline_Toutain2025_reference",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "molar_masses": {
+  "central.C": 0.4444346
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1400.0
+ ],
  "parameters": {
-  "Cl": 5.0555555555555555e-06,
+  "Cl": 5.036111111111111e-06,
   "F": 1.0,
-  "VdPerKg": 0.0019355196668566332,
+  "MM": 0.4444346,
+  "VdPerKg": 0.000192,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0014,
+  "k12": 0.0017057291666666668,
+  "k21": 0.000550420168067227,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 660.0000000662014
+ },
  "reference_peaks": {
-  "central.C": 0.0007298806678585015
+  "central.C": 0.007821237744238962
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
 }

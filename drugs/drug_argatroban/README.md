@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Argatroban is a direct, selective thrombin inhibitor. The American College of Cardiologists (ACC) recommend using bivalirudin or argatroban in patients who have had, or at risk for, heparin induced thrombocytopenia (HIT) and are undergoing percutaneous coronary intervention. Argatroban is a non-heparin anticoagulant shown to both normalize platelet count in patients with HIT and prevent the formation of thrombi. Parental anticoagulants must be stopped and a baseline activated partial thromboplastin time must be obtained prior to administering argatroban.
+Argatroban is a direct thrombin inhibitor used as an anticoagulant, mainly in patients who cannot receive heparin, such as those with heparin-induced thrombocytopenia. It is an approved anticoagulant that is used in clinical practice, though it is not authorised in the European Union.
 
-**Indication.** Argatroban is indicated for prevention and treatment of thrombosis caused by heparin-induced thrombocytopenia (HIT). It is also indicated for use in patients with, or at risk for, HIT who are undergoing percutaneous coronary intervention.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27074501](https://www.wikidata.org/wiki/Q27074501) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,8 +50,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted primarily in the feces (65%), presumably through biliary secretion…”</sub> | prose |
-| excretion | kidney | <sub>“…22% is eliminated via urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F2 (inhibitor).</sub>
 

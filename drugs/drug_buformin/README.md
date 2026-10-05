@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Buformin is an anti-diabetic drug of the biguanide class, chemically related to metformin and phenformin. It was withdrawn from the market in most countries due to a high risk of causing lactic acidosis.
+Buformin is a biguanide anti-diabetic medication used to lower blood glucose in diabetes. It has been withdrawn from the market, reportedly because of safety concerns including lactic acidosis risk.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q715104](https://www.wikidata.org/wiki/Q715104) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 16:26 | 4:51 | 0/0/0 | 1/0/0 | 0/0/0 | 47,858/1,942 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 22:22 | 0:36 | 0/0/0 | 0/1/0 | 0/0/0 | 18,785/812 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -26,14 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_ATP](drugs/drug_buformin/pd_Ding_2020_ATP.md) | ATP production ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_CCK_8](drugs/drug_buformin/pd_Ding_2020_CCK_8.md) | cell viability ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_G1_phase](drugs/drug_buformin/pd_Ding_2020_G1_phase.md) | cell cycle distribution ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_LDH](drugs/drug_buformin/pd_Ding_2020_LDH.md) | LDH activity ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_ROS](drugs/drug_buformin/pd_Ding_2020_ROS.md) | reactive oxygen species ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_colony_count](drugs/drug_buformin/pd_Ding_2020_colony_count.md) | colony formation ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_invaded_cells](drugs/drug_buformin/pd_Ding_2020_invaded_cells.md) | cellular invasion ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">in vitro</span> | [Ding_2020_lactate](drugs/drug_buformin/pd_Ding_2020_lactate.md) | lactate production ← buformin · inhibition effect | — | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2003_lactate](drugs/drug_buformin/pd_Wang_2003_lactate.md) | blood lactate concentration ← buformin · direct Emax (saturable) effect | — | Wang DS et al., Involvement of organic cation transport…, Molecular pharmacology (2003) | [10.1124/mol.63.4.844](https://doi.org/10.1124/mol.63.4.844) |
 
 ## ADME sites
 
@@ -64,28 +59,28 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Takanohashi_2007.pdf` | Takanohashi T et al., Prediction of the metabolic interaction…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.409](https://doi.org/10.2133/dmpk.22.409) | [18159128](https://www.ncbi.nlm.nih.gov/pubmed/18159128) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-09-15T16:26:04.467809+00:00</sub>
+<sub>queue written 2026-10-04T22:22:15.784251+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ding_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on osteosarcoma cell lines and does not report any pharmacokinetic parameters for buformin. |
-| popPK | Jeong_2021 | irrelevant | 0 | 0 | The study focuses on metformin pharmacokinetics, not buformin. |
+| popPK | Jeong_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of metformin, not buformin. |
 | PD | Jeong_2021 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) and allometric scaling of metformin across nine species, with no analysis of pharmacodynamic (PD) or exposure-response relationships. |
 | popPK | Kilgore_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of anti-proliferative effects in cancer cells and does not report pharmacokinetic parameters. |
 | popPK | Lu_2020 | irrelevant | 0 | 0 | The paper describes a buformin-mimicking polymer for gene delivery and does not report any pharmacokinetic parameters for buformin. |
 | PD | Lu_2020 | not_relevant | 3 | 2 | The paper reports a qualitative comparison of IC50 values for a polymer conjugate (CBA-Bu) versus a control, but does not provide a formal exposure-response model, numeric PD parameters for buformin itself, or a derivable concentration-effect curve. |
 | popPK | Mori_1997 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of buformin on alanine metabolism in isolated hepatocytes, not its pharmacokinetic disposition parameters. |
 | PD | Mori_1997 | not_relevant | 2 | 1 | The paper reports a qualitative inhibitory effect of a single concentration (0.1 mM) of buformin on lipid synthesis in isolated hepatocytes, but does not provide a dose-response curve or numeric PD parameters (e.g., IC50, Emax). |
-| popPK | Sam_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for metformin, while buformin is used only as an internal standard for the analytical method. |
+| popPK | Sam_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin, not buformin. |
 | PD | Sam_2017 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of metformin and the effect of SLC22A1 polymorphisms on PK and clinical outcomes (weight, HbA1c), but it does not report a pharmacodynamic model or numeric exposure-response parameters (e.g., Emax, EC50) for buformin or metformin. |
 | popPK | Scheen_1995 | irrelevant | 0 | 0 | The paper is a review of drug interactions and does not report original quantitative pharmacokinetic parameters for buformin. |
 | PD | Scheen_1995 | not_relevant | 0 | 0 | The text is a general review of drug interactions in diabetes and mentions buformin only as a withdrawn biguanide, providing no pharmacodynamic data, exposure-response analysis, or numeric parameters. |
-| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving nateglinide and does not report pharmacogenomic effects on buformin. |
+| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of nateglinide metabolism) and does not report pharmacogenomic effects (gene variants) on buformin's PK or PD parameters. |
 | popPK | Tikholov_1980 | irrelevant | 0 | 0 | The paper is a clinical review of metformin treatment that mentions buformin only as a comparator regarding adverse effects, without reporting any quantitative pharmacokinetic parameters. |
 | PD | Tikholov_1980 | not_relevant | 1 | 0 | The text is a qualitative review of biquanides (metformin, buformin, tenformin) and clinical outcomes, containing no numeric PD parameters, concentration-effect curves, or dose-response data. |
-| popPK | Wang_2003 | irrelevant | 0 | 0 | The study focuses on the mechanism of lactic acidosis and transporter involvement, reporting EC50 values for toxicity rather than pharmacokinetic disposition parameters (CL, V, ka) for buformin. |
+| popPK | Wang_2003 | irrelevant | 0 | 0 | The study focuses on the mechanism of lactic acidosis and transporter involvement, reporting EC50 values and lactate concentrations rather than pharmacokinetic disposition parameters (CL, V, ka) for buformin. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | The paper describes an immunochromatographic sensor for therapeutic drug monitoring and does not report any pharmacokinetic parameters for buformin. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper describes an immunochromatographic sensor for drug monitoring and reports analytical IC50 values for antibody binding, not pharmacodynamic exposure-response or dose-response relationships for the drug's biological effect. |
 | popPK | Yasuda_2002 | irrelevant | 0 | 0 | The study focuses on the mechanism of GLP-1 secretion enhancement by biguanides and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for buformin. |

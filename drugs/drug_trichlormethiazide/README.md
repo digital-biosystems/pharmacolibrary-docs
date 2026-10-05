@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A thiazide diuretic with properties similar to those of hydrochlorothiazide. (From Martindale, The Extra Pharmacopoeia, 30th ed, p830)
+Trichlormethiazide is a thiazide diuretic used to treat high blood pressure, congestive heart failure, nephrotic syndrome, and anasarka. It is an approved drug, including for veterinary use, and is available in plain, potassium-combination, and potassium-sparing combination products.
 
-**Indication.** Used in the treatment of oedema (including that associated with heart failure) and hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2072745](https://www.wikidata.org/wiki/Q2072745) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

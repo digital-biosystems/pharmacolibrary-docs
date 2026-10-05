@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tianeptine_Szafarz2018_estimate",
+ "molar_masses": {
+  "C_central": 0.436952
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  70.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 4.1313844444444446e-05,
+  "F": 1.0,
+  "MM": 0.436952,
+  "VdPerKg": 0.0007610000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "C_central": 660.0000000662025
+ },
+ "reference_peaks": {
+  "C_central": 0.0010507047630188909
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

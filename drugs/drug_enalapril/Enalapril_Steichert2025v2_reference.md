@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The enalaprilat two-compartment disposition parameters Q/F (6.38 L/h) and V2/F (108.26 L) were neither extracted nor defaulted, so only 3 of 5 expected parameters are covered and the record was held for review.**
+**The enalaprilat two-compartment model record was held back because the peripheral volume V2/F (108.26 L) was never extracted or given a value, and the apparent-parameter assumption (F=1, Fm=1, no molar correction) was judged unacceptable.**
 
-The record describes enalapril with its metabolite enalaprilat in a two-compartment structure; ktr (5.31 1/h), MTT (1.46 h), kabs (1.19 1/h), CL/F (36.39 L/h) and V1/F (223.71 L) are present, but the peripheral parameters Q/F and V2/F are missing entirely. In addition, the model builder left the lag time (Tlag) at a default instead of an explicit estimate, and used an apparent parameterization assuming F=1 and Fm=1 with no molar correction between enalapril and enalaprilat. Extracted — enalaprilat: ktr 5.31 1/h, MTT 1.46, kabs 1.19 1/h, CL/F 36.4 L/h, V1/F 224 L, Q/F 6.38 L/h, V2/F 108 L.
+Of the five expected parameters, only four were covered; V2/F, the apparent peripheral volume of distribution of enalaprilat, had no value extracted, so a library placeholder would have been used instead. The model also relies on deviations: a default Tlag instead of an explicit estimate, and bioavailability assumed to be 1 (F=1, Fm=1) without molar correction, so all reported clearances and volumes (CL/F 36.39 L/h, V1/F 223.71 L, Q/F 6.38 L/h, V2/F 108.26 L) are apparent rather than absolute. The deviation check on this apparent-parameter assumption failed adjudication, leading to the needs_review verdict. Extracted — enalaprilat: ktr 5.31 1/h, MTT 1.46, kabs 1.19 1/h, CL/F 36.4 L/h, V1/F 224 L, Q/F 6.38 L/h, V2/F 108 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -121,9 +121,9 @@ Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=enalaprilat) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['Q/F', 'V2/F'] |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -144,7 +144,7 @@ Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_enalapril/Enalapril_Steichert2025v2_reference/Enalapril_Steichert2025v2_reference_modelica.zip" download>Enalapril_Steichert2025v2_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_enalapril/Enalapril_Steichert2025v2_reference/Enalapril_Steichert2025v2_reference_modelica.zip" download>Enalapril_Steichert2025v2_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_enalapril/Enalapril_Steichert2025v2_reference/Enalapril_Steichert2025v2_reference_fmi.zip" download>Enalapril_Steichert2025v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_enalapril/Enalapril_Steichert2025v2_reference/Enalapril_Steichert2025v2_reference_matlab.zip" download>Enalapril_Steichert2025v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_enalapril/Enalapril_Steichert2025v2_reference/Enalapril_Steichert2025v2_reference_matlab_simbio.zip" download>Enalapril_Steichert2025v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

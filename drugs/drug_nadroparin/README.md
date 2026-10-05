@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Nadroparin is a low molecular weight heparin (LMWH) which, when bound to antithrombin III (ATIII), accelerates the inactivation of factor II and factor Xa. Nadroparin halts the coagulation pathway by inhibiting the activation of thrombin (factor IIa) by factor Xa. The amplification of the fibrin clotting cascade is stopped once factors Xa and IIa are inactivated. It is derived from porcine sources and has a mean molecular size of 5000 daltons. Low molecular weight heparins are less effective at inactivating factor IIa due to their shorter length compared to unfractionated heparin.
+Nadroparin is an anticoagulant of the heparin group used to prevent and treat blood clots. It is an approved medicine and is used in clinical practice, mainly in Europe.
 
-**Indication.** Nadroparin is used for prophylaxis of thromboembolic disorders and general surgery in orthopedic surgery, treatment of deep vein thrombosis, prevention of clotting during hemodialysis and treatment of unstable angina and non-Q wave myocardial infarction.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20817257](https://www.wikidata.org/wiki/Q20817257) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,8 +40,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Nadroparin is metabolized in the liver.…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated via the kidneys…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (modulator), FOS (inhibitor), MYC (inhibitor), SELP (inhibitor), SERPINC1 (potentiator).</sub>
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ifosfamide is a chemotherapeutic agent chemically related to the nitrogen mustards and a synthetic analog of cyclophosphamide. It is active as an alkylating agent and an immunosuppressive agent.
+Ifosfamide is an alkylating anticancer drug used to treat various cancers, including sarcomas, lymphomas, and cancers of the breast, ovary, stomach, pancreas, and testis. It is an approved medicine and is included on the WHO list of essential medicines, so it is used widely in cancer care.
 
-**Indication.** Used as a component of various chemotherapeutic regimens as third-line therapy for recurrent or refractory germ cell testicular cancer. Also used as a component of various chemotherapeutic regimens for the treatment of cervical cancer, as well as in conjunction with surgery and/or radiation therapy in the treatment of various soft tissue sarcomas. Other indications include treatment of osteosarcoma, bladder cancer, ovarian cancer. small cell lung cancer, and non-Hodgkin's lymphoma.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418560](https://www.wikidata.org/wiki/Q418560) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -24,7 +24,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Brain_2008_reference](drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md) | held back | 1-compartment, IV | 1 | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Brain_2008_reference](drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md) | — | parent + metabolite (no model) | 1 | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -42,7 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` inducer/substrate, `CYP2C9` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…from 70% to 86% of the dosed radioactivity was recovered in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CYP2C18 (substrate), DNA (cross-linking/alkylation), NR1I2 (activator), PTGS1 (substrate).</sub>
 

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Talinolol has been investigated for the basic science of Gastrointestinal Motility Disorder.
+Talinolol is a selective beta blocker that has been used as an antihypertensive and antiarrhythmic agent for cardiovascular conditions such as high blood pressure. It is not an approved medicine in major markets and is considered investigational, with no European Union authorisation.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7679533](https://www.wikidata.org/wiki/Q7679533) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

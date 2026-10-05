@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** One of the most common symptoms of advanced renal disease is anemia, caused primarily by the inability of the kidney to respond to anemic conditions with a corresponding increase in [erythropoietin] (EPO) production.[A244165] The treatment of anemia associated with chronic kidney disease (CKD) has traditionally involved the administration of exogenous erythropoiesis-stimulating agents (ESAs), such as [darbepoetin alfa], to counter the decrease in endogenous EPO production. While efficacious, the overuse of ESAs has been associated with cardiovascular complications, progression of CKD, and increases in overall mortality.[A244165]
+Vadadustat is an antianemic medicine used to treat anemia associated with chronic kidney disease. It is an authorised medicine in the European Union, though its availability appears limited to one authorised product.
 
-A relatively new and alternative treatment option for patients with anemia associated with CKD is the use of small molecule inhibitors of hypoxia-inducible factor prolyl-hydroxylase (HIF-PH). These agents inhibit prolyl-hydroxylase domain oxygen sensors, mimicking hypoxic conditions and activating hypoxia-inducible factors. These transcription factors serve a multitude of roles, including the stimulation of erythropoiesis.[A244165]
-
-Vadadustat is an orally administered inhibitor of HIF-PH with a safety and efficacy profile non-inferior to [darbepoetin alfa] for the treatment of anemia in patients with CKD undergoing dialysis.[A244145,A244155] It was first approved in Japan in 2020,[L50371] and in April 2023, it was approved by the EMA for the treatment of symptomatic anemia associated with CKD in adults on chronic maintenance dialysis.[L39610,L46936,L46951] Vadadustat was approved by the FDA in March 2024.[L50371]
-
-**Indication.** Vadadustat is indicated for the treatment of symptomatic anemia associated with chronic kidney disease (CKD) in adults on chronic maintenance dialysis.[L46936, L50366]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27280485](https://www.wikidata.org/wiki/Q27280485) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` inducer, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` downregulator, `UGT1A1` inducer/substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` downregulator, `UGT1A1` inducer/substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…26.9% in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor), EPAS1 (stabilization), HIF1A (stabilization), UGT1A7 (substrate), UGT1A8 (substrate).</sub>

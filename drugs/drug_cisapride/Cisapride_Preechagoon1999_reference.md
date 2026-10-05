@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;cisapride&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/&quot;},{&quot;label&quot;:&quot;Preechagoon_1999 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisapride_Preechagoon1999_reference&quot;,&quot;label&quot;:&quot;Preechagoon_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisapride — `Cisapride_Preechagoon1999_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -22,16 +23,18 @@
 
 The model was built, but cisapride's clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisapride: CL/F 0.538 l h-1 kg-1, V/F 21.9 l, kabs 2.58 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:57.248435+00:00) predates the upstream re-run (2026-10-04 13:41:21.151349+00:00). Current validate status: `extracted`.
 
 ## Citation
 Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999)
   ·  DOI: [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x)
 
 ## Model component
-<dbs-pgx drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="model_quarantined" stale="false" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="extracted" stale="true" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -39,11 +42,9 @@ Preechagoon Y et al., Population pharmacokinetics of enterall…, British journa
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 0.538 | l h-1 kg-1 | not captured | [[l] · [h-]] / [kg] | not captured | exact (1.0) | Preechagoon_1999:abstract | — | not captured |
+| CL/F | `Q27` · CL/F | 0.538 | L/h | 1.4944444444444445e-07 | L/h | not captured | exact (1.0) | Preechagoon_1999:abstract | — | not captured |
 | V /F | `Q76` · V/F | 21.9 | l | 0.0219 | [l] | not captured | space_fold (0.95) | Preechagoon_1999:abstract | — | not captured |
 | Ka (absorption rate constant) | `Q49` · kabs | 2.58 | h-1 | 0.0007166666666666667 | [1] / [h] | not captured | exact (1.0) | Preechagoon_1999:abstract | — | not captured |
 
@@ -54,21 +55,25 @@ Preechagoon Y et al., Population pharmacokinetics of enterall…, British journa
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped PD-category row 'slope' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Preechagoon_1999:abstract'])
 - unit_dimension_unknown: 'l h-1 kg-1' (CL/F)
 - dropped unlinked row (NIL): 'CV%' — extend the ontology if this is a real PK parameter (source ['Preechagoon_1999:abstract', 'Preechagoon_1999:abstract'])
 - covariate category for omega_cov from footnote/prose kept as documentation only (['Preechagoon_1999:abstract'])
+- routed 'intrapatient variance' → Q313 (IOV) to iov — variability estimate, not a structural parameter
+- implicit units: 'CL/F' → L/h (from the popPK convention: 'No unit is stated in the provided text or table captions. CL/F represents apparent total clearance. In population pharma')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cisapride
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Preechagoon_1999_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Preechagoon_1999_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -77,16 +82,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f]` | 0.538 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 0.538 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 2.58 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 2.58 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v /f]` | 21.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | not captured | 21.9 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
 
 </details>
 
@@ -103,11 +112,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Preechagoon_1999:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Preechagoon_1999:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Preechagoon_1999:abstract'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | l h-1 kg-1 | not captured | not captured | ['Preechagoon_1999:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.538 L/h | not captured | not captured | ['Preechagoon_1999:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 21.9 L | not captured | not captured | ['Preechagoon_1999:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -139,21 +149,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_modelica.zip" download>Cisapride_Preechagoon1999_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_matlab.zip" download>Cisapride_Preechagoon1999_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_matlab_simbio.zip" download>Cisapride_Preechagoon1999_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_sbml.zip" download>Cisapride_Preechagoon1999_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_cellml.zip" download>Cisapride_Preechagoon1999_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference.svg" alt="Cisapride_Preechagoon1999_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 2.58 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg oral (A03FA02) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_cisapride/Cisapride_Preechagoon1999_reference/Cisapride_Preechagoon1999_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Cisapride_Preechagoon1999_reference_params.json` · controls `Cisapride_Preechagoon1999_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 11:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:41 UTC</sub>

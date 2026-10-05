@@ -8,6 +8,12 @@
 - **molar mass:** 262.356 g/mol (C18H18N2) — DrugBank
 - **groups:** investigational
 
+## About
+
+Cibenzoline (cifenline) is an antiarrhythmic agent of class I, developed for treating cardiac rhythm disorders. It is not an approved medicine today; it has investigational status and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q867171](https://www.wikidata.org/wiki/Q867171) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

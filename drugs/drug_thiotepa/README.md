@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** N,N'N'-triethylenethiophosphoramide (ThioTEPA) is a cancer chemotherapeutic member of the alkylating agent group, now in use for over 50 years. It is a stable derivative of N,N',N''- triethylenephosphoramide (TEPA). It is mostly used to treat breast cancer, ovarian cancer and bladder cancer. It is also used as conditioning for Bone marrow transplantation. Its main toxicity is myelosuppression.
+Thiotepa is an alkylating anticancer drug used to treat cancers such as lymphoma and bladder cancer, and as part of conditioning before stem cell transplantation. It remains in use and is authorised in the European Union, mainly in hospital settings for oncology and transplant conditioning.
 
-**Indication.** ThioTEPA is used a as conditioning treatment prior to allogeneic or autologous haematopoietic progenitor cell transplantation (HPCT) in haematological diseases in adult and paediatric patients. Also, when high dose chemotherapy with HPCT support it is appropriate for the treatment of solid tumours in adult and paediatric patients.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416507](https://www.wikidata.org/wiki/Q416507) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,7 +37,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | blood | `BCHE` inhibitor | DrugBank actor |
 | metabolism | liver | `BCHE` inhibitor, `CYP2B6` inhibitor, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | — | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
 

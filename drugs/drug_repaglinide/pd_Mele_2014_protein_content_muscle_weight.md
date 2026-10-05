@@ -15,15 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Repaglinide (concentrations from the PK model of Doki_2018) drives protein content/muscle weight: direct Emax (saturable) effect.
+**As extracted:** Repaglinide (concentrations from the PK model of Doki_2018) drives protein content/muscle weight: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> The record describes a sigmoidal Emax model where repaglinide concentrations inhibit the response of protein content/muscle weight with an EC50 of 5.21 × 10(-6). The paper does not provide full text to specify the mechanism or additional rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mele_2014`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014)

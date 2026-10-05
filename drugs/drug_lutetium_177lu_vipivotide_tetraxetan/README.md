@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Lutetium Lu-177 vipivotide tetraxetan is a radioligand therapeutic agent. It consists of a radionuclide, [lutetium Lu-177], linked to a moiety that binds to PSMA, a transmembrane protein that is expressed in prostate cancer.[L41280]
+Lutetium vipivotide tetraxetan is a therapeutic radiopharmaceutical used to treat prostate cancer, including castration-resistant disease. It is authorised in the European Union and is also being investigated for further uses.
 
-Lutetium Lu-177 vipivotide tetraxetan was first approved by the FDA on March 23, 2022 as a treatment for prostate-specific membrane antigen–positive metastatic castration-resistant prostate cancer.[L41290] In October 2022, the EMA's Committee for Medicinal Products for Human Use (CHMP) recommended lutetium Lu-177 vipivotide tetraxetan be granted marketing authorization for the treatment of prostate cancer.[L43787] In December 2022, lutetium Lu-177 vipivotide tetraxetan was approved by the EMA.[L43787,L45533]
-
-**Indication.** Lutetium Lu 177 vipivotide tetraxetan is a radioligand therapeutic agent indicated for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic castration-resistant prostate cancer (mCRPC) who have been treated with androgen receptor (AR) pathway inhibition and either previously treated with taxane-based chemotherapy, or in whom it is appropriate to delay taxane-based chemotherapy.[L41280]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q111353661](https://www.wikidata.org/wiki/Q111353661) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,7 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…primarily eliminated renally…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: FOLH1 (other/unknown), KLK3 (binder).</sub>
 

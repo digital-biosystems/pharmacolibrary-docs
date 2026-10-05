@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Sodium glycerophosphate is one of several glycerophosphate salts. It is used clinically to treat or prevent low phosphate levels [FDA Label]. Glycerophosphate is hydrolyzed to inorganic phosphate and glycerol in the body [A32667]. The extent of this reaction is dependent on the activity of serum alkaline phosphatases.
+Sodium glycerophosphate is used as a source of phosphate in intravenous solutions, added to infusion fluids to supply electrolytes. It is an approved drug, used mainly in hospital settings as an additive to intravenous solutions.
 
-**Indication.** Sodium glycerophosphate is indicated for use as a source of phosphate in total parenteral nutrition [FDA Label]. It is used in combination with amino acids, dextrose, lipid emulsions, and other electrolytes.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27278714](https://www.wikidata.org/wiki/Q27278714) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,8 +30,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…dependent on serum alkaline phosphatase activity…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated in the urine…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

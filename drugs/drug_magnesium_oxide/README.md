@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Magnesium oxide is an inorganic compound that occurs in nature as the mineral periclase. In aqueous media combines quickly with water to form magnesium hydroxide. It is used as an antacid and mild laxative and has many nonmedicinal uses.
+Magnesium oxide is used as an antacid for acid-related stomach complaints, as a laxative for constipation, and as a magnesium mineral supplement. It is an approved, widely available over-the-counter medicine used for these common indications.
 
-**Indication.** Indicated for over-the-counter use as a supplement for cardiovascular and neuromuscular health, and as an antacid for relief of acid indigestion and upset stomach.
-
-Magnesium oxide, in combination with sodium picosulfate and anhydrous citric acid, is indicated for cleansing of the colon as a preparation for colonoscopy in adults and pediatric patients ages 9 years and older.[L43832]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q214769](https://www.wikidata.org/wiki/Q214769) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

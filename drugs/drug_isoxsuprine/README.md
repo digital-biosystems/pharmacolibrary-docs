@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** A beta-adrenergic agonist that causes direct relaxation of uterine and vascular smooth muscle. Its vasodilating actions are greater on the arteries supplying skeletal muscle than on those supplying skin. It is used in the treatment of peripheral vascular disease and in premature labor.
+Isoxsuprine is a vasodilator that was used for peripheral vascular diseases such as arteriosclerosis, thromboangiitis obliterans, and Raynaud's disease, and also as a tocolytic to relax the uterus. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1117888](https://www.wikidata.org/wiki/Q1117888) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

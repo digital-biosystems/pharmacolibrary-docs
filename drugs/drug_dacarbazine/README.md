@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antineoplastic agent. It has significant activity against melanomas. (from Martindale, The Extra Pharmacopoeia, 31st ed, p564). Dacarbazine with Oblimersen is in clinical trials for the treatment of malignant melanoma.
+Dacarbazine is an alkylating anticancer drug used to treat cancers such as melanoma, Hodgkin's lymphoma, and several soft-tissue and other tumours. It remains in clinical use, is listed among WHO essential medicines, and is approved, though it carries a boxed warning.
 
-**Indication.** For the treatment of metastatic malignant melanoma. In addition, dacarbazine is also indicated for Hodgkin's disease as a secondary-line therapy when used in combination with other antineoplastic agents.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416975](https://www.wikidata.org/wiki/Q416975) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -24,7 +24,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991_reference](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | — | parent + metabolite (no model) | 0 | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991_reference](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | — | parent + metabolite (no model) | 0 | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
 
 ## Pharmacodynamics (PD)
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` formation/substrate, `CYP2E1` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` formation/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` formation/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Dacarbazine is subject to renal tubular secretion rather than glomerular filtration…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), PGD (inhibitor), POLA2 (other/unknown).</sub>
 
@@ -69,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 142 matched, 141 returned
 - **screened:** 18  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

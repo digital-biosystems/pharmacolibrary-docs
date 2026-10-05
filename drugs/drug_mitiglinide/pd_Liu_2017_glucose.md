@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;mitiglinide&quot;,&quot;href&quot;:&quot;drugs/drug_mitiglinide/&quot;},{&quot;label&quot;:&quot;Liu_2017 \u00b7 PD plasma glucose&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;mitiglinide&quot;,&quot;href&quot;:&quot;drugs/drug_mitiglinide/&quot;},{&quot;label&quot;:&quot;Liu_2017 \u00b7 PD glucose plasma concentration&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma glucose — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.053). The first reading is what the record holds.">cross-check: disputed</span>
+# glucose plasma concentration — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.053). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Mitiglinide (concentrations from this paper's PK model) drives plasma glucose (in mg/mL): delayed effect through an effect compartment.
+**As extracted:** Mitiglinide (concentrations from this paper's PK model) drives glucose plasma concentration (in mg/mL): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Mitiglinide plasma concentrations drive an inhibitory Emax effect on plasma glucose via an effect-compartment (biophase) model, with effect-site concentration Ce equilibrating to plasma with ke0 = 7.47 /h; the inhibitory potency is IC50 = 1.13 μg/mL with slope gamma = 1.66 and baseline glucose E0 = 4.65 mmol/L. The paper does not state an explicit Imax/Emax value, and it describes ke0 as the glucose disappearance rate constant.
+> Mitiglinide plasma concentrations inhibit glucose plasma concentrations via a sigmoid Emax model linked through an effect compartment, with an IC50 of 1.13 μg/mL, a baseline glucose (E0) of 4.65 mmol/L, an effect compartment rate constant (Ke0) of 7.47 /h, and a Hill coefficient (Gamma) of 1.66.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Liu_2017`
-- **model family:** `effect_compartment`
+- **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017)
@@ -34,23 +34,10 @@ Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & tox
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | Ka (/h) — Mean ± SD | `Q49` · not captured | 9.57 | /h | not captured | exact (not captured) | Tab2:row1:col1 |
-| PK (driver) | Ka (/h) — Inter-individual variability (CV %) | `Q49` · not captured | 91.95 | /h | not captured | exact (not captured) | Tab2:row1:col2 |
-| PK (driver) | Tlag (h) — Mean ± SD | `Q83` · not captured | 0.09 | h | not captured | exact (not captured) | Tab2:row2:col1 |
-| PK (driver) | Tlag (h) — Inter-individual variability (CV %) | `Q83` · not captured | 70.71 | h | not captured | exact (not captured) | Tab2:row2:col2 |
-| PK (driver) | V (L) — Mean ± SD | `Q61` · not captured | 6.15 | L | not captured | exact (not captured) | Tab2:row3:col1 |
-| PK (driver) | V (L) — Inter-individual variability (CV %) | `Q61` · not captured | 17.61 | L | not captured | exact (not captured) | Tab2:row3:col2 |
-| PK (driver) | CL (L/h) — Mean ± SD | `Q22` · not captured | 0.03 | L/h | not captured | exact (not captured) | Tab2:row4:col1 |
-| PK (driver) | V2 (L) — Mean ± SD | `Q64` · not captured | 104.69 | L | not captured | exact (not captured) | Tab2:row5:col1 |
-| PK (driver) | Cl2 (L/h) — Mean ± SD | `Q30` · not captured | 9.85 | L/h | not captured | special_case (not captured) | Tab2:row6:col1 |
-| PK (driver) | Cl2 (L/h) — Inter-individual variability (CV %) | `Q30` · not captured | 22.18 | L/h | not captured | special_case (not captured) | Tab2:row6:col2 |
-| PD (effect) | IC50 (μg/mL) — Mean ± SD | `Q322` · not captured | 1.13 | μg/mL | not captured | exact (not captured) | Tab2:row7:col1 |
-| PD (effect) | E0 (mmol/L) — Mean ± SD | `Q324` · not captured | 4.65 | mmol/L | not captured | exact (not captured) | Tab2:row8:col1 |
-| PD (effect) | E0 (mmol/L) — Inter-individual variability (CV %) | `Q324` · not captured | 4.35 | mmol/L | not captured | exact (not captured) | Tab2:row8:col2 |
-| PD (effect) | Ke0 (/h) — Mean ± SD | `Q326` · not captured | 7.47 | /h | not captured | exact (not captured) | Tab2:row9:col1 |
-| PD (effect) | Ke0 (/h) — Inter-individual variability (CV %) | `Q326` · not captured | 90.61 | /h | not captured | exact (not captured) | Tab2:row9:col2 |
-| PD (effect) | Gamma — Mean ± SD | `Q325` · not captured | 1.66 | not captured | not captured | exact (not captured) | Tab2:row10:col1 |
-| PD (effect) | Gamma — Inter-individual variability (CV %) | `Q325` · not captured | 18.67 | not captured | not captured | exact (not captured) | Tab2:row10:col2 |
+| PD (effect) | IC50 | `Q322` · not captured | 1.13 | μg/mL | not captured | llm (not captured) | Liu_2017:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 4.65 | mmol/L | not captured | llm (not captured) | Liu_2017:pdv3 |
+| PD (effect) | Ke0 | `Q326` · not captured | 7.47 | /h | not captured | llm (not captured) | Liu_2017:pdv3 |
+| PD (effect) | Gamma | `Q325` · not captured | 1.66 | not captured | not captured | llm (not captured) | Liu_2017:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

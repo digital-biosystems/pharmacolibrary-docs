@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Cetylpyridinium is a quaternary ammonium with broad-spectrum antiseptic properties. Its salt form, cetylpyridinium chloride, is typically found as an active ingredient in mouthwashes, toothpastes, lozenges, throat sprays, breath sprays, and nasal sprays. In these products, it generally mediates an antiseptic activity and protective action against dental plaque and reducing gingivitis.
+Cetylpyridinium is an antiseptic used to treat or prevent infections in the mouth and throat, and for disinfecting skin and wounds. It is widely used in over-the-counter oral care products such as mouthwashes and throat lozenges.
 
-**Indication.** Typically employed as the cetylpyridinium chloride salt, this compound is commonly used as an active ingredient in various over-the-counter mouthwashes, toothpastes, lozenges, and mouth sprays where it is generally indicated for antiseptic actions, gingivitis and plaque prevention, as well as action or prevention against some other oropharyngeal bacterial infections [A24813, L2754, L2755].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27115152](https://www.wikidata.org/wiki/Q27115152) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | small intestine | <sub>“…poorly absorbed by oral route, relatively large amounts of the compound are therefore elim…”</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

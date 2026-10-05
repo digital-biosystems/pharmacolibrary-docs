@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Lasmiditan is an oral medication used in the termination of migraine headaches that was first approved for use in the United States in October 2019.[L9338,L9356] It was also approved by the European Commission on August 17, 2022.[L43997]
+Lasmiditan is an antimigraine drug used to treat migraine attacks. It is an approved selective serotonin agonist and has been authorised in the European Union.
 
-Traditionally, the triptan class of anti-migraine medications (e.g. [sumatriptan]) have seen preferential use in the acute treatment of migraines due to their relatively favourable efficacy and safety. Their use is not devoid of concerns, however, and their vasoconstrictive activity can lead to blood pressure lability and other cardiovascular side effects - for this reason, these medications are less suitable for use in patients with pre-existing cardiovascular disorders.[A187316] Triptans abort migraines via action at several serotonin receptors, including 5-HT<sub>1D</sub> and 5-HT<sub>1B</sub> receptors, and activity at the 5-HT<sub>1B</sub> receptor has been specifically implicated in their vasoconstrictive activity.[A187316,A187322]
-
-Lasmiditan, in contrast, is a highly selective agonist of 5-HT<sub>1F</sub> receptors, carrying virtually no affinity for other receptors which appear to be largely responsible for the adverse effect profile of its predecessors - in other words, lasmiditan’s selectivity allows for the successful termination of migraines without causing vasoconstriction.[A187322,A187319] Selectivity for  5-HT<sub>1F</sub>, a lack of vasoconstrictive activity, and the ability to terminate migraines through neuronal inhibition has resulted in the creation of a new class of anti-migraine medications in which lasmiditan is the first and only member: the neurally-acting anti-migraine medications (NAAMAs).[A187322,A187307]
-
-**Indication.** Lasmiditan is indicated for the acute treatment of migraine with or without aura in adults.[L9338,L43992]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6493750](https://www.wikidata.org/wiki/Q6493750) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -4,7 +4,7 @@
 
 # repaglinide — `Repaglinide_Ruzilawati2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,22 +16,20 @@
 
 ### Reviewer guidance
 
-**The repaglinide record was rejected because the volume of distribution (23.09 L/h) carries a rate-constant unit, a dimension mismatch that makes the value implausible.**
+**The repaglinide record from Ruzilawati_2010 was rejected because the volume of distribution 23.09 L/h carries a rate unit, a dimension mismatch that makes the value implausible, and the record was built from the abstract only.**
 
-The abstract-only source reports kel = 0.58 h and Vd = 23.09 L/h for repaglinide in healthy Malaysian volunteers; a volume of distribution cannot have units of L/h, so the dimension check failed and the magnitude was judged physiologically implausible, pointing to a unit/scale extraction error. A second reader could not confirm either value, returning null for both kel (0.58) and Vd (23.09). Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
+The volume of distribution of repaglinide is reported as 23.09 L/h, a unit with a time denominator that does not fit a volume parameter, so the magnitude cannot be judged physiologically plausible and a unit or scale extraction error is suspected. The elimination rate constant is 0.58 with unit 'h', which also lacks the expected reciprocal-time dimension. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model, and a second reader read the same values under different parameter labels without resolving the unit problem. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k: this record has none, the second reading 0.58; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:31.611769+00:00) predates the upstream re-run (2026-10-01 17:48:25.414301+00:00). Current validate status: `rejected`.
 
 ## Citation
 Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x)
 
 ## Model component
-<dbs-pgx drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="true" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="false" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -69,14 +67,14 @@ Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -84,8 +82,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[mean elimination rate constant (k(el))]` | 0.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v]` | not captured | 23.09 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution (v(d))]` | 23.09 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | repaglinide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | repaglinide | unknown | mismatch |
 
 </details>
 
@@ -130,4 +126,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 17:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 03:03 UTC</sub>

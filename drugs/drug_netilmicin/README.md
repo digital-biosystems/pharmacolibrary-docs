@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Netilmicin is a semisynthetic 1-N-ethyl derivative of sisomycin, an aminoglycoside antibiotic with action similar to gentamicin, but less ear and kidney toxicity. Netilmicin inhibits protein synthesis in susceptible organisms by binding to the bacterial 30S ribosomal subunit and interfering with mRNA binding and the acceptor tRNA site. The bactericidal effect of netilmiicin is not fully understood.
+Netilmicin is an aminoglycoside antibiotic used to treat serious bacterial infections, including eye infections. It is an approved medicine and is used mainly in hospital settings for severe infections, given by injection, with ophthalmic formulations also available.
 
-**Indication.** For the treatment of bacteremia, septicaemia, respiratory tract infections, skin and soft-tissue infection, burns, wounds, and peri-operative infections caused by susceptible strains.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2553496](https://www.wikidata.org/wiki/Q2553496) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +34,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…Rapidly and completely absorbed after IM administration…”</sub> | prose |
-| metabolism | kidney | <sub>“…80% is recoverable in the urine within 24 hours…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Ulinastatin has been investigated for the prevention of Cardiovascular Disease and Adverse Reaction to Drug.
+Ulinastatin, a protease inhibitor classified as an antifibrinolytic, has been investigated for conditions such as severe inflammation, including pancreatitis and sepsis. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

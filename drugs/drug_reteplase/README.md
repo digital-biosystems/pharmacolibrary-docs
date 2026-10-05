@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Human tissue plasminogen activator, purified, glycosylated, 355 residues purified from CHO cells. Retavase is considered a "third-generation" thrombolytic agent, genetically engineered to retain and delete certain portions of human tPA. Retavase is a deletion mutein of human tPA formed by deleting various amino acids present in endogenous human tPA. Retavase contains 355 of the 527 amino acids of native human tPA (amino acids 1-3 and 176-527), and retains the activity-related kringle-2 and serine protease domains of human tPA. Three domains are deleted from retavase - kringle-1, finger, and epidermal growth factor (EGF).
+Reteplase is a fibrinolytic (plasminogen-activating) drug that was used to treat myocardial infarction. Its products have been withdrawn from the European Union market, so it is no longer authorised there.
 
-**Indication.** For lysis of acute pulmonary emboli, intracoronary emboli, and management of myocardial infarction.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3933703](https://www.wikidata.org/wiki/Q3933703) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

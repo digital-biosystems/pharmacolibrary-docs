@@ -11,10 +11,9 @@
 
 ## About
 
-**Description.** Fluvoxamine is an antidepressant which functions pharmacologically as a selective serotonin reuptake inhibitor. Though it is in the same class as other SSRI drugs, it is most often used to treat obsessive-compulsive disorder.
-Fluvoxamine has been in use in clinical practice since 1983 and has a clinical trial database comprised of approximately 35,000 patients. It was launched in the US in December 1994 and in Japan in June 1999. As of the end of 1995, more than 10 million patients worldwide have been treated with fluvoxamine.
+Fluvoxamine is a selective serotonin reuptake inhibitor antidepressant used for depression, obsessive-compulsive disorder, anxiety disorders and panic disorder. It is an approved medicine used worldwide in everyday clinical practice, mainly for obsessive-compulsive disorder and depression.
 
-**Indication.** Indicated predominantly for the management of depression and for Obsessive Compulsive Disorder (OCD) [FDA Label]. Has also been used in the management of bulimia nervosa [A250].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409236](https://www.wikidata.org/wiki/Q409236) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -55,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…constituting approximately 85% of the urinary excretion products of fluvoxamine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |

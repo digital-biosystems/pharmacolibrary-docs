@@ -9,15 +9,15 @@
 
 ## About
 
-**Description.** Crofelemer, previously known as the investigational drug SP-303, is a novel proanthocyanidin purified from the bark latex of the Amazonian Croton tree <i>Croton lechleri</i>. It is marketed under the brand name Fulyzaq and indicated for the symptomatic treatment of non-infectious diarrhea in adult patients with HIV/AIDS who are taking antiretroviral therapy.
+Crofelemer is an antidiarrheal medicine used to treat diarrhea. It is an approved drug, but it is not authorised in the European Union.
 
-**Indication.** For the symptomatic treatment of non-infectious diarrhea in adult patients with HIV/AIDS who are taking antiretroviral therapy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5187464](https://www.wikidata.org/wiki/Q5187464) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 11:17 | 1:15 | 0/0/0 | 1/0/0 | 0/0/0 | 6,322/1,242 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 20:25 | 0:23 | 0/0/0 | 0/1/0 | 0/0/0 | 12,514/742 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -27,9 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tradtrantip_2010_CFTR](drugs/drug_crofelemer/pd_Tradtrantip_2010_CFTR.md) | CFTR Cl- current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tradtrantip_2010_SCC](drugs/drug_crofelemer/pd_Tradtrantip_2010_SCC.md) | Short-circuit current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tradtrantip_2010_TMEM16A](drugs/drug_crofelemer/pd_Tradtrantip_2010_TMEM16A.md) | TMEM16A Cl- current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tradtrantip_2010_CFTR](drugs/drug_crofelemer/pd_Tradtrantip_2010_CFTR.md) | CFTR Cl- conductance ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tradtrantip_2010_TMEM16A](drugs/drug_crofelemer/pd_Tradtrantip_2010_TMEM16A.md) | TMEM16A Cl- current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
 
 ## ADME sites
 
@@ -57,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Crutchley_2010 | irrelevant | 2 | 0 | The paper is a narrative review of crofelemer's chemistry, pharmacology, and clinical efficacy, and the provided evidence contains no quantitative pharmacokinetic parameter values (e.g., CL, V, ka). |
+| popPK | Crutchley_2010 | irrelevant | 2 | 0 | This is a narrative review of crofelemer's efficacy and safety that mentions pharmacokinetics in the objective but provides no quantitative PK parameter values (CL, V, t1/2) in the extracted evidence. |
 | popPK | Frampton_2013 | irrelevant | 0 | 0 | The paper is a clinical review of efficacy and safety that explicitly states crofelemer undergoes minimal systemic absorption, and it does not report any quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
 | PD | Frampton_2013 | not_relevant | 1 | 0 | The text is a clinical review summarizing efficacy and safety outcomes (diarrhea reduction) without providing any pharmacokinetic data, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Tradtrantip_2010 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating crofelemer's effect on chloride channels, not a pharmacokinetic study reporting disposition parameters. |

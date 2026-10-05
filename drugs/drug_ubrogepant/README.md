@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Ubrogepant is indicated for the acute treatment of migraine headaches with or without aura in adults.[L10926] It was approved by the FDA on December 23, 2019, and is the first oral calcitonin gene-related peptide (CGRP) receptor antagonist approved for the acute treatment of migraine.[L10959] Several oral small molecule CGRP receptor antagonists, belonging to a class of medications referred to as "gepants", have been investigated for migraines, but only ubrogepant and [rimegepant] remain in clinical development.[A189207,A189213] Previous agents within this class were efficacious but limited by liver toxicity - this led to the development of ubrogepant, which was designed to be a hepatoxicity-free alternative to its predecessors.[A189195] Several parenteral monoclonal antibodies acting against the CGRP pathway (e.g. [erenumab], [fremanezumab], [galcanezumab]) have also been approved in recent years.[A189207] Ubrogepant was approved by Health Canada on November 10, 2022.[L43987]
+Ubrogepant is a CGRP receptor antagonist used for the acute treatment of migraine headache. It is an approved medicine, mainly used in the United States; it is not authorised in the European Union.
 
-Compared to the current standard of therapy for migraine treatment, namely triptans such as [sumatriptan] and [almotriptan], CGRP antagonists present several advantages.[A189195] They appear to be better tolerated, do not contribute to medication overuse headaches, and carry no apparent cardiovascular risk, making them suitable for use in patients with cardiovascular disease.[A189195] The development of oral gepants, including ubrogepant, may therefore constitute a significant advance in migraine headache treatment and may become the new standard of therapy in the treatment of this debilitating condition.
-
-**Indication.** Ubrogepant is indicated for the acute treatment of migraine with or without aura in adults.[L10926,L43987]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27273878](https://www.wikidata.org/wiki/Q27273878) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor, `MAOA` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `MAOA` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `MAOA` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…The main route of elimination is fecal/biliary…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CALCRL (target).</sub>

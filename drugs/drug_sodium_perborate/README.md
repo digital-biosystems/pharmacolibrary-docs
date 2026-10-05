@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Perboric acid is mainly found in its salt form of sodium perborate and it can be found as a monohydrate or tetrahydrate.[A33037] It is one of the peroxy acid salts with very wide functionalities in industrial settings.[F66] Perboric acid in the form of sodium perborate is approved by Health Canada since 2004 to be used as a disinfectant of medical instruments.[L1113] By the FDA, sodium perborate is approved as an ointment for the protection of poison ivy dermatitis.[L2764]
+Sodium perborate is an antiseptic used for local oral treatment, for example in stomatological preparations for mouth conditions. It is an approved drug, though no European Union authorisation is recorded in the available facts.
 
-**Indication.** In the industry, sodium perborate is used as a disinfectant. It is also part of the ingredients for detergents, bleach powders, and personal care formulations. In cosmetic products, perboric acid and mainly its salt are used as an oxidizing agent for dyeing or permanent waving.[F66] 
-
-In dentistry, sodium perborate monohydrate is used as an aid for the removal of phlegm, mucus or other secretions associated with an occasional sore in the mouth, for cleansing minor wounds, for temporary cleanse of canker sore or for the removal of foreign materials in minor wounds.[L2770]
-
-In ophthalmic preparations, sodium perborate is used as a preservative for products used for dry eye. This use is approved as this compound rapidly degrades to harmless byproducts.[T203]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415507](https://www.wikidata.org/wiki/Q415507) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…The produced hydrogen peroxide is rapidly degraded in blood and tissues.…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

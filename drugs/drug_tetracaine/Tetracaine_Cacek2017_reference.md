@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The tetracaine model was rejected because the metabolite compartment lacked a formation rate constant and the structure did not match the parent-metabolite topology.**
+**The tetracaine parent–metabolite record was rejected: the peripheral volume V2 (418 L) was never given a value, the simulated output was the parent's central compartment instead of the measured metabolite para-butylaminobenzoic acid, the structure was a one-compartment enteral model rather than the required parent–metabolite three-compartment structure, and bioavailability F and lag time Tlag were left at library defaults.**
 
-The record is abstract-only, so summary statistics stand in for a fitted model. The metabolite para-butylaminobenzoic acid has no path from the dose because the metabolism link parameter is missing. Additionally, the peripheral volume parameter was not extracted, so a library placeholder would have been used. Extracted — tetracaine: kabs 4.41 h-1, V2 418 L, CL 66.4 L/h, V1 6.97 L, Q 419 L/h.
+The record describes tetracaine with its metabolite para-butylaminobenzoic acid, but the model structure was a one-compartment enteral model instead of the required parent–metabolite three-compartment structure, and the simulated output was the parent's central compartment rather than the measured analyte. Of the five expected parameters, only four were covered: V2 (418 L) was neither emitted nor defaulted. Bioavailability F and lag time Tlag were filled with library defaults instead of estimates from the paper, which is not acceptable. The record was built from the abstract alone, so summary statistics stood in for a fitted model, and a second reader disagreed on the dose compound and analyte naming. Extracted — tetracaine: kabs 4.41 h-1, V2 418 L, CL 66.4 L/h, V1 6.97 L, Q 419 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tetracaine, the second reading oxymetazoline/tetracaine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `tetracaine`, measured `para-butylaminobenzoic acid`.
 
@@ -126,7 +126,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | fail | Metabolite_C (measured=para-butylaminobenzoic acid) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

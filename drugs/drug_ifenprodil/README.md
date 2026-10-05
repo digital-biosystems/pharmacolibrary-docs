@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** N-methyl-D-aspartate (NMDA) receptors (NMDARs) are members of the ionotropic glutamate receptor family, with key roles in brain development and neurological function.[A220118, A220128] NMDARs are heterotetramers that typically involve a dimer of dimers of both GluN1 and GluN2A-D subunits, with each subunit itself composed of an N-terminal domain (NTD), a ligand-binding domain (LBD), a transmembrane domain, and a C-terminal cytoplasmic domain. Binding at the LBD of the agonists glycine (or D-serine) to the GluN1 subunits and of glutamate to the GluN2 subunits is a regulatory mechanism for channel activation. In addition, allosteric modulators are known to bind at the NTDs and form another layer of regulation.[A220118, A220128] One such allosteric regulator is ifenprodil, which was first shown to bind the NMDARs in the 1990s, and specifically to those NMDARs containing the GluN2B subunit.[A220133] Further studies elucidated that ifenprodil binds strongly at the inter-subunit interface of adjacent GluN1 and GluN2B NTDs, where it acts as a non-competitive antagonist.[A220118, A220128]
+Ifenprodil is a vasodilator and alpha blocker that was used as a peripheral vasodilator for circulatory disorders. It has been withdrawn and is no longer in clinical use, though it remains of research interest.
 
-Although ifenprodil has received considerable interest in its potential neuromodulatory activities in psychiatric conditions, including dependency[A220138] and depression,[A220143] it has also been shown to have an immunomodulatory effect.[A220143, A196128] In an unbiased screen for compounds capable of reducing cell death induced by infection with the influenza strain H5N1, ifenprodil was found to have a protective effect against H5N1-induced lung damage, in part through its ability to alleviate the H5N1-induced cytokine storm and reduce pulmonary infiltration of neutrophils, natural killer cells, and T cells.[A196128] Ifenprodil is being investigated for its potential utility in treating COVID-19 in an ongoing phase 2b/3 clinical trial (NCT04382924).[L16343]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5991156](https://www.wikidata.org/wiki/Q5991156) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

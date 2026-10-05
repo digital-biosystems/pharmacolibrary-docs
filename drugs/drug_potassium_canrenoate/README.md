@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;potassium canrenoate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # potassium canrenoate
 
@@ -10,7 +11,9 @@
 
 ## About
 
-**Description.** Canrenoic acid (as the salt potassium canrenoate) is an aldosterone antagonist. Like spironolactone, it is a prodrug, which is metabolized to canrenone in the body.
+Potassium canrenoate is a diuretic that acts as an aldosterone antagonist and was used as a potassium-sparing diuretic for cardiovascular conditions such as heart failure and oedema. It is no longer in use, as drug records list it as withdrawn.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3655600](https://www.wikidata.org/wiki/Q3655600) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -31,9 +34,9 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `scholar`</sub> | [Suyagh_2012_median](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md) | model (no simulator) | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Suyagh_2012_median](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C1_half_life_beta failed (ratio 2.5271)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md) | — | 1-compartment (no model) | 3 (+2 cov.) | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Suyagh_2013_reference](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Suyagh_2013_reference](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The bendroflumethiazide record was rejected because the abstract-only source reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and a structural parameter failed a dimension check.**
+**The bendroflumethiazide record was rejected because the paper reports only a terminal half-life of 3.1 hr and a renal clearance of 30 ml/min, with no distribution volume or total clearance, so it is not a compartmental population PK model.**
 
-The paper (Borgström_1981, healthy male volunteers) was read from the abstract alone, so summary statistics stood in for a fitted model; only a terminal half-life of 3.1 hr and a renal clearance of 30 ml are reported, with no distribution volume and no total clearance or elimination rate. A dimension mismatch was flagged on a structural parameter. A second reader attributed the 30 ml renal clearance value differently, disagreeing on which parameter field it belongs to. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A dimension mismatch was flagged on a structural parameter, and a second reader disagreed on the dose compound, primary analyte, and whether the half-life (3.1 hr) and renal clearance (30 ml) parameters were present or null. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bendroflumethiazide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

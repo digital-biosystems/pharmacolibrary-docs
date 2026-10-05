@@ -11,19 +11,15 @@
 
 ## About
 
-**Description.** First introduced in 1995, glimepiride is a member of the second-generation sulfonylurea (SU) drug class used for the management of type 2 diabetes mellitus (T2DM) to improve glycemic control. Type 2 diabetes is a metabolic disorder with increasing prevalences worldwide; it is characterized by insulin resistance in accordance with progressive β cell failure and long-term microvascular and macrovascular complications that lead to co-morbidities and mortalities. Sulfonylureas are one of the insulin secretagogues widely used for the management of type 2 diabetes to lower blood glucose levels. The main effect of SUs is thought to be effective when residual pancreatic β-cells are present,[A177715] as they work by stimulating the release of insulin from the pancreatic beta cells and they are also thought to exert extra-pancreatic effects, such as increasing the insulin-mediated peripheral glucose uptake.[A177709] 
+Glimepiride is a sulfonylurea medicine used to lower blood sugar in people with diabetes. It is an approved drug, widely used as an oral diabetes treatment, and is also available in combination products with other glucose-lowering medicines.
 
-Glimepiride works by stimulating the secretion of insulin granules from pancreatic islet beta cells by blocking ATP-sensitive potassium channels (K<SUB>ATP</SUB> channels) and causing depolarization of the beta cells. Compared to [glipizide], another second SU drug, glimepiride has a longer duration of action. It is sometimes classified as a third-generation SU because it has larger substitutions than other second-generation SUs.[A177703] Compared to other SUs, glimepiride was associated with a lower risk of developing hypoglycemia and weight gain in clinical trials [A177709] as well as fewer cardiovascular effects than other SUs due to minimal effects on ischemic preconditioning of cardiac myocytes.[A177703] It is effective in reducing fasting plasma glucose, postprandial glucose, and glycosylated hemoglobin levels and is considered to be a useful, cost-effective treatment option for managing type 2 diabetes mellitus.[A177703] Glimepiride was approved by the Food and Drug Administration (FDA) in the United States in 1995 for the treatment of T2DM. It is commo
-
-**Indication.** Glimepiride is indicated for the management of type 2 diabetes in adults as an adjunct to diet and exercise to improve glycemic control as monotherapy. 
-
-It may also be indicated for use in combination with metformin or insulin to lower blood glucose in patients with type 2 diabetes whose high blood sugar levels cannot be controlled by diet and exercise in conjunction with an oral hypoglycemic (a drug used to lower blood sugar levels) agent alone.[L10322]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q106029845](https://www.wikidata.org/wiki/Q106029845) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 02:58 | 31:47 | 1/0/0 | 2/0/0 | 4/0/2 | 464,431/15,019 | ollama / qwen3.8:27b-mtp-q8_0 | 46 | 4/28 | 36/1 | 0 |
+| 2026-10-05 01:29 | 9:05 | 1/0/0 | 2/0/0 | 4/0/2 | 240,830/11,004 | ollama / qwen3.8:27b-mtp-q8_0 | 46 | 4/28 | 36/1 | 0 |
 
 ## popPK records
 
@@ -49,7 +45,7 @@ It may also be indicated for use in combination with metformin or insulin to low
 | <span class="pk-badge pk-badge--neutral" title="a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Yang_2018](drugs/drug_glimepiride/pgx_Yang_2018_CYP2C9_safety.md) | Yang F et al., CYP2C9 and OATP1B1 genetic polymorphism…, Scientific reports (2018) | [10.1038/s41598-018-29351-4](https://doi.org/10.1038/s41598-018-29351-4) |
 | <span class="pk-badge pk-badge--neutral" title="a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Zhang_2023](drugs/drug_glimepiride/pgx_Zhang_2023_CYP2C9_safety.md) | Zhang Q et al., Identification and in vitro functional…, Frontiers in endocrinology (2023) | [10.3389/fendo.2023.1139805](https://doi.org/10.3389/fendo.2023.1139805) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **SLCO1B1** | `Q27` · CL/F | transport | [Wolthuis_2024](drugs/drug_glimepiride/pgx_Wolthuis_2024_SLCO1B1_Q27.md) | Wolthuis David F G J et al., Dutch Pharmacogenetics Working Group (D…, European journal of human g… (2024) | [10.1038/s41431-024-01769-7](https://doi.org/10.1038/s41431-024-01769-7) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | **OATP1B1** | `Q27` · CL/F | transport | [Yang_2018](drugs/drug_glimepiride/pgx_Yang_2018_OATP1B1_Q27.md) | Yang F et al., CYP2C9 and OATP1B1 genetic polymorphism…, Scientific reports (2018) | [10.1038/s41598-018-29351-4](https://doi.org/10.1038/s41598-018-29351-4) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | **OATP1B1** | `Q27` · CL/F | transport | [Yang_2018](drugs/drug_glimepiride/pgx_Yang_2018_OATP1B1_Q27.md) | Yang F et al., CYP2C9 and OATP1B1 genetic polymorphism…, Scientific reports (2018) | [10.1038/s41598-018-29351-4](https://doi.org/10.1038/s41598-018-29351-4) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -64,10 +60,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Glimepiride is completely absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C9` safety_allele/substrate, `SLCO1B1` transport | DrugBank actor |
-| excretion | bile duct | <sub>“…Approximately 40% of the total radioactivity was recovered in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…approximately 60% of the total radioactivity was recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABCC8 (inducer), ABCC9 (blocker), KCNJ1 (inhibitor), KCNJ11 (inhibitor), OATP1B1 (transport).</sub>
@@ -114,7 +110,7 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Kim_2007.pdf` | Kim YM et al., Identifying drugs needing pharmacogenet…, American journal of health-… (2007) | pgx | 5 | [10.2146/ajhp050490](https://doi.org/10.2146/ajhp050490) | [17215467](https://www.ncbi.nlm.nih.gov/pubmed/17215467) | metadata signals extractable PGX data (CYP2C9) |
 | `Ragia_2022.pdf` | Ragia G et al., SLCO1B1 c.521T&gt;C gene polymorphism decr…, Drug metabolism and persona… (2022) | pgx | 5 | [10.1515/dmpt-2022-0131](https://doi.org/10.1515/dmpt-2022-0131) | [36169244](https://www.ncbi.nlm.nih.gov/pubmed/36169244) | metadata signals extractable PGX data (SLCO1B1) |
 
-<sub>queue written 2026-10-04T02:53:50.845502+00:00</sub>
+<sub>queue written 2026-10-05T01:25:18.770597+00:00</sub>
 
 ## Screened and excluded
 
@@ -123,7 +119,7 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Antonesi_2011 | relevant | 10 | 0 | The paper describes a PK study of glimepiride in humans, but the specific numeric parameter values are not present in the provided evidence. |
 | popPK | Aoyama_2017 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for meloxicam, not glimepiride. |
 | popPK | Benaboud_2012 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for lamivudine, not glimepiride. |
-| PGx | Cafferati_2025 | not_relevant | 0 | 0 | The paper investigates the effect of glimepiride on CRAT enzyme activity in vitro, not the effect of a gene variant on glimepiride's pharmacokinetics or pharmacodynamics. |
+| PGx | Cafferati_2025 | not_relevant | 0 | 0 | The paper investigates the effect of a CRAT gene variant on the enzyme's activity in response to glimepiride, not the effect of a gene variant on the pharmacokinetic or pharmacodynamic parameters of glimepiride itself. |
 | PGx | Chen_2014 | not_relevant | 2 | 10 | The study investigates drug-drug interactions (inhibition of metabolism) rather than the direct pharmacokinetic or pharmacodynamic effects of CYP2C9 genotypes on glimepiride exposure or response. |
 | PGx | Chen_2015 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between losartan and glimepiride, not pharmacogenomic effects of gene variants. |
 | popPK | Chen_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for quetiapine, not glimepiride. |
@@ -179,13 +175,13 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Surendran_2017 | not_relevant | 0 | 0 | The study investigates drug-drug interactions in rats and does not report any pharmacogenomic effects (gene variants) on glimepiride PK/PD. |
 | PGx | Swen_2010 | not_relevant | 4 | 5 | The study reports a non-significant trend for glimepiride dose but concludes no clinical implication, lacking a significant quantitative pharmacogenomic effect on PK/PD parameters. |
 | PGx | Swen_2011 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetic guidelines for 53 drugs and does not report specific PK/PD data for glimepiride. |
-| PGx | Tateishi_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (bucolome inhibiting CYP2C9) affecting glimepiride PK/PD, but explicitly states the patient's CYP2C9 genotype was not determined, so no pharmacogenomic effect is reported. |
-| PGx | Thikekar_2022 | not_relevant | 0 | 0 | The study investigates herb-drug interactions in rats, not the effect of a gene variant/genotype on pharmacokinetics or pharmacodynamics. |
+| PGx | Tateishi_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (CYP2C9 inhibition by bucolome) affecting glimepiride, not a pharmacogenomic effect based on a specific gene variant or genotype. |
+| PGx | Thikekar_2022 | not_relevant | 0 | 0 | The study investigates herb-drug interactions in rats, not the effect of human gene variants or genotypes on glimepiride pharmacokinetics or pharmacodynamics. |
 | PGx | Tripathi_2015 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (glimepiride and sildenafil) in an animal model, not a pharmacogenomic effect of a gene variant on glimepiride's PK/PD. |
 | popPK | Utzschneider_2025 | irrelevant | 0 | 0 | The study focuses on beta-cell function parameters (insulin secretion, sensitivity) derived from OGTT modeling, not the pharmacokinetic disposition parameters (CL, V, ka) of glimepiride. |
 | PGx | Veeresham_2012 | not_relevant | 0 | 0 | The study investigates the effect of a drug-drug interaction (piperine) on glimepiride PK/PD, not a pharmacogenomic effect (gene variant/genotype). |
 | PGx | Viana_2018_2 | not_relevant | 0 | 0 | The study investigates the impact of drug polymorphs (solid-state forms) on PK/PD, not genetic variants or genotypes. |
-| PGx | Wolthuis_2024 | not_relevant | 5 | 0 | The paper is a clinical guideline that mentions CYP2C9 variants increase glimepiride levels but explicitly states no therapy adjustment is required and does not provide specific quantitative PK/PD effect sizes for glimepiride. |
+| PGx | Wolthuis_2024 | not_relevant | 5 | 2 | The paper is a clinical guideline that mentions CYP2C9 variants increase glimepiride levels but explicitly states no therapy adjustment is required and provides no quantitative PK/PD effect sizes. |
 | PGx | Xu_2009 | not_relevant | 5 | 2 | The paper is a review that discusses glimepiride only in the context of general sulfonylurea metabolism (CYP2C9) without reporting specific quantitative PK/PD data or fitted effect sizes for glimepiride itself. |
 | popPK | Yang_2025 | irrelevant | 0 | 0 | The paper is a review on in silico modeling and AI for drug disposition across the lifespan and does not report any pharmacokinetic parameters for glimepiride. |
 | popPK | Yoo_2011 | relevant | 10 | 2 | The study is a population PK analysis of glimepiride in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text, only relative fold-changes. |
@@ -194,7 +190,7 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Zachařová_2012 | not_relevant | 0 | 0 | The paper investigates the effect of rosuvastatin on CYP enzyme expression in rats and mentions glimepiride only as a potential drug interaction in humans, without reporting any pharmacogenomic data or PK/PD parameters for glimepiride. |
 | popPK | de_2024 | irrelevant | 2 | 0 | The study uses glimepiride as a comparator drug in a PBK model for cholestasis risk, but does not report specific quantitative PK parameters (CL, V, ka) for glimepiride in the provided text. |
 | popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 61 chars of text extracted (&lt; 400) |
-| PGx | van_2013 | not_relevant | 0 | 0 | The study investigates the effect of OATP1B1 genotype on the pharmacokinetics of rosuvastatin, not glimepiride. |
+| PGx | van_2013 | not_relevant | 0 | 0 | The study investigates drug-drug interactions where glimepiride inhibits the transport of rosuvastatin, rather than how a gene variant affects the pharmacokinetics or pharmacodynamics of glimepiride itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 02:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 01:24 UTC</sub>

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A thiazide diuretic with actions and uses similar to those of hydrochlorothiazide. (From Martindale, The Extra Pharmacopoeia, 30th ed, p826)
+Polythiazide is a thiazide diuretic used to treat high blood pressure, congestive heart failure, nephrotic syndrome, and anasarka (fluid retention). It is an approved drug, though it appears to be little used today and is not authorised in the European Union.
 
-**Indication.** Polythiazide is a thiazide diuretic used to decrease edema and decrease blood pressure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7227099](https://www.wikidata.org/wiki/Q7227099) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

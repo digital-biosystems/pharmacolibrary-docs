@@ -16,11 +16,11 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The triflusal–HTB parent–metabolite record was rejected because the estimates table was mis-split: the column 'description (units)', which holds table statistics, was read as a study population, and a structural parameter failed a dimension check (C5).**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+The record covers triflusal and its metabolite HTB in healthy Korean male volunteers, with metabolism linked by the rate constant Kfm and parameters including Q2 (intercompartmental clearance between central and second peripheral compartment) and CL/F for HTB. The established finding is that 'description (units)' is a column of the estimates table, not a study population: the table was split into one record per column, and that column holds a statistic rather than a second set of estimates. A dimension mismatch was additionally flagged on a structural parameter, so the record was rejected. No parameter values were extracted.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `triflusal`, measured `HTB`.
 

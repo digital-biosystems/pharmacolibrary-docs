@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tapentadol
 
@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Tapentadol is a centrally-acting synthetic analgesic with a dual mechanism of action. It is a mu-opioid receptor agonist that also inhibits norepinephrine reuptake.[A260721, A36596]
+Tapentadol is an opioid painkiller used to treat moderate to severe pain, including pain associated with fibromyalgia. It is an approved medicine and is widely used as an analgesic, though it carries a boxed warning.
 
-Tapentadol was first approved by the FDA on November 20, 2008. The extended-release formulation of tapentadol was also approved by the FDA on August 26, 2011.[L47291] Used in the management of pain, tapentadol is typically reserved for patients who have limited alternative treatment options.
-
-**Indication.** Tapentadol is indicated for the management of acute pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate. Due to the risks of addiction, drug abuse, and drug misuse, tapentadol is reserved for patients for whom alternative treatment options are unavailable.[L47286, L47516, L47521]
-
-The immediate-release tapentadol oral tablets are approved for use in patients six years and older with a body weight of at least 40 kg.[L47286] Tapentadol oral solution is used in patients aged six years and older with a body weight of at least 16 kg.[L47521] These formulations are not intended for long-term use unless the pain remains severe enough to require an opioid analgesic, for which alternative treatment options remain inadequate.
-
-The extended-release tablets of tapentadol are indicated for the management of pain severe enough to require daily, around-the-clock, long-term opioid treatment and for which alternative treatment options are inadequate. They are also indicated for the management of neuropathic pain associated with diabetic peripheral neuropathy (DPN) in adults severe enough to require daily, around-the-clock, long-term opioid treatment and for which alternative treatment options are inadequate. This formulation is not indicated as an as-needed (prn) analgesic.[L47516]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414463](https://www.wikidata.org/wiki/Q414463) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -35,16 +29,16 @@ The extended-release tablets of tapentadol are indicated for the management of p
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 20:44 | 1:03 | 1/1/2 | 1/0/0 | 0/0/2 | 25,324/1,738 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 4/11 | 13/2 | 0 |
+| 2026-09-26 20:44 | 1:03 | 0/1/3 | 1/0/0 | 0/0/2 | 25,324/1,738 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 4/11 | 13/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Watson_2019_reference](drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+2 cov.) | Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019) | [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19, Q18 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Jończyk_2022_reference](drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md) | — | general linear (no model) | 7 | Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain research (2022) | [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Khalil_2020_final](drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md) | — | 1-compartment (no model) | 6 (+3 cov.) | Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020) | [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2017_reference](drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md) | — | 1-compartment (no model) | 0 | Zhang L et al., Quantifying the Exposure of Tapentadol…, Clinical drug investigation (2017) | [10.1007/s40261-016-0482-z](https://doi.org/10.1007/s40261-016-0482-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q47 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Khalil_2020_final](drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md) | — | 1-compartment (no model) | 6 (+3 cov.) | Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020) | [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Watson_2019_reference](drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+2 cov.) | Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019) | [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2017_reference](drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md) | — | 1-compartment (no model) | 0 | Zhang L et al., Quantifying the Exposure of Tapentadol…, Clinical drug investigation (2017) | [10.1007/s40261-016-0482-z](https://doi.org/10.1007/s40261-016-0482-z) |
 
 ## Pharmacodynamics (PD)
 
@@ -72,12 +66,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…due to extensive first-pass metabolism…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` metabolism/substrate, `CYP2C9` substrate, `CYP2D6` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…99% excreted via the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -93,7 +87,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 46 matched, 46 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

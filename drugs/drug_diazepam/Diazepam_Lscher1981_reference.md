@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;L\u00f6scher_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1976_reference&quot;,&quot;label&quot;:&quot;Klotz_1976_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1976_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,21 +19,19 @@
 
 ### Reviewer guidance
 
-**The diazepam record was rejected because the metabolite oxazepam is unlinked to the dose: the metabolism path runs diazepam → desmethyldiazepam → oxazepam, while the second reader found oxazepam and 3-hydroxydiazepam formed directly from diazepam.**
+**This paper's disposition core is incomplete.**
 
-The record, built from the paper's abstract only, carries summary statistics (t1/2β 3.2 hr, t1/2z 5.7 hr, Cmax 100 ng/ml, CL 3.8 L/h, V 4.7 L/kg) rather than a fitted model, and several parameters (Fab, AUC%ext, Css) have no values. The structure check flagged oxazepam as unreachable from the dose under the recorded metabolism links. A second reader also disputed the link structure, proposing direct diazepam → oxazepam and diazepam → 3-hydroxydiazepam metabolism, and could not confirm the reported half-life and Cmax values. Extracted — diazepam: t1/2β 3.2 hr, Cmax 100 ng/ml, t1/2z 5.7 hr, CL 3.8 L/h, V 4.7 L/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aurélie_2023, Cavallaro_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diazepam: t1/2β 3.2 hr, Cmax 100 ng/ml, t1/2z 5.7 hr, CL 1.24 L/h, V 4.7 L/kg, kabs 1.21 h−1, tlag 84.2 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.251903+00:00) predates the upstream re-run (2026-10-03 21:12:03.635555+00:00). Current validate status: `needs_review`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981)
 
 ## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="needs_review" stale="true" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="needs_review" stale="false" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

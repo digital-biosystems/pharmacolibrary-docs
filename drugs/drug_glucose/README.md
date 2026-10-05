@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Glucose, a simple sugar also known as dextrose, is used as an irrigating solution, a diagnostic agent in tests for diabetes, and a general nutrient. It is listed as a WHO essential medicine and remains widely used in medical care.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q37525](https://www.wikidata.org/wiki/Q37525) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

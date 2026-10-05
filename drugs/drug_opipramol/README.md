@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Opipramol has been used in trials studying the treatment of Dementia, Depression, Schizophrenia, Anxiety Disorders, and Psychosomatic Disorders.
+Opipramol is a tricyclic antidepressant, a non-selective monoamine reuptake inhibitor. It is not authorised in the European Union and is listed as investigational, so its current availability is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416562](https://www.wikidata.org/wiki/Q416562) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

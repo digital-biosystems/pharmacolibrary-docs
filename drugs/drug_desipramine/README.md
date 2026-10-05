@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Desipramine hydrochloride is a dibenzazepine-derivative tricyclic antidepressant (TCA). TCAs are structurally similar to phenothiazines. They contain a tricyclic ring system with an alkyl amine substituent on the central ring. In non-depressed individuals, desipramine does not affect mood or arousal, but may cause sedation. In depressed individuals, desipramine exerts a positive effect on mood. TCAs are potent inhibitors of serotonin and norepinephrine reuptake. Secondary amine TCAs, such as desipramine and nortriptyline, are more potent inhibitors of norepinephrine reuptake than tertiary amine TCAs, such as amitriptyline and doxepine. TCAs also down-regulate cerebral cortical &beta;-adrenergic receptors and sensitize post-synaptic serotonergic receptors with chronic use. The antidepressant effects of TCAs are thought to be due to an overall increase in serotonergic neurotransmission. TCAs also block histamine-H<sub>1</sub> receptors, &alpha;<sub>1</sub>-adrenergic receptors and muscarinic receptors, which accounts for their sedative, hypotensive and anticholinergic effects (e.g. blurred vision, dry mouth, constipation, urinary retention), respectively. See toxicity section below for a complete listing of side effects. Desipramine exerts less anticholinergic and sedative side effects compared to tertiary amine TCAs, such as amitriptyline and clomipramine. Desipramine may be used to treat depression, neuropathic pain (unlabeled use), agitation and insomnia (unlabeled use) and attention-deficit hyperactivity disorder (unlabeled use).
+Desipramine is a tricyclic antidepressant used for depression and has also been used for pain, attention deficit hyperactivity disorder, substance use disorder, and neurotic disorders. It remains an approved medicine, though it carries a boxed warning and is used less often than newer antidepressants.
 
-**Indication.** For relief of symptoms in various depressive syndromes, especially endogenous depression. It has also been used to manage chronic peripheral neuropathic pain, as a second line agent for the management of anxiety disorders (e.g. panic disorder, generalized anxiety disorder), and as a second or third line agent in the ADHD management.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423288](https://www.wikidata.org/wiki/Q423288) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` product, `CYP2B6` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLC22A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
 | excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-| excretion | liver | <sub>“…metabolized in the liver…”</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

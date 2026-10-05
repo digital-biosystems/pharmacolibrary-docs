@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Atogepant is an oral antagonist of calcitonin gene-related peptide (CGRP) receptors indicated for the prevention of episodic migraine headaches. It was developed by AbbVie and received FDA approval under the brand name Qulipta in September 2021.[L38814] While its approval was predated by two other members of the same drug family, namely [ubrogepant] and [rimegepant], these agents are indicated only for abortive migraine therapy - atogepant is novel in that it is the first and only oral CGRP antagonist approved for preventative use in migraine.[L38814] In December 2022, atogepant received Health Canada approval for the prevention of episodic migraine in adults.[L44642] It also received approval for preventive treatment of adult migraine by the EMA in August 2023.[L48016]
+Atogepant is a CGRP antagonist used to treat migraine. It is an approved medicine, authorised in the European Union for migraine disorders.
 
-In patients requiring preventative migraine therapy, current practice guidelines recommend the use of certain anti-epileptic medications (e.g. [valproic acid] or [topiramate]) or beta-blockers (e.g. [propranolol]), all of which can be associated with significant adverse effects.[A239094] The "gepants" family of drugs, including atogepant, are comparatively well-tolerated[A189207,L38739] and may provide a desirable treatment option for patients struggling with adverse reactions to other preventative therapies.
-
-**Indication.** Atogepant is indicated for the preventive treatment of migraine in adults by the FDA, EMA, and Health Canada.[L44647,L46033,L48001]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q76797798](https://www.wikidata.org/wiki/Q76797798) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,10 +48,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | bile duct | <sub>“…at least 10 other metabolites detected in feces…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…approximately 81% of the radioactivity was recovered in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` substrate, `SLC47A1` inhibitor | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
 

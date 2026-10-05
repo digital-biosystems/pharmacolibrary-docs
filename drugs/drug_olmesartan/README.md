@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;Olmesartan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Olmesartan
 
@@ -10,17 +10,9 @@
 
 ## About
 
-**Description.** Olmesartan belongs to the angiotensin II receptor blocker (ARB) family of drugs, which also includes [telmisartan], [candesartan], [losartan], [valsartan], and [irbesartan]. ARBs selectively bind to angiotensin receptor 1 (AT1) and prevent the protein angiotensin II from binding and exerting its hypertensive effects, which include vasoconstriction, stimulation and synthesis of aldosterone and ADH, cardiac stimulation, and renal reabsorption of sodium, among others. Overall, olmesartan's physiologic effects lead to reduced blood pressure, lower aldosterone levels, reduced cardiac activity, and increased excretion of sodium. 
+Olmesartan is an angiotensin II receptor blocker used to treat high blood pressure (arterial hypertension) and congestive heart failure. It is an approved medicine, available alone and in combination products with diuretics or calcium channel blockers.
 
-Olmesartan also affects the renin-angiotensin aldosterone system (RAAS), which plays an important role in hemostasis and regulation of kidney, vascular, and cardiac functions. Pharmacological blockade of RAAS via  AT1 receptor blockade inhibits negative regulatory feedback within RAAS, which is a contributing factor to the pathogenesis and progression of cardiovascular disease, heart failure, and renal disease. In particular, heart failure is associated with chronic activation of RAAS, leading to inappropriate fluid retention, vasoconstriction, and ultimately a further decline in left ventricular function. ARBs have been shown to have a protective effect on the heart by improving cardiac function, reducing afterload, increasing cardiac output and preventing ventricular hypertrophy and remodelling.[A174154] 
-
-By comparison, the angiotensin-converting enzyme inhibitor (ACEi) class of medications (which includes drugs such as [ramipril], [lisinopril], and [perindopril]) inhibit the conversion of angiotensin I to angiotensin II through inhibition of the ACE enzyme. However, this does not prevent the formation of all angiotensin II within the body. The angiotensin II receptor blocker (ARB) family of drugs unique in that it blocks all angiotensin II activity, regardless of where or how it was synthesized. 
-
-Olmesartan is commonly used for the ma
-
-**Indication.** Olmesartan is indicated for the treatment of hypertension either alone or in combination with other antihypertensive agents.[F4709,F4712,A173869] 
-
-Olmesartan is also used off-label for the management Type 2 Diabetes-associated nephropathy, heart failure, and post-myocardial infarction, particularly in patients who are unable to tolerate ACE inhibitors.[A178153,A185912,A185915] ARBs such as olmesartan have been shown in a number of large-scale clinical outcomes trials to improve cardiovascular outcomes including reducing risk of myocardial infarction, stroke, the progression of heart failure, and hospitalization.[A174124,A178153,A173869,A185324,A185327,A185333,A185342,A185345] Like other ARBs, olmesartan blockade of RAAS slows the progression of diabetic nephropathy due to its renoprotective effects.[A185906,A185909,A185912]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421156](https://www.wikidata.org/wiki/Q421156) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -35,14 +27,14 @@ Olmesartan is also used off-label for the management Type 2 Diabetes-associated 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 18:38 | 18:30 | 2/0/2 | 1/0/0 | 2/0/0 | 144,192/36,626 | openai / gpt-6-luna | 12 | 2/11 | 10/2 | 0 |
+| 2026-09-30 18:38 | 18:30 | 1/0/3 | 1/0/0 | 2/0/0 | 144,192/36,626 | openai / gpt-6-luna | 12 | 2/11 | 10/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kodati_2017_reference](drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Ren_2022_reference](drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ren T et al., Pharmacodynamic model of slow reversibl…, Journal of pharmacokinetics… (2022) | [10.1007/s10928-022-09822-y](https://doi.org/10.1007/s10928-022-09822-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kodati_2017_reference](drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Thoueille_2023_reference](drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Yoshihara_2005_reference](drugs/drug_olmesartan/Olmesartan_Yoshihara2005_reference.md) | — | 1-compartment (no model) | 6 | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) |
 
@@ -80,8 +72,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | liver | `SLC22A1` transport, `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | small intestine | <sub>“…bioactivated by ester hydrolysis to olmesartan during absorption from the gastrointestinal…”</sub> | prose |
-| excretion | bile duct | <sub>“…elimination route of olmesartan is in the unchanged form through the feces…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inducer/substrate | DrugBank actor |
 | excretion | liver | `ABCB11` inhibitor, `ABCC2` inducer/substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` inducer/substrate | DrugBank actor |
@@ -98,7 +90,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 121 matched, 57 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 2  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

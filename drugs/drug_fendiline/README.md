@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Fendiline is a coronary vasodilator which inhibits calcium function in muscle cells in excitation-contraction coupling. It has been proposed as an antiarrhythmic and antianginal agent. Fendiline is non-selective.
+Fendiline is a non-selective calcium channel blocker of the phenylalkylamine type, once used for cardiovascular conditions such as angina and high blood pressure. It is no longer in use, having been withdrawn from the market.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q999767](https://www.wikidata.org/wiki/Q999767) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

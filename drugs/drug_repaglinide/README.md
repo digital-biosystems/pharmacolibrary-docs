@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Repaglinide is an oral antihyperglycemic agent used for the treatment of non-insulin-dependent diabetes mellitus (NIDDM). It belongs to the meglitinide class of short-acting insulin secretagogues, which act by binding to β cells of the pancreas to stimulate insulin release. Repaglinide induces an early insulin response to meals decreasing postprandial blood glucose levels. It should only be taken with meals and meal-time doses should be skipped with any skipped meal. Approximately one month of therapy is required before a decrease in fasting blood glucose is seen. Meglitnides may have a neutral effect on weight or cause a slight increase in weight. The average weight gain caused by meglitinides appears to be lower than that caused by sulfonylureas and insulin and appears to occur only in those naïve to oral antidiabetic agents. Due to their mechanism of action, meglitinides may cause hypoglycemia although the risk is thought to be lower than that of sulfonylureas since their action is dependent on the presence of glucose. In addition to reducing postprandial and fasting blood glucose, meglitnides have been shown to decrease glycosylated hemoglobin (HbA1c) levels, which are reflective of the last 8-10 weeks of glucose control. Meglitinides appear to be more effective at lowering postprandial blood glucose than metformin, sulfonylureas and thiazolidinediones. Repaglinide is extensively metabolized in the liver and excreted in bile. Repaglinide metabolites do not possess appreciable hypoglycemic activity. Approximately 90% of a single orally administered dose is eliminated in feces and 8% in urine.
+Repaglinide is an oral anti-diabetic medicine used to lower blood sugar in people with type 2 diabetes. It is authorised in the European Union and is widely used as a blood glucose-lowering drug, both alone and in combination products.
 
-**Indication.** As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2195995](https://www.wikidata.org/wiki/Q2195995) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -28,22 +28,22 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:51 | 4:13 | 0/2/1 | 1/0/0 | 0/0/0 | 70,161/9,938 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
+| 2026-10-05 03:06 | 4:34 | 0/2/1 | 1/0/0 | 0/0/0 | 71,250/10,162 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.44). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Doki_2018_reference](drugs/drug_repaglinide/Repaglinide_Doki2018_reference.md) | — | parent + metabolite (no model) | 6 (+7 cov.) | Doki K et al., Implications of intercorrelation betwee…, British journal of clinical… (2018) | [10.1111/bcp.13533](https://doi.org/10.1111/bcp.13533) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gertz_2014_reference](drugs/drug_repaglinide/Repaglinide_Gertz2014_reference.md) | — | 1-compartment (no model) | 0 | Gertz M et al., Reduced physiologically-based pharmacok…, Pharmaceutical research (2014) | [10.1007/s11095-014-1333-3](https://doi.org/10.1007/s11095-014-1333-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_reference](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md) | — | 1-compartment (no model) | 2 | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gertz_2014_reference](drugs/drug_repaglinide/Repaglinide_Gertz2014_reference.md) | — | 1-compartment (no model) | 0 | Gertz M et al., Reduced physiologically-based pharmacok…, Pharmaceutical research (2014) | [10.1007/s11095-014-1333-3](https://doi.org/10.1007/s11095-014-1333-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_reference](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md) | — | 1-compartment (no model) | 2 | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mele_2014_fibers_viability](drugs/drug_repaglinide/pd_Mele_2014_fibers_viability.md) | fibers viability ← repaglinide · direct Emax (saturable) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mele_2014_protein_content_muscle_weight](drugs/drug_repaglinide/pd_Mele_2014_protein_content_muscle_weight.md) | protein content/muscle weight ← repaglinide · direct Emax (saturable) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mele_2014_fibers_viability](drugs/drug_repaglinide/pd_Mele_2014_fibers_viability.md) | fibers viability ← repaglinide · direct sigmoid Emax (Hill) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mele_2014_protein_content_muscle_weight](drugs/drug_repaglinide/pd_Mele_2014_protein_content_muscle_weight.md) | protein content/muscle weight ← repaglinide · direct sigmoid Emax (Hill) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
 
 ## ADME sites
 
@@ -51,12 +51,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly and completely absorbed following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…90% eliminated in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…8% in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABCC8 (inhibitor), ABCC9 (blocker), HRH1 (target), PPARG (target).</sub>
@@ -71,19 +71,20 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 292 matched, 58 returned
 - **screened:** 9  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 1
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_21 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_22 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ruzilawati_2010.pdf` | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) | [20175819](https://pubmed.ncbi.nlm.nih.gov/20175819) | The paper reports quantitative population pharmacokinetic parameters (kel, Vd) for repaglinide in humans, with values explicitly stated in the abstract. |
-| `Gertz_2014.pdf` | Gertz M et al., Reduced physiologically-based pharmacok…, Pharmaceutical research (2014) | popPK | 9 | [10.1007/s11095-014-1333-3](https://doi.org/10.1007/s11095-014-1333-3) | [24623479](https://pubmed.ncbi.nlm.nih.gov/24623479) | The paper reports quantitative pharmacokinetic parameters (hepatic uptake clearance CLuptake) for repaglinide in humans using a PBPK model, with specific numeric values provided in the abstract. |
-| `Haidar_2002.pdf` | Haidar SH et al., Modeling the pharmacokinetics and pharm…, Pharmaceutical research (2002) | popPK | 8 | [10.1023/a:1013611617787](https://doi.org/10.1023/a:1013611617787) | [11837705](https://pubmed.ncbi.nlm.nih.gov/11837705) | The paper describes a population PK/PD modeling study for repaglinide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence, only covariate influences and model performance metrics. |
-| `Liu_2000.pdf` | Liu XD et al., A double-site absorption model fits to…, European journal of drug me… (2000) | popPK | 8 | [10.1007/BF03190077](https://doi.org/10.1007/BF03190077) | [11112092](https://pubmed.ncbi.nlm.nih.gov/11112092) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, and time constants) for repaglinide in humans using a compartmental model. |
+| `Ruzilawati_2010.pdf` | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) | [20175819](https://pubmed.ncbi.nlm.nih.gov/20175819) | The study reports quantitative population PK parameters (kel, Vd) for repaglinide in humans, with values explicitly stated in the abstract. |
+| `Gertz_2014.pdf` | Gertz M et al., Reduced physiologically-based pharmacok…, Pharmaceutical research (2014) | popPK | 9 | [10.1007/s11095-014-1333-3](https://doi.org/10.1007/s11095-014-1333-3) | [24623479](https://pubmed.ncbi.nlm.nih.gov/24623479) | The paper reports a PBPK model for repaglinide with specific numeric values for hepatic uptake clearance (CLuptake) derived from population analysis, though standard systemic PK parameters like total CL or V are not explicitly listed in the provided text. |
+| `Liu_2000.pdf` | Liu XD et al., A double-site absorption model fits to…, European journal of drug me… (2000) | popPK | 9 | [10.1007/BF03190077](https://doi.org/10.1007/BF03190077) | [11112092](https://pubmed.ncbi.nlm.nih.gov/11112092) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, and time constants) for repaglinide in humans using a compartmental model, with values explicitly listed in the evidence. |
+| `Cao_2012.pdf` | Cao Y et al., Applications of minimal physiologically…, Journal of pharmacokinetics… (2012) | popPK | 8 | [10.1007/s10928-012-9280-2](https://doi.org/10.1007/s10928-012-9280-2) | [23179857](https://pubmed.ncbi.nlm.nih.gov/23179857) | The paper describes a minimal-PBPK model for repaglinide in humans and mentions providing separate estimates of clearance and bioavailability, but no specific numeric parameter values are present in the provided evidence. |
+| `Haidar_2002.pdf` | Haidar SH et al., Modeling the pharmacokinetics and pharm…, Pharmaceutical research (2002) | popPK | 8 | [10.1023/a:1013611617787](https://doi.org/10.1023/a:1013611617787) | [11837705](https://pubmed.ncbi.nlm.nih.gov/11837705) | The paper describes a population PK/PD model for repaglinide in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence, only covariate influences and error metrics. |
 | `Li_2012.pdf` | Li C et al., Effects of efonidipine on the pharmacok…, Journal of pharmacokinetics… (2012) | pd | 5 | [10.1007/s10928-011-9234-0](https://doi.org/10.1007/s10928-011-9234-0) | [22210483](https://www.ncbi.nlm.nih.gov/pubmed/22210483) | metadata signals extractable PD data (indirectresponse) |
 | `Lim_2004.pdf` | Lim JG et al., Taurine block of cloned ATP-sensitive K…, Biochemical pharmacology (2004) | pd | 4 | [10.1016/j.bcp.2004.05.050](https://doi.org/10.1016/j.bcp.2004.05.050) | [15294453](https://www.ncbi.nlm.nih.gov/pubmed/15294453) | metadata signals extractable PD data (IC50) |
 | `Kalliokoski_2010.pdf` | Kalliokoski A et al., SLCO1B1 polymorphism and oral antidiabe…, Basic & clinical pharmacolo… (2010) | pgx | 8 | [10.1111/j.1742-7843.2010.00581.x](https://doi.org/10.1111/j.1742-7843.2010.00581.x) | [20406215](https://www.ncbi.nlm.nih.gov/pubmed/20406215) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
@@ -102,25 +103,25 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Xiao_2015.pdf` | Xiao Q et al., Physiologically based pharmacokinetics…, Biopharmaceutics & drug dis… (2015) | pgx | 7 | [10.1002/bdd.1987](https://doi.org/10.1002/bdd.1987) | [26296069](https://www.ncbi.nlm.nih.gov/pubmed/26296069) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
 | `Gan_2010.pdf` | Gan J et al., Repaglinide-gemfibrozil drug interactio…, British journal of clinical… (2010) | pgx | 5 | [10.1111/j.1365-2125.2010.03772.x](https://doi.org/10.1111/j.1365-2125.2010.03772.x) | [21175442](https://www.ncbi.nlm.nih.gov/pubmed/21175442) | metadata signals extractable PGX data (UGT1A1) |
 
-<sub>queue written 2026-10-01T17:48:13.601140+00:00</sub>
+<sub>queue written 2026-10-05T03:02:53.282994+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Aurinsalo_2026 | not_relevant | 0 | 0 | The study investigates food-drug interactions (grapefruit juice/lingonberry) rather than pharmacogenomic effects of gene variants on repaglinide PK. |
-| popPK | Cao_2012 | irrelevant | 2 | 0 | The paper is a methodological review proposing a modeling approach; while repaglinide is mentioned as one of four drugs used to demonstrate the model, no specific quantitative PK parameter values for repaglinide are provided in the evidence. |
+| popPK | Cao_2012 | relevant | 8 | 0 | The paper describes a minimal-PBPK model for repaglinide in humans and mentions providing separate estimates of clearance and bioavailability, but no specific numeric parameter values are present in the provided evidence. |
 | PGx | Chen_2015 | not_relevant | 5 | 2 | The text is a review abstract that discusses general pharmacogenomic associations for glinides but does not report specific quantitative PK/PD parameter changes for repaglinide. |
 | PGx | Cheng_2025 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (SHR4640 on repaglinide) and does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | PGx | Dai_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (napabucasin affecting repaglinide PK) in healthy volunteers, not a pharmacogenomic effect (gene variant/genotype) on repaglinide. |
 | PGx | Doki_2018 | not_relevant | 0 | 0 | The study investigates the impact of inter-correlation between CYP3A4 and CYP2C8 enzyme abundances on PK variability using PBPK modeling, rather than the effect of specific gene variants or genotypes on pharmacokinetic parameters. |
 | PGx | Fu_2023 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (DDI) with SHR0302, not the effect of genetic variants on repaglinide pharmacokinetics. |
-| popPK | Fuhlendorff_1998 | irrelevant | 0 | 0 | The study focuses on pharmacodynamics (insulin secretion, binding affinity, ED50) and mechanism of action, not pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Fuhlendorff_1998 | irrelevant | 0 | 0 | The study focuses on the mechanism of insulin secretion and binding affinity (KD, EC50, ED50) rather than pharmacokinetic disposition parameters like clearance or volume. |
 | PGx | Gan_2010 | not_relevant | 2 | 5 | The study investigates a drug-drug interaction (gemfibrozil inhibiting UGT1A1-mediated glucuronidation) and mentions genotyping for UGT1A1*28, but it does not report a pharmacogenomic effect (genotype-driven change) on a PK/PD parameter; rather, it focuses on the mechanism of enzyme inhibition by a co-administered drug. |
-| popPK | Haidar_2002 | relevant | 8 | 2 | The paper describes a population PK/PD modeling study for repaglinide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence, only covariate influences and model performance metrics. |
+| popPK | Haidar_2002 | relevant | 8 | 2 | The paper describes a population PK/PD model for repaglinide in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence, only covariate influences and error metrics. |
 | PGx | Hartauer_2024 | not_relevant | 0 | 0 | The paper focuses on a PBPK modeling study of rifampicin-mediated drug-drug interactions and zonal OATP1B distribution, not on the effect of a specific gene variant or genotype on repaglinide pharmacokinetics. |
 | PGx | Hoosain_2016 | not_relevant | 2 | 0 | The paper reports allele frequencies in specific populations and mentions a known association with repaglinide plasma concentrations, but it does not present new data or fitted effect sizes for repaglinide PK/PD parameters. |
-| popPK | Hu_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of insulin secretion in rat islets, not a pharmacokinetic study, and repaglinide is used only as a comparator agent. |
+| popPK | Hu_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of insulinotropic effects on rat islets and does not report pharmacokinetic parameters for repaglinide. |
 | PGx | Ishii_2018 | not_relevant | 0 | 0 | The paper reports drug-drug interactions of BFE1224, not pharmacogenomic effects of gene variants on repaglinide PK/PD. |
 | PGx | Jaiswal_2025 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDI) involving dordaviprone and CYP enzymes, not pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
 | PGx | Kahma_2024 | not_relevant | 0 | 0 | The paper investigates the time-dependent inhibition of CYP enzymes by drug glucuronides in vitro and does not report any pharmacogenomic effects on the PK/PD of repaglinide. |
@@ -135,8 +136,8 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Mele_2014 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of muscle atrophy and does not report pharmacokinetic parameters for repaglinide. |
 | popPK | Melillo_2019 | irrelevant | 0 | 0 | no_text gate: only 177 chars of text extracted (&lt; 400) |
 | PGx | Melillo_2019 | not_relevant | 0 | 0 | The paper is a simulation study on global sensitivity analysis in PBPK modeling and does not report pharmacogenomic effects on repaglinide. |
-| popPK | Ménochet_2012 | irrelevant | 2 | 0 | The study is an in-vitro mechanistic model of hepatocyte uptake and metabolism, not a population pharmacokinetic study reporting standard disposition parameters (CL, V, t1/2) for the drug in vivo. |
-| popPK | Ménochet_2012_2 | irrelevant | 2 | 0 | The study is an in-vitro mechanistic modeling study of hepatocyte uptake transporters, not a pharmacokinetic study reporting systemic disposition parameters (CL, V, t1/2) for repaglinide. |
+| popPK | Ménochet_2012 | irrelevant | 2 | 0 | The study is an in-vitro mechanistic model of hepatocyte uptake and metabolism, not a population pharmacokinetic study reporting systemic disposition parameters (CL, V, t1/2) for repaglinide. |
+| popPK | Ménochet_2012_2 | irrelevant | 2 | 0 | The study is an in-vitro mechanistic modeling of hepatocyte uptake transporters, not a pharmacokinetic study reporting systemic disposition parameters (CL, V, t1/2) for repaglinide. |
 | PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper investigates the mechanism of gemfibrozil's inhibition of CYP2C8 and its implications for drug-drug interactions with repaglinide, but it does not report any pharmacogenomic effects (gene variants) on repaglinide's PK or PD parameters. |
 | PGx | Pakkir_2018 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP enzymes and OATP1B1, not pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
 | PGx | Sang_2025 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions of isavuconazole and does not report pharmacogenomic effects on repaglinide PK/PD. |
@@ -145,11 +146,11 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Türk_2020 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for trimethoprim and its interactions; repaglinide is only mentioned as a co-administered drug in DDI predictions, not as the subject of a pharmacogenomic study. |
 | PGx | Varma_2013 | not_relevant | 0 | 0 | The paper focuses on mechanistic modeling of drug-drug interactions (DDIs) involving inhibitors, not on pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
 | PGx | Wang_2015 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions involving clopidogrel and does not report pharmacogenomic effects on repaglinide PK/PD parameters. |
-| popPK | Wängler_2004 | irrelevant | 0 | 0 | The study is an in vitro synthesis and binding affinity evaluation of a radiolabeled analog, not a pharmacokinetic study reporting disposition parameters for repaglinide. |
-| popPK | Wängler_2004_2 | irrelevant | 1 | 0 | The study focuses on the synthesis and PET imaging properties of a radiolabeled derivative of repaglinide, reporting biodistribution percentages and binding affinity (Kd) rather than standard pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Wängler_2004 | irrelevant | 0 | 0 | The study is an in vitro synthesis and binding affinity evaluation of a radiolabeled analog, not a pharmacokinetic study of repaglinide. |
+| popPK | Wängler_2004_2 | irrelevant | 1 | 0 | The study focuses on the synthesis and PET imaging properties of a radiolabeled derivative of repaglinide, reporting biodistribution percentages and binding affinity (Kd) rather than standard pharmacokinetic disposition parameters (CL, V, ka) for the parent drug. |
 | PGx | Xiao_2015 | not_relevant | 0 | 0 | The study investigates drug-drug interaction (repaglinide inhibiting pioglitazone) and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | PGx | Yılmaz_2022 | not_relevant | 0 | 0 | The paper discusses the diagnosis of MODY using HbA1c and GCK variants, but does not mention repaglinide or any pharmacokinetic/pharmacodynamic parameters of the drug. |
 | PGx | Zhang_2006 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on nateglinide, not repaglinide. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-01 17:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 03:03 UTC</sub>

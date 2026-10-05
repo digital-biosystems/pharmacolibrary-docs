@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tamoxifen
 
@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Tamoxifen is a non-steroidal antiestrogen used to treat estrogen receptor positive breast cancers as well as prevent the incidence of breast cancer in high risk populations.[A1025,L7799,L7802] Tamoxifen is used alone or as an adjuvant in these treatments.[L7799,L7802] Tamoxifen may no longer be the preferred treatment for these types of cancers as patients generally have better survival, side effect profiles, and compliance with [anastrozole].[A1026]
+Tamoxifen is an anti-estrogen medicine used to treat breast cancer, and it has also been used for pancreatic cancer and infant gynecomastia. It is an approved drug that is widely used, mainly in the hormonal treatment of breast cancer.
 
-Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
-
-**Indication.** Tamoxifen is indicated to treat estrogen receptor positive metastatic breast cancer in adults, as an adjuvant in the treatment of early stage estrogen receptor positive breast cancer in adults, to reduce the risk of invasive breast cancer after surgery and radiation in adult women with ductal carcinoma in situ.[L7802]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412178](https://www.wikidata.org/wiki/Q412178) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -40,11 +38,11 @@ Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Xu_2026_reference](drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Xu H et al., Noncanonical NF-κB pathway driven infla…, Frontiers in immunology (2026) | [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Xu_2026_reference](drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Xu H et al., Noncanonical NF-κB pathway driven infla…, Frontiers in immunology (2026) | [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.647). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [ter_2014_reference](drugs/drug_tamoxifen/Tamoxifen_ter2014_reference.md) | — | general linear (no model) | 11 | ter Heine R et al., Population pharmacokinetic modelling to…, British journal of clinical… (2014) | [10.1111/bcp.12388](https://doi.org/10.1111/bcp.12388) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Centanni_2024_reference](drugs/drug_tamoxifen/Tamoxifen_Centanni2024_reference.md) | — | 1-compartment (no model) | 0 | Centanni M et al., Pharmacogenetic Testing or Therapeutic…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01382-3](https://doi.org/10.1007/s40262-024-01382-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dilli_2022_reference](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md) | ▶ model + simulator | 1-compartment general linear | 0 | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Mc_2024_reference](drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md) | held back | 1-compartment, IV | 0 | Mc Laughlin AM et al., Nonlinear Mixed-Effects Model of Z-Endo…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3238](https://doi.org/10.1002/cpt.3238) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dilli_2022_reference](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md) | — | parent + metabolite (no model) | 0 | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Mc_2024_reference](drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md) | — | parent + metabolite (no model) | 0 | Mc Laughlin AM et al., Nonlinear Mixed-Effects Model of Z-Endo…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3238](https://doi.org/10.1002/cpt.3238) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Mueller-Schoell_2020_reference](drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md) | — | parent + metabolite (no model) | 6 (+1 cov.) | Mueller-Schoell A et al., Obesity Alters Endoxifen Plasma Levels…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1960](https://doi.org/10.1002/cpt.1960) |
 
 ## Pharmacodynamics (PD)
@@ -125,7 +123,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | lung | `CYP1A1` substrate, `CYP1B1` inhibitor/substrate | DrugBank actor |
 | metabolism | skin | `CYP1B1` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inducer/inhibitor/metabolism/substrate, `CYP3A5` metabolism/substrate, `SULT1A1` metabolism/substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…24.7% in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` substrate | DrugBank actor |
 | excretion | liver | `ABCB11` inhibitor, `ABCC2` substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` substrate | DrugBank actor |
@@ -146,7 +144,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 2287 matched, 109 returned
 - **screened:** 33  ·  **relevant:** 2
-- **records:** 6  ·  extracted 1  ·  needs_review 1  ·  rejected 4  ·  stale 3
+- **records:** 6  ·  extracted 1  ·  needs_review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

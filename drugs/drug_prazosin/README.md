@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Prazosin is a drug used to treat hypertension.  Prazosin is marketed by _Pfizer_ and was initially approved by the FDA in 1988.[L5828]  It belongs to the class of drugs known as alpha-1 antagonists.
+Prazosin is an alpha-blocker used to treat high blood pressure, and has also been used for conditions such as post-traumatic stress disorder, prostate enlargement, Raynaud disease, and urinary retention. It is an approved medicine and remains in use, though it is not authorised centrally in the European Union.
 
-Recently, many studies have evaluated the benefits of this drug in controlling the symptoms of post-traumatic stress disorder (PTSD) and associated nightmares.[A176618, A176621, A176624]
-
-**Indication.** This drug is indicated for the treatment of hypertension (high blood pressure). Prazosin can be given alone or given with other blood pressure-lowering drugs, including diuretics or beta-adrenergic blocking agents [FDA label].
-
-Prazosin does not negatively impact lung function, and therefore may be used to manage hypertension in patients who are asthmatic or patients with chronic obstructive lung disease (COPD)[A176630].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425296](https://www.wikidata.org/wiki/Q425296) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -39,9 +35,9 @@ Prazosin does not negatively impact lung function, and therefore may be used to 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Grahnén_1981_reference](drugs/drug_prazosin/Prazosin_Grahnn1981_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Grahnén A et al., Prazosin kinetics in hypertension, Clinical pharmacology and t… (1981) | [10.1038/clpt.1981.186](https://doi.org/10.1038/clpt.1981.186) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Grahnén_1981_reference](drugs/drug_prazosin/Prazosin_Grahnn1981_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Grahnén A et al., Prazosin kinetics in hypertension, Clinical pharmacology and t… (1981) | [10.1038/clpt.1981.186](https://doi.org/10.1038/clpt.1981.186) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Meredith_1985_reference](drugs/drug_prazosin/Prazosin_Meredith1985_reference.md) | — | parent + metabolite (no model) | 2 | Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985) | [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Rubin_1979_reference](drugs/drug_prazosin/Prazosin_Rubin1979_reference.md) | — | 1-compartment (no model) | 4 | Rubin P et al., Prazosin first-pass metabolism and hepa…, Journal of cardiovascular p… (1979) | [10.1097/00005344-197911000-00005](https://doi.org/10.1097/00005344-197911000-00005) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Rubin_1979_reference](drugs/drug_prazosin/Prazosin_Rubin1979_reference.md) | — | 1-compartment (no model) | 4 | Rubin P et al., Prazosin first-pass metabolism and hepa…, Journal of cardiovascular p… (1979) | [10.1097/00005344-197911000-00005](https://doi.org/10.1097/00005344-197911000-00005) |
 
 ## ADME sites
 
@@ -61,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
 | metabolism | liver | `SLC22A1` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly excreted in the bile and the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (binder), ADRA2B (binder), KCNH2 (inhibitor).</sub>
 

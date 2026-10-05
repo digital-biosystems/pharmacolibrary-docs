@@ -11,21 +11,9 @@
 
 ## About
 
-**Description.** Pemetrexed is a chemotherapy drug that is manufactured and marketed by Eli Lilly and Company under the brand name Alimta. It is indicated for use in combination with cisplatin for the treatment of patients with malignant pleural mesothelioma whose disease is either unresectable or who are otherwise not candidates for curative surgery. Its use in non-small cell lung cancer has also been investigated. Pemetrexed was first approved by the FDA in February 4, 2004.[A253907]
+Pemetrexed is an anticancer drug used to treat non-small-cell lung cancer and mesothelioma. It is an approved antifolate chemotherapy, with several products authorised in the European Union.
 
-**Indication.** Pemetrexed is indicated for the treatment of the following conditions:
-
-**Non-squamous non-small cell lung cancer (NSCLC)**
-
-- in combination with [pembrolizumab] and platinum-based chemotherapy as initial treatment in metastatic disease where no EGFR or ALK genomic tumour aberrations exist [L40943]
-- in combination with [cisplatin] as initial treatment for locally advanced or metastatic disease [L40943,L44883]
-- as maintenance treatment for locally advanced or metastatic disease that has not progressed following four cycles of platinum-based chemotherapy [L40943,L44883]
-- recurrent metastatic disease following prior chemotherapy [L40943]
-- as monotherapy for the second-line treatment of patients with locally advanced or metastatic non-squamous non-small cell lung cancer [L44883]
-
-**Malignant pleural mesothelioma**
-
-- in combination with [cisplatin] for the initial treatment of patients with malignant pleural mesothelioma.[L40943,L44883] In the US, it is reserved for patients whose disease is unresectable or otherwise not candidates for curative surgery.[L40943]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415220](https://www.wikidata.org/wiki/Q415220) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

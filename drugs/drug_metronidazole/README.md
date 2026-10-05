@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Metronidazole is a commonly used antibiotic, belonging to the nitroimidazole class of antibiotics.[L3754] It is frequently used to treat gastrointestinal infections as well as trichomoniasis and giardiasis, and amebiasis which are parasitic infections.[A181036,A181039] Metronidazole has been used as an antibiotic for several decades[L7429], with added antiparasitic properties that set it apart from many other antibacterial drugs, allowing it to treat a wide variety of infections. It is available in capsule form, tablet form, and topical form, and suppository preparations for the treatment of various infections.
+Metronidazole is an antibacterial and antiprotozoal drug used to treat infections such as bacterial vaginosis, amebiasis, giardiasis, abscesses, rosacea, and to help eradicate Helicobacter pylori. It is widely used around the world and appears on the WHO essential medicines list, available in oral, topical, and gynecological formulations.
 
-**Indication.** Metronidazole is indicated for the treatment of confirmed trichomoniasis caused by Trichomonas vaginalis (except for in the first trimester of pregnancy) and the patient's sexual partners, bacterial vaginosis,[L7432, L49811] certain types of amebiasis, and various anaerobic infections.[A181057, L49811] The above anaerobic infections may occur on the skin and skin structures, the abdomen, the heart, reproductive organs, central nervous system, and the respiratory system. Some may also be present in the bloodstream in cases of septicemia. Common infections treated by metronidazole are Bacteroides species infections, Clostridium infections, and Fusobacterium infections, as well as Peptococcus and Peptostreptococcus infections.[L3754] Topical formulations of metronidazole are indicated for the treatment of inflammatory lesions of rosacea.[L45166]
-
-It is also used off-label in the treatment of Crohn's disease, as a prophylactic agent after surgery[A181039], and in the treatment of Helicobacter pylori infection.[A181045] It has also been studied in the prevention of preterm births and to treat periodontal disease.[A1391,A181078]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q169569](https://www.wikidata.org/wiki/Q169569) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -46,14 +44,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | skin | <sub>“…Insignificant percutaneous absorption of metronidazole occurs after the application of 1%…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2A6` substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…6-15% excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…60 to 80% eliminated in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Anaerobic bacterial DNA (inhibitor), Protozoal DNA (inhibitor).</sub>
 

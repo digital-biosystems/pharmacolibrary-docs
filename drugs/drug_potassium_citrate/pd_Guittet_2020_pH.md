@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12B&quot;,&quot;href&quot;:&quot;atc/A12B.md&quot;},{&quot;label&quot;:&quot;potassium citrate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_citrate/&quot;},{&quot;label&quot;:&quot;Guittet_2020 \u00b7 PD pH&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12B&quot;,&quot;href&quot;:&quot;atc/A12B.md&quot;},{&quot;label&quot;:&quot;potassium citrate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_citrate/&quot;},{&quot;label&quot;:&quot;Guittet_2020 \u00b7 PD mean 24-h urine pH&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pH — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# mean 24-h urine pH — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,14 +13,18 @@
 
 ## What this record describes
 
-**As extracted:** Potassium citrate dose (CK, mg/kg) (the dose) drive pH (in 24-h mean urine pH): direct Emax (saturable) effect.
+**As extracted:** Dose (the dose) drives mean 24-h urine pH: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> The paper describes a direct Emax relationship between the oral dose of potassium citrate (ADV7103) and the mean 24-h urine pH, indicating that the dose stimulates the response without specifying a mechanistic link to drug concentration or elimination rates. The model predicts that a dose of 30.4/60.8 mg/kg CK/BK is required to reach a mean daily urine pH of 7.0, and 56.7/113.4 mg/kg CK/BK is needed to reach a pH of 7.5.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Guittet_2020`
 - **model family:** `emax`
 - **driver:** `dose_only`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** stimulation/additive
 
 ## Citation

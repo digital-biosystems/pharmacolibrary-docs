@@ -10,19 +10,29 @@
 
 ## About
 
-**Description.** Ilaprazole has been investigated in Helicobacter Infections.
+Ilaprazole is a proton-pump inhibitor developed as an anti-ulcer drug for acid-related disorders such as peptic ulcer and gastro-oesophageal reflux disease. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15051261](https://www.wikidata.org/wiki/Q15051261) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ilaprazole | parent | 366.44 | C19H18N4O2S | DrugBank | [214351](https://pubchem.ncbi.nlm.nih.gov/compound/214351) | Yu_2023 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 21:35 | 2:34 | 0/1/0 | 0/0/0 | 0/0/0 | 23,128/10,455 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-04 09:34 | 4:26 | 0/1/0 | 0/0/0 | 0/0/0 | 51,945/13,946 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | — | 2-compartment (no model) | 3 (+2 cov.) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | — | 2-compartment (no model) | 3 (+2 cov.) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -34,7 +44,7 @@
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -43,15 +53,15 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jia_2021.pdf` | Jia R et al., Accelerating Development of Benziamidaz…, Pharmaceutics (2021) | popPK | 10 | [10.3390/pharmaceutics13030392](https://doi.org/10.3390/pharmaceutics13030392) | [33804279](https://pubmed.ncbi.nlm.nih.gov/33804279) | The paper describes a population PK/PD model for ilaprazole, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Jia_2021.pdf` | Jia R et al., Accelerating Development of Benziamidaz…, Pharmaceutics (2021) | popPK | 10 | [10.3390/pharmaceutics13030392](https://doi.org/10.3390/pharmaceutics13030392) | [33804279](https://pubmed.ncbi.nlm.nih.gov/33804279) | The paper describes a population PK/PD model for ilaprazole in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
 
-<sub>queue written 2026-09-29T21:33:18.375666+00:00</sub>
+<sub>queue written 2026-10-04T09:29:49.855221+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jia_2021 | relevant | 10 | 0 | The paper describes a population PK/PD model for ilaprazole, but the specific numeric parameter values are not present in the provided abstract text. |
+| popPK | Jia_2021 | relevant | 10 | 0 | The paper describes a population PK/PD model for ilaprazole in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 05:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 09:29 UTC</sub>

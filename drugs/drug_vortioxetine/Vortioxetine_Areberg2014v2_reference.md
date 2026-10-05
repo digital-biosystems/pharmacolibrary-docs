@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The vortioxetine record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was invented, alongside defaulted Tlag and an assumed F=1.**
+**The vortioxetine record was held back because the absorption rate constant ka (and Tlag) was not reported in the paper and library defaults were used, alongside an assumed F=1 apparent parameterization.**
 
-The record was built from the paper's abstract alone, so summary statistics stood in for a fitted model. The builder substituted library defaults for the missing absorption rate constant (ka) and lag time (Tlag), and the invented ka was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input, and a second reader disputed this, reading it as mechanistic, while leaving all three parameter values (CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr) unconfirmed. Extracted — vortioxetine: CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr.
+The record for vortioxetine in healthy individuals was built from the abstract alone, so summary statistics (CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr) stood in for a fitted model. The absorption rate constant ka was not reported in the source, so a library default was used, and Tlag was likewise left at a default; these values affect the simulated profile but are not supported by this paper. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input, which a second reader disputed in favor of a mechanistic parameterization and could not confirm any of the three parameter values. Extracted — vortioxetine: CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -120,7 +120,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=vortioxetine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -141,8 +141,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_modelica.zip" download>Vortioxetine_Areberg2014v2_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_fmi.zip" download>Vortioxetine_Areberg2014v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_modelica.zip" download>Vortioxetine_Areberg2014v2_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_fmi.zip" download>Vortioxetine_Areberg2014v2_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_matlab.zip" download>Vortioxetine_Areberg2014v2_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_matlab_simbio.zip" download>Vortioxetine_Areberg2014v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_sbml.zip" download>Vortioxetine_Areberg2014v2_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

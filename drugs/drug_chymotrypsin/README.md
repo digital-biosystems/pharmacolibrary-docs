@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Chymotrypsin (EC 3.4.21.1) is a digestive enzyme that promotes proteolysis, or the breakdown of proteins and polypeptides. It is a serine protease synthesized in the pancreas and is a vital component in the pancreatic juice. Like most proteolytic enzymes, chymotrypsin is activated from its inactive zymogen precursor, chymotrypsinogen, in presence of [DB11237]. Chymotrypsin is the most abundant pancreatic proteases that represent up to 10-20% of the total protein synthesized by the exocrine pancreas [A32637]. Chymotrypsin contains both the catalytic triad and oxyanion hole, and the tertiary structure of chymotrypsin is similar to [DB11237] [A32642].
+Chymotrypsin is a protein-digesting enzyme used as a surgical aid in eye procedures and as an enzyme preparation affecting blood-related conditions. It is an approved medicine, also approved for veterinary use, though some products have been withdrawn.
 
-**Indication.** No therapeutic indications.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q383836](https://www.wikidata.org/wiki/Q383836) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ketobemidone is a powerful opioid analgesic. It also has some NMDA-antagonist properties. This makes it useful for some types of pain that don't respond well to other opioids. The most commonly cited equalisation ratio for analgesic doses is 25 mg of ketobemidone hydrobromide to 60 mg of morphine hydrochloride or sulfate and circa 8 mg of ketobemidone by injection.
+Ketobemidone is an opioid painkiller of the phenylpiperidine type used to treat moderate to severe pain. It is not an approved medicine in major markets such as the European Union and is considered investigational, with use largely limited to a few countries.
 
-**Indication.** For the treatment of all types of severe pain, such as postoperative, cancer, kidney stones and fractures.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2471714](https://www.wikidata.org/wiki/Q2471714) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

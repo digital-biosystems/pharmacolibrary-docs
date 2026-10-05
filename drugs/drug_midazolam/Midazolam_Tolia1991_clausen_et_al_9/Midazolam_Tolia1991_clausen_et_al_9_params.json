@@ -2,11 +2,11 @@
  "dose_source": "paper",
  "model_id": "Midazolam_Tolia1991_clausen_et_al_9",
  "molar_masses": {
-  "central.C": 0.325767
+  "C_central": 0.325767
  },
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
@@ -14,21 +14,23 @@
  ],
  "parameters": {
   "Cl": 7.000000000000001e-06,
-  "F": 1.0,
+  "F": 0.9,
   "MM": 0.325767,
+  "Tlag": 288.0,
   "VdPerKg": 0.0011,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 7e-06,
+  "ka": 3.888888888888889e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662096
+  "C_central": 16997.194388777556
  },
  "reference_peaks": {
-  "central.C": 8.847458154703864e-05
+  "C_central": 1.8550131607046604e-05
  },
- "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "stop_time": 136800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

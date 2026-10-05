@@ -4,7 +4,7 @@
 
 # naldemedine — `Naldemedine_Kubota2018_1107v9221_phase_2b`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 The record lists CL/F and Ka for naldemedine without values, so placeholder defaults stood in for these parameters; substituting a default absorption rate constant not reported in the source was judged an invented absorption constant, not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, so all parameters are apparent. A second reader recorded a maximum parameter value of 13.49 where the first reader recorded none, and the comparison could not be computed (ratio None). Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of max: this record has none, the second reading 13.49. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:06.702877+00:00) predates the upstream re-run (2026-10-04 16:42:17.599036+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018)
   ·  DOI: [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7)
 
 ## Model component
-<dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_1107v9221_phase_2b" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_1107v9221_phase_2b" status="extracted" stale="true" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.
@@ -37,13 +39,11 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Vc/F (L) | `Q290` · V1/F | 87.5 | L | 0.08750000000000001 | [l] | not captured | exact (1.0) | Kubota_2018_table_S2:row2:col5 | — | not captured |
-| Q/F (L/hr) | `Q69` · Q/F | 5.59 | L/hr | 1.5527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Kubota_2018_table_S2:row4:col5 | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 46.6 | L | 0.0466 | [l] | not captured | exact (1.0) | Kubota_2018_table_S2:row5:col5 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 87.5 | L | 0.08750000000000001 | [l] | not captured | exact (1.0) | Kubota_2018_table_S2:row2:col5 | — | 42.6 (None% RSE) |
+| Q/F (L/hr) | `Q69` · Q/F | 5.59 | L/hr | 1.5527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Kubota_2018_table_S2:row4:col5 | — | 63.3 (None% RSE) |
+| Vp/F (L) | `Q82` · V2/F | 46.6 | L | 0.0466 | [l] | not captured | exact (1.0) | Kubota_2018_table_S2:row5:col5 | — | 43.3 (None% RSE) |
 | ALAG (hr) | `Q83` · tlag | 0.202 | hr | 727.2 | [h] | not captured | exact (1.0) | Kubota_2018_table_S2:row6:col5 | — | not captured |
 | CL/F | `Q900` · CL/F | 8.44 | L/hr | 2.3444444444444444e-06 | not captured | not captured | not captured (not captured) | Kubota_2018_table_S2:row1:col5 | — | not captured |
 | Ka | `Q900` · Ka | 4.45 | hr-1 | 0.0012361111111111112 | not captured | not captured | not captured (not captured) | Kubota_2018_table_S2:row3:col5 | — | not captured |
@@ -62,11 +62,11 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('CL/F', value '43.2') — already have one for this compound
-- dropped duplicate Q290 ('Vc/F', value '42.6') — already have one for this compound
-- dropped duplicate Q49 ('Ka', value '186.4') — already have one for this compound
-- dropped duplicate Q69 ('Q/F', value '63.3') — already have one for this compound
-- dropped duplicate Q82 ('Vp/F', value '43.3') — already have one for this compound
+- table section iiv: 'CL/F' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Vc/F' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Ka' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Q/F' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Vp/F' routed out of structural estimates ('Inter-individual variability (CV%)')
 - routed 'proportional' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'Dose(mg)' — extend the ontology if this is a real PK parameter (source ['Kubota_2018_table_S3:row0:col2', 'Kubota_2018_table_S3:row0:col3', 'Kubota_2018_table_S3:row0:col6'])
 - dropped unlinked row (NIL): 'N' — extend the ontology if this is a real PK parameter (source ['Kubota_2018_table_S3:row1:col2', 'Kubota_2018_table_S3:row1:col3', 'Kubota_2018_table_S3:row1:col6'])
@@ -87,7 +87,7 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 - bound model equation to Q49 (kabs): Ka = THETA (10) * (Age/52) ** THETA (11)
 - Q27 (CL/F) is equation-defined: value moved to equation-variable 'CL/F (L/hr)'; equation kept verbatim
 - Q49 (kabs) is equation-defined: value moved to equation-variable 'Ka (hr-1)'; equation kept verbatim
-- population split: '1107v9221(phase 2b)' subgroup of Kubota_2018 (paper reports 5 populations: 1107v9221(phase 2b), 1314v9231_1315v9232(phase 3), cl/f (l/hr), estimate, shrinkage)
+- population split: '1107v9221(phase 2b)' subgroup of Kubota_2018 (paper reports 3 populations: 1107v9221(phase 2b), 1314v9231_1315v9232(phase 3), estimate)
 
 **Extraction notes:**
 - companion parameter table S2 transcribed (42 record(s), model stage 'base')
@@ -100,18 +100,24 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.417 (5/12 fields) | 7 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[alag]` | 0.202 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | 0.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[max]` | not captured | 13.49 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/f]` | 5.59 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc/f]` | 87.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vp/f]` | 46.6 | not captured | only_one_extracted |
 
 </details>
 
@@ -185,4 +191,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-11 11:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 16:42 UTC</sub>

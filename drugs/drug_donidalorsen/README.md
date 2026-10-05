@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Hereditary angioedema (HAE) is a rare genetic disease characterized by recurrent episodes of severe swelling induced by excessive production of bradykinin.[A274308] Donidalorsen is a ligand-conjugated antisense oligonucleotide that reduces plasma prekallikrein production, thereby reducing bradykinin production and preventing the initiation of attacks.[L53788]
+Donidalorsen is used to treat hereditary angioedema. It is an approved medicine authorised in the European Union.
 
-Donidalorsen was approved by the FDA in August 2025 for prophylactic use to prevent HAE attacks.[L53783,L53788] It is the first RNA-targeted therapy approved for HAE.[L53783]
-
-**Indication.** Donidalorsen is indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE) in adult and pediatric patients 12 years of age and older.[L53788]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…likely metabolized by endo- and exonucleases into short oligonucleotide fragments of varyi…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated in urine is less than 1% of the administered dose…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: KLKB1 (antisense oligonucleotide), KLKB1 (binder).</sub>
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A cell-cycle phase nonspecific alkylating antineoplastic agent. It is used in the treatment of brain tumors and various other malignant neoplasms. (From Martindale, The Extra Pharmacopoeia, 30th ed, p462) This substance may reasonably be anticipated to be a carcinogen according to the Fourth Annual Report on Carcinogens (NTP 85-002, 1985). (From Merck Index, 11th ed)
+Carmustine is an alkylating anticancer drug used to treat cancers such as Hodgkin disease and non-Hodgkin lymphoma. It remains an approved medicine, with an authorised product in the European Union, and carries a boxed warning.
 
-**Indication.** For the treatment of brain tumors, multiple myeloma, Hodgkin's disease and Non-Hodgkin's lymphomas.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415869](https://www.wikidata.org/wiki/Q415869) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,9 +43,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic and rapid with active metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
-| excretion | lung | <sub>“…about 10% as respiratory CO2…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), GSR (allosteric modulator), RNA (cross-linking/alkylation).</sub>
 

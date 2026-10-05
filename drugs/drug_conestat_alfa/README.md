@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** C1 Esterase Inhibitor (Recombinant) is a recombinant analogue of endogenous complement component-1 esterase inhibitor (rhC1INH), purified from the milk of transgenic rabbits. The primary function of endogenous C1INH is to regulate the activation of the complement and contact system pathways. It does this through inhibition of several target proteases within these pathways including activated C1s, kallikrein, factor XIIa and factor XIa. C1 esterase inhibitor has also been shown to inhibit the action of thrombin within the coagulation pathway, and tPA and plasmin within the fibrinolytic pathway. Deficiency of C1-inhibitor allows for increased plasma kallikrein activation and subsequent production of bradykinin. Additionally, C4 and C2 cleavage occurs resulting in auto-activation of the complement system. Down-stream effects of the lack of enzyme inhibition by C1 esterase inhibitor results in swelling due to leakage of fluid from blood vessels into connective tissue and consequently the presentation of hereditary angioedema (HAE). 
+Conestat alfa, a recombinant C1-inhibitor, is used to treat hereditary angioedema. It is an approved medicine authorised in the European Union.
 
-Marketed as the product Ruconest (FDA), this drug is indicated for the treatment of acute attacks of hereditary angioedema (HAE) due to C1 esterase inhibitor deficiency in adults. Intravenous replacement of C1 esterase inhibitor results in reversal of acute symptoms of HAE.
-
-**Indication.** For the treatment of acute attacks of hereditary angioedema (HAE) due to C1 esterase inhibitor deficiency in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1124727](https://www.wikidata.org/wiki/Q1124727) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

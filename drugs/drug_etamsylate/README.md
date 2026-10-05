@@ -8,6 +8,12 @@
 - **molar mass:** 263.31 g/mol (C10H17NO5S) — DrugBank
 - **groups:** investigational
 
+## About
+
+Etamsylate (ethamsylate) is a chemical compound used as an antihemorrhagic, a systemic hemostatic medicine to reduce bleeding. It is not authorised in the European Union and is considered investigational in major drug databases, though it remains known as a hemostatic agent.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2000876](https://www.wikidata.org/wiki/Q2000876) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The dabrafenib parent–metabolite model was rejected: the peripheral parameters Q/F (64.9 L/h) and V2/F (417 L) had no values in the record, the model output was the parent's central compartment rather than the measured analyte, and the structure was built as a one-compartment enteral model instead of the parent–metabolite structure.**
+**The dabrafenib parent–metabolite model was rejected because the peripheral volume V2/F (417.0 L) was never emitted or defaulted, the model output was the parent's central compartment instead of the measured analyte compartment, and the structure was built as a one-compartment enteral model rather than the three-compartment parent–metabolite structure.**
 
-Of the six extracted parameters, only four were carried into the model; Q/F and V2/F were left with no values, so library placeholders would have stood in for them and the two-compartment disposition of dabrafenib was not represented. The model output pointed at the parent's central compartment although the measured compound is dabrafenib in a parent–metabolite structure with hydroxy-dabrafenib formed from it, and the model was built with a one-compartment enteral structure rather than the required parent–metabolite structure. The builder also substituted a default for Tlag (source value 0.709 h) and assumed F=1 and Fm=1 without molar correction. A second reader further disagreed on the dose compound (dabrafenib alone versus dabrafenib with trametinib) and on the absorption rate constant identifier. Extracted — dabrafenib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
+The record claims a parent–metabolite structure with hydroxy-dabrafenib formed from dabrafenib, but the model was built as a single enteral compartment instead of the three-compartment parent–metabolite structure, and the model output pointed at the parent's central compartment rather than the measured analyte compartment. Of the six expected parameters, only five were covered: V2/F (417.0 L) was neither emitted nor defaulted, and Tlag (0.709 h) was replaced by a default instead of its published estimate. The builder also assumed F=1, Fm=1 with no molar correction (apparent parameterization), which was judged not acceptable, and a second reader disagreed on the dosed compound (dabrafenib alone versus dabrafenib with trametinib) and on the identifier for ka (0.913 1/h). Extracted — dabrafenib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -125,10 +125,10 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | fail | Metabolite_C (measured=dabrafenib) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['Q/F', 'V2/F'] |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

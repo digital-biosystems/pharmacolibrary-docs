@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # inositol
 
@@ -10,22 +11,30 @@
 
 ## About
 
-**Description.** Inositol is a collection of nine different stereoisomers but the name is usually used to describe only the most common type of inositol, myo-inositol. Myo-inositol is the cis-1,2,3,5-trans-4,6-cyclohexanehexol and it is prepared from an aqueous extract of corn kernels by precipitation and hydrolysis of crude phytate. These molecules have structural similarities to glucose and are involved in cellular signaling. It is considered a pseudovitamin as it is a molecule that does not qualify to be an essential vitamin because even though its presence is vital in the body, a deficiency in this molecule does not translate into disease conditions.[L2560] Inositol can be found as an ingredient of OTC products by Health Canada but all current product whose main ingredient is inositol are discontinued.[L1113] By the FDA, inositol is considered in the list of specific substances affirmed as generally recognized as safe (GRAS).[L2561]
+Inositol is a sugar-like compound once classed as a B vitamin and marketed as a vitamin preparation. It is no longer regarded as an essential vitamin and has been withdrawn as a drug, though it persists as a dietary supplement.
 
-**Indication.** Inositol may be used in food without any limitation. As a drug, inositol is used as a nutrient supplement in special dietary foods and infant formula.[L2561] As it presents a relevant role in ensuring oocyte fertility, inositol has been studied for its use in the management of polycystic ovaries.[A32751] Inositol is also being researched for the treatment of diabetes,[A32766] prevention of metabolic syndrome,[A32768] aid agent for weight loss,[A32769] treatment of depression, psychiatric disorder and anxiety disorder[A32770] and for prevention of cancer.[A32771]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407997](https://www.wikidata.org/wiki/Q407997) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| inositol | parent | 180.156 | C6H12O6 | DrugBank | — | Phelps_2013 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 22:10 | 0:41 | 0/0/2 | 0/0/0 | 0/0/0 | 22,586/671 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-05 07:52 | 3:51 | 1/0/1 | 0/0/0 | 0/0/0 | 47,259/11,992 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Phelps_2013_covariate_estimate_standard_error](drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md) | held back | 1-compartment, IV | 1 | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61, Q22, Q47, Q57 — no SI value to…</sub><br><sub>route_to: `human_review`</sub> | [Phelps_2013_estimate](drugs/drug_inositol/Inositol_Phelps2013_estimate.md) | held back | 1-compartment, IV | 5 | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Phelps_2013_estimate](drugs/drug_inositol/Inositol_Phelps2013_estimate.md) | ▶ model + simulator | 1-compartment, IV | 5 | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Phelps_2013_covariate_estimate_standard_error](drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md) | — | 1-compartment (no model) | 1 | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
 
 ## ADME sites
 
@@ -33,8 +42,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Inositol is absorbed from the small intestine.…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: APP (inhibitor), SLC5A3 (substrate).</sub>
 
@@ -48,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 1137 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -57,15 +66,15 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Antonowski_2022.pdf` | Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022) | popPK | 9 | [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246) | [36232547](https://pubmed.ncbi.nlm.nih.gov/36232547) | The paper describes a pharmacokinetic study of inositol in rats using a one-compartment model, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence. |
+| `Antonowski_2022.pdf` | Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022) | popPK | 9 | [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246) | [36232547](https://pubmed.ncbi.nlm.nih.gov/36232547) | The study describes a one-compartment PK model for myo-inositol in rats, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-21T22:09:59.461103+00:00</sub>
+<sub>queue written 2026-10-05T07:48:23.879168+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Antonowski_2022 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of inositol in rats using a one-compartment model, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence. |
+| popPK | Antonowski_2022 | relevant | 9 | 0 | The study describes a one-compartment PK model for myo-inositol in rats, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 22:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 07:48 UTC</sub>

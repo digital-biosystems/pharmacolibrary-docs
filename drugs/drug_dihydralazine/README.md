@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Dihydralazine is under investigation in clinical trial NCT00311974 (The Effect of Dihydralazine on Kidney Function and Hormones in Healthy Individuals).
+Dihydralazine is a hydrazinophthalazine vasodilator that was used to treat high blood pressure, alone or combined with a diuretic. It has been withdrawn from use and is no longer available as a medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408370](https://www.wikidata.org/wiki/Q408370) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

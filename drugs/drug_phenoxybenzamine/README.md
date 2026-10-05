@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An alpha-adrenergic antagonist with long duration of action. It has been used to treat hypertension and as a peripheral vasodilator.
+Phenoxybenzamine is an alpha-blocking vasodilator used for arterial hypertension, including malignant hypertension, and for urinary outflow problems such as bladder neck or urethral obstruction and urinary incontinence. It remains an approved medicine, though it is not authorised in the European Union and is used only in limited, mainly specialist settings.
 
-**Indication.** For the treatment of phaeochromocytoma (malignant), benign prostatic hypertrophy and malignant essential hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419824](https://www.wikidata.org/wiki/Q419824) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…orally administered phenoxybenzamine appears to be absorbed…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |

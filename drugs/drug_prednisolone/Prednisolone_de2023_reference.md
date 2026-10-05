@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;de_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,15 +17,13 @@
 
 ### Reviewer guidance
 
-**The prednisolone record was rejected because a structural parameter had a dimension mismatch and a clearance/volume value fell outside the physiological window, consistent with a unit/scale extraction error.**
+**The prednisolone binding parameter KD is reported as 0.0095 nmol, an amount rather than a concentration, giving a dimension mismatch on a structural parameter, so the record was rejected.**
 
-The clearance/volume check flagged an implausible magnitude attributed to a unit or scale extraction error, and a structural parameter failed the dimension check. A reported unit could not be converted to SI, so the parameter arrived without an SI value. The second reader could not confirm the oral absorption lag time (0.36 h) or the volume V Glu1 (0.3 L), recording no value for either. Extracted — prednisolone: ktr 12.5 h-1, MTT 0.63 h, Vnorm 101 L/70 kg, CLu 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol, V 0.3 L, tlag 0.36 hour.
+In the prednisolone model for paediatric kidney transplant recipients, KD (equilibrium dissociation constant for drug-target binding) carries the verbatim unit 'nmol' with value 0.0095; a dissociation constant must be a concentration, so the check failed on a dimension mismatch. Because this unit could not be converted to SI, the parameter reached the model builder without an SI value. The remaining parameters (kabs 12.5 h-1, tlag 0.63 h, V 101 L/70 kg, CLm,norm/F 27.6 L/h/70 kg, Bmax 6.77) show no such mismatch. A second reader additionally disagreed on the dose compound (prednisone vs prednisolone), the primary analyte, whether the parameterization is apparent or mechanistic, and the classification of the clearance and Mtt parameters. Extracted — prednisolone: kabs 12.5 h-1, tlag 0.63 h, V 101 L/70 kg, CLm,norm/F 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 15:42:51.282021+00:00) predates the upstream re-run (2026-10-04 03:04:04.286506+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -34,7 +32,7 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
   ·  DOI: [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610)
 
 ## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="true" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

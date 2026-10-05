@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Collagen, a fibrous protein of connective tissue, is used as a local hemostatic to help stop bleeding and as a urological agent. It remains in medical use, classified in the ATC system for local hemostatic and other urological applications.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q26868](https://www.wikidata.org/wiki/Q26868) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

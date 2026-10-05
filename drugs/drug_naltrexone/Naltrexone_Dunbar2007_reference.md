@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/&quot;},{&quot;label&quot;:&quot;Dunbar_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # naltrexone — `Naltrexone_Dunbar2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,13 +12,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**V has no unit; the clearance plausibility check could not be computed.**
+**The clearance plausibility check could not be computed.**
 
-Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — naltrexone: CL 140 L/h, V 38 300 L, kabs 0.484 1/ min.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — naltrexone: CL 140 L/h, V 38 L, kabs 0.484 1/ min; 6beta-naltrexol: CL 65.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has naltrexone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -32,8 +31,8 @@ Dunbar JL et al., Population pharmacokinetics of extended…, Journal of studies
 ## Model component
 <dbs-pgx drug="naltrexone" model-id="Naltrexone_Dunbar2007_reference" status="needs_review" stale="false" population="patients with alcohol dependence" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
-**Parameters:** 3 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,7 +42,8 @@ Dunbar JL et al., Population pharmacokinetics of extended…, Journal of studies
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Naltrexone CL | `Q22` · CL | 140 | L/h | 3.888888888888889e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Dunbar_2007:abstract, Dunbar_2007:abstract, Dunbar_2007:abstract | — | not captured |
-| Naltrexone V | `Q61` · V | 38 | 300 L | not captured | [300l] | not captured | llm (0.6) | Dunbar_2007:abstract, Dunbar_2007:abstract | — | not captured |
+| Naltrexone V | `Q61` · V | 38 | L | 0.038 | L | not captured | llm (0.6) | Dunbar_2007:abstract, Dunbar_2007:abstract | — | not captured |
+| 6beta-naltrexol CL | `Q22` · CL | 65.1 | L/h | 1.808333333333333e-05 | [l] / [h] | not captured | exact (1.0) | Dunbar_2007:abstract, Dunbar_2007:abstract, Dunbar_2007:abstract, Dunbar_2007:abstract | — | not captured |
 | First-order absorption rate constant k a (1/ min) | `Q49` · kabs | 0.484 | 1/ min | 0.008066666666666666 | 1/h | not captured | review_gapfill (0.7) | Christie_2025:review | — | not captured |
 
 <details class="legend">
@@ -55,10 +55,10 @@ Dunbar JL et al., Population pharmacokinetics of extended…, Journal of studies
 
 **Interpretation flags:**
 - unit_dimension_unknown: '300 L' (V)
-- dropped duplicate Q22 ('6beta-naltrexol CL', value 65.1) — already have one for this compound
+- implicit units: 'Naltrexone V' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in liters (L) in population pharmacokinetic studies, and the magn')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=naltrexone
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 9 linked by role; re-tagged naltrexone→parent ×5, naltrexone→6beta-naltrexol ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
@@ -74,7 +74,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
 <details><summary>5 field(s) a reader read differently</summary>
 
@@ -98,15 +98,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Christie_2025:review'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | 300 L | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 140.0 | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 140 L/h | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 65.1 L/h | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 38 L | not captured | not captured | ['Dunbar_2007:abstract', 'Dunbar_2007:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -141,4 +144,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-12 01:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 20:41 UTC</sub>

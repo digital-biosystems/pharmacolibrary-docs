@@ -10,14 +10,9 @@
 
 ## About
 
-**Description.** Luspatercept is a recombinant fusion protein comprised of a modified extracellular domain of activin receptor type IIB fused to the FC domain of human IgG1.[A187829,L42455] It was first approved for use in the United States in November 2019 under the brand name Reblozyl® for the treatment of anemia in patients with beta thalassemia who require regular blood transfusions.[L42455] Luspatercept is novel in that it ameliorates anemia via action on late-stage erythropoiesis, in contrast to typical erythropoiesis-stimulating agents (ESAs), such as [darbepoetin alfa] and [epoetin alfa], which act only on early-stage erythropoiesis.[A187835] Luspatercept's novel mechanism of action, then, is uniquely suited for the treatment of conditions in which late-stage erythropoiesis is defective, such as beta thalassemia and other myelodysplastic diseases.[A187835,A187838]
+Luspatercept is an antianemic medicine used to treat anemia in people with myelodysplastic syndromes or beta-thalassemia. It is authorised in the European Union and is also being studied for further uses.
 
-**Indication.** Luspatercept is indicated for the treatment of:
-
-- Anemia in adults with beta thalassemia who require regular red blood cell transfusions.[L42455]
-- Anemia without previous erythropoiesis stimulating agent use (ESA-naïve) in adult patients with very low- to intermediate-risk myelodysplastic syndromes (MDS) who may require regular red blood cell (RBC) transfusions.[L47986]
-- Anemia failing an erythropoiesis stimulating agent and requiring two or more RBC units over eight weeks in adult patients with very low- to intermediate-risk myelodysplastic syndromes with ring sideroblasts (MDS-RS) or with myelodysplastic/myeloproliferative neoplasm with ring sideroblasts and thrombocytosis (MDS/MPN-RS-T).[L47986]
-- for the treatment of transfusion-dependent anaemia due to very low, low and intermediate-risk myelodysplastic syndromes (MDS).[L52760]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q30314143](https://www.wikidata.org/wiki/Q30314143) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Metformin stimulates the gut glucose consumption rate (rGGUPK−PD) via a sigmoid Emax model, where the effect is proportional to the drug's action in the GI wall. The paper does not provide specific numerical values for potency (e.g., EC50) or rate constants (e.g., ke0) in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Aminophenazone is a pyrazolone with analgesic, anti-inflammatory, and antipyretic properties that carries a risk of agranulocytosis. In biomedical applications, radiolabelled (13C-labeled) aminophenazone has been used in breath tests to measure the cytochrome P-450 metabolic activity in liver function tests. The FDA suspended the use of aminophenazone due to its association with agranulocytosis, a life-threatening side effect.[A254242,L43942]
+Aminophenazone is a pyrazolone drug that was used as an analgesic and antipyretic to relieve pain and fever. It has been withdrawn from use, reportedly because of the risk of serious blood disorders such as agranulocytosis.
 
-**Indication.** Formerly widely used as an antipyretic and analgesic in rheumatism, neuritis, and common colds. Currently used to measure total body water.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416503](https://www.wikidata.org/wiki/Q416503) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

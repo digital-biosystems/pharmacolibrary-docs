@@ -10,21 +10,9 @@
 
 ## About
 
-**Description.** Olanzapine is a thienobenzodiazepine derivative and an atypical or second-generation antipsychotic agent.[A176996] Its chemical structure contains a thieno[2,3-b][1,5]benzodiazepine core, and has a methyl group attached to the piperazine ring. The second-generation antipsychotics were introduced in the 90s and quickly gained traction due to their impressive efficacy, reduced risk for extrapyramidal side effects and reduced susceptibility to drug-drug interactions.[A177011] Olanzapine was discovered by scientists at Eli Lilly and approved to be marketed in the US in 1996.[T548]
+Olanzapine is an atypical antipsychotic used to treat schizophrenia, bipolar disorder including acute mania, and other psychotic disorders in adults. It is widely used and authorised in the European Union, where several products remain on the market.
 
-**Indication.** Olanzapine was initially used orally and intramuscularly for the chronic treatment of schizophrenia in patients over 13 years old and other psychiatric disorders such as bipolar I disorder including mixed or manic episodes.[A177014] 
-
-Olanzapine is also indicated, in combination with lithium or valproate for the short-term treatment of acute manic or mixed episodes associated with bipolar I disorder in adults.[FDA label]
-
-As well, olanzapine is indicated, in combination with fluoxetine for the treatment of episodes of depression associated with bipolar disorder type 1 and treatment-resistant depression in patients over 10 years old.[A177014]
-
-Olanzapine is also approved for the management of psychomotor agitation associated with schizophrenia and bipolar I mania.[FDA label]
-
-Schizophrenia is a complex biochemical brain disorder that affects the person's ability to differentiate reality. It is usually observed as the presence of delusions, hallucinations, social withdrawal and disturbed thinking.[L5936]
-
-Bipolar disorder is a mental health condition defined by periods of extreme mood disturbances. It is categorized in different types from which type 1 is known to involve episodes of severe mania and often depression while type 2 presents less severe forms of mania.[L5939]
-
-Olanzapine is also indicated in combination with [samidorphan] for the treatment of bipolar I disorder, either as an adjunct to lithium or valproate or as monotherapy for the acute treatment of manic or mixed episodes or as maintenance therapy, and for the treatment of schizophrenia in adults.[L34359]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q201872](https://www.wikidata.org/wiki/Q201872) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,8 +44,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor, `FMO3` substrate, `UGT1A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…followed by the feces that represent about 30%…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRB1 (inhibitor), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (target), GABRA1 (inhibitor), HRH1 (target), HTR1A (inhibitor), HTR2A (target), HTR2C (target), HTR3A (target), HTR6 (target).</sub>
 

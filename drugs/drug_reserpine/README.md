@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** An alkaloid found in the roots of Rauwolfia serpentina and R. vomitoria. Reserpine inhibits the uptake of norepinephrine into storage vesicles resulting in depletion of catecholamines and serotonin from central and peripheral axon terminals. It has been used as an antihypertensive and an antipsychotic as well as a research tool, but its adverse effects limit its clinical use.
+Reserpine, a Rauwolfia alkaloid, was used to treat high blood pressure and schizophrenia. It is now largely withdrawn from human use, though it may still be found in some countries.
 
-The FDA withdrew its approval for the use of all oral dosage form drug products containing more than 1 mg of reserpine.[L43942]
-
-**Indication.** For the treatment of hypertension
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407841](https://www.wikidata.org/wiki/Q407841) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,7 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
 | metabolism | liver | `CYP3A5` inducer, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A5` inducer | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor, `SLC22A2` substrate | DrugBank actor |
 | excretion | liver | `ABCB11` inhibitor, `ABCC2` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |

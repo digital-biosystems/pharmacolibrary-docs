@@ -9,36 +9,19 @@
 
 ## About
 
-**Description.** Alginic acid, also referred to as algin or alginate, is a hydrophilic or anionic polysaccharide isolated from certain brown seaweed (_Phacophycae_) via alkaline extraction. It is present in cell walls of brown algae where it forms a viscous gel when binding with water. Alginic acid is a linear polymer consisted of L-glucuronic acid and D-mannuronic acid residues connected via 1,4-glycosidic linkages [A32961]. Available in different types of salt, alginic acid has been used in a variety of uses in food, cosmetics and pharmaceu-tical products for over 100 years [A32961]. Alginic acid is an FDA-approved food ingredient in soup and soup mixes as an emulsifier, thickener, and stabilizer [L2693]. It is also available in oral dietary supplements and is found in antacids such as Gaviscon to inhibit gastroesophageal reflux by creating a physical barrier in presence of gastric acid [F46]. Alginate-based raft-forming formulations in the management of heartburn and gastric acid reflux have been used worldwide for over 30 years [A32961].
+Alginic acid, a polysaccharide from brown algae, is used for acid-related disorders such as peptic ulcer and gastro-oesophageal reflux disease. It is an approved medicine, though some products have been withdrawn, and it is also being studied for other uses.
 
-**Indication.** Indicated for the management of gastric reflux, reflux oesophagitis, hiatus hernia, heartburn (including heartburn of pregnancy) and similar gastric distress [F46].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422092](https://www.wikidata.org/wiki/Q422092) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 03:35 | 38:33 | 0/0/0 | 4/3/2 | 0/0/0 | 1,250,296/20,105 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 7/48 | 27/0 | 0 |
+| 2026-10-04 08:53 | 8:54 | 0/0/0 | 0/0/0 | 0/0/0 | 313,678/10,486 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 7/48 | 27/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Goeyvaerts_2026_DENV_3_RNA](drugs/drug_alginic_acid/pd_Goeyvaerts_2026_DENV_3_RNA.md) | DENV-3 RNA ← mosnodenvir · direct sigmoid Emax (Hill) effect | — | Goeyvaerts N et al., Viral Dynamic Model-Informed Dose Selec…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70439](https://doi.org/10.1002/cpt.70439) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Guo_2026_Pseudomonas_aeruginosa_bacterial_count](drugs/drug_alginic_acid/pd_Guo_2026_Pseudomonas_aeruginosa_bacterial_count.md) | name ← colistin · direct Emax (saturable) effect | — | Guo Y et al., Pharmacodynamic modeling of colistin an…, Biofilm (2026) | [10.1016/j.bioflm.2026.100387](https://doi.org/10.1016/j.bioflm.2026.100387) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Mahmoud_2023_IC50](drugs/drug_alginic_acid/pd_Mahmoud_2023_IC50.md) | Cytotoxicity ← Alg-4-AP3 · inhibition effect | — | Mahmoud HA et al., Multitargeted molecular modelling of al…, Heliyon (2023) | [10.1016/j.heliyon.2023.e17106](https://doi.org/10.1016/j.heliyon.2023.e17106) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Syad_2013_Cholinesterase_inhibitory_activity](drugs/drug_alginic_acid/pd_Syad_2013_Cholinesterase_inhibitory_activity.md) | name ← Sargassum wightii extracts · inhibition effect | — | Syad AN et al., Antioxidant and anti-cholinesterase act…, Pharmaceutical biology (2013) | [10.3109/13880209.2013.793721](https://doi.org/10.3109/13880209.2013.793721) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Barry_2026_nephrotoxicity](drugs/drug_alginic_acid/pd_Barry_2026_nephrotoxicity.md) | name ← vancomycin · categorical (graded) response model | — | Barry J et al., Population Pharmacokinetic and Exposure…, Pediatric pulmonology (2026) | [10.1002/ppul.71748](https://doi.org/10.1002/ppul.71748) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Guidi_2026_hepatotoxicity](drugs/drug_alginic_acid/pd_Guidi_2026_hepatotoxicity.md) | name ← isavuconazole · categorical (graded) response model | — | Guidi M et al., Characterization of isavuconazole pharm…, JAC-antimicrobial resistance (2026) | [10.1093/jacamr/dlag071](https://doi.org/10.1093/jacamr/dlag071) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Guidi_2026_treatment_success](drugs/drug_alginic_acid/pd_Guidi_2026_treatment_success.md) | name ← isavuconazole · categorical (graded) response model | — | Guidi M et al., Characterization of isavuconazole pharm…, JAC-antimicrobial resistance (2026) | [10.1093/jacamr/dlag071](https://doi.org/10.1093/jacamr/dlag071) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hanke_2026_mean_corpuscular_hemoglobin](drugs/drug_alginic_acid/pd_Hanke_2026_mean_corpuscular_hemoglobin.md) | name ← iclepertin · indirect response — drug inhibits the production of name | — | Hanke N et al., Pharmacokinetic/pharmacodynamic analysi…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1770980](https://doi.org/10.3389/fphar.2026.1770980) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hanke_2026_red_blood_cell_count](drugs/drug_alginic_acid/pd_Hanke_2026_red_blood_cell_count.md) | name ← iclepertin · indirect response — drug inhibits the production of name | — | Hanke N et al., Pharmacokinetic/pharmacodynamic analysi…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1770980](https://doi.org/10.3389/fphar.2026.1770980) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Hoeben_2026_TV](drugs/drug_alginic_acid/pd_Hoeben_2026_TV.md) | tumor volume ← plasma asparaginase activity · direct linear effect | — | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026_ALP](drugs/drug_alginic_acid/pd_Ooi_2026_ALP.md) | Alkaline phosphatase ← elafibranor and GFT1007 (sum of AUC) · indirect response — drug inhibits the production of Alkaline phosphatase | — | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026_TB](drugs/drug_alginic_acid/pd_Ooi_2026_TB.md) | Total bilirubin ← elafibranor and GFT1007 (sum of AUC) · indirect response — drug inhibits the production of Total bilirubin | — | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

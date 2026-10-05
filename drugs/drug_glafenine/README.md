@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** An anthranilic acid derivative with analgesic properties used for the relief of all types of pain. Glafenine is withdrawn from the American market.
+Glafenine is a non-opioid analgesic and antipyretic that was used to relieve pain and fever. It has been withdrawn from the market, reportedly because of safety concerns, and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5566483](https://www.wikidata.org/wiki/Q5566483) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +16,13 @@
 
 ### Reviewer guidance
 
-**The model was rejected because the (S)-carvedilol compartment is unreachable from the dose, and a reported unit could not be converted to SI.**
+**The carvedilol record was rejected because a compartment or metabolite has no path from the administered dose, and one parameter's reported unit could not be converted to SI, so it arrived without an SI value.**
 
-The record defines interconversion links from carvedilol to (R)- and (S)-carvedilol, but the dose is administered to the carvedilol compartment, leaving the measured (S)-carvedilol analyte without a direct path from the input. Additionally, a reported unit could not be converted to SI, preventing a parameter from reaching the model builder with a standard value. A second reader disagreed with the identification of the dose compound and primary analyte, marking both as unknown. Extracted — carvedilol: kabs 0.095 1/h, CL 18.2 L/h, V1 5.81 L, Q 1.54 L/h, V2 23.2 L, Fab 0.3 fixed, Frel 0.17, t1/2ka 0.49 h; (S)-carvedilol: Fab 0.3 fixed.
+The model links carvedilol to (R)- and (S)-carvedilol by interconversion, but the check for unreachable or orphan compartments or unlinked metabolites failed, meaning some species has no path from the administered dose. A reported unit could not be expressed in SI units, so one parameter was left without a usable numeric value. A second reader also disagreed on several extracted values, e.g. assigning the 0.3 bioavailability to (R)-carvedilol rather than (S)-carvedilol and reading the links as metabolism from racemic carvedilol rather than interconversion. Extracted — carvedilol: kabs 0.095 1/h, CL 18.2 L/h, V1 5.81 L, Q 1.54 L/h, V2 23.2 L, Fab 0.3 fixed, Frel 0.17, t1/2ka 0.49 h; (S)-carvedilol: Fab 0.3 fixed.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rac-carvedilol, the second reading carvedilol (racemic); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `rac-carvedilol`, measured `(S)-carvedilol`.
 

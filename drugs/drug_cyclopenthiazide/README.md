@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Cyclopenthiazide is a thiazide diuretic with antihypertensive properties. In a double blind, randomized crossover study, cyclopenthiazide was effective in reducing diastolic blood pressure in mildly hypertensive non-insulin dependent diabetic patients [A27180]. It is a positive allosteric modulator at AMPA-A receptors [T28].
+Cyclopenthiazide is a thiazide diuretic used to treat high blood pressure (arterial hypertension) and to help the body remove excess fluid. It is an approved medicine, but it is not widely used today and appears mainly in a few national markets rather than across the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3676519](https://www.wikidata.org/wiki/Q3676519) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

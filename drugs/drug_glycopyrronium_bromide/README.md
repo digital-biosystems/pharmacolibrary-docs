@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium bromide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_model_based&quot;,&quot;label&quot;:&quot;Bartels_2013_model_based&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_model_based.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_noncompartmental&quot;,&quot;label&quot;:&quot;Bartels_2013_noncompartmental&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_population_mean_cv&quot;,&quot;label&quot;:&quot;Bartels_2013_population_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # glycopyrronium bromide
 
@@ -7,19 +8,34 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Glycopyrronium bromide is an anticholinergic used for functional gastrointestinal disorders and, as an inhalant, for obstructive airway diseases. It remains in use, available in formulations for the digestive tract and for inhalation.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| glycopyrronium | metabolite | 318.437 | C19H28NO3+ | PubChem | [3494](https://pubchem.ncbi.nlm.nih.gov/compound/3494) | Bartels_2013 |
+| glycopyrronium_bromide | metabolite | 398.341 | C19H28BrNO3 | PubChem | [11693](https://pubchem.ncbi.nlm.nih.gov/compound/11693) | Bartels_2013 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 22:00 | 4:08 | 0/0/3 | 0/0/0 | 0/0/0 | 56,775/18,101 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 12:50 | 7:24 | 3/0/0 | 0/0/0 | 0/0/0 | 131,983/24,763 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2013_model_based](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_model_based.md) | — | 1-compartment (no model) | 4 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2013_noncompartmental](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental.md) | — | 1-compartment (no model) | 3 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bartels_2013_population_mean_cv](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv.md) | held back | 2-compartment, oral | 8 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Bartels_2013_model_based](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_model_based.md) | ▶ model + simulator | 1-compartment, IV | 4 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Bartels_2013_noncompartmental](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental.md) | ▶ model + simulator | 1-compartment, IV | 3 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Bartels_2013_population_mean_cv](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv.md) | ▶ model + simulator | 2-compartment, oral | 8 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -31,7 +47,7 @@
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
@@ -42,4 +58,4 @@
 | PD | Chen_2025 | not_relevant | 4 | 2 | The paper reports a PK/PD model for scopolamine's effect on HRV, but glycopyrronium bromide was used only as a control and no PD parameters or concentration-effect relationship are reported for it. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 09:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 12:43 UTC</sub>

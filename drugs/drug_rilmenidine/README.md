@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Rilmenidine has been used in trials studying the treatment of Hypertension and Chronic Kidney Disease.
+Rilmenidine is a centrally acting antihypertensive drug used to treat high blood pressure. It is not approved in the United States and is used only in a limited number of countries, mainly in Europe.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q967973](https://www.wikidata.org/wiki/Q967973) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

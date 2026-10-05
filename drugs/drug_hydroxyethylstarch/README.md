@@ -10,10 +10,9 @@
 
 ## About
 
-**Description.** Hydroxyethyl starch (HES/HAES) is a nonionic starch derivative. Hydroxyethyl starches (HES) are synthetic colloids commonly used for fluid resuscitation to replace intravascular volume.
-HES is a general term and can be sub-classified according to average molecular weight, molar substitution, concentration, C2/C6 ratio and Maximum Daily Dose.
+Hydroxyethyl starch is a modified starch used as a blood substitute and plasma volume expander. It remains approved but carries a boxed warning, so its use is restricted to carefully selected patients.
 
-**Indication.** An intravenous solution of hydroxyethyl starch is used to prevent shock following severe blood loss caused by trauma, surgery, or other issues.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415775](https://www.wikidata.org/wiki/Q415775) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,9 +42,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…metabolized by plasma α-amylase…”</sub> | prose |
-| metabolism | kidney | <sub>“…excreted in the urine…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted as hydroxyethyl starch molecules in urine…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Floctafenine is an anti-inflammatory analgesic similar in action to aspirin. Floctafenine inhibits prostaglandin synthesis.
+Floctafenine is a non-steroidal analgesic and anti-inflammatory drug that was used to relieve pain and fever. It has been withdrawn from the market and is no longer used.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5459971](https://www.wikidata.org/wiki/Q5459971) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

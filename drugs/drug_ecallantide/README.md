@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Ecallantide is a potent and selective human plasma kallikrein inhibitor that is indicated for the symptomatic treatment of hereditary angioedema. Ecallantide is a recombinant 60-amino-acid protein produced in _Pichia pastoris_ yeast cells that contains three intramolecular disulfide bonds [FDA Label]. It was discovered by phage display technology [A32017]. It shares sequence similarities with the naturally occurring human protein tissue-factor pathway inhibitor (TFPI), which is also known lipoprotein-associated coagulation inhibitor (LACI) [L1458]. The amino acid sequence of two compounds differ by seven amino acids [L1458]. 
+Ecallantide is a drug used to treat hereditary angioedema. It is an approved medicine, mainly used in the United States, and carries a boxed warning.
 
-Ecallantide works by blocking kallikrein to participate in the kallikrein-kinin system, which is a complex proteolytic cascade that initiates inflammatory and coagulation pathways [FDA Label]. The protease plasma kallikerin facilitates the conversion of kininogen to bradykinin, which is a pro-inflammatory vasodilator that  increases vascular permeability and induces pain [A3362]. Hereditary angioedema is a rare autosomal dominant disorder with mutations to C1-esterase-inhibitor (C1-INH) located on Chromosome 11q, resulting in substantially lower levels of C4 and C1-INH activity [FDA Label]. The disorder is associated with recurrent attacks of severe swelling and is thought to be caused by unregulated activity of kallikrein and excessive bradykinin production [FDA Label]. By reversibly binding to plasma kallikrein, ecallantide displays a rapid on-rate and a slow off-rate that results in high affinity inhibition in the picomolar range [L1458]. Ecallantide is marketed by FDA and EMA under the trade name Kalbitor for subcutaneous injection. Apart from its FDA and EMA indication, ecallantide has been used off label in the management of nonhistaminergic angioedema, not due to HAE [A32017].
-
-**Indication.** Indicated for the symptomatic treatment of acute attacks of hereditary angioedema (HAE) in patients 12 years of age and older [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1280166](https://www.wikidata.org/wiki/Q1280166) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,7 +29,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Ecallantide undergoes renal elimination…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: KLKB1 (inhibitor).</sub>
 

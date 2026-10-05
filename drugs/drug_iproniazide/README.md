@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Withdrawn from the Canadian market in July 1964 due to interactions with food products containing tyrosine.
+Iproniazide is a monoamine oxidase inhibitor that was used as an antidepressant. It has been withdrawn and is no longer in use.
 
-**Indication.** For the treatment of depression (originally intended to treat tuberculosis).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421368](https://www.wikidata.org/wiki/Q421368) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

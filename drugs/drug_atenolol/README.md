@@ -10,37 +10,9 @@
 
 ## About
 
-**Description.** Atenolol is a cardioselective beta-blocker used in a variety of cardiovascular conditions. 
+Atenolol is a selective beta blocker used to treat high blood pressure and other heart conditions such as angina, arrhythmias, and after a heart attack. It is an approved medicine, widely used in cardiovascular care, and is also available in fixed combinations with diuretics or calcium channel blockers.
 
-Sir James Black, a Scottish pharmacologist, pioneered the use of beta-blockers for the management of angina pectoris in 1958 for which he received the Nobel Prize.[A178429] Beta-blockers quickly became popular in clinical use and where subsequently investigated for use in myocardial infarction, arrhythmias, and hypertension during the 1960s. Later they continued to be investigated for use in heart failure throughout the 1970-1980s. Atenolol itself was developed early on in this history by Alvogen Malta under the trade name Tenormin and received FDA approval in September, 1981.[label]
-
-Despite being one of the most widely prescribed beta blockers, evidence suggests atenolol may not significantly reduce mortality, and only modestly reduce the risk of cardiovascular disease in patients with hypertension.[A235850,A235855] A Cochrane review of patients being treated for primary hypertension shows that atenolol shows a risk ratio of 0.88 for cardiovascular disease risk and a risk ratio of 0.99 for mortality.[A235850,A235855] Similar results have been found in other meta-analyses.[A235860,A235865] A meta-analysis of over 145,000 patients showed the risk of stroke in patients taking atenolol may depend on the age of the patient.[A235865] The use of atenolol may need to be based on more patient factors than hypertension alone.[A235850,A235855,A235860,A235865]
-
-**Indication.** **Indicated** for:[label]
-
-1) Management of hypertension alone and in combination with other antihypertensives.
-
-2) Management of angina pectoris associated with coronary atherosclerosis.
-
-3) Management of acute myocardial infarction in hemodynamically stable patients with a heart rate greater than 50 beats per minutes and a systolic blood pressure above 100 mmHg.
-
-**Off-label** uses include:
-
-1) Secondary prevention of myocardial infarction.[A178156]
-
-2) Management of heart failure.[A178153]
-
-3) Management of atrial fibrillation.[A178141]
-
-4) Management of supraventricular tachycardia.[A178162]
-
-5) Management of ventricular arrythmias such as congenital long-QT and arrhythmogenic right ventricular cardiomyopathy.[A178168]
-
-6) Management of symptomatic thyrotoxicosis in combination with [methimazole].[A178147]
-
-7) Prophylaxis of migraine headaches.[A178171]
-
-8) Management of alcohol withdrawal.[A178174,A178177]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411325](https://www.wikidata.org/wiki/Q411325) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -110,13 +82,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | brain | <sub>“…atenolol can cross the blood-brain barrier, it does so slowly and to a small extent…”</sub> | prose |
-| absorption | small intestine | <sub>“…Approximately 50% of an oral dose is absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…10% appearing in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…85% is eliminated by the kidneys…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRBK1 (target), GRK4 (target), GRK5 (safety_allele), LRRC15 (target), OR10P1 (unknown), PTPRD (target), SLC25A31 (target), SNX9 (unknown), UNKNOWN (target).</sub>

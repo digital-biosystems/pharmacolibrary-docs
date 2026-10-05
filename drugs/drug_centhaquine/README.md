@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Centhaquine is under investigation in clinical trial NCT04045327 (Efficacy of PMZ-2010 (Centhaquine) a Resuscitative Agent for Hypovolemic Shock).
+Centhaquine is an adrenergic agent classified under cardiac therapy, suggesting use as a cardiac stimulant in cardiovascular conditions. It remains investigational and is not an approved medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q83080535](https://www.wikidata.org/wiki/Q83080535) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

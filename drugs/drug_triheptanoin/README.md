@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Triheptanoin is a source of heptanoate fatty acids, which can be metabolized without the enzymes of long chain fatty acid oxidation.[L14612] In clinical trials, patients with long chain fatty acid oxidation disorders (lc-FAODs) treated with triheptanoin are less likely to develop hypoglycemia, cardiomyopathy, rhabdomyolysis, and hepatomegaly.[A214812,A214817] Complications in lc-FAOD patients are reduced from approximately 60% to approximately 10% with the addition of triheptanoin.[A214817]
+Triheptanoin is a medium-chain triglyceride used as a calorie and fatty-acid supplement in metabolic disorders in which the body cannot properly use long-chain fatty acids for energy. It is an approved medicine, mainly used in the United States, and is also being studied for other conditions.
 
-Triheptanoin was granted FDA approval on 30 June 2020.[L14612]
-
-**Indication.** Triheptanoin is a medium chain triglyceride indicated to provide calories and fatty acids to treat long chain fatty acid oxidation disorders (lc-FAODs).[L14612]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414576](https://www.wikidata.org/wiki/Q414576) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,7 +31,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | kidney | <sub>“…minimally eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

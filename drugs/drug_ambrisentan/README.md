@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Ambrisentan is an orally active selective type A endothelin receptor antagonist indicated for the treatment of pulmonary arterial hypertension. It is approved in Europe, Canada and the United States for use as a single agent to improve exercise ability and delay clinical worsening. In addition, it is approved in the United States for use in combination with tadalafil to reduce the risks of disease progression, hospitalization and to improve exercise ability. Studies establishing the efficacy of Ambrisentan included patients with both idiopathic or heritable pulmonary arterial hypertension and those with pulmonary arterial hypertension associated with connective tissue diseases. Patients studied displayed symptoms and etiologies predominantly of WHO Functional Class II-III. As an endothelin receptor antagonist, Ambrisentan prevents endogenous endothelin peptide from constricting the muscles in blood vessels, allowing them to relax and permit a reduction in blood pressure.
+Ambrisentan is an antihypertensive drug used to treat pulmonary arterial hypertension. It is authorised in the European Union and is also used for related conditions such as portal and chronic pulmonary hypertension.
 
-**Indication.** Ambrisentan is indicated for treatment of idiopathic (‘primary’) pulmonary arterial hypertension (IPAH) and pulmonary arterial hypertension (PAH) associated with connective tissue disease in patients with WHO functional class II or III symptoms. In the United States of America, ambrisentan is also indicated in combination with tadalafil to reduce the risks of disease progression and hospitalization for worsening PAH, and to improve exercise ability.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410789](https://www.wikidata.org/wiki/Q410789) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -51,9 +51,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…primarily found in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…Approximately 22% of the administered dose is recovered in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…following hepatic and/or extra-hepatic metabolism…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EDNRA (target), EDNRB (target).</sub>
 

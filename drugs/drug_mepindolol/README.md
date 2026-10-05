@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Mepindolol is a 2-methyl derivative of pindolol. It is a beta blocker.
+Mepindolol is a non-selective beta blocker, a class of drugs used for cardiovascular conditions such as high blood pressure. It appears to be investigational and is not an authorised medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2760233](https://www.wikidata.org/wiki/Q2760233) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

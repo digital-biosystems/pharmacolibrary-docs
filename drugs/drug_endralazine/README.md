@@ -8,6 +8,12 @@
 - **molar mass:** 269.308 g/mol (C14H15N5O) — DrugBank
 - **groups:** experimental
 
+## About
+
+Endralazine is a hydrazinophthalazine vasodilator that was developed as an antihypertensive drug to lower blood pressure. It is considered experimental and does not appear to be an approved medicine today, so its current availability is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5376588](https://www.wikidata.org/wiki/Q5376588) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

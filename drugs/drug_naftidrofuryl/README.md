@@ -8,6 +8,12 @@
 - **molar mass:** 383.5237 g/mol (C24H33NO3) — DrugBank
 - **groups:** investigational
 
+## About
+
+Naftidrofuryl is a vasodilator and serotonin antagonist that has been used to treat intermittent claudication. It is classified as an investigational drug and is not clearly authorised anywhere today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425867](https://www.wikidata.org/wiki/Q425867) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

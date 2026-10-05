@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;Olmesartan&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/&quot;},{&quot;label&quot;:&quot;Thoueille_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**Olmesartan bioavailability (F) has no reported value and was replaced by library defaults, leaving the record without a paper-supported estimate.**
+**The olmesartan model (CL 39.9 L/h, V 2660.0 L, kabs 2.0 h−1) was held back because bioavailability F and lag time Tlag were left at library defaults rather than estimated or justified from the paper.**
 
-The record reports clearance, volume of distribution, and absorption rate constant for olmesartan, but no estimate of F; the model builder used library defaults instead. These default F values affect the simulated profile but are unsupported by this paper. Absorption lag time (Tlag) was also defaulted rather than taken from an explicit estimate. Extracted — olmesartan: CL 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
+The record reports clearance, volume of distribution and absorption rate constant for olmesartan, but the bioavailability F and the absorption lag time Tlag have no extracted values; library placeholders would stand in for them. These parameters affect the simulated profile yet are not supported by the paper, so the record is flagged for review rather than published. No other failed checks are reported. Extracted — olmesartan: CL 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023)
@@ -105,8 +105,8 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_modelica.zip" download>Olmesartan_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_modelica.zip" download>Olmesartan_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_fmi.zip" download>Olmesartan_Thoueille2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_matlab.zip" download>Olmesartan_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_matlab_simbio.zip" download>Olmesartan_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_sbml.zip" download>Olmesartan_Thoueille2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

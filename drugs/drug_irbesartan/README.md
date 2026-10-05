@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Irbesartan is an angiotensin receptor blocker (ARB) indicated to treat hypertension or diabetic nephropathy.[L7456,L7459] It can also be used as part of a combination product with [hydrochlorothiazide] for patients not well controlled or not expected to be well controlled on monotherapy.[L7459] Unlike angiotensin converting enzyme inhibitors, ARBs are not associated with a dry cough.[L7456,L7459]
+Irbesartan is an angiotensin II receptor blocker used to treat high blood pressure (arterial hypertension). It is an approved medicine, authorised in the European Union, and is available both alone and in combination products with diuretics or calcium channel blockers.
 
-Irbesartan was granted FDA approval on 30 September 1997.[L7456,L7459]
-
-**Indication.** Irbesartan is indicated to treat hypertension and diabetic nephropathy in hypertensive patients with type 2 diabetes, elevated serum creatinine, and proteinuria.[L7456] A combination product with hydrochlorothiazide is indicated for hypertension in patients with uncontrolled hypertension with monotherapy or first line in patients not expected to be well controlled with monotherapy.[L7459]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q947266](https://www.wikidata.org/wiki/Q947266) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -63,12 +61,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…single or multiple oral doses of 150mg, 300mg, 600mg, and 900mg of irbesartan…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor/substrate, `CYP2C9` substrate, `CYP3A4` inhibitor, `UGT1A3` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…20% of a radiolabelled oral dose of irbesartan is recovered in urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…the rest is recovered in the feces…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AGTR1 (target), JUN (other/unknown), KNG1 (unknown), PTGS1 (substrate).</sub>
 

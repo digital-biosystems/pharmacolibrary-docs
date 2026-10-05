@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ebert_2001_EEG_alpha_power&quot;,&quot;label&quot;:&quot;Ebert_2001 \u00b7 EEG alpha power&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Ebert_2001_EEG_alpha_power.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # scopolamine — `Scopolamine_AlvarezJimenez2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ Only the abstract was available, so reported summary statistics stand in for a f
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:40:29.128400+00:00) predates the upstream re-run (2026-10-04 14:46:01.863500+00:00). Current validate status: `extracted`.
+
 ## Citation
 Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031)
 
 ## Model component
-<dbs-pgx drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="curated_candidate" stale="false" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -104,7 +106,7 @@ Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British jou
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference_modelica.zip" download>Scopolamine_AlvarezJimenez2016_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference_fmi.zip" download>Scopolamine_AlvarezJimenez2016_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference_fmi.zip" download>Scopolamine_AlvarezJimenez2016_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference_matlab.zip" download>Scopolamine_AlvarezJimenez2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference_matlab_simbio.zip" download>Scopolamine_AlvarezJimenez2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference/Scopolamine_AlvarezJimenez2016_reference_sbml.zip" download>Scopolamine_AlvarezJimenez2016_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -125,4 +127,4 @@ Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British jou
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 13:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 14:46 UTC</sub>

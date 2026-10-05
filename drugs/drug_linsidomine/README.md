@@ -8,6 +8,12 @@
 - **molar mass:** 170.172 g/mol (C6H10N4O2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Linsidomine is a vasodilator and nitric oxide donor that was studied as a cardiac therapy drug for widening blood vessels in heart disease. It remains experimental and is not an established, widely used medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1130256](https://www.wikidata.org/wiki/Q1130256) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -18,7 +24,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spreux-Varoquaux_1991_reference](drugs/drug_linsidomine/Linsidomine_SpreuxVaroquaux1991_reference.md) | — | parent + metabolite (no model) | 3 | Spreux-Varoquaux O et al., Pharmacokinetics of molsidomine and its…, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb03919.x](https://doi.org/10.1111/j.1365-2125.1991.tb03919.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Spreux-Varoquaux_1991_reference](drugs/drug_linsidomine/Linsidomine_SpreuxVaroquaux1991_reference.md) | — | parent + metabolite (no model) | 3 | Spreux-Varoquaux O et al., Pharmacokinetics of molsidomine and its…, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb03919.x](https://doi.org/10.1111/j.1365-2125.1991.tb03919.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Esomeprazole, sold under the brand name Nexium, is a proton pump inhibitor (PPI) medication used for the management of gastroesophageal reflux disease (GERD), for gastric protection to prevent recurrence of stomach ulcers or gastric damage from chronic use of NSAIDs, and for the treatment of pathological hypersecretory conditions including Zollinger-Ellison (ZE) Syndrome. It can also be found in quadruple regimens for the treatment of _H. pylori_ infections along with other antibiotics including [DB01060], [DB01211], and [DB00916], for example.[A177271, F4498] Its efficacy is considered similar to other medications within the PPI class including [DB00338], [DB00213], [DB00448], [DB05351], and [DB01129]. Esomeprazole is the s-isomer of [DB00338], which is a racemate of the S- and R-enantiomer. Esomeprazole has been shown to inhibit acid secretion to a similar extent as [DB00338], without any significant differences between the two compounds _in vitro_. 
+Esomeprazole is a proton-pump inhibitor used for acid-related stomach problems such as gastroesophageal reflux disease, peptic and duodenal ulcers, gastritis, esophagitis, and heartburn. It is an approved medicine with an authorised product in the European Union and is widely used for these conditions.
 
-Esomeprazole exerts its stomach acid-suppressing effects by preventing the final step in gastric acid production by covalently binding to sulfhydryl groups of cysteines found on the (H+, K+)-ATPase enzyme at the secretory surface of gastric parietal cells. This effect leads to inhibition of both basal and stimulated gastric acid secretion, irrespective of the stimulus. As the binding of esomeprazole to the (H+, K+)-ATPase enzyme is irreversible and new enzyme needs to be expressed in order to resume acid secretion, esomeprazole's duration of antisecretory effect persists longer than 24 hours.[FDA Label]
-
-PPIs such as esomeprazole have also been shown to inhibit the activity of dimethylarginine dimethylaminohydrolase (DDAH), an enzyme necessary for cardiovascular health. DDAH inhibition causes a consequent accumulation of the nitric oxide synthase inhibitor asymmetric dimethylarginie (ADMA), which is thought to cause the association of PPIs with increased risk of cardiovascular events in patients with unstable cor
-
-**Indication.** Esomeprazole is indicated for the treatment of acid-reflux disorders including healing and maintenance of erosive esophagitis, and symptomatic gastroesophageal reflux disease (GERD), peptic ulcer disease, H. pylori eradication, prevention of gastrointestinal bleeds with NSAID use, and for the long-term treatment of pathological hypersecretory conditions including Zollinger-Ellison Syndrome.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q553223](https://www.wikidata.org/wiki/Q553223) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -31,21 +27,21 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 21:27 | 1:29 | 1/1/1 | 0/1/0 | 0/0/0 | 18,827/1,947 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 13/3 | 7/0 | 0 |
+| 2026-10-04 08:58 | 10:37 | 1/1/1 | 1/0/0 | 0/0/0 | 162,968/29,730 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 13/3 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Chung_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020_reference](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | — | 1-compartment (no model) | 1 | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Chung_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020_reference](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | — | 1-compartment (no model) | 2 | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gebreyesus_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md) | — | 1-compartment (no model) | 0 | Gebreyesus MS et al., Population pharmacokinetics of esomepra…, British journal of clinical… (2022) | [10.1111/bcp.15416](https://doi.org/10.1111/bcp.15416) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Chung_2022_pH](drugs/drug_esomeprazole/pd_Chung_2022_pH.md) | intragastric pH ← YH4808 · direct sigmoid Emax (Hill) effect | — | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Andersson_2001_pentagastrin_stimulated_peak_acid_output](drugs/drug_esomeprazole/pd_Andersson_2001_pentagastrin_stimulated_peak_acid_output.md) | pentagastrin-stimulated peak acid output ← esomeprazole · direct sigmoid Emax (Hill) effect | — | Andersson T et al., Pharmacokinetics and pharmacodynamics o…, Alimentary pharmacology & t… (2001) | [10.1046/j.1365-2036.2001.01087.x](https://doi.org/10.1046/j.1365-2036.2001.01087.x) |
 
 ## ADME sites
 
@@ -61,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…the remainder is found as inactive metabolites in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ATP4A (inhibitor), ATP4B (modulator), DDAH1 (unknown).</sub>

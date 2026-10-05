@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Inoue_2019 \u00b7 PD haemoglobin A1c&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_reference&quot;,&quot;label&quot;:&quot;Carlsson_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Woodward2014_reference&quot;,&quot;label&quot;:&quot;Woodward_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Woodward2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # haemoglobin A1c — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
@@ -17,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> In this physiological indirect response model, liraglutide (a GLP-1 receptor agonist) acts on FPG, which in turn drives HbA1c: the drug proportionally inhibits FPG production (dFPG/dt = Kin,FPG × (1 − Eplacebo) × (1 − Edrug) − Kout,FPG × FPG), with an Emax,GLP-1r of 0.266 (no EC50/ED50 for liraglutide is given in the excerpts), while HbA1c is modelled as a secondary response whose production depends on FPG/Baseline FPG and which declines with an elimination rate constant Kout,HbA1c of 0.0393 /day from a baseline HbA1c of 7.96%.
+> Liraglutide dose (mg/day) acts on HbA1c (%) via an indirect response model where the drug inhibits FPG production, and HbA1c production is driven by the ratio of FPG to baseline FPG raised to the power of λ (0.777). The HbA1c elimination rate constant (kout) is 0.0393 /day, and the baseline HbA1c is 7.96 %.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Inoue_2019`
 - **model family:** `indirect_response_i`

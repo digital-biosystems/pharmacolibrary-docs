@@ -4,7 +4,7 @@
 
 # mitiglinide — `Mitiglinide_Liu2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,18 +20,20 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — mitiglinide: CL/F 7.8 L/h, V/F 24 L, kabs 9.57 /h, tlag 0.09 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:05.640642+00:00) predates the upstream re-run (2026-10-05 02:34:08.901825+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017)
   ·  DOI: [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6)
 
 ## Model component
-<dbs-pgx drug="mitiglinide" model-id="Mitiglinide_Liu2017_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="mitiglinide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="mitiglinide" model-id="Mitiglinide_Liu2017_reference" status="needs_review" stale="true" population="healthy Chinese volunteers" measured-compound="mitiglinide" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -54,6 +56,13 @@ Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & tox
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'Ka (/h)' routed out of structural estimates ('Inter-individual variability (CV %)')
+- table section iiv: 'Tlag (h)' routed out of structural estimates ('Inter-individual variability (CV %)')
+- table section iiv: 'V (L)' routed out of structural estimates ('Inter-individual variability (CV %)')
+- table section iiv: 'Cl2 (L/h)' routed out of structural estimates ('Inter-individual variability (CV %)')
+- table section iiv: 'E0 (mmol/L)' routed out of structural estimates ('Inter-individual variability (CV %)')
+- table section iiv: 'Ke0 (/h)' routed out of structural estimates ('Inter-individual variability (CV %)')
+- table section iiv: 'Gamma' routed out of structural estimates ('Inter-individual variability (CV %)')
 - dropped value-less row: 'Ka (/h)' (captured trailing unit '/h' for child rows)
 - dropped value-less row: 'Tlag (h)' (captured trailing unit 'h' for child rows)
 - dropped value-less row: 'V (L)' (captured trailing unit 'L' for child rows)
@@ -86,24 +95,14 @@ Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & tox
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
 
-<details><summary>5 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[cl/f]` | 7.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 9.57 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tlag]` | 0.09 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd/f]` | 23.96 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -160,4 +159,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 18:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 02:34 UTC</sub>

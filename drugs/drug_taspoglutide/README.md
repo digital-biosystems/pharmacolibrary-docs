@@ -8,10 +8,6 @@
 - **molar mass:** 3339.763 g/mol (C152H232N40O45) — DrugBank
 - **groups:** investigational
 
-## About
-
-**Description.** Taspoglutide is a pharmaceutical drug, a glucagon-like peptide-1 agonist (GLP-1 agonist), under investigation for treatment of type 2 diabetes being codeveloped by Ipsen and Roche. In September 2010 Roche halted Phase III clinical trials due to incidences of serious hypersensitivity reactions and gastrointestinal side effects. As of May 2013 no new trials had been registered.
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

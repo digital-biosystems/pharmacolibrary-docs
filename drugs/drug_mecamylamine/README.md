@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A nicotinic antagonist that is well absorbed from the gastrointestinal tract and crosses the blood-brain barrier. Mecamylamine has been used as a ganglionic blocker in treating hypertension, but, like most ganglionic blockers, is more often used now as a research tool.
+Mecamylamine is a ganglion-blocking antihypertensive drug that has been used to treat arterial and malignant hypertension, and has also been studied for Tourette syndrome. It is an approved drug, though it is no longer widely used as an antihypertensive; it is also listed as investigational.
 
-**Indication.** For the treatment of moderately severe to severe essential hypertension and in uncomplicated cases of malignant hypertension
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3332124](https://www.wikidata.org/wiki/Q3332124) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,8 +42,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…almost completely absorbed from the gastrointestinal tract…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted slowly in the urine in the unchanged form…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CHRNA2 (target), CHRNA4 (target), CHRNA7 (target), CHRNB2 (target).</sub>
 

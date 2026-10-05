@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Clozapine is a tricyclic dibenzodiazepine, classified as an atypical antipsychotic agent.[A256708] Clozapine displays affinity to various neuroreceptors with a particularly low affinity to the dopamine receptors, thus breaking the mold of first-generation antipsychotics and deeming it "atypical".[A256723]. This low affinity to dopamine receptors results in fewer extrapyramidal side effects, especially tardive dyskinesia.[A185747] However, its promiscuity toward the muscarinic and adrenergic receptors can result in other side effects, notably gastrointestinal hypomotility and orthostatic hypotension. [L905,A215552]. Despite its effectiveness in treating both positive and negative symptoms of schizophrenia, clozapine was briefly removed from the market in various jurisdictions in 1970 due to severe agranulocytosis.[A256713,A256718] However, continued evidence of its effectiveness led to clozapine's eventual reintroduction, although with a reluctance to prescribe it.[A256718] 
+Clozapine is an atypical antipsychotic used mainly for schizophrenia, and also for other psychotic and mood disorders such as bipolar disorder and psychosis in Parkinson's disease. It is an approved medicine on the WHO essential medicines list, but carries a boxed warning, so its use is restricted and requires careful monitoring.
 
-Clozapine was approved by the FDA in 1989 for treatment-resistant schizophrenia under the brand CLOZARIL.[L905] Due to its severe adverse effects profile, clozapine is only available through a restricted program under a Risk Evaluation Mitigation Strategy (REMS) called the Clozapine REMS Program.[L905]
-
-**Indication.** Clozapine is indicated for the treatment of severely ill patients with schizophrenia who fail to respond adequately to standard antipsychotic treatment. Because of the risks of severe neutropenia and of seizure associated with its use, Clozapine should be used only in patients who have failed to respond adequately to standard antipsychotic treatment.[L905]
-
-Clozapine is also indicated for reducing the risk of recurrent suicidal behavior in patients with schizophrenia or schizoaffective disorder who are judged to be at chronic risk for re-experiencing suicidal behavior, based on history and recent clinical state. Suicidal behavior refers to actions by a patient that put him/herself at risk for death.[L905]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q221361](https://www.wikidata.org/wiki/Q221361) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -28,8 +24,8 @@ Clozapine is also indicated for reducing the risk of recurrent suicidal behavior
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Geers_2022_reference](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | held back | 1-compartment, oral | 4 | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reeves_2024_reference](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | held back | 1-compartment, oral | 2 | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Geers_2022_reference](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | — | 1-compartment (no model) | 4 | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Reeves_2024_reference](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | — | parent + metabolite (no model) | 2 | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
 
 ## ADME sites
 
@@ -51,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `FMO3` substrate, `GSTP1` unknown, `SLC22A1` substrate, `UGT1A4` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inducer, `GSTP1` unknown | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…30% in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` unknown | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CALY (unknown), CHRM1 (partial agonist), CHRM2 (partial agonist), CHRM3 (target), CHRM4 (partial agonist), CHRM5 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (binder), GABBR1 (positive modulator), GABBR2 (positive modulator), GABRA1 (target), GABRB1 (target), GABRG1 (target), HRH1 (target), HRH4 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR2A (target), HTR2C (target), HTR3A (target), HTR6 (target), HTR7 (target).</sub>

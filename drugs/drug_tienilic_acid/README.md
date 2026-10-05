@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Tienilic acid, or ticrynafen, is a diuretic drug with uric acid-lowering action which was marketed for the treatment of hypertension. It was withdrawn in 1982 after case reports in the United States suggested a link between ticrynafen and hepatitis. (Manier et al., 1982)
+Tienilic acid (ticrynafen) is a diuretic that was used to treat high blood pressure and fluid retention, and also promotes uric acid excretion. It was withdrawn from the market after approval because of safety concerns, so it is no longer used.
 
-**Indication.** For the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7801054](https://www.wikidata.org/wiki/Q7801054) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

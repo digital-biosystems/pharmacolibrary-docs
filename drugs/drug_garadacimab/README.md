@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Garadacimab is a fully human monoclonal antibody targeted against activated factor XII.[L53283] It was developed by CSL Behring for use as a prophylactic agent in patients with hereditary angioedema (HAE), a rare autosomal dominant disorder that results in acute episodes of angioedema.[A273993,A273998] As opposed to [lanadelumab], another prophylactic agent for HAE that targets kallikrein, garadacimab targets activated factor XII, the first factor in the contact system responsible for the signalling cascade that results in angioedema.[L53283,A273998]
+Garadacimab is a monoclonal antibody used to treat hereditary angioedema. It is authorised in the European Union.
 
-Garadacimab received its first approval in Australia and the UK in January 2025, and has since been approved in a number of other jurisdictions, including the EU and Japan.[A273993] In June 2025, garadacimab was approved by the US FDA for the prophylaxis of HAE episodes in patients ≥12 years of age.[L53303,L53283] It is the first inhibitor of factor XIIa to receive market approval.[L53303]
-
-**Indication.** Garadacimab is indicated for the prophylaxis hereditary angioedema (HAE) attacks in adult and pediatric patients aged 12 years and older.[L53283]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Nandrolone, also known as 19-nortestosterone or 19-norandrostenolone, is a synthetic anabolic-androgenic steroid (AAS) derived from testosterone.
+Nandrolone is an anabolic steroid that has been used to treat anemia and breast cancer. It is considered investigational and is not an authorised medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421709](https://www.wikidata.org/wiki/Q421709) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

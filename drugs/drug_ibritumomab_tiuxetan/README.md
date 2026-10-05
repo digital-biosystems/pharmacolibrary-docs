@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Indium or yttrium conjugated murine IgG1 kappa monoclonal antibody directed against the CD20 antigen, which is found on the surface of normal and malignant B lymphocytes. Ibritumomab is produced in Chinese hamster ovary cells and is composed of two murine gamma 1 heavy chains of 445 amino acids each and two kappa light chains of 213 amino acids each.
+Ibritumomab tiuxetan is a radioimmunotherapy drug, a monoclonal antibody radiopharmaceutical used to treat follicular lymphoma. It is an approved medication, though its European Union marketing authorisation has lapsed, so its use is now limited mainly to the United States.
 
-**Indication.** For treatment of non-Hodgkin's lymphoma
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q635415](https://www.wikidata.org/wiki/Q635415) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

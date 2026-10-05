@@ -19,9 +19,9 @@
 
 ### Reviewer guidance
 
-**The vortioxetine parent–metabolite model was quarantined because vortioxetine's bioavailability (F), clearance (CL) and absorption lag time had no extracted values and library placeholder defaults were substituted, while the record's covariate effects were never simulated.**
+**The vortioxetine parent–metabolite model was quarantined because vortioxetine's bioavailability (F), clearance (CL) and absorption lag time (Tlag) had no extracted values and library placeholder values were substituted instead.**
 
-The record lists parameters for the metabolite Lu AA34443 (e.g. CLmet 22.5 L/h, V1 155 L, V2 211 L, Q 7.69 L/h, kabs 0.281 1/h) and for vortioxetine (kabs 0.160 1/h, V1 1510 L, V2 571 L, Q 21.1 L/h, tlag 0.966 h), but no value for vortioxetine's systemic clearance or bioavailability, so placeholder defaults stood in for F, CL and Tlag and the model was held back rather than published with invented numbers. The structure also mismatched: the expected parent–metabolite hepatic three-compartment topology was not what was built, the obtained structure being a one-compartment enteral model. The covariate effects defined in the record (theta_q370_cyp2d6 13.1, theta_q22_cyp2c19 12.5) were not exercised — only the reference individual was simulated. A second reader additionally disagreed on several fields, reporting a theta_cl_age of 0.157 and theta_v3_height of 1.48 absent from this record, and contesting the Lu AA34443 central volume of 155 L. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
+The record lists kabs 0.160 1/h, V1 1510 L, Q 21.1 L/h and V2 571 L for vortioxetine, and kabs 0.281 1/h, fm 0.190, V1 155 L, CL 22.5 L/h, Q 7.69 L/h and V2 211 L for Lu AA34443, but F, CL and Tlag for the parent had no value, so placeholders stood in and the model was held back rather than published with invented numbers. The model structure also did not match the paper: a parent–metabolite hepatic structure with three compartments was expected, but a one-compartment enteral structure was obtained. The covariate effects defined in the record (e.g. theta_q370_cyp2d6 13.1 and theta_q22_cyp2c19 12.5) were not exercised in simulation, which simulated only the reference individual. A second reader additionally reported covariate parameters absent from this record, such as theta_cl_age 0.157 and theta_v3_height 1.48. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[lu aa34443 clearance, clmet].covariate_forms`: this record has ['linear_fractional'], the second reading ['linear_fractional', 'linear_fractional']; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -154,7 +154,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_param_coverage | not captured | pass | 10 scholar param(s) emitted or defaulted | 10 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_beta | reference | skipped | 66 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

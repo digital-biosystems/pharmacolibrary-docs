@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An anticonvulsant especially useful in the treatment of absence seizures unaccompanied by other types of seizures.
+Ethosuximide is an anticonvulsant used to treat epilepsy, especially childhood absence epilepsy. It is an approved medicine and appears on the WHO essential medicines list, so it remains widely used.
 
-**Indication.** For the treatment of petit mal epilepsy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421567](https://www.wikidata.org/wiki/Q421567) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

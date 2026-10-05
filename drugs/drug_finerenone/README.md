@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Finerenone, or BAY 94-8862, is a mineralocorticoid receptor antagonist indicated to reduce the risk of sustained decline in glomerular filtration rate, end stage kidney disease, cardiovascular death, heart attacks, and hospitalization due to heart failure in adults with chronic kidney disease associated with type II diabetes mellitus.[A236519,L34739] Patients with kidney disease, would originally be given [spironolactone] or [eplerenone] to antagonize the mineraclocorticoid receptor.[A236544] Spironolactone has low selectivity and affinity for the receptor; it dissociates quickly and can also have effects at the androgen, progesterone, and glucocorticoid receptors.[A236544] Eplerenone is more selective and has longer lasting effects.[A236544] More selective nonsteroidal mineralocorticoid antagonists such as [apararenone], [esaxerenone], and finerenone were later developed.[A236544] So far, finerenone is the only nonsteroidal mineralocorticoid receptor antagonist to be FDA approved.[A236544,L34739]
+Finerenone is a nonsteroidal aldosterone antagonist used to treat chronic kidney disease associated with type 2 diabetes, and has also been studied for chronic heart failure. It is approved and authorised in the European Union, and remains under investigation for additional uses.
 
-Finerenone was granted FDA approval on 9 July 2021,[L34739] followed by the EMA approval on 11 March 2022.[L41449]
-
-**Indication.** In the US, finerenone is indicated to reduce the risk of sustained decline in glomerular filtration rate, end stage kidney disease, cardiovascular death, heart attacks, and hospitalization due to heart failure in adults with chronic kidney disease associated with type II diabetes mellitus.[L34739] Finerenone has also been approved for reducing the risks of cardiovascular death, hospitalization for heart failure, and urgent heart failure visits in adult patients with heart failure with left ventricular ejection fraction≥ 40%.[L43095]
-
-In Europe, finerenone is indicated for the treatment of chronic kidney disease (stage 3 and 4 with albuminuria) associated with type 2 diabetes in adults.[L41444]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q21099046](https://www.wikidata.org/wiki/Q21099046) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -61,8 +57,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…The majority of the dose recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…The majority of the dose recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: NR3C2 (target).</sub>
 

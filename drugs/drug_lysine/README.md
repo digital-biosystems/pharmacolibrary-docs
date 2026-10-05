@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Lysine (abbreviated as Lys or K) is an α-amino acid with the chemical formula HO2CCH(NH2)(CH2)4NH2. This amino acid is an essential amino acid, which means that humans cannot synthesize it. Its codons are AAA and AAG. Lysine is a base, as are arginine and histidine. The ε-amino group acts as a site for hydrogen binding and a general base in catalysis. Common posttranslational modifications include methylation of the ε-amino group, giving methyl-, dimethyl-, and trimethyllysine. The latter occurs in calmodulin. Other posttranslational modifications include acetylation. Collagen contains hydroxylysine which is derived from lysine by lysyl hydroxylase. O-Glycosylation of lysine residues in the endoplasmic reticulum or Golgi apparatus is used to mark certain proteins for secretion from the cell.
+Lysine is an essential amino acid used as an additive to intravenous solutions and as a detoxifying agent during antineoplastic treatment; it has also been linked to patent ductus arteriosus. It is approved and also regarded as a nutraceutical, though some of its uses remain investigational.
 
-**Indication.** Supplemental lysine has putative anti-herpes simplex virus activity. There is preliminary research suggesting that it may have some anti-osteoporotic activity.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20816880](https://www.wikidata.org/wiki/Q20816880) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -79,7 +79,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | absorption | kidney | `SLC22A4` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A4` inhibitor | DrugBank actor |
-| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: KARS1 (unknown), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC7A1 (unknown), SLC7A2 (unknown), SLC7A3 (unknown), SLC7A4 (unknown).</sub>
 

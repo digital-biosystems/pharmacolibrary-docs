@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** A metallic element of atomic number 30 and atomic weight 65.38. It is a necessary trace element in the diet, forming an essential part of many enzymes, and playing an important role in protein synthesis and in cell division. Zinc deficiency is associated with anemia, short stature, hypogonadism, impaired wound healing, and geophagia. It is identified by the symbol _Zn_ [L2098].
+Zinc preparations are used as a topical treatment for haemorrhoids and anal fissures, and zinc has also been authorised in the European Union for the inherited copper-storage disorder hepatolenticular degeneration (Wilson's disease). Zinc is widely available and approved, with some additional investigational uses.
 
-A newer study suggests implies that an imbalance of zinc is associated with the neuronal damage associated with traumatic brain injury, stroke, and seizures [A32465].
-
- Understanding the mechanisms that control brain zinc homeostasis is, therefore, imperative to the development of preventive and treatment regimens for these and other neurological disorders [A32465].
-
-In addition to the above, recent review articles have already demonstrated the important role of zinc in the pathophysiology and treatment of affective disorders, plus discussed the potential value of zinc as a marker of these diseases [L2097].  Most recently, research has shown that polymorphism of the common polymorphism in zinc transporter _SLC30A8/ZnT8_ may increase susceptibility to type 2 diabetes provided novel insights into the role of zinc in diabetes [A32416].
-
-**Indication.** Zinc can be used for the treatment and prevention of zinc deficiency/its consequences, including stunted growth and acute diarrhea in children, and slowed wound healing. It is also utilized for boosting the immune system, treating the common cold and recurrent ear infections, as well as preventing lower respiratory tract infections [L2172].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q758](https://www.wikidata.org/wiki/Q758) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -72,13 +66,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Zinc is absorbed in the small intestine by a carrier-mediated mechanism…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ORM2` unknown | DrugBank actor |
-| metabolism | small intestine | <sub>“…transport into the enterocytes in the duodenum and jejunum…”</sub> | prose |
-| excretion | bile duct | <sub>“…Considerable amounts of zinc are secreted through both biliary and intestinal secretions…”</sub> | prose |
-| excretion | kidney | <sub>“…Other routes of zinc excretion include both urine…”</sub> | prose |
-| excretion | skin | <sub>“…surface losses (sloughed skin, hair, sweat)…”</sub> | prose |
-| excretion | small intestine | <sub>“…secreted through both biliary and intestinal secretions…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: A1BG (unknown), A2M (unknown), AGT (unknown), AHSG (unknown), ALDOA (unknown), APCS (unknown), APLP1 (cofactor), APLP2 (cofactor), APOA1 (unknown), APOA2 (unknown), APOA4 (unknown), APOBR (unknown), APOE (unknown), APOL1 (unknown), APP (cofactor), ASPA (cofactor), BDKRB1 (unknown), BRCC3 (unknown), C1QB (unknown), C1QC (unknown), C1R (unknown), C1S (unknown), C3 (unknown), C4B (unknown), C4BPA (unknown), C4BPB (unknown), C5 (unknown), C8A (unknown), C8B (unknown), C8G (unknown), CA1 (substrate), CCS (unknown), CFB (unknown), CFH (unknown), CFI (unknown), CLU (unknown), CP (unknown), CPN1 (unknown), CPN2 (unknown), DAND5 (cofactor), DCD (unknown), DSP (unknown), EEF1A1 (unknown), ENO1 (unknown), ESR1 (cofactor), F12 (unknown), F13B (unknown), F2 (unknown), FCN3 (unknown), FGA (unknown), FN1 (unknown), GAPDHS (unknown), GLRA1 (unknown), GSN (unknown), HBA1 (unknown), HBB (unknown), HDAC1 (cofactor), HDAC4 (cofactor), HDAC8 (cofactor), HPR (unknown), HRNR (unknown), IGFALS (unknown), IGHA1 (unknown), IGHM (unknown), IGKV1-17 (unknown), IGKV3-20 (unknown), IGLV3-21 (unknown), IL3 (unknown), INS (unknown), ITIH1 (unknown), ITIH2 (unknown), ITIH3 (unknown), ITIH4 (unknown), JCHAIN (unknown), JUP (unknown), KLKB1 (unknown), KNG1 (unknown), KRT1 (unknown), KRT10 (unknown), KRT14 (unknown), KRT16 (unknown), KRT2 (unknown), KRT5 (unknown), KRT6A (unknown), KRT9 (unknown), MDM2 (unknown), MGMT (unknown), MIR-146A (target), MMP9 (unknown), MPG (unknown), MT1A (unknown), MT2A (unknown), MT3 (unknown), NME1 (unknown), P4HB (unknown), PARP1 (unknown), PDCD6 (unknown), PDIA3 (unknown), PGLYRP2 (unknown), PON1 (unknown), PRDX1 (unknown), PSPH (unknown), PZP (unknown), S100A2 (unknown), S100A7 (unknown), S100A8 (unknown), S100A9 (unknown), SELENOP (unknown), SEMG1 (unknown), SERPINA1 (unknown), SERPINA3 (unknown), SERPINA4 (unknown), SERPINA6 (unknown), SERPIND1 (unknown), SHBG (unknown), SIVA1 (unknown), SOD1 (unknown), TF (unknown), TP53 (unknown), TP73 (cofactor), TPI1 (unknown), TTR (unknown), TUFM (unknown), UTRN (unknown), VTN (unknown).</sub>
 

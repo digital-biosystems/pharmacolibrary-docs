@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Nicorandil is an orally efficacious vasodilatory drug and antianginal agent marketed in the UK, Australia, most of Europe, India, Philippines, Japan, South Korea, and Taiwan. It is not an approved drug by FDA. It is a niacinamide derivative that induces vasodilation of arterioles and large coronary arteries by activating potassium channels. It is often used for patients with angina who remain symptomatic despite optimal treatment with other antianginal drugs [T28]. Nicorandil is a dual-action potassium channel opener that relaxes vascular smooth muscle through membrane hyperpolarization via increased transmembrane potassium conductance and increased intracellular concentration of cyclic GMP. It is shown to dilate normal and stenotic coronary arteries and reduces both ventricular preload and afterload [A20325].
+Nicorandil is a vasodilator heart medicine used to treat angina (chest pain caused by reduced blood flow to the heart). It is not authorised in the European Union but remains in clinical use in some countries, where it is prescribed for cardiac patients.
 
-**Indication.** Indicated for the prevention and treatment of chronic stable angina pectoris and reduction in the risk of acute coronary syndromes.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q862989](https://www.wikidata.org/wiki/Q862989) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,11 +44,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…nicorandil is well absorbed from the gastrointestinal tract…”</sub> | prose |
-| metabolism | kidney | <sub>“…2-nicotinamidoethanol can be detected in the urine…”</sub> | prose |
-| metabolism | liver | <sub>“…Nicorandil undergoes extensive hepatic metabolism…”</sub> | prose |
-| excretion | bile duct | <sub>“…Less than 2% of administered dose is excreted through the biliary system…”</sub> | prose |
-| excretion | kidney | <sub>“…main route of elimination is the kidney with more than 60% of the administered dose was el…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC9 (activator).</sub>
 

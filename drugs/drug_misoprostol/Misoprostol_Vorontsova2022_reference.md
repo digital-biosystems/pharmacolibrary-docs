@@ -4,7 +4,7 @@
 
 # misoprostol — `Misoprostol_Vorontsova2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,13 +12,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The misoprostol acid model was rejected because the Michaelis–Menten parameters carry wrong dimensions: Vmax is reported as 5.45 pg/ml (a concentration, not a metabolic rate) and Km as 2.5 pg (an amount, not a concentration).**
+**The misoprostol acid metabolite model was rejected because a structural parameter failed a dimensional check: Vmax/F is reported as 5.45 pg/ml, a concentration unit, not a rate as a maximum metabolism rate requires.**
 
-For misoprostol acid in women undergoing labor induction at term, the record lists Vmax/Fb = 5.45 with unit pg/ml, but Vmax is the maximum rate of metabolism by an enzymatic reaction and should have rate dimensions, not concentration. Km = 2.5 pg likewise uses an amount unit where a substrate concentration is expected, so the structural parameter failed the dimension check. The reported units could not be converted to SI, so the parameters reached the model without usable SI values. The other parameters (CL/F 730 L/h, V/F 610 L, kabs 0.709 1/h for buccal 25 μg) are dimensionally consistent. Extracted — misoprostol acid: CL/F 730 L/h, V/F 610 L, kabs 0.709 buccal, 25 μg, Vmax 5.45 pg/ml, Km 2.5 pg.
+For the misoprostol acid metabolite (formed from misoprostol, one compartment), the record lists Vmax/Fb = 5.45 pg/ml and Km = 2.5 pg; a maximum rate of enzymatic metabolism must have units of amount per time, so the pg/ml unit is dimensionally wrong for this parameter. The reported unit also could not be converted to SI, so the parameter arrived without an SI value. A second reader (gpt-oss:120b) disagreed with this record on several parameter fields, reading CL/Fb = 730 L/h, ka = 0.709 1/h, Km = 2.5, V/Fb = 610 L and Vmax/Fb = 5.45 where this record had nulls, and nulls where this record had those values, so the parameter extraction itself is contested. Extracted — misoprostol acid: CLm/F 730 L/h, V 610 L, kabs 0.709 1/h, Vmax 5.45 pg/ml, Km 2.5 pg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/fb: this record has none, the second reading 730; it also differs on 9 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -31,19 +33,19 @@ Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and tr
 ## Model component
 <dbs-pgx drug="misoprostol" model-id="Misoprostol_Vorontsova2022_reference" status="rejected" stale="false" population="women undergoing labor induction at term" measured-compound="misoprostol acid" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/Fb, L/h | `Q27` · CL/F | 730 | L/h | 0.00020277777777777777 | [l] / [h] | 22.5 | llm (0.6) | cts13306-tbl-0002:row1:col1, cts13306-tbl-0002:row1:col2, cts13306-tbl-0002:row1:col3 | — | not captured |
-| V/Fb, L | `Q76` · V/F | 610 | L | 0.61 | [l] | 33.4 | llm (0.6) | cts13306-tbl-0002:row2:col1, cts13306-tbl-0002:row2:col2, cts13306-tbl-0002:row2:col3 | — | not captured |
-| ka, 1/h (buccal, 25 μg) | `Q49` · kabs | 0.709 | buccal, 25 μg | not captured | [buccal] | 15.7 | exact (1.0) | cts13306-tbl-0002:row4:col1, cts13306-tbl-0002:row4:col2, cts13306-tbl-0002:row4:col3 | — | not captured |
+| CL/Fb, L/h | `Q351` · CLm/F | 730 | L/h | 0.00020277777777777777 | [l] / [h] | 22.5 | exact (1.0) | cts13306-tbl-0002:row1:col1, cts13306-tbl-0002:row1:col2, cts13306-tbl-0002:row1:col3 | — | not captured |
+| V/Fb, L | `Q61` · V | 610 | L | 0.61 | [l] | 33.4 | exact (1.0) | cts13306-tbl-0002:row2:col1, cts13306-tbl-0002:row2:col2, cts13306-tbl-0002:row2:col3 | — | not captured |
+| ka, 1/h (buccal, 25 μg) | `Q49` · kabs | 0.709 | 1/h | 0.00019694444444444444 | 1/h | 15.7 | exact (1.0) | cts13306-tbl-0002:row4:col1, cts13306-tbl-0002:row4:col2, cts13306-tbl-0002:row4:col3 | — | not captured |
 | Vmax/Fb, pg/ml | `Q66` · Vmax | 5.45 | pg/ml | not captured | [pg] / [ml] | 12.8 | llm (0.6) | cts13306-tbl-0002:row8:col1, cts13306-tbl-0002:row8:col2, cts13306-tbl-0002:row8:col3 | — | not captured |
 | Km, pg | `Q1` · Km | 2.5 | pg | not captured | [pg] | 41.2 | exact (1.0) | cts13306-tbl-0002:row9:col1, cts13306-tbl-0002:row9:col2, cts13306-tbl-0002:row9:col3 | — | not captured |
 
@@ -65,9 +67,15 @@ Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and tr
 - dropped duplicate Q49 ('ka, 1/h (vaginal, 50 μg)', value '0.24') — already have one for this compound
 - unit_dimension_mismatch: 'Vmax/Fb, pg/ml' → Q66 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'Km, pg' → Q1 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
+- implicit units: 'ka, 1/h (buccal, 25 μg)' → 1/h (from the paper text: "The abstract explicitly states the unit for the absorption rate constant (ka) as h−1 (e.g., 'buccal 25 μg 0.724 (95% con")
+- metabolite misoprostol acid: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'V/Fb, L' Q63→Q61 for misoprostol acid — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=misoprostol acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
+- row roles: 4 per-group rows of misoprostol acid absorption_rate_constant but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 18 linked by role
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -86,6 +94,36 @@ Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and tr
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.286 (4/14 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl/fb]` | not captured | 730 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/fb]` | 730 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.709 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 0.709 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/fb]` | not captured | 610 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/fb]` | 610 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vmax/fb]` | not captured | 5.45 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vmax/fb]` | 5.45 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -94,14 +132,13 @@ Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and tr
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | fail | [mass] | pg | not captured | not captured | ['cts13306-tbl-0002:row9:col1', 'cts13306-tbl-0002:row9:col2', 'cts13306-tbl-0002:row9:col3'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13306-tbl-0002:row1:col1', 'cts13306-tbl-0002:row1:col2', 'cts13306-tbl-0002:row1:col3'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13306-tbl-0002:row1:col1', 'cts13306-tbl-0002:row1:col2', 'cts13306-tbl-0002:row1:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cts13306-tbl-0002:row4:col1', 'cts13306-tbl-0002:row4:col2', 'cts13306-tbl-0002:row4:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13306-tbl-0002:row2:col1', 'cts13306-tbl-0002:row2:col2', 'cts13306-tbl-0002:row2:col3'] |
 | C5_dimension_Q66 | fail | [mass] / [length] ** 3 | pg/ml | not captured | not captured | ['cts13306-tbl-0002:row8:col1', 'cts13306-tbl-0002:row8:col2', 'cts13306-tbl-0002:row8:col3'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13306-tbl-0002:row2:col1', 'cts13306-tbl-0002:row2:col2', 'cts13306-tbl-0002:row2:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | buccal, 25 μg | not captured | not captured | ['cts13306-tbl-0002:row4:col1', 'cts13306-tbl-0002:row4:col2', 'cts13306-tbl-0002:row4:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 730 L/h | not captured | not captured | ['cts13306-tbl-0002:row1:col1', 'cts13306-tbl-0002:row1:col2', 'cts13306-tbl-0002:row1:col3'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 610 L | not captured | not captured | ['cts13306-tbl-0002:row2:col1', 'cts13306-tbl-0002:row2:col2', 'cts13306-tbl-0002:row2:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 610 L | not captured | not captured | ['cts13306-tbl-0002:row2:col1', 'cts13306-tbl-0002:row2:col2', 'cts13306-tbl-0002:row2:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -126,4 +163,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 06:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 10:07 UTC</sub>

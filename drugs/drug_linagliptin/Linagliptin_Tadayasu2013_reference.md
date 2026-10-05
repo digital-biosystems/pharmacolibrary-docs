@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Tadayasu_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_Tadayasu2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.85). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.85). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +24,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:29.280592+00:00) predates the upstream re-run (2026-10-05 00:17:15.142375+00:00). Current validate status: `rejected`.
+
 ## Citation
 Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharmacy & pharm… (2013)
   ·  DOI: [10.18433/j3s304](https://doi.org/10.18433/j3s304)
 
 ## Model component
-<dbs-pgx drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -42,8 +43,8 @@ Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharma
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F1 | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row2:col1 | — | 46.7 (None% RSE) |
-| KA [h -1 ] | `Q49` · kabs | 1.63 | not captured | not captured | not captured | 22.2 | llm_confirmed (0.6) | tab_2:row3:col1, tab_2:row3:col2 | — | 73.6 (None% RSE) |
+| F1 | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row2:col1 | — | not captured |
+| KA [h -1 ] | `Q49` · kabs | 1.63 | 1/h | 0.00045277777777777775 | 1/h | 22.2 | llm_confirmed (0.6) | tab_2:row3:col1, tab_2:row3:col2 | — | not captured |
 | CL/F1 [L/h] | `Q27` · CL/F | 121 | L/h | 3.361111111111111e-05 | [l] / [h] | 15.5 | llm (0.6) | tab_2:row4:col1, tab_2:row4:col2 | — | not captured |
 | V2/F1 [L] | `Q82` · V2/F | 633 | L | 0.633 | [l] | 12.7 | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2 | — | not captured |
 | Q3/F1 [L/h] | `Q309` · Q3/F | 73.0 | L/h | 2.0277777777777776e-05 | [l] / [h] | 68.8 | llm (0.6) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
@@ -59,10 +60,16 @@ Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharma
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'IIV in F1 [CV%]' routed out of structural estimates ('Model parameters: IIV parameters')
+- table section iiv: 'IIV in KA [CV%]' routed out of structural estimates ('Model parameters: IIV parameters')
+- table section iiv: 'IIV in CL [CV%]' routed out of structural estimates ('Model parameters: IIV parameters')
+- table section iiv: 'IIV in BMAX [CV%]' routed out of structural estimates ('Model parameters: IIV parameters')
+- table section residual_error: 'Proportional residual' routed out of structural estimates ('Model parameters: Residual variability')
 - column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_mismatch: 'KD [nmol/L]' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'AMAX2/F1[nmol]' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col1', 'tab_2:row14:col2'])
 - dropped PD-category row 'EMAX [%]' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row16:col1', 'tab_2:row16:col2'])
+- implicit units: 'KA [h -1 ]' → 1/h (from the popPK convention: 'The parameter is KA (absorption rate constant). The paper text does not explicitly state the unit for this specific para')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=linagliptin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -113,9 +120,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
 | C5_dimension_Q309 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
 | C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['tab_2:row13:col1', 'tab_2:row13:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
 | C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 121 L/h | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
@@ -144,4 +151,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 08:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:17 UTC</sub>

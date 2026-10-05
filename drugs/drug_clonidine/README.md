@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Clonidine is an imidazole derivate that acts as an agonist of alpha-2 adrenoceptors.[A180559] This activity is useful for the treatment of hypertension, severe pain, and ADHD.[L7237,L54536,L7240,L7243,L7246]
+Clonidine is a centrally acting alpha-2 agonist used to treat high blood pressure, and also for conditions such as glaucoma, ADHD, Tourette syndrome, spasticity, and hypersalivation. It remains an approved medicine in widespread use, though it carries a boxed warning.
 
-Clonidine was granted FDA approval on 3 September 1974.[L7237]
-
-**Indication.** Clonidine tablets, oral solution and transdermal systems are indicated for the treatment of hypertension alone or in combination with other medications.[L7237,L7240, L54536] A clonidine injection is indicated for use with opiates in the treatment of severe cancer pain where opiates alone are insufficient.[L7243] An extended-release tablet of clonidine is indicated for the treatment of ADHD, either alone or in combination with other medications.[L7246]
-
-Clonidine is also used for the diagnosis of pheochromocytoma,[A180565] treatment of nicotine dependance,[A180568] and opiate withdrawal.[A180571]
-
-Additionally, clonidine is also indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD) as a monotherapy or as an adjunctive therapy to central nervous system (CNS) stimulant medications in pediatric patients 6 years of age and older.[L52295,L52300]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412221](https://www.wikidata.org/wiki/Q412221) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -73,8 +67,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…20% is eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine as the unchanged drug…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), AOC3 (inhibitor).</sub>
 

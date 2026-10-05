@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Sotatercept is an activin signalling inhibitor. It is a homodimeric recombinant fusion protein consisting of the extracellular domain of the human activin receptor type IIA (ActRIIA) linked to the human IgG1 Fc domain.[L50351]
+Sotatercept is a fusion-protein medication used to treat pulmonary arterial hypertension. It is an approved drug and is used for pulmonary hypertension, classified among antihypertensives for pulmonary arterial hypertension.
 
-On March 26, 2024, sotatercept was approved by the FDA for the treatment of pulmonary arterial hypertension (PAH).[L50361] Sotatercept works to resolve the imbalance in activin–growth differentiation factor and BMP pathway signalling observed in PAH.[A263481] Sotatercept was approved by the European Commission on August 26, 2024.[L51549]
-
-**Indication.** Sotatercept is indicated for the treatment of adults with pulmonary arterial hypertension (PAH, World Health Organization [WHO] Group 1) to increase exercise capacity, improve WHO functional class (FC), and reduce the risk of clinical worsening events, including hospitalization for PAH, lung transplantation, and death.[L50351, L54526]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q103815273](https://www.wikidata.org/wiki/Q103815273) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…Following subcutaneous administration, the absolute bioavailability of sotatercept is appr…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACVR1B (binder), ACVR2A (binder), GDF11 (binder), MSTN (binder).</sub>
 

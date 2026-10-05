@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** A nicotinic antagonist that has been used as a ganglionic blocker in hypertension, as an adjunct to anesthesia, and to induce hypotension during surgery.
+Trimetaphan is a ganglion-blocking antihypertensive drug used to treat arterial hypertension and as an adjuvant in anesthesia. It is an approved drug, but its use today is uncommon and largely limited to specialised hospital settings for rapid blood-pressure control.
 
-**Indication.** For the controlled reduction of blood pressure during surgery and in the treatment of hypertensive emergencies.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q9361596](https://www.wikidata.org/wiki/Q9361596) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

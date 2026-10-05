@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A phosphodiesterase inhibitor that blocks uptake and metabolism of adenosine by erythrocytes and vascular endothelial cells. Dipyridamole also potentiates the antiaggregating action of prostacyclin. (From AMA Drug Evaluations Annual, 1994, p752)
+Dipyridamole is a medication that prevents blood clots from forming and also widens blood vessels, so it is used as an antiplatelet drug to stop platelets from clumping together. It is an approved medicine, listed as a platelet aggregation inhibitor under the antithrombotic group of the ATC classification, and is also being studied for additional uses.
 
-**Indication.** For as an adjunct to coumarin anticoagulants in the prevention of postoperative thromboembolic complications of cardiac valve replacement and also used in prevention of angina.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419374](https://www.wikidata.org/wiki/Q419374) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -49,7 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ORM1` binder | DrugBank actor |
 | metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted with the bile…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC4` inhibitor | DrugBank actor |
 

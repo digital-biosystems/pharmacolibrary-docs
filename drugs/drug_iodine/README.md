@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Iodine is commonly used as an antiseptic for minor cuts and abrasions, preventing infections that may result from contaminated wounds. Additionally, iodine has been studied in the treatment of fibrocystic disease and breast cancer.[A3413,A192153,A192156,A192159]
+Iodine is used as a topical antiseptic and disinfectant for the skin. It is an approved drug, widely available for skin antisepsis, and is also being studied for other uses.
 
-**Indication.** Investigated for use/treatment in breast disorders (unspecified) and pain (acute or chronic).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2064483](https://www.wikidata.org/wiki/Q2064483) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

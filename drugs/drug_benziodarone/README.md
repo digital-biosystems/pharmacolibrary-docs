@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Benziodarone is a uricostatic and a uricosuric agent which is sold also under the name Amplivex-Labaz. It is used in the treatment of gout [A175630]. It was withdrawn from France markets and British markets due to its effects causing Jaundice in patients [T487, A175636].
+Benziodarone is a vasodilator that was used in cardiac therapy and also acts as a uricosuric agent. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4890775](https://www.wikidata.org/wiki/Q4890775) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** An antibiotic first isolated from cultures of _Streptomyces venezuelae_ in 1947 but now produced synthetically. It has a relatively simple structure and was the first broad-spectrum antibiotic to be discovered. It acts by interfering with bacterial protein synthesis and is mainly bacteriostatic. (From Martindale, The Extra Pharmacopoeia, 29th ed, p106)
+Chloramphenicol is an antibiotic used to treat bacterial infections such as rickettsial disease, Bacteroides infections, and outer ear infections. It remains in use, including as a topical treatment for skin, eye, and ear infections, and is listed among WHO essential medicines, though it carries a boxed warning.
 
-The FDA has withdrawn all oral drug products containing chloramphenicol, due to the high risk of fatal aplastic anemia associated with this specific route of administration.[L43942,L44022]
-
-**Indication.** Used in treatment of cholera, as it destroys the vibrios and decreases the diarrhea. It is effective against tetracycline-resistant vibrios. It is also used in eye drops or ointment to treat bacterial conjunctivitis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q274515](https://www.wikidata.org/wiki/Q274515) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +32,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…Well absorbed following intramuscular administration…”</sub> | prose |
-| absorption | small intestine | <sub>“…Rapidly and completely absorbed from gastrointestinal tract following oral administration…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor | DrugBank actor |

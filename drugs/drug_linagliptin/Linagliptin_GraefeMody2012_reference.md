@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Graefe-Mody_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_GraefeMody2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +20,18 @@
 
 The record for linagliptin in adults with type 2 diabetes mellitus contains only exposure and summary parameters — AUC of 150 nmol·h/L, protein binding of 99%, oral bioavailability of 30%, terminal half-life of 100 hours, 5% excreted unchanged, and an absorption rate constant of 1.63 h−1 — but no volume of distribution and no clearance or elimination rate, so it is an exposure/outcome paper rather than a compartmental population PK model. A dimensional check on a structural parameter failed with a dimension mismatch. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 9 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:29.275056+00:00) predates the upstream re-run (2026-10-05 00:17:22.619434+00:00). Current validate status: `rejected`.
 
 ## Citation
 Graefe-Mody U et al., Clinical pharmacokinetics and pharmacod…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11630900-000000000-00000](https://doi.org/10.2165/11630900-000000000-00000)
 
 ## Model component
-<dbs-pgx drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -78,22 +79,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.375 (6/16 fields) | 10 |
+| `gpt-oss:120b` | partly confirmed | 0.5 (7/14 fields) | 7 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[auc]` | 150 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[excreted in the urine]` | 5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka [h -1 ]]` | 1.63 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral dose]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[protein binding at 1 nmol/l]` | not captured | 99 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[protein binding]` | 99 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state auc]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fraction excreted in urine at steady state]` | not captured | 5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[single or multiple oral doses]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady-state auc]` | not captured | 150 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady-state c]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal half-life].value` | 100 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[urine excretion]` | not captured | 5 | only_one_extracted |
 
 </details>
 
@@ -138,4 +136,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 08:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:17 UTC</sub>

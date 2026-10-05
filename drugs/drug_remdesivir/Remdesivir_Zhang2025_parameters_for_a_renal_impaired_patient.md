@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**The remdesivir model was held back because the intracellular conversion rate constant kic (0.15) has no unit, so it cannot be converted to SI, and the clearance plausibility check could not be computed.**
+**This paper's disposition core is incomplete.**
 
-The parameter kic, the first-order rate constant for intracellular conversion/activation, is recorded as 0.15 with no unit, leaving no SI value to build from; without a unit the value cannot be converted and the model cannot use it. The total clearance of remdesivir (1171.0 mL/min) and volume of distribution (93.0 L) were extracted, but the clearance plausibility check reported a failure without computing a comparison because it had no reference to compare against, so the clearance is unverified rather than shown to be wrong. A second reader additionally read a further metabolic link from nucleoside monophosphate to GS-443902 and three parameters (2.3, 50.02, 0.31) that are absent from this record. Extracted — remdesivir: kic 0.15 Sörgel et al., 2021, CL 1.17e+03 mL/min, V 93 L.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Humeniuk_2021) cannot stand in for this paper's evidence. Extracted — remdesivir: Q 0.31 L/h, kic 0.037 1/h, CL 2.3 L/h, V 93 L; intermediate metabolites: Q 83.8 L/h; nucleoside monophosphate: Q 50 L/h, CLfm 0.15 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism); nucleoside monophosphate (nuc) → gs-443902 (metabolism); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:31.554053+00:00) predates the upstream re-run (2026-10-03 10:49:04.604809+00:00). Current validate status: `needs_review`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Zhang S et al., Pharmacokinetic simulations for remdesi…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1488961](https://doi.org/10.3389/fphar.2025.1488961)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient" status="needs_review" stale="true" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient" status="needs_review" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrocortisone&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/&quot;},{&quot;label&quot;:&quot;Hamitouche_2017 \u00b7 PD urinary sodium/potassium ratio&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocortisone_Werumeus2017_reference&quot;,&quot;label&quot;:&quot;Werumeus_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # urinary sodium/potassium ratio — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -83,7 +84,7 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_PD_na_k/Hydrocortisone_Hamitouche2017_PD_na_k_modelica.zip" download>Hydrocortisone_Hamitouche2017_PD_na_k_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_PD_na_k/Hydrocortisone_Hamitouche2017_PD_na_k_modelica.zip" download>Hydrocortisone_Hamitouche2017_PD_na_k_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_PD_na_k/Hydrocortisone_Hamitouche2017_PD_na_k_matlab.zip" download>Hydrocortisone_Hamitouche2017_PD_na_k_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

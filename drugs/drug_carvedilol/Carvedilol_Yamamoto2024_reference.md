@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +16,9 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The paper reports none of the model's key parameters.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rac-carvedilol, the second reading carvedilol (racemic); it also differs on 2 more fields. That field does not shape the model.
 

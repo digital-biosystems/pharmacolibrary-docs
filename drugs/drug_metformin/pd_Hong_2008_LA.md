@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The paper does not provide a full text or explicit mechanism, but the record describes a linear, additive stimulation of fasting lactic acid (mM) by metformin concentration (ng/mL) with a slope coefficient of 0.0005 mM.mL.ng(-1).
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hong_2008`
 - **model family:** `linear`
 - **driver:** `pk_record`
@@ -78,7 +82,7 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Hong2008_PD_la/Metformin_Hong2008_PD_la_modelica.zip" download>Metformin_Hong2008_PD_la_modelica.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Hong2008_PD_la/Metformin_Hong2008_PD_la_modelica.zip" download>Metformin_Hong2008_PD_la_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Hong2008_PD_la/Metformin_Hong2008_PD_la_matlab.zip" download>Metformin_Hong2008_PD_la_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

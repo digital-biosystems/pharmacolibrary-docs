@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Moxonidine is a new-generation centrally acting antihypertensive drug approved for the treatment of mild to moderate essential hypertension. It is suggested to be effective in cases where other agents such as thiazides, beta-blockers, ACE inhibitors, and calcium channel blockers are not appropriate or irresponsive. As well, moxonidine has been shown to present blood pressure-independent beneficial effects on insulin resistance syndrome.
+Moxonidine is an antihypertensive drug used to treat high blood pressure. It is an approved medicine, used mainly in Europe, and is also available in combination with a diuretic.
 
-**Indication.** For the treatment of mild to moderate essential or primary hypertension [L1025]. Effective as most first-line antihypertensives when used as monotherapy [A27137].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419944](https://www.wikidata.org/wiki/Q419944) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -41,9 +41,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…90% of an oral dose is absorbed…”</sub> | prose |
-| excretion | bile duct | <sub>“…approximately 1% being eliminiated via faeces…”</sub> | prose |
-| excretion | kidney | <sub>“…Elimination is nearly entirely via the kidneys…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA2A (target), ADRA2B (inhibitor), ADRA2C (inhibitor), NISCH (target).</sub>
 

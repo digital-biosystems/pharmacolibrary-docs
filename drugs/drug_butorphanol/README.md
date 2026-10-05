@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A synthetic morphinan analgesic with narcotic antagonist action. It is used in the management of severe pain.
+Butorphanol is an opioid painkiller used to treat pain, including migraine, and can also act as a cough suppressant. It is an approved medicine in human and veterinary use, though not authorised in the European Union.
 
-**Indication.** For the relief of moderate to severe pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1185089](https://www.wikidata.org/wiki/Q1185089) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -61,13 +61,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` transport | paper PGx gene |
 | absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
-| absorption | skeletal muscle | <sub>“…Rapidly absorbed after intramuscular injection…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
-| metabolism | liver | <sub>“…Extensively metabolized in the liver…”</sub> | prose |
-| excretion | bile duct | <sub>“…and fecal excretion…”</sub> | prose |
-| excretion | kidney | <sub>“…Elimination occurs by urine…”</sub> | prose |
-| excretion | liver | <sub>“…extensively metabolized in the liver…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 

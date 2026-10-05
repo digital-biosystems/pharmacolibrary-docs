@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Thoueille_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koh_2025_TXB2&quot;,&quot;label&quot;:&quot;Koh_2025 \u00b7 TXB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/pd_Koh_2025_TXB2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Bayoumy2025_reference&quot;,&quot;label&quot;:&quot;Bayoumy_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Koh_2025_TXB2&quot;,&quot;label&quot;:&quot;Koh_2025 \u00b7 TXB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/pd_Koh_2025_TXB2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Thoueille2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The acetylsalicylic acid record was held back because the model was parameterized as apparent (F=1, Fm=1, no molar correction), an assumption judged not acceptable, and Tlag was left at a default instead of an explicit estimate.**
+
+The record reports CL/F of 39.9 L/h, V of 2660.0 L and kabs of 2.0 h−1 for acetylsalicylic acid, but the builder assumed F=1 and Fm=1 without molar correction, so the parameters are apparent rather than mechanistic; the T6 deviations check returned 'apparent_assumption: not acceptable'. Tlag was defaulted rather than estimated. A second reader also disagreed on the parameterization (mechanistic vs apparent) and on several values, e.g. reading 39.9 for one field where this record has 30, and 90 and 10 where this record has null. Extracted — acetylsalicylic acid: CL/F 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 30, the second reading 39.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:35:51.517048+00:00) predates the upstream re-run (2026-10-04 01:05:01.055570+00:00). Current validate status: `extracted`.
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `tenofovir alafenamide`, measured `acetylsalicylic_acid`.
 
@@ -32,7 +32,7 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
   ·  DOI: [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Thoueille2023_reference" status="extracted" stale="true" population="adults living with HIV" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Thoueille2023_reference" status="needs_review" stale="false" population="adults living with HIV" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -40,6 +40,8 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLTFV | `Q27` · CL/F | 39.9 | L/h | 1.1083333333333333e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
@@ -114,7 +116,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=acetylsalicylic_acid) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_fmi.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -148,7 +150,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 2 /h, F 1). Doses in the paper: 10, 25 mg.
+**Administration: oral** — 3000 mg, single dose, first-order absorption (ka 2 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 3000 mg oral (N02BA01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_sim_controls.json"></dbs-fmusim>
 

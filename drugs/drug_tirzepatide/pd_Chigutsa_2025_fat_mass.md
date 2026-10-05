@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;tirzepatide&quot;,&quot;href&quot;:&quot;drugs/drug_tirzepatide/&quot;},{&quot;label&quot;:&quot;Chigutsa_2025 \u00b7 PD fat mass&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# fat mass — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# fat mass — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,6 +16,10 @@
 **As extracted:** Tirzepatide (concentrations from the PK model of Schneck_2024) drives fat mass (in kg): indirect response — drug inhibits the production of fat mass.
 
 **Model:** No model was generated from this record.
+
+> Tirzepatide concentrations (ng/mL) inhibit the formation of fat mass (kg) via an indirect response model with a maximum effect (Imax) of 0.319 and an IC50 of 518 ng/mL. The model includes a first-order elimination rate constant (Kout) of 0.0314 week−1 and a placebo fractional reduction in fat mass (Kin) of 0.213.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Chigutsa_2025`
 - **model family:** `indirect_response_i`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;rosuvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/&quot;},{&quot;label&quot;:&quot;An_2025 \u00b7 pk_model_for_rosuvastatin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rosuvastatin_Aoyama2010_reference&quot;,&quot;label&quot;:&quot;Aoyama_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Liao2022v2_reference&quot;,&quot;label&quot;:&quot;Liao_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_final&quot;,&quot;label&quot;:&quot;Macpherson_2016_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_full&quot;,&quot;label&quot;:&quot;Macpherson_2016_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yang_2011_LDL_C&quot;,&quot;label&quot;:&quot;Yang_2011 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/pd_Yang_2011_LDL_C.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rosuvastatin_Aoyama2010_reference&quot;,&quot;label&quot;:&quot;Aoyama_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Liao2022v2_reference&quot;,&quot;label&quot;:&quot;Liao_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_final&quot;,&quot;label&quot;:&quot;Macpherson_2016_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_final_final_model&quot;,&quot;label&quot;:&quot;Macpherson_2016_final_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final_final_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_full&quot;,&quot;label&quot;:&quot;Macpherson_2016_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yang_2011_LDL_C&quot;,&quot;label&quot;:&quot;Yang_2011 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/pd_Yang_2011_LDL_C.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rosuvastatin — `Rosuvastatin_An2025_pk_model_for_rosuvastatin`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rosuvastatin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**Only volume was extracted — no clearance.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — rosuvastatin: kabs 0.21 h−1, CLR 92.3 L/h, V1 222 L, Q 24.2 L/h, V2 651 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rosuvastatin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 An H et al., Population Pharmacokinetics and Pharmac…, Drug design, development an… (2025)
@@ -78,12 +82,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss:120b` | `parameters[qr]` | 24.16 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | rosuvastatin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | rosuvastatin | unknown | mismatch |
 
@@ -144,4 +150,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 19:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 03:12 UTC</sub>

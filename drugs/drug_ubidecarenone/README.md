@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ubidecarenone, also called coenzyme Q10, is a 1,4-benzoquinone. From its name (Q10), the Q refers to the constitutive quinone group, and 10 is related to the number of isoprenyl subunits in its tail.[A7874] It is a powerful antioxidant, a lipid-soluble and essential cofactor in mitochondrial oxidative phosphorylation.[A31413] The ubidecarenone is the coenzyme destined for mitochondrial enzyme complexes involved in oxidative phosphorylation in the production of ATP. It is fundamental for cells that have a high metabolic demand.[L1062] Ubidecarenone is sold as a dietary supplement and is not FDA approved as a drug - it is not meant to treat, cure or prevent any disease. FDA does not approve this dietary supplements before sold nor regulate the manufacturing process.[L1063]
+It is approved and also sold as a nutraceutical supplement, but it is not an authorised EU medicine and its use is mainly as a dietary supplement rather than a mainstream drug.
 
-**Indication.** The diet supplements containing ubidecarenone are indicated, as stated in the product label, to assist individuals with cardiovascular complaints including congestive heart failure and systolic hypertension. In the product, ubidecarenone is used to increase the cardiac input as well as for the prevention of several other diseases like Parkinson, fibromyalgia, migraine, periodontal disease and diabetes, based on preclinical studies.[L1064] It is important to highlight that these products are not FDA approved and it is recommended to use under discretion.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q321285](https://www.wikidata.org/wiki/Q321285) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -40,16 +40,16 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | <sub>“…then it can enter the blood…”</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
 | absorption | kidney | `ABCB1` substrate | DrugBank actor |
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…transportation to the kidneys for further excretion by the urine…”</sub> | prose |
-| excretion | bile duct | <sub>“…The main elimination route of ubidecarenone is through the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…In the urine, ubidecarenone is bound to saposin B protein…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HMGCR (substrate), LDLR (substrate), NDUFV3 (cofactor), SDHA (cofactor), VLDLR (substrate).</sub>
 

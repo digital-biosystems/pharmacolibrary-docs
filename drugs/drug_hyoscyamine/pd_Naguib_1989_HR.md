@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03B&quot;,&quot;href&quot;:&quot;atc/A03B.md&quot;},{&quot;label&quot;:&quot;hyoscyamine&quot;,&quot;href&quot;:&quot;drugs/drug_hyoscyamine/&quot;},{&quot;label&quot;:&quot;Naguib_1989 \u00b7 PD heart rate&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# heart rate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+# heart rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,26 +13,40 @@
 
 ## What this record describes
 
-**As extracted:** Atropine drives heart rate (in beats/min) (stimulation; the model form was not identified).
+**As extracted:** Atropine (the dose) drives heart rate (in beat. min-t): direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> Atropine (0.014–0.03 mg/kg, given with neostigmine 0.04 or 0.06 mg/kg) increases heart rate (beats/min) in anaesthetised patients; the paper does not state a mechanistic PD model, only log-dose linear regression of percentage heart rate change at 5 and 10 min, with calculated ED50 of atropine 0.031–0.037 mg/kg and ED95 0.046–0.06 mg/kg.
+> The paper describes a linear regression model where the log dose of atropine (mg kg⁻¹) predicts the percentage change in heart rate (beats min⁻¹) from control values at 5 and 10 minutes, with the only significant factor being the log dose. The model parameters include slopes of 52.873, 52.112, 72.661, and 59.692 and intercepts of 74.42, 66.94, 101.78, and 76.35, but the paper does not specify a mechanistic rate constant or Emax parameter.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Naguib_1989`
-- **model family:** `unknown`
-- **driver:** `not_resolved`
+- **model family:** `linear`
+- **driver:** `dose_only`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Naguib M et al., Atropine-neostigmine mixture: a dose-re…, Canadian journal of anaesth… (1989)
   ·  DOI: [10.1007/BF03005340](https://doi.org/10.1007/BF03005340)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | slope | `Q335` · not captured | 52.873 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| model term | intercept | `Q900` · not captured | 74.42 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 52.112 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| model term | intercept | `Q900` · not captured | 66.94 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 72.661 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| model term | intercept | `Q900` · not captured | 101.78 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 59.692 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+| model term | intercept | `Q900` · not captured | 76.35 | not captured | not captured | llm (not captured) | Naguib_1989:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -58,9 +72,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

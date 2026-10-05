@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Etoperidone is an atypical antidepressant introduced in Europe in 1977. It is a phenylpiperazine-substituted triazole derivative with a composition that classifies it as an analog of tradozone and presents a similar pharmacological profile.[T45] Etoperidone was developed by Angelini Francesco ACRAF.[A4909]
+Etoperidone is an antidepressant of the selective serotonin reuptake inhibitor type. It was approved but has been withdrawn and is no longer used.
 
-**Indication.** Etoperidone has been studied for the treatment of depression[T47], tremors in Parkinson, extrapyramidal symptoms[L1041] and male impotence[L1042]. It is not certain if it was ever approved and marketed but its current status is withdrawn.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5404839](https://www.wikidata.org/wiki/Q5404839) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,10 +37,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | bile duct | <sub>“…can be found in plasma, urine and faeces…”</sub> | prose |
-| metabolism | kidney | <sub>“…can be found in plasma, urine and faeces…”</sub> | prose |
-| excretion | bile duct | <sub>“…9.6% found in faeces…”</sub> | prose |
-| excretion | kidney | <sub>“…78.8% found in urine…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

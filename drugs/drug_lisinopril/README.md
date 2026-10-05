@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Lisinopril is an angiotensin converting enzyme inhibitor (ACEI) used to treat hypertension, heart failure, and myocardial infarction.[L8384,L8387,L8390] Lisinopril and [captopril] are the only ACEIs that are not prodrugs.[A184853] It functions by inhibition of angiotensin converting enzyme as well as the renin angiotensin aldosterone system.[A184781,A184808,A184817] ACEIs are commonly used as a first line therapy in the treatment of hypertension, along with thiazide diuretics or beta blockers.[A184844]
+Lisinopril is an ACE inhibitor used to treat high blood pressure, heart failure, and after a heart attack. It is an approved medicine, widely used in general practice, and also available in fixed combinations with diuretics or other cardiovascular drugs.
 
-Lisinopril was granted FDA approval on 29 December 1987.[L8384]
-
-**Indication.** Lisinopril is indicated for the treatment of acute myocardial infarction, hypertension in patients ≥6 years, and as an adjunct therapy for heart failure.[L8384,L8387] A combination product with hydrochlorothiazide is indicated for the treatment of hypertension.[L8390]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412208](https://www.wikidata.org/wiki/Q412208) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

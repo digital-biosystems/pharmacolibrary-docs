@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A class I anti-arrhythmic agent (one that interferes directly with the depolarization of the cardiac membrane and thus serves as a membrane-stabilizing agent) with a depressant action on the heart similar to that of guanidine. It also possesses some anticholinergic and local anesthetic properties.
+Disopyramide is a class Ia antiarrhythmic used to treat heart rhythm problems such as atrial fibrillation. It is an approved medicine, though not authorised in the European Union, and is used relatively little today.
 
-**Indication.** For the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia, ventricular pre-excitation and cardiac dysrhythmias. It is a Class Ia antiarrhythmic drug.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425120](https://www.wikidata.org/wiki/Q425120) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -62,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | — | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ORM1` other/unknown, `ORM2` binder | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP3A4` substrate, `SLC22A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fitusiran is an antithrombin-directed double-stranded small interfering ribonucleic acid (siRNA) that is covalently linked to a ligand containing a triantennary N-acetylgalactosamine (GalNAc) moiety.[L52860] Fitusiran was first approved by the FDA on March 28, 2025, as routine prophylaxis therapy to prevent or reduce the frequency of bleeding episodes associated with hemophilia A or B.[L52865] By causing the degradation of antithrombin mRNA and promoting thrombin generation, fitusiran works to restore hemostasis in patients with hemophilia.[A273770]
+Fitusiran is a small interfering RNA therapy that lowers antithrombin production and is used to treat bleeding in people with haemophilia. It is an approved antihemorrhagic medicine, though some uses remain under investigation.
 
-**Indication.** Fitusiran is indicated for routine prophylaxis to prevent or reduce the frequency of bleeding episodes in adult and pediatric patients aged 12 years and older with hemophilia A or B with or without factor VIII or IX inhibitors.[L52860]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…recovered unchanged in urine within 24 hours…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SERPINC1 (degradation).</sub>
 

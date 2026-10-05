@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A thiazide diuretic with actions and uses similar to those of hydrochlorothiazide. (From Martindale, The Extra Pharmacopoeia, 30th ed, p822)
+Hydroflumethiazide is a thiazide diuretic that was used to treat high blood pressure, congestive heart failure, nephrotic syndrome and other fluid-retention conditions. It has been withdrawn and is no longer in use.
 
-**Indication.** Used as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy. Also used in the management of hypertension either as the sole therapeutic agent or to enhance the effect of other antihypertensive drugs in the more severe forms of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3791957](https://www.wikidata.org/wiki/Q3791957) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
 

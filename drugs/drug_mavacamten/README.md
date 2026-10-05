@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Mavacamten is a myosin inhibitor indicated for the treatment of adults with symptomatic New York Heart Association (NYHA) class II-III obstructive hypertrophic cardiomyopathy (HCM). It received initial US FDA approval in 2022, and it is one of the first myosin inhibitors to be used in humans.[A248440] Mavacamten was also approved by Health Canada in October 2022 and by EMA in July 2023 for the same indication.[L44106,L47471]
+Mavacamten is a heart medicine used to treat hypertrophic cardiomyopathy. It is authorised in the European Union and is an approved drug, though it carries a boxed warning.
 
-**Indication.** Mavacamten is indicated for the treatment of adults with symptomatic New York Heart Association (NYHA) class II-III obstructive hypertrophic cardiomyopathy (HCM) to improve functional capacity and symptoms by the FDA, Health Canada, and the EMA.[L41680,L44106,L47466]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q105337531](https://www.wikidata.org/wiki/Q105337531) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,13 +33,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…estimated oral bioavailability of at least 85%…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` unknown | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer/substrate, `CYP2C8` substrate, `CYP2C9` inducer/substrate, `CYP2D6` unknown, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…7% of the dose was recovered in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…85% in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: MYH7 (inhibitory allosteric modulator).</sub>
 

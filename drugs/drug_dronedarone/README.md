@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Dronedarone is a Class III antiarrhythmic drug that works to restore the normal sinus rhythm in patients with paroxysmal or persistent atrial fibrillation. Atrial fibrillation is a common sustained arrhythmia where the treatment primarily focuses on stroke prevention and symptom management. It is managed by rate control, rhythm control, prevention of thromboembolic events, and treatment of the underlying disease.[A34604] Similar to [amiodarone], dronedarone is a multichannel blocker that works to control rhythm and rate in atrial fibrillation.[A186071] It meets criteria of all four Vaughan Williams antiarrhythmic drug classes by blocking sodium, potassium, and calcium ion channels and inhibiting β-adrenergic receptors.[A34604,L8699] 
+Dronedarone is a class III antiarrhythmic drug used to treat heart rhythm problems, mainly atrial fibrillation and atrial flutter. It is authorised in the European Union and remains in use, though it carries a boxed warning.
 
-Dronedarone is a related benzofuran compound to amiodarone but its chemical structure lacks iodine moieties which are associated with amiodarone-induced thyroid problems.[A34604,T28] Additionally, the methyl sulfonyl group in its structure renders dronedarone to be more lipophilic with a shorter half-life than amiodarone.[A34604] This ultimately leads to reduced tissue accumulation of the drug and decreased risk for organ toxicities, such as thyroid and pulmonary toxicities.[T28] Commonly marketed as Multaq®, dronedarone was approved by the FDA in July 2009 and Health Canada in August 2009. A safety concern for the risk of drug-induced hepatocellular injury has been issued following marketing of dronedarone.[L8800]
-
-**Indication.** Dronedarone is indicated for the management of atrial fibrillation (AF) in patients in sinus rhythm with a history of paroxysmal or persistent AF to reduce the risk of hospitalization.[L8699]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408637](https://www.wikidata.org/wiki/Q408637) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -69,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP2J2` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…about 84% of the labeled dose is excreted in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), ADRB1 (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1F (inhibitor), CACNA1S (inhibitor), CACNB1 (inhibitor), CACNB2 (inhibitor), CACNB3 (inhibitor), CACNB4 (inhibitor), KCNA5 (blocker), KCND3 (inhibitor), KCNH2 (inhibitor), KCNJ12 (inhibitor), KCNJ3 (inhibitor), KCNK2 (inhibitor), KCNQ1 (inhibitor), PITX2 (target), SCN5A (inhibitor), SLC8A1 (inhibitor), THRA (inhibitor).</sub>

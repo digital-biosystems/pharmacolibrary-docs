@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A synthetic fluoroquinolone (fluoroquinolones) antibacterial agent that inhibits the supercoiling activity of bacterial DNA gyrase, halting DNA replication.
+Ofloxacin is a fluoroquinolone antibiotic used to treat bacterial infections such as urinary tract infections, gonorrhea, chlamydia, prostatitis, otitis, and eye infections. It is an approved medicine, appears on the WHO essential medicines list, and is used widely, both by mouth and as eye or ear drops.
 
-**Indication.** For the treatment of infections (respiratory tract, kidney, skin, soft tissue, UTI), urethral and cervical gonorrhoea.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411447](https://www.wikidata.org/wiki/Q411447) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…4-8% of an ofloxacin dose is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |

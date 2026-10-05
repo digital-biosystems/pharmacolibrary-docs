@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Sodium fluoride is an inorganic chemical compound that is a source of the fluoride ion in many applications, including dental care and radiographic imaging when it is used as [Fluoride ion F-18].[L4894] Sodium fluoride's benefits on dental health were first observed in the 1930s, when individuals in communities with fluoridated drinking water showed less tooth decay than those without fluoridated water. The use of fluoride in dental practice began in the 1940s. Now, sodium fluoride may be found in a variety of gels, varnishes, rinses, toothpaste products, and fluoride treatments provided in dental care.[A181670,A181688] According to the American Dental Association (ADA), thorough evidence reviews have indicated that the use of fluoride to prevent and control dental caries is safe when used correctly and is highly effective in reducing the prevalence of caries.[L7691]
+Sodium fluoride is a fluoride salt used to prevent tooth decay (dental caries). It is an approved drug, used mainly in stomatological preparations as a caries prophylactic, and also available as a mineral supplement.
 
-**Indication.** Sodium fluoride in the oral or topical form is indicated for the prevention and control of dental caries and for the maintenance of dental health.[A181652,L7670]  Fluoride supplements in the form of tablets and other formulas may be prescribed to prevent tooth decay in high-risk children aged 6 months to 16 years old whose drinking water source contains low fluoride concentrations.[L7691]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407520](https://www.wikidata.org/wiki/Q407520) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,10 +32,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…77% of absorption in the proximal intestine…”</sub> | prose |
-| absorption | stomach | <sub>“…about 25% in the stomach…”</sub> | prose |
-| excretion | bile duct | <sub>“…About 10% is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…rapidly excreted, mainly in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | stomach | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ENOPH1 (inhibitor), Hydroxyapatite (unknown).</sub>
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Quinapril is the ethyl ester prodrug of the non-sulfhydryl angiotensin converting enzyme inhibitor quinaprilat.[L8420,L8423] It is used to treat hypertension and heart failure.[L8420,L8423] ACE inhibitors are commonly used as a first line therapy in the treatment of hypertension, along with thiazide diuretics or beta blockers.[A184844]
+Quinapril is an ACE inhibitor used to treat high blood pressure and congestive heart failure. It is an approved medicine, available alone or combined with a diuretic, and is used fairly widely for these cardiovascular conditions.
 
-Quinapril was granted FDA approval on 19 November 1991.[L8420] A combination tablet with [hydrochlorothiazide] was also approved on 28 December 1999.[L8423]
-
-**Indication.** Quinapril is indicated for the treatment of hypertension and as an adjunct therapy in the treatment of heart failure.[L8420] Quinapril in combination with hydrochlorothiazide is indicated for the treatment of hypertension.[L8423]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q596022](https://www.wikidata.org/wiki/Q596022) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

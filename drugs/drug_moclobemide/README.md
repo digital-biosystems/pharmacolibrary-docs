@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A reversible monoamine oxidase inhibitor (MAOI) selective for isoform A (RIMA) used to treat major depressive disorder. Most meta-analyses and most studies indicate that in the acute management of depression, moclobemide is more efficacious than placebo medication and similarly efficacious as tricyclic antidepressants (TCA) or selective serotonin reuptake inhibitors (SSRIs).  Due to negligible anticholinergic and antihistaminic actions, moclobemide has been better tolerated than tri- or heterocyclic antidepressants [A31901].
+Moclobemide is an antidepressant that works as a reversible inhibitor of monoamine oxidase A. It is an approved medicine, used in several countries for depression, though it is not authorised centrally in the European Union.
 
-**Indication.** For the treatment of major depressive disorder and bipolar disorder [A31901].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421934](https://www.wikidata.org/wiki/Q421934) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,13 +34,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…Hepatic first-pass metabolism reduces bioavailability to about 56%…”</sub> | prose |
-| absorption | small intestine | <sub>“…Well absorbed from the gastrointestinal tract (&gt; 95%)…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` inhibitor/target, `MAOB` inhibitor/target | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `MAOA` inhibitor/target | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor/target | DrugBank actor |
 | metabolism | small intestine | `MAOA` inhibitor/target | DrugBank actor |
-| excretion | kidney | <sub>“…almost completely renally excreted…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

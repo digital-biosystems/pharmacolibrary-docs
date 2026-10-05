@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;magnesium (different salts in combination)&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/&quot;},{&quot;label&quot;:&quot;Brookfield_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium (different salts in combination) — `MagnesiumDifferentSaltsInCombination_Brookfield2016_referenc`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:38.478273+00:00) predates the upstream re-run (2026-10-05 09:34:36.753579+00:00). Current validate status: `needs_review`.
+
 > **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium`.
 
 ## Citation
@@ -32,7 +34,7 @@ Brookfield KF et al., Pharmacokinetics and placental transfer…, American journ
   ·  DOI: [10.1016/j.ajog.2015.12.060](https://doi.org/10.1016/j.ajog.2015.12.060)
 
 ## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Brookfield2016_referenc" status="needs_review" stale="false" population="pregnant women" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Brookfield2016_referenc" status="needs_review" stale="true" population="pregnant women" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -57,6 +59,7 @@ Brookfield KF et al., Pharmacokinetics and placental transfer…, American journ
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'The ratio of the mean umbilical vein magnesium level to the mean maternal serum magnesium level at the time of delivery' — extend the ontology if this is a real PK parameter (source ['Brookfield_2016:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
+- molar mass: none found for 'magnesium_different_salts_in_combination' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'magnesium', not magnesium_different_salts_in_combination — the review values are the parent's
 
@@ -138,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 15:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 09:34 UTC</sub>

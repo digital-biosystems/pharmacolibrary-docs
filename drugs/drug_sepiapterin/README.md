@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Sepiapterin is a small molecule activator of phenylalanine hydroxylase (PAH) used to reduce phenyalanine levels in patients with phenylketonuria. It is a natural precursor of the enzymatic co-factor tetrahydrobiopterin (BH4), which activates PAH and helps reduce blood phenylalanine levels by enhancing the conformational stability of misfolded PAH enzymes and increasing intracellular concentrations of BH4.[L53548,L53593]
+Sepiapterin is used to treat phenylketonuria, a metabolic disorder. It is authorised in the European Union and is also being investigated for other uses.
 
-Sepiapterin was granted marketing authorization by the European Commission in June 2025 and by the US FDA in July 2025 for the treatment of adults and children with phenylketonuria.[L53713,L53718]
-
-**Indication.** Sepiapterin is indicated in conjunction with a phenylalanine-restricted diet for the treatment of hyperphenylalaninemia (HPA) in adult and pediatric patients 1 month of age and older with sepiapterin-responsive phenylketonuria (PKU).[L53548,L53593]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q100606475](https://www.wikidata.org/wiki/Q100606475) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,8 +49,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…metabolites primarily excreted in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…6.71% of the dosed radioactivity recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCG2 (BCRP) (transport), DHFR (substrate), PAH (binder), PAH (target), SPR (substrate), Tetrahydrobiopterin (other).</sub>
 

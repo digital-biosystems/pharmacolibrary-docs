@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Chronic angina is a common cardiovascular condition affecting millions worldwide and causes significant disability while interfering with daily activities.[A189234] Ranolazine is a well-tolerated piperazine derivative used for the management of this condition, offering relief from uncomfortable and debilitating symptoms.[L3580] With a mechanism of action different from drugs used to treat the same condition, ranolazine is a promising anti-anginal therapy. It was originally approved by the FDA in 2006.[L5440]
+Ranolazine is a heart medicine used to treat angina (chest pain). It is an approved drug and is authorised in the European Union for angina pectoris.
 
-**Indication.** Ranolazine is indicated for the treatment of chronic angina. It can be used alone or in conjunction with nitrates, beta-blockers, angiotensin receptor blockers, anti-platelet drugs, calcium channel blockers, lipid-lowering drugs, and ACE inhibitors.[L3580]
-
-Ranolazine has also been used off-label for the treatment of certain arrhythmias, including ventricular tachycardia, however, this use is not strongly  supported by scientific evidence.[A174940] Ranolazine has also been studied for the treatment of acute coronary syndrome, microvascular coronary dysfunction, arrhythmia, and glycemic control, which are not yet approved indications.[A174898,L3580]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q907104](https://www.wikidata.org/wiki/Q907104) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -60,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…1/4 of the dose is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `SLC47A1` inhibitor | DrugBank actor |
 

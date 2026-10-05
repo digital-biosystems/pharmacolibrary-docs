@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Indoramin is a discontinued piperidine antiadrenergic drug with the trade names Baratol and Doralese. It is a selective alpha-1 adrenergic antagonist with no reflex tachycardia and direct myocardial depression action.
+Indoramin is an alpha-1 adrenergic blocker that was used to treat high blood pressure and enlarged prostate. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408963](https://www.wikidata.org/wiki/Q408963) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

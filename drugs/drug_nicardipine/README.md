@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A potent calcium channel blockader with marked vasodilator action. It has antihypertensive properties and is effective in the treatment of angina and coronary spasms without showing cardiodepressant effects. It has also been used in the treatment of asthma and enhances the action of specific antineoplastic agents. [PubChem]
+Nicardipine is a dihydropyridine calcium channel blocker used to treat arterial hypertension and angina pectoris. It is an approved drug, though it is not authorised in the European Union.
 
-**Indication.** Used for the management of patients with chronic stable angina and for the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q729213](https://www.wikidata.org/wiki/Q729213) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

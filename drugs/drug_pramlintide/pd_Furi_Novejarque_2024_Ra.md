@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;pramlintide&quot;,&quot;href&quot;:&quot;drugs/drug_pramlintide/&quot;},{&quot;label&quot;:&quot;Furi\u00f3-Novejarque_2024 \u00b7 PD glucose rate of appearance&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# glucose rate of appearance — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# glucose rate of appearance — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes a sigmoid Emax inhibition of the glucose rate of appearance (Ra) by pramlintide, mediated through an effect compartment with a rate constant (ke0) of 0.0798 min⁻¹. The Hill equation parameters are a numerator coefficient of 76.662, a denominator (IC50) of 960.87 pmol, and an exponent (gamma) of 4.5363.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Furió-Novejarque_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -30,10 +34,10 @@ Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Rate in the pramlintide eect compartment | `Q326` · not captured | 0.0798 | min -1 | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
-| PD (effect) | Numerator coecient in Hill equation from ℎ(𝑃 e ) | `Q325` · not captured | 76.662 | - | not captured | boundary (not captured) | Furió-Novejarque_2024:pdv3 |
-| PD (effect) | Denominator in Hill equation from ℎ(𝑃 e ) | `Q325` · not captured | 960.87 | pmol | not captured | boundary (not captured) | Furió-Novejarque_2024:pdv3 |
-| PD (effect) | Exponent in Hill equation from ℎ(𝑃 e ) | `Q325` · not captured | 4.5363 | - | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Rate in the pramlintide effect compartment | `Q326` · not captured | 0.0798 | min -1 | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Numerator coefficient in Hill equation from h(P e ) | `Q323` · not captured | 76.662 | - | not captured | direction (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Denominator in Hill equation from h(P e ) | `Q321` · not captured | 960.87 | pmol | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Exponent in Hill equation from h(P e ) | `Q325` · not captured | 4.5363 | - | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,9 +47,19 @@ Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

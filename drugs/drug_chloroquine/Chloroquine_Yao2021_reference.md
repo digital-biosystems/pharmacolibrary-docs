@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The chloroquine model was quarantined because its volume of distribution and absorption lag time had no source values, so library placeholders were substituted, and V2/F and Q/F were not covered.**
+**The chloroquine model was quarantined because its volume of distribution (Vd) and absorption lag time (Tlag) had no extracted values and library defaults were used instead, with V2/F (3630 l) also left uncovered.**
 
-No value for chloroquine's volume of distribution and absorption lag time was available; the model was built with library placeholders for these and held back rather than published with invented numbers. The parameter coverage check found only 2 of 4 expected parameters covered, with V2/F (3630 l) and Q/F (58.7 l/h) neither emitted nor defaulted. The model builder also assumed F=1 and Fm=1 without molar correction, parameterizing the model as apparent (CL/F 33.3 l/h, V3/F 5120 l, kabs 0.559 h-1). A second reader disagreed on the absorption lag time parameter identifier, and the record lists a one-compartment structure despite three-compartment distribution parameters. Extracted — chloroquine: CL/F 33.3 l/h, V2/F 3.63e+03 l, Q/F 58.7 l/h, V3/F 5.12e+03 l, kabs 0.559 h -1.
+The record reports CL/F 33.3 l/h, V2/F 3630 l, Q/F 58.7 l/h, V3/F 5120 l and ka 0.559 h-1 for chloroquine in COVID-19 patients, but the volume of distribution and absorption lag time were left at library placeholders rather than given explicit estimates. A coverage check found only 3 of 4 expected parameters covered, with V2/F neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and the deviations could not be fully adjudicated. A second reader additionally disagreed on how the absorption lag-time parameter should be identified. Extracted — chloroquine: CL/F 33.3 l/h, V2/F 3.63e+03 l, Q/F 58.7 l/h, V3/F 5.12e+03 l, kabs 0.559 h -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[alag1].parameter_id`: this record has Q56, the second reading Q83. That field shapes the model, so the record is marked disputed.
 
@@ -124,9 +124,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |
+| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |

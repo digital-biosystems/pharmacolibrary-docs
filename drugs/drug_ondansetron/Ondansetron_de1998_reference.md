@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;de_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ondansetron — `Ondansetron_de1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,18 +21,20 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1): this record has none, the second reading 7867.8; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:16.315796+00:00) predates the upstream re-run (2026-10-04 14:07:22.900772+00:00). Current validate status: `rejected`.
 
 ## Citation
 de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998)
   ·  DOI: [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x)
 
 ## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_de1998_reference" status="rejected" stale="false" population="mixed (paediatric, young, elderly, aged)" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ondansetron" model-id="Ondansetron_de1998_reference" status="rejected" stale="true" population="paediatric patients, young, elderly and aged volunteers" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
@@ -42,7 +44,7 @@ de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLd | `Q30` · Q | 235.8 | not captured | not captured | not captured | not captured | exact (1.0) | de_1998_table_2:row6:col3, de_1998_table_2:row16:col1, de_1998_table_2:row16:col2, de_1998_table_2:row16:col3, de_1998_table_2:row22:col1, de_1998_table_2:row22:col2, de_1998_table_2:row22:col3, de_1998_table_2:row28:col1, de_1998_table_2:row28:col2, de_1998_table_2:row28:col3 | — | not captured |
+| CLd | `Q30` · Q | 235.8 | L/h | 6.55e-05 | L/h | not captured | exact (1.0) | de_1998_table_2:row6:col3, de_1998_table_2:row16:col1, de_1998_table_2:row16:col2, de_1998_table_2:row16:col3, de_1998_table_2:row22:col1, de_1998_table_2:row22:col2, de_1998_table_2:row22:col3, de_1998_table_2:row28:col1, de_1998_table_2:row28:col2, de_1998_table_2:row28:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -91,6 +93,7 @@ de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal 
 - dropped duplicate Q30 ('CLd female', value None) — already have one for this compound
 - dropped duplicate Q65 ('V ssmale', value None) — already have one for this compound
 - dropped duplicate Q65 ('V ssfemale', value None) — already have one for this compound
+- implicit units: 'CLd' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for CLd in the provided text or table captions. However, CLd is an intercom')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ondansetron
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V 1' is the general volume)
@@ -119,14 +122,22 @@ de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss:120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[1)]` | not captured | 7867.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[12)]` | not captured | 7208.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -140,7 +151,7 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['de_1998_table_2:row6:col3', 'de_1998_table_2:row16:col1', 'de_1998_table_2:row16:col2', 'de_1998_table_2:row16:col3', 'de_1998_table_2:row22:col1', 'de_1998_table_2:row22:col2', 'de_1998_table_2:row22:col3', 'de_1998_table_2:row28:col1', 'de_1998_table_2:row28:col2', 'de_1998_table_2:row28:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['de_1998_table_2:row6:col3', 'de_1998_table_2:row16:col1', 'de_1998_table_2:row16:col2', 'de_1998_table_2:row16:col3', 'de_1998_table_2:row22:col1', 'de_1998_table_2:row22:col2', 'de_1998_table_2:row22:col3', 'de_1998_table_2:row28:col1', 'de_1998_table_2:row28:col2', 'de_1998_table_2:row28:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -166,4 +177,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 13:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 14:07 UTC</sub>

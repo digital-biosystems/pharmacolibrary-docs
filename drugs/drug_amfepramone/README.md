@@ -9,15 +9,15 @@
 
 ## About
 
-**Description.** A appetite depressant considered to produce less central nervous system disturbance than most drugs in this therapeutic category. It is also considered to be among the safest for patients with hypertension. (From AMA Drug Evaluations Annual, 1994, p2290)
+Amfepramone (diethylpropion) is a centrally acting anorectic drug used to treat obesity. It remains an approved antiobesity medicine, though it is also listed as illicit in some contexts and has investigational uses.
 
-**Indication.** Used in the management of exogenous obesity as a short-term adjunct (a few weeks) in a regimen of weight reduction based on caloric restriction.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2356505](https://www.wikidata.org/wiki/Q2356505) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 22:50 | 0:58 | 0/0/0 | 0/0/0 | 0/0/2 | 3,602/818 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-04 20:19 | 1:19 | 0/0/0 | 0/0/0 | 0/0/2 | 31,845/1,640 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -51,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | liver | `CYP3A4` metabolism | paper PGx gene |
 | metabolism | small intestine | `CYP3A4` metabolism | paper PGx gene |
-| excretion | kidney | <sub>“…excreted mainly by the kidney…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -76,20 +76,20 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dangor_1987.pdf` | Dangor CM et al., Bioavailability of amfepramone hydrochl…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3663274](https://pubmed.ncbi.nlm.nih.gov/3663274) | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
+| `Dangor_1987.pdf` | Dangor CM et al., Bioavailability of amfepramone hydrochl…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3663274](https://pubmed.ncbi.nlm.nih.gov/3663274) | The study reports pharmacokinetic profiles and bioavailability for amfepramone in humans, but the specific numeric parameter values (CL, V, t1/2, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-29T22:50:08.442296+00:00</sub>
+<sub>queue written 2026-10-04T20:18:59.508859+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Branis_2015 | irrelevant | 0 | 0 | The paper is a case report regarding Diethylpropion and does not study amfepramone or report any pharmacokinetic parameters for it. |
-| popPK | Dangor_1987 | relevant | 8 | 0 | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
+| popPK | Dangor_1987 | relevant | 8 | 0 | The study reports pharmacokinetic profiles and bioavailability for amfepramone in humans, but the specific numeric parameter values (CL, V, t1/2, etc.) are not present in the provided evidence text. |
 | popPK | Douglas_1982 | irrelevant | 0 | 0 | The paper is a clinical review of obesity treatment guidelines and does not report any pharmacokinetic parameters for amfepramone. |
-| popPK | Gómez_1993 | irrelevant | 0 | 0 | The study focuses on diethylpropion, not amfepramone, and is an in-vitro stability/dissolution study without PK parameters. |
+| popPK | Gómez_1993 | irrelevant | 0 | 0 | The study focuses on diethylpropion, not amfepramone, and is an in vitro stability/dissolution study without PK parameters. |
 | popPK | Mey_1998 | irrelevant | 0 | 0 | The study investigates the racemization kinetics of diethylpropion, not the pharmacokinetics of amfepramone. |
-| popPK | Poyatos_2022 | irrelevant | 2 | 0 | The paper is a systematic review of cathinones (cathinone, mephedrone, methylone, diethylpropion) and does not report original quantitative disposition parameters (CL, V, Q, ka) for amfepramone (diethylpropion), only citing Cmax/AUC/Tmax from other studies. |
+| popPK | Poyatos_2022 | irrelevant | 2 | 0 | The paper is a systematic review of cathinones (cathinone, mephedrone, methylone) and diethylpropion (amfepramone), but it does not report quantitative disposition parameters (CL, V, Q, ka) for amfepramone, only mentioning it as a comparator or in the context of abuse potential without specific PK values in the provided evidence. |
 | popPK | Yang_2022 | irrelevant | 0 | 0 | The paper is a forensic toxicology study reporting hair concentrations, not a pharmacokinetic study with disposition parameters. |
 | PD | Yang_2022 | not_relevant | 0 | 0 | The paper describes a forensic LC-MS/MS method for detecting amfepramone in hair and reports concentration ranges in authentic cases, but it does not report any pharmacodynamic, exposure-response, or dose-response relationship or numeric PD parameters. |
 

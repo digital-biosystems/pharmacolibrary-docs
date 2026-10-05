@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** One of the adrenergic beta-antagonists used as an antihypertensive, anti-anginal, and anti-arrhythmic agent. Alprenolol is no longer marketed by AstraZeneca, but may still be available in generic varieties.
+Alprenolol is a non-selective beta blocker that was used to treat high blood pressure, unstable angina, and heart attack, and also acted against rhythm disturbances. It has been withdrawn and is no longer in use.
 
-**Indication.** For the treatment of hypertension, angina, and arrhythmia
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q201370](https://www.wikidata.org/wiki/Q201370) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

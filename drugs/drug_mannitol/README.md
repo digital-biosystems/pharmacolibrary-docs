@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;mannitol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # mannitol
 
@@ -10,25 +11,30 @@
 
 ## About
 
-**Description.** Mannitol is an osmotic diuretic that is metabolically inert in humans and occurs naturally, as a sugar or sugar alcohol, in fruits and vegetables. Mannitol elevates blood plasma osmolality, resulting in enhanced flow of water from tissues, including the brain and cerebrospinal fluid, into interstitial fluid and plasma. As a result, cerebral edema, elevated intracranial pressure, and cerebrospinal fluid volume and pressure may be reduced. Mannitol may also be used for the promotion of diuresis before irreversible renal failure becomes established; the promotion of urinary excretion of toxic substances; as an Antiglaucoma agent; and as a renal function diagnostic aid.
+Mannitol is an osmotic diuretic used for conditions such as anuria, oliguria, cerebral edema, and ocular hypertension, and is also used as a laxative, irrigating solution, mucolytic in cystic fibrosis, and diagnostic agent. It remains widely used and is included on the WHO essential medicines list, with an authorised product in the European Union for cystic fibrosis.
 
-On October 30, 2020, mannitol was approved by the FDA as add-on maintenance therapy for the control of pulmonary symptoms associated with cystic fibrosis in adult patients and is currently marketed for this indication under the name BRONCHITOL® by Chiesi USA Inc.[L20024]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407646](https://www.wikidata.org/wiki/Q407646) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-**Indication.** Used for the promotion of diuresis before irreversible renal failure becomes established, the reduction of intracranial pressure, the treatment of cerebral edema, and the promotion of urinary excretion of toxic substances.
+## Molecules and molar masses
 
-Mannitol is also indicated as add-on maintenance therapy for improving pulmonary function in cystic fibrosis patients aged 18 and over who have passed the BRONCHITOL tolerance test (BTT). It is recommended that patients take an orally inhaled short-acting bronchodilator 5-15 minutes prior to every inhaled mannitol dose.[L20024]
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| mannitol | parent | 182.172 | C6H14O6 | DrugBank | [6251](https://pubchem.ncbi.nlm.nih.gov/compound/6251) | Noorani_2022 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 09:47 | 0:25 | 0/1/0 | 0/0/0 | 0/0/0 | 13,790/402 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/0 | 1/0 | 0 |
+| 2026-10-04 16:25 | 6:25 | 1/1/0 | 0/0/0 | 0/0/0 | 84,508/20,074 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | — | — (no model) | 0 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Wei_2022_reference](drugs/drug_mannitol/Mannitol_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wei S et al., Population pharmacokinetic model of van…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1005791](https://doi.org/10.3389/fphar.2022.1005791) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_reference](drugs/drug_mannitol/Mannitol_Noorani2022_reference.md) | — | 1-compartment (no model) | 2 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
 ## ADME sites
 
@@ -36,9 +42,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Approximately 7% of ingested mannitol is absorbed during gastrointestinal perfusion…”</sub> | prose |
-| metabolism | liver | <sub>“…metabolized only slightly, if at all, to glycogen in the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…primarily excreted unchanged in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -50,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 98 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -59,17 +65,17 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cloyd_1986.pdf` | Cloyd JC et al., Mannitol pharmacokinetics and serum osm…, The Journal of pharmacology… (1986) | popPK | 10 | not captured | [3080582](https://pubmed.ncbi.nlm.nih.gov/3080582) | The paper reports quantitative pharmacokinetic parameters (half-lives, volume of distribution, clearance) for mannitol in humans and dogs directly in the text. |
-| `Noorani_2022.pdf` | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | popPK | 8 | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) | [35146590](https://pubmed.ncbi.nlm.nih.gov/35146590) | The study reports quantitative pharmacokinetic parameters (uptake clearance Kin and efflux clearance) for mannitol in mice using a compartmental model, with specific numeric values provided in the text. |
+| `Cloyd_1986.pdf` | Cloyd JC et al., Mannitol pharmacokinetics and serum osm…, The Journal of pharmacology… (1986) | popPK | 10 | not captured | [3080582](https://pubmed.ncbi.nlm.nih.gov/3080582) | The paper reports quantitative pharmacokinetic parameters (half-lives, volume of distribution, clearance) for mannitol in both humans and dogs, with specific numeric values provided in the text. |
+| `Noorani_2022.pdf` | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | popPK | 9 | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) | [35146590](https://pubmed.ncbi.nlm.nih.gov/35146590) | The study reports quantitative pharmacokinetic parameters (uptake clearance Kin and efflux clearance) for mannitol in a three-compartment model in mice. |
 
-<sub>queue written 2026-09-11T09:47:45.778154+00:00</sub>
+<sub>queue written 2026-10-04T16:19:15.832479+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Manta_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of quercetin, with mannitol serving only as an excipient in the formulation. |
-| popPK | Wei_2022 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of vancomycin, with mannitol serving only as a covariate for clearance, not as the subject drug. |
+| popPK | Manta_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of quercetin, with mannitol serving only as an excipient in the formulation. |
+| popPK | Wei_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of vancomycin, where mannitol is only a covariate affecting clearance, not the subject drug. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-11 09:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 16:19 UTC</sub>

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Sodium monofluorophosphate is used in OTC dental preparations to help protect against cavities.
+Sodium monofluorophosphate is a fluoride compound used to prevent tooth decay and as a fluoride supplement. It is an approved drug, widely used in stomatological (dental) products such as toothpastes.
 
-**Indication.** Sodium monofluorophosphate is indicated for the treatment of cavities
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3498849](https://www.wikidata.org/wiki/Q3498849) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Also known as coagulation factor II, thrombin is a serine protease that plays a physiological role in regulating hemostasis and maintaining blood coagulation. Once converted from prothrombin, thrombin converts fibrinogen to fibrin, which, in combination with platelets from the blood, forms a clot.
+Thrombin, a blood coagulation factor, is used as a local hemostatic to help stop bleeding. It is an approved medicine, applied locally to control bleeding, and is also being studied for other uses.
 
-Medical thrombin is a protein substance produced through a conversion reaction in which prothrombin of bovine origin is activated by tissue thromboplastin in the presence of calcium chloride. Thrombin requires no intermediate physiological agent for its action. It clots the fibrinogen of the blood directly. Failure to clot blood occurs in the rare case where the primary clotting defect is the absence of fibrinogen itself.
-
-Bovine thrombin however, is capable of causing fatal severe bleeding or thrombosis [FDA Label]. This thrombosis may result from the development of antibodies against bovine thrombin [FDA Label]. Bleeding may result from the development of antibodies against bovine factor V [FDA Label]. These antibodies may subsequently cross-react with endogenous human factor V and lead to its deficiency [FDA Label]. Patients who are know or suspected to have antibodies to bovine thrombin and/or bovine factor V should not be re-exposed to the product [FDA Label]. Patients who are administered bovine thrombin should be monitored for abnormal coagulation laboratory values, bleeding, or indeed, thrombosis [FDA Label].
-
-A variety of human thrombin and recombinant thrombin (ie. thrombin alfa) products are available as alternatives to using bovine thrombin.
-
-**Indication.** Bovine thrombin is a topical thrombin indicated to aid hemostasis whenever oozing blood and minor bleeding from capillaries and small venules is accessible and control of bleeding by standard surgical techniques (like suture, ligature, or cautery) is ineffective or impractical [FDA Label]. Additionally, topical bovine thrombin can also be used in combination with an absorbable gelatin sponge, USP [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409166](https://www.wikidata.org/wiki/Q409166) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -132,7 +126,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | liver | `CES1` formation, `CYP2C9` safety_allele | paper PGx gene |
-| excretion | liver | <sub>“…recognized by hepatic receptors and degraded…”</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F11 (activator), F13A1 (activator), F13B (activator), F2R (activator), F2RL3 (activator), F5 (activator), F8 (activator), FGA (activator), FGB (activator), FGG (activator), PAR4 (target), TAFI (target), VKORC1 (target).</sub>
 

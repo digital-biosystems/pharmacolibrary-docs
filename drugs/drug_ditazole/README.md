@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Ditazole is a non-steroidal anti-inflammatory drug (NSAID). Ditazole's analgesic and antipyretic effects are similar to phenylbutazone. Additionally, ditazole is a platelet aggregation inhibitor marketed in Spain and Portugal with trade name Ageroplas.
+Ditazole is a platelet aggregation inhibitor that was used as an antithrombotic drug to prevent blood clots. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q754622](https://www.wikidata.org/wiki/Q754622) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -4,7 +4,7 @@
 
 # arginine glutamate — `ArginineGlutamate_Wang2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,18 +20,20 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is arginine glutamate's own; they describe arginine. Extracted — arginine: CL 44.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading arginine, glutamate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `arginine glutamate`, measured `arginine`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:10.069169+00:00) predates the upstream re-run (2026-10-04 14:47:21.084121+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `arginine glutamate`, measured `arginine, glutamate`.
 
 ## Citation
 Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018)
   ·  DOI: [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745)
 
 ## Model component
-<dbs-pgx drug="arginine glutamate" model-id="ArginineGlutamate_Wang2018_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="arginine glutamate" model-id="ArginineGlutamate_Wang2018_reference" status="needs_review" stale="true" population="healthy Chinese volunteers" measured-compound="arginine, glutamate" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -54,9 +56,9 @@ Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate
 
 **Interpretation flags:**
 - covariate category for V from footnote/prose kept as documentation only (['Wang_2018:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=arginine
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=arginine, glutamate
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'arginine', not arginine_glutamate — the review values are the parent's
+- review gap-fill skipped: this record measures 'arginine, glutamate', not arginine_glutamate — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Wang_2018_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -68,15 +70,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[cl]` | 44.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | arginine glutamate | arginine, glutamate | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | arginine | arginine, glutamate | mismatch |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 44.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | 20 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v]` | not captured | 23.1 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | arginine glutamate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | arginine, glutamate | unknown | mismatch |
 
 </details>
 
@@ -131,4 +136,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 14:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 14:47 UTC</sub>

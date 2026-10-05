@@ -4,7 +4,7 @@
 
 # pioglitazone — `Pioglitazone_Kadam2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,40 +12,38 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
 **Only volume was extracted — no clearance.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (V1/F, V/F and t1/2ka ), so that value has no SI equivalent. Extracted — pioglitazone: V1/F 22.1 CYP2C8, V/F 26.3 CYP2C8, t1/2ka 2.08 CYP2C8.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — pioglitazone: V1/F 22.1 L, V/F 26.3 L, kabs 2.08 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a (h -1 )=θ 5].parameter_id`: this record has Q95, the second reading Q49; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[v c /f (l)=θ 2].parameter_id`: this record has Q290, the second reading Q76; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:24.874548+00:00) predates the upstream re-run (2026-10-01 17:52:49.379407+00:00). Current validate status: `rejected`.
 
 ## Citation
 Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013)
   ·  DOI: [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657)
 
 ## Model component
-<dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="rejected" stale="true" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="needs_review" stale="false" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | V c /F (L)=θ 2 | `Q290` · V1/F | 22.1 | L | 0.0221 | L | not captured | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5, tab_2:row5:col6, tab_2:row5:col7, tab_2:row5:col8, tab_2:row5:col9 | — | not captured |
-| V p /F (L)=θ 4 | `Q82` · V2/F | 26.3 | L | 0.0263 | L | not captured | llm (0.6) | tab_2:row7:col1, tab_2:row7:col4, tab_2:row7:col7 | — | not captured |
-| K a (h -1 )=θ 5 | `Q95` · t1/2ka | 2.08 | CYP2C8 | not captured | [c8] · [cyp2] | not captured | llm (0.6) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5, tab_2:row8:col6, tab_2:row8:col7, tab_2:row8:col8, tab_2:row8:col9 | — | not captured |
+| V p /F (L)=θ 4 | `Q76` · V/F | 26.3 | L | 0.0263 | L | not captured | llm (0.6) | tab_2:row7:col1, tab_2:row7:col4, tab_2:row7:col7 | — | not captured |
+| K a (h -1 )=θ 5 | `Q49` · kabs | 2.08 | 1/h | 0.0005777777777777778 | 1/h | not captured | llm (0.6) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5, tab_2:row8:col6, tab_2:row8:col7, tab_2:row8:col8, tab_2:row8:col9 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,14 +54,14 @@ Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmace
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'CYP2C8' (V1/F)
-- unit_dimension_unknown: 'CYP2C8' (V2/F)
-- unit_dimension_unknown: 'CYP2C8' (t1/2ka )
+- unit_dimension_unknown: 'CYP2C8' (V/F)
+- unit_dimension_unknown: 'CYP2C8' (kabs)
 - implicit units: 'V c /F (L)=θ 2' → L (from the paper text: "Table 3 footnote states: 'V c /F=central volume of distribution, L'")
 - implicit units: 'V p /F (L)=θ 4' → L (from the paper text: "Table 3 footnote states: 'V p /F=peripheral volume of distribution, L'")
-- implicit units: 'K a (h -1 )=θ 5' — the LLM proposed '1/h', whose dimension does not fit Q95; left unset
+- implicit units: 'K a (h -1 )=θ 5' → 1/h (from the paper text: "Table 3 footnote states: 'K a =absorption rate constant, h -1'")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=pioglitazone
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_2:row9:col3 = '43.0 a) %'
@@ -90,15 +88,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[k a (h -1 )=θ 5].parameter_id` | Q95 | Q49 | mismatch |
 | `gpt-oss:120b` | `parameters[v c /f (l)=θ 2].parameter_id` | Q290 | Q76 | mismatch |
-| `gpt-oss:120b` | `parameters[v p /f (l)=θ 4].parameter_id` | Q82 | Q78 | mismatch |
+| `gpt-oss:120b` | `parameters[v p /f (l)=θ 4].parameter_id` | Q76 | Q82 | mismatch |
 
 </details>
 
@@ -116,12 +113,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row5:col8', 'tab_2:row5:col9'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col4', 'tab_2:row7:col7'] |
-| C5_unit_missing_Q95 | fail | [time] | CYP2C8 | not captured | not captured | ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col4', 'tab_2:row8:col5', 'tab_2:row8:col6', 'tab_2:row8:col7', 'tab_2:row8:col8', 'tab_2:row8:col9'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col4', 'tab_2:row8:col5', 'tab_2:row8:col6', 'tab_2:row8:col7', 'tab_2:row8:col8', 'tab_2:row8:col9'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col4', 'tab_2:row7:col7'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q290 | pass | volume within physiological range | 22.1 L | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row5:col8', 'tab_2:row5:col9'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 26.3 L | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col4', 'tab_2:row7:col7'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 26.3 L | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col4', 'tab_2:row7:col7'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,9 +132,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 17:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 02:46 UTC</sub>

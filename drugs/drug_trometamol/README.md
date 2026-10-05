@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** An organic amine proton acceptor. It is used in the synthesis of surface-active agents and pharmaceuticals; as an emulsifying agent for cosmetic creams and lotions, mineral oil and paraffin wax emulsions, as a biological buffer, and used as an alkalizer. (From Merck, 11th ed; Martindale, The Extra Pharmacopoeia, 30th ed, p1424)
+Trometamol is an organic buffer used in intravenous solutions to correct disturbances of the body's acid–base balance, such as metabolic acidosis. It is an approved drug, given by infusion as an intravenous solution or additive, and is used mainly in hospital settings.
 
-**Indication.** For the prevention and correction of metabolic acidosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413961](https://www.wikidata.org/wiki/Q413961) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

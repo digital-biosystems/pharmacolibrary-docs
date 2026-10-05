@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Synephrine, also referred to as, p-synephrine, is naturally occurring alkaloid. It is present in approved drug products as neo-synephrine, its m-substituted analog. p-synephrine and m-synephrine are known for their longer acting adrenergic effects compared to norepinephrine.
+Oxedrine (synephrine) is a sympathomimetic, alpha-adrenergic agonist that acts as a vasoconstrictor and decongestant, and has been classified as a cardiac stimulant and eye decongestant. It is considered investigational, with no authorised marketing record in the European Union.
 
-The similarity of naming between m-synephrine and the unsubstituted form, synephrine,  is a source of some confusion however m-synephrine refers to a related drug more commonly known as phenylephrine. While the compounds share some chemical and pharmacological similarities, they are in fact distinct chemical entities.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421351](https://www.wikidata.org/wiki/Q421351) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

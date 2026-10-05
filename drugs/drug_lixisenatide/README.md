@@ -9,15 +9,15 @@
 
 ## About
 
-**Description.** Lixisenatide is a glucagon-like peptide-1 (GLP-1) receptor agonist used in the treatment of type II diabetes mellitus (T2DM). It is sold by Sanofi-Aventis under the brand name Adlyxin in the US[L763] and Lyxumia in the EU.[L764] Adlyxin recieved FDA approval July 28, 2016.[L763]
+Lixisenatide is a glucagon-like peptide-1 agonist used as an anti-diabetic medication for type 2 diabetes. It is an approved injectable diabetes drug, authorised in the European Union, although one product there has been withdrawn.
 
-**Indication.** Lixisenatide is indicated as an adjunct to diet and exercise to improve glycemic control in adult patients with type II diabetes mellitus.[L48400] It is also available in combination with [insulin glargine] for the same indication.[L48405]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6659956](https://www.wikidata.org/wiki/Q6659956) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-03 18:27 | 39:53 | 0/0/0 | 0/0/0 | 0/0/0 | 1,588,404/23,392 | ollama / qwen3.8:27b-mtp-q8_0 | 79 | 6/72 | 77/2 | 0 |
+| 2026-10-04 23:41 | 14:45 | 0/0/0 | 0/0/0 | 0/0/0 | 611,491/9,364 | ollama / qwen3.8:27b-mtp-q8_0 | 79 | 6/73 | 77/2 | 0 |
 
 ## popPK records
 
@@ -29,7 +29,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated via glomerular filtration…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GLP1R (target).</sub>
 
@@ -54,7 +54,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Raccah_2015.pdf` | Raccah D et al., Efficacy and safety of lixisenatide in…, Diabetes/metabolism researc… (2015) | popPK | 8 | [10.1002/dmrr.2588](https://doi.org/10.1002/dmrr.2588) | [25115916](https://pubmed.ncbi.nlm.nih.gov/25115916) | The study reports qualitative PK changes (half-life, exposure) for lixisenatide in humans, but specific numeric parameter values (CL, V, ka) are not present in the provided text. |
 
-<sub>queue written 2026-10-03T18:23:50.548471+00:00</sub>
+<sub>queue written 2026-10-04T23:37:45.828699+00:00</sub>
 
 ## Screened and excluded
 
@@ -68,7 +68,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for therapeutic enzymes in lysosomal storage diseases (e.g., imiglucerase, alglucosidase alfa) and does not mention lixisenatide. |
 | PD | Barzel_2026 | not_relevant | 0 | 0 | The paper is a review of pharmacokinetic/pharmacodynamic models for therapeutic enzymes in lysosomal storage diseases and does not contain any data, analysis, or parameters for lixisenatide. |
 | popPK | Becker_2014 | relevant | 4 | 8 | The study reports non-compartmental PK parameters (Cmax, tmax, t1/2z, AUC) for lixisenatide in humans, but lacks compartmental model parameters (CL, V, Q, ka) required for population PK extraction. |
-| popPK | Becker_2015 | relevant | 4 | 2 | The study reports descriptive pharmacokinetic parameters (AUC, Cmax, tmax) for lixisenatide, but the specific numeric values are not present in the provided text (referenced as "data not shown" or in figures/tables not included). |
+| popPK | Becker_2015 | relevant | 4 | 2 | The study reports lixisenatide PK parameters (AUC, Cmax, tmax) but lacks compartmental model parameters (CL, V, ka) and specific numeric values are largely in figures or described qualitatively. |
 | popPK | Bell_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for pirtobrutinib, not lixisenatide. |
 | PD | Bell_2026 | not_relevant | 0 | 0 | The paper is a population pharmacokinetic (PK) analysis of pirtobrutinib, not lixisenatide, and does not report a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50) for the drug in question. |
 | popPK | Blackman_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for methotrexate, not lixisenatide. |
@@ -79,12 +79,12 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Chai_2026 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PopPK) of metoprolol, not lixisenatide, and does not report any pharmacodynamic (PD) or exposure-response parameters. |
 | popPK | Christensen_2009 | irrelevant | 2 | 0 | The paper is a review that mentions linear pharmacokinetics but does not report specific quantitative disposition parameters (CL, V, t1/2) for lixisenatide. |
 | popPK | Chung_2019 | irrelevant | 0 | 0 | The study focuses on the renal mechanisms of empagliflozin in rats, using lixisenatide only as a comparator drug without reporting any pharmacokinetic parameters for it. |
-| popPK | Clements_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for belantamab mafodotin, not lixisenatide. |
+| popPK | Clements_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for belantamab mafodotin, not lixisenatide. |
 | popPK | Dahan_2026 | irrelevant | 0 | 0 | The paper is a narrative review of Model-Informed Drug Development for analgesics and does not report pharmacokinetic parameters for lixisenatide. |
 | PD | Dahan_2026 | not_relevant | 0 | 0 | The paper is a narrative review of Model-Informed Drug Development (MIDD) for analgesics and does not contain any specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters for lixisenatide. |
 | popPK | Dai_2025 | irrelevant | 0 | 0 | The paper is a systematic review of the population pharmacokinetics of tigecycline, not lixisenatide. |
 | PD | Dai_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics (PK) for tigecycline, not lixisenatide, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Dalsgaard_2018 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular risk factors in head-to-head trials and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for lixisenatide. |
+| popPK | Dalsgaard_2018 | irrelevant | 0 | 0 | This is a narrative review of cardiovascular risk factors in head-to-head trials, not a pharmacokinetic study, and it does not report quantitative PK parameters (CL, V, ka) for lixisenatide. |
 | popPK | Davidson_2015 | irrelevant | 0 | 0 | The paper is a review discussing clinical efficacy and cardiovascular outcomes of GLP-1 receptor agonists, containing no pharmacokinetic parameter values for lixisenatide. |
 | popPK | Dodeja_2026 | irrelevant | 0 | 0 | The paper is a review on drug secretion into human milk and does not report pharmacokinetic parameters for lixisenatide. |
 | PD | Dodeja_2026 | not_relevant | 0 | 0 | The paper is a review on drug secretion into human milk and does not contain any pharmacodynamic or exposure-response data for lixisenatide. |
@@ -100,13 +100,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Gao_2025 | not_relevant | 0 | 0 | The paper focuses on the external validation of population pharmacokinetic (popPK) models for mycophenolate sodium and does not report any pharmacodynamic (PD) or exposure-response relationships for lixisenatide. |
 | popPK | García-Orueta_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of teicoplanin, piperacillin, and meropenem, not lixisenatide. |
 | PD | García-Orueta_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (PK) design optimization for antibiotics (teicoplanin, piperacillin, meropenem) and does not involve lixisenatide or report any pharmacodynamic (PD) or exposure-response parameters. |
-| popPK | Gautier_2022 | relevant | 8 | 2 | The paper develops a compartmental pharmacokinetic model for lixisenatide, but the specific numeric parameter values are located in Supplementary Figures S6-S9, which are not included in the provided evidence. |
+| popPK | Gautier_2022 | relevant | 8 | 2 | The paper develops a compartmental pharmacokinetic model for lixisenatide, but the specific numeric parameter values are located in Supplementary Figures S6-S9 which are not included in the provided evidence. |
 | popPK | Gentilella_2019 | irrelevant | 0 | 0 | This is a review article discussing clinical properties and pharmacodynamics of GLP-1 RAs, not a pharmacokinetic study reporting quantitative disposition parameters for lixisenatide. |
 | PD | Gentilella_2019 | not_relevant | 1 | 0 | The text is a qualitative review discussing general pharmacodynamic mechanisms and clinical differences between GLP-1 RAs, without reporting any specific numeric PD parameters or exposure-response data for lixisenatide. |
 | popPK | Giorda_2014 | irrelevant | 1 | 0 | This is a systematic review discussing safety and efficacy in renal/hepatic impairment without reporting original quantitative pharmacokinetic parameter values for lixisenatide. |
 | popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mosnodenvir (a dengue antiviral), not lixisenatide. |
 | popPK | Hanefeld_2017 | irrelevant | 0 | 0 | The paper is a post hoc meta-analysis of efficacy and safety outcomes (HbA1c, glucose, adverse events) in patients with renal impairment, and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for lixisenatide. |
-| popPK | Hardiansyah_2025 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic modeling in radiopharmaceutical therapy (e.g., 177Lu-DOTATATE, 177Lu-PSMA) and does not mention lixisenatide or report any PK parameters for it. |
+| popPK | Hardiansyah_2025 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic modeling in radiopharmaceutical therapy (e.g., 177Lu-DOTATATE, 177Lu-PSMA) and does not contain any data or parameters for lixisenatide. |
 | PD | Hardiansyah_2025 | not_relevant | 0 | 0 | The paper is a review of population pharmacokinetic modeling in radiopharmaceutical therapy and does not report any pharmacodynamic or exposure-response analysis for lixisenatide. |
 | popPK | Hernández-Gago_2026 | irrelevant | 0 | 0 | The paper is a systematic review of dosing strategies for high-alert medications in obese pediatric patients and does not mention lixisenatide or report any pharmacokinetic parameters for it. |
 | PD | Hernández-Gago_2026 | not_relevant | 0 | 0 | The paper is a systematic review of dosing strategies in obese pediatric patients and does not report specific pharmacodynamic or exposure-response data for lixisenatide. |
@@ -118,7 +118,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Husheng_2026 | not_relevant | 0 | 0 | The paper is a review of population pharmacokinetic (PK) models for vancomycin and does not report any pharmacodynamic (PD) or exposure-response relationships for lixisenatide. |
 | popPK | Hölscher_2025 | irrelevant | 0 | 0 | The paper is a review of neurodegenerative diseases and incretin mechanisms, mentioning lixisenatide only as a clinical trial agent for Parkinson's disease without reporting any pharmacokinetic parameters. |
 | popPK | Hölscher_2026 | irrelevant | 1 | 0 | The paper is a review of neuroprotective properties and clinical trials for CNS diseases, mentioning lixisenatide only as a comparator for blood-brain barrier penetration without reporting original quantitative PK parameters. |
-| popPK | Inoue_2019 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for lixisenatide (Cmax, AUC, t1/2, CL/F, Vss/F), but the specific numeric values are located in supplementary tables (S2-S4) and figures (S3) which are not included in the provided evidence. |
+| popPK | Inoue_2019 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for lixisenatide (CL/F, Vss/F, t1/2), but the specific numeric values are located in supplementary tables (S2-S4) and figures (S3) which are not included in the provided evidence. |
 | popPK | Iqbal_2021 | irrelevant | 0 | 0 | This is a review of cardiovascular safety and efficacy trials, not a pharmacokinetic study reporting quantitative disposition parameters for lixisenatide. |
 | popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for rivaroxaban, not lixisenatide. |
 | PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban, not lixisenatide, and does not include a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50). |
@@ -129,7 +129,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Kapitza_2013 | irrelevant | 0 | 0 | The study reports pharmacodynamic endpoints (glucose, insulin, C-peptide AUCs) rather than pharmacokinetic parameters (CL, V, ka) for lixisenatide. |
 | popPK | Khoei_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for dolutegravir, not lixisenatide. |
 | PD | Khoei_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PopPK) of dolutegravir and does not report any pharmacodynamic or exposure-response analysis for lixisenatide. |
-| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bevacizumab (CT-P16), not lixisenatide. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bevacizumab (a monoclonal antibody), not lixisenatide. |
 | PD | Kim_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis for a bevacizumab biosimilar (CT-P16), not lixisenatide, and does not model or report any pharmacodynamic (PD) or exposure-response parameters. |
 | popPK | Lee_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for gentamicin, not lixisenatide. |
 | PD | Lee_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) of gentamicin in an obese hemodialysis patient and does not report any pharmacodynamic (PD) or exposure-response relationship for lixisenatide. |
@@ -155,16 +155,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Miñambres_2017 | irrelevant | 2 | 1 | This is a review article comparing clinical efficacy and general pharmacokinetic profiles (half-life) of GLP-1 agonists, lacking original quantitative population-PK parameters (CL, V, Q, ka) for lixisenatide. |
 | PD | Miñambres_2017 | not_relevant | 2 | 1 | The paper is a qualitative review comparing clinical trial outcomes (HbA1c, glucose levels) and pharmacokinetic profiles of GLP-1 agonists, but it does not report or derive numeric pharmacodynamic parameters (e.g., Emax, EC50) or concentration-effect curves for lixisenatide. |
 | popPK | Nauck_2019 | irrelevant | 1 | 0 | This is a clinical review comparing the efficacy and safety of GLP-1 agonists, not a primary pharmacokinetic study reporting quantitative disposition parameters for lixisenatide. |
-| popPK | Nauck_2021 | irrelevant | 1 | 0 | This is a narrative review of GLP-1 receptor agonists that lists a half-life for lixisenatide in a summary table but does not report quantitative population pharmacokinetic parameters (CL, V, Q, ka) or a compartmental model. |
+| popPK | Nauck_2021 | irrelevant | 1 | 0 | This is a narrative review of GLP-1 receptor agonists that lists a half-life for lixisenatide in a summary table but does not report quantitative disposition parameters (CL, V, Q, ka) or a compartmental/population-PK model. |
 | PGx | Nauck_2021 | not_relevant | 0 | 0 | The paper is a general review of GLP-1 receptor agonists and does not report specific pharmacogenomic effects on the PK or PD parameters of lixisenatide. |
 | popPK | Orozco_2025 | irrelevant | 0 | 0 | The paper is a narrative review of GLP-1 receptor agonists in Parkinson's disease and does not report original quantitative pharmacokinetic parameters (CL, V, ka, etc.) for lixisenatide. |
 | PD | Orozco_2025 | not_relevant | 1 | 0 | The paper is a comprehensive review of GLP-1 signaling in Parkinson's disease and does not report any primary pharmacokinetic or pharmacodynamic data, nor does it provide numeric PD parameters for lixisenatide. |
 | popPK | Owens_2013 | irrelevant | 1 | 0 | The paper is a review discussing the pharmacodynamic effects and clinical outcomes of GLP-1 receptor agonists, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for lixisenatide. |
 | PD | Owens_2013 | not_relevant | 2 | 0 | The text is a qualitative review comparing the clinical effects of different GLP-1 RAs without providing any numeric PD parameters, concentration-effect curves, or PK/PD modeling data for lixisenatide. |
 | popPK | Pan_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for adalimumab, not lixisenatide. |
-| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle pharmacokinetics and does not mention lixisenatide or provide any PK parameters for it. |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle pharmacokinetics and does not mention lixisenatide or report any PK parameters for it. |
 | PD | Parrot_2026 | not_relevant | 0 | 0 | The paper is a review article on pharmacokinetic modeling for nanoparticles and does not contain any data, analysis, or parameters for lixisenatide. |
-| popPK | Petersen_2013 | irrelevant | 2 | 0 | The paper is a clinical review that mentions a half-life range but does not report quantitative compartmental PK parameters (CL, V, Q, ka) or a population PK model. |
+| popPK | Petersen_2013 | irrelevant | 2 | 0 | The paper is a review that mentions a half-life range but lacks quantitative disposition parameters (CL, V, Q, ka) or a compartmental model. |
 | popPK | Prasad-Reddy_2015 | irrelevant | 1 | 0 | This is a clinical review of GLP-1 receptor agonists that mentions lixisenatide's half-life (1.5-3 hours) in passing but does not report quantitative population PK parameters (CL, V, Q, ka) or a compartmental model for lixisenatide. |
 | PD | Prasad-Reddy_2015 | not_relevant | 2 | 0 | The paper is a clinical review that qualitatively discusses the pharmacodynamics of GLP-1 agonists but does not provide specific numeric PD parameters (e.g., Emax, EC50) or exposure-response curves for lixisenatide. |
 | popPK | Raccah_2013 | irrelevant | 2 | 1 | This is a clinical efficacy review of lixisenatide in T2DM that mentions a half-life range (2-4 h) but does not report quantitative population PK parameters like clearance, volume, or compartmental model estimates. |
@@ -174,15 +174,15 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Rendell_2016 | irrelevant | 0 | 0 | The paper is a review of albiglutide, a different drug, and does not report pharmacokinetic parameters for lixisenatide. |
 | PD | Rendell_2016 | not_relevant | 0 | 0 | The paper is a review of albiglutide, not lixisenatide, and does not report specific numeric PD parameters or exposure-response models for the target drug. |
 | popPK | Roskoski_2026 | irrelevant | 0 | 0 | The paper is a general review of GLP-1/GIP agonists and does not report specific quantitative pharmacokinetic parameters for lixisenatide. |
-| popPK | Salameh_2020 | irrelevant | 2 | 0 | The study focuses on brain uptake (influx rate Ki) in mice for CNS therapeutics, not standard systemic disposition parameters (CL, V, t1/2) for lixisenatide, and no numeric values are provided in the evidence. |
-| popPK | Saporta_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of meropenem in mice, not lixisenatide. |
+| popPK | Salameh_2020 | irrelevant | 2 | 0 | The study focuses on brain uptake (influx rate Ki) in mice for CNS therapeutics, not systemic population pharmacokinetic parameters (CL, V, ka) for lixisenatide, and no numeric values are provided in the evidence. |
+| popPK | Saporta_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem in mice, not lixisenatide. |
 | popPK | Scheen_2015 | irrelevant | 1 | 0 | This is a review article that explicitly states only limited pharmacokinetic data are available for lixisenatide and does not provide any quantitative disposition parameters. |
 | popPK | Seino_2014 | irrelevant | 0 | 0 | The study reports pharmacodynamic and efficacy outcomes (glucose levels, HbA1c) rather than pharmacokinetic disposition parameters (CL, V, ka). |
 | popPK | Sethuramalingam_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of asparaginase (N-Asp and P-Asp), not lixisenatide. |
 | PD | Sethuramalingam_2026 | not_relevant | 0 | 0 | The paper focuses on asparaginase (N-Asp and P-Asp) and does not contain any data, analysis, or mention of lixisenatide. |
 | popPK | Sfairopoulos_2018 | irrelevant | 0 | 0 | The paper is a clinical pharmacology review of GLP-1 receptor agonists that discusses mechanisms and efficacy but does not report quantitative pharmacokinetic parameters (CL, V, ka) for lixisenatide. |
 | popPK | Sharma_2018 | irrelevant | 2 | 0 | This is a review article that discusses pharmacokinetic properties generally but does not provide specific quantitative parameter values for lixisenatide in the provided text. |
-| popPK | Sleem_2024 | irrelevant | 0 | 0 | The study investigates the nephroprotective and antioxidant effects of lixisenatide in diabetic rats, reporting biomarkers like BUN and creatinine clearance, but does not report pharmacokinetic parameters (CL, V, ka, t1/2) for the drug itself. |
+| popPK | Sleem_2024 | irrelevant | 0 | 0 | The study investigates the nephroprotective and antioxidant effects of lixisenatide in diabetic rats, reporting biomarkers like BUN and creatinine, but does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Soeorg_2026 | irrelevant | 0 | 0 | The paper is an in vitro PKPD study of meropenem and colistin/polymyxin B against Acinetobacter baumannii and does not involve lixisenatide. |
 | PD | Soeorg_2026 | not_relevant | 0 | 0 | The paper reports a PK/PD model for meropenem and colistin/polymyxin B, not lixisenatide. |
 | popPK | Soria-Chacartegui_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tramadol, not lixisenatide. |
@@ -202,7 +202,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Tonneijck_2017 | irrelevant | 0 | 0 | The study measures renal hemodynamics (GFR, ERPF) and metabolic markers, not the pharmacokinetic disposition parameters (CL, V, ka) of lixisenatide. |
 | popPK | Tonneijck_2018 | irrelevant | 0 | 0 | The study focuses on the renal handling of uric acid and does not report pharmacokinetic parameters (CL, V, ka) for lixisenatide. |
 | popPK | Trujillo_2014 | irrelevant | 0 | 0 | This is a narrative review of GLP-1 receptor agonists that discusses lixisenatide qualitatively but does not report any quantitative pharmacokinetic parameters or original data. |
-| popPK | Trujillo_2017 | irrelevant | 2 | 0 | This is a systematic review of clinical efficacy and safety that does not report original quantitative pharmacokinetic disposition parameters (CL, V, ka) for lixisenatide. |
+| popPK | Trujillo_2017 | irrelevant | 2 | 0 | This is a systematic review of clinical efficacy and safety that mentions pharmacokinetics but does not report quantitative disposition parameters (CL, V, ka) for lixisenatide. |
 | popPK | Tsai_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vancomycin, not lixisenatide. |
 | PD | Tsai_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of vancomycin in hemodialysis patients and does not report any pharmacodynamic or exposure-response relationship for lixisenatide. |
 | popPK | Vatsia_2025 | irrelevant | 0 | 0 | The study is a retrospective analysis of surgical outcomes (pseudarthrosis rates) and does not report any pharmacokinetic parameters for lixisenatide. |
@@ -213,7 +213,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Wanika_2026 | not_relevant | 0 | 0 | The paper focuses on uncertainty quantification methods for pharmacokinetic (PK) models using simulated data and does not report any pharmacodynamic (PD) or exposure-response relationships for lixisenatide. |
 | popPK | Wassef_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cefazolin, not lixisenatide. |
 | PD | Wassef_2026 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (popPK) of cefazolin in obese patients and does not report any pharmacodynamic (PD) or exposure-response relationship for lixisenatide. |
-| popPK | Whyte_2019 | irrelevant | 1 | 0 | The study measures the pharmacokinetics of chylomicron triacylglycerol (a lipid substrate) to determine the mechanism of lixisenatide's effect on lipid clearance, rather than reporting the disposition parameters (CL, V, t1/2) of the lixisenatide drug itself. |
+| popPK | Whyte_2019 | irrelevant | 1 | 0 | The study measures the pharmacokinetics of chylomicron triacylglycerol (a lipid substrate) to determine the mechanism of action, rather than reporting the disposition parameters (CL, V, ka) of the drug lixisenatide itself. |
 | popPK | Wilkins_2014 | irrelevant | 2 | 0 | The paper describes a semi-mechanistic disease/drug response model (PD/PD) for glucose and insulin, not a pharmacokinetic model with quantitative disposition parameters (CL, V, ka) for lixisenatide. |
 | popPK | Wu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of growth hormone (rhGH and PEG-rhGH), not lixisenatide. |
 | PD | Wu_2026 | not_relevant | 0 | 0 | The paper focuses on growth hormone (rhGH/PEG-rhGH) and does not mention lixisenatide. |

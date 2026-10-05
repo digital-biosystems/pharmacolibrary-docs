@@ -7,6 +7,12 @@
 - **DrugBank:** [DB18084](https://go.drugbank.com/drugs/DB18084) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Apraglutide is an investigational drug in the alimentary tract and metabolism category, being studied for gastrointestinal conditions. It is not yet approved; it remains under clinical investigation and is not in general use.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

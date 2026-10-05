@@ -7,11 +7,17 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Ceratonia (carob) is a plant genus whose products are used as an antidiarrheal remedy. It is classified as an other antidiarrheal for the alimentary tract, and remains in use as a traditional remedy.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q159376](https://www.wikidata.org/wiki/Q159376) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 11:15 | 7:40 | 0/0/0 | 3/0/0 | 0/0/0 | 70,393/4,703 | ollama / qwen3.8:27b-mtp-q8_0 | 46 | 3/7 | 44/2 | 0 |
+| 2026-10-04 20:25 | 6:56 | 0/0/0 | 1/0/0 | 0/0/0 | 272,254/5,645 | ollama / qwen3.8:27b-mtp-q8_0 | 46 | 9/27 | 44/2 | 0 |
 
 ## popPK records
 
@@ -21,12 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span> | [Abidar_2020_acetylcholinesterase_activity](drugs/drug_ceratonia/pd_Abidar_2020_acetylcholinesterase_activity.md) | name ← Ceratonia siliqua aqueous extract · stimulation effect | — | Abidar S et al., The Aqueous Extract from Ceratonia sili…, Antioxidants (Basel, Switze… (2020) | [10.3390/antiox9040304](https://doi.org/10.3390/antiox9040304) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span> | [Abidar_2020_anxiety](drugs/drug_ceratonia/pd_Abidar_2020_anxiety.md) | name ← Ceratonia siliqua aqueous extract · stimulation effect | — | Abidar S et al., The Aqueous Extract from Ceratonia sili…, Antioxidants (Basel, Switze… (2020) | [10.3390/antiox9040304](https://doi.org/10.3390/antiox9040304) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span> | [Abidar_2020_memory_performance](drugs/drug_ceratonia/pd_Abidar_2020_memory_performance.md) | name ← Ceratonia siliqua aqueous extract · stimulation effect | — | Abidar S et al., The Aqueous Extract from Ceratonia sili…, Antioxidants (Basel, Switze… (2020) | [10.3390/antiox9040304](https://doi.org/10.3390/antiox9040304) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span> | [Abidar_2020_oxidative_stress](drugs/drug_ceratonia/pd_Abidar_2020_oxidative_stress.md) | name ← Ceratonia siliqua aqueous extract · stimulation effect | — | Abidar S et al., The Aqueous Extract from Ceratonia sili…, Antioxidants (Basel, Switze… (2020) | [10.3390/antiox9040304](https://doi.org/10.3390/antiox9040304) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Elazab_2022_T_gondii_tachyzoite_growth_inhibition](drugs/drug_ceratonia/pd_Elazab_2022_T_gondii_tachyzoite_growth_inhibition.md) | name ← Raphanus sativus methanol extract · inhibition effect | — | Elazab ST et al., Anti-Toxoplasma Activities of Some Egyp…, Acta parasitologica (2022) | [10.1007/s11686-022-00633-2](https://doi.org/10.1007/s11686-022-00633-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Mansouri_2022_resp](drugs/drug_ceratonia/pd_Mansouri_2022_resp.md) | DPPH radical scavenging activity ← carob pods extracts · inhibition effect | — | Mansouri FE et al., Evaluation of Different Extraction Meth…, Molecules (Basel, Switzerla… (2022) | [10.3390/molecules27196163](https://doi.org/10.3390/molecules27196163) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Elazab_2022_GI](drugs/drug_ceratonia/pd_Elazab_2022_GI.md) | % Inhibition of T. gondii RH ← Ceratonia siliqua · inhibition effect | — | Elazab ST et al., Anti-Toxoplasma Activities of Some Egyp…, Acta parasitologica (2022) | [10.1007/s11686-022-00633-2](https://doi.org/10.1007/s11686-022-00633-2) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -53,101 +54,101 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Peng_2023.pdf` | Peng ZT et al., Novel phenylpropanoids and isoflavone g…, Natural product research (2023) | pd | 4 | [10.1080/14786419.2022.2076230](https://doi.org/10.1080/14786419.2022.2076230) | [35574610](https://www.ncbi.nlm.nih.gov/pubmed/35574610) | metadata signals extractable PD data (IC50) |
 | `Serio_2025.pdf` | Serio S et al., Carob (Ceratonia siliqua) leaves: A com…, Food chemistry (2025) | pd | 4 | [10.1016/j.foodchem.2024.142392](https://doi.org/10.1016/j.foodchem.2024.142392) | [39667236](https://www.ncbi.nlm.nih.gov/pubmed/39667236) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-26T11:14:33.564541+00:00</sub>
+<sub>queue written 2026-10-04T20:24:24.233235+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aktaş_2024 | irrelevant | 0 | 0 | The paper focuses on the encapsulation of anthocyanins using potato protein coacervates and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
-| popPK | Al_2025 | irrelevant | 0 | 0 | The study investigates the effects of flaxseed, gum acacia, melatonin, and betaine on diabetic rats with CKD and does not involve the drug ceratonia or report any pharmacokinetic parameters for it. |
-| popPK | Ali_2010 | irrelevant | 0 | 0 | The study investigates the nephroprotective effects of Gum Arabic (Acacia senegal) on renal function markers (creatinine clearance, urea) in a rat model of chronic renal failure, rather than reporting pharmacokinetic disposition parameters (CL, V, ka) for the drug ceratonia. |
-| popPK | Ali_2013 | irrelevant | 0 | 0 | The study investigates the nephroprotective effects of Gum Arabic (Acacia senegal) on renal function markers (creatinine clearance) in rats, not the pharmacokinetic disposition parameters (CL, V, ka) of the drug ceratonia. |
-| popPK | Ali_2014 | irrelevant | 0 | 0 | The study investigates the effect of gum acacia on anemia in rats with chronic kidney disease and does not report pharmacokinetic parameters for ceratonia. |
+| popPK | Aktaş_2024 | irrelevant | 0 | 0 | The paper focuses on the encapsulation of anthocyanins using potato protein coacervates and does not involve the drug ceratonia or any pharmacokinetic modeling. |
+| popPK | Al_2025 | irrelevant | 0 | 0 | The study investigates the effects of flaxseed, melatonin, gum acacia, and betaine on diabetic rats with CKD, and does not report pharmacokinetic parameters for ceratonia. |
+| popPK | Ali_2010 | irrelevant | 0 | 0 | The study investigates the nephroprotective effects of Gum Arabic (Acacia senegal) on chronic renal failure in rats, not the pharmacokinetics of ceratonia. |
+| popPK | Ali_2013 | irrelevant | 0 | 0 | The study investigates the nephroprotective effects of Gum Arabic (Acacia senegal) in rats, not the pharmacokinetics of ceratonia. |
+| popPK | Ali_2014 | irrelevant | 0 | 0 | The study investigates the effect of gum acacia on anemia in adenine-induced chronic kidney disease in rats and does not report pharmacokinetic parameters for ceratonia. |
 | popPK | Ali_2015 | irrelevant | 0 | 0 | The study investigates the effect of Gum Arabic on adenine-induced renal failure in rats and does not report pharmacokinetic parameters for ceratonia. |
-| popPK | Alruwaili_2025 | irrelevant | 0 | 0 | The study investigates the therapeutic effects of gum acacia (ceratonia) on sepsis-induced acute kidney injury in rats and does not report any pharmacokinetic parameters. |
+| popPK | Alruwaili_2025 | irrelevant | 0 | 0 | The study investigates the therapeutic effects of gum acacia and dexamethasone on sepsis-induced acute kidney injury in rats, not the pharmacokinetics of ceratonia. |
 | popPK | Annisa_2024 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of ketoconazole, not ceratonia. |
-| popPK | Bai_2023 | irrelevant | 0 | 0 | The study focuses on longan pulp polysaccharides (LPIIa) and gut microbiota, not the drug ceratonia, and does not report pharmacokinetic parameters. |
-| popPK | Bennett_1987 | irrelevant | 0 | 0 | The study investigates the clearance of Aspergillus galactomannan, not the drug ceratonia. |
+| popPK | Bai_2023 | irrelevant | 0 | 0 | The study focuses on longan pulp polysaccharides and gut microbiota, not the pharmacokinetics of ceratonia. |
+| popPK | Bennett_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Aspergillus galactomannan, not the drug ceratonia. |
 | popPK | Bi_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Polygonatum sibiricum polysaccharide, not ceratonia. |
-| popPK | Bruyn_1992 | irrelevant | 0 | 0 | The paper is a review of host defense mechanisms against Streptococcus pneumoniae and does not involve the drug ceratonia or pharmacokinetic parameters. |
-| popPK | Cegledi_2022 | irrelevant | 0 | 0 | The paper studies the encapsulation and in-vitro bioavailability of nettle leaf extract polyphenols, not the pharmacokinetics of the drug ceratonia. |
-| popPK | Chikhaoui_2026 | irrelevant | 0 | 0 | The study focuses on the phytochemical profiling and in vitro antibacterial activity of honeys, not the pharmacokinetics of the drug ceratonia. |
-| popPK | Couëdelo_2022 | irrelevant | 0 | 0 | The study investigates the bioavailability of n-3 fatty acids (DHA/EPA) using gum acacia as an emulsifier, not the pharmacokinetics of the drug ceratonia. |
-| popPK | Dobroslavić_2023 | irrelevant | 0 | 0 | The paper studies the physicochemical properties and in-vitro bioaccessibility of Laurus nobilis (laurel) polyphenols, not the pharmacokinetics of the drug ceratonia. |
-| popPK | E_2020 | irrelevant | 0 | 0 | The study focuses on the neuroprotective effects of curcumin formulations in a toxicity model and does not report pharmacokinetic parameters for ceratonia. |
+| popPK | Bruyn_1992 | irrelevant | 0 | 0 | The paper is a review of host defense mechanisms against Streptococcus pneumoniae and contains no pharmacokinetic data for ceratonia. |
+| popPK | Cegledi_2022 | irrelevant | 0 | 0 | The paper studies the spray drying encapsulation and in vitro bioavailability of nettle leaf polyphenols, not the pharmacokinetics of the drug ceratonia. |
+| popPK | Chikhaoui_2026 | irrelevant | 0 | 0 | The study focuses on the phytochemical profiling and antibacterial activity of honeys, not the pharmacokinetics of the drug ceratonia. |
+| popPK | Couëdelo_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of n-3 fatty acids (EPA/DHA) in rats, not the drug ceratonia. |
+| popPK | Dobroslavić_2023 | irrelevant | 0 | 0 | The paper studies the physicochemical properties and in vitro bioaccessibility of Laurus nobilis (laurel) polyphenols, not the pharmacokinetics of ceratonia. |
+| popPK | E_2020 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of curcumin formulations in a toxicity model and does not report pharmacokinetic parameters for ceratonia. |
 | PD | El-Neketi_2013 | not_relevant | 2 | 2 | The paper reports a single IC50 value for a fungal metabolite (citriquinochroman) in a cytotoxicity assay, which is a pharmacological potency measurement, not a pharmacodynamic (exposure-response) model for the plant or a drug with derivable PD parameters like Emax or slope. |
-| popPK | Elbialy_2022 | irrelevant | 0 | 0 | The study focuses on curcumin as the subject drug, not ceratonia, and does not report PK parameters for ceratonia. |
-| popPK | Fu_2023 | irrelevant | 0 | 0 | The paper studies the stability of anthocyanins from purple potatoes, not the drug ceratonia, and contains no pharmacokinetic parameters. |
-| popPK | Gali_2022 | irrelevant | 0 | 0 | The study focuses on the formulation of nanoparticles for rutin, not the pharmacokinetics of ceratonia. |
-| popPK | Gangneux_2019 | irrelevant | 0 | 0 | The provided text is a conference invitation for a mycology congress and contains no pharmacokinetic data or information regarding ceratonia. |
+| popPK | Elbialy_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of curcumin, not ceratonia. |
+| popPK | Fu_2023 | irrelevant | 0 | 0 | The paper studies the stability and bioavailability of anthocyanins from purple potatoes, not the pharmacokinetics of ceratonia. |
+| popPK | Gali_2022 | irrelevant | 0 | 0 | The study focuses on the formulation and characterization of nanoparticles for rutin, not the pharmacokinetics of ceratonia. |
+| popPK | Gangneux_2019 | irrelevant | 0 | 0 | no_text gate: only 297 chars of text extracted (&lt; 400) |
 | PD | Gangneux_2019 | not_relevant | 0 | 0 | The text is a conference invitation and contains no pharmacodynamic data or analysis. |
-| popPK | Gonda_1994 | irrelevant | 0 | 0 | The provided evidence contains no text, data, or parameters, making it impossible to assess relevance or extractability. |
-| popPK | Guedes-da-Silva_2019 | irrelevant | 0 | 0 | The study focuses on the efficacy of VFV and benznidazole in treating Chagas disease, not on the pharmacokinetics of ceratonia. |
-| popPK | Guo_2022 | irrelevant | 0 | 0 | The study focuses on curcumin encapsulation in nanoparticles and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
-| popPK | Hassani_2020 | irrelevant | 0 | 0 | The study focuses on gallic acid nanoparticles and does not investigate ceratonia or report any pharmacokinetic parameters for it. |
-| popPK | Hu_2021 | irrelevant | 0 | 0 | The study focuses on tangeretin, not ceratonia, and does not report PK parameters for the target drug. |
-| popPK | Huang_2018 | irrelevant | 0 | 0 | The paper studies galactomannan-iron(III) complexes from Sesbania seed, not the drug ceratonia, and reports no pharmacokinetic parameters. |
+| popPK | Gonda_1994 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding ceratonia or pharmacokinetics. |
+| popPK | Guedes-da-Silva_2019 | irrelevant | 0 | 0 | The study focuses on the efficacy of VFV and benznidazole in treating Chagas disease in mice and does not report pharmacokinetic parameters for ceratonia. |
+| popPK | Guo_2022 | irrelevant | 0 | 0 | The study focuses on the encapsulation and stability of curcumin in nanoparticles, not the pharmacokinetics of ceratonia. |
+| popPK | Hassani_2020 | irrelevant | 0 | 0 | The paper studies gallic acid nanoparticles, not ceratonia, and contains no pharmacokinetic parameters for the target drug. |
+| popPK | Hu_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tangeretin, not ceratonia. |
+| popPK | Huang_2018 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro characterization of galactomannan-iron complexes, not the pharmacokinetics of ceratonia. |
 | popPK | Hudiyanti_2022 | irrelevant | 0 | 0 | The paper is an in-vitro study on curcumin encapsulation in gum Arabic and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
-| popPK | Hudiyanti_2024 | irrelevant | 0 | 0 | The paper studies curcumin encapsulation in liposomes, not the drug ceratonia, and reports no pharmacokinetic parameters. |
+| popPK | Hudiyanti_2024 | irrelevant | 0 | 0 | The paper is an in-vitro formulation study on curcumin encapsulation in liposomes and does not involve the drug ceratonia or report pharmacokinetic parameters. |
 | PD | Jamous_2018 | not_relevant | 3 | 3 | The paper reports a single IC50 value (0.8 mg/mL) for Ceratonia siliqua leaves in an in vitro enzyme inhibition assay, which is a static potency metric rather than a dynamic pharmacodynamic (exposure-response) model or curve with derivable parameters like Emax or slope. |
-| popPK | Jin_2022 | irrelevant | 0 | 0 | The paper studies the encapsulation of EGCG (epigallocatechin-3-gallate) in nanoparticles, not the drug ceratonia, and reports no pharmacokinetic parameters. |
-| popPK | Khalil_2024 | irrelevant | 0 | 0 | The study focuses on esculetin (not ceratonia) and reports formulation characteristics and in-vivo efficacy, not pharmacokinetic parameters. |
-| popPK | King_1985 | irrelevant | 0 | 0 | The paper is a biomechanical study on mucus clearance using locust bean gum simulants and does not involve the pharmacokinetics of the drug ceratonia. |
-| popPK | King_1987 | irrelevant | 0 | 0 | The paper is a biophysical study on mucus rheology and cough clearance using a model trachea, not a pharmacokinetic study of the drug ceratonia. |
-| popPK | King_1987_2 | irrelevant | 0 | 0 | The paper is a biophysical study on mucus rheology and cough clearance in a model trachea, not a pharmacokinetic study of the drug ceratonia. |
+| popPK | Jin_2022 | irrelevant | 0 | 0 | The paper studies the encapsulation of EGCG (epigallocatechin gallate) in nanoparticles, not the drug ceratonia, and contains no pharmacokinetic parameters. |
+| popPK | Khalil_2024 | irrelevant | 0 | 0 | The study focuses on esculetin (a different drug) and does not report pharmacokinetic parameters for ceratonia. |
+| popPK | King_1985 | irrelevant | 0 | 0 | The study is an in-vitro biomechanical model of mucus clearance using locust bean gum (ceratonia) as a mucus simulant, not a pharmacokinetic study of ceratonia as a drug. |
+| popPK | King_1987 | irrelevant | 0 | 0 | The paper is a biophysical study on mucus rheology and cough clearance using a model trachea, not a pharmacokinetic study of ceratonia. |
+| popPK | King_1987_2 | irrelevant | 0 | 0 | The paper is an in-vitro study on mucus rheology and cough clearance in a model trachea, not a pharmacokinetic study of ceratonia. |
 | popPK | Klein_1994 | irrelevant | 0 | 0 | The paper is a review of otitis media management and does not contain any pharmacokinetic data for ceratonia. |
-| popPK | Kukati_2018 | irrelevant | 0 | 0 | The study focuses on the formulation of cefpodoxime proxetil tablets, and while locust bean gum (Ceratonia) is used as an excipient, no pharmacokinetic parameters are reported for it. |
+| popPK | Kukati_2018 | irrelevant | 0 | 0 | The study focuses on the formulation of cefpodoxime proxetil tablets using locust bean gum (Ceratonia) as an excipient, not on the pharmacokinetics of Ceratonia itself. |
 | PGx | Kyriacou_2021 | not_relevant | 0 | 0 | The paper analyzes the metabolome and antioxidant potential of carob fruit during ripening, not the pharmacokinetics or pharmacodynamics of a drug in humans. |
 | PD | Laaraj_2024_2 | not_relevant | 2 | 2 | The paper reports in vitro IC50 values for antioxidant assays and qualitative antibacterial/anticancer activities, but lacks a pharmacokinetic (PK) component or a formal exposure-response (PD) model linking drug concentration in a biological system to a physiological effect. |
 | PD | Laaraj_2025 | not_relevant | 2 | 2 | The paper reports in vitro IC50 values for antioxidant and cytotoxic assays, which are single-point potency metrics rather than a pharmacodynamic (exposure-response) model or curve with parameters like Emax, EC50, or slope. |
 | PD | Lall_2015 | not_relevant | 0 | 0 | The provided text is only a title and does not contain any data, analysis, or numeric parameters regarding pharmacodynamics or exposure-response relationships. |
-| popPK | Lamsen_2020 | irrelevant | 0 | 0 | The study focuses on vitamin D3 encapsulated in gum arabic, not the drug ceratonia. |
-| popPK | Lee_2025 | irrelevant | 0 | 0 | The paper studies the mechanism of rifampin-mediated decapsulation of Salmonella Typhi and does not report pharmacokinetic parameters for ceratonia. |
-| popPK | Li_2023 | irrelevant | 0 | 0 | The study focuses on iron nanoparticles stabilized by gum arabic, not the pharmacokinetics of ceratonia. |
-| popPK | Li_2023_2 | irrelevant | 0 | 0 | The study focuses on luteolin encapsulation in nanoparticles and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
-| popPK | Liu_2022 | irrelevant | 0 | 0 | The study investigates curcumin (CUR), not ceratonia, which is the required subject drug. |
-| popPK | Liu_2024 | irrelevant | 0 | 0 | The paper is a review of Astragalus polysaccharide for diabetes treatment and does not report pharmacokinetic parameters for ceratonia. |
-| popPK | Lu_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of genistein, not ceratonia. |
-| popPK | Luanda_2024 | irrelevant | 0 | 0 | The study focuses on a locust bean gum-based hydrogel delivering 5-fluorouracil, not the pharmacokinetics of ceratonia. |
-| popPK | Maag_2022 | irrelevant | 0 | 0 | The paper investigates the food processing properties (bioavailability, solubility, thermal stability) of Arthrospira platensis (spirulina), not the pharmacokinetics of the drug ceratonia. |
-| popPK | Macit_2026 | irrelevant | 0 | 0 | The paper is an in-vitro characterization study of carob extracts focusing on phenolic content and biological activities, with no pharmacokinetic parameters reported. |
-| popPK | Mehraban_2021 | irrelevant | 0 | 0 | The study investigates the effect of Ceratonia siliqua extract on sperm parameters and DNA fragmentation, not pharmacokinetic disposition parameters. |
+| popPK | Lamsen_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vitamin D3, not ceratonia. |
+| popPK | Lee_2025 | irrelevant | 0 | 0 | The paper investigates the mechanism of rifampin-mediated decapsulation of Salmonella Typhi and does not report pharmacokinetic parameters for ceratonia. |
+| popPK | Li_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of iron nanoparticles (GA-FeONPs) and does not report any parameters for the drug ceratonia. |
+| popPK | Li_2023_2 | irrelevant | 0 | 0 | The study focuses on the fabrication and characterization of nanoparticles for luteolin encapsulation, not the pharmacokinetics of ceratonia. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of curcumin, not ceratonia. |
+| popPK | Liu_2024 | irrelevant | 0 | 0 | The paper is a review of Astragalus polysaccharide for diabetes treatment and does not contain pharmacokinetic data for ceratonia. |
+| popPK | Lu_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of genistein in mice, not ceratonia. |
+| popPK | Luanda_2024 | irrelevant | 0 | 0 | The study focuses on the drug release of 5-fluorouracil from a locust bean gum hydrogel, not the pharmacokinetics of ceratonia. |
+| popPK | Maag_2022 | irrelevant | 0 | 0 | The paper investigates the food processing properties (solubility, digestibility, thermal stability) of spirulina (Arthrospira platensis) and does not involve the drug ceratonia or any pharmacokinetic parameters. |
+| popPK | Macit_2026 | irrelevant | 0 | 0 | The study focuses on in-vitro characterization and biological activity of carob extracts, with no pharmacokinetic parameters reported. |
+| popPK | Mehraban_2021 | irrelevant | 0 | 0 | The study investigates the effect of Ceratonia siliqua extract on sperm parameters and DNA fragmentation in mice, not the pharmacokinetics of the drug ceratonia. |
 | PD | Mehraban_2021 | not_relevant | 2 | 0 | The study reports qualitative improvements in sperm parameters and DNA fragmentation at a single fixed dose, without providing numeric concentration-effect data, dose-response curves, or derivable PD parameters like Emax or EC50. |
 | PD | Meziani_2015 | not_relevant | 0 | 0 | The paper reports antibacterial activity (MICs) of plant extracts against bacteria, which is a microbiological assay, not a pharmacodynamic (exposure-response) relationship for a drug in a host system. |
-| popPK | Moumou_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacological effects of carob extract on lipid metabolism and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for ceratonia. |
+| popPK | Moumou_2024 | irrelevant | 0 | 0 | The study evaluates the pharmacological effects of carob extract on lipid metabolism and toxicity, but does not report any pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
 | popPK | Msanda_2021 | irrelevant | 0 | 0 | The paper is a floristic and biogeographical study of the Argan tree ecosystem in Morocco and contains no pharmacokinetic data for ceratonia. |
-| popPK | Nasir_2008 | irrelevant | 0 | 0 | The study investigates the physiological effects of gum arabic (Acacia senegal) on electrolyte balance in mice, not the pharmacokinetics of ceratonia. |
-| popPK | Nasir_2012 | irrelevant | 0 | 0 | The study investigates the renal effects of gum arabic (Acacia senegal) in mice, not the pharmacokinetics of ceratonia. |
-| popPK | Navarro_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of D-Pinitol, not ceratonia (which is only mentioned as the plant source of the syrup). |
-| popPK | Ohno_1995 | irrelevant | 0 | 0 | The paper studies bacterial clearance kinetics in mice and does not involve the drug ceratonia. |
+| popPK | Nasir_2008 | irrelevant | 0 | 0 | The study investigates the physiological effects of gum arabic (Acacia senegal) on water and electrolyte balance in mice, not the pharmacokinetics of ceratonia. |
+| popPK | Nasir_2012 | irrelevant | 0 | 0 | The study investigates the effects of gum arabic (Acacia senegal) on renal function in mice, not the pharmacokinetics of ceratonia. |
+| popPK | Navarro_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of D-Pinitol, not ceratonia (which is only mentioned as a source of the syrup). |
+| popPK | Ohno_1995 | irrelevant | 0 | 0 | The study investigates bacterial clearance kinetics in mice and does not involve the drug ceratonia. |
 | PD | Oku_2025 | not_relevant | 2 | 1 | The paper reports a single IC50 value (13.32 μg/mL) for a crude extract in an MTT assay, which is a single-point potency metric, not a pharmacodynamic exposure-response or dose-response curve with derivable parameters like Emax or slope. |
-| popPK | Paton_2019 | irrelevant | 0 | 0 | The paper discusses Streptococcus pneumoniae capsular polysaccharides and is unrelated to the pharmacokinetics of ceratonia. |
+| popPK | Paton_2019 | irrelevant | 0 | 0 | The paper is a review of Streptococcus pneumoniae capsule biology and has no relation to the pharmacokinetics of ceratonia. |
 | PD | Peng_2023 | not_relevant | 0 | 0 | The paper focuses on the isolation and identification of chemical compounds from carob pods and does not report any pharmacodynamic, exposure-response, or dose-response data. |
-| popPK | Qi_2021 | irrelevant | 0 | 0 | The study focuses on ibuprofen, not ceratonia, and does not report population pharmacokinetic parameters for the target drug. |
-| popPK | Sassi_2016 | irrelevant | 0 | 0 | The study is an in-vitro genotoxicity/antioxidant assessment of Ceratonia siliqua extracts, not a pharmacokinetic study, and no PK parameters are reported. |
+| popPK | Qi_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ibuprofen, not ceratonia. |
+| popPK | Sassi_2016 | irrelevant | 0 | 0 | no_text gate: only 153 chars of text extracted (&lt; 400) |
 | PD | Serio_2025 | not_relevant | 0 | 0 | The paper is a comprehensive analysis of the bioactive profile and health-promoting potential of carob leaves, focusing on chemical composition and in vitro/in vivo biological activities, but it does not report pharmacokinetic (PK) or pharmacodynamic (PD) modeling, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50) for a specific drug compound in the context of PK/PD. |
 | PGx | Shaker_2025 | not_relevant | 0 | 0 | The study investigates herb-drug interactions and nanoparticle formulation effects on donepezil, not pharmacogenomic effects of ceratonia. |
-| popPK | Shalby_2012 | irrelevant | 0 | 0 | The study investigates the anti-inflammatory effects of plant extracts (including carob/ceratonia) on cyclosporine-induced nephrotoxicity and does not report pharmacokinetic parameters for ceratonia. |
-| popPK | Shimizu_1989 | irrelevant | 0 | 0 | The provided evidence contains no text, data, or parameters, making it impossible to assess relevance or extractability. |
-| popPK | Shimizu_1994 | irrelevant | 0 | 0 | The provided evidence contains no text, data, or parameters, making it impossible to assess relevance or extractability. |
-| popPK | Silva_2021 | irrelevant | 0 | 0 | The paper is a review on polysaccharides and cholesterol homeostasis, and does not mention ceratonia or report any pharmacokinetic parameters for it. |
-| popPK | Tang_2024 | irrelevant | 0 | 0 | The paper studies the immunomodulatory effects of selenium-containing peptide nanoparticles, not the pharmacokinetics of ceratonia. |
-| popPK | Tayyab_2024 | irrelevant | 0 | 0 | The study focuses on febuxostat, not ceratonia, and does not report PK parameters for the target drug. |
-| popPK | Tolve_2021 | irrelevant | 0 | 0 | The paper is a food science study on the microencapsulation of tannins for animal feed, not a pharmacokinetic study of ceratonia. |
-| popPK | Tomoda_1993 | irrelevant | 0 | 0 | The provided evidence contains no text, data, or parameters, making it impossible to assess relevance or extractability. |
-| popPK | Tomoda_1994 | irrelevant | 0 | 0 | The provided evidence contains no text, data, or parameters, making it impossible to assess relevance or extractability. |
+| popPK | Shalby_2012 | irrelevant | 0 | 0 | The study investigates the anti-inflammatory effects of carob (ceratonia) on cyclosporine-induced renal dysfunction in rats, reporting biochemical markers rather than pharmacokinetic parameters for ceratonia. |
+| popPK | Shimizu_1989 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding ceratonia or pharmacokinetics. |
+| popPK | Shimizu_1994 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding ceratonia or pharmacokinetics. |
+| popPK | Silva_2021 | irrelevant | 0 | 0 | The paper is a review on polysaccharides and cholesterol homeostasis, containing no pharmacokinetic data for ceratonia. |
+| popPK | Tang_2024 | irrelevant | 0 | 0 | The paper studies the immunomodulatory effects of selenium-containing peptide nanoparticles in mice and does not involve the drug ceratonia or its pharmacokinetics. |
+| popPK | Tayyab_2024 | irrelevant | 0 | 0 | The study focuses on febuxostat, not ceratonia, and reports no PK parameters for the target drug. |
+| popPK | Tolve_2021 | irrelevant | 0 | 0 | The paper is an in-vitro study on the microencapsulation and release kinetics of condensed tannins (Quebracho extract) for animal feed, not a pharmacokinetic study of the drug ceratonia. |
+| popPK | Tomoda_1993 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding ceratonia or pharmacokinetics. |
+| popPK | Tomoda_1994 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding ceratonia or pharmacokinetics. |
 | PD | Venianakis_2024 | not_relevant | 3 | 3 | The paper reports single-point biological activity metrics (MIC and IC50) for a crude extract but does not provide a dose-response curve, concentration-effect data, or PK/PD modeling parameters. |
-| popPK | Wang_2020 | irrelevant | 0 | 0 | The paper is a food science study on protein-polysaccharide complexes (beta-lactoglobulin and gum arabic) and does not involve the drug ceratonia or pharmacokinetic parameters. |
-| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper studies resveratrol delivery using microspheres and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
+| popPK | Wang_2020 | irrelevant | 0 | 0 | The paper describes the formation and characterization of protein-polysaccharide complexes (β-lactoglobulin and gum arabic) and contains no pharmacokinetic data for ceratonia. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper studies the in vitro delivery of resveratrol, not the pharmacokinetics of ceratonia. |
 | popPK | Wang_2024 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antioxidant activity and structural characterization of anthocyanin-polysaccharide complexes from Aronia melanocarpa, containing no pharmacokinetic data for ceratonia. |
-| popPK | Wu_2024 | irrelevant | 0 | 0 | The paper studies a polysaccharide-selenium nanoparticle complex from Lactarius deliciosus in vitro, not the drug ceratonia, and reports no pharmacokinetic parameters. |
+| popPK | Wu_2024 | irrelevant | 0 | 0 | The paper studies the anti-tumor effects of a polysaccharide-selenium nanoparticle complex in vitro, not the pharmacokinetics of ceratonia. |
 | popPK | Xu_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paclitaxel (PTX), not ceratonia. |
-| popPK | Xu_2023 | irrelevant | 0 | 0 | The paper studies selenium nanoparticles for ulcerative colitis and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
+| popPK | Xu_2023 | irrelevant | 0 | 0 | The paper studies selenium nanoparticles for ulcerative colitis and does not involve the drug ceratonia or its pharmacokinetics. |
 | popPK | Yoshizawa_1993 | irrelevant | 0 | 0 | The paper studies immunomodulating polysaccharides from marine algae, not the pharmacokinetics of ceratonia. |
-| popPK | Yu_2022 | irrelevant | 0 | 0 | The study focuses on lutein delivery using nanoparticles and does not involve the drug ceratonia or report any pharmacokinetic parameters. |
+| popPK | Yu_2022 | irrelevant | 0 | 0 | The study focuses on the formulation of nanoparticles for lutein delivery and does not report pharmacokinetic parameters for ceratonia. |
 | popPK | Zhang_2024 | irrelevant | 0 | 0 | The study focuses on the emulsification properties of buckwheat flower polysaccharides and curcumin bioaccessibility, not the pharmacokinetics of ceratonia. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study focuses on Urolithin A, not ceratonia, and does not report PK parameters for the target drug. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of urolithin A, not ceratonia. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

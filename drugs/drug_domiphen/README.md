@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Domiphen bromide is a quaternary ammonium compound that is predominantly employed as a topically administered antiseptic agent.
+Domiphen is an antiseptic used for local treatment of infections in the mouth, such as in stomatological preparations. It is an approved drug, though no European Union authorisation is recorded in the available facts.
 
-**Indication.** Anti-infective (topical), it is used for the treatment of Acute Infectious Dental Diseases and other conditions.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27098012](https://www.wikidata.org/wiki/Q27098012) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

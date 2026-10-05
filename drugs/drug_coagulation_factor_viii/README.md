@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Human recombinant antihemophilic factor (AHF) or Factor VIII, 2332 residues, glycosylated, produced by CHO cells
+Coagulation factor VIII (antihemophilic factor) is a clotting protein used to treat bleeding disorders such as hemophilia A, von Willebrand's disease, and factor VII deficiency. It is an approved medicine, given as replacement therapy to prevent or control bleeding in patients lacking this factor.
 
-**Indication.** The human recombinant antihemophilic factor is indicated for use in adults and children with hemophilia A for the control and prevention of bleeding episodes, perioperative management, and routine prophylaxis to prevent or reduce the frequency of bleeding episodes.[L41025, L36130]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801759](https://www.wikidata.org/wiki/Q20801759) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

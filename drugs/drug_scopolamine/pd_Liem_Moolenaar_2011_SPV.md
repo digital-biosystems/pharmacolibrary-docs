@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/&quot;},{&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 PD saccadic peak velocity&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/&quot;},{&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 PD Saccadic peak velocity&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ebert_2001_EEG_alpha_power&quot;,&quot;label&quot;:&quot;Ebert_2001 \u00b7 EEG alpha power&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Ebert_2001_EEG_alpha_power.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# saccadic peak velocity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Saccadic peak velocity — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,26 +14,64 @@
 
 ## What this record describes
 
-**As extracted:** Scopolamine (concentrations from this paper's PK model) drives saccadic peak velocity (in deg/s): delayed effect through an effect compartment.
+**As extracted:** Scopolamine (concentrations from this paper's PK model) drives Saccadic peak velocity (in ° s-1): delayed effect through an effect compartment.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Scopolamine plasma concentrations (pg/ml) were linked to saccadic peak velocity (deg/s) via an effect-compartment model with an inhibitory effect; the excerpts do not state the mechanism beyond this or any potency/rate parameter values (Imax, IC50, ke0, gamma).
+> Scopolamine plasma concentrations (pg ml-1) inhibit saccadic peak velocity (° s-1) via an effect compartment model with an equilibration half-life of 65.1 min. The relationship is described by an additive linear model with an intercept of 485 ° s-1 and a slope of -0.0737 ° s-1 (pg ml-1), rather than a standard Emax mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Liem-Moolenaar_2011`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Intercept | `Q324` · not captured | 485 | ° s-1 | not captured | llm (not captured) | Liem-Moolenaar_2011:pdv3 |
+| PD (effect) | Slope | `Q335` · not captured | -0.0737 | ° s-1 (pg ml-1) | not captured | llm (not captured) | Liem-Moolenaar_2011:pdv3 |
+| PD (effect) | Equilibration t1/2 | `Q326` · not captured | 65.1 | min | not captured | llm (not captured) | Liem-Moolenaar_2011:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+
+## Exposure-response model
+
+`Scopolamine_LiemMoolenaar2011_PD_spv` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 485 ° s-1 | — |
+| slope | -0.0737 ° s-1 (pg ml-1) | — |
+
+Closed-form check points (response, SI): `at_0` = 485, `per_exposure_unit` = -0.0737
+
+Deviations:
+
+- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -42,14 +80,14 @@ _No resolved parameters._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv/Scopolamine_LiemMoolenaar2011_PD_spv_modelica.zip" download>Scopolamine_LiemMoolenaar2011_PD_spv_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv/Scopolamine_LiemMoolenaar2011_PD_spv_matlab.zip" download>Scopolamine_LiemMoolenaar2011_PD_spv_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv/Scopolamine_LiemMoolenaar2011_PD_spv_sbml.zip" download>Scopolamine_LiemMoolenaar2011_PD_spv_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_spv/Scopolamine_LiemMoolenaar2011_PD_spv_cellml.zip" download>Scopolamine_LiemMoolenaar2011_PD_spv_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

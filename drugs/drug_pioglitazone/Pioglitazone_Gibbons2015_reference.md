@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The record was rejected because the carboxylic acid metabolite of enzalutamide is unreachable from the dose — it shares a single formation clearance with N-desmethyl enzalutamide, leaving no computable metabolic path — and the reported units (μg/mL, μg·h/mL) could not be converted to SI.**
+
+The model claims pioglitazone as the drug while the measured compound and all parameters (AUC∞ 30.0 ng·h/mL, Cmax 9.45 ng/mL, Ctrough 12.0 μg/mL, AUCτ 322 μg·h/mL, CL/F 0.52 L/h) belong to enzalutamide, and the second reader instead read the parent as 'enalutamide' with pioglitazone metabolite links. Both enzalutamide metabolites are formed in the central compartment with zero compartments and share the same formation clearance, so the carboxylic acid metabolite is unreachable from the dose. The units μg/mL and μg·h/mL for Ctrough and AUCτ could not be converted to SI, so those parameters reached the record without SI values. Extracted — pioglitazone: AUC∞ 30 ng·h/mL, Cmax 9.45 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has enzalutamide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmacokinetics (2015)

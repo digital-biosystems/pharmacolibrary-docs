@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Triamterene (2,4,7-triamino-6-phenylpteridine) is a potassium-sparing diuretic that is used in the management of hypertension. It works by promoting the excretion of sodium ions and water while decreasing the potassium excretion in the distal part of the nephron in the kidneys by working on the lumenal side.[A177985] Since it acts on the distal nephron where only a small fraction of sodium ion reabsorption occurs, triamterene is reported to have limited diuretic efficacy.[T28] Due to its effects on increased serum potassium levels, triamterene is associated with a risk of producing hyperkalemia. Triamterene is a weak antagonist of folic acid, and a photosensitizing drug.[L6163] 
+Triamterene is a potassium-sparing diuretic used to treat high blood pressure, fluid buildup, and low potassium levels. It is an approved medicine, though it carries a boxed warning.
 
-Triamterene was approved by the Food and Drug Administration in the U.S. in 1964.[L6163] Currently, triamterene is used in the treatment of edema associated with various conditions as monotherapy and is approved for use with other diuretics to enhance diuretic and potassium-sparing effects.[L6166] It is also found in a combination product with hydrochlorothiazide that is used for the management of hypertension or treatment of edema in patients who develop hypokalemia on hydrochlorothiazide alone.
-
-**Indication.** Triamterene is indicated for the treatment of edema associated with congestive heart failure, cirrhosis of the liver, and the nephrotic syndrome; also in steroid-induced edema, idiopathic edema, and edema due to secondary hyperaldosteronism.[L6166]
-
-Triamterene in combination with hydrochlorothiazide is indicated for the managment of hypertension or treatment of edema in patients who develop hypokalemia following hydrochlorothiazide monotherapy, and in patients who require thiazide diuretic and in whom the development of hypokalemia cannot be risked.[L6169] Triamterene allows the maintenance of potassium balance when given in combination with loop diuretics and thiazides.[T28]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q221520](https://www.wikidata.org/wiki/Q221520) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -53,9 +49,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly absorbed in the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted by the kidney by filtration and tubular secretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SCNN1A (inhibitor), SCNN1B (inhibitor), SCNN1D (inhibitor), SCNN1G (inhibitor).</sub>
 

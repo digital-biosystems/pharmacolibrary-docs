@@ -7,10 +7,6 @@
 - **DrugBank:** [DB19099](https://go.drugbank.com/drugs/DB19099) · **PubChem:** not captured
 - **groups:** investigational
 
-## About
-
-**Description.** Mazdutide is under investigation in clinical trial NCT06143956 (A Chronic Weight Management Master Protocol Study (LY900038) of Multiple Intervention-specific-appendices (Isas) in Adult Participants With Obesity or Overweight).
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

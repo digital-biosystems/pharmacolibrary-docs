@@ -11,29 +11,9 @@
 
 ## About
 
-**Description.** Ibuprofen is a non-steroidal anti-inflammatory drug (NSAID) derived from propionic acid and it is considered the first of the propionics.[A39074] The formula of ibuprofen is 2-(4-isobutylphenyl) propionic acid and its initial development was in 1960 while researching for a safer alternative for aspirin.[A39075] Ibuprofen was finally patented in 1961 and this drug was first launched against rheumatoid arthritis in the UK in 1969 and USA in 1974. It was the first available over-the-counter NSAID.[A39076]
+Ibuprofen is a non-steroidal anti-inflammatory medicine used to relieve pain, inflammation and fever, and for conditions such as osteoarthritis, rheumatoid arthritis, migraine and gout. It is widely used and available over the counter in the UK, and is also authorised in the European Union for pain and for treating a heart vessel problem in premature babies.
 
-On the available products, ibuprofen is administered as a racemic mixture. Once administered, the R-enantiomer undergoes extensive interconversion to the S-enantiomer _in vivo_ by the activity of the alpha-methylacyl-CoA racemase. In particular, it is generally proposed that the S-enantiomer is capable of eliciting stronger pharmacological activity than the R-enantiomer.[A39194]
-
-**Indication.** Ibuprofen is the most commonly used and prescribed NSAID. It is a very common over-the-counter medication widely used as an analgesic, anti-inflammatory and antipyretic.[A39096]
-
-The use of ibuprofen and its enantiomer [DB09213] in a racemic mix is common for the management of mild to moderate pain related to dysmenorrhea, headache, migraine, postoperative dental pain, spondylitis, osteoarthritis, rheumatoid arthritis, and soft tissue disorder.[A39097]
-
-Due to its activity against prostaglandin and thromboxane synthesis, ibuprofen has been attributed to alteration of platelet function and prolongation of gestation and labour.[A39092]
-
-As ibuprofen is a widely used medication, the main therapeutic indications are:
-
-* Patent Ductus Arteriosus - it is a neonatal condition wherein the ductus arteriosus (blood vessel that connects the main pulmonary artery to the proximal descending aorta) fails to close after birth causing severe risk of heart failure. The prostaglandin inhibition of ibuprofen has been studied for the treatment of this condition as it is known that prostaglandin E2 is responsible for keeping the ductus arteriosus open.[A39100]
-
-* Rheumatoid- and osteo-arthritis - ibuprofen is very commonly used in the symptomatic treatment of inflammatory, musculoskeletal and rheumatic disorders.[A39176]
-
-* Cystic fibrosis - the use of high dosages of ibuprofen has been proven to decrease inflammation and decreasing polymorphonuclear cell influx in the lungs.[A39177]
-
-* Orthostatic hypotension - ibuprofen can induce sodium retention and antagonize the effect of diuretics which has been reported to be beneficial for patients with severe orthostatic hypotension.[A1651]
-
-* Dental pain - ibuprofen is used to manage acute and chronic orofacial pain.[A10901]
-
-* Pain - ibuprofen is widely used to reduce minor aches and pains as well as to reduce fever and manage dysmenorrhea. It is very commonly used for the relief of acute indications such as fever and tensi
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q186969](https://www.wikidata.org/wiki/Q186969) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -135,7 +115,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` metabolism, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` metabolism/substrate, `CYP2C9` safety_allele/substrate, `CYP2D6` metabolism, `CYP3A4` substrate, `CYP3A5` metabolism, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` metabolism, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…The biliary excretion of unchanged drug and active phase II metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
 | excretion | liver | `ABCC4` inhibitor | DrugBank actor |
 

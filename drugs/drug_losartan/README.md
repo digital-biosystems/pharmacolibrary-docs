@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Losartan is an angiotensin II receptor blocker (ARB) used to treat hypertension.[L7423] Angiotensin-converting enzyme (ACE) inhibitors are used for a similar indication but are associated with a cough.[L7423] When patients with ACE inhibitor associated coughs are switched to ARBs like losartan, they have an incidence of cough similar to placebo or [hydrochlorothiazide].[L7423] Losartan is available as losartan potassium oral tablets as well as a combination tablet of losartan potassium and hydrochlorothiazide.[L7423,L7426] Patients taking losartan should have their renal function and potassium levels monitored.[L7423] Losartan was granted FDA approval on 14 April 1995.[L7423]
+It is widely used worldwide and is included on the WHO list of essential medicines, also available in fixed combinations with diuretics or calcium channel blockers.
 
-**Indication.** Losartan is indicated to treat hypertension in patients older than 6 years, reduce the risk of stroke in patients with hypertension and left ventricular hypertrophy (though this benefit may not extend to patients with African heritage), and to treat diabetic nephropathy with elevated serum creatinine and proteinuria in patients with type 2 diabetes and hypertension.[L7423] Losartan with hydrochlorothiazide is indicated to treat hypertension and to reduce the risk of stroke in patients with hypertension and left ventricular hypertrophy (though this benefit may not extend to patients with African heritage).[L7426,L45663]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410074](https://www.wikidata.org/wiki/Q410074) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` safety_allele/substrate, `CYP3A4` inhibitor/substrate, `POR` metabolism, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…60% in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 

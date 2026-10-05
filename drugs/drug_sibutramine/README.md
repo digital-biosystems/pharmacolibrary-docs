@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Sibutramine (trade name Meridia in the USA, Reductil in Europe and other countries), usually as sibutramide hydrochloride monohydrate, is an orally administered agent for the treatment of obesity. It is a centrally acting stimulant chemically related to amphetamines thus it is classified as a Schedule IV controlled substance in the United States. In October 2010, Sibutramine was withdrawn from Canadian and U.S. markets due to concerns that the drug increases the risk of heart attack and stroke in patients with a history of heart disease.
+Sibutramine is a centrally acting antiobesity drug that was used to help reduce obesity. It has been withdrawn and is now considered a banned substance, so it is no longer in medical use.
 
-**Indication.** For the treatment of obesity.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424151](https://www.wikidata.org/wiki/Q424151) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 10:40 | 3:47 | 0/0/0 | 2/0/0 | 0/0/0 | 9,463/2,728 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/2 | 6/0 | 0 |
+| 2026-10-04 21:13 | 2:17 | 0/0/0 | 1/0/0 | 0/0/0 | 71,930/3,639 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,12 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Han_2015_BW](drugs/drug_sibutramine/pd_Han_2015_BW.md) | body weight ← M1 and M2 (sibutramine metabolites) · direct sigmoid Emax (Hill) effect | — | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/DDDT.S85435](https://doi.org/10.2147/DDDT.S85435) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_APD50](drugs/drug_sibutramine/pd_Yun_2015_APD50.md) | Action potential duration 50% ← sibutramine · direct Emax (saturable) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_APD90](drugs/drug_sibutramine/pd_Yun_2015_APD90.md) | Action potential duration 90% ← sibutramine · direct Emax (saturable) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_BP](drugs/drug_sibutramine/pd_Yun_2015_BP.md) | Mean blood pressure ← sibutramine · direct Emax (saturable) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_HR](drugs/drug_sibutramine/pd_Yun_2015_HR.md) | Heart rate ← sibutramine · direct Emax (saturable) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_hERG](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | hERG current ← sibutramine · direct Emax (saturable) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_hERG](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | hERG channel current ← sibutramine · direct sigmoid Emax (Hill) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
 
 ## ADME sites
 
@@ -41,12 +36,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…at least 77% of a single oral dose of sibutramine is absorbed…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in urine and feces…”</sub> | prose |
-| excretion | kidney | <sub>“…the majority of the dose (77%) excreted in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…Sibutramine is metabolized in the liver principally by the cytochrome P450 (3A4) isoenzyme…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -86,30 +81,30 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Shinde_2014.pdf` | Shinde DD et al., Enantioselective N-demethylation and hy…, Journal of toxicology and e… (2014) | pgx | 7 | [10.1080/15287394.2014.951758](https://doi.org/10.1080/15287394.2014.951758) | [25343291](https://www.ncbi.nlm.nih.gov/pubmed/25343291) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Bae_2008.pdf` | Bae SK et al., Cytochrome P450 2B6 catalyzes the forma…, Drug metabolism and disposi… (2008) | pgx | 5 | [10.1124/dmd.108.020727](https://doi.org/10.1124/dmd.108.020727) | [18474675](https://www.ncbi.nlm.nih.gov/pubmed/18474675) | metadata signals extractable PGX data (CYP2B6) |
 
-<sub>queue written 2026-09-26T10:38:48.953725+00:00</sub>
+<sub>queue written 2026-10-04T21:11:48.787021+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Bae_2008 | not_relevant | 2 | 0 | The paper identifies CYP2B6 as the enzyme responsible for sibutramine metabolism in vitro but does not report any pharmacogenomic data (genotype-phenotype associations) or in vivo PK/PD parameter changes. |
-| PGx | Bae_2011 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (clopidogrel inhibiting CYP enzymes) rather than a pharmacogenomic effect of a specific gene variant on sibutramine PK/PD. |
+| PGx | Bae_2008 | not_relevant | 2 | 0 | The paper identifies CYP2B6 as the enzyme responsible for sibutramine metabolism in vitro but does not report any pharmacogenomic data (genotype-phenotype associations) or changes in PK/PD parameters based on genetic variants. |
+| PGx | Bae_2011 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (clopidogrel inhibiting CYP enzymes) rather than a pharmacogenomic effect of a specific gene variant on sibutramine PK. |
 | popPK | Bae_2013 | irrelevant | 0 | 0 | The paper describes in-vitro mechanistic studies of CYP2B6 inhibition and does not report quantitative pharmacokinetic disposition parameters for sibutramine. |
 | PD | Bae_2013 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (IC50/Ki) for CYP2B6, which is a pharmacokinetic/metabolic parameter, not a pharmacodynamic exposure-response or dose-response relationship for a clinical effect. |
 | PGx | Bae_2013 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibition of CYP2B6 by sibutramine, not the effect of a genetic variant on sibutramine's PK or PD. |
 | PGx | Bailey_2004 | not_relevant | 0 | 0 | The paper discusses drug-food interactions (grapefruit juice) and does not report any pharmacogenomic effects (gene variants) on sibutramine PK/PD. |
 | popPK | Balcioglu_2000 | irrelevant | 0 | 0 | The study is a neuropharmacological investigation of brain dopamine and serotonin levels using microdialysis and in-vitro uptake assays, reporting no systemic pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Berkowitz_2006 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial reporting weight loss and metabolic outcomes, not a pharmacokinetic study with disposition parameters. |
+| popPK | Berkowitz_2006 | irrelevant | 0 | 0 | The study is a clinical trial assessing weight loss efficacy and safety, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Blumenthal_2014 | irrelevant | 0 | 0 | The study is an electronic health records analysis of weight gain associated with antidepressants, where sibutramine is used only as a comparator for assay sensitivity, and no pharmacokinetic parameters are reported. |
 | PGx | Chetty_2021 | not_relevant | 0 | 0 | The paper discusses clopidogrel pharmacogenomics and mentions sibutramine only as a CYP2B6 substrate affected by clopidogrel co-administration, not as the primary drug with a reported genetic effect. |
-| popPK | Franco_2009 | irrelevant | 2 | 0 | The study reports only bioequivalence metrics (AUC, Cmax, confidence intervals) via non-compartmental analysis and does not provide quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Franco_2009 | irrelevant | 2 | 0 | The study reports only bioequivalence ratios (CIs) and non-compartmental AUC/Cmax, lacking specific quantitative disposition parameters like clearance, volume, or half-life. |
 | PGx | Gong_2018 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions (CYP inhibition by sauchinone) and does not report any pharmacogenomic effects (gene variants) on sibutramine PK/PD. |
 | popPK | Gray_1998 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study investigating the antinociceptive mechanism of antidepressants in mice and does not report any pharmacokinetic parameters for sibutramine. |
 | popPK | Grilo_2015 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of sibutramine for binge-eating disorder and does not report any pharmacokinetic parameters. |
 | PGx | Guzman_2014 | not_relevant | 0 | 0 | The text is a general introduction to a review article and does not report specific pharmacogenomic effects on PK/PD parameters for sibutramine. |
-| popPK | Han_2015 | relevant | 9 | 2 | The paper describes a population PK model for sibutramine metabolites, but the specific numeric parameter estimates are in Table 2, which is not included in the provided evidence. |
+| popPK | Han_2015 | relevant | 9 | 2 | The paper describes a population PK model for sibutramine metabolites (M1 and M2) in humans, but the specific numeric parameter estimates are located in Table 2, which is not included in the provided evidence. |
 | popPK | Hu_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channels, not a pharmacokinetic study, and sibutramine is only a comparator agent. |
-| popPK | Iwan_2026 | irrelevant | 0 | 0 | The paper is a machine learning study on drug-induced cardiotoxicity prediction using pharmacovigilance data, and sibutramine is only mentioned as a historical example of a withdrawn drug, with no pharmacokinetic parameters reported. |
+| popPK | Iwan_2026 | irrelevant | 0 | 0 | The paper focuses on machine learning models for cardiotoxicity prediction using FAERS data and does not report any pharmacokinetic parameters for sibutramine. |
 | PD | Iwan_2026 | not_relevant | 0 | 0 | The paper is a machine learning study on drug-induced cardiotoxicity prediction using pharmacovigilance data and does not report any pharmacokinetic or pharmacodynamic parameters, exposure-response relationships, or dose-effect curves for sibutramine. |
 | popPK | Kaptein_2012 | irrelevant | 0 | 0 | The paper analyzes weight loss efficacy using an exponential model, not pharmacokinetic disposition parameters for sibutramine. |
 | PD | Kaptein_2012 | not_relevant | 2 | 1 | The paper fits a time-course exponential model to mean weight data to estimate maximum weight loss and duration, but does not report a concentration- or dose-response relationship with numeric PD parameters (e.g., EC50, Emax vs. dose/concentration) for sibutramine. |
@@ -123,33 +118,33 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Luque_1999 | not_relevant | 0 | 0 | The paper is a general review of sibutramine's pharmacology and efficacy, with no mention of gene variants or pharmacogenomic effects on PK/PD parameters. |
 | popPK | Metzger_2010 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on body temperature in mice where sibutramine is used only as a comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Metzger_2010 | not_relevant | 1 | 0 | The paper describes a qualitative pharmacodynamic assay (body temperature) for sibutramine but does not provide numeric concentration-effect data, dose-response curves, or PD parameters (Emax, EC50) for sibutramine in the provided text. |
-| popPK | Mika_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of novel compounds KSK-60 and KSK-74, not sibutramine, which is only mentioned in the introduction as a withdrawn anti-obesity drug. |
+| popPK | Mika_2022 | irrelevant | 0 | 0 | The study investigates the anti-obesity effects of novel histamine H3 receptor ligands (KSK-60 and KSK-74) in rats and does not involve sibutramine or its pharmacokinetics. |
 | PD | Mika_2022 | not_relevant | 0 | 0 | The paper studies new compounds (KSK-60, KSK-74) and does not report any pharmacodynamic or exposure-response data for sibutramine. |
 | PGx | Mo_2009 | not_relevant | 0 | 0 | The paper is a general review of CYP2B6 and mentions sibutramine only as a substrate, without reporting specific pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Morikawa_2017 | not_relevant | 2 | 5 | The paper investigates the mechanism of cytotoxicity and the role of CYP3A4 in metabolizing sibutramine in cell lines, but it does not report a pharmacogenomic effect (genotype-based) on a PK or PD parameter in humans. |
+| PGx | Morikawa_2017 | not_relevant | 0 | 0 | The paper investigates the cellular mechanism of sibutramine toxicity and the role of CYP3A4 in cytotoxicity, but does not report pharmacogenomic effects on PK or PD parameters in humans. |
 | popPK | Persky_2004 | irrelevant | 2 | 0 | The study focuses on acute pharmacodynamic responses (metabolic rate, heart rate, etc.) rather than quantitative pharmacokinetic disposition parameters like clearance or volume. |
 | PD | Persky_2004 | not_relevant | 3 | 2 | The study reports qualitative changes in pharmacodynamic markers (e.g., increased resting metabolic rate) for a single dose of sibutramine but does not provide numeric PD parameters (Emax, EC50) or a concentration-effect curve. |
 | PGx | Rege_2008 | not_relevant | 0 | 0 | The paper is a review of antipsychotic-induced weight gain and does not report pharmacogenomic effects on the PK or PD of sibutramine. |
-| popPK | Richardson_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipolysis in adipocytes and does not report any pharmacokinetic parameters for sibutramine. |
+| popPK | Richardson_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipolysis in adipocytes, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Sardela_2018 | not_relevant | 0 | 0 | The paper describes a zebrafish water tank model for drug metabolism and does not report human pharmacogenomic effects on sibutramine PK/PD parameters. |
-| popPK | Shao_2021 | irrelevant | 0 | 0 | The paper is a bibliometric review of electrochemical sensors for tea analysis and does not contain any pharmacokinetic data or parameters for sibutramine. |
+| popPK | Shao_2021 | irrelevant | 0 | 0 | The paper is a bibliometric review of electrochemical sensors for tea components and does not contain any pharmacokinetic data for sibutramine. |
 | PD | Shao_2021 | not_relevant | 0 | 0 | The paper is a bibliometric review of electrochemical sensors for tea analysis and contains no pharmacodynamic or exposure-response data for sibutramine. |
-| PGx | Shinde_2014 | not_relevant | 0 | 0 | The study examines enantioselective metabolism in vitro using recombinant enzymes and microsomes, but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters in humans. |
-| popPK | Somogyi_2012 | irrelevant | 0 | 0 | The paper is an editorial review that mentions sibutramine only as an ingredient in illicit slimming products, without reporting any pharmacokinetic parameters for it. |
+| PGx | Shinde_2014 | not_relevant | 0 | 0 | The study examines enantioselective metabolism in vitro using recombinant CYPs and microsomes, but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters in humans. |
+| popPK | Somogyi_2012 | irrelevant | 0 | 0 | no_text gate: only 18 chars of text extracted (&lt; 400) |
 | PD | Somogyi_2012 | not_relevant | 0 | 0 | The text is an editorial review that mentions sibutramine only in the context of illicit drug poisoning cases and does not report any pharmacodynamic or exposure-response data. |
-| popPK | Spahn_2025 | irrelevant | 0 | 0 | The paper is a white paper on pharmacovigilance and pharmacogenomics that mentions sibutramine only as an example of a withdrawn drug, containing no pharmacokinetic data. |
+| popPK | Spahn_2025 | irrelevant | 0 | 0 | The paper is a white paper on pharmacovigilance and pharmacogenomics and does not contain any pharmacokinetic data or parameters for sibutramine. |
 | PD | Spahn_2025 | not_relevant | 0 | 0 | The paper is a white paper on pharmacovigilance and pharmacogenomics; it mentions sibutramine only as an example of a drug withdrawal due to safety concerns, without reporting any pharmacodynamic or exposure-response data. |
-| popPK | Subhan_2000 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment (conditioned place preference) and does not report any pharmacokinetic parameters for sibutramine. |
-| popPK | Sutherland_2023 | irrelevant | 0 | 0 | The paper is a preclinical safety pharmacology study focusing on in-vitro assay data and adverse drug reaction associations, not a pharmacokinetic study reporting disposition parameters for sibutramine. |
+| popPK | Subhan_2000 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment (conditioned place preference) in rats and does not report any pharmacokinetic parameters for sibutramine. |
+| popPK | Sutherland_2023 | irrelevant | 0 | 0 | The paper is an in vitro pharmacology resource describing off-target activities and adverse drug reactions, not a pharmacokinetic study reporting disposition parameters for sibutramine. |
 | PD | Sutherland_2023 | not_relevant | 0 | 0 | The paper reports in vitro secondary pharmacology (AC50) and safety margins (ratio of AC50 to Cmax) for a database of drugs, but does not report a pharmacodynamic model (e.g., Emax, EC50) or exposure-response relationship for sibutramine specifically. |
 | PGx | Vrzal_2013 | not_relevant | 0 | 0 | The paper investigates the effect of sibutramine on CYP expression, not the effect of a gene variant on sibutramine's PK/PD. |
-| PGx | Wang_2015 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions involving clopidogrel; while it mentions sibutramine as a drug affected by clopidogrel, it does not report pharmacogenomic effects (gene variants) on sibutramine's PK/PD parameters. |
+| PGx | Wang_2015 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions involving clopidogrel; while it mentions sibutramine as a victim drug, it does not report pharmacogenomic effects (gene variants) on sibutramine's PK/PD parameters. |
 | popPK | Wang_2025 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic efficacy (weight loss) rather than pharmacokinetic disposition parameters for sibutramine. |
 | PD | Wang_2025 | not_relevant | 3 | 2 | The paper is a meta-analysis of clinical trial outcomes (weight loss in kg) rather than a pharmacokinetic/pharmacodynamic study; it reports efficacy endpoints and time-to-plateau but does not provide exposure-response data, concentration-effect curves, or specific PD parameters like Emax or EC50 for sibutramine. |
 | popPK | Wortley_1999 | irrelevant | 0 | 0 | The study is an in vivo microdialysis pharmacodynamic study measuring extracellular noradrenaline concentrations, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Yun_2015 | irrelevant | 0 | 0 | The study focuses on cardiovascular safety pharmacology (hERG, APD, telemetry) and does not report pharmacokinetic disposition parameters such as clearance, volume, or half-life. |
 | popPK | de_2014 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of sympathetic neurotransmission in rat vas deferens and does not report any pharmacokinetic parameters for sibutramine. |
-| popPK | unknown_2015 | irrelevant | 0 | 0 | The paper is a clinical trial regarding binge-eating disorder treatment outcomes and does not report any pharmacokinetic parameters for sibutramine. |
+| popPK | unknown_2015 | irrelevant | 0 | 0 | The paper is a clinical trial regarding binge-eating disorder treatment outcomes and does not report pharmacokinetic parameters for sibutramine. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

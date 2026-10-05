@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The ramipril record was rejected because the metabolite ramiprilat is unlinked from the dose, and the reported clearance of 209 L h-1 could not be converted to SI units.**
+**The ramiprilat metabolite is unlinked from the dose, so the model was rejected; the ramiprilat clearance parameter also carries a unit (1 %) that could not be converted to SI.**
 
-The model forms ramiprilat from ramipril by hydrolysis in the central compartment, but the metabolite has no path from the dose, so the structure was judged to contain an unlinked metabolite. The oral clearance CL/F of ramipril is reported as 209 L h -1, a unit that could not be converted to SI, so no SI value was available. A second reader also disputed the link relation (metabolism rather than hydrolysis), the parameterization (mechanistic rather than apparent), and both parameter values, reading them as null. Extracted — ramipril: CL/F 209 L h -1, CL 1 %.
+The record describes a general linear model for ramipril in chronic heart failure patients with the metabolite ramiprilat formed from ramipril by hydrolysis, but ramiprilat has 0 compartments and no path from the dose, making it an unlinked metabolite. The reported unit '1 %' for the ramiprilat clearance decrease could not be expressed in SI units, so that parameter was recorded without a usable value. A second reader also disagreed on the link relation (metabolism rather than hydrolysis), the parameterization (mechanistic rather than apparent), and read null instead of 209 L h-1 for CL/F and null instead of 1 % for the ramiprilat clearance decrease. Extracted — ramipril: CL/F 209 L h -1, CL 1 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has ramipril → ramiprilat (hydrolysis), the second reading ramipril → ramiprilat (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

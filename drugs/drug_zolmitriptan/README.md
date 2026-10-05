@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Zolmitriptan is a member of the triptan class of 5-hydroxytryptamine(5-HT)<sub>1B/1D/(1F)</sub> receptor agonists used to treat acute migraine.[A462, L12978] [Sumatriptan] was the first triptan to be developed, but had poor oral bioavailability and lipophilicity. This led to the development of second-generation triptans, including [almotriptan], [eletriptan], [frovatriptan], [naratriptan], [rizatriptan], and zolmitriptan.[A193791] Triptans can be administered alone or in combination with an NSAID like [naproxen], and represent the current "gold standard" for acute migraine treatment.[A193797]
+Zolmitriptan is a serotonin 5-HT1 receptor agonist used to treat migraine attacks. It is an approved medicine, widely used as an antimigraine preparation.
 
-Zolmitriptan was first approved by the FDA for sale by Zeneca Pharmaceuticals under the trade name Zomig® on November 25, 1997. It is currently available in both tablet and nasal spray forms.[L12978]
-
-**Indication.** Zolmitriptan is indicated for the acute treatment of migraine with or without auras in patients aged 18 and over.[L12978]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q218820](https://www.wikidata.org/wiki/Q218820) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,8 +48,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `MAOA` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces (approximately 30%)…”</sub> | prose |
-| excretion | kidney | <sub>“…primarily excreted in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR7 (target).</sub>
 

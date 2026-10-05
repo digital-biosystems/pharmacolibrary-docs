@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Cicletanine is under investigation for the treatment of Diabetes, Hypokalemia, Hyponatremia, and Arterial Hypertension.
+Cicletanine is a diuretic that has also been described as an antihypertensive and antiarrhythmic agent. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5119443](https://www.wikidata.org/wiki/Q5119443) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

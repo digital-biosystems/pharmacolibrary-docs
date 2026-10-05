@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Pizotifen belongs to the class of antamines and is related to [cyproheptadine].[A32532] It is a potent serotonin and tryptamine antagonist that has been used for migraine prevention for many years. It exhibits weak anticholinergic, antihistamine, and antikinin actions in addition to sedative and appetite-stimulating properties [L2292]. Some patients receiving pizotifen treatment developed tolerance with the prolonged use of the drug [L2292]. Numerous studies have revealed the potential antidepressant effects of pizotifen, which are independent of its antimigraine action [A32538]. While it is suggested that pizotifen may act similarly to the classic tricyclic antidepressants [A32538], its full mechanism of antidepressant action is not fully elucidated. Pizotifen hydrochloride is an active ingredient in Sandomigran, which is used for the prophylactic management of migraines. Sandomigran is available in a number of countries but is not approved by the FDA nor EMA.
+Pizotifen is an antimigraine medicine used to prevent migraine headaches, acting as a serotonin antagonist. It is an approved drug, though not authorised centrally in the European Union, and is used in various countries for migraine prevention.
 
-**Indication.** Indicated for the prophylactic management of migraines [L2292].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413784](https://www.wikidata.org/wiki/Q413784) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,10 +30,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…following oral administration…”</sub> | prose |
-| metabolism | liver | <sub>“…extensively metabolized in the liver…”</sub> | prose |
-| excretion | bile duct | <sub>“…excreted into the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine as the unchanged parent drug…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), HRH1 (target), HTR1A (partial agonist), HTR1B (target), HTR2A (target), HTR2B (target), HTR2C (target), UGT2B10 (substrate).</sub>
 

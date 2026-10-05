@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Platelets (thrombocytes) are blood components that help blood clot, and platelet preparations are given to treat or prevent bleeding, for example in patients with too few platelets. As a blood product, platelet transfusion is widely used in hospitals, mainly in transfusion medicine and haematology.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q101026](https://www.wikidata.org/wiki/Q101026) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

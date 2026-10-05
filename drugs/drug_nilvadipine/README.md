@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Nilvadipine is a calcium channel blocker (CCB) for the treatment of hypertension.
+Nilvadipine is a calcium channel blocker used to treat high blood pressure (essential hypertension). It is an approved antihypertensive drug, though not authorised in the European Union, and has also been investigated for other uses.
 
-**Indication.** For the management of vasospastic angina, chronic stable angina and hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7037489](https://www.wikidata.org/wiki/Q7037489) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

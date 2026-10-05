@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;lubiprostone&quot;,&quot;href&quot;:&quot;drugs/drug_lubiprostone/&quot;},{&quot;label&quot;:&quot;Fei_2009 \u00b7 PD short-circuit current&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;lubiprostone&quot;,&quot;href&quot;:&quot;drugs/drug_lubiprostone/&quot;},{&quot;label&quot;:&quot;Fei_2009 \u00b7 PD short-circuit current (Isc)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# short-circuit current — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+# short-circuit current (Isc) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,16 +15,16 @@
 
 ## What this record describes
 
-**As extracted:** Lubiprostone (measured concentrations) drives short-circuit current (in unknown): direct Emax (saturable) effect.
+**As extracted:** Lubiprostone (measured concentrations) drives short-circuit current (Isc) (in A/cm 2): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Lubiprostone (1–3000 nM, applied mucosally or serosally in Ussing chambers) directly stimulates short-circuit current (Isc) in guinea pig ileum and colon in a concentration-dependent Emax manner, acting as a chloride channel (ClC-2) activator; EC50 values were 42.5 nM (ileum, mucosal), 227.2 nM (ileum, serosal), 31.7 nM (colon, serosal), and 48.9 nM (colon, mucosal), with peak Isc increases of e.g. 0.78 to 37.8 µA/cm² (ileum, mucosal) and 3.4 to 58.9 µA/cm² (colon, mucosal); no effect-compartment delay was reported.
+> Lubiprostone concentrations (1-3000 nM) directly stimulate short-circuit current (Isc) in guinea pig small intestine and colon via a sigmoid Emax mechanism, with EC50 values of 42.5 nM (ileum, mucosal) and 31.7 nM (colon, serosal). The paper does not specify the maximum effect (Emax) or Hill slope (gamma) parameters for the fitted model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Fei_2009`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
@@ -34,7 +34,15 @@ Fei G et al., Stimulation of mucosal secretion by lub…, American journal of ph
   ·  DOI: [10.1152/ajpgi.90447.2008](https://doi.org/10.1152/ajpgi.90447.2008)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 42.5 | nM | not captured | llm (not captured) | Fei_2009:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 31.7 | nM | not captured | llm (not captured) | Fei_2009:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # citalopram
 
@@ -11,24 +11,22 @@
 
 ## About
 
-**Description.** Citalopram is an antidepressant belonging to the class of selective _serotonin-reuptake inhibitors_ (SSRIs) widely used to treat the symptoms of depression. It is a racemic bicyclic phthalate derivate and is the only compound with a tertiary amine and 2 nitrogen-containing metabolites among all SSRIs.[A261316,A14720] Citalopram enhances serotonergic transmission through the inhibition of serotonin reuptake, and among all the SSRIs, citalopram appears to be the most selective toward serotonin reuptake inhibition.[A261316,A14720] Specifically, it has a very minimal effect on dopamine and norepinephrine transportation and virtually no affinity for muscarinic, histaminergic, or GABAergic receptors.[A261316]
+Citalopram is an antidepressant of the selective serotonin reuptake inhibitor class used to treat depression and related mental and mood disorders, as well as anxiety conditions such as generalized anxiety disorder and obsessive-compulsive disorder. It is an approved medicine in widespread clinical use, though it carries a boxed warning.
 
-Citalopram was approved by the FDA in 1998 for the treatment of depression in adults 18 years or older.[L5230]
-
-**Indication.** Citalopram is approved by the FDA for treating adults with major depressive disorder.[L47941] It has also been used off-label to treat various diseases, including but not limited to sexual dysfunction, ethanol abuse, psychiatric conditions such as obsessive-compulsive disorder (OCD), social anxiety disorder, panic disorder, and diabetic neuropathy.[L5224,A321,A322,A261296]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409672](https://www.wikidata.org/wiki/Q409672) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 20:00 | 3:29 | 1/1/1 | 0/0/0 | 0/0/0 | 33,329/5,469 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/2 | 6/0 | 0 |
+| 2026-09-23 20:00 | 3:29 | 0/1/2 | 0/0/0 | 0/0/0 | 33,329/5,469 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/2 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Friberg_2006_reference](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76, Q22, Q65, Q317 — no SI value t…</sub><br><sub>route_to: `human_review`</sub> | [Akil_2016_reference](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | held back | 1-compartment general linear | 4 | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76, Q22, Q65, Q317 — no SI value t…</sub><br><sub>route_to: `human_review`</sub> | [Akil_2016_reference](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | — | general linear (no model) | 4 | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Friberg_2006_reference](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Weisskopf_2020_reference](drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
 
 ## ADME sites
@@ -47,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `AOX1` substrate, `CYP1A2` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…12 to 23% of an oral dose of citalopram is found unchanged in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…10% is found in feces…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -64,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 75 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 6
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

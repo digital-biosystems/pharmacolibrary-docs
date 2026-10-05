@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Dilli_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tamoxifen — `Tamoxifen_Dilli2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,26 +13,24 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The tamoxifen clearance parameter is mislabeled as 'creatinine clearance of &lt;' (50.0 ml/min), a biomarker rather than tamoxifen drug clearance, so the record was rejected.**
+**The paper reports none of the model's key parameters.**
 
-The parameter labeled as tamoxifen's clearance carries the verbatim label 'creatinine clearance of &lt;' with value 50.0 ml/min, and the analyte-identity check expected tamoxifen (or a metabolite) but obtained this creatinine-clearance label, indicating a biomarker's kinetics were recorded as drug pharmacokinetics. The volume of distribution (724 L, tamoxifen, steady-state central compartment of the four-compartment model) is present, but a second reader left the volume and the metabolite links (tamoxifen to 4-hydroxytamoxifen and N-desmethyltamoxifen, 4-hydroxytamoxifen to endoxifen, N-desmethyltamoxifen to 4-hydroxy-N-desmethyltamoxifen, all via Kfm) unconfirmed, and disagreed on the dose compound and primary analyte. Extracted — tamoxifen: V 724 L, CL 50 ml/min.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:39.435996+00:00) predates the upstream re-run (2026-10-03 11:50:09.996534+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022)
   ·  DOI: [10.3390/biology12010051](https://doi.org/10.3390/biology12010051)
 
 ## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Dilli2022_reference" status="rejected" stale="true" population="adult breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Dilli2022_reference" status="rejected" stale="false" population="adult breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
@@ -60,12 +58,6 @@ _No resolved parameters._
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
-- salvaged Q61 ('Tamoxifen’s volume of distribution (Vd) during the steady state in the central compartment for the four-compartment model'=724) from results prose — parameter table was unreadable
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 4 first-order transfer(s) across 5 compounds → general_linear
-- gap-filled Q22 (CL) from Bosch_2023's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell biology-12-00051-t003:row1:col5 = 'CYP2D6 phenotype'
@@ -81,18 +73,6 @@ _No resolved parameters._
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | fail | tamoxifen (or metabolite) | creatinine clearance of &lt; | not captured | disposition label(s) name a biomarker, not tamoxifen: 'creatinine clearance of &lt;' |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=tamoxifen) | C_central | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -101,9 +81,6 @@ _No resolved parameters._
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_tamoxifen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dilli_2022` / `Dilli_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_tamoxifen/models/modelica/Tamoxifen_Dilli2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_tamoxifen/models/modelica/Tamoxifen_Dilli2022_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_tamoxifen/models/modelica/Tamoxifen_Dilli2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -114,11 +91,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Tamoxifen_Dilli2022_reference_params.json` · controls `Tamoxifen_Dilli2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

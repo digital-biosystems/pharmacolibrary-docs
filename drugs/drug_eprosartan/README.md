@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Eprosartan is an angiotensin II receptor antagonist used to treat hypertension. It performs 2 actions on the renin angiotensin system. By preventing the binding of angiotensin II to AT1, vascular smooth muscle relaxes and vasodilation occurs. By inhibiting norepinephrine production, blood pressure is further reduced.
+Eprosartan is an angiotensin II receptor blocker used to treat high blood pressure (arterial hypertension). It is an approved medicine, available alone and in combination with a diuretic, though it is not among the most widely used drugs of its class.
 
-**Indication.** For the management of hypertension alone or in combination with other classes of antihypertensive agents. Also used as a first-line agent in the treatment of diabetic nephropathy, as well as a second-line agent in the treatment of congestive heart failure (only in those intolerant of ACE inhibitors).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q784717](https://www.wikidata.org/wiki/Q784717) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,8 +30,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Administering eprosartan with food delays absorption…”</sub> | prose |
-| metabolism | kidney | <sub>“…Less than 2% of an oral dose is excreted in the urine as a glucuronide…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inducer | DrugBank actor |
 | excretion | liver | `ABCC2` inducer | DrugBank actor |
 | excretion | small intestine | `ABCC2` inducer | DrugBank actor |

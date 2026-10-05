@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Horse chestnut is a flowering plant commonly referred to as *Aesculus hippocastanum*. Unprocessed horse chestnut seeds contain a toxin called esculin (also spelled aesculin) that increases the risk of bleeding due to anticoagulant actions. These seeds are processed to remove the toxic component, resulting in purified horse chestnut seed extract (HCSE) [A27200]. The active component of this pure extract is escin, or aescin, that promotes blood circulation through the veins and reduces swelling and inflammation of the legs. Its therapeutic potential in the treatment of chronic venous insufficiency is being studied.
+Horse chestnut seed (Hippocastani semen) is a herbal crude drug classified as a capillary stabilizing vasoprotective, traditionally used for vein and circulation problems. It is not an approved medicine; DrugBank lists it as investigational, so it remains an herbal product rather than a widely authorised drug.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q21060978](https://www.wikidata.org/wiki/Q21060978) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

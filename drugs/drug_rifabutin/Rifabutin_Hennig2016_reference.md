@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Hennig_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Osipova2023_reference&quot;,&quot;label&quot;:&quot;Osipova_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Osipova2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifabutin — `Rifabutin_Hennig2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The rifabutin record was rejected because its clearance (0.07 L/h) and volume of distribution (0.135 L) fall outside plausible physiological windows, indicating a unit or scale extraction error.**
+**The paper reports none of the model's key parameters.**
 
-The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The extracted rifabutin total clearance of 0.07 L/h and volume of distribution of 0.135 L were flagged as implausibly small magnitudes, consistent with a unit or scale extraction error. A second reader could not confirm any of the four parameter values (clearance 0.07 L/h, volume 0.135 L, absorption rate constant 0.16 h−1, lag time 0.825 h), returning no values for them. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of extracellular clearance: this record has 0.07, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance to routes other than des-rifabutin: this record has none, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hennig S et al., Population pharmacokinetic drug-drug in…, The Journal of antimicrobia… (2016)
@@ -33,57 +33,49 @@ Hennig S et al., Population pharmacokinetic drug-drug in…, The Journal of anti
 <dbs-pgx drug="rifabutin" model-id="Rifabutin_Hennig2016_reference" status="rejected" stale="false" population="healthy volunteers and patients with HIV and TB" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| extracellular clearance | `Q22` · CL | 0.07 | L/h | 1.9444444444444445e-08 | L/h | not captured | review_gapfill (0.7) | Deshpande_2024:review | — | not captured |
-| volume | `Q61` · V | 0.135 | L | 0.000135 | L | not captured | review_gapfill (0.7) | Chapagain_2022:review | — | not captured |
-| Ka | `Q49` · kabs | 0.16 | h−1 | 4.4444444444444447e-05 | 1/h | not captured | review_gapfill (0.7) | Bentley_2021:review | — | not captured |
-| LAGAM | `Q83` · tlag | 0.825 | h | 2970.0 | h | not captured | review_gapfill (0.7) | Wang_2020:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rifabutin
+- template fit: none — only the metabolite is modelled — no parent compartment
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Deshpande_2024's review values (primary lacked it)
-- gap-filled Q61 (V) from Chapagain_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Bentley_2021's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Wang_2020's review values (primary lacked it)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hennig_2016_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | primary re-run | 0.286 (4/14 fields) | 10 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[extracellular clearance]` | 0.07 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | 0.16 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lagam]` | 0.825 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume]` | 0.135 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance to routes other than des-rifabutin]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distribution to the peripheral compartment]` | not captured | 47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[formation of the metabolite]` | not captured | 224 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[overall increased exposure to rifabutin in tb/hiv patients with ritonavir-boosted pis]` | not captured | 280 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[overall increased exposure to rifabutin in tb/hiv patients]` | not captured | 210 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rifabutin dose (non-boosted or ritonavir-boosted pis) once daily]` | not captured | 150 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rifabutin dose with boosted pi every 3 days]` | not captured | 300 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 606 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | not captured | only_one_extracted |
 
 </details>
 
@@ -98,15 +90,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Deshpande_2024:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bentley_2021:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chapagain_2022:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Wang_2020:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.07 | not captured | not captured | ['Deshpande_2024:review'] |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.07 L/h | not captured | not captured | ['Deshpande_2024:review'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.135 L | not captured | not captured | ['Chapagain_2022:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,4 +116,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 07:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:47 UTC</sub>

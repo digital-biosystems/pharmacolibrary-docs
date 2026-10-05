@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Tertatolol is a beta blocker.
+Tertatolol is a non-selective beta blocker that was used to treat high blood pressure. It is currently listed only as an experimental drug and does not appear to be an approved medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7705238](https://www.wikidata.org/wiki/Q7705238) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

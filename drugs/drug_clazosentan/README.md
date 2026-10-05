@@ -10,7 +10,9 @@
 
 ## About
 
-**Indication.** Investigated for use/treatment in strokes.
+Clazosentan is an investigational peripheral vasodilator drug. It has not been approved by regulators such as the European Medicines Agency and remains under investigation.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1099339](https://www.wikidata.org/wiki/Q1099339) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** An alkylating agent of value against both hematologic malignancies and solid tumors.
+Lomustine is an alkylating anticancer drug used to treat cancers such as brain cancer, Hodgkin lymphoma, melanoma, and kidney cancer. It is an approved medicine, but carries a boxed warning, so its use requires careful risk management.
 
-**Indication.** For the treatment of primary and metastatic brain tumors as a component of combination chemotherapy in addition to appropriate surgical and/or radiotherapeutic procedures. Also used in combination with other agents as secondary therapy for the treatment of refractory or relapsed Hodgkin's disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415378](https://www.wikidata.org/wiki/Q415378) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,11 +33,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Well and rapidly absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…excreted in the urine in the form of degradation products within 24 hours…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), STMN4 (target).</sub>
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Frederiksen_2023_3 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Frederiksen2023v3_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.92). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.92). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,26 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
-
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The brexpiprazole parent–metabolite model was held back because the bioavailability F was left at library defaults instead of being estimated or reported in the paper.**
 
-The base model was simulated, not the covariate effects the record defines.
+The record contains fitted values for brexpiprazole (kabs 1.02 1/h, tlag 0.411 h, V1 81.2 L, V2 40.1 L, Q 0.714 L/h) and its metabolites DM-3411 and DM-3412, but the bioavailability parameter F has no extracted value and was substituted with a library placeholder. This default affects the simulated concentration profile yet is not supported by the paper, so the record needs review. A second reader also disagreed on the dose compound and primary analyte fields, both recorded as brexpiprazole. Extracted — brexpiprazole: kabs 1.02 1/h, tlag 0.411 h, V1 81.2 L, V2 40.1 L, Q 0.714 L/h; DM-3412: CLfm 0.0224 L/h, V1 0.447 L, V2 20.4 L, Q 2.16 L/h, CL 0.42 L/h; DM-3411: CLfm 1.12 L/h, V 2.44 L, CL 3.33 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has brexpiprazole, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:36:20.694839+00:00) predates the upstream re-run (2026-10-03 14:17:27.397030+00:00). Current validate status: `extracted`.
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharmacology and t… (2023)
   ·  DOI: [10.1002/cpt.2791](https://doi.org/10.1002/cpt.2791)
 
 ## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="extracted" stale="true" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="needs_review" stale="false" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite DM-3411: 1 compartment(s); metabolite DM-3412: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 13 extracted.
@@ -42,6 +38,8 @@ Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharm
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Absorption rate constant fasted | `Q49` · kabs | 1.02 | 1/h | 0.00028333333333333335 | 1/h | not captured | llm_confirmed (0.6) | cpt2791-tbl-0002:row1:col1 | — | 215 (None% RSE) |
@@ -112,7 +110,6 @@ Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharm
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [1, 2]
 - row roles: 2 per-group rows of brexpiprazole absorption_rate_constant but 0 reference group(s) — kept as printed
 - row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 24 linked by role; re-tagged parent→DM-3412 ×9, parent→DM-3411 ×8
-- molar mass: none found for 'DM-3411' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell cpt2791-tbl-0002:row2:col3 = '[0.420; 0.752]'
@@ -188,8 +185,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_metabolite_built[DM-3411] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.00244, 'CL': 9.25e-07, 'formation': 3.111111111111111e-07} | not captured | DM-3411 = compartment M1 with its own numbers |
 | T3_metabolite_built[DM-3412] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.000447, 'CL': 1.1666666666666667e-07, 'formation': 6.222222222222222e-09} | not captured | DM-3412 = compartment M2 with its own numbers |
 | T3_metabolite_output[DM-3411] | not captured | pass | not captured | 5.261428795357089e-07 | not captured | C_M1 (DM-3411) must rise above 0 when the parent is dosed |
@@ -199,7 +196,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=brexpiprazole) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 11 scholar param(s) emitted or defaulted | 11 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -220,7 +217,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_modelica.zip" download>Brexpiprazole_Frederiksen2023v3_reference_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_modelica.zip" download>Brexpiprazole_Frederiksen2023v3_reference_modelica.zip</a> <span class="pk-size">(5.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_fmi.zip" download>Brexpiprazole_Frederiksen2023v3_reference_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_3M_9C.fmu" download>PK_3M_9C.fmu</a> <span class="pk-size">(1.4 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_matlab.zip" download>Brexpiprazole_Frederiksen2023v3_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

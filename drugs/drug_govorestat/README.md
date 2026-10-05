@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Gavorestat is under investigation in clinical trial NCT04902781 (Clinical Benefit, Safety, PK and PD Study of AT-007 in Pediatric Subjects With Classic Galactosemia).
+Govorestat was developed as a treatment for galactosemia. It remains investigational; its marketing authorisation application in the European Union was withdrawn, so it is not approved there.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q123481136](https://www.wikidata.org/wiki/Q123481136) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

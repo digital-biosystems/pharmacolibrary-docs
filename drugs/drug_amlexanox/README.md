@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Amlexanox is an antiallergic drug, clinically effective for atopic diseases, especially allergic asthma and rhinitis. Amlexanox as a topical paste is a well tolerated treatment of recurrent aphthous ulcers. Recurrent aphthous ulcer (RAU) is the most prevalent oral mucosal disease in humans, estimated to affect between 5% and 50% of the general population.
+Amlexanox is a drug used to treat aphthous stomatitis (canker sores), applied locally in the mouth. It has been withdrawn from the market in some countries, though it remains approved and used in others.
 
-**Indication.** Used as a paste in the mouth to treat aphthous ulcers (canker sores).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q695611](https://www.wikidata.org/wiki/Q695611) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,8 +30,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…No significant absorption directly through the active ulcer…”</sub> | prose |
-| absorption | small intestine | <sub>“…Most of the systemic absorption is via the gastrointestinal tract…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: FGF1 (inhibitor), HSP90AA1 (inhibitor), IL3 (target), S100A12 (target), S100A13 (target).</sub>
 

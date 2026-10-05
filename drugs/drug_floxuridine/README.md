@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antineoplastic antimetabolite that is metabolized to fluorouracil when administered by rapid injection. Floxuridine is available as a sterile, nonpyrogenic, lyophilized powder for reconstitution. When administered by slow, continuous, intra-arterial infusion, it is converted to floxuridine monophosphate. It has been used to treat hepatic metastases of gastrointestinal adenocarcinomas and for palliation in malignant neoplasms of the liver and gastrointestinal tract.
+Floxuridine is an antimetabolite cancer drug used to treat cancers of the stomach and large intestine. It is an approved anticancer medicine, but it is not authorised in the European Union and carries a boxed warning.
 
-**Indication.** For palliative management of gastrointestinal adenocarcinoma metastatic to the liver, when given by continuous regional intra-arterial infusion in carefully selected patients who are considered incurable by surgery or other means. Also for the palliative management of liver cancer (usually administered by hepatic intra-arterial infusion).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5462356](https://www.wikidata.org/wiki/Q5462356) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,8 +41,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | metabolism | liver | `CYP2C9` inhibitor | DrugBank actor |
-| excretion | kidney | — | prose |
-| excretion | lung | <sub>“…excreted as respiratory carbon dioxide…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SERPINA7 (inducer), TYMP (substrate), TYMS (inhibitor).</sub>
 

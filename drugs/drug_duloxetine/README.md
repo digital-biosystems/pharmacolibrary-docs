@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # duloxetine
 
@@ -11,31 +11,9 @@
 
 ## About
 
-**Description.** Duloxetine is a dual serotonin and norepinephrine reuptake inhibitor.[label] It was originally discovered in 1993 and developed by Eli Lilly and Company as LY248686.[A178741] Duloxetine first received approval from the FDA in August, 2004 as Cymbalta for the treatment of Major Depressive Disorder.[L6454] It has since received approval for a variety of indications including the treatment of neuropathic pain, Generalized Anxiety disorder, osteoarthritis, and stress incontinence. Duloxetine continues to be investigated for the treatment of pain in cancer, surgery, and more.
+Duloxetine is an antidepressant (a serotonin–norepinephrine reuptake inhibitor) used for major depressive disorder, anxiety disorders, and nerve-related pain conditions such as diabetic neuropathy and fibromyalgia. It is approved and widely used, with several products authorised in the European Union.
 
-**Indication.** **Indicated** for:
-
-1) Management of Major Depressive Disorder.[label]
-
-2) Management of Generalized Anxiety Disorder.[label]
-
-3) Management of diabetic peripheral neuropathy.[label]
-
-4) Management of fibromyalgia.[label]
-
-5) Management of chronic musculoskeletal pain.[label]
-
-6) Management of osteoarthritis of the knee in adults.[L6364]
-
-7) Management of chronic lower back pain in adults.[L6364]
-
-8) Management of stress urinary incontinence in adult women.[L6367]
-
-**Off-label** uses include:
-
-1) Management of chemotherapy-induced peripheral neuropathy.[A178603]
-
-2) Management of stress urinary incontinence in adult men after prostatectomy until recovery is complete.[L6370]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411932](https://www.wikidata.org/wiki/Q411932) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -50,13 +28,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 21:44 | 1:16 | 1/1/0 | 0/0/0 | 0/0/0 | 21,453/1,189 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 11/0 | 5/0 | 0 |
+| 2026-09-23 21:44 | 1:16 | 0/1/1 | 0/0/0 | 0/0/0 | 21,453/1,189 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 11/0 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Skinner_2004_reference](drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Skinner_2004_reference](drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ngo_2020_reference](drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md) | — | parent + metabolite (no model) | 5 (+6 cov.) | Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020) | [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862) |
 
 ## ADME sites
@@ -75,8 +53,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…Biliary secretion is thought to play a role…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -92,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 47 matched, 35 returned
 - **screened:** 10  ·  **relevant:** 6
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

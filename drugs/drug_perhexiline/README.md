@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Perhexiline is a coronary vasodilator used especially for angina of effort. It may cause neuropathy and hepatitis.
+Perhexiline is a calcium channel blocker and vasodilator used as a cardiovascular drug, mainly for angina. It is considered approved, though it is not authorised in the European Union and is used only in a few countries such as Australia and New Zealand.
 
-**Indication.** For the management of severe angina pectoris.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1232737](https://www.wikidata.org/wiki/Q1232737) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,7 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Well absorbed (&gt;80%) from the gastrointestinal tract following oral administration.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

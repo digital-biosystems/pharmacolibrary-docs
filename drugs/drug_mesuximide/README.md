@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Mesuximide (or methsuximide) is an anticonvulsant medication. It is sold by Pfizer under the name Petinutin.
+Mesuximide (methsuximide) is a succinimide anticonvulsant used to treat epilepsy, especially childhood absence epilepsy. It is an approved antiepileptic, though it is not widely used and no EU marketing authorisation is recorded.
 
-**Indication.** For the control of absence (petit mal) seizures that are refractory to other drugs.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q906414](https://www.wikidata.org/wiki/Q906414) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

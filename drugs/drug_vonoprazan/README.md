@@ -10,29 +10,21 @@
 
 ## About
 
-**Description.** Vonoprazan is a potassium-competitive acid blocker (PCAB) that inhibits H<sup>+</sup>, K<sup>+</sup>-ATPase-mediated gastric acid secretion. PCABs represent an alternative to proton-pump inhibitors for the treatment of acid-related disorders. Unlike proton-pump inhibitors, PCABs are not affected by CYP2C19 genetic polymorphisms and do not require acid-resistant formulations.[A253702] Furthermore, vonoprazan is 350-times more potent than the proton-pump inhibitor [lansoprazole], thanks to its ability to accumulate in the gastric corpus mucosa, specifically in the parietal cells.[A253707] 
+Vonoprazan is an acid-suppressing drug used for acid-related disorders such as peptic ulcer and gastro-oesophageal reflux disease, and in combination regimens to eradicate Helicobacter pylori. It is an approved medicine, though it appears not to be authorised in the European Union.
 
-In February 2015, vonoprazan was first marketed in Japan for the treatment of acid-related disorders and as an adjunct to _Helicobacter pylori_ (_H. pylori_) eradication.[A253702] In May 2022, the FDA approved the use of vonoprazan in a co-packaged product containing amoxicillin and clarithromycin for the treatment of _H. pylori_ infection.[L41695] Studies have shown that the concomitant use of vonoprazan, amoxicillin, and clarithromycin leads to an _H. pylori_ eradication rate of approximately 90%.[A253742]
-
-**Indication.** Vonoprazan is indicated for the following conditions: 
-
-- for healing of all grades of erosive esophagitis and relief of heartburn associated with erosive esophagitis in adults.[L51224]
-- to maintain healing of all grades of erosive esophagitis and relief of heartburn associated with erosive esophagitis in adults.[L51224]
-- for the relief of heartburn associated with non-erosive gastroesophageal reflux disease in adults.[L51224]
-- in combination with [amoxicillin] and [clarithromycin] for the treatment of Helicobacter pylori (_H. pylori_) infection in adults.[L41695, L51224]
-- in combination with amoxicillin for the treatment of H. pylori infection in adults.[L51224]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27887191](https://www.wikidata.org/wiki/Q27887191) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:59 | 1:57 | 0/1/0 | 0/0/0 | 0/0/0 | 40,981/1,183 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 12:11 | 5:37 | 0/1/0 | 0/0/0 | 0/0/0 | 52,066/16,955 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | — | 1-compartment (no model) | 0 | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | — | 1-compartment (no model) | 0 | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
 
 ## ADME sites
 
@@ -51,8 +43,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces (31%)…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in urine (67%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP4A (inhibitor), ATP4A (modulator), ATP4B (modulator).</sub>
 
@@ -66,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -75,9 +67,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mulford_2026.pdf` | Mulford DJ et al., The pharmacokinetics and safety of vono…, Journal of pediatric gastro… (2026) | popPK | 9 | [10.1002/jpn3.70368](https://doi.org/10.1002/jpn3.70368) | [41721637](https://pubmed.ncbi.nlm.nih.gov/41721637) | The paper describes a population PK study for vonoprazan in pediatrics, but the specific numeric parameter values (CL/F, Vc/F) are not present in the provided abstract text. |
+| `Mulford_2026.pdf` | Mulford DJ et al., The pharmacokinetics and safety of vono…, Journal of pediatric gastro… (2026) | popPK | 8 | [10.1002/jpn3.70368](https://doi.org/10.1002/jpn3.70368) | [41721637](https://pubmed.ncbi.nlm.nih.gov/41721637) | The study reports a population PK model for vonoprazan in humans, but the specific numeric parameter values (CL/F, Vc/F) are not explicitly listed in the provided abstract text. |
 
-<sub>queue written 2026-09-18T08:57:42.816581+00:00</sub>
+<sub>queue written 2026-10-04T12:06:18.949375+00:00</sub>
 
 ## Screened and excluded
 
@@ -85,8 +77,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Gatta_2023 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
 | PD | Gatta_2023 | not_relevant | 1 | 0 | The provided text is only the title of an editorial and does not contain the full text or any numeric PD parameters. |
-| popPK | Mulford_2026 | relevant | 9 | 2 | The paper describes a population PK study for vonoprazan in pediatrics, but the specific numeric parameter values (CL/F, Vc/F) are not present in the provided abstract text. |
+| popPK | Mulford_2026 | relevant | 8 | 2 | The study reports a population PK model for vonoprazan in humans, but the specific numeric parameter values (CL/F, Vc/F) are not explicitly listed in the provided abstract text. |
 | popPK | Scarpignato_2023 | irrelevant | 2 | 0 | The study uses an existing population PK model to derive PK/PD simulations but does not report the specific quantitative PK parameter values (CL, V, etc.) for vonoprazan in the provided evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 08:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 12:06 UTC</sub>

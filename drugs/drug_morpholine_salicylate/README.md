@@ -9,6 +9,12 @@
 - **molar mass:** 87.1204 g/mol (C4H9NO) — DrugBank
 - **groups:** experimental
 
+## About
+
+Morpholine salicylate is a salicylic acid derivative classified as an analgesic and antipyretic, used for pain and fever relief. It appears only as an experimental drug, with no authorisation record in the European Union, so its current clinical use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410243](https://www.wikidata.org/wiki/Q410243) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

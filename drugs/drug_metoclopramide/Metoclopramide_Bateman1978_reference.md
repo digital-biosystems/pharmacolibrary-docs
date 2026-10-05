@@ -4,7 +4,7 @@
 
 # metoclopramide — `Metoclopramide_Bateman1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — metoclopramide: CL 10.9 ml min-1 kg-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of total body plasma clearance of the drug: this record has 10.9, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoclopramide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:56.108185+00:00) predates the upstream re-run (2026-10-04 13:54:41.660240+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Bateman DN et al., Pharmacokinetic and concentration-effec…, British journal of clinical… (1978)
   ·  DOI: [10.1111/j.1365-2125.1978.tb04604.x](https://doi.org/10.1111/j.1365-2125.1978.tb04604.x)
 
 ## Model component
-<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Bateman1978_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Bateman1978_reference" status="needs_review" stale="true" population="normal male volunteers" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -41,7 +43,7 @@ Bateman DN et al., Pharmacokinetic and concentration-effec…, British journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Total body plasma clearance of the drug | `Q22` · CL | 10.9 | ml min-1 kg-1 | not captured | [[ml] · [min-]] / [kg] | not captured | llm_confirmed (0.6) | Bateman_1978:abstract | — | not captured |
+| Total body plasma clearance of the drug | `Q22` · CL | 10.9 | L/h | 3.0277777777777776e-06 | L/h | not captured | llm_confirmed (0.6) | Bateman_1978:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,9 +54,8 @@ Bateman DN et al., Pharmacokinetic and concentration-effec…, British journal o
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'ml min-1 kg-1' (CL)
+- implicit units: 'Total body plasma clearance of the drug' → L/h (from the popPK convention: 'No unit is stated in the provided text or table captions. For total body plasma clearance in population PK, L/h is the s')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=metoclopramide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -64,18 +65,21 @@ Bateman DN et al., Pharmacokinetic and concentration-effec…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[total body plasma clearance of the drug]` | 10.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body plasma clearance of the drug]` | not captured | 10.9 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | metoclopramide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | metoclopramide | unknown | mismatch |
 
 </details>
 
@@ -92,9 +96,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | ml min-1 kg-1 | not captured | not captured | ['Bateman_1978:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bateman_1978:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.9 | not captured | not captured | ['Bateman_1978:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10.9 L/h | not captured | not captured | ['Bateman_1978:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -129,4 +134,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 12:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:54 UTC</sub>

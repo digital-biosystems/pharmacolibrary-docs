@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** As a diuretic, cyclothiazide inhibits active chloride reabsorption at the early distal tubule via the Na-Cl cotransporter, resulting in an increase in the excretion of sodium, chloride, and water. Thiazides like cyclothiazide also inhibit sodium ion transport across the renal tubular epithelium through binding to the thiazide sensitive sodium-chloride transporter. This results in an increase in potassium excretion via the sodium-potassium exchange mechanism. The antihypertensive mechanism of cyclothiazide is less well understood although it may be mediated through its action on carbonic anhydrases in the smooth muscle or through its action on the large-conductance calcium-activated potassium (KCa) channel, also found in the smooth muscle. Cyclothiazide is indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy. It is also indicated in the management of hypertension either as the sole therapeutic agent or to enhance the effectiveness of other antihypertensive drugs in the more severe forms of hypertension.
+Cyclothiazide is a thiazide diuretic used to treat conditions involving fluid retention and high blood pressure, such as arterial hypertension, congestive heart failure, nephrotic syndrome, and anasarca. It is an approved drug, though it does not appear to have a European Union marketing authorisation, and it is not among the most widely used thiazides today.
 
-**Indication.** Cyclothiazide is indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy. It is also indicated in the management of hypertension either as the sole therapeutic agent or to enhance the effectiveness of other antihypertensive drugs in the more severe forms of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5199066](https://www.wikidata.org/wiki/Q5199066) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

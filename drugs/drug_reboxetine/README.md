@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Reboxetine is an antidepressant drug used in the treatment of clinical depression, panic disorder and ADD/ADHD. Its mesylate (i.e. methanesulfonate) salt is sold under tradenames including Edronax, Norebox, Prolift, Solvex, Davedax or Vestra. Reboxetine has two chiral centers, but it only exists as two enantiomers, (R,R)-(-)- and (S,S)-(+)-reboxetine.
+Reboxetine is an antidepressant, once used to treat depression. It has been withdrawn from use, with regulatory records marking it as withdrawn.
 
-**Indication.** For the treatment of clinical depression.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72506458](https://www.wikidata.org/wiki/Q72506458) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

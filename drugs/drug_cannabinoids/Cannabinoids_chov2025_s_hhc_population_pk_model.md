@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;cannabinoids&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/&quot;},{&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025 \u00b7 s_hhc_population_pk_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabinoids_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_s_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_s_hhc_population_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabinoids_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabinoids_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_r_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_r_hhc_population_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_s_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_s_hhc_population_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cannabinoids — `Cannabinoids_chov2025_s_hhc_population_pk_model`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,18 +19,18 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The hexahydrocannabinol model in male Wistar rats was held back because the builder assumed F=1 and Fm=1 with no molar correction, so the reported apparent parameters (V/F 1925.9 mL, CL/F 3732.1 mL/h) rest on an unacceptable bioavailability assumption.**
 
-None of the extracted parameters is cannabinoids's own; they describe hexahydrocannabinol.
+The record reports tlag 0.49 h, kabs 0.41 h−1, V/F 1925.9 mL and CL/F 3732.1 mL/h for oral hexahydrocannabinol in a one-compartment structure. The failed check concerns the apparent-parameter assumption: the builder set F=1 and Fm=1 without molar correction, and adjudication judged this assumption not acceptable. No other parameter values are disputed, but the model cannot be published with these deviations in place. Extracted — hexahydrocannabinol: tlag 0.49 h, kabs 0.41 h−1, V/F 1.93e+03 mL, CL/F 3.73e+03 mL/h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Šíchová K et al., Hexahydrocannabinol: pharmacokinetics,…, The international journal o… (2025)
   ·  DOI: [10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041)
 
 ## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="curated_candidate" stale="false" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="needs_review" stale="false" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -38,6 +38,8 @@ None of the extracted parameters is cannabinoids's own; they describe hexahydroc
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tlag (h) | `Q83` · tlag | 0.49 | h | 1764.0 | [h] | not captured | exact (1.0) | TB1:row2:col3, TB1:row2:col4 | — | not captured |
@@ -88,7 +90,7 @@ None of the extracted parameters is cannabinoids's own; they describe hexahydroc
 | T3_output_variable | not captured | pass | C_central (measured=hexahydrocannabinol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -109,7 +111,7 @@ None of the extracted parameters is cannabinoids's own; they describe hexahydroc
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_modelica.zip" download>Cannabinoids_chov2025_s_hhc_population_pk_model_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_modelica.zip" download>Cannabinoids_chov2025_s_hhc_population_pk_model_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_fmi.zip" download>Cannabinoids_chov2025_s_hhc_population_pk_model_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_matlab.zip" download>Cannabinoids_chov2025_s_hhc_population_pk_model_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model_matlab_simbio.zip" download>Cannabinoids_chov2025_s_hhc_population_pk_model_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

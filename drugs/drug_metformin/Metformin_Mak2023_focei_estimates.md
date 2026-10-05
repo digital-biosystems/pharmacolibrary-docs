@@ -27,7 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:38:53.464009+00:00) predates the upstream re-run (2026-10-03 12:30:32.368126+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:38:53.464009+00:00) predates the upstream re-run (2026-10-05 00:48:36.976596+00:00). Current validate status: `extracted`.
 
 ## Citation
 Mak WY et al., Assessment of the nlmixr R package for…, British journal of clinical… (2023)
@@ -37,7 +37,7 @@ Mak WY et al., Assessment of the nlmixr R package for…, British journal of cli
 <dbs-pgx drug="metformin" model-id="Metformin_Mak2023_focei_estimates" status="extracted" stale="true" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -45,9 +45,9 @@ Mak WY et al., Assessment of the nlmixr R package for…, British journal of cli
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka,fasted (h-1) | `Q49` · kabs | 1.30 | h-1 | 0.00036111111111111115 | [1] / [h] | 66.3 | llm_confirmed (0.6) | Mak_2023_table_2:row0:col3, Mak_2023_table_2:row0:col4 | — | not captured |
-| CL (L·h-1) | `Q22` · CL | 54.6 | L·h-1 | 1.5166666666666667e-05 | [l] / [h] | 1.1 | exact (1.0) | Mak_2023_table_2:row2:col3, Mak_2023_table_2:row2:col4 | — | not captured |
+| CL (L h-1) | `Q22` · CL | 54.6 | L h-1 | 1.5166666666666667e-05 | [l] / [h] | 1.1 | exact (1.0) | Mak_2023_table_2:row2:col3, Mak_2023_table_2:row2:col4 | — | not captured |
 | V (L) | `Q61` · V | 259 | L | 0.259 | [l] | 0.99 | exact (1.0) | Mak_2023_table_2:row3:col3, Mak_2023_table_2:row3:col4 | — | not captured |
-| Ffed | `Q87` · Frel | 0.660 | not captured | not captured | not captured | 12.9 | llm (0.6) | Mak_2023_table_2:row4:col3, Mak_2023_table_2:row4:col4 | — | not captured |
+| theta_q87_fed | `Q900` · theta_q87_fed | 0.660 | not captured | not captured | not captured | 12.9 | not captured (not captured) | Mak_2023_table_2:row4:col3, Mak_2023_table_2:row4:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,15 +62,13 @@ Mak WY et al., Assessment of the nlmixr R package for…, British journal of cli
 **Interpretation flags:**
 - dropped duplicate Q49 ('ka,fed (h-1)', value '0.497') — already have one for this compound
 - dropped unlinked row (NIL): 'Dfasted' — extend the ontology if this is a real PK parameter (source ['Mak_2023_table_2:row5:col3', 'Mak_2023_table_2:row5:col4'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L·h-1)); Q61 (V (L))
+- covariate effect for Q87 has no base parameter row (kept as unattached equation-variable)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L h-1)); Q61 (V (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=metformin
 - population split: 'focei estimates' subgroup of Mak_2023 (paper reports 2 populations: focei estimates, saem estimates)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- dropped duplicate Q49 ('ka,fed (h−1)', value '0.497') — already have one for this compound
-- covariate effect for Q87 has no base parameter row (kept as unattached equation-variable)
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L·h−1)); Q61 (V (L))
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -104,7 +102,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Mak_2023_table_2:row2:col3', 'Mak_2023_table_2:row2:col4'] |
@@ -145,7 +143,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Mak2023_focei_estimates/Metformin_Mak2023_focei_estimates_modelica.zip" download>Metformin_Mak2023_focei_estimates_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Mak2023_focei_estimates/Metformin_Mak2023_focei_estimates_modelica.zip" download>Metformin_Mak2023_focei_estimates_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Mak2023_focei_estimates/Metformin_Mak2023_focei_estimates_fmi.zip" download>Metformin_Mak2023_focei_estimates_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Mak2023_focei_estimates/Metformin_Mak2023_focei_estimates_matlab.zip" download>Metformin_Mak2023_focei_estimates_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Mak2023_focei_estimates/Metformin_Mak2023_focei_estimates_matlab_simbio.zip" download>Metformin_Mak2023_focei_estimates_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -167,4 +165,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 12:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:48 UTC</sub>

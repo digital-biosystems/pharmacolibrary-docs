@@ -5,7 +5,7 @@
 
 # ornithine oxoglurate — `OrnithineOxoglurate_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**The ornithine oxoglurate record was rejected because its metabolism links leave metabolites (proline, glutamine, arginine) unreachable from the dose, and it was built from the abstract only, so summary statistics stand in for a fitted model.**
+**The ornithine oxoglurate record was rejected because its metabolite compartments (ornithine, proline, glutamine, arginine) have no metabolism link parameters, leaving them unlinked, and it was built from the abstract only.**
 
-The structure check found unreachable compartments or unlinked metabolites in the linear model linking ornithine oxoglurate to ornithine, proline, glutamine and arginine, with no link parameters extracted. The record is abstract-only, so the reported values (absorption constant 0.028 min-1, terminal half-life 89 min, clearance 26.0 mL/min, volume of distribution 33.2 L for ornithine) are summary statistics rather than fitted model parameters. A second reader also disagreed on the dose compound name (ornithine_alpha_ketoglutarate) and read no values for the four parameters. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
+The four metabolism links from ornithine oxoglurate to ornithine, proline, glutamine and arginine carry no link parameter (link_parameter: none, kind unknown), so the metabolite compartments are unreachable from the dose. The record is abstract-only, so reported summary statistics (e.g. kabs 0.028 min-1, t1/2z 89 min, V 33.2 L, CL 26.0 mL/min) stood in for a fitted model. A second reader also disagreed on the dose compound and analyte naming and read AUC0-7h values (arginine 7.3, glutamine 20.4, proline 41.4) that are absent from this record. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading ornithine_alpha_ketoglutarate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -62,7 +62,9 @@ Le Bricon T et al., Ornithine alpha-ketoglutarate metabolis…, The American jou
 - dropped unlinked row (NIL): 'arginine' — extend the ontology if this is a real PK parameter (source ['Le_1997:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ornithine
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — other model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=other; 5/5 row label(s) assigned, 1 linked by role; re-tagged ornithine→parent ×2, ornithine→proline ×1, ornithine→glutamine ×1, ornithine→arginine ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Wang_2022's review values (primary lacked it)
 - gap-filled Q61 (V) from Wang_2022's review values (primary lacked it)
@@ -80,18 +82,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['ornithine_oxoglurate', 'ornithine', 'metabolism'], ['ornithine_oxoglurate', 'proline', 'metabolism'], ['ornithine_oxoglurate', 'glutamine', 'metabolism'], ['ornithine_oxoglurate', 'arginine', 'metabolism']] | [['ornithine_alpha_ketoglutarate', 'ornithine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'glutamine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'arginine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'proline', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[absorption constant]` | 0.028 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` | 89 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lowest creatinine clearance was]` | 26.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution was]` | 33.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ornithine_oxoglurate | ornithine_alpha_ketoglutarate | mismatch |
+| `gpt-oss:120b` | `model.links` | [['ornithine_oxoglurate', 'ornithine', 'metabolism'], ['ornithine_oxoglurate', 'proline', 'metabolism'], ['ornithine_oxoglurate', 'glutamine', 'metabolism'], ['ornithine_oxoglurate', 'arginine', 'metabolism']] | [['ornithine_alpha_ketoglutarate', 'ornithine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'proline', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'glutamine', 'metabolism'], ['ornithine_alpha_ketoglutarate', 'arginine', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[auc0-7h: arginine]` | not captured | 7.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-7h: glutamine]` | not captured | 20.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-7h: proline]` | not captured | 41.4 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | ornithine_oxoglurate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | ornithine | unknown | mismatch |
 
 </details>
 
@@ -139,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 15:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 15:30 UTC</sub>

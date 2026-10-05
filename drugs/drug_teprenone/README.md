@@ -8,11 +8,17 @@
 - **molar mass:** 330.556 g/mol (C23H38O) — DrugBank
 - **groups:** investigational
 
+## About
+
+Teprenone is an anti-ulcer agent classified among other drugs for peptic ulcer and acid-related disorders. It is considered investigational in major Western databases and is not authorised in the European Union; it has been used mainly in Japan for gastric complaints.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72509552](https://www.wikidata.org/wiki/Q72509552) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:36 | 1:57 | 0/0/0 | 0/0/0 | 0/0/0 | 56,575/1,617 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-04 12:00 | 0:48 | 0/0/0 | 0/0/0 | 0/0/0 | 24,120/602 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -37,25 +43,25 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ding_2007.pdf` | Ding L et al., HPLC-APCI-MS for the determination of t…, Journal of pharmaceutical a… (2007) | popPK | 8 | [10.1016/j.jpba.2007.03.021](https://doi.org/10.1016/j.jpba.2007.03.021) | [17482416](https://pubmed.ncbi.nlm.nih.gov/17482416) | The paper reports a pharmacokinetic study for teprenone with quantitative parameters (Cmax, t1/2, Tmax) present in the text, though it lacks explicit clearance or volume values. |
+| `Ding_2007.pdf` | Ding L et al., HPLC-APCI-MS for the determination of t…, Journal of pharmaceutical a… (2007) | popPK | 8 | [10.1016/j.jpba.2007.03.021](https://doi.org/10.1016/j.jpba.2007.03.021) | [17482416](https://pubmed.ncbi.nlm.nih.gov/17482416) | The study reports quantitative pharmacokinetic parameters (Cmax, t1/2, Tmax) for teprenone in human plasma, though clearance and volume of distribution are not explicitly listed. |
 | `Harada_1994.pdf` | Harada Y et al., Receptor binding profiles of KB-5492, a…, European journal of pharmac… (1994) | pd | 4 | [10.1016/0014-2999(94)90558-4](https://doi.org/10.1016/0014-2999(94)90558-4) | [8045277](https://www.ncbi.nlm.nih.gov/pubmed/8045277) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T08:36:02.316508+00:00</sub>
+<sub>queue written 2026-10-04T12:00:01.068980+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bocchini_2016 | irrelevant | 0 | 0 | The paper studies STAT3 protein stability and function in AD-HIES, not the pharmacokinetics of teprenone. |
+| popPK | Bocchini_2016 | irrelevant | 0 | 0 | The paper investigates STAT3 protein stability and function in AD-HIES, not the pharmacokinetics of teprenone. |
 | PGx | Bocchini_2016 | not_relevant | 0 | 0 | The paper investigates the effect of chaperone modulators on STAT3 mutations in hyper-IgE syndrome and does not mention teprenone. |
 | popPK | Harada_1994 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PD | Harada_1994 | not_relevant | 0 | 0 | The paper focuses on the receptor binding profile of KB-5492, not teprenone, and does not report pharmacodynamic exposure-response or dose-response relationships for teprenone. |
-| popPK | Iwakiri_2014 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of rabeprazole versus teprenone for peptic ulcer prevention, and it does not report any pharmacokinetic parameters for teprenone. |
+| popPK | Iwakiri_2014 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of rabeprazole versus teprenone for peptic ulcer prevention, with no pharmacokinetic parameters reported for teprenone. |
 | PD | Iwakiri_2014 | not_relevant | 0 | 0 | The paper is a clinical trial comparing rabeprazole and teprenone for ulcer prevention; it reports clinical efficacy rates but contains no pharmacokinetic data, concentration-effect analysis, or numeric PD parameters for teprenone. |
-| popPK | Otani_2020 | irrelevant | 0 | 0 | The paper investigates the degradation and function of the MCT9 transporter in HEK293 cells and does not report pharmacokinetic parameters for teprenone. |
-| popPK | Seno_1995 | irrelevant | 0 | 0 | The study focuses on gastric mucosal injury and mucus production, not the pharmacokinetic disposition parameters of teprenone. |
-| popPK | Song_2008 | irrelevant | 0 | 0 | Teprenone is used only as an internal standard for vitamin K(1) analysis, not as the subject drug for PK parameter estimation. |
-| popPK | Sun_2017 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of geranylgeranylacetone (GGA) in Alzheimer's disease models and does not involve teprenone or report any pharmacokinetic parameters. |
+| popPK | Otani_2020 | irrelevant | 0 | 0 | The paper investigates the pharmacology and degradation of the MCT9 transporter in HEK293 cells and does not report pharmacokinetic parameters for teprenone. |
+| popPK | Seno_1995 | irrelevant | 0 | 0 | The study investigates the role of gastric mucus in ischemia/reperfusion injury using tetraprenyl acetone (TPA) as a mucus stimulant, not teprenone, and does not report pharmacokinetic parameters. |
+| popPK | Song_2008 | irrelevant | 0 | 0 | Teprenone is used only as an internal standard for the quantification of vitamin K1, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Sun_2017 | irrelevant | 0 | 0 | The study investigates the effects of geranylgeranylacetone (GGA) on Alzheimer's disease phenotypes in mice and does not involve teprenone or report any pharmacokinetic parameters for it. |
 | popPK | Yue_2018 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of GDNF and geranylgeranylacetone (GGA) in a Parkinson's disease model and does not involve teprenone or report any pharmacokinetic parameters. |
 | PD | Yue_2018 | not_relevant | 0 | 0 | The paper studies GDNF and geranylgeranylacetone (GGA), not teprenone, and reports qualitative/semi-quantitative efficacy data without exposure-response modeling or numeric PD parameters. |
 

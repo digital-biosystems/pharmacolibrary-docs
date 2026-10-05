@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Potassium salicylate is a salicylic acid derivative classified as an analgesic and antipyretic for the nervous system. Its current availability and extent of use are unclear, as no regulatory or marketing information is provided.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7234718](https://www.wikidata.org/wiki/Q7234718) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

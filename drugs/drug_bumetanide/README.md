@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Bumetanide  is a sulfamyl diuretic.
+Bumetanide is a loop (high-ceiling) diuretic used to treat fluid retention and swelling in conditions such as congestive heart failure, pulmonary edema, nephrotic syndrome, liver cirrhosis, and arterial hypertension. It is an approved medicine that is widely used in clinical practice, though it carries a boxed warning.
 
-**Indication.** For the treatment of edema associated with congestive heart failure, hepatic and renal disease including the nephrotic syndrome.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q275926](https://www.wikidata.org/wiki/Q275926) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -59,10 +59,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | absorption | blood-brain barrier | `SLCO1A2` substrate | DrugBank actor |
 | absorption | small intestine | `SLCO1A2` substrate | DrugBank actor |
-| metabolism | bile duct | <sub>“…Urinary and biliary metabolites are formed by oxidation of the N-butyl side chain…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
 | metabolism | liver | `SLC10A1` inhibitor/substrate, `SLC22A7` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…Biliary excretion of Bumex amounted to only 2% of the administered dose…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (target), ADD1 (target), ANP (target), CFTR (target), GNB3 (target), PTGS2 (inducer), SLC12A1 (inhibitor), SLC12A2 (inhibitor), SLC12A4 (inhibitor), SLC12A5 (inhibitor), SLC22A11 (inhibitor).</sub>

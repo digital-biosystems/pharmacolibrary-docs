@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** A plasma alpha 2 glycoprotein that accounts for the major antithrombin activity of normal plasma and also inhibits several other enzymes. It is a member of the serpin superfamily.
+Antithrombin III is a blood protein used to treat or prevent excessive clotting, especially in people with antithrombin deficiency, and it works together with heparin. It is an approved medicine, given by infusion, mainly in hospital settings for clotting problems.
 
-**Indication.** Antithrombin III human is a human antithrombin (AT) indicated in patients with hereditary antithrombin deficiency for the treatment and prevention of thromboembolism and prevention of peri-operative and peri-partum thromboembolism
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q24775482](https://www.wikidata.org/wiki/Q24775482) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +34,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…excreted in urine…”</sub> | prose |
-| excretion | liver | <sub>“…cleared principally by liver…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SERPINC1 (other).</sub>
 

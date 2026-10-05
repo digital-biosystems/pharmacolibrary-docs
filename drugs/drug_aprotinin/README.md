@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Aprotinin is a protein-based drug that is also known as bovine pancreatic trypsin inhibitor (BPTI). Since it demonstrates the capacity to slow fibrinolysis, it has been employed to reduce bleeding during complex surgery such as heart and liver surgery. For this use, it is typically administered by injection. The goal of using of aprotinin was subsequently to minimize end-organ damage resulting from hypotension due to blood loss in surgery and to reduce the necessity for blood transfusions during surgery. Nevertheless, the drug was formally withdrawn worldwide in May of 2008 after studies confirmed that its use enhanced the risk of complications or death. The substance is consequently made available only for very restricted research use.
+Aprotinin is an antifibrinolytic drug that was used to reduce bleeding. It has been withdrawn from the market, although it remains approved in some settings and has been studied investigationally.
 
-**Indication.** For prophylactic use to reduce perioperative blood loss and the need for blood transfusion in patients undergoing cardiopulmonary bypass in the course of coronary artery bypass graft surgery who are at an increased risk for blood loss and blood transfusion.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418625](https://www.wikidata.org/wiki/Q418625) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | blood | `BCHE` inhibitor | DrugBank actor |
 | metabolism | liver | `BCHE` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…approximately 25-40% of the radioactivity is excreted in the urine over 48 hours…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CTRB1 (unknown), KLK1 (unknown), PAI-1 (target), PLG (unknown), PRSS1 (unknown).</sub>
 

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The dihydrocodeine record is incomplete: the parameter V/F (203 L) was not captured, leaving only 6 of 7 expected parameters covered, so the model was held back for review.**
+**The dihydrocodeine parent–metabolite model was held back because the hepatic blood flows between the liver compartment and central circulation (90 L/h) were left at library defaults instead of being estimated or justified, alongside assumed F=1, Fm=1 and no molar correction.**
 
-The record, built from the abstract of Webb_2001 alone, covers CL/F 43 L/h, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h and metabolite parameters, but V/F (203 L) was neither emitted nor defaulted, failing the parameter coverage check (6 of 7). Because only the abstract was read, reported summary statistics stand in for a fitted model. The builder also substituted a default intercompartmental hepatic distribution flow of 90 L/h for the missing source values and assumed F=1 and Fm=1 with no molar correction. Extracted — dihydrocodeine: CL/F 43 L/h, V/F 203 l, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h, t1/2z 13 min; dihydromorphine: fm 0.015, kel 0.339 1/h, V 200 L.
+The record, built from the abstract of Webb_2001 alone, reports CL/F 43 L/h, V/F 203 L, ka 11 1/h, tlag 0.3 h and kel 0.216 1/h for dihydrocodeine, with dihydromorphine fm 0.015, kel 0.339 1/h and V 200 L. The hepatic blood flow parameters (90 L/h) were not extracted from the paper but defaulted, so they shape the simulated profile without support from this source. The builder also assumed F=1, Fm=1 and no molar correction, making the parameterization apparent; the deviations check could not accept these defaults or assumptions, so the record needs review. Extracted — dihydrocodeine: CL/F 43 L/h, V/F 203 l, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h, t1/2z 13 min; dihydromorphine: fm 0.015, kel 0.339 1/h, V 200 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -124,10 +124,10 @@ Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of c
 | T3_metabolite_output[dihydromorphine] | not captured | pass | not captured | 1.2353418243819927e-06 | not captured | C_M1 (dihydromorphine) must rise above 0 when the parent is dosed |
 | T3_molar_mass[dihydromorphine] | not captured | pass | not captured | {'MW': 0.30138010000000004, 'MW_m1': 0.287359} | not captured | formation is molecule-for-molecule |
 | T3_output_variable | not captured | pass | C_central (measured=dihydrocodeine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 6 covered | not captured | neither emitted nor in defaulted[]: ['V/F'] |
+| T3_param_coverage | not captured | pass | 7 scholar param(s) emitted or defaulted | 7 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -148,14 +148,15 @@ Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of c
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_modelica.zip" download>Dihydrocodeine_Webb2001_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_fmi.zip" download>Dihydrocodeine_Webb2001_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_matlab.zip" download>Dihydrocodeine_Webb2001_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_sbml.zip" download>Dihydrocodeine_Webb2001_reference_sbml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_cellml.zip" download>Dihydrocodeine_Webb2001_reference_cellml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3M_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference.svg" alt="Dihydrocodeine_Webb2001_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

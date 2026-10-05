@@ -10,7 +10,9 @@
 
 ## About
 
-**Indication.** Aluminum phosphate, in its colloidal form, is an ingredient in some over-the-counter antacids.[L51509] It is also used as an adjuvant to boost immune response in vaccines.[A264449]
+Aluminium phosphate is an antacid used for acid-related disorders of the digestive tract, and also serves as an immunologic adjuvant in vaccines. It is an approved drug, used widely as a non-prescription antacid.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419503](https://www.wikidata.org/wiki/Q419503) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

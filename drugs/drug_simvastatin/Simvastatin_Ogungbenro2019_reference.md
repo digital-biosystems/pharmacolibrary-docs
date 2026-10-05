@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Ogungbenro_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kovalenko2025_reference&quot;,&quot;label&quot;:&quot;Kovalenko_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_wierczek2024_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_wierczek2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friedrich_2014_HDL_C&quot;,&quot;label&quot;:&quot;Friedrich_2014 \u00b7 HDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Friedrich_2014_HDL_C.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friedrich_2014_LDL_C&quot;,&quot;label&quot;:&quot;Friedrich_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Friedrich_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Wright2025_reference&quot;,&quot;label&quot;:&quot;Wright_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Wright2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Ogungbenro2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.435). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,33 +13,35 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
 ### Reviewer guidance
 
-**The simvastatin record was rejected because a structural parameter was reported in a unit that could not be expressed in SI, so a dimension mismatch arose on a structural parameter.**
+**The simvastatin record was not published because the apparent (F=1) parameterization was judged unacceptable and only 1 of 7 extracted parameters was carried into the simulation, leaving tlag, CL/F, V/F and three kel values unused.**
 
-The dimension check failed on a structural parameter: one of the reported units could not be translated into SI units, so that parameter entered the model without a usable SI value. The record also shows labeling inconsistencies, e.g. the parameter labeled 'D2 (h−1)' is actually the zero-order input duration D1 with value 1.75 h−1, and clearance-labeled entries such as CL (0.12) and kel (0.60) carry h−1 units, i.e. rate constants rather than clearances. A second reader further disagreed on the ordering of the metabolism links among simvastatin, simvastatin acid, 6-hydroxymethyl simvastatin and 6-hydroxymethyl simvastatin acid, on the age covariate effects (1 and 0.90), on BA* (0.78), and reported an additional parameter CLeMAX/VHSV of 660 that this record lacks. Extracted — simvastatin: D1 1.75 h−1, kabs 0.03 h−1, tlag 1.4 h, CL/F 0.53 L/h, V/F 1.59 L, V 0.76 BSVb, kel 0.6 h−1, CL 0.12 h−1.
+The model builder assumed F=1, Fm=1 and no molar correction, and this apparent assumption was ruled not acceptable. Of the 7 parameters expected, only 1 was covered; tlag (0.18 h), CL/F (1300 L/h), V/F (110 L) and the kel values for simvastatin acid (0.13 h−1), 6-hydroxymethyl simvastatin acid (4.91 h−1) and 3,5-dihydrodiol simvastatin (12.9 h−1) were neither emitted nor defaulted. In addition, the covariate effects on metabolite clearance (age fractions 1 and 0.90) were defined but only the reference individual was simulated, so those scenarios were not exercised; a second reader also disputed several values, including BA* (0.78) and the age covariate 0.90. Extracted — simvastatin: kabs 0.39 h−1, tlag 0.18 h, CL/F 1.3e+03 L/h, V/F 110 L; simvastatin acid: kel 0.13 h−1; 6-hydroxymethyl simvastatin acid: kel 4.91 h−1, kfm 0.55 h−1; 3,5-dihydrodiol simvastatin: kel 12.9 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:31.025301+00:00) predates the upstream re-run (2026-10-02 19:13:11.495505+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ogungbenro K et al., A population pharmacokinetic model for…, European journal of clinica… (2019)
   ·  DOI: [10.1007/s00228-019-02697-y](https://doi.org/10.1007/s00228-019-02697-y)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Ogungbenro2019_reference" status="extracted" stale="true" population="children and adolescents" measured-compound="simvastatin" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Ogungbenro2019_reference" status="not_simulated" stale="false" population="children and adolescents" measured-compound="simvastatin" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 8 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | D2 (h−1) | `Q49` · kabs | 0.39 | h−1 | 0.00010833333333333334 | [1] / [h] | not captured | exact (1.0) | Tab1:row3:col1, Tab1:row3:col2 | — | not captured |
@@ -60,6 +62,9 @@ Ogungbenro K et al., A population pharmacokinetic model for…, European journal
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table section iiv: 'D2 (h−1)' routed out of structural estimates ('Between subject variability (BSVb)')
@@ -150,29 +155,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.231 (6/26 fields) | 20 |
+| `gpt-oss:120b` | not confirmed | 0.435 (10/23 fields) | 13 |
 
-<details><summary>20 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['simvastatin', 'simvastatin acid', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin', 'metabolism'], ['simvastatin', '3,5-dihydrodiol simvastatin', 'metabolism'], ['simvastatin acid', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['6-hydroxymethyl simvastatin', '6-hydroxymethyl simvastatin acid', 'metabolism']] | [['simvastatin', 'simvastatin acid', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin', 'metabolism'], ['6-hydroxymethyl simvastatin', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['simvastatin', '3,5-dihydrodiol simvastatin', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[age1_age_fra_on_clhsvae]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[alag]` | 0.18 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[alag]` | not captured | 0.18 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[age3_age_fra_on_cldhse]` | 0.90 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ba*]` | 0.78 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clhsvhsva/vhsva].parameter_id` | Q305 | Q370 | mismatch |
-| `gpt-oss:120b` | `parameters[clsle/f]` | 1300 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clsle/f]` | not captured | 1300 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[d2]` | 0.39 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[d2]` | not captured | 0.39 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clsle/f].covariate_forms` | ['linear_fractional', 'linear_fractional'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[dhsv]` | not captured | 4.11 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[hmsv]` | not captured | 16.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[hmsva]` | not captured | 0.48 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[sv]` | not captured | 0.069 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q22_age]` | not captured | 0.90 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q22_age]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vsl/f]` | 110 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vsl/f]` | not captured | 110 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θ562: c.521t&gt;c on clla]` | not captured | 0.93 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | simvastatin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | simvastatin | unknown | mismatch |
@@ -206,6 +204,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.3e+03 L/h | not captured | not captured | ['Tab1:row8:col1', 'Tab1:row8:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 110 L | not captured | not captured | ['Tab1:row9:col1', 'Tab1:row9:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'CL/F', 'V/F', 'kel', 'kel', 'kel'] |
+| T3_shared_parameters | not captured | pass | 6 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -214,6 +224,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_simvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ogungbenro_2019` / `Ogungbenro_2019::reference`)
+- model: `../../../knowledgebase/drugs/drug_simvastatin/models/modelica/Simvastatin_Ogungbenro2019_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_simvastatin/models/modelica/Simvastatin_Ogungbenro2019_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -222,14 +234,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_modelica.zip" download>Simvastatin_Ogungbenro2019_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_matlab.zip" download>Simvastatin_Ogungbenro2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_matlab_simbio.zip" download>Simvastatin_Ogungbenro2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_sbml.zip" download>Simvastatin_Ogungbenro2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_cellml.zip" download>Simvastatin_Ogungbenro2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -239,4 +251,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 19:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 03:27 UTC</sub>

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A narcotic analgesic that can be used for the relief of most types of moderate to severe pain, including postoperative pain and the pain of labor. Prolonged use may lead to dependence of the morphine type; withdrawal symptoms appear more rapidly than with morphine and are of shorter duration.
+Pethidine is an opioid painkiller used to treat moderate to severe pain. It is an approved medicine, though as a narcotic opioid its use is controlled and often limited to hospital settings.
 
-**Indication.** Used to control moderate to severe pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q55434](https://www.wikidata.org/wiki/Q55434) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,14 +58,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` substrate | DrugBank actor |
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | skeletal muscle | <sub>“…80-85% of the drug administered intramuscularly was absorbed within 6 hours of intraglutea…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CES1` unknown, `CYP1A2` inducer, `CYP2B6` substrate, `CYP2C19` metabolism/substrate, `CYP2D6` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` binder | DrugBank actor |
 | — | platelet | `SLC6A4` binder | DrugBank actor |
 

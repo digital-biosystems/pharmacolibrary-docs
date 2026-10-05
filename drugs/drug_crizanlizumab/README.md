@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Crizanlizumab is a humanized IgG2 monoclonal antibody used to reduce the frequency of vaso-occlusive crises in patients with sickle cell disease.[L10097] Sickle cell disease is a genetically inherited condition prevalent in the Middle East, Africa, and certain parts of India. The genetic mutation associated with this disease leads to the formation of abnormal, sickle shaped red blood cells that aggregate and block blood vessels throughout the body, causing vaso-occlusive crises. Sickle cell disease can lead to excruciating pain, stroke, infection, and various other complications arising from the blockage of blood vessels.[T734]
+Crizanlizumab, a monoclonal antibody, was used to reduce vaso-occlusive crises in sickle cell disease.
 
-Currently, patients are prescribed [hydroxyurea] to raise levels of fetal hemoglobin as a method of reducing morbidity and mortality.[A187904] Though hydroxyurea has been shown to reduce the frequency of vaso-occlusive crises, adherence to this therapy is difficult due to adverse effects and the high variability of response to the drug between patients.[A187907] Crizanlizumab, or SEG101, is given once every 4 weeks and may improve patient adherence. It was developed by Novartis and was granted FDA approval on November 15, 2019.[L10097] While crizanlizumab received conditional marketing authorization from the EMA in October 2020, this approval was revoked in August 2023 due to concerns over the efficacy and safety of the drug.[L47750]
-
-**Indication.** Crizanlizumab is indicated to reduce the frequency of vaso-occlusive crisis in patients with sickle cell diseases who are ≥16 years old.[L10097]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q28209568](https://www.wikidata.org/wiki/Q28209568) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,7 +37,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…only a small amount is excreted in bile…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SELP (inhibitor).</sub>
 

@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Rimegepant is an oral antagonist of the CGRP receptor developed by Biohaven Pharmaceuticals.[L11028] It received FDA approval on February 27, 2020 for the acute treatment migraine headache,[L11974] and was subsequently approved by the European Commission in April 2022 for both the treatment and prevention of migraines.[L41640] While several parenteral antagonists of CGRP and its receptor have been approved for migraine therapy (e.g. [erenumab], [fremanezumab], [galcanezumab]), rimegepant and [ubrogepant] were the only CGRP antagonists that possessed oral bioavailability[A189207] until the approval of [atogepant] in 2021.[L38814]
+Rimegepant is a calcitonin gene-related peptide receptor antagonist used to treat acute migraine attacks in adults. It is an approved medicine and is authorised in the European Union for migraine.
 
-The current standard of migraine therapy involves abortive treatment with "triptans", such as [sumatriptan], but these medications are contraindicated in patients with pre-existing cerebrovascular and cardiovascular disease due to their vasoconstrictive properties.[A189207] Antagonism of the CGRP pathway has become an attractive target for migraine therapy as, unlike the triptans, oral CGRP antagonists have no observed vasoconstrictive properties and are therefore safer for use in patients with contraindications to standard therapy.[A189330,A189207]
-
-**Indication.** Rimegepant is indicated for the acute treatment of migraine with or without aura in adults. Rimegepant is also indicated for the prevention of episodic migraine in adults.[L11971]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27272184](https://www.wikidata.org/wiki/Q27272184) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` substrate, `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…78% of the administered radioactivity was recovered in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` inhibitor, `SLC22A8` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
 

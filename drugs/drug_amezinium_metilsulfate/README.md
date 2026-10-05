@@ -8,6 +8,12 @@
 - **molar mass:** 313.33 g/mol (C12H15N3O5S) — DrugBank
 - **groups:** experimental
 
+## About
+
+Amezinium metilsulfate is a cardiac stimulant belonging to the adrenergic and dopaminergic agents, a class of drugs used to support cardiovascular function. It is not authorised in the European Union and is currently regarded as an experimental compound, so its present clinical use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q470449](https://www.wikidata.org/wiki/Q470449) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

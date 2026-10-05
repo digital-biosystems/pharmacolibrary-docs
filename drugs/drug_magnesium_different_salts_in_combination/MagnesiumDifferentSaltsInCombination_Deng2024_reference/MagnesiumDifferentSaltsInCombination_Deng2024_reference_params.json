@@ -1,6 +1,9 @@
 {
  "dose_source": "paper",
  "model_id": "MagnesiumDifferentSaltsInCombination_Deng2024_reference",
+ "molar_masses": {
+  "central.C": 0.024305
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -13,6 +16,7 @@
  "parameters": {
   "Cl": 8.277777777777777e-07,
   "F": 1.0,
+  "MM": 0.024305,
   "VdPerKg": 0.00035814285714285717,
   "adminCount": 1.0,
   "adminDuration": 600.0,

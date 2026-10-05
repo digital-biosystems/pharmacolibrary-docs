@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Sukeishi2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,8 +25,6 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:31.525776+00:00) predates the upstream re-run (2026-10-03 10:48:43.348787+00:00). Current validate status: `rejected`.
-
 > **Dose compound ≠ measured compound:** dosed `remdesivir`, measured `GS-441524`.
 
 ## Citation
@@ -34,7 +32,7 @@ Sukeishi A et al., Population pharmacokinetic modeling of…, CPT: pharmacometri
   ·  DOI: [10.1002/psp4.12736](https://doi.org/10.1002/psp4.12736)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="true" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

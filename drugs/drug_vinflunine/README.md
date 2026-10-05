@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Vinflunine is a third-generation member of the vinca alkaloid family with anti-tumour actions. It was first described in 1998 at the Pierre Fabre research center in France. Like other vinca agents, vinflunine is an anti-mitotic agent that induces a cell cycle arrest at the G2/M phase and promotes cell death via apoptosis [L1396]. Vinflunine is a microtubule inhibitor that binds to tubulin at or near to the vinca binding sites to inhibits its polymerization into microtubules during cell proliferation [L1396]. In murine tumors and human tumor xenografts, vinflunine exhibits an antitumor efficacy than [DB00361], [DB00570], and [DB00541] [A31975]. 
+Vinflunine is a vinca alkaloid anticancer drug used to treat transitional cell carcinoma of the urinary tract. It is authorised in the European Union, but its use is limited to this indication and it is not widely used elsewhere.
 
-Having an incidence of 429,700 new cases per year worldwide, urothelial carcinoma of the bladder is one of the most common malignancies that mostly affects individuals aged 50–79 years [A32626]. Some patients with advanced urothelial carcinoma experience inadequate therapeutic response from a prior platinum-containing regimen. While these patients have a median survival of approximately 4 months and a poor prognosis [L1396], there is currently no standard therapy in patients with advanced urothelial carcinoma [A32626]. In 2009, vinflunine was approved by the European Medicines Agency (EMA) as a second-line therapy of metastatic and advanced urothelial cancer after failure of platinum-based treatment [A32626]. Vinflunine ditartrate is an active ingredient in the EMA-authorised product Javlor for intravenous infusion. Efficacy and safety of vinflunine has not been studied in patients with performance status of 2 or less. The clinical use of vinflunine in other urologic malignancies, such as inoperable cancer of the penis, are currently have been investigated [A32626].
-
-**Indication.** For use as a monotherapy in adults with advanced or transitional cell carcinoma of the urothelial tract after failure of a prior platinum-containing therapy [L2381].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2195393](https://www.wikidata.org/wiki/Q2195393) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,8 +39,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal excretion accounts for 2/3 of the total elimination of vinflunine and its metabolite…”</sub> | prose |
-| excretion | kidney | <sub>“…the remaining 1/3 of their elimination indicates urinary excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCB5 (substrate), TUBB (inhibitor).</sub>
 

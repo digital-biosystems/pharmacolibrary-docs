@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Hwang_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The carvedilol record was rejected because the EC50 parameter, reported as ED50 of 0.685 μg (a dose, not a concentration), failed a dimension check on a structural parameter.**
+**The carvedilol record was rejected because the EC50 of the stimulatory Emax model is reported as 0.685 μg, a dose unit, while EC50 is a concentration, a dimension mismatch; the CL/F entry is only a 32.8% decrease, not a clearance value.**
 
-The paper reports ED50 in μg, a dose unit, while the parameter's meaning defines EC50 as a concentration producing half-maximal effect in a stimulatory Emax model; this unit could not be converted to SI, so the parameter reached the model without an SI value and the dimension check failed. A second reader also disagreed on parameter assignments: it read the 32.8% reduction as CL/F (recorded here as null) and left ED50 empty, whereas this record stores 32.8 under the CL/F-decreased-by entry and 0.685 under ED50. The remaining parameters (E0 60.4 bpm, Emax 30.7 bpm, IC50 16.5 ng/mL) carry no reported findings. Extracted — carvedilol: E0 60.4 bpm, EC50 0.685 μg, Emax 30.7 bpm, IC50 16.5 ng/mL, CL/F 32.8 %.
+For carvedilol in healthy subjects, the parameter labelled 'ED 50 (μg)' with value 0.685 μg is defined as the concentration producing half of the maximum effect in an Emax model, so its unit (mass, not concentration) does not match its meaning; this unit also could not be converted to SI. The CL/F parameter is reported only as a relative change ('Carvedilol CL/F decreased by 32.8%'), which does not give an absolute oral clearance. A second reader disagreed on several parameter fields, reading the CL/F decrease as 32.8 where this record has it null, and leaving E0 (60.4 bpm), Emax (30.7 bpm), ED50 (0.685 μg) and IC50 (16.5 ng/mL) unread. Extracted — carvedilol: E0 60.4 bpm, EC50 0.685 μg, Emax 30.7 bpm, IC50 16.5 ng/mL, CL/F 32.8 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of carvedilol cl/f decrease: this record has none, the second reading 32.8; it also differs on 5 more fields. That field does not shape the model.
 

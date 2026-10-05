@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Bosentan is a dual endothelin receptor antagonist marketed under the trade name Tracleer by Actelion Pharmaceuticals. Bosentan is used to treat pulmonary hypertension by blocking the action of endothelin molecules that would otherwise promote narrowing of the blood vessels and lead to high blood pressure.
+Bosentan is used to treat pulmonary arterial hypertension, including that associated with systemic sclerosis. It is authorised in the European Union and widely used, though it carries a boxed warning.
 
-**Indication.** Used in the treatment of pulmonary arterial hypertension (PAH), to improve exercise ability and to decrease the rate of clinical worsening (in patients with WHO Class III or IV symptoms).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419769](https://www.wikidata.org/wiki/Q419769) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -53,7 +53,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP2C9` inducer/substrate, `CYP3A4` inducer/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…eliminated by biliary excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: EDNRA (target), EDNRB (target).</sub>

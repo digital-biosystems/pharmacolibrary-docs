@@ -10,44 +10,37 @@
 
 ## About
 
-**Description.** Prucalopride is a dihydrobenzofurancarboxamide derivative from the benzofurane family that selectively stimulates 5-HT4 receptors and thus, it presents enterokinetic properties.[A37348] The high selectivity of prucalopride allowed further development as it prevented the cardiac adverse reactions observed due to non-target effects of precedent therapies.[A40254] Prucalopride was developed by Shire Development LLC and approved for use in Europe in 2009,[A40250] in Canada on December 7, 2011 and by the FDA on December 17, 2018.[L4880]
+Prucalopride is a laxative used to treat chronic constipation. It is an authorised medicine in the European Union and is approved for use.
 
-**Indication.** Prucalopride is indicated for the treatment of chronic idiopathic constipation (CIC) in adults.[L4882]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q68484](https://www.wikidata.org/wiki/Q68484) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-CIC is one of the most common chronic functional gastrointestinal disorders worldwide. The diagnosis of this agent is very hard and it can be confirmed if the patient experience at least two of the following:
+## Molecules and molar masses
 
--Straining during more than 25% of the bowel movements.
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
 
--Lumpy or hard stools in 25% of the bowel movements.
-
--Sensation of incomplete evacuation in more than 25% of all bowel movements.
-
--Sensation of anorectal blockage or obstruction in more than 25% of the bowel movements.
-
--Manual maneuvers required in more than 25% of the bowel movements.
-
--Fewer than 3 bowel movements per week.[L4883]
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| prucalopride | parent | 367.87 | C18H26ClN3O3 | DrugBank | [3052762](https://pubchem.ncbi.nlm.nih.gov/compound/3052762) | van_2016 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 22:21 | 2:33 | 0/3/0 | 1/0/0 | 0/0/0 | 53,547/2,944 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-04 16:49 | 5:51 | 0/2/1 | 0/0/1 | 0/0/0 | 107,074/15,136 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [van_2016_estimate](drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | — | 1-compartment (no model) | 7 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_pru_usa_12](drugs/drug_prucalopride/Prucalopride_van2016_pru_usa_12.md) | — | 1-compartment (no model) | 3 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_spd555_303](drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | — | 1-compartment (no model) | 5 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [van_2016_estimate](drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | — | 1-compartment (no model) | 7 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_pru_usa_12](drugs/drug_prucalopride/Prucalopride_van2016_pru_usa_12.md) | — | 1-compartment (no model) | 3 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_spd555_303](drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | — | 1-compartment (no model) | 5 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_AUC](drugs/drug_prucalopride/pd_Broad_2013_AUC.md) | EFS-evoked cholinergic contractions (AUC) ← donepezil · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_cholinergically_mediated_contractions](drugs/drug_prucalopride/pd_Broad_2013_cholinergically_mediated_contractions.md) | name ← prucalopride · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_EFS_evoked_AUC](drugs/drug_prucalopride/pd_Broad_2013_EFS_evoked_AUC.md) | cholinergically mediated contractions ← prucalopride · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
 
 ## ADME sites
 
@@ -64,8 +57,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…only 13% of the dose is recovered in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted by the urine, representing 84% of the administered dose…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR4 (target).</sub>
 
@@ -79,7 +72,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -88,28 +81,28 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhou_2020.pdf` | Zhou Z et al., Pharmacokinetics, Bioequivalence, and S…, Clinical pharmacology in dr… (2020) | popPK | 8 | [10.1002/cpdd.754](https://doi.org/10.1002/cpdd.754) | [31797570](https://pubmed.ncbi.nlm.nih.gov/31797570) | The study is a PK/bioequivalence trial for prucalopride, but the evidence only provides bioequivalence confidence intervals and model description, lacking specific numeric values for CL, V, or t1/2. |
+| `Zhou_2020.pdf` | Zhou Z et al., Pharmacokinetics, Bioequivalence, and S…, Clinical pharmacology in dr… (2020) | popPK | 8 | [10.1002/cpdd.754](https://doi.org/10.1002/cpdd.754) | [31797570](https://pubmed.ncbi.nlm.nih.gov/31797570) | The study reports a 2-compartment model for prucalopride in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only bioequivalence ratios. |
 | `Broad_2014.pdf` | Broad J et al., Drugs acting at 5-HT4 , D2 , motilin, a…, Neurogastroenterology and m… (2014) | pd | 4 | [10.1111/nmo.12338](https://doi.org/10.1111/nmo.12338) | [24750304](https://www.ncbi.nlm.nih.gov/pubmed/24750304) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-21T22:20:10.297349+00:00</sub>
+<sub>queue written 2026-10-04T16:44:36.877796+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Broad_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of prucalopride's effect on human colon contractions, reporting efficacy parameters (EC50, Emax) rather than pharmacokinetic disposition parameters (CL, V, ka). |
+| popPK | Broad_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of prucalopride's effect on human colonic muscle contractions, reporting efficacy (EC50/Emax) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
 | popPK | Broad_2014 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
 | PD | Broad_2014 | not_relevant | 0 | 0 | The paper investigates neuromuscular functions in isolated stomachs using various receptor agonists but does not report pharmacokinetic or pharmacodynamic data for prucalopride. |
-| popPK | De_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonism in tissue strips, not a pharmacokinetic study reporting disposition parameters for prucalopride. |
-| popPK | Kim_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channels where prucalopride is used only as a comparator agent, with no pharmacokinetic parameters reported. |
+| popPK | De_2006 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of receptor agonism in pig tissues, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Kim_2016 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channels in rabbit smooth muscle, not a pharmacokinetic study, and prucalopride is only used as a negative control. |
 | PD | Kim_2016 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50, Hill coefficient) for cisapride, but explicitly states that prucalopride did not affect the basal Kv current, providing no numeric PD relationship for prucalopride. |
-| popPK | LePard_2004 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study investigating receptor mechanisms in guinea pig ileum, not a pharmacokinetic study, and contains no disposition parameters for prucalopride. |
+| popPK | LePard_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of synaptic transmission in guinea pig ileum, not a pharmacokinetic study, and reports no disposition parameters for prucalopride. |
 | PD | LePard_2004 | not_relevant | 3 | 2 | The paper reports a single-point effect (30-33% potentiation) for prucalopride without providing a concentration-response curve, EC50, or other numeric PD parameters. |
-| popPK | Lefebvre_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of prucalopride's effect on acetylcholine release and does not report pharmacokinetic parameters. |
+| popPK | Lefebvre_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of prucalopride's effect on acetylcholine release and contractility, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Lefebvre_2010 | not_relevant | 4 | 2 | The paper reports qualitative maintenance of prucalopride's effect in endometriosis but does not provide numeric PD parameters (EC50/Emax) for prucalopride itself, only for carbachol. |
 | PGx | Manabe_2010 | not_relevant | 0 | 0 | The paper is a review of 5-HT4 receptor agonists and does not report any pharmacogenomic effects on prucalopride PK or PD parameters. |
 | PGx | Mearin_2012 | not_relevant | 0 | 0 | The paper is a general summary of a gastroenterology congress and mentions prucalopride only in the context of safety and efficacy for constipation, without reporting any pharmacogenomic effects on PK or PD parameters. |
-| popPK | Zhou_2020 | relevant | 8 | 2 | The study is a PK/bioequivalence trial for prucalopride, but the evidence only provides bioequivalence confidence intervals and model description, lacking specific numeric values for CL, V, or t1/2. |
+| popPK | Zhou_2020 | relevant | 8 | 2 | The study reports a 2-compartment model for prucalopride in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only bioequivalence ratios. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 22:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 16:44 UTC</sub>

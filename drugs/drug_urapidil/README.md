@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Urapidil has been investigated for the treatment of Hypertension During Pre-Eclampsia.
+Urapidil is a sympatholytic antihypertensive drug that lowers blood pressure by blocking alpha-1 adrenergic receptors and acting as a vasodilator. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418922](https://www.wikidata.org/wiki/Q418922) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

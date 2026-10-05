@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Tirofiban prevents the blood from clotting during episodes of chest pain or a heart attack, or while the patient is undergoing a procedure to treat a blocked coronary artery. It is a non-peptide reversible antagonist of the platelet glycoprotein (GP) IIb/IIIa receptor, and inhibits platelet aggregation.
+Tirofiban is a platelet aggregation inhibitor used to treat heart conditions such as myocardial infarction, unstable angina, and coronary artery disease. It is an approved medicine, given by infusion, and is generally restricted to hospital settings for acute cardiac care.
 
-**Indication.** For treatment, in combination with heparin, of acute coronary syndrome, including patients who are to be managed medically and those undergoing PTCA or atherectomy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415366](https://www.wikidata.org/wiki/Q415366) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,8 +32,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…about 25% in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…largely by renal excretion, with about 65% of an administered dose appearing in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ITGA2B (target), ITGB3 (target).</sub>
 

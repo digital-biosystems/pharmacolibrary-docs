@@ -8,6 +8,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+4-Aminosalicylic acid is an antibiotic used to treat tuberculosis and has also been used for Crohn's colitis. It remains in clinical use and is included on the WHO list of essential medicines.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q229924](https://www.wikidata.org/wiki/Q229924) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

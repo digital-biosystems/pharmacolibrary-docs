@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05B&quot;,&quot;href&quot;:&quot;atc/C05B.md&quot;},{&quot;label&quot;:&quot;phenol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # phenol
 
@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Phenol is an antiseptic and disinfectant. It is active against a wide range of micro-organisms including some fungi and viruses, but is only slowly effective against spores. Phenol has been used to disinfect skin and to relieve itching. Phenol is also used as an oral analgesic or anesthetic in products such as Chloraseptic to treat pharyngitis. Additionally, phenol and its related compounds are used in surgical ingrown toenail treatment, a process termed phenolization. Research indicates that parental exposure to phenol and its related compounds are positively associated with spontaneous abortion. During the second world war, phenol injections were used as a means of execution by the Nazis. Phenol is a toxic compound whose vapours are corrosive to the skin, eyes, and respiratory tract.
+Phenol is used as an antiseptic and disinfectant, as a sclerosing agent, and as a local anesthetic for pain relief. It remains an approved medicine used in topical antiseptic and throat preparations, with some investigational uses.
 
-**Indication.** Phenol is primarily indicated for minor sore throat pain, sore mouth, minor mouth irritation, and pain associated with canker sores. Additionally, phenol is indicated in the treatment of focal spasticity.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q130336](https://www.wikidata.org/wiki/Q130336) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -28,14 +28,14 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 10:11 | 2:30 | 1/0/1 | 1/1/0 | 0/0/4 | 53,643/2,906 | ollama / qwen3.8:27b-mtp-q8_0 | 36 | 18/18 | 34/2 | 0 |
+| 2026-09-30 10:11 | 2:30 | 0/0/2 | 1/1/0 | 0/0/4 | 53,643/2,906 | ollama / qwen3.8:27b-mtp-q8_0 | 36 | 18/18 | 34/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> | [Thoueille_2023_reference](drugs/drug_phenol/Phenol_Thoueille2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nichols_2008_reference](drugs/drug_phenol/Phenol_Nichols2008_reference.md) | held back | 1-compartment, oral | 4 | Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008) | [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Nichols_2008_reference](drugs/drug_phenol/Phenol_Nichols2008_reference.md) | — | parent + metabolite (no model) | 4 | Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008) | [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Thoueille_2023_reference](drugs/drug_phenol/Phenol_Thoueille2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
 
 ## Pharmacodynamics (PD)
 
@@ -69,12 +69,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | lung | <sub>“…and into the lungs…”</sub> | prose |
-| absorption | skin | <sub>“…rapidly absorbed through the skin…”</sub> | prose |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` formation | paper PGx gene |
 | metabolism | liver | `CYP2A6` formation, `CYP2D6` formation | paper PGx gene |
-| excretion | kidney | <sub>“…The kidney is the primary route of elimination of phenol…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CA1 (inhibitor), CA12 (inhibitor), CA14 (inhibitor), CA2 (inhibitor), CA4 (inhibitor), CA9 (inhibitor).</sub>
 
@@ -88,7 +88,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 2134 matched, 251 returned
 - **screened:** 19  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

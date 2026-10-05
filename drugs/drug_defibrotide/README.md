@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Defibrotide is the sodium salt of a mixture of single-stranded oligodeoxyribonucleotides derived from porcine mucosal DNA. It has been shown to have antithrombotic, anti-inflammatory and anti-ischemic properties (but without associated significant systemic anticoagulant effects). It is marketed under the brand names Dasovas (FM), Noravid, and Prociclide in a variety of countries. In the USA it is was approved in March, 2016 as Defitelio.
+Defibrotide, a mixture of single-stranded DNA fragments from pig intestinal mucosa, is an antithrombotic medicine used to treat hepatic veno-occlusive disease. It is authorised in the European Union and is also being studied for other uses.
 
-**Indication.** Indicated for the treatment of severe hepatic veno-occlusive disease (VOD), also known as sinusoidal obstruction syndrome (SOS), with renal or pulmonary dysfunction following hematopoietic stem-cell transplantation (HSCT).[label]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3704725](https://www.wikidata.org/wiki/Q3704725) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,7 +36,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), ADORA2B (target).</sub>
 

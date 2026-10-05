@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Troxerutin has been used in trials studying the treatment of Chronic Venous Insufficiency.
+Troxerutin is a bioflavonoid capillary-stabilizing (vasoprotective) agent that has been used for vein and circulation problems such as chronic venous insufficiency and haemorrhoids. It is not an approved medicine in major Western markets; databases currently list it as investigational, though it remains available in some countries, often without prescription.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72515635](https://www.wikidata.org/wiki/Q72515635) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

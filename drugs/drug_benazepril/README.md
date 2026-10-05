@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Benazepril, brand name Lotensin, is a medication used to treat high blood pressure (hypertension), congestive heart failure, and chronic renal failure[A838,A837]. Upon cleavage of its ester group by the liver, benazepril is converted into its active form benazeprilat, a non-sulfhydryl angiotensin-converting enzyme (ACE) inhibitor[A836].
+Benazepril is an ACE inhibitor used to treat high blood pressure and congestive heart failure. It is an approved medicine, available alone and in combination products with diuretics or calcium channel blockers.
 
-**Indication.** Benazepril is indicated for the treatment of hypertension[A840]. It may be used alone or in combination with thiazide diuretics[FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q592802](https://www.wikidata.org/wiki/Q592802) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -68,9 +68,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…conjugated to glucuronic acid prior to urinary excretion…”</sub> | prose |
-| metabolism | liver | <sub>“…Cleavage of the ester group (primarily in the liver)…”</sub> | prose |
-| excretion | bile duct | <sub>“…Nonrenal (i.e., biliary) excretion accounts for approximately 11%-12% of benazeprilat excr…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC15A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor), ACE (target), ACE2 (target), ADRB2 (target), MTHFR (safety_allele), MTHFR (substrate), MTR (safety_allele).</sub>

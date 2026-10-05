@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Clofarabine is a purine nucleoside antimetabolite that is being studied in the treatment of cancer. It is marketed as Clolar in the U.S. and Canada, or Evoltra in Europe, Australia, and New Zealand. Clofarabine is used in paediatrics to treat a type of leukaemia called relapsed or refractory acute lymphoblastic leukaemia (ALL), only after at least two other types of treatment have failed. It is not known if the drug extends life expectancy. Its potential use in acute myeloid leukaemia (AML) and juvenile myelomonocytic leukaemia (JMML) has been investigated.
+Clofarabine is a purine analogue anticancer drug used to treat acute lymphoblastic leukemia and acute myeloid leukemia. It is approved and used in a limited, specialist setting, mainly for relapsed or refractory childhood leukemia, with one authorised product in the European Union.
 
-**Indication.** For the treatment of pediatric patients 1 to 21 years old with relapsed or refractory acute lymphocytic (lymphoblastic) leukemia after at least two prior regimens. It is designated as an orphan drug by the FDA for this use.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5134875](https://www.wikidata.org/wiki/Q5134875) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…49 - 60% of the dose is excreted in the urine unchanged…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DCK (metabolism), DCK (substrate), DNA (other/unknown), POLA1 (inhibitor), RRM1 (inhibitor), RRM2 (inhibitor), RRM2B (inhibitor).</sub>
 

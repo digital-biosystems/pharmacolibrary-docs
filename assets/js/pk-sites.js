@@ -300,10 +300,11 @@
     var acts = []; var seen = {};
     rs.forEach(function (r) { if (r.actor) { var k = r.actor + ' (' + r.role + ')'; if (!seen[k]) { seen[k] = 1; acts.push(k); } } });
     acts.sort();
-    var quote = rs.filter(function (r) { return !r.actor && r.quote; }).map(function (r) { return r.quote; })[0];
+    // a site DrugBank's ADME text states: named as such — its wording is not republished
+    var quote = rs.some(function (r) { return !r.actor && r.evidence === 'drugbank_text'; });
     var s = '<b>' + esc(name) + ' · ' + esc(proc) + ' · ' + esc(tissue) + '</b>';
     s += acts.length ? acts.map(esc).join('<br>') : '';
-    if (quote) s += (acts.length ? '<br>' : '') + '<small>“…' + esc(quote.slice(0, 100)) + '…”</small>';
+    if (quote) s += (acts.length ? '<br>' : '') + '<small>named in DrugBank\u2019s ADME text</small>';
     if (!acts.length && !quote) s += '<small>no site evidence</small>';
     if (aff.length) s += '<br><small>affected: ' + aff.map(function (a) { return esc(a.perpetrator + ' ' + a.effect + ' ' + a.actor); }).join('; ') + '</small>';
     return s;
@@ -740,10 +741,9 @@
   function renderTable(root, M) {
     root.innerHTML = '<table class="pks-tbl"><tr><th>drug</th><th>process</th><th>tissue</th><th>actor</th><th>role</th><th>evidence</th></tr>' +
       tableRows(M.rows).map(function (r) {
-        // a prose row's actor cell is the quote: clipped to one short line, the whole
-        // sentence on hover — a 200-character quote used to push role and evidence off screen
+        // a prose row names its source, not DrugBank's wording (which is not republished)
         var actor = r.actor ? '<span class="mono">' + esc(r.actor) + '</span>'
-                  : (r.quote ? '<span class="pks-quote" title="' + esc(r.quote) + '">“' + esc(r.quote) + '”</span>' : '');
+                  : (r.evidence === 'drugbank_text' ? '<small>named in DrugBank\u2019s ADME text</small>' : '');
         return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process || '—') + '</td><td>' + esc(r.tissue || '—') + '</td><td>' + actor + '</td><td>' + esc(r.role || '') + '</td><td>' + evidenceCell(r) + '</td></tr>';
       }).join('') + '</table>';
   }

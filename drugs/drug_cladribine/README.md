@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_interindividual_variability&quot;,&quot;label&quot;:&quot;Lindemalm_2005_interindividual_variability&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_population_average&quot;,&quot;label&quot;:&quot;Lindemalm_2005_population_average&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_population_average&quot;,&quot;label&quot;:&quot;Lindemalm_2005_population_average&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cladribine
 
@@ -11,25 +11,23 @@
 
 ## About
 
-**Description.** Cladribine is a purine analogue or a chlorinated derivative of adenine [A263733] that causes apoptosis of B and T lymphocytes.[A350] Cladribine was first approved in the United States in 1993 [A263713] initially as a treatment for a number of hematological malignancies; currently, it is approved for the treatment of hairy cell leukemia.[A263733] In 2017 in Europe and in 2019 in the United States, cladribine was also approved for the treatment multiple sclerosis.[A263718]
+Cladribine is a purine analogue medicine used to treat hairy cell leukemia and multiple sclerosis, and has also been used for other leukemias and lymphomas. It is approved and authorised in the European Union, where it is used for multiple sclerosis and hairy cell leukemia.
 
-**Indication.** Intravenous cladribine is indicated for the treatment of active Hairy Cell Leukemia as defined by clinically significant anemia, neutropenia, thrombocytopenia or disease-related symptoms.[L50693]
-
-Oral cladribine is indicated for the treatment of relapsing forms of multiple sclerosis (MS), including relapsing-remitting disease and active secondary progressive disease, in adults. Because of its safety profile, the use of cladribine is generally recommended for patients who have had an inadequate response to, or are unable to tolerate, an alternate drug indicated for the treatment of MS.[L50688, L50708]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414030](https://www.wikidata.org/wiki/Q414030) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 06:28 | 10:17 | 1/1/2 | 0/0/0 | 0/0/0 | 147,690/7,094 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 3/10 | 13/0 | 0 |
+| 2026-09-15 06:28 | 10:17 | 1/2/1 | 0/0/0 | 0/0/0 | 147,690/7,094 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 3/10 | 13/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Lu_2024_reference](drugs/drug_cladribine/Cladribine_Lu2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lu H et al., Asia-inclusive drug development leverag…, Clinical and translational… (2024) | [10.1111/cts.70050](https://doi.org/10.1111/cts.70050) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_interindividual_variability](drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability.md) | ▶ model + simulator | 2-compartment, oral | 8 | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_population_average](drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average.md) | ▶ model + simulator | 2-compartment, oral | 8 | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'interindividual variability' is a table statistic/structure colum…</sub><br><sub>route_to: `human_review`</sub> | [Lindemalm_2005_interindividual_variability](drugs/drug_cladribine/Cladribine_Lindemalm2005_interindividual_variability.md) | — | 2-compartment (no model) | 8 | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Savic_2017_reference](drugs/drug_cladribine/Cladribine_Savic2017_reference.md) | — | parent + metabolite (no model) | 14 (+1 cov.) | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
 
 ## ADME sites
@@ -47,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `SLC29A1` unknown | DrugBank actor |
 | distribution | liver | `SLC29A1` unknown | DrugBank actor |
-| metabolism | blood | <sub>“…extensive whole blood and negligible hepatic enzyme metabolism was observed, in vitro…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine of patients with solid tumours…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADA (inhibitor), DCK (substrate), DGUOK (substrate), DNA (disruptor), DNA (other/unknown), PARP1 (inducer), PNP (inducer), POLA1 (inhibitor), POLE (inhibitor), POLE2 (inhibitor), POLE3 (inhibitor), POLE4 (inhibitor), RRM1 (inhibitor), RRM2 (inhibitor), RRM2B (inhibitor), SLC28A3 (substrate).</sub>
 
@@ -62,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 38 matched, 38 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

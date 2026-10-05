@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Imipramine, the prototypical tricyclic antidepressant (TCA), is a dibenzazepine-derivative TCA. TCAs are structurally similar to phenothiazines. They contain a tricyclic ring system with an alkyl amine substituent on the central ring. In non-depressed individuals, imipramine does not affect mood or arousal, but may cause sedation. In depressed individuals, imipramine exerts a positive effect on mood. TCAs are potent inhibitors of serotonin and norepinephrine reuptake. Tertiary amine TCAs, such as imipramine and amitriptyline, are more potent inhibitors of serotonin reuptake than secondary amine TCAs, such as nortriptyline and desipramine. TCAs also block histamine H<sub>1</sub> receptors, &alpha;<sub>1</sub>-adrenergic receptors and muscarinic receptors, which accounts for their sedative, hypotensive and anticholinergic effects (e.g. blurred vision, dry mouth, constipation, urinary retention), respectively [A6584]. Imipramine has less sedative and anticholinergic effects than the tertiary amine TCAs, amitriptyline and clomipramine. Imipramine may be used to treat depression and nocturnal enuresis in children [FDA Label]. Unlabeled indications include chronic and neuropathic pain (including diabetic neuropathy), panic disorder, attention-deficit/hyperactivity disorder (ADHD), and post-traumatic stress disorder (PTSD) [L1349,L1348,A31900,L1351,L1352,L1353,A31904].
+Imipramine is a tricyclic antidepressant used for depression, panic disorder, attention deficit hyperactivity disorder, neurotic disorders, and pain. It is an approved medicine and remains in use, though it is not authorised centrally in the European Union.
 
-**Indication.** For the relief of symptoms of depression and as temporary adjunctive therapy in reducing enuresis in children aged 6 years and older [FDA Label]. 
-
-May also be used off-label to manage panic disorders with or without agoraphobia, as a second line agent for ADHD in children and adolescents, to manage bulimia nervosa, for short-term management of acute depressive episodes in bipolar disorder and schizophrenia, for the treatment of acute stress disorder and posttraumatic stress disorder, and for symptomatic treatment of postherpetic neuralgia and painful diabetic neuropathy [L1349,L1348,A31900,L1351,L1352,L1353,A31904].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q58396](https://www.wikidata.org/wiki/Q58396) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -26,7 +24,7 @@ May also be used off-label to manage panic disorders with or without agoraphobia
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 1 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper (the values present come f…</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 1 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
 
 ## Pharmacodynamics (PD)
 

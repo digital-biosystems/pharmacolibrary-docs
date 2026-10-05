@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Protein C is an endogenously occurring plasma protein that plays a key role within the coagulation cascade. Protein C is a zymogen, or enzyme precursor, of a vitamin K-dependent anticoagulant glycoprotein (serine protease) that is synthesized in the liver. It is converted by the thrombin/thrombomodulin-complex on the endothelial cell surface to Activated Protein C (APC). Once in its activated form, APC functions as a serine protease with potent anticoagulant effects, especially in the presence of its cofactor protein S. APC exerts its effect by inactivating essential components of the coagulation cascade (specifically factors V and VIII), which leads to a decrease in thrombin formation, and therefore a reduction in clot formation. 
+Protein C concentrate is used to treat purpura fulminans and protein C deficiency, acting as an antithrombotic agent. It is authorised in the European Union but appears to be a niche product, used only in these rare conditions.
 
-The Protein C pathway provides a natural mechanism for control of the coagulation system and prevention of excessive procoagulant responses to activating stimuli. A lack of protein C in the body would lead to unchecked coagulation activation, resulting in thrombin generation and intravascular clot formation.
-
-Protein C is available in concentrated form as the product Ceprotin, which is indicated for use in pediatric and adult patients with severe congenital protein C deficiency for the prevention and treatment of venous thrombosis and purpura fulminans.
-
-**Indication.** Protein C concentrate is indicated for pediatric and adult patients with severe congenital protein C deficiency for the prevention and treatment of venous thrombosis and purpura fulminans.[L12831] It is also found as a component of some prothrombin complex concentrate (i.e. [Factor IX Complex (Human)]) formulations, such as Kcentra.[L12834]
-
-Along with other blood coagulation factors, it is used to reverse acquired coagulation factor deficiency induced by Vitamin K antagonist (VKA, e.g., warfarin) therapy in adult patients with a need for an urgent surgery/invasive procedure.[L50517]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q28852357](https://www.wikidata.org/wiki/Q28852357) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

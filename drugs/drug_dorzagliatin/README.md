@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dorzagliatin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dorzagliatin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dorzagliatin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # dorzagliatin
 
@@ -11,25 +11,35 @@
 
 ## About
 
-**Description.** Dorzagliatin is under investigation in clinical trial NCT03173391 (Long-term Efficacy and Safety of HMS5552 in T2DM).
+Dorzagliatin is an investigational blood glucose-lowering drug studied for diabetes. It is not yet an approved medicine and has no marketing authorisation in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q76754209](https://www.wikidata.org/wiki/Q76754209) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dorzagliatin | parent | 462.93 | C22H27ClN4O5 | DrugBank | — | Wang_2023 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 17:25 | 5:25 | 1/0/0 | 0/0/0 | 0/0/1 | 60,056/7,940 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-04 23:03 | 12:54 | 1/0/0 | 0/0/0 | 0/0/1 | 159,565/49,130 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> | [Wang_2023_reference](drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md) | ▶ model + simulator | 3-compartment, oral | 8 | Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Wang_2023_reference](drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md) | ▶ model + simulator | 3-compartment, oral | 8 | Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | **ABCC8** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Nair_2026](drugs/drug_dorzagliatin/pgx_Nair_2026_ABCC8_Q100.md) | Nair AK et al., Modelling the effects of human SUR1 R14…, Diabetologia (2026) | [10.1007/s00125-025-06605-1](https://doi.org/10.1007/s00125-025-06605-1) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | **ABCC8** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Nair_2026](drugs/drug_dorzagliatin/pgx_Nair_2026_ABCC8_Q100.md) | Nair AK et al., Modelling the effects of human SUR1 R14…, Diabetologia (2026) | [10.1007/s00125-025-06605-1](https://doi.org/10.1007/s00125-025-06605-1) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -57,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -66,16 +76,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jin_2025.pdf` | Jin G et al., In Vivo PK-PD and Drug-Drug Interaction…, Pharmaceuticals (Basel, Swi… (2025) | popPK | 8 | [10.3390/ph18060927](https://doi.org/10.3390/ph18060927) | [40573322](https://pubmed.ncbi.nlm.nih.gov/40573322) | The study reports in vivo PK parameters for dorzagliatin in mice, but the evidence only provides relative percentage changes in AUC and Cmax rather than absolute quantitative values for clearance, volume, or half-life. |
+| `Jin_2025.pdf` | Jin G et al., In Vivo PK-PD and Drug-Drug Interaction…, Pharmaceuticals (Basel, Swi… (2025) | popPK | 8 | [10.3390/ph18060927](https://doi.org/10.3390/ph18060927) | [40573322](https://pubmed.ncbi.nlm.nih.gov/40573322) | The study reports PK parameters for dorzagliatin in mice, but the evidence only provides relative percentage changes in AUC and Cmax, lacking absolute numeric values for clearance, volume, or half-life. |
 
-<sub>queue written 2026-09-15T17:21:28.369842+00:00</sub>
+<sub>queue written 2026-10-04T22:51:34.608731+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Ji_2025 | not_relevant | 0 | 0 | The paper reports that dorzagliatin improved glucose tolerance in a mouse model, but it does not report a pharmacogenomic effect (i.e., how a specific gene variant changes the drug's PK or PD parameters). |
-| popPK | Jin_2025 | relevant | 8 | 2 | The study reports in vivo PK parameters for dorzagliatin in mice, but the evidence only provides relative percentage changes in AUC and Cmax rather than absolute quantitative values for clearance, volume, or half-life. |
+| popPK | Jin_2025 | relevant | 8 | 2 | The study reports PK parameters for dorzagliatin in mice, but the evidence only provides relative percentage changes in AUC and Cmax, lacking absolute numeric values for clearance, volume, or half-life. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-15 17:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 22:51 UTC</sub>

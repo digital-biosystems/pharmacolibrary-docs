@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Efavirenz (brand names Sustiva® and Stocrin®) is a non-nucleoside reverse transcriptase inhibitor (NNRTI) and is used as part of highly active antiretroviral therapy (HAART) for the treatment of a human immunodeficiency virus (HIV) type 1.
+Efavirenz is a non-nucleoside reverse transcriptase inhibitor used to treat HIV infection and HIV/AIDS. It is widely used, appears on the WHO essential medicines list, and is authorised in the European Union, both alone and in combination antiviral products.
 
-For HIV infection that has not previously been treated, efavirenz and lamivudine in combination with zidovudine or tenofovir is the preferred NNRTI-based regimen.
-
-Efavirenz is also used in combination with other antiretroviral agents as part of an expanded postexposure prophylaxis regimen to prevent HIV transmission for those exposed to materials associated with a high risk for HIV transmission.
-
-**Indication.** For use in combination treatment of HIV infection (AIDS)
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422645](https://www.wikidata.org/wiki/Q422645) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,7 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inducer/substrate, `CYP2C19` inducer, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer, `CYP3A7` inducer, `SLC22A1` inhibitor, `UGT1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer, `UGT1A1` inducer | DrugBank actor |
-| excretion | kidney | <sub>“…urinary excretion of the radiolabeled drug…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <details class="legend">

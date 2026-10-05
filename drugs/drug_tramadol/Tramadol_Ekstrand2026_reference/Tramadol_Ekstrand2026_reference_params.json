@@ -1,44 +1,32 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 300 mg oral (N02AX02)",
  "model_id": "Tramadol_Ekstrand2026_reference",
  "molar_masses": {
-  "central.C": 0.263381
+  "C_central": 0.263381
  },
- "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  140.0,
-  210.0,
-  280.0,
-  700.0,
-  1050.0,
-  1400.0,
-  3500.0
+  "C_central"
  ],
  "parameters": {
   "Cl": 9.722222222222224e-07,
   "F": 0.9,
   "MM": 0.263381,
   "Tlag": 0.0,
-  "VdPerKg": 0.00027,
+  "VdPerKg": 0.0026200000000000004,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.00014,
-  "k12": 0.0009362139917695473,
-  "k21": 0.0009362139917695473,
+  "adminMass": 0.0003,
   "ka": 0.00018055555555555557,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 16448.897795591183
+  "C_central": 20574.198363680523
  },
  "reference_peaks": {
-  "central.C": 0.0012695610575834064
+  "C_central": 0.0013231482352234073
  },
- "stop_time": 86400.0,
- "template": "PK_2C_enteral",
- "template_fmu": "PK_2C_enteral.fmu"
+ "stop_time": 691200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

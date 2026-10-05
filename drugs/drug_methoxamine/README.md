@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An alpha-adrenergic agonist that causes prolonged peripheral vasoconstriction. It has little if any direct effect on the central nervous system.
+Methoxamine is a sympathomimetic alpha-1 agonist that acts as a vasoconstrictor and was used in cardiac therapy to raise blood pressure. It has been withdrawn from use and is no longer widely available.
 
-**Indication.** Indicated for the treatment and management of hypotension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q685119](https://www.wikidata.org/wiki/Q685119) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

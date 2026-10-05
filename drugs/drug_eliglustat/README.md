@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Eliglustat is a glucosylceramide synthase inhibitor used for the long-term treatment of type 1 Gaucher disease.[A3752,L41404] Gaucher disease is a rare genetic disorder characterized by the deficiency of acid β-glucosidase, an enzyme that converts glucosylceramide into glucose and ceramide. In patients with Gaucher disease, the accumulation of glucosylceramide leads to the formation of Gaucher cells that infiltrate the liver, spleen, bone marrow and other organs. This leads to complications such as anemia and thrombocytopenia.[L41404,A246384] By inhibiting glucosylceramide synthase, eliglustat reduces the accumulation of glucosylceramide.[L41404]
+Eliglustat is a medicine used to treat Gaucher's disease. It is authorised in the European Union and is an approved drug.
 
-Eliglustat is mainly metabolized by CYP2D6.[L41404] Patients selected for eliglustat treatment undergo an FDA-cleared genotyping test to establish if they are CYP2D6 extensive metabolizers (EMs), intermediate metabolizers (IMs), or poor metabolizers (PMs). The results of this test dictate eliglustat dosing recommendations for each type of patient. There are no dosing recommendations for CYP2D6 ultra-rapid or indeterminate metabolizers.[L41404,A7634] Eliglustat was approved by the FDA in August 2014 as an oral substrate reduction therapy for the first-line treatment of type 1 Gaucher disease.[L41404,A7634] Enzyme replacement continues to be the standard of care for the treatment of type 1 Gaucher disease ([imiglucerase], [velaglucerase alfa], [taliglucerase alfa]); however, oral substrate reduction therapies with favourable safety profiles, such as eliglustat, represent a treatment alternative.[A246389,A7634]
-
-**Indication.** Eliglustat is a glucosylceramide synthase inhibitor indicated for the long-term treatment of type 1 Gaucher disease in adult patients who are CYP2D6 extensive metabolizers (EMs), intermediate metabolizers (IMs), or poor metabolizers (PMs) as detected by an FDA-cleared test.[L41404] CYP2D6 ultra-rapid metabolizers may not achieve adequate eliglustat concentrations to achieve a therapeutic effect. A specific dosage cannot be recommended for CYP2D6 indeterminate metabolizers.[L41404]
-
-In the EU, Eliglustat is approved for the same indication in the pediatric population with body weight greater than 15 kg, and the patient needing to be stable on enzyme replacement therapy (ERT). [L41414]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q21011224](https://www.wikidata.org/wiki/Q21011224) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -55,8 +51,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces (51%) as metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted in urine (42%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: UGCG (inhibitor).</sub>
 

@@ -5,7 +5,7 @@
 
 # tolbutamide — `Tolbutamide_Kirchheiner2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+**This paper's disposition core is incomplete.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Shi_2021) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tolbutamide: CL/F 0.97 l/h, V/F 1.48 L/kg.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tolbutamide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogenetics (2002)
@@ -29,9 +33,9 @@ Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogeneti
 <dbs-pgx drug="tolbutamide" model-id="Tolbutamide_Kirchheiner2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="tolbutamide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -40,6 +44,7 @@ Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogeneti
 |---|---|---|---|---|---|---|---|---|---|---|
 | mean oral clearances of tolbutamide | `Q27` · CL/F | 0.97 | l/h | 2.694444444444444e-07 | [l] / [h] | not captured | llm (0.6) | Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract | — | not captured |
 | linear combination of three constants | `Q900` · equation variable | 0.05 | h(-1) | not captured | [1] / [h] | not captured | llm (0.6) | Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract | — | not captured |
+| Vz/F (L/kg) | `Q76` · V/F | 1.48 | L/kg | 0.1036 | L | not captured | review_gapfill (0.7) | Shi_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,6 +56,9 @@ Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogeneti
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolbutamide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q76 (V/F) from Shi_2021's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kirchheiner_2002_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -62,15 +70,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[linear combination of three constants]` | 0.05 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean oral clearances of tolbutamide]` | 0.97 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | tolbutamide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | tolbutamide | unknown | mismatch |
 
 </details>
 
@@ -88,9 +98,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shi_2021:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.97 L/h | not captured | not captured | ['Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 104 L | not captured | not captured | ['Shi_2021:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -125,4 +137,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 18:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 05:02 UTC</sub>

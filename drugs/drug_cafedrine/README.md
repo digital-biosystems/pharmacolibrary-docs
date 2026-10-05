@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Cafedrine is under investigation in clinical trial NCT01311414 (Effect of Cafedrine/Theodrenaline and Urapidil on Cerebral Oxygenation).
+Cafedrine is a chemical compound described as an antihypertensive drug and vasodilator, classified as a cardiac stimulant acting on the cardiovascular system. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5017121](https://www.wikidata.org/wiki/Q5017121) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

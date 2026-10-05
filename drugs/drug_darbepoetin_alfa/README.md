@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Human erythropoietin with 2 aa substitutions to enhance glycosylation (5 N-linked chains), 165 residues (MW=37 kD). Produced in Chinese hamster ovary (CHO) cells by recombinant DNA technology.
+Darbepoetin alfa is an antianemic medicine used to treat anemia, including anemia linked to chronic kidney failure and cancer treatment. It is an approved medicine authorised in the European Union, though it carries a boxed warning.
 
-**Indication.** For the treatment of anemia (from renal transplants or certain HIV treatment)
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2178381](https://www.wikidata.org/wiki/Q2178381) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

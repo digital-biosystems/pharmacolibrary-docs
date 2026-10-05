@@ -1,19 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 1000 mg oral (N03AF01)",
  "model_id": "Carbamazepine_Naik2021_reference",
  "molar_masses": {
-  "central.C": 0.2362686
+  "C_central": 0.2362686
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  10.0,
-  150.0,
-  450.0,
-  825.0
+  "C_central"
  ],
  "parameters": {
   "Cl": 3e-06,
@@ -23,15 +16,15 @@
   "VdPerKg": 0.002492857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1e-05,
+  "adminMass": 0.001,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 17660.921843687374
+  "C_central": 17539.83326185059
  },
  "reference_peaks": {
-  "central.C": 4.265785949291903e-05
+  "C_central": 0.004265879833748186
  },
  "stop_time": 259200.0,
  "template": "PK_1C_enteral",

@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Zavegepant (BHV-3500) is a calcitonin gene-related peptide (CGRP) receptor antagonist.[L45505] CGRP is released from sensory nerves and acts as a strong vasodilator, and thanks to these properties, it is involved in pain pathways. CGRP receptors are expressed in the central and peripheral nervous system; however, CGRP does not cross the blood-brain barrier, suggesting that it acts on peripheral nerves. In migraine, CGRP innervates pain-producing meningeal blood vessels and is released by trigeminal nerve stimulation. Since they inhibit these mechanisms and desensitize neuronal circuits, the use of CGRP receptor antagonists is beneficial in the treatment of migraine.[A258195] 
+Zavegepant is a CGRP antagonist used as an antimigraine medicine for the acute treatment of migraine attacks. It is an approved active ingredient, though it is not authorised in the European Union and appears to be used mainly in the United States.
 
-Small molecule CGRP antagonists are also known as "gepants", and this category includes other drugs such as [rimegepant] and [ubrogepant]. Zavegepant is a third-generation CGRP receptor antagonist that is small in size and highly soluble. Due to its pharmacological properties, it can be administered intranasally.[A258190,A258195] In March 2023, the FDA approved the use of zavegepant nasal spray for the acute treatment of migraine with or without aura in adults.[L45505,L45510] A clinical trial (NCT04804033) is currently investigating the efficacy and safety of oral zavegepant in migraine prevention, and another one (NCT04987944) is evaluating the safety and efficacy of oral zavegepant (150 mg bid) in subjects with mild allergic asthma.[A258200]
-
-**Indication.** Zavegepant in a nasal spray form is indicated for the acute treatment of migraine with or without aura in adults. It is not indicated for the preventive treatment of migraine.[L45505]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q99388898](https://www.wikidata.org/wiki/Q99388898) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `SLC10A1` substrate, `SLCO1B3` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly excreted via the biliary/fecal route…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` substrate, `SLC47A2` unknown | DrugBank actor |
 | excretion | liver | `SLC47A1` substrate | DrugBank actor |
 

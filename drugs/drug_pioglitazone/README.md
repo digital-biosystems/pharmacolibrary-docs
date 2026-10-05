@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Pioglitazone is an antihyperglycemic used as an adjunct to diet, exercise, and other antidiabetic medications to manage type 2 diabetes mellitus.[L11416,L11419,L11422,L11425] It is administered as a racemic mixture, though there is no pharmacologic difference between the enantiomers and they appear to interconvert _in vivo_ with little consequence.[L11416] The thiazolidinedione class of medications, which also includes [rosiglitazone] and [troglitazone], exerts its pharmacological effect primarily by promoting insulin sensitivity and the improved uptake of blood glucose[L11416] via agonism at the peroxisome proliferator-activated receptor-gamma (PPARγ).[A19757] PPARs are ligand-activated transcription factors that are involved in the expression of more than 100 genes and affect numerous metabolic processes, most notably lipid and glucose homeostasis.[A19759]
+Pioglitazone is an anti-diabetic medicine used to lower blood sugar in type 2 diabetes. It remains authorised in the European Union, though several products there have been withdrawn, and it is also available in fixed-dose combinations with other oral diabetes drugs.
 
-Thiazolidinediones, including pioglitazone, have fallen out of favor in recent years due to the presence of multiple adverse effects and warnings regarding their use (e.g. congestive heart failure, bladder cancer) and the availability of safer and more effective alternatives for patients with type 2 diabetes mellitus.[L11461]
-
-**Indication.** Pioglitazone is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.[L11416] It is also available in combination with [metformin],[L11419] [glimepiride],[L11422] or [alogliptin][L11425] for the same indication.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417765](https://www.wikidata.org/wiki/Q417765) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -31,25 +29,14 @@ Thiazolidinediones, including pioglitazone, have fallen out of favor in recent y
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:59 | 7:36 | 0/2/0 | 0/0/1 | 0/0/5 | 128,733/19,275 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
+| 2026-10-05 02:52 | 7:27 | 0/1/1 | 0/0/0 | 0/0/5 | 130,458/18,170 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Kadam_2013_reference](drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md) | — | 2-compartment (no model) | 3 | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Gibbons_2015_reference](drugs/drug_pioglitazone/Pioglitazone_Gibbons2015_reference.md) | — | general linear (no model) | 5 | Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0283-1](https://doi.org/10.1007/s40262-015-0283-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kadam_2013_reference](drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md) | held back | 2-compartment, oral | 3 | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_ALT](drugs/drug_pioglitazone/pd_Tran_2026_ALT.md) | ALT ← pioglitazone · time-to-event model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_AST](drugs/drug_pioglitazone/pd_Tran_2026_AST.md) | AST ← pioglitazone · time-to-event model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_ballooning](drugs/drug_pioglitazone/pd_Tran_2026_ballooning.md) | ballooning ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_fibrosis](drugs/drug_pioglitazone/pd_Tran_2026_fibrosis.md) | fibrosis ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_inflammation](drugs/drug_pioglitazone/pd_Tran_2026_inflammation.md) | inflammation ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_steatosis](drugs/drug_pioglitazone/pd_Tran_2026_steatosis.md) | steatosis ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
 
 ## Pharmacogenomics (PGx)
 
@@ -74,16 +61,16 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Following oral administration of pioglitazone…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | brain | `MAOB` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor/metabolism/substrate, `CYP3A4` inducer/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excretion of unchanged drug in the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…Approximately 15-30% of orally administered pioglitazone is recovered in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…as metabolites in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADORA1 (target), LPL (unknown), PPARG (target).</sub>
 
@@ -97,16 +84,17 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 231 matched, 62 returned
 - **screened:** 6  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_19 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_20 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Clark_2012.pdf` | Clark MH et al., Pharmacokinetics of pioglitazone in lea…, Journal of veterinary pharm… (2012) | popPK | 10 | [10.1111/j.1365-2885.2011.01341.x](https://doi.org/10.1111/j.1365-2885.2011.01341.x) | [22612529](https://pubmed.ncbi.nlm.nih.gov/22612529) | The study reports quantitative pharmacokinetic parameters (bioavailability, half-life, Tmax, Cmax, AUC) for pioglitazone in cats, though specific clearance and volume values are not explicitly listed in the provided text. |
+| `Clark_2012.pdf` | Clark MH et al., Pharmacokinetics of pioglitazone in lea…, Journal of veterinary pharm… (2012) | popPK | 10 | [10.1111/j.1365-2885.2011.01341.x](https://doi.org/10.1111/j.1365-2885.2011.01341.x) | [22612529](https://pubmed.ncbi.nlm.nih.gov/22612529) | The study reports quantitative pharmacokinetic parameters (bioavailability, half-life, Tmax, Cmax, AUC) for pioglitazone in cats, with specific values provided in the abstract. |
+| `Sherwin_2011.pdf` | Sherwin CM et al., Optimal study design for pioglitazone i…, Journal of pharmacokinetics… (2011) | popPK | 8 | [10.1007/s10928-011-9202-8](https://doi.org/10.1007/s10928-011-9202-8) | [21667139](https://pubmed.ncbi.nlm.nih.gov/21667139) | The paper describes a population PK model for pioglitazone in pediatric patients, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text, only referenced as being comparable to literature or derived from simulations. |
 | `El-Shoukrofy_2025.pdf` | El-Shoukrofy MS et al., Novel thiazolones for the simultaneous…, European journal of medicin… (2025) | pd | 5 | [10.1016/j.ejmech.2025.117415](https://doi.org/10.1016/j.ejmech.2025.117415) | [40022874](https://www.ncbi.nlm.nih.gov/pubmed/40022874) | metadata signals extractable PD data (IC50) |
 | `Goto_2017.pdf` | Goto A et al., Influence of the pharmacokinetic profil…, Biopharmaceutics & drug dis… (2017) | pd | 5 | [10.1002/bdd.2076](https://doi.org/10.1002/bdd.2076) | [28294376](https://www.ncbi.nlm.nih.gov/pubmed/28294376) | metadata signals extractable PD data (PK/PD) |
 | `Matthews_2009.pdf` | Matthews L et al., Thiazolidinediones are partial agonists…, Endocrinology (2009) | pd | 4 | [10.1210/en.2008-0196](https://doi.org/10.1210/en.2008-0196) | [18801908](https://www.ncbi.nlm.nih.gov/pubmed/18801908) | metadata signals extractable PD data (EC50) |
@@ -126,17 +114,17 @@ _19 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Takanohashi_2007.pdf` | Takanohashi T et al., Prediction of the metabolic interaction…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.409](https://doi.org/10.2133/dmpk.22.409) | [18159128](https://www.ncbi.nlm.nih.gov/pubmed/18159128) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Yates_2012.pdf` | Yates P et al., Statistical methods for analysis of tim…, Drug metabolism and disposi… (2012) | pgx | 7 | [10.1124/dmd.112.047233](https://doi.org/10.1124/dmd.112.047233) | [22942318](https://www.ncbi.nlm.nih.gov/pubmed/22942318) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-01T17:52:41.891635+00:00</sub>
+<sub>queue written 2026-10-05T02:46:10.826656+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abushammala_2015 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for carbamazepine (the subject drug), while pioglitazone is only a co-administered agent used to test for drug-drug interactions, and no PK parameters for pioglitazone itself are provided. |
+| popPK | Abushammala_2015 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for carbamazepine (the subject drug), while pioglitazone is only a co-administered agent to test for drug-drug interactions, and no PK parameters for pioglitazone itself are provided. |
 | PGx | Abushammala_2015 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction in rabbits and does not report any pharmacogenomic effects or genetic variants. |
 | popPK | Aftab_2019 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for bipolar depression and does not report any pharmacokinetic parameters for pioglitazone. |
 | PGx | Albassam_2019 | not_relevant | 0 | 0 | The paper studies the effect of pterostilbene on enzyme activity and does not involve pioglitazone or any genetic variants. |
-| popPK | Almeida_2011 | irrelevant | 2 | 0 | The study is a bioequivalence assessment using non-compartmental analysis (AUC, Cmax) and does not report compartmental PK parameters (CL, V, ka) or population PK model values. |
+| popPK | Almeida_2011 | irrelevant | 2 | 0 | The study is a bioequivalence assessment using non-compartmental analysis (AUC, Cmax) and does not report compartmental PK parameters (CL, V, ka) or population PK model values in the provided text. |
 | PGx | Choi_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (pioglitazone affecting nifedipine PK) in rats, not the effect of a gene variant on pioglitazone's PK/PD. |
 | PGx | Cui_2008 | not_relevant | 0 | 0 | The paper validates a PXR assay for CYP3A4 induction and mentions pioglitazone as a false positive in the assay, but it does not report any pharmacogenomic effect (gene variant/genotype) on pioglitazone's PK or PD parameters. |
 | PGx | Dawed_2016 | not_relevant | 0 | 0 | The study explicitly states that neither CYP2C8 nor SLCO1B1 variants had a significant impact on pioglitazone response. |
@@ -146,19 +134,19 @@ _19 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Gibbons_2015 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (enzalutamide with CYP substrates) but does not investigate the effect of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Goto_2017 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | Goto_2017 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
-| popPK | Gupta_2023 | irrelevant | 0 | 0 | The study focuses on the design and antidiabetic efficacy of novel thiazolidine derivatives, using pioglitazone only as a reference drug for docking scores and biological activity, with no pharmacokinetic parameters reported. |
+| popPK | Gupta_2023 | irrelevant | 0 | 0 | The study focuses on the design and antidiabetic efficacy of novel thiazolidine derivatives, using pioglitazone only as a reference drug for comparison in in vivo and in vitro assays, with no pharmacokinetic parameters reported. |
 | popPK | Hamrén_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tesaglitazar, with pioglitazone serving only as a comparator arm without reported PK parameters. |
 | PD | Hamrén_2012 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic-pharmacodynamic modeling of tesaglitazar, not pioglitazone; pioglitazone is only mentioned as a comparator arm without specific PD parameter analysis. |
 | PGx | He_2012 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of vildagliptin, not pioglitazone, and does not report any pharmacogenomic effects on pioglitazone. |
-| popPK | Hwang_2020 | irrelevant | 2 | 0 | The study reports only geometric mean ratios (GMRs) for interaction assessment and does not provide absolute quantitative disposition parameters (CL, V, t1/2) for pioglitazone. |
+| popPK | Hwang_2020 | irrelevant | 2 | 0 | The study reports only relative geometric mean ratios (GMRs) for interaction assessment, not absolute quantitative disposition parameters (CL, V, t1/2) for pioglitazone. |
 | PD | Hwang_2020 | not_relevant | 2 | 1 | The study reports qualitative changes in glucose levels and PK parameters (Cmax, AUC) but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect model for pioglitazone. |
 | PGx | Jaakkola_2005 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (gemfibrozil/itraconazole) rather than the effect of a specific gene variant or genotype on pioglitazone pharmacokinetics. |
 | PGx | Jaakkola_2006 | not_relevant | 0 | 0 | The study investigates in vitro metabolism and drug-drug interactions with CYP inhibitors, not the effect of genetic variants (pharmacogenomics) on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that SLCO1B1 genotype has no effect on the pharmacokinetics of pioglitazone. |
-| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Pioglitazone is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters (CL, V, etc.) for pioglitazone are reported in the evidence. |
+| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Pioglitazone is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters for pioglitazone are reported in the evidence. |
 | PD | Kasahara_2016 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions on tofogliflozin's PK/PD and co-administered drugs' PK, but does not report a concentration- or dose-response relationship for pioglitazone itself. |
 | PGx | Kawaguchi-Suzuki_2018 | not_relevant | 5 | 5 | The paper reports pharmacodynamic associations (clinical response/histology) but does not report changes in pharmacokinetic parameters (e.g., AUC, Cmax) or fitted effect sizes for PK. |
-| popPK | Kumar_2006 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of centchroman in rats, with pioglitazone serving only as a co-administered drug for interaction testing, not as the subject drug. |
+| popPK | Kumar_2006 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of centchroman in rats, with pioglitazone serving only as a co-administered drug for interaction testing. |
 | PD | Kumar_2006 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions on the pharmacokinetics of centchroman, not the pharmacodynamics of pioglitazone; pioglitazone is only a co-administered agent in a PK interaction study. |
 | PGx | Loer_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of clopidogrel; pioglitazone is only mentioned as a co-administered drug in a drug-drug interaction (DDI) simulation, not as the subject of a pharmacogenomic study. |
 | PGx | Ly_2021 | not_relevant | 0 | 0 | The paper investigates CYP3A induction by pioglitazone in a transgenic mouse model, not the effect of a human gene variant on pioglitazone's PK/PD. |
@@ -167,17 +155,17 @@ _19 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Matthews_2009 | not_relevant | 0 | 0 | The provided text is a title/abstract snippet regarding the mechanism of action (glucocorticoid receptor partial agonism) and does not contain any PK/PD data, exposure-response analysis, or numeric PD parameters for pioglitazone. |
 | PGx | Nowak_2002 | not_relevant | 0 | 0 | The study evaluates the effect of pioglitazone on CYP3A4 activity in a general population without stratifying by genotype or reporting pharmacogenomic effects. |
 | PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper investigates the mechanism of gemfibrozil's inhibition of CYP2C8 and its implications for drug-drug interactions, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of pioglitazone. |
-| popPK | Ormseth_2013 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of pioglitazone on rheumatoid arthritis disease activity and inflammation, reporting no pharmacokinetic parameters. |
+| popPK | Ormseth_2013 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of pioglitazone on rheumatoid arthritis disease activity and insulin resistance, and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life). |
 | popPK | Ormseth_2014 | irrelevant | 0 | 0 | The study is a clinical trial assessing vascular function and blood pressure outcomes, not a pharmacokinetic study, and reports no PK parameters. |
 | PGx | Pradeepkumar_2022 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (trazodone) rather than a pharmacogenomic effect (gene variant/genotype). |
 | popPK | Sears_2007 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
 | PD | Sears_2007 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of PPARgamma promoter recruitment and transcriptional activity, not on pharmacokinetic or pharmacodynamic exposure-response modeling for pioglitazone. |
-| popPK | Sherwin_2011 | irrelevant | 2 | 0 | The paper describes a simulation-based optimal study design methodology and does not report original quantitative PK parameter values (CL, V, etc.) for pioglitazone in the provided evidence. |
+| popPK | Sherwin_2011 | relevant | 8 | 2 | The paper describes a population PK model for pioglitazone in pediatric patients, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text, only referenced as being comparable to literature or derived from simulations. |
 | PGx | Singh_2019 | not_relevant | 0 | 0 | The paper evaluates the PXR activation potential of pioglitazone to predict drug-drug interactions, but does not report pharmacogenomic effects of gene variants on PK or PD parameters. |
 | PGx | Spence_2020 | not_relevant | 0 | 0 | The paper discusses the clinical efficacy of pioglitazone in stroke prevention but does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Sun_2017 | not_relevant | 0 | 0 | The paper focuses on in-vitro CYP3A4 induction modeling and perpetrator concentration corrections, not on pharmacogenomic effects of gene variants on pioglitazone PK/PD. |
 | PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of nateglinide metabolism by pioglitazone) in vitro, not pharmacogenomic effects of genetic variants on pioglitazone PK/PD. |
-| popPK | Tran_2026 | irrelevant | 0 | 0 | The study is a model-based meta-analysis of efficacy (histological outcomes and liver enzymes) rather than a pharmacokinetic study, and no PK parameters are reported. |
+| popPK | Tran_2026 | irrelevant | 0 | 0 | The study is a model-based meta-analysis of pioglitazone's efficacy on histological and liver enzyme outcomes in MASH, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Türk_2020 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for trimethoprim and its interactions; pioglitazone is only mentioned as a co-administered drug for validation, and no specific pharmacogenomic effect on pioglitazone PK/PD is reported. |
 | PGx | Wu_2025 | not_relevant | 0 | 0 | The paper investigates the effect of pioglitazone on kidney stone risk and lipid metabolism, not how genetic variants alter the pharmacokinetic or pharmacodynamic parameters of the drug itself. |
 | PGx | Yang_2020 | not_relevant | 0 | 0 | The paper uses pioglitazone as an example of a drug identified by a network-based discovery strategy for aging, but does not report any pharmacogenomic effects on its PK or PD parameters. |
@@ -185,4 +173,4 @@ _19 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | van_2013 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (pioglitazone inhibiting rosuvastatin transport) and does not report how a gene variant affects the PK/PD of pioglitazone. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-01 17:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 02:46 UTC</sub>

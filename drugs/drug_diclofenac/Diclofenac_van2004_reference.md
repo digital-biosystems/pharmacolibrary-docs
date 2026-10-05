@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;van_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_van2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**The diclofenac record was rejected because the reported clearance of 3.41 L/h and volume of distribution of 0.23 L fall outside physiological plausibility, suggesting a unit or scale extraction error.**
+**The diclofenac record was rejected because the volume of distribution is reported as 55 '%' instead of a volume unit, a dimension mismatch on a structural parameter.**
 
-The record, built from the paper's abstract only, reports diclofenac total clearance of 3.41 L/h (labelled as formation clearance to 5'-hydroxydiclofenac) and a volume of distribution of 0.23 L for children undergoing tonsillectomy; these magnitudes were judged implausible, consistent with a unit or scale extraction error (the clearance unit was given as l.h(-1)). The abstract-only source means summary statistics stood in for a fitted model. A second reader recorded no value for the bioavailability (1.26), absorption half-life (0.613 h), lag time (0.188 h), clearance (3.41 L/h), and relative bioavailability (1.26) fields, disagreeing with each of these entries. Extracted — diclofenac: CL 3.41 l.h(-1), t1/2ka 0.613 h, tlag 0.188 h, Frel 1.26 F, V 0.23 L.
+The record, built from the abstract only of van_2004 (children undergoing tonsillectomy), lists diclofenac volume of distribution as 55 with unit '%', which is not a valid dimension for a volume of distribution. The formation clearances to 4'-hydroxydiclofenac (8.41 l.h(-1)) and 5'-hydroxydiclofenac (3.41 l.h(-1)) are labelled with '% CV' in the source text despite carrying l.h(-1) units. A second reader disagreed on several parameter assignments, including the absorption half-time (null versus 14) and the relative bioavailability (1.26 assigned to a differently worded field). Extracted — 4'-hydroxydiclofenac: CLfm 8.41 l.h(-1); 5'-hydroxydiclofenac: CLfm 3.41 l.h(-1); diclofenac: CL 33 l.h(-1) 70 kg(-1), CL 27.5 l.h(-1) 70 kg(-1), t1/2ka 0.613 h, tlag 0.188 h, V 55 %, Frel 1.26 relative bioavailability.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diclofenac, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.567964+00:00) predates the upstream re-run (2026-10-03 20:31:53.521706+00:00). Current validate status: `rejected`.
 
 ## Citation
 van der Marel CD et al., Diclofenac and metabolite pharmacokinet…, Paediatric anaesthesia (2004)
   ·  DOI: [10.1111/j.1460-9592.2004.01232.x](https://doi.org/10.1111/j.1460-9592.2004.01232.x)
 
 ## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="true" population="children undergoing tonsillectomy" measured-compound="diclofenac" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="false" population="children undergoing tonsillectomy" measured-compound="diclofenac" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 8 extracted.

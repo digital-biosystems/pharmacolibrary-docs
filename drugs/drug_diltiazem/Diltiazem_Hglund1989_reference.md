@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;diltiazem&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/&quot;},{&quot;label&quot;:&quot;H\u00f6glund_1989 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The diltiazem record lacks distribution volume and clearance, and its metabolites are unlinked, so it is not a compartmental model.**
+**The diltiazem record was rejected because the paper reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and its three metabolites are unlinked.**
 
-The record contains only a terminal half-life of 6.27 h and a 72% urinary excretion fraction, with no volume or clearance parameters. Three metabolites are listed as formed from diltiazem, but the metabolic links have no rate parameters, leaving them unlinked. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
+The record, built from the abstract alone, contains only a terminal half-life of 6.27 h and a 72% cumulative urinary excretion of radioactivity within 120 h for diltiazem — no volume or clearance. The three metabolites (N-demethyldiltiazem, deacetyldiltiazem, N-demethyldeacetyl­diltiazem) have no formation parameters, leaving them as unlinked metabolites with no path from the dose. A second reader also disputed the metabolism links and read the 72% and 6.27 h values as applying to a single 60 mg dose, while the record left those dose-specific fields empty. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989)

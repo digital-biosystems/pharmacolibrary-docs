@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Isosorbide mononitrate is an organic nitrate with vasodilating properties. It is an anti-anginal agent that works by relaxing the smooth muscles of both arteries and veins, but but predominantly veins to reduce cardiac preload.[L11698, L11743] Isosorbide mononitrate is an active metabolite of [isosorbide dinitrate]. Like other organic nitrates, isosorbide mononitrate acts as a prodrug for its active metabolite, [nitric oxide], which mediates the therapeutic action of isosorbide mononitrate.[L11743] Isosorbide mononitrate has a longer duration of action than [nitroglycerin] due to its slow onset of absorption and metabolism.[T28]
+Isosorbide mononitrate is a nitrate vasodilator used in cardiac therapy, mainly to prevent angina. It is an approved medicine, widely used for heart conditions.
 
-First approved by the FDA in 1991,[L11743] isosorbide mononitrate is used for the prevention and management of angina pectoris caused by coronary artery disease; however, the onset of action of orally-administered isosorbide mononitrate is not rapid enough to offset an acute anginal episode.[L11698] It is available in oral tablets generically and under the brand name ISMO and Monoket. The extended-release forms of the drug are also available generically and under the brand name Imdur.[L11743]
-
-**Indication.** Isosorbide mononitrate is indicated for the prevention and management of angina pectoris due to coronary artery disease. The onset of action of oral isosorbide mononitrate is not sufficiently rapid to be useful in aborting an acute anginal episode.[L11698]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423401](https://www.wikidata.org/wiki/Q423401) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,10 +30,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly and completely absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `GSTM1` substrate, `XDH` substrate | DrugBank actor |
 | metabolism | small intestine | `XDH` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…about 93% of the total dose was excreted in the urine within 48 hours…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADH5 (substrate), GUCY1A2 (activator).</sub>
 

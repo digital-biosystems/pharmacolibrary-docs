@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Hemin (trade name Panhematin) is an iron-containing porphyrin. More specifically, it is protoporphyrin IX containing a ferric iron ion (heme B) with a chloride ligand.
+Hemin is a heme product used as a hematological agent to treat blood disorders. It is an approved medicine, though its exact authorised markets are not specified in the available facts.
 
-**Indication.** Used in the management of porphyria attacks, particularly in acute intermittent porphyria.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425165](https://www.wikidata.org/wiki/Q425165) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

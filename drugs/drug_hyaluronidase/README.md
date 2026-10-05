@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Hyaluronidase is an enzyme used to improve the absorption and dispersion of parenterally administered fluids, drugs, and contrast agents.[L13338] The action of hyaluronidase was first described in 1936, and named in 1939.[A199026] Early research into hyaluronidase identified it as a "spreading factor" which allowed for increased permeability of the connective tissue.[A199026] Hyaluronidase has been used in surgical settings for at least the past 60 years to improve the diffusion of local anesthetics.[A199047]
+Hyaluronidase is an enzyme medicine used to treat extravasation, and has also been studied for injection into the eye to treat vitreous hemorrhage. It is an approved medication, though one European application for an eye-related use was withdrawn.
 
-Hyaluronidase was first used in prescription products in the United States on 5 May 2004.[L13338]
-
-**Indication.** Hyaluronidase is indicated for subcutaneous fluid administration for hydration, and increasing resorption of radiopaque agents in subcutaneous urography.[L13338] Hyaluronidase is also indicated by multiple routes to increase the dispersion of other injectable drugs.[L13338]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q105488220](https://www.wikidata.org/wiki/Q105488220) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -53,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: TGFB1 (inhibitor).</sub>
 

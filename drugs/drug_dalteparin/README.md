@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Dalteparin, a low molecular weight heparin (LMWH) prepared by nitrous acid degradation of unfractionated heparin of porcine intestinal mucosa origin, is an anticoagulant. It is composed of strongly acidic sulphated polysaccharide chains with an average molecular weight of 5000 and about 90% of the material within the range of 2000-9000. LMWHs have a more predictable response, a greater bioavailability, and a longer anti-Xa half life than unfractionated heparin. Dalteparin can also be safely used in most pregnant women. Low molecular weight heparins are less effective at inactivating factor IIa due to their shorter length compared to unfractionated heparin.
+Dalteparin is a low molecular weight heparin anticoagulant used to treat and prevent blood clots, including in myocardial infarction, unstable angina, pulmonary embolism, thrombophlebitis, and after surgery. It is an approved medicine and is widely used as an antithrombotic agent.
 
-**Indication.** Dalteparin is used as a prophylaxis for deep-vein thrombosis and pulmonary embolisms in patients undergoing general surgery (e.g., abdominal, gynecologic, urologic), and in patients with acute medical conditions (e.g. cancer, bed rest, heart failure, severe lung disease). It is also used in patients who have severely restricted mobility, which poses a risk for thromboembolic complications. 
-
-Dalteparin is also used concomitantly with aspirin and/or other therapy (e.g., nitrates, β-adrenergic blockers, clopidogrel, platelet glycoprotein [GP] IIb/IIIa-receptor inhibitors) to reduce the risk of acute cardiac ischemic events. The patients who undergo this treatment combination have unstable angina or non-ST-segment elevation/non-Q-wave myocardial infarction (i.e., non-ST-segment elevation acute coronary syndromes).
-
-It is also used in the prevention of clotting during hemodialysis and hemofiltration in connection with acute renal failure or chronic renal insufficiency.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1851701](https://www.wikidata.org/wiki/Q1851701) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,9 +32,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…Almost completely absorbed after subcutaneous (sc) doses…”</sub> | prose |
-| metabolism | liver | <sub>“…Liver and the reticulo-endothelial system are the sites of biotransformation.…”</sub> | prose |
-| excretion | kidney | <sub>“…The kidneys are the major site of dalteparin excretion…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HPSE (substrate), SELP (inhibitor), SERPINC1 (potentiator), VEGFA (inhibitor).</sub>
 

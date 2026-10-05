@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03B&quot;,&quot;href&quot;:&quot;atc/A03B.md&quot;},{&quot;label&quot;:&quot;atropine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atropine_Strm2021_reference&quot;,&quot;label&quot;:&quot;Str\u00f6m_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atropine/Atropine_Strm2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # atropine
 
@@ -10,26 +11,32 @@
 
 ## About
 
-**Description.** Atropine is an alkaloid originally synthesized from Atropa belladonna. It is a racemic mixture of d-and l-hyoscyamine, of which only l-hyoscyamine is pharmacologically active.[A251670,L42835] Atropine is generally available as a sulfate salt and can be administered by intravenous, subcutaneous, intramuscular, intraosseous, endotracheal and ophthalmic methods. Oral atropine is only available in combination products.[A251660,L42840] Atropine is a competitive, reversible antagonist of muscarinic receptors that blocks the effects of acetylcholine and other choline esters.[A251660,L42815,L42825,L42835] It has a variety of therapeutic applications, including pupil dilation and the treatment of anticholinergic poisoning and symptomatic bradycardia in the absence of reversible causes.[A251660] Atropine is a relatively inexpensive drug and is included in the World Health Organization List of Essential Medicines.[A251675]
+Atropine is a belladonna alkaloid used for conditions such as bradycardia and cardiac arrest, uveitis, gastric ulcer, and as a mydriatic in eye care. It is widely used, appears on the WHO essential medicines list, is approved for human and veterinary use, and is authorised in the European Union for myopia.
 
-**Indication.** The intravenous, intramuscular, subcutaneous, intraosseous and endotracheal use of atropine is indicated for the temporary blockade of severe or life-threatening muscarinic effects.[L42815,L42835] The intramuscular use of atropine in the form of a pen injector is indicated for the treatment of poisoning by susceptible organophosphorus nerve agents having cholinesterase activity as well as organophosphorus or carbamate insecticides in adult and pediatric patients.[L42825] The ophthalmic use of atropine is indicated for mydriasis, cycloplegia, and penalization of the healthy eye in the treatment of amblyopia.[L42830] 
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q26272](https://www.wikidata.org/wiki/Q26272) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-In combination with difenoxin or diphenoxylate (tablets for oral use), atropine is indicated as adjunctive therapy in the management of acute nonspecific diarrhea.[L42840,L42865]
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| atropine | parent | 289.369 | C17H23NO3 | DrugBank | [174174](https://pubchem.ncbi.nlm.nih.gov/compound/174174) | Hinderling_1985, Parrot_2024, Ström_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 10:21 | 1:26 | 0/3/1 | 0/0/0 | 0/0/0 | 37,367/1,055 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-04 13:11 | 5:39 | 1/2/1 | 0/0/0 | 0/0/0 | 81,057/16,382 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) | held back | 2-compartment, oral | 11 | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ekstrand_2022_reference](drugs/drug_atropine/Atropine_Ekstrand2022_reference.md) | — | 1-compartment (no model) | 0 | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1985_reference](drugs/drug_atropine/Atropine_Hinderling1985_reference.md) | — | parent + metabolite (no model) | 0 | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Parrot_2024_reference](drugs/drug_atropine/Atropine_Parrot2024_reference.md) | — | 1-compartment (no model) | 0 | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ström_2021_reference](drugs/drug_atropine/Atropine_Strm2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 11 | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1985_reference](drugs/drug_atropine/Atropine_Hinderling1985_reference.md) | — | 1-compartment (no model) | 3 | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ekstrand_2022_reference](drugs/drug_atropine/Atropine_Ekstrand2022_reference.md) | — | 1-compartment (no model) | 0 | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Parrot_2024_reference](drugs/drug_atropine/Atropine_Parrot2024_reference.md) | — | 1-compartment (no model) | 1 | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) |
 
 ## ADME sites
 
@@ -37,11 +44,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…After intramuscular administration, atropine is rapidly absorbed…”</sub> | prose |
-| absorption | small intestine | <sub>“…Atropine is well absorbed in the gastrointestinal tract…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | liver | <sub>“…mainly metabolized by enzymatic hydrolysis in the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted unchanged in the urine…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CHRNA4 (substrate), CHRNB2 (substrate), GLRA1 (target).</sub>
@@ -56,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 689 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -65,20 +72,20 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ekstrand_2022.pdf` | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | popPK | 10 | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) | [36118347](https://pubmed.ncbi.nlm.nih.gov/36118347) | The paper reports quantitative population PK parameters (V1, V2, V3, CL) for atropine in horses with specific numeric values provided in the text. |
-| `Hinderling_1985.pdf` | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | popPK | 10 | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) | [4032240](https://pubmed.ncbi.nlm.nih.gov/4032240) | The text explicitly reports quantitative PK parameters for atropine, including half-lives (1 and 140 min), volume of distribution (210 L), and renal clearance (660 mL/min). |
-| `Parrot_2024.pdf` | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | popPK | 9 | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) | [38465519](https://pubmed.ncbi.nlm.nih.gov/38465519) | The study reports quantitative PK parameters (ka, Cmax, AUC) for atropine, but lacks explicit values for clearance (CL) and volume of distribution (V). |
+| `Ekstrand_2022.pdf` | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | popPK | 10 | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) | [36118347](https://pubmed.ncbi.nlm.nih.gov/36118347) | The paper reports quantitative population PK parameters (Vc, Vp, Vsp, CL) for atropine in horses with values explicitly listed in the abstract. |
+| `Hinderling_1985.pdf` | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | popPK | 10 | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) | [4032240](https://pubmed.ncbi.nlm.nih.gov/4032240) | The abstract explicitly reports quantitative PK parameters for atropine in humans, including half-lives (1 and 140 min), volume of distribution (210 L), and renal clearance (660 mL/min). |
+| `Parrot_2024.pdf` | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | popPK | 10 | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) | [38465519](https://pubmed.ncbi.nlm.nih.gov/38465519) | The study reports quantitative PK parameters (Cmax, AUC, ka) for atropine in humans, though clearance and volume values are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-09-18T10:20:18.885232+00:00</sub>
+<sub>queue written 2026-10-04T13:06:01.035225+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dexmedetomidine, with atropine only mentioned as a co-administered induction agent. |
-| popPK | Li_1991 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for theophylline, with atropine acting only as a co-administered agent to test for drug interactions, not as the subject drug. |
-| popPK | Page_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levetiracetam, with atropine serving only as a therapeutic agent for bradycardia without any reported PK parameters for atropine itself. |
-| popPK | Reynaerts_2022 | irrelevant | 0 | 0 | The study focuses on sweat rate diagnostics for cystic fibrosis, using atropine only as a co-administered agent to block cholinergic effects, and does not report pharmacokinetic parameters for atropine. |
+| popPK | Kim_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dexmedetomidine, while atropine is only mentioned as a co-administered induction agent. |
+| popPK | Li_1991 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for theophylline, with atropine acting as a co-administered agent to test for drug interactions, not as the subject drug. |
+| popPK | Page_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levetiracetam, with atropine serving only as a therapeutic agent for cardiovascular toxicity. |
+| popPK | Reynaerts_2022 | irrelevant | 0 | 0 | Atropine is used as a co-administered agent in a sweat test protocol, not as the subject of a pharmacokinetic study. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 10:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 13:06 UTC</sub>

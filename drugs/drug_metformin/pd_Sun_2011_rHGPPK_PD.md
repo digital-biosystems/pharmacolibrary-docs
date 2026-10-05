@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Metformin plasma concentrations inhibit the hepatic glucose production rate (rHGPPK−PD) via a proportional effect, where the rate is modified by a factor of (1 - EL) derived from a sigmoid Emax analysis. The paper does not provide specific numerical values for potency or rate parameters such as IC50, Emax, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

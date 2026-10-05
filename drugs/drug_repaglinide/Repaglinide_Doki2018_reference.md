@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (MW), so that value has no SI equivalent. Extracted — repaglinide: MW 453 g/mol, fu 0.023, Fab 0.98, kabs 1.6 1/h, Vss 0.24 L/kg, Kp 3.3.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has gemfibrozil → gemfibrozil 1-o-β glucuronide (metabolism), the second reading gemfibrozil → gem-glu (metabolism); it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Doki K et al., Implications of intercorrelation betwee…, British journal of clinical… (2018)

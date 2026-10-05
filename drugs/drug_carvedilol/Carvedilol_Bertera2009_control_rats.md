@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Bertera_2009 \u00b7 control_rats&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,13 +18,13 @@
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and the AUC unit could not be converted to standard SI units.**
+**The carvedilol record from Bertera_2009 was rejected because it reports only exposure metrics (t1/2z 3.2 min, C0 1791 µg ml-1, AUC0-180 676 ng ml-1 h-1) with no distribution volume and no clearance, and a structural parameter failed a dimension check.**
 
-The paper reports only exposure metrics like AUC and half-life, omitting the structural parameters required for a compartmental model. A reported unit for the AUC parameter could not be converted to SI, preventing the model from being built. A second reader disagreed on the AUC parameter identification and suggested a clearance value not present in the record. Extracted — carvedilol: t1/2z 3.2 min, C0 1.79e+03 µg ml -1, AUCt 676 ng ml -1 h -1, AUC%ext 7.8 n = 12.
+The paper is an exposure/outcome study in male Wistar rats, not a compartmental population PK model: no distribution volume and no clearance or elimination rate are reported. A dimension mismatch was found on a structural parameter, and the extrapolated-area parameter (7.8%) carries the unit 'n = 12', which is not a valid unit of measurement and could not be converted to SI, so the parameter was recorded without an SI value. A second reader also disagreed on the AUC0-180 parameter identifier and read a γ value of 2.3 where this record has none. Extracted — carvedilol: t1/2z 3.2 min, C0 1.79e+03 µg ml -1, AUCt 676 ng ml -1 h -1, AUC%ext 7.8 n = 12.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auc 0-180].parameter_id`: this record has Q19, the second reading Q88; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bertera FM et al., Is urethane-chloralose anaesthesia appr…, Journal of pharmacological… (2009)

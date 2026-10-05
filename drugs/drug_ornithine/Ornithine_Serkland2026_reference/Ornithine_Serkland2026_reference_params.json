@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Ornithine_Serkland2026_reference",
  "molar_masses": {
   "central.C": 0.132163
@@ -8,10 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  600.0
- ],
  "parameters": {
   "Cl": 1.7708333333333335e-09,
   "F": 1.0,
@@ -19,16 +15,16 @@
   "VdPerKg": 3.685714285714286e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0006,
+  "adminMass": 1e-05,
   "k12": 9.869365489520528e-07,
   "k21": 1.3057929724596392e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662092
+  "central.C": 660.0000000662167
  },
  "reference_peaks": {
-  "central.C": 0.20785693129914246
+  "central.C": 0.003464281767472956
  },
  "stop_time": 5443200.0,
  "template": "PK_2C",

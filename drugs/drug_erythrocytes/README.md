@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Red blood cells (erythrocytes) are transfused to treat severe anaemia or blood loss, restoring the blood's oxygen-carrying capacity. They are widely used in hospitals worldwide as standard transfusion medicine, classified among blood and related blood products.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q37187](https://www.wikidata.org/wiki/Q37187) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

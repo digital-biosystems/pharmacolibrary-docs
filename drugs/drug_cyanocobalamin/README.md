@@ -10,32 +10,9 @@
 
 ## About
 
-**Description.** Cyanocobalamin (commonly known as Vitamin B12) is a highly complex, essential vitamin, owing its name to the fact that it contains the mineral, cobalt. This vitamin is produced naturally by bacteria [A175276], and is necessary for DNA synthesis and cellular energy production. Vitamin B12 has many forms, including the cyano-, methyl-, deoxyadenosyl- and hydroxy-cobalamin forms. The _cyano_ form, is the most widely used form in supplements and prescription drugs [A175255], [FDA label].  Several pharmaceutical forms of cyanocobalamin have been developed, including the tablet, injection, and nasal spray forms [FDA label], [L5542], [L5545].  This drug was initially approved by the FDA in 1942 [FDA label].
+Cyanocobalamin, a form of vitamin B12, is used to treat and prevent vitamin B12 deficiency, including pernicious anemia and certain neuropathies. It is an approved medicine and nutraceutical, widely used as a vitamin B12 supplement and antianemic preparation.
 
-**Indication.** **Nasal spray**
-
-The cyanocobalamin nasal spray is indicated for the maintenance of vitamin B12 concentrations after normalization with intramuscular vitamin B12 therapy in patients with deficiency of this vitamin who have no nervous system involvement [FDA label].
-
-Note:  CaloMist [FDA label], the nasal spray form, has not been evaluated for the treatment of newly diagnosed vitamin B12 deficiency.
-
-**Injection forms (subcutaneous, intramuscular)**
-
-These forms are indicated for vitamin B12 deficiencies due to various causes, with or without neurologic manifestations [F3736].  Vitamin B12 deficiency is frequently caused by malabsorption, which is often associated with the following conditions [L5545]:
-
-Addisonian (pernicious) anemia
-
-Gastrointestinal pathology, dysfunction, or surgery, including gluten enteropathy or sprue, small bowel bacterial overgrowth, total or partial gastrectomy
-
-Fish tapeworm infestation
-
-Malignancy of the pancreas or bowel
-
-Folic acid deficiency
-
-
-**Oral forms**
-
-Vitamin B12 supplements are widely available and indicated in patients who require supplementation for various reasons.  Dose requirements for vitamin B12 which are higher than normal (caused by pregnancy, thyrotoxicosis, hemolytic anemia, hemorrhage, malignancy, hepatic and renal disease) can usually be achieved with oral supplementation [L5545].   Oral products of vitamin B12 are not recommended in patients with malabsorption, as these forms are primarily absorbed in the gastrointestinal tract [F3739].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q252251](https://www.wikidata.org/wiki/Q252251) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -55,13 +32,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…quickly absorbed from intramuscular (IM) and subcutaneous (SC) sites of injection…”</sub> | prose |
-| absorption | small intestine | <sub>“…vitamin B12 is then absorbed into the gastrointestinal mucosal cells…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood-brain barrier | `ABCC1` unknown | DrugBank actor |
 | distribution | lung | `ABCC1` unknown | DrugBank actor |
-| metabolism | small intestine | <sub>“…promotes its uptake by terminal ileum mucosal cells…”</sub> | prose |
-| excretion | bile duct | <sub>“…secreted into the gastrointestinal tract daily via the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…partially excreted in the urine…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AMN (substrate), CBLIF (substrate), CUBN (substrate), LRP2 (unknown), MMAA (binder), MMAB (substrate), MMACHC (cofactor), MMUT (cofactor), MTHFR (cofactor), MTR (cofactor), MTRR (cofactor), Pancreatic proteases (substrate), TCN1 (substrate), TCN2 (substrate).</sub>
 

@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Indometacin, or indomethacin, is a non-steroidal anti-inflammatory drug (NSAID) with anti-inflammatory, analgesic, and antipyretic properties. NSAIDs consist of agents that are structurally unrelated; the NSAID chemical classification of indometacin is an indole-acetic acid derivative with the chemical name 1- (p-chlorobenzoyl)25-methoxy-2-methylindole-3-acetic acid.[A177871] The pharmacological effect of indometacin is not fully understood, however, it is thought to be mediated through potent and nonselective inhibition of the enzyme cyclooxygenase (COX), which is the main enzyme responsible for catalyzes the rate-limiting step in prostaglandin and thromboxane biosynthesis via the arachidonic acid (AA) pathway. Indometacin was first discovered in 1963 and it was first approved for use in the U.S. by the Food and Drug Administration in 1965, [A486] along with other acetic acid derivatives such as [diclofenac] and [sulindac] that were also developed during the 1960s.[A177871] Since then, indometacin has been extensively studied in clinical trials as one of the most potent NSAIDs in blocking prostaglandin synthesis and was among the first NSAIDs to be used in the symptomatic treatment of migraine and for headaches that eventually became known as “indomethacin-responsive” headache disorders.[A177871] 
+Indometacin is a non-steroidal anti-inflammatory drug used to treat pain and inflammation in conditions such as osteoarthritis, rheumatoid arthritis, gout attacks, bursitis, enthesopathy, and to close a patent ductus arteriosus. It is an approved medicine, available in oral and topical forms for joint and muscular pain as well as eye use, though it carries a boxed warning.
 
-Most commonly used in rheumatoid arthritis, ankylosing spondylitis, osteoarthritis, acute shoulder pains, and acute gouty arthritis, indometacin is currently available as oral capsules as well as other methods of administration, including rectal and intravenous formulations. Intravenous indometacin is administered to close a hemodynamically significant patent ductus arteriosus, as indicated by clinical evidence, in premature infants.[L10553] Ophthalmic indometacin has been studied and used in the symptomatic treatment of postoperative ocular inflammation and pain and/or complications after cataract surgery. Although deemed effective in reducing ocular inflammation in c
-
-**Indication.** Oral indometacin is indicated for symptomatic management of moderate to severe rheumatoid arthritis including acute flares of chronic disease, moderate to severe ankylosing spondylitis, moderate to severe osteoarthritis, acute painful shoulder (bursitis and/or tendinitis) and acute gouty arthritis.[A177871,L6778]
- 
-Intravenous indometacin is indicated to induce closure of a hemodynamically significant patent ductus arteriosus in premature infants weighing between 500 and 1750 g when after 48 hours usual medical management (e.g., fluid restriction, diuretics, digitalis, respiratory support, etc.) is ineffective.[L10553]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409231](https://www.wikidata.org/wiki/Q409231) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -63,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `SLC22A7` substrate, `UGT1A9` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CES1` substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` substrate, `SLC10A1` substrate, `SLC22A7` substrate, `SLCO1B1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A9` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…biliary excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/substrate, `ABCC4` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor/substrate, `ABCC3` inhibitor, `ABCC4` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |

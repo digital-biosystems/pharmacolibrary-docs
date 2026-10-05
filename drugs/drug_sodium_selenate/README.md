@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Selenic acid is an organic compound with the chemical formula H2SeO4. It may be found in over-the-counter daily dietary supplements as a source of [DB11135], an essential trace mineral for human health.
+Sodium selenate is a selenium supplement used to supply the essential mineral selenium. It is an approved mineral supplement, used as a source of selenium in supplements.
 
-**Indication.** Indicated for use as a nutritional supplement.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419488](https://www.wikidata.org/wiki/Q419488) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Proietti_2018_nM](drugs/drug_sodium_selenate/pd_Proietti_2018_nM.md) | cytosolic calcium concentration ← sodium selenate (SeO42-) · direct Emax (saturable) effect | — | Proietti P et al., Selenium maintains Ca2+ homeostasis in…, PloS one (2018) | [10.1371/journal.pone.0201523](https://doi.org/10.1371/journal.pone.0201523) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Proietti_2018_nM](drugs/drug_sodium_selenate/pd_Proietti_2018_nM.md) | cytosolic calcium concentration ← sodium selenate (SeO42-) · direct Emax (saturable) effect | — | Proietti P et al., Selenium maintains Ca2+ homeostasis in…, PloS one (2018) | [10.1371/journal.pone.0201523](https://doi.org/10.1371/journal.pone.0201523) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -45,44 +45,43 @@ _not available_
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2024.pdf` | Li C et al., Pharmacokinetics and brain uptake of so…, Pharmacology research & per… (2024) | popPK | 9 | [10.1002/prp2.1256](https://doi.org/10.1002/prp2.1256) | [39506350](https://pubmed.ncbi.nlm.nih.gov/39506350) | The study reports quantitative PK parameters (CL/F, Vd/F) for sodium selenate in rats, but the specific numeric values are not present in the provided evidence text. |
 | `DeYoung_1991.pdf` | DeYoung DJ et al., Assessment of the developmental toxicit…, Drug and chemical toxicology (1991) | pd | 4 | [10.3109/01480549109017872](https://doi.org/10.3109/01480549109017872) | [1889372](https://www.ncbi.nlm.nih.gov/pubmed/1889372) | metadata signals extractable PD data (EC50) |
 | `Kuperman_2018.pdf` | Kuperman RG et al., Selenium toxicity to survival and repro…, Environmental toxicology an… (2018) | pd | 4 | [10.1002/etc.4017](https://doi.org/10.1002/etc.4017) | [29078251](https://www.ncbi.nlm.nih.gov/pubmed/29078251) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-30T01:38:43.641994+00:00</sub>
+<sub>queue written 2026-10-05T09:48:11.896955+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Cabral_2020 | not_relevant | 0 | 0 | The paper studies the physiological response of rice plants to selenium toxicity, not the pharmacogenomics of sodium selenate in humans. |
-| popPK | Cacciatore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on MAT2A in prostate cancer and does not involve sodium selenate or pharmacokinetic parameters. |
+| popPK | Cacciatore_2024 | irrelevant | 0 | 0 | The paper investigates the epigenetic role of MAT2A in prostate cancer and does not involve sodium selenate or pharmacokinetic modeling. |
 | PD | Cacciatore_2024 | not_relevant | 0 | 0 | The paper investigates MAT2A inhibitors (PF-9366, AG-270) in prostate cancer models and does not mention sodium selenate or report any pharmacodynamic parameters for it. |
 | PGx | Cipriano_2023 | not_relevant | 0 | 0 | The paper studies the agronomic effects of selenium compounds on sorghum genotypes, not the pharmacogenomics of sodium selenate in humans. |
 | popPK | Dausch_1993 | irrelevant | 0 | 0 | The study measures hepatic S-adenosylmethionine levels in rats fed selenium compounds and does not report any pharmacokinetic parameters for sodium selenate. |
 | PD | Dausch_1993 | not_relevant | 1 | 0 | The paper explicitly states that no dose-response relationship was found and only reports qualitative significant differences without providing numeric PD parameters or curves. |
-| popPK | DeYoung_1991 | irrelevant | 0 | 0 | The study is a developmental toxicity assessment (FETAX) reporting teratogenic indices, not a pharmacokinetic study with disposition parameters. |
+| popPK | DeYoung_1991 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | DeYoung_1991 | not_relevant | 3 | 0 | The paper reports a Teratogenic Index (LC50/EC50) for sodium selenate but does not provide the specific numeric values for LC50 or EC50, nor does it present a concentration-effect curve or detailed PK/PD modeling. |
 | popPK | Gür_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of cardiac responses in diabetic rats, not a pharmacokinetic study, and reports no disposition parameters for sodium selenate. |
 | PD | Gür_2004 | not_relevant | 1 | 0 | The paper reports qualitative changes in cardiac responses to agonists (isoproterenol, adenosine, carbachol) in diabetic rats treated with sodium selenate, but it does not provide numeric concentration-effect curves, dose-response parameters (Emax, EC50), or exposure-response data for sodium selenate itself. |
 | PGx | Hasan_2021 | not_relevant | 0 | 0 | The paper studies plant physiology and selenium toxicity in wheat, not human pharmacogenomics or drug PK/PD. |
 | PGx | Jain_2018 | not_relevant | 0 | 0 | The paper studies fungal genetics and toxicity in Aspergillus fumigatus, not human pharmacogenomics or PK/PD parameters of sodium selenate as a drug. |
-| popPK | Jayachandran_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sodium selenite, not sodium selenate. |
+| popPK | Jayachandran_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sodium selenite, not sodium selenate, which is a different chemical compound. |
 | PD | Jayachandran_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model and dose-bioavailability relationship, but it does not model or report any pharmacodynamic (PD) or exposure-response parameters (e.g., Emax, EC50) for the drug's effect. |
-| popPK | Jourdain_2026 | irrelevant | 0 | 0 | The paper studies marine natural products (leucettamine B, nacryline, pinctazole) for bone healing and does not involve sodium selenate. |
+| popPK | Jourdain_2026 | irrelevant | 0 | 0 | The study focuses on leucettamine B and nacryline derivatives for bone healing and does not involve sodium selenate. |
 | PD | Jourdain_2026 | not_relevant | 0 | 0 | The paper studies leucettamine B and nacryline derivatives, not sodium selenate, and reports only single-dose screening data without dose-response curves or PD parameters. |
-| popPK | Knox_2019 | irrelevant | 1 | 1 | The study investigates sodium selenite, not sodium selenate, and only reports a half-life without a compartmental model or other quantitative disposition parameters. |
+| popPK | Knox_2019 | irrelevant | 1 | 0 | The study investigates sodium selenite, not sodium selenate, and only reports a half-life without a compartmental model or volume of distribution. |
 | PD | Knox_2019 | not_relevant | 1 | 0 | The paper reports PK parameters (half-life) and qualitative efficacy/toxicity observations but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Kuperman_2018 | irrelevant | 0 | 0 | The study is an ecotoxicology investigation of selenium toxicity in soil invertebrates and does not report pharmacokinetic parameters for sodium selenate. |
-| popPK | Li_2024 | relevant | 9 | 2 | The study reports quantitative PK parameters (CL/F, Vd/F) for sodium selenate in rats, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Kuperman_2018 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
+| popPK | Li_2024 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
 | PGx | Moses_2022 | not_relevant | 0 | 0 | The paper investigates perivascular spaces as a biomarker for disease severity in bvFTD and does not report any pharmacogenomic effects on the PK or PD of sodium selenate. |
-| popPK | Preitner_2026 | irrelevant | 0 | 0 | The paper studies the drug ACI-16664 for Alzheimer's disease and does not mention sodium_selenate or report any pharmacokinetic parameters. |
+| popPK | Preitner_2026 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of ACI-16664 in tauopathy mice and does not involve sodium selenate. |
 | PD | Preitner_2026 | not_relevant | 0 | 0 | The paper discusses the drug ACI-16664, not sodium selenate, and does not report any pharmacodynamic or exposure-response parameters. |
-| popPK | Proietti_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium homeostasis and oxidative stress, not a pharmacokinetic study reporting disposition parameters like clearance or volume for sodium selenate. |
+| popPK | Proietti_2018 | irrelevant | 0 | 0 | The study investigates the mechanistic effect of sodium selenate on calcium homeostasis in sheep lymphomonocytes (in vitro/ex vivo) and does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | popPK | Tsukamoto_2013 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell signaling and EMT, reporting no pharmacokinetic parameters for sodium selenate. |
 
 ---

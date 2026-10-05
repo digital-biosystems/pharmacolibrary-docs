@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Pralatrexate is an antifolate for the treatment of relapsed or refractory peripheral T-cell lymphoma [L37674]. Pralatrexate was developed in response due to the inferior responses of patients using the standard therapy for their B-cells counterparts.[A246693] Compared to methotrexate, pralatrexate has better accumulation in cancer cells.[A246693] Pralatrexate is designed to have a higher affinity for the reduced folate carrier, a protein that is overexpressed in malignant cells and is upregulated by oncogenes.[A246703] As such, pralatrexate is thought to have a better therapeutic window compared to other antifolate analogs due to the novel target of RFC.[A246703]
+Pralatrexate is an anticancer drug, a folate analogue antimetabolite, used to treat mature T-cell and NK-cell lymphoma. It is approved in the United States, but a marketing application for the European Union was refused, so it is not authorised in the EU.
 
-Pralatrexate was approved by the FDA on September 24, 2009.[L37674] It is also being studied for other types of lymphoma and solid malignancy such as non-small-cell lung cancer, breast cancer, and bladder cancer.[A246678]
-
-**Indication.** Pralatrexate is indicated for the treatment of relapsed or refractory peripheral T-cell lymphoma.[L37674]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q637059](https://www.wikidata.org/wiki/Q637059) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,19 +44,19 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | bile duct | <sub>“…enterohepatic circulation…”</sub> | prose |
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| absorption | kidney | <sub>“…clearance of pralatrexate by renal and non-renal mechanism…”</sub> | prose |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `SLCO1B3` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…34% (CV = 88%) in feces as unchanged pralatrexate and/or any metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
-| excretion | lung | <sub>“…10% (CV = 95%) of the dose was exhaled over 24 hours…”</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: DHFR (inhibitor), DHFR (substrate), FPGS (substrate), PDF (inhibitor), SLC19A1 (substrate), SLC46A1 (substrate), TYMS (inhibitor), TYMS (substrate).</sub>

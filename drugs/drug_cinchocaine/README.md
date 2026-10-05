@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A local anesthetic of the amide type now generally used for surface anesthesia. It is one of the most potent and toxic of the long-acting local anesthetics and its parenteral use is restricted to spinal anesthesia. (From Martindale, The Extra Pharmacopoeia, 30th ed, p1006)
+Cinchocaine (dibucaine) is a local anesthetic used to relieve pain, applied topically for conditions such as hemorrhoids, anal fissures, skin itching, and in eye and ear preparations. It is an approved drug, also approved for veterinary use, and is used in topical and local anesthetic products.
 
-**Indication.** For production of local or regional anesthesia by infiltration techniques such as percutaneous injection and intravenous regional anesthesia by peripheral nerve block techniques such as brachial plexus and intercostal and by central neural techniques such as lumbar and caudal epidural blocks.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417603](https://www.wikidata.org/wiki/Q417603) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…readily absorbed through traumatized or abraded skin into the systemic circulation…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | blood | `BCHE` inhibitor | DrugBank actor |
 | metabolism | liver | `BCHE` inhibitor | DrugBank actor |
 

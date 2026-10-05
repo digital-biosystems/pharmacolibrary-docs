@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Desvenlafaxine (O-desmethylvenlafaxine) is the 0-demetyhlated active metabolite of [venlafaxine]. Like its parent drug, desvenlafaxine is also an antidepressant belonging to the class of serotonin-norepinephrine reuptake inhibitor (SNRI) class.[A261266,A261266] It was approved by the FDA in 2008 for the treatment of adults with major depressive disorder (MDD).[L6016,A261271]
+Desvenlafaxine is an antidepressant, a serotonin and noradrenaline reuptake inhibitor, used to treat depression and studied for anxiety. It is approved and used in several countries, but a marketing application in the European Union was withdrawn, so it is not authorised there.
 
-MDD is a highly prevalent psychiatric disorder, with a lifetime prevalence estimate of 16% in the US alone and 12.8% in Europe. Although the exact mechanism of pathophysiology is still unknown, imbalances or deficiencies of monoamines have been heavily implicated, thus the rationale behind the use of SNRI to treat MDD.[A261271] Desvenlafaxine has a very similar pharmacological, efficacy, and safety profile as [venlafaxine]. The major difference is the potential for drug interaction since venlafaxine is mainly metabolized by CYP2D6 while desvenlafaxine is conjugated by UGT; therefore, desvenlafaxine is less likely to cause drug-drug interaction when taken with medications affecting the CYP2D6 pathway.[A261266]
-
-**Indication.** Desvenlafaxine is indicated for the treatment of major depressive disorder in adults.[L47936] It has also been used off-label to treat hot flashes in menopausal women.[A261166]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2419445](https://www.wikidata.org/wiki/Q2419445) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -29,14 +27,14 @@ MDD is a highly prevalent psychiatric disorder, with a lifetime prevalence estim
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 20:16 | 6:38 | 0/1/2 | 0/0/0 | 0/0/0 | 98,487/16,629 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 1/4 | 7/0 | 0 |
+| 2026-09-23 20:16 | 6:38 | 0/2/1 | 0/0/0 | 0/0/0 | 98,487/16,629 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 1/4 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Mangas-Sanjuán_2023_reference](drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md) | — | 1-compartment (no model) | 5 | Mangas-Sanjuán V et al., Alternative Pharmacokinetic Metrics in…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nichols_2018_reference](drugs/drug_desvenlafaxine/Desvenlafaxine_Nichols2018_reference.md) | — | 1-compartment (no model) | 1 | Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.419](https://doi.org/10.1002/cpdd.419) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper (the values present come f…</sub><br><sub>route_to: `human_review`</sub> | [Nichols_2018_reference](drugs/drug_desvenlafaxine/Desvenlafaxine_Nichols2018_reference.md) | — | 1-compartment (no model) | 1 | Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.419](https://doi.org/10.1002/cpdd.419) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_reference](drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md) | — | parent + metabolite (no model) | 7 | Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202) |
 
 ## ADME sites
@@ -48,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B15` substrate, `UGT2B17` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate, `UGT2B17` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -64,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 23 matched, 14 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

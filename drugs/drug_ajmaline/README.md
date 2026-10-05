@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An alkaloid found in the root of Rauwolfia serpentina, among other plant sources. It is a class Ia antiarrhythmic agent that apparently acts by changing the shape and threshold of cardiac action potentials. Ajmaline produces potent sodium channel blocking effects and a very short half-life which makes it a very useful drug for acute intravenous treatments. The drug has been very popular in some countries for the treatment of atrial fibrillation in patients with the Wolff–Parkinson–White syndrome and in well tolerated monomorphic ventricular tachycardias. It has also been used for many years as a drug to challenge the conduction system of the heart in cases of bundle branch block and syncope. In these cases, abnormal prolongation of the HV interval has been taken as a proof for infrahisian conduction defects tributary for permanent pacemaker implantation.
+Ajmaline is a class Ia antiarrhythmic, a sodium channel blocker used to treat heart rhythm disorders. It has been withdrawn from use in some markets, though it remains approved elsewhere.
 
-**Indication.** For use as an antiarrhythmic agent.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q385858](https://www.wikidata.org/wiki/Q385858) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

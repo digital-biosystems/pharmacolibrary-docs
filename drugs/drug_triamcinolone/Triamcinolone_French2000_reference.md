@@ -4,7 +4,7 @@
 
 # triamcinolone — `Triamcinolone_French2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,20 +20,18 @@
 
 **The triamcinolone acetonide record for horses was rejected because the extracted clearance (0.0001 mL/h/kg) and volume of distribution (0.0497 mL/kg) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The clearance value of 0.0001 mL/h/kg and volume of 0.0497 mL/kg for triamcinolone acetonide fall far outside physiological windows, consistent with a unit or scale extraction error. A second reader returned no values for the clearance, both half-lives (83.5 min and 12 h), and the volume, disagreeing with all extracted parameters. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The clearance of 0.0001 mL/h/kg and volume of 0.0497 mL/kg fall far outside physiological windows, consistent with a unit/scale extraction error. The half-lives (t1/2α 83.5 min, t1/2z 12 h) were read inconsistently by a second reader, who returned null for these fields, though the values themselves are plausible. A second reader also disagreed on whether the dose compound and primary analyte are triamcinolone acetonide or unknown. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has triamcinolone acetonide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:01.342813+00:00) predates the upstream re-run (2026-10-04 04:28:31.182012+00:00). Current validate status: `rejected`.
 
 ## Citation
 French K et al., Pharmacokinetics and metabolic effects…, Journal of veterinary pharm… (2000)
   ·  DOI: [10.1046/j.1365-2885.2000.00288.x](https://doi.org/10.1046/j.1365-2885.2000.00288.x)
 
 ## Model component
-<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="true" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_French2000_reference" status="rejected" stale="false" population="horses" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

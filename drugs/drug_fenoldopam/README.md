@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A dopamine D1 receptor agonist that is used as an antihypertensive agent. It lowers blood pressure through arteriolar vasodilation.
+Fenoldopam is an antihypertensive vasodilator used to treat severe hypertension such as malignant or renovascular hypertension, and congestive heart failure. It is an approved medicine, mainly used in hospital settings for short-term control of high blood pressure.
 
-**Indication.** For the in-hospital, short-term (up to 48 hours) management of severe hypertension when rapid, but quickly reversible, emergency reduction of blood pressure is clinically indicated, including malignant hypertension with deteriorating end-organ function.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2357007](https://www.wikidata.org/wiki/Q2357007) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,8 +32,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…10% in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…about 90% of infused fenoldopam is eliminated in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (inhibitor), ADRA1B (inhibitor), ADRA1D (inhibitor), ADRA2A (target), ADRA2B (target), ADRA2C (target), DRD1 (target), DRD5 (target).</sub>
 

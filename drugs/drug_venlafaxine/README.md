@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Venlafaxine is an antidepressant and a serotonin and norepinephrine reuptake inhibitor (SNRI). Its active metabolite, [desvenlafaxine], works by blocking the reuptake of serotonin and norepinephrine, which are key neurotransmitters in mood regulation. Venlafaxine is officially approved to treat major depressive disorder (MDD), generalized anxiety disorder (GAD), social anxiety disorder, and panic disorder in adults.[L43030] The immediate formulation of the drug, marketed as Effexor, was first approved by the FDA in 1993 and the extended-release formulation, Effexor XR, was later introduced in 1997.[A252065]
+Venlafaxine is an antidepressant (a serotonin–norepinephrine reuptake inhibitor) used for depression and anxiety-related conditions such as generalized anxiety disorder, social anxiety disorder, and panic-type anxiety disorders. It is an approved prescription medicine that is widely used, though it carries a boxed warning.
 
-Venlafaxine has been used as a first-line treatment for MDD, GAD, social anxiety disorder, and panic disorder in Canada for many years. It was also considered a second-line treatment for obsessive-compulsive disorder (OCD).[A177226,A177235] Venlafaxine was also investigated in off-label uses for the prophylaxis of migraine headaches,[A413,A177229] for reduction of vasomotor symptoms associated with menopause,[A177238] and for the management of neuropathic pain (although there is only minimal evidence of efficacy for this condition).[A177232]
-
-**Indication.** Venlafaxine is indicated for the management of major depressive disorder (MDD), generalized anxiety disorder (GAD), social anxiety disorder (SAD), and panic disorder.[L43030]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q898407](https://www.wikidata.org/wiki/Q898407) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -98,7 +96,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` metabolism, `CYP2C19` metabolism/substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…87% of a venlafaxine dose is recovered in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor/target | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor/target | DrugBank actor |
 

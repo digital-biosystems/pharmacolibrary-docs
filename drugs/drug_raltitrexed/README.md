@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Raltitrexed (brand name Tomudex&reg;) is a chemotherapy drug manufactured AstraZeneca Company, is an antimetabolite used in chemotherapy. It is an inhibitor of thymidylate synthase.
+Raltitrexed is an anticancer antimetabolite (a folic acid analogue) used to treat advanced colorectal cancer. It was withdrawn in some countries because of serious toxicity, but remains available and used in a limited number of countries.
 
-**Indication.** For the treatment of malignant neoplasm of colon and rectum
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15304877](https://www.wikidata.org/wiki/Q15304877) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

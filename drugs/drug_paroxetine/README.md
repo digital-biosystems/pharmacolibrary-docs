@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Paroxetine is a selective serotonin reuptake inhibitor (SSRI) drug commonly known as Paxil. It has a variety of uses, including the treatment of anxiety disorders, major depression, posttraumatic stress disorder, and symptoms of menopause, among others.[T653] It was approved by the FDA in the early 1990s and marketed by SmithKline Beecham.[L7712,L7715] A unique feature of this drug is that it is highly potent and selective in its inhibition of serotonin reuptake and has little effect on other neurotransmitters.[A31914] Because of its potent inhibition of serotonin reuptake, paroxetine is more likely to cause withdrawal effects upon cessation. Paroxetine is well tolerated in most patients with a similar adverse effect profile to other members of its drug class.[A31914] The controlled release formulation was designed to decrease the likelihood of nausea that is sometimes associated with paroxetine.[L7700,L7742]
+Paroxetine is a selective serotonin reuptake inhibitor antidepressant used for conditions such as depression, anxiety disorders, panic disorder, obsessive-compulsive disorder, and post-traumatic stress disorder. It is an approved medicine in widespread clinical use, though it carries a boxed warning.
 
-**Indication.** Paroxetine is indicated for the management of depression, obsessive-compulsive disorder, panic disorder, social anxiety disorder, generalized anxiety disorder, posttraumatic stress disorder.[L3358] One form of paroxetine, commercially known as Brisdelle, is used to manage mild to moderate vasomotor symptoms of menopause.[L7703] Off-label, paroxetine may be used for the treatment of premature ejaculation or irritable bowel syndrome (IBS).[A1093,A181754,A181904]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408471](https://www.wikidata.org/wiki/Q408471) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -66,8 +66,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…eliminated in the feces primarily as metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

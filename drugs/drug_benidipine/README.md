@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Benidipine has the formula 1,4-dihydro-2,6-dimethyl-4-(3-nitrophenyl)-3,5-pyridine-dicarboxylic acid methyl 1-(phenylmethyl)-3-piperidinyl ester hydrochloride. It is a synthetic dihydropyridine derivative that has anti-hypertensive and anti-anginal actions.[A31948] It was originated in Japan by Kyowa Hakko, it is submitted for FDA approval and it is currently available in some Asian countries like India and Japan.[L1385, L1386]
+Benidipine is a dihydropyridine calcium channel blocker developed for treating high blood pressure and related cardiovascular conditions. It is not approved in the European Union and remains investigational in major drug databases, with use limited to certain Asian markets.
 
-**Indication.** Benidipine is a potent and long-lasting drug indicated for the treatment of cardiovascular diseases such as hypertension, renoparenchymal hypertension and angina pectoris.[A31950]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q113514884](https://www.wikidata.org/wiki/Q113514884) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,12 +40,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Benidipine is rapidly absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in feces, making bile excretion the major elimination pathway…”</sub> | prose |
-| excretion | kidney | <sub>“…urinary excretion after oral administration is of approximate 36%…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1B (target), CACNA1C (target), CACNA1G (target).</sub>
 

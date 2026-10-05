@@ -8,6 +8,12 @@
 - **molar mass:** 794.976 g/mol (C42H66O14) — DrugBank
 - **groups:** investigational
 
+## About
+
+Metildigoxin is a digitalis cardiac glycoside with cardiotonic and antiarrhythmic activity, studied for heart conditions such as heart failure and rhythm disorders. It is considered investigational and does not appear to have an authorised marketing authorisation in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q550017](https://www.wikidata.org/wiki/Q550017) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -18,7 +24,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1977_reference](drugs/drug_metildigoxin/Metildigoxin_Hinderling1977_reference.md) | — | parent + metabolite (no model) | 0 | Hinderling PH et al., Pharmacokinetics of beta-methyldigoxin…, Journal of pharmaceutical s… (1977) | [10.1002/jps.2600660304](https://doi.org/10.1002/jps.2600660304) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1977_reference](drugs/drug_metildigoxin/Metildigoxin_Hinderling1977_reference.md) | — | parent + metabolite (no model) | 0 | Hinderling PH et al., Pharmacokinetics of beta-methyldigoxin…, Journal of pharmaceutical s… (1977) | [10.1002/jps.2600660304](https://doi.org/10.1002/jps.2600660304) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

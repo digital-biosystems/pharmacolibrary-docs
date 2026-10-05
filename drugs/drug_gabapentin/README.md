@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Gabapentin is a structural analogue of the inhibitory neurotransmitter gamma-aminobutyric acid ([GABA]) that was first approved for use in the United States in 1993.[L8717] It was originally developed as a novel anti-epileptic for the treatment of certain types of seizures[A186277,A186143] - today it is also widely used to treat neuropathic pain.[A14097,A186179] Gabapentin has some stark advantages as compared with other anti-epileptics, such as a relatively benign adverse effect profile, wide therapeutic index, and lack of appreciable metabolism making it unlikely to participate in pharmacokinetic drug interactions.[A186143,A185981,L8717]. It is structurally and functionally related to another GABA derivative, [pregabalin].
+Gabapentin is an anticonvulsant and pain-relieving medicine used for epilepsy and various types of pain and neurological conditions, such as neuropathy, restless legs syndrome, and fibromyalgia. It is an approved medicine in widespread clinical use, and has also been studied for other conditions.
 
-**Indication.** In the United States, gabapentin is officially indicated for the treatment of postherpetic neuralgia in adults and for the adjunctive treatment of partial-onset seizures, with or without secondary generalization, in patients 3 years of age and older.[L8717] In Europe, gabapentin is indicated for adjunctive therapy in the treatment of partial-onset seizures, with or without secondary generalization, in patients 6 years of age and older and as monotherapy in patients 12 years of age and older. It is also used in adults for the treatment of various types of peripheral neuropathic pain, such as painful diabetic neuropathy.[L8732]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410352](https://www.wikidata.org/wiki/Q410352) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -61,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorption of gabapentin is thought to occur solely via facilitated transport by the LAT1…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` transport | paper PGx gene |
 
 <sub>Actors without a tissue in the table: ADORA1 (target), BCAT1 (inhibitor), CACNA2D1 (inhibitor), CACNA2D2 (inhibitor), GABBR1 (target), GABBR2 (target), KCNQ3 (activator), KCNQ5 (activator), SLC7A5 (substrate).</sub>

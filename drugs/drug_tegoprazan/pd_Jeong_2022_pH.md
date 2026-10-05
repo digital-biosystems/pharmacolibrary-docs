@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;tegoprazan&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/&quot;},{&quot;label&quot;:&quot;Jeong_2022 \u00b7 PD gastric acid pH&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;tegoprazan&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/&quot;},{&quot;label&quot;:&quot;Jeong_2022 \u00b7 PD intragastric pH&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# gastric acid pH — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.828). The first reading is what the record holds.">cross-check: disputed</span>
+# intragastric pH — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.828). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,54 +14,26 @@
 
 ## What this record describes
 
-**As extracted:** Tegoprazan (concentrations from the PK model of He_2021) drives gastric acid pH (in unit): indirect response — drug inhibits the loss of gastric acid pH.
+**As extracted:** Tegoprazan (concentrations from the PK model of He_2021) drives intragastric pH: indirect response — drug inhibits the production of intragastric pH.
 
 **Model:** No model was generated from this record.
 
-> Tegoprazan plasma concentrations (ng/mL, from the PBPK model) drive intragastric gastric acid pH via an indirect response model combined with a sigmoid Emax function applied to a baseline pH profile described by a sixth-order Fourier series; the paper does not state the specific PD parameter values (e.g., Emax, EC50, kin, kout).
+> The model describes the effect of tegoprazan plasma concentrations (ng/mL) on intragastric pH using an indirect response model with a sigmoid Emax effect on the production of the response, incorporating a baseline pH described by a sixth-order Fourier series. The paper does not provide specific numerical values for potency or rate parameters such as IC50, Emax, kin, or kout.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Jeong_2022`
-- **model family:** `indirect_response_ii`
+- **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
-- **tier:** descriptive
-- **effect:** stimulation/unknown
+- **tier:** population
+- **effect:** inhibition/proportional
 
 ## Citation
 Jeong HC et al., Integration of a Physiologically Based…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14061298](https://doi.org/10.3390/pharmaceutics14061298)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| PK (driver) | fu — Initial Value | `Q46` · not captured | 0.087 | not captured | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row7:col1 |
-| PK (driver) | fu — Final Value | `Q46` · not captured | 0.087 | not captured | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row7:col2 |
-| PK (driver) | Vss (L/kg) — Initial Value | `Q65` · not captured | 1.55 | L/kg | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row14:col1 |
-| PK (driver) | Vss (L/kg) — Final Value | `Q65` · not captured | 1.0 | L/kg | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row14:col2 |
-| PK (driver) | CLint, CYP3A4 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.855 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row18:col1 |
-| PK (driver) | CLint, CYP3A4 (μL/min/pmol) — Final Value | `Q3` · not captured | 1.920 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row18:col2 |
-| PK (driver) | CLint, CYP2C19 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.614 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row19:col1 |
-| PK (driver) | CLint, CYP2C19 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.710 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row19:col2 |
-| PK (driver) | CLint, CYP2C8 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.060 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row20:col1 |
-| PK (driver) | CLint, CYP2C8 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.060 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row20:col2 |
-| PK (driver) | CLint, CYP2C9 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.140 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row21:col1 |
-| PK (driver) | CLint, CYP2C9 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.140 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row21:col2 |
-| PK (driver) | CLint, CYP2D6 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.020 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row22:col1 |
-| PK (driver) | CLint, CYP2D6 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.020 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row22:col2 |
-| PK (driver) | CLint, CYP2E1 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.030 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row23:col1 |
-| PK (driver) | CLint, CYP2E1 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.030 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row23:col2 |
-| PK (driver) | Additional HLM CLint (μL/min/mg protein) — Initial Value | `Q3` · not captured | 15.96 | μL/min/mg protein | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row24:col1 |
-| PK (driver) | Additional HLM CLint (μL/min/mg protein) — Final Value | `Q3` · not captured | 15.96 | μL/min/mg protein | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row24:col2 |
-| PK (driver) | Biliary CLint (µL/min/106) — Final Value | `Q3` · not captured | 1.290 | µL/min/106 | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row25:col2 |
-| PK (driver) | CLR (L/h) — Initial Value | `Q26` · not captured | 1.1 | L/h | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row26:col1 |
-| PK (driver) | CLR (L/h) — Final Value | `Q26` · not captured | 1.1 | L/h | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row26:col2 |
-| PK (driver) | Additional systemic clearance (L/h) — Final Value | `Q358` · not captured | 1.43 | L/h | not captured | llm_corrected (not captured) | pharmaceutics-14-01298-t001:row27:col2 |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

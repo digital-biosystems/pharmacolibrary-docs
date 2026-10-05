@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;ranitidine&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/&quot;},{&quot;label&quot;:&quot;Hawwa_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranitidine_Hawwa2013_reference&quot;,&quot;label&quot;:&quot;Hawwa_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranitidine_Hawwa2013_reference&quot;,&quot;label&quot;:&quot;Hawwa_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ranitidine — `Ranitidine_Hawwa2013_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 27.5, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ranitidine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:31.078369+00:00) predates the upstream re-run (2026-10-04 11:29:11.438374+00:00). Current validate status: `extracted`.
 
 ## Citation
 Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013)
   ·  DOI: [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x)
 
 ## Model component
-<dbs-pgx drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="curated_candidate" stale="false" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="extracted" stale="true" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -76,17 +78,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 27.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 1.31 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 1.31 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability]` | 27.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 27.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total clearance]` | 32.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total clearance]` | not captured | 32.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 285 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 285 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | ranitidine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | ranitidine | unknown | mismatch |
 
 </details>
 
@@ -142,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_modelica.zip" download>Ranitidine_Hawwa2013_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_fmi.zip" download>Ranitidine_Hawwa2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_fmi.zip" download>Ranitidine_Hawwa2013_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_matlab.zip" download>Ranitidine_Hawwa2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_matlab_simbio.zip" download>Ranitidine_Hawwa2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference/Ranitidine_Hawwa2013_reference_sbml.zip" download>Ranitidine_Hawwa2013_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -163,4 +170,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 06:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:29 UTC</sub>

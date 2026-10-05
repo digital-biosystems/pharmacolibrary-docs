@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An indandione that has been used as an anticoagulant. Phenindione has actions similar to warfarin, but it is now rarely employed because of its higher incidence of severe adverse effects. (From Martindale, The Extra Pharmacopoeia, 30th ed, p234)
+Phenindione is an anticoagulant of the vitamin K antagonist type, used to prevent and treat unwanted blood clotting. It is an approved medicine, though it is not authorised in the European Union and is now little used compared with newer anticoagulants.
 
-**Indication.** For the treatment of pulmonary embolism, cardiomyopathy, atrial fibrillation and flutter, cerebral embolism, mural thrombosis, and thrombophili. Also used for anticoagulant prophylaxis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1640947](https://www.wikidata.org/wiki/Q1640947) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,8 +36,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed slowly from the gastrointestinal tract…”</sub> | prose |
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: VKORC1 (inhibitor).</sub>
 

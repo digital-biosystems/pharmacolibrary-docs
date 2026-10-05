@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Anethole trithione (ATT) appears to have a broad range of unique functions, from increasing salivary secretion to help treat xerostomia [A27165, A32618, A32620, A32621], to demonstrating an ability to inhibit carcinogenesis by increasing the activity of electrophile detoxification enzymes [A32619], and even being used as an adjunctive therapy for cholecystitis, gallstone, indigestion, and acute/chronic hepatitis [L2388] and is marketed in certain countries like France, Germany, and China [A32614].
+Anethole trithione is a drug used to treat dry mouth (xerostomia) and has also been used to stimulate saliva and bile flow. It is an approved medicine, used in some countries mainly for dry mouth relief, though not authorised in the European Union.
 
-Unfortunately, many of the specific mechanisms of action to these activities have yet to be formally elucidated, which means that while studies are ongoing, ATT itself is not necessarily formally indicated for many of these aforementioned functions at this time and is only used in limited regions around the world.
-
-**Indication.** The most typical uses for which anethol trithione is currently indicated for includes increasing salivary secretion in patients experiencing dry mouth or being used as an adjunctive therapy for cholecystitis, gallstone, indigestion, and acute/chronic hepatitis [A32614, A32616, L2377].
-
-In addition, although some studies have suggested that anethol trithione also possesses a certain capacity to inhibit tumorigenesis as a potential cancer therapy medication, the specific mechanism of action for this effect remains to be elucidated [A32619] with certain national cancer institutes listing the agent as 'a substance that is being studied in the treatment of cancer' [L2373].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4761739](https://www.wikidata.org/wiki/Q4761739) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…such metabolism occurs in liver microsomes…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: TGM2 (inhibitor).</sub>
 

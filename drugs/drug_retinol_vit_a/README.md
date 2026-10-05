@@ -7,11 +7,17 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Retinol (vitamin A) is a vitamin used to treat or prevent vitamin A deficiency. It is classified as a plain vitamin A product and remains in general use as a nutritional supplement.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 10:10 | 22:15 | 0/0/0 | 0/0/0 | 0/0/0 | 149,326/13,145 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 7/11 | 17/1 | 0 |
+| 2026-10-05 08:32 | 4:35 | 0/0/0 | 0/0/0 | 0/0/0 | 151,683/4,238 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 7/11 | 17/1 | 0 |
 
 ## popPK records
 
@@ -36,75 +42,75 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lopez-Teros_2022.pdf` | Lopez-Teros V et al., Development of a Compartmental Model fo…, The Journal of nutrition (2022) | popPK | 9 | [10.1093/jn/nxac078](https://doi.org/10.1093/jn/nxac078) | [35349703](https://pubmed.ncbi.nlm.nih.gov/35349703) | The paper describes a compartmental model for retinol kinetics in theoretical women, but the specific numeric parameter values are assigned to theoretical subjects and not explicitly listed in the provided evidence text. |
-| `Green_2021.pdf` | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | popPK | 8 | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) | [33188397](https://pubmed.ncbi.nlm.nih.gov/33188397) | The paper describes a compartmental model for retinol derived from beta-carotene, but the specific quantitative PK parameters (CL, V, Q) are not explicitly listed in the provided text, which focuses on bioavailability and metabolic percentages. |
-| `Ko_2023.pdf` | Ko J et al., Pharmacokinetic Analyses of Liposomal a…, Nutrients (2023) | popPK | 8 | [10.3390/nu15133073](https://doi.org/10.3390/nu15133073) | [37447400](https://pubmed.ncbi.nlm.nih.gov/37447400) | The study reports PK parameters (clearance, volume, half-life) for vitamin A, but the specific numeric values are not present in the provided text, likely residing in tables or figures not included. |
+| `Green_2021.pdf` | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | popPK | 9 | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) | [33188397](https://pubmed.ncbi.nlm.nih.gov/33188397) | The paper presents a compartmental model for retinol derived from beta-carotene in humans, reporting quantitative parameters like bioavailability and bioefficacy, though specific clearance/volume values are not explicitly listed in the text. |
+| `Lopez-Teros_2022.pdf` | Lopez-Teros V et al., Development of a Compartmental Model fo…, The Journal of nutrition (2022) | popPK | 9 | [10.1093/jn/nxac078](https://doi.org/10.1093/jn/nxac078) | [35349703](https://pubmed.ncbi.nlm.nih.gov/35349703) | The paper describes a compartmental model for retinol kinetics in humans, but the specific numeric parameter values are assigned to theoretical subjects and likely reside in supplementary material or are not explicitly listed in the provided abstract text. |
+| `Ko_2023.pdf` | Ko J et al., Pharmacokinetic Analyses of Liposomal a…, Nutrients (2023) | popPK | 8 | [10.3390/nu15133073](https://doi.org/10.3390/nu15133073) | [37447400](https://pubmed.ncbi.nlm.nih.gov/37447400) | The study reports PK parameters (clearance, volume, half-life) for Vitamin A (retinol) in humans, but the specific numeric values are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-16T10:10:15.055492+00:00</sub>
+<sub>queue written 2026-10-05T08:32:07.555798+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ballard_1988 | irrelevant | 0 | 0 | The study focuses on the effects of dietary zeolite and vitamin A on bone pathology in chickens, not on the pharmacokinetic disposition parameters (CL, V, etc.) of retinol. |
-| popPK | Bankson_1988 | irrelevant | 0 | 0 | The paper describes an assay for retinol-binding protein (RBP) and does not report pharmacokinetic parameters for retinol (vitamin A). |
-| popPK | Cai_2022 | irrelevant | 0 | 0 | The paper is a mechanistic study on photoreceptor cell death (pyroptosis/apoptosis) mediated by all-trans-retinal (atRAL) and Gasdermin E, not a pharmacokinetic study reporting disposition parameters for retinol (vitamin A). |
-| popPK | Che_2016 | irrelevant | 0 | 0 | The paper focuses on the stability and degradation kinetics of β-carotene in sorghum grain, not the pharmacokinetics of retinol in a biological system. |
-| popPK | Chen_2017 | irrelevant | 2 | 3 | The study reports in-vitro single-cell clearance rate constants for retinol in mouse photoreceptors, which are mechanistic transport parameters rather than systemic population pharmacokinetic parameters (CL, V, half-life). |
-| popPK | Chien_1992 | irrelevant | 0 | 0 | The study focuses on synthetic retinoids (acitretin, etretinate, isotretinoin) and does not report pharmacokinetic parameters for retinol (vitamin A). |
-| popPK | Choo_2019 | irrelevant | 0 | 0 | The study focuses on dialysis modalities and solute clearance (urea, creatinine, FGF23), not the pharmacokinetic parameters of retinol_vit_a. |
+| popPK | Ballard_1988 | irrelevant | 0 | 0 | The study investigates the effects of dietary zeolite and vitamin A on bone pathology (tibial dyschondroplasia) in chickens and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
+| popPK | Bankson_1988 | irrelevant | 0 | 0 | The study focuses on the development of an assay for retinol-binding protein (RBP) and reports RBP concentrations, not the pharmacokinetic parameters (CL, V, etc.) of retinol itself. |
+| popPK | Cai_2022 | irrelevant | 0 | 0 | The study is a mechanistic investigation of photoreceptor cell death pathways (pyroptosis/apoptosis) in mice and cell lines, not a pharmacokinetic study reporting quantitative disposition parameters for retinol. |
+| popPK | Che_2016 | irrelevant | 0 | 0 | The paper studies the stability and degradation kinetics of beta-carotene in sorghum grain, not the pharmacokinetics of retinol in a biological system. |
+| popPK | Chen_2017 | irrelevant | 1 | 2 | The study is an in-vitro mechanistic investigation of retinoid transport in isolated mouse photoreceptors, not a pharmacokinetic study reporting systemic disposition parameters (CL, V, ka) for retinol as a drug. |
+| popPK | Chien_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of acitretin, etretinate, isotretinoin, and synthetic acetylenic retinoids, not retinol (vitamin A). |
+| popPK | Choo_2019 | irrelevant | 0 | 0 | The study compares dialysis modalities and reports clearance of various solutes (urea, creatinine, FGF23, etc.), but does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol or vitamin A. |
 | popPK | Christides_2015 | irrelevant | 0 | 0 | The study focuses on iron bioavailability in an in vitro Caco-2 cell model and does not report pharmacokinetic parameters for retinol or vitamin A. |
-| popPK | Chungchunlam_2024 | irrelevant | 0 | 0 | The paper is a review of nutrient bioavailability in foods and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
-| popPK | Coleman_2023 | irrelevant | 0 | 0 | The study focuses on the antibacterial and antibiofilm properties of retinol, not its pharmacokinetic disposition parameters. |
-| popPK | Costanza_2018 | irrelevant | 0 | 0 | The paper is a mechanistic study on CRBPI expression in psoriasis and does not report any pharmacokinetic parameters for retinol. |
+| popPK | Chungchunlam_2024 | irrelevant | 0 | 0 | The paper is a review of vitamin bioavailability in food sources and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
+| popPK | Coleman_2023 | irrelevant | 0 | 0 | The study investigates the antibacterial and antibiofilm properties of retinol in vitro, not its pharmacokinetics. |
+| popPK | Costanza_2018 | irrelevant | 0 | 0 | The study investigates the expression of cellular retinol binding protein I (CRBPI) in psoriasis using immunohistochemistry and gene arrays, but does not report any pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
 | popPK | Dayma_2025 | irrelevant | 0 | 0 | The paper is a review of Stargardt's disease pathogenesis and therapies, containing no pharmacokinetic studies or quantitative disposition parameters for retinol. |
 | popPK | Fainsod_2020 | irrelevant | 0 | 0 | The paper is a review of developmental biology and mechanisms of Fetal Alcohol Spectrum Disorder, not a pharmacokinetic study reporting quantitative disposition parameters for retinol. |
-| popPK | Farris_2022 | irrelevant | 2 | 0 | The paper is a review article discussing retinol for cosmetic use and does not provide original quantitative pharmacokinetic parameter values. |
-| popPK | Fawzi_1993 | irrelevant | 0 | 0 | The paper is an epidemiological study on the clinical efficacy of vitamin A supplementation for xerophthalmia and does not report any pharmacokinetic parameters. |
-| popPK | Formelli_1993 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of fenretinide (4HPR), with retinol serving only as a biomarker for drug effect rather than the subject drug for PK parameter estimation. |
-| popPK | Fu_2025 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of vitamin A supplementation in sepsis and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
-| popPK | Ghafoor_2022 | irrelevant | 0 | 0 | The paper is a clinical review of scalp psoriasis treatments and does not report any pharmacokinetic parameters for retinol. |
-| popPK | Green_2021 | relevant | 8 | 2 | The paper describes a compartmental model for retinol derived from beta-carotene, but the specific quantitative PK parameters (CL, V, Q) are not explicitly listed in the provided text, which focuses on bioavailability and metabolic percentages. |
-| popPK | Heidemann_2023 | irrelevant | 0 | 0 | The study uses retinyl palmitate as a tracer to assess chylomicron metabolism in the context of PCSK9 inhibitor effects on lipoproteins, rather than reporting pharmacokinetic parameters (CL, V, ka) for retinol/vitamin A itself. |
-| popPK | Huang_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on gene expression and mRNA stability, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Farris_2022 | irrelevant | 2 | 0 | The paper is a review of cosmetic retinoids and discusses pharmacokinetics qualitatively but provides no quantitative disposition parameters or numeric values in the evidence. |
+| popPK | Fawzi_1993 | irrelevant | 0 | 0 | The study is an epidemiological analysis of xerophthalmia risk and does not report pharmacokinetic parameters for retinol. |
+| popPK | Formelli_1993 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of fenretinide (4HPR), with retinol measured only as a biomarker of effect (concentration reduction) rather than as the subject drug for PK parameter estimation. |
+| popPK | Fu_2025 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of vitamin A supplementation in sepsis, reporting clinical outcomes and biomarkers (lactate, PCT) rather than pharmacokinetic parameters (CL, V, ka) for retinol. |
+| popPK | Ghafoor_2022 | irrelevant | 0 | 0 | The paper is a clinical review of scalp psoriasis treatments and does not report any pharmacokinetic parameters for retinol or vitamin A. |
+| popPK | Green_2021 | relevant | 9 | 4 | The paper presents a compartmental model for retinol derived from beta-carotene in humans, reporting quantitative parameters like bioavailability and bioefficacy, though specific clearance/volume values are not explicitly listed in the text. |
+| popPK | Heidemann_2023 | irrelevant | 0 | 0 | The study investigates the effect of evolocumab on lipoprotein metabolism in familial dysbetalipoproteinemia, using retinyl palmitate only as a tracer for chylomicron kinetics rather than as the subject drug for PK parameter estimation. |
+| popPK | Huang_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of gene expression and mRNA stability, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Hurrell_2010 | irrelevant | 0 | 0 | The paper discusses iron bioavailability and mentions vitamin A only as a dietary factor influencing iron absorption, without reporting any pharmacokinetic parameters for retinol. |
-| popPK | Iyer_2020 | irrelevant | 0 | 0 | The paper is an immunology study on vitamin A signaling in gut infection, not a pharmacokinetic study, and contains no PK parameters for retinol. |
-| popPK | Khokhar_1990 | irrelevant | 2 | 0 | The study reports qualitative changes in serum vitamin A concentrations in rats but does not provide quantitative pharmacokinetic parameters (CL, V, ka, etc.) or a PK model. |
-| popPK | Klaska_2023 | irrelevant | 0 | 0 | The paper is an immunology study on autoimmune uveitis in mice and does not report pharmacokinetic parameters for retinol_vit_a. |
-| popPK | Ko_2023 | relevant | 8 | 2 | The study reports PK parameters (clearance, volume, half-life) for vitamin A, but the specific numeric values are not present in the provided text, likely residing in tables or figures not included. |
-| popPK | Langhendries_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and toxicity of amikacin in neonates, not retinol_vit_a. |
-| popPK | Li_2016 | irrelevant | 0 | 0 | The study focuses on the metabolic formation of retinal dimers and cytotoxicity in cells and mice, not on the pharmacokinetic disposition parameters (CL, V, etc.) of retinol. |
-| popPK | Li_2019 | irrelevant | 2 | 0 | The study focuses on the mechanistic effects of chitooligosaccharides on retinol metabolism and gene expression, reporting qualitative changes in concentration rather than quantitative pharmacokinetic parameters like clearance or volume. |
-| popPK | Liao_2024 | irrelevant | 2 | 0 | The study focuses on formulation and bioavailability (organ content) rather than reporting quantitative pharmacokinetic parameters like clearance, volume, or half-life for retinol. |
-| popPK | Lopez-Teros_2022 | relevant | 9 | 2 | The paper describes a compartmental model for retinol kinetics in theoretical women, but the specific numeric parameter values are assigned to theoretical subjects and not explicitly listed in the provided evidence text. |
-| popPK | Lucek_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of etretinate, not retinol_vit_a. |
-| popPK | Miller_1994 | irrelevant | 0 | 0 | The study focuses on all-trans retinoic acid (a metabolite/derivative), not retinol (vitamin A) as the subject drug, and reports AUC values rather than specific PK parameters for retinol. |
-| popPK | Miller_2022 | irrelevant | 1 | 0 | The study focuses on the mechanism of fenretinide inhibiting vitamin A synthesis in mice and reports qualitative changes in tissue stores, but does not provide quantitative pharmacokinetic parameters (CL, V, ka) for retinol. |
-| popPK | Miller_2023 | irrelevant | 0 | 0 | The study focuses on the bioavailability and metabolism of neurosporaxanthin, not retinol_vit_a, and does not report quantitative PK parameters for retinol. |
-| popPK | Miwako_2007 | irrelevant | 0 | 0 | The paper is a review of tamibarotene, a different drug, and does not report quantitative pharmacokinetic parameters for retinol_vit_a. |
-| popPK | Morley_1980 | irrelevant | 0 | 0 | The study focuses on the endocrine effects of vitamin A on the thyroid axis and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
-| popPK | Mourey_1990 | irrelevant | 2 | 0 | The study focuses on the regulation of retinol-binding protein (RBP) concentrations and forms rather than reporting quantitative pharmacokinetic parameters (CL, V, ka) for retinol itself. |
-| popPK | ONeal_2020 | irrelevant | 0 | 0 | The paper is a clinical case report on hypervitaminosis A toxicity and does not report any quantitative pharmacokinetic parameters for retinol. |
-| popPK | Oxley_2022 | irrelevant | 2 | 0 | The paper focuses on the methodology for quantifying bioconversion and bioefficacy of provitamin A carotenoids using stable isotopes, rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for retinol itself. |
-| popPK | Penkert_2021 | irrelevant | 0 | 0 | The paper is an immunology study investigating the effects of vitamin A deficiency on immune responses to influenza and bacterial coinfection, and it does not report any pharmacokinetic parameters for retinol. |
-| popPK | Quiles_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on lung epithelial remodeling and microbiome changes in vitamin A-deficient mice, not a pharmacokinetic study, and contains no quantitative PK parameters for retinol. |
-| popPK | Redgrave_1976 | irrelevant | 0 | 0 | The study investigates the cellular mechanism of chylomicron cholesterol clearance in rat liver and does not report quantitative pharmacokinetic parameters for retinol. |
+| popPK | Iyer_2020 | irrelevant | 0 | 0 | The paper is an immunology study investigating the role of vitamin A signaling in pathogen clearance, not a pharmacokinetic study reporting disposition parameters for retinol. |
+| popPK | Khokhar_1990 | irrelevant | 1 | 0 | The study reports qualitative changes in serum vitamin A concentrations in rats but does not provide quantitative pharmacokinetic parameters (CL, V, ka, etc.) or a PK model. |
+| popPK | Klaska_2023 | irrelevant | 0 | 0 | The paper is an immunology study on autoimmune uveitis in mice and does not report pharmacokinetic parameters for retinol or vitamin A. |
+| popPK | Ko_2023 | relevant | 8 | 2 | The study reports PK parameters (clearance, volume, half-life) for Vitamin A (retinol) in humans, but the specific numeric values are not present in the provided abstract text. |
+| popPK | Langhendries_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and toxicity of amikacin in neonates, not retinol_vit_a. |
+| popPK | Li_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of retinoid metabolism and cytotoxicity in cells, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for retinol. |
+| popPK | Li_2019 | irrelevant | 2 | 0 | The study reports qualitative changes in retinol concentrations and gene expression in mice but does not provide quantitative pharmacokinetic parameters (CL, V, ka, etc.) or a compartmental model. |
+| popPK | Liao_2024 | irrelevant | 2 | 0 | The study reports qualitative changes in organ content and solubility but lacks quantitative pharmacokinetic parameters (CL, V, ka) for retinol or retinol acetate. |
+| popPK | Lopez-Teros_2022 | relevant | 9 | 2 | The paper describes a compartmental model for retinol kinetics in humans, but the specific numeric parameter values are assigned to theoretical subjects and likely reside in supplementary material or are not explicitly listed in the provided abstract text. |
+| popPK | Lucek_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of etretinate, not retinol (vitamin A). |
+| popPK | Miller_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of all-trans retinoic acid (a metabolite/derivative), not retinol (vitamin A) itself, and does not report compartmental PK parameters for retinol. |
+| popPK | Miller_2022 | irrelevant | 0 | 0 | The study focuses on the mechanism of fenretinide inhibiting vitamin A synthesis in mice and reports tissue stores/levels, not quantitative pharmacokinetic parameters (CL, V, ka) for retinol. |
+| popPK | Miller_2023 | irrelevant | 0 | 0 | The study focuses on the bioavailability and metabolism of neurosporaxanthin (a fungal carotenoid) in mice, not the pharmacokinetics of retinol/vitamin A itself. |
+| popPK | Miwako_2007 | irrelevant | 0 | 0 | The paper is a review of tamibarotene, a synthetic retinoid, and does not report quantitative pharmacokinetic parameters for retinol (vitamin A). |
+| popPK | Morley_1980 | irrelevant | 0 | 0 | The study investigates the endocrine effects of vitamin A on the thyroid axis in rats, not the pharmacokinetic disposition parameters (CL, V, etc.) of retinol itself. |
+| popPK | Mourey_1990 | irrelevant | 1 | 0 | The study focuses on the regulation of retinol-binding protein (RBP) concentrations and forms rather than the quantitative pharmacokinetic parameters (CL, V, ka) of retinol itself. |
+| popPK | ONeal_2020 | irrelevant | 0 | 0 | This is a clinical case report on toxicity (hypercalcemia) and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
+| popPK | Oxley_2022 | irrelevant | 2 | 0 | The paper focuses on the bioconversion and bioefficacy of provitamin A carotenoids (beta-carotene and beta-cryptoxanthin) rather than the pharmacokinetic disposition parameters (CL, V, etc.) of retinol itself, and no numeric PK values are provided. |
+| popPK | Penkert_2021 | irrelevant | 0 | 0 | The study investigates the immunological effects of vitamin A deficiency on influenza and bacterial coinfection in mice, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
+| popPK | Quiles_2024 | irrelevant | 0 | 0 | The study investigates the effects of vitamin A deficiency on lung epithelial remodeling and microbiome composition in mice, not the pharmacokinetic parameters (CL, V, etc.) of retinol. |
+| popPK | Redgrave_1976 | irrelevant | 0 | 0 | The study investigates the cellular mechanism of chylomicron cholesterol clearance in rat liver, not the pharmacokinetic parameters (CL, V, etc.) of retinol/vitamin A. |
 | popPK | Sarkar_2013 | irrelevant | 0 | 0 | The paper is a review of acitretin, a different drug, and does not report quantitative pharmacokinetic parameters for retinol_vit_a. |
-| popPK | Savolainen_1995 | irrelevant | 0 | 0 | The paper discusses cadmium toxicity and mentions retinol binding protein only as a biomarker for renal tubular damage, not as a subject drug for pharmacokinetic analysis. |
-| popPK | Shields_2018 | irrelevant | 1 | 0 | The paper focuses on the formulation and controlled release kinetics of retinol from silicone particles for topical delivery, not on systemic pharmacokinetic parameters (CL, V, ka) or population PK modeling. |
-| popPK | Shimizugawa_2004 | irrelevant | 0 | 0 | The paper focuses on Angptl3 and lipid metabolism in mice, with no pharmacokinetic parameters reported for retinol_vit_a. |
+| popPK | Savolainen_1995 | irrelevant | 0 | 0 | The paper discusses cadmium toxicity and mentions retinol binding protein only as a biomarker for renal tubular damage, not as a subject of pharmacokinetic analysis. |
+| popPK | Shields_2018 | irrelevant | 1 | 0 | The study focuses on the formulation and controlled release kinetics of retinol from silicone particles (in vitro/topical release rates) rather than systemic pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Shimizugawa_2004 | irrelevant | 0 | 0 | The paper focuses on lipid metabolism and atherosclerosis in mice, with no pharmacokinetic data for retinol_vit_a. |
 | popPK | Song_2026 | irrelevant | 0 | 0 | The study focuses on the formulation and efficacy of a hydrogel for skin repair, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
-| popPK | Surber_1991 | irrelevant | 0 | 0 | The study focuses on the in-vitro pharmacokinetics of acitretin, not retinol_vit_a. |
+| popPK | Surber_1991 | irrelevant | 0 | 0 | The study investigates the in-vitro pharmacokinetics of acitretin, not retinol_vit_a. |
 | popPK | Takashima_1990 | irrelevant | 0 | 0 | The study focuses on the clinical efficacy of cyclosporin A for psoriasis and does not report pharmacokinetic parameters for retinol_vit_a. |
-| popPK | Tozer_2019 | irrelevant | 0 | 0 | The paper is an exposure assessment study focusing on intake and bioavailability, not a pharmacokinetic study reporting disposition parameters like clearance or volume for retinol. |
-| popPK | Tsuchida_2017 | irrelevant | 0 | 0 | The paper is a review of hepatic stellate cell activation and fibrosis mechanisms, not a pharmacokinetic study, and contains no quantitative disposition parameters for retinol. |
-| popPK | Tsuchida_2019 | irrelevant | 0 | 0 | The paper is a review of hepatic stellate cell activation and liver fibrosis mechanisms, containing no pharmacokinetic data or quantitative disposition parameters for retinol. |
-| popPK | Widjaja-Adhi_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on retinal degeneration and visual cycle kinetics in mice, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for retinol. |
-| popPK | Xia_2019 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo mechanistic analysis of retinal metabolism and cytotoxicity, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for retinol. |
-| popPK | Yabut_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme kinetics (Km, kcat, Ki) for all-trans-retinoic acid metabolism, not a pharmacokinetic study reporting disposition parameters (CL, V, t1/2) for retinol. |
-| popPK | Yildirim_2017 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of a topical ointment on nasal symptoms and mucociliary clearance, not a pharmacokinetic study reporting disposition parameters for retinol. |
-| popPK | Zhang_2018 | irrelevant | 0 | 0 | The study focuses on the chemical stability and encapsulation of vitamin A palmitate in a material carrier, not on pharmacokinetic disposition parameters in a biological system. |
-| popPK | elSisi_1993 | irrelevant | 0 | 0 | The study focuses on the mechanism of vitamin A potentiation of carbon tetrachloride hepatotoxicity and does not report pharmacokinetic parameters for retinol. |
+| popPK | Tozer_2019 | irrelevant | 0 | 0 | The paper is an exposure assessment study estimating intake and bioavailability, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Tsuchida_2017 | irrelevant | 0 | 0 | The paper is a review of hepatic stellate cell activation and fibrosis mechanisms, not a pharmacokinetic study of retinol, and contains no quantitative PK parameters. |
+| popPK | Tsuchida_2019 | irrelevant | 0 | 0 | The paper is a review of hepatic stellate cell activation and liver fibrosis mechanisms, with no pharmacokinetic data for retinol. |
+| popPK | Widjaja-Adhi_2025 | irrelevant | 0 | 0 | The study focuses on retinal degeneration and visual cycle kinetics in mice, not on the systemic pharmacokinetic parameters (CL, V, etc.) of retinol. |
+| popPK | Xia_2019 | irrelevant | 0 | 0 | The study focuses on the metabolism of all-trans-retinal (atRal) and its conversion to retinoic acid in retinal cells, not the pharmacokinetic disposition parameters (CL, V, etc.) of retinol (vitamin A) as the subject drug. |
+| popPK | Yabut_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme kinetics (Km, kcat, Ki) for the metabolism of all-trans-retinoic acid (a metabolite of retinol) by CYP26A1, and does not report population pharmacokinetic parameters (CL, V, ka) for retinol. |
+| popPK | Yildirim_2017 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the therapeutic effect of a topical ointment on post-surgical symptoms and mucociliary clearance, not a pharmacokinetic study of retinol. |
+| popPK | Zhang_2018 | irrelevant | 0 | 0 | The study focuses on the chemical stability and encapsulation of vitamin A palmitate in a material system, not on pharmacokinetic disposition parameters in a biological system. |
+| popPK | elSisi_1993 | irrelevant | 0 | 0 | The study investigates the mechanism of vitamin A potentiation of carbon tetrachloride hepatotoxicity (toxicology/pathophysiology) and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retinol. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

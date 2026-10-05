@@ -9,13 +9,15 @@
 
 ## About
 
-**Description.** Prifinium is an antimuscarinic agent with antispasmodic and antiemetic properties. It may be useful for the treatment of irritable bowel syndrome [A175027].
+Prifinium is a synthetic anticholinergic (quaternary ammonium) drug classified for functional gastrointestinal disorders. It appears to be only experimental, with no confirmed current marketing authorisation, so its present use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2109656](https://www.wikidata.org/wiki/Q2109656) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 09:45 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 2,349/161 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 13:04 | 0:51 | 0/0/0 | 0/0/0 | 0/0/0 | 26,985/1,378 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -49,37 +51,37 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Noguchi_1983.pdf` | Noguchi H et al., Pharmacokinetics of prifinium bromide i…, International journal of cl… (1983) | popPK | 10 | not captured | [6134685](https://pubmed.ncbi.nlm.nih.gov/6134685) | The paper reports quantitative PK parameters (CL, Vss, t1/2) for prifinium in healthy volunteers with all numeric values explicitly present in the text. |
+| `Noguchi_1983.pdf` | Noguchi H et al., Pharmacokinetics of prifinium bromide i…, International journal of cl… (1983) | popPK | 10 | not captured | [6134685](https://pubmed.ncbi.nlm.nih.gov/6134685) | The abstract provides explicit quantitative PK parameters (CL, Vss, t1/2, bioavailability) for prifinium in humans. |
 
-<sub>queue written 2026-09-26T09:45:18.067958+00:00</sub>
+<sub>queue written 2026-10-04T13:04:35.093094+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bettini_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of coronary vessel contractions where prifinium is used only as a diagnostic antagonist, with no pharmacokinetic parameters reported. |
-| popPK | Bettini_1986 | irrelevant | 0 | 0 | The study is a pharmacological investigation of carnitine's effects on rat stomach preparations where prifinium is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
-| popPK | Demol_1989 | irrelevant | 0 | 0 | The paper is a review of gastrointestinal motility disorders that mentions prifinium only as an example of an anticholinergic drug without reporting any pharmacokinetic parameters. |
-| popPK | Dong_1995 | irrelevant | 0 | 0 | The paper reports in-vitro ligand binding affinities for muscarinic receptors, not pharmacokinetic disposition parameters for prifinium. |
-| popPK | Dureng_1977 | irrelevant | 0 | 0 | The study is an in-vitro molecular pharmacology investigation of receptor affinity (pA2) and does not report pharmacokinetic disposition parameters for prifinium. |
-| popPK | Fieni_1997 | irrelevant | 0 | 0 | Prifinium is used only as a premedication agent in a clinical protocol for pregnancy termination, and no pharmacokinetic parameters for prifinium are reported. |
-| popPK | Frasson_1978 | irrelevant | 0 | 0 | The paper is a clinical study on the antispastic efficacy of prifinium in esophageal disorders and does not report any pharmacokinetic parameters. |
-| popPK | Hachet_1986 | irrelevant | 0 | 0 | The paper describes a method for measuring gut motility and lists prifinium as a test drug, but it does not report any pharmacokinetic parameters. |
-| popPK | Ishikawa_1993 | irrelevant | 0 | 0 | The paper is a clinical case report on the treatment of organophosphorus intoxication with prifinium and does not report any pharmacokinetic parameters. |
+| popPK | Bettini_1985 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of carnitine's effects on coronary vessels, using prifinium only as a diagnostic antagonist, with no PK parameters reported. |
+| popPK | Bettini_1986 | irrelevant | 0 | 0 | Prifinium is used only as a pharmacological antagonist to block acetylcholine effects in an in-vitro study of carnitine, with no PK parameters reported. |
+| popPK | Demol_1989 | irrelevant | 0 | 0 | The paper is a review of gastrointestinal motility disorders where prifinium is mentioned only as an example of an anticholinergic drug, with no pharmacokinetic data provided. |
+| popPK | Dong_1995 | irrelevant | 0 | 0 | The study reports in-vitro ligand binding affinities for muscarinic receptors, not pharmacokinetic disposition parameters for prifinium. |
+| popPK | Dureng_1977 | irrelevant | 0 | 0 | The study investigates receptor affinity (molecular pharmacology) in vitro, not pharmacokinetic disposition parameters. |
+| popPK | Fieni_1997 | irrelevant | 0 | 0 | Prifinium is used only as a premedication (anti-emetic) in a veterinary protocol for pregnancy termination, with no pharmacokinetic parameters reported for it. |
+| popPK | Frasson_1978 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the antispastic efficacy of prifinium bromide on esophageal motility, not a pharmacokinetic study, and no PK parameters are reported. |
+| popPK | Hachet_1986 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of prifinium on gut motility in dogs, not its pharmacokinetic parameters. |
+| popPK | Ishikawa_1993 | irrelevant | 0 | 0 | The paper is a clinical case report on the treatment of organophosphorus intoxication with prifinium, reporting clinical outcomes rather than pharmacokinetic parameters. |
 | PD | Ishikawa_1993 | not_relevant | 1 | 0 | The text is a qualitative clinical summary describing the efficacy of prifinium bromide in treating chronic organophosphorus intoxication but provides no numeric PD parameters, dose-response data, or concentration-effect analysis. |
 | popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The paper is an epidemiological and toxicological study where prifinium is mentioned only as a therapeutic antidote, with no pharmacokinetic parameters reported. |
 | PD | Ishikawa_1996 | not_relevant | 0 | 0 | The paper is an epidemiological and pathological report on organophosphorus toxicity; Prifinium is mentioned only as a treatment antidote without any dose-response or exposure-response analysis. |
-| popPK | Ishikawa_2016 | irrelevant | 0 | 0 | The study is a mechanistic investigation of sperm migration in mice where prifinium is used as a pharmacological tool to suppress contractions, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Kubo_1981 | irrelevant | 0 | 0 | The study is a pharmacological investigation of ganglion blocking activity in animals, and prifinium is used only as a comparator agent with no pharmacokinetic parameters reported. |
+| popPK | Ishikawa_2016 | irrelevant | 0 | 0 | The study investigates the physiological effects of prifinium on mouse oviductal contractions and sperm migration, not its pharmacokinetic parameters. |
+| popPK | Kubo_1981 | irrelevant | 0 | 0 | The study is a pharmacological comparison of ganglion blocking activity in cats, where prifinium is used only as a comparator agent, and no pharmacokinetic parameters are reported. |
 | PD | Kubo_1981 | not_relevant | 1 | 0 | The paper focuses on the pharmacological profile of HSR-902, mentioning prifinium only for qualitative potency ranking without providing numeric PD parameters or extractable dose-response data for prifinium. |
-| popPK | Kuriyama_2021 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study describing the synthesis of prifinium bromide and contains no pharmacokinetic data or disposition parameters. |
-| popPK | Lacroix_1992 | irrelevant | 0 | 0 | The study focuses on the physiological effects of prifinium on respiratory sinus arrhythmia and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Moriyoshi_1999 | irrelevant | 0 | 0 | The study is a pharmacological investigation of parturition induction where prifinium is used as a pretreatment agent, and it does not report original quantitative pharmacokinetic parameters (CL, V, etc.) for prifinium. |
-| popPK | Sasaki_1985 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for irritable bowel syndrome and does not report any pharmacokinetic parameters for prifinium. |
-| popPK | Subissi_1983 | irrelevant | 0 | 0 | The study is a pharmacological investigation of spasmolytic effects on intestinal contraction in rats, not a pharmacokinetic study, and reports no disposition parameters for prifinium. |
-| popPK | Tamura_1986 | irrelevant | 0 | 0 | The paper is a clinical observation of a physiological phenomenon (magician's forceps) in exotropia patients and does not report any pharmacokinetic parameters for prifinium. |
-| popPK | Terai_1991 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (bladder contractions) and mechanisms of action, not pharmacokinetic disposition parameters. |
-| popPK | Tohei_1975 | irrelevant | 0 | 0 | The study is a roentgenographic evaluation of gastrointestinal effects (gastric tonus and form) and does not report any pharmacokinetic parameters for prifinium. |
+| popPK | Kuriyama_2021 | irrelevant | 0 | 0 | The paper describes a chemical synthesis method for prifinium bromide and contains no pharmacokinetic data or disposition parameters. |
+| popPK | Lacroix_1992 | irrelevant | 0 | 0 | The study investigates the physiological effects of prifinium on respiratory sinus arrhythmia, not its pharmacokinetic parameters. |
+| popPK | Moriyoshi_1999 | irrelevant | 0 | 0 | The study investigates the efficacy of prifinium as a pretreatment to reduce side effects of fenprostalene in dogs, reporting no pharmacokinetic parameters (CL, V, etc.) for prifinium itself. |
+| popPK | Sasaki_1985 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for irritable bowel syndrome and does not report any pharmacokinetic parameters. |
+| popPK | Subissi_1983 | irrelevant | 0 | 0 | The study is a pharmacological investigation of spasmolytic effects on rat intestine, not a pharmacokinetic study, and reports no disposition parameters for prifinium. |
+| popPK | Tamura_1986 | irrelevant | 0 | 0 | The study is a clinical observation of electromyography in exotropia patients where prifinium is used as a therapeutic agent, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Terai_1991 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects (bladder contractions) and mechanism of action, not pharmacokinetic disposition parameters. |
+| popPK | Tohei_1975 | irrelevant | 0 | 0 | The study is a clinical pharmacodynamic evaluation of gastric tonus and form, not a pharmacokinetic study, and reports no disposition parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

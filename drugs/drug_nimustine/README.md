@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Nimustine has been used in trials studying the treatment of Glioblastoma.
+Nimustine is a nitrosourea alkylating agent with antineoplastic (cancer-treating) activity. It is classed as investigational and has no European Union authorisation.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q907623](https://www.wikidata.org/wiki/Q907623) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

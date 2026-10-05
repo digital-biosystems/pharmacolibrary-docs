@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tolbutamide concentrations (in µM) directly inhibit KATP-channel activity in mouse pancreatic P-cells via a sigmoidal Emax mechanism, with an EC50 of 4.8 µM and a Hill coefficient of -0.82. The paper does not specify kinetic rate parameters (e.g., kin, kout, ke0) or an effect compartment for this direct channel block.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schwanstecher_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

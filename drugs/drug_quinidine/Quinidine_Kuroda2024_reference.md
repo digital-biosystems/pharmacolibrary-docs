@@ -5,7 +5,7 @@
 
 # quinidine — `Quinidine_Kuroda2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.452). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.452). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,32 +15,32 @@
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The quinidine record was quarantined because clearance, volume of distribution, absorption rate constant, absorption lag time and both intercompartmental rate constants had no source values and were replaced by library placeholder defaults.**
+**V1, V2, V3, CL, Q, kabs, t1/2α, t1/2β, t1/2γ, t1/2ka , Vss and MRT have no unit.**
 
-The record reports quinidine parameters for Thoroughbred racehorses (e.g. CL 0.49, V1 0.63, Q 2.87, Fab 36.4), but the model builder substituted placeholder defaults for Cl, Vd, ka, Tlag, k12 and k21 because the source reported none of them; the defaulted ka counts as an invented absorption and failed the deviations check. One reported unit could not be converted to SI, so that parameter reached the model without an SI value. A second reader further disagreed on several values, reading CL as 25.6 (versus 0.49), Q as 74.9 (versus 2.87) and bioavailability as 33.1 (versus 36.4), and the dose compound as quinidine sulfate dihydrate rather than quinidine. Extracted — quinidine: V1 0.63, V2 0.59, V3 3.68, CL 0.49, Q 2.87, kabs 1, Fab 36.4, t1/2α 0.06, … (+5).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Vss and MRT), so that value has no SI equivalent. Extracted — quinidine: V1 0.63, V2 0.59, V3 3.68, CL 0.49, Q 2.87, kabs 1, Fab 36.4, t1/2α 0.06, … (+5).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has quinidine, the second reading quinidine sulfate dihydrate; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kuroda T et al., Rational quinidine dosage regimen for a…, Frontiers in veterinary sci… (2024)
   ·  DOI: [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342)
 
 ## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="model_quarantined" stale="false" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="needs_review" stale="false" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 13 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -140,16 +140,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.49 | not captured | not captured | ['tab1:row4:col2', 'tab1:row4:col3', 'tab1:row4:col4', 'tab1:row4:col5', 'tab1:row4:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -158,8 +148,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_quinidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kuroda_2024` / `Kuroda_2024::reference`)
-- model: `../../../knowledgebase/drugs/drug_quinidine/models/modelica/_needs_review/Quinidine_Kuroda2024_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_quinidine/models/modelica/_needs_review/Quinidine_Kuroda2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

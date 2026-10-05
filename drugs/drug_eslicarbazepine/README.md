@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Eslicarbazepine is an anti-epileptic medication available commercially as [eslicarbazepine acetate].
+Eslicarbazepine is an antiepileptic drug used to treat epilepsy. It is an approved medicine and is used in clinical practice for seizure control.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27077226](https://www.wikidata.org/wiki/Q27077226) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

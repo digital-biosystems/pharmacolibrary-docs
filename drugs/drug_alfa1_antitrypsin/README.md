@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Alpha1-antitrypsin (as Respreeza) is used to treat lung disease caused by an inherited genetic condition, namely alpha1-antitrypsin deficiency-related emphysema. It is authorised in the European Union as an EMA-approved medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q29006428](https://www.wikidata.org/wiki/Q29006428) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

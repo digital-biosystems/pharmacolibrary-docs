@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Trimetazidine is a piperazine derivative indicated for the symptomatic treatment of stable angina pectoris in patients inadequately controlled or intolerant to first line therapies.[L33015] Trimetazidine has been studied as a treatment for angina pectoris since the late 1960s.[A233255,A233260]
+Trimetazidine is a cardiac drug used to treat angina pectoris, acting as a vasodilator agent. It is approved and sold under many brand names, and is also being studied investigationally.
 
-Acidic conditions, caused by anaerobic metabolism and fatty acid oxidation, in response to myocardial ischemia, activate sodium-hydrogen and sodium-calcium antiport systems.[A233215] The increased intracellular calcium decreases contractility.[A233215] It is hypothesized that trimetazidine inhibits 3-ketoacyl coenzyme A thiolase, which decreases fatty acid oxidation but not glucose metabolism, preventing the acidic conditions that exacerbate ischemic injury.[A7688,L33020] However, evidence for this mechanism is controversial.[A233215]
-
-Trimetazidine is not FDA approved. However, it has been approved in France since 1978.[L33020]
-
-**Indication.** Trimetazidine is indicated for the symptomatic treatment of stable angina pectoris in patients inadequately controlled or intolerant to first line therapies.[L33015]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q674703](https://www.wikidata.org/wiki/Q674703) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -35,7 +31,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | kidney | <sub>“…Trimetazidine is 79-84% eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACAA2 (inhibitor).</sub>
 

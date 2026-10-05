@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Prasugrel, a thienopyridine derivative, is a platelet activation and aggregation inhibitor structurally and pharmacologically related to clopidogrel and ticlopidine. Similar to clopidogrel, prasugrel is a prodrug that requires enzymatic transformation in the liver to its active metabolite, R-138727. R-138727 irreversibly binds to P2Y12 type ADP receptors on platelets thus preventing activation of the GPIIb/IIIa receptor complex. As a result, inhibition of ADP-mediated platelet activation and aggregation occurs. Prasugrel was developed by Daiichi Sankyo Co. and is currently marketed in the United States and Canada in cooperation with Eli Lilly and Company for acute coronary syndromes planned for percutaneous coronary intervention (PCI). FDA approved in 2009.
+Prasugrel is a platelet inhibitor used to prevent blood clots in people with acute coronary syndrome, including myocardial infarction and unstable angina. It is an approved antiplatelet medicine authorised in the European Union.
 
-**Indication.** Indicated in combination with acetylsalicylic acid (ASA) to prevent atherothrombotic events in patients with acute coronary syndrome (ACS) who are to be managed with percutaneous coronary intervention (PCI). May be used in patients with unstable angina (UA), non-ST elevation myocardial infarction (NSTEMI), ST-elevation myocardial infarction (STEMI) who are to be managed with PCI. Prasugrel is not recommended in patients 75 years of age or greater, those that weigh<60kg, and patients with a history of stroke or transient ischemic attack due to increased risk of fatal and intracranial bleeding.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416232](https://www.wikidata.org/wiki/Q416232) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,12 +38,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…79% or greater of the dose is absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | liver | `CES2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CES2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…27% in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: P2RY12 (target).</sub>
 

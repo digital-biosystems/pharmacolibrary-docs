@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Precursor of epinephrine that is secreted by the adrenal medulla and is a widespread central and autonomic neurotransmitter. Norepinephrine is the principal transmitter of most postganglionic sympathetic fibers and of the diffuse projection system in the brain arising from the locus ceruleus. It is also found in plants and is used pharmacologically as a sympathomimetic.
+Norepinephrine is a sympathomimetic, vasoconstricting drug used to treat neurogenic shock. It is an approved medicine, classified under cardiac therapy as an adrenergic agent, and is used mainly in hospital settings for acute cardiovascular support.
 
-**Indication.** Mainly used to treat patients in vasodilatory shock states such as septic shock and neurogenic shock and has shown a survival benefit over dopamine. Also used as a vasopressor medication for patients with critical hypotension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q186242](https://www.wikidata.org/wiki/Q186242) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

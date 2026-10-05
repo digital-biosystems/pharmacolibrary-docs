@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Alizapride is a dopamine antagonist that is capable of demonstrating both prokinetic and antiemetic effects. This kind of pharmacological activity makes it effective for use in the treatment of various kinds of nausea and vomiting, including that which may occur postoperatively.
+Alizapride is an antiemetic drug, classed as a propulsive agent for functional gastrointestinal disorders. It is considered investigational and does not appear to be authorised in the European Union.
 
-**Indication.** Alizapride is used in the treatment of nausea and vomiting, including postoperative nausea and vomiting.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q631829](https://www.wikidata.org/wiki/Q631829) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 11:43 | 5:26 | 0/0/0 | 0/0/0 | 0/0/0 | 123,318/5,910 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-04 13:36 | 2:16 | 0/0/0 | 0/0/0 | 0/0/0 | 81,277/2,513 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…renal…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DRD2 (target).</sub>
 
@@ -49,37 +49,38 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Canal_1987.pdf` | Canal P et al., Pharmacokinetics of high-dose i.v. aliz…, Fundamental & clinical phar… (1987) | popPK | 9 | [10.1111/j.1472-8206.1987.tb00559.x](https://doi.org/10.1111/j.1472-8206.1987.tb00559.x) | [3428840](https://pubmed.ncbi.nlm.nih.gov/3428840) | The study reports quantitative PK parameters (half-lives) for alizapride, but specific numeric values for clearance and volume of distribution are described qualitatively rather than listed in the provided text. |
-| `Rey_2001.pdf` | Rey E et al., Pharmacokinetics of alizapride in child…, Fundamental & clinical phar… (2001) | popPK | 9 | [10.1046/j.1472-8206.2001.00022.x](https://doi.org/10.1046/j.1472-8206.2001.00022.x) | [11468033](https://pubmed.ncbi.nlm.nih.gov/11468033) | The study is a relevant pediatric PK investigation of alizapride, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Rey_2001.pdf` | Rey E et al., Pharmacokinetics of alizapride in child…, Fundamental & clinical phar… (2001) | popPK | 10 | [10.1046/j.1472-8206.2001.00022.x](https://doi.org/10.1046/j.1472-8206.2001.00022.x) | [11468033](https://pubmed.ncbi.nlm.nih.gov/11468033) | The study reports pharmacokinetic parameters for alizapride in children, but the specific numeric values are not present in the provided evidence. |
+| `Canal_1987.pdf` | Canal P et al., Pharmacokinetics of high-dose i.v. aliz…, Fundamental & clinical phar… (1987) | popPK | 9 | [10.1111/j.1472-8206.1987.tb00559.x](https://doi.org/10.1111/j.1472-8206.1987.tb00559.x) | [3428840](https://pubmed.ncbi.nlm.nih.gov/3428840) | The study reports quantitative pharmacokinetic parameters (half-lives, qualitative clearance/volume descriptions) for alizapride in humans, though specific numeric values for CL and V are not explicitly listed in the provided text. |
+| `Houin_1984.pdf` | Houin G et al., Absolute intramuscular, oral, and recta…, Journal of pharmaceutical s… (1984) | popPK | 8 | [10.1002/jps.2600731033](https://doi.org/10.1002/jps.2600731033) | [6502497](https://pubmed.ncbi.nlm.nih.gov/6502497) | The study reports quantitative bioavailability values (75% and 61%) for alizapride, which are disposition parameters, but does not provide specific clearance, volume, or half-life values. |
 
-<sub>queue written 2026-09-18T11:42:31.453542+00:00</sub>
+<sub>queue written 2026-10-04T13:35:33.086295+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ballatori_2003 | irrelevant | 0 | 0 | The paper is a review of quality of life in cancer patients and mentions alizapride only as a comparator antiemetic, containing no pharmacokinetic data. |
-| popPK | Booij_1988 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for postoperative nausea and vomiting and does not report any pharmacokinetic parameters for alizapride. |
-| popPK | Bregni_1991 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing antiemetic drugs, with alizapride serving only as a comparator and no pharmacokinetic parameters reported. |
-| popPK | Buna_1996 | irrelevant | 0 | 0 | The paper describes a spectrofluorimetric analytical method for detecting alizapride, not a pharmacokinetic study, and contains no disposition parameters. |
-| popPK | Bursztejn_2008 | irrelevant | 0 | 0 | The paper is a case report on cutaneous adverse drug reactions where alizapride is used only as a therapeutic substitute, with no pharmacokinetic data reported. |
+| popPK | Booij_1988 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for postoperative nausea and vomiting and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Bregni_1991 | irrelevant | 0 | 0 | The study is a clinical trial comparing the antiemetic efficacy of tropisetron and alizapride, reporting no pharmacokinetic parameters for alizapride. |
+| popPK | Buna_1996 | irrelevant | 0 | 0 | The paper describes a spectrofluorimetric analytical method for quantifying alizapride, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Bursztejn_2008 | irrelevant | 0 | 0 | The paper is a case report on cutaneous adverse drug reactions where alizapride is used as a substitute anti-emetic, containing no pharmacokinetic data. |
 | popPK | Cadranel_1987 | irrelevant | 0 | 0 | The paper is a clinical efficacy and tolerability study focusing on therapeutic outcomes and motility, with no report of quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Cadranel_1987 | not_relevant | 1 | 0 | The text is a qualitative summary of clinical studies mentioning dosage and general effects (LES pressure, symptoms) but provides no numeric concentration-effect data, dose-response curves, or PD parameters. |
-| popPK | Chivers_1988 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study and does not report any pharmacokinetic parameters for alizapride. |
-| popPK | Chivers_1989 | irrelevant | 0 | 0 | The study is an in-vivo receptor binding assay using alizapride as a probe ligand, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Clavel_1993 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy studies for ondansetron where alizapride is only a comparator drug, and no pharmacokinetic parameters are reported. |
-| popPK | Demol_1989 | irrelevant | 0 | 0 | The paper is a review of gastrointestinal motility disorders that mentions alizapride only as a therapeutic agent without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Chivers_1988 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay assessing selectivity, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Chivers_1989 | irrelevant | 0 | 0 | The study is an in-vivo receptor binding assay in rats, not a pharmacokinetic study, and reports no disposition parameters for alizapride. |
+| popPK | Clavel_1993 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy studies for ondansetron, where alizapride is only mentioned as a comparator anti-emetic without any pharmacokinetic data. |
+| popPK | Demol_1989 | irrelevant | 0 | 0 | The paper is a review of gastrointestinal motility disorders and mentions alizapride only as a therapeutic agent without reporting any pharmacokinetic parameters. |
 | popPK | Dupuis_2003 | irrelevant | 0 | 0 | The paper is a clinical review of antiemetic strategies in children that mentions alizapride only as a treatment option, without reporting any pharmacokinetic parameters. |
-| popPK | Gomez_1999 | irrelevant | 0 | 0 | The study investigates the immunological effects of dopaminergic drugs on macrophage receptors in guinea pigs and does not report pharmacokinetic parameters for alizapride. |
+| popPK | Gomez_1999 | irrelevant | 0 | 0 | The study investigates the immunological effects of dopaminergic drugs on macrophage receptors in guinea pigs, not the pharmacokinetics of alizapride. |
 | popPK | Houin_1982 | irrelevant | 0 | 0 | no_text gate: only 70 chars of text extracted (&lt; 400) |
-| popPK | Houin_1984 | irrelevant | 2 | 0 | The study reports bioavailability percentages but lacks quantitative disposition parameters (CL, V, ka) or a compartmental model for alizapride. |
+| popPK | Houin_1984 | relevant | 8 | 2 | The study reports quantitative bioavailability values (75% and 61%) for alizapride, which are disposition parameters, but does not provide specific clearance, volume, or half-life values. |
 | PD | Houin_1984 | not_relevant | 0 | 0 | The paper reports pharmacokinetic bioavailability data (AUC, absorption percentages) but contains no pharmacodynamic or exposure-response analysis. |
-| popPK | Hsu_2026 | irrelevant | 0 | 0 | The paper is a review of cannabis and cannabinoids where alizapride is mentioned only as an active comparator in a meta-analysis, with no pharmacokinetic parameters reported. |
-| popPK | Hulstaert_1994 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of antiemetic combinations, and alizapride is used only as a comparator agent with no pharmacokinetic parameters reported. |
+| popPK | Hsu_2026 | irrelevant | 0 | 0 | The paper is a review of cannabis and cannabinoids, mentioning alizapride only as an active comparator in a meta-analysis of nausea/vomiting, with no pharmacokinetic parameters reported. |
+| popPK | Hulstaert_1994 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of antiemetic combination therapy, not a pharmacokinetic study, and reports no disposition parameters for alizapride. |
 | popPK | Huys_1985 | irrelevant | 0 | 0 | The study is a clinical trial assessing anti-emetic efficacy and tolerance, reporting no pharmacokinetic parameters for alizapride. |
 | PD | Huys_1985 | not_relevant | 0 | 0 | The paper is a clinical efficacy trial comparing two drugs based on subjective endpoints (nausea/vomiting scores) without reporting any pharmacokinetic data, concentration-effect relationships, or numeric PD parameters. |
 | popPK | Kassi_1990 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for vomiting in children and does not report any pharmacokinetic parameters for alizapride. |
@@ -90,28 +91,28 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Lee_1993 | irrelevant | 0 | 0 | The paper is a review of tropisetron where alizapride is only mentioned as a comparator, and no pharmacokinetic parameters for alizapride are reported. |
 | PD | Lee_1993 | not_relevant | 1 | 0 | The text is a qualitative review of tropisetron that mentions alizapride only for comparative efficacy without providing any numeric PD parameters, concentration-effect data, or dose-response curves. |
 | popPK | Marfella_1997 | irrelevant | 0 | 0 | The paper is a descriptive analysis of drug consumption and costs, not a pharmacokinetic study, and contains no PK parameters for alizapride. |
-| popPK | Metivier_1984 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of digoxin as the subject drug, with alizapride serving only as a co-administered agent to test for interactions, and no quantitative PK parameters for alizapride are reported. |
-| popPK | Moreno_1992 | irrelevant | 0 | 0 | The paper is a clinical efficacy study comparing antiemetic regimens and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Metivier_1984 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of digoxin (the subject drug) when co-administered with alizapride (a probe/comparator), and no quantitative PK parameters for alizapride itself are reported. |
+| popPK | Moreno_1992 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of antiemetic regimens and does not report any pharmacokinetic parameters for alizapride. |
 | popPK | Niederle_1986 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing antiemetic effects, not a pharmacokinetic study, and reports no disposition parameters for alizapride. |
 | PD | Niederle_1986 | not_relevant | 1 | 0 | The paper reports a clinical efficacy comparison (medians of emesis episodes and nausea duration) between two drugs but does not provide pharmacokinetic data, concentration-effect curves, or numeric PD parameters (e.g., EC50, Emax) for alizapride. |
-| popPK | Rey_2001 | relevant | 9 | 0 | The study is a relevant pediatric PK investigation of alizapride, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Rey_2001 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for alizapride in children, but the specific numeric values are not present in the provided evidence. |
 | PD | Rey_2001 | not_relevant | 0 | 0 | The study reports only pharmacokinetic parameters (clearance, etc.) and dosage recommendations based on age/weight, with no analysis of pharmacodynamic effects or exposure-response relationships. |
-| popPK | Robieux_1996 | irrelevant | 0 | 0 | The paper is an analytical method study for etoposide, and alizapride is only mentioned as a co-administered drug to check for interference, with no PK parameters reported for it. |
+| popPK | Robieux_1996 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of etoposide, and alizapride is only mentioned as a co-administered drug that did not interfere with the assay. |
 | PD | Robieux_1996 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring free etoposide and mentions alizapride only as a co-administered drug that did not interfere with the assay; it contains no pharmacodynamic or exposure-response data for alizapride. |
 | popPK | Roché_1987 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing antiemetic effects and does not report any quantitative pharmacokinetic parameters for alizapride. |
 | PD | Roché_1987 | not_relevant | 1 | 0 | The paper reports only qualitative clinical outcomes (percentages of patients with emesis episodes) and does not provide any concentration-effect data, dose-response curves, or numeric PD parameters. |
-| popPK | Saur_1996 | irrelevant | 0 | 0 | The paper is a survey of clinical practices regarding antiemetic use and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Saur_1996 | irrelevant | 0 | 0 | The paper is a survey of clinical practices regarding antiemetic use and contains no pharmacokinetic data or quantitative disposition parameters for alizapride. |
 | PD | Saur_1996 | not_relevant | 0 | 0 | The paper is a survey of clinical practices regarding antiemetic use and contains no pharmacokinetic or pharmacodynamic data, concentration-effect analysis, or numeric PD parameters for alizapride. |
-| popPK | Szelenyi_1994 | irrelevant | 0 | 0 | The study is a pharmacodynamic evaluation of antiemetic efficacy in pigs and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Szelenyi_1994 | irrelevant | 0 | 0 | The study is a pharmacodynamic evaluation of antiemetic efficacy in pigs, not a pharmacokinetic study, and reports no disposition parameters for alizapride. |
 | popPK | Tamaro_2010 | irrelevant | 0 | 0 | The paper describes an analytical HPLC method for stability testing and does not report any pharmacokinetic parameters for alizapride. |
 | PD | Tamaro_2010 | not_relevant | 0 | 0 | The paper describes a stability-indicating HPLC-UV analytical method for alizapride and its degradation products, containing no pharmacodynamic or exposure-response data. |
-| popPK | Van_2003 | irrelevant | 0 | 0 | The study is a clinical trial comparing the efficacy of anti-emetics (vomiting incidence) and does not report any pharmacokinetic parameters for alizapride. |
-| popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetic efficacy and safety for postoperative nausea and vomiting, and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Van_2003 | irrelevant | 0 | 0 | The study is a clinical trial comparing the efficacy of anti-emetics (tropisetron vs. alizapride) and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetic drugs for postoperative nausea and vomiting and does not mention alizapride or report any pharmacokinetic parameters. |
 | PD | Weibel_2020 | not_relevant | 0 | 0 | The paper is a network meta-analysis of clinical trials for PONV prevention and does not contain any pharmacokinetic or pharmacodynamic modeling, nor does it report specific exposure-response or dose-response parameters for alizapride. |
-| popPK | Xing_2026 | irrelevant | 0 | 0 | The paper describes a deep-learning platform for drug discovery and does not report any pharmacokinetic parameters for alizapride. |
+| popPK | Xing_2026 | irrelevant | 0 | 0 | The paper describes a deep-learning platform for drug discovery and does not report pharmacokinetic parameters for alizapride. |
 | PD | Xing_2026 | not_relevant | 0 | 0 | The paper describes a deep-learning platform for drug discovery and does not report any pharmacodynamic or exposure-response data for alizapride. |
-| popPK | dAllens_1991 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of ondansetron, with alizapride mentioned only as a comparator drug without any PK parameters reported for it. |
-| popPK | unknown_2017 | irrelevant | 0 | 0 | The paper discusses pharmacokinetics of fludarabine and voriconazole in the context of stem cell transplantation, but contains no data or mention of alizapride. |
+| popPK | dAllens_1991 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of ondansetron, and alizapride is only mentioned as a comparator drug in clinical trials without any PK data provided for it. |
+| popPK | unknown_2017 | irrelevant | 0 | 0 | no_text gate: only 26 chars of text extracted (&lt; 400) |
 | PD | unknown_2017 | not_relevant | 0 | 0 | The provided text consists of abstracts from a hematology conference and contains no mention of alizapride or any pharmacodynamic modeling. |
 | popPK | unknown_2019 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | unknown_2019 | not_relevant | 0 | 0 | The provided text is only a header for a conference poster session and contains no data, results, or parameters regarding alizapride or any pharmacodynamic relationship. |

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The prazosin record was held back because the absorption rate constant ka was not reported in the source and a default was invented, alongside defaulted lag time, in a model built from the abstract only.**
+**The prazosin record was held back because the absorption rate constant ka was not reported in the paper and a library default was used instead, alongside Tlag, in a model built from the abstract only.**
 
-The record comes from the paper's abstract alone, so summary statistics (terminal half-life 3 hr, V/F 0.6 l/kg, clearance 0.14 L/h) stand in for a fitted model. The absorption rate constant ka and lag time were never reported and were left at library defaults, which the adjudication flagged as an invented absorption input not acceptable for publication. Bioavailability was recorded without a value while the model assumed F=1 and Fm=1 with apparent parameterization, and a second reader disputed the bioavailability (suggesting 55) and the volume of distribution value. Extracted — prazosin: t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h.
+The record for prazosin in hypertensive patients is abstract-only, so reported summary statistics (t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h) stood in for a fitted model. The absorption rate constant ka was defaulted because it is not reported in the source, and Tlag was also left at a default; these values shape the simulated profile but are not supported by the paper. The builder further assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input, and the deviations check could not be adjudicated (ratio None). A second reader also disagreed on the dose compound and primary analyte and read a bioavailability of 55% where this record has none. Extracted — prazosin: t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prazosin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -138,7 +138,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=prazosin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -159,7 +159,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prazosin/Prazosin_Grahnn1981_reference/Prazosin_Grahnn1981_reference_modelica.zip" download>Prazosin_Grahnn1981_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prazosin/Prazosin_Grahnn1981_reference/Prazosin_Grahnn1981_reference_modelica.zip" download>Prazosin_Grahnn1981_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prazosin/Prazosin_Grahnn1981_reference/Prazosin_Grahnn1981_reference_fmi.zip" download>Prazosin_Grahnn1981_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_prazosin/Prazosin_Grahnn1981_reference/Prazosin_Grahnn1981_reference_matlab.zip" download>Prazosin_Grahnn1981_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_prazosin/Prazosin_Grahnn1981_reference/Prazosin_Grahnn1981_reference_matlab_simbio.zip" download>Prazosin_Grahnn1981_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

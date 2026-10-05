@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Propacetamol is a non-opioid analgesic devoid of the major contraindications.[A32051] It is a derivative of [acetaminophen], or paracetamol, with the molecular formula glycine, N, N-diethyl-,4-(acetylamino)phenyl ester. Propacetamol is a parenteral formulation of paracetamol and thus, it is a prodrug that is completely hydrolyzed to paracetamol.[A7892] It is not available in the United States but this prodrug has been widely used in other countries such as France since 1985.[L1505]
+Propacetamol is an anilide analgesic and antipyretic, a prodrug form of paracetamol used for pain and fever relief. It is not an established marketed medicine in current databases, where it is listed only as investigational.
 
-**Indication.** Propacetamol is a paracetamol prodrug of intravenous administration used to control fever and pain of perioperative period in multimodal analgesia therapy.[L1511]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q907888](https://www.wikidata.org/wiki/Q907888) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `BCHE` substrate, `CYP1A2` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` inducer/substrate, `NAT2` inhibitor, `SULT1A1` substrate, `SULT1E1` substrate, `UGT1A1` substrate, `UGT1A6` substrate, `UGT1A9` substrate, `UGT2B15` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate, `NAT2` inhibitor, `SULT1A1` substrate, `UGT1A1` substrate, `UGT1A6` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CNR1 (target), PTGS1 (target), PTGS2 (target), SULT1A3 (substrate), SULT2A1 (substrate), TRPV1 (target), UGT1A10 (substrate).</sub>
 

@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Rizatriptan is a second-generation triptan [A258918] and a selective 5-HT<sub>1B and 5-HT1D</sub> receptor agonist.[L46018] Used in the treatment of migraines, rizatriptan was first approved in the US in 1998.[L46018] Rizatriptan is available in oral tablets, orally disintegrating tablets (wafers), and oral film formulations.
+Rizatriptan is a serotonin receptor agonist used to treat migraine attacks. It is an approved antimigraine medicine, classified as a selective serotonin agonist, and is widely used for acute migraine treatment.
 
-**Indication.** Rizatriptan is indicated for the acute treatment of diagnosed migraine with or without aura.[L46018, L46023, L46038, L46043] Rizatriptan is not indicated for the prophylactic therapy of migraine nor the treatment of cluster headache.[L46018]
-
-In Canada, rizatriptan is approved in adults.[L46038, L46043] In the US, the oral tablet formulations are used in patients six years of age and older [L46018] and the oral film formation is approved for patients 12 years of age and older weighing 40 kg or more.[L46023] 
-
-Rizatriptan, in combination with [Meloxicam] is indicated for the acute treatment of migraine with or without aura in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q212171](https://www.wikidata.org/wiki/Q212171) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,14 +40,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…owing to extensive first-pass metabolism…”</sub> | prose |
-| absorption | small intestine | <sub>“…readily absorbed (approximately 90%) following oral administration…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor, `MAOA` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `MAOA` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…in urine and feces was 82% and 12%…”</sub> | prose |
-| excretion | kidney | <sub>“…recovered over 120 hours in urine and feces was 82%…”</sub> | prose |
-| excretion | liver | <sub>“…indicating substantial first-pass metabolism…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR7 (target).</sub>
 

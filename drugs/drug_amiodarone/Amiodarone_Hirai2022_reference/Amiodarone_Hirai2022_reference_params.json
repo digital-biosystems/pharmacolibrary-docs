@@ -1,0 +1,47 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amiodarone_Hirai2022_reference",
+ "molar_masses": {
+  "C_M1": 0.617257,
+  "C_central": 0.6453116
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "N-desethylamiodarone",
+  "C_central": "amiodarone"
+ },
+ "observables": [
+  "C_central",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  200.0
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 2.861111111111111e-06,
+  "F": 1.0,
+  "MW": 0.6453116,
+  "MW_m1": 0.617257,
+  "Tlag": 0.0,
+  "Vd1": 0.98,
+  "Vd1m1": 0.98,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "ka": 0.0002777777777777778,
+  "q1_m11": 2.1944444444444445e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 392695.79158316634,
+  "C_central": 18699.799599198395
+ },
+ "reference_peaks": {
+  "C_M1": 6.252358231270107e-05,
+  "C_central": 0.0001961996374320759
+ },
+ "stop_time": 1555200.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

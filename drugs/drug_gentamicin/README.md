@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Gentamicin is a bactericidal aminoglycoside that was discovered and isolated from _Micromonospora purpurea_ in 1963.[A234349] It is one of the most frequently prescribed aminoglycosides due to its spectrum of activity, low cost, and availability.[A234339,A234354] Gentamicin is effective against both gram-positive and gram-negative organisms but is particularly useful for the treatment of severe gram-negative infections including those caused by _Pseudomonas aeruginosa_.[A233325,A234359,A234364] There is the added benefit of synergy when gentamicin is co-administered with other antibacterials such as beta-lactams.[A234364] This synergistic activity is not only important for the treatment of complex infections, but can also contribute to dose optimization and reduced adverse effects.[A234359,A234364]
+Gentamicin is an aminoglycoside antibiotic used to treat serious bacterial infections such as sepsis, urinary tract infections, endocarditis, and gram-negative or staphylococcal infections. It is widely used in human medicine, given systemically as well as topically on skin, eyes, and ears, and is also approved for veterinary use.
 
-Although gentamicin is well-established and may be used in a variety of clinical applications, it is also associated with severe adverse effects including nephrotoxicity and ototoxicity which may limit its use.[A234369]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422482](https://www.wikidata.org/wiki/Q422482) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Trapidil, a platelet-derived growth factor antagonist, was originally developed as a vasodilator and anti-platelet agent and has been used to treat patients with ischemic coronary heart, liver, and kidney disease.
+Trapidil is a vasodilator and platelet aggregation inhibitor that was classified for cardiac therapy as a vasodilator used in heart disease. It is currently considered experimental and does not appear to be an approved medicine in the European Union.
 
-**Indication.** Used in the treatment of chronic stable angina [A19770].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2449982](https://www.wikidata.org/wiki/Q2449982) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

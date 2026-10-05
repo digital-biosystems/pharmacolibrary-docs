@@ -1,17 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 200 mg oral (C01BD01)",
  "model_id": "Amiodarone_Kolowrat2025_reference",
  "molar_masses": {
-  "central.C": 0.6453116
+  "C_central": 0.6453116
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  2.5,
-  5.0
+  "C_central"
  ],
  "parameters": {
   "Cl": 3.6666666666666667e-07,
@@ -21,15 +16,15 @@
   "VdPerKg": 0.0006207142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 2.5e-06,
+  "adminMass": 0.0002,
   "ka": 0.00022777777777777775,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 15583.16633266533
+  "C_central": 15401.406581427967
  },
  "reference_peaks": {
-  "central.C": 5.06820846847868e-05
+  "C_central": 0.004054730127918157
  },
  "stop_time": 432000.0,
  "template": "PK_1C_enteral",

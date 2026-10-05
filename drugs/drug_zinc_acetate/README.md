@@ -10,7 +10,9 @@
 
 ## About
 
-**Indication.** Zinc can be used for the treatment and prevention of zinc deficiency/its consequences, including stunted growth and acute diarrhea in children, and slowed wound healing. It is also utilized for boosting the immune system, treating the common cold and recurrent ear infections, as well as preventing lower respiratory tract infections [L2172].
+Zinc acetate is a zinc salt used to supply zinc, for example in Wilson's disease and as a dietary zinc supplement. It is an approved medicine, used in various countries as a supplement and for zinc-deficiency-related indications.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q204639](https://www.wikidata.org/wiki/Q204639) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,13 +38,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Zinc is absorbed in the small intestine by a carrier-mediated mechanism…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ORM2` unknown | DrugBank actor |
-| metabolism | small intestine | <sub>“…transport into the enterocytes in the duodenum and jejunum…”</sub> | prose |
-| excretion | bile duct | <sub>“…Considerable amounts of zinc are secreted through both biliary and intestinal secretions…”</sub> | prose |
-| excretion | kidney | <sub>“…Other routes of zinc excretion include both urine…”</sub> | prose |
-| excretion | skin | <sub>“…surface losses (sloughed skin, hair, sweat)…”</sub> | prose |
-| excretion | small intestine | <sub>“…secreted through both biliary and intestinal secretions…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: A1BG (unknown), A2M (unknown), ADH1C (target), AGT (unknown), AHSG (unknown), ALDOA (unknown), APCS (unknown), APLP1 (unknown), APLP2 (unknown), APOA1 (unknown), APOA2 (unknown), APOA4 (unknown), APOBR (unknown), APOE (unknown), APOL1 (unknown), APP (unknown), ASPA (unknown), BDKRB1 (unknown), BRCC3 (unknown), C1QB (unknown), C1QC (unknown), C1R (unknown), C1S (unknown), C3 (unknown), C4B (unknown), C4BPA (unknown), C4BPB (unknown), C5 (unknown), C8A (unknown), C8B (unknown), C8G (unknown), CA1 (target), CCS (unknown), CFB (unknown), CFH (unknown), CFI (unknown), CLU (unknown), CP (unknown), CPE (inhibitor), CPE (target), CPN1 (unknown), CPN2 (unknown), DAND5 (unknown), DCD (unknown), DSP (unknown), EEF1A1 (unknown), ENO1 (unknown), ESR1 (unknown), F12 (unknown), F13B (unknown), F2 (unknown), FCN3 (unknown), FGA (unknown), FN1 (unknown), GAPDHS (unknown), GLRA1 (unknown), GSN (unknown), HBA1 (unknown), HBB (unknown), HDAC1 (unknown), HDAC4 (unknown), HDAC8 (unknown), HPR (unknown), HRNR (unknown), IDE (target), IGFALS (unknown), IGHA1 (unknown), IGHM (unknown), IGKV1-17 (unknown), IGKV3-20 (unknown), IGLV3-21 (unknown), IL3 (unknown), INS (unknown), ITIH1 (unknown), ITIH2 (unknown), ITIH3 (unknown), ITIH4 (unknown), JCHAIN (unknown), JUP (unknown), KLKB1 (unknown), KNG1 (unknown), KRT1 (unknown), KRT10 (unknown), KRT14 (unknown), KRT16 (unknown), KRT2 (unknown), KRT5 (unknown), KRT6A (unknown), KRT9 (unknown), MDM2 (unknown), MGMT (unknown), MMP9 (unknown), MPG (unknown), MT1A (unknown), MT2A (unknown), MT3 (unknown), NME1 (unknown), P4HB (unknown), PARP1 (unknown), PDCD6 (unknown), PDIA3 (unknown), PGLYRP2 (unknown), PON1 (unknown), PRDX1 (unknown), PSPH (unknown), PZP (unknown), S100A2 (unknown), S100A7 (unknown), S100A8 (unknown), S100A9 (unknown), SELENOP (unknown), SEMG1 (unknown), SERPINA1 (unknown), SERPINA3 (unknown), SERPINA4 (unknown), SERPINA6 (unknown), SERPIND1 (unknown), SHBG (unknown), SIVA1 (unknown), SOD1 (target), SOD1 (unknown), TF (unknown), TP53 (unknown), TP73 (unknown), TPI1 (unknown), TTR (unknown), TUFM (unknown), UTRN (unknown), VTN (unknown).</sub>
 

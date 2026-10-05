@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -31,7 +31,7 @@ Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022)
 ## Model component
 <dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="needs_review" stale="false" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 11 extracted, plus 1 covariate effect.
 
 **Parameterization:** apparent.

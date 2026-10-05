@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Ashraf2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,33 +13,33 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 ### Reviewer guidance
 
-**The codeine clearance is recorded as 0.18 ml/h, a physiologically implausible magnitude indicating a unit/scale extraction error, and the record was also flagged for an unreachable compartment or unlinked metabolite.**
+**The codeine model record was held back because two of its nine parameters, the absorption rate constant kabs (6.49 1/h) and the central volume V1 (231.2 L), were not carried into the model, leaving only 7 of 9 parameters covered.**
 
-The codeine model lists total clearance CL as 0.18 ml/h, which falls outside the physiological window and suggests the unit or scale was mis-extracted. The structure check also found an unreachable compartment or unlinked metabolite in the codeine–morphine–codeine-6-glucuronide metabolism network. A second reader further disputed the parameterization, calling it apparent rather than mechanistic, and reported different values for several parameters (e.g., 832, 59.6, 4.67, 0.019) that are absent from this record. Extracted — codeine: kabs 6.49, V1 231, fm 0.108, CL 0.18 ml/h.
+The coverage check expected 9 parameters emitted or defaulted but obtained 7, with kabs and V1 neither emitted nor defaulted, so the codeine absorption and distribution description would be incomplete. A second reader also disagreed on several entries: it read the codeine clearance as 59.6 L/h where the record had null, read a codeine fraction of 0.4556 where the record had null, and proposed an additional metabolism link from codeine-6-glucuronide to morphine-3-glucuronide that the record does not contain; the record's values 6.49, 59.6 and 231.2 were read as null by that reader. The disagreement on dose compound and primary analyte (codeine vs unknown) remains unresolved. Extracted — codeine: kabs 6.49 1/h, CL 59.6 L/h, V1 231 L; morphine: CL 178 L/h, V 9.45 L, fm 0.108; codeine-6-glucuronide: CL 4.28 L/h, V 5.36 L; morphine-3-glucuronide: CL 4.67 L/h, V 4.17 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:17.526911+00:00) predates the upstream re-run (2026-10-03 10:03:26.514238+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Ashraf2024_reference" status="extracted" stale="true" population="ambulatory surgical patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Ashraf2024_reference" status="needs_review" stale="false" population="ambulatory surgical patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka,cod | `Q49` · kabs | 6.49 | 1/h | 0.001802777777777778 | 1/h | not captured | llm_confirmed (0.6) | Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
@@ -165,6 +165,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q61 | pass | volume within physiological range | 4.17 L | not captured | not captured | ['Tab2:row13:col2', 'Tab2:row13:col3', 'Tab2:row13:col4', 'Tab2:row13:col5'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 231 L | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=codeine) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 9 scholar param(s) emitted or defaulted | 7 covered | not captured | neither emitted nor in defaulted[]: ['kabs', 'V1'] |
+| T3_shared_parameters | not captured | pass | 4 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -173,6 +185,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_codeine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ashraf_2024` / `Ashraf_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_codeine/models/modelica/Codeine_Ashraf2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_codeine/models/modelica/Codeine_Ashraf2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_codeine/models/modelica/Codeine_Ashraf2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -181,14 +196,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_modelica.zip" download>Codeine_Ashraf2024_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_matlab.zip" download>Codeine_Ashraf2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_matlab_simbio.zip" download>Codeine_Ashraf2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_sbml.zip" download>Codeine_Ashraf2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_cellml.zip" download>Codeine_Ashraf2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Fluocortolone is a glucocorticoid with anti-inflammatory activity used topically for various skin disorders.
+Fluocortolone is a glucocorticoid (corticosteroid) with anti-inflammatory activity, used topically for skin conditions, haemorrhoids, and eye inflammation, and also systemically. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5462793](https://www.wikidata.org/wiki/Q5462793) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

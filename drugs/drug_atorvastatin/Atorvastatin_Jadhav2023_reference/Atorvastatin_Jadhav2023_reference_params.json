@@ -1,17 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 20 mg oral (C10AA05)",
  "model_id": "Atorvastatin_Jadhav2023_reference",
  "molar_masses": {
-  "central.C": 0.5586398
+  "C_central": 0.5586398
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  180.0,
-  240.0
+  "C_central"
  ],
  "parameters": {
   "Cl": 2.0972222222222223e-07,
@@ -21,15 +16,15 @@
   "VdPerKg": 0.0002728571428571429,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.00018,
-  "ka": 0.00038888888888888887,
+  "adminMass": 2e-05,
+  "ka": 0.00039166666666666663,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9808.141471850131
+  "C_central": 9780.140394199778
  },
  "reference_peaks": {
-  "central.C": 0.008495680762637797
+  "C_central": 0.0009444815337805596
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

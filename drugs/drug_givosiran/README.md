@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Givosiran is a small interfering RNA (siRNA) directed towards 5-aminolevulinic acid synthase, a critical enzyme in the heme biosynthesis pathway.[L10202] It is manufactured by Alnylam Pharmaceuticals and was first approved for use in the United States in November 2019 for the treatment of adults with acute hepatic porphyria, a genetic disorder in which the overproduction of toxic heme intermediates leads to neuro-, nephro-, and gastrotoxicity.[L10202] Givosiran represents an important step forward in the treatment of acute hepatic porphyria as it is the first approved pharmacotherapy for the prevention of acute attacks - previous strategies involved non-therapeutic measures (e.g. trigger avoidance), intravenous [hemin] for the treatment of attacks, and liver transplantation in refractory cases.[A187991] Givosiran is the second-ever FDA-approved member of the siRNA drug class (the first being [patisiran]), a new class of drugs promising an important and exciting step forward in the treatment of genetic disorders.
+Givosiran is a small interfering RNA medicine used to treat hepatic porphyria. It is an approved medicine and is authorised in the European Union.
 
-**Indication.** Givosiran is indicated for the treatment of adults with acute hepatic porphyria.[L10202]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q56297041](https://www.wikidata.org/wiki/Q56297041) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -35,7 +35,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Approximately 5-14% of the dose recovered in urine is unchanged parent drug…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ALAS1 (inhibitor), ALAS1 mRNA (cleavage).</sub>
 

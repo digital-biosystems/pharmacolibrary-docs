@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Magnesium aspartate is a magnesium salt of aspartic acid that is commonly used as a mineral supplement. It displays high oral bioavailability and water solubiltiy compared to other magnesium salts such as magnesium citrate, magnesium carbonate and magnesium oxide.
+It is considered investigational and is not an authorised medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6731379](https://www.wikidata.org/wiki/Q6731379) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 00:18 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 1,516/200 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-05 09:28 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 23,357/305 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
 
 ## popPK records
 
@@ -35,25 +37,15 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `He_2020.pdf` | He G et al., Type 2 diabetes mellitus caused by Gite…, Medicine (2020) | pgx | 5 | [10.1097/MD.0000000000021123](https://doi.org/10.1097/MD.0000000000021123) | [32702863](https://www.ncbi.nlm.nih.gov/pubmed/32702863) | metadata signals extractable PGX data (SLC12A3) |
-
-<sub>queue written 2026-09-30T00:18:40.638702+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Attinger_2025 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of levothyroxine (the subject drug) in the presence of magnesium aspartate (a co-administered agent), rather than reporting disposition parameters for magnesium aspartate itself. |
-| PGx | He_2020 | not_relevant | 0 | 0 | The paper reports a case of Gitelman syndrome and T2DM, mentioning magnesium aspartate as a supplement, but does not report pharmacogenomic effects on the PK or PD parameters of the drug itself. |
+| popPK | Attinger_2025 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of levothyroxine (the subject drug) to assess a drug-drug interaction, while magnesium aspartate is only a co-administered agent. |
+| PGx | He_2020 | not_relevant | 0 | 0 | The paper reports a clinical case of Gitelman syndrome and T2DM, discussing the use of magnesium aspartate as a supplement, but does not report any pharmacogenomic effects on the PK or PD parameters of magnesium aspartate. |
 | popPK | Langbein_2019 | irrelevant | 0 | 0 | The study evaluates the efficacy of a zeolite-based adsorbent (Detoxsan) for diarrhea, where magnesium aspartate is merely an excipient, and no pharmacokinetic parameters are reported. |
 | PD | Langbein_2019 | not_relevant | 1 | 0 | The paper reports qualitative clinical efficacy (70% satisfaction) and mentions magnesium aspartate as an ingredient, but provides no concentration-effect data, dose-response curve, or numeric PD parameters. |
-| popPK | Miah_2026 | irrelevant | 0 | 0 | The paper is a scoping review on dietary effects on blood pressure and does not report pharmacokinetic parameters for magnesium aspartate. |
+| popPK | Miah_2026 | irrelevant | 0 | 0 | The paper is a scoping review on dietary interactions with antihypertensive drugs and does not report pharmacokinetic parameters for magnesium aspartate. |
 | PD | Miah_2026 | not_relevant | 1 | 0 | The paper is a scoping review of dietary interactions with antihypertensive drugs and does not report a pharmacokinetic or pharmacodynamic model for magnesium aspartate, nor does it provide numeric PD parameters (e.g., Emax, EC50) for the drug itself. |
 | popPK | Zhao_2023 | irrelevant | 0 | 0 | The paper is a clinical case report describing the treatment of a genetic disorder with magnesium aspartate, but it does not contain any pharmacokinetic studies or quantitative disposition parameters (CL, V, etc.) for the drug. |
 | PD | Zhao_2023 | not_relevant | 0 | 0 | The paper is a clinical case report describing the treatment of a patient with hypomagnesemia; it does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for magnesium aspartate. |

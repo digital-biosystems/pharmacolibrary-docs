@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Coagulation factor XIII is a blood clotting factor used to treat bleeding due to factor XIII deficiency. It is classified as a blood coagulation factor hemostatic in the ATC system and remains in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423712](https://www.wikidata.org/wiki/Q423712) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

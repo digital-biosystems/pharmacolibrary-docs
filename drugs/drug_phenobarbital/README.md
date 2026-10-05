@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A barbituric acid derivative that acts as a nonselective central nervous system depressant. It promotes binding to inhibitory gamma-aminobutyric acid subtype receptors, and modulates chloride currents through receptor channels. It also inhibits glutamate induced depolarizations.
+Phenobarbital is a barbiturate anticonvulsant used to treat epilepsy and seizures, including status epilepticus and neonatal seizures, and has also been used for sleep problems and anxiety. It remains in use, is listed as an essential medicine by the WHO, and is approved, though today it is used relatively sparingly for epilepsy.
 
-**Indication.** For the treatment of all types of seizures except absence seizures.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407241](https://www.wikidata.org/wiki/Q407241) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

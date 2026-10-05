@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Nardotto_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption parameter t1/2ka for carvedilol is reported as 17.41 h-1, a rate constant, while it is defined as a half-life in hours — a dimension mismatch on a structural parameter.**
+**The carvedilol absorption parameter was rejected for a dimension mismatch: it is reported as 17.41 h⁻¹ (label 'KaR (h-1)') but its meaning is an absorption half-life, a time quantity, so the value and unit contradict the parameter's definition.**
 
-The parameter labelled KaR (h-1) with value 17.41 h-1 is described as the half-life of the absorption phase, so the reported unit (h-1) contradicts the meaning (a time in hours); because this unit could not be converted to SI, the parameter entered model building without a usable SI value. The second reader further disagreed on the primary analyte (carvedilol versus carvedilol enantiomers and their metabolites), on splitting the metabolism link into r-carvedilol and s-carvedilol branches, and on additional parameters absent from this record (CLR_CYP2C9 11.31, OHC_VCR 15.45, VPR 18.17) as well as several parameter identifiers. Extracted — carvedilol: t1/2ka 17.4 h -1, FR 18.2, V 17.9 L, Q3 17.9 L/h, CLR 16.5 L/h.
+In this parent–metabolite model for carvedilol in type-2 diabetes and healthy subjects, the parameter named t1/2ka is labeled 'KaR (h-1)' with value 17.41 in units of h⁻¹, yet its meaning is the half-life of the absorption phase — a time, not a rate — giving a structural parameter with mismatched dimensions. The record also reached review without an SI value because the reported unit could not be converted. Secondary readers further disagreed on several extracted values, e.g. FR as 18.25 versus 17.67, KaR as 17.41 versus 10.25, and a renal clearance of 16.50 L/h versus none, so the extraction itself is not settled. Extracted — carvedilol: t1/2ka 17.4 h -1, FR 18.2, V 17.9 L, Q3 17.9 L/h, CLR 16.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has carvedilol enantiomers and their metabolites, the second reading carvedilol enantiomers and metabolites; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 

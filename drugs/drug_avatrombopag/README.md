@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Avatrombopag (_Doptelet_), is an orally administered, small molecule thrombopoietin receptor (c-Mpl) agonist that increases platelet number without increasing platelet activation,[A33097,L2824] thereby decreasing the need for blood transfusions.[L2824] Patients with thrombocytopenia and chronic liver disease often require platelet transfusions before surgical procedures to decrease the risk of bleeding.[A33095] Thrombocytopenia is a common complication in patients suffering from chronic liver disease, occurring as a result of liver disease or a consequence of interferon-based antiviral therapy.[F95]
+Avatrombopag is a medicine used to treat thrombocytopenia, a shortage of blood platelets. It is an approved drug and is authorised in the European Union.
 
-Avatrombopag was first approved by the FDA in May 2018 for use in adults with chronic liver disease who are scheduled to undergo a procedure.[L2931] It is administered orally as the salt form avatrombopag maleate.[L2927] _Doptelet_ (Avatrombopag) is the first orally administered treatment option for patients with chronic liver disease,  allowing a large population of patients to avoid a platelet transfusion before a procedure by increasing platelet counts to the optimal level ≥50,000 per microliter.[L2932]
-
-In July 2025, the FDA expanded approval to include a new pediatric formulation, Doptelet Sprinkle (avatrombopag oral granules), specifically designed for children aged one to less than six years, while the existing tablet formulation remains indicated for patients aged six years and older. This approval was supported by results from the AVA-PED-301 phase 3 study, which demonstrated durable platelet responses and favorable safety in children with persistent or chronic immune thrombocytopenia.[L53688, L53683]
-
-**Indication.** Indicated for the treatment of thrombocytopenia in pediatric patients 1 year and older with persistent or chronic immune thrombocytopenia who have had an insufficient response to a previous treatment [L53683]. It is also indicated in adult patients with chronic liver disease who are scheduled to undergo a procedure [L49941], as well as in adult patients with chronic immune thrombocytopenia who have had an insufficient response to a previous treatment [L49941]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27257213](https://www.wikidata.org/wiki/Q27257213) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -59,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate/transport, `ABCG2` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C8` inducer, `CYP2C9` inducer/safety_allele/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal excretion accounted for 88% of the administered dose…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: MPL (target).</sub>

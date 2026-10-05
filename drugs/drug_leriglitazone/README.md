@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Leriglitazone is under investigation in clinical trial NCT03917225 (A Clinical Study to Evaluate the Effect of MIN-102 on the Progression of Friedreich's Ataxia in Male and Female Patients).
+Leriglitazone was investigated as a treatment for adrenoleukodystrophy. It remains investigational; a marketing application in the European Union was refused, so it is not authorised there.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27156475](https://www.wikidata.org/wiki/Q27156475) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -7,6 +7,12 @@
 - **DrugBank:** [DB17124](https://go.drugbank.com/drugs/DB17124) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Iodine (131I) omburtamab is an investigational radiolabelled antibody studied for treating neuroblastoma. It remains experimental and is not approved; a marketing application in the European Union was refused.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

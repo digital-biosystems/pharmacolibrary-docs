@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Folic acid, also known as folate or Vitamin B9, is a member of the B vitamin family and an essential cofactor for enzymes involved in DNA and RNA synthesis. More specifically, folic acid is required by the body for the synthesis of purines, pyrimidines, and methionine before incorporation into DNA or protein. Folic acid is particularly important during phases of rapid cell division, such as infancy, pregnancy, and erythropoiesis, and plays a protective factor in the development of cancer. As humans are unable to synthesize folic acid endogenously, diet and supplementation is necessary to prevent deficiencies. For example, folic acid is present in green vegetables, beans, avocado, and some fruits.[L5744]
+Folic acid, a form of vitamin B9, is used to treat anaemias such as macrocytic and megaloblastic anaemia, often combined with iron. It is widely used, appears on the WHO essential medicines list, and is also approved for veterinary use.
 
-In order to function within the body, folic acid must first be reduced by the enzyme dihydrofolate reductase (DHFR) into the cofactors dihydrofolate (DHF) and tetrahydrofolate (THF). This important pathway, which is required for de novo synthesis of nucleic acids and amino acids, is disrupted by anti-metabolite therapies such as [DB00563] as they function as DHFR inhibitors to prevent DNA synthesis in rapidly dividing cells, and therefore prevent the formation of DHF and THF. When used in high doses such as for cancer therapy, or in low doses such as for Rheumatoid Arthritis or psoriasis, [DB00563] impedes the body's ability to create folic acid. This results in a deficiency of coenzymes and a resultant buildup of toxic substances that are responsible for numerous adverse side effects. As a result, supplementation with 1-5mg of folic acid is recommended to prevent deficiency and a number of side effects associated with MTX therapy including mouth ulcers and gastrointestinal irritation. [DB00650] (also known as folinic acid) supplementation is typically used for high-dose MTX regimens for the treatment of cancer. Levoleucovorin and leucovorin are analogs of tetrahydrofolate (THF) and are able to bypass DHFR reduction to act as a cellular replacement for the co-fact
-
-**Indication.** Folic acid is indicated for the treatment of folic acid deficiency, megaloblastic anemia, and in anemias of nutritional origins, pregnancy, infancy, or childhood.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q127060](https://www.wikidata.org/wiki/Q127060) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -85,10 +83,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` transport, `ABCG2` substrate | DrugBank actor |
 | metabolism | liver | `SLCO1B1` transport | paper PGx gene |
-| excretion | bile duct | <sub>“…Small amounts of orally administered folic acid have also been recovered in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
 | excretion | liver | `ABCC3` substrate, `ABCC4` inhibitor | DrugBank actor |
-| excretion | mammary gland | <sub>“…Folic acid is also excreted in the milk of lactating mothers…”</sub> | prose |
+| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | small intestine | `ABCC3` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABCC11 (substrate), DHFR (substrate), FOLR1 (binder), FOLR2 (binder), FOLR3 (binder), GGH (substrate), MTHFR (safety_allele), MTHFR (substrate), SLC19A1 (modulator), SLC25A32 (substrate), SLC46A1 (modulator), SLC46A1 (substrate).</sub>

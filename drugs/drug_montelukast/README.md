@@ -11,19 +11,9 @@
 
 ## About
 
-**Description.** Montelukast was first approved for clinical use by the US FDA in 1998 as Merck's brand name Singulair.[L6301] The medication is a member of the leukotriene receptor antagonist (LTRA) category of drugs.[L6301,L6304,L6307,L6310,L6325,L6328,L6331] Although capable of demonstrating effectiveness, the use of such LTRAs like montelukast is typically in addition to or complementary with the use of inhaled corticosteroids or other agents in asthma step therapy.[A178645] Regardless, in 2008-2009, there were FDA-led investigations into the possibility of montelukast to elicit neuropsychiatric effects like agitation, hallucinations, suicidal behaviour, and others in individuals who used the medication.[A178651] And although these kinds of effects are currently included in the official prescribing information for montelukast,[L6301,L6304,L6307,L6310,L6325,L6328,L6331] the drug still sees extensive use worldwide via millions of prescriptions annually and has since become available as a generic and as a brand name product.
+Montelukast is a leukotriene receptor antagonist used to treat asthma and allergic rhinitis, and also rhinitis and urticaria. It is an approved medicine in widespread use, though it carries a boxed warning.
 
-**Indication.** Montelukast is indicated for:
-
-(a) the prophylaxis and chronic treatment of asthma in adults and pediatric patients who are 12 months of age and older[L6301], although other regional health authorities specifically note this indication for adults and adolescents who are 15 years and older[L6304,L6307] and also include indications for preventing day and night-time symptoms, and the treatment of acetylsalicylic acid-sensitive asthma[L6304];
-
-(b) the prevention of exercise-induced bronchoconstriction (EIB) in patients who are 6 years of age and older[L6301], although other regional health authorities specifically note this indication for adults and adolescents who are 15 years and older[L6304,L6307]; and
-
-(c) the relief of symptoms of seasonal allergic rhinitis in patients 2 years of age and older and perennial allergic rhinitis in patients 6 months of age and older[L6301], although other regional health authorities specifically note the relief of seasonal allergic rhinitis symptoms for adults and adolescents who are 15 years and older[L6304,L6307].
-
-Furthermore, some formulations like chewable montelukast tablets may also be specifically indicated by particular regulatory bodies for the prophylaxis and chronic treatment of asthma, including the prevention of day and night-time symptoms, the treatment of acetylsalicylic acid based asthma, and the prevention of exercise-induced bronchoconstriction in adult and pediatric patients aged 2 and older[L6328], between the ages 2 and 5[L6325], or between the ages of 6 and 14 years.[L6331]
-
-Moreover, when employed for such indications montelukast is considered effective as monotherapy or when combined with other medications indicated for the maintenance treatment of chronic asthma.[L6304,L6328] For instance, montelukast and inhaled corticosteroids can be used concomitantly to demonstrate additive effects to control asthma or to decrease the necessary inhaled corticosteroid dose while still maintaining clinical stabilit
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417767](https://www.wikidata.org/wiki/Q417767) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -98,7 +88,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `SLCO2B1` substrate/transport | DrugBank actor |
 | metabolism | liver | `CYP2A6` substrate, `CYP2C8` inhibitor/metabolism/substrate, `CYP2C9` substrate, `CYP3A4` substrate, `SLCO1B1` transport, `UGT1A3` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in the bile and into the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC9 (transport), ALOX5 (other/unknown), CHRM2 (target), COL2A1 (unknown), CRHR1 (target), CYSLTR1 (target), CYSLTR2 (target), HDAC2 (target), HSPA8 (unknown), LOX (target), LTA4H (target), LTC4S (target), PTGS1 (substrate).</sub>
 

@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 2000 mg oral (A10BA02)",
  "model_id": "Metformin_Dong2024_reference",
  "molar_masses": {
   "central.C": 0.1291636
@@ -7,10 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  10.0
  ],
  "parameters": {
   "Cl": 9.586111111111114e-06,
@@ -20,15 +16,15 @@
   "VdPerKg": 0.005271428571428571,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1e-05,
+  "adminMass": 0.002,
   "ka": 0.0006361111111111112,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 5627.2545090180365
+  "central.C": 5612.885965353594
  },
  "reference_peaks": {
-  "central.C": 2.364498747751235e-05
+  "central.C": 0.0047288708035331
  },
  "stop_time": 140400.0,
  "template": "PK_1C_enteral",

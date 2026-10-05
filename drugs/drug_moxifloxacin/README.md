@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Moxifloxacin is a synthetic fluoroquinolone antibiotic agent. Bayer AG developed the drug (initially called BAY 12-8039) and it is marketed worldwide (as the hydrochloride) under the brand name Avelox (in some countries also Avalox) for oral treatment.
+Moxifloxacin is a fluoroquinolone antibiotic used to treat bacterial infections such as pneumonia, sinusitis, bronchitis, conjunctivitis, and urinary tract infections. It is an approved medicine, included on the WHO essential medicines list, and is used both systemically and as eye drops, though it carries a boxed warning.
 
-**Indication.** For the treatment of sinus and lung infections such as sinusitis, pneumonia, and secondary infections in chronic bronchitis. Also for the treatment of bacterial conjunctivitis (pinkeye).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424940](https://www.wikidata.org/wiki/Q424940) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,10 +34,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Well absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…~25% in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…~20% in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PON1 (inhibitor), TOP2A (inhibitor).</sub>
 

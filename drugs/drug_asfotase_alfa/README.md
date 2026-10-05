@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Asfotase alfa is a first-in-class bone-targeted enzyme replacement therapy designed to address the underlying cause of hypophosphatasia (HPP)—deficient alkaline phosphatase (ALP). Hypophosphatasia is almost always fatal when severe skeletal disease is obvious at birth. By replacing deficient ALP, treatment with Asfotase Alfa aims to improve the elevated enzyme substrate levels and improve the body's ability to mineralize bone, thereby preventing serious skeletal and systemic patient morbidity and premature death. Asfotase alfa was first approved by Pharmaceuticals and Medicals Devices Agency of Japan (PMDA) on July 3, 2015, then approved by the European Medicine Agency (EMA) on August 28, 2015, and was approved by the U.S. Food and Drug Administration (FDA) on October 23, 2015. Asfotase Alfa is marketed under the brand name Strensiq® by Alexion Pharmaceuticals, Inc. The annual average price of Asfotase Alfa treatment is $285,000.
+Asfotase alfa is an enzyme replacement therapy used to treat hypophosphatasia. It is authorised in the European Union.
 
-**Indication.** Indicated for the treatment of patients with perinatal/infantile and juvenile onset hypophosphatasia (HPP).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q22075839](https://www.wikidata.org/wiki/Q22075839) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

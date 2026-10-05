@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hdp_n_17&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Knebel2011_reference&quot;,&quot;label&quot;:&quot;Knebel_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,13 +13,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**The paper reports none of the model's key parameters.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -32,7 +32,7 @@ Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney internat
 ## Model component
 <dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hdp_n_17" status="rejected" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted, plus 4 covariate effects.
 
 **Parameterization:** mechanistic.
@@ -97,4 +97,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 06:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:01 UTC</sub>

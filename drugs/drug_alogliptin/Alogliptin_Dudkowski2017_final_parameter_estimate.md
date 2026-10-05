@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;alogliptin&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/&quot;},{&quot;label&quot;:&quot;Dudkowski_2017 \u00b7 final_parameter_estimate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alogliptin_Dudkowski2017_final_parameter_estimate&quot;,&quot;label&quot;:&quot;Dudkowski_2017_final_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alogliptin — `Alogliptin_Dudkowski2017_final_parameter_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,31 +21,31 @@
 
 Although the record lists kabs 0.590 1/hr, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L and Q/F 11.7 L/hr, the coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The builder left Vd, ka and Tlag at library defaults, and the absorption rate constant was flagged as invented since it was not reported in the source. Bioavailability was assumed to be 1 (F=1, Fm=1) with no molar correction, an apparent parameterization. Extracted — alogliptin: kabs 0.59, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L, Q/F 11.7 L/hr.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alogliptin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:35:58.903324+00:00) predates the upstream re-run (2026-10-04 22:10:02.381001+00:00). Current validate status: `extracted`.
 
 ## Citation
 Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1)
 
 ## Model component
-<dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_final_parameter_estimate" status="model_quarantined" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="alogliptin" model-id="Alogliptin_Dudkowski2017_final_parameter_estimate" status="extracted" stale="true" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.
 
-**Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant [KA] in pediatric subjects (1/hr) | `Q49` · kabs | 0.590 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Dudkowski_2017_table_S1:row1:col1 | — | not captured |
+| Absorption rate constant [KA] in pediatric subjects (1/hr) | `Q49` · kabs | 0.590 | 1/h | 0.00016388888888888887 | 1/h | not captured | llm_confirmed (0.6) | Dudkowski_2017_table_S1:row1:col1 | — | not captured |
 | Oral clearance [CL/F] in pediatric subjects (L/hr) | `Q27` · CL/F | 14.4 | L/hr | 4.000000000000001e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Dudkowski_2017_table_S1:row2:col1, Dudkowski_2017_table_S1:row2:col4 | — | not captured |
-| Central volume of distribution [V2/F] (L) | `Q82` · V2/F | 125 | L | 0.125 | [l] | not captured | llm_corrected (0.6) | Dudkowski_2017_table_S1:row3:col1, Dudkowski_2017_table_S1:row3:col4 | — | not captured |
-| Peripheral volume of distribution [V3/F] (L) | `Q78` · V3/F | 117 | L | 0.117 | [l] | not captured | llm_corrected (0.6) | Dudkowski_2017_table_S1:row4:col1 | — | not captured |
+| Central volume of distribution [V2/F] (L) | `Q63` · V1 | 125 | L | 0.125 | [l] | not captured | boundary_compartment (0.9) | Dudkowski_2017_table_S1:row3:col1, Dudkowski_2017_table_S1:row3:col4 | — | not captured |
+| Peripheral volume of distribution [V3/F] (L) | `Q64` · V2 | 117 | L | 0.117 | [l] | not captured | boundary_compartment (0.9) | Dudkowski_2017_table_S1:row4:col1 | — | not captured |
 | Intercompartmental clearance [Q/F] (L/hr) | `Q69` · Q/F | 11.7 | L/hr | 3.2500000000000002e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Dudkowski_2017_table_S1:row5:col1 | — | not captured |
 
 <details class="legend">
@@ -54,6 +55,10 @@ Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped PD-category row 'Baseline response [E0] (%)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Dudkowski_2017_table_S1:row6:col1'])
 - dropped PD-category row 'Maximal response [Emax] (%)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Dudkowski_2017_table_S1:row7:col1'])
@@ -62,9 +67,10 @@ Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal
 - dropped PD-category row 'Concentration at half-maximal response [EC50] in adult subjects (ng/mL)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Dudkowski_2017_table_S1:row10:col1', 'Dudkowski_2017_table_S1:row10:col4'])
 - dropped duplicate Q27 ('Oral clearance [CL/F] in adult subjects (L/hr)', value '13.0') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant [KA] in adult subjects (1/hr)', value '1.66') — already have one for this compound
+- implicit units: 'Absorption rate constant [KA] in pediatric subjects (1/hr)' → 1/h (from the popPK convention: "The paper text mentions 'absorption rate constant' as a covariate but does not explicitly state its unit in the provided")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=alogliptin
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- population split: 'final parameter estimate' subgroup of Dudkowski_2017 (paper reports 10 populations: 14 to &lt;18 years, adults, alo 12.5 mg, alo 25 mg, auc0-tau (ng·hr/ml), cmax (ng/ml), dose (mg), e24 (%), final parameter estimate, interindividual variability/residual variability)
+- population split: 'final parameter estimate' subgroup of Dudkowski_2017 (paper reports 5 populations: 14 to &lt;18 years, adults, alo 12.5 mg, alo 25 mg, final parameter estimate)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - transposed table Tab3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -107,14 +113,21 @@ Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | alogliptin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | alogliptin | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -130,14 +143,15 @@ _Every reader agrees on every compared field of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row2:col1', 'Dudkowski_2017_table_S1:row2:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row1:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row3:col1', 'Dudkowski_2017_table_S1:row3:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row4:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row5:col1'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row4:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row3:col1', 'Dudkowski_2017_table_S1:row3:col4'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Dudkowski_2017_table_S1:row1:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 14.4 L/h | not captured | not captured | ['Dudkowski_2017_table_S1:row2:col1', 'Dudkowski_2017_table_S1:row2:col4'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 125 L | not captured | not captured | ['Dudkowski_2017_table_S1:row3:col1', 'Dudkowski_2017_table_S1:row3:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 125 L | not captured | not captured | ['Dudkowski_2017_table_S1:row3:col1', 'Dudkowski_2017_table_S1:row3:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 117 L | not captured | not captured | ['Dudkowski_2017_table_S1:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -168,21 +182,26 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_modelica.zip" download>Alogliptin_Dudkowski2017_final_parameter_estimate_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_matlab.zip" download>Alogliptin_Dudkowski2017_final_parameter_estimate_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_matlab_simbio.zip" download>Alogliptin_Dudkowski2017_final_parameter_estimate_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_sbml.zip" download>Alogliptin_Dudkowski2017_final_parameter_estimate_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_cellml.zip" download>Alogliptin_Dudkowski2017_final_parameter_estimate_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate.svg" alt="Alogliptin_Dudkowski2017_final_parameter_estimate diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 12.5 mg, single dose, first-order absorption (ka 0.59 /h, F 1). Doses in the paper: 12.5, 25 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate/Alogliptin_Dudkowski2017_final_parameter_estimate_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Alogliptin_Dudkowski2017_final_parameter_estimate_params.json` · controls `Alogliptin_Dudkowski2017_final_parameter_estimate_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 15:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 22:10 UTC</sub>

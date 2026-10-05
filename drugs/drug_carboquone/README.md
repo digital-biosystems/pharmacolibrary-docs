@@ -8,6 +8,12 @@
 - **molar mass:** 321.333 g/mol (C15H19N3O5) — DrugBank
 - **groups:** experimental
 
+## About
+
+Carboquone is an alkylating agent that has been used as an anticancer (antineoplastic) drug. It is not an established marketed medicine in major Western databases, where it is listed only as experimental, and it appears to be used mainly in Japan.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5038065](https://www.wikidata.org/wiki/Q5038065) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

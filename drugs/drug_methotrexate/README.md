@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Methotrexate is a folate derivative that inhibits several enzymes responsible for nucleotide synthesis.[A180322] This inhibition leads to suppression of inflammation as well as prevention of cell division.[A180322] Because of these effects, methotrexate is often used to treat inflammation caused by arthritis or to control cell division in neoplastic diseases such as breast cancer and non-Hodgkin's lymphoma.[A180322,L7144,L7147,L7150,L7180]
+Methotrexate is a folic acid antagonist used as an anticancer drug for various cancers such as leukemia and lymphoma, and as an immunosuppressive disease-modifying antirheumatic drug for conditions like rheumatoid arthritis, psoriasis, and other inflammatory diseases. It is widely used and is included on the WHO essential medicines list; in the European Union several products are authorised for psoriasis and various forms of arthritis.
 
-Due to the toxic effects of methotrexate, it is indicated for treatment of some forms of arthritis and severe psoriasis only if first line treatment has failed or patients are intolerant of those treatments.[L7180]
-
-Methotrexate was granted FDA approval on 7 December 1953.[L7198]
-
-**Indication.** Methotrexate oral solution is indicated for pediatric acute lymphoblastic leukemia and pediatric polyarticular juvenile idiopathic arthritis.[L7144] Methotrexate injections for subcutaneous use are indicated for severe active rheumatoid arthritis, polyarticular juvenile idiopathic arthritis and severe, recalcitrant, disabling psoriasis.[L7147,L7150,L10457] It has also been approved by the EMA for the treatment of adult patients requiring systemic therapy for moderate-to-severe plaque psoriasis.[L48796]
-
-Other formulations are indicated to treat gestational choriocarcinoma, chorioadenoma destruens, hydatiform mole, breast cancer, epidermoid cancer of the head and neck, advanced mycosis fungoides, lung cancer, and advanced non-Hodgkin's lymphoma.[L7180] It is also used in the maintenance of acute lymphocytic leukemia.[L7180] Methotrexate is also given before treatment with leucovorin to prolong relapse-free survival following surgical removal of a tumour in non-metastatic osteosarcoma.[L7180]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422232](https://www.wikidata.org/wiki/Q422232) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -123,7 +117,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `SLC22A7` substrate, `UGT1A9` metabolism | DrugBank actor |
 | metabolism | liver | `AOX1` substrate, `CYP3A4` substrate, `SLC22A7` substrate, `SLCO1B1` substrate/transport, `SLCO1B3` substrate, `TPMT` safety_allele, `UGT1A9` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…8.7-26% of an intravenous dose appearing in the bile…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/substrate/transport, `ABCC4` inhibitor/substrate/transport, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCC2` inhibitor/substrate/transport, `ABCC3` inhibitor/substrate, `ABCC4` inhibitor/substrate/transport | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor/substrate/transport, `ABCC3` inhibitor/substrate | DrugBank actor |

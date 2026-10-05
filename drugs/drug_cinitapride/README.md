@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Cinitapride is a gastroprokinetic agent and antiulcer benzamide with agonist activity at 5-HT1 and 5-HT4 receptors and antagonist activity at 5-HT2 receptors. It is marketed in Spain and Mexico.
+Cinitapride is a propulsive drug for functional gastrointestinal disorders and has been described as an anti-ulcer agent. It is considered investigational and is not authorised in the European Union.
 
-**Indication.** It is indicated to treat gastrointestinal disorders associated with motility disturbances like gastroesophageal reflux disease (GERD), non-ulcer dyspepsia and delayed gastric emptying.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5121012](https://www.wikidata.org/wiki/Q5121012) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 11:46 | 2:41 | 0/0/0 | 0/0/0 | 0/1/0 | 37,744/1,700 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-04 13:40 | 1:04 | 0/0/0 | 0/0/0 | 0/1/0 | 23,664/1,417 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -43,8 +43,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…absorption following intramuscular administration (4mg) was even more rapid…”</sub> | prose |
-| absorption | small intestine | <sub>“…absorption of cinitapride (12mg) following oral administration was rapid…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C8` metabolism | paper PGx gene |
 
 <sub>Actors without a tissue in the table: HTR1A (target), HTR2A (target), HTR4 (target).</sub>
@@ -68,22 +68,22 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhang_2019.pdf` | Zhang X et al., Pharmacokinetics and tolerability of ci…, Xenobiotica; the fate of fo… (2019) | popPK | 10 | [10.1080/00498254.2018.1447710](https://doi.org/10.1080/00498254.2018.1447710) | [29502468](https://pubmed.ncbi.nlm.nih.gov/29502468) | The paper is a primary PK study for cinitapride, but the provided evidence contains only qualitative descriptions of parameter trends without any specific numeric values. |
+| `Zhang_2019.pdf` | Zhang X et al., Pharmacokinetics and tolerability of ci…, Xenobiotica; the fate of fo… (2019) | popPK | 10 | [10.1080/00498254.2018.1447710](https://doi.org/10.1080/00498254.2018.1447710) | [29502468](https://pubmed.ncbi.nlm.nih.gov/29502468) | The study reports pharmacokinetic parameters for cinitapride in humans, but the specific numeric values are not present in the provided evidence text. |
 | `Robert_2007.pdf` | Robert M et al., The prokinetic cinitapride has no clini…, Drug metabolism and disposi… (2007) | pgx | 7 | [10.1124/dmd.106.010835](https://doi.org/10.1124/dmd.106.010835) | [17437965](https://www.ncbi.nlm.nih.gov/pubmed/17437965) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-18T11:46:00.588439+00:00</sub>
+<sub>queue written 2026-10-04T13:39:22.998336+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Hassan_2019 | not_relevant | 0 | 0 | The paper focuses on drug repositioning for Alzheimer's disease and does not report pharmacogenomic effects on the PK or PD of cinitapride. |
-| popPK | Marcelín-Jiménez_2017 | irrelevant | 2 | 0 | The paper describes a method development and an interaction trial conclusion without reporting specific quantitative PK parameters (CL, V, etc.) for cinitapride in the provided evidence. |
+| PGx | Hassan_2019 | not_relevant | 0 | 0 | The paper focuses on drug repositioning for Alzheimer's disease and does not report pharmacogenomic effects on the PK or PD parameters of cinitapride. |
+| popPK | Marcelín-Jiménez_2017 | irrelevant | 2 | 0 | The paper describes a method development and an interaction trial (simethicone) but does not report quantitative disposition parameters (CL, V, etc.) for cinitapride in the provided evidence. |
 | popPK | Massingham_1985 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of cinitapride's mechanism of action on guinea-pig ileum, reporting potency (EC50) rather than pharmacokinetic disposition parameters. |
-| popPK | Rehman_2018 | irrelevant | 0 | 0 | The study focuses on the formulation and physico-chemical characterization of mouth-dissolving tablets, reporting no pharmacokinetic parameters for cinitapride. |
+| popPK | Rehman_2018 | irrelevant | 0 | 0 | The study focuses on the formulation and physico-chemical characterization of mouth-dissolving tablets, reporting no pharmacokinetic parameters. |
 | PGx | Robert_2007 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (ketoconazole) and does not report any pharmacogenomic effects based on gene variants or genotypes. |
-| popPK | Saleem_2025 | irrelevant | 2 | 0 | The study reports in-silico PBPK simulation outputs (Cmax, AUC) for a formulation rather than quantitative population pharmacokinetic parameters (CL, V, Q, ka) for cinitapride. |
-| popPK | Zhang_2019 | relevant | 10 | 0 | The paper is a primary PK study for cinitapride, but the provided evidence contains only qualitative descriptions of parameter trends without any specific numeric values. |
+| popPK | Saleem_2025 | irrelevant | 2 | 0 | The study reports in-silico PBPK predictions (Cmax, AUC) for a formulation but does not provide the underlying quantitative PK parameters (CL, V, Q, ka) or a population PK model for cinitapride. |
+| popPK | Zhang_2019 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for cinitapride in humans, but the specific numeric values are not present in the provided evidence text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

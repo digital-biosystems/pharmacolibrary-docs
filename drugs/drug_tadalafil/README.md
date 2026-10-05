@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Tadalafil is a selective phosphodiesterase-5 inhibitor that is used in the treatment of erectile dysfunction (ED), pulmonary arterial hypertension (PAH), and benign prostatic hypertrophy.[L39100, L39105] It was first approved in 2003 by the FDA for use in ED and later in 2009 for PAH. In contrast to other PDE5 inhibitors like [sildenafil], tadalafil has greater selectivity for PDE5 and a longer half-life which has made it a more suitable option for chronic once-daily dosing in the treatment of PAH.[A242287]
+Tadalafil is used to treat erectile dysfunction, enlarged prostate, and pulmonary arterial hypertension. It is widely used and authorised in the European Union for erectile dysfunction and pulmonary hypertension.
 
-**Indication.** Tadalafil is indicated for the treatment of erectile dysfunction (ED) and either alone or in combination with [finasteride] for the treatment of benign prostatic hypertrophy (BPH).[L39095,L39439] It is also indicated for the treatment of pulmonary arterial hypertension (PAH) both alone and in combination with [macitentan] or other endothelin-1 antagonists.[L39100,L39105,L50622]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424156](https://www.wikidata.org/wiki/Q424156) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -42,9 +42,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly excreted in the feces (61%)…”</sub> | prose |
-| excretion | kidney | <sub>“…to a lesser extent in the urine (36%)…”</sub> | prose |
-| excretion | liver | <sub>“…primarily eliminated via hepatic metabolism…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PDE11A (inhibitor), PDE5A (inhibitor), PDE6G (inhibitor).</sub>
 

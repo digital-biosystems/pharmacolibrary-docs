@@ -7,10 +7,6 @@
 - **DrugBank:** [DB18993](https://go.drugbank.com/drugs/DB18993) · **PubChem:** not captured
 - **groups:** investigational
 
-## About
-
-**Description.** Retatrutide is under investigation in clinical trial NCT06354660 (Effect of Retatrutide Compared With Placebo in Adult Participants With Type 2 Diabetes and Inadequate Glycemic Control With Diet and Exercise Alone (TRANSCEND-T2D-1)).
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Felbamate is an anticonvulsant drug used in the treatment of epilepsy. In particular, in the adult patient population, it can be employed to treat partial seizures (with and without generalization). Alternatively, it is used to treat partial and generalized seizures associated with Lennox-Gastaut syndrome in children. It has a weak inhibitory effect on GABA receptor binding sites.
+Felbamate is an anticonvulsant drug used to treat epilepsy, including complex partial seizures. It remains an approved medicine but carries a boxed warning, so its use is limited to selected patients where the benefits outweigh the risks.
 
-**Indication.** For use only in those patients who respond inadequately to alternative treatments and whose epilepsy is so severe that a substantial risk of aplastic anemia and/or liver failure is deemed acceptable in light of the benefits conferred by its use.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421301](https://www.wikidata.org/wiki/Q421301) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

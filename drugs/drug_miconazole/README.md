@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Miconazole is a broad-spectrum azole antifungal with some activity against Gram-positive bacteria as well.[A203636] It is widely used to treat mucosal yeast infections, including both oral and vaginal infections; although intravenous miconazole is no longer available, a wide variety of suppositories, creams, gels, and tablet-based products are available.[L14021, L14024, L14027, L14033, L14396] Miconazole is thought to act primarily through the inhibition of fungal CYP450 14α-lanosterol demethylase activity.[A203636, A203639]
+Miconazole is an antifungal medicine used to treat fungal infections of the skin, mouth, gut, vagina, and ear. It is widely used in topical and oral preparations, is included on the WHO list of essential medicines, and is also approved for veterinary use.
 
-Miconazole was first synthesized in 1969 and first granted FDA approval on January 8, 1974, for sale by INSIGHT Pharmaceuticals as a topical cream.[A214523, L14021] It is currently available as a variety of prescription and over the counter products. Despite having been in clinical use for an extended period, resistance to miconazole among susceptible organisms is relatively low.[A203636]
-
-**Indication.** Miconazole is indicated for the local treatment of oropharyngeal candidiasis in adult patients and for the adjunctive treatment of diaper dermatitis complicated by candidiasis in immunocompetent patients aged four weeks and older.[L14021, L14024] Miconazole is available as both a suppository and cream for the treatment of vaginal yeast infections and the relief of associated vulvar itching and irritation.[L14027] Lastly, miconazole cream is effective in treating athlete's foot (tinea pedis), jock itch (tinea cruris), ringworm infections (tinea corporis),[L14033] pityriasis (formerly tinea) versicolor,[A203633] and cutaneous candidiasis.[A203630]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410534](https://www.wikidata.org/wiki/Q410534) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -56,15 +54,15 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | skin | <sub>“…Topical miconazole is absorbed poorly into the systemic circulation…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted through both urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
 | — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
 | — | ovary | `CYP19A1` inhibitor | DrugBank actor |

@@ -4,7 +4,7 @@
 
 # triamcinolone — `Triamcinolone_Kraus2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,8 +24,6 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:01.345958+00:00) predates the upstream re-run (2026-10-04 04:27:42.201720+00:00). Current validate status: `rejected`.
-
 > **Dose compound ≠ measured compound:** dosed `triamcinolone acetonide`, measured `triamcinolone`.
 
 ## Citation
@@ -33,7 +31,7 @@ Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and c
   ·  DOI: [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003)
 
 ## Model component
-<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Kraus2018_reference" status="rejected" stale="true" population="patients with knee osteoarthritis" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Kraus2018_reference" status="rejected" stale="false" population="patients with knee osteoarthritis" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

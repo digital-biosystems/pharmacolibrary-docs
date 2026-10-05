@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Cilazapril is an ACE inhibtor class drug used in the treatment of hypertension and heart failure. It belongs to the angiotensin-converting enzyme inhibitors (ACE inhibitors) class of drugs.  It is a prodrug that is hydrolyzed after absorption to its main metabolite cilazaprilat. It is branded as Inhibace in Canada and other countries, Vascace and Dynorm in a number of European countries, among many other names. None of these varieties are available in the United States.
+Cilazapril is an ACE inhibitor used to treat high blood pressure and congestive heart failure. It is an approved medicine, available alone and in combination with a diuretic, though it is not authorised centrally in the European Union.
 
-**Indication.** Cilazapril is an ACE inhibtor class drug used in the treatment of hypertension and heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q867350](https://www.wikidata.org/wiki/Q867350) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

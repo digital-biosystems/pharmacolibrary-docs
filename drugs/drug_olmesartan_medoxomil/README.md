@@ -10,17 +10,9 @@
 
 ## About
 
-**Description.** Olmesartan belongs to the angiotensin II receptor blocker (ARB) family of drugs, which also includes [telmisartan], [candesartan], [losartan], [valsartan], and [irbesartan]. ARBs selectively bind to angiotensin receptor 1 (AT1) and prevent the protein angiotensin II from binding and exerting its hypertensive effects, which include vasoconstriction, stimulation and synthesis of aldosterone and ADH, cardiac stimulation, and renal reabsorption of sodium, among others. Overall, olmesartan's physiologic effects lead to reduced blood pressure, lower aldosterone levels, reduced cardiac activity, and increased excretion of sodium. 
+Olmesartan is an angiotensin II receptor blocker used to treat high blood pressure (arterial hypertension) and has also been used for congestive heart failure. It is an approved medicine, available alone and in fixed combinations with diuretics or calcium channel blockers, and is widely used as an antihypertensive.
 
-Olmesartan also affects the renin-angiotensin aldosterone system (RAAS), which plays an important role in hemostasis and regulation of kidney, vascular, and cardiac functions. Pharmacological blockade of RAAS via  AT1 receptor blockade inhibits negative regulatory feedback within RAAS, which is a contributing factor to the pathogenesis and progression of cardiovascular disease, heart failure, and renal disease. In particular, heart failure is associated with chronic activation of RAAS, leading to inappropriate fluid retention, vasoconstriction, and ultimately a further decline in left ventricular function. ARBs have been shown to have a protective effect on the heart by improving cardiac function, reducing afterload, increasing cardiac output and preventing ventricular hypertrophy and remodelling.[A174154] 
-
-By comparison, the angiotensin-converting enzyme inhibitor (ACEi) class of medications (which includes drugs such as [ramipril], [lisinopril], and [perindopril]) inhibit the conversion of angiotensin I to angiotensin II through inhibition of the ACE enzyme. However, this does not prevent the formation of all angiotensin II within the body. The angiotensin II receptor blocker (ARB) family of drugs unique in that it blocks all angiotensin II activity, regardless of where or how it was synthesized. 
-
-Olmesartan is commonly used for the ma
-
-**Indication.** Olmesartan is indicated for the treatment of hypertension either alone or in combination with other antihypertensive agents.[F4709,F4712,A173869] 
-
-Olmesartan is also used off-label for the management Type 2 Diabetes-associated nephropathy, heart failure, and post-myocardial infarction, particularly in patients who are unable to tolerate ACE inhibitors.[A178153,A185912,A185915] ARBs such as olmesartan have been shown in a number of large-scale clinical outcomes trials to improve cardiovascular outcomes including reducing risk of myocardial infarction, stroke, the progression of heart failure, and hospitalization.[A174124,A178153,A173869,A185324,A185327,A185333,A185342,A185345] Like other ARBs, olmesartan blockade of RAAS slows the progression of diabetic nephropathy due to its renoprotective effects.[A185906,A185909,A185912]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421156](https://www.wikidata.org/wiki/Q421156) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,10 +30,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly absorbed in the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | small intestine | <sub>“…bioactivated by ester hydrolysis to olmesartan during absorption from the gastrointestinal…”</sub> | prose |
-| excretion | bile duct | <sub>“…elimination route of olmesartan is in the unchanged form through the feces…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inducer/substrate | DrugBank actor |
 | excretion | liver | `ABCB11` inhibitor, `ABCC2` inducer/substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` inducer/substrate | DrugBank actor |

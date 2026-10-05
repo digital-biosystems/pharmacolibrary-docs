@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;luseogliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/&quot;},{&quot;label&quot;:&quot;Samukawa_2017 \u00b7 PD urinary glucose excretion&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sasaki_2015_UGE&quot;,&quot;label&quot;:&quot;Sasaki_2015 \u00b7 UGE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/pd_Sasaki_2015_UGE.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # urinary glucose excretion — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -14,26 +14,36 @@
 
 ## What this record describes
 
-**As extracted:** Luseogliflozin (concentrations from this paper's PK model) drives urinary glucose excretion (in g) (inhibition; the model form was not identified).
+**As extracted:** Luseogliflozin (concentrations from this paper's PK model) drives urinary glucose excretion (in g/h): target-mediated drug disposition.
 
 **Model:** No model was generated from this record.
 
-> Luseogliflozin plasma concentrations (nM) drive urinary glucose excretion (g) by competitively inhibiting SGLT2-mediated glucose reabsorption in the renal proximal tubule, a mechanism characterized by association (Kon) and dissociation (Koff) rate constants rather than a simple Emax effect. The model estimated a dissociation half-life of 6.81 h and reported that the population inhibition constant (Ki2) and rate constants were within 0.31- to 3.6-fold of in vitro values, but specific numerical values for Ki2, Kon, or Koff were not provided in the excerpts.
+> Luseogliflozin plasma concentrations (nM) inhibit SGLT2-mediated glucose reabsorption via a target-mediated drug disposition (TMDD) mechanism, thereby increasing urinary glucose excretion (g/h). The model estimates an inhibition constant (Ki2) of 0.336 nM, an association rate constant (Kon) of 0.303 1/nM/h, and a dissociation rate constant (Koff) of 0.102 1/h.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Samukawa_2017`
-- **model family:** `unknown`
+- **model family:** `tmdd`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & pharmaceutical… (2017)
   ·  DOI: [10.1248/bpb.b16-00998](https://doi.org/10.1248/bpb.b16-00998)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | K i2 | `Q331` · not captured | 0.336 | nM | not captured | llm (not captured) | Samukawa_2017:pdv3 |
+| PD (effect) | K on | `Q329` · not captured | 0.303 | 1/nM/h | not captured | llm (not captured) | Samukawa_2017:pdv3 |
+| PD (effect) | K off | `Q330` · not captured | 0.102 | 1/h | not captured | llm (not captured) | Samukawa_2017:pdv3 |
+| PD (effect) | K g | `Q338` · not captured | 2.20 | 1/h | not captured | llm (not captured) | Samukawa_2017:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

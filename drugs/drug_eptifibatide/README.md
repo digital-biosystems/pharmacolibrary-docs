@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Synthetic cyclic hexapeptide that binds to platelet receptor glycoprotein and inhibits platelet aggregation. Derived from venom of the Southeastern pygmy rattlesnake (Sistrurus miliarus barbouri), eptifibatide is a cyclic heptapeptide that belongs to the class of arginin-glycin-aspartat-mimetics.
+Eptifibatide is a platelet aggregation inhibitor used to treat conditions such as acute coronary syndromes, including unstable angina and myocardial infarction. It is an approved medicine, authorised in the European Union, and is typically given in hospital settings for acute cardiac care.
 
-**Indication.** For treatment of myocardial infarction and acute coronary syndrome.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2295855](https://www.wikidata.org/wiki/Q2295855) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,7 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…Deamidated eptifibatide and other, more polar metabolites have been detected in urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA2D1 (target), ITGA2B (modulator), ITGB3 (modulator).</sub>
 

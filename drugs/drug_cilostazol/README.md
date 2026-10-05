@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Cilostazol is a quinolinone derivative and antiplatelet agent with vasodilating properties that has been used in the symptomatic treatment of intermittent claudication in patients with peripheral ischaemia. It is marketed under the brand name Pletal by Otsuka Pharmaceutical Co.. Cilostazol works by inhibiting both primary and secondary aggregation and reducing calcium-induced contractions.
+Cilostazol is a platelet aggregation inhibitor used to treat intermittent claudication and cerebral infarction. It is an approved medicine, though it carries a boxed warning and is not authorised in the European Union.
 
-**Indication.** Indicated for the alleviation of symptoms of intermittent claudication (pain in the legs that occurs with walking and disappears with rest).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q258591](https://www.wikidata.org/wiki/Q258591) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,14 +33,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Cilostazol is absorbed after oral administration.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…the remainder excreted in feces (20%)…”</sub> | prose |
-| excretion | kidney | <sub>“…metabolites largely excreted in urine…”</sub> | prose |
-| excretion | liver | <sub>“…extensively metabolized by hepatic cytochrome P-450 enzymes…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PDE3A (inhibitor).</sub>
 

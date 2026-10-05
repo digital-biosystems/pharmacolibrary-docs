@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Ibutilide is a Class III antiarrhythmic agent available in intravenous formulations. It is indicated for the conversion of acute atrial flutter and recent onset atrial fibrillation to normal sinus rhythm (NSR).
+Ibutilide is a class III antiarrhythmic drug used to treat atrial fibrillation. It is an approved medicine, given by injection, and its use is generally restricted to hospital settings.
 
-**Indication.** Indicated for the rapid conversion of atrial fibrillation or atrial flutter of recent onset to sinus rhythm.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3791612](https://www.wikidata.org/wiki/Q3791612) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,9 +38,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Primarily hepatic.…”</sub> | prose |
-| excretion | bile duct | <sub>“…the remainder (about 19%) was recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (activator), CACNA2D1 (activator), CACNB1 (activator), CACNG1 (activator), KCNH2 (inhibitor), KCNH6 (inhibitor), KCNH7 (inhibitor), KCNJ11 (inhibitor), KCNK1 (inhibitor), KCNK6 (inhibitor).</sub>
 

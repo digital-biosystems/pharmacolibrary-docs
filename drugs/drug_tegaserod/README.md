@@ -10,17 +10,15 @@
 
 ## About
 
-**Description.** Novartis' brand name Zelnorm (tegaserod) had originally received approval from the US FDA in 2002 for the treatment of irritable bowel syndrome with constipation (IBS-C).[L5918,F4229] It was, however, voluntarily withdrawn from widespread use in the US market in 2007 after concerns arose over the possibility that tegaserod could potentially cause dangerous cardiovascular events in patients.[L5918,F4229] Since then, closer evaluations of the original data suggesting such cardiovascular risk have resulted in the limited reintroduction or 're-approval' of tegaserod for treatment of IBS-C specifically in female patients less than 65 years of age and whom are considered to be at a lower risk of a cardiovascular event than the broader population.[L5918,F4229] Zelnorm (tegaserod) by Sloan Pharma subsequently gained re-approval in April of 2019.[L5918] Nevertheless, tegaserod remains un-approved in certain regions.[F4226]
+Tegaserod, a serotonin receptor agonist, was used to treat constipation and functional gastrointestinal disorders such as irritable bowel syndrome. It has been withdrawn from the market, and a marketing application for the drug was refused in the European Union.
 
-Despite the relative complications involved in its history of regulatory approval, ever since its first introduction in 2002 tegaserod remains the only therapy for IBS-C that possesses the unique mechanism of action of acting on serotonin-4 (5-HT(4)) receptors in smooth muscle cells and in the gastrointestinal wall to facilitate actions like esophageal relaxation, peristaltic gut movement, and natural secretions in the gut, among others.[L5918,A11044,A176762,F4229,F4223]
-
-**Indication.** Tegaserod is a serotonin-4 (5-HT4) receptor agonist indicated for the treatment of adult women less than 65 years of age with irritable bowel syndrome with constipation (IBS-C) [F4223, F4229]. The safety and effectiveness of tegaserod in men with IBS-C have not been established [F4223, F4229].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q44944](https://www.wikidata.org/wiki/Q44944) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 22:33 | 2:20 | 0/0/0 | 1/0/0 | 0/0/0 | 21,300/2,079 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/6 | 3/0 | 0 |
+| 2026-10-04 13:13 | 1:10 | 0/0/0 | 1/1/0 | 0/0/0 | 36,969/1,659 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/6 | 3/0 | 0 |
 
 ## popPK records
 
@@ -30,11 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">mouse</span> | [Liu_2020_Apoptosis](drugs/drug_tegaserod/pd_Liu_2020_Apoptosis.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">mouse</span> | [Liu_2020_IC50](drugs/drug_tegaserod/pd_Liu_2020_IC50.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">mouse</span> | [Liu_2020_Survival](drugs/drug_tegaserod/pd_Liu_2020_Survival.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">mouse</span> | [Liu_2020_Tumor_volume](drugs/drug_tegaserod/pd_Liu_2020_Tumor_volume.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">mouse</span> | [Liu_2020_p_S6](drugs/drug_tegaserod/pd_Liu_2020_p_S6.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [An_2021_Kv](drugs/drug_tegaserod/pd_An_2021_Kv.md) | Kv current ← tegaserod · direct sigmoid Emax (Hill) effect | — | An JR et al., The effects of tegaserod, a gastrokinet…, Clinical and experimental p… (2021) | [10.1111/1440-1681.13477](https://doi.org/10.1111/1440-1681.13477) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Fang_2008_short_circuit_current](drugs/drug_tegaserod/pd_Fang_2008_short_circuit_current.md) | mucosal secretion ← tegaserod · direct Emax (saturable) effect | — | Fang X et al., Neurogastroenterology of tegaserod (HTF…, Neurogastroenterology and m… (2008) | [10.1111/j.1365-2982.2007.00983.x](https://doi.org/10.1111/j.1365-2982.2007.00983.x) |
 
 ## ADME sites
 
@@ -51,9 +46,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2C8` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor | DrugBank actor |
-| metabolism | stomach | <sub>“…The substance is firstly hydrolyzed in the stomach…”</sub> | prose |
-| excretion | bile duct | <sub>“…excreted unchanged in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine as metabolites…”</sub> | prose |
+| metabolism | stomach | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor/substrate | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor/substrate | DrugBank actor |
 
@@ -74,13 +69,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Appel-Dingemanse_2002.pdf` | Appel-Dingemanse S, Clinical pharmacokinetics of tegaserod,…, Clinical pharmacokinetics (2002) | popPK | 9 | [10.2165/00003088-200241130-00002](https://doi.org/10.2165/00003088-200241130-00002) | [12403641](https://pubmed.ncbi.nlm.nih.gov/12403641) | The text explicitly reports quantitative disposition parameters for tegaserod, including volume of distribution (368 L), clearance (77 L/h), and half-life (11 hours). |
-| `Appel-Dingemanse_2001.pdf` | Appel-Dingemanse S et al., The pharmacokinetics of the novel promo…, Alimentary pharmacology & t… (2001) | popPK | 8 | [10.1046/j.1365-2036.2001.00973.x](https://doi.org/10.1046/j.1365-2036.2001.00973.x) | [11421867](https://pubmed.ncbi.nlm.nih.gov/11421867) | The study reports non-compartmental PK parameters (AUC, Cmax) for tegaserod, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only ratios and qualitative comparisons. |
-| `Zhou_1999.pdf` | Zhou H et al., Effect of meal timing not critical for…, Journal of clinical pharmac… (1999) | popPK | 8 | [10.1177/00912709922008524](https://doi.org/10.1177/00912709922008524) | [10471981](https://pubmed.ncbi.nlm.nih.gov/10471981) | The study is a PK study of tegaserod, but the evidence text only provides qualitative descriptions and relative changes (e.g., AUC reduced by 50%) without listing specific numeric values for clearance, volume, or rate constants. |
+| `Zhou_1999.pdf` | Zhou H et al., Effect of meal timing not critical for…, Journal of clinical pharmac… (1999) | popPK | 8 | [10.1177/00912709922008524](https://doi.org/10.1177/00912709922008524) | [10471981](https://pubmed.ncbi.nlm.nih.gov/10471981) | The study reports qualitative PK findings (AUC reduction) and describes a NONMEM absorption model, but specific numeric parameter values (ka, CL, V) are not present in the provided text. |
 | `Ismair_2007.pdf` | Ismair MG et al., Tegaserod inhibits the serotonin transp…, Digestion (2007) | pd | 4 | [10.1159/000102962](https://doi.org/10.1159/000102962) | [17510552](https://www.ncbi.nlm.nih.gov/pubmed/17510552) | metadata signals extractable PD data (IC50) |
 | `Jarvie_2007.pdf` | Jarvie EM et al., Differences between the abilities of te…, British journal of pharmaco… (2007) | pd | 4 | [10.1038/sj.bjp.0707118](https://doi.org/10.1038/sj.bjp.0707118) | [17211452](https://www.ncbi.nlm.nih.gov/pubmed/17211452) | metadata signals extractable PD data (Emax) |
 | `Tsubouchi_2018.pdf` | Tsubouchi T et al., The in vitro pharmacology and non-clini…, European journal of pharmac… (2018) | pd | 4 | [10.1016/j.ejphar.2018.02.037](https://doi.org/10.1016/j.ejphar.2018.02.037) | [29501863](https://www.ncbi.nlm.nih.gov/pubmed/29501863) | metadata signals extractable PD data (EC50) |
@@ -88,13 +81,13 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Vickers_2001.pdf` | Vickers AE et al., In vitro metabolism of tegaserod in hum…, Drug metabolism and disposi… (2001) | pgx | 7 | not captured | [11560869](https://www.ncbi.nlm.nih.gov/pubmed/11560869) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Zhou_2001.pdf` | Zhou H et al., Tegaserod coadministration does not alt…, Journal of clinical pharmac… (2001) | pgx | 7 | [10.1177/00912700122010979](https://doi.org/10.1177/00912700122010979) | [11549104](https://www.ncbi.nlm.nih.gov/pubmed/11549104) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-29T22:32:23.116553+00:00</sub>
+<sub>queue written 2026-10-04T13:12:10.695593+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | An_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of tegaserod's effects on ion channels, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | An_2021 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of tegaserod's effect on ion channels, not a pharmacokinetic study. |
 | popPK | Appel-Dingemanse_2001 | relevant | 8 | 2 | The study reports non-compartmental PK parameters (AUC, Cmax) for tegaserod, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only ratios and qualitative comparisons. |
 | PD | Appel-Dingemanse_2001 | not_relevant | 1 | 0 | The paper is a PK study assessing age and gender effects on exposure; it mentions a shallow dose-response relationship qualitatively but provides no numeric PD parameters or concentration-effect data. |
 | PD | Appel-Dingemanse_2002 | not_relevant | 1 | 0 | The text is a pharmacokinetic review that qualitatively mentions dose-dependent pharmacodynamic actions (transit acceleration) but provides no numeric PD parameters, concentration-effect curves, or formal PK/PD modeling results. |
@@ -109,11 +102,11 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Camilleri_2019 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenomics in IBS and does not report specific data or effects for tegaserod. |
 | popPK | Corsetti_2002 | irrelevant | 0 | 0 | The text is a general overview of tegaserod's mechanism and clinical efficacy without reporting any quantitative pharmacokinetic parameters. |
 | PD | Corsetti_2002 | not_relevant | 1 | 0 | The text is a qualitative review summary that mentions pharmacodynamic effects (prokinetic activity) but provides no numeric PD parameters, concentration-effect curves, or dose-response data. |
-| popPK | De_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonism, not a pharmacokinetic study, and does not report any disposition parameters for tegaserod. |
+| popPK | De_2006 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of 5-HT4 receptor agonism in pig tissues, not a pharmacokinetic study of tegaserod. |
 | popPK | Degen_2001 | irrelevant | 1 | 0 | The study focuses exclusively on pharmacodynamic effects (gastric emptying and transit times) and does not report quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Degen_2001 | not_relevant | 2 | 1 | The study reports qualitative pharmacodynamic effects (accelerated transit) and statistical significance for fixed doses, but does not provide a concentration-effect model, dose-response curve, or numeric PD parameters (e.g., Emax, EC50) in the provided text. |
 | PGx | Duke_2012 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (promethazine and tegaserod) affecting myopathy risk, not a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter. |
-| popPK | Fang_2008 | irrelevant | 0 | 0 | The paper is a mechanistic study investigating receptor pharmacology and electrophysiology, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Fang_2008 | irrelevant | 0 | 0 | The study is a mechanistic investigation of tegaserod's pharmacological actions on the enteric nervous system and mucosal secretion, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Fisher_2004 | irrelevant | 0 | 0 | The study evaluates pharmacodynamic effects on biliary tract motility and does not report any pharmacokinetic parameters for tegaserod. |
 | PD | Fisher_2004 | not_relevant | 0 | 0 | The study reports a null result (no significant effect) on biliary motility using ANOVA, without providing numeric concentration-effect curves, Emax, EC50, or other derivable PD parameters. |
 | popPK | Gurbel_2021 | irrelevant | 1 | 0 | The study is a pharmacodynamic assessment of platelet function and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.) for tegaserod. |
@@ -150,8 +143,8 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Yin_2017 | not_relevant | 2 | 1 | The paper focuses on a new compound (YKP10811) and only provides a qualitative comparison to tegaserod without reporting numeric PD parameters or a quantitative dose-response curve for tegaserod. |
 | popPK | Zhao_2022 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
 | PD | Zhao_2022 | not_relevant | 0 | 0 | The paper focuses on virtual screening for SARS-CoV-2 inhibitors and does not mention tegaserod or report any pharmacodynamic data. |
-| popPK | Zhou_1999 | relevant | 8 | 2 | The study is a PK study of tegaserod, but the evidence text only provides qualitative descriptions and relative changes (e.g., AUC reduced by 50%) without listing specific numeric values for clearance, volume, or rate constants. |
-| popPK | Zhou_2001 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of digoxin as the subject drug, with tegaserod acting only as a co-administered agent, and no quantitative PK parameters for tegaserod are reported. |
+| popPK | Zhou_1999 | relevant | 8 | 2 | The study reports qualitative PK findings (AUC reduction) and describes a NONMEM absorption model, but specific numeric parameter values (ka, CL, V) are not present in the provided text. |
+| popPK | Zhou_2001 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of digoxin (the subject drug) to assess drug-drug interactions, and while tegaserod is co-administered, no quantitative PK parameters (CL, V, etc.) for tegaserod are reported. |
 | PD | Zhou_2001 | not_relevant | 1 | 0 | The study reports a drug-drug interaction effect on digoxin PK (AUC/Cmax reduction) and states there were no pharmacodynamic changes in heart rate or QT interval, but it does not provide numeric PD parameters or an exposure-response relationship for tegaserod itself. |
 | PGx | Zhou_2001_2 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (tegaserod and theophylline) in healthy subjects, not a pharmacogenomic effect on tegaserod's PK/PD. |
 

@@ -8,6 +8,12 @@
 - **molar mass:** 340.1157 g/mol (C6H14O12P2) — DrugBank
 - **groups:** investigational
 
+## About
+
+Fructose 1,6-diphosphate is a cardiac therapy agent that has been investigated for treating heart-related conditions. It remains investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q28529691](https://www.wikidata.org/wiki/Q28529691) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

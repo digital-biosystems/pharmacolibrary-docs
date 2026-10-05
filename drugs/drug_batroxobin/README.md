@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Batroxobin is a defibrinogenating hemostatic agent derived from the venom of a pit viper, Bothrops atrox moojeni. In addition to batroxobin, the venom of Bothrops atrox has a composition of 10.2% neutral carbohydrate. Batroxobin is a serine protease, which cleaves the 16 Arginine - 17 Glycine bond in fibrinogen. The MW of batroxobin is approximately 43,000 g/mol-1, and it contains 231 amino acids.
+Batroxobin, an enzyme derived from snake venom, acts as a hemostatic agent and has been studied for controlling bleeding. It is not an approved medicine in major markets such as the European Union and remains investigational.
 
-Batroxobin is inactivated by alpha2-macroglobulin, but not anti-thrombin compounds.  Batroxobin will also bind fibrinogen in a manner different than thrombin and with a higher affinity. Once bound to fibrin, it will cause fibrin accretion(clot formation) to a degree 18 folds greater than thrombin. 
-
-Currently use is experimental but trials have been conducted which support certain clinical applications. Recombinant Batroxobin in relatively affordable and could be accessed by mass production.
-
-**Indication.** No approved indications. Batroxobin is a defibrongenating agent which has been observed to reduce fibrinogen levels and thus reduce clot risk when used intravenously.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q993771](https://www.wikidata.org/wiki/Q993771) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

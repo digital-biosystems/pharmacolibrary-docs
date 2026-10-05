@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Prenylamine was withdrawn from the Canadian, US, and UK markets in 1988 due to concerns regarding cardiac arrhythmias.
+Prenylamine is a calcium channel blocker and vasodilator that was used as a cardiac therapy for cardiovascular disease. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7240579](https://www.wikidata.org/wiki/Q7240579) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Peginesatide is a synthetic peptide attached to polyethylene glycol for the treatment of anemia. The polyethylene glycol moiety helps make the drug less immunogenic and prolongs its plasma half-life. Chemically, peginesatide is designed to mimic the pharmacological activity of erythropoietin, but is not a replica of the structure itself. Peginesatide consists of two 21-amino acid chains that are covalently bonded by a linker derived from iminodiacetic acid and β-alanine. FDA approved March 27, 2012.
+Peginesatide is an antianemic drug that was developed to treat anemia. It was withdrawn from the market, and its European marketing application was also withdrawn.
 
-**Indication.** Peginesatide is used for the treatment of anemia due to chronic kidney disease (CKD) in adult patients on dialysis
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3662569](https://www.wikidata.org/wiki/Q3662569) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,7 +37,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…primarily excreted via urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EPOR (stimulator).</sub>
 

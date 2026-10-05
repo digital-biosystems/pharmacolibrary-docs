@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Mitapivat is a novel, first-in-class pyruvate kinase activator. It works to increase the activity of erythrocyte pyruvate kinase, a key enzyme involved in the survival of red blood cells. Defects in the pyruvate kinase enzyme in various red blood cells disorders lead to the lack of energy production for red blood cells, leading to lifelong premature destruction of red blood cells or chronic hemolytic anemia.[A245478]
+Mitapivat is a hematological drug used to treat hemolytic anemia, a genetic condition. It is authorised in the European Union and is also being investigated for other uses.
 
-On February 17, 2022, the FDA approved mitapivat as the first disease-modifying treatment for hemolytic anemia in adults with pyruvate kinase (PK) deficiency, a rare, inherited disorder leading to lifelong hemolytic anemia.[L40533] Mitapivat has also been investigated in other hereditary red blood cell disorders associated with hemolytic anemia, such as sickle cell disease and alpha- and beta-thalassemia.[A245478] On January 5, 2026, the FDA also approved the use of in the treatment of anemia in adults with alpha- or beta-thalassemia, making it the first oral treatment for this condition.[L54953]
-
-**Indication.** Mitapivat is indicated for the treatment of hemolytic anemia in adults with pyruvate kinase (PK) deficiency.[L40528] It is also used to treat anemia in adults with alpha- or beta-thalassemia.[L54968]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q105337735](https://www.wikidata.org/wiki/Q105337735) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -66,9 +64,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer/substrate, `CYP2C9` inducer/substrate, `CYP3A4` inducer/substrate, `UGT1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate, `UGT1A1` inducer | DrugBank actor |
-| excretion | bile duct | <sub>“…39.6% of radioactivity was recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…49.6% of radioactivity was recovered in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…primary eliminated via hepatic metabolism…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
 | — | ovary | `CYP19A1` inhibitor | DrugBank actor |
 | — | testis | `CYP19A1` inhibitor | DrugBank actor |

@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 150 mg oral (J04AB04)",
  "model_id": "Rifabutin_Bentley2021_reference",
  "molar_masses": {
   "central.C": 0.8470046999999999
@@ -7,11 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  100.0,
-  300.0
  ],
  "parameters": {
   "Cl": 2.3416666666666666e-06,
@@ -21,7 +16,7 @@
   "VdPerKg": 0.002657142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00015,
   "ka": 4.4444444444444447e-05,
   "weight": 70.0
  },
@@ -29,7 +24,7 @@
   "central.C": 40169.93987975952
  },
  "reference_peaks": {
-  "central.C": 0.00032656898662715547
+  "central.C": 0.0004898549234928136
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Aglucosidase alfa consists of the human enzyme acid alpha-glucosidase (GAA) which is essential for the degradation of glygogen to glucose in lysosomes. It is encoded by the most predominant of nine observed haplotypes of this gene. Aglucosidase alfa is produced by recombinant DNA technology in a Chinese hamster ovary cell line. Alglucosidase alfa degrades glycogen by catalyzing the hydrolysis of a-1,4- and a-1,6- glycosidic linkages of lysosomal glycogen. Structurally, Alglucosidase alfa is a glycoprotein with a calculated mass of 98,008 daltons for the 883 residue mature polypeptide chain, and a total mass of approximately 109,000 daltons, including carbohydrates. It is used for the treatment of Pompe disease (GAA deficiency) in infants and pediatric patients.
+Alglucosidase alfa is an enzyme medication used to treat glycogen storage disease type II (Pompe disease). It is an approved enzyme therapy and has also been studied investigationally.
 
-**Indication.** For the treatment of Pompe disease (GAA deficiency) in infants and pediatric patients.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2919537](https://www.wikidata.org/wiki/Q2919537) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,8 +37,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Via kidney…”</sub> | prose |
-| excretion | liver | <sub>“…and liver…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GAA (substrate), Glycogen (cleavage), IGF2R (binder), M6PR (binder).</sub>
 

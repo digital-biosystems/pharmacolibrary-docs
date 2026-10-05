@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Moexipril is a non-sulfhydryl containing precursor of the active angiotensin-converting enzyme (ACE) inhibitor moexiprilat. It is used to treat high blood pressure (hypertension). It works by relaxing blood vessels, causing them to widen. Lowering high blood pressure helps prevent strokes, heart attacks and kidney problems.
+Moexipril is an ACE inhibitor used to treat high blood pressure and congestive heart failure. It is an approved medicine, available alone or combined with a diuretic, though it is not authorised in the European Union.
 
-**Indication.** For the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2291605](https://www.wikidata.org/wiki/Q2291605) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,7 +31,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | liver | <sub>“…The liver is thought to be one site of conversion, but not the primary site.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC15A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor).</sub>

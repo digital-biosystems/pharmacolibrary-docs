@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Cerliponase alfa is a hydrolytic lysosomal N-terminal tripeptidyl peptidase-1 (TPP1).[L51319] On April 27, 2017, cerliponase alfa was first approved by the FDA as the first treatment for neuronal ceroid lipofuscinosis type 2 (CLN2), also known as TPP1 deficiency.[L51339] It was also approved by the EMA on May 30, 2017 [L51324] and by Health Canada on December 19, 2018.[L51329] CLN2 is a predominantly pediatric-onset neurodegenerative disease caused by a deficiency in the lysosomal enzyme TPP1, leading to progressive impairment in motor and cognitive function.[A264354, A264369] As a recombinant human TPP1, cerliponase alfa is used as an enzyme replacement therapy to restore the levels of TPP1 in patients with CLN2.[L51339]
+Cerliponase alfa is an enzyme medication used to treat neuronal ceroid-lipofuscinosis, a rare metabolic disease. It is authorised in the European Union and is used only in specialised care for this very rare condition.
 
-**Indication.** Cerliponase alfa is indicated to slow the loss of ambulation in pediatric patients with neuronal ceroid lipofuscinosis type 2 (CLN2 disease), also known as tripeptidyl peptidase 1 (TPP1) deficiency.[L51319, L51324, L51329] It is approved for use in children in the US, whereas in Europe and Canada, it is approved for use in patients of all ages.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q33626059](https://www.wikidata.org/wiki/Q33626059) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

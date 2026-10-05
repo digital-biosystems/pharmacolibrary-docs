@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Cisplatin, cisplatinum or cis-diamminedichloroplatinum(II) (CDDP) is a platinum-based chemotherapy drug used to treat various types of cancers, including sarcomas, some carcinomas (e.g. small cell lung cancer, and ovarian cancer), lymphomas and germ cell tumors. It was the first member of its class, which now also includes carboplatin and oxaliplatin.
+Cisplatin is a platinum-based anticancer drug used to treat many cancers, including testicular, ovarian, bladder, lung, stomach, and head and neck cancers. It is an approved medicine and appears on the WHO list of essential medicines, so it is widely used in cancer care worldwide.
 
-**Indication.** For the treatment of metastatic testicular tumors, metastatic ovarian tumors and advanced bladder cancer.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412415](https://www.wikidata.org/wiki/Q412415) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -24,7 +24,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Urien_2004_reference](drugs/drug_cisplatin/Cisplatin_Urien2004_reference.md) | — | parent + metabolite (no model) | 4 | Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Urien_2004_reference](drugs/drug_cisplatin/Cisplatin_Urien2004_reference.md) | — | parent + metabolite (no model) | 4 | Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x) |
 
 ## ADME sites
 
@@ -33,13 +33,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| absorption | brain | <sub>“…cerebrum, and cerebellum…”</sub> | prose |
-| absorption | kidney | <sub>“…highest in liver, prostate, and kidney…”</sub> | prose |
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
-| absorption | lung | <sub>“…lowest in bowel, adrenal, heart, lung…”</sub> | prose |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | prostate gland | <sub>“…highest in liver, prostate, and kidney…”</sub> | prose |
-| absorption | skeletal muscle | <sub>“…somewhat lower in bladder, muscle, testicle…”</sub> | prose |
+| absorption | prostate gland | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |

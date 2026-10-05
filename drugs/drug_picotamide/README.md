@@ -8,6 +8,12 @@
 - **molar mass:** 376.416 g/mol (C21H20N4O3) — DrugBank
 - **groups:** experimental
 
+## About
+
+Picotamide is a platelet aggregation inhibitor, an antithrombotic drug used to prevent blood clots. It is not an approved medicine in the European Union and appears only as an experimental agent, so its current clinical use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1235921](https://www.wikidata.org/wiki/Q1235921) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

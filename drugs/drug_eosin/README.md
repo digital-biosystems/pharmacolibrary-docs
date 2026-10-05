@@ -8,6 +8,12 @@
 - **molar mass:** 691.859 g/mol (C20H6Br4Na2O5) — DrugBank
 - **groups:** investigational
 
+## About
+
+Eosin is a red dye classified as a dermatological antiseptic and disinfectant, and it is also used as a stain in laboratory work. It is not an approved medicine; databases list it as investigational, so it is not in routine clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422637](https://www.wikidata.org/wiki/Q422637) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

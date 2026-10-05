@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Chlorhexidine is a broad-spectrum antimicrobial biguanide used as a topical antiseptic and in dental practice for the treatment of inflammatory dental conditions caused by microorganisms.[L11512] It is one of the most common skin and mucous membrane antiseptic agents in use today.[A190417] The molecule itself is a cationic bis-guanide consisting of two 4-chlorophenyl rings and two biguanide groups joined by a central hexamethylene chain.[A190453] Topical chlorhexidine for disinfection, as well as oral rinses for dental use, carries activity against a broad range of pathogens including bacteria, yeasts, and viruses.[L11518,L11512,A190453]
+Chlorhexidine is an antiseptic used to prevent and treat infections such as gingivitis, oral candidiasis, and skin and wound infections, and it also serves as a disinfectant. It is widely used in many forms, including mouthwashes, skin antiseptics, irrigating solutions, eye and ear preparations, and medicated dressings, and is listed as a WHO essential medicine.
 
-Chlorhexidine was developed in the UK by Imperial Chemical Industries in the early 1950s[A190474] and was introduced to the US in the 1970s.[L11572] The FDA withdrew its approval for the use of chlorhexidine gluconate topical tincture 0.5%, due to a significant number of reports concerning chemical and thermal burns associated with the use of this product.[L43942,L44027] Other formulations of chlorhexidine continue to be available.
-
-**Indication.** Chlorhexidine is available over-the-counter in various formulations (e.g. solution, sponge, cloth, swab) as a topical antiseptic to sanitize prior to surgeries and/or medical procedures.[L11518,L11521,L11527,L11533] Dental formulations, available by prescription only, include an oral rinse indicated for the treatment of gingivitis[L11512] and a slow-release "chip" which is inserted into periodontal pockets and is indicated for the reduction of pocket depth in adult patients with periodontitis as an adjunct therapy to dental scaling and root planing procedures.[L11536]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15646788](https://www.wikidata.org/wiki/Q15646788) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -49,10 +47,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…very poorly absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…less than 1% of an ingested dose excreted in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…Excretion of chlorhexidine gluconate occurs almost exclusively via the feces…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

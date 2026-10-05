@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Benzalkonium is a quaternary ammonium compound used as a biocide, a cationic surfactant, and as a phase transfer agent [FDA Label]. Benzalkonium is more commonly contained in consumer products in its salt form, benzalkonium chloride [FDA Label]. This salt is used in a great variety of international pharmaceutical products such as eye, ear, and nasal drops or sprays as an excipient ingredient serving as an antimicrobial preservative [FDA Label]. When used as an ingredient in antiseptic and disinfectant products however, it is an active antimicrobial agent [L1806].
+Benzalkonium is an antiseptic and disinfectant used to treat or prevent infection on skin, wounds and throat preparations. It is widely used in topical products such as antiseptics, medicated dressings and throat preparations.
 
-**Indication.** When used as an active ingredient in products like antibacterial, antiseptic, or disinfectant soaps, topical sanitizers, or cleaning agents, benzalkonium is primarily implemented in its salt form, benzalkonium chloride, where it may often be the only active ingredient present and indicated for the primary purpose of topical washing to decrease bacteria on skin [L1806].
-
-Conversely, when implemented as an excipient ingredient in a variety of multidose aqueous nose, eye, or ear products, benzalkonium chloride is being used as the antimicrobial preservative of choice to facilitate effective bactericidal and fungicidal actions to help minimize the growth of unwanted organisms in the multidose containers [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72445001](https://www.wikidata.org/wiki/Q72445001) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | small intestine | <sub>“…likely poorly absorbed and eliminated largely in faeces…”</sub> | prose |
-| excretion | bile duct | <sub>“…eliminated largely in faeces…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

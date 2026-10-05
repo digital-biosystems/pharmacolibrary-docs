@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antiarrhythmia agent that is particularly effective in ventricular arrhythmias. It also has weak beta-blocking activity. The drug is generally well tolerated.
+Propafenone is an antiarrhythmic medicine used to treat heart rhythm problems such as atrial fibrillation and supraventricular tachycardia. It is an approved medication and remains in use for these cardiac arrhythmias.
 
-**Indication.** Used to prolong the time to recurrence of paroxysmal atrial fibrillation/flutter (PAF) associated with disabling symptoms in patients without structural heart disease. Also used for the treatment of life-threatening documented ventricular arrhythmias, such as sustained ventricular tachycardia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q662511](https://www.wikidata.org/wiki/Q662511) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), KCNH2 (inhibitor), SCN5A (inhibitor).</sub>
 

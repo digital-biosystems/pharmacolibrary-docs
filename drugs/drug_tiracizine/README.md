@@ -8,6 +8,12 @@
 - **molar mass:** 367.449 g/mol (C21H25N3O3) — DrugBank
 - **groups:** experimental
 
+## About
+
+Tiracizine is a chemical compound that has been described as an antiarrhythmic agent and psychotropic drug, classified under other cardiac preparations. It appears only as an experimental drug, with no authorisation records, so its current use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6586877](https://www.wikidata.org/wiki/Q6586877) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

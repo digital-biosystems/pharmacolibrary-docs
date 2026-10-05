@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Vincamine is a monoterpenoid indole alkaloid obtained from the leaves of *Vinca minor* with a vasodilatory property. Studies indicate that vincamine increases the regional cerebral blood flow.
+Vincamine is a vasodilator alkaloid that has been used to widen blood vessels and lower blood pressure. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416225](https://www.wikidata.org/wiki/Q416225) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

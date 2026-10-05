@@ -15,15 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Repaglinide (concentrations from the PK model of Doki_2018) drives fibers viability: direct Emax (saturable) effect.
+**As extracted:** Repaglinide (concentrations from the PK model of Doki_2018) drives fibers viability: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> The record indicates that repaglinide concentrations inhibit fiber viability via a sigmoid Emax model, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mele_2014`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014)

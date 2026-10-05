@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Sodium bicarbonate is a white, crystalline powder that is commonly used as a pH buffering agent, an electrolyte replenisher, systemic alkalizer and in topical cleansing solutions.
+Sodium bicarbonate is used to treat conditions such as cardiac arrest, heartburn, indigestion, gastroesophageal reflux disease, and renal tubular acidosis. It is an approved medicine, given as intravenous electrolyte and irrigating salt solutions, and is widely available, though it carries a boxed warning.
 
-**Indication.** Sodium bicarbonate is used for the treatment of metabolic acidosis which may occur in severe renal disease, uncontrolled diabetes, circulatory insufficiency due to shock or severe dehydration, extracorporeal circulation of blood, cardiac arrest and severe primary lactic acidosis. Also is indicated in severe diarrhea which is often accompanied by a significant loss of bicarbonate. Further indicated in the treatment of certain drug intoxications, including barbiturates (where dissociation of the barbiturateprotein complex is desired), in poisoning by salicylates or methyl alcohol and in hemolytic reactions requiring alkalinization of the urine to diminish nephrotoxicity of blood pigments.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q179731](https://www.wikidata.org/wiki/Q179731) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

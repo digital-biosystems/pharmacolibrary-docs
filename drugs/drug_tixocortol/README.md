@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Tixocortol is a 21-thiol derivative of hydrocortisone classified as a class A corticosteroid. It is a synthetic steroid with topical anti-inflammatory properties without the systemic glucocorticoid and mineralocorticoid activities and toxicity.[L1078]
+Tixocortol is a corticosteroid that was used as a locally acting intestinal anti-inflammatory agent for bowel conditions and as a nasal corticosteroid for topical nasal use. It has been withdrawn and is no longer in use.
 
-**Indication.** Tixocortol is indicated for the treatment of rhinitis as a nasal suspension or aerosol. It is also used in the form of lozenges for the treatment of pharyngitis and in the form of enemas or rectal solution for the treatment of ulcerative colitis. Tixocortol can be used orally in a suspension or powder for the treatment of inflammatory conditions.[L1077] It is also the substance used for the screening of contact allergies to class A steroids.[A31435]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7810486](https://www.wikidata.org/wiki/Q7810486) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 06:17 | 1:21 | 0/0/0 | 0/0/0 | 0/0/0 | 13,783/1,174 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 20:17 | 0:26 | 0/0/0 | 0/0/0 | 0/0/0 | 5,691/296 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -30,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…rapidly modified within red blood cells…”</sub> | prose |
-| metabolism | liver | <sub>“…immediately metabolized by a first-pass liver metabolism…”</sub> | prose |
-| excretion | kidney | <sub>“…Urine analysis of oral administration of tixocortol demonstrate a complete lack of unchang…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HDAC2 (stimulator), NR3C1 (binder).</sub>
 
@@ -55,9 +55,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chanoine_1984.pdf` | Chanoine F et al., Comparative pharmacokinetic studies of…, Journal of steroid biochemi… (1984) | popPK | 10 | [10.1016/0022-4731(84)90311-x](https://doi.org/10.1016/0022-4731(84)90311-x) | [6492803](https://pubmed.ncbi.nlm.nih.gov/6492803) | The study reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for tixocortol pivalate in rats, with specific numeric values provided in the text. |
+| `Chanoine_1984.pdf` | Chanoine F et al., Comparative pharmacokinetic studies of…, Journal of steroid biochemi… (1984) | popPK | 10 | [10.1016/0022-4731(84)90311-x](https://doi.org/10.1016/0022-4731(84)90311-x) | [6492803](https://pubmed.ncbi.nlm.nih.gov/6492803) | The study reports specific quantitative pharmacokinetic parameters (clearance and volume of distribution) for tixocortol pivalate in rats. |
 
-<sub>queue written 2026-09-22T06:17:25.713921+00:00</sub>
+<sub>queue written 2026-10-04T20:16:56.470566+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,9 +66,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ardizzone_1998 | irrelevant | 0 | 0 | The paper is a clinical review of treatment guidelines for ulcerative colitis and does not report any pharmacokinetic parameters for tixocortol. |
 | PD | Ardizzone_1998 | not_relevant | 1 | 0 | The text is a general review of treatment guidelines for distal ulcerative colitis and mentions tixocortol only as a class of topically acting corticosteroids without providing any specific pharmacodynamic data, exposure-response analysis, or numeric parameters. |
 | PGx | Ardizzone_2002 | not_relevant | 0 | 0 | The paper is a general review of ulcerative colitis therapies and mentions tixocortol pivalate only in the context of adverse event profiles, without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| popPK | Frankild_2001 | irrelevant | 0 | 0 | The paper describes a contact allergy study (GPMT) and does not report any pharmacokinetic parameters for tixocortol. |
+| popPK | Frankild_2001 | irrelevant | 0 | 0 | The study is a dermatological contact allergy test (GPMT) in guinea pigs and does not report any pharmacokinetic parameters. |
 | PD | Frankild_2001 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response relationship in a contact allergy model (GPMT) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve. |
-| popPK | Isaksson_2000 | irrelevant | 0 | 0 | The paper is a patch-testing study investigating allergic cross-reactivity and dose-response relationships, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Isaksson_2000 | irrelevant | 0 | 0 | The study is a patch-testing immunology study investigating cross-reactivity and dose-response in allergic patients, not a pharmacokinetic study. |
 | PD | Isaksson_2000 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response pattern in patch testing (allergy) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for tixocortol. |
 | popPK | Karp_1988 | irrelevant | 0 | 0 | The text is a brief news summary of clinical trials for enemas and contains no pharmacokinetic data or quantitative disposition parameters for tixocortol. |
 | PD | Karp_1988 | not_relevant | 1 | 0 | The text is a brief review mentioning tixocortol as a new enema treatment but provides no pharmacokinetic data, concentration-effect curves, or numeric PD parameters. |

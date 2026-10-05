@@ -8,11 +8,17 @@
 - **molar mass:** 365.477 g/mol (C22H27N3O2) — DrugBank
 - **groups:** investigational
 
+## About
+
+Caroverine is a calcium channel blocker and excitatory amino acid antagonist classified as a drug for functional gastrointestinal disorders. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5045575](https://www.wikidata.org/wiki/Q5045575) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:31 | 2:38 | 0/0/0 | 0/0/0 | 0/0/0 | 6,989/600 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 12:36 | 0:08 | 0/0/0 | 0/0/0 | 0/0/0 | 3,059/111 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -46,15 +52,15 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chen_2003.pdf` | Chen Z et al., Pharmacokinetics of caroverine in the i…, Audiology & neuro-otology (2003) | popPK | 8 | [10.1159/000067893](https://doi.org/10.1159/000067893) | [12566692](https://pubmed.ncbi.nlm.nih.gov/12566692) | The study investigates the pharmacokinetics of caroverine in guinea pigs, but the provided evidence contains only qualitative descriptions of concentration trends without any specific numeric parameter values. |
+| `Chen_2003.pdf` | Chen Z et al., Pharmacokinetics of caroverine in the i…, Audiology & neuro-otology (2003) | popPK | 9 | [10.1159/000067893](https://doi.org/10.1159/000067893) | [12566692](https://pubmed.ncbi.nlm.nih.gov/12566692) | The study reports pharmacokinetics of caroverine in guinea pigs, but the provided evidence contains only qualitative descriptions of concentration levels without specific numeric parameter values (CL, V, t1/2, etc.). |
 
-<sub>queue written 2026-09-18T08:31:01.523324+00:00</sub>
+<sub>queue written 2026-10-04T12:36:35.751824+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chen_2003 | relevant | 8 | 0 | The study investigates the pharmacokinetics of caroverine in guinea pigs, but the provided evidence contains only qualitative descriptions of concentration trends without any specific numeric parameter values. |
+| popPK | Chen_2003 | relevant | 9 | 0 | The study reports pharmacokinetics of caroverine in guinea pigs, but the provided evidence contains only qualitative descriptions of concentration levels without specific numeric parameter values (CL, V, t1/2, etc.). |
 | popPK | Haymerle_2015 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic/cytotoxicity assessment of caroverine in cell lines and does not report any pharmacokinetic parameters. |
 | popPK | Raza_2018 | irrelevant | 0 | 0 | The paper describes a spectrophotometric analytical method for quantifying caroverine in formulations, not a pharmacokinetic study. |
 | PD | Raza_2018 | not_relevant | 0 | 0 | The paper describes a spectrophotometric analytical method for quantifying caroverine in pharmaceutical formulations and contains no pharmacodynamic, exposure-response, or dose-response data. |

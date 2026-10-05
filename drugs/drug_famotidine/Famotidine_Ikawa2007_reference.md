@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;famotidine&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/&quot;},{&quot;label&quot;:&quot;Ikawa_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ikawa_2007_DpH&quot;,&quot;label&quot;:&quot;Ikawa_2007 \u00b7 DpH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/pd_Ikawa_2007_DpH.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # famotidine — `Famotidine_Ikawa2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,11 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 11.8, the second reading 12.97; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 133.9, the second reading 133.9; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:59.645938+00:00) predates the upstream re-run (2026-10-04 09:00:06.782056+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `lafutidine`, measured `famotidine`.
 
@@ -30,7 +32,7 @@ Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmac
   ·  DOI: [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003)
 
 ## Model component
-<dbs-pgx drug="famotidine" model-id="Famotidine_Ikawa2007_reference" status="curated_candidate" stale="false" population="healthy subjects" measured-compound="famotidine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="famotidine" model-id="Famotidine_Ikawa2007_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="famotidine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -42,8 +44,8 @@ Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmac
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 11.8 | l/h | 3.277777777777778e-06 | L/h | not captured | review (0.7) | Ikawa_2007:review | — | not captured |
 | Vd/F | `Q76` · V/F | 172.0 | l | 0.17200000000000001 | L | not captured | review (0.7) | Ikawa_2007:review | — | not captured |
-| absorption lag time | `Q83` · tlag | 0.745 | h | 2682.0 | h | not captured | review (0.7) | Ikawa_2007:review | — | not captured |
 | k a (1/h) | `Q49` · kabs | 0.956 | 1/h | 0.00026555555555555555 | 1/h | not captured | review (0.7) | Ikawa_2007:review | — | not captured |
+| absorption lag time | `Q83` · tlag | 0.745 | h | 2682.0 | h | not captured | review (0.7) | Ikawa_2007:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -66,20 +68,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.385 (5/13 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q27]` | 11.8 | 12.97 | mismatch |
-| `gpt-oss:120b` | `values[Q320]` | 7.2 | 3.686 | mismatch |
-| `gpt-oss:120b` | `values[Q321]` | 26.5 | 40.68 | mismatch |
-| `gpt-oss:120b` | `values[Q325]` | 11.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q321]` | 26.5 | 26.5 | mismatch |
 | `gpt-oss:120b` | `values[Q326]` | 0.316 | 0.316 | mismatch |
+| `gpt-oss:120b` | `values[Q32]` | 133.9 | 133.9 | mismatch |
 | `gpt-oss:120b` | `values[Q47]` | 0.329 | 0.329 | mismatch |
-| `gpt-oss:120b` | `values[Q49]` | 0.956 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q76]` | 172 | 42.46 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | 1.844 | 1.844 | mismatch |
 
 </details>
 
@@ -138,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_modelica.zip" download>Famotidine_Ikawa2007_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_fmi.zip" download>Famotidine_Ikawa2007_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_matlab.zip" download>Famotidine_Ikawa2007_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_matlab.zip" download>Famotidine_Ikawa2007_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_matlab_simbio.zip" download>Famotidine_Ikawa2007_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_sbml.zip" download>Famotidine_Ikawa2007_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_cellml.zip" download>Famotidine_Ikawa2007_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -149,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.956 /h, lag 44.7 min, F 1). Dose in the paper: 10 mg.
+**Administration: oral** — 40 mg, single dose, first-order absorption (ka 0.956 /h, lag 44.7 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 40 mg oral (A02BA03) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_sim_controls.json"></dbs-fmusim>
 
@@ -158,4 +157,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 04:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 09:00 UTC</sub>

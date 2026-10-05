@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Atazanavir (formerly known as BMS-232632) is an antiretroviral drug of the protease inhibitor (PI) class. Like other antiretrovirals, it is used to treat infection of human immunodeficiency virus (HIV). Atazanavir is distinguished from other PIs in that it can be given once daily (rather than requiring multiple doses per day) and has lesser effects on the patient's lipid profile (the amounts of cholesterol and other fatty substances in the blood). Like other protease inhibitors, it is used only in combination with other HIV medications. The U.S. Food and Drug Administration (FDA) approved atazanavir on June 20, 2003.
+Atazanavir is an antiviral protease inhibitor used to treat HIV infections. It is an approved medicine, authorised in the European Union, and appears on the WHO essential medicines list, so it is used widely.
 
-**Indication.** Atazanavir is indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection in adults and pediatric patients 3 months of age and older weighing at least 5kg.[L37604] Atazanavir is also indicated in combination with [cobicistat] and other antiretrovirals for the treatment of HIV-1 infection in adults and pediatric patients weighing at least 35kg.[L37599]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423467](https://www.wikidata.org/wiki/Q423467) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -75,8 +75,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor/metabolism | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor/substrate, `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` inhibitor/metabolism, `CYP3A7` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` inhibitor/metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `CYP3A5` inhibitor/metabolism, `UGT1A1` inhibitor/metabolism | DrugBank actor |
-| excretion | bile duct | — | prose |
-| excretion | kidney | — | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: NR1I2 (metabolism).</sub>

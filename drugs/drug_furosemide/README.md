@@ -10,17 +10,9 @@
 
 ## About
 
-**Description.** Furosemide is a potent loop diuretic that acts on the kidneys to ultimately increase water loss from the body. It is an anthranilic acid derivative.[L7958] Furosemide is used for edema secondary to various clinical conditions, such as congestive heart failure exacerbation, liver failure, renal failure, and high blood pressure.[L7961] It mainly works by inhibiting electrolyte reabsorption from the kidneys and enhancing the excretion of water from the body. Furosemide has a fast onset and short duration of action and has been used safely and effectively in both pediatric and adult patients.[A182495] The use of furosemide is particularly beneficial in clinical settings that require a drug with a higher diuretic potential. In addition to oral formulations, the solution for intravenous and intramuscular administration is also available, which is typically limited to patients who are unable to take oral medication or for patients in emergency clinical situations.[L7958]
+Furosemide is a loop diuretic used to treat fluid build-up caused by heart failure, liver cirrhosis, or kidney disease, and is also used for high blood pressure. It is widely used in human medicine, appears on the WHO essential medicines list, and is also approved for veterinary use.
 
-**Indication.** Furosemide is indicated for the treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome, in adults and pediatric patients.[L7958, L54151] 
-
-Oral furosemide is indicated alone for the management of mild to moderate hypertension or severe hypertension in combination with other antihypertensive medications.[L9659]
-
-Intravenous furosemide is indicated as adjunctive therapy in acute pulmonary edema when a rapid onset of diuresis is desired.[L7958]
-
-Subcutaneous furosemide is indicated for the treatment of congestion due to fluid overload in adults with NYHA Class II/III chronic heart failure. This drug formulation is not indicated for emergency situations or in patients with acute pulmonary edema.[L43408]
-
-Subcutaneous furosemide is also indicated for the treatment of edema in pediatric patients weighing 43 kg and above.[L54853]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q388801](https://www.wikidata.org/wiki/Q388801) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -55,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | kidney | <sub>“…The metabolism of furosemide occurs mainly in the kidneys…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
 | excretion | kidney | `ABCC2` inhibitor, `SLC22A6` inducer/inhibitor, `SLC22A8` inhibitor | DrugBank actor |

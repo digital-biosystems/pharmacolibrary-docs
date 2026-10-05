@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atropine_Strm2021_reference",
+ "molar_masses": {
+  "central.C": 0.2893694
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.14,
+  1.0
+ ],
+ "parameters": {
+  "Cl": 5.291666666666666e-07,
+  "F": 0.685,
+  "MM": 0.2893694,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000646,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.4e-07,
+  "k12": 1.5215735416973808e-05,
+  "k21": 8.562164703279685e-06,
+  "ka": 0.0016522222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1558.316633266533
+ },
+ "reference_peaks": {
+  "central.C": 1.4089501393282624e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Felodipine is a long-acting 1,4-dihydropyridine calcium channel blocker (CCB)b. It acts primarily on vascular smooth muscle cells by stabilizing voltage-gated L-type calcium channels in their inactive conformation. By inhibiting the influx of calcium in smooth muscle cells, felodipine prevents calcium-dependent myocyte contraction and vasoconstriction. Felodipine is the most potent CCB in use and is unique in that it exhibits fluorescent activity. In addition to binding to L-type calcium channels, felodipine binds to a number of calcium-binding proteins, exhibits competitive antagonism of the mineralcorticoid receptor, inhibits the activity of calmodulin-dependent cyclic nucleotide phosphodiesterase, and blocks calcium influx through voltage-gated T-type calcium channels. Felodipine is used to treat mild to moderate essential hypertension.
+Felodipine is a calcium channel blocker used to treat high blood pressure and angina. It is an approved medicine, widely used for these cardiovascular conditions, and is also available in combination products with beta blockers or ACE inhibitors.
 
-**Indication.** For the treatment of mild to moderate essential hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420644](https://www.wikidata.org/wiki/Q420644) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…decreased urinary excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1H (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNA2D2 (inhibitor), CACNB2 (inhibitor), CALM1 (other), NR3C2 (target), PDE1A (inhibitor), PDE1B (inhibitor), TNNC1 (other), TNNC2 (other).</sub>

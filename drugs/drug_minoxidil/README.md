@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A potent direct-acting peripheral vasodilator (vasodilator agents) that reduces peripheral resistance and produces a fall in blood pressure.
+Minoxidil is a vasodilator used to treat high blood pressure, including severe hypertension, and applied to the skin to treat hair loss (alopecia). It remains in use: as an oral antihypertensive and as a topical dermatological preparation, and is approved though it carries a boxed warning.
 
-**Indication.** For the treatment of severe hypertension and in the topical treatment (regrowth) of androgenic alopecia in males and females and stabilisation of hair loss in patients with androgenic alopecia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424165](https://www.wikidata.org/wiki/Q424165) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…at least 90% absorbed from the GI tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
 

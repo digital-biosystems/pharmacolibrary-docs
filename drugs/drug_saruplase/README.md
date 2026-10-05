@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13646](https://go.drugbank.com/drugs/DB13646) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Saruplase is a fibrinolytic (clot-dissolving) enzyme classified as an antithrombotic agent, studied for dissolving blood clots. It is considered investigational and is not an approved medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7424731](https://www.wikidata.org/wiki/Q7424731) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

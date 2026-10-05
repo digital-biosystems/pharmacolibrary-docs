@@ -4,7 +4,7 @@
 
 # palonosetron — `Palonosetron_Li2026_palonosetron`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,38 +12,40 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
-**The record was rejected because rolapitant, the metabolite formed by hydrolysis of fosrolapitant, has no path from the administered dose, and one reported unit could not be expressed in SI terms.**
+**The record was quarantined because fosrolapitant's clearance and volume of distribution were left at library defaults, and the topology (single compartment) does not match the required parent–metabolite structure.**
 
-The model structure links fosrolapitant to rolapitant through a hydrolysis relation, but rolapitant is an unlinked metabolite with no connection from the dose, so the structure contains an orphan species. In addition, one of the reported units (for parameters such as Cmax 0.67 ng/mL, AUC∞ 34.89 h × ng/mL, t1/2z 81.80 h, V 839.62 L, or CL 7.92 L/h) could not be converted to SI, so that parameter was carried without an SI value. The record also lists palonosetron as the drug while the measured compound is fosrolapitant, a mismatch consistent with the structural problem. Extracted — palonosetron: Cmax 0.67 ng/mL, AUCt 31.2 h × ng/mL, AUC∞ 34.9 h × ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
+All six extracted parameters (Cmax 0.67 ng/mL, AUCt 31.18 h*ng/mL, AUC∞ 34.89 h*ng/mL, t1/2z 81.80 h, V 839.62 L, CL 7.92 L/h) describe fosrolapitant, while palonosetron's clearance and volume of distribution had no value, so placeholders stood in and the model was held back rather than published with invented numbers. The topology check expected a parent–metabolite structure but obtained a one-compartment model, and the deviations check flagged the defaulted clearance and volume of distribution as not acceptable. A second reader also disagreed on the dose compound, the primary analyte, and an additional fosrolapitant-to-m19 metabolism link not present in this record. Extracted — fosrolapitant: Cmax 0.67 ng/mL, AUCt 31.2 h*ng/mL, AUC∞ 34.9 h*ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `Ritanine`, measured `fosrolapitant`.
+> **Dose compound ≠ measured compound:** dosed `Ritanine (fosrolapitant and palonosetron)`, measured `fosrolapitant and rolapitant`.
 
 ## Citation
 Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170)
 
 ## Model component
-<dbs-pgx drug="palonosetron" model-id="Palonosetron_Li2026_palonosetron" status="rejected" stale="false" population="Chinese subjects with moderate hepatic impairment and healthy controls" measured-compound="fosrolapitant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="palonosetron" model-id="Palonosetron_Li2026_palonosetron" status="model_quarantined" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="fosrolapitant and rolapitant" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cmax (ng/mL) | `Q32` · Cmax | 0.67 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | T2:row2:col5, T2:row2:col6 | — | not captured |
-| AUC0-t (h × ng/mL) | `Q19` · AUCt | 31.18 | h × ng/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | T2:row4:col5, T2:row4:col6 | — | not captured |
-| AUC0−∞ (h × ng/mL) | `Q17` · AUC∞ | 34.89 | h × ng/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | T2:row5:col5, T2:row5:col6 | — | not captured |
+| AUC0-t (h × ng/mL) | `Q19` · AUCt | 31.18 | h*ng/mL | not captured | h*ng/mL | not captured | exact (1.0) | T2:row4:col5, T2:row4:col6 | — | not captured |
+| AUC0−∞ (h × ng/mL) | `Q17` · AUC∞ | 34.89 | h*ng/mL | not captured | h*ng/mL | not captured | exact (1.0) | T2:row5:col5, T2:row5:col6 | — | not captured |
 | t1/2 (hour) | `Q57` · t1/2z | 81.80 | hour | 294480.0 | [h] | not captured | exact (1.0) | T2:row6:col5, T2:row6:col6 | — | not captured |
 | V (L) | `Q61` · V | 839.62 | L | 0.83962 | [l] | not captured | exact (1.0) | T2:row7:col5, T2:row7:col6 | — | not captured |
 | CL (L/h) | `Q22` · CL | 7.92 | L/h | 2.2e-06 | [l] / [h] | not captured | exact (1.0) | T2:row8:col5, T2:row8:col6 | — | not captured |
@@ -58,14 +60,46 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 **Interpretation flags:**
 - unit_dimension_unknown: 'h × ng/mL' (AUCt)
 - unit_dimension_unknown: 'h × ng/mL' (AUC∞)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fosrolapitant
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- implicit units: 'AUC0-t (h × ng/mL)' → h*ng/mL (from the paper text: "The paper text explicitly states: 'the geometric mean AUC0-t values of palonosetron were 29.59 and 16.69 hng/mL'.")
+- implicit units: 'AUC0−∞ (h × ng/mL)' → h*ng/mL (from the paper text: "The paper text explicitly states: 'AUC0-t was approximately 30 hng/mL' and discusses AUC0-∞ in the same context with con")
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fosrolapitant and rolapitant
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
 - population split: 'palonosetron' subgroup of Li_2026 (paper reports 3 populations: healthy control, moderate hepatic impairment, palonosetron)
-- review gap-fill skipped: this record measures 'fosrolapitant', not palonosetron — the review values are the parent's
+- row roles (LLM): model_class=noncompartmental; 8/8 row label(s) assigned, 0 linked by role; re-tagged rolapitant→fosrolapitant ×8, parent→fosrolapitant ×16, parent→rolapitant ×4
+- molar mass: no plausible PubChem entry for 'fosrolapitant and rolapitant' ('no full name in the paper') — left in mass units
+- molar mass: none found for 'fosrolapitant and rolapitant' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'fosrolapitant and rolapitant', not palonosetron — the review values are the parent's
+
+**Extraction notes:**
+- companion parameter table S1 transcribed (8 record(s))
+- LLM selected parameter table(s) 2, S1, S2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
+
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['fosrolapitant', 'm19', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | Ritanine (fosrolapitant and palonosetron) | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | fosrolapitant and rolapitant | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -74,16 +108,39 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['T2:row5:col5', 'T2:row5:col6'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col5', 'T2:row4:col6'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row8:col5', 'T2:row8:col6'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['T2:row2:col5', 'T2:row2:col6'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T2:row6:col5', 'T2:row6:col6'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row7:col5', 'T2:row7:col6'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | h × ng/mL | not captured | not captured | ['T2:row5:col5', 'T2:row5:col6'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | h × ng/mL | not captured | not captured | ['T2:row4:col5', 'T2:row4:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.92 | not captured | not captured | ['T2:row8:col5', 'T2:row8:col6'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.92 L/h | not captured | not captured | ['T2:row8:col5', 'T2:row8:col6'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 840 L | not captured | not captured | ['T2:row7:col5', 'T2:row7:col6'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_shared_parameters | not captured | pass | 6 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 1.27 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.61 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.74 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.42 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.64 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 81.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 44.32 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.00–1.25 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 240 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 192 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -93,13 +150,25 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_palonosetron/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2026` / `Li_2026::palonosetron`)
+- model: `../../../knowledgebase/drugs/drug_palonosetron/models/modelica/_needs_review/Palonosetron_Li2026_palonosetron.mo`
+- deviation: `../../../knowledgebase/drugs/drug_palonosetron/models/modelica/_needs_review/Palonosetron_Li2026_palonosetron.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab.zip" download>Palonosetron_Li2026_palonosetron_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab_simbio.zip" download>Palonosetron_Li2026_palonosetron_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_sbml.zip" download>Palonosetron_Li2026_palonosetron_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_cellml.zip" download>Palonosetron_Li2026_palonosetron_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -108,4 +177,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 13:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 14:23 UTC</sub>

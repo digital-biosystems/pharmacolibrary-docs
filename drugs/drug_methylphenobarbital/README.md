@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A barbiturate that is metabolized to phenobarbital. It has been used for similar purposes, especially in epilepsy, but there is no evidence mephobarbital offers any advantage over phenobarbital.
+Methylphenobarbital (mephobarbital) is a barbiturate anticonvulsant used to treat epilepsy, including tonic–clonic and childhood absence seizures, and has also been used for anxiety and as a sedative. It remains an approved medicine, though it is not authorised in the European Union and is now only rarely used.
 
-**Indication.** For the relief of anxiety, tension, and apprehension, also used as an anticonvulsant for the treatment of epilepsy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411697](https://www.wikidata.org/wiki/Q411697) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CHRNA4 (target), CHRNA7 (target), GABRA1 (potentiator), GABRA2 (potentiator), GABRA3 (potentiator), GABRA4 (potentiator), GABRA5 (potentiator), GABRA6 (potentiator), GRIA2 (target), GRIK2 (target), NR1I2 (activator).</sub>

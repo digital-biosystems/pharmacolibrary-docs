@@ -64,7 +64,7 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
 | `adme_drug` | every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k) |
 | `adme_actor` | DrugBank enzymes / transporters / carriers / targets with the drug's **role** (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI) |
 | `adme_site` | the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes) |
-| `adme_text` | the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance"), with the phrase that states it; organ keywords where the paragraph has not been read (`pk_knowledge_scripts.adme_text_llm`) |
+| `adme_text` | the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance") — the site only, not DrugBank's wording; organ keywords where the paragraph has not been read (`pk_knowledge_scripts.adme_text_llm`) |
 
 Evidence tiers, strongest first: a curated DrugBank actor mapped through the tissue table (3);
 a gene a paper's pharmacogenomic record ties to this drug (2); a site the prose states (1).

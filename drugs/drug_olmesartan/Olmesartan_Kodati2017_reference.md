@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;Olmesartan&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/&quot;},{&quot;label&quot;:&quot;Kodati_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Olmesartan — `Olmesartan_Kodati2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The olmesartan record (CL/F 0.31565 L/h, V/F 44.5162 L, ka 2.0 h−1) was held back because the builder assumed F=1, Fm=1 and no molar correction, and left the lag time at a default instead of an estimate.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The apparent-parameter assumption (F=1, Fm=1, no molar correction) was judged not acceptable, and Tlag was defaulted rather than explicitly estimated. The failed check could not be resolved deterministically and required adjudication, so the verdict is needs_review. Extracted — olmesartan: CL/F 0.316 L/h, V/F 44.5 L, kabs 2 h−1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `olmesartan medoxomil`, measured `olmesartan`.
 
@@ -30,7 +30,7 @@ Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of 
   ·  DOI: [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0)
 
 ## Model component
-<dbs-pgx drug="Olmesartan" model-id="Olmesartan_Kodati2017_reference" status="curated_candidate" stale="false" population="Indian patients with hypertension" measured-compound="olmesartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Olmesartan" model-id="Olmesartan_Kodati2017_reference" status="needs_review" stale="false" population="Indian patients with hypertension" measured-compound="olmesartan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,6 +38,8 @@ Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 0.31565 | L/h | 8.768055555555556e-08 | [l] / [h] | not captured | exact (1.0) | Kodati_2017:abstract | — | not captured |
@@ -95,7 +97,7 @@ Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of 
 | T3_output_variable | not captured | pass | C_central (measured=olmesartan) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -116,8 +118,8 @@ Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olmesartan/Olmesartan_Kodati2017_reference/Olmesartan_Kodati2017_reference_modelica.zip" download>Olmesartan_Kodati2017_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olmesartan/Olmesartan_Kodati2017_reference/Olmesartan_Kodati2017_reference_modelica.zip" download>Olmesartan_Kodati2017_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_olmesartan/Olmesartan_Kodati2017_reference/Olmesartan_Kodati2017_reference_fmi.zip" download>Olmesartan_Kodati2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Kodati2017_reference/Olmesartan_Kodati2017_reference_matlab.zip" download>Olmesartan_Kodati2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Kodati2017_reference/Olmesartan_Kodati2017_reference_matlab_simbio.zip" download>Olmesartan_Kodati2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Kodati2017_reference/Olmesartan_Kodati2017_reference_sbml.zip" download>Olmesartan_Kodati2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

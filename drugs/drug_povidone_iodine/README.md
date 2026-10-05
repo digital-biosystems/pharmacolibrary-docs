@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Povidone-iodine is a stable chemical complex of polyvinylpyrrolidone (povidone, PVP) and elemental iodine. It contains from 9.0% to 12.0% available iodine, calculated on a dry basis. This unique complex was discovered in 1955 at the Industrial Toxicology Laboratories in Philadelphia by H. A. Shelanski and M. V. Shelanski. During in vitro testing to demonstrate anti-bacterial activity it was found that the complex was less toxic in mice than tincture of iodine. Human clinical trials showed the product to be superior to other iodine formulations. Povidone-iodine was immediately marketed, and has since become the universally preferred iodine antiseptic.
+Povidone-iodine is an iodine-based antiseptic used to disinfect the skin and prevent infection in wounds and other sites. It is widely used in many forms, including skin antiseptics, medicated dressings, shampoos, gynecological, throat, and eye preparations, and is listed as an essential medicine by the WHO.
 
-**Indication.** For topical application in the treatment and prevention of infection in wounds.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q241516](https://www.wikidata.org/wiki/Q241516) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -40,7 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | skin | <sub>“…intended for topical application…”</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

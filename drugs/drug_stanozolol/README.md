@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Stanozolol is a synthetic anabolic steroid with therapeutic uses in treating hereditary angioedema. Stanozolol is derived from testosterone, and has been abused by several high profile professional athletes.
+Stanozolol is an anabolic steroid used to promote growth and treat conditions involving protein loss, such as hereditary angioedema. It is approved for human use and also approved for veterinary use, though it is controlled in many countries because of misuse in sports.
 
-**Indication.** Stanozolol is a synthetic anabolic steroid with therapeutic uses in treating C1-inhibitor deficient hereditary angioedema. C1-inhibitor is a protease that inhibits the complement system (part of the innate immune system), a biochemical chain of reactions which assists the body in removing pathogens from the body. Stanozolol may help control attacks of hereditary angioedema.  Stanozolol can be administered orally or intramuscularly.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417219](https://www.wikidata.org/wiki/Q417219) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

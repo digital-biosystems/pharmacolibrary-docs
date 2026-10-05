@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Velaglucerase alfa is a gene-activated human recombinant glucocerebrosidase used for the treatment of Type 1 Gaucher disease, caused by a deficiency of the lysosomal enzyme glucocerebrosidase. Additionally, Velaglucerase alfa has also been investigated for use in Type 3 Gaucher disease.
+Velaglucerase alfa is an enzyme replacement medicine used to treat Gaucher's disease. It is approved and authorised in the European Union, where it is used for this rare condition.
 
-**Indication.** Velaglucerase alfa is a hydrolytic lysosomal glucocerebroside-specific enzyme indicated for long-term enzyme replacement therapy for pediatric and adult patients with type 1 Gaucher disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3492447](https://www.wikidata.org/wiki/Q3492447) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

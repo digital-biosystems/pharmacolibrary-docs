@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13658](https://go.drugbank.com/drugs/DB13658) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Hemoglobin raffimer is a hemoglobin-based blood substitute developed as an oxygen-carrying alternative to transfusion. It remains investigational and has not reached routine clinical use.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

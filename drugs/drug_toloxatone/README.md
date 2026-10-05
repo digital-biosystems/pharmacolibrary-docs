@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Toloxatone is an antidepressant agent, the first ever use of which was in France, 1984. It acts as a selective  and reversible inhibitor of monoamine oxidase-A (MOA) [L1388].
+Toloxatone is a monoamine oxidase A inhibitor that has been used as an antidepressant. It is currently listed only as an experimental drug, suggesting it is not an established marketed medicine today.
 
-**Indication.** For the treatment of major depressive disorder.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3530618](https://www.wikidata.org/wiki/Q3530618) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `MAOA` inhibitor/target | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
 | metabolism | small intestine | `MAOA` inhibitor/target | DrugBank actor |
-| excretion | kidney | <sub>“…1% of drug is excreted unchanged in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…Mainly hepatic…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

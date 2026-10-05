@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Agalsidase beta is a recombinant human α-galactosidase A similar to [agalsidase alfa]. While patients generally do not experience a clinically significant difference in outcomes between the two drugs, some patients may experience greater benefit with agalsidase beta.[A220228,A220233] Use of agalsidase beta has decreased in Europe, in favor of agalsidase alfa, after a contamination event in 2009.[A220343]
+Agalsidase beta is an enzyme therapy used to treat Fabry disease, a lipid storage disorder. It is authorised in the European Union and remains in clinical use.
 
-Agalsidase beta was granted FDA approval on 24 April 2003.[L16383]
-
-**Indication.** Agalsidase beta is indicated in the treatment of Fabry disease.[L16383]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801779](https://www.wikidata.org/wiki/Q20801779) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,7 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Globotriaosylceramide (metabolizer), Globotriaosylceramide (target), M6PR (substrate).</sub>
 

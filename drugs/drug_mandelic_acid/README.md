@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Mandelic acid is an approved aromatic, alpha hydroxy acid [L5458]. Mandelic acid is used as an ingredient in cosmetics and drug products applied topically.
+Mandelic acid is an antibacterial agent that has been used, notably as a urinary antiseptic and in irrigating solutions, to treat or prevent bacterial infections. It remains an approved medicine and is used mainly as an ingredient in antibacterial irrigating solutions and other antibacterial preparations, rather than as a widely prescribed systemic antibiotic.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72488153](https://www.wikidata.org/wiki/Q72488153) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

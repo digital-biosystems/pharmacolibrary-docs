@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Digoxin is one of the oldest cardiovascular medications used today.[A178225] It is a common agent used to manage atrial fibrillation and the symptoms of heart failure.[A178234] Digoxin is classified as a cardiac glycoside and was initially approved by the FDA in 1954.[L9143]
+Digoxin is a plant-derived cardiac glycoside used for heart conditions such as atrial fibrillation, other arrhythmias, and congestive heart failure. It remains an approved medicine, is listed among WHO essential medicines, and is widely used for these heart conditions.
 
-This drug originates from the foxglove plant, also known as the _Digitalis_ plant[T610], studied by William Withering, an English physician and botanist in the 1780s.[A178237,A178240] Prior to this, a Welsh family, historically referred to as the _Physicians of Myddvai_, formulated drugs from this plant. They were one of the first to prescribe cardiac glycosides, according to ancient literature dating as early as the 1250s.[A178240]
-
-**Indication.** Digoxin is indicated in the following conditions: 1) For the treatment of mild to moderate heart failure in adult patients.[L9143] 2) To increase myocardial contraction in children diagnosed with heart failure.[L9143] 3) To maintain control ventricular rate in adult patients diagnosed with chronic atrial fibrillation.[L9143]
-
-In adults with heart failure, when it is clinically possible, digoxin should be administered in conjunction with a diuretic and an angiotensin-converting enzyme (ACE) inhibitor for optimum effects.[L9143]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422222](https://www.wikidata.org/wiki/Q422222) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -96,10 +92,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate/transport, `SLCO1A2` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
-| metabolism | kidney | <sub>“…Several urinary metabolites of digoxin exist…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `SLCO1B1` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Biliary excretion appears to be of much less importance than renal excretion…”</sub> | prose |
-| excretion | kidney | <sub>“…50-70% of the dose is measured excreted as unchanged digoxin in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ATP1A1 (inhibitor), ATP1A2 (inhibitor), ATP1A3 (inhibitor), ATP1B1 (inhibitor), ATP1B2 (inhibitor), ATP1B3 (inhibitor), CYP11A1 (inhibitor), SLC51A (substrate), SLC51B (substrate), SLCO4C1 (modulator), SLCO4C1 (substrate).</sub>

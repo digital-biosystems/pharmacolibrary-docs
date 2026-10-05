@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Angiotensin II is under investigation for the treatment of Sepsis, Septic Shock, Diabetes Mellitus, and Acute Renal Failure. Angiotensin II has been investigated for the treatment, basic science, and diagnostic of Hypertension, Renin Angiotensin System, and Idiopathic Membranous Nephropathy.
+Angiotensin II, a peptide hormone, is used as a cardiac stimulant to raise blood pressure in hypotension and shock. It is authorised in the European Union, but its use is limited to a single approved product, mainly in hospital settings for severe low blood pressure.
 
-As of December 21, 2017 the FDA approved La Jolla Pharmaceutical's Giapreza (angiotensin II) Injection for Intravenouse Infusion for the indication of acting as a vasoconstrictor to increase blood pressure in adults with septic or other distributive shock. The novelty of the medication lies in the fact that it is the first and only use of synthetic human angiotensin II to help maintain body blood pressure. 
-
-Shock is the inability to maintain blood flow to vital tissues and the potential resultant organ failure and death within hours, no matter young or o ld. As distributive shock is the most common type of shock in the inpatient setting and affects up to one third of patients in the intensive care unit, the FDA determined that there is a need for treatment options for critically ill hypotensive patients who do not adequately respond to currently available therapies.
-
-**Indication.** Angiotensin II is a vasoconstrictor indicated for increasing blood pressure in adults with septic or other distributive shock [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412999](https://www.wikidata.org/wiki/Q412999) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -122,11 +118,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
-| metabolism | blood | <sub>“…in plasma, erythrocytes and many of the major organs…”</sub> | prose |
-| metabolism | kidney | <sub>“…i.e. intestine, kidney, liver and lung…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C9` safety_allele | paper PGx gene |
-| metabolism | lung | <sub>“…i.e. intestine, kidney, liver and lung…”</sub> | prose |
-| metabolism | small intestine | <sub>“…i.e. intestine, kidney, liver and lung…”</sub> | prose |
+| metabolism | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AGTR1 (target), AGTR2 (inhibitor).</sub>
 

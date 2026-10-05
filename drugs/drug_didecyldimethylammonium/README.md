@@ -7,6 +7,12 @@
 - **DrugBank:** [DB04221](https://go.drugbank.com/drugs/DB04221) · **PubChem:** not captured
 - **groups:** approved, investigational
 
+## About
+
+Didecyldimethylammonium is a quaternary ammonium compound used as an antiseptic and disinfectant for the skin. It is an approved topical antiseptic, used mainly in dermatological disinfectant products.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418930](https://www.wikidata.org/wiki/Q418930) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

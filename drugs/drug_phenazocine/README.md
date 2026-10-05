@@ -8,6 +8,12 @@
 - **molar mass:** 321.464 g/mol (C22H27NO) — DrugBank
 - **groups:** experimental
 
+## About
+
+Phenazocine is an opioid analgesic of the benzomorphan class, used for pain relief. It is currently regarded as an experimental drug and is not in widespread clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7181332](https://www.wikidata.org/wiki/Q7181332) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -4,7 +4,7 @@
 
 # paclitaxel — `Paclitaxel_He2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,34 +12,32 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
-
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The paclitaxel model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no source values and library placeholders were substituted, with one reported unit unconvertible to SI.**
+**CL and kabs have no unit.**
 
-Although the record lists paclitaxel parameters (CL 34.4 L/h, V2 176 L, Q 48.0 L/h, V3 855 L, kabs 0.724 1/h, Frel 0.895), the model builder defaulted F, Cl, Vd, ka and Tlag because they were not reported in the source, and the invented absorption (defaulted ka) was judged not acceptable. One reported unit could not be converted to SI units, so that parameter was carried without a usable numeric value. The covariate scenarios were not simulated — only the reference individual — and the second reader disagreed on the log-additive parameter, reading 0.208 where the record has none. Extracted — paclitaxel: CL 34.4, V2 176 L, Q 48 L/h, V3 855 L, kabs 0.724, Frel 0.895 proportional.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Frel), so that value has no SI equivalent. Extracted — paclitaxel: CL 34.4, V2 176 L, Q 48 L/h, V3 855 L, kabs 0.724, Frel 0.895 proportional.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of log additive: this record has none, the second reading 0.208. That field does not shape the model.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799)
 
 ## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="model_quarantined" stale="false" population="patients with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="needs_review" stale="false" population="patients with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -118,16 +116,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q64 | pass | volume within physiological range | 176 L | not captured | not captured | ['He_2022_table_p7_1:row2:col1', 'He_2022_table_p7_1:row2:col2', 'He_2022_table_p7_1:row2:col3'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -136,8 +124,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_paclitaxel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `He_2022` / `He_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_paclitaxel/models/modelica/_needs_review/Paclitaxel_He2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_paclitaxel/models/modelica/_needs_review/Paclitaxel_He2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

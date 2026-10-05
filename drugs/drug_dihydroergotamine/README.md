@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** A 9,10alpha-dihydro derivative of [ergotamine]. Dihydroergotamine is used as an abortive therapy for migraines.[L38469] Its use has largely been supplanted by triptans in current therapy due to the class's greater selectivity and more favourable side effect profile.
+Dihydroergotamine is an ergot alkaloid used to treat migraine and orthostatic hypotension. It is an approved medicine, though it carries a boxed warning, so its use requires caution.
 
-Recent improvements have been made in the design of intranasal delivery devices allowing for greater delivery of dihydroergotamine solution to the vasculature-rich upper nasal cavity.[A239569] The recently approved Precision Olfactory Delivery technology developed by Impel Neuropharma technology has correlated with an increase of 3-fold in Cmax and 4-fold in AUC despite the solution formulated at 75% of the strength of the existing intranasal product.
-
-**Indication.** Dihydroergotamine (DHE) in all formulations is indicated for the acute treatment of migraine with or without aura in adults.[L38459, L38464, L38469] As an injection, DHE is also indicated for the acute treatment of cluster headache episodes.[L38459]
-
-DHE is not indicated for migraine prevention or the management of hemiplegic or basilar migraine.[L38459, L38464, L38469]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421336](https://www.wikidata.org/wiki/Q421336) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -55,9 +51,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…followed by biliary excretion…”</sub> | prose |
-| excretion | kidney | <sub>“…6-7% of a single intramuscular dose is excreted in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…primarily eliminated through hepatic metabolism…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRB3 (target), DRD2 (target), DRD3 (target), DRD4 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR4 (target).</sub>
 

@@ -8,6 +8,12 @@
 - **molar mass:** 413.54 g/mol (C22H27N3O3S) — DrugBank
 - **groups:** experimental
 
+## About
+
+Ethacizine is an antiarrhythmic agent of the class Ic type, developed for the treatment of heart arrhythmia. It appears to remain experimental and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15408408](https://www.wikidata.org/wiki/Q15408408) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

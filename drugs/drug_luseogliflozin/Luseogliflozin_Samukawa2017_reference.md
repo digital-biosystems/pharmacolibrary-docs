@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;luseogliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/&quot;},{&quot;label&quot;:&quot;Samukawa_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Sasaki_2015_UGE&quot;,&quot;label&quot;:&quot;Sasaki_2015 \u00b7 UGE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/pd_Sasaki_2015_UGE.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # luseogliflozin — `Luseogliflozin_Samukawa2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:35.530291+00:00) predates the upstream re-run (2026-10-05 00:33:45.653736+00:00). Current validate status: `extracted`.
+
 ## Citation
 Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & pharmaceutical… (2017)
   ·  DOI: [10.1248/bpb.b16-00998](https://doi.org/10.1248/bpb.b16-00998)
 
 ## Model component
-<dbs-pgx drug="luseogliflozin" model-id="Luseogliflozin_Samukawa2017_reference" status="needs_review" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="luseogliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="luseogliflozin" model-id="Luseogliflozin_Samukawa2017_reference" status="extracted" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="luseogliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -36,8 +38,6 @@ Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & phar
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | oral clearance | `Q27` · CL/F | 2.78 | L/h | 7.722222222222222e-07 | L/h | not captured | exact (1.0) | Samukawa_2017:other_prose | — | not captured |
@@ -117,7 +117,7 @@ Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & phar
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_modelica.zip" download>Luseogliflozin_Samukawa2017_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_modelica.zip" download>Luseogliflozin_Samukawa2017_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_fmi.zip" download>Luseogliflozin_Samukawa2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_matlab.zip" download>Luseogliflozin_Samukawa2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_matlab_simbio.zip" download>Luseogliflozin_Samukawa2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -139,4 +139,4 @@ Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & phar
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 08:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:33 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;McCann_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Knebel2011_reference&quot;,&quot;label&quot;:&quot;Knebel_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pantoprazole — `Pantoprazole_McCann2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.353). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,18 +17,20 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The pantoprazole record was held back because bioavailability (F) was left at a library default instead of an estimate from McCann_2023, alongside unresolved value disagreements between readers.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 42, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+The pantoprazole model (CL 6.5 L/h, V 226.0 L, tlag 2.5 h, kabs 0.325 h⁻¹) uses a default placeholder for F rather than a value reported in the paper, so the simulated profile rests on unsupported bioavailability. A second reader also disagreed with several extracted values, e.g. 75 versus 0.67 and 66.3 versus null, indicating inconsistent extraction. The deviations check could not be resolved, so the record was marked needs_review. Extracted — pantoprazole: CL 6.5 L/h, V 226 L, tlag 2.5 h, kabs 0.325 h -1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q318: this record has none, the second reading 16; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2)
 
 ## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_McCann2023_reference" status="curated_candidate" stale="false" population="" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_McCann2023_reference" status="needs_review" stale="false" population="" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -36,6 +38,8 @@ McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacoki
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 6.5 | L/h | 1.8055555555555557e-06 | L/h | not captured | review (0.7) | McCann_2023:review | — | not captured |
@@ -64,18 +68,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.353 (6/17 fields) | 11 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q312]` | 42 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q318]` | not captured | 16 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q319]` | 0.75 | 0.75 | mismatch |
+| `gpt-oss:120b` | `values[Q325]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q37]` | not captured | 0.7 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q40]` | 75 | 0.67 | mismatch |
+| `gpt-oss:120b` | `values[Q44]` | 66.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q45]` | not captured | 17.6 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q46]` | 2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 0.325 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 24 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 66.3 | only_one_extracted |
 
 </details>
 
@@ -110,7 +119,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=pantoprazole) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_modelica.zip" download>Pantoprazole_McCann2023_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_modelica.zip" download>Pantoprazole_McCann2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_fmi.zip" download>Pantoprazole_McCann2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_matlab.zip" download>Pantoprazole_McCann2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference/Pantoprazole_McCann2023_reference_matlab_simbio.zip" download>Pantoprazole_McCann2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -153,4 +162,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 06:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 10:59 UTC</sub>

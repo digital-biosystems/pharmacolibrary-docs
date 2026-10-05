@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Tasosartan is a long-acting angiotensin II (AngII) receptor blocker. Its long duration of action has been attributed to its active metabolite enoltasosartan. It is used to treat patients with essential hypertension.
+Tasosartan is an angiotensin II receptor antagonist, a drug class used to lower blood pressure in hypertension. It remains experimental and does not appear to be an approved medicine in the European Union or elsewhere.
 
-**Indication.** Tasosartan is infrequently in the treatment of hypertension and heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1317131](https://www.wikidata.org/wiki/Q1317131) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Gretler2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,22 +19,20 @@
 
 ### Reviewer guidance
 
-**The codeine record was rejected because the reported clearance of 0.18 ml/h is physiologically implausible for a horse, indicating a unit or scale extraction error, and the record was built from the abstract only.**
+**No volume or clearance — not a compartmental population PK model.**
 
-The clearance value 0.18 ml/h for codeine falls far outside any physiological window for a Thoroughbred horse, which the review attributes to a unit or scale extraction error. The record is abstract-only, so the reported summary statistics (Cmax 270.7 ng/mL, tmax 0.438 h, elimination half-life 2.0 h, CL 0.18 ml/h) stood in for a fitted model. A second reader returned no values for Cmax, tmax, and elimination half-life, disagreeing with the extracted values of 270.7, 0.438, and 2.0 respectively. Extracted — codeine: Cmax 271 ng mL-1, tmax 0.438 hours, t1/2z 2 hours, CL 0.18 ml/h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 Independently confirmed by `gpt-oss:120b`.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:17.539609+00:00) predates the upstream re-run (2026-10-03 10:03:38.473081+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020)
   ·  DOI: [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="false" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

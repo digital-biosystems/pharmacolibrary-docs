@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Hutchinson-Gilford progeria syndrome (HGPS) is a rare autosomal dominant disorder estimated to affect approximately one in 20 million individuals resulting in adverse symptoms associated with premature ageing: skeletal dysplasia, joint contractures, atherosclerosis, myocardial fibrosis/dysfunction, scleroderma-like cutaneous effects, lipoatrophy, alopecia, and a severe failure to thrive; HGPS is uniformly fatal.[A224379, A224384, A224389, A224394, A224399] Mechanistically, HGPS is underpinned by a single heterozygous C-to-T mutation at position 1824 of the _LMNA_ gene, which results in the accumulation of an aberrant farnesylated form of lamin A called progerin in the inner nuclear membrane.[A224379, A224394] Lonafarnib is a farnesyl transferase (FTase) inhibitor (FTI), which reduces the farnesylation of numerous cellular proteins, including progerin; as progerin farnesylation is important for localization to the nuclear membrane, lonafarnib inhibits progerin accumulation and improves symptoms in HGPS patients.[A224379, A224414, A224419, L23414]
+Lonafarnib is a farnesyltransferase enzyme inhibitor used to treat progeria and certain laminopathies. It is an approved medicine, authorised in the European Union.
 
-Merck originally developed Lonafarnib and subsequently licensed it to Eiger Biopharmaceuticals Inc., which currently markets it under the trademark ZOKINVY™.[L23414, L23544] Lonafarnib was granted FDA approval on November 20, 2020, and is the first FDA-approved treatment for HGPS and other related progeroid laminopathies.[L23414, L23549]
-
-**Indication.** Lonafarnib is a farnesyltransferase inhibitor indicated in patients aged 12 months and older with a body surface area of at least 0.39 m<sup>2</sup> to reduce the risk of mortality associated with Hutchinson-Gilford progeria syndrome (HGPS). It is also indicated in this same population for the treatment of processing-deficient progeroid laminopathies that either involve a heterozygous _LMNA_ mutation resulting in the accumulation of a progerin-like protein or homozygous/compound heterozygous mutations in _ZMPSTE24_.[L23414]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3258910](https://www.wikidata.org/wiki/Q3258910) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -70,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` substrate, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | — | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor | DrugBank actor |
 | excretion | liver | `ABCC2` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |

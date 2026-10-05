@@ -8,17 +8,32 @@
 - **molar mass:** 321.334 g/mol (C11H23N5O6) — DrugBank
 - **groups:** investigational
 
+## About
+
+Arginine glutamate, a mixture of the amino acids arginine and glutamate, has been used in liver therapy as a lipotropic agent. It is considered investigational and does not appear to have an authorised marketing status in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q288119](https://www.wikidata.org/wiki/Q288119) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| arginine, glutamate | metabolite | 321.334 | C11H23N5O6 | PubChem | [165268](https://pubchem.ncbi.nlm.nih.gov/compound/165268) | Wang_2018 |
+| arginine_glutamate | metabolite | 321.334 | C11H23N5O6 | DrugBank | — | Wang_2018 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 14:29 | 1:13 | 0/0/1 | 0/0/0 | 0/0/0 | 21,459/1,166 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-04 14:49 | 2:17 | 0/0/1 | 0/0/0 | 0/0/0 | 17,038/5,228 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018_reference](drugs/drug_arginine_glutamate/ArginineGlutamate_Wang2018_reference.md) | — | 1-compartment (no model) | 1 | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018_reference](drugs/drug_arginine_glutamate/ArginineGlutamate_Wang2018_reference.md) | — | 1-compartment (no model) | 1 | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -30,7 +45,7 @@
 
 - **PubMed hits:** 12 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -39,19 +54,19 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wang_2018.pdf` | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | popPK | 10 | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) | [28925806](https://pubmed.ncbi.nlm.nih.gov/28925806) | The paper reports a population PK study for arginine glutamate with explicit numeric values for CL, Q, V1, V2, Vmax, Km, and V provided in the text. |
+| `Wang_2018.pdf` | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | popPK | 10 | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) | [28925806](https://pubmed.ncbi.nlm.nih.gov/28925806) | The study reports quantitative population pharmacokinetic parameters (CL, Q, V1, V2, Vmax, Km) for arginine and glutamate in healthy Chinese volunteers. |
 | `Wang_2002.pdf` | Wang H et al., Luffangulin, a novel ribosome inactivat…, Life sciences (2002) | pd | 4 | [10.1016/s0024-3205(01)01466-7](https://doi.org/10.1016/s0024-3205(01)01466-7) | [11853228](https://www.ncbi.nlm.nih.gov/pubmed/11853228) | metadata signals extractable PD data (IC50) |
 | `Wang_2003.pdf` | Wang HX et al., Isolation of cucurmoschin, a novel anti…, Peptides (2003) | pd | 4 | [10.1016/s0196-9781(03)00191-8](https://doi.org/10.1016/s0196-9781(03)00191-8) | [14499274](https://www.ncbi.nlm.nih.gov/pubmed/14499274) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T14:28:33.431814+00:00</sub>
+<sub>queue written 2026-10-04T14:47:15.709574+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cruz_2025 | irrelevant | 0 | 0 | The paper is a review on viscosity mitigation for high-concentration protein therapeutics (antibodies) and does not study arginine_glutamate or report any pharmacokinetic parameters for it. |
+| popPK | Cruz_2025 | irrelevant | 0 | 0 | The paper is a review on formulation development for protein therapeutics and does not report pharmacokinetic parameters for arginine_glutamate. |
 | PD | Cruz_2025 | not_relevant | 0 | 0 | The paper is a review on formulation development and viscosity mitigation for biotherapeutics, containing no pharmacodynamic or exposure-response analysis for arginine glutamate. |
-| popPK | Kernohan_2005 | irrelevant | 2 | 1 | The study reports only Cmax and Tmax for L-arginine (a component of the combination drug) and explicitly states that AUC and half-life were not calculated due to endogenous interference, failing to provide the quantitative disposition parameters (CL, V, ka) required for population PK modeling. |
+| popPK | Kernohan_2005 | irrelevant | 2 | 2 | The study reports only Cmax and Tmax for L-arginine (a component of the combination drug) and explicitly states that AUC and half-life were not calculated due to endogenous interference, failing to provide the quantitative disposition parameters (CL, V, ka) required for a PK model. |
 | PD | Kernohan_2005 | not_relevant | 2 | 1 | The study reports PK parameters and time-based hemodynamic changes (mean differences vs placebo) but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50) for arginine glutamate. |
 | PD | Parkash_2002 | not_relevant | 0 | 0 | The paper reports the isolation and characterization of a plant-derived peptide (luffacylin) and its biological activity (IC50), but does not report a pharmacokinetic or pharmacodynamic exposure-response relationship for the drug arginine glutamate. |
 | PD | Sato_2000 | not_relevant | 0 | 0 | The paper studies electrophysiological responses to amino acids (including arginine and glutamate) and chloride channel blockers, but does not report a pharmacodynamic exposure-response relationship or numeric PD parameters for arginine glutamate. |
@@ -60,4 +75,4 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Wang_2018 | not_relevant | 0 | 0 | The paper reports only population pharmacokinetic (PK) parameters (CL, V, Vmax, Km) and covariates, with no pharmacodynamic (PD) or exposure-response analysis. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 14:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 14:47 UTC</sub>

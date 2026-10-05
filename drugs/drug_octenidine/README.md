@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Octenidine is under investigation in clinical trial NCT02697162 (Antiseptic-coated Intermittent Urinary Catheter).
+Octenidine is an antiseptic (anti-infective) agent used for local treatment, such as in the mouth and throat. It is classified as investigational in DrugBank and has no European Union marketing authorisation, so it is not an approved medicine there.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27285931](https://www.wikidata.org/wiki/Q27285931) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

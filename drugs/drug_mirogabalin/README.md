@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Mirogabalin has been used in trials studying the treatment of Post-herpetic Neuralgia, Pain Associated With Fibromyalgia, and Diabetic peripheral neuropathic pain.
+Mirogabalin is a gabapentinoid drug developed as an analgesic for neuropathic pain. It is not authorised in the European Union and is still considered investigational in major drug databases, though it has been approved for use in Japan.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20706932](https://www.wikidata.org/wiki/Q20706932) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

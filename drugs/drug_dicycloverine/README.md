@@ -10,30 +10,19 @@
 
 ## About
 
-**Description.** Dicyclomine is a muscarinic M1, M3, and M2 receptor antagonist as well as a non-competitive inhibitor of histamine and bradykinin used to treat spasms of the intestines seen in functional bowel disorder and irritable bowel syndrome.[A6556,A182555,A234659,L7967] Though it is commonly prescribed, its recommendation may have been based on a small amount of evidence and so its prescription is becoming less favourable.[L7982]
+Dicycloverine (dicyclomine) is an anticholinergic drug used to treat irritable bowel syndrome and other functional gastrointestinal disorders. It is an approved medicine and remains in use for these conditions.
 
-Dicyclomine was granted FDA approval on 11 May 1950.[L7967]
-
-**Indication.** Dicyclomine is indicated for the treatment of functional bowel disorder and irritable bowel syndrome.[L7967]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2662662](https://www.wikidata.org/wiki/Q2662662) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:37 | 4:10 | 0/0/0 | 2/0/0 | 0/0/0 | 98,395/3,372 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/3 | 3/0 | 0 |
+| 2026-10-04 12:38 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 37,858/765 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/3 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Althurwi_2025_intestinal_smooth_muscle_contraction](drugs/drug_dicycloverine/pd_Althurwi_2025_intestinal_smooth_muscle_contraction.md) | name ← Cymbopogon proximus essential oil · direct Emax (saturable) effect | — | Althurwi HN et al., Pharmacological basis for medicinal use…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1533511](https://doi.org/10.3389/fphar.2025.1533511) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span> | [Janbaz_2013_isolated_rabbit_aorta_contraction](drugs/drug_dicycloverine/pd_Janbaz_2013_isolated_rabbit_aorta_contraction.md) | name ← methanol extract of Lactuca serriola · inhibition effect | — | Janbaz KH et al., Pharmacological Effects of Lactuca serr…, Evidence-based complementar… (2013) | [10.1155/2013/304394](https://doi.org/10.1155/2013/304394) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span> | [Janbaz_2013_isolated_rabbit_jejunum_contraction](drugs/drug_dicycloverine/pd_Janbaz_2013_isolated_rabbit_jejunum_contraction.md) | name ← methanol extract of Lactuca serriola · inhibition effect | — | Janbaz KH et al., Pharmacological Effects of Lactuca serr…, Evidence-based complementar… (2013) | [10.1155/2013/304394](https://doi.org/10.1155/2013/304394) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span> | [Janbaz_2013_isolated_rabbit_trachea_contraction](drugs/drug_dicycloverine/pd_Janbaz_2013_isolated_rabbit_trachea_contraction.md) | name ← methanol extract of Lactuca serriola · inhibition effect | — | Janbaz KH et al., Pharmacological Effects of Lactuca serr…, Evidence-based complementar… (2013) | [10.1155/2013/304394](https://doi.org/10.1155/2013/304394) |
 
 ## ADME sites
 
@@ -41,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | <sub>“…likely well absorbed as the primary route of elimination is in the urine…”</sub> | prose |
-| excretion | kidney | <sub>“…79.5% eliminated in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…8.4% in the feces…”</sub> | prose |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target).</sub>
 
@@ -73,7 +62,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Qi_2005.pdf` | Qi L et al., Quantitative determination of pharmaceu…, Journal of pharmaceutical a… (2005) | pd | 4 | [10.1016/j.jpba.2004.09.023](https://doi.org/10.1016/j.jpba.2004.09.023) | [15708661](https://www.ncbi.nlm.nih.gov/pubmed/15708661) | metadata signals extractable PD data (concentrationeffect) |
 | `Raiteri_1990.pdf` | Raiteri M et al., Muscarinic receptors mediating inhibiti…, The Journal of pharmacology… (1990) | pd | 4 | not captured | [2384883](https://www.ncbi.nlm.nih.gov/pubmed/2384883) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-18T08:36:54.170652+00:00</sub>
+<sub>queue written 2026-10-04T12:37:49.305275+00:00</sub>
 
 ## Screened and excluded
 
@@ -84,37 +73,37 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ali_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of Rosa webbiana, using dicycloverine (dicyclomine) only as a comparator agent in in-vitro experiments without reporting any pharmacokinetic parameters. |
 | PD | Ali_2023 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of Rosa webbiana extract, not dicycloverine; dicycloverine is only mentioned as a comparative reference for the type of curve shift observed. |
 | popPK | Althurwi_2025 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of Cymbopogon proximus essential oil where dicycloverine (dicyclomine) is used only as a positive control, and no pharmacokinetic parameters are reported. |
-| popPK | Brunner_1991 | irrelevant | 0 | 0 | The study is a pharmacological receptor characterization using dicycloverine (dicyclomine) as a probe antagonist, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Brunner_1991 | irrelevant | 0 | 0 | The study is a pharmacological receptor characterization in bovine tissue, not a pharmacokinetic study, and dicyclomine is used only as a probe antagonist. |
 | PD | Brunner_1991 | not_relevant | 0 | 0 | The paper characterizes muscarinic receptor subtypes in bovine coronary arteries using acetylcholine and antagonists; it does not report a pharmacodynamic or exposure-response relationship for the drug dicycloverine. |
 | popPK | Eglen_1993 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Eglen_1993 | not_relevant | 0 | 0 | The paper investigates muscarinic M3 receptor signaling in fibrosarcoma cells and does not mention dicycloverine or report any pharmacodynamic or exposure-response data for it. |
 | popPK | Gillard_1987 | irrelevant | 0 | 0 | no_text gate: only 192 chars of text extracted (&lt; 400) |
 | PD | Gillard_1987 | not_relevant | 0 | 0 | The paper focuses on muscarinic receptor binding characteristics in rat brain tissue and does not report any pharmacodynamic or exposure-response data for dicycloverine. |
-| popPK | Gower_1987 | irrelevant | 0 | 0 | The study is a pharmacological investigation of yawning and analgesia in rats where dicyclomine is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Gower_1987 | irrelevant | 0 | 0 | The study is a pharmacological investigation of yawning and analgesia in rats where dicyclomine (a related anticholinergic) is used as a comparator antagonist, not a PK study of dicycloverine. |
 | PD | Gower_1987 | not_relevant | 2 | 1 | The paper reports qualitative dose-response observations and antagonist inhibition for dicycloverine (dicyclomine) but does not provide numeric PD parameters (e.g., ED50, potency values) or a quantitative concentration-effect curve for this specific drug. |
 | popPK | Hudkins_1991 | irrelevant | 0 | 0 | no_text gate: only 63 chars of text extracted (&lt; 400) |
 | PD | Hudkins_1991 | not_relevant | 0 | 0 | The paper discusses the interaction of M1 muscarinic antagonists with sigma sites and does not report any pharmacodynamic or exposure-response data for dicycloverine. |
 | popPK | Hussain_2023 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study of Berberis lycium where dicycloverine (dicyclomine) is used only as a comparator agent, and no pharmacokinetic parameters are reported. |
 | PD | Hussain_2023 | not_relevant | 0 | 0 | The paper studies the plant Berberis lycium and only uses dicycloverine (dicyclomine) as a qualitative reference standard for comparison; it does not report any pharmacodynamic or exposure-response data for dicycloverine itself. |
-| PGx | Hussain_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of Berberis lycium and compares them to dicyclomine, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of dicyclomine. |
-| popPK | Janbaz_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract using dicycloverine (referred to as dicyclomine) only as a comparator drug, with no pharmacokinetic parameters reported. |
+| PGx | Hussain_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacological mechanisms of Berberis lycium and compares its effects to dicyclomine, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of dicyclomine. |
+| popPK | Janbaz_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract using dicyclomine (a related antispasmodic) as a comparator, and it does not report any pharmacokinetic parameters for dicycloverine. |
 | popPK | Kay_2005 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of darifenacin and dicyclomine (dicycloverine) focusing on cognitive and physiological effects, with no pharmacokinetic parameters reported. |
 | PD | Kay_2005 | not_relevant | 2 | 1 | The paper reports qualitative pharmacodynamic effects (cognitive, cardiac, visual) and statistical significance compared to placebo, but does not provide numeric PD parameters (Emax, EC50) or an exposure-response/dose-response curve analysis. |
-| popPK | Koerselman_1999 | irrelevant | 0 | 0 | The study focuses on the physiological effects of dicycloverine on gastroesophageal reflux and motility, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | McKinney_1985 | irrelevant | 0 | 0 | The paper is an epidemiological case-control study investigating the association between antiemetic use and childhood cancer, not a pharmacokinetic study, and contains no PK parameters for dicycloverine. |
+| popPK | Koerselman_1999 | irrelevant | 0 | 0 | The study investigates the physiological effects of dicyclomine on gastroesophageal reflux and motility, not its pharmacokinetic disposition parameters. |
+| popPK | McKinney_1985 | irrelevant | 0 | 0 | The paper is an epidemiological study on childhood cancer risk associated with drug exposure, not a pharmacokinetic study, and contains no PK parameters. |
 | PD | McKinney_1985 | not_relevant | 0 | 0 | The paper is an epidemiological study investigating the association between drug consumption and childhood cancer risk, not a pharmacodynamic or exposure-response analysis. |
 | popPK | Ogiso_1985 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding dicycloverine pharmacokinetics. |
 | popPK | Qi_2005 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
 | PD | Qi_2005 | not_relevant | 0 | 0 | The paper describes a mass spectrometry method for quantifying pharmaceuticals and does not report any pharmacodynamic or exposure-response data for dicycloverine. |
 | popPK | Raiteri_1990 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Raiteri_1990 | not_relevant | 0 | 0 | The paper focuses on the pharmacological characterization of muscarinic receptors in rat striatum and does not mention dicycloverine or report any exposure-response or dose-response data for it. |
-| popPK | Sharif_1995 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding and functional study where dicycloverine (dicyclomine) is used only as a pharmacological probe, not a subject of pharmacokinetic analysis. |
+| popPK | Sharif_1995 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional assay on murine cells where dicyclomine is used only as a pharmacological probe, not a PK study. |
 | PD | Sharif_1995 | not_relevant | 0 | 0 | The paper studies M3 muscarinic receptors in cell lines using agonists (carbachol, muscarine) and does not report any pharmacodynamic or exposure-response data for dicycloverine. |
 | popPK | Sher_2022 | irrelevant | 0 | 0 | no_text gate: only 149 chars of text extracted (&lt; 400) |
 | popPK | Talebi_2018 | irrelevant | 0 | 0 | The study investigates the in-vitro enzymatic inhibition of lipase by dicyclomine (dicycloverine) and does not report any pharmacokinetic parameters. |
 | popPK | Vilar_2013 | irrelevant | 0 | 0 | The paper is a computational study on drug-drug interaction prediction using fingerprints and does not report any quantitative pharmacokinetic parameters for dicycloverine. |
 | PD | Vilar_2013 | not_relevant | 0 | 0 | The paper describes a computational method for predicting drug-drug interactions using fingerprint similarity and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for dicycloverine. |
-| popPK | Yang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of a plant extract (PEFM) using dicyclomine (a related antispasmodic) only as a positive control, and reports no pharmacokinetic parameters for dicycloverine. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The study investigates the antispasmodic mechanism of a plant extract in mice, using dicyclomine (a different drug) only as a positive control, and reports no pharmacokinetic parameters for dicycloverine. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

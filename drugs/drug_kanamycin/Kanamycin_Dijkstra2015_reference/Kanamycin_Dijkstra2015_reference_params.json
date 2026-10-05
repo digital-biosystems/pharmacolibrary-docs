@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 1000 mg parenteral (J01GB04)",
  "model_id": "Kanamycin_Dijkstra2015_reference",
  "molar_masses": {
   "central.C": 0.4844986
@@ -8,10 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  400.0
- ],
  "parameters": {
   "Cl": 1.2833333333333333e-06,
   "F": 1.0,
@@ -19,14 +15,14 @@
   "VdPerKg": 0.00017142857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0004,
+  "adminMass": 0.001,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662003
+  "central.C": 660.000000066202
  },
  "reference_peaks": {
-  "central.C": 0.03228640071168642
+  "central.C": 0.08071600206150158
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

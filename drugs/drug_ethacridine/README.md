@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13190](https://go.drugbank.com/drugs/DB13190) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Ethacridine is an acridine antiseptic used to disinfect skin and wounds and as an irrigating solution. It is not an approved medicine in the European Union and is considered investigational, though it remains known as a topical antiseptic in some countries.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q426220](https://www.wikidata.org/wiki/Q426220) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

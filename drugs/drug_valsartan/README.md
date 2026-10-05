@@ -10,17 +10,9 @@
 
 ## About
 
-**Description.** Valsartan belongs to the angiotensin II receptor blocker (ARB) family of drugs, which also includes [telmisartan], [candesartan], [losartan], [olmesartan], and [irbesartan]. ARBs selectively bind to angiotensin receptor 1 (AT1) and prevent the protein angiotensin II from binding and exerting its hypertensive effects, which include vasoconstriction, stimulation and synthesis of aldosterone and ADH, cardiac stimulation, and renal reabsorption of sodium, among others. Overall, valsartan's physiologic effects lead to reduced blood pressure, lower aldosterone levels, reduced cardiac activity, and increased excretion of sodium. 
+Valsartan is an angiotensin II receptor blocker used to treat high blood pressure and heart conditions such as congestive heart failure. It is an approved medicine, widely used alone and in combination products, though it carries a boxed warning.
 
-Valsartan also affects the renin-angiotensin aldosterone system (RAAS), which plays an important role in hemostasis and regulation of kidney, vascular, and cardiac functions. Pharmacological blockade of RAAS via  AT1 receptor blockade inhibits negative regulatory feedback within RAAS, which is a contributing factor to the pathogenesis and progression of cardiovascular disease, heart failure, and renal disease. In particular, heart failure is associated with chronic activation of RAAS, leading to inappropriate fluid retention, vasoconstriction, and ultimately a further decline in left ventricular function. ARBs have been shown to have a protective effect on the heart by improving cardiac function, reducing afterload, increasing cardiac output and preventing ventricular hypertrophy and remodelling.[A174154] 
-
-By comparison, the angiotensin-converting enzyme inhibitor (ACEI) class of medications (which includes drugs such as [ramipril], [lisinopril], and [perindopril]) inhibit the conversion of angiotensin I to angiotensin II through inhibition of the ACE enzyme. However, this does not prevent the formation of all angiotensin II within the body. The angiotensin II receptor blocker (ARB) family of drugs unique in that it blocks all angiotensin II activity, regardless of where or how it was synthesized. 
-
-Valsartan is commonly used for the manag
-
-**Indication.** Valsartan is indicated for the treatment of hypertension to reduce the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. It is also indicated for the treatment of heart failure (NYHA class II-IV) and for left ventricular dysfunction or failure after myocardial infarction when the use of an angiotensin-converting enzyme inhibitor (ACEI) is not appropriate.[F4703, L11305]
-
-It is also used in combination with [sacubitril].[L36445]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q155472](https://www.wikidata.org/wiki/Q155472) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -67,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | liver | `CYP2C9` substrate, `SLC22A1` transport, `SLCO1B1` inhibitor/substrate, `SLCO1B3` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…primarily recovered in feces (about 83% of dose)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` substrate | DrugBank actor |
 | excretion | liver | `ABCC2` substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` substrate | DrugBank actor |

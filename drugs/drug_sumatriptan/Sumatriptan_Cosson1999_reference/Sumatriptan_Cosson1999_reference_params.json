@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 6 mg parenteral (N02CC01)",
+ "model_id": "Sumatriptan_Cosson1999_reference",
+ "molar_masses": {
+  "central.C": 0.2954
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.9777777777777778e-05,
+  "F": 1.0,
+  "MM": 0.2954,
+  "VdPerKg": 0.00135,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 6e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662087
+ },
+ "reference_peaks": {
+  "central.C": 5.966733169845961e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

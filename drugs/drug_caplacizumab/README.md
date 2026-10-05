@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Caplacizumab, firstly called ALX-0081, is a humanized single-variable-domain immunoglobulin consisting of two identical humanized building blocks genetically linked by a three-alanine linker. Caplacizumab was developed by Ablynx, a Sanofi company and FDA approved on February 6, 2019,[L5302] and approved previously by the EU in October 2018 as a combination therapy with plasma exchange and immunosuppression.[A174634]In December 2025, the FDA expanded this indication to include pediatric patients aged 12 years and older with aTTP, in the same combination regimen.[L54958,L54963]
+Caplacizumab, a monoclonal antibody antithrombotic, is used to treat acquired thrombotic thrombocytopenic purpura. It is authorised in the European Union and is also under investigation for other uses.
 
-**Indication.** Capacizumab is approved for the treatment of adults experiencing an episode of acquired thrombotic thrombocytopenic purpura (aTTP) in conjunction with plasma exchange and immunosuppression in patients 12 years or older.[A174634, L5302,L54958]
-
-aTTP is a rare autoimmune condition presented by a disruption of blood clotting order which is translated into systemic microvascular thrombosis leading to profound thrombocytopenia, hemolytic anemia and organ ischemia. It is caused by the production of autoantibodies against ADAMTS-13 which is the protein in charge of cleaving the von-Wilebrand factor. The lack of this process produces the generation of ultra large von Wilebrand multimers that bind to platelets and form microthrombi and causing thromboembolic complications.[A174649]
-
-Previously, capacizumab was under review for the prevention of thrombosis in high-risk patients with acute coronary syndrome undergoing percutaneous coronary intervention but this indication was withdrawn.[A174634]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5036030](https://www.wikidata.org/wiki/Q5036030) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,8 +41,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…After administration, caplacizumab is rapidly absorbed with a dose-dependent behavior…”</sub> | prose |
-| excretion | kidney | <sub>“…renal elimination…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: VWF (inhibitor).</sub>
 

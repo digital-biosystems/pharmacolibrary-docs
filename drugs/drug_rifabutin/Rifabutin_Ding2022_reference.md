@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Ding_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rifabutin_Osipova2023_reference&quot;,&quot;label&quot;:&quot;Osipova_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Osipova2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifabutin — `Rifabutin_Ding2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,18 +17,20 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The rifabutin one-compartment record was held back because bioavailability F and lag time Tlag were left at library defaults instead of being estimated or justified, so the simulated profile is not supported by the paper.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q310: this record has none, the second reading 400; it also differs on 3 more fields. That field does not shape the model.
+The record reports rifabutin clearance 14.95 L/h, volume of distribution 1100 L and absorption rate constant 0.494 h−1, but the deviations check failed because defaulted parameters were used where explicit estimates are required. F and Tlag carry no extracted values; using library defaults for F in particular changes the simulated exposure without support from Ding_2022. A second reader also proposed values (0.7 for F and 200 for the volume-related field) that this record does not contain, leaving those entries unresolved. Extracted — rifabutin: CL 14.9 L/h, V 1.1e+03 L, kabs 0.494 h−1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q34: this record has none, the second reading 0.7; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, development an… (2022)
   ·  DOI: [10.2147/dddt.s384637](https://doi.org/10.2147/dddt.s384637)
 
 ## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Ding2022_reference" status="curated_candidate" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rifabutin" model-id="Rifabutin_Ding2022_reference" status="needs_review" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -36,6 +38,8 @@ Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, developme
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 14.95 | L/h | 4.1527777777777775e-06 | L/h | not captured | review (0.7) | Ding_2022:review | — | not captured |
@@ -63,16 +67,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q310]` | not captured | 400 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q34]` | not captured | 0.7 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q364]` | not captured | 200 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q54]` | not captured | 300 | only_one_extracted |
 
 </details>
 
@@ -106,7 +108,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=rifabutin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,8 +129,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_modelica.zip" download>Rifabutin_Ding2022_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_fmi.zip" download>Rifabutin_Ding2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_modelica.zip" download>Rifabutin_Ding2022_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_fmi.zip" download>Rifabutin_Ding2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_matlab.zip" download>Rifabutin_Ding2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_matlab_simbio.zip" download>Rifabutin_Ding2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference_sbml.zip" download>Rifabutin_Ding2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -149,4 +151,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 07:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:44 UTC</sub>

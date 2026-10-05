@@ -8,10 +8,6 @@
 - **molar mass:** 882.974 g/mol (C48H48F2N10O5) — DrugBank
 - **groups:** investigational
 
-## About
-
-**Description.** Orforglipron is under investigation in clinical trial NCT06010004 (A Long-term Safety Study of Orforglipron (LY3502970) in Participants With Type 2 Diabetes).
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

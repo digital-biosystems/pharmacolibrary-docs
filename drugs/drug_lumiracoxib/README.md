@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Lumiracoxib is a COX-2 selective non-steroidal anti-inflammatory drug (NSAID). On August 11, 2007, Australia's Therapeutic Goods Administration (TGA, the Australian equivalent of the FDA) cancelled the registration of lumiracoxib in Australia due to concerns that it may cause liver failure. New Zealand and Canada have also followed suit in recalling the drug.
+Lumiracoxib is a COX-2 inhibitor (coxib) that was used as a non-steroidal anti-inflammatory drug to treat pain and inflammation, such as in osteoarthritis. It has been withdrawn from the market, mainly because of concerns about serious liver damage.
 
-**Indication.** For the acute and chronic treatment of the signs and symptoms of osteoarthritis of the knee in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413744](https://www.wikidata.org/wiki/Q413744) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,7 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly absorbed following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `UGT1A9` substrate | DrugBank actor |
 

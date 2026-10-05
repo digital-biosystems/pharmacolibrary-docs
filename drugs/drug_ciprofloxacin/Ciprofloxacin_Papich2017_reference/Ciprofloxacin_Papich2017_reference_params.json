@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ciprofloxacin_Papich2017_reference",
+ "molar_masses": {
+  "C_central": 0.3313415
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1645.0
+ ],
+ "parameters": {
+  "Cl": 4.75e-07,
+  "F": 1.0,
+  "MM": 0.3313415,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00015285714285714284,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001645,
+  "ka": 0.00010833333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "C_central": 14315.191733631746
+ },
+ "reference_peaks": {
+  "C_central": 0.08274689289458123
+ },
+ "stop_time": 108000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -8,6 +8,12 @@
 - **molar mass:** 400.471 g/mol (C23H28O6) — DrugBank
 - **groups:** experimental
 
+## About
+
+Enprostil is a prostaglandin that was developed as an anti-ulcer drug for acid-related disorders such as peptic ulcer. It is not an established marketed medicine today; it appears only as an experimental compound and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5379483](https://www.wikidata.org/wiki/Q5379483) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

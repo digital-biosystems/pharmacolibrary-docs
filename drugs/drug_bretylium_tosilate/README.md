@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Bretylium blocks the release of noradrenaline from the peripheral sympathetic nervous system, and is used in emergency medicine, cardiology, and other specialties for the acute management of ventricular tachycardia and ventricular fibrillation. The primary mode of action for bretylium is thought to be inhibition of voltage-gated K(+) channels. Recent evidence has shown that bretylium may also inhibit the Na,K-ATPase by binding to the extracellular K-site.
+Bretylium tosilate is a class III antiarrhythmic used to treat ventricular fibrillation and heart conduction disease. It is an approved drug, though it is no longer widely used in many countries.
 
-**Indication.** For use in the prophylaxis and therapy of ventricular fibrillation. Also used in the treatment of life-threatening ventricular arrhythmias, such as ventricular tachycardia, that have failed to respond to adequate doses of a first-line antiarrhythmic agent, such as lidocaine.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420026](https://www.wikidata.org/wiki/Q420026) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

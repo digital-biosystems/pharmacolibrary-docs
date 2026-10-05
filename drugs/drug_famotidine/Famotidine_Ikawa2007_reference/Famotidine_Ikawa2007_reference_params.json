@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 40 mg oral (A02BA03)",
  "model_id": "Famotidine_Ikawa2007_reference",
  "molar_masses": {
   "central.C": 0.337445
@@ -7,10 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  10.0
  ],
  "parameters": {
   "Cl": 3.277777777777778e-06,
@@ -20,15 +16,15 @@
   "VdPerKg": 0.0024571428571428574,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1e-05,
+  "adminMass": 4e-05,
   "ka": 0.00026555555555555555,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 13505.410821643287
+  "central.C": 13839.346490948976
  },
  "reference_peaks": {
-  "central.C": 4.741661333782731e-05
+  "central.C": 0.00018968588849101764
  },
  "stop_time": 259200.0,
  "template": "PK_1C_enteral",

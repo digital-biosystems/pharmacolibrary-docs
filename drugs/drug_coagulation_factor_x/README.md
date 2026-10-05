@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Coagulation Factor X (Human), is a plasma-derived human blood coagulation factor is used by adults and children (aged 12 years and above) with hereditary Factor X deficiency. However its use is limited in the perioperative setting for the management of bleeding in major surgery in patients with moderate and severe hereditary Factor X deficiency. 
+Coagulation factor X is a human blood-clotting protein used to treat bleeding caused by a lack of factor X. It is an approved medicine, classified among blood coagulation factors, though it appears to be used only in limited settings.
 
-Coagulation Factor X is a vitamin K-dependent, liver-produced serine protease that serves as the first enzyme in the coagulation cascade to form fibrin. It is a two-chain glycoprotein with the molecular weight of approximately 59 kDa [A31472]. While Factor X normally circulates in the plasma as inactive molecules, the activation of Factor X is involved in both the intrinsic and extrinsic coagulation pathways. Inherited factor X deficiency is a rare autosomal recessive bleeding disorder that is estimated to occur in 1:1 000 000 individuals up to 1:500 carriers [A31471]. Administration of coagulation Factor X from healthy donor serves to restore and achieve effective hemostasis. 
-
-Coagulation Factor X (Human) solution is approved by the FDA for intravenous injection under the market name Coagadex which contains normally 100 IU/mL of coagulation Factor X derived from healthy donors who have passed viral screening tests [L41045].
-
-**Indication.** The human coagulation factor X is indicated in adults and children with hereditary Factor X deficiency for routine prophylaxis to reduce the frequency of bleeding episodes, on-demand treatment and control of bleeding episodes, and perioperative management of bleeding in patients with mild and moderate hereditary Factor X deficiency.[L41045]
-
-Along with other blood coagulation factors, it is used to reverse acquired coagulation factor deficiency induced by Vitamin K antagonist (VKA, e.g., warfarin) therapy in adult patients with a need for an urgent surgery/invasive procedure.[L12834, L50517]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423701](https://www.wikidata.org/wiki/Q423701) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

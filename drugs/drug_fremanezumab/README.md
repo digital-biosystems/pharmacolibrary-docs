@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fremanezumab is a humanized monoclonal antibody targeted against human calcitonin gene-related peptide (CGRP) for the prevention of migraine headaches.[L11749] It was developed by Teva Pharmaceuticals USA and approved by the FDA in September 2018.[L11779] Along with other recently approved anti-CGRP therapies such as [galcanezumab], [erenumab], and the oral CGRP antagonist [ubrogepant], fremanezumab represents an important step forward in the treatment and prevention of migraine headaches.
+Fremanezumab is a monoclonal antibody used to prevent migraine, including migraine with and without aura. It is an approved CGRP-antagonist medicine authorised in the European Union for migraine prevention.
 
-**Indication.** Fremanezumab is indicated for the preventative treatment of migraine in adults.[L11749] It is also indicated for the preventive treatment of episodic migraine in pediatric patients who are 6 to 17 years of age and who weigh 45 kg or more.[L53633]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q39048381](https://www.wikidata.org/wiki/Q39048381) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

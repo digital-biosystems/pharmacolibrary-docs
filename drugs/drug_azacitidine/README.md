@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Azacitidine is a pyrimidine nucleoside analogue with anti-neoplastic activity. It differs from cytosine by the presence of nitrogen in the C5-position, key in its hypomethylating activity.[A1406,A1413,A1415] Two main mechanisms of action have been proposed for azacitidine. One of them is the induction of cytotoxicity. As an analogue of cytidine, it is able to incorporate into RNA and DNA, disrupting RNA metabolism and inhibiting protein and DNA synthesis. The other one is through the inhibition of DNA methyltransferase, impairing DNA methylation.[A1407] Due to its anti-neoplastic activity and its ability to inhibit methylation in replicating DNA, azacytidine has been used mainly used in the treatment of myelodysplastic syndromes (MDS) and acute myeloid leukemia (AML), two types of cancer characterized by the presence of aberrant DNA methylation.[A1407,A1410,A1411,A1416,A1417]
+Azacitidine is an anticancer antimetabolite used to treat blood cancers such as myelodysplastic syndrome, acute myeloid leukemia, and chronic myelomonocytic leukemia. It is approved and authorised in the European Union, with several authorised products, and is also being studied for other uses.
 
-In May 2004, the FDA approved the use of azacitidine administered subcutaneously for the treatment of MDS of all French-American-British (FAB) subtypes. In January 2007, the FDA approved the intravenous administration of azacitidine.[A1415] The use of oral azacitidine for the treatment of AML in patients in complete remission was approved by the FDA in September 2020.[L35335]
-
-**Indication.** Azacitidine (for subcutaneous or intravenous use) is indicated for the treatment of adult patients with the following French-American-British (FAB) myelodysplastic syndrome (MDS) subtypes: refractory anemia (RA) or refractory anemia with ringed sideroblasts (RARS) (if accompanied by neutropenia or thrombocytopenia or requiring transfusions), refractory anemia with excess blasts (RAEB), refractory anemia with excess blasts in transformation (RAEB-T), and chronic myelomonocytic leukemia (CMMoL). Azacitidine is also indicated for the treatment of pediatric patients aged 1 month and older with newly diagnosed Juvenile Myelomonocytic Leukemia (JMML).[L41910,L46861]
-
-Azacitidine (for oral use) is indicated for continued treatment of adult patients with acute myeloid leukemia (AML) who achieved first complete remission or complete remission with incomplete blood count recovery following intensive induction chemotherapy and are not able to complete intensive curative therapy.[L35335]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416451](https://www.wikidata.org/wiki/Q416451) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -49,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…Fecal excretion accounted for less than 1% of administered radioactivity…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted through urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CDA (substrate), DNA (other), DNMT1 (inhibitor), PARP1 (inhibitor), RNA (other).</sub>
 

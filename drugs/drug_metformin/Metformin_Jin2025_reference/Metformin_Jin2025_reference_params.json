@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Metformin_Jin2025_reference",
  "molar_masses": {
   "central.C": 0.1291636
@@ -8,12 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  14.0,
-  700.0,
-  1750.0
- ],
  "parameters": {
   "Cl": 2.5555555555555553e-06,
   "F": 1.0,
@@ -21,14 +15,14 @@
   "VdPerKg": 0.001642857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1.4e-05,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
   "central.C": 660.0000000662072
  },
  "reference_peaks": {
-  "central.C": 0.00012093116928270908
+  "central.C": 8.637940657330464e-05
  },
  "stop_time": 158400.0,
  "template": "PK_1C",

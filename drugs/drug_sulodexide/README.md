@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Sulodexide is a mixture of glycosaminoglycans (GAGs) composed of dermatan sulfate (DS) and fast moving heparin (FMH).
+Sulodexide is an antithrombotic medicine of the heparin group, acting as an anticoagulant, and has also been described as having anti-diabetic and lipid-lowering roles. It is an approved medicine and has also been studied investigationally, though it does not appear to be authorised in the European Union.
 
-**Indication.** Sulodexide has been used clinically for the prophylaxis and treatment of vascular diseases with increased risk of thrombosis, including intermittent claudication, peripheral arterial occlusive disease and post-myocardial infarc-tion. Also investigated in the treatment of diabetic kidney disease and diabetic neuropathy. New anti-inflammatory properties have also extended its use in venous disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7636496](https://www.wikidata.org/wiki/Q7636496) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,12 +41,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | <sub>“…both sulfated and unsulfated groups circulate in the blood for up to 24hours…”</sub> | prose |
-| absorption | skeletal muscle | <sub>“…Bioavailability following IM administration is approximately 90%…”</sub> | prose |
-| absorption | small intestine | <sub>“…After a rapid absorption in the intestine…”</sub> | prose |
-| metabolism | liver | <sub>“…mainly metabolized in the liver…”</sub> | prose |
-| excretion | bile duct | <sub>“…fecal and bile routes…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated via the renal…”</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SERPINC1 (potentiator), SERPIND1 (target).</sub>
 

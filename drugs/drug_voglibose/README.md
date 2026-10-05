@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Voglibose is an alpha-glucosidase inhibitor used for lowering post-prandial blood glucose levels in people with diabetes mellitus. It is made in India by Ranbaxy Labs and sold under the trade name Volix.
+Voglibose is an anti-diabetic medicine, an alpha glucosidase inhibitor used to treat diabetes. It is not authorised in the European Union and is considered investigational in major drug databases, though it is used in some Asian countries.
 
-**Indication.** For the treatment of diabetes. It is specifically used for lowering post-prandial blood glucose levels thereby reducing the risk of macrovascular complications.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7939403](https://www.wikidata.org/wiki/Q7939403) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 02:53 | 12:53 | 0/0/0 | 0/0/0 | 0/0/0 | 104,375/5,689 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/7 | 3/0 | 0 |
+| 2026-10-05 05:22 | 3:14 | 0/0/0 | 0/0/0 | 0/0/0 | 146,160/1,629 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/7 | 3/0 | 0 |
 
 ## popPK records
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Slowly and poorly absorbed.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: MGAM (inhibitor).</sub>
 
@@ -61,7 +61,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Ryu_2010.pdf` | Ryu HW et al., Polyphenols from Broussonetia papyrifer…, Journal of agricultural and… (2010) | pd | 4 | [10.1021/jf903068k](https://doi.org/10.1021/jf903068k) | [19954213](https://www.ncbi.nlm.nih.gov/pubmed/19954213) | metadata signals extractable PD data (IC50) |
 | `Sarkar_2024.pdf` | Sarkar A et al., Parkia javanica Edible Pods Reveal Pote…, Pharmaceuticals (Basel, Swi… (2024) | pd | 4 | [10.3390/ph17070968](https://doi.org/10.3390/ph17070968) | [39065816](https://www.ncbi.nlm.nih.gov/pubmed/39065816) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-16T02:51:55.017449+00:00</sub>
+<sub>queue written 2026-10-05T05:20:06.115604+00:00</sub>
 
 ## Screened and excluded
 
@@ -75,15 +75,15 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Ali_2017 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for new synthesized compounds and mentions voglibose only as a clinical context, providing no exposure-response or dose-response data for voglibose itself. |
 | popPK | Ayan_2026 | irrelevant | 0 | 0 | The paper is an in-vitro medicinal chemistry study on new α-glucosidase inhibitors, with voglibose mentioned only as a background comparator and no pharmacokinetic parameters reported. |
 | PD | Ayan_2026 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for novel compounds, not a pharmacodynamic or exposure-response relationship for the drug voglibose. |
-| popPK | Colin_2024 | irrelevant | 0 | 0 | The paper is a review of Cassia alata bioactive compounds where voglibose is only mentioned as a standard comparator in in silico docking studies, with no pharmacokinetic parameters reported. |
+| popPK | Colin_2024 | irrelevant | 0 | 0 | The paper is a review of Cassia alata bioactive compounds and does not report pharmacokinetic parameters for voglibose. |
 | PD | Colin_2024 | not_relevant | 0 | 0 | The paper is a review of Cassia alata bioactive compounds and does not mention voglibose or report any pharmacodynamic parameters for it. |
-| popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes management and does not contain pharmacokinetic data for voglibose. |
+| popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes management and does not mention voglibose or report any pharmacokinetic parameters for it. |
 | PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes and does not mention voglibose or report any pharmacodynamic parameters. |
 | popPK | Dirir_2022 | irrelevant | 0 | 0 | The paper is a review of plant-derived alpha-glucosidase inhibitors and does not report original pharmacokinetic parameters for voglibose. |
 | PD | Dirir_2022 | not_relevant | 1 | 0 | The paper is a review of plant-derived alpha-glucosidase inhibitors and only mentions voglibose as an approved drug in the introduction without providing any specific pharmacodynamic or exposure-response data for it. |
 | popPK | Gharge_2025 | irrelevant | 0 | 0 | The study focuses on novel rhodanine-thiazole hybrids and does not report pharmacokinetic parameters for voglibose. |
 | PD | Gharge_2025 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel rhodanine-thiazole hybrids, not for voglibose, and contains no PK/PD modeling or exposure-response analysis for the target drug. |
-| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Voglibose is a co-administered comparator drug in a study focused on tofogliflozin, and no quantitative PK parameters for voglibose are reported in the evidence. |
+| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Voglibose is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters for voglibose are reported in the evidence. |
 | PD | Kasahara_2016 | not_relevant | 0 | 0 | The study is a drug-drug interaction trial focusing on tofogliflozin; voglibose is only a co-administered agent, and no PD parameters or exposure-response relationships for voglibose are reported. |
 | popPK | Kaur_2021 | irrelevant | 0 | 0 | The paper is a review of alpha-amylase inhibitors and does not report any pharmacokinetic parameters for voglibose. |
 | PD | Kaur_2021 | not_relevant | 1 | 0 | The paper is a comprehensive review of alpha-amylase inhibitors and does not report specific pharmacokinetic or pharmacodynamic modeling data, exposure-response relationships, or numeric PD parameters for voglibose. |
@@ -96,7 +96,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Laila_2023 | not_relevant | 0 | 0 | The paper investigates the anti-diabetic effects of fenugreek sprouts and compares them to voglibose, but does not report any pharmacogenomic effects (gene variants) on voglibose's PK or PD parameters. |
 | popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel α-glucosidase inhibitors where voglibose is used only as a positive control/comparator, and no pharmacokinetic parameters for voglibose are reported. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and in vivo efficacy comparisons for a new compound (LY-23), but does not provide a pharmacokinetic-pharmacodynamic (PK/PD) model or exposure-response analysis for voglibose. |
-| popPK | Lo_2018 | irrelevant | 0 | 0 | This is a systematic review of clinical efficacy and safety in diabetes/CKD, not a pharmacokinetic study, and voglibose is only mentioned as a comparator in a single head-to-head trial without any PK parameters reported. |
+| popPK | Lo_2018 | irrelevant | 0 | 0 | This is a systematic review of clinical efficacy and safety in diabetes/CKD, not a pharmacokinetic study, and voglibose is only mentioned as a comparator in a single head-to-head trial without PK parameters. |
 | PD | Lo_2018 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trials in CKD and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for voglibose. |
 | popPK | Matsui_2009 | irrelevant | 0 | 0 | The study is an in-vitro enzyme assay and in-vivo pharmacodynamic (blood glucose) study, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for voglibose. |
 | PD | Matsui_2009 | not_relevant | 0 | 0 | The provided text consists only of materials and figure/table captions, containing no data, results, or numeric parameters for a pharmacodynamic or exposure-response relationship. |
@@ -106,7 +106,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Mukherjee_2013 | not_relevant | 0 | 0 | The paper focuses on the in vitro enzyme inhibition of nimbidiol; voglibose is only mentioned as a comparator without any reported PK/PD data or exposure-response analysis. |
 | popPK | Nagappan_2017 | irrelevant | 0 | 0 | no_text gate: only 200 chars of text extracted (&lt; 400) |
 | PD | Nagappan_2017 | not_relevant | 0 | 0 | The paper investigates the in vitro enzyme inhibition activities of seaweed extracts and does not mention voglibose or report any pharmacodynamic or exposure-response data for it. |
-| popPK | Nakashima_2022 | irrelevant | 0 | 0 | The study is a clinical trial comparing luseogliflozin and voglibose on estimated plasma volume in heart failure patients, not a pharmacokinetic study reporting disposition parameters for voglibose. |
+| popPK | Nakashima_2022 | irrelevant | 0 | 0 | The study is a clinical trial comparing luseogliflozin and voglibose on estimated plasma volume in heart failure patients, not a pharmacokinetic study of voglibose. |
 | popPK | Natori_2011 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel α-glucosidase inhibitors where voglibose is used only as a comparator for in-vitro inhibitory activity, with no pharmacokinetic parameters reported. |
 | PD | Natori_2011 | not_relevant | 1 | 0 | The paper reports in vitro IC50 values for novel compounds and mentions voglibose only as a commercial reference drug without providing specific numeric PD parameters or exposure-response data for it. |
 | popPK | Nepal_2020 | irrelevant | 1 | 0 | The study focuses on in-vitro metabolism and in-vivo pharmacodynamics (blood glucose levels) rather than reporting quantitative pharmacokinetic disposition parameters like clearance or volume of distribution. |
@@ -130,10 +130,10 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Sarkar_2024 | not_relevant | 0 | 0 | The paper focuses on Parkia javanica and does not report any pharmacodynamic or exposure-response data for voglibose. |
 | popPK | Seraj_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new quinoline derivatives, and voglibose is only mentioned as a comparator drug with no pharmacokinetic data provided. |
 | PD | Seraj_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for new synthetic compounds, not a pharmacodynamic or exposure-response relationship for the drug voglibose. |
-| popPK | Sukhram_2026 | irrelevant | 0 | 0 | The paper is a scoping review on ketamine in diabetes and does not report pharmacokinetic parameters for voglibose. |
+| popPK | Sukhram_2026 | irrelevant | 0 | 0 | The paper is a scoping review of ketamine in diabetes and does not report pharmacokinetic parameters for voglibose. |
 | PD | Sukhram_2026 | not_relevant | 0 | 0 | The paper is a scoping review of ketamine in diabetes and does not report any pharmacodynamic or exposure-response data for voglibose. |
-| PGx | Tateishi_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (bucolome inhibiting CYP2C9 affecting glimepiride) and explicitly states that the patient's CYP2C9 genotype was not determined, so no pharmacogenomic effect is reported. |
-| PGx | Wang_2024 | not_relevant | 0 | 0 | The paper reports a case of SHORT syndrome (PIK3R1 variant) treated with voglibose, but does not investigate how the genetic variant affects the pharmacokinetics or pharmacodynamics of the drug itself. |
+| PGx | Tateishi_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (bucolome inhibiting CYP2C9 affecting glimepiride) rather than a pharmacogenomic effect (gene variant) on voglibose. |
+| PGx | Wang_2024 | not_relevant | 0 | 0 | The paper reports a case of SHORT syndrome (PIK3R1 variant) treated with voglibose, but it does not investigate how the genetic variant affects the pharmacokinetics or pharmacodynamics of the drug. |
 | popPK | Worawalai_2016 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro enzyme inhibition of voglibose analogues, containing no pharmacokinetic data. |
 | PD | Worawalai_2016 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for new analogues and voglibose, which are pharmacodynamic potency metrics, but it does not report an exposure-response or dose-response relationship (concentration-effect curve or PK/PD model) for the drug in a biological system. |
 | popPK | Yamaguchi_2013 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of vildagliptin with voglibose as a co-administered agent, and no quantitative disposition parameters (CL, V, ka) for voglibose are reported in the evidence. |

@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** An analgesic and antipyretic that has been given by mouth and as ear drops. Antipyrine is often used in testing the effects of other drugs or diseases on drug-metabolizing enzymes in the liver. (From Martindale, The Extra Pharmacopoeia, 30th ed, p29)
+Phenazone (antipyrine) is a pyrazolone painkiller and fever reducer used for pain and ear conditions such as middle ear inflammation. It remains an approved medicine, used mainly in ear drops for ear pain, though it is no longer a common general painkiller.
 
-**Indication.** Antipyrine is an analgesic often used to test effects of other drugs on liver enzymes.
-
-In combination with benzocaine in otic solutions, antipyrine is indicated for the symptomatic relief of acute otitis media arising from various etiologies.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415578](https://www.wikidata.org/wiki/Q415578) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

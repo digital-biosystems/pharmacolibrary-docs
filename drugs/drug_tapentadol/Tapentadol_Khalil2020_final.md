@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/&quot;},{&quot;label&quot;:&quot;Khalil_2020 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The clearance plausibility check could not be computed.**
+**Kel has no unit; the clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tapentadol: CL 94.6 L/h, V 414 L, kabs 2.19 h−1, Fab 0.349, tlag 0.266 h, kel 0.122 wks −1.
+Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tapentadol: CL 94.6 L/h, V 414 L, kabs 2.19 h−1, Fab 0.349, tlag 0.266 h, kel 0.122 wks −1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.349, the second reading 0.283; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

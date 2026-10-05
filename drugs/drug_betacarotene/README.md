@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;betacarotene&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # betacarotene
 
@@ -10,32 +11,31 @@
 
 ## About
 
-**Description.** Beta-carotene, with the molecular formula C40H56, belongs to the group of carotenoids consisting of isoprene units. The presence of long chains of conjugated double bonds donates beta-carotene with specific colors.[T162] It is the most abundant form of carotenoid and it is a precursor of the vitamin A. Beta-carotene is composed of two retinyl groups. It is an antioxidant that can be found in yellow, orange and green leafy vegetables and fruits.[T158] Under the FDA, beta-carotene is considered as a generally recognized as safe substance (GRAS).[L2191]
+Betacarotene is a provitamin A carotenoid used as a vitamin A supplement and as a systemic protective against UV radiation. It is widely available as an approved supplement and nutraceutical, sold over the counter in many countries.
 
-**Indication.** Beta-carotene is FDA approved to be used as a nutrient supplement and to be even added in infant formula as a source of vitamin A.[L2191] It is also approved to be used as a color additive for food products,[L2192] drugs (with the label of "only as a color additive")[L2193] and cosmetics.[L2194]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q306135](https://www.wikidata.org/wiki/Q306135) and the WHO ATC classification; not checked by a person.</small>
 
-It is used commonly for the reduction of photosensitivity in patients with erythropoietic protoporphyria and other photosensitivity diseases.[A32485]
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| betacarotene | parent | 536.888 | C40H56 | DrugBank | [5280489](https://pubchem.ncbi.nlm.nih.gov/compound/5280489) | Green_2021 |
+| retinol | metabolite | 286.459 | C20H30O | PubChem | [445354](https://pubchem.ncbi.nlm.nih.gov/compound/445354) | Green_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 08:29 | 15:18 | 0/0/0 | 2/0/0 | 0/0/0 | 44,994/2,031 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 2/23 | 11/4 | 0 |
+| 2026-10-05 07:23 | 18:02 | 0/1/1 | 0/0/0 | 0/0/0 | 432,529/39,387 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/24 | 11/4 | 0 |
 
 ## popPK records
 
-_not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span> | [Alhazzaa_2025_Annexin_V_PI](drugs/drug_betacarotene/pd_Alhazzaa_2025_Annexin_V_PI.md) | total apoptosis ← doxorubicin · inhibition effect | — | Alhazzaa DM et al., Liposomal co-delivery of β-carotene and…, Scientific reports (2025) | [10.1038/s41598-025-27935-5](https://doi.org/10.1038/s41598-025-27935-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span> | [Alhazzaa_2025_Comet_Assay](drugs/drug_betacarotene/pd_Alhazzaa_2025_Comet_Assay.md) | tailed cells ← doxorubicin · inhibition effect | — | Alhazzaa DM et al., Liposomal co-delivery of β-carotene and…, Scientific reports (2025) | [10.1038/s41598-025-27935-5](https://doi.org/10.1038/s41598-025-27935-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span> | [Alhazzaa_2025_Flow_Cytometry](drugs/drug_betacarotene/pd_Alhazzaa_2025_Flow_Cytometry.md) | S-phase ← doxorubicin · inhibition effect | — | Alhazzaa DM et al., Liposomal co-delivery of β-carotene and…, Scientific reports (2025) | [10.1038/s41598-025-27935-5](https://doi.org/10.1038/s41598-025-27935-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span> | [Alhazzaa_2025_MTT](drugs/drug_betacarotene/pd_Alhazzaa_2025_MTT.md) | cell viability ← doxorubicin · inhibition effect | — | Alhazzaa DM et al., Liposomal co-delivery of β-carotene and…, Scientific reports (2025) | [10.1038/s41598-025-27935-5](https://doi.org/10.1038/s41598-025-27935-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Franken_2026_hallucinations](drugs/drug_betacarotene/pd_Franken_2026_hallucinations.md) | name ← guanabenz · delayed effect through an effect compartment | — | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> | [Franken_2026_mean_arterial_pressure](drugs/drug_betacarotene/pd_Franken_2026_mean_arterial_pressure.md) | name ← guanabenz · delayed effect through an effect compartment | — | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Franken_2026_reference](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Green_2021_reference](drugs/drug_betacarotene/Betacarotene_Green2021_reference.md) | — | general linear (no model) | 5 | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) |
 
 ## ADME sites
 
@@ -43,13 +43,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | adipose tissue | <sub>“…stored in the fat tissue…”</sub> | prose |
-| absorption | small intestine | <sub>“…some of the administered dose is absorbed into the circulatory system…”</sub> | prose |
-| metabolism | liver | <sub>“…and liver by beta-carotene dioxygenase…”</sub> | prose |
-| metabolism | small intestine | <sub>“…broken down in the mucosa of the small intestine…”</sub> | prose |
-| excretion | bile duct | <sub>“…It is also excreted in feces and urine as metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…It is also excreted in feces and urine as metabolites…”</sub> | prose |
-| excretion | small intestine | <sub>“…The unabsorbed carotene is excreted in feces…”</sub> | prose |
+| absorption | adipose tissue | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: BCO1 (substrate), Free radicals (binder), RBP1 (substrate), RBP2 (substrate), RBP3 (substrate), RBP4 (substrate), RBP5 (substrate), VLDLR (substrate).</sub>
 
@@ -62,22 +62,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 1151 matched, 191 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_41 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_40 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Green_2021.pdf` | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | popPK | 9 | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) | [33188397](https://pubmed.ncbi.nlm.nih.gov/33188397) | The paper describes a compartmental model for betacarotene kinetics and reports specific quantitative parameters like bioavailability (9.5%) and bioefficacy (7.3%), but lacks explicit standard PK parameters like clearance (CL) or volume (V) values in the provided text. |
-| `Novotny_1995.pdf` | Novotny JA et al., Compartmental analysis of the dynamics…, Journal of lipid research (1995) | popPK | 9 | not captured | [7595103](https://pubmed.ncbi.nlm.nih.gov/7595103) | The paper describes a compartmental PK model for betacarotene and reports a mean residence time, but specific clearance, volume, or rate constant values are not explicitly listed in the provided text. |
-| `Faulks_2004.pdf` | Faulks RM et al., Kinetics of gastro-intestinal transit a…, European journal of nutriti… (2004) | popPK | 8 | [10.1007/s00394-004-0434-x](https://doi.org/10.1007/s00394-004-0434-x) | [14991265](https://pubmed.ncbi.nlm.nih.gov/14991265) | The study reports a specific half-life value (11 min) for beta-carotene, but lacks other quantitative PK parameters like clearance or volume, and the full compartmental model details are not provided in the text. |
-| `Green_2016.pdf` | Green MH et al., Plasma Retinol Kinetics and β-Carotene…, The Journal of nutrition (2016) | popPK | 8 | [10.3945/jn.116.233486](https://doi.org/10.3945/jn.116.233486) | [27511941](https://pubmed.ncbi.nlm.nih.gov/27511941) | The study reports quantitative compartmental parameters (disposal rate, fractional catabolic rate, stores) for the vitamin A system including beta-carotene, but specific PK parameters like clearance or volume for beta-carotene alone are not explicitly listed as distinct numeric values in the text. |
-| `Poor_1992.pdf` | Poor CL et al., Evaluation of the preruminant calf as a…, The Journal of nutrition (1992) | popPK | 8 | [10.1093/jn/122.2.262](https://doi.org/10.1093/jn/122.2.262) | [1732467](https://pubmed.ncbi.nlm.nih.gov/1732467) | The study reports a two-compartment PK model for betacarotene in calves, but specific numeric parameter values (CL, V, k2) are not explicitly listed in the provided text. |
-| `Shapiro_1984.pdf` | Shapiro SS et al., Kinetic characteristics of beta-caroten…, The Journal of nutrition (1984) | popPK | 8 | [10.1093/jn/114.10.1924](https://doi.org/10.1093/jn/114.10.1924) | [6481484](https://pubmed.ncbi.nlm.nih.gov/6481484) | The study reports quantitative PK parameters (half-life, tissue saturation levels) for betacarotene in rats, with specific numeric values for half-life and tissue concentrations present in the text. |
+| `Green_2021.pdf` | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | popPK | 10 | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) | [33188397](https://pubmed.ncbi.nlm.nih.gov/33188397) | The paper presents a compartmental model for betacarotene kinetics in humans and reports quantitative parameters such as bioavailability (9.5%) and bioefficacy (7.3%) in the abstract. |
+| `Novotny_1995.pdf` | Novotny JA et al., Compartmental analysis of the dynamics…, Journal of lipid research (1995) | popPK | 9 | not captured | [7595103](https://pubmed.ncbi.nlm.nih.gov/7595103) | The study reports a compartmental model and qualitative parameters (absorption %, MRT) for beta-carotene in humans, but specific numeric PK values (CL, V, Q) are not explicitly listed in the provided text. |
+| `Poor_1992.pdf` | Poor CL et al., Evaluation of the preruminant calf as a…, The Journal of nutrition (1992) | popPK | 9 | [10.1093/jn/122.2.262](https://doi.org/10.1093/jn/122.2.262) | [1732467](https://pubmed.ncbi.nlm.nih.gov/1732467) | The study reports a two-compartment model for beta-carotene in calves, but specific numeric parameter values (CL, V, k2) are not explicitly listed in the provided text, only qualitative descriptions and peak times. |
+| `Faulks_2004.pdf` | Faulks RM et al., Kinetics of gastro-intestinal transit a…, European journal of nutriti… (2004) | popPK | 8 | [10.1007/s00394-004-0434-x](https://doi.org/10.1007/s00394-004-0434-x) | [14991265](https://pubmed.ncbi.nlm.nih.gov/14991265) | The study reports a single-compartment model and a specific half-life value (11 min) for beta-carotene absorption/disposal, but lacks detailed clearance or volume parameters. |
+| `Green_2016.pdf` | Green MH et al., Plasma Retinol Kinetics and β-Carotene…, The Journal of nutrition (2016) | popPK | 8 | [10.3945/jn.116.233486](https://doi.org/10.3945/jn.116.233486) | [27511941](https://pubmed.ncbi.nlm.nih.gov/27511941) | The study reports quantitative compartmental model parameters (disposal rate, fractional catabolic rate, stores) for the vitamin A system including beta-carotene bioefficacy in humans, though specific PK parameters like CL or V for beta-carotene alone are not explicitly listed as separate numeric values. |
 | `Ahmida_2024.pdf` | Ahmida M et al., Exploring the In Vitro and In Vivo Ther…, Cellular and molecular biol… (2024) | pd | 4 | [10.14715/cmb/2024.70.7.8](https://doi.org/10.14715/cmb/2024.70.7.8) | [39097895](https://www.ncbi.nlm.nih.gov/pubmed/39097895) | metadata signals extractable PD data (IC50) |
 | `Amakran_2024.pdf` | Amakran A et al., Chemical Composition, Antifungal, Antio…, Chemistry & biodiversity (2024) | pd | 4 | [10.1002/cbdv.202300563](https://doi.org/10.1002/cbdv.202300563) | [38880770](https://www.ncbi.nlm.nih.gov/pubmed/38880770) | metadata signals extractable PD data (IC50) |
 | `Araújo_2017.pdf` | Araújo JS et al., Chemical Composition and Biological Act…, International journal of mo… (2017) | pd | 4 | [10.3390/ijms18050921](https://doi.org/10.3390/ijms18050921) | [28448467](https://www.ncbi.nlm.nih.gov/pubmed/28448467) | metadata signals extractable PD data (EC50) |
@@ -114,7 +113,7 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Moran_2019.pdf` | Moran NE et al., Single Nucleotide Polymorphisms in β-Ca…, The Journal of nutrition (2019) | pgx | 5 | [10.1093/jn/nxy304](https://doi.org/10.1093/jn/nxy304) | [30801647](https://www.ncbi.nlm.nih.gov/pubmed/30801647) | metadata signals extractable PGX data (ABCB1) |
 | `Stewart_2014.pdf` | Stewart JC, Tomatoes cause under-arm odour, Medical hypotheses (2014) | pgx | 5 | [10.1016/j.mehy.2014.02.001](https://doi.org/10.1016/j.mehy.2014.02.001) | [24576684](https://www.ncbi.nlm.nih.gov/pubmed/24576684) | metadata signals extractable PGX data (ABCC11) |
 
-<sub>queue written 2026-09-16T08:27:14.919806+00:00</sub>
+<sub>queue written 2026-10-05T07:09:13.032083+00:00</sub>
 
 ## Screened and excluded
 
@@ -122,11 +121,11 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 |---|---|---|---|---|---|
 | popPK | Abudunia_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacological activities (antioxidant, antimicrobial, cytotoxic) of plant extracts, using beta-carotene only as a reagent in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Abudunia_2017 | not_relevant | 0 | 0 | The paper reports MIC and IC50 values for plant extracts, not a pharmacodynamic or exposure-response relationship for the specific compound betacarotene. |
-| popPK | Afonso_2017 | irrelevant | 0 | 0 | The study is a phytochemical and in-vitro antioxidant analysis where betacarotene is used only as a substrate for oxidation assays, not as a subject drug for pharmacokinetic evaluation. |
+| popPK | Afonso_2017 | irrelevant | 0 | 0 | The study is an in-vitro phytochemical and antioxidant analysis where beta-carotene is used as a substrate for oxidation assays, not as a subject drug for pharmacokinetic modeling. |
 | PD | Afonso_2017 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50 for beta-carotene oxidation inhibition) of Thymus extracts, which is a chemical assay result, not a pharmacodynamic exposure-response relationship for the drug betacarotene in a biological system. |
-| popPK | Afsar_2016 | irrelevant | 0 | 0 | The paper is an in-vitro study on plant extracts where beta-carotene is used only as a reagent in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Afsar_2016 | irrelevant | 0 | 0 | The study is an in-vitro phytochemical and pharmacological assessment of plant extracts, using beta-carotene only as a reagent in a bleaching assay, not as a subject drug for PK analysis. |
 | PD | Afsar_2016 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and anticancer activities of plant extracts, not a pharmacodynamic or exposure-response relationship for the drug betacarotene. |
-| popPK | Agarwal_2022 | irrelevant | 0 | 0 | The study is an epidemiological analysis of dietary intake and clinical progression, not a pharmacokinetic study, and contains no PK parameters for betacarotene. |
+| popPK | Agarwal_2022 | irrelevant | 0 | 0 | The study is an epidemiological analysis of dietary intake and clinical progression, not a pharmacokinetic study, and reports no disposition parameters. |
 | PGx | Ahmed_2022 | not_relevant | 0 | 0 | The paper investigates genetic determinants of fillet color in rainbow trout, not the pharmacokinetics or pharmacodynamics of betacarotene as a drug in humans. |
 | popPK | Ahmida_2024 | irrelevant | 0 | 0 | no_text gate: only 175 chars of text extracted (&lt; 400) |
 | PD | Ahmida_2024 | not_relevant | 0 | 0 | The paper focuses on Juniperus oxycedrus Cade Oil and does not report any pharmacodynamic or exposure-response data for betacarotene. |
@@ -141,7 +140,7 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Ayub_2017 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Ayub_2017 | not_relevant | 0 | 0 | The paper analyzes the chemical composition and biological activities of plant extracts, not the pharmacokinetics or pharmacodynamics of betacarotene in a biological system. |
 | PGx | Azad_2012 | not_relevant | 0 | 0 | The study analyzes genetic variants as prognostic factors for cancer survival, not as modulators of betacarotene pharmacokinetics or pharmacodynamics. |
-| popPK | Aćimović_2022 | irrelevant | 0 | 0 | The paper analyzes the chemical composition and antimicrobial activity of plant essential oils and does not involve betacarotene or pharmacokinetic parameters. |
+| popPK | Aćimović_2022 | irrelevant | 0 | 0 | The paper analyzes the chemical composition and in vitro biological activity of plant essential oils, containing no pharmacokinetic data for betacarotene. |
 | PD | Aćimović_2022 | not_relevant | 0 | 0 | The paper analyzes the chemical composition and in vitro biological activities of Dracocephalum moldavica essential oil and hydrolate, and does not mention betacarotene or report any pharmacodynamic or exposure-response relationships. |
 | popPK | Bazalar_2020 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
 | PD | Bazalar_2020 | not_relevant | 0 | 0 | The paper focuses on the physicochemical, sensorial, and antioxidant characterization of a fruit nectar formulation, not on pharmacodynamic or exposure-response modeling for betacarotene. |
@@ -149,37 +148,37 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Berteina-Raboin_2025 | not_relevant | 0 | 0 | The paper is a review of drug interactions involving flavonoids and furanocoumarins in fruit juices and does not report any pharmacodynamic or exposure-response data for betacarotene. |
 | popPK | Bhagyawant_2019 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PD | Bhagyawant_2019 | not_relevant | 0 | 0 | The paper studies chickpea lectin, not betacarotene, and does not report any pharmacodynamic or exposure-response relationship for the target drug. |
-| PGx | Bhinder_2022 | not_relevant | 0 | 0 | The paper investigates the genetic basis of beta-carotene content in rapeseed meal (a food crop) via GWAS, not the pharmacokinetics or pharmacodynamics of beta-carotene as a drug in humans. |
-| PGx | Biswas_2021 | not_relevant | 0 | 0 | The paper reports on the development of transgenic Golden Rice and its agronomic traits, not on human pharmacogenomics or the effect of gene variants on the pharmacokinetics/pharmacodynamics of beta-carotene. |
-| popPK | Bitis_2010 | irrelevant | 0 | 0 | The paper is an in-vitro antioxidant activity study where betacarotene is used only as a probe in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Bhinder_2022 | not_relevant | 0 | 0 | The paper investigates the genetic basis of beta-carotene content in rapeseed meal (a food crop) and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of beta-carotene as a drug. |
+| PGx | Biswas_2021 | not_relevant | 0 | 0 | The paper reports on the development and agronomic evaluation of transgenic Golden Rice, not on pharmacogenomic effects of gene variants on the pharmacokinetics or pharmacodynamics of beta-carotene in humans. |
+| popPK | Bitis_2010 | irrelevant | 0 | 0 | The study is an in-vitro antioxidant assay using beta-carotene as a reagent, not a pharmacokinetic study of betacarotene. |
 | PD | Bitis_2010 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant assays (DPPH, beta-carotene bleaching) for a plant extract, not a pharmacodynamic exposure-response relationship for the drug betacarotene. |
-| popPK | Boujbiha_2023 | irrelevant | 0 | 0 | The paper uses the β-carotene bleaching assay as an in vitro antioxidant test method, not as a pharmacokinetic study of betacarotene disposition. |
+| popPK | Boujbiha_2023 | irrelevant | 0 | 0 | The study uses the beta-carotene bleaching assay as an in vitro antioxidant test method, not as a pharmacokinetic study of beta-carotene disposition. |
 | PD | Boujbiha_2023 | not_relevant | 0 | 0 | The paper reports an EC50 for an in vitro antioxidant assay (beta-carotene bleaching) and acute toxicity/efficacy data for a plant extract, but does not report a pharmacokinetic/pharmacodynamic (PK/PD) or exposure-response relationship for the drug betacarotene. |
-| popPK | Burri_1998 | relevant | 9 | 0 | The paper describes a compartmental pharmacokinetic study of betacarotene in humans, but the provided text is truncated before any quantitative parameter values (CL, V, etc.) are reported. |
-| popPK | Bydlon_2012 | irrelevant | 0 | 0 | The paper is an optical imaging study using beta-carotene concentration as a tissue contrast parameter for breast margin assessment, not a pharmacokinetic study of the drug. |
+| popPK | Burri_1998 | relevant | 9 | 0 | The paper describes a compartmental pharmacokinetic study of beta-carotene in humans, but the provided text is truncated before the results section where the quantitative parameter values would be reported. |
+| popPK | Bydlon_2012 | irrelevant | 0 | 0 | The paper uses beta-carotene concentration as an optical contrast parameter for breast tissue imaging, not as a subject drug for pharmacokinetic analysis. |
 | PGx | Cai_2019 | not_relevant | 0 | 0 | The study investigates the association between BCO1 polymorphisms and the risk of coronary atherosclerosis, not the pharmacokinetic or pharmacodynamic parameters of betacarotene. |
-| PGx | Chayut_2017 | not_relevant | 0 | 0 | The paper studies plant genetics (melon carotenoid biosynthesis) and is not related to human pharmacogenomics or drug pharmacokinetics/pharmacodynamics. |
-| popPK | Chintong_2019 | irrelevant | 0 | 0 | The study is an in-vitro antioxidant assay where betacarotene is used as a substrate for bleaching, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Chayut_2017 | not_relevant | 0 | 0 | The paper studies plant genetics and carotenoid biosynthesis in melons, not human pharmacogenomics or drug pharmacokinetics. |
+| popPK | Chintong_2019 | irrelevant | 0 | 0 | The study is an in-vitro antioxidant assay where beta-carotene is used as a substrate for bleaching, not as the subject drug for pharmacokinetic analysis. |
 | PD | Chintong_2019 | not_relevant | 0 | 0 | The paper studies astaxanthin, not betacarotene; the mention of betacarotene is only as a substrate in an antioxidant assay, not as the drug of interest for a PD relationship. |
-| popPK | Colin_2024 | irrelevant | 0 | 0 | The paper is a review of Cassia alata bioactive compounds and does not report pharmacokinetic parameters for betacarotene. |
+| popPK | Colin_2024 | irrelevant | 0 | 0 | The paper is a review of Cassia alata bioactive compounds (flavonoids like emodin, kaempferol) and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Colin_2024 | not_relevant | 0 | 0 | The paper is a narrative review of Cassia alata bioactive compounds and does not report specific pharmacodynamic or exposure-response data for betacarotene. |
 | popPK | Corlatti_2026 | irrelevant | 0 | 0 | The paper is a review of phytochemicals in the Helianthus genus and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Corlatti_2026 | not_relevant | 0 | 0 | The paper is a general review of the Helianthus genus and does not report specific pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Cuenca-León_2022 | irrelevant | 0 | 0 | The paper is a review on phytotherapy for antifungal resistance and does not contain pharmacokinetic data for betacarotene. |
+| popPK | Cuenca-León_2022 | irrelevant | 0 | 0 | The paper is a review of phytotherapy for antifungal resistance in dentistry and does not contain pharmacokinetic data for betacarotene. |
 | PD | Cuenca-León_2022 | not_relevant | 0 | 0 | The paper is a bibliographic review of phytotherapy for antifungal resistance and does not report any specific pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Dagni_2022 | irrelevant | 0 | 0 | The paper is a review of the Dysphania genus and mentions beta-carotene only as a reagent in an in-vitro antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Dagni_2022 | irrelevant | 0 | 0 | The paper is a review of essential oils from the Dysphania genus and does not contain any pharmacokinetic data for betacarotene. |
 | PD | Dagni_2022 | not_relevant | 0 | 0 | The paper is a review of the Dysphania genus and does not report any pharmacodynamic or exposure-response data for betacarotene. |
 | PGx | Dalal_2010 | not_relevant | 0 | 0 | The paper focuses on plant molecular biology (promoter characterization in tomato) and does not report human pharmacogenomics or PK/PD parameters for betacarotene. |
-| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of functional seafoods and marine bioactive compounds (e.g., omega-3, peptides) and does not report pharmacokinetic parameters for betacarotene. |
+| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of marine bioactive compounds and does not report quantitative pharmacokinetic parameters for betacarotene. |
 | PD | Davran_2026 | not_relevant | 0 | 0 | The paper is a general review of marine bioactive compounds and does not report specific pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Dhana_2026 | irrelevant | 0 | 0 | The study is a clinical trial analyzing cognitive outcomes and uses beta-carotene only as a biomarker for dietary adherence, not as a subject drug for pharmacokinetic parameter estimation. |
-| popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review on sulfonamides and antioxidants for diabetes management and does not report pharmacokinetic parameters for betacarotene. |
+| popPK | Dhana_2026 | irrelevant | 0 | 0 | The study is a nutritional epidemiology analysis of cognitive outcomes where beta-carotene is used only as a biomarker for dietary adherence, not as a subject drug for pharmacokinetic modeling. |
+| popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes management and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes and does not report any pharmacodynamic or exposure-response data for betacarotene. |
 | PGx | Doherty_2013 | not_relevant | 0 | 0 | The paper investigates the association between DNA repair gene variants and lung cancer risk, not the pharmacokinetic or pharmacodynamic parameters of beta-carotene. |
 | PGx | Domarkienė_2022 | not_relevant | 0 | 0 | The study investigates genetic associations with serum carotenoid levels in healthy individuals, not the pharmacokinetics or pharmacodynamics of betacarotene as a therapeutic drug. |
 | PGx | Dutta_2021 | not_relevant | 0 | 0 | The paper studies the stability of carotenoids in maize grains during storage, not the pharmacokinetics or pharmacodynamics of beta-carotene in humans. |
 | PGx | Eaton_2018 | not_relevant | 0 | 0 | The paper investigates the association between inflammatory gene polymorphisms and lung cancer risk/survival, not the pharmacokinetics or pharmacodynamics of betacarotene. |
-| popPK | El_2019 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antioxidant and antimicrobial activity of plant extracts, using the beta-carotene discoloration test as a method, not a pharmacokinetic study of betacarotene. |
+| popPK | El_2019 | irrelevant | 0 | 0 | The paper describes in-vitro antioxidant and antimicrobial assays using a beta-carotene discoloration test, not the pharmacokinetics of betacarotene. |
 | PD | El_2019 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and antimicrobial activities (IC50, MIC) for plant extracts, not a pharmacodynamic exposure-response relationship for the drug betacarotene. |
 | popPK | El_2023 | irrelevant | 0 | 0 | The paper studies apple vinegar composition and biological activities, using beta-carotene only as a reagent in an antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | El_2023 | not_relevant | 0 | 0 | The paper reports in vivo biological activities (anti-inflammatory, antidepressant) and in vitro antioxidant assays (IC50) for apple vinegar, but does not report a pharmacokinetic/pharmacodynamic (PK/PD) model or exposure-response relationship for betacarotene. |
@@ -189,54 +188,52 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | El_2026 | not_relevant | 1 | 0 | The paper is a scoping review that qualitatively discusses dose-response patterns (e.g., U-shaped) for beta-carotene but does not report specific numeric PD parameters or extractable concentration-effect curves. |
 | popPK | Erbiai_2023 | irrelevant | 0 | 0 | no_text gate: only 203 chars of text extracted (&lt; 400) |
 | PD | Erbiai_2023 | not_relevant | 0 | 0 | The paper focuses on the chemical characterization and antioxidant properties of wild mushrooms, not on the pharmacokinetics or pharmacodynamics of betacarotene. |
-| popPK | Eroglu_2018 | irrelevant | 0 | 0 | The study is a proteomic association analysis of carotenoid concentrations, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
+| popPK | Eroglu_2018 | irrelevant | 0 | 0 | The study is a proteomic association analysis of carotenoid concentrations, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Fakhfakh_2017 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Fakhfakh_2017 | not_relevant | 0 | 0 | The paper focuses on polysaccharides from Malva aegyptiaca and does not mention betacarotene or report any pharmacodynamic or exposure-response relationships. |
 | PGx | Fallahshahroudi_2019 | not_relevant | 0 | 0 | The paper studies carotenoid metabolism in chickens, not the pharmacokinetics or pharmacodynamics of betacarotene as a drug in humans. |
 | popPK | Faraone_2019 | irrelevant | 0 | 0 | The paper is an in-vitro phytochemical and antioxidant activity study where beta-carotene is used only as a reagent in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Faraone_2019 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic inhibition (IC50) and antioxidant assays for a plant extract, not a pharmacodynamic exposure-response relationship for the specific drug betacarotene. |
-| popPK | Fatima_2025 | irrelevant | 0 | 0 | The paper is a general review of nutraceuticals for chronic diseases and does not contain any pharmacokinetic data or quantitative disposition parameters for betacarotene. |
+| popPK | Fatima_2025 | irrelevant | 0 | 0 | The paper is a general review of nutraceuticals for chronic diseases and does not contain specific pharmacokinetic data or quantitative disposition parameters for betacarotene. |
 | PD | Fatima_2025 | not_relevant | 0 | 0 | The paper is a narrative review of nutraceuticals and does not report specific pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Faulks_2004 | relevant | 8 | 2 | The study reports a specific half-life value (11 min) for beta-carotene, but lacks other quantitative PK parameters like clearance or volume, and the full compartmental model details are not provided in the text. |
+| popPK | Faulks_2004 | relevant | 8 | 2 | The study reports a single-compartment model and a specific half-life value (11 min) for beta-carotene absorption/disposal, but lacks detailed clearance or volume parameters. |
 | popPK | Ferhat_2017 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | PD | Ferhat_2017 | not_relevant | 0 | 0 | The paper investigates the biological activities of plant extracts (Stachys guyoniana and Mentha aquatica) and does not report any pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Feás_2012 | irrelevant | 0 | 0 | The paper is a nutritional and microbiological analysis of bee pollen, not a pharmacokinetic study, and the mention of beta-carotene refers to an in-vitro antioxidant assay (bleaching test) rather than disposition parameters. |
+| popPK | Feás_2012 | irrelevant | 0 | 0 | The paper is a nutritional and microbiological analysis of bee pollen, using beta-carotene only as a reagent in an antioxidant assay, not as a subject drug for pharmacokinetic study. |
 | PD | Feás_2012 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50) of bee pollen extracts, not a pharmacodynamic or exposure-response relationship for the drug betacarotene in a biological system. |
-| PGx | Fong_2010 | not_relevant | 0 | 0 | The paper investigates the association between a gene variant and cancer risk, not the effect of a genotype on the pharmacokinetics or pharmacodynamics of betacarotene. |
-| popPK | Ford_2017 | irrelevant | 2 | 0 | The paper focuses on a method for estimating bioefficacy using isotope ratios and does not report quantitative population pharmacokinetic parameters (CL, V, Q, ka) for betacarotene. |
-| popPK | Franken_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for guanabenz, not betacarotene. |
-| PGx | Gao_2021 | not_relevant | 0 | 0 | The paper describes plant genetics (soybean carotenoid content) and is not a pharmacogenomic study of human drug metabolism. |
-| PGx | Garcia_2026 | not_relevant | 0 | 0 | The paper studies agricultural cultivation of tomatoes and carotenoid accumulation in fruit, not human pharmacogenomics or drug metabolism. |
-| popPK | Gonzalez_2022 | irrelevant | 0 | 0 | The study is an in-vitro reproductive biology experiment assessing lycopene's effect on bovine blastocyst development, with no pharmacokinetic analysis or disposition parameters for betacarotene. |
-| popPK | Green_2016 | relevant | 8 | 2 | The study reports quantitative compartmental parameters (disposal rate, fractional catabolic rate, stores) for the vitamin A system including beta-carotene, but specific PK parameters like clearance or volume for beta-carotene alone are not explicitly listed as distinct numeric values in the text. |
-| popPK | Green_2021 | relevant | 9 | 4 | The paper describes a compartmental model for betacarotene kinetics and reports specific quantitative parameters like bioavailability (9.5%) and bioefficacy (7.3%), but lacks explicit standard PK parameters like clearance (CL) or volume (V) values in the provided text. |
-| PGx | Guo_2025 | not_relevant | 0 | 0 | The paper focuses on metabolic engineering of yeast for astaxanthin biosynthesis and does not report pharmacogenomic effects on the PK/PD of betacarotene in humans. |
-| popPK | Główka_2024 | irrelevant | 0 | 0 | The study reports plasma concentrations of beta-carotene in CVD patients but does not provide pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Fong_2010 | not_relevant | 0 | 0 | The paper investigates the association between a gene variant and cancer risk, not the pharmacokinetics or pharmacodynamics of betacarotene. |
+| popPK | Ford_2017 | irrelevant | 2 | 0 | The study focuses on a method for estimating bioefficacy using isotope ratios and does not report standard quantitative PK parameters (CL, V, ka) for betacarotene itself. |
+| popPK | Franken_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of guanabenz, not betacarotene. |
+| PGx | Gao_2021 | not_relevant | 0 | 0 | The paper studies plant genetics (soybean carotenoid content) and does not involve human pharmacokinetics or pharmacodynamics of betacarotene. |
+| PGx | Garcia_2026 | not_relevant | 0 | 0 | The paper studies plant agronomy and carotenoid accumulation in tomatoes, not human pharmacogenomics or drug PK/PD. |
+| popPK | Gonzalez_2022 | irrelevant | 0 | 0 | The study is an in vitro reproductive biology experiment evaluating lycopene's effect on bovine embryo development, with no pharmacokinetic analysis of betacarotene. |
+| PGx | Guo_2025 | not_relevant | 0 | 0 | The paper focuses on metabolic engineering of yeast for astaxanthin biosynthesis and does not report pharmacogenomic effects on the PK or PD of betacarotene in humans. |
+| popPK | Główka_2024 | irrelevant | 0 | 0 | The study measures steady-state plasma concentrations of beta-carotene in CVD patients to assess nutritional status, but does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | PD | Główka_2024 | not_relevant | 1 | 0 | The study reports cross-sectional associations between dietary intake and vitamin concentrations, but does not provide a pharmacodynamic model, dose-response curve, or numeric PD parameters (e.g., Emax, EC50) for beta-carotene. |
 | popPK | Hafez_2024 | irrelevant | 0 | 0 | The paper is a review of the pharmacological attributes of Acacia (Vachellia nilotica) and does not contain any pharmacokinetic data for betacarotene. |
 | PD | Hafez_2024 | not_relevant | 0 | 0 | The paper is a general review of Vachellia nilotica and does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for betacarotene. |
-| popPK | Hailili_2025 | irrelevant | 0 | 0 | The paper is an epidemiological study on dietary carotenoid intake and cognitive function, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
+| popPK | Hailili_2025 | irrelevant | 0 | 0 | The study is an epidemiological analysis of dietary carotenoid intake and cognitive function, not a pharmacokinetic study reporting disposition parameters for betacarotene. |
 | PGx | Hall_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomic effect of COMT on the clinical efficacy (cancer risk) of alpha-tocopherol, not on the pharmacokinetics or pharmacodynamics of betacarotene. |
-| popPK | Hanen_2009 | irrelevant | 0 | 0 | The study is an in-vitro antioxidant assay where betacarotene is used as a substrate for bleaching, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Hanen_2009 | irrelevant | 0 | 0 | The study is an in-vitro antioxidant assay using beta-carotene as a substrate for bleaching, not a pharmacokinetic study of betacarotene. |
 | PD | Hanen_2009 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant assays (e.g., beta-carotene bleaching inhibition) for plant extracts, not a pharmacodynamic exposure-response relationship for the drug betacarotene in a biological system. |
 | popPK | Haroen_2022 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Haroen_2022 | not_relevant | 0 | 0 | The paper focuses on the chemical analysis of nutrient content and antioxidant activity in Moringa oleifera extracts, not on pharmacokinetic or pharmacodynamic modeling of betacarotene in biological systems. |
 | PGx | Harrison_2020 | not_relevant | 2 | 0 | The paper is a review of the enzymology of carotenoid oxygenases and mentions polymorphisms only in the context of general homeostasis and disease risk, without reporting specific quantitative pharmacokinetic or pharmacodynamic parameter changes for betacarotene. |
-| popPK | Healy_2018 | irrelevant | 0 | 0 | The study is a nutritional epidemiology investigation correlating serum beta-carotene levels with visual function, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Hendel_2024 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
+| popPK | Healy_2018 | irrelevant | 0 | 0 | The study examines correlations between nutritional status (including serum beta-carotene levels) and visual function, but does not report pharmacokinetic parameters for betacarotene. |
+| popPK | Hendel_2024 | irrelevant | 0 | 0 | no_text gate: only 177 chars of text extracted (&lt; 400) |
 | PD | Hendel_2024 | not_relevant | 0 | 0 | The paper analyzes phytochemicals and biological activities of rosemary and thyme, with no mention of betacarotene or any pharmacodynamic modeling. |
 | popPK | Hirose_1995 | irrelevant | 0 | 0 | The study is a toxicology/carcinogenesis bioassay examining chemopreventive effects, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
 | PD | Hirose_1995 | not_relevant | 2 | 1 | The paper reports qualitative inhibition of liver foci by beta-carotene in a bioassay but does not provide a concentration-effect curve, dose-response parameters (like IC50), or PK/PD modeling for beta-carotene. |
 | popPK | Homnick_1995 | irrelevant | 2 | 0 | The study discusses beta-carotene pharmacokinetics qualitatively (dose-proportional, independent clearance) but provides no quantitative numeric parameter values (CL, V, t1/2) in the evidence. |
 | PD | Homnick_1995 | not_relevant | 3 | 2 | The text describes dose-proportional PK (concentration vs. dose) but does not report a pharmacodynamic (effect) response or numeric PD parameters like Emax or EC50. |
-| popPK | Horton_2013 | irrelevant | 0 | 0 | The study reports serum concentrations of beta-carotene as a nutritional biomarker in pregnant women, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Horton_2013 | irrelevant | 0 | 0 | The study measures serum concentrations of beta-carotene as a nutritional biomarker in pregnant women, not pharmacokinetic disposition parameters (CL, V, ka) following dosing. |
 | popPK | Huang_2018 | irrelevant | 0 | 0 | The paper is an epidemiological study analyzing the association between serum beta-carotene levels and mortality, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Huang_2018 | not_relevant | 3 | 2 | The paper reports epidemiological hazard ratios for mortality across serum beta-carotene quintiles, which is an observational association rather than a pharmacodynamic exposure-response model with numeric PD parameters like Emax or EC50. |
 | popPK | Huang_2026 | irrelevant | 0 | 0 | The study is an epidemiological analysis of dietary intake and cognitive decline, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
-| PGx | Huebbe_2016 | not_relevant | 2 | 5 | The paper studies the effect of APOE genotype on the metabolism of dietary beta-carotene (a nutrient) in mice, not the pharmacokinetics or pharmacodynamics of a drug. |
+| PGx | Huebbe_2016 | not_relevant | 2 | 5 | The paper studies the effect of APOE genotype on beta-carotene metabolism in mice, but beta-carotene is a dietary nutrient, not a drug, and the study is in an animal model. |
 | popPK | Iakushina_1995 | irrelevant | 2 | 0 | The study reports only peak serum concentrations (Cmax) and qualitative absorption rates, lacking quantitative pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | PD | Iakushina_1995 | not_relevant | 2 | 1 | The paper reports PK parameters (Cmax, Tmax) for two formulations but does not report a pharmacodynamic effect or an exposure-response relationship with numeric PD parameters. |
-| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system measures against coronavirus and mentions betacarotene only as a dietary supplement for immunity, containing no pharmacokinetic data. |
+| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system rejuvenation and does not contain pharmacokinetic data for betacarotene. |
 | PD | Islam_2022 | not_relevant | 0 | 0 | The paper is a general review on immune system rejuvenation and dietary supplements; it does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for betacarotene. |
 | popPK | Jahanbani_2021 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
 | PD | Jahanbani_2021 | not_relevant | 0 | 0 | The paper focuses on the isolation and antioxidant activity of phytochemicals from Artemisia aucheri and does not contain any pharmacokinetic or pharmacodynamic modeling for betacarotene. |
@@ -245,26 +242,26 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Jeddou_2016 | not_relevant | 0 | 0 | The paper focuses on the structural and antioxidant properties of potato peel polysaccharides and does not mention betacarotene or report any pharmacodynamic or exposure-response relationships. |
 | popPK | Jennaro_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of L-carnitine, not betacarotene. |
 | PD | Jennaro_2023 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for L-carnitine, not betacarotene, and does not report any pharmacodynamic (PD) or exposure-response parameters. |
-| PGx | Jiang_2026 | not_relevant | 0 | 0 | The paper reports the anti-inflammatory efficacy of beta-carotene in a mouse model but does not investigate any gene variants or pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
-| popPK | Jovanović_2024 | irrelevant | 0 | 0 | The study focuses on Gentiana asclepiadea extracts and does not investigate betacarotene pharmacokinetics. |
+| PGx | Jiang_2026 | not_relevant | 0 | 0 | The paper investigates the anti-inflammatory mechanism of beta-carotene in a mouse model but does not report any pharmacogenomic effects (gene variants) on its pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Jovanović_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacological activities of Gentiana asclepiadea extracts and does not involve betacarotene. |
 | PD | Jovanović_2024 | not_relevant | 0 | 0 | The paper studies Gentiana asclepiadea extracts, not betacarotene, and does not report a concentration-effect or dose-response relationship with numeric PD parameters. |
-| popPK | Junghans_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antioxidant interactions in liposomes, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
+| popPK | Junghans_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antioxidant interactions in liposomes, not a pharmacokinetic study reporting disposition parameters for betacarotene. |
 | popPK | Kada_2017 | irrelevant | 0 | 0 | The paper is an in-vitro antioxidant study where betacarotene is used only as a reagent in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Kada_2017 | not_relevant | 0 | 0 | The paper studies the protective activity of Hertia cheirifolia extracts, not betacarotene, and does not report any pharmacodynamic or exposure-response relationship for the target drug. |
 | popPK | Kazemi_2015 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Kazemi_2015 | not_relevant | 0 | 0 | The paper focuses on the chemical composition and antimicrobial activity of Achillea wilhelmsii essential oil, not on betacarotene or pharmacodynamic modeling. |
 | popPK | Kefi_2018 | irrelevant | 0 | 0 | The paper is an in-vitro phytochemical and biological activity study where betacarotene is used only as a reagent in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Kefi_2018 | not_relevant | 0 | 0 | The paper reports IC50 values for a plant extract (Echium arenarium) in in vitro assays, not a pharmacodynamic or exposure-response relationship for the specific drug betacarotene. |
-| PGx | Kim_2010 | not_relevant | 0 | 0 | The study examines the association between SOD2 polymorphism and breast cancer risk in relation to antioxidant levels, not the pharmacokinetics or pharmacodynamics of betacarotene. |
+| PGx | Kim_2010 | not_relevant | 0 | 0 | The paper investigates the association between SOD2 polymorphism and breast cancer risk in relation to antioxidant levels, not the pharmacokinetics or pharmacodynamics of betacarotene. |
 | PGx | Kistler_2002 | not_relevant | 0 | 0 | The paper investigates the metabolism and CYP-induction of astaxanthin, not the pharmacogenomics of betacarotene. |
-| popPK | Klinglmair_2026 | irrelevant | 0 | 0 | The paper is a clinical oncology study on bladder cancer recurrence and body composition, with no pharmacokinetic data for betacarotene. |
+| popPK | Klinglmair_2026 | irrelevant | 0 | 0 | The paper investigates body composition and recurrence risk in bladder cancer and does not involve betacarotene pharmacokinetics. |
 | PD | Klinglmair_2026 | not_relevant | 0 | 0 | The paper analyzes the association between body composition indices (BMI, SMI, PMI) and cancer recurrence risk; it does not report any pharmacodynamic or exposure-response relationship for betacarotene. |
-| popPK | Kumaree_2023 | irrelevant | 0 | 0 | The paper is an in silico molecular docking study of phytochemicals against Zika virus, not a pharmacokinetic study of betacarotene. |
+| popPK | Kumaree_2023 | irrelevant | 0 | 0 | The study is an in silico molecular docking and ADMET screening of phytochemicals against Zika virus, not a pharmacokinetic study of betacarotene. |
 | PD | Kumaree_2023 | not_relevant | 0 | 0 | The paper is an in silico molecular docking study reporting binding affinities, not a pharmacodynamic or exposure-response analysis with numeric PD parameters. |
-| popPK | Kyriakopoulos_2024 | irrelevant | 0 | 0 | The paper discusses lutein, not betacarotene, and contains no pharmacokinetic data. |
+| popPK | Kyriakopoulos_2024 | irrelevant | 0 | 0 | The paper is a review of lutein (a different carotenoid) and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Kyriakopoulos_2024 | not_relevant | 0 | 0 | The text is a qualitative review of lutein's mechanisms and benefits, containing no pharmacokinetic data, dose-response curves, or numeric PD parameters. |
 | PGx | Lamharzi_2003 | not_relevant | 0 | 0 | The paper investigates the association between SRD5A2 polymorphisms and prostate cancer risk, not the pharmacokinetics or pharmacodynamics of betacarotene. |
-| popPK | Lani_2026 | irrelevant | 0 | 0 | The paper is a review of the nutritional and therapeutic properties of date palm (Phoenix dactylifera) and does not report pharmacokinetic parameters for betacarotene. |
+| popPK | Lani_2026 | irrelevant | 0 | 0 | The paper is a review of date palm nutraceuticals and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Lani_2026 | not_relevant | 0 | 0 | The paper is a narrative review of date palm nutraceuticals and does not report any specific pharmacodynamic or exposure-response data for betacarotene. |
 | popPK | Lee_2016 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
 | PD | Lee_2016 | not_relevant | 0 | 0 | The paper focuses on the extraction of antioxidants from soursop peel and does not involve betacarotene or any pharmacodynamic/exposure-response analysis. |
@@ -273,13 +270,13 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Lima_2024 | not_relevant | 0 | 0 | The paper analyzes essential oils from Cryptomeria japonica and does not mention betacarotene or report any pharmacodynamic or exposure-response data. |
 | PGx | Liu_2003 | not_relevant | 0 | 0 | The study investigates the effect of environmental exposures (cigarette smoke) and drug dosage on enzyme induction in ferrets, not the effect of a specific gene variant or genotype on pharmacokinetics or pharmacodynamics. |
 | PGx | Liu_2023 | not_relevant | 0 | 0 | The paper studies nacre color formation in pearl oysters and mentions beta-carotene metabolism enzymes, but does not report pharmacogenomic effects on PK/PD parameters of betacarotene as a drug. |
-| popPK | Liu_2025 | irrelevant | 0 | 0 | The study is an observational analysis of cognitive outcomes and carotenoid concentrations, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
+| popPK | Liu_2025 | irrelevant | 0 | 0 | The study is an observational analysis of cognitive decline associated with baseline carotenoid levels, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Llopis_2019 | irrelevant | 0 | 0 | The study focuses on β-cryptoxanthin in C. elegans and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Llopis_2019 | not_relevant | 3 | 2 | The paper reports a qualitative dose-response efficacy in a C. elegans model but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect curve for betacarotene. |
-| PGx | Lobo_2013 | not_relevant | 2 | 5 | The paper describes a genetic variant affecting the metabolism of a nutrient (beta-carotene) into a vitamin, not a pharmacokinetic or pharmacodynamic parameter of a drug. |
-| popPK | Lopez-Teros_2017 | irrelevant | 2 | 0 | The study focuses on retinol kinetics and vitamin A equivalence, using betacarotene only as a precursor for bioefficacy assessment rather than reporting quantitative PK parameters (CL, V, ka) for betacarotene itself. |
-| popPK | Luo_2008 | irrelevant | 0 | 0 | The paper analyzes smoking cessation patterns using a stochastic mixed-effects model and does not report any pharmacokinetic parameters for betacarotene. |
-| popPK | Luo_2013 | irrelevant | 0 | 0 | The paper is a statistical methodology study on smoking and insomnia using the ATBC cohort, not a pharmacokinetic study of betacarotene. |
+| PGx | Lobo_2013 | not_relevant | 2 | 5 | The paper describes a genetic variant affecting the metabolism of a dietary nutrient (beta-carotene) into a vitamin, not a pharmacokinetic or pharmacodynamic parameter of a drug. |
+| popPK | Lopez-Teros_2017 | irrelevant | 2 | 0 | The study models retinol (metabolite) kinetics and bioefficacy, but does not report quantitative PK parameters (CL, V, ka) for betacarotene itself, and no numeric PK values are present in the evidence. |
+| popPK | Luo_2008 | irrelevant | 0 | 0 | The paper analyzes smoking cessation patterns in a cohort study and does not report any pharmacokinetic parameters for betacarotene. |
+| popPK | Luo_2013 | irrelevant | 0 | 0 | The paper is a statistical methodology study on smoking and insomnia, using the Alpha-Tocopherol, Beta-Carotene study only as a dataset source, and contains no pharmacokinetic parameters for betacarotene. |
 | PGx | Ma_2022 | not_relevant | 0 | 0 | The paper describes metabolic engineering in E. coli for isoprenoid production, not human pharmacogenomics or PK/PD parameters. |
 | popPK | Makbal_2021 | irrelevant | 0 | 0 | The study focuses on the toxicity and antioxidant properties of an argan fruit shell extract, using the beta-carotene bleaching assay as a chemical antioxidant test rather than studying the pharmacokinetics of betacarotene. |
 | PD | Makbal_2021 | not_relevant | 0 | 0 | The paper reports IC50 values for in vitro antioxidant assays (including beta-carotene bleaching) and acute toxicity (LD50), but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug betacarotene in a biological system. |
@@ -288,7 +285,7 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Marrelli_2014 | irrelevant | 0 | 0 | The study focuses on the chemical composition and in-vitro biological activities of Hypericum perforatum, using beta-carotene only as a reagent in a bleaching assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Marrelli_2014 | not_relevant | 0 | 0 | The paper studies Hypericum perforatum extracts and uses a beta-carotene bleaching test as an antioxidant assay, but does not report a pharmacodynamic or exposure-response relationship for the drug betacarotene. |
 | PGx | McLean_2017 | not_relevant | 0 | 0 | The paper studies the genetic basis of skin coloration in lizards, not the pharmacogenomics of betacarotene as a drug. |
-| popPK | Mizobuchi_2023 | irrelevant | 0 | 0 | The study is a clinical trial assessing ophthalmic outcomes (ERG) of beta-carotene supplementation and does not report any pharmacokinetic parameters. |
+| popPK | Mizobuchi_2023 | irrelevant | 0 | 0 | The study reports clinical outcomes (ERG amplitudes) of beta-carotene supplementation, not pharmacokinetic parameters. |
 | popPK | Mogana_2013 | irrelevant | 0 | 0 | no_text gate: only 176 chars of text extracted (&lt; 400) |
 | PD | Mogana_2013 | not_relevant | 0 | 0 | The paper focuses on the anti-inflammatory properties of Canarium patentinervium and its inhibition of COX and 5-LOX, with no mention of betacarotene or any pharmacodynamic modeling. |
 | PGx | Mooiman_2013 | not_relevant | 0 | 0 | The paper describes an analytical method for CYP3A4 inhibition by beta-carotene and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
@@ -297,61 +294,61 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Mooney_1997 | not_relevant | 0 | 0 | The paper studies the effect of genetic variants on DNA damage and the association with plasma beta-carotene levels, but does not report a pharmacogenomic effect on the PK or PD of beta-carotene itself. |
 | popPK | Moradi-Afrapoli_2020 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | PD | Moradi-Afrapoli_2020 | not_relevant | 0 | 0 | The paper focuses on the isolation of isochlorogenic acid isomers from Artemisia turanica and does not contain any pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Morais_2018 | irrelevant | 0 | 0 | The paper is an in-vitro study on plant extracts using beta-carotene as a reagent in a bleaching assay, not a pharmacokinetic study of beta-carotene as a drug. |
+| popPK | Morais_2018 | irrelevant | 0 | 0 | The paper uses the beta-carotene bleaching assay as an in-vitro antioxidant test method, not as a pharmacokinetic study of beta-carotene disposition. |
 | PD | Morais_2018 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and enzyme inhibition assays (DPPH, tyrosinase) for plant extracts, not a pharmacodynamic exposure-response relationship for the drug betacarotene. |
 | PGx | Moran_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of lycopene and beta-carotene as dietary nutrients, not as drugs, and does not report a pharmacogenomic effect on a drug's PK/PD parameter. |
 | PGx | Moran_2022 | not_relevant | 0 | 0 | The paper investigates the effect of Bco2 genotype on gene expression in response to lycopene, not on the pharmacokinetic or pharmacodynamic parameters of betacarotene. |
-| popPK | Mosbah_2019 | irrelevant | 0 | 0 | The study focuses on the biological activities of isoxazolidine derivatives, using beta-carotene only as a reagent in an in vitro antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Mosbah_2019 | irrelevant | 0 | 0 | The paper uses the beta-carotene/linoleic acid bleaching assay as an in vitro antioxidant test for isoxazolidine derivatives, not as a pharmacokinetic study of betacarotene. |
 | PD | Mosbah_2019 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological potency (EC50/IC50) for synthetic isoxazolidine derivatives, not a pharmacodynamic or exposure-response relationship for the drug betacarotene. |
 | popPK | Mzid_2017 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Mzid_2017 | not_relevant | 0 | 0 | The paper focuses on Urtica urens extracts and does not report any pharmacodynamic or exposure-response data for betacarotene. |
-| popPK | Natarajan_2004 | irrelevant | 0 | 0 | The study focuses on dietary assessment methods and plasma carotenoid concentrations, not pharmacokinetic disposition parameters. |
+| popPK | Natarajan_2004 | irrelevant | 0 | 0 | The study is a dietary assessment validation study correlating intake with plasma concentrations, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Nguyen_2022 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | PD | Nguyen_2022 | not_relevant | 0 | 0 | The paper focuses on the antioxidant potential of seed and kernel marcs, not on the pharmacokinetics or pharmacodynamics of betacarotene. |
-| popPK | Novotny_1995 | relevant | 9 | 2 | The paper describes a compartmental PK model for betacarotene and reports a mean residence time, but specific clearance, volume, or rate constant values are not explicitly listed in the provided text. |
+| popPK | Novotny_1995 | relevant | 9 | 2 | The study reports a compartmental model and qualitative parameters (absorption %, MRT) for beta-carotene in humans, but specific numeric PK values (CL, V, Q) are not explicitly listed in the provided text. |
 | popPK | Novotny_1996 | irrelevant | 0 | 0 | no_text gate: only 126 chars of text extracted (&lt; 400) |
 | popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Nureye_2025 | not_relevant | 0 | 0 | The paper is a review of medicinal plants for hypertension in Ethiopia and does not report any pharmacodynamic or exposure-response analysis for betacarotene. |
 | popPK | Nyayiru_2020 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | Nyayiru_2020 | not_relevant | 0 | 0 | The paper analyzes the phytochemical composition and antioxidant activity of coconut cotyledon, not the pharmacodynamics of betacarotene. |
-| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data or parameters for betacarotene. |
+| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data for betacarotene. |
 | PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain any specific pharmacodynamic or exposure-response data for betacarotene. |
 | popPK | Palozza_1991 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on cosmetic applications of marine bioactives and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a general review on marine bioactives for cosmetics and does not report specific pharmacodynamic or exposure-response data for betacarotene. |
-| PGx | Parvez_2020 | not_relevant | 0 | 0 | The paper studies the bioactivity of a plant extract and does not report any pharmacogenomic effects on the PK or PD of betacarotene. |
-| popPK | Poor_1992 | relevant | 8 | 2 | The study reports a two-compartment PK model for betacarotene in calves, but specific numeric parameter values (CL, V, k2) are not explicitly listed in the provided text. |
+| PGx | Parvez_2020 | not_relevant | 0 | 0 | The paper studies the bioactivity of a plant extract and mentions beta-carotene only as a reagent in an antioxidant assay, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Poor_1992 | relevant | 9 | 2 | The study reports a two-compartment model for beta-carotene in calves, but specific numeric parameter values (CL, V, k2) are not explicitly listed in the provided text, only qualitative descriptions and peak times. |
 | PGx | Poulsen_1998 | not_relevant | 0 | 0 | The paper investigates oxidative DNA damage and CYP1A2 activity, mentioning beta-carotene only as a plasma antioxidant with no significant association, and does not report pharmacogenomic effects on its PK/PD. |
-| popPK | Prakash_2026 | irrelevant | 0 | 0 | The paper is a review of phytochemicals for Type 2 Diabetes and does not mention betacarotene or report any pharmacokinetic parameters. |
+| popPK | Prakash_2026 | irrelevant | 0 | 0 | The paper is a review of phytochemicals (curcumin, berberine, etc.) for Type 2 Diabetes and does not mention betacarotene or report any pharmacokinetic parameters. |
 | PD | Prakash_2026 | not_relevant | 0 | 0 | The text is a review of phytochemicals (curcumin, berberine, etc.) and nanotechnology for T2DM and does not mention betacarotene or report any specific pharmacodynamic or exposure-response data. |
-| popPK | Prom_2022 | irrelevant | 1 | 0 | The study reports serum concentrations of betacarotene in calves but does not provide pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
-| popPK | Qasem_2022 | irrelevant | 0 | 0 | The paper investigates the chemical composition and biological properties of chamomile essential oils, using beta-carotene only as a reagent in an antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Prom_2022 | irrelevant | 2 | 0 | The study reports qualitative changes and spot concentrations of beta-carotene in colostrum and calf serum but does not provide quantitative pharmacokinetic parameters (CL, V, ka, t1/2) or a compartmental model. |
+| popPK | Qasem_2022 | irrelevant | 0 | 0 | The paper investigates the biological properties of chamomile essential oils and uses beta-carotene only as a reagent in an in-vitro antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Qasem_2022 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity using a beta-carotene bleaching assay, but does not report a pharmacodynamic exposure-response relationship for the drug betacarotene itself. |
-| popPK | Rajauria_2019 | irrelevant | 0 | 0 | The paper is an in-vitro study on antioxidant properties of seaweed extracts and does not report any pharmacokinetic parameters for betacarotene. |
+| popPK | Rajauria_2019 | irrelevant | 0 | 0 | The study is an in-vitro analysis of antioxidant properties and chemical composition of seaweed extracts, not a pharmacokinetic study of betacarotene. |
 | PD | Rajauria_2019 | not_relevant | 0 | 0 | The paper reports in-vitro antioxidant assays (EC50) for crude seaweed extracts, not a pharmacodynamic exposure-response relationship for the specific drug betacarotene. |
 | popPK | Ramamurthy_2012 | irrelevant | 0 | 0 | The study is an in-vitro antioxidant assay using beta-carotene as a probe molecule, not a pharmacokinetic study of betacarotene disposition. |
 | PD | Ramamurthy_2012 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant assays (IC50, % inhibition) for plant extracts, not a pharmacodynamic exposure-response or dose-response relationship for the drug betacarotene in a biological system. |
 | popPK | Renner_1985 | irrelevant | 0 | 0 | The study focuses on the anticlastogenic (genotoxic) effects of beta-carotene in an in vivo model and does not report any pharmacokinetic parameters. |
 | popPK | Romert_1994 | irrelevant | 0 | 0 | The study is an in-vitro mutagenicity screening assay and does not report any pharmacokinetic parameters for betacarotene. |
 | PD | Romert_1994 | not_relevant | 1 | 0 | The paper is a qualitative screening study of antimutagenic activity in vitro; it does not report numeric PD parameters (e.g., IC50, Emax) or a quantitative exposure-response model for beta-carotene. |
-| PGx | Rühl_2004 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic effect of carotenoids as PXR agonists, but does not report how a gene variant changes the PK/PD of betacarotene. |
-| PGx | Sakoda_2011 | not_relevant | 0 | 0 | The paper investigates the association between genetic variants and lung cancer risk, not the pharmacokinetic or pharmacodynamic parameters of betacarotene. |
+| PGx | Rühl_2004 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic mechanism of carotenoids as PXR agonists but does not report any pharmacogenomic effect (gene variant/genotype) on the PK or PD of beta-carotene. |
+| PGx | Sakoda_2011 | not_relevant | 0 | 0 | The paper investigates the association between genetic variants and lung cancer risk, not the pharmacokinetic or pharmacodynamic parameters of beta-carotene. |
 | PGx | Sakoda_2012 | not_relevant | 0 | 0 | The paper investigates the association between nucleotide excision repair gene variants and lung cancer risk, not the pharmacokinetics or pharmacodynamics of betacarotene. |
-| PGx | Satomi_2013 | not_relevant | 0 | 0 | The paper studies the effect of fucoxanthin on CYP enzyme activity, not the effect of a gene variant on the PK/PD of betacarotene. |
-| popPK | Sena_2024 | irrelevant | 0 | 0 | The paper is a pharmacological study on plant extracts where betacarotene is used only as a component in an antioxidant assay, not as a subject drug for PK analysis. |
+| PGx | Satomi_2013 | not_relevant | 0 | 0 | The paper studies the effect of fucoxanthin on CYP enzymes, not the effect of a gene variant on the PK/PD of betacarotene. |
+| popPK | Sena_2024 | irrelevant | 0 | 0 | The paper studies the chemical composition and antioxidant activity of plant extracts, using beta-carotene only as a component in an in-vitro antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Sena_2024 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological activities (antioxidant, antiviral, etc.) of plant extracts, not a pharmacodynamic or exposure-response relationship for the drug betacarotene. |
-| PGx | Sestili_2019 | not_relevant | 0 | 0 | The paper describes plant biofortification of wheat with beta-carotene, not the pharmacogenomics of beta-carotene metabolism in humans. |
+| PGx | Sestili_2019 | not_relevant | 0 | 0 | The paper describes plant biofortification of wheat with beta-carotene, not the pharmacogenomics of beta-carotene as a drug in humans. |
 | popPK | Shakeri_2024 | irrelevant | 0 | 0 | The study focuses on the antifungal and antioxidant properties of a plant extract, using the beta-carotene bleaching test only as a method to measure antioxidant activity, not as a pharmacokinetic subject. |
 | PD | Shakeri_2024 | not_relevant | 0 | 0 | The paper reports IC50 values for a plant extract in a chemical antioxidant assay (beta-carotene bleaching), not a pharmacodynamic exposure-response relationship for the drug betacarotene. |
-| popPK | Sherin_2015 | irrelevant | 0 | 0 | The paper is a chemistry study on the synthesis and antioxidant activity of curcumin derivatives, using the beta-carotene bleaching assay as a diagnostic tool rather than studying the pharmacokinetics of betacarotene. |
+| popPK | Sherin_2015 | irrelevant | 0 | 0 | The paper describes the synthesis and antioxidant activity of curcumin derivatives using a beta-carotene bleaching assay, which is a chemical stability test, not a pharmacokinetic study of betacarotene. |
 | PD | Sherin_2015 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50) for curcumin derivatives, not a pharmacodynamic or exposure-response relationship for the drug betacarotene. |
 | popPK | Sicari_2020 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
 | PD | Sicari_2020 | not_relevant | 0 | 0 | The paper analyzes the effect of blanching on phytochemical content and bioactivity in vegetables, not the pharmacokinetics or pharmacodynamics of betacarotene in a biological system. |
 | popPK | Silva_2016 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Silva_2016 | not_relevant | 0 | 0 | The paper focuses on the chemical composition and general pharmacological properties of Lippia thymoides essential oils, not on betacarotene or any quantitative exposure-response relationship. |
 | PGx | Southard_2012 | not_relevant | 0 | 0 | The paper investigates the association between lead, calcium, and genetic variants with renal cell carcinoma risk, not the pharmacokinetics or pharmacodynamics of betacarotene. |
-| PGx | Sowa_2017 | not_relevant | 0 | 0 | The paper studies carotenoid retention in food matrices during cooking and storage, not the pharmacokinetics or pharmacodynamics of betacarotene in humans influenced by genetic variants. |
-| PGx | Srinivasagan_2024 | not_relevant | 2 | 5 | The paper investigates the metabolic effects of maternal beta-carotene intake and ISX genotype on offspring obesity and lipid metabolism, not the pharmacokinetic or pharmacodynamic parameters of beta-carotene itself as a drug. |
+| PGx | Sowa_2017 | not_relevant | 0 | 0 | The paper focuses on food processing and storage stability of carotenoids, not on human pharmacogenomics or PK/PD parameters. |
+| PGx | Srinivasagan_2024 | not_relevant | 2 | 5 | The study investigates the metabolic effects of maternal beta-carotene intake in a genetic mouse model (ISX-deficient) on offspring obesity, rather than reporting a pharmacogenomic effect on the PK/PD parameters of beta-carotene itself. |
 | popPK | Stark_1990 | irrelevant | 0 | 0 | The study is a mechanistic investigation of photopigment formation in Drosophila, not a pharmacokinetic study, and reports no disposition parameters for betacarotene. |
 | PD | Stark_1990 | not_relevant | 4 | 2 | The paper describes qualitative monotonic dose-response curves for photopigment formation in Drosophila but does not provide numeric PD parameters (e.g., EC50, Emax) or quantitative concentration-effect data in the provided text. |
 | PGx | Stewart_2014 | not_relevant | 0 | 0 | The paper discusses the metabolic pathway of lycopene and beta-carotene in the context of body odor, but does not report a pharmacogenomic effect (gene variant) on a PK or PD parameter of beta-carotene. |
@@ -359,7 +356,7 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Sutanto_2022 | not_relevant | 0 | 0 | The paper studies naringenin, not betacarotene, and focuses on in silico electrophysiology rather than pharmacodynamic modeling of the target drug. |
 | popPK | Tayebi_2026 | irrelevant | 0 | 0 | The study investigates the lipid-lowering effects of basil-enriched soybean oil in mice and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Tayebi_2026 | not_relevant | 0 | 0 | The paper studies Basil-Enriched Soybean Oil (BEO) and does not mention betacarotene or report any pharmacodynamic parameters. |
-| popPK | Tebbens_2018 | irrelevant | 0 | 0 | The paper is a review of mathematical models for PXR-regulated CYP induction and does not report pharmacokinetic parameters for betacarotene. |
+| popPK | Tebbens_2018 | irrelevant | 0 | 0 | The paper is a review of mathematical models for PXR-regulated CYP enzyme induction and does not report pharmacokinetic parameters for betacarotene. |
 | PD | Tebbens_2018 | not_relevant | 0 | 0 | The paper is a review of mathematical models for PXR-regulated CYP induction and does not report any specific pharmacodynamic or exposure-response data for betacarotene. |
 | PGx | Teng_2016 | not_relevant | 0 | 0 | The paper investigates the pharmacological effect of beta-carotene on P-glycoprotein function in cancer cells, not the effect of a genetic variant on the PK/PD of beta-carotene. |
 | PGx | Thomas_2020 | not_relevant | 0 | 0 | The paper characterizes the enzymatic activity of BCO2 on carotenoids in vitro and in cell lines, but does not report pharmacokinetic or pharmacodynamic parameters of betacarotene in humans stratified by genotype. |
@@ -371,18 +368,18 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Uehara_1996 | not_relevant | 0 | 0 | The study investigates the chemopreventive effects of beta-carotene on DNA adducts in rats and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Vara_2020 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
 | PD | Vara_2020 | not_relevant | 0 | 0 | The paper analyzes the composition and antimicrobial/antioxidant activities of red raspberry, not the pharmacodynamics of betacarotene. |
-| popPK | Wang_2012 | irrelevant | 0 | 0 | The paper focuses on the preparation and antioxidant activity of peptides from shark muscle, using betacarotene only as a component in an in-vitro lipid peroxidation assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Wang_2012 | irrelevant | 0 | 0 | The paper studies antioxidant peptides from shark muscle and uses a beta-carotene linoleic acid assay for antioxidant activity, not the pharmacokinetics of betacarotene. |
 | PD | Wang_2012 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity of peptides, not a pharmacodynamic or exposure-response relationship for the drug betacarotene. |
-| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper reports metabolic engineering of yeast to produce beta-carotene, not a pharmacogenomic study of human drug metabolism. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper focuses on metabolic engineering of yeast to produce beta-carotene, not on human pharmacogenomics or the PK/PD of beta-carotene as a drug. |
 | popPK | Wang_2022 | irrelevant | 0 | 0 | The study uses beta-carotene only as a substrate for an in-vitro antioxidant assay (beta-carotene oxidation inhibition) and does not report any pharmacokinetic parameters for beta-carotene. |
 | PD | Wang_2022 | not_relevant | 0 | 0 | The paper studies protein hydrolysates and uses beta-carotene only as a substrate in an in vitro oxidation assay, not as a drug subject to pharmacodynamic modeling. |
 | PGx | Wang_2025 | not_relevant | 0 | 0 | The paper studies genetic variation in insect scutellum color and beta-carotene content in a pest species, not human pharmacogenomics or drug PK/PD. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The study is a microbiome/metabolomics trial where betacarotene is identified as a metabolite mediator, not a pharmacokinetic study of the drug. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The study is an environmental health trial examining microbiota and metabolomics, not a pharmacokinetic study of betacarotene disposition. |
 | popPK | Watson_1991 | irrelevant | 2 | 0 | The study focuses on immunological effects (lymphocyte subpopulations) and mentions plasma concentrations qualitatively but does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for betacarotene. |
 | popPK | Xu_1992 | irrelevant | 2 | 0 | The study focuses on the interaction between beta-carotene and alpha-tocopherol levels rather than reporting quantitative pharmacokinetic parameters (CL, V, ka) for beta-carotene itself. |
 | PD | Xu_1992 | not_relevant | 3 | 2 | The study reports a qualitative dose-response observation (similar decreases across doses) and a time-dependent effect (40% decrease at 9 months), but it explicitly concludes there is no significant dose-response relationship and does not provide numeric PD parameters (Emax, EC50) or a fitted concentration-effect curve. |
 | PGx | Yasui_2002 | not_relevant | 0 | 0 | The paper investigates the mechanism of P450 oxidation involving singlet oxygen and uses beta-carotene as a quencher, not as a drug subject to pharmacogenomic analysis. |
-| PGx | Yeh_2006 | not_relevant | 0 | 0 | The study investigates the effects of quercetin on beta-carotene-induced toxicity in cell lines and does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Yeh_2006 | not_relevant | 0 | 0 | The study investigates the effects of quercetin on beta-carotene-induced toxicity in cell lines and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Younsi_2017 | irrelevant | 0 | 0 | no_text gate: only 178 chars of text extracted (&lt; 400) |
 | PD | Younsi_2017 | not_relevant | 0 | 0 | The paper focuses on the variability of essential oils in Artemisia species and their antiacetylcholinesterase/antioxidant activities, with no mention of betacarotene or any pharmacodynamic modeling. |
 | popPK | Zalazar_2019 | irrelevant | 0 | 0 | no_text gate: only 155 chars of text extracted (&lt; 400) |
@@ -394,8 +391,7 @@ _41 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Zhao_2021 | not_relevant | 0 | 0 | The paper investigates carotenoid biosynthesis in plant genotypes (pomelo), not human pharmacogenomics or drug PK/PD. |
 | popPK | da_2011 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | da_2011 | not_relevant | 0 | 0 | The paper focuses on Piper krukoffii essential oils and extracts, not betacarotene, and does not report any pharmacodynamic or exposure-response relationships for the target compound. |
-| PGx | van_2011 | not_relevant | 0 | 0 | The paper investigates gene expression changes and testosterone levels in Bcmo1 knockout mice, not the pharmacokinetic or pharmacodynamic parameters of beta-carotene itself. |
 | PGx | von_2012 | not_relevant | 2 | 0 | The paper is a general review of provitamin A metabolism and mentions genetic polymorphisms qualitatively but does not report specific quantitative pharmacogenomic effects on PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 07:09 UTC</sub>

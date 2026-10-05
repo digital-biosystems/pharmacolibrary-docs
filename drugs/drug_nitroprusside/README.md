@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Nitroprusside serves as a source of nitric oxide, a potent peripheral vasodilator that affects both arterioles and venules (venules more than arterioles). Nitroprusside is often administered intravenously to patients who are experiencing a hypertensive emergency.
+Nitroprusside is a vasodilator drug used as an antihypertensive, acting as a nitric oxide donor. It is an approved medicine and appears on the WHO list of essential medicines, so it remains in clinical use, though it is not authorised in the European Union.
 
-**Indication.** For immediate reduction of blood pressure of patients in hypertensive crises, reduce bleeding during surgery, and for the treatment of acute congestive heart failure
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420031](https://www.wikidata.org/wiki/Q420031) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,11 +46,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…Metabolized by reaction with hemoglobin…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor | DrugBank actor |
-| excretion | blood | <sub>“…metabolized by combination with hemoglobin…”</sub> | prose |
-| excretion | kidney | <sub>“…thiocyanate is eliminated in the urine…”</sub> | prose |
+| excretion | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GUCY1A1 (modulator), GUCY1B1 (modulator), ITPR1 (target), ITPR2 (target), ITPR3 (target), NPR1 (target).</sub>
 

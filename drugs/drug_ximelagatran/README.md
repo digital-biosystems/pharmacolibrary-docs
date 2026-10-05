@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ximelagatran is an anticoagulant intended to become a replacement for warfarin by overcoming the dietary restrictions, drug interaction, and monitoring issues associated with the former. In 2006, its manufacturer AstraZeneca announced that it would not attempt to market ximelagatran after reports of hepatotoxicity (liver damage) during trials, and to discontinue its distribution in countries where the drug had been approved.
+Ximelagatran is an anticoagulant (direct thrombin inhibitor) that was studied extensively as a possible replacement for warfarin, including for atrial fibrillation. It is no longer used: it was withdrawn from the market, and its marketing application in the European Union was withdrawn.
 
-**Indication.** For the treatment of acute deep vein thrombosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3570984](https://www.wikidata.org/wiki/Q3570984) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,7 +33,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly absorbed by the small intestine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C9` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: F2 (inhibitor).</sub>

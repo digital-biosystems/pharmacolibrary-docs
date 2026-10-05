@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Quinupramine has been approved in France under the brand name Kinupril, as an antidepressant [A175003].
+Quinupramine is a tricyclic antidepressant used to treat depression. It is an approved antidepressant, classified among non-selective monoamine reuptake inhibitors, though it is not widely used today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7272541](https://www.wikidata.org/wiki/Q7272541) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

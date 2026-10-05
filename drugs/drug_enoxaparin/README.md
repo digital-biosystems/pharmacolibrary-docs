@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Enoxaparin is a common low-molecular-weight heparin (LMWH) used in the prevention and management of various thromboembolic disorders. Initially approved by the FDA in 1993, it is administered by a subcutaneous or intravenous injection and marketed by several pharmaceutical companies.[L31393] Enoxaparin markedly reduces the incidence of venous thromboembolism in hospitalized patients when compared to unfractionated [heparin], without increasing the risk of serious bleeding.[A228178,A228313]
+Enoxaparin is a low molecular weight heparin used as an antithrombotic to prevent and treat blood clots. It is an approved medicine and is widely used in human medicine.
 
-**Indication.** Enoxaparin is indicated for the prevention of ischemic complications in unstable angina and in non Q-wave myocardial infarction; it is indicated in conjunction with percutaneous intervention and/or other treatment for the management of acute ST elevation myocardial infarction.[L31393]
-
-Enoxaparin is also indicated in the prophylaxis of DVT in abdominal surgery, hip replacement, knee replacement, or medical patients with severely restricted mobility during acute illness. Additionally, enoxaparin is indicated for the inpatient treatment of DVT with or without pulmonary embolism and the treatment of outpatient DVT without pulmonary embolism.[L31393]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q105969996](https://www.wikidata.org/wiki/Q105969996) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +32,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…mainly metabolized by the liver via desulfation and/or depolymerization…”</sub> | prose |
-| excretion | kidney | <sub>“…Enoxaparin is mainly excreted by the kidneys…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (inhibitor), F2 (inhibitor), MPO (other), SERPINC1 (potentiator).</sub>
 

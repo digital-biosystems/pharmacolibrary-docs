@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Capecitabine is an orally-administered chemotherapeutic agent used in the treatment of metastatic breast and colorectal cancers. Capecitabine is a prodrug, that is enzymatically converted to fluorouracil (antimetabolite) in the tumor, where it inhibits DNA synthesis and slows growth of tumor tissue.
+Capecitabine is an antimetabolite cancer medicine used to treat various cancers, including breast, colorectal, gastric, and other gastrointestinal tumours. It is widely used and is included on the WHO essential medicines list, with several products authorised in the European Union for bowel, breast, and stomach cancers.
 
-**Indication.** Capecitabine is indicated as treatment for a variety of cancer types. For colorectal cancer, capecitabine is indicated as a single agent or a component of a combination chemotherapy regiment for the adjuvant treatment of stage III colon cancer and treatment unresectable or metastatic colorectal cancer. It can also be used as a part of a combination chemotherapy perioperative treatment of adult locally advanced rectal cancer.[L44657] For breast cancer, capecitabine is indicated for advanced or metastatic breast cancer as a single agent if an anthracycline- or taxane-containing chemotherapy is not indicated or as a regimen with docetaxel after disease progression on prior anthracycline-containing chemotherapy.[L44657] For gastric, esophageal, or gastroesophageal junction (GEJ) cancer, capecitabine is indicated as a component of a combination chemotherapy treatment for the treatment of adult unresectable or metastatic gastric, esophageal, or GEJ cancer or adult HER2-overexpressing metastatic gastric or GEJ adenocarcinoma who have not received prior treatment for metastatic disease.[L44657] Finally, for pancreatic cancer, capecitabine is indicated as adjuvant treatment for adult pancreatic adenocarcinoma as a component of a combination chemotherapy regimen.[L44657]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420207](https://www.wikidata.org/wiki/Q420207) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -114,8 +114,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CES1` substrate, `CES2` formation, `CYP2C19` formation, `CYP2C9` downregulator/inhibitor/metabolism, `DPYD` metabolism, `GSTP1` metabolism, `TPMT` metabolism, `UGT1A1` metabolism | DrugBank actor |
 | metabolism | lung | `GSTP1` metabolism | paper PGx gene |
 | metabolism | small intestine | `CES2` formation, `UGT1A1` metabolism | paper PGx gene |
-| excretion | bile duct | <sub>“…2.6% in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…96% of the administered capecitabine dose was recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCA2 (transport), ABCB2 (transport), ABCG5 (transport), CDA (metabolism), CDA (substrate), DNA (incorporation into and destabilization), DNA (inhibition of synthesis), DPDY (metabolism), HLA-B (safety_allele), MTHFR (metabolism), RAF (target), RAS (target), RNA (incorporation into and destabilization), TSYM (target), TYMP (formation), TYMP (substrate), TYMS (inhibitor), TYMS (target), UPP1 (substrate), UPP2 (substrate), VKORC1 (target).</sub>
 

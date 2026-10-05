@@ -10,22 +10,30 @@
 
 ## About
 
-**Description.** Mazindol is a tricyclic anorexigenic agent that is unrelated to and less toxic than [amphetamine], but with some similar side effects. It inhibits uptake of catecholamines and blocks the binding of cocaine to the dopamine uptake transporter. Mazindol is only approved in the United States for the treatment of Duchenne muscular dystrophy, and is not marketed or available in the United States for use in the treatment of obesity.
+Mazindol is a stimulant appetite suppressant used to treat obesity. It has approved status but is not authorised by the European Medicines Agency, so its availability today is limited.
 
-**Indication.** Used in short-term (a few weeks) treatment of exogenous obesity in conjunction with a regimen of weight reduction based on caloric restriction, exercise, and behavior modification in patients with a body mass index of 30 kg of body weight per height in meters squared (kg/m<sup>2</sup>) or in patients with a body mass index of 27 kg/m<sup>2</sup> in the presence of risk factors such as hypertension, diabetes, or hyperlipidemia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q255680](https://www.wikidata.org/wiki/Q255680) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| mazindol | parent | 284.74 | C16H13ClN2O | DrugBank | [4020](https://pubchem.ncbi.nlm.nih.gov/compound/4020) | Konofal_2014 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 01:05 | 7:16 | 0/0/2 | 0/0/0 | 0/0/0 | 39,975/14,190 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/1 | 2/0 | 0 |
+| 2026-10-04 20:34 | 4:04 | 2/0/0 | 0/0/0 | 0/0/0 | 63,248/10,646 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_basic_model](drugs/drug_mazindol/Mazindol_Konofal2014_basic_model.md) | held back | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_final](drugs/drug_mazindol/Mazindol_Konofal2014_final.md) | held back | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Konofal_2014_basic_model](drugs/drug_mazindol/Mazindol_Konofal2014_basic_model.md) | held back | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Konofal_2014_final](drugs/drug_mazindol/Mazindol_Konofal2014_final.md) | held back | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
 
 ## ADME sites
 
@@ -33,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -49,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -62,17 +70,19 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Johnson_1992.pdf` | Johnson KM et al., Cocaine and dopamine differentially pro…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0922-4106(92)90159-s](https://doi.org/10.1016/0922-4106(92)90159-s) | [1446711](https://www.ncbi.nlm.nih.gov/pubmed/1446711) | metadata signals extractable PD data (EC50) |
 | `Schoretsanitis_2019.pdf` | Schoretsanitis G et al., Clinically Significant Drug-Drug Intera…, CNS drugs (2019) | pgx | 8 | [10.1007/s40263-019-00683-7](https://doi.org/10.1007/s40263-019-00683-7) | [31776871](https://www.ncbi.nlm.nih.gov/pubmed/31776871) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-09-22T07:19:59.125412+00:00</sub>
+<sub>queue written 2026-10-04T20:30:40.561355+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Böhm_1995 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
-| popPK | Janowsky_2016 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study of adenine nucleoside derivatives where mazindol is used only as a radioligand for binding assays, not as the subject of pharmacokinetic analysis. |
+| popPK | Janowsky_2016 | irrelevant | 0 | 0 | Mazindol is used only as a radioligand for binding assays in this in-vitro study of DAT modulators, not as the subject of a pharmacokinetic study. |
 | popPK | Johnson_1992 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
-| popPK | Johnson_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter-mediated efflux in cell lines, not a pharmacokinetic study reporting disposition parameters for mazindol. |
-| popPK | Richfield_1991 | irrelevant | 0 | 0 | The study is an in-vitro binding/autoradiography study where mazindol is used only as a non-specific binding blank, not as the subject of pharmacokinetic analysis. |
+| popPK | Johnson_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter-mediated efflux in cell lines, not a pharmacokinetic study of mazindol disposition. |
+| PGx | Niwa_2008 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP2D-mediated neurosteroid metabolism by mazindol, not the effect of genetic variants on mazindol's PK/PD. |
+| popPK | Richfield_1991 | irrelevant | 0 | 0 | The study is an in vitro binding/autoradiography analysis of the dopamine uptake complex in rat brain, not a pharmacokinetic study of mazindol. |
+| PGx | Schoretsanitis_2019 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions for ADHD agents and does not report pharmacogenomic effects on mazindol. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-22 07:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 20:30 UTC</sub>

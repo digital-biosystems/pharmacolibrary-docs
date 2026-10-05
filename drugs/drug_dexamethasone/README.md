@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Dexamethasone, or MK-125, is a corticosteroid fluorinated at position 9 used to treat endocrine, rheumatic, collagen, dermatologic, allergic, ophthalmic, gastrointestinal, respiratory, hematologic, neoplastic, edematous, and other conditions.[L10701] Developed in 1957, it is structurally similar to other corticosteroids like [hydrocortisone] and [prednisolone].[A188724]
+Dexamethasone is a corticosteroid used for many conditions, including inflammation, autoimmune disease, several cancers and lymphomas, cerebral and macular edema, Addison's disease, and COVID-19. It is widely used, appears on the WHO essential medicines list, is approved for human and veterinary use, and is authorised in the European Union for indications such as multiple myeloma, uveitis, and COVID-19.
 
-Dexamethasone was granted FDA approval on 30 October 1958.[L10695] In a press release for the Randomized Evaluation of COVID-19 Therapy (RECOVERY) trial on 16 June 2020, dexamethasone was recommended for use in COVID-19 patients with severe respiratory symptoms. Dexamethasone reduced deaths by approximately one third in patients requiring ventilation and by one fifth in those requiring oxygen.[L14318]
-
-**Indication.** Dexamethasone and [ciprofloxacin] otic suspension is indicated for bacterial infections with inflammation in acute otitis media and acute otitis externa.[L10698] Intramuscular and intravenous injections are indicated for a number of endocrine, rheumatic, collagen, dermatologic, allergic, ophthalmic, gastrointestinal, respiratory, hematologic, neoplastic, edematous, and other conditions.[L10701] Oral tablets are indicated for the treatment of multiple myeloma.[L10710] An intravitreal implant is indicated for some forms of macular edema and non-infectious posterior uveitis affecting the posterior of the eye.[L10719] Various ophthalmic formulations are indicated for inflammatory conditions of the eye.[L10704,L10707,L10713,L10716,L10722,L10725]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422252](https://www.wikidata.org/wiki/Q422252) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -64,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| absorption | skeletal muscle | <sub>“…Absorption via the intramuscular route…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |

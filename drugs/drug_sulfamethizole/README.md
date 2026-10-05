@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A sulfathiazole antibacterial agent.
+Sulfamethizole is a sulfonamide antibiotic used to treat urinary tract infections and other gram-negative bacterial infections. It is an approved medicine, also approved for veterinary use, and appears in products for systemic, topical, eye, and irrigating use.
 
-**Indication.** For the treatment of urinary tract infection
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3976824](https://www.wikidata.org/wiki/Q3976824) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

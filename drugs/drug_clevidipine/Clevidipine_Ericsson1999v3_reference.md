@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;clevidipine&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/&quot;},{&quot;label&quot;:&quot;Ericsson_1999_3 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clevidipine_Bailey2002_reference&quot;,&quot;label&quot;:&quot;Bailey_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Ericsson2001_reference&quot;,&quot;label&quot;:&quot;Ericsson_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Vuylsteke2000_reference&quot;,&quot;label&quot;:&quot;Vuylsteke_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -18,13 +19,13 @@
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and the metabolite H 152/81 is an orphan compartment with no elimination path.**
+**The clevidipine record was rejected because the abstract-only source reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and the metabolite H 152/81 is unlinked from the dose.**
 
-The paper is an exposure/outcome study that reports only half-lives (12 s and 20 s) without the volume or clearance parameters required for a compartmental model. The metabolite H 152/81 is defined as an orphan compartment because it has no elimination rate or further links. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
+The paper (rats, rabbits, and dogs) is an exposure/outcome study read from the abstract alone, so reported summary statistics stood in for a fitted model; only half-lives are given (t1/2z 12 s in the rabbit, t1/2α 20 s in the rat), with no volume or clearance parameters. The hydrolysis link from clevidipine to the metabolite H 152/81 carries no link parameter, leaving the metabolite without a path from the dose. A second reader disagreed on whether the clevidipine–H 152/81 hydrolysis link exists and on which species each half-life value (12 s and 20 s) belongs to. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (hydrolysis), the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ericsson H et al., Pharmacokinetics of new calcium channel…, Drug metabolism and disposi… (1999)

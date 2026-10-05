@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Factor IX (or Christmas factor) is one of the serine proteases of the coagulation system; it belongs to peptidase family S1. Deficiency of this protein causes hemophilia B.
+Coagulation factor IX is a blood-clotting protein medicine used to treat or prevent bleeding in people with hemophilia B (factor IX deficiency). It is an approved treatment, given by infusion, and is used widely for hemophilia B care.
 
-**Indication.** Factor IX is used to treat Christmas disease. Factor IX deficiency is treated by injection factor IX produced from human plasma.
-
-Along with other blood coagulation factors, it is used to reverse acquired coagulation factor deficiency induced by Vitamin K antagonist (VKA, e.g., warfarin) therapy in adult patients with a need for an urgent surgery/invasive procedure.[L50517]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801778](https://www.wikidata.org/wiki/Q20801778) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

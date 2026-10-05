@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Alvimopan is a peripherally acting μ opioid antagonist. It is used to avoid postoperative ileus following small or large bowel resection and accelerates the gastrointestinal recovery period.
+Alvimopan is a peripheral opioid receptor antagonist used to treat constipation, notably opioid-induced bowel dysfunction. It is an approved medicine, mainly used in the United States, and is not authorised in the European Union; it carries a boxed warning.
 
-**Indication.** Used to accelerate the time to upper and lower gastrointestinal recovery following partial large or small bowel resection surgery with primary anastomosis. Also investigated for use in the treatment of pain (acute or chronic).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4738021](https://www.wikidata.org/wiki/Q4738021) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 14:52 | 2:41 | 0/0/0 | 0/0/0 | 0/0/0 | 33,082/2,124 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-04 15:03 | 0:26 | 0/0/0 | 0/0/0 | 0/0/0 | 10,130/658 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
 
 ## popPK records
 
@@ -30,11 +30,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…slower absorption dependent on dissociation from the receptor and subsequently low oral bi…”</sub> | prose |
-| metabolism | small intestine | <sub>“…primarily metabolized by intestinal flora…”</sub> | prose |
-| excretion | bile duct | <sub>“…Biliary secretion was considered the primary pathway for alvimopan elimination…”</sub> | prose |
-| excretion | kidney | <sub>“…urine (35%)…”</sub> | prose |
-| excretion | small intestine | <sub>“…Unabsorbed drug and unchanged alvimopan resulting from biliary excretion were then hydroly…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 
@@ -57,10 +57,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Foss_2008.pdf` | Foss JF et al., Pharmacokinetics of alvimopan and its m…, Clinical pharmacology and t… (2008) | popPK | 10 | [10.1038/sj.clpt.6100292](https://doi.org/10.1038/sj.clpt.6100292) | [17653140](https://pubmed.ncbi.nlm.nih.gov/17653140) | The paper describes a population PK model for alvimopan but the provided evidence contains only qualitative descriptions and relative percentage changes, lacking the specific numeric parameter values (CL, V, etc.). |
-| `Schmith_2010.pdf` | Schmith VD et al., The effects of a short course of antibi…, Journal of clinical pharmac… (2010) | popPK | 8 | [10.1177/0091270009347474](https://doi.org/10.1177/0091270009347474) | [19797535](https://pubmed.ncbi.nlm.nih.gov/19797535) | The study is a PK interaction study for alvimopan, but the evidence only provides relative changes (percentages) and lacks specific quantitative disposition parameters (CL, V, ka) or absolute concentration values. |
+| `Foss_2008.pdf` | Foss JF et al., Pharmacokinetics of alvimopan and its m…, Clinical pharmacology and t… (2008) | popPK | 10 | [10.1038/sj.clpt.6100292](https://doi.org/10.1038/sj.clpt.6100292) | [17653140](https://pubmed.ncbi.nlm.nih.gov/17653140) | The paper describes a population PK model for alvimopan but the provided evidence contains only qualitative descriptions and percentage changes, with no specific numeric parameter values (CL, V, etc.) present. |
+| `Schmith_2010.pdf` | Schmith VD et al., The effects of a short course of antibi…, Journal of clinical pharmac… (2010) | popPK | 8 | [10.1177/0091270009347474](https://doi.org/10.1177/0091270009347474) | [19797535](https://pubmed.ncbi.nlm.nih.gov/19797535) | The study reports pharmacokinetic parameters (Cmax, AUC) for alvimopan, but the evidence only provides percentage changes and metabolite reduction rates, lacking the absolute numeric values for clearance, volume, or half-life. |
 
-<sub>queue written 2026-09-18T14:51:56.729184+00:00</sub>
+<sub>queue written 2026-10-04T15:03:18.282646+00:00</sub>
 
 ## Screened and excluded
 
@@ -69,22 +69,22 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Anantharamu_2015 | irrelevant | 0 | 0 | The paper is a review focused on naloxegol, and alvimopan is only mentioned as a comparator/early drug without providing specific quantitative PK parameters for it. |
 | popPK | Armstrong_2013 | irrelevant | 0 | 0 | The study is a preclinical pharmacodynamic comparison where alvimopan serves only as a comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Armstrong_2013 | not_relevant | 1 | 0 | The text is an abstract describing qualitative efficacy comparisons in preclinical models without reporting specific numeric PD parameters (e.g., ED50, IC50) or concentration-effect curves for alvimopan. |
-| popPK | Bream-Rouwenhorst_2009 | irrelevant | 1 | 0 | The paper is a clinical review of efficacy and safety that does not report original quantitative pharmacokinetic parameter values (e.g., CL, V, ka) for alvimopan. |
+| popPK | Bream-Rouwenhorst_2009 | irrelevant | 2 | 0 | This is a clinical review article that discusses the efficacy and safety of alvimopan but does not report original quantitative pharmacokinetic parameter values (CL, V, ka, etc.). |
 | PD | Bream-Rouwenhorst_2009 | not_relevant | 1 | 0 | The text is a clinical review summarizing efficacy and safety outcomes without reporting specific pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters (e.g., Emax, EC50). |
-| popPK | Foss_2008 | relevant | 10 | 0 | The paper describes a population PK model for alvimopan but the provided evidence contains only qualitative descriptions and relative percentage changes, lacking the specific numeric parameter values (CL, V, etc.). |
+| popPK | Foss_2008 | relevant | 10 | 0 | The paper describes a population PK model for alvimopan but the provided evidence contains only qualitative descriptions and percentage changes, with no specific numeric parameter values (CL, V, etc.) present. |
 | popPK | Holzer_2008 | irrelevant | 0 | 0 | The paper is a narrative review discussing the mechanism and clinical development of alvimopan, containing no original pharmacokinetic data or quantitative disposition parameters. |
 | PD | Holzer_2008 | not_relevant | 1 | 0 | The text is a qualitative review of the mechanism and clinical development of alvimopan, containing no numeric PD parameters, concentration-effect data, or dose-response curves. |
-| popPK | Holzer_2010 | irrelevant | 0 | 0 | The paper is a narrative review of opioid antagonists and does not report original quantitative pharmacokinetic parameters for alvimopan. |
+| popPK | Holzer_2010 | irrelevant | 0 | 0 | This is a narrative review of opioid antagonists that discusses alvimopan's clinical use but does not report any quantitative pharmacokinetic parameters or models. |
 | popPK | Kraft_2008 | irrelevant | 0 | 0 | The paper is a review of methylnaltrexone for postoperative ileus and mentions alvimopan only as an approved comparator, providing no pharmacokinetic parameters for alvimopan. |
 | PD | Kraft_2008 | not_relevant | 0 | 0 | The text is a review of methylnaltrexone and only mentions alvimopan's approval without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
-| popPK | Leslie_2005 | irrelevant | 2 | 0 | The paper is a narrative review of alvimopan's pharmacology and clinical efficacy, and the provided evidence contains no quantitative pharmacokinetic parameter values (e.g., CL, V, ka). |
+| popPK | Leslie_2005 | irrelevant | 2 | 0 | This is a narrative review of alvimopan's clinical efficacy and safety, and the provided evidence contains no quantitative pharmacokinetic parameter values (e.g., CL, V, t1/2). |
 | PD | Leslie_2005 | not_relevant | 1 | 0 | The text is a review article summarizing clinical efficacy and safety without providing specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response data. |
-| popPK | Mousavi_2023 | irrelevant | 1 | 0 | The paper is a narrative review of pharmacotherapy for opioid-induced bowel dysfunction and does not report original quantitative pharmacokinetic parameters for alvimopan. |
-| popPK | Neary_2005 | irrelevant | 1 | 0 | The paper is a review discussing clinical efficacy and receptor affinity (Ki) but does not report quantitative pharmacokinetic disposition parameters (CL, V, ka, etc.) for alvimopan. |
+| popPK | Mousavi_2023 | irrelevant | 0 | 0 | The paper is a narrative review of pharmacotherapy for opioid-induced bowel dysfunction and does not report original quantitative pharmacokinetic parameters for alvimopan. |
+| popPK | Neary_2005 | irrelevant | 0 | 0 | The paper is a clinical review discussing efficacy and safety, containing no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for alvimopan. |
 | popPK | Power_2011 | irrelevant | 0 | 0 | The paper is a general review of analgesics that mentions alvimopan only as a clinical example without providing any pharmacokinetic data or quantitative disposition parameters. |
 | PD | Power_2011 | not_relevant | 1 | 0 | The text is a general review article that mentions alvimopan qualitatively but provides no numeric PD parameters, concentration-effect data, or dose-response analysis. |
-| popPK | Schmith_2010 | relevant | 8 | 2 | The study is a PK interaction study for alvimopan, but the evidence only provides relative changes (percentages) and lacks specific quantitative disposition parameters (CL, V, ka) or absolute concentration values. |
-| popPK | Tan_2007 | irrelevant | 0 | 0 | The paper is a clinical efficacy meta-analysis reporting hazard ratios for gastrointestinal endpoints, not a pharmacokinetic study with quantitative disposition parameters. |
+| popPK | Schmith_2010 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (Cmax, AUC) for alvimopan, but the evidence only provides percentage changes and metabolite reduction rates, lacking the absolute numeric values for clearance, volume, or half-life. |
+| popPK | Tan_2007 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy endpoints (GI function, time to discharge) and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for alvimopan. |
 | popPK | Webster_2008 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for opioid-induced bowel dysfunction and does not report any pharmacokinetic parameters for alvimopan. |
 | popPK | Wu_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on tramadol and its metabolite, using alvimopan only as a receptor antagonist probe, and reports no pharmacokinetic parameters for alvimopan. |
 | PD | Wu_2025 | not_relevant | 0 | 0 | The paper investigates the anti-cancer efficacy of tramadol and its metabolite O-desmethyltramadol, using alvimopan only as a mechanistic antagonist to rule out opioid receptor involvement; it does not report a pharmacodynamic or exposure-response relationship for alvimopan itself. |

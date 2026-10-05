@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A pyrazine compound inhibiting sodium reabsorption through sodium channels in renal epithelial cells. This inhibition creates a negative potential in the luminal membranes of principal cells, located in the distal convoluted tubule and collecting duct. Negative potential reduces secretion of potassium and hydrogen ions. Amiloride is used in conjunction with diuretics to spare potassium loss. (From Gilman et al., Goodman and Gilman's The Pharmacological Basis of Therapeutics, 9th ed, p705)
+Amiloride is a potassium-sparing diuretic used for conditions including high blood pressure, heart failure, low potassium levels, and related fluid-retention disorders. It remains an approved medicine and is included on the WHO list of essential medicines, so it is used widely in human healthcare.
 
-**Indication.** For use as adjunctive treatment with thiazide diuretics or other kaliuretic-diuretic agents in congestive heart failure or hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419995](https://www.wikidata.org/wiki/Q419995) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -42,8 +42,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | absorption | kidney | `SLC22A4` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A4` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>“…excreted unchanged by the kidneys…”</sub> | prose |
-| excretion | bile duct | <sub>“…40 percent in the stool within 72 hours…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: AOC1 (inhibitor), ASIC1 (inhibitor), ASIC2 (inhibitor), PLAU (inhibitor), SCNN1A (inhibitor), SCNN1B (inhibitor), SCNN1D (inhibitor), SCNN1G (inhibitor), SLC9A1 (inhibitor).</sub>

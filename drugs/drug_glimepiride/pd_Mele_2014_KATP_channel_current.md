@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> In excised-patch experiments, glibenclamide applied to the internal side of the membrane patch directly inhibited the sarcolemmal KATP channel current in mouse skeletal muscle fibers, fitted with a one-site inhibitory sigmoid Emax model; EC50 values were 8.84×10⁻6 mol/L (FDB), 66.6×10⁻6 mol/L (EDL), and 91.1×10⁻6 mol/L (SOL), with negative Emax values (e.g., −56.36% FDB) reflecting current inhibition. The paper does not report Imax, kin, kout, or ke0 for this model.
+> Glimepiride inhibits the KATP channel current in mouse skeletal muscle fibers via a direct mechanism, with the concentration-response relationship fitted to a one-site inhibitory function. The model parameters are an Emax of -45.4 ± 9%, an EC50 of 36.7 ± 10 µmol/L, and a slope factor of 0.93 ± 0.03.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Mele_2014`
 - **model family:** `sigmoid_emax`

@@ -10,23 +10,9 @@
 
 ## About
 
-**Description.** Potassium is an essential nutrient, like [Calcium] and [Magnesium]. It was identified as a shortfall nutrient by the 2015-2020 Advisory Committee of Dietary Guidelines for Americans.[A186928] Many conditions and diseases interfere with normal body potassium balance, and underconsumption of potassium is one example. Hypokalemia (low potassium) or hyperkalemia (high potassium) may result, manifesting as various signs and symptoms. Some examples of potassium-related complications include life-threatening arrhythmia, neuromuscular dysfunction, diarrhea, nausea, and vomiting.[A32222,A38081,L2652]
+Potassium is used to treat or prevent low potassium levels in the blood, often in combination products with diuretics such as thiazides. It is an approved, widely used medicine, available in combination formulations with diuretics.
 
-Various pharmacological preparations have been formulated to replenish potassium. They are available in an assortment of tablet, injection, and other forms, depending on the setting and condition being treated. Potassium is often a key ingredient for intravenous fluids, given to patients in clinical settings for rehydration, nutrition, and replenishment of electrolytes. Examples of potassium formulations include potassium citrate, potassium chloride, and potassium with dextrose and sodium chloride.[L8744,L8747,L8753,L8759]
-
-**Indication.** **General uses of potassium**
-
-Potassium is indicated to treat a variety of conditions. Firstly, it used to replenish potassium that has been depleted by conditions including but not limited to malabsorption, decreased intake, or excess sodium intake.  The causes of potassium deficiency are numerous. The following indications for potassium are not comprehensive, but include the main indications for which this nutrient is used. Various products and preparations contain potassium.
-
-**Potassium chloride**
-
-Potassium chloride is one of the main preparations of potassium used in a clinical setting. The oral solution is indicated for the prevention and treatment of hypokalemia presenting with or without metabolic alkalosis, in patients who have failed conservative management with potassium-rich foods or diuretic dose titrations.[L8744] The injection form of potassium chloride is indicated to replenish potassium in patients who are not feasible candidates for oral potassium. Highly concentrated potassium is intended for the treatment of potassium deficiency in fluid restricted individuals who cannot tolerate fluid volumes normally associated with injected potassium solutions that contain lower concentrations.[L8768]
-Finally, the extended-release tablet preparation of potassium chloride is used to treat hypokalemia with or without metabolic alkalosis, to treat digitalis intoxication, and to manage patients with hypokalemic familial periodic paralysis. It is also used in the prevention of hypokalemia in those who are at a high risk of negative clinical outcomes if hypokalemia occurs; patients on digitalis or those with cardiac arrhythmias would be at particular risk of negative outcomes.[L8771]
-
-
-**Potassium chloride with dextrose and sodium chloride** 
-
-This liquid preparation is is indicated in a clinical setting as a source of water, calories and electrolytes.[L8747] Potassium acetate solution is meant as an alternative to potassium chloride, replenishing pota
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q703](https://www.wikidata.org/wiki/Q703) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -103,10 +89,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` transport, `ABCG2` transport | paper PGx gene |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | liver | `CYP2D6` metabolism, `SLCO1B3` transport | paper PGx gene |
-| metabolism | small intestine | <sub>“…Potassium is absorbed…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted primarily in the urine…”</sub> | prose |
-| excretion | skin | <sub>“…negligibly in perspiration (sweat)…”</sub> | prose |
-| excretion | small intestine | <sub>“…excreted in small amounts in the stool…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP1A1 (regulator), ATP1A1 (substrate), SLC12A1 (target).</sub>
 

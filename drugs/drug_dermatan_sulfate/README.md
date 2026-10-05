@@ -8,6 +8,12 @@
 - **molar mass:** 475.38 g/mol (C14H21NO15S) — DrugBank
 - **groups:** investigational
 
+## About
+
+Dermatan sulfate, a glycosaminoglycan also known as chondroitin sulfate B, has been investigated as an antithrombotic agent for preventing blood clots. It remains an investigational compound and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2335618](https://www.wikidata.org/wiki/Q2335618) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

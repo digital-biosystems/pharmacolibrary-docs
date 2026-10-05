@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** A propylamine formed from the cyclization of the side chain of amphetamine. This monoamine oxidase inhibitor is effective in the treatment of major depression, dysthymic disorder, and atypical depression. It also is useful in panic and phobic disorders (From AMA Drug Evaluations Annual, 1994, p311). 
+Tranylcypromine is a monoamine oxidase inhibitor antidepressant used for depression, and has also been used for conditions such as post-traumatic stress disorder and neurotic disorders. It remains an approved medicine but is not widely used, mainly reserved for depression that has not responded to other antidepressants, and carries a boxed warning.
 
-Tranylcypromine is a racemate comprising equal amounts of (1R,2S)- and (1S,2R)-2-phenylcyclopropan-1-amine with the chiral centers both located on the cylopropane ring. An irreversible monoamine oxidase inhibitor that is used as an antidepressant (INN tranylcypromine).
-
-**Indication.** For the treatment of major depressive episode without melancholia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420885](https://www.wikidata.org/wiki/Q420885) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Peak plasma concentrations occur in one hour following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor, `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor, `MAOA` inhibitor | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |

@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** A benzodiazepine used to treat various seizures, including myotonic or atonic seizures, photosensitive epilepsy, and absence seizures, although tolerance may develop.[FDA Label][L5572,F3763,F3787,F3796] The agent has also been indicated for treating panic disorder.[FDA Label][A175438,L5572,F3763,F3787,F3796] The mechanism of action appears to involve the enhancement of gamma-aminobutyric acid receptor responses.[FDA Label][A175438,A175441,L5572,F3763,F3787,F3796]
+Clonazepam is a benzodiazepine anticonvulsant used to treat epilepsy, including myoclonic and childhood absence epilepsy, as well as panic disorder, anxiety, insomnia, and restless legs syndrome. It is an approved medicine used widely in clinical practice, though it carries a boxed warning and also has investigational and illicit uses.
 
-Since being first patented in 1960 and then released for sale from Roche in the US in 1975,[T469,T472] clonazepam has experienced a storied history in the treatment of the aforementioned medical conditions. Now available as a generic medication, the agent continues to see exceptionally high use as millions of prescriptions are written for the medication internationally every year. Unfortunately, however, like most benzodiazepines, clonazepam use has also been associated with recreational use and drug abuse.[FDA Label][L5572,F3763,F3787,F3796]
-
-**Indication.** Clonazepam is indicated as monotherapy or as an adjunct in the treatment of Lennox-Gastaut syndrome (petit mal variant), akinetic, and myoclonic seizures.[FDA Label][F3787] Furthermore, clonazepam may also be of some value in patients with absence spells (petit mal) who have failed to respond to succinimides.[FDA Label][F3787] Additionally, clonazepam is also indicated for the treatment of panic disorder, with or without agoraphobia, as defined in the DSM-V.[FDA Label]
-
-Alternatively, some regional prescribing information note that clonazepam is indicated for all clinical forms of epileptic disease and seizures in adults, especially absence seizures (petit mal) including atypical absence; primary or secondarily generalised tonic-clonic (grand mal), tonic or clonic seizures; partial (focal) seizures with elementary or complex symptomatology; various forms of myoclonic seizures, myoclonus and associated abnormal movements.[L5572,F3796] Such regional label data also has clonazepam indicated for most types of epilepsy in infants and children, especially absences (petit mal), myoclonic seizures and tonic-clonic fits, whether due to primary generalized epilepsy or to secondary generalization of partial epilepsy.[F3796]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407988](https://www.wikidata.org/wiki/Q407988) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,11 +50,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly and almost entirely absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | liver | `CYP2E1` inhibitor, `CYP3A4` metabolism/substrate, `NAT2` metabolism/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` metabolism/substrate, `NAT2` metabolism/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Approximately 50-70% of a clonazepam dose is excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), NR1I2 (partial agonist).</sub>
 

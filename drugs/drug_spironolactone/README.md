@@ -10,23 +10,9 @@
 
 ## About
 
-**Description.** Spironolactone is a potassium-sparing diuretic. It binds to mineralocorticoid receptors and functions as aldosterone antagonists.[A178192] It promotes sodium and water excretion and potassium retention.[A11837] Spironolactone was originally developed purely for this ability before other pharmacodynamic properties of the drug were discovered.[A11837, A178246] It is indicated to treat several conditions, including heart failure, edema, hyperaldosteronism, and hypertension.[L44602] Off-label uses of spironolactone include hirsutism, female pattern hair loss, and adult acne vulgaris.[A178135, A261025] 
+Spironolactone is a diuretic used to treat fluid build-up caused by heart failure, liver scarring, or kidney disease, and is also used for high blood pressure and hyperaldosteronism. It is widely used and appears on the WHO essential medicines list, with an authorised product in the European Union.
 
-Spironolactone was developed in 1957, marketed in 1959, and approved by the FDA on January 21, 1960.[A178243]
-
-**Indication.** Spironolactone is indicated for the treatment of the following conditions:
-
-- NYHA Class III-IV heart failure and reduced ejection fraction to increase survival, manage edema, and reduce the need for hospitalization for heart failure. Spironolactone is usually administered in conjunction with other heart failure therapies.[L44602]
-- Hypertension, as add-on therapy, in patients not adequately controlled by other agents.[L44602, L47810]
-- Edema associated with hepatic cirrhosis when edema is not responsive to fluid and sodium restriction.[L44602, L47810]
-- Edema associated with nephrotic syndrome when treatment of the underlying disease, restriction of fluid and sodium intake, and the use of other diuretics produce an inadequate response.[L44602]
-- Refractory edema associated with congestive cardiac failure, malignant ascites, hepatic cirrhosis with ascites, and essential hypertension.[L47810]
-- Short-term preoperative treatment of patients with primary hyperaldosteronism.[L44602, L47810]
-- Diagnosis of primary aldosteronism.[L47810]
-- Long-term maintenance therapy for patients with discrete aldosterone-producing adrenal adenomas who are not candidates for surgery.[L44602]
-- Long-term maintenance therapy for patients with bilateral micro or macronodular adrenal hyperplasia (idiopathic hyperaldosteronism).[L44602]
-
-As spironolactone has antiandrogenic activity, its off-label uses include the treatment of hirsutism, female pattern hair loss, and adult acne vulgaris.[A178135, A261025]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422188](https://www.wikidata.org/wiki/Q422188) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -65,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inducer | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…secondarily in bile…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inducer | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` inducer | DrugBank actor |
 | excretion | small intestine | `ABCC2` inducer | DrugBank actor |

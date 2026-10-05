@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Physiologic methyl radical donor involved in enzymatic transmethylation reactions and present in all living organisms. It possesses anti-inflammatory activity and has been used in treatment of chronic liver disease. (From Merck, 11th ed)
+Ademetionine (S-adenosylmethionine) is an amino-acid derivative used as a dietary supplement and medicine, mainly for liver and joint complaints. It is approved and sold as a nutraceutical in several countries, though it is not authorised in the European Union.
 
-**Indication.** S-Adenosylmethionine (SAMe) is used as a drug in Europe for the treatment of depression, liver disorders, fibromyalgia, and osteoarthritis. It has also been introduced into the United States market as a dietary supplement for the support of bone and joint health, as well as mood and emotional well being.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27135598](https://www.wikidata.org/wiki/Q27135598) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,7 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed from the small intestine following oral intake…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `COMT` cofactor | DrugBank actor |
 | metabolism | kidney | `COMT` cofactor | DrugBank actor |
 | metabolism | liver | `COMT` cofactor, `CYP2E1` inhibitor | DrugBank actor |

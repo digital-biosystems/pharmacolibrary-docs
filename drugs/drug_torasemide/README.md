@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Torasemide is a high-ceiling loop diuretic.[A174463] Structurally, it is a pyridine-sulfonylurea used as an antihypertensive agent.[A319] Torasemide was first approved for clinical use by the FDA in 1993.[L5257]
+Torasemide is a loop diuretic used to treat conditions involving fluid retention and high blood pressure, such as congestive heart failure, kidney disease, liver cirrhosis, and arterial hypertension. It is an approved medicine used widely in clinical practice, including in Europe, though it is not an EU-authorised product centrally evaluated by the EMA.
 
-**Indication.** Torasemide is indicated for the treatment of edema associated with congestive heart failure, renal or hepatic diseases. From this condition, it has been observed that torasemide is very effective in cases of kidney failure.[FDA label]
-
-As well, torasemide is approved to be used as an antihypertensive agent either alone or in combination with other antihypertensives.[FDA label]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419948](https://www.wikidata.org/wiki/Q419948) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -55,13 +53,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Torasemide is the diuretic with the highest oral bioavailability…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…recovered in the urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C8` substrate, `CYP2C9` inhibitor/substrate, `SLCO1B1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…about 20-30% of the administered dose is found in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…mainly hepatically processed…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SLC12A1 (inhibitor), SLC12A2 (inhibitor), UMOD (target).</sub>
 

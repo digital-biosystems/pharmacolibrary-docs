@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A vasodilator used in the treatment of angina pectoris. Its actions are similar to nitroglycerin but with a slower onset of action.
+Isosorbide dinitrate is a nitrate vasodilator used for cardiac conditions such as angina, and also topically for haemorrhoids and anal fissures. It is an approved medicine and appears on the WHO list of essential medicines, so it remains in widespread clinical use.
 
-**Indication.** For the prevention of angina pectoris due to coronary artery disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q179748](https://www.wikidata.org/wiki/Q179748) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +34,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…extensive first-pass metabolism in the liver…”</sub> | prose |
-| absorption | small intestine | <sub>“…Absorption of isosorbide dinitrate after oral dosing is nearly complete…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2E1` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: NPR1 (target).</sub>

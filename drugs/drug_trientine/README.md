@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Triethylenetatramine (TETA), also known as trientine, is a potent and selective copper (II)-selective chelator. It is a structural analog of linear polyamine compounds, [spermidine] and [spermine]. TETA was first developed in Germany in 1861 and its chelating properties were first recognized in 1925.[A19333] Initially approved by the FDA in 1985 as a second-line treatment for Wilson's disease,[A19334] TETA is currently indicated to treat adults with stable Wilson’s disease who are de-coppered and tolerant to [penicillamine].[L41730]
+Trientine is a chelating agent used to treat Wilson disease. It is an approved medicine and is authorised in the European Union.
 
-TETA has been investigated in clinical trials for the treatment of heart failure in patients with diabetes.[A18804,A19332,A19333,A19334,A19335]
-
-**Indication.** Triethylenetetramine is a copper chelator indicated for the treatment of adult patients with stable Wilson’s disease who are de-coppered and tolerant to [penicillamine].[L41730]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418386](https://www.wikidata.org/wiki/Q418386) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,8 +29,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…TETA is poorly absorbed from the gastrointestinal tract…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CA14 (inhibitor), SAT1 (substrate).</sub>
 

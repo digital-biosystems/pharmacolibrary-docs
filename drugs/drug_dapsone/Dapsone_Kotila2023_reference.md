@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Kotila_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Gatti1996_reference&quot;,&quot;label&quot;:&quot;Gatti_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Gatti1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Simpson2006v2_reference&quot;,&quot;label&quot;:&quot;Simpson_2006_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dapsone — `Dapsone_Kotila2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,13 +12,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**No value for dapsone's clearance.**
+**Only volume was extracted — no clearance.**
 
-The model was built, but dapsone's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — dapsone: V 72.2 L, Vss 37.4 L, Vmax 36.5 L.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — dapsone: V 72.2 L, Vss 37.4 L, Vmax 36.5 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of min: this record has 36.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -30,15 +29,15 @@ Kotila OA et al., Non-compartmental and population pharma…, British journal of
   ·  DOI: [10.1111/bcp.15862](https://doi.org/10.1111/bcp.15862)
 
 ## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Kotila2023_reference" status="model_quarantined" stale="false" population="healthy Nigerian volunteers" measured-compound="dapsone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dapsone" model-id="Dapsone_Kotila2023_reference" status="needs_review" stale="false" population="healthy Nigerian volunteers" measured-compound="dapsone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -102,20 +101,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C9_phys_window_Q61 | pass | volume within physiological range | 72.2 L | not captured | not captured | ['Kotila_2023_table_p3_1:row0:col1', 'Kotila_2023_table_p3_1:row0:col2', 'Kotila_2023_table_p3_1:row0:col3', 'Kotila_2023_table_p3_1:row0:col4', 'Kotila_2023_table_p3_1:row0:col5', 'Kotila_2023_table_p3_1:row0:col6', 'Kotila_2023_table_p3_1:row0:col7', 'Kotila_2023_table_p3_1:row0:col8'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 37.4 L | not captured | not captured | ['Kotila_2023_table_p3_1:row1:col1', 'Kotila_2023_table_p3_1:row1:col2', 'Kotila_2023_table_p3_1:row1:col3', 'Kotila_2023_table_p3_1:row1:col4', 'Kotila_2023_table_p3_1:row1:col5', 'Kotila_2023_table_p3_1:row1:col6', 'Kotila_2023_table_p3_1:row1:col7', 'Kotila_2023_table_p3_1:row1:col8'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 30.23 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -124,8 +109,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dapsone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kotila_2023` / `Kotila_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/_needs_review/Dapsone_Kotila2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/_needs_review/Dapsone_Kotila2023_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

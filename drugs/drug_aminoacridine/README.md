@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** A highly fluorescent anti-infective dye used clinically as a topical antiseptic and experimentally as a mutagen, due to its interaction with DNA. It is also used as an intracellular pH indicator.
+Aminoacridine (aminacrine) is an acridine-derivative antiseptic used topically on the skin to prevent or treat local infection. It is classified as investigational in DrugBank, so its current clinical use appears limited or uncertain.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q513937](https://www.wikidata.org/wiki/Q513937) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Vorapaxar is a tricyclic himbacine-derived selective inhibitor of protease activated receptor (PAR-1) indicated for reducing the incidence of thrombotic cardiovascular events in patients with a history of myocardial infarction (MI) or with peripheral arterial disease (PAD). By inhibiting PAR-1, a thrombin receptor expressed on platelets, vorapaxar prevents thrombin-related platelet aggregation.
+Vorapaxar is a platelet aggregation inhibitor used to reduce the risk of cardiovascular events in patients who have had a myocardial infarction. It is an approved medicine, though its marketing authorisation in the European Union has been withdrawn, so its use is now limited to other regions.
 
-**Indication.** Vorapaxar is indicated for the reduction of thrombotic cardiovascular events in patients with a history of myocardial infarction (MI) or peripheral arterial disease (PAD). It is usually co-administered with acetylsalicylic acid (ASA) and/or clopidogrel, and should therefore be administered as an addition to these medications as it has not been studied alone.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7941753](https://www.wikidata.org/wiki/Q7941753) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,8 +39,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | heart | `CYP2J2` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…eliminated as its metabolite M19 through the feces (91.5%)…”</sub> | prose |
-| excretion | kidney | <sub>“…partially eliminated in the urine (8.5%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F2R (target).</sub>
 

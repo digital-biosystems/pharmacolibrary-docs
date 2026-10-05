@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;vancomycin&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/&quot;},{&quot;label&quot;:&quot;Goyal_2022 \u00b7 population_typical_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vancomycin_Goyal2022_final_pk_model&quot;,&quot;label&quot;:&quot;Goyal_2022_final_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_population_typical_value&quot;,&quot;label&quot;:&quot;Goyal_2022_population_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vera_Yunca_2025_bacterial_load&quot;,&quot;label&quot;:&quot;Vera-Yunca_2025 \u00b7 bacterial load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/pd_Vera_Yunca_2025_bacterial_load.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vancomycin_Goyal2022_final_pk_model&quot;,&quot;label&quot;:&quot;Goyal_2022_final_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_population_typical_value&quot;,&quot;label&quot;:&quot;Goyal_2022_population_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vancomycin_Yoon2023_reference&quot;,&quot;label&quot;:&quot;Yoon_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Yoon2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vera_Yunca_2025_cfu&quot;,&quot;label&quot;:&quot;Vera-Yunca_2025 \u00b7 cfu&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/pd_Vera_Yunca_2025_cfu.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vancomycin — `Vancomycin_Goyal2022_population_typical_value`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,16 +19,18 @@
 
 **Every check that could be run on this record passed.**
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vancomycin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:42:06.331189+00:00) predates the upstream re-run (2026-10-04 18:41:53.669133+00:00). Current validate status: `extracted`.
 
 ## Citation
 Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439)
 
 ## Model component
-<dbs-pgx drug="vancomycin" model-id="Vancomycin_Goyal2022_population_typical_value" status="curated_candidate" stale="false" population="pregnant women" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="vancomycin" model-id="Vancomycin_Goyal2022_population_typical_value" status="extracted" stale="true" population="pregnant women" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -51,7 +53,7 @@ Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharma
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('qCRCL', value '1.0') — already have one for this compound
+- dropped unlinked row (NIL): 'qCRCL' — extend the ontology if this is a real PK parameter (source ['Goyal_2022_table_S1:row1:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vancomycin
 - population split: 'population typical value' subgroup of Goyal_2022 (paper reports 2 populations: final pk model, population typical value)
 
@@ -63,14 +65,21 @@ Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | vancomycin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | vancomycin | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -151,4 +160,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 03:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 18:41 UTC</sub>

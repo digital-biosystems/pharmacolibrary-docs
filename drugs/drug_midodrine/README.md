@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An ethanolamine derivative that is an adrenergic alpha agonist. It is used as a vasoconstrictor agent in the treatment of hypotension.
+Midodrine is a peripheral alpha-1 agonist used to treat orthostatic hypotension and dysautonomia, and has also been used for urinary incontinence. It is an approved medicine, though not authorised in the European Union, and is used fairly narrowly for low blood pressure on standing.
 
-**Indication.** For the treatment of symptomatic orthostatic hypotension (OH).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415051](https://www.wikidata.org/wiki/Q415051) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

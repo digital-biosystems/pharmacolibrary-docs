@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;tolazoline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tolazoline
 
@@ -10,9 +11,9 @@
 
 ## About
 
-**Description.** A vasodilator that apparently has direct actions on blood vessels and also increases cardiac output. Tolazoline can interact to some degree with histamine, adrenergic, and cholinergic receptors, but the mechanisms of its therapeutic effects are not clear. It is used in treatment of persistent pulmonary hypertension of the newborn.
+Tolazoline is a vasodilator that was used for circulatory disorders such as Raynaud disease, thrombophlebitis, thromboangiitis obliterans, arteriosclerosis obliterans, systemic scleroderma, causalgia, and persistent fetal circulation syndrome. It has been withdrawn for human use but remains an approved veterinary drug.
 
-**Indication.** For the treatment of pulmonary artery anomalies
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413772](https://www.wikidata.org/wiki/Q413772) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -32,7 +33,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span> | [Casbeer_2013_reference](drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md) | model (no simulator) | 1-compartment, IV | 3 | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span> | [Casbeer_2013_reference](drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) |
 
 ## ADME sites
 

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The zolmitriptan record was rejected because, despite declaring a parent–metabolite structure, the model is a one-compartment parent-only model whose output is the parent rather than the measured metabolite, and it invents an absorption rate not reported in the source.**
+**The zolmitriptan record was rejected because the abstract-only source did not report ka (or Tlag), so library defaults were used, and the model structure was a one-compartment enteral model instead of the required parent–metabolite structure with the metabolite as output.**
 
-The record declares zolmitriptan metabolizing to 183C91 via Kfm, but the built model is a single enteral compartment whose output is the parent (zolmitriptan) compartment rather than the measured metabolite compartment, so the model structure does not match the declared parent–metabolite topology. The builder substituted library defaults for the absorption rate constant ka and lag time Tlag, which are not reported in the source, and assumed F=1 and Fm=1 without molar correction, giving an apparent parameterization (V/F 136 L, CL 121 L/h). A second reader disputed the apparent parameterization, arguing it should be mechanistic, and did not confirm the V and CL values. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — zolmitriptan: V/F 136 L, CL 121 L/h.
+The paper describes zolmitriptan with a metabolite (183C91 linked by the metabolism rate constant Kfm), but the built model was a single enteral compartment whose output was the parent compartment rather than the measured metabolite compartment. Absorption parameters ka and Tlag were not reported in the abstract and were left at defaults, and F=1, Fm=1 with no molar correction were assumed, giving an apparent parameterization (V/F 136 L, CL 121 L/h). A second reader disputed the apparent parameterization and could not confirm the V/F and CL values from the abstract-only source. Extracted — zolmitriptan: V/F 136 L, CL 121 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -118,7 +118,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

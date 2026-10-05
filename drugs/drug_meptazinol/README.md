@@ -8,6 +8,12 @@
 - **molar mass:** 233.355 g/mol (C15H23NO) — DrugBank
 - **groups:** experimental
 
+## About
+
+Meptazinol is an opioid compound with pain-relieving (analgesic) and narcotic properties. It is not an approved medicine; it is currently regarded as an experimental drug.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410618](https://www.wikidata.org/wiki/Q410618) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

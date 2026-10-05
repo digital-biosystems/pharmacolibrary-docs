@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A stable, non-explosive inhalation anesthetic, relatively free from significant side effects.
+Isoflurane is an inhalational general anaesthetic used to keep patients unconscious during surgery, and it has also been used for severe asthma attacks. It is widely used worldwide, appears on the WHO essential medicines list, and is also approved for veterinary use.
 
-**Indication.** For induction and maintenance of general anesthesia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413918](https://www.wikidata.org/wiki/Q413918) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Miglustat, commonly marketed under the trade name Zavesca, is a drug used to treat Gaucher disease. It inhibits the enzyme glucosylceramide synthase, an essential enzyme for the synthesis of most glycosphingolipids. It is only used for patients who cannot be treated with enzyme replacement therapy with imiglucerase. Miglustat is now the first and only approved therapy for patients with Niemann-Pick disease type C (NP-C). It has recently been approved for treatment of progressive neurological symptoms in adult and pediatric patients in the European Union, Brazil, and South Korea. Miglustat was first developed as an anti-HIV agent in the 1990s. However, clinical experience with miglustat showed that therapeutic levels of the drug could not be achieved in patients without a high incidence of adverse effect.
+Miglustat is a medicine used to treat Gaucher's disease and, in the European Union, is also authorised for Niemann-Pick diseases and glycogen storage disease type II. It is authorised in the European Union and is an approved drug, though it is also being studied for other uses.
 
-**Indication.** For the treatment of adult patients with mild to moderate type 1 (nonneuropathic) Gaucher's disease for whom enzyme replacement therapy is not a therapeutic option (e.g. due to constraints such as allergy, hypersensitivity, or poor venous access). Now approved in some countries for the treatment of progressive neurological symptoms in adult and pediatric patients with Niemann-Pick disease type C (NP-C).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425911](https://www.wikidata.org/wiki/Q425911) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

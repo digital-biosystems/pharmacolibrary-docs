@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amoxicillin_Baklouti2026_reference",
+ "molar_masses": {
+  "central.C": 0.365404
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1000.0
+ ],
+ "parameters": {
+  "Cl": 7.093833333333332e-06,
+  "F": 1.0,
+  "MM": 0.365404,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0011768571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "ka": 4.722222222222223e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 15818.14640888333
+ },
+ "reference_peaks": {
+  "central.C": 0.0032093424638933023
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

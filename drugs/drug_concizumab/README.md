@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Concizumab is a humanized IgG4 monoclonal antibody targeting the Kunitz-2 domain of tissue factor pathway inhibitor (TFPI), a key regulator of the coagulation cascade.[A264883,A264878] In patients with hemophilia A or B - characterized by deficiencies in clotting factors VIII or IX, respectively - the traditional treatment involves replacement of the missing clotting factor.[L52043] One disadvantage of this approach is the possible development of antibodies (inhibitors) towards the administered replacement factor, rendering them less effective and increasing the likelihood of hemorrhagic episodes.[L52043] 
+Concizumab, a monoclonal antibody, is used to treat hemophilia A and hemophilia B. It is authorised in the European Union and is also being investigated for further uses.
 
-By inhibiting TFPI, concizumab enhances the production of factor Xa via the extrinsic clotting pathway.[L51998,A264878] This novel mechanism of action is effective even in the presence of inhibitors towards factors VIII or IX, as it essentially skips the intrinsic pathway in which factors VIII and IX participate. Concizumab therefore provides an important treatment option for patients who have developed inhibitors to standard clotting factor replacement therapy.[L52043]
-
-Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in patients with hemophilia A or B with inhibitors.[L51998,L52043] In July 2025, its indication was expanded to include all patients with hemophilia A or B, regardless of the presence of inhibitors.[L53653]
-
-**Indication.** Concizumab is indicated for routine prophylaxis to prevent or reduce the frequency of bleeding episodes in patients ≥12 years of age who have hemophilia A or B with or without inhibitors.[L53653,L54196] In the EU, its indication in patients without inhibitors is specifically for those with severe hemophilia A or moderate/severe hemophilia B.[L54196]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q104153457](https://www.wikidata.org/wiki/Q104153457) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

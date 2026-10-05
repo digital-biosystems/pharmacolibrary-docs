@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Moxisylyte, denominated as thymoxamine in the UK, is a specific and orally active α1-adrenergic antagonist.[T45] According to the WHO, moxisylyte is approved since 1987[T91] and in the same year, it acquired the denomination of orphan product by the FDA.[L1172] This drug was developed by the Japanese company Fujirebio and also by the American company Iolab in the late 80s.
+Moxisylyte (thymoxamine) is an alpha-blocking vasodilator used to improve peripheral blood flow and to treat erectile dysfunction. It is an approved medicine, though not authorised in the European Union, and is used only in a limited number of countries.
 
-**Indication.** According to the WHO, moxisylyte is indicated for the symptomatic management of sequelae of cerebral infarction or hemorrhage.[T91] The cerebral infarction is characterized by the blockage of the artery either by the formation of a thrombus or an embolus.[A31644] 
-
-On the other hand, the FDA classified moxisylyte for the reversal of phenylephrine-induced mydriasis in patients who have narrow anterior angles and are at risk of developing an acute attack of angle-closure glaucoma.[L1172]  Closed-angle glaucoma is caused by the contact between the iris and the trabecular meshwork. This contact will damage the aqueous outflow by the meshwork thus, increasing eye pressure and producing the symptoms of glaucoma.[A31645]
-
-Moxisylyte is also approved in France as the first drug for the treatment of impotence.[A31647]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q646045](https://www.wikidata.org/wiki/Q646045) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,12 +40,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | blood | `BCHE` substrate | DrugBank actor |
 | metabolism | liver | `BCHE` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…The fecal elimination corresponded only to the 14% of the administered dose…”</sub> | prose |
-| excretion | kidney | <sub>“…The major elimination route of moxisylyte is via the kidneys…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1D (modulator).</sub>
 

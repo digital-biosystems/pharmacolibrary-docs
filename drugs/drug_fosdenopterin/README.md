@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Molybdenum cofactor deficiency (MoCD) is an exceptionally rare autosomal recessive disorder resulting in a deficiency of three molybdenum-dependent enzymes: sulfite oxidase (SOX), xanthine dehydrogenase, and aldehyde oxidase.[A230088] Signs and symptoms begin shortly after birth and are caused by a build-up of toxic sulfites resulting from a lack of SOX activity.[A230088,L32163] Patients with MoCD may present with metabolic acidosis, intracranial hemorrhage, feeding difficulties, and significant neurological symptoms such as muscle hyper- and hypotonia, intractable seizures, spastic paraplegia, myoclonus, and opisthotonus. In addition, patients with MoCD are often born with morphologic evidence of the disorder such as microcephaly, cerebral atrophy/hypodensity, dilated ventricles, and ocular abnormalities.[A230088] MoCD is incurable and median survival in untreated patients is approximately 36 months[A230088] - treatment, then, is focused on improving survival and maintaining neurological function.
+Fosdenopterin is used to treat molybdenum cofactor deficiency, a rare inherited disorder of metal metabolism. It is an approved medicine and is authorised in the European Union.
 
-The most common subtype of MoCD, type A, involves mutations in _MOCS1_ wherein the first step of molybdenum cofactor synthesis - the conversion of guanosine triphosphate into cyclic pyranopterin monophosphate (cPMP) - is interrupted.[A230088,A230593] In the past, management strategies for this disorder involved symptomatic and supportive treatment,[L32163] though efforts were made to develop a suitable exogenous replacement for the missing cPMP. In 2009 a recombinant, E. coli-produced cPMP was granted orphan drug designation by the FDA, becoming the first therapeutic option for patients with MoCD type A.[A230088]
-
-Fosdenopterin was approved by the FDA on Februrary 26, 2021, for the reduction of mortality in patients with MoCD type A,[L32163] becoming the first and only therapy approved for the treatment of MoCD. By improving the three-year survival rate from 55% to 84%,[L32288] and considering the lack of alternative therapies available, fosdenopterin appears poised
-
-**Indication.** Fosdenopterin is indicated to reduce the risk of mortality in patients with molybdenum cofactor deficiency (MoCD) type A.[L32288]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5198226](https://www.wikidata.org/wiki/Q5198226) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

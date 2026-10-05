@@ -11,14 +11,9 @@
 
 ## About
 
-**Description.** Daprodustat is a small-molecule hypoxia-inducible factor (HIF) prolyl hydroxylase (PHD) inhibitor that was developed by GSK.[A254167,A254162] Patients with CKD cannot induce erythropoietin (EPO) production in response to hypoxia or anemia. As a potent inhibitor of PHD1, PHD2 and PHD3 (≥ 1000-fold selectivity), daprodustat stabilizes cellular HIF1α and HIF2α and the induces erythropoiesis.[A254157] A phase 3 clinical trial (NCT02879305) found that in patients with CKD undergoing dialysis, daprodustat was non-inferior to erythropoiesis-stimulating agents regarding the change in the hemoglobin level from baseline and cardiovascular outcomes.[A254172]
+Daprodustat is an antianemic medicine used to treat anemia, including anemia associated with chronic kidney disease. It is an approved drug, though one marketing application in the European Union was withdrawn.
 
-In June 2020, daprodustat was first approved in Japan for the treatment of renal anemia.[A254157] On October 2022, the FDA Cardiovascular and Renal Drugs Advisory Committee (CRDAC) supported that the benefit of treatment with daprodustat outweighs the risks for adult dialysis patients with anemia of CKD but not for non-dialysis patients with anemia of CKD.[L43857] On February 1, 2023, daprodustat was fully approved by the FDA as the first oral treatment for anemia caused by chronic kidney disease in patients on dialysis.[L44963] The drug is currently under EMA review.
-
-**Indication.** Daprodustat is a hypoxia-inducible factor prolyl hydroxylase (HIF PH) inhibitor indicated for the treatment of anemia due to chronic kidney disease in adults who have been receiving dialysis for at least four months.[L44958]
-
-The US prescribing information for daprodustat indicates that the drug was not shown to improve quality of life, fatigue, or patient well-being. It is not advised to be used as a substitute for transfusion in patients requiring immediate correction
-of anemia. It is also not indicated in patients not on dialysis.[L44958]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27076986](https://www.wikidata.org/wiki/Q27076986) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor/substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…74% of the radioactivity was recovered in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor).</sub>

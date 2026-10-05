@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;clevidipine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clevidipine_Bailey2002_reference&quot;,&quot;label&quot;:&quot;Bailey_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Ericsson2001_reference&quot;,&quot;label&quot;:&quot;Ericsson_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clevidipine_Vuylsteke2000_reference&quot;,&quot;label&quot;:&quot;Vuylsteke_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # clevidipine
 
@@ -10,9 +11,9 @@
 
 ## About
 
-**Description.** Clevidipine is a dihydropyridine L-type calcium channel blocker that is selective for vascular smooth muscle and is indicated for blood pressure reduction when oral therapy is not an option.
+Clevidipine is a dihydropyridine calcium channel blocker used to treat arterial hypertension. It is an approved drug, though it does not appear to be authorised in the European Union.
 
-**Indication.** For the reduction of blood pressure when when oral antihypertensive therapy is not feasible or not desirable.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5132338](https://www.wikidata.org/wiki/Q5132338) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -27,15 +28,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 08:05 | 18:51 | 3/2/0 | 0/0/0 | 0/0/0 | 97,712/26,334 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-29 08:05 | 18:51 | 1/2/2 | 0/0/0 | 0/0/0 | 97,712/26,334 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Bailey_2002_reference](drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md) | model (no simulator) | 1-compartment, IV | 3 | Bailey JM et al., Clevidipine in adult cardiac surgical p…, Anesthesiology (2002) | [10.1097/00000542-200205000-00010](https://doi.org/10.1097/00000542-200205000-00010) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> | [Ericsson_2001_reference](drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md) | model (no simulator) | 1-compartment, IV | 2 | Ericsson H et al., Enantioselective pharmacokinetics of th…, Chirality (2001) | [10.1002/1520-636X(2001)13:3&lt;130::AID-CHIR1009&gt;3.0.CO;2-2](https://doi.org/10.1002/1520-636X(2001)13:3&lt;130::AID-CHIR1009&gt;3.0.CO;2-2) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Vuylsteke_2000_reference](drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md) | model (no simulator) | 1-compartment, IV | 3 | Vuylsteke A et al., Pharmacokinetics and pulmonary extracti…, British journal of anaesthe… (2000) | [10.1093/bja/85.5.683](https://doi.org/10.1093/bja/85.5.683) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Bailey_2002_reference](drugs/drug_clevidipine/Clevidipine_Bailey2002_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Bailey JM et al., Clevidipine in adult cardiac surgical p…, Anesthesiology (2002) | [10.1097/00000542-200205000-00010](https://doi.org/10.1097/00000542-200205000-00010) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Ericsson_2001_reference](drugs/drug_clevidipine/Clevidipine_Ericsson2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ericsson H et al., Enantioselective pharmacokinetics of th…, Chirality (2001) | [10.1002/1520-636X(2001)13:3&lt;130::AID-CHIR1009&gt;3.0.CO;2-2](https://doi.org/10.1002/1520-636X(2001)13:3&lt;130::AID-CHIR1009&gt;3.0.CO;2-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Vuylsteke_2000_reference](drugs/drug_clevidipine/Clevidipine_Vuylsteke2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Vuylsteke A et al., Pharmacokinetics and pulmonary extracti…, British journal of anaesthe… (2000) | [10.1093/bja/85.5.683](https://doi.org/10.1093/bja/85.5.683) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ericsson_1999_2_reference](drugs/drug_clevidipine/Clevidipine_Ericsson1999v2_reference.md) | — | parent + metabolite (no model) | 5 | Ericsson H et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1999) | [10.1007/s002280050594](https://doi.org/10.1007/s002280050594) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ericsson_1999_3_reference](drugs/drug_clevidipine/Clevidipine_Ericsson1999v3_reference.md) | — | general linear (no model) | 2 | Ericsson H et al., Pharmacokinetics of new calcium channel…, Drug metabolism and disposi… (1999) | — |
 
@@ -49,8 +50,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `BCHE` substrate, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…feces 7-22%…”</sub> | prose |
-| excretion | kidney | <sub>“…urine 63-74%…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1D (blocker), CACNA1F (blocker), CACNA1S (blocker).</sub>
 
@@ -64,7 +65,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 5  ·  extracted 3  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

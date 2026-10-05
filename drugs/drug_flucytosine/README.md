@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A fluorinated cytosine analog that is used as an antifungal agent.
+Flucytosine is an antifungal used to treat serious fungal infections such as candidiasis, cryptococcosis including cryptococcal meningitis, aspergillosis, and chromoblastomycosis. It remains in clinical use, is listed among WHO essential medicines, and is available as a systemic and topical antifungal, though it carries a boxed warning.
 
-**Indication.** For the treatment (in combination with amphotericin B) of serious infections caused by susceptible strains of Candida (septicemia, endocarditis and urinary system infections) and/or Cryptococcus (meningitis and pulmonary infections).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q238490](https://www.wikidata.org/wiki/Q238490) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -35,10 +35,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly and virtually completely absorbed following oral administration…”</sub> | prose |
-| metabolism | small intestine | <sub>“…possibly by gut bacteria…”</sub> | prose |
-| excretion | bile duct | <sub>“…A small portion of the dose is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted via the kidneys by means of glomerular filtration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), DNMT1 (other).</sub>
 

@@ -10,25 +10,19 @@
 
 ## About
 
-**Description.** The major circulating metabolite of vitamin D3 (cholecalciferol). It is produced in the liver and is the best indicator of the body's vitamin D stores. It is effective in the treatment of rickets and osteomalacia, both in azotemic and non-azotemic patients. Calcifediol also has mineralizing properties.
+Calcifediol, a vitamin D3 analogue, is used to treat vitamin D deficiency, metabolic bone disease, and secondary hyperparathyroidism of renal origin. It is an approved medicine and is also available as a nutraceutical supplement, though it is not authorised in the European Union.
 
-**Indication.** Used to treat vitamin D deficiency or insufficiency, refractory rickets (vitamin D resistant rickets), familial hypophosphatemia and hypoparathyroidism, and in the management of hypocalcemia and renal osteodystrophy in patients with chronic renal failure undergoing dialysis. Also used in conjunction with calcium in the management and prevention of primary or corticosteroid-induced osteoporosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q139307](https://www.wikidata.org/wiki/Q139307) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 08:33 | 3:34 | 0/0/0 | 0/1/0 | 0/0/0 | 23,544/1,448 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 6/18 | 9/0 | 0 |
+| 2026-10-05 07:26 | 3:02 | 0/0/0 | 0/0/0 | 0/0/0 | 117,488/3,112 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 6/18 | 9/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span> | [Hoeben_2026_TV](drugs/drug_calcifediol/pd_Hoeben_2026_TV.md) | tumor volume ← plasma asparaginase activity · direct linear effect | — | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
 
 ## ADME sites
 
@@ -36,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…hydroxylation in the mitochondria of kidney tissue…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CYP24A1 (substrate), CYP27B1 (substrate), VDR (target).</sub>
 
@@ -64,22 +58,22 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Ma_2025.pdf` | Ma K et al., Development of Highly Sensitive and Spe…, ACS sensors (2025) | pd | 4 | [10.1021/acssensors.5c00650](https://doi.org/10.1021/acssensors.5c00650) | [40340357](https://www.ncbi.nlm.nih.gov/pubmed/40340357) | metadata signals extractable PD data (EC50) |
 | `Wilson_2023.pdf` | Wilson RT et al., Genetic Factors Associated with Absolut…, Cancer epidemiology, biomar… (2023) | pgx | 8 | [10.1158/1055-9965.EPI-22-0797](https://doi.org/10.1158/1055-9965.EPI-22-0797) | [36788426](https://www.ncbi.nlm.nih.gov/pubmed/36788426) | metadata signals extractable PGX data (CYP27B1, PK/PD-context) |
 
-<sub>queue written 2026-09-16T08:33:09.293757+00:00</sub>
+<sub>queue written 2026-10-05T07:25:35.615313+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on tacrolimus pharmacokinetics and model selection methodology, not calcifediol. |
+| popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on population pharmacokinetic models for tacrolimus, not calcifediol. |
 | PD | Baroudi_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (popPK) model selection for tacrolimus and does not report any pharmacodynamic (PD) or exposure-response relationships for calcifediol. |
 | popPK | Barry_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vancomycin, not calcifediol. |
 | PD | Barry_2026 | not_relevant | 0 | 0 | The paper analyzes vancomycin nephrotoxicity, not calcifediol. |
-| popPK | Barsony_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cGMP signaling in fibroblasts and does not report pharmacokinetic parameters for calcifediol. |
-| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of population PK models for therapeutic enzymes in lysosomal storage diseases (e.g., imiglucerase, avalglucosidase alfa) and does not study calcifediol. |
+| popPK | Barsony_1988 | irrelevant | 0 | 0 | The study investigates the receptor-mediated mechanism of action (cGMP increase) of 1 alpha,25-dihydroxycholecalciferol in vitro, not the pharmacokinetic disposition parameters of calcifediol. |
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for therapeutic enzymes in lysosomal storage diseases and does not mention calcifediol. |
 | PD | Barzel_2026 | not_relevant | 1 | 0 | The paper is a review of lysosomal storage diseases and does not contain any data, models, or parameters for calcifediol. |
-| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using warfarin and generic PK data, with no mention of calcifediol or its specific pharmacokinetic parameters. |
+| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using neural ODEs and LASSO, demonstrating it on warfarin and generic data, but does not study calcifediol. |
 | PD | Bräm_2026 | not_relevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using neural ODEs and LASSO, demonstrating it on warfarin PK/PD data, but does not report any PD or exposure-response relationship for calcifediol. |
-| popPK | Choe_2026 | irrelevant | 2 | 0 | The study focuses on exposure-response modeling of 25-hydroxyvitamin D levels and iPTH reduction, not on the pharmacokinetic disposition parameters (CL, V, ka) of calcifediol itself. |
+| popPK | Choe_2026 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
 | PD | Choe_2026 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
 | popPK | Corlett_1987 | irrelevant | 0 | 0 | The study investigates the in-vitro mechanism of 25-hydroxylation of cholecalciferol (vitamin D3) and does not report pharmacokinetic parameters for calcifediol. |
 | PD | Corlett_1987 | not_relevant | 0 | 0 | The paper investigates the regulation of 25-hydroxylase activity by calcium and calmodulin in liver homogenates, not the pharmacodynamic exposure-response relationship of the drug calcifediol. |
@@ -94,38 +88,38 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Djekic-Ivankovic_2017 | not_relevant | 3 | 2 | The study reports group-level mean differences in biomarkers (PTH, vBMD) across discrete dose groups but does not provide individual subject data, fitted concentration-effect curves, or numeric PD parameters (e.g., EC50, Emax) for calcifediol or its epimer. |
 | popPK | Eleveld_2026 | irrelevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) and does not report pharmacokinetic parameters for calcifediol. |
 | PD | Eleveld_2026 | not_relevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) and does not report any pharmacodynamic or exposure-response data for calcifediol. |
-| popPK | Foissac_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 25-hydroxycholecalciferol (calcidiol), not calcifediol (1,25-dihydroxycholecalciferol). |
-| popPK | Foissac_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 25-hydroxycholecalciferol (vitamin D3), not calcifediol. |
+| popPK | Foissac_2013 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for 25-hydroxycholecalciferol (calcidiol), not calcifediol (1,25-dihydroxycholecalciferol). |
+| popPK | Foissac_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 25-hydroxycholecalciferol (vitamin D3 metabolite), not calcifediol (25-hydroxyvitamin D2). |
 | popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mosnodenvir, not calcifediol. |
 | PD | Goeyvaerts_2026 | not_relevant | 0 | 0 | The paper discusses mosnodenvir, not calcifediol. |
 | popPK | Graf_1992 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
 | PD | Graf_1992 | not_relevant | 0 | 0 | The paper focuses on parathyroid hormone and calcium dynamics after surgery for primary hyperparathyroidism and does not report a pharmacodynamic or exposure-response relationship for calcifediol. |
-| PGx | Harrington_2004 | not_relevant | 0 | 0 | The study investigates the effect of diet on calcium and bone metabolism stratified by VDR genotype, but does not involve the drug calcifediol or its pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Harrington_2004 | not_relevant | 0 | 0 | The paper investigates the effect of diet on calcium metabolism and bone markers in relation to VDR genotype, but does not report pharmacokinetic or pharmacodynamic parameters of calcifediol. |
 | popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of calaspargase pegol (CalPEG), not calcifediol. |
-| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a methodological study on automated PopPK modeling using 22 datasets (e.g., bedaquiline, cefaclor) that does not include calcifediol. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a methodological study evaluating an automated PopPK modeling framework (nlmixr2auto) on 22 unspecified datasets and does not report specific PK parameters for calcifediol. |
 | PD | Huang_2026 | not_relevant | 0 | 0 | The paper focuses on automated population pharmacokinetic (PopPK) modeling methods and does not report any pharmacodynamic (PD) or exposure-response relationships for calcifediol or any other drug. |
 | popPK | Hymøller_2016 | irrelevant | 0 | 0 | The study investigates the interaction of retinol, vitamin D3, and alpha-tocopherol in mink, not the pharmacokinetics of calcifediol. |
 | popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for rivaroxaban, not calcifediol. |
 | PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban, not calcifediol, and does not provide a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50) for the drug in question. |
 | popPK | Jodar_2023 | irrelevant | 1 | 0 | The paper is a narrative review that discusses qualitative pharmacokinetic differences (e.g., linear dose-response, absorption) but does not report quantitative disposition parameters (CL, V, ka, etc.) for calcifediol. |
 | PD | Jodar_2023 | not_relevant | 2 | 1 | The text is a narrative review that qualitatively describes a linear dose-response curve for calcifediol but does not provide specific numeric PD parameters (e.g., slope, Emax, EC50) or data points to derive them. |
-| popPK | Kang_2026 | irrelevant | 0 | 0 | The study focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not involve calcifediol. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The study focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention calcifediol. |
 | PD | Kang_2026 | not_relevant | 0 | 0 | The paper focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention or analyze calcifediol. |
-| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a general framework for benchmarking covariate model building methods using simulated data and does not report specific pharmacokinetic parameters for calcifediol. |
+| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a general framework for benchmarking covariate model building methods using simulated datasets and does not report specific pharmacokinetic parameters for calcifediol. |
 | PD | Karlsen_2026 | not_relevant | 0 | 0 | The paper describes a framework for benchmarking covariate model building in population pharmacokinetics (PK) and does not report any pharmacodynamic (PD) or exposure-response relationships for calcifediol. |
 | popPK | Khriesha_2021 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay measuring IC50 values, not a pharmacokinetic study reporting disposition parameters for calcifediol. |
-| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bevacizumab (a monoclonal antibody), not calcifediol. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bevacizumab (CT-P16), not calcifediol. |
 | PD | Kim_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bevacizumab (CT-P16) and compares exposure metrics to a published efficacy benchmark, but it does not fit a pharmacodynamic (PD) model or report numeric PD parameters (e.g., Emax, EC50) for the drug. |
 | popPK | Kurnik_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipid transfer stimulated by vitamin D metabolites and does not report pharmacokinetic parameters for calcifediol. |
 | popPK | Lauridsen_2010 | irrelevant | 0 | 0 | The study focuses on reproductive performance and bone markers in swine using cholecalciferol and 25-hydroxycholecalciferol, not calcifediol, and does not report pharmacokinetic parameters. |
 | popPK | Lauridsen_2014 | irrelevant | 0 | 0 | The paper is a review of a nutritional study in swine focusing on vitamin D requirements and bone health, not a pharmacokinetic study of calcifediol. |
 | PD | Lauridsen_2014 | not_relevant | 3 | 1 | The text is a review of a dose-response trial in swine that reports qualitative trends (beneficial effects above 800 IU/kg) but does not provide specific numeric PD parameters (Emax, EC50) or detailed concentration-effect data for calcifediol. |
-| popPK | Lawson_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cholecalciferol (D3) and 25-hydroxycholecalciferol (25(OH)D3), not calcifediol (25(OH)D2). |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of PF-06804103, not calcifediol. |
+| popPK | Lawson_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cholecalciferol (Vitamin D3) and 25-hydroxycholecalciferol in rats, not calcifediol. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PF-06804103, an anti-HER2 antibody-drug conjugate, and does not involve calcifediol. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper discusses PF-06804103, not calcifediol, and does not report any PD parameters for the target drug. |
 | popPK | Li_2026_2 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for gotistobart, not calcifediol. |
 | PD | Li_2026_2 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for gotistobart, not calcifediol, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| PGx | Liu_2026 | not_relevant | 2 | 0 | The paper is a review of Vitamin D3 immunology and precision medicine strategies, mentioning VDR polymorphisms as a factor for variability but not reporting specific pharmacogenomic effects on PK/PD parameters of calcifediol. |
+| PGx | Liu_2026 | not_relevant | 2 | 1 | The paper is a review of immunomodulatory mechanisms and mentions VDR polymorphisms as a factor for variability, but it does not report specific quantitative pharmacokinetic or pharmacodynamic effect sizes for calcifediol linked to genotypes. |
 | popPK | Ma_2025 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
 | PD | Ma_2025 | not_relevant | 0 | 0 | The paper focuses on the development of biosensors for detection and does not report pharmacodynamic or exposure-response relationships. |
 | popPK | Magagnoli_2025 | irrelevant | 1 | 0 | The paper is a review article discussing vitamin D compounds in CKD and does not report original quantitative pharmacokinetic parameter values for calcifediol. |
@@ -134,36 +128,36 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ooi_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of elafibranor, not calcifediol. |
 | PD | Ooi_2026 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of elafibranor, not calcifediol. |
 | popPK | Quesada-Gomez_2018 | irrelevant | 2 | 0 | The paper is a review comparing efficacy and potency (nmol/l per μg) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for calcifediol. |
-| PGx | Quesada-Gomez_2022 | not_relevant | 0 | 0 | The paper is a review of calcifediol's mechanism and clinical use in COVID-19 and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Quesada-Gomez_2022 | not_relevant | 0 | 0 | The paper is a review of calcifediol's use in COVID-19 and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Raisz_1972 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of bone resorption, not a pharmacokinetic study, and does not report any disposition parameters for calcifediol. |
 | popPK | Reynolds_2020 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic mechanism of 25-hydroxycholecalciferol (calcifediol) in mice and cells, not its pharmacokinetic disposition parameters. |
-| popPK | Sethuramalingam_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for asparaginase (native and pegylated), not calcifediol. |
+| popPK | Sethuramalingam_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of asparaginase, not calcifediol. |
 | PD | Sethuramalingam_2026 | not_relevant | 0 | 0 | The paper focuses on asparaginase (N-Asp and P-Asp) pharmacokinetics and activity, not calcifediol, and does not report a concentration-effect or dose-response model for calcifediol. |
-| PGx | Singh_2022 | not_relevant | 0 | 0 | The paper investigates the association between vitamin D status, host genetics, and gut microbiota composition, but does not report pharmacokinetic or pharmacodynamic parameters for calcifediol. |
-| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetic-pharmacodynamic modeling of meropenem and colistin/polymyxin B, not calcifediol. |
+| PGx | Singh_2022 | not_relevant | 0 | 0 | The paper studies the association between a vitamin D binding protein (GC) gene variant and serum 25(OH)D levels/gut microbiota, not the pharmacokinetics or pharmacodynamics of the drug calcifediol. |
+| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meropenem and colistin/polymyxin B, not calcifediol. |
 | PD | Soeorg_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic-pharmacodynamic modeling of meropenem and colistin/polymyxin B, not calcifediol. |
 | popPK | Sprague_2017 | irrelevant | 2 | 0 | The paper is a review article that discusses the pharmacokinetic profile of calcifediol but does not provide specific quantitative disposition parameters (CL, V, etc.) in the provided text. |
 | PD | Sprague_2017 | not_relevant | 2 | 1 | The text is a review summary describing the mechanism and clinical utility of calcifediol but does not provide specific numeric PD parameters, concentration-effect curves, or detailed PK/PD modeling results. |
 | popPK | Stamp_1977 | irrelevant | 0 | 0 | The study focuses on dose-response relationships and circulating concentrations of 25-hydroxyvitamin D, not the pharmacokinetic parameters (CL, V, etc.) of calcifediol. |
-| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic models for 5-fluorouracil (5-FU), not calcifediol. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of pharmacokinetic models for 5-fluorouracil, not calcifediol. |
 | PD | Suthahar_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for 5-fluorouracil, not calcifediol, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic studies for vancomycin, not calcifediol. |
+| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The paper is a systematic review of vancomycin pharmacokinetics, not calcifediol. |
 | PD | Sürmelioğlu_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) studies for vancomycin, not calcifediol, and does not report any pharmacodynamic (PD) or exposure-response models. |
-| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on busulfan pharmacokinetics and does not involve calcifediol. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not calcifediol. |
 | PD | Tan_2026 | not_relevant | 0 | 0 | The paper focuses on busulfan PK and sampling strategies, not calcifediol, and does not report any pharmacodynamic or exposure-response relationships. |
 | popPK | Trummel_1969 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on bone resorption and does not report pharmacokinetic parameters for calcifediol. |
 | popPK | Vaes_2018 | irrelevant | 2 | 0 | The study reports dose-response effects on serum metabolite concentrations (25(OH)D) rather than quantitative pharmacokinetic parameters (CL, V, ka) or compartmental models for calcifediol. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a population pharmacokinetic model library for polymyxin B, not calcifediol. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper focuses on population pharmacokinetic models for polymyxin B, not calcifediol. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling of polymyxin B and does not report any pharmacodynamic (PD) or exposure-response relationships for calcifediol. |
-| popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological study using simulated data to demonstrate a statistical metric (95% CDIRAs) and does not report pharmacokinetic parameters for calcifediol. |
+| popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological study using simulated data to evaluate uncertainty quantification metrics, not a pharmacokinetic study of calcifediol. |
 | PD | Wanika_2026 | not_relevant | 0 | 0 | The paper is a methodological case study on uncertainty quantification using simulated PK data and does not report any pharmacodynamic or exposure-response relationships for calcifediol. |
-| PGx | Wilkinson_2000 | not_relevant | 0 | 0 | The study investigates the association between VDR polymorphisms and tuberculosis susceptibility, not the pharmacokinetics or pharmacodynamics of calcifediol. |
-| PGx | Wilson_2023 | not_relevant | 0 | 0 | The paper investigates genetic associations with endogenous calcitriol and the calcitriol-calcifediol ratio, not the pharmacokinetics or pharmacodynamics of exogenous calcifediol administration. |
+| PGx | Wilkinson_2000 | not_relevant | 0 | 0 | The study investigates VDR polymorphisms and susceptibility to tuberculosis, not the pharmacokinetics or pharmacodynamics of calcifediol. |
+| PGx | Wilson_2023 | not_relevant | 0 | 0 | The study investigates genetic associations with endogenous calcitriol and the calcitriol-calcifediol ratio, not the pharmacokinetics or pharmacodynamics of exogenous calcifediol administration. |
 | popPK | Wu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bosutinib, not calcifediol. |
 | PD | Wu_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bosutinib, not calcifediol, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tacrolimus, not calcifediol. |
+| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not calcifediol. |
 | PD | Xajil-Ramos_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for tacrolimus, not calcifediol, and contains no pharmacodynamic or exposure-response analysis. |
-| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of daptomycin, not calcifediol. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daptomycin, not calcifediol. |
 | PD | Xie_2026 | not_relevant | 0 | 0 | The paper focuses on daptomycin population pharmacokinetics (PopPK) and precision dosing, not calcifediol, and does not report any pharmacodynamic (PD) or exposure-response models. |
 | PGx | Xu_2026 | not_relevant | 0 | 0 | The paper investigates the causal relationship between serum hydroxyvitamin D levels and atherosclerosis using Mendelian randomization and transcriptomics, but does not report pharmacogenomic effects on the PK or PD of calcifediol. |
 | popPK | Xu_2026_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not calcifediol. |
@@ -173,7 +167,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Zhang_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for imipenem and does not report any pharmacodynamic (PD) or exposure-response relationships for calcifediol or any other drug. |
 | popPK | Zheng_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of VDR signaling where calcifediol is used only as a VDR inhibitor, with no pharmacokinetic parameters reported. |
 | PD | Zheng_2018 | not_relevant | 0 | 0 | The paper reports IC50 values for tamoxifen, not for calcifediol, and calcifediol is only mentioned qualitatively as a VDR inhibitor used to reverse effects, with no exposure-response or dose-response data provided for it. |
-| popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics for immunoglobulins (IVIg/SCIg), not calcifediol. |
+| popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review of pharmacokinetics for immunoglobulins (IVIg/SCIg), not calcifediol. |
 | PD | van_2026 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic models for immunoglobulins (IVIg/SCIg) and does not contain any data, analysis, or parameters for calcifediol. |
 
 ---

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Human Beta-glucocerebrosidase or Beta-D-glucosyl-N-acylsphingosine glucohydrolase E.C. 3.2.1.45. 497 residue protein with N-linked carbohydrates, MW=59.3 kD. Alglucerase is prepared by modification of the oligosaccharide chains of human Beta-glucocerebrosidase. The modification alters the sugar residues at the non-reducing ends of the oligosaccharide chains of the glycoprotein so that they are predominantly terminated with mannose residues.
+Imiglucerase is an enzyme replacement medicine used to treat Gaucher's disease, a lipid storage disorder that can affect organs such as the liver and spleen. It is authorised in the European Union and is used mainly in specialist care for this rare condition.
 
-**Indication.** For the treatment of Gaucher's disease (deficiency in glucocerebrosidase)
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2620206](https://www.wikidata.org/wiki/Q2620206) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or specific mechanism, so the pharmacodynamic model for pramlintide's effect on glucose is not described. No potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ramkissoon_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

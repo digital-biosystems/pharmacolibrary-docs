@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** A fungistatic compound that is widely used as a food preservative. It is conjugated to GLYCINE in the liver and excreted as hippuric acid. As the sodium salt form, sodium benzoate is used as a treatment for urea cycle disorders due to its ability to bind amino acids. This leads to excretion of these amino acids and a decrease in ammonia levels. Recent research shows that sodium benzoate may be beneficial as an add-on therapy (1 gram/day) in schizophrenia. Total Positive and Negative Syndrome Scale scores dropped by 21% compared to placebo.
+Sodium benzoate is a benzoic acid salt used as a medicine for various metabolic conditions and as a diagnostic agent in tests for gastric secretion. It is an approved drug, and it also acts as an antifungal agent.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423971](https://www.wikidata.org/wiki/Q423971) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

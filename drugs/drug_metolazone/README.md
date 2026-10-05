@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A quinazoline-sulfonamide that is considered a thiazide-like diuretic which is long-acting so useful in chronic renal failure. It also tends to lower blood pressure and increase potassium loss.
+Metolazone is a diuretic used to treat high blood pressure, congestive heart failure, nephrotic syndrome, and anasarka (severe fluid retention). It is an approved medicine, used alone or combined with potassium-sparing diuretics, though it is not authorised centrally in the European Union.
 
-**Indication.** For the treatment of hypertension, alone or in combination with other antihypertensive drugs of a different class.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1169561](https://www.wikidata.org/wiki/Q1169561) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,10 +30,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…oral administration…”</sub> | prose |
-| metabolism | bile duct | <sub>“…Undergoes enterohepatic recycling…”</sub> | prose |
-| metabolism | kidney | <sub>“…70-95% is excreted unchanged in urine via glomerular filtration and active tubular secreti…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the unconverted form in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SLC12A3 (inhibitor).</sub>
 

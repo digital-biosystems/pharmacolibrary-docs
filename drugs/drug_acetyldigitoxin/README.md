@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Cardioactive derivative of lanatoside A or of digitoxin used for fast digitalization in congestive heart failure.
+Acetyldigitoxin is a digitalis glycoside used as a cardiotonic and antiarrhythmic agent for heart conditions. It is an approved pharmaceutical drug, though it appears to be little used today and is not authorised in the European Union.
 
-**Indication.** Used for fast digitalization in congestive heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4673299](https://www.wikidata.org/wiki/Q4673299) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

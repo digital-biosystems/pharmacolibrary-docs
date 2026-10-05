@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Milnacipran is a selective serotonin and norepinephrine reuptake inhibitor (SNRI) and like many agents in this category was originally developed for and continues to be approved and indicated for the treatment of depression [F3928, F3934, A175786, A175951]. Furthermore, in 2009 the US FDA approved milnacipran for the additional indication of treating fibromyalgia [F3925], although other regional regulatory authorities like the EMA, among others, have not yet approved the agent for such treatment, citing lack of robust evidence of efficacy, insufficient demonstration of maintenance of effect, and other concerns [F3928, F3934]. Nevertheless, milnacipran demonstrates a somewhat unique characteristic among SNRIs to elicit a relatively balanced reuptake inhibition of both serotonin and noradrenaline, with a somewhat increased preference for noradrenaline reuptake inhibition - which is potentially a point of interest given the plausible proposal that noradrenaline plays an important role in the mitigation of pain signals in the descending inhibitory pain pathways in the brain and spinal cord [A175759, A175843, A175846].
+Milnacipran is an antidepressant used to treat depression and, in some countries, fibromyalgia. It is approved and used in some countries, but marketing authorisation was refused in the European Union.
 
-Moreover, recent research has shown that the levorotatory enantiomer of milnacipran, levomilnacipran, may have the capacity to inhibit the activity of beta-site amyloid precursor protein cleaving enzyme-1 (BACE-1), which has investigationally been associated with β-amyloid plaque formation - making the agent a possible course of treatment for Alzheimer's disease [A175957].
-
-**Indication.** Milnacipran is a selective serotonin and norepinephrine reuptake inhibitor (SNRI) indicated for the management of fibromyalgia in patients that are 18 years old or above [F3925]. 
-
-While milnacipran may be used for the treatment of major depressive disorder (MDD), it is only recommended in adult patients who are 18 years old or above [F3922] due to an increased risk for suicidal ideation, thinking, and behavior in children, adolescents, and young adults taking antidepressants for major depressive disorder (MDD) and other psychiatric disorders. Some regional prescribing information notes that the use of the medication is specifically for the short-term symptomatic relief of MDD [F3919]. Nevertheless, it is important to note that the regulatory approval of and/or indications listed here for milnacipran may or may not exist and/or vary greatly between regions and nations [F3928, F3934].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27086377](https://www.wikidata.org/wiki/Q27086377) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,11 +47,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absolute bioavailability of about 85-90% following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | liver | `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2D6` metabolism, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…eliminated primarily by renal excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor/target | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor/target | DrugBank actor |
 

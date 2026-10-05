@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Avalglucosidase alfa, or NeoGAA, is a drug for enzyme replacement therapy specifically designed for Pompe disease, a rare inherited neuromuscular disorder caused by the deficiency of the alpha-glucosidase (GAA) enzyme. GAA is an essential enzyme that hydrolyzes glycogen into free glucose for use in cellular functions. In Pompe disease, the GAA enzyme is missing and patients are unable to properly break down glycogen, resulting in the accumulation of glycogen within lysosomes and progressive disruption of cellular function, especially in smooth, cardiac, and skeletal muscle cells. Pompe disease is characterized by progressive muscle weakness and loss of motor function, including respiratory muscle weakness, which leads to premature death and debilitating effects on people’s lives.[A232955] Avalglucosidase alfa is a recombinant form of GAA that restores deficient enzyme levels. First developed by Sanofi Genzyme, avalglucosidase alfa is a chemically modified version of [alglucosidase alfa], where synthetic bis-phosphorylated oligosaccharides were attached to the structure to improve cellular uptake of the drug and better muscle targeting.[A232960]
+Avalglucosidase alfa is an enzyme medication used to treat glycogen storage disease type II (Pompe disease). It is authorised in the European Union and is an approved medicine, though it carries a boxed warning.
 
-On August 6, 2021, avalglucosidase alfa-ngpt was approved by the FDA under the market name Nexviazyme to treat patients one year of age and older with late-onset Pompe disease.[L35160] Late-onset Pompe disease is associated with a range of debilitating physical symptoms, such as progressive muscle weakness, including respiratory muscle weakness, and loss of motor function.[A232955] In clinical trials, avalglucosidase alfa improved lung function in patients with Pompe disease.[L35160] Avalglucosidase alfa was approved by Health Canada on November 15, 2021 for the treatment of patients older than six months of age with late-onset Pompe disease.[L39205] The EMA approved the drug on June 24, 2022.[L42720]
-
-**Indication.** Avalglucosidase alfa is a hydrolytic lysosomal glycogen-specific enzyme indicated for the treatment of patients with late-onset Pompe disease (lysosomal acid alpha-glucosidase [GAA] deficiency).[L35155,L39357,L42720] In the US, it is approved in patients one year of age and older. [L35155]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q107693067](https://www.wikidata.org/wiki/Q107693067) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

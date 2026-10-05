@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Mibefradil was withdrawn from the market in 1998 because of potentially harmful interactions with other drugs.
+Mibefradil is a calcium channel blocker that was used to treat high blood pressure and angina. It has been withdrawn from the market because it caused dangerous interactions with other medicines.
 
-**Indication.** For the treatment of angina and high blood pressure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6827783](https://www.wikidata.org/wiki/Q6827783) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

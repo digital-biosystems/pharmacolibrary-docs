@@ -7,10 +7,6 @@
 - **DrugBank:** [DB18887](https://go.drugbank.com/drugs/DB18887) · **PubChem:** not captured
 - **groups:** investigational
 
-## About
-
-**Description.** Cagrilintide is under investigation in clinical trial NCT06221969 (A Research Study to See How Much Cagrisema Lowers Blood Sugar and Body Weight Compared to Tirzepatide in People With Type 2 Diabetes Treated With Metformin With or Without an SGLT2 Inhibitor).
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

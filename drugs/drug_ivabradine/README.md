@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ivabradine is a novel heart rate lowering medicine for the symptomatic management of stable angina pectoralis and symptomatic chronic heart failure.  Ivabradine, brand name Corlanor, was approved by the FDA in April 2015 for the treatment of chronic heart failure in patients with an ejection fraction of ≤35%, in sinus rhythm with resting heart rate ≥70 beats per minute, who are not on beta-blockers due to contraindications or already receiving maximum beta-blocker dose. Recently a new indication was added to treat symptomatic heart failure from dilated cardiomyopathy for patients 6 months or more in age[Label]. Ivabradine acts by selectively inhibiting the "funny" channel pacemaker current (If) in the sinoatrial node in a dose-dependent fashion, resulting in a lower heart rate and thus more blood to flow to the myocardium. Although non-dihydropyridine calcium channel blockers and beta blockers also effectively lower heart rate, they exhibit adverse events due to their negative ionotropic effects. Therefore, as ivabradine is designed as a "pure" heart rate-lowering drug by selectively acting on the If channels, it may offer a more favorable side effect profile due to its lower likelihood of causing serious adverse effects.
+Ivabradine is a heart medicine used to treat stable angina (chest pain) and heart failure. It is authorised in the European Union and used when symptoms are not fully controlled by beta blockers.
 
-**Indication.** Ivabradine is indicated by the FDA to reduce the risk of hospitalization for worsening heart failure in adult patients with stable, symptomatic chronic heart failure with left ventricular ejection fraction ≤35%, who are in sinus rhythm with resting heart rate ≥70 beats per minute and either are on maximally tolerated doses of beta-blockers or have a contraindication to beta-blocker use. It is also indicated for treatment of stable symptomatic heart failure as a result of dilated cardiomyopathy for pediatric patients 6 months of age or more[FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425729](https://www.wikidata.org/wiki/Q425729) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -52,11 +52,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Administration with food slows absorption by 1 hour, but increases systemic absorption by…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in feces…”</sub> | prose |
-| excretion | kidney | — | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HCN2 (inhibitor).</sub>
 

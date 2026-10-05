@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Morphine, the main alkaloid of opium, was first obtained from poppy seeds in 1805.[A176035] It is a potent analgesic, though its use is limited due to tolerance, withdrawal, and the risk of abuse.[A176050] Morphine is still routinely used today, though there are a number of semi-synthetic opioids of varying strength such as [codeine], [fentanyl], [methadone], [hydrocodone], [hydromorphone], [meperidine], and [oxycodone].
+Morphine is an opioid painkiller used to treat pain, and also dyspnea and fibromyalgia. It is widely used and appears on the WHO list of essential medicines.
 
-Morphine was granted FDA approval in 1941.[L12114]
-
-**Indication.** Morphine is used for the management of chronic, moderate to severe pain.[A176050]
-
-Opiods, including morphine, are effective for the short term management of pain. Patients taking opioids long term may need to be monitored for the development of physical dependence, addiction disorder, and drug abuse.[L5728]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q81225](https://www.wikidata.org/wiki/Q81225) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,8 +50,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…7-10% of a dose of morphine is eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…predominantly eliminated in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: LY96 (activator), OPRD1 (target), OPRK1 (target), OPRM1 (target), UGT1A8 (substrate), UGT2B4 (substrate).</sub>
 

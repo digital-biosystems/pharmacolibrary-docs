@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Samarium Sm 153 lexidronam is a radioactive medication used to treat pain caused by cancer that has spread to the bone. It is a radiopharmaceutical. Radiopharmaceuticals are radioactive agents that may be used to diagnose some diseases by studying the function of the body's organs or to treat certain diseases.Samarium Sm 153 lexidronam is used to help relieve the bone pain that may occur with certain kinds of cancer. The radioactive samarium is taken up in the bone cancer area and gives off radiation that helps provide relief of pain.
+Samarium (153Sm) lexidronam is a radiopharmaceutical used to relieve pain from cancer that has spread to the bones. It is an approved medicine, with one product authorised in the European Union, and is used for bone pain palliation.
 
-**Indication.** Investigated for use/treatment in bone metastases, multiple myeloma, prostate cancer, and rheumatoid arthritis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20817238](https://www.wikidata.org/wiki/Q20817238) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

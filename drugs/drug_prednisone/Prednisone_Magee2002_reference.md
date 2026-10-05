@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/&quot;},{&quot;label&quot;:&quot;Magee_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_de2023_reference&quot;,&quot;label&quot;:&quot;de_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_de2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisone — `Prednisone_Magee2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.062). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,15 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
-**Kabs, Vnorm/F, CL/F, CLnorm/F and AUC have no unit.**
+**The prednisone/prednisolone record was held back because the model builder assumed F=1, Fm=1 and no molar correction, making the apparent metabolite clearance CLm/F of 13.5 L/h unacceptable, and the record was built from the abstract alone.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is prednisone's own; they describe prednisolone. Extracted — prednisolone: kabs 5.62 hx1, tlag 0.283 h, V/F 44.8 l, Vnorm/F 0.59 lkgx1, CL/F 13.5 lhx1, CLnorm/F 0.178 lhx1kgx1, t1/2z 2.33 h, AUC 1.64e+03 ngmlx1h.
+The record was built from the paper's abstract only, so summary statistics (kabs 5.62 1/h, tlag 0.283 h, V/F 44.8 L, CLm/F 13.5 L/h, t1/2z 2.33 h, AUC 1638 ng·h/mL for prednisolone) stood in for a fitted model. The failed check concerns the apparent-parameter assumption: F=1, Fm=1 and no molar correction were substituted, which was judged not acceptable for the metabolite clearance CLm/F. A second reader also disagreed on the dose compound (prednisone vs unknown), the primary analyte (prednisolone vs unknown), the model links (none recorded vs a prednisone-to-prednisolone metabolism link), and the placement of the AUC and CL/F values. Extracted — prednisolone: kabs 5.62 1/h, tlag 0.283 h, V/F 44.8 l, CLm/F 13.5 L/h, t1/2z 2.33 h, AUC 1.64e+03 ng·h/mL.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -33,23 +35,21 @@ Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of 
 <dbs-pgx drug="prednisone" model-id="Prednisone_Magee2002_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 8 extracted.
+**Parameters:** 6 extracted.
 
-**Parameterization:** CL/F, CLnorm/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k a (hx1) | `Q49` · kabs | 5.62 | hx1 | not captured | [h] · [x1] | not captured | space_fold (0.95) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| t lag (h) | `Q83` · tlag | 0.283 | h | 1018.8 | [h] | not captured | space_fold (0.95) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| V c /F(l) | `Q76` · V/F | 44.8 | l | 0.0448 | [l] | not captured | space_fold (0.95) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| V c /F/TBW(lkgx1) | `Q353` · Vnorm/F | 0.59 | lkgx1 | not captured | [kg] · [l] · [x1] | not captured | llm (0.6) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| CL/F(lhx1) | `Q27` · CL/F | 13.5 | lhx1 | not captured | [h] · [l] · [x1] | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| CL/F/TBW(lhx1kgx1) | `Q355` · CLnorm/F | 0.178 | lhx1kgx1 | not captured | [h] · [kg] · [l] · [x1]^2 | not captured | llm (0.6) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
+| k a (hx1) | `Q49` · kabs | 5.62 | 1/h | 0.0015611111111111112 | 1/h | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
+| t lag (h) | `Q83` · tlag | 0.283 | h | 1018.8 | [h] | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
+| V c /F(l) | `Q76` · V/F | 44.8 | l | 0.0448 | [l] | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
+| CL/F(lhx1) | `Q351` · CLm/F | 13.5 | L/h | 3.75e-06 | L/h | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 | t 1/2 (h) | `Q57` · t1/2z | 2.33 | h | 8388.0 | [h] | not captured | space_fold (0.95) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| AUC(ngmlx1h) | `Q88` · AUC | 1638 | ngmlx1h | not captured | [h] · [ng] · [ml] · [x1] | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
+| AUC(ngmlx1h) | `Q88` · AUC | 1638 | ng·h/mL | not captured | ng·h/mL | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,18 +58,29 @@ Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of 
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - unit_dimension_unknown: 'hx1' (kabs)
-- unit_dimension_unknown: 'lkgx1' (Vnorm/F)
+- unit_dimension_unknown: 'lkgx1' (V1/F)
+- dropped duplicate Q290 ('V\nc\n/F/TBW(lkgx1)', value 0.59) — already have one for this compound
 - unit_dimension_unknown: 'lhx1' (CL/F)
-- unit_dimension_unknown: 'lhx1kgx1' (CLnorm/F)
+- unit_dimension_unknown: 'lhx1kgx1' (CL/F)
+- dropped duplicate Q27 ('CL/F/TBW(lhx1kgx1)', value 0.178) — already have one for this compound
 - unit_dimension_unknown: 'ngmlx1h' (AUC)
-- unit_dimension_unknown: 'lhx1kg' (CLnorm/F)
-- dropped duplicate Q355 ('CL/F/TBW(lhx1kg)', value 0.788) — already have one for this compound
+- unit_dimension_unknown: 'lhx1kg' (CL/F)
+- dropped duplicate Q27 ('CL/F/TBW(lhx1kg)', value 0.788) — already have one for this compound
+- implicit units: 'k\na\n(hx1)' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant (kabs). In population pharmacokinetics, first-order rate constants are conv')
+- implicit units: 'CL/F(lhx1)' → L/h (from the popPK convention: 'The parameter is total clearance (CL/F). In population pharmacokinetics, clearance is conventionally expressed in volume')
+- implicit units: 'AUC(ngmlx1h)' → ng·h/mL (from the popPK convention: 'The parameter is Area Under the Curve (AUC). In population pharmacokinetics, AUC is conventionally expressed as concentr')
+- metabolite prednisolone: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=prednisolone
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V c /F(l)' is the general volume)
-- status held at route_to_review — not promoted
+- template fit: none — only the metabolite is modelled — no parent compartment
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V
+c
+/F(l)' is the general volume)
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 48 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'prednisolone', not prednisone — the review values are the parent's
 
@@ -78,24 +89,69 @@ Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.062 (1/16 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['prednisone', 'prednisolone', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[auc (ngmlx1h) wm]` | not captured | 1638 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | 1638 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f (lhx1) wm]` | not captured | 13.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 13.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a (hx1) wm]` | not captured | 5.62 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a]` | 5.62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 (h) wm]` | not captured | 2.33 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2]` | 2.33 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t lag (h) wm]` | not captured | 0.283 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t lag]` | 0.283 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v c /f (l) wm]` | not captured | 44.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v c /f]` | 44.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | prednisone | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | lhx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
-| C5_unit_missing_Q353 | fail | [length] ** 3 | lkgx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
-| C5_unit_missing_Q355 | fail | [length] ** 3 / [time] | lhx1kgx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | hx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ngmlx1h | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q76 | pass | volume within physiological range | 44.8 L | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=prednisolone) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -105,6 +161,9 @@ Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_prednisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Magee_2002` / `Magee_2002::reference`)
+- model: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/Prednisone_Magee2002_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/Prednisone_Magee2002_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/Prednisone_Magee2002_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -113,21 +172,26 @@ Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisone/Prednisone_Magee2002_reference/Prednisone_Magee2002_reference_modelica.zip" download>Prednisone_Magee2002_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prednisone/Prednisone_Magee2002_reference/Prednisone_Magee2002_reference_fmi.zip" download>Prednisone_Magee2002_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_prednisone/Prednisone_Magee2002_reference/Prednisone_Magee2002_reference.svg" alt="Prednisone_Magee2002_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 18.9 mg, single dose, first-order absorption (ka 5.62 /h, lag 17 min, F 1). Dose in the paper: 18.9 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_prednisone/Prednisone_Magee2002_reference/Prednisone_Magee2002_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_prednisone/Prednisone_Magee2002_reference/Prednisone_Magee2002_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Prednisone_Magee2002_reference_params.json` · controls `Prednisone_Magee2002_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 05:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 19:50 UTC</sub>

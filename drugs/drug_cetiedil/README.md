@@ -8,6 +8,12 @@
 - **molar mass:** 349.53 g/mol (C20H31NO2S) — DrugBank
 - **groups:** experimental
 
+## About
+
+Cetiedil is a vasodilator that has also been studied as an antisickling agent, and it was classified as a peripheral vasodilator for cardiovascular use. It is considered experimental and there is no evidence of current authorised use in major markets such as the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5065661](https://www.wikidata.org/wiki/Q5065661) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Anti-inhibitor coagulant complex, also known as FEIBA (factor eight inhibitor bypassing activity), contains several proteins involved in the prothrombinase complex. It is used to control bleeding in hemophilia A and B patients with inhibitors.
+Anti-inhibitor coagulant complex is a blood coagulation factor preparation used to control bleeding in people with inhibitors to factor VIII. It is an approved hemostatic medicine, used mainly in specialist care for hemophilia patients with inhibitors.
 
-**Indication.** For use in the control of bleeding episodes, perioperative management, and routine prophylaxis against bleeding episodes in hemophilia A and B patients with inhibitors.[FDA Label] It is not indicated in the absence of factor VIII or IX inhibitors.
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

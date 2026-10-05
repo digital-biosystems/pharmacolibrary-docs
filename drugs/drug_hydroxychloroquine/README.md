@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Hydroxychloroquine is a racemic mixture consisting of an R and S enantiomer.[A183047] Hydroxychloroquine is an aminoquinoline like [chloroquine].[L8072] It is a commonly prescribed medication in the treatment of uncomplicated malaria, rheumatoid arthritis, chronic discoid lupus erythematosus, and systemic lupus erythematosus.[L8072] Hydroxychloroquine is also used for the prophylaxis of malaria in regions where chloroquine resistance is unlikely.[L8072] It was developed during World War II as a derivative of [quinacrine] with less severe side effects.[A183092] Chloroquine and hydroxychloroquine are both being investigated for the treatment of SARS-CoV-2.[A192132]
+Hydroxychloroquine is used to treat and prevent malaria and to manage autoimmune conditions such as systemic lupus erythematosus, rheumatoid arthritis, Sjögren's syndrome, and certain skin diseases. It is widely used and is included on the WHO list of essential medicines.
 
-**The FDA emergency use authorization for hydroxychloroquine and [chloroquine] in the treatment of COVID-19 was revoked on 15 June 2020.[L14312]**
-
-Hydroxychloroquine was granted FDA approval on 18 April 1955.[L8072]
-
-A recent study reported a fatality in the group being treated with hydroxychloroquine for COVID-19.[A192546]
-
-**Indication.** Hydroxychloroquine is indicated for the prophylaxis of malaria where chloroquine resistance is not reported, treatment of uncomplicated malaria (caused by _P. falciparum_, _P. malariae_, _P. ovale_, or _P. vivax_), chronic discoid lupus erythematosus, systemic lupus erythematosus, acute rheumatoid arthritis, and chronic rheumatoid arthritis.[L8072]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421094](https://www.wikidata.org/wiki/Q421094) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,9 +45,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…24-25% is eliminated through the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…40-50% of hydroxychloroquine is excreted renally…”</sub> | prose |
-| excretion | skin | <sub>“…5% of a dose is sloughed off in skin…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACE2 (modulator), DNA (cross-linking/alkylation), TLR7 (target), TLR9 (target).</sub>
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Telmisartan is an angiotensin II receptor antagonist (ARB) used in the management of hypertension. Generally, angiotensin II receptor blockers (ARBs) such as telmisartan bind to the angiotensin II type 1 (AT1) receptors with high affinity, causing inhibition of the action of angiotensin II on vascular smooth muscle, ultimately leading to a reduction in arterial blood pressure.[A1489,A1490] Recent studies suggest that telmisartan may also have PPAR-gamma agonistic properties that could potentially confer beneficial metabolic effects.[A1492]
+Telmisartan is an angiotensin II receptor blocker used to treat high blood pressure and congestive heart failure. It is widely used and authorised in the European Union, available alone and in combination products.
 
-**Indication.** Used alone or in combination with other classes of antihypertensives for the treatment of hypertension.[L44652][L53028]. Also used in the treatment of diabetic nephropathy in hypertensive patients with type 2 diabetes mellitus, as well as the treatment of congestive heart failure (only in patients who cannot tolerate ACE inhibitors).[A255892]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q733186](https://www.wikidata.org/wiki/Q733186) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -102,7 +102,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT2B7` metabolism | paper PGx gene |
 | metabolism | liver | `CYP2C19` inhibitor, `SLCO1B3` transport, `UGT1A1` safety_allele, `UGT1A3` metabolism/substrate, `UGT2B7` metabolism | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` safety_allele, `UGT2B7` metabolism | paper PGx gene |
-| excretion | bile duct | <sub>“…eliminated unchanged in feces via biliary excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/transport | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor/transport | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor/transport | DrugBank actor |

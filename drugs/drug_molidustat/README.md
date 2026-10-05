@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Molidustat is under investigation in clinical trial NCT03350321 (A Study of Molidustat for Correction of Renal Anemia in Non-dialysis Subjects).
+Molidustat is an antianemic drug candidate investigated for the treatment of anemia. It remains investigational and is not an approved medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27087553](https://www.wikidata.org/wiki/Q27087553) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

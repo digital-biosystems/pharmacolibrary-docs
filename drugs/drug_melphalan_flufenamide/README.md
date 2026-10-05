@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Melphalan flufenamide, also known as melflufen or J1, is a prodrug of [melphalan].[A230123,L32173] Melphalan flufenamide is more readily uptaken by cells than melphalan, and is cleaved to the active metabolite by aminopeptidases.[A230123] _In vitro_ models show that melphalan is 10 to hundreds of times more potent than melphalan.[A230123] The increased potency makes melphalan flufenamide a treatment option for patients with relapsed or refractory multiple myeloma who have attempted at least 4 lines of therapy already.[A230143,L32173]
+Melphalan flufenamide (melflufen) is an alkylating anticancer drug that was authorised in the European Union for treating multiple myeloma. It was later withdrawn and is no longer in use.
 
-Melphalan flufenamide was granted FDA approval on 26 February 2021.[L32173]. It has since been withdrawn from the market in the wake of the phase 3 OCEAN trial which showed a decrease in overall survival in comparison to standard treatment with [pomalidomide] and [dexamethasone] despite superior progression-free survival.[L39085, L39090]
-
-**Indication.** Melphalan flufenamide is indicated in combination with [dexamethasone] to treat adults with relapsed or refractory multiple myeloma who have received ≥4 therapies and are refractory to at least one proteasome inhibitor, immunomodulatory agent, and anti-CD38 monoclonal antibody.[L32173] The FDA has withdrawn the drug from the market for this indication following phase 3 trial data showing decreased overall survival.[L39090]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27277739](https://www.wikidata.org/wiki/Q27277739) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,7 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…it is expected to be mainly renally excreted…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ANPEP (substrate), DNA (cross-linking/alkylation).</sub>
 

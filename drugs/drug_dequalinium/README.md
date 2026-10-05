@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Dequalinium is an antibacterial agent with multi-targeted actions. It also possesses antifungal, antiparasitic, antiviral, anticancer, and neuroprotective properties.[A249255] It is a quaternary ammonium compound,[L42190] as it consists of an amphipathic cation with two aminoquinaldinium rings at both ends of a long hydrophobic hydrocarbon chain. Due to its flexible structure, dequalinium was investigated to build drug and gene delivery systems.[A249255]
+Dequalinium is an antiseptic used against infections of the skin, vagina, and throat. It is an approved antiseptic, used mainly in topical preparations for these areas.
 
-First used as an antiseptic and disinfectant in the 1950s, dequalinium is still found in various OTC products to treat conditions of oral infections and inflammation.[A249255] It is also used in vaginal tablets to treat bacterial vaginosis.[L42190]
-
-**Indication.** Dequalinium is used in several OTC products to treat mouth infections and inflammation, such as tonsillitis, pharyngitis, and gingivitis.[A249255] As vaginal tablets, dequalinium is indicated for the treatment of bacterial vaginosis in adult women under 55 years of age.[L42190]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q81984379](https://www.wikidata.org/wiki/Q81984379) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

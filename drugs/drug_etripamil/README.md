@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Etripamil is a nondihydropyridine, L-type calcium channel blocker.[A275238, L54728] It is a fast-acting drug with a short duration of action.[A275243, A275248] The nasal formulation of etripamil was first approved by the FDA on December 12, 2025 for the conversion of acute symptomatic episodes of paroxysmal supraventricular tachycardia (PSVT) to sinus rhythm in adults.[L54723]
+Etripamil is a phenylalkylamine calcium channel blocker, a drug class used for heart conditions. It is not yet an established treatment; it is listed as investigational and has no European Union authorisation recorded.
 
-**Indication.** Etripamil is indicated for the conversion of acute symptomatic episodes of paroxysmal supraventricular tachycardia (PSVT) to sinus rhythm in adults.[L54728]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27289030](https://www.wikidata.org/wiki/Q27289030) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,12 +36,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | blood | <sub>“…primarily metabolized by blood esterases…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…26% was recovered in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` inhibitor | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
 

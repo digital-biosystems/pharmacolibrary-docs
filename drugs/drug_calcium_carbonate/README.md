@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Calcium carbonate is an inorganic salt used as an antacid. It is a basic compound that acts by neutralizing hydrochloric acid in gastric secretions. Subsequent increases in pH may inhibit the action of pepsin. An increase in bicarbonate ions and prostaglandins may also confer cytoprotective effects. Calcium carbonate may also be used as a nutritional supplement or to treat hypocalcemia.
+Calcium carbonate is used as an antacid for heartburn, indigestion and acid-related stomach problems, and as a calcium supplement, for example in osteoporosis. It is an approved, widely available over-the-counter medicine used broadly for these common conditions.
 
-**Indication.** For relief of heartburn and acid indigestion. May also be used as a nutritional supplement or to treat hypocalcemia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q23767](https://www.wikidata.org/wiki/Q23767) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,10 +41,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Maximal absorption occurs at doses of 500 mg or less taken with food…”</sub> | prose |
-| excretion | bile duct | <sub>“…Excreted mainly in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…The majority of renally filtered calcium is reabsorbed…”</sub> | prose |
-| excretion | skin | <sub>“…Also secreted by sweat glands…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

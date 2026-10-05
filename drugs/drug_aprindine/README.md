@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Aprindine is a cardiac depressant used in arrhythmias.
+Aprindine is an antiarrhythmic drug of class Ib, used to treat heart rhythm disorders associated with heart disease. It is considered experimental and is not authorised in the European Union, so its current availability is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q263612](https://www.wikidata.org/wiki/Q263612) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

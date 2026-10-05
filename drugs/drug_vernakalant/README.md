@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Vernakalant was developed by Cardiome Pharma as as an antiarrhythmic drug intended for rapid conversion of atrial fibrillation to sinus rhythm. It acts as an atypical class III antiarrhythmic drug that potentiates its effect in higher heart rates. Intravenous formulation was approved in Europe in September 2010 as Brinavess and in Canada in April 2017. It is an investigational drug under regulatory review by FDA.
+Vernakalant is an antiarrhythmic drug used to treat atrial fibrillation. It is an approved medicine, available in some countries, mainly for hospital use in restoring normal heart rhythm.
 
-**Indication.** Indicated for the rapid conversion of recent onset of atrial fibrillation to sinus rhythm in adults for non-surgery patients that lasts for less than 7 days of duration and post-cardiac surgery patients with atrial fibrillation lasting less than 3 days of duration.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q665725](https://www.wikidata.org/wiki/Q665725) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,7 +34,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Mainly eliminated via renal excretion.…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: KCNA5 (blocker), KCND3 (blocker), KCNH2 (blocker), SCN5A (blocker).</sub>
 

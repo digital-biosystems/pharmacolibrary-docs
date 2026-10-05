@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Temocapril is a prodrug-type angiotensin-I converting enzyme (ACE) inhibitor not approved for use in the United States, but is approved in Japan and South Korea. Temocapril can also be used in hemodialysis patients without risk of serious accumulation.
+Temocapril is an ACE inhibitor developed for treating high blood pressure. It is considered investigational and has not been authorised in the European Union; it has been used mainly in Japan.
 
-**Indication.** Temocapril is an ACE inhibitor primarily indicated in the treatment of hypertension and congestive heart failure, diabetic nephropathy, and improvement of prognosis for coronary artery diseases (including acute myocardial infarction).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7698194](https://www.wikidata.org/wiki/Q7698194) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -68,8 +68,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | absorption | blood-brain barrier | `SLCO1A2` unknown | DrugBank actor |
 | absorption | small intestine | `SLC15A1` unknown, `SLCO1A2` unknown | DrugBank actor |
-| excretion | kidney | <sub>“…and kidneys…”</sub> | prose |
-| excretion | liver | <sub>“…eliminated primarily through the liver…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor), SLCO1B1 (OATP1B1) (transport).</sub>
 

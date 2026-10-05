@@ -10,7 +10,9 @@
 
 ## About
 
-**Indication.** Potassium is used to regulate hypokalemia as a primary condition or secondary to other medical conditions.
+Potassium acetate is used to treat low potassium levels in the blood (hypokalemia). It is an approved intravenous electrolyte solution additive, used in clinical settings to replenish potassium.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409199](https://www.wikidata.org/wiki/Q409199) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,9 +38,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Mostly urine…”</sub> | prose |
-| excretion | skin | <sub>“…also skin…”</sub> | prose |
-| excretion | small intestine | <sub>“…and feces…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP1A1 (unknown).</sub>
 

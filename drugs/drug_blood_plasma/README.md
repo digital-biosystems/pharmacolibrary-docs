@@ -8,6 +8,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Blood plasma, the liquid part of blood, is used in transfusion medicine to replace blood volume and clotting factors in patients with bleeding or severe blood loss. It remains widely used in hospitals worldwide, supplied through blood donation services.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q79749](https://www.wikidata.org/wiki/Q79749) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

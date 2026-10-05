@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Edoxaban is a member of the Novel Oral Anti-Coagulants (NOACs) class of drugs, and is a rapidly acting, oral, selective factor Xa inhibitor. By inhibiting factor Xa, a key protein in the coagulation cascade, edoxaban prevents the stepwise amplification of protein factors needed to form blood clots. It is indicated to reduce the risk of stroke and systemic embolism (SE) in patients with nonvalvular atrial fibrillation (NVAF) and for the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE) following 5-10 days of initial therapy with a parenteral anticoagulant. Traditionally, warfarin, a vitamin K antagonist, was used for stroke prevention in these individuals but effective use of this drug is limited by it's delayed onset, narrow therapeutic window, need for regular monitoring and INR testing, and numerous drug-drug and drug-food interactions. This has prompted enthusiasm for newer agents such as dabigatran, apixaban, and rivaroxaban for effective clot prevention. In addition to once daily dosing, the benefits over warfarin also include significant reductions in hemorrhagic stroke and GI bleeding, and improved compliance, which is beneficial as many patients will be on lifelong therapy.
+Edoxaban is a direct factor Xa inhibitor used to prevent stroke in atrial fibrillation and to treat venous thromboembolism such as pulmonary embolism. It is an approved medicine, authorised in the European Union, and is widely used as an anticoagulant.
 
-**Indication.** Edoxaban is indicated for reducing the risk of stroke and systemic embolism (SE) in patients with nonvalvular atrial fibrillation (NVAF). However, it should not be used in patients with creatinine clearance (CrCL) > 95 mL/min because of increased risk of ischemic stroke compared to warfarin at the highest dose studied (60 mg). It is also indicated for the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE) following 5-10 days of initial therapy with a parenteral anticoagulant.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q21011234](https://www.wikidata.org/wiki/Q21011234) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,9 +56,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | blood | <sub>“…minimal metabolism via hydrolysis (mediated by carboxylesterase 1)…”</sub> | prose |
-| excretion | bile duct | <sub>“…biliary/intestinal excretion account for the remaining clearance…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated primarily as unchanged drug in urine…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (inhibitor).</sub>
 

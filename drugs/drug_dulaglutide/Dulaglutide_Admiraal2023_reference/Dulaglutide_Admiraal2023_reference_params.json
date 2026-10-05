@@ -1,13 +1,9 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 0.16 mg parenteral (A10BJ05)",
  "model_id": "Dulaglutide_Admiraal2023_reference",
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  3.85
  ],
  "parameters": {
   "Cl": 3.416666666666667e-06,
@@ -15,14 +11,14 @@
   "VdPerKg": 0.00014285714285714287,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 3.85e-06,
+  "adminMass": 1.6e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662124
+  "central.C": 660.0000000662042
  },
  "reference_peaks": {
-  "central.C": 0.00034810113218648574
+  "central.C": 1.4467153267322081e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

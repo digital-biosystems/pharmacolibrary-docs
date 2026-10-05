@@ -5,7 +5,7 @@
 
 # tolbutamide — `Tolbutamide_Shi2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,11 @@
 
 The source reports only CL/F = 1.23 L/h/kg and V/F = 1.48 L/kg for tolbutamide; ka and Tlag were left at library defaults because no values appear in the source. The model builder also assumed F=1 and Fm=1 without molar correction (apparent parameterization) and used first-order depot input consistent with extravascular dosing. The invented ka was judged not acceptable, triggering the needs_review verdict; the second reader's value checks agreed with the record on all compared values (3320.91, 1.96, 1.17, 9010.48). Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 9037.90; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 3320.91, the second reading 3320.91; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:49.934473+00:00) predates the upstream re-run (2026-10-03 18:50:38.321093+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:49.934473+00:00) predates the upstream re-run (2026-10-05 05:01:18.316148+00:00). Current validate status: `extracted`.
 
 ## Citation
 Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021)
@@ -71,18 +71,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q17]` | not captured | 9037.90 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q19]` | not captured | 9010.48 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 3320.91 | 3320.91 | mismatch |
 | `gpt-oss:120b` | `values[Q53]` | 1.96 | 1.96 | mismatch |
 | `gpt-oss:120b` | `values[Q56]` | 1.17 | 1.17 | mismatch |
-| `gpt-oss:120b` | `values[Q88]` | 9010.48 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 9010.48 | 9010.48 | mismatch |
 
 </details>
 
@@ -137,8 +135,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_modelica.zip" download>Tolbutamide_Shi2021_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_fmi.zip" download>Tolbutamide_Shi2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_modelica.zip" download>Tolbutamide_Shi2021_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_fmi.zip" download>Tolbutamide_Shi2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_matlab.zip" download>Tolbutamide_Shi2021_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_matlab_simbio.zip" download>Tolbutamide_Shi2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_sbml.zip" download>Tolbutamide_Shi2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -150,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 2100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 2100 mg.
+**Administration: oral** — 1500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1500 mg oral (A10BB03) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_sim_controls.json"></dbs-fmusim>
 
@@ -159,4 +157,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 18:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 05:01 UTC</sub>

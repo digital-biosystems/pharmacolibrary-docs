@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rabeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/&quot;},{&quot;label&quot;:&quot;Yang_2009 \u00b7 PD gastrin&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# gastrin — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# gastrin — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,19 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Rabeprazole (concentrations from this paper's PK model) drives gastrin (in pg/ml): direct sigmoid Emax (Hill) effect.
+**As extracted:** Rabeprazole (concentrations from this paper's PK model) drives gastrin (in pg ml -1): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Rabeprazole plasma concentrations drive a stimulatory sigmoid-Emax effect on serum gastrin (pg/ml), linked through an effect compartment (ke0) because the concentration–gastrin profile showed counterclockwise hysteresis; the record gives an EC50 of 50 (units not stated), and the paper reports that Emax decreased and EC50 and ke0 increased after multiple doses, but does not state the numeric Emax or the precise mechanism by which rabeprazole raises gastrin.
+> Rabeprazole plasma concentrations stimulate serum gastrin levels via a direct link model with an effect compartment, characterized by a sigmoid Emax relationship. The model parameters include a baseline (E0) of 42.3 pg ml-1, a maximal effect (Emax) of 293.4 pg ml-1, an EC50 of 0.2 ng ml-1, a gamma of 2.0003, and an effect compartment rate constant (ke0) of 0.017 x 10^4 l min-1.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Yang_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009)
@@ -34,10 +34,11 @@ Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of c
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC — Final PK model | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col1 |
-| PD (effect) | EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col6 |
-| PD (effect) | EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col13 |
-| PD (effect) | EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col17 |
+| PD (effect) | E0 | `Q324` · not captured | 42.3 | pg ml -1 | not captured | llm (not captured) | Yang_2009:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 293.4 | pg ml -1 | not captured | llm (not captured) | Yang_2009:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.2 | ng ml -1 | not captured | llm (not captured) | Yang_2009:pdv3 |
+| PD (effect) | Keo | `Q326` · not captured | 0.017 | ¥ 10 4 l min -1 | not captured | llm (not captured) | Yang_2009:pdv3 |
+| PD (effect) | g | `Q325` · not captured | 2.0003 | not captured | not captured | llm (not captured) | Yang_2009:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

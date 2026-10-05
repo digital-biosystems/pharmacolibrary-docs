@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrocortisone&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/&quot;},{&quot;label&quot;:&quot;Hamitouche_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocortisone_Werumeus2017_reference&quot;,&quot;label&quot;:&quot;Werumeus_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydrocortisone — `Hydrocortisone_Hamitouche2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,14 +25,12 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:13.334635+00:00) predates the upstream re-run (2026-10-04 01:24:50.158783+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017)
   ·  DOI: [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9)
 
 ## Model component
-<dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Hamitouche2017_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="fludrocortisone, hydrocortisone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Hamitouche2017_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="fludrocortisone, hydrocortisone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

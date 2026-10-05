@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Lercanidipine is a calcium channel blocker of the dihydropyridine class. It is sold under various commercial names including Zanidip.
+Lercanidipine is a calcium channel blocker used as an antihypertensive drug to treat high blood pressure. It is an approved medicine, available alone and in fixed combinations with ACE inhibitors or angiotensin II receptor blockers, and is used fairly widely, especially in Europe.
 
-**Indication.** For the treatment of Hypertension, management of angina pectoris and Raynaud's syndrome
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410492](https://www.wikidata.org/wiki/Q410492) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

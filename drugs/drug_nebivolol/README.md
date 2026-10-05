@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Nebivolol is a racemic mixture of 2 enantiomers where one is a beta adrenergic antagonist and the other acts as a cardiac stimulant without beta adrenergic activity.[A182579] Treatment with nebivolol leads to a greater decrease in systolic and diastolic blood pressure than [atenolol], [propranolol], or [pindolol].[A182579] Nebivolol and other beta blockers are generally not first line therapies as many patients are first treated with thiazide diuretics.[A182594]
+Nebivolol is a selective beta blocker used to treat high blood pressure (arterial hypertension). It is an approved medicine, available alone and in fixed combinations with thiazides, calcium channel blockers, ACE inhibitors, ARBs, or lipid-lowering drugs.
 
-Nebivolol was granted FDA approval on 17 December 2007.[L7985]
-
-**Indication.** Nebivolol is indicated to treat hypertension.[A2762,A182579,L7985,L7988]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418130](https://www.wikidata.org/wiki/Q418130) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,8 +44,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…44% in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…38% is eliminated in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target).</sub>
 

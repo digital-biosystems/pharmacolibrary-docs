@@ -8,6 +8,12 @@
 - **molar mass:** 273.376 g/mol (C17H23NO2) — DrugBank
 - **groups:** investigational
 
+## About
+
+Tilidine is an opioid painkiller used to treat moderate to severe pain. It is classified as investigational in DrugBank and is not authorised in the European Union; it is used mainly in a few countries such as Germany, often combined with naloxone.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421108](https://www.wikidata.org/wiki/Q421108) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

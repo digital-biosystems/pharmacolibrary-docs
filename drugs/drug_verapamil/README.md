@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Verapamil is a phenylalkylamine calcium channel blocker used in the treatment of high blood pressure, heart arrhythmias, and angina,[L8791] and was the first calcium channel antagonist to be introduced into therapy in the early 1960s.[A188514] It is a member of the non-dihydropyridine class of calcium channel blockers, which includes drugs like [diltiazem] and [flunarizine], but is chemically unrelated to other cardioactive medications.[L8791] Verapamil is administered as a racemic mixture containing equal amounts of the S- and R-enantiomer, each of which is pharmacologically distinct - the S-enantiomer carries approximately 20-fold greater potency than the R-enantiomer, but is metabolized at a higher rate.[A188435]
+Verapamil is a calcium channel blocker used to treat cardiovascular conditions such as high blood pressure, angina, and certain heart rhythm problems like atrial fibrillation and supraventricular tachycardia. It is an approved medicine and appears on the WHO list of essential medicines, so it is widely used worldwide.
 
-**Indication.** Verapamil is indicated in the treatment of vasopastic (i.e. Prinzmetal's) angina, unstable angina, and chronic stable angina. It is also indicated to treat hypertension, for the prophylaxis of repetitive paroxysmal supraventricular tachycardia, and in combination with digoxin to control ventricular rate in patients with atrial fibrillation or atrial flutter.[L8791] Given intravenously, it is indicated for the treatment of various supraventricular tachyarrhythmias, including rapid conversion to sinus rhythm in patients with supraventricular tachycardia and for temporary control of ventricular rate in patients with atrial fibrillation or atrial flutter.[L10481]
-
-Verapamil is commonly used off-label for prophylaxis of cluster headaches.[A13983]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410291](https://www.wikidata.org/wiki/Q410291) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -81,7 +79,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` activator/substrate, `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/metabolism, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…≥16% in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
 | excretion | liver | `ABCC3` inhibitor, `ABCC4` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |

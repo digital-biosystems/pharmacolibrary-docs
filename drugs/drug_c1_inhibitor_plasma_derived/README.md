@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** C1 Esterase Inhibitor (Human) is composed of purified endogenous complement component-1 esterase inhibitor (hC1INH) isolated from human plasma. The primary function of endogenous C1INH is to regulate the activation of the complement and contact system pathways.[L16586, L16606]
+Plasma-derived C1 inhibitor is used to treat hereditary angioedema. It is an approved medicine, with an authorised product in the European Union.
 
-This drug is indicated for  prophylaxis and treatment of Hereditary Angioedema (HAE), a human genetic disorder caused by a shortage of C1 inhibitor activity that results in an overreaction of the immune system. The disease is characterized by acute attacks of painful, and in some cases, fatal swelling of several soft tissues or edema, which may last up to five days when untreated.[L16586, L16606]
-
-**Indication.** Intravenous and subcutaneous formulations of the human C1-esterase inhibitor are indicated for routine prophylaxis against acute attacks of hereditary angioedema in patients six years of age and older.[L16586, L16606] It is also used to treat these in adult and adolescent patients with hereditary angioedema.[L40995]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q22075742](https://www.wikidata.org/wiki/Q22075742) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,7 +34,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: C1R (inhibitor), C1S (inhibitor), F11 (inhibitor), F12 (inhibitor), F2 (inhibitor), KLKB1 (inhibitor), PLAT (inhibitor).</sub>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;famotidine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ikawa_2007_DpH&quot;,&quot;label&quot;:&quot;Ikawa_2007 \u00b7 DpH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/pd_Ikawa_2007_DpH.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # famotidine
 
@@ -11,35 +11,37 @@
 
 ## About
 
-**Description.** Famotidine is a competitive histamine-2 (H<sub>2</sub>) receptor antagonist that works to inhibit gastric acid secretion. It is commonly used in gastrointestinal conditions related to acid secretion, such as gastric ulcers and gastroesophageal reflux disease (GERD), in adults and children.[L11166] Compared to other H<sub>2</sub> receptor antagonists, famotidine displays high selectivity towards this receptor; in a study consisting of healthy volunteers and patients with acid hypersecretory disease, famotidine was about 20 to 50 times more potent at inhibiting gastric acid secretion than [cimetidine] and eight times more potent than [ranitidine] on a weight basis.[A189462] Famotidine is used in various over-the-counter and off-label uses.[L11166] While oral formulations of famotidine are more commonly used, the intravenous solution of the drug is available for use in hospital settings.[L11142]
+Famotidine is an H2-receptor antagonist used for acid-related conditions such as gastroesophageal reflux disease, heartburn, stomach and duodenal ulcers, Zollinger–Ellison syndrome, and urticaria. It is an approved medicine, widely available over the counter and on prescription for these common digestive complaints.
 
-**Indication.** Famotidine is indicated in pediatric and adult patients (with the bodyweight of 40 kg and above) for the management of active duodenal ulcer (DU), active gastric ulcer, symptomatic non-erosive gastroesophageal reflux disease (GERD), and erosive esophagitis due to GERD, diagnosed by biopsy.[L11139]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411159](https://www.wikidata.org/wiki/Q411159) and the WHO ATC classification; not checked by a person.</small>
 
-It is also indicated in adult patients for the treatment of pathological hypersecretory conditions (e.g., Zollinger-Ellison Syndrome, multiple endocrine neoplasias) and reduction of the risk of DU recurrence.[L11139]
+## Molecules and molar masses
 
-The intravenous formulation of famotidine is available for some hospitalized patients with pathological hypersecretory conditions or intractable ulcers or as an alternative to the oral dosage form for short-term use in patients who are unable to take oral medication.[L11142]
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
 
-Over-the-counter famotidine is used for the management and prevention of heartburn caused by gastroesophageal reflux in children and adults. Off-label uses of famotidine include the reduction of NSAIDs-associated gastrointestinal effects, treatment of refractory urticarial, prevention of stress ulcer in critically-ill patients, and symptomatic relief of gastritis.[L11166,L11172]
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| famotidine | parent | 337.445 | C8H15N7O2S3 | DrugBank | [3325](https://pubchem.ncbi.nlm.nih.gov/compound/3325) | Maish_1998 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 04:47 | 1:40 | 3/0/0 | 0/1/0 | 0/0/0 | 27,548/4,746 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-04 09:06 | 6:32 | 3/0/0 | 0/0/1 | 0/0/0 | 64,813/21,976 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span> | [Ikawa_2007_reference](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Maish_1998_reference](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [McCann_2023_reference](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ikawa_2007_reference](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Maish_1998_reference](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [McCann_2023_reference](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ikawa_2007_pH](drugs/drug_famotidine/pd_Ikawa_2007_pH.md) | intragastric pH ← lafutidine · direct sigmoid Emax (Hill) effect | — | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Ikawa_2007_DpH](drugs/drug_famotidine/pd_Ikawa_2007_DpH.md) | DpH ← famotidine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
 
 ## ADME sites
 
@@ -47,7 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Following oral administration, the absorption of famotidine is dose-dependent and incomple…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
 | excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` substrate, `SLC22A8` inhibitor/substrate, `SLC47A1` inhibitor | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
@@ -64,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 29 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -74,18 +76,18 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Escher_2024.pdf` | Escher OG et al., Pharmacokinetics of famotidine in goats…, Journal of veterinary pharm… (2024) | popPK | 10 | [10.1111/jvp.13449](https://doi.org/10.1111/jvp.13449) | [38720597](https://pubmed.ncbi.nlm.nih.gov/38720597) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, t1/2, MRT, Vd, AUC) for famotidine in goats directly in the text. |
-| `Maish_1998.pdf` | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | popPK | 10 | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) | [9824781](https://pubmed.ncbi.nlm.nih.gov/9824781) | The study reports quantitative compartmental PK parameters (Cl, Vd, t1/2) for famotidine with specific numeric values present in the text. |
-| `Nagita_1994.pdf` | Nagita A et al., Pharmacokinetics and pharmacodynamics o…, Therapeutic drug monitoring (1994) | popPK | 10 | [10.1097/00007691-199410000-00002](https://doi.org/10.1097/00007691-199410000-00002) | [7846741](https://pubmed.ncbi.nlm.nih.gov/7846741) | The paper reports quantitative pharmacokinetic parameters (Vd, t1/2, AUC, bioavailability) for famotidine in children, with all numeric values explicitly present in the text. |
+| `Maish_1998.pdf` | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | popPK | 10 | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) | [9824781](https://pubmed.ncbi.nlm.nih.gov/9824781) | The study reports quantitative pharmacokinetic parameters (clearance, volume, half-life) for famotidine in humans with cystic fibrosis. |
+| `Nagita_1994.pdf` | Nagita A et al., Pharmacokinetics and pharmacodynamics o…, Therapeutic drug monitoring (1994) | popPK | 10 | [10.1097/00007691-199410000-00002](https://doi.org/10.1097/00007691-199410000-00002) | [7846741](https://pubmed.ncbi.nlm.nih.gov/7846741) | The abstract explicitly reports quantitative pharmacokinetic parameters (Vd, t1/2, AUC, bioavailability) for famotidine in children. |
 
-<sub>queue written 2026-09-18T04:46:27.839443+00:00</sub>
+<sub>queue written 2026-10-04T09:00:25.848747+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | McCann_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of posaconazole, with famotidine serving only as a co-administered drug to assess its effect on posaconazole bioavailability. |
+| popPK | McCann_2023 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of posaconazole, with famotidine serving only as a co-administered drug to assess its effect on posaconazole bioavailability. |
 | popPK | Schlachter_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of atogepant, with famotidine mentioned only as a concomitant medication that does not require dose adjustment. |
-| popPK | Wilton_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the drug C4 in dogs, not famotidine. |
+| popPK | Wilton_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the FAK scaffold inhibitor C4 in dogs, not for famotidine. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 04:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 09:00 UTC</sub>

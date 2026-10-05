@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Nimodipine is a 1,4-dihydropyridine calcium channel blocker. It acts primarily on vascular smooth muscle cells by stabilizing voltage-gated L-type calcium channels in their inactive conformation. By inhibiting the influx of calcium in smooth muscle cells, nimodipine prevents calcium-dependent smooth muscle contraction and subsequent vasoconstriction. Compared to other calcium channel blocking agents, nimodipine exhibits greater effects on cerebral circulation than on peripheral circulation. Nimodipine is used to as an adjunct to improve the neurologic outcome following subarachnoid hemorrhage from ruptured intracranial aneurysm.
+Nimodipine is a calcium channel blocker used to treat subarachnoid hemorrhage. It is an approved drug that remains in use, though it carries a boxed warning.
 
-**Indication.** For use as an adjunct to improve neurologic outcome following subarachnoid hemorrhage (SAH) from ruptured intracranial berry aneurysms by reducing the incidence and severity of ischemic deficits.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421429](https://www.wikidata.org/wiki/Q421429) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -48,11 +48,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…due to extensive first-pass metabolism…”</sub> | prose |
-| absorption | small intestine | <sub>“…rapidly absorbed after oral administration…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…less than 1% is recovered in the urine as unchanged drug…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AHR (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1F (inhibitor), CACNA1S (inhibitor), CACNB1 (inhibitor), CACNB2 (inhibitor), CACNB3 (inhibitor), CACNB4 (inhibitor), NR3C2 (target).</sub>
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** The Food and Drug Administration suspended the marketing authorisation for Survector in 1999 and France withdrew it from the market, however several developing countries continued to produce it up until 2005.
+Amineptine is a tricyclic antidepressant that was used to treat depression. It was never approved in the US and was withdrawn from the French market because of concerns over abuse, dependence and severe acne.
 
-**Indication.** For the treatment of depression.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q44822059](https://www.wikidata.org/wiki/Q44822059) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` unknown | DrugBank actor |
 | — | platelet | `SLC6A4` unknown | DrugBank actor |
 

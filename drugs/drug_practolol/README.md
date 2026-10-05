@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A beta-adrenergic antagonist that has been used in the emergency treatment of cardiac arrhythmias.
+Practolol is a selective beta-1 blocking agent used as an antiarrhythmic drug for heart rhythm problems. It is recorded as an approved medicine, though it appears to be little used today.
 
-**Indication.** Used in the emergency treatment of cardiac arrhythmias.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7237376](https://www.wikidata.org/wiki/Q7237376) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

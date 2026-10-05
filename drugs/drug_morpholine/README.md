@@ -8,6 +8,12 @@
 - **DrugBank:** [DB13669](https://go.drugbank.com/drugs/DB13669) · **PubChem:** not captured
 - **groups:** experimental
 
+## About
+
+Morpholine salicylate is a salicylic acid derivative that has been classified as an analgesic and antipyretic. It is currently considered experimental, with no evidence of authorised or widespread clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27278763](https://www.wikidata.org/wiki/Q27278763) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

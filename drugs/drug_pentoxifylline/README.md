@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Pentoxifylline (PTX) is a synthetic dimethylxanthine derivative that modulates the rheological properties of blood and also has both anti-oxidant and anti-inflammatory properties.[A226415, L30300] Although originally developed to treat intermittent claudication, a form of exertion-induced leg pain common in patients with peripheral arterial disease, PTX has been investigated for its possible use in diverse conditions, including osteoradionecrosis, diabetic kidney disease, and generally any condition associated with fibrosis.[A226410, A226415, A226455] More recently, PTX has been suggested as a possible treatment for COVID-19-induced pulmonary complications due to its ability to regulate the production of inflammatory cytokines.[A226608]
+Pentoxifylline is a vasodilator and phosphodiesterase inhibitor used for blood-flow problems such as peripheral vascular disease, intermittent claudication, arteriosclerosis, and diabetic vascular and nerve complications. It is an approved medicine, though not authorised centrally in the European Union, and has also been studied for other conditions.
 
-Pentoxifylline has been marketed in Europe since 1972; PTX extended-release tablets sold under the trade name TRENTAL by US Pharm Holdings were first approved by the FDA on Aug 30, 1984, but have since been discontinued. A branded product, PENTOXIL, marketed by Upsher-Smith Laboratories, and generic forms marketed by Valeant Pharmaceuticals and APOTEX have been available since the late 1990s.[L30300]
-
-**Indication.** Pentoxifylline is indicated for the treatment of intermittent claudication in patients with chronic occlusive arterial disease. Pentoxifylline may improve limb function and reduce symptoms but cannot replace other therapies such as surgical bypass or removal of vascular obstructions.[L30300]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416331](https://www.wikidata.org/wiki/Q416331) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,12 +54,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…extensive first-pass metabolism…”</sub> | prose |
-| absorption | small intestine | <sub>“…Oral pentoxifylline (PTX) is almost completely absorbed…”</sub> | prose |
-| metabolism | blood | <sub>“…erythrocytes are the main site of PTX-M1 interconversion…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…The fecal route accounts for less than 4% of the administered dose…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated almost entirely in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), NT5E (inhibitor), Phosphodiesterase enzymes (inhibitor), TNF (other/unknown).</sub>
 

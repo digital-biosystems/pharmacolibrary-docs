@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Becaplermin is produced by recombinant DNA technology by insertion of the gene for the B chain of platelet derived growth factor (PDGF) into the yeast, Saccharomyces cerevisiae. Becaplermin has a molecular weight of approximately 25 KD and is a homodimer composed of two identical polypeptide chains that are bound together by disulfide bonds.
+Becaplermin, a recombinant platelet-derived growth factor, was used to help heal skin ulcers such as venous ulcers and other wounds.
 
-**Indication.** For topical treatment of skin ulcers (from diabetes)
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2313188](https://www.wikidata.org/wiki/Q2313188) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

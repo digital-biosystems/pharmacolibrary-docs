@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Hydroxocobalamin, also known as vitamin B12a and hydroxycobalamin, is an injectable form of vitamin B 12 that has been used therapeutically to treat vitamin B 12 deficiency. It is also used in cyanide poisoning, Leber's optic atrophy, and toxic amblyopia.
+Hydroxocobalamin, a vitamin B12 preparation, is used to treat vitamin B12 deficiency such as pernicious anemia and certain neuropathies, and also serves as an antidote for poisoning. It is an approved medicine included on the WHO essential medicines list, and an EMA-authorised product is available in the European Union for treating poisoning.
 
-**Indication.** For treatment of pernicious anemia and the prevention and treatment of vitamin B12 deficiency arising from alcoholism, malabsorption, tapeworm infestation, celiac, hyperthyroidism, hepatic-biliary tract disease, persistent diarrhea, ileal resection, pancreatic cancer, renal disease, prolonged stress, vegan diets, macrobiotic diets or other restrictive diets. Also for the treatment of known or suspected cyanide poisoning.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q73972](https://www.wikidata.org/wiki/Q73972) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,12 +34,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Readily absorbed from the gastrointestinal tract…”</sub> | prose |
-| metabolism | bile duct | <sub>“…secretion in the bile…”</sub> | prose |
-| metabolism | kidney | <sub>“…excreted in the urine…”</sub> | prose |
-| metabolism | liver | <sub>“…Primarily hepatic…”</sub> | prose |
-| metabolism | small intestine | <sub>“…Cobalamins are absorbed in the ileum…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AMN (other), CUBN (other), MMAA (other/unknown), MMACHC (other/unknown), MMUT (cofactor), MTR (cofactor), TCN1 (other), TCN2 (substrate).</sub>
 

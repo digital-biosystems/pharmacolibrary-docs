@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Pramlintide plasma concentration drives a delayed inhibitory effect on gastric emptying: an effect-compartment (P_eff) with equilibration rate ka feeds a sigmoid Emax function h(P_eff)=n·P_eff^e/(d^e+P_eff^e), yielding a factor η between 0 and 1 that slows gastric emptying proportionally to pramlintide concentration. The paper does not state numeric potency values (Imax, IC50, EC50, Emax, gamma) or rate constants in the excerpts.
+> Pramlintide plasma concentration acts on the gastric emptying rate (k_empt) via a sigmoidal Emax inhibition model that includes an effect compartment (P_eff) linked to plasma by the rate constant k_a. The paper defines the inhibitory factor η(P_eff) using the Hill function h(P_eff) = n * P_eff^d_e / (d_e + P_eff^d_e), but does not provide specific numerical values for the potency (d_e), Hill coefficient (n), or rate constants (k_a, k_e) in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Pons_2025`
 - **model family:** `sigmoid_emax`

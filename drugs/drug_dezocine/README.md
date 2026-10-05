@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Dezocine is a partial opiate drug and is used for pain management. Dezocine is a very effective alternative to fentanyl when administered during outpatient laparoscopy, although is associated with an increased incidence of postoperative nausea.
+Dezocine is an opioid painkiller used to treat pain. It is an approved opioid analgesic, though it is not authorised in the European Union and its use appears limited to certain countries.
 
-**Indication.** Indicated in the treatment of moderate to severe pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1109018](https://www.wikidata.org/wiki/Q1109018) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,8 +46,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…following intramuscular administration…”</sub> | prose |
-| metabolism | liver | <sub>“…Hepatic, via conjugation (glucuronidation).…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRK1 (target), OPRM1 (target).</sub>
 

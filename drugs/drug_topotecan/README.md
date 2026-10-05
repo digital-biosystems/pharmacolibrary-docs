@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antineoplastic agent used to treat ovarian cancer. It works by inhibiting DNA topoisomerases, type I.
+Topotecan is a topoisomerase I inhibitor used to treat cancers such as ovarian cancer, small cell lung cancer, and cervical cancer. It remains authorised in the European Union for several cancer indications and is used in oncology care, though some EU marketing applications have been withdrawn.
 
-**Indication.** For the treatment of advanced ovarian cancer in patients with disease that has recurred or progressed following therapy with platinum-based regimens. Also used as a second-line therapy for treatment-sensitive small cell lung cancer, as well as in combination with cisplatin for the treatment of stage IV-B, recurrent, or persistent cervical cancer not amenable to curative treatment with surgery and/or radiation therapy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419953](https://www.wikidata.org/wiki/Q419953) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -64,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate/transport | DrugBank actor |
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate/transport | DrugBank actor |
-| excretion | bile duct | <sub>“…recovery of total topotecan and its N-desmethyl metabolite in urine and feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` inhibitor/substrate, `SLC47A2` substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor/substrate | DrugBank actor |
 

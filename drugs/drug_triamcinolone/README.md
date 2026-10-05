@@ -10,14 +10,9 @@
 
 ## About
 
-**Description.** Triamcinolone is a corticosteroid used to treat various inflammatory conditions in the body from allergic rhinitis to acute exacerbations of multiple sclerosis.[L8255] Triamcinolone can be used as a one time adjunct treatment of osteoarthritic knee pain,[L8264] or first line as a topical treatment of corticosteroid responsive dermatoses.[L8249] Triamcinolone is more commonly seen in the forms triamcinolone hexacetonide, triamcinolone acetonide, and triamcinolone diacetate.[L8246,L8249,L8252,L8255,L8258,L8261,L8264]
+Triamcinolone is a glucocorticoid used to treat inflammation and related conditions such as dermatoses, keloids, joint problems, and macular edema. It is widely used in many forms, including skin, oral, nasal, inhaled, eye, and systemic preparations, and is also approved for veterinary use.
 
-Triamcinolone was granted FDA approval on 3 December 1957.[L8243] In October 2021, a suspension of triamcinolone acetonide was approved for suprachoroidal injection - the first suprachoroidal injection to receive FDA approval[L38973] - for the treatment of patients with macular edema associated with uveitis.[L38963]
-
-**Indication.** Triamcinolone hexacetonide injections are indicated for intralesional administration in alopecia areata, discoid lupus erythematosus, keloids, and necrobiosis lipoidica diabeticorum.[L8246] This formulation can also be used for localized hypertrophic infiltrated inflammatory lesions of granuloma annulare, lichen planus, lichen simplex chronicus, and psoriatic plaques.[L8246]
-
-Triamcinolone acetonide spray and cream are indicated for the treatment of inflammatory and pruritic manifestations of corticosteroid responsive dermatoses.[L8249,L8258] A triamcinolone acetonide 10mg/mL or 40mg/mL injection is indicated intra-articularly for acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis, epicondylitis, rheumatoid arthritis, and synovitis of osteoarthritis.[L8252,L8255] The same 10mg/mL injection is indicated by the intralesional route for the treatment of alopecia areata, discoid lupus erythematosus, keloids, necrobiosis lipoidica diabeticorum, and tumors of an aponeurosis or tendon.[L8252] This formulation can also be used for localized hypertrophic infiltrated inflammatory lesions of granuloma annulare, lichen planus, lichen simplex chronicus, and psoriatic plaques.[L8252] The 40mg/mL injection is indicated intramuscularly for controlling severe allergic conditions such as asthma, atopic dermatitis, contact dermatitis, drug hypersensitivity, perennial or seasonal allergic rhinitis, serum sickness, and transfusion reactions; treatment of bullous dermatitis herpetiformis, exfoliative erythroderma, mycosis fungoides, pemphigus, Stevens-Johnson syndrome, congenital adrenal hyperplasia, hypercalcemia in
-cancer, nonsuppurative thyroiditis, autoimmune hemolytic anemia, Diamond-Blackfan anemia, pure red cell aplasia, secondary thrombocytopenia, trichinosis, tuberculous meningitis, acute exacerbations of multiple sclerosis or cerebral edema, sympathetic ophthalmia, temporal arteritis, uveitis, ocular inflammation, berylliosis, idiopathic eosin
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1074056](https://www.wikidata.org/wiki/Q1074056) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -38,9 +33,9 @@ cancer, nonsuppurative thyroiditis, autoimmune hemolytic anemia, Diamond-Blackfa
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Beer_2003_reference](drugs/drug_triamcinolone/Triamcinolone_Beer2003_reference.md) | — | 1-compartment (no model) | 0 | Beer PM et al., Intraocular concentration and pharmacok…, Ophthalmology (2003) | [10.1016/S0161-6420(02)01969-3](https://doi.org/10.1016/S0161-6420(02)01969-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [French_2000_reference](drugs/drug_triamcinolone/Triamcinolone_French2000_reference.md) | — | 1-compartment (no model) | 4 | French K et al., Pharmacokinetics and metabolic effects…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00288.x](https://doi.org/10.1046/j.1365-2885.2000.00288.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kraus_2018_reference](drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md) | — | 1-compartment (no model) | 2 | Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and cartilage (2018) | [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Beer_2003_reference](drugs/drug_triamcinolone/Triamcinolone_Beer2003_reference.md) | — | 1-compartment (no model) | 0 | Beer PM et al., Intraocular concentration and pharmacok…, Ophthalmology (2003) | [10.1016/S0161-6420(02)01969-3](https://doi.org/10.1016/S0161-6420(02)01969-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [French_2000_reference](drugs/drug_triamcinolone/Triamcinolone_French2000_reference.md) | — | 1-compartment (no model) | 4 | French K et al., Pharmacokinetics and metabolic effects…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00288.x](https://doi.org/10.1046/j.1365-2885.2000.00288.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kraus_2018_reference](drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md) | — | 1-compartment (no model) | 2 | Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and cartilage (2018) | [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Oishi_2008_reference](drugs/drug_triamcinolone/Triamcinolone_Oishi2008_reference.md) | — | 1-compartment (no model) | 3 | Oishi M et al., Pharmacokinetic behavior of intravitrea…, Japanese journal of ophthal… (2008) | [10.1007/s10384-008-0584-0](https://doi.org/10.1007/s10384-008-0584-0) |
 
 ## Pharmacodynamics (PD)
@@ -74,13 +69,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | lung | <sub>“…10.4% coming from pulmonary absorption…”</sub> | prose |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | blood | `BCHE` inducer | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer/substrate | DrugBank actor |
 | metabolism | liver | `BCHE` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate, `CYP3A7` inducer/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Approximately 20% of a dose of triamcinolone is recovered in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HCG22 (target), NR3C1 (target), PTGS2 (inhibitor), SERPINA6 (binder), UNKNOWN (unknown).</sub>
 
@@ -94,7 +89,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 67 matched, 40 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 3
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

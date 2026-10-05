@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Metamizole (dipyrone) is a pyrazolone derivative that belongs to the group of nonacid nonopioids. It is considered a potent analgesic and antipyretic with favourable gastrointestinal tolerability.[A251885] Metamizole was formerly marketed in the US as Dimethone tablets and injection, Protemp oral liquid, and other drug products, and was withdrawn due to its association with potentially fatal agranulocytosis. Approvals of the NDA's for metamizole drug products were withdrawn on June 27, 1977 (see the Federal Register of June 17, 1977, 42 FR 30893).[L42975] In 1963, metamizole was withdrawn from the Canadian market and banned in the UK, France, Sweden, Norway and Australia.[A251805] Metamizole is still used in certain countries in Europe, Asia and South America.[A251805]
+Metamizole (dipyrone) is a pyrazolone painkiller and fever reducer used to treat pain and fever. It has been withdrawn in some countries over safety concerns, but remains in use in others.
 
-**Indication.** Metamizole is banned in several countries, where it was previously used as a powerful analgesic and fever reducer. In countries where it is still available, metamizole is indicated for acute severe pain after injuries or surgeries, colic, tumor pain, and acute or severe pain symptoms, as well as high fever if other treatments are unsuccessful.[A251805]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422761](https://www.wikidata.org/wiki/Q422761) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -61,13 +61,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…is mostly absorbed in this form…”</sub> | prose |
-| absorption | stomach | <sub>“…Metamizole is hydrolyzed to 4-methyl-amino-antipyrine (MAA) in gastric juice…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | stomach | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | liver | `CYP1A2` metabolism, `CYP2B6` inducer, `CYP2C19` metabolism, `CYP2D6` metabolism, `CYP3A4` inducer, `NAT2` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer, `NAT2` metabolism | DrugBank actor |
-| excretion | kidney | <sub>“…90% of metamizole is recovered in urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…10% is recovered in feces…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PTGS1 (inhibitor).</sub>
 

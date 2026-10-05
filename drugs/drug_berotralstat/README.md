@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Berotralstat is a selective inhibitor of plasma kallikrein used in the prophylaxis of attacks of hereditary angioedema (HAE).[L26661] It works by blocking the enzymatic activity of plasma kallikrein in releasing bradykinin, the major biologic peptide that promotes swelling and pain associated with attacks of HAE.[A225166] Berotralstat is strictly used to prevent, but not treat, these attacks.[L26656]
+Berotralstat is a medicine used to treat hereditary angioedema. It is authorised in the European Union and is an approved drug, though it has also been investigated for other uses.
 
-Developed by BioCryst Pharmaceuticals, berotralstat is marketed under the name Orladeyo as oral capsules.[A225106] Berotralstat was first approved by the FDA on December 3, 2020, as the first once-daily oral therapy to prevent angioedema attacks of HAE in adults and pediatric patients 12 years and older.[L26661] Berotralstat was approved by the European Commission on April 30, 2021 [L41965] and by Health Canada on June 06, 2022.[L41960]
-
-In December 2025, the FDA expanded Berotralstat pediatric use with approval of an oral pellet formulation for prophylaxis in children with HAE aged 2 and older.[L54793,L54798]
-
-**Indication.** Berotralstat is indicated for prophylaxis of attacks of hereditary angioedema (HAE) in adults and pediatric patients 2 years and older. It is not used for the treatment of acute HAE attacks.[L26661,L41965,L41990,L54793,L54798]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q104529366](https://www.wikidata.org/wiki/Q104529366) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -52,8 +48,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…About 79% of the drug was excreted in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…approximately 9% of the drug was excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: KLKB1 (inhibitor).</sub>
 

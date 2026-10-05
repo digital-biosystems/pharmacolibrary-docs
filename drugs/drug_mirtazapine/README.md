@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Mirtazapine is a tetracyclic _piperazino-azepine_ antidepressant agent that was initially approved for the treatment of major depressive disorder (MDD) in the Netherlands in 1994.[A177946] This drug was first manufactured by Organon Inc., and received FDA approval in 1997 for the treatment of major depressive disorder.[T595, L6157] The effects of this drug may be observed as early as 1 week after beginning therapy.[A178144,L6160]
+Mirtazapine is an antidepressant used for depression, and has also been used for anxiety, insomnia and related sleep and neurotic disorders. It is an approved medicine and is widely used in human medicine.
 
-In addition to its beneficial effects in depression, mirtazapine has been reported to be efficacious in the off-label management of various other conditions.  It may improve the symptoms of neurological disorders, reverse weight loss caused by medical conditions, improve sleep, and prevent nausea and vomiting after surgery.[A177811]
-
-**Indication.** This drug is indicated for the treatment of major depressive disorder and its associated symptoms.[FDA label]
-
-Mirtazapine has been used off-label for a variety of conditions including panic disorder, generalized anxiety disorder, dysthymia, tension headaches, hot flushes, post-traumatic stress disorder (PTSD), sleep disorders, substance abuse disorders, and sexual disorders, among others.[A177811,A177946]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421930](https://www.wikidata.org/wiki/Q421930) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,13 +32,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…first pass metabolism in the liver…”</sub> | prose |
-| absorption | small intestine | <sub>“…metabolism in the gut wall…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2D6` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…15% eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted by the kidney…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor/substrate | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor/substrate | DrugBank actor |
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Used in treatment of iron deficiency anemia.
+Ferrous fumarate is an oral iron preparation used to treat iron deficiency anemia and hypochromic anemia. It is an approved medicine, available alone or combined with folic acid, and is widely used as a dietary iron supplement.
 
-**Indication.** Used in preventing and treating iron-deficiency anemia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416370](https://www.wikidata.org/wiki/Q416370) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Subjects with normal iron stores absorb 10% to 35% of an iron dose…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AHSP (unknown), CP (unknown), EGLN1 (unknown), FEN1 (unknown), FTH1 (unknown), FXN (unknown), HBA1 (unknown), HDAC8 (unknown), NEIL1 (unknown), NEIL2 (unknown), POLB (unknown), TF (unknown), TFRC (unknown).</sub>
 

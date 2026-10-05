@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Cabazitaxel is a taxoid synthesized from 10-deacetylbaccatin III, a compound isolated from the yew tree.[A260621] As a second-generation semisynthetic microtubule inhibitor, cabazitaxel stabilizes microtubules and induces tumour cell death.[A7056] Due to its low affinity for the P-glycoprotein (P-gp) efflux pump, cabazitaxel can more readily penetrate the blood–brain barrier compared to other taxanes like [paclitaxel] and [docetaxel].[A7056, A260421, A260621]
+Cabazitaxel is a taxane anticancer drug used to treat prostate cancer, including castration-resistant disease. It is authorised in the European Union and used in cancer care, though it carries a boxed warning.
 
-Cabazitaxel is used to treat metastatic castration-resistant prostate cancer. It was first approved by the FDA on June 17, 2010.[A260421] It was also approved by the EMA on March 17, 2011 [L47381] and Health Canada on December 17, 2019.[L47376]
-
-**Indication.** Cabazitaxel is indicated, in combination with [prednisone], for the treatment of patients with metastatic castration-resistant prostate cancer previously treated with a [docetaxel]-containing treatment regimen.[L47366] In Europe and Canada, it can also be used in combination with [prednisolone].[L47376, L47381]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412963](https://www.wikidata.org/wiki/Q412963) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,8 +49,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly excreted in the feces as numerous metabolites (76% of the dose)…”</sub> | prose |
-| excretion | kidney | <sub>“…renal excretion of cabazitaxel and metabolites account for 3.7% of the dose…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GPIHBP1 (binder), LDLR (binder), TUBB1 (inhibitor), VLDLR (binder).</sub>
 

@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Capparelli2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**The codeine record was rejected because its clearance (0.18 ml/h) and central volume (66.0 ml) are physiologically implausible, indicating a unit or scale extraction error.**
+**The codeine record was rejected because its clearance (0.18 ml/h) and central volume (66 ml) are physiologically implausible magnitudes, indicating a unit or scale extraction error from the source text.**
 
-The extracted total clearance of 0.18 ml/h and central volume of distribution of 66.0 ml for codeine fall far outside physiological windows, consistent with a unit/scale extraction error (likely mg-based values misread as ml). A second reader proposed different values (13, 701, 6.1) for the same quantities, but this record carried no values for those fields, so the disagreement could not be resolved from the record itself. Extracted — codeine: CL 0.18 ml/h, V1 66 ml.
+The extracted parameters for codeine are CL of 0.18 ml/h and V1 of 66 ml, values far outside any plausible human range for this drug. The verbatim label shows these numbers come from a sentence about anti-ClfA and anti-SdrG antibody PK estimates (CL 0.18 ml/h and 0.21 ml/h, V1 66 ml and 73 ml, Vss 179 ml and 204 ml, half-lives 719 h and 701 h), which do not describe codeine, so the values appear to be attached to the wrong compound. A second reader also disagreed on several extracted values, reading 179 for the volume of distribution where the record had none. Extracted — codeine: CL 0.18 ml/h, V1 66 ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 14, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:17.531624+00:00) predates the upstream re-run (2026-10-03 10:01:29.058852+00:00). Current validate status: `rejected`.
 
 ## Citation
 Capparelli EV et al., Multicenter study to determine antibody…, Antimicrobial agents and ch… (2005)
   ·  DOI: [10.1128/aac.49.10.4121-4127.2005](https://doi.org/10.1128/aac.49.10.4121-4127.2005)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Capparelli2005_reference" status="rejected" stale="true" population="" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Capparelli2005_reference" status="rejected" stale="false" population="" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

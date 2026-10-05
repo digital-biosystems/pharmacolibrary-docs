@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Pegvaliase is a recombinant phenylalanine ammonia lyase (PAL) enzyme derived from _Anabaena variabilis_ that converts phenylalanine to ammonia and _trans_-cinnamic acid [A33284]. Both the U.S. Food and Drug Administration and European Medicines Agency approved pegvaliase-pqpz in May 2018 for the treatment of adult patients with phenylketonuria (PKU). Phenylketonuria is a rare autosomal recessive disorder that is characterized by deficiency of the enzyme phenylalanine hydroxylase (PAH) [A33284] and affects about 1 in 10,000 to 15,000 people in the United States [L2925]. PAH deficiency and inability to break down an amino acid phenylalanine (Phe) leads to elevated blood phenylalanine concentrations and accumulation of neurotoxic Phe in the brain, causing chronic intellectual, neurodevelopmental and psychiatric disabilities if untreated [A33284]. Individuals with PKU also need to be under a strictly restricted diet as Phe is present in foods and products with high-intensity sweeteners [L2925]. The primary goal of lifelong treatment of PKU, as recommended by the American College of Medical Genetics and Genomics (ACMG) guidelines, is to maintain blood Phe concentration in the range of 120 µmol/L to 3690 µmol/L [A33286]. 
+Pegvaliase is an enzyme therapy used to treat phenylketonuria. It is authorised in the European Union and is an approved medicine, though it carries a boxed warning.
 
-Pegvaliase-pqpz, or PEGylated pegvaliase, is used as a novel enzyme substitution therapy and is marketed as Palynziq for subcutaneous injection. Pegvaliase-pqpz is a homotetrameric protein composed of recombinant phenylalanine ammonia lyase (rAvPAL) conjugated to N-hydroxysuccinimide (NHS)-methoxypolyethylene glycol (PEG).[L42725] It is advantageous over currently available management therapies for PKU, such as [DB00360], that are ineffective to many patients due to long-term adherence issues or inadequate Phe-lowering effects [A33284]. The presence of a PEG moiety in pegvaliase-pqpz allows a reduced immune response and improved pharmacodynamic stability [A33284].
-
-**Indication.** Pegvaliase is indicated for the management of phenylketonuria (PKU) in adult patients who have uncontrolled blood phenylalanine concentrations greater than 600 micromol/L on existing management.[L42725]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27284634](https://www.wikidata.org/wiki/Q27284634) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

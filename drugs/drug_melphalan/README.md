@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Melphalan is a nitrogen mustard or bischloroethylamine type alkylating agent.[L40928] It was first synthesized in the early 1950s by substituting L-phenylalanine for the methyl group on nitrogen mustard.[A261150, A261155] Melphalan is used in the treatment of multiple myeloma and ovarian carcinoma.[L40928] It is also used for high-conditioning before hematopoietic stem cell transplant.[L47890] It is also used to treat uveal melanoma with unresectable hepatic metastases.[L47895]
+Melphalan is an alkylating anticancer drug used mainly to treat multiple myeloma, and also other cancers such as ovarian and breast cancer and childhood tumours like neuroblastoma. It is an approved medicine, authorised in the European Union, and is also used in conditioning before stem cell transplantation.
 
-**Indication.** Melphalan is indicated for use as a high-dose conditioning treatment prior to hematopoietic stem cell transplantation in patients with multiple myeloma.[L47890] It is also indicated for the palliative treatment of multiple myeloma and for the palliation of non-resectable epithelial carcinoma of the ovary.[L40928]
-
-Melphalan is a component of HEPZATO KIT, a liver-directed therapy indicated for the treatment of adults with uveal melanoma with unresectable hepatic metastases affecting less than 50% of the liver and no extrahepatic disease or extrahepatic disease limited to the bone, lymph nodes, subcutaneous tissues, or lung that is amenable to resection or radiation.[L47895]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2298283](https://www.wikidata.org/wiki/Q2298283) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,13 +32,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…variable first-pass hepatic metabolism…”</sub> | prose |
-| absorption | small intestine | <sub>“…incomplete intestinal absorption…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…excreted in urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), SLC7A10 (substrate), SLC7A5 (substrate).</sub>
 

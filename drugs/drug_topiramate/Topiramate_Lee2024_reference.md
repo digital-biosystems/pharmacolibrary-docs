@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;topiramate&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/&quot;},{&quot;label&quot;:&quot;Lee_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topiramate_Lee2024_reference&quot;,&quot;label&quot;:&quot;Lee_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/Topiramate_Lee2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topiramate_Lee2024_reference&quot;,&quot;label&quot;:&quot;Lee_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/Topiramate_Lee2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Lim_2016_SDMT&quot;,&quot;label&quot;:&quot;Lim_2016 \u00b7 SDMT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/pd_Lim_2016_SDMT.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # topiramate — `Topiramate_Lee2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The record comes from the paper's abstract only, so reported summary statistics (Cmax 4.2 mg/L, Cmin 3.0 mg/L, AUC24h 87.7 h·mg/L, CL/F 2.1 L/h, V/F 82.4 L) stood in for a fitted model. The builder substituted library defaults for the missing ka and Tlag, and the invented absorption constant was judged not acceptable. The model also assumes bioavailability F=1 and fraction metabolized Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order extravascular input. Extracted — topiramate: Cmax 4.2 mg/L, Cmin 3 mg/L, AUCt 87.7 h∙mg/L, CL/F 2.1 L/h, V/F 82.4 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has none, the second reading 88.2; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has topiramate, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:50.436185+00:00) predates the upstream re-run (2026-10-01 19:35:14.213840+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:50.436185+00:00) predates the upstream re-run (2026-10-04 21:15:11.808207+00:00). Current validate status: `extracted`.
 
 ## Citation
 Lee S et al., Topiramate dosage optimization for effe…, Annals of clinical and tran… (2024)
@@ -83,16 +83,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.267 (4/15 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.118 (2/17 fields) | 15 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[auc24h]` | 87.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | 88.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c (mg/l) max]` | not captured | 4.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c (mg/l) min]` | not captured | 3.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f].value` | 2.1 | 2.2 | mismatch |
+| `gpt-oss:120b` | `parameters[cl/f]` | 2.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 2.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax]` | 4.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmin]` | 3.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[concentration/doseratio]` | not captured | 23.4 | only_one_extracted |
@@ -100,6 +102,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[serumlevel]` | not captured | 4.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v /f]` | not captured | 82.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vd/f]` | 82.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | topiramate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | topiramate | unknown | mismatch |
 
 </details>
 
@@ -116,7 +120,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract'] |
+| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract', 'Lee_2024:abstract'] |
@@ -157,8 +161,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_modelica.zip" download>Topiramate_Lee2024_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_fmi.zip" download>Topiramate_Lee2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_modelica.zip" download>Topiramate_Lee2024_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_fmi.zip" download>Topiramate_Lee2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_matlab.zip" download>Topiramate_Lee2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_matlab_simbio.zip" download>Topiramate_Lee2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_sbml.zip" download>Topiramate_Lee2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -179,4 +183,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 19:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 21:15 UTC</sub>

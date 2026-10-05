@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Candesartan is an angiotensin-receptor blocker (ARB) that may be used alone or with other agents to treat hypertension. It is available as a prodrug in the form of [candesartan cilexetil].
+Candesartan is an angiotensin II receptor antagonist used mainly to treat high blood pressure and congestive heart failure. DrugBank currently lists it as investigational, so its availability as an approved medicine is unclear from the available facts.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415970](https://www.wikidata.org/wiki/Q415970) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

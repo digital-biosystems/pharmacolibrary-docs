@@ -9,22 +9,29 @@
 
 ## About
 
-**Description.** Insulin isolated from pig pancreas. Composed of alpha and beta chains, processed from pro-insulin. Forms a hexameric structure.
+Insulin of pork origin is an injectable insulin used to treat diabetes mellitus. It has been an approved medicine, though it has largely been replaced by human and analogue insulins in many countries.
 
-**Indication.** For the treatment of type I and II diabetes mellitus.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801773](https://www.wikidata.org/wiki/Q20801773) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| insulin_pork | metabolite | 5777.6 | C256H381N65O76S6 | PubChem | [16131098](https://pubchem.ncbi.nlm.nih.gov/compound/16131098) | Thorsteinsson_1987 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-14 15:20 | 3:00 | 0/2/0 | 0/0/0 | 0/0/0 | 16,935/1,572 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 22:37 | 2:23 | 0/0/1 | 0/0/0 | 0/0/0 | 28,378/4,299 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nosadini_1988_normal and insulin-dependent diabetic subjects](drugs/drug_insulin_pork/InsulinPork_Nosadini1988_normal_and_insulin_dependent_diabet.md) | — | — (no model) | 0 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Thorsteinsson_1987_normal and type I diabetic subjects](drugs/drug_insulin_pork/InsulinPork_Thorsteinsson1987_normal_and_type_i_diabetic_sub.md) | — | — (no model) | 0 | Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987) | [10.1007/BF00544563](https://doi.org/10.1007/BF00544563) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Thorsteinsson_1987_reference](drugs/drug_insulin_pork/InsulinPork_Thorsteinsson1987_reference.md) | — | 1-compartment (no model) | 1 | Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987) | [10.1007/BF00544563](https://doi.org/10.1007/BF00544563) |
 
 ## ADME sites
 
@@ -45,42 +52,43 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 45 matched, 16 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_10 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Nosadini_1988.pdf` | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | popPK | 9 | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) | [3045144](https://pubmed.ncbi.nlm.nih.gov/3045144) | The study reports quantitative pharmacokinetic parameters (clearance, bioavailability) for porcine insulin in humans, with specific numeric values provided in the text. |
-| `Suarez_2001.pdf` | Suarez S et al., Facilitation of pulmonary insulin absor…, Pharmaceutical research (2001) | popPK | 9 | [10.1023/a:1013362227548](https://doi.org/10.1023/a:1013362227548) | [11785686](https://pubmed.ncbi.nlm.nih.gov/11785686) | The study reports quantitative PK parameters (bioavailability, Cmax, half-life) for porcine insulin in rats, but specific compartmental values like CL and V are not explicitly listed in the provided text. |
-| `Thorsteinsson_1987.pdf` | Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987) | popPK | 9 | [10.1007/BF00544563](https://doi.org/10.1007/BF00544563) | [3319643](https://pubmed.ncbi.nlm.nih.gov/3319643) | The study reports quantitative clearance parameters for porcine insulin in humans, with specific numeric values provided in the text. |
-| `Fleeman_2009.pdf` | Fleeman LM et al., Pharmacokinetics and pharmacodynamics o…, The Veterinary record (2009) | popPK | 8 | [10.1136/vr.164.8.232](https://doi.org/10.1136/vr.164.8.232) | [19234324](https://pubmed.ncbi.nlm.nih.gov/19234324) | The study reports PK/PD data for porcine insulin in dogs, but the evidence only provides descriptive timing metrics (peaks, duration) rather than quantitative compartmental parameters like clearance or volume. |
-| `Fritze_1988.pdf` | Fritze K et al., Intraindividual comparison of pharmacok…, Experimental and clinical e… (1988) | popPK | 8 | [10.1055/s-0029-1210818](https://doi.org/10.1055/s-0029-1210818) | [3075553](https://pubmed.ncbi.nlm.nih.gov/3075553) | The study reports pharmacokinetic parameters (time constant of elimination) for porcine insulin in dogs, but specific numeric values are not explicitly listed in the provided text evidence. |
-| `Graham_1997.pdf` | Graham PA et al., Pharmacokinetics of a porcine insulin z…, The Journal of small animal… (1997) | popPK | 8 | [10.1111/j.1748-5827.1997.tb03435.x](https://doi.org/10.1111/j.1748-5827.1997.tb03435.x) | [9358402](https://pubmed.ncbi.nlm.nih.gov/9358402) | The study reports pharmacokinetic data for porcine insulin in dogs, but only provides descriptive time-to-peak and duration values rather than quantitative compartmental parameters like clearance or volume. |
-| `Halban_1981.pdf` | Halban PA et al., Biologic activity and pharmacokinetics…, Diabetes care (1981) | popPK | 8 | [10.2337/diacare.4.2.238](https://doi.org/10.2337/diacare.4.2.238) | [7011735](https://pubmed.ncbi.nlm.nih.gov/7011735) | The study reports quantitative metabolic clearance rates (MCR) for pork insulin in rats, which are explicit numeric PK parameters for the subject drug. |
-| `Shankar_1987.pdf` | Shankar TP et al., Insulin resistance and delayed clearanc…, The American journal of phy… (1987) | popPK | 8 | [10.1152/ajpendo.1987.252.6.E772](https://doi.org/10.1152/ajpendo.1987.252.6.E772) | [3296781](https://pubmed.ncbi.nlm.nih.gov/3296781) | The study reports quantitative clearance parameters (half-lives) for porcine insulin in an animal model (rat liver perfusion), and the specific numeric values are present in the abstract text. |
+| `Nosadini_1988.pdf` | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | popPK | 10 | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) | [3045144](https://pubmed.ncbi.nlm.nih.gov/3045144) | The study reports quantitative pharmacokinetic parameters (clearance, bioavailability) for porcine insulin in human subjects. |
+| `Fleeman_2009.pdf` | Fleeman LM et al., Pharmacokinetics and pharmacodynamics o…, The Veterinary record (2009) | popPK | 9 | [10.1136/vr.164.8.232](https://doi.org/10.1136/vr.164.8.232) | [19234324](https://pubmed.ncbi.nlm.nih.gov/19234324) | The study reports PK/PD of porcine insulin in dogs, but the evidence text only provides qualitative descriptions and time-to-peak/duration metrics, lacking specific numeric values for clearance, volume, or rate constants. |
+| `Graham_1997.pdf` | Graham PA et al., Pharmacokinetics of a porcine insulin z…, The Journal of small animal… (1997) | popPK | 9 | [10.1111/j.1748-5827.1997.tb03435.x](https://doi.org/10.1111/j.1748-5827.1997.tb03435.x) | [9358402](https://pubmed.ncbi.nlm.nih.gov/9358402) | The study reports pharmacokinetic data for porcine insulin in dogs, including peak times and duration of action, but lacks explicit clearance or volume parameters. |
+| `Halban_1981.pdf` | Halban PA et al., Biologic activity and pharmacokinetics…, Diabetes care (1981) | popPK | 9 | [10.2337/diacare.4.2.238](https://doi.org/10.2337/diacare.4.2.238) | [7011735](https://pubmed.ncbi.nlm.nih.gov/7011735) | The paper reports quantitative metabolic clearance rates (MCR) for pork insulin in rats, which are direct pharmacokinetic disposition parameters. |
+| `Suarez_2001.pdf` | Suarez S et al., Facilitation of pulmonary insulin absor…, Pharmaceutical research (2001) | popPK | 9 | [10.1023/a:1013362227548](https://doi.org/10.1023/a:1013362227548) | [11785686](https://pubmed.ncbi.nlm.nih.gov/11785686) | The study reports quantitative PK parameters (bioavailability, Cmax, half-life) for porcine insulin in rats, but specific clearance or volume values are not explicitly listed in the provided text. |
+| `Thorsteinsson_1987.pdf` | Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987) | popPK | 9 | [10.1007/BF00544563](https://doi.org/10.1007/BF00544563) | [3319643](https://pubmed.ncbi.nlm.nih.gov/3319643) | The study reports quantitative clearance parameters for porcine insulin in humans, with specific median values provided in the abstract. |
+| `Ebihara_1983.pdf` | Ebihara A et al., Comparative clinical pharmacology of hu…, Diabetes care 6 Suppl (1983) | popPK | 8 | not captured | [6343032](https://pubmed.ncbi.nlm.nih.gov/6343032) | The study reports pharmacokinetic parameters (AUC, bioavailability) for porcine insulin in humans, but specific numeric values are not present in the provided text. |
+| `Fritze_1988.pdf` | Fritze K et al., Intraindividual comparison of pharmacok…, Experimental and clinical e… (1988) | popPK | 8 | [10.1055/s-0029-1210818](https://doi.org/10.1055/s-0029-1210818) | [3075553](https://pubmed.ncbi.nlm.nih.gov/3075553) | The study reports pharmacokinetic parameters (time constant of elimination) for porcine insulin in dogs, but specific numeric values are not explicitly listed in the provided text. |
+| `Kobayashi_1986.pdf` | Kobayashi M et al., Metabolism of a mutant insulin by a rec…, Diabetes research and clini… (1986) | popPK | 8 | [10.1016/s0168-8227(86)80001-8](https://doi.org/10.1016/s0168-8227(86)80001-8) | [3536368](https://pubmed.ncbi.nlm.nih.gov/3536368) | The study reports the half-life of porcine insulin in rats, which is a quantitative disposition parameter, although full compartmental parameters (CL, V) are not explicitly listed. |
+| `Shankar_1987.pdf` | Shankar TP et al., Insulin resistance and delayed clearanc…, The American journal of phy… (1987) | popPK | 8 | [10.1152/ajpendo.1987.252.6.E772](https://doi.org/10.1152/ajpendo.1987.252.6.E772) | [3296781](https://pubmed.ncbi.nlm.nih.gov/3296781) | The study reports quantitative clearance and half-life parameters for porcine insulin in rat livers. |
 
-<sub>queue written 2026-09-14T15:19:54.456053+00:00</sub>
+<sub>queue written 2026-10-04T22:35:49.773809+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bottermann_1982 | irrelevant | 2 | 0 | The study compares insulin preparations using a glucose clamp technique and reports qualitative differences in concentration and dextrose output, but does not provide quantitative pharmacokinetic parameters (CL, V, ka) for insulin_pork. |
-| popPK | Ebihara_1983 | irrelevant | 2 | 0 | The study compares human and porcine insulin but reports only qualitative comparisons of AUC and bioavailability without providing specific quantitative PK parameters (CL, V, ka, t1/2) for insulin_pork. |
-| popPK | Fleeman_2009 | relevant | 8 | 2 | The study reports PK/PD data for porcine insulin in dogs, but the evidence only provides descriptive timing metrics (peaks, duration) rather than quantitative compartmental parameters like clearance or volume. |
-| popPK | Fritze_1988 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (time constant of elimination) for porcine insulin in dogs, but specific numeric values are not explicitly listed in the provided text evidence. |
-| popPK | Graham_1997 | relevant | 8 | 2 | The study reports pharmacokinetic data for porcine insulin in dogs, but only provides descriptive time-to-peak and duration values rather than quantitative compartmental parameters like clearance or volume. |
-| popPK | Heine_1987 | irrelevant | 2 | 0 | The study focuses on miscibility and time-action profiles using euglycaemic clamps rather than reporting quantitative compartmental PK parameters (CL, V, ka) for insulin_pork. |
-| popPK | Kobayashi_1986 | irrelevant | 2 | 1 | The study focuses on a mutant insulin ([LeuB25]-insulin) with porcine insulin serving only as a comparator, and the provided evidence lacks specific quantitative PK parameters (CL, V) for the subject drug. |
+| popPK | Bottermann_1982 | irrelevant | 2 | 0 | The study reports qualitative comparisons of insulin concentrations and glucose clamp data but does not provide quantitative compartmental pharmacokinetic parameters (CL, V, ka) for insulin_pork. |
+| popPK | Ebihara_1983 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (AUC, bioavailability) for porcine insulin in humans, but specific numeric values are not present in the provided text. |
+| popPK | Fleeman_2009 | relevant | 9 | 2 | The study reports PK/PD of porcine insulin in dogs, but the evidence text only provides qualitative descriptions and time-to-peak/duration metrics, lacking specific numeric values for clearance, volume, or rate constants. |
+| popPK | Fritze_1988 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (time constant of elimination) for porcine insulin in dogs, but specific numeric values are not explicitly listed in the provided text. |
+| popPK | Graham_1997 | relevant | 9 | 4 | The study reports pharmacokinetic data for porcine insulin in dogs, including peak times and duration of action, but lacks explicit clearance or volume parameters. |
+| popPK | Heine_1987 | irrelevant | 2 | 0 | The study focuses on miscibility and time-action profiles (pharmacodynamics) rather than reporting quantitative compartmental PK parameters (CL, V, ka) for insulin_pork. |
 | popPK | Owens_1984 | irrelevant | 2 | 0 | The study compares pharmacodynamic effects (glucose, IRI) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for insulin_pork. |
-| popPK | Suarez_2001 | relevant | 9 | 4 | The study reports quantitative PK parameters (bioavailability, Cmax, half-life) for porcine insulin in rats, but specific compartmental values like CL and V are not explicitly listed in the provided text. |
-| popPK | Uchman_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of procoagulant activity and does not report any pharmacokinetic parameters for insulin_pork. |
+| popPK | Suarez_2001 | relevant | 9 | 4 | The study reports quantitative PK parameters (bioavailability, Cmax, half-life) for porcine insulin in rats, but specific clearance or volume values are not explicitly listed in the provided text. |
+| popPK | Uchman_1988 | irrelevant | 0 | 0 | The study is an in-vitro immunological investigation of procoagulant activity, not a pharmacokinetic study, and reports no disposition parameters for insulin_pork. |
 | PD | Uchman_1988 | not_relevant | 3 | 2 | The study reports a qualitative dose-response for beef insulin ICs and comparative PCA ratios for pork/human ICs, but lacks a formal PK/PD model, Emax/EC50 parameters, or a quantitative concentration-effect curve for pork insulin. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-14 15:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 22:36 UTC</sub>

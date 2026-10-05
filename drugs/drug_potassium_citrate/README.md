@@ -10,16 +10,15 @@
 
 ## About
 
-**Description.** Potassium citrate (also known as tripotassium citrate) is a potassium salt of citric acid. It is a white, hygroscopic crystalline powder. It is odorless with a saline taste. It contains 38.3% potassium by mass. In the monohydrate form it is highly hygroscopic and deliquescent.
-Potassium citrate is used to treat a kidney stone condition called renal tubular acidosis. Potassium Citrate is indicated also for the management of Hypocitraturic calcium oxalate nephrolithiasis.
+Potassium citrate is a potassium supplement used to treat low blood potassium, renal tubular acidosis, and kidney stones. It is an approved medicine, also approved for veterinary use, and is used fairly widely as a mineral supplement.
 
-**Indication.** For the management of renal tubular acidosis, hypocitraturic calcium oxalate nephrolithiasis, and uric acid lithiasis with or without calcium stones.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419921](https://www.wikidata.org/wiki/Q419921) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 00:09 | 5:53 | 0/0/0 | 1/0/1 | 0/0/0 | 48,766/3,021 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/6 | 4/2 | 0 |
+| 2026-10-05 09:03 | 2:56 | 0/0/0 | 1/0/0 | 0/0/0 | 98,151/3,605 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/6 | 4/2 | 0 |
 
 ## popPK records
 
@@ -29,9 +28,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_pH](drugs/drug_potassium_citrate/pd_Guittet_2020_pH.md) | pH ← potassium citrate dose (CK, mg/kg) · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_proportion_of_urine_samples_with_pH_7_0](drugs/drug_potassium_citrate/pd_Guittet_2020_proportion_of_urine_samples_with_pH_7_0.md) | proportion of urine samples with pH &gt;= 7.0 ← potassium citrate dose (CK, mg/kg) · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Lubkowicz_2022_UOx](drugs/drug_potassium_citrate/pd_Lubkowicz_2022_UOx.md) | urinary oxalate biomarker turnover ← SYNB8802 (engineered E. coli Nissle cells in GI lumen consuming oxalate) | — | Lubkowicz D et al., An engineered bacterial therapeutic low…, Molecular systems biology (2022) | [10.15252/msb.202110539](https://doi.org/10.15252/msb.202110539) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_fluctuation](drugs/drug_potassium_citrate/pd_Guittet_2020_fluctuation.md) | daily urine pH fluctuation ← dose · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_pH](drugs/drug_potassium_citrate/pd_Guittet_2020_pH.md) | mean 24-h urine pH ← dose · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_pH_2](drugs/drug_potassium_citrate/pd_Guittet_2020_pH_2.md) | first morning and pre-dose urine pH ← dose · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Guittet_2020_proportion](drugs/drug_potassium_citrate/pd_Guittet_2020_proportion.md) | proportion of urine pH samples with pH ≥ 7 ← dose · categorical (graded) response model | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
 
 ## ADME sites
 
@@ -39,8 +39,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | small intestine | <sub>“…Potassium Citrate is absorbed…”</sub> | prose |
-| excretion | kidney | <sub>“…Urinary…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -66,25 +66,25 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Suo_2025.pdf` | Suo B et al., Tailored Therapy Guided by Antibiotic G…, Helicobacter (2025) | pgx | 5 | [10.1111/hel.70082](https://doi.org/10.1111/hel.70082) | [41116602](https://www.ncbi.nlm.nih.gov/pubmed/41116602) | metadata signals extractable PGX data (CYP2C19) |
 | `Wang_2023.pdf` | Wang X et al., Efficacy and safety of vonoprazan-amoxi…, Therapeutic advances in gas… (2023) | pgx | 5 | [10.1177/17562848231190976](https://doi.org/10.1177/17562848231190976) | [37664169](https://www.ncbi.nlm.nih.gov/pubmed/37664169) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-30T00:09:34.809436+00:00</sub>
+<sub>queue written 2026-10-05T09:01:47.951715+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akerele_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ofloxacin, with potassium citrate serving only as a co-administered agent to test for interactions, not as the subject drug. |
+| popPK | Akerele_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ofloxacin, with potassium citrate serving only as a co-administered agent to test for interactions. |
 | popPK | Arif_2026 | irrelevant | 0 | 0 | The study focuses on rooster semen quality and selenium supplementation, where potassium citrate is merely an ingredient in the extender, not the subject of pharmacokinetic analysis. |
 | PD | Arif_2026 | not_relevant | 0 | 0 | The paper studies the dose-response of selenium methionine on rooster semen quality, not the pharmacodynamics of potassium citrate (which is merely an ingredient in the extender). |
-| popPK | Attalla_2026 | irrelevant | 0 | 0 | The paper is an in-vitro anthelmintic efficacy study using C. elegans, where potassium citrate is used only as a buffer component in the growth medium, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Attalla_2026 | irrelevant | 0 | 0 | The paper is a parasitology study on anthelmintic efficacy in C. elegans and does not involve potassium_citrate or pharmacokinetics. |
 | PD | Attalla_2026 | not_relevant | 0 | 0 | The paper investigates anthelmintics (e.g., albendazole, ivermectin) in C. elegans and does not mention or test potassium citrate. |
 | popPK | Aziz_2005 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of crystal inhibition where potassium citrate serves only as a positive control, with no pharmacokinetic parameters reported. |
-| popPK | Belldina_2003 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cysteamine bitartrate, not potassium_citrate. |
+| popPK | Belldina_2003 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cysteamine bitartrate, not potassium citrate. |
 | PD | Belldina_2003 | not_relevant | 0 | 0 | The paper investigates cysteamine bitartrate, not potassium citrate. |
 | popPK | Breznock_1978 | irrelevant | 0 | 0 | The study focuses on the efficacy of chemical defibrillation in dogs and does not report any pharmacokinetic parameters for potassium citrate. |
-| popPK | Canales_2019 | irrelevant | 0 | 0 | The paper is a clinical outcome study on stone recurrence rates and does not report any pharmacokinetic parameters for potassium citrate. |
+| popPK | Canales_2019 | irrelevant | 0 | 0 | The study reports clinical outcomes (stone recurrence rates) and urine pH, not pharmacokinetic parameters (CL, V, ka, etc.) for potassium citrate. |
 | popPK | Carvalho_2017 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis focusing on clinical efficacy (stone recurrence) rather than pharmacokinetic parameters. |
 | PD | Carvalho_2017 | not_relevant | 1 | 0 | The paper is a meta-analysis of clinical outcomes (stone recurrence) and does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters like Emax or EC50. |
-| popPK | Caudarella_2009 | irrelevant | 0 | 0 | The paper is a review of the clinical use of potassium citrate for nephrolithiasis and does not report any quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Caudarella_2009 | irrelevant | 0 | 0 | The paper is a review of the clinical use of potassium citrate for nephrolithiasis and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
 | PGx | Cui_2021 | not_relevant | 0 | 0 | The paper investigates H. pylori antibiotic resistance genes and their correlation with clinical efficacy, not human pharmacogenomic effects on the PK/PD of potassium citrate. |
 | popPK | Domrongkitchaiporn_2002 | irrelevant | 0 | 0 | The study is a clinical trial focused on dosing for therapeutic efficacy in renal tubular acidosis and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PGx | Dong_2015 | not_relevant | 0 | 0 | The paper focuses on antibiotic resistance in H. pylori and does not report pharmacogenomic effects on the PK or PD of potassium citrate. |
@@ -95,53 +95,53 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ergani_2021 | irrelevant | 0 | 0 | The paper is a clinical case report regarding the management of Gitelman syndrome in pregnancy and does not contain any pharmacokinetic studies or quantitative disposition parameters for potassium citrate. |
 | PD | Ergani_2021 | not_relevant | 0 | 0 | The paper is a clinical case report describing the management of Gitelman syndrome in pregnancy with qualitative observations on dosage adjustments, but it does not provide any quantitative exposure-response or dose-response data, curves, or PD parameters for potassium citrate. |
 | popPK | Fan_2001 | irrelevant | 1 | 0 | The study focuses on calcium oxalate crystallization and bioequivalence of urinary citrate levels, not on the pharmacokinetic disposition parameters (CL, V, ka) of potassium citrate. |
-| popPK | Fukunaga_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenobarbital, with potassium citrate used only as a dietary agent for urine alkalinization, not as the subject drug. |
+| popPK | Fukunaga_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenobarbital in dogs, using potassium citrate only as a dietary agent to modify urine pH, not as the subject drug. |
 | popPK | Gambaro_2000 | irrelevant | 0 | 0 | The paper is a case report on liver-kidney transplantation where potassium citrate is used as a therapeutic agent to increase oxalate solubility, not as a subject of pharmacokinetic analysis. |
-| popPK | Ghorbani_2019 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of sodium potassium citrate for preventing contrast-induced nephropathy and does not report any pharmacokinetic parameters. |
+| popPK | Ghorbani_2019 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of sodium potassium citrate for preventing contrast-induced nephropathy and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
 | popPK | Gisbert_1997 | irrelevant | 0 | 0 | The paper is a cost-effectiveness analysis of potassium citrate for urinary lithiasis prevention and does not report any pharmacokinetic parameters. |
 | PD | Gisbert_1997 | not_relevant | 1 | 0 | The paper is a cost-effectiveness analysis that cites clinical outcomes (relapse rates) from other studies but does not report any pharmacokinetic data, concentration-effect relationships, or numeric PD parameters for potassium citrate. |
-| popPK | Gridley_2019 | irrelevant | 0 | 0 | The paper is a clinical retrospective review of dissolution therapy outcomes for kidney stones and does not report any pharmacokinetic parameters for potassium citrate. |
+| popPK | Gridley_2019 | irrelevant | 0 | 0 | The study is a clinical retrospective review of dissolution therapy outcomes (stone clearance, urine pH) and does not report any pharmacokinetic parameters for potassium citrate. |
 | popPK | Guittet_2020 | irrelevant | 0 | 0 | The study is a pharmacodynamic trial measuring urine pH and electrolytes, not a pharmacokinetic study reporting disposition parameters like clearance or volume for potassium citrate. |
-| popPK | Guo_2026 | irrelevant | 0 | 0 | The study reports urinary stone risk parameters (citrate, pH, supersaturation) rather than pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
-| popPK | Huang_2000 | irrelevant | 0 | 0 | The study investigates free radical production and urinary enzymes in nephrolithiasis, using potassium citrate only as a therapeutic agent without reporting any pharmacokinetic parameters. |
+| popPK | Guo_2026 | irrelevant | 0 | 0 | The study measures urinary stone risk parameters (citrate, pH, supersaturation) rather than pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
+| popPK | Huang_2000 | irrelevant | 0 | 0 | The study investigates free radical production and urinary enzymes in a nephrolithiasis model, using potassium citrate only as a therapeutic agent, and does not report any pharmacokinetic parameters for potassium citrate. |
 | popPK | Hwang_1992 | irrelevant | 2 | 0 | The study describes urinary excretion profiles (pH, K, citrate) rather than reporting quantitative systemic pharmacokinetic parameters (CL, V, ka) for potassium citrate. |
 | popPK | Kaplon_2011 | irrelevant | 0 | 0 | The study focuses on the effect of topiramate on urinary citrate excretion, with potassium citrate used only as a therapeutic intervention to restore citrate levels, not as the subject of pharmacokinetic analysis. |
-| popPK | Kavanagh_2022 | irrelevant | 1 | 0 | The paper focuses on the pharmacokinetics of antibiotics (amoxicillin, ciprofloxacin, etc.) and the solubility effects of alkalising agents, not the quantitative PK parameters of potassium citrate itself. |
+| popPK | Kavanagh_2022 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of antibiotics (amoxicillin, ciprofloxacin, etc.) and the solubility effects of alkalising agents, not the PK parameters of potassium citrate itself. |
 | popPK | Korkmaz_2019 | irrelevant | 0 | 0 | The paper investigates potassium citrate as a radiation dosimeter material using ESR spectroscopy, which is a physicochemical/mechanistic study, not a pharmacokinetic study. |
 | PD | Korkmaz_2019 | not_relevant | 0 | 0 | The paper investigates potassium citrate as a radiation dosimeter material using ESR spectroscopy, reporting a physical dose-response to radiation, not a pharmacodynamic drug effect. |
-| popPK | Kourambas_2000 | irrelevant | 0 | 0 | The paper is a clinical case series on ureteroscopic management of kidney stones where potassium citrate is only mentioned as a maintenance therapy, with no pharmacokinetic data reported. |
-| popPK | Li_2025 | relevant | 4 | 5 | The study reports NCA parameters (Tmax, t1/2, AUC) for a combination of potassium citrate and potassium chloride, but does not provide separate quantitative disposition parameters (CL, V, Q) for potassium citrate alone. |
+| popPK | Kourambas_2000 | irrelevant | 0 | 0 | The paper is a clinical case series on ureteroscopic stone management where potassium citrate is only mentioned as a maintenance therapy, with no pharmacokinetic data reported. |
+| popPK | Li_2025 | relevant | 4 | 5 | The study reports NCA parameters (Tmax, t1/2, AUC) for the combination of potassium citrate and potassium chloride, but does not isolate specific compartmental PK parameters (CL, V, Q) for potassium citrate alone. |
 | popPK | Li_2025_2 | irrelevant | 0 | 0 | no_text gate: only 365 chars of text extracted (&lt; 400) |
-| popPK | Lubkowicz_2022 | irrelevant | 0 | 0 | The paper focuses on an engineered bacterial therapeutic (SYNB8802) for hyperoxaluria and does not study potassium_citrate as the subject drug. |
-| popPK | Lv_2026 | irrelevant | 2 | 0 | The study measures the pharmacokinetics of bismuth (the metal) from bismuth potassium citrate, not the pharmacokinetic parameters of potassium citrate itself. |
-| popPK | Martín_2001 | irrelevant | 0 | 0 | The paper is a clinical case report regarding uric acid lithiasis where potassium citrate is used as a therapeutic agent, but no pharmacokinetic parameters are reported. |
-| popPK | Miao_2023 | irrelevant | 1 | 0 | The study focuses on bismuth pharmacokinetics as a component of quadruple therapy, not potassium citrate, and does not report PK parameters for potassium citrate. |
+| popPK | Lubkowicz_2022 | irrelevant | 0 | 0 | The study focuses on an engineered bacterial therapeutic (SYNB8802) for oxalate metabolism and does not report pharmacokinetic parameters for potassium citrate. |
+| popPK | Lv_2026 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of bismuth (a metal) from bismuth potassium citrate, not the pharmacokinetics of potassium citrate itself. |
+| popPK | Martín_2001 | irrelevant | 0 | 0 | The paper is a clinical case report regarding uric acid lithiasis and renal hypouricemia, with no pharmacokinetic modeling or quantitative disposition parameters for potassium citrate. |
+| popPK | Miao_2023 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of bismuth (from bismuth potassium citrate) and the PPIs, not potassium citrate itself, which is merely a co-administered excipient/comparator component. |
 | popPK | Pak_1984 | irrelevant | 0 | 0 | The study focuses on urinary citrate excretion (pharmacodynamics) rather than pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
-| popPK | Papatsoris_2025 | irrelevant | 0 | 0 | The paper is a review of kidney stone pathophysiology and treatment that mentions potassium citrate only as a therapeutic agent for stone prevention, without reporting any pharmacokinetic parameters. |
+| popPK | Papatsoris_2025 | irrelevant | 0 | 0 | The paper is a review of kidney stone pathophysiology and treatment, mentioning potassium citrate only as a therapeutic agent for stone prevention without reporting any pharmacokinetic parameters. |
 | popPK | Reum_2024 | irrelevant | 0 | 0 | The paper is a meta-analysis of H. pylori eradication efficacy and does not report pharmacokinetic parameters for potassium citrate. |
 | PD | Reum_2024 | not_relevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy (eradication rates) and does not report pharmacokinetic or pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response relationships for potassium citrate. |
 | popPK | Ripa_2023 | irrelevant | 0 | 0 | The paper is a systematic review of clinical outcomes (stone-free rates, complications) for cystine stone management, not a pharmacokinetic study, and contains no PK parameters for potassium citrate. |
-| popPK | Sakhaee_1991 | irrelevant | 1 | 0 | The study reports renal citrate clearance (a pharmacodynamic/physiological measure) rather than pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
+| popPK | Sakhaee_1991 | irrelevant | 0 | 0 | The study measures renal citrate clearance and urinary excretion to assess acid-base status, not the pharmacokinetic disposition parameters (CL, V, ka) of the drug potassium citrate itself. |
 | popPK | Sandford_1992 | irrelevant | 0 | 0 | The paper is an electrophysiology study of potassium channels in hepatocytes where potassium citrate is used only as an electrode filling solution, not as a subject drug for pharmacokinetic analysis. |
 | PD | Sandford_1992 | not_relevant | 0 | 0 | The paper investigates the biophysical properties of a potassium conductance channel in hepatocytes, not the pharmacodynamic or exposure-response relationship of the drug potassium citrate. |
 | popPK | Sarica_2008 | irrelevant | 0 | 0 | The paper is a review of shockwave lithotripsy and protective agents, containing no pharmacokinetic data or quantitative disposition parameters for potassium citrate. |
 | PD | Sarica_2008 | not_relevant | 1 | 0 | The text is a review overview that qualitatively mentions potassium citrate as a protective agent and explicitly states that further investigations are needed to determine the dose-response relationship, providing no numeric PD parameters. |
 | popPK | Schell-Feith_2006 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of citrate therapy for nephrocalcinosis and does not report pharmacokinetic parameters (CL, V, ka, etc.) for potassium citrate. |
 | PD | Schell-Feith_2006 | not_relevant | 1 | 0 | The paper is a clinical trial reporting binary outcomes (nephrocalcinosis incidence) and urinary biomarkers, but it does not provide a pharmacodynamic model, concentration-effect curve, or numeric PD parameters (e.g., Emax, EC50) for potassium citrate. |
-| popPK | Singh_2011 | irrelevant | 0 | 0 | The paper is a clinical trial comparing efficacy in nephrolithiasis and does not report pharmacokinetic parameters for potassium citrate. |
+| popPK | Singh_2011 | irrelevant | 0 | 0 | The study is a clinical trial comparing efficacy in nephrolithiasis and reports biochemical changes (urine pH, citrate levels) rather than pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
 | PGx | Song_2016 | not_relevant | 0 | 0 | The paper reports clinical efficacy of an H. pylori regimen and analyzes CYP2C19 polymorphism, but does not report pharmacokinetic or pharmacodynamic parameters for potassium citrate. |
 | PGx | Song_2020 | not_relevant | 0 | 0 | The study compares H. pylori eradication rates and safety profiles of different antibiotic regimens and does not report pharmacokinetic or pharmacodynamic parameters for potassium citrate. |
-| PGx | Suo_2025 | not_relevant | 0 | 0 | The paper focuses on H. pylori eradication efficacy and safety, not the pharmacokinetics or pharmacodynamics of potassium citrate. |
-| popPK | Tanner_1998 | irrelevant | 0 | 0 | The study reports renal function (GFR) and plasma potassium levels, not pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
+| PGx | Suo_2025 | not_relevant | 0 | 0 | The paper focuses on H. pylori eradication and CYP2C19 polymorphisms, not potassium_citrate. |
+| popPK | Tanner_1998 | irrelevant | 0 | 0 | The study reports renal function (GFR) and histology outcomes, not pharmacokinetic disposition parameters (CL, V, ka) for potassium citrate. |
 | popPK | Tanner_2000 | irrelevant | 2 | 0 | The study focuses on renal physiology (GFR, citrate handling) in a disease model rather than reporting quantitative pharmacokinetic parameters (CL, V, ka) for potassium citrate. |
-| popPK | Toblli_2001 | irrelevant | 0 | 0 | The study is a histopathological and functional assessment of renal damage in rats, not a pharmacokinetic study, and does not report PK parameters for potassium citrate. |
+| popPK | Toblli_2001 | irrelevant | 0 | 0 | The study is a histopathological and functional assessment of renal damage in rats, not a pharmacokinetic study reporting disposition parameters for potassium citrate. |
 | popPK | Vaidyanathan_2006 | irrelevant | 0 | 0 | The paper is a clinical case report describing metabolic changes (urinary oxalate/citrate levels) in a patient, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for potassium citrate. |
-| popPK | Veronese_2025 | irrelevant | 0 | 0 | The paper is an umbrella review of clinical efficacy for kidney stone prevention and does not report any pharmacokinetic parameters for potassium citrate. |
-| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper reports clinical efficacy (eradication rates) and safety, not pharmacokinetic or pharmacodynamic parameters of potassium citrate. |
-| PGx | Wang_2026 | not_relevant | 0 | 0 | The paper reports on H. pylori antibiotic resistance genotypes and treatment efficacy, not human pharmacogenomic effects on the PK/PD of potassium citrate. |
+| popPK | Veronese_2025 | irrelevant | 0 | 0 | This is an umbrella review of clinical efficacy for kidney stone prevention, not a pharmacokinetic study, and it reports no disposition parameters (CL, V, etc.) for potassium citrate. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper studies vonoprazan-amoxicillin therapy for H. pylori and does not mention potassium_citrate or any pharmacogenomic effects. |
+| PGx | Wang_2026 | not_relevant | 0 | 0 | The study evaluates H. pylori antibiotic resistance genotypes to guide therapy, not human pharmacogenomic variants affecting the PK/PD of potassium citrate. |
 | popPK | Wiegand_2020 | irrelevant | 0 | 0 | The study is an observational analysis of urinary metabolic parameters and stone risk factors, not a pharmacokinetic study, and reports no PK parameters (CL, V, ka, etc.) for potassium citrate. |
 | PD | Wiegand_2020 | not_relevant | 2 | 1 | The study is an observational comparison of treated vs. untreated groups reporting mean changes in urinary parameters, but it does not model or report a quantitative exposure-response or dose-response relationship (e.g., Emax, EC50, or slope) for potassium citrate. |
-| popPK | Yuruk_2017 | irrelevant | 0 | 0 | The paper is a surgical study on pediatric cystine stones where potassium citrate is only mentioned as a prophylactic treatment, with no pharmacokinetic parameters reported. |
+| popPK | Yuruk_2017 | irrelevant | 0 | 0 | The paper is a surgical case series regarding pediatric cystine stones where potassium citrate is only mentioned as a prophylactic treatment, with no pharmacokinetic data reported. |
 | PGx | Zgheib_2024 | not_relevant | 0 | 0 | The paper is a case report on nephrocalcinosis and hypothyroidism; it mentions potassium citrate treatment but does not report any pharmacogenomic effects on its PK or PD parameters. |
 
 ---

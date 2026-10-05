@@ -10,21 +10,29 @@
 
 ## About
 
-**Description.** A sulphonylurea hypoglycemic agent with actions and uses similar to those of chlorpropamide.
+Tolazamide is a sulfonylurea blood-glucose-lowering drug used to treat diabetes, including maturity-onset diabetes of the young type 2. It is an approved anti-diabetic medication, though it is not authorised in the European Union.
 
-**Indication.** For use as an adjunct to diet to lower the blood glucose in patients with non-insulin dependent diabetes mellitus (Type II) whose hyperglycemia cannot be satisfactorily controlled by diet alone.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7814101](https://www.wikidata.org/wiki/Q7814101) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| tolazamide | parent | 311.4 | C14H21N3O3S | DrugBank | [5503](https://pubchem.ncbi.nlm.nih.gov/compound/5503) | Welling_1982 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 01:54 | 0:33 | 0/1/0 | 0/0/0 | 0/0/0 | 12,883/878 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/0 | 1/0 | 0 |
+| 2026-10-05 05:00 | 2:05 | 0/1/0 | 0/0/0 | 0/0/0 | 20,020/4,785 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Welling_1982_healthy male volunteers](drugs/drug_tolazamide/Tolazamide_Welling1982_healthy_male_volunteers.md) | — | — (no model) | 0 | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Welling_1982_reference](drugs/drug_tolazamide/Tolazamide_Welling1982_reference.md) | — | 1-compartment (no model) | 3 | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) |
 
 ## ADME sites
 
@@ -32,9 +40,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly and well absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C9` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…They are excreted principally in the urine.…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC8 (blocker), KCNJ10 (blocker).</sub>
 
@@ -57,16 +65,16 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Abidi_1982_2.pdf` | Abidi SE et al., Pharmacokinetic interactions of tolazam…, Journal of pharmaceutical s… (1982) | popPK | 9 | [10.1002/jps.2600710107](https://doi.org/10.1002/jps.2600710107) | [7057374](https://pubmed.ncbi.nlm.nih.gov/7057374) | The paper describes a pharmacokinetic study of tolazamide in dogs using a two-compartment model, but the specific numeric parameter values (alpha, beta, Vd) are not present in the provided evidence. |
-| `Welling_1982.pdf` | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | popPK | 8 | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) | [7175719](https://pubmed.ncbi.nlm.nih.gov/7175719) | The study reports quantitative PK parameters (half-lives, absorption rate) for tolazamide, but lacks explicit clearance or volume values. |
+| `Abidi_1982_2.pdf` | Abidi SE et al., Pharmacokinetic interactions of tolazam…, Journal of pharmaceutical s… (1982) | popPK | 9 | [10.1002/jps.2600710107](https://doi.org/10.1002/jps.2600710107) | [7057374](https://pubmed.ncbi.nlm.nih.gov/7057374) | The study reports a two-compartment PK model for tolazamide in dogs, but the specific numeric parameter values (alpha, beta, Vd) are not present in the provided evidence. |
+| `Welling_1982.pdf` | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | popPK | 8 | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) | [7175719](https://pubmed.ncbi.nlm.nih.gov/7175719) | The study reports quantitative PK parameters (half-lives, absorption rate) for tolazamide in humans, though specific clearance and volume values are not explicitly listed in the text. |
 
-<sub>queue written 2026-09-16T01:54:28.089764+00:00</sub>
+<sub>queue written 2026-10-05T04:59:02.491525+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abidi_1982_2 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of tolazamide in dogs using a two-compartment model, but the specific numeric parameter values (alpha, beta, Vd) are not present in the provided evidence. |
+| popPK | Abidi_1982_2 | relevant | 9 | 0 | The study reports a two-compartment PK model for tolazamide in dogs, but the specific numeric parameter values (alpha, beta, Vd) are not present in the provided evidence. |
 | PD | Abidi_1982_2 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (alpha, beta, Vd) and their changes with dosage or co-administration, with no pharmacodynamic or exposure-response analysis. |
 | PD | Kabadi_1985 | not_relevant | 1 | 0 | The paper reports clinical efficacy (insulin dose reduction, HbA1 improvement) but provides no concentration-effect data, dose-response curve, or numeric PD parameters. |
 | PD | Melchior_1996 | not_relevant | 0 | 0 | The paper is a clinical review of metformin and does not report any pharmacodynamic or exposure-response data for tolazamide. |
@@ -78,4 +86,4 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Tsuchiya_1984 | not_relevant | 0 | 0 | The paper reports in vitro protein binding capacity changes due to albumin glucosylation, not a pharmacodynamic exposure-response or dose-response relationship for drug efficacy. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-16 01:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 04:59 UTC</sub>

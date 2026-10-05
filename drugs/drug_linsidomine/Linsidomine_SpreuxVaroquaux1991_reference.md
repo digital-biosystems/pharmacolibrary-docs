@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Only clearance was extracted — no volume; cL/F has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — linsidomine: t1/2z 13.1 h, CL/F 39.8 ml h-1 kg-1, AUC ratio 4.5 100.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — linsidomine: t1/2z 13.1 h, CL/F 39.8 ml h-1 kg-1, AUC ratio 4.5 100.
 
 <sub>reviewed by rule template (no LLM)</sub>
 

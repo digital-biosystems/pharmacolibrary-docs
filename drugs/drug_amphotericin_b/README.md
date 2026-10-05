@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Amphotericin B shows a high order of in vitro activity against many species of fungi. Histoplasma capsulatum, Coccidioides immitis, Candida species, Blastomyces dermatitidis, Rhodotorula, Cryptococcus neoformans, Sporothrix schenckii, Mucor mucedo, and Aspergillus fumigatus are all inhibited by concentrations of amphotericin B ranging from 0.03 to 1.0 mcg/mL in vitro. While Candida albicans is generally quite susceptible to amphotericin B, non-albicans species may be less susceptible. Pseudallescheria boydii and Fusarium sp. are often resistant to amphotericin B. The antibiotic is without effect on bacteria, rickettsiae, and viruses.
+Amphotericin B is an antifungal antibiotic used to treat serious fungal infections such as aspergillosis, candidiasis, cryptococcosis, histoplasmosis, and blastomycosis, as well as visceral leishmaniasis. It is widely used and appears on the WHO list of essential medicines, given systemically and also locally in oral, intestinal, and gynecological preparations.
 
-**Indication.** Used to treat potentially life threatening fungal infections.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412223](https://www.wikidata.org/wiki/Q412223) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…Exclusively renal…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Landiolol is a rapid-acting beta (β)-1 adrenergic receptor blocker that blocks the positive chronotropic effect of the beta-1 selective agonist norepinephrine.[L51938] It works to reduce the heart rate, myocardial contractility, and conduction velocity.[A264733] Compared to other beta-blockers, landiolol possesses unique pharmacodynamic and pharmacokinetic properties, in that it has a rapid onset and short duration of action, and has a greater affinity for β-1 adrenergic receptors over β-2 receptors.[A264733,A264738]
+Landiolol is a selective beta blocker with antiarrhythmic activity, used to control fast heart rhythms. It is an approved medicine, given by infusion in hospital settings, and is used mainly in Japan and some Asian countries rather than in the European Union.
 
-First approved in Japan in 2002 [A264758] for the treatment of intraoperative tachyarrhythmias,[A264733] landiolol was approved in Canada in April 2024 [L51938] and in the US in November 2024 to treat tachyarrhythmias and perioperative tachycardia, including atrial fibrillation.[L51948]
-
-**Indication.** Landiolol is indicated for the short-term reduction of ventricular rate in adults with supraventricular tachycardia including atrial fibrillation and atrial flutter. It is not intended for chronic use.[L51933,L51938]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6484656](https://www.wikidata.org/wiki/Q6484656) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -50,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `BCHE` substrate, `CES2` substrate, `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CES2` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…The main route of excretion of landiolol is renal elimination…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target).</sub>
 

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** An antiarrhythmia agent used primarily for ventricular rhythm disturbances.
+Moracizine is a class I antiarrhythmic that was used to treat heart rhythm disorders, including ventricular arrhythmias. It is no longer available, having been withdrawn from the market.
 
-**Indication.** Used to treat irregular heartbeats (arrhythmias) and maintain a normal heart rate.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q904071](https://www.wikidata.org/wiki/Q904071) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -29,11 +29,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…Significant first-pass metabolism…”</sub> | prose |
-| absorption | small intestine | <sub>“…Well absorbed, absorption is complete within 2 to 3 hours.…”</sub> | prose |
-| metabolism | liver | <sub>“…Hepatic and extensive, to at least 26 metabolites…”</sub> | prose |
-| excretion | bile duct | <sub>“…Approximately 56% of the administered dose is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…39% is excreted in the urine…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
 

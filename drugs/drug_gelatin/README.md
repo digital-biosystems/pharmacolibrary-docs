@@ -9,23 +9,9 @@
 
 ## About
 
-**Description.** Gelatin is a multifunctional ingredient that is used in foods, pharmaceuticals, cosmetics, and photographic films as a gelling agent, stabilizer, thickener, emulsifier, as well as film former.[A32432]
+Gelatin, a mixture of peptides and proteins from animal connective tissue, is used as a blood substitute and plasma protein fraction, mainly as a plasma volume expander. It is an approved medicine and also approved for veterinary use, though some gelatin-based products have been withdrawn in certain settings.
 
-As a thermoreversible hydrocolloid with a small gap between its melting and gelling temperatures, gelatin provides unique advantages over carbohydrate-based gelling agents. Gelatin is mainly produced from porcine skin, and cattle hides and bones.[A32432]
-
-Some alternative raw substances have recently garnered attention from both researchers and the industry not only because they overcome religious concerns shared by both Jews and Muslims but also because they may provide scientific advantages over gelatins from mammal origins.[L2121]
-
-Fish skins from a number of fish species a type of substance that has been comprehensively studied as a source for gelatin production. Fish skins have a significant potential for the production of high-quality gelatin with different melting and gelling temperatures over a much larger range than mammalian gelatins but have a sufficiently high level of gel strength and viscosity.[A32432]
-
-Interestingly, horse gelatin has been studied and it was found that in the horse, gelatin influences the homeostasis of the amino acids required for cartilage synthesis [A32434]. An increasing number of novel applications have been found for collagen and gelatin.[A32426]
-
-Gelatin is generally recognized as safe (GRAS) by the FDA to be a non-hazardous food or food ingredient.[L2110] The FDA withdrew its approval for the use of all intravenous drug products containing gelatin. Gelatin continues to be approved for other routes of administration.[L43942]
-
-**Indication.** Gelatin is used for weight loss and for treating osteoarthritis, rheumatoid arthritis, and brittle bones (osteoporosis). Some people also use it for strengthening bones, joints, and fingernails. Gelatin is also used for improving hair condition and to shorten the recovery after exercise and sports-related injury [L2113]. Gelatin is used in preparations of foods, cosmetics, and medicine [L2113].
-
-Plasma volume expander in hypovolaemic shock [L2115]. Haemostatic [L2115].
-
-Gelatin-based hydrogels are being used in drug delivery and tissue engineering because they are able to promote cell adhesion and proliferation. In addition, these hydrogels can be used as wound dressings because of their attractive fluid absorbance properties. Manufacturing technologies such as ultraviolet stereolithography and two-photon polymerization can be used to prepare structures containing photosensitive gelatin-based hydrogels [L2111].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q179254](https://www.wikidata.org/wiki/Q179254) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -100,7 +86,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…41.91% of the digested gelatin was absorbed from the intestine in the peptide form…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

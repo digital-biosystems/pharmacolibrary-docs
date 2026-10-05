@@ -10,19 +10,9 @@
 
 ## About
 
-**Description.** Lovastatin, also known as the brand name product Mevacor, is a lipid-lowering drug and fungal metabolite derived synthetically from a fermentation product of _Aspergillus terreus_.[A174550] Originally named Mevinolin, lovastatin belongs to the statin class of medications, which are used to lower the risk of cardiovascular disease and manage abnormal lipid levels by inhibiting the endogenous production of cholesterol in the liver.[A174553] More specifically, statin medications competitively inhibit the enzyme hydroxymethylglutaryl-coenzyme A (HMG-CoA) Reductase,[A181421] which catalyzes the conversion of HMG-CoA to mevalonic acid and is the third step in a sequence of metabolic reactions involved in the production of several compounds involved in lipid metabolism and transport including cholesterol, low-density lipoprotein (LDL) (sometimes referred to as "bad cholesterol"), and very low-density lipoprotein (VLDL). Prescribing of statin medications is considered standard practice following any cardiovascular events and for people with a moderate to high risk of development of CVD, such as those with Type 2 Diabetes. The clear evidence of the benefit of statin use coupled with very minimal side effects or long term effects has resulted in this class becoming one of the most widely prescribed medications in North America.[A181087, A181406]
+Lovastatin is a statin used to lower cholesterol in conditions such as hyperlipidemia, hypertriglyceridemia, and related cardiovascular diseases. It is an approved drug, used mainly in the United States, and is not authorised in the European Union.
 
-Lovastatin and other drugs from the statin class of medications including [atorvastatin], [pravastatin], [rosuvastatin], [fluvastatin], and [simvastatin] are considered first-line options for the treatment of dyslipidemia.[A181087, A181406] Increasing use of the statin class of drugs is largely due to the fact that cardiovascular disease (CVD), which includes heart attack, atherosclerosis, angina, peripheral artery disease, and stroke, has become a leading cause of death in high-income countries and a major cause of morbidity around the world.[A181084] Elevated cholesterol levels, and in particular, elevated low-density lipoprotein
-
-**Indication.** Lovastatin is indicated to reduce the risk of myocardial infarction, unstable angina, and the need for coronary revascularization procedures in individuals without symptomatic cardiovascular disease, average to moderately elevated total-C and LDL-C, and below average HDL-C. It is indicated as an intervention alternative in individuals presenting dyslipidemia at risk of developing atherosclerotic vascular disease. The administration of this agent should be accompanied by the implementation of a fat and cholesterol-restricted diet.[F4661]
-
-Therapy with lipid-altering agents should be a component of multiple risk factor intervention in those individuals at significantly increased risk for atherosclerotic vascular disease due to hypercholesterolemia. Lovastatin is indicated as an adjunct to diet for the reduction of elevated total-C and LDL-C levels in patients with primary hypercholesterolemia (Types IIa and IIb2), when the response to diet restricted in saturated fat and cholesterol and to other nonpharmacological measures alone has been inadequate.[F4661,F4664]
-
-Lovastatin is also indicated to slow the progression of coronary atherosclerosis in patients with coronary heart disease as part of a treatment strategy to lower total-C and LDL-C to target levels.[F4661]
-
-Lovastatin is indicated as an adjunct to diet to reduce total-C, LDL-C and apolipoprotein B levels in adolescent boys and girls with Heterozygous Familial Hypercholesterolemia (HeFH) who are at least one year post-menarche, 10 to 17 years of age, with HeFH if after an adequate trial of diet therapy the following findings are present: LDL-C remains greater than 189 mg/dL or LDL-C remains greater than 160 mg/dL and there is a positive family history of premature cardiovascular disease or two or more other CVD risk factors are present in the adolescent patient.
-
-Before administering lovastatin, it is important to rule out the presence of secondary causes of hypercholesterolemia and a lipid profile shou
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417740](https://www.wikidata.org/wiki/Q417740) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,7 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | bile duct | <sub>“…with subsequent excretion of drug equivalents in the bile…”</sub> | prose |
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor, `SLCO2B1` unknown | DrugBank actor |
@@ -50,11 +40,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` unknown | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
-| metabolism | blood | <sub>“…controlled by the activity of serum paraoxonase…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` unknown, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…absorbed drug excreted in bile…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` substrate | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` substrate | DrugBank actor |

@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Tirzepatide is a novel dual glucose-dependent insulinotropic polypeptide (GIP) and glucagon-like peptide-1 (GLP-1) receptor agonist. Dual GIP/GLP-1 agonists gained increasing attention as new therapeutic agents for glycemic and weight control as they demonstrated better glucose control and weight loss compared to selective GLP-1 receptor agonists in preclinical and clinical trials.[A246260]
+Tirzepatide is a blood glucose lowering drug used to treat type 2 diabetes, and also obesity and overweight. It is an approved medicine authorised in the European Union.
 
-Tirzepatide comprises a 39 amino acid linear synthetic peptide conjugated to a C20 fatty diacid moiety.[A246260] Its protein sequence was based on the sequence of endogenous GIP, and its pharmacological action on GLP-1 receptors is comparable to endogenous GIP; however, the long half-life of tirzepatide allows for once-weekly dosing.[A246265] Tirzepatide was approved by the FDA on May 13, 2022, under the brand name MOUNJARO by the FDA for the treatment of adults with type 2 diabetes, making it the first and only GIP and GLP-1 receptor agonist for this indication.[L41820] Later, it was approved under a different brand name ZEPBOUND on November 8, 2023, for the chronic weight management in adults with obesity or overweight with at least one weight-related condition.[L48766] On September 15, 2022, tirzepatide was also approved by the European Commission.[L44386]. On November 02, 2023, tirzepatide was also approved by the Health Canada [L52800]
-
-**Indication.** Tirzepatide is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus or for chronic weight management in obese or overweight adult patients with at least one weight-related comorbid condition.[L41815,L44376,L52325] In Europe, it may be used as monotherapy or in combination with other drugs used to treat diabetes.[L44376]
-
-Tirzepatide is also indicated for the treatment of moderate-to-severe obstructive sleep apnea in adult patients with obesity.[L52325]
-
-This drug has not been studied in patients with a history of pancreatitis. Tirzepatide is not indicated for use in patients with type 1 diabetes mellitus.[L41815]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q108324770](https://www.wikidata.org/wiki/Q108324770) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -31,20 +25,20 @@ This drug has not been studied in patients with a history of pancreatitis. Tirze
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-03 18:35 | 7:23 | 0/1/0 | 1/0/0 | 0/0/5 | 160,735/15,006 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 0/10 | 10/0 | 1 |
+| 2026-10-05 04:58 | 7:49 | 0/1/0 | 1/0/0 | 0/0/5 | 160,427/16,465 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 0/10 | 10/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | — | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | — | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Chigutsa_2025_FFM](drugs/drug_tirzepatide/pd_Chigutsa_2025_FFM.md) | fat-free mass ← tirzepatide · indirect response — drug inhibits the production of fat-free mass | — | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chigutsa_2025_fat_mass](drugs/drug_tirzepatide/pd_Chigutsa_2025_fat_mass.md) | fat mass ← tirzepatide · indirect response — drug inhibits the production of fat mass | — | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Chigutsa_2025_FFM](drugs/drug_tirzepatide/pd_Chigutsa_2025_FFM.md) | fat-free mass ← tirzepatide · indirect response — drug inhibits the production of fat-free mass | — | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Chigutsa_2025_fat_mass](drugs/drug_tirzepatide/pd_Chigutsa_2025_fat_mass.md) | fat mass ← tirzepatide · indirect response — drug inhibits the production of fat mass | — | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
 
 ## Pharmacogenomics (PGx)
 
@@ -70,8 +64,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces…”</sub> | prose |
-| excretion | kidney | <sub>“…primarily excreted via urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: APOE (target), GIPR (target), GLP1R (target), IL6 (target).</sub>
 
@@ -107,4 +101,4 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PGx | Yamanouchi_2025 | not_relevant | 0 | 0 | The paper is a comprehensive review of incretin physiology and cardiovascular effects, mentioning tirzepatide only as a therapeutic example without reporting any pharmacogenomic data or genotype-specific PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-03 18:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 04:52 UTC</sub>

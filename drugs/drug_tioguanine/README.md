@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** An antineoplastic compound which also has antimetabolite action. The drug is used in the therapy of acute leukemia.
+Tioguanine is a purine analogue anticancer drug used to treat acute myeloid leukemia. It is an approved medicine and appears on the WHO list of essential medicines, so it remains in clinical use.
 
-**Indication.** For remission induction and remission consolidation treatment of acute nonlymphocytic leukemias.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q385347](https://www.wikidata.org/wiki/Q385347) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -67,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorption of an oral dose is incomplete and variable…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | blood | `TPMT` safety_allele | paper PGx gene |
 | metabolism | liver | `TPMT` safety_allele | paper PGx gene |
 | excretion | kidney | `ABCC4` inhibitor | DrugBank actor |

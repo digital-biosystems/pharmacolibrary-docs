@@ -10,29 +10,19 @@
 
 ## About
 
-**Description.** Alfacalcidol, or 1-alpha-hydroxycholecalciferol or 1-alpha-hydroxyvitamin D3, is a non-endogenous analogue of [vitamin D].[A234044] It plays an essential function in calcium homeostasis and bone metabolism. Alfacaldisol is activated by the enzyme 25-hydroxylase in the liver to mediate its effects in the body, or most importantly, the kidneys and bones. The pharmacological actions of alfacalcidol are prolonged than vitamin D because a negative feedback mechanism regulates the final activation step of vitamin D in the kidneys.[A175348,A175351]
+Alfacalcidol is a vitamin D analogue used as a bone density conservation agent, for example in conditions with disturbed bone mineralisation. It is an approved medicine, used mainly in Europe and Japan for metabolic bone disease.
 
-Alfacalcidol is available in oral and intravenous formulations. In Canada, it is marketed as ONE-ALPHA, which manages hypocalcemia, secondary hyperparathyroidism, and osteodystrophy in adults with chronic renal failure.[L33284] In approving European countries, alfacalcidol is also indicated for managing nutritional and malabsorptive rickets and osteomalacia, vitamin D-dependent rickets and osteomalacia, and hypophosphataemic vitamin D resistant rickets and osteomalacia.[L33364,L33369]
-
-**Indication.** Alfacalcidol is indicated in adult patients with chronic renal failure for the management of hypocalcemia, secondary hyperparathyroidism, or osteodystrophy.[L33284]
-
-Alfacalcidol is indicated in the management of nutritional and malabsorptive rickets and osteomalacia, vitamin D-dependent rickets and osteomalacia, and hypophosphataemic vitamin D resistant rickets and osteomalacia.[L33364,L33369]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q155883](https://www.wikidata.org/wiki/Q155883) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 08:14 | 3:52 | 0/0/0 | 0/1/0 | 0/0/0 | 23,272/1,178 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 4/17 | 3/0 | 0 |
+| 2026-10-05 07:05 | 2:10 | 0/0/0 | 0/0/0 | 0/0/0 | 63,002/2,622 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 4/17 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Hoeben_2026_TV](drugs/drug_alfacalcidol/pd_Hoeben_2026_TV.md) | tumor volume ← plasma asparaginase activity · direct linear effect | — | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
 
 ## ADME sites
 
@@ -40,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed passively and almost completely in the small intestine…”</sub> | prose |
-| metabolism | bile duct | <sub>“…excreted primarily through the bile…”</sub> | prose |
-| metabolism | liver | <sub>“…rapidly converted in the liver to 1,25-dihydroxyvitamin D…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Alpha globin (binder), CYP27B1 (unknown), GC (substrate), RXRA (unknown), VDR (target).</sub>
 
@@ -72,20 +62,20 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Lachnit_1997.pdf` | Lachnit WG et al., Pharmacological characterization of an…, British journal of pharmaco… (1997) | pd | 4 | [10.1038/sj.bjp.0700983](https://doi.org/10.1038/sj.bjp.0700983) | [9138687](https://www.ncbi.nlm.nih.gov/pubmed/9138687) | metadata signals extractable PD data (concentration-effect) |
 | `Omidvar_2016.pdf` | Omidvar R et al., NMR structure and conformational dynami…, Biochimica et biophysica ac… (2016) | pd | 4 | [10.1016/j.bbapap.2016.08.017](https://doi.org/10.1016/j.bbapap.2016.08.017) | [27592418](https://www.ncbi.nlm.nih.gov/pubmed/27592418) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-16T08:14:10.332366+00:00</sub>
+<sub>queue written 2026-10-05T07:05:06.561957+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Atsukawa_2013 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of alfacalcidol on HCV treatment outcomes (SVR) and does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of alfacalcidol itself. |
+| PGx | Atsukawa_2013 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of alfacalcidol in hepatitis C patients and does not report pharmacogenomic effects on the PK or PD parameters of alfacalcidol. |
 | popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on population pharmacokinetic models for tacrolimus, not alfacalcidol. |
 | PD | Baroudi_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (popPK) model selection for tacrolimus and does not report any pharmacodynamic (PD) or exposure-response relationships for alfacalcidol. |
 | popPK | Barry_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vancomycin, not alfacalcidol. |
 | PD | Barry_2026 | not_relevant | 0 | 0 | The paper analyzes vancomycin nephrotoxicity, not alfacalcidol. |
-| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of population PK models for therapeutic enzymes in lysosomal storage diseases (e.g., imiglucerase, avalglucosidase alfa) and does not study alfacalcidol. |
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for therapeutic enzymes in lysosomal storage diseases and does not mention alfacalcidol. |
 | PD | Barzel_2026 | not_relevant | 1 | 0 | The paper is a review of pharmacokinetic/pharmacodynamic models for enzyme replacement therapies in lysosomal storage diseases and does not contain any data, analysis, or parameters for alfacalcidol. |
-| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using warfarin and generic PK data, with no mention of alfacalcidol or its specific pharmacokinetic parameters. |
+| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using warfarin and generic PK data, with no mention of alfacalcidol. |
 | PD | Bräm_2026 | not_relevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using neural ODEs and LASSO, demonstrating it on warfarin PK/PD data, but does not report any PD or exposure-response relationship for alfacalcidol. |
 | PGx | Castejon_2003 | not_relevant | 0 | 0 | The paper investigates the alpha-adducin polymorphism and its effects on blood pressure, salt sensitivity, and nitric oxide excretion, but does not mention alfacalcidol or any pharmacokinetic/pharmacodynamic parameters of this drug. |
 | popPK | Chen_1995 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
@@ -94,7 +84,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Chen_2012 | not_relevant | 0 | 0 | The paper discusses GABA-A agonists (lorazepam, zolpidem, etc.) and does not mention alfacalcidol. |
 | popPK | Cheong_2019 | irrelevant | 0 | 0 | The paper describes the cloning and antiproliferative activity of a mushroom lectin and does not involve alfacalcidol or pharmacokinetics. |
 | PD | Cheong_2019 | not_relevant | 0 | 0 | The paper reports pharmacological data for Rhinocelectin (a lectin from Tiger Milk Mushroom), not alfacalcidol. |
-| popPK | Dahan_2026 | irrelevant | 0 | 0 | The paper is a narrative review of Model-Informed Drug Development for analgesics and does not report any pharmacokinetic parameters for alfacalcidol. |
+| popPK | Dahan_2026 | irrelevant | 0 | 0 | The paper is a narrative review of Model-Informed Drug Development for analgesics and does not contain any pharmacokinetic data or parameters for alfacalcidol. |
 | PD | Dahan_2026 | not_relevant | 0 | 0 | The paper is a narrative review of MIDD methodologies and does not report specific pharmacodynamic parameters or exposure-response data for alfacalcidol. |
 | popPK | Davenport_2024 | irrelevant | 0 | 0 | no_text gate: only 138 chars of text extracted (&lt; 400) |
 | PD | Davenport_2024 | not_relevant | 0 | 0 | The paper investigates the association between vitamin D levels and antibody responses, but does not report a pharmacodynamic model or numeric exposure-response parameters for alfacalcidol. |
@@ -112,23 +102,23 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mosnodenvir, not alfacalcidol. |
 | PD | Goeyvaerts_2026 | not_relevant | 0 | 0 | The paper describes a PD model for mosnodenvir (an antiviral), not alfacalcidol. |
 | popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of calaspargase pegol (CalPEG), not alfacalcidol. |
-| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a methodological study evaluating automated PopPK modeling algorithms on 22 datasets (including bedaquiline, cefaclor, etc.), but alfacalcidol is not among the drugs studied or mentioned. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a methodological study evaluating an automated PopPK modeling framework (nlmixr2auto) on 22 unspecified datasets and does not report specific PK parameters for alfacalcidol. |
 | PD | Huang_2026 | not_relevant | 0 | 0 | The paper focuses on automated population pharmacokinetic (PopPK) modeling methods and does not report any pharmacodynamic (PD) or exposure-response relationships for alfacalcidol or any other drug. |
 | PGx | Infante_2019 | not_relevant | 0 | 0 | The paper is a review on the immunomodulatory effects of vitamin D in Type 1 Diabetes and does not report pharmacogenomic effects on the PK or PD of alfacalcidol. |
 | popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for rivaroxaban, not alfacalcidol. |
 | PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban, not alfacalcidol, and does not provide a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Kang_2026 | irrelevant | 0 | 0 | The study focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention alfacalcidol. |
 | PD | Kang_2026 | not_relevant | 0 | 0 | The paper focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention alfacalcidol or report any PD parameters for it. |
-| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a general framework for benchmarking covariate model building methods using simulated data and does not report specific pharmacokinetic parameters for alfacalcidol. |
+| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a general framework for benchmarking covariate model building methods using simulated datasets and does not report specific pharmacokinetic parameters for alfacalcidol. |
 | PD | Karlsen_2026 | not_relevant | 0 | 0 | The paper describes a framework for benchmarking covariate model building in population pharmacokinetics (PK) and does not report any pharmacodynamic (PD) or exposure-response relationships for alfacalcidol. |
 | popPK | Khan_2023 | irrelevant | 0 | 0 | The paper is a chemical investigation of fungal metabolites and does not involve alfacalcidol or pharmacokinetic studies. |
 | PD | Khan_2023 | not_relevant | 0 | 0 | The paper reports IC50 values for novel fungal compounds (phomopthane A, etc.), not for the drug alfacalcidol. |
 | popPK | Khriesha_2021 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay measuring IC50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bevacizumab (CT-P16), not alfacalcidol. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bevacizumab (CT-P16), not alfacalcidol. |
 | PD | Kim_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bevacizumab (CT-P16) and compares exposure to a published efficacy benchmark, but it does not model or report a pharmacodynamic (PD) relationship or numeric PD parameters (e.g., Emax, EC50) for the drug. |
 | popPK | Lachnit_1997 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Lachnit_1997 | not_relevant | 0 | 0 | The paper characterizes alpha 1A-adrenoceptor responses to noradrenaline in rat caudal artery and does not mention alfacalcidol or report any PD parameters for it. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of PF-06804103, not alfacalcidol. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PF-06804103, not alfacalcidol. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper discusses PF-06804103, not alfacalcidol. |
 | popPK | Li_2026_2 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for gotistobart, not alfacalcidol. |
 | PD | Li_2026_2 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for gotistobart, not alfacalcidol, and contains no pharmacodynamic (PD) or exposure-response analysis. |
@@ -151,37 +141,37 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Pereira_2012 | not_relevant | 0 | 0 | The paper is a clinical guideline for glucocorticoid-induced osteoporosis and does not report any pharmacodynamic or exposure-response data for alfacalcidol. |
 | popPK | Romo-Pérez_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on dihydrobenzo[c]phenanthridines and does not involve alfacalcidol or pharmacokinetic parameters. |
 | PD | Romo-Pérez_2017 | not_relevant | 0 | 0 | The paper reports in vitro cytotoxicity (IC50) for dihydrobenzo[c]phenanthridine derivatives, not alfacalcidol, and does not contain pharmacokinetic or pharmacodynamic modeling. |
-| popPK | Salminen_2007 | irrelevant | 0 | 0 | The paper studies nicotinic acetylcholine receptor pharmacology in mice and does not involve alfacalcidol or pharmacokinetic parameters. |
+| popPK | Salminen_2007 | irrelevant | 0 | 0 | The paper studies nicotinic acetylcholine receptor subtypes in mice and does not involve alfacalcidol or its pharmacokinetics. |
 | PD | Salminen_2007 | not_relevant | 0 | 0 | The paper studies nicotinic acetylcholine receptor pharmacology in mice and does not mention alfacalcidol. |
-| popPK | Sato_2010 | irrelevant | 0 | 0 | The study is a pharmacodynamic evaluation of a new VDR ligand (VDRM2) where alfacalcidol is used only as a comparator for efficacy and safety margins, with no pharmacokinetic parameters reported. |
+| popPK | Sato_2010 | irrelevant | 0 | 0 | The study is a pharmacodynamic/efficacy comparison in rats where alfacalcidol is used only as a comparator agent, with no pharmacokinetic parameters reported. |
 | popPK | Schulz_2000 | irrelevant | 0 | 0 | The paper is a mechanistic study on Drosophila nicotinic acetylcholine receptors and does not involve alfacalcidol or pharmacokinetics. |
 | PD | Schulz_2000 | not_relevant | 0 | 0 | The paper studies Drosophila nicotinic acetylcholine receptors and does not involve alfacalcidol or any pharmacodynamic modeling of the specified drug. |
-| popPK | Sethuramalingam_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for asparaginase (N-Asp and P-Asp), not alfacalcidol. |
+| popPK | Sethuramalingam_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of asparaginase, not alfacalcidol. |
 | PD | Sethuramalingam_2026 | not_relevant | 0 | 0 | The paper focuses on asparaginase (N-Asp and P-Asp) pharmacokinetics and activity, not alfacalcidol. |
 | popPK | Sharma_1990 | irrelevant | 0 | 0 | The paper studies the immunological activity of alpha-d3DGuo, not the pharmacokinetics of alfacalcidol. |
 | PD | Sharma_1990 | not_relevant | 0 | 0 | The paper studies alpha-d3DGuo, not alfacalcidol. |
 | popPK | Skomedal_1988 | irrelevant | 0 | 0 | The paper studies adrenoceptor-mediated inotropic responses in rat heart and does not involve alfacalcidol or pharmacokinetic parameters. |
 | PD | Skomedal_1988 | not_relevant | 0 | 0 | The paper studies the inotropic response to norepinephrine in rat hearts and does not mention alfacalcidol or any pharmacodynamic parameters for it. |
-| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetic-pharmacodynamic modeling of meropenem and colistin/polymyxin B, not alfacalcidol. |
+| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meropenem and colistin/polymyxin B, not alfacalcidol. |
 | PD | Soeorg_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic-pharmacodynamic modeling of meropenem and colistin/polymyxin B, not alfacalcidol. |
-| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic models for 5-fluorouracil (5-FU), not alfacalcidol. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic models for 5-fluorouracil, not alfacalcidol. |
 | PD | Suthahar_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for 5-fluorouracil, not alfacalcidol, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic studies for vancomycin, not alfacalcidol. |
 | PD | Sürmelioğlu_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) studies for vancomycin, not alfacalcidol, and does not report any pharmacodynamic (PD) or exposure-response models. |
-| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on busulfan pharmacokinetics and does not report any parameters for alfacalcidol. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not alfacalcidol. |
 | PD | Tan_2026 | not_relevant | 0 | 0 | The paper focuses on busulfan PK and sampling strategies, not alfacalcidol, and does not report any pharmacodynamic or exposure-response relationships. |
-| PGx | Ventura_2020 | not_relevant | 0 | 0 | The paper reports the clinical and molecular epidemiology of erythropoietic protoporphyria (EPP) in Italy, focusing on FECH and ALAS2 mutations, but does not investigate the pharmacokinetics or pharmacodynamics of alfacalcidol. |
+| PGx | Ventura_2020 | not_relevant | 0 | 0 | The paper reports the epidemiology and genetics of erythropoietic protoporphyria, not the pharmacogenomics of alfacalcidol. |
 | popPK | Wang_2001 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on vasorelaxing quinolinone derivatives and does not involve alfacalcidol or pharmacokinetic parameters. |
 | PD | Wang_2001 | not_relevant | 0 | 0 | The paper studies vasorelaxing activity of synthetic quinolinone derivatives, not alfacalcidol. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a population pharmacokinetic model library for polymyxin B, not alfacalcidol. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper focuses on population pharmacokinetic models for polymyxin B, not alfacalcidol. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling of polymyxin B and does not contain any pharmacodynamic (PD) or exposure-response analysis for alfacalcidol. |
 | popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological study using simulated data to demonstrate a statistical metric (95% CDIRAs) and does not report pharmacokinetic parameters for alfacalcidol. |
 | PD | Wanika_2026 | not_relevant | 0 | 0 | The paper is a methodological case study on uncertainty quantification using simulated PK data and does not report any pharmacodynamic or exposure-response relationship for alfacalcidol. |
 | popPK | Wu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bosutinib, not alfacalcidol. |
 | PD | Wu_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PK) of bosutinib and does not report any pharmacodynamic (PD) or exposure-response relationship for alfacalcidol or any other drug. |
-| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tacrolimus, not alfacalcidol. |
+| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not alfacalcidol. |
 | PD | Xajil-Ramos_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for tacrolimus, not alfacalcidol, and contains no pharmacodynamic or exposure-response analysis. |
-| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of daptomycin, not alfacalcidol. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daptomycin, not alfacalcidol. |
 | PD | Xie_2026 | not_relevant | 0 | 0 | The paper focuses on daptomycin population pharmacokinetics and precision dosing, not alfacalcidol, and does not report any pharmacodynamic or exposure-response parameters. |
 | popPK | Xu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not alfacalcidol. |
 | PD | Xu_2026 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic (PK) exposure prediction (AUC) for polymyxin B using Bayesian and machine learning methods, and does not report any pharmacodynamic (PD) or exposure-response relationship for alfacalcidol or any other drug. |
@@ -193,7 +183,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics for imipenem, not alfacalcidol. |
 | PD | Zhang_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for imipenem and does not report any pharmacodynamic (PD) or exposure-response relationships for alfacalcidol. |
 | PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper discusses the engineering of an alpha-amylase enzyme for starch hydrolysis and is unrelated to alfacalcidol pharmacogenomics. |
-| popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics for immunoglobulins (IVIg/SCIg), not alfacalcidol. |
+| popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review of pharmacokinetics for immunoglobulins (IVIg/SCIg), not alfacalcidol. |
 | PD | van_2026 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic models for immunoglobulins (IVIg/SCIg) and does not contain any data, analysis, or parameters for alfacalcidol. |
 
 ---

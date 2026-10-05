@@ -8,10 +8,6 @@
 - **DrugBank:** [DB15650](https://go.drugbank.com/drugs/DB15650) · **PubChem:** not captured
 - **groups:** investigational
 
-## About
-
-**Description.** Efpeglenatide is under investigation in clinical trial NCT03713684 (Efficacy and Safety of Efpeglenatide Versus Placebo in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Basal Insulin Alone or in Combination With Oral Antidiabetic Drug(s)).
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

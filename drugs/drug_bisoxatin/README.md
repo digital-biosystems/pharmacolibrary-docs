@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Bisoxatin is a stimulant laxative which increases peristalsis and inhibits absorbtion of water and ions in the intestine [L926]. It is marketed in Belgium under the tradename Wylaxine and used for the treatment of constipation and for preparation of the colon for surgical procedures.
+Bisoxatin is a contact laxative used to treat constipation. It is an approved drug, but detailed information on how widely it is used is limited.
 
-**Indication.** For use in the treatment of constipation in the absence of bowel obstruction and for surgical preparation of the colon [L926].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4918383](https://www.wikidata.org/wiki/Q4918383) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 14:56 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 2,101/226 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 15:04 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 517/56 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -30,10 +30,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…some bisoxatin is absorbed with a Tmax of 4 h…”</sub> | prose |
-| metabolism | small intestine | <sub>“…Absorbed compound is metabolized to bisoxatin glucuronide…”</sub> | prose |
-| excretion | bile duct | <sub>“…Primarily excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -56,7 +56,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Liu_2024.pdf` | Liu Z et al., General hapten skeleton motivated duple…, Food chemistry (2024) | pd | 4 | [10.1016/j.foodchem.2024.139999](https://doi.org/10.1016/j.foodchem.2024.139999) | [38870811](https://www.ncbi.nlm.nih.gov/pubmed/38870811) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T14:56:10.935224+00:00</sub>
+<sub>queue written 2026-10-04T15:04:24.003098+00:00</sub>
 
 ## Screened and excluded
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Triflusal is a 2-acetoxy-4-trifluoromethylbenzoic acid and it is an aspirin chemically-related molecule but not a derivative. The benefits of this agent are the lack of action over the arachidonic acid pathway, the driven production of nitric oxide and the increase of cyclic nucleotide concentration on endothelial cells. The latest translates into the expansion of peripheral blood vessels.[A31675] It is very important as a secondary prevention of ischemic stroke by offering a lower risk of bleeding.[A31676] It was developed by  J. Uriach and Company and even though it is commercialized in different countries it is not approved by the FDA, EMA or HealthCanada.
+Triflusal is an antiplatelet drug that was used to prevent blood clots in conditions such as stroke. It was approved in some countries but has since been withdrawn and is no longer in general use.
 
-**Indication.** Triflusal is indicated as prophylaxis of thromboembolic disorders.[L1185] It has been registered in Spain and in other countries of Europe, South America and South Korea for the prevention of Stroke and myocardial infarction.[T93]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1758668](https://www.wikidata.org/wiki/Q1758668) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -24,9 +24,9 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Park_2014_estimates_from_final_model](drugs/drug_triflusal/Triflusal_Park2014_estimates_from_final_model.md) | held back | 1-compartment, oral | 2 | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_description_units](drugs/drug_triflusal/Triflusal_Park2014_description_units.md) | — | parent + metabolite (no model) | 0 | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_shrinkage](drugs/drug_triflusal/Triflusal_Park2014_shrinkage.md) | held back | parent + 1 metabolite (1-cmt each) | 0 | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q99, Q305 — no SI value to build fr…</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_estimates_from_final_model](drugs/drug_triflusal/Triflusal_Park2014_estimates_from_final_model.md) | — | parent + metabolite (no model) | 2 | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'description (units)' is a table statistic/structure column, not a…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_description_units](drugs/drug_triflusal/Triflusal_Park2014_description_units.md) | — | parent + metabolite (no model) | 0 | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'shrinkage (%)' is a table statistic/structure column, not a study…</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_shrinkage](drugs/drug_triflusal/Triflusal_Park2014_shrinkage.md) | — | parent + metabolite (no model) | 0 | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
 
 ## ADME sites
 
@@ -34,10 +34,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed in the small intestine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
-| metabolism | liver | <sub>“…In the liver, triflusal undergoes deacetylation…”</sub> | prose |
-| excretion | kidney | <sub>“…elimination pathway of triflusal is primarily renal…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: NFKB1 (target), NOS2 (target), PDE10A (target), PTGS1 (target).</sub>
 

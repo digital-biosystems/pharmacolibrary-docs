@@ -1,10 +1,11 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Rascher_2025 \u00b7 tail_ess&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Rascher_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Baron_2016_FPG&quot;,&quot;label&quot;:&quot;Baron_2016 \u00b7 FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Baron_2016_FPG.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rascher_2025_HbA1c&quot;,&quot;label&quot;:&quot;Rascher_2025 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Rascher_2025_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # empagliflozin — `Empagliflozin_Rascher2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,41 +13,41 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
-**The empagliflozin paediatric model was quarantined because volume of distribution, absorption rate constant and lag time had no source values and library defaults were substituted, and the recorded values (e.g. CL/F 3269 L/h, kabs 2750 1/h) conflict with a second reader's readings (6.74 L/h, 0.239 1/h).**
+**Empagliflozin's volume of distribution and absorption lag time lacked extracted values, so placeholders were used and the model was quarantined.**
 
-For empagliflozin in patients aged 10–17 years, no value was extracted for the volume of distribution, absorption rate constant or absorption lag time, so placeholders stood in and the model was held back. The coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted, and the invented absorption substitution (ka defaulted, not reported in the source) was judged unacceptable. A second reader disagreed on every parameter value: CL/F 6.74 vs 3269 L/h, D1 0.326 vs 2704 h, kabs 0.239 vs 2750 1/h, Q/F 5.51 vs 3074 L/h, V2/F 4.12 vs 2807 L and V3/F 71.7 vs 2718 L, indicating the recorded values are likely misread. The model also assumed F=1 and Fm=1 without molar correction (apparent parameterization). Extracted — empagliflozin: CL/F 3.27e+03 L/h, V2/F 2.81e+03 L, kabs 2.75e+03, Q/F 3.07e+03 L/h, V3/F 2.72e+03 L, D1 2.7e+03 h.
+The record describes a three-compartment model but provides no specific values for the volume of distribution or absorption lag time. Because these parameters were missing, generic placeholders were substituted instead of explicit estimates. This lack of specific data prevented the model from being published. Extracted — empagliflozin: CL/F 1 L/h, V2/F 1 L, kabs 1 1/h, Q/F 1 L/h, V3/F 1 L, D1 1 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.994866+00:00) predates the upstream re-run (2026-10-03 19:12:24.614514+00:00). Current validate status: `extracted`.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70096](https://doi.org/10.1002/bcp.70096)
 
 ## Model component
-<dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Rascher2025_reference" status="extracted" stale="true" population="paediatric patients aged 10–17 years with type 2 diabetes mellitus" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Rascher2025_reference" status="model_quarantined" stale="false" population="paediatric patients aged 10–17 years with type 2 diabetes mellitus" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 6.74 | L/h | 1.8722222222222222e-06 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row2:col3, bcp70096-tbl-0003:row2:col5, bcp70096-tbl-0003:row2:col6, bcp70096-tbl-0003:row2:col7 | — | 33.3 (None% RSE) |
-| V2/F (L) | `Q82` · V2/F | 4.12 | L | 0.00412 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row3:col3, bcp70096-tbl-0003:row3:col5, bcp70096-tbl-0003:row3:col6, bcp70096-tbl-0003:row3:col7 | — | not captured |
-| KA (1/h) | `Q49` · kabs | 0.239 | 1/h | 6.638888888888889e-05 | 1/h | not captured | exact (1.0) | bcp70096-tbl-0003:row4:col3, bcp70096-tbl-0003:row4:col5, bcp70096-tbl-0003:row4:col6, bcp70096-tbl-0003:row4:col7 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 5.51 | L/h | 1.5305555555555556e-06 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row5:col3, bcp70096-tbl-0003:row5:col5, bcp70096-tbl-0003:row5:col6, bcp70096-tbl-0003:row5:col7 | — | not captured |
-| V3/F (L) | `Q78` · V3/F | 71.7 | L | 0.0717 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row6:col3, bcp70096-tbl-0003:row6:col5, bcp70096-tbl-0003:row6:col6, bcp70096-tbl-0003:row6:col7 | — | not captured |
-| D1 (h) | `Q310` · D1 | 0.326 | h | 1173.6000000000001 | [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row7:col3, bcp70096-tbl-0003:row7:col5, bcp70096-tbl-0003:row7:col6, bcp70096-tbl-0003:row7:col7 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 1.00 | L/h | 2.7777777777777776e-07 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row2:col3, bcp70096-tbl-0003:row2:col5, bcp70096-tbl-0003:row2:col6, bcp70096-tbl-0003:row2:col7 | — | 33.3 (None% RSE) |
+| V2/F (L) | `Q82` · V2/F | 1.00 | L | 0.001 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row3:col3, bcp70096-tbl-0003:row3:col5, bcp70096-tbl-0003:row3:col6, bcp70096-tbl-0003:row3:col7 | — | not captured |
+| KA (1/h) | `Q49` · kabs | 1.00 | 1/h | 0.0002777777777777778 | 1/h | not captured | exact (1.0) | bcp70096-tbl-0003:row4:col3, bcp70096-tbl-0003:row4:col5, bcp70096-tbl-0003:row4:col6, bcp70096-tbl-0003:row4:col7 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 1.00 | L/h | 2.7777777777777776e-07 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row5:col3, bcp70096-tbl-0003:row5:col5, bcp70096-tbl-0003:row5:col6, bcp70096-tbl-0003:row5:col7 | — | not captured |
+| V3/F (L) | `Q78` · V3/F | 1.00 | L | 0.001 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row6:col3, bcp70096-tbl-0003:row6:col5, bcp70096-tbl-0003:row6:col6, bcp70096-tbl-0003:row6:col7 | — | not captured |
+| D1 (h) | `Q310` · D1 | 1.00 | h | 3600.0 | [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row7:col3, bcp70096-tbl-0003:row7:col5, bcp70096-tbl-0003:row7:col6, bcp70096-tbl-0003:row7:col7 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,8 +63,7 @@ Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of
 - table section residual_error: 'Σ33' routed out of structural estimates ('Residual variability')
 - column 'bulk ess' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'tail ess' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'ȓ' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q27 ('EGFRCL/F', value '0.407') — already have one for this compound
+- dropped duplicate Q27 ('EGFRCL/F', value '1.00') — already have one for this compound
 - dropped unlinked row (NIL): 'BLACKCL/F' — extend the ontology if this is a real PK parameter (source ['bcp70096-tbl-0003:row10:col3', 'bcp70096-tbl-0003:row10:col5', 'bcp70096-tbl-0003:row10:col6', 'bcp70096-tbl-0003:row10:col7'])
 - dropped unlinked row (NIL): 'ASIANCL/F' — extend the ontology if this is a real PK parameter (source ['bcp70096-tbl-0003:row11:col3', 'bcp70096-tbl-0003:row11:col5', 'bcp70096-tbl-0003:row11:col6', 'bcp70096-tbl-0003:row11:col7'])
 - dropped unlinked row (NIL): 'FEMALECL/F' — extend the ontology if this is a real PK parameter (source ['bcp70096-tbl-0003:row12:col3', 'bcp70096-tbl-0003:row12:col5', 'bcp70096-tbl-0003:row12:col6', 'bcp70096-tbl-0003:row12:col7'])
@@ -110,18 +110,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f].value` | 3269 | 1.00 | mismatch |
-| `gpt-oss:120b` | `parameters[d1].value` | 2704 | 1.00 | mismatch |
-| `gpt-oss:120b` | `parameters[ka].value` | 2750 | 1.00 | mismatch |
-| `gpt-oss:120b` | `parameters[q/f].value` | 3074 | 1.00 | mismatch |
-| `gpt-oss:120b` | `parameters[v2/f].value` | 2807 | 1.00 | mismatch |
-| `gpt-oss:120b` | `parameters[v3/f].value` | 2718 | 1.00 | mismatch |
+| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
 
@@ -148,8 +143,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70096-tbl-0003:row3:col3', 'bcp70096-tbl-0003:row3:col5', 'bcp70096-tbl-0003:row3:col6', 'bcp70096-tbl-0003:row3:col7'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 6.74 L/h | not captured | not captured | ['bcp70096-tbl-0003:row2:col3', 'bcp70096-tbl-0003:row2:col5', 'bcp70096-tbl-0003:row2:col6', 'bcp70096-tbl-0003:row2:col7'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 4.12 L | not captured | not captured | ['bcp70096-tbl-0003:row3:col3', 'bcp70096-tbl-0003:row3:col5', 'bcp70096-tbl-0003:row3:col6', 'bcp70096-tbl-0003:row3:col7'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1 L/h | not captured | not captured | ['bcp70096-tbl-0003:row2:col3', 'bcp70096-tbl-0003:row2:col5', 'bcp70096-tbl-0003:row2:col6', 'bcp70096-tbl-0003:row2:col7'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 1 L | not captured | not captured | ['bcp70096-tbl-0003:row3:col3', 'bcp70096-tbl-0003:row3:col5', 'bcp70096-tbl-0003:row3:col6', 'bcp70096-tbl-0003:row3:col7'] |
 
 **Reviewer per-scenario checks:**
 
@@ -160,7 +155,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -169,9 +164,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_empagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rascher_2025` / `Rascher_2025::tail_ess`)
-- model: `../../../knowledgebase/drugs/drug_empagliflozin/models/modelica/_needs_review/Empagliflozin_Rascher2025_tail_ess.mo`
-- deviation: `../../../knowledgebase/drugs/drug_empagliflozin/models/modelica/_needs_review/Empagliflozin_Rascher2025_tail_ess.deviation.json`
+- scholar stages: `../../../knowledgebase/drugs/drug_empagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rascher_2025` / `Rascher_2025::reference`)
+- model: `../../../knowledgebase/drugs/drug_empagliflozin/models/modelica/_needs_review/Empagliflozin_Rascher2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_empagliflozin/models/modelica/_needs_review/Empagliflozin_Rascher2025_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -197,4 +192,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 19:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 23:44 UTC</sub>

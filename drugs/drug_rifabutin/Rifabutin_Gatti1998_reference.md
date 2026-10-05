@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Gatti_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Osipova2023_reference&quot;,&quot;label&quot;:&quot;Osipova_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Osipova2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifabutin — `Rifabutin_Gatti1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,15 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**No value for rifabutin's clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant.**
+**CL/F, V1 and V2 have no unit.**
 
-The model was built, but rifabutin's clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rifabutin: kabs 0.201 /h, CL/F 60.9 liters/h, V 231 liters, Q 60.3 liters/h, V2/F 1 050 liters.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rifabutin: kabs 0.201 /h, CL/F 60.9 liters/h, V1 231 liters, Q 60.3 liters/h, V2 1.05e+03 liters.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 60.9, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -30,23 +30,23 @@ Gatti G et al., Population pharmacokinetics of rifabuti…, Antimicrobial agents
   ·  DOI: [10.1128/AAC.42.8.2017](https://doi.org/10.1128/AAC.42.8.2017)
 
 ## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Gatti1998_reference" status="model_quarantined" stale="false" population="HIV-infected patients" measured-compound="rifabutin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="rifabutin" model-id="Rifabutin_Gatti1998_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="rifabutin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
-**Parameterization:** CL/F, V2/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | absorption rate constant | `Q49` · kabs | 0.201 | /h | 5.583333333333334e-05 | [1] / [h] | not captured | exact (1.0) | Gatti_1998:abstract | — | not captured |
-| clearance/bioavailability (CL/F | `Q27` · CL/F | 60.9 | liters/h | 1.6916666666666667e-05 | L/h | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
-| volume of the central compartment/bioavailability | `Q61` · V | 231 | liters | 0.231 | L | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
+| clearance/bioavailability (CL/F | `Q27` · CL/F | 60.9 | liters/h | not captured | not captured | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
+| volume of the central compartment/bioavailability | `Q63` · V1 | 231 | liters | not captured | not captured | not captured | boundary_compartment (0.9) | Gatti_1998:abstract | — | not captured |
 | intercompartmental clearance | `Q30` · Q | 60.3 | liters/h | 1.675e-05 | [l] / [h] | not captured | exact (1.0) | Gatti_1998:abstract | — | not captured |
-| volume of the peripheral compartment/bioavailability (Vp/F | `Q82` · V2/F | 1 | 050 liters | not captured | not captured | not captured | llm_corrected (0.6) | Gatti_1998:abstract | — | not captured |
+| volume of the peripheral compartment/bioavailability (Vp/F | `Q64` · V2 | 1050 | liters | not captured | not captured | not captured | boundary_compartment (0.9) | Gatti_1998:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,8 +61,6 @@ Gatti G et al., Population pharmacokinetics of rifabuti…, Antimicrobial agents
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- unit re-normalised: CL/F 'liters/h' now converts (value unchanged)
-- unit re-normalised: V 'liters' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gatti_1998_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -74,18 +72,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 60.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.201 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 0.201 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance/bioavailability (cl/f]` | 60.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance/bioavailability]` | not captured | 60.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[intercompartmental clearance]` | 60.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intercompartmental clearance]` | not captured | 60.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of the central compartment/bioavailability]` | 231 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of the peripheral compartment/bioavailability (vp/f]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the central compartment/bioavailability]` | not captured | 231 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the peripheral compartment/bioavailability (vp/f]` | 1050 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the peripheral compartment/bioavailability]` | not captured | 1,050 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | rifabutin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | rifabutin | unknown | mismatch |
 
 </details>
 
@@ -104,20 +108,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gatti_1998:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Gatti_1998:abstract'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | 050 liters | not captured | not captured | ['Gatti_1998:abstract'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | liters/h | not captured | not captured | ['Gatti_1998:abstract'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | liters | not captured | not captured | ['Gatti_1998:abstract'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | liters | not captured | not captured | ['Gatti_1998:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 60.9 L/h | not captured | not captured | ['Gatti_1998:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 231 L | not captured | not captured | ['Gatti_1998:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,8 +121,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_rifabutin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gatti_1998` / `Gatti_1998::reference`)
-- model: `../../../knowledgebase/drugs/drug_rifabutin/models/modelica/_needs_review/Rifabutin_Gatti1998_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_rifabutin/models/modelica/_needs_review/Rifabutin_Gatti1998_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 07:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:47 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin (human)&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_human/&quot;},{&quot;label&quot;:&quot;Pierre-Eugene_2012 \u00b7 PD Akt phosphorylation&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinHuman_Potocka2011_reference&quot;,&quot;label&quot;:&quot;Potocka_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_human/InsulinHuman_Potocka2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Akt phosphorylation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
@@ -15,17 +16,17 @@
 
 ## What this record describes
 
-**As extracted:** Glargine (measured concentrations) drives Akt phosphorylation (in unknown): direct Emax (saturable) effect.
+**As extracted:** Insulin_human (concentrations from the PK model of Nosadini_1988) drives Akt phosphorylation: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Glargine concentrations (nM) directly stimulate Akt phosphorylation (pAkt) in MCF-7 cells, with higher potency than insulin via activation of insulin/IGF1 receptor signaling; the paper reports no numeric potency (EC50/Emax) or rate parameters for this response.
+> The paper describes a direct stimulation of Akt phosphorylation by insulin concentrations, characterized by a sigmoidal dose-response relationship with an EC50 of 35.6 nM. The mechanism is described as receptor-mediated activation of PI-3 kinase leading to PIP3 production and subsequent Akt recruitment, rather than a specific kinetic model of production or elimination.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Pierre-Eugene_2012`
-- **model family:** `emax`
-- **driver:** `conc_no_pk`
+- **model family:** `sigmoid_emax`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 
@@ -34,7 +35,14 @@ Pierre-Eugene C et al., Effect of insulin analogues on insulin/…, PloS one (20
   ·  DOI: [10.1371/journal.pone.0041992](https://doi.org/10.1371/journal.pone.0041992)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 35.6 | nM | not captured | llm (not captured) | Pierre-Eugene_2012:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

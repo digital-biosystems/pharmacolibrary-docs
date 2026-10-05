@@ -4,7 +4,7 @@
 
 # triflusal — `Triflusal_Park2014_estimates_from_final_model`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,15 +12,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**The triflusal parent–metabolite model was quarantined because triflusal's F, CL, Vd, ka and Tlag had no reported values and library defaults were substituted, and the one-compartment structure did not match the recorded three-compartment disposition.**
+**Only clearance was extracted — no volume; q2 and kfm have no unit.**
 
-No value for triflusal's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time. The model was built, but triflusal's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The recorded structure — a one-compartment enteral model with metabolism of triflusal to HTB (kfm 0.341 weight/71.65) — did not match the three-compartment disposition the record describes, and the invented absorption (defaulted ka, not reported in the source) was judged not acceptable. Additionally, the reported unit weight/71.65 could not be converted to SI, so parameters such as Q2 (8.300) and kfm reached the model builder without SI values. Extracted — triflusal: Q2 8.3 weight/71.65, kfm 0.341 weight/71.65.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Q2 and kfm), so that value has no SI equivalent. Extracted — triflusal: Q2 8.3 weight/71.65, kfm 0.341 weight/71.65.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `triflusal`, measured `HTB`.
 
@@ -29,15 +29,15 @@ Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & t
   ·  DOI: [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75)
 
 ## Model component
-<dbs-pgx drug="triflusal" model-id="Triflusal_Park2014_estimates_from_final_model" status="model_quarantined" stale="false" population="healthy Korean male volunteers" measured-compound="HTB" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="triflusal" model-id="Triflusal_Park2014_estimates_from_final_model" status="needs_review" stale="false" population="healthy Korean male volunteers" measured-compound="HTB" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -104,17 +104,6 @@ Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & t
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | weight/71.65 | not captured | not captured | ['Tab2:row8:col2', 'Tab2:row8:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -123,8 +112,6 @@ Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & t
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_triflusal/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Park_2014` / `Park_2014::estimates_from_final_model`)
-- model: `../../../knowledgebase/drugs/drug_triflusal/models/modelica/_needs_review/Triflusal_Park2014_estimates_from_final_model.mo`
-- deviation: `../../../knowledgebase/drugs/drug_triflusal/models/modelica/_needs_review/Triflusal_Park2014_estimates_from_final_model.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

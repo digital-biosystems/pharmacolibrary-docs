@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Roxadustat is a first-in-class hypoxia-inducible factor prolyl hydroxylase inhibitor used to treat anemia associated with chronic kidney disease. It works by reducing the breakdown of the hypoxia-inducible factor (HIF), which is a transcription factor that stimulates red blood cell production in response to low oxygen levels.[A245393] Roxadustat was first approved by the European Commission in August 2021.[L40323]
+Roxadustat is an antianemic medicine used to treat anemia in people with chronic kidney disease. It is authorised in the European Union.
 
-**Indication.** Roxadustat is indicated for the treatment of adult patients with symptomatic anemia associated with chronic kidney disease (CKD).[L40318]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27088611](https://www.wikidata.org/wiki/Q27088611) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `SLCO1B1` inhibitor, `UGT1A9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…50% in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor).</sub>

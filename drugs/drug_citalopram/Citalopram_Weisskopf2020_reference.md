@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Weisskopf_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The citalopram record was rejected because the model was built as a one-compartment system instead of the reported three-compartment parent–metabolite structure, the output was set to the parent compartment rather than the measured escitalopram compartment, and the transfer constant k12 (0.73 h⁻¹) was not represented.**
+**The citalopram (escitalopram) record was rejected because the model was built as a one-compartment PK model instead of the required three-compartment parent–metabolite structure, the output was not the measured escitalopram compartment, the k12 transfer constant (0.73 h⁻¹) was not extracted, and Vss (1310 L) was substituted for the central distribution volume.**
 
-The paper reports a parent–metabolite structure for escitalopram metabolised to S-desmethylcitalopram, but the built model used a single compartment, so the metabolism link and the peripheral transfer constants k12 (0.73 h⁻¹) and k31 (0.54 h⁻¹) are not represented; k12 was neither emitted nor defaulted. The model output was set to the parent (central) compartment instead of the measured analyte escitalopram. The builder also substituted Vss (1310 L) for the distribution volume, which reproduces AUC and terminal half-life but not the early distribution phase. Extracted — citalopram: CL 28.7 L/h, Vss 1.31e+03 L, k12 0.73 h⁻¹, k31 0.54 h⁻¹, sigma 35.3.
+The paper's structure is parent–metabolite with a three-compartment PK model, but the record used a one-compartment model, so the S-desmethylcitalopram metabolism link (Kfm) and the metabolite output could not be represented; the output was set to the central parent compartment rather than the measured escitalopram compartment. Parameter coverage expected 2 parameters but only 1 was covered, with k12 (0.73 h⁻¹) neither emitted nor defaulted. The builder used Vss (1310 L) as the distribution volume because no central volume was reported, which reproduces AUC and terminal half-life but not the early distribution phase; this substitution was judged not acceptable. The residual error σ of 35.3% and clearance CL of 28.7 L/h were reported, but the structure and deviation checks failed. Extracted — citalopram: CL 28.7 L/h, Vss 1.31e+03 L, k12 0.73 h⁻¹, k31 0.54 h⁻¹, sigma 35.3.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -99,7 +99,7 @@ Weisskopf E et al., A population pharmacokinetic model for…, British journal o
 | T3_param_coverage | not captured | fail | 2 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['k12'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | vss_as_v: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

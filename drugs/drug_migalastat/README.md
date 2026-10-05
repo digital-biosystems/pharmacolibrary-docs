@@ -10,19 +10,9 @@
 
 ## About
 
-**Description.** Fabry disease is a rare, progressive genetic disorder characterized by a defective GLA gene that causes a deficiency in the enzyme alpha-Galactosidase A (alpha-Gal A). This enzyme is responsible for breaking down glycosphingolipid substrate that, when deficient in patients with Fabry disease, builds up in the blood vessels, the kidneys, the nerves, the heart, and other organs.[L47036,L47057,L4274,L4278] In the U.S., it is estimated that more than 3,000 people are living with Fabry disease, and an estimated more than 50 percent of these diagnosed patients are currently untreated.[L4274]
+Migalastat is used to treat Fabry disease. It is authorised in the European Union.
 
-Migalastat (approved and sold under Amicus Therapeutics' brand name Galafold) is subsequently an oral pharmacological chaperone of alpha-Gal A for the treatment of Fabry disease in adults who have amenable GLA variants.[L47036,L47057,L4274,L4278] In these patients, migalastat works by stabilizing the body’s dysfunctional alpha-Gal A enzyme so that it can clear the accumulation of glycosphingolipid disease substrate.[L47036,L47057,L4274,L4278] Globally, it is estimated that approximately 35 to 50 percent of Fabry patients may have amenable GLA variants that are treatable with migalastat. [L4274]
-
-Given the rarity of Fabry disease and the proportion of Fabry disease patients that could benefit from migalastat therapy, Amicus Therapeutics' brand name Galafold was approved using the Accelerated Approval pathway, under which the FDA may approve drugs for serious conditions where there is an unmet medical need and where a drug is shown to have certain effects that are reasonably likely to predict a clinical benefit to patients.[L47036,L47057,L4274,L4278] A further study is required to verify and describe the clinical benefits of Galafold, and the sponsor will be conducting a confirmatory clinical trial of Galafold in adults with Fabry disease.[L47036,L47057,L4274,L4278]
-
-Additionally, Galafold was also granted Priority Review designation, under which the FDA’s goal is to take action
-
-**Indication.** Migalastat is approved by the FDA for the treatment of adults with a confirmed diagnosis of Fabry disease and an amenable galactosidase alpha gene (GLA) variant based on in vitro assay data.[L47036] 
-
-This indication is approved under accelerated approval based on a reduction in kidney interstitial capillary cell globotriaosylceramide (KIC GL-3) substrate. Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trials.[L47036]
-
-Migalastat is also approved by the EMA and Health Canada to treat the same disease, although it is approved for both adults and adolescents aged 16 years and older in Europe.[L47057,L47087]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q161613](https://www.wikidata.org/wiki/Q161613) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -53,11 +43,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorption occurring largely in the gut…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…20% of the total radiolabeled dose was recovered in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…approximately 77% of the total radiolabeled dose was recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GLA (stabilization), GLA (target), SLC5A1 (inhibitor), SLC5A1 (substrate).</sub>
 

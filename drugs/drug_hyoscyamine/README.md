@@ -10,17 +10,15 @@
 
 ## About
 
-**Description.** Hyoscyamine is a tropane alkaloid and the levo-isomer of [atropine].[A228423] It is commonly extracted from plants in the _Solanaceae_ or nightshade family.[A228423] Research into the action of hyoscyamine in published literature dates back to 1826.[A228713] Hyoscyamine is used for a wide variety of treatments and therapeutics due to its antimuscarinic properties.[L31548,L31553]
+Hyoscyamine, a belladonna alkaloid, is used to treat spasms and related gut problems such as irritable bowel syndrome, colic, peptic ulcer disease, and also conditions like hypersalivation and neurogenic bladder. It is an approved medicine and is used, alone or in combination products, mainly for functional gastrointestinal disorders.
 
-Although hyoscyamine is marketed in the United States, it is not FDA approved.[L31548,L31553]
-
-**Indication.** As a drug that is not FDA approved, hyscyamine has no official indications.[L31548,L31553] Intravenous hysocyamine has been used to reduce gastric motility, reduce pancreatic pain and secretions, to facilitate imaging of the gastrointestinal tract, treat anticholinesterase toxicity, treat certain cases of partial heart block, improve visualization of the kidneys, and for symptomatic relief of biliary and renal colic.[L31548] Intravenous hyoscyamine is also used pre-operatively to reduce secretions of the mouth and respiratory tract to facilitate intubation.[L31548] Oral hyoscyamine is used to treat functional intestinal disorders, for symptomatic relief of biliary and renal colic, and symptomatic relief of acute rhinitis.[L31553]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413762](https://www.wikidata.org/wiki/Q413762) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 11:19 | 37:59 | 0/0/0 | 8/2/0 | 0/0/0 | 701,616/18,330 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 13/28 | 28/2 | 0 |
+| 2026-10-04 13:26 | 7:53 | 0/0/0 | 1/0/2 | 0/0/0 | 304,850/9,797 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 13/28 | 28/2 | 0 |
 
 ## popPK records
 
@@ -30,17 +28,12 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed</span> | [Bruning_1994_unknown](drugs/drug_hyoscyamine/pd_Bruning_1994_unknown.md) | forearm blood flow ← methacholine · direct Emax (saturable) effect | — | Bruning TA et al., In vivo characterization of vasodilatin…, Circulation research (1994) | [10.1161/01.res.74.5.912](https://doi.org/10.1161/01.res.74.5.912) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Eguchi_2008_unknown](drugs/drug_hyoscyamine/pd_Eguchi_2008_unknown.md) | intracellular Ca 2+ level ← ACh · stimulation effect | — | Eguchi K et al., Functional expression of M3, a muscarin…, Chemical senses (2008) | [10.1093/chemse/bjm065](https://doi.org/10.1093/chemse/bjm065) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Goobar_1988_PI_breakdown](drugs/drug_hyoscyamine/pd_Goobar_1988_PI_breakdown.md) | phosphatidylinositol breakdown ← carbachol · direct Emax (saturable) effect | — | Goobar L et al., Long-term atropine treatment lowers the…, The Biochemical journal (1988) | [10.1042/bj2500727](https://doi.org/10.1042/bj2500727) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Kabir_2022_C_parvum_growth_inhibition](drugs/drug_hyoscyamine/pd_Kabir_2022_C_parvum_growth_inhibition.md) | name ← alisol-A, alisol-B, atropine sulfate, bufotalin · direct Emax (saturable) effect | — | Kabir MHB et al., Identification of potent anti-Cryptospo…, PLoS neglected tropical dis… (2022) | [10.1371/journal.pntd.0010947](https://doi.org/10.1371/journal.pntd.0010947) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Kabir_2022_Oocyst_shedding](drugs/drug_hyoscyamine/pd_Kabir_2022_Oocyst_shedding.md) | name ← alisol-A, alisol-B, atropine sulfate, bufotalin · direct Emax (saturable) effect | — | Kabir MHB et al., Identification of potent anti-Cryptospo…, PLoS neglected tropical dis… (2022) | [10.1371/journal.pntd.0010947](https://doi.org/10.1371/journal.pntd.0010947) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Küpeli_2020_percentage_mortality](drugs/drug_hyoscyamine/pd_K_peli_2020_percentage_mortality.md) | name ← Hyoscyamus niger alkaloid extract · inhibition effect | — | Küpeli Akkol E et al., Insecticidal Activity of Hyoscyamus nig…, Plants (Basel, Switzerland) (2020) | [10.3390/plants9050655](https://doi.org/10.3390/plants9050655) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Lochner_2016_5_HT3_current](drugs/drug_hyoscyamine/pd_Lochner_2016_5_HT3_current.md) | 5-HT3 receptor current ← scopolamine · direct sigmoid Emax (Hill) effect | — | Lochner M et al., The muscarinic antagonists scopolamine…, Neuropharmacology (2016) | [10.1016/j.neuropharm.2016.04.027](https://doi.org/10.1016/j.neuropharm.2016.04.027) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Salleh_2013_unknown](drugs/drug_hyoscyamine/pd_Salleh_2013_unknown.md) | uterine contraction tension ← Ficus deltoidea aqueous extract · stimulation effect | — | Salleh N et al., In-VITRo effect of Ficus deltoidea on t…, BMC complementary and alter… (2013) | [10.1186/1472-6882-13-359](https://doi.org/10.1186/1472-6882-13-359) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Verspohl_1990_unknown](drugs/drug_hyoscyamine/pd_Verspohl_1990_unknown.md) | glucagon secretion ← arecaidine propargyl ester · direct Emax (saturable) effect | — | Verspohl EJ et al., Muscarinic receptor subtypes in rat pan…, European journal of pharmac… (1990) | [10.1016/0014-2999(90)90109-j](https://doi.org/10.1016/0014-2999(90)90109-j) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Naguib_1989_HR](drugs/drug_hyoscyamine/pd_Naguib_1989_HR.md) | heart rate ← atropine · stimulation effect | — | Naguib M et al., Atropine-neostigmine mixture: a dose-re…, Canadian journal of anaesth… (1989) | [10.1007/BF03005340](https://doi.org/10.1007/BF03005340) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span> | [Rahbar_2016_fV](drugs/drug_hyoscyamine/pd_Rahbar_2016_fV.md) | ventilation frequency ← unknown · direct Emax (saturable) effect | — | Rahbar S et al., Purinergic and Cholinergic Drugs Mediat…, PloS one (2016) | [10.1371/journal.pone.0154261](https://doi.org/10.1371/journal.pone.0154261) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Kabir_2022_C_parvum_growth](drugs/drug_hyoscyamine/pd_Kabir_2022_C_parvum_growth.md) | C. parvum growth ← atropine sulfate · direct sigmoid Emax (Hill) effect | — | Kabir MHB et al., Identification of potent anti-Cryptospo…, PLoS neglected tropical dis… (2022) | [10.1371/journal.pntd.0010947](https://doi.org/10.1371/journal.pntd.0010947) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Hirschowitz_1984_acid_secretion](drugs/drug_hyoscyamine/pd_Hirschowitz_1984_acid_secretion.md) | acid secretion ← atropine · direct Emax (saturable) effect | — | Hirschowitz BI et al., Effects of very low doses of atropine o…, Digestive diseases and scie… (1984) | [10.1007/BF01318420](https://doi.org/10.1007/BF01318420) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Hirschowitz_1984_heart_rate](drugs/drug_hyoscyamine/pd_Hirschowitz_1984_heart_rate.md) | heart rate ← atropine · direct Emax (saturable) effect | — | Hirschowitz BI et al., Effects of very low doses of atropine o…, Digestive diseases and scie… (1984) | [10.1007/BF01318420](https://doi.org/10.1007/BF01318420) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Hirschowitz_1984_pepsin_secretion](drugs/drug_hyoscyamine/pd_Hirschowitz_1984_pepsin_secretion.md) | pepsin secretion ← atropine · direct Emax (saturable) effect | — | Hirschowitz BI et al., Effects of very low doses of atropine o…, Digestive diseases and scie… (1984) | [10.1007/BF01318420](https://doi.org/10.1007/BF01318420) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Naguib_1989_HR](drugs/drug_hyoscyamine/pd_Naguib_1989_HR.md) | heart rate ← atropine · direct linear effect | — | Naguib M et al., Atropine-neostigmine mixture: a dose-re…, Canadian journal of anaesth… (1989) | [10.1007/BF03005340](https://doi.org/10.1007/BF03005340) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Naguib_1989_presence_or_absence_of_an_increase_in_heart_rate_from_the_control_value](drugs/drug_hyoscyamine/pd_Naguib_1989_presence_or_absence_of_an_increase_in_heart_rate.md) | presence or absence of an increase in heart rate from the control value ← atropine · categorical (graded) response model | — | Naguib M et al., Atropine-neostigmine mixture: a dose-re…, Canadian journal of anaesth… (1989) | [10.1007/BF03005340](https://doi.org/10.1007/BF03005340) |
 
 ## ADME sites
 
@@ -48,8 +41,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…completely absorbed by sublingual and oral routes…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated in the urine as the unmetabolized parent compound…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADCY1 (inhibitor), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
 
@@ -109,7 +102,7 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Labbé_1999.pdf` | Labbé L et al., Clinical pharmacokinetics of mexiletine, Clinical pharmacokinetics (1999) | pgx | 7 | [10.2165/00003088-199937050-00002](https://doi.org/10.2165/00003088-199937050-00002) | [10589372](https://www.ncbi.nlm.nih.gov/pubmed/10589372) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Kersten_2014.pdf` | Kersten H et al., Association between inherited CYP2D6/2C…, Therapeutic drug monitoring (2014) | pgx | 5 | [10.1097/FTD.0b013e31829da990](https://doi.org/10.1097/FTD.0b013e31829da990) | [24089073](https://www.ncbi.nlm.nih.gov/pubmed/24089073) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-18T11:07:06.374524+00:00</sub>
+<sub>queue written 2026-10-04T13:21:50.340481+00:00</sub>
 
 ## Screened and excluded
 
@@ -120,24 +113,24 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Bafor_2010 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of a plant extract (Newbouldia laevis) and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | popPK | Balakrishnan_2014 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of midazolam and atropine on hippocampal theta oscillations and does not involve hyoscyamine or pharmacokinetic parameter estimation. |
 | PD | Barilan_2003 | not_relevant | 4 | 3 | The paper reports a dose-response relationship for beta-agonists (isoproterenol/salbutamol) in the presence of muscarinic antagonists, but it does not report a PD relationship for hyoscyamine itself, nor does it provide numeric PD parameters (like EC50 values) for hyoscyamine. |
-| popPK | Batty_1993 | irrelevant | 0 | 0 | The paper studies inositol uptake in astrocytoma cells and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Batty_1993 | irrelevant | 0 | 0 | The paper studies inositol uptake in astrocytoma cells and does not involve hyoscyamine pharmacokinetics. |
 | PD | Batty_1993 | not_relevant | 0 | 0 | The paper studies inositol uptake in astrocytoma cells and does not mention hyoscyamine or report any pharmacodynamic parameters for it. |
 | PD | Bayliss_1999 | not_relevant | 0 | 0 | The paper studies atropine-resistant contractions in human detrusor muscle and reports EC50 values for carbachol and ATP, but it does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PGx | Beckmann-Knopp_1999 | not_relevant | 0 | 0 | The paper studies the CYP inhibition potential of trospium chloride, not the pharmacogenomics of hyoscyamine. |
 | PD | Berry_1996 | not_relevant | 0 | 0 | The paper studies the dose-response of cholecystokinin (CCK) and the effects of atropine/denervation, but does not report a pharmacodynamic or exposure-response relationship for hyoscyamine. |
 | PGx | Calaf_2021 | not_relevant | 0 | 0 | The paper discusses breast carcinogenesis involving pesticides and acetylcholine, not the pharmacokinetics or pharmacodynamics of hyoscyamine. |
 | PD | Calzetta_2013 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of RPL554, not hyoscyamine. |
-| popPK | Campos_2020 | irrelevant | 0 | 0 | The paper is a pharmacological study on aortic contractions in tortoises and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Campos_2020 | irrelevant | 0 | 0 | The study investigates vascular physiology in tortoises and does not involve hyoscyamine or pharmacokinetic parameters. |
 | PD | Campos_2020 | not_relevant | 0 | 0 | The paper investigates the role of the endothelium in electrical field stimulation-induced contractions using various pharmacological blockers, but it does not report a concentration-effect or dose-response relationship for hyoscyamine. |
-| popPK | Capacio_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of diazepam, not hyoscyamine. |
-| popPK | Chan_2021 | irrelevant | 0 | 0 | The paper is a phytochemical study on tropane alkaloids from a plant, reporting cytotoxicity and pharmacological effects, but contains no pharmacokinetic parameters for hyoscyamine. |
+| popPK | Capacio_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of diazepam in guinea pigs, not hyoscyamine. |
+| popPK | Chan_2021 | irrelevant | 0 | 0 | The paper is a phytochemical study on tropane alkaloids from a plant, reporting cytotoxicity and pharmacological effects, but contains no pharmacokinetic data for hyoscyamine. |
 | PD | Chan_2021 | not_relevant | 0 | 0 | The paper reports the isolation and structural elucidation of tropane alkaloids from a plant, not the pharmacodynamics of the specific drug hyoscyamine. |
-| PGx | Chekabab_2026 | not_relevant | 0 | 0 | The paper is a review of pharmacogenomics in military medicine focusing on nerve agents and tularemia treatments, and does not mention hyoscyamine. |
+| PGx | Chekabab_2026 | not_relevant | 0 | 0 | The paper is a review of pharmacogenomics for chemical warfare agents and bacterial biothreats, and does not report any pharmacokinetic or pharmacodynamic effects of gene variants on hyoscyamine. |
 | PD | Chen_2024 | not_relevant | 2 | 1 | The paper is an umbrella review of atropine (not hyoscyamine) that reports aggregate mean differences for specific concentrations but does not provide a continuous exposure-response curve or specific PD parameters (Emax, EC50) for hyoscyamine. |
 | PD | Chessell_1995 | not_relevant | 0 | 0 | The paper reports concentration-effect data for cholinergic agonists (carbachol, DMPP, muscarine) and antagonists, but does not mention or test hyoscyamine. |
 | popPK | Choi_2022 | irrelevant | 0 | 0 | The study investigates the antinociceptive effects of Rubus occidentalis extract in rats and does not involve hyoscyamine or report any pharmacokinetic parameters. |
-| popPK | Choi_2023 | irrelevant | 0 | 0 | The study investigates the analgesic effects of Rubus occidentalis extract in rats and does not involve hyoscyamine or report any pharmacokinetic parameters. |
-| popPK | Choppin_2001 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study of muscarinic receptors in dog ciliary and bladder muscle, not a pharmacokinetic study of hyoscyamine. |
+| popPK | Choi_2023 | irrelevant | 0 | 0 | The study investigates the analgesic effects of Rubus occidentalis extract in rats and does not involve hyoscyamine or report any pharmacokinetic parameters for it. |
+| popPK | Choppin_2001 | irrelevant | 0 | 0 | The study is a pharmacological characterization of muscarinic receptors in dog tissue and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Choppin_2001 | not_relevant | 0 | 0 | The paper characterizes muscarinic receptors in dog smooth muscle using cis-dioxolane and various antagonists, but does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PD | Colecraft_1998 | not_relevant | 0 | 0 | The paper investigates muscarinic receptor signaling mechanisms using carbachol and oxotremorine, not hyoscyamine. |
 | popPK | Cook_1987 | irrelevant | 0 | 0 | no_text gate: only 64 chars of text extracted (&lt; 400) |
@@ -147,16 +140,16 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Dehaye_1988 | not_relevant | 0 | 0 | The paper characterizes muscarinic receptors using carbamylcholine and antagonists (atropine, pirenzepine, etc.) but does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PGx | Dey_2025 | not_relevant | 0 | 0 | The paper focuses on drug target identification for Parkinson's disease and does not report pharmacogenomic effects on the PK/PD of hyoscyamine. |
 | popPK | Ekstrand_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine in horses, not hyoscyamine. |
-| popPK | Ellinwood_1990 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of atropine, not hyoscyamine. |
-| popPK | Emami_2017 | irrelevant | 0 | 0 | The paper investigates the pharmacological effects of Curcuma longa (turmeric) on rat tracheal smooth muscle and does not study hyoscyamine or report any pharmacokinetic parameters. |
+| popPK | Ellinwood_1990 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine, not hyoscyamine. |
+| popPK | Emami_2017 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of Curcuma longa on rat tracheal smooth muscle and does not involve hyoscyamine or pharmacokinetic parameters. |
 | PD | Emami_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of Curcuma longa (turmeric), not hyoscyamine. |
-| popPK | Emami_2020 | irrelevant | 0 | 0 | The paper investigates the pharmacological relaxant effects of curcumin on rat tracheal smooth muscle and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Emami_2020 | irrelevant | 0 | 0 | The study investigates the pharmacological relaxant effects of curcumin on rat tracheal smooth muscle and does not involve hyoscyamine or pharmacokinetic parameters. |
 | PD | Emami_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of curcumin, not hyoscyamine. |
 | PD | Eterović_2011 | not_relevant | 0 | 0 | The paper reports PD parameters for a cembranoid (4R,6R-cembratrienediol) and mentions atropine/pralidoxime, but does not report any exposure-response or dose-response relationship for hyoscyamine. |
 | popPK | Faisal_2020 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
 | PD | Faisal_2020 | not_relevant | 0 | 0 | The paper focuses on azithromycin, not hyoscyamine. |
 | PD | Fan_1994 | not_relevant | 0 | 0 | The paper studies the effect of atropine on serotonin receptors, not the pharmacodynamics of hyoscyamine. |
-| popPK | Felder_1989 | irrelevant | 0 | 0 | The paper is a mechanistic cell biology study on muscarinic receptors and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Felder_1989 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell transformation and receptor signaling, containing no pharmacokinetic data for hyoscyamine. |
 | PD | Ford_1992 | not_relevant | 0 | 0 | The paper studies muscarinic receptors in guinea pig cardiac muscle and does not mention hyoscyamine or report any pharmacodynamic parameters for it. |
 | PGx | Gallagher_2016 | not_relevant | 0 | 0 | The paper studies pralidoxime, not hyoscyamine, and does not report pharmacogenomic effects. |
 | PD | Glaza_2011 | not_relevant | 0 | 0 | The paper reports concentration-effect data for carbachol and antagonists (atropine, pirenzepine), but does not report any pharmacodynamic parameters or exposure-response relationship for hyoscyamine. |
@@ -168,23 +161,23 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Harris_1968 | not_relevant | 0 | 0 | The paper discusses atropine in Down's syndrome, not hyoscyamine. |
 | popPK | He_2026 | irrelevant | 0 | 0 | The study investigates the effect of atropine on choroidal thickness in children and does not report pharmacokinetic parameters for hyoscyamine. |
 | popPK | Hinderling_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine, not hyoscyamine. |
-| popPK | Hoffmann_2008 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the pesticide pirimicarb, not hyoscyamine. |
+| popPK | Hoffmann_2008 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the pesticide pirimicarb, not hyoscyamine. |
 | PD | Huang_2003 | not_relevant | 2 | 1 | The paper reports receptor binding constants (pKi) and qualitative duration of action comparisons, but does not provide a concentration-effect or dose-response curve with numeric PD parameters (e.g., Emax, EC50) for hyoscyamine or the new compounds. |
-| popPK | Huidobro-Toro_1981 | irrelevant | 0 | 0 | The paper studies the contractile effects of opioids on isolated rat colon and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Huidobro-Toro_1981 | irrelevant | 0 | 0 | The study investigates the contractile effects of opioids on rat colon tissue and does not involve hyoscyamine or pharmacokinetic parameters. |
 | PD | Huidobro-Toro_1981 | not_relevant | 0 | 0 | The paper studies morphine and related opioids, not hyoscyamine. |
 | PGx | Hussain_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of Berberis lycium extract and does not report any pharmacogenomic effects on the PK or PD of hyoscyamine. |
-| popPK | Ince_2011 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of boric acid on rat ileum contractions and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Ince_2011 | irrelevant | 0 | 0 | The study investigates the effect of boric acid on rat ileum contractions and does not involve hyoscyamine or pharmacokinetic parameters. |
 | PD | Ince_2011 | not_relevant | 0 | 0 | The paper studies the effect of boric acid on rat ileum contractions and does not mention hyoscyamine or report any PD parameters for it. |
 | PD | Ishitani_1994 | not_relevant | 0 | 0 | The paper investigates the pharmacology of tryptamine, not hyoscyamine. |
 | PGx | Ivancheva_2002 | not_relevant | 0 | 0 | The paper studies the pharmacology of Met-enkephalin on guinea-pig intestinal muscle and does not involve hyoscyamine or any pharmacogenomic analysis. |
 | PGx | JOERGENSEN_1964 | not_relevant | 0 | 0 | The provided text contains only a category label and no actual content regarding hyoscyamine or pharmacogenomic effects. |
-| popPK | Jain_2012 | irrelevant | 0 | 0 | The study is an ex vivo pharmacological assay using acetylcholine and atropine, not a pharmacokinetic study of hyoscyamine. |
+| popPK | Jain_2012 | irrelevant | 0 | 0 | The study focuses on ex vivo pharmacological assays of acetylcholine and atropine, not the pharmacokinetics of hyoscyamine. |
 | PD | Jain_2012 | not_relevant | 0 | 0 | The paper reports dose-response relationships for acetylcholine and atropine, not hyoscyamine. |
 | PD | Jiang_2026 | not_relevant | 2 | 1 | The paper is a qualitative review of atropine mechanisms and dose-response concepts without reporting specific numeric PD parameters (e.g., EC50, Emax) or extractable concentration-effect curves. |
 | popPK | Jones_1982 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Jones_1982 | not_relevant | 0 | 0 | The paper studies the contractile activity of leukotrienes C4 and D4, not hyoscyamine. |
-| popPK | Kabir_2022 | irrelevant | 0 | 0 | The paper is an anti-parasitic efficacy study on Cryptosporidium and does not report pharmacokinetic parameters for hyoscyamine. |
-| popPK | Kakehata_1993 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on guinea-pig cochlear hair cells investigating acetylcholine mechanisms and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Kabir_2022 | irrelevant | 0 | 0 | The study investigates the anti-Cryptosporidium efficacy of traditional Chinese medicine compounds (including atropine) in mice and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Kakehata_1993 | irrelevant | 0 | 0 | The study investigates the cellular mechanism of acetylcholine-induced currents in guinea-pig cochlear hair cells and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Kakehata_1993 | not_relevant | 0 | 0 | The paper investigates the cellular mechanism of acetylcholine response in guinea-pig cochlear hair cells and does not involve the drug hyoscyamine. |
 | PGx | Kalser_1971 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of atropine, not hyoscyamine, and does not report pharmacogenomic effects. |
 | popPK | Kanto_1981 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine, not hyoscyamine. |
@@ -192,42 +185,42 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Kerr_1995 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
 | PGx | Kersten_2014 | not_relevant | 0 | 0 | The study investigates the effect of CYP2D6/2C19 genotypes on serum anticholinergic activity in patients using various anticholinergic drugs, but it does not specifically report pharmacokinetic or pharmacodynamic parameters for hyoscyamine. |
 | popPK | Kim_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dexmedetomidine, not hyoscyamine. |
-| popPK | Kimura_1994 | irrelevant | 0 | 0 | The paper investigates the pharmacodynamic effects of higenamine and aconitine on murine atria and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Kimura_1994 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of higenamine and aconitine on murine atria and does not involve hyoscyamine or its pharmacokinetics. |
 | PD | Kimura_1994 | not_relevant | 0 | 0 | The paper investigates higenamine and aconitine, not hyoscyamine. |
 | popPK | Kitazawa_1998 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Kitazawa_1998 | not_relevant | 0 | 0 | The paper investigates the pharmacology of 5-hydroxytryptamine (serotonin) on porcine myometrium, not hyoscyamine. |
 | PD | Kiyanmehr_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of Ferula assafoetida on muscarinic receptors and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
-| popPK | Kousar_2022 | irrelevant | 0 | 0 | The study investigates the antihypertensive effects of tartaric acid and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Kousar_2022 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of tartaric acid in rats and does not involve hyoscyamine or its pharmacokinetics. |
 | PD | Kousar_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of tartaric acid, not hyoscyamine. |
-| popPK | Kubota_2017 | irrelevant | 0 | 0 | The study investigates the effect of atropine on salivary flow and does not report pharmacokinetic parameters for hyoscyamine. |
-| popPK | Kume_2018 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on airway smooth muscle receptor crosstalk and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Kubota_2017 | irrelevant | 0 | 0 | The study investigates the effect of atropine on salivary flow and chewing ability, not the pharmacokinetics of hyoscyamine. |
+| popPK | Kume_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor crosstalk in guinea pig airway smooth muscle and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Kume_2018 | not_relevant | 0 | 0 | The paper investigates the pharmacology of beta-2 agonists and muscarinic antagonists (tiotropium, atropine, etc.) in airway smooth muscle, but does not report any data, analysis, or PD parameters for hyoscyamine. |
-| popPK | Küpeli_2020 | irrelevant | 0 | 0 | The paper investigates the insecticidal activity of plant extracts on fly larvae and reports HPLC quantification of alkaloids, but contains no pharmacokinetic data or disposition parameters for hyoscyamine. |
+| popPK | Küpeli_2020 | irrelevant | 0 | 0 | The study investigates the insecticidal activity of plant extracts on fly larvae and reports HPLC quantification of alkaloids, but contains no pharmacokinetic data (CL, V, t1/2) for hyoscyamine. |
 | PGx | Labbé_1999 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of mexiletine, not hyoscyamine. |
 | popPK | Li_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of theophylline in rabbits, not hyoscyamine. |
 | PGx | Li_2016 | not_relevant | 0 | 0 | The study investigates atropine-induced toxicity in rats and does not involve hyoscyamine or pharmacogenomic analysis of PK/PD parameters. |
 | PD | Lochner_2016 | not_relevant | 0 | 0 | The paper investigates scopolamine and atropine, not hyoscyamine, and reports in vitro receptor binding and electrophysiology data rather than in vivo pharmacodynamic exposure-response relationships. |
 | popPK | Long_2014 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
 | PD | Long_2014 | not_relevant | 0 | 0 | The paper focuses on the isolation and structural characterization of amide alkaloids from Scopolia tangutica, not on the pharmacodynamic or exposure-response modeling of hyoscyamine. |
-| popPK | Lü_2020 | irrelevant | 0 | 0 | The paper is a molecular biology study characterizing a muscarinic acetylcholine receptor in an insect, not a pharmacokinetic study of hyoscyamine. |
+| popPK | Lü_2020 | irrelevant | 0 | 0 | The paper is an in-vitro/insect receptor characterization study of a muscarinic acetylcholine receptor in an armyworm, not a pharmacokinetic study of hyoscyamine. |
 | PD | Lü_2020 | not_relevant | 0 | 0 | The paper reports pharmacological properties (EC50/IC50) for an insect muscarinic receptor using carbachol, muscarine, and atropine, but does not report any data or parameters for hyoscyamine. |
 | popPK | Maggi_1992 | irrelevant | 0 | 0 | no_text gate: only 132 chars of text extracted (&lt; 400) |
 | PD | Maggi_1992 | not_relevant | 0 | 0 | The paper focuses on the pharmacological characterization of NK1 receptors in guinea-pig urethra using agonists and antagonists, and does not mention hyoscyamine or report any exposure-response or dose-response data for it. |
 | PD | Maggi_1993 | not_relevant | 0 | 0 | The paper studies the mechanism of NK3 receptor-induced relaxation in guinea-pig ileum and does not mention hyoscyamine or report any exposure-response or dose-response data for it. |
-| popPK | Mans_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract's spasmogenic effects on guinea pig trachea, not a pharmacokinetic study of hyoscyamine. |
-| popPK | Marchiori_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of glycopyrrolate, not hyoscyamine. |
+| popPK | Mans_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract's effect on guinea pig tracheal chains, not a pharmacokinetic study of hyoscyamine. |
+| popPK | Marchiori_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for glycopyrrolate, not hyoscyamine. |
 | popPK | Martin_1992 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
 | PD | Martin_1992 | not_relevant | 0 | 0 | The paper investigates the effects of CP-96,345 and SR 48968 on guinea-pig bronchi, not hyoscyamine. |
 | popPK | McKinney_1989 | irrelevant | 0 | 0 | no_text gate: only 156 chars of text extracted (&lt; 400) |
 | PD | McKinney_1989 | not_relevant | 0 | 0 | The paper focuses on the structural conformations of M1 and M2 muscarinic receptors and their coupling to effector systems, not on the pharmacokinetics or pharmacodynamics of hyoscyamine. |
 | PGx | Melzer_2012 | not_relevant | 0 | 0 | The paper discusses PEGylated DFPase for nerve agent detoxification and does not mention hyoscyamine or any pharmacogenomic effects on its PK/PD parameters. |
-| popPK | Michael_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of aldicarb, not hyoscyamine. |
+| popPK | Michael_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for aldicarb, not hyoscyamine. |
 | PGx | Miller_1995 | not_relevant | 0 | 0 | The study investigates the reversal of mivacurium-induced block with edrophonium and does not involve hyoscyamine or any pharmacogenomic analysis. |
 | popPK | Mirsky_1987 | irrelevant | 0 | 0 | The paper is a hemodynamic study on myocardial stiffness in dogs and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Mirsky_1987 | not_relevant | 0 | 0 | The paper investigates myocardial mechanics and contractility in dogs using various drugs (including atropine) to alter load, but it does not report a pharmacodynamic exposure-response or dose-response relationship for hyoscyamine. |
-| popPK | Moeller_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ketamine, not hyoscyamine. |
+| popPK | Moeller_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketamine, not hyoscyamine. |
 | PD | Montgomery_2016 | not_relevant | 0 | 0 | The text describes a teaching lab protocol for ACh, epinephrine, and atropine, and does not report any data or PD parameters for hyoscyamine. |
-| popPK | Moore_1991 | irrelevant | 0 | 0 | The study investigates atropine and diazepam in sheep, not hyoscyamine. |
+| popPK | Moore_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine and diazepam in sheep, not hyoscyamine. |
 | popPK | Morais_2019 | irrelevant | 0 | 0 | no_text gate: only 57 chars of text extracted (&lt; 400) |
 | PD | Morais_2019 | not_relevant | 0 | 0 | The paper investigates the cardiovascular effects of diosgenin, not hyoscyamine. |
 | PD | Mori_1994 | not_relevant | 0 | 0 | The paper studies muscarinic receptor modulators (atropine, pirenzepine, etc.) in rats, not hyoscyamine. |
@@ -235,37 +228,37 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Morris_2007 | not_relevant | 0 | 0 | The paper describes a cardiopulmonary bypass simulation system and does not contain any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PD | Moser_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of a plant extract (Plectranthus barbatus) and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PD | Moummi_1992 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of endothelin-1, not hyoscyamine. |
-| popPK | Myers_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity in porcine coronary vessels and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Myers_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of acetylcholine vasoconstriction in porcine coronary microvessels and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Myers_1991 | not_relevant | 0 | 0 | The paper investigates the pharmacology of acetylcholine in porcine coronary vessels and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PGx | Müller_1993 | not_relevant | 0 | 0 | The study investigates propiverine, not hyoscyamine. |
 | popPK | Müller_2012 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Müller_2012 | not_relevant | 0 | 0 | The paper focuses on methantheline and atropine, not hyoscyamine, and does not report PD parameters for the target drug. |
 | popPK | Nilsen_2024 | irrelevant | 0 | 0 | The study investigates the effect of topical atropine on ocular dimensions and diurnal rhythms, not the pharmacokinetics of hyoscyamine. |
-| popPK | Norberg_1986 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on pig parietal cells and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Norberg_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of acid secretion in pig parietal cells and does not report pharmacokinetic parameters for hyoscyamine. |
 | PGx | Nunn_2013 | not_relevant | 0 | 0 | The paper investigates the cardiovascular phenotype of Gnasxl knock-out mice and their response to reserpine, atropine, and exendin-4, but does not study hyoscyamine. |
 | PGx | Nwokocha_2012 | not_relevant | 0 | 0 | The paper investigates the pharmacological mechanisms of a plant extract (Artocarpus altilis) and its CYP inhibition, but does not study hyoscyamine or any pharmacogenomic effects on its PK/PD parameters. |
 | PD | Onali_1983 | not_relevant | 0 | 0 | The paper studies acetylcholine and VIP in GH3 cells, not hyoscyamine. |
-| popPK | Page_2016 | irrelevant | 0 | 0 | The study focuses on levetiracetam overdose and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Page_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for levetiracetam, not hyoscyamine. |
 | PD | Papazoglou_1995 | not_relevant | 0 | 0 | The paper studies xylazine, not hyoscyamine. |
 | PD | Paredes-Gamero_2010 | not_relevant | 0 | 0 | The paper investigates the mechanism of heparin-induced vasodilation and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
-| popPK | Park_2026 | irrelevant | 0 | 0 | The paper is a clinical study on myopia progression in children and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Park_2026 | irrelevant | 0 | 0 | The paper is a clinical study on myopia progression in children and does not contain any pharmacokinetic data for hyoscyamine. |
 | popPK | Parrot_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine, not hyoscyamine. |
-| popPK | Patil_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of iris-sphincter reactivity to muscarinic drugs and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Patil_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of iris-sphincter reactivity to muscarinic drugs, not a pharmacokinetic study of hyoscyamine. |
 | PGx | Peters_2018 | not_relevant | 0 | 0 | The paper discusses irinotecan and potential drug interactions, but does not report any pharmacogenomic effects on hyoscyamine. |
-| popPK | Pettit_1976 | irrelevant | 0 | 0 | The study focuses on fructose pharmacokinetics and gastric emptying in monkeys, not hyoscyamine. |
-| popPK | Pinna_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of substance P and capsaicin in diabetic rats and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Pettit_1976 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fructose in rhesus monkeys, not hyoscyamine. |
+| popPK | Pinna_1995 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of substance P and capsaicin in diabetic rats, containing no pharmacokinetic data for hyoscyamine. |
 | PD | Pinna_1995 | not_relevant | 0 | 0 | The paper studies the effects of substance P and capsaicin on diabetic rat tissues, not hyoscyamine. |
 | PD | Pérez-González_2025 | not_relevant | 3 | 2 | The paper reports ED50 values for plant extracts (Brugmansia arborea) in anti-inflammatory models, not for the specific drug hyoscyamine, and does not provide a concentration-effect curve or PK/PD model for hyoscyamine. |
 | PD | Rahbar_2016 | not_relevant | 0 | 0 | The paper reports dose-response relationships for nicotine, atropine, suramin, and A-317491, but does not contain any data or parameters for hyoscyamine. |
-| popPK | Rajani_1988 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on receptor sites in rat muscle and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Rajani_1988 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor sites in rat muscle and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Rajani_1988 | not_relevant | 0 | 0 | The paper investigates receptor pharmacology of dopamine, ACh, and 5-HT in rat muscle and does not mention hyoscyamine or report any exposure-response relationship for it. |
 | PD | Renner_2005 | not_relevant | 2 | 0 | The text is a review that qualitatively mentions a correlation between scopolamine concentrations and EEG changes but does not provide any numeric PD parameters, dose-response curves, or specific effect magnitudes. |
-| popPK | Reynaerts_2022 | irrelevant | 0 | 0 | The study focuses on sweat rate testing using pilocarpine, isoproterenol, and aminophylline, and does not report pharmacokinetic parameters for hyoscyamine. |
-| popPK | Roberts_1985 | irrelevant | 0 | 0 | The study focuses on airway responsiveness to histamine and the effect of atropine, not the pharmacokinetics of hyoscyamine. |
+| popPK | Reynaerts_2022 | irrelevant | 0 | 0 | The study focuses on sweat rate testing using pilocarpine, isoproterenol, and aminophylline, and does not involve hyoscyamine or its pharmacokinetics. |
+| popPK | Roberts_1985 | irrelevant | 0 | 0 | The study investigates airway responsiveness to histamine and the effect of atropine, not the pharmacokinetics of hyoscyamine. |
 | PD | Roberts_1985 | not_relevant | 0 | 0 | The paper studies the effect of atropine on histamine responsiveness, not the pharmacodynamics of hyoscyamine. |
 | PD | Saarnivaara_1985 | not_relevant | 3 | 2 | The paper reports qualitative correlations and descriptive PK/PD data for atropine (not hyoscyamine) but does not provide numeric PD parameters (Emax, EC50) or a defined concentration-effect curve. |
 | PD | Sadek_2004 | not_relevant | 0 | 0 | The paper investigates the pharmacology of imidazole-type histamine H3-receptor antagonists (proxifans), not hyoscyamine. |
-| popPK | Saeideh_2019 | irrelevant | 0 | 0 | The paper investigates the pharmacological mechanism of crocin on rat tracheal smooth muscle and does not involve hyoscyamine or report any pharmacokinetic parameters. |
+| popPK | Saeideh_2019 | irrelevant | 0 | 0 | The study investigates the pharmacological relaxant effects of crocin on rat tracheal smooth muscle and does not involve hyoscyamine or any pharmacokinetic parameters. |
 | PD | Saeideh_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of crocin, not hyoscyamine. |
 | PD | Saetrum_1996 | not_relevant | 0 | 0 | The paper studies isolated human coronary vessels and does not mention hyoscyamine or report any exposure-response relationship for it. |
 | PD | Sakamoto_1989 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of ergonovine and serotonin, not hyoscyamine. |
@@ -276,15 +269,15 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Schuurkes_1985 | not_relevant | 0 | 0 | The paper reports pharmacodynamic parameters for cisapride, not hyoscyamine. |
 | popPK | Schuurkes_1988 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
 | PD | Schuurkes_1988 | not_relevant | 0 | 0 | The paper focuses on the lack of effect of cisapride on guinea-pig ileum and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
-| popPK | Smallwood_1988 | irrelevant | 0 | 0 | The paper studies the cardiac electrophysiological effects of pinacidil and related compounds, not the pharmacokinetics of hyoscyamine. |
+| popPK | Smallwood_1988 | irrelevant | 0 | 0 | The study investigates the cardiac electrophysiological effects of pinacidil and related compounds, not the pharmacokinetics of hyoscyamine. |
 | PD | Smallwood_1988 | not_relevant | 0 | 0 | The paper studies pinacidil and related pyridylcyanoguanidines, not hyoscyamine. |
 | PD | Snider_1986 | not_relevant | 0 | 0 | The paper studies carbachol and atropine in avian salt gland cells, not hyoscyamine. |
-| popPK | Stojković_2024 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of carveol on nematodes and mammals, and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Stojković_2024 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of carveol on nematodes and mammals, not the pharmacokinetics of hyoscyamine. |
 | PD | Stojković_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of carveol, not hyoscyamine. |
-| popPK | Stretton_1989 | irrelevant | 0 | 0 | The paper investigates the pharmacological effects of cholecystokinin-octapeptide on airway smooth muscle and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Stretton_1989 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of cholecystokinin-octapeptide on airway smooth muscle and does not involve hyoscyamine or its pharmacokinetics. |
 | PD | Stretton_1989 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Cholecystokinin-octapeptide (CCK-OP), not hyoscyamine. |
-| popPK | Ström_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for atropine, not hyoscyamine. |
-| popPK | Suganuma_2021 | irrelevant | 0 | 0 | The study investigates lower oesophageal barrier function using atropine, neostigmine, and sugammadex, and does not involve hyoscyamine or report pharmacokinetic parameters. |
+| popPK | Ström_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for atropine in horses, not hyoscyamine. |
+| popPK | Suganuma_2021 | irrelevant | 0 | 0 | The study investigates lower oesophageal barrier function using atropine, neostigmine, and sugammadex, and does not involve hyoscyamine or report any pharmacokinetic parameters. |
 | PD | Taha_2022 | not_relevant | 0 | 0 | The paper investigates the effects of heavy metals (lead, cadmium, iron) on detrusor muscle contractility and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PGx | Tardast_2023 | not_relevant | 0 | 0 | The paper discusses the production of atropine in plant callus tissue using plasma treatment, not the pharmacokinetics or pharmacodynamics of hyoscyamine in humans. |
 | PGx | Tardast_2023_2 | not_relevant | 0 | 0 | The paper studies the effect of carbon nanotubes on atropine biosynthesis in plants, not the pharmacogenomics of hyoscyamine in humans. |
@@ -292,14 +285,14 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Tkatchenko_2019 | not_relevant | 0 | 0 | The paper is a review on antimyopia drug development and does not report pharmacogenomic effects on hyoscyamine. |
 | PGx | Tripathy_2026 | not_relevant | 0 | 0 | The paper discusses antidotes for nerve agents and does not mention hyoscyamine or any pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Ullrich_2016 | not_relevant | 0 | 0 | The paper analyzes plant metabolite profiles and alkaloid content in Duboisia species, not human pharmacogenomics or PK/PD parameters of hyoscyamine. |
-| popPK | Verspohl_1990 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding and functional study on rat pancreatic islets, not a pharmacokinetic study, and reports no disposition parameters for hyoscyamine. |
+| popPK | Verspohl_1990 | irrelevant | 0 | 0 | The study is an in vitro receptor binding and functional assay in rat pancreatic islets, not a pharmacokinetic study of hyoscyamine. |
 | PD | Wakamori_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacology of acetylcholine (ACh) and muscarinic receptors in rat hippocampal neurons, not the drug hyoscyamine. |
 | PD | Watcho_2011 | not_relevant | 0 | 0 | The paper investigates the uterotonic activity of Ficus asperifolia extracts, not hyoscyamine. |
-| popPK | Watson_1994 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on guinea-pig trachea focusing on muscarinic and beta-adrenoceptor interactions, containing no pharmacokinetic data for hyoscyamine. |
+| popPK | Watson_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of muscarinic and beta-adrenoceptor interactions in guinea-pig trachea, not a pharmacokinetic study of hyoscyamine. |
 | PD | Watson_1994 | not_relevant | 0 | 0 | The paper investigates muscarinic receptor interactions on isoprenaline potency in guinea-pig trachea and does not mention or report any pharmacokinetic or pharmacodynamic data for hyoscyamine. |
-| popPK | Webb_1995 | irrelevant | 0 | 0 | The paper is a mechanistic study on muscarinic agonists in chick atria and does not involve hyoscyamine or pharmacokinetic parameters. |
-| popPK | Whatham_2019 | irrelevant | 0 | 0 | The study investigates the effects of atropine on eye growth in monkeys and does not involve hyoscyamine or pharmacokinetic parameters. |
-| popPK | Wu_2022 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of dehydroabietic acid derivatives as vasodilatory agents and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Webb_1995 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of muscarinic agonists on chick atria and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Whatham_2019 | irrelevant | 0 | 0 | The study investigates the effects of atropine on eye growth in marmosets and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | The paper studies dehydroabietic acid derivatives as vasodilators and does not report pharmacokinetic parameters for hyoscyamine. |
 | PD | Wu_2022 | not_relevant | 0 | 0 | The paper reports PD parameters (Emax, EC50) for a dehydroabietic acid derivative (Compound D1), not for hyoscyamine. |
 | PD | Xia_2016 | not_relevant | 0 | 0 | The paper describes the characterization of a novel insect muscarinic receptor and does not report any pharmacodynamic or exposure-response data for hyoscyamine. |
 | PD | Xu_2022 | not_relevant | 0 | 0 | The paper describes an analytical method (immunochromatographic assay) for detecting hyoscyamine, not a pharmacodynamic or exposure-response study in biological systems. |
@@ -307,10 +300,10 @@ _36 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Xu_2024 | not_relevant | 0 | 0 | The paper investigates the PD of propofol and dexmedetomidine, not hyoscyamine. |
 | popPK | Yam_2016 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
 | PD | Yam_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of vasorelaxation induced by eupatorin, not hyoscyamine, and does not report any pharmacodynamic parameters for the target drug. |
-| popPK | Yamamoto_1991 | irrelevant | 0 | 0 | The paper studies the pharmacological effects of a plant extract (Ageratum conyzoides) and does not report pharmacokinetic parameters for hyoscyamine. |
+| popPK | Yamamoto_1991 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract (Ageratum conyzoides) and does not involve hyoscyamine or report any pharmacokinetic parameters. |
 | PD | Yamamoto_1991 | not_relevant | 0 | 0 | The paper studies the pharmacological activity of a plant extract (Ageratum conyzoides), not the drug hyoscyamine. |
 | PD | Zagorodnyuk_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacology of tachykinin NK1/NK2 receptors in guinea-pig colon and does not mention hyoscyamine or report any exposure-response relationship for it. |
-| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper is a study on ocular morphology in myopia control using red light therapy and atropine, and does not involve hyoscyamine or pharmacokinetic parameters. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The study investigates ocular morphology in myopic children using red light therapy and atropine, and does not involve hyoscyamine or pharmacokinetic parameters. |
 | PGx | von_1996 | not_relevant | 0 | 0 | The paper studies lymphatic vessel physiology and nitric oxide signaling in guinea pigs, with no mention of hyoscyamine or pharmacogenomics. |
 
 ---

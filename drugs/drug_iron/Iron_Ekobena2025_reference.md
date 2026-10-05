@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11A&quot;,&quot;href&quot;:&quot;atc/A11A.md&quot;},{&quot;label&quot;:&quot;Iron&quot;,&quot;href&quot;:&quot;drugs/drug_iron/&quot;},{&quot;label&quot;:&quot;Ekobena_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iron_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iron/Iron_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Iron_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iron/Iron_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iron_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iron/Iron_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Iron_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iron/Iron_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Iron_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iron/Iron_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Iron_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iron/Iron_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Iron — `Iron_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,18 +17,20 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The iron model was held back because the builder assumed bioavailability F=1 and Fm=1 with no molar correction, making the apparent clearance 0.504 L/h and other parameters apparent rather than absolute.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+The record for iron (one-compartment, oral) reports CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h and kabs 2.6 h−1, but the model builder substituted F=1, Fm=1 and no molar correction, an assumption the adjudication judged not acceptable. A second reader also disagreed on several extracted values, reading the absorption rate constant as 0.64 h−1 instead of 2.6 h−1 and reporting values of 22 and 27 where the record has none, while leaving 0.504, 124, 2781, 61 and 1.3 unread. Extracted — iron: CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h, kabs 2.6 h−1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
 
 ## Model component
-<dbs-pgx drug="Iron" model-id="Iron_Ekobena2025_reference" status="curated_candidate" stale="false" population="" measured-compound="iron" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Iron" model-id="Iron_Ekobena2025_reference" status="needs_review" stale="false" population="" measured-compound="iron" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -36,6 +38,8 @@ Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of ant
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 0.504 | L/h | 1.4e-07 | L/h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
@@ -64,15 +68,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` | 124 | 22 | mismatch |
+| `gpt-oss:120b` | `values[Q312]` | 124 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q314]` | not captured | 22 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q316]` | not captured | 27 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q37]` | 2781 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q40]` | 61 | not captured | only_one_extracted |
@@ -117,7 +122,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=iron) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -138,10 +143,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_modelica.zip" download>Iron_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_fmi.zip" download>Iron_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_modelica.zip" download>Iron_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_fmi.zip" download>Iron_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_matlab.zip" download>Iron_Ekobena2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_matlab_simbio.zip" download>Iron_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_matlab_simbio.zip" download>Iron_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_sbml.zip" download>Iron_Ekobena2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_cellml.zip" download>Iron_Ekobena2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
@@ -151,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 50 mg, single dose, first-order absorption (ka 2.6 /h, lag 14.1 min, F 1). Dose in the paper: 50 mg.
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.6 /h, lag 14.1 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference_sim_controls.json"></dbs-fmusim>
 
@@ -160,4 +165,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 02:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 04:10 UTC</sub>

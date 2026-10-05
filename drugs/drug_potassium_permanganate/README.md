@@ -8,6 +8,12 @@
 - **molar mass:** 158.032 g/mol (KMnO4) — DrugBank
 - **groups:** investigational
 
+## About
+
+Potassium permanganate is an antiseptic and disinfectant used on the skin, and it also serves as an antidote. It is listed as an essential medicine, but is currently considered investigational rather than an established approved treatment.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q190865](https://www.wikidata.org/wiki/Q190865) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

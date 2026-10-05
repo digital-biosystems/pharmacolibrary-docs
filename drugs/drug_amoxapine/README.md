@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Amoxapine, the <i>N</i>-demethylated derivative of the antipsychotic agent loxapine, is a dibenzoxazepine-derivative tricyclic antidepressant (TCA). TCAs are structurally similar to phenothiazines. They contain a tricyclic ring system with an alkyl amine substituent on the central ring. In non-depressed individuals, amoxapine does not affect mood or arousal, but may cause sedation. In depressed individuals, amoxapine exerts a positive effect on mood. TCAs are potent inhibitors of serotonin and norepinephrine reuptake. In addition, TCAs down-regulate cerebral cortical &beta;-adrenergic receptors and sensitize post-synaptic serotonergic receptors with chronic use. The antidepressant effects of TCAs are thought to be due to an overall increase in serotonergic neurotransmission. TCAs also block histamine H<sub>1</sub> receptors, &alpha;<sub>1</sub>-adrenergic receptors and muscarinic receptors, which accounts for their sedative, hypotensive and anticholinergic effects (e.g. blurred vision, dry mouth, constipation, urinary retention), respectively. See toxicity section below for a complete listing of side effects. Amoxapine may be used to treat neurotic and reactive depressive disorders, endogenous and psychotic depression, and mixed symptoms of depression and anxiety or agitation.
+Amoxapine is an antidepressant used for major depressive disorder and related conditions such as psychosis and neurotic disorders. It is an approved medicine, mainly used in the United States, and carries a boxed warning.
 
-**Indication.** For the relief of symptoms of depression in patients with neurotic or reactive depressive disorders as well as endogenous and psychotic depressions. May also be used to treat depression accompanied by anxiety or agitation.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q58356](https://www.wikidata.org/wiki/Q58356) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,12 +30,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly and almost completely absorbed from the GI tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ORM1` unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…7-18% of the dose is excrete feces mainly as unconjugated metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in urine, principally as conjugated metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

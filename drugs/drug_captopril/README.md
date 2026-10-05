@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Captopril is a potent, competitive inhibitor of angiotensin-converting enzyme (ACE), the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII). ATII regulates blood pressure and is a key component of the renin-angiotensin-aldosterone system (RAAS). Captopril may be used in the treatment of hypertension.
+Captopril is an ACE inhibitor used to treat high blood pressure and congestive heart failure, and has also been used for conditions such as Raynaud disease and rheumatoid arthritis. It is an approved medicine and remains in use, generally as an oral antihypertensive, though it carries a boxed warning.
 
-**Indication.** For the treatment of essential or renovascular hypertension (usually administered with other drugs, particularly thiazide diuretics). May be used to treat congestive heart failure in combination with other drugs (e.g. cardiac glycosides, diuretics, &beta;-adrenergic blockers). May improve survival in patients with left ventricular dysfunction following myocardial infarction. May be used to treat nephropathy, including diabetic nephropathy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421119](https://www.wikidata.org/wiki/Q421119) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

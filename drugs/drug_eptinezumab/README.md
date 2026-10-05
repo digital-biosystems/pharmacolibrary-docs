@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Eptinezumab is a fully-humanized IgG1 antibody manufactured using yeast (_Pichia pastoris_) and developed by Lundbeck Seattle Biopharmaceuticals.[L12318] Eptinezumab has been specifically designed to bind to both alpha and beta forms of the human calcitonin gene-related peptide (CGRP).[F94,A33105,A33106,A33108] It was approved by the FDA in February 2020 for the preventive treatment of migraine headaches in adults.[L12318]
+Eptinezumab is a monoclonal antibody used to prevent migraine attacks. It is an authorised medicine in the European Union and is also approved elsewhere, given as an infusion by healthcare professionals.
 
-**Indication.** Eptinezumab is indicated for the preventive treatment of migraine in adults.[L12318]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q28208949](https://www.wikidata.org/wiki/Q28208949) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

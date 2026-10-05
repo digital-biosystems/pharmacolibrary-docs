@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Regadenoson is an A2A adenosine receptor agonist that causes coronary vasodilation and used for myocardial perfusion imagining. Manufactured by Astellas and FDA approved April 10, 2008.
+Regadenoson is a cardiac drug used to help with myocardial perfusion imaging, a heart scan that shows blood flow to the heart muscle. It is an approved medicine, with one product authorised in the European Union, and is also being studied for other uses.
 
-**Indication.** Diagnostic agent for radionuclide myocardial perfusion imaging (MPI)
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7307897](https://www.wikidata.org/wiki/Q7307897) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…58% of total regadenoson eliminate is via renal excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADORA2A (target).</sub>
 

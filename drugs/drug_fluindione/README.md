@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Fluindione is under investigation for the treatment of Venous Thrombosis, Pulmonary Embolism, Permanent Atrial Fibrillation, and Anticoagulating Treatment on a Duration at Least 12-month-old Superior. Fluindione has been investigated for the treatment of Blood Coagulation Disorders.
+Fluindione is a vitamin K antagonist anticoagulant used to prevent blood clots. It has been withdrawn from the market in some countries, though it was historically used as an oral anticoagulant.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3074488](https://www.wikidata.org/wiki/Q3074488) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

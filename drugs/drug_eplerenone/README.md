@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Eplerenone, an aldosterone receptor antagonist similar to spironolactone, has been shown to produce sustained increases in plasma renin and serum aldosterone, consistent with inhibition of the negative regulatory feedback of aldosterone on renin secretion. The resulting increased plasma renin activity and aldosterone circulating levels do not overcome the effects of eplerenone. Eplerenone selectively binds to recombinant human mineralocorticoid receptors relative to its binding to recombinant human glucocorticoid, progesterone and androgen receptors.
+Eplerenone is a steroidal antimineralocorticoid used as an adjunct in managing chronic heart failure and to treat arterial hypertension. It is an approved medicine, available as an aldosterone antagonist diuretic, though it carries a boxed warning.
 
-**Indication.** For improvement of survival of stable patients with left ventricular systolic dysfunction (ejection fraction <40%) and clinical evidence of congestive heart failure after an acute myocardial infarction.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423804](https://www.wikidata.org/wiki/Q423804) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

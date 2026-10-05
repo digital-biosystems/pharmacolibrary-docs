@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Selexipag was approved by the United States FDA on December 22, 2015 for the treatment of pulmonary arterial hypertension (PAH) to delay disease progression and reduce risk of hospitalization. PAH is a relatively rare disease with usually a poor prognosis requiring more treatment options to prolong long-term outcomes. Marketed by Actelion Pharmaceuticals under brand name Uptravi, selexipag and its active metabolite, ACT-333679 (MRE-269), act as agonists of the prostacyclin receptor to increase vasodilation in the pulmonary circulation and decrease elevated pressure in the blood vessels supplying blood to the lungs.
+Selexipag is a drug used to treat pulmonary hypertension. It is an approved antithrombotic medicine and is authorised in the European Union.
 
-**Indication.** Selexipag is indicated for the treatment of pulmonary arterial hypertension (PAH) to delay disease progression and reduce risk of hospitalization.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15424759](https://www.wikidata.org/wiki/Q15424759) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,8 +58,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | liver | `CES1` substrate, `CYP2C8` metabolism/substrate, `CYP2C9` safety_allele, `CYP3A4` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…93% in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…12% in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PTGIR (target).</sub>
 

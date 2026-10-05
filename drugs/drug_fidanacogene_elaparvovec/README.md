@@ -9,16 +9,9 @@
 
 ## About
 
-**Description.** Fidanacogene elaparvovec is a liver-specific adeno-associated virus (AAV) vector containing a codon-optimized human coagulation FIX gene that was investigated as a potential treatment for hemophilia B.[L46691] Hemophilia B is a rare X-linked genetic disorder characterized by abnormal coagulation due to dysfunctional coagulation factor IX with a male incidence estimated to be 1 in 30,000 male births worldwide.[A32552] Disease severity is linked to the level of factor IX activity in the blood plasma, ranging from increased bleeding after injuries and surgical operations to spontaneous bleeding, hemorrhages in soft tissues or joints, and severe subcutaneous hematomas. Current available treatments include substitution therapy involving the intravenous administration of standard factor IX once a week for bleeding or as prophylaxis and 2–3 times a week for severe hemophilia, although this carries a significant financial burden to the healthcare system. Other more radical approaches like liver transplants have also been considered.[A262929]
+Fidanacogene elaparvovec is a gene therapy used to treat hemophilia B. It is an approved medicine, although the product that had been authorised in the European Union was later withdrawn there.
 
-On January 3, 2024, fidanacogene elaparvovec was approved by Health Canada under the brand name BEQVEZ for the treatment of adults with moderately severe to severe hemophilia B (congenital Factor IX (FIX) deficiency) who are negative for neutralizing antibodies to variant AAV serotype Rh74.[L49469] This approval was based on positive results demonstrated in the open-label, single-arm Phase 3 BENEGENE-2 study, where the annualized bleeding rate (ABR) was observed to be 1.3 for the 12 months from week 12 to month 15 compared to an ABR of 4.43 for the pre-treatment period.[L49469,L46691] Fidanacogene elaparvovec was also approved by the FDA on April 26, 2024.[L50577]
-
-**Indication.** In Canada and the US, fidanacogene elaparvovec is indicated for the treatment of adults (aged 18 years or older) with moderately severe to severe Hemophilia B (congenital Factor IX deficiency) who are negative for neutralizing antibodies to variant AAV serotype Rh74.[L49444,L50572]
-
-In the US, it is also approved for use in adults who currently use factor IX prophylaxis therapy, have current or historical life-threatening hemorrhage, or have repeated, serious spontaneous bleeding episodes.[L50572]
-
-In the EU, it is approved for a similar but slightly different indication, for the treatment of severe and moderately severe haemophilia B (congenital factor IX deficiency) in adult patients without a history of factor IX inhibitors and without detectable
-antibodies to variant AAV serotype Rh74. [L52845]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +23,7 @@ antibodies to variant AAV serotype Rh74. [L52845]
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2025_reference](drugs/drug_fidanacogene_elaparvovec/FidanacogeneElaparvovec_Wojciechowski2025_reference.md) | — | parent + metabolite (no model) | 0 | Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2025_reference](drugs/drug_fidanacogene_elaparvovec/FidanacogeneElaparvovec_Wojciechowski2025_reference.md) | — | parent + metabolite (no model) | 0 | Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,8 +37,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | blood | <sub>“…shed in peripheral blood mononuclear cells (PBMC)…”</sub> | prose |
-| excretion | kidney | <sub>“…urine…”</sub> | prose |
+| excretion | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Coagulation factor IX (F9) (gene replacement).</sub>
 

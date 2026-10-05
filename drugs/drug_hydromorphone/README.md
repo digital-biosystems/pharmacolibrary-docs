@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Hydromorphone is a pure opioid,[A176468] a semi-synthetic hydrogenated ketone derivative of [morphine] that has been available clinically since 1920. Structurally, hydromorphone derived from [morphine] in the modification of the hydroxyl group in the carbon 6 to a carbonyl and the absence of a double bond between the carbon 7 and 8. Due to these modifications, it presents a very high potency and comparable side effect profile to the parent compound.[A176471] Even though hydromorphone does not present a 6-hydroxyl group, it is categorized under the family of phenanthrenes and it is considered a chemical under the schedule II (medical purposes with high addiction potential).[A176495]
+Hydromorphone is an opioid painkiller used to relieve pain, and has also been used for cough. It is an approved medicine used widely for pain relief, though as a controlled opioid its availability is restricted.
 
-The first reported approved product containing hydromorphone in the form of hydromorphone hydrochloride was developed by Fresenius Kabi USA and FDA approved in 1984.[L5795]
-
-**Indication.** Hydromorphone is indicated for the management of moderate to severe acute pain and severe chronic pain. Due to its addictive potential and overdose risk, hydromorphone is only prescribed when other first-line treatments have failed.[A176468]
-
-The WHO has proposed a three-step ladder for the management of pain in which it is suggested to start with a non-opioid medication followed by addition of weak opioids to the non-opioid treatment for moderate pain and finishing in the use of strong opioids such as hydromorphone along with the existing regimen for cases of severe pain.[A176471]
-
-Off-label, hydromorphone can be administered for the suppression of refractory cough.[A176468]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q303646](https://www.wikidata.org/wiki/Q303646) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,16 +44,16 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | <sub>“…redistribution into liver, spleen, kidney…”</sub> | prose |
-| absorption | liver | <sub>“…fast redistribution into liver…”</sub> | prose |
-| absorption | skeletal muscle | <sub>“…and skeletal muscle…”</sub> | prose |
-| absorption | small intestine | <sub>“…absorbed mainly in the upper small intestine…”</sub> | prose |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…1% of the fecal elimination…”</sub> | prose |
-| excretion | kidney | <sub>“…main elimination route of hydromorphone is through the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (partial agonist), OPRK1 (target), OPRM1 (target).</sub>
 

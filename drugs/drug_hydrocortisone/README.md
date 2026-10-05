@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrocortisone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocortisone_Werumeus2017_reference&quot;,&quot;label&quot;:&quot;Werumeus_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydrocortisone
 
@@ -10,11 +11,9 @@
 
 ## About
 
-**Description.** Hydrocortisone, or cortisol, is a glucocorticoid secreted by the adrenal cortex.[A188387] Hydrocortisone is used to treat immune, inflammatory, and neoplastic conditions.[L10529,L10532,L10535,L10538,L7772,L7321] It was discovered in the 1930s by Edward Kendall and named Compound F, or 17-hydroxycorticosterone.[A188420]
+Hydrocortisone, a glucocorticoid steroid hormone, is used as an anti-inflammatory medicine for conditions such as adrenal insufficiency, congenital adrenal hyperplasia, ulcerative colitis, asthma attacks, and various skin, eye, and ear inflammations. It is widely used and appears on the WHO essential medicines list, with authorised products in the European Union and approved veterinary uses.
 
-Hydrocortisone was granted FDA approval on 5 August 1952.[L10574]
-
-**Indication.** Otic solutions are indicated for infections of the external auditory canal caused by susceptible organisms and with inflammation.[L10529,L10532] Hydrocortisone tablets are indicated for certain endocrine, rheumatic, collagen, allergic, ophthalmic, respiratory, hematologic, neoplastic, edematous, gastrointestinal, and other conditions.[L10535] A hydrocortisone enema is indicated for ulcerative colitis,[L10538] a topical ointment with antibiotics is indicated for corticosteroid responsive dermatoses with infections,[L7772] and a topical cream with [acyclovir] is indicated to treat cold sores.[L7321] Oral granules of hydrocortisone are used as a replacement therapy for Adrenocortical Insufficiency (AI) in children under 17 years of age.[L16533]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q190875](https://www.wikidata.org/wiki/Q190875) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -28,14 +27,14 @@ Hydrocortisone was granted FDA approval on 5 August 1952.[L10574]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 01:30 | 6:33 | 1/0/1 | 0/0/1 | 0/0/0 | 46,366/25,184 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 01:30 | 6:33 | 0/0/2 | 0/0/1 | 0/0/0 | 46,366/25,184 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | — | 1-compartment (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | — | 1-compartment (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
 
 ## Pharmacodynamics (PD)
 
@@ -53,7 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | liver | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | skin | <sub>“…Topical hydrocortisone cream is 4-19% bioavailable…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inducer/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
@@ -77,7 +76,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 102 matched, 19 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

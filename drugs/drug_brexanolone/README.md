@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** As of March 2019, brexanolone - developed and made available commercially by Sage Therapeutics Inc. as the brand name product Zulresso - is the first drug to have ever been approved by the US FDA specifically for the treatment of postpartum depression (PPD) in adult females [F4066]. Since PPD, like various other types of depression, is characterized by feelings of sadness, worthlessness or guilt, cognitive impairment, and/or possibly suicidal ideation, it is considered a life-threatening condition [F4072]. Studies have consequently found that PPD can genuinely have profound negative effects on the maternal-infant bond and later infant development [F4072, A176080, A176083]. The development and availability of brexanolone for the treatment of PPD in adult females subsequently provides a new and promising therapy where few existed before [F4066].
+Brexanolone is an antidepressant used to treat postpartum depression in adult women. It is approved but restricted to hospital or supervised settings, where patients must be monitored during the infusion, and it is not authorised in the European Union.
 
-In particular, the use of brexanolone in treating PPD is surrounded with promise because it acts in part as a synthetic supplement for possible deficiencies in endogenous brexanolone (allopregnanolone) in postpartum women susceptible to PPD whereas many commonly used anti-depressive medications elicit actions that may modulate the presence and activity of substances like serotonin, norepinephrine, and/or monoamine oxidase but do not mediate activities directly associated with PPD like natural fluctuations in the levels of endogenous neuroactive steroids like allopregnanolone [F4063].
-
-And finally, although brexanolone may also be undergoing clinical trials to investigate its abilities to treat super-refractory status epilepticus, it appears that some such studies have failed to meet primary endpoints that compare success in the weaning of third-line agents and resolution of potentially life-threatening status epilepticus with brexanolone vs. placebo when added to standard-of-care [L5750].
-
-**Indication.** Brexanolone is a synthetic neuroactive steroid gamma-aminobutyric acid A (GABA(a)) receptor positive modulator indicated for the treatment of postpartum depression (PPD) in adult women [FDA Label][A176080, A176083, F4063, F4066, F4072].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2482223](https://www.wikidata.org/wiki/Q2482223) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,8 +33,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…recovered largely as metabolites in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…42% in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AKR1B1 (substrate), GABRA1 (inhibitor), GABRA1 (positive allosteric modulator), GABRB2 (inhibitor), GABRD (inhibitor), GABRG2 (inhibitor), GABRG3 (modulator).</sub>
 

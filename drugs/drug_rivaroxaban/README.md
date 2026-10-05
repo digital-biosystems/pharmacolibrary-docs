@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Rivaroxaban is an anticoagulant and the first orally active direct factor Xa inhibitor. Unlike warfarin, routine lab monitoring of INR is not necessary. However there is no antidote available in the event of a major bleed. Only the 10 mg tablet can be taken without regard to food. The 15 mg and 20 mg tablet should be taken with food. FDA approved on July 1, 2011.
+Rivaroxaban is an anticoagulant that directly inhibits factor Xa and is used to prevent and treat blood clots, including venous thromboembolism, pulmonary embolism, and stroke prevention in atrial fibrillation. It is widely used and authorised in the European Union, with several approved products on the market.
 
-**Indication.** Rivaroxaban is indicated for the prevention of venous thromboembolic events (VTE) in patients who have undergone total hips replacements and total knee replacement surgery; prevention of stroke and systemic embolism in patients with nonvalvular atrial fibrillation; treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE); to reduce risk of recurrent DVT and/or PE. Rivaroxaban is also indicated, in combination with aspirin, for reducing the risk of major cardiovascular events in patients with chronic coronary artery disease or peripheral artery disease. Its use is also not recommended in those with severe renal impairment (<30mL/min).[L12819]
-
-Rivaroxaban is also indicated for the treatment and prevention of VTE in pediatric patients (from birth to 18 years of age) and for thromboprophylaxis in pediatric patients ≥2 years old with congenital heart disease following the Fontan procedure.[L12819]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420262](https://www.wikidata.org/wiki/Q420262) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -72,8 +70,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate, `NAT2` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `NAT2` metabolism | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted via feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted into urine (via active tubular secretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (target).</sub>
 

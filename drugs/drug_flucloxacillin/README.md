@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Antibiotic analog of [cloxacillin].
+Flucloxacillin is a penicillin antibiotic that resists breakdown by bacterial beta-lactamase enzymes and has been used to treat infections such as meningitis. It remains an approved antibacterial for systemic use, though some approved products have been withdrawn in certain markets.
 
-**Indication.** Used to treat bacterial infection by susceptible microorganisms.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1994556](https://www.wikidata.org/wiki/Q1994556) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -8,6 +8,12 @@
 - **molar mass:** 315.69 g/mol (C9H19ClN3O5P) — DrugBank
 - **groups:** investigational
 
+## About
+
+Fotemustine is a nitrosourea alkylating agent with antineoplastic activity, investigated for the treatment of cancer. It is not approved by the European Medicines Agency and remains investigational in major databases, so its use is limited.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1439555](https://www.wikidata.org/wiki/Q1439555) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

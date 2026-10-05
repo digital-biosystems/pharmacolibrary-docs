@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Salicylamide is the common name for the substance o-hydroxybenzamide, or amide of salicyl. Salicylamide is a non-prescription drug with analgesic and antipyretic properties. It has similar medicinal uses to aspirin. Salicylamide is used in combination with both aspirin and caffeine in the over-the-counter pain remedies
+Salicylamide is a salicylic acid derivative used as an analgesic and antipyretic to treat pain and fever. It is an approved drug, but it is not widely used today and has largely been replaced by other salicylate painkillers.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2496906](https://www.wikidata.org/wiki/Q2496906) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

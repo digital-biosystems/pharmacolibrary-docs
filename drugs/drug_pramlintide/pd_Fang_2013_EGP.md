@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;pramlintide&quot;,&quot;href&quot;:&quot;drugs/drug_pramlintide/&quot;},{&quot;label&quot;:&quot;Fang_2013 \u00b7 PD endogenous glucose production&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# endogenous glucose production — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# endogenous glucose production — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,6 +16,10 @@
 **As extracted:** Pramlintide (measured concentrations) drives endogenous glucose production: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Pramlintide concentrations (pmol/L) inhibit endogenous glucose production via a sigmoidal Emax model with an I_max of 0.995 and an IC50 of 23.8 pmol/L. The paper does not provide a full text to specify the underlying physiological mechanism (e.g., production vs. elimination) or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Fang_2013`
 - **model family:** `sigmoid_emax`

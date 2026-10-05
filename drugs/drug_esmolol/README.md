@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Esmolol, commonly marketed under the trade name Brevibloc, is a cardioselective beta-1 receptor blocker. It has a rapid onset but short duration of action without causing significant intrinsic sympathomimetic or membrane stabilizing activities at recommended therapeutic doses. It works by blocking beta-adrenergic receptors in the heart, which leads to decreased force and rate of heart contractions. Esmolol prevents the action of two naturally occurring substances: epinephrine and norepinephrine.
+Esmolol is a selective beta blocker used for heart-related conditions such as high blood pressure, angina, myocardial infarction, and certain fast heart rhythms. It is an approved medicine, though it is not authorised in the European Union.
 
-The FDA withdrew its approval for the use of all parenteral dosage form drug products containing esmolol hydrochloride that supply 250 milligrams/milliliter of concentrated esmolol per 10-milliliter ampule. Other esmolol formulations are still available for use.[L43942]
-
-**Indication.** For the rapid control of ventricular rate in patients with atrial fibrillation or atrial flutter in perioperative, postoperative, or other emergent circumstances where short term control of ventricular rate with a short-acting agent is desirable. Also used in noncompensatory sinus tachycardia where the rapid heart rate requires specific intervention.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418139](https://www.wikidata.org/wiki/Q418139) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,11 +40,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…esterases found in the cytosol of red blood cells…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | blood | <sub>“…high rate of blood-based metabolism of esmolol hydrochloride…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine with a clearance approximately equivalent to the glomerular filtrati…”</sub> | prose |
+| excretion | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target).</sub>
 

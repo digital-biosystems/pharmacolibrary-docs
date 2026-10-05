@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Vestronidase alfa, or vestronidase alfa-vjbk, is a recombinant human lysosomal beta glucuronidase that is a purified enzyme produced by recombinant DNA technology in a Chinese hamster ovary cell line. The enzyme is a homotetramer consisted of 4 monomers with 629 amino acids, and holds the same amino acid sequence as human beta-glucuronidase (GUS) [FDA Label]. Vestronidase alfa is an enzyme replacement therapy for the treatment of mucopolysaccharidosis type VII (MPS VII), also known as Sly syndrome, which is an inherited, rare genetic metabolic condition that targets a small subset of population. MPS VII is a progressive condition that affects most tissues and organs due to the lack of a lysosomal enzyme called beta-glucuronidase, leading to buildup of toxic metabolites. The disorder is initiated with skeletal abnormalities, including short stature, along with other pathological conditions including enlarged liver and spleen, heart valve abnormalities, and narrowed airways which can lead to lung infections and trouble breathing. Last two conditions are leading causes of fatalities in patients with MPS VII. 
+Vestronidase alfa is an enzyme replacement therapy used to treat mucopolysaccharidosis VII, also known as Sly syndrome. It is authorised in the European Union and is used mainly for this rare metabolic disorder.
 
-Some affected individuals do not survive infancy, while others may live into adolescence or adulthood and patients may experience developmental delay and progressive intellectual disability [FDA Label]. In clinical trials, vestronidase alfa treatment demonstrated improvement and stabilization in motor symptoms by increasing the patients' ability to walk longer distances in comparison to treatment with placebo . Few patients also experienced improved pulmonary function. 
-
-Vestronidase alfa was FDA-approved on November 17th, 2017 under the trade name Mepsevii as an intravenous infusion for the treatment of pediatric and adult patients.
-
-**Indication.** Indicated in pediatric and adult patients for the treatment of Mucopolysaccharidosis VII (MPS VII, Sly syndrome).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q48970976](https://www.wikidata.org/wiki/Q48970976) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

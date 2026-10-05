@@ -11,12 +11,9 @@
 
 ## About
 
-**Description.** Phenylbutyric acid is a fatty acid and a derivative of [butyric acid] naturally produced by colonic bacteria fermentation. It demonstrates a number of cellular and biological effects, such as relieving inflammation and acting as a chemical chaperone.[A249035] It is used to treat genetic metabolic syndromes, neuropathies, and urea cycle disorders.[L386,L42105]
+Sodium phenylbutyrate is used to treat urea cycle disorders, and has also been studied or used for conditions such as cystic fibrosis, sickle-cell disease, beta thalassemia and myeloproliferative disorders. It is an approved medicine, with additional investigational uses, and is classified for both metabolic and nervous system indications.
 
-**Indication.** Phenylbutyric acid is used for the treatment of various conditions, including urea cycle
-disorders, neonatal-onset deficiency, late-onset deficiency disease in patients with a history of hyperammonemic encephalopathy. Phenylbutyric acid must be combined with dietary protein restriction and, in some cases, essential amino acid supplementation.[L386]
-
-Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauroursodeoxycholic acid] to treat amyotrophic lateral sclerosis (ALS) in adults.[L42105,L43473]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7553358](https://www.wikidata.org/wiki/Q7553358) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -39,7 +36,7 @@ Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauro
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Eriksen_2023_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Eriksen PL et al., Clearance and production of ammonia qua…, Journal of hepatology (2023) | [10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Wang_2022_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Wang_2022_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Piscitelli_1995_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md) | — | general linear (no model) | 0 | Piscitelli SC et al., Disposition of phenylbutyrate and its m…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04075.x](https://doi.org/10.1002/j.1552-4604.1995.tb04075.x) |
 
 ## Pharmacodynamics (PD)
@@ -59,10 +56,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Following oral administration of a single 5g dose of sodium phenylbutyrate…”</sub> | prose |
-| metabolism | kidney | <sub>“…and kidney…”</sub> | prose |
-| metabolism | liver | <sub>“…The major sites for metabolism of sodium phenylbutyrate are the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted by the kidneys within 24 hours as the conjugation product, phenylacetylglutamine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HDAC1 (inhibitor), PRKCA (modulator).</sub>
 

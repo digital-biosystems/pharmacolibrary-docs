@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Bertera_2009 \u00b7 l_name_rats&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,13 +18,13 @@
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and the terminal half-life unit could not be converted to SI, preventing a valid compartmental model.**
+**The carvedilol record from Bertera_2009 was rejected because it reports only non-compartmental exposure metrics (t1/2z 2.1 min, C0 1325 µg ml-1, AUC0-180 548 ng ml-1 h-1) with no distribution volume and no clearance, and a structural parameter failed a dimensional consistency check.**
 
-The paper reports only exposure metrics like AUC and C0, omitting the distribution volume and clearance required for a compartmental population PK model. Additionally, the terminal half-life unit was not recognized for conversion, so the parameter lacked a standard SI value. A second reader disagreed on the clearance rate and the half-life parameter identification. Extracted — carvedilol: t1/2z 2.1 min, C0 1.32e+03 µg ml -1, AUCt 548 ng ml -1 h -1, AUC%ext 12.5.
+The paper gives no distribution volume and no clearance or elimination rate for carvedilol in male Wistar rats, so it is an exposure/outcome paper rather than a compartmental population PK model. A dimension mismatch was flagged on a structural parameter, and one reported unit could not be converted to SI, so that parameter was left without an SI value. A second reader also disagreed on which parameter the AUC0-180 value of 548 ng ml-1 h-1 corresponds to, and read a γ of 2.8 where this record had none; these disagreements are noted but the rejection rests on the missing volume and clearance and the failed structural-parameter check. Extracted — carvedilol: t1/2z 2.1 min, C0 1.32e+03 µg ml -1, AUCt 548 ng ml -1 h -1, AUC%ext 12.5.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auc 0-180].parameter_id`: this record has Q19, the second reading Q88; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bertera FM et al., Is urethane-chloralose anaesthesia appr…, Journal of pharmacological… (2009)

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;mesalazine&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/&quot;},{&quot;label&quot;:&quot;Cuffari_2016 \u00b7 multimatrix_mesalamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_multimatrix_mesalamine&quot;,&quot;label&quot;:&quot;Cuffari_2016_multimatrix_mesalamine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_nonmem_estimates&quot;,&quot;label&quot;:&quot;Cuffari_2016_nonmem_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_multimatrix_mesalamine&quot;,&quot;label&quot;:&quot;Cuffari_2016_multimatrix_mesalamine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mesalazine — `Mesalazine_Cuffari2016_multimatrix_mesalamine`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**The mesalazine (5-ASA) parent–metabolite model was rejected because its simulated time of the peak (0.183 h) does not reproduce the paper's reported tmax values (2–9 h), and its structure and output do not match the required parent–metabolite topology.**
+**The mesalazine (5-ASA) model was rejected because its structure is a one-compartment parent model instead of the paper's parent–metabolite structure, its output is the parent rather than the measured 5-ASA compartment, and its simulated tmax (0.183 h) misses the paper's values (2–9 h).**
 
-Simulated tmax was 0.183 h against paper values of 6.0, 9.0, 2.0, 9.0 and 7.5 h (ratios 0.0306, 0.0204, 0.0917, 0.0204, 0.0244, 0.0917), exceeding tolerance. The model was built as a one-compartment PK structure instead of the parent–metabolite structure linking 5-ASA to Ac-5-ASA via the metabolic rate constant Kfm. The model output was the central compartment concentration rather than the measured analyte 5-ASA. A second reader also disagreed on the extracted '% dose absorbed, mean' parameter (22.1 in this record, absent in the second reading). Extracted — mesalazine: CL 85.6 L/h, V 109 L.
+The record claims a parent–metabolite structure with Ac-5-ASA formed from 5-ASA, but the model was built as a single one-compartment parent model, so the metabolite compartment is absent from the structure. The model's output is the parent central compartment rather than the measured 5-ASA compartment. Simulated as the paper dosed it, the model's time of the peak (tmax) is 0.183 h against paper values of 2, 6, 7.5 and 9 h (ratios 0.0306–0.0917), exceeding the tolerance. Parameter values (apparent metabolic clearance 85.6 L/h, central volume 109 L) were read by only one reader, with the second reader leaving them null. Extracted — mesalazine: CL 85.6 L/h, V1 109 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of % dose absorbed, mean: this record has 22.1, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -45,7 +45,7 @@ Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, devel
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent metabolic clearance | `Q22` · CL | 85.6 | L/h | 2.3777777777777777e-05 | L/h | not captured | boundary (0.8) | Cuffari_2016:results_prose | — | not captured |
-| central volume of distribution | `Q61` · V | 109 | L | 0.109 | L | not captured | boundary (0.8) | Cuffari_2016:results_prose | — | not captured |
+| central volume of distribution | `Q63` · V1 | 109 | L | 0.109 | L | not captured | boundary_compartment (0.9) | Cuffari_2016:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,11 +65,15 @@ Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, devel
 - dropped unlinked row (NIL): 'MRCmax,ss, mean (SD)' — extend the ontology if this is a real PK parameter (source ['Cuffari_2016_table_2:row15:col1', 'Cuffari_2016_table_2:row15:col2', 'Cuffari_2016_table_2:row15:col3'])
 - table mostly unlinked (8/8 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - salvaged Q22 ('apparent metabolic clearance'=85.6) from results prose — parameter table was unreadable
-- salvaged Q61 ('central volume of distribution'=109) from results prose — parameter table was unreadable
+- salvaged Q63 ('central volume of distribution'=109) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=5-ASA
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at route_to_review — not promoted
 - population split: 'multimatrix mesalamine' subgroup of Cuffari_2016 (paper reports 2 populations: multimatrix mesalamine, nonmem estimates)
+- row roles: 5 per-group rows of 5-ASA summary_statistic but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of Ac-5-ASA summary_statistic but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 40/40 row label(s) assigned, 60 linked by role; re-tagged parent→5-ASA ×132, parent→Ac-5-ASA ×52
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
@@ -112,18 +116,23 @@ Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, devel
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[% dose absorbed, mean]` | 22.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[5-asa apparent metabolic clearance]` | not captured | 85.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent metabolic clearance]` | 85.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central volume of distribution for 5-asa]` | not captured | 109 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central volume of distribution]` | 109 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | mesalazine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | 5-ASA | unknown | mismatch |
 
 </details>
 
@@ -143,7 +152,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 85.6 | not captured | not captured | ['Cuffari_2016:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 85.6 L/h | not captured | not captured | ['Cuffari_2016:results_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 109 L | not captured | not captured | ['Cuffari_2016:results_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 109 L | not captured | not captured | ['Cuffari_2016:results_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -153,7 +162,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | fail | Metabolite_C (measured=5-ASA) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 | T1_tmax | reference | fail | 6.0 | 0.1833333333517233 | 0.0306 | hours→SI vs simulated h |
@@ -193,4 +201,4 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 05:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 19:36 UTC</sub>

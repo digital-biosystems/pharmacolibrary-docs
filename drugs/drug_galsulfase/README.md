@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Galsufase is a variant form of the polymorphic human enzyme N-acetylgalactosamine 4-sulfatase of recombinant DNA origin. Galsulfase is a glycoprotein with a molecular weight of approximately 56 kD. The recombinant protein is comprised of 495 amino acids and contains six asparagine-linked glycosylation sites, four of which carry a bis mannose-6-phosphate manose7 oligosaccharide for specific cellular recognition. Post-translational modification of Cys53 produces the catalytic amino acid residue Ca-formylglycine, which is required for enzyme activity and is conserved in all members of the sulfatase enzyme family.
+Galsulfase is an enzyme replacement therapy used to treat mucopolysaccharidosis VI. It is authorised in the European Union.
 
-**Indication.** For the treatment of adults and children with Mucopolysaccharidosis VI.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q17400905](https://www.wikidata.org/wiki/Q17400905) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

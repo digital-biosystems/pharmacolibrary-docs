@@ -10,29 +10,19 @@
 
 ## About
 
-**Description.** Sucralfate is a medication that is widely used to prevent and treat a number of diseases in the gastrointestinal tract such as duodenal ulcers [FDA label], gastro-esophageal reflux disease (GERD), gastritis, peptic ulcer disease, stress ulcer, in addition to dyspepsia [A177655].  It is considered a _cytoprotective agent_, protecting cells in the gastrointestinal tract from damage caused by agents such as gastric acid, bile salts, alcohol, and acetylsalicylic acid (aspirin), among other substances [A177655, F4519].
+Sucralfate is an anti-ulcer medicine used to treat stomach and duodenal ulcers, gastritis, gastroesophageal reflux disease, esophagitis, and related mouth and gut conditions. It is an approved drug, widely used for acid-related digestive disorders, though it is not authorised centrally in the European Union.
 
-Sucralfate has been shown to be a well-tolerated and safe drug. It is sold under many brands and is available in both tablet and suspension forms.  It was approved by the FDA  1982 in tablet form, and in 1994 for the suspension form [L6073, L6076].
-
-**Indication.** The sucralfate suspension [FDA label] and tablet [F4534] are used for the treatment of active duodenal ulcer for up to 8 weeks.  The tablet form may be used at a lower dose for healed duodenal ulcers, for the purpose of maintaining healing and preventing recurrence [F4519, F4534]. 
-
-Sucralfate is also used in the prevention and/or treatment of gastro-esophageal reflux disease (GERD), gastritis, peptic ulcer disease, stress ulcer, in addition to dyspepsia [A177655, F4519].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420394](https://www.wikidata.org/wiki/Q420394) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:12 | 10:19 | 0/0/0 | 0/1/0 | 0/0/0 | 263,773/6,929 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/9 | 1/0 | 0 |
+| 2026-10-04 11:42 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 33,527/1,291 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/9 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.129). The first reading is what the record holds.">cross-check: disputed</span> | [Douglas_2025_pain](drugs/drug_sucralfate/pd_Douglas_2025_pain.md) | pain score ← white cell count · direct sigmoid Emax (Hill) effect | — | Douglas C et al., Mucositis Pain and Its Temporal Relatio…, Paediatric anaesthesia (2025) | [10.1111/pan.15063](https://doi.org/10.1111/pan.15063) |
 
 ## ADME sites
 
@@ -40,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | <sub>“…excreted in the urine…”</sub> | prose |
-| absorption | small intestine | <sub>“…absorbed from the gastrointestinal tract in very minimal quantities…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted mainly in the urine within 48 hours…”</sub> | prose |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EGF (inducer), FGA (binder), FGF2 (inducer), FGF2 (target), PGA5 (inhibitor).</sub>
 
@@ -72,7 +62,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Turnheim_2004.pdf` | Turnheim K, [Drug interactions with antiepileptic a…, Wiener klinische Wochenschr… (2004) | pgx | 7 | [10.1007/BF03040747](https://doi.org/10.1007/BF03040747) | [15038401](https://www.ncbi.nlm.nih.gov/pubmed/15038401) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Aoyama_1999.pdf` | Aoyama N et al., Sufficient effect of 1-week omeprazole…, Journal of gastroenterology (1999) | pgx | 5 | not captured | [10616772](https://www.ncbi.nlm.nih.gov/pubmed/10616772) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-18T08:09:45.729465+00:00</sub>
+<sub>queue written 2026-10-04T11:42:05.882563+00:00</sub>
 
 ## Screened and excluded
 
@@ -81,18 +71,18 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Albengres_1998 | irrelevant | 0 | 0 | The paper is a review of antifungal drug interactions where sucralfate is mentioned only as a co-administered agent that reduces the bioavailability of other drugs, with no PK parameters reported for sucralfate itself. |
 | PD | Albengres_1998 | not_relevant | 0 | 0 | The text is a review of drug interactions for systemic antifungals and mentions sucralfate only as a drug that reduces the bioavailability of ketoconazole/itraconazole; it contains no pharmacodynamic or exposure-response analysis for sucralfate. |
 | PGx | Aoyama_1999 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of omeprazole (CYP2C19), not sucralfate, which is only used as an adjunctive therapy. |
-| popPK | Athanassa_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of minocycline, not sucralfate, which is only mentioned as an excluded co-medication. |
+| popPK | Athanassa_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for minocycline, not sucralfate. |
 | PD | Athanassa_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for minocycline, not sucralfate, and does not provide any pharmacodynamic (PD) or exposure-response parameters. |
 | popPK | Brogden_1984 | irrelevant | 0 | 0 | The paper is a clinical review of therapeutic use and pharmacodynamics, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | PD | Brogden_1984 | not_relevant | 1 | 0 | The text is a qualitative review of therapeutic efficacy and side effects, lacking any numeric concentration-effect data, dose-response curves, or PD parameters. |
-| popPK | Brouwers_1994 | irrelevant | 0 | 0 | The paper is a review of NSAID interactions where sucralfate is mentioned only as a co-administered agent affecting NSAID absorption, with no PK parameters reported for sucralfate itself. |
+| popPK | Brouwers_1994 | irrelevant | 0 | 0 | The paper is a review of NSAID interactions where sucralfate is mentioned only as a co-administered agent affecting NSAID absorption, not as the subject drug for PK parameter estimation. |
 | PD | Brouwers_1994 | not_relevant | 1 | 0 | The text is a qualitative review of drug interactions and mentions sucralfate only in the context of delayed absorption (PK), without providing any numeric PD parameters or concentration-effect relationships. |
 | popPK | Campisi_1997 | irrelevant | 0 | 0 | The paper is a clinical review and pilot study on efficacy in stomatitis, containing no pharmacokinetic parameters or quantitative disposition data for sucralfate. |
 | PD | Campisi_1997 | not_relevant | 1 | 0 | The paper is a review of clinical trials and a small pilot study reporting only qualitative efficacy percentages (symptom improvement rates) without any concentration-effect data, dose-response curves, or numeric PD parameters. |
 | popPK | Chin_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketoconazole, not sucralfate. |
 | PD | Chin_1995 | not_relevant | 0 | 0 | The paper studies ketoconazole absorption and does not mention sucralfate or report any pharmacodynamic parameters. |
 | PGx | Cole_2026 | not_relevant | 0 | 0 | The study investigates CYP2C19 effects on PPI dosing and outcomes, mentioning sucralfate only as a historical medication trialed without analyzing its PK/PD parameters. |
-| popPK | Douglas_2025 | irrelevant | 0 | 0 | The study models the pharmacodynamics of pain relief related to white cell count, morphine, and ketamine; sucralfate is only mentioned as a mucositis intervention in the introduction and is not the subject of any PK analysis. |
+| popPK | Douglas_2025 | irrelevant | 0 | 0 | The study models the pharmacodynamics of pain relief in relation to white cell count and analgesics (morphine/ketamine) in children with mucositis; sucralfate is only mentioned as a potential preventive intervention in the introduction and is not the subject of any PK/PD modeling. |
 | popPK | Garnett_1993 | irrelevant | 0 | 0 | The paper is a clinical review of GERD management that mentions sucralfate only as a therapeutic option without reporting any quantitative pharmacokinetic parameters. |
 | PD | Garnett_1993 | not_relevant | 1 | 0 | The text is a general review of GERD management that mentions sucralfate only as a drug class without providing any specific pharmacodynamic data, exposure-response relationships, or numeric parameters. |
 | PGx | Geus_2000 | not_relevant | 0 | 0 | The paper discusses clinical efficacy and drug interactions of acid-inhibiting drugs but does not report any pharmacogenomic effects on PK or PD parameters. |
@@ -100,7 +90,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Gorget_1985 | not_relevant | 1 | 0 | The text is a qualitative review of sucralfate's mechanism of action and general pharmacodynamic properties, containing no numeric PD parameters, dose-response curves, or exposure-response data. |
 | popPK | Gorshkov_1994 | irrelevant | 0 | 0 | The paper is a clinical study on ulcer healing and pharmacodynamics, reporting no pharmacokinetic parameters for sucralfate. |
 | PD | Gorshkov_1994 | not_relevant | 1 | 0 | The text provides only a qualitative comparison of ulcer healing rates and physiological effects (acidity, HP) without reporting any numeric concentration-effect or dose-response parameters for sucralfate. |
-| popPK | Greenberg_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for moxifloxacin, not sucralfate, which is only mentioned as a concomitant medication of interest. |
+| popPK | Greenberg_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for moxifloxacin, not sucralfate. |
 | PD | Greenberg_2022 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of moxifloxacin in children and does not report any pharmacodynamic or exposure-response relationship for sucralfate. |
 | popPK | Gregory_1991 | irrelevant | 0 | 0 | The paper is a morphometric study of mucosal cytology and contains no pharmacokinetic parameters for sucralfate. |
 | PD | Gregory_1991 | not_relevant | 2 | 1 | The paper reports a qualitative difference in mucosal cytology (goblet cell count) between sucralfate and cimetidine groups but provides no concentration-effect data, dose-response curve, or numeric PD parameters (Emax, EC50, etc.). |
@@ -108,7 +98,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Harada_1994 | not_relevant | 0 | 0 | The paper investigates the receptor binding profile of KB-5492, not sucralfate, and does not report any pharmacodynamic or exposure-response data for sucralfate. |
 | popPK | Janknegt_1990 | irrelevant | 0 | 0 | The paper is a review of drug interactions with quinolones where sucralfate is only mentioned as an agent that reduces absorption, with no quantitative PK parameters reported for sucralfate itself. |
 | PD | Janknegt_1990 | not_relevant | 1 | 0 | The text is a review that qualitatively mentions sucralfate reduces fluoroquinolone absorption but provides no numeric PD parameters, dose-response curves, or exposure-response data. |
-| popPK | Jayaweera_2017 | irrelevant | 0 | 0 | The paper is a case report on chloroform poisoning where sucralfate is only mentioned as a supportive treatment, and no pharmacokinetic parameters for sucralfate are reported. |
+| popPK | Jayaweera_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for chloroform, not sucralfate, which was only used as a therapeutic agent. |
 | popPK | Jiao_2009 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sirolimus, not sucralfate. |
 | PD | Jiao_2009 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of sirolimus, not pharmacodynamics (PD) or exposure-response relationships for sucralfate. |
 | popPK | Jørgensen_1991 | irrelevant | 0 | 0 | The study is a clinical trial assessing pharmacodynamic effects (pH and motility) rather than pharmacokinetic parameters, and no PK values are reported. |
@@ -129,24 +119,24 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Mishra_2013 | not_relevant | 0 | 0 | The paper investigates the effects of chebulinic acid, not sucralfate. |
 | popPK | Moore_1991 | irrelevant | 0 | 0 | The paper is a review of H2-receptor antagonists for stress ulceration and mentions sucralfate only as a comparator, providing no pharmacokinetic parameters for sucralfate. |
 | PD | Moore_1991 | not_relevant | 1 | 0 | The text is a review discussing H2-receptor antagonists and mentions sucralfate only as a comparison for ease of administration, without providing any numeric PD parameters or exposure-response data for sucralfate. |
-| popPK | Mulford_2026 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of vonoprazan, not sucralfate, which is only mentioned as an excluded concomitant medication. |
+| popPK | Mulford_2026 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of vonoprazan, not sucralfate. |
 | PD | Mulford_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of vonoprazan (not sucralfate) and only qualitatively assesses GERD symptoms without reporting any numeric pharmacodynamic parameters or exposure-response models. |
 | popPK | Nysaeter_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of sucralfate's protective effect on blood clots and does not report any pharmacokinetic parameters. |
 | popPK | Olivero_1992 | irrelevant | 0 | 0 | The paper is a review of gastric adaptation mechanisms where sucralfate is mentioned only as a comparator that does not enhance adaptation, with no pharmacokinetic parameters reported. |
 | PD | Olivero_1992 | not_relevant | 1 | 0 | The text mentions a qualitative dose-response effect for NSAIDs and states that sucralfate does not enhance adaptation, but it provides no numeric PD parameters, concentration-effect curves, or quantitative exposure-response data for sucralfate. |
-| popPK | Payen_2003 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ciprofloxacin, not sucralfate. |
+| popPK | Payen_2003 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciprofloxacin, not sucralfate. |
 | PD | Payen_2003 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics of ciprofloxacin and does not contain any pharmacodynamic or exposure-response analysis for sucralfate or any other drug. |
 | popPK | Perlstein_2012 | irrelevant | 0 | 0 | The study focuses on warfarin pharmacogenetics and PK/PD modeling, not sucralfate. |
 | PD | Perlstein_2012 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacogenetics and dosing algorithms, not sucralfate, and does not report specific numeric PD parameters for sucralfate. |
 | PGx | Rainsford_1988 | not_relevant | 0 | 0 | The paper discusses NSAID side effects and mentions sucralfate only as a prophylactic agent, without reporting any pharmacogenomic effects on sucralfate's PK or PD. |
-| popPK | Rudiman_2023 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy (pain and wound healing) for topical sucralfate, containing no pharmacokinetic parameters or disposition data. |
+| popPK | Rudiman_2023 | irrelevant | 0 | 0 | The paper is a systematic review of clinical efficacy (pain and wound healing) and contains no pharmacokinetic parameters. |
 | PD | Rudiman_2023 | not_relevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical trials evaluating efficacy (pain scores, wound healing) but does not report pharmacokinetic data, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50) for sucralfate. |
-| popPK | Shameer_2018 | irrelevant | 0 | 0 | The paper is a bioinformatics study on drug repositioning databases and does not report pharmacokinetic parameters for sucralfate. |
+| popPK | Shameer_2018 | irrelevant | 0 | 0 | The paper is a database description for drug repositioning and does not report pharmacokinetic parameters for sucralfate. |
 | PD | Shameer_2018 | not_relevant | 0 | 0 | The paper describes a database for drug repositioning and does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for sucralfate. |
 | popPK | Singh_2013 | irrelevant | 0 | 0 | no_text gate: only 129 chars of text extracted (&lt; 400) |
 | PD | Singh_2013 | not_relevant | 0 | 0 | The paper investigates peganine hydrochloride, not sucralfate, and does not report any pharmacodynamic or exposure-response data for sucralfate. |
-| popPK | Slomiany_1986 | irrelevant | 0 | 0 | The study investigates the effect of sucralfate on gastric mucus viscosity and permeability (mechanistic/in-vitro) and does not report any pharmacokinetic parameters. |
-| popPK | Smith_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pantoprazole, not sucralfate. |
+| popPK | Slomiany_1986 | irrelevant | 0 | 0 | The study investigates the effect of sucralfate on mucus viscosity and permeability in vitro, not pharmacokinetic disposition parameters. |
+| popPK | Smith_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pantoprazole and its metabolite in goats, not for sucralfate. |
 | PD | Smith_2021 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters for pantoprazole and its metabolite in goats, with no pharmacodynamic or exposure-response data. |
 | popPK | Szabo_1998 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on radiation-induced enterocolitis in animals and does not report any pharmacokinetic parameters for sucralfate. |
 | PD | Szabo_1998 | not_relevant | 3 | 1 | The text describes a qualitative dose-dependent effect of sucralfate in an animal model but does not provide specific dose levels, numeric effect magnitudes, or a concentration-effect curve to derive PD parameters. |
@@ -163,9 +153,9 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Verbeeck_1990 | not_relevant | 1 | 0 | The text is a general review of pharmacokinetic interactions involving NSAIDs and mentions sucralfate only qualitatively regarding absorption delay, without providing any numeric PD parameters or exposure-response data. |
 | popPK | Wolfson_1991 | irrelevant | 0 | 0 | The paper is a review of quinolone pharmacokinetics where sucralfate is only mentioned as a co-administered agent affecting absorption, not as the subject drug. |
 | PD | Wolfson_1991 | not_relevant | 0 | 0 | The paper is a review of quinolone pharmacokinetics and only qualitatively mentions that sucralfate reduces quinolone bioavailability, without providing any PD or exposure-response data for sucralfate itself. |
-| popPK | Yata_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sildenafil in dogs, and sucralfate is only mentioned as an exclusion criterion for concurrent medication. |
+| popPK | Yata_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sildenafil in dogs, not sucralfate. |
 | PD | Yata_2026 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of sildenafil in dogs, not sucralfate, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | unknown_1996 | irrelevant | 0 | 0 | The paper is a collection of pediatric intensive care abstracts with no mention of sucralfate or its pharmacokinetic parameters. |
+| popPK | unknown_1996 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PD | unknown_1996 | not_relevant | 0 | 0 | The provided text is only the title and metadata for a conference abstract collection, containing no specific study data, results, or pharmacodynamic parameters for sucralfate. |
 | popPK | unknown_2019 | irrelevant | 0 | 0 | no_text gate: only 32 chars of text extracted (&lt; 400) |
 | PD | unknown_2019 | not_relevant | 0 | 0 | The provided text is only a title/header for a conference session and contains no data, analysis, or mention of sucralfate pharmacodynamics. |

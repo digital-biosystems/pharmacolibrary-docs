@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Methantheline is a synthetic antispasmodic. Antispasmodics are used to relieve cramps or spasms of the stomach, intestines, and bladder. Methantheline is used to treat intestine or stomach ulcers (peptic ulcer disease), intestine problems (irritable bowel syndrome), pancreatitis, gastritis, biliary dyskinesia, pylorosplasm, or urinary problems (reflex neurogenic bladder in children).
+Methantheline is a synthetic anticholinergic (muscarinic antagonist) used for functional gastrointestinal disorders. It is an approved drug, though it does not appear to have centralised European Union authorisation.
 
-**Indication.** For the treatment of peptic ulcer disease, irritable bowel syndrome, pancreatitis, gastritis, biliary dyskinesia, pylorosplasm, and reflex neurogenic bladder in children.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6823610](https://www.wikidata.org/wiki/Q6823610) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 22:08 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 1,380/194 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 12:57 | 0:06 | 0/0/0 | 0/0/0 | 0/0/0 | 1,772/132 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic, by enzymatic hydrolysis.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | blood | `ACHE` inhibitor | DrugBank actor |
 | — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
 
@@ -57,7 +57,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Müller_2012.pdf` | Müller C et al., Relative bioavailability and pharmacody…, European journal of clinica… (2012) | pd | 5 | [10.1007/s00228-012-1286-6](https://doi.org/10.1007/s00228-012-1286-6) | [22527350](https://www.ncbi.nlm.nih.gov/pubmed/22527350) | metadata signals extractable PD data (sigmoid) |
 
-<sub>queue written 2026-09-29T22:08:06.807661+00:00</sub>
+<sub>queue written 2026-10-04T12:57:27.954644+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,7 +66,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | DEBRAY_1954 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | DEBRAY_1954 | not_relevant | 0 | 0 | The paper describes the use of methantheline as a pharmacodynamic agent to induce esophageal spasm for radiological diagnosis of hiatal hernias, but it does not report any quantitative exposure-response or dose-response analysis, nor does it provide numeric PD parameters such as Emax or EC50. |
 | popPK | Hallek_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition and reactivation, not a pharmacokinetic study reporting disposition parameters for methantheline. |
-| popPK | Hough_1981 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of histamine H2-receptor antagonism and does not report any pharmacokinetic parameters for methantheline. |
+| popPK | Hough_1981 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of H2-receptor antagonism, not a pharmacokinetic study, and reports no disposition parameters. |
 | PD | Hough_1981 | not_relevant | 2 | 1 | The text describes qualitative inhibition and competitive antagonism but does not provide numeric PD parameters (e.g., IC50, Ki) or extractable concentration-effect curves for methantheline. |
 | popPK | Müller_2012 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 

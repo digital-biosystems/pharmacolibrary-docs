@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** The structure of adenosine was first described in 1931,[A229823] though the vasodilating effects were not described in literature until the 1940s.[A229828] Adenosine is indicated as an adjunct to thallium-201 in myocardial perfusion scintigraphy,[L31983] though it is rarely used in this indication, having largely been replaced by [dipyridamole] and [regadenson].[A229833,A229838] Adenosine is also indicated in the treatment of supraventricular tachycardia.[L31998]
+Adenosine is a cardiac drug used to treat certain rapid heart rhythm problems, including paroxysmal tachycardia and Wolff–Parkinson–White syndrome. It is an approved medicine, given by injection mainly in hospital settings to quickly restore a normal heart rhythm.
 
-Adenosine was granted FDA approval on 30 October 1989.[L31978]
-
-**Indication.** Adenosine is indicated as an adjunct to thallium-201 in myocardial perfusion scintigraphy in patients unable to adequately exercise.[L31983] It is also indicated to convert sinus rhythm of paroxysmal supraventricular tachycardia.[L31998]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q190012](https://www.wikidata.org/wiki/Q190012) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -81,7 +79,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | liver | `SLC29A1` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` formation, `XDH` substrate | DrugBank actor |
 | metabolism | small intestine | `XDH` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…predominantly eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADA (substrate), ADK (substrate), ADORA1 (target), ADORA2A (target), ADORA2B (target), ADORA3 (target), AK1 (substrate), GJA1 (substrate), NME1 (substrate), NME2 (substrate), P2RY1 (target), PNP (substrate), SLC28A1 (substrate), SLC28A3 (unknown), SLC29A2 (substrate), SLC29A3 (substrate), SLC29A4 (substrate).</sub>
 

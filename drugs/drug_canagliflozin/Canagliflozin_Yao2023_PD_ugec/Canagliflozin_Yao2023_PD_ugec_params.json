@@ -1,0 +1,57 @@
+{
+ "model_id": "Canagliflozin_Yao2023_PD_ugec",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 2310.0,
+  "Emax": 0.0606,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "2310.0": 0.030300000000000004
+ },
+ "stop_time": 24000.0,
+ "subtitle": "change of urine glucose excretion (UGE) from baseline normalized by FPG (ΔUGEc) against dose",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "ng/mL·h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "g/(mg/dL)",
+   "factor": 0.10000000000000002,
+   "si_unit": "m3"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "ng/mL·h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "g/(mg/dL)"
+ },
+ "x_axis": {
+  "display_unit": "ng/mL·h",
+  "factor": 1.0,
+  "label": "dose",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "g/(mg/dL)",
+  "factor": 0.10000000000000002,
+  "label": "change of urine glucose excretion (UGE) from baseline normalized by FPG (ΔUGEc)"
+ }
+}

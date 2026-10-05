@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Anderson2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,8 +25,6 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:14.755225+00:00) predates the upstream re-run (2026-10-03 10:03:14.229355+00:00). Current validate status: `rejected`.
-
 > **Dose compound ≠ measured compound:** dosed `codeine`, measured `morphine`.
 
 ## Citation
@@ -34,7 +32,7 @@ Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaes
   ·  DOI: [10.1002/pan.70227](https://doi.org/10.1002/pan.70227)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Anderson2026_reference" status="rejected" stale="true" population="breastfed neonates" measured-compound="morphine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Anderson2026_reference" status="rejected" stale="false" population="breastfed neonates" measured-compound="morphine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

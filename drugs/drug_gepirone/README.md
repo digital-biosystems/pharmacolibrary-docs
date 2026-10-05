@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Gepirone, an azapirone, is a pharmacologic analog of [buspirone] that acts selectively on the pre- and post-synaptic 5HT<sub>1A</sub> receptors. Although earlier clinical trials showed promising results for gepirone, its formulation as an immediate-release tablet necessitates frequent administration due to the short half-lives. It was not until an extended-release formulation of gepirone was made available that gepirone became a potential candidate for a new antidepressant.[A261670,A261675,A182315]
+Gepirone is an anxiolytic and antidepressant that acts as a serotonin receptor agonist. It is an approved drug, classified as an other antidepressant, but it is not authorised in the European Union.
 
-Gepirone was approved by the FDA on September 28, 2023, under the brand name EXXUA for the treatment of adults with major depressive disorder. It represents a novel class of antidepressants that selectively targets the 5HT<sub>1A</sub> receptors, thus possessing a more favorable side effects profile with comparable incidence of sexual dysfunction side effects as that of the placebo.[L48315]
-
-**Indication.** Gepirone is indicated for the treatment of major depressive disorder (MDD) in adults.[L48295]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2650256](https://www.wikidata.org/wiki/Q2650256) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +32,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | — | prose |
-| excretion | kidney | — | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR1A (partial agonist), HTR1A (target).</sub>
 

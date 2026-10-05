@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 3000 mg oral (N02BA01)",
  "model_id": "AcetylsalicylicAcid_Thoueille2023_reference",
  "molar_masses": {
   "central.C": 0.1801574
@@ -8,30 +8,25 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  10.0,
-  25.0
- ],
  "parameters": {
-  "Cl": 1.1722222222222222e-05,
+  "Cl": 1.1083333333333333e-05,
   "F": 1.0,
   "MM": 0.1801574,
   "Tlag": 0.0,
-  "VdPerKg": 0.03414285714285714,
+  "VdPerKg": 0.038,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1e-05,
+  "adminMass": 0.003,
   "ka": 0.0005555555555555556,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9349.899799599198
+  "central.C": 9282.59431959114
  },
  "reference_peaks": {
-  "central.C": 4.010716871052339e-06
+  "central.C": 0.0010868401928340351
  },
- "stop_time": 777600.0,
+ "stop_time": 864000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

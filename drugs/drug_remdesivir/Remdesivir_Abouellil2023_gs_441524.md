@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Abouellil2023_gs_441524`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**The remdesivir record was not simulated because the central and peripheral volumes of distribution (V1 26.2 L, V2 66.2 L) were not covered, and a second reader extracted conflicting values (4.89 L, 46.5 L, 13.2 L/h, 18.1 L/h).**
+**The remdesivir record was not published because the central and peripheral volumes of distribution (V1 = 26.2 L, V2 = 66.2 L) were neither extracted nor defaulted, leaving the parameter set incomplete.**
 
-The parameter-coverage check found only 2 of 4 expected parameters covered: V1 (26.2 L) and V2 (66.2 L) were neither emitted nor defaulted, so the two-compartment remdesivir model could not be simulated. A second reader disagreed on all four parameters, reading V1 as 4.89 L, V2 as 46.5 L, inter-compartmental clearance as 13.2 L/h and total body clearance as 18.1 L/h instead of 26.2 L, 66.2 L, 55 L/h and 4.74 L/h. The model was built but has not been simulated yet. Extracted — remdesivir: V1 26.2 L, V2 66.2 L, Q 55 L/h, CL 4.74 L/h.
+The model was built but has not been simulated yet. The parameter coverage check expected four parameters emitted or defaulted but obtained only two, with V1 (26.2 L) and V2 (66.2 L) missing. A second reader also disagreed on all extracted values, reading V1 as 4.89 L, V2 as 46.5 L, Q as 13.2 L/h, CL as 18.1 L/h, and giving no value for the central formation clearance to GS-704277 (50.5 L/h in this record). Extracted — remdesivir: V1 26.2 L, V2 66.2 L, Q 55 L/h, CL 4.74 L/h; GS-704277: CLfm 50.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[central compartment volume of distribution].value`: this record has 26.2, the second reading 4.89; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:39:31.402736+00:00) predates the upstream re-run (2026-10-03 10:48:13.789216+00:00). Current validate status: `extracted`.
 
 ## Citation
 Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeberg's archi… (2023)
   ·  DOI: [10.1007/s00210-022-02292-6](https://doi.org/10.1007/s00210-022-02292-6)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_gs_441524" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_gs_441524" status="not_simulated" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 5 extracted.
@@ -40,6 +38,8 @@ Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeb
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Central compartment volume of distribution (L) | `Q63` · V1 | 26.2 | L | 0.0262 | [l] | not captured | llm_confirmed (0.6) | Tab2:row1:col3 | — | not captured |
@@ -61,7 +61,6 @@ Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeb
 - template fit: none — a metabolite is formed from another metabolite (a chain)
 - population split: 'gs‐441524' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
 - row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 15 linked by role; re-tagged remdesivir→parent ×4, parent→GS-704277 ×3
-- dropped duplicate Q22 ('Central formation clearance (L/h)', value '50.5') — already have one for this compound
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
@@ -146,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524/Remdesivir_Abouellil2023_gs_441524_modelica.zip" download>Remdesivir_Abouellil2023_gs_441524_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524/Remdesivir_Abouellil2023_gs_441524_modelica.zip" download>Remdesivir_Abouellil2023_gs_441524_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524/Remdesivir_Abouellil2023_gs_441524_matlab.zip" download>Remdesivir_Abouellil2023_gs_441524_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524/Remdesivir_Abouellil2023_gs_441524_matlab_simbio.zip" download>Remdesivir_Abouellil2023_gs_441524_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Polihexanide, also known as polyhexamethylene biguanide (PHMB), is a broad-spectrum antimicrobial polymer primarily used for topical antisepsis and wound management. Structurally, it consists of repeating biguanide units linked by hexamethylene hydrocarbon chains, conferring both hydrophilic and hydrophobic properties that enhance its interaction with microbial membranes. [A1351] It is effective against a wide range of Gram-positive and Gram-negative bacteria. [A1351,A273908]
+Polihexanide is an antiseptic and disinfectant used to treat skin conditions and, in the European Union, an authorised eye medicine for Acanthamoeba keratitis. It is approved and used mainly as a topical antiseptic and as an ophthalmic antiinfective, with an authorised product available in the European Union.
 
-Polihexanide is approved in Europe under the name Akantior for the treatment of _Acanthamoeba_ keratitis, an ocular infection caused by the _Acanthamoeba_ parasite. [L53003] It was initially approved in August of 2024, and is the first and only approved therapy to treat patients with _Acanthamoeba_ keratitis. [L53143]
-
-**Indication.** AKANTIOR (polihexanide eye drops) are indicated in the EU for the treatment of _Acanthamoeba_ keratitis in adults and children from 12 years of age. [L53003]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408205](https://www.wikidata.org/wiki/Q408205) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

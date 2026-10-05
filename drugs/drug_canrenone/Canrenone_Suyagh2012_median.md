@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;canrenone&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/&quot;},{&quot;label&quot;:&quot;Suyagh_2012 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canrenone_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2012_final_pharmacokinetic_model&quot;,&quot;label&quot;:&quot;Suyagh_2012_final_pharmacokinetic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canrenone_Suyagh2012_final_pharmacokinetic_model&quot;,&quot;label&quot;:&quot;Suyagh_2012_final_pharmacokinetic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Canrenone_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # canrenone — `Canrenone_Suyagh2012_median`
 
-> ## <span class="pk-badge pk-badge--neutral" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,9 @@
 
 ### Reviewer guidance
 
-**The canrenone paediatric model was not published: the metabolite's volume, clearance and formation clearance were left at zero, canrenone's molar mass is missing, and an absorption rate constant (ka) was invented because it was not reported in the source.**
+**The canrenone paediatric model was held back because the metabolite compartment had no own volume, clearance or formation clearance (all 0), the model structure did not match the parent–metabolite structure, ka and Tlag were defaulted rather than reported, and canrenone's molar mass is missing.**
 
-The record describes canrenone formed from potassium canrenoate in a one-compartment structure, but the metabolite compartment has no volume of distribution, clearance or formation clearance set (all 0), so library placeholder values would have been used. No molar mass for canrenone is available, so metabolite amounts would be formed as 1 mg per mg of parent converted rather than on a molar basis. The model builder also defaulted ka and Tlag, assumed F=1 and Fm=1 without molar correction, and the model structure did not match the expected parent–metabolite arrangement. The model was built but has not been simulated yet. Extracted — canrenone: CL/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
+The record describes canrenone (CL/F 11.4 l h⁻¹ 70 kg⁻¹, V/F 20.04 l 70 kg⁻¹, kfm 57.84 h⁻¹, t1/2z 12.09 h) formed from potassium canrenoate, but the metabolite's volume of distribution, clearance and formation clearance were all 0, so placeholder values would have been used instead. The model structure (one-compartment with enteral absorption) did not match the expected parent–metabolite structure with the metabolite in the central compartment. The absorption rate constant ka and the lag time were not reported in the paper and were left at library defaults, and the molar mass of canrenone is missing, so metabolite amounts would be formed as 1 mg per mg of parent converted rather than molecule per molecule; the F=1, Fm=1 apparent parameterization was also assumed rather than estimated. Extracted — canrenone: CL/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -34,7 +34,7 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
   ·  DOI: [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x)
 
 ## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Suyagh2012_median" status="not_simulated" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="canrenone" model-id="Canrenone_Suyagh2012_median" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -42,7 +42,7 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 | T3_molar_mass[canrenone] | not captured | fail | not captured | {'MW': 0, 'MW_m1': 0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -151,7 +151,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_modelica.zip" download>Canrenone_Suyagh2012_median_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_modelica.zip" download>Canrenone_Suyagh2012_median_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_fmi.zip" download>Canrenone_Suyagh2012_median_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_matlab.zip" download>Canrenone_Suyagh2012_median_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_matlab_simbio.zip" download>Canrenone_Suyagh2012_median_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

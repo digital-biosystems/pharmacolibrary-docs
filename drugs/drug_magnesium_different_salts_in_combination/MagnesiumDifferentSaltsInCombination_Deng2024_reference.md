@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A12C&quot;,&quot;href&quot;:&quot;atc/A12C.md&quot;},{&quot;label&quot;:&quot;magnesium (different salts in combination)&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/&quot;},{&quot;label&quot;:&quot;Deng_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumDifferentSaltsInCombination_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_da2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium (different salts in combination) — `MagnesiumDifferentSaltsInCombination_Deng2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:38.500393+00:00) predates the upstream re-run (2026-10-05 09:34:14.623415+00:00). Current validate status: `extracted`.
+
 > **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium`.
 
 ## Citation
@@ -32,7 +34,7 @@ Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and chi
   ·  DOI: [10.1186/s12884-024-06620-x](https://doi.org/10.1186/s12884-024-06620-x)
 
 ## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Deng2024_reference" status="curated_candidate" stale="false" population="Chinese preeclampsia population" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Deng2024_reference" status="extracted" stale="true" population="Chinese preeclampsia population" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -43,7 +45,7 @@ Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and chi
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | tvV(L) | `Q61` · V | 25.07 | L | 0.025070000000000002 | [l] | not captured | tv_prefix (0.95) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5, Tab2:row3:col6, Tab2:row3:col7, Tab2:row3:col8 | — | not captured |
-| tvCL (L/h) | `Q22` · CL | 2.98 | L/h | 8.277777777777777e-07 | [l] / [h] | not captured | tv_prefix (0.95) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5, Tab2:row4:col6, Tab2:row4:col7, Tab2:row4:col8 | — | 0.082 (None% RSE) |
+| tvCL (L/h) | `Q22` · CL | 2.98 | L/h | 8.277777777777777e-07 | [l] / [h] | not captured | tv_prefix (0.95) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5, Tab2:row4:col6, Tab2:row4:col7, Tab2:row4:col8 | — | 0.082 (13.05% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,13 +55,15 @@ Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and chi
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped diagnostic row 'dVdfurosemide' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped diagnostic row 'dCLdfurosemide' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped diagnostic row 'dCLdCCR' → Q318 (shrinkage) — reported statistic, not a parameter
-- unit_dimension_unknown: 'shrinkage %' (CL)
+- table section iiv: 'ω2 V (%)' routed out of structural estimates ('Inter-individual variability')
+- table section iiv: 'ω2 CL (%)' routed out of structural estimates ('Inter-individual variability')
+- table section residual_error: 'stdev0' routed out of structural estimates ('Residual variability')
+- dropped duplicate Q61 ('dVdfurosemide', value '-0.25') — already have one for this compound
+- dropped duplicate Q22 ('dCLdfurosemide', value '-0.16') — already have one for this compound
+- dropped duplicate Q22 ('dCLdCCR', value '0.39') — already have one for this compound
 - dropped duplicate Q22 ('dCLdBMI', value '-0.54') — already have one for this compound
-- dropped diagnostic row 'stdev0' → Q318 (shrinkage) — reported statistic, not a parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
+- molar mass: none found for 'magnesium_different_salts_in_combination' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'magnesium', not magnesium_different_salts_in_combination — the review values are the parent's
 
 **Extraction notes:**
@@ -140,8 +144,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab_simbio.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_sbml.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -162,4 +166,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 15:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 09:34 UTC</sub>

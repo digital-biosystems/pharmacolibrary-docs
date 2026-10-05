@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Isocarboxazid has the formula 1-benzyl-2-(5-methyl-3-isoxazolylcarbonyl)hydrazine-isocarboxazid. It is a monoamine oxidase inhibitor.[A31930] It is used in the treatment of major depression, dysthymic disorder, atypical disorder, panic disorder and the phobic disorders.[T115] It was first introduced by Roche pharmaceuticals, further developed by Validus pharms Inc and first FDA approved as a prescription drug on July 1st, 1959.
+Isocarboxazid is a non-selective monoamine oxidase inhibitor antidepressant used to treat depression and neurotic disorders. It remains an approved medicine but is rarely used, mainly when other antidepressants have failed, and carries a boxed warning.
 
-**Indication.** Isocarboxazid is indicated for the treatment of the enduring and debilitating symptoms of depression that have not responded to other antidepressant drugs.[L1372] Depression is a common but serious mood disorder. The patient will present changes in its feelings, thoughts, and ability to handle everyday activities. For a mood disorder to be considered as depression, the symptoms should be present for at least two weeks.[L1375]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409595](https://www.wikidata.org/wiki/Q409595) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,13 +30,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…These drugs are readily absorbed by the GI tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
 | metabolism | liver | `MAOA` inhibitor | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
 | metabolism | small intestine | `MAOA` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…Most of the eliminated dose is found in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…Another section of the eliminated dose is observed through the intestinal tract…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

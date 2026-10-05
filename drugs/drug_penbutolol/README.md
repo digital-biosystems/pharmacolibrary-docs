@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Penbutolol is a drug in the beta-blocker class used to treat hypertension. Penbutolol binds both beta-1 and beta-2 adrenergic receptors, rendering it a non-selective beta-blocker. Penbutolol can act as a partial agonist at beta adrenergic receptors, since it is a sympathomimetric drug. Penbutolol also demonstrates high binding affinity to the 5-hydroxytryptamine receptor 1A with antagonistic effects. This binding characteristic of penbutolol is being investigated for its implications in Antidepressant Therapy. Penbutolol is contraindicated in patients with cardiogenic shock, sinus bradycardia, second and third degree atrioventricular conduction block, bronchial asthma, and those with known hypersensitivity.
+Penbutolol is a non-selective beta blocker that was used to treat high blood pressure, angina, and after myocardial infarction. It has been withdrawn from the market and is no longer in general use.
 
-**Indication.** Penbutolol is indicated in the treatment of mild to moderate arterial hypertension. It may be used alone or in combination with other antihypertensive agents, especially thiazide-type diuretics.Penbutolol is contraindicated in patients with cardiogenic shock, sinus bradycardia, second and third degree atrioventricular conduction block, bronchial asthma, and those with known hypersensitivity.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q944244](https://www.wikidata.org/wiki/Q944244) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,7 +33,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ORM1` other/unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted principally in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB1 (target), ADRB2 (partial agonist), ADRB2 (target), HTR1A (target), HTR1B (target).</sub>
 

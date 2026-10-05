@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Nefopam is under investigation for the prevention of Cholecystitis and Post Anaesthetic Shivering. Nefopam has been investigated for the prevention of Kidney Transplantation.
+Nefopam is a non-opioid painkiller used to relieve pain. It is approved in some countries and used mainly in Europe and parts of Asia, but is not available everywhere.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q599052](https://www.wikidata.org/wiki/Q599052) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** A bactericidal and fungicidal antiseptic. It is used as a 0.1% mouthwash for local infections and oral hygiene.
+Hexetidine is an antifungal and local anti-infective agent used as an antiseptic for local oral treatment and in gynecological antiinfective preparations. It has been withdrawn, though it was once an approved drug.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419749](https://www.wikidata.org/wiki/Q419749) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

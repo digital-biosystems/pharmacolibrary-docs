@@ -11,19 +11,9 @@
 
 ## About
 
-**Description.** Lamotrigine is an antiepileptic drug belonging in the phenyltriazine class. It is used in the treatment of both epilepsy and as a mood stabilizer in bipolar disorder. Lamotrigine is the first medication since lithium granted Food and Drug Administration (FDA) approval for the maintenance treatment of bipolar type I. It is approved for use in more than 30 countries.[A191350]
+Lamotrigine is an anticonvulsant used to treat epilepsy and bipolar disorder, and has also been used for other neurological and psychiatric conditions. It is widely used and is included on the WHO list of essential medicines.
 
-Lamotrigine has relatively few side-effects and does not require laboratory monitoring. While it is indicated for epilepsy and bipolar disorders, there is evidence that lamotrigine could have some clinical efficacy in certain neuropathic pain states.[A849,A850]
-
-**Indication.** Lamotrigine is indicated as adjunctive therapy for the following seizure types in patients ≥2 years of age: partial seizures, primary generalized tonic-clonic seizures, and generalized seizures due to Lennox-Gastaut syndrome.[L9404]
-
-It is also indicated for the process of conversion to drug monotherapy for those at least 16 years of age or older with partial seizures and currently are receiving treatment with carbamazepine, phenytoin, phenobarbital, primidone, or valproate as the single antiepileptic drug (AED).[L9404]
-
-In addition to the above, lamotrigine is also indicated for the maintenance treatment of bipolar I disorder, delaying the time to mood episodes (which may include mania, hypomania, depression, mixed episodes) in adults at least 18 years or older, who have been treated for acute mood symptoms with standard therapy.[L9404]
-
-Limitations of use
-
-It is important to note that lamotirigine should not be used in the treatment of acute mood episodes, as efficacy has not been established in this context.[L9404]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410346](https://www.wikidata.org/wiki/Q410346) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,7 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | liver | `SLC22A1` substrate, `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…2% is recovered in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADORA1 (inhibitor), ADORA2A (inhibitor), ADRA1A (inhibitor), ADRA2A (inhibitor), ADRB1 (inhibitor), CACNA1E (inhibitor), CHRNA1 (inhibitor), DHFR (inhibitor), DRD1 (inhibitor), DRD2 (inhibitor), DRD2 (target), GABRA1 (inducer), GABRA1 (inhibitor), GABRA1 (target), GRIA1 (inhibitor), HRH1 (target), HTR2A (inhibitor), HTR3A (inhibitor), OPRK1 (inhibitor), SCN11A (blocker), SCN1A (inhibitor).</sub>

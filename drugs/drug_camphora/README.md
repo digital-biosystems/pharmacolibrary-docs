@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Camphor is a bicyclic monoterpene ketone found widely in plants, especially _Cinnamomum camphora_. It is used topically as a skin antipruritic and as an anti-infective agent. When ingested, camphor has a rapid onset of toxic effects, and camphorated oil is the product most often responsible for its toxicity. The FDA ruled that camphorated oil could not be marketed in the United States and that no product could contain a concentration higher than 11%. It appears in the list of drug products withdrawn or removed from the market for safety or effectiveness.[A254252,L43942] However, camphor can be found in several nonprescription medications at lower concentrations.[A254252]
+Camphor is a natural compound that was used in cardiac therapy and, more generally, as a topical remedy in traditional medicine. It is no longer used as a medicine, having been withdrawn from drug databases, though it remains known as a chemical substance.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27089415](https://www.wikidata.org/wiki/Q27089415) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or mechanism description, so the specific pharmacodynamic mechanism (e.g., effect compartment, production/elimination inhibition) is not stated. The record indicates an Emax model where metformin dose (mg/day) inhibits BMI change rates (%), with reported Emax values of -5.88% and -11.8%.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2021`
 - **model family:** `emax`
 - **driver:** `dose_only`

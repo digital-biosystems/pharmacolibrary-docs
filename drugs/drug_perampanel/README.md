@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Perampanel is a noncompetitive AMPA glutamate receptor antagonist. It is marketed under the name Fycompa™ and is indicated as an adjunct in patients over 12 years old for the treatment of partial-onset seizures that may or may not occur with generalized seizures. The FDA label includes an important black-boxed warning of serious or life-threatening behavioral and psychiatric reactions in patients taking Fycompa™.
+Perampanel is an antiepileptic medicine used to treat epilepsy, including partial seizures and tonic–clonic seizures. It is authorised in the European Union and is an approved drug, though it carries a boxed warning.
 
-**Indication.** Perampanel is indicated for the treatment of partial-onset seizures with or without secondarily generalized seizures in epileptic patients four years of age and older. It is also indicated as an adjunct in the treatment of primary generalized tonic-clonic seizures in epileptic patients aged 12 years and older.[L40913]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q868658](https://www.wikidata.org/wiki/Q868658) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,12 +33,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…After oral adminitration, perampanel is absorbed rapidly and completely.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer/substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…eliminated mostely in the feces (48%)…”</sub> | prose |
-| excretion | kidney | <sub>“…to a lesser exten in the urine (22%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GRIA1 (target), GRIA2 (inhibitor), GRIA3 (inhibitor), GRIA4 (inhibitor).</sub>
 

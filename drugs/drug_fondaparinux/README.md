@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fondaparinux (Arixtra) is a synthetic anticoagulant agent consisting of five monomeric sugar units and a O-methyl group at the reducing end of the molecule. It is structurally similar to polymeric glycosaminoglycan heparin and heparan sulfate (HS) when they are cleaved into monomeric units. The monomeric sequence in heparin and HS is thought to form the high affinity binding site for the natural anti-coagulant factor, antithrombin III (ATIII). Once bound to heparin or HS, the anticoagulant activity of ATIII is potentiated by 1000-fold. Fondaparinux potentiates the neutralizing action of ATIII on activated Factor X 300-fold. Fondaparinux may be used: to prevent venous thromboembolism in patients who have undergone orthopedic surgery of the lower limbs (e.g. hip fracture, hip replacement and knee surgery); to prevent VTE in patients undergoing abdominal surgery who are are at high risk of thromboembolic complications; in the treatment of deep vein thrombosis (DVT) and pumonary embolism (PE); in the management of unstable angina (UA) and non-ST segment elevation myocardial infarction (NSTEMI); and in the management of ST segment elevation myocardial infarction (STEMI).
+Fondaparinux is an antithrombotic drug used to treat and prevent blood clots, including pulmonary embolism, thrombosis, thrombophlebitis, and phlebitis. It is an approved antithrombotic, classified among other antithrombotic agents, and has also been studied investigationally.
 
-**Indication.** Approved for: (1) prophylaxis of VTE for up to one month post surgery in patients undergoing orthopedic surgery of the lower limbs such as hip fracture, hip replacement and knee surgery; (2) prophylaxis of VTE patients undergoing abdominal surgery who are at high risk of thromboembolic complications (e.g. patients undergoing abdominal cancer surgery); (3) treatment of acute DVT and PE; (4) management of UA and NSTEMI for the prevention of death and subsequent myocardial infarction (MI); and (5) management of STEMI for the prevention of death and myocardial reinfarction in patients who are managed with thrombolytics or who are initially to receive no form of reperfusion therapy. Fondaparinux should not be used as the sole anticoagulant during percutaneous coronary intervention (PCI) due to an increased risk of guiding catheter thrombosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27077698](https://www.wikidata.org/wiki/Q27077698) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated in urine mainly as unchanged drug…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (inhibitor), SERPINC1 (potentiator).</sub>
 

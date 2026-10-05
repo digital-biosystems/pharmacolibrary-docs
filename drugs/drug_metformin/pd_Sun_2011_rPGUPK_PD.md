@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Metformin stimulates the peripheral glucose uptake rate (rPGUPK−PD) via a proportional effect described by the equation rPGUPK−PD = 1 + EP * rPGU, where EP is a pharmacodynamic coefficient derived from metformin plasma concentrations. The provided excerpts do not specify the mechanism of action (e.g., direct Emax vs. effect compartment) or provide numerical values for potency or rate parameters such as EC50, Emax, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

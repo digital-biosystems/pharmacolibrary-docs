@@ -8,6 +8,12 @@
 - **molar mass:** 371.433 g/mol (C21H25NO5) — DrugBank
 - **groups:** experimental
 
+## About
+
+Demecolcine, a colchicine derivative, has been studied as an anticancer treatment. It remains experimental and is not an established, approved cancer therapy.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q903666](https://www.wikidata.org/wiki/Q903666) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

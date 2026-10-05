@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An ergot derivative that has been used as a cerebral vasodilator and in peripheral vascular disease. It has been suggested to ameliorate cognitive deficits in cerebrovascular disease.
+Nicergoline is a vasodilator and alpha blocker used to improve peripheral blood circulation. It is an approved drug, used in various countries for circulatory disorders.
 
-**Indication.** For the treatment of senile dementia, migraines of vascular origin, transient ischemia, platelet hyper-aggregability, and macular degeneration.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2623398](https://www.wikidata.org/wiki/Q2623398) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

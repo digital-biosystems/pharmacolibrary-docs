@@ -16,12 +16,13 @@
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL (`Q22`)
 - **effect:** not quantified
-- **phenotype groups:** the paper's groups mapped to standard phenotypes
+- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
 - **study type:** risk association (case–control or cohort study)
 
 ### Notes from the extraction
 
 - SNP→adverse event association (adverse outcome, not a PK/PD parameter effect) — risk_association, not a covariate θ
+- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation

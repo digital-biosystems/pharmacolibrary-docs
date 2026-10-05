@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Prifinium is an antimuscarinic agent with antispasmodic and antiemetic properties. It may be useful for the treatment of irritable bowel syndrome [A175027].
+Prifinium bromide is a synthetic anticholinergic (quaternary ammonium) drug classified for the treatment of functional gastrointestinal disorders. It appears to be only an experimental compound, with no confirmed current authorisation or established market use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27257028](https://www.wikidata.org/wiki/Q27257028) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 22:10 | 0:55 | 0/0/0 | 0/0/0 | 0/0/0 | 1,336/132 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 12:58 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 8,367/232 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -50,9 +52,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Noguchi_1983.pdf` | Noguchi H et al., Pharmacokinetics of prifinium bromide i…, International journal of cl… (1983) | popPK | 10 | not captured | [6134685](https://pubmed.ncbi.nlm.nih.gov/6134685) | The paper reports quantitative PK parameters (CL, Vss, t1/2) for prifinium bromide in humans with all numeric values explicitly present in the text. |
+| `Noguchi_1983.pdf` | Noguchi H et al., Pharmacokinetics of prifinium bromide i…, International journal of cl… (1983) | popPK | 10 | not captured | [6134685](https://pubmed.ncbi.nlm.nih.gov/6134685) | The paper reports quantitative PK parameters (CL, Vss, t1/2, bioavailability) for prifinium bromide in humans with all values explicitly stated in the text. |
 
-<sub>queue written 2026-09-29T22:10:20.244445+00:00</sub>
+<sub>queue written 2026-10-04T12:58:39.518388+00:00</sub>
 
 ## Screened and excluded
 
@@ -62,7 +64,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Ishikawa_1993 | not_relevant | 1 | 0 | The text is a qualitative clinical summary describing the efficacy of prifinium bromide in treating chronic organophosphorus intoxication but provides no numeric PD parameters, dose-response data, or concentration-effect analysis. |
 | popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The paper is an epidemiological and toxicological study where prifinium bromide is mentioned only as a therapeutic antidote, with no pharmacokinetic parameters reported. |
 | PD | Ishikawa_1996 | not_relevant | 0 | 0 | The paper is an epidemiological and pathological study of organophosphorus pesticide toxicity; prifinium bromide is only mentioned as a treatment antidote without any pharmacodynamic modeling, dose-response analysis, or numeric PD parameters. |
-| popPK | Kubo_1981 | irrelevant | 0 | 0 | The study is a pharmacological investigation of ganglion blocking activity in animals, and prifinium bromide is used only as a comparator agent with no pharmacokinetic parameters reported. |
+| popPK | Kubo_1981 | irrelevant | 0 | 0 | The study is a pharmacological comparison of ganglion blocking activity in cats, not a pharmacokinetic study, and prifinium bromide is only a comparator agent. |
 | PD | Kubo_1981 | not_relevant | 1 | 0 | The paper focuses on the pharmacological profile of HSR-902, mentioning prifinium bromide only for qualitative potency ranking without providing numeric PD parameters or concentration-effect data for it. |
 
 ---

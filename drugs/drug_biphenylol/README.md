@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13734](https://go.drugbank.com/drugs/DB13734) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Biphenylol (2-phenylphenol) is a phenol derivative used as an antiseptic and disinfectant for the skin. It is classed as investigational and is also considered a carcinogen, so it is not an established marketed medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q209467](https://www.wikidata.org/wiki/Q209467) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -10,12 +10,9 @@
 
 ## About
 
-**Description.** Nitisinone is a synthetic reversible inhibitor of 4-hydroxyphenylpyruvate dioxygenase. It is used in the treatment of hereditary tyrosinemia type 1 and Alkaptonuria. It is sold under the brand names Orfadin and Harliku. [L53253, L53258]
+Nitisinone is a drug used to treat tyrosinemias, including tyrosinemia type III. It is an approved medicine and remains authorised in the European Union.
 
-**Indication.** Nitisinone under the brand name ORFADIN is indicated as an adjunct to dietary restriction of tyrosine and phenylalanine in the treatment of hereditary tyrosinemia type 1. [L53253]
-
-Under the name HARLIKU, nitisinone is indicated for the reduction of urine homogentisic acid (HGA) in adult patients with
-alkaptonuria (AKU). [L53258]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3877355](https://www.wikidata.org/wiki/Q3877355) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted primarily through urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HPD (inhibitor).</sub>
 

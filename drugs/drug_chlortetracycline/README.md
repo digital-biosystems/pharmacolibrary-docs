@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Chlortetracycline is a _tetracycline_ antibiotic, and historically the first member of this class to be identified. It was discovered in 1945 by the scientist, Benjamin Minge Duggar, working at Lederle Laboratories under the supervision of Yellapragada Subbarow. He discovered that this antibiotic was the product of an actinomycete strain he cultured and obtained from a soil sample from a field in Missouri. The organism was named _Streptomyces aureofaciens_ due to its gold-hued color.
+Chlortetracycline is a tetracycline antibiotic used to treat bacterial infections, with preparations for oral, skin, eye, and systemic use. It has been withdrawn from human use in some places but remains approved in veterinary medicine.
 
-**Indication.** Used in the manufacuring of medicated animal feeds [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417948](https://www.wikidata.org/wiki/Q417948) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ALB` unknown | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly eliminated in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ARF1 (inhibitor), EPHB1 (inhibitor), PADI4 (inhibitor), PNLIP (inhibitor).</sub>
 

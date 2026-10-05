@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 40 mg parenteral (A02BC02)",
  "model_id": "Pantoprazole_Smith2021v2_reference",
  "molar_masses": {
   "central.C": 0.38337
@@ -8,10 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  70.0
- ],
  "parameters": {
   "Cl": 3.9861111111111114e-07,
   "F": 1.0,
@@ -19,14 +15,14 @@
   "VdPerKg": 0.0009,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 7e-05,
+  "adminMass": 4e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662113
+  "central.C": 660.0000000662119
  },
  "reference_peaks": {
-  "central.C": 0.0011090047363612188
+  "central.C": 0.0006337170152160914
  },
  "stop_time": 604800.0,
  "template": "PK_1C",

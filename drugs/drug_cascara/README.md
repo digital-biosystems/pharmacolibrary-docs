@@ -7,22 +7,21 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Cascara, the dried bark of a buckthorn tree, is a herbal laxative used to treat constipation. It is classified as a contact laxative for constipation and remains a known herbal medicinal product, though it is not an EU-authorised medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q76937206](https://www.wikidata.org/wiki/Q76937206) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 15:02 | 1:44 | 0/0/0 | 1/0/0 | 0/0/0 | 25,462/889 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-04 15:06 | 0:23 | 0/0/0 | 0/0/0 | 0/0/0 | 16,073/267 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Demarque_2018_apoptosis](drugs/drug_cascara/pd_Demarque_2018_apoptosis.md) | name ← cascarosides · inhibition effect | — | Demarque DP et al., Cytotoxicity of Structurally Diverse An…, Journal of pharmacy & pharm… (2018) | [10.18433/jpps30077](https://doi.org/10.18433/jpps30077) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Demarque_2018_cell_viability](drugs/drug_cascara/pd_Demarque_2018_cell_viability.md) | name ← cascarosides · inhibition effect | — | Demarque DP et al., Cytotoxicity of Structurally Diverse An…, Journal of pharmacy & pharm… (2018) | [10.18433/jpps30077](https://doi.org/10.18433/jpps30077) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -45,20 +44,20 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Putri_2026.pdf` | Putri MK et al., Phytochemical Characterization and Comp…, Chemistry & biodiversity (2026) | pd | 4 | [10.1002/cbdv.202503403](https://doi.org/10.1002/cbdv.202503403) | [42281247](https://www.ncbi.nlm.nih.gov/pubmed/42281247) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T15:02:39.237956+00:00</sub>
+<sub>queue written 2026-10-04T15:06:16.083228+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Demarque_2018 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity and apoptosis study of cascara compounds, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.). |
-| popPK | Jiang_2025 | irrelevant | 0 | 0 | The study focuses on the mechanistic effects of cascara pectin polysaccharides on fatty liver disease and gut microbiota, not on pharmacokinetic parameters. |
-| popPK | Mazzari_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of herbal plants (including Frangula purshiana, related to cascara) on CYP3A4, P-gp, and glutathione, and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for cascara. |
+| popPK | Jiang_2025 | irrelevant | 0 | 0 | The study focuses on the therapeutic effects of cascara pectin polysaccharides on fatty liver disease and gut microbiota, not on the pharmacokinetic disposition of the drug cascara. |
+| popPK | Mazzari_2022 | irrelevant | 0 | 0 | The study is an in-vitro investigation of herbal plant extracts on CYP3A4, P-gp, and glutathione levels, and does not report pharmacokinetic parameters for cascara. |
 | popPK | Putri_2026 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Putri_2026 | not_relevant | 0 | 0 | The paper focuses on phytochemical characterization and metabolomics of coffee, not on pharmacodynamic or exposure-response modeling of cascara. |
 | popPK | Sánchez-Martín_2026 | irrelevant | 0 | 0 | The study focuses on in vitro biological activity and receptor-level responses of cascara beverages, containing no pharmacokinetic parameters. |
 | PD | Sánchez-Martín_2026 | not_relevant | 2 | 1 | The paper reports qualitative in vitro biological and receptor-level responses for different formulations but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., EC50, Emax) for the drug or specific bioactive compounds. |
-| popPK | de_1990 | irrelevant | 1 | 0 | The paper is a mechanistic review of anthranoid metabolism that mentions cascara only as an example of an anthrone C-glycoside, without reporting any quantitative pharmacokinetic parameters. |
+| popPK | de_1990 | irrelevant | 1 | 0 | The paper is a review of the general metabolism of anthranoid laxatives and mentions cascara only as an example of an anthrone C-glycoside, without providing any specific quantitative pharmacokinetic parameters (CL, V, ka, etc.) for cascara. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

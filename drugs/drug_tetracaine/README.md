@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Tetracaine is an ester local anaesthetic currently available in combination with lidocaine as a cream and patch.
+Tetracaine is a local anesthetic used to prevent or relieve pain, including topical use on skin, eye, and hemorrhoids or anal fissures. It is widely used and appears on the WHO list of essential medicines, and is also approved for veterinary use.
 
-**Indication.** Ophthalmic tetracaine is indicated for the for procedures requiring a rapid and short- acting topical ophthalmic anesthetic.
-
-The combination lidocaine and tetracaine patch is indicated for local dermal analgesia for superficial dermatological procedures and superficial venous access.  The combination lidocaine and tetracaine cream is intended to provide topical local analgesia for superficial dermatological procedures.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419608](https://www.wikidata.org/wiki/Q419608) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -50,8 +48,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…Systemic absorption of anaesthetic from the combination cream is directly related to the d…”</sub> | prose |
-| metabolism | blood | <sub>“…rapidly hydrolyzed by plasma esterases…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: RYR1 (modulator), RYR2 (modulator), SCN10A (inhibitor), SCN1A (blocker).</sub>
 

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Pentosan polysulfate is a sulfated pentosyl polysaccharide with heparin-like properties.
+Pentosan polysulfate is a urological drug used to treat interstitial cystitis, and is also applied topically as a vasoprotective agent. It is an approved medicine, and is also being studied for other uses; it is additionally known as a treatment for joint disease in animals.
 
-**Indication.** For the relief of bladder pain or discomfort associated with interstitial cystitis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72500089](https://www.wikidata.org/wiki/Q72500089) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

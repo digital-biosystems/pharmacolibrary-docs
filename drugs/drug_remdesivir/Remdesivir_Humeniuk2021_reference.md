@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Humeniuk2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,14 +27,12 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:31.447966+00:00) predates the upstream re-run (2026-10-03 10:45:22.495415+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Humeniuk R et al., Pharmacokinetic, Pharmacodynamic, and D…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-00984-5](https://doi.org/10.1007/s40262-021-00984-5)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

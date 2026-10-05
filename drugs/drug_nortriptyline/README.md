@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Nortriptyline hydrochloride, the active metabolite of [amitriptyline], is a tricyclic antidepressant (TCA).[L11878] It is used in the treatment of major depression and is also used off-label for chronic pain and other conditions.[L11881]
+Nortriptyline is a tricyclic antidepressant used for conditions such as pain, anxiety disorders, and attention deficit hyperactivity disorder. It is an approved medicine, though it does not appear to have a central European Union authorisation, and it has also been studied for other uses.
 
-**Indication.** Nortriptyline is indicated for the relief of the symptoms of major depressive disorder (MDD).[L11878] Some off-label uses for this drug include treatment of chronic pain, myofascial pain, neuralgia, and irritable bowel syndrome.[A191083,L11878]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q61387](https://www.wikidata.org/wiki/Q61387) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -74,8 +74,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` metabolism/substrate, `CYP2D6` inhibitor/metabolism/substrate, `CYP2E1` inhibitor, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in feces via biliary elimination…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

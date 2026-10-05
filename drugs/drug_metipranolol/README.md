@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A beta-adrenergic antagonist effective for both beta-1 and beta-2 receptors. It is used as an antiarrhythmic, antihypertensive, and antiglaucoma agent.
+Metipranolol is a non-selective beta blocker that was used to treat open-angle glaucoma and ocular hypertension, and also as an antihypertensive and antiarrhythmic agent. It has been withdrawn from use, though it was once an approved medicine.
 
-**Indication.** Indicated in the treatment of elevated intraocular pressure in patients with ocular hypertension or open angle glaucoma.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6593346](https://www.wikidata.org/wiki/Q6593346) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

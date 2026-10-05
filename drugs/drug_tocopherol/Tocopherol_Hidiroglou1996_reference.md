@@ -4,7 +4,7 @@
 
 # Tocopherol — `Tocopherol_Hidiroglou1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,11 +18,11 @@
 
 ### Reviewer guidance
 
-**The alpha-tocopherol record for sheep was refused because the paper reports no distribution volume and no clearance, and the elimination half-life 42.4 carries the unit /h instead of h, a dimension mismatch.**
+**The tocopherol record was rejected because the abstract-only source reports no distribution volume and no clearance, and the elimination half-life 42.4 carries the unit /h instead of h, a dimension mismatch on a structural parameter.**
 
-The record was built from the abstract alone, so reported summary statistics (Ka1 0.29 /h, half-life 42.4, MRT 46 h, AUC 290 micrograms/h per ml) stood in for a fitted model. The half-life 42.4 is given with unit /h, a dimension mismatch on a structural parameter. A second reader returned null for all four parameter values, disagreeing with each of them. Extracted — alpha-tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
+The paper (Hidiroglou_1996, sheep, alpha-tocopherol from dl-alpha-tocopherol acetate) was read at abstract level only, so summary statistics stood in for a fitted model. It reports kabs 0.29 /h, MRT 46 h and AUC 290 micrograms/h per ml, but no volume of distribution and no clearance or elimination rate, so it is an exposure/outcome paper rather than a compartmental population PK model. The terminal elimination half-life is given as 42.4 with unit /h, a dimension mismatch for a half-life that should be in h. A second reader also disputed the dose compound and analyte, the absence of the hydrolysis link from dl-alpha-tocopherol acetate to alpha-tocopherol, and read additional half-lives of 2.46 and 21.20 that this record left null. Extracted — tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant, ka1: this record has 0.29, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dl-alpha-tocopherol acetate, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -45,7 +45,7 @@ Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy scien
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| absorption rate constant, Ka1 | `Q49` · kabs | 0.29 | /h | 8.055555555555556e-05 | [1] / [h] | not captured | llm_confirmed (0.6) | Hidiroglou_1996:abstract | — | not captured |
+| absorption rate constant, Ka1 | `Q49` · kabs | 0.29 | /h | 8.055555555555556e-05 | [1] / [h] | not captured | exact (1.0) | Hidiroglou_1996:abstract | — | not captured |
 | elimination half-life | `Q57` · t1/2z | 42.4 | /h | not captured | [1] / [h] | not captured | llm (0.6) | Hidiroglou_1996:abstract, Hidiroglou_1996:abstract | — | not captured |
 | mean residence time | `Q53` · MRT | 46 | h | 165600.0 | [h] | not captured | exact (1.0) | Hidiroglou_1996:abstract | — | not captured |
 | area under the curve | `Q88` · AUC | 290 | micrograms/h per ml | not captured | [µg] / [[h] · [perml]] | not captured | exact (1.0) | Hidiroglou_1996:abstract | — | not captured |
@@ -64,7 +64,9 @@ Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy scien
 - dropped duplicate Q57 ('the second elimination half-life', value 21.2) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alpha-tocopherol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 6/6 row label(s) assigned, 2 linked by role; re-tagged alpha-tocopherol→parent ×7
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -75,21 +77,25 @@ Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy scien
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['dl-alpha-tocopherol acetate', 'alpha-tocopherol', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `parameters[absorption rate constant, ka1]` | 0.29 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[area under the curve]` | 290 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` | 42.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean residence time]` | 46 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q47 | mismatch |
+| `gpt-oss:120b` | `parameters[first absorption process elimination half-life]` | not captured | 2.46 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka1]` | not captured | 0.29 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[second elimination half-life]` | not captured | 21.20 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | dl-alpha-tocopherol acetate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | alpha-tocopherol | unknown | mismatch |
 
 </details>
 
@@ -134,4 +140,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 00:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 08:41 UTC</sub>

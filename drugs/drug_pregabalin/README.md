@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Pregabalin is structurally similar to gamma-aminobutyric acid (GABA) - an inhibitory neurotransmitter.[A173995] It may be used to manage neuropathic pain, postherpetic neuralgia, and fibromyalgia among other conditions.[A187190] Although as per the FDA Label the mechanism of action has not been definitively characterized, there is evidence that pregabalin exerts its effects by binding to the α2δ subunit of voltage-dependent calcium channels.[A187190,L7066] Pregabalin is marketed by Pfizer under the trade name Lyrica and Lyrica Cr (extended release).[L1006,L7066] It may have dependence liability if misused but the risk appears to be highest in patients with current or past substance use disorders.[A31161]
+Pregabalin is used for epilepsy, anxiety disorders, and various types of neuropathic pain such as neuralgia. It is widely used and authorised in the European Union, where several products remain on the market.
 
-**Indication.** Pregabalin is indicated for the management of neuropathic pain associated with diabetic peripheral neuropathy, postherpetic neuralgia, fibromyalgia, neuropathic pain associated with spinal cord injury, and as adjunctive therapy for the treatment of partial-onset seizures in patients 1 month of age and older.[L7066]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412174](https://www.wikidata.org/wiki/Q412174) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -60,11 +60,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…After oral dosing administered in the fasted state, pregabalin absorption is rapid, and ex…”</sub> | prose |
-| metabolism | kidney | <sub>“…excreted virtually unchanged in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `NAT2` metabolism | paper PGx gene |
 | metabolism | small intestine | `NAT2` metabolism | paper PGx gene |
-| excretion | kidney | <sub>“…almost exclusively eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA2D1 (modulator), SLC1A1 (other), SLC7A5 (substrate).</sub>
 

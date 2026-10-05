@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Icatibant is a synthetic decapeptide with 5 nonproteinogenic amino acid antagonist targeting the B<sub>2</sub> receptors with a similar affinity to bradykinin. It is resistant to bradykinin-cleaving enzyme degradation and has a potency of 2-3 times higher than earlier B<sub>2</sub> receptors antagonists, thus representing a new class of medication.[A4017,A263041] It was investigated as a potential treatment of hereditary angioedema (HAE) as bradykinin was implicated in HAE swelling; specifically, mice lacking B<sub>2</sub> receptors showed reduced swelling, thus demonstrating bradykinin involvement in the disease pathophysiology.[A4017,A263046]
+Icatibant is a bradykinin B2 receptor antagonist used to treat hereditary angioedema attacks. It is authorised in the European Union and used for this condition.
 
-Icatibant was approved by the FDA on August 25, 2011, and by the EMA in 2008 as a treatment for hereditary angioedema.[L49776,L49781] The FDA approval was based on positive results obtained from 3 double-blind, randomized, controlled clinical trials known as FAST 1, 2, and 3, where a median time to almost complete symptom relief was observed to be 8 hours compared to 36 hours for the placebo treatment.[L49776]
-
-**Indication.** Icatibant is indicated for the treatment of acute attacks of hereditary angioedema (HAE) in adults 18 years of age and older.[L49756]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q902379](https://www.wikidata.org/wiki/Q902379) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…primarily excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ANPEP (inhibitor), BDKRB2 (target).</sub>
 

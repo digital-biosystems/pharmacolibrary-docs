@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Chae2012_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714), gpt-5.6-luna (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,11 +19,11 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parameters[cl].value`: this record has 29.7, the second reading 52.6; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:52.400207+00:00) predates the upstream re-run (2026-10-03 12:30:05.587228+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:52.400207+00:00) predates the upstream re-run (2026-10-05 00:48:08.982575+00:00). Current validate status: `extracted`.
 
 ## Citation
 Chae JW et al., Population PK/PD analysis of metformin…, British journal of clinical… (2012)
@@ -68,7 +68,6 @@ Chae JW et al., Population PK/PD analysis of metformin…, British journal of cl
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- dropped unlinked row (NIL): 'r' — extend the ontology if this is a real PK parameter (source ['tab_1:row12:col2', 'tab_1:row12:col4'])
 
 **Extraction notes:**
 - unparsed cell tab_1:row4:col3 = '52.9 (48.5, 56.7)'
@@ -87,15 +86,15 @@ Chae JW et al., Population PK/PD analysis of metformin…, British journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 | `gpt-5.6-luna` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -104,8 +103,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[t]` | not captured | 0.50 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[v].rse_percent` | not captured | 22.1 | mismatch |
 | `gpt-5.6-luna` | `parameters[v].value` | 22.1 | 113 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | metformin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | metformin | unknown | mismatch |
 
 </details>
 
@@ -160,10 +157,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_modelica.zip" download>Metformin_Chae2012_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_modelica.zip" download>Metformin_Chae2012_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_fmi.zip" download>Metformin_Chae2012_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_matlab.zip" download>Metformin_Chae2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_matlab_simbio.zip" download>Metformin_Chae2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_matlab_simbio.zip" download>Metformin_Chae2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_sbml.zip" download>Metformin_Chae2012_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_reference/Metformin_Chae2012_reference_cellml.zip" download>Metformin_Chae2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
@@ -182,4 +179,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 12:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:48 UTC</sub>

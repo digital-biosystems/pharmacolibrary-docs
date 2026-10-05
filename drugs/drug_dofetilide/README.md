@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Dofetilide is a class III antiarrhythmic agent that is approved by the Food and Drug Administration (FDA) for the maintenance of sinus rhythm in individuals prone to the formation of atrial fibrillation and flutter, and for the chemical cardioversion to sinus rhythm from atrial fibrillation and flutter.
+Dofetilide is a class III antiarrhythmic used to treat heart rhythm problems, especially atrial fibrillation and atrial flutter. It is not authorised in the European Union, where its product was withdrawn; in the United States it is approved but restricted to hospital use because of a boxed warning for dangerous rhythm disturbances.
 
-**Indication.** For the maintenance of normal sinus rhythm (delay in time to recurrence of atrial fibrillation/atrial flutter [AF/AFl]) in patients with atrial fibrillation/atrial flutter of greater than one week duration who have been converted to normal sinus rhythm
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3712521](https://www.wikidata.org/wiki/Q3712521) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

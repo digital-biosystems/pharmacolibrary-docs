@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Refractory anaplastic astrocytoma (WHO grade III) and Glioblastoma multiforme (WHO grade IV) are primary malignant brain tumours with poor prognosis and limited treatment options. Despite considerable genetic heterogeneity, these tumours often have impaired DNA repair systems, rendering them initially sensitive to alkylating agents, although they invariably develop resistance to these agents over time.[A229848, A229858, L32033] Temozolomide is an imidazotetrazine prodrug that is stable at acidic pH but undergoes spontaneous nonenzymatic hydrolysis at neutral or slightly basic pH; these properties allow for both oral and intravenous administration.[A229853, A229888, A229923, L32033] Following initial hydrolysis, further reactions liberate a highly reactive methyl diazonium cation capable of methylating various residues on adenosine and guanine bases leading to DNA lesions and eventual apoptosis.[A229853, A229923] Temozomolide as an adjunct to radiotherapy followed by maintenance dosing remains the standard of care for both Glioblastoma and refractory anaplastic astrocytoma.[L32033]
+Temozolomide is an alkylating anticancer drug used to treat brain cancers such as glioblastoma, anaplastic astrocytoma and other gliomas, as well as melanoma. It is an approved medicine with several authorised products in the European Union, where it is used for glioma and neuroblastoma, and it is also being investigated for other uses.
 
-Temozolomide was granted FDA approval on August 11, 1999, as an oral capsule and subsequently on February 27, 2009, as an intravenous injection. It is currently marketed under the trademark TEMODAR® by Merck.[L32033]
-
-**Indication.** Temozolomide is indicated in adult patients for the treatment of newly diagnosed glioblastoma concomitantly with radiotherapy and for use as maintenance treatment thereafter. It is also indicated for the treatment of refractory anaplastic astrocytoma in adult patients or adjuvant therapy for adults with newly diagnosed anaplastic astrocytoma.[L48265]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425088](https://www.wikidata.org/wiki/Q425088) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,9 +52,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | small intestine | <sub>“…After absorption, temozolomide undergoes nonenzymatic chemical conversion…”</sub> | prose |
-| excretion | bile duct | <sub>“…only 0.8% in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…38% in the urine…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
 

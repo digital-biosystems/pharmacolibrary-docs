@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Deserpidine is an ester alkaloid drug isolated from Rauwolfia canescens (family Apocynaceae) with antipsychotic and antihypertensive properties that has been used for the control of high blood pressure and for the relief of psychotic behavior.
+Deserpidine, a Rauwolfia alkaloid, was used to treat high blood pressure and was also given for schizophrenia. It is no longer in use, as it is listed as a withdrawn drug.
 
-**Indication.** For the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5263885](https://www.wikidata.org/wiki/Q5263885) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

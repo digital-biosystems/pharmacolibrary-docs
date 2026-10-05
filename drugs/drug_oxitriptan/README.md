@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** 5-Hydroxytryptophan (5-HTP), also known as oxitriptan (INN), is a naturally occurring amino acid and metabolic intermediate in the synthesis of serotonin and melatonin. 5-HTP is sold over-the-counter in the United Kingdom, United States and Canada as a dietary supplement for use as an antidepressant, appetite suppressant, and sleep aid, and is also marketed in many European countries for the indication of major depression under trade names like Cincofarm, Levothym, Levotonine, Oxyfan, Telesol, Tript-OH, and Triptum. Several double-blind placebo-controlled clinical trials have demonstrated the effectiveness of 5-HTP in the treatment of depression, though a lack of high quality studies has been noted. More study is needed to determine efficacy in treating depression.
+Oxitriptan (5-HTP) is an antidepressant used for major depressive disorder. It is approved and also sold as a nutraceutical, with some investigational uses, though it has been withdrawn in some settings.
 
-**Indication.** For use as an antidepressant, appetite suppressant, and sleep aid.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q238544](https://www.wikidata.org/wiki/Q238544) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…in nervous tissue and in the liver…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

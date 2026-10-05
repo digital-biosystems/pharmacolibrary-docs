@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Fat emulsions such as Kabiven are injectable mixtures used to provide nutrition intravenously to patients who cannot be fed normally. They are given as intravenous solutions for parenteral nutrition, typically in hospital settings.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4206658](https://www.wikidata.org/wiki/Q4206658) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

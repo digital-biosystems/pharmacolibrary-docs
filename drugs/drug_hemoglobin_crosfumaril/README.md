@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Hemoglobin in which the alpha-subunit are cross-linked intramolecularly.
+Hemoglobin crosfumaril (DCLHb) is a modified human hemoglobin developed as a blood substitute for use as a replacement solution. It remained experimental and was never approved for routine clinical use.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

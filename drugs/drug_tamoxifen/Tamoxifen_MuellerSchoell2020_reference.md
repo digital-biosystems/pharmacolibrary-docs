@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Mueller-Schoell_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The tamoxifen-to-endoxifen metabolism link parameter CL23/F has no value in the record (a second reader read 0.459), and its reported unit could not be converted to SI, so this structural parameter failed a dimension check and the model was rejected.**
+**The tamoxifen-to-endoxifen metabolic clearance CL23/F has no value in the record (a second reader reads 0.459), and the absorption rate constant kabs (1.08) is reported without a usable unit, so the record was rejected.**
 
-The record lists the metabolism link from tamoxifen to endoxifen via CL23/F as of unknown kind with no extracted value, while the second reader assigned it 0.459 — a disagreement on the parameter that connects parent drug and metabolite. The rejection reason is a dimension mismatch on a structural parameter, consistent with this link parameter arriving without an SI value because its reported unit could not be converted. The other tamoxifen and endoxifen parameters (kabs 1.08 1/hour, tlag 0.442 hour, V/F 912 L, CL/F 5.10 and 5.07 L/hour, V1/F 400 L) are present with units. Extracted — tamoxifen: kabs 1.08 unit, tlag 0.442 hour, V/F 912 L, CL/F 5.07 L/hour; endoxifen: CL/F 5.1 L/hour, V1/F 400 L.
+The link parameter CL23/F, the clearance for metabolism of tamoxifen to endoxifen, is absent from the extracted parameters, while a second reader assigns it the value 0.459. The absorption rate constant kabs (1.08) is reported with the unit 'unit', which could not be converted to SI, so a dimension mismatch on a structural parameter was flagged. The remaining parameters (tlag 0.442 h, V/F 912 L, CL/F 5.10 and 5.07 L/h, V1/F 400 L for endoxifen) are present with consistent units. Extracted — tamoxifen: kabs 1.08 unit, tlag 0.442 hour, V/F 912 L, CL/F 5.07 L/hour; endoxifen: CL/F 5.1 L/hour, V1/F 400 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl23/f: this record has none, the second reading 0.459. That field does not shape the model.
 

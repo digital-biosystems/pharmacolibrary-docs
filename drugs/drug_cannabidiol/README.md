@@ -11,16 +11,9 @@
 
 ## About
 
-**Description.** Cannabidiol, or CBD, is one of at least 85 active cannabinoids identified within the Cannabis plant. It is a major phytocannabinoid, accounting for up to 40% of the Cannabis plant's extract, that binds to a wide variety of physiological targets of the endocannabinoid system within the body. Although the exact medical implications are currently being investigated, CBD has shown promise as a therapeutic and pharmaceutical drug target. In particular, CBD has shown promise as an analgesic, anticonvulsant, muscle relaxant, anxiolytic, antipsychotic and has shown neuroprotective, anti-inflammatory, and antioxidant activity, among other currently investigated uses [A32477, A32469]. CBD's exact place within medical practice is still currently hotly debated, however as the body of evidence grows and legislation changes to reflect its wide-spread use, public and medical opinion have changed significantly with regards to its usefulness in a number of medical conditions ranging from anxiety to epilepsy.
+Cannabidiol is an antiepileptic medicine used to treat certain epilepsy syndromes, including Lennox–Gastaut syndrome and myoclonic epilepsies. It is an approved medicine with an authorised product in the European Union, and is also being studied for other investigational uses.
 
-From a pharmacological perspective, Cannabis' (and CBD's) diverse receptor profile explains its potential application for such a wide variety of medical conditions. Cannabis contains more than 400 different chemical compounds, of which 61 are considered cannabinoids, a class of compounds that act upon endogenous cannabinoid receptors of the body [A32584]. Cannabinoid receptors are utilized endogenously by the body through the endocannabinoid system, which includes a group of lipid proteins, enzymes, and receptors that are involved in many physiological processes. Through its modulation of neurotransmitter release, the endocannabinoid system regulates cognition, pain sensation, appetite, memory, sleep, immune function, and mood among many other bodily systems. These effects are largely mediated through two members of the G-protein coupled receptor family, cannabinoid receptors 1 and 2 (CB1 and CB2)[A32585,A32824]. CB1 receptors are found in both the central and peripheral nerv
-
-**Indication.** When used in combination with delta-9-tetrahydrocannabinol as the product Sativex, cannabidiol was given a standard marketing authorization (ie. a Notice of Compliance (NOC)) by Health Canada for the following indications: 
-1) as adjunctive treatment for symptomatic relief of spasticity in adult patients with multiple sclerosis (MS) who have not responded adequately to other therapy and who demonstrate meaningful improvement during an initial trial of therapy [L886];
-
-Due to the need for confirmatory studies to verify the clinical benefit coupled with the promising nature of the clinical evidence, Sativex was also given a Notice of Compliance with Conditions (NOC/c) by Health Canada for the following indications: 
-1) as adjunctive treatment for the symptomatic relief of neuropathic pain in adult patients with multiple sclerosis; 
-2) as adjunctive analgesic treatment in adult patients with advanced cancer who experience moderate to severe pain during the highest tolerated dose of strong opioid therapy for persistent background pain [L886].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422917](https://www.wikidata.org/wiki/Q422917) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -91,7 +84,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | adipose tissue | <sub>“…redistribution into fatty tissues is rapid…”</sub> | prose |
+| absorption | adipose tissue | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
@@ -103,7 +96,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
 | distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| metabolism | bile duct | <sub>“…metabolized via the renal and biliary systems…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | heart | `CYP2J2` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/metabolism/substrate, `UGT1A9` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
@@ -111,8 +104,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | lung | `CYP1A1` inhibitor, `CYP1B1` inhibitor | DrugBank actor |
 | metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP2J2` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/metabolism/substrate, `UGT2B17` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | — | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | adrenal gland | `CYP17A1` inhibitor | DrugBank actor |
 | — | testis | `CYP17A1` inhibitor | DrugBank actor |
 

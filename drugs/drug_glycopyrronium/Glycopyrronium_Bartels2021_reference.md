@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/&quot;},{&quot;label&quot;:&quot;Bartels_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_model_based&quot;,&quot;label&quot;:&quot;Bartels_2013_model_based&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_noncompartmental&quot;,&quot;label&quot;:&quot;Bartels_2013_noncompartmental&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_population_mean_cv&quot;,&quot;label&quot;:&quot;Bartels_2013_population_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glycopyrronium — `Glycopyrronium_Bartels2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,6 +23,8 @@ The record lists kabs (absorption rate constant) with a value of 50 in L/h, a un
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:08.642216+00:00) predates the upstream re-run (2026-10-04 12:28:37.081315+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `indacaterol/glycopyrronium/mometasone furoate`, measured `glycopyrronium`.
 
 ## Citation
@@ -29,10 +32,10 @@ Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of
   ·  DOI: [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x)
 
 ## Model component
-<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_reference" status="rejected" stale="true" population="patients with asthma" measured-compound="glycopyrronium" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
+**Parameters:** 3 extracted, plus 4 covariate effects.
 
 **Parameterization:** V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -44,7 +47,10 @@ Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of
 | Vp/F (L) | `Q82` · V2/F | 1300 | L | 1.3 | [l] | not captured | exact (1.0) | Tab5:row6:col3 | — | not captured |
 | Ka (1/h) | `Q49` · kabs | 50 | L/h | not captured | [l] / [h] | not captured | exact (1.0) | Tab5:row7:col1 | — | not captured |
 | Duration of zero-order absorption (h) | `Q310` · D1 | 0.01 | h | 36.0 | [h] | not captured | exact (1.0) | Tab5:row8:col5 | — | not captured |
-| theta_q290_body_weight | `Q900` · theta_q290_body_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab5:row23:col3 | — | not captured |
+| body_weight_on_cl_f | `Q900` · body_weight_on_cl_f | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab5:row22:col3 | — | not captured |
+| body_weight_on_vc_f | `Q900` · body_weight_on_vc_f | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab5:row23:col3 | — | not captured |
+| body_weight_on_q_f | `Q900` · body_weight_on_q_f | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab5:row25:col1, Tab5:row25:col3, Tab5:row25:col5 | — | not captured |
+| body_weight_on_vp_f | `Q900` · body_weight_on_vp_f | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab5:row26:col1, Tab5:row26:col3, Tab5:row26:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,10 +64,10 @@ Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of
 - column 'ind' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'mf' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_mismatch: 'Ka (1/h)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'Body weight on CL/F' — extend the ontology if this is a real PK parameter (source ['Tab5:row22:col3'])
-- dropped unlinked row (NIL): 'Body weight on Q/F' — extend the ontology if this is a real PK parameter (source ['Tab5:row25:col1', 'Tab5:row25:col3', 'Tab5:row25:col5'])
-- dropped unlinked row (NIL): 'Body weight on Vp/F' — extend the ontology if this is a real PK parameter (source ['Tab5:row26:col1', 'Tab5:row26:col3', 'Tab5:row26:col5'])
-- covariate effect for Q290 has no base parameter row (kept as unattached equation-variable)
+- covariate level 'Body weight on CL/F' → Q900:body_weight_on_cl_f = 0.75 (linear_fractional on the model)
+- covariate level 'Body weight on Vc/F' → Q900:body_weight_on_vc_f = 1 (linear_fractional on the model)
+- covariate level 'Body weight on Q/F' → Q900:body_weight_on_q_f = 0.75 (linear_fractional on the model)
+- covariate level 'Body weight on Vp/F' → Q900:body_weight_on_vp_f = 1 (linear_fractional on the model)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=glycopyrronium
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -119,4 +125,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 08:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:28 UTC</sub>

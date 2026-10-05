@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Salsalate is a nonsteroidal anti-inflammatory agent for oral administration. Salsalate's mode of action as an anti-inflammatory and antirheumatic agent may be due to inhibition of synthesis and release of prostaglandins. The usefulness of salicylic acid, the active in vivo product of salsalate, in the treatment of arthritic disorders has been established. In contrast to aspirin, salsalate causes no greater fecal gastrointestinal blood loss than placebo. Salsalate is readily soluble in the small intestine where it is partially hydrolyzed to two molecules of salicylic acid. A significant portion of the parent compound is absorbed unchanged and undergoes rapid esterase hydrolysis in the body. The parent compound has an elimination half-life of about 1 hour. Salicylic acid (the active metabolite) biotransformation is saturated at anti-inflammatory doses of salsalate. Such capacity limited biotransformation results in an increase in the half-life of salicylic acid from 3.5 to 16 or more hours.
+Salsalate is a non-steroidal anti-inflammatory drug of the salicylic acid group used to treat pain, arthritis, and fever. It is an approved medicine, though it carries a boxed warning and is not authorised in the European Union.
 
-**Indication.** For relief of the signs and symptoms of rheumatoid arthritis, osteoarthritis and related rheumatic disorders.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1320691](https://www.wikidata.org/wiki/Q1320691) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,8 +36,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…readily soluble in the small intestine where it is partially hydrolyzed…”</sub> | prose |
-| metabolism | small intestine | <sub>“…readily soluble in the small intestine where it is partially hydrolyzed…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
 

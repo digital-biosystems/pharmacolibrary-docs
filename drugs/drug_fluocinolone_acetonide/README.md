@@ -10,21 +10,9 @@
 
 ## About
 
-**Description.** Fluocinolone acetonide, with the formula 6-alpha, 9-alpha-difluoro-16-alpha, 17 alpha-acetonide, is a corticosteroid that presents a high lipophilicity.[T357] It has been used extensively in dermatological preparations and it has also been investigated thoroughly for its use in implantable corticosteroid devices.[T358] This type of device containing fluocinolone acetonide was developed by Taro Pharmaceuticals and approved by FDA in May 2016.[L4676]
+Fluocinolone acetonide is a potent corticosteroid used to reduce inflammation and itching, mainly in skin conditions, and also in preparations for haemorrhoids, eye and ear inflammation. It is an approved medicine, used in topical dermatological, rectal, ophthalmic and otological products, and is also approved for veterinary use.
 
-**Indication.** Fluocinolone acetonide has been used extensively in different medical areas.
-
--In dermatology, it is extensively used for the relief of inflammatory dermatosis, dermatitis, psoriasis, hypertrophic tissues, keloid tissues and atopic dermatitis.[F1955]
-
--It has been used in shampoo products as a low to medium potency corticosteroid for the treatment of seborrheic dermatitis of the scalp.[L4682]
-
--In ear drops, it is used as a low to medium potency corticosteroid for the treatment of chronic eczematous external otitis in adults and pediatric patients 2 years and older.[L4683]
-
--As an intravitreal implant, it is indicated for the treatment of diabetic macular edema with patients that have been previously treated with a course of corticosteroids and no clinically significant rise in intraocular pressure.[L4684]
-
--Fluocinolone acetonide was announced on October 15, 2018 to be FDA approved for the treatment of chronic non-infectious uveitis affecting the posterior segment of the eye.[L4685]
-
--Some reports have indicated the use of fluocinolone acetonide as a vasoprotective agent and for its use in the treatment of first-degree hemorrhoids.[A39532]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q924467](https://www.wikidata.org/wiki/Q924467) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,10 +39,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…topical administration of fluocinolone acetonide produces a percutaneous absorption…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…mainly excreted by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ANXA1 (inducer), ANXA2 (inducer), ANXA3 (inducer), ANXA4 (inducer), ANXA5 (inducer), NR3C1 (target), PLA2G1B (inhibitor), SERPINA6 (binder).</sub>
 

@@ -7,11 +7,17 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Silicones are used for functional gastrointestinal disorders. They are classified in the ATC system under drugs for the alimentary tract, indicating ongoing use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q146439](https://www.wikidata.org/wiki/Q146439) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 22:30 | 16:43 | 0/0/0 | 0/0/0 | 0/0/0 | 95,400/2,833 | ollama / qwen3.8:27b-mtp-q8_0 | 40 | 6/34 | 37/3 | 0 |
+| 2026-10-04 13:11 | 10:18 | 0/0/0 | 0/0/0 | 0/0/0 | 360,401/9,482 | ollama / qwen3.8:27b-mtp-q8_0 | 40 | 6/34 | 37/3 | 0 |
 
 ## popPK records
 
@@ -36,167 +42,167 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Reddy_2008.pdf` | Reddy MB et al., Inhalation dosimetry modeling with deca…, Toxicological sciences : an… (2008) | popPK | 9 | [10.1093/toxsci/kfn125](https://doi.org/10.1093/toxsci/kfn125) | [18583370](https://pubmed.ncbi.nlm.nih.gov/18583370) | The paper describes a PBPK model for a silicone (D5) with quantitative parameters, but the specific numeric values are not present in the provided evidence text. |
-| `Schmitt_2023.pdf` | Schmitt BG et al., Comparative pharmacokinetic studies of…, Toxicology letters (2023) | popPK | 9 | [10.1016/j.toxlet.2022.10.008](https://doi.org/10.1016/j.toxlet.2022.10.008) | [36332816](https://pubmed.ncbi.nlm.nih.gov/36332816) | The paper is a pharmacokinetic study of D4 (a silicone) in rats, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
+| `Schmitt_2023.pdf` | Schmitt BG et al., Comparative pharmacokinetic studies of…, Toxicology letters (2023) | popPK | 10 | [10.1016/j.toxlet.2022.10.008](https://doi.org/10.1016/j.toxlet.2022.10.008) | [36332816](https://pubmed.ncbi.nlm.nih.gov/36332816) | The study reports pharmacokinetic parameters for octamethylcyclotetrasiloxane (a silicone) in rats, but the specific numeric values are not present in the provided evidence. |
+| `Reddy_2008.pdf` | Reddy MB et al., Inhalation dosimetry modeling with deca…, Toxicological sciences : an… (2008) | popPK | 9 | [10.1093/toxsci/kfn125](https://doi.org/10.1093/toxsci/kfn125) | [18583370](https://pubmed.ncbi.nlm.nih.gov/18583370) | The paper describes a PBPK model for a silicone (D5) in rats and humans, but the specific numeric parameter values are not listed in the provided abstract text. |
 
-<sub>queue written 2026-09-29T22:30:39.562095+00:00</sub>
+<sub>queue written 2026-10-04T13:11:53.154265+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abraham_1993 | irrelevant | 0 | 0 | The paper studies the pharmacodynamic effects of a leukotriene antagonist (ONO-1078) in sheep and does not involve silicones or report any pharmacokinetic parameters. |
-| popPK | Addicks_1988 | irrelevant | 0 | 0 | The study is an in-vitro methodology paper using silicone rubber membranes as a barrier, not a pharmacokinetic study of silicones as a drug. |
-| popPK | Ala-Houhala_1987 | irrelevant | 0 | 0 | The study investigates renal clearance of dextran and proteins in nephropathy patients and does not involve silicones or report pharmacokinetic parameters for silicones. |
-| popPK | Alkhatib_2026 | irrelevant | 0 | 0 | The study investigates dopamine D4 receptor ligands, not silicones. |
-| popPK | Annelin_1989 | irrelevant | 2 | 0 | The study reports bioconcentration/uptake levels in fish rather than quantitative pharmacokinetic disposition parameters (CL, V, ka) for silicones. |
-| popPK | Aquino_2020 | irrelevant | 0 | 0 | The paper is a clinical case report on hemophilia and ocular surgery where silicone oil is used as a surgical tamponade, not a pharmacokinetic study of silicones. |
-| popPK | Asghar_2022 | irrelevant | 0 | 0 | The study focuses on the formulation of ciprofloxacin (CPN) using silicone oil as an excipient, not on the pharmacokinetics of silicones as the subject drug. |
-| popPK | Bein_2018 | irrelevant | 0 | 0 | The paper is a review of microfluidic organ-on-a-chip models and does not report pharmacokinetic parameters for silicones as a drug. |
-| popPK | Benowitz_1994 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of nicotine and cotinine, not silicones. |
-| popPK | Biollaz_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of L-648,051, not silicones. |
+| popPK | Abraham_1993 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of a leukotriene antagonist in sheep and does not report pharmacokinetic parameters for silicones. |
+| popPK | Addicks_1988 | irrelevant | 0 | 0 | The study is an in vitro methodology paper using methyl p-aminobenzoate as a test permeant, not a pharmacokinetic study of silicones. |
+| popPK | Ala-Houhala_1987 | irrelevant | 0 | 0 | The study measures renal clearance of dextran and proteins in nephropathy patients and does not involve the drug silicones. |
+| popPK | Alkhatib_2026 | irrelevant | 0 | 0 | The study investigates dopamine D4 receptor ligands (triazole analogs), not the drug silicones. |
+| popPK | Annelin_1989 | irrelevant | 2 | 1 | The study reports bioconcentration/uptake levels (ppm) in fish rather than quantitative pharmacokinetic disposition parameters (CL, V, ka, t1/2) or compartmental models. |
+| popPK | Aquino_2020 | irrelevant | 0 | 0 | The paper is a clinical case report on hemophilia and ocular surgery, with no pharmacokinetic data for silicones. |
+| popPK | Asghar_2022 | irrelevant | 0 | 0 | The study focuses on the formulation of ciprofloxacin (CPN) using silicone oil as an excipient, not on the pharmacokinetics of silicones as a drug. |
+| popPK | Bein_2018 | irrelevant | 0 | 0 | The paper is a review of microfluidic organ-on-a-chip models for the intestine and does not report pharmacokinetic parameters for silicones. |
+| popPK | Benowitz_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of nicotine and cotinine, not silicones. |
+| popPK | Biollaz_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of L-648,051 (a leukotriene D4-receptor antagonist), not silicones. |
 | popPK | Bisagni_2014 | irrelevant | 0 | 0 | The paper describes the cloning and characterization of a Baeyer-Villiger monooxygenase enzyme, not the pharmacokinetics of silicones. |
-| popPK | Bleher_2026 | irrelevant | 0 | 0 | The paper evaluates a PET tracer ([18F]FER) for amyloid imaging and does not study the pharmacokinetics of silicones. |
-| popPK | Bouhadjari_2016 | irrelevant | 0 | 0 | The study focuses on cisplatin and amifostine in the context of renal impairment, with no mention of silicones or their pharmacokinetic parameters. |
-| popPK | Campaña-Seoane_2014 | irrelevant | 0 | 0 | The study focuses on the formulation and release kinetics of progesterone using a silicone derivative as an excipient, rather than reporting pharmacokinetic parameters for silicones as the subject drug. |
-| popPK | Campaña-Seoane_2019 | irrelevant | 0 | 0 | The study focuses on ciprofloxacin as the subject drug, with silicones serving only as a formulation excipient (W/S emulsion), and no PK parameters for silicones are reported. |
-| popPK | Carius_2024 | irrelevant | 0 | 0 | The study focuses on testosterone as a model compound to address PDMS adsorption issues in an in-vitro system, not on the pharmacokinetics of silicones as a subject drug. |
-| popPK | Chang_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isoborneol, borneol, muscone, and cinnamaldehyde, not silicones. |
-| popPK | Chapman_1992 | irrelevant | 0 | 0 | The study investigates drug uptake and washout kinetics in intraocular lenses (materials), not the pharmacokinetic disposition parameters (CL, V, etc.) of silicones as a subject drug in a biological system. |
+| popPK | Bleher_2026 | irrelevant | 0 | 0 | The study evaluates a PET tracer ([18F]fluoroethylresorufin) for amyloid imaging, not the pharmacokinetics of the drug silicones. |
+| popPK | Bouhadjari_2016 | irrelevant | 0 | 0 | The study focuses on cisplatin and amifostine in a clinical setting and does not report pharmacokinetic parameters for silicones. |
+| popPK | Campaña-Seoane_2014 | irrelevant | 0 | 0 | The study focuses on progesterone delivery using a silicone derivative (cyclomethicone) as an excipient, not on the pharmacokinetics of silicones as the subject drug. |
+| popPK | Campaña-Seoane_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciprofloxacin, not silicones, which are only used as a component of the emulsion vehicle. |
+| popPK | Carius_2024 | irrelevant | 0 | 0 | The study focuses on the adsorption/absorption of drugs (specifically testosterone) by PDMS (a silicone polymer) in an in vitro model, not the pharmacokinetics of silicones as a drug. |
+| popPK | Chang_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of volatile compounds (isoborneol, borneol, etc.) from a traditional Chinese medicine, not the drug silicones. |
+| popPK | Chapman_1992 | irrelevant | 0 | 0 | The study measures drug uptake and washout in silicone intraocular lenses (materials), not the pharmacokinetics of silicone drugs in a biological system. |
 | popPK | Christensen_1990 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of QMPB (a leukotriene antagonist), not silicones. |
-| popPK | Clasky_2022 | irrelevant | 0 | 0 | The study models drug transport from intraocular lenses made of PDMS (a silicone material), but the subject drugs are dexamethasone, ganciclovir, and dextran, not silicones. |
-| popPK | Claus_2013 | irrelevant | 0 | 0 | The paper studies augmented renal clearance in ICU patients receiving antimicrobials and does not report pharmacokinetic parameters for silicones. |
-| popPK | Cui_2024 | irrelevant | 0 | 0 | The paper describes the antibacterial properties of lignin-based polyurethane biofoams and does not report pharmacokinetic parameters for silicones. |
-| popPK | Davies_2020 | irrelevant | 0 | 0 | The study focuses on in vitro and computational modeling of drug delivery (ibuprofen/dextran) from silicone oil, not the pharmacokinetics of silicones as the subject drug. |
-| popPK | Davydova_2000 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of clemastine, not silicones, and silicones are only mentioned as the stationary phase material in the chromatography column. |
-| popPK | Dekant_2016 | irrelevant | 2 | 0 | The paper is a toxicology review of D5 (a siloxane) that discusses qualitative clearance pathways (evaporation, exhalation) but does not report quantitative pharmacokinetic parameters (CL, V, ka) or population-PK models. |
-| popPK | Del_1998 | irrelevant | 0 | 0 | The study uses silicone oil as a vehicle to induce hydrocephalus in rabbits to measure neurotransmitter levels, not to characterize the pharmacokinetics of silicones. |
-| popPK | Delaere_1994 | irrelevant | 0 | 0 | The paper is a surgical study on tracheal autografts using silicone dye as a diagnostic agent, not a pharmacokinetic study of silicones. |
-| popPK | Eu_2024 | irrelevant | 0 | 0 | The paper describes a 3D printed silicone surgical simulator for training, not a pharmacokinetic study of silicones as a drug. |
-| popPK | Ferro_2025 | irrelevant | 0 | 0 | The paper is a review of drug dosing in silicone oil-filled eyes where silicone oil is the ocular environment/comparator, not the subject drug for PK parameter extraction. |
+| popPK | Clasky_2022 | irrelevant | 0 | 0 | The study is an in silico computational fluid dynamics model of drug release from intraocular lenses, focusing on dexamethasone, ganciclovir, and dextran, not the pharmacokinetics of silicones as a subject drug. |
+| popPK | Claus_2013 | irrelevant | 0 | 0 | The study focuses on augmented renal clearance in ICU patients receiving antimicrobial therapy and does not report pharmacokinetic parameters for silicones. |
+| popPK | Cui_2024 | irrelevant | 0 | 0 | The paper describes the synthesis and antibacterial properties of lignin-based polyurethane biofoams, not the pharmacokinetics of silicones. |
+| popPK | Davies_2020 | irrelevant | 0 | 0 | The study is an in vitro/computational model of drug delivery (ibuprofen/dextran) from silicone oil, not a pharmacokinetic study of silicones as a subject drug. |
+| popPK | Davydova_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of clemastine, not silicones. |
+| popPK | Dekant_2016 | irrelevant | 0 | 0 | The paper is a review of toxicology and toxicokinetics (qualitative pathways) without reporting quantitative pharmacokinetic parameters (CL, V, etc.) for silicones. |
+| popPK | Del_1998 | irrelevant | 0 | 0 | The study measures neurotransmitter concentrations in rabbit brain tissue following silicone oil injection for hydrocephalus induction, not the pharmacokinetic parameters of silicones. |
+| popPK | Delaere_1994 | irrelevant | 0 | 0 | The study is a surgical/morphometric analysis of tracheal autografts using silicone dye as a tracer, not a pharmacokinetic study of silicones as a drug. |
+| popPK | Eu_2024 | irrelevant | 0 | 0 | The paper describes a 3D printed silicone surgical simulator for training, not the pharmacokinetics of silicones as a drug. |
+| popPK | Ferro_2025 | irrelevant | 0 | 0 | The paper is a review of drug dosing in silicone oil-filled eyes, where silicone oil is the ocular environment/comparator, not the subject drug for PK parameter extraction. |
 | popPK | Fisher_2003 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
-| popPK | Flores-Villalobos_2018 | irrelevant | 0 | 0 | The study is an in-vitro release study of dexamethasone implants in silicone oil, not a pharmacokinetic study of silicones as the subject drug. |
-| popPK | Fogli_2014 | irrelevant | 0 | 0 | The paper describes an eye phantom for surgical training and uses bevacizumab as a test drug, not silicones as the subject drug for PK parameter extraction. |
-| popPK | Foster_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of peptide leukotrienes, not silicones. |
+| popPK | Flores-Villalobos_2018 | irrelevant | 0 | 0 | The study is an in-vitro release study of dexamethasone in silicone oil, not a pharmacokinetic study of silicones as a drug. |
+| popPK | Fogli_2014 | irrelevant | 0 | 0 | The paper describes an eye phantom for surgical training and drug diffusion testing, not a pharmacokinetic study of silicones as a subject drug. |
+| popPK | Foster_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of peptide leukotrienes (C4, D4, E4), not silicones. |
 | popPK | Galbinur_2026 | irrelevant | 0 | 0 | The paper is a clinical ophthalmology study comparing visual outcomes of gas vs. silicone oil tamponades for retinal detachment, not a pharmacokinetic study of silicones as a drug. |
-| popPK | Ganbo_1995 | irrelevant | 0 | 0 | The paper investigates the effect of leukotrienes on mucociliary clearance, not the pharmacokinetics of silicones. |
+| popPK | Ganbo_1995 | irrelevant | 0 | 0 | The paper investigates the effect of leukotrienes on mucociliary clearance in guinea pigs and chinchillas, which is unrelated to the pharmacokinetics of silicones. |
 | popPK | Geretti_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of RO7239958 (an antisense oligonucleotide), not silicones. |
 | popPK | Golani_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of KRM-II-81 and its deuterated analog, not silicones. |
 | popPK | Grein-Iankovski_2024 | irrelevant | 0 | 0 | The paper describes the fabrication of silicone cilia for medical devices and their interaction with mucus, containing no pharmacokinetic data for silicones as a drug. |
-| popPK | Gross_2015 | irrelevant | 0 | 0 | The paper describes a 3D-printed fluidic device using PDMS coatings for cell adherence and lysis, containing no pharmacokinetic data for silicones. |
-| popPK | Gruber_1989 | irrelevant | 0 | 0 | The study focuses on cyclosporine pharmacokinetics and toxicity, with silicones mentioned only as a component of pump tubing that leaches the drug, not as the subject drug for PK analysis. |
-| popPK | Gulbins_1991 | irrelevant | 0 | 0 | The paper studies the effects of leukotrienes on renal microcirculation and does not involve silicones or report pharmacokinetic parameters for them. |
-| popPK | Guo_2024 | irrelevant | 0 | 0 | The study focuses on the formulation of rapamycin nanoparticles using PDMS chips, not the pharmacokinetics of silicones as a subject drug. |
-| popPK | Güler_2026 | irrelevant | 0 | 0 | The paper is a clinical ophthalmology study on retinal detachment repair using silicone oil as a tamponade agent, not a pharmacokinetic study of silicones as a drug. |
-| popPK | Hammer_2022 | irrelevant | 0 | 0 | The study investigates the physicochemical distribution of other drugs (vancomycin, ceftazidime, voriconazole) in silicone oil, not the pharmacokinetic parameters of silicones themselves. |
-| popPK | Harrison_2025 | irrelevant | 0 | 0 | The study investigates rencofilstat for MASH and does not report pharmacokinetic parameters for silicones. |
-| popPK | Heinig_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of BAY x 7195, not silicones. |
-| popPK | Hickey_1996 | irrelevant | 0 | 0 | The study investigates the in vitro uptake of isoflurane by membrane oxygenators (one of which is made of silicone), but it is not a pharmacokinetic study of silicones as the subject drug. |
-| popPK | Hira_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vancomycin, with silicone oil acting as a covariate/comparator rather than the subject drug. |
-| popPK | Hirakata_1992 | irrelevant | 0 | 0 | The study focuses on the immunomodulatory effects of erythromycin on Pseudomonas aeruginosa and does not involve silicones or pharmacokinetic parameter estimation. |
-| popPK | Holm_1978 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of antibiotics, not silicones. |
-| popPK | Hu_2015 | irrelevant | 0 | 0 | The paper is a fluid dynamics study on mucus plug rupture using Carbopol gels in a PDMS microfluidic channel and does not report pharmacokinetic parameters for silicones. |
-| popPK | Huang_2023 | irrelevant | 0 | 0 | The study investigates brimonidine as the subject drug using silicone rubber/PDMS as a delivery device, rather than reporting pharmacokinetic parameters for silicones themselves. |
-| popPK | Huang_2025 | irrelevant | 0 | 0 | The paper is a clinical ophthalmology study on surgical implantation of a vitreous body and does not report pharmacokinetic parameters for silicones. |
-| popPK | Imamura_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vancomycin and ceftazidime, with silicone oil serving only as a comparator condition or medium, not as the subject drug. |
-| popPK | Jann_1993 | irrelevant | 0 | 0 | The paper is a review of clozapine pharmacokinetics and does not study silicones. |
-| popPK | Jayadev_2026 | irrelevant | 0 | 0 | The paper is a review of silicone oil emulsification in ophthalmology and does not report quantitative population pharmacokinetic parameters for silicones. |
-| popPK | Jhaveri_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carvedilol, not silicones. |
-| popPK | Jiang_2025 | irrelevant | 0 | 0 | The paper describes an LC-MS/MS method for BTK inhibitors (ibrutinib, etc.) and does not involve silicones or report any pharmacokinetic parameters for them. |
+| popPK | Gross_2015 | irrelevant | 0 | 0 | The paper describes a 3D-printed fluidic device using PDMS coatings for cell lysis, not a pharmacokinetic study of silicones. |
+| popPK | Gruber_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine, not silicones. |
+| popPK | Gulbins_1991 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of leukotrienes on renal microcirculation in rats and does not report pharmacokinetic parameters for silicones. |
+| popPK | Guo_2024 | irrelevant | 0 | 0 | The study focuses on the formulation of rapamycin nanoparticles using PDMS (a silicone polymer) as a microfluidic chip material, not on the pharmacokinetics of silicones as a drug. |
+| popPK | Güler_2026 | irrelevant | 0 | 0 | The paper is a clinical ophthalmology study evaluating retinal displacement after vitrectomy using silicone oil as a tamponade agent, not a pharmacokinetic study of silicones as a drug. |
+| popPK | Hammer_2022 | irrelevant | 0 | 0 | The study investigates the physicochemical properties of other drugs (vancomycin, ceftazidime, voriconazole) in silicone oil, not the pharmacokinetics of silicones as a subject drug. |
+| popPK | Harrison_2025 | irrelevant | 0 | 0 | The study evaluates the drug rencofilstat in humans and does not involve silicones or report any pharmacokinetic parameters for silicones. |
+| popPK | Heinig_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of BAY x 7195 (a leukotriene antagonist), not silicones. |
+| popPK | Hickey_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of isoflurane, not silicones, and is an in-vitro study of oxygenator materials. |
+| popPK | Hira_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vancomycin, not silicones; silicones (silicone oil) is only a co-administered agent affecting the drug's disposition. |
+| popPK | Hirakata_1992 | irrelevant | 0 | 0 | The study investigates the immunomodulatory and virulence-suppressing effects of erythromycin on Pseudomonas aeruginosa, not the pharmacokinetics of silicones. |
+| popPK | Holm_1978 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of antibiotics in rabbits and humans, not silicones. |
+| popPK | Hu_2015 | irrelevant | 0 | 0 | The paper is a fluid dynamics study of mucus plug rupture using Carbopol gels in a microfluidic channel and does not report pharmacokinetic parameters for silicones. |
+| popPK | Huang_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of brimonidine (a glaucoma drug) delivered via a silicone rubber implant, not the pharmacokinetics of silicones as a drug. |
+| popPK | Huang_2025 | irrelevant | 0 | 0 | The paper is a clinical ophthalmology study on the surgical implantation of a foldable capsular vitreous body (FCVB) and does not report pharmacokinetic parameters for silicones. |
+| popPK | Imamura_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vancomycin and ceftazidime, not for silicones (which is only the ocular fill material). |
+| popPK | Jann_1993 | irrelevant | 0 | 0 | The paper is a review of clozapine pharmacokinetics, not silicones. |
+| popPK | Jayadev_2026 | irrelevant | 0 | 0 | The paper is a review of silicone oil emulsification complications and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for silicones. |
+| popPK | Jhaveri_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of carvedilol, not silicones. |
+| popPK | Jiang_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of BTK inhibitors (ibrutinib, zanubrutinib, etc.) and does not involve silicones. |
 | popPK | Johnston_2024 | irrelevant | 0 | 0 | The paper is a clinical review of tracheal replacement methods and does not report pharmacokinetic parameters for silicones. |
-| popPK | Jørgensen_2018 | irrelevant | 0 | 0 | The paper is a study on lymphedema models in mice where silicone is used only as a surgical splint material, not as a drug subject to pharmacokinetic analysis. |
-| popPK | Kancharla_2016 | irrelevant | 0 | 0 | The paper describes a pharmacokinetic study for desvenlafaxine, not silicones. |
-| popPK | Kataoka_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of verapamil and its metabolite norverapamil, not silicones. |
-| popPK | Keegan_2013 | irrelevant | 0 | 0 | The paper focuses on the photobiology and bioavailability of vitamin D in mushrooms, not the pharmacokinetics of silicones. |
-| popPK | Kim_2025 | irrelevant | 0 | 0 | The study focuses on the mechanical and rheological properties of a silicone implant device and in-vitro drug release, not the pharmacokinetics of silicones as a drug. |
-| popPK | Kim_2025_2 | irrelevant | 0 | 0 | The paper focuses on mRNA-LNP vaccine delivery via microneedles, where silicone is only mentioned as a material for the microneedle surface, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Jørgensen_2018 | irrelevant | 0 | 0 | The paper describes a lymphedema model in mice using a silicone splint as a surgical tool, not a pharmacokinetic study of silicones as a drug. |
+| popPK | Kancharla_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of desvenlafaxine, not silicones. |
+| popPK | Kataoka_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of verapamil and its metabolite norverapamil, not silicones. |
+| popPK | Keegan_2013 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics and bioavailability of vitamin D, not silicones. |
+| popPK | Kim_2025 | irrelevant | 0 | 0 | The study focuses on the mechanical and rheological properties of a silicone-based drug delivery device and in vitro release kinetics, not the pharmacokinetics of silicones as a drug. |
+| popPK | Kim_2025_2 | irrelevant | 0 | 0 | The paper focuses on mRNA-LNP vaccine delivery via microneedles and does not report pharmacokinetic parameters for silicones. |
 | PD | Kossovsky_1995 | not_relevant | 1 | 0 | The paper is a review discussing the physicochemical and immunological basis of silicone pathophysiology and does not report specific numeric pharmacodynamic parameters or exposure-response curves. |
 | popPK | Kouassi_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levamisole, not silicones. |
-| popPK | Kubota_1993 | irrelevant | 0 | 0 | The study focuses on the percutaneous absorption of betamethasone 17-valerate using a silicone adhesive as a vehicle, not on the pharmacokinetics of silicones as the subject drug. |
-| popPK | Le_2025 | irrelevant | 0 | 0 | The paper investigates bacterial adhesion and biofilm formation on PDMS surfaces, not the pharmacokinetics of silicones. |
-| popPK | Lee_1992 | irrelevant | 0 | 0 | The study investigates the effects of erythropoietin on peritoneal transport and immune response in CAPD patients and does not involve silicones or report pharmacokinetic parameters for silicones. |
-| popPK | Li_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the radiotracer [18F]-D4-FCH, not silicones. |
+| popPK | Kubota_1993 | irrelevant | 0 | 0 | The study focuses on the percutaneous absorption of betamethasone 17-valerate using a silicone adhesive as a vehicle, not the pharmacokinetics of silicones as the subject drug. |
+| popPK | Le_2025 | irrelevant | 0 | 0 | The paper investigates bacterial adhesion and biofilm formation on PDMS (silicone) surfaces, not the pharmacokinetics of silicones as a drug. |
+| popPK | Lee_1992 | irrelevant | 0 | 0 | The study investigates the effects of erythropoietin on peritoneal transport and immune response in CAPD patients, and does not report pharmacokinetic parameters for silicones. |
+| popPK | Li_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the radiotracer [18F]-D4-FCH (choline), not the drug silicones. |
 | popPK | Li_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pyrotinib, not silicones. |
-| popPK | Li_2023 | irrelevant | 0 | 0 | The paper describes a bioanalytical method for ensartinib (an ALK inhibitor), not silicones, and does not report PK parameters for the target drug. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes a wearable device for sepsis treatment using PDMS microspheres as a therapeutic material, not a pharmacokinetic study of silicones as a drug. |
-| popPK | Libreros_2023 | irrelevant | 0 | 0 | The paper investigates the immunological role of resolvin D4 in neutrophil deployment and contains no pharmacokinetic data for silicones. |
-| popPK | Linares-Ramírez_2024 | irrelevant | 0 | 0 | The paper is a systematic review of simethicone (a silicone-based defoamer) for endoscopic visualization, not a pharmacokinetic study, and contains no PK parameters. |
-| popPK | Liu_2016 | irrelevant | 0 | 0 | The study focuses on the release kinetics of dexamethasone from silicone carriers, not the pharmacokinetic disposition parameters of silicones themselves. |
-| popPK | Liu_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic paper on a PDMS chip using tolbutamide and testosterone as probes, not a pharmacokinetic study of silicones as the subject drug. |
+| popPK | Li_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ensartinib (an ALK inhibitor), not silicones. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes a sepsis treatment device using PDMS microspheres for bacterial removal, not a pharmacokinetic study of silicones as a drug. |
+| popPK | Libreros_2023 | irrelevant | 0 | 0 | The paper investigates the immunological role of resolvin D4 in neutrophil deployment and does not report pharmacokinetic parameters for silicones. |
+| popPK | Linares-Ramírez_2024 | irrelevant | 0 | 0 | The paper is a systematic review of clinical trials evaluating the efficacy of simethicone (a silicone-based defoaming agent) for improving endoscopic visualization, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Liu_2016 | irrelevant | 0 | 0 | The study investigates the release kinetics of dexamethasone from silicone implants, not the pharmacokinetics of silicones as a drug. |
+| popPK | Liu_2017 | irrelevant | 0 | 0 | The study is an in vitro method development using PDMS (polydimethylsiloxane) as a material, not a pharmacokinetic study of silicones as a drug. |
 | popPK | Liu_2025 | irrelevant | 0 | 0 | The paper is a metabolomics study on chronic hepatitis B biomarkers and does not report pharmacokinetic parameters for silicones. |
 | popPK | Lorenzini_2017 | irrelevant | 0 | 0 | The study focuses on the analytical recovery and stability of 3-iodothyronamine (T1AM), not the pharmacokinetics of silicones. |
-| popPK | Lu_2018 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of acetaminophen and oxycodone, not silicones. |
-| popPK | Lu_2020 | irrelevant | 0 | 0 | The study focuses on the physical chemistry of silicone oil emulsification (viscosity, interfacial tension) in an in-vitro model, not on the pharmacokinetic disposition parameters of silicones as a drug. |
+| popPK | Lu_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acetaminophen and oxycodone, not silicones. |
+| popPK | Lu_2020 | irrelevant | 0 | 0 | The study investigates the physical properties (emulsification, viscosity, interfacial tension) of silicone oil additives in an in-vitro eye-on-a-chip model, not the pharmacokinetic disposition parameters of silicones as a drug. |
 | popPK | Lucas_1992 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of fluoxetine, not silicones. |
-| popPK | McClung_1983 | irrelevant | 0 | 0 | The paper is a review of prosthetic heart valves and does not report pharmacokinetic parameters for silicones. |
-| popPK | McElnay_1982 | irrelevant | 0 | 0 | The study focuses on chloroquine and pyrimethamine, and silicones (dimethicone) are only mentioned as a comparator agent that did not affect absorption, with no PK parameters reported for silicones. |
-| popPK | Menzel_2023 | irrelevant | 0 | 0 | The paper focuses on the analysis and release of dimethylsilanediol from equipment and its removal via downstream processing, not on pharmacokinetic disposition parameters (CL, V, etc.) in biological systems. |
-| popPK | Mohammed_2024 | irrelevant | 0 | 0 | The study investigates the impact of packaging on acyclovir cream performance, where silicones (dimethicone) are only excipients, and no pharmacokinetic parameters for silicones are reported. |
-| popPK | Moore_2025 | irrelevant | 0 | 0 | The paper describes a microfluidic device for modeling mucociliary clearance and does not study the pharmacokinetics of silicones. |
-| popPK | Nagayasu_1992 | irrelevant | 0 | 0 | The paper describes a hydraulic vascular model using silicone tubes to study hemodynamics, not the pharmacokinetics of silicones as a drug. |
-| popPK | Nakamura_2024 | irrelevant | 0 | 0 | The paper studies prostaglandin transport by SLCO2A1 in cells and does not involve silicones or pharmacokinetic parameters. |
-| popPK | Nau_1982 | irrelevant | 0 | 0 | The study focuses on cyclophosphamide and its deuterated derivatives, not silicones. |
-| popPK | Noonan_1985 | irrelevant | 0 | 0 | The paper studies pulmonary microcirculatory responses to leukotrienes in sheep and does not involve silicones or pharmacokinetic parameters. |
-| popPK | ODonnell_1991 | irrelevant | 0 | 0 | The paper studies Ro 24-5913, a leukotriene antagonist, and does not involve silicones or report pharmacokinetic parameters for them. |
-| popPK | Omali_2025 | irrelevant | 0 | 0 | The paper describes an LC-MS method for HIV/TB drugs (dolutegravir, rifampicin, etc.) and does not study silicones or report any pharmacokinetic parameters for them. |
-| popPK | Owumi_2024 | irrelevant | 0 | 0 | The paper studies a herbal formulation for antimalarial activity and does not report pharmacokinetic parameters for silicones. |
-| popPK | Park_2023 | irrelevant | 0 | 0 | The study focuses on the reproductive effects of estradiol benzoate (EB) delivered via silicone capsules, not the pharmacokinetics of silicones themselves. |
-| popPK | Patel_2006 | irrelevant | 0 | 0 | The paper describes the discovery of a dopamine D4 agonist (ABT-670) for erectile dysfunction and does not involve silicones as the subject drug. |
-| popPK | Patel_2026 | irrelevant | 0 | 0 | The paper is a clinical case report regarding fluocinolone acetonide, with silicone oil serving only as a co-existing tamponade agent, and it contains no pharmacokinetic parameters for silicones. |
+| popPK | McClung_1983 | irrelevant | 0 | 0 | The paper is a review of prosthetic heart valves and does not report pharmacokinetic parameters for silicones as a drug. |
+| popPK | McElnay_1982 | irrelevant | 0 | 0 | The study investigates the absorption of chloroquine and pyrimethamine, not silicones, and is an in-vitro interaction study. |
+| popPK | Menzel_2023 | irrelevant | 0 | 0 | The paper focuses on the analysis and release of dimethylsilanediol from manufacturing equipment and its removal via downstream processing, not on pharmacokinetic disposition parameters in biological subjects. |
+| popPK | Mohammed_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acyclovir (the active ingredient) in an in vitro permeation test, while silicones (dimethicone) are only mentioned as excipients or rheological modifiers, not as the subject drug. |
+| popPK | Moore_2025 | irrelevant | 0 | 0 | The paper describes a microfluidic platform for modeling mucociliary clearance and does not report pharmacokinetic parameters for silicones. |
+| popPK | Nagayasu_1992 | irrelevant | 0 | 0 | The study uses silicone tubes to construct a hydraulic vascular model for hemodynamic analysis, not to study the pharmacokinetics of silicones as a drug. |
+| popPK | Nakamura_2024 | irrelevant | 0 | 0 | The paper studies prostaglandin transport in murine cells and does not involve the drug silicones. |
+| popPK | Nau_1982 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclophosphamide and its deuterated derivatives, not silicones. |
+| popPK | Noonan_1985 | irrelevant | 0 | 0 | The study investigates the pulmonary microcirculatory effects of leukotrienes in sheep and does not involve the drug silicones or its pharmacokinetics. |
+| popPK | ODonnell_1991 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of Ro 24-5913 (a leukotriene antagonist), not the pharmacokinetics of silicones. |
+| popPK | Omali_2025 | irrelevant | 0 | 0 | The paper describes an LC-MS method for HIV/TB drugs (dolutegravir, rifampicin, etc.) and does not study silicones. |
+| popPK | Owumi_2024 | irrelevant | 0 | 0 | The study investigates the antimalarial activity of a herbal formulation (Agunmu) and does not involve the drug silicones or report any pharmacokinetic parameters. |
+| popPK | Park_2023 | irrelevant | 0 | 0 | The study investigates the reproductive effects of estradiol benzoate (EB) delivered via silicone capsules, not the pharmacokinetics of silicones as a drug. |
+| popPK | Patel_2006 | irrelevant | 0 | 0 | The paper describes the discovery of a dopamine D4 agonist (ABT-670) for erectile dysfunction and does not involve the drug silicones. |
+| popPK | Patel_2026 | irrelevant | 0 | 0 | The study is a clinical case report regarding the use of a fluocinolone acetonide implant in an eye with silicone oil, not a pharmacokinetic study of silicones. |
 | popPK | Pavia_1987 | irrelevant | 0 | 0 | The paper discusses mucociliary clearance in asthma and does not report pharmacokinetic parameters for silicones. |
-| popPK | Pawlik_1988 | irrelevant | 0 | 0 | The paper studies the physiological effects of leukotrienes C4 and D4 in dogs and does not involve the drug silicones or report any pharmacokinetic parameters. |
+| popPK | Pawlik_1988 | irrelevant | 0 | 0 | The study investigates the physiological effects of leukotrienes C4 and D4 in dogs, not the pharmacokinetics of silicones. |
 | popPK | Pflüger_1993 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for etoposide, not silicones. |
-| popPK | Piscitelli_2024 | irrelevant | 0 | 0 | The paper describes a 3D cell culture platform for studying aging and senescence and does not involve the drug silicones or pharmacokinetic parameters. |
-| popPK | Qiu_1993 | irrelevant | 0 | 0 | The study focuses on phenylephrine oxazolidines, with silicone fluid serving only as a formulation vehicle rather than the subject drug for PK analysis. |
-| popPK | Qiu_2025 | irrelevant | 0 | 0 | The paper describes a mechanical microfluidic platform for particle transport and does not involve the drug silicones or pharmacokinetic parameters. |
-| popPK | Qu_2022 | irrelevant | 0 | 0 | The paper studies sulfonamide XPO1 inhibitors (specifically compound D4) for multiple myeloma, not silicones. |
-| popPK | Radziunas-Salinas_2026 | irrelevant | 0 | 0 | The paper focuses on 3D printing resins for microfluidics and does not involve the drug silicones or pharmacokinetic parameters. |
-| popPK | Raval_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of topotecan, not silicones, which is only mentioned as a material (Sylgard 184) used to fabricate the microneedle mold. |
-| popPK | Reddy_2008 | relevant | 9 | 0 | The paper describes a PBPK model for a silicone (D5) with quantitative parameters, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Piscitelli_2024 | irrelevant | 0 | 0 | The paper describes a cell culture platform for studying aging and senescence and does not involve the drug silicones or any pharmacokinetic analysis. |
+| popPK | Qiu_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenylephrine oxazolidines, using silicone fluid only as an excipient/vehicle, not as the subject drug. |
+| popPK | Qiu_2025 | irrelevant | 0 | 0 | The paper describes a mechanical microfluidic platform for simulating mucociliary clearance and does not involve the drug silicones or any pharmacokinetic analysis. |
+| popPK | Qu_2022 | irrelevant | 0 | 0 | The paper studies sulfonamide XPO1 inhibitors (specifically compound D4) for multiple myeloma, not the drug silicones. |
+| popPK | Radziunas-Salinas_2026 | irrelevant | 0 | 0 | The paper studies 3D printing resins for microfluidics and does not involve the drug silicones or pharmacokinetics. |
+| popPK | Raval_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of topotecan, not silicones (polydimethylsiloxane is only the material used to fabricate the device). |
+| popPK | Reddy_2008 | relevant | 9 | 2 | The paper describes a PBPK model for a silicone (D5) in rats and humans, but the specific numeric parameter values are not listed in the provided abstract text. |
 | PD | Reddy_2008 | not_relevant | 0 | 0 | The paper focuses exclusively on inhalation pharmacokinetics (PBPK modeling) and dosimetry, reporting no pharmacodynamic effects or exposure-response relationships. |
-| popPK | Riazi-Esfahani_2022 | irrelevant | 0 | 0 | The paper is a clinical case report on the surgical treatment of retinal necrosis using silicone oil as a tamponade agent, not a pharmacokinetic study of silicones. |
-| popPK | Rodriguez-Alvarez_2022 | irrelevant | 0 | 0 | The paper describes a photothermal nanocomposite coating for catheters and is not a pharmacokinetic study of silicones as a drug. |
-| popPK | Roy_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketorolac tromethamine, not silicones; silicones are only mentioned as a component of the adhesive in one device. |
-| popPK | Sadler_2023 | irrelevant | 0 | 0 | The paper is a genetic study on von Willebrand disease and does not involve the drug silicones or pharmacokinetic parameters. |
-| popPK | Salminen_2018 | irrelevant | 0 | 0 | The paper focuses on membrane technology for hemodialysis and does not report pharmacokinetic parameters for silicones. |
-| popPK | Sandor_1986 | irrelevant | 0 | 0 | The study focuses on cerebral blood volume measurement in rats using morphine and naloxone, with silicone mentioned only as a component of the sensor (silicone blue cell), not as the subject drug for pharmacokinetic analysis. |
-| popPK | Sarangi_2024 | irrelevant | 0 | 0 | The study focuses on the passive permeability of antidepressants (imipramine/desipramine) through lipid bilayers, not the pharmacokinetics of silicones. |
+| popPK | Riazi-Esfahani_2022 | irrelevant | 0 | 0 | The paper is a clinical case report on the use of silicone oil as a surgical tamponade agent for retinal necrosis, not a pharmacokinetic study of silicones as a drug. |
+| popPK | Rodriguez-Alvarez_2022 | irrelevant | 0 | 0 | The paper describes a photothermal nanocomposite for treating urinary tract infections, not the pharmacokinetics of silicones as a drug. |
+| popPK | Roy_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketorolac tromethamine, not silicones. |
+| popPK | Sadler_2023 | irrelevant | 0 | 0 | The paper investigates copy-number variants in von Willebrand disease and does not report pharmacokinetic parameters for silicones. |
+| popPK | Salminen_2018 | irrelevant | 0 | 0 | The paper describes the hemocompatibility and filtration efficiency of silicon nitride membranes for dialysis, not the pharmacokinetics of the drug silicones. |
+| popPK | Sandor_1986 | irrelevant | 0 | 0 | The study measures cerebral blood volume in rats using a photoelectric technique and tests the effects of morphine and naloxone; silicones are only mentioned as a material for the sensor cell, not as the subject drug. |
+| popPK | Sarangi_2024 | irrelevant | 0 | 0 | The study investigates the passive permeability of antidepressants (imipramine and desipramine) through lipid bilayers, not the pharmacokinetics of silicones. |
 | popPK | Sasso_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bisphenol A (BPA), not silicones. |
 | PD | Schierholz_1996 | not_relevant | 1 | 0 | The text is a qualitative summary of drug delivery concepts and mentions pharmacodynamic aspects generally, but provides no numeric PD parameters, concentration-effect curves, or specific dose-response data. |
-| popPK | Schmitt_2023 | relevant | 9 | 0 | The paper is a pharmacokinetic study of D4 (a silicone) in rats, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
+| popPK | Schmitt_2023 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for octamethylcyclotetrasiloxane (a silicone) in rats, but the specific numeric values are not present in the provided evidence. |
 | popPK | Schoors_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of MK-0476, a leukotriene D4-receptor antagonist, not silicones. |
-| popPK | Shaikh_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rivaroxaban, not silicones. |
+| popPK | Shaikh_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rivaroxaban, not silicones. |
 | popPK | Shou_2022 | irrelevant | 0 | 0 | The paper is a review on lymph node-mimicking biomaterial models and does not report pharmacokinetic parameters for silicones. |
-| popPK | Sloniewsky_2004 | irrelevant | 0 | 0 | The paper studies the effect of leukotriene D4 on alveolar fluid clearance and Na,K-ATPase activity, and does not involve silicones or pharmacokinetic parameters. |
-| popPK | Spitzer_2009 | irrelevant | 0 | 0 | The study focuses on the release kinetics of triamcinolone acetonide from silicone oil, not the pharmacokinetics of silicones themselves. |
+| popPK | Sloniewsky_2004 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of leukotriene D4 on lung function and is unrelated to the pharmacokinetics of silicones. |
+| popPK | Spitzer_2009 | irrelevant | 0 | 0 | The study investigates the release kinetics of triamcinolone acetonide from silicone oil, not the pharmacokinetics of silicones themselves. |
 | popPK | Stein_1980 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lindane and alpha-hexachlorocyclohexane, not silicones. |
-| popPK | Suliman_2025 | irrelevant | 0 | 0 | The paper is a computational study on pyrazolone derivatives as antifungal agents and does not involve silicones or report any pharmacokinetic parameters for them. |
-| popPK | Tang_2018 | irrelevant | 0 | 0 | The paper focuses on the development of a sampling material (PLGA nanofibers) for tetrodotoxin and sulfonamides, not on the pharmacokinetics of silicones. |
+| popPK | Suliman_2025 | irrelevant | 0 | 0 | The paper is a computational study on pyrazolone derivatives as antifungal agents and does not involve the drug silicones or report any pharmacokinetic parameters for it. |
+| popPK | Tang_2018 | irrelevant | 0 | 0 | The paper describes a sampling method for tetrodotoxin and sulfonamides in pufferfish, not the pharmacokinetics of silicones. |
 | popPK | Taylor_1983 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of imipramine, not silicones. |
-| popPK | Tonon_2023 | irrelevant | 0 | 0 | The paper describes a photodynamic therapy device using a silicone rubber strip as a delivery mechanism, not a pharmacokinetic study of silicones as a drug. |
-| popPK | Trallero_2026 | irrelevant | 0 | 0 | The paper is a review of intravaginal ring technologies where silicones are discussed as a material platform, not as the subject drug for pharmacokinetic analysis. |
-| popPK | Veldhuis_1989 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of estradiol and prolactin pulsatility, using a silicone ring only as a delivery device, and does not report pharmacokinetic parameters for silicones. |
-| popPK | Wang_2024 | irrelevant | 0 | 0 | The paper focuses on a microfluidic chip system using perfluoropolyether (PFPE) as a material to reduce drug sorption, not on the pharmacokinetics of silicones as a subject drug. |
-| popPK | Wang_2025 | irrelevant | 0 | 0 | The paper focuses on the development of an LC-MS/MS method for omadacycline, not silicones, and does not report PK parameters for the target drug. |
+| popPK | Tonon_2023 | irrelevant | 0 | 0 | The study focuses on the efficacy of a photodynamic therapy device for periodontitis in rats, not the pharmacokinetics of silicones. |
+| popPK | Trallero_2026 | irrelevant | 0 | 0 | The paper is a review of intravaginal ring technologies where silicones are discussed as a delivery material, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Veldhuis_1989 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of estradiol on prolactin secretion, using a silicone ring only as a delivery device, not as the subject drug for PK analysis. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | The study focuses on a gut-liver-on-a-chip system using midazolam as a probe drug, not silicones. |
+| popPK | Wang_2025 | irrelevant | 0 | 0 | The paper is a bioanalytical method development study for omadacycline, not a pharmacokinetic study of silicones. |
 | popPK | Wang_2025_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of eldecalcitol, not silicones. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a CTA simulation study on C1 pedicle screw placement and vertebral artery clearance, not a pharmacokinetic study of silicones. |
-| popPK | Wang_2026_2 | irrelevant | 0 | 0 | The paper describes an analytical method for antiplatelet drugs (aspirin, clopidogrel, ticagrelor) and does not involve silicones or report any pharmacokinetic parameters. |
-| popPK | Wei_2024 | irrelevant | 0 | 0 | The paper focuses on the fabrication of microspheres via coacervation and does not report pharmacokinetic parameters for silicones. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a retrospective CTA simulation study of C1 pedicle screw placement in patients with ponticulus posticus and contains no pharmacokinetic data for silicones. |
+| popPK | Wang_2026_2 | irrelevant | 0 | 0 | The paper describes an analytical method for antiplatelet agents (aspirin, clopidogrel, ticagrelor) and does not involve silicones. |
+| popPK | Wei_2024 | irrelevant | 0 | 0 | The paper focuses on the fabrication of PLGA/PDMS microspheres via coacervation and does not report pharmacokinetic parameters for silicones. |
 | popPK | Winkler_2016 | irrelevant | 0 | 0 | The paper investigates the stereochemistry and biological activity of Resolvin D4 (a lipid mediator), not the pharmacokinetics of silicones. |
-| popPK | Wright_1971 | irrelevant | 0 | 0 | The study evaluates silicone as a joint lubricant and reports qualitative retention times (e.g., &lt;48 hours) rather than quantitative pharmacokinetic parameters like clearance, volume, or rate constants. |
-| popPK | Wu_2020 | irrelevant | 0 | 0 | The paper describes a clinical case series on laser removal of scalp micropigmentation and does not report any pharmacokinetic parameters for silicones. |
-| popPK | Wu_2021 | irrelevant | 0 | 0 | The study focuses on the drug pirfenidone delivered via silicone contact lenses, not the pharmacokinetics of silicones as the subject drug. |
-| popPK | Xavier_2023 | irrelevant | 0 | 0 | The paper describes an in vitro microfluidic platform for digestion and permeability using casein and Lucifer Yellow, with no mention of silicones or population pharmacokinetic parameters. |
-| popPK | Xie_2023 | irrelevant | 0 | 0 | The paper investigates the immunomodulatory effects of Ganoderma lucidum polysaccharide peptide (GLPP) and does not study silicones or report any pharmacokinetic parameters for them. |
+| popPK | Wright_1971 | irrelevant | 0 | 0 | The study evaluates silicone as a lubricant and reports qualitative retention times (e.g., "no longer than 48 hours") rather than quantitative pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Wu_2020 | irrelevant | 0 | 0 | The paper describes a laser treatment for scalp micropigmentation and does not report pharmacokinetic parameters for silicones. |
+| popPK | Wu_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pirfenidone, not silicones (which is only mentioned as a material component of the contact lens). |
+| popPK | Xavier_2023 | irrelevant | 0 | 0 | The paper describes an in vitro microfluidic platform for digestion and permeability using casein and Lucifer Yellow, with no data on silicones. |
+| popPK | Xie_2023 | irrelevant | 0 | 0 | The study investigates the immunomodulatory effects of Ganoderma lucidum polysaccharide peptide (GLPP) in mice and does not report pharmacokinetic parameters for silicones. |
 | popPK | Xu_2022 | irrelevant | 0 | 0 | The study focuses on brimonidine delivery via silicone contact lenses, not the pharmacokinetics of silicones as a drug. |
-| popPK | Xu_2022_2 | irrelevant | 0 | 0 | The paper studies the antibiofilm activity of cinnamaldehyde-chitosan nanoparticles, not the pharmacokinetics of silicones. |
+| popPK | Xu_2022_2 | irrelevant | 0 | 0 | The paper studies the in vitro antibiofilm activity of cinnamaldehyde-chitosan nanoparticles, not the pharmacokinetics of silicones. |
 | popPK | Yang_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of erlotinib, not silicones. |
-| popPK | Yu_2025 | irrelevant | 0 | 0 | The paper describes a silicone-based wound healing patch and its material properties, not the pharmacokinetics of silicones as a drug. |
-| popPK | Zhao_2020 | irrelevant | 0 | 0 | The study focuses on the binding of organophosphorus insecticides to human serum albumin, not the pharmacokinetics of silicones. |
-| popPK | Zhao_2022 | irrelevant | 0 | 0 | The study focuses on brimonidine as the subject drug delivered via a silicone rubber implant, and does not report pharmacokinetic parameters for silicones themselves. |
-| popPK | Zhao_2024 | irrelevant | 0 | 0 | The paper describes the synthesis and foaming performance of a surfactant system for gas well drainage, not the pharmacokinetics of silicones. |
+| popPK | Yu_2025 | irrelevant | 0 | 0 | The paper describes a silicone-based wound healing patch and does not report pharmacokinetic parameters for silicones as a drug. |
+| popPK | Zhao_2020 | irrelevant | 0 | 0 | The study investigates the binding of organophosphorus insecticides to human serum albumin, not the pharmacokinetics of silicones. |
+| popPK | Zhao_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of brimonidine (a glaucoma drug) delivered via a silicone rubber implant, not the pharmacokinetics of silicones as a drug. |
+| popPK | Zhao_2024 | irrelevant | 0 | 0 | The paper describes the synthesis and performance of a chemical foaming agent for oil and gas wells, not the pharmacokinetics of the drug silicones. |
 | popPK | b1p6uller_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 5-fluorouracil, not silicones. |
-| popPK | van_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sulfasalazine and methotrexate in the context of a drug-drug interaction with GLPG3970, and does not report any parameters for silicones. |
+| popPK | van_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sulfasalazine and methotrexate, not silicones. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

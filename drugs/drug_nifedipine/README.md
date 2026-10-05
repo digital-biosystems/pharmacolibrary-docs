@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;nifedipine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Li2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # nifedipine
 
@@ -10,11 +11,9 @@
 
 ## About
 
-**Description.** Nifedipine, or BAY a 1040, is a first generation dihydropyridine L-type calcium channel blocker, similar to [nicardipine].[A190210,A190273,A175390,L11383] Nifedipine was developed by Bayer and first described in the literature, along with other dihydropyridines, in 1972.[A175390,A190276] Since nifedipine's development, second and third generation dihydropyridines have been developed with slower onsets and longer durations of action.[A190273] The most popular of the third generation dihydropyridines is [amlodipine].[A190273]
+Nifedipine is a calcium channel blocker used to treat high blood pressure and angina. It is widely used and appears on the WHO list of essential medicines, and is also being investigated for other uses.
 
-Nifedipine was granted FDA approval on 31 December 1981.[L11383]
-
-**Indication.** Nifedipine capsules are indicated to treat vasospastic angina and chronic stable angina.[L11383] Extended release tablets are indicated to treat vasospastic angina, chronic stable angina, and hypertension.[L11389,L1245]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q39111](https://www.wikidata.org/wiki/Q39111) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -34,7 +33,7 @@ Nifedipine was granted FDA approval on 31 December 1981.[L11383]
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_reference](drugs/drug_nifedipine/Nifedipine_Li2025_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Li Y et al., Population Pharmacokinetics of Nifedipi…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70087](https://doi.org/10.1002/jcph.70087) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_reference](drugs/drug_nifedipine/Nifedipine_Li2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li Y et al., Population Pharmacokinetics of Nifedipi…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70087](https://doi.org/10.1002/jcph.70087) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chung_1987_reference](drugs/drug_nifedipine/Nifedipine_Chung1987_reference.md) | — | 1-compartment (no model) | 0 | Chung M et al., Clinical pharmacokinetics of nifedipine…, The American journal of med… (1987) | [10.1016/0002-9343(87)90630-9](https://doi.org/10.1016/0002-9343(87)90630-9) |
 
 ## ADME sites
@@ -55,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2A6` substrate, `CYP2B6` inducer, `CYP2C8` inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…the rest is eliminated in the feces as metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inducer | DrugBank actor |
 | excretion | liver | `ABCB11` inhibitor, `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |
 | excretion | small intestine | `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |

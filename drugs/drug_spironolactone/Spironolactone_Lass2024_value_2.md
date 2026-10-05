@@ -16,13 +16,13 @@
 
 ### Reviewer guidance
 
-**No value for spironolactone's elimination clearance — all 2 extracted parameters describe 7 alphathiomethylspironolactone, not spironolactone.**
+**The spironolactone model was quarantined because spironolactone's elimination clearance was never extracted; both extracted parameters (V 103 L, CL 78 L/h) describe the metabolite 7 alphathiomethylspironolactone, so a library placeholder stood in for the missing clearance.**
 
-The model was built, but spironolactone's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — 7 alphathiomethylspironolactone: V 103 L, CL 78 L/h.
+The record for spironolactone in infants with chronic heart failure contains only two parameters, VTMS=VCAN = 103 L and CLTMS = 78 L/h, both assigned to the metabolite 7 alphathiomethylspironolactone, leaving spironolactone's own elimination clearance without a value. A default placeholder was substituted for that clearance, which the deviations check flagged as not acceptable, so the model was held back rather than published with an invented number. A second reader also disagreed on the dose compound, primary analyte, the metabolism links to 7 alphathiomethylspironolactone and canrenone, and read the 78 L/h and 103 L values where this record had none, though these disagreements did not determine the quarantine. Extracted — 7 alphathiomethylspironolactone: V 103 L, CL 78 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has spironolactone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024)
@@ -121,7 +121,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_shared_parameters | not captured | pass | 2 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
 | T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_beta | reference | skipped | 1.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 1.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 2.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |

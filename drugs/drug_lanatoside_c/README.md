@@ -8,6 +8,12 @@
 - **molar mass:** 985.127 g/mol (C49H76O20) — DrugBank
 - **groups:** investigational
 
+## About
+
+Lanatoside C is a cardiac glycoside, a class of drugs used for heart conditions such as heart failure and certain rhythm disturbances. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6482953](https://www.wikidata.org/wiki/Q6482953) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

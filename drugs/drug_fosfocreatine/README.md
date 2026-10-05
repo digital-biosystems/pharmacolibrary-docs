@@ -9,13 +9,9 @@
 
 ## About
 
-**Description.** Phosphocreatine - or creatine phosphate - is the phosphorylated form of creatine. It is primarily found endogenously in the skeletal muscles of vertebrates where it serves a critical role as a rapidly acting energy buffer for muscle cell actions like contractions via its ability to regenerate adenosine triphosphate (ATP) from adenosine diphosphate (ADP).
+Fosfocreatine (creatine phosphate) is a cardiotonic agent classified under other cardiac preparations, investigated for heart conditions. It remains investigational and is also considered a nutraceutical; it is not an authorised medicine in the European Union.
 
-**Indication.** Phosphocreatine is a naturally occuring substance that is found predominantly in the skeletal muscles of vertebrates. Its primary utility within the body is to serve in the maintanence and recycling of adenosine triphosphate (ATP) for muscular activity like contractions.
-
-Given this utility of phosphocreatine to recycle ATP, the most plausible therapeutic potentials for its use involve conditions caused by energy shortage or by increased energy requirements - such as in ischemic stroke and other cerebrovascular diseases. It is important to note however that relatively little clinical research has been done to significantly further the evidence for any such indications, although it is administered intravenously for cardiovascular conditions in some countries.
-
-Additionally, because phosphocreatine is not regulated as a controlled substance it is taken as a supplement by some professional athletes as a means to perhaps increase short bursts of muscle strength or energy for professional athletics.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1984607](https://www.wikidata.org/wiki/Q1984607) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,7 +29,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Phosphocreatine is eliminated renally…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CKB (target), CKM (target), CKMT1A (target), CKMT2 (target), GAMT (product), SLC6A8 (unknown).</sub>
 

@@ -8,6 +8,12 @@
 - **molar mass:** 269.388 g/mol (C18H23NO) — DrugBank
 - **groups:** experimental
 
+## About
+
+Bifemelane is an antidepressant that has also been described as a nootropic. It is not authorised in the European Union and is currently regarded as an experimental drug, so its present clinical use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4904728](https://www.wikidata.org/wiki/Q4904728) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;naloxegol&quot;,&quot;href&quot;:&quot;drugs/drug_naloxegol/&quot;},{&quot;label&quot;:&quot;Al-Huniti_2017 \u00b7 PD weekly probability of response&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naloxegol_AlHuniti2016_reference&quot;,&quot;label&quot;:&quot;Al-Huniti_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# weekly probability of response — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# weekly probability of response — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,26 +14,35 @@
 
 ## What this record describes
 
-**As extracted:** Naloxegol (concentrations from the PK model of Al-Huniti_2016) drives weekly probability of response (in probability): direct linear effect.
+**As extracted:** Naloxegol (the dose) drives weekly probability of response: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
-> Naloxegol daily dose (mg) acts on the weekly probability of SBM response (≥3 SBMs/week and ≥1 SBM/week increase over baseline) via a longitudinal mixed-effects logistic regression dose-response model, in which the logit of the response probability is E0 + α×Dose + η, with α the odds ratio of response per mg; the paper does not state a mechanism beyond this direct dose effect and gives no Imax/IC50/EC50/Emax/kin/kout/ke0 values. Predicted median response rates were 40%, 50%, and 60% for 12.5, 25, and 37.5 mg doses, respectively.
+> The model describes a direct dose-dependent stimulation of the weekly probability of spontaneous bowel movement (SBM) response, where the logit of the response probability is linearly related to the daily naloxegol dose (mg) without an explicit pharmacokinetic or mechanistic effect compartment. The baseline logit (E0) is -0.51, and the dose effect coefficient (α) is 0.061 1/mg, indicating an additive increase in the log-odds of response per mg of dose.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Al-Huniti_2017`
-- **model family:** `linear`
-- **driver:** `cited_pk`
+- **model family:** `categorical`
+- **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017)
   ·  DOI: [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E0 | `Q344` · not captured | -0.51 | nondimensional | not captured | llm (not captured) | Al-Huniti_2017:pdv3 |
+| PD (effect) | α | `Q345` · not captured | 0.061 | 1/mg | not captured | llm (not captured) | Al-Huniti_2017:pdv3 |
+| variability | ϖ2 E0 | `Q312` · not captured | 2.6 | not captured | not captured | llm (not captured) | Al-Huniti_2017:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;macrogol&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/&quot;},{&quot;label&quot;:&quot;Brunet_2022 \u00b7 PD Amphotericin B MIC&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Jian2025_reference&quot;,&quot;label&quot;:&quot;Jian_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jian2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Sharda2021_reference&quot;,&quot;label&quot;:&quot;Sharda_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Sharda2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;macrogol&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/&quot;},{&quot;label&quot;:&quot;Brunet_2022 \u00b7 PD AmB MIC&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Jian2025_reference&quot;,&quot;label&quot;:&quot;Jian_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jian2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Brunet_2022_MIC&quot;,&quot;label&quot;:&quot;Brunet_2022 \u00b7 MIC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/pd_Brunet_2022_MIC.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Amphotericin B MIC — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# AmB MIC — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,13 +16,13 @@
 
 ## What this record describes
 
-**As extracted:** Polyethylene glycol (15)-hydroxystearate (PEG15HS) (measured concentrations) drives Amphotericin B MIC (in mg/L): direct Emax (saturable) effect.
+**As extracted:** PEG15HS (measured concentrations) drives AmB MIC (in mg/L): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Surfactant concentrations (PEG15HS, Brij S10/S20/O20/C10) reduce the measured amphotericin B MIC (mg/L) in Mucorales checkerboard assays, described by an inhibitory Emax model (MIC decreasing from MIC0 toward MIC∞ with maximal ratio Rmax = MIC0/MIC∞); the proposed mechanism is surfactant-induced monomerization of AmB aggregates, increasing the active monomeric fraction. Potency EC50 values were 0.44 mg/L for PEG15HS, 0.02 mg/L for Brij S10 and Brij S20, 0.06 mg/L for Brij O20, and 0.05 mg/L for Brij C10, with PEG15HS Rmax ranging from 2.5 to 63.8 depending on the isolate.
+> The paper describes an inhibitory Emax model where the concentration of PEG15HS (Csurf) directly reduces the minimum inhibitory concentration (MIC) of Amphotericin B (AmB) against Mucorales strains, with the effect characterized by a baseline MIC (MIC0), an asymptotic MIC (MIC∞), and a maximal efficacy ratio (Rmax). The potency is defined by the EC50, which is the surfactant concentration producing 50% of the maximal MIC reduction, with reported EC50 values ranging from 0.19 to 53.45 mg/L and Rmax values ranging from 2.5 to 63.8 across different isolates.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Brunet_2022`
 - **model family:** `emax`
@@ -37,16 +37,100 @@ Brunet K et al., Improved In Vitro Anti-Mucorales Activi…, Journal of fungi (B
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | PEG15HS — EC50 (mg/L) | `Q321` · not captured | 0.44 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row1:col3 |
-| PD (effect) | Brij® S10 — EC50 (mg/L) | `Q321` · not captured | 0.02 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row13:col3 |
-| PD (effect) | Brij® S20 — EC50 (mg/L) | `Q321` · not captured | 0.02 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row14:col3 |
-| PD (effect) | Brij® O20 — EC50 (mg/L) | `Q321` · not captured | 0.06 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row15:col3 |
-| PD (effect) | Brij® C10 — EC50 (mg/L) | `Q321` · not captured | 0.05 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row16:col3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.36 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.44 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.068 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 5.2 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.06 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.33 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.016 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 3.8 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.25 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.42 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.019 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 13.0 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.51 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.19 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.008 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 63.8 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.19 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.32 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.012 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 16.5 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.28 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.34 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.077 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 3.7 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.44 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 53.45 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.177 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 2.5 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.59 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.28 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.183 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 3.2 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.61 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 8.57 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.186 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 3.3 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.35 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.47 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.055 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 6.4 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.68 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 2.32 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.190 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 3.6 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | MIC0 | `Q324` · not captured | 0.25 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.13 | mg/L | not captured | llm (not captured) | Brunet_2022:pdv3 |
+| — | MIC∞ | `Q100` · not captured | 0.012 | mg/L | not captured | nil (not captured) | Brunet_2022:pdv3 |
+| PD (effect) | Rmax | `Q323` · not captured | 19.9 | not captured | not captured | llm (not captured) | Brunet_2022:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Macrogol_Brunet2022_PD_mic` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.36 mg/L | 0.00036 kg/m3 |
+| Emax | -5.2 mg/L | -0.0052 kg/m3 |
+| EC50 | 0.44 mg/L | 0.00044 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.00036, `at_EC50` = -0.00224, `at_inf` = -0.00484
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_off_target_driver` — driver compound 'PEG15HS' is not 'macrogol' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- off_target_driver: 'PEG15HS' is not 'macrogol' (S12)
+
+Advisory:
+
+- defaulted: gamma (convention)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -77,23 +161,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Brunet2022_PD_mic/Macrogol_Brunet2022_PD_mic_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_macrogol/Macrogol_Brunet2022_PD_mic/Macrogol_Brunet2022_PD_mic_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Macrogol_Brunet2022_PD_mic_params.json` · controls `Macrogol_Brunet2022_PD_mic_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

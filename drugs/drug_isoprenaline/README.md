@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Isoprenaline is a non-selective beta adrenergic receptor agonist indicated to treat heart block, Adams-Stokes attacks, bronchospasm in anesthesia, cadiac arrest, hypovolemic shocks, septic shock, hypoperfusion, congestive hear failure, and cardiogenic shock.[A15638,L33160]
+Isoprenaline is a sympathomimetic beta-agonist used as a bronchodilator for bronchospasm and as a cardiotonic agent, for example in congenital heart block. It is an approved medicine, but it is not authorised centrally in the European Union and today is used only rarely, mainly in specialised hospital settings.
 
-Isoprenaline research in the 1940s found that this isopropyl analog of epinephrine dilated the bronchi, as well as raising the heart rate and cardiac output, without vasoconstriction.[A233724,A233729] The US patent from 1943 states that this compound had a wider therapeutic index and a stronger action than [adrenaline].[L33204]
-
-Isoprenaline was granted FDA approval on 19 February 1948.[L33155]
-
-**Indication.** Isoprenaline is indicated to treat mild or transient episodes of heart block not requiring electric shock or pacemakers, serious episodes of heart block and Adams-Stokes attacks not caused by ventricular tachycardia or fibrillation, and bronchospasm during anesthesia.[L33160] Isoprenaline is also indicated for cases of cardiac arrest until preferable treatments like electric shock and pacemakers are available.[L33160] Isoprenaline is also indicated as an adjunct therapy to fluid and electrolyte replacement therapy in hypovolemic shock, septic shock, hypoperfusion, congestive heart failure, and cardiogenic shock.[L33160]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415550](https://www.wikidata.org/wiki/Q415550) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -87,8 +83,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inducer | DrugBank actor |
 | metabolism | skin | `CYP1B1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer/inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…12.2-27.0% recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…59.1-106.8% recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), IL12B (modulator), SOD1 (stabilization).</sub>
 

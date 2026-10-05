@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** A compound formed in the liver from ammonia produced by the deamination of amino acids. It is the principal end product of protein catabolism and constitutes about one half of the total urinary solids.
+Carbamide (urea) is used as a skin moisturiser for dry or rough skin and, in solution form, to promote osmotic diuresis. It remains in use, mainly in topical emollient preparations, and is also approved for other uses.
 
-**Indication.** Urea is used topically for debridement and promotion of normal healing of hyperkeratotic surface lesions, particularly where healing is retarded by local infection, necrotic tissue, fibrinous or purulent debris or eschar. Urea is useful for the treatment of hyperkeratotic conditions such as dry, rough skin, dermatitis, psoriasis, xerosis, ichthyosis, eczema, keratosis, keratoderma, corns and calluses, as well as damaged, devitalized and ingrown nails.[L41484]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q56440222](https://www.wikidata.org/wiki/Q56440222) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

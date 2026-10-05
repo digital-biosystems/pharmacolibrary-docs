@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Pegunigalsidase alfa (PRX-102) is a recombinant form of human α-galactosidase-A indicated for long-term enzyme replacement therapy in patients with Fabry disease, a rare genetic disorder characterized by the deficiency of alpha-galactosidase A.[A259352,L46342] Unlike other forms of recombinant alpha-galactosidase A, such as [agalsidase alfa] and [agalsidase beta], pegunigalsidase alfa uses a plant cell-based protein expression system, leading to a different glycosylation pattern. While agalsidase alfa and agalsidase beta enter lysosomes via the mannose-6-phosphate (M6P) receptor, pegunigalsidase alfa carries no M6P on its glycans and does not depend on the M6P receptor during cellular uptake. Furthermore, the pegylation of pegunigalsidase alfa promotes higher stability and a longer half-life, allowing it to reach target organs with a lower dose and frequency of administration.[A259347,A259352]
+Pegunigalsidase alfa is an enzyme replacement therapy used to treat Fabry disease. It is authorised in the European Union and remains an approved, though still partly investigational, treatment.
 
-In May 2023, the EMA granted marketing authorization to pegunigalsidase alfa in the European Union (EU) for the treatment of adult patients with Fabry disease.[L46342,L46387] Later on, the FDA approved pegunigalsidase alfa for the treatment of adult patients with Fabry disease that same month.[L46432,L46437]
-
-**Indication.** Pegunigalsidase alfa is indicated for long-term enzyme replacement therapy in adult patients with a confirmed diagnosis of Fabry disease (deficiency of alpha-galactosidase).[L46342,L46432]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27270744](https://www.wikidata.org/wiki/Q27270744) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

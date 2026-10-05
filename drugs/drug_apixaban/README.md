@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Apixaban is an oral, direct, and highly selective factor Xa (FXa) inhibitor of both free and bound FXa, as well as prothrombinase, independent of antithrombin III for the prevention and treatment of thromboembolic diseases[Label,A6897]. It is marketed under the name Eliquis[Label,L6043]. Apixaban was approved by the FDA on December 28, 2012[L6043].
+Apixaban is an anticoagulant that blocks factor Xa and is used to prevent or treat blood clots, including venous thromboembolism, pulmonary embolism, thrombosis, stroke, and clot risk in atrial fibrillation or flutter and heart disease. It is an approved medicine, authorised in the European Union, and widely used for these conditions.
 
-**Indication.** Apixaban is indicated for reducing the risk of stroke and systemic embolism in patients who have nonvalvular atrial fibrillation, prophylaxis of deep vein thrombosis(DVT) leading to pulmonary embolism(PE) in patients after a hip or knee replacement surgery, and treatment of DVT and PE to reduce the risk of recurrence[Label,A177565,A6897].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414462](https://www.wikidata.org/wiki/Q414462) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,8 +44,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…56% of an orally administered dose is recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…24.5-28.8% of the dose is recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (inhibitor).</sub>
 

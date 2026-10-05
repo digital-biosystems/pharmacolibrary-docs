@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/&quot;},{&quot;label&quot;:&quot;Saleh_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riociguat — `Riociguat_Saleh2016_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The riociguat parent–metabolite record was not simulated because its structure — a one-compartment enteral parent with metabolite M1 — did not match the required three-compartment parent–metabolite structure, and it was built from the abstract only.**
+**The riociguat parent–metabolite record was held back because its model structure (a one-compartment enteral model) did not match the required parent–metabolite structure, and bioavailability F and lag time Tlag were left at library defaults instead of being estimated from the paper.**
 
-The declared structure is a parent–metabolite model with riociguat metabolized to M1 (rate constant Kfm), but the obtained structure was a single enteral compartment instead of the expected three-compartment parent–metabolite structure, so the record was held back. Because only the paper's abstract was read, reported summary statistics (kabs 2.17 /h, CL 1.81 L/h, V 32.3 L for riociguat; kabs 0.258 /h, CL 3.16 L/h, V 124 L for M1) stood in for a fitted model. Bioavailability (F) and lag time (Tlag) had no source values, so library defaults were substituted. A second reader disagreed on the dose compound and primary analyte and on whether the riociguat parameters were present or null. Extracted — riociguat: kabs 2.17 /h, CL 1.81 L/h, V 32.3 L; M1: kabs 0.258 /h, CL 3.16 L/h, V 124 L.
+The record describes riociguat (kabs 2.17 /h, CL 1.81 L/h, V 32.3 L) with metabolite M1 (kabs 0.258 /h, CL 3.16 L/h, V 124 L) formed from the parent via metabolism, but the obtained one-compartment enteral structure did not match the expected parent–metabolite structure. The model builder substituted defaults for the bioavailability F and lag time Tlag, so these values affect the simulated profile without support from the paper. The record was also built from the abstract alone, so summary statistics stood in for a fitted model, and a second reader could not confirm the dose compound, primary analyte, or the riociguat parameter values (2.17 /h, 1.81 L/h, 32.3 L). Extracted — riociguat: kabs 2.17 /h, CL 1.81 L/h, V 32.3 L; M1: kabs 0.258 /h, CL 3.16 L/h, V 124 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -30,7 +30,7 @@ Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulatio
   ·  DOI: [10.1086/685404](https://doi.org/10.1086/685404)
 
 ## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="not_simulated" stale="false" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="needs_review" stale="false" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -38,7 +38,7 @@ Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulatio
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -156,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_modelica.zip" download>Riociguat_Saleh2016_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_modelica.zip" download>Riociguat_Saleh2016_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_fmi.zip" download>Riociguat_Saleh2016_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_matlab.zip" download>Riociguat_Saleh2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_matlab_simbio.zip" download>Riociguat_Saleh2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

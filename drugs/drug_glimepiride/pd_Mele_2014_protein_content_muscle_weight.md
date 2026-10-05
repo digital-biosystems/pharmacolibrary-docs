@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Glimepiride concentrations (10−6 mol/L) inhibit the protein content/muscle weight response in mouse muscle fibers via a sigmoid Emax model, with an Emax of -40.42 ± 8 %, an EC50 of 29.3 ± 9 × 10−6 mol/L, and a slope factor of 0.45 ± 0.01. The paper describes this as a direct concentration-dependent reduction in protein content following 24 h incubation, without specifying a distinct kinetic mechanism such as effect compartment or production/elimination rates.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mele_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

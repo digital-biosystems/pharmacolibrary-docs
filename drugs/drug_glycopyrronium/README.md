@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_model_based&quot;,&quot;label&quot;:&quot;Bartels_2013_model_based&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_noncompartmental&quot;,&quot;label&quot;:&quot;Bartels_2013_noncompartmental&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_population_mean_cv&quot;,&quot;label&quot;:&quot;Bartels_2013_population_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # glycopyrronium
 
@@ -10,26 +11,39 @@
 
 ## About
 
-**Description.** Glycopyrronium, also known as NVA237 or glycopyrrolate, is a racemic mixture of two enantiomers.[L33110] They are both quaternary ammonium compounds and long acting muscarinic antagonists.[L33110] It is one of the most commonly prescribed anticholinergic medications.[A233535,A233540] Early research into glycopyrronium use was for its indication as an adjunct therapy in the treatment of peptic ulcers.[A233570,L33090] Later research, taking advantage of the systemic distribution of muscarinic receptors through the body, found that glycopyrronium could also be used for reducing sweat gland,[L4755] oral,[L33140] airway, and gastric secretions;[L33120] as well as reducing cardiac inhibitory reflexes;[L33120] and reducing bronchoconstriction in COPD.[L33105] Glycopyrronium is commonly prescribed as a first line treatment for a wide variety indications and is considered to have a wider therapeutic window than [tiotropium].[A233565]
+Glycopyrronium is an anticholinergic (muscarinic antagonist) used for conditions such as peptic ulcer disease and chronic obstructive pulmonary disease, and also as an anesthetic adjuvant and antihidrotic. It remains in use, with approved and veterinary-approved products, and is used in inhaled combinations for obstructive airway diseases as well as gastrointestinal and dermatological preparations.
 
-Glycopyrronium was originally granted FDA approval on 11 August 1961.[L33090]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411917](https://www.wikidata.org/wiki/Q411917) and the WHO ATC classification; not checked by a person.</small>
 
-**Indication.** Glycopyrronium formulated as a topical cloth is indicated to treat primary axillary hyperhidrosis in patients ≥9 years,[L4755] and an inhalational solution is indicated for long term maintenance of airflow obstruction in COPD.[L33105] A glycopyrronium intravenous and intramuscular injection is indicated in adults and pediatric patients to reduce the volume and acidity of gastric secretions, reduce airway secretions, and block cardiac inhibitory reflexes during the induction of anesthesia and intubation; to treat surgically-induced, drug-induced, or vagal reflex associated arrhythmias intraoperatively; and to prevent peripheral muscarinic effects of cholinergic drugs.[L33120] The same injection is indicated in adults as an adjunct therapy in the treatment of peptic ulcers, as is an orally disintegrating tablet formulation.[L33120,L39615] An oral solution is indicated to treat excessive drooling associated with neurologic conditions in patients aged 3-16 years.[L33140] Glycopyrronium and [budesonide][L33145] can be formulated with [formoterol] fumarate for the maintenance of COPD.[L33150]
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| glycopyrronium | parent | 318.43 | C19H28NO3 | DrugBank | [9933193](https://pubchem.ncbi.nlm.nih.gov/compound/9933193) | Bartels_2013, Bartels_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 21:56 | 8:21 | 0/1/3 | 0/0/0 | 0/0/0 | 80,401/36,811 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-04 12:42 | 15:14 | 3/1/0 | 1/0/0 | 0/0/0 | 196,655/55,191 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2013_model_based](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based.md) | — | 1-compartment (no model) | 4 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2013_noncompartmental](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental.md) | — | 1-compartment (no model) | 3 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.826). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bartels_2013_population_mean_cv](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md) | held back | 2-compartment, oral | 8 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021_reference](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_reference.md) | — | 1-compartment (no model) | 3 (+1 cov.) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Bartels_2013_model_based](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_model_based.md) | ▶ model + simulator | 1-compartment, IV | 4 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Bartels_2013_noncompartmental](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_noncompartmental.md) | ▶ model + simulator | 1-compartment, IV | 3 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.826). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Bartels_2013_population_mean_cv](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md) | ▶ model + simulator | 2-compartment, oral | 8 | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021_reference](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Penttilä_2001_HF_CCV](drugs/drug_glycopyrronium/pd_Penttil_2001_HF_CCV.md) | Hayano index of the high frequency variability of RRI ← glycopyrrolate · direct sigmoid Emax (Hill) effect | — | Penttilä J et al., Pharmacokinetic-pharmacodynamic model f…, European journal of clinica… (2001) | [10.1007/s002280100288](https://doi.org/10.1007/s002280100288) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Penttilä_2001_RRI](drugs/drug_glycopyrronium/pd_Penttil_2001_RRI.md) | mean R-R interval ← glycopyrrolate · direct sigmoid Emax (Hill) effect | — | Penttilä J et al., Pharmacokinetic-pharmacodynamic model f…, European journal of clinica… (2001) | [10.1007/s002280100288](https://doi.org/10.1007/s002280100288) |
 
 ## ADME sites
 
@@ -37,14 +51,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | lung | <sub>“…Inhaled glycopyrronium is approximately 40% bioavailable…”</sub> | prose |
-| absorption | skeletal muscle | <sub>“…An 8 µg/kg intramuscular dose…”</sub> | prose |
-| absorption | skin | <sub>“…a 66 mg topical dose of glycopyrronium…”</sub> | prose |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` unknown, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…&lt;5% recovered in the bile…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` substrate, `SLC47A1` substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` substrate | DrugBank actor |
 
@@ -60,7 +74,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 31 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 3  ·  needs_review 0  ·  rejected 1  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -69,22 +83,22 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Demin_2016.pdf` | Demin I et al., Population pharmacokinetics of IND/GLY…, International journal of cl… (2016) | popPK | 10 | [10.5414/CP202558](https://doi.org/10.5414/CP202558) | [27049057](https://pubmed.ncbi.nlm.nih.gov/27049057) | The paper is a population PK study for glycopyrronium, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
-| `Marchiori_2026.pdf` | Marchiori J et al., Pharmacokinetics of Intramuscular and I…, Journal of veterinary pharm… (2026) | popPK | 10 | [10.1111/jvp.70061](https://doi.org/10.1111/jvp.70061) | [41742333](https://pubmed.ncbi.nlm.nih.gov/41742333) | The study reports quantitative pharmacokinetic parameters (clearance, volume, half-life) for glycopyrrolate (glycopyrronium) in rabbits, with all numeric values explicitly present in the text. |
-| `Rumpler_2014_2.pdf` | Rumpler MJ et al., The pharmacokinetics of glycopyrrolate…, Journal of veterinary pharm… (2014) | popPK | 10 | [10.1111/jvp.12085](https://doi.org/10.1111/jvp.12085) | [24325462](https://pubmed.ncbi.nlm.nih.gov/24325462) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, AUC) for glycopyrrolate (glycopyrronium) in horses, with all numeric values explicitly present in the text. |
-| `Penttilä_2001.pdf` | Penttilä J et al., Pharmacokinetic-pharmacodynamic model f…, European journal of clinica… (2001) | popPK | 8 | [10.1007/s002280100288](https://doi.org/10.1007/s002280100288) | [11417448](https://pubmed.ncbi.nlm.nih.gov/11417448) | The study reports PK-PD parameters (EC50, t1/2ke0) for glycopyrrolate (glycopyrronium) but lacks explicit numeric values for standard disposition parameters like clearance or volume in the provided text. |
+| `Demin_2016.pdf` | Demin I et al., Population pharmacokinetics of IND/GLY…, International journal of cl… (2016) | popPK | 10 | [10.5414/CP202558](https://doi.org/10.5414/CP202558) | [27049057](https://pubmed.ncbi.nlm.nih.gov/27049057) | The paper describes a population PK model for glycopyrronium in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Marchiori_2026.pdf` | Marchiori J et al., Pharmacokinetics of Intramuscular and I…, Journal of veterinary pharm… (2026) | popPK | 10 | [10.1111/jvp.70061](https://doi.org/10.1111/jvp.70061) | [41742333](https://pubmed.ncbi.nlm.nih.gov/41742333) | The study reports quantitative non-compartmental pharmacokinetic parameters (clearance, volume of distribution, half-life, bioavailability) for glycopyrrolate in rabbits, with all numeric values explicitly present in the abstract. |
+| `Rumpler_2014_2.pdf` | Rumpler MJ et al., The pharmacokinetics of glycopyrrolate…, Journal of veterinary pharm… (2014) | popPK | 10 | [10.1111/jvp.12085](https://doi.org/10.1111/jvp.12085) | [24325462](https://pubmed.ncbi.nlm.nih.gov/24325462) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution) for glycopyrrolate in horses. |
+| `Penttilä_2001.pdf` | Penttilä J et al., Pharmacokinetic-pharmacodynamic model f…, European journal of clinica… (2001) | popPK | 8 | [10.1007/s002280100288](https://doi.org/10.1007/s002280100288) | [11417448](https://pubmed.ncbi.nlm.nih.gov/11417448) | The study reports a 3-compartment PK model for glycopyrrolate (glycopyrronium) in humans, but the specific numeric PK parameter values (CL, V, Q) are not listed in the provided text, only PK-PD effect parameters (EC50, t1/2ke0). |
 
-<sub>queue written 2026-09-29T21:48:23.574155+00:00</sub>
+<sub>queue written 2026-10-04T12:28:17.889389+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Demin_2016 | relevant | 10 | 0 | The paper is a population PK study for glycopyrronium, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
-| popPK | Kume_2018 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of receptor interactions and does not report any pharmacokinetic parameters for glycopyrronium. |
+| popPK | Demin_2016 | relevant | 10 | 2 | The paper describes a population PK model for glycopyrronium in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Kume_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor interactions in guinea pig trachealis and does not report pharmacokinetic parameters for glycopyrronium. |
 | popPK | Mathioudakis_2026 | irrelevant | 0 | 0 | The paper is a clinical trial analysis of exacerbation rates in COPD patients and does not report any pharmacokinetic parameters for glycopyrronium. |
-| popPK | Pariser_2021 | relevant | 10 | 2 | The paper describes a population PK model for glycopyrronium, but the specific numeric parameter estimates (CL, V, etc.) are not present in the provided text, which only lists exposure metrics (Cmax, AUC) and refers to the ESM for model details. |
-| popPK | Penttilä_2001 | relevant | 8 | 2 | The study reports PK-PD parameters (EC50, t1/2ke0) for glycopyrrolate (glycopyrronium) but lacks explicit numeric values for standard disposition parameters like clearance or volume in the provided text. |
+| popPK | Pariser_2021 | relevant | 9 | 4 | The paper reports a population PK model and NCA parameters for glycopyrronium, but specific model parameter estimates (CL, V, ka) are likely in the supplementary material, with only summary exposure metrics (Cmax, AUC) and half-life provided in the text. |
+| popPK | Penttilä_2001 | relevant | 8 | 2 | The study reports a 3-compartment PK model for glycopyrrolate (glycopyrronium) in humans, but the specific numeric PK parameter values (CL, V, Q) are not listed in the provided text, only PK-PD effect parameters (EC50, t1/2ke0). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 08:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 12:28 UTC</sub>

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An essential amino acid that is necessary for normal growth in infants and for nitrogen balance in adults. It is a precursor of indole alkaloids in plants. It is a precursor of serotonin (hence its use as an antidepressant and sleep aid). It can be a precursor to niacin, albeit inefficiently, in mammals.
+Tryptophan, an essential amino acid, has been used as an antidepressant. It was withdrawn as a medicine in several countries after being linked to a serious muscle and blood disorder, though it remains available as a dietary supplement in some places.
 
-**Indication.** Tryptophan may be useful in increasing serotonin production, promoting healthy sleep, managing depression by enhancing mental and emotional well-being, managing pain tolerance, and managing weight.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q181003](https://www.wikidata.org/wiki/Q181003) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DDC (substrate), IDO1 (binder), IDO1 (substrate), SLC16A10 (inhibitor), SLC16A2 (inhibitor), TDO2 (substrate), TPH1 (substrate), TPH2 (substrate), WARS1 (inhibitor), WARS1 (substrate), WARS2 (inhibitor), WARS2 (substrate).</sub>
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A tetracyclic compound with antidepressant effects. Mianserin was previously available internationally, however in most markets it has been phased out in favour of [mirtazapine].
+Mianserin is an antidepressant used to treat depression. It has been withdrawn in some markets but remains approved and used in others.
 
-**Indication.** For the treatment of depression.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416701](https://www.wikidata.org/wiki/Q416701) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,7 +34,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed following oral administration.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

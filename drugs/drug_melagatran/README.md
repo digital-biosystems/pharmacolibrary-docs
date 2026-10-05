@@ -8,6 +8,12 @@
 - **molar mass:** 429.5126 g/mol (C22H31N5O4) — DrugBank
 - **groups:** investigational
 
+## About
+
+Melagatran is a direct thrombin inhibitor that was investigated as an antithrombotic drug for preventing or treating blood clots. It remained an investigational compound and was never authorised for general use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27084209](https://www.wikidata.org/wiki/Q27084209) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

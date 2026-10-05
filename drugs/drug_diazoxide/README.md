@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Diazoxide is a non-diuretic benzothiadiazine derivative that activates ATP-sensitive potassium channels.[A255647,L44612] It is chemically related to thiazide diuretics but does not inhibit carbonic anhydrase and does not have chloriuretic or natriuretic activity.[A190372] Diazoxide is commonly used in the treatment of hyperinsulinaemic hypoglycemia due to its ability to inhibit insulin release.[A255647] Diazoxide also exhibits hypotensive activity and reduces arteriolar smooth muscle and vascular resistance.[A190372] When administered intravenously, diazoxide can be used to treat hypertensive emergencies;[L44622] however, this specific form of diazoxide is no longer available in the US. Diazoxide is usually well tolerated, and some of its more common side effects include fluid retention and electrolyte disturbances. In September 2015, the FDA issued a safety alert regarding post-marketing reports of pulmonary hypertension occurring in infants and neonates.[A255647,L44612]
+Diazoxide is a vasodilator and potassium channel activator used to treat hypoglycemia and malignant hypertension. It is an approved medicine, used mainly in hospital settings for these conditions.
 
-In March 2025, an extended-release formulation of diazoxide choline was approved by the FDA for the treatment of hyperphagia in patients with Prader-Willi syndrome, becoming the first FDA-approved therapy for this condition.[L52720,L52725]
-
-**Indication.** Oral diazoxide is indicated to manage hypoglycemia due to hyperinsulinism associated with conditions such as inoperable islet cell adenoma or carcinoma, and extrapancreatic malignancy in adults, or leucine sensitivity, islet cell hyperplasia, nesidioblastosis, extrapancreatic malignancy, islet cell adenoma, and adenomatosis in infants and children. In infants and children oral diazoxide may be used preoperatively as a temporary measure, and postoperatively, if hypoglycemia persists.[L44612] Diazoxide may also be used parentally or intravenously to treat hypertensive emergencies.[A255632,L44622]
-
-In addition, extended-release diazoxide choline is indicated for the treatment of hyperphagia in adults and pediatric patients 4 years of age and older with Prader-Willi syndrome (PWS).[L52720]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420009](https://www.wikidata.org/wiki/Q420009) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

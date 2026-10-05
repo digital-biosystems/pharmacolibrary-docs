@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Human serum albumin is the primary protein present in human blood plasma. The main function of albumin is to maintain the oncotic pressure of blood [A33706]. It binds to water, cations (such as Ca2+, Na+ and K+), fatty acids, hormones, bilirubin, thyroxine (T4) and pharmaceuticals (including barbiturates).  Albumin represents approximately 50% of the total protein content in healthy humans [A40060].
+Human serum albumin is a blood-derived plasma protein preparation used as a blood substitute and plasma protein fraction, for example to restore blood volume. It is an approved medicine, given by infusion, and is used in hospitals worldwide.
 
-Human albumin is a small globular protein (molecular weight: 66.5 kDa), consisting of a single chain of 585 amino acids organized in three repeated homolog domains (sites I, II, and III). Each domain comprises two separate sub-domains (A and B) [A40060]. 
-
-There are various preparations of albumin that are well established and widely available in the clinical setting [L3108], [L3109], [L3101].
-
-Also known as _Albuminex_ 5% or 25%, one brand of human serum albumin is prepared from the pooled plasma of US donors in FDA-licensed facilities in the US [F229].  This is a biosimilar drug to existing human serum albumin and was approved for a biological license at both 5% and 25% concentrations by the FDA on June 21, 2018 [L3101].
-
-**Indication.** Albuminex solution is indicated for adults and children for hypovolemia, ascites, hypoalbuminemia including from burns, acute nephrosis, acute respiratory distress syndrome and cardipulmonary bypass [F229].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801768](https://www.wikidata.org/wiki/Q20801768) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

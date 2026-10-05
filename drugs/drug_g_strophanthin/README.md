@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** A cardioactive glycoside consisting of rhamnose and ouabagenin, obtained from the seeds of Strophanthus gratus and other plants of the Apocynaceae; used like digitalis. It is commonly used in cell biological studies as an inhibitor of the NA(+)-K(+)-exchanging ATPase.
+G-Strophanthin (ouabain) is a cardiac glycoside used as a cardiotonic agent, mainly for heart conditions such as heart failure. It is an approved medicine, but it is not widely used today and is employed mainly in a few countries, often by injection in hospital settings.
 
-**Indication.** For the treatment of atrial fibrillation and flutter and heart failure
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q285911](https://www.wikidata.org/wiki/Q285911) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

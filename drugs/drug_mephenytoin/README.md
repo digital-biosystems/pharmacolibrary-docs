@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Mephenytoin is used for the treatment of refractory partial epilepsy. Mephenytoin is a solid. This compound belongs to the phenylhydantoins. These are heterocyclic aromatic compounds containing an imiazolidinedione moiety substituted by a phenyl group. Mephenytoin is known to target sodium channel protein type 5 subunit alpha. Cytochrome P450 2C19, Cytochrome P450 2C8, Cytochrome P450 2C9, Cytochrome P450 2B6, Cytochrome P450 1A2, and Cytochrome P450 2D6 are known to metabolize mephenytoin. Mephenytoin is a hydantoin-derivative anticonvulsant used to control various partial seizures. Mephenytoin and oxazolidinedione derivatives are associated with higher incidences of blood dyscrasias compared to other anticonvulsants.
+Mephenytoin is a hydantoin anticonvulsant that was used to treat temporal lobe epilepsy and tonic–clonic seizures. It has been withdrawn and is no longer in clinical use.
 
-**Indication.** For the treatment of refractory partial epilepsy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1175385](https://www.wikidata.org/wiki/Q1175385) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

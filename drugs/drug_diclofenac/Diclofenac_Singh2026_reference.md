@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Singh_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_Singh2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,22 +19,20 @@
 
 ### Reviewer guidance
 
-**The diclofenac record was rejected because its clearance (0.12 L/h) and volume of distribution (0.1731 L) are physiologically implausible, indicating a unit or scale extraction error.**
+**The diclofenac record was rejected because its clearance (0.12 L/h) and volume of distribution (0.1731 L) are far outside plausible physiological ranges, indicating a unit or scale extraction error.**
 
-The clearance parameter for diclofenac carries the verbatim label 'Meropenem Plasma CL Simulated', suggesting the value was taken from a different molecule, and the volume was derived from CL·t½/ln2 rather than read directly. Both magnitudes (0.12 L/h clearance, 0.1731 L volume) fall far outside physiological windows for diclofenac, consistent with a unit or scale extraction error. The source is a secondary review rather than a primary fitted model, and a second reader disagreed on several extracted values (e.g., 517.6 vs 251.8, 50.2 vs 39.6), leaving some fields null in this record. Extracted — diclofenac: CL 0.12 L/h, V 0.173 L.
+The record assigns diclofenac a total plasma clearance of 0.12 L/h and a distribution volume of 0.1731 L, the latter derived from CL·t½/ln2; both magnitudes are implausible for diclofenac and the clearance label even reads 'Meropenem Plasma CL Simulated', suggesting the values were extracted from the wrong compound or with a unit/scale mistake. The source is a review-secondary text, so the numbers may be summary statistics rather than a fitted model. A second reader also disagreed on several extracted values (258.8 vs 517.6, and one null), leaving some numbers inconclusive. Extracted — diclofenac: CL 0.12 L/h, V 0.173 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 258.8, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.515357+00:00) predates the upstream re-run (2026-10-03 20:29:31.536354+00:00). Current validate status: `rejected`.
 
 ## Citation
 Singh N et al., Aminoglycosides enhance meropenem/vabor…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01365-25](https://doi.org/10.1128/aac.01365-25)
 
 ## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Singh2026_reference" status="rejected" stale="true" population="" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diclofenac" model-id="Diclofenac_Singh2026_reference" status="rejected" stale="false" population="" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

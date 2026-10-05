@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Deacetyllanatoside C. A cardiotonic glycoside from the leaves of Digitalis lanata.
+Deslanoside is a digitalis glycoside used to treat atrial fibrillation, supraventricular tachycardia, and congestive heart failure. It is an approved medicine, though it appears to be little used today and is not authorised in the European Union.
 
-**Indication.** For the treatment and management of Congestive cardiac insufficiency, arrhythmias and heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5264583](https://www.wikidata.org/wiki/Q5264583) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Little absorption from the gastrointestinal tract (40%).…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP1A1 (inhibitor).</sub>
 

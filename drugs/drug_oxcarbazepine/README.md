@@ -10,27 +10,25 @@
 
 ## About
 
-**Description.** Oxcarbazepine is an anti-epileptic medication used in the treatment of partial onset seizures that was first approved for use in the United States in 2000.[L8627,L8630,L8633] It is a structural derivative of [carbamazepine][A186101] and exerts a majority of its activity via a pharmacologically active metabolite, MHD, which exists as a racemate in the blood - a pro-drug of the more active (S)-enantiomer is also marketed as a separate anti-epileptic under the name [eslicarbazepine].[A186011] Compared to other anti-epileptic drugs, which are generally metabolized via the cytochrome P450 system, oxcarbazepine has a reduced propensity for involvement in drug-drug interactions owing to its primarily reductive metabolism.[A186032]
+Oxcarbazepine is an anticonvulsant used to treat epilepsy, especially focal seizures, and has also been used for trigeminal neuralgia and mood disorders. It is an approved medicine in general use, though it has also been studied for other investigational purposes.
 
-**Indication.** In the United States, oxcarbazepine is indicated for use as monotherapy or adjunctive therapy in the treatment of partial-onset seizures in adults and as monotherapy in the treatment of partial-onset seizures in pediatric patients aged 4 years and above, and as adjunctive therapy in pediatric patients aged 2 years and above with partial-onset seizures.[L8627] 
-
-In Canada, oxcarbazepine is indicated for use as monotherapy or adjunctive therapy in the treatment of partial-onset seizures in patients 6 years of age and older.[L8630]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q176301](https://www.wikidata.org/wiki/Q176301) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 01:30 | 6:00 | 0/4/1 | 0/0/0 | 0/0/0 | 52,519/13,528 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 11/1 | 4/0 | 0 |
+| 2026-09-10 01:30 | 6:00 | 0/5/0 | 0/0/0 | 0/0/0 | 52,519/13,528 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 11/1 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Wu_2024_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference.md) | held back | 1-compartment, oral | 1 | Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharmacolo… (2024) | [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chen_2021_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Chen2021_reference.md) | — | parent + metabolite (no model) | 0 | Chen YT et al., Population pharmacokinetics of oxcarbaz…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1917377](https://doi.org/10.1080/17512433.2021.1917377) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_n](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_n.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_pop](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_pop.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_population](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_population.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chen_2021_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Chen2021_reference.md) | — | parent + metabolite (no model) | 0 | Chen YT et al., Population pharmacokinetics of oxcarbaz…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1917377](https://doi.org/10.1080/17512433.2021.1917377) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_n](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_n.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_pop](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_pop.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_population](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_population.md) | — | parent + metabolite (no model) | 0 | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wu_2024_reference](drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference.md) | — | 1-compartment (no model) | 1 | Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharmacolo… (2024) | [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000) |
 
 ## ADME sites
 
@@ -48,8 +46,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inducer/inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inducer/inhibitor, `CYP3A5` inducer/inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor, `CYP3A5` inducer/inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal elimination accounts for only 4% of the administered dose…”</sub> | prose |
-| excretion | kidney | <sub>“…more than 95% of the administered dose of oxcarbazepine is found in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AKR1C1 (substrate), AKR1C2 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CBR1 (substrate), CBR3 (substrate), SCN11A (blocker), SCN1A (inhibitor).</sub>
 
@@ -63,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 58 matched, 16 returned
 - **screened:** 10  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs_review 1  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Aluminum hydroxide is an inorganic salt used as an antacid. It is a basic compound that acts by neutralizing hydrochloric acid in gastric secretions. Subsequent increases in pH may inhibit the action of pepsin. An increase in bicarbonate ions and prostaglandins may also confer cytoprotective effects.
+Algeldrate (aluminium hydroxide) is an antacid used to relieve acid-related stomach disorders such as heartburn and indigestion. It is an approved, widely available over-the-counter antacid, often combined with other antacids.
 
-**Indication.** For relief of heartburn and acid indigestion.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4060653](https://www.wikidata.org/wiki/Q4060653) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,7 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…rapidly eliminated by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HLA-DR3-DQ2 (safety_allele).</sub>
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Sodium Acetate is chemically designated CH3COONa, a hygroscopic powder very soluble in water. Sodium acetate could be used as additives in food, industry, concrete manufacture, heating pads and in buffer solutions. Medically, sodium acetate is important component as an electrolyte replenisher when given intravenously. It is mainly indicated to correct sodium levels in hyponatremic patients. It can be used also in metabolic acidosis and for urine alkalinization.
+Sodium acetate is a sodium salt used as an electrolyte additive in intravenous solutions to correct or maintain electrolyte balance. It is an approved medicine, given as an additive to infusion and perfusion solutions, typically in hospital settings.
 
-**Indication.** Injection, USP 40 mEq is indicated as a source of sodium, for addition to large volume intravenous fluids to prevent or correct hyponatremia in patients with restricted or no oral intake. It is also useful as an additive for preparing specific intravenous fluid formulas when the needs of the patient cannot be met by standard electrolyte or nutrient solutions. Sodium acetate and other bicarbonate precursors are alkalinising agents, and can be used to correct metabolic acidosis, or for alkalinisation of the urine.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q339940](https://www.wikidata.org/wiki/Q339940) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -55,11 +55,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | <sub>“…readily available in the circulation after IV administration…”</sub> | prose |
-| metabolism | liver | <sub>“…In liver, sodium acetate is being metabolized into bicarbonate…”</sub> | prose |
-| excretion | bile duct | <sub>“…excreted in saliva, sweat, bile and pancreatic secretions…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted mainly in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…Some sodium is excreted in the feces…”</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACSS2 (substrate).</sub>
 

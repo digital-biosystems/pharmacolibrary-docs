@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Desflurane, or I-653, a a volatile anesthetic that is more rapidly cleared and less metabolized than previous inhaled anesthetics such as [methoxyflurane], [sevoflurane], [enflurane], or [isoflurane].[A226390,A39015,A226893]. It was developed in the late 1980s out of a need for a more rapidly acting and rapidly cleared inhaled anesthetic.[A226883,A226888]
+Desflurane is an inhalational general anaesthetic used to induce and maintain anaesthesia during surgery. It is an approved medicine used widely in operating rooms, mainly in hospital settings.
 
-Desflurane was granted FDA approval on 18 September 1992.[L30285]
-
-**Indication.** Desflurane is indicated for the induction and maintenance of anesthesia in adults, as well as the maintenance of anesthesia in pediatric patients.[L30285]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419383](https://www.wikidata.org/wiki/Q419383) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,8 +34,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP2E1` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…eliminated in the urine…”</sub> | prose |
-| excretion | lung | <sub>“…rapidly eliminated from the lungs…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP2C1 (inhibitor), ATP5F1D (other/unknown), GABRA1 (positive allosteric modulator), GLRA1 (target), GRIA1 (target), KCNA1 (inducer), MT-ND1 (inhibitor).</sub>
 

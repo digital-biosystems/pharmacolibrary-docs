@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** The human von Willebrand factor (vWF) is a human plasma-derived vWF, an endogenous large multimeric plasma glycoprotein involved in hemostasis. It serves a dual role in hemostasis by mediating platelet adhesion and aggregation at the site of blood vessel injury and stabilizing procoagulant factor VIII (FVIII).[A32262] Exogenous sources of vWF are used to restore functional levels of vWF in blood disorders associated with deficient or abnormal blood clotting. The human vWF is used to manage and control bleeding episodes in patients with von Willebrand disease and hemophilia A. It was first approved by the FDA in 2015.[L40049] As vWF is normally present in the blood as a stable complex with coagulation factor III, therapeutic vWF products are also available as a combination product with [antihemophilic factor human].[L1878] A recombinant form of vWF, [vonicog alfa], is also available to enhance production and avoid the theoretical risk of pathogen transmission from plasma donors.[A32262]
+Von Willebrand factor is a blood protein used as a medicine to treat bleeding problems, particularly von Willebrand disease. It is an approved treatment, given as a blood coagulation factor product, though its use remains limited to specialised care.
 
-**Indication.** The von Willebrand factor (vWF) is indicated to manage and control bleeding episodes in adults with von Willebrand disease. It is also used for perioperative management of bleeding in these patients. It is also used for routine prophylaxis to reduce the frequency of bleeding episodes in patients with severe Type 3 von Willebrand disease receiving on-demand therapy. It is also indicated for on-demand treatment and perioperative management of bleeding in pediatric patients with VWD, and for routine prophylaxis to reduce the frequency of bleeding episodes in adults with VWD (including Types 1 and 2)[L40049]
-
-In combination with [antihemophilic factor human], vWF is also used to manage and control bleeding associated with von Willebrand disease in children and adults, as well as for perioperative management of bleeding in these patients. This combination product is also used for the management and control of bleeding episodes in adolescents and adults with hemophilia A, as well as for routine prophylaxis to reduce the frequency of bleeding episodes.[L1878]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412310](https://www.wikidata.org/wiki/Q412310) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -91,7 +89,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | liver | <sub>“…elimination by the liver and spleen…”</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADAMTS13 (substrate), ASGR1 (target), COL1A1 (binder), F8 (carrier), F8 (stabilization), LRP1 (binder).</sub>
 

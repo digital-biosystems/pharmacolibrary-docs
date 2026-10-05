@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Elosulfase alfa is a synthetic version of the enzyme N-acetylgalactosamine-6-sulfatase. It was approved by the FDA in 2014 for the treatment of Morquio syndrome. Elosulfase alfa was developed by BioMarin Pharmaceutical Inc. and is marketed under the brand Vimizim™. The recommended dose is 2 mg per kg given intravenously over a minimum range of 3.5 to 4.5 hours, based on infusion volume, once every week.
+Elosulfase alfa is an enzyme replacement therapy used to treat mucopolysaccharidosis IV. It is authorised in the European Union.
 
-**Indication.** Vimizim is a hydrolytic lysosomal glycosaminoglycan (GAG)-specific enzyme indicated for patients with Mucopolysaccharidosis type IVA (MPS IVA; Morquio A syndrome).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q21011232](https://www.wikidata.org/wiki/Q21011232) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

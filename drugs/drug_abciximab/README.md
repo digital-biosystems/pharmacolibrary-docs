@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Abciximab is a Fab fragment of the chimeric human-murine monoclonal antibody 7E3. Abciximab binds to the glycoprotein (GP) IIb/IIIa receptor of human platelets and inhibits platelet aggregation by preventing the binding of fibrinogen, von Willebrand factor, and other adhesive molecules. It also binds to vitronectin (αvβ3) receptor found on platelets and vessel wall endothelial and smooth muscle cells.
+Abciximab is a platelet aggregation inhibitor used to treat unstable angina and acute myocardial infarction, mainly during and after coronary artery procedures. It is a hospital-administered injectable drug used mainly in cardiac care settings during angioplasty procedures.
 
-**Indication.** Abciximab is indicated as an adjunct to percutaneous coronary intervention for the prevention of cardiac ischemic complications in patients undergoing percutaneous coronary intervention and in patients with unstable angina not responding to conventional medical therapy when percutaneous coronary intervention is planned within 24 hours. Abciximab is intended for use with aspirin and heparin and has been studied only in that setting.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q307088](https://www.wikidata.org/wiki/Q307088) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…Excreted renally…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: FCGR2A (unknown), FCGR2B (unknown), ITGA2B (target), ITGB3 (target), VTN (unknown).</sub>
 

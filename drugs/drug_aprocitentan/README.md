@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Aprocitentan is a dual antagonist of endothelin receptors A and B used for treatment-resistant hypertension. It is the active metabolite of [macitentan].
+Aprocitentan is a medicine used to treat high blood pressure (hypertension). It is approved and authorised for use in the European Union as an antihypertensive.
 
-Approximately 10-15% of patients with hypertension have resistant hypertension, defined as uncontrolled high blood pressure despite the combined use of a renin-angiotensin system blocker, a calcium channel blocker, and a diuretic at maximally tolerated doses.[A263386] Patients with resistant hypertension are at an increased risk of cardiovascular and renal events[A263386] and have traditionally had limited additional treatment options. Endothelin receptor antagonism provides a novel therapeutic pathway for the management of patients with resistant hypertension.[A263386,L50261]
-
-Aprocitentan was approved by the FDA in March 2024 for the treatment of hypertension in patients inadequately controlled with standard therapy.[L50261] It was the first antihypertensive employing a novel mechanism to be approved in almost 40 years.[L50261]
-
-**Indication.** Aprocitentan, in combination with other antihypertensive medications, is indicated to lower blood pressure in adult patients who are not adequately controlled on other therapies.[L50266]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27146161](https://www.wikidata.org/wiki/Q27146161) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,8 +41,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT2B7` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inducer/inhibitor, `SLC10A1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor, `UGT1A1` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…25% via feces…”</sub> | prose |
-| excretion | kidney | <sub>“…approximately 52% of the dose was eliminated via urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CYP2C18 (inhibitor), EDNRA (target), EDNRB (target).</sub>

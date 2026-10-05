@@ -1,19 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Fluorouracil_Bae2026_reference",
  "molar_masses": {
-  "central.C": 0.1300772
+  "C_central": 0.1300772
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  0.3,
-  3.0,
-  30.0,
-  200.0
+  "C_central"
  ],
  "parameters": {
   "Cl": 6.027777777777778e-07,
@@ -23,17 +16,17 @@
   "VdPerKg": 9.842857142857143e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 3e-07,
+  "adminMass": 0.0001,
   "k12": 0.004354136429608128,
   "k21": 1.8159806295399513e-05,
   "ka": 0.0002102777777777778,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 34975.55110220441
+  "C_central": 34975.55110220441
  },
  "reference_peaks": {
-  "central.C": 1.783710156041077e-08
+  "C_central": 5.945585697123418e-06
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

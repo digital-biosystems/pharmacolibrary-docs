@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Oxycodone is a semisynthetic opioid analgesic derived from thebaine in Germany in 1917.[A178696] It is currently indicated as an immediate release product for moderate to severe pain and as an extended release product for chronic moderate to severe pain requiring continuous opioid analgesics for an extended period.[Label] The first oxycodone containing product, Percodan, was approved by the FDA on April 12, 1950.[L6460]
+Oxycodone is an opioid painkiller used to treat pain, including pain from injury and conditions such as fibromyalgia. It is widely used and appears on the WHO list of essential medicines, though it carries a boxed warning and is also misused illicitly.
 
-**Indication.** Oxycodone is indicated for the treatment of moderate to severe pain.[Label] There is also an extended release formulation indicated for chronic moderate to severe pain requiring continuous opioid analgesics for an extended period.[Label]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407535](https://www.wikidata.org/wiki/Q407535) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,7 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Oxycodone and its metabolites are eliminated in the urine.…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1B (inhibitor), OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 

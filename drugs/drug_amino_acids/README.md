@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Mixture of amino acids ; used for parenteral nutrition in infants.
+Amino acid solutions are used to provide parenteral nutrition, and an amino acid product is authorised in the European Union for treating maple syrup urine disease. DrugBank classifies amino acids as investigational, so their use as a drug is not established.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q8066](https://www.wikidata.org/wiki/Q8066) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

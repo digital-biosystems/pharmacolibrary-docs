@@ -8,6 +8,12 @@
 - **molar mass:** 253.305 g/mol (C15H15N3O) — DrugBank
 - **groups:** investigational
 
+## About
+
+Ethacridine lactate is an acridine-derived antiseptic used against bacterial infections, mainly as a local anti-infective and in irrigating solutions. It is not an approved medicine in the EU and is currently classed as investigational, though it remains known as a topical antiseptic.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27292662](https://www.wikidata.org/wiki/Q27292662) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

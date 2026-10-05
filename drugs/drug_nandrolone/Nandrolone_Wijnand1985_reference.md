@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The nandrolone record was rejected because the metabolite nandrolone, formed from nandrolone decanoate by hydrolysis, has no compartment (0 compartments), leaving it unlinked from the dose, and the record was built from the abstract only.**
+**The nandrolone record was rejected because the metabolite nandrolone, formed from nandrolone decanoate by hydrolysis, has no compartment (n_cmt: 0), leaving it unlinked from the dose, and the model was built from the abstract only.**
 
-The structure lists nandrolone as a metabolite formed from nandrolone decanoate in the central compartment but with 0 compartments, so the check for unreachable compartments or unlinked metabolites failed. The record is abstract-only, meaning reported summary statistics (e.g., clearance 1.55 with unit '1 X h-1 X kg-1', an unconvertible unit) stood in for a fitted model. A second reader also disagreed on the dose compound (nandrolone decanoate vs unknown), the primary analyte, and the hydrolysis link, and could not confirm the extracted clearance value of 1.55. Extracted — nandrolone: CL 1.55 1 X h-1 X kg-1.
+The record is abstract-only, so reported summary statistics stood in for a fitted model. The hydrolysis link from nandrolone decanoate to nandrolone has no link parameter, and the formed nandrolone is assigned 0 compartments, making it an orphan metabolite with no path from the dose. The clearance CL is 1.55 l·h⁻¹·kg⁻¹ for nandrolone, and the half-life of hydrolysis of nandrolone decanoate in serum has no extracted value; a second reader recorded mean half-lives of 4.3 and 6, but this record has null for those, and the second reader also left the dose compound and primary analyte as unknown. Extracted — nandrolone: CL 1.55 1 X h-1 X kg-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nandrolone decanoate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

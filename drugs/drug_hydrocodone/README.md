@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Hydrocodone is a synthetic opioid derivative of codeine.[T116] It is commonly used in combination with [acetaminophen] to control moderate to severe pain. Historically, hydrocodone has been used as a cough suppressant although this has largely been replaced by [dextromethorphan] in current cough and cold formulations. Hydrocodone's more potent metabolite, [hydromorphone] has also found wide use as an analgesic and is frequently used in cases of severe pain. The FDA first approved Hydrocodone for use as part of the cough suppressant syrup Hycodan in March of 1943.[L9025]
+Hydrocodone is an opioid used to treat pain and to suppress cough. It is an approved medicine, typically given in combination with non-opioid painkillers, and is not authorised in the European Union.
 
-**Indication.** Hydrocodone is indicated for the management of acute pain, sometimes in combination with [acetaminophen] or [ibuprofen], as well as the symptomatic treatment of the common cold and allergic rhinitis in combination with decongestants, antihistamines, and expectorants.[label,L7991]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411441](https://www.wikidata.org/wiki/Q411441) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -57,8 +57,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` formation/substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2D6` formation/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…renal clearance is substantially lower than total apparent clearance…”</sub> | prose |
-| excretion | liver | <sub>“…Hepatic metabolism may account for a portion of this…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (target), OPRM1 (target), SIGMAR1 (target).</sub>
 

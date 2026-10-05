@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # riociguat
 
@@ -11,10 +11,9 @@
 
 ## About
 
-**Description.** Riociguat is a soluble guanylate cyclase (sGC) agonist approved in the USA, Europe and several other regions for patients with group I PAH (pulmonary arterial hypertension) in WHO FC II or III; and for the treatment of patients with inoperable CTEPH (chronic thromboembolic pulmonary hypertension), or persistent/recurrent PH (pulmonary hypertension) after pulmonary endarterectomy in WHO FC II or III. Riociguat is marketed under the brand Adempas® by Bayer HealthCare Pharmaceuticals. Treatment with riociguat costs USD $7,500 for 30 days of treatment.
+Riociguat is a drug used to treat pulmonary hypertension and chronic pulmonary heart disease. It is authorised in the European Union for pulmonary hypertension and is an approved medicine.
 
-**Indication.** Riociguat is indicated for the treatment of adults with persistent/recurrent chronic thromboembolic pulmonary hypertension (CTEPH), (WHO Group 4) after surgical treatment, or inoperable CTEPH, to improve exercise capacity and WHO functional class.
-Riociguat is indicated for the treatment of adults with pulmonary arterial hypertension (PAH), (WHO Group 1), to improve exercise capacity, WHO functional class and to delay clinical worsening. Efficacy was shown in patients on Riociguat monotherapy or in combination with endothelin receptor antagonists or prostanoids. Studies establishing effectiveness included predominately patients with WHO functional class II–III and etiologies of idiopathic or heritable PAH (61%) or PAH associated with connective tissue diseases (25%).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2154494](https://www.wikidata.org/wiki/Q2154494) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -35,8 +34,8 @@ Riociguat is indicated for the treatment of adults with pulmonary arterial hyper
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_topology_template</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Saleh_2016_reference](drugs/drug_riociguat/Riociguat_Saleh2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685404](https://doi.org/10.1086/685404) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2016_2_reference](drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md) | — | 1-compartment (no model) | 3 | Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685647](https://doi.org/10.1086/685647) |
-| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span> | [Saleh_2016_reference](drugs/drug_riociguat/Riociguat_Saleh2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685404](https://doi.org/10.1086/685404) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2020_reference](drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md) | — | parent + metabolite (no model) | 1 | Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020) | [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031) |
 
 ## ADME sites
@@ -57,8 +56,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…feces (53%)…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated in the urine (40%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GUCY1A2 (stimulator), GUCY1A2 (target), GUCY2D (modulator).</sub>
 
@@ -72,7 +71,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

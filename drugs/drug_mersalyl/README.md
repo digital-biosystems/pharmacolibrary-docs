@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Mersalyl is the sodium salt form of mersalyl acid, a mercurial diuretic. It is an outdated drug, and its approval has been discontinued by the FDA. Mersalyl acid is currently replaced by less toxic non-mercury containing diuretics [L1575, L1577]. The sodium salt of a mercury-containing derivative of salicylamide, was formerly used (often in combination with theophylline) to treat edema, due to its powerful diuretic properties [L1577].  Interestingly, it has been found to have antiviral properties in mice [L1584].
+Mersalyl is a mercurial compound that was formerly used as a diuretic to treat fluid retention.
 
-**Indication.** Elevated blood pressure, edema [L1577, L1585].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424871](https://www.wikidata.org/wiki/Q424871) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | small intestine | <sub>“…Organic mercury is absorbed primarily in the gastrointestinal tract…”</sub> | prose |
-| excretion | bile duct | <sub>“…and feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ALPL (target), AQP1 (unknown), ITIH1 (inducer), PCK1 (inhibitor), SLC16A1 (target).</sub>
 

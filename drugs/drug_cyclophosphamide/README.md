@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Precursor of an alkylating nitrogen mustard antineoplastic and immunosuppressive agent that must be activated in the liver to form the active aldophosphamide. It has been used in the treatment of lymphoma and leukemia. Its side effect, alopecia, has been used for defleecing sheep. Cyclophosphamide may also cause sterility, birth defects, mutations, and cancer.
+Cyclophosphamide is an alkylating anticancer drug used to treat many cancers, including breast and ovarian cancer, leukemias, and lymphomas, as well as several autoimmune diseases such as lupus and vasculitis. It is an approved medicine and appears on the WHO list of essential medicines, so it is widely used worldwide.
 
-**Indication.** Cyclophosphamide for intravenous injection is indicated for the treatment of a number of malignancies, including: Hodgkin’s disease, lymphocytic lymphoma, mixed-cell type lymphoma, histiocytic lymphoma, Burkitt’s lymphoma; multiple myeloma, leukemias, mycosis fungoides, neuroblastoma, adenocarcinoma of ovary, retinoblastoma, and breast carcinoma.[L50141]
-
-Cyclophosphamide oral capsules are additionally indicated for the treatment of minimal change nephrotic syndrome in pediatric patients who fail to adequately respond to (or are unable to tolerate) adrenocorticosteroid therapy.[L50557]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408524](https://www.wikidata.org/wiki/Q408524) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,8 +37,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2A6` substrate, `CYP2B6` inducer/substrate, `CYP2C19` substrate, `CYP2C8` inducer/substrate, `CYP2C9` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…4% is excreted in the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…10-20% is excreted unchanged in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CYP2C18 (substrate), DNA (cross-linking/alkylation), NR1I2 (target).</sub>
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Deshpande_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Osipova2023_reference&quot;,&quot;label&quot;:&quot;Osipova_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Osipova2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifabutin — `Rifabutin_Deshpande2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,11 +19,11 @@
 
 ### Reviewer guidance
 
-**The rifabutin record was rejected because its clearance (0.07 L/h) and volume of distribution (0.31 L) fall outside plausible physiological windows, suggesting a unit or scale extraction error.**
+**The rifabutin record was rejected because its clearance (0.07 L/h) and volume of distribution (0.31 L) fall far outside plausible physiological ranges, indicating a unit or scale extraction error.**
 
-The extracted rifabutin parameters — total clearance of 0.07 L/h and a distribution volume of 0.31 L — are implausibly small for this drug, which the review flagged as a likely unit or scale extraction error. A second reader also disagreed on several extracted values, reading 73.37, 5, 2.98, 1.88 and 75 where this record had no value, and reading 2.98 in a different field than this record did. These unresolved value disagreements reinforce that the record's numbers cannot be trusted as published. Extracted — rifabutin: CL 0.07 L/h, V 0.31 L.
+For rifabutin, the record reports a total clearance of 0.07 L/h and a volume of distribution of 0.31 L; both magnitudes are physiologically implausible for this drug, which is why the record was refused. A second reader obtained different values for several parameters (e.g., 3.92 and 84.6 where this record had none, and 1.88 versus 2.98 for another), showing the extracted numbers are not settled. The disagreement pattern is consistent with a unit or scale misreading of the source values. Extracted — rifabutin: CL 0.07 L/h, V 0.31 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q325: this record has none, the second reading 73.37; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q325: this record has none, the second reading 3.92; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,23 +60,21 @@ Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q325]` | not captured | 73.37 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q364]` | not captured | 5 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` | 2.98 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q325]` | not captured | 3.92 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q38]` | not captured | 84.6 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 2.98 | 1.88 | mismatch |
 | `gpt-oss:120b` | `values[Q59]` | not captured | 2.98 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q60]` | not captured | 1.88 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q87]` | not captured | 75 | only_one_extracted |
 
 </details>
 
@@ -123,4 +121,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 07:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:44 UTC</sub>

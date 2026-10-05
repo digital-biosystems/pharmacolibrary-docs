@@ -1,17 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 3000 mg parenteral (N02BB02)",
  "model_id": "MetamizoleSodium_Nandy2010_reference",
  "molar_masses": {
-  "central.C": 0.333338
+  "C_central": 0.333338
  },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  500.0,
-  1000.0
+  "C_central"
  ],
  "parameters": {
   "Cl": 3.7777777777777777e-06,
@@ -20,16 +15,16 @@
   "VdPerKg": 0.00016428571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0005,
+  "adminMass": 0.003,
   "k12": 0.0001111111111111111,
   "k21": 0.00022030651340996168,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662062
+  "C_central": 660.0000000662073
  },
  "reference_peaks": {
-  "central.C": 0.014877191916176664
+  "C_central": 0.08926328201036382
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

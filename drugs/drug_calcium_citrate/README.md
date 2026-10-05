@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Calcium citrate is a salt typically used as a source of calcium in a variety of over the counter supplements.
+Calcium citrate is a calcium supplement used to prevent or treat calcium deficiency. It is an approved, widely available calcium preparation used as a mineral supplement.
 
-**Indication.** For use as an over the counter calcium supplement.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420280](https://www.wikidata.org/wiki/Q420280) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 23:51 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 2,380/136 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/2 | 0/0 | 0 |
+| 2026-10-05 08:38 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 7,601/256 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/2 | 0/0 | 0 |
 
 ## popPK records
 
@@ -31,7 +31,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ALB` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Cleared via the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1A (substrate), CACNA1C (substrate), CACNA1E (substrate), CACNA1G (substrate), CADPS (target), CADPS2 (target), CALB1 (substrate), CALB2 (target), CALM1 (target), CALM2 (target), CALM3 (target), CALR (target), CALR3 (target), CANX (target), CAPS (target), CASQ1 (target), CASQ2 (target), CASR (target), CATSPER1 (substrate), CHP1 (target), CIB1 (target), CIB2 (target), FBN2 (target), FBN3 (target), GCA (target), NCS1 (target), NRXN1 (target), NUCB1 (target), NUCB2 (target), PDCD6 (target), PEF1 (target), PKD1L3 (substrate), PKD2L1 (substrate), RGN (target), RYR1 (substrate), RYR2 (substrate), RYR3 (substrate), S100A13 (target), S100A16 (target), S100A6 (target), S100B (target), S100G (substrate), SLC8A1 (substrate), SPARC (target), SRI (target), TPT1 (target), TRPV5 (substrate), TRPV6 (substrate).</sub>
 
@@ -56,7 +56,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Keung_1995.pdf` | Keung WM et al., Daidzin suppresses ethanol consumption…, Proceedings of the National… (1995) | pd | 4 | [10.1073/pnas.92.19.8990](https://doi.org/10.1073/pnas.92.19.8990) | [7568058](https://www.ncbi.nlm.nih.gov/pubmed/7568058) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T23:51:32.217649+00:00</sub>
+<sub>queue written 2026-10-05T08:38:41.171921+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,12 +66,12 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Chalermnon_2021 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for triazine derivatives and characterizes calcium citrate nanoparticles as a delivery vehicle, but does not report a pharmacodynamic or exposure-response relationship for calcium citrate itself. |
 | popPK | Delbem_2012 | irrelevant | 0 | 0 | The paper is an in-vitro study on dental enamel demineralization and does not report pharmacokinetic parameters for calcium citrate. |
 | PD | Delbem_2012 | not_relevant | 2 | 1 | The study reports group-level mean differences in enamel hardness and fluoride uptake for various dentifrice formulations, but it does not provide a quantitative exposure-response or dose-response curve with numeric PD parameters (e.g., Emax, EC50) for calcium citrate. |
-| popPK | EFSA_2025 | irrelevant | 0 | 0 | The paper is a risk assessment of fluoride exposure and does not contain any pharmacokinetic data for calcium citrate. |
+| popPK | EFSA_2025 | irrelevant | 0 | 0 | The paper is a risk assessment of fluoride exposure and does not contain pharmacokinetic data for calcium citrate. |
 | PD | EFSA_2025 | not_relevant | 0 | 0 | The paper is a risk assessment for fluoride, not calcium citrate, and does not report pharmacodynamic models or numeric PD parameters for the target drug. |
 | popPK | Fan_2001 | irrelevant | 0 | 0 | The study focuses on calcium oxalate crystallization and urinary composition, not the pharmacokinetic disposition parameters (CL, V, etc.) of calcium citrate. |
 | PD | Fan_2001 | not_relevant | 3 | 1 | The paper describes qualitative dose-response effects of citrate salts on crystallization parameters but does not provide numeric PD parameters (e.g., EC50, Emax) or quantitative concentration-effect curves in the provided text. |
 | popPK | Gabriel_1984 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on isocitrate dehydrogenase, not a pharmacokinetic study of calcium citrate. |
-| popPK | Gallagher_2014 | irrelevant | 0 | 0 | The study is a clinical safety trial assessing the incidence of hypercalcemia and hypercalciuria, not a pharmacokinetic study reporting quantitative disposition parameters for calcium citrate. |
+| popPK | Gallagher_2014 | irrelevant | 0 | 0 | The study assesses the incidence of hypercalcemia and hypercalciuria (safety/adverse events) rather than pharmacokinetic disposition parameters like clearance or volume of distribution. |
 | popPK | Heller_2000 | irrelevant | 2 | 0 | The study reports relative bioavailability metrics (AUC change, peak variation) rather than quantitative compartmental PK parameters (CL, V, ka) for calcium citrate. |
 | popPK | Hirata_2013 | irrelevant | 0 | 0 | The study is an in-vitro investigation of enamel remineralization using calcium citrate as a toothpaste additive, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Hirata_2013 | not_relevant | 3 | 2 | The study is an in vitro dental remineralization experiment using ANOVA and Pearson correlation; it does not report pharmacokinetic data or formal pharmacodynamic parameters (Emax, EC50) for calcium citrate. |
@@ -85,7 +85,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Sakhaee_2013 | not_relevant | 2 | 1 | The study compares bioavailability (PK) and physiological responses (serum Ca, PTH) between two formulations but does not model a concentration-effect relationship or provide numeric PD parameters like Emax or EC50. |
 | popPK | Wang_2026 | irrelevant | 2 | 0 | The study measures calcium concentrations in biological fluids (plasma, feces, urine) rather than reporting compartmental pharmacokinetic parameters (CL, V, ka) for calcium citrate, and no numeric PK values are provided in the evidence. |
 | PD | Wang_2026 | not_relevant | 2 | 1 | The paper reports qualitative comparisons of bone-protective effects and calcium retention among formulations but does not provide numeric concentration-effect curves, dose-response parameters (Emax, EC50), or a formal PK/PD model fit. |
-| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 62 chars of text extracted (&lt; 400) |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
 | PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is a placeholder for a large PDF file from a conference and contains no scientific content, data, or PD parameters. |
 
 ---

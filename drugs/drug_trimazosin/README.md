@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Trimazosin is a sympatholytic alpha blocker.
+Trimazosin is an alpha-1 adrenergic blocker developed as an antihypertensive vasodilator for treating high blood pressure. It appears to be only experimental and is not an established, widely marketed medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1324057](https://www.wikidata.org/wiki/Q1324057) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

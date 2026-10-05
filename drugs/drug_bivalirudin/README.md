@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Bivalirudin is a synthetic 20 residue peptide (thrombin inhibitor) which reversibly inhibits thrombin. Once bound to the active site, thrombin cannot activate fibrinogen into fibrin, the crucial step in the formation of thrombus. It is administered intravenously. Because it can cause blood stagnation, it is important to monitor changes in hematocrit, activated partial thromboplastin time, international normalized ratio and blood pressure.
+Bivalirudin is a direct thrombin inhibitor used as an anticoagulant, notably in acute coronary syndrome and unstable angina. It is an approved antithrombotic, though one product has been withdrawn in the European Union.
 
-**Indication.** For treatment of heparin-induced thrombocytopenia and for the prevention of thrombosis. Bivalirudin is indicated for use in patients undergoing percutaneous coronary intervention (PCI), in patients at moderate to high risk acute coronary syndromes due to unstable angina or non-ST segment elevation in whom a PCI is planned.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4919218](https://www.wikidata.org/wiki/Q4919218) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…renal mechanisms (20%)…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F2 (inhibitor), MPO (inhibitor).</sub>
 

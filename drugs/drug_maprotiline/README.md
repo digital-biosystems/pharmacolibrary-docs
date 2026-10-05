@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Maprotiline is a tetracyclic antidepressant with similar pharmacological properties to tricyclic antidepressants (TCAs). Similar to TCAs, maprotiline inhibits neuronal norepinephrine reuptake, possesses some anticholinergic activity, and does not affect monoamine oxidase activity. It differs from TCAs in that it does not appear to block serotonin reuptake. Maprotiline may be used to treat depressive affective disorders, including dysthymic disorder (depressive neurosis) and major depressive disorder. Maprotiline is effective at reducing symptoms of anxiety associated with depression.
+Maprotiline is an antidepressant used to treat depression, and has also been used for conditions such as anxiety, pain, and bulimia nervosa. It is an approved drug, though not authorised in the European Union, and is used relatively little today.
 
-**Indication.** For treatment of depression, including the depressed phase of bipolar depression, psychotic depression, and involutional melancholia, and may also be helpful in treating certain patients suffering severe depressive neurosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418361](https://www.wikidata.org/wiki/Q418361) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,12 +36,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Slowly, but completely absorbed from the GI tract following oral administration.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ORM1` unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2D6` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…30% is eliminated in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in urine as conjugated metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), DRD2 (binder), HRH1 (target), HTR2A (binder), HTR2C (binder), HTR7 (target), SLC6A2 (inhibitor).</sub>
 

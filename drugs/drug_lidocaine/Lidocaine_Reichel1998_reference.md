@@ -12,13 +12,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Only clearance was extracted — no volume; cL has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is lidocaine's own; they describe MEGX. Extracted — MEGX: CL 7.5 ml min -1 kg -1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is lidocaine's own; they describe MEGX. Extracted — MEGX: CL 7.5 ml min -1 kg -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lignocaine → megx (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -33,7 +33,7 @@ Reichel C et al., The lignocaine metabolite (MEGX) liver…, British journal of 
 ## Model component
 <dbs-pgx drug="lidocaine" model-id="Lidocaine_Reichel1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="MEGX" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.

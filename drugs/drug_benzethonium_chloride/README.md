@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Benzethonium chloride is a quaternary ammonium compound used as an antiseptic and disinfectant, applied to the skin. It remains in use as a topical antiseptic in dermatological preparations.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425119](https://www.wikidata.org/wiki/Q425119) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

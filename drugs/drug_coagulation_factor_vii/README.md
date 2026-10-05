@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Coagulation factor VII is human serine protease type enzyme that is involved in the extrinsic coagulation cascade which results in blood clotting.
+Coagulation factor VII is a blood clotting protein used to treat or prevent bleeding caused by a lack or defect of this factor. It is an approved medicine, given as a blood coagulation factor product, and is also being studied for further uses.
 
-**Indication.** May be administered in cases of uncontrolled bleeding.  Factor VII alone can be used in the treatment of congenital hemophilia A or B,  acquired hemophilia, congenital factor VII deficiency, and Glanzmann's thrombasthenia. Off label use in the treatment of refractory bleeding after cardiac surgery and warfarin related intracerebral hemorrhage.  Brands for human factor VII are currently only in combination with other vitamin K coagulation factors and can be used to reverse vitamin K antagonist activity in patients with acute major bleeds or for urgent surgery/invasive procedures. 
-
-Along with other blood coagulation factors, it is used to reverse acquired coagulation factor deficiency induced by Vitamin K antagonist (VKA, e.g., warfarin) therapy in adult patients with a need for an urgent surgery/invasive procedure.[L50517]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412850](https://www.wikidata.org/wiki/Q412850) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

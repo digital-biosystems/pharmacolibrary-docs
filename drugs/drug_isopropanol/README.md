@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** An isomer of 1-propanol. It is a colorless liquid having disinfectant properties. It is used in the manufacture of acetone and its derivatives and as a solvent. Topically, it is used as an antiseptic.
+Isopropanol is used as a skin antiseptic and disinfectant. It is widely used in healthcare settings and is an approved topical antiseptic.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q16392](https://www.wikidata.org/wiki/Q16392) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

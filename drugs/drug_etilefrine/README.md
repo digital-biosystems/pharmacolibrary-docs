@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Etilefrine is an adrenergic agonist that appears to interact with beta-1 and some alpha-adrenergic receptors. It has been used as a vasoconstrictor agent.
+Etilefrine is a sympathomimetic drug that acts on alpha- and beta-1 adrenergic receptors and was used as a cardiotonic and vasoconstrictor, mainly to raise blood pressure in low blood pressure conditions. It has been approved in some countries but is listed as withdrawn, so it is no longer in general use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417873](https://www.wikidata.org/wiki/Q417873) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

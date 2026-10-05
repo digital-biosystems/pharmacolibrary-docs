@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Carbamazepine_Li2021_reference",
+ "molar_masses": {
+  "C_central": 0.2362686
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "C_central"
@@ -7,16 +11,20 @@
  "parameters": {
   "Cl": 8.944444444444445e-07,
   "F": 1.0,
+  "MM": 0.2362686,
   "VdPerKg": 0.00086,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.0016537472700212427
+ "reference_peak_times": {
+  "C_central": 660.0000000662086
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "C_central": 0.00016537473788950227
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

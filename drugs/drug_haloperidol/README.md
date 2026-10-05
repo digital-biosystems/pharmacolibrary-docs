@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Haloperidol is a high potency first-generation (typical) antipsychotic and one of the most frequently used antipsychotic medications used worldwide.[A180616] While haloperidol has demonstrated pharmacologic activity at a number of receptors in the brain,[A27477] it exerts its antipsychotic effect through its strong antagonism of the dopamine receptor (mainly D2), particularly within the mesolimbic and mesocortical systems of the brain. Haloperidol is indicated for the treatment of the manifestations of several psychotic disorders including schizophrenia, acute psychosis, Tourette syndrome, and other severe behavioural states.[F4645] It is also used off-label for the management of chorea associated with Huntington's disease and for the treatment of intractable hiccups as it is a potent antiemetic. Dopamine-antagonizing medications such as haloperidol are though to improve psychotic symptoms and states that are caused by an over-production of dopamine, such as schizophrenia, which is theorized to be caused by a hyperdopaminergic state within the limbic system of the brain.[A34360]
+Haloperidol is an antipsychotic used to treat conditions such as schizophrenia, psychosis, delirium, Tourette syndrome, and vomiting. It is widely used and appears on the WHO list of essential medicines, though it carries a boxed warning.
 
-Use of the first-generation antipsychotics (including haloperidol) is considered highly effective for the management of the "positive" symptoms of schizophrenia including hallucinations, hearing voices, aggression/hostility, disorganized speech, and psychomotor agitation. However, this class of drugs is also limited by the development of movement disorders induced by dopamine-blockade such as drug-induced parkinsonism, akathisia, dystonia, tardive dyskinesia, as well as other side effects including sedation, weight gain, and prolactin changes. While there are limited high-quality studies comparing haloperidol to lower-potency first-generation antipsychotics such as [DB00477], [DB01624], [DB00623], and [DB01403], haloperidol typically demonstrates the least amount of side effects within this class, but demonstrates a stronger disposition for causing extrapyramidal symptoms (EPS).[A180613,
-
-**Indication.** Haloperidol is indicated for a number of conditions including for the treatment of schizophrenia, for the manifestations of psychotic disorders, for the control of tics and vocal utterances of Tourette’s Disorder in children and adults, for treatment of severe behavior problems in children of combative, explosive hyperexcitability (which cannot be accounted for by immediate provocation). Haloperidol is also indicated in the short-term treatment of hyperactive children who show excessive motor activity with accompanying conduct disorders consisting of some or all of the following symptoms: impulsivity, difficulty sustaining attention, aggressivity, mood lability, and poor frustration tolerance. Haloperidol should be reserved for these two groups of children only after failure to respond to psychotherapy or medications other than antipsychotics.[F4645]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q251347](https://www.wikidata.org/wiki/Q251347) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | skeletal muscle | <sub>“…After intramuscular administration, the time to peak plasma concentration (tmax) is 20 min…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
@@ -49,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A9` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…approximately 30% of the radioactivity is excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CBR1 (substrate), CHRM3 (target), DRD1 (target), DRD2 (target), DRD3 (inverse agonist), GRIN2B (target), HRH1 (target), HTR1A (target), HTR2A (target), HTR2C (target), HTR6 (target), HTR7 (target), MCHR1 (inhibitor), SIGMAR1 (target), SLC18A2 (inhibitor).</sub>
 

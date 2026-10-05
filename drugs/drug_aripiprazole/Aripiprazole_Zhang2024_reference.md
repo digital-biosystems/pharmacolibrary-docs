@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The olanzapine clearance parameter CL/F is negative (-1.09 L/h), which is physiologically implausible, so the record was rejected.**
+**The record is rejected because the olanzapine clearance extracted from Zhang_2024 is negative (CL/F = −1.09 L/h) and the volume of distribution (V/F = 0.47 L) is implausibly small, indicating an extraction or sign/scale error.**
 
-The record lists aripiprazole as the drug but the measured compound and parameters are for olanzapine, a mismatch in itself. The CL/F value of -1.09 L/h is negative, an implausible clearance for a base or covariate scenario, which triggered rejection. The V/F of 0.47 L is also implausibly small for olanzapine. A second reader recorded a θ aripiprazole value of -3.83 where this record has none, but the rejection rests on the negative clearance. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
+The paper concerns aripiprazole (Abilify and its formulations) in schizophrenia patients, yet the extracted parameters describe olanzapine, a different molecule. The apparent clearance following oral administration is −1.09 L/h, a negative value that is physiologically impossible, and the apparent volume of distribution of 0.47 L is far outside any plausible range for this drug, both pointing to a unit or scale extraction error. A second reader recorded a parameter value of −3.83 where this record has none, so the two readings disagree on that parameter. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θ ari: this record has none, the second reading -3.83. That field shapes the model, so the record is marked disputed.
 

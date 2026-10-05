@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A beta-1 agonist catecholamine that has cardiac stimulant action without evoking vasoconstriction or tachycardia. It is proposed as a cardiotonic after myocardial infarction or open heart surgery.
+Dobutamine is a cardiotonic sympathomimetic drug used to treat heart disease. It is an approved medication given as a cardiac stimulant, typically in hospital settings for acute heart conditions.
 
-**Indication.** Indicated when parenteral therapy is necessary for inotropic support in the short-term treatment of patients with cardiac decompensation due to depressed contractility resulting either from organic heart disease or from cardiac surgical procedures.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422782](https://www.wikidata.org/wiki/Q422782) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,7 +37,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `COMT` substrate | DrugBank actor |
 | metabolism | kidney | `COMT` substrate | DrugBank actor |
 | metabolism | liver | `COMT` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…In human urine, the major excretion products are the conjugates of dobutamine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRB1 (target), ADRB2 (target), ESR1 (target).</sub>
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Ganaxolone is the 3β-methylated synthetic analog of [allopregnanolone],[L41130] a metabolite of [progesterone].[A3197] Ganaxolone belongs to a class of compounds referred to as neurosteroids.[A3197] Endogenous neurosteroids, which comprise certain metabolites of progesterone and deoxycorticosterone, bind potently and specifically to GABA<sub>A</sub> receptors to enhance their inhibitory effects, and are thus known to have anxiolytic, analgesic, anticonvulsant, sedative, hypnotic, and anesthetic properties.[A245995]
+Ganaxolone is an antiepileptic medicine used to treat epileptic syndromes, including infantile spasms. It is authorised in the European Union and is also being investigated for other uses.
 
-Ganaxolone, similar to its endogenous counterparts, is a positive allosteric modulator of GABA<sub>A</sub> receptors.[L41130] It was approved under the brand name ZTALMY by the US FDA in March 2022 for the treatment of seizures associated with CDKL5 deficiency disorder (CDD), becoming the first FDA-approved treatment indicated specifically for CDD.[L41135] In July 2023, ganaxolone was also approved under the same brand name and for the same indication by the EMA.[L47636]
-
-**Indication.** Ganaxolone is indicated for the treatment of seizures associated with cyclin-dependent kinase-like 5 (CDKL5) deficiency disorder (CDD) in patients ≥2 years old by the FDA.[L41130] It is also approved as an adjuvant treatment for the same condition in patients aged 2 to 17, although it may be continued in patients 18 years old or older, by the EMA.[L47631]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3758034](https://www.wikidata.org/wiki/Q3758034) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -47,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…55% of the administered radioactivity was recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…18% was recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator).</sub>
 

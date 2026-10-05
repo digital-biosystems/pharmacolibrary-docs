@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Methyldopa, or α-methyldopa, is a centrally acting sympatholytic agent and an antihypertensive agent.[A231784] It is an analog of DOPA (3,4‐hydroxyphenylanine), and it is a prodrug, meaning that the drug requires biotransformation to an active metabolite for therapeutic effects. Methyldopa works by binding to alpha(α)-2 adrenergic receptors as an agonist, leading to the inhibition of adrenergic neuronal outflow and reduction of vasoconstrictor adrenergic signals.[A1499] Methyldopa exists in two isomers D-α-methyldopa and L-α-methyldopa, which is the active form.[A232224]
+Methyldopa is a centrally acting antihypertensive drug used to treat high blood pressure. It is an approved medicine and has been included on the WHO list of essential medicines, so it remains in use, though it is no longer a first-choice treatment in many places.
 
-First introduced in 1960 as an antihypertensive agent, methyldopa was considered to be useful in certain patient populations, such as pregnant women and patients with renal insufficiency. Since then, methyldopa was largely replaced by newer, better-tolerated antihypertensive agents;[A231784] however, it is still used as monotherapy [L32614] or in combination with [hydrochlorothiazide].[L32619] Methyldopa is also available as intravenous injection, which is used to manage hypertension when oral therapy is unfeasible and to treat hypertensive crisis.[L32624]
-
-**Indication.** Methyldopa is indicated for the management of hypertension as monotherapy [L32614] or in combination with hydrochlorothiazide.[L32619] Methyldopa injection is used to manage hypertensive crises.[L32624]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412621](https://www.wikidata.org/wiki/Q412621) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -48,8 +46,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `COMT` substrate | DrugBank actor |
 | metabolism | liver | `COMT` substrate, `SULT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `SULT1A1` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Approximately 70% of absorbed methyldopa is excreted in the urine…”</sub> | prose |
-| excretion | small intestine | <sub>“…Unabsorbed drug is excreted in feces as the unchanged parent compound…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA2A (target), DBH (substrate), DDC (inhibitor), DDC (substrate), DRD2 (target), PNMT (substrate).</sub>
 

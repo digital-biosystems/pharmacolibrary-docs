@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Sertraline is a popular antidepressant medication commonly known as a selective serotonin reuptake inhibitor (SSRI), and is similar to drugs such as [Citalopram] and [Fluoxetine]. Despite marked structural differences between compounds in this drug class, SSRIs exert similar pharmacological effects.
+Sertraline is an antidepressant used for depression and several anxiety-related conditions, including obsessive-compulsive disorder, panic disorder, and post-traumatic stress disorder. It is an approved, widely used selective serotonin reuptake inhibitor.
 
-Several weeks of therapy with sertraline may be required before beneficial effects are noticed. Sertraline displays enhanced safety or tolerability than other classes of antidepressants, which frequently cause high levels of drowsiness, dizziness, blurred vision, and other undesirable effects.[A1846,A187075,T28]
-
-**Indication.** Sertraline is indicated for the management of major depressive disorder (MDD), post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), panic disorder (PD), premenstrual dysphoric disorder (PMDD), and social anxiety disorder (SAD).[L9016] Common off-label uses for sertraline include the prevention of post stroke depression[A187078], generalized anxiety disorder (GAD), fibromyalgia, premature ejaculation, migraine prophylaxis, diabetic neuropathy, and neurocardiogenic syncope.[L5227]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407617](https://www.wikidata.org/wiki/Q407617) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -62,8 +60,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2B6` inhibitor/substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…12-14% of unchanged sertraline excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excretion of unchanged drug in the urine is a minor route of elimination…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` binder/downregulator/inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` binder/downregulator/inhibitor | DrugBank actor |
 

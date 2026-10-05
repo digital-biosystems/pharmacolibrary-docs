@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Ziconotide (also known as SNX-111) is a neurotoxic peptide derived from the cone snail _Conus magus_ comprising 25 amino acids with three disulphide bonds.[A202835, L13389] Other such peptides, collectively termed conotoxins, exist, and some have shown efficacy in binding specific subsets of calcium channels; ziconotide is used in part because it can be synthesized without loss of proper bond formation or structural elements.[A202829, A202832] Ziconotide is used to manage severe chronic pain refractory to other methods, through its ability to inhibit N-type calcium channels involved in nociceptive signalling.[A202829, A202835, A202838, A202841, A202850, A202859, L13389]
+Ziconotide is a non-opioid painkiller used for severe chronic pain, including complex regional pain syndrome. It is authorised in the European Union and given as an injection into the spinal fluid, so its use is restricted to specialist care.
 
-Ziconotide was granted FDA approval on December 28, 2004 for marketing by TerSera therapeutics LLC. under the name Prialt.[L13389] To date, ziconotide is the only calcium channel blocking peptide approved for use by the FDA.[A202835]
-
-**Indication.** Ziconotide is indicated for the management of severe chronic pain in patients refractory to other treatments, and for whom intrathecal therapy is warranted.[L13389]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q198473](https://www.wikidata.org/wiki/Q198473) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,8 +29,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…processed by various peptidases upon entering systemic circulation…”</sub> | prose |
-| excretion | kidney | <sub>“…recovered in urine…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1A (inhibitor), CACNA1B (inhibitor).</sub>
 

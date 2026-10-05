@@ -10,21 +10,21 @@
 
 ## About
 
-**Description.** A histamine H2 receptor antagonist with low toxicity that inhibits gastric acid secretion. The drug is used for the treatment of duodenal ulcers.
+Nizatidine is an H2-receptor antagonist used to treat acid-related conditions such as gastroesophageal reflux disease, stomach and duodenal ulcers, heartburn, indigestion, and Zollinger–Ellison syndrome. It is an approved medicine and remains in use for these acid-related disorders.
 
-**Indication.** For the treatment of acid-reflux disorders (GERD), peptic ulcer disease, active benign gastric ulcer, and active duodenal ulcer.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1188290](https://www.wikidata.org/wiki/Q1188290) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 06:25 | 5:29 | 0/1/0 | 0/0/0 | 0/0/0 | 77,427/5,046 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 2/1 | 1/0 | 0 |
+| 2026-10-04 10:17 | 0:41 | 0/1/0 | 0/0/0 | 0/0/0 | 31,108/679 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 2/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | — | parent + metabolite (no model) | 0 | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | — | parent + metabolite (no model) | 0 | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
 
 ## ADME sites
 
@@ -58,16 +58,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_15 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_11 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Callaghan_1985.pdf` | Callaghan JT et al., Intravenous nizatidine kinetics and aci…, Clinical pharmacology and t… (1985) | popPK | 10 | [10.1038/clpt.1985.29](https://doi.org/10.1038/clpt.1985.29) | [2857117](https://pubmed.ncbi.nlm.nih.gov/2857117) | The text explicitly reports quantitative pharmacokinetic parameters for nizatidine, including half-life (1.3 hr), volume of distribution (1.2 l/kg), and clearance (0.6 l/kg/hr). |
+| `Sano_1991.pdf` | Sano H et al., Pharmacokinetics of nizatidine in dogs…, Xenobiotica; the fate of fo… (1991) | popPK | 10 | [10.3109/00498259109043200](https://doi.org/10.3109/00498259109043200) | [1796603](https://pubmed.ncbi.nlm.nih.gov/1796603) | The study reports quantitative PK parameters (Clp, Vd, bioavailability) for nizatidine in dogs and rats, but specific numeric values for clearance and volume are not explicitly listed in the provided text, only qualitative descriptions and one bioavailability value. |
 | `Abdel-Rahman_2002.pdf` | Abdel-Rahman SM et al., Single-dose pharmacokinetics of nizatid…, Journal of clinical pharmac… (2002) | popPK | 9 | [10.1177/009127002401382687](https://doi.org/10.1177/009127002401382687) | [12362922](https://pubmed.ncbi.nlm.nih.gov/12362922) | The study reports quantitative PK parameters for nizatidine in children, but specific numeric values for clearance (CL/F) and volume (Vss/F) are described as being similar to adults rather than explicitly listed in the provided text. |
-| `Abdel-Rahman_2004.pdf` | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | popPK | 9 | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) | [15085026](https://pubmed.ncbi.nlm.nih.gov/15085026) | The study reports quantitative PK parameters (Cmax, AUC, Cl/F, Vss/F) for nizatidine in humans, with specific numeric values provided in the text. |
-| `Sano_1991.pdf` | Sano H et al., Pharmacokinetics of nizatidine in dogs…, Xenobiotica; the fate of fo… (1991) | popPK | 9 | [10.3109/00498259109043200](https://doi.org/10.3109/00498259109043200) | [1796603](https://pubmed.ncbi.nlm.nih.gov/1796603) | The paper is a relevant animal PK study for nizatidine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text, which only describes trends and correlations. |
-| `Blum_2003.pdf` | Blum RA et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | popPK | 8 | [10.1177/0091270002239709](https://doi.org/10.1177/0091270002239709) | [12520631](https://pubmed.ncbi.nlm.nih.gov/12520631) | The study reports PK parameters for nizatidine, but the evidence only provides relative changes (e.g., Cmax reduction, bioavailability) and lacks specific absolute numeric values for clearance, volume, or half-life. |
-| `Danziger_1989.pdf` | Danziger L et al., Nizatidine suppression of basal gastric…, Journal of clinical pharmac… (1989) | popPK | 8 | [10.1002/j.1552-4604.1989.tb03259.x](https://doi.org/10.1002/j.1552-4604.1989.tb03259.x) | [2574190](https://pubmed.ncbi.nlm.nih.gov/2574190) | The study is a PK/PD trial for nizatidine, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Lin_1991.pdf` | Lin JH, Pharmacokinetic and pharmacodynamic pro…, Clinical pharmacokinetics (1991) | pd | 5 | [10.2165/00003088-199120030-00004](https://doi.org/10.2165/00003088-199120030-00004) | [1673880](https://www.ncbi.nlm.nih.gov/pubmed/1673880) | metadata signals extractable PD data (IC50) |
 | `Morrissey_2016.pdf` | Morrissey KM et al., The Effect of Nizatidine, a MATE2K Sele…, Clinical pharmacokinetics (2016) | pd | 5 | [10.1007/s40262-015-0332-9](https://doi.org/10.1007/s40262-015-0332-9) | [26507723](https://www.ncbi.nlm.nih.gov/pubmed/26507723) | metadata signals extractable PD data (IC50) |
 | `van_1993.pdf` | van Zyl JM et al., Anti-oxidant properties of H2-receptor…, Biochemical pharmacology (1993) | pd | 5 | [10.1016/0006-2952(93)90218-l](https://doi.org/10.1016/0006-2952(93)90218-l) | [8101078](https://www.ncbi.nlm.nih.gov/pubmed/8101078) | metadata signals extractable PD data (IC50) |
@@ -78,13 +74,13 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Furuta_2001.pdf` | Furuta S et al., Inhibition of drug metabolism in human…, Xenobiotica; the fate of fo… (2001) | pgx | 7 | [10.1080/00498250110035615](https://doi.org/10.1080/00498250110035615) | [11334262](https://www.ncbi.nlm.nih.gov/pubmed/11334262) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Michalets_2000.pdf` | Michalets EL et al., Drug interactions with cisapride: clini…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039010-00004](https://doi.org/10.2165/00003088-200039010-00004) | [10926350](https://www.ncbi.nlm.nih.gov/pubmed/10926350) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-18T06:23:05.087582+00:00</sub>
+<sub>queue written 2026-10-04T10:16:31.861055+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdel-Rahman_2002 | relevant | 9 | 4 | The study reports quantitative PK parameters for nizatidine in children, but specific numeric values for clearance (CL/F) and volume (Vss/F) are described as being similar to adults rather than explicitly listed in the provided text. |
+| popPK | Abdel-Rahman_2002 | relevant | 9 | 2 | The study reports quantitative PK parameters for nizatidine in children, but specific numeric values for clearance (CL/F) and volume (Vss/F) are described as being similar to adults rather than explicitly listed in the provided text. |
 | PD | Abdel-Rahman_2002 | not_relevant | 2 | 1 | The paper is a PK study that only qualitatively compares plasma concentrations to an EC50 value derived from external adult studies, without reporting any numeric PD parameters or concentration-effect data for the pediatric subjects. |
 | PD | Abdel-Rahman_2004 | not_relevant | 3 | 1 | The paper reports PK parameters and qualitative changes in intragastric pH (mean/median/fraction of time) but does not provide a quantitative concentration-effect or dose-response model with numeric PD parameters (e.g., EC50, Emax) for nizatidine. |
 | popPK | Blum_2003 | relevant | 8 | 2 | The study reports PK parameters for nizatidine, but the evidence only provides relative changes (e.g., Cmax reduction, bioavailability) and lacks specific absolute numeric values for clearance, volume, or half-life. |
@@ -123,10 +119,10 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Rahman_2020 | irrelevant | 0 | 0 | The study is an in-vitro spectroscopic and computational analysis of protein binding, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
 | PD | Rahman_2020 | not_relevant | 0 | 0 | The paper investigates the molecular binding interaction between nizatidine and bovine serum albumin (BSA) using spectroscopic and computational methods, not a pharmacodynamic exposure-response or dose-response relationship in a biological system. |
 | popPK | Roberts_1986 | irrelevant | 1 | 0 | The study is an in-vitro perfused rat liver experiment where nizatidine is a co-administered agent affecting the extraction of lidocaine, not a study reporting nizatidine's own pharmacokinetic parameters. |
-| popPK | Sano_1991 | relevant | 9 | 2 | The paper is a relevant animal PK study for nizatidine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text, which only describes trends and correlations. |
+| popPK | Sano_1991 | relevant | 10 | 2 | The study reports quantitative PK parameters (Clp, Vd, bioavailability) for nizatidine in dogs and rats, but specific numeric values for clearance and volume are not explicitly listed in the provided text, only qualitative descriptions and one bioavailability value. |
 | popPK | Savarino_1990 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of gastric pH suppression and does not report any pharmacokinetic parameters for nizatidine. |
 | PD | Savarino_1990 | not_relevant | 3 | 2 | The paper reports comparative pharmacodynamic effects (gastric pH) of nizatidine versus other drugs but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50) for nizatidine. |
-| popPK | Sharma_1998 | irrelevant | 0 | 0 | The paper is a review of pharmacodynamic indirect response models and uses nizatidine only as a clinical example for pharmacodynamics, without reporting any pharmacokinetic parameters for the drug. |
+| popPK | Sharma_1998 | irrelevant | 0 | 0 | The paper is a review of pharmacodynamic indirect response models and uses nizatidine only as a clinical example for pharmacodynamics, without reporting quantitative pharmacokinetic parameters for the drug. |
 | PD | Sharma_1998 | not_relevant | 3 | 0 | The paper is a review of indirect response models; while it mentions nizatidine as an application example, the provided text does not contain specific numeric PD parameters (e.g., IC50, Emax) for nizatidine. |
 | popPK | Shimokawa_1996 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
 | PD | Shimokawa_1996 | not_relevant | 0 | 0 | The paper describes neurotoxic convulsions in mice but does not report a pharmacodynamic exposure-response or dose-response relationship for nizatidine with numeric PD parameters. |

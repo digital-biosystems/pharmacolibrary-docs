@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Dicoumarol is an oral anticoagulant agent that works by interfering with the metabolism of vitamin K. In addition to its clinical use, it is also used in biochemical experiments as an inhibitor of reductases.
+Dicoumarol is an anticoagulant of the vitamin K antagonist class, historically used to treat and prevent blood clots such as pulmonary embolism. It is an approved drug, though it has largely been replaced by newer anticoagulants and is now rarely used in practice.
 
-**Indication.** For decreasing blood clotting. Often used along with heparin for treatment of deep vein thrombosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420886](https://www.wikidata.org/wiki/Q420886) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

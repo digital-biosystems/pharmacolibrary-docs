@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that glimepiride concentrations (ng/mL) stimulate insulin secretion (mIU/L), but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yun_2006`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antihypertensive agent that acts by inhibiting selectively transmission in post-ganglionic adrenergic nerves. It is believed to act mainly by preventing the release of norepinephrine at nerve endings and causes depletion of norepinephrine in peripheral sympathetic nerve terminals as well as in tissues. [PubChem]
+Guanethidine is a peripherally acting sympatholytic antihypertensive drug that was used to treat arterial hypertension and, in eye-drop form, glaucoma. It has been withdrawn and is no longer in clinical use.
 
-**Indication.** For the treatment of moderate and severe hypertension, either alone or as an adjunct, and for the treatment of renal hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420673](https://www.wikidata.org/wiki/Q420673) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,11 +36,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…3-30% of oral dose…”</sub> | prose |
-| metabolism | kidney | <sub>“…excreted in the urine…”</sub> | prose |
-| metabolism | liver | <sub>“…converted by the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…converted by the liver…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SLC6A2 (inducer).</sub>
 

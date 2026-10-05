@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Co-codamol is a combination of codeine and paracetamol used as a compound analgesic to relieve pain. It is widely used, particularly in the United Kingdom, where it is available on prescription and in lower strengths over the counter.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4357608](https://www.wikidata.org/wiki/Q4357608) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

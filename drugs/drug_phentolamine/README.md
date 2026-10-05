@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Phentolamine is a reversible, non-selective alpha-adrenergic blocker that induces vasodilation. While initially introduced to the market for the treatment of hypertension, this clinical use was halted due to cardiovascular and gastrointestinal adverse effects with the prolonged use of large oral doses of phentolamine.[A261781, A261786] It has several therapeutic uses, including the treatment of hypertensive episodes, prevention of norepinephrine-induced extravasation, diagnosis of pheochromocytoma, reversal of soft-tissue anesthesia, and treatment of pharmacologically-induced mydriasis.[L48420, L48415, L48390] Phentolamine is administered intravenously, intramuscularly, submucosally, and topically.
+Phentolamine is an alpha-blocking vasodilator used to treat high blood pressure, including hypertensive emergencies, and to manage tissue damage from extravasation. It remains an approved medicine, used in specialised settings such as hospitals rather than widely in routine care.
 
-**Indication.** When used intravenously or intramuscularly, phentolamine is used to prevent or control hypertensive episodes that may occur in a patient with pheochromocytoma due to stress or manipulation during preoperative preparation and surgical excision. It is also used to prevent or treat dermal necrosis and sloughing following intravenous administration or extravasation of norepinephrine. It may be used to diagnose pheochromocytoma by the phentolamine-blocking test.[L48420]
-
-Submucosal injection of phentolamine is indicated for the reversal of soft-tissue anesthesia (e.g. anesthesia of the lip and tongue) and the associated functional deficits resulting from an intraoral submucosal injection of a local anesthetic containing a vasoconstrictor in patients three years old and older.[L48415]
-
-Phentolamine ophthalmic solution is used to treat pharmacologically-induced mydriasis produced by adrenergic agonists (e.g., phenylephrine) or parasympatholytic (e.g., tropicamide) agents.[L48390]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420360](https://www.wikidata.org/wiki/Q420360) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,7 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…13% of a single intravenous dose appears in the urine as unchanged drug…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), DRD2 (target), KCNJ11 (blocker).</sub>
 

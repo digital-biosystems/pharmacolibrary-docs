@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Olipudase alfa is recombinant human acid sphingomyelinase.[A251590] It is the first and only enzyme replacement therapy in the world for the treatment of Acid Sphingomyelinase Deficiency (ASMD), also known as Niemann–Pick disease.[L42740] ASMD is a rare lysosomal storage disease caused by mutations in the SMPD1 gene, leading to a deficiency in acid sphingomyelinase and the abnormal accumulation of the primary ASM substrate, sphingomyelin.[A251600] Olipudase alfa works to hydrolyze sphingomyelin accumulated in body tissues, such as the lungs, liver, spleen, kidneys, and bone marrow.[A251590] 
+Olipudase alfa is an enzyme therapy used to treat acid sphingomyelinase deficiency (ASMD) type A/B or type B. It is authorised in the European Union.
 
-Olipudase alfa gained its first global approval in Japan on March 28, 2022.[A251590] It was later approved by the European Commission on June 28, 2022 [L42740] and by the FDA on August 31, 2022.[L43145]
-
-**Indication.** Olipudase alfa is indicated as an enzyme replacement therapy for the treatment of non–central nervous system manifestations of acid sphingomyelinase deficiency (ASMD) in adult and pediatric patients.[L49146]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

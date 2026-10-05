@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Nesiritide is a medication used to treat acutely decompensated congestive heart failure with dyspnea at rest or with minimal exertion (such as talk, eating or bathing). Nesiritide is a 32 amino acid recombinant human B-type natriuretic peptide.
+Nesiritide, a form of human brain natriuretic peptide, was used as a vasodilator to treat congestive heart failure and cardiac asthma. It has been withdrawn and is no longer used in routine care.
 
-**Indication.** For the intravenous treatment of patients with acutely decompensated congestive heart failure who have dyspnea at rest or with minimal activity.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6997373](https://www.wikidata.org/wiki/Q6997373) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,8 +41,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…present on the vascular lumenal surface…”</sub> | prose |
-| excretion | kidney | <sub>“…renal filtration…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: NPR1 (binder), NPR2 (unknown), NPR3 (unknown).</sub>
 

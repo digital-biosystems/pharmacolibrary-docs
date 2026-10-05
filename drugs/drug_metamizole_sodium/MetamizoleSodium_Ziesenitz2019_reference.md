@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Ziesenitz_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Himstedt2020_reference&quot;,&quot;label&quot;:&quot;Himstedt_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Himstedt2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Nandy2010_reference&quot;,&quot;label&quot;:&quot;Nandy_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Nandy2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Himstedt2020_reference&quot;,&quot;label&quot;:&quot;Himstedt_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Himstedt2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Nandy2010_reference&quot;,&quot;label&quot;:&quot;Nandy_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Nandy2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metamizole sodium — `MetamizoleSodium_Ziesenitz2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,15 +17,13 @@
 
 ### Reviewer guidance
 
-**The metamizole sodium record was rejected because it reports only an AUC∞ of 29.9 mg/L/h for 4-methylaminoantipyrine, with no distribution volume and no clearance, so it is not a compartmental population PK model.**
+**The metamizole sodium record was rejected because it contains no distribution volume and no clearance or elimination for 4-methylaminoantipyrine — only an AUC∞ of 29.9 mg/L/h — so it is an exposure/outcome paper, not a compartmental population PK model.**
 
-The paper is an exposure/outcome study: no distribution volume and no clearance or elimination rate are reported, so the record lacks the structural parameters of a compartmental model, and a dimension mismatch was flagged on a structural parameter. The record was built from the abstract alone, so the reported summary statistic (AUC∞ 29.9 mg/L/h in children 2–6 years) stood in for a fitted model. A second reader disagreed on the dose compound (metamizole vs metamizole sodium) and could not confirm the 29.9 mg/L/h value, reading it as absent. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+The record is abstract-only, so the reported summary statistic (AUC∞ of 4-methylaminoantipyrine in children 2–6 years, 29.9 mg/L/h) stood in for a fitted model, and no volume or clearance parameters exist. A dimension mismatch was also flagged on a structural parameter. A second reader disagreed on the dose compound (metamizole), the primary analyte (4-methylaminoantipyrine), and the model links, arguing the metabolite 4-methylaminoantipyrine should be linked to metamizole sodium by hydrolysis, whereas the record has no such link. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metamizole, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:51.393026+00:00) predates the upstream re-run (2026-10-03 23:46:18.037746+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
 
@@ -34,7 +32,7 @@ Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journa
   ·  DOI: [10.1007/s00228-019-02720-2](https://doi.org/10.1007/s00228-019-02720-2)
 
 ## Model component
-<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Ziesenitz2019_reference" status="rejected" stale="true" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

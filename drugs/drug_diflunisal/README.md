@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Diflunisal, a salicylate derivative, is a nonsteroidal anti-inflammatory agent (NSAIA) with pharmacologic actions similar to other prototypical NSAIAs. Diflunisal possesses anti-inflammatory, analgesic and antipyretic activity. Though its mechanism of action has not been clearly established, most of its actions appear to be associated with inhibition of prostaglandin synthesis via the arachidonic acid pathway. Diflunisal is used to relieve pain accompanied with inflammation and in the symptomatic treatment of rheumatoid arthritis and osteoarthritis.
+Diflunisal is a non-steroidal anti-inflammatory drug used to treat pain, osteoarthritis, and rheumatoid arthritis. It remains an approved medicine, with an authorised product in the European Union, where it is also indicated for familial amyloid neuropathy.
 
-**Indication.** For symptomatic treatment of mild to moderate pain accompanied by inflammation (e.g. musculoskeletal trauma, post-dental extraction, post-episiotomy), osteoarthritis, and rheumatoid arthritis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2602750](https://www.wikidata.org/wiki/Q2602750) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly and completely absorbed following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
 | metabolism | liver | `UGT1A9` inhibitor | DrugBank actor |

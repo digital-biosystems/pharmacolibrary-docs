@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** COP is under investigation for the treatment of Rheumatoid Arthritis, Mature B-Cell Lymphoma, and Noninflammatory Degenerative Joint Disease. COP has been investigated for the treatment of Diabetic Retinopathy.
+Creatinolfosfate is a chemical compound classified as an other cardiac preparation, investigated for use in cardiac therapy. It remains investigational and is not an authorised medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6598844](https://www.wikidata.org/wiki/Q6598844) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

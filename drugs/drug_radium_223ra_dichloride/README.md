@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Radium-223 dichloride is a radiopharmaceutical used to treat prostate cancer. It is authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4735269](https://www.wikidata.org/wiki/Q4735269) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

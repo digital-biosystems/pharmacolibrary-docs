@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The model describes metformin plasma concentrations inhibiting the production of fasting plasma glucose via a proportional indirect response mechanism. The paper states a baseline glucose of 241 mg.dL(-1) and a half-maximal inhibitory concentration (IC50) of 4.23 mg.L(-1), but does not provide the elimination rate constant (kout) or other kinetic parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hong_2008`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
@@ -104,7 +108,7 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Hong2008_PD_fpg/Metformin_Hong2008_PD_fpg_modelica.zip" download>Metformin_Hong2008_PD_fpg_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Hong2008_PD_fpg/Metformin_Hong2008_PD_fpg_modelica.zip" download>Metformin_Hong2008_PD_fpg_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Hong2008_PD_fpg/Metformin_Hong2008_PD_fpg_matlab.zip" download>Metformin_Hong2008_PD_fpg_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

@@ -8,6 +8,12 @@
 - **molar mass:** 822.986 g/mol (C43H66O15) — DrugBank
 - **groups:** experimental
 
+## About
+
+Acetyldigoxin is a digoxin derivative belonging to the cardiac glycoside group, a class of drugs used to treat heart conditions such as heart failure and atrial fibrillation. It appears to be only an experimental compound today, with no evidence of current authorisation or routine clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q104252849](https://www.wikidata.org/wiki/Q104252849) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

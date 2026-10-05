@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Indobufen has been used in trials studying the supportive care and prevention of Atrial Fibrillation.
+Indobufen is a platelet aggregation inhibitor that acts by blocking cyclooxygenase, and has been used to prevent blood clots. It is considered investigational in major drug databases and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3798322](https://www.wikidata.org/wiki/Q3798322) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

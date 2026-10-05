@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Omecamtiv Mecarbil has been used in trials studying the treatment and basic science of Heart Failure, Echocardiogram, Pharmacokinetics, Chronic Heart Failure, and History of Chronic Heart Failure, among others.
+Omecamtiv mecarbil is an investigational cardiac stimulant studied for the treatment of heart failure with reduced pumping function (systolic heart failure). It has not been approved; a marketing application in the European Union was withdrawn, so it remains an investigational drug.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7089956](https://www.wikidata.org/wiki/Q7089956) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

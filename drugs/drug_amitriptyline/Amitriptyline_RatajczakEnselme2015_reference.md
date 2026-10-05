@@ -15,13 +15,13 @@
 
 > **Species: sheep.** This record comes from an animal study (sheep), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Q has no unit.**
+**This paper's disposition core is incomplete; q has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — amitriptyline: Q 72, CL 0.39 L/h/kg, V 9.5 L/kg.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Yukawa_2002) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — amitriptyline: Q 72, CL 0.39 L/h/kg, V 9.5 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of intercompartmental clearance cl: this record has 72, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
@@ -34,7 +34,7 @@ Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional
 ## Model component
 <dbs-pgx drug="amitriptyline" model-id="Amitriptyline_RatajczakEnselme2015_reference" status="needs_review" stale="false" population="Lacaune ewes" measured-compound="amitriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.

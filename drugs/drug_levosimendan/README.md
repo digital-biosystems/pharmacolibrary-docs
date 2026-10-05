@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Levosimendan increases calcium sensitivity to myocytes by binding to troponin C in a calcium dependent manner. This increases contractility without raising calcium levels. It also relaxes vascular smooth muscle by opening adenosine triphosphate sensitive potassium channels. Levosimendan is used to manage acutely decompensated congestive heart failure. Levosimendan is under investigation in clinical trial NCT00527059 (Renal Effects of Levosimendan in Patients Admitted With Acute Decompensated Heart Failure).
+Levosimendan is a calcium sensitiser used to treat acutely decompensated congestive heart failure. It is an approved cardiac stimulant, though its use appears limited and it has also been investigated and withdrawn in some settings.
 
-**Indication.** For short term treatment of acutely decompensated severe chronic heart failure (CHF). Also being investigated for use/treatment in heart disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q162541](https://www.wikidata.org/wiki/Q162541) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

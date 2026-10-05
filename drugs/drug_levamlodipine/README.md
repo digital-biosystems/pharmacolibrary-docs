@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Levamlodipine, also known as S-amlodipine, is a pharmacologically active enantiomer of [amlodipine], an antihypertensive medication.[L10833] Levamlodipine belongs to the dihydropyridine group of calcium channel blockers.[L10833] This medication was first marketed in Russia and India before being granted FDA approval.[L1484] The names S-amlodipine and levamlodipine may be used interchangeably as both substances are the same, however.[L10833] As a racemic mixture, amlodipine contains (R) and (S)-amlodipine isomers, but only (S)-amlodipine as the active moiety possesses therapeutic activity.[A188940]
+Levamlodipine, the single active enantiomer of amlodipine, is a calcium channel blocker used to treat high blood pressure. It is an approved medicine and is used in some countries as an alternative to standard amlodipine, though it is not authorised across the European Union.
 
-Levamlodipine was granted FDA approval on 19 December 2019.[L10833]
-
-**Indication.** Levamlodipine is indicated alone or in combination to treat hypertension in adults and children.[L10833]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6534831](https://www.wikidata.org/wiki/Q6534831) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -56,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…60% eliminated in urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (target), CACNA1D (target), NOS2 (inducer), NOS2 (target), NOS3 (inducer), NOS3 (target).</sub>
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;Magee_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_Magee2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,15 +17,13 @@
 
 ### Reviewer guidance
 
-**The prednisolone record was rejected because its clearance of 7.74 L/h and volume of distribution of 0.3 L fall outside plausible physiological windows, suggesting a unit or scale extraction error.**
+**The paper reports none of the model's key parameters.**
 
-For prednisolone in healthy adults, the record lists total clearance as 7.74 L/h (labelled 'CL RBCs') and a distribution volume of 0.3 L (labelled 'V Glu1'), values judged implausible in magnitude and consistent with a unit/scale extraction error. The absorption lag time is 0.36 h. A second reader also disagreed on the model structure: the record contains no link between prednisone and prednisolone via metabolism, whereas the second reader expected such a metabolic link; the second reader gave no alternative values for the clearance, volume, or lag-time parameters. Extracted — prednisolone: CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading prednisone → prednisolone (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 15:42:51.249483+00:00) predates the upstream re-run (2026-10-04 03:03:46.560040+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -34,7 +32,7 @@ Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of 
   ·  DOI: [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x)
 
 ## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_Magee2002_reference" status="rejected" stale="true" population="healthy adults" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisolone" model-id="Prednisolone_Magee2002_reference" status="rejected" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

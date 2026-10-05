@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Beraprost is a synthetic analogue of prostacyclin, under clinical trials for the treatment of pulmonary hypertension. It is also being studied for use in avoiding reperfusion injury.
+Beraprost is a vasodilator and platelet aggregation inhibitor, an antithrombotic agent investigated as a drug. It is not an approved medicine in major Western markets and remains investigational, though it has been used in some Asian countries for vascular disease such as pulmonary hypertension.
 
-**Indication.** For the treatment of pulmonary hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5977854](https://www.wikidata.org/wiki/Q5977854) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

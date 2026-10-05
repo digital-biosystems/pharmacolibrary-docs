@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A synthetic hormone with anabolic and androgenic properties.
+Oxandrolone is an anabolic steroid used to treat failure to thrive. It is an approved drug, but carries a boxed warning and is not authorised in the European Union.
 
-**Indication.** Use to promote weight gain after weight loss following extensive surgery.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420859](https://www.wikidata.org/wiki/Q420859) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…Renal…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C9` inhibitor | DrugBank actor |
 | — | prostate gland | `AR` target | DrugBank actor |
 

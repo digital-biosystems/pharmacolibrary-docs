@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The amitriptyline record was held back because the absorption rate constant ka was not reported in the source and a placeholder default was substituted, an invented absorption the review deemed unacceptable.**
+**The amitriptyline record was held back because the absorption rate constant ka was never reported in the Yukawa_2002 source, so a library default would stand in for an unreported parameter alongside defaulted Tlag and assumed F=1.**
 
-The record for amitriptyline (Yukawa_2002, review reference population) reports CL/F of 141.65 L/h and V of 9.5 L/kg, but ka and Tlag had no values in the source, so library placeholder defaults were used in their place. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on several extracted values, including the volume of distribution (9.5 vs 9.7 L/kg), and could not confirm the CL/F value of 141.65. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
+The record reports CL/F of 141.65 L/h and Vd of 9.5 L/kg for amitriptyline, but the absorption rate constant ka is not in the source text and was left at a default, as was Tlag; the model also assumes F=1 and Fm=1 with an apparent (/F) parameterization and first-order depot input. The adjudication flagged the defaulted parameters, the unreported ka, and the invented absorption as not acceptable. A second reader also disagreed on several extracted values, reading 9.7 L/kg for the volume of distribution where this record has 9.5, and returning no value where this record lists 141.65 L/h for clearance, 0.39, 30.3, 15.7, and 60. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 0.39, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
@@ -115,7 +115,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=amitriptyline) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_modelica.zip" download>Amitriptyline_Yukawa2002_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_modelica.zip" download>Amitriptyline_Yukawa2002_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_fmi.zip" download>Amitriptyline_Yukawa2002_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_matlab.zip" download>Amitriptyline_Yukawa2002_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference/Amitriptyline_Yukawa2002_reference_matlab_simbio.zip" download>Amitriptyline_Yukawa2002_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

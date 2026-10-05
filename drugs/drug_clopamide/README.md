@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Clopamide is an oral diuretic agent with antihypertensive activity. Like thiazide diuretics, it has an aromatic sulfonamide base but with no double-ring structure.
+Clopamide is a sulfonamide diuretic that has been used to treat high blood pressure and fluid retention (oedema). It is currently classed as investigational and is not authorised in the European Union; it has only limited availability in a few countries.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q106029851](https://www.wikidata.org/wiki/Q106029851) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

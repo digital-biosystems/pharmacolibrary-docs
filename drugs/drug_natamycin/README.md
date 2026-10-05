@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Amphoteric macrolide antifungal antibiotic from Streptomyces natalensis or S. chattanoogensis. It is used for a variety of fungal infections, mainly topically. [PubChem]
+Natamycin is an antifungal antibiotic used to treat fungal infections, including eye infections such as conjunctivitis, keratitis and blepharitis, and various fungal diseases like candidiasis and aspergillosis. It is an approved medicine, appears on the WHO essential medicines list, and is used topically in several areas including the mouth, gut, skin, gynecological and ophthalmological applications.
 
-**Indication.** For the treatment of fungal blepharitis, conjunctivitis, and keratitis caused by susceptible organisms including <i>Fusarium solani</i> keratitis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q248466](https://www.wikidata.org/wiki/Q248466) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

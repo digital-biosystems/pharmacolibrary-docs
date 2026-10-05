@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Romiplostim is a thrombopoiesis stimulating dimer Fc-peptide fusion protein (peptibody) to increase platelet production through activation of the thrombopoietin receptor. The peptibody molecule has two identical single-chain subunits, each one is made up of 269 amino acid residues. Each subunit consists of an IgG1 Fc carrier domain that is covalently attached to a polypeptide sequence that contains two binding domains to interact with thrombopoietin receptor c-Mpl. Each domain consists of 14 amino acids. Interestingly, romiplostim's amino acid sequence is not similar to that of endogenous thrombopoietin. Romiplostim is produced by recombinant DNA technology in Escherichia coli. FDA approved on August 22, 2008.
+Romiplostim is used to treat low platelet counts (thrombocytopenia), including immune thrombocytopenic purpura, and has been studied in myelodysplastic syndrome. It is an approved medicine, authorised in the European Union.
 
-**Indication.** Treatment of chronic immune thrombocytopenic purpura.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1235195](https://www.wikidata.org/wiki/Q1235195) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Renal clearance (more dominant mode of clearance as dose increases)…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AHR (modulator), FGFR1 (inhibitor), FLT1 (inhibitor), KDR (inhibitor), KIT (inhibitor), MPL (target), PDGFRA (inhibitor), PDGFRB (inhibitor), RET (inhibitor).</sub>
 

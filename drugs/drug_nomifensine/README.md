@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Nomifensine, formerly marketed as Merital capsules, was associated with an increased incidence of hemolytic anemia. The approved application holder removed Merital capsules from the market on January 23, 1986. FDA published a notice of its determination that Merital capsules were removed from the market for safety reasons (see the Federal Register of June 17, 1986 (51 FR 21981)). Approval of the NDA for Merital capsules was withdrawn on March 20, 1992 (see the Federal Register of March 20, 1992 (57 FR 9729)). Also withdrawn from the Canadian and UK markets.
+Nomifensine is an antidepressant that acts as a dopamine reuptake inhibitor. It has been withdrawn from the market and is no longer in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409948](https://www.wikidata.org/wiki/Q409948) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

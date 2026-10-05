@@ -7,6 +7,12 @@
 - **DrugBank:** [DB19379](https://go.drugbank.com/drugs/DB19379) · **PubChem:** not captured
 - **groups:** approved, withdrawn
 
+## About
+
+Syrosingopine is a Rauwolfia alkaloid that was used to lower blood pressure in people with hypertension, typically combined with a diuretic. It has been withdrawn and is no longer in clinical use.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

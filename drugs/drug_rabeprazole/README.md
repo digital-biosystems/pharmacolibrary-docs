@@ -10,28 +10,32 @@
 
 ## About
 
-**Description.** Rabeprazole is an antiulcer drug in the class of proton pump inhibitors. It is a prodrug - in the acid environment of the parietal cells it turns into active sulphenamide form. Rabeprazole inhibits the H+, K+ATPase of the coating gastric cells and dose-dependent oppresses basal and stimulated gastric acid secretion.
+Rabeprazole is a proton-pump inhibitor used to treat acid-related conditions such as gastroesophageal reflux disease, duodenal ulcer, and Zollinger–Ellison syndrome. It is an approved medication and remains in use.
 
-**Indication.** For the treatment of acid-reflux disorders (GERD), peptic ulcer disease, H. pylori eradication, and prevention of gastroinetestinal bleeds with NSAID use.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3515](https://www.wikidata.org/wiki/Q3515) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 06:34 | 4:33 | 0/2/0 | 1/0/0 | 0/0/0 | 128,820/9,761 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/1 | 3/0 | 0 |
+| 2026-10-04 11:23 | 5:07 | 0/2/0 | 5/0/0 | 0/0/0 | 89,418/12,863 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Sheng_2010_reference](drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md) | — | 1-compartment (no model) | 0 | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yang_2009_reference](drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md) | — | 1-compartment (no model) | 0 | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sheng_2010_reference](drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md) | — | 1-compartment (no model) | 0 | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yang_2009_reference](drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md) | — | 1-compartment (no model) | 0 | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yang_2009_gastrin](drugs/drug_rabeprazole/pd_Yang_2009_gastrin.md) | gastrin ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chen_2006_pH](drugs/drug_rabeprazole/pd_Chen_2006_pH.md) | intragastric pH ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Chen ZY et al., Pharmacokinetic and pharmacodynamic pop…, European journal of drug me… (2006) | [10.1007/BF03190639](https://doi.org/10.1007/BF03190639) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hayato_2012_pH4HT](drugs/drug_rabeprazole/pd_Hayato_2012_pH4HT.md) | pH 4 holding time ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Hayato S et al., Dose-response relationships of rabepraz…, European journal of clinica… (2012) | [10.1007/s00228-011-1164-7](https://doi.org/10.1007/s00228-011-1164-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jeong_2023_pH](drugs/drug_rabeprazole/pd_Jeong_2023_pH.md) | gastric pH ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Jeong SH et al., Exploring Differences in Pharmacometric…, Biomedicines (2023) | [10.3390/biomedicines11113021](https://doi.org/10.3390/biomedicines11113021) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Sheng_2010_pH](drugs/drug_rabeprazole/pd_Sheng_2010_pH.md) | intragastric pH values ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yang_2009_gastrin](drugs/drug_rabeprazole/pd_Yang_2009_gastrin.md) | gastrin ← rabeprazole · direct sigmoid Emax (Hill) effect | — | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
 
 ## ADME sites
 
@@ -48,7 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` inducer/inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…approximately 90% of the drug was eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ATP4A (inhibitor).</sub>
 
@@ -62,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 16 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -71,29 +75,29 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chen_2006.pdf` | Chen ZY et al., Pharmacokinetic and pharmacodynamic pop…, European journal of drug me… (2006) | popPK | 10 | [10.1007/BF03190639](https://doi.org/10.1007/BF03190639) | [16715780](https://pubmed.ncbi.nlm.nih.gov/16715780) | The paper is a population PK-PD study of rabeprazole, but the evidence only provides PD parameters (Emax, EC50, etc.) and lacks the specific numeric PK values (CL, V, ka) which are likely in the full text or tables not included in the excerpt. |
-| `Jeong_2023.pdf` | Jeong SH et al., Exploring Differences in Pharmacometric…, Biomedicines (2023) | popPK | 10 | [10.3390/biomedicines11113021](https://doi.org/10.3390/biomedicines11113021) | [38002021](https://pubmed.ncbi.nlm.nih.gov/38002021) | The paper is a population PK/PD study for rabeprazole, but the provided evidence contains only qualitative descriptions and no specific numeric parameter values (e.g., CL, V, ka). |
-| `McLeay_2014.pdf` | McLeay SC et al., Population pharmacokinetics of rabepraz…, Clinical pharmacokinetics (2014) | popPK | 10 | [10.1007/s40262-014-0168-8](https://doi.org/10.1007/s40262-014-0168-8) | [25168707](https://pubmed.ncbi.nlm.nih.gov/25168707) | The paper describes a population PK model for rabeprazole, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
-| `Sheng_2010.pdf` | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | popPK | 10 | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) | [20838991](https://pubmed.ncbi.nlm.nih.gov/20838991) | The study reports quantitative population PK parameters (clearance values by genotype) for rabeprazole in the abstract, though other parameters like volume and half-life are not explicitly listed in the provided text. |
-| `Ma_2016.pdf` | Ma Z et al., Pharmacokinetics and bioavailability in…, International journal of cl… (2016) | popPK | 8 | [10.5414/CP202265](https://doi.org/10.5414/CP202265) | [26249765](https://pubmed.ncbi.nlm.nih.gov/26249765) | The study reports non-compartmental PK parameters (Cmax, AUC) for rabeprazole, but lacks specific clearance (CL) or volume (V) values required for compartmental/population PK modeling. |
-| `Patel_2019.pdf` | Patel H et al., Pharmacokinetic evaluation of different…, Drug development and indust… (2019) | popPK | 8 | [10.1080/03639045.2019.1628249](https://doi.org/10.1080/03639045.2019.1628249) | [31216902](https://pubmed.ncbi.nlm.nih.gov/31216902) | The study reports PK parameters for rabeprazole in dogs, but the evidence only provides qualitative descriptions (e.g., "longer half-life") and relative bioavailability percentages, lacking specific numeric values for CL, V, or t1/2. |
+| `Chen_2006.pdf` | Chen ZY et al., Pharmacokinetic and pharmacodynamic pop…, European journal of drug me… (2006) | popPK | 10 | [10.1007/BF03190639](https://doi.org/10.1007/BF03190639) | [16715780](https://pubmed.ncbi.nlm.nih.gov/16715780) | The paper describes a population PK model for rabeprazole, but the specific numeric PK parameter values (CL, V, ka) are not listed in the provided evidence, only PD parameters are shown. |
+| `Jeong_2023.pdf` | Jeong SH et al., Exploring Differences in Pharmacometric…, Biomedicines (2023) | popPK | 10 | [10.3390/biomedicines11113021](https://doi.org/10.3390/biomedicines11113021) | [38002021](https://pubmed.ncbi.nlm.nih.gov/38002021) | The study is a population PK/PD modeling study for rabeprazole in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided abstract text. |
+| `McLeay_2014.pdf` | McLeay SC et al., Population pharmacokinetics of rabepraz…, Clinical pharmacokinetics (2014) | popPK | 10 | [10.1007/s40262-014-0168-8](https://doi.org/10.1007/s40262-014-0168-8) | [25168707](https://pubmed.ncbi.nlm.nih.gov/25168707) | The paper describes a population PK model for rabeprazole, but the specific numeric parameter values (CL, Vc, ka, etc.) are not present in the provided evidence text. |
+| `Sheng_2010.pdf` | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | popPK | 10 | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) | [20838991](https://pubmed.ncbi.nlm.nih.gov/20838991) | The study reports a population PK model for rabeprazole in humans and provides specific numeric clearance values for different CYP2C19 genotypes in the abstract. |
+| `Patel_2019.pdf` | Patel H et al., Pharmacokinetic evaluation of different…, Drug development and indust… (2019) | popPK | 9 | [10.1080/03639045.2019.1628249](https://doi.org/10.1080/03639045.2019.1628249) | [31216902](https://pubmed.ncbi.nlm.nih.gov/31216902) | The study reports PK parameters for rabeprazole in dogs, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative descriptions and relative bioavailability. |
+| `Ma_2016.pdf` | Ma Z et al., Pharmacokinetics and bioavailability in…, International journal of cl… (2016) | popPK | 8 | [10.5414/CP202265](https://doi.org/10.5414/CP202265) | [26249765](https://pubmed.ncbi.nlm.nih.gov/26249765) | The study reports non-compartmental PK parameters (Cmax, AUC) for rabeprazole in humans, but lacks specific clearance (CL) or volume (V) values in the provided text. |
 
-<sub>queue written 2026-09-18T06:30:35.233248+00:00</sub>
+<sub>queue written 2026-10-04T11:19:42.095731+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chen_2006 | relevant | 10 | 2 | The paper is a population PK-PD study of rabeprazole, but the evidence only provides PD parameters (Emax, EC50, etc.) and lacks the specific numeric PK values (CL, V, ka) which are likely in the full text or tables not included in the excerpt. |
-| popPK | Hayato_2012 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics (gastric pH) and genotype effects, and while it mentions plasma concentrations, no quantitative pharmacokinetic parameters (CL, V, ka, etc.) are reported in the evidence. |
-| popPK | Jeong_2023 | relevant | 10 | 0 | The paper is a population PK/PD study for rabeprazole, but the provided evidence contains only qualitative descriptions and no specific numeric parameter values (e.g., CL, V, ka). |
-| popPK | Kirchheiner_2009_2 | irrelevant | 0 | 0 | The paper is a pharmacodynamic meta-analysis focusing on gastric pH and dose equivalence, not a pharmacokinetic study reporting disposition parameters like clearance or volume for rabeprazole. |
-| popPK | Litalien_2005 | irrelevant | 0 | 0 | The paper is a review that explicitly states no pharmacokinetic data are available for rabeprazole in children, and it does not report any quantitative parameters for rabeprazole. |
-| popPK | McLeay_2014 | relevant | 10 | 0 | The paper describes a population PK model for rabeprazole, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
-| popPK | Ollier_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dabigatran, with rabeprazole serving only as a co-administered proton pump inhibitor to evaluate drug-drug interactions, and no PK parameters for rabeprazole are reported. |
-| popPK | Patel_2019 | relevant | 8 | 2 | The study reports PK parameters for rabeprazole in dogs, but the evidence only provides qualitative descriptions (e.g., "longer half-life") and relative bioavailability percentages, lacking specific numeric values for CL, V, or t1/2. |
-| popPK | Ruiz-Garcia_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dacomitinib, with rabeprazole serving only as a co-administered proton pump inhibitor to assess its effect on dacomitinib absorption, not as the subject drug. |
+| popPK | Chen_2006 | relevant | 10 | 2 | The paper describes a population PK model for rabeprazole, but the specific numeric PK parameter values (CL, V, ka) are not listed in the provided evidence, only PD parameters are shown. |
+| popPK | Hayato_2012 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics (gastric acid suppression) and genotype effects, and while it mentions PK-PD relationships, no quantitative PK parameters (CL, V, ka, etc.) are reported in the provided evidence. |
+| popPK | Jeong_2023 | relevant | 10 | 2 | The study is a population PK/PD modeling study for rabeprazole in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided abstract text. |
+| popPK | Kirchheiner_2009_2 | irrelevant | 0 | 0 | The paper is a pharmacodynamic meta-analysis of gastric pH effects and does not report pharmacokinetic parameters (CL, V, ka) for rabeprazole. |
+| popPK | Litalien_2005 | irrelevant | 0 | 0 | The paper is a review that explicitly states no pharmacokinetic data are available for rabeprazole in children, and it does not report quantitative parameters for rabeprazole. |
+| popPK | McLeay_2014 | relevant | 10 | 0 | The paper describes a population PK model for rabeprazole, but the specific numeric parameter values (CL, Vc, ka, etc.) are not present in the provided evidence text. |
+| popPK | Ollier_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dabigatran, with rabeprazole serving only as a co-administered proton pump inhibitor to evaluate drug-drug interactions. |
+| popPK | Patel_2019 | relevant | 9 | 2 | The study reports PK parameters for rabeprazole in dogs, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative descriptions and relative bioavailability. |
+| popPK | Ruiz-Garcia_2020 | irrelevant | 0 | 0 | The study models the pharmacokinetics of dacomitinib, with rabeprazole serving only as a co-administered proton pump inhibitor covariate, not the subject drug. |
 | popPK | Srinivas_2011 | irrelevant | 0 | 0 | no_text gate: only 203 chars of text extracted (&lt; 400) |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 06:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 11:19 UTC</sub>

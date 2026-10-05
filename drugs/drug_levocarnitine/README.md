@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Constituent of striated muscle and liver. It is used therapeutically to stimulate gastric and pancreatic secretions and in the treatment of hyperlipoproteinemias.
+Levocarnitine is an amino acid derivative used to treat carnitine deficiency and related metabolic conditions. It is an approved medicine and is also being studied for other investigational uses.
 
-**Indication.** For treatment of primary systemic carnitine deficiency, a genetic impairment of normal biosynthesis or utilization of levocarnitine from dietary sources, or for the treatment of secondary carnitine deficiency resulting from an inborn error of metabolism such as glutaric aciduria II, methyl malonic aciduria, propionic acidemia, and medium chain fatty acylCoA dehydrogenase deficiency. Used therapeutically to stimulate gastric and pancreatic secretions and in the treatment of hyperlipoproteinemias. Parenteral levocarnitine is indicated for the prevention and treatment of carnitine deficiency in patients with end-stage renal disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20735709](https://www.wikidata.org/wiki/Q20735709) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -54,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `SLC22A4` inhibitor/substrate/unknown, `SLC22A5` substrate/unknown | DrugBank actor |
 | metabolism | liver | `CES1` unknown, `SLCO1B1` inhibitor, `XDH` unknown | DrugBank actor |
 | metabolism | small intestine | `XDH` unknown | DrugBank actor |
-| excretion | bile duct | <sub>“…recovered from urine and feces in 5-11 days…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A8` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CPT1A (activator), CPT1B (activator), CPT2 (unknown), CRAT (unknown), CROT (unknown), MPO (unknown), SLC22A16 (substrate), SLC25A20 (unknown), SLC25A29 (unknown).</sub>

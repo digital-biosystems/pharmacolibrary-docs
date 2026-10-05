@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;diltiazem&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # diltiazem
 
@@ -10,25 +11,9 @@
 
 ## About
 
-**Description.** Diltiazem is a benzothiazepine derivative with antihypertensive and vasodilating properties. Approved in 1982 by the FDA, it is a member of the non-dihydropyridine calcium channel blockers drug class. It works through various mechanisms of action, but it primarily works by inhibiting the calcium influx into cardiac and vascular smooth muscle during depolarization.[L10556] Compared to dihydropyridine drugs, such as [nifedipine], that preferentially act on vascular smooth muscle and [verapamil] that directly acts on the heart muscle, diltiazem displays an intermediate specificity to target both the cardiac and vascular smooth muscle.[T28] Being a potent vasodilator, diltiazem is used clinically as an antihypertensive, anti-arrhythmic, and as an anti-anginal agent [L6289] for the management of cardiovascular conditions such as hypertension, chronic stable angina, atrial fibrillation, atrial flutter. Apart from its main FDA-approved indications, diltiazem has also been used for numerous off-label indications, such as anal fissures (in topical formulations), migraine prophylaxis, pulmonary hypertension, and rest-related cramps in the lower extremities.[L6289] Typically available in extended-release oral and intravenous formulations, diltiazem is marketed under various brand names with Cardizem and Tiazac being the most common ones.
+Diltiazem is a calcium channel blocker used to treat high blood pressure, angina, and certain heart rhythm problems such as atrial fibrillation and supraventricular tachycardia. It is an approved medicine and is widely used for these cardiovascular conditions.
 
-**Indication.** **Oral**
-
-Indicated for the management of hypertension, to lower blood pressure, alone or in combination with other antihypertensive agents.[L10556]
-
-Indicated for use to improve exercise tolerance in patients with chronic stable angina.[L10556]
-
-Indicated for the management of variant angina (Prinzmetal's angina).[L6298]
-
-**Intravenous**
-
-Indicated for the short-term management of atrial fibrillation or atrial flutter for temporary control of rapid ventricular rate.[L6292]
-
-Indicated for the rapid conversion of paroxysmal supraventricular tachycardias (PSVT) to sinus rhythm. This includes AV nodal reentrant tachycardias and reciprocating tachycardias associated with an extranodal accessory pathway such as the WPW syndrome or short PR syndrome.[L6292]
-
-**Off-label**
-
-Indicated for off-label uses in anal fissures (as topical formulation), migraine prophylaxis, cramps in lower leg related to rest, pulmonary hypertension,[L6289] idiopathic dilated cardiomyopathy, and proteinuria associated with diabetic nephropathy.[L6298]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422229](https://www.wikidata.org/wiki/Q422229) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -45,14 +30,14 @@ Indicated for off-label uses in anal fissures (as topical formulation), migraine
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 10:00 | 1:30 | 2/3/0 | 0/0/0 | 0/0/2 | 33,928/2,522 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 6/6 | 10/2 | 0 |
+| 2026-09-30 10:00 | 1:30 | 1/3/1 | 0/0/0 | 0/0/2 | 33,928/2,522 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 6/6 | 10/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Guan_2018_reference](drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Guan XF et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2018) | [10.1007/s13318-017-0425-y](https://doi.org/10.1007/s13318-017-0425-y) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> | [Kölle_1983_reference](drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md) | model (no simulator) | 1-compartment, IV | 7 | Kölle EU et al., Pharmacokinetic model of diltiazem, Arzneimittel-Forschung (1983) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> | [Kölle_1983_reference](drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Kölle EU et al., Pharmacokinetic model of diltiazem, Arzneimittel-Forschung (1983) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Guan_2018_reference](drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Guan XF et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2018) | [10.1007/s13318-017-0425-y](https://doi.org/10.1007/s13318-017-0425-y) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Fu_1987_reference](drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md) | — | 1-compartment (no model) | 2 | Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pharmac… (1987) | [10.1002/j.1552-4604.1987.tb02169.x](https://doi.org/10.1002/j.1552-4604.1987.tb02169.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Höglund_1989_reference](drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md) | — | general linear (no model) | 2 | Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Murata_1989_reference](drugs/drug_diltiazem/Diltiazem_Murata1989_reference.md) | — | 1-compartment (no model) | 1 | Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmaceutical s… (1989) | [10.1002/jps.2600781116](https://doi.org/10.1002/jps.2600781116) |
@@ -88,7 +73,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP2D6` metabolism/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `CYP3A7` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…only 2% to 4% of the unchanged drug can be detected in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA2D1 (blocker), CACNG1 (blocker).</sub>
 
@@ -102,7 +87,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 532 matched, 79 returned
 - **screened:** 17  ·  **relevant:** 5
-- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

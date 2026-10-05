@@ -8,6 +8,12 @@
 - **molar mass:** 370.916 g/mol (C22H27ClN2O) — DrugBank
 - **groups:** experimental
 
+## About
+
+Lorcainide is a class Ic antiarrhythmic agent developed for treating heart rhythm disorders. It is no longer in routine clinical use and is regarded as an experimental drug.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6678811](https://www.wikidata.org/wiki/Q6678811) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Tadayasu_2013 \u00b7 PD DPP-4 inhibition&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DPP-4 inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
@@ -18,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> Linagliptin plasma concentrations drive DPP-4 inhibition via a target-mediated drug disposition (TMDD) mechanism, where the drug binds to and inhibits the DPP-4 enzyme. The model estimates a maximum inhibition (EMAX) of 92.5% and a dissociation constant (KD) of 0.108 nmol/L.
+> Linagliptin plasma concentrations (nmol/L) drive DPP-4 inhibition (%) via a target-mediated drug disposition (TMDD) mechanism, where the drug binds to and inhibits the DPP-4 enzyme. The model estimates a maximum effect (EMAX) of 92.5%, but the provided excerpts do not state specific potency (IC50/EC50) or rate (kin/kout/ke0) parameters.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
@@ -26,7 +25,7 @@
 - **model family:** `tmdd`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharmacy & pharm… (2013)
@@ -35,28 +34,7 @@ Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharma
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | F1 — Parameter | `Q40` · not captured | 1 | not captured | not captured | exact (not captured) | tab_2:row2:col1 |
-| PK (driver) | KA [h -1 ] — Parameter | `Q49` · not captured | 1.63 | not captured | not captured | llm_confirmed (not captured) | tab_2:row3:col1 |
-| PK (driver) | KA [h -1 ] — SE (%) | `Q49` · not captured | 22.2 | not captured | not captured | llm_confirmed (not captured) | tab_2:row3:col2 |
-| PK (driver) | CL/F1 [L/h] — Parameter | `Q358` · not captured | 121 | L/h | not captured | llm (not captured) | tab_2:row4:col1 |
-| PK (driver) | CL/F1 [L/h] — SE (%) | `Q27` · not captured | 15.5 | L/h | not captured | llm (not captured) | tab_2:row4:col2 |
-| PK (driver) | V2/F1 [L] — Parameter | `Q82` · not captured | 633 | L | not captured | llm (not captured) | tab_2:row5:col1 |
-| PK (driver) | V2/F1 [L] — SE (%) | `Q82` · not captured | 12.7 | L | not captured | llm (not captured) | tab_2:row5:col2 |
-| PK (driver) | Q3/F1 [L/h] — Parameter | `Q309` · not captured | 73.0 | L/h | not captured | llm (not captured) | tab_2:row7:col1 |
-| PK (driver) | Q3/F1 [L/h] — SE (%) | `Q309` · not captured | 68.8 | L/h | not captured | llm (not captured) | tab_2:row7:col2 |
-| PK (driver) | V3/F1 [L] — Parameter | `Q78` · not captured | 683 | L | not captured | llm (not captured) | tab_2:row9:col1 |
-| PK (driver) | V3/F1 [L] — SE (%) | `Q78` · not captured | 14.0 | L | not captured | llm (not captured) | tab_2:row9:col2 |
-| PD (effect) | BMAX [nmol/L] — Parameter | `Q332` · not captured | 6.07 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row11:col1 |
-| PD (effect) | BMAX [nmol/L] — SE (%) | `Q332` · not captured | 5.17 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row11:col2 |
-| PD (effect) | KD [nmol/L] — Parameter | `Q331` · not captured | 0.108 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row13:col1 |
-| PD (effect) | KD [nmol/L] — SE (%) | `Q331` · not captured | 28.5 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row13:col2 |
-| PD (effect) | EMAX [%] — Parameter | `Q320` · not captured | 92.5 | not captured | not captured | llm_confirmed (not captured) | tab_2:row16:col1 |
-| PD (effect) | EMAX [%] — SE (%) | `Q320` · not captured | 0.48 | not captured | not captured | llm_confirmed (not captured) | tab_2:row16:col2 |
-| variability | IIV in F1 [CV%] — Parameter | `Q312` · not captured | 46.7 | not captured | not captured | llm_confirmed (not captured) | tab_2:row19:col1 |
-| variability | IIV in KA [CV%] — Parameter | `Q312` · not captured | 73.6 | not captured | not captured | llm_confirmed (not captured) | tab_2:row21:col1 |
-| variability | IIV in CL [CV%] — Parameter | `Q312` · not captured | 68.8 | not captured | not captured | llm_confirmed (not captured) | tab_2:row23:col1 |
-| variability | IIV in BMAX [CV%] — Parameter | `Q312` · not captured | 14.2 | not captured | not captured | llm_corrected (not captured) | tab_2:row24:col1 |
-| variability | Proportional residual — SE (%) | `Q316` · not captured | 14.6 | not captured | not captured | llm (not captured) | tab_2:row29:col2 |
+| PD (effect) | EMAX | `Q323` · not captured | 92.5 | % | not captured | llm (not captured) | Tadayasu_2013:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

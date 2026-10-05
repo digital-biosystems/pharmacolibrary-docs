@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Flecainide is a Class I anti-arrhythmic agent like [encainide] and [propafenone].[A186880] Flecainide’s development began in 1966 and was first synthesized in 1972 as an attempt to generate new anesthetics.[A186931] It is used to prevent supraventricular and ventricular arrhythmias, as well as paroxysmal atrial fibrillation and flutter.[L8878,L5056]
+Flecainide is a class Ic antiarrhythmic used to prevent and treat heart rhythm disorders such as atrial fibrillation. It remains an approved medicine, but it carries a boxed warning, so its use requires caution.
 
-Flecainide was granted FDA approval on 31 October 1985.[L8875]
-
-**Indication.** In New Zealand and America, flecainide is indicated to prevent supraventricular arrhythmias and ventricular arrhythmias.[L8878] In the United States, it is also indicated to prevent paroxysmal atrial fibrillation and flutter.[A186886,L5056]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421381](https://www.wikidata.org/wiki/Q421381) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -53,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…5% is eliminated in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor/substrate | DrugBank actor |
 

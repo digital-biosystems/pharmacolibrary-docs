@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;paromomycin&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/&quot;},{&quot;label&quot;:&quot;Verrest_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paromomycin_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paromomycin — `Paromomycin_Verrest2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,28 +21,30 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — paromomycin: CL 2.62 L/h, V1 13.6 L, Q 0.26, V2 2.22 L, kabs 2.05 h−1, Fab 1.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paromomycin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:23.978100+00:00) predates the upstream re-run (2026-10-04 18:26:28.356766+00:00). Current validate status: `extracted`.
 
 ## Citation
 Verrest L et al., Population pharmacokinetics of a combin…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad286](https://doi.org/10.1093/jac/dkad286)
 
 ## Model component
-<dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="needs_review" stale="false" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="extracted" stale="true" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 2.62 | L/h | 7.277777777777778e-07 | [l] / [h] | not captured | exact (1.0) | dkad286-T3:row2:col1, dkad286-T3:row2:col2 | — | not captured |
 | V c (L) | `Q63` · V1 | 13.6 | L | 0.0136 | [l] | not captured | space_fold (0.95) | dkad286-T3:row3:col1, dkad286-T3:row3:col2, Verrest_2023_table_4:row2:col1, Verrest_2023_table_4:row2:col2 | — | not captured |
-| Q | `Q30` · Q | 0.26 | not captured | not captured | not captured | not captured | exact (1.0) | dkad286-T3:row4:col1, dkad286-T3:row4:col2 | — | not captured |
+| Q | `Q30` · Q | 0.26 | L/h | 7.222222222222222e-08 | L/h | not captured | exact (1.0) | dkad286-T3:row4:col1, dkad286-T3:row4:col2 | — | not captured |
 | V p (L) | `Q64` · V2 | 2.22 | L | 0.00222 | [l] | not captured | space_fold (0.95) | dkad286-T3:row5:col1, dkad286-T3:row5:col2, Verrest_2023_table_4:row4:col1, Verrest_2023_table_4:row4:col2 | — | not captured |
 | ka (h−1) | `Q49` · kabs | 2.05 | h−1 | 0.0005694444444444444 | [1] / [h] | not captured | exact (1.0) | dkad286-T3:row6:col1, dkad286-T3:row6:col2 | — | not captured |
 | F1 | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | dkad286-T3:row7:col1, Verrest_2023_table_4:row6:col1 | — | not captured |
@@ -54,15 +57,20 @@ Verrest L et al., Population pharmacokinetics of a combin…, The Journal of ant
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
+- table section iiv: 'CL (CV%)' routed out of structural estimates ('Between-subject variability')
+- table section residual_error: 'Proportional error (CV%)' routed out of structural estimates ('Residual variability')
+- table section iiv: 'COVF,W1 (CV%)' routed out of structural estimates ('Between-subject variability')
 - dropped unlinked row (NIL): 'COVCL,neutrc (fractional change/103 cells/µL)' — extend the ontology if this is a real PK parameter (source ['dkad286-T3:row8:col1'])
-- dropped unlinked row (NIL): 'CL (CV%)' — extend the ontology if this is a real PK parameter (source ['dkad286-T3:row10:col1', 'dkad286-T3:row10:col2', 'Verrest_2023_table_4:row10:col1', 'Verrest_2023_table_4:row10:col2'])
 - dropped duplicate Q22 ('CL (L/day)', value '1.85') — already have one for this compound
 - dropped duplicate Q30 ('Q (L/day)', value '0.17') — already have one for this compound
 - dropped duplicate Q49 ('ka (day−1)', value '0.037') — already have one for this compound
 - dropped unlinked row (NIL): 'COVF,W1b (fractional change)' — extend the ontology if this is a real PK parameter (source ['Verrest_2023_table_4:row7:col1'])
-- dropped unlinked row (NIL): 'COVF,W1 (CV%)' — extend the ontology if this is a real PK parameter (source ['Verrest_2023_table_4:row11:col1', 'Verrest_2023_table_4:row11:col2'])
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Q' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Q in the table or text. However, Q is an intercompartmental clearance. ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paromomycin
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -75,6 +83,30 @@ Verrest L et al., Population pharmacokinetics of a combin…, The Journal of ant
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.667 (8/12 fields) | 4 |
+
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss:120b` | `parameters[covf,w1b]` | not captured | -0.65 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | paromomycin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | paromomycin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -83,10 +115,10 @@ Verrest L et al., Population pharmacokinetics of a combin…, The Journal of ant
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T3:row2:col1', 'dkad286-T3:row2:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T3:row4:col1', 'dkad286-T3:row4:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['dkad286-T3:row6:col1', 'dkad286-T3:row6:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkad286-T3:row3:col1', 'dkad286-T3:row3:col2', 'Verrest_2023_table_4:row2:col1', 'Verrest_2023_table_4:row2:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkad286-T3:row5:col1', 'dkad286-T3:row5:col2', 'Verrest_2023_table_4:row4:col1', 'Verrest_2023_table_4:row4:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkad286-T3:row4:col1', 'dkad286-T3:row4:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.62 | not captured | not captured | ['dkad286-T3:row2:col1', 'dkad286-T3:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.62 L/h | not captured | not captured | ['dkad286-T3:row2:col1', 'dkad286-T3:row2:col2'] |
@@ -109,21 +141,26 @@ Verrest L et al., Population pharmacokinetics of a combin…, The Journal of ant
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_modelica.zip" download>Paromomycin_Verrest2023_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_matlab.zip" download>Paromomycin_Verrest2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_matlab_simbio.zip" download>Paromomycin_Verrest2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_sbml.zip" download>Paromomycin_Verrest2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_cellml.zip" download>Paromomycin_Verrest2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference.svg" alt="Paromomycin_Verrest2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 1400 mg, single dose, first-order absorption (ka 2.05 /h, F 0.9). Doses in the paper: 1400, 7000, 10500 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_paromomycin/Paromomycin_Verrest2023_reference/Paromomycin_Verrest2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Paromomycin_Verrest2023_reference_params.json` · controls `Paromomycin_Verrest2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 02:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 18:26 UTC</sub>

@@ -12,13 +12,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**'shrinkage (%)' is a column of the estimates table, not a study population.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+The table was split into one record per column, and 'shrinkage (%)' holds a statistic rather than a second set of estimates.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -31,7 +31,7 @@ Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & t
 ## Model component
 <dbs-pgx drug="triflusal" model-id="Triflusal_Park2014_shrinkage" status="rejected" stale="false" population="healthy Korean male volunteers" measured-compound="HTB" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** CL/F — mechanistic, F unknown (apparent — bioavailability not identifiable).

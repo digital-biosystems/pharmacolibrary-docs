@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Ephedrine was first described in western literature in 1888, as a naturally occurring component of the ephedra plant, along with [pseudoephedrine].[A193698] Ephedrine acts as both a direct and indirect sympathomimetic. It is an alpha- and beta-adrenergic receptor agonist; however, it also causes the indirect release of norepinephrine from sympathetic neurons, inhibiting norepinephrine reuptake and displacing more norepinephrine from storage vesicles.[A193650,L12972] Ephedrine is used for its vasoconstrictive, positive chronotropic, and positive inotropic effects.[L12972] Ephedrine and [phenylephrine] are still used to treat hypotension, but their use in other indications has decreased due to the development of more selective adrenergic agonists.[A193701,A193704,L12975] Ephedrine was granted a type 7 FDA Approval on 29 April 2016.[L12975]
+Ephedrine is a sympathomimetic used for conditions such as asthma, rhinitis, and orthostatic hypotension, and as a nasal decongestant, cardiac stimulant, and pupil-dilating agent. It remains an approved medicine and is included on the WHO list of essential medicines, so it is still in use worldwide.
 
-**Indication.** Ephedrine intravenous injections are indicated to treat hypotension under anesthesia,[L12972,L34645] ephedrine injections by multiple routes are indicated to treat allergic conditions such as bronchial asthma,[L12996] ephedrine nasal spray is and OTC medication used as a decongestant.[L12993]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q219626](https://www.wikidata.org/wiki/Q219626) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -25,7 +25,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Tran_2020_reference](drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Tran QT et al., Clinical Evaluation of Acetaminophen-Ga…, Pharmaceutics (2020) | [10.3390/pharmaceutics12121182](https://doi.org/10.3390/pharmaceutics12121182) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Tran_2020_reference](drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Tran QT et al., Clinical Evaluation of Acetaminophen-Ga…, Pharmaceutics (2020) | [10.3390/pharmaceutics12121182](https://doi.org/10.3390/pharmaceutics12121182) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Csajka_2005_reference](drugs/drug_ephedrine/Ephedrine_Csajka2005_reference.md) | — | parent + metabolite (no model) | 4 | Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02254.x](https://doi.org/10.1111/j.1365-2125.2005.02254.x) |
 
 ## Pharmacodynamics (PD)
@@ -44,7 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | blood | `BCHE` substrate | DrugBank actor |
 | metabolism | liver | `BCHE` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Ephedrine is mainly eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | blood | `ACHE` inhibitor | DrugBank actor |
 | — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
 

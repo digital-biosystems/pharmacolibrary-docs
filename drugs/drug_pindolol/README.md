@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Pindolol is a first generation non-selective beta blocker used in the treatment of hypertension.[L32353] Early research into the use of pindolol found it had chronotropic effects, and so further investigation focused on the treatment of arrhythmia.[A231059] Research into pindolol's use in the treatment of hypertension began in the early 1970s.[A231064]
+Pindolol is a non-selective beta blocker used to treat high blood pressure, angina, and after a heart attack. It is an approved medicine, available alone and in combination with diuretics, though not authorised centrally in the European Union.
 
-Pindolol was granted FDA approval on 3 September 1982.[L32348]
-
-**Indication.** Pindolol is indicated in the management of hypertension.[L32353] In Canada, it is also indicated in the prophylaxis of angina.[L32388]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418101](https://www.wikidata.org/wiki/Q418101) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,7 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `SULT1A1` substrate, `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `SULT1A1` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…6-9% of an intravenous dose is eliminated in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB2 (partial agonist), ADRB3 (target), HTR1A (target), HTR1B (target).</sub>

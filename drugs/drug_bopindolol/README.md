@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Bopindolol (INN) is an ester prodrug for the beta blocker [pindolol].
+Bopindolol is a non-selective beta blocker that was used for cardiovascular conditions such as high blood pressure. It is considered experimental and does not appear to be an approved medicine today.
 
-**Indication.** For the management of hypertension, edema, ventricular tachycardias, and atrial fibrillation.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q834660](https://www.wikidata.org/wiki/Q834660) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

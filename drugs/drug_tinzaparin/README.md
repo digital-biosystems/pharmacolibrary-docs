@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Tinzaparin is a low molecular weight heparin (LMWH), produced by enzymatic depolymerization of unfractionated heparin from porcine intestinal mucosa. It is a heterogeneous mixture of with an average molecular weight between 5500 and 7500 daltons. Tinzaparin is composed of molecules with and without a special site for high affinity binding to antithrombin III (ATIII). This complex greatly accelerates the inhibition of factor Xa. It is an anticoagulant and considered an antithrombotic. Tinzaparin must be given either subcutaneously or parenterally. LMWHs are less effective at inactivating factor IIa due to their shorter length compared to unfractionated heparin.
+Tinzaparin is a low molecular weight heparin used as an anticoagulant, including in the treatment of pulmonary embolism. It is an approved medication and remains in clinical use.
 
-**Indication.** Tinzaparin is used for the prevention of postoperative venous thromboembolism in patients undergoing orthopedic surgery and in patients undergoing general surgery who are at high risk of developing postoperative venous thromboembolism. It is also used for the treatment of deep vein thrombosis and/or pulmonary embolism. It is indicated for use in preventing clot formation in indwelling intravenous lines for hemodialysis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20817252](https://www.wikidata.org/wiki/Q20817252) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,9 +31,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | adipose tissue | <sub>“…Subcutaneous injection…”</sub> | prose |
-| metabolism | liver | <sub>“…Sulfation and polymerization occurs in the liver.…”</sub> | prose |
-| excretion | kidney | <sub>“…Linear elimination through kidneys…”</sub> | prose |
+| absorption | adipose tissue | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADAMTS4 (inhibitor), CXCL12 (binder), ITGA4 (inhibitor), SERPINC1 (potentiator).</sub>
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Escitalopram is a selective serotonin re-uptake inhibitor (SSRI) and the S-enantiomer of racemic [citalopram].[A185420] It is used to restore serotonergic function in the treatment of depression and anxiety.[L8513,L8516,L8522] Escitalopram is approximately 150 times more potent than citalopram’s R-enantiomer and is responsible for the vast majority of citalopram’s clinical activity, with some evidence suggesting that the R-enantiomer of racemic citalopram actively dampens the activity of escitalopram rather than existing simply as an inactive enantiomer.[A39738,A185819] Amongst SSRIs, escitalopram exerts the highest degree of selectivity for the serotonin transporter (SERT) relative to other off-targets which may explain its lower rates of adverse effects as compared to other agents in this class.[A185726] Escitalopram also differentiates itself from other SSRIs via allosteric action on its target - this may be the mechanism responsible for its observed superior efficacy and faster onset compared to other SSRIs.[A185825,A185726,A185822]
+Escitalopram is an antidepressant of the SSRI class used for depression and anxiety-related conditions such as generalized anxiety disorder, obsessive-compulsive disorder, and post-traumatic stress disorder. It is an approved medicine, widely used in clinical practice, and carries a boxed warning.
 
-**Indication.** Escitalopram is indicated for the acute and maintenance treatment of major depressive disorder (MDD) in adults and pediatric patients 12 years old and older and for the acute treatment of generalized anxiety disorder (GAD) in adults and pediatric patients 7 years old and older.[L8513,L8513] It is additionally indicated for symptomatic relief of obsessive-compulsive disorder (OCD) in Canada.[L8516]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423757](https://www.wikidata.org/wiki/Q423757) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `AOX1` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…approximately 8% of the total dose is eliminated in the urine as unchanged escitalopram…”</sub> | prose |
-| excretion | liver | <sub>“…The apparent hepatic clearance of escitalopram amounts to approximately 90% of the total d…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` binder | DrugBank actor |
 | — | platelet | `SLC6A4` binder | DrugBank actor |
 

@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Dabigatran etexilate is an oral prodrug that is hydrolyzed to the competitive and reversible direct thrombin inhibitor [dabigatran].[A177463, A6970, L34675, L34680] Dabigatran etexilate may be used to decrease the risk of venous thromboembolic events in patients in whom anticoagulation therapy is indicated.[A177463] In contrast to warfarin, because its anticoagulant effects are predictable, lab monitoring is not necessary.[A177463] Dabigatran etexilate was approved by the FDA in 2010.[L6022]
+Dabigatran etexilate is a direct thrombin inhibitor anticoagulant used to prevent and treat thrombosis, including venous thromboembolism after joint replacement surgery and stroke risk in atrial fibrillation. It is approved and authorised in the European Union and is widely used as an oral anticoagulant.
 
-**Indication.** Dabigatran etexilate is available in both oral pellet and capsule form. Dabigatran etexilate pellets are indicated for the treatment of venous thromboembolic events (VTE) in pediatric patients between three months and 12 years of age who have been treated with a parenteral anticoagulant for at least 5 days. They are also indicated in the same age group to reduce the risk of recurrence of VTE in patients who have been previously treated.[L34675]
-
-In capsule form, dabigatran etexilate is indicated in adults to reduce the risk of stroke and systemic embolism associated with non-valvular atrial fibrillation and for the treatment of deep venous thrombosis (DVT) and pulmonary embolism (PE) in patients who have been treated with a parenteral anticoagulant for 5-10 days. It is also indicated in adults to reduce the risk of recurrence of DVT and PE in patients who have been previously treated and for the prophylaxis of DVT and PE in patients who have undergone hip replacement surgery. Lastly, it is indicated in pediatric patients between eight and 18 years of age for the treatment of venous thromboembolic events (VTE) in patients who have been treated with a parenteral anticoagulant for at least 5 days and to reduce the risk of recurrence of VTE in patients who have been previously treated.[L34680]
-
-Dabigatran etexilate is also approved by the EMA to prevent VTE in adult patients. For pediatric patients, Dabigatran etexilate is used to treat TVE and prevent recurrent TVE for patients from birth to less than 18 years of age.[L46856]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20078502](https://www.wikidata.org/wiki/Q20078502) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,8 +42,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CES1` substrate, `CES2` substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `CES2` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…86% is recovered in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…primarily eliminated in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F2 (inhibitor), NQO2 (inhibitor).</sub>
 

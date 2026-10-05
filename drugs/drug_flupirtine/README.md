@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Flupirtine is a pyridine derivative that is in clinical use as a nonopioid analgesic. It was approved for the treatment of pain in 1984 in Europe. It is not approved for use in the U.S. or Canada, but is currently in phase II trials for the treatment of fibromyalgia.
+Flupirtine is a non-opioid analgesic that was used to treat pain.
 
-**Indication.** Investigated for use/treatment in fibromyalgia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415403](https://www.wikidata.org/wiki/Q415403) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -65,8 +65,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `GSTP1` metabolism, `NAT2` metabolism, `UGT1A1` safety_allele | paper PGx gene |
 | metabolism | lung | `GSTP1` metabolism | paper PGx gene |
 | metabolism | small intestine | `NAT2` metabolism, `UGT1A1` safety_allele | paper PGx gene |
-| excretion | bile duct | <sub>“…18% appear in faeces…”</sub> | prose |
-| excretion | kidney | <sub>“…72% of flupirtine and its metabolites appear in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA2A (unknown).</sub>
 

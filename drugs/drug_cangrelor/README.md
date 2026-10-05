@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Cangrelor is an intravenous, direct-acting, reversible P2Y12 inhibitor for patients undergoing percutaneous coronary intervention (PCI) who have not been yet treated by oral P2Y12 inhibitors. An advantage Cangrelor provides over oral P2Y12 inhibitors (such as prasugrel, ticagrelor, and clopidogrel) is that it is an active drug not requiring metabolic conversion therefore providing a rapid onset and offset of action. Cangrelor was approved by the FDA in June 2015 for intravenous application.
+Cangrelor is a platelet aggregation inhibitor used to prevent blood clots in patients with acute coronary syndrome or undergoing vascular surgical procedures. It is an approved medicine with an authorised product in the European Union.
 
-**Indication.** For use as an adjunct to percutaneous coronary intervention (PCI) for reducing the risk of periprocedural myocardial infarction (MI), repeat coronary revascularization, and stent thrombosis (ST) in patients in who have not been treated with a P2Y12 platelet inhibitor and are not being given a glycoprotein IIb/IIIa inhibitor.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3655338](https://www.wikidata.org/wiki/Q3655338) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,9 +56,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…deactivated rapidly in the circulation by dephosphorylation…”</sub> | prose |
-| excretion | bile duct | <sub>“…presumably following biliary excretion…”</sub> | prose |
-| excretion | kidney | <sub>“…58% of radioactivity was recovered in urine…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: P2RY12 (inhibitor), P2Y12 (target).</sub>
 

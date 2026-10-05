@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Chloroquine is an aminoquinolone derivative first developed in the 1940s for the treatment of malaria.[A191655] It was the drug of choice to treat malaria until the development of newer antimalarials such as [pyrimethamine], [artemisinin], and [mefloquine].[A191787] Chloroquine and its derivative [hydroxychloroquine] have since been repurposed for the treatment of a number of other conditions including HIV, systemic lupus erythematosus, and rheumatoid arthritis.[A192432]
+Chloroquine is an antimalarial drug used to treat and prevent malaria, and has also been used for conditions such as rheumatoid arthritis and amebiasis. It remains an approved medicine, including veterinary use, and is listed among WHO essential medicines, though resistance has limited its usefulness in some regions.
 
-**The FDA emergency use authorization for [hydroxychloroquine] and chloroquine in the treatment of COVID-19 was revoked on 15 June 2020.[L14312]**
-
-Chloroquine was granted FDA Approval on 31 October 1949.[L12054]
-
-**Indication.** Chloroquine is indicated to treat infections of _P. vivax_, _P. malariae_, _P. ovale_, and susceptible strains of _P. falciparum_.[L12051] It is also used to treat extraintestinal amebiasis.[L12051]
-
-Chloroquine is also used off label for the treatment of rheumatic diseases,[A191655] as well as treatment and prophylaxis of Zika virus.[A191649,A191652] Chloroquine is currently undergoing clinical trials for the treatment of COVID-19.[A191631]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422438](https://www.wikidata.org/wiki/Q422438) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -33,17 +27,17 @@ Chloroquine is also used off label for the treatment of rheumatic diseases,[A191
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/2/3 | 0/0/0 | 0/0/0 | not captured | not captured | 42 | 4/0 | 34/8 | 0 |
+| not captured | not captured | 0/3/2 | 0/0/0 | 0/0/0 | not captured | not captured | 42 | 4/0 | 34/8 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chotsiri_2022_reference](drugs/drug_chloroquine/Chloroquine_Chotsiri2022_reference.md) | held back | 1-compartment, oral | 1 | Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Karunajeewa_2010_reference](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | held back | 1-compartment, IV | 3 | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Karunajeewa_2010_reference](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | — | parent + metabolite (no model) | 3 | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2021_reference](drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md) | held back | 1-compartment, oral | 5 | Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021) | [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Abd-Rahman_2020_plasma_samples](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_plasma_samples.md) | — | parent + metabolite (no model) | 8 | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Abd-Rahman_2020_whole_blood_samples](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_whole_blood_samples.md) | — | parent + metabolite (no model) | 8 | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chotsiri_2022_reference](drugs/drug_chloroquine/Chloroquine_Chotsiri2022_reference.md) | — | parent + metabolite (no model) | 1 | Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665) |
 
 ## ADME sites
 
@@ -63,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2C8` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `GSTM1` inhibitor | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…predominantly eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACE2 (modulator), ACKR1 (modulator), GSTA2 (inhibitor), HMGB1 (inhibitor), TLR9 (inhibitor), TNF (inhibitor).</sub>
 
@@ -77,7 +71,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 2723 matched, 67 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 0  ·  needs_review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

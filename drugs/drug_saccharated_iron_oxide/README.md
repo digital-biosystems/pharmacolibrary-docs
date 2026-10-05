@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Iron sucrose (sucroferric oxyhydroxide or iron saccharate) is used as a source of iron in patients with iron deficiency anemia with chronic kidney disease (CKD), including those who are undergoing dialysis (hemodialysis or peritoneal) and those who do not require dialysis. Due to less side effects than iron dextran, iron sucrose is more preferred in chronic kidney disease patients.
+Iron sucrose is an intravenous iron preparation used to treat iron deficiency anemia. It is an approved medicine and remains in use as a hematinic for anemia.
 
-**Indication.** Iron sucrose is elemental iron as an injection. It replenishes body iron stores in patients with iron deficiency.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27888379](https://www.wikidata.org/wiki/Q27888379) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -29,7 +29,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…renal elimination of sucrose accounts for 68-75% of the administered dose…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

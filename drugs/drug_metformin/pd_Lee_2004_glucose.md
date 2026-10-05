@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Metformin plasma concentrations (microg/mL) inhibit the production of plasma glucose concentrations via a proportional indirect response mechanism. The model is characterized by an IC50 of 2.26 microg/mL, a production rate constant (kin) of 83.26 h(-1), and a loss rate constant (kout) of 0.68 h(-1).
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2004`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -83,7 +87,7 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Lee2004_PD_glucose/Metformin_Lee2004_PD_glucose_modelica.zip" download>Metformin_Lee2004_PD_glucose_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Lee2004_PD_glucose/Metformin_Lee2004_PD_glucose_modelica.zip" download>Metformin_Lee2004_PD_glucose_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Lee2004_PD_glucose/Metformin_Lee2004_PD_glucose_matlab.zip" download>Metformin_Lee2004_PD_glucose_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

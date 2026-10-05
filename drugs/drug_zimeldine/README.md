@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Zimelidine has been banned worldwide due to serious, sometimes fatal, cases of central and/or peripheral neuropathy known as Guillain-Barré syndrome and due to a peculiar hypersensitivity reaction involving many organs including skin exanthema, flu-like symptoms, arthralgias, and sometimes eosinophilia. Additionally, zimelidine was charged to cause an increase in suicidal ideation and/or attempts among depressive patients.
+Zimeldine was an antidepressant of the selective serotonin reuptake inhibitor class, used to treat depression. It was later withdrawn from the market after being linked to serious neurological adverse reactions, so it is no longer used.
 
-**Indication.** For the treatment of depression.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q203483](https://www.wikidata.org/wiki/Q203483) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

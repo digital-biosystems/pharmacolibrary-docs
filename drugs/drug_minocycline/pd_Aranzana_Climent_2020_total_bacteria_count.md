@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;minocycline&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/&quot;},{&quot;label&quot;:&quot;Aranzana-Climent_2020 \u00b7 PD total bacteria count&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Minocycline_Pardos2024_reference&quot;,&quot;label&quot;:&quot;Pardos_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Pardos2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Tynan2016_reference&quot;,&quot;label&quot;:&quot;Tynan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Tynan2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Minocycline_Pardos2024_reference&quot;,&quot;label&quot;:&quot;Pardos_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Pardos2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Tynan2016_reference&quot;,&quot;label&quot;:&quot;Tynan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Tynan2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aranzana_Climent_2020_highly_resistant_bacteria_count&quot;,&quot;label&quot;:&quot;Aranzana-Climent_2020 \u00b7 highly resistant bacteria count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/pd_Aranzana_Climent_2020_highly_resistant_bacteria_count.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aranzana_Climent_2020_total_bacteria_count&quot;,&quot;label&quot;:&quot;Aranzana-Climent_2020 \u00b7 total bacteria count&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/pd_Aranzana_Climent_2020_total_bacteria_count.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # total bacteria count — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
@@ -18,7 +18,7 @@
 
 **As extracted:** Minocycline (concentrations from the PK model of Athanassa_2025) drives total bacteria count (in log10CFU/mL) (inhibition; the model form was not identified).
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 > Minocycline concentrations (mg/L) inhibit the growth of total bacteria count (log10CFU/mL) via a direct Emax effect on both resistant and highly resistant subpopulations, characterized by a maximum effect rate constant (Emax,MIN) of 1.41 h⁻¹, EC50 values of 1.02 mg/L (resistant) and 1.67 mg/L (highly resistant), and a Hill coefficient (γMIN) of 1.59.
 >
@@ -92,18 +92,21 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_minocycline/Minocycline_AranzanaCliment2020_PD_total_bacteria_count/Minocycline_AranzanaCliment2020_PD_total_bacteria_count_modelica.zip" download>Minocycline_AranzanaCliment2020_PD_total_bacteria_count_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_minocycline/Minocycline_AranzanaCliment2020_PD_total_bacteria_count/Minocycline_AranzanaCliment2020_PD_total_bacteria_count_matlab.zip" download>Minocycline_AranzanaCliment2020_PD_total_bacteria_count_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_minocycline/Minocycline_AranzanaCliment2020_PD_total_bacteria_count/Minocycline_AranzanaCliment2020_PD_total_bacteria_count_sbml.zip" download>Minocycline_AranzanaCliment2020_PD_total_bacteria_count_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_minocycline/Minocycline_AranzanaCliment2020_PD_total_bacteria_count/Minocycline_AranzanaCliment2020_PD_total_bacteria_count_cellml.zip" download>Minocycline_AranzanaCliment2020_PD_total_bacteria_count_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_minocycline/Minocycline_AranzanaCliment2020_PD_total_bacteria_count/Minocycline_AranzanaCliment2020_PD_total_bacteria_count_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_minocycline/Minocycline_AranzanaCliment2020_PD_total_bacteria_count/Minocycline_AranzanaCliment2020_PD_total_bacteria_count_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Minocycline_AranzanaCliment2020_PD_total_bacteria_count_params.json` · controls `Minocycline_AranzanaCliment2020_PD_total_bacteria_count_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

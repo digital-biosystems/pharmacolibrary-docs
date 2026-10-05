@@ -11,21 +11,9 @@
 
 ## About
 
-**Description.** Amitriptyline is a tricyclic antidepressant that has been used to treat depression for decades. ELAVIL, a previously approved branded product of amitriptyline, was first approved by the FDA in 1961.[A259342] Amitriptyline has been investigated in the treatment of pain-related conditions, attributed to its analgesic properties.[A174661]
+Amitriptyline is a tricyclic antidepressant used to treat depression and a variety of pain syndromes, including migraine, fibromyalgia, and insomnia. It is widely used and appears on the WHO list of essential medicines, though it carries a boxed warning.
 
-**Indication.** This drug in indicated for the following conditions [FDA label]:
-
-Major depressive disorder in adults [L46357]
-
-Management of neuropathic pain in adults
-
-Prophylactic treatment of chronic tension-type headache (CTTH) in adults
-
-Prophylactic treatment of migraine in adults
-
-Treatment of nocturnal enuresis in children aged 6 years and above when organic pathology, including spina bifida and related disorders, have been excluded and no response has been achieved to all other non-drug and drug treatments, including antispasmodics and vasopressin-related products. This product should only be prescribed by a healthcare professional with expertise in the management of persistent enuresis [FDA label]
-
-Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, agitation, fibromyalgia, and insomnia
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q58397](https://www.wikidata.org/wiki/Q58397) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -46,9 +34,9 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | held back | 1-compartment, IV | 10 | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | held back | 1-compartment, IV | 3 | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yukawa_2002_reference](drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | — | parent + metabolite (no model) | 10 | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | — | 1-compartment (no model) | 3 | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Yukawa_2002_reference](drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
 
 ## Pharmacodynamics (PD)
 
@@ -127,7 +115,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `ABCB1` substrate | DrugBank actor |
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | skeletal muscle | <sub>“…Peak plasma concentrations are reached 2-12 hours after oral or intramuscular administrati…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
@@ -135,8 +123,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` formation/inhibitor/substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` metabolism/substrate, `CYP2D6` metabolism/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted in feces via biliary elimination…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

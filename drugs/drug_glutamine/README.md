@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** A non-essential amino acid present abundantly throughout the body and is involved in many metabolic processes. It is synthesized from glutamic acid and ammonia. It is the principal carrier of nitrogen in the body and is an important energy source for many cells. An oral formulation of L-glutamine was approved by the FDA in July 2017 for use in sickle cell disease [L892]. This oral formulation is marketed under the tradename Endari by Emmaus Medical.
+Glutamine, an amino acid, is used in the treatment of short bowel syndrome. It is approved and also available as a nutraceutical, with some investigational uses.
 
-**Indication.** Used for nutritional supplementation, also for treating dietary shortage or imbalance.
-
-Used to reduce the acute complications of sickle cell disease in adult and pediatric patients 5 years of age and older [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q181619](https://www.wikidata.org/wiki/Q181619) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

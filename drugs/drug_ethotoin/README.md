@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ethotoin is a hydantoin derivative and anticonvulsant. Ethotoin exerts an antiepileptic effect without causing general central nervous system depression. The mechanism of action is probably very similar to that of phenytoin. The latter drug appears to stabilize rather than to raise the normal seizure threshold, and to prevent the spread of seizure activity rather than to abolish the primary focus of seizure discharges. Ethotoin is no longer  commonly used.
+Ethotoin is a hydantoin anticonvulsant used to treat epilepsy, including visual epilepsy. It is an approved antiepileptic, though it is not widely used and is largely a niche option compared with other hydantoin drugs.
 
-**Indication.** For the control of tonic-clonic (grand mal) and complex partial (psychomotor) seizures.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4533122](https://www.wikidata.org/wiki/Q4533122) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,8 +30,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Fairly rapidly absorbed, however, the extent of oral absorption is not known.…”</sub> | prose |
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: NR1I2 (activator), SCN5A (inhibitor), SERPINA7 (substrate).</sub>
 

@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Etirinotecan pegol is under investigation in clinical trial NCT01663012 (Phase II NKTR-102 In Bevacizumab-Resistant High Grade Glioma).
+Etirinotecan pegol is an investigational topoisomerase inhibitor studied as a cancer treatment, mainly for breast cancer. It has not been approved; a marketing application in the European Union was refused.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An adrenergic agonist that acts predominantly at alpha adrenergic receptors and also stimulates the release of norepinephrine. It has been used primarily as a vasoconstrictor in the treatment of hypotension.
+Metaraminol is a sympathomimetic vasopressor used to treat hypotension, including in neurogenic shock. It is an approved adrenergic cardiac stimulant, used mainly in hospital settings to raise blood pressure during anesthesia or shock.
 
-**Indication.** For the treatment and prevention of hypotension due to hemorrhage, spinal anesthesia, and shock associated with brain damage
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409981](https://www.wikidata.org/wiki/Q409981) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,8 +36,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…10 min after IM injection…”</sub> | prose |
-| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), DRD2 (target).</sub>
 

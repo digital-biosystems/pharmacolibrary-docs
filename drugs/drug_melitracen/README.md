@@ -8,6 +8,12 @@
 - **molar mass:** 291.438 g/mol (C21H25N) — DrugBank
 - **groups:** investigational
 
+## About
+
+Melitracen is a tricyclic antidepressant used for depression and anxiety disorders. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411251](https://www.wikidata.org/wiki/Q411251) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

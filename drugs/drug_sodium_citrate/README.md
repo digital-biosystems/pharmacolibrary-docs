@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Sodium citrate is the sodium salt of citric acid. It is white, crystalline powder or white, granular crystals, slightly deliquescent in moist air, freely soluble in water,
-practically insoluble in alcohol. Like citric acid, it has a sour taste. 
-From the medical point of view, it is used as alkalinizing agent. It works by neutralizing excess acid in the blood and urine. It has been indicated for the treatment of metabolic acidosis.
+Sodium citrate is a salt solution used as an irrigating solution in blood and blood-forming related care. It is an approved medicine and is also being studied for other uses.
 
-**Indication.** Used as an anticoagulant during plasmophoresis as well as a neutralizing agent in the treatment of upset stomach and acidic urine [FDA Label] [L788] [L789].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409728](https://www.wikidata.org/wiki/Q409728) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -65,8 +63,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Citrate is metabolized to bicarbonate in the liver…”</sub> | prose |
-| excretion | liver | <sub>“…Largely eliminated through hepatic metabolism…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CA4 (inhibitor), SLC13A2 (substrate), SLC13A5 (substrate), SLC25A1 (substrate), SLC25A21 (substrate).</sub>
 

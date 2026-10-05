@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Bevantolol is a beta-1 adrenoceptor antagonist that has been shown to be as effective as other beta blockers for the treatment of angina pectoris and hypertension. Mechanism of Action Animal experiments confirm both agonist and antagonist effects on alpha-receptors, in addition to antagonist activity at beta-1 receptors.
+Bevantolol is a selective beta-blocker developed for cardiovascular conditions such as high blood pressure and angina. It is not an approved medicine and remains investigational, with no marketing authorisation in the European Union.
 
-**Indication.** For the treatment of angina pectoris and hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1956953](https://www.wikidata.org/wiki/Q1956953) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

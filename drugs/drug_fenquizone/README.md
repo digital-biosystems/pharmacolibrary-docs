@@ -8,6 +8,12 @@
 - **molar mass:** 337.78 g/mol (C14H12ClN3O3S) — DrugBank
 - **groups:** investigational
 
+## About
+
+Fenquizone is a diuretic, a type of drug that increases urine production and is used to treat conditions involving fluid retention such as swelling and high blood pressure. It is considered investigational and does not appear to be an approved medicine in major markets such as the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3742488](https://www.wikidata.org/wiki/Q3742488) and the WHO ATC classification; not checked by a person.</small>
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

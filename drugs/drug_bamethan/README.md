@@ -8,6 +8,12 @@
 - **molar mass:** 209.289 g/mol (C12H19NO2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Bamethan is a vasodilator that was used for peripheral vascular disease. It is classified as experimental and is not authorised in the European Union, so it appears to be little used or no longer in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4853482](https://www.wikidata.org/wiki/Q4853482) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

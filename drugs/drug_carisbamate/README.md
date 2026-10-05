@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Carisbamate has been investigated in Alcohol Abuse, Substance Abuse, and Alcohol Dependence.
+Carisbamate is an investigational antiepileptic drug that was developed for the treatment of epilepsy. It was never approved; a marketing application in the European Union was withdrawn, so it remains an investigational compound.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q76393597](https://www.wikidata.org/wiki/Q76393597) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

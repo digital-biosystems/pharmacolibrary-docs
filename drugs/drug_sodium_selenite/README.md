@@ -10,19 +10,9 @@
 
 ## About
 
-**Description.** Selenious acid is the acid form of sodium selenite, a form of selenium [L1910].
+Sodium selenite is a selenium supplement used to treat or prevent selenium deficiency. It is an approved mineral supplement and is also used as an additive in intravenous electrolyte solutions.
 
-Selenium is an essential trace element and antioxidant. It is a cofactor metabolic enzyme regulation. It also plays an important role in maintaining the general health of tissue and muscle and has antioxidant properties. Selenium is a component of glutathione peroxidase enzyme, which protects cell components from oxidative damage due to peroxides produced during cellular metabolism [L1916].
-
-Selenium (Se) has been demonstrated to prevent cancer in numerous animal models when administered selenium at levels exceeding the nutritional requirements. One study showed efficacy in the prevention of malignancy while utilizing a selenium supplement in humans. The reports from such studies have heightened the interest in additional human selenium supplementation studies to validate the results in larger populations [L1918].
-
-Interestingly, selenium is being studied as a potential therapy in the prevention or management of atherosclerosis [L1921].
-
-**Indication.** Selenium injection is indicated for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN). Administration of selenious acid in TPN formulas helps to maintain plasma selenium levels and also to maintain endogenous stores to prevent deficiency [L1922].
-
-Selenium compounds, such as selenium sulfide, are used topically in anti-dandruff shampoos and in cases of seborrhea [L1916]. 
- 
-For the purpose of brevity, selenite will the focus of discussion, and more information about selenium can be obtained at [DB11135].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414626](https://www.wikidata.org/wiki/Q414626) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,12 +34,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…The absorption of selenite following oral administration approximately 40-70% of an oral d…”</sub> | prose |
-| metabolism | liver | <sub>“…The liver is the central organ for selenium regulation and produces excretory selenium for…”</sub> | prose |
-| excretion | bile duct | <sub>“…significant endogenous losses through the feces can also occur…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated mainly in the urine…”</sub> | prose |
-| excretion | lung | <sub>“…Other minor routes of elimination are lungs…”</sub> | prose |
-| excretion | skin | <sub>“…Other minor routes of elimination are lungs and skin…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GPX1 (activator), SELENOP (transporter), TXNRD1 (substrate).</sub>
 

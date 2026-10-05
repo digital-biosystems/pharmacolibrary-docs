@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Human Beta-glucocerebrosidase or Beta-D-glucosyl-N-acylsphingosine glucohydrolase E.C. 3.2.1.45. 497 residue protein with N-linked carbohydrates, MW=59.3 kD. Alglucerase is prepared by modification of the oligosaccharide chains of human Beta-glucocerebrosidase. The modification alters the sugar residues at the non-reducing ends of the oligosaccharide chains of the glycoprotein so that they are predominantly terminated with mannose residues. Alglucerase was first approved by the FDA in 1991;[A254816] however, it was later discontinued from the market.
+Alglucerase is an enzyme replacement therapy that was used to treat Gaucher disease, a condition involving liver and spleen enlargement. It has been withdrawn from the market, having been superseded by a newer version of the enzyme produced by recombinant DNA technology.
 
-**Indication.** Alglucerase is indicated for use as a long-term enzyme replacement therapy in patients with Type I Gaucher disease who exhibit signs and symptoms that are severe enough to result in moderate-to-severe anemia, thrombocytopenia, bone disease, or significant hepato- or splenomegaly.[L44266]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4724257](https://www.wikidata.org/wiki/Q4724257) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

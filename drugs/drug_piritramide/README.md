@@ -11,7 +11,9 @@
 
 ## About
 
-**Description.** Piritramide is under investigation for the treatment of Colon Cancer and Minimal Residual Disease. Piritramide has been investigated for the supportive care of Pain, Postoperative and Postoperative Nausea and Vomiting.
+Piritramide is a strong opioid painkiller used to treat moderate to severe pain, such as pain after surgery. It is not approved everywhere and has been withdrawn in some countries, but it remains in clinical use in parts of Europe, mainly in hospital settings.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416439](https://www.wikidata.org/wiki/Q416439) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

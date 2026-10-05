@@ -8,6 +8,12 @@
 - **molar mass:** 604.697 g/mol (C31H44N2O10) — DrugBank
 - **groups:** experimental
 
+## About
+
+Dilazep is a vasodilator classified among vasodilators used in cardiac diseases. It appears only as an experimental agent in drug databases, with no marketing authorisation recorded, so its current use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5276700](https://www.wikidata.org/wiki/Q5276700) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A vasoconstrictor found in ergot of Central Europe. It is an alpha-1 selective adrenergic agonist and is commonly used in the treatment of migraine disorders.
+Ergotamine is an ergot alkaloid used to treat migraine attacks. It is an approved antimigraine medicine, though its use is limited by safety concerns and it is generally not a first-choice treatment.
 
-**Indication.** For use as therapy to abort or prevent vascular headache, e.g., migraine, migraine variants, or so called "histaminic cephalalgia".
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419186](https://www.wikidata.org/wiki/Q419186) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | bile duct | <sub>“…90% of the metabolites are excreted in the bile…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
 

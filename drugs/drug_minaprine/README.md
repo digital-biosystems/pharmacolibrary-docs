@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Minaprine is a psychotropic drug which has proved to be effective in the treatment of various depressive states. Like most antidepressants minaprine antagonizes behavioral despair. Minaprine  is an amino-phenylpyridazine antidepressant reported to be relatively free of cardiotoxicity, drowsiness, and weight gain.
+Minaprine is an antidepressant used to treat depression. It is classified as an approved other antidepressant, but it is not widely used today and no European Union authorisation is recorded.
 
-**Indication.** For the treatment of depression
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6863173](https://www.wikidata.org/wiki/Q6863173) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

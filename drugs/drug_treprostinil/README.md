@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Treprostinil is a stable tricyclic analogue of prostacyclin[A248770] that promotes the vasodilation of pulmonary and systemic arterial vascular beds and the inhibition of platelet aggregation.[L41855,L41860,L41865] It reduces symptoms in patients with pulmonary arterial hypertension (PAH) and pulmonary hypertension associated with interstitial lung disease.[L41855,L41860] The first agent approved for the treatment of PAH was [epoprostenol], a synthetic prostacyclin that significantly increases patients' quality of life. However, the use of epoprostenol is limited due to its short half-life (3-5 min) and instability at room temperature.[A248770,A248775] The use of more stable alternatives such as treprostinil provides patients with PAH with more treatment options.
+Treprostinil is a prostaglandin medicine used to treat pulmonary hypertension and chronic pulmonary heart disease. It is an approved drug and one product is authorised in the European Union for pulmonary hypertension.
 
-Treprostinil was approved by the FDA in 2002 for the treatment of pulmonary arterial hypertension.[L41860] It is available in the following routes of administration: subcutaneous, intravenous, inhaled and oral. The first generic form of treprostinil became available in 2019.[A248775]
-
-**Indication.** The FDA has indicated treprostinil for the treatment of pulmonary arterial hypertension[L41855,L41860,L41865] and pulmonary hypertension associated with interstitial lung disease[L41855] to improve exercise ability. It is also used to treat pulmonary arterial hypertension in patients requiring transition from epoprostenol.[L41860] The Health Canada label specifies that treprostinil is indicated for the long-term treatment of pulmonary arterial hypertension in NYHA Class III and IV patients who did not respond adequately to conventional therapy.[L24244]
-
-L24244
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3495231](https://www.wikidata.org/wiki/Q3495231) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,13 +47,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | lung | — | prose |
-| absorption | skin | <sub>“…After subcutaneous infusion, treprostinil is completely absorbed…”</sub> | prose |
-| absorption | small intestine | <sub>“…When given orally at doses between 0.5 and 15 mg twice a day, treprostinil follows a dose-…”</sub> | prose |
-| metabolism | kidney | <sub>“…The five metabolites detected in urine…”</sub> | prose |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C8` metabolism/substrate, `CYP2C9` safety_allele/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces (13%) over 10 days…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted through urine (79%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CAMK2D (target), GNG2 (target), P2RY12 (weak inhibitor), PFAS (target), PPARD (target), PTGDR (target), PTGER2 (target), PTGIR (target).</sub>
 

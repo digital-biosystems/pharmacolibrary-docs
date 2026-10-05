@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Baron_2016 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Baron_2016_FPG&quot;,&quot;label&quot;:&quot;Baron_2016 \u00b7 FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Baron_2016_FPG.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rascher_2025_HbA1c&quot;,&quot;label&quot;:&quot;Rascher_2025 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Rascher_2025_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # empagliflozin — `Empagliflozin_Baron2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,11 +21,11 @@
 
 Although the record lists CL 0.0110, V2 1.27, Q/F 6.34, V3 0.959 and kabs 1.23, the coverage check found only 2 of 4 expected parameters emitted or defaulted, with V2 and Q/F neither emitted nor defaulted. The model builder substituted generic placeholder values for empagliflozin's clearance, volume of distribution, absorption rate constant and absorption lag time, and the absorption rate constant was flagged as invented since it was not reported in the source. Bioavailability was assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. A second reader assigned an absorption lag time of 0.500 where this record has none. Extracted — empagliflozin: CL 0.011, V2 1.27, Q/F 6.34, V3 0.959, kabs 1.23.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 0.500. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.947879+00:00) predates the upstream re-run (2026-10-03 19:12:13.918910+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.947879+00:00) predates the upstream re-run (2026-10-04 23:44:24.614412+00:00). Current validate status: `extracted`.
 
 ## Citation
 Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : research… (2016)
@@ -101,18 +102,20 @@ Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.933 (14/15 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[alag1]` | not captured | 0.500 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
 
 </details>
 
@@ -186,4 +189,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 19:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 23:44 UTC</sub>

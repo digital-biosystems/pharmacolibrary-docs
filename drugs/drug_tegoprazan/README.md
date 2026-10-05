@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;tegoprazan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tegoprazan
 
@@ -11,28 +11,38 @@
 
 ## About
 
-**Description.** Tegoprazan (also known as CJ-12420) is a novel therapeutic developed by CJ Healthcare Corp for treating acid-related gastrointestinal diseases.[A234215, A234220] This drug is a potent and high-selective potassium-competitive acid blocker (P-CAB) with a fast onset of action and the ability to control gastric pH for a prolonged period of time.[A234215, A234220] Tegoprazan’s strong and sustained effect is due to its ability to be slowly cleared from the gastric glands and exertion of effects independent of acid levels.[A234220] It has also been observed to be efficacious independent of food intake.[A234220]
+Tegoprazan is a potassium-competitive acid blocker investigated for acid-related digestive disorders such as gastro-oesophageal reflux disease and peptic ulcer. It is not authorised in the European Union and remains investigational according to DrugBank, though it has been marketed in some Asian countries under the name K-CAB.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27292116](https://www.wikidata.org/wiki/Q27292116) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| tegoprazan | parent | 387.387 | C20H19F2N3O3 | DrugBank | — | He_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:34 | 17:20 | 0/0/3 | 1/1/0 | 0/0/1 | 349,383/22,132 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 0/18 | 18/0 | 0 |
+| 2026-10-04 11:59 | 15:29 | 1/1/1 | 2/0/0 | 0/0/1 | 296,093/39,685 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 0/18 | 18/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [He_2021_reference](drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md) | held back | 1-compartment, oral | 5 | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_tegoprazan/Tegoprazan_Jung2026_reference.md) | — | 1-compartment (no model) | 2 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kim_2024_reference](drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 3 | Kim HS et al., Enhancing drug administration flexibili…, Translational and clinical… (2024) | [10.12793/tcp.2024.32.e9](https://doi.org/10.12793/tcp.2024.32.e9) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kim_2024_reference](drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Kim HS et al., Enhancing drug administration flexibili…, Translational and clinical… (2024) | [10.12793/tcp.2024.32.e9](https://doi.org/10.12793/tcp.2024.32.e9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [He_2021_reference](drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md) | — | 1-compartment (no model) | 5 | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_tegoprazan/Tegoprazan_Jung2026_reference.md) | — | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.828). The first reading is what the record holds.">cross-check: disputed</span> | [Jeong_2022_pH](drugs/drug_tegoprazan/pd_Jeong_2022_pH.md) | gastric acid pH ← tegoprazan · indirect response — drug inhibits the loss of gastric acid pH | — | Jeong HC et al., Integration of a Physiologically Based…, Pharmaceutics (2022) | [10.3390/pharmaceutics14061298](https://doi.org/10.3390/pharmaceutics14061298) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jung_2026_intragastric_pH](drugs/drug_tegoprazan/pd_Jung_2026_intragastric_pH.md) | name ← tegoprazan, YH4808, fexuprazan, vonoprazan · indirect response — drug inhibits the production of name | — | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.828). The first reading is what the record holds.">cross-check: disputed</span> | [Jeong_2022_pH](drugs/drug_tegoprazan/pd_Jeong_2022_pH.md) | intragastric pH ← tegoprazan · indirect response — drug inhibits the production of intragastric pH | — | Jeong HC et al., Integration of a Physiologically Based…, Pharmaceutics (2022) | [10.3390/pharmaceutics14061298](https://doi.org/10.3390/pharmaceutics14061298) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jung_2026_pH](drugs/drug_tegoprazan/pd_Jung_2026_pH.md) | intragastric pH ← tegoprazan · indirect response — drug stimulates the production of intragastric pH | — | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 ## Pharmacogenomics (PGx)
 
@@ -67,7 +77,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 35 matched, 35 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -76,12 +86,12 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `He_2021.pdf` | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | popPK | 9 | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) | [33355910](https://pubmed.ncbi.nlm.nih.gov/33355910) | The study reports key PK parameters (Cmax, AUC, t1/2) for tegoprazan, but specific compartmental model parameters (CL, V, Q, ka) are not explicitly listed in the provided text. |
+| `He_2021.pdf` | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | popPK | 10 | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) | [33355910](https://pubmed.ncbi.nlm.nih.gov/33355910) | The study reports quantitative PK parameters (Cmax, AUC, t1/2) for tegoprazan in humans, though specific compartmental model parameters (CL, V, Q) are not explicitly listed in the provided text. |
 | `Wang_2025.pdf` | Wang W et al., Tegoprazan: a novel, highly selective,…, European journal of clinica… (2025) | pgx | 8 | [10.1007/s00228-025-03850-6](https://doi.org/10.1007/s00228-025-03850-6) | [40442337](https://www.ncbi.nlm.nih.gov/pubmed/40442337) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Carrasco-Portugal_2026.pdf` | Carrasco-Portugal MDC et al., Pharmacokinetics of the potassium-compe…, International journal of cl… (2026) | pgx | 7 | [10.5414/CP204709](https://doi.org/10.5414/CP204709) | [41553168](https://www.ncbi.nlm.nih.gov/pubmed/41553168) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Lee_2025.pdf` | Lee J et al., Potassium-competitive acid blocker vs p…, American heart journal (2025) | pgx | 5 | [10.1016/j.ahj.2025.04.001](https://doi.org/10.1016/j.ahj.2025.04.001) | [40188976](https://www.ncbi.nlm.nih.gov/pubmed/40188976) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-18T08:17:35.734232+00:00</sub>
+<sub>queue written 2026-10-04T11:44:33.194185+00:00</sub>
 
 ## Screened and excluded
 
@@ -101,11 +111,11 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Remes-Troche_2024 | not_relevant | 0 | 0 | The paper is a general review of P-CABs and does not report any pharmacogenomic effects or gene variant associations for tegoprazan. |
 | PGx | Shin_2025 | not_relevant | 2 | 2 | The paper reports clinical efficacy (healing rates) by CYP2C19 genotype but does not report pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., AUC, Cmax, pH). |
 | PGx | Wang_2025 | not_relevant | 2 | 0 | The paper is a general review that mentions CYP2C19 polymorphism does not affect Tegoprazan's efficacy, but it does not report specific pharmacogenomic effect sizes or detailed PK/PD parameter changes linked to genotypes. |
-| popPK | Wei_2023 | relevant | 8 | 2 | The paper is a PBPK modeling study for tegoprazan that reports specific PK parameters (ka, Vss, intrinsic clearance) in the text, but the primary quantitative disposition parameters (CL, V) are largely referenced in tables or derived from previous models rather than presented as a complete standalone population PK parameter set. |
+| popPK | Wei_2023 | relevant | 8 | 4 | The paper reports a PBPK model for tegoprazan with specific input parameters (ka, Vss, intrinsic clearance) and validation metrics, but the primary disposition parameters (CL, V) are not explicitly listed as final values in the provided text, only ratios and inputs. |
 | PD | Wei_2023 | not_relevant | 4 | 3 | The paper uses a PBPK/PD model to predict DDI effects on intragastric pH, but the provided text only contains PK parameter tables and qualitative descriptions of PD endpoints; it does not report the specific numeric PD parameters (e.g., Emax, EC50, Ki) or the underlying concentration-effect curve equations required to extract a PD relationship. |
 | PGx | Wei_2023 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (DDI) using PBPK/PD modeling, not pharmacogenomic effects of gene variants on PK/PD parameters. |
 | PGx | Yang_2023 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (CYP2C19 inhibition) in a homogeneous population of CYP2C19 extensive metabolizers, not a pharmacogenomic effect of a gene variant on the PK/PD of tegoprazan. |
 | PGx | Yoon_2021 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling for drug-drug interactions (CYP3A4 inhibitors/inducers) and does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 08:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 11:44 UTC</sub>

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** A pyrimidine nucleoside analog that is used mainly in the treatment of leukemia, especially acute non-lymphoblastic leukemia. Cytarabine is an antimetabolite antineoplastic agent that inhibits the synthesis of DNA. Its actions are specific for the S phase of the cell cycle. It also has antiviral and immunosuppressant properties. (From Martindale, The Extra Pharmacopoeia, 30th ed, p472)
+Cytarabine is an antineoplastic antimetabolite used to treat blood cancers such as acute myeloid leukemia, other leukemias, and several lymphomas, as well as myelodysplastic syndrome and meningeal tumors. It is an approved medicine, appears on the WHO essential medicines list, and is widely used in cancer care, though it carries a boxed warning.
 
-**Indication.** For the treatment of acute non-lymphocytic leukemia, acute lymphocytic leukemia and blast phase of chronic myelocytic leukemia.
-
-Cytarabine is indicated in combination with [daunorubicin] for the treatment of newly-diagnosed therapy-related acute myeloid leukemia (t-AML) or AML with myelodysplasia-related changes (AML-MRC) in adults and pediatric patients 1 year and older.[L32843]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q180983](https://www.wikidata.org/wiki/Q180983) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | liver | `SLC29A1` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…followed by urinary excretion of ara-U…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC10 (substrate), CDA (substrate), DCK (substrate), DCTD (substrate), DNA (cross-linking/alkylation), NT5E (substrate), POLB (inhibitor).</sub>
 

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Gallopamil has been used in trials studying the treatment of Asthma.
+Gallopamil is a calcium channel blocker of the phenylalkylamine type, developed for cardiovascular conditions. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412127](https://www.wikidata.org/wiki/Q412127) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;topiramate&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/&quot;},{&quot;label&quot;:&quot;Marques_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topiramate_Lee2024_reference&quot;,&quot;label&quot;:&quot;Lee_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/Topiramate_Lee2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topiramate_Lee2024_reference&quot;,&quot;label&quot;:&quot;Lee_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/Topiramate_Lee2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lim_2016_SDMT&quot;,&quot;label&quot;:&quot;Lim_2016 \u00b7 SDMT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/pd_Lim_2016_SDMT.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # topiramate — `Topiramate_Marques2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. In that source, ka (absorption rate constant) is given as 127 with unit '%' and CL (total clearance) as 65 with unit '%', a dimension mismatch on structural parameters since a rate constant and a clearance cannot be percentages. Only the volume of distribution V = 3.22 L is dimensionally consistent. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has topiramate, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has topiramate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:50.442359+00:00) predates the upstream re-run (2026-10-01 19:35:23.231109+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:50.442359+00:00) predates the upstream re-run (2026-10-04 21:15:20.509599+00:00). Current validate status: `rejected`.
 
 ## Citation
 Marques MR et al., Topiramate pharmacokinetics in neonates…, Acta paediatrica (Oslo, Nor… (2020)
@@ -84,15 +84,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl (l/h) 1]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl and cl]` | 65 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl and cl]` | not captured | 65 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 127 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v]` | 3.22 | not captured | only_one_extracted |
@@ -146,4 +145,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 19:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 21:15 UTC</sub>

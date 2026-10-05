@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A nitrogen mustard alkylating agent used as antineoplastic agent for the treatment of various malignant and nonmalignant diseases. Although it is less toxic than most other nitrogen mustards, it has been listed as a known carcinogen in the Fourth Annual Report on Carcinogens (NTP 85-002, 1985). (Merck Index, 11th ed)
+Chlorambucil is an alkylating anticancer drug used to treat cancers such as chronic lymphocytic leukemia, Hodgkin lymphoma, and other lymphoid malignancies. It remains an approved medicine and has been included on the WHO list of essential medicines, though it carries a boxed warning.
 
-**Indication.** For treatment of chronic lymphatic (lymphocytic) leukemia,  childhood minimal-change nephrotic syndrome, and malignant lymphomas including lymphosarcoma, giant follicular lymphoma, Hodgkin's disease,  non-Hodgkin's lymphomas, and Waldenström’s Macroglobulinemia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415939](https://www.wikidata.org/wiki/Q415939) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,9 +36,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `SLCO1A2` unknown | DrugBank actor |
 | metabolism | liver | `GSTP1` substrate | DrugBank actor |
 | metabolism | lung | `GSTP1` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…extremely low urinary excretion…”</sub> | prose |
-| excretion | liver | <sub>“…extensively metabolized in the liver…”</sub> | prose |
-| excretion | small intestine | <sub>“…undergoes rapid gastrointestinal absorption…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), GSTA1 (substrate).</sub>
 

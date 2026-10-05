@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Lafutidine has been investigated in Peptic Ulcer, Community-acquired Pneumonia, and Gastroesophageal Reflux Disease (GERD).
+Lafutidine is an H2-receptor antagonist developed as an anti-ulcer drug for acid-related disorders such as peptic ulcer and gastro-oesophageal reflux disease. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q582556](https://www.wikidata.org/wiki/Q582556) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 21:37 | 1:14 | 0/0/0 | 0/1/0 | 0/0/0 | 2,806/1,346 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 09:37 | 0:33 | 0/0/0 | 0/0/1 | 0/0/0 | 14,609/989 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -26,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ikawa_2007_pH](drugs/drug_lafutidine/pd_Ikawa_2007_pH.md) | intragastric pH ← lafutidine · direct sigmoid Emax (Hill) effect | — | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Ikawa_2007_DpH](drugs/drug_lafutidine/pd_Ikawa_2007_DpH.md) | DpH ← Lafutidine · direct sigmoid Emax (Hill) effect | — | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -47,18 +49,18 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dewan_2010.pdf` | Dewan B et al., An open-label, randomized, cross-over b…, World journal of gastrointe… (2010) | popPK | 8 | [10.4292/wjgpt.v1.i5.112](https://doi.org/10.4292/wjgpt.v1.i5.112) | [21577305](https://pubmed.ncbi.nlm.nih.gov/21577305) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2, tmax) for lafutidine, which are sufficient to derive clearance and volume metrics. |
+| `Dewan_2010.pdf` | Dewan B et al., An open-label, randomized, cross-over b…, World journal of gastrointe… (2010) | popPK | 8 | [10.4292/wjgpt.v1.i5.112](https://doi.org/10.4292/wjgpt.v1.i5.112) | [21577305](https://pubmed.ncbi.nlm.nih.gov/21577305) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2, tmax) for lafutidine in humans. |
 | `Hagiwara_2007.pdf` | Hagiwara T et al., Improvement in symptoms after H2-recept…, World journal of gastroente… (2007) | pgx | 5 | [10.3748/wjg.v13.i28.3836](https://doi.org/10.3748/wjg.v13.i28.3836) | [17657838](https://www.ncbi.nlm.nih.gov/pubmed/17657838) | metadata signals extractable PGX data (CYP2C19) |
 | `Shimatani_2003.pdf` | Shimatani T et al., Effect of omeprazole 10 mg on intragast…, Alimentary pharmacology & t… (2003) | pgx | 5 | [10.1046/j.1365-2036.2003.01804.x](https://doi.org/10.1046/j.1365-2036.2003.01804.x) | [14653835](https://www.ncbi.nlm.nih.gov/pubmed/14653835) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-29T21:37:27.833275+00:00</sub>
+<sub>queue written 2026-10-04T09:37:33.098483+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Hagiwara_2007 | not_relevant | 0 | 0 | The paper compares clinical outcomes of lafutidine vs lansoprazole and mentions CYP2C19 polymorphisms only to state that lafutidine's activity is unaffected, without reporting any pharmacogenomic data or PK/PD parameters. |
-| popPK | Ikawa_2006 | irrelevant | 2 | 0 | The study focuses on peptide release correlations and only mentions a one-compartmental model without reporting specific quantitative PK parameters like clearance or volume. |
+| popPK | Ikawa_2006 | irrelevant | 2 | 0 | The study focuses on the correlation between lafutidine AUC and peptide release, and while it mentions a one-compartmental PK analysis, no specific quantitative PK parameters (CL, V, ka, t1/2) are reported in the evidence. |
 | PGx | Isomoto_2003 | not_relevant | 0 | 0 | The study reports that CYP2C19 genotype had no significant influence on the clinical outcome (H. pylori eradication rate), but it does not report specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, pH levels) or quantitative effect sizes for the drug. |
 | PGx | Shimatani_2003 | not_relevant | 0 | 0 | The paper reports that lafutidine's pharmacodynamic effect (acid suppression) was not influenced by CYP2C19 genotype, meaning no pharmacogenomic effect was observed for the drug in question. |
 

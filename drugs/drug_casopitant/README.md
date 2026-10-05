@@ -10,13 +10,15 @@
 
 ## About
 
-**Indication.** Investigated for use/treatment in urinary incontinence and adverse effects (chemotherapy).
+Casopitant is an investigational antiemetic (an NK1 receptor antagonist) studied for preventing nausea and vomiting, including postoperative nausea and vomiting and vomiting associated with cancer treatment. It was never marketed; its European Union marketing application was withdrawn, so it remains investigational.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5049003](https://www.wikidata.org/wiki/Q5049003) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 11:52 | 2:11 | 0/0/0 | 0/0/0 | 0/0/0 | 30,592/1,620 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-04 13:48 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 11,884/552 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -48,23 +50,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Minthorn_2008.pdf` | Minthorn E et al., Pharmacokinetics and brain penetration…, Drug metabolism and disposi… (2008) | popPK | 8 | [10.1124/dmd.108.021758](https://doi.org/10.1124/dmd.108.021758) | [18556439](https://pubmed.ncbi.nlm.nih.gov/18556439) | The paper is a pharmacokinetic study of casopitant in ferrets, but the provided evidence contains only qualitative descriptions and metabolite percentages, lacking specific numeric values for clearance, volume, or half-life. |
-| `Zamuner_2012.pdf` | Zamuner S et al., A pharmacokinetic PET study of NK₁ rece…, European journal of nuclear… (2012) | popPK | 8 | [10.1007/s00259-011-1954-2](https://doi.org/10.1007/s00259-011-1954-2) | [21993526](https://pubmed.ncbi.nlm.nih.gov/21993526) | The study describes a population PK-receptor occupancy model for casopitant, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Zamuner_2012.pdf` | Zamuner S et al., A pharmacokinetic PET study of NK₁ rece…, European journal of nuclear… (2012) | popPK | 8 | [10.1007/s00259-011-1954-2](https://doi.org/10.1007/s00259-011-1954-2) | [21993526](https://pubmed.ncbi.nlm.nih.gov/21993526) | The study reports a population PK model for casopitant in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
 | `Johnson_2010.pdf` | Johnson BM et al., Ketoconazole and rifampin significantly…, Journal of clinical pharmac… (2010) | pgx | 7 | [10.1177/0091270009353761](https://doi.org/10.1177/0091270009353761) | [20124517](https://www.ncbi.nlm.nih.gov/pubmed/20124517) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Zamuner_2010.pdf` | Zamuner S et al., Effect of single and repeat doses of ca…, British journal of clinical… (2010) | pgx | 7 | [10.1111/j.1365-2125.2010.03729.x](https://doi.org/10.1111/j.1365-2125.2010.03729.x) | [20840445](https://www.ncbi.nlm.nih.gov/pubmed/20840445) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-09-18T11:52:17.969073+00:00</sub>
+<sub>queue written 2026-10-04T13:48:01.270125+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Adams_2009 | not_relevant | 0 | 0 | The study investigates the effect of casopitant on the pharmacokinetics of other drugs (dolasetron and granisetron), not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of casopitant itself. |
-| popPK | Adams_2014 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of cyclophosphamide, with casopitant serving only as a co-administered agent to assess drug-drug interactions, and no PK parameters for casopitant are reported. |
+| popPK | Adams_2014 | irrelevant | 1 | 0 | The study assesses the effect of casopitant on the pharmacokinetics of cyclophosphamide, not the disposition parameters of casopitant itself. |
 | PD | Adams_2014 | not_relevant | 1 | 0 | The study assesses the effect of casopitant on cyclophosphamide PK and safety (WBC), but does not report a concentration-effect or dose-response relationship for casopitant itself with numeric PD parameters. |
 | popPK | Di_2011 | irrelevant | 0 | 0 | The paper is a drug discovery and biological characterization study for casopitant, focusing on receptor affinity and selection as a clinical candidate, without reporting quantitative pharmacokinetic disposition parameters. |
 | PD | Di_2011 | not_relevant | 0 | 0 | The paper describes the discovery and biological characterization of casopitant, focusing on receptor affinity and physicochemical properties, but does not report any pharmacodynamic (PD) or exposure-response models with numeric parameters. |
@@ -76,10 +77,10 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Minthorn_2008 | not_relevant | 1 | 0 | The paper reports pharmacokinetics and brain penetration data but does not provide numeric pharmacodynamic parameters (e.g., Emax, EC50) or an exposure-response curve for casopitant. |
 | PGx | Motta_2011 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDIs) involving CYP3A4 inhibitors and inducers, not pharmacogenomic variants affecting casopitant's PK or PD. |
 | popPK | Roila_2009 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for antiemetic prevention and does not report any pharmacokinetic parameters for casopitant. |
-| popPK | Weibel_2020 | irrelevant | 0 | 0 | This is a network meta-analysis of clinical efficacy for postoperative nausea and vomiting, not a pharmacokinetic study, and it contains no PK parameters for casopitant. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | This is a network meta-analysis of clinical efficacy for postoperative nausea and vomiting, not a pharmacokinetic study, and it reports no PK parameters for casopitant. |
 | PD | Weibel_2020 | not_relevant | 1 | 0 | The paper is a network meta-analysis comparing clinical efficacy (risk ratios) of antiemetics, including casopitant, but it does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters (e.g., Emax, EC50). |
 | PGx | Zamuner_2010 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (CYP3A inhibition) in healthy subjects, not the effect of a gene variant or genotype on casopitant's PK/PD. |
-| popPK | Zamuner_2012 | relevant | 8 | 0 | The study describes a population PK-receptor occupancy model for casopitant, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Zamuner_2012 | relevant | 8 | 2 | The study reports a population PK model for casopitant in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

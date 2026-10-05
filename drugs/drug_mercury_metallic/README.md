@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Metallic mercury was historically used in dermatological preparations as an antiseptic and disinfectant. Mercurial antiseptics are no longer used in human medicine because of mercury's toxicity.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q48397](https://www.wikidata.org/wiki/Q48397) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

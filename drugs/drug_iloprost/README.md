@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Iloprost is an analog of prostacyclin (PGI2; epoprostenol), an endogenous prostanoid mainly produced in the vascular endothelium. It is more stable than prostacyclin, which is short-lived.[A263326] Iloprost consists of a mixture of the 4R and 4S diastereoisomers at a ratio of approximately 53:47.[L50146] It is a potent vasodilator with reported anti-thrombotic properties.[A263316] Iloprost is available as an inhaled solution and intravenous formulations. It is used to treat pulmonary arterial hypertension (PAH) [L50146] and frostbites.[L50151]
+Iloprost is a vasodilator and platelet aggregation inhibitor used to treat pulmonary hypertension and chronic pulmonary heart disease. It is approved and authorised in the European Union for pulmonary hypertension, though its use remains limited to this specialised indication.
 
-**Indication.** Inhaled iloprost solution is indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1) to improve a composite endpoint consisting of exercise tolerance, symptoms (NYHA Class), and lack of deterioration. Studies establishing effectiveness included predominately patients with NYHA Functional Class III–IV symptoms and etiologies of idiopathic or heritable PAH (65%) or PAH associated with connective tissue diseases (23%).[L50146]
-
-Intravenous iloprost is indicated for the treatment of severe frostbite in adults to reduce the risk of digit amputations. Effectiveness was established in young, healthy adults who suffered frostbite at high altitudes.[L50151]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20817139](https://www.wikidata.org/wiki/Q20817139) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,8 +43,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `SLCO2B1` substrate | DrugBank actor |
 | absorption | small intestine | `SLCO2B1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | bile duct | <sub>“…fecal excretion was 12% and 17%…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly excreted in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PDE4A (inducer), PDE4B (inducer), PDE4C (inducer), PDE4D (inducer), PLAT (other/unknown), PTGDR2 (target), PTGER1 (target), PTGER2 (target), PTGIR (target), SLCO2A1 (substrate), SLCO3A1 (substrate).</sub>
 

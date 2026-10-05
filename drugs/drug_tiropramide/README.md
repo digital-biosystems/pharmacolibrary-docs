@@ -10,20 +10,29 @@
 
 ## About
 
-**Description.** Tiropramide is under investigation in clinical trial NCT01629212 (Comparison of the Efficacy and Safety of Tiropramide and Octylonium in the Treatment of Irritable Bowel Syndrome).
+Tiropramide is a synthetic antispasmodic with parasympatholytic action, studied for functional gastrointestinal disorders. It is not an approved medicine and remains investigational, with no authorisation in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7809264](https://www.wikidata.org/wiki/Q7809264) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| tiropramide | parent | 467.643 | C28H41N3O3 | DrugBank | [42262](https://pubchem.ncbi.nlm.nih.gov/compound/42262) | Arigoni_1986 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 10:17 | 1:27 | 0/0/2 | 0/0/0 | 0/0/0 | 43,448/3,345 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-04 13:19 | 3:03 | 1/0/0 | 0/0/0 | 0/0/0 | 49,176/8,398 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Arigoni_1986_reference](drugs/drug_tiropramide/Tiropramide_Arigoni1986_reference.md) | held back | 1-compartment, IV | 4 | Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.588). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2020_reference](drugs/drug_tiropramide/Tiropramide_Jeong2020_reference.md) | — | 1-compartment (no model) | 9 | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Arigoni_1986_reference](drugs/drug_tiropramide/Tiropramide_Arigoni1986_reference.md) | held back | 1-compartment, IV | 5 | Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -35,7 +44,7 @@
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -44,17 +53,17 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Arigoni_1986.pdf` | Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986) | popPK | 10 | not captured | [3718598](https://pubmed.ncbi.nlm.nih.gov/3718598) | The abstract explicitly reports quantitative pharmacokinetic parameters for tiropramide, including volume of distribution (221 l), elimination constants, and half-lives for multiple routes of administration. |
+| `Arigoni_1986.pdf` | Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986) | popPK | 10 | not captured | [3718598](https://pubmed.ncbi.nlm.nih.gov/3718598) | The abstract provides explicit quantitative pharmacokinetic parameters including volume of distribution (221 l), elimination constants, and half-lives for tiropramide in humans. |
 
-<sub>queue written 2026-09-18T10:15:53.177013+00:00</sub>
+<sub>queue written 2026-10-04T13:16:28.560816+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Jeong_2020 | not_relevant | 0 | 0 | The study explicitly reports that the tested genetic variants (ABCB1, CYP2D6, OCT2, PEPT1) did not show any significant association with the pharmacokinetic parameters of tiropramide. |
-| popPK | Kim_2016 | irrelevant | 2 | 0 | The study uses tiropramide data only to compare bioequivalence analysis methods (NCA vs. compartmental) and does not report specific quantitative PK parameter values (CL, V, etc.) for the drug. |
+| popPK | Kim_2016 | irrelevant | 2 | 0 | The study uses tiropramide data as a case study for methodological comparison (BE assessment) and does not report specific quantitative PK parameter values (CL, V, etc.) in the provided evidence. |
 | PD | Tidke_2023 | not_relevant | 0 | 0 | The paper focuses on the forced degradation and structural characterization of tiropramide using HPLC-MS/MS and NMR, containing no pharmacodynamic or exposure-response data. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 10:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 13:16 UTC</sub>

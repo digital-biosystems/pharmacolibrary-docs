@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A short-acting opioid anesthetic and analgesic derivative of fentanyl. It produces an early peak analgesic effect and fast recovery of consciousness. Alfentanil is effective as an anesthetic during surgery, for supplementation of analgesia during surgical procedures, and as an analgesic for critically ill patients.
+Alfentanil is an opioid used as an intravenous anesthetic for general anesthesia and pain control. It is an approved medicine used mainly in hospital settings for anesthesia, though it is also a controlled drug with illicit misuse potential.
 
-**Indication.** For the management of postoperative pain and the maintenance of general anesthesia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q176533](https://www.wikidata.org/wiki/Q176533) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -74,7 +74,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` metabolism, `CYP3A4` substrate, `CYP3A5` metabolism/substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` metabolism/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…urinary excretion is the major route of elimination of metabolites…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: MDR1 (transport), OPRM1 (target).</sub>
 

@@ -4,7 +4,7 @@
 
 # triamcinolone — `Triamcinolone_Beer2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,15 +16,13 @@
 
 ### Reviewer guidance
 
-**Rejected because triamcinolone clearance (0.0001 mL/h/kg) and volume of distribution (0.0497 mL/kg) fall far outside physiological ranges, indicating a unit or scale extraction error in these parameters.**
+**The paper reports none of the model's key parameters.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted clearance of 0.0001 mL/h/kg and volume of distribution of 0.0497 mL/kg for triamcinolone are implausibly small, consistent with a unit or scale extraction error. A second reader also disagreed on the analyte, reading it as triamcinolone acetonide rather than triamcinolone, and did not extract the clearance or volume values at all; the half-life, AUC, and Cmax parameters had no values extracted. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has triamcinolone, the second reading triamcinolone acetonide; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:01.337460+00:00) predates the upstream re-run (2026-10-04 04:28:25.725053+00:00). Current validate status: `rejected`.
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `triamcinolone acetonide`, measured `triamcinolone`.
 
@@ -33,7 +31,7 @@ Beer PM et al., Intraocular concentration and pharmacok…, Ophthalmology (2003)
   ·  DOI: [10.1016/S0161-6420(02)01969-3](https://doi.org/10.1016/S0161-6420(02)01969-3)
 
 ## Model component
-<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Beer2003_reference" status="rejected" stale="true" population="elderly patients with macular edema" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Beer2003_reference" status="rejected" stale="false" population="elderly patients with macular edema" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

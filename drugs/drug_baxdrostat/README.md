@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Baxdrostat is under investigation in clinical trial NCT06344104 (A Phase III Study to Investigate the Efficacy and Safety of Baxdrostat in Asian Participants With Uncontrolled Hypertension on Two or More Medications Including Participants With Resistant Hypertension).
+Baxdrostat is an investigational antihypertensive drug candidate, classified among other antihypertensives for the cardiovascular system. It is still under investigation and is not yet an approved medicine; no marketing authorisation is recorded.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q123485866](https://www.wikidata.org/wiki/Q123485866) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

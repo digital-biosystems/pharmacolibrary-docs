@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Tedisamil (planned trade name Pulzium) is an investigational drug for atrial fibrillation and atrial flutter. It is currently being developed by Solvay and is currently under regulatory review by the United States Food and Drug Administration.
+Tedisamil is an antiarrhythmic agent, a class III heart-rhythm drug investigated for treating cardiac arrhythmias. It remains experimental and is not an approved medicine; no marketing authorisation is recorded.
 
-**Indication.** Investigated for use/treatment in arrhythmia, atrial fibrillation, and angina.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3982536](https://www.wikidata.org/wiki/Q3982536) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Atomoxetine is a selective norepinephrine (NE) reuptake inhibitor used for the treatment of attention deficit hyperactivity disorder (ADHD). Also known as the marketed product Strattera, atomoxetine is used with other treatment modalities (psychological, educational, cognitive behaviour therapy, etc) to improve developmentally inappropriate symptoms associated with ADHD including distractibility, short attention span, hyperactivity, emotional lability, and impulsivity. Although the underlying pathophysiology that causes ADHD remains unclear, evidence suggests that dysregulation in noradrenergic and dopaminergic pathways plays a critical role in suboptimal executive functioning within prefrontal regions of the brain, which are involved in attention and memory.[A178090] Atomoxetine has been shown to specifically increase NA and DA within the prefrontal cortex, but not in the nucleus accumbens (NA) or striatum.[A18262] This is beneficial in the treatment of ADHD as DA activation in the subcortical NA and striatum is associated with many stimulant-associated side effects and an increase in abuse potential, which is a limiting factor associated with the use of stimulant medications such as [DB00422], [DB01576], and [DB01255].[A18262] Use of non-stimulant medications such as atomoxetine is therefore thought to offer a clinical advantage over the use of traditional medications for the management of ADHD. More recently, positron emission tomography (PET) imaging studies in rhesus monkeys have shown that atomoxetine also binds to the serotonin transporter (SERT),[A178111] and blocks the N-methyl-d-aspartate (NMDA) receptor,[A18263] indicating a role for the glutamatergic system in the pathophysiology of ADHD. 
+Atomoxetine is a non-stimulant medicine used to treat attention deficit hyperactivity disorder, and has also been used for anxiety. It is an approved drug, widely used for ADHD, though it carries a boxed warning.
 
-Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and [DB01255]) are typically considered the most effective and first-line treatment for ADHD in adults and children as recommended by CADDRA (Canadian ADHD Resource Alliance).[L6037] However
-
-**Indication.** Atomoxetine is indicated for the treatment of attention deficit hyperactivity disorder (ADHD) in children and adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417240](https://www.wikidata.org/wiki/Q417240) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -29,15 +27,15 @@ Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 20:31 | 2:35 | 0/1/2 | 0/1/0 | 0/0/30 | 62,454/4,157 | ollama / qwen3.8:27b-mtp-q8_0 | 25 | 23/0 | 10/15 | 0 |
+| 2026-09-26 20:31 | 2:35 | 0/2/1 | 0/1/0 | 0/0/30 | 62,454/4,157 | ollama / qwen3.8:27b-mtp-q8_0 | 25 | 23/0 | 10/15 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cheng_2024_reference](drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md) | held back | 2-compartment general linear | 1 | Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tobin_2026_reference](drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md) | held back | 1-compartment, oral | 3 | Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q47 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Cheng_2024_reference](drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md) | — | general linear (no model) | 1 | Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Notsu_2020_reference](drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md) | — | parent + metabolite (no model) | 1 | Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and pharmac… (2020) | [10.1016/j.dmpk.2019.08.005](https://doi.org/10.1016/j.dmpk.2019.08.005) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tobin_2026_reference](drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md) | — | 1-compartment (no model) | 3 | Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168) |
 
 ## Pharmacodynamics (PD)
 
@@ -93,15 +91,15 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Atomoxetine is rapidly absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | blood | `TPMT` metabolism | paper PGx gene |
 | metabolism | brain | `COMT` target, `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | kidney | `COMT` target, `CYP3A5` metabolism | paper PGx gene |
 | metabolism | liver | `COMT` target, `CYP2C19` metabolism/substrate, `CYP2C9` metabolism, `CYP2D6` metabolism/substrate, `CYP3A5` metabolism, `TPMT` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A5` metabolism | paper PGx gene |
-| excretion | bile duct | <sub>“…to a lesser extent in the feces (less than 17% of the dose)…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly in the urine (greater than 80% of the dose)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -117,7 +115,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 238 matched, 73 returned
 - **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

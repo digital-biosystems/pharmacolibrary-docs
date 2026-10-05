@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** One of the catecholamine neurotransmitters in the brain.  It is derived from tyrosine and is the precursor to norepinephrine and epinephrine. Dopamine is a major transmitter in the extrapyramidal system of the brain, and important in regulating movement. A family of receptors (receptors, dopamine) mediate its action.
+Dopamine is a catecholamine used as a drug to treat conditions such as bradycardia, kidney disease, and neurogenic shock. It is an approved cardiac stimulant, given mainly in hospital settings for circulatory support.
 
-**Indication.** For the correction of hemodynamic imbalances present in the shock syndrome due to myocardial infarction, trauma, endotoxic septicemia, open-heart surgery, renal failure, and chronic cardiac decompensation as in congestive failure
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q170304](https://www.wikidata.org/wiki/Q170304) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

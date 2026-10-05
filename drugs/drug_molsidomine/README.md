@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Molsidomine is an orally active, long-acting vasodilator, which belongs to the class of medications known as syndnones. Interestingly, it is being studied as being a preventive measure in cerebral infarction [A31932].
+Molsidomine is a vasodilator drug that was used to treat heart conditions such as angina. It was once approved but has been withdrawn from use in many places, and is no longer authorised in the European Union.
 
-**Indication.** The indications for use of molsidomine include ischemic heart disease, angina, chronic heart failure, and pulmonary hypertension [L1370, L1371].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408132](https://www.wikidata.org/wiki/Q408132) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,8 +30,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Molsidomine hepatically metabolized to _linsidomine_…”</sub> | prose |
-| metabolism | small intestine | <sub>“…Oral absorption of Molsidomine is found to be 95.5%…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GUCY1A2 (inducer), GUCY1A2 (target), PDE5A (substrate).</sub>
 

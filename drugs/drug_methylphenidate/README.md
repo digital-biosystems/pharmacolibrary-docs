@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Methylphenidate is a central nervous system stimulant used most commonly in the treatment of Attention-Deficit/Hyperactivity Disorder (ADHD) and for narcolepsy. Also known as the marketed products Ritalin, Concerta, or Biphentin, methylphenidate is used with other treatment modalities (psychological, educational, cognitive behaviour therapy, etc) to improve the following group of developmentally inappropriate symptoms associated with ADHD: moderate-to-severe distractibility, short attention span, hyperactivity, emotional lability, and impulsivity. Long-acting formulations of psychostimulants such as methylphenidate, [DB01576], and [DB01255] are considered the most effective and widely used treatment for ADHD, and are considered first-line options for children, adolescents, and adults as recommended by CADDRA (Canadian ADHD Resource Alliance). [L6037] CADDRA recommends the use of methylphenidate due to long term studies, of over twenty years in duration, which show methylphenidate is safe and effective.  
+Methylphenidate is a central nervous system stimulant prescribed for attention deficit hyperactivity disorder and narcolepsy. It is an approved medicine, widely used for these conditions, though it carries a boxed warning.
 
-While its exact mechanism is unclear, methylphenidate (MPH) has been shown to act as a norepinephrine and dopamine reuptake inhibitor (NDRI), thereby increasing the presence of these neurotransmitters in the extraneuronal space and prolonging their action.[A177541] There is a dose-related effect of psychostimulants on receptor stimulation, where higher doses are shown to increase norepinephrine (NE) and dopamine (DA) efflux throughout the brain which can result in impaired cognition and locomotor-activating effects. In contrast, low doses are found to selectively activate NE and DA neurotransmission within the prefrontal cortex which is an area of the brain thought to play a prominent role in ADHD pathophysiology, thereby improving clinical efficacy and preventing side effects.[A177547] The lower doses used to treat ADHD are not associated with the locomotor-activating effects associated with higher doses and instead reduce movement, impulsivity, and increase cog
-
-**Indication.** Methylphenidate is indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD) in patients 6 years of age and older and for the treatment of narcolepsy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422112](https://www.wikidata.org/wiki/Q422112) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,11 +32,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…owing to extensive first-pass metabolism, bioavailability is low…”</sub> | prose |
-| absorption | small intestine | <sub>“…Methylphenidate is readily absorbed. Following oral administration…”</sub> | prose |
-| metabolism | liver | <sub>“…Methylphenidate is hepatically metabolized…”</sub> | prose |
-| excretion | bile duct | <sub>“…1%-3% in the feces in the form of metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…78%-97% of the dose is excreted in the urine…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CES1A1a (substrate), HTR1A (target), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Timolol is a nonselective beta-adrenergic antagonist given in an eye drop solution to reduce intraocular pressure, or pressure in the eyes.[L6724] It is also used in tablet form as a drug to treat hypertension.[L6727] Timolol was first approved by the FDA in 1978.[L6724] This drug is marketed by several manufacturers [L6736] and is an effective agent for the management of conditions such as open-angle glaucoma and hypertension.
+Timolol is a non-selective beta blocker used for high blood pressure, angina, after a heart attack, and as eye drops for glaucoma and raised eye pressure. It is an approved medicine and is listed as a WHO essential medicine, so it is widely used worldwide.
 
-**Indication.** Ophthalmic timolol is indicated for the treatment of increased intraocular pressure in patients with ocular hypertension or open-angle glaucoma. The oral form of this drug is used to treat high blood pressure.[L6724,L6727] In certain cases, timolol is used in the prevention of migraine headaches.[A179530,L6742]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413994](https://www.wikidata.org/wiki/Q413994) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -72,7 +72,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` formation/substrate, `CYP2C9` safety_allele, `CYP2D6` metabolism/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target).</sub>
 

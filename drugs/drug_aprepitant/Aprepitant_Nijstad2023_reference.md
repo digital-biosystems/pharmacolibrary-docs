@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;aprepitant&quot;,&quot;href&quot;:&quot;drugs/drug_aprepitant/&quot;},{&quot;label&quot;:&quot;Nijstad_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprepitant_Nijstad2023_reference&quot;,&quot;label&quot;:&quot;Nijstad_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aprepitant — `Aprepitant_Nijstad2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,16 +21,18 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — aprepitant: CL 5.83 L/h, Vnorm 86.8 L, MAT 1.78 h, Fab 83.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has aprepitant, the second reading aprepitant, fosaprepitant; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:09.565471+00:00) predates the upstream re-run (2026-10-04 13:43:25.120542+00:00). Current validate status: `extracted`.
 
 ## Citation
 Nijstad AL et al., A simple extemporaneous oral suspension…, Journal of oncology pharmac… (2023)
   ·  DOI: [10.1177/10781552221089243](https://doi.org/10.1177/10781552221089243)
 
 ## Model component
-<dbs-pgx drug="aprepitant" model-id="Aprepitant_Nijstad2023_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="aprepitant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="aprepitant" model-id="Aprepitant_Nijstad2023_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="aprepitant" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.
@@ -37,12 +40,10 @@ Nijstad AL et al., A simple extemporaneous oral suspension…, Journal of oncolo
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL 70kg (L/h) | `Q22` · CL | 5.83 | L/h | 1.6194444444444445e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row1:col1, tab_1:row1:col2 | — | 25.1 (None% RSE) |
-| V 70kg (L) | `Q352` · Vnorm | 86.8 | L | 0.0868 | [l] | not captured | llm (0.6) | tab_1:row2:col1, tab_1:row2:col2 | — | not captured |
+| V 70kg (L) | `Q61` · V | 86.8 | L | 0.0868 | [l] | not captured | llm (0.6) | tab_1:row2:col1, tab_1:row2:col2 | — | not captured |
 | MAT (h) | `Q73` · MAT | 1.78 | h | 6408.0 | [h] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2 | — | 58.9 (None% RSE) |
 | F1 (%) | `Q40` · Fab | 83 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2 | — | 33.0 (None% RSE) |
 
@@ -62,21 +63,14 @@ Nijstad AL et al., A simple extemporaneous oral suspension…, Journal of oncolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[v 70kg].parameter_id` | Q352 | Q61 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | aprepitant | aprepitant, fosaprepitant | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -90,13 +84,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2'] |
 | C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.83 | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.83 L/h | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 86.8 L | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -114,21 +109,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_modelica.zip" download>Aprepitant_Nijstad2023_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_matlab.zip" download>Aprepitant_Nijstad2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_matlab_simbio.zip" download>Aprepitant_Nijstad2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_sbml.zip" download>Aprepitant_Nijstad2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_cellml.zip" download>Aprepitant_Nijstad2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference.svg" alt="Aprepitant_Nijstad2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 150 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 150 mg parenteral (A04AD12) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference/Aprepitant_Nijstad2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Aprepitant_Nijstad2023_reference_params.json` · controls `Aprepitant_Nijstad2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 11:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:43 UTC</sub>

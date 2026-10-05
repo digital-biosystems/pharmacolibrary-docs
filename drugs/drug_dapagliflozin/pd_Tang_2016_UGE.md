@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dapagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/&quot;},{&quot;label&quot;:&quot;Tang_2016 \u00b7 PD urinary glucose excretion&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Sokolov_2023_HbA1c&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sokolov_2023_basal_insulin&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 basal insulin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_basal_insulin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sokolov_2023_glucose&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # urinary glucose excretion — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -18,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text to specify the mechanism by which dapagliflozin concentrations drive urinary glucose excretion, though the record indicates an Emax model with stimulation. The record lists two EC50 values of 2.72 ng/ml and 12.2 ng/ml for dapagliflozin.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tang_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -33,8 +36,6 @@ Tang W et al., Comparison of the pharmacokinetics and…, Diabetes, obesity & me
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EC50 | `Q321` · not captured | 2.72 | ng/ml | not captured | llm (not captured) | Tang_2016:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 12.2 | ng/ml | not captured | llm (not captured) | Tang_2016:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 8.12 | ng/ml | not captured | llm (not captured) | Tang_2016:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 7.75 | ng/ml | not captured | llm (not captured) | Tang_2016:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

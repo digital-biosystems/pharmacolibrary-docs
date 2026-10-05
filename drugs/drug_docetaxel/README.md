@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Docetaxel is a clinically well established anti-mitotic chemotherapy medication used for the treatment of different types of cancer, including breast, ovarian, and non-small cell lung cancer. Docetaxel is a complex diterpenoid molecule and a semisynthetic analogue of [paclitaxel].[A259676,L46466] Docetaxel reversibly binds to microtubulin with high affinity in a 1:1 stoichiometric ratio, allowing it to prevent cell division and promote to cell death.[A259676] Compared to paclitaxel, docetaxel is two times more potent as an inhibitor of microtubule depolymerization. Docetaxel binds to microtubules but does not interact with dimeric tubulin.[A259671]
+Docetaxel is a taxane chemotherapy drug used to treat several cancers, including breast, ovarian, lung, stomach, pancreatic, head and neck cancers and melanoma. It is widely used worldwide, is included on the WHO essential medicines list, and remains authorised in the European Union for several cancer types.
 
-The use of docetaxel may lead to udesired outcomes such as hepatic impairment, hematologic effects, enterocolitis and neutropenic colitis, hypersensitivity reactions, fluid retention, second primary malignancies, embryo-fetal toxicity, and tumor lysis syndrome.[L46466] Docetaxel was approved by the FDA in 1996 and is available in solution for injection for intravenous or parenteral administration.[A259676]
-
-**Indication.** Docetaxel is indicated as a single agent for the treatment of locally advanced or metastatic breast cancer after chemotherapy failure; and with doxorubicin and cyclophosphamide as adjuvant treatment of operable node-positive BC. It is also indicated as a single agent for locally advanced or metastatic non-small cell lung cancer (NSCLC) after platinum therapy failure; and with cisplatin for unresectable, locally advanced or metastatic untreated NSCLC. For the treatment of metastatic castration-resistant prostate cancer, docetaxel is indicated with prednisone. Docetaxel is also indicated with cisplatin and fluorouracil for untreated, advanced gastric adenocarcinoma, including the gastroesophageal junction, and with cisplatin and fluorouracil for induction treatment of locally advanced squamous cell carcinoma of the head and neck (SCCHN).[L46466]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420436](https://www.wikidata.org/wiki/Q420436) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | lung | `CYP1B1` binder | DrugBank actor |
 | metabolism | skin | `CYP1B1` binder | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…fecal excretion was the main elimination route…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` substrate | DrugBank actor |
 | excretion | liver | `ABCC2` substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` substrate | DrugBank actor |

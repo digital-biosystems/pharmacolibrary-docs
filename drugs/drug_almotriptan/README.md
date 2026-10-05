@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Almotriptan is a triptan drug for the treatment of migraine headaches. Almotriptan is in a class of medications called selective serotonin receptor agonists. It works by narrowing blood vessels in the brain, stopping pain signals from being sent to the brain, and stopping the release of certain natural substances that cause pain, nausea, and other symptoms of migraine. Almotriptan does not prevent migraine attacks.
+Almotriptan is a serotonin receptor agonist used to treat migraine attacks. It is an approved medicine, classified as a selective serotonin agonist antimigraine drug.
 
-**Indication.** For the treatment of acute migraine headache in adults
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409729](https://www.wikidata.org/wiki/Q409729) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,8 +33,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate, `FMO3` substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excreted via feces…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated primarily by renal excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR1B (target), HTR1D (target).</sub>
 

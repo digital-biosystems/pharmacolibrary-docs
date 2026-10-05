@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Hydroquinidine is under investigation in clinical trial NCT00927732 (Hydroquinidine Versus Placebo in Patients With Brugada Syndrome).
+Hydroquinidine is a class Ia antiarrhythmic, a heart-rhythm medicine developed for treating cardiac arrhythmias. It is not an approved medicine today; databases list it only as investigational, with no authorisation from the European Medicines Agency.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27106893](https://www.wikidata.org/wiki/Q27106893) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Uridine triacetate, formerly known as vistonuridine, is an orally active prodrug of the naturally occurring nucleoside uridine. It is used for the treatment of hereditary orotic aciduria (Xuriden), or for the emergency treatment of fluorouracil or capecitabine overdose or toxicity (Vistogard).  It is provided in the prodrug form as uridine triacetate as this form delivers 4- to 6-fold more uridine into the systemic circulation compared to equimolar doses of uridine itself. 
+Uridine triacetate is an approved medicine classified among other products for the alimentary tract and metabolism. It is an approved drug, though the available facts do not specify where it is marketed or how widely it is used.
 
-When used for the treatment or prevention of toxicity associated with fluorouracil and other antimetabolites, uridine triacetate is utilized for its ability to compete with 5-fluorouracil (5-FU) metabolites for incorporation into the genetic material of non-cancerous cells. It reduces toxicity and cell-death associated with two cytotoxic intermediates: 5-fluoro-2'-deoxyuridine-5'-monophosphate (FdUMP) and 5-fluorouridine triphosphate (FUTP). Normally, FdUMP inhibits thymidylate synthase required for thymidine synthesis and DNA replication and repair while FUTP incorporates into RNA resulting in defective strands. As a result, these metabolites are associated with various unpleasant side effects such as neutropenia, mucositis, diarrhea, and hand–foot syndrome. Like many other neoplastic agents, these side effects limit the doses of 5-FU that can be administered, which also affects the efficacy for treatment. By pre-administering with uridine (as the prodrug uridine triacetate), higher doses of 5-FU can be given allowing for improved efficacy and a reduction in toxic side effects [A18578]. It can also be used as a rescue therapy if severe side effects present within 96 hours after initiation of therapy. 
-
-Uridine triacetate is also used for the treatment of hereditary orotic aciduria, also known as uridine monophosphate synthase deficiency. This rare congenital autosomal recessive disorder of pyrimidine metabolism is caused by a defect in uridine monophosphate synthase (UMPS), a bifunctional e
-
-**Indication.** Marketed as the product Xuriden (FDA), uridine triacetate is indicated for the treatment of hereditary orotic aciduria.
-
-Marketed as the product Vistogard (FDA), uridine triacetate is indicated for the emergency treatment of adult and pediatric patients in the following situations: following a fluorouracil or capecitabine overdose regardless of the presence of symptoms; or who exhibit early-onset, severe or life-threatening toxicity affecting the cardiac or central nervous system, and/or early-onset, unusually severe adverse reactions (e.g., gastrointestinal toxicity and/or neutropenia) within 96 hours following the end of fluorouracil or capecitabine administration.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q22075857](https://www.wikidata.org/wiki/Q22075857) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Uridine can be excreted via the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Zuranolone is a neuroactive steroid that acts as a positive allosteric modulator of the GABA<sub>A</sub> receptors. Unlike other more common GABA<sub>A</sub> positive allosteric modulators on the market like benzodiazepines, zuranolone can modulate both synaptic and extrasynaptic GABA<sub>A</sub> conductance due to binding to a non-benzodiazepine site on the receptor.[A260776,A260786] Zuranolone was designed with a pharmacological profile of a neuroactive steroid in mind while also possessing a pharmacokinetics profile of an oral, once-daily dosing formulation.[A260791]
+Zuranolone is an antidepressant used to treat postpartum depression. It is approved, with one product authorised in the European Union.
 
-Zuranolone was approved by the FDA on August 4th, 2023, and it is currently the only approved treatment for women with postpartum depression. This approval was based on favorable results from 2 phase 3 clinical trials.[L47691]
-
-**Indication.** Zuranolone is indicated for the treatment of postpartum depression (PPD) in adults.[L47686]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q48862264](https://www.wikidata.org/wiki/Q48862264) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…41% in feces as metabolites…”</sub> | prose |
-| excretion | kidney | <sub>“…45% of the dose was recovered in urine as metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRG3 (modulator).</sub>
 

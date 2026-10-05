@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Dopexamine has been used in trials studying the diagnostic and treatment of Free Flap, Oral Cancer, Hypotension, Septic Shock, and Head and Neck Cancer.
+Dopexamine is a cardiac stimulant that acts as a dopamine agonist and beta-adrenergic agonist with vasodilator effects, used to support heart function. It has been withdrawn and is no longer in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5297311](https://www.wikidata.org/wiki/Q5297311) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A non-essential amino acid. It is found primarily in gelatin and silk fibroin and used therapeutically as a nutrient. It is also a fast inhibitory neurotransmitter.
+Glycine, a proteinogenic amino acid that also acts as a neurotransmitter, is used as an irrigating solution and has been used in peptic ulcer disease. It is an approved, generally available compound, also approved for veterinary use and considered a nutraceutical.
 
-**Indication.** Supplemental glycine may have antispastic activity. Very early findings suggest it may also have antipsychotic activity as well as antioxidant and anti-inflammatory activities.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q620730](https://www.wikidata.org/wiki/Q620730) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -81,8 +81,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed from the small intestine via an active transport mechanism.…”</sub> | prose |
-| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AGXT (substrate), AGXT2 (product), ALAS1 (substrate), ALAS2 (substrate), AMT (substrate), BAAT (substrate), DLD (substrate), GARS1 (substrate), GATM (substrate), GCAT (substrate), GCSH (substrate), GLDC (substrate), GLRA1 (target), GLRA2 (target), GLRA3 (target), GLRB (target), GLYAT (substrate), GLYATL1 (substrate), GLYATL2 (substrate), GNMT (substrate), GPR18 (substrate), GRIN2A (target), GRIN2C (target), GRIN3B (substrate), GSS (substrate), PIPOX (product), SHMT1 (product), SHMT2 (product), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC32A1 (substrate), SLC36A1 (substrate), SLC6A5 (substrate), SLC6A9 (substrate), Serine hydroxymethyltransferase (product).</sub>
 

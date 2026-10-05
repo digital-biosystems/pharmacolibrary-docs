@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Imidapril has been investigated for the treatment of Kidney, Polycystic, Autosomal Dominant.
+Imidapril is an ACE inhibitor used to treat arterial hypertension. It is not authorised in the European Union and is considered investigational in major drug databases, though it has been marketed in some countries.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1041804](https://www.wikidata.org/wiki/Q1041804) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

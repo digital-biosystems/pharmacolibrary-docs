@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Inositol_Phelps2013_estimate",
+ "molar_masses": {
+  "central.C": 0.1801559
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  4200.0,
+  8400.0
+ ],
+ "parameters": {
+  "Cl": 1.3202777777777777e-06,
+  "F": 1.0,
+  "MM": 0.1801559,
+  "VdPerKg": 0.0005115,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0042,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662038
+ },
+ "reference_peaks": {
+  "central.C": 0.11601394646175991
+ },
+ "stop_time": 97200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

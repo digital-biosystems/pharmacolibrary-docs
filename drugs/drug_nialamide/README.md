@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Withdrawn from the Canadian, US, and UK markets in 1963 due to interactions with food products containing tyrosine.
+Nialamide is a non-selective monoamine oxidase inhibitor that was used as an antidepressant. It has been withdrawn and is no longer in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2359711](https://www.wikidata.org/wiki/Q2359711) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

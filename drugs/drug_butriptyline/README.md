@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Butriptyline is a tricyclic antidepressant which has been used in Europe since 1974. It is the isobutyl side chain homologue of amitriptyline.
+Butriptyline is a tricyclic antidepressant that was used to treat depression and also has anxiolytic effects. It has been withdrawn and is no longer marketed.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q904524](https://www.wikidata.org/wiki/Q904524) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

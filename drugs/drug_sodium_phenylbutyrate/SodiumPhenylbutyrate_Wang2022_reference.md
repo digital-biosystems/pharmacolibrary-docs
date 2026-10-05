@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The sodium phenylbutyrate record was held back because the model builder invented an absorption rate constant (ka) not reported in the source, alongside defaulted Tlag.**
+**The sodium phenylbutyrate model was held back because the absorption rate constant ka (and Tlag) was never reported in the source and was left at library defaults, so the absorption input is not supported by the paper.**
 
-The record reports CL/F of 14.9 L/h and V of 33.2 L for sodium phenylbutyrate, but the source gives no ka or Tlag; library placeholder defaults were substituted for both, and the invented ka was judged not acceptable. The builder also assumed F=1 and Fm=1 without molar correction, giving an apparent parameterization with first-order depot input for extravascular dosing. The failed check returned 'invented_absorption: not acceptable'. Extracted — sodium phenylbutyrate: CL/F 14.9 L/h, V 33.2 L.
+The record reports only CL/F = 14.9 L/h and V = 33.2 L for sodium phenylbutyrate; ka is not given in the source and was defaulted, along with Tlag. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent parameterization with first-order depot input for extravascular dosing. The deviations check could not compute a comparison (ratio None), so the findings rest on the unreported ka default, which affects the simulated profile but is not supported by this paper. Extracted — sodium phenylbutyrate: CL/F 14.9 L/h, V 33.2 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -86,7 +86,7 @@ Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinet
 | T3_output_variable | not captured | pass | C_central (measured=sodium_phenylbutyrate) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -107,7 +107,7 @@ Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinet
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_modelica.zip" download>SodiumPhenylbutyrate_Wang2022_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_modelica.zip" download>SodiumPhenylbutyrate_Wang2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_fmi.zip" download>SodiumPhenylbutyrate_Wang2022_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_matlab.zip" download>SodiumPhenylbutyrate_Wang2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_matlab_simbio.zip" download>SodiumPhenylbutyrate_Wang2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

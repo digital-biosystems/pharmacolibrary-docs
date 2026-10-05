@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The macitentan record was rejected because its structure does not match the parent–metabolite topology: the model is a one-compartment enteral model whose output is the parent compartment, not the measured macitentan analyte compartment, and the aprocitentan metabolite is unlinked.**
+**The macitentan record was rejected because the model was built as a one-compartment enteral structure instead of the required parent–metabolite structure, its output was the parent compartment rather than the measured analyte, and apparent bioavailability assumptions (F=1, Fm=1, no molar correction) were deemed unacceptable.**
 
-The record declares a parent–metabolite structure with aprocitentan formed from macitentan, but the built model is a single enteral compartment (PK_1C_enteral) instead of a parent–metabolite structure, and the model output is the central parent compartment rather than the measured analyte compartment. The metabolite aprocitentan has no compartment (0 compartments), leaving it without a path from the dose. The record was also built from the abstract alone, so reported summary statistics (tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.92 h−1) stood in for a fitted model, with a lag time left at defaults and bioavailability assumed to be 1 without molar correction. A second reader additionally assigned an accumulation factor of 12.5 and an oral dose of 10 that this record lacks, and disagreed on the dose compound and primary analyte fields. Extracted — macitentan: tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.9 h−1.
+The structure is parent–metabolite (macitentan forming aprocitentan via a metabolism rate constant), but the built model used a single-compartment enteral structure with no metabolite compartment (aprocitentan has 0 compartments), so the model's output was the parent central compartment instead of the measured analyte macitentan. The builder also defaulted the lag time and assumed F=1, Fm=1 without molar correction, an apparent parameterization the adjudication ruled not acceptable. The record was built from the abstract alone, so reported summary statistics (tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.92 h−1) stood in for a fitted model, and a second reader disputed several extracted fields, including the dose compound, primary analyte, and the accumulation factor (12.5) that this record left null. Extracted — macitentan: tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.9 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has macitentan, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -136,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

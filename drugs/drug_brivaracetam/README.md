@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Brivaracetam is a racetam derivative of levetiracetam used in the treatment of partial-onset seizures. Brivaracetam binds SV2A with 20 times higher affinity than levetiracetam [A19184]. It is available under the brand name Briviact made by UCB. Briviact received FDA approval on February 19, 2016 [L760].
+Brivaracetam is an anticonvulsant medicine used to treat epilepsy. It is authorised in the European Union for epilepsy and is an approved drug.
 
-**Indication.** Used as adjunctive therapy for partial-onset seizures in patients 16 years of age or older.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408099](https://www.wikidata.org/wiki/Q408099) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,8 +34,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…&lt;1% excreted in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…&gt;95% excreted in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SCN1A (inhibitor), SV2A (unknown).</sub>
 

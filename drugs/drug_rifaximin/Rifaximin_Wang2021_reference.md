@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;rifaximin&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifaximin_Francis2019_reference&quot;,&quot;label&quot;:&quot;Francis_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2023_bacterial_colony_count_reduction&quot;,&quot;label&quot;:&quot;Wang_2023 \u00b7 bacterial colony count reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/pd_Wang_2023_bacterial_colony_count_reduction.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifaximin_Francis2019_reference&quot;,&quot;label&quot;:&quot;Francis_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifaximin — `Rifaximin_Wang2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ For rifaximin in mice with S. aureus-induced mastitis, the record carries two te
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:32.191739+00:00) predates the upstream re-run (2026-10-04 18:17:20.366894+00:00). Current validate status: `rejected`.
+
 ## Citation
 Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021)
   ·  DOI: [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369)
 
 ## Model component
-<dbs-pgx drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="false" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="rifaximin" model-id="Rifaximin_Wang2021_reference" status="rejected" stale="true" population="mice with S. aureus-induced mastitis" measured-compound="rifaximin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.
@@ -42,12 +44,12 @@ Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterina
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 | `Q63` · V1 | 2.15 | not captured | not captured | not captured | 3.22 | exact (1.0) | T4:row1:col1, T4:row1:col3, T4:row1:col4 | — | not captured |
-| V2 | `Q64` · V2 | 0.46 | not captured | not captured | not captured | 18.84 | exact (1.0) | T4:row2:col1, T4:row2:col3, T4:row2:col4 | — | not captured |
-| Cl1 | `Q22` · CL | 0.29 | not captured | not captured | not captured | 1.57 | llm (0.6) | T4:row3:col1, T4:row3:col3, T4:row3:col4 | — | not captured |
-| Cl2 | `Q30` · Q | 0.89 | not captured | not captured | not captured | 37.77 | special_case (0.95) | T4:row4:col1, T4:row4:col3, T4:row4:col4 | — | not captured |
+| V1 | `Q63` · V1 | 2.15 | L | 0.00215 | L | 3.22 | exact (1.0) | T4:row1:col1, T4:row1:col3, T4:row1:col4 | — | not captured |
+| V2 | `Q64` · V2 | 0.46 | L | 0.00046 | L | 18.84 | exact (1.0) | T4:row2:col1, T4:row2:col3, T4:row2:col4 | — | not captured |
+| Cl1 | `Q22` · CL | 0.29 | L/h | 8.055555555555555e-08 | L/h | 1.57 | llm (0.6) | T4:row3:col1, T4:row3:col3, T4:row3:col4 | — | not captured |
+| Cl2 | `Q30` · Q | 0.89 | L/h | 2.4722222222222224e-07 | L/h | 37.77 | special_case (0.95) | T4:row4:col1, T4:row4:col3, T4:row4:col4 | — | not captured |
 | α | `Q67` · λ1 | 2.38 | not captured | not captured | not captured | 35.39 | exact (1.0) | T4:row5:col1, T4:row5:col2, T4:row5:col3, T4:row5:col4 | — | not captured |
-| ß | `Q60` · t1/2β | 0.11 | not captured | not captured | not captured | 2.77 | llm (0.6) | T4:row6:col1, T4:row6:col2, T4:row6:col3, T4:row6:col4 | — | not captured |
+| ß | `Q60` · t1/2β | 0.11 | h | 396.0 | h | 2.77 | llm (0.6) | T4:row6:col1, T4:row6:col2, T4:row6:col3, T4:row6:col4 | — | not captured |
 | T1/2 (h) | `Q57` · t1/2z | 5.98 | h | 21528.0 | [h] | not captured | exact (1.0) | Wang_2021_table_3:row2:col1, Wang_2021_table_3:row2:col2, Wang_2021_table_3:row2:col3, Wang_2021_table_3:row2:col4, Wang_2021_table_3:row2:col5 | — | not captured |
 | MRT (h) | `Q53` · MRT | 6.66 | h | 23976.0 | [h] | not captured | exact (1.0) | Wang_2021_table_3:row3:col1, Wang_2021_table_3:row3:col2, Wang_2021_table_3:row3:col3, Wang_2021_table_3:row3:col4, Wang_2021_table_3:row3:col5 | — | not captured |
 | AUC24 (h·μg/g) | `Q19` · AUCt | 176.83 | h·μg/g | not captured | [[h] · [µg]] / [g] | not captured | llm (0.6) | Wang_2021_table_3:row4:col1, Wang_2021_table_3:row4:col2, Wang_2021_table_3:row4:col3, Wang_2021_table_3:row4:col4 | — | not captured |
@@ -64,6 +66,12 @@ Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterina
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_mismatch: 'AUC24 (h·μg/g)' → Q19 (unit '[time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - unit_dimension_mismatch: 'Cmax (μg/g)' → Q32 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
+- implicit units: 'V1' → L (from the popPK convention: 'V1 is a volume of distribution. In population PK studies, volumes are conventionally expressed in liters (L). The value ')
+- implicit units: 'V2' → L (from the popPK convention: 'V2 is a volume of distribution. In population PK studies, volumes are conventionally expressed in liters (L). The value ')
+- implicit units: 'Cl1' → L/h (from the popPK convention: 'Cl1 is a clearance parameter. In population PK studies, clearances are conventionally expressed in liters per hour (L/h)')
+- implicit units: 'Cl2' → L/h (from the popPK convention: 'Cl2 is an intercompartmental clearance. In population PK studies, intercompartmental clearances are conventionally expre')
+- implicit units: 'α' — the LLM proposed '1/h', whose dimension does not fit Q67; left unset
+- implicit units: 'ß' → h (from the popPK convention: "ß is described in the prompt as 't1/2β: Terminal half-life'. Half-lives are conventionally expressed in hours (h). The v")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rifaximin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -83,17 +91,20 @@ Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterina
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 6.38 | 6.305 | 0.9882 | 0.25 | reported t½β |
 | C5_dimension_Q19 | fail | [time] | h·μg/g | not captured | not captured | ['Wang_2021_table_3:row4:col1', 'Wang_2021_table_3:row4:col2', 'Wang_2021_table_3:row4:col3', 'Wang_2021_table_3:row4:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row4:col1', 'T4:row4:col3', 'T4:row4:col4'] |
 | C5_dimension_Q32 | fail | dimensionless | μg/g | not captured | not captured | ['Wang_2021_table_3:row5:col1', 'Wang_2021_table_3:row5:col2', 'Wang_2021_table_3:row5:col3', 'Wang_2021_table_3:row5:col4'] |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Wang_2021_table_3:row3:col1', 'Wang_2021_table_3:row3:col2', 'Wang_2021_table_3:row3:col3', 'Wang_2021_table_3:row3:col4', 'Wang_2021_table_3:row3:col5'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Wang_2021_table_3:row2:col1', 'Wang_2021_table_3:row2:col2', 'Wang_2021_table_3:row2:col3', 'Wang_2021_table_3:row2:col4', 'Wang_2021_table_3:row2:col5'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row4:col1', 'T4:row4:col3', 'T4:row4:col4'] |
-| C5_unit_missing_Q60 | fail | [time] | not captured | not captured | not captured | ['T4:row6:col1', 'T4:row6:col2', 'T4:row6:col3', 'T4:row6:col4'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['T4:row1:col1', 'T4:row1:col3', 'T4:row1:col4'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['T4:row2:col1', 'T4:row2:col3', 'T4:row2:col4'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['T4:row6:col1', 'T4:row6:col2', 'T4:row6:col3', 'T4:row6:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T4:row1:col1', 'T4:row1:col3', 'T4:row1:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T4:row2:col1', 'T4:row2:col3', 'T4:row2:col4'] |
 | C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['T4:row5:col1', 'T4:row5:col2', 'T4:row5:col3', 'T4:row5:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.29 | not captured | not captured | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.29 L/h | not captured | not captured | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.15 L | not captured | not captured | ['T4:row1:col1', 'T4:row1:col3', 'T4:row1:col4'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.46 L | not captured | not captured | ['T4:row2:col1', 'T4:row2:col3', 'T4:row2:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -118,4 +129,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 03:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 18:17 UTC</sub>

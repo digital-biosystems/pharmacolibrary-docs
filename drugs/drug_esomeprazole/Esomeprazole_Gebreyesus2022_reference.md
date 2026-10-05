@@ -53,6 +53,7 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=esomeprazole
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - unparsed cell Gebreyesus_2022_table_p4_1:row5:col2 = 'BOV: 23.1 (15.2, 29.9)'

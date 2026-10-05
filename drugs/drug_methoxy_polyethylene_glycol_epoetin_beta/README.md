@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Methoxy polyethylene glycol-epoetin beta is a chemically synthesised Erythropoiesis Stimulating Agent (ESA) with a longer half-life than erythropoietin. ESA is used to increase synthesis of red blood cells to  treat chronic kidney disease associated anemia.
+Methoxy polyethylene glycol-epoetin beta is a long-acting erythropoietin-type medicine used to treat anemia in people with chronic kidney disease. It is an approved antianemic medicine, though it carries a boxed warning.
 
-**Indication.** For the treatment of patients with anaemia associated with chronic kidney disease. Not a substitute for RBC transfusion if immediate correction of anemia is required.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6011913](https://www.wikidata.org/wiki/Q6011913) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

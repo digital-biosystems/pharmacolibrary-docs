@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Vinblastine derivative with antineoplastic activity against cancer. Major side effects are myelosuppression and neurotoxicity. Vindesine is used extensively in chemotherapy protocols (antineoplastic combined chemotherapy protocols).
+Vindesine is a vinca alkaloid that was used as an anticancer (antineoplastic) drug. It is no longer in use, having been withdrawn, and it was never authorised in the European Union.
 
-**Indication.** For the treatment of acute leukaemia, malignant lymphoma, Hodgkin's disease, acute erythraemia and acute panmyelosis
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416660](https://www.wikidata.org/wiki/Q416660) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

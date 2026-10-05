@@ -4,7 +4,7 @@
 
 # sorbitol — `Sorbitol_Molino1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,15 +22,17 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of functional liver plasma flow, as measured by d-sorbitol clearance: this record has 2.83, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sorbitol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:31.672010+00:00) predates the upstream re-run (2026-10-04 17:16:33.092729+00:00). Current validate status: `rejected`.
 
 ## Citation
 Molino G et al., Sorbitol clearance: a parameter reflect…, Research communications in… (1986)
 
 ## Model component
-<dbs-pgx drug="sorbitol" model-id="Sorbitol_Molino1986_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sorbitol" model-id="Sorbitol_Molino1986_reference" status="rejected" stale="true" population="male Wistar rats" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -42,7 +44,7 @@ Molino G et al., Sorbitol clearance: a parameter reflect…, Research communicat
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| functional liver plasma flow, as measured by D-sorbitol clearance | `Q25` · CLH | 2.83 | ml/min/100 g | 3.3016666666666665e-05 | [ml] / [[min] · [100g]] | not captured | llm_corrected (0.6) | Molino_1986:abstract | — | not captured |
+| functional liver plasma flow, as measured by D-sorbitol clearance | `Q369` · QH | 2.83 | ml/min/100 g | 3.3016666666666665e-05 | [ml] / [[min] · [100g]] | not captured | llm_corrected (0.6) | Molino_1986:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,31 +54,36 @@ Molino G et al., Sorbitol clearance: a parameter reflect…, Research communicat
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml/min/100 g' (CLH)
+- dropped unlinked row (NIL): 'D-sorbitol' — extend the ontology if this is a real PK parameter (source ['Molino_1986:abstract'])
+- unit_dimension_unknown: 'ml/min/100 g' (QH)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sorbitol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Molino_1986_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Molino_1986_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` | 2.83 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[functional liver plasma flow, as measured by d-sorbitol clearance]` | not captured | 2.83 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | sorbitol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | sorbitol | unknown | mismatch |
 
 </details>
 
@@ -117,4 +124,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 23:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 17:16 UTC</sub>

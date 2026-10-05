@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Theobromine (3,7-dimethylxanthine) is the principle alkaloid in Theobroma cacao (the cacao bean) and other plants. A xanthine alkaloid that is used as a bronchodilator and as a vasodilator. It has a weaker diuretic activity than theophylline and is also a less powerful stimulant of smooth muscle. It has practically no stimulant effect on the central nervous system. It was formerly used as a diuretic and in the treatment of angina pectoris and hypertension. (From Martindale, The Extra Pharmacopoeia, 30th ed, pp1318-9)
+Theobromine, a dimethylxanthine related to caffeine, has been used as a diuretic and bronchodilator for conditions such as obstructive airway disease. It is currently considered investigational and is not an approved medicine in the European Union.
 
-**Indication.** theobromine is used as a vasodilator, a diuretic, and heart stimulant. And similar to caffeine, it may be useful in management of fatigue and orthostatic hypotension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q206844](https://www.wikidata.org/wiki/Q206844) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

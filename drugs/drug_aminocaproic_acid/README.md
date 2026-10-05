@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** An antifibrinolytic agent that acts by inhibiting plasminogen activators which have fibrinolytic properties.
+Aminocaproic acid is an antifibrinolytic medicine used to treat or prevent bleeding. It is an approved drug, used mainly as a hemostatic agent to control excessive bleeding.
 
-**Indication.** For use in the treatment of excessive postoperative bleeding.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q255968](https://www.wikidata.org/wiki/Q255968) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,10 +33,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed rapidly following oral administration…”</sub> | prose |
-| metabolism | kidney | <sub>“…recovered in the urine as unchanged drug and 11% of the dose appears as the metabolite adi…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `AOX1` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Renal excretion is the primary route of elimination…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: LPA (other), PLAT (target), PLG (inhibitor).</sub>
 

@@ -18,13 +18,13 @@
 
 ### Reviewer guidance
 
-**Triamcinolone acetonide clearance of 0.0001 mL/h/kg and volume of 0.0497 mL/kg are physiologically implausible.**
+**Rejected: for triamcinolone acetonide in male Wistar rats, the extracted clearance (0.0001 mL/h/kg) and volume of distribution (0.0497 mL/kg) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record was built from the abstract alone, so summary statistics stand in for a fitted model. The extracted clearance and volume values fall outside the physiological window, indicating a unit or scale extraction error. A second reader could not confirm the elimination half-life value of 6.08 days. Extracted — triamcinolone: t1/2z 6.08 days, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The clearance of 0.0001 mL/h/kg and volume of 0.0497 mL/kg for triamcinolone acetonide fall far outside physiological windows, consistent with a unit or scale extraction error. The terminal elimination half-life of 6.08 days was read by one reader but not the other, and the second reader also disputed whether the measured compound is triamcinolone acetonide or triamcinolone. Extracted — triamcinolone: t1/2z 6.08 days, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has triamcinolone acetonide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Oishi M et al., Pharmacokinetic behavior of intravitrea…, Japanese journal of ophthal… (2008)

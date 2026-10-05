@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antibiotic that is produced by Stretomyces achromogenes. It is used as an antineoplastic agent and to induce diabetes in experimental animals.
+Streptozocin is a nitrosourea antibiotic used to treat cancers, mainly pancreatic cancer, and also colorectal cancer and Hodgkin's lymphoma. It is an approved anticancer drug, though not authorised centrally in the European Union, and is used mainly in specialised cancer treatment.
 
-**Indication.** For the treatment of malignant neoplasms of pancreas (metastatic islet cell carcinoma).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q257331](https://www.wikidata.org/wiki/Q257331) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` inducer, `CYP2E1` inducer | DrugBank actor |
 | metabolism | lung | `CYP1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer | DrugBank actor |
-| excretion | kidney | <sub>“…excreted by the kidney…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), OGA (inhibitor), SLC2A2 (target).</sub>
 

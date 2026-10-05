@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Sapropterin (tetrahydrobiopterin or BH4) is a cofactor in the synthesis of nitric oxide. It is also essential in the conversion of phenylalanine to tyrosine by the enzyme phenylalanine-4-hydroxylase; the conversion of tyrosine to L-dopa by the enzyme tyrosine hydroxylase; and conversion of tryptophan to 5-hydroxytryptophan via tryptophan hydroxylase.
+Sapropterin is used to treat phenylketonuria, a metabolic disorder. It is authorised in the European Union and is an approved medicine, though it has also been studied for other investigational uses.
 
-**Indication.** For the treatment of tetrahydrobiopterin (BH4) deficiency.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419808](https://www.wikidata.org/wiki/Q419808) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 

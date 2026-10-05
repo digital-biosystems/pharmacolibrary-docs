@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Droxidopa is a precursor of noradrenaline that is used in the treatment of Parkinsonism. It is approved for use in Japan and is currently in trials in the U.S. The racaemic form (dl-threo-3,4-dihydroxyphenylserine) has also been used, and has been investigated in the treatment of orthostatic hypotension. There is a deficit of noradrenaline as well as of dopamine in Parkinson's disease and it has been proposed that this underlies the sudden transient freezing seen usually in advanced disease.
+Droxidopa, a synthetic amino acid that the body converts into norepinephrine, is used to treat Parkinson's disease and multiple system atrophy. It is an approved medicine, though it also remains under investigation for other uses and carries a boxed warning.
 
-Though L-DOPS has been used in Japan and Southeast Asia already for some time, it is also currently in clinical trials at the phase III point in the United States (U.S.), Canada, Australia, and throughout Europe. Provided L-DOPS successfully completes clinical trials, it could be approved for the treatment of neurogenic orthostatic hypotension (NOH) as early as 2011. Additionally, phase II clinical trials for intradialytic hypotension are also underway. Chelsea Therapeutics obtained orphan drug status (ODS) for L-DOPS in the U.S. for NOH, and that of which associated with Parkinson's disease , pure autonomic failure, and multiple system atrophy, and is the pharmaceutical company developing it in that country.
-
-**Indication.** For treatment of neurogenic orthostatic hypotension (NOH) associated with various disorders including Multiple System Atrophy, Familial Amyloid Polyneuropathy, hemodialysis induced hypotension and Parkinson's Disease. Also investigated for use/treatment in neurologic disorders, nephropathy, blood (blood forming organ disorders, unspecified), and dizzy/fainting spells.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q907853](https://www.wikidata.org/wiki/Q907853) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +36,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), ADRB1 (target), ADRB2 (target), ADRB3 (target), DDC (substrate), PAH (inhibitor), SLC16A10 (inhibitor), SLC6A2 (substrate).</sub>
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Cenobamate, or YKP-3089, is an antiepileptic drug developed by SK Pharmaceuticals and used to treat partial onset seizures.[A188442,L10653] The exact mechanism of action has not been described in the literature, though it positively modulates GABA<sub>A</sub> and inhibits voltage gated sodium channels.[L10653]
+Cenobamate is an antiepileptic medicine used to treat epilepsy. It is authorised in the European Union and is also being investigated for further uses.
 
-Cenobamate was granted FDA approval on 21 November 2019.[L10653]
-
-**Indication.** Cenobamate is indicated for the treatment of partial onset seizures in adults.[L10653]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27286352](https://www.wikidata.org/wiki/Q27286352) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -63,13 +61,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Cenobamate is 88% orally bioavailable…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/substrate, `UGT2B7` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2A6` metabolism/substrate, `CYP2B6` inducer/inhibitor/metabolism/substrate, `CYP2C19` inhibitor/metabolism/substrate, `CYP2C8` inducer, `CYP2E1` metabolism/substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT2B7` metabolism/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT2B7` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…5.2% in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…87.8% eliminated in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GABRA1 (allosteric modulator), SCN1A (inhibitor), UGT2B4 (metabolism), UGT2B4 (substrate).</sub>
 

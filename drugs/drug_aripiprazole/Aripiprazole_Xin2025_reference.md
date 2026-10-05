@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The paper reports none of the model's key parameters.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 Independently confirmed by `gpt-oss:120b`.
 

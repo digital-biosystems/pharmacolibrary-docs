@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Nelarabine is an antineoplastic agent that is typically used to treat acute T-cell lymphoblastic leukemia, particularly T-cell acute lymphoblastic leukemia (T-ALL) and T-cell lymphoblastic lymphoma (T-LBL), in both adult and pediatric patients whose disease has not responded to or has relapsed following at least two chemotherapy regimens.[L40878] T-cell acute lymphoblastic leukemia and lymphoma are relatively rare T-cells malignancy, with only 20 to 25% of patients diagnosed with acute lymphoblastic leukemia and 1.7% of patients diagnosed with non-Hodgkin's lymphoma having this T-cells variation of the disease.[A2332] Due to the rarity of these T-cell malignancies, nelarabine was first granted orphan drug status and a fast-track designation by the FDA to address the unmet therapeutic needs of these cancers.[A2331]
+Nelarabine is a purine analogue anticancer drug used to treat precursor T-cell lymphoblastic leukemia and lymphoma. It is authorised in the European Union and is used mainly in specialist care for these rare T-cell blood cancers.
 
-Nelarabine is a purine nucleoside analog converted to its corresponding arabinosylguanine nucleotide triphosphate (araGTP), resulting in the inhibition of DNA synthesis and cytotoxicity.[L40878] Nelarabine preferentially accumulates in T-cells since T-cells have a higher expression of enzymes that convert nelarabine to the active purine analog form, making them effective against T-cells malignancies.[A2331,AA2334,A2335] Results from 2 phase 2 studies on adult and pediatric T-ALL/T-LBL indicated that nelarabine can yield a 13% complete response (CR) rate in pediatric patients and 18% in adult patients, albeit with serious hematological and neurological adverse events.[A258719]
-
-Nelarabine was first granted accelerated approval by the FDA on October 28, 2005, and was manufactured under the trademark name ARRANON by GlaxoSmithKline.[A15220] Subsequently, nelarabine was also approved by both Health Canada and European Medicines Agency in 2007 under the trademark name ATRIANCE.[L45874,L45879]
-
-**Indication.** ARRANON is indicated for the treatment of T-cell acute lymphoblastic leukemia (T-ALL) and T-cell lymphoblastic lymphoma (T-LBL) in adult and pediatric patients age 1 year and older whose disease has not responded to or has relapsed following treatment with at least two chemotherapy regimens.[L40878]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1216264](https://www.wikidata.org/wiki/Q1216264) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,7 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | distribution | blood | `SLC29A1` substrate | DrugBank actor |
 | distribution | liver | `SLC29A1` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…partially eliminated by the kidneys…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADA (substrate), DCK (substrate), DGUOK (substrate), DNA (incorporation into and destabilization), LIG1 (inhibitor), POLA1 (inhibitor), PRIM1 (inhibitor), RRM1 (inhibitor), SAMHD1 (metabolism).</sub>
 

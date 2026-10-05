@@ -8,6 +8,12 @@
 - **molar mass:** 491.627 g/mol (C30H35F2N3O) — DrugBank
 - **groups:** approved
 
+## About
+
+Lidoflazine is a calcium channel blocker and vasodilator used for cardiovascular conditions. It has been approved as a medicine, though it is not authorised in the European Union and does not appear to be widely used today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6543740](https://www.wikidata.org/wiki/Q6543740) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

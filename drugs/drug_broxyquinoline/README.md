@@ -12,19 +12,11 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 01:05 | 1:08 | 0/0/0 | 1/0/0 | 0/0/0 | 31,515/593 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/2 | 3/0 | 0 |
+| 2026-10-04 17:44 | 0:16 | 0/0/0 | 0/0/0 | 0/0/0 | 12,328/125 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/2 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Yuan_2019_Plaque_forming_units](drugs/drug_broxyquinoline/pd_Yuan_2019_Plaque_forming_units.md) | name ← hexachlorophene · inhibition effect | — | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Yuan_2019_SFTSV_NP_protein_expression](drugs/drug_broxyquinoline/pd_Yuan_2019_SFTSV_NP_protein_expression.md) | name ← hexachlorophene · inhibition effect | — | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Yuan_2019_SFTSV_S_segment_viral_genome_copy_number](drugs/drug_broxyquinoline/pd_Yuan_2019_SFTSV_S_segment_viral_genome_copy_number.md) | name ← hexachlorophene · inhibition effect | — | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -44,7 +36,7 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Fritzler_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic screening for anti-parasitic activity (IC50) and does not report any pharmacokinetic parameters for broxyquinoline. |
-| popPK | Kilgore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on biomolecular condensates and small molecule partitioning, and does not report pharmacokinetic parameters for broxyquinoline. |
+| popPK | Kilgore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on biomolecular condensates and does not involve broxyquinoline or pharmacokinetic parameters. |
 | PD | Kilgore_2024 | not_relevant | 0 | 0 | The paper focuses on the physicochemical partitioning of small molecules into biomolecular condensates and does not report any pharmacodynamic or exposure-response data for broxyquinoline. |
 | popPK | Yuan_2019 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study where broxyquinoline is identified as a hit compound, but it does not report any pharmacokinetic parameters (CL, V, etc.) for the drug. |
 | PD | Yuan_2019 | not_relevant | 3 | 2 | The paper reports an IC50 for hexachlorophene, but for broxyquinoline it only identifies it as an active compound in a screening library without providing specific numeric PD parameters (like IC50) or a dose-response curve in the provided text. |

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fosinopril is a phosphinic acid-containing ester prodrug that belongs to the angiotensin-converting enzyme (ACE) inhibitor class of medications. It is rapidly hydrolyzed to fosinoprilat, its principle active metabolite. Fosinoprilat inhibits ACE, the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII). ATII regulates blood pressure and is a key component of the renin-angiotensin-aldosterone system (RAAS). Fosinopril may be used to treat mild to moderate hypertension, as an adjunct in the treatment of congestive heart failure, and to slow the rate of progression of renal disease in hypertensive individuals with diabetes mellitus and microalbuminuria or overt nephropathy.
+Fosinopril is an ACE inhibitor used to treat high blood pressure and congestive heart failure. It is an approved medicine and remains in use, though it is not authorised in the European Union.
 
-**Indication.** For treating mild to moderate hypertension, use as an adjunct in treating congestive heart failure, and may be used to slow the rate of progression of renal disease in hypertensive individuals with diabetes mellitus and microalbuminuria or overt nephropathy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425293](https://www.wikidata.org/wiki/Q425293) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -49,7 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…the remainder is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC15A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor).</sub>

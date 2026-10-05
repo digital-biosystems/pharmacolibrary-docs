@@ -11,24 +11,9 @@
 
 ## About
 
-**Description.** Amikacin is a semi-synthetic aminoglycoside antibiotic that is derived from kanamycin A.[FDA label] Amikacin is synthesized by acylation with the l-(-)-γ-amino-α-hydroxybutyryl side chain at the C-1 amino group of the deoxystreptamine moiety of kanamycin A.[A39531]
+Amikacin is an aminoglycoside antibiotic used to treat serious bacterial infections, including gram-negative and Pseudomonas infections, sepsis, meningitis, endocarditis, and mycobacterial infections. It is widely used and appears on the WHO essential medicines list, with authorised products in the European Union; it is also approved for veterinary use.
 
-Amikacin's unique property is that it exerts activity against more resistant gram-negative bacilli such as Acinetobacter baumanii and Pseudomonas aeruginosa. Amikacin also exerts excellent activity against most aerobic gram-negative bacilli from the Enterobacteriaceae family, including Nocardia and some Mycobacterium (M. avium-intracellulare, M. chelonae, and M. fortuitum)[L4680]. M. avium-intracellulare (MAC) is a type of nontuberculous mycobacteria (NTM) found in water and soil. Symptoms of this disease include a persistent cough, fatigue, weight loss, night sweats, and shortness of breath and the coughing up of blood.[L4680]
-
-Several forms of amikacin are used currently, including an intravenous (IV) or intramuscular (IM) injection.[F1949] In September 2018, a liposomal inhalation suspension of this drug was approved by the FDA for the treatment of lung disease caused by Mycobacterium avium complex (MAC) bacteria in a small population of patients with the disease who do not respond to traditional treatment.[L4680,L4681]
-
-**Indication.** The amikacin sulfate injection is indicated in the short-term treatment of serious bacterial infections due to susceptible strains of gram-negative bacteria, including Pseudomonas species, Escherichia coli, species of indole-positive and indole-negative Proteus, Providencia species, Klebsiella-Enterobacter-Serratia species, as well as Acinetobacter (Mima-Herellea) species.[F1954]
-
-Clinical studies have shown amikacin sulfate injection to be effective in bacterial septicemia (including neonatal sepsis); in serious infections of the respiratory tract, bones and joints, central nervous system (including meningitis) and skin and soft tissue; intra-abdominal infections (including peritonitis); and in burns and postoperative infections (including post-vascular surgery).[F1954]
-
-Clinical studies have shown amikacin also to be effective in serious, complicated, and recurrent urinary tract infections due to the above organisms. Aminoglycosides, including amikacin, are not indicated in uncomplicated first-time episodes of urinary tract infections unless the causative organisms are not susceptible to antibiotics which are less toxic.[F1954]
-
-In September 2018, a new indication with a new dosage route was approved for this drug. Amikacin liposome inhalation suspension was approved for the treatment of lung disease caused by a group of bacteria, Mycobacterium avium complex (MAC) in a limited population of patients with the disease who do not respond to conventional treatment (refractory disease).[L4673] This indication is approved under accelerated approval based on achieving sputum culture conversion (defined as 3 consecutive negative monthly sputum cultures) by Month 6 of treatment. Clinical benefit has not yet been established.[Label]
-
-**Important notes regarding Staphylococcus and Sensitivity testing:**
-
-Staphylococcus aureus, including methicillin-resistant strains, is the principal Gram-positive organism sensitive to amikacin.
-The use of amikacin in the treatmen
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408529](https://www.wikidata.org/wiki/Q408529) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,8 +43,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…Rapidly absorbed after intramuscular administration…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated by the kidneys…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

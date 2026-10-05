@@ -4,7 +4,7 @@
 
 # desvenlafaxine — `Desvenlafaxine_Nichols2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — desvenlafaxine: CL 15 L/h.
+The values on this record come from other papers. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — desvenlafaxine: CL 15 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of venlafaxine clearance: this record has 15.0, the second reading none. That field does not shape the model.
 
@@ -29,7 +29,7 @@ Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmaco
   ·  DOI: [10.1002/cpdd.419](https://doi.org/10.1002/cpdd.419)
 
 ## Model component
-<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Nichols2018_reference" status="needs_review" stale="false" population="healthy adults and patients with major depressive disorder" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Nichols2018_reference" status="rejected" stale="false" population="healthy adults and patients with major depressive disorder" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -37,7 +37,7 @@ Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmaco
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -106,19 +106,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Parnaparin is an heparin of low molecular weight with antithrombotic effects.
+Parnaparin is a low-molecular-weight heparin used as an antithrombotic to prevent and treat blood clots. It is an approved medicine, used mainly in Italy and not widely elsewhere.
 
-**Indication.** Used in the prevention and treatment of venous thromboembolism (deep vein thrombosis and pulmonary embolism) and in the treatment of myocardial infarction.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3896308](https://www.wikidata.org/wiki/Q3896308) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

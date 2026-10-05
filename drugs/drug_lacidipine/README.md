@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Lacidipine is a lipophilic dihydropyridine calcium antagonist with an intrinsically slow onset of activity. Due to its long duration of action, lacidipine does not lead to reflex tachycardia [A31536]. It displays specificity in the vascular smooth muscle, where it acts as an antihypertensive agent to dilate peripheral arterioles and reduce blood pressure. Compared to other dihydropyridine calcium antagonists, lacidipine exhibits a greater antioxidant activity which may confer potentially beneficial antiatherosclerotic effects [A31540]. Lacidipine is a highly lipophilic molecule that interacts with the biological membranes. Through radiotracer analysis, it was determined that lacidipine displays a high membrane partition coefficient leading to accumulation of the drug in the membrane and slow rate of membrane washout [A31539]. When visualized by small-angle X-ray diffraction with angstrom resolution to examine its location within the membranes, lacidipine was found deep within the membrane's hydrocarbon core [A31539]. These results may explain the long clinical half-life of lacidipine [A31539]. 
+Lacidipine is a calcium channel blocker used to treat high blood pressure. It is an approved medicine, though not authorised centrally in the European Union, and has also been studied for other uses.
 
-In randomised, well-controlled trials, administration of daily single-dose lacidipine ranging from 2-6 mg demonstrated comparable antihypertensive efficacy similar to that of other long-acting dihydropyridine calcium antagonists, thiazide diuretics, atenolol (a beta-blocker) and enalapril (an ACE inhibitor) [A31536]. It is available as once-daily oral tablets containing 2 or 4 mg of the active compound commonly marketed as Lacipil or Motens. It is not currently FDA-approved.
-
-**Indication.** Indicated for the treatment of hypertension either alone or in combination with other antihypertensive agents, including β-adrenoceptor antagonists, diuretics, and ACE-inhibitors [L1126].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1163827](https://www.wikidata.org/wiki/Q1163827) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -32,13 +30,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…extensive first-pass metabolism in the liver…”</sub> | prose |
-| absorption | small intestine | <sub>“…rapidly absorbed from the gastrointestinal tract following oral administration…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…eliminated as metabolites in the faeces…”</sub> | prose |
-| excretion | kidney | <sub>“…the remainder as metabolites in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (target).</sub>
 

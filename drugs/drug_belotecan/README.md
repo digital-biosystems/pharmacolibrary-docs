@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Belotecan has been investigated for the treatment of Epithelial Ovarian Cancer.
+Belotecan is a topoisomerase I inhibitor investigated for treating ovarian cancer and small cell lung cancer. It is not an approved medicine and remains investigational, with no authorisation in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4884574](https://www.wikidata.org/wiki/Q4884574) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

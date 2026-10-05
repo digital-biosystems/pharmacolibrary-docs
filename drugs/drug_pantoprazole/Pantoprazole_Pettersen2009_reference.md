@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Pettersen_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Knebel2011_reference&quot;,&quot;label&quot;:&quot;Knebel_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pantoprazole — `Pantoprazole_Pettersen2009_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,13 +19,13 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 2, model 11.5); the covariate scenarios were not simulated.**
+**The pantoprazole paediatric model's simulated terminal half-life is 11.467454592412242 h versus the paper's 2.0 h (ratio 5.7337), and bioavailability (F) was left at library defaults instead of a paper estimate, so the record was held back.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
+Simulated as the paper dosed it, the two-compartment pantoprazole model gives a terminal half-life of 11.467454592412242 h against the paper's 2.0 h, a 5.7337-fold discrepancy beyond tolerance. The record also uses a default placeholder for F (bioavailability) rather than a value estimated in Pettersen_2009, which affects the simulated profile without support from the paper. In addition, the covariate effects defined in the record (age 0.320, CYP2C19 inhibitor 0.342, hepatic dysfunction 0.501) were not exercised in simulation — only the reference individual was simulated. A second reader also disputed several extracted values, reading CL as 5.28 (vs 5.08), V2 as 2.73 (vs 2.69), age effect as 0.316 (vs 0.320), and reporting a SIRS covariate effect of 0.377 absent from this record. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pantoprazole, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Pettersen G et al., Population pharmacokinetics of intraven…, British journal of clinical… (2009)
@@ -44,13 +44,13 @@ Pettersen G et al., Population pharmacokinetics of intraven…, British journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 5.08 | l h -1 | 1.4111111111111111e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2 | — | 27.0 (None% RSE) |
-| Vc (l) | `Q63` · V1 | 2.20 | l | 0.0022 | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2 | — | 39.5 (None% RSE) |
-| Q (l h -1 ) | `Q30` · Q | 1.1 | l h -1 | 3.055555555555556e-07 | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2 | — | 27.3 (None% RSE) |
-| V2 (l) | `Q64` · V2 | 2.69 | l | 0.00269 | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2 | — | 93.9 (None% RSE) |
-| theta_q314_age | `Q900` · theta_q314_age | 0.320 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row17:col1, tab_1:row17:col2 | — | not captured |
-| theta_q312_cyp2c19 | `Q900` · theta_q312_cyp2c19 | 0.342 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col1, tab_1:row18:col2 | — | not captured |
-| theta_q312_hepatic | `Q900` · theta_q312_hepatic | 0.501 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row19:col1, tab_1:row19:col2 | — | not captured |
+| CL (l h -1 ) | `Q22` · CL | 5.08 | l h -1 | 1.4111111111111111e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2 | — | not captured |
+| Vc (l) | `Q63` · V1 | 2.20 | l | 0.0022 | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2 | — | not captured |
+| Q (l h -1 ) | `Q30` · Q | 1.1 | l h -1 | 3.055555555555556e-07 | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2 | — | not captured |
+| V2 (l) | `Q64` · V2 | 2.69 | l | 0.00269 | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2 | — | not captured |
+| age_covariate_effect | `Q900` · age_covariate_effect | 0.320 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row17:col1, tab_1:row17:col2 | — | not captured |
+| cyp2c19_inhibitor_covariate_effect | `Q900` · cyp2c19_inhibitor_covariate_effect | 0.342 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col1, tab_1:row18:col2 | — | not captured |
+| hepatic_dysfunction_covariate_effect | `Q900` · hepatic_dysfunction_covariate_effect | 0.501 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row19:col1, tab_1:row19:col2 | — | not captured |
 | first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | 0.325 | h -1 | 9.027777777777779e-05 | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 | lag time ... for the DRT formulation | `Q83` · tlag | 2.5 | h | 9000.0 | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 
@@ -65,10 +65,17 @@ Pettersen G et al., Population pharmacokinetics of intraven…, British journal 
 - `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
+- table section iiv: 'IIV CL (%)' routed out of structural estimates ('Interindividual variability (IIV) §')
+- table section iiv: 'IIV Vc (%)' routed out of structural estimates ('Interindividual variability (IIV) §')
+- table section iiv: 'IIV Q (%)' routed out of structural estimates ('Interindividual variability (IIV) §')
+- table section iiv: 'IIV V2 (%)' routed out of structural estimates ('Interindividual variability (IIV) §')
+- table section residual_error: 'Residual additive error (SD in mg l -1 ) ¶' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Residual proportional error (%) §' routed out of structural estimates ('Residual variability')
 - column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- routed 'SIRS covariate effect' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'SIRS covariate effect' — extend the ontology if this is a real PK parameter (source ['tab_1:row16:col1', 'tab_1:row16:col2'])
+- covariate level 'Age covariate effect' → Q900:age_covariate_effect = 0.320 (linear_fractional on Q22)
+- covariate level 'CYP2C19 inhibitor covariate effect' → Q900:cyp2c19_inhibitor_covariate_effect = 0.342 (linear_fractional on Q22)
+- covariate level 'Hepatic dysfunction covariate effect' → Q900:hepatic_dysfunction_covariate_effect = 0.501 (linear_fractional on Q22)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pantoprazole
 - gap-filled Q49 (kabs) from McCann_2023's review values (primary lacked it)
 - gap-filled Q83 (tlag) from McCann_2023's review values (primary lacked it)
@@ -96,20 +103,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (8/16 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.429 (6/14 fields) | 8 |
 
 <details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss:120b` | `parameters[first-order absorption rate constants (k a ) ... for os]` | 0.325 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag time ... for the drt formulation]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_hepatic]` | not captured | 0.501 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q312_cyp2c19]` | 0.342 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q312_hepatic]` | 0.501 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q314_age]` | 0.320 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q31_cyp2c19]` | not captured | 0.342 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[age_covariate_effect].value` | 0.320 | 0.316 | mismatch |
+| `gpt-oss:120b` | `parameters[cl].value` | 5.08 | 5.28 | mismatch |
+| `gpt-oss:120b` | `parameters[hepatic_dysfunction_covariate_effect]` | 0.501 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[sirs covariate effect]` | not captured | 0.377 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_cl_hepatic]` | not captured | 0.495 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2].value` | 2.69 | 2.73 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | pantoprazole | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | pantoprazole | unknown | mismatch |
 
 </details>
 
@@ -127,6 +134,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 2.0 | 2.123 | 1.0615 | 0.25 | reported t½β |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
@@ -148,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=pantoprazole) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_beta | reference | fail | 2.0 | 11.467454592412242 | 5.7337 | h→SI vs simulated h |
 
 <details class="legend">
@@ -170,8 +178,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_modelica.zip" download>Pantoprazole_Pettersen2009_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_fmi.zip" download>Pantoprazole_Pettersen2009_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_modelica.zip" download>Pantoprazole_Pettersen2009_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_fmi.zip" download>Pantoprazole_Pettersen2009_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_matlab.zip" download>Pantoprazole_Pettersen2009_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_matlab_simbio.zip" download>Pantoprazole_Pettersen2009_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_sbml.zip" download>Pantoprazole_Pettersen2009_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -192,4 +200,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 06:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 11:01 UTC</sub>

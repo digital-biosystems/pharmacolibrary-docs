@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Bexagliflozin is a highly specific and potent sodium-glucose co-transporter 2 (SGLT2) inhibitor.[A256408,A256413,L44758] Similar to other SGLT2 inhibitors, bexagliflozin contains three basic moieties: glucose, two benzene rings and a methylene bridge.[A256413] SGLT2 is responsible for 60% to 90% of renal glucose re-uptake, and unlike other isoforms such as SGLT1, SGLT2 is mainly expressed in the kidney.[A256408] By inhibiting SGLT2, bexagliflozin reduces renal reabsorption of filtered glucose and increases urinary glucose excretion, which reduces blood glucose levels independently of insulin sensitivity.[A256423,L44758] In January 2023, bexagliflozin was approved by the FDA for the treatment of adults with type 2 diabetes. Its use is not recommended in patients with type 1 diabetes since it may increase their risk of diabetic ketoacidosis.[L44758]
+Bexagliflozin is a blood glucose lowering medicine of the gliflozin class, used to treat diabetes. It is an approved drug, though the available sources do not specify how widely it is used.
 
-**Indication.** Bexagliflozin is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.[L44758]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27277423](https://www.wikidata.org/wiki/Q27277423) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 16:22 | 7:47 | 0/0/0 | 0/0/0 | 0/0/0 | 55,215/2,111 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 0/0 | 7/0 | 0 |
+| 2026-10-04 22:22 | 1:25 | 0/0/0 | 0/0/0 | 0/0/0 | 47,811/1,125 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 0/6 | 7/0 | 0 |
 
 ## popPK records
 
@@ -40,8 +40,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `UGT1A1` substrate, `UGT1A9` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…mainly eliminated through feces…”</sub> | prose |
-| excretion | kidney | <sub>“…40.5% was recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | kidney | `SLC5A2` inhibitor | DrugBank actor |
 
 <details class="legend">
@@ -63,32 +63,32 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Patel_2026.pdf` | Patel Y et al., Pharmacokinetics of Bexagliflozin After…, Journal of veterinary pharm… (2026) | popPK | 10 | [10.1111/jvp.70072](https://doi.org/10.1111/jvp.70072) | [41964569](https://pubmed.ncbi.nlm.nih.gov/41964569) | The study reports quantitative pharmacokinetic parameters (CL, V, t1/2, F) for bexagliflozin in cats, with all numeric values explicitly present in the text. |
+| `Patel_2026.pdf` | Patel Y et al., Pharmacokinetics of Bexagliflozin After…, Journal of veterinary pharm… (2026) | popPK | 10 | [10.1111/jvp.70072](https://doi.org/10.1111/jvp.70072) | [41964569](https://pubmed.ncbi.nlm.nih.gov/41964569) | The study reports quantitative non-compartmental pharmacokinetic parameters (CL, V, t1/2, F) for bexagliflozin in cats, with all numeric values explicitly provided in the text. |
 | `Zhang_2020.pdf` | Zhang W et al., Metabolism and disposition of the SGLT2…, Xenobiotica; the fate of fo… (2020) | pgx | 7 | [10.1080/00498254.2019.1654634](https://doi.org/10.1080/00498254.2019.1654634) | [31432741](https://www.ncbi.nlm.nih.gov/pubmed/31432741) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-15T16:21:32.792991+00:00</sub>
+<sub>queue written 2026-10-04T22:21:58.927334+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Anderson_2025 | irrelevant | 0 | 0 | The paper studies the drug AZD1656 (a glucokinase activator) in a mouse model of diabetic cardiomyopathy and does not mention bexagliflozin or report any pharmacokinetic parameters. |
-| popPK | Cheng_2025 | irrelevant | 0 | 0 | The paper studies brensocatib (AZD7986) in a stroke model and does not mention bexagliflozin or report any pharmacokinetic parameters. |
-| popPK | Cook_2025 | irrelevant | 0 | 0 | The paper is a clinical review of SGLT2 inhibitors in cats that discusses efficacy and safety but does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for bexagliflozin. |
-| popPK | Davies_2010 | irrelevant | 0 | 0 | The paper is a review of ticagrelor, a different drug, and contains no information on bexagliflozin. |
-| popPK | Giruzzi_2024 | irrelevant | 0 | 0 | The evidence contains only the drug name with no pharmacokinetic data, study details, or numeric parameters. |
-| popPK | Hadd_2023 | irrelevant | 0 | 0 | The paper is a clinical safety and efficacy trial in cats, not a pharmacokinetic study, and does not report quantitative disposition parameters (CL, V, ka, etc.) for bexagliflozin. |
-| popPK | Juricek_1991 | irrelevant | 0 | 0 | The paper studies the mutagenicity of azido sugars in Salmonella and does not involve bexagliflozin or pharmacokinetics. |
-| popPK | Li_2024 | irrelevant | 0 | 0 | The paper is a study on pulmonary hypertension and immune mechanisms in mice, with no mention of bexagliflozin or pharmacokinetic parameters. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a study on aggressive variant prostate cancer (AVPC) and does not mention bexagliflozin or report any pharmacokinetic parameters. |
+| popPK | Anderson_2025 | irrelevant | 0 | 0 | The study investigates the cardiometabolic and immunomodulatory effects of AZD1656 in mice and does not report pharmacokinetic parameters for bexagliflozin. |
+| popPK | Cheng_2025 | irrelevant | 0 | 0 | The paper studies brensocatib (AZD7986) in a mouse stroke model and does not mention bexagliflozin or report any pharmacokinetic parameters for it. |
+| popPK | Cook_2025 | irrelevant | 0 | 0 | The paper is a clinical review of SGLT2 inhibitors in cats and does not report any quantitative pharmacokinetic parameters (CL, V, ka, etc.) for bexagliflozin. |
+| popPK | Davies_2010 | irrelevant | 0 | 0 | The paper is a review of ticagrelor, a different drug, and contains no data for bexagliflozin. |
+| popPK | Giruzzi_2024 | irrelevant | 0 | 0 | no_text gate: only 13 chars of text extracted (&lt; 400) |
+| popPK | Hadd_2023 | irrelevant | 0 | 0 | The study is a clinical trial evaluating safety and efficacy (glucose levels, clinical signs) rather than pharmacokinetic disposition parameters (CL, V, ka). |
+| popPK | Juricek_1991 | irrelevant | 0 | 0 | The paper studies the mutagenicity of azido sugars in Salmonella typhimurium and does not involve bexagliflozin or pharmacokinetics. |
+| popPK | Li_2024 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study on pulmonary hypertension in mice and does not involve bexagliflozin or pharmacokinetic parameters. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a study on aggressive variant prostate cancer (AVPC) and does not mention bexagliflozin or report any pharmacokinetic parameters for it. |
 | popPK | Mahoney_2025 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on cycloaddition reactions and does not report any pharmacokinetic parameters for bexagliflozin. |
 | popPK | Pop_1989 | irrelevant | 0 | 0 | The paper is a clinical oncology study on squamous cell carcinoma treatment outcomes and contains no pharmacokinetic data for bexagliflozin. |
-| popPK | Robertson_2018 | irrelevant | 0 | 0 | The paper is a journal club review of studies on nerve sheath tumours and selumetinib, containing no pharmacokinetic data for bexagliflozin. |
-| popPK | Sato_2025 | irrelevant | 0 | 0 | The paper is a review of targeted therapies for Neurofibromatosis Type 1 and does not contain any pharmacokinetic data or mention of bexagliflozin. |
+| popPK | Robertson_2018 | irrelevant | 0 | 0 | The paper discusses nerve sheath tumours and a phase 1 trial of selumetinib, with no mention of bexagliflozin or its pharmacokinetics. |
+| popPK | Sato_2025 | irrelevant | 0 | 0 | The paper is a review of targeted therapies for Neurofibromatosis Type 1 and does not contain any pharmacokinetic data for bexagliflozin. |
 | popPK | Siegel_2026 | irrelevant | 0 | 0 | The paper studies the hematologic effects of selumetinib, not the pharmacokinetics of bexagliflozin. |
-| popPK | Staedt_1989 | irrelevant | 0 | 0 | The paper concerns hemorheology in cerebrovascular disorders and does not involve bexagliflozin or pharmacokinetic parameters. |
+| popPK | Staedt_1989 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Susi_2025 | not_relevant | 1 | 0 | The paper is a clinical review that lists pharmacokinetic parameters (half-life, bioavailability) and qualitative clinical effects for bexagliflozin, but it does not report any numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response curves. |
-| popPK | Zeng_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on NSCLC and AZD-9291 resistance, with no mention of bexagliflozin or pharmacokinetic parameters. |
+| popPK | Zeng_2025 | irrelevant | 0 | 0 | The paper investigates the molecular mechanism of METTL16-mediated GPX4 m6A modification in non-small-cell lung cancer resistance to AZD-9291 and contains no data regarding bexagliflozin. |
 | PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper describes general metabolism and disposition of bexagliflozin in animals and humans but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full paper content, so no numeric PD parameters or exposure-response relationships can be extracted. |
 | PD | unknown_2025 | not_relevant | 1 | 0 | The text is a title for a review article on noninsulin drugs for type 2 diabetes and does not contain specific pharmacodynamic data, models, or numeric parameters for bexagliflozin. |

@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Dihydrocodeine is an opioid analgesic used as an alternative or adjunct to codeine to treat moderate to severe pain, severe dyspnea, and cough. 
+Dihydrocodeine is an opioid painkiller used to treat pain and cough. It is an approved medicine, available alone and in combination with non-opioid analgesics, and is used fairly widely in some countries.
 
-It is semi-synthetic, and was developed in Germany in 1908 during an international search to find a more effective antitussive agent to help reduce the spread of airborne infectious diseases such as tuburculosis. It was marketed in 1911.
-
-**Indication.** Dihydrocodeine is used for the treatment of moderate to severe pain, including post-operative and dental pain [2]. It  can also be used to treat chronic pain [1], breathlessness and coughing. 
-
-In heroin addicts, dihydrocodeine has been used as a substitute drug, in doses up to 2500mg/day to treat addiction. [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2014322/]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q377270](https://www.wikidata.org/wiki/Q377270) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -38,7 +34,7 @@ In heroin addicts, dihydrocodeine has been used as a substitute drug, in doses u
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Webb_2001_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md) | ▶ model + simulator | parent 1-cmt + liver + 1 metabolite (1-cmt) | 9 | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: unreported model parameter default(s): q12/q21 (hepatic flow, 90 L/h)</sub><br><sub>route_to: `scholar`</sub> | [Webb_2001_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md) | ▶ model + simulator | parent 1-cmt + liver + 1 metabolite (1-cmt) | 9 | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -53,12 +49,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…pre-systemic metabolism by the liver…”</sub> | prose |
-| absorption | small intestine | <sub>“…poor gastrointestinal absorption…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Renal elimination and urinary excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRM1 (target).</sub>
 

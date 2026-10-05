@@ -8,6 +8,12 @@
 - **molar mass:** 146.19 g/mol (C6H14N2O2) — DrugBank
 - **groups:** investigational
 
+## About
+
+Meldonium is a cardiac therapy agent developed for heart-related conditions such as coronary heart disease. It is considered investigational in major Western databases and is not authorised in the European Union; it is used mainly in Eastern Europe and Russia.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4289752](https://www.wikidata.org/wiki/Q4289752) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

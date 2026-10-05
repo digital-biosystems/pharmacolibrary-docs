@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Ethyl biscoumacetate is a courmarin that is used as an anticoagulant. It has actions similar to those of Warfarin. (From Martindale, The Extra Pharmacopoeia, 30th ed, p226)
+Ethyl biscoumacetate is a vitamin K antagonist that was used as an anticoagulant to prevent or treat blood clots. It is no longer used, as it was withdrawn from the market.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q106042078](https://www.wikidata.org/wiki/Q106042078) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

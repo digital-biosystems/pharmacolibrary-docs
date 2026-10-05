@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Busulfan is a bifunctional alkylating agent, having a selective immunosuppressive effect on bone marrow. It is not a structural analog of the nitrogen mustards. It has been used in the palliative treatment of chronic myeloid leukemia (myeloid leukemia, chronic), but although symptomatic relief is provided, no permanent remission is brought about. According to the Fourth Annual Report on Carcinogens (NTP 85-002, 1985), busulfan is listed as a known carcinogen.
+Busulfan is an alkylating anticancer drug used to treat blood cancers such as chronic and acute myeloid leukemia, and as part of conditioning before stem cell transplantation. It remains an approved medicine, with an authorised product in the European Union, though it carries a boxed warning and is used mainly in specialist settings.
 
-**Indication.** For use in combination with cyclophosphamide as a conditioning regimen prior to allogeneic hematopoietic progenitor cell transplantation for chronic myelogenous  (myeloid, myelocytic, granulocytic) leukemia (FDA has designated busulfan as an orphan drug for this use). It is also used as a component of pretransplant conditioning regimens in patients undergoing bone marrow transplantation for acute myeloid leukemia and nonmalignant diseases.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q348922](https://www.wikidata.org/wiki/Q348922) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -51,12 +51,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | brain | <sub>“…crosses the blood-brain-barrier…”</sub> | prose |
-| absorption | small intestine | <sub>“…Completely absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C9` safety_allele, `CYP3A4` substrate, `GSTM1` substrate/unknown, `GSTP1` substrate/unknown | DrugBank actor |
 | metabolism | lung | `GSTP1` substrate/unknown | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…approximately 30% of the radioactivity was excreted into the urine over 48 hours…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), GSTA1 (metabolism), GSTA1 (substrate), GSTA2 (substrate), MGST2 (substrate).</sub>
 

@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Eletriptan is a second generation triptan drug developed by Pfizer Inc for the treatment of migraine headaches.
+Eletriptan is a serotonin receptor agonist used to treat migraine attacks. It is an approved medicine, available as an antimigraine drug in the selective serotonin agonist class.
 
-**Indication.** For the acute treatment of migraine with or without aura in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415032](https://www.wikidata.org/wiki/Q415032) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

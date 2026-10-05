@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Drotrecogin alfa is activated human protein C that is synthesized by recombinant DNA technology. It is a glycoprotein of approximately 55 kilodalton molecular weight, consisting of a heavy chain and a light chain linked by a disulfide bond. Drotrecogin alfa was withdrawn from the market after a major study indicated that it was not effective in improving outcomes in patients with sepsis.
+Drotrecogin alfa (activated) was used to treat severe sepsis. It has been withdrawn from the market, including in the European Union, and is no longer available.
 
-**Indication.** For reduction of mortality in patients with severe sepsis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412888](https://www.wikidata.org/wiki/Q412888) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

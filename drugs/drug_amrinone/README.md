@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Amrinone (or inamrinone) is a type 3 pyridine phosphodiesterase inhibitor. It is used in the treatment of congestive heart failure.
+Amrinone (inamrinone) is a phosphodiesterase inhibitor and cardiotonic that was used to treat congestive heart failure and dilated cardiomyopathy. It has been withdrawn, so it is no longer in clinical use.
 
-**Indication.** Used in the treatment of congestive heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422724](https://www.wikidata.org/wiki/Q422724) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
-| excretion | kidney | <sub>“…excretion in man is via the urine…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PDE3A (inhibitor), PDE3B (inhibitor), PDE4A (inhibitor), TNF (inhibitor).</sub>
 

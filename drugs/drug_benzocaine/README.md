@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Benzocaine is an ester local anesthetic that acts by preventing transmission of impulses along nerve fibers and at nerve endings.[A231219] It is commonly used for local anesthesia in many over the counter products.[L32454,L32459,L32464] Benzocaine was first used for local anesthesia in dentistry.[A231259]
+Benzocaine is a topical local anesthetic used to relieve pain and itching in conditions such as hemorrhoids, burns, mouth ulcers, ear infections, and sore throat. It remains widely used in over-the-counter topical products such as skin, throat, and hemorrhoid preparations.
 
-**Indication.** Benzocaine is indicated for local anesthesia in dentistry, minor trauma, and as preparation for infiltrative anesthesia.[A231219] Benzocaine products are indicated for topical anesthesia in a wide variety of conditions including skin irritation,[L32454] oral pain,[L32459] and hemorrhoids.[L32464]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422745](https://www.wikidata.org/wiki/Q422745) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

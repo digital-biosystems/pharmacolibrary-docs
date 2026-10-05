@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Dextran is a polysaccharide that differs from others in that its glucose units are joined together 1:6 glucoside links. The main chain of glucose has short branches at frequent intervals which are probably joined by 1:3 and 1:4 glucoside links. The chains can be composed of about 200,000 glucose units.[A32011] Many bacteria, like _Leuconostoc_, can synthesize dextran from sucrose, and this activity is used commercially to obtain dextran.[T121]
+Dextran, a glucose polymer, is used as a plasma substitute and as an anticoagulant. It is an approved medicine, also approved for veterinary use, and some forms remain investigational.
 
-Dextran 40 is a sterile, nonpyrogenic preparation of low molecular weight dextran (average mol. wt. 40,000) in 5% Dextrose Injection or 0.9% Sodium Chloride Injection. It is administered by intravenous infusion.
-
-Dextran 75 is a complex branched glucan with an average molecular weight 75000 Daltons. It is produced from certain bacteria that with α-1,6 glycosidic linkages between glucose molecules and α-1,3 linkages between branches. When labelled with technetium Tc99m, dextran 75 is intravenously administered as an imaging agent to detect and diagnose conditions in the vascular compartment such as pericardial effusion or ventricular aneurysm.
-
-**Indication.** Dextran is used as the restoration of blood mass during surgical interventions if there is hypovolemia due to trauma or dehydration. It is as well used after the presence of hemorrhage in cases of blood loss to a level inferior to 15% of the blood mass, if compatibility test cannot be completed or when blood lots need to be tested for pathogen detection. Dextran is also used for the prevention of profound postoperative venous thrombosis.[L1455]
-
-Dextran as well presents ophthalmic applications as solutions or ointments for the temporary relief of xerophthalmia or minor ocular irritations.[L1461]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423123](https://www.wikidata.org/wiki/Q423123) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,8 +31,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…highly metabolized in the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly secreted unchanged in the urine in a ratio of 80% of the administered dose…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

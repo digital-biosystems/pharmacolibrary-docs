@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Teniposide is a semisynthetic derivative of podophyllotoxin that exhibits antitumor activity. Teniposide inhibits DNA synthesis by forming a complex with topoisomerase II and DNA. This complex induces breaks in double stranded DNA and prevents repair by topoisomerase II binding. Accumulated breaks in DNA prevent cells from entering into the mitotic phase of the cell cycle, and lead to cell death. Teniposide acts primarily in the G2 and S phases of the cycle.
+Teniposide is an anticancer drug used to treat acute lymphocytic leukemia and other lymphoblastic leukemias, as well as small cell lung cancer. It is an approved antineoplastic agent, a podophyllotoxin derivative that acts as a topoisomerase II inhibitor, but it is not authorised in the European Union and is used only in limited settings.
 
-**Indication.** Teniposide is used for the treatment of refractory acute lymphoblastic leukaemia
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417555](https://www.wikidata.org/wiki/Q417555) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,8 +41,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal excretion of radioactivity within 72 hours after dosing accounted for 0% to 10% of t…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in urine as parent drug…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC6 (substrate), TOP2A (inhibitor), TOP2B (modulator).</sub>
 

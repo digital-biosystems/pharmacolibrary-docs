@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Benzydamine (also known as Tantum Verde or Difflam), available as the hydrochloride salt, is a locally-acting nonsteroidal anti-inflammatory drug (NSAID) with local anaesthetic and analgesic properties. It is used topically for pain relief and anti-inflammatory treatment of the mouth, throat, or muscoskeletal system.
+Benzydamine is a locally acting non-steroidal anti-inflammatory drug with pain-relieving and numbing effects, used to treat inflammatory conditions of the mouth and throat such as pharyngitis. It is an approved medicine, applied locally in preparations for the mouth, throat, vagina, and skin, and is not authorised centrally in the European Union.
 
-Although the indazole analogue benzydamine is a non-steroidal anti-inflammatory drug (NSAID), it has various physicochemical properties and pharmacologic activities that are different from those of traditional aspirin-like NSAIDs but facilitate benzydamine's mechanism of action as an effective locally-acting NSAID with local anaesthetic and analgesic properties. Moreover, unlike aspirin-like NSAIDs which are acids or metabolised to acids, benzydamine is in fact a weak base.
-
-**Indication.** Available predominantly as a liquid mouthwash, oromucosal spray, or topical cream, benzydamine is most frequently employed as a locally acting analgesic and anti-inflammatory treatment for the relief of painful inflammatory conditions. 
-
-When formulated as a mouthwash or spray, benzydamine may be used to treat traumatic conditions like pharyngitis following tonsillectomy or the use of a naso-gastric tube, inflammatory conditions like pharyngitis, aphthous ulcers and oral ulceration due to radiation therapy, dentistry operations and procedures, or more general conditions like sore throat, sore tongue, sore gums, mouth ulcers, or discomfort caused by dentures. [L1121] 
-
-When used as a topical cream, benzydamine may be employed to relieve symptoms associated with painful inflammatory conditions of the muscolo-skeletal system including acute inflammatory disorders such as myalgia and bursitis or traumatic conditions like sprains, strains, bruises, sore muscles, stiff joints, or even the after-effects of fractures. [ L1123]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q793143](https://www.wikidata.org/wiki/Q793143) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…the systemic absorption of topically applied benzydamine is relatively low…”</sub> | prose |
-| absorption | small intestine | <sub>“…Oral doses of benzydamine are well absorbed…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted unchanged in the urine…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
 

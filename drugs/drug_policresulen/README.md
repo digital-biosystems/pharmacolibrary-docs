@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13492](https://go.drugbank.com/drugs/DB13492) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Policresulen is an antiseptic and disinfectant used on the skin and as a gynecological antiinfective. It is not an approved medicine in major databases and is currently classed as investigational.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q906883](https://www.wikidata.org/wiki/Q906883) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

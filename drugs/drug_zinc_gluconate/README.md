@@ -10,17 +10,9 @@
 
 ## About
 
-**Description.** Zinc gluconate is a zinc salt of gluconic acid comprised of two gluconic acid molecules for each zinc cation (2+). Zinc gluconate is a generally recognized as safe (GRAS) substance by FDA [L2081]. It is available as a trace mineral supplement and over the counter as a lozenge form for a reduced duration of common colds and with decreased symptom severity.
+Zinc gluconate is a zinc supplement used for the common cold. It is an approved mineral supplement, also vet-approved, and is used widely as an over-the-counter product.
 
-Although it has been nasally administered for treating the common cold, this route of administration has been associated with some cases of anosmia [A32414], [A32409], [A32410], [L2080].
-
-Studies show that zinc may be better absorbed in humans in the gluconate form [A32412], [L2105], however, results from other studies may vary.[A27280, L2082]
-
-Interestingly, zinc supplementation has become a critical intervention for treating diarrheal episodes in children. Studies suggest that administration of zinc along with new low osmolarity oral rehydration solutions/salts (oral rehydration solution), may reduce both the duration and severity of diarrheal episodes for up to 12 weeks [L422].
-
-More information about Zinc (in its natural form) is available at [DB01593].
-
-**Indication.** Zinc gluconate is mainly indicated in conditions like zinc deficiency, and can also be administered in adjunctive therapy as an alternative drug of choice in diarrhea [L2088].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3822815](https://www.wikidata.org/wiki/Q3822815) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,8 +40,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…Feces…”</sub> | prose |
-| excretion | kidney | <sub>“…urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

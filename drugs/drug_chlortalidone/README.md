@@ -9,17 +9,9 @@
 
 ## About
 
-**Description.** Chlorthalidone is a thiazide-like diuretic used for the treatment of hypertension and for management of edema caused by conditions such as heart failure or renal impairment. Chlorthalidone improves blood pressure and swelling by preventing water absorption from the kidneys through inhibition of the Na+/Cl− symporter in the distal convoluted tubule cells in the kidney. The exact mechanism of chlorthalidone's anti-hypertensive effect is under debate, however, it is thought that increased diuresis results in decreased plasma and extracellular fluid volume, decreased cardiac output and therefore overall reduction in blood pressure.[A176324]
+Chlortalidone is a diuretic and antihypertensive drug used to treat arterial hypertension, congestive heart failure, and fluid retention conditions such as anasarca and nephrotic syndrome, and also nephrogenic diabetes insipidus. It is an approved medicine, available alone or in combination products with potassium-sparing agents or potassium, and is used widely in cardiovascular care.
 
-Chlorthalidone is considered first-line therapy for management of uncomplicated hypertension as there is strong evidence from meta-analyses that thiazide diuretics such as chlorthalidone reduce the risk of stroke, myocardial infarction, heart failure, and cardiovascular all-cause mortality in patients with hypertension.[A173863] In particular, the ALLHAT trial confirmed the role of thiazide diuretics as first-line therapy and demonstrated that chlorthalidone had a statistically significant lower incidence of stroke and heart failure when compared to [DB00722], [DB00381], or [DB00590].[A173884, A173887] Further studies have indicated that low-dose thiazides are as good as, and in some secondary endpoints, better than β-blockers, ACE inhibitors, Calcium Channel Blockers or ARBs.
-
-Chlorthalidone has been shown to have a number of pleiotropic effects that differentiate it from other diuretics such as [DB00999]. In addition to its antihypertensive effects, chlorthalidone has also been shown to decrease platelet aggregation and vascular permeability, as well as promote angiogenesis in vitro, which is thought to be partly the result of reductions in carbonic anhydrase–dependent pathways. These pathways may play a role in chlorthalidone's cardiovascular risk reduction effects.[A176330]
-
-**Indication.** Chlorthalidone is indicated in the management of hypertension either as the sole therapeutic agent or to enhance the effect of other antihypertensive drugs in the more severe forms of hypertension.
-
-Chlorthalidone is indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy.
-
-Chlorthalidone has also been found useful in edema due to various forms of renal dysfunction, such as nephrotic syndrome, acute glomerulonephritis, and chronic renal failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425289](https://www.wikidata.org/wiki/Q425289) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -63,8 +55,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | liver | <sub>“…Liver…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted unmetabolized through the kidney…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CA1 (inhibitor), DUSP1 (target), FOS (target), PPP1R15A (target), SLC12A1 (inhibitor).</sub>
 

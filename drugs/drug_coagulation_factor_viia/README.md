@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Recombinant human coagulation Factor VIIa (rFVIIa), intended for promoting hemostasis by activating the extrinsic pathway of the coagulation cascade. NovoSeven is a vitamin K-dependent glycoprotein consisting of 406 amino acid residues. Cloned and expressed in hamster kidney cells, the protein is catalytically active in a two-chain form.
+Coagulation factor VIIa is a blood coagulation factor used to treat bleeding by promoting clot formation. It is an approved medicine, though it carries a boxed warning, and has also been studied for other uses.
 
-**Indication.** For treatment of hemorrhagic complications in hemophilia A and B.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801762](https://www.wikidata.org/wiki/Q20801762) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

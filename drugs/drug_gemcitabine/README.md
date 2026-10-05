@@ -11,18 +11,9 @@
 
 ## About
 
-**Description.** Gemcitabine is a nucleoside analog and a chemotherapeutic agent. It was originally investigated for its antiviral effects, but it is now used as an anticancer therapy for various cancers.[A233135] Gemcitabine is a cytidine analog with two fluorine atoms replacing the hydroxyl on the ribose.[A233145] As a prodrug, gemcitabine is transformed into its active metabolites that work by replacing the building blocks of nucleic acids during DNA elongation, arresting tumour growth and promoting apoptosis of malignant cells.[L32960] The structure, metabolism, and mechanism of action of gemcitabine are similar to [cytarabine], but gemcitabine has a wider spectrum of antitumour activity.[A233140]
+Gemcitabine is an antimetabolite anticancer drug used to treat various cancers, including pancreatic, lung, bladder, and breast-related carcinomas as well as several lymphomas. It is an approved medicine and is included on the WHO list of essential medicines, so it is widely used in cancer treatment worldwide.
 
-Gemcitabine is marketed as Gemzar and it is available as intravenous injection. It is approved by the FDA to treat advanced ovarian cancer in combination with [carboplatin], metastatic breast cancer in combination with [paclitaxel], non-small cell lung cancer in combination with [cisplatin], and pancreatic cancer as monotherapy.[L32950] It is also being investigated in other cancer and tumour types.
-
-**Indication.** Gemcitabine is a chemotherapeutic agent used as monotherapy or in combination with other anticancer agents:
-
-- In combination with [carboplatin], it is indicated for the treatment of **advanced ovarian cancer** that has relapsed at least 6 months after completion of platinum-based therapy.[L32950]
-- Gemcitabine in combination with [paclitaxel] is indicated for the first-line treatment of patients with **metastatic breast cancer** after failure of prior anthracycline-containing adjuvant chemotherapy, unless anthracyclines were clinically contraindicated.[L32950]
-- In combination with [cisplatin], gemcitabine is indicated for the first-line treatment of patients with **inoperable, locally advanced (Stage IIIA or IIIB) or metastatic (Stage IV) non-small cell lung cancer (NSCLC)**.[L32950] 
-- Dual therapy with cisplatin is also used to treat patients with **Stage IV (locally advanced or metastatic) transitional cell carcinoma (TCC) of the bladder**.[L32955]
-- Gemcitabine is indicated as first-line treatment for patients with **locally advanced (nonresectable Stage II or Stage III) or metastatic (Stage IV) adenocarcinoma of the pancreas**. Gemcitabine is indicated for patients previously treated with [fluorouracil].[L32950]
-- Intravesical system of gemcitabine is used to treat adults with **Bacillus Calmette-Guérin (BCG)-unresponsive, non-muscle invasive bladder cancer (NMIBC) with carcinoma in situ (CIS)**, with or without papillary tumours.[L53823]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414143](https://www.wikidata.org/wiki/Q414143) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -88,7 +79,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | <sub>“…can accumulate in circulating peripheral blood mononuclear cells…”</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
 | absorption | kidney | `ABCB1` substrate | DrugBank actor |
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
@@ -98,10 +89,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `SLC29A1` substrate | DrugBank actor |
 | distribution | liver | `SLC29A1` substrate | DrugBank actor |
 | metabolism | blood | `DPYD` safety_allele | paper PGx gene |
-| metabolism | kidney | <sub>“…kidneys…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `DPYD` safety_allele | paper PGx gene |
-| excretion | bile duct | <sub>“…about 1% of the administered dose was recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…mainly undergoes renal excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC10 (substrate), CDA (metabolism), CDA (substrate), CMPK1 (inhibitor), CMPK1 (substrate), DCK (substrate), DNA (cross-linking/alkylation), NME1 (substrate), NT5C2 (metabolism), RRM1 (inhibitor), RRM2 (inhibitor), SLC28A1 (unknown), SLC28A3 (substrate), SLC28A3 (transport), SLC29A2 (unknown), SMYD3 (target), TK2 (substrate), TYMS (inhibitor).</sub>
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Trabectedin, also referred as ET-743 during its development, is a marine-derived antitumor agent discovered in the Carribean tunicate _Ecteinascidia turbinata_ and now produced synthetically. Trabectedin has a unique mechanism of action. It binds to the minor groove of DNA interfering with cell division and genetic transcription processes and DNA repair machinery. It is approved for use in Europe, Russia and South Korea for the treatment of advanced soft tissue sarcoma. It is currently under evaluation for the treatment of breast cancer, prostate cancer, in addition to pediatric sarcomas. Both the European Commission and the U.S. Food and Drug Administration (FDA) have approved trabectedin as an orphan drug in soft tissue sarcomas and ovarian cancer. On October 23, 2015, the FDA approved trabectedin, (as Yondelis), for the treatment of specific soft tissue sarcomas.
+Trabectedin is an alkylating anticancer medicine used to treat sarcoma and ovarian cancer. It is authorised in the European Union and is used in cancer treatment, though one related marketing application was refused.
 
-**Indication.** Indicated for treatment of advanced soft tissue sarcoma in patients refractory to or unsuitable to receive anthracycline or ifosfamide chemotherapy in Europe, Russia and South Korea. Approved for orphan drug status by the U.S. FDA for treatment of soft tissue sarcomas and ovarian cancer. Investigated for use/treatment in cancer/tumors (unspecified), gastric cancer, ovarian cancer, pediatric indications, sarcoma, and solid tumors.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2637746](https://www.wikidata.org/wiki/Q2637746) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

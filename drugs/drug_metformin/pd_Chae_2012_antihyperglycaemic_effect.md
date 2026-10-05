@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> Metformin plasma concentrations inhibit the antihyperglycaemic effect (measured in %) via a signal transduction model where the drug interacts with a receptor to initiate second messenger production, characterized by an Emax of 19.8, an EC50 of 3.68 mg ml⁻¹, a Hill coefficient (r) of 0.55, and a mean production time (t) of 0.50 h.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chae_2012`
 - **model family:** `transduction`
 - **driver:** `pk_record`
@@ -85,8 +89,8 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_PD_antihyperglycaemic_effect/Metformin_Chae2012_PD_antihyperglycaemic_effect_modelica.zip" download>Metformin_Chae2012_PD_antihyperglycaemic_effect_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_PD_antihyperglycaemic_effect/Metformin_Chae2012_PD_antihyperglycaemic_effect_fmi.zip" download>Metformin_Chae2012_PD_antihyperglycaemic_effect_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_PD_antihyperglycaemic_effect/Metformin_Chae2012_PD_antihyperglycaemic_effect_modelica.zip" download>Metformin_Chae2012_PD_antihyperglycaemic_effect_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_PD_antihyperglycaemic_effect/Metformin_Chae2012_PD_antihyperglycaemic_effect_fmi.zip" download>Metformin_Chae2012_PD_antihyperglycaemic_effect_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_PD_antihyperglycaemic_effect/Metformin_Chae2012_PD_antihyperglycaemic_effect_matlab.zip" download>Metformin_Chae2012_PD_antihyperglycaemic_effect_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Chae2012_PD_antihyperglycaemic_effect/Metformin_Chae2012_PD_antihyperglycaemic_effect_sbml.zip" download>Metformin_Chae2012_PD_antihyperglycaemic_effect_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

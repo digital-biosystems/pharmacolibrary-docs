@@ -11,21 +11,9 @@
 
 ## About
 
-**Description.** Amlodipine, initially approved by the FDA in 1987, is a popular antihypertensive drug belonging to the group of drugs called _dihydropyridine calcium channel blockers_.  Due to their selectivity for the peripheral blood vessels, dihydropyridine calcium channel blockers are associated with a lower incidence of myocardial depression and cardiac conduction abnormalities than other calcium channel blockers [A175327].
+Amlodipine is a calcium channel blocker used to treat high blood pressure and angina. It is widely used worldwide and is included on the WHO list of essential medicines, available alone and in many fixed-dose combination products.
 
-Amlodipine is commonly used in the treatment of high blood pressure and angina. Amlodipine has antioxidant properties and an ability to enhance the production of nitric oxide (NO), an important vasodilator that decreases blood pressure [A175321].  The option for single daily dosing of amlodipine is an attractive feature of this drug [FDA label].
-
-**Indication.** Amlodipine may be used alone or in combination with other antihypertensive and antianginal agents for the treatment of the following conditions [FDA label]:
-
-• Hypertension 
-
-• Coronary artery disease
-
-• Chronic stable angina
-
-• Vasospastic angina (Prinzmetal’s or Variant angina) 
-
-• Angiographically documented coronary artery disease in patients without heart failure or an ejection fraction < 40%
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411347](https://www.wikidata.org/wiki/Q411347) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

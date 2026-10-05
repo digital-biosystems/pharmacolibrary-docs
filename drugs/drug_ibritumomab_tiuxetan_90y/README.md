@@ -7,6 +7,12 @@
 - **DrugBank:** [DB32139](https://go.drugbank.com/drugs/DB32139) · **PubChem:** not captured
 - **groups:** approved
 
+## About
+
+Yttrium-labelled ibritumomab tiuxetan is a therapeutic radiopharmaceutical used to treat non-Hodgkin lymphoma. It is an approved medicine, given as an injection, mainly in specialist cancer care.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

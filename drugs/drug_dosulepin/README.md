@@ -10,10 +10,9 @@
 
 ## About
 
-**Description.** Dosulepin (INN, BAN) formerly known as dothiepin (USAN), is a tricyclic antidepressant with anxiolytic properties that is used in several European and South Asian countries, as well as Australia, South Africa, and New Zealand. It is not FDA-approved due to low therpeutic index and significant toxicity in overdose. Dosulepin inhibits the reuptake of biogenic amines, increasing available neurotransmitter levels at the synaptic cleft. The use of dosulepsin is only recommended in patients who are intolerant or unresponsive to alternative antidepressant therapies. Dosulepsin is a thio derivative of [DB00321] with a similar efficacy to that of [DB00321], and also exhibits anticholinergic, antihistamine and central sedative properties [L882]. 
-Its hydrochloride form is a common active ingredient in different drug formulations.
+Dosulepin is a tricyclic antidepressant used to treat depression. It is an approved medicine, used mainly in a few countries such as the United Kingdom, and is not authorised across the whole European Union.
 
-**Indication.** Indicated in the treatment of symptoms of depressive illness, especially where an anti-anxiety effect is required.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27116967](https://www.wikidata.org/wiki/Q27116967) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,13 +30,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Dosulepin is well absorbed from the intestines…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…metabolites that are found in urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…biliary/fecal excretion is about 15%-40%…”</sub> | prose |
-| excretion | kidney | <sub>“…predominantly cleared via renal elimination…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

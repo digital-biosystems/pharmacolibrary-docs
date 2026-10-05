@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Carmofur is a derivative of fluorouracil, and is an antineoplastic agent that has been used in the treatment of breast and colorectal cancer. Carmofur has been known to induce leukoencephalopathy.
+Carmofur is a pyrimidine analogue antineoplastic agent that was used to treat cancer. It has been withdrawn and is no longer in use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5043732](https://www.wikidata.org/wiki/Q5043732) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;dihydroergocristine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergocristine_Grognet1992_reference&quot;,&quot;label&quot;:&quot;Grognet_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # dihydroergocristine
 
@@ -10,9 +11,9 @@
 
 ## About
 
-**Description.** Dihydroergocristine is part of the ergoloid mixture products.[L2637] It is a semisynthetic ergot alkaloid and thus, it is characterized by a structural skeleton formed by an alkaloid ergoline.[A32879] To know more about ergoloid mixtures, please visit [DB01049].
+Dihydroergocristine is a vasodilator ergot alkaloid used in the treatment of dementia. It is an approved drug, classified as a peripheral vasodilator, but does not appear to have centralised European Union authorisation.
 
-**Indication.** Dihydroergocristine is used in some countries such as Brasil as a single agent for the treatment of cerebral and peripheric vascular events.[L2649] To know more about dihydroergocristine as part of the ergoloid mesylate mixture, please visit [DB01049].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5276428](https://www.wikidata.org/wiki/Q5276428) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -32,7 +33,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Grognet_1992_reference](drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md) | model (no simulator) | 1-compartment, IV | 3 | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Grognet_1992_reference](drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | — |
 
 ## ADME sites
 
@@ -40,11 +41,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorption in the digestive tract of about 25% of the administered dose…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…elimination route of dihydroergocristine is in via the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…Urine elimination accounts only for 5% of the administered dose…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA2C (modulator), ADRB1 (target), DRD1 (target), HTR1A (target).</sub>

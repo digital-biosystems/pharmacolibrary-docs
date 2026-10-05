@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;Ornithine&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/&quot;},{&quot;label&quot;:&quot;Le_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Le1997_reference&quot;,&quot;label&quot;:&quot;Le_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Le1997_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ornithine — `Ornithine_Le1997_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,15 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**This paper's disposition core is incomplete.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Kwack_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ornithine: kabs 0.028 min-1, t1/2z 89 min, CL 0.133 L/h, V 7.22 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading ornithine alpha-ketoglutarate → ornithine (metabolism); ornithine alpha-ketoglutarate → glutamine (metabolism); ornithine alpha-ketoglutarate → arginine (metabolism) …; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ornithine alpha-ketoglutarate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -32,20 +32,22 @@ Le Bricon T et al., Ornithine alpha-ketoglutarate metabolis…, The American jou
   ·  DOI: [10.1093/ajcn/65.2.512](https://doi.org/10.1093/ajcn/65.2.512)
 
 ## Model component
-<dbs-pgx drug="Ornithine" model-id="Ornithine_Le1997_reference" status="curated_candidate" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Ornithine" model-id="Ornithine_Le1997_reference" status="needs_review" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | absorption constant | `Q49` · kabs | 0.028 | min-1 | 0.00046666666666666666 | [1] / [min] | not captured | exact (1.0) | Le_1997:abstract | — | not captured |
 | elimination half-life | `Q57` · t1/2z | 89 | min | 5340.0 | [min] | not captured | llm (0.6) | Le_1997:abstract | — | not captured |
-| CL (L/h) | `Q22` · CL | 0.135 | L/h | 3.75e-08 | L/h | not captured | review_gapfill (0.7) | Kwack_2026:review | — | not captured |
-| V (L) | `Q61` · V | 7.86 | L | 0.00786 | L | not captured | review_gapfill (0.7) | Kwack_2026:review | — | not captured |
+| CL | `Q22` · CL | 0.133 | L/h | 3.6944444444444447e-08 | L/h | not captured | review_gapfill (0.7) | Kwack_2026:review | — | not captured |
+| V | `Q61` · V | 7.22 | L | 0.00722 | L | not captured | review_gapfill (0.7) | Kwack_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,14 +56,13 @@ Le Bricon T et al., Ornithine alpha-ketoglutarate metabolis…, The American jou
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'proline' — extend the ontology if this is a real PK parameter (source ['Le_1997:abstract'])
 - dropped unlinked row (NIL): 'glutamine' — extend the ontology if this is a real PK parameter (source ['Le_1997:abstract'])
 - dropped unlinked row (NIL): 'arginine' — extend the ontology if this is a real PK parameter (source ['Le_1997:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ornithine
+- template fit: none — other model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=other; 5/5 row label(s) assigned, 1 linked by role; re-tagged ornithine→parent ×2, ornithine→proline ×1, ornithine→glutamine ×1, ornithine→arginine ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Kwack_2026's review values (primary lacked it)
 - gap-filled Q61 (V) from Kwack_2026's review values (primary lacked it)
@@ -79,17 +80,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['ornithine alpha-ketoglutarate', 'ornithine', 'metabolism'], ['ornithine alpha-ketoglutarate', 'glutamine', 'metabolism'], ['ornithine alpha-ketoglutarate', 'arginine', 'metabolism'], ['ornithine alpha-ketoglutarate', 'proline', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[absorption constant]` | 0.028 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 0.135 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` | 89 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v]` | 7.86 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-7h: arginine]` | not captured | 7.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-7h: glutamine]` | not captured | 20.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-7h: proline]` | not captured | 41.4 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | ornithine alpha-ketoglutarate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | ornithine | unknown | mismatch |
 
 </details>
 
@@ -109,21 +110,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Le_1997:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Le_1997:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kwack_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.135 | not captured | not captured | ['Kwack_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.133 | not captured | not captured | ['Kwack_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.135 L/h | not captured | not captured | ['Kwack_2026:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 7.86 L | not captured | not captured | ['Kwack_2026:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=ornithine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.133 L/h | not captured | not captured | ['Kwack_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 7.22 L | not captured | not captured | ['Kwack_2026:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -133,9 +123,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_ornithine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Le_1997` / `Le_1997::reference`)
-- model: `../../../knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Le1997_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Le1997_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_ornithine/models/modelica/Ornithine_Le1997_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,25 +132,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_modelica.zip" download>Ornithine_Le1997_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_fmi.zip" download>Ornithine_Le1997_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_fmi.zip" download>Ornithine_Le1997_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_matlab.zip" download>Ornithine_Le1997_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_matlab_simbio.zip" download>Ornithine_Le1997_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_sbml.zip" download>Ornithine_Le1997_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_cellml.zip" download>Ornithine_Le1997_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference.svg" alt="Ornithine_Le1997_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.68 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ornithine/Ornithine_Le1997_reference/Ornithine_Le1997_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Ornithine_Le1997_reference_params.json` · controls `Ornithine_Le1997_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 15:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 15:05 UTC</sub>

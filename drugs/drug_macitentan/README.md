@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Macitentan is a dual endothelin receptor antagonist used in the treatment of pulmonary arterial hypertension (PAH).[L35890] It was first approved by the FDA in 2013. Macitentan differs from its predecessor [bosentan] in part due to its lower risk of hepatotoxicity.
+Macitentan is an endothelin receptor antagonist used to treat pulmonary arterial hypertension. It is authorised in the European Union for pulmonary hypertension.
 
-A combination product (Opsynvi) comprising macitentan and [tadalafil] was approved in Canada in October 2021 for the treatment of PAH.[L39105] It was subsequently approved by the FDA in March 2024.[L50622]
-
-**Indication.** Macitentan, alone or in combination with [tadalafil], is indicated for the treatment of pulmonary arterial hypertension (PAH; WHO Group 1) in adult patients of WHO functional class II to III .[L35890, L39105, L50622]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6724151](https://www.wikidata.org/wiki/Q6724151) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -61,8 +59,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` metabolism/substrate, `CYP2C9` safety_allele/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…24% through feces…”</sub> | prose |
-| excretion | kidney | <sub>“…Eliminated 50% through urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EDNRA (target), EDNRB (target).</sub>
 

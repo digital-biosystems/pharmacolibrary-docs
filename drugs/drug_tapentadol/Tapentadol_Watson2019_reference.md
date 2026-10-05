@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/&quot;},{&quot;label&quot;:&quot;Watson_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tapentadol — `Tapentadol_Watson2019_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,20 +19,20 @@
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The tapentadol pediatric model was held back because the builder assumed F=1, Fm=1 and no molar correction (apparent parameterization), a deviation judged not acceptable, and its covariate effects were never simulated.**
 
-The base model was simulated, not the covariate effects the record defines.
+The record reports tapentadol CL/F 170 L/h, V/F 685 L, Ka 2.03 h−1 and TLAG 0.247 h, with two weight-power covariate effects (0.638 and 0.847). The model builder substituted F=1, Fm=1 and no molar correction, making all parameters apparent, and this apparent assumption was ruled not acceptable. The covariate scenarios were not simulated: only the reference individual was simulated, so the defined covariate effects were not exercised. This is a deviation-based hold for review, not a refusal on parameter values themselves. Extracted — tapentadol: CL/F 170 L/h, V/F 685 L, kabs 2.03 h−1, tlag 0.247 h.
 
 Independently confirmed by `gpt-oss:120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019)
   ·  DOI: [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454)
 
 ## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Watson2019_reference" status="accepted_with_caveats" stale="false" population="pediatric patients with acute pain" measured-compound="tapentadol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tapentadol" model-id="Tapentadol_Watson2019_reference" status="needs_review" stale="false" population="pediatric patients with acute pain" measured-compound="tapentadol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.
@@ -40,6 +40,8 @@ Watson E et al., Population pharmacokinetic modeling to…, Journal of pain rese
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 170 | L/h | 4.722222222222223e-05 | [l] / [h] | 3.3 | exact (1.0) | T0005:row2:col1, T0005:row2:col2, T0005:row2:col3, T0005:row2:col4 | — | 0.048 (32.1% RSE) |
@@ -115,7 +117,7 @@ _Every reader agrees on every compared field of this record._
 | T3_output_variable | not captured | pass | C_central (measured=tapentadol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | apparent_assumption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,7 +138,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_modelica.zip" download>Tapentadol_Watson2019_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_modelica.zip" download>Tapentadol_Watson2019_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_fmi.zip" download>Tapentadol_Watson2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_matlab.zip" download>Tapentadol_Watson2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Watson2019_reference/Tapentadol_Watson2019_reference_matlab_simbio.zip" download>Tapentadol_Watson2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

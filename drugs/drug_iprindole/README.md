@@ -8,6 +8,12 @@
 - **molar mass:** 284.447 g/mol (C19H28N2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Iprindole is a tricyclic compound that has been used as an antidepressant. It is no longer in practical use and is considered an experimental drug.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q904673](https://www.wikidata.org/wiki/Q904673) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

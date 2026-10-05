@@ -11,13 +11,9 @@
 
 ## About
 
-**Description.** Lacosamide is an antiepileptic drug used to treat seizures. As a chiral functionalized amino acid, it works by blocking slowly inactivating components of voltage-gated sodium currents. Lacosamide exhibits a stereoselective mode of interaction with sodium channels.[A262681] Lacosamide was first approved by the European Commission in August 2008 and was later approved by the FDA in October 2008.[A262681] It was granted approval by Health Canada in September 2010.[L49206]
+Lacosamide is an anticonvulsant medicine used to treat epilepsy, including partial-onset seizures, and has also been studied for diabetic neuropathy. It is an approved drug with several products authorised in the European Union, where it is used for epilepsy.
 
-**Indication.** In the US and Europe, lacosamide is indicated for the treatment of partial-onset seizures in children and adults.[L49191, L49196, L49201] In Canada, it is reserved for use in adults.[L49206]
-
-It is also used as an adjunctive therapy in the treatment of primary generalized tonic-clonic seizures in patients four years of age and older.[L49191, L49201]
-
-The extended-release capsules of lacosamide are indicated for the treatment of partial-onset seizures in adults and in pediatric patients weighing at least 50 kg.[L49196]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420077](https://www.wikidata.org/wiki/Q420077) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -66,10 +62,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Lacosamide is completely absorbed after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C19` metabolism/substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…less than 0.5 % in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` transport | paper PGx gene |
 | excretion | liver | `ABCC2` transport | paper PGx gene |
 | excretion | small intestine | `ABCC2` transport | paper PGx gene |

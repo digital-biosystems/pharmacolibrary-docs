@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1.5 mg parenteral (A10BJ02)",
+ "model_id": "Liraglutide_Woodward2014_reference",
+ "molar_masses": {
+  "central.C": 3.751262
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.9083333333333335e-08,
+  "F": 1.0,
+  "MM": 3.751262,
+  "VdPerKg": 0.00018,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662155
+ },
+ "reference_peaks": {
+  "central.C": 0.00011899354180778092
+ },
+ "stop_time": 2419200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

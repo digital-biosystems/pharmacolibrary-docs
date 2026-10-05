@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;cisapride&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/&quot;},{&quot;label&quot;:&quot;Odoul_2002 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisapride_Preechagoon1999_reference&quot;,&quot;label&quot;:&quot;Preechagoon_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisapride — `Cisapride_Odoul2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,45 +21,41 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted apparent parameters for cisapride — V/F of 17 mL and CL/F of 3.91 mL/h — were judged implausible in magnitude, consistent with a unit or scale extraction error. A second reader disputed the parameterization, reading it as mechanistic rather than apparent, and recorded null values for both CL/F and V/F, disagreeing with the extracted 3.91 and 17. Extracted — cisapride: V/F 17 mL, CL/F 3.91 mL/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:57.244565+00:00) predates the upstream re-run (2026-10-04 13:41:15.484597+00:00). Current validate status: `rejected`.
 
 ## Citation
 Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002)
   ·  DOI: [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z)
 
 ## Model component
-<dbs-pgx drug="cisapride" model-id="Cisapride_Odoul2002_reference" status="rejected" stale="false" population="neonates" measured-compound="cisapride" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cisapride" model-id="Cisapride_Odoul2002_reference" status="rejected" stale="true" population="neonates" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 0 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| V/F | `Q76` · V/F | 17 | mL | 1.7e-05 | [ml] | not captured | exact (1.0) | Odoul_2002:abstract | — | not captured |
-| CL/F | `Q27` · CL/F | 3.91 | mL/h | 1.086111111111111e-09 | [ml] / [h] | not captured | exact (1.0) | Odoul_2002:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cisapride
+- table section iiv: 'absorption constant rate' routed out of structural estimates ('Final population pharmacokinetic parameters (interindividual variability) were: V/F=17,200 mL (90.4%) and CL/F=3.91 x WT(3/4) mL/h (36.3%).')
+- table section iiv: 'V/F' routed out of structural estimates ('Final population pharmacokinetic parameters (interindividual variability) were: V/F=17,200 mL (90.4%) and CL/F=3.91 x WT(3/4) mL/h (36.3%).')
+- table section iiv: 'CL/F' routed out of structural estimates ('Final population pharmacokinetic parameters (interindividual variability) were: V/F=17,200 mL (90.4%) and CL/F=3.91 x WT(3/4) mL/h (36.3%).')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cisapride
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Odoul_2002_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Odoul_2002_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -67,15 +64,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[cl/f]` | 3.91 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 17 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | cisapride | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | cisapride | unknown | mismatch |
 
 </details>
 
@@ -89,15 +85,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Odoul_2002:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Odoul_2002:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.00391 L/h | not captured | not captured | ['Odoul_2002:abstract'] |
-| C9_phys_window_Q76 | fail | volume within physiological range | 0.017 L | not captured | not captured | ['Odoul_2002:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -122,4 +112,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 11:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:41 UTC</sub>

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Cetrimonium is a quaternary ammonium cation whose salts are used as antiseptics.
+Cetrimonium is a quaternary ammonium compound whose salts are used as antiseptics, acting as a local anti-infective agent and surfactant. It is an approved antiseptic used in dermatological and throat preparations, for skin disinfection and throat conditions.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5065700](https://www.wikidata.org/wiki/Q5065700) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A cardioselective beta-adrenergic antagonist with little effect on the bronchial receptors. The drug has stabilizing and quinidine-like effects on cardiac rhythm as well as weak inherent sympathomimetic action.
+Acebutolol is a selective beta blocker used to treat high blood pressure, angina, and heart rhythm problems. It is an approved medicine and remains in use, though it is not authorised at the European Union level.
 
-**Indication.** For the management of hypertension and ventricular premature beats in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418857](https://www.wikidata.org/wiki/Q418857) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -52,9 +52,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excretion into the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…Elimination via renal excretion is approximately 30% to 40%…”</sub> | prose |
-| excretion | small intestine | <sub>“…direct passage through the intestinal wall…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB2 (partial agonist).</sub>
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Fibrinogen concentrate (human) is a hematological agent. It works by replacing a specific protein in the blood, fibrinogen (factor I), that helps with blood clotting.  It is a soluble plasma glycoprotein with a molecular weight of about 340 kDa and is a physiological substrate for three enzymes: plasmin, factor XIIIa, and thrombin. It is indicated for the treatment of acute bleeding episodes in patients with both acquired and congenital fibrinogen deficiency, including afibrinogenemia and hypofibrinogenemia.[L41065]
+Human fibrinogen is a blood clotting factor used to treat bleeding caused by low fibrinogen levels. It is an approved medicine, classified as a hemostatic under the ATC system, and is also being studied for additional uses.
 
-**Indication.** Human fibrinogen is indicated for the treatment of acute bleeding episodes in patients with congenital fibrinogen deficiency, including afibrinogenemia and hypofibrinogenemia.[L41065, L54973] It is also indicated for fibrinogen supplementation in bleeding patients with acquired fibrinogen deficiency.[L41065]
-
-In combination with thrombin, it is used indicated as an adjunct to hemostasis for mild to moderate bleeding in adults undergoing surgery when control of bleeding by standard surgical techniques (such as suture, ligature, and cautery) is ineffective or impractical.[L12936, L12939]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q22075876](https://www.wikidata.org/wiki/Q22075876) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

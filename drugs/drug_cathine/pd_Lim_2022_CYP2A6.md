@@ -15,19 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Cathine (measured concentrations) drives CYP2A6 activity (in % control activity) (inhibition; the model form was not identified).
+**As extracted:** Cathine (measured concentrations) drives CYP2A6 activity (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Cathine concentrations directly inhibit CYP2A6 activity via a non-competitive or mixed mechanism, with an IC50 of 80 μM and a Ki of 63 μM. The paper does not specify a time-dependent or effect-compartment model, noting only that the inhibition is reversible and not time-dependent.
+> Cathine concentrations (in μM) inhibit CYP2A6 activity (measured in %) via a non-competitive mixed mechanism, with an IC50 of 80 μM and a Ki of 63 μM.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Lim_2022`
-- **model family:** `unknown`
+- **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Lim SYM et al., Protein-Ligand Identification and In Vi…, International journal of to… (2022)
@@ -36,13 +36,7 @@ Lim SYM et al., Protein-Ligand Identification and In Vi…, International journa
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 without NADPH (μM) — CYP1A2 | `Q322` · not captured | 285 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row0:col2 |
-| PD (effect) | IC50 without NADPH (μM) — CYP2A6 | `Q322` · not captured | 80 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row0:col3 |
-| PD (effect) | IC50 without NADPH (μM) — CYP2D6 | `Q322` · not captured | 435 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row0:col8 |
-| PD (effect) | IC50 without NADPH (μM) — CYP3A4 | `Q322` · not captured | 90 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row0:col11 |
-| PD (effect) | IC50 with NADPH (μM) — CYP1A2 | `Q322` · not captured | 255 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row1:col2 |
-| PD (effect) | IC50 with NADPH (μM) — CYP2A6 | `Q322` · not captured | 70 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row1:col3 |
-| PD (effect) | IC50 with NADPH (μM) — CYP2D6 | `Q322` · not captured | 860 | μM | not captured | llm_confirmed (not captured) | table1-10915818221103790:row1:col8 |
+| PD (effect) | IC50 | `Q322` · not captured | 80 | μM | not captured | llm (not captured) | Lim_2022:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

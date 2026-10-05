@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Frovatriptan is a triptan drug developed by Vernalis for the treatment of migraine headaches, in particular those associated with menstruation. Frovatriptan causes vasoconstriction of arteries and veins that supply blood to the head.
+Frovatriptan is a selective serotonin receptor agonist used to treat migraine attacks. It is an approved medicine, though it is not authorised in the European Union.
 
-**Indication.** For the acute treatment of migraine attacks with or without aura in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q410195](https://www.wikidata.org/wiki/Q410195) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly absorbed from the duodenum…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Radiolabeled compounds excreted in urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR1B (target), HTR1D (target).</sub>
 

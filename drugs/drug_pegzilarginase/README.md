@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Pegzilarginase is a recombinant, cobalt-substituted, and pegylated human arginase 1 enzyme therapy designed to address the underlying metabolic deficit in arginase 1 deficiency (ARG1-D).[L56053] By substituting the native manganese cofactor with cobalt to enhance catalytic activity, this agent effectively degrades elevated plasma arginine into ornithine and urea, thereby mitigating the accumulation of toxic metabolites that drive the progressive neurological phenotype of this rare urea cycle disorder.[A275423,L56053]
+Pegzilarginase is an enzyme medicine used to treat hyperargininemia, a rare metabolic disorder. It is approved and authorised for use in the European Union.
 
-Pegzilarginase-nbln received accelerated approval from the U.S. FDA in February 2026 for the treatment of hyperargininemia in adult and pediatric patients aged 2 years and older with ARG1-D, to be used in conjunction with dietary protein restriction.[L56053,L56054]
-
-**Indication.** Pegzilarginase is indicated in combination with dietary protein restriction for the treatment of hyperargininemia in adult and pediatric patients 2 years of age and older with arginase 1 deficiency (ARG1-D).[L55043]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q124038975](https://www.wikidata.org/wiki/Q124038975) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

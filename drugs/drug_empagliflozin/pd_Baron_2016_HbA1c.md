@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Baron_2016 \u00b7 PD Glycated hemoglobin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Baron_2016_FPG&quot;,&quot;label&quot;:&quot;Baron_2016 \u00b7 FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Baron_2016_FPG.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rascher_2025_HbA1c&quot;,&quot;label&quot;:&quot;Rascher_2025 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Rascher_2025_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Glycated hemoglobin — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Empagliflozin lowers HbA1c by inhibiting SGLT2 to reduce plasma glucose, which in turn decreases the production of HbA1c in an indirect response model. The HbA1c elimination rate constant (kHbA1c,out) was estimated at 2.6 weeks, corresponding to a half-life of approximately 2.6 weeks.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baron_2016`
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
@@ -30,8 +35,7 @@ Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | k HbA1c,out | `Q328` · not captured | 0.26 | 1/week | not captured | llm (not captured) | Baron_2016:pdv3 |
-| PD (effect) | Baseline HbA1c | `Q324` · not captured | 7.90 | % | not captured | llm (not captured) | Baron_2016:pdv3 |
+| PD (effect) | k HbA1c,out | `Q328` · not captured | 2.6 | weeks | not captured | llm (not captured) | Baron_2016:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

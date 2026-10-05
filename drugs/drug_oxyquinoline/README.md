@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Oxyquinoline is a heterocyclic phenol and derivative of quinoline with antiseptic, disinfectant, and pesticide properties. It is used as a stabilizer for hydrogen peroxide, where it is sometimes added in cosmetic products.
+Oxyquinoline is an antiseptic used against local infections in the mouth, on the skin, in the genital area, and in the throat. It is an approved drug, also approved for veterinary use, and some uses remain investigational.
 
-**Indication.** Oxyquinoline is used as a biocidal component of several over the counter products. These products are marketed for the purposes of inhibiting abnormal biological growth in the vagina and restoring natural pH.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q270162](https://www.wikidata.org/wiki/Q270162) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,11 +43,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | bile duct | <sub>“…In the bile, 9% of the total dose is found as glucuronide conjugates…”</sub> | prose |
-| metabolism | kidney | <sub>“…In the urine, 60% of the dose is excreted as glucuronide conjugates…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `NQO1` target | paper PGx gene |
-| excretion | bile duct | <sub>“…some in the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…primarily in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: METAP2 (inhibitor).</sub>
 

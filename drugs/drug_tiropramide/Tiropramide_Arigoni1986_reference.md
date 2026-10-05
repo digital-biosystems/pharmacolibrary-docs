@@ -4,7 +4,7 @@
 
 # tiropramide — `Tiropramide_Arigoni1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,30 +20,31 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tiropramide: Vss 221 l, kel 0.279 h-1, t1/2z 2.5 h, tlag 11 min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of lag time: this record has 11, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tiropramide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:49.758611+00:00) predates the upstream re-run (2026-10-04 13:16:43.655157+00:00). Current validate status: `extracted`.
 
 ## Citation
 Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986)
 
 ## Model component
-<dbs-pgx drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | The steady-state volume of distribution | `Q65` · Vss | 221 | l | 0.221 | [l] | not captured | llm_corrected (0.6) | Arigoni_1986:abstract | — | not captured |
 | The terminal elimination constant | `Q47` · kel | 0.279 | h-1 | 7.750000000000001e-05 | [1] / [h] | not captured | llm (0.6) | Arigoni_1986:abstract | — | not captured |
 | t1/2 | `Q57` · t1/2z | 2.5 | h | 9000.0 | [h] | not captured | exact (1.0) | Arigoni_1986:abstract | — | not captured |
 | lag time | `Q83` · tlag | 11 | min | 660.0 | [min] | not captured | exact (1.0) | Arigoni_1986:abstract | — | not captured |
+| percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus | `Q44` · fe | 16.2 | % | not captured | [%] | not captured | llm (0.6) | Arigoni_1986:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,27 +57,39 @@ Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forsc
 - dropped duplicate Q57 ('invasion t1/2', value 2) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tiropramide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Arigoni_1986_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Arigoni_1986_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[i.v. dose]` | not captured | 50 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[lag time]` | 11 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | not captured | 11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[percentage of the administered dose of tiropramide and tiropramide-related substances in the 24-h urines]` | not captured | 16.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[percentages of the administered dose of tiropramide and tiropramide-related substances can be found in the 24-h urines. bolus]` | 16.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | not captured | 221 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal elimination constant]` | not captured | 0.279 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[the steady-state volume of distribution]` | 221 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[the terminal elimination constant]` | 0.279 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | tiropramide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | tiropramide | unknown | mismatch |
 
 </details>
 
@@ -90,9 +103,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
@@ -133,4 +147,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 10:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:16 UTC</sub>

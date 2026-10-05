@@ -8,6 +8,12 @@
 - **molar mass:** 354.81 g/mol (C15H15ClN2O4S) — DrugBank
 - **groups:** investigational
 
+## About
+
+Xipamide is a diuretic and antihypertensive drug used to treat high blood pressure and fluid retention. It is not an approved medicine today and is considered investigational, with no authorisation recorded in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q600951](https://www.wikidata.org/wiki/Q600951) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

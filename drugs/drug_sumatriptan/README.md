@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;sumatriptan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sumatriptan_Cosson1999_reference&quot;,&quot;label&quot;:&quot;Cosson_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sumatriptan
 
@@ -10,9 +11,9 @@
 
 ## About
 
-**Description.** Sumatriptan is a serotonin receptor agonist commonly used to treat migraines and sometimes cluster headaches.[L6793,L6796,L6799,L6805,L6808,L6811] Sumatriptan is the first of the triptans and was made available in Europe in 1991 to treat migraines.[A179761] Sumatriptan was granted FDA approval on 28 December 1992.[L6805]
+Sumatriptan is a serotonin 5-HT1 receptor agonist used to treat migraine, including migraine with or without aura, and has also been used for giant cell arteritis. It is an approved antimigraine medicine, widely used, with products authorised across the European Union.
 
-**Indication.** A combination sumatriptan and [naproxen] tablet is indicated for the treatment of migraines with or without auras in patients 12 years of age and older.[L6793] Sumatriptan nasal powder, nasal spray, subcutaneous injection, and tablets are indicated to treat migraines with or without auras in adults.[L6796,L6799,L6805,L6808,L6811] One of the subcutaneous formulations of sumatriptan is also indicated to treat cluster headaches in adults[L6805], while the other subcutaneous formulation is not.[L6808]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416978](https://www.wikidata.org/wiki/Q416978) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -25,7 +26,7 @@
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Christensen_2004_reference](drugs/drug_sumatriptan/Sumatriptan_Christensen2004_reference.md) | — | 1-compartment (no model) | 5 | Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2004) | [10.1177/0091270004263467](https://doi.org/10.1177/0091270004263467) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Cosson_1999_reference](drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md) | model (no simulator) | 1-compartment, IV | 2 | Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmacokinetics… (1999) | [10.1023/a:1020601906027](https://doi.org/10.1023/a:1020601906027) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Cosson_1999_reference](drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmacokinetics… (1999) | [10.1023/a:1020601906027](https://doi.org/10.1023/a:1020601906027) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Christensen_2003_reference](drugs/drug_sumatriptan/Sumatriptan_Christensen2003_reference.md) | — | 1-compartment (no model) | 5 | Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2003) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ohk_2022_reference](drugs/drug_sumatriptan/Sumatriptan_Ohk2022_reference.md) | — | 1-compartment (no model) | 0 | Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & drug dis… (2022) | [10.1002/bdd.2307](https://doi.org/10.1002/bdd.2307) |
 
@@ -52,8 +53,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `MAOA` substrate | DrugBank actor |
 | metabolism | liver | `MAOA` substrate, `SLCO1B1` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…approximately 40% is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…22±4% is excreted in the urine as unchanged sumatriptan and 38±7% in urine as indole aceti…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1F (target).</sub>
 

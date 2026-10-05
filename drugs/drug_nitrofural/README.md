@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Nitrofural or nitrofurazone is a topical anti-infective agent effective against gram-negative and gram-positive bacteria. It is used for superficial wounds, burns, ulcers, and skin infections. Nitrofural has also been administered orally in the treatment of trypanosomiasis.
+Nitrofural (nitrofurazone) is a nitrofuran antibacterial used as a topical antiseptic for wounds, burns, and skin, eye, and ear infections. It has been withdrawn from human use in some countries over safety concerns, but remains approved for topical use and in veterinary medicine elsewhere.
 
-Except for topical drug products formulated for dermatologic application, the FDA withdrew its approval for the use of drug products containing nitrofurazone.[L43942]
-
-**Indication.** For the treatment of bacterial skin infections including pyodermas, infected dermatoses and infections of cuts, wounds, burns and ulcers due to susceptible organisms.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q103964761](https://www.wikidata.org/wiki/Q103964761) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

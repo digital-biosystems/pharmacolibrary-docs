@@ -8,6 +8,12 @@
 - **molar mass:** 247.08 g/mol (C8H8Cl2N4O) — DrugBank
 - **groups:** experimental
 
+## About
+
+Guanoxabenz is a guanidine-derivative antihypertensive drug, acting peripherally as an antiadrenergic agent to lower blood pressure. It is not an approved medicine and appears only as an experimental compound, so it is not in routine clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q12745351](https://www.wikidata.org/wiki/Q12745351) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

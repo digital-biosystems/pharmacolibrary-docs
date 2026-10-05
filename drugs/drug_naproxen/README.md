@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Naproxen is classified as a nonsteroidal anti-inflammatory dug (NSAID) and was initially approved for prescription use in 1976 and then for over-the-counter (OTC) use in 1994.[A178975] It can effectively manage acute pain as well as pain related to rheumatic diseases, and has a well studied adverse effect profile.[A179098] Given its overall tolerability and effectiveness, naproxen can be considered a first line treatment for a variety of clinical situations requiring analgesia.[A179098] Naproxen is available in both immediate and delayed release formulations, in combination with sumatriptan to treat migraines, and in combination with esomeprazole to lower the risk of developing gastric ulcers.[L6582][L6583][L7309][L7312]
+Naproxen is a non-steroidal anti-inflammatory drug used to treat pain, inflammation, and conditions such as osteoarthritis, rheumatoid arthritis, ankylosing spondylitis, gout, and migraine. It is widely used and available in many forms, including oral and topical preparations, and is also approved for veterinary use.
 
-**Indication.** Naproxen is indicated for the management of rheumatoid arthritis, osteoarthritis, ankylosing spondylitis, polyarticular juvenile idiopathic arthritis, tendinitis, bursitis, acute gout, primary dysmenorrhea, and for the relief of mild to moderate pain.[L6582][L6583][A178975] Further, it is first-line therapy for osteoarthritis, acute gouty arthritis, dysmenorrhea, and musculoskeletal inflammation and pain.[A178975]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1215575](https://www.wikidata.org/wiki/Q1215575) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `UGT1A3` substrate, `UGT1A6` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A6` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Less than 5% of naproxen is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` unknown | DrugBank actor |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 

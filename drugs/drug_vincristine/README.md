@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Vincristine is an antitumor vinca alkaloid isolated from Vinca Rosea. It is marketed under several brand names, many of which have different formulations such as Marqibo (liposomal injection) and Vincasar. Vincristine is indicated for the treatment of acute leukaemia, malignant lymphoma, Hodgkin's disease, acute erythraemia, and acute panmyelosis. vincristine sulfate is often chosen as part of polychemotherapy because of lack of significant bone–marrow suppression (at recommended doses) and of unique clinical toxicity (neuropathy).
+Vincristine is a Vinca alkaloid chemotherapy used to treat several cancers, including leukemia, lymphoma, neuroblastoma, and sarcomas such as Ewing sarcoma and rhabdomyosarcoma. It is an approved medicine and is included on the WHO list of essential medicines, so it is widely used in cancer care.
 
-**Indication.** Treatment of acute lymphocytic leukemia (ALL), Hodgkin lymphoma, non-Hodgkin lymphomas, Wilms' tumor, neuroblastoma, rhabdomyosarcoma. Liposomal vincristine is indicated for the treatment of relapsed Philadelphia chromosome-negative (Ph-) acute lymphoblastic leukemia (ALL).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408977](https://www.wikidata.org/wiki/Q408977) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -78,7 +78,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…80% of an injected dose of vincristine sulfate is excreted via feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |

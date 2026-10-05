@@ -1,16 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Tegoprazan_Kim2024_reference",
  "molar_masses": {
   "central.C": 0.387387
  },
- "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  50.0
  ],
  "parameters": {
   "Cl": 5.838888888888889e-06,
@@ -20,8 +16,7 @@
   "VdPerKg": 0.001753142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 5e-05,
-  "k12": 4.0743155149934813e-08,
+  "adminMass": 0.0001,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
@@ -29,9 +24,9 @@
   "central.C": 12120.240480961924
  },
  "reference_peaks": {
-  "central.C": 0.00023312032968734878
+  "central.C": 0.0004662413810218743
  },
  "stop_time": 86400.0,
- "template": "PK_2C_enteral",
- "template_fmu": "PK_2C_enteral.fmu"
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

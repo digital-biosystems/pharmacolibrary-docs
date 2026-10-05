@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A chlorinated bisphenol antiseptic with a bacteriostatic action against Gram-positive organisms, but much less effective against Gram-negative organisms. It is mainly used in soaps and creams and is an ingredient of various preparations used for skin disorders. (From Martindale, The Extra Pharmacopoeia, 30th ed, p797)
+Hexachlorophene is a phenol-derived antiseptic that was used to treat skin infections and acne. It has been withdrawn from use because of safety concerns, particularly neurological harm, and is no longer in general use.
 
-**Indication.** For use as a surgical scrub and a bacteriostatic skin cleanser. It may also be used to control an outbreak of gram-positive infection where other infection control procedures have been unsuccessful.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425362](https://www.wikidata.org/wiki/Q425362) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,8 +42,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | <sub>“…Detectable blood levels of hexachlorophene…”</sub> | prose |
-| absorption | skin | <sub>“…absorption through intact skin…”</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ESR1 (unknown), GLUD1 (inhibitor), SDHD (inhibitor).</sub>
 

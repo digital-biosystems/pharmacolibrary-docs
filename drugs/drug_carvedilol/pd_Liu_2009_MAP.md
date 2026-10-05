@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Liu_2009 \u00b7 PD mean arterial blood pressure&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mean arterial blood pressure — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -16,7 +15,7 @@
 
 **As extracted:** Carvedilol (concentrations from the PK model of Albers_2008) drives mean arterial blood pressure (in %): indirect response — drug inhibits the production of mean arterial blood pressure.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
 > Carvedilol plasma concentrations (ng/mL) inhibit the production of mean arterial blood pressure (%) in an indirect response model, with Kin 0.41 %/h, Kout 0.40 h⁻¹, and IC50 24.40 ng/mL; the paper excerpts do not state the mechanism beyond this record.
 >
@@ -44,58 +43,20 @@ Liu XY et al., Comparison of different pharmacodynamic…, Yao xue xue bao = Act
 </details>
 
 
-## Exposure-response model
-
-`Carvedilol_Liu2009_PD_map` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 1.025 % | — |
-| Emax | 1 | — |
-| EC50 | 24.4 ng x mL(-1) | — |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 1.025, `at_EC50` = 0.5125, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — Emax, gamma
-- `pd_binding_e0_from_kin_kout` — no baseline row; E0 = kin/kout (0.41/0.4 = 1.025) — the paper's stated baseline may differ
-- `pd_binding_exposure_unit_unresolved` — 'ng x mL(-1)' — the x axis is in the paper's unit, not SI
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: Emax |
-
-Advisory:
-
-- defaulted: Emax — a row the paper has and the record lacks
-- exposure unit not resolved to SI — the x axis is in the paper's unit
-
-
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map/Carvedilol_Liu2009_PD_map_modelica.zip" download>Carvedilol_Liu2009_PD_map_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map/Carvedilol_Liu2009_PD_map_matlab.zip" download>Carvedilol_Liu2009_PD_map_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map/Carvedilol_Liu2009_PD_map_sbml.zip" download>Carvedilol_Liu2009_PD_map_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Liu2009_PD_map/Carvedilol_Liu2009_PD_map_cellml.zip" download>Carvedilol_Liu2009_PD_map_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

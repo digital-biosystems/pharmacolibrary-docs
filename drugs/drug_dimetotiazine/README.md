@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Dimetotiazine has considerable antiemetic & serotonin antagonistic action used mainly in allergic skin conditions.
+Dimetotiazine is an antihistamine (H1 antagonist) used as an antimigraine medicine to treat migraine. It is an approved drug but is not widely used; it is available only in a few countries and is not authorised by the European Medicines Agency.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27097974](https://www.wikidata.org/wiki/Q27097974) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Manidipine (INN) is a calcium channel blocker (dihydropyridine type) that is used clinically as an antihypertensive. It is selective for vasculature and does not produce effects on the heart at clinically relevant dosages.
+Manidipine is a dihydropyridine calcium channel blocker used to treat high blood pressure, and is also available in combination with an ACE inhibitor. It is not authorised in the European Union and is used mainly in Asia, particularly Japan.
 
-**Indication.** For the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q72488193](https://www.wikidata.org/wiki/Q72488193) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,8 +42,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…63% is eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…31% in the urine as metabolites…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (blocker), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor).</sub>
 

@@ -10,17 +10,15 @@
 
 ## About
 
-**Description.** Sitagliptin is an oral dipeptidyl peptidase-4 (DPP-4) inhibitor used in conjunction with diet and exercise to improve glycemic control in patients with type 2 diabetes mellitus[FDA label,A2260,A2255,A2256]. The effect of this medication leads to glucose dependent increases in insulin and decreases in glucagon to improve control of blood sugar[FDA label,A2255]. Sitagliptin was granted FDA approval on October 16, 2006[L6061].
+Sitagliptin is a DPP-4 inhibitor used to lower blood glucose in people with diabetes, including type 2 diabetes and, according to Wikidata, type 1 diabetes and maturity-onset diabetes of the young type 2. It is widely used and authorised in the European Union, available both alone and in combination products with other oral glucose-lowering drugs.
 
-**Indication.** Sitagliptin is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. It is not used to treat type 1 diabetes or patients with a history of pancreatitis.[L41220]
-
-It is also used in combination with [metformin] [L41215] or [ertugliflozin].[L41225]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419832](https://www.wikidata.org/wiki/Q419832) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 18:30 | 31:04 | 0/0/0 | 1/1/0 | 0/0/1 | 708,674/16,884 | ollama / qwen3.8:27b-mtp-q8_0 | 38 | 5/33 | 36/2 | 0 |
+| 2026-10-05 04:35 | 7:20 | 0/0/0 | 0/1/1 | 0/0/1 | 250,337/5,872 | ollama / qwen3.8:27b-mtp-q8_0 | 38 | 5/33 | 36/2 | 0 |
 
 ## popPK records
 
@@ -30,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_2024_DPP_4_inhibition](drugs/drug_sitagliptin/pd_Zhou_2024_DPP_4_inhibition.md) | DPP-4 inhibition ← sitagliptin · direct sigmoid Emax (Hill) effect | — | Zhou C et al., Safety, tolerability, pharmacokinetics…, Frontiers in endocrinology (2024) | [10.3389/fendo.2024.1359407](https://doi.org/10.3389/fendo.2024.1359407) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Zhou_2024_DPP_4_inhibition](drugs/drug_sitagliptin/pd_Zhou_2024_DPP_4_inhibition.md) | DPP-4 inhibition ← sitagliptin · direct sigmoid Emax (Hill) effect | — | Zhou C et al., Safety, tolerability, pharmacokinetics…, Frontiers in endocrinology (2024) | [10.3389/fendo.2024.1359407](https://doi.org/10.3389/fendo.2024.1359407) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kim_2013_DPP_4](drugs/drug_sitagliptin/pd_Kim_2013_DPP_4.md) | DPP-4 activity ← sitagliptin · direct sigmoid Emax (Hill) effect | — | Kim BH et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2013) | [10.1111/bcpt.12068](https://doi.org/10.1111/bcpt.12068) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kim_2013_active_GLP_1](drugs/drug_sitagliptin/pd_Kim_2013_active_GLP_1.md) | active glucagon-like peptide-1 ← sitagliptin · indirect response — drug inhibits the production of active glucagon-like peptide-1 | — | Kim BH et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2013) | [10.1111/bcpt.12068](https://doi.org/10.1111/bcpt.12068) |
 
@@ -59,10 +57,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | testis | `ABCB1` substrate/transport | DrugBank actor |
-| metabolism | kidney | <sub>“…79% of the dose excreted in the urine as the unchanged parent compound…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…13% in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A8` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: DPP4 (inhibitor).</sub>
@@ -82,14 +80,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_20 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_18 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kim_2013.pdf` | Kim BH et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2013) | popPK | 9 | [10.1111/bcpt.12068](https://doi.org/10.1111/bcpt.12068) | [23510190](https://pubmed.ncbi.nlm.nih.gov/23510190) | The paper describes a population PK/PD study of sitagliptin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
-| `Vélez_2014.pdf` | Vélez de Mendizábal N et al., Modelling the sitagliptin effect on dip…, Clinical pharmacokinetics (2014) | popPK | 9 | [10.1007/s40262-013-0109-y](https://doi.org/10.1007/s40262-013-0109-y) | [24142388](https://pubmed.ncbi.nlm.nih.gov/24142388) | The paper describes a population PK/PD model for sitagliptin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Siva_2025.pdf` | Siva B et al., Integrative CYP450 and network pharmaco…, Biochemical pharmacology (2025) | popPK | 8 | [10.1016/j.bcp.2025.116960](https://doi.org/10.1016/j.bcp.2025.116960) | [40287102](https://pubmed.ncbi.nlm.nih.gov/40287102) | The study reports quantitative PK parameters (Cmax, AUC, t1/2 changes) for sitagliptin in rats, though specific absolute values for CL or V are not explicitly listed in the text. |
-| `Sangle_2018.pdf` | Sangle GV et al., Evaluation of pharmacokinetic and pharm…, European journal of clinica… (2018) | popPK | 6 | [10.1007/s00228-018-2433-5](https://doi.org/10.1007/s00228-018-2433-5) | [29511780](https://pubmed.ncbi.nlm.nih.gov/29511780) | The study reports standard non-compartmental PK parameters (Cmax, AUC, t1/2) for sitagliptin in humans, but lacks specific compartmental model parameters (CL, V, Q, ka) required for population PK extraction. |
+| `Kim_2013.pdf` | Kim BH et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2013) | popPK | 9 | [10.1111/bcpt.12068](https://doi.org/10.1111/bcpt.12068) | [23510190](https://pubmed.ncbi.nlm.nih.gov/23510190) | The paper describes a population PK/PD study of sitagliptin in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| `Vélez_2014.pdf` | Vélez de Mendizábal N et al., Modelling the sitagliptin effect on dip…, Clinical pharmacokinetics (2014) | popPK | 9 | [10.1007/s40262-013-0109-y](https://doi.org/10.1007/s40262-013-0109-y) | [24142388](https://pubmed.ncbi.nlm.nih.gov/24142388) | The paper describes a population PK/PD model for sitagliptin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | `Liu_2016.pdf` | Liu D et al., Quantitative prediction of human pharma…, European journal of pharmac… (2016) | pd | 5 | [10.1016/j.ejps.2016.04.020](https://doi.org/10.1016/j.ejps.2016.04.020) | [27108678](https://www.ncbi.nlm.nih.gov/pubmed/27108678) | metadata signals extractable PD data (PK/PD) |
 | `Lu_2024.pdf` | Lu J et al., Use of a PK/PD Model to Select Cetaglip…, Clinical pharmacokinetics (2024) | pd | 5 | [10.1007/s40262-024-01427-7](https://doi.org/10.1007/s40262-024-01427-7) | [39367290](https://www.ncbi.nlm.nih.gov/pubmed/39367290) | metadata signals extractable PD data (PK/PD) |
 | `Alhakamy_2021.pdf` | Alhakamy NA et al., Evaluation of the Antiviral Activity of…, Pharmaceuticals (Basel, Swi… (2021) | pd | 4 | [10.3390/ph14030178](https://doi.org/10.3390/ph14030178) | [33668390](https://www.ncbi.nlm.nih.gov/pubmed/33668390) | metadata signals extractable PD data (IC50) |
@@ -107,7 +103,7 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Krishna_2007.pdf` | Krishna R et al., Effect of a single cyclosporine dose on…, Journal of clinical pharmac… (2007) | pgx | 7 | [10.1177/0091270006296523](https://doi.org/10.1177/0091270006296523) | [17244767](https://www.ncbi.nlm.nih.gov/pubmed/17244767) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Mistry_2008.pdf` | Mistry GC et al., Sitagliptin, an dipeptidyl peptidase-4…, British journal of clinical… (2008) | pgx | 7 | [10.1111/j.1365-2125.2008.03148.x](https://doi.org/10.1111/j.1365-2125.2008.03148.x) | [18503607](https://www.ncbi.nlm.nih.gov/pubmed/18503607) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-10-01T18:28:18.936939+00:00</sub>
+<sub>queue written 2026-10-05T04:33:10.808867+00:00</sub>
 
 ## Screened and excluded
 
@@ -130,14 +126,14 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Baziar_2024 | irrelevant | 0 | 0 | The study is an in-vitro medicinal chemistry and computational study of new DPP4 inhibitors, using sitagliptin only as a positive control for enzyme inhibition and cytotoxicity, with no pharmacokinetic parameters reported. |
 | PD | Baziar_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition data (IC50, Ki) for novel compounds using sitagliptin only as a positive control, but does not report any pharmacodynamic or exposure-response relationship for sitagliptin itself. |
 | popPK | Beitelshees_2023 | irrelevant | 0 | 0 | The study reports pharmacodynamic endpoints (glucose/insulin AUCs and ratios) rather than pharmacokinetic disposition parameters (CL, V, ka) for sitagliptin. |
-| PGx | Beitelshees_2023 | not_relevant | 0 | 0 | The study investigates the acute pharmacodynamic response to sitagliptin in a pilot cohort but does not report any association between specific gene variants/genotypes and the drug's PK or PD parameters. |
+| PGx | Beitelshees_2023 | not_relevant | 0 | 0 | The study investigates acute pharmacodynamic responses to sitagliptin in healthy volunteers but does not report any association between specific gene variants/genotypes and PK/PD parameters. |
 | popPK | Beitelshees_2024 | irrelevant | 0 | 0 | The study reports pharmacodynamic endpoints (glucose and insulin levels) rather than pharmacokinetic disposition parameters (CL, V, ka, etc.). |
-| PGx | Beitelshees_2024 | not_relevant | 0 | 0 | The study investigates the acute pharmacodynamic response to sitagliptin in healthy volunteers but does not report any association between specific gene variants/genotypes and the drug's PK or PD parameters. |
+| PGx | Beitelshees_2024 | not_relevant | 0 | 0 | The study investigates pharmacodynamic responses to sitagliptin in healthy volunteers but does not report any association with genetic variants or genotypes. |
 | popPK | Biftu_2007 | irrelevant | 1 | 0 | The paper focuses on the rational design and synthesis of a novel DPP-4 inhibitor analog, with sitagliptin serving only as a structural reference and comparator; no quantitative PK parameters for sitagliptin are reported. |
 | PD | Biftu_2007 | not_relevant | 1 | 1 | The paper reports a single in vitro IC50 value for a novel analog and mentions in vivo activity, but does not provide an exposure-response or dose-response analysis with numeric PD parameters for sitagliptin. |
 | popPK | Biftu_2007_2 | irrelevant | 0 | 0 | The paper describes a different compound (a back-up candidate) and only mentions sitagliptin as a comparator for potency, without reporting any pharmacokinetic parameters for sitagliptin. |
 | PD | Biftu_2007_2 | not_relevant | 1 | 0 | The text reports in vitro IC50 values for a new compound and sitagliptin, but does not provide in vivo exposure-response or dose-response data with numeric PD parameters for sitagliptin. |
-| popPK | Bossi_2020 | irrelevant | 0 | 0 | The study is a real-world observational analysis of clinical outcomes (HbA1c, CV risk) and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for sitagliptin. |
+| popPK | Bossi_2020 | irrelevant | 0 | 0 | The study is a real-world observational analysis of clinical outcomes (HbA1c, CV risk) and does not report any pharmacokinetic parameters. |
 | popPK | Carlsson_2018 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for semaglutide, not sitagliptin (which is only mentioned as a comparator in the SUSTAIN 2 trial). |
 | PD | Carlsson_2018 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis for semaglutide, not a pharmacodynamic (PD) or exposure-response analysis, and does not provide numeric PD parameters. |
 | popPK | Carpio_2025 | irrelevant | 0 | 0 | The paper describes a QSAR web server for predicting DPP4 inhibitory activity (IC50) and does not report pharmacokinetic parameters for sitagliptin. |
@@ -148,23 +144,23 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Cheng_2022 | not_relevant | 0 | 0 | The paper describes enzyme engineering for the industrial synthesis of sitagliptin, not the pharmacogenomics of its clinical pharmacokinetics or pharmacodynamics. |
 | popPK | Chung_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and in-vitro DPP-4 inhibition potency (IC50) of new analogs, with no pharmacokinetic parameters reported for sitagliptin. |
 | PD | Chung_2024 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for new analogs and sitagliptin, but does not provide an exposure-response, dose-response curve, or PK/PD model for sitagliptin. |
-| PGx | Cordiner_2024 | not_relevant | 2 | 5 | The paper reports a subanalysis by KNCJ11 genotype, but the primary focus is on the pharmacodynamic synergy of drug combination, and it does not report a specific pharmacogenomic effect on sitagliptin's PK or PD parameters as the main finding. |
+| PGx | Cordiner_2024 | not_relevant | 2 | 5 | The paper reports a subanalysis by KNCJ11 genotype, but the primary focus is on the pharmacodynamic synergy of drug combination, not a specific pharmacogenomic effect on sitagliptin's PK/PD parameters. |
 | popPK | Dastjerdi_2025 | irrelevant | 0 | 0 | The study focuses on the synthesis and antidiabetic activity of novel DPP-4 inhibitors, using sitagliptin only as a standard comparator without reporting its pharmacokinetic parameters. |
 | PD | Dastjerdi_2025 | not_relevant | 1 | 0 | The paper reports in vitro IC50 values for novel compounds and qualitative in vivo comparisons to sitagliptin, but does not provide any numeric PK/PD parameters or exposure-response analysis for sitagliptin. |
-| popPK | Dawra_2019 | irrelevant | 1 | 0 | The study focuses on ertugliflozin as the subject drug, with sitagliptin serving only as a co-administered comparator, and no quantitative PK parameters for sitagliptin are provided in the evidence. |
+| popPK | Dawra_2019 | irrelevant | 1 | 0 | Sitagliptin is a co-administered comparator drug in a study focused on ertugliflozin, and no quantitative PK parameters (CL, V, etc.) for sitagliptin are reported in the evidence. |
 | popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes management and does not report pharmacokinetic parameters for sitagliptin. |
 | PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides (sulfonylureas) and antioxidants, and does not mention sitagliptin or report any pharmacodynamic parameters. |
-| popPK | Dong_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of adefovir, with sitagliptin serving only as a co-administered probe drug in a cocktail, and no PK parameters for sitagliptin are reported. |
+| popPK | Dong_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of adefovir, with sitagliptin serving only as a co-administered probe drug in a cocktail study. |
 | PD | Dong_2024 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of adefovir and does not report any pharmacodynamic or exposure-response relationship for sitagliptin. |
 | popPK | Dos_2022 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of plant extracts where sitagliptin is used only as a positive control for DPP-4 inhibition, reporting no pharmacokinetic parameters. |
 | PD | Dos_2022 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition IC50 values for sitagliptin as a reference standard, but does not report any pharmacokinetic data, exposure-response relationship, or pharmacodynamic model for sitagliptin in vivo or in a PK/PD context. |
 | popPK | Eisa_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug synergy in cancer cells and does not report pharmacokinetic parameters for sitagliptin. |
-| PGx | Eitah_2025 | not_relevant | 0 | 0 | The paper investigates the anti-cancer effects of sitagliptin in a mouse model and does not report any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Eitah_2025 | not_relevant | 0 | 0 | The paper investigates the anti-neoplastic effects of sitagliptin in a mouse model and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
 | popPK | El_2025 | irrelevant | 0 | 0 | The study is a materials science/nanotechnology paper on zinc oxide nanoparticles where sitagliptin is used only as a standard reference drug in in-vitro biological assays, not as a subject of pharmacokinetic analysis. |
 | PD | El_2025 | not_relevant | 0 | 0 | The paper is a materials science study on green synthesis of nanoparticles; sitagliptin is used only as a standard reference drug in in vitro assays, and no pharmacokinetic or pharmacodynamic modeling of sitagliptin is performed. |
 | popPK | Fayyaz_2022 | irrelevant | 0 | 0 | The study focuses on the synthesis and in vitro enzyme inhibition of novel DPP-IV inhibitors, using sitagliptin only as a standard comparator without reporting any pharmacokinetic parameters. |
 | PD | Fayyaz_2022 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for novel compounds and compares them to sitagliptin, but does not report a pharmacokinetic or pharmacodynamic exposure-response relationship for sitagliptin. |
-| popPK | Fediuk_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ertugliflozin, not sitagliptin. |
+| popPK | Fediuk_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for ertugliflozin, not sitagliptin. |
 | PD | Fediuk_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (popPK) model for ertugliflozin, not sitagliptin, and contains no pharmacodynamic or exposure-response analysis. |
 | popPK | Fuh_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro biological evaluation of new DPP-4 inhibitors, with no pharmacokinetic data for sitagliptin. |
 | PD | Fuh_2021 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for new chemical analogs, not a pharmacodynamic or exposure-response relationship for sitagliptin itself. |
@@ -176,14 +172,14 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Gupta_2011 | not_relevant | 1 | 0 | The text is a general review introduction discussing the mechanism of action and clinical context of gliptins, but it does not report specific numeric PD parameters or exposure-response data for sitagliptin. |
 | popPK | Gupta_2018 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | popPK | Hayakawa_2025 | irrelevant | 0 | 0 | The study is a pharmacodynamic analysis of HbA1c changes using machine learning on electronic medical records, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | He_2025 | irrelevant | 0 | 0 | The paper is an in-vitro and computational study on DPP4 inhibition mechanisms and screening, containing no pharmacokinetic parameters for sitagliptin. |
+| popPK | He_2025 | irrelevant | 0 | 0 | The paper is an in-vitro and computational study on DPP4 inhibitor screening and binding mechanisms, reporting no pharmacokinetic parameters for sitagliptin. |
 | PD | He_2025 | not_relevant | 0 | 0 | The paper focuses on in vitro enzyme inhibition (IC50) and molecular dynamics simulations of DPP4 inhibitors, not in vivo pharmacodynamics or exposure-response relationships for sitagliptin. |
 | popPK | Herman_2006 | irrelevant | 2 | 0 | The abstract describes a PK/PD study but does not report specific quantitative disposition parameters (CL, V, t1/2) in the provided text. |
 | PD | Herman_2006 | not_relevant | 3 | 2 | The paper reports group-level mean effects (e.g., 90% DPP-4 inhibition, 2.7-fold GLP-1 increase) for a fixed dose, but does not provide individual concentration-effect data, a PK/PD model, or numeric parameters like Emax/EC50. |
-| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper presents a theoretical coupled pharmacokinetic model using generic "Drug X" and "Drug Y" or unrelated drugs (Imeglimin), and does not report specific quantitative PK parameters for sitagliptin. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper presents a generic mathematical framework for coupled PK models using hypothetical "Drug X" and "Drug Y" or unrelated drugs (Imeglimin), and does not report specific pharmacokinetic parameters for sitagliptin. |
 | PD | Huang_2026 | not_relevant | 0 | 0 | The paper focuses on a coupled pharmacokinetic (PK) model for drug-drug interactions (metoprolol and captopril) and does not report any pharmacodynamic (PD) or exposure-response relationships for sitagliptin. |
 | PGx | Hwang_2022 | not_relevant | 2 | 5 | The study reports that sitagliptin PK parameters were not significantly affected by ABCB1 genotypes, failing to demonstrate a pharmacogenomic effect. |
-| popPK | Inoue_2019 | irrelevant | 0 | 0 | The study is a model-based meta-analysis of pharmacodynamic efficacy (FPG/HbA1c lowering) and does not report pharmacokinetic disposition parameters for sitagliptin. |
+| popPK | Inoue_2019 | irrelevant | 0 | 0 | The study is a model-based meta-analysis of pharmacodynamic effects (FPG and HbA1c lowering) of antidiabetic drugs, not a pharmacokinetic study reporting disposition parameters for sitagliptin. |
 | popPK | Jadhav_2022 | irrelevant | 0 | 0 | The study focuses on the synthesis and biological evaluation of new carbohydrazide derivatives, using sitagliptin only as a positive control for antidiabetic activity without reporting any pharmacokinetic parameters for sitagliptin. |
 | PD | Jadhav_2022 | not_relevant | 2 | 1 | The paper reports in vitro IC50 values for novel compounds and compares in vivo glucose levels of a single dose of sitagliptin to controls, but does not provide an exposure-response or dose-response curve or numeric PD parameters (Emax, EC50, slope) for sitagliptin. |
 | popPK | Jeong_2026 | irrelevant | 0 | 0 | The study is a mechanistic investigation of sitagliptin's therapeutic effects on Parkinson's disease pathology in mice and does not report any pharmacokinetic parameters. |
@@ -191,23 +187,23 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Jia_2025 | not_relevant | 0 | 0 | The paper describes the directed evolution of a transaminase enzyme for the biosynthesis of sitagliptin analogs, not the effect of human genetic variants on sitagliptin pharmacokinetics or pharmacodynamics. |
 | popPK | Jiang_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new DPP-4 inhibitors, using sitagliptin only as a comparator for in vivo efficacy, with no PK parameters reported. |
 | PD | Jiang_2015 | not_relevant | 1 | 0 | The paper reports in vitro IC50 values for new compounds and a qualitative in vivo comparison to sitagliptin, but does not provide an exposure-response or dose-response analysis with numeric PD parameters for sitagliptin. |
-| popPK | Kakara_2016 | irrelevant | 0 | 0 | The study reports population pharmacodynamic (PPD) parameters for HbA1c lowering, not pharmacokinetic (PK) disposition parameters for sitagliptin. |
+| popPK | Kakara_2016 | irrelevant | 0 | 0 | The study reports a population pharmacodynamic (PPD) model for HbA1c lowering, not pharmacokinetic (PK) parameters like clearance or volume for sitagliptin. |
 | PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that the liver is not important for the elimination of sitagliptin and that SLCO1B1 polymorphism is unlikely to affect its response. |
 | popPK | Kan_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis of semaglutide for MASH and does not report pharmacokinetic parameters for sitagliptin. |
 | PD | Kan_2025 | not_relevant | 0 | 0 | The paper is a meta-analysis of semaglutide, not sitagliptin, and does not report pharmacodynamic parameters for the target drug. |
 | popPK | Kang_2023 | irrelevant | 2 | 0 | The study is a formulation and bioequivalence trial that reports qualitative equivalence and dissolution data, but does not provide quantitative population PK parameters (CL, V, ka) for sitagliptin in the evidence. |
 | PD | Kang_2023 | not_relevant | 1 | 0 | The paper focuses on formulation development and bioequivalence, mentioning "pharmacodynamic characteristics" only qualitatively without providing any numeric PD parameters or exposure-response data. |
-| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Sitagliptin is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters (CL, V, etc.) for sitagliptin are reported in the evidence. |
+| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Sitagliptin is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters for sitagliptin are reported in the evidence. |
 | PD | Kasahara_2016 | not_relevant | 0 | 0 | The study is a drug-drug interaction trial focusing on tofogliflozin; it reports no concentration-effect or dose-response modeling for sitagliptin, only qualitative statements that sitagliptin did not affect tofogliflozin's pharmacodynamics. |
-| popPK | Kashmoola_2026 | irrelevant | 0 | 0 | The paper is a narrative review on polypharmacy and bone health in T2DM, mentioning sitagliptin only in the context of bone effects without reporting any pharmacokinetic parameters. |
+| popPK | Kashmoola_2026 | irrelevant | 0 | 0 | The paper is a narrative review on polypharmacy and bone health in diabetes, mentioning sitagliptin only in the context of its anti-osteoporotic effects, without reporting any pharmacokinetic parameters. |
 | PD | Kashmoola_2026 | not_relevant | 0 | 0 | The paper is a narrative review on polypharmacy and bone health in T2DM and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for sitagliptin. |
 | popPK | Kaur_2022 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new DPP-4 inhibitors, using sitagliptin only as a comparator for IC50 values, and contains no pharmacokinetic data. |
 | PD | Kaur_2022 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for new peptide esters compared to sitagliptin, but does not provide a pharmacokinetic/pharmacodynamic model, exposure-response relationship, or numeric PD parameters (like Emax, EC50 in vivo, or slope) for sitagliptin. |
 | popPK | Khamees_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic and synthetic chemistry paper where sitagliptin is used only as a comparator for enzyme inhibition, with no pharmacokinetic parameters reported. |
 | PD | Khamees_2024 | not_relevant | 2 | 2 | The paper reports in vitro IC50 values for sitagliptin as a reference control, but does not present a pharmacokinetic or pharmacodynamic model, exposure-response analysis, or dose-response curve for sitagliptin in vivo or in a PK/PD context. |
 | popPK | Khan_2025 | irrelevant | 0 | 0 | The study is an in vitro/in silico investigation of a plant extract's DPP-4 inhibitory activity, using sitagliptin only as a positive control, and does not report any pharmacokinetic parameters for sitagliptin. |
-| popPK | Kim_2013 | relevant | 9 | 0 | The paper describes a population PK/PD study of sitagliptin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
-| popPK | Kim_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacological mechanism of DA-1241, and sitagliptin is used only as a comparator agent without any PK parameter reporting. |
+| popPK | Kim_2013 | relevant | 9 | 0 | The paper describes a population PK/PD study of sitagliptin in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Kim_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacological mechanism of DA-1241, with sitagliptin used only as a comparator agent in mice, and no PK parameters for sitagliptin are reported. |
 | PD | Kim_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of DA-1241; sitagliptin is only used as a comparator in combination studies without any reported exposure-response or dose-response analysis for sitagliptin itself. |
 | popPK | Kim_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of evogliptin, not sitagliptin. |
 | PD | Kim_2025 | not_relevant | 0 | 0 | The paper reports a PD model for evogliptin, not sitagliptin. |
@@ -216,7 +212,7 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Krishna_2007 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (cyclosporine) rather than a pharmacogenomic effect (gene variant/genotype). |
 | popPK | Kumar_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic/chemical synthesis paper comparing DPP-4 inhibition potency (IC50) of new compounds to sitagliptin, reporting no pharmacokinetic parameters. |
 | PD | Kumar_2025 | not_relevant | 1 | 1 | The paper reports a single in vitro IC50 value for sitagliptin as a reference standard but does not provide a concentration-effect curve, dose-response analysis, or PK/PD model for the drug. |
-| popPK | La_2025 | irrelevant | 0 | 0 | The study focuses on the discovery of GPR119 agonists, with sitagliptin serving only as a comparator drug, and no PK parameters for sitagliptin are reported. |
+| popPK | La_2025 | irrelevant | 0 | 0 | The study focuses on the discovery of GPR119 agonists, with sitagliptin used only as a comparator agent, and no PK parameters for sitagliptin are reported. |
 | PD | La_2025 | not_relevant | 0 | 0 | The paper focuses on the discovery of GPR119 agonists and only uses sitagliptin as a qualitative comparator in efficacy studies, without reporting any exposure-response or dose-response PD parameters for sitagliptin. |
 | popPK | Lee_2026 | irrelevant | 0 | 0 | The study focuses on isobavachalcone as a DPP4 inhibitor, with sitagliptin serving only as a positive control/comparator, and no PK parameters for sitagliptin are reported. |
 | PD | Lee_2026 | not_relevant | 3 | 2 | The paper reports an IC50 for isobavachalcone and compares its in vivo efficacy to sitagliptin, but it does not provide a concentration-effect or dose-response curve or numeric PD parameters (Emax, EC50, slope) for sitagliptin itself. |
@@ -238,7 +234,7 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Maslov_2022 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for a novel compound (neogliptin) and compares it to sitagliptin, but does not report any pharmacodynamic (exposure-response or dose-response) analysis or numeric PD parameters for sitagliptin itself. |
 | popPK | Melin_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dapagliflozin, not sitagliptin. |
 | PD | Melin_2022 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PK) of dapagliflozin and does not report any pharmacodynamic (PD) or exposure-response analysis for sitagliptin or any other drug. |
-| PGx | Meng_2025 | not_relevant | 0 | 0 | The study evaluates the therapeutic efficacy of sitagliptin in a diabetic mouse model of COVID-19 but does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Meng_2025 | not_relevant | 0 | 0 | The study evaluates the therapeutic efficacy of sitagliptin in a diabetic mouse model of COVID-19 but does not report pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Mengesha_2025 | irrelevant | 0 | 0 | The study is a cross-sectional epidemiological survey of drug interactions and does not report any quantitative pharmacokinetic parameters for sitagliptin. |
 | popPK | Mhadhbi_2025 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
 | PD | Mhadhbi_2025 | not_relevant | 0 | 0 | The paper discusses a cobalt complex as a photocatalyst and enzyme inhibitor, not sitagliptin, and contains no pharmacodynamic or exposure-response data for the target drug. |
@@ -255,13 +251,13 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Nidhar_2023 | not_relevant | 1 | 1 | The paper reports in vitro IC50 values for novel compounds compared to sitagliptin, but does not provide an exposure-response or dose-response analysis for sitagliptin itself. |
 | popPK | Ortiz-Seller_2026 | irrelevant | 0 | 0 | The paper is a network meta-analysis of clinical trials assessing the risk of diabetic retinopathy, not a pharmacokinetic study, and contains no PK parameters for sitagliptin. |
 | PD | Ortiz-Seller_2026 | not_relevant | 1 | 0 | The paper is a network meta-analysis of clinical outcomes (diabetic retinopathy) and explicitly reports no dose-response relationship; it does not contain pharmacokinetic or pharmacodynamic modeling or numeric PD parameters. |
-| popPK | Othman_2026 | irrelevant | 0 | 0 | The study investigates linagliptin and cefixime, not sitagliptin. |
+| popPK | Othman_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of linagliptin and cefixime, not sitagliptin. |
 | PD | Othman_2026 | not_relevant | 0 | 0 | The paper focuses on the development and validation of an HPLC method and reports only pharmacokinetic parameters (Cmax, AUC) for linagliptin and cefixime, with no pharmacodynamic or exposure-response analysis. |
-| popPK | Park_2015 | irrelevant | 0 | 0 | The study focuses on the synthesis and efficacy of novel glucokinase activators, using sitagliptin only as a comparator in an OGTT assay without reporting any pharmacokinetic parameters for sitagliptin. |
+| popPK | Park_2015 | irrelevant | 0 | 0 | The study focuses on the synthesis and efficacy of novel glucokinase activators, using sitagliptin only as a comparator in an oral glucose tolerance test without reporting any pharmacokinetic parameters for sitagliptin. |
 | PD | Park_2015 | not_relevant | 0 | 0 | The paper focuses on the discovery of novel glucokinase activators; sitagliptin is mentioned only as a qualitative comparator in an OGTT study, with no PD model or exposure-response analysis for sitagliptin. |
 | popPK | Passari_2020 | irrelevant | 0 | 0 | The study focuses on the antioxidant properties of a bacterial extract, using sitagliptin only as a positive control for lipid profile changes, with no pharmacokinetic parameters reported. |
 | PD | Passari_2020 | not_relevant | 0 | 0 | The paper studies the bioactive properties of a bacterial extract (Streptomyces sp. DBT34) and only mentions sitagliptin as a standard control in a rat study without providing any pharmacodynamic or exposure-response data for sitagliptin. |
-| popPK | Posada_2025 | irrelevant | 0 | 0 | The study focuses on dulaglutide and its effect on gastric emptying, with no mention of sitagliptin as the subject drug or any sitagliptin PK parameters. |
+| popPK | Posada_2025 | irrelevant | 0 | 0 | The study focuses on dulaglutide and its effect on gastric emptying, with no mention of sitagliptin as the subject drug. |
 | PD | Posada_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of dulaglutide and its effect on gastric emptying and co-administered drugs, not on the pharmacodynamics of sitagliptin. |
 | popPK | Prajapati_2024 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro enzymatic activity of novel boronic acid compounds, using sitagliptin only as a comparator for IC50 values without reporting any pharmacokinetic parameters for sitagliptin. |
 | PD | Prajapati_2024 | not_relevant | 1 | 1 | The paper reports an IC50 for sitagliptin (17.3 nM) as a reference standard for new compounds, but does not report a PD model, exposure-response relationship, or dose-response curve for sitagliptin itself. |
@@ -272,7 +268,7 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Rizk_2026 | irrelevant | 0 | 0 | The study is a medicinal chemistry and in-vitro pharmacological evaluation of novel compounds, using sitagliptin only as a positive control for DPP-4 inhibition, with no pharmacokinetic data reported. |
 | popPK | Rjoob_2025 | irrelevant | 0 | 0 | The paper is a bioinformatics study on knowledge graphs for drug repurposing and does not report any pharmacokinetic parameters for sitagliptin. |
 | PD | Rjoob_2025 | not_relevant | 0 | 0 | The paper describes a knowledge graph for cardiovascular disease and drug repurposing, mentioning gliptins only as a candidate therapy without providing any pharmacokinetic or pharmacodynamic data for sitagliptin. |
-| popPK | Rjoob_2026 | irrelevant | 0 | 0 | The paper is a bioinformatics study on a cardiovascular knowledge graph and does not report any pharmacokinetic parameters for sitagliptin. |
+| popPK | Rjoob_2026 | irrelevant | 0 | 0 | The paper is a bioinformatics study on a knowledge graph for cardiovascular disease and does not report any pharmacokinetic parameters for sitagliptin. |
 | PD | Rjoob_2026 | not_relevant | 0 | 0 | The paper describes a knowledge graph for cardiovascular disease and drug repurposing predictions but does not report any pharmacodynamic or exposure-response data for sitagliptin. |
 | popPK | Saito_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ipragliflozin, not sitagliptin. |
 | PD | Saito_2019 | not_relevant | 0 | 0 | The paper reports a PK/PD model for ipragliflozin, not sitagliptin. |
@@ -282,11 +278,11 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Salvatore_2026 | not_relevant | 0 | 0 | The paper is a phenome-wide association study using electronic health records to compare clinical outcomes (diagnoses) between drug classes; it does not report pharmacokinetic data, exposure-response relationships, or numeric pharmacodynamic parameters (e.g., Emax, EC50) for sitagliptin. |
 | popPK | Sanches_2026 | irrelevant | 0 | 0 | The paper focuses on biomarkers for papillary thyroid cancer and does not involve sitagliptin or pharmacokinetic parameters. |
 | PD | Sanches_2026 | not_relevant | 0 | 0 | The paper focuses on biomarker discovery for papillary thyroid cancer using machine learning and omics data, and does not contain any pharmacodynamic or exposure-response analysis for sitagliptin. |
-| popPK | Saro_2026 | irrelevant | 2 | 0 | The study reports only non-compartmental bioequivalence metrics (Cmax, AUC) without specific numeric values or compartmental PK parameters (CL, V, ka). |
+| popPK | Saro_2026 | irrelevant | 2 | 0 | The study reports only bioequivalence metrics (Cmax, AUC) without specific numeric values or compartmental PK parameters (CL, V, ka). |
 | PGx | Scheen_2010 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for DPP-4 inhibitors and does not report any pharmacogenomic effects (gene variants) on sitagliptin PK or PD. |
-| popPK | Schultz_2026 | irrelevant | 0 | 0 | The paper studies the intracellular distribution of BRP-685 (a FLAP antagonist) in macrophages using Raman spectroscopy and does not report pharmacokinetic parameters for sitagliptin. |
+| popPK | Schultz_2026 | irrelevant | 0 | 0 | The paper investigates the intracellular distribution of the FLAP antagonist BRP-685 in macrophages using Raman spectroscopy and does not involve sitagliptin or report any pharmacokinetic parameters. |
 | PD | Schultz_2026 | not_relevant | 0 | 0 | The paper focuses on the intracellular localization of a 5-lipoxygenase-activating protein antagonist (BRP-685) using Raman spectroscopy and does not report any pharmacodynamic or exposure-response data for sitagliptin. |
-| PGx | Seo_2020 | not_relevant | 0 | 0 | The paper focuses on machine learning prediction of drug side effects and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of sitagliptin. |
+| PGx | Seo_2020 | not_relevant | 0 | 0 | The paper focuses on predicting drug side effects using machine learning and does not report pharmacogenomic effects on PK/PD parameters for sitagliptin. |
 | popPK | Sever_2020 | irrelevant | 0 | 0 | The study is an in-vitro medicinal chemistry paper evaluating DPP-4 inhibitory activity (IC50) and does not report any pharmacokinetic parameters for sitagliptin. |
 | PD | Sever_2020 | not_relevant | 3 | 2 | The paper reports an IC50 for sitagliptin as a reference standard in an in vitro assay, but does not provide a concentration-effect curve, slope, or any other numeric PD parameters for sitagliptin itself, nor does it model its PK/PD. |
 | popPK | Shahzadi_2026 | irrelevant | 0 | 0 | The study investigates the antidiabetic effects of a plant extract in rats and does not report any pharmacokinetic parameters for sitagliptin. |
@@ -295,7 +291,7 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Singh_2020 | irrelevant | 0 | 0 | The study is an in vitro/in silico investigation of DPP-IV inhibition and antioxidant properties where sitagliptin is used only as a standard comparator, and no pharmacokinetic parameters are reported. |
 | PD | Singh_2020 | not_relevant | 0 | 0 | The paper focuses on the in silico, in vitro, and ex vivo inhibition of DPP-IV by quercetin and coumarin, and does not report any pharmacokinetic or pharmacodynamic data for sitagliptin. |
 | PD | Siva_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic interaction between Corilagin and Sitagliptin using CYP450 and network pharmacology, with no report of pharmacodynamic or exposure-response relationships. |
-| PGx | Siva_2025 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (Corilagin affecting Sitagliptin PK) rather than a pharmacogenomic effect (gene variant/genotype). |
+| PGx | Siva_2025 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (Corilagin affecting Sitagliptin PK) rather than a pharmacogenomic effect (gene variant/genotype). |
 | popPK | Sommer_2024 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study analyzing adverse drug reactions (falls and bleeding) using regression models, not a pharmacokinetic study, and contains no PK parameters for sitagliptin. |
 | PD | Sommer_2024 | not_relevant | 0 | 0 | The paper analyzes adverse drug reactions in polypharmacy using regression models on real-world data and does not report any pharmacodynamic, exposure-response, or dose-response relationships for sitagliptin. |
 | popPK | Soni_2025 | irrelevant | 0 | 0 | The study is a mechanistic neuroprotection investigation in mice that reports behavioral and molecular outcomes, not quantitative pharmacokinetic parameters for sitagliptin. |
@@ -307,32 +303,32 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Tasnim_2024 | irrelevant | 0 | 0 | The paper is a review of drug-drug interactions and does not report original quantitative pharmacokinetic parameters for sitagliptin. |
 | PD | Tasnim_2024 | not_relevant | 1 | 0 | The paper is a qualitative review of drug-drug interactions and does not report any numeric pharmacodynamic parameters or concentration-effect relationships for sitagliptin. |
 | popPK | Tatosian_2013 | irrelevant | 2 | 0 | The study reports pharmacodynamic (DPP-4 inhibition) data and references a PK table (Table 2) that is cut off, so no quantitative PK parameters (CL, V, t1/2) for sitagliptin are present in the evidence. |
-| popPK | Tham_2022 | irrelevant | 0 | 0 | The study focuses on semaglutide and dulaglutide exposure-response modeling for HbA1c and weight, with no mention of sitagliptin or its pharmacokinetic parameters. |
+| popPK | Tham_2022 | irrelevant | 0 | 0 | The study focuses on exposure-response modeling of HbA1c and body weight for semaglutide and dulaglutide, with no mention of sitagliptin pharmacokinetics. |
 | PD | Tham_2022 | not_relevant | 0 | 0 | The paper focuses on dulaglutide and semaglutide, not sitagliptin, and does not report PD parameters for the target drug. |
 | popPK | Tyurenkov_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the novel GPR119 agonist ZB-16, with sitagliptin used only as a comparator for hypoglycemic efficacy, and no PK parameters for sitagliptin are reported. |
 | PD | Tyurenkov_2018 | not_relevant | 0 | 0 | The paper focuses on the novel compound ZB-16; sitagliptin is used only as a single-dose comparator in efficacy studies without any exposure-response modeling or derivation of PD parameters for sitagliptin. |
-| popPK | Utzschneider_2025 | irrelevant | 0 | 0 | The study focuses on beta-cell function parameters (ISR, sensitivity) derived from OGTT modeling, not pharmacokinetic disposition parameters (CL, V, ka) for sitagliptin. |
+| popPK | Utzschneider_2025 | irrelevant | 0 | 0 | The study focuses on beta-cell function parameters (insulin secretion, sensitivity) rather than the pharmacokinetic disposition parameters (CL, V, ka) of sitagliptin. |
 | popPK | Vawhal_2023 | irrelevant | 0 | 0 | The study is an in vitro enzyme assay and computational analysis of new compounds, using sitagliptin only as a reference standard for IC50, with no pharmacokinetic parameters reported. |
 | PD | Vawhal_2023 | not_relevant | 1 | 1 | The paper reports a single IC50 value for sitagliptin as a reference standard in an in vitro enzyme assay, but does not provide an exposure-response or dose-response curve, nor does it report PK/PD modeling parameters. |
 | PGx | Vincent_2007 | not_relevant | 0 | 0 | The paper describes general metabolism and excretion of sitagliptin in humans but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Vogel_2024 | irrelevant | 0 | 0 | The paper is a wastewater-based epidemiology study focused on analytical methods for substance use assessment and does not report pharmacokinetic parameters for sitagliptin. |
+| popPK | Vogel_2024 | irrelevant | 0 | 0 | The paper is a wastewater-based epidemiology study focused on substance use assessment and does not report pharmacokinetic parameters for sitagliptin. |
 | PD | Vogel_2024 | not_relevant | 0 | 0 | The paper focuses on wastewater-based epidemiology and analytical methods for substance detection, containing no pharmacokinetic or pharmacodynamic data for sitagliptin. |
-| popPK | Vélez_2014 | relevant | 9 | 0 | The paper describes a population PK/PD model for sitagliptin in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Vélez_2014 | relevant | 9 | 0 | The paper describes a population PK/PD model for sitagliptin, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | PD | Vélez_2014 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or results necessary to verify the presence of numeric PD parameters or an exposure-response relationship. |
 | popPK | Wang_2021 | irrelevant | 0 | 0 | The study investigates cetagliptin as the subject drug, with sitagliptin serving only as a positive control/comparator. |
 | popPK | Wright_2009 | irrelevant | 0 | 0 | The study assesses the pharmacokinetics of warfarin (the subject drug) in the presence of sitagliptin (a co-administered agent), and does not report quantitative PK parameters for sitagliptin itself. |
 | popPK | Wu_2024 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
 | PD | Wu_2024 | not_relevant | 0 | 0 | The paper focuses on the enzymatic inhibition of DPP-IV by peptides from Tartary Buckwheat protein, not the pharmacodynamics of the drug sitagliptin. |
-| popPK | Yang_2025 | irrelevant | 0 | 0 | The study focuses on the design, synthesis, and in-vitro/in-vivo antidiabetic activity of new dual-target compounds, not the pharmacokinetic disposition of sitagliptin itself. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The study focuses on the design and synthesis of new dual-target compounds and their in vitro/in vivo efficacy, not on the pharmacokinetic parameters of sitagliptin itself. |
 | PD | Yang_2025 | not_relevant | 3 | 2 | The paper reports in vitro potency (IC50/EC50) for a new dual-target compound, not a pharmacodynamic exposure-response or dose-response relationship for sitagliptin itself. |
-| popPK | Yang_2025_2 | irrelevant | 0 | 0 | The paper is a review on in silico modeling and AI for drug disposition across the lifespan and does not report specific quantitative PK parameters for sitagliptin. |
+| popPK | Yang_2025_2 | irrelevant | 0 | 0 | The paper is a review of in silico modeling tools (PBPK/QSP/AI) and does not report quantitative pharmacokinetic parameters for sitagliptin. |
 | PD | Yang_2025_2 | not_relevant | 0 | 0 | The paper is a review of in silico and AI modeling methods and does not report specific PD or exposure-response data for sitagliptin. |
 | popPK | Yao_2023 | irrelevant | 0 | 0 | The study focuses on SGLT2 inhibitors (dapagliflozin, canagliflozin, empagliflozin) and does not involve sitagliptin. |
 | PD | Yao_2023 | not_relevant | 0 | 0 | The paper focuses on SGLT2 inhibitors (dapagliflozin, canagliflozin, empagliflozin) and does not report any pharmacodynamic or exposure-response data for sitagliptin. |
 | popPK | Zhang_2021 | irrelevant | 0 | 0 | The study is an in-vitro enzymatic assay measuring IC50 and inhibition kinetics, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Zhang_2024 | irrelevant | 0 | 0 | no_text gate: only 159 chars of text extracted (&lt; 400) |
 | PGx | Zhang_2025 | not_relevant | 0 | 0 | The paper uses Mendelian randomization to identify DPP9 as a drug target for CAA and predicts sitagliptin binding via docking, but it does not report any pharmacogenomic effect of a gene variant on the PK or PD parameters of sitagliptin. |
-| popPK | Zhou_2024 | irrelevant | 2 | 2 | The study's primary subject is cetagliptin, with sitagliptin serving only as a positive control; while some sitagliptin PK values (e.g., t1/2, AUC) are present in the table, the population PK model and detailed disposition parameters (CL, V, Q) are reported for cetagliptin, not sitagliptin. |
+| popPK | Zhou_2024 | irrelevant | 2 | 2 | The study's primary subject is cetagliptin, with sitagliptin serving only as a positive control; while some sitagliptin PK values (t1/2, Vz/F) are present in the table, the paper does not report a population PK model or full disposition parameters for sitagliptin. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

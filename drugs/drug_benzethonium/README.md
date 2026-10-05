@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Benzethonium is a synthetic quaternary ammonium salt with surfactant, antiseptic, and broad spectrum antimicrobial properties. Its salt form, benzethonium chloride, is primarily used as a skin disinfectant at concentrations of 0.1-0.2 %, which are safe and effective concentrations for the compound specified by the U.S. Food and Drug Administration (FDA). It is additionally found in cosmetics and toiletries such as mouthwashes and anti-itch ointments. It is shown to be effective in mediating its antimicrobial action against bacteria, fungi, mold and viruses. There is evidence that benzethonium acts as a spermatocide but may cause vaginal irritation [A32304]. Benzethonium was identified as a novel cancer-specific compound by cell-based small-molecule screen [A32298].
+Benzethonium is a quaternary ammonium antiseptic used as a local anti-infective agent, for example on the skin and in throat preparations. It remains an approved drug and is used in topical and throat antiseptic products, though it is not an EMA-authorised medicine.
 
-**Indication.** Indicated as an antiseptic agent. No therapeutic indications for clinical use.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27166518](https://www.wikidata.org/wiki/Q27166518) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

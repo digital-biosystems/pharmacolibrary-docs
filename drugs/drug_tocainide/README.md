@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antiarrhythmic agent which exerts a potential- and frequency-dependent block of sodium channels.
+Tocainide is a class Ib antiarrhythmic that was used to treat heart arrhythmia and was also studied for trigeminal neuralgia. It has been withdrawn and is no longer in use.
 
-**Indication.** For the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia, that, in the judgment of the physician, are life-threatening.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q757058](https://www.wikidata.org/wiki/Q757058) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Hypochlorite is an ion composed of chlorine and oxygen with the chemical formula ClO−. Being unstable in the pure form, hypochlorite is most commonly used for bleaching, disinfectation, and water treatment purposes in its salt form, sodium hypochlorite. Hypochlorite is often used as a chemical reagent for chlorination and oxidation reactions.
+Hypochlorite (sodium hypochlorite) is an antiseptic and disinfectant used to treat fungal skin infection such as athlete's foot (tinea pedis). It is widely used as a disinfectant, including in water treatment.
 
-**Indication.** Indicated for over-the-counter use as a disinfectant agent in the sodium hypochlorite form.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407204](https://www.wikidata.org/wiki/Q407204) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

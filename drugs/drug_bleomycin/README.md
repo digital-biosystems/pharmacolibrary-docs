@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A complex of related glycopeptide antibiotics from <i>Streptomyces verticillus</i> consisting of bleomycin A2 and B2 (B2 CAS # 9060-10-0). It inhibits DNA metabolism and is used as an antineoplastic, especially for solid tumors. Bleomycin A2 is used as the representative structure for Bleomycin.
+Bleomycin is a cytotoxic antibiotic used as an anticancer medicine to treat various types of cancer. It is an approved cancer drug, used in oncology treatment, and has also been investigated for other uses.
 
-**Indication.** For palliative treatment in the management malignant neoplasm (trachea, bronchus, lung), squamous cell carcinoma, and lymphomas.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q105203558](https://www.wikidata.org/wiki/Q105203558) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -65,8 +65,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted less than 20% of the dose in the urine…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: BLHX (metabolism), BLMH (metabolism), BLMH (substrate), DNA (cleavage), G6PD (safety_allele), H19N07.3 (metabolism), LIG1 (inhibitor), LIG3 (inhibitor), XRCC1 (target).</sub>
 

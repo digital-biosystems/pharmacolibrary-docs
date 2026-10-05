@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Enoximone is a selective phosphodiesterase inhibitor with vasodilating and positive inotropic activity that does not cause changes in myocardial oxygen consumption. It is used in patients with congestive heart failure. Trials were halted in the U.S., but the drug is used in various countries.
+Enoximone is a phosphodiesterase inhibitor with cardiotonic and vasodilating effects that was used as a cardiac stimulant in heart failure. It has been withdrawn and is no longer in general use, though it has also been investigated.
 
-**Indication.** For the treatment of congestive heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5379471](https://www.wikidata.org/wiki/Q5379471) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic oxidation…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PDE3A (inhibitor).</sub>
 

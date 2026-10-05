@@ -4,7 +4,7 @@
 
 # alverine — `Alverine_Cho2026_m3_n_desethyl_alverine`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,11 +18,11 @@
 
 ### Reviewer guidance
 
-**Rejected: the alverine record reports only exposure statistics (tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 for M3) with no distribution volume and no clearance, so it is not a compartmental population PK model.**
+**The alverine record in mice was rejected because it reports only exposure metrics (tmax 0.7000 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L) with no distribution volume or clearance, plus a dimension mismatch and unlinked metabolites.**
 
-The paper reports no distribution volume and no clearance or elimination for alverine; it is an exposure/outcome paper, not a compartmental population PK model. The model structure also failed structural checks: a dimension mismatch on a structural parameter, and an unreachable compartment or unlinked metabolite — the metabolism chain links alverine to M1 and M3 and M1 to M2, leaving part of the structure without a path from the dose. Additionally, one reported parameter unit could not be converted to SI units, so that parameter was carried without a usable numeric value. Extracted — M3: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 Metabolite/Parent.
+The paper reports no distribution volume and no clearance or elimination rate for alverine, so it is an exposure/outcome paper rather than a compartmental population PK model. The metabolites M1, M2 and M3 have no compartments (n_cmt 0), leaving unreachable or unlinked metabolites, and a structural parameter failed a dimension check. The unit 'Metabolite/Parent' on the AUC ratio (0.0064 for M3) could not be converted to SI. A second reader disagreed on the dose compound and primary analyte (alverine) and on whether tmax, Cmax and AUClast values belong to the record. Extracted — alverine: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L; M3: AUC ratio 0.0064 Metabolite/Parent.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -62,8 +62,14 @@ Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics &
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alverine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 3 first-order transfer(s) across 4 compounds → general_linear
+- template fit: none — only the metabolite is modelled — no parent compartment (site hepatic: 'Beyond PBPK modeling, semi‐physiological population PK approaches have incorporated presystemic metabolite formation usi')
 - status held at route_to_review — not promoted
 - population split: 'm3 (n‐desethyl alverine)' subgroup of Cho_2026 (paper reports 7 populations: estimate, m1, m1 (4‐hydroxy alverine), m2 (4‐hydroxy alverine glucuronide), m3 (n‐desethyl alverine), parent (alverine), po)
+- row roles (LLM): model_class=compartmental; 32/32 row label(s) assigned, 43 linked by role; re-tagged parent→M1 ×11, parent→M3 ×10, parent→M2 ×5, M1→parent ×3, M2→parent ×5, M3→parent ×3
+- molar mass: no plausible PubChem entry for 'M3' ('N-desethyl alverine') — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'M2' (LLM) — left in mass units
+- molar mass: none found for 'M2' — its concentrations stay mass-only
+- molar mass: none found for 'M3' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
@@ -89,14 +95,27 @@ Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics &
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[auclast]` | 0.0036 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auclast]` | not captured | 0.0036 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | 0.0021 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | not captured | 0.0021 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | 0.7000 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | not captured | 0.7000 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | alverine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | alverine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -138,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 08:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:23 UTC</sub>

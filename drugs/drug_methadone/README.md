@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Methadone is a potent synthetic analgesic that works as a full µ-opioid receptor (MOR) agonist and N-methyl-d-aspartate (NMDA) receptor antagonist. As a full MOR agonist, methadone mimics the natural effects of the body's opioids, endorphins, and enkephalins through the release of neurotransmitters involved in pain transmission. It also has a number of unique characteristics that have led to its increased use in the last two decades; in particular, methadone has a lower risk of neuropsychiatric toxicity compared to other opioids (due to a lack of active metabolites), minimal accumulation in renal failure, good bioavailability, low cost, and a long duration of action.[F4685,F4688,F4691,A185885,A185900,A185903] 
+Methadone is an opioid used to treat opiate dependence and is also used for pain relief. It is an approved medicine, listed as a WHO essential medicine, and is widely used, though it carries a boxed warning.
 
-Due to its unique mechanism of action, methadone is particularly useful for the management of hard to treat pain syndromes such as neuropathic pain and cancer pain requiring higher and more frequent doses of shorter-acting opioids.[A185888,A185891,A185897] Compared with [morphine], the gold standard reference opioid, methadone also acts as an agonist of κ- and σ-opioid receptors, as an antagonist of the N-methyl-D-aspartate (NMDA) receptor, and as an inhibitor of serotonin and norepinephrine uptake.[A497,A5344] Specifically by inhibiting the NMDA receptor, methadone dampens a major excitatory pain pathway within the central nervous system.[A185876] Compared to other opioids, methadone's effects on NMDA inhibition may explain it's improved analgesic efficacy and reduced opioid tolerance.[A185891,A185894]
-
-Methadone shares similar effects and risks of other opioids such as [morphine], [hydromorphone], [oxycodone], and [fentanyl]. However, it also has a unique pharmacokinetic profile. Compared with short-acting and even extended-release formulations of [morphine], methadone displays a comparatively longer duration of action and half-life. These effects make methadone a good option for the treatment of severe pain and addiction as fewer doses are needed to ma
-
-**Indication.** Methadone is indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatment options are inadequate. It's recommended that use is reserved for use in patients for whom alternative treatment options (eg, nonopioid analgesics, opioid combination products) are ineffective, not tolerated, or would be otherwise inadequate to provide sufficient management of pain.[F4688]
-
-Methadone is also indicated for detoxification treatment of opioid addiction (heroin or other morphine-like drugs), and for maintenance substitution treatment for opioid dependence in adults in conjunction with appropriate social and medical services.[F4685,F4691]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q179996](https://www.wikidata.org/wiki/Q179996) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,7 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | bile duct | <sub>“…likely due to enterohepatic circulation…”</sub> | prose |
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
@@ -47,11 +41,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…which are excreted mainly in the urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer/substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…renal and fecal excretion…”</sub> | prose |
-| excretion | kidney | <sub>“…renal and fecal excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | adipose tissue | `CYP19A1` substrate | DrugBank actor |
 | — | ovary | `CYP19A1` substrate | DrugBank actor |
 | — | testis | `CYP19A1` substrate | DrugBank actor |

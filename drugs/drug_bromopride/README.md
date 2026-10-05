@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;bromopride&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bromopride_LachiSilva2020_reference&quot;,&quot;label&quot;:&quot;Lachi-Silva_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # bromopride
 
@@ -10,21 +11,29 @@
 
 ## About
 
-**Description.** Bromopride is a dopamine antagonist used as an antiemetic. Its prokinetic properties are similar to those of metoclopramide. It is unavailable in America or the United Kingdom.
+Bromopride is a dopamine antagonist antiemetic and propulsive drug used to treat indigestion and other functional gastrointestinal problems. It is not approved in major markets such as the European Union or the United States and is considered investigational, though it has been used in some countries, mainly in Latin America.
 
-**Indication.** Bromopride in indicated in the treatment of nausea and vomiting, including PONV (post-operative nausea and vomiting), gastroesophageal reflux disease (GERD/GORD), as well as endoscopy preparation and radiographic studies of the GI tract.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1958189](https://www.wikidata.org/wiki/Q1958189) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| bromopride | parent | 344.247 | C14H22BrN3O2 | DrugBank | [2446](https://pubchem.ncbi.nlm.nih.gov/compound/2446) | Lachi-Silva_2020 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 11:43 | 0:32 | 0/0/1 | 0/0/0 | 0/0/0 | 9,892/1,013 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 13:38 | 2:16 | 1/0/0 | 0/0/0 | 0/0/0 | 19,927/5,933 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | held back | 1-compartment, oral | 5 | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
 
 ## ADME sites
 
@@ -32,7 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DRD2 (target).</sub>
 
@@ -46,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,11 +64,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Brodie_1986.pdf` | Brodie RR et al., Pharmacokinetics and bioavailability of…, Biopharmaceutics & drug dis… (1986) | popPK | 10 | [10.1002/bdd.2510070302](https://doi.org/10.1002/bdd.2510070302) | [3730521](https://pubmed.ncbi.nlm.nih.gov/3730521) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, half-life) for bromopride in humans with specific numeric values provided in the text. |
-| `Lachi-Silva_2020.pdf` | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | popPK | 10 | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) | [31669384](https://pubmed.ncbi.nlm.nih.gov/31669384) | The paper reports a population PK model for bromopride with explicit numeric values for clearance, volume, and absorption parameters in the text. |
-| `Jung_1982.pdf` | Jung L et al., [Bromopride: pharmacokinetics in dogs (…, Arzneimittel-Forschung (1982) | popPK | 9 | not captured | [7201828](https://pubmed.ncbi.nlm.nih.gov/7201828) | The paper describes a pharmacokinetic study of bromopride in dogs using compartmental models, but the provided evidence contains only qualitative descriptions and no specific numeric parameter values. |
+| `Brodie_1986.pdf` | Brodie RR et al., Pharmacokinetics and bioavailability of…, Biopharmaceutics & drug dis… (1986) | popPK | 10 | [10.1002/bdd.2510070302](https://doi.org/10.1002/bdd.2510070302) | [3730521](https://pubmed.ncbi.nlm.nih.gov/3730521) | The abstract explicitly reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for bromopride in human subjects. |
+| `Jung_1982.pdf` | Jung L et al., [Bromopride: pharmacokinetics in dogs (…, Arzneimittel-Forschung (1982) | popPK | 10 | not captured | [7201828](https://pubmed.ncbi.nlm.nih.gov/7201828) | The study reports pharmacokinetic parameters for bromopride in dogs, but the specific numeric values are not present in the provided evidence. |
+| `Lachi-Silva_2020.pdf` | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | popPK | 10 | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) | [31669384](https://pubmed.ncbi.nlm.nih.gov/31669384) | The paper reports a population pharmacokinetic model for bromopride with explicit numeric values for clearance, volume of distribution, and absorption parameters in the abstract. |
 
-<sub>queue written 2026-09-18T11:43:14.712521+00:00</sub>
+<sub>queue written 2026-10-04T13:36:54.301986+00:00</sub>
 
 ## Screened and excluded
 
@@ -67,8 +76,8 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | PD | Blanes_1991 | not_relevant | 0 | 0 | The paper reports in vitro transdermal permeation parameters (Kp, lag time, flux), which are physicochemical/transport properties, not pharmacodynamic exposure- or dose-response relationships. |
 | PD | Brodie_1986 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (clearance, volume, half-life, bioavailability) and dose-proportional plasma concentrations, with no pharmacodynamic or exposure-response data. |
-| popPK | Jung_1982 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of bromopride in dogs using compartmental models, but the provided evidence contains only qualitative descriptions and no specific numeric parameter values. |
+| popPK | Jung_1982 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for bromopride in dogs, but the specific numeric values are not present in the provided evidence. |
 | PD | Lachi-Silva_2020 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic (PK) parameters only and does not contain any pharmacodynamic (PD) or exposure-response data. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 11:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 13:36 UTC</sub>

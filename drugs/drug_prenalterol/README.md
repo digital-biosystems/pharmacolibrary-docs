@@ -8,6 +8,12 @@
 - **molar mass:** 225.288 g/mol (C12H19NO3) — DrugBank
 - **groups:** experimental
 
+## About
+
+Prenalterol is a sympathomimetic, beta-1 adrenergic agonist that was investigated as a cardiotonic agent for heart conditions. It is considered experimental and does not appear to be an approved medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7240518](https://www.wikidata.org/wiki/Q7240518) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

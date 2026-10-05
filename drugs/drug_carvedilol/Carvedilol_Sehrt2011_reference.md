@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Sehrt_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Hwang_2023_HR&quot;,&quot;label&quot;:&quot;Hwang_2023 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Hwang_2023_HR.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yamamoto_2024_E&quot;,&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/pd_Yamamoto_2024_E.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +16,9 @@
 
 ### Reviewer guidance
 
-**The carvedilol record was rejected because its metabolites (desmethylcarvedilol, 4'-OH- and 5'-OH-carvedilol) are unlinked to the dose, and the clearance parameters carry a '%' unit that could not be converted to SI.**
+**The carvedilol model was rejected because its three metabolites (desmethylcarvedilol, 4'-OH- and 5'-OH-carvedilol) are unlinked, and the clearance variation of 24.4% could not be converted to SI units.**
 
-The model links carvedilol to three metabolites by metabolism, but these metabolites have no path from the dose, so the structure check failed. The genotype-effect clearance parameter (24.4%) and CL/F (29.4 l/h) were extracted, but the '%' unit could not be converted to SI. A second reader also disagreed on the primary analyte (carvedilol vs R- and S-carvedilol), on splitting the metabolism links into stereoisomer-specific ones, and on whether the 29.4 and 24.4 values belong to these parameters; it additionally read a central volume of 142.8 l per 73 kg that this record lacks. Extracted — R-carvedilol and S-carvedilol: CL 24.4 %, CL/F 29.4 l/h.
+The metabolism links from carvedilol to desmethylcarvedilol, 4'-OH-carvedilol and 5'-OH-carvedilol carry no parameter value, leaving the metabolites without a path from the dose. The reported clearance variation of 24.4% for R-carvedilol (CYP2D6 genotype effect) is expressed as a percentage, a unit for which no SI value could be established, so the parameter entered the record without a usable numeric value. A second reader also disputed the primary analyte (carvedilol versus R- and S-carvedilol), the existence of the metabolism links, and the CL/F value of 29.4 l/h, which they attributed to a differently named parameter. Extracted — R-carvedilol and S-carvedilol: CL 24.4 %, CL/F 29.4 l/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-carvedilol and S-carvedilol, the second reading carvedilol; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

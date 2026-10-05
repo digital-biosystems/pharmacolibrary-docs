@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** The most significant modifiable risk factor for cardiovascular disease and the most prominent contributor to all-cause mortality is hypertension.[A204155] Characterized by an office blood pressure of ≥140/90, hypertension is pervasive and impacts an estimated 25% of adults globally.[A204155] Treatment for hypertension should include a number of lifestyle changes (ie. reduced sodium intake) along with pharmacotherapy - it should be noted that treatment with several antihypertensive agents may be required in order to achieve blood pressure targets.[A204155]
+Indapamide is a diuretic and antihypertensive medicine used to treat arterial hypertension, congestive heart failure, nephrotic syndrome and anasarka. It is an approved drug, widely used in cardiovascular care, and is also available in fixed combinations with ACE inhibitors and lipid-lowering agents.
 
-Thiazide-like diuretics such as indapamide are a valuable tool for the treatment of hypertension and continue to grow in popularity, falling behind only ACE inhibitors in terms of prescription frequency.[A204134] When compared to [hydrochlorothiazide] (another commonly prescribed diuretic), indapamide has been shown to be superior at lowering systolic blood pressure, reducing left ventricular mass index, lowering oxidative stress, inhibiting platelet aggregation, and reducing microalbuminuria associated with diabetes.[A204134] Interestingly, unlike thiazide diuretics, several sources suggest that indapamide is not associated with glucose or lipid disturbances.[A204134,A204161] 
-
-Indapamide is characterized by both a methylindoline and a sulfamoyl chlorobenzamide functional group, with the former being largely responsible for the molecule’s lipid solubility.[A204158]
-
-**Indication.** Indapamide is a diuretic indicated for use as monotherapy or in combination with other blood pressure-lowering agents to treat hypertension.[L13982] It may also be used to treat fluid and salt retention associated with congestive heart failure.[L13982]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1078392](https://www.wikidata.org/wiki/Q1078392) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,12 +40,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…bioavailability of indapamide is virtually complete after an oral dose…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `EPHX1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…16-23% is eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Erythrocyte (binder), KCNQ1 (blocker), SLC12A3 (inhibitor).</sub>
 

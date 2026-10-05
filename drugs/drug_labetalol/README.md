@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Labetalol is a racemic mixture of 2 diastereoisomers where dilevalol, the R,R' stereoisomer, makes up 25% of the mixture.[L7730] Labetalol is formulated as an injection or tablets to treat hypertension.[L7727,L7730]
+Labetalol is a beta blocker with alpha-blocking activity used to treat high blood pressure, including severe forms, as well as heart-related conditions such as angina, heart attack, and heart failure. It is an approved medicine and remains in general clinical use, often in hospital settings for hypertensive emergencies.
 
-Labetalol was granted FDA approval on 1 August 1984.[L7724]
-
-**Indication.** Labetalol injections are indicated to control blood pressure in severe hypertension.[L7727] Labetalol tablets are indicated alone or in combination with antihypertensives like thiazides and loop diuretics to manage hypertension.[L7730]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q958087](https://www.wikidata.org/wiki/Q958087) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -63,8 +61,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…12-27% recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…55-60% recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCB5 (unknown), ADRA1A (target), ADRB1 (target), ADRB2 (target).</sub>
 

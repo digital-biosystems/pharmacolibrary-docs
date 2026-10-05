@@ -4,7 +4,7 @@
 
 # papaverine — `Papaverine_Ritschel1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,15 +20,17 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — papaverine: V 15 % of the body weight.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of biological half-life: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has papaverine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:23.100728+00:00) predates the upstream re-run (2026-10-04 12:51:32.486997+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977)
 
 ## Model component
-<dbs-pgx drug="papaverine" model-id="Papaverine_Ritschel1977_reference" status="needs_review" stale="false" population="man" measured-compound="papaverine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="papaverine" model-id="Papaverine_Ritschel1977_reference" status="needs_review" stale="true" population="man" measured-compound="papaverine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -40,7 +42,7 @@ Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution | `Q61` · V | 15 | % of the body weight | not captured | [%] · [ofthebodyweight] | not captured | exact (1.0) | Ritschel_1977:abstract | — | not captured |
+| volume of distribution | `Q61` · V | 15 | L | 0.015 | L | not captured | exact (1.0) | Ritschel_1977:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,9 +58,8 @@ Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal
 
 **Interpretation flags:**
 - unit_dimension_unknown: '% of the body weight' (V)
+- implicit units: 'volume of distribution' → L (from the popPK convention: 'Volume of distribution is conventionally expressed in liters (L) in population pharmacokinetic studies, and the value 15')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=papaverine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -68,19 +69,23 @@ Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[biological half-life of papaverine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[biological half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[biological half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | 15 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | papaverine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | papaverine | unknown | mismatch |
 
 </details>
 
@@ -98,8 +103,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Ritschel_1977:abstract'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | % of the body weight | not captured | not captured | ['Ritschel_1977:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ritschel_1977:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 15 L | not captured | not captured | ['Ritschel_1977:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -134,4 +140,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 09:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:51 UTC</sub>

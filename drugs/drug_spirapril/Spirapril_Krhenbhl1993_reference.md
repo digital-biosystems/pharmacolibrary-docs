@@ -4,7 +4,7 @@
 
 # spirapril — `Spirapril_Krhenbhl1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,15 +16,13 @@
 
 ### Reviewer guidance
 
-**The spiraprilat metabolite compartment has no path from the spirapril dose (unlinked metabolite), and the record was built from the abstract only, so it was rejected.**
+**The record was held back because the spirapril parameters KD (0.45), C0 (1600) and C0 (553) were reported without units, so no SI values could be derived for them.**
 
-The record lists spiraprilat as a metabolite formed from spirapril by hydrolysis, but the metabolite has 0 compartments and no reachable path from the dose, so the structure fails the connectivity check. Because only the paper's abstract was read, summary statistics (AUC 1300 micrograms.h.l-1 and kel 2.0 h-1 for spiraprilat in healthy subjects) stand in for a fitted model. A second reader also disagreed on the primary analyte (spiraprilat vs spirapril), the link relation (hydrolysis vs metabolism), and which parameters belong to the record. Extracted — spiraprilat: AUC 1.3e+03 micrograms.h.l-1, kel 2 h-1.
+Three dimensioned parameters — the equilibrium dissociation constant KD (0.45), the extrapolated initial concentration C0 for spirapril (1600) and C0 for spiraprilat (553) — appear in the paper without a unit, so their values cannot be converted to a common measurement system and the model cannot use them. A further unit reported in the paper could not be converted to SI, leaving that parameter without a usable value. The two readers also disagree on the primary analyte (spiraprilat versus spirapril) and on whether the spirapril–spiraprilat link is hydrolysis or metabolism, and several parameter values (a 2.0 h⁻¹ rate constant and an AUC of 820) differ between the extractions. Extracted — spirapril: Cmax 572 ng/ml, tmax 0.8 h, AUC 1.19e+03 µg·h/l, CL/F 0.35 L/h, V/F 46.5 L, KD 0.45, C0 1.6e+03, t1/2z 1.53 h; spiraprilat: t1/2z 2 h, AUCt 611 µg·h/l, AUC 1.03e+03 µg·h/l, kfm 1.03 1/h, C0 553.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has spiraprilat, the second reading spirapril; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-30 20:08:08.373450+00:00) predates the upstream re-run (2026-09-30 23:48:55.120843+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `spirapril`, measured `spiraprilat`.
 
@@ -33,7 +31,7 @@ Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European jour
   ·  DOI: [10.1007/BF00315391](https://doi.org/10.1007/BF00315391)
 
 ## Model component
-<dbs-pgx drug="spirapril" model-id="Spirapril_Krhenbhl1993_reference" status="needs_review" stale="true" population="patients with chronic liver disease (cirrhotic and non-cirrhotic) and healthy subjects" measured-compound="spiraprilat" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="spirapril" model-id="Spirapril_Krhenbhl1993_reference" status="needs_review" stale="false" population="patients with chronic liver disease (cirrhotic and non-cirrhotic) and healthy subjects" measured-compound="spiraprilat" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 13 extracted.

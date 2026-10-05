@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Zofenopril is employed as both a cardioprotective and anti-hypertensive agent. It is an angiotensin-converting enzyme (ACE) inhibitor.
+Zofenopril is an ACE inhibitor used to treat arterial hypertension and acute myocardial infarction. It is an approved medicine, though not authorised centrally in the European Union, and is used mainly in some European countries such as Italy.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q218284](https://www.wikidata.org/wiki/Q218284) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

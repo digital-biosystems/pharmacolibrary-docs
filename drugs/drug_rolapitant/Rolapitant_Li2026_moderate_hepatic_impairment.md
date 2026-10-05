@@ -5,7 +5,7 @@
 
 # rolapitant — `Rolapitant_Li2026_moderate_hepatic_impairment`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,11 +17,11 @@
 
 ### Reviewer guidance
 
-**The rolapitant record was rejected because fosrolapitant is an unlinked metabolite — the hydrolysis step to rolapitant has no parameter value — and the AUC units (h×ng/mL) could not be converted to SI.**
+**Only clearance was extracted — no volume.**
 
-The structure links fosrolapitant to rolapitant by hydrolysis, but the link parameter is 'none' with no value, leaving the metabolite without a path from the dose (orphan/unlinked metabolite). Additionally, the reported AUCt and AUC∞ units (h×ng/mL) could not be expressed in SI units, so those parameters arrived without an SI value. The remaining parameters (Cmax 106.74 ng/mL, t1/2z 708.81 h, CL 7.92 L/h) were extracted with values. Extracted — rolapitant: Cmax 107 ng/mL, AUCt 5.83e+04 h×ng/mL, AUC∞ 1.02e+05 h×ng/mL, t1/2z 709 hour, CL 7.92 L/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. Extracted — rolapitant: Cmax 107 ng/mL, AUCt 5.83e+04 h*ng/mL, AUC∞ 1.02e+05 h*ng/mL, t1/2z 709 hour, CLm/F 7.92 L/h.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fosrolapitant`, measured `rolapitant`.
 
@@ -30,23 +30,23 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
   ·  DOI: [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170)
 
 ## Model component
-<dbs-pgx drug="rolapitant" model-id="Rolapitant_Li2026_moderate_hepatic_impairment" status="rejected" stale="false" population="Chinese subjects with moderate hepatic impairment and healthy controls" measured-compound="rolapitant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="rolapitant" model-id="Rolapitant_Li2026_moderate_hepatic_impairment" status="needs_review" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cmax (ng/mL) | `Q32` · Cmax | 106.74 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Li_2026_table_S1:row0:col1 | — | not captured |
-| AUC0-t (h×ng/mL) | `Q19` · AUCt | 58324.04 | h×ng/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Li_2026_table_S1:row2:col1 | — | not captured |
-| AUC0-∞ (h×ng/mL) | `Q17` · AUC∞ | 102430.79 | h×ng/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Li_2026_table_S1:row3:col1 | — | not captured |
+| AUC0-t (h×ng/mL) | `Q19` · AUCt | 58324.04 | h*ng/mL | not captured | h*ng/mL | not captured | exact (1.0) | Li_2026_table_S1:row2:col1 | — | not captured |
+| AUC0-∞ (h×ng/mL) | `Q17` · AUC∞ | 102430.79 | h*ng/mL | not captured | h*ng/mL | not captured | exact (1.0) | Li_2026_table_S1:row3:col1 | — | not captured |
 | t1/2 (hour) | `Q57` · t1/2z | 708.81 | hour | 2551716.0 | [h] | not captured | exact (1.0) | Li_2026_table_S1:row4:col1 | — | not captured |
-| CL | `Q22` · CL | 7.92 | L/h | 2.2e-06 | L/h | not captured | exact (1.0) | Li_2026:other_prose | — | not captured |
+| CL | `Q351` · CLm/F | 7.92 | L/h | 2.2e-06 | L/h | not captured | exact (1.0) | Li_2026:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,13 +59,18 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 - unit_dimension_unknown: 'h×ng/mL' (AUCt)
 - unit_dimension_unknown: 'h×ng/mL' (AUC∞)
 - salvaged Q22 ('CL'=7.92) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rolapitant
+- implicit units: 'AUC0-t (h×ng/mL)' → h*ng/mL (from the paper text: "The paper text explicitly states: 'the geometric mean AUC0-t values of palonosetron were 29.59 and 16.69 hng/mL'.")
+- implicit units: 'AUC0-∞ (h×ng/mL)' → h*ng/mL (from the paper text: "The paper text explicitly states: 'AUC0-t and AUC0−∞ were increased, with geometric mean ratios... of 1.77... and 1.46..")
+- metabolite rolapitant: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rolapitant
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
 - population split: 'moderate hepatic impairment' subgroup of Li_2026 (paper reports 4 populations: fosrolapitant, healthy control, moderate hepatic impairment, rolapitant)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- row roles (LLM): model_class=noncompartmental; 8/8 row label(s) assigned, 0 linked by role; re-tagged fosrolapitant→parent ×12, rolapitant→parent ×8, parent→rolapitant ×4
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - companion parameter table S1 transcribed (8 record(s))
@@ -80,13 +85,12 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Li_2026_table_S1:row3:col1'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Li_2026_table_S1:row2:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2026_table_S1:row0:col1'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Li_2026_table_S1:row4:col1'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | h×ng/mL | not captured | not captured | ['Li_2026_table_S1:row3:col1'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | h×ng/mL | not captured | not captured | ['Li_2026_table_S1:row2:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.92 | not captured | not captured | ['Li_2026:other_prose'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.92 L/h | not captured | not captured | ['Li_2026:other_prose'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -100,9 +104,19 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -111,4 +125,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 13:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 14:36 UTC</sub>

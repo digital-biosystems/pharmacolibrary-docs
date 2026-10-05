@@ -11,22 +11,9 @@
 
 ## About
 
-**Description.** Dabrafenib mesylate (Tafinlar) is a reversible ATP-competitive kinase inhibitor and targets the MAPK pathway. It was approved on May 29, 2013, for the treatment of melanoma with V600E or V6000K mutation.[L41955] It was also used for metastatic non-small cell lung cancer with the same mutation.[L41955]
+Dabrafenib is a BRAF protein kinase inhibitor used to treat melanoma, including metastatic melanoma, and other cancers such as non-small-cell lung carcinoma and glioma. It is an approved cancer medicine, authorised in the European Union, and is also being investigated for other uses.
 
-In May 2018, Tafinlar (dabrafenib), in combination with Mekinist ([DB08911]), was approved to treat anaplastic thyroid cancer caused by an abnormal BRAF V600E gene.[L41955]
-
-**Indication.** As monotherapy, dabrafenib is indicated to treat unresectable or metastatic melanoma with BRAF V600E mutation as detected by an FDA-approved test.[L41955] 
-
-In combination with [trametinib], dabrafenib is indicated to treat for:
-
-- the treatment of unresectable or metastatic melanoma with BRAF V600E or V600K mutations as detected by an FDA-approved test.[L41955]
-- the adjuvant treatment of melanoma with BRAF V600E or V600K mutations and involvement of lymph node(s), following complete resection.[L41955]
-- the treatment of metastatic non-small cell lung cancer (NSCLC) with BRAF V600E mutation.[L41955]
-- the treatment of locally advanced or metastatic anaplastic thyroid cancer (ATC) with BRAF V600E mutation and with no satisfactory locoregional treatment options.[L41955]
-- treatment of adult and pediatric patients six years and older with unresectable or metastatic solid tumours with BRAF V600E mutation who have progressed following prior treatment and have no satisfactory alternative treatment options. This indication is approved under accelerated approval based on the overall response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial(s).[L45548]
-- the treatment of pediatric patients one year of age and older with low-grade glioma (LGG) with a BRAF V600E mutation who require systemic therapy.[L45548]
-
-Dabrafenib has limitations of use: it is neither indicated for treating patients with colorectal cancer because of known intrinsic resistance to BRAF inhibition nor wild-type BRAF solid tumours.[L45548]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3011604](https://www.wikidata.org/wiki/Q3011604) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -47,8 +34,8 @@ Dabrafenib has limitations of use: it is neither indicated for treating patients
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Balakirouchenane_2020_base](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md) | ▶ model + simulator | parent 2-cmt + 1 metabolite (2-cmt) | 10 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Balakirouchenane_2020_final](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final.md) | held back | 1-compartment, oral | 11 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Balakirouchenane_2020_base](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md) | ▶ model + simulator | parent 2-cmt + 1 metabolite (2-cmt) | 10 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Balakirouchenane_2020_final](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final.md) | — | parent + metabolite (no model) | 11 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Balakirouchenane_2020_final_final_tra_model](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_final_tra_model.md) | ▶ model + simulator | 1-compartment, oral | 6 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
 
 ## ADME sites
@@ -65,11 +52,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor/substrate, `SLCO1A2` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | bile duct | <sub>“…subsequently excreted in bile…”</sub> | prose |
-| metabolism | kidney | <sub>“…excreted in bile and urine…”</sub> | prose |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inducer/inhibitor, `CYP2C19` inducer/inhibitor/substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inducer/inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal excretion is the major route of elimination accounting for 71% of radioactive dose…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: BRAF (inhibitor), LIMK1 (inhibitor), NEK11 (inhibitor), RAF1 (inhibitor), SIK1 (inhibitor).</sub>

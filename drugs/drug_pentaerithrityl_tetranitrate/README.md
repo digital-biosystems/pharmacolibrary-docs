@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Pentaerythritol tetranitrate is the nitrate ester of pentaerythritol that possesses explosive properties. When mixed with a plasticizer, this chemical forms a plastic explosive. It is recognized by the FDA to be a coronary vasodilator in the treatment of heart conditions such as angina [L2395].
+Pentaerithrityl tetranitrate is an organic nitrate vasodilator that was used to treat angina pectoris. It has been withdrawn and is no longer in use.
 
-It is a pentaerythritol nitrate in which all four hydroxy groups of pentaerythritol have been converted to the corresponding nitrate ester. It is a vasodilator with properties that are quite similar to those of glyceryl trinitrate, however, with a more prolonged duration of action. It is also one of the most powerful high explosives known and is a component of the plastic explosive known as Semtex [L2393].
-
-PETN has the chemical formula C5H8N4O12. It is formed by reacting pentaerythritol (C5H12O4), an alcohol commonly used in paints and varnishes, with nitric acid (HNO2). The reacting solution is chilled to precipitate the PETN.  It is then filtered out, washed, dried, and recrystallized to produce a colorless crystalline material that is stored and shipped as a mixture with water and alcohol [L2394].
-
-Interestingly, this drug was studied for potential benefits in chronic ischemic heart failure patients.  PETN targeting reactive oxygen species generation halted the changes of mitochondrial antioxidant enzymes and progressive fibrotic remodeling, leading to amelioration of cardiac functional performance in rats with ischemic heart failure [A32649].
-
-**Indication.** Used for the treatment of angina pectoris [L2393].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q189334](https://www.wikidata.org/wiki/Q189334) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | metabolism | liver | `ALDH2` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Mainly the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Free radicals (target), GUCY1A2 (inducer), HBA1 (target), HBB (target), NOS3 (inducer).</sub>
 

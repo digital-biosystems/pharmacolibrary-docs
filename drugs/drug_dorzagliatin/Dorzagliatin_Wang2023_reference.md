@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dorzagliatin&quot;,&quot;href&quot;:&quot;drugs/drug_dorzagliatin/&quot;},{&quot;label&quot;:&quot;Wang_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dorzagliatin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dorzagliatin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dorzagliatin — `Dorzagliatin_Wang2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,12 +21,14 @@
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:50.002578+00:00) predates the upstream re-run (2026-10-04 22:51:46.223420+00:00). Current validate status: `extracted`.
+
 ## Citation
 Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8)
 
 ## Model component
-<dbs-pgx drug="dorzagliatin" model-id="Dorzagliatin_Wang2023_reference" status="curated_candidate" stale="false" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="dorzagliatin" parameterization="apparent" topology="3C"></dbs-pgx>
+<dbs-pgx drug="dorzagliatin" model-id="Dorzagliatin_Wang2023_reference" status="extracted" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="dorzagliatin" parameterization="apparent" topology="3C"></dbs-pgx>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 8 extracted.
@@ -42,8 +44,8 @@ Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinet
 | Vp/F (L) | `Q82` · V2/F | 26.5 | L | 0.0265 | [l] | not captured | exact (1.0) | Tab3:row5:col2, Tab3:row5:col3 | — | not captured |
 | Ka (h−1) | `Q49` · kabs | 3.29 | h−1 | 0.0009138888888888889 | [1] / [h] | not captured | exact (1.0) | Tab3:row6:col2, Tab3:row6:col3 | — | not captured |
 | D1 (h) | `Q310` · D1 | 0.418 | h | 1504.8 | [h] | not captured | exact (1.0) | Tab3:row7:col2, Tab3:row7:col3, Tab3:footnote | — | 82.8 (None% RSE) |
-| CLBW | `Q22` · CL | 0.255 | not captured | not captured | not captured | not captured | llm (0.6) | Tab3:row10:col2, Tab3:row10:col3 | — | 22.5 (None% RSE) |
-| Vc,BW | `Q63` · V1 | 0.553 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab3:row11:col2, Tab3:row11:col3 | — | 14.9 (None% RSE) |
+| CLBW | `Q22` · CL | 0.255 | L/h/kg | 4.958333333333334e-06 | L/h | not captured | llm (0.6) | Tab3:row10:col2, Tab3:row10:col3 | — | 22.5 (None% RSE) |
+| Vc,BW | `Q63` · V1 | 0.553 | L/kg | 0.03871000000000001 | L | not captured | llm_confirmed (0.6) | Tab3:row11:col2, Tab3:row11:col3 | — | 14.9 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,6 +63,8 @@ Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinet
 - dropped duplicate Q310 ('D1,FOOD', value '2.26') — already have one for this compound
 - dropped duplicate Q63 ('Vc,GEND', value '0.843') — already have one for this compound
 - dropped duplicate Q22 ('Cor_CL,Vc', value '0.0181') — already have one for this compound
+- implicit units: 'CLBW' → L/h/kg (from the popPK convention: 'The paper states the typical CL/F is 10.4 L/h for a subject with TBW of 69 kg. The parameter CLBW (0.255) is the allomet')
+- implicit units: 'Vc,BW' → L/kg (from the popPK convention: 'The paper states the typical Vc/F is 80.6 L for a subject with TBW of 69 kg. The parameter Vc,BW (0.553) is the allometr')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dorzagliatin
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 
@@ -103,18 +107,20 @@ Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinet
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row10:col2', 'Tab3:row10:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:footnote'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:footnote'] |
 | C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:footnote'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row11:col2', 'Tab3:row11:col3'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row5:col2', 'Tab3:row5:col3'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row10:col2', 'Tab3:row10:col3'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row11:col2', 'Tab3:row11:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 17.9 L/h | not captured | not captured | ['Tab3:row10:col2', 'Tab3:row10:col3'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 10.4 L/h | not captured | not captured | ['Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:footnote'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 80.6 L | not captured | not captured | ['Tab3:row3:col2', 'Tab3:row3:col3', 'Tab3:footnote'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 38.7 L | not captured | not captured | ['Tab3:row11:col2', 'Tab3:row11:col3'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 26.5 L | not captured | not captured | ['Tab3:row5:col2', 'Tab3:row5:col3'] |
 
 **Reviewer per-scenario checks:**
@@ -148,8 +154,8 @@ Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinet
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_modelica.zip" download>Dorzagliatin_Wang2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_fmi.zip" download>Dorzagliatin_Wang2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_modelica.zip" download>Dorzagliatin_Wang2023_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_fmi.zip" download>Dorzagliatin_Wang2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_matlab.zip" download>Dorzagliatin_Wang2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_matlab_simbio.zip" download>Dorzagliatin_Wang2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_sbml.zip" download>Dorzagliatin_Wang2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -170,4 +176,4 @@ Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinet
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 17:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 22:51 UTC</sub>

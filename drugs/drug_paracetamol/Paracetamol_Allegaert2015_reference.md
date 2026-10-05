@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Allegaert_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Fritz1984_reference&quot;,&quot;label&quot;:&quot;Fritz_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Fritz1984_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Hannam2018_reference&quot;,&quot;label&quot;:&quot;Hannam_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Hannam2018_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Allegaert2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**The paracetamol two-compartment model was not published because the peripheral volume of distribution V2 (22.3 L) was not extracted, leaving one of the five parameters missing.**
+**The paracetamol parent-metabolite model was held back because two parameters, the peripheral volume V2 (22.3 L) and the absorption lag time tlag (4.2 min), were not extracted, so no value was available for them.**
 
-The record lists CL 2.02 L/h, V1 1.83 L, Q 1.34 L/h and tlag 4.2 min, but V2 was neither emitted nor defaulted, so only 4 of 5 parameters were covered. The model was built but not simulated. A second reader also reported different values for several parameters (e.g. Q 1.48 instead of 1.34, V2 23.9, CLPU 0.94, MF 4.73), which the record does not contain. Extracted — paracetamol: CL 2.02 L/h, V1 1.83 L, V2 22.3 L, Q 1.34 L/h, tlag 4.2 min.
+The record covers only 4 of the 6 expected parameters; V2 and tlag were neither emitted nor defaulted, meaning no value was extracted and a library placeholder would have been used for the peripheral volume and absorption lag time. The metabolite structure is otherwise specified, with formation clearances of 2.02 L/h to paracetamol-glucuronide and 3.82 L/h to paracetamol-sulphate. A second reader also disagreed on several values, reading Q as absent rather than 1.34 L/h and assigning a different identifier to the total clearance parameter. Extracted — paracetamol-glucuronide: CLfm 2.02 L/h; paracetamol: CLfm 3.82 L/h, CL 0.94 L/h, V1 1.83 L, V2 22.3 L, V3 23.9 L, Q 1.34 L/h, Q2 61.6 L/h, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 34.4: this record has none, the second reading 18.5; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:39:23.535093+00:00) predates the upstream re-run (2026-10-02 14:37:43.087921+00:00). Current validate status: `extracted`.
 
 ## Citation
 Allegaert K et al., Paracetamol pharmacokinetics and metabo…, BMC anesthesiology (2015)
   ·  DOI: [10.1186/s12871-015-0144-3](https://doi.org/10.1186/s12871-015-0144-3)
 
 ## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Allegaert2015_reference" status="extracted" stale="true" population="young women (delivery, postpartum, healthy volunteers)" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="paracetamol" model-id="Paracetamol_Allegaert2015_reference" status="needs_review" stale="false" population="young women (delivery, postpartum, healthy volunteers)" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 9 extracted.
@@ -40,6 +38,8 @@ Allegaert K et al., Paracetamol pharmacokinetics and metabo…, BMC anesthesiolo
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLPG (L/h) | `Q370` · CLfm | 2.02 | L/h | 5.611111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Tab2:row5:col3, Tab2:row5:col4 | — | not captured |
@@ -80,10 +80,6 @@ Allegaert K et al., Paracetamol pharmacokinetics and metabo…, BMC anesthesiolo
 - row roles: 2 per-group rows of paracetamol residual_error but 0 reference group(s) — kept as printed
 - row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 25 linked by role; re-tagged parent→paracetamol-glucuronide ×11, parent→paracetamol-sulphate ×8
 - gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
-- dropped duplicate Q22 ('CLPS (L/h)', value '3.82') — already have one for this compound
-- dropped duplicate Q22 ('CLPU (L/h)', value '0.94') — already have one for this compound
-- dropped unlinked row (NIL): 'V8 (L)' — extend the ontology if this is a real PK parameter (source ['Tab2:row16:col1', 'Tab2:row16:col2', 'Tab2:row16:col3', 'Tab2:row16:col4'])
-- dropped duplicate Q30 ('Q1 (L/h)', value '61.6') — already have one for this compound
 
 **Extraction notes:**
 - unparsed cell Tab2:row11:col1 = '0.93 (6.3) + 0.0053 (28.2) × (UP-100)'
@@ -148,7 +144,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2'] |
+| T3_output_variable | not captured | pass | C_central (measured=paracetamol) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2', 'tlag'] |
+| T3_shared_parameters | not captured | pass | 2 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
 | T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
@@ -162,6 +160,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 - scholar stages: `../../../knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Allegaert_2015` / `Allegaert_2015::reference`)
 - model: `../../../knowledgebase/drugs/drug_paracetamol/models/modelica/Paracetamol_Allegaert2015_reference.mo`
 - deviation: `../../../knowledgebase/drugs/drug_paracetamol/models/modelica/Paracetamol_Allegaert2015_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_paracetamol/models/modelica/Paracetamol_Allegaert2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -170,7 +169,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_modelica.zip" download>Paracetamol_Allegaert2015_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_modelica.zip" download>Paracetamol_Allegaert2015_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_matlab.zip" download>Paracetamol_Allegaert2015_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_matlab_simbio.zip" download>Paracetamol_Allegaert2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

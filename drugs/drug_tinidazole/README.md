@@ -10,26 +10,19 @@
 
 ## About
 
-**Description.** A nitroimidazole antitrichomonal agent effective against _Trichomonas vaginalis_, _Entamoeba histolytica_, and _Giardia lamblia_ infections.
+Tinidazole is a nitroimidazole antimicrobial used to treat protozoal infections such as giardiasis and amebiasis, and also as an antibacterial, including in combination regimens for eradicating Helicobacter pylori. It is an approved medicine, used in various countries, though it carries a boxed warning.
 
-**Indication.** For the treatment of trichomoniasis caused by <i>T. vaginalis</i> in both female and male patients. Also for the treatment of giardiasis caused by <i>G. duodenalis</i> in both adults and pediatric patients older than three years of age and for the treatment of intestinal amebiasis and amebic liver abscess caused by <i>E. histolytica</i> in both adults and pediatric patients older than three years of age.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1321320](https://www.wikidata.org/wiki/Q1321320) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:41 | 5:29 | 0/0/0 | 2/0/0 | 0/0/0 | 148,424/4,238 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/6 | 4/0 | 0 |
+| 2026-10-04 12:01 | 0:58 | 0/0/0 | 0/0/0 | 0/0/0 | 40,331/863 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/6 | 4/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Bansal_2004_percentage_inhibition](drugs/drug_tinidazole/pd_Bansal_2004_percentage_inhibition.md) | name ← metronidazole · inhibition effect | — | Bansal D et al., In vitro activity of antiamoebic drugs…, Annals of clinical microbio… (2004) | [10.1186/1476-0711-3-27](https://doi.org/10.1186/1476-0711-3-27) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Singh_2023_percentage_inhibition_of_E_histolytica](drugs/drug_tinidazole/pd_Singh_2023_percentage_inhibition_of_E_histolytica.md) | name ← andrographolide · inhibition effect | — | Singh A et al., Creep in nitroimidazole inhibitory conc…, Scientific reports (2023) | [10.1038/s41598-023-39382-1](https://doi.org/10.1038/s41598-023-39382-1) |
 
 ## ADME sites
 
@@ -37,14 +30,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapidly and completely absorbed under fasting conditions…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Approximately 12% of the drug is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine mainly as unchanged drug…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
-| excretion | mammary gland | <sub>“…is secreted in breast milk…”</sub> | prose |
-| excretion | placenta | <sub>“…Tinidazole crosses the placental barrier…”</sub> | prose |
+| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | placenta | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (binder).</sub>
 
@@ -73,7 +66,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Chaudhry_2009.pdf` | Chaudhry AS et al., Importance of CYP2C19 genetic polymorph…, The Indian journal of medic… (2009) | pgx | 5 | not captured | [19942749](https://www.ncbi.nlm.nih.gov/pubmed/19942749) | metadata signals extractable PGX data (CYP2C19) |
 | `Nizhevich_2013.pdf` | Nizhevich AA et al., [The influence of genetic factors on th…, Eksperimental'naia i klinic… (2013) | pgx | 5 | not captured | [24501942](https://www.ncbi.nlm.nih.gov/pubmed/24501942) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-18T08:39:16.328757+00:00</sub>
+<sub>queue written 2026-10-04T12:00:28.031136+00:00</sub>
 
 ## Screened and excluded
 
@@ -100,8 +93,8 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Kang_1998 | irrelevant | 0 | 0 | The paper describes an in-vitro assay for anti-giardial activity and reports IC50 values, not pharmacokinetic disposition parameters. |
 | popPK | Lamp_1999 | irrelevant | 1 | 0 | The paper is a review that mentions tinidazole only as a class member with a prolonged half-life, providing no quantitative PK parameters for tinidazole. |
 | PD | Lamp_1999 | not_relevant | 1 | 0 | The text is a general review of nitroimidazole pharmacokinetics and qualitative pharmacodynamics (e.g., post-antibiotic effect duration) without providing specific numeric PD parameters (Emax, EC50) or concentration-effect curves for tinidazole. |
-| popPK | Li_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aesculin, using tinidazole only as an internal standard for quantification. |
-| popPK | Ma_2022 | irrelevant | 0 | 0 | Tinidazole is used only as an internal standard for the pharmacokinetic study of quercitrin, not as the subject drug. |
+| popPK | Li_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aesculin in rats, using tinidazole only as an internal standard for the analytical method. |
+| popPK | Ma_2022 | irrelevant | 0 | 0 | Tinidazole is used only as an internal standard for the quantification of quercitrin, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Manes_2004 | irrelevant | 0 | 0 | The paper is a narrative review discussing the history and characteristics of tinidazole without reporting original quantitative pharmacokinetic parameter values. |
 | PD | Manes_2004 | not_relevant | 1 | 0 | The text is a qualitative review introduction that mentions a "better pharmacodynamic profile" but provides no numeric PD parameters, concentration-effect data, or dose-response curves. |
 | popPK | Manso_2008 | irrelevant | 2 | 0 | The paper is a review discussing the potential use of tinidazole for odontogenic infections and does not report original quantitative pharmacokinetic parameter values. |
@@ -128,9 +121,9 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Veríssimo_2026 | not_relevant | 0 | 0 | The paper focuses on QSAR modeling and in vitro IC50 determination for novel nitroimidazole derivatives, not on the pharmacokinetics or pharmacodynamics (exposure-response) of tinidazole. |
 | popPK | Wang_2011 | irrelevant | 0 | 0 | The paper describes an analytical method (ELISA) for detecting drug residues in food, not a pharmacokinetic study, and reports no disposition parameters. |
 | PD | Wang_2011 | not_relevant | 0 | 0 | The paper describes an analytical method (ELISA) for detecting drug residues in food, not a pharmacodynamic or exposure-response study in a biological system. |
-| popPK | Yan_2024 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of amisulpride, not tinidazole. |
+| popPK | Yan_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of amisulpride, not tinidazole. |
 | PD | Yan_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on the external validation of population pharmacokinetic (PK) models for amisulpride and does not contain any pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Zhang_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cinnamic acid, with tinidazole used only as an internal standard. |
+| popPK | Zhang_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cinnamic acid, using tinidazole only as an internal standard for quantification. |
 | popPK | Özel_2026 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of essential oil activity against Trichomonas vaginalis and does not report any pharmacokinetic parameters for tinidazole. |
 | PD | Özel_2026 | not_relevant | 0 | 0 | The paper investigates the in vitro activity of Origanum majorana essential oil and its synergy with metronidazole; tinidazole is only mentioned in the introduction as a standard treatment and no PD or exposure-response data for tinidazole are reported. |
 

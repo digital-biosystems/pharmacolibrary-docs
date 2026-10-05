@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Sotalol is a methanesulfonanilide developed in 1960.[A178579] It was the first of the class III anti arrhythmic drugs.[A178579] Sotalol was first approved as an oral tablet on 30 October 1992.[L6334] A racemic mixture of sotalol is currently formulated as a tablet, oral solution, and intravenous injection indicated for life threatening ventricular arrhythmias and maintaining normal sinus rhythm in atrial fibrillation or flutter.[Label,L6373,L6376]
+Sotalol is a non-selective beta blocker with additional antiarrhythmic activity, used to treat heart rhythm problems such as atrial fibrillation, ventricular fibrillation, and supraventricular tachycardia. It is an approved medicine that remains in use, though it carries a boxed warning.
 
-**Indication.** Sotalol is indicated to treat life threatening ventricular arrhytmias and maintain normal sinus rhythm in patients with atrial fibrillation or flutter.[Label] There are also oral solutions and intravenous injections indicated for patients requiring sotalol, but for whom a tablet would not be appropriate.[Label,L6373,L6376]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413591](https://www.wikidata.org/wiki/Q413591) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -54,8 +54,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…A small fraction of the doses is excreted in the feces as unchanged sotalol…”</sub> | prose |
-| excretion | kidney | <sub>“…80-90% of a given dose is excreted in the urine as unchanged sotalol…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), KCNH2 (inhibitor).</sub>
 

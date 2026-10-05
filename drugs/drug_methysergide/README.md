@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** An ergot derivative that is a congener of lysergic acid diethylamide.  It antagonizes the effects of serotonin in blood vessels and gastrointestinal smooth muscle, but has few of the properties of other ergot alkaloids. Methysergide is used prophylactically in migraine and other vascular headaches and to antagonize serotonin in the carcinoid syndrome.
+Methysergide is an ergot alkaloid that was used to prevent migraine headaches. It has been withdrawn from the market, largely because of serious side effects such as fibrotic complications with long-term use.
 
-**Indication.** For the treatment of vascular headache
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424442](https://www.wikidata.org/wiki/Q424442) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Human recombinant alpha-L-iduronidase, 628 residues (mature form), produced by recombinant DNAtechnology in a Chinese hamster ovary cell line. Laronidase is a glycoprotein with a molecular weight of approximately 83 kD. The predicted amino acid sequence of the recombinant form, as well as the nucleotide sequence that encodes it, are identical to a polymorphic form of human a-L-iduronidase. It contains 6 N-linked oligosaccharide modification sites.
+Laronidase is an enzyme replacement therapy used to treat mucopolysaccharidosis I, a rare inherited metabolic disorder. It is authorised in the European Union and is an approved medicine, used mainly in specialist care for this rare disease.
 
-**Indication.** For the treatment of mucopolysaccharidosis
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q20801774](https://www.wikidata.org/wiki/Q20801774) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

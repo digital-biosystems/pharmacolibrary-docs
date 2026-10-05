@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Fasudil has been investigated in Carotid Stenosis.
+Fasudil is a vasodilator and protein kinase inhibitor that has been investigated for treating cardiovascular conditions involving poor blood flow. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5437132](https://www.wikidata.org/wiki/Q5437132) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

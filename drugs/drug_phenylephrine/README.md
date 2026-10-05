@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Phenylephrine is an alpha-1 adrenergic receptor agonist used to treat hypotension,[L9416,L9410] dilate the pupil,[L9413] and induce local vasoconstriction.[A187370] The action of phenylephrine, or neo-synephrine, was first described in literature in the 1930s.[A187376]
+Phenylephrine is a decongestant and vasoconstrictor used for conditions such as nasal congestion, hemorrhoids, low blood pressure, and to dilate the pupil in eye examinations. It is widely used, available in nasal, topical, eye, and injectable preparations, and is an approved medicine.
 
-Phenylephrine was granted FDA approval in 1939.[L9413]
-
-**Indication.** Phenylephrine is available in various drug formulations, which have different indications. Phenylephrine injections are indicated to treat hypotension caused by shock or anesthesia.[L9416, L9410] The ophthalmic formulation is indicated to induce mydriasis [L9413, L46332] and conjunctival vasoconstriction.[A187370] The intranasal formulation is used to treat congestion, and a topical formulation is used to treat hemorrhoids.[A187370] Off-label uses include priapism and induction of local vasoconstriction.[A187370]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q421910](https://www.wikidata.org/wiki/Q421910) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -61,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` inducer, `MAOA` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…86% of a dose of phenylephrine is recovered in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), DRD2 (target), EDN2 (target), SULT1A3 (substrate).</sub>
 

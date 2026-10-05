@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** A guanidinium antihypertensive agent that acts by blocking adrenergic transmission.
+Bethanidine is a peripherally acting antiadrenergic (sympatholytic) drug that has been used to treat arterial hypertension. It is an approved guanidine-derivative antihypertensive, though this older medicine is now only rarely used in practice.
 
-**Indication.** For the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q794152](https://www.wikidata.org/wiki/Q794152) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -31,7 +31,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed rapidly in the gastrointestinal tract following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA2A (target), ADRB1 (target), KCNJ1 (inhibitor).</sub>
 

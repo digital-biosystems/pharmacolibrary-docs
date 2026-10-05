@@ -8,6 +8,12 @@
 - **molar mass:** 313.397 g/mol (C19H23NO3) — DrugBank
 - **groups:** experimental
 
+## About
+
+Oxyfedrine is a cardiotonic and vasodilator drug, a beta-adrenergic agonist that was used in cardiac diseases such as coronary insufficiency. It is currently considered experimental and does not appear to be an approved medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7115929](https://www.wikidata.org/wiki/Q7115929) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

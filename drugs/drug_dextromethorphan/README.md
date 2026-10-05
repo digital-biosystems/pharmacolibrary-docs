@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Dextromethorphan is a levorphanol derivative and codeine analog commonly used as a cough suppressant and also a drug of abuse.[A215412] Although similar in structure to other opioids, it has minimal interaction with opioid receptors.[A215412]
+Dextromethorphan is a cough suppressant used to relieve cough, including cough associated with the common cold. It is widely available in over-the-counter cough and cold medicines, and is also being studied for other uses such as depression.
 
-Dextromethorphan was granted FDA approval before 3 December 1957.[A215412,L14997]
-
-**Indication.** Dextromethorphan is indicated in combination with [brompheniramine] and [pseudoephedrine] in the treatment of coughs and upper respiratory symptoms associated with allergies or the common cold.[L14366] Dextromethorphan is also used in combination with [guaifenesin] as an over-the-counter product to relieve a cough.[L14369] Dextromethorphan in combination with [quinidine] is indicated in the treatment of pseudobulbar affect.[L14363]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407781](https://www.wikidata.org/wiki/Q407781) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -25,7 +23,7 @@ Dextromethorphan was granted FDA approval before 3 December 1957.[A215412,L14997
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2010_reference](drugs/drug_dextromethorphan/Dextromethorphan_Abduljalil2010_reference.md) | — | parent + metabolite (no model) | 0 | Abduljalil K et al., Assessment of activity levels for CYP2D…, Clinical pharmacology and t… (2010) | [10.1038/clpt.2010.137](https://doi.org/10.1038/clpt.2010.137) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2010_reference](drugs/drug_dextromethorphan/Dextromethorphan_Abduljalil2010_reference.md) | — | parent + metabolite (no model) | 0 | Abduljalil K et al., Assessment of activity levels for CYP2D…, Clinical pharmacology and t… (2010) | [10.1038/clpt.2010.137](https://doi.org/10.1038/clpt.2010.137) |
 
 ## Pharmacodynamics (PD)
 

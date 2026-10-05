@@ -10,17 +10,9 @@
 
 ## About
 
-**Description.** Epinephrine, also known as _adrenaline_, is a hormone and neurotransmitter and produced by the adrenal glands that can also be used as a drug due to its various important functions. Though it has long been used in the treatment of hypersensitivity reactions, epinephrine in the auto-injector form (EpiPen) has been available since 1987 in the USA. Many new products/biosimilars and dosage routes have been approved under various names over the last several decades [L4355], [L4356], [L4358].  On August 16, 2018, Teva Pharmaceuticals USA gained approval to market its generic epinephrine auto-injector in 0.3 mg and 0.15 mg strengths [L4353]. Dosage delivery routes for epinephrine include intravenous, inhalation, nebulization, intramuscular injection, and subcutaneous injection.
+Epinephrine (adrenaline) is used for emergencies and conditions such as anaphylaxis, cardiac arrest, severe low blood pressure, airway obstruction, and glaucoma. It is widely used in human medicine and also approved for veterinary use, with an authorised product in the European Union.
 
-In general, the most common uses of parenteral epinephrine are to relieve respiratory distress due to bronchospasm, to provide rapid relief of hypersensitivity (anaphylactic or anaphylactoid) reactions to drugs, animal serums and other allergens, and to prolong the action of infiltration anesthetics [F2136]. In addition to the above functions, epinephrine is the primary drug administered during cardiopulmonary resuscitation (CPR) to reverse cardiac arrest [A37697], [A37699].  It can be used in severe cases of croup [L4824].
-
-**Indication.** Epinephrine injection and nasal spray are indicated in the emergency treatment of type I allergic reactions, including anaphylaxis.[L41260, L51798] Epinephrine injection is also used to increase mean arterial blood pressure in adult patients with hypotension associated with septic shock.[L41260]
-
-Epinephrine's cardiac effects may be of use in restoring cardiac rhythm in cardiac arrest due to various causes but is not used in cardiac failure or in hemorrhagic, traumatic, or cardiogenic shock [F1247].
-
-Epinephrine is used as a hemostatic agent. It is so used in treating mucosal congestion of hay fever, rhinitis, and acute sinusitis; to relieve bronchial asthmatic paroxysms; in syncope due to complete heart block or carotid sinus hypersensitivity; for symptomatic relief of serum sickness, urticaria, angioneurotic edema; for resuscitation in cardiac arrest following anesthetic accidents; in simple (open-angle) glaucoma; for relaxation of uterine musculature and to inhibit uterine contractions. Epinephrine injection can be utilized to prolong the action of local anesthetics [F1247].
-
-In addition to the above, epinephrine is used as an over the counter (OTC) agent for the intermittent symptoms of asthma, such as wheezing, tightness of chest and shortness of breath [F2131].  It is also used for the maintenance of mydriasis during intraocular surgery [L4825].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q132621](https://www.wikidata.org/wiki/Q132621) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -62,8 +54,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…I.M. (intramuscular) administered epinephrine has a rapid onset and short duration of acti…”</sub> | prose |
-| absorption | skin | <sub>“…Subcutaneously or I.M. (intramuscular) administered epinephrine has a rapid onset and shor…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `COMT` substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | kidney | `COMT` substrate | DrugBank actor |
 | metabolism | liver | `COMT` substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `MAOA` substrate, `SLC22A1` substrate | DrugBank actor |

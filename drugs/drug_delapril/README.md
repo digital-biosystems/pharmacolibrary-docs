@@ -8,6 +8,12 @@
 - **molar mass:** 452.551 g/mol (C26H32N2O5) — DrugBank
 - **groups:** investigational
 
+## About
+
+Delapril is an ACE inhibitor antihypertensive drug used to treat arterial hypertension. It is not authorised in the European Union and is classed as investigational in DrugBank, so its use appears limited.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1164067](https://www.wikidata.org/wiki/Q1164067) and the WHO ATC classification; not checked by a person.</small>
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

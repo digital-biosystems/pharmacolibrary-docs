@@ -10,25 +10,25 @@
 
 ## About
 
-**Description.** Aripiprazole is an atypical antipsychotic orally indicated for the treatment of schizophrenia, bipolar I, major depressive disorder, irritability associated with autism, and Tourette's.[L45859] It is also indicated as an injection for agitation associated with schizophrenia or bipolar mania.[L45859] Aripiprazole exerts its effects through agonism of dopaminergic and 5-HT1A receptors and antagonism of alpha-adrenergic and 5-HT2A receptors.[L45859,A4393] Aripiprazole was given FDA approval on November 15, 2002.[L6136]
+Aripiprazole is an atypical antipsychotic used to treat schizophrenia and bipolar disorder, and has also been used for other mental disorders such as Tourette syndrome and psychosis. It is approved and widely used, with several products authorised in the European Union.
 
-**Indication.** Aripiprazole is indicated for the treatment of acute manic and mixed episodes associated with bipolar I disorder, irritability associated with autism spectrum disorder, schizophrenia, and Tourette's disorder.[L45859] It is also used as an adjunctive treatment of major depressive disorder.[L45859 An injectable formulation of aripiprazole is indicated for agitation associated with schizophrenia or bipolar mania.[L45859] Finally, an extended-release, bimonthly injection formulation of aripiprazole is indicated for the treatment of adult schizophrenia and maintenance therapy for adult bipolar I disorder.[L46203]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411188](https://www.wikidata.org/wiki/Q411188) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/3/2 | 1/1/2 | 0/0/39 | not captured | not captured | 54 | 51/0 | 41/13 | 0 |
+| not captured | not captured | 0/4/1 | 1/1/2 | 0/0/39 | not captured | not captured | 54 | 51/0 | 41/13 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Wang_2022_reference](drugs/drug_aripiprazole/Aripiprazole_Wang2022_reference.md) | held back | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1022](https://doi.org/10.1002/cpdd.1022) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Wang_2024_reference](drugs/drug_aripiprazole/Aripiprazole_Wang2024_reference.md) | held back | 1-compartment, IV | 1 | Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology in dr… (2024) | [10.1002/cpdd.1397](https://doi.org/10.1002/cpdd.1397) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Toja-Camba_2021_reference](drugs/drug_aripiprazole/Aripiprazole_TojaCamba2021_reference.md) | — | parent + metabolite (no model) | 0 | Toja-Camba FJ et al., Review of Pharmacokinetics and Pharmaco…, Pharmaceutics (2021) | [10.3390/pharmaceutics13070935](https://doi.org/10.3390/pharmaceutics13070935) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xin_2025_reference](drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference.md) | — | parent + metabolite (no model) | 0 | Xin Y et al., Effect of CYP2D6 and ABCB1 polymorphism…, BMC pediatrics (2025) | [10.1186/s12887-025-05856-6](https://doi.org/10.1186/s12887-025-05856-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024_reference](drugs/drug_aripiprazole/Aripiprazole_Zhang2024_reference.md) | — | 1-compartment (no model) | 2 | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_reference](drugs/drug_aripiprazole/Aripiprazole_Wang2022_reference.md) | — | 1-compartment (no model) | 2 | Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1022](https://doi.org/10.1002/cpdd.1022) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Toja-Camba_2021_reference](drugs/drug_aripiprazole/Aripiprazole_TojaCamba2021_reference.md) | — | parent + metabolite (no model) | 0 | Toja-Camba FJ et al., Review of Pharmacokinetics and Pharmaco…, Pharmaceutics (2021) | [10.3390/pharmaceutics13070935](https://doi.org/10.3390/pharmaceutics13070935) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_aripiprazole/Aripiprazole_Wang2024_reference.md) | — | 1-compartment (no model) | 1 | Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology in dr… (2024) | [10.1002/cpdd.1397](https://doi.org/10.1002/cpdd.1397) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Xin_2025_reference](drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference.md) | — | parent + metabolite (no model) | 0 | Xin Y et al., Effect of CYP2D6 and ABCB1 polymorphism…, BMC pediatrics (2025) | [10.1186/s12887-025-05856-6](https://doi.org/10.1186/s12887-025-05856-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024_reference](drugs/drug_aripiprazole/Aripiprazole_Zhang2024_reference.md) | — | 1-compartment (no model) | 2 | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
 
 ## Pharmacodynamics (PD)
 
@@ -101,7 +101,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
 | absorption | mammary gland | `ABCG2` unknown | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/transport | DrugBank actor |
-| absorption | skeletal muscle | <sub>“…absorption into the systemic circulation is prolonged following gluteal intramuscular inje…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
 | absorption | testis | `ABCB1` inhibitor/transport, `ABCG2` unknown | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
@@ -109,8 +109,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` metabolism, `CYP2C19` metabolism, `CYP2D6` metabolism/substrate, `CYP3A4` metabolism/substrate, `CYP3A5` metabolism/substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` metabolism/substrate, `CYP3A5` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | — | prose |
-| excretion | kidney | <sub>“…recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` modulator | DrugBank actor |
 | — | platelet | `SLC6A4` modulator | DrugBank actor |
 
@@ -126,7 +126,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 598 matched, 87 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 0  ·  needs_review 2  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

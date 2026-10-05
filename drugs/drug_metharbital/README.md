@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Metharbital is a barbiturate anticonvulsant, similar to phenobarbital, marketed as Gemonil by Abbott Laboratories. It was patented in 1905 by Emil Fischer of Merck.
+Metharbital is a barbiturate derivative that was used as an antiepileptic drug to treat seizures. It has been withdrawn and is no longer in use.
 
-**Indication.** Metharbital is used for the treatment of epilepsy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1176294](https://www.wikidata.org/wiki/Q1176294) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

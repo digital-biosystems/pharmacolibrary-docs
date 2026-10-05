@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;chloroxylenol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroxylenol_Dorantes1992_reference&quot;,&quot;label&quot;:&quot;Dorantes_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # chloroxylenol
 
@@ -10,9 +11,9 @@
 
 ## About
 
-**Description.** Chloroxylenol, or para-chloro-meta-xylenol (PCMX), is an antiseptic and disinfectant agent used for skin disinfection and surgical instruments. It is found in antibacterial soaps, wound-cleansing applications, and household antiseptics. The halophenol is shown to be most effective against Gram positive bacteria where it disrupts the cell wall due to its phenolic nature [A1351]. Chloroxylenol is on the World Health Organization's List of Essential Medicines.
+Chloroxylenol is an antiseptic and disinfectant used to treat or prevent local skin infections. It is widely used, including in household antiseptic products, and is included on the WHO list of essential medicines.
 
-**Indication.** The predominant medical applications for which chloroxylenol is formally indicated for therapeutic use is as an application to the skin for use in cuts, bites, stings, abrasions, and for use as antiseptic hand cleaner [L1992].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q426460](https://www.wikidata.org/wiki/Q426460) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -32,7 +33,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Dorantes_1992_reference](drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md) | model (no simulator) | 1-compartment, IV | 5 | Dorantes A et al., Pharmacokinetic and metabolic dispositi…, Pharmaceutical research (1992) | [10.1023/a:1015814513373](https://doi.org/10.1023/a:1015814513373) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Dorantes_1992_reference](drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Dorantes A et al., Pharmacokinetic and metabolic dispositi…, Pharmaceutical research (1992) | [10.1023/a:1015814513373](https://doi.org/10.1023/a:1015814513373) |
 
 ## ADME sites
 
@@ -40,14 +41,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…well-absorbed when applied to the skin…”</sub> | prose |
-| metabolism | kidney | <sub>“…excreted via the kidney with almost complete elimination within 24 hours…”</sub> | prose |
-| metabolism | liver | <sub>“…extensively metabolized by the liver…”</sub> | prose |
-| metabolism | skeletal muscle | <sub>“…one human subject administered 5 mg intragluteally…”</sub> | prose |
-| metabolism | skin | <sub>“…following dermal application of chloroxylenol, that the absorption was rapid…”</sub> | prose |
-| excretion | bile duct | <sub>“…some amounts may be found in bile…”</sub> | prose |
-| excretion | kidney | <sub>“…The major route of excretion is likely in urine…”</sub> | prose |
-| excretion | lung | <sub>“…traces in exhaled air…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

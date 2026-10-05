@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Choline salicylate is an anti-inflammatory pain reliever agent that is related to aspirin. It is used to decrease swelling and to treat mild-moderate pain. It is used to treat arthritis in both children and adults. This medicine can also be used for fever [L2129].
+Choline salicylate is a salicylic acid derivative used as an analgesic and antipyretic, typically for pain relief in the mouth and throat. It is an approved medicine, available in some countries mainly in topical oral preparations such as gels for teething and mouth ulcers.
 
-Choline Salicylate is the choline salt of salicylic acid, used as an analgesic, antipyretic and antirheumatic. It relieves mild to moderate pain and reduce fever and inflammation or swelling. Choline salicylate is effective in the treatment of gout, rheumatic fever, rheumatoid arthritis and muscle injuries [A245119].
-
-This drug is also a main ingredient in teething gels to relieve pains associated with tooth growth in the infant population [L2134].  The UK government has regulated its use, due to toxicity in those under 16 years of age.  Topical oral salicylate gels are no longer indicated for people younger than 16 years for pain associated with infant teething, orthodontic devices, cold sores, or mouth ulcers [L2134].
-
-**Indication.** The oral gel is indicated for the relief of pain and discomfort of common mouth ulcers, cold sores, denture sore spots, infant teething and mouth ulcers, and sore spots due to orthodontic devices in children [L2135].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4499058](https://www.wikidata.org/wiki/Q4499058) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

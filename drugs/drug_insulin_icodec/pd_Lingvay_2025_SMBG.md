@@ -13,13 +13,13 @@
 
 ## What this record describes
 
-**As extracted:** Insulin icodec drives prebreakfast self-measured blood glucose (in mg/dL): delayed effect through an effect compartment.
+**As extracted:** Insulin_icodec drives prebreakfast self-measured blood glucose (in mg/dL): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> Insulin icodec concentrations drive prebreakfast self-measured blood glucose (SMBG, mg/dL) via an effect compartment introducing a delay between plasma PK and insulin action, with the effect-compartment concentration linked to SMBG by a simple nonlinear regression (inhibitory direction); the paper does not report the effect-form parameters (e.g., Emax/IC50) or ke0 values.
+> The model uses an effect compartment to link insulin icodec concentrations to prebreakfast self-measured blood glucose (SMBG) via a simple nonlinear regression model, though the specific mechanism of action (e.g., inhibition of production or elimination) is not described in the provided excerpts. No specific potency or rate parameters (such as Imax, IC50, or ke0) are reported in the text.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Lingvay_2025`
 - **model family:** `effect_compartment`

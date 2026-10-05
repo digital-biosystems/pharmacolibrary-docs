@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Ringer's lactate solution is an electrolyte infusion used to treat low blood pressure or low blood volume. It is classified as a WHO essential medicine and is widely used in hospitals as an intravenous solution affecting electrolyte balance.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2920739](https://www.wikidata.org/wiki/Q2920739) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

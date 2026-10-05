@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Etozoline is marketed in Europe under the names Diulozin, Elkapin, and Etopinil. Etozoline is a loop diuretic.
+Etozolin is a loop (high-ceiling) diuretic that has been used as a diuretic and antihypertensive drug. It is currently listed only as an experimental drug and does not appear to be in widespread clinical use today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5404861](https://www.wikidata.org/wiki/Q5404861) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

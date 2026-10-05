@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A beta-adrenergic antagonist used in the treatment of hypertension, angina pectoris, arrhythmias, and anxiety.
+Oxprenolol is a non-selective beta blocker that was used to treat high blood pressure and anxiety. It has been withdrawn and is no longer in use.
 
-**Indication.** Used in the treatment of hypertension, angina pectoris, arrhythmias, and anxiety.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425963](https://www.wikidata.org/wiki/Q425963) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

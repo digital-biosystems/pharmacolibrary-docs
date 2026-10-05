@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A beta-adrenergic antagonist used as an anti-arrhythmia agent, an anti-angina agent, an antihypertensive agent, and an antiglaucoma agent.
+Carteolol is a non-selective beta blocker used to treat arterial hypertension and to lower pressure in the eye in open-angle glaucoma and ocular hypertension. It is an approved medicine, available both as a cardiovascular beta blocker and as an eye drop for glaucoma.
 
-**Indication.** For the treatment of intraocular hypertension and chronic open-angle glaucoma
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q546434](https://www.wikidata.org/wiki/Q546434) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Myelodysplastic syndromes (MDS) are a heterogeneous group of hematopoietic neoplasms with variable underlying etiology and presentation, including neutropenia and thrombocytopenia. Further mutations leading to increased proliferation of cancerous cells can eventually lead to secondary acute myeloid leukemia, which has a poor prognosis.[A215082, A215092] Among treatment options, nucleoside analogues such as decitabine and [azacitidine] integrate into cellular DNA and inhibit the action of DNA methyltransferases, leading to global hypomethylation and related downstream therapeutic benefits.[A2263, A2264, A2265, A215317, L14962]
+Decitabine is an anticancer antimetabolite used to treat myelodysplastic syndrome and acute myeloid leukemia. It is an approved medicine, with one product authorised in the European Union for myeloid leukemia, and is also being investigated for other uses.
 
-Decitabine was developed by MGI Pharma/SuperGen Inc. and was approved by the FDA for the treatment of MDS on February 5, 2006. It was first marketed under the name Dacogen®.[L14962] It is also available as an oral combination product together with the cytidine deaminase inhibitor [cedazuridine].
-
-**Indication.** Decitabine is indicated for the treatment of patients with myelodysplastic syndromes (MDS) including all French-American-British subtypes (refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts, refractory anemia with excess blasts in transformation, and chronic myelomonocytic leukemia), as well as for MDS scored as belonging to the intermediate-1, intermediate-2, or high-risk group in the International Prognostic Scoring System.[L14962]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1181878](https://www.wikidata.org/wiki/Q1181878) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,7 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CDA (substrate), CMPK1 (substrate), DCK (substrate), DNA (other/unknown), DNMT1 (inhibitor), DNMT3A (inhibitor), DNMT3B (inhibitor), HDAC1 (inhibitor), NME1 (substrate), SLC28A1 (substrate).</sub>
 

@@ -4,7 +4,7 @@
 
 # alverine — `Alverine_Cho2026_po`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,11 +18,11 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the volume of distribution V for alverine was reported as 1.2590 L/kg, a per-body-weight unit that could not be expressed in SI units, causing a dimension mismatch on this structural parameter.**
+**The alverine record was rejected because the volume of distribution (Vd, 1.2590 L/kg) is reported per kilogram of body weight, a unit that could not be converted to SI, causing a dimension mismatch on a structural parameter.**
 
-The only parameter affected is the volume of distribution V of alverine in mice, reported verbatim as 1.2590 L/kg. Because this per-kilogram unit could not be converted to a standard SI volume, the parameter had no usable SI value and failed the dimension check on a structural parameter. The other reported quantities (tmax 0.2416 h, Cmax 0.3473 μmol/L, AUClast 0.3517 μmol·h/L, t1/2z 0.1913 h) are not implicated. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
+The volume of distribution for alverine in mice is given as 1.2590 L/kg, a body-weight-normalized unit that could not be translated into an absolute volume in litres, so the parameter lacked a usable SI value and failed the dimension check. The record also contains only non-compartmental summary statistics (tmax 0.2416 h, Cmax 0.3473 μmol/L, AUClast 0.3517 μmol·h/L, t1/2z 0.1913 h) rather than fitted model parameters, and the metabolites M1, M2 and M3 are listed with zero compartments. A second reader disputed the dose compound and primary analyte fields and returned null for all five parameter values, so the findings on those fields are inconclusive. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,8 +63,14 @@ Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics &
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alverine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 3 first-order transfer(s) across 4 compounds → general_linear
+- template fit: none — 3 metabolites — the templates hold two (site hepatic: 'Beyond PBPK modeling, semi‐physiological population PK approaches have incorporated presystemic metabolite formation usi')
 - status held at route_to_review — not promoted
 - population split: 'po' subgroup of Cho_2026 (paper reports 7 populations: estimate, m1, m1 (4‐hydroxy alverine), m2 (4‐hydroxy alverine glucuronide), m3 (n‐desethyl alverine), parent (alverine), po)
+- row roles (LLM): model_class=compartmental; 32/32 row label(s) assigned, 43 linked by role; re-tagged parent→M1 ×11, parent→M3 ×10, parent→M2 ×5, M1→parent ×3, M2→parent ×5, M3→parent ×3
+- molar mass: no plausible PubChem entry for 'M3' ('N-desethyl alverine') — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'M2' (LLM) — left in mass units
+- molar mass: none found for 'M2' — its concentrations stay mass-only
+- molar mass: none found for 'M3' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
@@ -90,14 +96,31 @@ Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics &
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[auclast]` | 0.3517 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auclast]` | not captured | 0.3517 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | 0.3473 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | not captured | 0.3473 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | 0.1913 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 0.1913 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | 0.2416 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | not captured | 0.2416 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd]` | 1.2590 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd]` | not captured | 1.2590 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | alverine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | alverine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -143,4 +166,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 08:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:23 UTC</sub>

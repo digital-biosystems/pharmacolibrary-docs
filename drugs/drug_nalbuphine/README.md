@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A narcotic used as a pain medication. It appears to be an agonist at kappa opioid receptors and an antagonist or partial agonist at mu opioid receptors. Nalbuphine is the only opioid analgesic that is not a controlled substance in the United States.
+Nalbuphine is an opioid medication used to treat pain. It is an approved analgesic, though it is not authorised in the European Union.
 
-**Indication.** For the relief of moderate to severe pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q277979](https://www.wikidata.org/wiki/Q277979) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,8 +56,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…81% and 83% for the 10 and 20 mg intramuscular doses…”</sub> | prose |
-| absorption | skin | <sub>“…79% and 76% following 10 and 20 mg of subcutaneous nalbuphine…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 

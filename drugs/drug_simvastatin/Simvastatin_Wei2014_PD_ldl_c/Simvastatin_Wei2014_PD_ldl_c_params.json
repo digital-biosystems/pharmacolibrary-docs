@@ -5,7 +5,7 @@
   "response"
  ],
  "parameters": {
-  "E0": 0.0,
+  "E0": 1.38,
   "EC50": 8.56481481481e-11,
   "Emax": -0.61,
   "exposure_per_s": 1.15740740741e-11,
@@ -13,8 +13,8 @@
  },
  "reference_peaks": {},
  "reference_points": {
-  "0": 0.0,
-  "8.564814814814815e-11": -0.30499999999999994
+  "0": 1.38,
+  "8.564814814814815e-11": 1.075
  },
  "stop_time": 74.0,
  "subtitle": "LDL-C against dose",
@@ -22,6 +22,12 @@
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "title": "Dose–response simulated by the PD model",
  "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "mg/dl",
+   "factor": 0.009999999999999998,
+   "si_unit": "kg/m3"
+  },
   "EC50": {
    "display_only": false,
    "display_unit": "mg/day",

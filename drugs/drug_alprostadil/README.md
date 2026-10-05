@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Alprostadil is a chemically-identical synthetic form of prostaglandin E1 (PGE1), a potent vasodilator produced endogenously. In 1996, the FDA approved the use of alprostadil, administered either with an intracavernosal injection or an intraurethral suppository, for the treatment of erectile dysfunction, and it is used in men for whom oral treatment is either contraindicated or ineffective. After administration, alprostadil promotes smooth muscle relaxation of the corpus cavernosal.[A257068,A257088] 
+Alprostadil, a prostaglandin vasodilator, is used to treat erectile dysfunction and to maintain the ductus open in certain congenital heart defects. It is an approved medicine, included on the WHO list of essential medicines, and is used worldwide.
 
-Alprostadil is also used in neonatal patients with congenital heart defects that depend on a patent ductus for survival until corrective or palliative surgery can be performed. This drug causes vasodilation by directly affecting vascular and ductus arteriosus (DA) smooth muscle, preventing or reversing the functional closure of the DA that occurs shortly after birth. This results in increased pulmonary or systemic blood flow in infants.[A34474,L45038,L45063]
-
-**Indication.** Alprostadil is indicated for palliative, not definitive, therapy to temporarily maintain the patency of the ductus arteriosus until corrective or palliative surgery can be performed in neonates who have congenital heart defects and who depend upon the patent ductus for survival.[L45038] It is also indicated for the treatment of erectile dysfunction due to neurogenic, vasculogenic, psychogenic, or mixed etiology,[L45028,L45033] and as an adjunct to other diagnostic tests in the diagnosis of erectile dysfunction.[L45028]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q579348](https://www.wikidata.org/wiki/Q579348) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -47,8 +45,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `SLCO2B1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `SLCO2B1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | lung | <sub>“…metabolized in the lungs through first-pass pulmonary elimination…”</sub> | prose |
-| excretion | bile duct | <sub>“…12% of alprostadil metabolites are excreted through urine and feces…”</sub> | prose |
+| metabolism | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC4` substrate, `SLC22A6` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCC4` substrate | DrugBank actor |
 

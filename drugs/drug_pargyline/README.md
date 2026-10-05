@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Pargyline is a monoamine oxidase inhibitor with antihypertensive properties.
+Pargyline is a monoamine oxidase inhibitor that was used as an antihypertensive drug to treat high blood pressure. Although it has approved status in some drug databases, it is no longer widely used in clinical practice today.
 
-**Indication.** For the treatment of moderate to severe hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q781329](https://www.wikidata.org/wiki/Q781329) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

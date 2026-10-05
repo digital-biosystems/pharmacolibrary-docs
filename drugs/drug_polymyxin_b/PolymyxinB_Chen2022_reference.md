@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;polymyxin B&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/&quot;},{&quot;label&quot;:&quot;Chen_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Manchandani2018_reference&quot;,&quot;label&quot;:&quot;Manchandani_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Akrong_2022_viable_bacterial_burden&quot;,&quot;label&quot;:&quot;Akrong_2022 \u00b7 viable bacterial burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Akrong_2022_viable_bacterial_burden.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mahadevan_2026_bacterial_load&quot;,&quot;label&quot;:&quot;Mahadevan_2026 \u00b7 bacterial load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Mahadevan_2026_bacterial_load.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Manchandani2018_reference&quot;,&quot;label&quot;:&quot;Manchandani_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Akrong_2022_CFU&quot;,&quot;label&quot;:&quot;Akrong_2022 \u00b7 CFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Akrong_2022_CFU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mahadevan_2026_ImaxF_PMB&quot;,&quot;label&quot;:&quot;Mahadevan_2026 \u00b7 ImaxF,PMB&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Mahadevan_2026_ImaxF_PMB.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mahadevan_2026_ImaxM_PMB&quot;,&quot;label&quot;:&quot;Mahadevan_2026 \u00b7 ImaxM,PMB&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Mahadevan_2026_ImaxM_PMB.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mahadevan_2026_KillPMB&quot;,&quot;label&quot;:&quot;Mahadevan_2026 \u00b7 KillPMB&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Mahadevan_2026_KillPMB.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Soeorg_2026_cfu&quot;,&quot;label&quot;:&quot;Soeorg_2026 \u00b7 cfu&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/pd_Soeorg_2026_cfu.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # polymyxin B — `PolymyxinB_Chen2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,28 +21,29 @@
 
 The record lists total clearance for polymyxin b only as a typical value of 2.43 L/h, while the CL parameter itself carries no value; a placeholder default was substituted for the missing clearance. The distribution clearance Q (8.78 L/h) was also neither emitted nor recorded as defaulted, so the parameter-coverage check found only 1 of 2 expected parameters covered. The second reader returned no values for the central volume (13.4 L), Q, CL, or total clearance, leaving those entries unconfirmed. Extracted — polymyxin b: V 13.4 L, Q 8.78 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment distribution volume: this record has 13.4, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:25.276414+00:00) predates the upstream re-run (2026-10-04 17:49:59.298484+00:00). Current validate status: `extracted`.
 
 ## Citation
 Chen N et al., Population pharmacokinetics of polymyxi…, Annals of translational med… (2022)
   ·  DOI: [10.21037/atm-22-236](https://doi.org/10.21037/atm-22-236)
 
 ## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="model_quarantined" stale="false" population="adults with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="extracted" stale="true" population="adults with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 2 extracted.
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| central compartment distribution volume | `Q61` · V | 13.4 | L | 0.0134 | L | not captured | boundary (0.8) | Chen_2022:other_prose | — | not captured |
+| central compartment distribution volume | `Q63` · V1 | 13.4 | L | 0.0134 | L | not captured | boundary_compartment (0.9) | Chen_2022:other_prose | — | not captured |
+| peripheral compartment distribution volume | `Q64` · V2 | 51.6 | L | 0.0516 | L | not captured | boundary_compartment (0.9) | Chen_2022:other_prose | — | not captured |
 | distribution clearance | `Q30` · Q | 8.78 | L/h | 2.4388888888888886e-06 | L/h | not captured | exact (1.0) | Chen_2022:other_prose | — | not captured |
 | total clearance | `Q900` · total clearance | 2.43 | L/h | 6.750000000000001e-07 | not captured | not captured | not captured (not captured) | Chen_2022:other_prose | — | not captured |
 
@@ -59,28 +60,27 @@ Chen N et al., Population pharmacokinetics of polymyxi…, Annals of translation
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: '2020 Wang (18)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
+- table section iiv: '2018 Manchandani (19)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
+- table section iiv: '2018 Miglis (20)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
+- table section iiv: '2018 Kubin (21)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
+- table section iiv: '2018 Avedissian (22)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
+- table section iiv: '2013 Sandri (23)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
+- table section iiv: '2008 Kwa (24)' routed out of structural estimates ('Renal insufficiency: CrCL &lt;80 mL/min; CL =1.58 L/h, IIV =26%; Vc =6.98 L, IIV =38%; Vp =10.57 L, IIV =74%; Q =10.28 L/h; RV (SD) =0.10')
 - column 'pharmacokinetic parameters' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): '2021 Yu (15)' — extend the ontology if this is a real PK parameter (source ['t2:row1:col4'])
 - dropped unlinked row (NIL): '2021 Crass (16)' — extend the ontology if this is a real PK parameter (source ['t2:row2:col4'])
 - dropped unlinked row (NIL): '2021 Wang (17)' — extend the ontology if this is a real PK parameter (source ['t2:row3:col4'])
-- dropped unlinked row (NIL): '2020 Wang (18)' — extend the ontology if this is a real PK parameter (source ['t2:row5:col4'])
-- dropped unlinked row (NIL): '2018 Manchandani (19)' — extend the ontology if this is a real PK parameter (source ['t2:row6:col4'])
-- dropped unlinked row (NIL): '2018 Miglis (20)' — extend the ontology if this is a real PK parameter (source ['t2:row7:col4'])
-- dropped unlinked row (NIL): '2018 Kubin (21)' — extend the ontology if this is a real PK parameter (source ['t2:row8:col4'])
-- dropped unlinked row (NIL): '2018 Avedissian (22)' — extend the ontology if this is a real PK parameter (source ['t2:row9:col4'])
-- dropped unlinked row (NIL): '2013 Sandri (23)' — extend the ontology if this is a real PK parameter (source ['t2:row10:col4'])
-- dropped unlinked row (NIL): '2008 Kwa (24)' — extend the ontology if this is a real PK parameter (source ['t2:row11:col4'])
-- table mostly unlinked (10/10 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - salvaged Q22 ('total clearance (CL)'=2.43) from results prose — parameter table was unreadable
-- salvaged Q61 ('central compartment distribution volume'=13.4) from results prose — parameter table was unreadable
+- salvaged Q63 ('central compartment distribution volume'=13.4) from results prose — parameter table was unreadable
+- salvaged Q64 ('peripheral compartment distribution volume'=51.6) from results prose — parameter table was unreadable
 - salvaged Q30 ('distribution clearance'=8.78) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin_b
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - bound model equation to Q22 (CL): CL = 1.59 L/h, IIV =13.0%; CL (L/h) = 1.59 * (CrCL/80)^0.408; V =20.5 L; RV (CV%) =40.5%
 - Q22 (CL) is equation-defined: value moved to equation-variable 'total clearance (CL)'; equation kept verbatim
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- molar mass: none found for 'polymyxin_b' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell t2:row1:col2 = '32/112'
@@ -108,21 +108,27 @@ Chen N et al., Population pharmacokinetics of polymyxi…, Annals of translation
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[central compartment distribution volume]` | 13.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central compartment distribution volume]` | not captured | 13.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distribution clearance]` | 8.78 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distribution clearance]` | not captured | 8.78 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[peripheral compartment distribution volume]` | 51.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[peripheral compartment distribution volume]` | not captured | 51.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | polymyxin_b | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | polymyxin_b | unknown | mismatch |
 
 </details>
 
@@ -136,11 +142,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 13.4 L | not captured | not captured | ['Chen_2022:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 13.4 L | not captured | not captured | ['Chen_2022:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 51.6 L | not captured | not captured | ['Chen_2022:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -187,4 +194,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 02:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 17:49 UTC</sub>

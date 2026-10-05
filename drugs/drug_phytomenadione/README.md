@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Vitamin K1, also called phylloquinone or phytonadione, is a fat soluble vitamin.[L33319,L33345] Phylloquinone is a cofactor of the enzyme γ-carboxylase, which modifies and activates precursors to coagulation factors II, VII, IX, and X.[A234264,A234195,A234259] It is indicated in the treatment of coagulation disorders due to faulty formation of coagulation factors II, VII, IX, and X caused by deficiency or interference in the activity of vitamin K.[L33319]
+Phytomenadione (vitamin K) is used to treat or prevent bleeding problems caused by vitamin K deficiency, such as haemorrhagic disease of newborns and excessive anticoagulant effects. It is an approved medicine and appears on the WHO list of essential medicines, so it is widely available worldwide.
 
-Phylloquinone has been synthesized since at least 1939,[A234384] and was approved by the FDA prior to 1955.[L33389]
-
-**Indication.** Oral phylloquinone is indicated to treat prothrombin deficiency caused by coumarin or indanedione derivatives; and hypoprothrombinemia secondary to antibacterial therapy, salicylates, or obstructive jaundice or biliary fistulas with concomitant bile salt administration.[L33345]
-
-Parenteral (intravenous, intramuscular, and subcutaneous) phylloquinone is indicated to treat coagulation disorders due to faulty formation of coagulation factors II, VII, IX, and X caused by vitamin K deficiency or some interference with vitamin K activity.[L33319] These indications include the above indications as well as hypoprothrombinemia secondary to sprue, ulcerative colitis, celiac disease, intestinal resection, pancreatic cystic fibrosis, or regional enteritis; or hypoprothrombinemia caused by interference with vitamin k metabolism.[L33319]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q186093](https://www.wikidata.org/wiki/Q186093) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,12 +54,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skeletal muscle | <sub>“…A 10 mg intramuscular phylloquinone dose is 89.2% ± 25.4% bioavailable…”</sub> | prose |
-| absorption | small intestine | <sub>“…A 4 µg oral dose of phylloquinone is 13% ± 9% bioavailable…”</sub> | prose |
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | kidney | `CYP4F2` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP4F2` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…36% eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…22% recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCC6 (transport), BGLAP (target), F2 (cofactor), GGCX (cofactor), GGCX (inducer), GGCX (substrate), UBIAD1 (substrate), VKORC1 (product), VKORC1 (substrate), VKORC1 (target).</sub>
 

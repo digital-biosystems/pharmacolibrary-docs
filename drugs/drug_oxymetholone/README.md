@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Oxymetholone is a synthetic anabolic steroid marketed under the brand name Anapolon by Hoffmann La Roche Limitedand used in the treatment of osteoporosis, anaemia, and as an agent to stimulate muscle growth in malnourished or underdeveloped patients. Anabolic-androgenic steroids (AAS), such as oxymetholone, have been abused by bodybuilders and athletes. The uncontrolled misuse of oxymetholone can lead to a large variety of detrimental effects, the most often reported of which are cardiovascular events. In 2009, no producers of oxymetholone were identified worldwide (SRI 2009), but it was available from 14 suppliers, including 8 U.S. suppliers (ChemSources 2009).
+Oxymetholone is an androgenic anabolic steroid used to treat anemia. It is an approved medicine, though it is also used illicitly, and is not authorised in the European Union.
 
-**Indication.** Indicated in the treatment of anemias caused by deficient red cell production. Acquired aplastic anemia, congenital aplastic anemia, myelofibrosis and the hypoplastic anemias due to the administration of myelotoxic drugs often respond. Oxymetholone should not replace other supportive measures such as transfusion, correction of iron, folic acid, vitamin B12 or pyridoxine deficiency, antibacterial therapy and the appropriate use of corticosteroids.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420864](https://www.wikidata.org/wiki/Q420864) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

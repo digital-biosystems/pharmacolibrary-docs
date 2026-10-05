@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Liang2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source reports only CL/F = 1140 mL/min and V/F = 600 L for metformin; ka and Tlag were missing, so library defaults were used, and the invented ka was flagged as not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, consistent with the apparent (/F) parameterization and first-order depot input for extravascular dosing. A second reader recorded no values for these fields, disagreeing with the extracted 1140 and 600. Extracted — metformin: CL/F 1.14e+03 mL/min, V/F 600 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q26: this record has 500, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q26: this record has 500, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,21 +64,19 @@ Liang X et al., Transporters Involved in Metformin Phar…, Journal of pharmaceu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/5 fields) | 5 |
+| `gpt-oss:120b` | partly confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q26]` | 500 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q27]` | 1140 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q374]` | 129.16 | 129.16 | mismatch |
-| `gpt-oss:120b` | `values[Q40]` | 55 | 55 | mismatch |
 | `gpt-oss:120b` | `values[Q76]` | 600 | not captured | only_one_extracted |
 
 </details>
@@ -134,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_modelica.zip" download>Metformin_Liang2017_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_modelica.zip" download>Metformin_Liang2017_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_fmi.zip" download>Metformin_Liang2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_matlab.zip" download>Metformin_Liang2017_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_matlab_simbio.zip" download>Metformin_Liang2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -147,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 250 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 250–2000 mg.
+**Administration: oral** — 2000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg oral (A10BA02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_sim_controls.json"></dbs-fmusim>
 

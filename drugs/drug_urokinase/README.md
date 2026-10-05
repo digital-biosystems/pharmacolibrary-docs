@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Urokinase is an endogenous peptide that is cleaved in the presence of plasmin between lysine 158 and isoleucine 159 to yield active urokinase.[A191943] Urokinase remains connected between these 2 chains by a sulfhydryl bond.[A191943]
+Urokinase is a thrombolytic enzyme used to treat blood clots such as myocardial infarction, pulmonary embolism, and coronary thrombosis. It has been withdrawn from use, though it was once an approved medication.
 
-Urokinase was granted FDA approval on 16 January 1978.[L12138]
-
-**Indication.** In Canada, urokinase is indicated for lysis of acute massive pulmonary emboli, acute thrombi obstructing coronary arteries, occlusive thromboemboli in peripheral arteries and grafts, and restoration of patency to intravenous catheters.[L12141]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q110969665](https://www.wikidata.org/wiki/Q110969665) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -58,8 +56,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | bile duct | <sub>“…eliminated in the bile…”</sub> | prose |
-| excretion | kidney | <sub>“…and urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: LRP2 (substrate), MMP12 (substrate), NID1 (target), PLAU (modulator), PLAUR (inducer), PLAUR (modulator), PLG (activator), SERPINA5 (substrate), SERPINB2 (inducer), SERPINB2 (substrate), SERPINE1 (inducer), SERPINE1 (substrate), ST14 (substrate).</sub>
 

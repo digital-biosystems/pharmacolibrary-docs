@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Nedosiran is an RNA interference targeting hepatic lactate dehydrogenase, the enzyme responsible for the conversion of glyoxylate to oxalate.[A261690] Oxalate, particularly calcium oxalate, precipitation is the main cause of kidney stones formation; therefore, blocking the production of oxalate can help alleviate renal symptoms.[A261685]
+Nedosiran is a small interfering RNA medication used to treat primary hyperoxaluria. It is an approved prescription drug, though it does not appear to be authorised in the European Union.
 
-Nedosiran was approved by the FDA on October 2<sup>nd</sup>, 2023, under the brand name RIVFLOZA to lower urinary oxalate levels in children 9 years of age and older and adults with primary hyperoxaluria type 1 (PH1) and relatively preserved kidney function. This approval is based on the favorable results from the pivotal phase 2 PHYOX<sup>TM</sup>2 and interim data from the ongoing phase 3 PHYOX<sup>TM</sup>3 clinical trials.[L48325]
-
-**Indication.** RIVFLOZA is indicated to lower urinary oxalate levels in children 9 years of age and older and adults with primary hyperoxaluria type 1 (PH1) and relatively preserved kidney function, e.g., eGFR ≥ 30 mL/min/1.73 m<sup>2</sup>.[L48320]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q123420884](https://www.wikidata.org/wiki/Q123420884) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…excreted unchanged into the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: LDHA (antisense oligonucleotide).</sub>
 

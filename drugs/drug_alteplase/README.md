@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Alteplase is a recombinant tissue plasminogen activator (rt-PA) used as a thrombolytic agent.[L43125] It cleaves plasminogen to form plasmin, an enzyme involved in the degradation of fibrin clots. In the absence of fibrin, the alteplase-mediated conversion of plasminogen is limited, thanks to the high affinity between alteplase and fibrin.[A252330,L43125] Alteplase is a purified glycoprotein of 527 amino acids expressed in Chinese hamster ovary (CHO) cells.[A252345,L43125] It was first approved by the FDA in 1987 for the management of thromboembolic disease, including acute myocardial infarction (AMI).[A252270] The use of alteplase to manage AMI has decreased thanks to the availability of safer treatments such as angioplasty and stenting. However, its use for the treatment of acute ischemic stroke (AIS) has increased over the years.[A252340] New thrombolytic agents derived from tissue plasminogen activator, such as [desmoteplase], [tenecteplase] and [reteplase], have also been developed.[A252270,A252345] Alteplase is also available as Cathflo Activase (intracatheter instillation) for the restoration of function to central venous access devices.[L34864]
+Alteplase is a clot-dissolving enzyme used to treat blood clots in conditions such as pulmonary embolism, stroke, and heart attack. It is an approved medicine and is listed as a WHO essential medicine, so it is widely used worldwide.
 
-**Indication.** Alteplase is indicated for the treatment of acute ischemic stroke (AIS) and for use in acute myocardial infarction (AMI) for the reduction of mortality and incidence of heart failure. Alteplase is also indicated for the lysis of acute massive pulmonary embolism, defined as acute pulmonary emboli obstructing blood flow to a lobe or multiple lung segments, and acute pulmonary emboli accompanied by unstable hemodynamics.[L43125]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q45769835](https://www.wikidata.org/wiki/Q45769835) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -35,8 +35,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…Alteplase is mainly metabolized by the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…more than 80% of alteplase is eliminated through urine…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: FGA (binder), FGG (binder), PLG (activator), SERPINE1 (unknown).</sub>
 

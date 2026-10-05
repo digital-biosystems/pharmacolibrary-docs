@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Isradipine belongs to the dihydropyridine (DHP) class of calcium channel blockers (CCBs), the most widely used class of CCBs. It is structurally related to felodipine, nifedipine, and nimodipine and is the most potent calcium-channel blocking agent of the DHP class. Isradipine binds to calcium channels with high affinity and specificity and inhibits calcium flux into cardiac and arterial smooth muscle cells. It exhibits greater selectivity towards arterial smooth muscle cells owing to alternative splicing of the alpha-1 subunit of the channel and increased prevalence of inactive channels in smooth muscle cells. Isradipine may be used to treat mild to moderate essential hypertension.
+Isradipine is a dihydropyridine calcium channel blocker used to treat high blood pressure and angina. It is an approved drug, though not authorised in the European Union, and has also been studied for other uses.
 
-**Indication.** For the management of mild to moderate essential hypertension. It may be used alone or concurrently with thiazide-type diuretics.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414873](https://www.wikidata.org/wiki/Q414873) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,12 +30,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…subject to extensive first-pass metabolism…”</sub> | prose |
-| absorption | small intestine | <sub>“…Isradipine is 90%-95% absorbed…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…25% to 30% in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1H (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNA2D2 (inhibitor), CACNB2 (inhibitor).</sub>

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Bupranolol is a non-selective beta blocker with potency similar to [propanolol]. It does not have intrinsic sympathomimetic activity (ISA), but does have strong membrane stabilizing activity.
+Bupranolol is a non-selective beta blocker that has been used as an antihypertensive and antiarrhythmic agent. It is not an approved medicine today and is regarded as experimental, with no authorisation in the European Union.
 
-**Indication.** Used to manage hypertension and tachycardia. Also used to treat glaucoma.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425838](https://www.wikidata.org/wiki/Q425838) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,7 +36,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Quickly and completely absorbed from the gut…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
 

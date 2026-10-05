@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Trandolapril is a non-sulhydryl prodrug that belongs to the angiotensin-converting enzyme (ACE) inhibitor class of medications. It is metabolized to its biologically active diacid form, trandolaprilat, in the liver. Trandolaprilat inhibits ACE, the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII). ATII regulates blood pressure and is a key component of the renin-angiotensin-aldosterone system (RAAS). Trandolapril may be used to treat mild to moderate hypertension, to improve survival following myocardial infarction in clinically stable patients with left ventricular dysfunction, as an adjunct treatment for congestive heart failure, and to slow the rate of progression of renal disease in hypertensive individuals with diabetes mellitus and microalbuminuria or overt nephropathy.
+Trandolapril is an ACE inhibitor used to treat high blood pressure and congestive heart failure. It is an approved medicine, available alone and in fixed combinations with calcium channel blockers for cardiovascular use.
 
-**Indication.** For the treatment of mild to moderate hypertension, as an adjunct in the treatment of congestive heart failure (CHF), to improve survival following myocardial infarction (MI) in individuals who are hemodynamically stable and demonstrate symptoms of left ventricular systolic dysfunction or signs of CHF within a few days following acute MI, and to slow progression of renal disease in hypertensive patients with diabetes mellitus and microalbuminuria or overt nephropathy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q929420](https://www.wikidata.org/wiki/Q929420) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -62,10 +62,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…extensive first pass metabolism…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
 | metabolism | liver | `CES1` formation/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…with about 66% in feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC15A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor).</sub>

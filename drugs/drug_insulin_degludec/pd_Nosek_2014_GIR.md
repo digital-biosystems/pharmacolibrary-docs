@@ -13,13 +13,13 @@
 
 ## What this record describes
 
-**As extracted:** Insulin degludec (measured concentrations) drives glucose infusion rate (in mg/kg): delayed effect through an effect compartment.
+**As extracted:** Insulin degludec (measured concentrations) drives glucose infusion rate (in mg/(kg·min)): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> Insulin degludec serum concentration (pmol/L) drives the glucose infusion rate (GIR, mg/kg) in an effect-compartment turnover model linking IDeg concentration to GIR via an effect compartment, a turnover parameter, an insulin sensitivity parameter and a GIR baseline parameter; the paper does not report numeric potency or rate values (Imax, IC50, kin, kout, ke0).
+> The pharmacodynamic model links insulin degludec serum concentrations to the glucose infusion rate (GIR) via an effect compartment, utilizing a turnover parameter, an insulin sensitivity parameter, and a baseline GIR parameter. The paper does not provide specific numerical values for potency or rate parameters such as IC50, Emax, or ke0.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Nosek_2014`
 - **model family:** `effect_compartment`

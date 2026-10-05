@@ -79,7 +79,6 @@ Yoon H et al., Influences of organic cation transporte…, The AAPS journal (201
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 3.1 | 3.038 | 0.98 | 0.25 | reported t½β |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yoon_2013:discussion_prose'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Yoon_2013:discussion_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |

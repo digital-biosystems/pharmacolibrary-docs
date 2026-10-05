@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03B&quot;,&quot;href&quot;:&quot;atc/A03B.md&quot;},{&quot;label&quot;:&quot;atropine&quot;,&quot;href&quot;:&quot;drugs/drug_atropine/&quot;},{&quot;label&quot;:&quot;Str\u00f6m_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atropine_Strm2021_reference&quot;,&quot;label&quot;:&quot;Str\u00f6m_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atropine/Atropine_Strm2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atropine — `Atropine_Strm2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.931). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +15,7 @@
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -26,6 +27,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:14.839615+00:00) predates the upstream re-run (2026-10-04 13:06:09.698248+00:00). Current validate status: `extracted`.
+
 > **Dose compound ≠ measured compound:** dosed `atropine sulfate`, measured `atropine`.
 
 ## Citation
@@ -33,7 +36,7 @@ Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary resea
   ·  DOI: [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4)
 
 ## Model component
-<dbs-pgx drug="atropine" model-id="Atropine_Strm2021_reference" status="model_quarantined" stale="false" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="atropine" model-id="Atropine_Strm2021_reference" status="extracted" stale="true" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 11 extracted.
@@ -41,21 +44,19 @@ Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary resea
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvVc | `Q63` · V1 | 0.646 | not captured | not captured | not captured | 28.03 | tv_prefix (0.95) | Tab1:row2:col2, Tab1:row2:col3, Tab1:row2:col4, Tab1:row2:col5 | — | not captured |
-| tvVt | `Q64` · V2 | 1.148 | not captured | not captured | not captured | 16.39 | llm (0.6) | Tab1:row3:col2, Tab1:row3:col3, Tab1:row3:col4, Tab1:row3:col5 | — | not captured |
-| tvCl | `Q22` · CL | 1.905 | not captured | not captured | not captured | 6.63 | tv_prefix (0.95) | Tab1:row4:col2, Tab1:row4:col3, Tab1:row4:col4, Tab1:row4:col5 | — | not captured |
-| tvCld | `Q30` · Q | 2.477 | not captured | not captured | not captured | 23.87 | tv_prefix (0.95) | Tab1:row5:col2, Tab1:row5:col3, Tab1:row5:col4, Tab1:row5:col5 | — | not captured |
+| tvVc | `Q63` · V1 | 0.646 | L/kg | 0.045219999999999996 | L | 28.03 | tv_prefix (0.95) | Tab1:row2:col2, Tab1:row2:col3, Tab1:row2:col4, Tab1:row2:col5 | — | not captured |
+| tvVt | `Q64` · V2 | 1.148 | L/kg | 0.08036 | L | 16.39 | llm (0.6) | Tab1:row3:col2, Tab1:row3:col3, Tab1:row3:col4, Tab1:row3:col5 | — | not captured |
+| tvCl | `Q22` · CL | 1.905 | L/h | 5.291666666666666e-07 | L/h | 6.63 | tv_prefix (0.95) | Tab1:row4:col2, Tab1:row4:col3, Tab1:row4:col4, Tab1:row4:col5 | — | not captured |
+| tvCld | `Q30` · Q | 2.477 | L/h | 6.880555555555555e-07 | L/h | 23.87 | tv_prefix (0.95) | Tab1:row5:col2, Tab1:row5:col3, Tab1:row5:col4, Tab1:row5:col5 | — | not captured |
 | tvfdrop (ilogit, eye drop) | `Q40` · Fab | 0.781 | ilogit, eye drop | not captured | [ilogit] | 172.66 | llm (0.6) | Tab1:row6:col2, Tab1:row6:col3, Tab1:row6:col4, Tab1:row6:col5 | — | not captured |
-| tvKa | `Q49` · kabs | 5.948 | not captured | not captured | not captured | 198.88 | tv_prefix (0.95) | Tab1:row9:col1, Tab1:row9:col2, Tab1:row9:col3, Tab1:row9:col4, Tab1:row9:col5 | — | not captured |
-| Half-life_absorption | `Q95` · t1/2ka | 0.117 | not captured | not captured | not captured | 53.82 | llm (0.6) | Tab1:row14:col2, Tab1:row14:col3, Tab1:row14:col4, Tab1:row14:col5 | — | not captured |
-| Half-life_Beta (terminal phase) | `Q60` · t1/2β | 0.798 | terminal phase | not captured | [terminalphase] | 12.77 | llm (0.6) | Tab1:row15:col2, Tab1:row15:col3, Tab1:row15:col4, Tab1:row15:col5 | — | not captured |
-| Half-life_alpha (initial phase) | `Q59` · t1/2α | 0.077 | initial phase | not captured | [initialphase] | 20.77 | llm (0.6) | Tab1:row16:col2, Tab1:row16:col3, Tab1:row16:col4, Tab1:row16:col5 | — | not captured |
-| Vss (steady-state volume of distribution) | `Q65` · Vss | 1.747 | steady-state volume of distribution | not captured | [s]^2 · [tatevolumeofdistribution] · [teady] | 15.99 | exact (1.0) | Tab1:row17:col2, Tab1:row17:col3, Tab1:row17:col4, Tab1:row17:col5 | — | not captured |
-| MRT (Mean residence time (IV) | `Q53` · MRT | 0.884 | Mean residence time (IV | not captured | [m] · [eanresidencetime] · [iv] | 16.16 | exact (1.0) | Tab1:row18:col2, Tab1:row18:col3, Tab1:row18:col4, Tab1:row18:col5 | — | not captured |
+| tvKa | `Q49` · kabs | 5.948 | 1/h | 0.0016522222222222222 | 1/h | 198.88 | tv_prefix (0.95) | Tab1:row9:col1, Tab1:row9:col2, Tab1:row9:col3, Tab1:row9:col4, Tab1:row9:col5 | — | not captured |
+| Half-life_absorption | `Q95` · t1/2ka | 0.117 | h | 421.20000000000005 | h | 53.82 | llm (0.6) | Tab1:row14:col2, Tab1:row14:col3, Tab1:row14:col4, Tab1:row14:col5 | — | not captured |
+| Half-life_Beta (terminal phase) | `Q60` · t1/2β | 0.798 | h | 2872.8 | h | 12.77 | llm (0.6) | Tab1:row15:col2, Tab1:row15:col3, Tab1:row15:col4, Tab1:row15:col5 | — | not captured |
+| Half-life_alpha (initial phase) | `Q59` · t1/2α | 0.077 | h | 277.2 | h | 20.77 | llm (0.6) | Tab1:row16:col2, Tab1:row16:col3, Tab1:row16:col4, Tab1:row16:col5 | — | not captured |
+| Vss (steady-state volume of distribution) | `Q65` · Vss | 1.747 | L/kg | 0.12229000000000001 | L | 15.99 | exact (1.0) | Tab1:row17:col2, Tab1:row17:col3, Tab1:row17:col4, Tab1:row17:col5 | — | not captured |
+| MRT (Mean residence time (IV) | `Q53` · MRT | 0.884 | h | 3182.4 | h | 16.16 | exact (1.0) | Tab1:row18:col2, Tab1:row18:col3, Tab1:row18:col4, Tab1:row18:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,6 +64,9 @@ Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary resea
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
 
 **Interpretation flags:**
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -73,6 +77,16 @@ Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary resea
 - unit_dimension_unknown: 'initial phase' (t1/2α)
 - unit_dimension_unknown: 'steady-state volume of distribution' (Vss)
 - unit_dimension_unknown: 'Mean residence time (IV' (MRT)
+- implicit units: 'tvVc' → L/kg (from the paper text: "The abstract states: 'The typical value was 1.7 L/kg for the steady-state volume of distribution.' Since Vss is derived ")
+- implicit units: 'tvVt' → L/kg (from the paper text: "The abstract states: 'The typical value was 1.7 L/kg for the steady-state volume of distribution.' Since Vss is derived ")
+- implicit units: 'tvCl' → L/h (from the paper text: "The abstract states: 'Total plasma clearance was 1.9 L/h'. The parameter tvCl corresponds to Total clearance (CL).")
+- implicit units: 'tvCld' → L/h (from the popPK convention: 'Intercompartmental clearance (Cld or Q) is a clearance parameter. In population PK, clearances are typically reported in')
+- implicit units: 'tvKa' → 1/h (from the popPK convention: 'Absorption rate constant (ka) is a first-order rate constant. The standard unit is 1/h (or h^-1). The magnitude (5.948) ')
+- implicit units: 'Half-life_absorption' → h (from the popPK convention: 'Half-life is a time parameter. The standard unit is hours (h). The value 0.117 h is consistent with the absorption half-')
+- implicit units: 'Half-life_Beta (terminal phase)' → h (from the popPK convention: 'Terminal half-life is a time parameter. The standard unit is hours (h).')
+- implicit units: 'Half-life_alpha (initial phase)' → h (from the popPK convention: 'Initial phase half-life is a time parameter. The standard unit is hours (h).')
+- implicit units: 'Vss (steady-state volume of distribution)' → L/kg (from the paper text: "The abstract explicitly states: 'The typical value was 1.7 L/kg for the steady-state volume of distribution.'")
+- implicit units: 'MRT (Mean residence time (IV)' → h (from the popPK convention: 'Mean Residence Time (MRT) is a time parameter. The standard unit is hours (h). The value 0.884 h is consistent with the ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atropine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -113,18 +127,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col2', 'Tab1:row4:col3', 'Tab1:row4:col4', 'Tab1:row4:col5'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row5:col2', 'Tab1:row5:col3', 'Tab1:row5:col4', 'Tab1:row5:col5'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab1:row9:col1', 'Tab1:row9:col2', 'Tab1:row9:col3', 'Tab1:row9:col4', 'Tab1:row9:col5'] |
-| C5_unit_missing_Q53 | fail | [time] | Mean residence time (IV | not captured | not captured | ['Tab1:row18:col2', 'Tab1:row18:col3', 'Tab1:row18:col4', 'Tab1:row18:col5'] |
-| C5_unit_missing_Q59 | fail | [time] | initial phase | not captured | not captured | ['Tab1:row16:col2', 'Tab1:row16:col3', 'Tab1:row16:col4', 'Tab1:row16:col5'] |
-| C5_unit_missing_Q60 | fail | [time] | terminal phase | not captured | not captured | ['Tab1:row15:col2', 'Tab1:row15:col3', 'Tab1:row15:col4', 'Tab1:row15:col5'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row2:col2', 'Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col5'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row3:col2', 'Tab1:row3:col3', 'Tab1:row3:col4', 'Tab1:row3:col5'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | steady-state volume of distribution | not captured | not captured | ['Tab1:row17:col2', 'Tab1:row17:col3', 'Tab1:row17:col4', 'Tab1:row17:col5'] |
-| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['Tab1:row14:col2', 'Tab1:row14:col3', 'Tab1:row14:col4', 'Tab1:row14:col5'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col2', 'Tab1:row4:col3', 'Tab1:row4:col4', 'Tab1:row4:col5'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row5:col2', 'Tab1:row5:col3', 'Tab1:row5:col4', 'Tab1:row5:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab1:row9:col1', 'Tab1:row9:col2', 'Tab1:row9:col3', 'Tab1:row9:col4', 'Tab1:row9:col5'] |
+| C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Tab1:row18:col2', 'Tab1:row18:col3', 'Tab1:row18:col4', 'Tab1:row18:col5'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Tab1:row16:col2', 'Tab1:row16:col3', 'Tab1:row16:col4', 'Tab1:row16:col5'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Tab1:row15:col2', 'Tab1:row15:col3', 'Tab1:row15:col4', 'Tab1:row15:col5'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row2:col2', 'Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col5'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row3:col2', 'Tab1:row3:col3', 'Tab1:row3:col4', 'Tab1:row3:col5'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row17:col2', 'Tab1:row17:col3', 'Tab1:row17:col4', 'Tab1:row17:col5'] |
+| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Tab1:row14:col2', 'Tab1:row14:col3', 'Tab1:row14:col4', 'Tab1:row14:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.905 | not captured | not captured | ['Tab1:row4:col2', 'Tab1:row4:col3', 'Tab1:row4:col4', 'Tab1:row4:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.91 L/h | not captured | not captured | ['Tab1:row4:col2', 'Tab1:row4:col3', 'Tab1:row4:col4', 'Tab1:row4:col5'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 45.2 L | not captured | not captured | ['Tab1:row2:col2', 'Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col5'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 80.4 L | not captured | not captured | ['Tab1:row3:col2', 'Tab1:row3:col3', 'Tab1:row3:col4', 'Tab1:row3:col5'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 122 L | not captured | not captured | ['Tab1:row17:col2', 'Tab1:row17:col3', 'Tab1:row17:col4', 'Tab1:row17:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -154,21 +172,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_modelica.zip" download>Atropine_Strm2021_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_matlab.zip" download>Atropine_Strm2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_matlab_simbio.zip" download>Atropine_Strm2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_sbml.zip" download>Atropine_Strm2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_cellml.zip" download>Atropine_Strm2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference.svg" alt="Atropine_Strm2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 0.14 mg, single dose, first-order absorption (ka 5.95 /h, F 0.685). Doses in the paper: 0.14, 1 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_atropine/Atropine_Strm2021_reference/Atropine_Strm2021_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Atropine_Strm2021_reference_params.json` · controls `Atropine_Strm2021_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 10:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 13:06 UTC</sub>

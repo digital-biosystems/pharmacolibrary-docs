@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Flosequinan was approved in the USA and the UK for a year prior to being withdrawn from the market due to increased mortality in chronic heart failure patients, found in drug trials.[A174979,L43942]
+Flosequinan is a vasodilator that was used to treat heart failure. It has been withdrawn from the market and is no longer used, reportedly because of safety concerns in patients with heart failure.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q592947](https://www.wikidata.org/wiki/Q592947) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,12 +10,9 @@
 
 ## About
 
-**Description.** Marstacimab is a human monoclonal immunoglobulin G Type 1 (IgG1) antibody produced by Chinese hamster ovary (CHO) cells by recombinant DNA technology.[L51803] It is a tissue factor pathway inhibitor (TFPI) antagonist, which is an endogenous anticoagulant.[A264608] Marstacimab is used to prevent bleeding episodes in patients with hemophilia,[L51803] which is an X‐linked bleeding disorder characterized by coagulation clotting factor deficiency.[A264613] Marstacimab promotes hemostasis via the extrinsic pathway.[A264613]
+Marstacimab, a monoclonal antibody, is used to treat hemophilia A and hemophilia B. It is authorised in the European Union as a systemic hemostatic medicine.
 
-**Indication.** Marstacimab is indicated for routine prophylaxis to prevent or reduce the frequency of bleeding episodes in adult and pediatric patients 12 years of age and older with:
-
-- hemophilia A (congenital factor VIII deficiency) without factor VIII inhibitors, or [L51803]
-- hemophilia B (congenital factor IX deficiency) without factor IX inhibitors.[L51803]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q130351881](https://www.wikidata.org/wiki/Q130351881) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

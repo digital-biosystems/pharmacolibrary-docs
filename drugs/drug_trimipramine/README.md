@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Tricyclic antidepressant similar to imipramine, but with more antihistaminic and sedative properties.
+Trimipramine is a tricyclic antidepressant used to treat depression and neurotic disorders. It remains an approved medicine and is used fairly widely, though newer antidepressants are often preferred.
 
-**Indication.** For the treatment of depression and depression accompanied by anxiety, agitation or sleep disturbance
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423498](https://www.wikidata.org/wiki/Q423498) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A synthetic naphthoquinone without the isoprenoid side chain and biological activity, but can be converted to active vitamin K2, menaquinone, after alkylation in vivo.
+Menadione, a synthetic form of vitamin K, is used to treat clotting problems such as hypoprothrombinemia and other blood coagulation disorders. It is approved as a nutraceutical and is used as a vitamin K supplement, though it is not authorised in the European Union.
 
-**Indication.** The primary known function of vitamin K is to assist in the normal clotting of blood, but it may also play a role in normal bone calcification.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q192471](https://www.wikidata.org/wiki/Q192471) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

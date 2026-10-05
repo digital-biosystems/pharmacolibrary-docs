@@ -8,6 +8,12 @@
 - **molar mass:** 369.528 g/mol (C23H33N2O2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Prajmaline is a class Ia antiarrhythmic drug used to treat abnormal heart rhythms. It is not an approved medicine and has only been given experimentally, so its current use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7238143](https://www.wikidata.org/wiki/Q7238143) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Perindopril is a nonsulfhydryl prodrug that belongs to the angiotensin-converting enzyme (ACE) inhibitor class of medications. It is rapidly metabolized in the liver to perindoprilat, its active metabolite, following oral administration. Perindoprilat is a potent, competitive inhibitor of ACE, the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII). ATII regulates blood pressure and is a key component of the renin-angiotensin-aldosterone system (RAAS). Perindopril may be used to treat mild to moderate essential hypertension, mild to moderate congestive heart failure, and to reduce the cardiovascular risk of individuals with hypertension or post-myocardial infarction and stable coronary disease.
+Perindopril is a long-acting ACE inhibitor used to treat high blood pressure, heart failure, and coronary artery disease. It is an approved medicine, widely used for these cardiovascular conditions and also available in fixed combinations with diuretics, calcium channel blockers, or lipid-modifying agents.
 
-**Indication.** For the treatment of mild to moderate essential hypertension, mild to moderate congestive heart failure, and to reduce the cardiovascular risk of individuals with hypertension or post-myocardial infarction and stable coronary disease.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q277785](https://www.wikidata.org/wiki/Q277785) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

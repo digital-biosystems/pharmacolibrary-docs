@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Magnesium hydroxide is an inorganic compound. It is naturally found as the mineral brucite. Magnesium hydroxide can be used as an antacid or a laxative in either an oral liquid suspension or chewable tablet form. 
-Additionally, magnesium hydroxide has smoke suppressing and flame retardant properties and is thus used commercially as a fire retardant. 
-It can also be used topically as a deodorant or for the relief of canker sores (aphthous ulcers).
+Magnesium hydroxide is an antacid used for acid-related digestive problems such as heartburn, indigestion, peptic ulcers and reflux, and also as a treatment for constipation. It remains an approved, widely available over-the-counter medicine, commonly known as milk of magnesia.
 
-**Indication.** Magnesium hydroxide can be used as an antacid or a laxative depending on the administered dose.
-
-As an antacid, it is used for the temporary relief of heartburn, upset stomach, sour stomach or acid indigestion.
-
-As a laxative, it is used for the relief of occasional constipation by promoting bowel movements for 30 minutes and up to 6 hours.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407548](https://www.wikidata.org/wiki/Q407548) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorbed very slowly through the small intestine…”</sub> | prose |
-| excretion | kidney | <sub>“…rapidly excreted in the urine through the kidneys…”</sub> | prose |
-| excretion | small intestine | <sub>“…absorbed as magnesium ions through the small intestines…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

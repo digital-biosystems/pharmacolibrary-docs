@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Clioquinol was withdrawn in 1983 due to neurotoxicity.
+Clioquinol is an antifungal and antibacterial agent used for skin infections such as tinea and athlete's foot, and was formerly taken by mouth against amoebiasis. Oral use was withdrawn after it was linked to a serious neurological disorder, but it remains approved in topical preparations such as creams and medicated dressings.
 
-**Indication.** Used as a topical antifungal treatment.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5134338](https://www.wikidata.org/wiki/Q5134338) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…Clioquinol is absorbed through the skin…”</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `NQO1` target | paper PGx gene |
 
 <sub>Actors without a tissue in the table: OPRK1 (inhibitor).</sub>

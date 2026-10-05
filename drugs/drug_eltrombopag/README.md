@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Eltrombopag is used to treat low blood platelet counts in adults with chronic immune (idiopathic) thrombocytopenia (ITP), when certain other medicines, or surgery to remove the spleen, have not worked well enough. ITP is a condition that may cause unusual bruising or bleeding due to an abnormally low number of platelets in the blood. Eltrombopag has also been recently approved (late 2012) for the treatment of thrombocytopenia (low blood platelet counts) in patients with chronic hepatitis C to allow them to initiate and maintain interferon-based therapy.
+Eltrombopag is a medicine used to raise low platelet counts in conditions such as immune thrombocytopenic purpura and aplastic anemia. It is an approved drug authorised in the European Union, where it is used for these platelet disorders.
 
-**Indication.** Thrombopoietin receptor agonists are pharmaceutical agents that stimulate platelet production in the bone marrow. In this, they differ from the previously discussed agents that act by attempting to curtail platelet destruction.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411588](https://www.wikidata.org/wiki/Q411588) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -49,8 +49,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C8` inhibitor/substrate, `SLCO1B1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A9` inhibitor | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…eliminated primarily via the feces (59%)…”</sub> | prose |
-| excretion | kidney | <sub>“…31% being renally excreted…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: MPL (target).</sub>
 

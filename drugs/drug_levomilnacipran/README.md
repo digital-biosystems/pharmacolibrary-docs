@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Levomilnacipran is a selective serotonin and norepinephrine reuptake inhibitor (SNRI), although it is a more potent inhibitor of norepinephrine reuptake than serotonin reuptake.[A261181, A38560] Levomilnacipran is the more active 1S,2R-enantiomer in the racemate [milnacipran].[A261181, L47956] Once administered, interconversion between levomilnacipran and its stereoisomer does not occur in humans.[L47946] First approved by the FDA on July 25, 2013, levomilnacipran is used to treat major depressive disorder in adults.[L47956] While levomilnacipran was previously investigated and proposed as a potential treatment for stroke in Europe, the EMA decided against this use.[L48011]
+Levomilnacipran is an antidepressant used to treat major depressive disorder. It is an approved medication, mainly used in the United States, and carries a boxed warning.
 
-**Indication.** Levomilnacipran is a serotonin and norepinephrine reuptake inhibitor indicated for the treatment of major depressive disorder (MDD) in adults.[L47946]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6535779](https://www.wikidata.org/wiki/Q6535779) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | heart | `CYP2J2` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` metabolism, `CYP2C19` metabolism/substrate, `CYP2C8` substrate, `CYP2D6` metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…eliminated primarily by renal excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor/target | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor/target | DrugBank actor |
 

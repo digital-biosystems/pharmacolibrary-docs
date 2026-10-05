@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Galcanezumab is a humanized monoclonal antibody developed by Eli Lilly and Company against human calcitonin gene-related peptide (CGRP).[A33105] Although several small-molecule CGRP receptor antagonists have been developed, humanized monoclonal antibodies like galcanezumab are specifically designed to selectively bind to CGRP entities with high potency.[A33112] Given this target specificity, lack of off-target toxicity, and characteristic proteolysis profile of immunoglobulin antibodies to not undergo metabolism by liver enzymes, galcanezumab possesses favourable and promising safety and tolerability.[A33112] Galcanezumab was approved by the FDA in September 2018, and is indicated for the preventive treatment of migraine and the treatment of episodic cluster headache.[L42060] It is unknown if galcanezumab has an effect on pregnancy outcomes. A pregnancy exposure registry has been established to evaluate the safety of this drug in pregnant women.[L42060]
+Galcanezumab is a humanized monoclonal antibody used to prevent migraine attacks. It is an approved medicine, authorised in the European Union for migraine, and is also under investigation for other uses.
 
-**Indication.** Galcanezumab is indicated in adults for the preventive treatment of migraine and the treatment of episodic cluster headache.[L42060]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q25326707](https://www.wikidata.org/wiki/Q25326707) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

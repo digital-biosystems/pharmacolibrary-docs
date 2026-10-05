@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Hexobendine is a medication used to cause vasodilation, to treat several conditions including angina pectoris. It has not been approved in the United States or the United Kingdom, but has been used widely in Austria and Germany [T478].
+Hexobendine is a vasodilator used in cardiac therapy, acting on blood vessels to treat heart-related conditions. It is an approved drug, though it appears to be a niche cardiac vasodilator rather than a widely used medicine, and it is not authorised by the European Medicines Agency.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q12745373](https://www.wikidata.org/wiki/Q12745373) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

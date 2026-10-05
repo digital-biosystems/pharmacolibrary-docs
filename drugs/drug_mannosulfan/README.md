@@ -8,6 +8,12 @@
 - **molar mass:** 494.51 g/mol (C10H22O14S4) — DrugBank
 - **groups:** experimental
 
+## About
+
+Mannosulfan is an alkyl sulfonate alkylating agent that was developed as an experimental anticancer drug. It is not an approved medicine and appears to be used only in experimental settings.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6750946](https://www.wikidata.org/wiki/Q6750946) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

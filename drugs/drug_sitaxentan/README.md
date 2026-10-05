@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Sitaxentan was marketed under the trade name Thelin for the treatment of pulmonary arterial hypertension (PAH) by Encysive Pharmaceuticals until Pfizer purchased Encysive in February 2008. In 2010, Pfizer voluntarily removed sitaxentan from the market over concerns of hepatotoxicity.
+Sitaxentan is an endothelin receptor antagonist that was used to treat pulmonary arterial hypertension. It has been withdrawn from the market, reportedly because of concerns about liver damage.
 
-**Indication.** Investigated for use/treatment in pulmonary hypertension, connective tissue diseases, hypertension, and congestive heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q905664](https://www.wikidata.org/wiki/Q905664) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,8 +40,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C9` inhibitor/substrate, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal (40 to 50%)…”</sub> | prose |
-| excretion | kidney | <sub>“…Renal (50 to 60%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EDNRA (target), EDNRB (target).</sub>
 

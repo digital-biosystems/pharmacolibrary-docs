@@ -8,6 +8,12 @@
 - **molar mass:** 272.13 g/mol (C11H11Cl2N3O) — DrugBank
 - **groups:** approved, withdrawn
 
+## About
+
+Muzolimine is a loop-type (high-ceiling) diuretic that was used to treat fluid retention and high blood pressure. It has been withdrawn and is no longer in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3868794](https://www.wikidata.org/wiki/Q3868794) and the WHO ATC classification; not checked by a person.</small>
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

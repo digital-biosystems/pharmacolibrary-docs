@@ -8,6 +8,12 @@
 - **molar mass:** 362.94 g/mol (C21H31ClN2O) — DrugBank
 - **groups:** investigational
 
+## About
+
+Viminol is an analgesic classified among other analgesics and antipyretics for the relief of pain. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4012999](https://www.wikidata.org/wiki/Q4012999) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

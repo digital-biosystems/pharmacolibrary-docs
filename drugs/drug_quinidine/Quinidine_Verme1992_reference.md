@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The quinidine record was rejected because its clearance parameter is actually calculated creatinine clearance (50 ml/min), a biomarker, not quinidine clearance, and an absorption rate was invented since the abstract-only source reported none.**
+**The quinidine record was rejected because its clearance parameter is actually calculated creatinine clearance (50 ml/min), a biomarker, not quinidine clearance, and the abstract-only source left ka and Tlag defaulted with an apparent F=1 parameterization.**
 
-The disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a biomarker rather than quinidine elimination, so the analyte-identity check failed. The record was built from the abstract alone, so summary statistics stood in for a fitted model; the absorption rate constant (ka) and lag time had no values in the source and were filled with library placeholders, and the invented absorption was judged unacceptable. The apparent parameterization (F=1, Fm=1, no molar correction) with first-order depot input is disputed by a second reader, who reads it as mechanistic; the second reader also reports null for both parameter values (50 and 230). Extracted — quinidine: V/F 230 L, CL 50 ml/min.
+The analyte-identity check failed: the disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a biomarker rather than quinidine or its metabolites, so the drug's own clearance is absent. The record was built from the abstract alone, so summary statistics stood in for a fitted model, and the builder substituted defaults for ka and Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input giving an apparent (/F) parameterization. A second reader disagreed on the parameterization (mechanistic rather than apparent) and returned no values for the 50 ml/min and 230 L parameters. Extracted — quinidine: V/F 230 L, CL 50 ml/min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -117,7 +117,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_output_variable | not captured | pass | C_central (measured=quinidine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -10,15 +10,9 @@
 
 ## About
 
-**Description.** Azilsartan medoxomil is a prodrug that is broken down to azilsartan, which belongs in the angiotensin-receptor blocking (ARB) drug class. It is a selective AT1 subtype angiotensin II receptor antagonist. Azilsartan medoxomil is a relatively recently-developed antihypertensive drug that was first approved by the FDA in February 2011.[A7354] Many guidelines recommend the use of ARBs as first-line therapy when initiating antihypertensive therapy and indicate that the clinical efficacy of ARBs is comparable to angiotensin-converting enzyme (ACE) inhibitors that are also used as first-line treatment for hypertension.[A232863]
+Azilsartan medoxomil is an angiotensin II receptor blocker used to treat high blood pressure (arterial hypertension). It is an approved medicine, with an authorised product in the European Union, though another EU product has been withdrawn.
 
-Azilsartan medoxomil is marketed under the brand name Edarbi. It is used to treat hypertension as monotherapy or in combination with other antihypertensive drugs. It is also available in a combination product with [chlorthalidone]. As hypertension is a major risk factor for cardiovascular disease,[A7354] early management of hypertension has several implications on patients' survival rate and quality of life in the future. Lowering blood pressure is associated with a reduced risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions.[L32918] Azilsartan medoxomil is thus speculated to lower mortality rates and the onset of cardiovascular disease. Although there is no clinical significance yet determined, azilsartan medoxomil may have potential off-label uses in patients with a history of myocardial infarction or heart failure.[A232863]
-
-**Indication.** Azilsartan medoxomil is indicated for the treatment of hypertension to lower blood pressure in patients over 18 years of age. It may be used either alone or in combination with other antihypertensive agents. Some antihypertensive drugs have lesser effects on blood pressure in black patients.[L32918]
-
-Azilsartan medoxomil is available as a fixed-dose combination product with [chlorthalidone], which is indicated for the treatment of hypertension in patients whose hose blood pressure is not adequately controlled on monotherapy. It may be used as initial therapy if a patient is likely to need multiple drugs to achieve blood pressure goals.[L32923]
-
-Azilsartan medoxomil belongs to the angiotensin-receptor blocking (ARB) class of drugs, which are used to decrease the progression of moderate-to-severe albuminuria and prevent the recurrence of atrial fibrillation as off-label uses in patients with diabetes mellitus and hypertension.[A232863]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1087888](https://www.wikidata.org/wiki/Q1087888) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -44,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C8` substrate, `CYP2C9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…approximately 55% of radioactivity was recovered in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…approximately 42% in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AGTR1 (target).</sub>
 

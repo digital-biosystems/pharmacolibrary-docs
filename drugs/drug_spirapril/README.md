@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Spirapril is an ACE inhibitor antihypertensive drug used to treat hypertension. Spirapril is converted to the active spiraprilat after administration. ACE inhibitors are used primarily in treatment of hypertension and congestive heart failure.
+Spirapril is an ACE inhibitor used as an antihypertensive drug to treat high blood pressure. It is an approved medicine, but it does not appear to be widely marketed today and is not authorised in the European Union.
 
-**Indication.** Spirapril is an ACE inhibitor class drug used to treat hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q835757](https://www.wikidata.org/wiki/Q835757) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -33,7 +33,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331, Q86, Q86 — no SI value to bui…</sub><br><sub>blocking: C2_base_Q86 failed (ratio 0.01)</sub><br><sub>route_to: `human_review`</sub> | [Krähenbühl_1993_reference](drugs/drug_spirapril/Spirapril_Krhenbhl1993_reference.md) | — | parent + metabolite (no model) | 13 | Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European journal of clinica… (1993) | [10.1007/BF00315391](https://doi.org/10.1007/BF00315391) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331, Q86, Q86 — no SI value to bui…</sub><br><sub>blocking: C2_base_Q86 failed (ratio 0.01)</sub><br><sub>route_to: `human_review`</sub> | [Krähenbühl_1993_reference](drugs/drug_spirapril/Spirapril_Krhenbhl1993_reference.md) | — | parent + metabolite (no model) | 13 | Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European journal of clinica… (1993) | [10.1007/BF00315391](https://doi.org/10.1007/BF00315391) |
 
 ## ADME sites
 
@@ -42,7 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | liver | <sub>“…Hepatic. Converted to spiraprilat following oral administration.…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC15A2` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 35 matched, 35 returned
 - **screened:** 4  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

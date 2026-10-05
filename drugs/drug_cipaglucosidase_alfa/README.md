@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Cipaglucosidase alfa (ATB200) is a novel recombinant human acid alpha-glucosidase (GAA) investigated for the treatment of patients with Pompe disease, a rare inherited metabolic disorder characterized by a deficiency in GAA.[A232955] Other types of enzyme replacement therapy for the treatment of Pompe disease include [alglucosidase alfa] and [avalglucosidase alfa]. Cipaglucosidase alfa is conjugated with mannose-6-phosphate (M6P) N-glycans that bind to the cation-independent mannose-6-phosphate receptor (CI-MPR) in skeletal muscle, one of the main affected tissues in Pompe disease. Compared to alglucosidase alfa, cipaglucosidase alfa has a higher M6P content.[A232955, A232960]
+Cipaglucosidase alfa is an enzyme therapy used to treat glycogen storage disease type II (Pompe disease). It is authorised in the European Union.
 
-In December 2022, the EMA's Committee for Medicinal Products for Human Use (CHMP) recommended cipaglucosidase alfa be granted marketing authorization for the treatment of Pompe disease,[L45275] and the EMA fully approved the drug on March 27, 2023.[A259882] Cipaglucosidase alfa is coadministered with [miglustat], a small-molecule pharmacological chaperone that stabilizes the conformation of the enzyme.[A232955, A232960] In September 2023, the FDA also approved cipaglucosidase alfa for similar indications.[L49241]
-
-**Indication.** In Europe and the US, cipaglucosidase alfa is a long-term enzyme replacement therapy used in combination with the enzyme stabilizer [miglustat] for the treatment of adults with late-onset Pompe disease, also known as acid α-glucosidase (GAA) deficiency.[L46721,L49236]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | liver | <sub>“…expected to be metabolized into small peptides and amino acids in the liver by proteolytic…”</sub> | prose |
-| excretion | liver | <sub>“…Hepatic elimination is the main route of elimination…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: IGF2R (target).</sub>
 

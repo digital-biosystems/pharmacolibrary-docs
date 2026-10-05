@@ -13,13 +13,13 @@
 
 ## What this record describes
 
-**As extracted:** Insulin degludec and insulin aspart drive glucose infusion rate (in unknown): delayed effect through an effect compartment.
+**As extracted:** Insulin degludec drives glucose infusion rate (in mg/[kg × min]): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> In Japanese patients with type 1 diabetes receiving 0.5 U/kg IDegAsp, plasma concentrations of the two co-formulated insulins (IDeg and IAsp, each with its own PK component) drive the glucose infusion rate (GIR) measured in a 26-h euglycemic clamp (target 5.5 mmol/L). The paper describes the mechanism as two separate insulin-action compartments — one for IDeg and one for IAsp, each with its own turnover and insulin sensitivity parameter — whose contributions are additive on the GIR scale; no numeric parameter values (turnover rates, insulin sensitivity, Imax/IC50/EC50/Emax, ke0) are given in the excerpts.
+> The model describes the additive effect of insulin degludec and insulin aspart concentrations on the glucose infusion rate (GIR) via separate effect compartments, each characterized by a turnover rate and an insulin sensitivity parameter. The paper does not provide specific numerical values for the turnover rates, insulin sensitivity parameters, or potency metrics (e.g., IC50, Emax).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Haahr_2016`
 - **model family:** `effect_compartment`

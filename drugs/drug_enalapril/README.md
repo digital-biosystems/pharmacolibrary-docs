@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Enalapril is a prodrug belonging to the angiotensin-converting enzyme (ACE) inhibitor drug class that works on the renin-angiotensin-aldosterone system, which is responsible for the regulation of blood pressure and fluid and electrolyte homeostasis. Enalapril is an orally-active and long-acting nonsulphydryl antihypertensive agent that suppresses the renin-angiotensin-aldosterone system to lower blood pressure. It was developed from a targeted research programmed using molecular modelling.[A18459] Being a prodrug, enalapril is rapidly biotransformed into its active metabolite, [enalaprilat], which is responsible for the pharmacological actions of enalapril. The active metabolite of enalapril competitively inhibits the ACE to hinder the production of angiotensin II, a key component of the renin-angiotensin-aldosterone system that promotes vasoconstriction and renal reabsorption of sodium ions in the kidneys. Ultimately, enalaprilat works to reduce blood pressure and blood fluid volume.
+Enalapril is an ACE inhibitor used to treat high blood pressure, heart failure, and related cardiovascular conditions. It is widely used worldwide, appears on the WHO essential medicines list, and is authorised in the European Union; it is also approved for veterinary use.
 
-Commonly marketed under the trade name Vasotec, enalapril was first approved by the FDA in 1985 for the management of hypertension, heart failure, and asymptomatic left ventricular dysfunction. It is also found in a combination product containing [hydrochlorothiazide] that is used for the management of hypertension. The active metabolite enalaprilat is also available in oral tablets and intravenous formulations for injection.
-
-**Indication.** Indicated for the management of essential or renovascular hypertension [L6586] as monotherapy or in combination with other antihypertensive agents, such as thiazide diuretics, for an additive effect.[label]
-
-Indicated for the treatment of symptomatic congestive heart failure, usually in combination with diuretics and digitalis.[label]
-
-Indicated for the management of asymptomatic left ventricular dysfunction in patients with an ejection fraction of ≤ to 35 percent to decrease the rate of development of overt heart failure and the incidence of hospitalization for heart failure.[label]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422185](https://www.wikidata.org/wiki/Q422185) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -41,7 +35,7 @@ Indicated for the management of asymptomatic left ventricular dysfunction in pat
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Kechagia_2015_reference](drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 (+4 cov.) | Kechagia IA et al., Extrapolation of enalapril efficacy fro…, The Journal of pharmacy and… (2015) | [10.1111/jphp.12471](https://doi.org/10.1111/jphp.12471) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Steichert_2025_2_reference](drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025) | [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Steichert_2025_2_reference](drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025) | [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Faisal_2019_2_mean](drugs/drug_enalapril/Enalapril_Faisal2019v2_mean.md) | — | parent + metabolite (no model) | 0 | Faisal M et al., Simultaneous Semi-Mechanistic Populatio…, Frontiers in pediatrics (2019) | [10.3389/fped.2019.00281](https://doi.org/10.3389/fped.2019.00281) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Faisal_2019_2_median](drugs/drug_enalapril/Enalapril_Faisal2019v2_median.md) | — | parent + metabolite (no model) | 0 | Faisal M et al., Simultaneous Semi-Mechanistic Populatio…, Frontiers in pediatrics (2019) | [10.3389/fped.2019.00281](https://doi.org/10.3389/fped.2019.00281) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hockings_1986_reference](drugs/drug_enalapril/Enalapril_Hockings1986_reference.md) | — | general linear (no model) | 2 | Hockings N et al., Age and the pharmacokinetics of angiote…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb05205.x](https://doi.org/10.1111/j.1365-2125.1986.tb05205.x) |
@@ -118,7 +112,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
 | metabolism | liver | `CES1` formation, `CYP2C19` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `SLC22A7` inhibitor | DrugBank actor |
-| excretion | bile duct | — | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ABO (target), ACE (inhibitor), ACE (target), ADRB2 (target), AGT (target), APOB (target), APOC3 (target), APOE (target), BDKRB2 (target), CES1P1 (formation), CETP (target), CYP3A4/5 (metabolism), LPL (target), NOS3 (target), REN (unknown), SLCO1B1 (OATP1B1) (transport), VEGFA (target).</sub>

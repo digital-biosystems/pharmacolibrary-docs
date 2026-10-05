@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An essential amino acid that is physiologically active in the L-form.
+Arginine is an amino acid used as an additive to intravenous solutions and as a detoxifying agent during antineoplastic treatment. It is approved and also sold as a nutraceutical, with some investigational uses.
 
-**Indication.** Used for nutritional supplementation, also for treating dietary shortage or imbalance.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27277776](https://www.wikidata.org/wiki/Q27277776) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -69,8 +69,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
 | absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| metabolism | liver | <sub>“…transported to the liver, where again some portion of the amino acid is metabolized…”</sub> | prose |
-| metabolism | small intestine | <sub>“…Some metabolism of L-arginine takes place in the enterocytes…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ARG2 (unknown), ASL (unknown), ASS1 (unknown), AZIN2 (unknown), NOS2 (unknown), NOS3 (unknown), RS6025211 (unknown), SLC16A10 (inhibitor), SLC7A1 (unknown), SLC7A3 (unknown), SLC7A4 (unknown), TK1 (modulator), WWOX (target).</sub>
 

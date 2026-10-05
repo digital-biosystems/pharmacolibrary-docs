@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Streptokinase, is a sterile, purified preparation of a bacterial protein elaborated by group C (beta) -hemolytic streptococci.
+Streptokinase is a clot-dissolving enzyme used to treat conditions such as heart attack, pulmonary embolism, and peripheral vascular disease. It is an approved medicine and has been included on the WHO list of essential medicines, so it remains in use, though it has also been withdrawn in some settings.
 
-**Indication.** For the treatment of acute evolving transmural myocardial infarction, pulmonary embolism, deep vein thrombosis, arterial thrombosis or emolism and occlusion of arteriovenous cannulae
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416485](https://www.wikidata.org/wiki/Q416485) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

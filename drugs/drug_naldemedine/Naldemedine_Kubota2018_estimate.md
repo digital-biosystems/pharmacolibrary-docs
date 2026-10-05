@@ -4,7 +4,7 @@
 
 # naldemedine — `Naldemedine_Kubota2018_estimate`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 The record for naldemedine (Kubota_2018, two-compartment structure) reports V1/F = 83.6 L, V2/F = 37.7 L, Q/F = 4.77 L/h and tlag = 0.195 h, but CL/F, Ka and k21 carry no extracted values; placeholders stood in for them, and the invented absorption (defaulted Ka) was judged not acceptable. The model also assumed F = 1 and Fm = 1 with no molar correction, and the covariate effects defined in the record were not simulated — only the reference individual was. A second reader recorded 51.36 as a maximum parameter value where this record has none, and no THETA value where this record has -0.195. Extracted — naldemedine: V1/F 83.6 L, Q/F 4.77 L/h, V2/F 37.7, tlag 0.195 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of max: this record has none, the second reading 51.36; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading 0.2; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:06.744382+00:00) predates the upstream re-run (2026-10-04 16:42:17.599036+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018)
   ·  DOI: [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7)
 
 ## Model component
-<dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_estimate" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="naldemedine" model-id="Naldemedine_Kubota2018_estimate" status="extracted" stale="true" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.
@@ -39,14 +41,12 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | THETA (2) | `Q900` · equation variable | -0.195 | not captured | not captured | not captured | not captured | llm (0.6) | Tab3:row4:col1 | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 83.6 | L | 0.0836 | [l] | not captured | exact (1.0) | Tab3:row8:col1, Kubota_2018_table_S2:row2:col1, Kubota_2018_table_S2:row2:col5 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 4.77 | L/h | 1.325e-06 | [l] / [h] | not captured | exact (1.0) | Tab3:row16:col1 | — | not captured |
-| Vp/F | `Q82` · V2/F | 37.7 | not captured | not captured | not captured | not captured | exact (1.0) | Tab3:row17:col1, Tab3:row24:col1, Kubota_2018_table_S2:row12:col1, Kubota_2018_table_S2:row12:col5 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 83.6 | L | 0.0836 | [l] | not captured | exact (1.0) | Tab3:row8:col1, Kubota_2018_table_S2:row2:col1, Kubota_2018_table_S2:row2:col5 | — | 25.3 (None% RSE) |
+| Q/F (L/h) | `Q69` · Q/F | 4.77 | L/h | 1.325e-06 | [l] / [h] | not captured | exact (1.0) | Tab3:row16:col1 | — | 46.3 (None% RSE) |
+| Vp/F | `Q82` · V2/F | 41.8 | L | 0.0418 | L | not captured | exact (1.0) | Tab3:row17:col1 | — | 36.3 (None% RSE) |
 | ALAG (hr) | `Q83` · tlag | 0.195 | hr | 702.0 | [h] | not captured | exact (1.0) | Tab3:row18:col1, Kubota_2018_table_S2:row6:col1, Kubota_2018_table_S2:row6:col5 | — | not captured |
 
 <details class="legend">
@@ -63,6 +63,11 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'CL/F' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Vc/F' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Ka' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Q/F' routed out of structural estimates ('Inter-individual variability (CV%)')
+- table section iiv: 'Vp/F' routed out of structural estimates ('Inter-individual variability (CV%)')
 - dropped unlinked row (NIL): 'THETA (1)' — extend the ontology if this is a real PK parameter (source ['Tab3:row3:col1'])
 - dropped unlinked row (NIL): 'THETA (3)' — extend the ontology if this is a real PK parameter (source ['Tab3:row5:col1'])
 - dropped unlinked row (NIL): 'THETA (4)' — extend the ontology if this is a real PK parameter (source ['Tab3:row6:col1'])
@@ -73,10 +78,6 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 - dropped unlinked row (NIL): 'THETA (9)' — extend the ontology if this is a real PK parameter (source ['Tab3:row12:col1'])
 - dropped unlinked row (NIL): 'THETA (10)' — extend the ontology if this is a real PK parameter (source ['Tab3:row14:col1'])
 - dropped unlinked row (NIL): 'THETA (11)' — extend the ontology if this is a real PK parameter (source ['Tab3:row15:col1'])
-- dropped duplicate Q27 ('CL/F', value '40.5') — already have one for this compound
-- dropped duplicate Q290 ('Vc/F', value '38.5') — already have one for this compound
-- dropped duplicate Q49 ('Ka', value '168.2') — already have one for this compound
-- dropped duplicate Q69 ('Q/F', value '50.5') — already have one for this compound
 - routed 'proportional' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - dropped duplicate Q27 ('CL/F (L/hr)', value '8.20') — already have one for this compound
 - dropped duplicate Q49 ('Ka (hr-1)', value '3.81') — already have one for this compound
@@ -96,12 +97,13 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 - dropped unlinked row (NIL): 'Gender' — extend the ontology if this is a real PK parameter (source ['Kubota_2018_table_S4:row6:col5', 'Kubota_2018_table_S4:row6:col6', 'Kubota_2018_table_S4:row6:col8', 'Kubota_2018_table_S4:row6:col9', 'Kubota_2018_table_S4:row6:col10'])
 - dropped unlinked row (NIL): 'Race' — extend the ontology if this is a real PK parameter (source ['Kubota_2018_table_S4:row8:col5', 'Kubota_2018_table_S4:row8:col6', 'Kubota_2018_table_S4:row8:col8'])
 - dropped unlinked row (NIL): 'Health status' — extend the ontology if this is a real PK parameter (source ['Kubota_2018_table_S4:row13:col5', 'Kubota_2018_table_S4:row13:col6', 'Kubota_2018_table_S4:row13:col8'])
+- implicit units: 'Vp/F' → L (from the paper text: "The paper text states: 'The population parameter estimates were: ... Vp/F = 41.8 L'")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=naldemedine
 - bound model equation to Q27 (CL/F): CL/F = THETA (1) * (Age/52) ** THETA (2) * (CLcr/108) ** THETA (3) * THETA (4) ** White * THETA (5) ** Gender
 - bound model equation to Q49 (kabs): Ka = THETA (10) * (Age/52) ** THETA (11)
 - Q27 (CL/F) is equation-defined: value moved to equation-variable 'CL/F (L/h)'; equation kept verbatim
 - Q49 (kabs) is equation-defined: value moved to equation-variable 'Ka (hr−1)'; equation kept verbatim
-- population split: 'estimate' subgroup of Kubota_2018 (paper reports 5 populations: 1107v9221(phase 2b), 1314v9231_1315v9232(phase 3), cl/f (l/hr), estimate, shrinkage)
+- population split: 'estimate' subgroup of Kubota_2018 (paper reports 3 populations: 1107v9221(phase 2b), 1314v9231_1315v9232(phase 3), estimate)
 
 **Extraction notes:**
 - companion parameter table S2 transcribed (42 record(s), model stage 'base')
@@ -114,19 +116,21 @@ Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical rese
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[dose]` | not captured | 0.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[max]` | not captured | 51.36 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta]` | -0.195 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc/f].value` | 83.6 | not captured | mismatch |
 
 </details>
 
@@ -147,11 +151,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row8:col1', 'Kubota_2018_table_S2:row2:col1', 'Kubota_2018_table_S2:row2:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row13:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row16:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row17:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab3:row18:col1', 'Kubota_2018_table_S2:row6:col1', 'Kubota_2018_table_S2:row6:col5'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row17:col1', 'Tab3:row24:col1', 'Kubota_2018_table_S2:row12:col1', 'Kubota_2018_table_S2:row12:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q290 | pass | volume within physiological range | 83.6 L | not captured | not captured | ['Tab3:row8:col1', 'Kubota_2018_table_S2:row2:col1', 'Kubota_2018_table_S2:row2:col5'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 41.8 L | not captured | not captured | ['Tab3:row17:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -199,4 +204,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-11 11:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 16:42 UTC</sub>

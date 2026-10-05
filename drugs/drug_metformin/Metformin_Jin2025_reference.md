@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Jin2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 20.25, the second reading 2.4; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 20.25, the second reading 3287.90; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:53.268820+00:00) predates the upstream re-run (2026-10-03 12:22:57.622306+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:53.268820+00:00) predates the upstream re-run (2026-10-05 00:40:51.073554+00:00). Current validate status: `extracted`.
 
 ## Citation
 Jin G et al., In Vivo PK-PD and Drug-Drug Interaction…, Pharmaceuticals (Basel, Swi… (2025)
@@ -42,8 +42,8 @@ Jin G et al., In Vivo PK-PD and Drug-Drug Interaction…, Pharmaceuticals (Basel
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance rate (BYL719) | `Q22` · CL | 9.2 | L/h | 2.5555555555555553e-06 | L/h | not captured | review (0.7) | Jin_2025:review | — | not captured |
-| Apparent volume of distribution (mean) | `Q76` · V/F | 115.0 | L | 0.115 | L | not captured | review (0.7) | Jin_2025:review | — | not captured |
+| clearance rate | `Q22` · CL | 9.2 | L/h | 2.5555555555555553e-06 | L/h | not captured | review (0.7) | Jin_2025:review | — | not captured |
+| apparent volume of distribution | `Q76` · V/F | 115.0 | L | 0.115 | L | not captured | review (0.7) | Jin_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,19 +63,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.562 (9/16 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.333 (5/15 fields) | 10 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q19]` | 20.25 | 2.4 | mismatch |
-| `gpt-oss:120b` | `values[Q21]` | 2.4 | 20.25 | mismatch |
+| `gpt-oss:120b` | `values[Q19]` | 20.25 | 3287.90 | mismatch |
+| `gpt-oss:120b` | `values[Q21]` | not captured | 2.4 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q325]` | 0.8 | 0.80 | mismatch |
-| `gpt-oss:120b` | `values[Q32]` | 13.32 | 1090 | mismatch |
-| `gpt-oss:120b` | `values[Q33]` | not captured | 13.32 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q364]` | not captured | 0.2 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q74]` | not captured | 3287.90 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 13.32 | 1331.00 | mismatch |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 1.31 | 0.50 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | 8 | 2.15 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | not captured | 115 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q76]` | 115 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | not captured | 5570 | only_one_extracted |
 
 </details>
 
@@ -129,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_modelica.zip" download>Metformin_Jin2025_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_modelica.zip" download>Metformin_Jin2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_fmi.zip" download>Metformin_Jin2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_matlab.zip" download>Metformin_Jin2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_matlab_simbio.zip" download>Metformin_Jin2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -142,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 14 mg infusion over 10 min, single dose. Doses in the paper: 14, 700, 1750 mg.
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference_sim_controls.json"></dbs-fmusim>
 
@@ -151,4 +154,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 12:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:40 UTC</sub>

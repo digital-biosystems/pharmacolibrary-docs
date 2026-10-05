@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Originally developed in the 1950s as a malaria treatment, hydralazine showed antihypertensive ability and was soon repurposed.[A186841] Hydralazine is a hydrazine derivative vasodilator used alone or as adjunct therapy in the treatment of hypertension and only as adjunct therapy in the treatment of heart failure.[A186820,L8782,L8785] Hydralazine is no longer a first line therapy for these indications since the development of newer antihypertensive medications.[T691]
+Hydralazine is a vasodilator antihypertensive used to treat high blood pressure, including severe forms, and also congestive heart failure and pulmonary hypertension. It remains an approved medicine and is included on the WHO list of essential medicines, generally used in combination with other cardiovascular drugs.
 
-Hydralazine hydrochloride was FDA approved on 15 January 1953.[L8779]
-
-**Indication.** Hydralazine is indicated alone or adjunct to standard therapy to treat essential hypertension.[L8782] A combination product with isosorbide dinitrate is indicated as an adjunct therapy in the treatment of heart failure.[L8785]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419987](https://www.wikidata.org/wiki/Q419987) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -71,8 +69,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP3A4` inhibitor, `NAT2` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `NAT2` metabolism | DrugBank actor |
-| excretion | bile duct | <sub>“…&lt;10% of hydralazine is recovered in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…65-90% is recovered in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AGT (target), AOC3 (inhibitor), BDKRB2 (target), HIF1A (inducer), HMOX1 (target), MMP2 (target), MMP9 (target), NAMPT (target), NOS2 (target), NOS3 (target), P4HA1 (inhibitor), PRKCA (target), TIMP1 (target), VEGFA (target).</sub>
 

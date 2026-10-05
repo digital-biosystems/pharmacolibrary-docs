@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Chronic venous insufficiency is a common condition the western population. Compression and pharmacotherapy are frequently used to manage chronic venous insufficiency, improving circulation and symptoms of venous disease.[A232885]
+Diosmin is a bioflavonoid used as a capillary-stabilizing and vasoprotective medicine, mainly for vein and circulation problems such as haemorrhoids and chronic venous disease. It is approved and used in many countries, particularly in Europe, often in combination with hesperidin; it is not authorised centrally in the European Union.
 
-Diosmin is a bioflavonoid isolated from various plants or synthesized from [hesperidin]. It is used for the improvement of capillary fragility or venous insufficiency, including chronic venous insufficiency (CVI) and hemorrhoids. Diosmin is widely available over-the-counter and demonstrates a favourable a favorable safety profile.[A232890,T840,L33040]
-
-**Indication.** Diosmin is used over-the-counter alone or with ingredients such as [hesperidin] and [diosmetin] to support vein and capillary function.[L32823,L32848]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2607865](https://www.wikidata.org/wiki/Q2607865) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -50,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2C9` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` unknown | DrugBank actor |
 | metabolism | lung | `CYP1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…Minor metabolites are found to be eliminated in the urine as glucuronic acid conjugates…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AHR (target).</sub>
 

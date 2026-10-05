@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Propranolol is a racemic mixture of 2 enantiomers where the S(-)-enantiomer has approximately 100 times the binding affinity for beta adrenergic receptors.[L6904] Propranolol is used to treat a number of conditions but most commonly is used for hypertension.[L6901,L6904,L6907] 
+Propranolol is a non-selective beta blocker used for conditions such as high blood pressure, angina, heart rhythm problems, migraine, anxiety, essential tremor, and infantile hemangioma. It remains widely used, is listed among WHO essential medicines, and is authorised in the European Union, where an approved product is indicated for hemangioma.
 
-Propranolol was granted FDA approval on 13 November 1967.[L6904]
-
-**Indication.** Propranolol is indicated to treat hypertension.[L6907,L6904] Propranolol is also indicated to treat angina pectoris due to coronary atherosclerosis, atrial fibrillation, myocardial infarction, migraine, essential tremor, hypertrophic subaortic stenosis, pheochromocytoma, and proliferating infantile hemangioma.[L6904,L6907]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423364](https://www.wikidata.org/wiki/Q423364) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 

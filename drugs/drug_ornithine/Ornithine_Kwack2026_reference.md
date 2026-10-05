@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;Ornithine&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/&quot;},{&quot;label&quot;:&quot;Kwack_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ornithine_Le1997_reference&quot;,&quot;label&quot;:&quot;Le_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Le1997_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ornithine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Ornithine — `Ornithine_Kwack2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,31 +17,37 @@
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**The ornithine two-compartment model was held back because the bioavailability parameter F was left at a library default instead of an estimate from Kwack_2026.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.135, the second reading 0.133; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+All reported parameters (CL 0.133 L/h, V1 4.59 L, V2 13.2 L, Q 6.85 L/h, kabs 0.545 h−1, tlag 0.825 h) were extracted, but F — the fraction of dose reaching systemic circulation — was defaulted, so the simulated profile relies on a value not supported by the paper. The deviations check flagged the defaulted parameter as not acceptable. A second reader's value for one parameter (0.519) matched the record, so no disagreement remains. Extracted — ornithine: CL 0.133 L/h, V1 4.59 L, V2 13.2 L, Q 6.85 L/h, kabs 0.545 h−1, tlag 0.825 h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 0.519, the second reading 0.519. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501)
 
 ## Model component
-<dbs-pgx drug="Ornithine" model-id="Ornithine_Kwack2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ornithine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Ornithine" model-id="Ornithine_Kwack2026_reference" status="needs_review" stale="false" population="" measured-compound="ornithine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 0.135 | L/h | 3.75e-08 | L/h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
-| V (L) | `Q61` · V | 7.86 | L | 0.00786 | L | not captured | review (0.7) | Kwack_2026:review | — | not captured |
-| ALAG (h) | `Q83` · tlag | 0.825 | h | 2970.0 | h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
-| Ka (h−1) | `Q49` · kabs | 1.15 | h−1 | 0.0003194444444444444 | 1/h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
+| CL | `Q22` · CL | 0.133 | L/h | 3.6944444444444447e-08 | L/h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
+| V1 | `Q63` · V1 | 4.59 | L | 0.00459 | L | not captured | review (0.7) | Kwack_2026:review | — | not captured |
+| V2 | `Q64` · V2 | 13.2 | L | 0.0132 | L | not captured | review (0.7) | Kwack_2026:review | — | not captured |
+| Q | `Q30` · Q | 6.85 | L/h | 1.9027777777777778e-06 | L/h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
+| Ka | `Q49` · kabs | 0.545 | h−1 | 0.0001513888888888889 | 1/h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
+| ALAG | `Q83` · tlag | 0.825 | h | 2970.0 | h | not captured | review (0.7) | Kwack_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,23 +70,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.923 (12/13 fields) | 1 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.topology_template` | 1C | 2C | mismatch |
-| `gpt-oss:120b` | `values[Q22]` | 0.135 | 0.133 | mismatch |
-| `gpt-oss:120b` | `values[Q30]` | not captured | 6.85 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` | not captured | 0.519 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q318]` | not captured | 42.8 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q352]` | not captured | 7.86 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q354]` | not captured | 0.135 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q49]` | 1.15 | 0.545 | mismatch |
-| `gpt-oss:120b` | `values[Q61]` | 7.86 | 7.22 | mismatch |
-| `gpt-oss:120b` | `values[Q63]` | not captured | 4.59 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q64]` | not captured | 13.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 0.519 | 0.519 | mismatch |
 
 </details>
 
@@ -94,17 +90,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kwack_2026:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kwack_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kwack_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kwack_2026:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kwack_2026:review'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kwack_2026:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kwack_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.135 | not captured | not captured | ['Kwack_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.133 | not captured | not captured | ['Kwack_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.135 L/h | not captured | not captured | ['Kwack_2026:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 7.86 L | not captured | not captured | ['Kwack_2026:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.133 L/h | not captured | not captured | ['Kwack_2026:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.59 L | not captured | not captured | ['Kwack_2026:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 13.2 L | not captured | not captured | ['Kwack_2026:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -113,9 +112,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=ornithine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,26 +135,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_modelica.zip" download>Ornithine_Kwack2026_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_fmi.zip" download>Ornithine_Kwack2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_modelica.zip" download>Ornithine_Kwack2026_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_fmi.zip" download>Ornithine_Kwack2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_matlab.zip" download>Ornithine_Kwack2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_matlab_simbio.zip" download>Ornithine_Kwack2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_sbml.zip" download>Ornithine_Kwack2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_cellml.zip" download>Ornithine_Kwack2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_sbml.zip" download>Ornithine_Kwack2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_cellml.zip" download>Ornithine_Kwack2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference.svg" alt="Ornithine_Kwack2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.15 /h, lag 49.5 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.545 /h, lag 49.5 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ornithine/Ornithine_Kwack2026_reference/Ornithine_Kwack2026_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Ornithine_Kwack2026_reference_params.json` · controls `Ornithine_Kwack2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Ornithine_Kwack2026_reference_params.json` · controls `Ornithine_Kwack2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 15:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 15:02 UTC</sub>

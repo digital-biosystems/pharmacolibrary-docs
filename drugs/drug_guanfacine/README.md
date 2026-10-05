@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Guanfacine, or BS 100-141,[A189838,A189841] is a selective alpha-A2 adrenergic receptor agonist initially indicated for the treatment of hypertension[L11274] but is now indicated as an extended release tablet for the treatment of ADHD.[L11277] Guanfacine was first described in the literature in 1974.[A189841]
+Guanfacine is used to treat high blood pressure and attention deficit hyperactivity disorder. It is an approved medicine, with products authorised in the European Union for ADHD, and it is also being studied for other uses.
 
-Guanfacine was granted FDA approval on 27 October 1986.[L11274]
-
-**Indication.** Guanfacine is indicated alone or as an adjunct with stimulants to treat ADHD.[L11277]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5613599](https://www.wikidata.org/wiki/Q5613599) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 

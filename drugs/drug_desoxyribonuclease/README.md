@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Desoxyribonuclease is a crystalline enzyme that aids in the digestion of the thymus nucleic acid. The mechanism of action of the enzyme involves the splitting of thymus nucleic acid into fragments approaching the size of tetranucleotides without the release of free phosphoric acid. The enzyme's cofactor is reported to be magnesium (or manganese) ions, although the optimal concentration of the ion is independent of the enzyme concentration [A31251].
+Desoxyribonuclease is an enzyme that breaks down DNA and is used as a hematological agent, for example to help dissolve thickened secretions. It is an approved drug, though its use appears limited rather than widespread.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420690](https://www.wikidata.org/wiki/Q420690) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

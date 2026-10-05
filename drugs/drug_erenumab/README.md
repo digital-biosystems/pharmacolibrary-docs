@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Erenumab (AMG-334) (INN; trade name Aimovig) is a human monoclonal antibody designed specifically to bind and antagonize the calcitonin gene-related peptide receptor (CGRPR) as a means to prevent migraines. Aimovig, as released and marketed by Novartis and Amgen, is in fact a novel therapeutic approach as the first and only FDA approved treatment specifically developed to prevent migraine by blocking the CGRP receptor, which is believed to play a critical role in migraine [L2823].
+Erenumab is a monoclonal antibody that blocks the calcitonin gene-related peptide receptor and is used to prevent migraine. It is authorised in the European Union for migraine and is an approved medicine.
 
-In particular, erenumab-aooe is a human immunoglobulin G2 monoclonal antibody that has high affinity binding to the CGRP receptor [FDA Label]. The antibody is produced utlilizing recombinant DNA technology in Chinese hamster ovary cells [FDA Label]. It is composed of 2 heavy chains, each containing 456 amino acids, and 2 light chains of the lambda subclass, each containing 216 amino acids, with an approximate molecular weight of 150 kDa [FDA Label].
-
-**Indication.** Erenumab is indicated for the preventative treatment of migraine in adults [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q28209017](https://www.wikidata.org/wiki/Q28209017) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -57,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | liver | <sub>“…a slow non-specific elimination pathway through the hepatic reticuloendothelial system…”</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CALCRL (target), RAMP1 (target).</sub>
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;fexuprazan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexuprazan_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/Fexuprazan_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2022_pH_4&quot;,&quot;label&quot;:&quot;Kim_2022 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/pd_Kim_2022_pH_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # fexuprazan
 
@@ -10,26 +11,32 @@
 
 ## About
 
-**Description.** Abeprazan is under investigation in clinical trial NCT04341454 (Study to Evaluate the Efficacy and Safety of DWP14012 in Patients With Acute or Chronic Gastritis).
+Fexuprazan is an investigational proton pump inhibitor being studied for acid-related disorders such as peptic ulcer and gastro-oesophageal reflux disease. It is not yet approved; it remains in clinical development and has no marketing authorisation in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q123583148](https://www.wikidata.org/wiki/Q123583148) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 21:32 | 4:12 | 0/1/0 | 1/1/0 | 0/0/0 | 65,876/15,512 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 0/8 | 7/0 | 0 |
+| 2026-10-04 09:28 | 13:10 | 1/1/0 | 2/0/0 | 0/0/0 | 269,017/39,261 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 0/8 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_fexuprazan/Fexuprazan_Jung2026_reference.md) | — | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2022_reference](drugs/drug_fexuprazan/Fexuprazan_Kim2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_fexuprazan/Fexuprazan_Jung2026_reference.md) | — | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2022_pH](drugs/drug_fexuprazan/pd_Kim_2022_pH.md) | gastric pH ← fexuprazan · indirect response — drug inhibits the production of gastric pH | — | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jung_2026_intragastric_pH](drugs/drug_fexuprazan/pd_Jung_2026_intragastric_pH.md) | name ← tegoprazan, YH4808, fexuprazan, vonoprazan · indirect response — drug inhibits the production of name | — | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jung_2026_pH](drugs/drug_fexuprazan/pd_Jung_2026_pH.md) | intragastric pH ← fexuprazan · indirect response — drug stimulates the production of intragastric pH | — | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2022_pH](drugs/drug_fexuprazan/pd_Kim_2022_pH.md) | gastric pH ← fexuprazan · indirect response — drug inhibits the production of gastric pH | model (no simulator) | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kim_2022_pH_2](drugs/drug_fexuprazan/pd_Kim_2022_pH_2.md) | gastric pH ← fexuprazan · indirect response — drug inhibits the production of gastric pH | model (no simulator) | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kim_2022_pH_3](drugs/drug_fexuprazan/pd_Kim_2022_pH_3.md) | gastric pH ← fexuprazan · indirect response — drug inhibits the production of gastric pH | model (no simulator) | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kim_2022_pH_4](drugs/drug_fexuprazan/pd_Kim_2022_pH_4.md) | gastric pH ← fexuprazan · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -41,7 +48,7 @@
 
 - **PubMed hits:** 23 matched, 23 returned
 - **screened:** 6  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -52,7 +59,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Ranbhise_2026.pdf` | Ranbhise JS et al., Potassium-Competitive Acid Blockers as…, Pharmaceuticals (Basel, Swi… (2026) | pgx | 8 | [10.3390/ph19081168](https://doi.org/10.3390/ph19081168) | [42653667](https://www.ncbi.nlm.nih.gov/pubmed/42653667) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 
-<sub>queue written 2026-09-29T21:28:51.469832+00:00</sub>
+<sub>queue written 2026-10-04T09:15:38.769149+00:00</sub>
 
 ## Screened and excluded
 
@@ -60,7 +67,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Ahn_2023 | irrelevant | 0 | 0 | The paper is a review of H. pylori eradication therapies and does not report any quantitative pharmacokinetic parameters for fexuprazan. |
 | PD | Ahn_2023 | not_relevant | 1 | 0 | The text is a clinical review of PCAB-based H. pylori eradication therapies that reports clinical outcomes (eradication rates) but contains no pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters (e.g., Emax, EC50) for fexuprazan. |
-| PGx | Ahn_2023 | not_relevant | 0 | 0 | The paper is a review of PCAB-based H. pylori eradication therapies and does not report specific pharmacogenomic effects on the PK or PD parameters of fexuprazan. |
+| PGx | Ahn_2023 | not_relevant | 0 | 0 | The paper is a review of PCAB efficacy for H. pylori eradication and does not report specific pharmacogenomic effects on fexuprazan PK/PD parameters. |
 | popPK | Hwang_2020 | relevant | 10 | 0 | The title confirms a PK study of fexuprazan, but the provided evidence contains no numeric parameter values. |
 | PGx | Kang_2026 | not_relevant | 0 | 0 | The study reports no significant difference in clinical efficacy (H. pylori eradication rate) based on CYP2C19 genotype and does not report pharmacokinetic parameters. |
 | popPK | Lee_2025 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study regarding dosing timing, not a pharmacokinetic study, and reports no quantitative PK parameters (CL, V, ka, etc.) for fexuprazan. |
@@ -77,4 +84,4 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Wang_2026 | not_relevant | 3 | 2 | The paper reports an IC50 for a CYP1B1 inhibitor (C27, a fexuprazan intermediate) and qualitative PK data, but does not provide a pharmacodynamic exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for fexuprazan itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 05:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 09:15 UTC</sub>

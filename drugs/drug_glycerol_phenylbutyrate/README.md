@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Glycerol phenylbutyrate is a nitrogen-binding agent. Chemically, it is a triglyceride in which three molecules of phenylbutyrate are linked to a glycerol backbone. FDA approved on February 1, 2013.
+Glycerol phenylbutyrate is used to treat inherited urea cycle disorders. It is an authorised medicine in the European Union and is also being investigated for other uses.
 
-**Indication.** Glycerol phenylbutyrate is a nitrogen-binding agent for the chronic management of adult and pediatric patients ≥2 years of age with urea cycle disorders (UCDs) who cannot be managed by dietary protein restriction and/or amino acid supplementation alone.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15322709](https://www.wikidata.org/wiki/Q15322709) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -36,12 +36,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…released from the glycerol backbone by lipases in the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>“…and in the kidney through the enzyme phenylacetyl-CoA: L-glutamine-N-acetyltransferase…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-| excretion | kidney | <sub>“…mainly excreted as PAGN in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PNLIP (substrate).</sub>
 

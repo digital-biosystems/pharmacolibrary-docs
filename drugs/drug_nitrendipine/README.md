@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Nitrendipine is a calcium channel blocker with marked vasodilator action. It is an effective antihypertensive agent and differs from other calcium channel blockers in that it does not reduce glomerular filtration rate and is mildly natriuretic, rather than sodium retentive.
+Nitrendipine is a dihydropyridine calcium channel blocker used to treat high blood pressure. It remains an approved medicine, used mainly for hypertension, and is also available in combination products with ACE inhibitors.
 
-**Indication.** For the treatment of mild to moderate hypertension
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416584](https://www.wikidata.org/wiki/Q416584) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

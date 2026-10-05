@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Conivaptan is a non-peptide inhibitor of antidiuretic hormone (vasopressin). It was approved in 2004 for hyponatremia (low blood sodium levels) caused by syndrome of inappropriate antidiuretic hormone (SIADH). Conivaptan inhibits both isotypes of the vasopressin receptor (V1a and V2).
+Conivaptan is a vasopressin antagonist used to treat hyponatremia (low blood sodium). It is given by infusion and restricted to hospital use, mainly in the United States; it is not authorised in the European Union.
 
-**Indication.** For the treatment of euvolemic or hypervolemic hyponatremia (e.g. the syndrome of inappropriate secretion of antidiuretic hormone, or in the setting of hypothyroidism, adrenal insufficiency, pulmonary disorders, etc.) in hospitalized patients.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5161126](https://www.wikidata.org/wiki/Q5161126) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

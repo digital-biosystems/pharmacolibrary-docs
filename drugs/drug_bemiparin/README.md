@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Bemiparin is an antithrombotic and belongs to the group of drugs known as the low molecular weight heparins (LMWH). Like semuloparin, bemiparin is classified as an ultra-LMH because of its low mean molecular mass of 3600 daltons, which is a unique property of this class [A7866].  These heparins have lower anti-thrombin activity than the traditional low molecular weight heparins and act mainly on factor-Xa, reducing the risk of bleeding due to selectivity for this specific clotting factor.  Interestingly, current research is underway for the potential benefit of bemiparin in the treatment of tumors and diabetic foot ulcers [L1468, A7866].
+Bemiparin is a heparin-group antithrombotic medicine used to prevent and treat blood clots. It is an approved low-molecular-weight heparin, used mainly in some European countries.
 
-**Indication.** Bemiparin is indicated in the following cases: To prevent blood clots in the veins after general abdominal surgery in patients with a moderate risk of venous thromboembolism; in the prevention of the thromboembolic disease in non-surgical patients; prevention of clotting in the extracorporeal circuit during hemodialysis; to prevent blood clots in the veins after a major orthopedic surgery in patients with high risk of venous thromboembolism; secondary prevention of venous thromboembolism; recurrence in patients with deep vein thrombosis; transient prevention and treatment of deep vein thrombosis (DVT) [L1463].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q971360](https://www.wikidata.org/wiki/Q971360) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -29,8 +29,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…eliminated by the renal…”</sub> | prose |
-| excretion | liver | <sub>“…and hepatic routes…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (target), SERPINC1 (target), SERPIND1 (target).</sub>
 

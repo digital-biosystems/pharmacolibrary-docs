@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Nisoldipine is a 1,4-dihydropyridine calcium channel blocker. It acts primarily on vascular smooth muscle cells by stabilizing voltage-gated L-type calcium channels in their inactive conformation. By inhibiting the influx of calcium in smooth muscle cells, nisoldipine prevents calcium-dependent smooth muscle contraction and subsequent vasoconstriction. Nisoldipine may be used in alone or in combination with other agents in the management of hypertension.
+Nisoldipine is a dihydridopyridine calcium channel blocker used to treat high blood pressure and angina pectoris. It is an approved drug, but it is not widely used and is mainly available in a few markets such as the United States.
 
-**Indication.** For the treatment of hypertension. It may be used alone or in combination with other antihypertensive agents.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3342150](https://www.wikidata.org/wiki/Q3342150) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | bile duct | <sub>“…recovered in urine and feces…”</sub> | prose |
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
@@ -60,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…60-80% of an oral dose undergoes urinary excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNB2 (inhibitor).</sub>
 

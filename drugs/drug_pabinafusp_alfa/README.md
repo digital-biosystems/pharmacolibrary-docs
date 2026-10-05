@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Pabinafusp alfa is under investigation in clinical trial NCT03568175 (A Study of JR-141 in Patients With Mucopolysaccharidosis II).
+Pabinafusp alfa is an investigational enzyme replacement therapy being studied for Hunter syndrome (mucopolysaccharidosis type II). It is not yet approved; it remains in clinical development, mainly in Japan.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q107327238](https://www.wikidata.org/wiki/Q107327238) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

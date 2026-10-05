@@ -8,6 +8,12 @@
 - **molar mass:** 548.673 g/mol (C30H44O9) — DrugBank
 - **groups:** experimental
 
+## About
+
+Peruvoside is a cardiac glycoside with cardiotonic activity, classified among other cardiac glycosides used in cardiac therapy. It appears to be only an experimental compound, with no authorised marketing identified.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7171218](https://www.wikidata.org/wiki/Q7171218) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

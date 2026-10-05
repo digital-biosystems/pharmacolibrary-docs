@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** A prostaglandin that is a powerful vasodilator and inhibits platelet aggregation. It is biosynthesized enzymatically from prostaglandin endoperoxides in human vascular tissue. The sodium salt has been also used to treat primary pulmonary hypertension.
+Epoprostenol (prostacyclin) is used to treat pulmonary hypertension, including portopulmonary and primary pulmonary hypertension, and chronic pulmonary heart disease. It is an approved drug that acts as an antithypertensive and platelet aggregation inhibitor, and is also being studied for other investigational uses.
 
-**Indication.** For the long-term intravenous treatment of primary pulmonary hypertension and pulmonary hypertension associated with the scleroderma spectrum of disease in NYHA Class III and Class IV patients who do not respond adequately to conventional therapy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412050](https://www.wikidata.org/wiki/Q412050) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -61,8 +61,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…Fourteen additional minor metabolites have been isolated from urine…”</sub> | prose |
-| excretion | kidney | <sub>“…Fourteen additional minor metabolites have been isolated from urine…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: P2RY12 (target), PTGIR (target), PTGIS (inducer).</sub>
 

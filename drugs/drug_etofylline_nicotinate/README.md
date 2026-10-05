@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;etofylline nicotinate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EtofyllineNicotinate_Zuidema1981_reference&quot;,&quot;label&quot;:&quot;Zuidema_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etofylline_nicotinate/EtofyllineNicotinate_Zuidema1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # etofylline nicotinate
 
@@ -10,7 +11,9 @@
 
 ## About
 
-**Description.** Etofylline nicotinate, a theophylline derivative, is a drug that causes vasodilation and relaxation of smooth muscle.
+Etofylline nicotinate is a purine-derivative compound classified as a peripheral vasodilator, indicating use for circulatory problems in the limbs. It appears only as an experimental drug and is not an approved medicine in the European Union, so its current use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15408405](https://www.wikidata.org/wiki/Q15408405) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -31,7 +34,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span> | [Zuidema_1981_reference](drugs/drug_etofylline_nicotinate/EtofyllineNicotinate_Zuidema1981_reference.md) | model (no simulator) | 1-compartment, IV | 6 | Zuidema J et al., Pharmacokinetics of etofylline after in…, International journal of cl… (1981) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span> | [Zuidema_1981_reference](drugs/drug_etofylline_nicotinate/EtofyllineNicotinate_Zuidema1981_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | Zuidema J et al., Pharmacokinetics of etofylline after in…, International journal of cl… (1981) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

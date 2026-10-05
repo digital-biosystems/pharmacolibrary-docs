@@ -10,14 +10,9 @@
 
 ## About
 
-**Description.** Erythropoietin (EPO) is a growth factor produced in the kidneys that stimulates the production of red blood cells. It works by promoting the division and differentiation of committed erythroid progenitors in the bone marrow [FDA Label]. Epoetin alfa (Epoge) was developed by Amgen Inc. in 1983 as the first rhEPO commercialized in the United States, followed by other alfa and beta formulations. Epoetin alfa is a 165-amino acid erythropoiesis-stimulating glycoprotein produced in cell culture using recombinant DNA technology and is used for the treatment of patients with anemia associated with various clinical conditions, such as chronic renal failure, antiviral drug therapy, chemotherapy, or a high risk for perioperative blood loss from surgical procedures [FDA Label]. It has a molecular weight of approximately 30,400 daltons and is produced by mammalian cells into which the human erythropoietin gene has been introduced. The product contains the identical amino acid sequence of isolated natural erythropoietin and has the same biological activity as the endogenous erythropoietin. Epoetin alfa biosimilar, such as Retacrit (epoetin alfa-epbx or epoetin zeta), has been formulated to allow more access to treatment options for patients in the market [L2784]. The biosimilar is approved by the FDA and EMA as a safe, effective and affordable biological product and displays equivalent clinical efficacy, potency, and purity to the reference product [A7504]. Epoetin alfa formulations can be administered intravenously or subcutaneously.
+Erythropoietin (epoetin) medicines are antianemic drugs used to treat anemia, including anemia linked to chronic kidney disease, and also to reduce the need for blood transfusions. Several epoetin products are authorised in the European Union, and the drug is widely used, though it carries a boxed warning.
 
-**Indication.** Indicated in adult and paediatric patients for the: 
-
-- treatment of anemia due to Chronic Kidney Disease (CKD) in patients on dialysis and not on dialysis.
-- treatment of anemia due to zidovudine in patients with HIV-infection. 
-- treatment of anemia due to the effects of concomitant myelosuppressive chemotherapy, and upon initiation, there is a minimum of two additional months of planned chemotherapy.
-- reduction of allogeneic RBC transfusions in patients undergoing elective, noncardiac, nonvascular surgery.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5383794](https://www.wikidata.org/wiki/Q5383794) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -41,7 +36,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…Only a small amount of unchanged epoetin alfa is found in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EPOR (target).</sub>
 

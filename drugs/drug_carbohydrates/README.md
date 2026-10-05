@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Intravenous sugar (dextrose) solution is used to treat low blood sugar and is given as a carbohydrate source in parenteral nutrition. It is on the WHO list of essential medicines and is widely used in hospitals.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3489648](https://www.wikidata.org/wiki/Q3489648) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

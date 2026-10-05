@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fluoxetine is a 2nd generation antidepressant categorized as a selective serotonin reuptake inhibitor (SSRI).[A181673] It gained FDA approval in 1987 and although it was initially intended for the treatment of depression, today it is commonly prescribed to manage depression in addition to various other pathologies.[L7721]
+Fluoxetine is a selective serotonin reuptake inhibitor antidepressant used for conditions such as depression and mood disorders, anxiety and panic disorders, obsessive-compulsive disorder, post-traumatic stress disorder, and bulimia nervosa. It is widely used in human medicine and is also an approved veterinary drug; it appears on the WHO list of essential medicines.
 
-**Indication.** Fluoxetine is indicated for both acute and maintenance treatment of major depressive disorder, obsessive compulsive disorder, and bulimia nervosa; however, it is only indicated for acute treatment of panic disorder independent of whether agoraphobia is present.[L7664] Fluoxetine may also be used in combination with olanzapine to treat depression related to Bipolar I Disorder, and treatment resistant depression.[L7664] Fluoxetine is additionally indicated for the treatment of female patients with premenstrual dysphoric disorder (PMDD).[L40833]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q422244](https://www.wikidata.org/wiki/Q422244) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -24,8 +24,8 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wilens_2002_reference](drugs/drug_fluoxetine/Fluoxetine_Wilens2002_reference.md) | — | parent + metabolite (no model) | 0 | Wilens TE et al., Fluoxetine pharmacokinetics in pediatri…, Journal of clinical psychop… (2002) | [10.1097/00004714-200212000-00006](https://doi.org/10.1097/00004714-200212000-00006) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [van_2024_reference](drugs/drug_fluoxetine/Fluoxetine_van2024_reference.md) | — | parent + metabolite (no model) | 0 | van der Most MA et al., Toxicokinetics of the Antidepressant Fl…, Environmental science & tec… (2024) | [10.1021/acs.est.3c07744](https://doi.org/10.1021/acs.est.3c07744) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wilens_2002_reference](drugs/drug_fluoxetine/Fluoxetine_Wilens2002_reference.md) | — | parent + metabolite (no model) | 0 | Wilens TE et al., Fluoxetine pharmacokinetics in pediatri…, Journal of clinical psychop… (2002) | [10.1097/00004714-200212000-00006](https://doi.org/10.1097/00004714-200212000-00006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [van_2024_reference](drugs/drug_fluoxetine/Fluoxetine_van2024_reference.md) | — | parent + metabolite (no model) | 0 | van der Most MA et al., Toxicokinetics of the Antidepressant Fl…, Environmental science & tec… (2024) | [10.1021/acs.est.3c07744](https://doi.org/10.1021/acs.est.3c07744) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | brain | <sub>“…distributed to the brain…”</sub> | prose |
+| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
 | absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
@@ -54,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…primarily eliminated in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

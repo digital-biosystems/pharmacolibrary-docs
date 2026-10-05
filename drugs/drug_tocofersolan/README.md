@@ -9,19 +9,15 @@
 
 ## About
 
-**Description.** D-Alpha-tocopheryl polyethylene glycol 1000 succinate (Tocofersolan, Vedrop), has been developed in Europe as an orally bioavailable source of vitamin E in children suffering from cholestasis [L2371]. Cholestasis is the reduction or stoppage of bile flow, either to impaired secretion by _hepatocytes_ (liver cells) or obstruction [L2374], [L2375].
+Tocofersolan is a water-soluble form of vitamin E used to treat vitamin E deficiency, including deficiency linked to cholestasis. It is an approved vitamin preparation with an authorised product in the European Union, but it remains a niche treatment rather than a widely used medicine.
 
-Tocofersolan is a polyethylene glycol derivative of α-tocopherol and synthetic water-soluble version of [DB11251]. Tocofersolan is an oral treatment of vitamin E deficiency due to digestive malabsorption in pediatric patients with congenital chronic cholestasis or hereditary chronic cholestasis. It was approved by the European Medicines Agency (EMA) in June 2009 under the market name Vedrop. Moreover, the agent is capable of demonstrating antioxidant effects that make it a popular component to include in cosmetics and pharmaceuticals as well.
-
-In addition to the above, tocofersolan has been studied as a promising application as an absorption enhancer in drug delivery [MSDS].
-
-**Indication.** Tocofersolan is indicated in vitamin E deficiency caused by digestive malabsorption in pediatric patients with congenital chronic cholestasis or hereditary chronic cholestasis from birth (full term newborns) up to 18 years of age [L2371].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q172409](https://www.wikidata.org/wiki/Q172409) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 00:52 | 11:00 | 0/0/0 | 0/0/0 | 0/0/0 | 307,638/7,263 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/12 | 9/0 | 0 |
+| 2026-10-05 08:39 | 3:33 | 0/0/0 | 0/0/0 | 0/0/0 | 150,463/2,806 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/12 | 9/0 | 0 |
 
 ## popPK records
 
@@ -42,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP4F2` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `CYP4F2` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…primarily eliminated in the bile (75%) and feces…”</sub> | prose |
-| excretion | kidney | <sub>“…Urine is a minor elimination route of vitamin E…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCA1 (substrate), ABCG5 (substrate), ABCG8 (substrate), APOBR (substrate), NPC1L1 (substrate), SCARB1 (substrate), SEC14L2 (substrate), SEC14L3 (substrate), SEC14L4 (substrate), TTPA (substrate).</sub>
 
@@ -66,66 +62,66 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cuerq_2018.pdf` | Cuerq C et al., Efficacy of two vitamin E formulations…, Journal of lipid research (2018) | popPK | 8 | [10.1194/jlr.m085043](https://doi.org/10.1194/jlr.m085043) | [30021760](https://pubmed.ncbi.nlm.nih.gov/30021760) | The study reports bioavailability percentages for tocofersolan but lacks explicit compartmental PK parameters (CL, V, ka) in the provided text. |
+| `Cuerq_2018.pdf` | Cuerq C et al., Efficacy of two vitamin E formulations…, Journal of lipid research (2018) | popPK | 8 | [10.1194/jlr.m085043](https://doi.org/10.1194/jlr.m085043) | [30021760](https://pubmed.ncbi.nlm.nih.gov/30021760) | The study reports bioavailability percentages for tocofersolan in humans, which are quantitative PK parameters, but specific clearance, volume, or rate constants are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-09-22T00:52:10.928745+00:00</sub>
+<sub>queue written 2026-10-05T08:38:55.418804+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arasu_2024 | irrelevant | 0 | 0 | The study focuses on azithromycin-loaded liposomes for Chlamydia treatment and does not involve tocofersolan or report its pharmacokinetic parameters. |
-| popPK | Aziz_2025 | irrelevant | 0 | 0 | The study focuses on atropine base in contact lenses and does not involve tocofersolan or report any pharmacokinetic parameters for it. |
-| popPK | Binkhathlan_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paclitaxel (PTX), not tocofersolan. |
+| popPK | Arasu_2024 | irrelevant | 0 | 0 | The study focuses on azithromycin-loaded liposomes for Chlamydia treatment and does not report pharmacokinetic parameters for tocofersolan. |
+| popPK | Aziz_2025 | irrelevant | 0 | 0 | The study focuses on the formulation and release of atropine base from contact lenses, not the pharmacokinetics of tocofersolan. |
+| popPK | Binkhathlan_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paclitaxel (PTX) in rats, not tocofersolan. |
 | popPK | Binkhathlan_2024_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paclitaxel (PTX), not tocofersolan. |
-| popPK | Bor_2022 | irrelevant | 0 | 0 | The study focuses on the physicochemical characterization and biodistribution of DHA-incorporated hexosomes/vesicles, not the pharmacokinetics of tocofersolan. |
-| popPK | Chang_1996 | irrelevant | 0 | 0 | The study investigates the effect of TPGS on cyclosporine pharmacokinetics, not tocofersolan. |
+| popPK | Bor_2022 | irrelevant | 0 | 0 | The study focuses on the physicochemical characterization and biodistribution of DHA-incorporated hexosomes/vesicles in mice, not the pharmacokinetics of tocofersolan. |
+| popPK | Chang_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine, not tocofersolan. |
 | popPK | Chauhan_2018 | irrelevant | 0 | 0 | The paper studies a nanomaterial (Toco-Photoxil) for photothermal therapy and does not report pharmacokinetic parameters for the drug tocofersolan. |
-| popPK | Chen_2024 | irrelevant | 0 | 0 | The study focuses on paclitaxel (PTX) pharmacokinetics and does not report any data for tocofersolan. |
-| popPK | Chou_2022 | irrelevant | 0 | 0 | The study focuses on zoledronic acid nanoparticles and does not involve tocofersolan or report any pharmacokinetic parameters for it. |
-| popPK | Coleman_2023 | irrelevant | 0 | 0 | The paper is an in-vitro microbiology study on antibacterial and antibiofilm properties of compounds like PHMB and TPGS, containing no pharmacokinetic data for tocofersolan. |
-| popPK | Cuerq_2018 | relevant | 8 | 2 | The study reports bioavailability percentages for tocofersolan but lacks explicit compartmental PK parameters (CL, V, ka) in the provided text. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paclitaxel, not tocofersolan. |
+| popPK | Chou_2022 | irrelevant | 0 | 0 | The study focuses on zoledronic acid nanoparticles and does not investigate tocofersolan pharmacokinetics. |
+| popPK | Coleman_2023 | irrelevant | 0 | 0 | The paper investigates the antibacterial and antibiofilm properties of compounds like PHMB and TPGS in vitro, and does not contain any pharmacokinetic data for tocofersolan. |
+| popPK | Cuerq_2018 | relevant | 8 | 2 | The study reports bioavailability percentages for tocofersolan in humans, which are quantitative PK parameters, but specific clearance, volume, or rate constants are not explicitly listed in the provided text. |
 | PD | Cuerq_2018 | not_relevant | 2 | 1 | The study reports PK parameters (bioavailability) and a qualitative comparison of efficacy (plasma levels at 4 months) but does not provide a concentration-effect or dose-response model with numeric PD parameters like Emax or EC50. |
-| popPK | Dahe_2011 | irrelevant | 0 | 0 | The paper focuses on the biocompatibility and separation performance of hemodialysis membranes containing Vitamin E TPGS, not the pharmacokinetics of tocofersolan. |
-| popPK | Gazdikova_2000 | irrelevant | 0 | 0 | The study measures plasma levels of antioxidants (including alpha-tocopherol) in kidney disease patients and does not involve tocofersolan or report pharmacokinetic parameters. |
-| popPK | Ghosh_2020 | irrelevant | 0 | 0 | The paper studies superparamagnetic iron oxide nanoparticles (SPION) and does not report pharmacokinetic parameters for tocofersolan. |
+| popPK | Dahe_2011 | irrelevant | 0 | 0 | The paper describes the biocompatibility and separation performance of hemodialysis membranes containing Vitamin E TPGS, not the pharmacokinetics of tocofersolan. |
+| popPK | Gazdikova_2000 | irrelevant | 0 | 0 | The study measures plasma levels of antioxidants (including alpha-tocopherol) in kidney disease patients and does not involve tocofersolan or pharmacokinetic modeling. |
+| popPK | Ghosh_2020 | irrelevant | 0 | 0 | The study investigates the genotoxicity and biodistribution of superparamagnetic iron oxide nanoparticles (SPION), not the pharmacokinetics of tocofersolan. |
 | popPK | Guo_2020 | irrelevant | 0 | 0 | The paper focuses on the formulation and efficacy of a gemcitabine-tocopherol succinate prodrug, not the pharmacokinetics of tocofersolan. |
-| popPK | Hu_2018 | irrelevant | 0 | 0 | The study focuses on artesunate liposomes, not tocofersolan. |
+| popPK | Hu_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of artesunate liposomes, not tocofersolan. |
 | popPK | Jadhav_2025 | irrelevant | 0 | 0 | The paper is a review of surfactant-based drug delivery systems in breast cancer and does not report pharmacokinetic parameters for tocofersolan. |
-| popPK | Kumbhar_2021 | irrelevant | 0 | 0 | The study focuses on aripiprazole, not tocofersolan, and does not report PK parameters for the target drug. |
+| popPK | Kumbhar_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aripiprazole, not tocofersolan. |
 | popPK | Li_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of S-HM-3 and paclitaxel, not tocofersolan. |
-| popPK | Liu_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isoliquiritigenin (ISL), not tocofersolan. |
+| popPK | Liu_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of isoliquiritigenin, not tocofersolan. |
 | popPK | Maji_2026 | irrelevant | 0 | 0 | The study focuses on tocofersolan (TPGS) as a targeting ligand for Ibrutinib delivery, not as the subject drug for pharmacokinetic parameter estimation. |
 | PD | Maji_2026 | not_relevant | 3 | 2 | The paper reports IC50 values for the drug formulation, which are potency metrics, but does not provide a concentration-effect curve, Emax, or a PK/PD model linking exposure to response. |
-| popPK | Modi_2020 | irrelevant | 0 | 0 | The paper focuses on membrane materials for bioartificial kidneys and does not involve tocofersolan or report any pharmacokinetic parameters. |
-| popPK | Mugundhan_2025 | irrelevant | 0 | 0 | The study focuses on Axitinib nanomicelles and does not involve tocofersolan or report any pharmacokinetic parameters for it. |
-| popPK | Mustafa_2016 | irrelevant | 0 | 0 | The study focuses on kanamycin sulphate, not tocofersolan, and reports no PK parameters for the target drug. |
+| popPK | Modi_2020 | irrelevant | 0 | 0 | The paper focuses on membrane materials for bioartificial kidneys and does not study the pharmacokinetics of tocofersolan. |
+| popPK | Mugundhan_2025 | irrelevant | 0 | 0 | The study focuses on Axitinib nanomicelles for breast cancer and does not involve tocofersolan or its pharmacokinetics. |
+| popPK | Mustafa_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of kanamycin sulphate, not tocofersolan. |
 | popPK | Mustafa_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Kanamycin Sulphate (KS) loaded in nanoparticles, not tocofersolan. |
-| popPK | Pereira-Silva_2025 | irrelevant | 0 | 0 | The paper focuses on the formulation and in-vitro characterization of gemcitabine-loaded TPGS micelles for pancreatic cancer, and does not report pharmacokinetic parameters for tocofersolan. |
+| popPK | Pereira-Silva_2025 | irrelevant | 0 | 0 | The paper describes the formulation and in vitro characterization of gemcitabine-loaded micelles, not the pharmacokinetics of tocofersolan. |
 | popPK | Pham_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of (S)-zaltoprofen, not tocofersolan. |
 | popPK | Prashant_2010 | irrelevant | 0 | 0 | The study focuses on SPIO-loaded nanoparticles for MRI imaging and does not report pharmacokinetic parameters for tocofersolan. |
 | popPK | Sathe_2024 | irrelevant | 0 | 0 | The study focuses on natamycin nanomicelles for fungal keratitis and does not involve tocofersolan. |
-| popPK | Shen_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of genistein, not tocofersolan. |
-| popPK | Singh_2021 | irrelevant | 0 | 0 | The study focuses on docetaxel nanovesicles and does not report pharmacokinetic parameters for tocofersolan. |
-| popPK | Singh_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of piperine, not tocofersolan. |
-| popPK | Sipos_2024 | irrelevant | 0 | 0 | The paper is an in-vitro formulation study where tocofersolan (TPGS) is used as an excipient/solubilizer, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Shen_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of genistein, not tocofersolan. |
+| popPK | Singh_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of docetaxel, not tocofersolan. |
+| popPK | Singh_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of piperine, not tocofersolan. |
+| popPK | Sipos_2024 | irrelevant | 0 | 0 | The study is an in-vitro formulation and release study where tocofersolan (TPGS) is used as an excipient/solubilizer, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Stevens_2023 | irrelevant | 0 | 0 | The paper is a systematic review on nanoparticle delivery of flavonoids and does not report pharmacokinetic parameters for tocofersolan. |
 | PD | Stevens_2023 | not_relevant | 0 | 0 | The paper is a systematic review of nanoparticle delivery of flavonoids and does not report specific pharmacodynamic or exposure-response data for tocofersolan. |
-| popPK | Sun_2021 | irrelevant | 0 | 0 | The study focuses on docetaxel-loaded micelles and TPGS/PSA conjugates, not tocofersolan pharmacokinetics. |
+| popPK | Sun_2021 | irrelevant | 0 | 0 | The study focuses on docetaxel-loaded micelles and TPGS, not tocofersolan pharmacokinetics. |
 | popPK | Tong_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of baicalein, not tocofersolan. |
-| popPK | Tsend-Ayush_2017 | irrelevant | 0 | 0 | The study focuses on etoposide delivery using TPGS nanoparticles and does not investigate tocofersolan pharmacokinetics. |
+| popPK | Tsend-Ayush_2017 | irrelevant | 0 | 0 | The study focuses on etoposide delivery using TPGS nanoparticles and does not investigate the pharmacokinetics of tocofersolan. |
 | popPK | Verma_2018 | irrelevant | 0 | 0 | The paper is an in-vitro study on hemodialysis membrane performance and does not report pharmacokinetic parameters for tocofersolan. |
-| popPK | Viswanadh_2021 | irrelevant | 0 | 0 | The study focuses on docetaxel-loaded nanoparticles and does not involve tocofersolan. |
-| popPK | Warsi_2014 | irrelevant | 0 | 0 | The study focuses on dorzolamide-loaded nanoparticles, not tocofersolan, and does not report PK parameters for the target drug. |
+| popPK | Viswanadh_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of docetaxel-loaded nanoparticles, not tocofersolan. |
+| popPK | Warsi_2014 | irrelevant | 0 | 0 | The study investigates dorzolamide-loaded nanoparticles, not tocofersolan. |
 | popPK | Westergren_2010 | irrelevant | 1 | 0 | The paper is a review of dosage and formulation issues that explicitly states there are few pharmacokinetic studies and no PK studies for tocofersolan in neonates, providing no quantitative PK parameters. |
 | PD | Westergren_2010 | not_relevant | 1 | 0 | The paper is a narrative review of dosage recommendations and bioavailability comparisons, containing no quantitative pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters for tocofersolan. |
 | popPK | Yadav_2023 | irrelevant | 0 | 0 | The study focuses on Paclitaxel and Baicalein, not tocofersolan. |
-| popPK | Yadav_2023_2 | irrelevant | 0 | 0 | The study focuses on paclitaxel-loaded nanoemulsions and does not report pharmacokinetic parameters for tocofersolan. |
-| popPK | Yang_2021 | irrelevant | 0 | 0 | The study focuses on apremilast, not tocofersolan, and does not report PK parameters for the target drug. |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study focuses on chlorogenic acid (CGA) and its liposomal formulation, not tocofersolan. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper is a bioinformatics resource for drug exposure detection via metabolomics and mentions tocofersolan only as an example of a false-positive analog to be filtered out, providing no pharmacokinetic parameters. |
+| popPK | Yadav_2023_2 | irrelevant | 0 | 0 | The study focuses on paclitaxel pharmacokinetics in mice, not tocofersolan. |
+| popPK | Yang_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of apremilast, not tocofersolan. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of chlorogenic acid (CGA) in rats, not tocofersolan. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource for drug screening and does not report pharmacokinetic parameters for tocofersolan. |
 | PD | Zhao_2025 | not_relevant | 0 | 0 | The paper describes a metabolomics database for drug detection and does not report any pharmacodynamic or exposure-response analysis for tocofersolan. |
-| popPK | Zhen_2020 | irrelevant | 0 | 0 | The study focuses on 6-Gingerol, not tocofersolan, and does not report PK parameters for the target drug. |
+| popPK | Zhen_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 6-Gingerol, not tocofersolan. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

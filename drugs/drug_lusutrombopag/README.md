@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Lusutrombopag is an orally bioavailable thrombopoietin receptor (TPOR) agonist developed by Shionogi & Company (Osaka, Japan). TPOR is a regulatory target site for endogenous thrombopoietin, which acts as a primary cytokine to promote megakaryocyte proliferation and differentiation, and affect other hematopoietic lineages as well, including erythroid, granulocytic and lymphoid lineages [A36736]. Thrombocytopenia, which indicates abnormally low levels of platelets, is a common complication related to chronic liver disease. This hematological abnormality, especially in cases of severe thrombocytopenia (platelet count <50,000/μL), creates challenges to patients requiring invasive medical procedures where there is a significant risk for spontaneous bleeding [A36732]. Lusutrombopag binds to the transmembrane domain of TPOR expressed on megakaryocytes, and causes the proliferation and differentiation of megakaryocytic progenitor cells from hematopoietic stem cells [FDA Label]. 
+Lusutrombopag is a medicine used to treat thrombocytopenia, a condition of low blood platelets. It is an approved drug and is authorised in the European Union.
 
-In September 2015, lusutrombopag received its first global approval in Japan to reduce the need for platelet transfusion in adults with chronic liver disease and thrombocytopenia who are schedule to undergo an invasive medical procedure [A36730]. Lusutrombopag was approved by the FDA on July 31st, 2018 for the same therapeutic indication under the market name Mulpleta. In two randomized, double-blind, placebo-controlled trials, patients with chronic liver disease and severe thrombocytopenia who were undergoing an invasive procedure with a platelet count less than 50 x 10^9/L were administered lusutrombopag orally [L4166]. Higher percentages (65-78%) of the patients receiving lusutrombopag required no platelet transfusion prior to the primary invasive procedure compared to those receiving placebo [L4166]. Lusutrombopag is currently in phase III development in various European countries including Austria, Belgium, Germany, and the UK [A36730].
-
-**Indication.** Lusutrombopag is indicated for the treatment of thrombocytopenia in adults with chronic liver disease who are scheduled to undergo a medical or dental procedure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27265116](https://www.wikidata.org/wiki/Q27265116) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -47,9 +45,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | <sub>“…CYP4 enzymes predominantly contribute to the metabolism of lusutrombopag, especially CYP4A…”</sub> | prose |
-| excretion | bile duct | <sub>“…Fecal excretion accounted for 83% of the total dose…”</sub> | prose |
-| excretion | kidney | <sub>“…undergoes urinary excretion…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CYP4A11 (substrate), MPL (target).</sub>
 

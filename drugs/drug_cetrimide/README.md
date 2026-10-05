@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Cetrimide is an antiseptic and disinfectant used on the skin, for example in wound care and medicated shampoos. It remains in general use as a dermatological antiseptic, though it is not an EU-authorised medicine according to the available facts.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q12458398](https://www.wikidata.org/wiki/Q12458398) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

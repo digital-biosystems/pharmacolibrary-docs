@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An adrenergic neuron-blocking drug similar in effects to guanethidine. It is also noteworthy in being a substrate for a polymorphic cytochrome P-450 enzyme. Persons with certain isoforms of this enzyme are unable to properly metabolize this and many other clinically important drugs. They are commonly referred to as having a debrisoquin 4-hydroxylase polymorphism.
+Debrisoquine is an antihypertensive drug, a peripherally acting antiadrenergic (sympatholytic) agent of the guanidine derivative class, used to lower blood pressure. It has been approved as a medicine, but the available facts do not indicate where or how widely it is currently used.
 
-**Indication.** For the treatment of moderate and severe hypertension, either alone or as an adjunct, and for the treatment of renal hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3704421](https://www.wikidata.org/wiki/Q3704421) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

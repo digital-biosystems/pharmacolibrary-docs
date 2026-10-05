@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Pinacidil is a cyanoguanidine drug that acts by opening ATP-sensitive potassium channels, leading to peripheral vasodilatation of arterioles and decreasing peripheral vascular resistance. The above processes result in reduced blood pressure. This drug has been discontinued by the FDA.
+Pinacidil is an antihypertensive vasodilator used to lower high blood pressure. It is classed as an approved drug, but it does not appear to be an established, widely marketed medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q821869](https://www.wikidata.org/wiki/Q821869) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

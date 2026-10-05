@@ -10,34 +10,46 @@
 
 ## About
 
-**Description.** Naldemedine is an opioid receptor antagonist [FDA Label]. It is a modified form of [DB00704] to which a side chain has been added to increase molecular weight and polar surface area resulting in restricted transport across the blood brain barrier. Naldemedine was approved in 2017 in both the US and Japan for the treatment of Opioid-induced Constipation.
+Naldemedine is a peripheral opioid receptor antagonist used to treat constipation, particularly opioid-induced constipation. It is an approved medicine, authorised in the European Union for constipation.
 
-**Indication.** For the treatment of opioid-induced constipation [FDA Label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6960846](https://www.wikidata.org/wiki/Q6960846) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| naldemedine | parent | 570.646 | C32H34N4O6 | DrugBank | [54732242](https://pubchem.ncbi.nlm.nih.gov/compound/54732242) | Kubota_2018 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 11:25 | 7:49 | 0/1/4 | 0/0/0 | 0/0/4 | 195,106/4,947 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/1 | 6/0 | 0 |
+| 2026-10-04 16:53 | 11:36 | 3/0/0 | 1/0/1 | 0/0/2 | 251,790/29,863 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, ka left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kubota_2018_1107v9221_phase_2b](drugs/drug_naldemedine/Naldemedine_Kubota2018_1107v9221_phase_2b.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, ka left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kubota_2018_1314v9231_1315v9232_phase_3](drugs/drug_naldemedine/Naldemedine_Kubota2018_1314v9231_1315v9232_phase_3.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, ka left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kubota_2018_cl_f_l_hr](drugs/drug_naldemedine/Naldemedine_Kubota2018_cl_f_l_hr.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, ka, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kubota_2018_estimate](drugs/drug_naldemedine/Naldemedine_Kubota2018_estimate.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kubota_2018_shrinkage](drugs/drug_naldemedine/Naldemedine_Kubota2018_shrinkage.md) | — | 2-compartment (no model) | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kubota_2018_1107v9221_phase_2b](drugs/drug_naldemedine/Naldemedine_Kubota2018_1107v9221_phase_2b.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kubota_2018_1314v9231_1315v9232_phase_3](drugs/drug_naldemedine/Naldemedine_Kubota2018_1314v9231_1315v9232_phase_3.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kubota_2018_estimate](drugs/drug_naldemedine/Naldemedine_Kubota2018_estimate.md) | held back | 2-compartment, oral | 4 | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Kanemasa_2020_antiemetic_effect](drugs/drug_naldemedine/pd_Kanemasa_2020_antiemetic_effect.md) | antiemetic effect ← naldemedine · direct Emax (saturable) effect | — | Kanemasa T et al., Preventive effects of naldemedine, peri…, Life sciences (2020) | [10.1016/j.lfs.2020.118048](https://doi.org/10.1016/j.lfs.2020.118048) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kubota_2018_GI_disorders](drugs/drug_naldemedine/pd_Kubota_2018_GI_disorders.md) | gastrointestinal disorders ← naldemedine · categorical (graded) response model | — | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kubota_2018_SBM_responder](drugs/drug_naldemedine/pd_Kubota_2018_SBM_responder.md) | spontaneous bowel movement (SBM) responder ← naldemedine · categorical (graded) response model | — | Kubota R et al., Population Pharmacokinetics and Exposur…, Pharmaceutical research (2018) | [10.1007/s11095-018-2501-7](https://doi.org/10.1007/s11095-018-2501-7) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Nakatsugawa_2024](drugs/drug_naldemedine/pgx_Nakatsugawa_2024_ABCB1_Q100.md) | Nakatsugawa E et al., Impacts of genetic polymorphisms and ca…, Fundamental & clinical phar… (2024) | [10.1111/fcp.12976](https://doi.org/10.1111/fcp.12976) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **COMT** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Nakatsugawa_2024](drugs/drug_naldemedine/pgx_Nakatsugawa_2024_COMT_Q100.md) | Nakatsugawa E et al., Impacts of genetic polymorphisms and ca…, Fundamental & clinical phar… (2024) | [10.1111/fcp.12976](https://doi.org/10.1111/fcp.12976) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP3A5** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Nakatsugawa_2024](drugs/drug_naldemedine/pgx_Nakatsugawa_2024_CYP3A5_Q100.md) | Nakatsugawa E et al., Impacts of genetic polymorphisms and ca…, Fundamental & clinical phar… (2024) | [10.1111/fcp.12976](https://doi.org/10.1111/fcp.12976) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **OPRM1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Nakatsugawa_2024](drugs/drug_naldemedine/pgx_Nakatsugawa_2024_OPRM1_Q100.md) | Nakatsugawa E et al., Impacts of genetic polymorphisms and ca…, Fundamental & clinical phar… (2024) | [10.1111/fcp.12976](https://doi.org/10.1111/fcp.12976) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCB1** | `Q27` · CL/F | transport | [Nakatsugawa_2024](drugs/drug_naldemedine/pgx_Nakatsugawa_2024_ABCB1_Q27.md) | Nakatsugawa E et al., Impacts of genetic polymorphisms and ca…, Fundamental & clinical phar… (2024) | [10.1111/fcp.12976](https://doi.org/10.1111/fcp.12976) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP3A5** | `Q27` · CL/F | metabolism | [Nakatsugawa_2024](drugs/drug_naldemedine/pgx_Nakatsugawa_2024_CYP3A5_Q27.md) | Nakatsugawa E et al., Impacts of genetic polymorphisms and ca…, Fundamental & clinical phar… (2024) | [10.1111/fcp.12976](https://doi.org/10.1111/fcp.12976) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -58,12 +70,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
-| metabolism | brain | `COMT` target | paper PGx gene |
-| metabolism | kidney | `COMT` target, `CYP3A5` metabolism | paper PGx gene |
-| metabolism | liver | `COMT` target, `CYP3A4` substrate, `CYP3A5` metabolism, `UGT1A3` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` metabolism | paper PGx gene |
+| metabolism | liver | `CYP3A4` substrate, `CYP3A5` metabolism, `UGT1A3` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` metabolism | DrugBank actor |
-| excretion | bile duct | <sub>“…35% is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…57% of naldemedine is excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCB5 (substrate), OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 
@@ -77,20 +88,30 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs_review 4  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Kanemasa_2020.pdf` | Kanemasa T et al., Preventive effects of naldemedine, peri…, Life sciences (2020) | popPK | 8 | [10.1016/j.lfs.2020.118048](https://doi.org/10.1016/j.lfs.2020.118048) | [32622946](https://pubmed.ncbi.nlm.nih.gov/32622946) | The study is a PK/PD analysis in ferrets, but the evidence only provides PD parameters (ED50, EC50) and lacks specific numeric PK disposition parameters (CL, V, t1/2) for naldemedine. |
+
+<sub>queue written 2026-10-04T16:42:06.462338+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Coluzzi_2022 | not_relevant | 2 | 0 | The paper is a general review of P-glycoprotein and opioids; it mentions naldemedine as a P-gp substrate but does not report specific pharmacogenomic data or quantitative PK/PD effects of gene variants on naldemedine. |
-| PGx | De_2025 | not_relevant | 0 | 0 | The paper is a real-world study on healthcare resource utilization and does not report pharmacogenomic effects on PK/PD parameters. |
-| PGx | Gudin_2020 | not_relevant | 0 | 0 | The paper is a review of pharmacokinetic principles and drug interactions (CYP3A4, P-gp) for PAMORAs, but it does not report specific pharmacogenomic effects of gene variants on naldemedine's PK or PD parameters. |
-| popPK | Hanamoto_2023 | irrelevant | 0 | 0 | The study is a clinical outcome analysis of analgesia and does not report any pharmacokinetic parameters for naldemedine. |
-| PGx | Hashizume_2021 | not_relevant | 0 | 0 | The study analyzes clinical risk factors (opioid duration, concomitant drugs) for naldemedine-induced diarrhea but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Kanemasa_2020 | irrelevant | 2 | 0 | The study reports PK/PD analysis and ED50/EC50 values but does not provide quantitative disposition parameters (CL, V, ka, t1/2) for naldemedine in the provided evidence. |
+| PGx | De_2025 | not_relevant | 0 | 0 | The paper is a real-world study on healthcare resource utilization and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Gudin_2020 | not_relevant | 0 | 0 | The paper is a review of drug-drug and drug-food interactions for PAMORAs and does not report pharmacogenomic effects (gene variants) on naldemedine PK/PD. |
+| popPK | Hanamoto_2023 | irrelevant | 0 | 0 | The study is a clinical analysis of analgesic outcomes (NRS scores, MMEs) and does not report any pharmacokinetic parameters for naldemedine. |
+| PGx | Hashizume_2021 | not_relevant | 0 | 0 | The study investigates clinical risk factors (drug interactions, opioid duration) for naldemedine-induced diarrhea, not the effect of specific gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Kanemasa_2020 | relevant | 8 | 2 | The study is a PK/PD analysis in ferrets, but the evidence only provides PD parameters (ED50, EC50) and lacks specific numeric PK disposition parameters (CL, V, t1/2) for naldemedine. |
 | PGx | Makihara_2024 | not_relevant | 0 | 0 | The study focuses on oxycodone tolerability and polypharmacy effects, not the pharmacokinetics or pharmacodynamics of naldemedine. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-11 11:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 16:42 UTC</sub>

@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Thrombotic thrombocytopenic purpura (TTP) is a rare blood clotting disorder characterized by thrombocytopenia, microangiopathic hemolytic anemia, and various degrees of organ damage.[A262076] It may be inherited (congenital TTP; cTTP) or acquired due to autoantibodies (immune-mediated TTP; iTTP), although cTTP accounts for <5% of all cases of TTP.[A262076] Patients with cTTP have a severe deficiency of a plasma metalloproteinase called ADAMTS13 (a disintegrin and metalloproteinase with a thrombospondin type 1 motif, member 13), which is responsible for cleaving large von Willebrand factor multimers and preventing the formation of microthrombi - this deficiency in ADAMTS13 is responsible for the microangiopathic complications associated with cTTP.[A262076] Standard therapy for cTTP involves prophylactic plasma infusions to supplement insufficient ADAMTS13 plasma levels.[A262071]
+Apadamtase alfa (recombinant ADAMTS13) is an enzyme used to treat thrombotic thrombocytopenic purpura. It is authorised in the European Union.
 
-Apadamtase alfa, sold under the brand name Adzynma (ADAMTS13, recombinant-krhn), was approved by the FDA in November 2023 for use as an enzyme replacement therapy in patients with cTTP.[L48756]
-
-**Indication.** Recombinant human ADAMTS13 is indicated for prophylactic or on-demand enzyme replacement therapy (ERT) in adult and pediatric patients with congenital thrombotic thrombocytopenic purpura (cTTP).[L48746]
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

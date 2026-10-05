@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Levetiracetam is a drug within the pyrrolidine class that is used to treat various types of seizures stemming from epileptic disorders. It was first approved for use in the United States in 1999 and is structurally and mechanistically unrelated to other anti-epileptic drugs (AEDs).[L8606,L8600,L8615] Levetiracetam possesses a wide therapeutic index[L8615,A185918] and little-to-no potential to produce, or be subject to, pharmacokinetic interactions[L8606,L8600,L8615] - these characteristics make it a desirable choice over other AEDs, a class of drugs notorious for having generally narrow therapeutic indexes and a propensity for involvement in drug interactions.[A185927]
+Levetiracetam is an antiepileptic medicine used to treat epilepsy and various types of seizures, including focal, temporal lobe, frontal lobe, and tonic–clonic seizures. It is an approved drug widely used, with several products authorised in the European Union for epilepsy.
 
-**Indication.** Levetiracetam is indicated as an adjunctive therapy in the treatment of partial onset seizures in epileptic patients who are one month of age and older. Additionally, it is indicated as an adjunct in the treatment of myoclonic seizures in patients with juvenile myoclonic epilepsy who are 12 years of age and older, and in primary generalized tonic-clonic seizures in patients with idiopathic generalized epilepsy who are 6 years of age and older.[L8606]
-
-Levetiracetam is also available as an orally dissolvable tablet that is indicated as an adjunct in the treatment of partial onset seizures in patients with epilepsy who are 4 years of age and older and weigh more than 20kg.[L8609]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417227](https://www.wikidata.org/wiki/Q417227) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,8 +52,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | blood | <sub>“…type B esterases in the blood…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in the urine as unchanged drug…”</sub> | prose |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1B (inhibitor), HTR3A (target), SV2A (target).</sub>
 

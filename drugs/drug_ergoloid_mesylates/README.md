@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Ergoloid mesylates are ergot alkaloid derivatives used as vasodilators for peripheral vascular problems and also described as nootropics. They are classified in the ATC system as peripheral vasodilators, but no specific marketing or approval information is available.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4161323](https://www.wikidata.org/wiki/Q4161323) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

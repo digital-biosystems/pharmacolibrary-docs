@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # s-atenolol
 
@@ -10,7 +11,9 @@
 
 ## About
 
-**Description.** Esatenolol is a beta blocker.
+Esatenolol, the S-enantiomer of atenolol, is a selective beta blocker studied for treating myocardial infarction and arterial hypertension. It remains an experimental compound and is not an established marketed medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q24255323](https://www.wikidata.org/wiki/Q24255323) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -31,7 +34,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Buck_1989_reference](drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md) | model (no simulator) | 1-compartment, IV | 5 | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Buck_1989_reference](drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kir_2025_reference](drugs/drug_s_atenolol/SAtenolol_Kir2025_reference.md) | — | 1-compartment (no model) | 1 | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q73 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Mason_1979_reference](drugs/drug_s_atenolol/SAtenolol_Mason1979_reference.md) | — | 1-compartment (no model) | 8 | Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacology and t… (1979) | [10.1002/cpt1979254408](https://doi.org/10.1002/cpt1979254408) |
 

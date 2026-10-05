@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Tranexamic acid is a synthetic derivative of [lysine] used as an antifibrinolytic in the treatment and prevention of major bleeding. It possesses a similar mechanism of action to [aminocaproic acid] but is approximately 10-fold more potent.[L31883]
+Tranexamic acid is an antifibrinolytic medicine used to treat or prevent bleeding, including conditions such as subarachnoid hemorrhage and blood coagulation disorders. It is widely used and is included on the WHO list of essential medicines, and it is also being investigated for additional uses.
 
-It was first patented in 1957[A230108] and received its initial US approval in 1986.[L31858]
-
-**Indication.** Taken orally, tranexamic acid is indicated for the treatment of hereditary angioedema,[L31883] cyclic heavy menstrual bleeding in premenopausal females,[L31858] and other instances of significant bleeding in the context of hyperfibrinolysis.[L31883] Given intravenously, tranexamic acid is indicated for short-term use (2-8 days) in patients with hemophilia to prevent or reduce bleeding following tooth extraction.[L31853]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418666](https://www.wikidata.org/wiki/Q418666) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -54,8 +52,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…bioavailability of tranexamic acid after oral administration in humans is approximately 30…”</sub> | prose |
-| excretion | kidney | <sub>“…Urinary excretion is the primary means of tranexamic acid elimination, with &gt;95% of an adm…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PLG (inhibitor).</sub>
 

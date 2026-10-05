@@ -10,32 +10,19 @@
 
 ## About
 
-**Description.** Sulfaguanidine is a sulfonamide antibiotic with antimicrobial and antibacterial activities.[A275108]
+Sulfaguanidine is a sulfonamide anti-infective that has been used as an intestinal anti-infective agent, for example against diarrhoea. It is now considered an experimental compound and is not an established marketed medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414886](https://www.wikidata.org/wiki/Q414886) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 03:33 | 6:50 | 0/0/0 | 2/2/0 | 0/0/0 | 253,145/2,702 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/8 | 6/0 | 0 |
+| 2026-10-04 18:40 | 3:21 | 0/0/0 | 0/0/0 | 0/0/0 | 129,542/4,304 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/8 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmad_2023_2_IC50](drugs/drug_sulfaguanidine/pd_Ahmad_2023_2_IC50.md) | urease inhibition ← naproxen-sulfa drug conjugates · inhibition effect | — | Ahmad S et al., Exploring the potential of propanamide-…, Frontiers in chemistry (2023) | [10.3389/fchem.2023.1206380](https://doi.org/10.3389/fchem.2023.1206380) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmad_2023_2_edema_inhibition](drugs/drug_sulfaguanidine/pd_Ahmad_2023_2_edema_inhibition.md) | anti-inflammatory activity ← naproxen-sulfanilamide conjugate · inhibition effect | — | Ahmad S et al., Exploring the potential of propanamide-…, Frontiers in chemistry (2023) | [10.3389/fchem.2023.1206380](https://doi.org/10.3389/fchem.2023.1206380) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmad_2023_2_inhibition](drugs/drug_sulfaguanidine/pd_Ahmad_2023_2_inhibition.md) | anti-inflammatory activity ← naproxen-sulfa drug conjugates · inhibition effect | — | Ahmad S et al., Exploring the potential of propanamide-…, Frontiers in chemistry (2023) | [10.3389/fchem.2023.1206380](https://doi.org/10.3389/fchem.2023.1206380) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Ayoup_2026_EC50](drugs/drug_sulfaguanidine/pd_Ayoup_2026_EC50.md) | glucose uptake ← sulfaguanidine derivatives · inhibition effect | — | Ayoup MS et al., New multitarget antidiabetic potential…, RSC advances (2026) | [10.1039/d5ra08959j](https://doi.org/10.1039/d5ra08959j) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Ayoup_2026_IC50](drugs/drug_sulfaguanidine/pd_Ayoup_2026_IC50.md) | alpha-amylase inhibition ← sulfaguanidine derivatives · inhibition effect | — | Ayoup MS et al., New multitarget antidiabetic potential…, RSC advances (2026) | [10.1039/d5ra08959j](https://doi.org/10.1039/d5ra08959j) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmad_2023_IC50](drugs/drug_sulfaguanidine/pd_Ahmad_2023_IC50.md) | urease inhibition ← unknown · inhibition effect | — | Ahmad S et al., Exploring the Potential of New Benzamid…, ACS omega (2023) | [10.1021/acsomega.3c07275](https://doi.org/10.1021/acsomega.3c07275) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmad_2023_urease](drugs/drug_sulfaguanidine/pd_Ahmad_2023_urease.md) | urease activity ← unknown · inhibition effect | — | Ahmad S et al., Exploring the Potential of New Benzamid…, ACS omega (2023) | [10.1021/acsomega.3c07275](https://doi.org/10.1021/acsomega.3c07275) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Alelaimat_2023_A549_cell_viability](drugs/drug_sulfaguanidine/pd_Alelaimat_2023_A549_cell_viability.md) | name ← unknown · inhibition effect | — | Alelaimat MA et al., Novel Sulfonamide-Triazine Hybrid Deriv…, ACS omega (2023) | [10.1021/acsomega.3c01273](https://doi.org/10.1021/acsomega.3c01273) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Alelaimat_2023_MCF_7_cell_viability](drugs/drug_sulfaguanidine/pd_Alelaimat_2023_MCF_7_cell_viability.md) | name ← unknown · inhibition effect | — | Alelaimat MA et al., Novel Sulfonamide-Triazine Hybrid Deriv…, ACS omega (2023) | [10.1021/acsomega.3c01273](https://doi.org/10.1021/acsomega.3c01273) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Alelaimat_2023_PI3K_inhibition](drugs/drug_sulfaguanidine/pd_Alelaimat_2023_PI3K_inhibition.md) | name ← unknown · inhibition effect | — | Alelaimat MA et al., Novel Sulfonamide-Triazine Hybrid Deriv…, ACS omega (2023) | [10.1021/acsomega.3c01273](https://doi.org/10.1021/acsomega.3c01273) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -58,7 +45,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Wang_2026.pdf` | Wang J et al., From hapten design to in situ detection…, Food research international… (2026) | pd | 5 | [10.1016/j.foodres.2026.119176](https://doi.org/10.1016/j.foodres.2026.119176) | [42083217](https://www.ncbi.nlm.nih.gov/pubmed/42083217) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-22T03:29:22.659728+00:00</sub>
+<sub>queue written 2026-10-04T18:37:13.278984+00:00</sub>
 
 ## Screened and excluded
 
@@ -71,8 +58,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Allam_2023 | not_relevant | 0 | 0 | The paper reports enzyme inhibition constants (Ki) and cellular IC50 values for novel carbonic anhydrase inhibitors, but does not report a pharmacokinetic/pharmacodynamic (PK/PD) exposure-response relationship or dose-response curve for sulfaguanidine itself. |
 | popPK | Ayoup_2026 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro biological evaluation of sulfaguanidine derivatives, containing no pharmacokinetic data. |
 | PD | Ayoup_2026 | not_relevant | 3 | 3 | The paper reports in vitro IC50 values for enzyme inhibition, which are static potency metrics rather than a pharmacodynamic (exposure-response) or dose-response relationship with derived PD parameters (Emax, slope, etc.) in a biological system. |
-| popPK | Bartlett_2013 | irrelevant | 0 | 0 | The paper reports toxicological endpoints (LC50, EC50) for sulfaguanidine in an aquatic organism, not pharmacokinetic parameters. |
-| popPK | De_2009 | irrelevant | 0 | 0 | The study focuses on the toxicity of sulfamethazine and other sulfonamides to Daphnia magna, not on the pharmacokinetics of sulfaguanidine. |
+| popPK | Bartlett_2013 | irrelevant | 0 | 0 | The study reports toxicological endpoints (LC50, EC50) for sulfaguanidine in an aquatic organism, not pharmacokinetic parameters. |
+| popPK | De_2009 | irrelevant | 0 | 0 | The study focuses on the toxicity of sulfamethazine and other sulfonamides to Daphnia magna, not on the pharmacokinetic parameters of sulfaguanidine. |
 | popPK | Esam_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study using sulfaguanidine as a component of a nanocatalyst for synthesis, not a pharmacokinetic study of sulfaguanidine. |
 | PD | Esam_2023 | not_relevant | 0 | 0 | The paper uses sulfaguanidine as a catalyst for synthesis and reports IC50 values for novel quinoxaline derivatives, not for sulfaguanidine itself. |
 | popPK | Husseiny_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel sulfaguanidine-based derivatives for CDK-9 inhibition and cytotoxicity, containing no pharmacokinetic data for the drug sulfaguanidine. |

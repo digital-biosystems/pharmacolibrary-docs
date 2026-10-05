@@ -8,6 +8,12 @@
 - **molar mass:** 619.973 g/mol (CH24Al2Mg6O24) — DrugBank
 - **groups:** approved, investigational, withdrawn
 
+## About
+
+Hydrotalcite is an antacid used to treat acid-related disorders of the digestive tract, such as excess stomach acid. It is an approved medicine, available in antacid preparations, though it does not appear to be authorised centrally in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q9003473](https://www.wikidata.org/wiki/Q9003473) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A compound that inhibits symport of sodium, potassium, and chloride primarily in the ascending limb of Henle, but also in the proximal and distal tubules. This pharmacological action results in excretion of these ions, increased urinary output, and reduction in extracellular fluid. This compound has been classified as a loop or high ceiling diuretic.
+Ethacrynic acid is a loop diuretic used to treat fluid retention and swelling caused by conditions such as congestive heart failure, pulmonary edema, nephrotic syndrome, liver cirrhosis, and arterial hypertension. It is an approved drug, though it is now used far less often than other loop diuretics, mainly when they cannot be used because of sulfa allergy.
 
-**Indication.** For the treatment of high blood pressure and edema caused by diseases like congestive heart failure, liver failure, and kidney failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418571](https://www.wikidata.org/wiki/Q418571) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

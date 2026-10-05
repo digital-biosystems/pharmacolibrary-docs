@@ -8,6 +8,12 @@
 - **molar mass:** 548.673 g/mol (C30H44O9) — DrugBank
 - **groups:** experimental
 
+## About
+
+Cymarin is a Strophanthus cardiac glycoside with cardiotonic and antiarrhythmic activity, historically used for heart conditions. It is currently considered experimental and does not appear to be an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5199357](https://www.wikidata.org/wiki/Q5199357) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

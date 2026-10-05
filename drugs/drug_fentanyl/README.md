@@ -11,15 +11,9 @@
 
 ## About
 
-**Description.** Fentanyl, a potent opioid agonist, was developed in the 1950s to fill a need for strong and rapid analgesia.[A179542] Because of these characteristics, fentanyl is commonly used to treat chronic cancer pain or in anesthesia.[Label,L6598,L6601,L6604,L6607,L922,L6610,L6613] Fentanyl is related to other opioids like [morphine] and [oxycodone].
+Fentanyl is a synthetic opioid analgesic used to treat pain, including cancer-related and postoperative pain, and as an anesthetic adjuvant. It is widely used and authorised in the European Union, though it is a controlled substance carrying a boxed warning.
 
-Fentanyl's high potency has also made it a common adulterant in illicit drugs, especially heroin.[A179542] In 2017, 47600 overdose deaths in the United States involved some opioid (over 2/3 of all overdose deaths).[L6748] Opioid overdoses kill an average of 11 Canadians daily.[L6751]
-
-Fentanyl was FDA approved in 1968.[Label,L6598,L6601,L6604,L6607,L922,L6610,L6613]
-
-**Indication.** Fentanyl intravenous or intramuscular injections are indicated for short term analgesia during induction, maintenance, and recovery from general or regional anesthesia.[Label] These injections are also used with a neuroleptic for premedication, induction, and as an adjunct to maintenance of anesthesia.[Label] Finally, fentanyl intravenous or intramuscular injections are used with oxygen for anesthesia in high risk patients.[Label]
-
-Fentanyl sublingual tablets, transmucosal lozenges, buccal tablets, sublingual sprays, transdermal systems, and nasal sprays are indicated for the management of breakthrough pain in opioid tolerant cancer patients who require around the clock pain management.[L6598,L6601,L6604,L6607,L922,L6610]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q407541](https://www.wikidata.org/wiki/Q407541) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -132,8 +126,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `COMT` target, `CYP3A5` metabolism, `UGT2B7` metabolism | paper PGx gene |
 | metabolism | liver | `CES1` metabolism, `COMT` target, `CYP2B6` metabolism, `CYP2D6` metabolism, `CYP3A4` metabolism/substrate, `CYP3A5` metabolism, `CYP3A7` substrate, `UGT2B7` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` metabolism/substrate, `CYP3A5` metabolism, `UGT2B7` metabolism | DrugBank actor |
-| excretion | bile duct | <sub>“…9% is excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…75% of a dose of fentanyl is excreted in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCC3` transport | paper PGx gene |
 | excretion | small intestine | `ABCC3` transport | paper PGx gene |
 

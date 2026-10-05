@@ -8,6 +8,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Sodium salicylate is a salicylate non-steroidal anti-inflammatory drug used as an analgesic and antipyretic. It is classified in the nervous-system analgesics group of the ATC system, but no specific marketing authorisation information is available, so its current use appears limited.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q414547](https://www.wikidata.org/wiki/Q414547) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

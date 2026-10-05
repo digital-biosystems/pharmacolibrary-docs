@@ -10,25 +10,19 @@
 
 ## About
 
-**Description.** Glibornuride is a sulfonylurea-type anti-diabetic drug.
+Glibornuride is a sulfonylurea that was used to lower blood sugar in people with diabetes. It has been withdrawn and is no longer used.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3772225](https://www.wikidata.org/wiki/Q3772225) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 21:36 | 2:15 | 0/0/0 | 1/0/0 | 0/0/0 | 27,052/1,164 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-05 01:11 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 27,653/553 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2_blood_glucose](drugs/drug_glibornuride/pd_Haupt_1971_2_blood_glucose.md) | name ← tolbutamide, glibenclamide, glibornuride, glisoxepide · stimulation effect | — | Haupt E et al., Pharmacodynamic aspects of tolbutamide,…, Diabetologia (1971) | [10.1007/BF01212061](https://doi.org/10.1007/BF01212061) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2_free_fatty_acids](drugs/drug_glibornuride/pd_Haupt_1971_2_free_fatty_acids.md) | name ← tolbutamide, glibenclamide, glibornuride, glisoxepide · stimulation effect | — | Haupt E et al., Pharmacodynamic aspects of tolbutamide,…, Diabetologia (1971) | [10.1007/BF01212061](https://doi.org/10.1007/BF01212061) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2_serum_insulin](drugs/drug_glibornuride/pd_Haupt_1971_2_serum_insulin.md) | name ← tolbutamide, glibenclamide, glibornuride, glisoxepide · stimulation effect | — | Haupt E et al., Pharmacodynamic aspects of tolbutamide,…, Diabetologia (1971) | [10.1007/BF01212061](https://doi.org/10.1007/BF01212061) |
 
 ## ADME sites
 
@@ -53,27 +47,26 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Stoeckel_1985.pdf` | Stoeckel K et al., Lack of effect of tenoxicam on glibornu…, British journal of clinical… (1985) | popPK | 9 | [10.1111/j.1365-2125.1985.tb02638.x](https://doi.org/10.1111/j.1365-2125.1985.tb02638.x) | [3157397](https://pubmed.ncbi.nlm.nih.gov/3157397) | The study is a relevant PK interaction study for glibornuride, but the specific numeric parameter values are not present in the provided evidence text. |
-| `Dubach_1975.pdf` | Dubach UC et al., [On the multiple-dose kinetics of glibo…, Arzneimittel-Forschung (1975) | popPK | 8 | not captured | [130138](https://pubmed.ncbi.nlm.nih.gov/130138) | The paper describes a pharmacokinetic study of glibornuride in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Dubach_1975.pdf` | Dubach UC et al., [On the multiple-dose kinetics of glibo…, Arzneimittel-Forschung (1975) | popPK | 8 | not captured | [130138](https://pubmed.ncbi.nlm.nih.gov/130138) | The study reports multiple-dose pharmacokinetics of glibornuride in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | `Zini_1991.pdf` | Zini S et al., Characterization of sulfonylurea recept…, The Journal of pharmacology… (1991) | pd | 4 | not captured | [1658303](https://www.ncbi.nlm.nih.gov/pubmed/1658303) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-15T21:36:06.574499+00:00</sub>
+<sub>queue written 2026-10-05T01:11:17.752119+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dubach_1975 | relevant | 8 | 0 | The paper describes a pharmacokinetic study of glibornuride in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| popPK | Haupt_1971_2 | irrelevant | 0 | 0 | The study is pharmacodynamic (dose-response and insulin secretion) and does not report pharmacokinetic disposition parameters (CL, V, t1/2) for glibornuride. |
-| popPK | Keller_1986 | irrelevant | 0 | 0 | The study is a metabolic/pharmacodynamic assessment of insulin sensitivity using the euglycemic clamp technique and does not report pharmacokinetic parameters (CL, V, ka, etc.) for glibornuride. |
-| popPK | Löffler-Walz_1998 | irrelevant | 0 | 0 | The study is an in-vitro binding assay for K(ATP) channel modulators, not a pharmacokinetic study, and glibornuride is used only as a comparator ligand. |
-| popPK | Nielsen-Kudsk_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle relaxation, not a pharmacokinetic study, and reports no disposition parameters for glibornuride. |
-| popPK | Skillman_1981 | irrelevant | 1 | 0 | The paper is a review of sulfonylurea pharmacology that mentions glibornuride only as a comparator for potency and protein binding, without reporting any quantitative pharmacokinetic parameters. |
-| popPK | Stoeckel_1985 | relevant | 9 | 0 | The study is a relevant PK interaction study for glibornuride, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Dubach_1975 | relevant | 8 | 0 | The study reports multiple-dose pharmacokinetics of glibornuride in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Haupt_1971_2 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of dose-response and insulin secretion, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Keller_1986 | irrelevant | 0 | 0 | The study investigates insulin sensitivity and glucose metabolism in type 1 diabetics using glibornuride as a therapeutic agent, but does not report pharmacokinetic parameters (CL, V, ka, etc.) for glibornuride. |
+| popPK | Löffler-Walz_1998 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay for K(ATP) channels, not a pharmacokinetic study, and glibornuride is used only as a comparator ligand. |
+| popPK | Nielsen-Kudsk_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle relaxation, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Skillman_1981 | irrelevant | 1 | 0 | This is a review article that discusses the pharmacology of sulfonylureas generally and mentions glibornuride only as a comparator, without providing specific quantitative pharmacokinetic parameter values for it. |
+| popPK | Stoeckel_1985 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
 | PD | Zini_1991 | not_relevant | 0 | 0 | The paper focuses on the mechanism of action of potassium channel openers and sulfonylurea receptors in guinea pig intestine and does not report pharmacokinetic or pharmacodynamic modeling for glibornuride. |
 
 ---

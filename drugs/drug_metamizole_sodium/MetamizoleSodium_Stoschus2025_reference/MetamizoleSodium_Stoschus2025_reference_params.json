@@ -1,37 +1,32 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 3000 mg oral (N02BB02)",
  "model_id": "MetamizoleSodium_Stoschus2025_reference",
  "molar_masses": {
-  "central.C": 0.333338
+  "C_central": 0.333338
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
- ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  700.0,
-  1400.0
+  "C_central"
  ],
  "parameters": {
-  "Cl": 1.0555555555555557e-07,
-  "F": 0.9,
+  "Cl": 8.722222222222221e-08,
+  "F": 1.0,
   "MM": 0.333338,
   "Tlag": 0.0,
   "VdPerKg": 0.00049,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0007,
+  "adminMass": 0.003,
   "ka": 0.0005277777777777777,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 10176.4546735457
+  "C_central": 10527.046377652341
  },
  "reference_peaks": {
-  "central.C": 0.017820970206024293
+  "C_central": 0.08523145262054233
  },
- "stop_time": 1209600.0,
+ "stop_time": 1382400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

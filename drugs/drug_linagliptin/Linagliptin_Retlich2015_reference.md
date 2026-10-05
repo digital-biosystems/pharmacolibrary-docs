@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Retlich_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Retlich_2015_DPP_4&quot;,&quot;label&quot;:&quot;Retlich_2015 \u00b7 DPP-4&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/pd_Retlich_2015_DPP_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # linagliptin — `Linagliptin_Retlich2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.476). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.409). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,37 +20,40 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Bmax), so that value has no SI equivalent. Extracted — linagliptin: kabs 0.933, t1/2ka 0.795, k13 0.441, V1/F 715 L, Q/F 412, V 1.65e+03, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:29.277287+00:00) predates the upstream re-run (2026-10-05 00:17:05.752499+00:00). Current validate status: `rejected`.
 
 ## Citation
 Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-014-0232-4](https://doi.org/10.1007/s40262-014-0232-4)
 
 ## Model component
-<dbs-pgx drug="linagliptin" model-id="Linagliptin_Retlich2015_reference" status="needs_review" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="linagliptin" model-id="Linagliptin_Retlich2015_reference" status="rejected" stale="true" population="patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a,1 (1/h) | `Q49` · kabs | 0.933 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row5:col1 | — | not captured |
+| K a,1 (1/h) | `Q49` · kabs | 0.933 | 1/h | 0.00025916666666666666 | 1/h | not captured | llm (0.6) | Tab4:row5:col1 | — | not captured |
 | K a,2 (1/h) | `Q95` · t1/2ka | 0.795 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row6:col1 | — | not captured |
-| K a,3 (1/h) | `Q303` · k13 | 0.441 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row7:col1, Tab4:row7:col2 | — | not captured |
+| K a,3 (1/h) | `Q303` · k13 | 0.441 | 1/h | 0.0001225 | 1/h | not captured | llm (0.6) | Tab4:row7:col1, Tab4:row7:col2 | — | not captured |
 | V C/F (L) | `Q290` · V1/F | 715 | L | 0.715 | [l] | not captured | space_fold (0.95) | Tab4:row9:col1 | — | not captured |
-| Q P/F (L/h)d | `Q69` · Q/F | 412 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row10:col1 | — | not captured |
-| V P/F (L)d | `Q61` · V | 1650 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row11:col1 | — | not captured |
+| Q P/F (L/h)d | `Q69` · Q/F | 412 | L/h | 0.00011444444444444445 | L/h | not captured | llm (0.6) | Tab4:row10:col1 | — | not captured |
+| V P/F (L)d | `Q61` · V | 1650 | L | 1.6500000000000001 | L | not captured | llm (0.6) | Tab4:row11:col1 | — | not captured |
 | CL/F (L/h) | `Q27` · CL/F | 258 | L/h | 7.166666666666667e-05 | [l] / [h] | not captured | exact (1.0) | Tab4:row12:col1 | — | not captured |
 | B max,C (nmol/L) | `Q332` · Bmax | 4.97 | nmol/L | not captured | [nM] / [l] | not captured | llm (0.6) | Tab4:row14:col1 | — | not captured |
 | DPP_B max,C g | `Q32` · Cmax | 0.00332 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row15:col1 | — | not captured |
 | K d (nmol/L)d | `Q331` · KD | 0.0652 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row19:col1 | — | not captured |
+| Corr F_CL | `Q22` · CL | -0.765 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row23:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,6 +63,8 @@ Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacok
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'σ prop,phase 2a (%)h' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'σ prop,phase 2b (%)h' routed out of structural estimates ('Residual variability')
 - column 'description' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'F in study 4 (%)' — extend the ontology if this is a real PK parameter (source ['Tab4:row3:col1'])
 - dropped unlinked row (NIL): 'Weight_F b' — extend the ontology if this is a real PK parameter (source ['Tab4:row4:col1'])
@@ -70,8 +74,14 @@ Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacok
 - dropped unlinked row (NIL): 'Age_B max,C g' — extend the ontology if this is a real PK parameter (source ['Tab4:row17:col1'])
 - dropped duplicate Q32 ('Sex_B max,C e', value '0.457') — already have one for this compound
 - dropped unlinked row (NIL): 'A max,P/F (nmol)d' — extend the ontology if this is a real PK parameter (source ['Tab4:row20:col1'])
-- dropped duplicate Q27 ('Corr F_CL', value '-0.765') — already have one for this compound
 - dropped unlinked row (NIL): 'πF (CV %)' — extend the ontology if this is a real PK parameter (source ['Tab4:row28:col1'])
+- implicit units: 'K a,1 (1/h)' → 1/h (from the paper text: "Table 4 lists the parameter as 'K a,1 (1/h)' with value 0.933.")
+- implicit units: 'K a,2 (1/h)' — the LLM proposed '1/h', whose dimension does not fit Q95; left unset
+- implicit units: 'K a,3 (1/h)' → 1/h (from the paper text: "Table 4 lists the parameter as 'K a,3 (1/h)' with value 0.441.")
+- implicit units: 'Q P/F (L/h)d' → L/h (from the paper text: "Table 4 lists the parameter as 'Q P/F (L/h)d' with value 412.")
+- implicit units: 'V P/F (L)d' → L (from the paper text: "Table 4 lists the parameter as 'V P/F (L)d' with value 1,650.")
+- implicit units: 'DPP_B max,C g' — the LLM proposed 'nmol/L', whose dimension does not fit Q32; left unset
+- implicit units: 'K d (nmol/L)d' — the LLM proposed 'nmol/L', whose dimension does not fit Q331; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=linagliptin
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -89,20 +99,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.476 (10/21 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.409 (9/22 fields) | 13 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dose_b max,c g]` | not captured | 3.41 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[arelative bioavailability]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[corr f_cl]` | -0.765 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dpp_b max,c g]` | 0.00332 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f in study 4]` | not captured | 169 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ggt_cle,f]` | not captured | -0.0339 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k a,2]` | 0.795 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k a,3]` | 0.441 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q p/f (l/h)d].parameter_id` | Q69 | Q30 | mismatch |
 | `gpt-oss:120b` | `parameters[v p/f (l)d].parameter_id` | Q61 | Q82 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | linagliptin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | linagliptin | unknown | mismatch |
@@ -119,22 +131,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_sign_Q22 | fail | not captured | -0.765 | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row12:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row9:col1'] |
-| C5_unit_missing_Q303 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab4:row7:col1', 'Tab4:row7:col2'] |
+| C5_dimension_Q303 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row7:col1', 'Tab4:row7:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row5:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row11:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row10:col1'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row23:col1'] |
 | C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab4:row15:col1'] |
 | C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab4:row19:col1'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab4:row5:col1'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row11:col1'] |
-| C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row10:col1'] |
 | C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['Tab4:row6:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 258 L/h | not captured | not captured | ['Tab4:row12:col1'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 715 L | not captured | not captured | ['Tab4:row9:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.65e+03 L | not captured | not captured | ['Tab4:row11:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -148,19 +163,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -169,4 +174,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 08:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:17 UTC</sub>

@@ -7,6 +7,12 @@
 - **DrugBank:** [DB13529](https://go.drugbank.com/drugs/DB13529) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+Calcium dobesilate is a vasoprotective drug that has been used to treat vein problems such as varicose veins and related circulatory disorders. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5018825](https://www.wikidata.org/wiki/Q5018825) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

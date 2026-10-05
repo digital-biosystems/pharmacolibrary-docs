@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Zinc chloride is a solution of ions indicated for use in total parenteral nutrition to maintain zinc levels and prevent deficiency syndromes.[L14189]
+Zinc chloride is a zinc compound used as an additive in electrolyte solutions given intravenously, and has also been used as a mouthwash and for the common cold. It is an approved ingredient used in various preparations, mainly as a solution additive rather than a standalone medicine.
 
-Zinc chloride was granted FDA approval before 26 June 1986.[L14189]
-
-**Indication.** Zinc chloride injections are indicated for use total parenteral nutrition to maintain zinc serum levels and prevent deficiency syndromes.[L14189]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q204714](https://www.wikidata.org/wiki/Q204714) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -42,10 +40,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Zinc is approximately 33% orally bioavailable in humans…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder, `ORM2` binder | DrugBank actor |
-| excretion | bile duct | <sub>“…Zinc is predominantly eliminated in the feces…”</sub> | prose |
-| excretion | small intestine | <sub>“…Gastrointestinal elimination of zinc is responsible for approximately half of all zinc eli…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: A2M (target), ADH1C (target), AHSG (chelator), ALDOA (target), APLP1 (target), APLP2 (target), APOA1 (inducer), APOA1 (target), APOB (target), APOBEC1 (chelator), APOBEC1 (cofactor), APOBR (inducer), APOE (target), APOL1 (inhibitor), APP (target), ASPA (cofactor), BDKRB1 (target), BRCC3 (cofactor), C1QB (modulator), C1QC (modulator), C1R (modulator), C1S (modulator), C3 (inhibitor), C3 (target), C4B (modulator), C4BPA (modulator), C4BPB (modulator), C5 (target), CA2 (cofactor), CCS (cofactor), CFH (target), CLU (inducer), CP (target), CPE (inhibitor), CPE (target), CPN1 (cofactor), CPN2 (cofactor), DCD (stabilization), EEF1A1 (binder), ENO1 (binder), ESR1 (binder), F11 (activator), FGA (binder), FN1 (modulator), FN1 (target), GAPDHS (binder), GLRA1 (inhibitor), HBA1 (inducer), HBB (inducer), HDAC1 (cofactor), HDAC4 (cofactor), HDAC8 (cofactor), HP (binder), HPX (target), HRG (cofactor), IDE (cofactor), IGFALS (inducer), IL3 (binder), INS (stabilization), ITIH1 (binder), ITIH2 (binder), ITIH3 (binder), ITIH4 (binder), JCHAIN (component of), KLKB1 (inhibitor), KNG1 (cofactor), KRT9 (target), MDM2 (binder), MGMT (stabilization), MMP9 (binder), MPG (cofactor), MT1A (binder), MT2A (cofactor), MT3 (cofactor), NME1 (inhibitor), P4HB (binder), PARP1 (component of), PDIA3 (binder), PGLYRP2 (binder), PON1 (inducer), PRDX1 (binder), PSPH (binder), PZP (binder), S100A2 (inactivator), S100A2 (regulator), S100A7 (binder), S100A8 (regulator), S100A9 (regulator), SELENOP (binder), SEMG1 (cofactor), SEMG2 (cofactor), SERPINA1 (target), SERPINA3 (binder), SERPINA6 (modulator), SERPIND1 (target), SHBG (modulator), SIVA1 (binder), SLC30A1 (substrate), SLC30A10 (substrate), SLC30A2 (substrate), SLC30A3 (substrate), SLC30A4 (substrate), SLC30A5 (substrate), SLC30A6 (substrate), SLC30A7 (substrate), SLC30A8 (substrate), SLC30A9 (substrate), SLC39A1 (substrate), SLC39A10 (substrate), SLC39A11 (substrate), SLC39A12 (substrate), SLC39A13 (substrate), SLC39A14 (substrate), SLC39A2 (substrate), SLC39A3 (substrate), SLC39A4 (substrate), SLC39A5 (substrate), SLC39A6 (substrate), SLC39A7 (substrate), SLC39A8 (substrate), SLC39A9 (substrate), SOD1 (cofactor), TF (target), TP53 (chaperone), TP73 (chaperone), TPI1 (binder), TTR (inducer), TUFM (cofactor), UTRN (cofactor), VTN (inducer).</sub>
 

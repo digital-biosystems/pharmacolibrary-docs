@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A thiazide diuretic with actions and uses similar to those of hydrochlorothiazide. It has been used in the treatment of familial hyperkalemia, hypertension, edema, and urinary tract disorders. (From Martindale, The Extra Pharmacopoeia, 30th ed, p810)
+Bendroflumethiazide is a thiazide diuretic used to treat high blood pressure, heart failure, and fluid build-up such as in nephrotic syndrome. It is an approved prescription medicine, given by mouth, and has been widely used, especially in the United Kingdom.
 
-**Indication.** For the treatment of high blood pressure and management of edema related to heart failure.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1169164](https://www.wikidata.org/wiki/Q1169164) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -44,7 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorbed relatively rapidly after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | blood | `TPMT` inhibitor | DrugBank actor |
 | metabolism | liver | `TPMT` inhibitor | DrugBank actor |
 

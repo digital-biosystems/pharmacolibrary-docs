@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** An antimetabolite antineoplastic agent with immunosuppressant properties. It interferes with nucleic acid synthesis by inhibiting purine metabolism and is used, usually in combination with other drugs, in the treatment of or in remission maintenance programs for leukemia.
+Mercaptopurine is an antimetabolite anticancer drug used to treat lymphoid leukemias and related cancers such as lymphosarcoma. It is an approved medicine, listed among WHO essential medicines, and is authorised in the European Union for lymphoid leukemia.
 
-**Indication.** For remission induction and maintenance therapy of acute lymphatic leukemia.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418529](https://www.wikidata.org/wiki/Q418529) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

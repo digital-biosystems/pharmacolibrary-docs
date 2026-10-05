@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Valoctocogene roxaparvovec is an adeno-associated virus serotype 5 (AAV5) based gene therapy vector that expresses the B-domain deleted SQ form of human coagulation factor VIII (hFVIII-SQ).[L43282] The expression of hFVIII-SQ is driven by a liver-specific promoter, which enables hepatocytes to produce factor VIII protein and increase the levels of active factor VIII in blood.[L43282,A252807] Valoctocogene roxaparvovec was approved by EMA in September 2022 and is indicated for the treatment of severe hemophilia A. It is not approved for use in the United States.[L43292] Hemophilia A treatments such as prophylactic regimens of exogenous factor VIII or [emicizumab] improve the clinical outcomes of patients but do not eliminate breakthrough bleeding.[A252797] As opposed to these therapies, valoctocogene roxaparvovec offers the advantage of continuous and measurable steady-state levels of coagulation factor VIII.[A252807]
+Valoctocogene roxaparvovec is a gene therapy used to treat hemophilia A. It is authorised in the European Union as a gene-therapy medicine.
 
-**Indication.** Valoctocogene roxaparvovec is indicated for the treatment of severe hemophilia A (congenital factor VIII deficiency) in adult patients without a history of factor VIII inhibitors and without detectable antibodies to adeno-associated virus serotype 5 (AAV5).[L43282]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q107391591](https://www.wikidata.org/wiki/Q107391591) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -37,11 +37,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | bile duct | <sub>“…Blood, saliva, semen, stool, and urine showed the highest vector DNA concentrations…”</sub> | prose |
-| absorption | blood | <sub>“…Vector DNA was detected in blood and shedding matrices…”</sub> | prose |
-| absorption | kidney | <sub>“…Blood, saliva, semen, stool, and urine showed the highest vector DNA concentrations…”</sub> | prose |
-| excretion | bile duct | <sub>“…and feces (84% of patients)…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated through urine…”</sub> | prose |
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: Coagulation factor VIII (F8) (gene replacement).</sub>
 

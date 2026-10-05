@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Paromomycin_Verrest2023_reference",
+ "molar_masses": {
+  "central.C": 0.6156285
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1400.0,
+  7000.0,
+  10500.0
+ ],
+ "parameters": {
+  "Cl": 7.277777777777778e-07,
+  "F": 0.9,
+  "MM": 0.6156285,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00019428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0014,
+  "k12": 5.31045751633987e-06,
+  "k21": 3.253253253253253e-05,
+  "ka": 0.0005694444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3801.7512739020312
+ },
+ "reference_peaks": {
+  "central.C": 0.046938603050277056
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

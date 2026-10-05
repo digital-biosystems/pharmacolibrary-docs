@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Antiarrhythmic agent pharmacologically similar to lidocaine. It may have some anticonvulsant properties.
+Mexiletine is an antiarrhythmic (class Ib) drug used for heart rhythm problems such as ventricular fibrillation, and also for diabetic nerve pain and myotonic disorders. It remains in use, with one product authorised in the European Union, where it is indicated for myotonic disorders.
 
-**Indication.** For the treatment of ventricular tachycardia and symptomatic premature ventricular beats, and prevention of ventricular fibrillation.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420377](https://www.wikidata.org/wiki/Q420377) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -59,11 +59,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Well absorbed (bioavailability 90%) from the gastrointenstinal tract.…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/metabolism/substrate, `CYP2B6` substrate, `CYP2C19` metabolism, `CYP2D6` metabolism/substrate, `CYP2E1` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Approximately 10% is excreted unchanged by the kidney…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AHR (target), SCN5A (inhibitor), SCN5A (target).</sub>
 

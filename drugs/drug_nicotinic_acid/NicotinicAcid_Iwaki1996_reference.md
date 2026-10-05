@@ -18,9 +18,9 @@
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**This paper's disposition core is incomplete.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nicotinic acid: fu 40 %, V 1 L kg−1, kabs 0.1 min−1.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Leander_2015) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nicotinic acid: fu 40 %, V 1 L kg−1, kabs 0.1 min−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has nicotinic acid → nicotinuric acid (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

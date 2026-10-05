@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Pramocaine (also known as pramoxine or pramoxine HCI) is a topical anesthetic and antipruritic. It is used for many dermatological and anorectal/anogenital conditions including minor cuts/burns, insect bites, hives/rashes due to poison ivy exposure, hemorrhoids and other anorectal/anogenital disorders.  Pramocaine is available by itself and in combination with other medications in various topical preparations. It works by preventing ionic fluctuations needed for neuron membrane depolarization and action potential propagation.
+Pramocaine is a topical local anesthetic used to relieve pain and itching from hemorrhoids, contact dermatitis, and other minor skin conditions. It is an approved drug, used mainly in topical preparations for hemorrhoids and skin itching.
 
-**Indication.** It is indicated for  temporary relief of pain and pruritus from minor lip and skin irritations as well as for temporary relief from pain, burning, itching and discomfort associated with hemorrhoids and other anorectal/anogenital disorders.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1240076](https://www.wikidata.org/wiki/Q1240076) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

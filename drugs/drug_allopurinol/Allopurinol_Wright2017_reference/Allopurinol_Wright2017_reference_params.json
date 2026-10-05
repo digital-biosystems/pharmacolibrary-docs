@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Allopurinol_Wright2017_reference",
+ "molar_masses": {
+  "C_central": 0.152113
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0,
+  200.0,
+  300.0,
+  400.0
+ ],
+ "parameters": {
+  "Cl": 3.333333333333333e-07,
+  "F": 1.0,
+  "MM": 0.152113,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006957142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00026138888888888886,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "C_central": 14704.538337150496
+ },
+ "reference_peaks": {
+  "C_central": 0.0018617451870504456
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

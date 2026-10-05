@@ -11,11 +11,9 @@
 
 ## About
 
-**Description.** Voxelotor is a novel hemoglobin S polymerization inhibitor for the treatment of sickle cell disease. This is a genetically inherited condition most prevalent in the Middle East, Africa, and certain parts of India. Sickle cell disease can lead to excruciating pain, stroke, infection, and various other complications arising from the blockage of blood vessels.[T734]
+Voxelotor is a hematological drug developed for the treatment of sickle cell anemia. Its marketing in the European Union has been suspended, so it is no longer available there.
 
-Voxelotor was granted accelerated FDA approval on November 25 2019, as it is likely to be a promising treatment for the 100,000 individuals in the U.S. suffering from the disease, in addition to 20 million others worldwide.[L10403] It was developed by Global Blood Therapeutics, Inc.[L10403] and is unique from other drugs used to treat sickle cell anemia, such as [hydroxyurea], [L-glutamine], and [crizanlizumab][A188135,A188138] due to its novel mechanism of action. The EMA approved the use of voxelotor for the treatment of hemolytic anemia associated with sickle cell disease in February 2022.[L41419,L41424]
-
-**Indication.** In the US, voxelotor is indicated to treat sickle cell disease in both adult and pediatric patients aged 4 years and older.[L10397] In Europe, it is indicated for the treatment of hemolytic anemia due to sickle cell disease (SCD) in adults and pediatric patients 12 years of age and older as monotherapy or in combination with [hydroxyurea].[L41419]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q60761545](https://www.wikidata.org/wiki/Q60761545) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -43,11 +41,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood | — | prose |
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…About 62.6% of the oral dose is found in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…About 35.5% of the dose is recovered in urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HBA1 (binder).</sub>
 

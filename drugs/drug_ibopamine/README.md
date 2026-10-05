@@ -8,6 +8,12 @@
 - **molar mass:** 307.3847 g/mol (C17H25NO4) — DrugBank
 - **groups:** experimental
 
+## About
+
+Ibopamine is a dopamine agonist that has been used as a cardiotonic agent for heart conditions and as a mydriatic eye drop to dilate the pupil. It is currently considered an experimental drug and does not appear to have an authorised marketing status in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5984366](https://www.wikidata.org/wiki/Q5984366) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

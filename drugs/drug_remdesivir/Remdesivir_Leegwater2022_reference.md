@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Leegwater2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,20 +19,18 @@
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remdesivir: CL 152 L/h, CLR 20.7 L/h, V 834 L.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remdesivir: CL 152 L/h, CLR 20.7 L/h, V 834 L; GS-441524: CL 20.7 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:31.460504+00:00) predates the upstream re-run (2026-10-03 10:48:22.486460+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Leegwater E et al., Population Pharmacokinetics of Remdesiv…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.00254-22](https://doi.org/10.1128/aac.00254-22)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="true" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="false" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

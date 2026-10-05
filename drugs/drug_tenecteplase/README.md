@@ -9,9 +9,9 @@
 
 ## About
 
-**Description.** Tenecteplase is a tissue plasminogen activator (tPA) developed from modifications of natural human tPA complementary DNA (cDNA). It is a 527 amino acid with a substitution of threonine 103 with asparagine and substitution of asparagine 117 with glutamine within the kringle 1 domain, and a tetra-alanine substitution at amino acids 296-299 in the protease domain.
+Tenecteplase is a fibrinolytic (clot-dissolving) drug used to treat acute myocardial infarction, and has also been used for coronary thrombosis and ischemic stroke. It is an approved medicine, authorised in the European Union, and is widely used as a thrombolytic, mainly in hospital settings for heart attacks.
 
-**Indication.** Tenecteplase is indicated for the treatment of acute ischemic stroke (AIS) in adult patients and to reduce the risk of death in adult patients following acute ST-elevated myocardial infarction (STEMI).[L54918,L54923]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q1644947](https://www.wikidata.org/wiki/Q1644947) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

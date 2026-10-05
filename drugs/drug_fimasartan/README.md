@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Fimasartan is an angiotensin II receptor antagonist (ARB) drug employed in the treatment of both hypertension and heart failure. It has been found to be safe when administered with hydrochlorothiazide (a diuretic) in clinical trials. Fimasartan was initially approved September 9th, 2010 in South Korea and is marketed under the brand name _Kanarb_ by Boryung Pharmaceuticals.
+Fimasartan is an angiotensin II receptor blocker developed for the treatment of high blood pressure (essential hypertension). It is considered investigational in major drug databases and is not authorised in the European Union; it is used mainly in a few Asian countries such as South Korea.
 
-**Indication.** Used for the treatment of hypertension and heart failure [A20319].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q8563179](https://www.wikidata.org/wiki/Q8563179) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
 | metabolism | liver | `SLCO1B1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Most is eliminated unchangd in bile…”</sub> | prose |
-| excretion | kidney | <sub>“…less than 3% in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: AGTR1 (target).</sub>
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ticlopidine is an effective inhibitor of platelet aggregation. It is a prodrug that is metabolised to an active form, which blocks the ADP receptor that is involved in GPIIb/IIIa receptor activation leading to platelet aggregation. Ticlopidine is marketed under the brand name Ticlid and is indicated for patients who cannot take aspirin or in whom aspirin has not worked to prevent a thrombotic stroke. The FDA label includes a black-box warning of neutropenia, aplastic anemia, thrombotic thrombocytopenia purpura, and agranulocytosis, so it is necessary to monitor patients' WBC and platelets when they are taking ticlopidine.
+Ticlopidine is an antiplatelet drug that inhibits platelet aggregation and is used to prevent blood clots. It is an approved medicine, though it has largely been replaced by newer antiplatelet agents in routine practice.
 
-**Indication.** Used in patients, who have had a stroke or stroke precursors and who cannot take aspirin or aspirin has not worked, to try to prevent another thrombotic stroke.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420571](https://www.wikidata.org/wiki/Q420571) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -24,7 +24,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_nonmem](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_nonmem](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_sir_resultsa](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
 
 ## Pharmacogenomics (PGx)
@@ -46,11 +46,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Absorption is greater than 80%…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2C19` formation/inhibitor/substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…somewhat in the feces (23%)…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated mostly in the urine (60%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: MPO (substrate), P2RY12 (target), PTAFR (modulator).</sub>
 

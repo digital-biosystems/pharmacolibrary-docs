@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Shah1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,13 +27,11 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:17.543181+00:00) predates the upstream re-run (2026-10-03 10:03:44.651323+00:00). Current validate status: `needs_review`.
-
 ## Citation
 Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Shah1990_reference" status="needs_review" stale="true" population="male Sprague-Dawley rats" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Shah1990_reference" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

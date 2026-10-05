@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A vitamin-like antioxidant.
+Thioctic acid (alpha-lipoic acid) is used for conditions of the alimentary tract and metabolism, and is also taken as a dietary supplement. It is approved and widely available, being marketed both as a medicine and as a nutraceutical supplement.
 
-**Indication.** For nutritional supplementation, also for treating dietary shortage or imbalance.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27887203](https://www.wikidata.org/wiki/Q27887203) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

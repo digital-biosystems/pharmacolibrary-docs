@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;tianeptine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intraperitoneal_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_estimate&quot;,&quot;label&quot;:&quot;Szafarz_2018_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intraperitoneal_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tianeptine
 
@@ -11,24 +11,22 @@
 
 ## About
 
-**Description.** Tianeptine is a drug used primarily in the treatment of major depressive disorder and has been studied in the treatment of irritable bowel syndrome (IBS) [A31983]. Structurally, it is classified as a tricyclic antidepressant (TCA), however, it possesses different pharmacological properties than typical tricyclic antidepressants [A31969].
+Tianeptine is a tricyclic antidepressant used to treat depression. It is not approved in the United States, where it remains investigational, though it has been used as an antidepressant in some other countries.
 
-Tianeptine was discovered and patented by The French Society of Medical Research in the 1960s [L2946]. Currently, tianeptine is approved in France and manufactured and marketed by Laboratories Servier SA; it is also marketed in several other European countries under the trade name “Coaxil” as well as in Asia (including Singapore) and Latin America as “Stablon” and “Tatinol” but it is not available in Australia, Canada, New Zealand, the U.K. or the U.S.
-
-**Indication.** Used primarily in the treatment of major depressive disorder and anxiety [A31969]. It is currently being studied for fibromyalgia pain treatment [L1426].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424260](https://www.wikidata.org/wiki/Q424260) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-24 04:57 | 4:31 | 0/2/2 | 0/0/0 | 0/0/0 | 60,883/12,301 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-24 04:57 | 4:31 | 0/3/1 | 0/0/0 | 0/0/0 | 60,883/12,301 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Grasela_1993_reference](drugs/drug_tianeptine/Tianeptine_Grasela1993_reference.md) | — | 2-compartment (no model) | 5 | Grasela TH et al., Development of a population pharmacokin…, European journal of clinica… (1993) | [10.1007/BF00315502](https://doi.org/10.1007/BF00315502) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Szafarz_2018_estimate](drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate.md) | — | parent + metabolite (no model) | 6 (+1 cov.) | Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeberg's archi… (2018) | [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `engineer`</sub> | [Szafarz_2018_estimate](drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate.md) | ▶ model + simulator | 1-compartment, IV | 6 (+1 cov.) | Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeberg's archi… (2018) | [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `engineer`</sub> | [Szafarz_2018_intraperitoneal_10_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md) | ▶ model + simulator | 1-compartment, oral | 7 | Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeberg's archi… (2018) | [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `engineer`</sub> | [Szafarz_2018_intravenous_1_mg_kg](drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md) | ▶ model + simulator | 1-compartment, oral | 8 | Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeberg's archi… (2018) | [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2) |
 
@@ -40,7 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Eliminated with bile as glucuronide and glutamine conjugates…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 
@@ -56,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

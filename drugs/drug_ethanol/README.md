@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A clear, colorless liquid rapidly absorbed from the gastrointestinal tract and distributed throughout the body. It has bactericidal activity and is used often as a topical disinfectant. It is widely used as a solvent and preservative in pharmaceutical preparations as well as serving as the primary ingredient in alcoholic beverages.
+Ethanol is used as an antiseptic and disinfectant for the skin, and as an antidote, for example in poisoning by toxic alcohols. It is widely used, mainly in topical antiseptic products, and is also approved for other therapeutic uses.
 
-**Indication.** For therapeutic neurolysis of nerves or ganglia for the relief of intractable chronic pain in such conditions as inoperable cancer and trigeminal neuralgia (tic douloureux), in patients for whom neurosurgical procedures are contraindicated.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q153](https://www.wikidata.org/wiki/Q153) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

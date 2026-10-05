@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Celiprolol is indicated for the management of mild to moderate hypertension and effort-induced angina pectoris. It is simultaneously a selective β1 receptor antagonist, a β2 receptor partial agonist and a weak α2 receptor antagonist. In 2010 a clinical trial has suggested a use for this medication in the prevention of vascular complications of a rare inherited disease called vascular Ehlers–Danlos syndrome. This study demonstrated decreased incidence of arterial rupture or dissection (a specific type of arterial rupture in which the layers of the vessel separate prior to complete failure of the artery wall). Celiprolol is not approved for use by the FDA in the treatment of vascular Ehlers–Danlos syndrome.
+Celiprolol is a selective beta blocker used to treat high blood pressure and heart rhythm problems. It has been withdrawn from the market and is no longer in general use.
 
-**Indication.** Celiprolol is indicated for the management of mild to moderate hypertension and effort-induced angina pectoris.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q420586](https://www.wikidata.org/wiki/Q420586) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

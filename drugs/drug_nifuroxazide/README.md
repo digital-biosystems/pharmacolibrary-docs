@@ -8,34 +8,21 @@
 - **molar mass:** 275.22 g/mol (C12H9N3O5) — DrugBank
 - **groups:** investigational
 
+## About
+
+Nifuroxazide is an intestinal anti-infective that has been used to treat diarrhoea. It is not authorised in the European Union and is considered investigational in major drug databases, though it remains available in some countries as an antidiarrhoeal.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q822929](https://www.wikidata.org/wiki/Q822929) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 01:45 | 4:39 | 0/0/0 | 2/0/0 | 0/0/0 | 160,015/3,700 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/6 | 3/0 | 0 |
+| 2026-10-04 18:18 | 1:08 | 0/0/0 | 0/0/0 | 0/0/0 | 52,016/631 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/6 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Li_2023_CCK8_absorbance](drugs/drug_nifuroxazide/pd_Li_2023_CCK8_absorbance.md) | cell proliferation ← nifuroxazide · inhibition effect | — | Li C et al., Nifuroxazide Activates the Parthanatos…, Molecular cancer therapeuti… (2023) | [10.1158/1535-7163.MCT-22-0159](https://doi.org/10.1158/1535-7163.MCT-22-0159) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Li_2023_Co_IP_signal](drugs/drug_nifuroxazide/pd_Li_2023_Co_IP_signal.md) | ERG-PARP1 interaction ← nifuroxazide · inhibition effect | — | Li C et al., Nifuroxazide Activates the Parthanatos…, Molecular cancer therapeuti… (2023) | [10.1158/1535-7163.MCT-22-0159](https://doi.org/10.1158/1535-7163.MCT-22-0159) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Li_2023_IC50](drugs/drug_nifuroxazide/pd_Li_2023_IC50.md) | cell proliferation ← nifuroxazide · inhibition effect | — | Li C et al., Nifuroxazide Activates the Parthanatos…, Molecular cancer therapeuti… (2023) | [10.1158/1535-7163.MCT-22-0159](https://doi.org/10.1158/1535-7163.MCT-22-0159) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Li_2023_Western_blot_intensity](drugs/drug_nifuroxazide/pd_Li_2023_Western_blot_intensity.md) | PARP1 cleavage ← nifuroxazide · inhibition effect | — | Li C et al., Nifuroxazide Activates the Parthanatos…, Molecular cancer therapeuti… (2023) | [10.1158/1535-7163.MCT-22-0159](https://doi.org/10.1158/1535-7163.MCT-22-0159) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Li_2023_plasma_level](drugs/drug_nifuroxazide/pd_Li_2023_plasma_level.md) | AST ← nifuroxazide · inhibition effect | — | Li C et al., Nifuroxazide Activates the Parthanatos…, Molecular cancer therapeuti… (2023) | [10.1158/1535-7163.MCT-22-0159](https://doi.org/10.1158/1535-7163.MCT-22-0159) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Li_2023_relative_volume](drugs/drug_nifuroxazide/pd_Li_2023_relative_volume.md) | tumor volume ← nifuroxazide · inhibition effect | — | Li C et al., Nifuroxazide Activates the Parthanatos…, Molecular cancer therapeuti… (2023) | [10.1158/1535-7163.MCT-22-0159](https://doi.org/10.1158/1535-7163.MCT-22-0159) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_adult_worm_viability](drugs/drug_nifuroxazide/pd_Roquini_2023_adult_worm_viability.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_egg_burden_reduction](drugs/drug_nifuroxazide/pd_Roquini_2023_egg_burden_reduction.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_egg_output](drugs/drug_nifuroxazide/pd_Roquini_2023_egg_output.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_fecal_egg_burden](drugs/drug_nifuroxazide/pd_Roquini_2023_fecal_egg_burden.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_intestinal_egg_burden](drugs/drug_nifuroxazide/pd_Roquini_2023_intestinal_egg_burden.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_worm_burden](drugs/drug_nifuroxazide/pd_Roquini_2023_worm_burden.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_worm_burden_reduction](drugs/drug_nifuroxazide/pd_Roquini_2023_worm_burden_reduction.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Roquini_2023_worm_mortality](drugs/drug_nifuroxazide/pd_Roquini_2023_worm_mortality.md) | name ← nifuroxazide · inhibition effect | — | Roquini V et al., The Existing Drug Nifuroxazide as an An…, Microbiology spectrum (2023) | [10.1128/spectrum.01393-23](https://doi.org/10.1128/spectrum.01393-23) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -52,13 +39,14 @@ _not available_
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Saber_2022.pdf` | Saber S et al., Nifuroxazide-loaded cubosomes exhibit a…, Biomedicine & pharmacothera… (2022) | popPK | 8 | [10.1016/j.biopha.2022.112731](https://doi.org/10.1016/j.biopha.2022.112731) | [35220029](https://pubmed.ncbi.nlm.nih.gov/35220029) | The study reports in vivo pharmacokinetic parameters for nifuroxazide in rats, but specific numeric values (CL, V, etc.) are not present in the provided abstract text. |
 | `Hayder_2008.pdf` | Hayder N et al., In vitro antioxidant and antigenotoxic…, Toxicology in vitro : an in… (2008) | pd | 4 | [10.1016/j.tiv.2007.11.015](https://doi.org/10.1016/j.tiv.2007.11.015) | [18222061](https://www.ncbi.nlm.nih.gov/pubmed/18222061) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-22T01:44:06.450367+00:00</sub>
+<sub>queue written 2026-10-04T18:17:59.563692+00:00</sub>
 
 ## Screened and excluded
 
@@ -72,13 +60,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Bouhlel_2007 | not_relevant | 0 | 0 | The paper investigates the antimutagenic and antioxidant effects of plant extracts on nifuroxazide-induced genotoxicity, not the pharmacodynamic or exposure-response relationship of nifuroxazide itself. |
 | popPK | Cedillo-Rivera_1992 | irrelevant | 0 | 0 | The paper is an in-vitro susceptibility study of Giardia lamblia, not a pharmacokinetic study, and nifuroxazide is only tested for anti-parasitic activity. |
 | PD | Cedillo-Rivera_1992 | not_relevant | 3 | 2 | The paper reports only a qualitative description of "modest" activity for nifuroxazide without providing specific numeric PD parameters like IC50 or Emax. |
-| popPK | Ceruti_2022 | relevant | 4 | 2 | The study reports raw concentration-time data and a qualitative half-life estimate (40 min) for nifuroxazide in mice, but lacks formal compartmental PK parameters (CL, V, Q) or population modeling. |
+| popPK | Ceruti_2022 | irrelevant | 4 | 2 | The study reports raw concentration-time data and a qualitative half-life estimate (40 min) in mice, but lacks formal compartmental PK parameters (CL, V, Q) or a population PK model. |
 | popPK | Cevik_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro antimicrobial activity of nifuroxazide analogs, containing no pharmacokinetic data. |
 | PD | Cevik_2017 | not_relevant | 2 | 2 | The paper reports single-point MIC90 and IC50 values for antimicrobial and cytotoxic effects, but does not provide a concentration-effect curve, dose-response model, or PK/PD analysis for nifuroxazide. |
 | popPK | Delgado-Maldonado_2025 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study evaluating the antiparasitic and antimicrobial activity of nifuroxazide derivatives, reporting IC50 and MIC values rather than pharmacokinetic parameters. |
 | PD | Delgado-Maldonado_2025 | not_relevant | 3 | 3 | The paper reports in vitro IC50 and MIC values for a series of compounds, which are single-point potency metrics rather than a pharmacodynamic (exposure-response) model or curve for the specific drug nifuroxazide. |
 | popPK | Elloumi-Mseddi_2019 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assessment of nifuroxazide on cancer cells and does not report any pharmacokinetic parameters. |
-| popPK | Glupczynski_1988 | irrelevant | 0 | 0 | The paper is a clinical efficacy study on antibiotic eradication of C. pylori and contains no pharmacokinetic parameters for nifuroxazide. |
+| popPK | Glupczynski_1988 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of nifuroxazide for eradicating Campylobacter pylori, not a pharmacokinetic study, and contains no PK parameters. |
 | popPK | Hayder_2008 | irrelevant | 0 | 0 | no_text gate: only 217 chars of text extracted (&lt; 400) |
 | PD | Hayder_2008 | not_relevant | 0 | 0 | The paper studies myricetin derivatives from Myrtus communis, not nifuroxazide. |
 | popPK | Kampert_2017 | irrelevant | 0 | 0 | The paper is a mechanistic study on nanoparticle delivery and combinatorial therapy where nifuroxazide is a co-administered agent, not the subject of a pharmacokinetic analysis. |
@@ -90,11 +78,11 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Palace-Berl_2013 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on anti-Trypanosoma cruzi derivatives and does not report pharmacokinetic parameters for nifuroxazide. |
 | PD | Palace-Berl_2013 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel 5-nitro-2-furfuriliden derivatives and compares them to nifurtimox, but does not report any pharmacodynamic or exposure-response relationship for nifuroxazide. |
 | popPK | Palace-Berl_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study reporting in-vitro anti-trypanocidal activity (IC50) and does not contain any pharmacokinetic parameters for nifuroxazide. |
-| popPK | Roquini_2023 | irrelevant | 0 | 0 | The paper is an in vitro and in vivo efficacy study of nifuroxazide against schistosomes and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
+| popPK | Roquini_2023 | irrelevant | 0 | 0 | The study focuses on the antischistosomal efficacy and mechanism of action of nifuroxazide, reporting only general pharmacokinetic facts (e.g., Cmax time, bioavailability) without providing quantitative disposition parameters (CL, V, ka) or a PK model. |
 | popPK | S_2026 | irrelevant | 0 | 0 | The paper is a study on the synthesis, structural characterization, and in-vitro biological activity of metal complexes, containing no pharmacokinetic data for nifuroxazide. |
 | PD | S_2026 | not_relevant | 0 | 0 | The paper reports in vitro antimicrobial and anti-inflammatory assays (IC50, inhibition zones) for metal complexes, but does not report a pharmacokinetic/pharmacodynamic (PK/PD) model, exposure-response relationship, or dose-response curve for nifuroxazide itself. |
-| popPK | Saber_2022 | irrelevant | 2 | 0 | The study reports relative bioavailability and tissue accumulation ratios but does not provide specific quantitative pharmacokinetic parameters (e.g., CL, V, ka, t1/2) for nifuroxazide. |
-| popPK | Tod_1998 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of amikacin, not nifuroxazide. |
+| popPK | Saber_2022 | relevant | 8 | 2 | The study reports in vivo pharmacokinetic parameters for nifuroxazide in rats, but specific numeric values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Tod_1998 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for amikacin, not nifuroxazide. |
 | PD | Tod_1998 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) study of amikacin, not nifuroxazide, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Wei_2021 | irrelevant | 0 | 0 | The study focuses on the immunomodulatory effects of vincristine and uses nifuroxazide only as a mechanistic STAT3 inhibitor in in-vitro assays, reporting no pharmacokinetic parameters. |
 | PD | Wei_2021 | not_relevant | 1 | 0 | The paper mentions nifuroxazide only as a qualitative inhibitor of p-STAT3/PD-L1 expression without providing any numeric concentration-effect data, IC50, or dose-response parameters for nifuroxazide. |

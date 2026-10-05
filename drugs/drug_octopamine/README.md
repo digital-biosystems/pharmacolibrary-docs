@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Octopamine is structurally similar to norepinephrine. It has been used as a nootropic, and therefore it and all of its enantiomer are prohibited by the World Anti-doping Agency (WADA) as of 2014.
+Octopamine is a phenethylamine alkaloid that acts as a neurotransmitter and an alpha-adrenergic agonist with vasoconstrictor effects, and it has been classified as a cardiac stimulant among adrenergic agents. It remains an experimental drug and is not an established approved medicine in human therapy.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q424979](https://www.wikidata.org/wiki/Q424979) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

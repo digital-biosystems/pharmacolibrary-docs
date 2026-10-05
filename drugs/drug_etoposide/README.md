@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A semisynthetic derivative of podophyllotoxin that exhibits antitumor activity. Etoposide inhibits DNA synthesis by forming a complex with topoisomerase II and DNA. This complex induces breaks in double stranded DNA and prevents repair by topoisomerase II binding. Accumulated breaks in DNA prevent entry into the mitotic phase of cell division, and lead to cell death. Etoposide acts primarily in the G2 and S phases of the cell cycle.
+Etoposide is a chemotherapy drug used to treat many cancers, including testicular cancer, lung small cell carcinoma, lymphomas, leukemias, and several other tumors. It is an approved medicine and appears on the WHO essential medicines list, so it is widely used in cancer care, though it carries a boxed warning.
 
-**Indication.** For use in combination with other chemotherapeutic agents in the treatment of refractory testicular tumors and as first line treatment in patients with small cell lung cancer. Also used to treat other malignancies such as lymphoma, non-lymphocytic leukemia, and glioblastoma multiforme.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418817](https://www.wikidata.org/wiki/Q418817) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -47,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` substrate, `CYP2E1` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `GSTP1` substrate, `GSTT1` substrate, `UGT1A1` substrate | DrugBank actor |
 | metabolism | lung | `GSTP1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Biliary excretion of unchanged drug and/or metabolites is an important route of etoposide…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |

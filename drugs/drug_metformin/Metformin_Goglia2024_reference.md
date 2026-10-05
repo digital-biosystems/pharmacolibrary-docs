@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Goglia2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q364: this record has none, the second reading 50; it also differs on 2 more fields. That field does not shape the model.
+**The clearance plausibility check could not be computed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — metformin: CL 500 mL/min, V 216 L.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q364: this record has none, the second reading 500; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Goglia U et al., Ianus Bifrons: The Two Faces of Metform…, Cancers (2024)
@@ -59,14 +63,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q364]` | not captured | 50 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q54]` | not captured | 1000 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 500 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q46]` | not captured | 425 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q54]` | not captured | 850 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q83]` | not captured | 1.5 | only_one_extracted |
 
 </details>

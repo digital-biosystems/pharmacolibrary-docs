@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Severe acute pain occurs through nociceptive signalling involving both ascending and descending spinal pathways, in which nerve conductance is mediated in part by the action of opioid receptors.[A218041, A218046] Opioid receptors are seven-transmembrane G-protein-coupled receptors (GPCRs), of which the μ-opioid receptor subtype is predominantly targeted by and is responsible for the effects of opioid agonists.[A218031, A218046] However, due to the ability of some opioid agonists to bind to other targets, as well as activation of additional downstream pathways from opioid receptors such as those involving β-arrestin, the beneficial analgesic effects of opioids are coupled with severe adverse effects such as constipation and respiratory depression.[A218026, A218031, A218036, A218041, A218046]
+Oliceridine is an opioid painkiller (analgesic) used to treat pain. It is an approved medicine, but not authorised in the European Union, and carries a boxed warning.
 
-Oliceridine (formerly known as TRV130) is a "biased agonist" at the μ-opioid receptor by preferentially activating the G-protein pathway with minimal receptor phosphorylation and recruitment of β-arrestin.[A218026, A218031] By acting as a biased agonist, oliceridine provides comparable analgesia compared with traditional opioids such as [morphine] at a comparable or decreased risk of opioid-related adverse effects such as constipation and respiratory depression.[A218026, A218031, A218051, A218056, A218061, A218066, A218071, L15516]
-
-Oliceridine was first reported in 2013,[A218026, A218086] but was initially not approved by the FDA due to concerns raised by the Anesthetic and Analgesic Drug Products Advisory Committee.[A218041] Oliceridine gained FDA approval on August 7, 2020, and is currently marketed by Trevena Inc as OLINVYK™.[L15516]
-
-**Indication.** Oliceridine is indicated for the management of acute pain in adults severe enough to require intravenous opioid analgesics and for whom no acceptable alternative treatments exist.[L15516]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q17142898](https://www.wikidata.org/wiki/Q17142898) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -62,8 +58,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…The remaining 30% is eliminated in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…eliminated via the renal route…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRM1 (target).</sub>
 

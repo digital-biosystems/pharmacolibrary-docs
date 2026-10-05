@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Agomelatine is structurally closely related to melatonin. Agomelatine is a potent agonist at melatonin receptors and an antagonist at serotonin-2C (5-HT2C) receptors, tested in an animal model of depression. Agomelatine was developed in Europe by Servier Laboratories Ltd. and submitted to the European Medicines Agency (EMA) in 2005. The Committee for Medical Products for Human Use (CHMP) recommended refusal of marketing authorization on 27 July 2006. The major concern was that efficacy had not been sufficiently shown. In 2006 Servier sold the rights to develop Agomelatine in the US to Novartis.
+Agomelatine is an antidepressant used to treat major depressive disorder. It is authorised in the European Union, though some marketing applications were refused or withdrawn, so its availability there is limited.
 
-The development for the US market was discontinued in October 2011. It is currently sold in Australia under the Valdoxan trade name.
-
-**Indication.** Agomelatine is indicated to treat major depressive episodes in adults.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q395229](https://www.wikidata.org/wiki/Q395229) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

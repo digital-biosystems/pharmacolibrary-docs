@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Ramipril is a prodrug belonging to the angiotensin-converting enzyme (ACE) inhibitor class of medications. It is metabolized to ramiprilat in the liver and, to a lesser extent, kidneys. Ramiprilat is a potent, competitive inhibitor of ACE, the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII). ATII regulates blood pressure and is a key component of the renin-angiotensin-aldosterone system (RAAS). Ramipril may be used in the treatment of hypertension, congestive heart failure, nephropathy, and to reduce the rate of death, myocardial infarction and stroke in individuals at high risk of cardiovascular events.
+Ramipril is an ACE inhibitor used to treat arterial hypertension and congestive heart failure. It is an approved prescription drug, widely used for cardiovascular conditions and available in combination products with diuretics, calcium channel blockers, and lipid-modifying agents.
 
-**Indication.** For the management of mild to severe hypertension. May be used to reduce cardiovascular mortality following myocardial infarction in hemodynamically stable individuals who develop clinical signs of congestive heart failure within a few days following myocardial infarction. [L12798] To reduce the rate of death, myocardial infarction and stroke in individuals at high risk of cardiovascular events. May be used to slow the progression of renal disease in individuals with hypertension, diabetes mellitus and microalubinuria or overt nephropathy. [T116]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412666](https://www.wikidata.org/wiki/Q412666) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -61,11 +61,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
 | metabolism | blood | `BCHE` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>“…100% of renal metabolism converts ramipril to ramiprilat…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `BCHE` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…drugs and metabolites eliminated via biliary excretion…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC15A2` substrate | DrugBank actor |
-| excretion | small intestine | <sub>“…representing both unabsorbed drug…”</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ACE (inhibitor), BDKRB1 (activator).</sub>
 

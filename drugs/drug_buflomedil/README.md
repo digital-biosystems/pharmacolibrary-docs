@@ -8,6 +8,12 @@
 - **molar mass:** 307.39 g/mol (C17H25NO4) — DrugBank
 - **groups:** experimental
 
+## About
+
+Buflomedil is a vasodilator that was used to improve blood flow in peripheral vascular disorders. It is currently classed as an experimental compound, and its marketing status in major regions is unclear from the available information.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417862](https://www.wikidata.org/wiki/Q417862) and the WHO ATC classification; not checked by a person.</small>
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

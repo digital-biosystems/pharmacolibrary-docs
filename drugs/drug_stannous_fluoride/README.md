@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Stannous Fluoride, or Tn(II) Fluoride, is a compound commonly used in toothpastes for the prevention of gingivitis, dental infections, cavities, and to relieve dental hypersensitivity. Although similar in function and activity to Sodium Fluoride (NaF), the conventionally added ingredient in toothpastes, stannous fluoride has been shown to be more effective at stopping and reversing dental lesions [A19581]. It manages and prevents dental caries and gingivitis by promoting enamel mineralization [A19580], reducing gingival inflammation and bleeding [A19582, A19583] through its potential broad-spectrum antibiotic effect and modulation of the microbial composition of the dental biofilm [A19581]. It is an FDA-approved over-the-counter product.
+Stannous fluoride is a stomatological preparation used to prevent tooth decay and has been used for periodontal disease. It is an approved ingredient, widely used in dental care products such as toothpastes.
 
-**Indication.** Indicated for use to relieve dental hypersensitivity, increase enamel production, prevent gingivitis and cavities, and control periodontal infections.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q204962](https://www.wikidata.org/wiki/Q204962) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -30,7 +30,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | small intestine | <sub>“…absorption through oral surfaces…”</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

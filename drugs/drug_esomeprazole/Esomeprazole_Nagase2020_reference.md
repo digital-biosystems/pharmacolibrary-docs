@@ -35,7 +35,7 @@ Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical 
 <dbs-pgx drug="esomeprazole" model-id="Esomeprazole_Nagase2020_reference" status="needs_review" stale="true" population="healthy Japanese male subjects" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -45,6 +45,7 @@ Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance at 10-mg dose | `Q27` · CL/F | 17.32 | L/h | 4.811111111111112e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Nagase_2020:abstract, Nagase_2020:abstract, Nagase_2020:abstract | — | not captured |
+| K A | `Q49` · kabs | 0.95 | h−1 | 0.00026388888888888886 | 1/h | not captured | review_gapfill (0.7) | Chung_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,6 +57,9 @@ Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=esomeprazole
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Chung_2022's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nagase_2020_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -95,6 +99,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nagase_2020:abstract', 'Nagase_2020:abstract', 'Nagase_2020:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chung_2022:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 17.3 L/h | not captured | not captured | ['Nagase_2020:abstract', 'Nagase_2020:abstract', 'Nagase_2020:abstract'] |

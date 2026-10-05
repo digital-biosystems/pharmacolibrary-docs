@@ -8,6 +8,12 @@
 - **molar mass:** 1344.3823 g/mol (C63H91CoN13O14P) — DrugBank
 - **groups:** approved, investigational
 
+## About
+
+Mecobalamin is a vitamin B12 analogue used as an antianemic medicine to treat vitamin B12 deficiency and related anaemias. It is an approved drug and is also being studied for other uses.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q250442](https://www.wikidata.org/wiki/Q250442) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

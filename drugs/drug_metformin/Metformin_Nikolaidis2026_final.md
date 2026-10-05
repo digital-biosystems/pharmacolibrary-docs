@@ -23,7 +23,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:53.700198+00:00) predates the upstream re-run (2026-10-03 12:30:39.840795+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:53.700198+00:00) predates the upstream re-run (2026-10-05 00:48:44.675835+00:00). Current validate status: `extracted`.
 
 ## Citation
 Nikolaidis S et al., Effect of high-intensity interval exerc…, British journal of pharmaco… (2026)
@@ -40,11 +40,11 @@ Nikolaidis S et al., Effect of high-intensity interval exerc…, British journal
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θka (h−1) | `Q49` · kabs | 0.35 | h−1 | 9.722222222222222e-05 | [1] / [h] | 0.36 | boundary_llm_dim_refused (0.8) | Nikolaidis_2026_table_3:row0:col2, Nikolaidis_2026_table_3:row0:col3, Nikolaidis_2026_table_3:row0:col4 | — | None (0.50% RSE) |
+| θka (h⁻¹) | `Q49` · kabs | 0.35 | h⁻¹ | 9.722222222222222e-05 | [1] / [h] | 0.36 | boundary_llm_dim_refused (0.8) | Nikolaidis_2026_table_3:row0:col2, Nikolaidis_2026_table_3:row0:col3, Nikolaidis_2026_table_3:row0:col4 | — | None (0.50% RSE) |
 | θV/F (L) | `Q76` · V/F | 168.8 | L | 0.1688 | [l] | 175.7 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row1:col2, Nikolaidis_2026_table_3:row1:col3, Nikolaidis_2026_table_3:row1:col4 | — | None (0.32% RSE) |
 | V/Fn (L) | `Q353` · Vnorm/F | 136.0 | L | 0.136 | [l] | not captured | exact (1.0) | Nikolaidis_2026_table_3:row2:col2 | — | not captured |
-| θCL/F (l h−1) | `Q27` · CL/F | 83.6 | l h−1 | 2.322222222222222e-05 | [l] / [h] | 83.5 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row4:col2, Nikolaidis_2026_table_3:row4:col3, Nikolaidis_2026_table_3:row4:col4 | — | None (0.19% RSE) |
-| CL/Fn (l h−1) | `Q355` · CLnorm/F | 71.1 | l h−1 | 1.975e-05 | [l] / [h] | not captured | exact (1.0) | Nikolaidis_2026_table_3:row5:col2 | — | not captured |
+| θCL/F (l h⁻¹) | `Q27` · CL/F | 83.6 | l h⁻¹ | 2.322222222222222e-05 | [l] / [h] | 83.5 | llm_confirmed (0.6) | Nikolaidis_2026_table_3:row4:col2, Nikolaidis_2026_table_3:row4:col3, Nikolaidis_2026_table_3:row4:col4 | — | None (0.19% RSE) |
+| CL/Fn (l h⁻¹) | `Q355` · CLnorm/F | 71.1 | l h⁻¹ | 1.975e-05 | [l] / [h] | not captured | exact (1.0) | Nikolaidis_2026_table_3:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,14 +61,13 @@ Nikolaidis S et al., Effect of high-intensity interval exerc…, British journal
 - dropped duplicate Q76 ('βV/Fexercise session A', value '-0.37') — already have one for this compound
 - dropped duplicate Q27 ('βCL/Fexercise session A', value '-0.29') — already have one for this compound
 - dropped duplicate Q27 ('βCL/Fexercise session B', value '-0.19') — already have one for this compound
-- dropped unlinked row (NIL): 'Corr ka−V/F' — extend the ontology if this is a real PK parameter (source ['Nikolaidis_2026_table_3:row14:col2', 'Nikolaidis_2026_table_3:row14:col3', 'Nikolaidis_2026_table_3:row14:col4'])
+- dropped unlinked row (NIL): 'Corr ka–V/F' — extend the ontology if this is a real PK parameter (source ['Nikolaidis_2026_table_3:row14:col2', 'Nikolaidis_2026_table_3:row14:col3', 'Nikolaidis_2026_table_3:row14:col4'])
 - dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['Nikolaidis_2026_table_3:row15:col2', 'Nikolaidis_2026_table_3:row15:col3', 'Nikolaidis_2026_table_3:row15:col4'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=metformin
 - model-stage split: 'final estimate (rse%) [η-shrinkage%]' is the final model of Nikolaidis_2026 (paper reports 2 stages: base estimate (rse%) [η-shrinkage%], final estimate (rse%) [η-shrinkage%]); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- dropped unlinked row (NIL): 'Corr ka–V/F' — extend the ontology if this is a real PK parameter (source ['Nikolaidis_2026_table_3:row14:col2', 'Nikolaidis_2026_table_3:row14:col3', 'Nikolaidis_2026_table_3:row14:col4'])
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -168,7 +167,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_modelica.zip" download>Metformin_Nikolaidis2026_final_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_modelica.zip" download>Metformin_Nikolaidis2026_final_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_fmi.zip" download>Metformin_Nikolaidis2026_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_matlab.zip" download>Metformin_Nikolaidis2026_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_matlab_simbio.zip" download>Metformin_Nikolaidis2026_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -190,4 +189,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 12:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 00:48 UTC</sub>

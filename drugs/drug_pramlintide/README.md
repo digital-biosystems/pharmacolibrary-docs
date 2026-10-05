@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Pramlintide is a relatively new adjunct treatment for diabetes (both type 1 and 2), developed by Amylin Pharmaceuticals. It is derived from amylin, a hormone that is released into the bloodstream, in a similar pattern as insulin, after a meal. Like insulin, amylin is deficient in individuals with diabetes.
+Pramlintide is an anti-diabetic medication used to lower blood glucose in people with type-1 diabetes and maturity-onset diabetes of the young type 2. It is an approved drug, but it is not authorised in the European Union and appears to be used mainly in the United States.
 
-**Indication.** For the treatment of type 1 and type 2 diabetes mellitus as an adjunct to preprandial insulin therapy in patients without adequate glycemic control of insulin therapy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2062094](https://www.wikidata.org/wiki/Q2062094) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-03 18:50 | 5:12 | 0/0/0 | 3/2/0 | 0/0/0 | 168,206/5,148 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
+| 2026-10-05 03:02 | 2:14 | 0/0/0 | 1/1/2 | 0/0/0 | 83,522/2,441 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,10 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Al-Keilani_2018_cell_viability](drugs/drug_pramlintide/pd_Al_Keilani_2018_cell_viability.md) | cell viability ← pramlintide · direct Emax (saturable) effect | — | Al-Keilani MS et al., Pramlintide, an antidiabetic, is antine…, Clinical pharmacology : adv… (2018) | [10.2147/CPAA.S153780](https://doi.org/10.2147/CPAA.S153780) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fang_2013_EGP](drugs/drug_pramlintide/pd_Fang_2013_EGP.md) | endogenous glucose production ← pramlintide · direct sigmoid Emax (Hill) effect | — | Fang J et al., Study reanalysis using a mechanism-base…, The AAPS journal (2013) | [10.1208/s12248-012-9409-7](https://doi.org/10.1208/s12248-012-9409-7) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ramkissoon_2014_glucose](drugs/drug_pramlintide/pd_Ramkissoon_2014_glucose.md) | glucose ← pramlintide · inhibition effect | — | Ramkissoon CM et al., A model of glucose-insulin-pramlintide…, Journal of diabetes science… (2014) | [10.1177/1932296813517323](https://doi.org/10.1177/1932296813517323) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Furió-Novejarque_2024_Ra](drugs/drug_pramlintide/pd_Furi_Novejarque_2024_Ra.md) | glucose rate of appearance ← pramlintide · direct sigmoid Emax (Hill) effect | — | Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer methods and progra… (2024) | [10.1016/j.cmpb.2023.107968](https://doi.org/10.1016/j.cmpb.2023.107968) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Fang_2013_EGP](drugs/drug_pramlintide/pd_Fang_2013_EGP.md) | endogenous glucose production ← pramlintide · direct sigmoid Emax (Hill) effect | — | Fang J et al., Study reanalysis using a mechanism-base…, The AAPS journal (2013) | [10.1208/s12248-012-9409-7](https://doi.org/10.1208/s12248-012-9409-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Furió-Novejarque_2024_Ra](drugs/drug_pramlintide/pd_Furi_Novejarque_2024_Ra.md) | glucose rate of appearance ← pramlintide · direct sigmoid Emax (Hill) effect | — | Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer methods and progra… (2024) | [10.1016/j.cmpb.2023.107968](https://doi.org/10.1016/j.cmpb.2023.107968) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Pons_2025_k_empt](drugs/drug_pramlintide/pd_Pons_2025_k_empt.md) | gastric emptying rate ← pramlintide · direct sigmoid Emax (Hill) effect | — | Pons Torres B et al., In silico evaluation of pramlintide dos…, Computers in biology and me… (2025) | [10.1016/j.compbiomed.2025.110447](https://doi.org/10.1016/j.compbiomed.2025.110447) |
 
 ## ADME sites
@@ -40,8 +39,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…Metabolized primarily by the kidneys.…”</sub> | prose |
-| excretion | kidney | <sub>“…metabolized primarily by the kidneys…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CALCR (target), GLP1R (target), RAMP1 (target), RAMP2 (target), RAMP3 (target).</sub>
 
@@ -60,15 +59,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Fang_2013.pdf` | Fang J et al., Study reanalysis using a mechanism-base…, The AAPS journal (2013) | popPK | 10 | [10.1208/s12248-012-9409-7](https://doi.org/10.1208/s12248-012-9409-7) | [23054970](https://pubmed.ncbi.nlm.nih.gov/23054970) | The study describes a population PK model for pramlintide in humans, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided evidence, only PD parameters (IC50, Imax). |
-| `Ramkissoon_2014.pdf` | Ramkissoon CM et al., A model of glucose-insulin-pramlintide…, Journal of diabetes science… (2014) | popPK | 9 | [10.1177/1932296813517323](https://doi.org/10.1177/1932296813517323) | [24876617](https://pubmed.ncbi.nlm.nih.gov/24876617) | The paper describes a pharmacokinetic model for pramlintide in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not listed in the provided abstract, only RMSE values. |
-| `Weyer_2005.pdf` | Weyer C et al., Properties of pramlintide and insulin u…, American journal of health-… (2005) | popPK | 8 | [10.1093/ajhp/62.8.816](https://doi.org/10.1093/ajhp/62.8.816) | [15821274](https://pubmed.ncbi.nlm.nih.gov/15821274) | The study reports pramlintide pharmacokinetics (AUC, Cmax) in humans, but specific numeric values are not provided in the text evidence. |
 
-<sub>queue written 2026-10-03T18:48:30.301709+00:00</sub>
+<sub>queue written 2026-10-05T03:00:38.619722+00:00</sub>
 
 ## Screened and excluded
 

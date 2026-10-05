@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Dextropropoxyphene is an opioid analgesic manufactured by Eli Lilly and Company. It is used in the symptomatic treatment of mild pain. It displays antitussive and local anaesthetic actions. Due to the risk of cardiac arrhythmias and overdose, possibly leading to death, dextropropoxyphene has been withdrawn from the market in Europe and the United States. The drug is often referred to as the general form, "propoxyphene", however only the dextro-isomer (dextropropoxyphene) has any analgesic effect. The levo-isomer appears to exhibit a very limited antitussive effect.
+Dextropropoxyphene is an opioid painkiller that was used to treat mild to moderate pain. It has been withdrawn from the market because it could cause serious heart problems, even at recommended doses.
 
-**Indication.** For the relief of mild to moderate pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q2268608](https://www.wikidata.org/wiki/Q2268608) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,8 +33,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CES1` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted by the kidneys…”</sub> | prose |
-| excretion | liver | <sub>“…The major route of metabolism is cytochrome CYP3A4 mediated N-demethylation…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: GRIN1 (target), OPRD1 (target), OPRK1 (target), OPRM1 (target), UGT2B4 (inhibitor).</sub>
 

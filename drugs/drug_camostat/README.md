@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Camostat mesylate, or FOY-305, is a synthetic serine protease inhibitor.[A193842,A193848] It was first described in the literature in 1981, as part of research on the inhibition of skin tumors in mice.[A198807] Camostat mesylate inhibits cholecystokinin, pro-inflammatory cytokines, and serine proteases, leading to it being investigated for multiple indications including the treatment of COVID-19.[A198771,A198777,A193800]
+Camostat is a protease inhibitor that blocks trypsin and has been investigated as an oral drug, including for pancreatitis-related conditions. It is not authorised in the European Union and remains investigational rather than in routine approved use.
 
-Camostat mesylate was first approved in Japan in January 2006.[L13197]
-
-**Indication.** Camostat mesylate is indicated in Japan to treat chronic pancreatitis and drug induced lung injury.[A193845] It is also being investigated as a potential treatment for COVID-19.[A193800]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5026909](https://www.wikidata.org/wiki/Q5026909) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -53,9 +51,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…A 200mg oral dose of camostat mesylate…”</sub> | prose |
-| excretion | bile duct | <sub>“…1.0-1.7% eliminated in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…89.8-95.6% eliminated in the urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CCK (inhibitor), PRSS1 (inhibitor), ST14 (inhibitor), TMPRSS2 (inhibitor).</sub>
 

@@ -9,19 +9,9 @@
 
 ## About
 
-**Description.** Hemophilia B - also called factor IX deficiency or Christmas disease - is an X-linked genetic disorder resulting in an absence or deficiency of clotting factor IX.[L44176] Clotting factors, including factor IX, are necessary components of the signaling cascade responsible for blood clotting and subsequent wound healing.[L44181] Symptoms of hemophilia B, therefore, involve a heightened susceptibility to bleeding episodes - in mild cases, bleeding may only occur after injury, while in more severe cases bleeding may occur after a minor injury or even spontaneously.[L44181]
+Etranacogene dezaparvovec is a gene therapy used to treat hemophilia B. It is authorised in the European Union.
 
-Hemophilia B is the second most common type of hemophilia,[L44181] with a prevalence of approximately one in 40,000.[L44161] Men are most likely to experience symptomatic illness due to the X-linked provenance of the disorder.[L44161] Treatment of hemophilia B primarily involves the routine replacement of factor IX using recombinant or donor-derived factor IX products that, while effective, may be burdensome for the patient due to the requirement of routine intravenous infusions.[L44161,L44181]
-
-Etranacogene dezaparvovec (Hemgenix, CSL Bering LLC) is a gene therapy for the treatment of hemophilia B that provides a new treatment modality for its patients. The therapy involves a one-time infusion of a viral vector carrying a codon-optimized DNA sequence of the gain-of-function Padua variant of human Factor IX controlled by a liver-specific promotor 1.[L44156] It delivers a copy of the deficient gene that results in cell transduction and an eventual increase in circulating factor IX activity.[L44156] Etranacogene dezaparvovec was approved by the FDA in November 2022 for the treatment of select patients with hemophilia B, becoming the first gene therapy approved for this indication.[L44161] It is additionally notable for its cost per treatment - approximately 3.5 million USD - earning it the title of most expensive drug in the world.[L44186] In December 2022, the EMA's Committee for Medicinal Produc
-
-**Indication.** Etranacogene dezaparvovec (Hemgenix) is indicated in the United States for the treatment of adults with hemophilia B who fit one of the following criteria:[L44156]
-
-- Currently use factor IX prophylaxis therapy
-- Have current or historical life-threatening hemorrhage
-- Have repeated, serious spontaneous bleeding episodes
-
-In the EU, etranacogene dezaparvovec for the treatment of severe and moderately severe hemophilia B in adult patients without a history of Factor IX inhibitors.[L45444] In Canada, etranacogene dezaparvovec is indicated for adult patients with hemophilia B who require routine prophylaxis to prevent or reduce the frequency of bleeding episodes.[L48806]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q115409056](https://www.wikidata.org/wiki/Q115409056) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

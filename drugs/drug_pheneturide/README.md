@@ -8,6 +8,12 @@
 - **molar mass:** 206.245 g/mol (C11H14N2O2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Pheneturide is an anticonvulsant drug that was used to treat epilepsy. It is now considered experimental and is not in routine clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7181340](https://www.wikidata.org/wiki/Q7181340) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

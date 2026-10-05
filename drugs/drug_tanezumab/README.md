@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Tanezumab has been investigated for the treatment of Osteoarthritis, Knee and Neuralgia, Postherpetic.
+Tanezumab is an investigational monoclonal antibody analgesic studied for osteoarthritis and chronic pain. It has not been approved; the European Medicines Agency refused a marketing application, so it remains investigational.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3980782](https://www.wikidata.org/wiki/Q3980782) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 

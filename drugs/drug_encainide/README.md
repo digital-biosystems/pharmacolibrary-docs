@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** All drug products containing encainide hydrochloride. Encainide hydrochloride, formerly marketed as Enkaid capsules, was associated with increased death rates in patients who had asymptomatic heart rhythm abnormalities after a recent heart attack. The manufacturer of Enkaid capsules voluntarily withdrew the product from the US market on December 16, 1991.
+Encainide is a class Ic antiarrhythmic that was used to treat heart rhythm disorders (arrhythmias). It has been withdrawn from the market after studies showed it could increase the risk of death in patients with certain heart arrhythmias.
 
-**Indication.** Encainide is a class Ic antiarrhythmic agent which was used for management of irregular heartbeats, such as atrial fibrillation, atrial flutter, ventricular tachycardia, and ventricular fibrillation.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q514534](https://www.wikidata.org/wiki/Q514534) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -38,8 +38,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…and feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted in approximately equal amounts in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
 

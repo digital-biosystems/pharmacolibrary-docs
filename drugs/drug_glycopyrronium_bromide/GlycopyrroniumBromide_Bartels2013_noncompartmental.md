@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/&quot;},{&quot;label&quot;:&quot;Bartels_2013 \u00b7 noncompartmental&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_model_based&quot;,&quot;label&quot;:&quot;Bartels_2013_model_based&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_model_based.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_noncompartmental&quot;,&quot;label&quot;:&quot;Bartels_2013_noncompartmental&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_population_mean_cv&quot;,&quot;label&quot;:&quot;Bartels_2013_population_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_population_mean_cv.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glycopyrronium bromide — `GlycopyrroniumBromide_Bartels2013_noncompartmental`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,30 +21,30 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — glycopyrronium bromide: CL 42.5, Vss 102, t1/2z 0.45.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:08.719430+00:00) predates the upstream re-run (2026-10-04 12:43:02.546661+00:00). Current validate status: `extracted`.
 
 ## Citation
 Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118)
 
 ## Model component
-<dbs-pgx drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_noncompartmental" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_noncompartmental" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Systemic clearance | `Q22` · CL | 42.5 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Bartels_2013_table_2:row1:col6 | — | not captured |
-| Volume of distribution at steady state ‡ | `Q65` · Vss | 102 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Bartels_2013_table_2:row2:col4 | — | not captured |
-| Intermediate lung absorption half-life | `Q57` · t1/2z | 0.45 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Bartels_2013_table_2:row12:col2, Bartels_2013_table_2:row12:col4 | — | not captured |
+| Systemic clearance | `Q22` · CL | 42.5 | L/h | 1.1805555555555557e-05 | L/h | not captured | llm_confirmed (0.6) | Bartels_2013_table_2:row1:col6 | — | not captured |
+| Volume of distribution at steady state ‡ | `Q65` · Vss | 102 | L | 0.10200000000000001 | L | not captured | llm_corrected (0.6) | Bartels_2013_table_2:row2:col4 | — | not captured |
+| Intermediate lung absorption half-life | `Q57` · t1/2z | 0.45 | h | 1620.0 | h | not captured | llm_corrected (0.6) | Bartels_2013_table_2:row12:col2, Bartels_2013_table_2:row12:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,10 +59,16 @@ Bartels C et al., Determination of the pharmacokinetics o…, British journal of
 
 ## Departures & gaps
 
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
+
 **Interpretation flags:**
 - column 'noncompartmental' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped duplicate Q57 ('Slow lung absorption half-life', value None) — already have one for this compound
 - dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['Bartels_2013_table_2:row21:col1'])
+- implicit units: 'Systemic clearance' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for clearance in the provided text or table footnotes. However, for a drug ')
+- implicit units: 'Volume of distribution at steady state ‡' → L (from the popPK convention: 'The paper does not explicitly state the unit for volume of distribution in the provided text or table footnotes. A Vss o')
+- implicit units: 'Intermediate lung absorption half-life' → h (from the paper text: "The footnote for Table 5 states: 'rate constants, K, expressed as half-lives, t1/2 = ln(2)/K'. While it doesn't explicit")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=glycopyrronium
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'noncompartmental' subgroup of Bartels_2013 (paper reports 3 populations: model-based, noncompartmental, population mean (%cv))
@@ -81,12 +88,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[gi tract absorption half-life]` | not captured | not captured | only_one_extracted |
@@ -113,11 +121,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row1:col6'] |
-| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row1:col6'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bartels_2013_table_2:row12:col2', 'Bartels_2013_table_2:row12:col4'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 42.5 | not captured | not captured | ['Bartels_2013_table_2:row1:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 42.5 L/h | not captured | not captured | ['Bartels_2013_table_2:row1:col6'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 102 L | not captured | not captured | ['Bartels_2013_table_2:row2:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,21 +145,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_modelica.zip" download>GlycopyrroniumBromide_Bartels2013_noncompartmental_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_matlab.zip" download>GlycopyrroniumBromide_Bartels2013_noncompartmental_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_matlab_simbio.zip" download>GlycopyrroniumBromide_Bartels2013_noncompartmental_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_sbml.zip" download>GlycopyrroniumBromide_Bartels2013_noncompartmental_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_cellml.zip" download>GlycopyrroniumBromide_Bartels2013_noncompartmental_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental.svg" alt="GlycopyrroniumBromide_Bartels2013_noncompartmental diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 120 mg infusion over 10 min, single dose. Doses in the paper: 120, 200, 400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_noncompartmental/GlycopyrroniumBromide_Bartels2013_noncompartmental_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `GlycopyrroniumBromide_Bartels2013_noncompartmental_params.json` · controls `GlycopyrroniumBromide_Bartels2013_noncompartmental_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 09:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:43 UTC</sub>

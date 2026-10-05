@@ -9,15 +9,9 @@
 
 ## About
 
-**Description.** Neomycin is a broad-spectrum aminoglycoside antibiotic drug that is derived from the metabolic products of _Streptomyces fradiae_.[L11979] Neomycin is a complex comprised of three components, neomycin A, B, and C.[A191529] Neomycin B, also known as [framycetin], is the most active component of the complex and neomycin C is the isomer of neomycin B, making these two stereoisomers the active components of neomycin.[A175042,A191529] Neomycin A, or [neamine], is a moiety that conjoins two molecules of neomycin B and C together.[A175042] Neomycin is active against both gram-positive and gram-negative organisms and mediates its pharmacological action by binding to bacterial ribosomes and inhibiting protein synthesis, which is crucial for the survival of bacteria.[L11985] 
+Neomycin is an aminoglycoside antibiotic used to treat bacterial infections, applied topically on skin, eyes, and ears, and also in oral intestinal preparations. It is an approved medicine, including veterinary approval, and is used in many topical and local treatment forms.
 
-Neomycin sulfate is the most common form for pharmaceutical preparations; because the compound is a complex, the amount of neomycin in products is measured in units.[A191529] Neomycin sulfate as monotherapy is available in an oral solution for adjunct use in the treatment of hepatic coma.[L11979] It is also used in combination with [polymyxin B] sulfates and [hydrocortisone] in otic suspensions for use in the treatment of bacterial infections in the external auditory canal, including infections caused by medical procedures in the ear.[L10532] Neomycin is also used in combination with [polymyxin B] sulfates and [dexamethasone] in ophthalmic preparations for use in the treatment of inflammatory conditions and infections in the eye.[L10716] Neomycin is also available in over-the-counter topical products to prevent minor skin infections.
-
-**Indication.** Oral neomycin sulfate is indicated as an adjunctive therapy in hepatic coma (portal-system encephalopathy) by reducing ammonia-forming bacteria in the intestinal tract. It is strongly recommended that oral neomycin is only used in infections that are proven or strongly suspected to be caused by susceptible bacteria to reduce the risk of the development of drug-resistant bacteria.[L11979]
-
-Neomycin, in combination with polymyxin B sulfates and hydrocortisone in otic suspensions, is used in the treatment of superficial bacterial infections of the external auditory canal caused by organisms susceptible to the antibiotics. This otic formulation is also used in the treatment of infections of mastoidectomy and fenestration cavities caused by organisms susceptible to the antibiotics.[L10532]
-
-The ophthalmic solution containing neomycin in combination with polymyxin B sulfates and dexamethasone is used to treat steroid-responsive inflammatory ocular conditions for which a corticosteroid is indicated and where bacterial infection or a risk of bacterial infection exists.[L10716]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423098](https://www.wikidata.org/wiki/Q423098) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -54,9 +48,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Neomycin is poorly absorbed from the gastrointestinal tract…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted by the kidney…”</sub> | prose |
-| excretion | small intestine | <sub>“…The unabsorbed portion of the drug is excreted unchanged in the feces…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CASR (activator).</sub>
 

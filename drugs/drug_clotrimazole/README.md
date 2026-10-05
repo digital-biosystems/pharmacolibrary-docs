@@ -10,26 +10,9 @@
 
 ## About
 
-**Description.** This drug is a broad spectrum antimycotic or antifungal agent. Clotrimazole's antimycotic properties were discovered in the late 1960s [A174094]. Clotrimazole falls under the _imidazole_ category of _azole_ antifungals, possessing broad-spectrum antimycotic activity [A174094].  It is available in various preparations, including creams, pessaries, and troche formulations (slowly dissolving tablets).  As well as its antifungal activity, clotrimazole has become a drug of interest in treating several other diseases such as sickle cell disease, malaria and some cancers [A174094].  The minimal side effect profile of this drug and its uncomplicated metabolic profile have led it to gain widespread acceptance for the treatment of mycotic outbreaks such as vaginal yeast infections as well as athlete's foot [A174097].
+Clotrimazole is an antifungal medicine used to treat fungal infections such as skin and mouth candidiasis, vulvovaginal candidiasis, and other dermatomycoses. It is widely used topically, appears on the WHO essential medicines list, and is also approved for veterinary use.
 
-**Indication.** **Topical preparations**
-
-Clotrimazole topical cream is indicated for the topical treatment of the following dermal infections [F3088], [F3121]:
-
-Tinea pedis, tinea cruris, and tinea corporis due to _Trichophyton rubrum_, _Trichophyton mentagrophytes_, _Epidermophyton floccosum_
-
-Candidiasis due to _Candida albicans_
-
-Tinea versicolor due to _Malassezia furfur_
-
-Diaper rash infected by _Candida albicans_
-
-
-In some preparations, clotrimazole may be combined with betamethasone dipropionate, a corticosteroid [F3121]. 
-
-**Oral preparations**
-
-The oral troche preparation is indicated for the local treatment of oropharyngeal candidiasis [FDA label].  It is also indicated as a prophylactic drug to reduce the incidence of oropharyngeal candidiasis in patients immunocompromised by conditions such as chemotherapy, radiotherapy, or steroid therapy utilized in the treatment of leukemia, solid tumors, or renal transplantation [FDA label]. Troche preparations are not indicated for the treatment of any systemic mycoses [FDA label].
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q413546](https://www.wikidata.org/wiki/Q413546) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

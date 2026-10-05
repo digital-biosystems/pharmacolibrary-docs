@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;procaine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # procaine
 
@@ -10,9 +11,9 @@
 
 ## About
 
-**Description.** A local anesthetic of the ester type that has a slow onset and a short duration of action. It is mainly used for infiltration anesthesia, peripheral nerve block, and spinal block. (From Martindale, The Extra Pharmacopoeia, 30th ed, p1016). Procaine has also been investigated as an oral entry inhibitor in treatment-experienced HIV patients [L1215].
+Procaine is a local anesthetic used to relieve pain, for example in procedures involving the skin, eye, or hemorrhoids. It is an approved drug, also approved for veterinary use, and remains in use mainly as a local anesthetic.
 
-**Indication.** Used as a local anesthetic primarily in oral surgery
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q423741](https://www.wikidata.org/wiki/Q423741) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -32,7 +33,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) | model (no simulator) | 1-compartment, IV | 4 | Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and analgesia (1979) | [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Seifen_1979_reference](drugs/drug_procaine/Procaine_Seifen1979_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and analgesia (1979) | [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007) |
 
 ## ADME sites
 
@@ -44,7 +45,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `MAOA` inhibitor | DrugBank actor |
 | metabolism | liver | `BCHE` inhibitor/substrate, `MAOA` inhibitor | DrugBank actor |
 | metabolism | small intestine | `MAOA` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…With normal kidney function, the drug is excreted rapidly by tubular excretion…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

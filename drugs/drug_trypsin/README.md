@@ -9,7 +9,9 @@
 
 ## About
 
-**Description.** Trypsin is a serine protease that plays an essential role in protein hydrolysis and absorption in mammals. When converted from its zymogen trypsinogen, trypsin is available as an active peptide hydrolase (EC 3.4.21.4) form to cleave peptide chains, mainly at the carboxyl side of the amino acids lysine or arginine. Trypsin contains a nucleophilic residue Ser in the enzyme active site which attacks the carbonyl moiety of the substrate peptide bond to form an acyl-enzyme intermediate [A27241]. This nucleophilic attack is facilitated by the catalytic triad consisting of histidine-57, aspartate-102, and serine-195. Trypsin also contains an oxyanion hole that stabilizes the charge negative charge on the carbonyl oxygen atom formed from the cleavage of peptide bonds. Therapeutic forms of trypsin is obtained from purified extracts of porcine or bovine pancreas and is intended to aid in digestion when administered orally.
+Trypsin is a digestive enzyme used to help clean wounds and ulcers, and in other hematological treatments. It is an approved medicine, also approved for veterinary use, with some investigational applications.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q127450](https://www.wikidata.org/wiki/Q127450) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

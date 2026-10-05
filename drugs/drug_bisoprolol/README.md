@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;bisoprolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2018_reference&quot;,&quot;label&quot;:&quot;Nikolic_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bisoprolol
 
@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Bisoprolol is a cardioselective β1-adrenergic blocking agent used to treat high blood pressure.[A180472,L7219] It is considered a potent drug with a long-half life that can be used once daily to reduce the need for multiple doses of antihypertensive drugs.[A180472] Bisoprolol is generally well tolerated, likely due to its β1-adrenergic receptor selectivity and is a useful alternative to non-selective β-blocker drugs in the treatment of hypertension such as [Carvedilol] and [Labetalol]. It may be used alone or in combination with other drugs to manage hypertension[L7219] and can be useful in patients with chronic obstructive pulmonary disease (COPD) due to its receptor selectivity.[A180562]
+Bisoprolol is a selective beta blocker used for conditions such as high blood pressure, angina, heart failure, and after a heart attack. It is widely used and appears on the WHO list of essential medicines.
 
-**Indication.** Bisoprolol is indicated for the treatment of mild to moderate hypertension.[L7219] It may be used off-label to treat heart failure, atrial fibrillation, and angina pectoris.[A180460,A180463]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q412515](https://www.wikidata.org/wiki/Q412515) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -40,7 +40,7 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Momčilović_2020_reference](drugs/drug_bisoprolol/Bisoprolol_Momilovi2020_reference.md) | — | 1-compartment (no model) | 2 | Momčilović S et al., Population pharmacokinetic analysis of…, European journal of clinica… (2020) | [10.1007/s00228-020-02937-6](https://doi.org/10.1007/s00228-020-02937-6) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nikolic_2013_reference](drugs/drug_bisoprolol/Bisoprolol_Nikolic2013_reference.md) | — | 1-compartment (no model) | 3 | ValentinaNNikolic valentina@medfak.ni.ac.rs et al., PHARMACOKINETICS AND DISPOSITION Popula… (2013) | [10.1007/s00228-012-1427-y](https://doi.org/10.1007/s00228-012-1427-y) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nikolic_2016_reference](drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md) | — | 1-compartment (no model) | 3 | Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (2016) | [10.1159/000443179](https://doi.org/10.1159/000443179) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 2.4141)</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2018_reference](drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md) | model (no simulator) | 1-compartment, oral | 4 | ValentinaNNikolic valentina@medfak.ni.ac.rs Ó Springer International Publishing Switzerland et al., Population Pharmacokinetic Analysis of… (2017) | [10.1007/s13318-017-0414-1](https://doi.org/10.1007/s13318-017-0414-1) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 2.4141)</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2018_reference](drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | ValentinaNNikolic valentina@medfak.ni.ac.rs Ó Springer International Publishing Switzerland et al., Population Pharmacokinetic Analysis of… (2017) | [10.1007/s13318-017-0414-1](https://doi.org/10.1007/s13318-017-0414-1) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q76 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Taguchi_2005_reference](drugs/drug_bisoprolol/Bisoprolol_Taguchi2005_reference.md) | — | 1-compartment (no model) | 4 | Taguchi M et al., Pharmacokinetic variability of routinel…, Biological & pharmaceutical… (2005) | [10.1248/bpb.28.876](https://doi.org/10.1248/bpb.28.876) |
 
 ## Pharmacogenomics (PGx)
@@ -78,9 +78,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` metabolism | paper PGx gene |
 | metabolism | liver | `CYP2D6` metabolism, `CYP3A4` substrate, `CYP3A5` metabolism | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` metabolism | DrugBank actor |
-| excretion | bile duct | <sub>“…Under 2% of the ingested dose is found to be excreted in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…excreted unchanged in the urine…”</sub> | prose |
-| excretion | liver | <sub>“…eliminated equally by both renal and hepatic pathways…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), CCDC34 (target).</sub>
 

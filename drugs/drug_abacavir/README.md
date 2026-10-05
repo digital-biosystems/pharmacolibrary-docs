@@ -11,9 +11,9 @@
 
 ## About
 
-**Description.** Abacavir (ABC) is a powerful nucleoside analog reverse transcriptase inhibitor (NRTI) used to treat HIV and AIDS. Chemically, it is a synthetic carbocyclic nucleoside and is the enantiomer with 1S, 4R absolute configuration on the cyclopentene ring. In vivo, abacavir sulfate dissociates to its free base, abacavir.
+Abacavir is an antiviral medicine used to treat HIV infection and HIV/AIDS. It is widely used, appears on the WHO essential medicines list, and is authorised in the European Union, typically in combination products for HIV treatment.
 
-**Indication.** Abacavir is indicated in combination with other anti-retroviral agents for the treatment of HIV-1 infection.[L30400] It is available in a combination product alongside [dolutegravir] and [lamivudine] for the treatment of adult and pediatric patients with HIV-1 who weigh ≥10 kg.[L41365]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q304330](https://www.wikidata.org/wiki/Q304330) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -98,13 +98,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Rapid and extensive after oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | blood | `DPYD` safety_allele, `TPMT` safety_allele | paper PGx gene |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | liver | `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `DPYD` safety_allele, `NAT2` metabolism, `SLCO1B1` transport, `TPMT` safety_allele, `UGT1A1` safety_allele/substrate | DrugBank actor |
 | metabolism | small intestine | `NAT2` metabolism, `UGT1A1` safety_allele/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…Fecal elimination accounted for 16% of the dose…”</sub> | prose |
-| excretion | kidney | <sub>“…1.2% was excreted in the urine as abacavir…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADH6 (substrate), ADK (substrate), G6PD (safety_allele), GST (metabolism), HLA-A (safety_allele), HLA-B (safety_allele), HLA-B*57:01 (safety_allele), HLA-B*58:01 (safety_allele), HLA-C (safety_allele), HLA-DQ (safety_allele), HLA-DQB1 (safety_allele), HLA-DR (safety_allele), HLA-DRB1 (safety_allele), HLA-DRB3 (safety_allele), HLA-DRB5 (safety_allele), LTC4S (metabolism), NUDT15 (safety_allele), SLC19A1 (transport).</sub>
 

@@ -10,15 +10,15 @@
 
 ## About
 
-**Description.** Alosetron is a 5-HT3 antagonist used only for the management of severe diarrhoea-predominant irritable bowel syndrome (IBS) in women. Alosetron has an antagonist action on the 5-HT3 receptors and thus may modulate serotonin-sensitive gastrointestinal (GI) processes. Alosetron was voluntarily withdrawn from the US market in November 2000 by the manufacturer due to numerous reports of severe adverse effects including ischemic colitis, severely obstructed or ruptured bowel, and death. In June 2002, the FDA approved a supplemental new drug application allowing the remarketing of the drug under restricted conditions of use.
+Alosetron is a serotonin antagonist used to treat irritable bowel syndrome. It was withdrawn after serious gastrointestinal safety concerns but later made available again under a restricted programme in the United States, carrying a boxed warning.
 
-**Indication.** Only for the treatment of symptoms of severe diarrhea-predominant irritable bowel syndrome (IBS) in women with chronic symptoms (generally lasting greater than 6 months) who does not present with anatomic or biochemical GI abnormalities and have not responded to conventional therapy.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416463](https://www.wikidata.org/wiki/Q416463) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:17 | 3:43 | 0/0/0 | 0/0/0 | 0/0/0 | 29,281/2,597 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 12:22 | 0:57 | 0/0/0 | 0/0/0 | 0/0/0 | 12,859/1,241 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C9` substrate, `CYP2E1` inhibitor, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Renal elimination of unchanged alosetron accounts for only 6% of the dose…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: HTR3A (target), HTR3B (target).</sub>
 
@@ -60,7 +60,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Koch_2004.pdf` | Koch KM et al., Alosetron repeat dose pharmacokinetics,…, Alimentary pharmacology & t… (2004) | pgx | 7 | [10.1111/j.1365-2036.2004.02031.x](https://doi.org/10.1111/j.1365-2036.2004.02031.x) | [15233703](https://www.ncbi.nlm.nih.gov/pubmed/15233703) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Somers_2007.pdf` | Somers GI et al., The metabolism of the 5HT3 antagonists…, Xenobiotica; the fate of fo… (2007) | pgx | 7 | [10.1080/00498250701485575](https://doi.org/10.1080/00498250701485575) | [17701832](https://www.ncbi.nlm.nih.gov/pubmed/17701832) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-18T08:16:03.847989+00:00</sub>
+<sub>queue written 2026-10-04T12:22:06.590737+00:00</sub>
 
 ## Screened and excluded
 
@@ -73,7 +73,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Camilleri_2019 | irrelevant | 0 | 0 | The paper is a review of pharmacogenomics in IBS and does not report quantitative pharmacokinetic parameters for alosetron. |
 | PD | Camilleri_2019 | not_relevant | 0 | 0 | The text is a general review of pharmacogenomics in IBS and does not report any specific pharmacodynamic or exposure-response data for alosetron. |
 | PGx | Camilleri_2019 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenomics in IBS and does not report specific data or effects for alosetron. |
-| popPK | Coldwell_2007 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology paper in rats where alosetron is used only as a receptor antagonist to probe 5-HT3 receptor involvement, with no pharmacokinetic parameters reported. |
+| popPK | Coldwell_2007 | irrelevant | 0 | 0 | The study is a physiological investigation of colonic afferent responsiveness to 5-HT in rats, using alosetron only as a receptor antagonist to characterize mechanisms, not to measure pharmacokinetic parameters. |
 | popPK | Cremonini_2012 | irrelevant | 0 | 0 | The paper is a narrative review focusing on rifaximin, and alosetron is only mentioned as a comparator/approved drug without any pharmacokinetic data. |
 | PD | Cremonini_2012 | not_relevant | 0 | 0 | The paper is a narrative review focused on rifaximin and does not report any pharmacodynamic or exposure-response data for alosetron. |
 | PGx | DSouza_2001 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between alosetron and alprazolam, not a pharmacogenomic effect of a gene variant on alosetron's PK/PD. |
@@ -82,7 +82,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Farkouh_2020 | not_relevant | 1 | 0 | The text is a review that qualitatively mentions alosetron's sex-specific efficacy but provides no numeric PD parameters, concentration-effect curves, or dose-response data. |
 | popPK | Gunput_1999 | irrelevant | 2 | 2 | The paper is a review article that only reports general bioavailability and half-life without providing the specific quantitative compartmental or population PK parameters (CL, V, Q, ka) required for extraction. |
 | PD | Gunput_1999 | not_relevant | 2 | 1 | The text is a review summary that qualitatively describes dose-dependent effects (skin flare, transit time) but does not provide specific numeric PD parameters (Emax, EC50) or extractable concentration-effect curves. |
-| popPK | Gupta_1995 | irrelevant | 2 | 0 | Alosetron is a co-administered agent used to assess its effect on haloperidol pharmacokinetics, and no quantitative PK parameters for alosetron are provided in the text. |
+| popPK | Gupta_1995 | irrelevant | 2 | 0 | Alosetron is a co-administered agent used to probe the pharmacokinetics of haloperidol, and no quantitative PK parameters for alosetron are provided in the text. |
 | popPK | Humphrey_1999 | irrelevant | 0 | 0 | The paper is a review article discussing the therapeutic potential of 5-HT3 antagonists and does not report original quantitative pharmacokinetic parameters for alosetron. |
 | PD | Humphrey_1999 | not_relevant | 1 | 0 | The text is a review article that qualitatively discusses the mechanism and potential of alosetron but does not report any specific numeric PD parameters, concentration-effect curves, or dose-response data. |
 | popPK | Itomi_2020 | irrelevant | 0 | 0 | The study is a pharmacodynamic evaluation of a novel CRF1 antagonist in animal models where alosetron serves only as a comparator agent, with no pharmacokinetic parameters reported. |
@@ -96,7 +96,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Sanger_2008 | irrelevant | 0 | 0 | The paper is a review discussing drug development strategies for GI disorders and mentions alosetron only as a context/comparator without reporting any pharmacokinetic parameters. |
 | PD | Sanger_2008 | not_relevant | 1 | 0 | The text is a review discussing drug development strategies and mentions alosetron only as a class example without providing any numeric PD parameters or exposure-response data. |
 | PGx | Somers_2007 | not_relevant | 0 | 0 | The paper describes general in vitro and in vivo metabolism and CYP enzyme involvement but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Zhai_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology paper characterizing alosetron's mechanism of action as a 5-HT3 receptor antagonist, reporting no pharmacokinetic parameters. |
+| popPK | Zhai_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological analysis of alosetron's receptor binding properties (IC50) in guinea pig neurons, not a pharmacokinetic study reporting disposition parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

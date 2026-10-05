@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Taurolidine is an antimicrobial used for the prevention of catheter-related infections. It is a derivative of the amino acid [taurine].
+Taurolidine is an anti-infective agent used as an irrigating solution, and has also been investigated as an antineoplastic drug. It is an approved medicine, though not authorised centrally in the European Union, and is used only in limited settings such as irrigation.
 
-It was first synthesized in the 1970s and was originally used as a prophylactic against intraperitoneal bacterial infections in patients with peritonitis.[A263217] In November 2023, a catheter lock solution of taurolidine in combination with [heparin] - marketed as Defencath - received FDA approval under the Limited Population Pathway for Antibacterial and Antifungal Drugs (LPAD pathway) for the prevention of catheter-related bloodstream infections in a limited and specific patient population.[L50092]
-
-**Indication.** Taurolidine is indicated in combination with [heparin] to reduce the incidence of catheter-related bloodstream infections (CRBSI) in adult patients with kidney failure receiving chronic hemodialysis (HD) through a central venous catheter (CVC).[L49081]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3981568](https://www.wikidata.org/wiki/Q3981568) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

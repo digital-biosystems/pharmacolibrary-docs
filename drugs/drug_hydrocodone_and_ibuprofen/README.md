@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+This combination of the opioid hydrocodone and the non-steroidal anti-inflammatory drug ibuprofen is used for short-term relief of moderate to severe acute pain. It is available mainly in the United States as a prescription medicine; hydrocodone-containing products are not authorised in the European Union.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Sparteine is a plant alkaloid derived from _Cytisus scoparius_ and _Lupinus mutabilis_ which may chelate calcium and magnesium. It is a sodium channel blocker, so it falls in the category of class 1a antiarrhythmic agents. Sparteine is not currently FDA-approved for human use, and its salt, sparteine sulfate, is one of the products that have been withdrawn or removed from the market for reasons of safety or effectiveness.[L43942]
+Sparteine is an alkaloid that was used as a class Ia antiarrhythmic to treat heart rhythm disorders, and also as an oxytocic agent. It has been withdrawn and is no longer in clinical use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419552](https://www.wikidata.org/wiki/Q419552) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

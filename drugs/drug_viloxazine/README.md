@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Viloxazine is a selective norepinephrine reuptake inhibitor.[L41685] For decades, an immediate-release formulation of viloxazine has been used in Europe as an antidepressant. It was first approved in the UK in 1974; however, the immediate-release formulation was discontinued due to business reasons unrelated to drug safety and efficacy. In the US, viloxazine was assigned an orphan drug designation in 1984 under the brand name CATATROL: while this product was intended to treat cataplexy and narcolepsy, the drug was never approved for these therapeutic indications. In April 2021, an extended-release formulation of viloxazine under the brand name QELBREE was approved by the FDA for the treatment of attention deficit hyperactivity disorder (ADHD).[A247985]
+Viloxazine is a norepinephrine reuptake inhibitor that was originally used as an antidepressant and is now used to treat attention deficit hyperactivity disorder. It was withdrawn from use as an antidepressant in many countries but has been reapproved and is again available, mainly for ADHD.
 
-**Indication.** Viloxazine is a selective norepinephrine reuptake inhibitor indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD) in adults and pediatric patients 6 years and older.[L41685]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q907148](https://www.wikidata.org/wiki/Q907148) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,13 +45,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Viloxazine is rapidly absorbed following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate, `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor, `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inhibitor, `UGT1A9` substrate, `UGT2B15` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…Less than 1% of the dose is excreted in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC47A1` inhibitor | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
 

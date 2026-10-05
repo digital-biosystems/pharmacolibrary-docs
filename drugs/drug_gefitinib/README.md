@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Gefitinib (originally coded ZD1839) is a drug used in the treatment of certain types of cancer. Acting in a similar manner to erlotinib (marketed as Tarceva), gefitinib selectively targets the mutant proteins in malignant cells. It is marketed by AstraZeneca under the trade name Iressa.
+Gefitinib is a tyrosine-kinase inhibitor used to treat non-small-cell lung cancer. It is an approved medicine, authorised in the European Union, and is also being studied for other uses.
 
-**Indication.** For the continued treatment of patients with locally advanced or metastatic non-small cell lung cancer after failure of either platinum-based or docetaxel chemotherapies.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q417824](https://www.wikidata.org/wiki/Q417824) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -45,9 +45,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…excretion in feces…”</sub> | prose |
-| excretion | kidney | <sub>“…renal elimination of drug and metabolites…”</sub> | prose |
-| excretion | liver | <sub>“…Elimination is by metabolism (primarily CYP3A4)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: EGFR (target).</sub>
 

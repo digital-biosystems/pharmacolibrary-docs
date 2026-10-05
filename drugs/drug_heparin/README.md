@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Unfractionated heparin (UH) is a heterogenous preparation of anionic, sulfated glycosaminoglycan polymers with weights ranging from 3000 to 30,000 Da. It is a naturally occurring anticoagulant released from mast cells. It binds reversibly to antithrombin III (ATIII) and greatly accelerates the rate at which ATIII inactivates coagulation enzymes thrombin (factor IIa) and factor Xa. UH is different from low molecular weight heparin (LMWH) in the following ways: the average molecular weight of LMWH is about 4.5 kDa whereas it is 15 kDa for UH; UH requires continuous infusions; activated partial prothrombin time (aPTT) monitoring is required when using UH; and UH has a higher risk of bleeding and higher risk of osteoporosis in long term use. Unfractionated heparin is more specific than LMWH for thrombin. Furthermore, the effects of UH can typically be reversed by using protamine sulfate.
+Heparin is an anticoagulant (blood thinner) used to treat and prevent blood clots, including pulmonary embolism, and is also used in antiphospholipid syndrome. It is a widely used medicine and appears on the WHO list of essential medicines.
 
-**Indication.** Unfractionated heparin is indicated for prophylaxis and treatment of venous thrombosis and its extension, prevention of post-operative deep venous thrombosis and pulmonary embolism and prevention of clotting in arterial and cardiac surgery. In cardiology, it is used to prevent embolisms in patients with atrial fibrillation and as an adjunct antithrombin therapy in patients with unstable angina and/or non-Q wave myocardial infarctions (i.e. non-ST elevated acute coronary artery syndrome) who are on platelet glycoprotein (IIb/IIIa) receptor inhibitors. Additionally, it is used to prevent clotting during dialysis and surgical procedures, maintain the patency of intravenous injection devices and prevent in vitro coagulation of blood transfusions and in blood samples drawn for laboratory values.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q190016](https://www.wikidata.org/wiki/Q190016) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,7 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| excretion | kidney | <sub>“…dependent on renal function…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: F10 (inhibitor), FGF1 (activator), FGF19 (activator), FGF2 (activator), FGF4 (activator), FGFR1 (activator), FGFR2 (activator), FGFR4 (unknown), HGF (allosteric modulator), HPSE (substrate), PF4 (allosteric modulator), SELP (inhibitor), SERPINC1 (potentiator).</sub>
 

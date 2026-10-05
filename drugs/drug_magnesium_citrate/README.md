@@ -10,19 +10,15 @@
 
 ## About
 
-**Description.** Magnesium citrate is a low volume and osmotic cathartic agent. The cathartic action works primarily through the high osmolarity of the solution which draws large amounts of fluid into space where is used.[T215] Magnesium citrate is considered by the FDA as an approved inactive ingredient for approved drug products under the specifications of oral administration of a maximum concentration of 237 mg.[L2831] It is also considered as an active ingredient in over-the-counter products.[L1113]
+Magnesium citrate is used as an osmotic laxative for constipation, as a magnesium mineral supplement, and as an irrigating salt solution. It is an approved medicine and is generally widely available, though it has not been centrally authorised in the European Union.
 
-**Indication.** Magnesium citrate has been used in bowel preparations prior to a colonoscopy as a cathartic agent.[T215] 
-
-It is also used in over-the-counter products to relieve occasional constipation.[L2841]
-
-Magnesium citrate can be one of the forms used for the administration of dietary supplements.[L2842]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q45044](https://www.wikidata.org/wiki/Q45044) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 09:42 | 3:25 | 0/0/0 | 0/0/0 | 0/0/0 | 49,096/1,338 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-04 16:10 | 0:31 | 0/0/0 | 0/0/0 | 0/0/0 | 18,374/524 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -34,9 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorption and bioavailability of magnesium are greater when administered in the form of m…”</sub> | prose |
-| excretion | kidney | <sub>“…40% increase in urine excretion of magnesium…”</sub> | prose |
-| excretion | small intestine | <sub>“…when present in the bowel, it relaxes the bowel and pulls water into the intestine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -53,13 +49,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wilimzig_1996.pdf` | Wilimzig C et al., Increase in magnesium plasma level afte…, European journal of clinica… (1996) | popPK | 8 | [10.1007/BF00226334](https://doi.org/10.1007/BF00226334) | [8857079](https://pubmed.ncbi.nlm.nih.gov/8857079) | The study reports PK parameters (AUC, half-life) for trimagnesium dicitrate (a magnesium salt), but specific clearance or volume values are not provided in the text. |
+| `Wilimzig_1996.pdf` | Wilimzig C et al., Increase in magnesium plasma level afte…, European journal of clinica… (1996) | popPK | 8 | [10.1007/BF00226334](https://doi.org/10.1007/BF00226334) | [8857079](https://pubmed.ncbi.nlm.nih.gov/8857079) | The study reports PK parameters (AUC, half-life, compartmental model) for magnesium citrate in humans, but specific clearance and volume values are not explicitly listed in the text. |
+| `Bertrand_1997.pdf` | Bertrand L et al., Mutagenesis of charged residues in a co…, The Biochemical journal (1997) | pd | 4 | [10.1042/bj3210609](https://doi.org/10.1042/bj3210609) | [9032444](https://www.ncbi.nlm.nih.gov/pubmed/9032444) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-11T09:41:52.447106+00:00</sub>
+<sub>queue written 2026-10-04T16:10:13.654312+00:00</sub>
 
 ## Screened and excluded
 
@@ -67,20 +64,20 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Bertrand_1997 | irrelevant | 0 | 0 | The paper is a biochemical study on enzyme mutagenesis where magnesium citrate is used only as an inhibitor to measure IC50 values, not as a subject drug for pharmacokinetic analysis. |
 | PD | Bertrand_1997 | not_relevant | 0 | 0 | The paper reports enzyme kinetics (Km, Vmax, IC50) for a mutated protein, not pharmacodynamic exposure-response or dose-response data for a drug in a biological system. |
-| popPK | Corkery_2022 | irrelevant | 0 | 0 | The paper is a case report and review regarding the novel psychoactive substance 4-Fluoroethylphenidate (4F-EPH) and contains no data on magnesium_citrate. |
+| popPK | Corkery_2022 | irrelevant | 0 | 0 | The paper is a case report and review regarding 4-Fluoroethylphenidate (4F-EPH), not magnesium_citrate, and contains no pharmacokinetic data. |
 | PD | Corkery_2022 | not_relevant | 0 | 0 | The paper is a case report and literature review regarding the first death involving 4-fluoroethylphenidate (4F-EPH) and contains no pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for magnesium citrate or any other drug. |
-| popPK | Engeli_2025 | irrelevant | 0 | 0 | The paper is a review of Cannabidiol (CBD) and does not study magnesium_citrate or report any pharmacokinetic parameters for it. |
+| popPK | Engeli_2025 | irrelevant | 0 | 0 | The paper is a review of cannabidiol (CBD) safety and health claims, and does not contain any pharmacokinetic data for magnesium citrate. |
 | PD | Engeli_2025 | not_relevant | 0 | 0 | The paper is a review of cannabidiol (CBD) in foods and does not contain any pharmacodynamic or exposure-response data for magnesium citrate. |
-| popPK | Gabriel_1984 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on isocitrate dehydrogenase, not a pharmacokinetic study of magnesium citrate. |
+| popPK | Gabriel_1984 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on isocitrate dehydrogenase activation, not a pharmacokinetic study of magnesium citrate. |
 | PD | Gabriel_1984 | not_relevant | 0 | 0 | The paper describes in vitro enzyme kinetics (S0.5 values) for NAD-dependent isocitrate dehydrogenase, not a pharmacodynamic exposure-response relationship for a drug in a biological system. |
-| popPK | Gabriel_1985 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on isocitrate dehydrogenase where magnesium citrate is only mentioned as a non-reversing agent, containing no pharmacokinetic parameters. |
+| popPK | Gabriel_1985 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on bovine heart isocitrate dehydrogenase where magnesium citrate is only mentioned as a non-reversing agent, containing no pharmacokinetic data. |
 | PD | Gabriel_1985 | not_relevant | 0 | 0 | The paper describes in vitro enzyme kinetics (IC50/S0.5) for ATP and Calcium, and mentions magnesium citrate only as a non-reversing agent, providing no pharmacodynamic exposure-response or dose-response data for magnesium citrate. |
 | popPK | Ranade_2001 | irrelevant | 2 | 0 | The paper is explicitly identified as a review that examines bioavailability and pharmacokinetics, but the provided evidence contains no original quantitative disposition parameters or numeric values for magnesium citrate. |
 | PD | Ranade_2001 | not_relevant | 2 | 1 | The text is a review abstract that qualitatively discusses the correlation between magnesium salt structure and pharmacodynamic effects but does not report specific numeric PD parameters or exposure-response data for magnesium citrate. |
-| popPK | Wilimzig_1996 | relevant | 8 | 2 | The study reports PK parameters (AUC, half-life) for trimagnesium dicitrate (a magnesium salt), but specific clearance or volume values are not provided in the text. |
-| popPK | unknown_2018 | irrelevant | 0 | 0 | The evidence consists only of a conference citation with no study details, drug information, or pharmacokinetic data. |
+| popPK | Wilimzig_1996 | relevant | 8 | 4 | The study reports PK parameters (AUC, half-life, compartmental model) for magnesium citrate in humans, but specific clearance and volume values are not explicitly listed in the text. |
+| popPK | unknown_2018 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is only a conference header and does not contain any data, analysis, or parameters regarding magnesium citrate pharmacodynamics. |
-| popPK | unknown_2019 | irrelevant | 0 | 0 | The provided evidence contains only a conference title and no pharmacokinetic data or study details for magnesium citrate. |
+| popPK | unknown_2019 | irrelevant | 0 | 0 | no_text gate: only 32 chars of text extracted (&lt; 400) |
 | PD | unknown_2019 | not_relevant | 0 | 0 | The provided text is only a title/header for conference proceedings and contains no data, analysis, or parameters regarding magnesium citrate pharmacodynamics. |
 
 ---

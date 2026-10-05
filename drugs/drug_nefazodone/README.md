@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Nefazodone hydrochloride (trade name Serzone) is an antidepressant drug marketed by Bristol-Myers Squibb. Its sale was discontinued in 2003 in some countries, due to the small possibility of hepatic (liver) injury. Drug-induced hepatic injuries were associated with an risk of elevated need for a liver transplant, or even death, with the incidence of severe liver damage was shown to be approximately 1 in 250,000 to 300,000 patient-years. On May 20, 2004, Bristol-Myers Squibb discontinued the sale of Serzone in the United States.
+Nefazodone is an antidepressant that was used to treat depression and has also been studied for conditions such as post-traumatic stress disorder and neurotic disorders. It has been withdrawn from the market, mainly because of rare but serious liver injury, and is no longer widely available.
 
-**Indication.** For the treatment of depression.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q416632](https://www.wikidata.org/wiki/Q416632) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,9 +39,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…excreted unchanged in urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | liver | `ABCB11` substrate | DrugBank actor |
-| excretion | small intestine | <sub>“…after oral administration…”</sub> | prose |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor | DrugBank actor |
 

@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Flurbiprofen, a propionic acid derivative, is a nonsteroidal anti-inflammatory agent (NSAIA) with antipyretic and analgesic activity. Oral formulations of flurbiprofen may be used for the symptomatic treatment of rheumatoid arthritis, osteoarthritis and anklylosing spondylitis. Flurbiprofen may also be used topically prior to ocular surgery to prevent or reduce intraoperative miosis. Flurbiprofen is structurally and pharmacologically related to fenoprofen, ibuprofen, and ketoprofen.
+Flurbiprofen is a non-steroidal anti-inflammatory drug used to treat pain and inflammation in conditions such as osteoarthritis and rheumatoid arthritis, and is also applied topically for joint, muscular, throat, and eye problems. It is an approved medicine used in several forms, including tablets, topical preparations, throat lozenges, and eye drops, though it carries a boxed warning.
 
-**Indication.** Flurbiprofen tablets are indicated for the acute or long-term symptomatic treatment of rheumatoid arthritis, osteorarthritis and anklosing spondylitis. It may also be used to treat pain associated with dysmenorrhea and mild to moderate pain accompanied by inflammation (e.g. bursitis, tendonitis, soft tissue trauma). Topical ophthalmic formulations may be used pre-operatively to prevent intraoperative miosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q419890](https://www.wikidata.org/wiki/Q419890) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -34,14 +34,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly and almost completely absorbed following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` other/unknown | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` substrate, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
 | excretion | kidney | `ABCC4` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
 | excretion | liver | `ABCC4` inhibitor | DrugBank actor |
-| excretion | mammary gland | <sub>“…poorly excreted into human milk…”</sub> | prose |
+| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), UGT2B4 (substrate).</sub>
 

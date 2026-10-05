@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Kim_2017 \u00b7 multiple_dose&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tegafur_Kim2017_parameter&quot;,&quot;label&quot;:&quot;Kim_2017_parameter&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -19,11 +19,11 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 2.3, model 3.23); the model does not reproduce the paper's time of the peak (tmax) (paper 1.7, model 3.06) (+3 more).**
+**The tegafur parent–metabolite model for Sprague-Dawley rats fails to reproduce the paper's terminal half-life (2.3 h vs 3.23 h) and tmax (1.7 h vs 3.06 h), uses a defaulted ka, and its structure does not match the reported parent–metabolite topology, so it was rejected.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent. Extracted — tegafur: AUClast 4.68e+04 ng·h/mL, AUC∞ 4.75e+04 ng·h/mL, CL/F 1.8 mL/min/kg, V/F 0.5 L/kg, tmax 2.4 h.
+Simulated as the paper dosed it, the model's terminal half-life is 3.23 h against the paper's 2.3 h (ratio 1.4027) and its tmax is 3.06 h against 1.7 h (ratio 1.7981); other reported tmax values (0.6 h, 1.2 h) and half-lives (1.2 h, 0.32166666666666666 h) also miss by ratios up to 10.0294. The model structure is a one-compartment enteral model rather than the parent–metabolite structure linking tegafur to 5-FU via Kfm, and the simulated output is the parent compartment rather than the measured analyte. The absorption rate constant ka and Tlag were left at library defaults instead of values from the paper, and bioavailability was assumed F=1 with Fm=1 and no molar correction, giving an apparent parameterization. One reported unit could not be converted to SI, so that parameter reached the model builder without an SI value. Extracted — tegafur: AUClast 4.68e+04 ng·h/mL, AUC∞ 4.75e+04 ng·h/mL, CL/F 1.8 mL/min/kg, V/F 0.5 L/kg, tmax 2.4 h.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
 
@@ -118,7 +118,7 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | deviation_id: not acceptable; defaulted_parameters: not acceptable; apparent_assumption: not acceptable; invented_absorption: not acceptable; input_model: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | 0.005280902847872477 | not captured | non-numeric value |
 | T1_cmax | reference | skipped | 72.6 | 0.005280902847872477 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 40.9 | 0.005280902847872477 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |

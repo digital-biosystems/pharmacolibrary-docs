@@ -17,26 +17,26 @@
   80.0
  ],
  "parameters": {
-  "Cl": 3.5833333333333335e-05,
+  "Cl": 4.361111111111111e-05,
   "F": 1.0,
   "MM": 0.481538,
   "Tlag": 0.0,
-  "VdPerKg": 0.004328571428571428,
+  "VdPerKg": 0.004514285714285715,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 5e-06,
-  "k12": 8.241657499083243e-05,
-  "k21": 4.846152187506739e-06,
+  "k12": 8.113572433192685e-05,
+  "k21": 4.735664737511801e-06,
   "ka": 5.0833333333333333e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 11182.364729458917
+  "central.C": 10042.48496993988
  },
  "reference_peaks": {
-  "central.C": 1.8679765287234766e-06
+  "central.C": 1.7354393182085103e-06
  },
- "stop_time": 90000.0,
+ "stop_time": 86400.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

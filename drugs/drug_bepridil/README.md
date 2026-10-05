@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A long-acting, non selective, calcium channel blocker with significant anti-anginal activity. The drug produces significant coronary vasodilation and modest peripheral effects. It has antihypertensive and selective anti-arrhythmia activities and acts as a calmodulin antagonist. It is no longer marketed in the United States, as it has been implicated in causing ventricular arrhythmias (ie. Torsade de pointes).
+Bepridil is a calcium channel blocker that was used to treat angina pectoris and arterial hypertension. It has been withdrawn from the market, reportedly because of safety concerns, and is no longer in general clinical use.
 
-**Indication.** For the treatment of hypertension, and chronic stable angina (classic effort-associated angina).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4890934](https://www.wikidata.org/wiki/Q4890934) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 

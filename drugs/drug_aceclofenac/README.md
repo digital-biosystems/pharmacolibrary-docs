@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Aceclofenac is an oral non-steroidal anti-inflammatory drug (NSAID) with marked anti-inflammatory and analgesic properties used to treat osteoarthritis, rheumatoid arthritis and ankylosing spondylitis. It is reported to have a higher anti-inflammatory action or at least comparable effects than conventional NSAIDs in double-blind studies [A19667, A19668, A19670]. Aceclofenac potently inhibits the cyclo-oxygenase enzyme (COX) that is involved in the synthesis of prostaglandins, which are inflammatory mediators that cause pain, swelling, inflammation, and fever. Aceclofenac belongs to BCS Class II as it possesses poor aqueous solubility [A19667]. It displays high permeability to penetrate into synovial joints where in patients with osteoarthritis and related conditions, the loss of articular cartilage in the area causes joint pain, tenderness, stiffness, crepitus, and local inflammation [A19666]. Aceclofenac is also reported to be effective in other painful conditions such as dental and gynaecological conditions [A19672]. In 1991, aceclofenac was developed as an analog of a commonly prescribed NSAID, [DB00586], via chemical modification in effort to improve the gastrointestinal tolerability of the drug. It is a more commonly prescribed drug in Europe.
+Aceclofenac is a non-steroidal anti-inflammatory drug used to relieve pain and inflammation in musculoskeletal and joint conditions. It is an approved medicine, available as oral antiinflammatory/rheumatic products and as topical preparations for joint and muscular pain.
 
-**Indication.** Aceclofenac is indicated for the relief of pain and inflammation in osteoarthritis, rheumatoid arthritis and ankylosing spondylitis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q481757](https://www.wikidata.org/wiki/Q481757) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -46,10 +46,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…rapidly and completely absorbed from the gastrointestinal tract…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP2C8` metabolism, `CYP2C9` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…About 20% of the dose is excreted into feces…”</sub> | prose |
-| excretion | kidney | <sub>“…The main route of elimination is via the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
 

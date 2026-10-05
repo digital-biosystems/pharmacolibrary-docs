@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Medifoxamine was marketed as an atypical antidepressant, with anxiolyitc properties in France, Spain, and Morrocco in the 1990s but was later withdrawn from the market due to it causing cases of hepatotoxicity [L5461, A174976].
+Medifoxamine is an antidepressant used to treat depression. It is classified as an approved other antidepressant, though it does not appear to be authorised across the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q544834](https://www.wikidata.org/wiki/Q544834) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

@@ -5,7 +5,7 @@
 
 # esomeprazole — `Esomeprazole_Chung2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,8 +18,6 @@
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
-
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q83: this record has none, the second reading 0.26. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,15 +64,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss:120b` | secondary_empty | 0.0 | none |
 
-<details><summary>1 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q83]` | not captured | 0.26 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

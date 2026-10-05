@@ -10,7 +10,9 @@
 
 ## About
 
-**Description.** Alanyl Glutamine is under investigation in clinical trial NCT00338221 (Clinical Trial of Alanyl-Glutamine or Glycine in Children With Persistent Diarrhea or Malnutrition).
+Alanyl glutamine is an amino acid dipeptide classified as an intravenous solution additive, studied as a source of glutamine for parenteral nutrition. It remains investigational and is not an approved medicine.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27144111](https://www.wikidata.org/wiki/Q27144111) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

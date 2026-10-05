@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Coumarin derivative that acts as a long-acting oral anticoagulant.
+Phenprocoumon is a vitamin K antagonist anticoagulant used to treat and prevent blood clots such as pulmonary embolism. It is an approved anticoagulant, used mainly in some European countries, though it has also been withdrawn in some markets.
 
-**Indication.** Used for the prevention and treatment of thromboembolic disease including venous thrombosis, thromboembolism, and pulmonary embolism as well as for the prevention of ischemic stroke in patients with atrial fibrillation (AF).
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q267896](https://www.wikidata.org/wiki/Q267896) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

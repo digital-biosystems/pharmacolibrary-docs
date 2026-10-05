@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Rescinnamine is an angiotensin-converting enzyme inhibitor used as an antihypertensive drug. It is an alkaloid obtained from _Rauwolfia serpentina_ and other species of _Rauwolfia_.
+Rescinnamine is a Rauwolfia alkaloid used to treat high blood pressure, alone or combined with a diuretic. It is an approved antihypertensive, though Rauwolfia alkaloids are now only rarely used in practice.
 
-**Indication.** For the treatment of hypertension.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q409978](https://www.wikidata.org/wiki/Q409978) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 

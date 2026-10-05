@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;vancomycin&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/&quot;},{&quot;label&quot;:&quot;Yoon_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vancomycin_Goyal2022_final_pk_model&quot;,&quot;label&quot;:&quot;Goyal_2022_final_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_population_typical_value&quot;,&quot;label&quot;:&quot;Goyal_2022_population_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vera_Yunca_2025_bacterial_load&quot;,&quot;label&quot;:&quot;Vera-Yunca_2025 \u00b7 bacterial load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/pd_Vera_Yunca_2025_bacterial_load.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vancomycin_Goyal2022_final_pk_model&quot;,&quot;label&quot;:&quot;Goyal_2022_final_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_population_typical_value&quot;,&quot;label&quot;:&quot;Goyal_2022_population_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Yoon2023_reference&quot;,&quot;label&quot;:&quot;Yoon_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Yoon2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vera_Yunca_2025_cfu&quot;,&quot;label&quot;:&quot;Vera-Yunca_2025 \u00b7 cfu&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/pd_Vera_Yunca_2025_cfu.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vancomycin — `Vancomycin_Yoon2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -21,32 +21,32 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — vancomycin: CL 4.32 L/h, V 38.6 L, Q 3.93 L/h, V2 66.8 L, kel 0.655 Creatinine clearance related parameter.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θfem: this record has none, the second reading -0.199; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of kcr (if age ≥30): this record has none, the second reading -0.0127. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:42:06.334935+00:00) predates the upstream re-run (2026-10-04 18:41:59.539530+00:00). Current validate status: `extracted`.
 
 ## Citation
 Yoon S et al., Model-informed precision dosing in vanc…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1252757](https://doi.org/10.3389/fphar.2023.1252757)
 
 ## Model component
-<dbs-pgx drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="needs_review" stale="false" population="patients with infections (mixed adults and children)" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="extracted" stale="true" population="patients with infections (including children)" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | θ CL (L/h) | `Q22` · CL | 4.32 | L/h | 1.2e-06 | [l] / [h] | 4.33 | llm_confirmed (0.6) | T3:row2:col1 | — | 29.1 (4.18% RSE) |
 | θ V (L) | `Q61` · V | 38.6 | L | 0.0386 | [l] | 2.69 | llm (0.6) | T3:row3:col1 | — | not captured |
 | θ Q (L/h) | `Q30` · Q | 3.93 | L/h | 1.0916666666666667e-06 | [l] / [h] | 9.31 | llm (0.6) | T3:row4:col1 | — | not captured |
 | θ V2 (L) | `Q64` · V2 | 66.8 | L | 0.0668 | [l] | 9.78 | llm_confirmed (0.6) | T3:row5:col1 | — | 101 (8.04% RSE) |
-| λ | `Q47` · kel | 0.655 | Creatinine clearance related parameter | not captured | [creatinineclearancerelatedparameter] | 3.66 | exact (1.0) | T3:row9:col1 | — | not captured |
+| λ | `Q47` · kel | 0.655 | 1/h | 0.00018194444444444445 | 1/h | 3.66 | exact (1.0) | T3:row9:col1 | — | not captured |
 | θREN | `Q900` · θREN | -0.237 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 | θFEM | `Q900` · θFEM | -0.199 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 | θDM | `Q900` · θDM | -0.151 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
@@ -59,6 +59,12 @@ Yoon S et al., Model-informed precision dosing in vanc…, Frontiers in pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'ω2 CL (CV(%))' routed out of structural estimates ('Between subject variability')
+- table section iiv: 'ω2 V2 (CV(%))' routed out of structural estimates ('Between subject variability')
+- table section residual_error: 'σ2 proportional trough (CV %))' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'σ2 additive trough (mg/L)' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'σ2 proportional peak (CV %))' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'σ2 additive peak (mg/L)' routed out of structural estimates ('Residual variability')
 - dropped unlinked row (NIL): 'kCr (if age ≥30) (yr-1)' — extend the ontology if this is a real PK parameter (source ['T3:row7:col1'])
 - dropped unlinked row (NIL): 'kCr (if age &lt;30) (yr-1)' — extend the ontology if this is a real PK parameter (source ['T3:row8:col1'])
 - unit_dimension_unknown: 'Creatinine clearance related parameter' (kel)
@@ -70,9 +76,8 @@ Yoon S et al., Model-informed precision dosing in vanc…, Frontiers in pharmaco
 - kept covariate coefficient θREN=-0.237 (covariate REN) — not an ontology parameter
 - kept covariate coefficient θFEM=-0.199 (covariate FEM) — not an ontology parameter
 - kept covariate coefficient θDM=-0.151 (covariate DM) — not an ontology parameter
+- implicit units: 'λ' → 1/h (from the popPK convention: 'The parameter is identified as a rate constant (specifically an exponent of renal function in the table caption, or elim')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vancomycin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -84,15 +89,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.833 (15/18 fields) | 3 |
+| `gpt-oss:120b` | partly confirmed | 0.944 (17/18 fields) | 1 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[θdm]` | -0.151 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θfem]` | not captured | -0.199 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θfem]` | -0.199 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kcr (if age ≥30)]` | not captured | -0.0127 | only_one_extracted |
 
 </details>
 
@@ -111,9 +114,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row2:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row4:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row9:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row5:col1'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | Creatinine clearance related parameter | not captured | not captured | ['T3:row9:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.32 | not captured | not captured | ['T3:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.32 L/h | not captured | not captured | ['T3:row2:col1'] |
@@ -136,21 +139,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_modelica.zip" download>Vancomycin_Yoon2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab.zip" download>Vancomycin_Yoon2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab_simbio.zip" download>Vancomycin_Yoon2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_sbml.zip" download>Vancomycin_Yoon2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_modelica.zip" download>Vancomycin_Yoon2023_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab.zip" download>Vancomycin_Yoon2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab_simbio.zip" download>Vancomycin_Yoon2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_sbml.zip" download>Vancomycin_Yoon2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_cellml.zip" download>Vancomycin_Yoon2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference.svg" alt="Vancomycin_Yoon2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 2000 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg parenteral (J01XA01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Vancomycin_Yoon2023_reference_params.json` · controls `Vancomycin_Yoon2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-22 03:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 18:41 UTC</sub>

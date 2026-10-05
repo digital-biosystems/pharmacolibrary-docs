@@ -9,11 +9,9 @@
 
 ## About
 
-**Description.** Metreleptin, a recombinant analog of the human hormone leptin, is an orphan drug used to treat complications of leptin deficiency in people with lipodystrophy. Lipodystrophies include a range of disorders characterized by the reduction, absence, or altered distribution of adipose tissue.[A263126] Complications of lipodystrophy include metabolic abnormalities such as hypertriglyceridemia, insulin resistance, diabetes mellitus, and fatty liver disease.[A263126] These metabolic abnormalities are often aggravated by excessive food intake, which is further aggravated by leptin deficiency, a protein secreted by adipose tissue.[L41315] Administration of metreleptin results in improvement of metabolic symptoms including improvements in insulin resistance, reduced HbA1c and fasting glucose, reduced triglycerides, and reductions in food intake. Metreleptin is produced in _E. coli_ and differs from native human leptin by the addition of a methionine residue at its amino terminus.[L41315]
+Metreleptin is a protein drug used to treat lipodystrophy, including acquired and familial partial forms. It is authorised in the European Union, but carries a boxed warning, so its use is limited.
 
-In February 2014, metreleptin was approved by the FDA for the treatment of complications of leptin deficiency, as an adjunct to diet, in patients with congenital generalized or acquired generalized lipodystrophy.[L41315] Metreleptin was approved by Health Canada in January 2024 for the same patient population, in addition to patients with partial lipodystrophy.[L49901]
-
-**Indication.** Metreleptin is indicated as an adjunct to diet as replacement therapy to treat the complications of leptin deficiency in patients with congenital or acquired generalized lipodystrophy.[L41315,L49901] In Canada, it is additionally approved for use in patients ≥12 years old with confirmed familial partial lipodystrophy or acquired partial lipodystrophy (Barraquer-Simons syndrome) and persistent significant metabolic disease for whom standard treatments have failed to achieve adequate metabolic control.[L49901]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q17143468](https://www.wikidata.org/wiki/Q17143468) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -33,8 +31,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…renal clearance is the major route of metreleptin elimination…”</sub> | prose |
-| excretion | kidney | <sub>“…renal clearance is the major route of metreleptin elimination…”</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: LEPR (target).</sub>
 

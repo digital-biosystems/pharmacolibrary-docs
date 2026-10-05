@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Treosulfan is a prodrug alternative to [busulfan] for myeloablative conditioning prior to hematopoietic stem cell transplantation.[L52245] 
+Treosulfan is an alkylating anticancer drug used as conditioning treatment before hematopoietic stem cell transplantation. It is authorised in the European Union and is also being investigated for other uses.
 
-It was approved by the EMA in June 2019[L16965] and by the FDA in January 2025 for use in combination with [fludarabine].[L52575]
-
-**Indication.** Treosulfan is indicated in combination with [fludarabine] as a preparative regimen for allogeneic hematopoietic stem cell transplantation (alloHSCT) in adult and pediatric patients 1 year of age and older with acute myeloid leukemia or myelodysplastic syndrome.[L52245]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7838652](https://www.wikidata.org/wiki/Q7838652) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -39,7 +37,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>“…excreted unchanged in the urine…”</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
 

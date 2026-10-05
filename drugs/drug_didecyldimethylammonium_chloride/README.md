@@ -8,6 +8,12 @@
 - **molar mass:** 326.6232 g/mol (C22H48N) — DrugBank
 - **groups:** approved, investigational
 
+## About
+
+Didecyldimethylammonium chloride is a quaternary ammonium antiseptic and disinfectant used to disinfect skin and surfaces. It is an approved drug and remains in use as a dermatological antiseptic.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27095047](https://www.wikidata.org/wiki/Q27095047) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

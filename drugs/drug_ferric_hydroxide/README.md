@@ -8,6 +8,12 @@
 - **molar mass:** 106.866 g/mol (FeH3O3) — DrugBank
 - **groups:** investigational
 
+## About
+
+Ferric hydroxide is a trivalent iron compound classified as an oral iron preparation, a class of medicines used to treat anaemia. It appears to be investigational rather than an established marketed medicine, with no authorisation record found in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q15491377](https://www.wikidata.org/wiki/Q15491377) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

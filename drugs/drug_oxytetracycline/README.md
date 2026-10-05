@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** A tetracycline analog isolated from the actinomycete streptomyces rimosus and used in a wide variety of clinical conditions.
+Oxytetracycline is a broad-spectrum tetracycline antibiotic used to treat bacterial infections such as acne, gonorrhea, chlamydia infection, rickettsiosis, and gram-negative bacterial infections. It remains in use for humans and is also veterinary-approved, given by mouth or applied topically to the skin, mouth, eye, or genital area.
 
-**Indication.** Oxytetracycline is indicated for treatment of infections caused by a variety of Gram positive and Gram negative microorganisms including <i>Mycoplasma pneumoniae, Pasteurella pestis, Escherichia coli, Haemophilus influenzae</i> (respiratory infections), and <i>Diplococcus pneumoniae</i>.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q411646](https://www.wikidata.org/wiki/Q411646) and the WHO ATC classification; not checked by a person.</small>
 
 ## Molecules and molar masses
 
@@ -40,7 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Readily absorbed following oral administration…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `SLC22A7` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `SLC22A7` inhibitor/substrate | DrugBank actor |

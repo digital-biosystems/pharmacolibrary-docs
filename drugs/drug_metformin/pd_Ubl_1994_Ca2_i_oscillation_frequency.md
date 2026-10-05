@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Metformin concentrations (in mM) directly inhibit the frequency of phenylephrine-induced [Ca2+]i oscillations in permeabilized hepatocytes, with an IC50 of 0.1 mM and a maximal effect of 65%. The paper describes this as a concentration-dependent reduction but does not specify the underlying kinetic mechanism (e.g., production vs. elimination) or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ubl_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

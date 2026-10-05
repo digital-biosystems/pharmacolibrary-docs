@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** The first mixed agonist-antagonist analgesic to be marketed. It is an agonist at the kappa and sigma opioid receptors and has a weak antagonist action at the mu receptor. (From AMA Drug Evaluations Annual, 1991, p97)
+Pentazocine is an opioid painkiller used to treat moderate to severe pain. It is an approved medicine and is also approved for veterinary use.
 
-**Indication.** For the relief of moderate to severe pain.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q105290238](https://www.wikidata.org/wiki/Q105290238) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -62,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRK1 (target), OPRM1 (target), SIGMAR1 (target).</sub>
 

@@ -7,6 +7,12 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Aminobutyric acid (GABA), a neurotransmitter, is classified as an antiepileptic drug used for epilepsy. Its current availability and extent of use are unclear, as no marketing or regulatory status information is provided.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q210021](https://www.wikidata.org/wiki/Q210021) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

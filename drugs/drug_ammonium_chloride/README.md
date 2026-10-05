@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Ammonium chloride is an inorganic compound with the formula NH4Cl. It is highly soluble in water producing mildly acidic solutions.
+Ammonium chloride is used as a urinary acidifier and as an electrolyte additive in intravenous solutions to help correct low chloride or metabolic alkalosis. It is an approved medicine and also approved for veterinary use, though it is not authorised centrally in the European Union.
 
-**Indication.** 1. Expectorant in cough syrups.
-2. The ammonium ion (NH4+) in the body plays an important role in the maintenance of acid-base balance. The kidney uses ammonium (NH4+) in place of sodium (Na+) to combine with fixed anions in maintaining acid-base balance, especially as a homeostatic compensatory mechanism in metabolic acidosis.
-The therapeutic effects of Ammonium Chloride depend upon the ability of the kidney to utilize ammonia in the excretion of an excess of fixed anions and the conversion of ammonia to urea by the liver, thereby liberating hydrogen (H+) and chloride (Cl–) ions into the extracellular fluid.
-Ammonium Chloride Injection, USP, after dilution in isotonic sodium chloride injection, may be indicated in the treatment of patients with:
- (1) hypochloremic states and (2) metabolic alkalosis.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q188543](https://www.wikidata.org/wiki/Q188543) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -55,9 +51,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…absorption of ammonium chloride given by mouth was practically complete…”</sub> | prose |
-| metabolism | liver | <sub>“…Ammonium ion is converted to urea in the liver…”</sub> | prose |
-| excretion | kidney | <sub>“…Excretion: Urine…”</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

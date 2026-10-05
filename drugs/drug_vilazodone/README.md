@@ -10,9 +10,9 @@
 
 ## About
 
-**Description.** Vilazodone is a novel compound with combined high affinity and selectivity for the 5-hydroxytryptamine (5-HT) transporter and 5-HT(1A) receptors[Label,A177622]. Vilazodone may also be associated with less sexual dysfunction and weight gain[A6947]. Vilazodone was given FDA approval on January 21, 2011[L6046,A177622].
+Vilazodone is an antidepressant of the SSRI type, listed for treating anxiety. It is an approved medicine, used mainly in the United States; it is not authorised in the European Union.
 
-**Indication.** Vilazodone is approved for treatment of major depressive disorder.[Label,A38477,A177622]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q408588](https://www.wikidata.org/wiki/Q408588) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -56,8 +56,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` metabolism, `CYP2C19` metabolism/substrate, `CYP2D6` metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…2% of the dose is recovered unchanged in the feces…”</sub> | prose |
-| excretion | kidney | <sub>“…recovered unchanged in the urine…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | — | brain | `SLC6A4` inhibitor/target | DrugBank actor |
 | — | platelet | `SLC6A4` inhibitor/target | DrugBank actor |
 

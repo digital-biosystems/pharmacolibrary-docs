@@ -10,27 +10,19 @@
 
 ## About
 
-**Description.** Glisoxepide is one of the sulphonamide-derived oral antidiabetic drugs. It inhibits the uptake of bile acids into isolated rat hepatocytes. However it inhibits taurocholate uptake only in the absence of sodium ions. Glisoxepide uptake could be further inhibited by blockers of the hepatocellular monocarboxylate transporter, by the loop diuretic bumetanide, by 4,4'-diisothiocyano-2,2'-stilbenedisulfonate (DIDS) and by sulphate.  These results are consistent with the transport of glisoxepide via the transport system for the unconjugated bile acid cholate. [A31819,A31820]
+Glisoxepide is a sulfonylurea, a class of blood glucose lowering drugs used to treat diabetes. It is considered investigational and does not appear to be an approved medicine in the European Union.
 
-**Indication.** For the treatment of diabetes mellitus type 2.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5569932](https://www.wikidata.org/wiki/Q5569932) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 23:24 | 1:12 | 0/0/0 | 1/0/0 | 0/0/0 | 6,832/1,915 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-05 00:03 | 0:23 | 0/0/0 | 0/0/0 | 0/0/0 | 17,526/123 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Haupt_1971_2_blood_glucose](drugs/drug_glisoxepide/pd_Haupt_1971_2_blood_glucose.md) | name ← tolbutamide · stimulation effect | — | Haupt E et al., Pharmacodynamic aspects of tolbutamide,…, Diabetologia (1971) | [10.1007/BF01212061](https://doi.org/10.1007/BF01212061) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Haupt_1971_2_free_fatty_acids](drugs/drug_glisoxepide/pd_Haupt_1971_2_free_fatty_acids.md) | name ← tolbutamide · stimulation effect | — | Haupt E et al., Pharmacodynamic aspects of tolbutamide,…, Diabetologia (1971) | [10.1007/BF01212061](https://doi.org/10.1007/BF01212061) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Haupt_1971_2_serum_insulin](drugs/drug_glisoxepide/pd_Haupt_1971_2_serum_insulin.md) | name ← tolbutamide · stimulation effect | — | Haupt E et al., Pharmacodynamic aspects of tolbutamide,…, Diabetologia (1971) | [10.1007/BF01212061](https://doi.org/10.1007/BF01212061) |
 
 ## ADME sites
 
@@ -64,7 +56,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Chandra_2021.pdf` | Chandra A et al., Identification of potential inhibitors…, Journal of biomolecular str… (2021) | pd | 4 | [10.1080/07391102.2020.1775127](https://doi.org/10.1080/07391102.2020.1775127) | [32462970](https://www.ncbi.nlm.nih.gov/pubmed/32462970) | metadata signals extractable PD data (IC50) |
 | `Fückel_1992.pdf` | Fückel D et al., Interaction of sulfonylureas with the t…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90628-h](https://doi.org/10.1016/0014-2999(92)90628-h) | [1618280](https://www.ncbi.nlm.nih.gov/pubmed/1618280) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T23:24:09.481628+00:00</sub>
+<sub>queue written 2026-10-05T00:03:42.500800+00:00</sub>
 
 ## Screened and excluded
 
@@ -75,7 +67,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Fückel_1992 | irrelevant | 0 | 0 | no_text gate: only 78 chars of text extracted (&lt; 400) |
 | PD | Fückel_1992 | not_relevant | 0 | 0 | The paper focuses on the interaction of sulfonylureas with bile acid transport in hepatocytes and does not report pharmacodynamic or exposure-response data for glisoxepide. |
 | popPK | Haupt_1971 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of insulin secretion and blood glucose levels, not a pharmacokinetic study reporting disposition parameters like clearance or volume for glisoxepide. |
-| popPK | Haupt_1971_2 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of dose-response and insulin secretion, not a pharmacokinetic study reporting disposition parameters like clearance or volume for glisoxepide. |
+| popPK | Haupt_1971_2 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of dose-response and insulin secretion, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Irsigler_1979 | irrelevant | 1 | 0 | The study is a clinical efficacy trial comparing sulfonylureas and explicitly states there was insufficient evidence for pharmacokinetic differential diagnosis, reporting no quantitative PK parameters. |
 | PD | Irsigler_1979 | not_relevant | 1 | 0 | The study is a qualitative clinical comparison of sulfonylureas in small patient groups without reporting numeric concentration-effect parameters or a formal PK/PD model. |
 | popPK | Kolb_1974 | irrelevant | 0 | 0 | no_text gate: only 69 chars of text extracted (&lt; 400) |

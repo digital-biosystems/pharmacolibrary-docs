@@ -10,13 +10,9 @@
 
 ## About
 
-**Description.** Barnidipine is a long-acting novel calcium antagonist that belongs to the dihydropyridine (DHP) group of calcium channel blockers. Used in the treatment of hypertension, barnidipine displays high affinity for the calcium channels of the smooth muscle cells in the vascular wall [L1131] and selectivity against cardiovascular L-type calcium channels [A7842]. Barnidipine contains two chiral centres thus can have four possible enantiomers. The active component is composed of a single optical isomer (*3'S, 4S* configuration), which is the most potent and longest-acting of the four enantiomers [A31567]. Compared to several other calcium antagonists which are racemates, the barnidipine compound consisting of a single enantiomer may offer a high degree of pharmacological selectivity [A31567].
+Barnidipine is a dihydropyridine calcium channel blocker, a drug class mainly affecting blood vessels that is typically used to treat high blood pressure. It is considered investigational and is not authorised in the European Union.
 
-According to a dose-ranging, multicentre, placebo-controlled, double-blind study in patients with mild to moderate hypertension, the antihypertensive response from barnidipine treatment was maintained after a 1-year and 2-year follow-up period in 91% of the patients who had an initial response to the drug [A7842]. In two European multicentre randomized, double-blind trials, barnidipine was shown to possess equivalent antihypertensive efficacy to amlodipine and nitrendipine, but produced fewer class-specific side-effects [A31568]. It also demonstrated clinical efficacy which is similar to that of atenolol, enalapril and hydrochlorothiazide [A7842]. 
-
-It is available in modified-release oral tablets under the brand name Vasexten to be taken once daily in the morning. Barnidipine has a gradual onset of action and is shown to be well tolerated in patients. It does not produce reflex tachycardia [A7842].
-
-**Indication.** Indicated for the treatment of mild to moderate essential hypertension and management of chronic stable angina.
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q925327](https://www.wikidata.org/wiki/Q925327) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -40,12 +36,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | liver | <sub>“…extensive first-pass hepatic metabolism…”</sub> | prose |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
 | metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…metabolized into feces (60%)…”</sub> | prose |
-| excretion | kidney | <sub>“…urine (40%)…”</sub> | prose |
-| excretion | lung | <sub>“…breath (1%)…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
 
 <sub>Actors without a tissue in the table: CACNA1C (target), CACNA1G (inhibitor), CACNA1G (target), CACNA1H (inhibitor), CACNA1H (target).</sub>
 

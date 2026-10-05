@@ -10,11 +10,9 @@
 
 ## About
 
-**Description.** Acoramidis is a small molecule stabilizer of transthyretin (TTR) for use in patients with TTR amyloidosis.[L51958] Similar to the previously developed [tafamidis], acoramidis is used to stabilize TTR in its tetrameric form, preventing the formation of amyloidogenic monomers and the progression of amyloidosis.[A264768] Although they share a mechanism of action, acoramidis is more selective for TTR and is a more potent stabilizer when compared to tafamidis.[A264768]
+Acoramidis is a heart medicine used to treat familial amyloid polyneuropathy, a rare inherited condition affecting the nerves. It is authorised in the European Union and remains under investigation for other uses.
 
-Acoramidis has been in development since at least 2013.[A264808] It was brought to market by BridgeBio Pharma and approved by the FDA in November 2024 to reduce negative cardiovascular outcomes in patients with cardiomyopathy caused by TTR amyloidosis.[L51958,L51968]
-
-**Indication.** Acoramidis is indicated to reduce cardiovascular death and cardiovascular-related hospitalization in adult patients with cardiomyopathy of wild-type or variant transthyretin-mediated amyloidosis (ATTR-CM).[L51958]
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27451739](https://www.wikidata.org/wiki/Q27451739) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
@@ -48,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` inhibitor, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…approximately 32% of the radioactivity was recovered in the feces…”</sub> | prose |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: TTR (modulator).</sub>

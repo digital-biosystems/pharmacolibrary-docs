@@ -8,11 +8,17 @@
 - **molar mass:** 272.32 g/mol (C14H12N2O2S) — DrugBank
 - **groups:** experimental
 
+## About
+
+Zolimidine is a drug classified under other drugs for peptic ulcer and gastro-oesophageal reflux disease, suggesting it was intended for acid-related stomach disorders. It is currently listed only as an experimental compound, with no authorisation records, so its current availability is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q8073565](https://www.wikidata.org/wiki/Q8073565) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:09 | 2:13 | 0/0/0 | 0/0/0 | 0/0/0 | 62,260/2,362 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-04 12:20 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 24,890/947 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -37,9 +43,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Schraven_1976.pdf` | Schraven E et al., [The pharmacokinetics of 14C-zolimidine…, Arzneimittel-Forschung (1976) | popPK | 9 | not captured | [947201](https://pubmed.ncbi.nlm.nih.gov/947201) | The paper describes a 3-compartment PK model for zolimidine in rats, but the specific numeric parameter values (CL, V, Q, ka) are not present in the provided text, only qualitative descriptions and absorption percentages. |
+| `Schraven_1976.pdf` | Schraven E et al., [The pharmacokinetics of 14C-zolimidine…, Arzneimittel-Forschung (1976) | popPK | 9 | not captured | [947201](https://pubmed.ncbi.nlm.nih.gov/947201) | The study describes a 3-compartment PK model for zolimidine in rats, but specific numeric parameter values (CL, V, ka) are not present in the provided text. |
 
-<sub>queue written 2026-09-18T09:09:02.194432+00:00</sub>
+<sub>queue written 2026-10-04T12:20:14.080186+00:00</sub>
 
 ## Screened and excluded
 
@@ -49,23 +55,23 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Almirante_1974 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
 | popPK | Almirante_1974_2 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
 | popPK | Belohlavek_1979 | irrelevant | 0 | 0 | no_text gate: only 300 chars of text extracted (&lt; 400) |
-| popPK | Bhutia_2020 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study describing the chemical synthesis of zolimidine, not a pharmacokinetic study, and contains no disposition parameters. |
-| popPK | Bombardelli_1983 | irrelevant | 0 | 0 | The study focuses on the analysis of gastric proteoglycans using gas chromatography and does not report any pharmacokinetic parameters for zolimidine. |
-| popPK | Ghosh_2021 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on C-H alkylation of zolimidine, not a pharmacokinetic study, and contains no PK parameters. |
-| popPK | Guo_2023 | irrelevant | 0 | 0 | The paper is an organic chemistry study on the synthesis of imidazo[1,2-a]pyridines from lignin, mentioning zolimidine only as a structural example of a commercial drug, and contains no pharmacokinetic data. |
-| popPK | Kamboj_2024 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on the enzymatic synthesis of imidazopyridine derivatives and does not contain any pharmacokinetic data for zolimidine. |
-| popPK | Katsura_1991 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no pharmacokinetic data or text regarding zolimidine. |
+| popPK | Bhutia_2020 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study describing the chemical synthesis of zolimidine, not a pharmacokinetic study. |
+| popPK | Bombardelli_1983 | irrelevant | 0 | 0 | The study analyzes gastric proteoglycan modifications in rats using gas chromatography and does not report any pharmacokinetic parameters for zolimidine. |
+| popPK | Ghosh_2021 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on C-H alkylation of zolimidine, not a pharmacokinetic study. |
+| popPK | Guo_2023 | irrelevant | 0 | 0 | The paper is an organic chemistry study on the synthesis of imidazo[1,2-a]pyridines from lignin, mentioning zolimidine only as a structural example of a commercial drug, with no pharmacokinetic data. |
+| popPK | Kamboj_2024 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on the enzymatic synthesis of imidazo[1,2-a]pyridine derivatives and does not contain any pharmacokinetic data for zolimidine. |
+| popPK | Katsura_1991 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no scientific content or pharmacokinetic data for zolimidine. |
 | popPK | La_1980 | irrelevant | 0 | 0 | no_text gate: only 369 chars of text extracted (&lt; 400) |
 | PD | La_1980 | not_relevant | 0 | 0 | The paper describes a high-performance liquid chromatography method for analyzing zolimidine in dosage forms and contains no pharmacodynamic or exposure-response data. |
 | popPK | Ostrowski_1976 | irrelevant | 2 | 0 | The study is a qualitative tissue distribution analysis (autoradiography) in rats and does not report quantitative compartmental PK parameters (CL, V, ka) for zolimidine. |
-| popPK | Parodi_1984 | irrelevant | 0 | 0 | The study investigates the effect of zolimidine on gastric mucus secretion and does not report any pharmacokinetic parameters. |
+| popPK | Parodi_1984 | irrelevant | 0 | 0 | The study investigates the effect of zolimidine on gastric mucus secretion (biochemical components) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Prasher_2022 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
 | popPK | Rizzi_1975 | irrelevant | 0 | 0 | no_text gate: only 91 chars of text extracted (&lt; 400) |
-| popPK | Schraven_1976 | relevant | 9 | 2 | The paper describes a 3-compartment PK model for zolimidine in rats, but the specific numeric parameter values (CL, V, Q, ka) are not present in the provided text, only qualitative descriptions and absorption percentages. |
+| popPK | Schraven_1976 | relevant | 9 | 2 | The study describes a 3-compartment PK model for zolimidine in rats, but specific numeric parameter values (CL, V, ka) are not present in the provided text. |
 | popPK | Song_2026 | irrelevant | 0 | 0 | The paper describes a chemical synthesis method (C-H arylation) for zolimidine derivatives, not a pharmacokinetic study. |
-| popPK | Tali_2023 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study describing the synthesis of imidazo[1,2-a]pyridines and late-stage functionalization of zolimidine, containing no pharmacokinetic data. |
-| popPK | Tyagi_2024 | irrelevant | 0 | 0 | The paper is a review of copper-based pyridine derivatives and synthesis methods, not a pharmacokinetic study, and contains no quantitative PK parameters for zolimidine. |
-| popPK | Zhou_2018 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study describing the fluorination of zolimidine, not a pharmacokinetic study. |
+| popPK | Tali_2023 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study describing the synthesis of imidazo[1,2-a]pyridines and functionalization of zolimidine, containing no pharmacokinetic data. |
+| popPK | Tyagi_2024 | irrelevant | 0 | 0 | The paper is a review of copper-based pyridine derivatives and synthesis methods, mentioning zolimidine only as a market example without providing any pharmacokinetic data. |
+| popPK | Zhou_2018 | irrelevant | 0 | 0 | The paper describes a synthetic chemistry method for fluorinating zolimidine, not a pharmacokinetic study. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>
