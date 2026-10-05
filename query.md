@@ -12,7 +12,7 @@
       <input id="pkq-ask" type="text" enterkeyhint="send" placeholder="Ask about a drug, a parameter, a gene…" autocomplete="off" aria-label="Your question">
       <button id="pkq-askbtn" class="pkq-send" type="button" aria-label="Ask">Ask</button>
     </div>
-    <p id="pkq-llmnote" class="pkq-llmnote" aria-live="polite">A small language model can read questions the keywords miss and answer in prose. It runs on your GPU (WebGPU) and downloads once into this browser; nothing is sent anywhere. Thinking is optional and off by default; when enabled, streamed reasoning appears in a compact box before the answer. The model never supplies a number: values come from the database, and a sentence with a number the rows do not hold is dropped.</p>
+    <p id="pkq-llmnote" class="pkq-llmnote" aria-live="polite">A small language model can read questions the keywords miss and answer in prose. It runs on your GPU (WebGPU) and downloads once into this browser; nothing is sent anywhere. Thinking is optional and off by default; when enabled, streamed reasoning appears in a compact box before the answer. With a model on, the page also downloads background texts (~26 MB, once: DrugBank, ClinPGx guidelines and annotations, the abstracts behind the records); the passages that match the question are put in front of the model and listed under the answer. The model never supplies a number: a sentence with a number that neither the rows nor those passages hold is dropped.</p>
   </div>
 </div>
 

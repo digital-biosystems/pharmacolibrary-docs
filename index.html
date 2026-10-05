@@ -104,6 +104,9 @@
       background: #f1f5f9; color: #64748b; font-size: 11px; line-height: 1.35; white-space: pre-wrap; }
     .pkq-thinking-box[hidden] { display: none; }
     .pkq-thinking-label { font-weight: 600; color: #475569; }
+    .pkq-sources { margin: 4px 0 0; padding-left: 22px; font-size: 12.5px; color: #475569; }
+    .pkq-sources li { margin: 0 0 6px; }
+    .pkq-source-text { color: #64748b; font-size: 12px; line-height: 1.4; }
     .pkq-a .pkq-sub { display: block; margin-top: 6px; font-size: 12.5px; color: #64748b; }
     .pkq-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 6px; }
     .pkq-chip { font-size: 11.5px; padding: 1px 8px; border-radius: 999px; background: #eef2ff;
@@ -732,8 +735,11 @@
         askScript().then(glossary).then(function () {
           return answerEngine ? markdownScript() : null;
         }).then(function () {
+          return answerEngine ? window.pkdb.loadKnowledge(function (m) { text.textContent = m; }) : null;
+        }).then(function (kdb) {
+          if (answerEngine) text.textContent = answerEngine.name + ' is reading the question…';
           return window.pkAsk.answer(q, DB, lexicon(), {
-            engine: answerEngine, explain: !!answerEngine, history: HIST.slice(-3),
+            engine: answerEngine, explain: !!answerEngine, history: HIST.slice(-3), knowledge: kdb,
             onText: function (partial) {
               text.className = 'pkq-text streaming';
               renderMarkdown(text, partial);   // parse Markdown, then sanitize before insertion
@@ -781,12 +787,15 @@
             a.appendChild(node('span', 'pkq-sub', 'From the site glossary (draft definitions, pending expert review)' +
               (ENGINE ? '.' : '. Choose a language model in the list below for an answer in your own words.')));
           } else if (ans.general && ans.explanation) {             // a model, in words
-            a.appendChild(node('span', 'pkq-sub', 'Answered by ' + answerEngine.name + (gl.length
+            var read = ans.passages && ans.passages.length;
+            a.appendChild(node('span', 'pkq-sub', 'Answered by ' + answerEngine.name + (read
+              ? ' from ' + ans.passages.length + ' passage(s) listed below' + (gl.length ? ' and the site glossary — ' + titles : '') + '.'
+              : gl.length
               ? ' from the site glossary — ' + titles + ' (draft definitions, pending expert review).'
               : ans.sqlError
                 ? ' from general knowledge because the database query could not be built; verify it independently.'
                 : ' from general knowledge: no glossary entry covers this, so check it against a textbook.') +
-              (ans.dropped.length ? ' ' + ans.dropped.length + ' sentence(s) giving a drug-specific number were dropped — values come from the data.' : '') +
+              (ans.dropped.length ? ' ' + ans.dropped.length + ' sentence(s) giving a drug-specific number no passage holds were dropped.' : '') +
               (stats ? ' · ' + stats : '')));
           }
           HIST.push({ q: q, a: ans.explanation || ans.summary, intent: plan.intent });
@@ -795,9 +804,26 @@
           }
           if (ans.explanation && !ans.general) {
             a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + answerEngine.name +
-              ', its numbers checked against the rows' + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') +
+              ', its numbers checked against the rows' +
+              (ans.passages && ans.passages.length ? ' and the ' + ans.passages.length + ' passage(s) below' : '') + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') +
               (gl.length ? '; the why draws on the site glossary — ' + titles : '') +
               (stats ? ' · ' + stats : '') + '.'));
+          }
+          // the passages the model was shown, numbered as it cites them
+          if (ans.explanation && ans.passages && ans.passages.length) {
+            var src = node('details', 'pkq-sqlbox'), ol = node('ol', 'pkq-sources');
+            src.appendChild(node('summary', null, 'Sources the model read (' + ans.passages.length + ')'));
+            ans.passages.forEach(function (h) {
+              var li = node('li'), a2 = node(h.url ? 'a' : 'span', null, h.source);
+              if (h.url) { a2.href = h.url; a2.target = '_blank'; a2.rel = 'noopener'; }
+              li.appendChild(a2);
+              li.appendChild(document.createTextNode(' — ' + h.title + (h.license ? ' (' + h.license + ')' : '')));
+              var quote = node('div', 'pkq-source-text', h.text.length > 320 ? h.text.slice(0, 320) + '…' : h.text);
+              li.appendChild(quote);
+              ol.appendChild(li);
+            });
+            src.appendChild(ol);
+            a.appendChild(src);
           }
           if (ans.sql) {
             var box = node('div', 'pkq-table');
@@ -1415,7 +1441,25 @@
         }).catch(function (e) { admePromise = null; throw e; });
         return admePromise;
       }
-      return { load: load, get: function () { return DB; }, loadAdme: loadAdme, getAdme: function () { return ADME; } };
+      // The passages the Query chat's model reads (export.knowledge_sqlite): fetched only when a
+      // reader turns a model on. A missing pointer is not an error — the chat answers from the
+      // rows alone — so this resolves to null instead of rejecting.
+      var knowPromise = null;
+      function loadKnowledge(onStatus) {
+        if (knowPromise) return knowPromise;
+        onStatus = onStatus || function () {};
+        knowPromise = engine(onStatus).then(function (SQL) {
+          return fetch('data/knowledge-latest.json').then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (meta) {
+              if (!meta) return null;
+              onStatus('Fetching the background texts (' + Math.round(meta.bytes / 1e6) + ' MB, once)…');
+              return bytes('data/' + meta.file).then(function (buf) { return new SQL.Database(new Uint8Array(buf)); });
+            });
+        }).catch(function () { knowPromise = null; return null; });
+        return knowPromise;
+      }
+      return { load: load, get: function () { return DB; }, loadAdme: loadAdme, getAdme: function () { return ADME; },
+               loadKnowledge: loadKnowledge };
     })();
   </script>
 

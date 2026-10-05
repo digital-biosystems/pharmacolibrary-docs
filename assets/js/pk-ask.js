@@ -718,7 +718,7 @@
   // ── the explanation: the model's words, the rows' numbers ───────────────────────────────
   var EXPLAIN_COLS = ['drug', 'parameter', 'value', 'unit', 'compound', 'population', 'paper', 'gene', 'mechanism',
                       'response', 'model_family', 'driver_kind', 'year', 'title', 'n', 'spread', 'domain', 'status'];
-  function explainMessages(question, plan, res, summary, general, entries) {
+  function explainMessages(question, plan, res, summary, general, entries, passages) {
     var ref = (entries || []).map(function (e) { return '[' + e.title + '] ' + e.text; }).join('\n');
     var r = res && res[0];
     var cols = r ? r.columns.filter(function (c) { return EXPLAIN_COLS.indexOf(c) >= 0; }) : [];
@@ -728,15 +728,21 @@
     }) : [];
     return [
       { role: 'system', content: 'Answer the question for a pharmacologist, as fully as the question needs, from the ' +
-        'database result below' + (general ? ', adding general pharmacology where the question asks why or how' : ' only') +
+        'database result' + (passages && passages.length ? ' and the passages' : '') + ' below' +
+        (general ? ', adding general pharmacology where the question asks why or how' : ' only') +
         '. Use only numbers that appear in the summary or the rows; do not compute averages. ' +
         (general ? 'Say which part comes from general knowledge rather than the data. ' : '') +
-        'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ' +
+        (passages && passages.length
+          ? 'Answer mainly from the passages; cite a passage as [1] after a claim taken from it. Only if neither the ' +
+            'passages nor the rows say anything about the question, reply "I have no knowledge about it". '
+          : 'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ') +
         'No personal dosing advice; do not add a disclaimer, the page shows one.' +
         (ref ? '\nFor the why or how, the site glossary says (use it, do not contradict it; if it does not ' +
                'explain the case, say what the data show and that the reason is not in the data):\n' + ref : '') },
-      { role: 'user', content: 'Question: ' + question + '\nSummary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
-        ' in all):\n' + cols.join(' | ') + '\n' + rows.join('\n') }
+      // the question last: a small model answers what it read most recently
+      { role: 'user', content: (passages && passages.length ? passageBlock(passages) + '\n\n' : '') +
+        'Database summary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
+        ' in all):\n' + cols.join(' | ') + '\n' + rows.join('\n') + '\n\nQuestion: ' + question }
     ];
   }
   // ── the glossary (docs/assets/chat/glossary.json): what explanations are made of ─────────
@@ -769,7 +775,7 @@
 
   // an answer in words, from general knowledge — the conversation so far for follow-ups, the
   // ontology's names for the terms, and no data
-  function generalMessages(question, p, history, entries) {
+  function generalMessages(question, p, history, entries, passages) {
     var terms = p.terms.map(function (x) { return x.label; }).join('; ');
     var ref = (entries || []).map(function (e) { return '[' + e.title + '] ' + e.text; }).join('\n');
     var m = [{ role: 'system', content:
@@ -778,17 +784,21 @@
       'concepts; do not give values for specific drugs. If you do not know, or are unsure, say "I have no ' +
       'knowledge about it" rather than guessing. No personal dosing advice; do not add a disclaimer, the page shows one.' +
       (terms ? ' The question names these parameters: ' + terms + '.' : '') +
-      (ref ? '\nThe site glossary says (answer from it, in your own words, and do not contradict it):\n' + ref : '') }];
+      (ref ? '\nThe site glossary says (answer from it, in your own words, and do not contradict it):\n' + ref : '') +
+      (passages && passages.length ? '\nAnswer from the passages given with the question, not from memory; cite a ' +
+        'passage as [1] after a claim taken from it. A value for a drug may be given only as a passage states it.' : '') }];
     (history || []).slice(-3).forEach(function (h) {
       m.push({ role: 'user', content: h.q }, { role: 'assistant', content: String(h.a || '').slice(0, 1200) });
     });
-    m.push({ role: 'user', content: question });
+    m.push({ role: 'user', content: passages && passages.length
+      ? passageBlock(passages) + '\n\nQuestion: ' + question : question });
     return m;
   }
   // a general answer may explain; a value for a named drug must come from the data, so a
   // sentence naming a drug with a number goes
-  function checkGeneral(text, lex) {
-    var kept = [], dropped = [];
+  function checkGeneral(text, lex, passages) {
+    var kept = [], dropped = [], shown = numbersIn(passageText(passages));
+    var inPassages = function (x) { return shown.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); }); };
     String(text || '').replace(/<think>[\s\S]*?<\/think>/g, '').replace(/^\s*(\d+[.)]|[-*•])\s+/gm, '')
       .split(/(?<=[.!?])\s+|\n+/).forEach(function (sent) {
         sent = sent.trim();
@@ -796,7 +806,8 @@
         var toks = norm(sent).split(' '), drug = false;
         for (var i = 0; i < toks.length && !drug; i++)
           drug = (toks[i] in lex.drug && toks[i].length > 3) || (i + 1 < toks.length && (toks[i] + ' ' + toks[i + 1]) in lex.drug);
-        (drug && generalNumbersIn(sent).length ? dropped : kept).push(sent);
+        var nums = generalNumbersIn(uncite(sent));
+        (drug && nums.length && !nums.every(inPassages) ? dropped : kept).push(sent);
       });
     return { text: kept.join(' '), dropped: dropped };
   }
@@ -828,7 +839,11 @@
     return (norm(s).match(/[a-z][a-z0-9-]{3,}/g) || []).filter(function (w) { return STOP.indexOf(w) < 0; })
       .map(function (w) { return w.replace(/(es|s)$/, ''); });         // 'records' and 'record(s)' alike
   }
-  function checkExplanation(text, res, extra, question, shown, general) {
+  // passages: what retrieval showed the model. A number quoted from one may carry the passage's
+  // own 'approximately', and with passages a sentence that names what the question or the
+  // material names is an answer, not outside knowledge — its numbers are still checked.
+  function checkExplanation(text, res, extra, question, shown, general, passages) {
+    var quoted = numbersIn(passageText(passages));
     var r = res && res[0];
     var cells = [String(extra || '')];
     if (r) r.values.slice(0, shown || 12).forEach(function (v) { v.forEach(function (x) { if (x !== null) cells.push(String(x)); }); });
@@ -846,11 +861,14 @@
       .split(/(?<=[.!?])\s+|\n+/).forEach(function (sent) {
         sent = sent.trim();
         if (!sent) return;
-        var nums = numbersIn(sent);
+        var nums = numbersIn(uncite(sent));
         // a checked number ties a sentence to the rows; without one it needs a word from them
         var grounded = general || nums.length > 0 || NO_KNOWLEDGE.test(sent) ||
-                       words(sent).some(function (w) { return vocab[w] && !asked[w]; });
-        if (nums.every(ok) && !(nums.length && STATS.test(sent)) && grounded) kept.push(sent);
+                       words(sent).some(function (w) { return vocab[w] && (!asked[w] || !!(passages && passages.length)); });
+        var fromPassage = nums.length && nums.every(function (x) {
+          return quoted.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); });
+        });
+        if (nums.every(ok) && !(nums.length && STATS.test(sent) && !fromPassage) && grounded) kept.push(sent);
         else dropped.push(sent);
       });
     return { text: kept.join(' '), dropped: dropped };
@@ -864,6 +882,133 @@
       if (partial) onText(partial);
     } : undefined, onThinking);
   }
+
+  // ── retrieval: passages the model reads (export/knowledge_sqlite.py) ─────────────────────
+  // A small model answers 'how is metformin eliminated' from memory, and memory is where its
+  // invented numbers come from. The knowledge database holds DrugBank prose, ClinPGx guideline
+  // and clinical-annotation text and the abstracts behind the records; the question's words
+  // become an FTS4 query over the drugs it names, ranked by BM25 (computed here from
+  // matchinfo: the site's sql.js has FTS4, not FTS5), and the best few passages that fit a
+  // character budget go into the prompt, numbered, so the answer can cite them.
+  var RAG_STOP = STOP.concat(('tell explain why how does do work works please know mean means meaning ' +
+                              'can could would should will use used using into than then also').split(' '));
+  var RAG_BUDGET = 3200;             // characters: ~800 tokens of a 4k context
+  // a reader's word → the words the sources use for it (DrugBank says 'excreted', not 'eliminated')
+  var RAG_SYNONYMS = [
+    [/^(eliminat|excret|clear(ed|s)?$|renal)/, ['elimination', 'excreted', 'clearance']],
+    [/^(metaboli[sz]|biotransform|cyp)/, ['metabolism', 'metabolized']],
+    [/^(absor|bioavailab|oral)/, ['absorption', 'bioavailability']],
+    [/^(work|act|mechanism|target)/, ['mechanism', 'action']],
+    [/^(half|halflife)/, ['half', 'life']],
+    [/^(distribut|volume|tissue)/, ['distribution', 'volume']],
+    [/^(bound|binding|protein)/, ['protein', 'binding']],
+    [/^(guideline|recommend|cpic|dpwg)/, ['guideline', 'recommendation', 'recommends']],
+    [/^(side|adverse|toxic)/, ['adverse', 'toxicity']],
+    [/^(indicat|treat|used)/, ['indicated', 'treatment']]
+  ];
+  function ragTerms(p) {
+    var named = {};
+    p.drugs.forEach(function (d) { norm(d.matched + ' ' + d.name).split(' ').forEach(function (w) { named[w] = 1; }); });
+    var seen = {}, out = [];
+    p.text.split(' ').concat(p.genes.map(function (g) { return g.toLowerCase(); })).forEach(function (w) {
+      w = w.replace(/[^a-z0-9]/g, '');
+      if (w.length < 3 || RAG_STOP.indexOf(w) >= 0 || named[w] || seen[w] || /^\d+$/.test(w)) return;
+      seen[w] = 1; out.push(w);
+      RAG_SYNONYMS.forEach(function (x) {
+        if (x[0].test(w)) x[1].forEach(function (y) { if (!seen[y]) { seen[y] = 1; out.push(y); } });
+      });
+    });
+    return out.slice(0, 16);
+  }
+  function u32(blob) {
+    var b = blob instanceof Uint8Array ? blob : new Uint8Array(blob);
+    return new Uint32Array(b.slice().buffer);       // a copy: the blob need not be 4-byte aligned
+  }
+  // BM25 (k1 1.2, b 0.75) over title (weight 2) and text from matchinfo('pcnalx')
+  function bm25(blob) {
+    var m = u32(blob), P = m[0], C = m[1], N = m[2], W = [2, 1], score = 0;
+    for (var i = 0; i < P; i++) for (var j = 0; j < C; j++) {
+      var x = 3 + 2 * C + 3 * (i * C + j), tf = m[x], df = m[x + 2];
+      if (!tf) continue;
+      var avg = m[3 + j] || 1, len = m[3 + C + j];
+      var idf = Math.log((N - df + 0.5) / (df + 0.5) + 1);
+      score += (W[j] || 1) * idf * tf * 2.2 / (tf + 1.2 * (0.25 + 0.75 * len / avg));
+    }
+    return score;
+  }
+  var PASSAGE_COLS = 'p.id, p.drug_slug, p.kind, p.field, p.gene, p.title, p.text, p.source, p.url, p.license';
+  function passageRows(r) {
+    return r && r[0] ? r[0].values.map(function (v) {
+      return { id: v[0], drug: v[1], kind: v[2], field: v[3], gene: v[4], title: v[5], text: v[6],
+               source: v[7], url: v[8], license: v[9], score: v[10] === undefined ? 0 : v[10] };
+    }) : [];
+  }
+  // what a drug's passages say first when the question's words match none of them
+  var DRUGBANK_ORDER = ['description', 'mechanism_of_action', 'metabolism', 'half_life', 'clearance',
+                        'absorption', 'volume_of_distribution', 'protein_binding', 'indication', 'pharmacodynamics'];
+  function retrieve(kdb, p, opts) {
+    if (!kdb) return [];
+    opts = opts || {};
+    var budget = opts.budget || RAG_BUDGET, terms = ragTerms(p);
+    var slugs = p.drugs.map(function (d) { return d.slug; });
+    var where = slugs.length ? ' AND p.drug_slug IN (' + inList(slugs) + ')' : '';
+    var hits = [];
+    if (terms.length) {
+      var rows = kdb.exec('SELECT ' + PASSAGE_COLS + ", matchinfo(passage_fts, 'pcnalx') FROM passage_fts " +
+                          'JOIN passage p ON p.id = passage_fts.docid WHERE passage_fts MATCH ' +
+                          "'" + sq(terms.join(' OR ')) + "'" + where);
+      hits = passageRows(rows).map(function (h) { h.score = bm25(h.score); return h; });
+    }
+    var pgx = p.intent === 'pgx' || p.genes.length > 0, lit = /papers|records|param_values|disagree/.test(p.intent);
+    hits.forEach(function (h) {
+      if (pgx && (h.kind === 'guideline' || h.kind === 'clinical')) h.score *= 1.5;
+      if (p.genes.some(function (g) { return String(h.gene || '').split(',').indexOf(g) >= 0; })) h.score *= 1.5;
+      if (lit && h.kind === 'abstract') h.score *= 1.2;
+    });
+    // no drug named: a whole-corpus search; an abstract about one drug is a weak answer to a
+    // general question, the drug-level texts less so
+    if (!slugs.length) hits = hits.filter(function (h) { return h.score > 0; })
+      .map(function (h) { if (h.kind === 'abstract' && !lit) h.score *= 0.6; return h; });
+    // a named drug whose passages the words missed ('tell me about metformin'): its DrugBank summary
+    slugs.forEach(function (s) {
+      if (hits.some(function (h) { return h.drug === s; })) return;
+      passageRows(kdb.exec('SELECT ' + PASSAGE_COLS + " FROM passage p WHERE p.drug_slug = '" + sq(s) + "'" +
+                           (pgx ? " AND p.kind IN ('guideline', 'clinical', 'drugbank')" : " AND p.kind = 'drugbank'")))
+        .forEach(function (h) {
+          var k = DRUGBANK_ORDER.indexOf(h.field);
+          h.score = h.kind === 'drugbank' ? 0.1 - 0.001 * (k < 0 ? 99 : k) : 0.2;
+          hits.push(h);
+        });
+    });
+    hits.sort(function (a, b) { return b.score - a.score || a.id - b.id; });
+    // several drugs: take their best passages in turn, so one drug's abstracts do not crowd out the other
+    if (slugs.length > 1) {
+      var by = {}, order = [];
+      hits.forEach(function (h) { (by[h.drug] = by[h.drug] || []).push(h); });
+      for (var round = 0; order.length < hits.length; round++)
+        slugs.forEach(function (s) { if (by[s] && by[s][round]) order.push(by[s][round]); });
+      hits = order;
+    }
+    var out = [], used = 0, perSource = {};
+    var max = opts.max || (slugs.length ? 6 : 3);
+    for (var i = 0; i < hits.length && out.length < max; i++) {
+      var h = hits[i], n = h.text.length + h.title.length + 30;
+      if ((perSource[h.source] || 0) >= 2 || used + n > budget) continue;
+      perSource[h.source] = (perSource[h.source] || 0) + 1;
+      used += n; out.push(h);
+    }
+    return out;
+  }
+  function passageBlock(passages) {
+    if (!passages || !passages.length) return '';
+    return 'Passages:\n' +
+      passages.map(function (h, i) { return '[' + (i + 1) + '] ' + h.title + ' (' + h.source + '): ' + h.text; }).join('\n');
+  }
+  function passageText(passages) {
+    return (passages || []).map(function (h) { return h.title + ' ' + h.text; }).join(' ');
+  }
+  // '[1]' and '[2, 3]' are citations, not numbers to check
+  function uncite(s) { return String(s || '').replace(/\[\d+(?:\s*[,–-]\s*\d+)*\]/g, ''); }
 
   function stripLimit(sql) { return String(sql).replace(/\s+LIMIT\s+\d+\s*;?\s*$/i, ';'); }
 
@@ -906,9 +1051,12 @@
         }
         if (eng) {
           out.sql = null; out.title = 'explanation'; out.res = [];
-          return textWithProgress(eng, generalMessages(question, plan, opts.history, out.glossary), 900,
+          // the reviewed glossary answers a question about meaning better than search hits do
+          out.passages = out.glossary.length ? [] :
+            retrieve(opts.knowledge, plan, { budget: (opts.history || []).length ? 2400 : RAG_BUDGET });
+          return textWithProgress(eng, generalMessages(question, plan, opts.history, out.glossary, out.passages), 900,
             opts.onText, opts.onThinking).then(function (t) {
-            var c = checkGeneral(t, lex);
+            var c = checkGeneral(t, lex, out.passages);
             out.explanation = c.text || null; out.dropped = c.dropped;
             out.summary = c.text ? '' : out.glossary.map(function (e) { return e.title + ': ' + e.text; }).join('\n\n') ||
                                         'The model gave no usable explanation.';
@@ -927,17 +1075,23 @@
       if (o.general) return o;
       if (o.plan.intent === 'explain') { o.summary = summarize(o.plan, o.res); return o; }
       o.summary = o.summary || summarize(o.plan, o.res);
-      if (!eng || !opts.explain || !o.res || !o.res[0] || !o.res[0].values.length) return o;
-      if (['search', 'missing', 'choose'].indexOf(o.plan.intent) >= 0) return o;   // nothing to say in prose
+      // a personal dosing question stays declined: no passages, no prose
+      if (!eng || !opts.explain || ['missing', 'choose', 'out_of_scope'].indexOf(o.plan.intent) >= 0) return o;
+      // the passages that bear on the question: with them the prose may answer even where the
+      // rows are empty or only a name search ('how is metformin eliminated')
+      var passages = retrieve(opts.knowledge, o.plan);
+      var rows = o.res && o.res[0] && o.res[0].values.length;
+      if (!passages.length && (!rows || o.plan.intent === 'search')) return o;   // nothing to say in prose
+      o.passages = passages;
       // a data question that also asks why ('why is CL/F of metformin reported, not CL'): the
       // prose may reason generally; its numbers still have to be the rows'
       var why = CUES.explain.test(o.plan.text);
       var entries = why ? glossaryFor(o.plan, lex) : [];
       o.glossary = entries;
-      return textWithProgress(eng, explainMessages(question, o.plan, o.res, o.summary, why, entries),
+      return textWithProgress(eng, explainMessages(question, o.plan, o.res, o.summary, why, entries, passages),
         why ? 700 : 500,
         opts.onText, opts.onThinking).then(function (t) {
-        var c = checkExplanation(t, o.res, o.summary, question, 12, why);
+        var c = checkExplanation(t, o.res, o.summary + ' ' + passageText(passages), question, 12, why, passages);
         o.explanation = c.text || null; o.dropped = c.dropped;
         return o;
       }, function (e) { o.modelError = String(e && e.message || e); return o; });
@@ -966,11 +1120,12 @@
       out.sql = null; out.title = 'general answer'; out.res = [];
       out.general = true;
       out.glossary = glossaryFor(out.plan, lex);
-      var messages = generalMessages(question, out.plan, opts.history, out.glossary);
+      out.passages = retrieve(opts.knowledge, out.plan);
+      var messages = generalMessages(question, out.plan, opts.history, out.glossary, out.passages);
       messages[0].content += '\nThe database could not build a query for this question. Answer from general ' +
         'background only; do not claim that the database contains supporting results or invent numbers.';
       return textWithProgress(eng, messages, 900, opts.onText, opts.onThinking).then(function (text) {
-        var checked = checkGeneral(text, lex);
+        var checked = checkGeneral(text, lex, out.passages);
         out.explanation = checked.text || null;
         out.dropped = checked.dropped;
         out.summary = checked.text ? '' : out.glossary.map(function (entry) {
@@ -1007,7 +1162,9 @@
               planMessages: planMessages, mergePlan: mergePlan, guardSQL: guardSQL, schemaCard: schemaCard,
               sqlMessages: sqlMessages, explainMessages: explainMessages, checkExplanation: checkExplanation,
               stripLimit: stripLimit, answer: answer, generalMessages: generalMessages, checkGeneral: checkGeneral,
-              withGlossary: withGlossary, glossaryFor: glossaryFor };
+              withGlossary: withGlossary, glossaryFor: glossaryFor,
+              // retrieval
+              retrieve: retrieve, ragTerms: ragTerms, passageBlock: passageBlock };
   root.pkAsk = api;
   if (typeof module === 'object' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);
