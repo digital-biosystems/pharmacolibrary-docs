@@ -726,23 +726,26 @@
     var rows = r ? r.values.slice(0, 12).map(function (v) {
       return cols.map(function (c) { var x = v[r.columns.indexOf(c)]; return x === null ? '' : String(x).slice(0, 40); }).join(' | ');
     }) : [];
+    if (passages && passages.length) return [
+      { role: 'system', content: SOURCE_RULES + (general ? ' Where the question asks why or how, general ' +
+          'pharmacology may fill the gap, without a number.' : '') +
+        (ref ? '\nFor the why or how, the site glossary says (use it, do not contradict it):\n' + ref : '') },
+      // the question last: a small model answers what it read most recently
+      { role: 'user', content: passageBlock(passages) + '\n\nExtracted records (background; do not list them): ' +
+        summary + '\n' + cols.join(' | ') + '\n' + rows.slice(0, 8).join('\n') + '\n\nQuestion: ' + question }
+    ];
     return [
       { role: 'system', content: 'Answer the question for a pharmacologist, as fully as the question needs, from the ' +
-        'database result' + (passages && passages.length ? ' and the passages' : '') + ' below' +
+        'database result below' +
         (general ? ', adding general pharmacology where the question asks why or how' : ' only') +
         '. Use only numbers that appear in the summary or the rows; do not compute averages. ' +
         (general ? 'Say which part comes from general knowledge rather than the data. ' : '') +
-        (passages && passages.length
-          ? 'Use both the passages and the rows, and cover every distinct point they give that answers the question ' +
-            'in your own words, without listing the rows one by one; cite a passage as [1] after a claim taken from it. Only if neither the ' +
-            'passages nor the rows say anything about the question, reply "I have no knowledge about it". '
-          : 'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ') +
+        'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ' +
         'No personal dosing advice; do not add a disclaimer, the page shows one.' +
         (ref ? '\nFor the why or how, the site glossary says (use it, do not contradict it; if it does not ' +
                'explain the case, say what the data show and that the reason is not in the data):\n' + ref : '') },
       // the question last: a small model answers what it read most recently
-      { role: 'user', content: (passages && passages.length ? passageBlock(passages) + '\n\n' : '') +
-        'Database summary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
+      { role: 'user', content: 'Database summary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
         ' in all):\n' + cols.join(' | ') + '\n' + rows.join('\n') + '\n\nQuestion: ' + question }
     ];
   }
@@ -786,8 +789,7 @@
       'knowledge about it" rather than guessing. No personal dosing advice; do not add a disclaimer, the page shows one.' +
       (terms ? ' The question names these parameters: ' + terms + '.' : '') +
       (ref ? '\nThe site glossary says (answer from it, in your own words, and do not contradict it):\n' + ref : '') +
-      (passages && passages.length ? '\nAnswer from the passages given with the question, not from memory; cite a ' +
-        'passage as [1] after a claim taken from it. A value for a drug may be given only as a passage states it.' : '') }];
+      (passages && passages.length ? '\n' + SOURCE_RULES : '') }];
     (history || []).slice(-3).forEach(function (h) {
       m.push({ role: 'user', content: h.q }, { role: 'assistant', content: String(h.a || '').slice(0, 1200) });
     });
@@ -811,9 +813,10 @@
       if (/^\s*#/.test(pre) && !/\d/.test(body)) { lines.push(line); return; }
       var out = [];
       body.split(/(?<=[.!?])\s+/).forEach(function (sent) {
-        var t = sent.trim();
+        var t = unLead(sent.trim());
         if (!t) return;
-        if (keep(t.replace(/\*\*|__|`/g, ''))) out.push(t); else dropped.push(t);
+        t = t.charAt(0).toUpperCase() + t.slice(1);
+        if (!META.test(t) && keep(t.replace(/\*\*|__|`/g, ''))) out.push(t); else dropped.push(t);
       });
       if (out.length) lines.push(pre + out.join(' '));
     });
@@ -1020,10 +1023,36 @@
     }
     return out;
   }
+  // How a small model answers from retrieved text: as a direct answer, the sources marked only
+  // by their numbers. Without the example and the 'never mention' rule a 0.8B model narrates
+  // its material ('according to the provided passages', 'the pharmacodynamics section states',
+  // 'the passage does not explicitly state') and leaves out the numbers.
+  var SOURCE_RULES = 'Write a direct answer for a pharmacologist in plain prose, as fully as the question needs, ' +
+    'covering every distinct point in the numbered sources that answers the question; leave out what does not ' +
+    'answer it. After each sentence put the number of the source it ' +
+    'comes from in square brackets, for example: "Metformin is indicated for type 2 diabetes [1]. It is also ' +
+    'combined with SGLT2 inhibitors [2]." Never mention the sources, passages, sections, records, rows, database, ' +
+    'studies or "the text" in the answer, and do not say what they do not contain: state the facts. Rephrase rather ' +
+    'than copy. Use only numbers the sources or records give; do not compute averages. If nothing in them answers ' +
+    'the question, reply exactly: I have no knowledge about it. No personal dosing advice; no disclaimer.';
   function passageBlock(passages) {
     if (!passages || !passages.length) return '';
-    return 'Passages:\n' +
-      passages.map(function (h, i) { return '[' + (i + 1) + '] ' + h.title + ' (' + h.source + '): ' + h.text; }).join('\n');
+    return 'Sources:\n' +
+      passages.map(function (h, i) { return '[' + (i + 1) + '] ' + h.title + ': ' + h.text; }).join('\n');
+  }
+  // a sentence about the material rather than the drug ('the passage does not state…') says
+  // nothing to the reader; a lead-in ('According to the provided passages, ') is cut from the
+  // sentence it starts
+  var META = /\b(the|these|this|those|provided|given|above|retrieved) (passages?|sources?|rows?|text|summary|sections?|excerpts?|records? (shown|given|provided|above))\b|\b(pharmacodynamics|mechanism|indication|clearance|metabolism|description|absorption) section\b|\bpassage \[?\d|\b(does|do|did) not (explicitly )?(state|mention|say|specify|provide|contain)\b/i;
+  var LEAD_IN = /^(according to|based on|as (stated|described|shown|noted|given) (in|by)|from|per|in) (the )?(provided |given |above |retrieved )?((passages?|sources?|text|data(base)?( result)?|rows|records|summary|information)\s*)?((\[\d+\]\s*(,|and)?\s*)+)?( and [^,]+)?,\s*/i;
+  // 'According to passage [2], X.' → 'X [2].': the lead-in goes, its citation moves to the end
+  function unLead(t) {
+    var m = LEAD_IN.exec(t);
+    if (!m) return t;
+    var cites = (m[0].match(/\[\d+\]/g) || []).join('');
+    t = t.slice(m[0].length);
+    if (cites && !/\[\d+\]\W*$/.test(t)) t = t.replace(/\s*([.!?]?)\s*$/, ' ' + cites + '$1');
+    return t;
   }
   function passageText(passages) {
     return (passages || []).map(function (h) { return h.title + ' ' + h.text; }).join(' ');

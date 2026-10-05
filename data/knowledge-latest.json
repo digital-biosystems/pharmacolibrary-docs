@@ -1,9 +1,9 @@
 {
-  "file": "knowledge-b61e2b1af8.sqlite",
-  "bytes": 25686016,
-  "passages": 19361,
+  "file": "knowledge-3ae2572e3b.sqlite",
+  "bytes": 26435584,
+  "passages": 19690,
   "drugs": 867,
-  "drugbank": 6416,
+  "drugbank": 6745,
   "guideline": 1996,
   "clinical": 1130,
   "abstract": 9819
