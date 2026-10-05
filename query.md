@@ -12,14 +12,15 @@
       <input id="pkq-ask" type="text" enterkeyhint="send" placeholder="Ask about a drug, a parameter, a gene…" autocomplete="off" aria-label="Your question">
       <button id="pkq-askbtn" class="pkq-send" type="button" aria-label="Ask">Ask</button>
     </div>
-    <p id="pkq-llmnote" class="pkq-llmnote" aria-live="polite">A small language model can read questions the keywords miss and answer in prose. It runs on your GPU (WebGPU) and downloads once into this browser; nothing is sent anywhere. Thinking is optional and off by default; when enabled, streamed reasoning appears in a compact box before the answer. With a model on, the page also downloads background texts (~26 MB, once: DrugBank, ClinPGx guidelines and annotations, the abstracts behind the records); the passages that match the question are put in front of the model and listed under the answer. The model never supplies a number: a sentence with a number that neither the rows nor those passages hold is dropped.</p>
+    <p id="pkq-llmnote" class="pkq-llmnote" aria-live="polite"></p>
   </div>
 </div>
 
 ## Local knowledge database content
 
-Answers come from one SQLite file (~8 MB) that your browser downloads once and queries
-itself — no server, nothing sent. Literature data, not medical advice.
+Two SQLite files, queried in the browser with sql.js; no server. Literature data, not medical advice.
+
+**Query database** (~8 MB, loaded with the page):
 
 | table | rows | what it holds |
 |---|---|---|
@@ -38,3 +39,20 @@ not `unit_canonical`, the display unit (`L/h`); quote `value` with `unit_verbati
 papers with `value_si`. `link_method`: `exact` was read from that paper, `review_gapfill` was
 borrowed from a review. Every answer's SQL can be opened, edited and re-run.
 Download: **[pharmacolibrary.sqlite](data/latest.json)**.
+
+**Passage database** (`knowledge-*.sqlite`, 26 MB, loaded only when a model is selected): table
+`passage`, 19,690 rows for 867 drugs, FTS4 index `passage_fts` (porter).
+
+| kind | rows | source | licence |
+|---|---|---|---|
+| `drugbank` | 6,745 | DrugBank: description, indication, mechanism, PD, absorption, metabolism, half-life, Vd, clearance, protein binding | CC BY-NC 4.0 |
+| `guideline` | 1,996 | ClinPGx guideline annotations (CPIC, DPWG, …) | CC BY-SA 4.0 |
+| `clinical` | 1,130 | ClinPGx clinical annotations, evidence level 1A–2B | CC BY-SA 4.0 |
+| `abstract` | 9,819 | PubMed abstracts of the papers behind the records | per paper |
+
+Download: **[knowledge.sqlite](data/knowledge-latest.json)**.
+
+**Language model** (optional): WebLLM, Qwen3.5 0.8B / 4B / 9B on WebGPU, weights cached in
+IndexedDB. Per question: up to 6 passages (~3,200 characters, BM25 within the named drugs) go into
+the prompt, are cited as [n] and listed under the answer. A sentence with a number found in neither
+the rows nor the passages is dropped. Thinking: off by default.
