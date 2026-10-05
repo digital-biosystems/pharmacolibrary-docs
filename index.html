@@ -73,7 +73,6 @@
     .pkq-status { padding: 10px 12px; border-radius: 6px; background: #f1f5f9;
       color: #475569; font-size: 14px; margin: 12px 0; }
     .pkq-status.err { background: #fef2f2; color: #b91c1c; }
-    .pkq-canned { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0; }
     .pkq-btn { font: inherit; font-size: 13px; padding: 5px 10px; cursor: pointer;
       border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #334155; }
     .pkq-btn:hover { border-color: var(--theme-color, #0074d9); color: var(--theme-color, #0074d9); }
@@ -83,31 +82,65 @@
     .pkq-row label { font-size: 13px; color: #64748b; }
     .pkq-row input { font: inherit; font-size: 13px; padding: 5px 8px; min-width: 190px;
       border: 1px solid #cbd5e1; border-radius: 6px; }
-    #pkq-sql { width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12.5px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;
-      background: #f8fafc; color: #0f172a; }
     .pkq-meta { font-size: 12.5px; color: #64748b; }
-    #pkq-out { overflow-x: auto; }
-    .pkq-askrow input { flex: 1 1 320px; font-size: 15px; padding: 8px 10px; }
-    .pkq-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0; }
-    .pkq-chip { font-size: 12.5px; padding: 2px 9px; border-radius: 999px; background: #eef2ff;
-                color: #3730a3; border: 1px solid #c7d2fe; }
+    /* the chat: a scrolling conversation above a prompt bar, one screen tall */
+    #pkq-ui { display: flex; flex-direction: column; height: calc(100vh - 150px); min-height: 420px;
+      border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; background: #fff; }
+    #pkq-ui[hidden] { display: none; }
+    .pkq-log { flex: 1; overflow-y: auto; padding: 14px 14px 6px; scroll-behavior: smooth; }
+    .pkq-empty { color: #475569; font-size: 14.5px; max-width: 640px; margin: 8vh auto 0; text-align: center; }
+    .pkq-empty .pkq-chips { justify-content: center; margin-top: 14px; }
+    .pkq-turn { margin: 0 0 18px; }
+    .pkq-q { margin: 0 0 8px auto; max-width: 80%; width: fit-content; padding: 8px 13px;
+      border-radius: 14px 14px 3px 14px; background: var(--theme-color, #0074d9); color: #fff;
+      font-size: 14.5px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .pkq-a { max-width: 100%; padding: 10px 13px; border-radius: 14px 14px 14px 3px;
+      background: #f8fafc; border: 1px solid #e2e8f0; font-size: 14.5px; }
+    .pkq-a .pkq-text { line-height: 1.55; }
+    .pkq-a .pkq-text.pending { color: #94a3b8; }
+    .pkq-a .pkq-sub { display: block; margin-top: 6px; font-size: 12.5px; color: #64748b; }
+    .pkq-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 6px; }
+    .pkq-chip { font-size: 11.5px; padding: 1px 8px; border-radius: 999px; background: #eef2ff;
+      color: #3730a3; border: 1px solid #c7d2fe; }
     .pkq-chip.warn { background: #fffbeb; color: #92400e; border-color: #fde68a; }
-    button.pkq-chip { cursor: pointer; font: inherit; font-size: 12.5px; }
+    button.pkq-chip { cursor: pointer; font: inherit; font-size: 12.5px; padding: 3px 10px; }
     button.pkq-chip:hover { border-color: var(--theme-color, #0074d9); }
-    .pkq-answer { margin: 8px 0 4px; padding: 8px 12px; border-left: 3px solid var(--theme-color, #0074d9);
-                  background: #f8fafc; }
-    .pkq-answer .pkq-meta { display: block; margin-top: 2px; }
-    .pkq-answer .pkq-explain { display: block; margin-top: 6px; font-style: italic; }
-    .pkq-llm { margin: 6px 0 2px; font-size: 13.5px; }
-    .pkq-llm summary { cursor: pointer; color: #475569; }
-    .pkq-llm select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 100%; }
-    .pkq-llm .pkq-row label { color: inherit; }
-    #pkq-out table { font-size: 13px; border-collapse: collapse; margin-top: 10px; }
-    #pkq-out th { text-align: left; background: #f1f5f9; position: sticky; top: 0; }
-    #pkq-out th, #pkq-out td { padding: 4px 10px; border-bottom: 1px solid #e2e8f0;
-      white-space: nowrap; }
-    #pkq-out td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .pkq-table { margin-top: 8px; max-height: 300px; overflow: auto; border: 1px solid #e2e8f0;
+      border-radius: 6px; background: #fff; }
+    .pkq-table table { font-size: 12.5px; border-collapse: collapse; margin: 0; width: 100%; display: table; }
+    .pkq-table th { text-align: left; background: #f1f5f9; position: sticky; top: 0; z-index: 1; }
+    .pkq-table th, .pkq-table td { padding: 3px 8px; border-bottom: 1px solid #e2e8f0;
+      white-space: nowrap; max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+    .pkq-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .pkq-sqlbox { margin-top: 6px; font-size: 12.5px; }
+    .pkq-sqlbox summary { cursor: pointer; color: #64748b; }
+    .pkq-sqlbox textarea { width: 100%; min-height: 110px; margin-top: 6px; padding: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
+      border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; color: #0f172a; }
+    .pkq-sqlbox .err { color: #b91c1c; }
+    .pkq-llmbox { border-top: 1px solid #e2e8f0; padding: 8px 14px; font-size: 13px; color: #475569;
+      background: #f8fafc; }
+    .pkq-llmbox p { margin: 4px 0; }
+    .pkq-llmbox select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 100%; }
+    .pkq-bar { display: flex; gap: 8px; align-items: center; padding: 10px; border-top: 1px solid #e2e8f0;
+      background: #fff; }
+    .pkq-bar input { flex: 1; min-width: 0; font: inherit; font-size: 15px; padding: 9px 12px;
+      border: 1px solid #cbd5e1; border-radius: 999px; }
+    .pkq-bar input:focus { outline: none; border-color: var(--theme-color, #0074d9); }
+    .pkq-send { font: inherit; font-size: 14px; padding: 8px 16px; border-radius: 999px; cursor: pointer;
+      background: var(--theme-color, #0074d9); color: #fff; border: 0; }
+    .pkq-send:disabled { opacity: .5; cursor: default; }
+    .pkq-mode { font: inherit; font-size: 12px; padding: 6px 10px; border-radius: 999px; cursor: pointer;
+      border: 1px solid #cbd5e1; background: #fff; color: #64748b; white-space: nowrap; }
+    .pkq-mode.on { border-color: #86efac; background: #f0fdf4; color: #166534; }
+    /* the database description sits below the chat, small */
+    .markdown-section #pkq ~ h2 { font-size: 15px; margin-top: 28px; color: #475569; border: 0; }
+    .markdown-section #pkq ~ p, .markdown-section #pkq ~ table { font-size: 12.5px; color: #64748b; }
+    .markdown-section #pkq ~ table td, .markdown-section #pkq ~ table th { padding: 3px 8px; }
+    @media (max-width: 600px) {
+      #pkq-ui { height: calc(100vh - 110px); border-radius: 0; border-left: 0; border-right: 0; }
+      .pkq-mode { padding: 6px 8px; }
+    }
     /* ── sites page ────────────────────────────────────────────────────────────
        Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
        plugin below and never on any other page). Evidence tiers are one blue ramp; the
@@ -516,67 +549,19 @@
       });
     });
 
-    // ── query page ─────────────────────────────────────────────────────────────
-    // sql.js (688 kB incl. wasm) and the 3.9 MB database load ONLY on /query, and only
-    // once per session — the same discipline as the dbs bundle. Every other page is
-    // unaffected, which is the whole reason the page is separate.
+    // ── query page: ask the data ───────────────────────────────────────────────
+    // sql.js (688 kB incl. wasm) and the ~8 MB database load ONLY on /query, and only once
+    // per session. The page is a chat: each question becomes a turn — the question, the
+    // answer (the deterministic one-line summary, or with a model enabled a prose answer
+    // whose numbers are checked against the rows), the rows themselves, and the SQL that
+    // produced them, editable and re-runnable. assets/js/pk-ask.js reads the question;
+    // assets/js/pk-ask-llm.js is the optional in-browser model (IMPROVEMENTS_CHAT.md 1–2).
     (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
-      var DB = null, SQL = null, loading = false;
+      var DB = null, loading = false, LEX = null, ENGINE = null, BUSY = false;
+      var TURNS = [];                 // turn elements, re-attached when docsify re-renders the page
+      var EXAMPLES = ['clearance of metformin', 'CYP2C19 and clopidogrel', 'PD models of warfarin',
+                      'clearance of midazolam in children', 'papers on semaglutide after 2023'];
 
-      var CANNED = {
-        param: "-- a reported parameter for one drug, with the paper it came from.\n" +
-          "-- The drug and parameter boxes above rewrite this query.\n" +
-          "SELECT d.generic_name AS drug, p.value, p.unit_verbatim AS unit,\n" +
-          "       p.value_si, p.unit_si, r.stem AS paper, p.link_method, r.model_id\n" +
-          "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
-          "JOIN drug d ON d.slug = r.drug_slug\n" +
-          "WHERE p.parameter_id = 'Q49' /*FILTER*/\n" +
-          "ORDER BY d.generic_name LIMIT 100;",
-        pdpk: "-- drugs with at least one PD model whose driver is a PK model\n" +
-          "SELECT d.generic_name AS drug, count(*) AS pd_models,\n" +
-          "       group_concat(DISTINCT pd.driver_kind) AS driver\n" +
-          "FROM pd_record pd JOIN record r ON r.id = pd.record_id\n" +
-          "JOIN drug d ON d.slug = r.drug_slug\n" +
-          "WHERE pd.driver_kind IN ('pk_record','cited_pk')\n" +
-          "GROUP BY d.generic_name ORDER BY pd_models DESC LIMIT 100;",
-        dose: "-- dose-response PD models: the driver is dose, not a concentration\n" +
-          "SELECT d.generic_name AS drug, r.stem AS paper, pd.model_family, pd.effect_form\n" +
-          "FROM pd_record pd JOIN record r ON r.id = pd.record_id\n" +
-          "JOIN drug d ON d.slug = r.drug_slug\n" +
-          "WHERE pd.driver_kind = 'dose_only' ORDER BY d.generic_name LIMIT 100;",
-        pgx: "-- PGx records acting as a covariate on a PK or PD parameter\n" +
-          "SELECT d.generic_name AS drug, x.gene, x.applies_to, x.target_parameter_id AS qcode,\n" +
-          "       q.name AS parameter, x.mechanism\n" +
-          "FROM pgx_record x JOIN record r ON r.id = x.record_id\n" +
-          "JOIN drug d ON d.slug = r.drug_slug\n" +
-          "LEFT JOIN qcode q ON q.parameter_id = x.target_parameter_id\n" +
-          "WHERE x.applies_to IN ('pk','pd') AND x.target_parameter_id <> 'Q100'\n" +
-          "ORDER BY d.generic_name LIMIT 200;",
-        gapfill: "-- values a review supplied because the paper itself lacked them.\n" +
-          "-- Useful as a curation queue: these are NOT what the paper reported.\n" +
-          "SELECT d.generic_name AS drug, r.stem AS paper, p.name, p.value,\n" +
-          "       p.unit_verbatim AS unit, p.origin_stem AS borrowed_from\n" +
-          "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
-          "JOIN drug d ON d.slug = r.drug_slug\n" +
-          "WHERE p.link_method = 'review_gapfill' ORDER BY d.generic_name LIMIT 200;",
-        disagree: "-- drugs whose papers disagree by more than 2x on apparent clearance.\n" +
-          "-- value_si is SI BASE units (unit_si says which: m3/s here), not unit_canonical,\n" +
-          "-- so values reported in different units are directly comparable.\n" +
-          "SELECT d.generic_name AS drug, count(*) AS n,\n" +
-          "       round(min(p.value_si),10) AS lo, round(max(p.value_si),10) AS hi,\n" +
-          "       round(max(p.value_si)/min(p.value_si),1) AS spread\n" +
-          "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
-          "JOIN drug d ON d.slug = r.drug_slug\n" +
-          "WHERE p.parameter_id = 'Q27' AND p.value_si > 0\n" +
-          "GROUP BY d.generic_name HAVING n > 2 AND spread > 2\n" +
-          "ORDER BY spread DESC LIMIT 100;"
-      };
-
-      // getElementById returns the FIRST match in the document, which is the wrong node the
-      // moment docsify re-renders .markdown-section and leaves an earlier copy of the query
-      // controls ahead of the live one: buildParam() then read an empty drug box that nobody
-      // could see, and the drug filter vanished with no error anywhere. Resolve the node that
-      // is actually inside the rendered section, newest last.
       function el(id) {
         var live = document.querySelectorAll('.markdown-section [id="' + id + '"]');
         if (live.length) return live[live.length - 1];
@@ -587,77 +572,47 @@
         var s = el('pkq-status'); if (!s) return;
         s.textContent = msg; s.className = 'pkq-status' + (isErr ? ' err' : ''); s.hidden = false;
       }
+      function node(tag, cls, text) {
+        var n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      }
 
-      function render(res) {
-        var out = el('pkq-out'); out.innerHTML = '';
-        if (!res || !res.length) { out.innerHTML = '<p class="pkq-meta">No rows. ' +
-          'That is an answer too: this drug/parameter combination is not in the extraction.</p>'; return; }
-        var r = res[0], t = document.createElement('table');
-        var thead = document.createElement('thead'), tr = document.createElement('tr');
-        r.columns.forEach(function (c) {
-          var th = document.createElement('th'); th.textContent = c; tr.appendChild(th);
-        });
+      // rows → a table; model_id links to the record page, href to a site page, doi out
+      function table(res, box) {
+        box.innerHTML = '';
+        var r = res && res[0];
+        if (!r || !r.values.length) { box.hidden = true; return 0; }
+        box.hidden = false;
+        var t = node('table'), tr = node('tr'), thead = node('thead'), tb = node('tbody');
+        r.columns.forEach(function (c) { tr.appendChild(node('th', null, c)); });
         thead.appendChild(tr); t.appendChild(thead);
-        var tb = document.createElement('tbody');
+        var drugCol = r.columns.indexOf('drug');
         r.values.forEach(function (row) {
-          var trr = document.createElement('tr');
+          var trr = node('tr');
           row.forEach(function (v, i) {
-            var td = document.createElement('td');
-            if (typeof v === 'number') td.className = 'num';
-            // model_id links to the record page, so a number reaches its provenance.
-            if (r.columns[i] === 'model_id' && v) {
-              var drugCol = r.columns.indexOf('drug');
-              var a = document.createElement('a');
-              a.textContent = v;
-              a.href = '#/drugs/drug_' + String(row[drugCol] || '').toLowerCase()
-                        .replace(/[^a-z0-9]+/g, '_') + '/' + v;
+            var td = node('td', typeof v === 'number' ? 'num' : null), c = r.columns[i], a;
+            if (v !== null && v !== '' && (c === 'model_id' || c === 'href' || c === 'doi')) {
+              a = node('a', null, v);
+              if (c === 'model_id') a.href = '#/drugs/drug_' + String(row[drugCol] || '').toLowerCase()
+                                                .replace(/[^a-z0-9]+/g, '_') + '/' + v;
+              else if (c === 'href') a.href = '#/' + v;
+              else { a.href = 'https://doi.org/' + v; a.target = '_blank'; a.rel = 'noopener'; }
               td.appendChild(a);
-            } else if ((r.columns[i] === 'href' || r.columns[i] === 'doi') && v) {
-              var l = document.createElement('a');
-              l.textContent = v;
-              l.href = r.columns[i] === 'doi' ? 'https://doi.org/' + v : '#/' + v;
-              if (r.columns[i] === 'doi') { l.target = '_blank'; l.rel = 'noopener'; }
-              td.appendChild(l);
-            } else { td.textContent = v === null ? '' : String(v); }
+            } else {
+              td.textContent = v === null ? '' : String(v);
+              if (v !== null && String(v).length > 40) td.title = String(v);
+            }
             trr.appendChild(td);
           });
           tb.appendChild(trr);
         });
-        t.appendChild(tb); out.appendChild(t);
-        el('pkq-meta').textContent = r.values.length + ' row(s)';
+        t.appendChild(tb); box.appendChild(t);
+        return r.values.length;
       }
 
-      function run() {
-        if (!DB) return;
-        var box = el('pkq-sql');
-        if (!box) return;
-        var sql = box.value;
-        try {
-          var t0 = performance.now();
-          render(DB.exec(sql));
-          // Show the WHERE actually executed. The filter bug that shipped an hour ago ran a
-          // query with no drug filter and looked exactly like a correct empty-filter result.
-          var body = sql.replace(/^\s*--.*$/gm, '');          // drop comment lines first
-          var where = (body.match(/\bWHERE\b[\s\S]*?(?=\bORDER BY\b|\bGROUP BY\b|\bLIMIT\b|$)/i)
-                       || [''])[0].replace(/\s+/g, ' ').trim();
-          el('pkq-meta').textContent += '  ·  ' + Math.round(performance.now() - t0) + ' ms'
-                                      + (where ? '  ·  ' + where : '');
-        } catch (e) {
-          el('pkq-out').innerHTML = '';
-          el('pkq-meta').textContent = '';
-          status(String(e.message || e), true);
-        }
-      }
-
-      function sq(v) { return String(v).replace(/'/g, "''"); }
-
-      // ── ask in words (assets/js/pk-ask.js; IMPROVEMENTS_CHAT.md phases 1–2) ───────────
-      // Keywords first: names from the database, a fixed intent catalogue, SQL templates. A
-      // reader may switch on a small language model (assets/js/pk-ask-llm.js, WebLLM on their
-      // own GPU) that reads what the keywords leave unread; it fills a plan, code still writes
-      // the query, and the numbers are the rows'. The SQL goes into the editor and runs like
-      // any other query, so what was asked, what ran and what came back are all on the page.
-      var LEX = null, ENGINE = null, BUSY = false;
+      // ── scripts, loaded on first use ───────────────────────────────────────────────
       var scripts = {};
       function script(src) {
         if (scripts[src]) return scripts[src];
@@ -672,88 +627,134 @@
       function askScript() { return window.pkAsk ? Promise.resolve() : script('assets/js/pk-ask.js'); }
       function llmScript() { return window.pkAskLLM ? Promise.resolve() : script('assets/js/pk-ask-llm.js'); }
       function lexicon() { if (!LEX) LEX = window.pkAsk.lexiconFromDB(DB); return LEX; }
-      function chip(text, cls) {
-        var c = document.createElement('span'); c.className = 'pkq-chip' + (cls ? ' ' + cls : '');
-        c.textContent = text; return c;
+
+      // ── the conversation ──────────────────────────────────────────────────────────
+      function scrollDown() { var l = el('pkq-log'); if (l) l.scrollTop = l.scrollHeight; }
+      function empty() {
+        var log = el('pkq-log');
+        if (!log || TURNS.length) return;
+        var e = node('div', 'pkq-empty');
+        e.appendChild(node('p', null, 'Ask about drugs, parameters, genes and papers in the extracted literature. ' +
+          'Every answer comes from the database, with its rows and the SQL that found them.'));
+        var ch = node('p', 'pkq-chips');
+        EXAMPLES.forEach(function (x) {
+          var b = node('button', 'pkq-chip', x); b.type = 'button'; b.dataset.ask = x; ch.appendChild(b);
+        });
+        e.appendChild(ch);
+        log.appendChild(e);
       }
+      function attach() {              // after a re-render: the same turns, in the new log
+        var log = el('pkq-log');
+        if (!log) return;
+        log.innerHTML = '';
+        if (!TURNS.length) return empty();
+        TURNS.forEach(function (t) { log.appendChild(t); });
+        scrollDown();
+      }
+
       function ask(question) {
         var q = String(question || '').trim();
-        var box = el('pkq-understood'), ans = el('pkq-answer');
-        if (!q || !DB || !box || !ans || BUSY) return;
+        var log = el('pkq-log');
+        if (!q || !DB || !log || BUSY) return;
         BUSY = true;
-        var explainBox = el('pkq-llm-explain');
-        if (ENGINE) { ans.hidden = false; ans.textContent = ENGINE.name + ' is reading the question…'; }
+        var send = el('pkq-askbtn'); if (send) send.disabled = true;
+        if (!TURNS.length) log.innerHTML = '';
+        var turn = node('div', 'pkq-turn'), a = node('div', 'pkq-a');
+        var chips = node('div', 'pkq-chips'), text = node('div', 'pkq-text pending',
+          ENGINE ? ENGINE.name + ' is reading the question…' : 'Looking it up…');
+        turn.appendChild(node('div', 'pkq-q', q));
+        a.appendChild(chips); a.appendChild(text); turn.appendChild(a);
+        TURNS.push(turn); log.appendChild(turn); scrollDown();
+
         askScript().then(function () {
-          return window.pkAsk.answer(q, DB, lexicon(), {
-            engine: ENGINE, explain: !!(ENGINE && (!explainBox || explainBox.checked)) });
-        }).then(function (a) {
-          var plan = a.plan;
-          box.innerHTML = '';
-          window.pkAsk.understood(plan).forEach(function (b) { box.appendChild(chip(b)); });
-          plan.corrected.forEach(function (c) { box.appendChild(chip('read “' + c.from + '” as ' + c.to, 'warn')); });
-          if (a.modelError) box.appendChild(chip('model: ' + a.modelError.slice(0, 80) + ' — answered from keywords', 'warn'));
-          // an ambiguous name is a choice, never a guess: each option re-asks with it spelled out
+          return window.pkAsk.answer(q, DB, lexicon(), { engine: ENGINE, explain: !!ENGINE });
+        }).then(function (ans) {
+          var plan = ans.plan;
+          window.pkAsk.understood(plan).forEach(function (b) { chips.appendChild(node('span', 'pkq-chip', b)); });
+          plan.corrected.forEach(function (c) { chips.appendChild(node('span', 'pkq-chip warn', 'read “' + c.from + '” as ' + c.to)); });
+          if (ans.modelError) chips.appendChild(node('span', 'pkq-chip warn', 'model: ' + ans.modelError.slice(0, 70) + ' — keywords used'));
+          // an ambiguous name is a choice, never a guess: each option asks again with it spelled out
           plan.suggestions.forEach(function (sg) {
-            box.appendChild(chip('“' + sg.word + '” could be:', 'warn'));
+            chips.appendChild(node('span', 'pkq-chip warn', '“' + sg.word + '” could be:'));
             sg.options.forEach(function (o) {
-              var b = document.createElement('button'); b.type = 'button'; b.className = 'pkq-chip';
-              b.textContent = o;
+              var b = node('button', 'pkq-chip', o); b.type = 'button';
               b.dataset.ask = (' ' + plan.text + ' ').replace(' ' + sg.word + ' ', ' ' + o + ' ').trim();
-              box.appendChild(b);
+              chips.appendChild(b);
             });
           });
-          if (a.sql) {
-            var sqlBox = el('pkq-sql');
-            sqlBox.dataset.kind = 'ask';                     // drug/parameter inputs leave it alone
-            sqlBox.value = '-- ' + q.replace(/\n/g, ' ') + '\n-- ' + a.title + '\n' + a.sql;
-            run();
-          } else {
-            el('pkq-out').innerHTML = ''; el('pkq-meta').textContent = '';
+          // the prose when a model wrote one that survived the checks, else the summary
+          text.className = 'pkq-text';
+          text.textContent = ans.explanation || ans.summary;
+          if (!ans.explanation && ans.dropped.length) {
+            a.appendChild(node('span', 'pkq-sub', ENGINE.name + '’s prose was withheld: it used a number or a claim the rows do not hold.'));
           }
-          ans.hidden = false;
-          ans.innerHTML = '';
-          ans.appendChild(document.createTextNode(a.summary));
-          if (a.explanation) {
-            var ex = document.createElement('span'); ex.className = 'pkq-explain';
-            ex.textContent = a.explanation;
-            ans.appendChild(ex);
+          if (ans.explanation) {
+            a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + ENGINE.name +
+              ', its numbers checked against the rows' + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') + '.'));
           }
-          var m = document.createElement('span'); m.className = 'pkq-meta';
-          m.textContent = (a.explanation ? 'Explanation by ' + ENGINE.name + '; its numbers were checked against the rows' +
-                           (a.dropped.length ? ' (' + a.dropped.length + ' sentence(s) dropped)' : '') + '. ' : '') +
-                          (a.sql ? 'The SQL that produced this is in the editor below — change it and Run.' : '');
-          ans.appendChild(m);
-          // the question is the link: #/query?ask=…
+          if (ans.sql) {
+            var box = node('div', 'pkq-table');
+            a.appendChild(box);
+            table(ans.res, box);
+            var det = node('details', 'pkq-sqlbox'), sum = node('summary', null, 'SQL');
+            var ta = node('textarea'); ta.value = ans.sql; ta.spellcheck = false;
+            var row = node('div', 'pkq-row'), run = node('button', 'pkq-btn', 'Run'), meta = node('span', 'pkq-meta');
+            run.type = 'button';
+            run.addEventListener('click', function () {      // edit the SQL, re-run it in place
+              try {
+                var n = table(DB.exec(ta.value), box);
+                meta.className = 'pkq-meta'; meta.textContent = n + ' row(s)';
+              } catch (e) { meta.className = 'pkq-meta err'; meta.textContent = String(e.message || e); }
+            });
+            row.appendChild(run); row.appendChild(meta);
+            det.appendChild(sum); det.appendChild(ta); det.appendChild(row);
+            a.appendChild(det);
+          }
           try {
             var h = '#/query?ask=' + encodeURIComponent(q);
             if (location.hash !== h) history.replaceState(null, '', h);
           } catch (e) { /* a file:// page without history is fine */ }
-        }).catch(function (e) { status(String(e.message || e), true); })
-          .then(function () { BUSY = false; });
+        }).catch(function (e) {
+          text.className = 'pkq-text'; text.textContent = 'Something went wrong: ' + String(e.message || e);
+        }).then(function () {
+          BUSY = false;
+          if (el('pkq-askbtn')) el('pkq-askbtn').disabled = false;
+          scrollDown();
+        });
       }
 
-      // ── the optional model: opt-in, its size stated, nothing until the reader asks ─────────
+      // ── the optional model: opt-in, sizes stated, nothing until the reader asks ─────────
       var LLM_KEY = 'pkq-llm-model';
       function llmStatus(msg) { var s = el('pkq-llm-status'); if (s) s.textContent = msg; }
+      function mode() {
+        var b = el('pkq-mode'); if (!b) return;
+        b.textContent = ENGINE ? ENGINE.name : 'keywords';
+        b.className = 'pkq-mode' + (ENGINE ? ' on' : '');
+        b.title = ENGINE ? ENGINE.name + ' reads the questions and answers in prose' : 'Answers from keywords; click to add a language model';
+      }
       function llmPanel() {
-        var sel = el('pkq-llm-model');
-        if (!sel || sel.options.length) return;
+        var box = el('pkq-llmbox'), sel = el('pkq-llm-model'), btn = el('pkq-mode');
+        if (!box) return;
+        box.hidden = !box.hidden;
+        if (btn) btn.setAttribute('aria-expanded', String(!box.hidden));
+        if (box.hidden || !sel || sel.options.length) return;
         llmScript().then(function () { return window.pkAskLLM.support(); }).then(function (sup) {
           var last = null;
           try { last = localStorage.getItem(LLM_KEY); } catch (e) { /* storage blocked: no default */ }
           window.pkAskLLM.MODELS.forEach(function (m) {
-            var o = document.createElement('option'); o.value = m.key;
-            o.textContent = m.label + ' — ' + m.gb + ' GB download, needs ~' + m.vram + ' GB of GPU memory';
+            var o = node('option', null, m.label + ' — ' + m.gb + ' GB download, ~' + m.vram + ' GB GPU memory');
+            o.value = m.key;
             if (m.key === last) o.selected = true;
             sel.appendChild(o);
           });
+          if (ENGINE) { el('pkq-llm-load').textContent = 'Enabled'; el('pkq-llm-load').disabled = true; }
           if (!sup.ok) {
             el('pkq-llm-load').disabled = true;
-            llmStatus('Not available here: ' + sup.why + '. Asking in words still works without it.');
+            llmStatus('Not available here: ' + sup.why + '. Asking still works without it.');
             return;
           }
           return window.pkAskLLM.cached(sel.value).then(function (c) {
-            if (c) llmStatus('Already downloaded in this browser — enabling it loads it onto the GPU.');
+            if (c && !ENGINE) llmStatus('Already downloaded in this browser — enabling loads it onto the GPU.');
           });
         }).catch(function (e) { llmStatus(String(e.message || e)); });
       }
@@ -762,13 +763,14 @@
         if (!sel || !btn) return;
         btn.disabled = true;
         llmScript().then(function () {
-          return window.pkAskLLM.load(sel.value, function (text) { llmStatus(text); });
+          return window.pkAskLLM.load(sel.value, function (t) { llmStatus(t); });
         }).then(function (eng) {
           ENGINE = eng;
           try { localStorage.setItem(LLM_KEY, sel.value); } catch (e) { /* a convenience only */ }
-          llmStatus(eng.name + ' is on. Questions the keywords cannot read go to it; ' +
-                    'the answers still come from the database.');
           btn.textContent = 'Enabled';
+          llmStatus(eng.name + ' is on: answers come in prose; the numbers still come from the database.');
+          mode();
+          setTimeout(function () { var b = el('pkq-llmbox'); if (b) b.hidden = true; }, 1800);
         }).catch(function (e) {
           btn.disabled = false;
           llmStatus('Could not load the model: ' + String(e.message || e));
@@ -806,140 +808,56 @@
           return true;
         }
       };
+
       function askFromHash() {
         var m = /[?&]ask=([^&]*)/.exec(location.hash || '');
         if (!m) return false;
         var q = decodeURIComponent(m[1].replace(/\+/g, ' '));
-        if (el('pkq-ask')) el('pkq-ask').value = q;
+        var last = TURNS.length && TURNS[TURNS.length - 1].querySelector('.pkq-q');
+        if (last && last.textContent === q) return true;      // already asked: a re-render, not a new question
         ask(q);
         return true;
       }
 
-      function qcodeFor(text) {
-        // Resolve a typed parameter name through the ontology's 740 synonyms, so
-        // "absorption rate constant" finds Q49 without the reader knowing Q-codes exist.
-        if (!text || !DB) return null;
-        try {
-          var hit = DB.exec(
-            "SELECT parameter_id FROM qcode WHERE lower(name) = lower('" + sq(text) + "') " +
-            "OR lower(synonyms) LIKE lower('%\"" + sq(text) + "\"%') LIMIT 1");
-          if (hit[0]) return hit[0].values[0][0];
-          var alt = DB.exec("SELECT detail FROM search_doc WHERE kind='parameter' AND " +
-                            "lower(label) = lower('" + sq(text) + "') LIMIT 1");
-          if (alt[0]) return String(alt[0].values[0][0]).split(' ')[0];
-        } catch (e) { /* fall through: an unresolvable name just leaves the code alone */ }
-        return null;
-      }
-
-      function buildParam() {
-        // Built from the template, never by patching the finished string. The previous
-        // version appended "AND drug = 'x'" after ORDER BY, which SQLite happily parses as a
-        // boolean sort key — no error, and the filter silently did nothing.
-        var drug = ((el('pkq-drug') || {}).value || '').trim();
-        var code = ((el('pkq-code') || {}).value || '').trim();
-        var sql = CANNED.param;
-        var filters = '';
-        if (drug) filters += " AND lower(d.generic_name) = lower('" + sq(drug) + "')";
-        var q = qcodeFor(code);
-        if (q) {
-          sql = sql.replace("p.parameter_id = 'Q49'", "p.parameter_id = '" + sq(q) + "'");
-        } else if (code) {
-          // Unresolvable name: match the parameter's own label instead. It REPLACES the
-          // Q-code predicate — ANDing them pinned Q49 and could never match anything else.
-          sql = sql.replace("p.parameter_id = 'Q49'",
-                            "lower(p.name) LIKE lower('%" + sq(code) + "%')");
-        }
-        // split/join, not replace(): replace() with a STRING pattern substitutes only the
-        // FIRST match. The template's own help line used to mention /*FILTER*/, so the drug
-        // clause was spliced into a SQL COMMENT while the real marker in the WHERE stayed
-        // put — and SQLite reads a stray /*FILTER*/ as a block comment, so the query ran
-        // clean and unfiltered. Nothing to see in the console, wrong rows on the page.
-        return sql.split('/*FILTER*/').join(filters);
-      }
-
-      function fillLists() {
-        try {
-          var ds = DB.exec("SELECT generic_name FROM drug ORDER BY generic_name");
-          if (ds[0]) ds[0].values.forEach(function (v) {
-            var o = document.createElement('option'); o.value = v[0];
-            el('pkq-drugs').appendChild(o);
-          });
-          var qs = DB.exec("SELECT parameter_id, name FROM qcode ORDER BY name");
-          if (qs[0]) qs[0].values.forEach(function (v) {
-            var o = document.createElement('option'); o.value = v[1]; o.label = v[0];
-            el('pkq-codes').appendChild(o);
-          });
-        } catch (e) { /* lists are a convenience; a failure here must not block queries */ }
-      }
-
       function boot() {
-        if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; return; }
+        if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; attach(); mode(); return; }
         if (loading) return;
         loading = true;
         window.pkdb.load(status).then(function (db) {
           DB = db;
-          fillLists();
           el('pkq-status').hidden = true;
           el('pkq-ui').hidden = false;
-          if (askFromHash()) return;
-          el('pkq-sql').dataset.kind = 'param';
-          el('pkq-sql').value = buildParam();
-          run();
+          attach(); mode();
+          askScript().then(function () { lexicon(); });       // warm the lexicon before the first question
+          askFromHash();
         }).catch(function (e) { loading = false; status(String(e.message || e), true); });
       }
 
+      var wired = false;
       hook.doneEach(function () {
         if (!document.getElementById('pkq')) return;     // every other page stops here
+        if (!el('pkq-ask')) { status('The chat controls did not render — see query.md.', true); return; }
         boot();
-        var ui = el('pkq-ui');
-        // Every control is looked up before any is wired. marked ends an HTML block at the
-        // first blank line, so a stray blank line in query.md silently drops the inner
-        // controls; wiring them unchecked threw inside the hook and took the page down.
-        var runBtn = el('pkq-run'), sqlBox = el('pkq-sql');
-        if (ui && runBtn && sqlBox && !ui.dataset.wired) {
-          ui.dataset.wired = '1';
-          void 0;
-          // DELEGATED, and every node resolved at call time. Docsify replaces
-          // .markdown-section wholesale on each render, so a handler bound to a captured
-          // element keeps writing into a node that is no longer on the page — the SQL box you
-          // see stays stale while an invisible twin gets updated. Listening on document and
-          // calling el() inside the handler survives any number of re-renders.
-          document.addEventListener('click', function (ev) {
-            var b = ev.target.closest && ev.target.closest('.pkq-btn[data-q]');
-            if (!b || !el('pkq-sql')) return;
-            var kind = b.dataset.q;
-            el('pkq-sql').dataset.kind = kind;
-            el('pkq-sql').value = (kind === 'param') ? buildParam() : CANNED[kind];
-            run();
-          });
-          // the model panel fills itself the first time it is opened, not before
-          document.addEventListener('toggle', function (ev) {
-            if (ev.target && ev.target.id === 'pkq-llm' && ev.target.open) llmPanel();
-          }, true);
-          document.addEventListener('input', function (ev) {
-            var t = ev.target;
-            if (!t || (t.id !== 'pkq-drug' && t.id !== 'pkq-code')) return;
-            var box = el('pkq-sql');
-            if (!box || box.dataset.kind !== 'param') return;   // never clobber hand-written SQL
-            box.value = buildParam();
-          });
-          document.addEventListener('keydown', function (ev) {
-            var t = ev.target;
-            if (!t) return;
-            if (t.id === 'pkq-ask' && ev.key === 'Enter') { ask(t.value); return; }
-            if ((t.id === 'pkq-drug' || t.id === 'pkq-code') && ev.key === 'Enter') { run(); return; }
-            if (t.id === 'pkq-sql' && (ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') run();
-          });
-          document.addEventListener('click', function (ev) {
-            if (ev.target && ev.target.id === 'pkq-run') run();
-            if (ev.target && ev.target.id === 'pkq-askbtn') ask((el('pkq-ask') || {}).value);
-            if (ev.target && ev.target.id === 'pkq-llm-load') llmLoad();
-            var c = ev.target.closest && ev.target.closest('button.pkq-chip[data-ask]');
-            if (c) { if (el('pkq-ask')) el('pkq-ask').value = c.dataset.ask; ask(c.dataset.ask); }
-          });
-        } else if (ui && !runBtn) {
-          status('The query controls did not render — see query.md.', true);
-        }
+        if (wired) return;
+        wired = true;
+        // DELEGATED, every node resolved at call time: docsify replaces .markdown-section
+        // wholesale on each render, so handlers on captured elements would go stale.
+        document.addEventListener('click', function (ev) {
+          var t = ev.target;
+          if (!t || !document.getElementById('pkq')) return;
+          if (t.id === 'pkq-askbtn') { var i = el('pkq-ask'); if (!BUSY && i.value.trim()) { ask(i.value); i.value = ''; } return; }
+          if (t.id === 'pkq-mode') { llmPanel(); return; }
+          if (t.id === 'pkq-llm-load') { llmLoad(); return; }
+          var c = t.closest && t.closest('button.pkq-chip[data-ask]');
+          if (c) ask(c.dataset.ask);
+        });
+        document.addEventListener('keydown', function (ev) {
+          var t = ev.target;
+          if (t && t.id === 'pkq-ask' && ev.key === 'Enter' && !ev.isComposing) {
+            ev.preventDefault();
+            if (!BUSY && t.value.trim()) { ask(t.value); t.value = ''; }
+          }
+        });
       });
     });
 

@@ -676,8 +676,9 @@
       return cols.map(function (c) { var x = v[r.columns.indexOf(c)]; return x === null ? '' : String(x).slice(0, 40); }).join(' | ');
     }) : [];
     return [
-      { role: 'system', content: 'Explain a database result in at most three short sentences for a pharmacologist. ' +
-        'Use only numbers that appear in the summary or the rows. No advice, no outside knowledge, no lists.' },
+      { role: 'system', content: 'Answer the question in at most three short sentences for a pharmacologist, from the ' +
+        'database result below only. Use only numbers that appear in the summary or the rows; do not compute ' +
+        'averages. No advice, no outside knowledge, no lists.' },
       { role: 'user', content: 'Question: ' + question + '\nSummary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
         ' in all):\n' + cols.join(' | ') + '\n' + rows.join('\n') }
     ];
@@ -757,6 +758,7 @@
     }).then(function (o) {
       o.summary = o.summary || summarize(o.plan, o.res);
       if (!eng || !opts.explain || !o.res || !o.res[0] || !o.res[0].values.length) return o;
+      if (['search', 'missing', 'choose'].indexOf(o.plan.intent) >= 0) return o;   // nothing to say in prose
       return eng.text(explainMessages(question, o.plan, o.res, o.summary), 160).then(function (t) {
         var c = checkExplanation(t, o.res, o.summary, question, 12);
         o.explanation = c.text || null; o.dropped = c.dropped;
@@ -786,6 +788,9 @@
       out.plan.intent = 'search';
       var q = toSQL(out.plan);
       out.sql = q.sql; out.title = q.title; out.res = db.exec(q.sql);
+      // not 'nothing extracted': the data may well be there, the query was not
+      if (!out.res[0]) out.summary = 'No query could be built for this question — the SQL ' + eng.name +
+        ' wrote failed twice. Name a drug, a parameter or a gene, or try a larger model.';
       return out;
     });
   }
