@@ -517,8 +517,9 @@
   // written by the model, and that SQL passes guardSQL first. The explanation it may add is
   // checked: a sentence with a number the rows do not contain is dropped.
   //
-  // An engine is { name, json(messages, schema) → Promise<object>, text(messages, maxTokens)
-  // → Promise<string> } — WebLLM on the page (pk-ask-llm.js), Ollama in test/query_eval.js.
+  // An engine is { name, json(messages, schema) → Promise<object>,
+  // text(messages, maxTokens, onUpdate?, onThinking?) → Promise<string> } — WebLLM on the page
+  // (pk-ask-llm.js), Ollama in test/query_eval.js.
 
   var MODEL_INTENTS = ['param_values', 'disagree', 'pgx', 'dose_response', 'pd_models', 'papers',
                        'records', 'gapfill', 'search', 'explain', 'out_of_scope', 'other'];
@@ -726,10 +727,12 @@
       return cols.map(function (c) { var x = v[r.columns.indexOf(c)]; return x === null ? '' : String(x).slice(0, 40); }).join(' | ');
     }) : [];
     return [
-      { role: 'system', content: 'Answer the question in at most three short sentences for a pharmacologist, from the ' +
+      { role: 'system', content: 'Answer the question for a pharmacologist, as fully as the question needs, from the ' +
         'database result below' + (general ? ', adding general pharmacology where the question asks why or how' : ' only') +
-        '. Use only numbers that appear in the summary or the rows; do not compute averages. No advice, ' +
-        (general ? '' : 'no outside knowledge, ') + 'no lists.' +
+        '. Use only numbers that appear in the summary or the rows; do not compute averages. ' +
+        (general ? 'Say which part comes from general knowledge rather than the data. ' : '') +
+        'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ' +
+        'No personal dosing advice; do not add a disclaimer, the page shows one.' +
         (ref ? '\nFor the why or how, the site glossary says (use it, do not contradict it; if it does not ' +
                'explain the case, say what the data show and that the reason is not in the data):\n' + ref : '') },
       { role: 'user', content: 'Question: ' + question + '\nSummary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
@@ -771,12 +774,13 @@
     var ref = (entries || []).map(function (e) { return '[' + e.title + '] ' + e.text; }).join('\n');
     var m = [{ role: 'system', content:
       'You are a pharmacometrics tutor on a website about a pharmacokinetics, pharmacodynamics and ' +
-      'pharmacogenomics knowledge base. Answer in plain language, in at most five sentences. Explain ' +
-      'concepts; do not give values for specific drugs and do not give medical or dosing advice.' +
+      'pharmacogenomics knowledge base. Answer in plain language, as fully as the question needs. Explain ' +
+      'concepts; do not give values for specific drugs. If you do not know, or are unsure, say "I have no ' +
+      'knowledge about it" rather than guessing. No personal dosing advice; do not add a disclaimer, the page shows one.' +
       (terms ? ' The question names these parameters: ' + terms + '.' : '') +
       (ref ? '\nThe site glossary says (answer from it, in your own words, and do not contradict it):\n' + ref : '') }];
     (history || []).slice(-3).forEach(function (h) {
-      m.push({ role: 'user', content: h.q }, { role: 'assistant', content: String(h.a || '').slice(0, 400) });
+      m.push({ role: 'user', content: h.q }, { role: 'assistant', content: String(h.a || '').slice(0, 1200) });
     });
     m.push({ role: 'user', content: question });
     return m;
@@ -792,7 +796,7 @@
         var toks = norm(sent).split(' '), drug = false;
         for (var i = 0; i < toks.length && !drug; i++)
           drug = (toks[i] in lex.drug && toks[i].length > 3) || (i + 1 < toks.length && (toks[i] + ' ' + toks[i + 1]) in lex.drug);
-        (drug && numbersIn(sent).length ? dropped : kept).push(sent);
+        (drug && generalNumbersIn(sent).length ? dropped : kept).push(sent);
       });
     return { text: kept.join(' '), dropped: dropped };
   }
@@ -800,11 +804,25 @@
   function numbersIn(s) {
     return (String(s).replace(/(\d),(\d{3})\b/g, '$1$2').match(/-?\d+(\.\d+)?(e-?\d+)?/gi) || []).map(Number);
   }
+  // A number embedded in a clinical label is not a drug-specific measurement: Type 2 diabetes,
+  // V2 receptors, CYP2D6 and COVID-19 are names/classifications. Keep standalone quantities
+  // (e.g. 45 mg or 20%) guarded while not discarding a whole sentence just because of a label.
+  function generalNumbersIn(s) {
+    s = String(s || '').replace(/\btype\s+\d+\b/gi, ' ')
+      .replace(/\b\d+(?:st|nd|rd|th)\b/gi, ' ')
+      .replace(/\b\d+-HT\d+[A-Za-z]?\b/gi, ' ')
+      .replace(/\b[A-Za-z][A-Za-z0-9]*(?:-[A-Za-z0-9]+)*-\d+[A-Za-z0-9]*\b/g, ' ')
+      .replace(/\b[A-Za-z]+[A-Za-z0-9]*(?:-[A-Za-z0-9]+)*\d[A-Za-z0-9]*(?:-[A-Za-z0-9]+)*\b/g, ' ')
+      .replace(/[αβγδ]\s*-?\s*\d+/gi, ' ');
+    return numbersIn(s);
+  }
   // A kept sentence (1) uses only numbers the model was shown — the summary, the rows it saw,
   // the question; (2) computes nothing: an average or a 'most common value' over rows it saw a
   // part of is invented however plausible; (3) shares a word with the rows or the summary that
   // the question did not already contain — a sentence that does not is outside knowledge
   // ('metformin is eliminated by glomerular filtration'), true or not.
+  // saying so is always allowed: 'I have no knowledge about it' is grounded by being honest
+  var NO_KNOWLEDGE = /\b(no knowledge|do(es)? not know|don't know|not in (the|my|this) data)\b/i;
   var STATS = /\b(average|mean|median|approximately|roughly|around|most (common|commonly|frequent|frequently)|typical(ly)?|on average|in total|overall)\b/i;
   function words(s) {
     return (norm(s).match(/[a-z][a-z0-9-]{3,}/g) || []).filter(function (w) { return STOP.indexOf(w) < 0; })
@@ -830,11 +848,21 @@
         if (!sent) return;
         var nums = numbersIn(sent);
         // a checked number ties a sentence to the rows; without one it needs a word from them
-        var grounded = general || nums.length > 0 || words(sent).some(function (w) { return vocab[w] && !asked[w]; });
+        var grounded = general || nums.length > 0 || NO_KNOWLEDGE.test(sent) ||
+                       words(sent).some(function (w) { return vocab[w] && !asked[w]; });
         if (nums.every(ok) && !(nums.length && STATS.test(sent)) && grounded) kept.push(sent);
         else dropped.push(sent);
       });
     return { text: kept.join(' '), dropped: dropped };
+  }
+
+  // Stream every partial update to the live UI. The displayed draft is provisional; once the
+  // model finishes, checkGeneral/checkExplanation still decide which sentences are kept.
+  function textWithProgress(eng, messages, maxTokens, onText, onThinking) {
+    if (typeof onText !== 'function' && typeof onThinking !== 'function') return eng.text(messages, maxTokens);
+    return eng.text(messages, maxTokens, typeof onText === 'function' ? function (partial) {
+      if (partial) onText(partial);
+    } : undefined, onThinking);
   }
 
   function stripLimit(sql) { return String(sql).replace(/\s+LIMIT\s+\d+\s*;?\s*$/i, ';'); }
@@ -863,8 +891,7 @@
       out.by = plan.by || 'keywords';
       if (plan.intent === 'out_of_scope') {
         out.sql = null; out.title = 'not a question for this page'; out.res = [];
-        out.summary = 'This page answers questions about the extracted literature data. It cannot give dosing ' +
-                      'or medical advice — ask a doctor or pharmacist.';
+        out.summary = 'This page cannot give dosing or medical advice — ask a doctor or pharmacist.';
         return out;
       }
       if (plan.intent === 'explain') {
@@ -879,7 +906,8 @@
         }
         if (eng) {
           out.sql = null; out.title = 'explanation'; out.res = [];
-          return eng.text(generalMessages(question, plan, opts.history, out.glossary), 260).then(function (t) {
+          return textWithProgress(eng, generalMessages(question, plan, opts.history, out.glossary), 900,
+            opts.onText, opts.onThinking).then(function (t) {
             var c = checkGeneral(t, lex);
             out.explanation = c.text || null; out.dropped = c.dropped;
             out.summary = c.text ? '' : out.glossary.map(function (e) { return e.title + ': ' + e.text; }).join('\n\n') ||
@@ -890,7 +918,7 @@
         out.general = false;            // keywords, no entry: the ontology rows below, if any
       }
       if (plan.intent === 'other' && !eng) plan.intent = 'search';
-      if (plan.intent === 'other') return modelSQL(question, db, eng, out);
+      if (plan.intent === 'other') return modelSQL(question, db, eng, out, lex, opts);
       var q = toSQL(plan);
       out.sql = q.sql; out.title = q.title;
       out.res = q.sql ? db.exec(q.sql) : [];
@@ -906,7 +934,9 @@
       var why = CUES.explain.test(o.plan.text);
       var entries = why ? glossaryFor(o.plan, lex) : [];
       o.glossary = entries;
-      return eng.text(explainMessages(question, o.plan, o.res, o.summary, why, entries), why ? 220 : 160).then(function (t) {
+      return textWithProgress(eng, explainMessages(question, o.plan, o.res, o.summary, why, entries),
+        why ? 700 : 500,
+        opts.onText, opts.onThinking).then(function (t) {
         var c = checkExplanation(t, o.res, o.summary, question, 12, why);
         o.explanation = c.text || null; o.dropped = c.dropped;
         return o;
@@ -914,8 +944,9 @@
     });
   }
 
-  // 'other': the model writes the SQL; one repair with the error; else the name search
-  function modelSQL(question, db, eng, out) {
+  // 'other': the model writes the SQL; one repair with the error; if both fail, answer in words
+  // from general knowledge rather than pretending the failed query was a successful search.
+  function modelSQL(question, db, eng, out, lex, opts) {
     var card = schemaCard(db);
     var tryRun = function (text) {
       var sql = guardSQL(text);
@@ -931,14 +962,26 @@
       out.title = 'custom query'; out.res = r.res;
       return out;
     }, function (e) {
-      out.modelError = 'SQL: ' + String(e && e.message || e);
-      out.plan.intent = 'search';
-      var q = toSQL(out.plan);
-      out.sql = q.sql; out.title = q.title; out.res = db.exec(q.sql);
-      // not 'nothing extracted': the data may well be there, the query was not
-      if (!out.res[0]) out.summary = 'No query could be built for this question — the SQL ' + eng.name +
-        ' wrote failed twice. Name a drug, a parameter or a gene, or try a larger model.';
-      return out;
+      out.sqlError = String(e && e.message || e);
+      out.sql = null; out.title = 'general answer'; out.res = [];
+      out.general = true;
+      out.glossary = glossaryFor(out.plan, lex);
+      var messages = generalMessages(question, out.plan, opts.history, out.glossary);
+      messages[0].content += '\nThe database could not build a query for this question. Answer from general ' +
+        'background only; do not claim that the database contains supporting results or invent numbers.';
+      return textWithProgress(eng, messages, 900, opts.onText, opts.onThinking).then(function (text) {
+        var checked = checkGeneral(text, lex);
+        out.explanation = checked.text || null;
+        out.dropped = checked.dropped;
+        out.summary = checked.text ? '' : out.glossary.map(function (entry) {
+          return entry.title + ': ' + entry.text;
+        }).join('\n\n') || 'The database query could not be built and the model gave no usable explanation.';
+        return out;
+      }, function (answerError) {
+        out.modelError = 'direct answer: ' + String(answerError && answerError.message || answerError);
+        out.summary = 'The database query could not be built, and the model could not produce a usable answer.';
+        return out;
+      });
     });
   }
 

@@ -98,6 +98,12 @@
       background: #f8fafc; border: 1px solid #e2e8f0; font-size: 14.5px; }
     .pkq-a .pkq-text { line-height: 1.55; }
     .pkq-a .pkq-text.pending { color: #94a3b8; }
+    .pkq-a .pkq-text.streaming::after { content: ' ▍'; color: #64748b; }
+    .pkq-thinking-box { box-sizing: border-box; max-height: 2.8em; overflow-y: auto; overflow-wrap: anywhere;
+      margin: 0 0 7px; padding: 4px 7px; border-left: 2px solid #cbd5e1; border-radius: 3px;
+      background: #f1f5f9; color: #64748b; font-size: 11px; line-height: 1.35; white-space: pre-wrap; }
+    .pkq-thinking-box[hidden] { display: none; }
+    .pkq-thinking-label { font-weight: 600; color: #475569; }
     .pkq-a .pkq-sub { display: block; margin-top: 6px; font-size: 12.5px; color: #64748b; }
     .pkq-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 6px; }
     .pkq-chip { font-size: 11.5px; padding: 1px 8px; border-radius: 999px; background: #eef2ff;
@@ -128,6 +134,10 @@
     .pkq-send:disabled { opacity: .5; cursor: default; }
     .pkq-mode { font: inherit; font-size: 12px; padding: 7px 8px; border-radius: 999px; cursor: pointer;
       border: 1px solid #cbd5e1; background: #fff; color: #475569; max-width: 230px; }
+    .pkq-thinking-control { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;
+      font-size: 12px; color: #64748b; cursor: pointer; }
+    .pkq-thinking-control[hidden] { display: none; }
+    .pkq-thinking-control input { width: 13px; height: 13px; margin: 0; }
     .pkq-llmnote { margin: 0; padding: 0 16px 8px; font-size: 11.5px; line-height: 1.45; color: #94a3b8;
       background: #fff; }
     .pkq-llmnote .pkq-llmstatus { color: #166534; font-weight: 600; }
@@ -580,6 +590,20 @@
         if (text != null) n.textContent = text;
         return n;
       }
+      function callStats(engine, from) {
+        if (!engine || !engine.calls) return '';
+        var call = engine.calls.slice(from || 0).filter(function (c) { return c.kind === 'text'; }).pop();
+        if (!call) return '';
+        var parts = [];
+        if (Number.isFinite(call.prompt_tokens)) parts.push('prompt ' + call.prompt_tokens + ' tokens');
+        if (Number.isFinite(call.tokens)) parts.push('answer ' + call.tokens + ' tokens');
+        var runtime = String(call.runtime_stats || '').replace(/tokens\/sec/gi, 'tok/s').replace(/,\s*/g, ' · ');
+        if (runtime && !/NaN|Infinity/.test(runtime)) parts.push(runtime);
+        else if (Number.isFinite(call.tokens) && call.tokens > 0 && call.ms > 0)
+          parts.push((call.tokens * 1000 / call.ms).toFixed(1) + ' tok/s');
+        if (Number.isFinite(call.ms) && call.ms > 0) parts.push((call.ms / 1000).toFixed(1) + ' s');
+        return parts.join(' · ');
+      }
 
       // rows → a table; model_id links to the record page, href to a site page, doi out
       function table(res, box) {
@@ -628,6 +652,22 @@
       }
       function askScript() { return window.pkAsk ? Promise.resolve() : script('assets/js/pk-ask.js'); }
       function llmScript() { return window.pkAskLLM ? Promise.resolve() : script('assets/js/pk-ask-llm.js'); }
+      function markdownScript() {
+        if (window.DOMPurify && typeof window.DOMPurify.sanitize === 'function') return Promise.resolve();
+        return script('https://cdn.jsdelivr.net/npm/dompurify@3.4.12/dist/purify.min.js').catch(function () {
+          return null;                         // plain-text fallback if the sanitizer CDN is unavailable
+        });
+      }
+      function renderMarkdown(target, source) {
+        var text = String(source || '');
+        if (!window.marked || typeof window.marked.parse !== 'function' ||
+            !window.DOMPurify || typeof window.DOMPurify.sanitize !== 'function') {
+          target.textContent = text;           // never inject unsanitized model output
+          return;
+        }
+        try { target.innerHTML = window.DOMPurify.sanitize(window.marked.parse(text)); }
+        catch (e) { target.textContent = text; }
+      }
       function lexicon() { if (!LEX) LEX = window.pkAsk.lexiconFromDB(DB); return LEX; }
       // the glossary explanations are made of (assets/chat/glossary.json); a failed fetch leaves
       // explanation questions to the model's general knowledge, said so
@@ -666,23 +706,57 @@
         var q = String(question || '').trim();
         var log = el('pkq-log');
         if (!q || !DB || !log || BUSY) return;
+        var answerEngine = ENGINE;
+        var callStart = answerEngine && answerEngine.calls ? answerEngine.calls.length : 0;
         BUSY = true;
         var send = el('pkq-askbtn'); if (send) send.disabled = true;
+        var thinkingControl = el('pkq-thinking'); if (thinkingControl) thinkingControl.disabled = true;
         if (!TURNS.length) log.innerHTML = '';
         var turn = node('div', 'pkq-turn'), a = node('div', 'pkq-a');
         var chips = node('div', 'pkq-chips'), text = node('div', 'pkq-text pending',
-          ENGINE ? ENGINE.name + ' is reading the question…' : 'Looking it up…');
+          answerEngine ? answerEngine.name + ' is reading the question…' : 'Looking it up…');
+        var thinkBox = null, thinkText = null;
+        if (answerEngine && THINKING) {
+          thinkBox = node('div', 'pkq-thinking-box');
+          thinkBox.setAttribute('aria-label', 'Model thinking');
+          thinkBox.hidden = true;
+          thinkBox.appendChild(node('span', 'pkq-thinking-label', 'Thinking · '));
+          thinkText = node('span');
+          thinkBox.appendChild(thinkText);
+          a.appendChild(thinkBox);
+        }
         turn.appendChild(node('div', 'pkq-q', q));
         a.appendChild(chips); a.appendChild(text); turn.appendChild(a);
         TURNS.push(turn); log.appendChild(turn); scrollDown();
 
         askScript().then(glossary).then(function () {
-          return window.pkAsk.answer(q, DB, lexicon(), { engine: ENGINE, explain: !!ENGINE, history: HIST.slice(-3) });
+          return answerEngine ? markdownScript() : null;
+        }).then(function () {
+          return window.pkAsk.answer(q, DB, lexicon(), {
+            engine: answerEngine, explain: !!answerEngine, history: HIST.slice(-3),
+            onText: function (partial) {
+              text.className = 'pkq-text streaming';
+              renderMarkdown(text, partial);   // parse Markdown, then sanitize before insertion
+              scrollDown();
+            },
+            onThinking: thinkText ? function (partial) {
+              if (!partial) return;
+              thinkBox.hidden = false;
+              thinkText.textContent = partial; // reasoning is plain text, never parsed as HTML
+              thinkBox.scrollTop = thinkBox.scrollHeight;
+              scrollDown();
+            } : undefined
+          });
         }).then(function (ans) {
+          var stats = callStats(answerEngine, callStart);
           var plan = ans.plan;
           window.pkAsk.understood(plan).forEach(function (b) { chips.appendChild(node('span', 'pkq-chip', b)); });
           plan.corrected.forEach(function (c) { chips.appendChild(node('span', 'pkq-chip warn', 'read “' + c.from + '” as ' + c.to)); });
-          if (ans.modelError) chips.appendChild(node('span', 'pkq-chip warn', 'model: ' + ans.modelError.slice(0, 70) + ' — keywords used'));
+          if (ans.modelError) chips.appendChild(node('span', 'pkq-chip warn', ans.sqlError
+            ? 'model fallback: ' + ans.modelError.slice(0, 70)
+            : 'model: ' + ans.modelError.slice(0, 70) + ' — keywords used'));
+          if (ans.sqlError) chips.appendChild(node('span', 'pkq-chip warn',
+            'Database query could not be built; using a general model answer'));
           // an ambiguous name is a choice, never a guess: each option asks again with it spelled out
           plan.suggestions.forEach(function (sg) {
             chips.appendChild(node('span', 'pkq-chip warn', '“' + sg.word + '” could be:'));
@@ -694,7 +768,7 @@
           });
           // the prose when a model wrote one that survived the checks, else the summary
           text.className = 'pkq-text';
-          text.textContent = ans.explanation || ans.summary;
+          renderMarkdown(text, ans.explanation || ans.summary);
           var gl = ans.glossary || [], titles = gl.map(function (e) { return e.title; }).join(', ');
           if (ans.general && !ans.explanation && gl.length) {      // keywords: the glossary entries themselves
             text.textContent = '';
@@ -707,19 +781,23 @@
             a.appendChild(node('span', 'pkq-sub', 'From the site glossary (draft definitions, pending expert review)' +
               (ENGINE ? '.' : '. Choose a language model in the list below for an answer in your own words.')));
           } else if (ans.general && ans.explanation) {             // a model, in words
-            a.appendChild(node('span', 'pkq-sub', 'Answered by ' + ENGINE.name + (gl.length
+            a.appendChild(node('span', 'pkq-sub', 'Answered by ' + answerEngine.name + (gl.length
               ? ' from the site glossary — ' + titles + ' (draft definitions, pending expert review).'
-              : ' from general knowledge: no glossary entry covers this, so check it against a textbook.') +
-              (ans.dropped.length ? ' ' + ans.dropped.length + ' sentence(s) giving a drug-specific number were dropped — values come from the data.' : '')));
+              : ans.sqlError
+                ? ' from general knowledge because the database query could not be built; verify it independently.'
+                : ' from general knowledge: no glossary entry covers this, so check it against a textbook.') +
+              (ans.dropped.length ? ' ' + ans.dropped.length + ' sentence(s) giving a drug-specific number were dropped — values come from the data.' : '') +
+              (stats ? ' · ' + stats : '')));
           }
           HIST.push({ q: q, a: ans.explanation || ans.summary, intent: plan.intent });
           if (!ans.explanation && ans.dropped.length && !ans.general) {
-            a.appendChild(node('span', 'pkq-sub', ENGINE.name + '’s prose was withheld: it used a number or a claim the rows do not hold.'));
+            a.appendChild(node('span', 'pkq-sub', answerEngine.name + '’s prose was withheld: it used a number or a claim the rows do not hold.'));
           }
           if (ans.explanation && !ans.general) {
-            a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + ENGINE.name +
+            a.appendChild(node('span', 'pkq-sub', 'From the database: ' + ans.summary + ' — prose by ' + answerEngine.name +
               ', its numbers checked against the rows' + (ans.dropped.length ? ' (' + ans.dropped.length + ' sentence(s) dropped)' : '') +
-              (gl.length ? '; the why draws on the site glossary — ' + titles : '') + '.'));
+              (gl.length ? '; the why draws on the site glossary — ' + titles : '') +
+              (stats ? ' · ' + stats : '') + '.'));
           }
           if (ans.sql) {
             var box = node('div', 'pkq-table');
@@ -748,6 +826,8 @@
         }).then(function () {
           BUSY = false;
           if (el('pkq-askbtn')) el('pkq-askbtn').disabled = false;
+          thinkingControl = el('pkq-thinking');
+          if (thinkingControl) thinkingControl.disabled = !CHOICE || !!(SUPPORT && !SUPPORT.ok);
           scrollDown();
         });
       }
@@ -756,7 +836,8 @@
       // Choosing a model starts its download (once, into this browser) and enables it; choosing
       // keywords switches it off and frees the GPU. The list says which models are already
       // downloaded. A model chosen before and still cached is enabled again on the next visit.
-      var LLM_KEY = 'pkq-llm-model', CHOICE = '', SUPPORT = null, CACHED = {};
+      var LLM_KEY = 'pkq-llm-model', THINK_KEY = 'pkq-llm-thinking', CHOICE = '', SUPPORT = null, CACHED = {};
+      var THINKING = false;
       function llmStatus(msg) {
         var note = el('pkq-llmnote'); if (!note) return;
         var st = note.querySelector('.pkq-llmstatus');
@@ -778,10 +859,15 @@
         });
         sel.value = CHOICE;
         sel.className = 'pkq-mode' + (ENGINE ? ' on' : '');
+        var thinkingWrap = el('pkq-thinking-control'), thinking = el('pkq-thinking');
+        if (thinkingWrap) thinkingWrap.hidden = !CHOICE;
+        if (thinking) { thinking.checked = THINKING; thinking.disabled = !CHOICE || !!(SUPPORT && !SUPPORT.ok) || BUSY; }
       }
       function modeInit() {
+        try { THINKING = localStorage.getItem(THINK_KEY) === '1'; } catch (e) { /* preference only */ }
         llmScript().then(function () { return window.pkAskLLM.support(); }).then(function (sup) {
           SUPPORT = sup;
+          window.pkAskLLM.setThinking(THINKING);
           modeList();
           if (!sup.ok) { llmStatus('Language models are not available here: ' + sup.why + '.'); return; }
           // which models are downloaded — asks WebLLM, so only once the page is idle
@@ -824,6 +910,13 @@
           CHOICE = ''; remember(''); modeList();
           llmStatus('Could not load ' + m.label + ': ' + String(e.message || e) + '. Back to keywords.');
         });
+      }
+      function setThinking(enabled) {
+        THINKING = !!enabled;
+        try { localStorage.setItem(THINK_KEY, THINKING ? '1' : '0'); } catch (e) { /* preference only */ }
+        if (window.pkAskLLM) window.pkAskLLM.setThinking(THINKING);
+        var control = el('pkq-thinking');
+        if (control) control.checked = THINKING;
       }
 
       // ── evaluation hook: query_eval.py --engine webllm drives the page's own code ─────────
@@ -901,6 +994,7 @@
         });
         document.addEventListener('change', function (ev) {
           if (ev.target && ev.target.id === 'pkq-mode') choose(ev.target.value);
+          if (ev.target && ev.target.id === 'pkq-thinking') setThinking(ev.target.checked);
         });
         document.addEventListener('keydown', function (ev) {
           var t = ev.target;
