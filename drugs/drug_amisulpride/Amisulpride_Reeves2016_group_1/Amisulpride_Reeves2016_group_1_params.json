@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amisulpride_Reeves2016_group_1",
+ "molar_masses": {
+  "central.C": 0.369479
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  25.0,
+  75.0
+ ],
+ "parameters": {
+  "Cl": 2.3333333333333336e-05,
+  "F": 0.9,
+  "MM": 0.369479,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00021428571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "k12": 0.002166666666666667,
+  "k21": 4.0222772277227725e-05,
+  "ka": 0.00024166666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13678.557114228457
+ },
+ "reference_peaks": {
+  "central.C": 5.907565597869222e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

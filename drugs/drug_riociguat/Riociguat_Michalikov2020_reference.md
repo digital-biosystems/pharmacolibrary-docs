@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/&quot;},{&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riociguat — `Riociguat_Michalikov2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,28 +21,32 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:24.097545+00:00) predates the upstream re-run (2026-10-06 16:19:25.192354+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020)
   ·  DOI: [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031)
 
 ## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Michalikov2020_reference" status="rejected" stale="false" population="patients with chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="riociguat" model-id="Riociguat_Michalikov2020_reference" status="needs_review" stale="true" population="patients with chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ka/F (h−1) | `Q49` · kabs | 3 | h−1 | 0.0008333333333333333 | [1] / [h] | not captured | llm (0.6) | table2-2045894019898031:row2:col1, table2-2045894019898031:row2:col2 | — | not captured |
+| creatinine clearance | `Q22` · CL | 15.0 | mL/min | 2.5e-07 | L/h | not captured | review_gapfill (0.7) | Smith_2016:review | — | not captured |
+| Volume of distribution (Vd) | `Q61` · V | 0.35 | L/kg | 0.0245 | L | not captured | review_gapfill (0.7) | Smith_2016:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,12 +63,14 @@ Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary c
 **Interpretation flags:**
 - column 'final model (% rse)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=riociguat
-- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- template fit: none — only the metabolite is modelled — no parent compartment
 - bound model equation to Q40 (Fab): F = CLf,M1TV * (BILTOT/0.69)^θ
 - Q40 (Fab) is equation-defined: value moved to equation-variable 'F'; equation kept verbatim
 - row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 2 linked by role
 - molar mass: no plausible PubChem entry for 'M1' ('desmethylriociguat') — left in mass units
 - molar mass: none found for 'M1' — its concentrations stay mass-only
+- gap-filled Q22 (CL) from Smith_2016's review values (primary lacked it)
+- gap-filled Q61 (V) from Smith_2016's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -75,23 +81,14 @@ Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>4 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | riociguat | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | riociguat | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -104,9 +101,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Smith_2016:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['table2-2045894019898031:row2:col1', 'table2-2045894019898031:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Smith_2016:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 15.0 | not captured | not captured | ['Smith_2016:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.9 L/h | not captured | not captured | ['Smith_2016:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 24.5 L | not captured | not captured | ['Smith_2016:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -120,9 +122,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -131,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 03:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:19 UTC</sub>

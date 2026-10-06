@@ -18,7 +18,7 @@ Clopamide is a sulfonamide diuretic that has been used to treat high blood press
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:29 | 0:54 | 0/0/0 | 0/0/0 | 0/0/0 | 1,640/110 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 17:14 | 0:19 | 0/0/0 | 0/0/0 | 0/0/0 | 5,567/340 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -43,10 +43,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `McNeil_1987.pdf` | McNeil JJ et al., Clopamide: plasma concentrations and di…, Clinical pharmacology and t… (1987) | popPK | 8 | [10.1038/clpt.1987.151](https://doi.org/10.1038/clpt.1987.151) | [3621784](https://pubmed.ncbi.nlm.nih.gov/3621784) | The study reports PK parameters for clopamide, but only qualitative descriptions (e.g., "approximately 10 hours") are present in the text, lacking specific numeric values for clearance or volume. |
+| `McNeil_1987.pdf` | McNeil JJ et al., Clopamide: plasma concentrations and di…, Clinical pharmacology and t… (1987) | popPK | 8 | [10.1038/clpt.1987.151](https://doi.org/10.1038/clpt.1987.151) | [3621784](https://pubmed.ncbi.nlm.nih.gov/3621784) | The study reports PK parameters for clopamide in humans, including a specific elimination half-life (~10 hours) and qualitative descriptions of concentration-time profile (monoexponential decline, Tmax &lt; 2h), but lacks explicit numeric values for clearance (CL) or volume of distribution (V). |
 | `Nazaret_1987.pdf` | Nazaret C et al., Inhibition of the Cl-/NaCO3- anion exch…, European journal of pharmac… (1987) | pd | 5 | [10.1016/0014-2999(87)90388-8](https://doi.org/10.1016/0014-2999(87)90388-8) | [3440481](https://www.ncbi.nlm.nih.gov/pubmed/3440481) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T07:29:40.929617+00:00</sub>
+<sub>queue written 2026-10-06T17:14:38.977964+00:00</sub>
 
 ## Screened and excluded
 
@@ -60,16 +60,16 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Griebenow_1997 | not_relevant | 0 | 0 | The paper is a clinical efficacy trial comparing blood pressure outcomes between drug groups, reporting no pharmacokinetic data, concentration-effect relationships, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Houtzagers_1986 | irrelevant | 0 | 0 | The study is a clinical efficacy and safety trial comparing fixed-dose combinations, reporting no pharmacokinetic parameters for clopamide. |
 | PD | Houtzagers_1986 | not_relevant | 1 | 0 | The paper is a clinical trial comparing fixed-dose combinations and reports qualitative changes in serum potassium and body weight, but it does not provide concentration-effect data, dose-response curves, or numeric PD parameters for clopamide. |
-| popPK | Kiger_1976 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pindolol, with clopamide serving only as a co-administered agent to test for interaction, and no PK parameters for clopamide are reported. |
+| popPK | Kiger_1976 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pindolol, with clopamide serving only as a co-administered agent to test for interaction, not as the subject drug. |
 | popPK | Leary_1989 | irrelevant | 0 | 0 | The study focuses on renal excretory actions and pharmacodynamics of antihypertensive agents, with clopamide serving only as a comparator diuretic, and no pharmacokinetic parameters are reported. |
 | PD | Leary_1989 | not_relevant | 1 | 0 | The paper only provides a qualitative description of clopamide's renal effects (natriuretic/diuretic) and its interaction with pindolol, without reporting any numeric concentration-effect data, dose-response curves, or PD parameters. |
-| popPK | McNeil_1987 | relevant | 8 | 2 | The study reports PK parameters for clopamide, but only qualitative descriptions (e.g., "approximately 10 hours") are present in the text, lacking specific numeric values for clearance or volume. |
+| popPK | McNeil_1987 | relevant | 8 | 4 | The study reports PK parameters for clopamide in humans, including a specific elimination half-life (~10 hours) and qualitative descriptions of concentration-time profile (monoexponential decline, Tmax &lt; 2h), but lacks explicit numeric values for clearance (CL) or volume of distribution (V). |
 | popPK | Nazaret_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion transport inhibition in red blood cells, not a pharmacokinetic study, and reports no disposition parameters for clopamide. |
 | popPK | Radcliff_1968 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | popPK | Schiffl_1982 | irrelevant | 0 | 0 | The study focuses on the metabolic effects (LDL-C) of clopamide and pindolol, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Schiffl_1982 | not_relevant | 1 | 0 | The paper reports a qualitative clinical observation of LDL-C changes with fixed doses but provides no concentration-effect data, PK/PD modeling, or numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Sharaf_2016 | irrelevant | 2 | 0 | The paper describes a bioanalytical method validation and mentions a PK study application, but no quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for clopamide are reported in the provided evidence. |
-| popPK | Stüber_1989 | irrelevant | 2 | 1 | The paper describes an analytical method (GLC-MS) and reports only summary descriptive statistics (Cmax, Tmax) from a pilot study, lacking the quantitative compartmental or population PK parameters (CL, V, ka) required for extraction. |
+| popPK | Sharaf_2016 | irrelevant | 2 | 0 | The paper describes a bioanalytical method and mentions its application to a PK study, but no quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for clopamide are provided in the evidence. |
+| popPK | Stüber_1989 | irrelevant | 2 | 0 | The paper describes an analytical method and reports only Cmax and Tmax, lacking the quantitative disposition parameters (CL, V, ka, half-life) required for PK modeling. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

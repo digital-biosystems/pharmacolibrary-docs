@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Drevin_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daunorubicin — `Daunorubicin_Drevin2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -24,35 +25,36 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:07.107582+00:00) predates the upstream re-run (2026-10-06 16:52:07.305553+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `daunorubicin`, measured `daunorubicin and daunorubicinol`.
+
 ## Citation
 Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792)
 
 ## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="needs_review" stale="false" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="extracted" stale="true" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin and daunorubicinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 11 extracted, plus 1 covariate effect.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 9 extracted, plus 1 covariate effect.
 
-**Parameterization:** apparent.
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (L) | `Q63` · V1 | 22.37 | L | 0.02237 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row3:col1, pharmaceutics-14-00792-t002:row3:col2 | — | not captured |
-| V2 (L) | `Q64` · V2 | 1393 | L | 1.393 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row4:col1, pharmaceutics-14-00792-t002:row4:col2 | — | not captured |
-| V3 (L) | `Q77` · V3 | 330 | L | 0.33 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row5:col1, pharmaceutics-14-00792-t002:row5:col2 | — | not captured |
-| Q1 (L/h) | `Q30` · Q | 75.1 | L/h | 2.086111111111111e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row6:col1, pharmaceutics-14-00792-t002:row6:col2 | — | not captured |
-| Q2 (L/h) | `Q99` · Q2 | 135 | L/h | 3.7500000000000003e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row7:col1, pharmaceutics-14-00792-t002:row7:col2 | — | not captured |
-| Q3 (L/h) | `Q30` · Q | 573 | L/h | 0.0001591666666666667 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row8:col1, pharmaceutics-14-00792-t002:row8:col2 | — | not captured |
-| V5 (L) | `Q64` · V2 | 79.2 | L | 0.0792 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row9:col1, pharmaceutics-14-00792-t002:row9:col2 | — | not captured |
-| β BSA (m2) on V5 | `Q319` · allometric_exponent | 0.98 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-14-00792-t002:row10:col1 | — | not captured |
-| Kp1m (1/h) | `Q305` · kfm | 3.9 | 1/h | 0.0010833333333333333 | 1/h | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row11:col1, pharmaceutics-14-00792-t002:row11:col2 | — | not captured |
-| Clm (L/h) | `Q22` · CL | 35.8 | L/h | 9.944444444444445e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row12:col1, pharmaceutics-14-00792-t002:row12:col2 | — | not captured |
-| creatinine_mol_l_on_clm | `Q900` · creatinine_mol_l_on_clm | -0.027 | not captured | not captured | not captured | not captured | not captured (not captured) | pharmaceutics-14-00792-t002:row13:col1 | — | not captured |
-| β BSA (m2) on Clm | `Q22` · CL | 1.04 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | pharmaceutics-14-00792-t002:row14:col1 | — | not captured |
+| V1 (L) | `Q63` · V1 | 21.1 | L | 0.0211 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row3:col1, pharmaceutics-14-00792-t002:row3:col2 | — | not captured |
+| V2 (L) | `Q64` · V2 | 1449 | L | 1.449 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row4:col1, pharmaceutics-14-00792-t002:row4:col2 | — | not captured |
+| V3 (L) | `Q77` · V3 | 323 | L | 0.323 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row5:col1, pharmaceutics-14-00792-t002:row5:col2 | — | not captured |
+| Q1 (L/h) | `Q30` · Q | 69.4 | L/h | 1.927777777777778e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row6:col1, pharmaceutics-14-00792-t002:row6:col2 | — | not captured |
+| Q2 (L/h) | `Q99` · Q2 | 125 | L/h | 3.472222222222222e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row7:col1, pharmaceutics-14-00792-t002:row7:col2 | — | not captured |
+| Q3 (L/h) | `Q30` · Q | 591 | L/h | 0.00016416666666666665 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row8:col1, pharmaceutics-14-00792-t002:row8:col2 | — | not captured |
+| V5 (L) | `Q64` · V2 | 536 | L | 0.536 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row9:col1, pharmaceutics-14-00792-t002:row9:col2 | — | not captured |
+| Kp1m (1/h) | `Q305` · kfm | 3.73 | 1/h | 0.0010361111111111111 | 1/h | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row11:col1, pharmaceutics-14-00792-t002:row11:col2 | — | not captured |
+| Clm (L/h) | `Q22` · CL | 41.3 | L/h | 1.1472222222222221e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row12:col1, pharmaceutics-14-00792-t002:row12:col2 | — | not captured |
+| β BSA (m2) on Clm | `Q900` · equation variable | 1.04 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | pharmaceutics-14-00792-t002:row14:col1 | — | not captured |
+| theta_q335_creatinine | `Q900` · theta_q335_creatinine | -0.027 | not captured | not captured | not captured | not captured | not captured (not captured) | pharmaceutics-14-00792-t002:row13:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,14 +64,14 @@ Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022)
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate level 'β creatinine (µmol/L) on Clm' → Q900:creatinine_mol_l_on_clm = -0.027 (linear_fractional on Q30)
-- dropped duplicate Q305 ('Kp3m (1/h)', value '0.26') — already have one for this compound
-- implicit units: 'Kp1m (1/h)' → 1/h (from the popPK convention: "Kp1m is defined in the table caption as a 'metabolite transformation rate' and in the text as a 'first-order transformat")
-- implicit units: 'β BSA (m2) on Clm' — the LLM proposed '1/m2', whose dimension does not fit Q351; left unset
-- metabolite daunorubicinol: Q351→Q22 — the model states fm, so its CL/V are not fm-divided
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=daunorubicin
+- dropped unlinked row (NIL): 'β BSA (m2) on V5' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-14-00792-t002:row10:col1'])
+- dropped duplicate Q305 ('Kp3m (1/h)', value '0.25') — already have one for this compound
+- covariate effect for Q335 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Kp1m (1/h)' → 1/h (from the popPK convention: 'The paper describes Kp1m as a metabolite transformation rate but does not state its unit. As a first-order transformatio')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daunorubicin and daunorubicinol
 - template fit: PK_3M_9C — formed from central; parent 3, metabolites [1]
-- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 20 linked by role; re-tagged parent→daunorubicinol ×13
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 20 linked by role; re-tagged parent→daunorubicin and daunorubicinol ×2, parent→daunorubicinol ×13
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -95,10 +97,9 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row12:col1', 'pharmaceutics-14-00792-t002:row12:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row6:col1', 'pharmaceutics-14-00792-t002:row6:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row8:col1', 'pharmaceutics-14-00792-t002:row8:col2'] |
@@ -108,13 +109,12 @@ _Every reader agrees on every compared field of this record._
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row9:col1', 'pharmaceutics-14-00792-t002:row9:col2'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row5:col1', 'pharmaceutics-14-00792-t002:row5:col2'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row7:col1', 'pharmaceutics-14-00792-t002:row7:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row14:col1'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 41.3 | not captured | not captured | ['pharmaceutics-14-00792-t002:row12:col1', 'pharmaceutics-14-00792-t002:row12:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 35.8 L/h | not captured | not captured | ['pharmaceutics-14-00792-t002:row12:col1', 'pharmaceutics-14-00792-t002:row12:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 22.4 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row3:col1', 'pharmaceutics-14-00792-t002:row3:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.39e+03 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row4:col1', 'pharmaceutics-14-00792-t002:row4:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 79.2 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row9:col1', 'pharmaceutics-14-00792-t002:row9:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 41.3 L/h | not captured | not captured | ['pharmaceutics-14-00792-t002:row12:col1', 'pharmaceutics-14-00792-t002:row12:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 21.1 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row3:col1', 'pharmaceutics-14-00792-t002:row3:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.45e+03 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row4:col1', 'pharmaceutics-14-00792-t002:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 536 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row9:col1', 'pharmaceutics-14-00792-t002:row9:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -134,12 +134,12 @@ _Every reader agrees on every compared field of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_matlab.zip" download>Daunorubicin_Drevin2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_matlab_simbio.zip" download>Daunorubicin_Drevin2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_sbml.zip" download>Daunorubicin_Drevin2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_cellml.zip" download>Daunorubicin_Drevin2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -149,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:52 UTC</sub>

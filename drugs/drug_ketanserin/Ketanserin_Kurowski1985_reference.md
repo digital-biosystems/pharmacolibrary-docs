@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;ketanserin&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/&quot;},{&quot;label&quot;:&quot;Kurowski_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketanserin_Michiels1988_reference&quot;,&quot;label&quot;:&quot;Michiels_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Hanff2005_reference&quot;,&quot;label&quot;:&quot;Hanff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Trenk1983_reference&quot;,&quot;label&quot;:&quot;Trenk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketanserin_Hanff2005_reference&quot;,&quot;label&quot;:&quot;Hanff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Michiels1988_reference&quot;,&quot;label&quot;:&quot;Michiels_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Trenk1983_reference&quot;,&quot;label&quot;:&quot;Trenk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ketanserin — `Ketanserin_Kurowski1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.087). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:15.437718+00:00) predates the upstream re-run (2026-10-06 15:40:48.406965+00:00). Current validate status: `rejected`.
 
 ## Citation
 Kurowski M, Bioavailability and pharmacokinetics of…, European journal of clinica… (1985)
   ·  DOI: [10.1007/BF00544359](https://doi.org/10.1007/BF00544359)
 
 ## Model component
-<dbs-pgx drug="ketanserin" model-id="Ketanserin_Kurowski1985_reference" status="rejected" stale="false" population="elderly subjects" measured-compound="ketanserin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="ketanserin" model-id="Ketanserin_Kurowski1985_reference" status="rejected" stale="true" population="elderly subjects" measured-compound="ketanserin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -89,9 +91,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.087 (2/23 fields) | 21 |
+| `gpt-oss:120b` | not confirmed | 0.1 (2/20 fields) | 18 |
 
-<details><summary>21 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -107,12 +109,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[injectable solution dose]` | not captured | 10 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peak plasma concentration]` | not captured | 103.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peak]` | 103.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ratio to auc in one dosing interval]` | not captured | 1.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[relative bioavailability compared to a solution containing an equal quantity of active compound]` | 85.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[relative bioavailability compared to a solution containing an equal quantity of active compound]` | not captured | 85.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[solution dose]` | not captured | 40 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tablet dose]` | not captured | 40 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[time after dosing]` | not captured | 1.08 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[time to peak]` | not captured | 0.97 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | ketanserin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | ketanserin | unknown | mismatch |
@@ -160,4 +159,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 02:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:40 UTC</sub>

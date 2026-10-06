@@ -18,18 +18,11 @@ Cetiedil is a vasodilator that has also been studied as an antisickling agent, a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:17 | 1:26 | 0/0/0 | 1/0/0 | 0/0/0 | 1,610/112 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 19:55 | 0:41 | 0/0/0 | 0/0/0 | 0/0/0 | 29,968/468 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Agre_1984_125I_CaM_binding](drugs/drug_cetiedil/pd_Agre_1984_125I_CaM_binding.md) | Ca2+-dependent calmodulin binding to erythrocyte membranes ← bepridil; cetiedil; trifluoperazine · inhibition effect | — | Agre P et al., Bepridil and cetiedil. Vasodilators whi…, The Journal of clinical inv… (1984) | [10.1172/JCI111497](https://doi.org/10.1172/JCI111497) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Agre_1984_Ca2_ATPase](drugs/drug_cetiedil/pd_Agre_1984_Ca2_ATPase.md) | calmodulin-activated erythrocyte membrane Ca2+-ATPase activity ← bepridil; cetiedil; trifluoperazine · inhibition effect | — | Agre P et al., Bepridil and cetiedil. Vasodilators whi…, The Journal of clinical inv… (1984) | [10.1172/JCI111497](https://doi.org/10.1172/JCI111497) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -50,13 +43,13 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Orringer_1986.pdf` | Orringer EP et al., A single-dose pharmacokinetic study of…, Clinical pharmacology and t… (1986) | popPK | 8 | [10.1038/clpt.1986.39](https://doi.org/10.1038/clpt.1986.39) | [3512147](https://pubmed.ncbi.nlm.nih.gov/3512147) | The study reports a three-compartment model for cetiedil but only provides qualitative concentration ranges (70-200 ng/ml, ~10 ng/ml) rather than specific quantitative PK parameters like CL, V, or ka. |
+| `Orringer_1986.pdf` | Orringer EP et al., A single-dose pharmacokinetic study of…, Clinical pharmacology and t… (1986) | popPK | 9 | [10.1038/clpt.1986.39](https://doi.org/10.1038/clpt.1986.39) | [3512147](https://pubmed.ncbi.nlm.nih.gov/3512147) | The study reports a three-compartment model for cetiedil in humans, but specific numeric parameter values (CL, V, Q, t1/2) are not provided in the text, only concentration ranges. |
 | `Arrazola_1993.pdf` | Arrazola A et al., Cell volume regulation in rat thymocytes, The Journal of physiology (1993) | pd | 5 | [10.1113/jphysiol.1993.sp019683](https://doi.org/10.1113/jphysiol.1993.sp019683) | [8229842](https://www.ncbi.nlm.nih.gov/pubmed/8229842) | metadata signals extractable PD data (IC50) |
 | `Jensen_1998.pdf` | Jensen BS et al., Characterization of the cloned human in…, The American journal of phy… (1998) | pd | 5 | [10.1152/ajpcell.1998.275.3.C848](https://doi.org/10.1152/ajpcell.1998.275.3.C848) | [9730970](https://www.ncbi.nlm.nih.gov/pubmed/9730970) | metadata signals extractable PD data (IC50) |
 | `Dube_1987.pdf` | Dube MP et al., Bepridil and cetiedil reversibly inhibi…, Molecular endocrinology (Ba… (1987) | pd | 4 | [10.1210/mend-1-2-168](https://doi.org/10.1210/mend-1-2-168) | [2970587](https://www.ncbi.nlm.nih.gov/pubmed/2970587) | metadata signals extractable PD data (IC50) |
 | `Sandford_1992.pdf` | Sandford CA et al., Properties of a cell volume-sensitive p…, The Journal of physiology (1992) | pd | 4 | [10.1113/jphysiol.1992.sp018995](https://doi.org/10.1113/jphysiol.1992.sp018995) | [1593444](https://www.ncbi.nlm.nih.gov/pubmed/1593444) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T09:17:54.684523+00:00</sub>
+<sub>queue written 2026-10-06T19:54:59.805831+00:00</sub>
 
 ## Screened and excluded
 
@@ -65,10 +58,10 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Agre_1984 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of calmodulin inhibition and does not report any pharmacokinetic parameters for cetiedil. |
 | popPK | Arrazola_1993 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
 | PD | Arrazola_1993 | not_relevant | 0 | 0 | The paper discusses cell volume regulation in rat thymocytes and does not mention cetiedil or report any pharmacodynamic or exposure-response data for it. |
-| popPK | Barksmann_2004 | irrelevant | 0 | 0 | The paper is a mechanistic study of ion channels where cetiedil is used only as a negative control/comparator, with no pharmacokinetic parameters reported. |
+| popPK | Barksmann_2004 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of ion channels where cetiedil is used only as a negative control/comparator, with no pharmacokinetic parameters reported. |
 | PD | Barksmann_2004 | not_relevant | 0 | 0 | The paper reports that cetiedil had no effect on the channel, providing no numeric PD parameters or dose-response relationship for cetiedil. |
 | popPK | Benton_1996 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating the pharmacological effects of cetiedil on potassium channels, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Benton_1999 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on ion channel blocking in red cells, not a pharmacokinetic study, and reports no disposition parameters for cetiedil. |
+| popPK | Benton_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channel blocking in red cells, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Dube_1987 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | popPK | Jensen_1998 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Jensen_1998 | not_relevant | 0 | 0 | The paper characterizes a cloned ion channel and does not report any pharmacodynamic or exposure-response data for the drug cetiedil. |
@@ -76,7 +69,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Malik-Hall_2000 | irrelevant | 0 | 0 | The paper is a mechanistic study of ion channel blockers in rabbit blood cells and does not report pharmacokinetic parameters for cetiedil. |
 | popPK | Narenjkar_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study reporting IC50 values for cellular inhibition, not pharmacokinetic disposition parameters. |
 | popPK | Narenjkar_2004_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cetiedil's effect on mast cell mediator release, reporting IC50 values rather than pharmacokinetic disposition parameters. |
-| popPK | Orringer_1986 | relevant | 8 | 2 | The study reports a three-compartment model for cetiedil but only provides qualitative concentration ranges (70-200 ng/ml, ~10 ng/ml) rather than specific quantitative PK parameters like CL, V, or ka. |
+| popPK | Orringer_1986 | relevant | 9 | 2 | The study reports a three-compartment model for cetiedil in humans, but specific numeric parameter values (CL, V, Q, t1/2) are not provided in the text, only concentration ranges. |
 | popPK | Roxburgh_1996 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro pharmacological actions (K+ channel blocking, smooth muscle contraction) of cetiedil enantiomers, containing no pharmacokinetic or disposition parameters. |
 | popPK | Sandford_1992 | irrelevant | 0 | 0 | The paper is an electrophysiology study of potassium channels in hepatocytes where cetiedil is used as a pharmacological blocker, not a pharmacokinetic study reporting disposition parameters. |
 

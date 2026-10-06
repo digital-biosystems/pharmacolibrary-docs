@@ -18,7 +18,7 @@ Cicletanine is a diuretic that has also been described as an antihypertensive an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:28 | 2:48 | 0/0/0 | 0/0/0 | 0/0/0 | 1,642/110 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 17:13 | 2:01 | 0/0/0 | 0/0/0 | 0/0/0 | 39,206/1,700 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -33,20 +33,19 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 51 matched, 51 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_13 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Pruñonosa_1992.pdf` | Pruñonosa J et al., Pharmacokinetic study of cicletanine in…, International journal of cl… (1992) | popPK | 10 | not captured | [1526688](https://pubmed.ncbi.nlm.nih.gov/1526688) | The study reports quantitative pharmacokinetic parameters (half-life, oral and renal clearance) for cicletanine in healthy volunteers with values explicitly present in the text. |
-| `Ferry_1988.pdf` | Ferry N et al., Influence of renal insufficiency on the…, British journal of clinical… (1988) | popPK | 9 | [10.1111/j.1365-2125.1988.tb03314.x](https://doi.org/10.1111/j.1365-2125.1988.tb03314.x) | [3358898](https://pubmed.ncbi.nlm.nih.gov/3358898) | The abstract reports specific quantitative pharmacokinetic parameters for cicletanine, including apparent elimination half-life (7 h, 31 h) and renal clearance (0.4 ml/min). |
-| `Fredj_1988.pdf` | Fredj G, Clinical pharmacokinetics of cicletanin…, Drugs under experimental an… (1988) | popPK | 9 | not captured | [3416722](https://pubmed.ncbi.nlm.nih.gov/3416722) | The text explicitly reports quantitative pharmacokinetic parameters for cicletanine, including volume of distribution (37 l), time to Cmax (0.65 h), and elimination half-life (6-8 h). |
-| `Jungers_1988.pdf` | Jungers P, Pharmacokinetics of cicletanine in pati…, Drugs under experimental an… (1988) | popPK | 9 | not captured | [3416723](https://pubmed.ncbi.nlm.nih.gov/3416723) | The paper is a relevant PK study for cicletanine, but the provided evidence contains only qualitative descriptions of parameter changes without specific numeric values for clearance, volume, or half-life. |
+| `Jungers_1988.pdf` | Jungers P, Pharmacokinetics of cicletanine in pati…, Drugs under experimental an… (1988) | popPK | 10 | not captured | [3416723](https://pubmed.ncbi.nlm.nih.gov/3416723) | The study reports quantitative PK parameters for cicletanine in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Pruñonosa_1992.pdf` | Pruñonosa J et al., Pharmacokinetic study of cicletanine in…, International journal of cl… (1992) | popPK | 10 | not captured | [1526688](https://pubmed.ncbi.nlm.nih.gov/1526688) | The study reports quantitative pharmacokinetic parameters (half-life, clearance) for cicletanine in healthy volunteers. |
+| `Fredj_1988.pdf` | Fredj G, Clinical pharmacokinetics of cicletanin…, Drugs under experimental an… (1988) | popPK | 9 | not captured | [3416722](https://pubmed.ncbi.nlm.nih.gov/3416722) | The text provides specific quantitative pharmacokinetic parameters (Vd, tmax, t1/2) for cicletanine in humans, although it is a review summarizing previous studies. |
 | `Garay_1992.pdf` | Garay RP et al., Cicletanine sulfate: inhibition of anio…, Naunyn-Schmiedeberg's archi… (1992) | pd | 5 | [10.1007/BF00167580](https://doi.org/10.1007/BF00167580) | [1328892](https://www.ncbi.nlm.nih.gov/pubmed/1328892) | metadata signals extractable PD data (IC50) |
 | `Garay_1995.pdf` | Garay RP et al., Evidence for (+)-cicletanine sulfate as…, European journal of pharmac… (1995) | pd | 5 | [10.1016/0014-2999(94)00731-l](https://doi.org/10.1016/0014-2999(94)00731-l) | [7768271](https://www.ncbi.nlm.nih.gov/pubmed/7768271) | metadata signals extractable PD data (IC50) |
 | `Bagrov_1998.pdf` | Bagrov AY et al., Vasorelaxant effects of cicletanine and…, American journal of hyperte… (1998) | pd | 4 | [10.1016/s0895-7061(98)00151-4](https://doi.org/10.1016/s0895-7061(98)00151-4) | [9832185](https://www.ncbi.nlm.nih.gov/pubmed/9832185) | metadata signals extractable PD data (EC50) |
@@ -57,42 +56,43 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Rosati_1989.pdf` | Rosati C et al., [Ionic perturbations produced by a non-…, Archives des maladies du co… (1989) | pd | 4 | not captured | [2514667](https://www.ncbi.nlm.nih.gov/pubmed/2514667) | metadata signals extractable PD data (IC50) |
 | `Vargas_1998.pdf` | Vargas F et al., Inhibition by (-)-cicletanine of the va…, American journal of hyperte… (1998) | pd | 4 | [10.1016/s0895-7061(97)00407-x](https://doi.org/10.1016/s0895-7061(97)00407-x) | [9633794](https://www.ncbi.nlm.nih.gov/pubmed/9633794) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T07:28:13.925508+00:00</sub>
+<sub>queue written 2026-10-06T17:12:57.017316+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ando_1993 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of blood pressure and renal hemodynamics in rats, not a pharmacokinetic study, and reports no disposition parameters for cicletanine. |
-| popPK | Auguet_1989 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vascular contraction in isolated rat aorta and does not report any pharmacokinetic parameters for cicletanine. |
+| popPK | Ando_1993 | irrelevant | 0 | 0 | The study investigates the antihypertensive mechanism of cicletanine (blood pressure, renal hemodynamics, prostaglandins) in rats, not its pharmacokinetic disposition parameters. |
+| popPK | Auguet_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contraction mechanisms, not a pharmacokinetic study, and reports no disposition parameters. |
 | popPK | Bagrov_1998 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
-| popPK | Bagrov_2000 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vascular tone and enzyme activity in isolated tissues, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Bagrov_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular tone and enzyme activity, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for cicletanine. |
 | popPK | Bukoski_1993 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects (vasodilation and antiproliferation) of cicletanine in vitro and in animal tissues, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Calder_1993 | irrelevant | 0 | 0 | The study investigates the mechanism of action (ion channel involvement) of cicletanine in guinea pig vessels, not its pharmacokinetic disposition parameters. |
-| popPK | Calder_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasorelaxant actions in isolated arteries, not a pharmacokinetic study, and reports no disposition parameters for cicletanine. |
+| popPK | Calder_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasorelaxant actions in guinea pig arteries, not a pharmacokinetic study, and cicletanine is only a comparator agent. |
 | popPK | Chamiot-Clerc_1999 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
 | PD | Chamiot-Clerc_1999 | not_relevant | 0 | 0 | The paper describes the mechanism of action on vascular smooth muscle under normoxic/hypoxic conditions but does not report a quantitative exposure-response or dose-response relationship with numeric PD parameters. |
-| popPK | Collinge_1987 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects (diuresis, uric acid levels) of cicletanine and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Damase-Michel_1989 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of antihypertensive effects and sympathetic tone in dogs, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for cicletanine. |
+| popPK | Collinge_1987 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects (diuresis, uric acid levels) of cicletanine, not its pharmacokinetic disposition parameters (CL, V, etc.). |
+| popPK | Damase-Michel_1989 | irrelevant | 0 | 0 | The study investigates the antihypertensive mechanism and cardiovascular effects of cicletanine in dogs, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Deitmer_1992 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
-| popPK | Duran_2004 | irrelevant | 0 | 0 | The study is a pharmacodynamic/renal function assessment in rats and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for cicletanine. |
+| popPK | Duran_2004 | irrelevant | 0 | 0 | The study focuses on the renal-protective effects of cicletanine (albuminuria, proteinuria, creatinine clearance) and does not report pharmacokinetic parameters (CL, V, ka, etc.) for the drug itself. |
 | popPK | Fanous_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion exchange in cultured cells, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Fedorova_2003 | irrelevant | 0 | 0 | The study is a mechanistic investigation of PKC and Na/K-ATPase sensitivity, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for cicletanine. |
 | PD | Fedorova_2003 | not_relevant | 3 | 2 | The paper reports a single-dose effect on blood pressure and changes in IC50 for a downstream target (Na/K-ATPase sensitivity to MBG), but does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50) for cicletanine itself. |
-| popPK | Fodor_1988 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy and tolerance studies for hypertension, containing no pharmacokinetic parameters or disposition data for cicletanine. |
+| popPK | Ferry_1988 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
+| popPK | Fodor_1988 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy and tolerance studies for hypertension, reporting blood pressure outcomes rather than pharmacokinetic parameters like clearance or volume. |
 | PD | Fodor_1988 | not_relevant | 3 | 2 | The text describes a dose-response relationship qualitatively (identifying 50 mg as the minimum therapeutic dose) but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect curve. |
 | popPK | Garay_1992 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | PD | Garay_1992 | not_relevant | 0 | 0 | The paper describes the mechanism of action (inhibition of anion transport) and qualitative natriuretic activity, but does not provide numeric concentration-effect data, dose-response curves, or PD parameters (Emax, EC50) for cicletanine. |
 | popPK | Garay_1995 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Garay_1995 | not_relevant | 0 | 0 | The paper focuses on the identification of an active metabolite and its natriuretic activity, but does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for cicletanine. |
-| popPK | Greven_1995 | irrelevant | 0 | 0 | The study investigates the renal physiological effects (diuretic/saluretic action) of cicletanine in rats, not its pharmacokinetic disposition parameters. |
-| popPK | Greven_1995_2 | irrelevant | 0 | 0 | The study focuses on renal physiology (kidney function, diuresis, micropuncture) rather than the pharmacokinetic disposition parameters (CL, V, ka) of cicletanine. |
-| popPK | Guinot_1989 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focusing on dose-response and blood pressure reduction, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Greven_1995 | irrelevant | 0 | 0 | The study investigates the renal physiological effects (diuretic/saluretic action) of cicletanine in rats, not its pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Greven_1995_2 | irrelevant | 0 | 0 | The study focuses on renal physiology (kidney function, diuresis, micropuncture) rather than the systemic pharmacokinetic disposition parameters (CL, V, ka) of cicletanine. |
+| popPK | Guinot_1989 | irrelevant | 0 | 0 | The paper is a clinical efficacy study determining the optimal antihypertensive dose and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Jouve_1988 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on cardiac arrhythmias in dogs and does not report any pharmacokinetic parameters for cicletanine. |
 | PD | Jouve_1988 | not_relevant | 2 | 1 | The paper reports qualitative improvements in clinical endpoints (ST elevation, VT incidence) and survival analysis via Cox model, but does not provide numeric concentration-effect or dose-response parameters (e.g., EC50, Emax) for cicletanine. |
-| popPK | Jungers_1988 | relevant | 9 | 2 | The paper is a relevant PK study for cicletanine, but the provided evidence contains only qualitative descriptions of parameter changes without specific numeric values for clearance, volume, or half-life. |
+| popPK | Jungers_1988 | relevant | 10 | 2 | The study reports quantitative PK parameters for cicletanine in humans, but the specific numeric values are not present in the provided abstract text. |
 | popPK | Lize_1987 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
-| popPK | Lonchampt_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium efflux and receptor binding, reporting no pharmacokinetic parameters. |
+| popPK | Lonchampt_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium efflux in smooth muscle cells, not a pharmacokinetic study. |
 | popPK | Marche_1988 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on phosphoinositide metabolism and does not report any pharmacokinetic parameters for cicletanine. |
 | PGx | Menard_2000 | not_relevant | 0 | 0 | The study investigates enzyme induction and inhibition in rat hepatocytes/microsomes, not human pharmacogenomic variants affecting PK/PD. |
 | popPK | Monroy_1999 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
@@ -104,8 +104,8 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Silver_1990 | not_relevant | 0 | 0 | The paper describes the mechanism of action of cicletanine in animal models but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Tarrade_1988 | irrelevant | 0 | 0 | The paper is a clinical efficacy and tolerance overview reporting blood pressure changes, not a pharmacokinetic study with disposition parameters. |
 | PD | Tarrade_1988 | not_relevant | 3 | 2 | The paper describes a qualitative dose-response relationship that disappears over time and provides mean blood pressure reductions at fixed doses, but it does not report specific numeric PD parameters (like Emax, EC50) or a quantitative concentration-effect model. |
-| popPK | Tsunoda_1993 | irrelevant | 0 | 0 | The study focuses on renal physiology and prostanoid excretion rather than pharmacokinetic disposition parameters (CL, V, ka, etc.). |
-| popPK | Valdivielso_1998 | irrelevant | 0 | 0 | The study focuses on renal physiology (cGMP production, MAP, creatinine clearance) and in-vitro mechanisms, not pharmacokinetic disposition parameters like CL, V, or ka. |
+| popPK | Tsunoda_1993 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects on renal function and prostanoid excretion, not on pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Valdivielso_1998 | irrelevant | 0 | 0 | The study focuses on renal physiology (cGMP production, MAP, creatinine clearance) rather than pharmacokinetic disposition parameters (CL, V, ka) for cicletanine. |
 | popPK | Vargas_1998 | irrelevant | 0 | 0 | The study reports pharmacodynamic parameters (Ki, IC50) for vascular reactivity, not pharmacokinetic disposition parameters. |
 
 ---

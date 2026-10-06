@@ -18,11 +18,17 @@ Isoxsuprine is a vasodilator that was used for peripheral vascular diseases such
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:37 | 0:43 | 0/0/0 | 0/0/0 | 0/0/0 | 1,622/132 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:19 | 0:52 | 0/0/0 | 0/1/0 | 0/0/0 | 18,137/809 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Sedrish_1999_percentage_maximal_relaxation](drugs/drug_isoxsuprine/pd_Sedrish_1999_percentage_maximal_relaxation.md) | percentage maximal relaxation ← isoxsuprine · direct sigmoid Emax (Hill) effect | — | Sedrish SA et al., In vitro response of large colon arteri…, American journal of veterin… (1999) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -35,7 +41,7 @@ _not available_
 - **PubMed hits:** 20 matched, 19 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -43,11 +49,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Marzo_2009.pdf` | Marzo A et al., Pharmacokinetics of isoxsuprine hydroch…, Arzneimittel-Forschung (2009) | popPK | 9 | [10.1055/s-0031-1296425](https://doi.org/10.1055/s-0031-1296425) | [19856793](https://pubmed.ncbi.nlm.nih.gov/19856793) | The study reports quantitative PK parameters (half-life, volume of distribution, absorption) for isoxsuprine, but specific numeric values for clearance and volume are not explicitly listed in the provided text, only half-life and relative volume ratios. |
+| `Marzo_2009.pdf` | Marzo A et al., Pharmacokinetics of isoxsuprine hydroch…, Arzneimittel-Forschung (2009) | popPK | 10 | [10.1055/s-0031-1296425](https://doi.org/10.1055/s-0031-1296425) | [19856793](https://pubmed.ncbi.nlm.nih.gov/19856793) | The study reports quantitative PK parameters (half-life, absorption, Vd ratio) for isoxsuprine in humans, but specific numeric values for clearance and volume are not explicitly listed in the provided text. |
 | `Belloli_2000.pdf` | Belloli C et al., Affinity of isoxsuprine for adrenorecep…, Equine veterinary journal (2000) | pd | 5 | [10.2746/042516400777591543](https://doi.org/10.2746/042516400777591543) | [10743967](https://www.ncbi.nlm.nih.gov/pubmed/10743967) | metadata signals extractable PD data (EC50) |
 | `Baxter_1989.pdf` | Baxter GM et al., Reactivity of equine palmar digital art…, Veterinary surgery : VS (1989) | pd | 4 | [10.1111/j.1532-950x.1989.tb01075.x](https://doi.org/10.1111/j.1532-950x.1989.tb01075.x) | [2773284](https://www.ncbi.nlm.nih.gov/pubmed/2773284) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-30T09:37:07.162393+00:00</sub>
+<sub>queue written 2026-10-06T20:18:49.470264+00:00</sub>
 
 ## Screened and excluded
 
@@ -62,14 +68,14 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Calixto_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of myometrial contraction and does not report pharmacokinetic parameters for isoxsuprine. |
 | popPK | Danyi_2007 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study using isoxsuprine as a ligand to characterize a recombinant receptor, not a pharmacokinetic study. |
 | PD | Danyi_2007 | not_relevant | 0 | 0 | The paper reports binding affinity (IC50) in a radio-receptor assay, which is a pharmacological binding parameter, not a pharmacodynamic exposure-response or dose-response relationship in a biological system. |
-| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment regarding post-mortem inspection delays in ungulates and does not contain any pharmacokinetic data or parameters for isoxsuprine. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper discusses post-mortem inspection delays in ungulates and does not contain any pharmacokinetic data for isoxsuprine. |
 | PD | EFSA_2020 | not_relevant | 0 | 0 | The paper discusses post-mortem inspection delays and disease detection sensitivity, containing no pharmacodynamic or exposure-response data for isoxsuprine. |
 | popPK | Elliott_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor mechanisms and does not report any pharmacokinetic parameters for isoxsuprine. |
 | popPK | Gao_2025 | irrelevant | 0 | 0 | The paper is a mechanistic antiviral study focusing on influenza inhibition and does not report any pharmacokinetic parameters for isoxsuprine. |
-| popPK | Mercer_1993 | irrelevant | 0 | 0 | The paper is an in-vitro binding study of ifenprodil where isoxsuprine is only mentioned as a congener in a potency rank order, with no pharmacokinetic parameters reported. |
+| popPK | Mercer_1993 | irrelevant | 0 | 0 | The paper is an in-vitro binding study of ifenprodil where isoxsuprine is used only as a comparator ligand, with no pharmacokinetic parameters reported. |
 | PD | Mercer_1993 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding characteristics of 125I-ifenprodil and lists isoxsuprine only in a qualitative rank potency order without providing numeric IC50 or Ki values. |
 | popPK | Neligan_1985 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (capillary blood flow and viability) in animal flaps and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Sedrish_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of vasomotor response (EC50) in equine tissue, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sedrish_1999 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic assessment of vasomotor response (EC50 for relaxation) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Shelver_2004 | irrelevant | 0 | 0 | The paper describes the development of an ELISA for zilpaterol and mentions isoxsuprine only as a non-cross-reacting compound in specificity testing, containing no pharmacokinetic data. |
 | PD | Shelver_2004 | not_relevant | 0 | 0 | The paper describes the development of an ELISA for zilpaterol and mentions isoxsuprine only as a non-cross-reacting compound; it contains no pharmacodynamic or exposure-response data for isoxsuprine. |
 | popPK | Shelver_2005 | irrelevant | 0 | 0 | The paper describes the development of an ELISA assay for zilpaterol and mentions isoxsuprine only as a non-cross-reacting structural analogue in specificity testing, containing no pharmacokinetic data. |

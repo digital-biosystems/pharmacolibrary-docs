@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;ambrisentan&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/&quot;},{&quot;label&quot;:&quot;Hill_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambrisentan_Hill2020_reference&quot;,&quot;label&quot;:&quot;Hill_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ambrisentan_Okour2023_reference&quot;,&quot;label&quot;:&quot;Okour_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambrisentan_Hill2020_reference&quot;,&quot;label&quot;:&quot;Hill_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ambrisentan_Okour2023_reference&quot;,&quot;label&quot;:&quot;Okour_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ambrisentan — `Ambrisentan_Hill2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ambrisentan, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:35:59.189904+00:00) predates the upstream re-run (2026-10-06 14:55:17.210603+00:00). Current validate status: `extracted`.
 
 ## Citation
 Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical care med… (2020)
   ·  DOI: [10.1097/PCC.0000000000002410](https://doi.org/10.1097/PCC.0000000000002410)
 
 ## Model component
-<dbs-pgx drug="ambrisentan" model-id="Ambrisentan_Hill2020_reference" status="curated_candidate" stale="false" population="children after Fontan surgery" measured-compound="ambrisentan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ambrisentan" model-id="Ambrisentan_Hill2020_reference" status="extracted" stale="true" population="children after Fontan surgery" measured-compound="ambrisentan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -64,25 +66,19 @@ Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[plasma brain natriuretic peptide concentrations]` | not captured | 452 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 13.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 13.7 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ambrisentan | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ambrisentan | unknown | mismatch |
 
 </details>
 
@@ -136,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference/Ambrisentan_Hill2020_reference_modelica.zip" download>Ambrisentan_Hill2020_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference/Ambrisentan_Hill2020_reference_modelica.zip" download>Ambrisentan_Hill2020_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference/Ambrisentan_Hill2020_reference_fmi.zip" download>Ambrisentan_Hill2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference/Ambrisentan_Hill2020_reference_matlab.zip" download>Ambrisentan_Hill2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference/Ambrisentan_Hill2020_reference_matlab_simbio.zip" download>Ambrisentan_Hill2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -158,4 +154,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 00:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 14:55 UTC</sub>

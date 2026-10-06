@@ -16,7 +16,7 @@
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL/F (`Q27`)
 - **effect:** not quantified
-- **phenotype groups:** groups defined by genotype (e.g. *1/*1, *1/*3), as the paper reports them
+- **phenotype groups:** only some of the paper's groups could be mapped to standard phenotypes
 
 ### Notes from the extraction
 

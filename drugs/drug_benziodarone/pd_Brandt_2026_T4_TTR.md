@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Benziodarone concentrations (nM) directly inhibit the binding of T4 to transthyretin (TTR) in an in vitro assay, modeled as a sigmoid Emax inhibition. The paper reports IC50 values of 177.0 nM and 166.5 nM for this displacement effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brandt_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

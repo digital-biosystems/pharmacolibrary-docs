@@ -18,19 +18,11 @@ Oxyfedrine is a cardiotonic and vasodilator drug, a beta-adrenergic agonist that
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 21:39 | 2:05 | 0/0/0 | 0/1/0 | 0/0/0 | 68,420/2,060 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-06 11:11 | 1:15 | 0/0/0 | 0/0/0 | 0/0/0 | 44,176/1,797 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026_Heart_rate](drugs/drug_oxyfedrine/pd_Dings_2026_Heart_rate.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026_Mean_arterial_pressure](drugs/drug_oxyfedrine/pd_Dings_2026_Mean_arterial_pressure.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026_Systolic_blood_pressure](drugs/drug_oxyfedrine/pd_Dings_2026_Systolic_blood_pressure.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -47,29 +39,30 @@ _not available_
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Wetzelsberger_1995.pdf` | Wetzelsberger N et al., Relative bioavailability of DL-oxyfedri…, Methods and findings in exp… (1995) | popPK | 8 | not captured | [8531509](https://pubmed.ncbi.nlm.nih.gov/8531509) | The study reports relative bioavailability percentages (AUC and Cmax ratios) for oxyfedrine and its metabolite, but lacks absolute quantitative disposition parameters like clearance (CL), volume (V), or half-life (t1/2). |
 | `Brandt_1975.pdf` | Brandt W, [Stability of oxyfedrine in pharmacolog…, Arzneimittel-Forschung (1975) | pd | 4 | not captured | [1174320](https://www.ncbi.nlm.nih.gov/pubmed/1174320) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-09-20T21:38:47.360740+00:00</sub>
+<sub>queue written 2026-10-06T11:10:36.006915+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bonelli_1977 | irrelevant | 1 | 0 | The study focuses on the bioavailability of beta-acetyldigoxine, with oxyfedrine serving only as a co-administered component in a combination product, and no specific PK parameters for oxyfedrine are reported. |
+| popPK | Bonelli_1977 | irrelevant | 0 | 0 | The study focuses on the bioavailability of beta-acetyldigoxine, with oxyfedrine serving only as a co-administered component in a combination product, not as the subject of PK parameter estimation. |
 | popPK | Brandt_1975 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
 | PD | Brandt_1975 | not_relevant | 0 | 0 | The paper focuses on the chemical stability of oxyfedrine in vitro, not on pharmacodynamic or exposure-response relationships. |
-| popPK | Dings_2026 | irrelevant | 0 | 0 | The study focuses on cafedrine/theodrenaline and ephedrine, not oxyfedrine, and explicitly states that no pharmacokinetic samples were obtained. |
-| popPK | Flasch_1975 | irrelevant | 0 | 0 | The study focuses on the bioavailability of beta-acetyldigoxin and digoxin, with oxyfedrine appearing only as a co-administered excipient/comparator in a tablet formulation, not as the subject drug for PK parameter estimation. |
-| popPK | Kirsten_1998 | irrelevant | 0 | 0 | The paper is a general review of vasodilators that mentions oxyfedrine only mechanistically without providing any quantitative pharmacokinetic parameters. |
-| popPK | Parratt_1974 | irrelevant | 0 | 0 | The study reports haemodynamic and pharmacodynamic effects (blood pressure, cardiac output, receptor blockade) but contains no pharmacokinetic parameters (CL, V, ka, t1/2) for oxyfedrine. |
+| popPK | Dings_2026 | irrelevant | 0 | 0 | The study models the pharmacodynamics of cafedrine/theodrenaline and ephedrine, not oxyfedrine, and explicitly states that no pharmacokinetic samples were obtained. |
+| popPK | Flasch_1975 | irrelevant | 0 | 0 | The study focuses on the bioavailability of beta-acetyldigoxin and digoxin, with oxyfedrine appearing only as an excipient or co-formulated component in a tablet, not as the subject drug for PK analysis. |
+| popPK | Kirsten_1998 | irrelevant | 0 | 0 | The paper is a review of vasodilators that mentions oxyfedrine only mechanistically without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Parratt_1974 | irrelevant | 0 | 0 | The study reports haemodynamic and pharmacodynamic effects (blood pressure, cardiac output, receptor blockade) in cats, but contains no pharmacokinetic parameters (CL, V, t1/2) for oxyfedrine. |
 | popPK | Polster_1973 | irrelevant | 0 | 0 | The study is a pharmacological/toxicological investigation of cardiac function in animals and does not report any pharmacokinetic parameters for oxyfedrine. |
 | PD | Polster_1973 | not_relevant | 2 | 1 | The paper reports qualitative changes in cardiac function (heart weight, intracellular potentials) after chronic dosing but does not provide concentration-effect data, dose-response curves, or numeric PD parameters like Emax or EC50. |
-| popPK | Sternitzke_1984 | irrelevant | 0 | 0 | The study investigates the mechanism of action (hemodynamics/receptor activity) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Wetzelsberger_1995 | irrelevant | 2 | 0 | The study reports relative bioavailability metrics (AUC/Cmax ratios) but does not provide quantitative disposition parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Sternitzke_1984 | irrelevant | 0 | 0 | The study investigates the mechanism of action (hemodynamics and receptor activity) of oxyfedrine and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Wetzelsberger_1995 | relevant | 8 | 2 | The study reports relative bioavailability percentages (AUC and Cmax ratios) for oxyfedrine and its metabolite, but lacks absolute quantitative disposition parameters like clearance (CL), volume (V), or half-life (t1/2). |
 | PD | Wetzelsberger_1995 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters (AUC, Cmax) and relative bioavailability, but contains no pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
 | popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract collection and contains no scientific content, data, or PD parameters for oxyfedrine. |

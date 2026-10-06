@@ -6,19 +6,13 @@
 - **ATC codes:** `C05AA06`, `D07AB06`, `D07CB03`, `D07XB04`, `D10AA01`, `S01BA07`, `S01BB03`, `S01CA07`, `S01CB05`
 - **DrugBank:** [DB00324](https://go.drugbank.com/drugs/DB00324) · **PubChem:** [CID 9878](https://pubchem.ncbi.nlm.nih.gov/compound/9878)
 - **molar mass:** 376.4617 g/mol (C22H29FO4) — DrugBank
-- **groups:** approved, investigational
-
-## About
-
-Fluorometholone is a corticosteroid used to treat inflammation, including inflammatory eye conditions and skin disorders. It is an approved medicine, applied topically to the eye or skin, and is available in many combination products.
-
-<small>Summary written by `glm-5.3-flash` from [Wikidata Q607349](https://www.wikidata.org/wiki/Q607349) and the WHO ATC classification; not checked by a person.</small>
+- **groups:** not captured
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 10:07 | 3:44 | 0/0/0 | 0/0/0 | 0/0/0 | 36,417/1,296 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 3/3 | 2/1 | 0 |
+| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -44,58 +38,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 25 matched, 25 returned
-- **screened:** 3  ·  **relevant:** 0
+- **PubMed hits:** 0 matched, 0 returned
+- **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Deng_2016.pdf` | Deng F et al., General Pharmacokinetic Model for Topic…, Pharmaceutical research (2016) | popPK | 8 | [10.1007/s11095-016-1993-2](https://doi.org/10.1007/s11095-016-1993-2) | [27431864](https://pubmed.ncbi.nlm.nih.gov/27431864) | The paper describes a PK model for fluorometholone, but the specific numeric parameter values are stated to be taken from published literature and are not present in the provided evidence. |
-
-<sub>queue written 2026-09-30T10:07:00.664825+00:00</sub>
-
-## Screened and excluded
-
-| domain | paper | verdict | relevance | extractability | reason |
-|---|---|---|---|---|---|
-| popPK | Alım_2015 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition (IC50/Ki) and does not report pharmacokinetic disposition parameters for fluorometholone. |
-| popPK | Artola_2000 | irrelevant | 0 | 0 | The study evaluates blood-aqueous barrier integrity (flare) after surgery and uses fluorometholone only as a therapeutic agent, reporting no pharmacokinetic parameters. |
-| PD | Artola_2000 | not_relevant | 0 | 0 | The study measures anterior chamber flare over time after PRK in patients receiving a fixed, decreasing dose of fluorometholone, but it does not measure drug concentrations or perform any PK/PD modeling to derive exposure-response or dose-response parameters. |
-| popPK | Bellose_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fluoride (an ion), not the drug fluorometholone. |
-| popPK | Caldas_2022 | irrelevant | 0 | 0 | The study investigates fluoride bioavailability from toothpaste, not the pharmacokinetics of the drug fluorometholone. |
-| popPK | Deng_2016 | relevant | 8 | 0 | The paper describes a PK model for fluorometholone, but the specific numeric parameter values are stated to be taken from published literature and are not present in the provided evidence. |
-| PD | Deng_2016 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic (PK) model for ocular drug absorption and distribution, not a pharmacodynamic (PD) or exposure-response relationship. |
-| popPK | Gonzalez-Pizarro_2019 | irrelevant | 2 | 0 | The paper describes a formulation study (in-situ gels) and qualitative efficacy/bioavailability improvements but does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for fluorometholone. |
-| PD | Gonzalez-Pizarro_2019 | not_relevant | 0 | 0 | The text describes formulation development and qualitative efficacy improvements but contains no numeric PD parameters, concentration-effect data, or dose-response analysis. |
-| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a nanomedicine study where fluorometholone is used only as a clinical comparator, and no pharmacokinetic parameters for fluorometholone are reported. |
-| popPK | Ishimatsu_2003 | irrelevant | 0 | 0 | The paper studies the biopersistence of graphite whiskers in rat lungs and does not involve the drug fluorometholone or its pharmacokinetics. |
-| popPK | Kachi_2000 | irrelevant | 0 | 0 | The paper is a case report on corneal deposits caused by cyclosporine, where fluorometholone is only listed as a co-administered medication, and no pharmacokinetic parameters are reported. |
-| popPK | Kadife_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sulfasalazine and sulfapyridine, not fluorometholone. |
-| popPK | Lee_1992 | irrelevant | 0 | 0 | The paper discusses airborne asbestos concentrations in buildings and is unrelated to fluorometholone pharmacokinetics. |
-| popPK | Lee_2023 | irrelevant | 1 | 0 | The study focuses on pharmacodynamic interactions and intracellular concentrations in corneal cells, not on reporting quantitative systemic or compartmental pharmacokinetic parameters (CL, V, ka) for fluorometholone. |
-| PD | Lee_2023 | not_relevant | 1 | 0 | The paper reports qualitative changes in intracellular concentrations and antibacterial effects (checkerboard assays) but does not provide numeric PD parameters (e.g., MIC, EC50, Emax) or quantitative concentration-effect curves for fluorometholone. |
-| popPK | Lippmann_1994 | irrelevant | 0 | 0 | The paper is a review on the deposition of inhaled mineral fibres and cancer incidence, containing no pharmacokinetic data for fluorometholone. |
-| popPK | Maeng_2019 | irrelevant | 0 | 0 | The study is a clinical analysis of intraocular pressure changes and does not report any pharmacokinetic parameters for fluorometholone. |
-| popPK | Mapley_2021 | irrelevant | 0 | 0 | The paper is a biophysical study using NMR and Raman spectroscopy to characterize drug-lipid membrane interactions, not a pharmacokinetic study reporting disposition parameters. |
-| PD | Mapley_2021 | not_relevant | 0 | 0 | The paper characterizes drug-lipid membrane interactions using NMR and Raman spectroscopy and does not report any pharmacodynamic, exposure-response, or dose-response data. |
-| popPK | Martínez-Mier_2013 | irrelevant | 0 | 0 | The study investigates the kinetics of fluoride in dental biofilm, not the pharmacokinetics of the drug fluorometholone. |
-| popPK | Nakada_2021 | irrelevant | 0 | 0 | The study evaluates the physical stability (redispersability and particle size) of fluorometholone eye drops, not pharmacokinetic parameters. |
-| PD | Nakada_2021 | not_relevant | 0 | 0 | The paper evaluates the physical stability (redispersability and particle size) of fluorometholone eye drops, not pharmacodynamic exposure-response or dose-response relationships. |
-| popPK | Ngoh_2016 | irrelevant | 0 | 0 | The paper studies kidney function after bariatric surgery and does not involve fluorometholone or pharmacokinetic parameters. |
-| popPK | Panda_2021 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing difluprednate and prednisolone, with fluorometholone mentioned only as a background comparator and no pharmacokinetic parameters reported. |
-| PD | Panda_2021 | not_relevant | 0 | 0 | The paper is a clinical efficacy study comparing two drugs without any pharmacokinetic data, concentration measurements, or dose-response modeling. |
-| popPK | Romanowski_2002 | irrelevant | 0 | 0 | The study is a virological investigation of adenovirus replication in rabbits, not a pharmacokinetic study, and reports no disposition parameters for fluorometholone. |
-| popPK | Sieg_1975 | irrelevant | 2 | 0 | The study focuses on corneal penetration and bioavailability in rabbits without reporting quantitative compartmental PK parameters (CL, V, ka) for fluorometholone. |
-| PD | Sieg_1975 | not_relevant | 2 | 1 | The paper reports PK parameters (aqueous humor concentration-time profiles) for different formulations but does not report a pharmacodynamic (effect) response or exposure-response relationship. |
-| popPK | Wang_2022 | irrelevant | 1 | 0 | The paper describes a formulation study for dry eye treatment and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for fluorometholone. |
-| PD | Wang_2022 | not_relevant | 1 | 0 | The paper reports a qualitative comparison of efficacy (alleviation of dry eye signs) between a new formulation and a commercial drop, but does not provide numeric concentration-effect data, dose-response curves, or PD parameters (Emax, EC50, etc.). |
-| popPK | Young_2025 | irrelevant | 0 | 0 | The paper is a surgical case report on familial multiple lipomatosis and contains no pharmacokinetic data or mention of fluorometholone. |
-| popPK | Zhang_2013 | irrelevant | 0 | 0 | The paper is a clinical case report on a LASIK complication where fluorometholone is used as a therapeutic agent, containing no pharmacokinetic data or disposition parameters. |
+- **scholar-agent fallback query used:** not captured
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

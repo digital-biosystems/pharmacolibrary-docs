@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Larsson_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Larsson2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The parameter coverage check expected 5 parameters but found only 4 covered; tlag (absorption lag time, 0.148 h) was neither emitted nor defaulted, so the record was held back for review. Because the source is abstract-only, the reported values (e.g., CL 17.9 L/h, V1 81.2 L·70 kg⁻¹, Fab 55.4%) are summary statistics rather than a fitted model. A second reader disagreed on several fields, reading clearance as 17.9 where this record lists it under a different label, and returning null for the absorption half-life (0.45 h), lag time, between-compartment clearance (121 L/h), and central volume, though the bioavailability value of 55.4% agrees. Extracted — clonidine: t1/2ka 0.45 h, tlag 0.148 h, CL 17.9 L/h, Q 121 L/h, V1 81.2 l·70 kg(-1), V2 113 l·70 kg(-1), Fab 55.4 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 55.4, the second reading 55.4%; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:37.240226+00:00) predates the upstream re-run (2026-10-06 11:56:37.185353+00:00). Current validate status: `extracted`.
 
 ## Citation
 Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesthesia (2011)
   ·  DOI: [10.1111/j.1460-9592.2010.03397.x](https://doi.org/10.1111/j.1460-9592.2010.03397.x)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Larsson2011_reference" status="needs_review" stale="false" population="children undergoing adenotonsillectomy" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Larsson2011_reference" status="extracted" stale="true" population="children undergoing adenotonsillectomy" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted.
@@ -38,8 +40,6 @@ Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesth
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | absorption half-life (Tabs) | `Q95` · t1/2ka | 0.45 | h | 1620.0 | [h] | not captured | llm_corrected (0.6) | Larsson_2011:abstract | — | not captured |
@@ -72,32 +72,14 @@ Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesth
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.235 (4/17 fields) | 13 |
+| `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
 
-<details><summary>13 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 55.4 | 55.4% | mismatch |
-| `gpt-oss:120b` | `parameters[absorption half-life]` | 0.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption lag time]` | 0.148 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[between compartment clearance]` | 121 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume]` | 81.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | not captured | 17.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 17.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral bioavailability].value` | 55.4 | 55.4% | mismatch |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | 113 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q]` | not captured | 121 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tabs]` | not captured | 0.45 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1]` | not captured | 81.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2]` | not captured | 113 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -176,4 +158,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 18:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:56 UTC</sub>

@@ -17,7 +17,7 @@ Trimetaphan is a ganglion-blocking antihypertensive drug used to treat arterial 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 05:56 | 1:03 | 0/0/0 | 0/0/0 | 0/0/0 | 1,810/178 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-06 13:21 | 1:31 | 0/0/0 | 0/0/0 | 0/0/0 | 52,728/1,958 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
@@ -57,53 +57,53 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kujawa_1994.pdf` | Kujawa SG et al., A nicotinic-like receptor mediates supp…, Hearing research (1994) | pd | 4 | [10.1016/0378-5955(94)90181-3](https://doi.org/10.1016/0378-5955(94)90181-3) | [8040083](https://www.ncbi.nlm.nih.gov/pubmed/8040083) | metadata signals extractable PD data (IC50) |
 | `Peters_1990.pdf` | Peters JA et al., Antagonism of 5-HT3 receptor mediated c…, Neuroscience letters (1990) | pd | 4 | [10.1016/0304-3940(90)90796-c](https://doi.org/10.1016/0304-3940(90)90796-c) | [1691468](https://www.ncbi.nlm.nih.gov/pubmed/1691468) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T05:56:44.226033+00:00</sub>
+<sub>queue written 2026-10-06T13:20:57.363164+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abe_1993 | irrelevant | 0 | 0 | The study investigates epidural blood flow during hypotension induced by trimetaphan and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for the drug. |
-| popPK | Abe_1994 | irrelevant | 0 | 0 | The study investigates epidural blood flow during hypotension induced by trimetaphan and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for the drug. |
-| popPK | Behnia_1982 | irrelevant | 0 | 0 | The study evaluates renal function (creatinine clearance) during trimetaphan-induced hypotension and does not report pharmacokinetic parameters (CL, V, ka) for trimetaphan itself. |
+| popPK | Abe_1993 | irrelevant | 0 | 0 | The study measures epidural blood flow during trimetaphan-induced hypotension and does not report any pharmacokinetic parameters (CL, V, t1/2) for trimetaphan. |
+| popPK | Abe_1994 | irrelevant | 0 | 0 | The study measures epidural blood flow during trimetaphan-induced hypotension and does not report pharmacokinetic parameters (CL, V, etc.) for trimetaphan. |
+| popPK | Behnia_1982 | irrelevant | 0 | 0 | The study evaluates the effects of trimetaphan-induced hypotension on renal function (creatinine clearance, urine Po2) but does not report pharmacokinetic parameters (CL, V, ka) for trimetaphan itself. |
 | popPK | Cachelin_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor affinity (IC50/KB) in Xenopus oocytes, not a pharmacokinetic study reporting disposition parameters for trimetaphan. |
 | popPK | Clarke_1996 | irrelevant | 0 | 0 | no_text gate: only 163 chars of text extracted (&lt; 400) |
 | PD | Clarke_1996 | not_relevant | 0 | 0 | The paper investigates the mechanism of nicotine's effect on neurotransmitter release in rat brain tissue and does not involve the drug trimetaphan or any pharmacokinetic/pharmacodynamic modeling. |
-| popPK | Endoh_1996 | irrelevant | 0 | 0 | The study focuses on renal function and fluid effects during hypotensive anesthesia, not on the pharmacokinetic disposition parameters (CL, V, etc.) of trimetaphan. |
+| popPK | Endoh_1996 | irrelevant | 0 | 0 | The study focuses on renal function and fluid effects during hypotensive anesthesia, not the pharmacokinetic disposition parameters (CL, V, etc.) of trimetaphan. |
 | popPK | Forsyth_1996 | irrelevant | 0 | 0 | The study focuses on the pharmacology and teratogenesis of coniine, using trimetaphan only as a comparator antagonist without reporting any pharmacokinetic parameters for it. |
 | PD | Forsyth_1996 | not_relevant | 1 | 0 | The paper reports IC50 values for coniine binding to nicotinic receptors, but the mention of trimetaphan is limited to a qualitative observation that it enhanced lethality in a dose-dependent manner without providing specific numeric PD parameters or a concentration-effect curve for trimetaphan. |
-| popPK | Fukusaki_1990 | irrelevant | 0 | 0 | The study focuses on renal tubular function markers (NAG, Beta2-microglobulin) during hypotensive anesthesia, with trimetaphan serving only as a comparator agent rather than the subject of a pharmacokinetic analysis. |
-| popPK | Furutani_1995 | irrelevant | 2 | 0 | The study focuses on a control system for blood pressure using trimetaphan as a tool, reporting dynamic control parameters (gain, time-constant) rather than standard pharmacokinetic disposition parameters (CL, V, ka) for the drug itself. |
-| popPK | Galvez_1977 | irrelevant | 0 | 0 | The study investigates renal physiology and the effect of renal artery stenosis on water clearance, using trimetaphan only as a tool to control blood pressure, and does not report any pharmacokinetic parameters for trimetaphan. |
+| popPK | Fukusaki_1990 | irrelevant | 0 | 0 | The study uses trimetaphan as a comparator agent to assess renal tubular function markers (NAG, Beta2-microglobulin) and does not report any pharmacokinetic parameters for trimetaphan. |
+| popPK | Furutani_1995 | irrelevant | 1 | 0 | The study focuses on a control system for blood pressure using trimetaphan as a tool, reporting hemodynamic response times rather than pharmacokinetic parameters like clearance or volume. |
+| popPK | Galvez_1977 | irrelevant | 0 | 0 | The study investigates renal physiology and the effect of renal artery stenosis on water clearance in dogs, using trimetaphan (Arfonad) only as a vasodilator to control blood pressure, not as the subject of pharmacokinetic analysis. |
 | popPK | Gregory_1981 | irrelevant | 0 | 0 | The study investigates cerebral hemodynamics and CO2 responsiveness in cats, not the pharmacokinetic disposition parameters (CL, V, etc.) of trimetaphan. |
-| popPK | Hammer_1996 | irrelevant | 0 | 0 | The paper is a case report of an overdose incident and does not report quantitative pharmacokinetic parameters for trimetaphan. |
+| popPK | Hammer_1996 | irrelevant | 0 | 0 | The paper is a case report of an overdose event and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for trimetaphan. |
 | PD | Hammer_1996 | not_relevant | 1 | 0 | The text is a case report abstract describing an overdose event but does not provide specific numeric concentration-effect data, PK/PD parameters, or a dose-response curve for trimetaphan. |
-| popPK | Harioka_1984 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on vascular smooth muscle relaxation and does not report any pharmacokinetic parameters. |
+| popPK | Harioka_1984 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle relaxation and receptor interactions, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Kujawa_1994 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Kujawa_1994 | not_relevant | 0 | 0 | The paper discusses the mechanism of otoacoustic emission suppression by contralateral sound and does not mention trimetaphan or report any pharmacodynamic parameters for it. |
 | popPK | Mahata_1999 | irrelevant | 0 | 0 | The paper is a mechanistic study on catecholamine release and nicotinic receptor desensitization, where trimetaphan is used only as a comparative antagonist, not as the subject of a pharmacokinetic analysis. |
 | PD | Mahata_1999 | not_relevant | 1 | 0 | The paper focuses on catestatin; trimetaphan is only mentioned as a less potent comparator in a general comparison, with no specific numeric PD parameters or dose-response curve provided for it. |
-| popPK | Morita_1977 | irrelevant | 0 | 0 | Trimetaphan is used only as a vasodilator to manipulate cerebral perfusion pressure in a study of halothane's effects on brain blood flow, with no pharmacokinetic parameters reported for trimetaphan. |
-| popPK | Nagata_1993 | irrelevant | 0 | 0 | The study focuses on renal and hepatic function markers during hypotensive anesthesia, not the pharmacokinetic disposition parameters (CL, V, etc.) of trimetaphan. |
-| popPK | Nagata_1994 | irrelevant | 0 | 0 | The study is a clinical comparison of renal function during hypotension induced by trimetaphan, not a pharmacokinetic study, and reports no PK parameters. |
-| popPK | Nagata_1996 | irrelevant | 0 | 0 | The study uses trimetaphan as an agent to induce hypotension to assess renal function, but does not report pharmacokinetic parameters (CL, V, etc.) for trimetaphan itself. |
+| popPK | Morita_1977 | irrelevant | 0 | 0 | Trimetaphan is used only as a hemodynamic agent to manipulate cerebral perfusion pressure, not as the subject of pharmacokinetic analysis. |
+| popPK | Nagata_1993 | irrelevant | 0 | 0 | The study investigates renal and hepatic function markers during hypotensive anesthesia induced by trimetaphan, but does not report any pharmacokinetic parameters (CL, V, t1/2) for the drug itself. |
+| popPK | Nagata_1994 | irrelevant | 0 | 0 | The study uses trimetaphan as a comparator agent to induce hypotension and measures renal function, but does not report any pharmacokinetic parameters (CL, V, etc.) for trimetaphan. |
+| popPK | Nagata_1996 | irrelevant | 0 | 0 | The study uses trimetaphan as a tool to induce hypotension to assess renal function, but does not report pharmacokinetic parameters (CL, V, etc.) for trimetaphan itself. |
 | popPK | Nakamura_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neuromuscular blockade in isolated muscle, reporting no pharmacokinetic parameters. |
 | PD | Nakamura_1988 | not_relevant | 4 | 2 | The study describes qualitative dose-response shifts and relative potency (1/100-1/200) but does not provide numeric PD parameters (EC50, Emax) or extractable concentration-effect curves for trimetaphan. |
-| popPK | Nelson_1990 | irrelevant | 0 | 0 | The study uses trimetaphan as a tool to induce hypotension for cerebral blood flow measurement, not as the subject of a pharmacokinetic analysis. |
-| popPK | Nelson_1991 | irrelevant | 0 | 0 | The study uses trimetaphan only as a tool to induce hypotension for assessing cerebral autoregulation and does not report any pharmacokinetic parameters for the drug. |
+| popPK | Nelson_1990 | irrelevant | 0 | 0 | The study uses trimetaphan as a tool to induce hypotension for cerebral autoregulation testing, not to characterize its pharmacokinetics. |
+| popPK | Nelson_1991 | irrelevant | 0 | 0 | The study investigates cerebral hemodynamics in rabbits using trimetaphan as a tool to induce hypotension, not to characterize its pharmacokinetic parameters. |
 | popPK | Nooney_1992 | irrelevant | 0 | 0 | The study is an in-vitro patch clamp electrophysiology experiment investigating receptor pharmacology, not a pharmacokinetic study, and reports no disposition parameters for trimetaphan. |
-| popPK | Ouyang_1988 | irrelevant | 0 | 0 | The study is a pharmacological investigation of opiate receptors in feline ileocecal sphincter where trimetaphan is used only as a non-specific antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Ouyang_1988 | irrelevant | 0 | 0 | The study investigates opiate receptor mechanisms in feline ileocecal sphincter, using trimethaphan only as a pharmacological tool to inhibit neural pathways, not as a subject of PK analysis. |
 | PD | Ouyang_1988 | not_relevant | 0 | 0 | The paper studies opiate receptor agonists (morphine, dynorphin, N-allylnormetazocine) and only mentions trimetaphan as a tool to inhibit a response, without providing any dose-response data or PD parameters for trimetaphan itself. |
 | popPK | Paradelis_1987 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacodynamic study on neuromuscular blockade and does not report any pharmacokinetic parameters for trimetaphan. |
 | popPK | Peters_1990 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study where trimetaphan is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
 | PD | Peters_1990 | not_relevant | 0 | 0 | The paper reports that trimetaphan was ineffective at 1 microM, providing no numeric PD parameters or extractable dose-response relationship. |
 | popPK | Shinozaki_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of trimetaphan's effect on glutamate receptors in crayfish, reporting no pharmacokinetic parameters. |
-| popPK | Sury_1988 | irrelevant | 1 | 0 | The study focuses on cardiovascular/hemodynamic effects (blood pressure, heart rate) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
-| popPK | Takasaki_1992 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bupivacaine, with trimetaphan serving only as an agent to induce hypotension rather than being the subject drug. |
-| popPK | Takeda_1997 | irrelevant | 0 | 0 | The study is a hemodynamic comparison of organ blood flow, not a pharmacokinetic study, and reports no disposition parameters for trimetaphan. |
-| popPK | Tominaga_1976 | irrelevant | 0 | 0 | The study focuses on cerebrovascular reactivity and uses trimetaphan only as a hemodynamic agent to block blood pressure rise, without reporting any pharmacokinetic parameters for trimetaphan. |
+| popPK | Sury_1988 | irrelevant | 1 | 0 | The study focuses on cardiovascular/hemodynamic effects (blood pressure, heart rate) and cyanide concentrations, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| popPK | Takasaki_1992 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bupivacaine, with trimetaphan used only as a co-administered agent to induce hypotension. |
+| popPK | Takeda_1997 | irrelevant | 0 | 0 | The study is a hemodynamic comparison of organ blood flow during hypotension, not a pharmacokinetic study reporting disposition parameters for trimetaphan. |
+| popPK | Tominaga_1976 | irrelevant | 0 | 0 | The study investigates cerebrovascular reactivity and uses trimetaphan only as a hemodynamic control agent, reporting no pharmacokinetic parameters for the drug. |
 | popPK | Truong_2001 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological binding assay using trimetaphan as a probe ligand, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Weaver_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of receptor pharmacology (Ki values) in avian brain slices, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Weaver_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of receptor pharmacology (Ki values) in chick brain slices, not a pharmacokinetic study of trimetaphan disposition. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

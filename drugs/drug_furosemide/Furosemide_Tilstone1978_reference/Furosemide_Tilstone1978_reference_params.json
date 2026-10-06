@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 40 mg oral (C03CA01)",
+ "model_id": "Furosemide_Tilstone1978_reference",
+ "molar_masses": {
+  "central.C": 0.33074400000000004
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.785e-06,
+  "F": 43.4,
+  "MM": 0.33074400000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 3.728571428571428e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-05,
+  "k12": 6.704980842911879e-05,
+  "k21": 7.056451612903226e-05,
+  "ka": 0.0012527777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 758.2663065331673
+ },
+ "reference_peaks": {
+  "central.C": 0.028796055594297203
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

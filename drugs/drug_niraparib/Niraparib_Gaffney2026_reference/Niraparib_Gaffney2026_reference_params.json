@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Niraparib_Gaffney2026_reference",
+ "molar_masses": {
+  "central.C": 0.320396
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  300.0
+ ],
+ "parameters": {
+  "Cl": 4.416666666666667e-06,
+  "F": 1.0,
+  "MM": 0.320396,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0064285714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0002361111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14492.639139357734
+ },
+ "reference_peaks": {
+  "central.C": 0.0005807450783030625
+ },
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

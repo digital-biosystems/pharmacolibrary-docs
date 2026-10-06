@@ -17,13 +17,13 @@ Bethanidine is a peripherally acting antiadrenergic (sympatholytic) drug that ha
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 05:57 | 0:43 | 0/1/0 | 0/0/0 | 0/0/0 | 2,195/1,788 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 5/0 | 0/0 | 0 |
+| 2026-10-06 13:22 | 0:52 | 0/1/0 | 0/0/0 | 0/0/0 | 7,701/1,647 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 5/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Corder_1979_reference](drugs/drug_betanidine/Betanidine_Corder1979_reference.md) | — | 1-compartment (no model) | 0 | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Corder_1979_reference](drugs/drug_betanidine/Betanidine_Corder1979_reference.md) | — | 1-compartment (no model) | 0 | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) |
 
 ## ADME sites
 
@@ -45,7 +45,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -54,19 +54,19 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Corder_1979.pdf` | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | popPK | 10 | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) | [489762](https://pubmed.ncbi.nlm.nih.gov/489762) | The evidence explicitly reports quantitative pharmacokinetic parameters (half-lives, volume of distribution) for bethanidine in human subjects. |
-| `Shen_1975.pdf` | Shen D et al., Pharmacokinetics of bethanidine in hype…, Clinical pharmacology and t… (1975) | popPK | 9 | [10.1002/cpt1975173363](https://doi.org/10.1002/cpt1975173363) | [1120401](https://pubmed.ncbi.nlm.nih.gov/1120401) | The study reports quantitative pharmacokinetic parameters for bethanidine, including terminal half-lives (7-11 hr), renal clearance relative to plasma flow, and urinary excretion percentages, all of which are explicitly stated in the provided text. |
-| `Chremos_1976.pdf` | Chremos AN et al., Time-dependent change in renal clearanc…, Journal of pharmaceutical s… (1976) | popPK | 8 | [10.1002/jps.2600650136](https://doi.org/10.1002/jps.2600650136) | [1255421](https://pubmed.ncbi.nlm.nih.gov/1255421) | The paper describes a pharmacokinetic study of bethanidine in humans, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
+| `Corder_1979.pdf` | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | popPK | 10 | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) | [489762](https://pubmed.ncbi.nlm.nih.gov/489762) | The paper reports quantitative pharmacokinetic parameters (half-life, volume of distribution) for bethanidine in humans. |
+| `Shen_1975.pdf` | Shen D et al., Pharmacokinetics of bethanidine in hype…, Clinical pharmacology and t… (1975) | popPK | 9 | [10.1002/cpt1975173363](https://doi.org/10.1002/cpt1975173363) | [1120401](https://pubmed.ncbi.nlm.nih.gov/1120401) | The study reports quantitative pharmacokinetic parameters (half-life, renal clearance, excretion percentages) for bethanidine in humans, though specific volume of distribution values are not explicitly listed. |
+| `Chremos_1976.pdf` | Chremos AN et al., Time-dependent change in renal clearanc…, Journal of pharmaceutical s… (1976) | popPK | 8 | [10.1002/jps.2600650136](https://doi.org/10.1002/jps.2600650136) | [1255421](https://pubmed.ncbi.nlm.nih.gov/1255421) | The study reports pharmacokinetic modeling and renal clearance dynamics for bethanidine in humans, but no specific numeric parameter values (CL, V, t1/2) are present in the provided evidence. |
 
-<sub>queue written 2026-09-30T05:56:47.334707+00:00</sub>
+<sub>queue written 2026-10-06T13:21:31.714271+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Briant_1974 | irrelevant | 0 | 0 | The study focuses on a different drug (Ciba 34276-Ba) and only mentions bethanidine (likely a typo for betanidine) in the context of a clinical interaction case without providing any pharmacokinetic parameters for it. |
-| popPK | Chremos_1976 | relevant | 8 | 0 | The paper describes a pharmacokinetic study of bethanidine in humans, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
+| popPK | Briant_1974 | irrelevant | 0 | 0 | The study focuses on a tricyclic antidepressant (Ciba 34276-Ba) and uses bethanidine (likely a typo for betanidine) only as a co-administered drug to assess blood pressure control, without reporting any pharmacokinetic parameters for betanidine. |
+| popPK | Chremos_1976 | relevant | 8 | 0 | The study reports pharmacokinetic modeling and renal clearance dynamics for bethanidine in humans, but no specific numeric parameter values (CL, V, t1/2) are present in the provided evidence. |
 | popPK | Dring_1977 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 22:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 13:21 UTC</sub>

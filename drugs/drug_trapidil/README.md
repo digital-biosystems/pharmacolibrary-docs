@@ -18,22 +18,11 @@ Trapidil is a vasodilator and platelet aggregation inhibitor that was classified
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:44 | 0:53 | 0/0/0 | 1/0/0 | 0/0/0 | 1,662/110 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 1/2 | 0 |
+| 2026-10-06 10:31 | 0:55 | 0/0/0 | 0/0/0 | 0/0/0 | 38,835/771 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 1/2 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [An_2018_APD50](drugs/drug_trapidil/pd_An_2018_APD50.md) | action potential duration at 50% repolarization ← taurine-magnesium coordination compound (TMCC) · direct Emax (saturable) effect | — | An MY et al., Therapeutic effects of a taurine-magnes…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.86](https://doi.org/10.1038/aps.2017.86) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [An_2018_APD90](drugs/drug_trapidil/pd_An_2018_APD90.md) | action potential duration at 90% repolarization ← taurine-magnesium coordination compound (TMCC) · direct Emax (saturable) effect | — | An MY et al., Therapeutic effects of a taurine-magnes…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.86](https://doi.org/10.1038/aps.2017.86) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [An_2018_IKs](drugs/drug_trapidil/pd_An_2018_IKs.md) | outward delayed rectifier potassium current ← taurine-magnesium coordination compound (TMCC) · direct Emax (saturable) effect | — | An MY et al., Therapeutic effects of a taurine-magnes…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.86](https://doi.org/10.1038/aps.2017.86) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [An_2018_QT](drugs/drug_trapidil/pd_An_2018_QT.md) | QT interval ← taurine-magnesium coordination compound (TMCC) · direct Emax (saturable) effect | — | An MY et al., Therapeutic effects of a taurine-magnes…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.86](https://doi.org/10.1038/aps.2017.86) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [An_2018_QTpeak](drugs/drug_trapidil/pd_An_2018_QTpeak.md) | QTpeak interval ← taurine-magnesium coordination compound (TMCC) · direct Emax (saturable) effect | — | An MY et al., Therapeutic effects of a taurine-magnes…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.86](https://doi.org/10.1038/aps.2017.86) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [An_2018_rTp_Te](drugs/drug_trapidil/pd_An_2018_rTp_Te.md) | rTp-Te ratio ← taurine-magnesium coordination compound (TMCC) · direct Emax (saturable) effect | — | An MY et al., Therapeutic effects of a taurine-magnes…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.86](https://doi.org/10.1038/aps.2017.86) |
 
 ## ADME sites
 
@@ -63,13 +52,13 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Berndt_1992.pdf` | Berndt A et al., Pharmacokinetics of trapidil (Rocornal)…, International journal of cl… (1992) | popPK | 10 | not captured | [1490801](https://pubmed.ncbi.nlm.nih.gov/1490801) | The text explicitly reports quantitative pharmacokinetic parameters for trapidil, including total plasma clearance (99.6 ml/min) and volume of distribution (19.9 l) in patients with liver disease. |
-| `Berndt_1996.pdf` | Berndt A et al., Pharmacokinetics of trapidil in patient…, Journal of clinical pharmac… (1996) | popPK | 9 | [10.1002/j.1552-4604.1996.tb04756.x](https://doi.org/10.1002/j.1552-4604.1996.tb04756.x) | [8930776](https://pubmed.ncbi.nlm.nih.gov/8930776) | The study reports quantitative pharmacokinetic parameters for trapidil, specifically total plasma clearance values for patients and healthy controls, which are explicitly stated in the text. |
-| `Harder_1996.pdf` | Harder S et al., Pharmacokinetics of trapidil, an antago…, British journal of clinical… (1996) | popPK | 8 | [10.1046/j.1365-2125.1996.04338.x](https://doi.org/10.1046/j.1365-2125.1996.04338.x) | [8904615](https://pubmed.ncbi.nlm.nih.gov/8904615) | The paper reports quantitative PK parameters (AUC, half-life) for trapidil, but lacks explicit values for clearance (CL) and volume of distribution (V). |
-| `Thürmann_1997.pdf` | Thürmann PA et al., Pharmacokinetics of the PDGF-antagonist…, Clinical nephrology (1997) | popPK | 8 | not captured | [9049457](https://pubmed.ncbi.nlm.nih.gov/9049457) | The study reports quantitative PK parameters (Cmax, AUC) for trapidil in humans, but lacks explicit clearance (CL) or volume (V) values, which are typically derived from these metrics or reported in tables not fully detailed in the text. |
+| `Berndt_1992.pdf` | Berndt A et al., Pharmacokinetics of trapidil (Rocornal)…, International journal of cl… (1992) | popPK | 10 | not captured | [1490801](https://pubmed.ncbi.nlm.nih.gov/1490801) | The study reports specific quantitative pharmacokinetic parameters (clearance and volume of distribution) for trapidil in human patients with liver disease. |
+| `Berndt_1996.pdf` | Berndt A et al., Pharmacokinetics of trapidil in patient…, Journal of clinical pharmac… (1996) | popPK | 10 | [10.1002/j.1552-4604.1996.tb04756.x](https://doi.org/10.1002/j.1552-4604.1996.tb04756.x) | [8930776](https://pubmed.ncbi.nlm.nih.gov/8930776) | The study reports quantitative pharmacokinetic parameters (specifically total plasma clearance) for trapidil in humans, with numeric values provided in the text. |
+| `Harder_1996.pdf` | Harder S et al., Pharmacokinetics of trapidil, an antago…, British journal of clinical… (1996) | popPK | 8 | [10.1046/j.1365-2125.1996.04338.x](https://doi.org/10.1046/j.1365-2125.1996.04338.x) | [8904615](https://pubmed.ncbi.nlm.nih.gov/8904615) | The study reports quantitative pharmacokinetic parameters (AUC, half-life) for trapidil in humans, though specific clearance and volume values are not explicitly listed in the provided text. |
+| `Thürmann_1997.pdf` | Thürmann PA et al., Pharmacokinetics of the PDGF-antagonist…, Clinical nephrology (1997) | popPK | 8 | not captured | [9049457](https://pubmed.ncbi.nlm.nih.gov/9049457) | The study reports quantitative PK parameters (Cmax, AUC) for trapidil and its metabolite in humans, though specific clearance or volume values are not explicitly listed in the text. |
 | `Bethke_1991.pdf` | Bethke T et al., Effects of the triazolopyrimidine trapi…, Arzneimittel-Forschung (1991) | pd | 4 | not captured | [1716891](https://www.ncbi.nlm.nih.gov/pubmed/1716891) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-30T03:44:00.117080+00:00</sub>
+<sub>queue written 2026-10-06T10:31:11.306214+00:00</sub>
 
 ## Screened and excluded
 
@@ -77,13 +66,13 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | An_2018 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of Short QT Syndrome where trapidil is used as a tool compound to induce a model, not as the subject of pharmacokinetic analysis. |
 | popPK | Bartel_1985 | irrelevant | 0 | 0 | The paper reports in-vitro enzyme inhibition data (IC50) for trapidil derivatives, not pharmacokinetic disposition parameters. |
-| popPK | Bethke_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of pharmacodynamic effects (inotropy and PDE inhibition) in guinea-pig hearts, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Bethke_1991 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
 | popPK | Block_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of platelet function and does not report any pharmacokinetic parameters for trapidil. |
 | popPK | Jargin_2012 | irrelevant | 0 | 0 | The paper is a critical review of in-vitro cell culture studies regarding atherosclerosis and does not report any pharmacokinetic parameters for trapidil. |
 | popPK | Kohno_1983 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding trapidil pharmacokinetics. |
-| popPK | Maruyama_1981 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of trapidil's effects on tracheal musculature and vasculature in dogs, reporting no pharmacokinetic parameters. |
+| popPK | Maruyama_1981 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of trapidil's effects on tracheal blood flow and pressure in dogs, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Peterson_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on fibroproliferation where trapidil is used only as a comparator agent, with no pharmacokinetic parameters reported. |
-| popPK | Sziegoleit_2007 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of hand vein compliance and norepinephrine ED50 values, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for trapidil. |
+| popPK | Sziegoleit_2007 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of hand vein compliance and norepinephrine ED50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Ujiie_1983 | irrelevant | 0 | 0 | The study focuses on the in-vitro platelet aggregation inhibitory effects of etafenone, with trapidil serving only as a comparator agent, and no pharmacokinetic parameters are reported. |
 | popPK | Yoshikawa_1981 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic and electrophysiological investigation of isolated rabbit atria, reporting no pharmacokinetic parameters. |
 

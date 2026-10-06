@@ -26,13 +26,19 @@ Amiloride is a potassium-sparing diuretic used for conditions including high blo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 08:20 | 1:21 | 0/1/0 | 0/0/0 | 0/0/0 | 13,817/2,938 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-06 17:45 | 3:38 | 0/1/0 | 0/0/1 | 0/0/0 | 68,441/7,123 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Jain_2026_reference](drugs/drug_amiloride/Amiloride_Jain2026_reference.md) | — | 1-compartment (no model) | 4 | Jain M et al., Population Pharmacokinetics of Intranas…, European journal of drug me… (2026) | [10.1007/s13318-026-01011-3](https://doi.org/10.1007/s13318-026-01011-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Jain_2026_reference](drugs/drug_amiloride/Amiloride_Jain2026_reference.md) | — | 1-compartment (no model) | 4 | Jain M et al., Population Pharmacokinetics of Intranas…, European journal of drug me… (2026) | [10.1007/s13318-026-01011-3](https://doi.org/10.1007/s13318-026-01011-3) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Todorovic_1998_T_current](drugs/drug_amiloride/pd_Todorovic_1998_T_current.md) | low-voltage-activated (LVA) Ca2+ current ← amiloride · direct sigmoid Emax (Hill) effect | — | Todorovic SM et al., Pharmacological properties of T-type Ca…, Journal of neurophysiology (1998) | [10.1152/jn.1998.79.1.240](https://doi.org/10.1152/jn.1998.79.1.240) |
 
 ## ADME sites
 
@@ -58,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 248 matched, 38 returned
 - **screened:** 4  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -67,57 +73,57 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jain_2026.pdf` | Jain M et al., Population Pharmacokinetics of Intranas…, European journal of drug me… (2026) | popPK | 10 | [10.1007/s13318-026-01011-3](https://doi.org/10.1007/s13318-026-01011-3) | [42236625](https://pubmed.ncbi.nlm.nih.gov/42236625) | The paper reports a population PK model for amiloride with specific numeric values for clearance, volume, and absorption rate constants present in the text. |
-| `Segre_1998.pdf` | Segre G et al., Amiloride pharmacokinetics in rat, European journal of drug me… (1998) | popPK | 9 | [10.1007/BF03189343](https://doi.org/10.1007/BF03189343) | [9725485](https://pubmed.ncbi.nlm.nih.gov/9725485) | The paper describes a compartmental PK study for amiloride in rats, but the provided evidence contains only the abstract/methodology description without any numeric parameter values. |
-| `Savic_2007.pdf` | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | popPK | 8 | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) | [17653836](https://pubmed.ncbi.nlm.nih.gov/17653836) | The paper is a population PK study including amiloride, but the specific numeric parameter values are not present in the provided evidence. |
+| `Jain_2026.pdf` | Jain M et al., Population Pharmacokinetics of Intranas…, European journal of drug me… (2026) | popPK | 10 | [10.1007/s13318-026-01011-3](https://doi.org/10.1007/s13318-026-01011-3) | [42236625](https://pubmed.ncbi.nlm.nih.gov/42236625) | The paper reports a population pharmacokinetic model for amiloride with specific numeric values for clearance, volume, and absorption rate constants provided in the abstract. |
+| `Segre_1998.pdf` | Segre G et al., Amiloride pharmacokinetics in rat, European journal of drug me… (1998) | popPK | 10 | [10.1007/BF03189343](https://doi.org/10.1007/BF03189343) | [9725485](https://pubmed.ncbi.nlm.nih.gov/9725485) | The paper describes a compartmental PK model for amiloride in rats, but no numeric parameter values are present in the provided evidence. |
+| `Savic_2007.pdf` | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | popPK | 8 | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) | [17653836](https://pubmed.ncbi.nlm.nih.gov/17653836) | The paper describes a population PK model for amiloride, but the specific numeric parameter values are not present in the provided evidence text. |
 | `Snelder_2014.pdf` | Snelder N et al., Drug effects on the CVS in conscious ra…, British journal of pharmaco… (2014) | pd | 5 | [10.1111/bph.12824](https://doi.org/10.1111/bph.12824) | [24962208](https://www.ncbi.nlm.nih.gov/pubmed/24962208) | metadata signals extractable PD data (PKPD) |
 
-<sub>queue written 2026-09-30T08:19:08.930621+00:00</sub>
+<sub>queue written 2026-10-06T17:42:18.871834+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bukanova_2025 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of receptor binding interactions, not a pharmacokinetic study, and reports no disposition parameters for amiloride. |
-| popPK | Cargnelli_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of amiloride's effect on cardiac contractility and ouabain toxicity, reporting no pharmacokinetic parameters. |
-| PGx | Chu_2003 | not_relevant | 0 | 0 | The paper investigates the transcriptional regulation of the ENaC alpha-subunit by Sp1/Sp3 and PP1, but does not report any pharmacogenomic effects of genetic variants on the pharmacokinetics or pharmacodynamics of amiloride. |
-| popPK | Coimbra_2025 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study where amiloride is only a hit compound/comparator, not a PK study. |
+| popPK | Bukanova_2025 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring receptor binding and chloride currents, not a pharmacokinetic study of amiloride disposition. |
+| popPK | Cargnelli_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of amiloride's effect on ouabain in guinea-pig atria, reporting no pharmacokinetic parameters. |
+| PGx | Chu_2003 | not_relevant | 0 | 0 | The paper investigates the transcriptional regulation of the ENaC alpha-subunit by Sp1/Sp3 and PP1, but does not report any pharmacogenomic effects of gene variants on the pharmacokinetics or pharmacodynamics of amiloride. |
+| popPK | Coimbra_2025 | irrelevant | 0 | 0 | The study is an in-vitro antiviral screening assay where amiloride is identified as a hit compound, but no pharmacokinetic parameters are reported. |
 | PGx | Corvol_1997 | not_relevant | 0 | 0 | The paper discusses the molecular genetics of hypertension and mentions amiloride only as a therapeutic agent for Liddle's syndrome, without reporting any pharmacogenomic effects on amiloride's PK or PD parameters. |
-| popPK | Epstein_1985 | irrelevant | 0 | 0 | The paper is a mechanistic study of ion transport in elasmobranch rectal glands where amiloride is only mentioned as a non-inhibitor, with no pharmacokinetic parameters reported. |
+| popPK | Epstein_1985 | irrelevant | 0 | 0 | The paper is a mechanistic study of ion transport in elasmobranch rectal glands where amiloride is used only as a negative control/inhibitor, not as the subject of pharmacokinetic analysis. |
 | PD | Epstein_1985 | not_relevant | 0 | 0 | The paper discusses the mechanism of Na-K-Cl cotransport and notes that amiloride does not inhibit it, but it does not report any exposure-response or dose-response relationship or numeric PD parameters for amiloride. |
-| popPK | Huf_1982 | irrelevant | 0 | 0 | The study focuses on ion transport kinetics in frog skin using amiloride as a blocking agent, not on the pharmacokinetic disposition parameters of amiloride itself. |
+| popPK | Huf_1982 | irrelevant | 0 | 0 | The study focuses on ion transport mechanisms in frog skin where amiloride is used as a blocking agent, not on the pharmacokinetic disposition of amiloride itself. |
 | PGx | Irvin_2010 | not_relevant | 0 | 0 | The study examines the effect of a gene variant on fasting glucose (a metabolic outcome) in patients treated with amlodipine or chlorthalidone, not the PK/PD of amiloride. |
 | PGx | Ito_2004 | not_relevant | 0 | 0 | The paper describes bacterial motility and the use of an amiloride analogue as a chemical inhibitor, not the pharmacokinetics or pharmacodynamics of amiloride in humans or the effect of human gene variants on amiloride response. |
 | PGx | Kalyanasundar_2023 | not_relevant | 0 | 0 | The paper investigates taste receptor genetics and neural responses to sugars, using amiloride only as a pharmacological tool to characterize sodium channels, not as a drug subject to pharmacogenomic analysis. |
-| popPK | Kimura_1987 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of sodium-calcium exchange in guinea-pig ventricular cells where amiloride is used only as a partial blocker, not as the subject of pharmacokinetic analysis. |
+| popPK | Kimura_1987 | irrelevant | 0 | 0 | The study investigates sodium-calcium exchange currents in guinea-pig ventricular cells and uses amiloride only as a partial blocker, not as the subject of pharmacokinetic analysis. |
 | PD | Kimura_1987 | not_relevant | 0 | 0 | The paper investigates the biophysical properties of the Na-Ca exchange current in single cells; amiloride is only mentioned as a partial blocker without any quantitative dose-response or exposure-response analysis. |
-| popPK | Lazdunski_1985 | irrelevant | 0 | 0 | The paper is a mechanistic study of the Na+/H+ exchanger in cardiac cells, not a pharmacokinetic study, and contains no disposition parameters for amiloride. |
-| PGx | Mordasini_2015 | not_relevant | 0 | 0 | The study investigates the role of the ENaC channel in cirrhosis using knockout mice, but does not report pharmacokinetic or pharmacodynamic parameters of the drug amiloride itself. |
-| popPK | Morel_1975 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment on frog skin where amiloride is used as a pharmacological blocker, not a PK study reporting disposition parameters for amiloride. |
+| popPK | Lazdunski_1985 | irrelevant | 0 | 0 | The paper is a mechanistic study of the Na+/H+ exchanger in chick cardiac cells, not a pharmacokinetic study of amiloride disposition. |
+| PGx | Mordasini_2015 | not_relevant | 0 | 0 | The study investigates the physiological role of the ENaC channel in a mouse model of cirrhosis, not the pharmacokinetics or pharmacodynamics of the drug amiloride in relation to human genetic variants. |
+| popPK | Morel_1975 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of frog skin epithelium where amiloride is used as a pharmacological blocker, not a pharmacokinetic study of amiloride disposition. |
 | PGx | Mroz_2019 | not_relevant | 0 | 0 | The paper investigates the effect of ursodeoxycholic acid (UDCA) on ion transport, not the pharmacokinetics or pharmacodynamics of amiloride. |
-| PGx | Mukherjee_2020 | not_relevant | 0 | 0 | The paper investigates a therapeutic strategy (mRNA delivery) to inhibit ENaC channels, not the effect of a genetic variant on the pharmacokinetics or pharmacodynamics of amiloride. |
-| popPK | Murphy_1990 | irrelevant | 0 | 0 | The study is a mechanistic investigation of Na+-H+ exchange in the choroid plexus where amiloride is used only as a pharmacological inhibitor, not as the subject of pharmacokinetic analysis. |
-| popPK | Ogando_2013 | irrelevant | 0 | 0 | The paper is a mechanistic study on the SLC4A11 transporter in cells, using amiloride derivatives only as inhibitors, and contains no pharmacokinetic parameters for amiloride. |
-| PGx | Qadri_2012 | not_relevant | 0 | 0 | The paper uses amiloride as a tool compound to inhibit calcium entry in an erythrocyte model, not to study the pharmacokinetics or pharmacodynamics of amiloride itself in relation to a gene variant. |
-| popPK | Radji_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of ocular ion transport where amiloride is used only as a pharmacological tool to identify ENaC channels, not as a subject drug for PK analysis. |
+| PGx | Mukherjee_2020 | not_relevant | 0 | 0 | The paper investigates a gene therapy (mRNA) that alters ENaC channel function, not a pharmacogenomic variant affecting the pharmacokinetics or pharmacodynamics of amiloride. |
+| popPK | Murphy_1990 | irrelevant | 0 | 0 | The study investigates Na+-H+ exchange in rat choroid plexus using amiloride as a mechanistic inhibitor, not as a subject of pharmacokinetic analysis. |
+| popPK | Ogando_2013 | irrelevant | 0 | 0 | The study investigates the mechanism of the SLC4A11 transporter in HEK293 cells and uses amiloride derivatives (EIPA) as pharmacological inhibitors, rather than studying the pharmacokinetics of amiloride itself. |
+| PGx | Qadri_2012 | not_relevant | 0 | 0 | The paper studies eryptosis in APC mutant mice and uses amiloride only as a tool compound to inhibit cation channels, not to assess pharmacogenomic effects on amiloride's PK/PD. |
+| popPK | Radji_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channels in ocular epithelial cells where amiloride is used only as a pharmacological tool to identify ENaC, not as the subject of a pharmacokinetic analysis. |
 | PD | Radji_2025 | not_relevant | 1 | 0 | The paper identifies amiloride as a blocker of ENaC in a qualitative mechanistic study but does not report a quantitative concentration-effect curve or numeric PD parameters (e.g., IC50) for amiloride. |
 | PGx | Raikwar_2008 | not_relevant | 0 | 0 | The paper describes a molecular mechanism of Sgk1 variants affecting amiloride-sensitive sodium transport in a heterologous expression system, not a pharmacogenomic effect on the PK or PD of amiloride in humans. |
-| PGx | Rybakowski_2013 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of mood stabilizers (lithium, valproate, etc.) and mentions the ACCN1 gene (amiloride-sensitive channel) only in the context of lithium response, not the pharmacokinetics or pharmacodynamics of the drug amiloride. |
-| PGx | Sahai_1994 | not_relevant | 0 | 0 | The paper investigates renal ammoniagenesis and Na/H antiporter mechanisms in cell lines, not the pharmacokinetics or pharmacodynamics of amiloride as a therapeutic drug. |
-| popPK | Savic_2007 | relevant | 8 | 0 | The paper is a population PK study including amiloride, but the specific numeric parameter values are not present in the provided evidence. |
-| popPK | Segre_1998 | relevant | 9 | 0 | The paper describes a compartmental PK study for amiloride in rats, but the provided evidence contains only the abstract/methodology description without any numeric parameter values. |
+| PGx | Rybakowski_2013 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of mood stabilizers (lithium, valproate) and mentions the ACCN1 gene (amiloride-sensitive channel) only in the context of lithium response, not the pharmacokinetics or pharmacodynamics of the drug amiloride. |
+| PGx | Sahai_1994 | not_relevant | 0 | 0 | The paper investigates renal cell physiology and ammoniagenesis, using amiloride only as a tool to characterize Na+/H+ antiporter activity, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Savic_2007 | relevant | 8 | 0 | The paper describes a population PK model for amiloride, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Segre_1998 | relevant | 10 | 0 | The paper describes a compartmental PK model for amiloride in rats, but no numeric parameter values are present in the provided evidence. |
 | PGx | Smit_2018 | not_relevant | 0 | 0 | The paper discusses lipid variability and mentions ACCN1 (an amiloride-sensitive channel) as a genetic locus, but it does not report a pharmacogenomic effect on the PK or PD of the drug amiloride. |
 | popPK | Snelder_2014 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
 | PD | Snelder_2014 | not_relevant | 0 | 0 | The provided text is a title and does not contain the full text or any numeric PD parameters for amiloride. |
 | PGx | Sparfel_2004 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP1 enzymes by amiloride derivatives, not the effect of genetic variants on amiloride's pharmacokinetics or pharmacodynamics. |
-| popPK | Stokes_1984 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology experiment on renal tubules where amiloride is used as a tool to block ENaC, not as the subject of pharmacokinetic analysis. |
-| popPK | Todorovic_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology paper investigating the pharmacological block of T-type calcium currents by amiloride, not a pharmacokinetic study. |
-| popPK | Tomlinson_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of calcium flux in rat lenses where amiloride is used only as a comparator agent, not as the subject drug for PK parameter estimation. |
+| popPK | Stokes_1984 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology experiment on renal tubules where amiloride is used as a pharmacological tool to block ENaC, not as the subject of pharmacokinetic analysis. |
+| popPK | Todorovic_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring calcium channel block, not a pharmacokinetic study of amiloride disposition. |
+| popPK | Tomlinson_1991 | irrelevant | 0 | 0 | The study investigates calcium flux in rat lenses in vitro, using amiloride-analogue dichlorobenzamil only as a mechanistic probe, not as the subject drug for PK analysis. |
 | PGx | Wan_2010 | not_relevant | 0 | 0 | The paper studies Wilson disease and ATP7B mutations; amiloride is used only as a tool compound to modulate splicing, not as the subject of a pharmacogenomic PK/PD analysis. |
 | PGx | Wang_2023 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of an amiloride analog (EIPA) in cancer cells, not the effect of human genetic variants on the pharmacokinetics or pharmacodynamics of amiloride. |
 | PGx | Wu_2024 | not_relevant | 0 | 0 | The paper studies the effect of silica nanoparticles on cadmium uptake in protozoa, using amiloride only as a tool to identify transporters, and does not report any pharmacogenomic effects on amiloride's PK or PD. |
-| PGx | Yang_2020 | not_relevant | 0 | 0 | The paper investigates the physiological role of aldosterone and ENaC in mice, using amiloride only as a tool to measure channel activity, rather than reporting a pharmacogenomic effect on amiloride's PK or PD parameters. |
-| PGx | Zachar_2022 | not_relevant | 0 | 0 | The paper investigates the role of MASP-2 in ENaC activation and does not report any pharmacogenomic effects of gene variants on the pharmacokinetics or pharmacodynamics of amiloride. |
+| PGx | Yang_2020 | not_relevant | 0 | 0 | The paper investigates the physiological role of aldosterone and ENaC in mice, using amiloride only as a tool to measure channel activity, rather than reporting a pharmacogenomic effect on amiloride's PK/PD parameters. |
+| PGx | Zachar_2022 | not_relevant | 0 | 0 | The paper investigates the role of MASP-2 in ENaC activation and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of amiloride. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 09:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 17:42 UTC</sub>

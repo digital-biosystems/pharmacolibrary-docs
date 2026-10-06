@@ -26,13 +26,13 @@ Diazoxide is a vasodilator and potassium channel activator used to treat hypogly
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 06:01 | 1:57 | 0/1/0 | 0/0/0 | 0/0/7 | 29,344/5,344 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-06 13:17 | 4:49 | 0/1/0 | 0/0/0 | 0/0/7 | 102,194/9,965 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/9 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kizu_2017_reference](drugs/drug_diazoxide/Diazoxide_Kizu2017_reference.md) | — | 1-compartment (no model) | 0 | Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017) | [10.1159/000478696](https://doi.org/10.1159/000478696) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kizu_2017_reference](drugs/drug_diazoxide/Diazoxide_Kizu2017_reference.md) | — | 1-compartment (no model) | 0 | Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017) | [10.1159/000478696](https://doi.org/10.1159/000478696) |
 
 ## Pharmacogenomics (PGx)
 
@@ -81,44 +81,43 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 28 matched, 27 returned
 - **screened:** 6  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kizu_2017.pdf` | Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017) | popPK | 10 | [10.1159/000478696](https://doi.org/10.1159/000478696) | [28715810](https://pubmed.ncbi.nlm.nih.gov/28715810) | The evidence explicitly provides the quantitative population pharmacokinetic model equations for oral clearance (CL/F) and volume of distribution in children. |
-| `El-Meanawy_2023.pdf` | El-Meanawy SK et al., Overexpression of a Short Sulfonylurea…, Life (Basel, Switzerland) (2023) | pgx | 5 | [10.3390/life13041015](https://doi.org/10.3390/life13041015) | [37109544](https://www.ncbi.nlm.nih.gov/pubmed/37109544) | metadata signals extractable PGX data (ABCB8) |
+| `Kizu_2017.pdf` | Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017) | popPK | 10 | [10.1159/000478696](https://doi.org/10.1159/000478696) | [28715810](https://pubmed.ncbi.nlm.nih.gov/28715810) | The paper reports a population pharmacokinetic model for diazoxide in children with specific numeric coefficients for clearance and volume of distribution. |
 | `Männistö_2020.pdf` | Männistö JME et al., Clinical and Genetic Characterization o…, The Journal of clinical end… (2020) | pgx | 5 | [10.1210/clinem/dgz271](https://doi.org/10.1210/clinem/dgz271) | [32170320](https://www.ncbi.nlm.nih.gov/pubmed/32170320) | metadata signals extractable PGX data (ABCC8) |
 | `Ohkubo_2005.pdf` | Ohkubo K et al., Genotypes of the pancreatic beta-cell K…, Clinical endocrinology (2005) | pgx | 5 | [10.1111/j.1365-2265.2005.02242.x](https://doi.org/10.1111/j.1365-2265.2005.02242.x) | [15807877](https://www.ncbi.nlm.nih.gov/pubmed/15807877) | metadata signals extractable PGX data (ABCC8) |
 
-<sub>queue written 2026-09-30T06:00:46.206912+00:00</sub>
+<sub>queue written 2026-10-06T13:12:53.903258+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Alemzadeh_1993 | not_relevant | 0 | 0 | The study investigates the physiological effects of diazoxide on insulin resistance in rats and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Alemzadeh_1993 | not_relevant | 0 | 0 | The study investigates the physiological effects of diazoxide in a specific rat strain (Zucker) but does not report pharmacogenomic effects (gene variant-dependent changes) on PK or PD parameters. |
 | PGx | Alemzadeh_1996 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of diazoxide in obese vs. lean rats, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | PGx | Bessadok_2011 | not_relevant | 0 | 0 | The paper investigates the interaction of diazoxide with P-glycoprotein in vitro but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters in humans. |
-| PGx | Butler_2025 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of diazoxide and the biology of the KCNJ11 gene in Prader-Willi Syndrome but does not report any pharmacogenomic study linking specific genotypes to changes in diazoxide PK or PD parameters. |
-| PGx | De_2020 | not_relevant | 0 | 0 | The paper reports a case of congenital hyperinsulinism caused by a CACNA1D mutation and mentions diazoxide treatment, but it does not report any pharmacokinetic or pharmacodynamic parameters of diazoxide or how the genotype affects them. |
+| PGx | Butler_2025 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of diazoxide choline and the genetic basis of Prader-Willi syndrome, but it does not report any pharmacogenomic effects (gene variants altering PK/PD) of diazoxide. |
+| PGx | De_2020 | not_relevant | 0 | 0 | The paper reports a case of congenital hyperinsulinism caused by a CACNA1D mutation and describes the clinical use of diazoxide, but it does not report a pharmacogenomic effect of the variant on the pharmacokinetic or pharmacodynamic parameters of diazoxide. |
 | popPK | Deja_2009 | irrelevant | 0 | 0 | The study is a clinical trial assessing cardioprotective efficacy and mitochondrial function, not a pharmacokinetic study, and reports no disposition parameters (CL, V, t1/2) for diazoxide. |
-| PGx | El-Meanawy_2023 | not_relevant | 0 | 0 | The paper investigates the mechanism of SUR2A-55 overexpression on mitochondrial function and glucose uptake, using diazoxide only as a tool compound to probe channel activity, rather than reporting a pharmacogenomic effect on diazoxide's PK or PD parameters. |
+| PGx | El-Meanawy_2023 | not_relevant | 0 | 0 | The paper investigates the mechanism of SUR2A-55 overexpression on mitochondrial function and glucose uptake, using diazoxide only as a tool compound to probe channel activity, rather than reporting a pharmacogenomic effect on diazoxide's PK/PD parameters. |
 | PGx | Flechtner_2006 | not_relevant | 2 | 0 | The paper discusses the mechanism of action of diazoxide in the context of KCNJ11 mutations but does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, ED50) resulting from the genotype. |
-| PGx | Laaraje_2025 | not_relevant | 0 | 0 | The paper reports a case of congenital hyperinsulinism caused by HADH and GHSR mutations, but diazoxide was not administered due to unavailability, so no pharmacokinetic or pharmacodynamic effects of the drug were measured. |
-| PGx | Mouron-Hryciuk_2021 | not_relevant | 2 | 0 | The paper reports clinical outcomes (remission, side effects) and genetic associations for diazoxide in congenital hyperinsulinism, but does not report pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, ED50) driven by genotype. |
-| PGx | Männistö_2020 | not_relevant | 2 | 0 | The paper reports genetic associations with the clinical diagnosis of congenital hyperinsulinism and general diazoxide responsiveness, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, ED50) linked to specific genotypes. |
-| PGx | Ni_2019 | not_relevant | 0 | 0 | The paper reports clinical response to diazoxide in a cohort but does not analyze specific gene variants' effects on pharmacokinetic or pharmacodynamic parameters of the drug. |
-| PGx | Ohkubo_2005 | not_relevant | 2 | 0 | The paper reports genetic mutations associated with the disease phenotype (PHHI) and clinical response to diazoxide, but does not quantify specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, insulin suppression levels) as a function of genotype. |
-| PGx | Stanik_2017 | not_relevant | 2 | 0 | The paper reports a clinical response to diazoxide in a patient with an HNF4A mutation but does not measure or report specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, insulin suppression curve values) to quantify the pharmacogenomic effect. |
+| PGx | Laaraje_2025 | not_relevant | 0 | 0 | The paper reports a case of congenital hyperinsulinism where diazoxide was unavailable, so no pharmacokinetic or pharmacodynamic data for the drug is presented. |
+| PGx | Mouron-Hryciuk_2021 | not_relevant | 2 | 2 | The paper reports clinical outcomes (remission, adverse events) and genetic variants in ABCC8, but does not quantify specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, insulin levels) to establish a pharmacogenomic effect size. |
+| PGx | Männistö_2020 | not_relevant | 2 | 0 | The paper reports genetic associations with the clinical diagnosis of congenital hyperinsulinism and general diazoxide responsiveness, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, EC50) linked to specific genotypes. |
+| PGx | Nair_2026 | not_relevant | 5 | 5 | The paper reports a pharmacodynamic effect of diazoxide (reduction of insulin secretion) in a specific genotype, but it is a qualitative/semi-quantitative observation in a cell model, not a fitted pharmacokinetic or pharmacodynamic parameter (e.g., EC50, Emax) derived from a population model. |
+| PGx | Ni_2019 | not_relevant | 2 | 1 | The paper reports clinical response (diazoxide-unresponsive) and genotype associations in congenital hyperinsulinism, but does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, insulin suppression curve metrics) linked to specific gene variants. |
+| PGx | Ohkubo_2005 | not_relevant | 2 | 0 | The paper reports genetic mutations associated with the disease phenotype (PHHI) and general response to diazoxide, but does not quantify specific pharmacokinetic or pharmacodynamic parameters of diazoxide. |
+| PGx | Stanik_2017 | not_relevant | 2 | 0 | The paper reports a clinical response to diazoxide in a patient with an HNF4A mutation but does not quantify specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, insulin suppression curve metrics) to establish a pharmacogenomic effect size. |
 | PGx | Staník_2016 | not_relevant | 2 | 0 | The text is a general overview of congenital hyperinsulinism and mentions diazoxide resistance qualitatively but provides no specific pharmacokinetic or pharmacodynamic data or quantitative effect sizes for gene variants. |
-| PGx | Wexler_2024 | not_relevant | 2 | 5 | The paper reports a change in pharmacodynamic sensitivity (reduced sensitivity to diazoxide) in a transgenic mouse model, but it does not report a pharmacokinetic parameter or a standard pharmacogenomic effect size for a human clinical context. |
-| PGx | Wong_2026 | not_relevant | 5 | 2 | The paper discusses genotype-guided dosing and qualitative associations between genetic variants (e.g., ABCC8, HNF1A) and diazoxide response (efficacy/side effects), but it does not report specific quantitative pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, clearance, EC50) fitted to specific genotypes. |
+| PGx | Wexler_2024 | not_relevant | 0 | 0 | The paper investigates the effect of a SUR2A splice variant on cardiac function and mitochondrial KATP channel sensitivity to diazoxide, but does not report pharmacokinetic or pharmacodynamic parameters of diazoxide as a therapeutic drug. |
 | PGx | Yamauchi_2003 | not_relevant | 0 | 0 | The paper investigates the neuroprotective mechanism of diazoxide in retinal neurons and does not report any pharmacogenomic effects on PK or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 22:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 13:12 UTC</sub>

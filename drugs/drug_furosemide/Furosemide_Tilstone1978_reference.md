@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03C&quot;,&quot;href&quot;:&quot;atc/C03C.md&quot;},{&quot;label&quot;:&quot;furosemide&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/&quot;},{&quot;label&quot;:&quot;Tilstone_1978 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Furosemide_Hornik2025_reference&quot;,&quot;label&quot;:&quot;Hornik_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Hornik2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Knych2018_reference&quot;,&quot;label&quot;:&quot;Knych_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Knych2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Miura2026_reference&quot;,&quot;label&quot;:&quot;Miura_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Miura2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Randell2026_reference&quot;,&quot;label&quot;:&quot;Randell_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Randell2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Ravix2025_reference&quot;,&quot;label&quot;:&quot;Ravix_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Ravix2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Tilstone1978_reference&quot;,&quot;label&quot;:&quot;Tilstone_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Tilstone1978_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Furosemide_Xia2026_reference&quot;,&quot;label&quot;:&quot;Xia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Xia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_ma2015_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edma_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_ma2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # furosemide — `Furosemide_Tilstone1978_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,25 +21,25 @@
 
 The topology check found a compartment with no path from the dose, so the two-compartment furosemide structure is not fully connected. Because only the paper's abstract was read, the reported values (CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, half-life 0.8 hr, bioavailability 43.4%) are summary statistics rather than a fitted model. A second reader also disagreed on parameter attribution: it assigned 68.9 to an absorbed parameter left null here, and placed the 43.4% bioavailability under the renal failure patients rather than the 500-mg tablets of furosemide. Extracted — furosemide: CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, t1/2z 0.8 hr, Fab 43.4 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorbed: this record has none, the second reading 68.9; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has furosemide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:07.374506+00:00) predates the upstream re-run (2026-10-06 18:19:21.813517+00:00). Current validate status: `extracted`.
 
 ## Citation
 Tilstone WJ et al., Furosemide kinetics in renal failure, Clinical pharmacology and t… (1978)
   ·  DOI: [10.1002/cpt1978236644](https://doi.org/10.1002/cpt1978236644)
 
 ## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Tilstone1978_reference" status="rejected" stale="false" population="normal volunteers and patients with renal failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="furosemide" model-id="Furosemide_Tilstone1978_reference" status="extracted" stale="true" population="normal volunteers and patients with renal failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total body clearance of furosemide | `Q22` · CL | 1.53 | ml/min/kg | 1.785e-06 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Tilstone_1978:abstract | — | not captured |
@@ -46,6 +47,8 @@ Tilstone WJ et al., Furosemide kinetics in renal failure, Clinical pharmacology 
 | volume of the peripheral compartment | `Q64` · V2 | 2.48 | L | 0.00248 | [l] | not captured | exact (1.0) | Tilstone_1978:abstract | — | not captured |
 | half-life | `Q57` · t1/2z | 0.8 | hr | 2880.0 | [h] | not captured | llm (0.6) | Tilstone_1978:abstract | — | not captured |
 | bioavailability of 500-mg tablets of furosemide | `Q40` · Fab | 43.4 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Tilstone_1978:abstract | — | not captured |
+| Q | `Q30` · Q | 0.63 | L/h | 1.7500000000000002e-07 | L/h | not captured | review_gapfill (0.7) | Ravix_2025:review | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 4.51 | h−1 | 0.0012527777777777778 | 1/h | not captured | review_gapfill (0.7) | Miura_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,32 +57,47 @@ Tilstone WJ et al., Furosemide kinetics in renal failure, Clinical pharmacology 
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'absorbed' — extend the ontology if this is a real PK parameter (source ['Tilstone_1978:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=furosemide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q30 (Q) from Ravix_2025's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Miura_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Tilstone_1978_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorbed]` | not captured | 68.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of 500-mg tablets of furosemide in the renal failure patients]` | not captured | 43.4 | only_one_extracted |
+| `gpt-oss:120b` | `model.bioavailability.theta` | 43.4 | 43.4% | mismatch |
+| `gpt-oss:120b` | `parameters[bioavailability of 500-mg tablets of furosemide in the renal failure patients]` | not captured | 43.4% | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of 500-mg tablets of furosemide]` | 43.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[half-life]` | 0.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[half-life]` | not captured | 0.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body clearance of furosemide]` | 1.53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body clearance of furosemide]` | not captured | 1.53 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the central compartment]` | 2.61 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the central compartment]` | not captured | 2.61 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the peripheral compartment]` | 2.48 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the peripheral compartment]` | not captured | 2.48 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | furosemide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | furosemide | unknown | mismatch |
 
 </details>
 
@@ -97,11 +115,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tilstone_1978:abstract'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ravix_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Miura_2026:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tilstone_1978:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tilstone_1978:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tilstone_1978:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.53 | not captured | not captured | ['Tilstone_1978:abstract'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.43 L/h | not captured | not captured | ['Tilstone_1978:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 2.61 L | not captured | not captured | ['Tilstone_1978:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.48 L | not captured | not captured | ['Tilstone_1978:abstract'] |
@@ -118,15 +138,30 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_modelica.zip" download>Furosemide_Tilstone1978_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_fmi.zip" download>Furosemide_Tilstone1978_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_matlab.zip" download>Furosemide_Tilstone1978_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_matlab_simbio.zip" download>Furosemide_Tilstone1978_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_sbml.zip" download>Furosemide_Tilstone1978_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_cellml.zip" download>Furosemide_Tilstone1978_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference.svg" alt="Furosemide_Tilstone1978_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 40 mg, single dose, first-order absorption (ka 4.51 /h, F 43.4). _The paper's dose was not captured; the default is the WHO ATC DDD 40 mg oral (C03CA01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_furosemide/Furosemide_Tilstone1978_reference/Furosemide_Tilstone1978_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Furosemide_Tilstone1978_reference_params.json` · controls `Furosemide_Tilstone1978_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 09:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 18:19 UTC</sub>

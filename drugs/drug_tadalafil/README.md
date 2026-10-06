@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;tadalafil&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tadalafil_Kohno2014_reference&quot;,&quot;label&quot;:&quot;Kohno_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tadalafil_Na2019_group_t&quot;,&quot;label&quot;:&quot;Na_2019_group_t&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tadalafil
 
@@ -20,19 +21,35 @@ Tadalafil is used to treat erectile dysfunction, enlarged prostate, and pulmonar
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| tadalafil | parent | 389.404 | C22H19N3O4 | DrugBank | [110635](https://pubchem.ncbi.nlm.nih.gov/compound/110635) | Ferguson-Sells_2022 |
+| tadalafil | parent | 389.404 | C22H19N3O4 | DrugBank | [110635](https://pubchem.ncbi.nlm.nih.gov/compound/110635) | Ferguson-Sells_2022, Kohno_2014, Na_2019 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 06:57 | 4:22 | 0/1/0 | 0/0/0 | 0/0/0 | 30,314/16,626 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 16:55 | 15:50 | 2/2/1 | 1/0/2 | 0/0/0 | 242,270/49,661 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ferguson-Sells_2022_reference](drugs/drug_tadalafil/Tadalafil_FergusonSells2022_reference.md) | — | 1-compartment (no model) | 2 | Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> | [Kohno_2014_reference](drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Kohno H et al., Plasma concentrations of tadalafil in c…, Therapeutic drug monitoring (2014) | [10.1097/FTD.0000000000000055](https://doi.org/10.1097/FTD.0000000000000055) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Na_2019_group_t](drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md) | ▶ model + simulator | 1-compartment, oral | 3 | Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019) | [10.3390/pharmaceutics11070354](https://doi.org/10.3390/pharmaceutics11070354) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Na_2019_group_n](drugs/drug_tadalafil/Tadalafil_Na2019_group_n.md) | — | 1-compartment (no model) | 2 | Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019) | [10.3390/pharmaceutics11070354](https://doi.org/10.3390/pharmaceutics11070354) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ferguson-Sells_2022_reference](drugs/drug_tadalafil/Tadalafil_FergusonSells2022_reference.md) | — | 1-compartment (no model) | 2 | Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trocóniz_2007_reference](drugs/drug_tadalafil/Tadalafil_Trocniz2007_reference.md) | — | 1-compartment (no model) | 0 | Trocóniz IF et al., Tadalafil population pharmacokinetics i…, European journal of clinica… (2007) | [10.1007/s00228-007-0297-1](https://doi.org/10.1007/s00228-007-0297-1) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Staab_2004_IIEF_Q3](drugs/drug_tadalafil/pd_Staab_2004_IIEF_Q3.md) | IIEF question 3 ← tadalafil · direct Emax (saturable) effect | — | Staab A et al., Population dose-response model for tada…, Pharmaceutical research (2004) | [10.1023/b:pham.0000036922.03519.40](https://doi.org/10.1023/b:pham.0000036922.03519.40) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Staab_2004_IIEF_Q4](drugs/drug_tadalafil/pd_Staab_2004_IIEF_Q4.md) | IIEF question 4 ← tadalafil · direct Emax (saturable) effect | — | Staab A et al., Population dose-response model for tada…, Pharmaceutical research (2004) | [10.1023/b:pham.0000036922.03519.40](https://doi.org/10.1023/b:pham.0000036922.03519.40) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Staab_2004_SEP_Q2](drugs/drug_tadalafil/pd_Staab_2004_SEP_Q2.md) | SEP question 2 ← tadalafil · direct Emax (saturable) effect | — | Staab A et al., Population dose-response model for tada…, Pharmaceutical research (2004) | [10.1023/b:pham.0000036922.03519.40](https://doi.org/10.1023/b:pham.0000036922.03519.40) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Staab_2004_SEP_Q3](drugs/drug_tadalafil/pd_Staab_2004_SEP_Q3.md) | SEP question 3 ← tadalafil · direct Emax (saturable) effect | — | Staab A et al., Population dose-response model for tada…, Pharmaceutical research (2004) | [10.1023/b:pham.0000036922.03519.40](https://doi.org/10.1023/b:pham.0000036922.03519.40) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">reptile</span> | [Campos_2019_aortic_ring_relaxation](drugs/drug_tadalafil/pd_Campos_2019_aortic_ring_relaxation.md) | aortic ring relaxation ← tadalafil · direct Emax (saturable) effect | model (no simulator) | Campos R et al., Pharmacological and transcriptomic char…, Comparative biochemistry an… (2019) | [10.1016/j.cbpc.2019.04.015](https://doi.org/10.1016/j.cbpc.2019.04.015) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Mónica_2012_relaxation](drugs/drug_tadalafil/pd_M_nica_2012_relaxation.md) | relaxation ← tadalafil · direct Emax (saturable) effect | model (no simulator) | Mónica FZ et al., Immunohistochemical and functional char…, Comparative biochemistry an… (2012) | [10.1016/j.cbpc.2011.11.003](https://doi.org/10.1016/j.cbpc.2011.11.003) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Staab_2004_IIEF_EF](drugs/drug_tadalafil/pd_Staab_2004_IIEF_EF.md) | IIEF EF domain score ← tadalafil · direct Emax (saturable) effect | model (no simulator) | Staab A et al., Population dose-response model for tada…, Pharmaceutical research (2004) | [10.1023/b:pham.0000036922.03519.40](https://doi.org/10.1023/b:pham.0000036922.03519.40) |
 
 ## ADME sites
 
@@ -57,8 +74,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 20 matched, 20 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 2  ·  needs_review 1  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -67,18 +84,30 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kim_2018.pdf` | Kim JS et al., Enhanced Bioavailability of Tadalafil a…, Pharmaceutics (2018) | popPK | 9 | [10.3390/pharmaceutics10040187](https://doi.org/10.3390/pharmaceutics10040187) | [30326564](https://pubmed.ncbi.nlm.nih.gov/30326564) | The paper describes a pharmacokinetic study of tadalafil in dogs using a one-compartment model, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence. |
-| `Na_2019.pdf` | Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019) | popPK | 9 | [10.3390/pharmaceutics11070354](https://doi.org/10.3390/pharmaceutics11070354) | [31330787](https://pubmed.ncbi.nlm.nih.gov/31330787) | The study reports quantitative PK parameters (clearance reduction, exposure increase) for tadalafil in rats, but specific numeric values for CL, V, or ka are not explicitly listed in the provided text. |
+| `Kohno_2014.pdf` | Kohno H et al., Plasma concentrations of tadalafil in c…, Therapeutic drug monitoring (2014) | popPK | 10 | [10.1097/FTD.0000000000000055](https://doi.org/10.1097/FTD.0000000000000055) | [24872209](https://pubmed.ncbi.nlm.nih.gov/24872209) | The study reports quantitative population PK parameters (CL/F and V/F) for tadalafil in children, with specific mean values provided in the abstract. |
+| `Trocóniz_2007.pdf` | Trocóniz IF et al., Tadalafil population pharmacokinetics i…, European journal of clinica… (2007) | popPK | 10 | [10.1007/s00228-007-0297-1](https://doi.org/10.1007/s00228-007-0297-1) | [17431603](https://pubmed.ncbi.nlm.nih.gov/17431603) | The abstract explicitly reports quantitative population PK parameters (ka, CL/F, V) for tadalafil in humans. |
 
-<sub>queue written 2026-09-30T06:53:11.804824+00:00</sub>
+<sub>queue written 2026-10-06T16:41:47.282420+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2018 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of tadalafil in dogs using a one-compartment model, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence. |
-| popPK | Kim_2022 | irrelevant | 2 | 0 | The study reports only relative geometric mean ratios (GMRs) for AUC and Cmax in a drug interaction study, lacking absolute quantitative disposition parameters (CL, V, ka) or a compartmental model for tadalafil. |
-| popPK | Na_2019 | relevant | 9 | 2 | The study reports quantitative PK parameters (clearance reduction, exposure increase) for tadalafil in rats, but specific numeric values for CL, V, or ka are not explicitly listed in the provided text. |
+| popPK | Blount_2004 | irrelevant | 0 | 0 | The study is an in-vitro biochemical analysis of PDE5 binding affinity and does not report pharmacokinetic disposition parameters. |
+| popPK | Campos_2019 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of the NO pathway in tortoise aortic rings, not a pharmacokinetic study of tadalafil. |
+| popPK | Clift_2026 | irrelevant | 0 | 0 | The study is a clinical outcome analysis of testosterone therapy where tadalafil is only a co-administered adjunct, with no pharmacokinetic parameters reported. |
+| popPK | Dustan_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel blockade, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Estancial_2015 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of BAY 60-2770 in rabbit tissue, using tadalafil only as a PDE-5 inhibitor comparator, and reports no pharmacokinetic parameters for tadalafil. |
+| popPK | Friedman_2007 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of tadalafil's effect on digital blood flow in Raynaud's phenomenon and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | González-Corrochano_2013 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of PDE5 inhibitors on vascular relaxation in tissues and animals, not a pharmacokinetic study reporting disposition parameters for tadalafil. |
+| popPK | Jacobsen_2019 | irrelevant | 0 | 0 | The study is an in-vitro formulation screening (dissolution/permeation) and does not report pharmacokinetic parameters (CL, V, ka, etc.) for tadalafil. |
+| popPK | Kim_2022 | irrelevant | 2 | 0 | The study reports only geometric mean ratios (GMRs) for AUC and Cmax in a drug interaction study, lacking absolute quantitative disposition parameters (CL, V, ka) or a compartmental model for tadalafil. |
+| popPK | Mehanna_2018 | irrelevant | 0 | 0 | The study investigates the antinociceptive (pain-relieving) effects and mechanism of action of tadalafil in mice, not its pharmacokinetic disposition parameters. |
+| popPK | Montorsi_2014 | irrelevant | 0 | 0 | The study is a clinical efficacy trial measuring erectile function scores (IIEF-EF) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Mónica_2012 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of the NO-PDE5 pathway in snake aorta, not a pharmacokinetic study of tadalafil. |
+| popPK | Rubio-Aurioles_2012 | irrelevant | 0 | 0 | The study is a clinical efficacy trial measuring sexual self-confidence and treatment outcomes, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Staab_2004 | irrelevant | 0 | 0 | The study reports population dose-response (pharmacodynamic) parameters (Emax, ED50) for efficacy outcomes, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Takahiro_2015 | irrelevant | 2 | 8 | The study is an in-vitro mechanistic investigation of CYP3A-mediated metabolism (intrinsic clearance) rather than a pharmacokinetic study reporting in-vivo disposition parameters (CL, V, ka) for tadalafil. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 03:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 16:42 UTC</sub>

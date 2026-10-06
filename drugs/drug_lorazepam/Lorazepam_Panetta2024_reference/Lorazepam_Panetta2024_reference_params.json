@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 2.5 mg oral (N05BA06)",
+ "model_id": "Lorazepam_Panetta2024_reference",
+ "molar_masses": {
+  "central.C": 0.321158
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.611111111111111e-05,
+  "F": 1.0,
+  "MM": 0.321158,
+  "Tlag": 2880.0,
+  "VdPerKg": 0.013507747568551809,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "ka": 0.00013333333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 20777.55511022044
+ },
+ "reference_peaks": {
+  "central.C": 1.955967994024903e-06
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

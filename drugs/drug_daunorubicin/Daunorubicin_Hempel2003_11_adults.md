@@ -1,0 +1,217 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Hempel_2003 \u00b7 11_adults&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# daunorubicin — `Daunorubicin_Hempel2003_11_adults`
+
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+**Model:** No model was generated from this record.
+
+### Reviewer guidance
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposomal daunorubicin, the second reading daunorubicin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+
+> **Dose compound ≠ measured compound:** dosed `daunorubicin (liposomal Daunoxome)`, measured `daunorubicin`.
+
+## Citation
+Hempel G et al., Population pharmacokinetics of liposoma…, British journal of clinical… (2003)
+  ·  DOI: [10.1046/j.1365-2125.2003.01886.x](https://doi.org/10.1046/j.1365-2125.2003.01886.x)
+
+## Model component
+<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Hempel2003_11_adults" status="rejected" stale="false" population="paediatric oncology patients with relapsed AML and other malignancies" measured-compound="daunorubicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
+
+**Parameterization:** mechanistic.
+
+## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | `Q63` · V1 | 0.222 | L | 0.000222 | L | not captured | llm (0.6) | tab_1:row2:col5, tab_1:row2:col8 | — | not captured |
+| 2 | `Q30` · Q | 0.208 | L/h | 5.7777777777777775e-08 | L/h | not captured | llm (0.6) | tab_1:row3:col5 | — | not captured |
+| Dose (mg m -2 ) | `Q900` · equation variable | 100 | mg m -2 | not captured | [mg] · [m-2] | not captured | llm (0.6) | Hempel_2003_table_2:row0:col3, Hempel_2003_table_2:row0:col5 | — | not captured |
+| V (l m -2 ) | `Q61` · V | 3.2 | l m -2 | not captured | [l] · [m-2] | not captured | exact (1.0) | Hempel_2003_table_2:row1:col5 | — | not captured |
+| CL (l h -1 m -2 ) | `Q22` · CL | 0.39 | l h -1 m -2 | not captured | [l] / [[h] · [m-2]] | not captured | exact (1.0) | Hempel_2003_table_2:row2:col5 | — | not captured |
+| t 1/2 (h) | `Q57` · t1/2z | 7.4 | h | 26640.0 | [h] | not captured | space_fold (0.95) | Hempel_2003_table_2:row3:col3, Hempel_2003_table_2:row3:col5 | — | not captured |
+| AUC (mg l -1 h) at 60 mg m -2 | `Q88` · AUC | 172.4 | mg·h/L | not captured | mg·h/L | not captured | llm_confirmed (0.6) | Hempel_2003_table_2:row4:col5 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- dropped duplicate Q30 ('3', value '0.17') — already have one for this compound
+- dropped duplicate Q30 ('4', value '0.217') — already have one for this compound
+- dropped unlinked row (NIL): '5' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col5', 'tab_1:row8:col8'])
+- dropped duplicate Q30 ('6', value '0.228') — already have one for this compound
+- dropped duplicate Q30 ('7', value '2.16') — already have one for this compound
+- dropped duplicate Q30 ('8', value '0.194') — already have one for this compound
+- dropped duplicate Q30 ('9', value '0.25') — already have one for this compound
+- dropped duplicate Q30 ('10', value '0.0065') — already have one for this compound
+- dropped duplicate Q30 ('11', value '0.00917') — already have one for this compound
+- dropped duplicate Q30 ('12', value '0.012') — already have one for this compound
+- dropped duplicate Q30 ('13', value '0.00612') — already have one for this compound
+- dropped duplicate Q30 ('14', value '0.00645') — already have one for this compound
+- dropped duplicate Q30 ('15', value '0.00641') — already have one for this compound
+- unit_dimension_unknown: 'mg m -2' (equation variable)
+- unit_dimension_unknown: 'l m -2' (V)
+- unit_dimension_unknown: 'l h -1 m -2' (CL)
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
+- covariate age for equation variable from footnote/prose kept as documentation only (['tab_1:footnote', 'tab_1:footnote'])
+- covariate height for equation variable from footnote/prose kept as documentation only (['tab_1:footnote', 'tab_1:footnote'])
+- implicit units: '1' → L (from the popPK convention: 'No unit is stated for V1. As a volume parameter, its conventional unit is L.')
+- implicit units: '2' → L/h (from the popPK convention: 'No unit is stated for Q. As an intercompartmental clearance, its conventional unit is L/h.')
+- implicit units: 'V (l m -2 )' — the LLM proposed 'L/m2', whose dimension does not fit Q61; left unset
+- implicit units: 'CL (l h -1 m -2 )' — the LLM proposed 'L/h/m2', whose dimension does not fit Q22; left unset
+- implicit units: 'AUC (mg l -1 h) at 60 mg m -2' → mg·h/L (from the paper text: 'The parameter is labeled “AUC (mg l -1 h)”.')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daunorubicin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- population split: '11 adults' subgroup of Hempel_2003 (paper reports 3 populations: 11 adults, 14 adults, 18 adults)
+
+**Extraction notes:**
+- unparsed cell tab_1:row2:col6 = '15%'
+- unparsed cell tab_1:row2:col7 = '72%'
+- unparsed cell tab_1:row2:col9 = '9% 46%'
+- unparsed cell tab_1:row2:col10 = '30%'
+- unparsed cell tab_1:row3:col7 = '76% V 1 2.34V 2 2.0'
+- unparsed cell tab_1:row3:col9 = '43%'
+- unparsed cell tab_1:row3:col10 = '28%'
+- unparsed cell tab_1:row5:col6 = '15%'
+- unparsed cell tab_1:row5:col7 = '41% V 1 1.56V 2 32.5 10% 41%'
+- unparsed cell tab_1:row5:col8 = '33%'
+- unparsed cell tab_1:row7:col6 = '17%'
+- unparsed cell tab_1:row7:col7 = '69%'
+- unparsed cell tab_1:row7:col9 = '10% 52%'
+- unparsed cell tab_1:row7:col10 = '18%'
+- unparsed cell tab_1:row8:col6 = '17%'
+- unparsed cell tab_1:row8:col7 = '74%'
+- unparsed cell tab_1:row8:col9 = '11% 50%'
+- unparsed cell tab_1:row8:col10 = '25%'
+- unparsed cell tab_1:row9:col6 = '14%'
+- unparsed cell tab_1:row9:col7 = '66%'
+- unparsed cell tab_1:row9:col9 = '8% 46%'
+- unparsed cell tab_1:row9:col10 = '27%'
+- unparsed cell tab_1:row10:col6 = '18%'
+- unparsed cell tab_1:row10:col7 = '106% 26.6'
+- unparsed cell tab_1:row10:col8 = '17% 64%'
+- unparsed cell tab_1:row10:col9 = '37%'
+- unparsed cell tab_1:row11:col6 = '7%'
+- unparsed cell tab_1:row11:col7 = '46%'
+- unparsed cell tab_1:row11:col9 = '6% 24%'
+- unparsed cell tab_1:row11:col10 = '26%'
+- unparsed cell tab_1:row12:col6 = '7%'
+- unparsed cell tab_1:row12:col7 = '27%'
+- unparsed cell tab_1:row12:col9 = '9% 34%'
+- unparsed cell tab_1:row12:col10 = '42%'
+- unparsed cell tab_1:row13:col6 = '5%'
+- unparsed cell tab_1:row13:col7 = '47%'
+- unparsed cell tab_1:row13:col9 = '13% 26%'
+- unparsed cell tab_1:row13:col10 = '25%'
+- unparsed cell tab_1:row14:col6 = '61%'
+- unparsed cell tab_1:row14:col7 = '48%'
+- unparsed cell tab_1:row14:col9 = '7% 27%'
+- unparsed cell tab_1:row14:col10 = '25%'
+- unparsed cell tab_1:row15:col6 = '13%'
+- unparsed cell tab_1:row15:col7 = '76%'
+- unparsed cell tab_1:row15:col9 = '10% 39%'
+- unparsed cell tab_1:row15:col10 = '26%'
+- unparsed cell tab_1:row16:col6 = '7%'
+- unparsed cell tab_1:row16:col7 = '57%'
+- unparsed cell tab_1:row16:col9 = '6% 26%'
+- unparsed cell tab_1:row16:col10 = '23%'
+- unparsed cell tab_1:row17:col6 = '7%'
+- unparsed cell tab_1:row17:col7 = '49%'
+- unparsed cell tab_1:row17:col9 = '7% 26%'
+- unparsed cell tab_1:row17:col10 = '24%'
+- unparsed cell tab_1:row18:col6 = '5%'
+- unparsed cell tab_1:row18:col7 = '51%'
+- unparsed cell tab_1:row18:col9 = '1% 27%'
+- unparsed cell tab_1:row18:col10 = '22%'
+- unparsed cell Hempel_2003_table_2:row1:col3 = '5.58 abs'
+- unparsed cell Hempel_2003_table_2:row2:col3 = '0.9 abs'
+- companion parameter table 2 transcribed (22 record(s))
+- LLM selected parameter table(s) 2
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[12]` | not captured | 0.15 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[2]` | not captured | 0.208 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | liposomal daunorubicin | daunorubicin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col5'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Hempel_2003_table_2:row3:col3', 'Hempel_2003_table_2:row3:col5'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col5', 'tab_1:row2:col8'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Hempel_2003_table_2:row4:col5'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l h -1 m -2 | not captured | not captured | ['Hempel_2003_table_2:row2:col5'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | l m -2 | not captured | not captured | ['Hempel_2003_table_2:row1:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.39 | not captured | not captured | ['Hempel_2003_table_2:row2:col5'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.222 L | not captured | not captured | ['tab_1:row2:col5', 'tab_1:row2:col8'] |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## Raw artifacts
+
+- scholar stages: `../../../knowledgebase/drugs/drug_daunorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hempel_2003` / `Hempel_2003::11_adults`)
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:52 UTC</sub>

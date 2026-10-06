@@ -18,11 +18,17 @@ Aprocitentan is a medicine used to treat high blood pressure (hypertension). It 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 06:38 | 2:29 | 0/0/0 | 0/0/0 | 0/0/0 | 1,682/142 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/3 | 2/0 | 0 |
+| 2026-10-06 15:04 | 1:42 | 0/0/0 | 1/0/0 | 0/0/0 | 57,050/1,891 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/4 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Sidharta_2019_QTcF](drugs/drug_aprocitentan/pd_Sidharta_2019_QTcF.md) | ΔQTcF ← aprocitentan · direct linear effect | — | Sidharta PN et al., Single- and multiple-dose tolerability,…, Drug design, development an… (2019) | [10.2147/DDDT.S199051](https://doi.org/10.2147/DDDT.S199051) |
 
 ## ADME sites
 
@@ -56,48 +62,46 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 30 matched, 30 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 3  ·  **relevant:** 3
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bartolucci_2021.pdf` | Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharmacokinetics (2021) | popPK | 10 | [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3) | [34159557](https://pubmed.ncbi.nlm.nih.gov/34159557) | The paper is a population PK study for aprocitentan, but specific numeric parameter values (CL, V, Q) are not present in the provided text, only qualitative descriptions and macitentan values. |
-| `Brussee_2024.pdf` | Brussee JM et al., Population pharmacokinetics of the dual…, Journal of pharmacokinetics… (2024) | popPK | 10 | [10.1007/s10928-024-09902-1](https://doi.org/10.1007/s10928-024-09902-1) | [38332190](https://pubmed.ncbi.nlm.nih.gov/38332190) | The paper is a population PK study for aprocitentan, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Sidharta_2019_2.pdf` | Sidharta PN et al., Single-Dose Pharmacokinetics and Tolera…, Clinical drug investigation (2019) | popPK | 9 | [10.1007/s40261-019-00837-x](https://doi.org/10.1007/s40261-019-00837-x) | [31435905](https://pubmed.ncbi.nlm.nih.gov/31435905) | The study reports quantitative PK parameters (tmax, t1/2, GMRs) for aprocitentan in humans, though specific clearance and volume values are not explicitly listed in the text. |
-| `Fontes_2021.pdf` | Fontes MSC et al., Multiple-Dose Pharmacokinetics, Safety,…, Clinical pharmacology in dr… (2021) | popPK | 8 | [10.1002/cpdd.881](https://doi.org/10.1002/cpdd.881) | [33063477](https://pubmed.ncbi.nlm.nih.gov/33063477) | The study reports quantitative PK parameters (half-life, accumulation index) for aprocitentan, but lacks detailed compartmental model parameters (CL, V, Q) typically required for population PK extraction. |
-| `Sidharta_2019.pdf` | Sidharta PN et al., Single- and multiple-dose tolerability,…, Drug design, development an… (2019) | popPK | 8 | [10.2147/DDDT.S199051](https://doi.org/10.2147/DDDT.S199051) | [30962677](https://pubmed.ncbi.nlm.nih.gov/30962677) | The paper is a primary PK study for aprocitentan, but the provided evidence only contains qualitative descriptions and a half-life value, lacking specific numeric values for clearance, volume, or other compartmental parameters. |
+| `Bartolucci_2021.pdf` | Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharmacokinetics (2021) | popPK | 10 | [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3) | [34159557](https://pubmed.ncbi.nlm.nih.gov/34159557) | The paper describes a population PK model for aprocitentan (active metabolite of macitentan) in humans, but specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided abstract text, likely residing in the full text or supplementary tables. |
+| `Brussee_2024.pdf` | Brussee JM et al., Population pharmacokinetics of the dual…, Journal of pharmacokinetics… (2024) | popPK | 10 | [10.1007/s10928-024-09902-1](https://doi.org/10.1007/s10928-024-09902-1) | [38332190](https://pubmed.ncbi.nlm.nih.gov/38332190) | The paper describes a population PK model for aprocitentan, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Sidharta_2019_2.pdf` | Sidharta PN et al., Single-Dose Pharmacokinetics and Tolera…, Clinical drug investigation (2019) | popPK | 9 | [10.1007/s40261-019-00837-x](https://doi.org/10.1007/s40261-019-00837-x) | [31435905](https://pubmed.ncbi.nlm.nih.gov/31435905) | The study reports quantitative PK parameters (tmax, t1/2, GMR for Cmax and AUC) for aprocitentan in humans, though specific clearance (CL) and volume (V) values are not explicitly listed in the text. |
+| `Fontes_2021.pdf` | Fontes MSC et al., Multiple-Dose Pharmacokinetics, Safety,…, Clinical pharmacology in dr… (2021) | popPK | 8 | [10.1002/cpdd.881](https://doi.org/10.1002/cpdd.881) | [33063477](https://pubmed.ncbi.nlm.nih.gov/33063477) | The study reports quantitative PK parameters (tmax, t1/2, accumulation index) for aprocitentan in humans, though full compartmental model parameters (CL, V) are not explicitly listed in the provided text. |
 | `Nguyen_2025.pdf` | Nguyen T et al., Aprocitentan: The First Endothelin Rece…, American journal of therape… (2025) | pgx | 7 | [10.1097/MJT.0000000000001950](https://doi.org/10.1097/MJT.0000000000001950) | [40638911](https://www.ncbi.nlm.nih.gov/pubmed/40638911) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
 
-<sub>queue written 2026-09-30T06:38:40.711576+00:00</sub>
+<sub>queue written 2026-10-06T15:03:54.839052+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Bajinka_2025 | not_relevant | 0 | 0 | The paper is a review of 3PM in hypertension that mentions aprocitentan's general efficacy but does not report any pharmacogenomic effects on its PK or PD parameters. |
-| popPK | Bartolucci_2021 | relevant | 10 | 2 | The paper is a population PK study for aprocitentan, but specific numeric parameter values (CL, V, Q) are not present in the provided text, only qualitative descriptions and macitentan values. |
-| popPK | Berger_2026 | irrelevant | 2 | 1 | The study focuses on macitentan as the subject drug, with aprocitentan serving only as a metabolite for exposure assessment (Ctrough) rather than providing compartmental PK parameters (CL, V, etc.) for aprocitentan itself. |
-| popPK | Brussee_2024 | relevant | 10 | 0 | The paper is a population PK study for aprocitentan, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report original quantitative pharmacokinetic parameters for aprocitentan. |
+| popPK | Bartolucci_2021 | relevant | 10 | 2 | The paper describes a population PK model for aprocitentan (active metabolite of macitentan) in humans, but specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided abstract text, likely residing in the full text or supplementary tables. |
+| popPK | Berger_2026 | irrelevant | 2 | 0 | The study focuses on macitentan as the subject drug, reporting only steady-state trough concentrations for macitentan and its metabolite aprocitentan, without providing compartmental PK parameters (CL, V, Q, ka) or a population PK model for aprocitentan. |
+| popPK | Brussee_2024 | relevant | 10 | 0 | The paper describes a population PK model for aprocitentan, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for aprocitentan. |
 | PD | Cabré_2026 | not_relevant | 1 | 0 | The text is a narrative review of cardiovascular pharmacotherapy that mentions endothelin pathway modulators but does not provide specific numeric PD parameters or exposure-response data for aprocitentan. |
-| popPK | Fontes_2021 | relevant | 8 | 4 | The study reports quantitative PK parameters (half-life, accumulation index) for aprocitentan, but lacks detailed compartmental model parameters (CL, V, Q) typically required for population PK extraction. |
 | popPK | Gueneau_2021 | irrelevant | 1 | 0 | The study focuses on fluid homeostasis and body weight, and while it mentions a half-life of ~44 hours, it does not report quantitative disposition parameters like clearance, volume, or compartmental model values. |
-| popPK | Naseralallah_2024 | irrelevant | 1 | 0 | The paper is a narrative review summarizing efficacy and safety without reporting original quantitative pharmacokinetic parameter values. |
+| popPK | Naseralallah_2024 | irrelevant | 2 | 0 | This is a narrative review summarizing efficacy and safety, and while it mentions pharmacokinetics, it does not provide specific quantitative disposition parameters (CL, V, etc.) in the text. |
 | PD | Naseralallah_2024 | not_relevant | 2 | 0 | The text is a narrative review summarizing general efficacy and safety without providing specific numeric PD parameters, exposure-response curves, or detailed PK/PD modeling results. |
 | popPK | Nguyen_2025 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
 | PD | Nguyen_2025 | not_relevant | 1 | 0 | The text is a title indicating a review or overview article, which typically lacks the specific numeric PD parameters or detailed exposure-response data required for extraction. |
 | PGx | Nguyen_2025 | not_relevant | 0 | 0 | The paper is a general review of aprocitentan for resistant hypertension and does not report pharmacogenomic effects on PK or PD parameters. |
-| popPK | Phillips_2025 | irrelevant | 1 | 0 | The paper is a clinical review of efficacy and safety that does not report original quantitative pharmacokinetic parameter values for aprocitentan. |
-| popPK | Sidharta_2019 | relevant | 8 | 2 | The paper is a primary PK study for aprocitentan, but the provided evidence only contains qualitative descriptions and a half-life value, lacking specific numeric values for clearance, volume, or other compartmental parameters. |
-| popPK | Sidharta_2020 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of rosuvastatin as the subject drug to assess a drug-drug interaction, and no quantitative PK parameters for aprocitentan are reported in the evidence. |
-| popPK | Sidharta_2020_2 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of midazolam as the subject drug to assess drug-drug interactions, with aprocitentan serving only as the co-administered agent. |
-| popPK | Sidharta_2025 | irrelevant | 2 | 0 | The paper is a QT/QTc safety study that reports concentration-QT modeling but does not provide quantitative population pharmacokinetic parameters (CL, V, Q, ka) for aprocitentan. |
-| popPK | Sidhu_2026 | irrelevant | 1 | 0 | The paper is a review article summarizing the drug's profile and does not report original quantitative pharmacokinetic parameter values. |
+| popPK | Phillips_2025 | irrelevant | 2 | 0 | This is a narrative review of clinical efficacy and safety data that does not report original quantitative pharmacokinetic parameter values (CL, V, etc.) for aprocitentan. |
+| popPK | Sidharta_2019 | relevant | 9 | 4 | The study reports non-compartmental PK parameters (t1/2, AUC, Cmax) for aprocitentan in humans, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text, only ratios and half-life. |
+| popPK | Sidharta_2020 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of rosuvastatin as the subject drug, with aprocitentan acting as a co-administered agent to assess drug-drug interactions, and no quantitative PK parameters for aprocitentan are reported. |
+| popPK | Sidharta_2020_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of midazolam (the probe drug) to assess drug-drug interactions, not the disposition parameters of aprocitentan itself. |
+| popPK | Sidharta_2025 | irrelevant | 2 | 0 | This is a QT/QTc safety study that reports concentration-QT modeling and Cmax values, but does not report quantitative disposition parameters (CL, V, ka, t1/2) or a population PK model for aprocitentan. |
+| popPK | Sidhu_2026 | irrelevant | 2 | 0 | The paper is a review summarizing the drug's profile but does not provide original quantitative pharmacokinetic parameter values (CL, V, etc.) in the text. |
 | PD | Sidhu_2026 | not_relevant | 2 | 0 | The text is a narrative review summarizing the drug's profile and trial outcomes but does not provide specific numeric PD parameters (e.g., Emax, EC50) or detailed exposure-response data in the provided excerpt. |
 | popPK | Verweij_2020 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting blood pressure outcomes and adverse events, with no pharmacokinetic parameters (CL, V, t1/2) reported for aprocitentan. |
 | popPK | Zheng_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy (blood pressure) and safety, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for aprocitentan. |

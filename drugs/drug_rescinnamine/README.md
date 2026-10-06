@@ -18,7 +18,7 @@ Rescinnamine is a Rauwolfia alkaloid used to treat high blood pressure, alone or
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 05:33 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 4,416/489 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 12:42 | 0:25 | 0/0/0 | 0/0/0 | 0/0/0 | 21,215/127 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -54,7 +54,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Fadaeinasab_2015.pdf` | Fadaeinasab M et al., New Indole Alkaloids from the Bark of R…, Cellular physiology and bio… (2015) | pd | 4 | [10.1159/000438560](https://doi.org/10.1159/000438560) | [26584298](https://www.ncbi.nlm.nih.gov/pubmed/26584298) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T05:33:37.898046+00:00</sub>
+<sub>queue written 2026-10-06T12:41:56.386071+00:00</sub>
 
 ## Screened and excluded
 
@@ -62,7 +62,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Fadaeinasab_2015 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
 | PD | Fadaeinasab_2015 | not_relevant | 0 | 0 | The paper reports the isolation of new indole alkaloids and their cholinesterase inhibitory activity, but does not mention rescinnamine or provide any pharmacodynamic or exposure-response data for it. |
-| popPK | Fiscon_2021 | irrelevant | 0 | 0 | The paper is a network-based drug repurposing algorithm study for COVID-19 and does not contain any pharmacokinetic data or mention of rescinnamine. |
+| popPK | Fiscon_2021 | irrelevant | 0 | 0 | The paper is an in-silico drug repurposing study for COVID-19 and does not contain any pharmacokinetic data for rescinnamine. |
 | PD | Fiscon_2021 | not_relevant | 0 | 0 | The paper is a computational network-based drug repurposing study that does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for rescinnamine or any other drug. |
 | popPK | Gupta_2022 | irrelevant | 0 | 0 | The paper is an in-vitro study on banana sap bioactivity where rescinnamine is only identified as a compound present, with no pharmacokinetic parameters reported. |
 | PD | Gupta_2022 | not_relevant | 2 | 1 | The paper reports in vitro bioactivity (MIC, IC50, cytotoxicity %) for banana sap extracts containing rescinnamine, but does not provide a dose-response curve or specific PD parameters for rescinnamine itself. |

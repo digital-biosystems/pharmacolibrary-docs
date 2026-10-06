@@ -33,7 +33,7 @@ Schober O; Mariss P; Pertynski T; Zimmermann P; Börner P et al. (1978). RoFo : 
 <dbs-pgx drug="bleomycin" model-id="Bleomycin_Schober1978v2_reference" status="needs_review" stale="false" population="patients with cervical carcinoma" measured-compound="57Co-Bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,7 +45,8 @@ Schober O; Mariss P; Pertynski T; Zimmermann P; Börner P et al. (1978). RoFo : 
 | Kontrast K | `Q87` · Frel | 0.5 | not captured | not captured | not captured | not captured | llm (0.5) | fig_7:caption, fig_7:caption, fig_7:caption | — | not captured |
 | Exkretion | `Q44` · fe | 75 | % | not captured | [%] | not captured | llm (0.5) | fig_7:caption, fig_7:caption | — | not captured |
 | Retentionswerte | `Q88` · AUC | 48 | Std. | not captured | [s] · [td] | not captured | llm (0.5) | fig_7:caption | — | not captured |
-| Doxorubicin CL (L/min) | `Q22` · CL | 0.962 | L/min | 1.603333333333333e-05 | L/h | not captured | review_gapfill (0.7) | Wilde_2007:review | — | not captured |
+| CL | `Q22` · CL | 218.0 | mL/day | 2.523148148148148e-09 | L/h | not captured | review_gapfill (0.7) | Han_2024:review | — | not captured |
+| Vz | `Q61` · V | 6290.0 | mL | 0.00629 | L | not captured | review_gapfill (0.7) | Han_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,7 +65,8 @@ Schober O; Mariss P; Pertynski T; Zimmermann P; Börner P et al. (1978). RoFo : 
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=57Co-Bleomycin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- gap-filled Q22 (CL) from Wilde_2007's review values (primary lacked it)
+- gap-filled Q22 (CL) from Han_2024's review values (primary lacked it)
+- gap-filled Q61 (V) from Han_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -105,12 +107,14 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wilde_2007:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2024:review'] |
 | C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['fig_7:caption', 'fig_7:caption'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2024:review'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | Std. | not captured | not captured | ['fig_7:caption'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.962 | not captured | not captured | ['Wilde_2007:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 218.0 | not captured | not captured | ['Han_2024:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 57.7 L/h | not captured | not captured | ['Wilde_2007:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00908 L/h | not captured | not captured | ['Han_2024:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.29 L | not captured | not captured | ['Han_2024:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -17,7 +17,7 @@ Erythrityl tetranitrate is an organic nitrate vasodilator that was used to treat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:35 | 0:58 | 0/0/0 | 0/0/0 | 0/0/0 | 37,647/645 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-06 10:01 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 37,647/645 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 

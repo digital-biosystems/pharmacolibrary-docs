@@ -18,7 +18,7 @@ Heptaminol is a cardiac drug classified as a vasodilator used in cardiac disease
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:47 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 9,159/578 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 10:12 | 0:48 | 0/0/0 | 0/0/0 | 0/0/0 | 9,159/578 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -47,7 +47,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kees_1987.pdf` | Kees F et al., [Bioavailability of heptaminol in healt…, Arzneimittel-Forschung (1987) | popPK | 10 | not captured | [3435592](https://pubmed.ncbi.nlm.nih.gov/3435592) | The text explicitly reports quantitative pharmacokinetic parameters including clearance (700 ml/min), half-life (2.5-2.7 h), and absorption details for heptaminol in humans. |
 | `Brodie_1983.pdf` | Brodie RR et al., Determination of heptaminol in human pl…, Journal of chromatography (1983) | popPK | 8 | [10.1016/s0378-4347(00)84421-7](https://doi.org/10.1016/s0378-4347(00)84421-7) | [6874820](https://pubmed.ncbi.nlm.nih.gov/6874820) | The study reports quantitative PK parameters (Cmax, Tmax, t1/2, % excretion) for heptaminol in humans, though full compartmental model parameters (CL, V) are not explicitly listed. |
 
-<sub>queue written 2026-10-06T08:47:16.415859+00:00</sub>
+<sub>queue written 2026-10-06T10:11:58.259329+00:00</sub>
 
 ## Screened and excluded
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Aur\u00e9lie_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Aurlie2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,29 +23,29 @@ The record reports diazepam parameters CL 1.236 L/h, V1 7.44 L, V2 0.62 L, Q 93.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:24.121397+00:00) predates the upstream re-run (2026-10-06 19:03:40.449050+00:00). Current validate status: `extracted`.
+
 ## Citation
 Aurélie L et al., External Evaluation of Population Pharm…, Pharmaceuticals (Basel, Swi… (2023)
   ·  DOI: [10.3390/ph16111627](https://doi.org/10.3390/ph16111627)
 
 ## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Aurlie2023_reference" status="needs_review" stale="false" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="diazepam" model-id="Diazepam_Aurlie2023_reference" status="extracted" stale="true" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** V1/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 1.236 | L/h | 3.4333333333333336e-07 | L/h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
-| V1 * (L) | `Q63` · V1 | 7.44 | L | 0.00744 | L | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
-| V2 * (L) | `Q64` · V2 | 0.62 | L | 0.00062 | L | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
-| Q (L/h) | `Q30` · Q | 93.0 | L/h | 2.5833333333333332e-05 | L/h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
-| Tlag (h) | `Q83` · tlag | 84.2 | h | 303120.0 | h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
-| Ka (h−1) | `Q49` · kabs | 1.21 | h−1 | 0.0003361111111111111 | 1/h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
+| V1/F * (L) | `Q290` · V1/F | 20.46 | L | 0.020460000000000002 | L | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
+| V2 * (L) | `Q64` · V2 | 7.4 | L | 0.0074 | L | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
+| Q * (L/h) | `Q30` · Q | 4.6 | L/h | 1.2777777777777777e-06 | L/h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
+| Tlag (h) | `Q83` · tlag | 0.186 | h | 669.6 | h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
+| Ka * (h−1) | `Q49` · kabs | 1.03 | h−1 | 0.0002861111111111111 | 1/h | not captured | review (0.7) | Aurélie_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -86,16 +86,16 @@ _Every reader agrees on every compared field of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.236 | not captured | not captured | ['Aurélie_2023:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.24 L/h | not captured | not captured | ['Aurélie_2023:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 7.44 L | not captured | not captured | ['Aurélie_2023:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.62 L | not captured | not captured | ['Aurélie_2023:review'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 20.5 L | not captured | not captured | ['Aurélie_2023:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 7.4 L | not captured | not captured | ['Aurélie_2023:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -140,7 +140,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 1.21 /h, lag 5.05e+03 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N05BA01) (defined daily dose)._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 1.03 /h, lag 11.2 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N05BA01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_diazepam/Diazepam_Aurlie2023_reference/Diazepam_Aurlie2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_diazepam/Diazepam_Aurlie2023_reference/Diazepam_Aurlie2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -149,4 +149,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 19:03 UTC</sub>

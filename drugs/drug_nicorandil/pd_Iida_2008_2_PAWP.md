@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;nicorandil&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/&quot;},{&quot;label&quot;:&quot;Iida_2008_2 \u00b7 PD pulmonary artery wedge pressure&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pulmonary artery wedge pressure — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# pulmonary artery wedge pressure — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Nicorandil (concentrations from this paper's PK model) drives pulmonary artery wedge pressure (in unknown): disease-progression model.
+**As extracted:** Nicorandil (concentrations from this paper's PK model) drives pulmonary artery wedge pressure (in mmHg): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -22,10 +22,10 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Iida_2008_2`
-- **model family:** `disease_progression`
+- **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008)
@@ -34,33 +34,12 @@ Iida S et al., Population pharmacokinetic and pharmaco…, British journal of cl
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | POP_Emax | `Q320` · not captured | -11.7 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col2 |
-| PD (effect) | POP_Emax | `Q320` · not captured | 58.7 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col4 |
-| PD (effect) | POP_Emax — Confidence interval | `Q320` · not captured | -30.0 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col5 |
-| PD (effect) | POP_Emax | `Q320` · not captured | -7.48 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col6 |
-| PD (effect) | POP_EC50 | `Q321` · not captured | 423 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col2 |
-| PD (effect) | POP_EC50 | `Q321` · not captured | 107.1 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col4 |
-| PD (effect) | POP_EC50 — Confidence interval | `Q321` · not captured | 165 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col5 |
-| PD (effect) | POP_EC50 | `Q321` · not captured | 1552 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col6 |
-| PK (driver) | POP_CL | `Q22` · not captured | 26.3 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col2 |
-| PK (driver) | POP_CL | `Q22` · not captured | 13.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col4 |
-| PK (driver) | POP_CL — Confidence interval | `Q22` · not captured | 21.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col5 |
-| PK (driver) | POP_CL | `Q22` · not captured | 31.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col6 |
-| PK (driver) | POP_V1 | `Q63` · not captured | 18.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col2 |
-| PK (driver) | POP_V1 | `Q63` · not captured | 14.8 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col4 |
-| PK (driver) | POP_V1 — Confidence interval | `Q63` · not captured | 14.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col5 |
-| PK (driver) | POP_V1 | `Q63` · not captured | 23.3 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col6 |
-| PK (driver) | POP_Q | `Q30` · not captured | 71.6 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col2 |
-| PK (driver) | POP_Q | `Q30` · not captured | 76.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col4 |
-| PK (driver) | POP_Q — Confidence interval | `Q30` · not captured | 54.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col5 |
-| PK (driver) | POP_Q | `Q30` · not captured | 203 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col6 |
-| PK (driver) | POP_V2 | `Q64` · not captured | 24.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col2 |
-| PK (driver) | POP_V2 | `Q64` · not captured | 6.6 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col4 |
-| PK (driver) | POP_V2 — Confidence interval | `Q64` · not captured | 21.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col5 |
-| PK (driver) | POP_V2 | `Q64` · not captured | 25.4 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col6 |
-| PK (driver) | FV2 | `Q82` · not captured | 4.06 | not captured | not captured | llm (not captured) | tab_0:row14:col2 |
-| PK (driver) | FV2 | `Q82` · not captured | 219.1 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
-| PK (driver) | FV2 | `Q82` · not captured | 25.3 | not captured | not captured | llm (not captured) | tab_0:row14:col6 |
+| PD (effect) | Maximum effect of nicorandil on PAWP | `Q323` · not captured | -11.7 | mmHg | not captured | llm (not captured) | Iida_2008_2:pdv3 |
+| PD (effect) | Nicorandil concentration at 50% of Emax | `Q321` · not captured | 423 | mg l -1 | not captured | llm (not captured) | Iida_2008_2:pdv3 |
+| PD (effect) | Baseline PAWP | `Q324` · not captured | 25.6 | mmHg | not captured | llm (not captured) | Iida_2008_2:pdv3 |
+| PD (effect) | Steady state PAWP | `Q324` · not captured | 19.5 | mmHg | not captured | llm (not captured) | Iida_2008_2:pdv3 |
+| PD (effect) | Progress half-life | `Q340` · not captured | 5.83 | h | not captured | llm (not captured) | Iida_2008_2:pdv3 |
+| variability | Standard deviation of PAWP residual error | `Q315` · not captured | 2.5 | not captured | not captured | llm (not captured) | Iida_2008_2:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

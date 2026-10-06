@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Giri1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,40 +27,49 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:19.302598+00:00) predates the upstream re-run (2026-10-02 21:19:00.319766+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:19.302598+00:00) predates the upstream re-run (2026-10-06 16:25:28.560371+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Giri SN, Pharmacokinetics, subcellular distribut…, Experimental and molecular… (1986)
   ·  DOI: [10.1016/0014-4800(86)90060-2](https://doi.org/10.1016/0014-4800(86)90060-2)
 
 ## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="rejected" stale="true" population="male Golden Syrian hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="needs_review" stale="true" population="male Golden Syrian hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Spleen | `Q59` · t1/2α | 2.0 | hr | 7200.0 | [h] | not captured | llm (0.6) | Giri_1986_table_1:row0:col1 | — | not captured |
+| CL | `Q22` · CL | 218.0 | mL/day | 2.523148148148148e-09 | L/h | not captured | review_gapfill (0.7) | Han_2024:review | — | not captured |
+| Vz | `Q61` · V | 6290.0 | mL | 0.00629 | L | not captured | review_gapfill (0.7) | Han_2024:review | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Spleen' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row0:col1'])
-- dropped unlinked row (NIL): 'Testicle' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row1:col1'])
-- dropped unlinked row (NIL): 'Liver' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row2:col1'])
-- dropped unlinked row (NIL): 'Fat' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row3:col1'])
-- dropped unlinked row (NIL): 'RBC' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row4:col1'])
-- dropped unlinked row (NIL): 'Brain' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row5:col1'])
-- dropped unlinked row (NIL): 'Adrenal' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row6:col1'])
-- dropped unlinked row (NIL): 'Kidney' — extend the ontology if this is a real PK parameter (source ['Giri_1986_table_1:row7:col1'])
-- table mostly unlinked (8/8 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- dropped duplicate Q59 ('Testicle', value '3.8') — already have one for this compound
+- dropped duplicate Q59 ('Liver', value '3.8') — already have one for this compound
+- dropped duplicate Q59 ('Fat', value '4.3') — already have one for this compound
+- dropped duplicate Q59 ('RBC', value '4.6') — already have one for this compound
+- dropped duplicate Q59 ('Brain', value '6.2') — already have one for this compound
+- dropped duplicate Q59 ('Adrenal', value '9.9') — already have one for this compound
+- dropped duplicate Q59 ('Kidney', value '12.1') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bleomycin
-- status held at route_to_review — not promoted
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- gap-filled Q22 (CL) from Han_2024's review values (primary lacked it)
+- gap-filled Q61 (V) from Han_2024's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -94,9 +103,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Han_2024:review'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Giri_1986_table_1:row0:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Han_2024:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 218.0 | not captured | not captured | ['Han_2024:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00908 L/h | not captured | not captured | ['Han_2024:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.29 L | not captured | not captured | ['Han_2024:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,9 +125,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -121,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 21:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:25 UTC</sub>

@@ -18,7 +18,7 @@ Theodrenaline is a chemical compound classified as a cardiac stimulant among adr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 21:39 | 2:13 | 0/0/0 | 1/1/0 | 0/0/0 | 44,692/1,055 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/4 | 3/0 | 0 |
+| 2026-10-06 10:16 | 1:26 | 0/0/0 | 0/0/1 | 0/0/0 | 52,431/1,626 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/4 | 3/0 | 0 |
 
 ## popPK records
 
@@ -28,11 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Kloth_2017_arterial_tension](drugs/drug_theodrenaline/pd_Kloth_2017_arterial_tension.md) | name ← AkrinorTM · direct sigmoid Emax (Hill) effect | — | Kloth B et al., Akrinor, Frontiers in pharmacology (2017) | [10.3389/fphar.2017.00272](https://doi.org/10.3389/fphar.2017.00272) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Kloth_2017_force_of_contraction](drugs/drug_theodrenaline/pd_Kloth_2017_force_of_contraction.md) | name ← AkrinorTM · direct sigmoid Emax (Hill) effect | — | Kloth B et al., Akrinor, Frontiers in pharmacology (2017) | [10.3389/fphar.2017.00272](https://doi.org/10.3389/fphar.2017.00272) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Dings_2026_Heart_rate](drugs/drug_theodrenaline/pd_Dings_2026_Heart_rate.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Dings_2026_Mean_arterial_pressure](drugs/drug_theodrenaline/pd_Dings_2026_Mean_arterial_pressure.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Dings_2026_Systolic_blood_pressure](drugs/drug_theodrenaline/pd_Dings_2026_Systolic_blood_pressure.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2026_HR](drugs/drug_theodrenaline/pd_Dings_2026_HR.md) | Heart rate ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2026_MAP](drugs/drug_theodrenaline/pd_Dings_2026_MAP.md) | Mean arterial pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2026_SBP](drugs/drug_theodrenaline/pd_Dings_2026_SBP.md) | Systolic blood pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -53,19 +51,19 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dings_2024.pdf` | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | popPK | 9 | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) | [38720661](https://pubmed.ncbi.nlm.nih.gov/38720661) | The paper describes a population PK/PD model for theodrenaline (as part of a combination) but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Dings_2024.pdf` | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | popPK | 8 | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) | [38720661](https://pubmed.ncbi.nlm.nih.gov/38720661) | The paper describes a population PK/PD model for theodrenaline (as part of a combination) in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 
-<sub>queue written 2026-09-09T21:38:42.370171+00:00</sub>
+<sub>queue written 2026-10-06T10:15:04.864812+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dings_2024 | relevant | 9 | 0 | The paper describes a population PK/PD model for theodrenaline (as part of a combination) but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Dings_2026 | irrelevant | 2 | 2 | The study explicitly states that no pharmacokinetic samples were obtained and the kinetic parameters (CL, V) are from a hypothetical K/PD model with V fixed to 1 L, not true disposition parameters for theodrenaline. |
+| popPK | Dings_2024 | relevant | 8 | 0 | The paper describes a population PK/PD model for theodrenaline (as part of a combination) in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Dings_2026 | irrelevant | 2 | 2 | The study explicitly states that no pharmacokinetic samples were obtained and the kinetic parameters (CL, V) are from a hypothetical K/PD model with V fixed to 1 L, not true disposition parameters. |
 | popPK | Heller_2015 | irrelevant | 0 | 0 | The study reports pharmacodynamic endpoints (time to MAP increase) rather than pharmacokinetic parameters (CL, V, ka) for theodrenaline. |
-| popPK | Kloth_2017 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacodynamic study measuring contractile force and tension, not a pharmacokinetic study reporting disposition parameters like clearance or volume for theodrenaline. |
-| popPK | Simon_2019 | irrelevant | 0 | 0 | Theodrenaline is mentioned only as a vasopressor used for hemodynamic support, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Kloth_2017 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic investigation of contractile force and tension, reporting no pharmacokinetic parameters (CL, V, t1/2) for theodrenaline. |
+| popPK | Simon_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of antibiotics (linezolid, meropenem, etc.) and analgesics (metamizole, acetaminophen) in obese patients, and does not mention theodrenaline. |
 | PD | Simon_2019 | not_relevant | 0 | 0 | The paper is a protocol for a PK study in obese patients and does not report any pharmacodynamic (PD) data, exposure-response relationships, or numeric PD parameters for theodrenaline or any other drug. |
 
 ---

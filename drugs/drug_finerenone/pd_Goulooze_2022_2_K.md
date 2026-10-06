@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum potassium — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.522). The first reading is what the record holds.">cross-check: disputed</span>
+# serum potassium — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.522). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,16 +14,16 @@
 
 ## What this record describes
 
-**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives serum potassium (in mmol/L): indirect response — drug stimulates the production of serum potassium.
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives serum potassium (in mmol/L): indirect response — drug inhibits the loss of serum potassium.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > Finerenone exposure (AUC) stimulates serum potassium by increasing the elimination rate constant (kout) in an indirect response model, with a maximum effect (Emax) of 0.0905 and an EC50 of 0.512 mg × h/L. The model also estimates a baseline (BSL) of 4.50 mmol/L and a production rate (kin) of 0.00981 mmol/L/h.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Goulooze_2022_2`
-- **model family:** `indirect_response_iii`
+- **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
@@ -35,23 +35,12 @@ Goulooze SC et al., Finerenone Dose-Exposure-Serum Potassiu…, Clinical pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | θpop, BSL, BSL (mmol/L) — Estimate | `Q324` · not captured | 4.50 | mmol/L | not captured | llm (not captured) | Tab1:row1:col1 |
-| PD (effect) | θpop, BSL, BSL (mmol/L) — RSE (%) | `Q324` · not captured | 0.140 | mmol/L | not captured | llm (not captured) | Tab1:row1:col2 |
-| PD (effect) | θpop,kin, kin (mmol/L/h) — Estimate | `Q327` · not captured | 0.00981 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col1 |
-| PD (effect) | θpop,kin, kin (mmol/L/h) — RSE (%) | `Q327` · not captured | 14.2 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col2 |
-| PD (effect) | θpop,EMAX, Emax — Estimate | `Q320` · not captured | 0.0905 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col1 |
-| PD (effect) | θpop,EMAX, Emax — RSE (%) | `Q320` · not captured | 16.2 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col2 |
-| PD (effect) | θpop,EC50, EC50 (mg × h/L) — Estimate | `Q321` · not captured | 0.512 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col1 |
-| PD (effect) | θpop,EC50, EC50 (mg × h/L) — RSE (%) | `Q321` · not captured | 33.3 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col2 |
-| variability | θJAP,σ, relative σ with Japanese ethnicity (%) — Estimate | `Q315` · not captured | 87.0 | not captured | not captured | llm (not captured) | Tab1:row8:col1 |
-| variability | θJAP,σ, relative σ with Japanese ethnicity (%) — RSE (%) | `Q315` · not captured | 3.64 | not captured | not captured | llm (not captured) | Tab1:row8:col2 |
-| variability | ω2 proportional Emax — Estimate | `Q312` · not captured | 1.49 | not captured | not captured | llm_corrected (not captured) | Tab1:row19:col1 |
-| variability | ω2 proportional Emax — RSE (%) | `Q316` · not captured | 10.2 | not captured | not captured | llm_corrected (not captured) | Tab1:row19:col2 |
-| variability | ω2 covariance BSL/Emax — RSE (%) | `Q314` · not captured | 10.8 | not captured | not captured | llm_corrected (not captured) | Tab1:row20:col2 |
-| variability | σ2, scalar of residual error — Estimate | `Q315` · not captured | 0.00447 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col1 |
-| variability | σ2, scalar of residual error — RSE (%) | `Q315` · not captured | 0.986 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col2 |
-| variability | v, degrees of freedom of t-distributed residual error — Estimate | `Q315` · not captured | 6.60 | not captured | not captured | llm (not captured) | Tab1:row23:col1 |
-| variability | v, degrees of freedom of t-distributed residual error — RSE (%) | `Q315` · not captured | 1.81 | not captured | not captured | llm (not captured) | Tab1:row23:col2 |
+| PD (effect) | BSL | `Q324` · not captured | 4.50 | mmol/L | not captured | llm (not captured) | Goulooze_2022_2:pdv3 |
+| PD (effect) | kin | `Q327` · not captured | 0.00981 | mmol/L/h | not captured | llm (not captured) | Goulooze_2022_2:pdv3 |
+| PD (effect) | Emax | `Q320` · not captured | 0.0905 | not captured | not captured | llm (not captured) | Goulooze_2022_2:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.512 | mg × h/L | not captured | llm (not captured) | Goulooze_2022_2:pdv3 |
+| PD (effect) | TSLOPE,placebo | `Q340` · not captured | 0.00412 | /year | not captured | llm (not captured) | Goulooze_2022_2:pdv3 |
+| PD (effect) | TSLOPE,active | `Q340` · not captured | 0.00161 | /year | not captured | llm (not captured) | Goulooze_2022_2:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,18 +48,45 @@ Goulooze SC et al., Finerenone Dose-Exposure-Serum Potassiu…, Clinical pharmac
 </details>
 
 
-## Biomarker turnover model
+## Exposure-response model
 
-This page models **serum potassium** as an endogenous turnover response, separately from the drug's pharmacokinetics.
+`Finerenone_Goulooze2022v2_PD_k` — turnover (indirect response type II), `response = E0/(1 - Emax*frac)`
 
-- **driver tier:** `cited_driver`
-- **turnover quantities linked:** production_rate
-- **effect blocks:** 1
-  - finerenone: indirect_response_iii on production; linked values: concentration_50, effect_max
-- **turnover review:** <span class="pk-badge pk-badge--green">accepted (caveats)</span>
-  - `B4_steady_state` — skipped: production and loss/clearance parameters are incomplete
-  - `B4_effect_1` — skipped: effect size, potency, baseline or driver Css unavailable
-  - `B4_driver_link` — pass: driver source is linked
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 4.5 mmol/L | 4.5 mol/m3 |
+| Emax | 0.0905 | — |
+| EC50 | 0.512 mg × h/L | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 4.5, `at_EC50` = 4.713, `at_inf` = 4.948
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_exposure_unit_unresolved` — 'mg × h/L' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | fail | effect_direction 'stimulation' contradicts the record's own mechanism IDR-II (inhibition) |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- T2 the record says stimulation but its mechanism IDR-II is inhibition
+
+Advisory:
+
+- defaulted: gamma (convention)
+- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -106,19 +122,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

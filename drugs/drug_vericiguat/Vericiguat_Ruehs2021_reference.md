@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;vericiguat&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/&quot;},{&quot;label&quot;:&quot;Ruehs_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vericiguat_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vericiguat_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vericiguat — `Vericiguat_Ruehs2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.64). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record contains vericiguat parameters CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h, and covariate effects (creatinine power 0.164, sex on V/F 0.850, body weight on kabs 1.28, albumin power 2.37), but the absolute bioavailability parameter Fab has no value. The reference check failed with ratio None, meaning no comparison could be computed, so this is an inconclusive check rather than a demonstrated fault. A second reader disagreed on the dose compound, primary analyte, model links (recorded as empty), and parameter assignments, and read the bioavailability theta as 1.08 where the record has none. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vericiguat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading vericiguat → nt-probnp (none); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:42:06.547177+00:00) predates the upstream re-run (2026-10-06 10:33:15.343309+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y)
 
 ## Model component
-<dbs-pgx drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="needs_review" stale="false" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="extracted" stale="true" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 4 covariate effects.
@@ -38,15 +40,13 @@ Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokin
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 1.3 | L/h | 3.611111111111112e-07 | [l] / [h] | 8.33 | exact (1.0) | Tab2:row1:col1, Tab2:row1:col2, Tab2:row1:col3, Tab2:row1:col4, Ruehs_2021_table_1:row0:col1, Ruehs_2021_table_1:row0:col2, Ruehs_2021_table_1:row0:col3, Ruehs_2021_table_1:row0:col4 | — | not captured |
-| V/F (L) | `Q76` · V/F | 38.9 | L | 0.0389 | [l] | 12.5 | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Ruehs_2021_table_1:row2:col1, Ruehs_2021_table_1:row2:col2, Ruehs_2021_table_1:row2:col3, Ruehs_2021_table_1:row2:col4 | — | not captured |
-| ka (1/h) | `Q49` · kabs | 1.5 | 1/h | 0.00041666666666666664 | 1/h | 18.5 | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Ruehs_2021_table_1:row3:col1, Ruehs_2021_table_1:row3:col2, Ruehs_2021_table_1:row3:col3, Ruehs_2021_table_1:row3:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 1.3 | L/h | 3.611111111111112e-07 | [l] / [h] | 8.33 | exact (1.0) | Tab2:row1:col1, Tab2:row1:col2, Tab2:row1:col4, Ruehs_2021_table_1:row0:col1, Ruehs_2021_table_1:row0:col2, Ruehs_2021_table_1:row0:col4 | — | 25.1 (None% RSE) |
+| V/F (L) | `Q76` · V/F | 38.9 | L | 0.0389 | [l] | 12.5 | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col4, Ruehs_2021_table_1:row2:col1, Ruehs_2021_table_1:row2:col2, Ruehs_2021_table_1:row2:col4 | — | 21.0 (None% RSE) |
+| ka (1/h) | `Q49` · kabs | 1.5 | 1/h | 0.00041666666666666664 | 1/h | 18.5 | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Ruehs_2021_table_1:row3:col1, Ruehs_2021_table_1:row3:col2, Ruehs_2021_table_1:row3:col4 | — | 117 (None% RSE) |
+| v_sex | `Q900` · v_sex | 0.850 | not captured | not captured | not captured | 4.09 | not captured (not captured) | Tab2:row9:col1, Tab2:row9:col2 | — | not captured |
 | theta_q22_creatinine_power | `Q900` · theta_q22_creatinine_power | 0.164 | not captured | not captured | not captured | 26.1 | not captured (not captured) | Tab2:row6:col1, Tab2:row6:col2 | — | not captured |
-| theta_q314_sex_v | `Q900` · theta_q314_sex_v | 0.850 | not captured | not captured | not captured | 4.09 | not captured (not captured) | Tab2:row9:col1, Tab2:row9:col2 | — | not captured |
 | theta_kabs_bodyweight_ka | `Q900` · theta_kabs_bodyweight_ka | 1.28 | not captured | not captured | not captured | 25.2 | not captured (not captured) | Tab2:row10:col1, Tab2:row10:col2 | — | not captured |
 | theta_kabs_albumin_power | `Q900` · theta_kabs_albumin_power | 2.37 | not captured | not captured | not captured | 26.1 | not captured (not captured) | Tab2:row11:col1, Tab2:row11:col2 | — | not captured |
 
@@ -67,8 +67,15 @@ Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokin
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- table section iiv: 'CL/F (L/h)' routed out of structural estimates ('Inter-individual variabilityCV (%)a')
+- table section iiv: 'V/F (L)' routed out of structural estimates ('Inter-individual variabilityCV (%)a')
+- table section iiv: 'ka (1/h)' routed out of structural estimates ('Inter-individual variabilityCV (%)a')
+- table section iiv: 'CL/F (L/h)' routed out of structural estimates ('Inter-individual variability CV (%)a')
+- table section iiv: 'V/F (L)' routed out of structural estimates ('Inter-individual variability CV (%)a')
+- table section iiv: 'ka (1/h)' routed out of structural estimates ('Inter-individual variability CV (%)a')
 - dropped value-less row: 'θCL,age'
 - dropped value-less row: 'θCL,bilirubin'
+- covariate level 'θV,sex' → Q900:v_sex = 0.850 (linear_fractional on Q27)
 - dropped unlinked row (NIL): 'θF,dose≤1.25 mg' — extend the ontology if this is a real PK parameter (source ['Tab2:row12:col1', 'Tab2:row12:col2'])
 - dropped unlinked row (NIL): 'θF,dose=5 mg' — extend the ontology if this is a real PK parameter (source ['Tab2:row13:col1', 'Tab2:row13:col2'])
 - dropped unlinked row (NIL): 'θF,dose=10 mg' — extend the ontology if this is a real PK parameter (source ['Tab2:row14:col1', 'Tab2:row14:col2'])
@@ -76,9 +83,11 @@ Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokin
 - NIL: refused to back-fill base 'V/F' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
 - implicit units: 'ka (1/h)' → 1/h (from the paper text: 'The paper text explicitly states: "Population mean estimates (inter-individual variability [%]) for CL/F, V/F, and ka we')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=vericiguat
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell Tab2:row1:col5 = '10.2e'
@@ -107,22 +116,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.583 (14/24 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.64 (16/25 fields) | 9 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 1.08 | only_one_extracted |
-| `gpt-oss:120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss:120b` | `parameters[f]` | not captured | 1.08 | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [] | [['vericiguat', 'nt-probnp', 'none']] | mismatch |
+| `gpt-oss:120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q314_sex_v]` | 0.850 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_v_f_sex_v]` | not captured | 0.850 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[v_sex]` | 0.850 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θf,dose=10 mg]` | not captured | 0.793 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θf,dose≤1.25 mg]` | not captured | 1.08 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | vericiguat | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | vericiguat | unknown | mismatch |
 
 </details>
 
@@ -140,13 +148,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col4', 'Ruehs_2021_table_1:row0:col1', 'Ruehs_2021_table_1:row0:col2', 'Ruehs_2021_table_1:row0:col3', 'Ruehs_2021_table_1:row0:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Ruehs_2021_table_1:row3:col1', 'Ruehs_2021_table_1:row3:col2', 'Ruehs_2021_table_1:row3:col3', 'Ruehs_2021_table_1:row3:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Ruehs_2021_table_1:row2:col1', 'Ruehs_2021_table_1:row2:col2', 'Ruehs_2021_table_1:row2:col3', 'Ruehs_2021_table_1:row2:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col4', 'Ruehs_2021_table_1:row0:col1', 'Ruehs_2021_table_1:row0:col2', 'Ruehs_2021_table_1:row0:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Ruehs_2021_table_1:row3:col1', 'Ruehs_2021_table_1:row3:col2', 'Ruehs_2021_table_1:row3:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Ruehs_2021_table_1:row2:col1', 'Ruehs_2021_table_1:row2:col2', 'Ruehs_2021_table_1:row2:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.3 L/h | not captured | not captured | ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col3', 'Tab2:row1:col4', 'Ruehs_2021_table_1:row0:col1', 'Ruehs_2021_table_1:row0:col2', 'Ruehs_2021_table_1:row0:col3', 'Ruehs_2021_table_1:row0:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 38.9 L | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Ruehs_2021_table_1:row2:col1', 'Ruehs_2021_table_1:row2:col2', 'Ruehs_2021_table_1:row2:col3', 'Ruehs_2021_table_1:row2:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.3 L/h | not captured | not captured | ['Tab2:row1:col1', 'Tab2:row1:col2', 'Tab2:row1:col4', 'Ruehs_2021_table_1:row0:col1', 'Ruehs_2021_table_1:row0:col2', 'Ruehs_2021_table_1:row0:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 38.9 L | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Ruehs_2021_table_1:row2:col1', 'Ruehs_2021_table_1:row2:col2', 'Ruehs_2021_table_1:row2:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -164,8 +172,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference_modelica.zip" download>Vericiguat_Ruehs2021_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference_modelica.zip" download>Vericiguat_Ruehs2021_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference_fmi.zip" download>Vericiguat_Ruehs2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference_matlab.zip" download>Vericiguat_Ruehs2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference_matlab_simbio.zip" download>Vericiguat_Ruehs2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference/Vericiguat_Ruehs2021_reference_sbml.zip" download>Vericiguat_Ruehs2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -186,4 +194,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 15:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 10:33 UTC</sub>

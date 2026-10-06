@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Frederiksen_2023_3 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_1_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_1_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_1_mg_day.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_2_mg_day&quot;,&quot;label&quot;:&quot;Higashi_2025_2_mg_day&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_2_mg_day.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Frederiksen2023v3_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.92). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.92). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:24.808715+00:00) predates the upstream re-run (2026-10-06 15:13:02.641821+00:00). Current validate status: `extracted`.
+
 ## Citation
 Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharmacology and t… (2023)
   ·  DOI: [10.1002/cpt.2791](https://doi.org/10.1002/cpt.2791)
 
 ## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="needs_review" stale="false" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="extracted" stale="true" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite DM-3411: 1 compartment(s); metabolite DM-3412: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 13 extracted.
@@ -38,8 +40,6 @@ Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharm
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Absorption rate constant fasted | `Q49` · kabs | 1.02 | 1/h | 0.00028333333333333335 | 1/h | not captured | llm_confirmed (0.6) | cpt2791-tbl-0002:row1:col1 | — | 215 (None% RSE) |
@@ -77,7 +77,6 @@ Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharm
 - table section iiv: 'Clearance from DM‐3412 central compartment (CLMET1)' routed out of structural estimates ('IIV (%RSE)')
 - table section iiv: 'Volume of distribution, DM‐3411 central compartment (V6)' routed out of structural estimates ('IIV (%RSE)')
 - table section iiv: 'Clearance from DM‐3411 central compartment (CLMET2)' routed out of structural estimates ('IIV (%RSE)')
-- dropped duplicate Q49 ('Absorption rate constant fed', value '0.535') — already have one for this compound
 - unit_dimension_unknown: 'V2' (V1)
 - unit_dimension_unknown: 'V3' (V2)
 - unit_dimension_unknown: 'Q' (Q)
@@ -90,26 +89,30 @@ Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharm
 - unit_dimension_unknown: 'V6' (V1)
 - unit_dimension_unknown: 'CLMET2' (CL)
 - dropped unlinked row (NIL): 'Body mass index on V6' — extend the ontology if this is a real PK parameter (source ['cpt2791-tbl-0002:row15:col1'])
-- implicit units: 'Absorption rate constant fasted' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 1.02 is consis')
-- implicit units: 'Lag‐time' → h (from the popPK convention: 'Lag time (ALAG) is a time parameter, conventionally expressed in hours (h). The value 0.411 is consistent with this unit')
-- implicit units: 'Volume of distribution, brexpiprazole central compartment (V2)' → L (from the popPK convention: 'Volume of distribution (V2) is a volume parameter, conventionally expressed in liters (L). The value 81.2 is consistent ')
-- implicit units: 'Volume of distribution, brexpiprazole peripheral compartment (V3)' → L (from the popPK convention: 'Volume of distribution (V3) is a volume parameter, conventionally expressed in liters (L). The value 40.1 is consistent ')
-- implicit units: 'Inter‐compartmental clearance, brexpiprazole (Q)' → L/h (from the popPK convention: 'Intercompartmental clearance (Q) is a clearance parameter, conventionally expressed in L/h. The value 0.714 is consisten')
-- implicit units: 'Clearance from brexpiprazole to DM‐3412 (CLM1)' → L/h (from the popPK convention: 'Formation clearance (CLM1) is a clearance parameter, conventionally expressed in L/h. The value 0.0224 is consistent wit')
-- implicit units: 'Clearance from brexpiprazole to DM‐3411 (CLM2)' → L/h (from the popPK convention: 'Formation clearance (CLM2) is a clearance parameter, conventionally expressed in L/h. The value 1.12 is consistent with ')
-- implicit units: 'Volume of distribution, DM‐3412 central compartment (V4)' → L (from the popPK convention: 'Volume of distribution (V4) is a volume parameter, conventionally expressed in liters (L). The value 0.447 is consistent')
-- implicit units: 'Volume of distribution, DM‐3412 peripheral compartment (V5)' → L (from the popPK convention: 'Volume of distribution (V5) is a volume parameter, conventionally expressed in liters (L). The value 20.4 is consistent ')
-- implicit units: 'Inter‐compartmental clearance, DM‐3412 (QMET)' → L/h (from the popPK convention: 'Intercompartmental clearance (QMET) is a clearance parameter, conventionally expressed in L/h. The value 2.16 is consist')
-- implicit units: 'Clearance from DM‐3412 central compartment (CLMET1)' → L/h (from the popPK convention: 'Total clearance (CLMET1) is a clearance parameter, conventionally expressed in L/h. The value 0.420 is consistent with t')
-- implicit units: 'Volume of distribution, DM‐3411 central compartment (V6)' → L (from the popPK convention: 'Volume of distribution (V6) is a volume parameter, conventionally expressed in liters (L). The value 2.44 is consistent ')
-- implicit units: 'Clearance from DM‐3411 central compartment (CLMET2)' → L/h (from the popPK convention: 'Total clearance (CLMET2) is a clearance parameter, conventionally expressed in L/h. The value 3.33 is consistent with th')
+- dropped value-less row: '%RSE'
+- dropped value-less row: '95% CI'
+- implicit units: 'Absorption rate constant fasted' → 1/h (from the popPK convention: 'No unit stated in the paper for kabs; first-order absorption rate constants are conventionally in 1/h in population PK, ')
+- implicit units: 'Lag‐time' → h (from the popPK convention: 'No unit stated for tlag; lag times are conventionally reported in h, consistent with a value of 0.411.')
+- implicit units: 'Volume of distribution, brexpiprazole central compartment (V2)' → L (from the popPK convention: 'No unit stated for V2; volumes of distribution are conventionally in L, consistent with a value of 81.2.')
+- implicit units: 'Volume of distribution, brexpiprazole peripheral compartment (V3)' → L (from the popPK convention: 'No unit stated for V3; volumes of distribution are conventionally in L, consistent with a value of 40.1.')
+- implicit units: 'Inter‐compartmental clearance, brexpiprazole (Q)' → L/h (from the popPK convention: 'No unit stated for Q; intercompartmental clearances are conventionally in L/h, consistent with a value of 0.714.')
+- implicit units: 'Clearance from brexpiprazole to DM‐3412 (CLM1)' → L/h (from the popPK convention: 'No unit stated for CLM1; formation clearances are conventionally in L/h, consistent with a value of 0.0224.')
+- implicit units: 'Clearance from brexpiprazole to DM‐3411 (CLM2)' → L/h (from the popPK convention: 'No unit stated for CLM2; formation clearances are conventionally in L/h, consistent with a value of 1.12.')
+- implicit units: 'Volume of distribution, DM‐3412 central compartment (V4)' → L (from the popPK convention: 'No unit stated for V4; volumes of distribution are conventionally in L, consistent with a value of 0.447.')
+- implicit units: 'Volume of distribution, DM‐3412 peripheral compartment (V5)' → L (from the popPK convention: 'No unit stated for V5; volumes of distribution are conventionally in L, consistent with a value of 20.4.')
+- implicit units: 'Inter‐compartmental clearance, DM‐3412 (QMET)' → L/h (from the popPK convention: 'No unit stated for QMET; intercompartmental clearances are conventionally in L/h, consistent with a value of 2.16.')
+- implicit units: 'Clearance from DM‐3412 central compartment (CLMET1)' → L/h (from the popPK convention: 'No unit stated for CLMET1; clearances are conventionally in L/h, consistent with a value of 0.420.')
+- implicit units: 'Volume of distribution, DM‐3411 central compartment (V6)' → L (from the popPK convention: 'No unit stated for V6; volumes of distribution are conventionally in L, consistent with a value of 2.44.')
+- implicit units: 'Clearance from DM‐3411 central compartment (CLMET2)' → L/h (from the popPK convention: 'No unit stated for CLMET2; clearances are conventionally in L/h, consistent with a value of 3.33.')
 - metabolite volume: 'Volume of distribution, DM‐3411 central compartment (V6)' Q63→Q61 for DM-3411 — it is 1-compartment, so its central volume is its only volume
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Volume of distribution, brexpiprazole central compartment (V2)); Q64 (Volume of distribution, brexpiprazole peripheral compartment (V3)); Q30 (Inter‐compartmental clearance, brexpiprazole (Q)); Q63 (Volume of distribution, DM‐3412 central compartment (V4)); Q64 (Volume of distribution, DM‐3412 peripheral compartment (V5)); Q30 (Inter‐compartmental clearance, DM‐3412 (QMET)); Q22 (Clearance from DM‐3412 central compartment (CLMET1)); Q61 (Volume of distribution, DM‐3411 central compartment (V6))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brexpiprazole
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [1, 2]
-- row roles: 2 per-group rows of brexpiprazole absorption_rate_constant but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 24 linked by role; re-tagged parent→DM-3412 ×9, parent→DM-3411 ×8
+- row roles: per-genotype parameters — typical value from the reference group: Absorption rate constant fasted
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 22 linked by role; re-tagged parent→DM-3412 ×9, parent→DM-3411 ×8
+- molar mass: none of 1 PubChem candidate(s) is 'DM-3412' (LLM) — left in mass units
+- molar mass: none found for 'DM-3412' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell cpt2791-tbl-0002:row2:col3 = '[0.420; 0.752]'
@@ -217,12 +220,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_modelica.zip" download>Brexpiprazole_Frederiksen2023v3_reference_modelica.zip</a> <span class="pk-size">(5.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_modelica.zip" download>Brexpiprazole_Frederiksen2023v3_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_fmi.zip" download>Brexpiprazole_Frederiksen2023v3_reference_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_3M_9C.fmu" download>PK_3M_9C.fmu</a> <span class="pk-size">(1.4 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_matlab.zip" download>Brexpiprazole_Frederiksen2023v3_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_sbml.zip" download>Brexpiprazole_Frederiksen2023v3_reference_sbml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_cellml.zip" download>Brexpiprazole_Frederiksen2023v3_reference_cellml.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_cellml.zip" download>Brexpiprazole_Frederiksen2023v3_reference_cellml.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3M_9C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -239,4 +242,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 14:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:13 UTC</sub>

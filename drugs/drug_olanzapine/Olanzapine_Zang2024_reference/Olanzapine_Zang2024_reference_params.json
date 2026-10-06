@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg oral (N05AH03)",
+ "model_id": "Olanzapine_Zang2024_reference",
+ "molar_masses": {
+  "central.C": 0.31243200000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.8833333333333334e-06,
+  "F": 1.0,
+  "MM": 0.31243200000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00941,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 8.333333333333333e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 38092.18436873748
+ },
+ "reference_peaks": {
+  "central.C": 1.289313839624569e-05
+ },
+ "stop_time": 864000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

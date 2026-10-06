@@ -18,7 +18,7 @@ Moxisylyte (thymoxamine) is an alpha-blocking vasodilator used to improve periph
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:43 | 2:16 | 0/0/0 | 1/1/0 | 0/0/0 | 25,640/564 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/6 | 2/1 | 0 |
+| 2026-10-06 20:25 | 6:34 | 0/0/0 | 0/1/0 | 0/0/0 | 129,305/6,680 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/6 | 3/1 | 0 |
 
 ## popPK records
 
@@ -28,11 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Cantwell_2026_normalized_ratio](drugs/drug_moxisylyte/pd_Cantwell_2026_normalized_ratio.md) | glycine transport current (fraction of control) ← RPI-GLYT2-82 · direct Emax (saturable) effect | — | Cantwell Chater RP et al., A reversible allosteric inhibitor of Gl…, Nature communications (2026) | [10.1038/s41467-026-69616-5](https://doi.org/10.1038/s41467-026-69616-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_KCl_induced_bladder_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_KCl_induced_bladder_contraction.md) | KCl-induced bladder contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_KCl_induced_urethral_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_KCl_induced_urethral_contraction.md) | KCl-induced urethral contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_acetylcholine_induced_bladder_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_acetylcholine_induced_bladder_contraction.md) | acetylcholine-induced bladder contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_phenylephrine_induced_urethral_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_phenylephrine_induced_urethral_contraction.md) | phenylephrine-induced urethral contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_KCI_induced_contraction_in_isolated_rabbit_bladder](drugs/drug_moxisylyte/pd_Watanabe_1991_KCI_induced_contraction_in_isolated_rabbit_bla.md) | KCI induced contraction in isolated rabbit bladder ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_KCI_induced_contraction_in_isolated_rabbit_proximal_urethra](drugs/drug_moxisylyte/pd_Watanabe_1991_KCI_induced_contraction_in_isolated_rabbit_pro.md) | KCI induced contraction in isolated rabbit proximal urethra ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_phenylephrine_induced_contraction_in_isolated_rabbit_proximal_urethra](drugs/drug_moxisylyte/pd_Watanabe_1991_phenylephrine_induced_contraction_in_isolated_.md) | phenylephrine induced contraction in isolated rabbit proximal urethra ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
 
 ## ADME sites
 
@@ -57,108 +55,108 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 63 matched, 59 returned
-- **screened:** 3  ·  **relevant:** 2
+- **PubMed hits:** 64 matched, 60 returned
+- **screened:** 6  ·  **relevant:** 5
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Neau_1995_2.pdf` | Neau B et al., Pharmacokinetics study of 14C-moxisylyt…, Arzneimittel-Forschung (1995) | popPK | 9 | not captured | [8929231](https://pubmed.ncbi.nlm.nih.gov/8929231) | The study reports quantitative pharmacokinetic parameters (half-lives, absorption rate, bioavailability) for moxisylyte in rats, with specific numeric values provided in the text. |
-| `Bressolle_1996.pdf` | Bressolle F et al., Pharmacokinetics of moxisylyte in healt…, European journal of clinica… (1996) | popPK | 8 | [10.1007/BF00203788](https://doi.org/10.1007/BF00203788) | [8866639](https://pubmed.ncbi.nlm.nih.gov/8866639) | The study reports pharmacokinetic parameters for moxisylyte metabolites (half-lives) but lacks quantitative disposition parameters (CL, V, Q) for the parent drug, and specific numeric values for the parent drug are not present in the evidence. |
-| `Neau_1995.pdf` | Neau B et al., Metabolism of 14C-moxisylyte in hairles…, Arzneimittel-Forschung (1995) | popPK | 8 | not captured | [7893260](https://pubmed.ncbi.nlm.nih.gov/7893260) | The study reports quantitative PK parameters (half-lives, Tmax) for moxisylyte in rats, but lacks explicit clearance (CL) and volume (V) values. |
-| `Neau_1998.pdf` | Neau B et al., Metabolism of 14C-moxisylyte after perc…, Arzneimittel-Forschung (1998) | popPK | 8 | not captured | [9522028](https://pubmed.ncbi.nlm.nih.gov/9522028) | The study reports pharmacokinetic parameters for moxisylyte in rats, but only half-life values are explicitly provided in the text, lacking clearance, volume, or compartmental model parameters. |
+| `Costa_1992.pdf` | Costa P et al., Pharmacokinetics of moxisylyte in healt…, Journal of pharmaceutical s… (1992) | popPK | 10 | [10.1002/jps.2600811220](https://doi.org/10.1002/jps.2600811220) | [1491345](https://pubmed.ncbi.nlm.nih.gov/1491345) | The study reports quantitative PK parameters (half-lives, excretion percentages) for moxisylyte metabolites in humans, which are valid PK data for the parent drug, though specific clearance/volume values are not explicitly listed in the text. |
+| `Neau_1995.pdf` | Neau B et al., Metabolism of 14C-moxisylyte in hairles…, Arzneimittel-Forschung (1995) | popPK | 9 | not captured | [7893260](https://pubmed.ncbi.nlm.nih.gov/7893260) | The study reports quantitative pharmacokinetic parameters (half-lives, Tmax) for moxisylyte in rats, with values explicitly stated in the text. |
+| `Neau_1995_2.pdf` | Neau B et al., Pharmacokinetics study of 14C-moxisylyt…, Arzneimittel-Forschung (1995) | popPK | 9 | not captured | [8929231](https://pubmed.ncbi.nlm.nih.gov/8929231) | The study reports quantitative pharmacokinetic parameters (absorption half-life, elimination half-life, Tmax, absorption percentage) for moxisylyte in rats. |
+| `Bressolle_1996.pdf` | Bressolle F et al., Pharmacokinetics of moxisylyte in healt…, European journal of clinica… (1996) | popPK | 8 | [10.1007/BF00203788](https://doi.org/10.1007/BF00203788) | [8866639](https://pubmed.ncbi.nlm.nih.gov/8866639) | The study reports quantitative pharmacokinetic parameters (half-lives) for the specific metabolites of moxisylyte in humans, which constitutes the pharmacokinetic profile of the drug when the parent is not the primary focus or is rapidly metabolized. |
+| `Costa_1996.pdf` | Costa P et al., Pharmacokinetics of moxisylyte in healt…, Therapeutic drug monitoring (1996) | popPK | 8 | [10.1097/00007691-199604000-00005](https://doi.org/10.1097/00007691-199604000-00005) | [8721275](https://pubmed.ncbi.nlm.nih.gov/8721275) | The study reports pharmacokinetic parameters (Cmax, tmax, MRT, half-life) for the major metabolite desacetylmoxisylyte (DAM) in humans, with specific numeric values provided in the abstract. |
+| `Neau_1998.pdf` | Neau B et al., Metabolism of 14C-moxisylyte after perc…, Arzneimittel-Forschung (1998) | popPK | 8 | not captured | [9522028](https://pubmed.ncbi.nlm.nih.gov/9522028) | The study reports pharmacokinetic parameters (half-life) for moxisylyte in rats, but specific quantitative values for clearance, volume, or rate constants are not provided in the text. |
 | `Harris_1973.pdf` | Harris M et al., Effect of centrally acting drugs on the…, British journal of pharmaco… (1973) | pd | 4 | [10.1111/j.1476-5381.1973.tb08320.x](https://doi.org/10.1111/j.1476-5381.1973.tb08320.x) | [4722039](https://www.ncbi.nlm.nih.gov/pubmed/4722039) | metadata signals extractable PD data (IC50) |
 | `Humphrey_1978.pdf` | Humphrey PP, The effects of alpha-adrenoceptor antag…, British journal of pharmaco… (1978) | pd | 4 | [10.1111/j.1476-5381.1978.tb17281.x](https://doi.org/10.1111/j.1476-5381.1978.tb17281.x) | [28807](https://www.ncbi.nlm.nih.gov/pubmed/28807) | metadata signals extractable PD data (concentration-effect) |
 | `Peters_1983.pdf` | Peters JR et al., Alpha 1-adrenoreceptors on intact rat a…, Endocrinology (1983) | pd | 4 | [10.1210/endo-113-1-133](https://doi.org/10.1210/endo-113-1-133) | [6305631](https://www.ncbi.nlm.nih.gov/pubmed/6305631) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T09:43:08.438356+00:00</sub>
+<sub>queue written 2026-10-06T20:23:24.162981+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aldana_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of thymoxamine, not moxisylyte. |
-| popPK | Baiardi_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dalbavancin, not moxisylyte. |
+| popPK | Aldana_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of thymoxamine in rabbits, not moxisylyte. |
+| popPK | Baiardi_2025 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of dalbavancin, not moxisylyte. |
 | PD | Baiardi_2025 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of Dalbavancin, not moxisylyte, and focuses on PK target attainment (fT&gt;MIC) rather than reporting a pharmacodynamic exposure-response model with numeric PD parameters. |
-| popPK | Barreiro-Costa_2021 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro biological activity of bis(spiropyrazolone)cyclopropanes for leishmaniasis and does not involve moxisylyte or report any pharmacokinetic parameters. |
+| popPK | Barreiro-Costa_2021 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro biological activity of new compounds for leishmaniasis and does not involve moxisylyte or pharmacokinetic modeling. |
 | PD | Barreiro-Costa_2021 | not_relevant | 0 | 0 | The paper reports in vitro screening of new compounds for leishmaniasis and does not mention moxisylyte or provide any pharmacodynamic exposure-response analysis. |
-| popPK | Bednarczyk-Cwynar_2026 | irrelevant | 0 | 0 | The paper focuses on oleanolic acid derivatives and does not mention moxisylyte or report any pharmacokinetic parameters for it. |
+| popPK | Bednarczyk-Cwynar_2026 | irrelevant | 0 | 0 | The paper studies oleanolic acid derivatives and does not mention moxisylyte or its pharmacokinetics. |
 | PD | Bednarczyk-Cwynar_2026 | not_relevant | 0 | 0 | The paper studies oleanolic acid derivatives, not moxisylyte, and reports in vitro IC50 values rather than a pharmacokinetic/pharmacodynamic exposure-response relationship for the target drug. |
-| popPK | Birmingham_1969 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on thymoxamine and does not involve moxisylyte or pharmacokinetic parameters. |
+| popPK | Birmingham_1969 | irrelevant | 0 | 0 | The paper describes in-vitro pharmacological antagonism of noradrenaline by thymoxamine in human arteries and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Birmingham_1969 | not_relevant | 0 | 0 | The paper reports pharmacological data for thymoxamine, not moxisylyte. |
 | popPK | Birmingham_1976 | irrelevant | 0 | 0 | The paper describes electrophysiological responses of the vas deferens to stimulation and is unrelated to the pharmacokinetics of moxisylyte. |
 | PD | Birmingham_1976 | not_relevant | 0 | 0 | The paper studies the effect of temperature and stimulus frequency on vas deferens contractions and does not mention moxisylyte or report any drug-specific pharmacodynamic parameters. |
-| popPK | Bressolle_1996 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for moxisylyte metabolites (half-lives) but lacks quantitative disposition parameters (CL, V, Q) for the parent drug, and specific numeric values for the parent drug are not present in the evidence. |
-| popPK | Buckley_1987 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of phenylephrine and thymoxamine on pupil size in humans and does not involve moxisylyte or report any pharmacokinetic parameters. |
+| popPK | Buckley_1987 | irrelevant | 0 | 0 | The study investigates alpha 1 adrenoceptors in the iris using phenylephrine and thymoxamine, and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Buckley_1987 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of phenylephrine and thymoxamine, not moxisylyte. |
-| popPK | Cantwell_2026 | irrelevant | 0 | 0 | The paper describes a GlyT2 inhibitor (RPI-GLYT2-82) and does not mention moxisylyte or report any pharmacokinetic parameters for it. |
-| popPK | Costa_1992 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of moxisylyte metabolites (DAM and MDAM) rather than the parent drug, and no quantitative disposition parameters (CL, V, etc.) for moxisylyte itself are provided in the evidence. |
+| popPK | Cantwell_2026 | irrelevant | 0 | 0 | The paper describes a GlyT2 inhibitor (RPI-GLYT2-82) and its structural/mechanistic properties, not the pharmacokinetics of moxisylyte. |
 | popPK | Costa_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic receptor binding and smooth muscle contraction, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Costa_1996 | irrelevant | 2 | 1 | The study focuses on the pharmacokinetics of moxisylyte metabolites (DAM, etc.) rather than the parent drug, and does not report standard disposition parameters (CL, V, Q) for moxisylyte itself. |
-| popPK | De_2025 | irrelevant | 0 | 0 | The paper focuses on the development of novel LIFR/GPBAR1 modulators for liver fibrosis and does not involve moxisylyte or report any pharmacokinetic parameters. |
+| popPK | De_2025 | irrelevant | 0 | 0 | The paper focuses on the development of novel LIFR/GPBAR1 modulators for liver fibrosis and does not mention moxisylyte or report any pharmacokinetic parameters for it. |
 | PD | De_2025 | not_relevant | 0 | 0 | The paper discusses a novel estradienone scaffold for liver fibrosis and does not mention moxisylyte or report any pharmacodynamic parameters for it. |
 | popPK | Dick_1971 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
-| popPK | Doughty_1992 | irrelevant | 1 | 0 | The paper is a review of clinical pharmacokinetics without original quantitative disposition parameters (CL, V, etc.) for moxisylyte. |
-| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment of nitrate and nitrite in feed and does not contain any pharmacokinetic data for moxisylyte. |
+| popPK | Doughty_1992 | irrelevant | 1 | 0 | The paper is a review of clinical pharmacokinetics for moxisylyte but contains no original quantitative disposition parameters (CL, V, etc.) in the provided evidence. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment of nitrate and nitrite in animal feed and does not contain any pharmacokinetic data for moxisylyte. |
 | PD | EFSA_2020 | not_relevant | 0 | 0 | The paper discusses nitrate/nitrite risk assessment in feed and does not mention moxisylyte or report any pharmacodynamic parameters for it. |
-| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not involve the drug moxisylyte or any pharmacokinetic parameters. |
+| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not contain any pharmacokinetic data for moxisylyte. |
 | PD | EFSA_2023 | not_relevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not contain any pharmacodynamic or exposure-response data for moxisylyte. |
-| popPK | Gentile_2026 | irrelevant | 0 | 0 | The paper describes a siRNA drug for prion disease and does not involve moxisylyte or report its pharmacokinetic parameters. |
+| popPK | Gentile_2026 | irrelevant | 0 | 0 | The paper describes a siRNA drug for prion disease and does not involve moxisylyte or its pharmacokinetics. |
 | popPK | Harris_1973 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Harris_1973 | not_relevant | 0 | 0 | The paper studies GABA uptake in rat cortex and does not mention moxisylyte or report any pharmacodynamic parameters for it. |
-| popPK | Hong_2026 | irrelevant | 0 | 0 | The paper is a computational chemistry study on molecular property prediction models and does not report pharmacokinetic parameters for moxisylyte. |
+| popPK | Hong_2026 | irrelevant | 0 | 0 | The paper describes a machine learning model for molecular property prediction and does not report pharmacokinetic parameters for moxisylyte. |
 | PD | Hong_2026 | not_relevant | 0 | 0 | The paper describes a deep learning model (HimNet) for predicting molecular properties and does not contain any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for moxisylyte. |
 | popPK | Humphrey_1978 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Humphrey_1978 | not_relevant | 0 | 0 | The paper studies alpha-adrenoceptor antagonists on 5-HT responses in dog saphenous vein and does not mention moxisylyte or report any PD parameters for it. |
-| popPK | Iuga_2026 | irrelevant | 0 | 0 | The paper focuses on SARS-CoV-2 protease inhibitors and does not involve moxisylyte or pharmacokinetic parameters. |
+| popPK | Iuga_2026 | irrelevant | 0 | 0 | The paper describes the design and biological evaluation of SARS-CoV-2 papain-like protease inhibitors and contains no pharmacokinetic data for moxisylyte. |
 | PD | Iuga_2026 | not_relevant | 0 | 0 | The paper reports biochemical IC50 and antiviral EC50 values for SARS-CoV-2 PLpro inhibitors, but does not contain any pharmacodynamic or exposure-response data for moxisylyte. |
-| popPK | Lituma-González_2026 | irrelevant | 0 | 0 | The paper is an in-silico mechanistic study of phytochemicals binding to EGFR and does not involve moxisylyte or pharmacokinetic parameters. |
+| popPK | Lituma-González_2026 | irrelevant | 0 | 0 | The paper is an in silico mechanistic study of phytochemicals binding to EGFR and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Lituma-González_2026 | not_relevant | 0 | 0 | The paper is an in silico study of phytochemicals binding to EGFR T790M and does not involve moxisylyte or report any pharmacodynamic exposure-response or dose-response data. |
-| popPK | Malta_1979 | irrelevant | 0 | 0 | The paper is a pharmacological study on alpha-adrenoceptors in cat skeletal muscle and does not involve moxisylyte or pharmacokinetic parameters. |
+| popPK | Malta_1979 | irrelevant | 0 | 0 | The paper is a pharmacological study of alpha-adrenoceptors in cat skeletal muscle and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Malta_1979 | not_relevant | 0 | 0 | The paper studies alpha-adrenoceptors in cat skeletal muscle using various agonists/antagonists and does not mention moxisylyte or report any PD parameters for it. |
-| popPK | Marquer_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of thymoxamine, not moxisylyte. |
-| popPK | Marquer_1998 | irrelevant | 1 | 0 | The paper is a review of pharmacodynamic and pharmacokinetic properties that describes qualitative metabolic pathways and routes of excretion but does not report specific quantitative disposition parameters (e.g., CL, V, t1/2) for moxisylyte. |
+| popPK | Marquer_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of thymoxamine and its metabolites, not moxisylyte. |
+| popPK | Marquer_1998 | irrelevant | 2 | 0 | The paper is a review of pharmacodynamic and pharmacokinetic properties that describes qualitative changes in metabolite concentrations but does not report specific quantitative PK parameters (CL, V, t1/2) in the provided text. |
 | PD | Marquer_1998 | not_relevant | 2 | 1 | The text is a qualitative review that mentions dose ranges (10-30 mg) and efficacy but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect curve. |
-| popPK | Menke_2024 | irrelevant | 0 | 0 | The paper describes the chemical synthesis and protonation properties of a triazine macrocycle, not the pharmacokinetics of moxisylyte. |
+| popPK | Menke_2024 | irrelevant | 0 | 0 | The paper describes the proton affinity and conformational dynamics of a triazine macrocycle, not the pharmacokinetics of moxisylyte. |
 | PD | Menke_2024 | not_relevant | 0 | 0 | The paper describes the chemical synthesis, proton affinity, and conformational dynamics of a triazine macrocycle, containing no pharmacodynamic or exposure-response data for moxisylyte. |
 | popPK | Morse_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lysergic acid diethylamide (LSD), not moxisylyte. |
 | PD | Morse_2025 | not_relevant | 1 | 0 | The paper studies LSD, not moxisylyte, and explicitly states that PD modeling was limited due to small effects, providing no numeric PD parameters. |
-| popPK | Murphy_2021 | irrelevant | 0 | 0 | The paper is a review of Cdc42 signaling and cancer therapeutics, containing no pharmacokinetic data for moxisylyte. |
+| popPK | Murphy_2021 | irrelevant | 0 | 0 | The paper is a review of Cdc42 signaling inhibition and does not contain any pharmacokinetic data for moxisylyte. |
 | PD | Murphy_2021 | not_relevant | 0 | 0 | The paper is a review of Cdc42 signaling and does not mention moxisylyte or report any pharmacodynamic parameters. |
-| popPK | Nardella_2025 | irrelevant | 0 | 0 | The paper describes an antimalarial kinase inhibitor (compound 12) and does not involve the drug moxisylyte or report any pharmacokinetic parameters. |
+| popPK | Nardella_2025 | irrelevant | 0 | 0 | The paper describes an antimalarial kinase inhibitor (compound 12) and does not involve the drug moxisylyte or its pharmacokinetics. |
 | PD | Nardella_2025 | not_relevant | 0 | 0 | The paper discusses a kinase inhibitor (compound 12) for malaria, not moxisylyte, and does not report any pharmacodynamic or exposure-response parameters. |
-| popPK | Neau_1998 | relevant | 8 | 3 | The study reports pharmacokinetic parameters for moxisylyte in rats, but only half-life values are explicitly provided in the text, lacking clearance, volume, or compartmental model parameters. |
-| popPK | Novotná_2023 | irrelevant | 0 | 0 | The paper studies DON prodrugs (e.g., P11, DRP-104) and does not mention moxisylyte. |
+| popPK | Neau_1998 | relevant | 8 | 3 | The study reports pharmacokinetic parameters (half-life) for moxisylyte in rats, but specific quantitative values for clearance, volume, or rate constants are not provided in the text. |
+| popPK | Novotná_2023 | irrelevant | 0 | 0 | The paper studies DON prodrugs, not moxisylyte. |
 | PD | Novotná_2023 | not_relevant | 0 | 0 | The paper focuses on the synthesis, stability, and pharmacokinetics of DON prodrugs, reporting no pharmacodynamic or exposure-response data. |
-| popPK | Orth_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on the ubiquitination of small molecule inhibitors (BI8622/BI8626) by HUWE1 and does not involve the drug moxisylyte or report any pharmacokinetic parameters. |
+| popPK | Orth_2025 | irrelevant | 0 | 0 | The paper describes the ubiquitination of drug-like small molecules by HUWE1 and does not involve moxisylyte or any pharmacokinetic parameters. |
 | PD | Orth_2025 | not_relevant | 0 | 0 | The paper investigates the biochemical mechanism of ubiquitination of small molecules by HUWE1 and does not report any pharmacodynamic (exposure-response or dose-response) relationship for moxisylyte or any other drug in a physiological or clinical context. |
 | popPK | Peters_1983 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study on rat pituitary cells and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Peters_1983 | not_relevant | 0 | 0 | The paper studies adrenergic agonists (epinephrine, norepinephrine, etc.) on rat pituitary cells and does not mention or study moxisylyte. |
-| popPK | Rai_2026 | irrelevant | 0 | 0 | The paper studies NIRF theranostic probes for Alzheimer's disease (compound I-43) and does not mention moxisylyte or report its pharmacokinetic parameters. |
-| popPK | Roquebert_1981 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of thymoxamine in rat vas deferens and does not involve moxisylyte or pharmacokinetic parameters. |
+| popPK | Rai_2026 | irrelevant | 0 | 0 | The paper describes the development of NIRF theranostic probes for Alzheimer's disease and does not involve the drug moxisylyte. |
+| popPK | Roquebert_1981 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of thymoxamine in rat vas deferens, not the pharmacokinetics of moxisylyte. |
 | PD | Roquebert_1981 | not_relevant | 0 | 0 | The paper studies thymoxamine and its metabolites, not moxisylyte. |
-| popPK | Roy_2025 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action of SW016789 in beta cells and does not involve moxisylyte or report any pharmacokinetic parameters. |
+| popPK | Roy_2025 | irrelevant | 0 | 0 | The paper investigates the mechanism of action of SW016789 on beta cells and does not involve moxisylyte or any pharmacokinetic parameters. |
 | PD | Roy_2025 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of SW016789 (not moxisylyte) and does not report any pharmacodynamic or exposure-response data for moxisylyte. |
-| popPK | Schaduangrat_2023 | irrelevant | 0 | 0 | The paper is a machine learning study for identifying estrogen receptor inhibitors and does not contain any pharmacokinetic data or parameters for moxisylyte. |
+| popPK | Schaduangrat_2023 | irrelevant | 0 | 0 | The paper describes a machine learning model for identifying estrogen receptor antagonists and contains no pharmacokinetic data for moxisylyte. |
 | PD | Schaduangrat_2023 | not_relevant | 0 | 0 | The paper describes a machine learning model for predicting estrogen receptor inhibitors and does not report any pharmacodynamic or exposure-response data for moxisylyte. |
-| popPK | Schwinghamer_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of monoclonal antibodies in mice, not moxisylyte. |
+| popPK | Schwinghamer_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of monoclonal antibodies in mice, not moxisylyte. |
 | PD | Schwinghamer_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of monoclonal antibodies in the brain and does not mention moxisylyte or report any pharmacodynamic or exposure-response relationships. |
-| popPK | Schäfer_2022 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of GS-621763 (a remdesivir prodrug), not moxisylyte. |
+| popPK | Schäfer_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and efficacy of GS-621763 (a remdesivir prodrug) in mice, not moxisylyte. |
 | PD | Schäfer_2022 | not_relevant | 0 | 0 | The paper discusses GS-621763 (a remdesivir prodrug) and molnupiravir, not moxisylyte, and does not report specific numeric PD parameters for the target drug. |
 | popPK | Soldati_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ibopamine, not moxisylyte. |
 | PD | Soldati_1993 | not_relevant | 0 | 0 | The paper studies ibopamine, not moxisylyte. |
-| popPK | Spinaci_2023 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of A2A adenosine receptor antagonists and CK1δ inhibitors, with no mention of moxisylyte or pharmacokinetic parameters. |
+| popPK | Spinaci_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and biological evaluation of adenosine receptor antagonists and CK1δ inhibitors, with no mention of moxisylyte or its pharmacokinetics. |
 | PD | Spinaci_2023 | not_relevant | 0 | 0 | The paper reports in vitro binding affinity (Ki) and enzyme inhibition (IC50) for novel compounds, not pharmacodynamic exposure-response or dose-response relationships for moxisylyte. |
-| popPK | Tavares_2023 | irrelevant | 0 | 0 | The paper studies novel HDAC inhibitors for malaria and does not mention or report pharmacokinetic parameters for moxisylyte. |
+| popPK | Tavares_2023 | irrelevant | 0 | 0 | The paper describes in vitro antimalarial HDAC inhibitors and contains no pharmacokinetic data for moxisylyte. |
 | PD | Tavares_2023 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for HDAC inhibitors against malaria parasites, which is a pharmacological potency assay, not a pharmacodynamic (exposure-response) model for moxisylyte or any other drug in a biological system. |
-| popPK | Vogel_2024 | irrelevant | 0 | 0 | The paper is a wastewater-based epidemiology study focused on analytical methods for substance use assessment and does not report pharmacokinetic parameters for moxisylyte. |
+| popPK | Vogel_2024 | irrelevant | 0 | 0 | The paper is a wastewater-based epidemiology study focused on substance use assessment and does not report pharmacokinetic parameters for moxisylyte. |
 | PD | Vogel_2024 | not_relevant | 0 | 0 | The paper focuses on wastewater-based epidemiology and analytical method validation for substance detection, containing no pharmacokinetic or pharmacodynamic data for moxisylyte. |
 | popPK | Watanabe_1991 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacodynamic study reporting IC50 values for smooth muscle contraction, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Zheng_2026 | irrelevant | 0 | 0 | The paper investigates SARS-CoV-2 entry inhibitors (DOTAP, cefotiam, melittin, teicoplanin) and does not mention moxisylyte or report its pharmacokinetic parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

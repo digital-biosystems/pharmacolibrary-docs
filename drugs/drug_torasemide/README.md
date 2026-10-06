@@ -26,13 +26,19 @@ Torasemide is a loop diuretic used to treat conditions involving fluid retention
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 08:18 | 2:11 | 0/0/1 | 0/0/0 | 0/0/1 | 22,699/7,595 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-06 19:44 | 4:31 | 0/0/1 | 0/0/1 | 0/0/1 | 65,369/10,622 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Pelligand_2020_reference](drugs/drug_torasemide/Torasemide_Pelligand2020_reference.md) | — | 1-compartment (no model) | 1 | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Pelligand_2020_reference](drugs/drug_torasemide/Torasemide_Pelligand2020_reference.md) | — | 1-compartment (no model) | 1 | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Paulin_2016_diuresis](drugs/drug_torasemide/pd_Paulin_2016_diuresis.md) | diuresis ← torasemide excretion rate in urine · indirect response — drug inhibits the loss of diuresis | — | Paulin A et al., A pharmacokinetic/pharmacodynamic model…, Journal of veterinary pharm… (2016) | [10.1111/jvp.12316](https://doi.org/10.1111/jvp.12316) |
 
 ## Pharmacogenomics (PGx)
 
@@ -73,7 +79,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 28 matched, 28 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -82,8 +88,8 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hampel_2021.pdf` | Hampel P et al., The search for brain-permeant NKCC1 inh…, Epilepsy & behavior : E&B 1… (2021) | popPK | 8 | [10.1016/j.yebeh.2020.107616](https://doi.org/10.1016/j.yebeh.2020.107616) | [33279441](https://pubmed.ncbi.nlm.nih.gov/33279441) | The paper is a PK/PD study in mice reporting brain distribution kinetics for torasemide, but specific quantitative parameter values (CL, V, ka) are not explicitly listed in the provided abstract text. |
-| `Paulin_2016.pdf` | Paulin A et al., A pharmacokinetic/pharmacodynamic model…, Journal of veterinary pharm… (2016) | popPK | 8 | [10.1111/jvp.12316](https://doi.org/10.1111/jvp.12316) | [27230410](https://pubmed.ncbi.nlm.nih.gov/27230410) | The study is a PK/PD modeling study for torasemide in dogs, but the evidence only reports PD parameters (Imax, TERU50) and lacks specific numeric PK values like clearance or volume. |
+| `Paulin_2016.pdf` | Paulin A et al., A pharmacokinetic/pharmacodynamic model…, Journal of veterinary pharm… (2016) | popPK | 9 | [10.1111/jvp.12316](https://doi.org/10.1111/jvp.12316) | [27230410](https://pubmed.ncbi.nlm.nih.gov/27230410) | The study reports a PK/PD model for torasemide in dogs, but specific quantitative PK parameters (CL, V, ka) are not explicitly listed in the provided abstract text, only PD parameters like Imax and TERU50. |
+| `Hampel_2021.pdf` | Hampel P et al., The search for brain-permeant NKCC1 inh…, Epilepsy & behavior : E&B 1… (2021) | popPK | 8 | [10.1016/j.yebeh.2020.107616](https://doi.org/10.1016/j.yebeh.2020.107616) | [33279441](https://pubmed.ncbi.nlm.nih.gov/33279441) | The study reports PK-PD modeling of torasemide in mice, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
 | `Barbanoj_2009.pdf` | Barbanoj MJ et al., A bioavailability/bioequivalence and ph…, Clinical and experimental p… (2009) | pd | 5 | [10.1111/j.1440-1681.2008.05089.x](https://doi.org/10.1111/j.1440-1681.2008.05089.x) | [19673928](https://www.ncbi.nlm.nih.gov/pubmed/19673928) | metadata signals extractable PD data (sigmoid) |
 | `Werner_2008.pdf` | Werner D et al., Determinants of steady-state torasemide…, Clinical pharmacokinetics (2008) | pgx | 8 | [10.2165/00003088-200847050-00003](https://doi.org/10.2165/00003088-200847050-00003) | [18399713](https://www.ncbi.nlm.nih.gov/pubmed/18399713) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Bae_2004.pdf` | Bae SK et al., Effects of cysteine on the pharmacokine…, Journal of pharmaceutical s… (2004) | pgx | 7 | [10.1002/jps.20151](https://doi.org/10.1002/jps.20151) | [15295798](https://www.ncbi.nlm.nih.gov/pubmed/15295798) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
@@ -92,7 +98,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Li_2020.pdf` | Li Y et al., Quality of oral anticoagulation control…, Current medical research an… (2020) | pgx | 5 | [10.1080/03007995.2020.1796611](https://doi.org/10.1080/03007995.2020.1796611) | [32677855](https://www.ncbi.nlm.nih.gov/pubmed/32677855) | metadata signals extractable PGX data (CYP2C9*3) |
 | `Yasar_1999.pdf` | Yasar U et al., Validation of methods for CYP2C9 genoty…, Biochemical and biophysical… (1999) | pgx | 5 | [10.1006/bbrc.1998.9992](https://doi.org/10.1006/bbrc.1998.9992) | [9920790](https://www.ncbi.nlm.nih.gov/pubmed/9920790) | metadata signals extractable PGX data (CYP2C9) |
 
-<sub>queue written 2026-09-30T08:16:06.803744+00:00</sub>
+<sub>queue written 2026-10-06T19:40:34.527545+00:00</sub>
 
 ## Screened and excluded
 
@@ -102,19 +108,19 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Barbanoj_2009 | irrelevant | 0 | 0 | no_text gate: only 159 chars of text extracted (&lt; 400) |
 | PD | Barbanoj_2009 | not_relevant | 0 | 0 | The paper is a bioavailability/bioequivalence and pharmacokinetic study that does not report pharmacodynamic or exposure-response data. |
 | PGx | Bhasker_1997 | not_relevant | 2 | 0 | The paper explicitly states there was no apparent correlation between CYP2C9 genotype and the hydroxylation of torasemide, and no PK/PD parameters for torasemide were quantified. |
-| popPK | Hampel_2021 | relevant | 8 | 2 | The paper is a PK/PD study in mice reporting brain distribution kinetics for torasemide, but specific quantitative parameter values (CL, V, ka) are not explicitly listed in the provided abstract text. |
+| popPK | Hampel_2021 | relevant | 8 | 2 | The study reports PK-PD modeling of torasemide in mice, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
 | popPK | Kipnowski_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion transport in frog skin, not a pharmacokinetic study, and reports no disposition parameters for torasemide. |
 | PD | Kipnowski_1986 | not_relevant | 0 | 0 | The paper explicitly states that torasemide did not affect sodium transport, so no dose-response or concentration-effect relationship is reported for this drug. |
 | PGx | Li_2020 | not_relevant | 0 | 0 | The paper studies warfarin pharmacogenomics (CYP2C9/VKORC1) and mentions torasemide only as a concomitant medication associated with poor anticoagulation control, not as the primary drug for which a pharmacogenomic effect is reported. |
-| PGx | Li_2025 | not_relevant | 0 | 0 | The paper investigates pharmacogenomic risk factors for methotrexate toxicity, and while torasemide is mentioned as a co-medication associated with increased toxicity risk, the study does not report any pharmacokinetic or pharmacodynamic parameters of torasemide itself. |
-| popPK | Löffler-Walz_1998 | irrelevant | 0 | 0 | The study is a mechanistic investigation of torasemide's interaction with K(ATP) channels in rat aorta, reporting pharmacodynamic IC50/EC50 values rather than pharmacokinetic disposition parameters. |
+| PGx | Li_2025 | not_relevant | 0 | 0 | The paper investigates pharmacogenomic risk factors for methotrexate toxicity, not the pharmacokinetics or pharmacodynamics of torasemide. |
+| popPK | Löffler-Walz_1998 | irrelevant | 0 | 0 | The study investigates the interaction of torasemide with K(ATP) channels in rat aorta (mechanistic/pharmacodynamic) and does not report pharmacokinetic parameters. |
 | PGx | Nadin_1999 | not_relevant | 0 | 0 | The paper investigates the metabolism of retinoic acid by CYP2C8 and mentions torasemide only as a negative control inhibitor for CYP2C9, not as the drug of interest for pharmacogenomic analysis. |
-| popPK | Paulin_2016 | relevant | 8 | 2 | The study is a PK/PD modeling study for torasemide in dogs, but the evidence only reports PD parameters (Imax, TERU50) and lacks specific numeric PK values like clearance or volume. |
+| popPK | Paulin_2016 | relevant | 9 | 2 | The study reports a PK/PD model for torasemide in dogs, but specific quantitative PK parameters (CL, V, ka) are not explicitly listed in the provided abstract text, only PD parameters like Imax and TERU50. |
 | PGx | Pavlova_2020 | not_relevant | 5 | 2 | The paper is a review that mentions the role of genetic liver metabolism polymorphism in torasemide efficacy/safety but does not report specific quantitative PK/PD parameter changes or fitted effect sizes. |
-| popPK | Rolin_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacological activity of a different compound (BM-591) and mentions torasemide only as a chemical reference, providing no PK parameters for torasemide. |
+| popPK | Rolin_2004 | irrelevant | 0 | 0 | The study evaluates the pharmacological activity of a different compound (BM-591) and only mentions torasemide as a chemical reference or comparator for diuretic activity, without reporting any PK parameters for torasemide. |
 | PD | Rolin_2004 | not_relevant | 0 | 0 | The paper evaluates the pharmacological properties of BM-591 enantiomers, not torasemide; torasemide is only mentioned as a chemical reference and its diuretic activity is noted to be lost in the analogs, with no PD parameters reported for torasemide itself. |
 | PGx | Yasar_1999 | not_relevant | 0 | 0 | The paper reports allele frequencies and genotyping method validation in a healthy population, but does not measure or report any pharmacokinetic or pharmacodynamic parameters for torasemide. |
-| PGx | Zhou_2009 | not_relevant | 0 | 0 | The paper is a review of CYP2C9 enzyme properties and mentions torasemide as a substrate, but it does not report specific pharmacogenomic data linking gene variants to PK/PD parameters for torasemide. |
+| PGx | Zhou_2009 | not_relevant | 0 | 0 | The paper is a review of CYP2C9 enzyme properties and mentions torasemide as a substrate, but it does not report specific pharmacogenomic data or quantitative PK/PD changes associated with CYP2C9 genotypes for torasemide. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 10:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 19:40 UTC</sub>

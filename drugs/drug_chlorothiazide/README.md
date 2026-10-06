@@ -18,25 +18,11 @@ Chlorothiazide is a thiazide diuretic used to treat high blood pressure, congest
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:11 | 0:58 | 0/0/0 | 0/1/0 | 0/0/0 | 1,852/218 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 0/1 | 0 |
+| 2026-10-06 15:17 | 1:12 | 0/0/0 | 0/0/0 | 0/0/0 | 29,895/1,163 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 0/1 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_GFR](drugs/drug_chlorothiazide/pd_MOYER_1957_GFR.md) | glomerular filtration rate ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_ammonia_excretion](drugs/drug_chlorothiazide/pd_MOYER_1957_ammonia_excretion.md) | ammonia excretion ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_bicarbonate_excretion](drugs/drug_chlorothiazide/pd_MOYER_1957_bicarbonate_excretion.md) | bicarbonate excretion ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_chloride_excretion](drugs/drug_chlorothiazide/pd_MOYER_1957_chloride_excretion.md) | chloride excretion ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_mean_blood_pressure](drugs/drug_chlorothiazide/pd_MOYER_1957_mean_blood_pressure.md) | mean blood pressure ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_potassium_excretion](drugs/drug_chlorothiazide/pd_MOYER_1957_potassium_excretion.md) | potassium excretion ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_renal_blood_flow](drugs/drug_chlorothiazide/pd_MOYER_1957_renal_blood_flow.md) | renal blood flow ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_sodium_excretion](drugs/drug_chlorothiazide/pd_MOYER_1957_sodium_excretion.md) | sodium excretion ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [MOYER_1957_water_excretion](drugs/drug_chlorothiazide/pd_MOYER_1957_water_excretion.md) | water excretion ← chlorothiazide · stimulation effect | — | MOYER JH et al., [Pharmacodynamics of chlorothiazide (Di…, Proceedings of the Society… (1957) | [10.3181/00379727-95-23277](https://doi.org/10.3181/00379727-95-23277) |
 
 ## ADME sites
 
@@ -62,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **PubMed hits:** 43 matched, 41 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -72,7 +58,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Roch-Ramel_1997.pdf` | Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9023298](https://www.ncbi.nlm.nih.gov/pubmed/9023298) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T07:11:10.947899+00:00</sub>
+<sub>queue written 2026-10-06T15:16:44.735662+00:00</sub>
 
 ## Screened and excluded
 
@@ -85,9 +71,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | BARTORELLI_1961 | irrelevant | 0 | 0 | no_text gate: only 62 chars of text extracted (&lt; 400) |
 | PD | BARTORELLI_1961 | not_relevant | 1 | 0 | The provided text is only a title and does not contain the full text or any numeric PD parameters, curves, or model fits. |
 | PGx | Beéry_2012 | not_relevant | 0 | 0 | The paper characterizes the interaction between chlorothiazide and the ABCG2 transporter in vitro but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report any quantitative pharmacokinetic parameters for chlorothiazide. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for chlorothiazide. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The text is a narrative review of cardiovascular pharmacotherapy and does not contain specific data, models, or numeric parameters for chlorothiazide. |
-| popPK | Christesen_2002 | irrelevant | 0 | 0 | The paper is a case report on a glucokinase mutation where chlorothiazide is only mentioned as a therapeutic agent, with no pharmacokinetic parameters reported. |
+| popPK | Christesen_2002 | irrelevant | 0 | 0 | The paper reports on a glucokinase mutation and glucose homeostasis, using chlorothiazide only as a therapeutic agent without reporting any pharmacokinetic parameters for it. |
 | PD | Christesen_2002 | not_relevant | 0 | 0 | The paper reports a glucokinase mutation and its effect on glucose-stimulated insulin release, but does not provide any pharmacodynamic or exposure-response data for chlorothiazide. |
 | popPK | Corrigan_1980 | irrelevant | 2 | 0 | The study reports bioavailability and excretion data (percent recovery) but does not provide quantitative compartmental pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | PD | Corrigan_1980 | not_relevant | 4 | 2 | The paper describes a qualitative dose-response relationship and notes non-linearity at higher doses, but it does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative effect-vs-concentration curve in the provided text. |
@@ -95,34 +81,34 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Eknoyan_1975 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial respiration, not a pharmacokinetic study, and reports no disposition parameters for chlorothiazide. |
 | popPK | Frey_2003 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of gliclazide, not chlorothiazide. |
 | PD | Frey_2003 | not_relevant | 0 | 0 | The paper reports a population PK/PD model for gliclazide, not chlorothiazide. |
-| popPK | Gesek_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of sodium transport in cell lines where chlorothiazide is used as a pharmacological inhibitor, not a pharmacokinetic study of the drug's disposition. |
+| popPK | Gesek_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of sodium transport mechanisms in mouse cells where chlorothiazide is used as a pharmacological inhibitor, not a subject of pharmacokinetic analysis. |
 | PD | Gesek_1995 | not_relevant | 3 | 2 | The paper reports qualitative inhibition percentages and Michaelis constants for substrate transport, but lacks a concentration-effect curve or specific PD parameters (like IC50 or Emax) for chlorothiazide. |
 | popPK | Jokinen_2017 | irrelevant | 0 | 0 | The study focuses on the antinociceptive effects of diuretics on opioids and does not report pharmacokinetic parameters for chlorothiazide. |
 | PD | Jokinen_2017 | not_relevant | 1 | 0 | The study reports that chlorothiazide did not enhance opioid antinociception and provides no concentration-effect data or numeric PD parameters for chlorothiazide. |
-| popPK | Kong_2016 | irrelevant | 0 | 0 | The paper characterizes the pharmacology of PF-05190457 (a ghrelin receptor antagonist) and does not involve chlorothiazide or report any pharmacokinetic parameters. |
+| popPK | Kong_2016 | irrelevant | 0 | 0 | The paper characterizes the pharmacology of PF-05190457 (a ghrelin receptor antagonist) and does not involve chlorothiazide. |
 | PD | Kong_2016 | not_relevant | 0 | 0 | The paper characterizes the pharmacology of PF-05190457 (a ghrelin receptor antagonist), not chlorothiazide. |
 | popPK | Lant_1986 | irrelevant | 0 | 0 | The text is a general review of diuretic pharmacology and mechanisms without reporting specific quantitative pharmacokinetic parameters for chlorothiazide. |
 | PD | Lant_1986 | not_relevant | 1 | 0 | The text is a general review of diuretic pharmacology and clinical use, mentioning chlorothiazide only historically without providing any specific numeric PD parameters or exposure-response data. |
-| popPK | Li_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of taspoglutide in type 2 diabetes and does not involve chlorothiazide or report any pharmacokinetic parameters for it. |
+| popPK | Li_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of taspoglutide in type 2 diabetes and does not involve chlorothiazide or its pharmacokinetics. |
 | PD | Li_2015 | not_relevant | 0 | 0 | The paper reports pharmacodynamic parameters for taspoglutide, not chlorothiazide. |
-| popPK | Lo_2018 | irrelevant | 0 | 0 | The paper is a systematic review of glucose-lowering agents in diabetes and CKD, and does not report pharmacokinetic parameters for chlorothiazide. |
+| popPK | Lo_2018 | irrelevant | 0 | 0 | The paper is a systematic review of glucose-lowering agents in diabetes and CKD and does not contain pharmacokinetic data for chlorothiazide. |
 | PD | Lo_2018 | not_relevant | 0 | 0 | The paper is a systematic review of glucose-lowering agents in CKD and does not mention chlorothiazide or report any pharmacodynamic parameters. |
 | popPK | Lukeman_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding (IC50/Kd) and does not report pharmacokinetic disposition parameters for chlorothiazide. |
 | popPK | MOYER_1957 | irrelevant | 1 | 0 | The paper reports pharmacodynamic diuretic responses (sodium excretion) rather than quantitative pharmacokinetic parameters like clearance or volume of distribution. |
-| popPK | Maggi_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fenquizone, with chlorothiazide mentioned only as a comparator for duration of action. |
-| popPK | Maharaj_2015 | irrelevant | 1 | 0 | The study uses chlorothiazide only as a probe drug to parameterize small intestinal water volume in a PBPK model, without reporting specific pharmacokinetic parameters (CL, V, etc.) for the drug itself. |
+| popPK | Maggi_1985 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for fenquizone, not chlorothiazide, which is only mentioned as a comparator. |
+| popPK | Maharaj_2015 | irrelevant | 2 | 0 | The study uses chlorothiazide data to parameterize a small intestinal water volume model, but does not report quantitative PK parameters (CL, V, etc.) for chlorothiazide itself. |
 | popPK | McNeil_1987 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of clopamide, with chlorothiazide serving only as a comparator for diuretic efficacy without reported PK parameters. |
-| popPK | Overgaard_2016 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for liraglutide, not chlorothiazide. |
+| popPK | Overgaard_2016 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of liraglutide, not chlorothiazide. |
 | PD | Overgaard_2016 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis for liraglutide, not chlorothiazide, and contains no pharmacodynamic (PD) or exposure-response modeling. |
-| popPK | Poust_1976 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lithium, with chlorothiazide acting only as a co-administered agent affecting lithium clearance. |
+| popPK | Poust_1976 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for lithium, with chlorothiazide acting as a co-administered drug affecting lithium clearance, not as the subject drug. |
 | popPK | Roch-Ramel_1997 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | PD | Roch-Ramel_1997 | not_relevant | 0 | 0 | The paper focuses on urate transport mechanisms in brush-border membrane vesicles and does not report pharmacodynamic or exposure-response data for chlorothiazide. |
 | popPK | Scott_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of chlorothiazide's effect on bronchial smooth muscle contraction, not a pharmacokinetic study. |
-| popPK | Shaik_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of gliclazide, not chlorothiazide. |
+| popPK | Shaik_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for gliclazide, not chlorothiazide. |
 | PD | Shaik_2018 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of gliclazide, not chlorothiazide, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Sheiner_1981 | irrelevant | 0 | 0 | The paper is a methodological study on population PK estimation techniques using simulation and does not report specific quantitative disposition parameters for chlorothiazide. |
+| popPK | Sheiner_1981 | irrelevant | 0 | 0 | The paper is a methodological study evaluating population PK estimation techniques (NONMEM vs NPD/TS) using simulation and generic data, with no specific quantitative parameters reported for chlorothiazide. |
 | PD | Sheiner_1981 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PK) parameter estimation methods and does not contain any pharmacodynamic (PD) or exposure-response data for chlorothiazide. |
-| popPK | Tayo_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular effects, not a pharmacokinetic study, and reports no disposition parameters for chlorothiazide. |
+| popPK | Tayo_1984 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular effects, not a pharmacokinetic study, and reports no disposition parameters. |
 | PD | Tayo_1984 | not_relevant | 4 | 2 | The paper reports qualitative concentration-dependent effects and mentions EC50 for frusemide, but states chlorothiazide had no direct effect and only qualitatively reduced sensitivity to other agents without providing numeric PD parameters for chlorothiazide. |
 
 ---

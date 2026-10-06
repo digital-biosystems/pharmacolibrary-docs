@@ -4,7 +4,7 @@
 
 # bumetanide — `Bumetanide_Jullien2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,40 +20,36 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The plausibility check flagged the clearance/volume magnitudes as implausible, consistent with a unit or scale extraction error. A second reader returned null for all four parameter values (clearance 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h), leaving the extracted numbers unconfirmed, and also disagreed on the dose compound and primary analyte fields. Extracted — bumetanide: CL 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:20.900160+00:00) predates the upstream re-run (2026-10-06 17:40:51.753503+00:00). Current validate status: `rejected`.
 
 ## Citation
 Jullien V et al., Pilot evaluation of the population phar…, Journal of clinical pharmac… (2016)
   ·  DOI: [10.1002/jcph.596](https://doi.org/10.1002/jcph.596)
 
 ## Model component
-<dbs-pgx drug="bumetanide" model-id="Bumetanide_Jullien2016_reference" status="rejected" stale="false" population="term newborn infants with seizures" measured-compound="bumetanide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="bumetanide" model-id="Bumetanide_Jullien2016_reference" status="rejected" stale="true" population="term newborn infants with seizures" measured-compound="bumetanide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 0.063 | L/h | 1.75e-08 | [l] / [h] | not captured | exact (1.0) | Jullien_2016:abstract | — | not captured |
-| central distribution volumes | `Q63` · V1 | 0.28 | L | 0.00028000000000000003 | [l] | not captured | llm (0.6) | Jullien_2016:abstract | — | not captured |
-| peripheral distribution volumes | `Q64` · V2 | 0.44 | L | 0.00044 | [l] | not captured | llm (0.6) | Jullien_2016:abstract | — | not captured |
-| distribution clearance | `Q30` · Q | 0.59 | L/h | 1.638888888888889e-07 | [l] / [h] | not captured | exact (1.0) | Jullien_2016:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'clearance' routed out of structural estimates ('Birth body weight explained the interindividual variability of bumetanide clearance via an allometric model.')
+- table section iiv: 'central distribution volumes' routed out of structural estimates ('Birth body weight explained the interindividual variability of bumetanide clearance via an allometric model.')
+- table section iiv: 'peripheral distribution volumes' routed out of structural estimates ('Birth body weight explained the interindividual variability of bumetanide clearance via an allometric model.')
+- table section iiv: 'distribution clearance' routed out of structural estimates ('Birth body weight explained the interindividual variability of bumetanide clearance via an allometric model.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bumetanide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
@@ -67,16 +63,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central distribution volumes]` | 0.28 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 0.063 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution clearance]` | 0.59 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral distribution volumes]` | 0.44 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | bumetanide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | bumetanide | unknown | mismatch |
 
@@ -92,18 +84,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jullien_2016:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jullien_2016:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jullien_2016:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jullien_2016:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.063 | not captured | not captured | ['Jullien_2016:abstract'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.063 L/h | not captured | not captured | ['Jullien_2016:abstract'] |
-| C9_phys_window_Q63 | fail | volume within physiological range | 0.28 L | not captured | not captured | ['Jullien_2016:abstract'] |
-| C9_phys_window_Q64 | fail | volume within physiological range | 0.44 L | not captured | not captured | ['Jullien_2016:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -128,4 +111,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 08:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 17:40 UTC</sub>

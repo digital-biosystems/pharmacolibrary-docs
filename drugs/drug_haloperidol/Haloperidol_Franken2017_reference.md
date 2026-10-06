@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;haloperidol&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/&quot;},{&quot;label&quot;:&quot;Franken_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Pilla2013_reference&quot;,&quot;label&quot;:&quot;Pilla_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Haloperidol_Li2022_base&quot;,&quot;label&quot;:&quot;Li_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_final&quot;,&quot;label&quot;:&quot;Li_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # haloperidol — `Haloperidol_Franken2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,26 +25,26 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:08.881481+00:00) predates the upstream re-run (2026-10-06 15:45:47.584669+00:00). Current validate status: `extracted`.
+
 ## Citation
 Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6)
 
 ## Model component
-<dbs-pgx drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="needs_review" stale="false" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="extracted" stale="true" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka oral route | `Q49` · kabs | 0.236 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row7:col1 | — | not captured |
-| CL (L/h) | `Q22` · CL | 32.4 | L/h | 9e-06 | [l] / [h] | 11 | exact (1.0) | tab_1:row10:col1, tab_1:row10:col2, tab_1:row10:col4, tab_1:row10:col5, tab_1:row10:col6 | — | not captured |
-| Vd (L) | `Q61` · V | 1982 | L | 1.982 | [l] | 19 | exact (1.0) | tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col4, tab_1:row11:col5, tab_1:row11:col6 | — | not captured |
+| F | `Q40` · Fab | 0.861 | not captured | not captured | not captured | 18 | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Tab2:row3:col5, Tab2:row3:col6 | — | 55 (None% RSE) |
+| CL (L/h) | `Q22` · CL | 29.3 | L/h | 8.138888888888889e-06 | [l] / [h] | 11 | exact (1.0) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col4, Tab2:row6:col5, Tab2:row6:col6 | — | 43 (None% RSE) |
+| Vd (L) | `Q61` · V | 1260 | L | 1.26 | [l] | 19 | exact (1.0) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col4, Tab2:row7:col5, Tab2:row7:col6 | — | 70 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,17 +54,17 @@ Franken LG et al., Population pharmacokinetics of haloperi…, European journal 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('Ka subcutaneous', value '20') — already have one for this compound
-- dropped duplicate Q22 ('CL', value '131') — already have one for this compound
+- table section iiv: 'F' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'CL' routed out of structural estimates ('IIV (%)')
+- table section iiv: 'Vd' routed out of structural estimates ('IIV (%)')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=haloperidol
+- model equation 'θi = θpop-θΔ*exp(-θrate*TTD)' not bound — neither LHS nor base term 'θpop' linked to an ontology parameter
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_1:row15:col1 = '7 0'
-- unparsed cell tab_1:row15:col2 = '2 1'
-- unparsed cell tab_1:row15:col3 = '3 1'
-- unparsed cell tab_1:row15:col4 = '6 5'
-- unparsed cell tab_1:row15:col5 = '3 2'
-- unparsed cell tab_1:row15:col6 = '1 0 8'
+- LLM selected parameter table(s) 2
+- captured model equation θi = θpop-θΔ*exp(-θrate*TTD)
 
 ## Validation
 
@@ -90,14 +90,13 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 30.0 | 42.402 | 1.4134 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col4', 'tab_1:row11:col5', 'tab_1:row11:col6'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_1:row7:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.4 | not captured | not captured | ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col6'] |
+| C1_half_life_beta | pass | 30.0 | 29.808 | 0.9936 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5', 'Tab2:row7:col6'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 29.3 | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 32.4 L/h | not captured | not captured | ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col4', 'tab_1:row10:col5', 'tab_1:row10:col6'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.98e+03 L | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col4', 'tab_1:row11:col5', 'tab_1:row11:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 29.3 L/h | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5', 'Tab2:row6:col6'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.26e+03 L | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5', 'Tab2:row7:col6'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -115,21 +114,26 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_modelica.zip" download>Haloperidol_Franken2017_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_fmi.zip" download>Haloperidol_Franken2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_matlab.zip" download>Haloperidol_Franken2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_matlab_simbio.zip" download>Haloperidol_Franken2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_sbml.zip" download>Haloperidol_Franken2017_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_cellml.zip" download>Haloperidol_Franken2017_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference.svg" alt="Haloperidol_Franken2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 0.5 mg infusion over 10 min, single dose. Doses in the paper: 0.5, 2, 5 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_haloperidol/Haloperidol_Franken2017_reference/Haloperidol_Franken2017_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Haloperidol_Franken2017_reference_params.json` · controls `Haloperidol_Franken2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:45 UTC</sub>

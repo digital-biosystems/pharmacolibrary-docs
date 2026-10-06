@@ -18,7 +18,7 @@ Pargyline is a monoamine oxidase inhibitor that was used as an antihypertensive 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 06:49 | 5:45 | 0/0/0 | 0/0/0 | 0/0/0 | 30,600/1,564 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/1 | 0/0 | 0 |
+| 2026-10-06 16:18 | 3:44 | 0/0/0 | 0/0/0 | 0/0/0 | 31,423/2,161 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -43,18 +43,20 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 126 matched, 87 returned
+- **PubMed hits:** 126 matched, 100 returned
 - **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_15 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_17 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Langeloh_1987.pdf` | Langeloh A et al., The mechanism of the 3H-noradrenaline r…, Naunyn-Schmiedeberg's archi… (1987) | pd | 5 | [10.1007/BF00165750](https://doi.org/10.1007/BF00165750) | [3444477](https://www.ncbi.nlm.nih.gov/pubmed/3444477) | metadata signals extractable PD data (IC50) |
+| `Abrahamsen_1985.pdf` | Abrahamsen J et al., Accumulation of 3H-adrenaline by rabbit…, Blood vessels (1985) | pd | 4 | not captured | [3967097](https://www.ncbi.nlm.nih.gov/pubmed/3967097) | metadata signals extractable PD data (IC50) |
+| `Abrahamsen_1991.pdf` | Abrahamsen J, Accumulation and release of adrenaline,…, Pharmacology & toxicology (1991) | pd | 4 | [10.1111/j.1600-0773.1991.tb01613.x](https://doi.org/10.1111/j.1600-0773.1991.tb01613.x) | [1762989](https://www.ncbi.nlm.nih.gov/pubmed/1762989) | metadata signals extractable PD data (IC50) |
 | `Boeijinga_1993.pdf` | Boeijinga PH et al., Serotonergic modulation of neurotransmi…, Naunyn-Schmiedeberg's archi… (1993) | pd | 4 | [10.1007/BF00167229](https://doi.org/10.1007/BF00167229) | [8133898](https://www.ncbi.nlm.nih.gov/pubmed/8133898) | metadata signals extractable PD data (EC50) |
 | `Fowler_1986.pdf` | Fowler CJ et al., Stimulation by noradrenaline of inosito…, The Journal of pharmacy and… (1986) | pd | 4 | [10.1111/j.2042-7158.1986.tb04544.x](https://doi.org/10.1111/j.2042-7158.1986.tb04544.x) | [2871155](https://www.ncbi.nlm.nih.gov/pubmed/2871155) | metadata signals extractable PD data (EC50) |
 | `Hurst_1986.pdf` | Hurst JH et al., Inhibition of rat brainstem monoamine o…, Life sciences (1986) | pd | 4 | [10.1016/0024-3205(86)90553-9](https://doi.org/10.1016/0024-3205(86)90553-9) | [2430159](https://www.ncbi.nlm.nih.gov/pubmed/2430159) | metadata signals extractable PD data (IC50) |
@@ -70,7 +72,7 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Nirogi_2015.pdf` | Nirogi R et al., Evaluation of metabolism dependent inhi…, Chemico-biological interact… (2015) | pgx | 7 | [10.1016/j.cbi.2015.01.028](https://doi.org/10.1016/j.cbi.2015.01.028) | [25656918](https://www.ncbi.nlm.nih.gov/pubmed/25656918) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Niwa_2011.pdf` | Niwa T et al., Human liver enzymes responsible for met…, Drug metabolism letters (2011) | pgx | 5 | [10.2174/187231211796905026](https://doi.org/10.2174/187231211796905026) | [21679153](https://www.ncbi.nlm.nih.gov/pubmed/21679153) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-30T06:49:25.613533+00:00</sub>
+<sub>queue written 2026-10-06T16:17:46.861228+00:00</sub>
 
 ## Screened and excluded
 
@@ -82,20 +84,20 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Baxter_1991 | not_relevant | 0 | 0 | The paper uses pargyline as a metabolic inhibitor to stabilize 5-HT, not as the drug of interest for which a pharmacodynamic exposure-response relationship is being characterized. |
 | popPK | Baxter_1994 | irrelevant | 0 | 0 | The study is a pharmacological receptor characterization in rat tissue where pargyline is used only as a monoamine oxidase inhibitor tool compound, not as the subject of a pharmacokinetic analysis. |
 | PD | Baxter_1994 | not_relevant | 0 | 0 | The paper uses pargyline as a tool compound (MAO inhibitor) to characterize 5-HT receptors, not as the drug of interest for a pharmacodynamic exposure-response analysis. |
-| popPK | Boeijinga_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment where pargyline is used only as a co-administered MAO inhibitor, with no pharmacokinetic parameters reported. |
+| popPK | Boeijinga_1993 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
 | PD | Boeijinga_1993 | not_relevant | 0 | 0 | The paper reports PD parameters for serotonin and its receptor agonist/antagonists, but pargyline is used only as a tool compound (MAO inhibitor) to block reuptake, and no exposure-response or dose-response relationship for pargyline itself is reported. |
-| popPK | Brown_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of dopamine mechanisms in guinea-pig tissues where pargyline is used only as a monoamine oxidase inhibitor to modulate responses, not as the subject of a pharmacokinetic analysis. |
+| popPK | Brown_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of dopamine mechanisms in guinea-pig tissues where pargyline is used only as a tool compound (MAO inhibitor), not as the subject of PK analysis. |
 | PD | Brown_1990 | not_relevant | 1 | 2 | The paper reports a shift in the EC50 of dopamine in the presence of pargyline, but does not provide a dose-response curve or numeric parameters for pargyline itself. |
 | popPK | Cession-Fossion_1966 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | PD | Cession-Fossion_1966 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to assess pharmacodynamic relationships. |
-| popPK | Chetty_2006 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT3 receptors in the intestine where pargyline is used only as a non-selective MAO inhibitor to potentiate responses, not as a subject drug for PK analysis. |
+| popPK | Chetty_2006 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT3 receptors in the gut, where pargyline is used only as a tool compound (MAO inhibitor) to potentiate responses, not as the subject of a pharmacokinetic analysis. |
 | PD | Chetty_2006 | not_relevant | 0 | 0 | The paper reports pargyline only as a qualitative potentiator of 5-HT3 responses in rat jejunum without providing numeric dose-response parameters or concentration-effect data for pargyline itself. |
-| popPK | Conn_1985 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of serotonin receptors in rat brain tissue, and pargyline is used only as a non-specific MAO inhibitor to facilitate receptor binding, with no pharmacokinetic parameters reported. |
+| popPK | Conn_1985 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of serotonin receptors in rat brain tissue where pargyline is used as a co-administered MAO inhibitor, not a PK study of pargyline. |
 | PD | Conn_1985 | not_relevant | 3 | 2 | The paper reports an EC50 for serotonin in the presence of pargyline, but pargyline is used as a metabolic inhibitor to stabilize serotonin, not as the drug of interest for which a PD relationship is being characterized. |
-| popPK | Eckert_1976 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of noradrenaline distribution in rabbit aortic strips where pargyline is used only as an enzyme inhibitor, not as the subject drug for PK parameter estimation. |
+| popPK | Eckert_1976 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of noradrenaline distribution in rabbit aortic strips where pargyline is used only as an enzyme inhibitor, not as the subject drug for PK analysis. |
 | popPK | Feenstra_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of MAO inhibition where pargyline is used only as a comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Feenstra_1983 | not_relevant | 1 | 0 | The paper reports in vitro IC50 values for dopamine analogues and qualitatively compares their potency to pargyline, but does not provide numeric PD parameters or an exposure-response relationship for pargyline itself. |
-| popPK | Fitzgerald_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of monoamine release where pargyline is used solely as a monoamine oxidase inhibitor tool compound, not as the subject of pharmacokinetic analysis. |
+| popPK | Fitzgerald_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of monoamine release in rat brain slices where pargyline is used only as a tool compound (MAO inhibitor), not as the subject of pharmacokinetic analysis. |
 | PD | Fitzgerald_1993 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50) for MDMA and amphetamine, but pargyline is used only as a fixed-dose inhibitor (100 µmol/l) to modulate the effects of the primary drugs, with no dose-response or concentration-effect analysis performed for pargyline itself. |
 | popPK | Fowler_1986 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | Fowler_1986 | not_relevant | 0 | 0 | The paper investigates the effect of ambient potassium concentration on noradrenaline-stimulated inositol phospholipid breakdown in rat hippocampus and does not mention pargyline or report any pharmacodynamic parameters for it. |
@@ -108,8 +110,8 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Halberstadt_2016 | irrelevant | 1 | 0 | Pargyline is used as a co-administered MAO inhibitor to study the pharmacokinetics of 5-MeO-DMT, not as the subject drug for PK parameter extraction. |
 | PD | Halberstadt_2016 | not_relevant | 2 | 1 | The paper reports qualitative behavioral interactions and PK changes (increased levels) but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect curve for pargyline. |
 | PGx | He_2017 | not_relevant | 0 | 0 | The study investigates the effect of pargyline on CYP3A4/3A7 gene expression and histone methylation, not the effect of a genetic variant on pargyline's pharmacokinetics or pharmacodynamics. |
-| popPK | Henseling_1976 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of noradrenaline distribution in rabbit aortic strips where pargyline is used only as an enzyme inhibitor, not as the subject drug for PK parameter estimation. |
-| popPK | Henseling_1976_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of noradrenaline distribution in rabbit aortic strips where pargyline is used only as an enzyme inhibitor, not as the subject drug for PK parameter estimation. |
+| popPK | Henseling_1976 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of noradrenaline distribution in rabbit aortic strips where pargyline is used only as an enzyme inhibitor, not as the subject drug for PK analysis. |
+| popPK | Henseling_1976_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of noradrenaline distribution in rabbit aortic strips where pargyline is used only as an enzyme inhibitor, not as the subject drug for PK analysis. |
 | popPK | Hsu_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neuromuscular blockade in mouse phrenic nerve-diaphragm, and pargyline is only mentioned as a comparator MAO inhibitor with no pharmacokinetic parameters reported. |
 | PD | Hsu_1993 | not_relevant | 0 | 0 | The paper studies the interaction between MPTP and 4-phenylpyridine; pargyline is only mentioned as a negative control that did not potentiate the effect, and no PD parameters are reported for pargyline. |
 | popPK | Hurst_1986 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of CGP 6085 A, with pargyline serving only as a comparator for in vitro potency, and no pharmacokinetic parameters are reported. |
@@ -131,48 +133,48 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Liang_2004 | irrelevant | 0 | 0 | The study is a pharmacological investigation of antinociception in mice where pargyline is used as a co-administered agent, and no pharmacokinetic parameters are reported. |
 | popPK | Manoharan_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on MAO-B inhibitors where pargyline is used only as a reference comparator for in-vitro potency, with no pharmacokinetic data reported. |
 | PD | Manoharan_2023 | not_relevant | 0 | 0 | The paper reports in vitro IC50 and Ki values for new MAO-B inhibitors and compares them to pargyline, but does not report a pharmacokinetic or pharmacodynamic exposure-response relationship for pargyline itself. |
-| popPK | Maschauer_2015 | irrelevant | 0 | 0 | The study focuses on the PET ligand [(18)F]fluoroethyl-harmol, using pargyline only as a non-specific MAO-A inhibitor for reference, and does not report pharmacokinetic parameters for pargyline itself. |
+| popPK | Maschauer_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and binding of the PET ligand [(18)F]fluoroethyl-harmol, using pargyline only as a competitive inhibitor to block MAO-A, not as the subject drug. |
 | popPK | Matsumura_2013 | irrelevant | 0 | 0 | The study focuses on the anticonvulsant properties of indazole, with pargyline serving only as a comparator agent and no pharmacokinetic parameters for pargyline are reported. |
 | PD | Matsumura_2013 | not_relevant | 0 | 0 | The paper focuses on the anticonvulsant properties of indazole; pargyline is only mentioned as a comparator MAO inhibitor that did not reproduce the effect, with no PD or exposure-response data provided for pargyline. |
 | popPK | May_1993 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
 | PD | May_1993 | not_relevant | 0 | 0 | The paper describes the binding affinity of MPP+ to MAO-A and does not report any pharmacodynamic or exposure-response data for pargyline. |
-| popPK | McLean_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of 5-HT4 receptors where pargyline is used only as a non-specific uptake inhibitor, not as the subject drug for PK analysis. |
+| popPK | McLean_1995 | irrelevant | 0 | 0 | Pargyline is used only as a non-specific MAO inhibitor (co-administered with cocaine) in an in-vitro receptor pharmacology study, with no pharmacokinetic parameters reported. |
 | PD | McLean_1995 | not_relevant | 0 | 0 | Pargyline is used only as a non-specific uptake/metabolism inhibitor to test for changes in 5-HT potency; no exposure-response or dose-response relationship for pargyline itself is reported. |
-| popPK | Metting_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of norepinephrine in isolated rat lungs, using pargyline only as a metabolic inhibitor/comparator rather than as the subject drug. |
+| popPK | Metting_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of norepinephrine in rat lungs, using pargyline only as a metabolic inhibitor/comparator, not as the subject drug. |
 | popPK | Milne_2019 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on PYCR1 inhibitors where pargyline serves only as a starting fragment/comparator, and no pharmacokinetic parameters are reported. |
 | PD | Milne_2019 | not_relevant | 0 | 0 | The paper reports in vitro enzyme IC50 values for pargyline derivatives, which is a pharmacological potency metric, not a pharmacodynamic (exposure-response or dose-response) relationship in a biological system or PK/PD model. |
 | popPK | Mishra_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of anticonvulsant effects in rats where pargyline is used only as a pretreatment agent, with no pharmacokinetic parameters reported. |
 | popPK | Moret_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of 5-HT autoreceptors using pargyline as a pharmacological tool, reporting no pharmacokinetic parameters. |
 | PD | Moret_1988 | not_relevant | 3 | 2 | The paper describes qualitative antagonism of pargyline's effect by other drugs but does not provide numeric PD parameters (e.g., IC50, Emax) or a quantitative concentration-effect curve for pargyline itself. |
-| popPK | Moroi-Fetters_1995 | irrelevant | 0 | 0 | The study is a mechanistic investigation of alpha 1-adrenergic receptors in cell culture where pargyline is used only as a non-specific MAO inhibitor to potentiate epinephrine effects, with no pharmacokinetic parameters reported. |
+| popPK | Moroi-Fetters_1995 | irrelevant | 0 | 0 | Pargyline is used only as a non-specific MAO inhibitor to potentiate epinephrine effects in an in vitro receptor binding/coupling study, with no pharmacokinetic parameters reported. |
 | PD | Moroi-Fetters_1995 | not_relevant | 1 | 0 | The paper reports an EC50 for epinephrine, not pargyline; pargyline is only mentioned qualitatively as a potentiator at a fixed concentration. |
 | popPK | Nabeshima_1991 | irrelevant | 0 | 0 | The study focuses on the pharmacological effects of naftidrofuryl oxalate on amnesia, using pargyline only as a co-administered agent to induce a behavioral state, with no pharmacokinetic parameters reported. |
 | PD | Nabeshima_1991 | not_relevant | 0 | 0 | The paper focuses on naftidrofuryl oxalate; pargyline is used only as a tool compound to induce amnesia, and no exposure-response or dose-response PD parameters are reported for pargyline. |
-| popPK | Ni_2004 | irrelevant | 0 | 0 | The study is a mechanistic investigation of serotonin transporters in arterial smooth muscle where pargyline is used only as a pharmacological tool (MAO inhibitor) to modulate serotonin levels, not as the subject of a pharmacokinetic analysis. |
+| popPK | Ni_2004 | irrelevant | 0 | 0 | The study is a mechanistic investigation of serotonin transporter function in arterial smooth muscle, using pargyline only as a pharmacological tool to inhibit MAO, and does not report any pharmacokinetic parameters for pargyline. |
 | PD | Ni_2004 | not_relevant | 1 | 0 | The paper reports a qualitative increase in 5-HT concentration with pargyline but does not provide a dose-response curve, Emax, or any numeric PD parameters for pargyline itself. |
 | popPK | Nirogi_2015 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP2B6 inhibition by pargyline and does not report any pharmacokinetic disposition parameters (CL, V, t1/2) for pargyline. |
 | PD | Nirogi_2015 | not_relevant | 3 | 2 | The study reports in vitro enzyme inactivation parameters (KI, kinact) and predicted DDI fold-changes, but does not provide a pharmacodynamic exposure-response or dose-response relationship for pargyline in vivo or in a PK/PD context. |
-| PGx | Nirogi_2015 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP2B6 inhibition) in vitro and does not report any pharmacogenomic effects (gene variants) on pargyline's PK or PD parameters. |
+| PGx | Nirogi_2015 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving bupropion and MAOIs, not the pharmacogenomics of pargyline. |
 | PGx | Niwa_2011 | not_relevant | 0 | 0 | The paper studies the metabolism of tyramine, not pargyline; pargyline is used only as an inhibitor in the assay. |
 | popPK | Noce_2025 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on a new dual inhibitor (compound 9a) that contains a pargyline moiety, but it does not report pharmacokinetic parameters for pargyline itself. |
 | PD | Noce_2025 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for a new compound (9a) and qualitative cellular effects, but does not report a pharmacodynamic or exposure-response relationship for pargyline itself. |
-| popPK | Obata_1999 | irrelevant | 0 | 0 | The study is a mechanistic investigation of dopamine oxidation and hydroxyl radical formation, not a pharmacokinetic study, and pargyline is used only as a co-administered agent without any PK parameters reported. |
+| popPK | Obata_1999 | irrelevant | 0 | 0 | The study is a mechanistic investigation of dopamine oxidation and hydroxyl radical formation in rat striatum, not a pharmacokinetic study of pargyline. |
 | PD | Obata_1999 | not_relevant | 2 | 1 | The paper reports EC50/Emax for MPP+ (not pargyline) and only provides a single qualitative observation for pargyline at 10 mM without a dose-response curve or numeric PD parameters for pargyline. |
 | popPK | Oh_2020 | irrelevant | 0 | 0 | The paper is an in-vitro enzyme inhibition study where pargyline is used only as a reference comparator, with no pharmacokinetic parameters reported. |
 | PD | Oh_2020 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition data (IC50/Ki) for novel chalcone oxime ethers, using pargyline only as a reference standard, and does not report any pharmacokinetic or pharmacodynamic exposure-response relationship for pargyline. |
-| popPK | Paiva_1984 | irrelevant | 0 | 0 | The study focuses on the metabolism of 5-HT in isolated dog veins where pargyline is used as a pharmacological tool, not as the subject drug for PK parameter estimation. |
+| popPK | Paiva_1984 | irrelevant | 0 | 0 | The study investigates the metabolism of 5-hydroxytryptamine (5-HT) in dog saphenous veins, using pargyline only as a pharmacological tool to inhibit metabolism, rather than studying pargyline's own pharmacokinetics. |
 | PGx | Petersen_1977 | not_relevant | 2 | 5 | The paper studies the effect of pargyline on acetaldehyde levels (a PD parameter) in the context of ALDH isozyme induction, but does not report a pharmacogenomic effect (gene variant/genotype) on pargyline's PK or PD parameters. |
 | popPK | Raasch_1999 | irrelevant | 0 | 0 | The study focuses on the mechanism of MAO inhibition and reports IC50 values and percent inhibition, but does not provide pharmacokinetic parameters (CL, V, t1/2) for pargyline. |
 | PD | Raasch_1999 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for various compounds and a single qualitative in vivo effect percentage for pargyline (-95%), but lacks a dose-response curve, exposure-response analysis, or numeric PD parameters (like Emax/EC50) for pargyline specifically. |
-| popPK | Racké_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine release where pargyline is used as a tool compound, not a pharmacokinetic study of pargyline disposition. |
+| popPK | Racké_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine release where pargyline is used as a tool compound, not a pharmacokinetic study of pargyline. |
 | PD | Racké_1990 | not_relevant | 0 | 0 | Pargyline is used only as a non-specific MAO inhibitor to prevent dopamine metabolism; no concentration-effect or dose-response relationship for pargyline itself is reported. |
 | popPK | Reeves_1991 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
 | PD | Reeves_1991 | not_relevant | 0 | 0 | The paper investigates serotonin receptor mechanisms in rat esophagus and does not mention pargyline or report any pharmacodynamic parameters for it. |
 | popPK | Robinson_1989 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Robinson_1989 | not_relevant | 0 | 0 | The paper investigates the mechanism of neurotransmitter release evoked by tetrahydroaminoacridine and does not report any pharmacodynamic or exposure-response data for pargyline. |
-| popPK | Sahin-Erdemli_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of 5-HT receptors in guinea-pig iliac artery, and pargyline is used only as a non-pharmacokinetic tool compound with no disposition parameters reported. |
+| popPK | Sahin-Erdemli_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of 5-HT receptors in guinea-pig iliac artery where pargyline is used only as a non-significant comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Sahin-Erdemli_1991 | not_relevant | 0 | 0 | The paper investigates 5-HT receptor pharmacology in isolated tissue and explicitly states that pargyline had no significant effect, providing no exposure-response or dose-response data for pargyline. |
-| popPK | Schömig_1987 | irrelevant | 0 | 0 | The study is a mechanistic simulation of neuronal noradrenaline transport where pargyline is used only as a pretreatment agent, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Schömig_1987 | irrelevant | 0 | 0 | The study is a mechanistic simulation of noradrenaline transport in rat tissues where pargyline is used only as a pretreatment agent, not as the subject of pharmacokinetic analysis. |
 | PGx | Shen_2010 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of 5-MeO-DMT, not pargyline; pargyline is used only as an inhibitor to modulate the metabolism of the study drug. |
 | popPK | Strait_1986 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
 | PD | Strait_1986 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of dopamine autoreceptor regulation of tyrosine hydroxylase and does not report pharmacokinetic or pharmacodynamic exposure-response data for pargyline. |
@@ -180,7 +182,7 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Takao_2018 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel MAO-B inhibitors and compares them to pargyline, but does not report a pharmacodynamic (exposure-response) model or numeric PD parameters for pargyline itself. |
 | popPK | Takao_2019 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on MAO inhibitors where pargyline is used only as a positive control, with no pharmacokinetic parameters reported. |
 | PD | Takao_2019 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel MAO inhibitors using pargyline only as a qualitative positive control, without providing any exposure-response, dose-response curve, or numeric PD parameters for pargyline itself. |
-| popPK | Trendelenburg_1984 | irrelevant | 0 | 0 | The study is a mechanistic investigation of noradrenaline metabolism in rat hearts where pargyline is used only as an MAO inhibitor, not as the subject drug for PK parameter estimation. |
+| popPK | Trendelenburg_1984 | irrelevant | 0 | 0 | The study investigates the mechanism of noradrenaline metabolism in rat hearts using pargyline as an enzyme inhibitor, not the pharmacokinetics of pargyline itself. |
 | popPK | Venkidath_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new MAO-B/BACE1 inhibitors where pargyline is used only as a standard comparator for IC50 values, with no pharmacokinetic parameters reported. |
 | PD | Venkidath_2021 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50/Ki) for new compounds, using pargyline only as a standard comparator, and contains no pharmacokinetic or pharmacodynamic modeling or exposure-response analysis. |
 | popPK | Vieira-Coelho_1996 | irrelevant | 0 | 0 | The study is an in-vitro enzymatic assay of COMT activity where pargyline is used as a stabilizer in the buffer, not as the subject drug for pharmacokinetic analysis. |
@@ -191,7 +193,7 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Wright_2022 | not_relevant | 2 | 2 | The paper reports in vitro binding affinities (IC50, Kd) and qualitative PET observations regarding pargyline, but does not provide a pharmacodynamic exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for pargyline. |
 | popPK | Yang_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel coumarin-pargyline hybrids, not a pharmacokinetic study of pargyline itself, and contains no PK parameters. |
 | PD | Yang_2017 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel coumarin-pargyline hybrids, not pharmacodynamic or exposure-response data for the drug pargyline itself. |
-| popPK | Yildiz_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT receptors in rabbit iliac artery where pargyline is used only as a non-pharmacokinetic tool compound, with no PK parameters reported. |
+| popPK | Yildiz_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT receptors in rabbit iliac artery where pargyline is used only as a tool compound, with no pharmacokinetic parameters reported. |
 | PD | Yildiz_1993 | not_relevant | 0 | 0 | The paper reports that pargyline had no significant effect on the contractions induced by 5-HT or sumatriptan, providing no numeric PD parameters or exposure-response relationship for pargyline. |
 | popPK | Yildiz_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of 5-HT receptors in rabbit mesenteric artery where pargyline is used only as a non-pharmacokinetic tool compound, with no PK parameters reported. |
 | PD | Yildiz_1995 | not_relevant | 0 | 0 | The paper reports that pargyline had no significant effect on the contractions, providing no numeric PD parameters or exposure-response relationship for pargyline. |

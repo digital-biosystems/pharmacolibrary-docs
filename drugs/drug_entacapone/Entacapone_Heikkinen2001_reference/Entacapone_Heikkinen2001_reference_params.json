@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1000 mg oral (N04BX02)",
+ "model_id": "Entacapone_Heikkinen2001_reference",
+ "molar_masses": {
+  "central.C": 0.305286
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3649999999999996e-05,
+  "F": 25.0,
+  "MM": 0.305286,
+  "Tlag": 0.0,
+  "VdPerKg": 8e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "ka": 0.013888888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 682.9902948415585
+ },
+ "reference_peaks": {
+  "central.C": 2.217554649137365
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

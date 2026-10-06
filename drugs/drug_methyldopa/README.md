@@ -25,13 +25,13 @@ Methyldopa is a centrally acting antihypertensive drug used to treat high blood 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 05:19 | 2:45 | 0/2/0 | 0/0/0 | 0/0/0 | 31,820/5,839 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 1/1 | 0 |
+| 2026-10-06 12:26 | 7:31 | 0/2/0 | 0/0/0 | 0/0/0 | 60,936/5,977 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/2 | 3/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_reference](drugs/drug_methyldopa/Methyldopa_Liu2025_reference.md) | — | 1-compartment (no model) | 0 | Liu X et al., Determining the Optimal Dosing of Methy…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01523-2](https://doi.org/10.1007/s40262-025-01523-2) |
 
 ## ADME sites
@@ -59,9 +59,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 112 matched, 46 returned
+- **PubMed hits:** 112 matched, 73 returned
 - **screened:** 3  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -70,8 +70,8 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Barnett_1977.pdf` | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | popPK | 10 | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) | [908178](https://pubmed.ncbi.nlm.nih.gov/908178) | The paper reports quantitative pharmacokinetic parameters (clearance, volume of distribution, elimination constant, half-life) for methyldopa directly in the text. |
-| `Kwan_1976.pdf` | Kwan KC et al., Pharmacokinetics of methyldopa in man, The Journal of pharmacology… (1976) | popPK | 10 | not captured | [781212](https://pubmed.ncbi.nlm.nih.gov/781212) | The paper is a primary PK study of methyldopa in humans, but the evidence text only provides qualitative descriptions and a bioavailability fraction, lacking specific numeric values for clearance, volume, or half-life. |
+| `Barnett_1977.pdf` | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | popPK | 10 | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) | [908178](https://pubmed.ncbi.nlm.nih.gov/908178) | The paper reports quantitative pharmacokinetic parameters (clearance, volume of distribution, elimination constant, half-life) for methyldopa in humans. |
+| `Kwan_1976.pdf` | Kwan KC et al., Pharmacokinetics of methyldopa in man, The Journal of pharmacology… (1976) | popPK | 10 | not captured | [781212](https://pubmed.ncbi.nlm.nih.gov/781212) | The study reports a two-compartment PK model for methyldopa in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided abstract text. |
 | `Dingemanse_1996.pdf` | Dingemanse J et al., Multiple-dose clinical pharmacology of…, European journal of clinica… (1996) | pd | 5 | [10.1007/s002280050068](https://doi.org/10.1007/s002280050068) | [8739811](https://www.ncbi.nlm.nih.gov/pubmed/8739811) | metadata signals extractable PD data (concentration-effect) |
 | `Trocóniz_1998.pdf` | Trocóniz IF et al., Population pharmacodynamic modeling of…, Clinical pharmacology and t… (1998) | pd | 5 | [10.1016/S0009-9236(98)90028-5](https://doi.org/10.1016/S0009-9236(98)90028-5) | [9695725](https://www.ncbi.nlm.nih.gov/pubmed/9695725) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Nissinen_1992.pdf` | Nissinen E et al., Biochemical and pharmacological propert…, Naunyn-Schmiedeberg's archi… (1992) | pd | 4 | [10.1007/BF00173538](https://doi.org/10.1007/BF00173538) | [1407012](https://www.ncbi.nlm.nih.gov/pubmed/1407012) | metadata signals extractable PD data (IC50) |
@@ -81,49 +81,49 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Yamamoto_2021.pdf` | Yamamoto J et al., Impact of the catechol-O-methyltransfer…, Journal of neural transmiss… (2021) | pgx | 8 | [10.1007/s00702-020-02267-y](https://doi.org/10.1007/s00702-020-02267-y) | [33136226](https://www.ncbi.nlm.nih.gov/pubmed/33136226) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Weinshilboum_1984.pdf` | Weinshilboum RM, Human pharmacogenetics of methyl conjug…, Federation proceedings (1984) | pgx | 5 | not captured | [6714437](https://www.ncbi.nlm.nih.gov/pubmed/6714437) | metadata signals extractable PGX data (COMT) |
 
-<sub>queue written 2026-09-30T05:18:59.737378+00:00</sub>
+<sub>queue written 2026-10-06T12:23:27.989893+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adamiak-Giera_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa and its metabolite 3-O-methyldopa, not the drug methyldopa. |
-| popPK | Adamiak_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa, not methyldopa. |
+| popPK | Adamiak-Giera_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa and its metabolite 3-O-methyldopa, not the drug methyldopa. |
+| popPK | Adamiak_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa, not methyldopa. |
 | PD | Adamiak_2010 | not_relevant | 0 | 0 | The paper reports pharmacodynamic modeling for levodopa, not methyldopa. |
 | PGx | Ameyaw_2000 | not_relevant | 0 | 0 | The paper reports the frequency of a COMT genotype in a Ghanaian population but does not measure or report any pharmacokinetic or pharmacodynamic parameters of methyldopa. |
 | PD | Amro_2016 | not_relevant | 1 | 0 | The text is a general review of treatment options and guidelines for hypertension in pregnancy, mentioning pharmacodynamics qualitatively but providing no specific numeric PD parameters or exposure-response data for Methyldopa. |
 | PGx | Atwal_2015 | not_relevant | 0 | 0 | The paper reports a diagnostic case of AADC deficiency using metabolomics, not a pharmacogenomic study of methyldopa PK/PD parameters. |
-| popPK | Baas_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa and its metabolite 3-O-methyldopa, not the drug methyldopa. |
+| popPK | Baas_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa and its metabolite 3-O-methyldopa, not the drug methyldopa. |
 | PGx | Brennenstuhl_2020 | not_relevant | 0 | 0 | The paper describes a diagnostic method for AADC deficiency using 3-O-methyldopa as a biomarker, not the pharmacokinetics or pharmacodynamics of the drug methyldopa. |
 | PD | Brogden_1988 | not_relevant | 0 | 0 | The paper is a review of Captopril and only mentions Methyldopa qualitatively in a comparative context without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for Methyldopa. |
 | PD | Brogden_1990 | not_relevant | 0 | 0 | The paper is a review of Ketanserin and only mentions Methyldopa in a qualitative comparison of antihypertensive efficacy without providing any specific PD parameters or exposure-response data for Methyldopa. |
 | PGx | Desir_2012 | not_relevant | 0 | 0 | The paper identifies methyldopa as a substrate for renalase but does not report pharmacogenomic effects of gene variants on methyldopa's PK or PD parameters. |
-| popPK | Dingemanse_1995 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tolcapone and levodopa, with methyldopa (3-OMD) serving only as a metabolite marker for COMT activity rather than the subject drug. |
+| popPK | Dingemanse_1995 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tolcapone and levodopa, with methyldopa (3-OMD) serving only as a biomarker for COMT activity rather than the subject drug. |
 | popPK | Dingemanse_1996 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Dingemanse_1996 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of tolcapone, not methyldopa, and does not report PD parameters for methyldopa. |
 | PD | Entezari_2023 | not_relevant | 3 | 2 | The paper reports qualitative effects of alpha-methyldopa on steroidogenesis (increased E2/T) at specific concentrations but does not provide numeric PD parameters (e.g., EC50, Emax) or a fitted dose-response curve for the drug. |
-| popPK | Grange_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of L-dopa and benserazide in rats, with methyldopa not mentioned as a subject drug. |
-| popPK | Harder_1995 | irrelevant | 0 | 0 | The paper focuses on the pharmacodynamics of levodopa in Parkinson's disease, and methyldopa is not the subject drug (only its metabolite 3-O-methyldopa is mentioned in passing). |
+| popPK | Grange_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of L-dopa and benserazide in rats, not methyldopa. |
+| popPK | Harder_1995 | irrelevant | 0 | 0 | The paper focuses on the pharmacodynamics of levodopa in Parkinson's disease, and methyldopa is not the subject drug (3-O-methyldopa is a metabolite of levodopa, not methyldopa). |
 | PD | Harder_1995 | not_relevant | 1 | 0 | The paper discusses levodopa, not methyldopa, and provides only qualitative descriptions of concentration-effect relationships without specific numeric PD parameters for the target drug. |
 | PGx | Hyland_2020 | not_relevant | 0 | 0 | The paper reports the prevalence of AADC deficiency and DDC gene variants, but does not study the pharmacokinetics or pharmacodynamics of methyldopa as a drug. |
-| popPK | Jorga_2000 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa, and methyldopa is not the subject drug (3-O-methyldopa is a different metabolite). |
+| popPK | Jorga_2000 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa and its metabolite 3-O-methyldopa, not methyldopa. |
 | PD | KIRKENDALL_1962 | not_relevant | 1 | 0 | The paper is a general review of clinical use and pharmacodynamics without specific numeric exposure-response or dose-response parameters for methyldopa. |
 | PD | Kang_2010 | not_relevant | 0 | 0 | The paper investigates the effects of EGCG on Levodopa metabolism and neuroprotection, but does not report any pharmacodynamic or exposure-response relationship for Methyldopa. |
-| popPK | Kwan_1976 | relevant | 10 | 2 | The paper is a primary PK study of methyldopa in humans, but the evidence text only provides qualitative descriptions and a bioavailability fraction, lacking specific numeric values for clearance, volume, or half-life. |
+| popPK | Kwan_1976 | relevant | 10 | 2 | The study reports a two-compartment PK model for methyldopa in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided abstract text. |
 | PGx | Luizon_2017 | not_relevant | 2 | 0 | The paper is a review discussing the general concept of pharmacogenetics in pre-eclampsia and mentions methyldopa non-response, but it does not report specific gene variants or quantitative PK/PD parameters for methyldopa. |
 | PD | Nissinen_1992 | not_relevant | 0 | 0 | The paper focuses on the biochemical and pharmacological properties of entacapone, not methyldopa, and does not report PD parameters for methyldopa. |
-| popPK | Nunes_2009 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of nebicapone and levodopa, not methyldopa. |
+| popPK | Nunes_2009 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa and nebicapone, not methyldopa. |
 | PD | Nunes_2009 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of nebicapone and levodopa, not methyldopa. |
 | PD | ONESTI_1962 | not_relevant | 1 | 0 | The provided text is only the title of a paper and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
 | PD | ONESTI_1964 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
 | PGx | Ozsvár_2010 | not_relevant | 0 | 0 | The paper reports a case of methyldopa-induced hepatitis and mentions CYP3A4 phenotyping for nifedipine dosing, but does not report a pharmacogenomic effect on the PK or PD of methyldopa. |
-| popPK | Porto_2021 | irrelevant | 0 | 0 | The study evaluates the antiparasitic efficacy of methyldopa in vitro and in vivo, reporting EC50/EC90 values rather than pharmacokinetic disposition parameters. |
+| popPK | Porto_2021 | irrelevant | 0 | 0 | The study evaluates the antiparasitic efficacy of methyldopa in vitro and in a murine model, reporting EC50/EC90 values rather than pharmacokinetic disposition parameters. |
 | PD | Ripka_1965 | not_relevant | 0 | 0 | The provided text contains only the title of the paper and lacks the full text, abstract, or data required to determine if numeric PD parameters or exposure-response relationships are reported. |
 | PD | Schultz_1990 | not_relevant | 0 | 0 | The paper focuses on the enzymatic metabolism of L-dopa by human duodenal enzymes and does not report any pharmacodynamic or exposure-response data for Methyldopa. |
 | PGx | Schwartz_2004 | not_relevant | 2 | 0 | The paper is a review that mentions COMT affects methyldopa PK but explicitly states these polymorphisms have not been shown to influence the antihypertensive effect, and it provides no specific quantitative data or fitted effect sizes. |
 | popPK | Trocóniz_1998 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
 | PD | Trocóniz_1998 | not_relevant | 0 | 0 | The paper focuses on levodopa and entacapone, not methyldopa. |
-| popPK | Vaz-da-Silva_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa and nebicapone, with methyldopa (3-OMD) serving only as a metabolite/comparator, not as the subject drug. |
+| popPK | Vaz-da-Silva_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa and its metabolite 3-O-methyldopa, not the drug methyldopa. |
 | PD | WEIL_1963 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or any data to verify the presence of numeric PD parameters or exposure-response relationships. |
 | PGx | Weinshilboum_1984 | not_relevant | 2 | 0 | The paper discusses the genetic regulation of methyltransferase enzymes and their general correlation with methyldopa metabolism, but it does not report specific quantitative pharmacokinetic or pharmacodynamic parameter changes for methyldopa based on genotype. |
 | popPK | Wu_1999 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
@@ -133,4 +133,4 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | van_1988 | not_relevant | 4 | 2 | The paper describes a dose-response relationship and antagonist shift but does not provide numeric PD parameters (e.g., ED50, Emax) or data points in the text to derive them. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 05:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 12:23 UTC</sub>

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;isoprenaline&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/&quot;},{&quot;label&quot;:&quot;Cullum_2023 \u00b7 PD cAMP&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;isoprenaline&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/&quot;},{&quot;label&quot;:&quot;Cullum_2023 \u00b7 PD cAMP GloSensor\u2122 luminescence (peak response)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cAMP — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# cAMP GloSensor™ luminescence (peak response) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Isoprenaline drives cAMP (in RIU): direct sigmoid Emax (Hill) effect.
+**As extracted:** Isoprenaline drives cAMP GloSensor™ luminescence (peak response) (in % 1 μM isoprenaline): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -36,22 +36,8 @@ Cullum SA et al., Kinetic analysis of endogenous β2 -adre…, British journal o
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax (% 1 μM isoprenaline) — Isoprenaline | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col2 |
-| PD (effect) | Emax (% 1 μM isoprenaline) — Formoterol | `Q320` · not captured | 98.38 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col3 |
-| PD (effect) | Emax (% 1 μM isoprenaline) — Salbutamol | `Q320` · not captured | 44.74 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col4 |
-| PD (effect) | Emax (% 1 μM isoprenaline) — Salmeterol | `Q320` · not captured | 33.73 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col5 |
-| PD (effect) | IRmax (% 1 μM isoprenaline) — Isoprenaline | `Q323` · not captured | 100 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col2 |
-| PD (effect) | IRmax (% 1 μM isoprenaline) — Formoterol | `Q323` · not captured | 83.36 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col3 |
-| PD (effect) | IRmax (% 1 μM isoprenaline) — Salbutamol | `Q323` · not captured | 30.34 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col4 |
-| PD (effect) | IRmax (% 1 μM isoprenaline) — Salmeterol | `Q323` · not captured | 22.41 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col5 |
-| PD (effect) | Log EC50 (M) — Isoprenaline | `Q321` · not captured | -8.01 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col2 |
-| PD (effect) | Log EC50 (M) — Formoterol | `Q321` · not captured | -9.00 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col3 |
-| PD (effect) | Log EC50 (M) — Salbutamol | `Q321` · not captured | -6.73 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col4 |
-| PD (effect) | Log EC50 (M) — Salmeterol | `Q321` · not captured | -8.39 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col5 |
-| PD (effect) | Log L50 (M) — Isoprenaline | `Q322` · not captured | -8.13 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col2 |
-| PD (effect) | Log L50 (M) — Formoterol | `Q322` · not captured | -8.80 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col3 |
-| PD (effect) | Log L50 (M) — Salbutamol | `Q322` · not captured | -6.68 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col4 |
-| PD (effect) | Log L50 (M) — Salmeterol | `Q322` · not captured | -8.08 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col5 |
+| PD (effect) | Emax | `Q320` · not captured | 100 | % 1 μM isoprenaline | not captured | llm (not captured) | Cullum_2023:pdv3 |
+| PD (effect) | Log EC50 | `Q321` · not captured | −8.01 ± 0.12 | M | not captured | llm (not captured) | Cullum_2023:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

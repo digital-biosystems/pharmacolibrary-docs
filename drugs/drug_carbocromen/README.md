@@ -18,7 +18,7 @@ Carbocromen (chromonar) is a vasodilator that was used to treat coronary artery 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:30 | 0:54 | 0/0/0 | 0/0/0 | 0/0/0 | 24,280/1,494 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-06 09:57 | 0:58 | 0/0/0 | 0/0/0 | 0/0/0 | 24,280/1,494 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 

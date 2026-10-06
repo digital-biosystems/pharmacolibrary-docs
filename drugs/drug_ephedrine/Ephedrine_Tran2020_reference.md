@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;ephedrine&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/&quot;},{&quot;label&quot;:&quot;Tran_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ephedrine — `Ephedrine_Tran2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record reports only CL/F = 22.5 L/h and V/F = 16.3 L for ephedrine; the first-order absorption rate constant ka and lag time were defaulted rather than estimated, and ka is not reported in the source. The model builder also assumed F=1 and Fm=1 with no molar correction, using an apparent (/F) parameterization with first-order depot input. A second reader further disagreed on the structure, reading a two-compartment model where this record has one compartment, and several extracted values differ between readers. Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 48, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 48, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:52.228936+00:00) predates the upstream re-run (2026-10-06 08:57:13.203708+00:00). Current validate status: `extracted`.
 
 ## Citation
 Tran QT et al., Clinical Evaluation of Acetaminophen-Ga…, Pharmaceutics (2020)
   ·  DOI: [10.3390/pharmaceutics12121182](https://doi.org/10.3390/pharmaceutics12121182)
 
 ## Model component
-<dbs-pgx drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="needs_review" stale="false" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="extracted" stale="true" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -38,8 +40,6 @@ Tran QT et al., Clinical Evaluation of Acetaminophen-Ga…, Pharmaceutics (2020)
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 22.5 | L/h | 6.2499999999999995e-06 | L/h | not captured | review (0.7) | Tran_2020:review | — | not captured |
@@ -69,9 +69,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -79,6 +79,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `values[Q17]` | 48 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 43 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q30]` | not captured | 0.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 16.9 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 14 | 9474 | mismatch |
 | `gpt-oss:120b` | `values[Q56]` | 0.25 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q57]` | not captured | 2.17 | only_one_extracted |
@@ -149,7 +150,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 500, 640 mg.
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 50 mg oral (R03CA02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_sim_controls.json"></dbs-fmusim>
 
@@ -158,4 +159,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 18:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 08:57 UTC</sub>

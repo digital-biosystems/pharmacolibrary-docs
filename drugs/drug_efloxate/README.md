@@ -18,7 +18,7 @@ Efloxate is a flavone-type vasodilator that was classified for use in cardiac di
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:34 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 17,882/142 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-06 10:00 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 17,875/142 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
 
 ## popPK records
 

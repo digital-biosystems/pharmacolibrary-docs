@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Canrenone_Suyagh2012_final_pharmacokinetic_model",
  "molar_masses": {
   "central.C": 0.3404559
@@ -16,12 +17,16 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 0.0001388888888888889,
+  "ka": 0.0014583333333333334,
   "weight": 70.0
  },
- "reference_peak_times": {},
- "reference_peaks": {},
- "stop_time": 86400.0,
+ "reference_peak_times": {
+  "central.C": 4328.6573146292585
+ },
+ "reference_peaks": {
+  "central.C": 3.701071729326178e-06
+ },
+ "stop_time": 432000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

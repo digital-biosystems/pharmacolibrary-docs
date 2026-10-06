@@ -4,7 +4,7 @@
 
 # fenoldopam — `Fenoldopam_Ziemniak1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,18 +22,20 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fenoldopam → fenoldopam-8-sulfate (metabolism), the second reading fenoldopam → fenoldopam-8-sulfate (metabolism); fenoldopam-8-sulfate → fenoldopam (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fenoldopam, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:51.798180+00:00) predates the upstream re-run (2026-10-06 09:17:20.469517+00:00). Current validate status: `rejected`.
 
 ## Citation
 Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989)
   ·  DOI: [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743)
 
 ## Model component
-<dbs-pgx drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
@@ -56,15 +58,16 @@ Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical re
 **Interpretation flags:**
 - dropped duplicate Q26 ('fenoldopam renal plasma clearance', value None) — already have one for this compound
 - dropped duplicate Q26 ('initial maximal renal clearance', value 2852) — already have one for this compound
-- dropped duplicate Q26 ('renal clearance', value 78) — already have one for this compound
 - unit_dimension_unknown: 'ng x hr/ml' (AUC)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fenoldopam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 4 linked by role; re-tagged fenoldopam→parent ×5
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Ziemniak_1989_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -76,15 +79,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism']] | [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism'], ['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | mismatch |
+| `gpt-oss:120b` | `model.links` | [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism'], ['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | [['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` | 5.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` | not captured | 5.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fenoldopam renal plasma clearance]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean (+/- se) renal plasma clearance]` | 129 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean (+/- se) renal plasma clearance]` | not captured | 129 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | fenoldopam | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | fenoldopam | unknown | mismatch |
 
 </details>
 
@@ -102,7 +110,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ziemniak_1989:abstract'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng x hr/ml | not captured | not captured | ['Ziemniak_1989:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 18:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 09:17 UTC</sub>

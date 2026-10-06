@@ -5,7 +5,7 @@
 
 # tolvaptan — `Tolvaptan_Shoaf2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The record reports tolvaptan CL/F of 4.81 mL/min/kg and V/F of 125.3249 L, but ka and the absorption lag time had no values in the source, so library placeholder defaults were used instead — an invented absorption that was judged not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, so all parameters are apparent (/F) values with first-order depot input for extravascular dosing. A second reader additionally disagreed on several extracted values, reading 222 where this record has null and null where this record has 1.02 and 222. Extracted — tolvaptan: CL/F 4.81 mL/min/kg, V/F 125 L.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q56: this record has 2.0, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:50.321185+00:00) predates the upstream re-run (2026-10-02 12:51:23.207744+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:50.321185+00:00) predates the upstream re-run (2026-10-06 19:24:29.371432+00:00). Current validate status: `extracted`.
 
 ## Citation
 Shoaf SE et al., Low-dose tolvaptan PK/PD: comparison of…, European journal of clinica… (2017)
@@ -64,14 +64,20 @@ Shoaf SE et al., Low-dose tolvaptan PK/PD: comparison of…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q56]` | 2.0 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -124,7 +130,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_modelica.zip" download>Tolvaptan_Shoaf2017_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_modelica.zip" download>Tolvaptan_Shoaf2017_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_fmi.zip" download>Tolvaptan_Shoaf2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_matlab.zip" download>Tolvaptan_Shoaf2017_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_matlab_simbio.zip" download>Tolvaptan_Shoaf2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -137,7 +143,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 3.75 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 3.75, 7.5, 15 mg.
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg oral (C03XA01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference/Tolvaptan_Shoaf2017_reference_sim_controls.json"></dbs-fmusim>
 
@@ -146,4 +152,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 12:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 19:24 UTC</sub>

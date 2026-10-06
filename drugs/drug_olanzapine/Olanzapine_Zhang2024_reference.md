@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;olanzapine&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/&quot;},{&quot;label&quot;:&quot;Zhang_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olanzapine_Johnson2011_reference&quot;,&quot;label&quot;:&quot;Johnson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Johnson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zang2024_reference&quot;,&quot;label&quot;:&quot;Zang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Olanzapine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # olanzapine — `Olanzapine_Zhang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -24,25 +25,26 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:11.896904+00:00) predates the upstream re-run (2026-10-06 16:07:04.535701+00:00). Current validate status: `extracted`.
+
 ## Citation
 Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024)
   ·  DOI: [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183)
 
 ## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Zhang2024_reference" status="rejected" stale="false" population="schizophrenia patients" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="olanzapine" model-id="Olanzapine_Zhang2024_reference" status="extracted" stale="true" population="schizophrenia patients" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | -1.09 | L/h | -3.027777777777778e-07 | [l] / [h] | not captured | exact (1.0) | tab_3:row2:col1, tab_3:row2:col2, tab_3:row2:col3, tab_3:row2:col5 | — | not captured |
-| V/F (L) | `Q76` · V/F | 0.47 | L | 0.00047 | [l] | not captured | exact (1.0) | tab_3:row3:col1, tab_3:row3:col2, tab_3:row3:col3, tab_3:row3:col5 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 27.6 | L/h | 7.666666666666667e-06 | [l] / [h] | 5.6 | exact (1.0) | t0003:row2:col1, t0003:row2:col2, t0003:row2:col3, t0003:row2:col5 | — | 0.316 (13.4% RSE) |
+| V/F (L) | `Q76` · V/F | 854 | L | 0.854 | [l] | 25.5 | exact (1.0) | t0003:row3:col1, t0003:row3:col2, t0003:row3:col3, t0003:row3:col5 | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 0.861 | h−1 | 0.00023916666666666666 | [1] / [h] | not captured | exact (1.0) | t0003:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,15 +53,27 @@ Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric dis
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'θ ARI' — extend the ontology if this is a real PK parameter (source ['tab_3:row5:col1', 'tab_3:row5:col2', 'tab_3:row5:col3', 'tab_3:row5:col5'])
+- column 'bootstrap' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'bias (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q49 ('θARI', value '-0.392') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=olanzapine
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_3:row2:col4 = '[24.7, 30.4]'
-- unparsed cell tab_3:row3:col4 = '[600, 2530]'
-- unparsed cell tab_3:row4:col1 = '0.861 (fixed)'
-- unparsed cell tab_3:row5:col4 = '[-0.535, -0.194]'
+- unparsed cell t0003:row2:col4 = '[24.7, 30.4]'
+- unparsed cell t0003:row3:col4 = '[600, 2530]'
+- unparsed cell t0003:row5:col4 = '[−0.535, −0.194]'
+- unparsed cell t0003:row6:col4 = '[0.223, 0.395]'
+- unparsed cell t0003:row7:col4 = '[0.219, 0.348]'
+- unparsed cell t0003:row8:col4 = '[0.703, 4.822]'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -88,15 +102,16 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q27 | fail | not captured | -1.09 | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_3:row2:col1', 'tab_3:row2:col2', 'tab_3:row2:col3', 'tab_3:row2:col5'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_3:row3:col1', 'tab_3:row3:col2', 'tab_3:row3:col3', 'tab_3:row3:col5'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col3', 't0003:row2:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0003:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0003:row3:col1', 't0003:row3:col2', 't0003:row3:col3', 't0003:row3:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q76 | fail | volume within physiological range | 0.47 L | not captured | not captured | ['tab_3:row3:col1', 'tab_3:row3:col2', 'tab_3:row3:col3', 'tab_3:row3:col5'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 27.6 L/h | not captured | not captured | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col3', 't0003:row2:col5'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 854 L | not captured | not captured | ['t0003:row3:col1', 't0003:row3:col2', 't0003:row3:col3', 't0003:row3:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,15 +125,30 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_modelica.zip" download>Olanzapine_Zhang2024_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_fmi.zip" download>Olanzapine_Zhang2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_matlab.zip" download>Olanzapine_Zhang2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_matlab_simbio.zip" download>Olanzapine_Zhang2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_sbml.zip" download>Olanzapine_Zhang2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_cellml.zip" download>Olanzapine_Zhang2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference.svg" alt="Olanzapine_Zhang2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.861 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N05AH03) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_olanzapine/Olanzapine_Zhang2024_reference/Olanzapine_Zhang2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Olanzapine_Zhang2024_reference_params.json` · controls `Olanzapine_Zhang2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-19 00:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:07 UTC</sub>

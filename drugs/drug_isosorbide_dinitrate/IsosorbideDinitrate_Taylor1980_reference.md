@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;isosorbide dinitrate&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/&quot;},{&quot;label&quot;:&quot;Taylor_1980 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsosorbideDinitrate_Jaruratanasirikul2020_reference&quot;,&quot;label&quot;:&quot;Jaruratanasirikul_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Jaruratanasirikul2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsosorbideDinitrate_Taylor1981_reference&quot;,&quot;label&quot;:&quot;Taylor_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1981_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # isosorbide dinitrate — `IsosorbideDinitrate_Taylor1980_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,17 +21,21 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — isosorbide dinitrate: CL 0.32 l min-1.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has isosorbide dinitrate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:26.430299+00:00) predates the upstream re-run (2026-10-06 10:26:26.333883+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980)
   ·  DOI: [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310)
 
 ## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1980_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1980_reference" status="needs_review" stale="true" population="normal human subjects" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,6 +45,7 @@ Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | systemic clearances of drug after infusion | `Q22` · CL | 0.32 | l min-1 | 5.333333333333334e-06 | [l] / [min] | not captured | llm (0.6) | Taylor_1980:abstract, Taylor_1980:abstract | — | not captured |
+| V | `Q61` · V | 30.3 | L | 0.0303 | L | not captured | review_gapfill (0.7) | Jaruratanasirikul_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,6 +64,7 @@ Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & 
 - dropped duplicate Q57 ('elimination half-life', value 10) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=isosorbide dinitrate
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q61 (V) from Jaruratanasirikul_2020's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -65,6 +72,32 @@ Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & 
 - no GROBID TEI available — transcribed from abstract in Taylor_1980_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[half-life of elimination of isosorbide dinitrate after termination of the infusion was]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[half-life of elimination of isosorbide dinitrate after termination of the infusion]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearances of drug after infusion of]` | not captured | 0.32 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[systemic clearances of drug after infusion]` | 0.32 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | isosorbide dinitrate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | isosorbide dinitrate | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -75,9 +108,11 @@ Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & 
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Taylor_1980:abstract', 'Taylor_1980:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Taylor_1980:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jaruratanasirikul_2020:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.32 | not captured | not captured | ['Taylor_1980:abstract', 'Taylor_1980:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 19.2 L/h | not captured | not captured | ['Taylor_1980:abstract', 'Taylor_1980:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 30.3 L | not captured | not captured | ['Jaruratanasirikul_2020:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -112,4 +147,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 19:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 10:26 UTC</sub>

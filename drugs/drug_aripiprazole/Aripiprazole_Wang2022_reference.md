@@ -4,7 +4,7 @@
 
 # aripiprazole — `Aripiprazole_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,41 +24,77 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:23:24.733256+00:00) predates the upstream re-run (2026-10-06 15:02:52.740160+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology in dr… (2022)
   ·  DOI: [10.1002/cpdd.1022](https://doi.org/10.1002/cpdd.1022)
 
 ## Model component
-<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2022_reference" status="needs_review" stale="false" population="subjects with schizophrenia or schizoaffective disorder and healthy subjects" measured-compound="aripiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2022_reference" status="needs_review" stale="true" population="subjects with schizophrenia (oral and AOM dosing)" measured-compound="aripiprazole" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted, plus 6 covariate effects.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** Q2/F, Q3/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F in the presence of strong CYP3A4 inhibitors | `Q27` · CL/F | 24 | % lower | not captured | % lower | not captured | boundary (0.8) | Wang_2022:other_prose | — | not captured |
-| reduction in clearance for CYP2D6 PMs | `Q22` · CL | 42 | % | not captured | % | not captured | boundary (0.8) | Wang_2022:results_prose | — | not captured |
+| Ka: oral first‐order absorption rate (1/h) | `Q49` · kabs | 0.540 | 1/h | 0.00015000000000000001 | 1/h | not captured | llm_confirmed (0.6) | cpdd1022-tbl-0001:row2:col1 | — | 65.88 (None% RSE) |
+| Vc/F: central volume (L) | `Q290` · V1/F | 8.8 | L | 0.0088 | [l] | not captured | llm_corrected (0.6) | cpdd1022-tbl-0001:row7:col1, cpdd1022-tbl-0001:row7:col2 | — | not captured |
+| Q1/F: intercompartmental CL/F (L/h) | `Q309` · Q3/F | 0.591 | L/h | 1.6416666666666665e-07 | [l] / [h] | not captured | llm_corrected (0.6) | cpdd1022-tbl-0001:row8:col1 | — | not captured |
+| Vp1/F: peripheral volume (L) | `Q82` · V2/F | 118 | L | 0.11800000000000001 | [l] | not captured | llm_corrected (0.6) | cpdd1022-tbl-0001:row9:col1 | — | not captured |
+| Q2/F: second intercompartmental CL/F (L/h) | `Q80` · Q2/F | 28.8 | L/h | 8.000000000000001e-06 | [l] / [h] | not captured | llm_corrected (0.6) | cpdd1022-tbl-0001:row10:col1 | — | not captured |
+| Vp2/F: second peripheral volume (L) | `Q78` · V3/F | 134 | L | 0.134 | [l] | not captured | llm_corrected (0.6) | cpdd1022-tbl-0001:row11:col1 | — | not captured |
+| R1: infusion rate of oral dose into depot compartment (mg/h) | `Q307` · R1 | 9.33 | mg/h | not captured | [mg] / [h] | not captured | llm_confirmed (0.6) | cpdd1022-tbl-0001:row12:col1 | — | not captured |
+| F2: relative bioavailability for AOM | `Q87` · Frel | 4.9 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | cpdd1022-tbl-0001:row14:col1, cpdd1022-tbl-0001:row14:col2 | — | not captured |
+| theta_q27_em | `Q900` · theta_q27_em | 4.0 | not captured | not captured | not captured | not captured | not captured (not captured) | cpdd1022-tbl-0001:row3:col1, cpdd1022-tbl-0001:row3:col2 | — | not captured |
+| theta_q27_pm | `Q900` · theta_q27_pm | 6.9 | not captured | not captured | not captured | not captured | not captured (not captured) | cpdd1022-tbl-0001:row4:col1, cpdd1022-tbl-0001:row4:col2 | — | not captured |
+| theta_q27_cyp2d6 | `Q900` · theta_q27_cyp2d6 | -0.511 | not captured | not captured | not captured | not captured | not captured (not captured) | cpdd1022-tbl-0001:row5:col1 | — | not captured |
+| theta_q27_cyp3a4 | `Q900` · theta_q27_cyp3a4 | -0.237 | not captured | not captured | not captured | not captured | not captured (not captured) | cpdd1022-tbl-0001:row6:col1 | — | not captured |
+| theta_kabs_im | `Q900` · theta_kabs_im | 5.3 | not captured | not captured | not captured | not captured | not captured (not captured) | cpdd1022-tbl-0001:row13:col1, cpdd1022-tbl-0001:row13:col2 | — | not captured |
+| theta_kabs_bmi_power | `Q900` · theta_kabs_bmi_power | 11.5 | not captured | not captured | not captured | not captured | not captured (not captured) | cpdd1022-tbl-0001:row15:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Minimum value of the objective function = 48892.907 | Q900 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['tab_0:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['tab_0:footnote']); the table cell was unparseable — needs review
-- salvaged Q27 ('CL/F in the presence of strong CYP3A4 inhibitors'=24) from results prose — parameter table was unreadable
-- salvaged Q22 ('reduction in clearance for CYP2D6 PMs'=42) from results prose — parameter table was unreadable
+- table section iiv: 'Ka: oral first‐order absorption rate (1/h)' routed out of structural estimates ('Magnitude of Interindividual Variability (%CV)')
+- table section iiv: 'CL/F: clearance for EM (L/h)' routed out of structural estimates ('Magnitude of Interindividual Variability (%CV)')
+- table section iiv: 'Vc/F: central volume (L)' routed out of structural estimates ('Magnitude of Interindividual Variability (%CV)')
+- table section iiv: 'IM Ka: AOM first‐order absorption rate (1/h)' routed out of structural estimates ('Magnitude of Interindividual Variability (%CV)')
+- table section iiv: 'Minimum value of the objective function = 48892.907' routed out of structural estimates ('Magnitude of Interindividual Variability (%CV)')
+- dropped unlinked row (NIL): 'Phase 1 RV (%CV)' — extend the ontology if this is a real PK parameter (source ['cpdd1022-tbl-0001:row17:col1', 'cpdd1022-tbl-0001:row17:col2'])
+- dropped unlinked row (NIL): 'Phase 3 RV (%CV)' — extend the ontology if this is a real PK parameter (source ['cpdd1022-tbl-0001:row18:col1', 'cpdd1022-tbl-0001:row18:col2'])
+- NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['cpdd1022-tbl-0001:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['cpdd1022-tbl-0001:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'shrinkage' from footnote/prose loose number 7.3 (source ['cpdd1022-tbl-0001:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'shrinkage' from footnote/prose loose number 52.2 (source ['cpdd1022-tbl-0001:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'shrinkage' from footnote/prose loose number 8.2 (source ['cpdd1022-tbl-0001:footnote']); the table cell was unparseable — needs review
+- covariate im for shrinkage from footnote/prose kept as documentation only (['cpdd1022-tbl-0001:footnote'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.901 (source ['cpdd1022-tbl-0001:footnote']); the table cell was unparseable — needs review
+- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
+- dropped duplicate covariate effect 'im'/'' on Q49 — ambiguous identity (two shifts cannot share one category)
+- implicit units: 'Ka: oral first‐order absorption rate (1/h)' → 1/h (from the paper text: "Table 1 lists 'Ka: oral first‐order absorption rate (1/h) = 0.540', explicitly stating the unit 1/h.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=aripiprazole
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- unparsed cell cpdd1022-tbl-0001:row15:col1 = '‐0.975'
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -90,13 +126,21 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Wang_2022:results_prose'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | % lower | not captured | not captured | ['Wang_2022:other_prose'] |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row7:col1', 'cpdd1022-tbl-0001:row7:col2'] |
+| C5_dimension_Q307 | pass | [mass] / [time] | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row12:col1'] |
+| C5_dimension_Q309 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row8:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row2:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row11:col1'] |
+| C5_dimension_Q80 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row10:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpdd1022-tbl-0001:row9:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q290 | pass | volume within physiological range | 8.8 L | not captured | not captured | ['cpdd1022-tbl-0001:row7:col1', 'cpdd1022-tbl-0001:row7:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 118 L | not captured | not captured | ['cpdd1022-tbl-0001:row9:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,4 +175,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 09:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:02 UTC</sub>

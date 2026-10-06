@@ -14,29 +14,34 @@ Nicorandil is a vasodilator heart medicine used to treat angina (chest pain caus
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q862989](https://www.wikidata.org/wiki/Q862989) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| nicorandil | parent | 211.177 | C8H9N3O4 | DrugBank | [47528](https://pubchem.ncbi.nlm.nih.gov/compound/47528) | Iida_2008_2 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 21:20 | 8:34 | 0/0/3 | 3/1/0 | 0/0/0 | 239,674/13,506 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 16/0 | 4/0 | 0 |
+| 2026-10-06 11:07 | 8:53 | 0/0/3 | 2/0/0 | 0/0/0 | 199,360/20,581 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 16/0 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iida_2008_obj](drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md) | held back | 1-compartment, oral | 2 | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iida_2008_sig](drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md) | held back | 1-compartment, oral | 2 | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iida_2008_2_reference](drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md) | held back | 1-compartment, oral | 2 | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iida_2008_obj](drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md) | — | 1-compartment (no model) | 2 | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iida_2008_sig](drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md) | — | 1-compartment (no model) | 2 | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Iida_2008_2_reference](drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md) | — | 1-compartment (no model) | 2 | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Fujiwara_1996_membrane_potential](drugs/drug_nicorandil/pd_Fujiwara_1996_membrane_potential.md) | name ← nicorandil · direct sigmoid Emax (Hill) effect | — | Fujiwara T et al., Analysis of relaxation and repolarizati…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb16071.x](https://doi.org/10.1111/j.1476-5381.1996.tb16071.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Fujiwara_1996_relaxation](drugs/drug_nicorandil/pd_Fujiwara_1996_relaxation.md) | name ← nicorandil · direct sigmoid Emax (Hill) effect | — | Fujiwara T et al., Analysis of relaxation and repolarizati…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb16071.x](https://doi.org/10.1111/j.1476-5381.1996.tb16071.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Iida_2008_2_PAWP](drugs/drug_nicorandil/pd_Iida_2008_2_PAWP.md) | pulmonary artery wedge pressure ← nicorandil · disease-progression model | — | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Shindo_1998_unknown](drugs/drug_nicorandil/pd_Shindo_1998_unknown.md) | K+ channel current ← pinacidil · direct Emax (saturable) effect | — | Shindo T et al., SUR2 subtype (A and B)-dependent differ…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701927](https://doi.org/10.1038/sj.bjp.0701927) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wanstall_1992_relaxation](drugs/drug_nicorandil/pd_Wanstall_1992_relaxation.md) | name ← pinacidil · direct Emax (saturable) effect | — | Wanstall JC et al., Responses to vasodilator drugs on pulmo…, British journal of pharmaco… (1992) | [10.1111/j.1476-5381.1992.tb14227.x](https://doi.org/10.1111/j.1476-5381.1992.tb14227.x) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Iida_2008_2_PAWP](drugs/drug_nicorandil/pd_Iida_2008_2_PAWP.md) | pulmonary artery wedge pressure ← nicorandil · direct Emax (saturable) effect | — | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Shindo_1998_whole_cell_SUR_2B_Kir6_2_channel_current](drugs/drug_nicorandil/pd_Shindo_1998_whole_cell_SUR_2B_Kir6_2_channel_current.md) | whole-cell SUR 2B /Kir6.2 channel current ← nicorandil · direct sigmoid Emax (Hill) effect | — | Shindo T et al., SUR2 subtype (A and B)-dependent differ…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701927](https://doi.org/10.1038/sj.bjp.0701927) |
 
 ## ADME sites
 
@@ -62,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 34 matched, 12 returned
 - **screened:** 16  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
@@ -70,18 +75,18 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Bachert_1993 | irrelevant | not captured | not captured | no extractable full text |
-| popPK | Bedair_2023 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicology investigation in rats focusing on antinociception and liver fibrosis, with no pharmacokinetic parameters reported. |
+| popPK | Bedair_2023 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (antinociception, liver fibrosis markers) and does not report pharmacokinetic parameters for nicorandil. |
 | popPK | Belz_1992 | irrelevant | not captured | not captured | no extractable full text |
-| popPK | Fujiwara_1996 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on vascular smooth muscle relaxation and membrane potential, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for nicorandil. |
-| popPK | Funatogawa_2007 | irrelevant | 2 | 0 | The paper is a methodological study proposing a new estimation technique for half-life, using nicorandil data only as an illustrative example without reporting original quantitative PK parameter values. |
-| popPK | Henry_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilator potency and tolerance in isolated coronary arteries, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Ishibashi_1991 | irrelevant | 0 | 0 | The paper is a mechanistic structure-activity relationship study on isolated rabbit aorta, not a pharmacokinetic study, and contains no disposition parameters for nicorandil. |
-| popPK | Maekawa_1997 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no pharmacokinetic data or text regarding nicorandil. |
+| popPK | Fujiwara_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation mechanisms and membrane potential, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Funatogawa_2007 | irrelevant | 2 | 0 | The paper proposes a statistical method for estimating half-life from single-point data and uses nicorandil data only as an illustrative example, without reporting specific quantitative PK parameter values in the provided evidence. |
+| popPK | Henry_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilator potency and tolerance in isolated bovine coronary arteries, reporting no pharmacokinetic parameters. |
+| popPK | Ishibashi_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of structure-activity relationships in isolated rabbit aorta, reporting no pharmacokinetic parameters. |
+| popPK | Maekawa_1997 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel K+ channel openers, and nicorandil is only used as a comparator for vasorelaxant activity and coronary blood flow duration, with no pharmacokinetic parameter modeling or quantitative disposition data reported. |
 | PD | Maekawa_1997 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any scientific content regarding nicorandil or pharmacodynamics. |
-| popPK | Satoh_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasorelaxant mechanisms in isolated arteries, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Shindo_1998 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study examining the mechanism of action of nicorandil on K+ channels, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Satoh_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasorelaxant mechanisms in isolated porcine arteries, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Shindo_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of K+ channel activation by nicorandil, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Wanstall_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilator potency (EC50) in rat pulmonary arteries, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Wei_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of nicorandil's effect on ion channels in cardiac myocytes and does not report any pharmacokinetic parameters. |
+| popPK | Wei_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of nicorandil's effect on ion channels in guinea pig myocytes and does not report pharmacokinetic parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-20 21:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 10:59 UTC</sub>

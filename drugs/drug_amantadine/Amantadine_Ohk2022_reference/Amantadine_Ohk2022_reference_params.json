@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg oral (N04BB01)",
+ "model_id": "Amantadine_Ohk2022_reference",
+ "molar_masses": {
+  "central.C": 0.1512487
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00010852777777777777,
+  "F": 1.0,
+  "MM": 0.1512487,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0024,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3409.41977077709
+ },
+ "reference_peaks": {
+  "central.C": 0.00016778228389639554
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;spironolactone&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/&quot;},{&quot;label&quot;:&quot;Lass_2024 \u00b7 value_1&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # spironolactone — `Spironolactone_Lass2024_value_1`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,50 +25,33 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:54.053711+00:00) predates the upstream re-run (2026-10-06 18:46:46.083552+00:00). Current validate status: `not captured`.
+
 ## Citation
 Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w)
 
 ## Model component
-<dbs-pgx drug="spironolactone" model-id="Spironolactone_Lass2024_value_1" status="needs_review" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="spironolactone" model-id="Spironolactone_Lass2024_value_1" status="" stale="true" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| VTMS=VCAN | `Q61` · V | 115 | L | 0.115 | L | not captured | exact (1.0) | Lass_2024_table_3:row0:col1 | — | not captured |
-| CLTMS | `Q22` · CL | 99 | L/h | 2.75e-05 | L/h | not captured | exact (1.0) | Lass_2024_table_3:row1:col1 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- implicit units: 'VTMS=VCAN' → L (from the paper text: "The table footnote states: 'VTMS, volume of distribution for TMS (L)'")
-- implicit units: 'CLTMS' → L/h (from the paper text: "The table footnote states: 'CLTMS, Clearance for TMS (L/h)'")
-- metabolite volume: 'VTMS=VCAN' Q63→Q61 for 7 alphathiomethylspironolactone — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=spironolactone
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1, 0]
-- population split: 'value 1' subgroup of Lass_2024 (paper reports 2 populations: value 1, value 2)
-- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 30 linked by role; re-tagged parent→canrenone ×12, parent→7 alphathiomethylspironolactone ×18
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - final table tab_0: grid unusable → re-running vision table extraction for Lass_2024
 - companion parameter table 2 transcribed (23 record(s))
 - companion parameter table 3 transcribed (14 record(s))
 - LLM selected parameter table(s) 2, 3
+- captured model equation CL_SP/F = θ2 x (CW/4300)⁰.⁷⁵ x (PNA/60)^θ3
 
 ## Validation
 
@@ -97,20 +81,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lass_2024_table_3:row1:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lass_2024_table_3:row0:col1'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 99.0 | not captured | not captured | ['Lass_2024_table_3:row1:col1'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 99 L/h | not captured | not captured | ['Lass_2024_table_3:row1:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 115 L | not captured | not captured | ['Lass_2024_table_3:row0:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -145,4 +115,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 14:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 18:46 UTC</sub>

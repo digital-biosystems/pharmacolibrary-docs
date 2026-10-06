@@ -14,17 +14,25 @@ Etilefrine is a sympathomimetic drug that acts on alpha- and beta-1 adrenergic r
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q417873](https://www.wikidata.org/wiki/Q417873) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| etilefrine | parent | 181.232 | C10H15NO2 | DrugBank | [3306](https://pubchem.ncbi.nlm.nih.gov/compound/3306) | Hengstmann_1975 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 18:11 | 3:02 | 0/1/0 | 0/0/0 | 0/0/0 | 18,976/9,338 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 09:13 | 7:38 | 0/1/0 | 0/0/0 | 0/0/0 | 168,779/9,882 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/2 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hengstmann_1975_reference](drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | — | 1-compartment (no model) | 3 | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hengstmann_1975_reference](drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | — | 1-compartment (no model) | 3 | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -34,9 +42,9 @@ Etilefrine is a sympathomimetic drug that acts on alpha- and beta-1 adrenergic r
 
 ## Coverage
 
-- **PubMed hits:** 16 matched, 12 returned
+- **PubMed hits:** 24 matched, 24 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -45,9 +53,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hengstmann_1975.pdf` | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | popPK | 10 | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) | [9300](https://pubmed.ncbi.nlm.nih.gov/9300) | The paper reports quantitative PK parameters for etilefrine including a 2-compartment model, volume of distribution (160 L), and half-life (2 hours). |
+| `Hengstmann_1975.pdf` | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | popPK | 10 | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) | [9300](https://pubmed.ncbi.nlm.nih.gov/9300) | The abstract explicitly reports quantitative PK parameters including bioavailability (0.55), volume of distribution (160 L), and half-life (2 hours) for etilefrine in humans. |
 
-<sub>queue written 2026-09-20T18:08:16.686364+00:00</sub>
+<sub>queue written 2026-10-06T09:07:54.030822+00:00</sub>
 
 ## Screened and excluded
 
@@ -63,7 +71,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Otaif_2023 | not_relevant | 0 | 0 | The paper describes an electrochemical analytical method for detecting etilefrine concentration, not a pharmacodynamic or exposure-response study. |
 | PD | Raviele_1999 | not_relevant | 0 | 0 | The paper is a clinical efficacy trial reporting binary outcomes (syncope recurrence) and does not contain any pharmacokinetic data, concentration-effect analysis, or numeric PD parameters. |
 | PD | Sakata_2020 | not_relevant | 0 | 0 | The paper focuses on the formulation and pharmacokinetics (absorption/plasma levels) of etilefrine buccal tablets, but does not report any pharmacodynamic or exposure-response analysis with numeric PD parameters. |
+| popPK | Trang_2019 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for plazomicin, not etilefrine (which is only mentioned as a vasopressor used in the study). |
 | PGx | Zhang_2019 | not_relevant | 0 | 0 | The paper describes the chemical synthesis of metabolites for future analytical studies and does not report any pharmacogenomic effects on PK or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-20 18:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 09:08 UTC</sub>

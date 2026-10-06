@@ -18,7 +18,7 @@ Metaraminol is a sympathomimetic vasopressor used to treat hypotension, includin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 19:18 | 2:49 | 0/0/0 | 0/0/1 | 0/0/0 | 84,245/1,424 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 09:50 | 0:33 | 0/0/0 | 0/0/1 | 0/0/0 | 21,549/684 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Xiao_2021_unknown](drugs/drug_metaraminol/pd_Xiao_2021_unknown.md) | hypotension ← metaraminol · categorical (graded) response model | — | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Xiao_2021_incidence_of_hypotension](drugs/drug_metaraminol/pd_Xiao_2021_incidence_of_hypotension.md) | incidence of hypotension ← metaraminol · categorical (graded) response model | — | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
 
 ## ADME sites
 
@@ -65,7 +65,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Ungell_1987.pdf` | Ungell AL et al., Failure of K+ to affect the potency of…, Naunyn-Schmiedeberg's archi… (1987) | pd | 4 | [10.1007/BF00172792](https://doi.org/10.1007/BF00172792) | [3587371](https://www.ncbi.nlm.nih.gov/pubmed/3587371) | metadata signals extractable PD data (IC50) |
 | `Waldmeier_1977.pdf` | Waldmeier PC et al., Metaraminol uptake by human thrombocyte…, Experientia (1977) | pd | 4 | [10.1007/BF01920177](https://doi.org/10.1007/BF01920177) | [908413](https://www.ncbi.nlm.nih.gov/pubmed/908413) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-20T19:16:31.142638+00:00</sub>
+<sub>queue written 2026-10-06T09:49:52.961267+00:00</sub>
 
 ## Screened and excluded
 
@@ -75,8 +75,8 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Liu_2022 | irrelevant | 0 | 0 | no_text gate: only 211 chars of text extracted (&lt; 400) |
 | popPK | Morris_2007 | irrelevant | 0 | 0 | no_text gate: only 50 chars of text extracted (&lt; 400) |
 | PD | Morris_2007 | not_relevant | 0 | 0 | The text describes a cardiopulmonary bypass simulation system and does not contain any pharmacodynamic or exposure-response data for metaraminol. |
-| popPK | Mu_2020 | irrelevant | 0 | 0 | The study investigates the PET tracer [11C]mHED (meta-hydroxyephedrine), not metaraminol, which is only mentioned as a chemical precursor for radiolabeling. |
-| popPK | Tong_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular reactivity, not a pharmacokinetic study, and reports no disposition parameters for metaraminol. |
+| popPK | Mu_2020 | irrelevant | 0 | 0 | The study investigates the PET tracer [11C]mHED (a metabolite of metaraminol) in mice, not the pharmacokinetics of metaraminol itself. |
+| popPK | Tong_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity and does not report any pharmacokinetic parameters for metaraminol. |
 | popPK | Ungell_1987 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
 | PD | Ungell_1987 | not_relevant | 0 | 0 | The paper investigates the effect of potassium on noradrenaline carrier inhibitors in rat vas deferens and does not mention metaraminol or report any pharmacodynamic parameters for it. |
 | popPK | Ungell_1989 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |

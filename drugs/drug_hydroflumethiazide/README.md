@@ -26,14 +26,14 @@ Hydroflumethiazide is a thiazide diuretic that was used to treat high blood pres
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:15 | 1:59 | 0/2/0 | 0/0/0 | 0/0/0 | 13,857/7,012 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 17:00 | 3:24 | 0/2/0 | 0/0/0 | 0/0/0 | 37,062/8,614 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Brørs_1979_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Brrs1979_reference.md) | — | 1-compartment (no model) | 1 | Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979) | [10.1007/BF00563119](https://doi.org/10.1007/BF00563119) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yakatan_1977_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Yakatan1977_reference.md) | — | 1-compartment (no model) | 3 | Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977) | [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Brørs_1979_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Brrs1979_reference.md) | — | 1-compartment (no model) | 1 | Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979) | [10.1007/BF00563119](https://doi.org/10.1007/BF00563119) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yakatan_1977_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Yakatan1977_reference.md) | — | 1-compartment (no model) | 3 | Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977) | [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x) |
 
 ## ADME sites
 
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -66,10 +66,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yakatan_1977.pdf` | Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977) | popPK | 10 | [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x) | [833338](https://pubmed.ncbi.nlm.nih.gov/833338) | The paper reports quantitative pharmacokinetic parameters (ka, kel, t1/2, AUC, renal clearance) for hydroflumethiazide in humans with all numeric values explicitly present in the text. |
-| `Brørs_1979.pdf` | Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979) | popPK | 9 | [10.1007/BF00563119](https://doi.org/10.1007/BF00563119) | [499309](https://pubmed.ncbi.nlm.nih.gov/499309) | The paper reports quantitative pharmacokinetic parameters for hydroflumethiazide, including specific half-life values (0.26 h, 0.85 h, 5.2 h, 8.7 h, 17.9 h) and model structure (three-compartment), although clearance and volume values are described qualitatively rather than numerically. |
+| `Yakatan_1977.pdf` | Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977) | popPK | 10 | [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x) | [833338](https://pubmed.ncbi.nlm.nih.gov/833338) | The paper reports quantitative pharmacokinetic parameters (ka, kel, t1/2, AUC, renal clearance) for hydroflumethiazide in humans with all numeric values present in the text. |
+| `Brørs_1979.pdf` | Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979) | popPK | 9 | [10.1007/BF00563119](https://doi.org/10.1007/BF00563119) | [499309](https://pubmed.ncbi.nlm.nih.gov/499309) | The study reports quantitative pharmacokinetic parameters (half-lives, clearance trends) for hydroflumethiazide in humans, though specific numeric values for clearance and volume are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-09-30T07:13:45.393629+00:00</sub>
+<sub>queue written 2026-10-06T16:57:20.911814+00:00</sub>
 
 ## Screened and excluded
 
@@ -78,9 +78,9 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Corrigan_1976 | not_relevant | 0 | 0 | The paper focuses on dissolution and bioavailability (PK) of hydrochlorothiazide/hydroflumethiazide formulations, with no pharmacodynamic or exposure-response analysis. |
 | PD | Elkowitz_1979 | not_relevant | 1 | 0 | The paper is a retrospective clinical review reporting mean blood pressure reductions for a fixed-dose combination, but it does not provide concentration-effect data, dose-response curves, or specific PD parameters (Emax, EC50) for hydroflumethiazide. |
 | PD | Finnerty_1979 | not_relevant | 1 | 0 | The paper reports clinical efficacy outcomes (percentage of patients achieving BP targets) for fixed-dose combination regimens but does not provide concentration-effect data, dose-response curves, or numeric PD parameters like Emax or EC50. |
-| popPK | Kristensen_1975 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of methotrexate, with hydroflumethiazide mentioned only as a co-administered diuretic that did not affect the results. |
-| popPK | Liu_1997 | irrelevant | 2 | 0 | The paper is a methodological study using hydroflumethiazide data only as a validation example, and no specific numeric PK parameter values are provided in the evidence. |
+| popPK | Kristensen_1975 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of methotrexate, with hydroflumethiazide serving only as a co-administered diuretic without reported PK parameters. |
+| popPK | Liu_1997 | irrelevant | 2 | 0 | The paper is a methodological study using hydroflumethiazide data as a test case, but no specific numeric PK parameter values are provided in the evidence. |
 | PD | Maharaj_1993 | not_relevant | 0 | 0 | The paper is a clinical efficacy trial comparing two drug combinations, reporting only mean blood pressure changes and response rates without any pharmacokinetic data, concentration-effect analysis, or PD modeling. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 04:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 16:57 UTC</sub>

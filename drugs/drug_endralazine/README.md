@@ -18,7 +18,7 @@ Endralazine is a hydrazinophthalazine vasodilator that was developed as an antih
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 06:04 | 1:43 | 0/0/0 | 0/0/0 | 0/0/0 | 1,618/146 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 13:21 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 8,179/500 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -35,22 +35,21 @@ _not available_
 - **PubMed hits:** 23 matched, 22 returned
 - **screened:** 5  ·  **relevant:** 5
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Meredith_1983.pdf` | Meredith PA et al., The pharmacokinetics of endralazine in…, British journal of clinical… (1983) | popPK | 10 | [10.1111/j.1365-2125.1983.tb02139.x](https://doi.org/10.1111/j.1365-2125.1983.tb02139.x) | [6882620](https://pubmed.ncbi.nlm.nih.gov/6882620) | The paper reports quantitative PK parameters (half-life, bioavailability, clearance) for endralazine in humans, with specific numeric values provided in the text. |
-| `Reece_1983.pdf` | Reece PA et al., Endralazine - a new hydralazine-like an…, European journal of clinica… (1983) | popPK | 10 | [10.1007/BF00542127](https://doi.org/10.1007/BF00542127) | [6653651](https://pubmed.ncbi.nlm.nih.gov/6653651) | The study reports quantitative PK parameters for endralazine, but the specific numeric values for clearance, volume, and half-life are not present in the provided evidence text. |
-| `Reece_1982.pdf` | Reece PA et al., Influence of acetylator phenotype on th…, European journal of clinica… (1982) | popPK | 9 | [10.1007/BF00637500](https://doi.org/10.1007/BF00637500) | [7160421](https://pubmed.ncbi.nlm.nih.gov/7160421) | The study reports quantitative PK parameters (half-life, AUC) for endralazine in humans, with specific numeric values provided in the text. |
-| `Elliott_1984.pdf` | Elliott HL et al., Clinical pharmacological studies with t…, International journal of cl… (1984) | popPK | 8 | not captured | [6469433](https://pubmed.ncbi.nlm.nih.gov/6469433) | The paper reports quantitative pharmacokinetic parameters for endralazine, specifically terminal elimination half-life (2.5 h acute, 7.5 h chronic) and oral bioavailability (75%), which are present in the provided text. |
-| `Elliott_1984_2.pdf` | Elliott HL et al., Pharmacodynamic and pharmacokinetic stu…, Journal of hypertension. Su… (1984) | popPK | 8 | not captured | [6599716](https://pubmed.ncbi.nlm.nih.gov/6599716) | The paper reports quantitative pharmacokinetic parameters (half-life, bioavailability) for endralazine, though it lacks detailed compartmental model parameters like clearance or volume of distribution. |
-| `Elliott_1984_3.pdf` | Elliott HL et al., Clinical pharmacological studies with t…, European journal of clinica… (1984) | popPK | 8 | [10.1007/BF00544039](https://doi.org/10.1007/BF00544039) | [6499896](https://pubmed.ncbi.nlm.nih.gov/6499896) | The study reports quantitative pharmacokinetic parameters (terminal elimination half-life) for endralazine in patients with renal impairment, with specific numeric values provided in the text. |
+| `Meredith_1983.pdf` | Meredith PA et al., The pharmacokinetics of endralazine in…, British journal of clinical… (1983) | popPK | 10 | [10.1111/j.1365-2125.1983.tb02139.x](https://doi.org/10.1111/j.1365-2125.1983.tb02139.x) | [6882620](https://pubmed.ncbi.nlm.nih.gov/6882620) | The abstract explicitly reports quantitative pharmacokinetic parameters including terminal elimination half-life, oral bioavailability, and clearance for endralazine in human subjects. |
+| `Reece_1983.pdf` | Reece PA et al., Endralazine - a new hydralazine-like an…, European journal of clinica… (1983) | popPK | 10 | [10.1007/BF00542127](https://doi.org/10.1007/BF00542127) | [6653651](https://pubmed.ncbi.nlm.nih.gov/6653651) | The study reports pharmacokinetic parameters for endralazine in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Reece_1982.pdf` | Reece PA et al., Influence of acetylator phenotype on th…, European journal of clinica… (1982) | popPK | 9 | [10.1007/BF00637500](https://doi.org/10.1007/BF00637500) | [7160421](https://pubmed.ncbi.nlm.nih.gov/7160421) | The study reports quantitative PK parameters (half-life, AUC) for endralazine in humans, but specific clearance and volume values are not explicitly listed in the provided text. |
+| `Elliott_1984.pdf` | Elliott HL et al., Clinical pharmacological studies with t…, International journal of cl… (1984) | popPK | 8 | not captured | [6469433](https://pubmed.ncbi.nlm.nih.gov/6469433) | The study reports quantitative pharmacokinetic parameters (half-life, bioavailability) for endralazine in humans, though specific clearance or volume values are not explicitly listed in the provided text. |
+| `Elliott_1984_3.pdf` | Elliott HL et al., Clinical pharmacological studies with t…, European journal of clinica… (1984) | popPK | 8 | [10.1007/BF00544039](https://doi.org/10.1007/BF00544039) | [6499896](https://pubmed.ncbi.nlm.nih.gov/6499896) | The study reports quantitative pharmacokinetic parameters (terminal elimination half-life) for endralazine in humans, but lacks explicit values for clearance (CL) or volume of distribution (V). |
 
-<sub>queue written 2026-09-30T06:04:38.559285+00:00</sub>
+<sub>queue written 2026-10-06T13:21:36.849627+00:00</sub>
 
 ## Screened and excluded
 
@@ -72,12 +71,12 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Izotov_1984 | not_relevant | 2 | 0 | The text describes a methodological approach for qualitative assessment of single-dose effects using Dixon's criterion but does not report specific numeric PD parameters (Emax, EC50) or quantitative exposure-response curves for endralazine. |
 | popPK | Kindler_1981 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting blood pressure changes and side effects, with no pharmacokinetic parameters or quantitative disposition data for endralazine. |
 | PD | Kindler_1981 | not_relevant | 2 | 1 | The text describes a clinical trial with qualitative dose titration and blood pressure outcomes but does not report any concentration-effect data, PK/PD modeling, or numeric PD parameters (e.g., EC50, Emax). |
-| popPK | Kindler_1987 | relevant | 4 | 2 | The study reports relative changes in AUC and peak concentration due to food intake but lacks absolute quantitative disposition parameters (CL, V, t1/2) or a compartmental model. |
+| popPK | Kindler_1987 | irrelevant | 4 | 2 | The study reports only relative changes in peak concentration and AUC due to food intake, without providing absolute quantitative disposition parameters like clearance, volume of distribution, or half-life. |
 | popPK | Kirch_1982 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing blood pressure control and side effects, reporting no pharmacokinetic parameters for endralazine. |
 | PD | Kirch_1982 | not_relevant | 1 | 0 | The paper is a clinical trial comparing efficacy and safety but does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters. |
 | popPK | Oates_1981 | irrelevant | 1 | 0 | The study is a pharmacodynamic evaluation of blood pressure and renin activity in rats, reporting no quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Quyyumi_1984 | irrelevant | 0 | 0 | The study reports hemodynamic and functional outcomes (cardiac output, resistance) rather than pharmacokinetic parameters (CL, V, t1/2) for endralazine. |
-| popPK | Reece_1983 | relevant | 10 | 0 | The study reports quantitative PK parameters for endralazine, but the specific numeric values for clearance, volume, and half-life are not present in the provided evidence text. |
+| popPK | Quyyumi_1984 | irrelevant | 0 | 0 | The study reports hemodynamic and functional outcomes (cardiac output, resistance) rather than pharmacokinetic parameters (CL, V, ka) for endralazine. |
+| popPK | Reece_1983 | relevant | 10 | 0 | The study reports pharmacokinetic parameters for endralazine in humans, but the specific numeric values are not present in the provided evidence text. |
 | popPK | Weidmann_1983 | irrelevant | 0 | 0 | The paper is a clinical review of hypertension management that mentions endralazine only as a therapeutic option, without reporting any pharmacokinetic parameters. |
 | PD | Weidmann_1983 | not_relevant | 0 | 0 | The text is a general clinical review of hypertension management in 1983 and mentions endralazine only as a drug option in triple therapy, without providing any pharmacokinetic, pharmacodynamic, or exposure-response data. |
 | popPK | Wu_1986 | irrelevant | 1 | 0 | The paper is a clinical efficacy study reporting blood pressure changes and adverse effects, with no quantitative pharmacokinetic parameters (CL, V, ka, etc.) provided for endralazine. |

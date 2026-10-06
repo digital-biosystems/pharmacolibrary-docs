@@ -26,13 +26,13 @@ Muzolimine is a loop-type (high-ceiling) diuretic that was used to treat fluid r
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 08:08 | 1:36 | 0/1/0 | 0/0/0 | 0/0/0 | 14,217/5,271 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 19:30 | 2:07 | 0/1/0 | 0/0/0 | 0/0/0 | 18,773/4,989 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Brørs_1979_reference](drugs/drug_muzolimine/Muzolimine_Brrs1979_reference.md) | — | 1-compartment (no model) | 2 | Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979) | [10.1007/BF00609872](https://doi.org/10.1007/BF00609872) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Brørs_1979_reference](drugs/drug_muzolimine/Muzolimine_Brrs1979_reference.md) | — | 1-compartment (no model) | 2 | Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979) | [10.1007/BF00609872](https://doi.org/10.1007/BF00609872) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -44,7 +44,7 @@ Muzolimine is a loop-type (high-ceiling) diuretic that was used to treat fluid r
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -53,11 +53,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Brørs_1979.pdf` | Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979) | popPK | 10 | [10.1007/BF00609872](https://doi.org/10.1007/BF00609872) | [436918](https://pubmed.ncbi.nlm.nih.gov/436918) | The paper reports quantitative pharmacokinetic parameters (half-lives, renal clearance) for muzolimine in humans, with specific numeric values provided in the text. |
-| `Ritter_1985.pdf` | Ritter W et al., Pharmacokinetics of muzolimine after or…, Zeitschrift fur Kardiologie… (1985) | popPK | 9 | not captured | [4002791](https://pubmed.ncbi.nlm.nih.gov/4002791) | The paper is a relevant PK study for muzolimine, but the specific numeric parameter values are not present in the provided evidence, only the conclusion that they were not significantly different. |
+| `Brørs_1979.pdf` | Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979) | popPK | 10 | [10.1007/BF00609872](https://doi.org/10.1007/BF00609872) | [436918](https://pubmed.ncbi.nlm.nih.gov/436918) | The study reports quantitative pharmacokinetic parameters (half-lives, renal clearance) for muzolimine in humans, with specific numeric values provided in the text. |
+| `Ritter_1985.pdf` | Ritter W et al., Pharmacokinetics of muzolimine after or…, Zeitschrift fur Kardiologie… (1985) | popPK | 10 | not captured | [4002791](https://pubmed.ncbi.nlm.nih.gov/4002791) | The study reports quantitative PK parameters for muzolimine in humans, but the specific numeric values are not present in the provided evidence text. |
 | `Geck_1986.pdf` | Geck P et al., Inhibition of ion transport in Ehrlich…, Naunyn-Schmiedeberg's archi… (1986) | pd | 5 | [10.1007/BF00512948](https://doi.org/10.1007/BF00512948) | [2429195](https://www.ncbi.nlm.nih.gov/pubmed/2429195) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T08:06:40.865220+00:00</sub>
+<sub>queue written 2026-10-06T19:28:20.368727+00:00</sub>
 
 ## Screened and excluded
 
@@ -65,7 +65,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | PD | Morachiello_1985 | not_relevant | 2 | 1 | The paper describes a clinical comparison of diuretic effects (urine volume, Na+ excretion) at different doses but does not provide numeric concentration-effect data, PK/PD parameters (Emax, EC50), or a formal dose-response curve analysis. |
 | PD | Pohlmann-Eden_1991 | not_relevant | 1 | 0 | The paper is a case series reporting adverse events (neuromyeloencephalopathy) associated with high doses of muzolimine but does not provide any quantitative pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters like Emax or EC50. |
-| popPK | Ritter_1985 | relevant | 9 | 0 | The paper is a relevant PK study for muzolimine, but the specific numeric parameter values are not present in the provided evidence, only the conclusion that they were not significantly different. |
+| popPK | Ritter_1985 | relevant | 10 | 0 | The study reports quantitative PK parameters for muzolimine in humans, but the specific numeric values are not present in the provided evidence text. |
 | PD | Russo_1992 | not_relevant | 1 | 0 | The text is a qualitative review of the clinical use of loop diuretics in renal failure and contains no numeric PD parameters, concentration-effect data, or dose-response analysis for muzolimine. |
 | PD | Sastry_1988 | not_relevant | 0 | 0 | The paper describes spectrophotometric analytical methods for quantifying muzolimine, not pharmacodynamic or exposure-response relationships. |
 | PD | Schwartz_1986 | not_relevant | 1 | 0 | The text is a general review of diuretics that mentions muzolimine's duration of action and protein binding qualitatively, but provides no numeric PD parameters, dose-response curves, or exposure-response analysis. |
@@ -74,4 +74,4 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | de_1985 | not_relevant | 1 | 0 | The paper reports clinical blood pressure changes at a fixed dose but does not provide plasma concentration data or a formal exposure-response/dose-response model with numeric PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 09:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 19:28 UTC</sub>

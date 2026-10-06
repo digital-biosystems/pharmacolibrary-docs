@@ -26,13 +26,13 @@ Vincamine is a vasodilator alkaloid that has been used to widen blood vessels an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:54 | 1:15 | 0/1/0 | 0/0/0 | 0/0/0 | 2,591/2,976 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:31 | 1:57 | 0/1/0 | 0/0/0 | 0/0/0 | 25,792/4,408 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Millart_1983_reference](drugs/drug_vincamine/Vincamine_Millart1983_reference.md) | — | 1-compartment (no model) | 3 | Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Millart_1983_reference](drugs/drug_vincamine/Vincamine_Millart1983_reference.md) | — | 1-compartment (no model) | 3 | Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -44,7 +44,7 @@ Vincamine is a vasodilator alkaloid that has been used to widen blood vessels an
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -53,31 +53,31 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Juan_2005.pdf` | Juan YP et al., Measurement and pharmacokinetics of vin…, Journal of chromatography. A (2005) | popPK | 9 | [10.1016/j.chroma.2005.01.043](https://doi.org/10.1016/j.chroma.2005.01.043) | [16130744](https://pubmed.ncbi.nlm.nih.gov/16130744) | The paper describes a pharmacokinetic study of vincamine in rats using a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
-| `Millart_1983.pdf` | Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983) | popPK | 9 | not captured | [6654533](https://pubmed.ncbi.nlm.nih.gov/6654533) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, AUC, half-life) for vincamine in humans, with values explicitly present in the text. |
-| `Siegers_1977.pdf` | Siegers CP et al., [Vincamine concentrations in plasma and…, Arzneimittel-Forschung (1977) | popPK | 9 | not captured | [578452](https://pubmed.ncbi.nlm.nih.gov/578452) | The study reports PK parameters for vincamine, including a two-compartment model and a mean beta half-life of 2 hours, but lacks specific numeric values for clearance, volume of distribution, or intercompartmental clearance. |
+| `Juan_2005.pdf` | Juan YP et al., Measurement and pharmacokinetics of vin…, Journal of chromatography. A (2005) | popPK | 9 | [10.1016/j.chroma.2005.01.043](https://doi.org/10.1016/j.chroma.2005.01.043) | [16130744](https://pubmed.ncbi.nlm.nih.gov/16130744) | The study reports pharmacokinetic parameters for vincamine in rats using a compartmental model, but the specific numeric values are not present in the provided evidence. |
+| `Millart_1983.pdf` | Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983) | popPK | 9 | not captured | [6654533](https://pubmed.ncbi.nlm.nih.gov/6654533) | The study reports quantitative pharmacokinetic parameters (Tmax, Cmax, AUC, half-life) for vincamine in humans, with values explicitly listed in the text. |
+| `Siegers_1977.pdf` | Siegers CP et al., [Vincamine concentrations in plasma and…, Arzneimittel-Forschung (1977) | popPK | 9 | not captured | [578452](https://pubmed.ncbi.nlm.nih.gov/578452) | The study reports a two-compartment model and half-life for vincamine in humans, but specific clearance (CL) and volume (V) values are not explicitly listed in the provided text. |
 | `Kaneko_1991.pdf` | Kaneko S et al., Effects of several cerebroprotective dr…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0922-4106(91)90086-w](https://doi.org/10.1016/0922-4106(91)90086-w) | [1652446](https://www.ncbi.nlm.nih.gov/pubmed/1652446) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-30T09:53:50.551911+00:00</sub>
+<sub>queue written 2026-10-06T20:29:27.341005+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Braun_2019 | irrelevant | 0 | 0 | The study focuses on the behavioral and mechanistic effects of vindeburnol (a vincamine derivative) in an Alzheimer's disease mouse model, with no pharmacokinetic parameters reported. |
+| popPK | Braun_2019 | irrelevant | 0 | 0 | The study investigates the behavioral and neuroprotective effects of vindeburnol (a vincamine derivative) in mice, not the pharmacokinetic parameters of vincamine itself. |
 | popPK | Camón_1978 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
-| popPK | Juan_2005 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of vincamine in rats using a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Juan_2005 | relevant | 9 | 0 | The study reports pharmacokinetic parameters for vincamine in rats using a compartmental model, but the specific numeric values are not present in the provided evidence. |
 | popPK | Kaneko_1991 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
-| PGx | Kong_2016 | not_relevant | 0 | 0 | The study investigates the effect of vinpocetine on CYP enzymes in vitro, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of vincamine. |
-| popPK | Manda_2015 | irrelevant | 0 | 0 | The study focuses on vinpocetine (a derivative) and evaluates in-vitro enzyme inhibition (CYP/P-gp) rather than reporting pharmacokinetic disposition parameters for vincamine. |
+| PGx | Kong_2016 | not_relevant | 0 | 0 | The study investigates the in vitro CYP inhibition potential of vinpocetine (a vincamine derivative) but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Manda_2015 | irrelevant | 0 | 0 | The study focuses on vinpocetine (a derivative) and evaluates in-vitro enzyme inhibition (CYPs, P-gp) rather than reporting pharmacokinetic disposition parameters (CL, V, t1/2) for vincamine. |
 | PD | Manda_2015 | not_relevant | 0 | 0 | The paper reports in vitro pharmacokinetic interaction parameters (IC50/EC50 for CYPs and P-gp) for vinpocetine, not a pharmacodynamic exposure-response or dose-response relationship for vincamine. |
 | PGx | Manda_2015 | not_relevant | 0 | 0 | The study investigates the drug-drug interaction potential of vinpocetine (a derivative) on CYPs and P-gp, but does not report any pharmacogenomic effects (gene variants) on the PK/PD of vincamine. |
-| popPK | Norwood_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the antimalarial activity (EC50) of vincamine analogues, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Norwood_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on antimalarial analogues of vincamine, reporting biological activity (EC50) rather than pharmacokinetic parameters. |
 | popPK | Rognoni_1977 | irrelevant | 0 | 0 | no_text gate: only 159 chars of text extracted (&lt; 400) |
-| popPK | Siegers_1977 | relevant | 9 | 4 | The study reports PK parameters for vincamine, including a two-compartment model and a mean beta half-life of 2 hours, but lacks specific numeric values for clearance, volume of distribution, or intercompartmental clearance. |
-| popPK | Vereczkey_1979 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vinpocetine (a vincamine derivative), not vincamine itself. |
-| popPK | Wang_2020 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on vincamine derivatives for diabetes, reporting biological activity (EC50) rather than pharmacokinetic parameters. |
-| popPK | Zhang_2020 | irrelevant | 0 | 0 | The paper is a natural product isolation and biological activity study (vasorelaxant/cytotoxicity) that does not report any pharmacokinetic parameters for vincamine. |
+| popPK | Siegers_1977 | relevant | 9 | 4 | The study reports a two-compartment model and half-life for vincamine in humans, but specific clearance (CL) and volume (V) values are not explicitly listed in the provided text. |
+| popPK | Vereczkey_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vinpocetine (a vincamine derivative), not vincamine itself. |
+| popPK | Wang_2020 | irrelevant | 0 | 0 | The study focuses on the synthesis and biological evaluation of vincamine derivatives for diabetes treatment, reporting no pharmacokinetic parameters for vincamine itself. |
+| popPK | Zhang_2020 | irrelevant | 0 | 0 | The paper is a phytochemical study reporting the isolation and biological activity (vasorelaxant/cytotoxic) of vincamine analogs, not a pharmacokinetic study. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 17:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 20:29 UTC</sub>

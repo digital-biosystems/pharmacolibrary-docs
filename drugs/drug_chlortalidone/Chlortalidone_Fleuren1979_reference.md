@@ -4,7 +4,7 @@
 
 # chlortalidone — `Chlortalidone_Fleuren1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,19 +20,21 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chlorthalidone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chlorthalidone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:55.357012+00:00) predates the upstream re-run (2026-10-06 17:04:24.091139+00:00). Current validate status: `rejected`.
 
 ## Citation
 Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00563556](https://doi.org/10.1007/BF00563556)
 
 ## Model component
-<dbs-pgx drug="chlortalidone" model-id="Chlortalidone_Fleuren1979_reference" status="rejected" stale="false" population="healthy adults" measured-compound="chlorthalidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="chlortalidone" model-id="Chlortalidone_Fleuren1979_reference" status="rejected" stale="true" population="normal human volunteers" measured-compound="chlorthalidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,8 +44,7 @@ Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | mean plasma t1/2 after i.v. dosing | `Q57` · t1/2z | 36.5 | h | 131400.0 | [h] | not captured | llm_confirmed (0.6) | Fleuren_1979:abstract | — | not captured |
-| mean total of ... % of the intranvenous dose was excreted in urine over infinite time | `Q84` · AUC%ext | 65.4 | % | not captured | [%] | not captured | llm (0.6) | Fleuren_1979:abstract | — | not captured |
-| mean total excretion after the oral dose | `Q44` · fe | 43.8 | % | not captured | [%] | not captured | llm_confirmed (0.6) | Fleuren_1979:abstract | — | not captured |
+| mean total of ... % of the intranvenous dose was excreted in urine over infinite time | `Q44` · fe | 65.4 | % | not captured | [%] | not captured | llm (0.6) | Fleuren_1979:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,6 +57,7 @@ Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal 
 - dropped duplicate Q57 ('mean plasma t1/2 after oral doses', value 44.1) — already have one for this compound
 - dropped duplicate Q57 ('mean red blood cell concentration t1/2 after i.v. doses', value 46.4) — already have one for this compound
 - dropped duplicate Q57 ('mean red blood cell t1/2 after the oral doses', value 52.7) — already have one for this compound
+- dropped duplicate Q44 ('mean total excretion after the oral dose', value 43.8) — already have one for this compound
 - unit_dimension_unknown: '% of dose' (fe)
 - dropped duplicate Q44 ('Faecal excretion ... in the i.v.', value None) — already have one for this compound
 - dropped unlinked row (NIL): 'mean F ... from plasma concentrations' — extend the ontology if this is a real PK parameter (source ['Fleuren_1979:abstract'])
@@ -77,19 +79,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[mean f from plasma concentrations]` | not captured | 0.61 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean f from the erythrocyte concentrations]` | not captured | 0.72 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean f from urinary excretion measurements]` | not captured | 0.67 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean plasma t1/2 after i.v. dosing]` | 36.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean plasma t1/2 after i.v. dosing]` | not captured | 36.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean total excretion after the oral dose]` | 43.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean total of ... % of the intranvenous dose excreted in urine over infinite time]` | not captured | 65.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean total excretion after the oral dose]` | not captured | 43.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean total of ... % of the intranvenous dose was excreted in urine over infinite time]` | 65.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean total of]` | not captured | 65.4 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | chlorthalidone | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | chlorthalidone | unknown | mismatch |
 
@@ -105,11 +106,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Fleuren_1979:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Fleuren_1979:abstract'] |
-| C5_dimension_Q84 | pass | dimensionless | not captured | not captured | not captured | ['Fleuren_1979:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -135,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 05:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 17:04 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;ketanserin&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/&quot;},{&quot;label&quot;:&quot;Trenk_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketanserin_Michiels1988_reference&quot;,&quot;label&quot;:&quot;Michiels_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Hanff2005_reference&quot;,&quot;label&quot;:&quot;Hanff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Trenk1983_reference&quot;,&quot;label&quot;:&quot;Trenk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketanserin_Hanff2005_reference&quot;,&quot;label&quot;:&quot;Hanff_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Hanff2005_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Michiels1988_reference&quot;,&quot;label&quot;:&quot;Michiels_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Michiels1988_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketanserin_Trenk1983_reference&quot;,&quot;label&quot;:&quot;Trenk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketanserin/Ketanserin_Trenk1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ketanserin — `Ketanserin_Trenk1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record was built from the paper's abstract only, so reported summary statistics (t1/2z 15.6 h, CL 0.39 L/kg/h, Vss 3.3 L/kg, bioavailability 0.51) stood in for a fitted model. The model builder used Vss as the distribution volume because no central volume was reported; the resulting one-compartment model reproduces AUC and terminal half-life but not the early distribution phase. A second reader returned null for all four parameter values and proposed different values (half-life 18.5 h, bioavailability 0.51), so the extracted numbers are not confirmed. Extracted — ketanserin: t1/2z 15.6 h, CL 0.39 L/kg/h, Vss 3.3 L/kg, Fab 0.51.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of half-life of the elimination phase: this record has none, the second reading 18.5; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:27:20.623507+00:00) predates the upstream re-run (2026-10-06 15:41:00.881629+00:00). Current validate status: `extracted`.
 
 ## Citation
 Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovascular p… (1983)
   ·  DOI: [10.1097/00005344-198311000-00018](https://doi.org/10.1097/00005344-198311000-00018)
 
 ## Model component
-<dbs-pgx drug="ketanserin" model-id="Ketanserin_Trenk1983_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ketanserin" model-id="Ketanserin_Trenk1983_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.
@@ -38,8 +40,6 @@ Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovas
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | mean terminal half-life | `Q57` · t1/2z | 15.6 | h | 56160.0 | [h] | not captured | llm (0.6) | Trenk_1983:abstract | — | not captured |
@@ -69,28 +69,20 @@ Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovas
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+| `gpt-oss:120b` | partly confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[bioavailability]` | 0.51 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 0.51 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life of the elimination phase]` | not captured | 18.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean terminal half-life]` | 15.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal half-life]` | not captured | 15.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total clearance at steady state]` | not captured | 0.39 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total clearance]` | 0.39 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total clearance]` | not captured | 0.39 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 3.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 3.3 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ketanserin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ketanserin | unknown | mismatch |
 
 </details>
 
@@ -167,4 +159,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 02:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:41 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Potts_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Potts2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record for clonidine in children was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The dimension mismatch concerns the central volume of distribution, given as 62.5 l 70 kg(-1), which is not a valid volume dimension. Other parameters (clearance 14.6 L/h, intercompartmental clearance 157 l x h(-1) 70 kg(-1), peripheral volume 119 l 70 kg(-1), terminal half-life 25.7 weeks, absorption half-life 0.98 h, bioavailability 1) were extracted, but a second reader returned null for all of them and marked the dose compound and primary analyte as unknown. Extracted — clonidine: CL 14.6 L/h, V1 62.5 l 70 kg(-1), Q 157 l x h(-1) 70 kg(-1), V2 119 l 70 kg(-1), t1/2z 25.7 weeks, t1/2ka 0.98 h, Fab 1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:37.254006+00:00) predates the upstream re-run (2026-10-06 11:56:43.150847+00:00). Current validate status: `rejected`.
 
 ## Citation
 Potts AL et al., Clonidine disposition in children; a po…, Paediatric anaesthesia (2007)
   ·  DOI: [10.1111/j.1460-9592.2007.02251.x](https://doi.org/10.1111/j.1460-9592.2007.02251.x)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="false" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="true" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -84,14 +86,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+| `gpt-oss:120b` | not confirmed | 0.15 (3/20 fields) | 17 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[absorption half-life from the epidural space]` | 0.98 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption half-life]` | not captured | 0.98 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[adult rate]` | not captured | 82 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central volume of distribution]` | 62.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central volume of distribution]` | not captured | 62.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 14.6 | not captured | only_one_extracted |
@@ -157,4 +160,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 18:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:56 UTC</sub>

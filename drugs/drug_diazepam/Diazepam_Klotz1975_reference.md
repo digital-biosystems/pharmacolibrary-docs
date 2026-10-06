@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Klotz_1975 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Klotz1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:28.883847+00:00) predates the upstream re-run (2026-10-06 19:05:35.549118+00:00). Current validate status: `rejected`.
+
 ## Citation
 Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975)
   ·  DOI: [10.1172/JCI107938](https://doi.org/10.1172/JCI107938)
 
 ## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="false" population="adults with liver disease and healthy controls" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="true" population="healthy adults and patients with liver disease" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -42,12 +44,13 @@ Klotz U et al., The effects of age and liver disease on…, The Journal of clini
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| B. S.† | `Q60` · t1/2β | 47.4 | B | not captured | [b] | not captured | llm (0.6) | Klotz_1975_table_p9_1:row2:col1, Klotz_1975_table_p9_1:row2:col2, Klotz_1975_table_p9_1:row2:col3, Klotz_1975_table_p9_1:row2:col4, Klotz_1975_table_p9_1:row2:col5, Klotz_1975_table_p9_1:row2:col6 | — | not captured |
-| drug clearance | `Q22` · CL | 13.0 | ml/min | 2.1666666666666665e-07 | L/h | not captured | boundary (0.8) | Klotz_1975:other_prose | — | not captured |
-| blood clearance of diazepam | `Q23` · CLb | 24.8 | ml/min | 4.1333333333333333e-07 | L/h | not captured | boundary (0.8) | Klotz_1975:other_prose | — | not captured |
-| Vd(os)/kg, liter/kg | `Q61` · V | 1.13 | liter/kg | 0.07909999999999999 | L | not captured | boundary (0.8) | Klotz_1975:discussion_prose | — | not captured |
-| Ka (h−1) | `Q49` · kabs | 1.21 | h−1 | 0.0003361111111111111 | 1/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
-| Tlag (h) | `Q83` · tlag | 84.2 | h | 303120.0 | h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
+| B. S.* | `Q900` · equation variable | 70.8 | B | not captured | [b] | not captured | llm (0.6) | Klotz_1975_table_p9_1:row1:col1, Klotz_1975_table_p9_1:row1:col2, Klotz_1975_table_p9_1:row1:col3, Klotz_1975_table_p9_1:row1:col4, Klotz_1975_table_p9_1:row1:col5, Klotz_1975_table_p9_1:row1:col6 | — | not captured |
+| M. C.† | `Q60` · t1/2β | 62.2 | B | not captured | [b] | not captured | llm (0.6) | Klotz_1975_table_p9_1:row4:col1, Klotz_1975_table_p9_1:row4:col2, Klotz_1975_table_p9_1:row4:col3, Klotz_1975_table_p9_1:row4:col4, Klotz_1975_table_p9_1:row4:col5, Klotz_1975_table_p9_1:row4:col6 | — | not captured |
+| drug clearance (chronic active hepatitis, individual 1) | `Q22` · CL | 13.0 | ml/min | 2.1666666666666665e-07 | L/h | not captured | boundary (0.8) | Klotz_1975:other_prose | — | not captured |
+| calculated blood clearance of diazepam | `Q23` · CLb | 24.8 | ml/min | 4.1333333333333333e-07 | L/h | not captured | boundary (0.8) | Klotz_1975:other_prose | — | not captured |
+| Vd(area)/kg, | `Q61` · V | 1.13 | liter/kg | 0.07909999999999999 | L | not captured | boundary (0.8) | Klotz_1975:discussion_prose | — | not captured |
+| Ka * (h−1) | `Q49` · kabs | 1.03 | h−1 | 0.0002861111111111111 | 1/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
+| Tlag (h) | `Q83` · tlag | 0.186 | h | 669.6 | h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,30 +60,31 @@ Klotz U et al., The effects of age and liver disease on…, The Journal of clini
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 't1/2(b)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'bilirubin' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'ldh' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'sgot' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'alkaline phosphatase' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'albumin' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'B. S.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row1:col1', 'Klotz_1975_table_p9_1:row1:col2', 'Klotz_1975_table_p9_1:row1:col3', 'Klotz_1975_table_p9_1:row1:col4', 'Klotz_1975_table_p9_1:row1:col5', 'Klotz_1975_table_p9_1:row1:col6'])
-- unit_dimension_mismatch: 'B. S.†' → Q60 (unit '[length] ** 2' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): 'B. S.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row2:col1', 'Klotz_1975_table_p9_1:row2:col2', 'Klotz_1975_table_p9_1:row2:col3', 'Klotz_1975_table_p9_1:row2:col4', 'Klotz_1975_table_p9_1:row2:col5', 'Klotz_1975_table_p9_1:row2:col6'])
 - dropped unlinked row (NIL): 'M. C.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row3:col1', 'Klotz_1975_table_p9_1:row3:col2', 'Klotz_1975_table_p9_1:row3:col3', 'Klotz_1975_table_p9_1:row3:col4', 'Klotz_1975_table_p9_1:row3:col5', 'Klotz_1975_table_p9_1:row3:col6'])
-- dropped unlinked row (NIL): 'M. C.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row4:col1', 'Klotz_1975_table_p9_1:row4:col2', 'Klotz_1975_table_p9_1:row4:col3', 'Klotz_1975_table_p9_1:row4:col4', 'Klotz_1975_table_p9_1:row4:col5', 'Klotz_1975_table_p9_1:row4:col6'])
+- unit_dimension_mismatch: 'M. C.†' → Q60 (unit '[length] ** 2' vs ontology '[time]') — route to review
 - dropped unlinked row (NIL): 'J. H.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row5:col1', 'Klotz_1975_table_p9_1:row5:col2', 'Klotz_1975_table_p9_1:row5:col3', 'Klotz_1975_table_p9_1:row5:col4', 'Klotz_1975_table_p9_1:row5:col5', 'Klotz_1975_table_p9_1:row5:col6'])
 - dropped unlinked row (NIL): 'J. H.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row6:col1', 'Klotz_1975_table_p9_1:row6:col2', 'Klotz_1975_table_p9_1:row6:col3', 'Klotz_1975_table_p9_1:row6:col4', 'Klotz_1975_table_p9_1:row6:col5', 'Klotz_1975_table_p9_1:row6:col6'])
 - dropped unlinked row (NIL): 'J. H.§' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row7:col1', 'Klotz_1975_table_p9_1:row7:col2', 'Klotz_1975_table_p9_1:row7:col3', 'Klotz_1975_table_p9_1:row7:col4', 'Klotz_1975_table_p9_1:row7:col5', 'Klotz_1975_table_p9_1:row7:col6'])
-- dropped unlinked row (NIL): 'J. M.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row8:col1', 'Klotz_1975_table_p9_1:row8:col2', 'Klotz_1975_table_p9_1:row8:col3', 'Klotz_1975_table_p9_1:row8:col4', 'Klotz_1975_table_p9_1:row8:col5', 'Klotz_1975_table_p9_1:row8:col6'])
+- unit_dimension_mismatch: 'J. M.*' → Q60 (unit '[length] ** 2' vs ontology '[time]') — route to review
+- dropped duplicate Q60 ('J. M.*', value '64.8') — already have one for this compound
 - dropped unlinked row (NIL): 'J. M.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row9:col1', 'Klotz_1975_table_p9_1:row9:col2', 'Klotz_1975_table_p9_1:row9:col3', 'Klotz_1975_table_p9_1:row9:col4', 'Klotz_1975_table_p9_1:row9:col5', 'Klotz_1975_table_p9_1:row9:col6'])
-- dropped unlinked row (NIL): 'J. J.*' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row10:col1', 'Klotz_1975_table_p9_1:row10:col2', 'Klotz_1975_table_p9_1:row10:col4', 'Klotz_1975_table_p9_1:row10:col5', 'Klotz_1975_table_p9_1:row10:col6'])
-- dropped unlinked row (NIL): 'J. J.†' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row11:col1', 'Klotz_1975_table_p9_1:row11:col2', 'Klotz_1975_table_p9_1:row11:col3', 'Klotz_1975_table_p9_1:row11:col4', 'Klotz_1975_table_p9_1:row11:col5', 'Klotz_1975_table_p9_1:row11:col6'])
-- dropped unlinked row (NIL): 'Upper normal limit' — extend the ontology if this is a real PK parameter (source ['Klotz_1975_table_p9_1:row12:col1', 'Klotz_1975_table_p9_1:row12:col2', 'Klotz_1975_table_p9_1:row12:col3', 'Klotz_1975_table_p9_1:row12:col4', 'Klotz_1975_table_p9_1:row12:col5'])
-- table mostly unlinked (11/12 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- salvaged Q22 ('drug clearance'=13.0) from results prose — parameter table was unreadable
-- salvaged Q23 ('blood clearance of diazepam'=24.8) from results prose — parameter table was unreadable
-- salvaged Q61 ('Vd(os)/kg, liter/kg'=1.13) from results prose — parameter table was unreadable
+- unit_dimension_mismatch: 'J. J.*' → Q60 (unit '[length] ** 2' vs ontology '[time]') — route to review
+- dropped duplicate Q60 ('J. J.*', value '89.3') — already have one for this compound
+- dropped duplicate Q900 ('J. J.†', value '49.0') — already have one for this compound
+- dropped duplicate Q900 ('Upper normal limit', value '45.4') — already have one for this compound
+- salvaged Q22 ('drug clearance (chronic active hepatitis, individual 1)'=13.0) from results prose — parameter table was unreadable
+- salvaged Q23 ('calculated blood clearance of diazepam'=24.8) from results prose — parameter table was unreadable
+- salvaged Q61 ('Vd(area)/kg,'=1.13) from results prose — parameter table was unreadable
+- implicit units: 'calculated blood clearance of diazepam' → ml/min (from the paper text: 'Abstract states plasma clearance of diazepam was between 20 and 32 ml/min; text also reports clearance values in ml/min ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -126,8 +130,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | fail | 0.31 | 0.032 | 0.1032 | 0.25 | reported t½β |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Klotz_1975:other_prose'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
-| C5_dimension_Q60 | fail | [length] ** 2 | B | not captured | not captured | ['Klotz_1975_table_p9_1:row2:col1', 'Klotz_1975_table_p9_1:row2:col2', 'Klotz_1975_table_p9_1:row2:col3', 'Klotz_1975_table_p9_1:row2:col4', 'Klotz_1975_table_p9_1:row2:col5', 'Klotz_1975_table_p9_1:row2:col6'] |
+| C5_dimension_Q60 | fail | [length] ** 2 | B | not captured | not captured | ['Klotz_1975_table_p9_1:row4:col1', 'Klotz_1975_table_p9_1:row4:col2', 'Klotz_1975_table_p9_1:row4:col3', 'Klotz_1975_table_p9_1:row4:col4', 'Klotz_1975_table_p9_1:row4:col5', 'Klotz_1975_table_p9_1:row4:col6'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.8 | not captured | not captured | ['Klotz_1975:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -158,4 +164,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 19:05 UTC</sub>

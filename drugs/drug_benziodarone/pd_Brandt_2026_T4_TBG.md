@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Benziodarone displaces T4 from thyroxine-binding globulin (TBG) in an in vitro assay, with the concentration-response relationship described by a sigmoid Emax model of inhibition. The paper reports an IC50 of 21,543 nM for this displacement effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brandt_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

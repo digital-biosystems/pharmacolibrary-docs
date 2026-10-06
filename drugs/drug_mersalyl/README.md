@@ -18,7 +18,7 @@ Mersalyl is a mercurial compound that was formerly used as a diuretic to treat f
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:38 | 0:41 | 0/0/0 | 0/0/0 | 0/0/0 | 1,734/158 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 17:22 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 19,239/535 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -60,7 +60,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Orlický_1987.pdf` | Orlický J et al., Effects of sulfhydryl reagents on Na+-C…, General physiology and biop… (1987) | pd | 4 | not captured | [3653680](https://www.ncbi.nlm.nih.gov/pubmed/3653680) | metadata signals extractable PD data (IC50) |
 | `Varecka_1986.pdf` | Varecka L et al., Inhibition by divalent cations and sulp…, Biochimica et biophysica ac… (1986) | pd | 4 | [10.1016/0005-2736(86)90151-3](https://doi.org/10.1016/0005-2736(86)90151-3) | [2421771](https://www.ncbi.nlm.nih.gov/pubmed/2421771) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T07:38:27.672755+00:00</sub>
+<sub>queue written 2026-10-06T17:22:08.066620+00:00</sub>
 
 ## Screened and excluded
 
@@ -70,21 +70,21 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Beavis_1989 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on mitochondrial membrane binding sites, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Beavis_1991 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on mitochondrial membrane channels, not a pharmacokinetic study, and reports no disposition parameters for mersalyl. |
 | PD | Beavis_1991 | not_relevant | 3 | 2 | The paper reports qualitative shifts in IC50 values for mitochondrial channel inhibitors upon mersalyl pretreatment, but does not provide specific numeric PD parameters or a quantitative exposure-response curve for mersalyl itself. |
-| popPK | Jung_1997 | irrelevant | 0 | 0 | The paper is a mechanistic study on yeast mitochondrial permeability transition pores where mersalyl is used only as a tool compound to probe pore mechanisms, not as a subject for pharmacokinetic analysis. |
+| popPK | Jung_1997 | irrelevant | 0 | 0 | The paper is a mechanistic study of mitochondrial permeability transition pores in yeast, where mersalyl is used only as a tool compound to inhibit Pi/OH- antiport, not as a subject of pharmacokinetic analysis. |
 | PD | Jung_1997 | not_relevant | 0 | 0 | The paper describes mitochondrial biochemistry and pore regulation; mersalyl is mentioned only as a tool to inhibit Pi/OH- antiport, with no drug exposure-response or PD parameters reported. |
-| popPK | Lalitha_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of selenium uptake in plant mitochondria where mersalyl is used only as a thiol inhibitor, not as the subject drug for PK analysis. |
+| popPK | Lalitha_1995 | irrelevant | 0 | 0 | The study investigates selenium uptake in plant mitochondria and uses mersalyl only as a thiol inhibitor, not as the subject of pharmacokinetic analysis. |
 | PD | Lalitha_1995 | not_relevant | 1 | 1 | The paper reports a qualitative inhibition percentage (40-60%) for mersalyl on selenium uptake but does not provide specific concentrations, dose-response curves, or numeric PD parameters (like IC50) for mersalyl. |
-| popPK | Luger_1981 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion transport in rabbit colon epithelia, not a pharmacokinetic study reporting disposition parameters for mersalyl. |
+| popPK | Luger_1981 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion transport mechanisms in rabbit colon, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Martínez_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of taurine transport where mersalyl is used as a reagent, not a pharmacokinetic study of mersalyl disposition. |
 | PD | Martínez_1994 | not_relevant | 2 | 1 | The paper reports qualitative effects of mersalyl on taurine efflux at fixed concentrations (0.5-1 mM) but does not provide a dose-response curve, IC50, or other numeric PD parameters for mersalyl. |
 | popPK | Mavier_1975 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on enzyme inhibition, not a pharmacokinetic study, and contains no disposition parameters. |
-| popPK | Molina_1995 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on glutamine transport where mersalyl is used only as a thiol reagent/comparator, not as the subject drug for PK analysis. |
+| popPK | Molina_1995 | irrelevant | 0 | 0 | The paper studies glutamine transport in tumor mitochondria and mentions mersalyl only as an ineffective thiol reagent, not as a subject of pharmacokinetic analysis. |
 | PD | Molina_1995 | not_relevant | 0 | 0 | The paper reports that mersalyl did not significantly affect glutamine transport, providing no numeric dose-response or exposure-response relationship. |
 | popPK | Natuzzi_1999 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
 | PD | Natuzzi_1999 | not_relevant | 0 | 0 | The paper studies the inactivation of a mitochondrial carrier by pyridoxal 5'-phosphate and does not mention mersalyl or report any pharmacodynamic or exposure-response data for it. |
 | popPK | Oppedisano_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter inhibition, not a pharmacokinetic study reporting disposition parameters for mersalyl. |
 | popPK | Orlický_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of Na+-Ca2+ exchange inhibition and does not report any pharmacokinetic parameters for mersalyl. |
-| popPK | Porzig_1970 | irrelevant | 0 | 0 | The study investigates calcium efflux kinetics in erythrocyte ghosts where mersalyl is used only as a reagent to remove inexchangeable calcium, not as the subject of pharmacokinetic analysis. |
+| popPK | Porzig_1970 | irrelevant | 0 | 0 | The study investigates calcium efflux kinetics in human erythrocyte ghosts, using mersalyl only as a reagent to remove inexchangeable calcium, not as the subject of pharmacokinetic analysis. |
 | popPK | Powers_1991 | irrelevant | 0 | 0 | The paper is a mechanistic study on mitochondrial anion channels where mersalyl is used only as a chemical probe/comparator, not as a subject for pharmacokinetic analysis. |
 | PD | Powers_1991 | not_relevant | 1 | 1 | The paper reports qualitative interactions and a 10-fold shift in IC50 for mersalyl, but does not provide numeric PD parameters (like specific IC50 values or Emax) or a concentration-effect curve for mersalyl itself. |
 | popPK | Steib_1986 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on glutamine transport where mersalyl is used only as a thiol reagent inhibitor, not as the subject drug for PK analysis. |

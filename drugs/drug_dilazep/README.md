@@ -18,7 +18,7 @@ Dilazep is a vasodilator classified among vasodilators used in cardiac diseases.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:33 | 2:37 | 0/0/0 | 1/1/0 | 0/0/0 | 98,285/3,240 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 6/1 | 7/0 | 0 |
+| 2026-10-06 09:59 | 2:31 | 0/0/0 | 1/1/0 | 0/0/0 | 98,285/3,240 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 6/1 | 7/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Endres_2004_3H_adenosine_transport](drugs/drug_dilazep/pd_Endres_2004_3H_adenosine_transport.md) | [3H]adenosine transport ← dilazep · direct Emax (saturable) effect | — | Endres CJ et al., Mutation of leucine-92 selectively redu…, The Biochemical journal 380… (2004) | [10.1042/BJ20031880](https://doi.org/10.1042/BJ20031880) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [Shuralyova_2004_glucose_uptake](drugs/drug_dilazep/pd_Shuralyova_2004_glucose_uptake.md) | glucose uptake ← dilazep · direct sigmoid Emax (Hill) effect | — | Shuralyova I et al., Inhibition of glucose uptake in murine…, American journal of physiol… (2004) | [10.1152/ajpheart.00639.2003](https://doi.org/10.1152/ajpheart.00639.2003) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Endres_2004_3H_adenosine_transport](drugs/drug_dilazep/pd_Endres_2004_3H_adenosine_transport.md) | [3H]adenosine transport ← dilazep · direct Emax (saturable) effect | — | Endres CJ et al., Mutation of leucine-92 selectively redu…, The Biochemical journal 380… (2004) | [10.1042/BJ20031880](https://doi.org/10.1042/BJ20031880) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Shuralyova_2004_glucose_uptake](drugs/drug_dilazep/pd_Shuralyova_2004_glucose_uptake.md) | glucose uptake ← dilazep · direct sigmoid Emax (Hill) effect | — | Shuralyova I et al., Inhibition of glucose uptake in murine…, American journal of physiol… (2004) | [10.1152/ajpheart.00639.2003](https://doi.org/10.1152/ajpheart.00639.2003) |
 
 ## ADME sites
 
@@ -73,7 +73,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Sundaram_1998.pdf` | Sundaram M et al., Chimeric constructs between human and r…, The Journal of biological c… (1998) | pd | 4 | [10.1074/jbc.273.34.21519](https://doi.org/10.1074/jbc.273.34.21519) | [9705281](https://www.ncbi.nlm.nih.gov/pubmed/9705281) | metadata signals extractable PD data (IC50) |
 | `Yao_1997.pdf` | Yao SY et al., Molecular cloning and functional charac…, The Journal of biological c… (1997) | pd | 4 | [10.1074/jbc.272.45.28423](https://doi.org/10.1074/jbc.272.45.28423) | [9353301](https://www.ncbi.nlm.nih.gov/pubmed/9353301) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T08:32:12.463234+00:00</sub>
+<sub>queue written 2026-10-06T09:58:33.515508+00:00</sub>
 
 ## Screened and excluded
 

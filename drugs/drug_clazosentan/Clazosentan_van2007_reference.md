@@ -4,7 +4,7 @@
 
 # clazosentan — `Clazosentan_van2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,19 +20,21 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clazosentan, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clazosentan, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:55:55.434260+00:00) predates the upstream re-run (2026-10-06 19:56:08.130055+00:00). Current validate status: `rejected`.
 
 ## Citation
 van Giersbergen PL et al., Influence of ethnic origin and sex on t…, Journal of clinical pharmac… (2007)
   ·  DOI: [10.1177/0091270007307337](https://doi.org/10.1177/0091270007307337)
 
 ## Model component
-<dbs-pgx drug="clazosentan" model-id="Clazosentan_van2007_reference" status="rejected" stale="false" population="healthy Caucasian and Japanese subjects" measured-compound="clazosentan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clazosentan" model-id="Clazosentan_van2007_reference" status="rejected" stale="true" population="healthy Caucasian and Japanese adults" measured-compound="clazosentan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,8 +43,7 @@ van Giersbergen PL et al., Influence of ethnic origin and sex on t…, Journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| exposure to clazosentan ... higher in Japanese subjects compared with Caucasian subjects | `Q21` · AUC ratio | 16 | % | not captured | [%] | not captured | llm_corrected (0.6) | van_2007:abstract | — | not captured |
-| disposition half-lives | `Q57` · t1/2z | 6 | minutes | 360.0 | h | not captured | llm (0.6) | van_2007:abstract, van_2007:abstract, van_2007:abstract | — | not captured |
+| disposition half-lives | `Q57` · t1/2z | 6 | minutes | 360.0 | [min] | not captured | llm (0.6) | van_2007:abstract, van_2007:abstract, van_2007:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,10 +53,10 @@ van Giersbergen PL et al., Influence of ethnic origin and sex on t…, Journal o
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'exposure to clazosentan ... higher in Japanese subjects compared with Caucasian subjects' — extend the ontology if this is a real PK parameter (source ['van_2007:abstract'])
 - dropped unlinked row (NIL): 'exposure to clazosentan ... higher in females compared with males' — extend the ontology if this is a real PK parameter (source ['van_2007:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clazosentan
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- unit re-normalised: t1/2z 'minutes' now converts (value unchanged)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -69,16 +70,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[disposition half-life]` | not captured | 6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[disposition half-life of approximately 6 minutes]` | not captured | 6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[disposition half-lives]` | 6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[exposure to clazosentan ... higher in japanese subjects compared with caucasian subjects]` | 16 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[exposure to clazosentan was approximately higher in japanese subjects compared with caucasian subjects]` | not captured | 16 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[exposure to clazosentan was approximately 16% higher in japanese subjects compared with caucasian subjects]` | not captured | 16 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | clazosentan | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | clazosentan | unknown | mismatch |
 
@@ -94,7 +94,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['van_2007:abstract', 'van_2007:abstract', 'van_2007:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -122,4 +122,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 14:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 19:56 UTC</sub>

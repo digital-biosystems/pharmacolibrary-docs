@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;potassium canrenoate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_two_experimentally_determined&quot;,&quot;label&quot;:&quot;Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # potassium canrenoate
 
@@ -28,15 +28,15 @@ Potassium canrenoate is a diuretic that acts as an aldosterone antagonist and wa
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 14:48 | 2:34:01 | 0/0/3 | 0/0/0 | 0/0/0 | 155,293/47,549 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 18:44 | 13:25 | 3/0/0 | 0/0/0 | 0/0/0 | 151,310/41,528 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Suyagh_2012_median](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C1_half_life_beta failed (ratio 2.5271)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md) | — | 1-compartment (no model) | 3 (+2 cov.) | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Suyagh_2013_reference](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Suyagh_2012_median](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) | Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Suyagh_2013_reference](drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -48,7 +48,7 @@ Potassium canrenoate is a diuretic that acts as an aldosterone antagonist and wa
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -57,21 +57,21 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Suyagh_2013.pdf` | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | popPK | 10 | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) | [23846862](https://pubmed.ncbi.nlm.nih.gov/23846862) | The paper is a population pharmacokinetic study of potassium canrenoate (metabolite canrenone) and provides explicit numeric values for clearance, volume of distribution, and half-life in the text. |
+| `Suyagh_2013.pdf` | Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hypertension (2013) | popPK | 10 | [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994) | [23846862](https://pubmed.ncbi.nlm.nih.gov/23846862) | The paper reports quantitative population pharmacokinetic parameters (CL/F, V/F, half-life) for canrenone, the active metabolite of potassium canrenoate, in pediatric patients. |
 | `Knights_2010.pdf` | Knights KM et al., Spironolactone and canrenone inhibit UG…, Drug metabolism and disposi… (2010) | pgx | 7 | [10.1124/dmd.110.032870](https://doi.org/10.1124/dmd.110.032870) | [20304966](https://www.ncbi.nlm.nih.gov/pubmed/20304966) | metadata signals extractable PGX data (UGT2B7, PK/PD-context) |
 | `Uchaipichat_2006.pdf` | Uchaipichat V et al., Selectivity of substrate (trifluoperazi…, Drug metabolism and disposi… (2006) | pgx | 7 | [10.1124/dmd.105.007369](https://doi.org/10.1124/dmd.105.007369) | [16381668](https://www.ncbi.nlm.nih.gov/pubmed/16381668) | metadata signals extractable PGX data (UGT1A4, PK/PD-context) |
 
-<sub>queue written 2026-09-28T12:17:28.801529+00:00</sub>
+<sub>queue written 2026-10-06T18:31:10.893169+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Harvey_2017 | irrelevant | 0 | 0 | The study investigates vascular dysfunction and fibrosis mechanisms in rats using canrenoic acid as a mechanistic tool, not a pharmacokinetic study of potassium_canrenoate. |
+| popPK | Harvey_2017 | irrelevant | 0 | 0 | The study investigates vascular dysfunction and fibrosis mechanisms in rats using canrenoic acid (a metabolite of canrenone) as a mechanistic tool, without reporting any pharmacokinetic parameters. |
 | PD | Harvey_2017 | not_relevant | 1 | 0 | The paper reports qualitative effects of canrenoic acid on vascular markers and function in animal models but does not provide numeric concentration-effect or dose-response parameters (e.g., EC50, Emax) for the drug. |
 | PGx | Knights_2010 | not_relevant | 0 | 0 | The paper investigates the inhibition of aldosterone glucuronidation by spironolactone and canrenone, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of potassium_canrenoate. |
-| PGx | Kyle_2022 | not_relevant | 0 | 0 | The study investigates the effect of an ABCC1 inhibitor (probenecid) on HPA axis hormones, not the effect of a genetic variant on the PK/PD of potassium canrenoate. |
+| PGx | Kyle_2022 | not_relevant | 0 | 0 | The study investigates the effect of ABCC1 inhibition on HPA axis feedback and glucocorticoid receptor occupancy, using potassium canrenoate only as a tool to block mineralocorticoid receptors, rather than reporting pharmacogenomic effects on the PK/PD of potassium canrenoate itself. |
 | PGx | Uchaipichat_2006 | not_relevant | 0 | 0 | The paper investigates UGT enzyme selectivity using canrenoic acid as an inhibitor probe, but does not report pharmacogenomic effects on the PK/PD of potassium_canrenoate. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 12:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 18:31 UTC</sub>

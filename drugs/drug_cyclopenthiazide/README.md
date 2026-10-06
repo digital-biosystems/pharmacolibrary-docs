@@ -18,7 +18,7 @@ Cyclopenthiazide is a thiazide diuretic used to treat high blood pressure (arter
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:12 | 0:49 | 0/0/0 | 0/0/0 | 0/0/0 | 1,642/116 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 15:19 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 33,258/533 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -35,7 +35,7 @@ _not available_
 - **PubMed hits:** 42 matched, 18 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -45,19 +45,19 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Krum_1992.pdf` | Krum H et al., Steady-state pharmacokinetics and pharm…, Journal of cardiovascular p… (1992) | pd | 5 | [10.1097/00005344-199209000-00017](https://doi.org/10.1097/00005344-199209000-00017) | [1279292](https://www.ncbi.nlm.nih.gov/pubmed/1279292) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-30T07:12:14.335028+00:00</sub>
+<sub>queue written 2026-10-06T15:18:48.963015+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Anavekar_1989 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of clonidine, and cyclopenthiazide is only mentioned as a comparator for blood pressure effects without any PK parameters reported. |
-| popPK | Eriksson_1987 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on toad/frog urinary bladders investigating sodium transport inhibition, not a pharmacokinetic study reporting disposition parameters for cyclopenthiazide. |
+| popPK | Eriksson_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thiazide effects on sodium transport in amphibian and fish bladders, not a pharmacokinetic study of cyclopenthiazide disposition. |
 | PD | Eriksson_1987 | not_relevant | 2 | 1 | The paper reports only qualitative observations that cyclopenthiazide reduced short-circuit current at high concentrations (&gt;0.1 mM) and explicitly states that dose-response curves were difficult to obtain, providing no numeric PD parameters or extractable concentration-effect data. |
-| popPK | Garrett_1981 | irrelevant | 0 | 0 | The study focuses on sulfisoxazole pharmacokinetics, not cyclopenthiazide. |
-| popPK | Guo_2025 | irrelevant | 0 | 0 | The paper is a proteome-wide Mendelian randomization study identifying lymphoma drug targets and does not involve cyclopenthiazide or report any pharmacokinetic parameters. |
+| popPK | Garrett_1981 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sulfisoxazole, not cyclopenthiazide. |
+| popPK | Guo_2025 | irrelevant | 0 | 0 | The paper is a proteome-wide Mendelian randomization study on lymphoma targets and does not involve cyclopenthiazide or pharmacokinetic parameters. |
 | PD | Guo_2025 | not_relevant | 0 | 0 | The paper focuses on Mendelian randomization for lymphoma targets and does not mention cyclopenthiazide or report any pharmacodynamic parameters for it. |
-| popPK | Iwaki_1985 | irrelevant | 0 | 0 | The study investigates renal handling of uric acid and electrolytes, not the pharmacokinetic disposition parameters (CL, V, t1/2) of cyclopenthiazide. |
+| popPK | Iwaki_1985 | irrelevant | 0 | 0 | The study investigates the renal handling of uric acid and electrolytes in rats treated with thiazide diuretics, not the pharmacokinetic parameters (CL, V, t1/2) of cyclopenthiazide itself. |
 | popPK | Krum_1992 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Krum_1992 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of cilazapril, not cyclopenthiazide, and does not report PD parameters for cyclopenthiazide. |
 | popPK | Ni_2024 | irrelevant | 0 | 0 | The paper describes a computational method for drug target identification using transcriptomics and does not contain any pharmacokinetic data for cyclopenthiazide. |

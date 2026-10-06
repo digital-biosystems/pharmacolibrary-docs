@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -29,7 +29,7 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
 ## Model component
 <dbs-pgx drug="nicorandil" model-id="Nicorandil_Iida2008_sig" status="needs_review" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** V3/F — apparent, F unknown (apparent — bioavailability not identifiable).

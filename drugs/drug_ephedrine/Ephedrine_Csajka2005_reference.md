@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;ephedrine&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/&quot;},{&quot;label&quot;:&quot;Csajka_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ephedrine_Tran2020_reference&quot;,&quot;label&quot;:&quot;Tran_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ephedrine/Ephedrine_Tran2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ephedrine — `Ephedrine_Csajka2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,19 +21,21 @@
 
 In this parent–metabolite model of ephedrine with metabolism to norephedrine (Kfm), the absorption rate constant kabs carries value 0.064 with unit 'l min(-1)', which is a clearance-like unit and dimensionally inconsistent for a rate constant. The record was also built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A second reader disagreed with all extracted values — kabs 0.064, clearance 0.083 l/min, volume 38.6 l, and relative bioavailability 32% — reading none of them from the source. Extracted — ephedrine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1), Frel 32 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:46.557915+00:00) predates the upstream re-run (2026-10-06 08:57:44.907084+00:00). Current validate status: `rejected`.
 
 ## Citation
 Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02254.x](https://doi.org/10.1111/j.1365-2125.2005.02254.x)
 
 ## Model component
-<dbs-pgx drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,6 +47,8 @@ Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of 
 | Caffeine clearance | `Q22` · CL | 0.083 | l min(-1) | 1.3833333333333336e-06 | [l] / [min] | not captured | llm_confirmed (0.6) | Csajka_2005:abstract, Csajka_2005:abstract | — | not captured |
 | volume of distribution | `Q61` · V | 38.6 | l | 0.0386 | [l] | not captured | exact (1.0) | Csajka_2005:abstract | — | not captured |
 | absorption rate constant | `Q49` · kabs | 0.064 | l min(-1) | not captured | [l] / [min] | not captured | exact (1.0) | Csajka_2005:abstract | — | not captured |
+| Ephedrine clearance | `Q22` · CL | 0.34 | l min(-1) | 5.666666666666667e-06 | [l] / [min] | not captured | llm_confirmed (0.6) | Csajka_2005:abstract | — | not captured |
+| Ephedrine volume of distribution | `Q61` · V | 181 | l | 0.181 | [l] | not captured | llm_confirmed (0.6) | Csajka_2005:abstract | — | not captured |
 | relative bioavailability | `Q87` · Frel | 32 | % | not captured | not captured | not captured | exact (1.0) | Csajka_2005:abstract | — | not captured |
 
 <details class="legend">
@@ -56,11 +60,11 @@ Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of 
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'absorption rate constant' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q22 ('Ephedrine clearance', value 0.34) — already have one for this compound
-- dropped duplicate Q61 ('Ephedrine volume of distribution', value 181) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ephedrine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 6/6 row label(s) assigned, 4 linked by role; re-tagged ephedrine→caffeine ×2, ephedrine→parent ×3
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
@@ -76,16 +80,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss:120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.bioavailability.theta` | 32 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.064 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[caffeine clearance]` | 0.083 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability]` | 32 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[caffeine absorption rate constant]` | not captured | 0.064 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[caffeine volume of distribution]` | not captured | 38.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[relative bioavailability].value` | 32 | not captured | mismatch |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 38.6 | not captured | only_one_extracted |
 
 </details>
@@ -100,16 +105,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Csajka_2005:abstract', 'Csajka_2005:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Csajka_2005:abstract'] |
 | C5_dimension_Q49 | fail | [length] ** 3 / [time] | l min(-1) | not captured | not captured | ['Csajka_2005:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Csajka_2005:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Csajka_2005:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.083 | not captured | not captured | ['Csajka_2005:abstract', 'Csajka_2005:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.98 L/h | not captured | not captured | ['Csajka_2005:abstract', 'Csajka_2005:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 20.4 L/h | not captured | not captured | ['Csajka_2005:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 38.6 L | not captured | not captured | ['Csajka_2005:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 181 L | not captured | not captured | ['Csajka_2005:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -134,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 18:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 08:57 UTC</sub>

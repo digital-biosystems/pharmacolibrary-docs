@@ -17,7 +17,7 @@ Ergoloid mesylates are ergot alkaloid derivatives used as vasodilators for perip
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:18 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 1,676/264 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:04 | 0:40 | 0/0/0 | 0/0/0 | 0/0/0 | 14,911/676 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -42,28 +42,28 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Lavène_1985.pdf` | Lavène D et al., Hydergine pharmacokinetics in the elder…, Journal de pharmacologie 16… (1985) | popPK | 10 | not captured | [4094443](https://pubmed.ncbi.nlm.nih.gov/4094443) | The study reports quantitative pharmacokinetic parameters (clearance, bioavailability) for Hydergine (ergoloid mesylates) in humans, but specific numeric values for CL, V, or t1/2 are not explicitly listed in the provided text, only percentage changes and ratios. |
 | `Dominiak_1988.pdf` | Dominiak P et al., The absolute systemic availability of a…, European journal of clinica… (1988) | popPK | 9 | [10.1007/BF00555507](https://doi.org/10.1007/BF00555507) | [3146506](https://pubmed.ncbi.nlm.nih.gov/3146506) | The study reports quantitative pharmacokinetic parameters (clearance, bioavailability, Cmax) for ergoloid mesylates (co-dergocrine) in humans. |
-| `Lavène_1985.pdf` | Lavène D et al., Hydergine pharmacokinetics in the elder…, Journal de pharmacologie 16… (1985) | popPK | 9 | not captured | [4094443](https://pubmed.ncbi.nlm.nih.gov/4094443) | The paper reports quantitative pharmacokinetic parameters (clearance, bioavailability) for Hydergine (ergoloid mesylates) in humans, but the specific numeric values for clearance or volume are not explicitly listed in the provided text, only percentage changes and ratios. |
-| `Schran_1988.pdf` | Schran HF et al., Pharmacokinetics and bioavailability of…, Biopharmaceutics & drug dis… (1988) | popPK | 8 | [10.1002/bod.2510090404](https://doi.org/10.1002/bod.2510090404) | [3207855](https://pubmed.ncbi.nlm.nih.gov/3207855) | The paper reports quantitative PK parameters (Cmax, Tmax, t1/2) for ergoloid mesylates in humans, though specific clearance or volume values are not explicitly listed in the provided text. |
+| `Schran_1988.pdf` | Schran HF et al., Pharmacokinetics and bioavailability of…, Biopharmaceutics & drug dis… (1988) | popPK | 9 | [10.1002/bod.2510090404](https://doi.org/10.1002/bod.2510090404) | [3207855](https://pubmed.ncbi.nlm.nih.gov/3207855) | The study reports quantitative pharmacokinetic parameters (Cmax, Tmax, half-life) for ergoloid mesylates in humans, with specific numeric values provided in the text. |
 
-<sub>queue written 2026-09-30T09:18:15.018189+00:00</sub>
+<sub>queue written 2026-10-06T20:04:48.981699+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Berry_1961 | irrelevant | 0 | 0 | The paper studies bacterial endotoxins and renal function in mice, with no pharmacokinetic data for ergoloid mesylates. |
-| popPK | Bicalho_2008 | irrelevant | 2 | 0 | The study reports only Cmax values for metabolites and parents without calculating or reporting standard disposition parameters like clearance, volume of distribution, or half-life. |
+| popPK | Berry_1961 | irrelevant | 0 | 0 | The study focuses on bacterial endotoxins, renal function, and nitrogen metabolism in mice, with no pharmacokinetic data for ergoloid mesylates. |
+| popPK | Bicalho_2008 | irrelevant | 2 | 1 | The study reports only Cmax values for a single volunteer without calculating clearance, volume, or half-life, and the drug is dihydroergotoxine (a different ergot alkaloid mixture) rather than ergoloid mesylates. |
 | popPK | Canaday_1995 | irrelevant | 0 | 0 | The paper is a case report on propantheline bromide for hyperhidrosis, and ergoloid mesylates is only mentioned in passing as a historical treatment without any pharmacokinetic data. |
 | PD | Canaday_1995 | not_relevant | 0 | 0 | The paper is a case report and literature review on propantheline bromide for hyperhidrosis; it mentions ergoloid mesylates only in passing regarding congenital hyperhidrosis and provides no PK/PD data or numeric parameters for ergoloid mesylates. |
 | popPK | DEUTSCH_1953 | irrelevant | 0 | 0 | no_text gate: only 69 chars of text extracted (&lt; 400) |
 | popPK | Hollister_1986 | irrelevant | 0 | 0 | The paper is a review of drug therapy for Alzheimer's disease and does not report any quantitative pharmacokinetic parameters for ergoloid mesylates. |
 | PD | Hollister_1986 | not_relevant | 1 | 0 | The text is a qualitative review discussing the clinical use and status of ergoloid mesylates in Alzheimer's disease without providing any numeric pharmacodynamic parameters, dose-response curves, or PK/PD modeling data. |
-| popPK | Lavène_1985 | relevant | 9 | 2 | The paper reports quantitative pharmacokinetic parameters (clearance, bioavailability) for Hydergine (ergoloid mesylates) in humans, but the specific numeric values for clearance or volume are not explicitly listed in the provided text, only percentage changes and ratios. |
-| popPK | Lu_2006 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of ticlopidine as the subject drug, with ergoloid mesylates acting only as a co-administered inhibitor/comparator. |
-| popPK | Schneider_1994 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy in dementia and does not report any pharmacokinetic parameters for ergoloid mesylates. |
+| popPK | Lavène_1985 | relevant | 10 | 2 | The study reports quantitative pharmacokinetic parameters (clearance, bioavailability) for Hydergine (ergoloid mesylates) in humans, but specific numeric values for CL, V, or t1/2 are not explicitly listed in the provided text, only percentage changes and ratios. |
+| popPK | Lu_2006 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of ticlopidine, with ergoloid mesylates serving only as a co-administered agent to assess drug-drug interactions, and no PK parameters for ergoloid mesylates itself are reported. |
+| popPK | Schneider_1994 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy trials for dementia and does not report any pharmacokinetic parameters. |
 | PD | Schneider_1994 | not_relevant | 2 | 1 | The paper is a meta-analysis reporting pooled effect sizes (Cohen's d) and a qualitative mention of a dose-response trend, but it does not provide numeric PD parameters (e.g., EC50, Emax) or an extractable concentration-effect curve. |
-| popPK | Sharaf_2016 | irrelevant | 2 | 0 | The paper describes a bioanalytical method validation and mentions a PK study application, but no quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for ergoloid mesylates are provided in the evidence. |
+| popPK | Sharaf_2016 | irrelevant | 2 | 0 | The paper describes a bioanalytical method and mentions a PK study but provides no quantitative pharmacokinetic parameters (CL, V, t1/2) for ergoloid mesylates in the evidence. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;canrenone&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/&quot;},{&quot;label&quot;:&quot;Suyagh_2012 \u00b7 final_pharmacokinetic_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canrenone_Suyagh2012_final_pharmacokinetic_model&quot;,&quot;label&quot;:&quot;Suyagh_2012_final_pharmacokinetic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Canrenone_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canrenone_Suyagh2012_final_pharmacokinetic_model&quot;,&quot;label&quot;:&quot;Suyagh_2012_final_pharmacokinetic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Canrenone_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # canrenone — `Canrenone_Suyagh2012_final_pharmacokinetic_model`
 
-> ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,9 +23,11 @@
 
 The record builds canrenone as a metabolite formed from potassium canrenoate in a one-compartment central structure, but the metabolite's own V, CL and formation clearance were all 0, so that compartment would carry placeholder values instead of paper-supported ones. The absorption rate constant ka (and Tlag) were not reported in the paper and were left at library defaults, which the established note says affect the simulated profile without support from this source. The molar mass of canrenone is missing, so metabolite amounts would be formed as 1 mg per mg of parent converted rather than on a molar basis. The model structure also did not match the expected parent–metabolite-central arrangement (a one-compartment enteral structure was obtained instead), and the deviations adjudication returned 'not acceptable' for the defaulted parameters, the apparent F=1/Fm=1 assumption and the invented absorption. Extracted — canrenone: CL/F 11.4 l h -1 70 kg -1, V/F 374 l 70 kg -1, kfm 5.25 h -1.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:38.163543+00:00) predates the upstream re-run (2026-10-06 17:47:28.716070+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `potassium canrenoate`, measured `canrenone`.
 
@@ -34,19 +36,17 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
   ·  DOI: [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x)
 
 ## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Suyagh2012_final_pharmacokinetic_model" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="canrenone" model-id="Canrenone_Suyagh2012_final_pharmacokinetic_model" status="extracted" stale="true" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l h -1 70 kg -1 ) | `Q27` · CL/F | 11.4 | l h -1 70 kg -1 | 0.00022166666666666667 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab_0:row2:col8, tab_0:row2:col13, tab_0:row2:col14, tab_0:row2:col15 | — | not captured |
+| CL/F (l h -1 70 kg -1 ) | `Q351` · CLm/F | 11.4 | l h -1 70 kg -1 | 0.00022166666666666667 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab_0:row2:col8, tab_0:row2:col13, tab_0:row2:col14, tab_0:row2:col15 | — | not captured |
 | V/F (l 70 kg -1 ) | `Q76` · V/F | 374.2 | l 70 kg -1 | 26.194 | [l] / [kg] | not captured | exact (1.0) | tab_0:row3:col11, tab_0:row3:col15, tab_0:row3:col16, tab_0:row3:col17, tab_0:row3:col18 | — | not captured |
 | kf (h -1 ) | `Q305` · kfm | 5.25 | h -1 | 0.0014583333333333334 | [1] / [h] | not captured | exact (1.0) | tab_0:row4:col11, tab_0:row4:col15, tab_0:row4:col16, tab_0:row4:col17, tab_0:row4:col18 | — | not captured |
 
@@ -58,14 +58,14 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- metabolite canrenone: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=canrenone
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V/F (l 70 kg -1 )' is the general volume)
 - population split: 'final pharmacokinetic model' subgroup of Suyagh_2012 (paper reports 2 populations: final pharmacokinetic model, median)
 - row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 31 linked by role
@@ -83,14 +83,22 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | potassium canrenoate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | canrenone | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -105,12 +113,11 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row2:col8', 'tab_0:row2:col13', 'tab_0:row2:col14', 'tab_0:row2:col15'] |
 | C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_0:row4:col11', 'tab_0:row4:col15', 'tab_0:row4:col16', 'tab_0:row4:col17', 'tab_0:row4:col18'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row2:col8', 'tab_0:row2:col13', 'tab_0:row2:col14', 'tab_0:row2:col15'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row3:col11', 'tab_0:row3:col15', 'tab_0:row3:col16', 'tab_0:row3:col17', 'tab_0:row3:col18'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 798 L/h | not captured | not captured | ['tab_0:row2:col8', 'tab_0:row2:col13', 'tab_0:row2:col14', 'tab_0:row2:col15'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 2.62e+04 L | not captured | not captured | ['tab_0:row3:col11', 'tab_0:row3:col15', 'tab_0:row3:col16', 'tab_0:row3:col17', 'tab_0:row3:col18'] |
 
 **Reviewer per-scenario checks:**
@@ -145,11 +152,11 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_modelica.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_fmi.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_matlab.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_modelica.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_fmi.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_matlab.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_matlab_simbio.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_sbml.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_sbml.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_cellml.zip" download>Canrenone_Suyagh2012_final_pharmacokinetic_model_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
@@ -158,7 +165,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 5.25 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model/Canrenone_Suyagh2012_final_pharmacokinetic_model_sim_controls.json"></dbs-fmusim>
 
@@ -167,4 +174,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 10:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 17:47 UTC</sub>

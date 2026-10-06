@@ -16,12 +16,11 @@
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL/F (`Q27`)
 - **effect:** not quantified
-- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
+- **phenotype groups:** the paper's groups mapped to standard phenotypes
 
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
-- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation

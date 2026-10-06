@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;topotecan&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/&quot;},{&quot;label&quot;:&quot;L\u00e9ger_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topotecan_Lger2004_reference&quot;,&quot;label&quot;:&quot;L\u00e9ger_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/Topotecan_Lger2004_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # topotecan — `Topotecan_Lger2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -24,12 +25,14 @@ The model was built, but topotecan's clearance and volume of distribution had no
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:41:50.475095+00:00) predates the upstream re-run (2026-10-06 13:42:09.573676+00:00). Current validate status: `extracted`.
+
 ## Citation
 Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004)
   ·  DOI: [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469)
 
 ## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Lger2004_reference" status="model_quarantined" stale="false" population="cancer patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="topotecan" model-id="Topotecan_Lger2004_reference" status="extracted" stale="true" population="patients receiving oral or intravenous topotecan" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted, plus 1 covariate effect.
@@ -37,12 +40,10 @@ Léger F et al., Factors affecting pharmacokinetic varia…, British journal of 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL=θ1 | `Q22` · CL | +62 | 1−θ3 × PS | not captured | [1-θ3] · [ps] | 39 | llm_confirmed (0.6) | tbl3:row18:col2, tbl3:row18:col4 | — | not captured |
-| V1=θ4 | `Q61` · V | +27 | 1−θ3 × PS | not captured | [1-θ3] · [ps] | 33 | llm_confirmed (0.6) | tbl3:row21:col2, tbl3:row21:col4 | — | not captured |
+| CL=θ1 | `Q22` · CL | +62 | L/h | 1.7222222222222224e-05 | L/h | 39 | llm_confirmed (0.6) | tbl3:row18:col2, tbl3:row18:col4 | — | not captured |
+| V1=θ4 | `Q61` · V | +27 | L | 0.027 | L | 33 | llm_confirmed (0.6) | tbl3:row21:col2, tbl3:row21:col4 | — | not captured |
 | theta_cl_crcl_cl_1_2 | `Q900` · theta_cl_crcl_cl_1_2 | +20 | not captured | not captured | not captured | 20 | not captured (not captured) | tbl3:row19:col2, tbl3:row19:col4 | — | not captured |
 
 <details class="legend">
@@ -58,7 +59,6 @@ Léger F et al., Factors affecting pharmacokinetic varia…, British journal of 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'δobjd' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped value-less row: 'CL(l h−1)=(θ1+θ2 × CrCl) × (1−θ3 × PS)' (captured trailing unit '1−θ3 × PS' for child rows)
 - dropped value-less row: 'Interday variability of CL'
 - dropped value-less row: 'Central volume: V1 (l)=θ4 × body weight'
@@ -73,10 +73,10 @@ Léger F et al., Factors affecting pharmacokinetic varia…, British journal of 
 - dropped duplicate Q22 ('CL=θ1 × (1−θ3 × PS)', value '+47') — already have one for this compound
 - unit '1−θ3 × PS' inherited from a section-header row for V1 (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
 - unit_dimension_unknown: '1−θ3 × PS' (V1)
+- implicit units: 'CL=θ1' → L/h (from the paper text: 'The text states that “12.8 l h−1” corresponds to the non-renal CL, establishing clearance in L/h.')
+- implicit units: 'V1=θ4' → L (from the popPK convention: 'The text gives “V1=0.58 × body weight” but does not state a unit for V1. Central-compartment volumes are conventionally ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=topotecan
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1=θ4' is the general volume)
-- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -108,10 +108,12 @@ Léger F et al., Factors affecting pharmacokinetic varia…, British journal of 
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | 1−θ3 × PS | not captured | not captured | ['tbl3:row18:col2', 'tbl3:row18:col4'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | 1−θ3 × PS | not captured | not captured | ['tbl3:row21:col2', 'tbl3:row21:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl3:row18:col2', 'tbl3:row18:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl3:row21:col2', 'tbl3:row21:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 62.0 | not captured | not captured | ['tbl3:row18:col2', 'tbl3:row18:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 62 L/h | not captured | not captured | ['tbl3:row18:col2', 'tbl3:row18:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 27 L | not captured | not captured | ['tbl3:row21:col2', 'tbl3:row21:col4'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,21 +143,26 @@ Léger F et al., Factors affecting pharmacokinetic varia…, British journal of 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_modelica.zip" download>Topotecan_Lger2004_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_fmi.zip" download>Topotecan_Lger2004_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_matlab.zip" download>Topotecan_Lger2004_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_matlab_simbio.zip" download>Topotecan_Lger2004_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_sbml.zip" download>Topotecan_Lger2004_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_cellml.zip" download>Topotecan_Lger2004_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference.svg" alt="Topotecan_Lger2004_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_topotecan/Topotecan_Lger2004_reference/Topotecan_Lger2004_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Topotecan_Lger2004_reference_params.json` · controls `Topotecan_Lger2004_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 20:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 13:42 UTC</sub>

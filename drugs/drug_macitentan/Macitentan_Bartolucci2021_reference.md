@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;macitentan&quot;,&quot;href&quot;:&quot;drugs/drug_macitentan/&quot;},{&quot;label&quot;:&quot;Bartolucci_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macitentan_Bartolucci2021_reference&quot;,&quot;label&quot;:&quot;Bartolucci_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macitentan_Bartolucci2021_reference&quot;,&quot;label&quot;:&quot;Bartolucci_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # macitentan — `Macitentan_Bartolucci2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:36.044229+00:00) predates the upstream re-run (2026-10-06 15:53:06.800827+00:00). Current validate status: `extracted`.
+
 ## Citation
 Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3)
 
 ## Model component
-<dbs-pgx drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="rejected" stale="false" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="extracted" stale="true" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -38,12 +40,10 @@ Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharma
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | maximum concentration after | `Q56` · tmax | 9 | h | 32400.0 | [h] | not captured | llm_corrected (0.6) | Bartolucci_2021:abstract, Bartolucci_2021:abstract | — | not captured |
-| steady state after | `Q72` · tss | 3 | days | 259200.0 | h | not captured | llm (0.6) | Bartolucci_2021:abstract, Bartolucci_2021:abstract | — | not captured |
+| steady state after | `Q72` · tss | 3 | days | 259200.0 | [d] | not captured | llm (0.6) | Bartolucci_2021:abstract, Bartolucci_2021:abstract | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 34 | L | 0.034 | [l] | not captured | exact (1.0) | Bartolucci_2021:abstract | — | not captured |
 | clearance | `Q22` · CL | 1.39 | L/h | 3.861111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Bartolucci_2021:abstract | — | not captured |
 | ka (h−1) | `Q49` · kabs | 13.92 | h−1 | 0.0038666666666666667 | 1/h | not captured | review_gapfill (0.7) | Liu_2020:review | — | not captured |
@@ -68,7 +68,6 @@ Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharma
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Liu_2020's review values (primary lacked it)
-- unit re-normalised: tss 'days' now converts (value unchanged)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
@@ -88,15 +87,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[accumulation factor]` | not captured | 12.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | not captured | 34 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent volume of distribution was]` | not captured | 34 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent volume of distribution]` | 34 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | not captured | 1.39 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance was]` | not captured | 1.39 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 1.39 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[maximum concentration after]` | not captured | 9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[maximum concentration after]` | 9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[maximum concentration]` | not captured | 9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral administration]` | not captured | 10 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[oral administration at]` | not captured | 10 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady state after]` | not captured | 3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady state after]` | 3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady state]` | not captured | 3 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | macitentan | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | macitentan | unknown | mismatch |
 
@@ -153,9 +152,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_modelica.zip" download>Macitentan_Bartolucci2021_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_fmi.zip" download>Macitentan_Bartolucci2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_matlab.zip" download>Macitentan_Bartolucci2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_matlab_simbio.zip" download>Macitentan_Bartolucci2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_sbml.zip" download>Macitentan_Bartolucci2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_cellml.zip" download>Macitentan_Bartolucci2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference.svg" alt="Macitentan_Bartolucci2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -168,4 +178,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 02:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:53 UTC</sub>

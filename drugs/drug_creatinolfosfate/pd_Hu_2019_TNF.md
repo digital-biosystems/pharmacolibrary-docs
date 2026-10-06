@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;creatinolfosfate&quot;,&quot;href&quot;:&quot;drugs/drug_creatinolfosfate/&quot;},{&quot;label&quot;:&quot;Hu_2019 \u00b7 PD plasma TNF-alpha&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;creatinolfosfate&quot;,&quot;href&quot;:&quot;drugs/drug_creatinolfosfate/&quot;},{&quot;label&quot;:&quot;Hu_2019 \u00b7 PD plasma TNF-\u03b1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma TNF-alpha — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# plasma TNF-α — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Coptisine drives plasma TNF-alpha (in pg/mL): indirect response — drug inhibits the production of plasma TNF-alpha.
+**As extracted:** Coptisine (measured concentrations) drives plasma TNF-α (in pg/mL): direct linear effect.
 
 **Model:** No model was generated from this record.
 
@@ -24,8 +24,8 @@
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hu_2019`
-- **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **model family:** `linear`
+- **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -36,59 +36,14 @@ Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (201
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | V 1 (L/kg) — CV% | `Q63` · not captured | 10.29 | L/kg | not captured | space_fold (not captured) | Tab1:row1:col3 |
-| PK (driver) | k10(h−1) — CV% | `Q47` · not captured | 9.99 | h−1 | not captured | exact (not captured) | Tab1:row2:col3 |
-| PK (driver) | k12(h−1) — Estimate | `Q301` · not captured | 2.05 | h−1 | not captured | exact (not captured) | Tab1:row3:col2 |
-| PK (driver) | k12(h−1) — CV% | `Q301` · not captured | 13.39 | h−1 | not captured | exact (not captured) | Tab1:row3:col3 |
-| PK (driver) | K21(h−1) — CV% | `Q302` · not captured | 9.51 | h−1 | not captured | exact (not captured) | Tab1:row4:col3 |
-| PK (driver) | k13(h−1) — CV% | `Q303` · not captured | 16.92 | h−1 | not captured | exact (not captured) | Tab1:row5:col3 |
-| PK (driver) | k31(h−1) — Estimate | `Q304` · not captured | 3.77 | h−1 | not captured | exact (not captured) | Tab1:row6:col2 |
-| PK (driver) | k31(h−1) — CV% | `Q304` · not captured | 17.16 | h−1 | not captured | exact (not captured) | Tab1:row6:col3 |
-| PK (driver) | k0,0-0.33h(pg/(mL·h)) — Estimate | `Q307` · not captured | 645.73 | not captured | not captured | llm_confirmed (not captured) | Tab1:row7:col2 |
-| PD (effect) | k0,0-0.33h(pg/(mL·h)) — CV% | `Q327` · not captured | 29.18 | not captured | not captured | llm_corrected (not captured) | Tab1:row7:col3 |
-| PK (driver) | k0,0.33–1h(pg/(mL·h)) — Estimate | `Q307` · not captured | 5881.32 | not captured | not captured | llm_confirmed (not captured) | Tab1:row8:col2 |
-| PD (effect) | k0,0.33–1h(pg/(mL·h)) — CV% | `Q327` · not captured | 31.11 | not captured | not captured | llm_corrected (not captured) | Tab1:row8:col3 |
-| PD (effect) | InhibitCon(mL/ng) — CV% | `Q322` · not captured | 47.33 | mL/ng | not captured | llm (not captured) | Tab1:row9:col3 |
-| PK (driver) | Vm(h−1) — CV% | `Q66` · not captured | 55.85 | h−1 | not captured | special_case (not captured) | Tab1:row10:col3 |
-| PK (driver) | km(pg/mL) — CV% | `Q1` · not captured | 61.92 | pg/mL | not captured | exact (not captured) | Tab1:row11:col3 |
-| PD (effect) | kTNFαpl(h−1) — CV% | `Q328` · not captured | 177.12 | h−1 | not captured | llm (not captured) | Tab1:row12:col3 |
-| PD (effect) | koutTNFα(h−1) — CV% | `Q328` · not captured | 7.09 | h−1 | not captured | llm (not captured) | Tab1:row13:col3 |
-| PD (effect) | kiNOSmRNA(h−1) — CV% | `Q328` · not captured | 10.85 | h−1 | not captured | llm (not captured) | Tab1:row14:col3 |
-| PD (effect) | koutiNOSmRNA(h−1) — Estimate | `Q328` · not captured | 2.36 | h−1 | not captured | llm (not captured) | Tab1:row15:col2 |
-| PD (effect) | koutiNOSmRNA(h−1) — CV% | `Q328` · not captured | 7.75 | h−1 | not captured | llm (not captured) | Tab1:row15:col3 |
-| PD (effect) | kiNOS(h−1) — CV% | `Q328` · not captured | 10.33 | h−1 | not captured | llm (not captured) | Tab1:row16:col3 |
-| PD (effect) | k outiNOS (h −1 ) — Estimate | `Q328` · not captured | 3.72 | h −1 | not captured | llm (not captured) | Tab1:row17:col2 |
-| PD (effect) | k outiNOS (h −1 ) — CV% | `Q328` · not captured | 10.06 | h −1 | not captured | llm (not captured) | Tab1:row17:col3 |
-| PD (effect) | k iNOSlp (h −1 ) — Estimate | `Q327` · not captured | 23.41 | h −1 | not captured | llm (not captured) | Tab1:row18:col2 |
-| PD (effect) | k iNOSlp (h −1 ) — CV% | `Q327` · not captured | 19.96 | h −1 | not captured | llm (not captured) | Tab1:row18:col3 |
-| PD (effect) | k outiNOSp (h −1 ) — Estimate | `Q328` · not captured | 1.92 | h −1 | not captured | llm (not captured) | Tab1:row19:col2 |
-| PD (effect) | k outiNOSp (h −1 ) — CV% | `Q328` · not captured | 6.25 | h −1 | not captured | llm (not captured) | Tab1:row19:col3 |
-| PD (effect) | k iNOSNO (h −1 ) — Estimate | `Q327` · not captured | 772.17 | h −1 | not captured | llm (not captured) | Tab1:row20:col2 |
-| PD (effect) | k iNOSNO (h −1 ) — CV% | `Q327` · not captured | 21.58 | h −1 | not captured | llm (not captured) | Tab1:row20:col3 |
-| model term | Δ — Estimate | `Q900` · not captured | 1.23 | not captured | not captured | llm (not captured) | Tab1:row21:col2 |
-| variability | Δ — CV% | `Q316` · not captured | 29.71 | not captured | not captured | llm (not captured) | Tab1:row21:col3 |
-| PD (effect) | k inNO (h −1 ) — Estimate | `Q328` · not captured | 354.68 | h −1 | not captured | llm (not captured) | Tab1:row22:col2 |
-| PD (effect) | k inNO (h −1 ) — CV% | `Q327` · not captured | 63.97 | h −1 | not captured | llm (not captured) | Tab1:row22:col3 |
-| PD (effect) | k outNO (h −1 ) — Estimate | `Q328` · not captured | 3.46 | h −1 | not captured | llm (not captured) | Tab1:row23:col2 |
-| PD (effect) | k outNO (h −1 ) — CV% | `Q328` · not captured | 11.13 | h −1 | not captured | llm (not captured) | Tab1:row23:col3 |
+| PD (effect) | InhibitCon | `Q335` · not captured | 8.83×10−4 | mL/ng | not captured | llm (not captured) | Hu_2019:pdv3 |
+| PD (effect) | k0,0-0.33h | `Q327` · not captured | 645.73 | pg/(mL·h) | not captured | llm (not captured) | Hu_2019:pdv3 |
+| PD (effect) | k0,0.33–1h | `Q327` · not captured | 5881.32 | pg/(mL·h) | not captured | llm (not captured) | Hu_2019:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-
-## Biomarker turnover model
-
-This page models **plasma TNF-alpha** as an endogenous turnover response, separately from the drug's pharmacokinetics.
-
-- **driver tier:** `none`
-- **turnover quantities linked:** none
-- **effect blocks:** 0
-- **turnover review:** <span class="pk-badge pk-badge--orange">needs review</span>
-  - `B4_steady_state` — skipped: production and loss/clearance parameters are incomplete
-  - `B4_effect_link` — skipped: no per-perturbing-drug effect block is linked
-  - `B4_driver_link` — skipped: no driver PK source is available
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  

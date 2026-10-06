@@ -18,7 +18,7 @@ Etafenone is a vasodilator once classified for use in cardiac diseases. It is co
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:35 | 0:08 | 0/0/0 | 0/0/0 | 0/0/0 | 3,194/97 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 10:01 | 0:08 | 0/0/0 | 0/0/0 | 0/0/0 | 3,194/97 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

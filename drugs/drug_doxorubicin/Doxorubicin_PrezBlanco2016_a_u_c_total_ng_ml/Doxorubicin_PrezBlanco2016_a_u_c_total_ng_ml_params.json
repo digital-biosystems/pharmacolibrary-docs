@@ -1,0 +1,51 @@
+{
+ "dose_source": "library default",
+ "model_id": "Doxorubicin_PrezBlanco2016_a_u_c_total_ng_ml",
+ "molar_masses": {
+  "C_M1": 0.545541,
+  "central.C": 0.5435193
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "doxorubicinol",
+  "C_central": "doxorubicin"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "parameters": {
+  "CL1": 4.0280555555555553e-07,
+  "CLm1": 1.0583333333333334e-05,
+  "F": 1.0,
+  "MW": 0.5435193,
+  "MW_m1": 0.545541,
+  "Vd1": 0.0177,
+  "Vd1m1": 0.0798,
+  "Vd2": 1.83,
+  "Vd2m1": 0.653,
+  "Vd3": 0.07100000000000001,
+  "adminCount": 1.0,
+  "adminMass": 0.0,
+  "infusionDuration": 600.0,
+  "infusionMass": 1e-05,
+  "q12": 9.444444444444444e-07,
+  "q13": 1.5e-06,
+  "q1_m11": 6.941666666666666e-08,
+  "q21": 9.444444444444444e-07,
+  "q31": 1.5e-06,
+  "qm11_m12": 0.00011777777777777778,
+  "qm12_m11": 0.00011777777777777778
+ },
+ "reference_peak_times": {
+  "C_M1": 5071.743486973948,
+  "central.C": 660.0000000662026
+ },
+ "reference_peaks": {
+  "C_M1": 2.7872362720389637e-07,
+  "central.C": 0.0005380001766309902
+ },
+ "stop_time": 133200.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

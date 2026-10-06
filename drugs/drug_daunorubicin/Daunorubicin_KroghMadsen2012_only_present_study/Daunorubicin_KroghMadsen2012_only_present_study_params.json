@@ -1,0 +1,31 @@
+{
+ "dose_source": "library default",
+ "model_id": "Daunorubicin_KroghMadsen2012_only_present_study",
+ "molar_masses": {
+  "central.C": 0.5275259999999999
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.777777777777777e-06,
+  "F": 1.0,
+  "MM": 0.5275259999999999,
+  "VdPerKg": 0.00031428571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k21": 0.00017509215376513957,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662158
+ },
+ "reference_peaks": {
+  "central.C": 4.4454592863866753e-08
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

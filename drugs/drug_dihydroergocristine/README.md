@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;dihydroergocristine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergocristine_Grognet1992_reference&quot;,&quot;label&quot;:&quot;Grognet_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergocristine_Grognet1992_reference&quot;,&quot;label&quot;:&quot;Grognet_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # dihydroergocristine
 
@@ -27,13 +27,13 @@ Dihydroergocristine is a vasodilator ergot alkaloid used in the treatment of dem
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 14:54 | 3:30 | 1/0/0 | 0/0/0 | 0/0/0 | 11,808/4,282 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:00 | 1:59 | 1/0/0 | 0/0/0 | 0/0/0 | 12,357/4,350 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Grognet_1992_reference](drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Grognet_1992_reference](drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | — |
 
 ## ADME sites
 
@@ -60,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -69,13 +69,13 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Grognet_1992.pdf` | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | popPK | 10 | not captured | [1492859](https://pubmed.ncbi.nlm.nih.gov/1492859) | The paper reports quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for dihydroergocristine in rats, and all numeric values are explicitly present in the provided text. |
+| `Grognet_1992.pdf` | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | popPK | 10 | not captured | [1492859](https://pubmed.ncbi.nlm.nih.gov/1492859) | The study reports quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for dihydroergocristine in rats. |
 | `Gardner_1997.pdf` | Gardner BR et al., Agonist action at D2(short) dopamine re…, Journal of neurochemistry (1997) | pd | 4 | [10.1046/j.1471-4159.1997.69062589.x](https://doi.org/10.1046/j.1471-4159.1997.69062589.x) | [9375693](https://www.ncbi.nlm.nih.gov/pubmed/9375693) | metadata signals extractable PD data (EC50) |
 | `Gardner_1998.pdf` | Gardner B et al., Agonist action at D2(long) dopamine rec…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0701926](https://doi.org/10.1038/sj.bjp.0701926) | [9692784](https://www.ncbi.nlm.nih.gov/pubmed/9692784) | metadata signals extractable PD data (EC50) |
 | `Markstein_1982.pdf` | Markstein R, Dopamine receptor profile of co-dergocr…, European journal of pharmac… (1982) | pd | 4 | [10.1016/0014-2999(82)90312-0](https://doi.org/10.1016/0014-2999(82)90312-0) | [6297930](https://www.ncbi.nlm.nih.gov/pubmed/6297930) | metadata signals extractable PD data (EC50) |
 | `de_2001.pdf` | de Mey C et al., Erythromycin increases plasma concentra…, Clinical pharmacology and t… (2001) | pgx | 7 | [10.1067/mcp.2001.117286](https://doi.org/10.1067/mcp.2001.117286) | [11503008](https://www.ncbi.nlm.nih.gov/pubmed/11503008) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-28T14:53:08.021469+00:00</sub>
+<sub>queue written 2026-10-06T19:59:14.967829+00:00</sub>
 
 ## Screened and excluded
 
@@ -91,4 +91,4 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | de_2001 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (erythromycin) affecting the PK of alpha-dihydroergocryptine, not a pharmacogenomic effect (gene variant) on dihydroergocristine. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 14:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 19:59 UTC</sub>

@@ -18,7 +18,7 @@ Polythiazide is a thiazide diuretic used to treat high blood pressure, congestiv
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:17 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 1,630/166 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-06 17:02 | 0:51 | 0/0/0 | 0/0/0 | 0/0/0 | 8,389/352 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
@@ -43,10 +43,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 16 matched, 12 returned
+- **PubMed hits:** 16 matched, 16 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -56,7 +56,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Monroy_1999.pdf` | Monroy A et al., [Lack of effect of cicletanine and its…, Archives des maladies du co… (1999) | pd | 4 | not captured | [10486654](https://www.ncbi.nlm.nih.gov/pubmed/10486654) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T07:17:30.626734+00:00</sub>
+<sub>queue written 2026-10-06T17:02:16.007547+00:00</sub>
 
 ## Screened and excluded
 
@@ -64,7 +64,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report any pharmacokinetic parameters for polythiazide. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The text is a narrative review of cardiovascular pharmacotherapy and does not contain any specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters for polythiazide. |
-| popPK | Eriksson_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thiazide effects on sodium transport in animal bladders, not a pharmacokinetic study reporting disposition parameters for polythiazide. |
+| popPK | Eriksson_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of thiazide effects on sodium transport in amphibian bladders, not a pharmacokinetic study reporting disposition parameters for polythiazide. |
 | PD | Eriksson_1987 | not_relevant | 2 | 1 | The paper reports only qualitative observations that polythiazide reduced short-circuit current at high concentrations (&gt;0.1 mM) and that dose-response curves were difficult to obtain, providing no numeric PD parameters or extractable concentration-effect curve. |
 | popPK | Gordon_1981 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for hypertension treatment and does not report any pharmacokinetic parameters for polythiazide. |
 | PD | Gordon_1981 | not_relevant | 1 | 0 | The paper reports only aggregate clinical efficacy (average BP reduction) and dosage titration outcomes, without providing any concentration-effect data, dose-response curves, or numeric PD parameters (e.g., Emax, EC50). |
@@ -77,8 +77,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Oh_1975 | not_relevant | 1 | 0 | The text provides only a qualitative observation that increasing prazosin dosage above 15 mg/day did not improve blood pressure control, without reporting any numeric PD parameters, concentration-effect data, or formal dose-response modeling for polythiazide. |
 | popPK | Paul_1976 | irrelevant | 0 | 0 | The study focuses on the antihypertensive efficacy of prazosin, with polythiazide mentioned only as a co-administered agent without any pharmacokinetic data. |
 | PD | Paul_1976 | not_relevant | 0 | 0 | The text describes a clinical trial of prazosin with only a qualitative mention of polythiazide as an add-on therapy, providing no concentration-effect data, dose-response curves, or numeric PD parameters for polythiazide. |
-| popPK | Stribrná_1975 | irrelevant | 0 | 0 | The study investigates renal physiology (urea clearance) rather than pharmacokinetic disposition parameters (CL, V, t1/2) for polythiazide. |
-| popPK | Weber_1982 | irrelevant | 0 | 0 | The study focuses on the clinical efficacy of trimazosin, with polythiazide serving only as a co-administered agent without any pharmacokinetic parameter reporting. |
+| popPK | Stribrná_1975 | irrelevant | 0 | 0 | The study investigates the renal excretion fraction of urea (a physiological/pharmacodynamic endpoint) rather than the pharmacokinetic disposition parameters (CL, V, t1/2) of polythiazide itself. |
+| popPK | Weber_1982 | irrelevant | 0 | 0 | The study focuses on the clinical efficacy of trimazosin, with polythiazide used only as a co-administered agent for blood pressure control, and no pharmacokinetic parameters are reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

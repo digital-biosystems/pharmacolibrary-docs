@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;vericiguat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vericiguat_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vericiguat_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # vericiguat
 
@@ -27,14 +27,14 @@ Vericiguat is a vasodilator used to treat heart failure. It is approved and auth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 15:58 | 6:39 | 0/0/2 | 0/0/0 | 0/0/0 | 101,661/21,024 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 10:40 | 8:28 | 1/0/1 | 0/0/0 | 0/0/0 | 156,139/24,829 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Fritsch_2024_reference](drugs/drug_vericiguat/Vericiguat_Fritsch2024_reference.md) | — | 1-compartment (no model) | 1 | Fritsch A et al., Clinical Pharmacokinetic and Pharmacody…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01384-1](https://doi.org/10.1007/s40262-024-01384-1) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ruehs_2021_reference](drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+4 cov.) | Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.64). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ruehs_2021_reference](drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+4 cov.) | Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Fritsch_2024_reference](drugs/drug_vericiguat/Vericiguat_Fritsch2024_reference.md) | — | 1-compartment (no model) | 1 | Fritsch A et al., Clinical Pharmacokinetic and Pharmacody…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01384-1](https://doi.org/10.1007/s40262-024-01384-1) |
 
 ## ADME sites
 
@@ -68,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 16 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -77,15 +77,18 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Trujillo_2022.pdf` | Trujillo ME et al., Population Pharmacokinetics of Vericigu…, Clinical pharmacology and t… (2022) | popPK | 10 | [10.1002/cpt.2712](https://doi.org/10.1002/cpt.2712) | [35841202](https://pubmed.ncbi.nlm.nih.gov/35841202) | The paper describes a population PK model for vericiguat but the provided evidence contains only qualitative descriptions of the model structure and covariates, with no numeric parameter values (e.g., CL, V, ka) present in the text. |
+| `Trujillo_2022.pdf` | Trujillo ME et al., Population Pharmacokinetics of Vericigu…, Clinical pharmacology and t… (2022) | popPK | 10 | [10.1002/cpt.2712](https://doi.org/10.1002/cpt.2712) | [35841202](https://pubmed.ncbi.nlm.nih.gov/35841202) | The paper describes a population PK model for vericiguat in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-27T15:52:24.402032+00:00</sub>
+<sub>queue written 2026-10-06T10:32:56.880358+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Trujillo_2022 | relevant | 10 | 0 | The paper describes a population PK model for vericiguat but the provided evidence contains only qualitative descriptions of the model structure and covariates, with no numeric parameter values (e.g., CL, V, ka) present in the text. |
+| popPK | Butler_2022 | irrelevant | 0 | 0 | The paper reports health-related quality of life outcomes (KCCQ scores) and clinical endpoints, not pharmacokinetic parameters. |
+| popPK | Ruehs_2023 | irrelevant | 0 | 0 | The study focuses on concentration-QTc (pharmacodynamic) modeling to assess cardiac safety, not on estimating pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Shi_2026 | irrelevant | 0 | 0 | The study is a clinical efficacy trial evaluating cardiovascular outcomes and quality of life, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for vericiguat. |
+| popPK | Trujillo_2022 | relevant | 10 | 0 | The paper describes a population PK model for vericiguat in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 15:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 10:33 UTC</sub>

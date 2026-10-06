@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 37.5 mg oral (C03DA01)",
+ "model_id": "Spironolactone_Zhou2010_reference",
+ "molar_masses": {
+  "central.C": 0.41657299999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3555555555555556e-06,
+  "F": 1.0,
+  "MM": 0.41657299999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.007342857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.75e-05,
+  "ka": 0.00045277777777777775,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11081.362725450901
+ },
+ "reference_peaks": {
+  "central.C": 7.07650121083499e-05
+ },
+ "stop_time": 1382400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -20,19 +20,32 @@ Eplerenone is a steroidal antimineralocorticoid used as an adjunct in managing c
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| eplerenone | parent | 414.491 | C24H30O6 | DrugBank | [443872](https://pubchem.ncbi.nlm.nih.gov/compound/443872) | Oishi_2017 |
+| eplerenone | parent | 414.491 | C24H30O6 | DrugBank | [443872](https://pubchem.ncbi.nlm.nih.gov/compound/443872) | Jaisser_2021, Oishi_2017 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 08:21 | 0:59 | 0/0/1 | 0/0/0 | 0/0/0 | 7,471/4,100 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-06 18:27 | 10:27 | 0/1/1 | 1/0/2 | 0/0/0 | 201,365/27,561 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Oishi_2017_reference](drugs/drug_eplerenone/Eplerenone_Oishi2017_reference.md) | — | 1-compartment (no model) | 1 | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Oishi_2017_reference](drugs/drug_eplerenone/Eplerenone_Oishi2017_reference.md) | — | 1-compartment (no model) | 1 | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jaisser_2021_reference](drugs/drug_eplerenone/Eplerenone_Jaisser2021_reference.md) | — | 1-compartment (no model) | 2 | Jaisser F et al., The Non-Steroidal Mineralocorticoid Rec…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.604928](https://doi.org/10.3389/fphar.2021.604928) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Jaisser_2021_K](drugs/drug_eplerenone/pd_Jaisser_2021_K.md) | Serum K+ ← eplerenone · indirect response — drug stimulates the production of Serum K+ | — | Jaisser F et al., The Non-Steroidal Mineralocorticoid Rec…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.604928](https://doi.org/10.3389/fphar.2021.604928) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Eudy_2011_urinary_Na_K](drugs/drug_eplerenone/pd_Eudy_2011_urinary_Na_K.md) | urinary Na+/K+ ← eplerenone · indirect response — drug stimulates the production of urinary Na+/K+ | — | Eudy RJ et al., The use of plasma aldosterone and urina…, Journal of translational me… (2011) | [10.1186/1479-5876-9-180](https://doi.org/10.1186/1479-5876-9-180) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Jaisser_2021_Na_K](drugs/drug_eplerenone/pd_Jaisser_2021_Na_K.md) | Urinary Na+/K+ ratio ← eplerenone · direct sigmoid Emax (Hill) effect | — | Jaisser F et al., The Non-Steroidal Mineralocorticoid Rec…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.604928](https://doi.org/10.3389/fphar.2021.604928) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Jaisser_2021_UACR](drugs/drug_eplerenone/pd_Jaisser_2021_UACR.md) | UACR ← eplerenone · indirect response — drug inhibits the production of UACR | — | Jaisser F et al., The Non-Steroidal Mineralocorticoid Rec…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.604928](https://doi.org/10.3389/fphar.2021.604928) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orena_2013_UACR](drugs/drug_eplerenone/pd_Orena_2013_UACR.md) | UACR ← eplerenone · indirect response — drug inhibits the production of UACR | — | Orena S et al., PF-03882845, a non-steroidal mineraloco…, Frontiers in pharmacology (2013) | [10.3389/fphar.2013.00115](https://doi.org/10.3389/fphar.2013.00115) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orena_2013_serum_K](drugs/drug_eplerenone/pd_Orena_2013_serum_K.md) | serum K+ ← eplerenone · indirect response — drug stimulates the production of serum K+ | — | Orena S et al., PF-03882845, a non-steroidal mineraloco…, Frontiers in pharmacology (2013) | [10.3389/fphar.2013.00115](https://doi.org/10.3389/fphar.2013.00115) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orena_2013_urinary_Na_K](drugs/drug_eplerenone/pd_Orena_2013_urinary_Na_K.md) | urinary Na+/K+ ratio ← eplerenone · indirect response — drug stimulates the production of urinary Na+/K+ ratio | — | Orena S et al., PF-03882845, a non-steroidal mineraloco…, Frontiers in pharmacology (2013) | [10.3389/fphar.2013.00115](https://doi.org/10.3389/fphar.2013.00115) |
 
 ## ADME sites
 
@@ -55,8 +68,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -65,19 +78,24 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mori_2010.pdf` | Mori Y et al., A population approach to eplerenone pha…, Drug metabolism and pharmac… (2010) | popPK | 10 | [10.2133/dmpk.dmpk-09-rg-024](https://doi.org/10.2133/dmpk.dmpk-09-rg-024) | [20962434](https://pubmed.ncbi.nlm.nih.gov/20962434) | The paper describes a population PK study for eplerenone, but the provided evidence contains only the abstract and lacks specific numeric parameter values (CL, V, etc.). |
-| `Oishi_2017.pdf` | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) | [28032902](https://pubmed.ncbi.nlm.nih.gov/28032902) | The paper is a population PK study for eplerenone and explicitly reports the population mean apparent oral clearance (CL/F) of 5.31 L/h in the text. |
+| `Mori_2010.pdf` | Mori Y et al., A population approach to eplerenone pha…, Drug metabolism and pharmac… (2010) | popPK | 10 | [10.2133/dmpk.dmpk-09-rg-024](https://doi.org/10.2133/dmpk.dmpk-09-rg-024) | [20962434](https://pubmed.ncbi.nlm.nih.gov/20962434) | The paper describes a population PK model for eplerenone, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Oishi_2017.pdf` | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) | [28032902](https://pubmed.ncbi.nlm.nih.gov/28032902) | The paper reports a population PK model for eplerenone with specific numeric values for apparent oral clearance (CL/F) and covariate effects. |
 
-<sub>queue written 2026-09-30T08:20:02.956608+00:00</sub>
+<sub>queue written 2026-10-06T18:18:24.933825+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Almeida_2011 | irrelevant | 2 | 0 | The study is a bioequivalence trial reporting only AUC and Cmax ratios, lacking the specific quantitative disposition parameters (CL, V, ka, t1/2) required for population PK extraction. |
+| popPK | Almeida_2011 | irrelevant | 2 | 0 | The study is a bioequivalence trial reporting only AUC and Cmax ratios/confidence intervals, lacking specific quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Chai_2005 | irrelevant | 0 | 0 | The study investigates the nongenomic pharmacodynamic effects of aldosterone in human heart tissue, using eplerenone only as a receptor antagonist to test specificity, with no pharmacokinetic parameters reported. |
+| popPK | Eudy_2011 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic biomarkers (urinary Na+/K+ and aldosterone) and exposure-response modeling, not on estimating pharmacokinetic disposition parameters (CL, V, t1/2) for eplerenone. |
 | popPK | Ferreira_2020 | irrelevant | 0 | 0 | The paper is a clinical outcome analysis of the EPHESUS trial focusing on loop diuretic dose reductions and mortality, containing no pharmacokinetic parameters (CL, V, ka, etc.) for eplerenone. |
-| popPK | Kobayashi_2023 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial (EARLIER) reporting clinical outcomes and echocardiographic changes, not a pharmacokinetic study with disposition parameters. |
-| popPK | Mori_2010 | relevant | 10 | 0 | The paper describes a population PK study for eplerenone, but the provided evidence contains only the abstract and lacks specific numeric parameter values (CL, V, etc.). |
+| popPK | Harvey_2017 | irrelevant | 0 | 0 | The study investigates vascular mechanisms and signaling pathways in rats, using eplerenone as a pharmacological tool, but does not report any pharmacokinetic parameters. |
+| popPK | Kobayashi_2023 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial (EARLIER) reporting clinical outcomes and hemodynamic changes, not a pharmacokinetic study with disposition parameters. |
+| popPK | Mori_2010 | relevant | 10 | 0 | The paper describes a population PK model for eplerenone, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Orena_2013 | relevant | 8 | 2 | The study performs population PK modeling for eplerenone in rats, but the specific numeric parameter values (CL, V, Q, KA) are not listed in the provided text, likely residing in figures or supplementary tables. |
+| popPK | Ren_2014 | irrelevant | 0 | 0 | The study is a mechanistic renal physiology experiment using eplerenone as a pharmacological antagonist to block aldosterone effects, not a pharmacokinetic study of eplerenone. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 10:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 18:18 UTC</sub>

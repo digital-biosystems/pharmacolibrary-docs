@@ -18,11 +18,22 @@ Vinflunine is a vinca alkaloid anticancer drug used to treat transitional cell c
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 23:12 | 6:31 | 0/0/0 | 0/0/0 | 0/0/0 | 34,830/2,092 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 15:14 | 2:52 | 0/0/0 | 2/2/0 | 0/0/0 | 30,160/10,080 | openai / gpt-6-luna | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Erjala_2005_F](drugs/drug_vinflunine/pd_Erjala_2005_F.md) | survival ← vinflunine · inhibition effect | — | Erjala K et al., Head and neck carcinoma cell lines are…, Anticancer research (2005) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Ngan_2001_inhibition_of_HeLa_cell_proliferation](drugs/drug_vinflunine/pd_Ngan_2001_inhibition_of_HeLa_cell_proliferation.md) | inhibition of HeLa cell proliferation ← vinflunine · inhibition effect | — | Ngan VK et al., Mechanism of mitotic block and inhibiti…, Molecular pharmacology (2001) | [10.1124/mol.60.1.225](https://doi.org/10.1124/mol.60.1.225) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Schmitt_2018_toxicities](drugs/drug_vinflunine/pd_Schmitt_2018_toxicities.md) | toxicities ← vinflunine · categorical (graded) response model | — | Schmitt A et al., Better characterization of vinflunine p…, British journal of clinical… (2018) | [10.1111/bcp.13518](https://doi.org/10.1111/bcp.13518) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Friberg_2002_leukocytes](drugs/drug_vinflunine/pd_Friberg_2002_leukocytes.md) | leukocytes ← vinflunine · indirect response — drug inhibits the production of leukocytes | — | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Friberg_2002_neutrophils](drugs/drug_vinflunine/pd_Friberg_2002_neutrophils.md) | neutrophils ← vinflunine · indirect response — drug inhibits the production of neutrophils | — | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Schmitt_2018_ANC](drugs/drug_vinflunine/pd_Schmitt_2018_ANC.md) | absolute neutrophil counts ← vinflunine · model not identified | — | Schmitt A et al., Better characterization of vinflunine p…, British journal of clinical… (2018) | [10.1111/bcp.13518](https://doi.org/10.1111/bcp.13518) |
 
 ## ADME sites
 
@@ -55,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **PubMed hits:** 26 matched, 25 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -63,35 +74,34 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Schmitt_2018.pdf` | Schmitt A et al., Better characterization of vinflunine p…, British journal of clinical… (2018) | popPK | 10 | [10.1111/bcp.13518](https://doi.org/10.1111/bcp.13518) | [29341179](https://pubmed.ncbi.nlm.nih.gov/29341179) | The paper is a population PK study for vinflunine, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence, which only contains abstract-level summaries and toxicity risk percentages. |
-| `Chan_2014.pdf` | Chan S et al., A phase I clinical and pharmacokinetic…, Cancer chemotherapy and pha… (2014) | popPK | 8 | [10.1007/s00280-014-2420-1](https://doi.org/10.1007/s00280-014-2420-1) | [24627219](https://pubmed.ncbi.nlm.nih.gov/24627219) | The paper describes a population PK study for vinflunine, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Schmitt_2018.pdf` | Schmitt A et al., Better characterization of vinflunine p…, British journal of clinical… (2018) | popPK | 10 | [10.1111/bcp.13518](https://doi.org/10.1111/bcp.13518) | [29341179](https://pubmed.ncbi.nlm.nih.gov/29341179) | Human population-PK modeling is reported, but numeric disposition parameter estimates are not provided. |
+| `Chan_2014.pdf` | Chan S et al., A phase I clinical and pharmacokinetic…, Cancer chemotherapy and pha… (2014) | popPK | 9 | [10.1007/s00280-014-2420-1](https://doi.org/10.1007/s00280-014-2420-1) | [24627219](https://pubmed.ncbi.nlm.nih.gov/24627219) | Population PK was performed for vinflunine, but no numeric disposition parameter values are provided. |
 | `Delord_2013.pdf` | Delord JP et al., Phase I and pharmacokinetic study of IV…, Investigational new drugs (2013) | pgx | 7 | [10.1007/s10637-012-9878-7](https://doi.org/10.1007/s10637-012-9878-7) | [22996801](https://www.ncbi.nlm.nih.gov/pubmed/22996801) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-15T23:11:31.946442+00:00</sub>
+<sub>queue written 2026-10-06T15:11:54.749764+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Aggarwal_2008 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell lines and does not report pharmacokinetic parameters for vinflunine. |
-| PGx | Bamias_2021 | not_relevant | 0 | 0 | The study investigates the association between ERCC1 polymorphism and survival outcomes (CSS, PFS, OS) in patients treated with platinum-based chemotherapy, with vinflunine mentioned only as a concurrent therapy in a subset of patients, but no PK or PD parameters of vinflunine are reported. |
+| PGx | Bamias_2021 | not_relevant | 0 | 0 | The study reports survival associations with ERCC1 genotype, not an effect on a vinflunine pharmacokinetic or pharmacodynamic parameter. |
 | popPK | Bonfil_2002 | irrelevant | 0 | 0 | The paper is an in-vivo efficacy and toxicity study in mice that reports tumor incidence and survival data, but does not provide quantitative pharmacokinetic parameters (CL, V, t1/2) for vinflunine. |
-| popPK | Chan_2014 | relevant | 8 | 0 | The paper describes a population PK study for vinflunine, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| PGx | Delord_2013 | not_relevant | 0 | 0 | The study investigates the impact of liver dysfunction (a clinical condition) on pharmacokinetics, not the effect of a specific gene variant or genotype. |
+| popPK | Chan_2014 | relevant | 9 | 0 | Population PK was performed for vinflunine, but no numeric disposition parameter values are provided. |
+| PGx | Delord_2013 | not_relevant | 0 | 0 | The paper evaluates liver dysfunction, not a gene variant, genotype, or phenotype effect on vinflunine PK or PD. |
 | popPK | Erjala_2005 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay reporting IC50 values, not a pharmacokinetic study with disposition parameters. |
 | popPK | Estève_2006 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on drug resistance and does not report pharmacokinetic parameters. |
-| popPK | Friberg_2002 | irrelevant | 2 | 0 | The paper focuses on a pharmacodynamic model of myelosuppression rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for vinflunine. |
-| popPK | Kerioui_2022 | irrelevant | 0 | 0 | The paper is a clinical trial analysis of tumor dynamics and survival in urothelial carcinoma, not a pharmacokinetic study, and reports no PK parameters for vinflunine. |
+| popPK | Friberg_2002 | irrelevant | 1 | 0 | This is a myelosuppression pharmacodynamic model and provides no numeric vinflunine disposition parameters. |
+| popPK | Kerioui_2022 | irrelevant | 0 | 0 | The paper analyzes tumor lesion dynamics and survival, not vinflunine pharmacokinetics. |
 | PD | Kerioui_2022 | not_relevant | 0 | 0 | The paper analyzes tumor dynamics and survival for atezolizumab and chemotherapy, but does not report any pharmacodynamic or exposure-response relationship for vinflunine. |
 | popPK | Kruczynski_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study focusing on tubulin binding and cytotoxicity, containing no pharmacokinetic parameters. |
 | popPK | Matsubara_2025 | irrelevant | 0 | 0 | The paper is a clinical efficacy study comparing erdafitinib to chemotherapy (including vinflunine) and does not report any pharmacokinetic parameters for vinflunine. |
 | PD | Matsubara_2025 | not_relevant | 0 | 0 | The paper is a clinical efficacy and safety analysis of erdafitinib versus chemotherapy (including vinflunine) and does not report any pharmacokinetic or pharmacodynamic modeling or numeric PD parameters for vinflunine. |
-| PGx | Ng_2011 | not_relevant | 0 | 0 | The paper is a general review of vinflunine's pharmacology and clinical trials, with no mention of gene variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Ng_2011 | not_relevant | 0 | 0 | The review notes CYP3A4 metabolism but does not report a gene variant, genotype, or phenotype effect on vinflunine PK or PD. |
 | popPK | Ngan_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study focusing on microtubule dynamics and cell proliferation, reporting no pharmacokinetic parameters such as clearance or volume of distribution. |
 | popPK | Pourroy_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on apoptosis in neuroblastoma cells and does not report any pharmacokinetic parameters for vinflunine. |
-| popPK | Schmitt_2018 | relevant | 10 | 2 | The paper is a population PK study for vinflunine, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence, which only contains abstract-level summaries and toxicity risk percentages. |
-| PGx | Vallo_2015 | not_relevant | 0 | 0 | The paper reports drug sensitivity in cell lines and transporter expression, but does not report a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter of vinflunine. |
-| PGx | Zhao_2007 | not_relevant | 0 | 0 | The paper investigates the metabolic pathway of vinflunine and identifies CYP3A4 as the major enzyme involved, but it does not report any pharmacogenomic effects (e.g., specific gene variants or genotypes) on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Schmitt_2018 | relevant | 10 | 2 | Human population-PK modeling is reported, but numeric disposition parameter estimates are not provided. |
+| PGx | Zhao_2007 | not_relevant | 0 | 0 | The study examines CYP3A4-mediated metabolism and inhibitor effects in vitro, not effects of a gene variant, genotype, or phenotype on a vinflunine PK/PD parameter. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

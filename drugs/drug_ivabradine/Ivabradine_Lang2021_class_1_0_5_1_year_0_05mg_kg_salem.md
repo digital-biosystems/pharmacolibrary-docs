@@ -4,7 +4,7 @@
 
 # ivabradine — `Ivabradine_Lang2021_class_1_0_5_1_year_0_05mg_kg_salem`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +24,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:10.092956+00:00) predates the upstream re-run (2026-10-06 11:20:31.026332+00:00). Current validate status: `rejected`.
+
 ## Citation
 Lang J et al., Impact of Hepatic CYP3A4 Ontogeny Funct…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.2134](https://doi.org/10.1002/cpt.2134)
 
 ## Model component
-<dbs-pgx drug="ivabradine" model-id="Ivabradine_Lang2021_class_1_0_5_1_year_0_05mg_kg_salem" status="rejected" stale="false" population="children (0.5-18 years)" measured-compound="ivabradine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="ivabradine" model-id="Ivabradine_Lang2021_class_1_0_5_1_year_0_05mg_kg_salem" status="rejected" stale="true" population="children (0.5-18 years)" measured-compound="ivabradine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -44,15 +46,15 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'IVABRADINE' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_1:row0:col9', 'Lang_2021_table_1:row3:col9', 'Lang_2021_table_1:row4:col9'])
-- dropped unlinked row (NIL): 'METABOLITE' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_1:row9:col9', 'Lang_2021_table_1:row12:col9', 'Lang_2021_table_1:row13:col9'])
-- dropped unlinked row (NIL): 'Ivabradine' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_3:row0:col1', 'Lang_2021_table_3:row1:col1'])
-- dropped unlinked row (NIL): 'Metabolite' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_3:row2:col1', 'Lang_2021_table_3:row3:col1'])
+- dropped unlinked row (NIL): 'IVARABINE' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_1:row0:col7', 'Lang_2021_table_1:row0:col9', 'Lang_2021_table_1:row1:col7', 'Lang_2021_table_1:row2:col7', 'Lang_2021_table_1:row3:col7', 'Lang_2021_table_1:row3:col9', 'Lang_2021_table_1:row4:col7', 'Lang_2021_table_1:row4:col9', 'Lang_2021_table_1:row5:col7', 'Lang_2021_table_1:row6:col7', 'Lang_2021_table_1:row7:col7', 'Lang_2021_table_1:row8:col7'])
+- dropped unlinked row (NIL): 'METABOLITE' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_1:row9:col7', 'Lang_2021_table_1:row9:col9', 'Lang_2021_table_1:row10:col7', 'Lang_2021_table_1:row11:col7', 'Lang_2021_table_1:row12:col7', 'Lang_2021_table_1:row12:col9', 'Lang_2021_table_1:row13:col7', 'Lang_2021_table_1:row13:col9', 'Lang_2021_table_1:row14:col7', 'Lang_2021_table_1:row15:col7', 'Lang_2021_table_1:row16:col7', 'Lang_2021_table_1:row17:col7'])
+- dropped unlinked row (NIL): 'Ivabradine' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_3:row1:col1', 'Lang_2021_table_3:row2:col1'])
+- dropped unlinked row (NIL): 'Metabolite' — extend the ontology if this is a real PK parameter (source ['Lang_2021_table_3:row3:col1', 'Lang_2021_table_3:row4:col1'])
 - table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ivabradine
 - template fit: none — pbpk model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
-- population split: 'class 1 - 0.5-1 year 0.05mg/kg salem' subgroup of Lang_2021 (paper reports 6 populations: 1-3 years, 3-18 years (bw &lt; 40kg), 3-18 years (bw &gt; 40kg), adult value reference, adults &gt; 18 years, class 1 - 0.5-1 year 0.05mg/kg salem)
+- population split: 'adults &gt; 18 years' subgroup of Lang_2021 (paper reports 5 populations: 1-3 years, 3-18 years (bw &lt; 40kg), 3-18 years (bw &gt; 40kg), adult value reference, adults &gt; 18 years)
 - row roles (LLM): model_class=pbpk; 4/4 row label(s) assigned, 0 linked by role; re-tagged parent→ivabradine metabolite ×47
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
@@ -69,50 +71,54 @@ _No resolved parameters._
 - unparsed cell Lang_2021_table_1:row9:col6 = '[25-26]'
 - unparsed cell Lang_2021_table_1:row15:col1 = 'fmCYP3A4'
 - unparsed cell Lang_2021_table_1:row17:col1 = 'fmCYP3A4'
-- unparsed cell Lang_2021_table_3:row0:col2 = '12.3 [5.12-28.8]'
-- unparsed cell Lang_2021_table_3:row0:col3 = '54.8%'
-- unparsed cell Lang_2021_table_3:row0:col4 = '22.4 [9.27-52.4]'
-- unparsed cell Lang_2021_table_3:row0:col5 = '14.1 [5.69-34.5]'
-- unparsed cell Lang_2021_table_3:row0:col6 = '37.1%'
-- unparsed cell Lang_2021_table_3:row0:col7 = '26.5 [9.99-70.4]'
-- unparsed cell Lang_2021_table_3:row0:col8 = '23.4 [8.40-63.8]'
-- unparsed cell Lang_2021_table_3:row0:col9 = '11.7%'
-- unparsed cell Lang_2021_table_3:row0:col10 = '34.9 [13.8-86.1]'
-- unparsed cell Lang_2021_table_3:row0:col11 = '35.0 [13.7-89.3]'
-- unparsed cell Lang_2021_table_3:row0:col12 = '-0.3%'
-- unparsed cell Lang_2021_table_3:row1:col2 = '6.18 [2.70-13.9]'
-- unparsed cell Lang_2021_table_3:row1:col3 = '47.2%'
-- unparsed cell Lang_2021_table_3:row1:col4 = '9.47 [4.20-21.7]'
-- unparsed cell Lang_2021_table_3:row1:col5 = '6.65 [2.81-15.2]'
-- unparsed cell Lang_2021_table_3:row1:col6 = '29.8%'
-- unparsed cell Lang_2021_table_3:row1:col7 = '8.06 [3.48-19.0]'
-- unparsed cell Lang_2021_table_3:row1:col8 = '7.30 [3.09-17.8]'
-- unparsed cell Lang_2021_table_3:row1:col9 = '9.4%'
-- unparsed cell Lang_2021_table_3:row1:col10 = '9.87 [4.28-22.9]'
-- unparsed cell Lang_2021_table_3:row1:col11 = '9.85 [4.26-23.0]'
-- unparsed cell Lang_2021_table_3:row1:col12 = '0.2%'
-- unparsed cell Lang_2021_table_3:row2:col2 = '4.85 [1.81-11.9]'
-- unparsed cell Lang_2021_table_3:row2:col3 = '36.6%'
-- unparsed cell Lang_2021_table_3:row2:col4 = '8.07 [3.27-19.0]'
-- unparsed cell Lang_2021_table_3:row2:col5 = '5.62 [2.18-13.9]'
-- unparsed cell Lang_2021_table_3:row2:col6 = '30.4%'
-- unparsed cell Lang_2021_table_3:row2:col7 = '10.1 [3.73-26.3]'
-- unparsed cell Lang_2021_table_3:row2:col8 = '9.25 [3.23-26.6]'
-- unparsed cell Lang_2021_table_3:row2:col9 = '8.4%'
-- unparsed cell Lang_2021_table_3:row2:col10 = '14.2 [5.35-34.9]'
-- unparsed cell Lang_2021_table_3:row2:col11 = '14.4 [5.23-36.4]'
-- unparsed cell Lang_2021_table_3:row2:col12 = '-1.4%'
-- unparsed cell Lang_2021_table_3:row3:col2 = '1.81 [0.752-4.29]'
-- unparsed cell Lang_2021_table_3:row3:col3 = '13.8%'
-- unparsed cell Lang_2021_table_3:row3:col4 = '2.31 [1.02-4.88]'
-- unparsed cell Lang_2021_table_3:row3:col5 = '1.92 [0.833-4.23]'
-- unparsed cell Lang_2021_table_3:row3:col6 = '16.9%'
-- unparsed cell Lang_2021_table_3:row3:col7 = '1.99 [0.856-4.60]'
-- unparsed cell Lang_2021_table_3:row3:col8 = '1.90 [0.798-4.57]'
-- unparsed cell Lang_2021_table_3:row3:col9 = '4.5%'
-- unparsed cell Lang_2021_table_3:row3:col10 = '2.74 [1.13-6.29]'
-- unparsed cell Lang_2021_table_3:row3:col11 = '2.69 [1.15-6.40]'
-- unparsed cell Lang_2021_table_3:row3:col12 = '1.8%'
+- unparsed cell Lang_2021_table_3:row1:col2 = '27.2 [11.6-62.2]'
+- unparsed cell Lang_2021_table_3:row1:col3 = '12.3 [5.12-28.8]'
+- unparsed cell Lang_2021_table_3:row1:col4 = '54.8%'
+- unparsed cell Lang_2021_table_3:row1:col5 = '22.4 [9.27-52.4]'
+- unparsed cell Lang_2021_table_3:row1:col6 = '14.1 [5.69-34.5]'
+- unparsed cell Lang_2021_table_3:row1:col7 = '37.1%'
+- unparsed cell Lang_2021_table_3:row1:col8 = '26.5 [9.99-70.4]'
+- unparsed cell Lang_2021_table_3:row1:col9 = '23.4 [8.40-63.8]'
+- unparsed cell Lang_2021_table_3:row1:col10 = '11.7%'
+- unparsed cell Lang_2021_table_3:row1:col11 = '34.9 [13.8-86.1]'
+- unparsed cell Lang_2021_table_3:row1:col12 = '35.0 [13.7-89.3]'
+- unparsed cell Lang_2021_table_3:row1:col13 = '-0.3%'
+- unparsed cell Lang_2021_table_3:row2:col2 = '11.7 [5.40-26.0]'
+- unparsed cell Lang_2021_table_3:row2:col3 = '6.18 [2.70-13.9]'
+- unparsed cell Lang_2021_table_3:row2:col4 = '47.2%'
+- unparsed cell Lang_2021_table_3:row2:col5 = '9.47 [4.20-21.7]'
+- unparsed cell Lang_2021_table_3:row2:col6 = '6.65 [2.81-15.2]'
+- unparsed cell Lang_2021_table_3:row2:col7 = '29.8%'
+- unparsed cell Lang_2021_table_3:row2:col8 = '8.06 [3.48-19.0]'
+- unparsed cell Lang_2021_table_3:row2:col9 = '7.30 [3.09-17.8]'
+- unparsed cell Lang_2021_table_3:row2:col10 = '9.4%'
+- unparsed cell Lang_2021_table_3:row2:col11 = '9.87 [4.28-22.9]'
+- unparsed cell Lang_2021_table_3:row2:col12 = '9.85 [4.26-23.0]'
+- unparsed cell Lang_2021_table_3:row2:col13 = '0.2%'
+- unparsed cell Lang_2021_table_3:row3:col2 = '7.65 [3.10-17.4]'
+- unparsed cell Lang_2021_table_3:row3:col3 = '4.85 [1.81-11.9]'
+- unparsed cell Lang_2021_table_3:row3:col4 = '36.6%'
+- unparsed cell Lang_2021_table_3:row3:col5 = '8.07 [3.27-19.0]'
+- unparsed cell Lang_2021_table_3:row3:col6 = '5.62 [2.18-13.9]'
+- unparsed cell Lang_2021_table_3:row3:col7 = '30.4%'
+- unparsed cell Lang_2021_table_3:row3:col8 = '10.1 [3.73-26.3]'
+- unparsed cell Lang_2021_table_3:row3:col9 = '9.25 [3.23-26.6]'
+- unparsed cell Lang_2021_table_3:row3:col10 = '8.4%'
+- unparsed cell Lang_2021_table_3:row3:col11 = '14.2 [5.35-34.9]'
+- unparsed cell Lang_2021_table_3:row3:col12 = '14.4 [5.23-36.4]'
+- unparsed cell Lang_2021_table_3:row3:col13 = '-1.4%'
+- unparsed cell Lang_2021_table_3:row4:col2 = '2.10 [0.92-4.47]'
+- unparsed cell Lang_2021_table_3:row4:col3 = '1.81 [0.752-4.29]'
+- unparsed cell Lang_2021_table_3:row4:col4 = '13.8%'
+- unparsed cell Lang_2021_table_3:row4:col5 = '2.31 [1.02-4.88]'
+- unparsed cell Lang_2021_table_3:row4:col6 = '1.92 [0.833-4.23]'
+- unparsed cell Lang_2021_table_3:row4:col7 = '16.9%'
+- unparsed cell Lang_2021_table_3:row4:col8 = '1.99 [0.856-4.60]'
+- unparsed cell Lang_2021_table_3:row4:col9 = '1.90 [0.798-4.57]'
+- unparsed cell Lang_2021_table_3:row4:col10 = '4.5%'
+- unparsed cell Lang_2021_table_3:row4:col11 = '2.74 [1.13-6.29]'
+- unparsed cell Lang_2021_table_3:row4:col12 = '2.69 [1.15-6.40]'
+- unparsed cell Lang_2021_table_3:row4:col13 = '1.8%'
 
 ## Validation
 
@@ -170,4 +176,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 16:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:20 UTC</sub>

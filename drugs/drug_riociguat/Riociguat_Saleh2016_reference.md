@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/&quot;},{&quot;label&quot;:&quot;Saleh_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riociguat — `Riociguat_Saleh2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:31.530900+00:00) predates the upstream re-run (2026-10-06 16:19:32.190268+00:00). Current validate status: `extracted`.
+
 ## Citation
 Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016)
   ·  DOI: [10.1086/685404](https://doi.org/10.1086/685404)
 
 ## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="needs_review" stale="false" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="extracted" stale="true" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -38,8 +40,6 @@ Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulatio
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | riociguat absorption rate constant | `Q49` · kabs | 2.17 | /h | 0.0006027777777777777 | [1] / [h] | not captured | llm_confirmed (0.6) | Saleh_2016:abstract | — | not captured |
@@ -65,7 +65,7 @@ Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulatio
 - metabolite volume: 'M1 volume of distribution' Q63→Q61 for M1 — it is 1-compartment, so its central volume is its only volume
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (riociguat clearance); Q61 (riociguat volume of distribution); Q22 (M1 clearance); Q61 (M1 volume of distribution)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=riociguat
-- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
 - row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 6 linked by role; re-tagged riociguat→parent ×5, riociguat→M1 ×3
 - molar mass: no plausible PubChem entry for 'M1' ('riociguat N-oxide') — left in mass units
 - molar mass: none found for 'M1' — its concentrations stay mass-only
@@ -178,4 +178,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 03:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:19 UTC</sub>

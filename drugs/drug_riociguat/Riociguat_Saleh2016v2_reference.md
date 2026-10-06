@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/&quot;},{&quot;label&quot;:&quot;Saleh_2016_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riociguat — `Riociguat_Saleh2016v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,19 +21,21 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riociguat: CL 1.91 L/h, CLR 0.242 L/h, FG 0.174 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of glomerular filtration: this record has 0.174, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:31.535149+00:00) predates the upstream re-run (2026-10-06 16:19:36.175089+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016)
   ·  DOI: [10.1086/685647](https://doi.org/10.1086/685647)
 
 ## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016v2_reference" status="needs_review" stale="false" population="patients with renal or hepatic impairment" measured-compound="riociguat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016v2_reference" status="needs_review" stale="true" population="patients with renal or hepatic impairment" measured-compound="riociguat" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,6 +47,7 @@ Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulatio
 | Total clearance of riociguat | `Q22` · CL | 1.912 | L/h | 5.311111111111111e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Saleh_2016_2:abstract | — | not captured |
 | Renal clearance | `Q26` · CLR | 0.242 | L/h | 6.722222222222222e-08 | [l] / [h] | not captured | exact (1.0) | Saleh_2016_2:abstract, Saleh_2016_2:abstract | — | not captured |
 | glomerular filtration | `Q41` · FG | 0.174 | L/h | not captured | [l] / [h] | not captured | llm (0.6) | Saleh_2016_2:abstract, Saleh_2016_2:abstract | — | not captured |
+| Volume of distribution (Vd) | `Q61` · V | 0.35 | L/kg | 0.0245 | L | not captured | review_gapfill (0.7) | Smith_2016:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,6 +60,7 @@ Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulatio
 - dropped unlinked row (NIL): 'metabolism to M1' — extend the ontology if this is a real PK parameter (source ['Saleh_2016_2:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=riociguat
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q61 (V) from Smith_2016's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -65,18 +69,22 @@ Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulatio
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['riociguat', 'm1', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[glomerular filtration]` | 0.174 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[metabolism to m1]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | riociguat | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | riociguat | unknown | mismatch |
 
 </details>
 
@@ -95,9 +103,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Saleh_2016_2:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Saleh_2016_2:abstract', 'Saleh_2016_2:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Smith_2016:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.912 | not captured | not captured | ['Saleh_2016_2:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.91 L/h | not captured | not captured | ['Saleh_2016_2:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 24.5 L | not captured | not captured | ['Smith_2016:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -132,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 03:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:19 UTC</sub>

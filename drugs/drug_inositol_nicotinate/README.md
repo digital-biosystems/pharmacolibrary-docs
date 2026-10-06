@@ -18,7 +18,7 @@ Inositol nicotinate is a vasodilator of the nicotinic acid group, once used to i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:36 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 1,704/240 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:18 | 0:24 | 0/0/0 | 0/0/0 | 0/0/0 | 14,742/384 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -56,9 +56,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Milton_2013.pdf` | Milton SG et al., Biotransformation and pharmacokinetics…, Xenobiotica; the fate of fo… (2013) | popPK | 9 | [10.3109/00498254.2012.762591](https://doi.org/10.3109/00498254.2012.762591) | [23347001](https://pubmed.ncbi.nlm.nih.gov/23347001) | The study reports quantitative PK parameters (half-lives, clearance trends) for inositol hexanicotinate in rats, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Milton_2013.pdf` | Milton SG et al., Biotransformation and pharmacokinetics…, Xenobiotica; the fate of fo… (2013) | popPK | 9 | [10.3109/00498254.2012.762591](https://doi.org/10.3109/00498254.2012.762591) | [23347001](https://pubmed.ncbi.nlm.nih.gov/23347001) | The study reports pharmacokinetic parameters (half-lives, clearance trends) for inositol hexanicotinate in rats, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text, only qualitative descriptions and half-lives. |
 
-<sub>queue written 2026-09-30T09:36:23.581439+00:00</sub>
+<sub>queue written 2026-10-06T20:18:03.969751+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,10 +66,10 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Belch_1996 | irrelevant | 0 | 0 | The paper is a clinical review of Raynaud's phenomenon treatment that mentions inositol nicotinate only as a therapeutic option, without reporting any pharmacokinetic parameters or quantitative disposition data. |
 | PD | Belch_1996 | not_relevant | 1 | 0 | The text is a general review of Raynaud's phenomenon management that mentions inositol nicotinate as a simple vasodilator but provides no pharmacokinetic data, dose-response curves, or numeric pharmacodynamic parameters. |
-| popPK | Keenan_2013 | irrelevant | 2 | 0 | The study compares inositol hexanicotinate (a different compound than inositol nicotinate) and reports no quantitative PK parameters, stating only that it showed no evidence of bioavailability. |
+| popPK | Keenan_2013 | irrelevant | 2 | 0 | The study reports that inositol hexanicotinate showed "no evidence of bioavailability" and provides no quantitative PK parameters (CL, V, ka, etc.) for the drug. |
 | PD | Keenan_2013 | not_relevant | 0 | 0 | The study reports clinical efficacy (lipid changes) and PK data (bioavailability) but does not provide a concentration-effect or dose-response analysis with numeric PD parameters for inositol nicotinate. |
-| popPK | Milton_2013 | relevant | 9 | 4 | The study reports quantitative PK parameters (half-lives, clearance trends) for inositol hexanicotinate in rats, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
-| popPK | Paltauf_1977 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of clofibric acid, with inositol nicotinate serving only as a co-administered component in the combination preparation without reported PK parameters for the inositol derivative itself. |
+| popPK | Milton_2013 | relevant | 9 | 4 | The study reports pharmacokinetic parameters (half-lives, clearance trends) for inositol hexanicotinate in rats, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text, only qualitative descriptions and half-lives. |
+| popPK | Paltauf_1977 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of clofibric acid (a metabolite of clofibrate) and does not report quantitative disposition parameters for inositol nicotinate, which is only a co-administered component. |
 | PD | Paltauf_1977 | not_relevant | 0 | 0 | The paper reports only the pharmacokinetics (absorption, blood levels, excretion) of clofibric acid and does not provide any pharmacodynamic or exposure-response data for inositol nicotinate. |
 | popPK | Schwartzkopff_1978 | irrelevant | 0 | 0 | The paper is a clinical efficacy study on hyperlipoproteinemia treatment and does not report any pharmacokinetic parameters for inositol nicotinate. |
 | PD | Schwartzkopff_1978 | not_relevant | 1 | 0 | The text describes clinical outcomes and dosage ranges for combination therapy but does not report any concentration-effect data, dose-response curves, or numeric PD parameters (e.g., Emax, EC50). |

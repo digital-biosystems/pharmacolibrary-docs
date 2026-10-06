@@ -18,7 +18,7 @@ Benziodarone is a vasodilator that was used in cardiac therapy and also acts as 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:27 | 0:28 | 0/0/0 | 1/0/0 | 0/0/0 | 14,379/879 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 09:55 | 0:27 | 0/0/0 | 1/0/0 | 0/0/0 | 14,379/879 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -52,7 +52,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Shimizu_1975.pdf` | Shimizu S et al., [Pharmacokinetics of benziodarone label…, Revista de farmacia e bioqu… (1975) | popPK | 8 | not captured | [1085962](https://pubmed.ncbi.nlm.nih.gov/1085962) | The study describes a pharmacokinetic analysis of benziodarone in rats, but the provided evidence contains only the abstract/methods description without any numeric parameter values. |
 
-<sub>queue written 2026-10-06T08:27:13.948552+00:00</sub>
+<sub>queue written 2026-10-06T09:55:36.352334+00:00</sub>
 
 ## Screened and excluded
 

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a sigmoid Emax model where glyceryl trinitrate dose (nmol/min) stimulates forearm blood flow (%Change from Baseline), but the paper does not provide the mechanism or key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eugene_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

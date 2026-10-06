@@ -18,7 +18,7 @@ Cloridarol is a vasodilator drug classified under cardiac therapy, suggesting it
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:31 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 430/56 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 09:57 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 430/56 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

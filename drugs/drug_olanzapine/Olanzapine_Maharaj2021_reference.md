@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;olanzapine&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/&quot;},{&quot;label&quot;:&quot;Maharaj_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olanzapine_Johnson2011_reference&quot;,&quot;label&quot;:&quot;Johnson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Johnson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zang2024_reference&quot;,&quot;label&quot;:&quot;Zang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # olanzapine — `Olanzapine_Maharaj2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,31 +25,28 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:11.891199+00:00) predates the upstream re-run (2026-10-06 16:06:58.197449+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14414](https://doi.org/10.1111/bcp.14414)
 
 ## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Maharaj2021_reference" status="model_quarantined" stale="false" population="children receiving olanzapine" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="olanzapine" model-id="Olanzapine_Maharaj2021_reference" status="needs_review" stale="true" population="children receiving olanzapine per standard of care (infants to adolescents)" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 8 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KA (1/h) | `Q49` · kabs | 0.758 | not captured | not captured | not captured | not captured | exact (1.0) | Maharaj_2021_table_p7_1:row1:col1 | — | not captured |
-| CL/F (L/h, 70 kg) | `Q27` · CL/F | 26.5 | L/h, 70 kg | not captured | [l] / [h] | 21 | exact (1.0) | Maharaj_2021_table_p7_1:row2:col1, Maharaj_2021_table_p7_1:row2:col2, Maharaj_2021_table_p7_1:row2:col3, Maharaj_2021_table_p7_1:row2:col4, Maharaj_2021_table_p7_1:row2:col5 | — | not captured |
-| V/F (L, 70 kg) | `Q76` · V/F | 914.1 | L, 70 kg | not captured | [l] | 13 | exact (1.0) | Maharaj_2021_table_p7_1:row3:col1, Maharaj_2021_table_p7_1:row3:col2, Maharaj_2021_table_p7_1:row3:col3, Maharaj_2021_table_p7_1:row3:col4, Maharaj_2021_table_p7_1:row3:col5 | — | not captured |
-| TM50 (weeks) | `Q57` · t1/2z | 317.3 | weeks | not captured | [weeks] | 16 | llm (0.5) | Maharaj_2021_table_p7_1:row4:col1, Maharaj_2021_table_p7_1:row4:col2, Maharaj_2021_table_p7_1:row4:col3, Maharaj_2021_table_p7_1:row4:col4, Maharaj_2021_table_p7_1:row4:col5 | — | not captured |
-| HILL | `Q325` · Hill | 7.08 | not captured | not captured | not captured | 23 | exact (1.0) | Maharaj_2021_table_p7_1:row5:col1, Maharaj_2021_table_p7_1:row5:col2, Maharaj_2021_table_p7_1:row5:col3, Maharaj_2021_table_p7_1:row5:col4, Maharaj_2021_table_p7_1:row5:col5 | — | not captured |
-| θCL,WT | `Q22` · CL | 0.796 | not captured | not captured | not captured | 36 | boundary (0.8) | Maharaj_2021_table_p7_1:row6:col1, Maharaj_2021_table_p7_1:row6:col2, Maharaj_2021_table_p7_1:row6:col3, Maharaj_2021_table_p7_1:row6:col4, Maharaj_2021_table_p7_1:row6:col5 | — | not captured |
-| ε1 2 - proportional error | `Q316` · prop_error | 0.177 | not captured | not captured | not captured | 39 | boundary (0.8) | Maharaj_2021_table_p7_1:row9:col1, Maharaj_2021_table_p7_1:row9:col2, Maharaj_2021_table_p7_1:row9:col3, Maharaj_2021_table_p7_1:row9:col4, Maharaj_2021_table_p7_1:row9:col5 | — | not captured |
-| ε2 2 - additive error | `Q317` · add_error | 6.493 | not captured | not captured | not captured | 77 | boundary (0.8) | Maharaj_2021_table_p7_1:row10:col1, Maharaj_2021_table_p7_1:row10:col2, Maharaj_2021_table_p7_1:row10:col3, Maharaj_2021_table_p7_1:row10:col4, Maharaj_2021_table_p7_1:row10:col5 | — | not captured |
+| KA [1/h] | `Q49` · kabs | 0.758 | 1/h | 0.00021055555555555554 | [1] / [h] | not captured | llm_confirmed (0.6) | T3:row2:col1 | — | not captured |
+| CL/F [L/h, 70kg] | `Q27` · CL/F | 16 | L/h | 4.444444444444444e-06 | L/h | 21 | llm_confirmed (0.6) | T3:row3:col1, T3:row3:col2, T3:row3:col3, T3:row3:col4, T3:row3:col5 | — | not captured |
+| V/F [L, 70kg] | `Q353` · Vnorm/F | 677.3 | L | 0.6773 | L | 13 | llm_corrected (0.6) | T3:row4:col1, T3:row4:col2, T3:row4:col3, T3:row4:col4, T3:row4:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,19 +56,45 @@ Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/h, 70 kg' (CL/F)
-- unit_dimension_unknown: 'L, 70 kg' (V/F)
-- dropped value-less row: 'ωCL/F2 (CV% b)'
+- dropped unlinked row (NIL): 'TM50 [weeks]' — extend the ontology if this is a real PK parameter (source ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row5:col4', 'T3:row5:col5'])
+- dropped PD-category row 'HILL' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T3:row6:col1', 'T3:row6:col2', 'T3:row6:col3', 'T3:row6:col4', 'T3:row6:col5'])
+- routed 'ӨCL,WT' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed 'ԑ12 - proportional error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- routed 'ԑ22 - additive error' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped value-less row: '&lt;2 years'
+- dropped value-less row: '2–&lt;6 years'
+- dropped value-less row: '6–&lt;12 years'
+- dropped value-less row: '≥12 years'
+- dropped value-less row: 'Overall'
+- implicit units: 'CL/F [L/h, 70kg]' → L/h (from the paper text: "Text states 'CL/Fi is the participant-specific apparent clearance value (L/h)' and '21.6 vs. 16.8 L/h for the full and a")
+- implicit units: 'V/F [L, 70kg]' → L (from the paper text: "Text refers to 'apparent volume of distribution (scaled to 70 kg)'; volumes of distribution are in L, consistent with al")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=olanzapine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Maharaj_2021_table_p7_1:row8:col1 = '0.309 [60.2%]'
-- unparsed cell Maharaj_2021_table_p7_1:row8:col3 = '0.035 [18.9%]'
-- unparsed cell Maharaj_2021_table_p7_1:row8:col4 = '0.283 [57.2%]'
-- unparsed cell Maharaj_2021_table_p7_1:row8:col5 = '0.688 [99.5%]'
+- unparsed cell T3:row9:col1 = '0.309 [60.2%]'
+- unparsed cell T3:row9:col3 = '0.035 [18.9%]'
+- unparsed cell T3:row9:col4 = '0.283 [57.2%]'
+- unparsed cell T3:row9:col5 = '0.688 [99.5%]'
+- unparsed cell Maharaj_2021_table_4:row0:col2 = '0.35 (0.14–1.41)'
+- unparsed cell Maharaj_2021_table_4:row0:col3 = '7.86 (2.32–31.39)'
+- unparsed cell Maharaj_2021_table_4:row0:col4 = '18.56 (4.65–46.65)'
+- unparsed cell Maharaj_2021_table_4:row1:col2 = '0.50 (0.18–1.7)'
+- unparsed cell Maharaj_2021_table_4:row1:col3 = '15.16 (7.23–50.31)'
+- unparsed cell Maharaj_2021_table_4:row1:col4 = '13.36 (3.86–35.86)'
+- unparsed cell Maharaj_2021_table_4:row2:col2 = '0.24 (0.15–0.78)'
+- unparsed cell Maharaj_2021_table_4:row2:col3 = '13.96 (6.34–44.71)'
+- unparsed cell Maharaj_2021_table_4:row2:col4 = '26.92 (8.42–42.72)'
+- unparsed cell Maharaj_2021_table_4:row3:col2 = '0.23 (0.12–0.47)'
+- unparsed cell Maharaj_2021_table_4:row3:col3 = '18.69 (8.74–34.01)'
+- unparsed cell Maharaj_2021_table_4:row3:col4 = '28.93 (14.11–56.44)'
+- unparsed cell Maharaj_2021_table_4:row4:col2 = '0.37 (0.12–1.7)'
+- unparsed cell Maharaj_2021_table_4:row4:col3 = '12.79 (2.32–50.31)'
+- unparsed cell Maharaj_2021_table_4:row4:col4 = '17.65 (3.86–56.44)'
+- companion parameter table 4 transcribed (5 record(s), model stage 'final')
+- LLM selected parameter table(s) 3, 4
 
 ## Validation
 
@@ -99,18 +123,15 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q27 | fail | 26.5 | 21.6 | 0.8151 | 0.05 | footnote reference category |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Maharaj_2021_table_p7_1:row4:col1', 'Maharaj_2021_table_p7_1:row4:col2', 'Maharaj_2021_table_p7_1:row4:col3', 'Maharaj_2021_table_p7_1:row4:col4', 'Maharaj_2021_table_p7_1:row4:col5'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Maharaj_2021_table_p7_1:row6:col1', 'Maharaj_2021_table_p7_1:row6:col2', 'Maharaj_2021_table_p7_1:row6:col3', 'Maharaj_2021_table_p7_1:row6:col4', 'Maharaj_2021_table_p7_1:row6:col5'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L/h, 70 kg | not captured | not captured | ['Maharaj_2021_table_p7_1:row2:col1', 'Maharaj_2021_table_p7_1:row2:col2', 'Maharaj_2021_table_p7_1:row2:col3', 'Maharaj_2021_table_p7_1:row2:col4', 'Maharaj_2021_table_p7_1:row2:col5'] |
-| C5_unit_missing_Q317 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Maharaj_2021_table_p7_1:row10:col1', 'Maharaj_2021_table_p7_1:row10:col2', 'Maharaj_2021_table_p7_1:row10:col3', 'Maharaj_2021_table_p7_1:row10:col4', 'Maharaj_2021_table_p7_1:row10:col5'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Maharaj_2021_table_p7_1:row1:col1'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | L, 70 kg | not captured | not captured | ['Maharaj_2021_table_p7_1:row3:col1', 'Maharaj_2021_table_p7_1:row3:col2', 'Maharaj_2021_table_p7_1:row3:col3', 'Maharaj_2021_table_p7_1:row3:col4', 'Maharaj_2021_table_p7_1:row3:col5'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row3:col1', 'T3:row3:col2', 'T3:row3:col3', 'T3:row3:col4', 'T3:row3:col5'] |
+| C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row4:col1', 'T3:row4:col2', 'T3:row4:col3', 'T3:row4:col4', 'T3:row4:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16 L/h | not captured | not captured | ['T3:row3:col1', 'T3:row3:col2', 'T3:row3:col3', 'T3:row3:col4', 'T3:row3:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -163,4 +184,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-19 00:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:06 UTC</sub>

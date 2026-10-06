@@ -21,7 +21,7 @@
 
 The source reports only CL/F (5.36 mL/min/kg) and V/F (370.2486 L) for tolvaptan; ka and Tlag were left at library defaults because the paper gives no values, and the invented ka was judged unacceptable. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader further disagreed on several extracted values, e.g. 74.3 vs 1.15 and 28 vs 315, with one value (3.0) read as absent by the second reader. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 74.3, the second reading 1.15; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 9, the second reading 1360; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -75,12 +75,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q19]` | 9 | 1360 | mismatch |
 | `gpt-oss:120b` | `values[Q21]` | 74.3 | 1.15 | mismatch |
-| `gpt-oss:120b` | `values[Q32]` | 28 | 29 | mismatch |
-| `gpt-oss:120b` | `values[Q33]` | 88.9 | 28 | mismatch |
-| `gpt-oss:120b` | `values[Q34]` | not captured | 60 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 28 | 315 | mismatch |
+| `gpt-oss:120b` | `values[Q36]` | not captured | 20 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q56]` | 3.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q84]` | not captured | 25 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | 315 | not captured | only_one_extracted |
 
 </details>
 
@@ -135,7 +135,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_modelica.zip" download>Tolvaptan_Bhatt2014_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_modelica.zip" download>Tolvaptan_Bhatt2014_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_fmi.zip" download>Tolvaptan_Bhatt2014_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_matlab.zip" download>Tolvaptan_Bhatt2014_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_matlab_simbio.zip" download>Tolvaptan_Bhatt2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

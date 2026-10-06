@@ -18,7 +18,7 @@ Naftidrofuryl is a vasodilator and serotonin antagonist that has been used to tr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:43 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 1,728/176 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:27 | 1:25 | 0/0/0 | 0/0/0 | 0/0/0 | 22,696/1,212 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -32,65 +32,66 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 41 matched, 35 returned
+- **PubMed hits:** 41 matched, 40 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hulot_1998.pdf` | Hulot T et al., Influence of age on the pharmacokinetic…, Arzneimittel-Forschung (1998) | popPK | 8 | not captured | [9793615](https://pubmed.ncbi.nlm.nih.gov/9793615) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2) for naftidrofuryl in humans, with all numeric values clearly present in the text. |
-| `Lartigue-Mattei_1978.pdf` | Lartigue-Mattei C et al., [Pharmacokinetics and bioavailability o…, International journal of cl… (1978) | popPK | 8 | not captured | [730420](https://pubmed.ncbi.nlm.nih.gov/730420) | The paper reports pharmacokinetic parameters for naftidrofuryl, but the evidence only provides half-life values (11.0 and 26.5 hours) without explicit clearance, volume, or compartmental model parameters. |
-| `Legallicier_2005.pdf` | Legallicier B et al., Pharmacokinetics of naftidrofuryl in pa…, Arzneimittel-Forschung (2005) | popPK | 8 | [10.1055/s-0031-1296874](https://doi.org/10.1055/s-0031-1296874) | [16080275](https://pubmed.ncbi.nlm.nih.gov/16080275) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2) for naftidrofuryl in humans, with values clearly present in the text. |
-| `Platt_1984.pdf` | Platt D et al., [Pharmacokinetics of naftidrofuryl in m…, Zeitschrift fur Gerontologie (1984) | popPK | 8 | not captured | [6523980](https://pubmed.ncbi.nlm.nih.gov/6523980) | The paper is a PK study of naftidrofuryl reporting qualitative changes in half-life, but specific numeric parameter values are not present in the provided evidence. |
+| `Abdel_2025.pdf` | Abdel Hakiem AF et al., Ratiomeric Luminescent Monitoring of Ca…, Luminescence : the journal… (2025) | popPK | 8 | [10.1002/bio.70243](https://doi.org/10.1002/bio.70243) | [40817571](https://pubmed.ncbi.nlm.nih.gov/40817571) | The study reports a pharmacokinetic bioavailability study of naftidrofuryl in rabbits, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Hulot_1998.pdf` | Hulot T et al., Influence of age on the pharmacokinetic…, Arzneimittel-Forschung (1998) | popPK | 8 | not captured | [9793615](https://pubmed.ncbi.nlm.nih.gov/9793615) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2) for naftidrofuryl in humans, with all values explicitly listed in the text. |
+| `Lartigue-Mattei_1978.pdf` | Lartigue-Mattei C et al., [Pharmacokinetics and bioavailability o…, International journal of cl… (1978) | popPK | 8 | not captured | [730420](https://pubmed.ncbi.nlm.nih.gov/730420) | The study reports pharmacokinetic parameters (half-lives) for naftidrofuryl in humans, but specific values for clearance, volume, or bioavailability percentages are not explicitly provided in the text. |
+| `Legallicier_2005.pdf` | Legallicier B et al., Pharmacokinetics of naftidrofuryl in pa…, Arzneimittel-Forschung (2005) | popPK | 8 | [10.1055/s-0031-1296874](https://doi.org/10.1055/s-0031-1296874) | [16080275](https://pubmed.ncbi.nlm.nih.gov/16080275) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2) for naftidrofuryl in humans, though it lacks explicit clearance (CL) or volume (V) values. |
+| `Platt_1984.pdf` | Platt D et al., [Pharmacokinetics of naftidrofuryl in m…, Zeitschrift fur Gerontologie (1984) | popPK | 8 | not captured | [6523980](https://pubmed.ncbi.nlm.nih.gov/6523980) | The study reports pharmacokinetic parameters (half-life) for naftidrofuryl in humans, but specific numeric values are not present in the provided abstract text. |
 | `Kirsten_1995.pdf` | Kirsten R et al., Platelet aggregation after naftidrofury…, International journal of cl… (1995) | pd | 4 | not captured | [7757315](https://www.ncbi.nlm.nih.gov/pubmed/7757315) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T09:43:56.283117+00:00</sub>
+<sub>queue written 2026-10-06T20:27:03.411594+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdel_2025 | irrelevant | 2 | 0 | The paper describes a bioanalytical method for naftidrofuryl and mentions a PK study in rabbits, but no quantitative PK parameters (CL, V, t1/2, etc.) are provided in the evidence. |
+| popPK | Abdel_2025 | relevant | 8 | 0 | The study reports a pharmacokinetic bioavailability study of naftidrofuryl in rabbits, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided evidence. |
 | popPK | Agarwal_2009 | irrelevant | 0 | 0 | This is a clinical review of hearing loss treatments where naftidrofuryl is a therapeutic agent, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Agarwal_2009 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trials for hearing loss and does not report any pharmacokinetic or pharmacodynamic modeling, concentration-effect data, or numeric PD parameters for naftidrofuryl. |
 | popPK | Belch_1996 | irrelevant | 0 | 0 | The paper is a clinical review of Raynaud's phenomenon treatment that mentions naftidrofuryl only as a therapeutic option, without reporting any pharmacokinetic parameters or quantitative disposition data. |
 | PD | Belch_1996 | not_relevant | 1 | 0 | The text is a general review of Raynaud's phenomenon management that mentions naftidrofuryl as a simple vasodilator but provides no pharmacokinetic data, concentration-effect analysis, or numeric PD parameters. |
 | popPK | Calvert_2002 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of receptor binding and muscle contraction, reporting no pharmacokinetic parameters. |
-| popPK | Chamontin_1995 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy and hemodynamic effects of peripheral vasodilators, containing no pharmacokinetic parameters or quantitative disposition data for naftidrofuryl. |
+| popPK | Chamontin_1995 | irrelevant | 0 | 0 | The paper is a review of hemodynamic and clinical effects of peripheral vasodilators and does not report any pharmacokinetic parameters for naftidrofuryl. |
 | popPK | Clissold_1987 | irrelevant | 0 | 0 | The paper is a review of buflomedil, and naftidrofuryl is mentioned only as a comparator drug without any pharmacokinetic data. |
 | PD | Clissold_1987 | not_relevant | 1 | 0 | The text is a qualitative review of buflomedil that mentions naftidrofuryl only as a comparator in clinical trials, without providing any numeric PD parameters or exposure-response data for naftidrofuryl. |
 | popPK | DHooge_2001 | irrelevant | 0 | 0 | The study is a clinical trial assessing quality of life outcomes and contains no pharmacokinetic parameters or disposition data for naftidrofuryl. |
 | PD | DHooge_2001 | not_relevant | 0 | 0 | The paper reports a clinical trial comparing fixed-dose naftidrofuryl to placebo using a quality-of-life questionnaire, with no pharmacokinetic data, concentration-effect analysis, or numeric PD parameters. |
-| popPK | Fawcett_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular reactivity, not a pharmacokinetic study, and reports no disposition parameters. |
-| popPK | Garrett_1984 | irrelevant | 0 | 0 | The study investigates nafronyl (a different drug), not naftidrofuryl. |
-| popPK | Heidrich_1975 | irrelevant | 0 | 0 | The study investigates the effect of naftidrofuryl on renal function markers (creatinine, PAH/inulin clearance) rather than reporting pharmacokinetic disposition parameters (CL, V, t1/2) for naftidrofuryl itself. |
+| popPK | Fawcett_1995 | irrelevant | 0 | 0 | The study is an in-vitro organ bath experiment measuring vasoconstriction, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Garrett_1984 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of nafronyl (a different drug), not naftidrofuryl. |
+| popPK | Heidrich_1975 | irrelevant | 0 | 0 | The study investigates the effect of naftidrofuryl on renal function markers (creatinine, PAH/inulin clearance) rather than reporting pharmacokinetic parameters (CL, V, t1/2) for naftidrofuryl itself. |
 | popPK | Ibrahim_2017 | irrelevant | 0 | 0 | The paper describes analytical methods for drug quantification, not pharmacokinetic studies, and contains no disposition parameters. |
 | PD | Ibrahim_2017 | not_relevant | 0 | 0 | The paper describes analytical methods for drug quantification, not pharmacodynamic or exposure-response relationships. |
 | popPK | Kirsten_1995 | irrelevant | 2 | 1 | The study reports only a single peak plasma concentration (Cmax) and in vitro IC50, lacking quantitative disposition parameters like clearance, volume, or half-life required for PK modeling. |
-| popPK | Lartigue-Mattei_1978 | relevant | 8 | 2 | The paper reports pharmacokinetic parameters for naftidrofuryl, but the evidence only provides half-life values (11.0 and 26.5 hours) without explicit clearance, volume, or compartmental model parameters. |
+| popPK | Lartigue-Mattei_1978 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (half-lives) for naftidrofuryl in humans, but specific values for clearance, volume, or bioavailability percentages are not explicitly provided in the text. |
 | popPK | Lehert_1994 | irrelevant | 0 | 0 | The paper is a retrospective clinical efficacy analysis of naftidrofuryl in intermittent claudication and contains no pharmacokinetic parameters or disposition data. |
 | PD | Lehert_1994 | not_relevant | 1 | 0 | The paper is a retrospective clinical analysis of fixed-dose (600 mg) vs. placebo outcomes (walking distance, events) and does not report any concentration-effect data, PK/PD modeling, or numeric PD parameters like Emax or EC50. |
-| popPK | Majumdar_1982 | irrelevant | 0 | 0 | The study is a clinical trial assessing therapeutic efficacy on liver function (ICG clearance) and does not report pharmacokinetic parameters for naftidrofuryl. |
-| popPK | Miyake_1994 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of cerebral blood flow in rats and does not report any pharmacokinetic parameters for naftidrofuryl. |
+| popPK | Majumdar_1982 | irrelevant | 0 | 0 | The study is a clinical trial assessing the therapeutic effect of naftidrofuryl on liver function (ICG clearance, GGT levels) and does not report pharmacokinetic parameters (CL, V, t1/2) for naftidrofuryl itself. |
+| popPK | Miyake_1994 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of cerebral blood flow in rats and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for naftidrofuryl. |
 | popPK | Moesch_1995 | irrelevant | 0 | 0 | The study investigates crystalluria (urinary stone formation) associated with naftidrofuryl oxalate and does not report any pharmacokinetic parameters. |
 | PD | Moesch_1995 | not_relevant | 1 | 0 | The paper reports a qualitative association between drug use and crystalluria frequency but provides no concentration-effect data, dose-response curve, or numeric PD parameters. |
 | popPK | Nabeshima_1991 | irrelevant | 0 | 0 | The study is a pharmacological investigation of anti-amnesic effects and receptor binding in mice, containing no pharmacokinetic disposition parameters. |
 | popPK | Nikolov_1984 | irrelevant | 0 | 0 | The study focuses on the anti-hypoxic effects of cinnarizine, with naftidrofuryl used only as a reference drug, and no pharmacokinetic parameters are reported. |
 | PD | Nikolov_1984 | not_relevant | 1 | 0 | The paper focuses on cinnarizine and only mentions naftidrofuryl as a reference drug without providing specific numeric PD parameters or detailed dose-response data for it. |
-| popPK | Nikolov_1989 | irrelevant | 0 | 0 | The study focuses on the cerebroprotective effects of prostacyclin, with naftidrofuryl serving only as a co-administered agent in a pharmacodynamic interaction study, and no pharmacokinetic parameters are reported. |
+| popPK | Nikolov_1989 | irrelevant | 0 | 0 | The study investigates the cerebroprotective effects of prostacyclin and its interaction with naftidrofuryl, but does not report any pharmacokinetic parameters for naftidrofuryl. |
 | PD | Nikolov_1989 | not_relevant | 1 | 0 | The paper focuses on prostacyclin (PGI2) and only qualitatively mentions that naftidrofuryl shifts the PGI2 dose-response curve, without providing any numeric PD parameters or concentration-effect data for naftidrofuryl itself. |
-| popPK | Platt_1984 | relevant | 8 | 2 | The paper is a PK study of naftidrofuryl reporting qualitative changes in half-life, but specific numeric parameter values are not present in the provided evidence. |
+| popPK | Platt_1984 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (half-life) for naftidrofuryl in humans, but specific numeric values are not present in the provided abstract text. |
 | popPK | Roath_1989 | irrelevant | 0 | 0 | The paper is a clinical review of Raynaud's phenomenon management that mentions naftidrofuryl only as a therapeutic option without reporting any pharmacokinetic parameters. |
 | PD | Roath_1989 | not_relevant | 1 | 0 | The text is a general review of Raynaud's phenomenon management that mentions naftidrofuryl qualitatively but provides no pharmacokinetic data, dose-response curves, or numeric PD parameters. |
 | popPK | Spengel_1999 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focusing on quality of life outcomes and contains no pharmacokinetic parameters or disposition data for naftidrofuryl. |
 | PD | Spengel_1999 | not_relevant | 0 | 0 | The paper reports a clinical trial outcome (quality of life scores) comparing a fixed dose to placebo, but it does not report any pharmacokinetic data, exposure-response analysis, or numeric PD parameters. |
-| popPK | Steinmann_1990 | irrelevant | 0 | 0 | The study measures the effect of naftidrofuryl on indocyanine green (ICG) clearance, not the pharmacokinetic parameters of naftidrofuryl itself. |
-| popPK | Vashisht_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contractility and does not report any pharmacokinetic parameters for naftidrofuryl. |
+| popPK | Steinmann_1990 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of indocyanine green (ICG) as a probe, not naftidrofuryl, which is the drug being administered. |
+| popPK | Vashisht_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contractility, not a pharmacokinetic study, and reports no disposition parameters. |
 | popPK | Ward_1987 | irrelevant | 0 | 0 | The paper is a review of pentoxifylline, and naftidrofuryl is only mentioned as a comparator drug without any pharmacokinetic data. |
 | PD | Ward_1987 | not_relevant | 0 | 0 | The paper is a review of pentoxifylline and only mentions naftidrofuryl as a comparative drug without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for it. |
 | popPK | Yesavage_1982 | irrelevant | 0 | 0 | The study reports metabolic effects (lactate/pyruvate ratio) in CSF, not pharmacokinetic disposition parameters for naftidrofuryl. |

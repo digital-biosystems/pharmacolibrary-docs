@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;potassium canrenoate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/&quot;},{&quot;label&quot;:&quot;Suyagh_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_two_experimentally_determined&quot;,&quot;label&quot;:&quot;Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # potassium canrenoate — `PotassiumCanrenoate_Suyagh2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,9 +21,11 @@
 
 The record reports canrenone CL/F of 1.11 l/h, V/F of 20.48 l and a terminal half-life of 19.99 h, but the absorption rate constant ka is not reported in the source, so a library default would have been used for it and for Tlag. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. The record was built from the paper's abstract alone, so summary statistics stood in for a fitted model. A second reader disagreed on the dosed compound (unknown vs potassium canrenoate) and the primary analyte, and returned conflicting null and non-null values for CL/F and V/F (12.86 l/h and 603.3 l vs 1.11 l/h and 20.48 l). Extracted — canrenone: CL/F 1.11 l/h, V/F 20.5 l, t1/2z 20 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of estimated half-life of canrenone based on dbs concentrations: this record has 19.99, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:41.226004+00:00) predates the upstream re-run (2026-10-06 18:31:24.968094+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `potassium canrenoate`, measured `canrenone`.
 
@@ -32,20 +34,18 @@ Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hyperten
   ·  DOI: [10.1097/HJH.0b013e3283626994](https://doi.org/10.1097/HJH.0b013e3283626994)
 
 ## Model component
-<dbs-pgx drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2013_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2013_reference" status="extracted" stale="true" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 1.11 | l/h | 3.083333333333334e-07 | [l] / [h] | not captured | exact (1.0) | Suyagh_2013:abstract, Suyagh_2013:abstract, Suyagh_2013:abstract | — | not captured |
-| V/F | `Q76` · V/F | 20.48 | l | 0.02048 | [l] | not captured | exact (1.0) | Suyagh_2013:abstract, Suyagh_2013:abstract | — | not captured |
+| CL/F | `Q351` · CLm/F | 1.11 | l/h | 3.083333333333334e-07 | [l] / [h] | not captured | exact (1.0) | Suyagh_2013:abstract, Suyagh_2013:abstract, Suyagh_2013:abstract | — | not captured |
+| V/F | `Q367` · Vm/F | 20.48 | l | 0.02048 | [l] | not captured | exact (1.0) | Suyagh_2013:abstract, Suyagh_2013:abstract | — | not captured |
 | Estimated half-life of canrenone based on DBS concentrations | `Q57` · t1/2z | 19.99 | h | 71964.0 | [h] | not captured | llm (0.6) | Suyagh_2013:abstract | — | not captured |
 
 <details class="legend">
@@ -63,6 +63,8 @@ Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hyperten
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('Estimated half-life of canrenone based on matched plasma concentrations', value 19.37) — already have one for this compound
+- metabolite canrenone: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite canrenone: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=canrenone
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role
@@ -73,24 +75,19 @@ Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hyperten
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 12.86 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 1.11 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[estimated half-life of canrenone based on dbs concentrations]` | 19.99 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | not captured | 603.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 20.48 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | potassium canrenoate | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | canrenone | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[half-life]` | not captured | 19.99 | only_one_extracted |
 
 </details>
 
@@ -107,13 +104,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Suyagh_2013:abstract', 'Suyagh_2013:abstract', 'Suyagh_2013:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Suyagh_2013:abstract', 'Suyagh_2013:abstract', 'Suyagh_2013:abstract'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Suyagh_2013:abstract', 'Suyagh_2013:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Suyagh_2013:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Suyagh_2013:abstract', 'Suyagh_2013:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.11 L/h | not captured | not captured | ['Suyagh_2013:abstract', 'Suyagh_2013:abstract', 'Suyagh_2013:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 20.5 L | not captured | not captured | ['Suyagh_2013:abstract', 'Suyagh_2013:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -146,7 +141,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_modelica.zip" download>PotassiumCanrenoate_Suyagh2013_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_modelica.zip" download>PotassiumCanrenoate_Suyagh2013_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_fmi.zip" download>PotassiumCanrenoate_Suyagh2013_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_matlab.zip" download>PotassiumCanrenoate_Suyagh2013_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_matlab_simbio.zip" download>PotassiumCanrenoate_Suyagh2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -168,4 +163,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 12:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 18:31 UTC</sub>

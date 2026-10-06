@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;bosentan&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/&quot;},{&quot;label&quot;:&quot;Taguchi_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bosentan_FergusonSells2022_reference&quot;,&quot;label&quot;:&quot;Ferguson-Sells_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_FergusonSells2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bosentan_FergusonSells2022_reference&quot;,&quot;label&quot;:&quot;Ferguson-Sells_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_FergusonSells2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bosentan_Miura2026_reference&quot;,&quot;label&quot;:&quot;Miura_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_Miura2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bosentan_Nahar2023_reference&quot;,&quot;label&quot;:&quot;Nahar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bosentan/Bosentan_Nahar2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bosentan — `Bosentan_Taguchi2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,24 +21,26 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model; only kel (0.175 h^-1) and V/F (77.0 L) were extracted, while CL/F had no value. The absorption rate constant was not reported in the source, and the builder defaulted ka and Tlag, which was judged an invented absorption input and not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input for extravascular dosing. A second reader disagreed on whether bosentan is the dose compound and primary analyte, and on whether the k value of 0.175 belongs to the record. Extracted — bosentan: kel 0.175 h(-1), V/F 77 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bosentan, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:20.288434+00:00) predates the upstream re-run (2026-10-06 15:10:16.992388+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Taguchi M et al., Pharmacokinetics of bosentan in routine…, Drug metabolism and pharmac… (2011)
   ·  DOI: [10.2133/dmpk.DMPK-10-RG-113](https://doi.org/10.2133/dmpk.DMPK-10-RG-113)
 
 ## Model component
-<dbs-pgx drug="bosentan" model-id="Bosentan_Taguchi2011_reference" status="model_quarantined" stale="false" population="Japanese pediatric patients with pulmonary arterial hypertension" measured-compound="bosentan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bosentan" model-id="Bosentan_Taguchi2011_reference" status="needs_review" stale="true" population="Japanese pediatric patients with pulmonary arterial hypertension" measured-compound="bosentan" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -69,25 +71,14 @@ Taguchi M et al., Pharmacokinetics of bosentan in routine…, Drug metabolism an
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>6 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k]` | 0.175 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k]` | not captured | 0.175 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | bosentan | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | bosentan | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -155,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 01:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:10 UTC</sub>

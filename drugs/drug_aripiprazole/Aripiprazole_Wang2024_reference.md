@@ -32,7 +32,7 @@ Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology 
 <dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2024_reference" status="rejected" stale="false" population="adults with schizophrenia or bipolar I disorder" measured-compound="aripiprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,6 +42,7 @@ Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | AOM 400 | `Q40` · Fab | 400 | mg | not captured | [mg] | not captured | llm (0.5) | fig_0:caption | — | not captured |
+| volume of distribution | `Q61` · V | 4.9 | L/kg | 0.343 | L | not captured | review_gapfill (0.7) | Prommer_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,6 +65,9 @@ Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology 
 - dropped value-less row: 'Vp 1 /F'
 - dropped value-less row: 'Vp 2 /F'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aripiprazole
+- gap-filled Q61 (V) from Prommer_2017's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 ## Validation
 
@@ -93,8 +97,10 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Prommer_2017:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 343 L | not captured | not captured | ['Prommer_2017:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

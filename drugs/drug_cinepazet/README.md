@@ -18,7 +18,7 @@ Cinepazet is a vasodilator that was classified for use in cardiac diseases. It i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:30 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 1,592/143 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 09:57 | 0:05 | 0/0/0 | 0/0/0 | 0/0/0 | 1,592/143 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

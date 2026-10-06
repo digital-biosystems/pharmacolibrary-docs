@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Wang_2019 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daunorubicin — `Daunorubicin_Wang2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,14 +25,16 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `CPX-351`, measured `cytarabine`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:07.110016+00:00) predates the upstream re-run (2026-10-06 16:52:39.066239+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `CPX-351 (cytarabine and daunorubicin)`, measured `daunorubicin`.
 
 ## Citation
 Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366)
 
 ## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Wang2019_reference" status="rejected" stale="false" population="adults with hematologic malignancies" measured-compound="cytarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Wang2019_reference" status="rejected" stale="true" population="adults with hematologic malignancies" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -43,36 +46,34 @@ Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical p
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL, L/h | Q22 | not captured | exact |
+| Vc, L | Q63 | not captured | exact |
+| Q, L/h | Q30 | not captured | exact |
+| Vp, L | Q64 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'ECOG PS' — extend the ontology if this is a real PK parameter (source ['tab_3:row3:col1', 'tab_3:row3:col4'])
-- dropped unlinked row (NIL): 'Platelet category' — extend the ontology if this is a real PK parameter (source ['tab_3:row8:col1', 'tab_3:row8:col4'])
-- dropped unlinked row (NIL): 'Treatment quartile' — extend the ontology if this is a real PK parameter (source ['tab_3:row10:col4', 'tab_3:row20:col4'])
-- dropped unlinked row (NIL): 'WBC category' — extend the ontology if this is a real PK parameter (source ['tab_3:row18:col1', 'tab_3:row18:col4'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cytarabine
+- column 'total daunorubicin' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daunorubicin
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- model equation 'θi = θ× exp (ηi)where θ' not bound — neither LHS nor base term 'θ' linked to an ontology parameter
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell tab_3:row1:col3 = '(95%CI)'
-- unparsed cell tab_3:row3:col2 = '64/262 (24.4)'
-- unparsed cell tab_3:row3:col3 = '0.429 (0.249-0.738)'
-- unparsed cell tab_3:row6:col2 = '122/262 (46.6)'
-- unparsed cell tab_3:row6:col3 = '0.482 (0.340-0.682)'
-- unparsed cell tab_3:row6:col4 = '&lt;.0001'
-- unparsed cell tab_3:row8:col2 = '162/262 (61.8)'
-- unparsed cell tab_3:row8:col3 = '1.460 (1.039-2.052)'
-- unparsed cell tab_3:row10:col1 = 'Q1'
-- unparsed cell tab_3:row10:col2 = '32/262 (12.2)'
-- unparsed cell tab_3:row10:col3 = '0.482 (0.280-0.828)'
-- unparsed cell tab_3:row16:col2 = '122/263 (46.4)'
-- unparsed cell tab_3:row16:col3 = '0.485 (0.354-0.665)'
-- unparsed cell tab_3:row16:col4 = '&lt;.0001'
-- unparsed cell tab_3:row18:col2 = '227/263 (86.3)'
-- unparsed cell tab_3:row18:col3 = '0.459 (0.298-0.706)'
-- unparsed cell tab_3:row20:col1 = 'Q1'
-- unparsed cell tab_3:row20:col2 = '32/263 (12.2)'
-- unparsed cell tab_3:row20:col3 = '0.697 (0.440-1.104)'
-- LLM region Wang_2019:discussion_prose: no JSON records returned
+- unparsed cell Wang_2019_table_2:row1:col2 = '61.0%'
+- unparsed cell Wang_2019_table_2:row1:col4 = '49.3%'
+- unparsed cell Wang_2019_table_2:row2:col2 = '24.7%'
+- unparsed cell Wang_2019_table_2:row2:col4 = '23.7%'
+- unparsed cell Wang_2019_table_2:row3:col4 = '69.3%'
+- unparsed cell Wang_2019_table_2:row4:col4 = '86.9%'
+- companion parameter table 2 transcribed (8 record(s))
+- LLM selected parameter table(s) 2, 3
+- LLM region Wang_2019:results_prose: no JSON records returned
+- captured model equation θi = θ× exp (ηi)where θ
 
 ## Validation
 
@@ -97,6 +98,10 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2019_table_2:row1:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2019_table_2:row3:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2019_table_2:row2:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2019_table_2:row4:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -122,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:52 UTC</sub>

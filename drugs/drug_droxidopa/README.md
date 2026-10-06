@@ -18,7 +18,7 @@ Droxidopa, a synthetic amino acid that the body converts into norepinephrine, is
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 18:00 | 3:56 | 0/0/0 | 1/0/0 | 0/0/0 | 147,349/2,470 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/8 | 4/0 | 0 |
+| 2026-10-06 08:55 | 2:01 | 0/0/0 | 0/0/1 | 0/0/0 | 54,180/1,305 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/9 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kanodia_2021_norepinephrine_transporter_occupancy](drugs/drug_droxidopa/pd_Kanodia_2021_norepinephrine_transporter_occupancy.md) | name ← ampreloxetine · direct Emax (saturable) effect | — | Kanodia J et al., Pharmacokinetics of Ampreloxetine, a No…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00918-7](https://doi.org/10.1007/s40262-020-00918-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [White_2018_QTcI](drugs/drug_droxidopa/pd_White_2018_QTcI.md) | QTcI ← droxidopa · direct linear effect | — | White WB et al., Impact of the Norepinephrine Prodrug Dr…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.393](https://doi.org/10.1002/cpdd.393) |
 
 ## ADME sites
 
@@ -48,10 +48,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 25 matched, 19 returned
+- **PubMed hits:** 26 matched, 20 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
@@ -59,28 +59,29 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|---|---|
 | PGx | Abrahamsen_2005 | not_relevant | 0 | 0 | The paper investigates the effect of MTHFR genotype on bone mineral density (BMD) and fracture risk, not on the pharmacokinetics or pharmacodynamics of droxidopa. |
 | PGx | Ando_1995 | not_relevant | 0 | 0 | The paper discusses the clinical management of FAP and the use of L-threo-DOPS (droxidopa) for autonomic symptoms, but it does not report any pharmacogenomic effects or genetic variants influencing the drug's PK or PD parameters. |
-| popPK | Castillo-Mancilla_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of atazanavir, not droxidopa. |
+| popPK | Castillo-Mancilla_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atazanavir, not droxidopa. |
 | PD | Castillo-Mancilla_2016 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenetics of atazanavir (PK parameters like CL/F and C24) and does not involve droxidopa or report any pharmacodynamic (PD) or exposure-response relationships. |
 | popPK | Cha_1991 | irrelevant | 0 | 0 | The paper studies the neurotoxic mechanism of 6-hydroxy-DOPA (a different compound) in rat brain and does not report pharmacokinetic parameters for droxidopa. |
 | PD | Cha_1991 | not_relevant | 0 | 0 | The paper studies 6-hydroxy-DOPA (TOPA), not droxidopa, and reports in vitro binding data (IC50) rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | PGx | Cheshire_2019 | not_relevant | 0 | 0 | The paper is a general review of pharmacotherapy for orthostatic hypotension and does not report specific pharmacogenomic effects on droxidopa PK/PD parameters. |
-| popPK | Cummings_2022 | irrelevant | 0 | 0 | The paper is a review of basket trial designs in neurodegenerative disorders and does not report any quantitative pharmacokinetic parameters for droxidopa. |
+| popPK | Cummings_2022 | irrelevant | 0 | 0 | The paper is a review of basket trial designs in neurodegenerative disorders and contains no pharmacokinetic data or parameters for droxidopa. |
 | PD | Cummings_2022 | not_relevant | 0 | 0 | The paper is a review of clinical trial designs (basket trials) for neurodegenerative disorders and does not report any pharmacokinetic or pharmacodynamic data, models, or parameters for droxidopa or any other drug. |
 | PGx | Egle_2008 | not_relevant | 0 | 0 | The paper focuses on gene delivery systems for TPMT and thiopurine drugs, not droxidopa. |
 | PGx | Kaler_2026 | not_relevant | 0 | 0 | The paper reports the efficacy of droxidopa in patients with ATP7A variants (Menkes/OHS) but does not report how a gene variant affects the PK or PD parameters of droxidopa itself (e.g., it does not compare droxidopa's metabolism or response in ATP7A variants vs. wild-type controls). |
-| popPK | Kanodia_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ampreloxetine, not droxidopa, which is only mentioned as a comparator drug. |
+| popPK | Kanodia_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ampreloxetine, not droxidopa (which is only mentioned as a comparator). |
 | PD | Kanodia_2021 | not_relevant | 4 | 4 | The paper is about ampreloxetine, not droxidopa, and while it reports a PD simulation using an IC50, it does not contain data for the requested drug. |
-| popPK | Li_2025 | irrelevant | 0 | 0 | The paper is a computational study on network pharmacology for Traditional Chinese Medicine and does not contain any pharmacokinetic data for droxidopa. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The paper describes a computational model for drug efficacy prediction in traditional Chinese medicine and does not contain any pharmacokinetic data for droxidopa. |
 | PD | Li_2025 | not_relevant | 0 | 0 | The paper describes a network-based computational model (Meta-DEP) for predicting drug efficacy in Traditional Chinese Medicine and does not contain any pharmacokinetic or pharmacodynamic data, exposure-response analysis, or numeric PD parameters for droxidopa. |
-| popPK | Sagar_2017 | irrelevant | 0 | 0 | The paper describes a mathematical model of the human complement system (C3a/C5a) and does not study the pharmacokinetics of droxidopa. |
+| popPK | Sagar_2017 | irrelevant | 0 | 0 | The paper describes a mathematical model of the human complement system and does not involve the drug droxidopa or its pharmacokinetics. |
 | PD | Sagar_2017 | not_relevant | 0 | 0 | The paper models the human complement system using ODEs and does not involve the drug droxidopa or report any pharmacodynamic parameters for it. |
-| popPK | Tang_2023 | irrelevant | 0 | 0 | The paper studies Dendrobium officinale polysaccharides and oxidative stress in C. elegans, and does not involve the drug droxidopa or its pharmacokinetics. |
+| popPK | Sordo_2026 | irrelevant | 0 | 0 | The paper is a scoping review of mathematical models of the complement system and does not contain any pharmacokinetic data for droxidopa. |
+| popPK | Tang_2023 | irrelevant | 0 | 0 | The paper studies the antioxidant effects of D. officinale polysaccharides in C. elegans and does not involve the drug droxidopa or its pharmacokinetics. |
 | PD | Tang_2023 | not_relevant | 0 | 0 | The paper studies Dendrobium officinale Polysaccharides (DOPs), not the drug droxidopa. |
 | PGx | Vincent_2002 | not_relevant | 0 | 0 | The paper discusses DBH deficiency and orthostatic intolerance but does not report pharmacogenomic effects on the PK or PD of droxidopa. |
 | popPK | White_2018 | relevant | 4 | 5 | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for droxidopa, but lacks compartmental model parameters (CL, V, Q) and the specific numeric values for t1/2 and tmax are only described qualitatively in the text rather than listed in a table. |
 | popPK | Yamamoto_1988 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats involving serotonin antagonists and L-threo-DOPS, with no pharmacokinetic analysis or data for droxidopa. |
 | PD | Yamamoto_1988 | not_relevant | 0 | 0 | The paper studies muricide in rats using serotonin antagonists and methamphetamine; it does not mention droxidopa or report any pharmacodynamic parameters for it. |
-| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a medical education study on peer-assisted learning and contains no pharmacokinetic data or mention of droxidopa. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a medical education study on peer-assisted learning and contains no pharmacokinetic data for droxidopa. |
 | popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, analysis, or mention of droxidopa pharmacodynamics. |
 | PGx | van_2018 | not_relevant | 0 | 0 | The paper describes a genetic cause of orthostatic hypotension (CYB561 mutations) and does not mention droxidopa or its pharmacokinetics/pharmacodynamics. |

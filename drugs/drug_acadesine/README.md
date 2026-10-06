@@ -18,19 +18,11 @@ Acadesine is an investigational heart medication studied for cardiac conditions.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 03:46 | 1:06 | 0/0/0 | 1/0/0 | 0/0/0 | 1,670/164 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 1/1 | 0 |
+| 2026-10-06 11:00 | 1:26 | 0/0/0 | 0/0/0 | 0/0/0 | 52,952/995 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 2/1 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Galiñanes_1992_CK](drugs/drug_acadesine/pd_Gali_anes_1992_CK.md) | creatine kinase leakage ← acadesine · stimulation effect | — | Galiñanes M et al., Acadesine and myocardial protection. St…, Circulation (1992) | [10.1161/01.cir.86.2.598](https://doi.org/10.1161/01.cir.86.2.598) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Galiñanes_1992_IMP](drugs/drug_acadesine/pd_Gali_anes_1992_IMP.md) | tissue inosine monophosphate content ← acadesine · stimulation effect | — | Galiñanes M et al., Acadesine and myocardial protection. St…, Circulation (1992) | [10.1161/01.cir.86.2.598](https://doi.org/10.1161/01.cir.86.2.598) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Galiñanes_1992_postischemic_recovery_of_aortic_flow](drugs/drug_acadesine/pd_Gali_anes_1992_postischemic_recovery_of_aortic_flow.md) | postischemic recovery of aortic flow ← acadesine · stimulation effect | — | Galiñanes M et al., Acadesine and myocardial protection. St…, Circulation (1992) | [10.1161/01.cir.86.2.598](https://doi.org/10.1161/01.cir.86.2.598) |
 
 ## ADME sites
 
@@ -60,9 +52,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dixon_1993.pdf` | Dixon R et al., Acadesine (AICA-riboside): disposition…, Journal of clinical pharmac… (1993) | popPK | 9 | [10.1002/j.1552-4604.1993.tb01929.x](https://doi.org/10.1002/j.1552-4604.1993.tb01929.x) | [8227467](https://pubmed.ncbi.nlm.nih.gov/8227467) | The abstract reports quantitative disposition parameters for acadesine, including total plasma clearance (2.2 L/hour/kg) and terminal half-life (~1 week). |
+| `Dixon_1993.pdf` | Dixon R et al., Acadesine (AICA-riboside): disposition…, Journal of clinical pharmac… (1993) | popPK | 9 | [10.1002/j.1552-4604.1993.tb01929.x](https://doi.org/10.1002/j.1552-4604.1993.tb01929.x) | [8227467](https://pubmed.ncbi.nlm.nih.gov/8227467) | The abstract reports quantitative disposition parameters including total plasma clearance (2.2 L/hour/kg) and terminal half-life for acadesine in humans. |
 
-<sub>queue written 2026-09-30T03:46:16.211748+00:00</sub>
+<sub>queue written 2026-10-06T10:59:49.646730+00:00</sub>
 
 ## Screened and excluded
 
@@ -70,20 +62,20 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Antonioli_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic efficacy of a novel compound (FA-5) compared to acadesine in a colitis model, without reporting any quantitative pharmacokinetic parameters for acadesine. |
 | PD | Antonioli_2021 | not_relevant | 1 | 0 | The paper describes qualitative efficacy comparisons between FA-5 and acadesine in a colitis model but does not report any numeric concentration-effect or dose-response parameters for acadesine. |
-| popPK | Bullough_1993 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro/isolated heart experiment assessing cardioprotective effects and radical scavenging, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Bullough_1993 | irrelevant | 0 | 0 | The study is an in-vitro/isolated organ mechanistic study assessing cardioprotective effects and radical scavenging, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Bullough_1995 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell adhesion and reports IC50 values for biological activity, not pharmacokinetic disposition parameters. |
-| popPK | Campàs_2003 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study focusing on apoptosis and AMPK activation, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Cheng_2013 | irrelevant | 0 | 0 | The study investigates AICA riboside (not acadesine) as the subject drug. |
+| popPK | Campàs_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of apoptosis and AMPK activation, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Cheng_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of AICA riboside, not acadesine. |
 | popPK | Cheng_2013_2 | irrelevant | 0 | 0 | The study investigates AICA riboside, not acadesine. |
-| popPK | Cronstein_1991 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on adenosine release and neutrophil function, not a pharmacokinetic study, and acadesine is only mentioned as a precursor compound. |
-| PGx | Deiman_2026 | not_relevant | 0 | 0 | The paper investigates the association between a genetic variant and disease progression markers, where acadesine is mentioned only as a metabolite, not as a drug subject to pharmacogenomic analysis. |
-| popPK | Dixon_1989 | irrelevant | 0 | 0 | The paper concerns AICA-riboside, not acadesine, and is a method development study without PK parameters for the target drug. |
+| popPK | Cronstein_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adenosine release and neutrophil function, not a pharmacokinetic study of acadesine. |
+| PGx | Deiman_2026 | not_relevant | 0 | 0 | The paper investigates the association between a genetic variant and disease progression using metabolomics, where acadesine is identified as a biomarker, but it does not report a pharmacokinetic or pharmacodynamic effect of a drug. |
+| popPK | Dixon_1989 | irrelevant | 0 | 0 | The study focuses on AICA-riboside, not acadesine, and provides no pharmacokinetic parameters for the target drug. |
 | popPK | Dixon_1991 | irrelevant | 0 | 0 | The study investigates AICA-riboside, not acadesine. |
-| popPK | Galiñanes_1992 | irrelevant | 0 | 0 | The study is a mechanistic investigation of cardioprotection and metabolic effects in an isolated rat heart model, reporting functional recovery and metabolite concentrations rather than pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Galiñanes_1992 | irrelevant | 0 | 0 | The study is a functional and metabolic analysis of cardioprotection in rat hearts, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for acadesine. |
 | PGx | Gong_1993 | not_relevant | 0 | 0 | The paper studies the effect of AICA riboside on ddI metabolism and activity, not a pharmacogenomic effect on acadesine. |
 | PGx | Park_2024 | not_relevant | 0 | 0 | The paper discusses a metabolic disorder (AICA ribosiduria) and dietary treatment, not the pharmacogenomics of the drug acadesine. |
 | popPK | Wu_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cell proliferation and does not report any pharmacokinetic parameters for acadesine. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper is a metabolomic and genetic study on purine metabolism in kidney disease and does not report pharmacokinetic parameters for acadesine. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper is a metabolomic and transcriptomic study of purine metabolism in AKI/CKD, not a pharmacokinetic study of acadesine. |
 | PD | Zhang_2026 | not_relevant | 0 | 0 | The paper focuses on metabolomic signatures and genetic associations in kidney disease, not on the pharmacodynamics of acadesine. |
 
 ---

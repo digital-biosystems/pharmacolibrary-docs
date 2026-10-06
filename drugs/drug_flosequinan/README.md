@@ -18,7 +18,7 @@ Flosequinan is a vasodilator that was used to treat heart failure. It has been w
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:37 | 1:40 | 0/0/0 | 0/0/0 | 0/0/0 | 35,225/2,004 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 10:03 | 1:41 | 0/0/0 | 0/0/0 | 0/0/0 | 35,225/2,004 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -53,7 +53,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Frodsham_1992.pdf` | Frodsham G et al., Effect of flosequinan upon isoenzymes o…, European journal of pharmac… (1992) | pd | 5 | [10.1016/0014-2999(92)90396-l](https://doi.org/10.1016/0014-2999(92)90396-l) | [1319914](https://www.ncbi.nlm.nih.gov/pubmed/1319914) | metadata signals extractable PD data (IC50) |
 | `Starling_1994.pdf` | Starling MR, Effects of low-dose flosequinan on left…, American heart journal (1994) | pd | 4 | [10.1016/0002-8703(94)90018-3](https://doi.org/10.1016/0002-8703(94)90018-3) | [8017265](https://www.ncbi.nlm.nih.gov/pubmed/8017265) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-06T08:37:01.398764+00:00</sub>
+<sub>queue written 2026-10-06T10:03:21.394675+00:00</sub>
 
 ## Screened and excluded
 

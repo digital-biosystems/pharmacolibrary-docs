@@ -14,26 +14,25 @@ Phenylephrine is a decongestant and vasoconstrictor used for conditions such as 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q421910](https://www.wikidata.org/wiki/Q421910) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| phenylephrine | parent | 167.205 | C9H13NO2 | DrugBank | [6041](https://pubchem.ncbi.nlm.nih.gov/compound/6041) | Anderson_2017 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 21:27 | 15:22 | 0/1/0 | 2/1/0 | 0/0/2 | 158,818/9,343 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/12 | 13/0 | 0 |
+| 2026-10-06 10:13 | 8:52 | 0/0/1 | 0/0/0 | 0/0/2 | 201,310/17,998 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/12 | 13/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_children and adults](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md) | — | — (no model) | 0 | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Hu_2025_human_prostate_smooth_muscle_contraction](drugs/drug_phenylephrine/pd_Hu_2025_human_prostate_smooth_muscle_contraction.md) | name ← verapamil · direct Emax (saturable) effect | — | Hu S et al., Antagonism of prostate α, The Journal of pharmacology… (2025) | [10.1016/j.jpet.2025.103603](https://doi.org/10.1016/j.jpet.2025.103603) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Panta_2019_vascular_tone](drugs/drug_phenylephrine/pd_Panta_2019_vascular_tone.md) | name ← sphingosine-1-phosphate · direct Emax (saturable) effect | — | Panta CR et al., Sphingosine-1-Phosphate Enhances α, International journal of mo… (2019) | [10.3390/ijms20246361](https://doi.org/10.3390/ijms20246361) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Choi_2024_maximum_normalized_constriction](drugs/drug_phenylephrine/pd_Choi_2024_maximum_normalized_constriction.md) | name ← unknown · model not identified | — | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Choi_2024_maximum_normalized_relaxation](drugs/drug_phenylephrine/pd_Choi_2024_maximum_normalized_relaxation.md) | name ← unknown · model not identified | — | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_children and adults](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_reference.md) | — | 2-compartment (no model) | 7 | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
 
 ## Pharmacogenomics (PGx)
 
@@ -73,7 +72,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 946 matched, 50 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -82,15 +81,15 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Anderson_2017.pdf` | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | popPK | 10 | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) | [28868789](https://pubmed.ncbi.nlm.nih.gov/28868789) | The paper reports a population PK model for phenylephrine with explicit numeric values for clearance, volumes, intercompartmental clearance, and absorption parameters in the text. |
-| `Seliniotaki_2025.pdf` | Seliniotaki AK et al., Efficacy and Safety of Mydriatic Microd…, JAMA ophthalmology (2025) | popPK | 9 | [10.1001/jamaophthalmol.2024.5462](https://doi.org/10.1001/jamaophthalmol.2024.5462) | [39724200](https://pubmed.ncbi.nlm.nih.gov/39724200) | The study reports a 1-compartment PK model for phenylephrine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
+| `Anderson_2017.pdf` | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | popPK | 10 | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) | [28868789](https://pubmed.ncbi.nlm.nih.gov/28868789) | The paper reports a population PK-PD model for phenylephrine with explicit numeric values for clearance, volume, intercompartmental clearance, and absorption parameters. |
+| `Seliniotaki_2025.pdf` | Seliniotaki AK et al., Efficacy and Safety of Mydriatic Microd…, JAMA ophthalmology (2025) | popPK | 8 | [10.1001/jamaophthalmol.2024.5462](https://doi.org/10.1001/jamaophthalmol.2024.5462) | [39724200](https://pubmed.ncbi.nlm.nih.gov/39724200) | The study reports a 1-compartment PK model for phenylephrine in preterm infants, but the specific numeric parameter values (CL, V, ka) are not present in the provided text. |
 | `Huber_1998.pdf` | Huber TB et al., Catecholamines modulate podocyte functi…, Journal of the American Soc… (1998) | pd | 5 | [10.1681/ASN.V93335](https://doi.org/10.1681/ASN.V93335) | [9513895](https://www.ncbi.nlm.nih.gov/pubmed/9513895) | metadata signals extractable PD data (EC50) |
 | `Morris_2007.pdf` | Morris RW et al., "Orpheus" cardiopulmonary bypass simula…, The journal of extra-corpor… (2007) | pd | 5 | not captured | [18293807](https://www.ncbi.nlm.nih.gov/pubmed/18293807) | metadata signals extractable PD data (effectcompartment) |
 | `Bellissant_2000.pdf` | Bellissant E et al., Effect of hydrocortisone on phenylephri…, Clinical pharmacology and t… (2000) | pd | 4 | [10.1067/mcp.2000.109354](https://doi.org/10.1067/mcp.2000.109354) | [11014411](https://www.ncbi.nlm.nih.gov/pubmed/11014411) | metadata signals extractable PD data (sigmoid) |
 | `McIntyre_1996.pdf` | McIntyre RC et al., Pulmonary vascular smooth muscle contra…, The Journal of surgical res… (1996) | pd | 4 | [10.1006/jsre.1996.0100](https://doi.org/10.1006/jsre.1996.0100) | [8769962](https://www.ncbi.nlm.nih.gov/pubmed/8769962) | metadata signals extractable PD data (EC50) |
 | `Morais_2019.pdf` | Morais ICPS et al., Cardiovascular Effect of Diosgenin in O…, Journal of medicinal food (2019) | pd | 4 | [10.1089/jmf.2018.0019](https://doi.org/10.1089/jmf.2018.0019) | [30735081](https://www.ncbi.nlm.nih.gov/pubmed/30735081) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-09T21:21:54.258964+00:00</sub>
+<sub>queue written 2026-10-06T10:05:51.852690+00:00</sub>
 
 ## Screened and excluded
 
@@ -99,51 +98,50 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Angus_1982 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of verapamil on coronary artery constriction in dogs and does not report any pharmacogenomic effects on phenylephrine. |
 | PGx | Aninat_2008 | not_relevant | 0 | 0 | The study investigates the effect of catecholamines on hepatocyte inflammation and CYP3A4 expression in vitro, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of phenylephrine. |
 | PGx | Bairam_2019 | not_relevant | 5 | 8 | The study reports in vitro enzymatic kinetics (Km, Vmax) of SULT1A3 allozymes, not in vivo pharmacokinetic or pharmacodynamic parameters in humans. |
-| popPK | Bellissant_2000 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic dose-response relationship (mean arterial pressure) rather than pharmacokinetic disposition parameters. |
+| popPK | Bellissant_2000 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
 | PGx | Benedetti_2001 | not_relevant | 0 | 0 | The paper is a general review on amine oxidases and mentions phenylephrine only as an example of a potential drug interaction, without reporting any specific pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Bilgen_2003 | not_relevant | 0 | 0 | The paper studies cadmium-induced endothelial dysfunction and does not report any pharmacogenomic effects (gene variants) on phenylephrine PK or PD parameters. |
 | PGx | Bonaventura_2011 | not_relevant | 0 | 0 | The study investigates vascular reactivity in hypertensive rat models, not the effect of human gene variants on phenylephrine pharmacokinetics or pharmacodynamics. |
-| popPK | Choi_2024 | irrelevant | 0 | 0 | The study is an in-vitro wire myography experiment using phenylephrine as a vasoconstrictor agent to test vascular reactivity, not a pharmacokinetic study reporting disposition parameters. |
-| PGx | Costa_2019 | not_relevant | 0 | 0 | The study investigates the effect of estrogen therapy and aging on phenylephrine-induced vasoconstriction, not the effect of a gene variant on phenylephrine's pharmacokinetics or pharmacodynamics. |
-| PGx | Cupitra_2020 | not_relevant | 0 | 0 | The study investigates the effect of ageing on vascular reactivity and receptor expression in rabbits, not the effect of a gene variant/genotype on pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Cupitra_2023 | irrelevant | 0 | 0 | The study is a comparative vascular physiology/pharmacology analysis using organ bath assays, not a pharmacokinetic study, and reports no disposition parameters for phenylephrine. |
+| popPK | Choi_2024 | irrelevant | 0 | 0 | The study is an in-vitro wire myography protocol optimization using phenylephrine as a vasoconstrictor agent, not a pharmacokinetic study of phenylephrine disposition. |
+| PGx | Costa_2019 | not_relevant | 0 | 0 | The study investigates the effect of estrogen therapy and aging on phenylephrine-induced vascular contraction, not the effect of a specific gene variant on the pharmacokinetics or pharmacodynamics of phenylephrine. |
+| PGx | Cupitra_2020 | not_relevant | 0 | 0 | The study investigates the effect of ageing on vascular reactivity to phenylephrine in rabbits, not the effect of a gene variant or genotype. |
+| popPK | Cupitra_2023 | irrelevant | 0 | 0 | The study is a comparative vascular physiology/pharmacology study using phenylephrine as a contractile agonist in organ baths, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Donpunha_2011 | not_relevant | 0 | 0 | The study investigates the protective effect of ascorbic acid on cadmium-induced vascular dysfunction and does not report any pharmacogenomic effects (gene variants) on phenylephrine PK or PD parameters. |
 | PGx | Fiorim_2012 | not_relevant | 0 | 0 | The paper investigates the effect of lead exposure on vascular reactivity to phenylephrine, not the effect of a gene variant on phenylephrine pharmacokinetics or pharmacodynamics. |
-| PGx | Goswami_2016 | not_relevant | 0 | 0 | The paper studies the pharmacological effects of phloroglucinol and sildenafil in diabetic rats and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Hu_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of verapamil's antagonism of alpha-1 adrenoceptors using phenylephrine as a probe agonist, and it does not report any pharmacokinetic parameters for phenylephrine. |
-| popPK | Huber_1998 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on podocyte function, not a pharmacokinetic study of phenylephrine, and no PK parameters are present. |
+| PGx | Goswami_2016 | not_relevant | 0 | 0 | The paper studies the pharmacological interaction between phloroglucinol and sildenafil in diabetic rats, not the effect of a gene variant on phenylephrine PK/PD. |
+| popPK | Hu_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of verapamil's antagonism of alpha-adrenoceptors using phenylephrine as a tool compound, not a pharmacokinetic study of phenylephrine. |
+| popPK | Huber_1998 | irrelevant | 0 | 0 | no_text gate: only 41 chars of text extracted (&lt; 400) |
 | PD | Huber_1998 | not_relevant | 0 | 0 | The provided text is a title regarding catecholamines and podocyte function, with no content describing phenylephrine, PK/PD modeling, or numeric exposure-response parameters. |
-| PGx | Kaleli_2025 | not_relevant | 0 | 0 | The study investigates the vascular effects of sirolimus and everolimus on human saphenous veins and does not report any pharmacogenomic effects on phenylephrine. |
+| PGx | Kaleli_2025 | not_relevant | 0 | 0 | The study investigates the vascular effects of sirolimus and everolimus on human saphenous veins and does not report any pharmacogenomic effects on the PK or PD of phenylephrine. |
 | PGx | Kao_2023 | not_relevant | 0 | 0 | The paper describes a mathematical model for vasopressor therapy in pigs and does not report any pharmacogenomic effects or gene variants. |
 | PGx | Konstandi_2006 | not_relevant | 0 | 0 | The paper investigates the regulation of CYP1A2 expression by adrenergic signaling and does not report pharmacogenomic effects on phenylephrine's PK or PD parameters. |
-| popPK | Kubo_2023 | irrelevant | 0 | 0 | The study evaluates cerebral oxygenation changes using near-infrared spectroscopy and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for phenylephrine. |
-| PGx | Kumar_2024 | not_relevant | 1 | 0 | The paper reports a genetic association with blood pressure and vascular reactivity to phenylephrine in a mouse model, but does not report pharmacokinetic or pharmacodynamic parameters of phenylephrine as a drug. |
-| PGx | Landau_2011 | not_relevant | 0 | 0 | The study reports that phenylephrine dose was not affected by maternal ADRB2 or NOS3 genotypes, and no pharmacokinetic or pharmacodynamic parameters of phenylephrine were found to be altered by genotype. |
-| popPK | Lapointe_1991 | irrelevant | 0 | 0 | The study examines calcium kinetics in rat liver where phenylephrine is used as a hormonal stimulant, not as the subject drug for pharmacokinetic analysis. |
-| popPK | Lara_2020 | irrelevant | 0 | 0 | The study is an ophthalmology investigation into accommodation where phenylephrine is used solely as a mydriatic agent, and no pharmacokinetic parameters are reported. |
-| popPK | Li_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of crystalloid fluid (Ringer's lactate) in sheep, using phenylephrine only as a co-administered vasoactive agent to modify fluid distribution, rather than reporting PK parameters for phenylephrine itself. |
-| PGx | Liu_2018 | not_relevant | 0 | 0 | The paper investigates the cellular mechanism of NT-PGC-1α in mitigating phenylephrine-induced mitochondrial dysfunction in cardiomyocytes, not the effect of a gene variant on phenylephrine's pharmacokinetics or pharmacodynamics. |
+| popPK | Kubo_2023 | irrelevant | 0 | 0 | The study evaluates cerebral oxygenation changes using near-infrared spectroscopy and does not report any pharmacokinetic parameters (clearance, volume, half-life) for phenylephrine. |
+| PGx | Landau_2011 | not_relevant | 0 | 0 | The study reports that phenylephrine dose was not affected by maternal ADRB2 or NOS3 genotypes, and the significant pharmacogenomic effects found were on fetal acid-base status (a PD outcome) specifically for ephedrine, not phenylephrine. |
+| popPK | Lapointe_1991 | irrelevant | 0 | 0 | The study examines calcium kinetics in rat liver where phenylephrine is used as a hormonal stimulant, not as the subject drug for PK analysis. |
+| popPK | Lara_2020 | irrelevant | 0 | 0 | The study investigates the effect of retinal illuminance on accommodation, using phenylephrine only as a mydriatic agent to control pupil size, and reports no pharmacokinetic parameters. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of crystalloid fluid (Ringer's lactate) in sheep, using phenylephrine only as a vasoactive co-administered drug to test its effect on fluid distribution, not as the subject drug. |
+| PGx | Liu_2018 | not_relevant | 0 | 0 | The study investigates the cellular mechanism of NT-PGC-1α in mitigating phenylephrine-induced mitochondrial dysfunction in cardiomyocytes, not the pharmacokinetic or pharmacodynamic effects of phenylephrine based on genetic variants. |
 | PGx | Lynch_2020 | not_relevant | 0 | 0 | The paper investigates the vascular effects of crotonaldehyde exposure and the role of TRPA1, using phenylephrine only as a standard agonist for aortic contraction assays, rather than reporting a pharmacogenomic effect on phenylephrine's PK or PD parameters. |
-| popPK | Martišienė_2023 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of smooth muscle contraction where phenylephrine is used as a contractile agent, not a subject of pharmacokinetic analysis. |
-| popPK | McIntyre_1996 | irrelevant | 0 | 0 | The evidence provided is only a title fragment regarding smooth muscle contraction, containing no pharmacokinetic data or numeric parameters for phenylephrine. |
+| popPK | Martišienė_2023 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of smooth muscle contraction where phenylephrine is used as a contractile agent, not a subject of pharmacokinetic analysis. |
+| popPK | McIntyre_1996 | irrelevant | 0 | 0 | no_text gate: only 44 chars of text extracted (&lt; 400) |
 | PD | McIntyre_1996 | not_relevant | 0 | 0 | The provided text is a title fragment regarding pulmonary vascular smooth muscle contraction and contains no data, analysis, or mention of phenylephrine or any pharmacodynamic parameters. |
-| popPK | Monge_2017 | irrelevant | 0 | 0 | The study investigates hemodynamic effects (arterial elastance) of phenylephrine as a pharmacological tool, not its pharmacokinetic parameters. |
-| popPK | Morais_2019 | irrelevant | 0 | 0 | The paper focuses on the cardiovascular effects of diosgenin in rats and does not report pharmacokinetic parameters for phenylephrine. |
+| popPK | Monge_2017 | irrelevant | 0 | 0 | The study investigates hemodynamic parameters (arterial elastance) in rabbits using phenylephrine as a pharmacological tool to alter arterial load, rather than measuring phenylephrine's pharmacokinetic disposition parameters. |
+| popPK | Morais_2019 | irrelevant | 0 | 0 | no_text gate: only 57 chars of text extracted (&lt; 400) |
 | PD | Morais_2019 | not_relevant | 0 | 0 | The paper investigates the cardiovascular effects of diosgenin in rats, not phenylephrine, and does not report any exposure-response or dose-response relationship for phenylephrine. |
-| popPK | Morris_2007 | irrelevant | 0 | 0 | The paper describes a cardiopulmonary bypass simulation system and does not report pharmacokinetic parameters for phenylephrine. |
+| popPK | Morris_2007 | irrelevant | 0 | 0 | no_text gate: only 50 chars of text extracted (&lt; 400) |
 | PD | Morris_2007 | not_relevant | 0 | 0 | The paper describes a cardiopulmonary bypass simulation system and does not report any pharmacodynamic or exposure-response data for phenylephrine. |
-| PGx | Nielsen_2016 | not_relevant | 4 | 5 | The study reports an association between ADRB2 genotype and the *requirement* for vasopressors (phenylephrine/ephedrine) to maintain blood pressure, rather than a direct pharmacokinetic or pharmacodynamic parameter (e.g., EC50, clearance, or direct BP response to a fixed dose) of phenylephrine itself. |
+| PGx | Nielsen_2016 | not_relevant | 4 | 5 | The study reports an association between ADRB2 genotype and the *requirement* for vasopressors (phenylephrine/ephedrine) to maintain blood pressure, rather than a direct pharmacokinetic or pharmacodynamic parameter (e.g., EC50, AUC, clearance) of phenylephrine itself. |
 | PGx | Nwokocha_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of a plant extract and its CYP inhibition, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of phenylephrine. |
-| popPK | Panta_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular signaling pathways using phenylephrine as a tool compound, and it does not report any pharmacokinetic parameters. |
+| popPK | Panta_2019 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity and signaling pathways, not a pharmacokinetic study reporting disposition parameters for phenylephrine. |
 | PGx | Pereira_2011 | not_relevant | 0 | 0 | The paper studies a new nitric oxide donor (RuBPY) and its mechanism of action, using phenylephrine only as a tool to pre-contract aortas, and does not report any pharmacogenomic effects on phenylephrine. |
-| popPK | Seliniotaki_2025 | relevant | 9 | 2 | The study reports a 1-compartment PK model for phenylephrine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text. |
+| popPK | Seliniotaki_2025 | relevant | 8 | 2 | The study reports a 1-compartment PK model for phenylephrine in preterm infants, but the specific numeric parameter values (CL, V, ka) are not present in the provided text. |
 | PGx | Silver_1990 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of cicletanine and its interaction with guanylate cyclase activators, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of phenylephrine. |
-| PGx | Simfukwe_2025 | not_relevant | 0 | 0 | The study investigates the vasodilatory effects of a plant extract on rat aortic rings and does not report any pharmacogenomic effects on the PK or PD of phenylephrine. |
+| PGx | Simfukwe_2025 | not_relevant | 0 | 0 | The study evaluates the vasodilatory effects of a plant extract on rat aortic rings and does not investigate the impact of gene variants or genotypes on the pharmacokinetics or pharmacodynamics of phenylephrine. |
 | PGx | Streefkerk_2002 | not_relevant | 0 | 0 | The study investigates the influence of pre-contraction type on vasodilator responses in rat aortic rings and does not report any pharmacogenomic effects (gene variants) on phenylephrine PK or PD. |
 | PGx | Taniguchi_2005 | not_relevant | 0 | 0 | The study investigates the effect of a diet and pioglitazone on endothelial function in rabbits, using phenylephrine only as a precontracting agent, and does not report any pharmacogenomic effects on phenylephrine PK or PD. |
-| PGx | Tom_2014 | not_relevant | 0 | 0 | The study investigates the effect of a plant extract on blood pressure and vascular function in rats, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of phenylephrine. |
-| popPK | Villatoro_2020 | irrelevant | 0 | 0 | The study investigates the effect of topical phenylephrine on retinal imaging metrics (OCTA) and does not report any pharmacokinetic parameters. |
+| PGx | Tom_2014 | not_relevant | 0 | 0 | The study investigates the effect of a plant extract on phenylephrine-induced vasoconstriction in rats, not the effect of a human gene variant on phenylephrine pharmacokinetics or pharmacodynamics. |
+| popPK | Villatoro_2020 | irrelevant | 0 | 0 | The study investigates the effect of topical phenylephrine on retinal imaging metrics (OCTA), not its pharmacokinetic disposition parameters. |
 | PGx | Zhang_2019_2 | not_relevant | 0 | 0 | The paper describes the chemical synthesis of a metabolite standard for future PK studies and does not report any pharmacogenomic effects on PK or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-09 21:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 10:05 UTC</sub>

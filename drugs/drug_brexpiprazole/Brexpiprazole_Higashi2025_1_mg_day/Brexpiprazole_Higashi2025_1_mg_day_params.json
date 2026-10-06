@@ -1,0 +1,42 @@
+{
+ "dose_source": "paper",
+ "model_id": "Brexpiprazole_Higashi2025_1_mg_day",
+ "molar_masses": {
+  "central.C": 0.43357
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.2,
+  1.0,
+  2.0,
+  4.0,
+  6.0
+ ],
+ "parameters": {
+  "Cl": 2.0555555555555556e-07,
+  "F": 1.0,
+  "MM": 0.43357,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0009,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.0000000000000002e-07,
+  "k12": 4.409171075837742e-06,
+  "k21": 1.129177958446251e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 27010.821643286574
+ },
+ "reference_peaks": {
+  "central.C": 2.135534487347053e-06
+ },
+ "stop_time": 1123200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

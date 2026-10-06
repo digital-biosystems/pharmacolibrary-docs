@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03C&quot;,&quot;href&quot;:&quot;atc/C03C.md&quot;},{&quot;label&quot;:&quot;furosemide&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/&quot;},{&quot;label&quot;:&quot;Hornik_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Furosemide_Hornik2025_reference&quot;,&quot;label&quot;:&quot;Hornik_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Hornik2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Furosemide_Knych2018_reference&quot;,&quot;label&quot;:&quot;Knych_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Knych2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Miura2026_reference&quot;,&quot;label&quot;:&quot;Miura_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Miura2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Randell2026_reference&quot;,&quot;label&quot;:&quot;Randell_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Randell2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Ravix2025_reference&quot;,&quot;label&quot;:&quot;Ravix_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Ravix2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Tilstone1978_reference&quot;,&quot;label&quot;:&quot;Tilstone_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Tilstone1978_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Xia2026_reference&quot;,&quot;label&quot;:&quot;Xia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Xia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Furosemide_ma2015_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edma_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_furosemide/Furosemide_ma2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # furosemide — `Furosemide_Hornik2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,29 +21,31 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — furosemide: CL 1.55 mL/min/kg, AUCt 16 800 µg⋅h/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has furosemide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
-
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:07.371072+00:00) predates the upstream re-run (2026-10-06 18:18:37.892429+00:00). Current validate status: `extracted`.
 
 ## Citation
 Hornik CP et al., An Adult Population Pharmacokinetic Mod…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01515-2](https://doi.org/10.1007/s40262-025-01515-2)
 
 ## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Hornik2025_reference" status="needs_review" stale="false" population="adults with heart failure" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="furosemide" model-id="Furosemide_Hornik2025_reference" status="extracted" stale="true" population="adults with heart failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| estimated furosemide clearance | `Q22` · CL | 1.55 | mL/min/kg | 1.8083333333333333e-06 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Hornik_2025:abstract | — | not captured |
-| Estimated exposure (mean area under the plasma concentration-time curve at 24 h) in adolescents weighing 42.5-50.0 kg | `Q19` · AUCt | 16 | 800 µg⋅h/L | not captured | [[h] · [800ug]] / [l] | not captured | llm_corrected (0.6) | Hornik_2025:abstract | — | not captured |
+| Ka, h–1 | `Q49` · kabs | 1.30 | h–1 | 0.00036111111111111115 | [1] / [h] | 6 | exact (1.0) | Tab1:row2:col1, Tab1:row2:col2 | — | 21.7 (10% RSE) |
+| CL, L/h | `Q22` · CL | 6.51 | L/h | 1.8083333333333333e-06 | [l] / [h] | 5 | exact (1.0) | Tab1:row3:col1, Tab1:row3:col2 | — | 18.5 (0% RSE) |
+| Vc, L | `Q63` · V1 | 5.37 | L | 0.005370000000000001 | [l] | 8 | exact (1.0) | Tab1:row4:col1, Tab1:row4:col2 | — | 31.7 (0% RSE) |
+| Q, L/h | `Q30` · Q | 3.74 | L/h | 1.038888888888889e-06 | [l] / [h] | 15 | exact (1.0) | Tab1:row5:col1, Tab1:row5:col2 | — | 33.1 (6% RSE) |
+| Vp, L | `Q64` · V2 | 5.95 | L | 0.00595 | [l] | 6 | exact (1.0) | Tab1:row6:col1, Tab1:row6:col2 | — | 18.9 (3% RSE) |
+| egfr_on_cl | `Q900` · egfr_on_cl | 0.74 | not captured | not captured | not captured | 18 | not captured (not captured) | Tab1:row7:col1, Tab1:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,65 +54,58 @@ Hornik CP et al., An Adult Population Pharmacokinetic Mod…, Clinical pharmacok
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
-- unit_dimension_unknown: '800 µg⋅h/L' (AUCt)
-- unit_dimension_unknown: '700 µg⋅h/L' (AUCt)
-- dropped duplicate Q19 ('Estimated exposure (mean area under the plasma concentration-time curve at 24 h) in adolescents weighing &gt; 50-60 kg', value 14) — already have one for this compound
-- unit_dimension_unknown: '000 µg⋅h/L' (AUCt)
-- dropped duplicate Q19 ('Estimated exposure (mean area under the plasma concentration-time curve at 24 h) in adolescents weighing &gt; 60-70 kg', value 13) — already have one for this compound
-- unit_dimension_unknown: '400 µg⋅h/L' (AUCt)
-- dropped duplicate Q19 ('Estimated exposure (mean area under the plasma concentration-time curve at 24 h) in adults', value 12) — already have one for this compound
+- table section iiv: 'Ka' routed out of structural estimates ('Inter-individual variability, CV% (shrinkage)')
+- table section iiv: 'CL' routed out of structural estimates ('Inter-individual variability, CV% (shrinkage)')
+- table section iiv: 'Vc' routed out of structural estimates ('Inter-individual variability, CV% (shrinkage)')
+- table section iiv: 'Q' routed out of structural estimates ('Inter-individual variability, CV% (shrinkage)')
+- table section iiv: 'Vp' routed out of structural estimates ('Inter-individual variability, CV% (shrinkage)')
+- table section residual_error: 'Proportional error, %' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Additive error, ng/mL' routed out of structural estimates ('Residual error')
+- covariate level 'eGFR on CL' → Q900:egfr_on_cl = 0.74 (linear_fractional on Q22)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL, L/h); Q63 (Vc, L); Q30 (Q, L/h); Q64 (Vp, L)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=furosemide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hornik_2025_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- unparsed cell Tab1:row2:col3 = '1.30 (1.16–1.48) [1.14–1.46]'
+- unparsed cell Tab1:row3:col3 = '6.48 (5.76–7.13) [5.85–7.17]'
+- unparsed cell Tab1:row4:col3 = '5.40 (4.49–6.38) [4.42–6.31]'
+- unparsed cell Tab1:row5:col3 = '3.69 (2.85–4.85) [2.78–4.69]'
+- unparsed cell Tab1:row6:col3 = '5.92 (5.30–6.60) [5.29–6.60]'
+- unparsed cell Tab1:row7:col3 = '0.74 (0.44–1.01) [0.45–1.03]'
+- unparsed cell Tab1:row9:col3 = '20.7 (10.9–29.5) [10.8–28.9]'
+- unparsed cell Tab1:row10:col3 = '17.3 (10.6–23.8) [10.6–23.5]'
+- unparsed cell Tab1:row11:col3 = '29.6 (17.3–40.8) [17.1–39.2]'
+- unparsed cell Tab1:row12:col3 = '31.3 (13.0–47.3) [13.0–45.0]'
+- unparsed cell Tab1:row13:col3 = '18.1 (12.1–23.0) [12.1–22.7]'
+- unparsed cell Tab1:row15:col3 = '12.7 (10.9–14.5) [10.9–14.4]'
+- unparsed cell Tab1:row16:col3 = '100 (57.2–152.8) [57.2–152.8]'
+- LLM selected parameter table(s) 1
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
-
-<details><summary>7 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[30 mg over the first hour]` | not captured | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[80-mg dose of subcutaneous furosemide]` | not captured | 80 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated exposure (mean area under the plasma concentration-time curve at 24 h) in adolescents weighing 42.5-50.0 kg]` | 16 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated furosemide clearance]` | 1.55 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[estimated furosemide clearance]` | not captured | 1.55 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | furosemide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | furosemide | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hornik_2025:abstract'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | 800 µg⋅h/L | not captured | not captured | ['Hornik_2025:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.55 | not captured | not captured | ['Hornik_2025:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row5:col1', 'Tab1:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row4:col1', 'Tab1:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.51 | not captured | not captured | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.51 L/h | not captured | not captured | ['Hornik_2025:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.51 L/h | not captured | not captured | ['Tab1:row3:col1', 'Tab1:row3:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.37 L | not captured | not captured | ['Tab1:row4:col1', 'Tab1:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 5.95 L | not captured | not captured | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,21 +123,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_modelica.zip" download>Furosemide_Hornik2025_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_fmi.zip" download>Furosemide_Hornik2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_matlab.zip" download>Furosemide_Hornik2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_matlab_simbio.zip" download>Furosemide_Hornik2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_sbml.zip" download>Furosemide_Hornik2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_cellml.zip" download>Furosemide_Hornik2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference.svg" alt="Furosemide_Hornik2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 40 mg, single dose, first-order absorption (ka 1.3 /h, F 0.9). Doses in the paper: 40, 80 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_furosemide/Furosemide_Hornik2025_reference/Furosemide_Hornik2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Furosemide_Hornik2025_reference_params.json` · controls `Furosemide_Hornik2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 09:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 18:18 UTC</sub>

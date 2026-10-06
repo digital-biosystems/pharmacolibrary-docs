@@ -32,7 +32,7 @@ Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceu
 ## Model component
 <dbs-pgx drug="bleomycin" model-id="Bleomycin_Yadav2023_reference" status="curated_candidate" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
@@ -40,8 +40,8 @@ Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceu
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| nonspecific CL | `Q22` · CL | 8.0 | mL/day/kg | 6.4814814814814815e-09 | L/h | not captured | review (0.7) | Yadav_2023:review | — | not captured |
-| V (derived from CL·t½/ln2) | `Q61` · V | 9.1294 | L | 0.009129374218745363 | L | not captured | review (0.7) | Yadav_2023:review | — | not captured |
+| CL value | `Q22` · CL | 4.3 | mL/day/kg | 3.483796296296296e-09 | L/h | not captured | review (0.7) | Yadav_2023:review | — | not captured |
+| V (derived from CL·t½/ln2) | `Q61` · V | 4.907 | L | 0.0049070386425756314 | L | not captured | review (0.7) | Yadav_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,9 +49,6 @@ Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceu
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['k21']
 
 **Interpretation flags:**
 - built from REVIEW reference values (Yadav_2023) — secondary source
@@ -91,10 +88,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yadav_2023:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yadav_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.0 | not captured | not captured | ['Yadav_2023:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.3 | not captured | not captured | ['Yadav_2023:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0233 L/h | not captured | not captured | ['Yadav_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 9.13 L | not captured | not captured | ['Yadav_2023:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0125 L/h | not captured | not captured | ['Yadav_2023:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 4.91 L | not captured | not captured | ['Yadav_2023:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -126,24 +123,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_modelica.zip" download>Bleomycin_Yadav2023_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_fmi.zip" download>Bleomycin_Yadav2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab.zip" download>Bleomycin_Yadav2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab_simbio.zip" download>Bleomycin_Yadav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sbml.zip" download>Bleomycin_Yadav2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_cellml.zip" download>Bleomycin_Yadav2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_modelica.zip" download>Bleomycin_Yadav2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_fmi.zip" download>Bleomycin_Yadav2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab.zip" download>Bleomycin_Yadav2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab_simbio.zip" download>Bleomycin_Yadav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sbml.zip" download>Bleomycin_Yadav2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_cellml.zip" download>Bleomycin_Yadav2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference.svg" alt="Bleomycin_Yadav2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 **Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Bleomycin_Yadav2023_reference_params.json` · controls `Bleomycin_Yadav2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Bleomycin_Yadav2023_reference_params.json` · controls `Bleomycin_Yadav2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

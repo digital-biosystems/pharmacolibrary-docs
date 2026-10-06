@@ -2,33 +2,33 @@
  "dose_source": "WHO ATC DDD 10 mg oral (N05BA01)",
  "model_id": "Diazepam_Aurlie2023_reference",
  "molar_masses": {
-  "C_central": 0.28474
+  "central.C": 0.28474
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 3.4333333333333336e-07,
   "F": 0.9,
   "MM": 0.28474,
-  "Tlag": 303120.0,
-  "VdPerKg": 0.00010628571428571429,
+  "Tlag": 669.6,
+  "VdPerKg": 0.00029228571428571433,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1e-05,
-  "k12": 0.003472222222222222,
-  "k21": 0.041666666666666664,
-  "ka": 0.0003361111111111111,
+  "k12": 6.24524818073205e-05,
+  "k21": 0.00017267267267267265,
+  "ka": 0.0002861111111111111,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 0.0
+  "central.C": 13505.410821643287
  },
  "reference_peaks": {
-  "C_central": 0.0
+  "central.C": 0.00018761705751298876
  },
- "stop_time": 86400.0,
+ "stop_time": 259200.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

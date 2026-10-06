@@ -1,37 +1,21 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;pramocaine&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;pramocaine&quot;}]"></div>
 
 # pramocaine
 
-- **generic name:** pramocaine
-- **ATC codes:** `C05AD07`, `D04AB07`
-- **DrugBank:** [DB09345](https://go.drugbank.com/drugs/DB09345) · **PubChem:** [CID 4886](https://pubchem.ncbi.nlm.nih.gov/compound/4886)
-- **molar mass:** 293.407 g/mol (C17H27NO3) — DrugBank
-- **groups:** approved
-
-## About
-
-Pramocaine is a topical local anesthetic used to relieve pain and itching from hemorrhoids, contact dermatitis, and other minor skin conditions. It is an approved drug, used mainly in topical preparations for hemorrhoids and skin itching.
-
-<small>Summary written by `glm-5.3-flash` from [Wikidata Q1240076](https://www.wikidata.org/wiki/Q1240076) and the WHO ATC classification; not checked by a person.</small>
+- **generic name:** not captured
+- **ATC codes:** not captured
+- **DrugBank:** not captured · **PubChem:** not captured
+- **groups:** not captured
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 10:09 | 1:06 | 0/0/0 | 0/0/0 | 0/0/0 | 2,228/154 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## ADME sites
-
-Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pramocaine) page (add drugs there; the set becomes a link).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: SCN1A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -41,34 +25,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 4 matched, 4 returned
+- **PubMed hits:** 0 matched, 0 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Hirao_2018.pdf` | Hirao R et al., Compound action potential inhibition pr…, European journal of pharmac… (2018) | pd | 4 | [10.1016/j.ejphar.2017.11.047](https://doi.org/10.1016/j.ejphar.2017.11.047) | [29203420](https://www.ncbi.nlm.nih.gov/pubmed/29203420) | metadata signals extractable PD data (IC50) |
-| `Magori_2019.pdf` | Magori N et al., Inhibition by general anesthetic propof…, Naunyn-Schmiedeberg's archi… (2019) | pd | 4 | [10.1007/s00210-018-01596-w](https://doi.org/10.1007/s00210-018-01596-w) | [30519707](https://www.ncbi.nlm.nih.gov/pubmed/30519707) | metadata signals extractable PD data (IC50) |
-
-<sub>queue written 2026-09-30T10:09:19.084071+00:00</sub>
-
-## Screened and excluded
-
-| domain | paper | verdict | relevance | extractability | reason |
-|---|---|---|---|---|---|
-| popPK | Hirao_2018 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of antidepressants on frog sciatic nerve action potentials and does not report pharmacokinetic parameters for pramocaine. |
-| PD | Hirao_2018 | not_relevant | 0 | 0 | The paper investigates the effects of antidepressants on nerve conduction and only mentions pramoxine (a different compound) as a comparator; it does not report any pharmacodynamic data or parameters for pramocaine. |
-| popPK | Magori_2019 | irrelevant | 0 | 0 | The study focuses on the mechanism of nerve conduction inhibition by propofol in frog sciatic nerves, and pramocaine is not the subject drug (pramoxine is mentioned as a comparator, but no PK parameters are reported). |
-| PD | Magori_2019 | not_relevant | 0 | 0 | The paper focuses on propofol and its analogs; pramocaine is not mentioned, and no PD parameters for it are reported. |
-| popPK | Pinarbasli_2025 | irrelevant | 0 | 0 | The study is an in vitro release and formulation analysis for pramoxine (not pramocaine) and does not report pharmacokinetic parameters. |
-| PD | Pinarbasli_2025 | not_relevant | 0 | 0 | The paper focuses on in vitro release and formulation stability, not pharmacodynamic or exposure-response relationships. |
-| popPK | Weinberger_1980 | irrelevant | 0 | 0 | The paper describes an analytical method (HPLC) for pramoxine (a different drug) and contains no pharmacokinetic parameters. |
-| PD | Weinberger_1980 | not_relevant | 0 | 0 | The paper describes an HPLC analytical method for pramoxine and contains no pharmacodynamic or exposure-response data. |
+- **scholar-agent fallback query used:** not captured
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

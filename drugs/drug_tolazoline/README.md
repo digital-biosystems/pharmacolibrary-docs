@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;tolazoline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tolazoline
 
@@ -27,13 +27,19 @@ Tolazoline is a vasodilator that was used for circulatory disorders such as Rayn
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 17:18 | 4:07 | 1/0/0 | 0/0/0 | 0/0/0 | 26,765/4,281 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 20:29 | 2:16 | 1/0/0 | 1/0/0 | 0/0/0 | 35,138/4,370 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span> | [Casbeer_2013_reference](drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Casbeer_2013_reference](drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Rogers_1994_vascular_resistance](drugs/drug_tolazoline/pd_Rogers_1994_vascular_resistance.md) | vascular resistance ← tolazoline · direct sigmoid Emax (Hill) effect | — | Rogers RA et al., Pharmacologic modulation of the cutaneo…, Journal of pharmaceutical s… (1994) | [10.1002/jps.2600831208](https://doi.org/10.1002/jps.2600831208) |
 
 ## ADME sites
 
@@ -54,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -63,26 +69,26 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Casbeer_2013.pdf` | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | popPK | 10 | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) | [23321455](https://pubmed.ncbi.nlm.nih.gov/23321455) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for tolazoline in horses, with all numeric values explicitly present in the text. |
+| `Casbeer_2013.pdf` | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | popPK | 10 | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) | [23321455](https://pubmed.ncbi.nlm.nih.gov/23321455) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for tolazoline in horses, with all numeric values explicitly provided in the abstract. |
 
-<sub>queue written 2026-09-28T17:17:03.510541+00:00</sub>
+<sub>queue written 2026-10-06T20:27:13.820529+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baños_1988 | irrelevant | 0 | 0 | The study is a pharmacological investigation of adrenergic mechanisms in rat muscle tissue, not a pharmacokinetic study, and tolazoline is used only as a receptor antagonist probe. |
-| popPK | Costa_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic receptors and does not report any pharmacokinetic parameters for tolazoline. |
-| popPK | Dunne_1991 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of channel blocking, not a pharmacokinetic study, and reports no disposition parameters for tolazoline. |
+| popPK | Baños_1988 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic mechanisms in rat muscle, not a pharmacokinetic study of tolazoline. |
+| popPK | Costa_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic receptors, not a pharmacokinetic study, and tolazoline is used only as a comparator agent. |
+| popPK | Dunne_1991 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of channel blocking by tolazoline, not a pharmacokinetic study. |
 | PD | Dunne_1991 | not_relevant | 3 | 2 | The paper reports a qualitative observation that tolazoline blocks K+ATP channels at 25 microM, but provides no numeric PD parameters (like Ki or IC50) or dose-response curve for tolazoline, unlike the detailed analysis provided for phentolamine. |
-| popPK | Fuder_1986 | irrelevant | 0 | 0 | The study is a pharmacological investigation of receptor affinity and efficacy in perfused rat hearts, not a pharmacokinetic study, and reports no disposition parameters for tolazoline. |
-| popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of a different compound (IBI) in rabbit iris muscles and does not report pharmacokinetic parameters for tolazoline. |
+| popPK | Fuder_1986 | irrelevant | 0 | 0 | The study is a pharmacological investigation of adrenoceptor affinity and efficacy in rat hearts, not a pharmacokinetic study of tolazoline. |
+| popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of a different compound (IBI) in rabbit iris muscles, with tolazoline mentioned only as a structural parent for comparison, and no PK parameters are reported. |
 | PD | Ishikawa_1996 | not_relevant | 0 | 0 | The paper investigates the pharmacology of isothiocyanatobenzyl imidazoline (IBI) and only qualitatively mentions tolazoline as a parent molecule without providing any PD data or parameters for tolazoline. |
-| popPK | Lei_1998 | irrelevant | 0 | 0 | The paper is a mechanistic study on calcium channel activation and receptor binding, not a pharmacokinetic study, and reports no disposition parameters for tolazoline. |
-| popPK | Rogers_1994 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vascular resistance in an ex vivo model, not a pharmacokinetic study reporting disposition parameters for tolazoline. |
-| popPK | Williams_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lidocaine, with tolazoline used only as a co-administered vasoactive agent to modulate skin perfusion, not as the subject drug for PK parameter estimation. |
+| popPK | Lei_1998 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of tolazoline derivatives on calcium channels in vitro and in animal tissues, not the pharmacokinetic disposition parameters of tolazoline. |
+| popPK | Rogers_1994 | irrelevant | 0 | 0 | The study is an ex vivo pharmacological calibration of vascular resistance in porcine skin flaps, not a pharmacokinetic study reporting disposition parameters for tolazoline. |
+| popPK | Williams_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lidocaine, with tolazoline used only as a co-administered vasoactive agent to modulate skin blood flow. |
 | PGx | Yan_2017 | not_relevant | 0 | 0 | The paper reports tolazoline as an inhibitor of CYP4Z1 in a recombinant yeast system, not a pharmacogenomic effect on tolazoline's PK/PD parameters. |
 | popPK | Yoshida_2008 | irrelevant | 0 | 0 | Tolazoline is used as a vasoactive agent to modify the pharmacokinetics of model compounds (salicylate and FITC-dextran), not as the subject drug for PK parameter estimation. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 17:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 20:27 UTC</sub>

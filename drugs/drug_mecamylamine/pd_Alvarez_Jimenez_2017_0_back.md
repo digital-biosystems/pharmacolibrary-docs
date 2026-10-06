@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02B&quot;,&quot;href&quot;:&quot;atc/C02B.md&quot;},{&quot;label&quot;:&quot;mecamylamine&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 PD 0-back percentage of correct answers&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02B&quot;,&quot;href&quot;:&quot;atc/C02B.md&quot;},{&quot;label&quot;:&quot;mecamylamine&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 PD Correct Answers of the 0-back (percentage of correct answers)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# 0-back percentage of correct answers — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Correct Answers of the 0-back (percentage of correct answers) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,15 +13,15 @@
 
 ## What this record describes
 
-**As extracted:** Mecamylamine (concentrations from this paper's PK model) drives 0-back percentage of correct answers (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Mecamylamine (concentrations from this paper's PK model) drives Correct Answers of the 0-back (percentage of correct answers) (in % correct answers): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
 - **paper:** `Alvarez-Jimenez_2017`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017)
@@ -30,8 +30,9 @@ Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | Parameter — Mecamylamine pharmacokinetics | `Q100` · not captured | 26.8 | not captured | not captured | llm (not captured) | tab_1:row2:col3 |
-| model term | SEM — Mecamylamine pharmacokinetics | `Q900` · not captured | 1.04 | not captured | not captured | llm (not captured) | tab_1:row3:col3 |
+| PD (effect) | EC 50 | `Q321` · not captured | 8.74 | μg•L -1 | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 0.377 | % | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| PD (effect) | BL | `Q324` · not captured | 3.66 | % correct answers | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

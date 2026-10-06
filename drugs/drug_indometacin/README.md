@@ -19,13 +19,13 @@ Indometacin is a non-steroidal anti-inflammatory drug used to treat pain and inf
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| indometacin | parent | 357.79 | C19H16ClNO4 | PubChem | [3715](https://pubchem.ncbi.nlm.nih.gov/compound/3715) | Smyth_2004 |
+| indometacin | parent | 357.79 | C19H16ClNO4 | PubChem | [3715](https://pubchem.ncbi.nlm.nih.gov/compound/3715) | Smyth_2004, Smyth_2004_2 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 04:35 | 7:08 | 0/1/2 | 0/1/0 | 0/0/0 | 66,155/23,061 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 12/0 | 2/0 | 0 |
+| 2026-10-06 11:19 | 4:32 | 0/0/5 | 0/0/0 | 0/0/0 | 58,010/13,155 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 12/0 | 2/0 | 0 |
 
 ## popPK records
 
@@ -33,13 +33,9 @@ Indometacin is a non-steroidal anti-inflammatory drug used to treat pain and inf
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_1000_bootstrap_samples](drugs/drug_indometacin/Indometacin_Smyth2004_1000_bootstrap_samples.md) | — | 1-compartment (no model) | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_original_dataset](drugs/drug_indometacin/Indometacin_Smyth2004_original_dataset.md) | — | 1-compartment (no model) | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_2_reference](drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md) | held back | 1-compartment, IV | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Tanaka_2016_DA_PA_ratio](drugs/drug_indometacin/pd_Tanaka_2016_DA_PA_ratio.md) | ductus arteriosus/pulmonary artery inner diameter ratio ← unbound plasma concentration of each NSAID (acetaminophen, indometacin, diclofenac, ibuprofen, flurbiprofen, ketoprofen, loxoprofen, felbinac, naproxen, celecoxib) · direct Emax (saturable) effect | — | Tanaka S et al., Prediction of fetal ductus arteriosus c…, International journal of cl… (2016) | [10.5414/CP202532](https://doi.org/10.5414/CP202532) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_2_1000_bootstrap_samples](drugs/drug_indometacin/Indometacin_Smyth2004v2_1000_bootstrap_samples.md) | — | 1-compartment (no model) | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_2_original_dataset](drugs/drug_indometacin/Indometacin_Smyth2004v2_original_dataset.md) | — | 1-compartment (no model) | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: not captured</sub> | [Smyth_2004_2_reference](drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md) | — | — (no model) | 0 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
 
 ## ADME sites
 
@@ -76,38 +72,28 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 11  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Tanaka_2016.pdf` | Tanaka S et al., Prediction of fetal ductus arteriosus c…, International journal of cl… (2016) | popPK | 8 | [10.5414/CP202532](https://doi.org/10.5414/CP202532) | [27285464](https://pubmed.ncbi.nlm.nih.gov/27285464) | The study is a PK/PD modeling paper that includes indometacin as a subject drug, but the specific numeric PK parameter values are not present in the provided evidence (abstract only). |
-
-<sub>queue written 2026-09-30T04:33:11.923741+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cui_2016_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of zaltoprofen, with indometacin used only as a comparator for analgesic efficacy, and no PK parameters for indometacin are reported. |
+| popPK | Cui_2016_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of zaltoprofen, with indometacin used only as a comparator for analgesic efficacy. |
 | PD | Cui_2016_2 | not_relevant | 0 | 0 | The paper focuses on the transdermal delivery of zaltoprofen; indometacin is only used as a commercial comparator for qualitative analgesic effect, with no exposure-response or dose-response modeling or numeric PD parameters reported for it. |
-| popPK | Fu_2010 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of betulinic acid where indometacin is used only as a non-specific COX inhibitor control, with no PK parameters reported. |
+| popPK | Fu_2010 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of betulinic acid on rat aorta, using indometacin only as a non-specific inhibitor control, and reports no pharmacokinetic parameters for indometacin. |
 | PD | Fu_2010 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of betulinic acid, not indometacin; indometacin is only mentioned as a negative control inhibitor. |
 | popPK | Nielsen_2009_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of gentamicin, with indometacin mentioned only as a concomitant medication covariate. |
-| popPK | Pesić_2002 | irrelevant | 0 | 0 | The study is a pharmacological investigation of vascular contractions where indometacin is used only as a cyclooxygenase inhibitor tool, not as the subject of a pharmacokinetic analysis. |
+| popPK | Pesić_2002 | irrelevant | 0 | 0 | The study is a pharmacological investigation of vascular contractions where indometacin is used only as a cyclooxygenase inhibitor tool compound, not as the subject of pharmacokinetic analysis. |
 | PD | Pesić_2002 | not_relevant | 0 | 0 | The paper investigates the pharmacology of acetylcholine on human arteries; indometacin is used only as a control inhibitor and no exposure-response or dose-response relationship for indometacin itself is reported. |
-| popPK | Racké_1995 | irrelevant | 0 | 0 | The study is a pharmacological investigation of noradrenaline release in rat stomach where indometacin is used only as a non-essential control agent, with no pharmacokinetic parameters reported. |
+| popPK | Racké_1995 | irrelevant | 0 | 0 | The study investigates noradrenaline release mechanisms in rat stomach tissue where indometacin is used only as a pharmacological tool to block prostaglandin synthesis, not as the subject of a pharmacokinetic analysis. |
 | PD | Racké_1995 | not_relevant | 0 | 0 | The paper states that indometacin did not affect noradrenaline overflow, providing no numeric PD parameters or dose-response relationship for the drug. |
-| popPK | Reimer_1996 | irrelevant | 0 | 0 | The study focuses on bicarbonate secretion and receptor characterization in guinea pigs, using indometacin only as a pretreatment agent to inhibit prostaglandin synthesis, with no pharmacokinetic parameters reported. |
+| popPK | Reimer_1996 | irrelevant | 0 | 0 | Indometacin is used only as a prophylactic agent to prevent inflammation in guinea pigs, and the study focuses on peptide hormone receptors and bicarbonate secretion, not indometacin pharmacokinetics. |
 | PD | Reimer_1996 | not_relevant | 0 | 0 | The paper investigates peptide hormone (VIP/secretin) pharmacology; indometacin is used only as a background treatment to inhibit prostaglandin synthesis and is not the subject of any exposure-response or dose-response analysis. |
-| popPK | Tanaka_2016 | relevant | 8 | 0 | The study is a PK/PD modeling paper that includes indometacin as a subject drug, but the specific numeric PK parameter values are not present in the provided evidence (abstract only). |
-| popPK | Tirapelli_2008 | irrelevant | 0 | 0 | Indometacin is used only as a pharmacological tool (COX inhibitor) in a vascular reactivity study, with no PK parameters reported. |
+| popPK | Tanaka_2016 | irrelevant | 2 | 0 | The study is a PK/PD modeling analysis using literature data for multiple NSAIDs, and no specific quantitative PK parameter values for indometacin are present in the provided evidence. |
+| popPK | Tirapelli_2008 | irrelevant | 0 | 0 | Indometacin is used only as a pharmacological tool (COX inhibitor) in a vascular reactivity study, not as the subject of a pharmacokinetic analysis. |
 | PD | Tirapelli_2008 | not_relevant | 3 | 0 | The paper mentions indometacin qualitatively as a tool to reduce the maximum effect (Emax) of phenylephrine, but it does not report a concentration-effect or dose-response relationship for indometacin itself, nor does it provide numeric PD parameters for indometacin. |
-| popPK | Uchôa_2009 | irrelevant | 0 | 0 | Indometacin is only a comparator in the anti-inflammatory assay; the PK model and numeric parameters are for PG15, not indometacin. |
+| popPK | Uchôa_2009 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of the novel compound PG15, using indometacin only as a pharmacodynamic comparator. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 04:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 11:15 UTC</sub>

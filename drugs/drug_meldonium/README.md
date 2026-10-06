@@ -18,13 +18,13 @@ Meldonium is a cardiac therapy agent developed for heart-related conditions such
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 04:38 | 0:44 | 0/1/0 | 0/0/0 | 0/0/0 | 1,871/1,058 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 11:37 | 1:11 | 0/1/0 | 0/0/0 | 0/0/0 | 8,136/1,646 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Forsdahl_2018_reference](drugs/drug_meldonium/Meldonium_Forsdahl2018_reference.md) | — | 1-compartment (no model) | 0 | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Forsdahl_2018_reference](drugs/drug_meldonium/Meldonium_Forsdahl2018_reference.md) | — | 1-compartment (no model) | 0 | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -36,7 +36,7 @@ Meldonium is a cardiac therapy agent developed for heart-related conditions such
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -45,10 +45,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Forsdahl_2018.pdf` | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | popPK | 9 | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) | [30189410](https://pubmed.ncbi.nlm.nih.gov/30189410) | The study reports a three-compartment model and specific half-life values (alpha, beta, gamma) for meldonium in humans, which are quantitative PK parameters present in the text. |
-| `Knych_2017.pdf` | Knych HK et al., Pharmacokinetics and pharmacodynamics o…, Drug testing and analysis (2017) | popPK | 8 | [10.1002/dta.2214](https://doi.org/10.1002/dta.2214) | [28513092](https://pubmed.ncbi.nlm.nih.gov/28513092) | The study reports quantitative PK parameters (Cmax, t1/2) for meldonium in horses, but lacks specific values for clearance (CL) or volume of distribution (V) in the provided text. |
+| `Forsdahl_2018.pdf` | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | popPK | 9 | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) | [30189410](https://pubmed.ncbi.nlm.nih.gov/30189410) | The study reports a three-compartment model and specific half-life values (alpha, beta, gamma) for meldonium in humans, but lacks explicit clearance (CL) or volume (V) parameters. |
+| `Knych_2017.pdf` | Knych HK et al., Pharmacokinetics and pharmacodynamics o…, Drug testing and analysis (2017) | popPK | 9 | [10.1002/dta.2214](https://doi.org/10.1002/dta.2214) | [28513092](https://pubmed.ncbi.nlm.nih.gov/28513092) | The study reports quantitative non-compartmental PK parameters (Cmax, t1/2) for meldonium in horses, though specific clearance and volume values are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-09-30T04:38:18.458218+00:00</sub>
+<sub>queue written 2026-10-06T11:36:17.380267+00:00</sub>
 
 ## Screened and excluded
 
@@ -57,4 +57,4 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Skotnikov_2015 | not_relevant | 0 | 0 | The paper is a clinical trial reporting qualitative safety and efficacy outcomes (e.g., delayed dyslipidemia, improved rheology) without any pharmacokinetic data, concentration-effect analysis, or numeric PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 17:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 11:36 UTC</sub>

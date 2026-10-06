@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amantadine_Riley2026_reference",
+ "molar_masses": {
+  "central.C": 0.1512487
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  210.0,
+  350.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 2.6133333333333333e-05,
+  "F": 0.9,
+  "MM": 0.1512487,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00319,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00021,
+  "k12": 3.5423197492163014e-05,
+  "k21": 5.207373271889401e-05,
+  "ka": 0.0008777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2846.057564575058
+ },
+ "reference_peaks": {
+  "central.C": 0.0005490490386619607
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

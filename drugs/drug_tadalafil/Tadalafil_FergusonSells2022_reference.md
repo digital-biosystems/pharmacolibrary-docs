@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;tadalafil&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/&quot;},{&quot;label&quot;:&quot;Ferguson-Sells_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tadalafil_Kohno2014_reference&quot;,&quot;label&quot;:&quot;Kohno_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tadalafil_Na2019_group_t&quot;,&quot;label&quot;:&quot;Na_2019_group_t&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tadalafil — `Tadalafil_FergusonSells2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +21,18 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (fe), so that value has no SI equivalent.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tadalafil, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tadalafil, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:31.867225+00:00) predates the upstream re-run (2026-10-06 16:41:56.654891+00:00). Current validate status: `rejected`.
 
 ## Citation
 Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8)
 
 ## Model component
-<dbs-pgx drug="tadalafil" model-id="Tadalafil_FergusonSells2022_reference" status="rejected" stale="false" population="adults and pediatric patients with pulmonary arterial hypertension" measured-compound="tadalafil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tadalafil" model-id="Tadalafil_FergusonSells2022_reference" status="rejected" stale="true" population="adults and pediatric patients with pulmonary arterial hypertension" measured-compound="tadalafil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -52,6 +55,7 @@ Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical ph
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'Additive (ng/mL)' routed out of structural estimates ('Residual errorf')
 - column 'weight [kg]b' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'age [years]c' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'dose [mg]d' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -62,7 +66,6 @@ Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical ph
 - dropped unlinked row (NIL): 'Effect of weight' — extend the ontology if this is a real PK parameter (source ['Tab2:row8:col1'])
 - unit_dimension_unknown: '% SEE' (fe)
 - dropped unlinked row (NIL): 'Effect of age on F' — extend the ontology if this is a real PK parameter (source ['Tab2:row11:col1'])
-- dropped unlinked row (NIL): 'Additive (ng/mL)' — extend the ontology if this is a real PK parameter (source ['Tab2:row13:col1'])
 - dropped unlinked row (NIL): 'Typical adult, PHIRST-1 adult model' — extend the ontology if this is a real PK parameter (source ['Ferguson-Sells_2022_table_3:row2:col1', 'Ferguson-Sells_2022_table_3:row2:col2', 'Ferguson-Sells_2022_table_3:row2:col3'])
 - dropped unlinked row (NIL): 'Typical adult, pediatric model' — extend the ontology if this is a real PK parameter (source ['Ferguson-Sells_2022_table_3:row3:col1', 'Ferguson-Sells_2022_table_3:row3:col2', 'Ferguson-Sells_2022_table_3:row3:col3', 'Ferguson-Sells_2022_table_3:row9:col1', 'Ferguson-Sells_2022_table_3:row9:col2', 'Ferguson-Sells_2022_table_3:row9:col3'])
 - dropped unlinked row (NIL): '≥ 40 kg' — extend the ontology if this is a real PK parameter (source ['Ferguson-Sells_2022_table_3:row4:col1', 'Ferguson-Sells_2022_table_3:row4:col2', 'Ferguson-Sells_2022_table_3:row4:col3', 'Ferguson-Sells_2022_table_3:row10:col1', 'Ferguson-Sells_2022_table_3:row10:col2', 'Ferguson-Sells_2022_table_3:row10:col3'])
@@ -72,6 +75,9 @@ Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical ph
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tadalafil
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell Tab2:row1:col2 = '201%b (26.4)'
@@ -144,9 +150,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -157,7 +163,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[ka]` | not captured | 0.860 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q319_weight]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q87_age]` | not captured | 0.100 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[typical adult, phirst-1 adult model]` | not captured | 4020 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | tadalafil | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | tadalafil | unknown | mismatch |
 
@@ -201,4 +206,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 03:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:41 UTC</sub>

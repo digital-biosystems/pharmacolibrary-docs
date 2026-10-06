@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;clozapine&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/&quot;},{&quot;label&quot;:&quot;Geers_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clozapine — `Clozapine_Geers2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -24,27 +25,27 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:45.483131+00:00) predates the upstream re-run (2026-10-06 15:14:46.540434+00:00). Current validate status: `extracted`.
+
 ## Citation
 Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022)
   ·  DOI: [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857)
 
 ## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_Geers2022_reference" status="needs_review" stale="false" population="schizophrenia patients" measured-compound="clozapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clozapine" model-id="Clozapine_Geers2022_reference" status="extracted" stale="true" population="schizophrenia patients on clozapine" measured-compound="clozapine" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K elm (h -1 ) | `Q47` · kel | 0.079 | h -1 | 2.1944444444444445e-05 | [1] / [h] | not captured | llm (0.5) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row4:col3, tab_2:row4:col4 | — | not captured |
-| V d /F (L/kgLBMc) | `Q76` · V/F | 0.054 | L/kgLBMc | not captured | [1] / [[kg] · [bmc]] | not captured | llm (0.5) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4 | — | not captured |
-| K a (h -1 ) | `Q49` · kabs | 1.37 | h -1 | 0.0003805555555555556 | [1] / [h] | not captured | llm (0.5) | tab_2:row6:col1 | — | not captured |
-| T lag (h) | `Q83` · tlag | 0 | h | 0.0 | [h] | not captured | llm (0.5) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
+| Kelm (h–1) | `Q47` · kel | 0.095 | h–1 | 2.638888888888889e-05 | [1] / [h] | not captured | llm (0.6) | table3-20451253211065857:row2:col1, table3-20451253211065857:row2:col2, table3-20451253211065857:row2:col3 | — | not captured |
+| Vd/F (L/kgLBMc) | `Q76` · V/F | 9.6 | L/kg | 0.6719999999999999 | L | not captured | exact (1.0) | table3-20451253211065857:row3:col1, table3-20451253211065857:row3:col2, table3-20451253211065857:row3:col3 | — | not captured |
+| K a (h–1) | `Q49` · kabs | 1.37 | h–1 | 0.0003805555555555556 | [1] / [h] | not captured | space_fold (0.95) | table3-20451253211065857:row4:col1 | — | not captured |
+| Tlag (h) | `Q83` · tlag | 0 | h | 0.0 | [h] | not captured | exact (1.0) | table3-20451253211065857:row5:col1, table3-20451253211065857:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,19 +54,25 @@ Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advance
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - unit_dimension_unknown: 'L/kgLBMc' (V/F)
-- dropped unlinked row (NIL): 'AIC' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col1', 'tab_2:row8:col2'])
+- dropped unlinked row (NIL): 'AIC' — extend the ontology if this is a real PK parameter (source ['table3-20451253211065857:row6:col1', 'table3-20451253211065857:row6:col2'])
+- implicit units: 'Vd/F (L/kgLBMc)' → L/kg (from the paper text: '"for simplicity clozapine volume of distribution is expressed in L/kg bodyweight"; also "distribution volume per kg body')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=clozapine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- derived CL/F=63.84 L/h from Ke × V/F = CL/F (Q47 × Q76); not separately reported
 
 **Extraction notes:**
-- unparsed cell tab_2:row0:col5 = 'CI 95% bootstrap analysis'
-- unparsed cell tab_2:row4:col5 = '0.0525 ± 0.0214 to 0.0774 ± 0.0504'
-- unparsed cell tab_2:row5:col5 = '4.12 ± 2.14 to 6.77 ± 5.74'
-- unparsed cell tab_2:row6:col2 = '1.37 ± 0.68 (fixed) 1.37 ± 0.68 (fixed)'
-- LLM region Geers_2022:discussion_prose: no JSON records returned
+- unparsed cell table3-20451253211065857:row2:col5 = '0.0525 ± 0.0214 to 0.0774 ± 0.0504'
+- unparsed cell table3-20451253211065857:row3:col5 = '4.12 ± 2.14 to 6.77 ± 5.74'
+- unparsed cell table3-20451253211065857:row4:col2 = '1.37 ± 0.68 (fixed)'
+- unparsed cell table3-20451253211065857:row4:col3 = '1.37 ± 0.68 (fixed)'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -91,12 +98,13 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row6:col1'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | L/kgLBMc | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['table3-20451253211065857:row2:col1', 'table3-20451253211065857:row2:col2', 'table3-20451253211065857:row2:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['table3-20451253211065857:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['table3-20451253211065857:row3:col1', 'table3-20451253211065857:row3:col2', 'table3-20451253211065857:row3:col3'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['table3-20451253211065857:row5:col1', 'table3-20451253211065857:row5:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q76 | pass | volume within physiological range | 672 L | not captured | not captured | ['table3-20451253211065857:row3:col1', 'table3-20451253211065857:row3:col2', 'table3-20451253211065857:row3:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -114,21 +122,26 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clozapine/Clozapine_Geers2022_reference/Clozapine_Geers2022_reference_modelica.zip" download>Clozapine_Geers2022_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clozapine/Clozapine_Geers2022_reference/Clozapine_Geers2022_reference_fmi.zip" download>Clozapine_Geers2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_clozapine/Clozapine_Geers2022_reference/Clozapine_Geers2022_reference.svg" alt="Clozapine_Geers2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 1.37 /h, F 1). Dose in the paper: 400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_clozapine/Clozapine_Geers2022_reference/Clozapine_Geers2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_clozapine/Clozapine_Geers2022_reference/Clozapine_Geers2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Clozapine_Geers2022_reference_params.json` · controls `Clozapine_Geers2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 15:14 UTC</sub>

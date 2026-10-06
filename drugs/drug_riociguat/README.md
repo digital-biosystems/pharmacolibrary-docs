@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # riociguat
 
@@ -21,22 +21,23 @@ Riociguat is a drug used to treat pulmonary hypertension and chronic pulmonary h
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| riociguat | parent | 422.416 | C20H19FN8O2 | DrugBank | [11304743](https://pubchem.ncbi.nlm.nih.gov/compound/11304743) | Michaličková_2020, Saleh_2016, Saleh_2016_2 |
+| riociguat | parent | 422.416 | C20H19FN8O2 | DrugBank | [11304743](https://pubchem.ncbi.nlm.nih.gov/compound/11304743) | Michaličková_2020, Saleh_2016, Saleh_2016_2, Willmann_2023 |
 | M1 | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 03:24 | 11:44 | 0/1/2 | 0/0/0 | 0/0/0 | 114,417/40,902 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 16:31 | 13:37 | 1/0/3 | 0/0/0 | 0/0/0 | 181,583/46,214 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_topology_template</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Saleh_2016_reference](drugs/drug_riociguat/Riociguat_Saleh2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685404](https://doi.org/10.1086/685404) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2016_2_reference](drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md) | — | 1-compartment (no model) | 3 | Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685647](https://doi.org/10.1086/685647) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2020_reference](drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md) | — | parent + metabolite (no model) | 1 | Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020) | [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Saleh_2016_reference](drugs/drug_riociguat/Riociguat_Saleh2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685404](https://doi.org/10.1086/685404) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2020_reference](drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md) | — | parent + metabolite (no model) | 3 | Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020) | [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2016_2_reference](drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md) | — | 1-compartment (no model) | 4 | Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016) | [10.1086/685647](https://doi.org/10.1086/685647) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Willmann_2023_reference](drugs/drug_riociguat/Riociguat_Willmann2023_reference.md) | — | parent + metabolite (no model) | 1 | Willmann S et al., Population pharmacokinetics of riocigua…, Pediatric pulmonology (2023) | [10.1002/ppul.26277](https://doi.org/10.1002/ppul.26277) |
 
 ## ADME sites
 
@@ -70,8 +71,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 4  ·  extracted 1  ·  needs_review 3  ·  rejected 0  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -80,19 +81,20 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Saleh_2016.pdf` | Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016) | popPK | 10 | [10.1086/685404](https://doi.org/10.1086/685404) | [27162632](https://pubmed.ncbi.nlm.nih.gov/27162632) | The paper is a population PK study for riociguat and explicitly reports numeric values for clearance, volume of distribution, and absorption rate constant in the text. |
-| `Saleh_2016_2.pdf` | Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016) | popPK | 10 | [10.1086/685647](https://doi.org/10.1086/685647) | [27162631](https://pubmed.ncbi.nlm.nih.gov/27162631) | The paper is a population PK study for riociguat and provides specific numeric values for total clearance (1.912 L/h), metabolic clearance (1.2 L/h), and renal clearance (0.242 L/h) in the text. |
-| `Willmann_2023.pdf` | Willmann S et al., Population pharmacokinetics of riocigua…, Pediatric pulmonology (2023) | popPK | 10 | [10.1002/ppul.26277](https://doi.org/10.1002/ppul.26277) | [36507572](https://pubmed.ncbi.nlm.nih.gov/36507572) | The paper is a population PK study for riociguat, but the evidence only provides median apparent clearance values, lacking the specific model parameter estimates (e.g., typical CL, V, Q, ka) and variability parameters typically required for extraction. |
+| `Saleh_2016.pdf` | Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016) | popPK | 10 | [10.1086/685404](https://doi.org/10.1086/685404) | [27162632](https://pubmed.ncbi.nlm.nih.gov/27162632) | The abstract explicitly reports quantitative population PK parameters (ka, CL, V) for riociguat and its metabolite M1 in human patients. |
+| `Saleh_2016_2.pdf` | Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016) | popPK | 10 | [10.1086/685647](https://doi.org/10.1086/685647) | [27162631](https://pubmed.ncbi.nlm.nih.gov/27162631) | The paper reports a population PK model for riociguat with specific numeric values for total clearance (1.912 L/h), metabolic clearance (1.2 L/h), and renal clearance (0.242 L/h) directly in the abstract. |
+| `Willmann_2023.pdf` | Willmann S et al., Population pharmacokinetics of riocigua…, Pediatric pulmonology (2023) | popPK | 10 | [10.1002/ppul.26277](https://doi.org/10.1002/ppul.26277) | [36507572](https://pubmed.ncbi.nlm.nih.gov/36507572) | The paper reports a population PK model for riociguat in humans, but the evidence only provides median apparent clearance values, lacking specific model parameter estimates (V, Q, ka) or full numeric parameter tables. |
 
-<sub>queue written 2026-09-28T03:12:52.570554+00:00</sub>
+<sub>queue written 2026-10-06T16:19:14.918161+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Frey_2018 | irrelevant | 2 | 3 | The paper is a review article that summarizes pharmacokinetic data from other studies rather than reporting original quantitative disposition parameters or population-PK model estimates. |
+| popPK | Frey_2018 | irrelevant | 2 | 3 | The paper is a clinical review summarizing pharmacokinetic properties (clearance, half-life, bioavailability) rather than reporting original quantitative population-PK model parameters (e.g., typical CL, V, Q, ka estimates with variability). |
 | PD | Saleh_2016 | not_relevant | 4 | 2 | The abstract describes a PK/PD analysis but only reports qualitative correlations (6MWD vs. hemodynamics) and PK parameters, without providing specific numeric PD parameters (e.g., Emax, EC50) or a defined concentration-effect curve. |
-| popPK | Willmann_2023 | relevant | 10 | 2 | The paper is a population PK study for riociguat, but the evidence only provides median apparent clearance values, lacking the specific model parameter estimates (e.g., typical CL, V, Q, ka) and variability parameters typically required for extraction. |
+| popPK | Shimokawahara_2023 | irrelevant | 0 | 0 | The paper is a clinical trial protocol for a hemodynamic efficacy study (peak cardiac index) and does not report pharmacokinetic parameters such as clearance or volume of distribution. |
+| popPK | Smith_2016 | relevant | 4 | 6 | The paper is a review that cites specific PK parameters (Vd, t1/2, Tmax) for riociguat in CTEPH patients from a Phase II study, but lacks a full compartmental model or clearance values. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 03:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 16:19 UTC</sub>

@@ -26,22 +26,21 @@ Triamterene is a potassium-sparing diuretic used to treat high blood pressure, f
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 08:38 | 1:37 | 0/1/1 | 1/0/0 | 0/0/0 | 10,506/5,786 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 19:16 | 3:57 | 0/1/1 | 1/0/0 | 0/0/0 | 63,148/10,090 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamid_2000_reference](drugs/drug_triamterene/Triamterene_Hamid2000_reference.md) | — | 1-compartment (no model) | 2 | Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000) | [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Diembeck_1982_reference](drugs/drug_triamterene/Triamterene_Diembeck1982_reference.md) | — | 1-compartment (no model) | 0 | Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamid_2000_reference](drugs/drug_triamterene/Triamterene_Hamid2000_reference.md) | — | 1-compartment (no model) | 2 | Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000) | [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Diembeck_1982_reference](drugs/drug_triamterene/Triamterene_Diembeck1982_reference.md) | — | 1-compartment (no model) | 0 | Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Orr-Burks_2021_PFU](drugs/drug_triamterene/pd_Orr_Burks_2021_PFU.md) | viral titer by plaque assay ← Clopidogrel; Triamterene · direct sigmoid Emax (Hill) effect | — | Orr-Burks N et al., Drug repositioning of Clopidogrel or Tr…, PloS one (2021) | [10.1371/journal.pone.0259129](https://doi.org/10.1371/journal.pone.0259129) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Orr-Burks_2021_TCID50](drugs/drug_triamterene/pd_Orr_Burks_2021_TCID50.md) | viral titer by TCID50 assay ← Clopidogrel; Triamterene · direct sigmoid Emax (Hill) effect | — | Orr-Burks N et al., Drug repositioning of Clopidogrel or Tr…, PloS one (2021) | [10.1371/journal.pone.0259129](https://doi.org/10.1371/journal.pone.0259129) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Orr-Burks_2021_percent_influenza_infected_cells](drugs/drug_triamterene/pd_Orr_Burks_2021_percent_influenza_infected_cells.md) | percent influenza-infected cells ← Clopidogrel; Triamterene · direct sigmoid Emax (Hill) effect | — | Orr-Burks N et al., Drug repositioning of Clopidogrel or Tr…, PloS one (2021) | [10.1371/journal.pone.0259129](https://doi.org/10.1371/journal.pone.0259129) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schuhmacher_1983_PDE](drugs/drug_triamterene/pd_Schuhmacher_1983_PDE.md) | myocardial phosphodiesterase ← triamterene · direct Emax (saturable) effect | — | Schuhmacher P et al., The effect of triamterene on myocardial…, European journal of pharmac… (1983) | [10.1016/0014-2999(83)90268-6](https://doi.org/10.1016/0014-2999(83)90268-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schuhmacher_1983_inotropic_effect](drugs/drug_triamterene/pd_Schuhmacher_1983_inotropic_effect.md) | inotropic effect ← triamterene · direct Emax (saturable) effect | — | Schuhmacher P et al., The effect of triamterene on myocardial…, European journal of pharmac… (1983) | [10.1016/0014-2999(83)90268-6](https://doi.org/10.1016/0014-2999(83)90268-6) |
 
 ## ADME sites
 
@@ -65,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -74,31 +73,31 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hasegawa_1982.pdf` | Hasegawa J et al., Pharmacokinetics of triamterene and its…, Journal of pharmacokinetics… (1982) | popPK | 9 | [10.1007/BF01059034](https://doi.org/10.1007/BF01059034) | [7166735](https://pubmed.ncbi.nlm.nih.gov/7166735) | The paper is a relevant human PK study of triamterene, but the evidence text only provides unbound fractions and qualitative descriptions, lacking the specific numeric values for clearance, volume, or half-life. |
-| `Diembeck_1982.pdf` | Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982) | popPK | 8 | not captured | [6891256](https://pubmed.ncbi.nlm.nih.gov/6891256) | The study reports quantitative pharmacokinetic parameters, specifically terminal elimination half-lives for triamterene, derived from a two-compartment model in healthy volunteers. |
-| `Hamid_2000.pdf` | Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000) | popPK | 8 | [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565) | [11132903](https://pubmed.ncbi.nlm.nih.gov/11132903) | The study reports quantitative kinetic parameters (absorption rate, elimination rate, half-life) for triamterene in rabbits, with all numeric values explicitly present in the text. |
+| `Hasegawa_1982.pdf` | Hasegawa J et al., Pharmacokinetics of triamterene and its…, Journal of pharmacokinetics… (1982) | popPK | 10 | [10.1007/BF01059034](https://doi.org/10.1007/BF01059034) | [7166735](https://pubmed.ncbi.nlm.nih.gov/7166735) | The study reports a compartmental PK model for triamterene in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Hamid_2000.pdf` | Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000) | popPK | 9 | [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565) | [11132903](https://pubmed.ncbi.nlm.nih.gov/11132903) | The study reports quantitative kinetic parameters (absorption rate, elimination rate, half-life) for triamterene in rabbits. |
+| `Diembeck_1982.pdf` | Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982) | popPK | 8 | not captured | [6891256](https://pubmed.ncbi.nlm.nih.gov/6891256) | The study reports quantitative pharmacokinetic parameters (terminal elimination half-life and peak urine elimination rates) for triamterene in healthy volunteers. |
 | `Möhrke_1997.pdf` | Möhrke W et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1997) | pd | 5 | not captured | [9352394](https://www.ncbi.nlm.nih.gov/pubmed/9352394) | metadata signals extractable PD data (Emax) |
 | `Schuhmacher_1983.pdf` | Schuhmacher P et al., The effect of triamterene on myocardial…, European journal of pharmac… (1983) | pd | 4 | [10.1016/0014-2999(83)90268-6](https://doi.org/10.1016/0014-2999(83)90268-6) | [6321204](https://www.ncbi.nlm.nih.gov/pubmed/6321204) | metadata signals extractable PD data (IC50) |
 | `Yamreudeewong_2003.pdf` | Yamreudeewong W et al., Potentially significant drug interactio…, Drug safety (2003) | pgx | 7 | [10.2165/00002018-200326060-00004](https://doi.org/10.2165/00002018-200326060-00004) | [12688833](https://www.ncbi.nlm.nih.gov/pubmed/12688833) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-30T08:36:24.092085+00:00</sub>
+<sub>queue written 2026-10-06T19:13:01.120748+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Brogden_1995 | not_relevant | 0 | 0 | The paper is a review of nilvadipine and does not report pharmacogenomic effects on triamterene. |
+| PGx | Brogden_1995 | not_relevant | 0 | 0 | The text consists of a list of references and errata regarding streptokinase, thrombolytic therapy, and other drugs, with no mention of triamterene or pharmacogenomic effects. |
 | PGx | Corvol_1997 | not_relevant | 0 | 0 | The paper discusses the molecular genetics of hypertension and mentions triamterene only as a treatment for Liddle's syndrome, without reporting any pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Fuhr_2005 | not_relevant | 0 | 0 | The paper identifies CYP1A2 as the enzyme metabolizing triamterene using in vitro microsomes but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| popPK | Hasegawa_1982 | relevant | 9 | 2 | The paper is a relevant human PK study of triamterene, but the evidence text only provides unbound fractions and qualitative descriptions, lacking the specific numeric values for clearance, volume, or half-life. |
-| PGx | Ke_2015 | not_relevant | 2 | 0 | The paper reports a clinical response (reduced attack frequency) to triamterene in a specific genotype, but does not report changes in pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, receptor binding). |
-| popPK | Kipnowski_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion transport in frog skin, not a pharmacokinetic study, and reports no disposition parameters for triamterene. |
+| popPK | Hasegawa_1982 | relevant | 10 | 2 | The study reports a compartmental PK model for triamterene in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Ke_2015 | not_relevant | 2 | 1 | The paper reports a clinical response (reduced attack frequency) to triamterene in a specific genotype, but does not report changes in pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., AUC, Cmax, receptor binding, specific biomarker levels) of the drug itself. |
+| popPK | Kipnowski_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion transport in frog skin, not a pharmacokinetic study reporting disposition parameters for triamterene. |
 | PD | Kipnowski_1986 | not_relevant | 4 | 2 | The paper describes dose-dependent effects and qualitative binding characteristics (Hill coefficient &lt; 1) for a triamterene derivative (RPH 2823) in an in vitro model, but does not provide specific numeric PD parameters (e.g., EC50, Emax) or extractable concentration-effect curves for triamterene itself. |
 | popPK | Möhrke_1997 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
-| popPK | Orr-Burks_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on drug repositioning for influenza inhibition, reporting EC50 values rather than pharmacokinetic disposition parameters. |
-| popPK | Priewer_1996 | irrelevant | 0 | 0 | The study focuses on renal excretion efficacy and potency (pharmacodynamics) rather than pharmacokinetic disposition parameters like clearance or volume. |
-| popPK | Schuhmacher_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition and does not report pharmacokinetic disposition parameters for triamterene. |
+| popPK | Orr-Burks_2021 | irrelevant | 0 | 0 | The study is an in-vitro antiviral efficacy and cytotoxicity assessment of triamterene, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Priewer_1996 | irrelevant | 0 | 0 | The study investigates renal excretion and pharmacodynamic potency (ED50/Emax) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Schuhmacher_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition and pharmacodynamics, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Yamreudeewong_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving triamterene but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 15:00 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 19:13 UTC</sub>

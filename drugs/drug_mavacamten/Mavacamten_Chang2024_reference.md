@@ -4,7 +4,7 @@
 
 # mavacamten — `Mavacamten_Chang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -22,73 +22,73 @@
 
 The parameter labelled 'Creatinine clearance, mL/min' with value 115 mL/min is a participant biomarker covariate, not mavacamten clearance, so the analyte identity check failed. The true drug parameters are apparent oral values: CL/F 0.914 L/h, V2/F 6.63 L, Q/F 16.3 L/h and absorption rate constant 0.301 h-1, with F=1 and Fm=1 assumed and no molar correction. Vd and Tlag had no source values, so library defaults were substituted. A second reader places the 115 mL/min value as the participants' mean creatinine clearance rather than a disposition parameter, and reads a CYP2C19 rapid-metabolizer effect on CL/F of 0.2 that this record lacks; the covariate effects were defined but only the reference individual was simulated. Extracted — mavacamten: CL 115 mL/min, CL/F 0.914 L/h, V2/F 6.63 L, Q/F 16.3 L/h, kabs 0.301 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/f: this record has 0.914, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 0.192. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:40.673659+00:00) predates the upstream re-run (2026-10-06 11:29:55.836534+00:00). Current validate status: `rejected`.
 
 ## Citation
 Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197)
 
 ## Model component
-<dbs-pgx drug="mavacamten" model-id="Mavacamten_Chang2024_reference" status="rejected" stale="false" population="participants with hypertrophic cardiomyopathy and healthy adults" measured-compound="mavacamten" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="mavacamten" model-id="Mavacamten_Chang2024_reference" status="rejected" stale="true" population="adults with hypertrophic cardiomyopathy and healthy adults" measured-compound="mavacamten" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
-**Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Creatinine clearance, mL/min | `Q22` · CL | 115 | mL/min | 1.9166666666666664e-06 | L/h | not captured | boundary (0.8) | Chang_2024:other_prose | — | not captured |
-| CL/F | `Q27` · CL/F | 0.914 | L/h | 2.538888888888889e-07 | L/h | not captured | exact (1.0) | Chang_2024:discussion_prose | — | not captured |
-| V2/F | `Q82` · V2/F | 6.63 | L | 0.00663 | L | not captured | exact (1.0) | Chang_2024:discussion_prose | — | not captured |
-| Q/F | `Q69` · Q/F | 16.3 | L/h | 4.527777777777778e-06 | L/h | not captured | exact (1.0) | Chang_2024:discussion_prose | — | not captured |
-| KA | `Q49` · kabs | 0.301 | h -1 | 8.361111111111111e-05 | 1/h | not captured | exact (1.0) | Chang_2024:discussion_prose | — | not captured |
+| F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | psp413197-tbl-0003:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL/F | Q27 | not captured | exact |
+| Q/F | Q69 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate wt for CL/F from footnote/prose kept as documentation only (['fig_4:caption'])
-- covariate wt for Q/F from footnote/prose kept as documentation only (['fig_4:caption'])
-- salvaged Q22 ('Creatinine clearance, mL/min'=115) from results prose — parameter table was unreadable
-- salvaged Q27 ('CL/F'=0.914) from results prose — parameter table was unreadable
-- salvaged Q82 ('V2/F'=6.63) from results prose — parameter table was unreadable
-- salvaged Q69 ('Q/F'=16.3) from results prose — parameter table was unreadable
-- salvaged Q49 ('KA'=0.301) from results prose — parameter table was unreadable
+- dropped value-less row: 'V2/F'
+- dropped value-less row: 'V3/F'
+- dropped value-less row: 'KA'
+- dropped unlinked row (NIL): 'ALAG1' — extend the ontology if this is a real PK parameter (source ['psp413197-tbl-0003:row6:col1', 'psp413197-tbl-0003:row6:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mavacamten
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 3 sentence
+- unparsed cell psp413197-tbl-0003:row2:col1 = '6.63 L'
+- unparsed cell psp413197-tbl-0003:row3:col1 = '252 L'
+- unparsed cell psp413197-tbl-0003:row5:col1 = '0.301 h−1'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | 0.914 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[creatinine clearance, ml/min]` | 115 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[effect of cyp2c19:rm phenotype on cl/f]` | not captured | 0.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean creatinine clearance of participants]` | not captured | 115 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[alag1]` | not captured | 0.192 | only_one_extracted |
 
 </details>
 
@@ -102,14 +102,10 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.9 L/h | not captured | not captured | ['Chang_2024:other_prose'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.914 L/h | not captured | not captured | ['Chang_2024:discussion_prose'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 6.63 L | not captured | not captured | ['Chang_2024:discussion_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -147,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:29 UTC</sub>

@@ -18,7 +18,7 @@ Indapamide is a diuretic and antihypertensive medicine used to treat arterial hy
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 07:36 | 4:14 | 0/0/0 | 0/1/0 | 0/0/0 | 52,251/2,487 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/5 | 4/0 | 0 |
+| 2026-10-06 17:21 | 2:10 | 0/0/0 | 0/1/0 | 0/0/0 | 90,966/2,064 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 3/6 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,11 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Usui_1978_arterial_strip_relaxation_relative_to_papaverine](drugs/drug_indapamide/pd_Usui_1978_arterial_strip_relaxation_relative_to_papaverine.md) | arterial strip relaxation relative to papaverine ← indapamide · direct Emax (saturable) effect | — | Usui H et al., [Influence of indapamide on isolated ra…, Nihon yakurigaku zasshi. Fo… (1978) | [10.1254/fpj.74.389](https://doi.org/10.1254/fpj.74.389) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Usui_1978_nicotine_induced_contractile_response_of_mesenteric_artery](drugs/drug_indapamide/pd_Usui_1978_nicotine_induced_contractile_response_of_mesenteri.md) | nicotine-induced contractile response of mesenteric artery ← indapamide · direct Emax (saturable) effect | — | Usui H et al., [Influence of indapamide on isolated ra…, Nihon yakurigaku zasshi. Fo… (1978) | [10.1254/fpj.74.389](https://doi.org/10.1254/fpj.74.389) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Usui_1978_nictitating_membrane_contraction_to_preganglionic_sympathetic_stimulation](drugs/drug_indapamide/pd_Usui_1978_nictitating_membrane_contraction_to_preganglionic_.md) | nictitating membrane contraction to preganglionic sympathetic stimulation ← indapamide · direct Emax (saturable) effect | — | Usui H et al., [Influence of indapamide on isolated ra…, Nihon yakurigaku zasshi. Fo… (1978) | [10.1254/fpj.74.389](https://doi.org/10.1254/fpj.74.389) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Usui_1978_serotonin_induced_contraction_of_basilar_artery](drugs/drug_indapamide/pd_Usui_1978_serotonin_induced_contraction_of_basilar_artery.md) | serotonin-induced contraction of basilar artery ← indapamide · direct Emax (saturable) effect | — | Usui H et al., [Influence of indapamide on isolated ra…, Nihon yakurigaku zasshi. Fo… (1978) | [10.1254/fpj.74.389](https://doi.org/10.1254/fpj.74.389) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Usui_1978_tyramine_induced_contractile_response_of_mesenteric_artery](drugs/drug_indapamide/pd_Usui_1978_tyramine_induced_contractile_response_of_mesenteri.md) | tyramine-induced contractile response of mesenteric artery ← indapamide · direct Emax (saturable) effect | — | Usui H et al., [Influence of indapamide on isolated ra…, Nihon yakurigaku zasshi. Fo… (1978) | [10.1254/fpj.74.389](https://doi.org/10.1254/fpj.74.389) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Turgeon_1994_IKs](drugs/drug_indapamide/pd_Turgeon_1994_IKs.md) | IKs ← indapamide · direct Emax (saturable) effect | — | Turgeon J et al., Block of IKs, the slow component of the…, Circulation research (1994) | [10.1161/01.res.75.5.879](https://doi.org/10.1161/01.res.75.5.879) |
 
 ## ADME sites
 
@@ -69,7 +65,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Li_2013.pdf` | Li G et al., Pharmacokinetics and bioequivalence stu…, Drug research (2013) | popPK | 8 | [10.1055/s-0032-1331181](https://doi.org/10.1055/s-0032-1331181) | [23447043](https://pubmed.ncbi.nlm.nih.gov/23447043) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, t1/2) for indapamide in humans, with specific numeric values provided in the text. |
-| `Meyrier_1998.pdf` | Meyrier A et al., Fixed low-dose perindopril-indapamide c…, American journal of hyperte… (1998) | popPK | 8 | [10.1016/s0895-7061(98)00128-9](https://doi.org/10.1016/s0895-7061(98)00128-9) | [9752894](https://pubmed.ncbi.nlm.nih.gov/9752894) | The study performs a population pharmacokinetic analysis for indapamide, but the evidence text only reports qualitative trends (AUC increases with renal failure) without providing specific numeric parameter values like CL, V, or half-life. |
+| `Meyrier_1998.pdf` | Meyrier A et al., Fixed low-dose perindopril-indapamide c…, American journal of hyperte… (1998) | popPK | 8 | [10.1016/s0895-7061(98)00128-9](https://doi.org/10.1016/s0895-7061(98)00128-9) | [9752894](https://pubmed.ncbi.nlm.nih.gov/9752894) | The study reports a population pharmacokinetic analysis for indapamide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Khalifa_1999.pdf` | Khalifa M et al., Block of potassium currents in guinea p…, The Journal of pharmacology… (1999) | pd | 5 | not captured | [9918600](https://www.ncbi.nlm.nih.gov/pubmed/9918600) | metadata signals extractable PD data (IC50) |
 | `Nazaret_1987.pdf` | Nazaret C et al., Inhibition of the Cl-/NaCO3- anion exch…, European journal of pharmac… (1987) | pd | 5 | [10.1016/0014-2999(87)90388-8](https://doi.org/10.1016/0014-2999(87)90388-8) | [3440481](https://www.ncbi.nlm.nih.gov/pubmed/3440481) | metadata signals extractable PD data (IC50) |
 | `Chu_2007.pdf` | Chu XY et al., Transport of the dipeptidyl peptidase-4…, The Journal of pharmacology… (2007) | pd | 4 | [10.1124/jpet.106.116517](https://doi.org/10.1124/jpet.106.116517) | [17314201](https://www.ncbi.nlm.nih.gov/pubmed/17314201) | metadata signals extractable PD data (IC50) |
@@ -79,7 +75,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Wang_2014.pdf` | Wang TH et al., Genetic polymorphisms of metabolic enzy…, The AAPS journal (2014) | pgx | 8 | [10.1208/s12248-013-9535-x](https://doi.org/10.1208/s12248-013-9535-x) | [24357089](https://www.ncbi.nlm.nih.gov/pubmed/24357089) | metadata signals extractable PGX data (CYP2A6, PK/PD-context) |
 | `Anfinogenova_2026.pdf` | Anfinogenova ND et al., Pharmacogenetic Drug Administration and…, Archives of medical research (2026) | pgx | 5 | [10.1016/j.arcmed.2025.103307](https://doi.org/10.1016/j.arcmed.2025.103307) | [40997434](https://www.ncbi.nlm.nih.gov/pubmed/40997434) | metadata signals extractable PGX data (CYP3A5) |
 
-<sub>queue written 2026-09-30T07:36:18.136402+00:00</sub>
+<sub>queue written 2026-10-06T17:19:57.891536+00:00</sub>
 
 ## Screened and excluded
 
@@ -88,7 +84,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Abbas_2023 | irrelevant | 0 | 0 | no_text gate: only 126 chars of text extracted (&lt; 400) |
 | PGx | Anfinogenova_2026 | not_relevant | 0 | 0 | The paper is a cross-sectional survey of drug usage patterns and does not report specific pharmacokinetic or pharmacodynamic effects of genetic variants on indapamide. |
 | popPK | Boschi_2000 | irrelevant | 0 | 0 | The study is a comparative dose-response analysis of survival and blood pressure in rats, not a pharmacokinetic study, and reports no quantitative disposition parameters for indapamide. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report any quantitative pharmacokinetic parameters for indapamide. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for indapamide. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The text is a narrative review of cardiovascular pharmacotherapy and does not contain specific data, models, or numeric parameters for indapamide. |
 | popPK | Calder_1993 | irrelevant | 0 | 0 | The study investigates the mechanism of action (ion channel involvement) of indapamide in guinea pig vessels, not its pharmacokinetic disposition parameters. |
 | popPK | Calder_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasorelaxant actions in isolated arteries and does not report pharmacokinetic parameters. |
@@ -102,11 +98,11 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Del_1993 | irrelevant | 0 | 0 | The study is a mechanistic vascular reactivity experiment in rabbits and does not report any pharmacokinetic parameters for indapamide. |
 | popPK | Del_1993_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular contractile responses and calcium movements, not a pharmacokinetic study. |
 | popPK | Erarslan_2026 | irrelevant | 0 | 0 | The study is a retrospective observational analysis of metabolic parameters (TyG index, lipids) in hypertensive patients and does not report any pharmacokinetic parameters for indapamide. |
-| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | The paper is a review of acute kidney injury potential for various drugs and does not report any pharmacokinetic parameters for indapamide. |
+| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | The paper is a review of drug-induced acute kidney injury potential and does not report pharmacokinetic parameters for indapamide. |
 | PD | Fernández-Llaneza_2025 | not_relevant | 0 | 0 | The paper is a pharmacovigilance knowledge integration study using spontaneous reporting systems and databases; it does not contain PK/PD modeling, concentration-effect data, or numeric PD parameters for indapamide. |
 | popPK | Fiset_1997 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
 | PD | Fiset_1997 | not_relevant | 0 | 0 | The paper investigates the electrophysiological interaction between indapamide and sotalol in a cellular model, focusing on IKs channel block, but does not report a pharmacokinetic-pharmacodynamic (PK/PD) model or exposure-response relationship for indapamide with numeric PD parameters. |
-| popPK | Geelen_1999 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of potassium channel block in isolated guinea pig hearts, not a pharmacokinetic study, and reports no disposition parameters for indapamide. |
+| popPK | Geelen_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of indapamide's effect on potassium currents in guinea pig hearts, not a pharmacokinetic study. |
 | popPK | Horwitz_2015 | irrelevant | 0 | 0 | The paper is a case report of an adverse drug event (hypokalemia/rhabdomyolysis) and contains no pharmacokinetic parameters or quantitative disposition data for indapamide. |
 | PD | Horwitz_2015 | not_relevant | 1 | 0 | The text is a case report describing a pharmacodynamic interaction (hypokalemia/rhabdomyolysis) but provides no concentration-effect data, dose-response curve, or numeric PD parameters. |
 | popPK | Jespersen_1983 | irrelevant | 0 | 0 | The study focuses on drug stability and water consumption in rats, not on pharmacokinetic parameters for indapamide. |
@@ -117,10 +113,10 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Leenen_1988 | irrelevant | 0 | 0 | The study focuses on cardiovascular effects and dose-response for blood pressure, reporting no pharmacokinetic parameters such as clearance, volume, or half-life for indapamide. |
 | popPK | Lu_1998 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | popPK | Lukeman_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding (IC50) and does not report pharmacokinetic disposition parameters for indapamide. |
-| popPK | Matsumoto_1999 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of histamine effects on potassium currents in guinea-pig atrial cells, where indapamide is used only as a pharmacological tool (IKs blocker) and no pharmacokinetic parameters are reported. |
+| popPK | Matsumoto_1999 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of histamine effects on potassium currents in guinea-pig atrial cells, using indapamide only as a pharmacological tool to block IKs, not as a subject for PK analysis. |
 | PD | Matsumoto_1999 | not_relevant | 0 | 0 | The paper investigates the electrophysiological effects of histamine on potassium currents, using indapamide only as a tool compound to block IKs, and does not report any pharmacodynamic or exposure-response relationship for indapamide itself. |
-| popPK | Meyrier_1998 | relevant | 8 | 2 | The study performs a population pharmacokinetic analysis for indapamide, but the evidence text only reports qualitative trends (AUC increases with renal failure) without providing specific numeric parameter values like CL, V, or half-life. |
-| popPK | Miah_2026 | irrelevant | 0 | 0 | The paper is a scoping review on dietary effects on blood pressure and explicitly excludes studies reporting only pharmacokinetic outcomes, containing no PK parameters for indapamide. |
+| popPK | Meyrier_1998 | relevant | 8 | 2 | The study reports a population pharmacokinetic analysis for indapamide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Miah_2026 | irrelevant | 0 | 0 | This is a scoping review on dietary interactions with antihypertensive drugs and does not report pharmacokinetic parameters for indapamide. |
 | PD | Miah_2026 | not_relevant | 0 | 0 | The paper is a scoping review of dietary interactions with antihypertensive drugs and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for indapamide. |
 | popPK | Milena_2000 | irrelevant | 0 | 0 | The paper is a drug utilization study reporting consumption statistics (DDD) and contains no pharmacokinetic parameters for indapamide. |
 | PD | Milena_2000 | not_relevant | 0 | 0 | The paper is a drug utilization study reporting consumption statistics (DDD) and contains no pharmacodynamic or exposure-response analysis. |
@@ -128,7 +124,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Mogielnicki_2026 | not_relevant | 2 | 1 | The study is a retrospective real-world effectiveness analysis that qualitatively mentions a dose-response relationship but does not provide numeric PD parameters (e.g., Emax, EC50) or an extractable concentration-effect curve. |
 | popPK | Myers_2000 | irrelevant | 0 | 0 | The study is a clinical dose-response trial for hypertension treatment and does not report pharmacokinetic parameters for indapamide. |
 | popPK | Nazaret_1987 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on ion transport in red blood cells and does not report pharmacokinetic parameters for indapamide. |
-| PGx | Peces_2023 | not_relevant | 0 | 0 | The paper reports a genetic variant causing Gordon syndrome and notes clinical response to indapamide, but does not report pharmacogenomic effects on indapamide's PK or PD parameters. |
+| PGx | Peces_2023 | not_relevant | 0 | 0 | The paper reports a genetic variant causing Gordon syndrome and its clinical response to indapamide, but does not report pharmacokinetic or pharmacodynamic parameters of the drug itself. |
 | popPK | Pickkers_1998 | irrelevant | 0 | 0 | The study investigates the mechanism of vasodilation (pharmacodynamics) rather than pharmacokinetic disposition parameters, and indapamide serves as a comparator showing no direct vascular effect. |
 | popPK | Prisant_2000 | irrelevant | 0 | 0 | The study is a clinical efficacy trial evaluating blood pressure reduction and does not report pharmacokinetic parameters for indapamide. |
 | PD | Prisant_2000 | not_relevant | 2 | 1 | The paper reports clinical efficacy (blood pressure reduction) for indapamide 2.5 mg but does not provide concentration-effect data, PK/PD modeling, or numeric PD parameters (e.g., Emax, EC50). |
@@ -141,13 +137,13 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Sun_2009 | not_relevant | 0 | 0 | The paper describes in vitro metabolic pathways and enzyme kinetics of indapamide by CYP3A4, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | popPK | Tamura_1990 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding indapamide pharmacokinetics. |
 | PD | Tamura_1990 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain any scientific content, pharmacodynamic data, or information regarding indapamide. |
-| popPK | Turgeon_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of indapamide's effect on cardiac potassium currents, not a pharmacokinetic study. |
+| popPK | Turgeon_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of indapamide's effect on potassium currents in guinea pig myocytes, not a pharmacokinetic study. |
 | popPK | Usui_1978 | irrelevant | 0 | 0 | The paper is an in-vitro/in-vivo pharmacodynamic study investigating the mechanism of action (vascular relaxation and sympathetic effects) of indapamide, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Walch_2026 | irrelevant | 0 | 0 | The paper is a methodological review on chronotherapy trial design that uses generic mathematical simulations and mentions indapamide only as an example of a drug for adherence monitoring, without reporting any specific pharmacokinetic parameters for it. |
+| popPK | Walch_2026 | irrelevant | 0 | 0 | The paper is a methodological review on trial design for hypertension chronotherapy and does not report quantitative pharmacokinetic parameters for indapamide. |
 | PD | Walch_2026 | not_relevant | 0 | 0 | The paper is a methodological review on chronotherapy trial design using hypothetical simulations and does not report any experimental pharmacodynamic data or numeric PD parameters for indapamide. |
-| PGx | Yan_2012 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (CYP inhibition by other antihypertensives) and does not report any pharmacogenomic effects (gene variants/genotypes) on indapamide PK/PD. |
+| PGx | Yan_2012 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP inhibition by other antihypertensives) in rats and human liver microsomes, not pharmacogenomic effects of gene variants on indapamide PK/PD. |
 | PGx | Yi_2023 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between Allisartan and Indapamide, not a pharmacogenomic effect. |
-| popPK | Zhao_2024 | irrelevant | 0 | 0 | The paper is a statistical analysis plan for a clinical trial comparing antihypertensive efficacy, not a pharmacokinetic study, and contains no PK parameters for indapamide. |
+| popPK | Zhao_2024 | irrelevant | 0 | 0 | The paper is a statistical analysis plan for a clinical trial evaluating the antihypertensive efficacy of drug combinations, not a pharmacokinetic study, and contains no PK parameters for indapamide. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Alprazolam_Klein2026_body_weight_50_kg",
+ "molar_masses": {
+  "central.C": 0.308765
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.0
+ ],
+ "parameters": {
+  "Cl": 1.976111111111111e-06,
+  "F": 1.0,
+  "MM": 0.308765,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0009647142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-06,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14645.290581162324
+ },
+ "reference_peaks": {
+  "central.C": 1.954201279184183e-05
+ },
+ "stop_time": 126000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;finerenone&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/&quot;},{&quot;label&quot;:&quot;Snelder_2020 \u00b7 PD estimated glomerular filtration rate (CKD-EPI)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;finerenone&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/&quot;},{&quot;label&quot;:&quot;Snelder_2020 \u00b7 PD estimated glomerular filtration rate&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# estimated glomerular filtration rate (CKD-EPI) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.271). The first reading is what the record holds.">cross-check: disputed</span>
+# estimated glomerular filtration rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.271). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives estimated glomerular filtration rate (CKD-EPI): indirect response — drug inhibits the production of estimated glomerular filtration rate (CKD-EPI).
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives estimated glomerular filtration rate (in mL/min/1.73 m2): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
@@ -23,65 +23,17 @@
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Snelder_2020`
-- **model family:** `indirect_response_i`
+- **model family:** `effect_compartment`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 64.1 | kg | not captured | llm_corrected (not captured) | Tab3:row0:col4 |
-| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 24.2 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row0:col5 |
-| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 49 | years | not captured | llm_corrected (not captured) | Tab3:row0:col6 |
-| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 33.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col7 |
-| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 33.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col8 |
-| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 3.6 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row0:col9 |
-| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 33.7 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row0:col10 |
-| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 54 | kg | not captured | llm_corrected (not captured) | Tab3:row1:col4 |
-| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 21.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row1:col5 |
-| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 44 | years | not captured | llm_corrected (not captured) | Tab3:row1:col6 |
-| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 41.0 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col7 |
-| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 42.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col8 |
-| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 3.6 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row1:col9 |
-| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 38.5 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row1:col10 |
-| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 90.6 | kg | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
-| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 31.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row2:col5 |
-| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 65 | years | not captured | llm_corrected (not captured) | Tab3:row2:col6 |
-| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 63.9 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
-| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 66.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col8 |
-| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 4.3 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row2:col9 |
-| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 192.4 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row2:col10 |
-| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 71.6 | kg | not captured | llm_corrected (not captured) | Tab3:row3:col4 |
-| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 26.5 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row3:col5 |
-| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 64 | years | not captured | llm_corrected (not captured) | Tab3:row3:col6 |
-| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 61.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col7 |
-| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 64.6 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col8 |
-| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 4.2 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row3:col9 |
-| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 216.4 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row3:col10 |
-| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 126.3 | kg | not captured | llm_corrected (not captured) | Tab3:row4:col4 |
-| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 41.7 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row4:col5 |
-| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row4:col6 |
-| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 102.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col7 |
-| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 101.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col8 |
-| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 5.0 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row4:col9 |
-| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 1626 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row4:col10 |
-| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 100 | kg | not captured | llm_corrected (not captured) | Tab3:row5:col4 |
-| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 34.6 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row5:col5 |
-| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row5:col6 |
-| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 87.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col7 |
-| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 85.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col8 |
-| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 4.8 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row5:col9 |
-| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 1345 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row5:col10 |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

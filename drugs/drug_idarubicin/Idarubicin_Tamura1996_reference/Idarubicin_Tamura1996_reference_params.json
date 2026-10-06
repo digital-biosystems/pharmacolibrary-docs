@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Idarubicin_Tamura1996_reference",
+ "molar_masses": {
+  "central.C": 0.4974939
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.286111111111111e-05,
+  "F": 1.0,
+  "MM": 0.4974939,
+  "VdPerKg": 0.013355714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066211
+ },
+ "reference_peaks": {
+  "central.C": 1.061827582508317e-05
+ },
+ "stop_time": 169200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

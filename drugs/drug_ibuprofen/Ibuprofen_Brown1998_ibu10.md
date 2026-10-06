@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Brown_1998 \u00b7 ibu10&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu05&quot;,&quot;label&quot;:&quot;Brown_1998_ibu05&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu10&quot;,&quot;label&quot;:&quot;Brown_1998_ibu10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibuprofen — `Ibuprofen_Brown1998_ibu10`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8), gpt-5.6-luna (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -21,11 +21,11 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — ibuprofen: kabs 8.22 1/h, λ2 0.57, t1/2z 1.37 h, AUC∞ 105 ng/ml*h, V/F 0.22 L/kg, CL/F 0.11 L/kg/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which compound was dosed: this record has ibuprofen, the second reading acetaminophen or ibuprofen; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:19.048196+00:00) predates the upstream re-run (2026-10-02 13:30:22.431464+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:19.048196+00:00) predates the upstream re-run (2026-10-06 11:52:16.187225+00:00). Current validate status: `extracted`.
 
 ## Citation
 Brown RD et al., Integrated pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (1998)
@@ -34,20 +34,21 @@ Brown RD et al., Integrated pharmacokinetic-pharmacodyna…, Journal of pharmaco
 ## Model component
 <dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Brown1998_ibu10" status="extracted" stale="true" population="febrile children" measured-compound="ibuprofen" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| kₐ (hr⁻¹) | `Q49` · kabs | 8.22 | hr⁻¹ | 0.0022833333333333334 | [1] / [h] | not captured | exact (1.0) | Brown_1998_table_3:row2:col3, Brown_1998_table_3:row3:col3 | — | not captured |
-| β (hr⁻¹) | `Q47` · kel | 0.57 | hr⁻¹ | 0.00015833333333333332 | [1] / [h] | not captured | exact (1.0) | Brown_1998_table_3:row4:col3, Brown_1998_table_3:row5:col3 | — | not captured |
-| T₁/₂ (hr) | `Q57` · t1/2z | 1.37 | hr | 4932.0 | [h] | not captured | exact (1.0) | Brown_1998_table_3:row6:col3, Brown_1998_table_3:row7:col3 | — | not captured |
-| AUC₀-∞ (μg/ml*hr) | `Q17` · AUC∞ | 104.99 | μg/ml*hr | not captured | [µg] / [[h] · [ml]] | not captured | exact (1.0) | Brown_1998_table_4:row0:col3, Brown_1998_table_4:row1:col3 | — | not captured |
-| Va/F (L/kg) | `Q76` · V/F | 0.22 | L/kg | 0.0154 | [l] / [kg] | not captured | llm (0.6) | Brown_1998_table_4:row2:col3, Brown_1998_table_4:row3:col3 | — | not captured |
-| Clp/F (L/kg/hr) | `Q27` · CL/F | 0.11 | L/kg/hr | 2.138888888888889e-06 | [l] / [[h] · [kg]] | not captured | special_case (0.95) | Brown_1998_table_4:row4:col3, Brown_1998_table_4:row5:col3 | — | not captured |
+| tₗₐg (hr) x̄ | `Q83` · tlag | 0.29 | hr | 1044.0 | [h] | not captured | exact (1.0) | Brown_1998_table_3:row0:col3 | — | not captured |
+| kₐ (hr⁻¹) x̄ | `Q49` · kabs | 8.22 | hr⁻¹ | 0.0022833333333333334 | [1] / [h] | not captured | exact (1.0) | Brown_1998_table_3:row2:col3 | — | not captured |
+| β (hr⁻¹) x̄ | `Q47` · kel | 0.57 | hr⁻¹ | 0.00015833333333333332 | [1] / [h] | not captured | exact (1.0) | Brown_1998_table_3:row4:col3 | — | not captured |
+| T₁/₂ (hr) x̄ | `Q57` · t1/2z | 1.37 | hr | 4932.0 | [h] | not captured | exact (1.0) | Brown_1998_table_3:row6:col3 | — | not captured |
+| AUC₀→∞ (µg/ml*hr) x̄ | `Q17` · AUC∞ | 104.99 | µg/ml*hr | not captured | [µg] / [[h] · [ml]] | not captured | exact (1.0) | Brown_1998_table_4:row0:col3 | — | not captured |
+| Vd/F (L/kg) x̄ | `Q76` · V/F | 0.22 | L/kg | 0.0154 | [l] / [kg] | not captured | exact (1.0) | Brown_1998_table_4:row2:col3 | — | not captured |
+| Clp/F (L/kg/hr) x̄ | `Q27` · CL/F | 0.11 | L/kg/hr | 2.138888888888889e-06 | [l] / [[h] · [kg]] | not captured | special_case (0.95) | Brown_1998_table_4:row4:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,14 +57,23 @@ Brown RD et al., Integrated pharmacokinetic-pharmacodyna…, Journal of pharmaco
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'tᵢₙg (hr)' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row0:col3', 'Brown_1998_table_3:row1:col3'])
+- dropped unlinked row (NIL): 'tₗₐg (hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row1:col3'])
+- dropped unlinked row (NIL): 'kₐ (hr⁻¹) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row3:col3'])
+- dropped unlinked row (NIL): 'β (hr⁻¹) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row5:col3'])
+- dropped unlinked row (NIL): 'T₁/₂ (hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row7:col3'])
 - dropped unlinked row (NIL): 'Total n' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_3:row8:col3', 'Brown_1998_table_4:row6:col3'])
+- dropped unlinked row (NIL): 'AUC₀→∞ (µg/ml*hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_4:row1:col3'])
+- dropped unlinked row (NIL): 'Vd/F (L/kg) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_4:row3:col3'])
+- dropped unlinked row (NIL): 'Clp/F (L/kg/hr) SE' — extend the ontology if this is a real PK parameter (source ['Brown_1998_table_4:row5:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ibuprofen
 - population split: 'ibu10' subgroup of Brown_1998 (paper reports 2 populations: ibu05, ibu10)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -74,22 +84,20 @@ Brown RD et al., Integrated pharmacokinetic-pharmacodyna…, Journal of pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 | `gpt-5.6-luna` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `screen.dose_compound` | ibuprofen | acetaminophen or ibuprofen | mismatch |
 | `gpt-5.6-luna` | `screen.primary_analyte` | ibuprofen | acetaminophen and ibuprofen | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | ibuprofen | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ibuprofen | unknown | mismatch |
 
 </details>
 
@@ -103,20 +111,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 1.82 | 1.386 | 0.7615 | 0.25 | reported t½β |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Brown_1998_table_4:row0:col3', 'Brown_1998_table_4:row1:col3'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Brown_1998_table_4:row4:col3', 'Brown_1998_table_4:row5:col3'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row4:col3', 'Brown_1998_table_3:row5:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row2:col3', 'Brown_1998_table_3:row3:col3'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row6:col3', 'Brown_1998_table_3:row7:col3'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Brown_1998_table_4:row2:col3', 'Brown_1998_table_4:row3:col3'] |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Brown_1998_table_4:row0:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Brown_1998_table_4:row4:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row4:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row2:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row6:col3'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Brown_1998_table_4:row2:col3'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Brown_1998_table_3:row0:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 7.7 L/h | not captured | not captured | ['Brown_1998_table_4:row4:col3', 'Brown_1998_table_4:row5:col3'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 15.4 L | not captured | not captured | ['Brown_1998_table_4:row2:col3', 'Brown_1998_table_4:row3:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 7.7 L/h | not captured | not captured | ['Brown_1998_table_4:row4:col3'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 15.4 L | not captured | not captured | ['Brown_1998_table_4:row2:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -134,21 +143,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_modelica.zip" download>Ibuprofen_Brown1998_ibu10_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_fmi.zip" download>Ibuprofen_Brown1998_ibu10_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_matlab.zip" download>Ibuprofen_Brown1998_ibu10_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_matlab_simbio.zip" download>Ibuprofen_Brown1998_ibu10_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_sbml.zip" download>Ibuprofen_Brown1998_ibu10_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_cellml.zip" download>Ibuprofen_Brown1998_ibu10_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10.svg" alt="Ibuprofen_Brown1998_ibu10 diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 8.22 /h, F 1). Doses in the paper: 350, 700, 875 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10/Ibuprofen_Brown1998_ibu10_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Ibuprofen_Brown1998_ibu10_params.json` · controls `Ibuprofen_Brown1998_ibu10_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 13:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:52 UTC</sub>

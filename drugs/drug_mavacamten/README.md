@@ -14,18 +14,26 @@ Mavacamten is a heart medicine used to treat hypertrophic cardiomyopathy. It is 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q105337531](https://www.wikidata.org/wiki/Q105337531) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| mavacamten | parent | 273.336 | C15H19N3O2 | DrugBank | — | Chang_2024 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 17:07 | 0:16 | 0/2/0 | 0/0/0 | 0/0/0 | 6,017/486 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 5/0 | 4/0 | 0 |
+| 2026-10-06 11:36 | 6:51 | 0/2/0 | 0/0/0 | 0/0/0 | 134,279/17,040 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/1 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Chang_2024_reference](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | held back | 1-compartment, oral | 5 | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Merali_2025_reference](drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md) | — | 1-compartment (no model) | 0 | Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chang_2024_reference](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | — | 1-compartment (no model) | 1 | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Merali_2025_reference](drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md) | — | 1-compartment (no model) | 0 | Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072) |
 
 ## ADME sites
 
@@ -52,16 +60,17 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 3  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **screened:** 3  ·  **relevant:** 1
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Merali_2024 | relevant | 8 | 3 | This is a mavacamten population PK/exposure-response modeling paper, but the actual PK parameter values are not shown here and appear to be in Table 2/supplementary material not provided. |
-| popPK | Wu_2025 | relevant | 7 | 2 | This is a mavacamten population PK/PK-PD modeling paper, but the numeric PK parameters are not shown here and are referred to as being in prior work/table/supplementary material. |
+| popPK | Merali_2024 | irrelevant | 2 | 0 | The paper focuses on exposure-response modeling and dose-titration simulations, referencing a previously developed population PK model but not reporting the quantitative PK parameter values (CL, V, etc.) for mavacamten in the provided text. |
+| popPK | Merali_2025 | irrelevant | 2 | 0 | The paper is a simulation study using a previously published PopPK model to assess dosing regimens, and it does not report the specific numeric PK parameter values (CL, V, Q, ka) for mavacamten in the provided evidence. |
+| popPK | Wu_2025 | irrelevant | 2 | 0 | The paper focuses on exposure-response modeling and dose titration simulations, and while it references a PPK model, the specific quantitative PK parameter values (CL, V, etc.) are not provided in the text, being deferred to a previous publication or supplementary materials. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 13:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 11:29 UTC</sub>
