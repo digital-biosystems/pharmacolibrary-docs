@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lanadelumab — `Lanadelumab_Wang2020_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,14 +22,16 @@ The reported ka (0.0179 1/h) is flagged as invented: the source did not report a
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:27.276998+00:00) predates the upstream re-run (2026-10-06 01:16:14.138490+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020)
   ·  DOI: [10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
 
 ## Model component
-<dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="false" population="patients with hereditary angioedema and healthy subjects" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.
 
 **Parameterization:** CL/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -48,7 +49,7 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 | Cmin,ss (µg/mL) | `Q36` · Cmin | 24.6 | µg/mL | not captured | [µg] / [ml] | 33.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row5:col4, cts12806-tbl-0001:row5:col8, cts12806-tbl-0001:row5:col12, Wang_2020_table_S14:row9:col2, Wang_2020_table_S14:row9:col3, Wang_2020_table_S14:row9:col4, Wang_2020_table_S14:row9:col5, Wang_2020_table_S14:row9:col6, Wang_2020_table_S14:row9:col7, Wang_2020_table_S14:row9:col8, Wang_2020_table_S14:row9:col9, Wang_2020_table_S14:row9:col10, Wang_2020_table_S14:row9:col11 | — | not captured |
 | Tmax (hour) | `Q56` · tmax | 98.6 | hour | 354960.0 | [h] | 21.1 | exact (1.0) | cts12806-tbl-0001:row6:col4, cts12806-tbl-0001:row6:col8, cts12806-tbl-0001:row6:col12 | — | not captured |
 | t 1/2 (hour) | `Q57` · t1/2z | 361 | hour | 1299600.0 | [h] | 13.5 | space_fold (0.95) | cts12806-tbl-0001:row7:col1, cts12806-tbl-0001:row7:col4, cts12806-tbl-0001:row7:col8, cts12806-tbl-0001:row7:col12 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 0.0179 | not captured | not captured | not captured | not captured | exact (1.0) | Wang_2020_table_S13:row1:col1, Wang_2020_table_S13:row1:col2, Wang_2020_table_S13:row1:col4, Wang_2020_table_S13:row1:col5, Wang_2020_table_S13:row1:col6 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.0179 | 1/h | 4.9722222222222224e-06 | 1/h | not captured | exact (1.0) | Wang_2020_table_S13:row1:col1, Wang_2020_table_S13:row1:col2, Wang_2020_table_S13:row1:col4, Wang_2020_table_S13:row1:col5, Wang_2020_table_S13:row1:col6 | — | not captured |
 | V/F/BW(L) | `Q353` · Vnorm/F | 0.182 | L | 0.000182 | [l] | 20.2 | llm (0.6) | Wang_2020_table_S14:row3:col2, Wang_2020_table_S14:row3:col3, Wang_2020_table_S14:row3:col4, Wang_2020_table_S14:row3:col5, Wang_2020_table_S14:row3:col6, Wang_2020_table_S14:row3:col7, Wang_2020_table_S14:row3:col8, Wang_2020_table_S14:row3:col9, Wang_2020_table_S14:row3:col10, Wang_2020_table_S14:row3:col11 | — | not captured |
 
 <details class="legend">
@@ -57,11 +58,6 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
 
 **Interpretation flags:**
 - column 'population pk analysis' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -78,10 +74,12 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 - dropped duplicate Q18 ('AUCtau,ss (µg·day/mL)', value '452') — already have one for this compound
 - dropped duplicate Q71 ('Cav,ss(µg/mL)', value '32.2') — already have one for this compound
 - dropped duplicate Q57 ('t1/2(h)', value '345') — already have one for this compound
+- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: 'Ka is a first-order absorption rate constant. The paper states the absorption half-life is 37 hours, and the value 0.017')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lanadelumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - model-stage split: 'final' is the final model of Wang_2020 (paper reports 2 stages: base, final); same population, different model-building step
+- molar mass: none found for 'lanadelumab' — its concentrations stay mass-only
 
 **Extraction notes:**
 - transposed table cts12806-tbl-0001: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -155,12 +153,12 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row4:col4', 'cts12806-tbl-0001:row4:col8', 'cts12806-tbl-0001:row4:col12', 'Wang_2020_table_S14:row8:col2', 'Wang_2020_table_S14:row8:col3', 'Wang_2020_table_S14:row8:col4', 'Wang_2020_table_S14:row8:col5', 'Wang_2020_table_S14:row8:col6', 'Wang_2020_table_S14:row8:col7', 'Wang_2020_table_S14:row8:col8', 'Wang_2020_table_S14:row8:col9', 'Wang_2020_table_S14:row8:col10', 'Wang_2020_table_S14:row8:col11'] |
 | C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2020_table_S14:row3:col2', 'Wang_2020_table_S14:row3:col3', 'Wang_2020_table_S14:row3:col4', 'Wang_2020_table_S14:row3:col5', 'Wang_2020_table_S14:row3:col6', 'Wang_2020_table_S14:row3:col7', 'Wang_2020_table_S14:row3:col8', 'Wang_2020_table_S14:row3:col9', 'Wang_2020_table_S14:row3:col10', 'Wang_2020_table_S14:row3:col11'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row5:col4', 'cts12806-tbl-0001:row5:col8', 'cts12806-tbl-0001:row5:col12', 'Wang_2020_table_S14:row9:col2', 'Wang_2020_table_S14:row9:col3', 'Wang_2020_table_S14:row9:col4', 'Wang_2020_table_S14:row9:col5', 'Wang_2020_table_S14:row9:col6', 'Wang_2020_table_S14:row9:col7', 'Wang_2020_table_S14:row9:col8', 'Wang_2020_table_S14:row9:col9', 'Wang_2020_table_S14:row9:col10', 'Wang_2020_table_S14:row9:col11'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wang_2020_table_S13:row1:col1', 'Wang_2020_table_S13:row1:col2', 'Wang_2020_table_S13:row1:col4', 'Wang_2020_table_S13:row1:col5', 'Wang_2020_table_S13:row1:col6'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row6:col4', 'cts12806-tbl-0001:row6:col8', 'cts12806-tbl-0001:row6:col12'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row7:col1', 'cts12806-tbl-0001:row7:col4', 'cts12806-tbl-0001:row7:col8', 'cts12806-tbl-0001:row7:col12'] |
 | C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row3:col4', 'cts12806-tbl-0001:row3:col8', 'cts12806-tbl-0001:row3:col12'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row1:col4', 'cts12806-tbl-0001:row1:col8', 'cts12806-tbl-0001:row1:col12', 'Wang_2020_table_S13:row5:col1', 'Wang_2020_table_S13:row5:col2', 'Wang_2020_table_S13:row5:col4', 'Wang_2020_table_S13:row5:col5', 'Wang_2020_table_S13:row5:col6'] |
 | C5_unit_missing_Q18 | fail | [mass] * [time] / [length] ** 3 | µg × day/mL | not captured | not captured | ['cts12806-tbl-0001:row2:col4', 'cts12806-tbl-0001:row2:col8', 'cts12806-tbl-0001:row2:col12'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Wang_2020_table_S13:row1:col1', 'Wang_2020_table_S13:row1:col2', 'Wang_2020_table_S13:row1:col4', 'Wang_2020_table_S13:row1:col5', 'Wang_2020_table_S13:row1:col6'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.0337 L/h | not captured | not captured | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
@@ -198,25 +196,20 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_modelica.zip" download>Lanadelumab_Wang2020_final_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_fmi.zip" download>Lanadelumab_Wang2020_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_fmi.zip" download>Lanadelumab_Wang2020_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_matlab.zip" download>Lanadelumab_Wang2020_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_matlab_simbio.zip" download>Lanadelumab_Wang2020_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_sbml.zip" download>Lanadelumab_Wang2020_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_cellml.zip" download>Lanadelumab_Wang2020_final_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final.svg" alt="Lanadelumab_Wang2020_final diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 150 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 150, 300, 400 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Lanadelumab_Wang2020_final_params.json` · controls `Lanadelumab_Wang2020_final_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 12:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 01:16 UTC</sub>

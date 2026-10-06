@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Sumner_1976 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Digoxin_Chen2013_reference&quot;,&quot;label&quot;:&quot;Chen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Chen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Ishibashi2024_reference&quot;,&quot;label&quot;:&quot;Ishibashi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Ishibashi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Komatsu2015_reference&quot;,&quot;label&quot;:&quot;Komatsu_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Komatsu2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Kramer1979_reference&quot;,&quot;label&quot;:&quot;Kramer_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Kramer1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Lin2023_reference&quot;,&quot;label&quot;:&quot;Lin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Lin2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartinSuarez2017_reference&quot;,&quot;label&quot;:&quot;Martin-Suarez_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartinSuarez2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartnSurez1993_reference&quot;,&quot;label&quot;:&quot;Mart\u00edn-Su\u00e1rez_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartnSurez1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Nagaraja2000_reference&quot;,&quot;label&quot;:&quot;Nagaraja_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Nagaraja2000_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Preechagoon2009_reference&quot;,&quot;label&quot;:&quot;Preechagoon_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Preechagoon2009_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Xu2023_reference&quot;,&quot;label&quot;:&quot;Xu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Xu2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Yukawa1992_reference&quot;,&quot;label&quot;:&quot;Yukawa_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Yukawa1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Liao2022_reference&quot;,&quot;label&quot;:&quot;Liao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Liao2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Song2020_reference&quot;,&quot;label&quot;:&quot;Song_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Song2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Digoxin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Hirai2022_reference&quot;,&quot;label&quot;:&quot;Hirai_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Hirai2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Liao2022_reference&quot;,&quot;label&quot;:&quot;Liao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Liao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Lin2023_reference&quot;,&quot;label&quot;:&quot;Lin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Lin2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartinSuarez2017_reference&quot;,&quot;label&quot;:&quot;Martin-Suarez_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartinSuarez2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartnSurez1993_reference&quot;,&quot;label&quot;:&quot;Mart\u00edn-Su\u00e1rez_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartnSurez1993_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Nagaraja2000_reference&quot;,&quot;label&quot;:&quot;Nagaraja_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Nagaraja2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Song2020_reference&quot;,&quot;label&quot;:&quot;Song_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Song2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # digoxin — `Digoxin_Sumner1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: CLR 119 ml/min, V 0.418 L/kg, kabs 2.29 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent ka: this record has 2.29, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of digoxin extra-renal clearance: this record has none, the second reading 47; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:36.021704+00:00) predates the upstream re-run (2026-10-06 02:12:11.367173+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Sumner DJ et al., Digoxin pharmacokinetics: multicompartm…, British journal of clinical… (1976)
   ·  DOI: [10.1111/j.1365-2125.1976.tb00596.x](https://doi.org/10.1111/j.1365-2125.1976.tb00596.x)
 
 ## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Sumner1976_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="digoxin" model-id="Digoxin_Sumner1976_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -43,7 +45,7 @@ Sumner DJ et al., Digoxin pharmacokinetics: multicompartm…, British journal of
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | The renal clearance of digoxin (mean +/- s.d.) | `Q26` · CLR | 119 | ml/min | 1.983333333333333e-06 | [ml] / [min] | not captured | llm_confirmed (0.6) | Sumner_1976:abstract | — | not captured |
-| V | `Q61` · V | 0.418 | L/kg | 0.029259999999999998 | L | not captured | review_gapfill (0.7) | Dong_2024:review | — | not captured |
+| Vd threshold | `Q61` · V | 5.0 | L/kg | 0.35000000000000003 | L | not captured | review_gapfill (0.7) | Hernández-Gago_2026:review | — | not captured |
 | apparent Ka | `Q49` · kabs | 2.29 | h−1 | 0.0006361111111111112 | 1/h | not captured | review_gapfill (0.7) | Dong_2024:review | — | not captured |
 
 <details class="legend">
@@ -56,32 +58,36 @@ Sumner DJ et al., Digoxin pharmacokinetics: multicompartm…, British journal of
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'glomerular filtration rate' — extend the ontology if this is a real PK parameter (source ['Sumner_1976:abstract'])
 - dropped duplicate Q26 ('Digoxin extra-renal clearance (mean+/-s.d.)', value 47) — already have one for this compound
+- dropped unlinked row (NIL): 'oral doses' — extend the ontology if this is a real PK parameter (source ['Sumner_1976:abstract'])
+- dropped unlinked row (NIL): 'oral loading dose' — extend the ontology if this is a real PK parameter (source ['Sumner_1976:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=digoxin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Dong_2024's review values (primary lacked it)
+- gap-filled Q61 (V) from Hernández-Gago_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Dong_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Sumner_1976_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Sumner_1976_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[apparent ka]` | 2.29 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[digoxin extra-renal clearance]` | not captured | 47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[oral dose]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[oral loading dose]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance of digoxin]` | not captured | 119 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[the renal clearance of digoxin]` | 119 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v]` | 0.418 | not captured | only_one_extracted |
 
 </details>
 
@@ -99,9 +105,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sumner_1976:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Dong_2024:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dong_2024:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hernández-Gago_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 29.3 L | not captured | not captured | ['Dong_2024:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 350 L | not captured | not captured | ['Hernández-Gago_2026:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 12:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 02:12 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;Bretylium&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/&quot;},{&quot;label&quot;:&quot;Garrett_1982 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Bretylium — `Bretylium_Garrett1982_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,14 +23,18 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bretylium: t1/2z 535 min, Fab 27 per cent, CLR 735 ml min-1, Vss 589 i.v., V 167 L, kabs 0.537 h−1.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bretylium, the second reading bretylium tosylate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:20.386517+00:00) predates the upstream re-run (2026-10-06 02:51:24.741450+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982)
   ·  DOI: [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206)
 
 ## Model component
-<dbs-pgx drug="Bretylium" model-id="Bretylium_Garrett1982_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Bretylium" model-id="Bretylium_Garrett1982_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -43,11 +47,11 @@ Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | terminal half-life | `Q57` · t1/2z | 535 | min | 32100.0 | [min] | not captured | llm (0.6) | Garrett_1982:abstract | — | not captured |
+| urinary recovery of unchanged drug | `Q44` · fe | 95.4 | per cent | not captured | [%] | not captured | llm (0.6) | Garrett_1982:abstract | — | not captured |
 | bioavailabilities | `Q40` · Fab | 27 | per cent | not captured | not captured | not captured | llm (0.6) | Garrett_1982:abstract, Garrett_1982:abstract | — | not captured |
-| renal clearances | `Q26` · CLR | 735 | ml min-1 | 1.225e-05 | [ml] / [min] | not captured | llm_confirmed (0.6) | Garrett_1982:abstract, Garrett_1982:abstract, Garrett_1982:abstract, Garrett_1982:abstract, Garrett_1982:abstract, Garrett_1982:abstract | — | not captured |
-| Apparent overall volumes of distribution | `Q65` · Vss | 589 | i.v. | not captured | [i] · [v] | not captured | llm (0.6) | Garrett_1982:abstract | — | not captured |
-| population estimate for V | `Q61` · V | 167.0 | L | 0.167 | L | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
-| population mean absorption rate constant | `Q49` · kabs | 0.537 | h−1 | 0.00014916666666666667 | 1/h | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
+| Renal clearances | `Q26` · CLR | 735 | ml min-1 | 1.225e-05 | [ml] / [min] | not captured | llm_confirmed (0.6) | Garrett_1982:abstract, Garrett_1982:abstract, Garrett_1982:abstract | — | not captured |
+| Apparent overall volumes of distribution | `Q65` · Vss | 589 | L | 0.589 | L | not captured | llm (0.6) | Garrett_1982:abstract, Garrett_1982:abstract | — | not captured |
+| V | `Q61` · V | 167.0 | L | 0.167 | L | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,8 +62,9 @@ Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics 
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('apparent half-life of first-order invasion', value 79) — already have one for this compound
-- dropped unlinked row (NIL): 'urinary recovery of unchanged drug' — extend the ontology if this is a real PK parameter (source ['Garrett_1982:abstract'])
 - unit_dimension_unknown: 'i.v.' (Vss)
+- dropped duplicate Q26 ('renal clearances', value 84) — already have one for this compound
+- implicit units: 'Apparent overall volumes of distribution' → L (from the popPK convention: 'The parameter is an apparent volume of distribution (Vss). In population pharmacokinetics, volumes of distribution are c')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bretylium
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -67,27 +72,56 @@ Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics 
 - gap-filled Q61 (V) from Greenberg_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Greenberg_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Garrett_1982_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Garrett_1982_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss:120b` | `parameters[apparent half-life of first-order invasion]` | not captured | 79 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent overall volume of distribution]` | not captured | 589 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent overall volumes of distribution]` | 589 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailabilities]` | 27 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance]` | not captured | 735 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearances]` | 735 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tablets bioavailability]` | not captured | 27 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | bretylium | bretylium tosylate | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Greenberg_2022:review'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract'] |
+| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Garrett_1982:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Garrett_1982:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Greenberg_2022:review'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | i.v. | not captured | not captured | ['Garrett_1982:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Garrett_1982:abstract', 'Garrett_1982:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 167 L | not captured | not captured | ['Greenberg_2022:review'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 589 L | not captured | not captured | ['Garrett_1982:abstract', 'Garrett_1982:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -122,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 14:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 02:51 UTC</sub>

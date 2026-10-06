@@ -4,7 +4,7 @@
 
 # tocainide — `Tocainide_Lalka1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,34 +20,35 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tocainide: Cmax 0.0067 mcg/ml, AUC 6 min mcg/ml, CLR 59 ml/min, t1/2β 11 hr, CL 166 ml/min, Fab 100 %, V 3.3 l/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 100, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tocainide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:49.803475+00:00) predates the upstream re-run (2026-10-06 05:03:02.925116+00:00). Current validate status: `rejected`.
 
 ## Citation
 Lalka D et al., Kinetics of the oral antiarrhythmic lid…, Clinical pharmacology and t… (1976)
   ·  DOI: [10.1002/cpt1976196757](https://doi.org/10.1002/cpt1976196757)
 
 ## Model component
-<dbs-pgx drug="tocainide" model-id="Tocainide_Lalka1976_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tocainide" model-id="Tocainide_Lalka1976_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Peak blood levels (CB max) ... slopes | `Q32` · Cmax | 0.0067 | mcg/ml | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Lalka_1976:abstract | — | not captured |
-| area under the blood concentration-time curve (AUC) ... slopes | `Q88` · AUC | 6 | min mcg/ml | not captured | [[min] · [µg]] / [ml] | not captured | llm_confirmed (0.6) | Lalka_1976:abstract | — | not captured |
 | Renal clearance of tocainide | `Q26` · CLR | 59 | ml/min | 9.833333333333334e-07 | [ml] / [min] | not captured | llm_confirmed (0.6) | Lalka_1976:abstract, Lalka_1976:abstract | — | not captured |
 | t 1/2 beta | `Q60` · t1/2β | 11 | hr | 39600.0 | [h] | not captured | llm_corrected (0.6) | Lalka_1976:abstract | — | not captured |
 | total body clearance | `Q22` · CL | 166 | ml/min | 2.7666666666666667e-06 | [ml] / [min] | not captured | llm_confirmed (0.6) | Lalka_1976:abstract | — | not captured |
 | Bioavailability | `Q40` · Fab | 100 | % | not captured | not captured | not captured | exact (1.0) | Lalka_1976:abstract | — | not captured |
-| V(l/kg) | `Q61` · V | 3.3 | l/kg | 0.231 | L | not captured | review_gapfill (0.7) | MacMahon_1985:review | — | not captured |
+| CB max | `Q32` · Cmax | 40 | % | not captured | [%] | not captured | llm (0.6) | Lalka_1976:abstract | — | not captured |
+| V(l/kg) | `Q61` · V | 2.75 | l/kg | 0.19249999999999998 | L | not captured | review_gapfill (0.7) | MacMahon_1985:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,11 +58,12 @@ Lalka D et al., Kinetics of the oral antiarrhythmic lid…, Clinical pharmacolog
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'min mcg/ml' (AUC)
+- dropped value-less row: 'Peak blood levels (CB max)' (captured trailing unit 'CB max' for child rows)
+- dropped value-less row: 'area under the blood concentration-time curve (AUC)' (captured trailing unit 'AUC' for child rows)
 - unit_dimension_mismatch: 'CB max' → Q32 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q32 ('CB max', value 40) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tocainide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from MacMahon_1985's review values (primary lacked it)
@@ -78,20 +80,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 100 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[area under the blood concentration-time curve (auc) ... slopes]` | 6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | not captured | 6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability]` | 100 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak blood levels (cb max) ... slopes]` | 0.0067 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cb max]` | 40 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cb max]` | not captured | 0.0067 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[renal clearance of tocainide]` | 59 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance of tocainide]` | not captured | 59 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 beta]` | 11 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 beta]` | not captured | 11 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance]` | 166 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v]` | 3.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 166 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | tocainide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | tocainide | unknown | mismatch |
 
 </details>
 
@@ -105,19 +112,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lalka_1976:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lalka_1976:abstract', 'Lalka_1976:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Lalka_1976:abstract'] |
+| C5_dimension_Q32 | fail | dimensionless | % | not captured | not captured | ['Lalka_1976:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Lalka_1976:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['MacMahon_1985:review'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | min mcg/ml | not captured | not captured | ['Lalka_1976:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 166.0 | not captured | not captured | ['Lalka_1976:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.96 L/h | not captured | not captured | ['Lalka_1976:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 231 L | not captured | not captured | ['MacMahon_1985:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 192 L | not captured | not captured | ['MacMahon_1985:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,19 +137,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -152,4 +148,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 17:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 05:03 UTC</sub>

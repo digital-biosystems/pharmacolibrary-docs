@@ -4,7 +4,7 @@
 
 # lidocaine — `Lidocaine_Kim2021_estimate`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.519). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.033). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,38 +22,42 @@
 
 The record lists lidocaine parameters already adjusted for bioavailability (V1/F, V2/F, Q/F, CLm1/F), yet the coherence check found a double correction applied to these apparent parameters. A dimension mismatch was flagged on a structural parameter, and the clearance/volume values fell outside a physiological window, consistent with a unit or scale extraction error. One reported unit could not be converted to SI, so that parameter was carried without an SI value. The second reader additionally supplied relative standard errors absent from this record (e.g., CLd/F 0.37%, CLm1/F 15.31%, Fm1 1.06%) and classified the absorption half-life parameter (t1/2ka, 5.92 h−1) differently from this record. Extracted — lidocaine: t1/2ka 5.92 h−1, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.13 L/h, FR 0.373, MTT 0.64 h, Vmax 4.24e+05 nmol/h, Km 1.37e+05 nmol/L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cld/f].rse_percent`: this record has none, the second reading 0.37; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lidocaine, the second reading unknown; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:22.103729+00:00) predates the upstream re-run (2026-10-06 03:23:01.467421+00:00). Current validate status: `rejected`.
 
 ## Citation
 Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203)
 
 ## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="lidocaine" model-id="Lidocaine_Kim2021_estimate" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 13 extracted.
 
-**Parameterization:** CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka1 (h−1) | `Q95` · t1/2ka | 5.92 | h−1 | not captured | [1] / [h] | not captured | llm (0.6) | pharmaceutics-13-00203-t004:row3:col2 | — | not captured |
+| Ka1 (h−1) | `Q49` · kabs | 5.92 | h−1 | 0.0016444444444444445 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row3:col2 | — | not captured |
 | V1/F (L) | `Q290` · V1/F | 2.57 | L | 0.00257 | [l] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row4:col2 | — | not captured |
 | V2/F (L) | `Q82` · V2/F | 0.07 | L | 7.000000000000001e-05 | [l] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row5:col2 | — | not captured |
 | CLd/F (L/h) | `Q69` · Q/F | 0.13 | L/h | 3.611111111111111e-08 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row6:col2 | — | not captured |
 | Fr | `Q43` · FR | 0.373 | not captured | not captured | not captured | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row7:col2 | — | not captured |
 | MTT (h) | `Q81` · MTT | 0.64 | h | not captured | [h] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row8:col2 | — | not captured |
+| Ka2(h−1) | `Q49` · kabs | 1.67 | h−1 | 0.00046388888888888885 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row10:col2 | — | not captured |
 | Vmax (nmol/h) | `Q66` · Vmax | 423962.94 | nmol/h | not captured | [nM] / [h] | not captured | special_case (0.95) | pharmaceutics-13-00203-t004:row11:col2 | — | 0.08 (None% RSE) |
 | Km (nmol/L) | `Q1` · Km | 136808.67 | nmol/L | not captured | [nM] / [l] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row12:col2 | — | 0.17 (None% RSE) |
-| CLm1/F (L/h) | `Q351` · CLm/F | 14.94 | L/h | 4.15e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | pharmaceutics-13-00203-t004:row13:col2 | — | not captured |
-| Fm1 | `Q45` · fm | 0.65 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00203-t004:row14:col2 | — | not captured |
-| ε1 | `Q900` · equation variable | 0.49 | Lower, Upper | not captured | [l] · [ower] | not captured | llm (0.6) | pharmaceutics-13-00203-t004:row25:col2 | — | not captured |
+| CLm1/F (L/h) | `Q27` · CL/F | 14.94 | L/h | 4.15e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row13:col2 | — | not captured |
+| Fm1 | `Q45` · fm | 0.65 | not captured | not captured | not captured | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row14:col2 | — | not captured |
+| CLm2/F (L/h) | `Q27` · CL/F | 1.09 | L/h | 3.027777777777778e-07 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row15:col2 | — | not captured |
+| Fm2 | `Q45` · fm | 0.47 | not captured | not captured | not captured | not captured | exact (1.0) | pharmaceutics-13-00203-t004:row16:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,22 +67,21 @@ Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021)
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Ka1 (h−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
+- table section residual_error: 'ε1' routed out of structural estimates ('Residual error')
+- table section residual_error: 'ε2' routed out of structural estimates ('Residual error')
+- table section residual_error: 'ε3' routed out of structural estimates ('Residual error')
 - dropped unlinked row (NIL): 'Ntr' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00203-t004:row9:col2'])
-- unit_dimension_mismatch: 'Ka2(h−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
-- dropped duplicate Q95 ('Ka2(h−1)', value '1.67') — already have one for this compound
 - unit_dimension_mismatch: 'Vmax (nmol/h)' → Q66 (unit '[substance] / [time]' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'Km (nmol/L)' → Q1 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q351 ('CLm2/F (L/h)', value '1.09') — already have one for this compound
-- dropped duplicate Q45 ('Fm2', value '0.47') — already have one for this compound
-- unit_dimension_unknown: 'Lower, Upper' (equation variable)
-- dropped unlinked row (NIL): 'ε2' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00203-t004:row26:col2'])
-- dropped unlinked row (NIL): 'ε3' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00203-t004:row27:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lidocaine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: none — a metabolite is formed from another metabolite (a chain)
 - status held at route_to_review — not promoted
 - population split: 'estimate' subgroup of Kim_2021 (paper reports 12 populations: (0.3% solution, iv), (0.3% solution, sc), (lha 0.3%, sc), (lha 1%, sc), (lha 3%, sc), estimate, group 1, group 2, group 3, group 4, group 5, gx)
+- row roles (LLM): model_class=compartmental; 28/28 row label(s) assigned, 18 linked by role; re-tagged parent→monoethylglycylxylidide ×6, parent→glycylxylidide ×4
+- fm scheme: monoethylglycylxylidide = Fm1 = 0.65 of CL, glycylxylidide = Fm1*Fm2 = 0.305 of CL
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell pharmaceutics-13-00203-t004:row3:col4 = '(5.19, 6.64)'
@@ -118,25 +121,41 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.519 (14/27 fields) | 13 |
+| `gpt-oss:120b` | not confirmed | 0.033 (1/30 fields) | 29 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>29 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cld/f].rse_percent` | not captured | 0.37 | mismatch |
-| `gpt-oss:120b` | `parameters[clm1/f].rse_percent` | not captured | 15.31 | mismatch |
-| `gpt-oss:120b` | `parameters[fm1].rse_percent` | not captured | 1.06 | mismatch |
-| `gpt-oss:120b` | `parameters[fr].rse_percent` | not captured | 1.19 | mismatch |
-| `gpt-oss:120b` | `parameters[ka1].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[ka1].rse_percent` | not captured | 12.97 | mismatch |
-| `gpt-oss:120b` | `parameters[km].rse_percent` | not captured | 18.62 | mismatch |
-| `gpt-oss:120b` | `parameters[mtt].rse_percent` | not captured | 11.35 | mismatch |
+| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['lidocaine', 'gx', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[cld/f]` | 0.13 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cld/f]` | not captured | 0.13 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm1/f]` | not captured | 14.94 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm1/f]` | 14.94 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm2/f]` | not captured | 1.09 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm2/f]` | 1.09 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fm1]` | not captured | 0.65 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fm1]` | 0.65 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fm2]` | not captured | 0.47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fm2]` | 0.47 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fr]` | 0.373 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fr]` | not captured | 0.373 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka1]` | 5.92 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka1]` | not captured | 5.92 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka2]` | 1.67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km]` | 136808.67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[km]` | not captured | 136808.67 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mtt]` | 0.64 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mtt]` | not captured | 0.64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ntr]` | not captured | 4.97 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f].rse_percent` | not captured | 13.66 | mismatch |
-| `gpt-oss:120b` | `parameters[v2/f].rse_percent` | not captured | 3.22 | mismatch |
-| `gpt-oss:120b` | `parameters[vmax].rse_percent` | not captured | 10.05 | mismatch |
-| `gpt-oss:120b` | `parameters[ε1]` | 0.49 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f]` | 2.57 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f]` | not captured | 2.57 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f]` | 0.07 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f]` | not captured | 0.07 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vmax]` | 423962.94 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vmax]` | not captured | 423962.94 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | lidocaine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | lidocaine | unknown | mismatch |
 
 </details>
 
@@ -150,18 +169,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['pharmaceutics-13-00203-t004:row12:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row13:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row15:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row4:col2'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row13:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row10:col2'] |
 | C5_dimension_Q66 | fail | [substance] / [time] | nmol/h | not captured | not captured | ['pharmaceutics-13-00203-t004:row11:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row6:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00203-t004:row5:col2'] |
-| C5_dimension_Q95 | fail | 1 / [time] | h−1 | not captured | not captured | ['pharmaceutics-13-00203-t004:row3:col2'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | Fm=0.65 present with apparent parameterization | not captured | not captured | not captured |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 14.9 L/h | not captured | not captured | ['pharmaceutics-13-00203-t004:row13:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.09 L/h | not captured | not captured | ['pharmaceutics-13-00203-t004:row15:col2'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 2.57 L | not captured | not captured | ['pharmaceutics-13-00203-t004:row4:col2'] |
 | C9_phys_window_Q82 | fail | volume within physiological range | 0.07 L | not captured | not captured | ['pharmaceutics-13-00203-t004:row5:col2'] |
 
@@ -188,4 +211,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:23 UTC</sub>

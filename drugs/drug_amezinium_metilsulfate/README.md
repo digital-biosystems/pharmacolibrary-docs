@@ -18,7 +18,7 @@ Amezinium metilsulfate is a cardiac stimulant belonging to the adrenergic and do
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 16:23 | 3:33 | 0/0/0 | 0/0/0 | 0/0/0 | 54,578/3,256 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 04:02 | 1:02 | 0/0/0 | 0/0/0 | 0/0/0 | 27,390/1,702 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -43,31 +43,31 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kaumeier_1981.pdf` | Kaumeier S et al., Absolute bioavailability of amezinium.…, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [7197980](https://pubmed.ncbi.nlm.nih.gov/7197980) | The study reports quantitative pharmacokinetic parameters including half-lives, volume of distribution, and bioavailability for amezinium metilsulfate. |
-| `Traut_1981.pdf` | Traut M et al., Pharmacokinetics of amezinium in man, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [7197975](https://pubmed.ncbi.nlm.nih.gov/7197975) | The paper reports quantitative pharmacokinetic parameters for amezinium metilsulfate, including bioavailability, volume of distribution, and half-life, directly in the text. |
-| `Brode_1983.pdf` | Brode E et al., The pharmacokinetics of ameziniummetils…, Arzneimittel-Forschung (1983) | popPK | 9 | not captured | [6686052](https://pubmed.ncbi.nlm.nih.gov/6686052) | The paper reports quantitative pharmacokinetic parameters (half-lives for absorption, distribution, and elimination) for amezinium metilsulfate in humans, but specific values for clearance (CL) or volume of distribution (V) are not explicitly listed in the provided text. |
-| `Traut_1981_2.pdf` | Traut M et al., Pharmacokinetics of amezinium in rat an…, Arzneimittel-Forschung (1981) | popPK | 9 | not captured | [7197974](https://pubmed.ncbi.nlm.nih.gov/7197974) | The paper reports quantitative pharmacokinetic parameters (absorption half-lives, terminal half-lives, tissue distribution ratios) for amezinium metilsulfate in rats and dogs, with specific numeric values provided in the text. |
-| `Nambu_1988.pdf` | Nambu K et al., Disposition and metabolism of [14C]-ame…, Arzneimittel-Forschung (1988) | popPK | 8 | not captured | [3207436](https://pubmed.ncbi.nlm.nih.gov/3207436) | The study reports quantitative PK parameters (Cmax, tmax, t1/2) for amezinium metilsulfate in rats, but lacks explicit clearance or volume of distribution values. |
+| `Brode_1983.pdf` | Brode E et al., The pharmacokinetics of ameziniummetils…, Arzneimittel-Forschung (1983) | popPK | 10 | not captured | [6686052](https://pubmed.ncbi.nlm.nih.gov/6686052) | The abstract reports specific half-life values (0.6 h, 3.0 h, 12.0 h) for absorption, distribution, and elimination in humans, though full compartmental parameters (CL, V) are not explicitly listed in the provided text. |
+| `Kaumeier_1981.pdf` | Kaumeier S et al., Absolute bioavailability of amezinium.…, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [7197980](https://pubmed.ncbi.nlm.nih.gov/7197980) | The study reports quantitative pharmacokinetic parameters including half-lives, volume of distribution, and bioavailability for amezinium metilsulfate in humans. |
+| `Traut_1981.pdf` | Traut M et al., Pharmacokinetics of amezinium in man, Arzneimittel-Forschung (1981) | popPK | 10 | not captured | [7197975](https://pubmed.ncbi.nlm.nih.gov/7197975) | The paper reports quantitative pharmacokinetic parameters (bioavailability, volume of distribution, half-life) for amezinium in humans directly in the text. |
+| `Nambu_1988.pdf` | Nambu K et al., Disposition and metabolism of [14C]-ame…, Arzneimittel-Forschung (1988) | popPK | 9 | not captured | [3207436](https://pubmed.ncbi.nlm.nih.gov/3207436) | The study reports quantitative disposition parameters (Cmax, tmax, t1/2) and mass balance data for amezinium metilsulfate in rats, though specific clearance and volume values are not explicitly listed in the text. |
+| `Traut_1981_2.pdf` | Traut M et al., Pharmacokinetics of amezinium in rat an…, Arzneimittel-Forschung (1981) | popPK | 9 | not captured | [7197974](https://pubmed.ncbi.nlm.nih.gov/7197974) | The paper reports quantitative pharmacokinetic parameters (absorption half-lives, terminal half-lives, tissue distribution ratios, and clearance descriptions) for amezinium in rats and dogs. |
 
-<sub>queue written 2026-09-20T16:23:03.043416+00:00</sub>
+<sub>queue written 2026-10-06T04:01:56.560753+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Araújo_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of amezinium methylsulphate on dog saphenous vein strips and does not report pharmacokinetic parameters. |
-| popPK | Freistühler_1992 | irrelevant | 0 | 0 | The paper is a clinical case report on Shy-Drager syndrome where amezinium methylsulfate is used as a symptomatic treatment, with no pharmacokinetic parameters reported. |
-| popPK | Harada_1998 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vasoconstrictor responses and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for amezinium metilsulfate. |
-| popPK | Ishigooka_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic evaluation of bladder contractility and does not report any pharmacokinetic parameters. |
-| popPK | Kita_1988 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting blood pressure and heart rate changes, not a pharmacokinetic study with quantitative disposition parameters. |
-| popPK | Majewski_1982 | irrelevant | 0 | 0 | The study focuses on noradrenaline pharmacokinetics in rabbits, with amezinium used only as a comparator agent to affect clearance, not as the subject drug for PK parameter extraction. |
-| popPK | Neugebauer_1983 | irrelevant | 2 | 0 | The study reports pharmacodynamic effects and plasma concentrations but does not provide quantitative pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
-| popPK | Paiva_1984 | irrelevant | 0 | 0 | The study focuses on the metabolism of 5-hydroxytryptamine in isolated dog veins, using amezinium only as a pharmacological agent to inhibit metabolism, rather than as the subject drug for PK parameter estimation. |
-| popPK | Reicheneder_1981 | irrelevant | 0 | 0 | The paper describes the synthesis and radioactive labeling of the drug, not a pharmacokinetic study with quantitative disposition parameters. |
-| popPK | Starke_1981 | irrelevant | 0 | 0 | The paper studies noradrenaline metabolism in guinea-pig atria and uses amezinium only as a tool compound to block uptake, not as the subject of pharmacokinetic analysis. |
-| popPK | Traut_1981_3 | irrelevant | 2 | 0 | The paper focuses on qualitative and quantitative metabolism (excretion of unchanged drug vs. metabolites) rather than reporting quantitative pharmacokinetic disposition parameters like clearance, volume of distribution, or half-life. |
-| popPK | Wilsmann_1981 | irrelevant | 2 | 0 | The study focuses on hemodynamic and pharmacodynamic effects (blood pressure, heart rate) rather than quantitative pharmacokinetic parameters like clearance or volume of distribution. |
-| popPK | Zumstein_1981 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of dopamine metabolism in rabbit brain slices, not a pharmacokinetic study of amezinium metilsulfate. |
+| popPK | Araújo_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of amezinium methylsulphate on dog saphenous vein strips, reporting pharmacodynamic effects (ED50, IC50) rather than pharmacokinetic disposition parameters. |
+| popPK | Freistühler_1992 | irrelevant | 0 | 0 | The paper is a clinical case report of Shy-Drager syndrome where amezinium methylsulfate is used as a therapeutic agent, but no pharmacokinetic parameters are reported. |
+| popPK | Harada_1998 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of vasoconstrictor responses and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for amezinium metilsulfate. |
+| popPK | Ishigooka_1999 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of bladder contractility, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Kita_1988 | irrelevant | 0 | 0 | The study reports clinical efficacy (blood pressure changes) but contains no pharmacokinetic parameters (CL, V, t1/2, etc.) for amezinium metilsulfate. |
+| popPK | Majewski_1982 | irrelevant | 0 | 0 | The study investigates the pharmacology of noradrenaline in rabbits, using amezinium only as a comparator agent to affect clearance, not as the subject drug for PK parameter estimation. |
+| popPK | Neugebauer_1983 | irrelevant | 2 | 0 | The study reports pharmacodynamic effects (blood pressure) and plasma concentrations, but does not provide quantitative disposition parameters (CL, V, t1/2) or a compartmental model. |
+| popPK | Paiva_1984 | irrelevant | 0 | 0 | The study investigates the metabolism of 5-hydroxytryptamine (5-HT) in dog saphenous veins, using amezinium only as a pharmacological tool to inhibit metabolism, rather than studying the pharmacokinetics of amezinium itself. |
+| popPK | Reicheneder_1981 | irrelevant | 0 | 0 | The paper describes the chemical synthesis and radioactive labeling of the drug, not its pharmacokinetic parameters. |
+| popPK | Starke_1981 | irrelevant | 0 | 0 | The study investigates noradrenaline metabolism in guinea-pig atria, and amezinium is only used as a tool compound to inhibit uptake, not as the subject drug for PK analysis. |
+| popPK | Traut_1981_3 | irrelevant | 2 | 0 | The paper describes qualitative and quantitative metabolism (excretion of unchanged drug vs metabolites) but does not report quantitative pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Wilsmann_1981 | irrelevant | 2 | 0 | The study focuses on hemodynamic and pharmacodynamic effects (blood pressure, heart rate) rather than quantitative pharmacokinetic disposition parameters (CL, V, ka). |
+| popPK | Zumstein_1981 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine metabolism in rabbit brain slices where amezinium is used as a pharmacological tool, not a PK study of amezinium itself. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

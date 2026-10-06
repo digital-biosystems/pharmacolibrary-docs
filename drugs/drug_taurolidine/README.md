@@ -18,7 +18,7 @@ Taurolidine is an anti-infective agent used as an irrigating solution, and has a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 10:09 | 3:08 | 0/0/0 | 3/0/0 | 0/0/0 | 118,717/3,396 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/6 | 5/0 | 0 |
+| 2026-10-06 00:50 | 1:45 | 0/0/0 | 1/0/0 | 0/0/0 | 80,098/1,254 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/6 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,11 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chromik_2010_apoptotic_cells](drugs/drug_taurolidine/pd_Chromik_2010_apoptotic_cells.md) | name ← Taurolidine · inhibition effect | — | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chromik_2010_necrotic_cells](drugs/drug_taurolidine/pd_Chromik_2010_necrotic_cells.md) | name ← Taurolidine · inhibition effect | — | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chromik_2010_viable_cells](drugs/drug_taurolidine/pd_Chromik_2010_viable_cells.md) | name ← Taurolidine · inhibition effect | — | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span> | [Eschenburg_2014_unknown](drugs/drug_taurolidine/pd_Eschenburg_2014_unknown.md) | Caspase-9 activity ← Taurolidine · inhibition effect | — | Eschenburg G et al., Taurolidine cooperates with antineoplas…, Genes & cancer (2014) | [10.18632/genesandcancer.36](https://doi.org/10.18632/genesandcancer.36) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Lv_2023_Inhibition_rate_of_influenza_virus_H5N1](drugs/drug_taurolidine/pd_Lv_2023_Inhibition_rate_of_influenza_virus_H5N1.md) | name ← Taurolidine · direct Emax (saturable) effect | — | Lv C et al., Taurolidine improved protection against…, Virologica Sinica (2023) | [10.1016/j.virs.2022.11.010](https://doi.org/10.1016/j.virs.2022.11.010) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Lv_2023_Inhibition_rate](drugs/drug_taurolidine/pd_Lv_2023_Inhibition_rate.md) | Inhibition rate of TRD against influenza virus H5N1 ← Taurolidine · direct sigmoid Emax (Hill) effect | — | Lv C et al., Taurolidine improved protection against…, Virologica Sinica (2023) | [10.1016/j.virs.2022.11.010](https://doi.org/10.1016/j.virs.2022.11.010) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -53,10 +49,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Stendel_2007.pdf` | Stendel R et al., Pharmacokinetics of taurolidine followi…, Clinical pharmacokinetics (2007) | popPK | 9 | [10.2165/00003088-200746060-00005](https://doi.org/10.2165/00003088-200746060-00005) | [17518510](https://pubmed.ncbi.nlm.nih.gov/17518510) | The paper is a PK study of taurolidine in humans, but the evidence text only provides qualitative descriptions (e.g., "markedly higher" volume of distribution) and in-vitro ratios, lacking specific numeric PK parameter values like CL, V, or half-life. |
-| `Gong_2007.pdf` | Gong L et al., The pharmacokinetics of taurolidine met…, Journal of clinical pharmac… (2007) | popPK | 8 | [10.1177/0091270007299929](https://doi.org/10.1177/0091270007299929) | [17395893](https://pubmed.ncbi.nlm.nih.gov/17395893) | The paper reports a PK study of taurolidine metabolites in humans, but the specific numeric parameter values (CL, V, t1/2) are not present in the provided text, which only contains qualitative descriptions. |
+| `Gong_2007.pdf` | Gong L et al., The pharmacokinetics of taurolidine met…, Journal of clinical pharmac… (2007) | popPK | 9 | [10.1177/0091270007299929](https://doi.org/10.1177/0091270007299929) | [17395893](https://pubmed.ncbi.nlm.nih.gov/17395893) | The study reports the pharmacokinetics of taurolidine's metabolites (taurultam and taurinamide) in humans, which is relevant, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Stendel_2007.pdf` | Stendel R et al., Pharmacokinetics of taurolidine followi…, Clinical pharmacokinetics (2007) | popPK | 9 | [10.2165/00003088-200746060-00005](https://doi.org/10.2165/00003088-200746060-00005) | [17518510](https://pubmed.ncbi.nlm.nih.gov/17518510) | The study reports PK parameters for taurolidine in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative descriptions. |
 
-<sub>queue written 2026-09-19T10:08:32.985196+00:00</sub>
+<sub>queue written 2026-10-06T00:49:07.254415+00:00</sub>
 
 ## Screened and excluded
 
@@ -68,22 +64,22 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Dofferhoff_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of endotoxin binding and TNF production, not a pharmacokinetic study, and reports no disposition parameters for taurolidine. |
 | PD | Dofferhoff_1993 | not_relevant | 1 | 0 | The paper mentions taurolidine qualitatively as preventing TNF rise via endotoxin neutralization but provides no numeric concentration-effect data, dose-response curve, or PD parameters for taurolidine. |
 | popPK | Eschenburg_2014 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on neuroblastoma cell lines and does not report pharmacokinetic parameters for taurolidine. |
-| popPK | Gong_2007 | relevant | 8 | 2 | The paper reports a PK study of taurolidine metabolites in humans, but the specific numeric parameter values (CL, V, t1/2) are not present in the provided text, which only contains qualitative descriptions. |
-| popPK | Görtz_1997 | irrelevant | 0 | 0 | The paper is a clinical outcome study on intra-abdominal infections and does not report any pharmacokinetic parameters for taurolidine. |
-| popPK | Huang_2022 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study focusing on autophagy and sepsis protection, containing no pharmacokinetic parameters (CL, V, etc.) for taurolidine. |
-| popPK | Lv_2023 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo mechanistic study on antiviral activity and signaling pathways, reporting no pharmacokinetic parameters for taurolidine. |
+| popPK | Gong_2007 | relevant | 9 | 2 | The study reports the pharmacokinetics of taurolidine's metabolites (taurultam and taurinamide) in humans, which is relevant, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Görtz_1997 | irrelevant | 0 | 0 | The paper reports clinical outcomes (lethality rate) of taurolidine use in intra-abdominal infections but contains no pharmacokinetic parameters or quantitative disposition data. |
+| popPK | Huang_2022 | irrelevant | 0 | 0 | The study investigates the immunological mechanism of taurolidine (autophagy induction) in sepsis, not its pharmacokinetic disposition parameters. |
+| popPK | Lv_2023 | irrelevant | 0 | 0 | The study is a mechanistic antiviral efficacy study in mice and cell cultures, reporting no pharmacokinetic parameters (CL, V, etc.) for taurolidine. |
 | popPK | Martinotti_2011 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity screening of drug combinations and does not report any pharmacokinetic parameters for taurolidine. |
 | popPK | Nguyen_2024 | irrelevant | 0 | 0 | The paper is a clinical review of taurolidine as a catheter lock solution and explicitly states that limited pharmacokinetic data are available, providing no quantitative PK parameters. |
 | PD | Nguyen_2024 | not_relevant | 1 | 0 | The text is a review/summary that explicitly states limited PK/PD data are available and only reports clinical efficacy (risk reduction) without any numeric concentration-effect or dose-response parameters. |
 | popPK | Nici_2004 | irrelevant | 0 | 0 | The study is an in-vitro and in-vivo efficacy/toxicology study reporting IC50 and tumor reduction, not a pharmacokinetic study with disposition parameters. |
 | popPK | Rimann_2014 | irrelevant | 0 | 0 | The study is an in vitro mechanistic/cytotoxicity assay (IC50) and does not report pharmacokinetic parameters for taurolidine. |
-| popPK | Rodak_2005 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study focusing on cytotoxicity and apoptosis mechanisms, reporting no pharmacokinetic parameters. |
-| popPK | Savarese_2024 | irrelevant | 0 | 0 | The study is a clinical feasibility trial for catheter lock therapy and does not report any pharmacokinetic parameters for taurolidine. |
+| popPK | Rodak_2005 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of taurolidine's antineoplastic activity and cell death mechanisms, reporting no pharmacokinetic parameters. |
+| popPK | Savarese_2024 | irrelevant | 0 | 0 | The study is a clinical feasibility trial of taurolidine lock therapy for catheter-related infections and does not report any pharmacokinetic parameters. |
 | popPK | Schubert_2020 | irrelevant | 0 | 0 | The study is an in-vitro/ex-vivo feasibility study on foam-based drug delivery and cytotoxicity, reporting no pharmacokinetic parameters (CL, V, etc.) for taurolidine. |
 | PD | Schubert_2020 | not_relevant | 2 | 1 | The paper reports qualitative cytotoxicity comparisons and penetration depths for a foam carrier but does not provide numeric concentration-effect curves or PD parameters (e.g., EC50, Emax) for taurolidine. |
 | popPK | Shrayer_2003 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on melanoma cells reporting IC50 and apoptosis data, not a pharmacokinetic study with disposition parameters. |
 | popPK | Stendel_2003 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating apoptosis in cell lines and does not report any pharmacokinetic parameters. |
-| popPK | Stendel_2007 | relevant | 9 | 2 | The paper is a PK study of taurolidine in humans, but the evidence text only provides qualitative descriptions (e.g., "markedly higher" volume of distribution) and in-vitro ratios, lacking specific numeric PK parameter values like CL, V, or half-life. |
+| popPK | Stendel_2007 | relevant | 9 | 2 | The study reports PK parameters for taurolidine in humans, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative descriptions. |
 | popPK | Wouters_2022 | irrelevant | 0 | 0 | The study investigates the immunological effects of taurolidine on leukocytes and does not report any pharmacokinetic parameters. |
 | popPK | unknown_2010 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | unknown_2010 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract and contains no data, results, or PD parameters. |

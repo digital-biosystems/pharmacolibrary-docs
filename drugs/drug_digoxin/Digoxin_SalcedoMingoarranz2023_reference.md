@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Salcedo-Mingoarranz_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Digoxin_Chen2013_reference&quot;,&quot;label&quot;:&quot;Chen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Chen2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Ishibashi2024_reference&quot;,&quot;label&quot;:&quot;Ishibashi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Ishibashi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Komatsu2015_reference&quot;,&quot;label&quot;:&quot;Komatsu_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Komatsu2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Kramer1979_reference&quot;,&quot;label&quot;:&quot;Kramer_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Kramer1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Lin2023_reference&quot;,&quot;label&quot;:&quot;Lin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Lin2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartinSuarez2017_reference&quot;,&quot;label&quot;:&quot;Martin-Suarez_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartinSuarez2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartnSurez1993_reference&quot;,&quot;label&quot;:&quot;Mart\u00edn-Su\u00e1rez_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartnSurez1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Nagaraja2000_reference&quot;,&quot;label&quot;:&quot;Nagaraja_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Nagaraja2000_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Preechagoon2009_reference&quot;,&quot;label&quot;:&quot;Preechagoon_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Preechagoon2009_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Xu2023_reference&quot;,&quot;label&quot;:&quot;Xu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Xu2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Yukawa1992_reference&quot;,&quot;label&quot;:&quot;Yukawa_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Yukawa1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Liao2022_reference&quot;,&quot;label&quot;:&quot;Liao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Liao2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Song2020_reference&quot;,&quot;label&quot;:&quot;Song_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Song2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Digoxin_Dong2024_reference&quot;,&quot;label&quot;:&quot;Dong_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Dong2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Hirai2022_reference&quot;,&quot;label&quot;:&quot;Hirai_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Hirai2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Liao2022_reference&quot;,&quot;label&quot;:&quot;Liao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Liao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Lin2023_reference&quot;,&quot;label&quot;:&quot;Lin_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Lin2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartinSuarez2017_reference&quot;,&quot;label&quot;:&quot;Martin-Suarez_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartinSuarez2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_MartnSurez1993_reference&quot;,&quot;label&quot;:&quot;Mart\u00edn-Su\u00e1rez_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_MartnSurez1993_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Nagaraja2000_reference&quot;,&quot;label&quot;:&quot;Nagaraja_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Nagaraja2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Song2020_reference&quot;,&quot;label&quot;:&quot;Song_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Song2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Digoxin_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/Digoxin_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # digoxin — `Digoxin_SalcedoMingoarranz2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digoxin, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:35.794511+00:00) predates the upstream re-run (2026-10-06 02:12:06.362656+00:00). Current validate status: `rejected`.
 
 ## Citation
 Salcedo-Mingoarranz AL et al., Population Pharmacokinetics of Digoxin…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01313-8](https://doi.org/10.1007/s40262-023-01313-8)
 
 ## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_SalcedoMingoarranz2023_reference" status="rejected" stale="false" population="nonagenarian patients" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="digoxin" model-id="Digoxin_SalcedoMingoarranz2023_reference" status="rejected" stale="true" population="nonagenarian patients" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -58,6 +60,7 @@ Salcedo-Mingoarranz AL et al., Population Pharmacokinetics of Digoxin…, Clinic
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'dose (mg)' — extend the ontology if this is a real PK parameter (source ['Salcedo-Mingoarranz_2023:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=digoxin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -65,7 +68,7 @@ Salcedo-Mingoarranz AL et al., Population Pharmacokinetics of Digoxin…, Clinic
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Salcedo-Mingoarranz_2023_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Salcedo-Mingoarranz_2023_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -74,16 +77,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[cg/36.4]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k/4.3]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 1.22 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 1.22 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ld]` | not captured | 0.83 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vd/f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd/f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | digoxin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | digoxin | unknown | mismatch |
 
 </details>
 
@@ -126,4 +137,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 12:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 02:12 UTC</sub>

@@ -18,7 +18,7 @@ Deslanoside is a digitalis glycoside used to treat atrial fibrillation, supraven
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 12:38 | 1:26 | 0/0/0 | 0/0/0 | 0/0/0 | 24,865/1,503 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 01:59 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 7,053/353 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -53,23 +53,23 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bakke_1981.pdf` | Bakke OM et al., Pharmacokinetics and serum concentratio…, Journal of cardiovascular p… (1981) | popPK | 8 | [10.1097/00005344-198109000-00012](https://doi.org/10.1097/00005344-198109000-00012) | [6168847](https://pubmed.ncbi.nlm.nih.gov/6168847) | The study reports quantitative PK parameters for deslanoside, specifically the biological half-life (median 51 h, range 38-77 h) and steady-state concentrations, although it lacks explicit clearance or volume of distribution values. |
+| `Bakke_1981.pdf` | Bakke OM et al., Pharmacokinetics and serum concentratio…, Journal of cardiovascular p… (1981) | popPK | 8 | [10.1097/00005344-198109000-00012](https://doi.org/10.1097/00005344-198109000-00012) | [6168847](https://pubmed.ncbi.nlm.nih.gov/6168847) | The study reports quantitative PK parameters (half-life) and concentration-effect data for deslanoside in humans, but lacks explicit clearance or volume values. |
 
-<sub>queue written 2026-09-19T12:37:52.097640+00:00</sub>
+<sub>queue written 2026-10-06T01:59:03.874763+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abady_2024 | irrelevant | 0 | 0 | The paper is a bioanalytical method validation study for dried blood spot sampling and does not report any pharmacokinetic parameters for deslanoside. |
+| popPK | Abady_2024 | irrelevant | 0 | 0 | The paper describes a bioanalytical method validation for quantifying deslanoside in dried blood spots and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.). |
 | popPK | Gao_2012 | irrelevant | 0 | 0 | The study investigates the effects of ethanol on arrhythmia using deslanoside as an inducing agent, not as the subject of a pharmacokinetic analysis, and reports no PK parameters. |
 | PD | Gao_2012 | not_relevant | 3 | 2 | The paper reports qualitative dose-response effects of ethanol on deslanoside-induced arrhythmia (increased cumulative dosage required) but does not provide numeric PD parameters (e.g., EC50, Emax) or a concentration-effect curve for deslanoside itself. |
-| popPK | Goldsmith_1992 | irrelevant | 0 | 0 | The study investigates the effect of deslanoside on norepinephrine kinetics, not the pharmacokinetic disposition parameters (CL, V, t1/2) of deslanoside itself. |
+| popPK | Goldsmith_1992 | irrelevant | 0 | 0 | The study investigates the effect of deslanoside on norepinephrine kinetics, not the pharmacokinetic parameters of deslanoside itself. |
 | popPK | Gökçe_2026 | irrelevant | 0 | 0 | The study is an in vitro/in silico investigation of enzyme inhibition (PON1) and does not report any pharmacokinetic parameters for deslanoside. |
 | PD | Gökçe_2026 | not_relevant | 0 | 0 | The study reports in vitro enzyme inhibition (IC50) of PON1 by deslanoside, which is a pharmacological mechanism study, not a pharmacodynamic exposure-response or dose-response relationship for the drug's clinical effect. |
 | popPK | Huang_2026 | irrelevant | 0 | 0 | The study analyzes factors influencing serum digoxin concentrations and lists deslanoside only as a concomitant medication variable, without reporting any pharmacokinetic parameters for deslanoside. |
 | PD | Huang_2026 | not_relevant | 0 | 0 | The study analyzes factors influencing serum digoxin concentration (PK) using logistic regression, not the pharmacodynamic effect of deslanoside or digoxin; no exposure-response or dose-response relationship for a drug effect is reported. |
-| popPK | Li_2015 | irrelevant | 0 | 0 | The study focuses on digoxin pharmacokinetics and method validation, with deslanoside mentioned only as a structural analog for ionization behavior without any PK parameter reporting. |
+| popPK | Li_2015 | irrelevant | 0 | 0 | The study focuses on digoxin pharmacokinetics in rats, with deslanoside only mentioned as a compound tested for method optimization, not as the subject of PK analysis. |
 | popPK | Marzo_1982 | irrelevant | 0 | 0 | no_text gate: only 78 chars of text extracted (&lt; 400) |
 | popPK | Tada_1982 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding deslanoside pharmacokinetics. |
 

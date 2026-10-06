@@ -4,7 +4,7 @@
 
 # flecainide — `Flecainide_Doki2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flecainide: CL/F 0.25 l h(-1) kg(-1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.944826+00:00) predates the upstream re-run (2026-10-06 03:43:44.531772+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of clinica… (2006)
   ·  DOI: [10.1007/s00228-006-0188-x](https://doi.org/10.1007/s00228-006-0188-x)
 
 ## Model component
-<dbs-pgx drug="flecainide" model-id="Flecainide_Doki2006_reference" status="needs_review" stale="false" population="Japanese patients with supraventricular tachyarrhythmia" measured-compound="flecainide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="flecainide" model-id="Flecainide_Doki2006_reference" status="needs_review" stale="true" population="Japanese patients with supraventricular tachyarrhythmia" measured-compound="flecainide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -41,7 +43,7 @@ Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 0.25 | l h(-1) kg(-1) | not captured | [[l] · [h-]] / [kg] | not captured | exact (1.0) | Doki_2006:abstract | — | not captured |
+| CL/F | `Q27` · CL/F | 0.25 | L/h | 6.944444444444444e-08 | L/h | not captured | exact (1.0) | Doki_2006:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,9 +54,8 @@ Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of c
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'l h(-1) kg(-1)' (CL/F)
+- implicit units: 'CL/F' → L/h (from the popPK convention: 'No unit is stated in the provided text or table captions. CL/F represents apparent total clearance. In population pharma')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flecainide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -69,13 +70,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f in ims]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f reduction by age]` | not captured | 30 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f reduction by sex]` | not captured | 24 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | 0.25 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | flecainide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | flecainide | unknown | mismatch |
@@ -95,9 +97,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | l h(-1) kg(-1) | not captured | not captured | ['Doki_2006:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Doki_2006:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.25 L/h | not captured | not captured | ['Doki_2006:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -132,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-09 09:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:43 UTC</sub>

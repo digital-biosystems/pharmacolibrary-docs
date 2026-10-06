@@ -17,7 +17,7 @@ Nitrofural (nitrofurazone) is a nitrofuran antibacterial used as a topical antis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 09:04 | 2:51 | 0/0/0 | 0/0/0 | 0/0/0 | 83,957/2,839 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 2/6 | 4/0 | 0 |
+| 2026-10-06 00:32 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 32,295/825 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 2/6 | 4/0 | 0 |
 
 ## popPK records
 
@@ -54,7 +54,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kazmi_2022.pdf` | Kazmi SSUH et al., A community-based approach to analyzing…, Marine pollution bulletin (2022) | pd | 5 | [10.1016/j.marpolbul.2021.113165](https://doi.org/10.1016/j.marpolbul.2021.113165) | [34839952](https://www.ncbi.nlm.nih.gov/pubmed/34839952) | metadata signals extractable PD data (IC50) |
 | `Chen_2022.pdf` | Chen L et al., Inhibition of Escherichia coli nitrored…, Chinese journal of natural… (2022) | pd | 4 | [10.1016/S1875-5364(22)60163-8](https://doi.org/10.1016/S1875-5364(22)60163-8) | [35907649](https://www.ncbi.nlm.nih.gov/pubmed/35907649) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-19T09:04:06.891402+00:00</sub>
+<sub>queue written 2026-10-06T00:31:36.871611+00:00</sub>
 
 ## Screened and excluded
 
@@ -62,26 +62,26 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Chen_2022 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Chen_2022 | not_relevant | 0 | 0 | The paper investigates the inhibition of nitroreductase by Syzygium aromaticum constituents, not the pharmacodynamics of nitrofural. |
-| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment regarding post-mortem inspection delays and does not contain any pharmacokinetic data or parameters for nitrofural. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment regarding post-mortem inspection delays in ungulates and does not contain any pharmacokinetic data or parameters for nitrofural. |
 | PD | EFSA_2020 | not_relevant | 0 | 0 | The paper discusses the impact of delayed post-mortem inspection on the detection of pathogens and chemical contaminants, including potential degradation of pharmacologically active substances, but does not report any pharmacodynamic or exposure-response data for nitrofural. |
 | popPK | Gbedema_2010 | irrelevant | 0 | 0 | The paper studies the wound healing properties of a plant extract, using nitrofurazone (not nitrofural) only as a topical comparator, and contains no pharmacokinetic data. |
 | PD | Gbedema_2010 | not_relevant | 0 | 0 | The paper studies the pharmacological effects of a plant extract (Clerodendron splendens) and uses nitrofurazone only as a positive control; it does not report a pharmacodynamic or exposure-response relationship for nitrofural/nitrofurazone itself. |
 | popPK | Greenaway_1986 | irrelevant | 0 | 0 | The paper is an in-vitro embryotoxicity study focusing on malformation mechanisms and does not report any pharmacokinetic parameters for nitrofural. |
 | PGx | Hasan_2018 | not_relevant | 0 | 0 | The paper focuses on toxicogenomic biomarker gene expression and dose prediction for chemical compounds, not on pharmacogenomic effects on PK/PD parameters of nitrofural. |
 | PGx | Hasan_2019 | not_relevant | 0 | 0 | The paper proposes a statistical method for clustering drug toxicity data and does not report pharmacogenomic effects on PK/PD parameters for nitrofural. |
-| PGx | Hasan_2025 | not_relevant | 0 | 0 | The paper is a computational biology study on clustering algorithms for toxicogenomic data and does not report pharmacogenomic effects on PK/PD parameters for nitrofural. |
+| PGx | Hasan_2025 | not_relevant | 0 | 0 | The paper focuses on a computational method for toxicogenomic co-clustering and does not report pharmacogenomic effects on PK/PD parameters for nitrofural. |
 | popPK | Hong_2015 | irrelevant | 0 | 0 | The study focuses on ecotoxicology and biomarkers in protozoa exposed to nitrofurazone, not pharmacokinetic parameters for nitrofural. |
 | popPK | Hong_2017 | irrelevant | 0 | 0 | The study focuses on ecotoxicity and biomarkers (enzyme activity) in protozoa, not pharmacokinetic parameters for nitrofural. |
-| popPK | Jauréguiberry_2005 | irrelevant | 0 | 0 | The paper is a clinical retrospective study of leptospirosis patients and does not contain any pharmacokinetic data or parameters for nitrofural. |
+| popPK | Jauréguiberry_2005 | irrelevant | 0 | 0 | The paper is a clinical retrospective study of leptospirosis patients and does not contain any pharmacokinetic data for nitrofural. |
 | PD | Jauréguiberry_2005 | not_relevant | 0 | 0 | The paper is a retrospective clinical study of leptospirosis patients and does not contain any pharmacokinetic or pharmacodynamic data for nitrofural. |
 | popPK | Kazmi_2022 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Kazmi_2022 | not_relevant | 0 | 0 | The paper focuses on ecotoxicity of nitrofurazone in protozoa, not pharmacodynamics in humans or animals. |
 | popPK | Li_2014 | irrelevant | 0 | 0 | The study focuses on ecotoxicity biomarkers (catalase activity/mRNA) in protozoa exposed to nitrofurazone, not pharmacokinetic parameters for nitrofural. |
-| popPK | Macri_1984 | irrelevant | 0 | 0 | The study is an ecotoxicological evaluation of nitrofurazone (not nitrofural) in aquatic organisms and insects, reporting toxicity endpoints (EC50) rather than pharmacokinetic parameters. |
-| popPK | Mao_2026 | irrelevant | 0 | 0 | The paper is a Mendelian randomization study where nitrofural is only mentioned as a potential drug target in molecular docking, with no pharmacokinetic parameters reported. |
+| popPK | Macri_1984 | irrelevant | 0 | 0 | The study is an ecotoxicological evaluation of nitrofurazone (not nitrofural) in algae, crustaceans, and flies, reporting toxicity endpoints (EC50) rather than pharmacokinetic parameters. |
+| popPK | Mao_2026 | irrelevant | 0 | 0 | The paper is a Mendelian randomization study on diabetic nephropathy genes and only mentions nitrofural as a potential drug target in a molecular docking prediction, without reporting any pharmacokinetic parameters. |
 | PD | Mao_2026 | not_relevant | 0 | 0 | The paper is a Mendelian randomization and molecular docking study; it mentions nitrofural only as a predicted drug target via docking, with no pharmacodynamic, exposure-response, or dose-response data or parameters. |
 | PGx | PMID36049896_2023 | not_relevant | 0 | 0 | The paper discusses G6PD genotype and medication use guidelines, but does not report pharmacokinetic or pharmacodynamic parameters for nitrofural. |
-| popPK | Pereira_2025 | irrelevant | 0 | 0 | The paper is a review of hydrazone-containing scaffolds for anti-leishmanial activity and does not report pharmacokinetic parameters for nitrofural. |
+| popPK | Pereira_2025 | irrelevant | 0 | 0 | The paper is a review of hydrazone scaffolds for anti-leishmanial activity and does not report pharmacokinetic parameters for nitrofural. |
 | PD | Pereira_2025 | not_relevant | 0 | 0 | The paper is a structural review of hydrazone scaffolds and does not report any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for nitrofural. |
 | popPK | Santiago_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antitrypanosomal activity study of novel derivatives, not a pharmacokinetic study, and contains no PK parameters for nitrofural. |
 | PD | Santiago_2020 | not_relevant | 2 | 2 | The paper reports a single IC50 value for a novel derivative, which is a standard pharmacological potency metric, but does not provide a full dose-response curve, PK/PD model, or exposure-response relationship required for extractable PD parameters. |

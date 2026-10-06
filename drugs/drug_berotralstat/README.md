@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;berotralstat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Berotralstat_Mathis2022_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Mathis_2022_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Berotralstat_Mathis2022_parameter_estimate_rse&quot;,&quot;label&quot;:&quot;Mathis_2022_parameter_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # berotralstat
 
@@ -15,22 +15,30 @@ Berotralstat is a medicine used to treat hereditary angioedema. It is authorised
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q104529366](https://www.wikidata.org/wiki/Q104529366) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| berotralstat | parent | 562.573 | C30H26F4N6O | DrugBank | — | Mathis_2022 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 10:21 | 1:29 | 0/5/1 | 0/0/0 | 0/0/0 | 73,115/1,120 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 00:57 | 5:33 | 1/5/0 | 0/0/0 | 0/0/0 | 151,574/15,215 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mathis_2022_parameter_estimate_rse](drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md) | ▶ model + simulator | 1-compartment, oral | 7 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_adolescents_12_18_years](drugs/drug_berotralstat/Berotralstat_Mathis2022_adolescents_12_18_years.md) | held back | 1-compartment, IV | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_low_weight_adults_60_80_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_low_weight_adults_60_80_kg.md) | held back | 1-compartment, IV | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_normal_weight_adults_80_100_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_normal_weight_adults_80_100_kg.md) | held back | 1-compartment, IV | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_overweight_adults_100_120_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_overweight_adults_100_120_kg.md) | held back | 1-compartment, IV | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_underweight_adults_40_60_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_underweight_adults_40_60_kg.md) | held back | 1-compartment, IV | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Mathis_2022_parameter_estimate_rse](drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md) | ▶ model + simulator | 1-compartment, oral | 7 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_adolescents_12_18_years](drugs/drug_berotralstat/Berotralstat_Mathis2022_adolescents_12_18_years.md) | — | 1-compartment (no model) | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_low_weight_adults_60_80_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_low_weight_adults_60_80_kg.md) | — | 1-compartment (no model) | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_normal_weight_adults_80_100_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_normal_weight_adults_80_100_kg.md) | — | 1-compartment (no model) | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_overweight_adults_100_120_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_overweight_adults_100_120_kg.md) | — | 1-compartment (no model) | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_underweight_adults_40_60_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_underweight_adults_40_60_kg.md) | — | 1-compartment (no model) | 3 | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 
 ## ADME sites
 
@@ -62,18 +70,27 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
-- **screened:** 2  ·  **relevant:** 1
-- **records:** 6  ·  extracted 0  ·  needs_review 1  ·  rejected 5  ·  stale 0
+- **screened:** 3  ·  **relevant:** 2
+- **records:** 6  ·  extracted 1  ·  needs_review 0  ·  rejected 5  ·  stale 6
 - **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Bernatoniene_2025.pdf` | Bernatoniene J et al., Oral berotralstat for hereditary angioe…, Annals of allergy, asthma &… (2025) | popPK | 6 | [10.1016/j.anai.2025.07.012](https://doi.org/10.1016/j.anai.2025.07.012) | [40716738](https://pubmed.ncbi.nlm.nih.gov/40716738) | The study reports steady-state PK parameters (Tmax, Cmax, AUC) for berotralstat in humans, but lacks compartmental model parameters (CL, V, ka) and full population PK analysis. |
+
+<sub>queue written 2026-10-06T00:52:12.122290+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bernatoniene_2025 | relevant | 4 | 2 | The study reports basic PK metrics (Tmax, Cmax, AUC) for berotralstat but lacks the specific compartmental or population-PK parameters (CL, V, Q, ka) required for the extraction task. |
-| popPK | Bui_2026 | irrelevant | 0 | 0 | The paper is a review of deucrictibant, and berotralstat is only mentioned as a comparator without any quantitative pharmacokinetic parameters provided. |
+| popPK | Bui_2026 | irrelevant | 0 | 0 | The paper is a review of deucrictibant, and berotralstat is only mentioned as a comparator drug without any specific pharmacokinetic parameter values provided. |
 | PD | Bui_2026 | not_relevant | 0 | 0 | The paper is a review of deucrictibant and does not report any pharmacodynamic or exposure-response data for berotralstat. |
 | PD | Riedl_2026 | not_relevant | 0 | 0 | The paper is a review of donidalorsen and does not report any pharmacodynamic or exposure-response data for berotralstat. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-19 10:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 00:52 UTC</sub>

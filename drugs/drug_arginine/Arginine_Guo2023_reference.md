@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;Arginine&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/&quot;},{&quot;label&quot;:&quot;Guo_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Schaedeli2024_reference&quot;,&quot;label&quot;:&quot;Schaedeli_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Schaedeli2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Wang2018_reference&quot;,&quot;label&quot;:&quot;Wang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Wang2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Arginine — `Arginine_Guo2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.588). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.588). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:09.905706+00:00) predates the upstream re-run (2026-10-05 23:50:55.834737+00:00). Current validate status: `extracted`.
+
 ## Citation
 Guo C et al., PK/PD model-informed dose selection for…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12882](https://doi.org/10.1002/psp4.12882)
 
 ## Model component
-<dbs-pgx drug="Arginine" model-id="Arginine_Guo2023_reference" status="curated_candidate" stale="false" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="Arginine" model-id="Arginine_Guo2023_reference" status="extracted" stale="true" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.
@@ -73,7 +75,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q312]` | 46.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q315]` | 0.112 | 0.112 | mismatch |
+| `gpt-oss:120b` | `values[Q315]` | 0.112 | 0.0146 | mismatch |
 | `gpt-oss:120b` | `values[Q318]` | 23.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q323]` | 0.823 | 0.823 | mismatch |
 | `gpt-oss:120b` | `values[Q324]` | not captured | 113 | only_one_extracted |
@@ -137,9 +139,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_modelica.zip" download>Arginine_Guo2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_modelica.zip" download>Arginine_Guo2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_fmi.zip" download>Arginine_Guo2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_matlab.zip" download>Arginine_Guo2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_matlab.zip" download>Arginine_Guo2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_matlab_simbio.zip" download>Arginine_Guo2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_sbml.zip" download>Arginine_Guo2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_cellml.zip" download>Arginine_Guo2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -150,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.5 mg, single dose, first-order absorption (ka 2.31 /h, F 1). Doses in the paper: 0.5, 1, 2, 4, 6, 8 mg.
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.31 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_arginine/Arginine_Guo2023_reference/Arginine_Guo2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -159,4 +161,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 09:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 23:50 UTC</sub>

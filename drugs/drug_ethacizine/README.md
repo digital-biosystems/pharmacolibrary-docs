@@ -18,7 +18,7 @@ Ethacizine is an antiarrhythmic agent of the class Ic type, developed for the tr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 11:13 | 0:38 | 0/0/0 | 0/0/0 | 0/0/0 | 1,336/114 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 03:42 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 4,804/129 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -43,21 +43,21 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Beloborodov_1986.pdf` | Beloborodov VL et al., [Clinical pharmacokinetics and hemodyna…, Farmakologiia i toksikologi… (1986) | popPK | 9 | not captured | [3770172](https://pubmed.ncbi.nlm.nih.gov/3770172) | The paper describes a clinical PK study of ethacizine with a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
+| `Beloborodov_1986.pdf` | Beloborodov VL et al., [Clinical pharmacokinetics and hemodyna…, Farmakologiia i toksikologi… (1986) | popPK | 9 | not captured | [3770172](https://pubmed.ncbi.nlm.nih.gov/3770172) | The paper describes a population PK study of ethacizine in humans using a three-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
 | `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 | not captured | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-26T11:13:19.614378+00:00</sub>
+<sub>queue written 2026-10-06T03:41:53.868027+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Beloborodov_1986 | relevant | 9 | 0 | The paper describes a clinical PK study of ethacizine with a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Beloborodov_1986 | relevant | 9 | 0 | The paper describes a population PK study of ethacizine in humans using a three-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
 | popPK | Kedrov_1988 | irrelevant | 0 | 0 | The study focuses on pharmacodynamics (anti-arrhythmic effects) in rabbits and does not report any pharmacokinetic parameters for ethacizine. |
 | PD | Kedrov_1988 | not_relevant | 1 | 0 | The text provides only a qualitative summary of pharmacodynamic changes in an animal model without reporting any numeric concentration-effect data, dose-response curves, or PD parameters. |
 | popPK | Lozinskiĭ_1990 | irrelevant | 1 | 0 | The study focuses on Bonnecor (disopyramide), not ethacizine, and only mentions ethacizine as a comparator without providing its specific quantitative PK parameters. |
 | PD | Lozinskiĭ_1990 | not_relevant | 3 | 2 | The text mentions that ranges of effective concentrations are given but does not provide specific numeric PD parameters (like Emax, EC50) or a quantitative concentration-effect curve in the provided abstract. |
-| popPK | Ratner_1992 | irrelevant | 0 | 0 | The paper focuses on the effect of ethacizine on calcium channels and proteins, which is a mechanistic study, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Ratner_1992 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | PD | Ratner_1992 | not_relevant | 0 | 0 | The paper investigates the effect of ethacizine on calcium channel receptors and binding proteins, which is a pharmacological mechanism study, not a pharmacokinetic-pharmacodynamic (PK/PD) exposure-response or dose-response analysis with numeric PD parameters. |
 
 ---

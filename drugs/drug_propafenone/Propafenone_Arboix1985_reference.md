@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;propafenone&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/&quot;},{&quot;label&quot;:&quot;Arboix_1985 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propafenone_Connolly1984_reference&quot;,&quot;label&quot;:&quot;Connolly_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/Propafenone_Connolly1984_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propafenone — `Propafenone_Arboix1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,15 +21,17 @@
 
 The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A dimension mismatch was flagged on a structural parameter, and the model structure contains an unreachable compartment with no path from the dose. A second reader returned no value for any of the five parameters — kel 0.12 min⁻¹, CL 1.03 l/h, t1/2α 2.8 min, t1/2β 80 min and Vdβ 1.6 l/kg — disagreeing with all of them. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 min, -1, V2 1.6 1/kg, CL 1.03 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 1.03, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has propafenone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:30.205576+00:00) predates the upstream re-run (2026-10-06 04:13:48.856782+00:00). Current validate status: `rejected`.
 
 ## Citation
 Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985)
 
 ## Model component
-<dbs-pgx drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="false" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="true" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -42,7 +45,7 @@ Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and finding
 |---|---|---|---|---|---|---|---|---|---|---|
 | t 1/2 alpha | `Q59` · t1/2α | 2.8 | min | 168.0 | [min] | not captured | llm_corrected (0.6) | Arboix_1985:abstract | — | not captured |
 | t 1/2 beta | `Q60` · t1/2β | 80 | min | 4800.0 | [min] | not captured | llm_corrected (0.6) | Arboix_1985:abstract | — | not captured |
-| Kel | `Q47` · kel | 0.12 | min, -1 | not captured | [min] | not captured | exact (1.0) | Arboix_1985:abstract | — | not captured |
+| Kel | `Q47` · kel | 0.12 | 1/h | 3.3333333333333335e-05 | 1/h | not captured | exact (1.0) | Arboix_1985:abstract | — | not captured |
 | Vd beta | `Q64` · V2 | 1.6 | 1/kg | not captured | [1] / [kg] | not captured | llm_corrected (0.6) | Arboix_1985:abstract | — | not captured |
 | Cl | `Q22` · CL | 1.03 | 1/h | not captured | [1] / [h] | not captured | exact (1.0) | Arboix_1985:abstract | — | not captured |
 
@@ -58,6 +61,7 @@ Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and finding
 - unit_dimension_mismatch: 'Vd beta' → Q64 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'Cl' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped unlinked row (NIL): 'AUR' — extend the ontology if this is a real PK parameter (source ['Arboix_1985:abstract'])
+- implicit units: 'Kel' → 1/h (from the popPK convention: 'Elimination rate constants (Kel) are first-order rate constants, which are conventionally expressed in reciprocal time u')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=propafenone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -75,17 +79,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[cl]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 1.03 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kel]` | 0.12 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kel]` | not captured | 0.12 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 alpha]` | 2.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 alpha]` | not captured | 2.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 beta]` | 80 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 beta]` | not captured | 80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vd beta]` | 1.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd beta]` | not captured | 1.6 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | propafenone | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | propafenone | unknown | mismatch |
 
 </details>
 
@@ -103,10 +114,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | fail | 1 / [time] | 1/h | not captured | not captured | ['Arboix_1985:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Arboix_1985:abstract'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Arboix_1985:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Arboix_1985:abstract'] |
 | C5_dimension_Q64 | fail | dimensionless | 1/kg | not captured | not captured | ['Arboix_1985:abstract'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | min, -1 | not captured | not captured | ['Arboix_1985:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.03 | not captured | not captured | ['Arboix_1985:abstract'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
@@ -133,4 +144,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 04:13 UTC</sub>

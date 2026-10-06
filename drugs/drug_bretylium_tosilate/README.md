@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;bretylium tosilate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BretyliumTosilate_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BretyliumTosilate_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # bretylium tosilate
 
@@ -15,26 +15,35 @@ Bretylium tosilate is a class III antiarrhythmic used to treat ventricular fibri
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q420026](https://www.wikidata.org/wiki/Q420026) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| bretylium_tosilate (bretylium) | metabolite | 243.163 | C11H17BrN | DrugBank | [2431](https://pubchem.ncbi.nlm.nih.gov/compound/2431) | Garrett_1982, Kamath_1981, Narang_1980, Rapeport_1985 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 14:57 | 3:21 | 0/2/2 | 0/1/0 | 0/0/0 | 81,994/6,783 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 03:16 | 8:48 | 1/2/1 | 1/0/0 | 0/0/0 | 129,219/26,049 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q65 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Garrett_1982_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Garrett1982_reference.md) | — | 1-compartment (no model) | 4 | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kamath_1981_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Narang_1980_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Narang1980_reference.md) | — | 1-compartment (no model) | 3 | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Rapeport_1985_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_reference.md) | — | 1-compartment (no model) | 0 | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kamath_1981_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Kamath1981_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Garrett_1982_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Garrett1982_reference.md) | — | 1-compartment (no model) | 5 | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Narang_1980_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Narang1980_reference.md) | — | 1-compartment (no model) | 2 | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Rapeport_1985_reference](drugs/drug_bretylium_tosilate/BretyliumTosilate_Rapeport1985_reference.md) | — | 1-compartment (no model) | 1 | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Sakuta_1993_unknown](drugs/drug_bretylium_tosilate/pd_Sakuta_1993_unknown.md) | Y-26763-induced K+ current ← clofilium · inhibition effect | — | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Sakuta_1993_KRN2391_induced_K_current](drugs/drug_bretylium_tosilate/pd_Sakuta_1993_KRN2391_induced_K_current.md) | KRN2391-induced K+ current ← bretylium · direct Emax (saturable) effect | — | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Sakuta_1993_Y_26763_induced_K_current](drugs/drug_bretylium_tosilate/pd_Sakuta_1993_Y_26763_induced_K_current.md) | Y-26763-induced K+ current ← bretylium · direct Emax (saturable) effect | — | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
 
 ## ADME sites
 
@@ -55,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -64,27 +73,27 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Garrett_1982.pdf` | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | popPK | 10 | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) | [7104462](https://pubmed.ncbi.nlm.nih.gov/7104462) | The paper reports quantitative pharmacokinetic parameters (half-lives, clearance, volume of distribution) for bretylium tosylate in humans and dogs, with all numeric values explicitly present in the text. |
-| `Kamath_1981.pdf` | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | popPK | 10 | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) | [7252812](https://pubmed.ncbi.nlm.nih.gov/7252812) | The paper reports quantitative pharmacokinetic parameters (Vd, CL, half-life) for bretylium tosylate in rats with all numeric values explicitly present in the text. |
-| `Kamath_1982.pdf` | Kamath BL et al., Pharmacokinetics of bretylium in dogs a…, Journal of pharmaceutical s… (1982) | popPK | 10 | [10.1002/jps.2600711129](https://doi.org/10.1002/jps.2600711129) | [7175729](https://pubmed.ncbi.nlm.nih.gov/7175729) | The study reports quantitative pharmacokinetic parameters (half-lives, volumes, clearances) for bretylium tosylate in dogs, with all numeric values explicitly present in the text. |
-| `Narang_1980.pdf` | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | popPK | 10 | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) | [7431227](https://pubmed.ncbi.nlm.nih.gov/7431227) | The paper reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance) for bretylium tosylate in humans, with specific numeric values provided in the text. |
-| `Rapeport_1985.pdf` | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | popPK | 9 | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) | [3893841](https://pubmed.ncbi.nlm.nih.gov/3893841) | The abstract provides specific quantitative pharmacokinetic parameters for bretylium, including bioavailability (18-23%), clearance (~600 ml/min), and half-life (7-11 hours). |
+| `Garrett_1982.pdf` | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | popPK | 10 | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) | [7104462](https://pubmed.ncbi.nlm.nih.gov/7104462) | The paper reports quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for bretylium tosylate in humans and dogs, with all numeric values explicitly present in the abstract. |
+| `Kamath_1981.pdf` | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | popPK | 10 | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) | [7252812](https://pubmed.ncbi.nlm.nih.gov/7252812) | The study reports quantitative pharmacokinetic parameters (Vd, CL, half-life) for bretylium tosylate in rats, with all numeric values explicitly provided in the text. |
+| `Kamath_1982.pdf` | Kamath BL et al., Pharmacokinetics of bretylium in dogs a…, Journal of pharmaceutical s… (1982) | popPK | 10 | [10.1002/jps.2600711129](https://doi.org/10.1002/jps.2600711129) | [7175729](https://pubmed.ncbi.nlm.nih.gov/7175729) | The study reports quantitative two-compartment pharmacokinetic parameters (half-lives, volumes, clearances) for bretylium tosylate in dogs. |
+| `Narang_1980.pdf` | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | popPK | 10 | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) | [7431227](https://pubmed.ncbi.nlm.nih.gov/7431227) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance) for bretylium tosylate in humans. |
+| `Rapeport_1985.pdf` | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | popPK | 9 | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) | [3893841](https://pubmed.ncbi.nlm.nih.gov/3893841) | The abstract provides specific quantitative pharmacokinetic parameters for bretylium in humans, including bioavailability, clearance, half-life, and volume of distribution. |
 | `Wilson_2004.pdf` | Wilson TE et al., Effect of age on cutaneous vasoconstric…, American journal of physiol… (2004) | pd | 4 | [10.1152/ajpregu.00467.2004](https://doi.org/10.1152/ajpregu.00467.2004) | [15475505](https://www.ncbi.nlm.nih.gov/pubmed/15475505) | metadata signals extractable PD data (EC50) |
 | `Yamreudeewong_2003.pdf` | Yamreudeewong W et al., Potentially significant drug interactio…, Drug safety (2003) | pgx | 7 | [10.2165/00002018-200326060-00004](https://doi.org/10.2165/00002018-200326060-00004) | [12688833](https://www.ncbi.nlm.nih.gov/pubmed/12688833) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-19T14:53:59.436810+00:00</sub>
+<sub>queue written 2026-10-06T03:08:18.490424+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aussel_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of phospholipid metabolism in Jurkat T cells, not a pharmacokinetic study, and reports no disposition parameters for bretylium. |
-| popPK | Hagelüken_1995 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on G protein activation and does not report any pharmacokinetic parameters for bretylium tosylate. |
+| popPK | Aussel_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of phospholipid metabolism in Jurkat T cells, not a pharmacokinetic study reporting disposition parameters for bretylium. |
+| popPK | Hagelüken_1995 | irrelevant | 0 | 0 | The study is a mechanistic investigation of G-protein activation in cell membranes and does not report any pharmacokinetic parameters for bretylium tosylate. |
 | PD | Hagelüken_1995 | not_relevant | 0 | 0 | The paper reports that bretylium tosylate did not increase GTP hydrolysis, providing no numeric PD parameters or concentration-effect relationship for the drug. |
-| popPK | Sakuta_1993 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study measuring IC50 values for K+ channel blockade in Xenopus oocytes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sakuta_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring IC50 values for K+ channel blockade in Xenopus oocytes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Wilson_2004 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
 | PD | Wilson_2004 | not_relevant | 0 | 0 | The paper investigates the effect of age on cutaneous vasoconstrictor responses to norepinephrine, not bretylium tosilate. |
 | PGx | Yamreudeewong_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions for class III antiarrhythmics but does not report any pharmacogenomic effects (gene variants) on the PK or PD of bretylium tosylate. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-19 14:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 03:08 UTC</sub>

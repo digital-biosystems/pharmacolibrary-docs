@@ -18,7 +18,7 @@ Prajmaline is a class Ia antiarrhythmic drug used to treat abnormal heart rhythm
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 16:36 | 1:23 | 0/0/0 | 0/0/0 | 0/0/0 | 12,025/1,194 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 04:03 | 0:22 | 0/0/0 | 0/0/0 | 0/0/0 | 6,358/440 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -44,21 +44,21 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Trompler_1983.pdf` | Trompler AT et al., [Pharmacokinetics and Antiarrhythmic ef…, Arzneimittel-Forschung (1983) | popPK | 10 | not captured | [6683519](https://pubmed.ncbi.nlm.nih.gov/6683519) | The text explicitly reports quantitative pharmacokinetic parameters for prajmaline, including half-life (7.3 h), total clearance (344 ml/min), and distribution volume (204 l). |
-| `Breuel_1991.pdf` | Breuel HP et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1991) | popPK | 8 | not captured | [1815520](https://pubmed.ncbi.nlm.nih.gov/1815520) | The study reports pharmacokinetic parameters for prajmaline, but the specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative descriptions and relative bioavailability. |
+| `Breuel_1991.pdf` | Breuel HP et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1991) | popPK | 8 | not captured | [1815520](https://pubmed.ncbi.nlm.nih.gov/1815520) | The study reports pharmacokinetic parameters for prajmaline in humans, but the specific numeric values for clearance, volume, or half-life are not present in the provided evidence, only qualitative descriptions and relative bioavailability. |
 | `Honerjäger_1986.pdf` | Honerjäger P et al., Negative inotropic effects of tetrodoto…, Naunyn-Schmiedeberg's archi… (1986) | pd | 4 | [10.1007/BF00511411](https://doi.org/10.1007/BF00511411) | [2422563](https://www.ncbi.nlm.nih.gov/pubmed/2422563) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-20T16:35:47.220438+00:00</sub>
+<sub>queue written 2026-10-06T04:03:50.586920+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alvarez_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of prajmaline's electrophysiological effects on rabbit cardiomyocytes and does not report any pharmacokinetic parameters. |
+| popPK | Alvarez_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of electrophysiological effects in rabbit cardiomyocytes and does not report pharmacokinetic parameters. |
 | PGx | Berecz_1997 | not_relevant | 5 | 2 | The paper discusses a pharmacogenetic explanation for an interaction but does not report specific quantitative PK/PD parameter changes linked to a genotype in the provided text. |
-| popPK | Breuel_1991 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for prajmaline, but the specific numeric values for clearance, volume, or half-life are not present in the provided text, only qualitative descriptions and relative bioavailability. |
+| popPK | Breuel_1991 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for prajmaline in humans, but the specific numeric values for clearance, volume, or half-life are not present in the provided evidence, only qualitative descriptions and relative bioavailability. |
 | popPK | Brogden_1987 | irrelevant | 0 | 0 | The paper is a review of disopyramide, and prajmaline is only mentioned as a comparator without any pharmacokinetic data provided. |
 | PD | Brogden_1987 | not_relevant | 1 | 0 | The text is a qualitative review of disopyramide that mentions prajmaline only in the context of comparative efficacy, without providing any numeric PD parameters or exposure-response data. |
-| popPK | Hinse_2000 | irrelevant | 0 | 0 | The paper focuses on the chemical structure and tautomeric equilibrium of prajmaline, not on quantitative pharmacokinetic parameters. |
+| popPK | Hinse_2000 | irrelevant | 0 | 0 | The paper focuses on the chemical structure and tautomeric equilibrium of prajmaline using HPLC and spectroscopy, without reporting any quantitative pharmacokinetic parameters. |
 | popPK | Honerjäger_1986 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
 | PD | Honerjäger_1986 | not_relevant | 0 | 0 | The provided text is only the title of a study involving tetrodotoxin and class 1 antiarrhythmics, and it does not contain the full text or any numeric PD parameters for prajmaline. |
 

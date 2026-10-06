@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;lorcainide&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/&quot;},{&quot;label&quot;:&quot;Kates_1983 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorcainide_Kates1983_reference&quot;,&quot;label&quot;:&quot;Kates_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/Lorcainide_Kates1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lorcainide — `Lorcainide_Kates1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,30 +21,31 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lorcainide: CL 14.4 ml/min/kg, Vss 6.33 l/kg, t1/2z 7.8 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 14.4, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[mean steady-state level of norlorcainide].parameter_id`: this record has Q35, the second reading Q34. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:35.409373+00:00) predates the upstream re-run (2026-10-06 03:50:07.726160+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacology and t… (1983)
   ·  DOI: [10.1038/clpt.1983.4](https://doi.org/10.1038/clpt.1983.4)
 
 ## Model component
-<dbs-pgx drug="lorcainide" model-id="Lorcainide_Kates1983_reference" status="needs_review" stale="false" population="patients with ventricular arrhythmias" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lorcainide" model-id="Lorcainide_Kates1983_reference" status="extracted" stale="true" population="patients with ventricular arrhythmias" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 14.4 | ml/min/kg | 1.68e-05 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Kates_1983:abstract | — | not captured |
 | steady-state volume of distribution | `Q65` · Vss | 6.33 | l/kg | 0.44310000000000005 | [l] / [kg] | not captured | llm_corrected (0.6) | Kates_1983:abstract | — | not captured |
 | terminal half-life | `Q57` · t1/2z | 7.8 | hr | 28080.0 | [h] | not captured | llm (0.6) | Kates_1983:abstract | — | not captured |
+| Mean steady-state level of norlorcainide | `Q35` · Css_ratio | 2.2 | times the level of lorcainide | not captured | [timestheleveloflorcainide] | not captured | llm (0.6) | Kates_1983:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,16 +54,22 @@ Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacolo
 
 ## Departures & gaps
 
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
+
 **Interpretation flags:**
 - dropped duplicate Q57 ('lorcainide half-lifes', value 9.6) — already have one for this compound
 - dropped duplicate Q57 ('norlorcainide half-lifes', value 26.8) — already have one for this compound
+- unit_dimension_unknown: 'times the level of lorcainide' (Css_ratio)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lorcainide
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kates_1983_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kates_1983_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -70,15 +78,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance]` | 14.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | 6.33 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal half-life]` | 7.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean steady-state level of norlorcainide].parameter_id` | Q35 | Q34 | mismatch |
 
 </details>
 
@@ -92,7 +98,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kates_1983:abstract'] |
@@ -119,21 +125,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_modelica.zip" download>Lorcainide_Kates1983_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_fmi.zip" download>Lorcainide_Kates1983_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_matlab.zip" download>Lorcainide_Kates1983_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_matlab_simbio.zip" download>Lorcainide_Kates1983_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_sbml.zip" download>Lorcainide_Kates1983_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_cellml.zip" download>Lorcainide_Kates1983_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference.svg" alt="Lorcainide_Kates1983_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 200 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg parenteral (C01BC07) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_lorcainide/Lorcainide_Kates1983_reference/Lorcainide_Kates1983_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Lorcainide_Kates1983_reference_params.json` · controls `Lorcainide_Kates1983_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:50 UTC</sub>

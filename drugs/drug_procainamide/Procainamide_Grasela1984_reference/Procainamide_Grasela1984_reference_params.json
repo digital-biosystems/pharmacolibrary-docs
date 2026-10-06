@@ -9,7 +9,7 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 3.333333333333333e-07,
+  "Cl": 2.8055555555555555e-06,
   "F": 1.0,
   "MM": 0.2353253,
   "VdPerKg": 0.001942857142857143,
@@ -19,12 +19,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662068
+  "central.C": 660.0000000662105
  },
  "reference_peaks": {
-  "central.C": 0.02204261175933398
+  "central.C": 0.021922869029647768
  },
- "stop_time": 1468800.0,
+ "stop_time": 169200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

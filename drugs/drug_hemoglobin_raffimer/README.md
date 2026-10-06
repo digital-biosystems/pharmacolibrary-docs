@@ -17,7 +17,7 @@ Hemoglobin raffimer is a hemoglobin-based blood substitute developed as an oxyge
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 07:11 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 5,752/427 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-05 22:44 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 3,428/91 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -42,9 +42,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wicks_2003.pdf` | Wicks D et al., The intravascular persistence and methe…, Artificial cells, blood sub… (2003) | popPK | 9 | [10.1081/bio-120018000](https://doi.org/10.1081/bio-120018000) | [12602813](https://pubmed.ncbi.nlm.nih.gov/12602813) | The study reports quantitative pharmacokinetic parameters (half-life and volume of distribution) for hemoglobin raffimer in dogs, with all numeric values explicitly present in the text. |
+| `Wicks_2003.pdf` | Wicks D et al., The intravascular persistence and methe…, Artificial cells, blood sub… (2003) | popPK | 9 | [10.1081/bio-120018000](https://doi.org/10.1081/bio-120018000) | [12602813](https://pubmed.ncbi.nlm.nih.gov/12602813) | The study reports quantitative pharmacokinetic parameters (half-life and volume of distribution) for hemoglobin raffimer in dogs. |
 
-<sub>queue written 2026-09-19T07:11:47.271880+00:00</sub>
+<sub>queue written 2026-10-05T22:44:21.749068+00:00</sub>
 
 ## Screened and excluded
 

@@ -17,22 +17,22 @@ Garadacimab is a monoclonal antibody used to treat hereditary angioedema. It is 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 11:43 | 2:05 | 0/1/0 | 2/0/0 | 0/0/0 | 77,424/3,684 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 1 |
+| 2026-10-06 01:51 | 4:45 | 0/2/0 | 2/0/0 | 0/0/0 | 71,707/14,581 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 2 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Pawaskar_2022_reference](drugs/drug_garadacimab/Garadacimab_Pawaskar2022_reference.md) | — | 1-compartment (no model) | 1 | Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022) | [10.1111/cts.13192](https://doi.org/10.1111/cts.13192) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper (the values present come f…</sub><br><sub>route_to: `human_review`</sub> | [Garcia_2025_reference](drugs/drug_garadacimab/Garadacimab_Garcia2025_reference.md) | — | 2-compartment (no model) | 1 | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pawaskar_2022_reference](drugs/drug_garadacimab/Garadacimab_Pawaskar2022_reference.md) | — | 1-compartment (no model) | 0 | Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022) | [10.1111/cts.13192](https://doi.org/10.1111/cts.13192) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Garcia_2025_FXIIa_KA](drugs/drug_garadacimab/pd_Garcia_2025_FXIIa_KA.md) | FXIIa-mediated kallikrein activity ← garadacimab · direct sigmoid Emax (Hill) effect | — | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Garcia_2025_HAE](drugs/drug_garadacimab/pd_Garcia_2025_HAE.md) | HAE attack ← garadacimab · direct sigmoid Emax (Hill) effect | — | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Garcia_2025_FXIIa_mediated_kallikrein_activity_POB](drugs/drug_garadacimab/pd_Garcia_2025_FXIIa_mediated_kallikrein_activity_POB.md) | FXIIa-mediated kallikrein activity percent of baseline ← garadacimab · direct sigmoid Emax (Hill) effect | — | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Garcia_2025_HAE_attack](drugs/drug_garadacimab/pd_Garcia_2025_HAE_attack.md) | HAE attacks ← garadacimab · direct Emax (saturable) effect | — | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Pawaskar_2022_FXIIa](drugs/drug_garadacimab/pd_Pawaskar_2022_FXIIa.md) | FXIIa-mediated kallikrein activity ← garadacimab · target-mediated drug disposition | — | Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022) | [10.1111/cts.13192](https://doi.org/10.1111/cts.13192) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.737). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Pawaskar_2022_aPTT](drugs/drug_garadacimab/pd_Pawaskar_2022_aPTT.md) | activated partial thromboplastin time ← garadacimab · target-mediated drug disposition | — | Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022) | [10.1111/cts.13192](https://doi.org/10.1111/cts.13192) |
 
 ## ADME sites
 
@@ -52,15 +52,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
-## Screened and excluded
-
-| domain | paper | verdict | relevance | extractability | reason |
-|---|---|---|---|---|---|
-| popPK | Garcia_2025 | relevant | 10 | 2 | The paper is a definitive population PK study for garadacimab, but the specific numeric parameter estimates (CL, V, Q, ka) are located in Supplementary Tables S4 and S5, which are not included in the provided evidence. |
-
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-19 11:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 01:47 UTC</sub>

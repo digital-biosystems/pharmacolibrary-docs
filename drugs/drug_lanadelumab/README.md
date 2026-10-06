@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # lanadelumab
 
@@ -18,22 +17,23 @@ Lanadelumab, a monoclonal antibody, is used to treat hereditary angioedema. It i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 12:39 | 1:23 | 0/0/2 | 1/0/0 | 0/0/0 | 74,133/1,211 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 01:21 | 5:35 | 0/0/2 | 1/0/0 | 0/0/0 | 103,006/14,827 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2020_base](drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md) | — | 1-compartment (no model) | 9 | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Wang_2020_final](drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md) | ▶ model + simulator | 1-compartment, oral | 10 | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q18 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wang_2020_base](drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md) | — | 1-compartment (no model) | 9 | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q18 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wang_2020_final](drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md) | — | 1-compartment (no model) | 10 | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2020_HAE_attacks](drugs/drug_lanadelumab/pd_Wang_2020_HAE_attacks.md) | HAE attack rate ← lanadelumab · indirect response — drug inhibits the production of HAE attack rate | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2020_TTF](drugs/drug_lanadelumab/pd_Wang_2020_TTF.md) | Time to first attack ← lanadelumab · indirect response — drug inhibits the production of Time to first attack | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.78). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2020_cHMWK](drugs/drug_lanadelumab/pd_Wang_2020_cHMWK.md) | cHMWK formation ← lanadelumab · indirect response — drug inhibits the production of cHMWK formation | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2020_HAE_Attack_FreeDays](drugs/drug_lanadelumab/pd_Wang_2020_HAE_Attack_FreeDays.md) | HAE Attack FreeDays ← lanadelumab · direct sigmoid Emax (Hill) effect | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.78). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2020_cHMWK](drugs/drug_lanadelumab/pd_Wang_2020_cHMWK.md) | cHMWK ← lanadelumab · indirect response — drug inhibits the production of cHMWK | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Wang_2020_HAE_attack_rate](drugs/drug_lanadelumab/pd_Wang_2020_HAE_attack_rate.md) | HAE attack rate ← lanadelumab · direct Emax (saturable) effect | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Wang_2020_Time_to_first_HAE_attack](drugs/drug_lanadelumab/pd_Wang_2020_Time_to_first_HAE_attack.md) | Time to first HAE attack ← lanadelumab · time-to-event model | — | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
 
 ## ADME sites
 
@@ -54,14 +54,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Marceau_2020 | not_relevant | 0 | 0 | The paper investigates bradykinin kinetics in hereditary angioedema and mentions lanadelumab only to note a lack of effect on KLK-1-induced bradykinin formation in a specific patient group, without reporting pharmacogenomic effects on lanadelumab's PK or PD parameters. |
+| PGx | Marceau_2020 | not_relevant | 0 | 0 | The paper investigates bradykinin kinetics in hereditary angioedema and mentions lanadelumab only to note a lack of effect on KLK-1-induced bradykinin formation in a specific patient group, without reporting a pharmacogenomic effect on lanadelumab's PK or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-19 12:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 01:16 UTC</sub>

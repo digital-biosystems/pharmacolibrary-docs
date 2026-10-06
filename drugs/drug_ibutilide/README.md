@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ibutilide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Tisdale_2012_QTF&quot;,&quot;label&quot;:&quot;Tisdale_2012 \u00b7 QTF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ibutilide
 
@@ -19,7 +18,7 @@ Ibutilide is a class III antiarrhythmic drug used to treat atrial fibrillation. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 11:42 | 4:20 | 0/0/0 | 1/0/1 | 0/0/0 | 9,574/4,553 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/8 | 2/1 | 0 |
+| 2026-10-06 03:55 | 1:35 | 0/0/0 | 1/2/1 | 0/0/0 | 56,587/2,648 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/8 | 2/1 | 0 |
 
 ## popPK records
 
@@ -29,8 +28,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [McBride_2009_IKr_block](drugs/drug_ibutilide/pd_McBride_2009_IKr_block.md) | name ← ibutilide · inhibition effect | — | McBride BF et al., Influence of the G2677T/C3435T haplotyp…, The pharmacogenomics journal (2009) | [10.1038/tpj.2009.1](https://doi.org/10.1038/tpj.2009.1) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | QTF interval ← ibutilide · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [McBride_2009_IKr](drugs/drug_ibutilide/pd_McBride_2009_IKr.md) | IKr ← ibutilide · direct sigmoid Emax (Hill) effect | — | McBride BF et al., Influence of the G2677T/C3435T haplotyp…, The pharmacogenomics journal (2009) | [10.1038/tpj.2009.1](https://doi.org/10.1038/tpj.2009.1) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Fridericia-corrected QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Lin_2008_HERG](drugs/drug_ibutilide/pd_Lin_2008_HERG.md) | HERG current inhibition ← ibutilide · direct Emax (saturable) effect | — | Lin C et al., Extracellular acidification and hyperka…, Cardiology (2008) | [10.1159/000111932](https://doi.org/10.1159/000111932) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zeng_2017_QT](drugs/drug_ibutilide/pd_Zeng_2017_QT.md) | QT interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) |
 
 ## ADME sites
 
@@ -59,36 +60,35 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2007.pdf` | Li Y et al., Pharmacokinetic and pharmacodynamic pro…, Clinical therapeutics (2007) | popPK | 10 | [10.1016/j.clinthera.2007.09.010](https://doi.org/10.1016/j.clinthera.2007.09.010) | [18035195](https://pubmed.ncbi.nlm.nih.gov/18035195) | The study reports quantitative PK parameters (t1/2, CL, Vd) for ibutilide in the text. |
-| `Zeng_2017.pdf` | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | popPK | 10 | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) | [28624123](https://pubmed.ncbi.nlm.nih.gov/28624123) | The title confirms a population PK/PD study of ibutilide, but the provided evidence contains only the title and no numeric parameter values. |
+| `Zeng_2017.pdf` | Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017) | popPK | 10 | [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349) | [28624123](https://pubmed.ncbi.nlm.nih.gov/28624123) | The paper describes a population PK model for ibutilide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | `Simó-Vicens_2017.pdf` | Simó-Vicens R et al., Effect of antiarrhythmic drugs on small…, European journal of pharmac… (2017) | pd | 5 | [10.1016/j.ejphar.2017.03.039](https://doi.org/10.1016/j.ejphar.2017.03.039) | [28322838](https://www.ncbi.nlm.nih.gov/pubmed/28322838) | metadata signals extractable PD data (IC50) |
 | `Yang_1995.pdf` | Yang T et al., Ibutilide, a methanesulfonanilide antia…, Circulation (1995) | pd | 4 | [10.1161/01.cir.91.6.1799](https://doi.org/10.1161/01.cir.91.6.1799) | [7882490](https://www.ncbi.nlm.nih.gov/pubmed/7882490) | metadata signals extractable PD data (EC50) |
 | `Yamreudeewong_2003.pdf` | Yamreudeewong W et al., Potentially significant drug interactio…, Drug safety (2003) | pgx | 7 | [10.2165/00002018-200326060-00004](https://doi.org/10.2165/00002018-200326060-00004) | [12688833](https://www.ncbi.nlm.nih.gov/pubmed/12688833) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-26T11:39:09.071069+00:00</sub>
+<sub>queue written 2026-10-06T03:54:20.483534+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Amos_2001 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of H 345/52 with ibutilide serving only as a comparator for proarrhythmic potential, and no pharmacokinetic parameters are reported. |
-| popPK | Bai_2025 | irrelevant | 0 | 0 | The paper is a computational study on sex-specific classification of antiarrhythmic drugs using machine learning and does not report pharmacokinetic parameters for ibutilide. |
+| popPK | Bai_2025 | irrelevant | 0 | 0 | The study focuses on in vitro electrophysiological effects and machine learning classification of antiarrhythmic drugs, not on the pharmacokinetic disposition parameters (CL, V, etc.) of ibutilide. |
 | PD | Bai_2025 | not_relevant | 3 | 2 | The paper uses in silico simulations with fixed IC50 values to classify drugs via machine learning, but does not report a fitted exposure-response curve or derived PD parameters (like Emax or slope) for ibutilide. |
 | popPK | Brandts_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel inhibition (IC50) in rat myocytes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy that does not mention ibutilide or report any pharmacokinetic parameters for it. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for ibutilide. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report any specific pharmacodynamic or exposure-response data for ibutilide. |
 | popPK | Ellenbogen_1996 | irrelevant | 1 | 0 | The paper is a clinical efficacy study reporting arrhythmia termination rates and safety, with no quantitative pharmacokinetic parameters (CL, V, t1/2) reported for ibutilide. |
 | popPK | Gallik_1997 | irrelevant | 0 | 0 | The paper is a review of pharmacologic cardioversion efficacy and mechanisms, containing no quantitative pharmacokinetic parameters for ibutilide. |
 | PD | Gallik_1997 | not_relevant | 1 | 0 | The text is a review introduction that qualitatively discusses ibutilide's mechanism and cites general conversion rates from other trials, but it does not report any specific exposure-response or dose-response analysis with numeric PD parameters. |
-| popPK | Greenberg_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for moxifloxacin, not ibutilide, which is only mentioned as a concomitant medication of interest. |
+| popPK | Greenberg_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for moxifloxacin, not ibutilide. |
 | PD | Greenberg_2022 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of moxifloxacin in children and does not report any pharmacodynamic or exposure-response relationship for ibutilide. |
 | popPK | Gualdani_2015 | irrelevant | 0 | 0 | The paper investigates the hERG channel blocking properties of mexiletine and its metabolite, not the pharmacokinetics of ibutilide. |
 | PD | Gualdani_2015 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of mexiletine and its metabolite on hERG channels, not ibutilide. |
-| popPK | Lago_2022 | irrelevant | 0 | 0 | The paper is a review on schizophrenia drug targets that mentions ibutilide only as a potential repurposing candidate for KV channels, without reporting any pharmacokinetic parameters. |
+| popPK | Lago_2022 | irrelevant | 0 | 0 | The paper is a review on schizophrenia genetics and drug repurposing, with no mention of ibutilide or its pharmacokinetics. |
 | PD | Lago_2022 | not_relevant | 0 | 0 | The paper is a review on the druggable schizophrenia genome and does not contain any pharmacodynamic or exposure-response data for ibutilide. |
 | popPK | Lin_2008 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel inhibition, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Marks_1996 | irrelevant | 1 | 0 | The paper is a developmental toxicity study in rats and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for ibutilide. |
@@ -97,7 +97,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | McBride_2009_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter-mediated channel block, not a pharmacokinetic study, and ibutilide is only a secondary probe drug without any PK parameters reported. |
 | popPK | Perry_2006 | irrelevant | 0 | 0 | The paper is a mechanistic study of hERG channel binding and structure-activity relationships, not a pharmacokinetic study, and contains no disposition parameters for ibutilide. |
 | popPK | Reiffel_2000 | irrelevant | 0 | 0 | The study is a mechanistic/clinical trial investigating QTc prolongation and drug interactions, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for ibutilide. |
-| popPK | Serrano_2023 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on proarrhythmia risk using deep learning and does not report pharmacokinetic parameters for ibutilide. |
+| popPK | Serrano_2023 | irrelevant | 0 | 0 | The paper describes an in vitro deep learning model for proarrhythmia risk and does not report pharmacokinetic parameters for ibutilide. |
 | PD | Serrano_2023 | not_relevant | 0 | 0 | The paper describes a deep learning platform for predicting proarrhythmia risk using iPSC-CMs and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for ibutilide. |
 | popPK | Simó-Vicens_2017 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on ion channels, not a pharmacokinetic study, and no PK parameters for ibutilide are present in the evidence. |
 | PD | Simó-Vicens_2017 | not_relevant | 0 | 0 | The paper focuses on the electrophysiological effects of antiarrhythmic drugs on ion channels and does not report pharmacokinetic or pharmacodynamic modeling (exposure-response or dose-response) for ibutilide. |
@@ -106,11 +106,11 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Yamreudeewong_2003 | irrelevant | 0 | 0 | The provided evidence contains only the title of a review on drug interactions, with no original pharmacokinetic data or numeric parameters for ibutilide. |
 | PD | Yamreudeewong_2003 | not_relevant | 0 | 0 | The provided text is only a title regarding drug interactions of class III antiarrhythmics and contains no data, analysis, or numeric PD parameters for ibutilide. |
 | PGx | Yamreudeewong_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions of class III antiarrhythmics, not pharmacogenomic effects on ibutilide PK/PD. |
-| popPK | Yang_1995 | irrelevant | 0 | 0 | The paper describes in-vitro electrophysiological mechanisms (IKr blockade) and does not report pharmacokinetic parameters. |
+| popPK | Yang_1995 | irrelevant | 0 | 0 | no_text gate: only 204 chars of text extracted (&lt; 400) |
 | PD | Yang_1995 | not_relevant | 0 | 0 | The provided text is only a title and abstract fragment describing the mechanism of action (IKr block) and dependencies, but it does not contain the full text, data, or numeric PD parameters (such as IC50 or Emax) required to extract a quantitative exposure-response relationship. |
-| popPK | Yoo_2021 | irrelevant | 0 | 0 | The paper is an in silico study on proarrhythmicity classification using an artificial neural network and does not report pharmacokinetic parameters for ibutilide. |
+| popPK | Yoo_2021 | irrelevant | 0 | 0 | The paper describes an in silico/in vitro proarrhythmia prediction model and does not report pharmacokinetic parameters for ibutilide. |
 | PD | Yoo_2021 | not_relevant | 0 | 0 | The paper focuses on an artificial neural network model for classifying proarrhythmic risk using in silico electrophysiological features and does not report a pharmacodynamic (exposure-response) model or numeric PD parameters (e.g., Emax, EC50) for ibutilide. |
-| popPK | Zeng_2017 | relevant | 10 | 0 | The title confirms a population PK/PD study of ibutilide, but the provided evidence contains only the title and no numeric parameter values. |
+| popPK | Zeng_2017 | relevant | 10 | 0 | The paper describes a population PK model for ibutilide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

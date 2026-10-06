@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Pawaskar_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Pawaskar2018_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.176). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,18 +23,20 @@
 
 The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1-inhibitor functional activity.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1-inhibitor (SC), the second reading C1-INH (SC); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1-inhibitor (SC), the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `C1-inhibitor (SC)`, measured `C1-inhibitor functional activity`.
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:36:22.920664+00:00) predates the upstream re-run (2026-10-06 00:58:40.520895+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `C1-inhibitor (SC)`, measured `C1-INH functional activity`.
 
 ## Citation
 Pawaskar D et al., Population pharmacokinetics of subcutan…, Clinical and experimental a… (2018)
   ·  DOI: [10.1111/cea.13220](https://doi.org/10.1111/cea.13220)
 
 ## Model component
-<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="accepted_with_caveats" stale="false" population="healthy volunteers and patients with hereditary angioedema" measured-compound="C1-inhibitor functional activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="extracted" stale="true" population="healthy volunteers and HAE patients" measured-compound="C1-INH functional activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -63,9 +65,12 @@ Pawaskar D et al., Population pharmacokinetics of subcutan…, Clinical and expe
 
 **Interpretation flags:**
 - covariate bodyweight for CL from footnote/prose kept as documentation only (['Pawaskar_2018:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1-inhibitor functional activity
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1-INH functional activity
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: no plausible PubChem entry for 'C1-INH functional activity' ('C1-INH functional activity') — left in mass units
+- molar mass: none found for 'c1_inhibitor_plasma_derived' — its concentrations stay mass-only
+- molar mass: none found for 'C1-INH functional activity' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -81,21 +86,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.176 (3/17 fields) | 14 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 43 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate]` | 0.0146 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate]` | not captured | 0.0146 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance]` | not captured | 1.03 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean population bioavailability of c1-inh]` | 43 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean population bioavailability of c1-inh]` | not captured | 43 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[median apparent plasma half-life]` | 69 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[median apparent plasma half-life]` | not captured | 69 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[median time to peak concentration]` | 59 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[median time to peak concentration]` | not captured | 59 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 0.05 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | C1-inhibitor (SC) | C1-INH (SC) | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | C1-inhibitor functional activity | C1-INH functional activity | mismatch |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 0.05 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | C1-inhibitor (SC) | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | C1-INH functional activity | unknown | mismatch |
 
 </details>
 
@@ -152,7 +162,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_modelica.zip" download>C1InhibitorPlasmaDerived_Pawaskar2018_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_modelica.zip" download>C1InhibitorPlasmaDerived_Pawaskar2018_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_fmi.zip" download>C1InhibitorPlasmaDerived_Pawaskar2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_matlab.zip" download>C1InhibitorPlasmaDerived_Pawaskar2018_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference/C1InhibitorPlasmaDerived_Pawaskar2018_reference_matlab_simbio.zip" download>C1InhibitorPlasmaDerived_Pawaskar2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -174,4 +184,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 10:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:58 UTC</sub>

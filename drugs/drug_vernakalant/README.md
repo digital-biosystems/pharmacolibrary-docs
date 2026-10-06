@@ -14,17 +14,32 @@ Vernakalant is an antiarrhythmic drug used to treat atrial fibrillation. It is a
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q665725](https://www.wikidata.org/wiki/Q665725) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| vernakalant | parent | 349.471 | C20H31NO4 | DrugBank | [9930049](https://pubchem.ncbi.nlm.nih.gov/compound/9930049) | Mao_2012 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 17:44 | 1:08 | 0/1/0 | 0/0/0 | 0/0/0 | 13,764/1,407 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 05:13 | 1:57 | 0/1/0 | 0/0/1 | 0/0/0 | 21,842/5,143 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Mao_2012_reference](drugs/drug_vernakalant/Vernakalant_Mao2012_reference.md) | — | 1-compartment (no model) | 2 | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Mao_2012_reference](drugs/drug_vernakalant/Vernakalant_Mao2012_reference.md) | — | 1-compartment (no model) | 2 | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Mao_2011_QTcF](drugs/drug_vernakalant/pd_Mao_2011_QTcF.md) | QT interval prolongation corrected for heart rate by Fridericia's formula ← vernakalant · direct sigmoid Emax (Hill) effect | — | Mao Z et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9207-3](https://doi.org/10.1007/s10928-011-9207-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Mao_2011_SBP](drugs/drug_vernakalant/pd_Mao_2011_SBP.md) | systolic blood pressure ← vernakalant · direct sigmoid Emax (Hill) effect | — | Mao Z et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9207-3](https://doi.org/10.1007/s10928-011-9207-3) |
 
 ## ADME sites
 
@@ -48,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 23 matched, 23 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -57,7 +72,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mao_2012.pdf` | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | popPK | 10 | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) | [21659624](https://pubmed.ncbi.nlm.nih.gov/21659624) | The paper is a population PK study for vernakalant and explicitly reports quantitative parameters such as median systemic clearance (0.35 L/h/kg) and intersubject variability in the provided text. |
+| `Mao_2012.pdf` | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | popPK | 10 | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) | [21659624](https://pubmed.ncbi.nlm.nih.gov/21659624) | The abstract provides specific quantitative values for median systemic clearance (0.35 L/h/kg) and intersubject variability (40%) for vernakalant in a population PK model. |
 | `Simó-Vicens_2017.pdf` | Simó-Vicens R et al., Effect of antiarrhythmic drugs on small…, European journal of pharmac… (2017) | pd | 5 | [10.1016/j.ejphar.2017.03.039](https://doi.org/10.1016/j.ejphar.2017.03.039) | [28322838](https://www.ncbi.nlm.nih.gov/pubmed/28322838) | metadata signals extractable PD data (IC50) |
 | `Eldstrom_2009.pdf` | Eldstrom J et al., Modeling of high-affinity binding of th…, Journal of molecular graphi… (2009) | pd | 4 | [10.1016/j.jmgm.2009.07.005](https://doi.org/10.1016/j.jmgm.2009.07.005) | [19713139](https://www.ncbi.nlm.nih.gov/pubmed/19713139) | metadata signals extractable PD data (IC50) |
 | `Seyler_2014.pdf` | Seyler C et al., Vernakalant activates human cardiac K(2…, Biochemical and biophysical… (2014) | pd | 4 | [10.1016/j.bbrc.2014.07.133](https://doi.org/10.1016/j.bbrc.2014.07.133) | [25108155](https://www.ncbi.nlm.nih.gov/pubmed/25108155) | metadata signals extractable PD data (EC50) |
@@ -66,7 +81,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Mao_2009.pdf` | Mao ZL et al., Pharmacokinetics of novel atrial-select…, Journal of clinical pharmac… (2009) | pgx | 8 | [10.1177/0091270008325148](https://doi.org/10.1177/0091270008325148) | [18927241](https://www.ncbi.nlm.nih.gov/pubmed/18927241) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Mao_2011.pdf` | Mao ZL et al., Disposition and mass balance of [14C]ve…, Drug metabolism letters (2011) | pgx | 8 | [10.2174/187231211795305249](https://doi.org/10.2174/187231211795305249) | [21457140](https://www.ncbi.nlm.nih.gov/pubmed/21457140) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-09-20T17:44:02.090514+00:00</sub>
+<sub>queue written 2026-10-06T05:11:50.826082+00:00</sub>
 
 ## Screened and excluded
 
@@ -76,7 +91,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Cheng_2010 | not_relevant | 1 | 0 | The text is a review summary that qualitatively describes vernakalant's mechanism and efficacy but does not provide any numeric PD parameters, concentration-effect curves, or dose-response data. |
 | popPK | Eldstrom_2007 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of channel binding and does not report pharmacokinetic parameters. |
 | popPK | Eldstrom_2009 | irrelevant | 0 | 0 | The paper focuses on in-vitro binding to Kv1.5 channels and does not report pharmacokinetic disposition parameters for vernakalant. |
-| popPK | Mao_2011 | irrelevant | 2 | 0 | The paper reports population PK/PD parameters (EC50, Emax) for pharmacodynamic endpoints (QTcF, SBP) but does not provide quantitative disposition parameters (CL, V, ka) for vernakalant. |
+| popPK | Mao_2011 | irrelevant | 2 | 0 | The paper reports population PK/PD parameters (EC50, Emax) for pharmacodynamic endpoints (QTcF, SBP) rather than quantitative disposition parameters (CL, V, ka) for vernakalant. |
 | PGx | Mao_2011_2 | not_relevant | 0 | 0 | The paper describes the disposition and mass balance of vernakalant in healthy volunteers but does not report any pharmacogenomic effects or gene variant analyses. |
 | popPK | Seoane_2015 | irrelevant | 2 | 0 | The paper is a review article analyzing vernakalant's PK/PD, but the provided evidence contains no original quantitative disposition parameters or numeric values. |
 | PD | Seoane_2015 | not_relevant | 2 | 1 | The text is a review summary that mentions the aim to analyze PK/PD but does not provide specific numeric PD parameters or exposure-response data in the provided excerpt. |
@@ -86,9 +101,9 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Simó-Vicens_2017 | not_relevant | 0 | 0 | The paper focuses on the electrophysiological effects of antiarrhythmic drugs on ion channels and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for vernakalant. |
 | popPK | Sutanto_2019 | irrelevant | 0 | 0 | The paper describes a computational tool for antiarrhythmic drugs and does not report original quantitative pharmacokinetic parameters for vernakalant. |
 | PD | Sutanto_2019 | not_relevant | 0 | 0 | The paper describes a computational tool (MANTA) for evaluating antiarrhythmic drugs but does not report specific pharmacodynamic or exposure-response data for vernakalant. |
-| popPK | Tikhonov_2014 | irrelevant | 0 | 0 | The paper is a mechanistic homology modeling study of channel binding, not a pharmacokinetic study, and contains no disposition parameters. |
+| popPK | Tikhonov_2014 | irrelevant | 0 | 0 | The paper describes in silico homology modeling of ligand binding to a potassium channel, not a pharmacokinetic study. |
 | PD | Tikhonov_2014 | not_relevant | 0 | 0 | The paper focuses on homology modeling and molecular docking of vernakalant in the Kv1.5 channel, providing no pharmacokinetic or pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
 | popPK | Wettwer_2013 | irrelevant | 0 | 0 | The paper is an ex vivo electrophysiology study of human atrial tissue, not a pharmacokinetic study reporting disposition parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-20 17:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 05:11 UTC</sub>

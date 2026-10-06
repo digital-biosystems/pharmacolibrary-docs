@@ -4,7 +4,7 @@
 
 # digitoxin — `Digitoxin_Flasch1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 The parameter labelled as volume of distribution of DH-DGT carries value 0.241 with unit '1', which is dimensionless and mismatched for a volume-based structural parameter, triggering the dimension-mismatch refusal. The record was built from the paper's abstract only, so summary statistics stood in for a fitted model. A second reader also disagreed on the dosed and measured compound, reading dihydrodigitoxin instead of digitoxin, and read the volume parameter as absent rather than 0.241. Extracted — digitoxin: V 0.241 1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:15.224091+00:00) predates the upstream re-run (2026-10-06 02:02:23.763143+00:00). Current validate status: `rejected`.
 
 ## Citation
 Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979)
   ·  DOI: [10.1007/BF00500279](https://doi.org/10.1007/BF00500279)
 
 ## Model component
-<dbs-pgx drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="false" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="true" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -43,23 +45,26 @@ Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution of DH-DGT | `Q61` · V | 0.241 | 1 | not captured | [1] | not captured | llm_confirmed (0.6) | Flasch_1979:abstract | — | not captured |
+| volume of distribution of DH-DGT | `Q61` · V | 0.241 | L | 0.000241 | L | not captured | llm_confirmed (0.6) | Flasch_1979:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| biological half-lives of dihydrodigitoxin (DH-DGT) | Q57 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'biological half-lives of dihydrodigitoxin (DH-DGT)' (captured trailing unit 'DH-DGT' for child rows)
-- dropped value-less row: 'biological half-lives of DGT'
-- unit_dimension_mismatch: 'volume of distribution of DH-DGT' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'volume of distribution of DGT' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q57 ('biological half-lives of DGT', value None) — already have one for this compound
+- unit_dimension_unknown: 'null' (V)
 - dropped duplicate Q61 ('volume of distribution of DGT', value 2.581) — already have one for this compound
+- implicit units: 'volume of distribution of DH-DGT' → L (from the popPK convention: 'Volume of distribution parameters in population pharmacokinetics are conventionally expressed in liters (L). The value 0')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=digitoxin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -74,13 +79,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[biological half-life of dh-dgt]` | not captured | 0.12 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[biological half-lives of dihydrodigitoxin]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution of dh-dgt]` | 0.241 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution of dh-dgt]` | not captured | 0.241 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | digitoxin | dihydrodigitoxin | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | digitoxin | dihydrodigitoxin | mismatch |
 
@@ -99,8 +107,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q61 | fail | dimensionless | 1 | not captured | not captured | ['Flasch_1979:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Flasch_1979:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Flasch_1979:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.241 L | not captured | not captured | ['Flasch_1979:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -125,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 12:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 02:02 UTC</sub>

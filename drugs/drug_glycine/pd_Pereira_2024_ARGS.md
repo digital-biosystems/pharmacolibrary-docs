@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05C&quot;,&quot;href&quot;:&quot;atc/B05C.md&quot;},{&quot;label&quot;:&quot;glycine&quot;,&quot;href&quot;:&quot;drugs/drug_glycine/&quot;},{&quot;label&quot;:&quot;Pereira_2024 \u00b7 PD ARGS&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Piro_2021_chloride_current&quot;,&quot;label&quot;:&quot;Piro_2021 \u00b7 chloride current&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glycine/pd_Piro_2021_chloride_current.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ARGS — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
@@ -16,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** M6495 drives ARGS (in nM): indirect response — drug inhibits the production of ARGS.
+**As extracted:** M6495 (measured concentrations) drives ARGS (in nM): indirect response — drug inhibits the production of ARGS.
 
 **Model:** No model was generated from this record.
 
@@ -26,9 +25,9 @@
 
 - **paper:** `Pereira_2024`
 - **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharmacokinetics… (2024)
@@ -37,12 +36,10 @@ Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharm
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | V1 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q63` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row2:col2 |
-| PK (driver) | Q (L/kg/h) — IIV (CV%) (Relative Standard Error %) | `Q30` · not captured | 0 | L/kg/h | not captured | exact (not captured) | Tab1:row3:col2 |
-| PK (driver) | V2 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q64` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row4:col2 |
-| PK (driver) | Km (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q1` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row6:col2 |
-| PD (effect) | Kout (/h) — IIV (CV%) (Relative Standard Error %) | `Q328` · not captured | 0 | /h | not captured | exact (not captured) | Tab1:row9:col2 |
-| PD (effect) | IC50 (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q322` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row11:col2 |
+| PD (effect) | Kout | `Q328` · not captured | 0.0401 | /h | not captured | llm (not captured) | Pereira_2024:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 0.725 | not captured | not captured | llm (not captured) | Pereira_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 1.17 | mg/L | not captured | llm (not captured) | Pereira_2024:pdv3 |
+| PD (effect) | BASE | `Q324` · not captured | 0.36 | nM | not captured | llm (not captured) | Pereira_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

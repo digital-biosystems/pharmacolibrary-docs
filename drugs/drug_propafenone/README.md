@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;propafenone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propafenone_Connolly1984_reference&quot;,&quot;label&quot;:&quot;Connolly_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/Propafenone_Connolly1984_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # propafenone
 
@@ -14,19 +15,39 @@ Propafenone is an antiarrhythmic medicine used to treat heart rhythm problems su
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q662511](https://www.wikidata.org/wiki/Q662511) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| propafenone | parent | 341.444 | C21H27NO3 | DrugBank | [4932](https://pubchem.ncbi.nlm.nih.gov/compound/4932) | Arboix_1985, Connolly_1984, Fernández_1991, Haefeli_1991 |
+| 5-hydroxypropafenone | metabolite | 357.45 | C21H27NO4 | PubChem | [107927](https://pubchem.ncbi.nlm.nih.gov/compound/107927) | Haefeli_1991 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 16:45 | 3:50 | 0/2/1 | 0/0/0 | 0/0/0 | 46,002/11,336 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 0/1 | 1/0 | 0 |
+| 2026-10-06 04:21 | 8:40 | 1/3/0 | 4/0/0 | 0/0/0 | 96,820/28,356 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Connolly_1984_reference](drugs/drug_propafenone/Propafenone_Connolly1984_reference.md) | — | 1-compartment (no model) | 3 | Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | — | 1-compartment (no model) | 5 | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Fernández_1991_reference](drugs/drug_propafenone/Propafenone_Fernndez1991_reference.md) | — | 1-compartment (no model) | 4 | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Connolly_1984_reference](drugs/drug_propafenone/Propafenone_Connolly1984_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | — | 1-compartment (no model) | 5 | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Fernández_1991_reference](drugs/drug_propafenone/Propafenone_Fernndez1991_reference.md) | — | 1-compartment (no model) | 4 | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Haefeli_1991_reference](drugs/drug_propafenone/Propafenone_Haefeli1991_reference.md) | — | 1-compartment (no model) | 0 | Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991) | [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Cai_2001_PR](drugs/drug_propafenone/pd_Cai_2001_PR.md) | PR interval ← propafenone · direct sigmoid Emax (Hill) effect | — | Cai WM et al., Simultaneous modeling of pharmacokineti…, Acta pharmacologica Sinica (2001) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gómez_2014_IKir2_1](drugs/drug_propafenone/pd_G_mez_2014_IKir2_1.md) | IKir2.1 ← propafenone · direct Emax (saturable) effect | — | Gómez R et al., Structural basis of drugs that increase…, Cardiovascular research (2014) | [10.1093/cvr/cvu203](https://doi.org/10.1093/cvr/cvu203) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Haefeli_1991_PQ](drugs/drug_propafenone/pd_Haefeli_1991_PQ.md) | PQ duration ← 5-hydroxypropafenone · delayed effect through an effect compartment | — | Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991) | [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Haefeli_1991_QRS](drugs/drug_propafenone/pd_Haefeli_1991_QRS.md) | QRS duration ← 5-hydroxypropafenone · delayed effect through an effect compartment | — | Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991) | [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Porto_2021_viability_of_schistosomes](drugs/drug_propafenone/pd_Porto_2021_viability_of_schistosomes.md) | viability of schistosomes ← propafenone · direct sigmoid Emax (Hill) effect | — | Porto R et al., Antiparasitic Properties of Cardiovascu…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14070686](https://doi.org/10.3390/ph14070686) |
 
 ## ADME sites
 
@@ -56,41 +77,41 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 17 matched, 15 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 4  ·  extracted 1  ·  needs_review 0  ·  rejected 3  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Arboix_1985.pdf` | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | popPK | 10 | not captured | [4079594](https://pubmed.ncbi.nlm.nih.gov/4079594) | The paper reports quantitative pharmacokinetic parameters (CL, Vd, half-lives) for propafenone in humans, and all numeric values are explicitly present in the provided text. |
-| `Connolly_1984.pdf` | Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984) | popPK | 10 | [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157) | [6744775](https://pubmed.ncbi.nlm.nih.gov/6744775) | The evidence explicitly reports quantitative disposition parameters (clearance, volume of distribution, and half-life) for propafenone in patients. |
-| `Fernández_1991.pdf` | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | popPK | 9 | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) | [1936057](https://pubmed.ncbi.nlm.nih.gov/1936057) | The study reports quantitative pharmacokinetic parameters (CL, Vd, t1/2) for propafenone in rats, and the specific numeric values are explicitly present in the provided text. |
-| `Cai_2001.pdf` | Cai WM et al., Simultaneous modeling of pharmacokineti…, Acta pharmacologica Sinica (2001) | popPK | 8 | not captured | [11749782](https://pubmed.ncbi.nlm.nih.gov/11749782) | The study reports PK-PD modeling for propafenone but the evidence only provides AUC and PD parameters (Ce50, gamma), lacking specific numeric values for clearance, volume, or rate constants. |
-| `Gillis_1986.pdf` | Gillis AM et al., Myocardial uptake kinetics and pharmaco…, The Journal of pharmacology… (1986) | popPK | 8 | not captured | [3712276](https://pubmed.ncbi.nlm.nih.gov/3712276) | The study reports quantitative myocardial uptake kinetics (half-life, accumulation ratio) for propafenone in an animal model, with specific numeric values provided in the text. |
+| `Arboix_1985.pdf` | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | popPK | 10 | not captured | [4079594](https://pubmed.ncbi.nlm.nih.gov/4079594) | The paper reports quantitative pharmacokinetic parameters (CL, Vd, half-lives) for propafenone in humans, with all values explicitly listed in the evidence. |
+| `Connolly_1984.pdf` | Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984) | popPK | 10 | [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157) | [6744775](https://pubmed.ncbi.nlm.nih.gov/6744775) | The abstract provides explicit quantitative values for clearance, volume of distribution, and half-life for propafenone in humans. |
+| `Fernández_1991.pdf` | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | popPK | 10 | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) | [1936057](https://pubmed.ncbi.nlm.nih.gov/1936057) | The study reports quantitative pharmacokinetic parameters (CL, Vd, t1/2) for propafenone in rats, with all values explicitly provided in the text. |
+| `Cai_2001.pdf` | Cai WM et al., Simultaneous modeling of pharmacokineti…, Acta pharmacologica Sinica (2001) | popPK | 8 | not captured | [11749782](https://pubmed.ncbi.nlm.nih.gov/11749782) | The study reports PK-PD modeling for propafenone in humans, but the evidence only provides AUC and PD parameters (Ce50, gamma), lacking explicit clearance, volume, or half-life values. |
+| `Gillis_1986.pdf` | Gillis AM et al., Myocardial uptake kinetics and pharmaco…, The Journal of pharmacology… (1986) | popPK | 8 | not captured | [3712276](https://pubmed.ncbi.nlm.nih.gov/3712276) | The study reports quantitative myocardial uptake kinetics (half-life, accumulation ratio) for propafenone in an isolated perfused rabbit heart model. |
+| `Haefeli_1991.pdf` | Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991) | popPK | 8 | [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m) | [2018005](https://pubmed.ncbi.nlm.nih.gov/2018005) | The study reports quantitative PK parameters (half-life, Cmax, Tmax) for 5-hydroxypropafenone, an active metabolite of propafenone, in humans, which is considered relevant to propafenone's pharmacokinetics. |
 
-<sub>queue written 2026-09-20T16:42:06.236753+00:00</sub>
+<sub>queue written 2026-10-06T04:13:43.351084+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cai_2001 | relevant | 8 | 2 | The study reports PK-PD modeling for propafenone but the evidence only provides AUC and PD parameters (Ce50, gamma), lacking specific numeric values for clearance, volume, or rate constants. |
-| popPK | Chiba_1997 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and MDR-modulating activity of propafenone analogs, containing no pharmacokinetic parameters. |
+| popPK | Cai_2001 | relevant | 8 | 3 | The study reports PK-PD modeling for propafenone in humans, but the evidence only provides AUC and PD parameters (Ce50, gamma), lacking explicit clearance, volume, or half-life values. |
+| popPK | Chiba_1997 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro pharmacological activity (MDR modulation) of propafenone analogs, reporting no pharmacokinetic parameters. |
 | PD | Chiba_1997 | not_relevant | 4 | 2 | The paper reports EC50 values for analogs in a daunomycin efflux assay, but the specific numeric values are not provided in the text, making them non-extractable. |
-| popPK | Cogolludo_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of propafenone's effects on potassium channels in rat vascular smooth muscle, not a pharmacokinetic study. |
-| popPK | Cvetkovic_2003 | irrelevant | 0 | 0 | The paper is a review of lopinavir/ritonavir and only mentions propafenone as a contraindicated interacting drug, providing no pharmacokinetic parameters for propafenone. |
+| popPK | Cogolludo_2001 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of potassium channel modulation, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Cvetkovic_2003 | irrelevant | 0 | 0 | The paper is a review of lopinavir/ritonavir pharmacokinetics and mentions propafenone only as a contraindicated interacting drug, providing no PK parameters for propafenone. |
 | PD | Cvetkovic_2003 | not_relevant | 0 | 0 | The paper is a review of lopinavir/ritonavir and does not report any pharmacodynamic or exposure-response analysis for propafenone. |
 | popPK | Gómez_2014 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of propafenone's effect on Kir2.1 channels, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Haefeli_1991 | irrelevant | 2 | 2 | The study focuses on the metabolite 5-hydroxypropafenone rather than the parent drug propafenone, and reports only basic PK parameters (tmax, Cmax, t1/2) without compartmental clearance or volume values. |
-| popPK | Hoppe_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel modulation, not a pharmacokinetic study, and reports no disposition parameters for propafenone. |
-| popPK | McLeod_1984 | irrelevant | 0 | 0 | The study focuses on beta-adrenoceptor blockade and in-vitro binding affinities (EC50, KD) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for propafenone. |
-| popPK | Michaud_2006 | irrelevant | 1 | 0 | The study investigates the effect of propafenone on caffeine pharmacokinetics, making propafenone a perpetrator/comparator rather than the subject drug for which disposition parameters are reported. |
-| popPK | Oti-Amoako_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiarrhythmic potency in isolated rat hearts, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Porto_2021 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo antiparasitic efficacy study where propafenone is a screened agent, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Hoppe_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel modulation, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | McLeod_1984 | irrelevant | 0 | 0 | The study focuses on beta-adrenoceptor blockade and in vitro binding/adenylate cyclase activity, reporting no quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for propafenone. |
+| popPK | Michaud_2006 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of caffeine as the subject drug, with propafenone acting as a co-administered inhibitor/comparator. |
+| popPK | Oti-Amoako_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of antiarrhythmic potency in isolated rat hearts, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Porto_2021 | irrelevant | 0 | 0 | The study evaluates the antiparasitic efficacy of propafenone against Schistosoma mansoni in vitro and in mice, reporting no pharmacokinetic parameters (CL, V, etc.) for the drug. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-20 16:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 04:14 UTC</sub>

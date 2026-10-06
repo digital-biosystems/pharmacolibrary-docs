@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;donidalorsen&quot;,&quot;href&quot;:&quot;drugs/drug_donidalorsen/&quot;},{&quot;label&quot;:&quot;Diep_2026 \u00b7 PD prekallikrein&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# prekallikrein — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span>
+# prekallikrein — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 **As extracted:** Donidalorsen (concentrations from this paper's PK model) drives prekallikrein (in mg/L): indirect response — drug inhibits the production of prekallikrein.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
 > Plasma donidalorsen concentration inhibits the zero-order production rate of prekallikrein (PKK, mg/L) in an indirect response model (Imax proportional inhibition, no Hill coefficient), with Imax 0.992, IC50 0.158 ng/mL, and kout 0.00266 h−1 (baseline estimated as kin/kout).
 >
@@ -34,62 +34,15 @@ Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | k out (h−1) — Estimate | `Q328` · not captured | 0.00266 | h−1 | not captured | space_fold (not captured) | psp470206-tbl-0002:row3:col1 |
-| PD (effect) | k out (h−1) — %RSE | `Q328` · not captured | 4.70 | h−1 | not captured | space_fold (not captured) | psp470206-tbl-0002:row3:col2 |
-| PD (effect) | I max — Estimate | `Q323` · not captured | 0.992 | not captured | not captured | space_fold (not captured) | psp470206-tbl-0002:row4:col1 |
-| PD (effect) | I max — %RSE | `Q323` · not captured | 1.19 | not captured | not captured | space_fold (not captured) | psp470206-tbl-0002:row4:col2 |
-| PD (effect) | IC50 (ng/mL) b — Estimate | `Q322` · not captured | 0.158 | unknown | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row5:col1 |
-| PD (effect) | IC50 (ng/mL) b — %RSE | `Q322` · not captured | 11.0 | unknown | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row5:col2 |
-| variability | BSV% BL (Sh%) — Estimate | `Q318` · not captured | 25.9 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row7:col1 |
-| variability | BSV% BL (Sh%) — %RSE | `Q318` · not captured | 16.4 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row7:col2 |
-| variability | BSV% k out (Sh%) — Estimate | `Q318` · not captured | 36.6 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row8:col1 |
-| variability | BSV% k out (Sh%) — %RSE | `Q318` · not captured | 21.0 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row8:col2 |
-| PD (effect) | BSV% IC50 (Sh%) — Estimate | `Q322` · not captured | 83.1 | Sh% | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row9:col1 |
-| PD (effect) | BSV% IC50 (Sh%) — %RSE | `Q322` · not captured | 16.4 | Sh% | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row9:col2 |
-| variability | σprop — Estimate | `Q316` · not captured | 0.159 | not captured | not captured | llm (not captured) | psp470206-tbl-0002:row10:col1 |
-| variability | σprop — %RSE | `Q316` · not captured | 6.13 | not captured | not captured | llm (not captured) | psp470206-tbl-0002:row10:col2 |
+| PD (effect) | BL | `Q324` · not captured | 139 | mg/L | not captured | llm (not captured) | Diep_2026:pdv3 |
+| PD (effect) | k out | `Q328` · not captured | 0.00266 | h−1 | not captured | llm (not captured) | Diep_2026:pdv3 |
+| PD (effect) | I max | `Q323` · not captured | 0.992 | not captured | not captured | llm (not captured) | Diep_2026:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.158 | ng/mL | not captured | llm (not captured) | Diep_2026:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Donidalorsen_Diep2026_PD_pkk` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | 0.992 | — |
-| EC50 | 0.158 unknown | — |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — E0, gamma
-- `pd_binding_exposure_unit_unresolved` — 'unknown' — the x axis is in the paper's unit, not SI
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | effect_direction 'inhibition' |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -127,14 +80,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donidalorsen/Donidalorsen_Diep2026_PD_pkk/Donidalorsen_Diep2026_PD_pkk_modelica.zip" download>Donidalorsen_Diep2026_PD_pkk_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_donidalorsen/Donidalorsen_Diep2026_PD_pkk/Donidalorsen_Diep2026_PD_pkk_matlab.zip" download>Donidalorsen_Diep2026_PD_pkk_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_donidalorsen/Donidalorsen_Diep2026_PD_pkk/Donidalorsen_Diep2026_PD_pkk_sbml.zip" download>Donidalorsen_Diep2026_PD_pkk_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_donidalorsen/Donidalorsen_Diep2026_PD_pkk/Donidalorsen_Diep2026_PD_pkk_cellml.zip" download>Donidalorsen_Diep2026_PD_pkk_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

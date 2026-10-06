@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;procainamide&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/&quot;},{&quot;label&quot;:&quot;Grasela_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procainamide_Grasela1984_reference&quot;,&quot;label&quot;:&quot;Grasela_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Grasela1984_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Procainamide_Singh1982_reference&quot;,&quot;label&quot;:&quot;Singh_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Singh1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Papich1986_reference&quot;,&quot;label&quot;:&quot;Papich_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Papich1986_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procainamide_Grasela1984_reference&quot;,&quot;label&quot;:&quot;Grasela_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Grasela1984_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Procainamide_Papich1986_reference&quot;,&quot;label&quot;:&quot;Papich_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Papich1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Singh1982_reference&quot;,&quot;label&quot;:&quot;Singh_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Singh1982_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # procainamide — `Procainamide_Grasela1984_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clo: this record has 1.2, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 09:31:10.346783+00:00) predates the upstream re-run (2026-10-06 04:04:54.962061+00:00). Current validate status: `extracted`.
 
 ## Citation
 Grasela TH et al., Population pharmacokinetics of procaina…, Clinical pharmacokinetics (1984)
   ·  DOI: [10.2165/00003088-198409060-00004](https://doi.org/10.2165/00003088-198409060-00004)
 
 ## Model component
-<dbs-pgx drug="procainamide" model-id="Procainamide_Grasela1984_reference" status="curated_candidate" stale="false" population="patients receiving procainamide" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="procainamide" model-id="Procainamide_Grasela1984_reference" status="extracted" stale="true" population="patients receiving procainamide" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -40,9 +42,9 @@ Grasela TH et al., Population pharmacokinetics of procaina…, Clinical pharmaco
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLR | `Q26` · CLR | 14.4 | L/h | 4.000000000000001e-06 | [l] / [h] | not captured | exact (1.0) | Grasela_1984:abstract | — | not captured |
-| CLO | `Q22` · CL | 1.2 | L/h | 3.333333333333333e-07 | [l] / [h] | not captured | llm (0.6) | Grasela_1984:abstract | — | not captured |
-| Vd | `Q61` · V | 136.0 | L | 0.136 | [l] | not captured | exact (1.0) | Grasela_1984:abstract | — | not captured |
+| CLR | `Q26` · CLR | 14.4 | L/h | 4.000000000000001e-06 | [l] / [h] | not captured | exact (1.0) | Grasela_1984:abstract, Grasela_1984:abstract | — | not captured |
+| CLA | `Q22` · CL | 10.1 | L/h | 2.8055555555555555e-06 | [l] / [h] | not captured | llm (0.6) | Grasela_1984:abstract, Grasela_1984:abstract | — | not captured |
+| Vd | `Q61` · V | 136.0 | L | 0.136 | [l] | not captured | exact (1.0) | Grasela_1984:abstract, Grasela_1984:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,14 +54,14 @@ Grasela TH et al., Population pharmacokinetics of procaina…, Clinical pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'CLA' — extend the ontology if this is a real PK parameter (source ['Grasela_1984:abstract'])
+- dropped duplicate Q22 ('CLO', value 1.2) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=procainamide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Grasela_1984_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Grasela_1984_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -68,15 +70,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
 <details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clo]` | 1.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clr]` | 14.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd]` | 136.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss:120b` | `parameters[cla].parameter_id` | Q22 | Q27 | mismatch |
+| `gpt-oss:120b` | `parameters[clo]` | not captured | 1.2 | only_one_extracted |
 
 </details>
 
@@ -93,13 +95,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Grasela_1984:abstract'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Grasela_1984:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Grasela_1984:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.2 | not captured | not captured | ['Grasela_1984:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Grasela_1984:abstract', 'Grasela_1984:abstract'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Grasela_1984:abstract', 'Grasela_1984:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Grasela_1984:abstract', 'Grasela_1984:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.1 | not captured | not captured | ['Grasela_1984:abstract', 'Grasela_1984:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.2 L/h | not captured | not captured | ['Grasela_1984:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 136 L | not captured | not captured | ['Grasela_1984:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10.1 L/h | not captured | not captured | ['Grasela_1984:abstract', 'Grasela_1984:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 136 L | not captured | not captured | ['Grasela_1984:abstract', 'Grasela_1984:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -153,4 +155,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 04:04 UTC</sub>

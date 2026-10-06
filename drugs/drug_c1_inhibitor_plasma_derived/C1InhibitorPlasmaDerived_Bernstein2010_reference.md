@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Bernstein_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Bernstein2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is c1 inhibitor plasma derived's own; they describe C1 esterase inhibitor. Extracted — C1 esterase inhibitor: t1/2z 32.7 hours, CL 0.92 mL/kg/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1 esterase inhibitor, the second reading pC1-INH concentrate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1 esterase inhibitor, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:22.912948+00:00) predates the upstream re-run (2026-10-06 00:58:33.910908+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Bernstein JA et al., Population pharmacokinetics of plasma-d…, Annals of allergy, asthma &… (2010)
   ·  DOI: [10.1016/j.anai.2010.06.005](https://doi.org/10.1016/j.anai.2010.06.005)
 
 ## Model component
-<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Bernstein2010_reference" status="needs_review" stale="false" population="patients with hereditary angioedema" measured-compound="C1 esterase inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Bernstein2010_reference" status="needs_review" stale="true" population="patients with hereditary angioedema" measured-compound="C1 esterase inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -54,6 +56,9 @@ Bernstein JA et al., Population pharmacokinetics of plasma-d…, Annals of aller
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1 esterase inhibitor
+- molar mass: no plausible PubChem entry for 'C1 esterase inhibitor' ('C1 esterase inhibitor') — left in mass units
+- molar mass: none found for 'c1_inhibitor_plasma_derived' — its concentrations stay mass-only
+- molar mass: none found for 'C1 esterase inhibitor' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'C1 esterase inhibitor', not c1_inhibitor_plasma_derived — the review values are the parent's
 
@@ -67,16 +72,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[estimated mean clearance]` | 0.92 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[estimated mean clearance]` | not captured | 0.92 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[estimated mean half-life]` | 32.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | C1 esterase inhibitor | pC1-INH concentrate | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | C1 esterase inhibitor | pC1-INH | mismatch |
+| `gpt-oss:120b` | `parameters[estimated mean half-life]` | not captured | 32.7 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | C1 esterase inhibitor | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | C1 esterase inhibitor | unknown | mismatch |
 
 </details>
 
@@ -132,4 +139,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 10:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:58 UTC</sub>

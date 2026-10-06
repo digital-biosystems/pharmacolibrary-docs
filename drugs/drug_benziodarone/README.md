@@ -18,7 +18,7 @@ Benziodarone is a vasodilator that was used in cardiac therapy and also acts as 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 20:56 | 1:48 | 0/0/0 | 1/0/0 | 0/0/0 | 12,321/627 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 08:27 | 0:28 | 0/0/0 | 1/0/0 | 0/0/0 | 14,379/879 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,11 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_displacement_from_TBG](drugs/drug_benziodarone/pd_Brandt_2026_T4_displacement_from_TBG.md) | name ← Tetrac · inhibition effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_displacement_from_TTR](drugs/drug_benziodarone/pd_Brandt_2026_T4_displacement_from_TTR.md) | name ← Tetrac · inhibition effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_displacement_from_human_serum](drugs/drug_benziodarone/pd_Brandt_2026_T4_displacement_from_human_serum.md) | name ← Tetrac · inhibition effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_displacement_from_protein_mix](drugs/drug_benziodarone/pd_Brandt_2026_T4_displacement_from_protein_mix.md) | name ← Tetrac · inhibition effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_displacement_from_rat_serum](drugs/drug_benziodarone/pd_Brandt_2026_T4_displacement_from_rat_serum.md) | name ← Tetrac · inhibition effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_TBG](drugs/drug_benziodarone/pd_Brandt_2026_T4_TBG.md) | T4-TBG binding ← Benziodarone · direct sigmoid Emax (Hill) effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Brandt_2026_T4_TTR](drugs/drug_benziodarone/pd_Brandt_2026_T4_TTR.md) | T4-TTR binding ← Benziodarone · direct sigmoid Emax (Hill) effect | — | Brandt J et al., Thyroxin displacement from single and c…, Archives of toxicology (2026) | [10.1007/s00204-026-04400-4](https://doi.org/10.1007/s00204-026-04400-4) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -53,18 +50,18 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shimizu_1975.pdf` | Shimizu S et al., [Pharmacokinetics of benziodarone label…, Revista de farmacia e bioqu… (1975) | popPK | 8 | not captured | [1085962](https://pubmed.ncbi.nlm.nih.gov/1085962) | The paper describes a pharmacokinetic study of benziodarone in rats involving compartmental analysis, but the provided evidence contains only the abstract/methodology description without any specific numeric parameter values (CL, V, t1/2, etc.). |
+| `Shimizu_1975.pdf` | Shimizu S et al., [Pharmacokinetics of benziodarone label…, Revista de farmacia e bioqu… (1975) | popPK | 8 | not captured | [1085962](https://pubmed.ncbi.nlm.nih.gov/1085962) | The study describes a pharmacokinetic analysis of benziodarone in rats, but the provided evidence contains only the abstract/methods description without any numeric parameter values. |
 
-<sub>queue written 2026-09-09T20:56:08.724926+00:00</sub>
+<sub>queue written 2026-10-06T08:27:13.948552+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Brandt_2026 | irrelevant | 0 | 0 | The study is an in-vitro thyroid hormone protein binding assay measuring IC50 values for T4 displacement, not a pharmacokinetic study reporting disposition parameters like clearance or volume for benziodarone. |
-| popPK | Kramp_1975 | irrelevant | 2 | 0 | The study investigates renal tubular permeability and urate clearance mechanisms in rats rather than reporting systemic pharmacokinetic parameters (CL, V, ka) for benziodarone itself. |
-| popPK | Perez-Ruiz_2003 | irrelevant | 0 | 0 | The paper is a clinical efficacy study of urate-lowering therapy and does not report any pharmacokinetic parameters for benziodarone. |
-| popPK | Shimizu_1975 | relevant | 8 | 0 | The paper describes a pharmacokinetic study of benziodarone in rats involving compartmental analysis, but the provided evidence contains only the abstract/methodology description without any specific numeric parameter values (CL, V, t1/2, etc.). |
+| popPK | Kramp_1975 | irrelevant | 0 | 0 | The study investigates renal tubular permeability and urate clearance mechanisms in rats, not the systemic pharmacokinetic parameters (CL, V, ka) of benziodarone itself. |
+| popPK | Perez-Ruiz_2003 | irrelevant | 0 | 0 | The study is a clinical efficacy review of urate-lowering therapy and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for benziodarone. |
+| popPK | Shimizu_1975 | relevant | 8 | 0 | The study describes a pharmacokinetic analysis of benziodarone in rats, but the provided evidence contains only the abstract/methods description without any numeric parameter values. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

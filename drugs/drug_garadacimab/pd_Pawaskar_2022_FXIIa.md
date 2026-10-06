@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Garadacimab (concentrations from this paper's PK model) drives FXIIa-mediated kallikrein activity (in %): target-mediated drug disposition.
+**As extracted:** Garadacimab (concentrations from this paper's PK model) drives FXIIa-mediated kallikrein activity: target-mediated drug disposition.
 
 **Model:** No model was generated from this record.
 
@@ -26,8 +26,8 @@
 - **paper:** `Pawaskar_2022`
 - **model family:** `tmdd`
 - **driver:** `pk_record`
-- **tier:** descriptive
-- **effect:** inhibition/unknown
+- **tier:** population
+- **effect:** inhibition/proportional
 
 ## Citation
 Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022)
@@ -36,18 +36,10 @@ Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and tran
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | F — Estimate | `Q40` · not captured | 0.529 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row2:col2 |
-| PK (driver) | ka (h−1) — Estimate | `Q49` · not captured | 0.0227 | h−1 | not captured | exact (not captured) | cts13192-tbl-0001:row3:col2 |
-| variability | σ 1 — Estimate | `Q315` · not captured | 0.98 | not captured | not captured | llm (not captured) | cts13192-tbl-0001:row4:col2 |
-| variability | σ 2 — Estimate | `Q315` · not captured | 0.426 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row5:col2 |
-| PK (driver) | CLp (ml/h/kg) — Estimate | `Q22` · not captured | 0.215 | ml/h/kg | not captured | exact (not captured) | cts13192-tbl-0001:row6:col2 |
-| PD (effect) | k deg (1/h) — Estimate | `Q328` · not captured | 0.0058 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row8:col2 |
-| PD (effect) | k int (1/h) — Estimate | `Q334` · not captured | 0.004 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row9:col2 |
-| PK (driver) | α — Estimate | `Q67` · not captured | 1.59 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row10:col2 |
-| model term | Kp — Estimate | `Q410` · not captured | 0.4 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row17:col2 |
-| PK (driver) | VP (ml/kg) — Estimate | `Q64` · not captured | 44.9 | ml/kg | not captured | exact (not captured) | cts13192-tbl-0001:row18:col2 |
-| PK (driver) | VL (ml/kg) — Estimate | `Q352` · not captured | 89.7 | ml/kg | not captured | llm (not captured) | cts13192-tbl-0001:row19:col2 |
-| PK (driver) | L (ml/h/kg) — Estimate | `Q358` · not captured | 3.51 | ml/h/kg | not captured | llm (not captured) | cts13192-tbl-0001:row20:col2 |
+| PD (effect) | k deg | `Q328` · not captured | 0.0058 | 1/h | not captured | llm (not captured) | Pawaskar_2022:pdv3 |
+| PD (effect) | k int | `Q334` · not captured | 0.004 | 1/h | not captured | llm (not captured) | Pawaskar_2022:pdv3 |
+| model term | α | `Q900` · not captured | 1.59 | not captured | not captured | llm (not captured) | Pawaskar_2022:pdv3 |
+| PD (effect) | FXIIaB | `Q333` · not captured | 0.3 | nmol/ml | not captured | llm (not captured) | Pawaskar_2022:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -4,7 +4,7 @@
 
 # lidocaine — `Lidocaine_Kim2021_group_5`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 The paper is an exposure/outcome study, not a compartmental population PK model: no distribution volume and no clearance or elimination rate are reported. The metabolism chain lidocaine→MEGX→GX leaves the metabolite GX with no path from the administered dose, so it is unlinked. Additionally, the reported unit h × ng/mL for AUC∞ could not be converted to SI, and a second reader disputed the parameterization (apparent rather than mechanistic) and several values, reading AUC∞, Cmax and half-life as absent and instead reporting clearance parameters (CLd/f 0.13, CLm1/f 14.94, fm1 0.65, fr 0.373) that this record lacks. Extracted — lidocaine: t1/2z 1.52 h, Cmax 6.33e+03 ng/mL, tmax 1.44 h, AUC∞ 2.25e+04 h × ng/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lidocaine, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:22.165445+00:00) predates the upstream re-run (2026-10-06 03:23:01.467421+00:00). Current validate status: `rejected`.
 
 ## Citation
 Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203)
 
 ## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_Kim2021_group_5" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="lidocaine" model-id="Lidocaine_Kim2021_group_5" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -57,11 +59,14 @@ Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021)
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'h × ng/mL' (AUC∞)
+- implicit units: 'AUCinf (h × ng/mL)' — the LLM proposed 'h × ng/mL', whose dimension does not fit Q17; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lidocaine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - population split: 'group 5' subgroup of Kim_2021 (paper reports 12 populations: (0.3% solution, iv), (0.3% solution, sc), (lha 0.3%, sc), (lha 1%, sc), (lha 3%, sc), estimate, group 1, group 2, group 3, group 4, group 5, gx)
+- row roles (LLM): model_class=compartmental; 28/28 row label(s) assigned, 18 linked by role; re-tagged parent→monoethylglycylxylidide ×6, parent→glycylxylidide ×4
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
@@ -103,18 +108,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+| `gpt-oss:120b` | not confirmed | 0.0 (0/21 fields) | 21 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['lidocaine', 'gx', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[aucinf]` | 22470.67 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cld/f]` | not captured | 0.13 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clm1/f]` | not captured | 14.94 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm2/f]` | not captured | 1.09 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax or co]` | 6332.16 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fm1]` | not captured | 0.65 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[fm2]` | not captured | 0.47 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fr]` | not captured | 0.373 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | 1.52 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka1]` | not captured | 5.92 | only_one_extracted |
@@ -125,6 +133,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[v1/f]` | not captured | 2.57 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v2/f]` | not captured | 0.07 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vmax]` | not captured | 423962.94 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | lidocaine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | lidocaine | unknown | mismatch |
 
 </details>
 
@@ -169,4 +179,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:23 UTC</sub>

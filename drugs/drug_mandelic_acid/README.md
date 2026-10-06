@@ -18,25 +18,11 @@ Mandelic acid is an antibacterial agent that has been used, notably as a urinary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 09:02 | 8:36 | 0/0/0 | 2/2/1 | 0/0/0 | 177,090/5,882 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 4/9 | 6/0 | 0 |
+| 2026-10-06 00:31 | 2:25 | 0/0/0 | 0/0/0 | 0/0/0 | 96,477/1,917 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 4/9 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chen_2023_fungal_growth_inhibition](drugs/drug_mandelic_acid/pd_Chen_2023_fungal_growth_inhibition.md) | name ← E13 · inhibition effect | — | Chen B et al., Design, Synthesis, In Vitro Antifungal…, International journal of mo… (2023) | [10.3390/ijms24108898](https://doi.org/10.3390/ijms24108898) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Mesquita_2008_HIV_1_infection](drugs/drug_mandelic_acid/pd_Mesquita_2008_HIV_1_infection.md) | name ← PPCM · inhibition effect | — | Mesquita PM et al., Candidate microbicide PPCM blocks human…, Journal of virology (2008) | [10.1128/JVI.00335-08](https://doi.org/10.1128/JVI.00335-08) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Mesquita_2008_HSV_2_infection](drugs/drug_mandelic_acid/pd_Mesquita_2008_HSV_2_infection.md) | name ← PPCM · inhibition effect | — | Mesquita PM et al., Candidate microbicide PPCM blocks human…, Journal of virology (2008) | [10.1128/JVI.00335-08](https://doi.org/10.1128/JVI.00335-08) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Kwon_2025_unknown](drugs/drug_mandelic_acid/pd_Kwon_2025_unknown.md) | acute neuro-irritative symptoms ← mandelic acid · categorical (graded) response model | — | Kwon OH et al., Occupational exposure to styrene and ac…, PloS one (2025) | [10.1371/journal.pone.0334962](https://doi.org/10.1371/journal.pone.0334962) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Powis_1973_intracellular_accumulation_of_noradrenaline](drugs/drug_mandelic_acid/pd_Powis_1973_intracellular_accumulation_of_noradrenaline.md) | name ← (-)-noradrenaline · inhibition effect | — | Powis G, The accumulation and metabolism of (-)-…, British journal of pharmaco… (1973) | [10.1111/j.1476-5381.1973.tb08187.x](https://doi.org/10.1111/j.1476-5381.1973.tb08187.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sisto_2020_direct_DNA_damage](drugs/drug_mandelic_acid/pd_Sisto_2020_direct_DNA_damage.md) | name ← S-Benzylmercapturic acid · direct linear effect | — | Sisto R et al., Direct and Oxidative DNA Damage in a Gr…, Frontiers in public health (2020) | [10.3389/fpubh.2020.00445](https://doi.org/10.3389/fpubh.2020.00445) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sisto_2020_oxidative_DNA_damage](drugs/drug_mandelic_acid/pd_Sisto_2020_oxidative_DNA_damage.md) | name ← S-Benzylmercapturic acid · direct linear effect | — | Sisto R et al., Direct and Oxidative DNA Damage in a Gr…, Frontiers in public health (2020) | [10.3389/fpubh.2020.00445](https://doi.org/10.3389/fpubh.2020.00445) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sisto_2020_oxidative_stress](drugs/drug_mandelic_acid/pd_Sisto_2020_oxidative_stress.md) | name ← S-Benzylmercapturic acid · direct linear effect | — | Sisto R et al., Direct and Oxidative DNA Damage in a Gr…, Frontiers in public health (2020) | [10.3389/fpubh.2020.00445](https://doi.org/10.3389/fpubh.2020.00445) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sisto_2020_total_DNA_damage](drugs/drug_mandelic_acid/pd_Sisto_2020_total_DNA_damage.md) | name ← S-Benzylmercapturic acid · direct linear effect | — | Sisto R et al., Direct and Oxidative DNA Damage in a Gr…, Frontiers in public health (2020) | [10.3389/fpubh.2020.00445](https://doi.org/10.3389/fpubh.2020.00445) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -57,8 +43,8 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Amin_1975.pdf` | Amin YM et al., Mechanistic evaluation of modifications…, Journal of pharmaceutical s… (1975) | popPK | 9 | [10.1002/jps.2600641113](https://doi.org/10.1002/jps.2600641113) | [1195112](https://pubmed.ncbi.nlm.nih.gov/1195112) | The paper is a pharmacokinetic study in rats reporting compartmental parameters for mandelic acid, but the specific numeric values are not present in the provided evidence text. |
-| `Amin_1975_2.pdf` | Amin YM et al., Utilization of model compounds to evalu…, Journal of pharmaceutical s… (1975) | popPK | 9 | [10.1002/jps.2600641112](https://doi.org/10.1002/jps.2600641112) | [1195111](https://pubmed.ncbi.nlm.nih.gov/1195111) | The paper is a pharmacokinetic study of mandelic acid in rats using a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
+| `Amin_1975.pdf` | Amin YM et al., Mechanistic evaluation of modifications…, Journal of pharmaceutical s… (1975) | popPK | 9 | [10.1002/jps.2600641113](https://doi.org/10.1002/jps.2600641113) | [1195112](https://pubmed.ncbi.nlm.nih.gov/1195112) | The study reports pharmacokinetic parameters for mandelic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Amin_1975_2.pdf` | Amin YM et al., Utilization of model compounds to evalu…, Journal of pharmaceutical s… (1975) | popPK | 9 | [10.1002/jps.2600641112](https://doi.org/10.1002/jps.2600641112) | [1195111](https://pubmed.ncbi.nlm.nih.gov/1195111) | The study reports compartmental PK models (V1, V2) for mandelic acid in rats, but the specific numeric values are not present in the provided text. |
 | `Fustinoni_2010.pdf` | Fustinoni S et al., Assessing variability and comparing sho…, Toxicology letters (2010) | pd | 5 | [10.1016/j.toxlet.2009.02.004](https://doi.org/10.1016/j.toxlet.2009.02.004) | [20117324](https://www.ncbi.nlm.nih.gov/pubmed/20117324) | metadata signals extractable PD data (exposure-response) |
 | `Kolstad_1999.pdf` | Kolstad HA et al., Change in semen quality and sperm chrom…, International archives of o… (1999) | pd | 5 | not captured | [10392560](https://www.ncbi.nlm.nih.gov/pubmed/10392560) | metadata signals extractable PD data (exposure-response) |
 | `Liljelind_2003.pdf` | Liljelind I et al., Exposure assessment of monoterpenes and…, Occupational and environmen… (2003) | pd | 5 | [10.1136/oem.60.8.599](https://doi.org/10.1136/oem.60.8.599) | [12883022](https://www.ncbi.nlm.nih.gov/pubmed/12883022) | metadata signals extractable PD data (exposure-response) |
@@ -67,28 +53,28 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Prieto-Castelló_2010.pdf` | Prieto-Castelló MJ et al., Use of the CYP2E1 genotype and phenotyp…, Toxicology letters (2010) | pgx | 8 | [10.1016/j.toxlet.2009.01.011](https://doi.org/10.1016/j.toxlet.2009.01.011) | [20117323](https://www.ncbi.nlm.nih.gov/pubmed/20117323) | metadata signals extractable PGX data (CYP2E1, PK/PD-context) |
 | `Marchand_2015.pdf` | Marchand A et al., Human inhalation exposures to toluene,…, Toxicological sciences : an… (2015) | pgx | 7 | [10.1093/toxsci/kfv009](https://doi.org/10.1093/toxsci/kfv009) | [25601989](https://www.ncbi.nlm.nih.gov/pubmed/25601989) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-19T08:58:00.204529+00:00</sub>
+<sub>queue written 2026-10-06T00:29:34.962691+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Akhtar_2010 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on urease inhibitors derived from mandelic acid and contains no pharmacokinetic data. |
-| popPK | Amagaya_1990 | irrelevant | 0 | 0 | The study focuses on the behavioral effects of Shosaikoto on age-induced amnesia in rats, and mandelic acid is only mentioned as a neurochemical marker (vanillyl mandelic acid) without any pharmacokinetic parameter reporting. |
-| popPK | Amin_1975 | relevant | 9 | 0 | The paper is a pharmacokinetic study in rats reporting compartmental parameters for mandelic acid, but the specific numeric values are not present in the provided evidence text. |
-| popPK | Amin_1975_2 | relevant | 9 | 0 | The paper is a pharmacokinetic study of mandelic acid in rats using a compartmental model, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Amagaya_1990 | irrelevant | 0 | 0 | The study focuses on the behavioral effects of Shosaikoto on amnesia in rats and mentions vanillyl mandelic acid only as a neurochemical marker, not as a subject of pharmacokinetic analysis. |
+| popPK | Amin_1975 | relevant | 9 | 0 | The study reports pharmacokinetic parameters for mandelic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Amin_1975_2 | relevant | 9 | 2 | The study reports compartmental PK models (V1, V2) for mandelic acid in rats, but the specific numeric values are not present in the provided text. |
 | PGx | Caspar_2018 | not_relevant | 0 | 0 | The paper describes the metabolism of the new psychoactive substance 4-EA-NBOMe, not the pharmacokinetics or pharmacodynamics of mandelic acid, and does not report any pharmacogenomic effects. |
 | popPK | Chen_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro inhibition of aminopeptidase N by mandelic acid derivatives, containing no pharmacokinetic data. |
 | PD | Chen_2021 | not_relevant | 3 | 3 | The paper reports in vitro IC50 values for a series of compounds, which is a static potency metric rather than a dynamic pharmacodynamic (exposure-response) or dose-response relationship analysis with derived PD parameters like Emax or EC50 in a PK/PD context. |
-| popPK | Chen_2023 | irrelevant | 0 | 0 | The paper is an in-vitro medicinal chemistry study on the antifungal activity of mandelic acid derivatives, reporting no pharmacokinetic parameters. |
+| popPK | Chen_2023 | irrelevant | 0 | 0 | The paper is an in-vitro medicinal chemistry study on the antifungal activity of mandelic acid derivatives, not a pharmacokinetic study. |
 | popPK | Cipriani_2022 | irrelevant | 0 | 0 | The paper is a phytochemical and in-vitro enzyme inhibition study where mandelic acid is identified as a constituent, not a pharmacokinetic study. |
 | PD | Cipriani_2022 | not_relevant | 0 | 0 | The paper focuses on phenolic compounds from Eugenia involucrata and their effects on enzymes, with no mention of mandelic acid or any pharmacodynamic modeling. |
-| popPK | Dimpfel_1994 | irrelevant | 0 | 0 | The study focuses on cyclandelate as the subject drug, with mandelic acid mentioned only as a metabolite without any reported pharmacokinetic parameters. |
+| popPK | Dimpfel_1994 | irrelevant | 0 | 0 | The study focuses on cyclandelate and its metabolites, with mandelic acid mentioned only as a metabolite without specific PK parameter values reported. |
 | PD | Dimpfel_1994 | not_relevant | 1 | 0 | The paper describes a qualitative temporal relationship between EEG changes and metabolite peaks but does not provide numeric PD parameters or a concentration-effect curve for mandelic acid. |
 | popPK | Duffin_2018 | irrelevant | 0 | 0 | The paper is a study on the synthesis and anti-leishmanial activity of metal complexes, not a pharmacokinetic study of mandelic acid. |
 | PD | Duffin_2018 | not_relevant | 3 | 2 | The paper reports IC50 values for antimony and bismuth complexes (not mandelic acid itself) and single-point efficacy data, but does not provide a dose-response curve or numeric PD parameters (Emax, slope) for mandelic acid. |
 | popPK | Duffin_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and anti-leishmanial activity of mandelate complexes, not the pharmacokinetics of mandelic acid. |
-| PGx | Fustinoni_2008 | not_relevant | 0 | 0 | The paper investigates styrene exposure and its metabolite mandelic acid, not the pharmacokinetics or pharmacodynamics of mandelic acid as a therapeutic drug. |
+| PGx | Fustinoni_2008 | not_relevant | 0 | 0 | The paper investigates biomarkers of exposure to styrene, not the pharmacokinetics or pharmacodynamics of mandelic acid as a therapeutic drug. |
 | popPK | Fustinoni_2010 | irrelevant | 0 | 0 | The study is an epidemiological assessment of biomarker variability for styrene exposure and does not report pharmacokinetic parameters (CL, V, ka, etc.) for mandelic acid. |
 | PD | Fustinoni_2010 | not_relevant | 0 | 0 | The paper focuses on styrene exposure biomarkers and does not mention mandelic acid or report any pharmacodynamic or exposure-response relationships. |
 | popPK | Gobba_1993 | irrelevant | 1 | 0 | Mandelic acid is used only as a biomarker for styrene exposure, and no quantitative pharmacokinetic parameters (CL, V, etc.) for mandelic acid are reported. |
@@ -96,13 +82,13 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Hallier_1995 | not_relevant | 2 | 0 | The paper discusses interindividual differences in styrene metabolism (mandelic acid excretion) but does not report specific gene variants or genotypes, nor does it treat mandelic acid as a drug with a defined pharmacokinetic parameter influenced by a specific pharmacogenomic effect. |
 | popPK | Han_2007 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on chiral thiazolines where mandelic acid is used only as a binding probe for molecular recognition, not as a subject for pharmacokinetic analysis. |
 | PD | Han_2007 | not_relevant | 0 | 0 | The paper reports IC50 values for chiral thiazoline oligomers, not mandelic acid, and does not provide a pharmacodynamic exposure-response model or curve for mandelic acid. |
-| popPK | Hou_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro antifungal activity of mandelic acid derivatives, containing no pharmacokinetic data. |
-| popPK | Hou_2023 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro antifungal activity of mandelic acid derivatives, containing no pharmacokinetic data or disposition parameters. |
+| popPK | Hou_2021 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro antifungal activity of mandelic acid derivatives, not the pharmacokinetics of mandelic acid itself. |
+| popPK | Hou_2023 | irrelevant | 0 | 0 | The study focuses on the synthesis and in vitro antifungal activity of mandelic acid derivatives, not on the pharmacokinetics of mandelic acid itself. |
 | popPK | Hu_2024 | irrelevant | 0 | 0 | The study is an epidemiological analysis of urinary VOC metabolites and inflammation, not a pharmacokinetic study, and reports no PK parameters for mandelic acid. |
 | PD | Hu_2024 | not_relevant | 4 | 2 | The study reports an exposure-response association using restricted cubic splines but does not provide specific numeric PD parameters (e.g., Emax, EC50) or a derivable quantitative curve for mandelic acid in the provided text. |
-| popPK | Härkönen_1978 | irrelevant | 0 | 0 | The provided evidence consists only of metadata and keywords related to styrene exposure and mandelic acid excretion, with no quantitative pharmacokinetic parameters or full text available. |
+| popPK | Härkönen_1978 | irrelevant | 0 | 0 | The study uses urinary mandelic acid concentrations as a biomarker for styrene exposure to assess neurotoxicity, rather than reporting pharmacokinetic parameters (CL, V, etc.) for mandelic acid itself. |
 | PD | Härkönen_1978 | not_relevant | 0 | 0 | The provided text consists only of metadata, keywords, and software version information, lacking the full text or any numeric data regarding mandelic acid exposure-response relationships. |
-| popPK | Jeyaraj_2025 | irrelevant | 0 | 0 | The paper focuses on in silico modeling of AKT inhibitors and does not study mandelic acid or report any pharmacokinetic parameters for it. |
+| popPK | Jeyaraj_2025 | irrelevant | 0 | 0 | The paper focuses on in silico modeling of AKT inhibitors from Pithecellobium dulce and does not involve mandelic acid or its pharmacokinetics. |
 | PD | Jeyaraj_2025 | not_relevant | 0 | 0 | The paper focuses on in silico molecular docking, dynamics, and pharmacogenomics of AKT inhibitors, containing no in vivo or in vitro pharmacodynamic data, exposure-response relationships, or numeric PD parameters for mandelic acid. |
 | popPK | Karakaya_1997 | irrelevant | 0 | 0 | The study is a genotoxicity/biomonitoring study where mandelic acid is used only as a metabolic marker for styrene exposure, not as the subject drug for PK parameter estimation. |
 | PD | Karakaya_1997 | not_relevant | 0 | 0 | The paper explicitly states that the data do not demonstrate a dose-response relationship and only reports group means for biomarkers without fitting a PD model or deriving numeric PD parameters. |
@@ -134,16 +120,16 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Sisto_2020 | irrelevant | 0 | 0 | The study is an occupational health investigation using mandelic acid as a biomarker for ethylbenzene exposure, not a pharmacokinetic study reporting disposition parameters for mandelic acid. |
 | popPK | Swanson_2011 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on a Neuropeptide Y antagonist where mandelic acid is used only as a synthetic starting material, not as a subject drug for pharmacokinetic analysis. |
 | PD | Swanson_2011 | not_relevant | 0 | 0 | The paper reports in vitro binding affinity (IC50) for a drug candidate, not a pharmacodynamic exposure-response or dose-response relationship for mandelic acid. |
-| popPK | Symanski_2001 | irrelevant | 0 | 0 | The study analyzes variability in urinary biomarker levels for exposure assessment, not pharmacokinetic disposition parameters (CL, V, ka) for mandelic acid. |
+| popPK | Symanski_2001 | irrelevant | 0 | 0 | The study analyzes variability in urinary biomarkers (mandelic acid) for exposure assessment, not pharmacokinetic disposition parameters (CL, V, ka) of mandelic acid as a drug. |
 | popPK | Triebig_2009 | irrelevant | 0 | 0 | The study investigates hearing loss associated with styrene exposure, using mandelic acid only as a biomarker for exposure levels rather than as the subject of a pharmacokinetic analysis. |
 | PD | Triebig_2009 | not_relevant | 2 | 1 | The study investigates occupational styrene exposure and hearing loss using mandelic acid as a biomarker, but explicitly states that no clear dose-response relationship was found and does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve. |
 | PGx | Verbeek_2008 | not_relevant | 0 | 0 | The paper describes a genetic disorder (sepiapterin reductase deficiency) and its metabolic consequences, but does not report a pharmacogenomic effect on the PK or PD of mandelic acid. |
 | popPK | Zahoor_2018 | irrelevant | 0 | 0 | The paper is a phytochemical isolation and in-vitro biological activity study (antioxidant/anticholinesterase) with no pharmacokinetic data for mandelic acid. |
 | PD | Zahoor_2018 | not_relevant | 2 | 1 | The paper reports in vitro antioxidant and enzyme inhibition assays (IC50 for fractions, % scavenging for isolated compounds) but does not provide a pharmacokinetic/pharmacodynamic model, exposure-response relationship, or derivable PD parameters (Emax, EC50, slope) for mandelic acid in a biological system. |
 | PGx | Zhang_2013 | not_relevant | 0 | 0 | The study investigates the metabolism of styrene (an environmental exposure), not mandelic acid as a therapeutic drug. |
-| popPK | Zheng_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on fungicide synthesis and mechanism, not a pharmacokinetic study, and reports no PK parameters for mandelic acid. |
+| popPK | Zheng_2024 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal mechanism of mandelic acid derivatives, not the pharmacokinetics of mandelic acid. |
 | popPK | unknown_1991 | irrelevant | 0 | 0 | The provided evidence is only a conference header with no study data, parameters, or mention of mandelic acid. |
-| popPK | unknown_2016 | irrelevant | 0 | 0 | The paper does not mention mandelic acid or report any pharmacokinetic parameters for it. |
+| popPK | unknown_2016 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | unknown_2016 | not_relevant | 0 | 0 | The paper discusses G-CSF administration timing and neutrophil recovery, not mandelic acid, and contains no pharmacodynamic modeling or exposure-response analysis for the target drug. |
 | popPK | unknown_2018 | irrelevant | 0 | 0 | The evidence consists only of a conference title and contains no pharmacokinetic data or parameters for mandelic acid. |
 | popPK | unknown_2021 | irrelevant | 0 | 0 | no_text gate: only 24 chars of text extracted (&lt; 400) |

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Diris_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;C1InhibitorPlasmaDerived_Pawaskar2018_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/C1InhibitorPlasmaDerived_Pawaskar2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Diris2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,14 +21,18 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — c1 inhibitor plasma derived: V1 5.14e+03 mL, V 2.5e+03 mL.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has C1-inhibitor, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:22.916199+00:00) predates the upstream re-run (2026-10-06 00:58:28.167821+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.129320](https://doi.org/10.1067/mcp.2002.129320)
 
 ## Model component
-<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Diris2002_reference" status="needs_review" stale="false" population="patients with acute myocardial infarction" measured-compound="C1-inhibitor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Diris2002_reference" status="needs_review" stale="true" population="patients with acute myocardial infarction" measured-compound="C1-inhibitor" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -41,8 +45,8 @@ Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacolo
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | `Q900` · equation variable | 2953 | mL | not captured | [ml] | not captured | llm (0.6) | Diris_2002_table_1:row0:col2, Diris_2002_table_1:row0:col3, Diris_2002_table_1:row0:col4 | — | not captured |
-| 2 | `Q63` · V1 | 5144 | mL | 0.005144 | [ml] | not captured | llm (0.6) | Diris_2002_table_1:row1:col2, Diris_2002_table_1:row1:col3, Diris_2002_table_1:row1:col4 | — | not captured |
-| 5† | `Q61` · V | 2500 | mL | 0.0025 | [ml] | not captured | llm (0.6) | Diris_2002_table_1:row4:col2, Diris_2002_table_1:row4:col3, Diris_2002_table_1:row4:col4 | — | not captured |
+| 5‡ | `Q61` · V | 2500 | mL | 0.0025 | [ml] | not captured | llm (0.6) | Diris_2002_table_1:row4:col2, Diris_2002_table_1:row4:col3, Diris_2002_table_1:row4:col4 | — | not captured |
+| 17† | `Q63` · V1 | 2929 | mL | 0.0029289999999999997 | [ml] | not captured | llm (0.6) | Diris_2002_table_1:row16:col2, Diris_2002_table_1:row16:col3, Diris_2002_table_1:row16:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,6 +58,7 @@ Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacolo
 **Interpretation flags:**
 - column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'body weight (kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q900 ('2', value '5144') — already have one for this compound
 - dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row2:col2', 'Diris_2002_table_1:row2:col3', 'Diris_2002_table_1:row2:col4'])
 - dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row3:col2', 'Diris_2002_table_1:row3:col3', 'Diris_2002_table_1:row3:col4'])
 - dropped unlinked row (NIL): '6' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row5:col2', 'Diris_2002_table_1:row5:col3', 'Diris_2002_table_1:row5:col4'])
@@ -61,13 +66,12 @@ Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacolo
 - dropped unlinked row (NIL): '8' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row7:col2', 'Diris_2002_table_1:row7:col3', 'Diris_2002_table_1:row7:col4'])
 - dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row8:col2', 'Diris_2002_table_1:row8:col3', 'Diris_2002_table_1:row8:col4'])
 - dropped unlinked row (NIL): '10' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row9:col2', 'Diris_2002_table_1:row9:col3', 'Diris_2002_table_1:row9:col4'])
-- dropped duplicate Q61 ('11', value '3000') — already have one for this compound
+- dropped unlinked row (NIL): '11' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row10:col2', 'Diris_2002_table_1:row10:col3', 'Diris_2002_table_1:row10:col4'])
 - dropped unlinked row (NIL): '12' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row11:col2', 'Diris_2002_table_1:row11:col3', 'Diris_2002_table_1:row11:col4'])
-- dropped duplicate Q63 ('13', value '3784') — already have one for this compound
+- dropped duplicate Q61 ('13', value '3784') — already have one for this compound
 - dropped unlinked row (NIL): '14' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row13:col2', 'Diris_2002_table_1:row13:col3', 'Diris_2002_table_1:row13:col4'])
 - dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row14:col2', 'Diris_2002_table_1:row14:col3', 'Diris_2002_table_1:row14:col4'])
-- dropped duplicate Q61 ('16', value '3590') — already have one for this compound
-- dropped duplicate Q63 ('17†', value '2929') — already have one for this compound
+- dropped unlinked row (NIL): '16' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row15:col2', 'Diris_2002_table_1:row15:col3', 'Diris_2002_table_1:row15:col4'])
 - dropped duplicate Q61 ('18', value '6329') — already have one for this compound
 - dropped duplicate Q61 ('19', value '4059') — already have one for this compound
 - dropped unlinked row (NIL): '20' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row19:col2', 'Diris_2002_table_1:row19:col3', 'Diris_2002_table_1:row19:col4'])
@@ -75,6 +79,9 @@ Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacolo
 - dropped duplicate Q61 ('22', value '3750') — already have one for this compound
 - dropped unlinked row (NIL): 'Median (n = 20)' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row22:col2', 'Diris_2002_table_1:row22:col3', 'Diris_2002_table_1:row22:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1-inhibitor
+- molar mass: no plausible PubChem entry for 'C1-inhibitor' ('C1-inhibitor') — left in mass units
+- molar mass: none found for 'c1_inhibitor_plasma_derived' — its concentrations stay mass-only
+- molar mass: none found for 'C1-inhibitor' — its concentrations stay mass-only
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -105,6 +112,35 @@ Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacolo
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[17]` | 2929 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[1].parameter_id` | Q900 | Q63 | mismatch |
+| `gpt-oss:120b` | `parameters[2]` | not captured | 5144 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[5]` | 2500 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[6]` | not captured | 3170 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[brackertz et al16]` | not captured | 0.011 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[waytes et al17]` | not captured | 0.015 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | C1-inhibitor | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | C1-inhibitor | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -113,10 +149,10 @@ Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacolo
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Diris_2002_table_1:row4:col2', 'Diris_2002_table_1:row4:col3', 'Diris_2002_table_1:row4:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Diris_2002_table_1:row1:col2', 'Diris_2002_table_1:row1:col3', 'Diris_2002_table_1:row1:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Diris_2002_table_1:row16:col2', 'Diris_2002_table_1:row16:col3', 'Diris_2002_table_1:row16:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.5 L | not captured | not captured | ['Diris_2002_table_1:row4:col2', 'Diris_2002_table_1:row4:col3', 'Diris_2002_table_1:row4:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 5.14 L | not captured | not captured | ['Diris_2002_table_1:row1:col2', 'Diris_2002_table_1:row1:col3', 'Diris_2002_table_1:row1:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.93 L | not captured | not captured | ['Diris_2002_table_1:row16:col2', 'Diris_2002_table_1:row16:col3', 'Diris_2002_table_1:row16:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -151,4 +187,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 10:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:58 UTC</sub>

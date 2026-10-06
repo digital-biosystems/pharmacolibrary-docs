@@ -4,7 +4,7 @@
 
 # ajmaline — `Ajmaline_Iven1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 The record for ajmaline in mice was built from the paper's abstract alone, so summary statistics stood in for a fitted model. The extracted volume of distribution Vdbeta of 136 ml falls outside the physiological window for mice, and the rejection cites an implausible magnitude consistent with a unit or scale extraction error. A second reader also disagreed on several fields, reading a Vdbeta of 136 and a 'lasting' value of 10 where this record has null, and left the dose compound and primary analyte as unknown. Extracted — ajmaline: V 136 ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ajmaline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ajmaline, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:35:51.559109+00:00) predates the upstream re-run (2026-10-06 01:58:39.739685+00:00). Current validate status: `rejected`.
 
 ## Citation
 Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977)
   ·  DOI: [10.1007/BF00510985](https://doi.org/10.1007/BF00510985)
 
 ## Model component
-<dbs-pgx drug="ajmaline" model-id="Ajmaline_Iven1977_reference" status="rejected" stale="false" population="mice" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ajmaline" model-id="Ajmaline_Iven1977_reference" status="rejected" stale="true" population="mice" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -43,7 +45,7 @@ Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi�
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution Vdbeta | `Q61` · V | 136 | ml | 0.000136 | [ml] | not captured | llm_confirmed (0.6) | Iven_1977:abstract, Iven_1977:abstract | — | not captured |
+| Vdbeta | `Q64` · V2 | 136 | ml | 0.000136 | [ml] | not captured | llm (0.6) | Iven_1977:abstract, Iven_1977:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,7 +58,6 @@ Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi�
 - dropped unlinked row (NIL): 'body weight of the mice' — extend the ontology if this is a real PK parameter (source ['Iven_1977:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ajmaline
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
@@ -69,15 +70,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[lasting]` | not captured | 10 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdbeta]` | 136 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vdbeta]` | not captured | 136 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution vdbeta]` | 136 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | ajmaline | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | ajmaline | unknown | mismatch |
 
@@ -96,9 +96,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Iven_1977:abstract', 'Iven_1977:abstract'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.136 L | not captured | not captured | ['Iven_1977:abstract', 'Iven_1977:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Iven_1977:abstract', 'Iven_1977:abstract'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.136 L | not captured | not captured | ['Iven_1977:abstract', 'Iven_1977:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -123,4 +123,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 14:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 01:58 UTC</sub>

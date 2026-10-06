@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 PD cHMWK formation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 PD cHMWK&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cHMWK formation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.78). The first reading is what the record holds.">cross-check: disputed</span>
+# cHMWK — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.78). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Lanadelumab (concentrations from the PK model of Wang_2020::base) drives cHMWK formation (in %): indirect response — drug inhibits the production of cHMWK formation.
+**As extracted:** Lanadelumab (concentrations from this paper's PK model) drives cHMWK: indirect response — drug inhibits the production of cHMWK.
 
 **Model:** No model was generated from this record.
 
@@ -24,9 +23,9 @@
 
 - **paper:** `Wang_2020`
 - **model family:** `indirect_response_i`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020)
@@ -35,54 +34,10 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | CL/F (L/hour) — n | `Q27` · not captured | 28 | L/hour | not captured | exact (not captured) | cts12806-tbl-0001:row0:col3 |
-| PK (driver) | CL/F (L/hour) — Mean (%CV) | `Q27` · not captured | 0.0278 | L/hour | not captured | exact (not captured) | cts12806-tbl-0001:row0:col4 |
-| PK (driver) | CL/F (L/hour) — n | `Q27` · not captured | 29 | L/hour | not captured | exact (not captured) | cts12806-tbl-0001:row0:col7 |
-| PK (driver) | CL/F (L/hour) — Mean (%CV) | `Q27` · not captured | 0.0309 | L/hour | not captured | exact (not captured) | cts12806-tbl-0001:row0:col8 |
-| PK (driver) | CL/F (L/hour) — n | `Q27` · not captured | 27 | L/hour | not captured | exact (not captured) | cts12806-tbl-0001:row0:col11 |
-| PK (driver) | CL/F (L/hour) — Mean (%CV) | `Q27` · not captured | 0.0337 | L/hour | not captured | exact (not captured) | cts12806-tbl-0001:row0:col12 |
-| PK (driver) | V/F (L) — n | `Q76` · not captured | 28 | L | not captured | exact (not captured) | cts12806-tbl-0001:row1:col3 |
-| PK (driver) | V/F (L) — Mean (%CV) | `Q76` · not captured | 14.1 | L | not captured | exact (not captured) | cts12806-tbl-0001:row1:col4 |
-| PK (driver) | V/F (L) — n | `Q76` · not captured | 29 | L | not captured | exact (not captured) | cts12806-tbl-0001:row1:col7 |
-| PK (driver) | V/F (L) — Mean (%CV) | `Q76` · not captured | 14.9 | L | not captured | exact (not captured) | cts12806-tbl-0001:row1:col8 |
-| PK (driver) | V/F (L) — n | `Q76` · not captured | 27 | L | not captured | exact (not captured) | cts12806-tbl-0001:row1:col11 |
-| PK (driver) | V/F (L) — Mean (%CV) | `Q76` · not captured | 16.6 | L | not captured | exact (not captured) | cts12806-tbl-0001:row1:col12 |
-| PK (driver) | AUCtau,ss (µg × day/mL) — n | `Q18` · not captured | 28 | µg × day/mL | not captured | llm (not captured) | cts12806-tbl-0001:row2:col3 |
-| PK (driver) | AUCtau,ss (µg × day/mL) — Mean (%CV) | `Q18` · not captured | 233 | µg × day/mL | not captured | llm (not captured) | cts12806-tbl-0001:row2:col4 |
-| PK (driver) | AUCtau,ss (µg × day/mL) — n | `Q18` · not captured | 29 | µg × day/mL | not captured | llm (not captured) | cts12806-tbl-0001:row2:col7 |
-| PK (driver) | AUCtau,ss (µg × day/mL) — Mean (%CV) | `Q18` · not captured | 441 | µg × day/mL | not captured | llm (not captured) | cts12806-tbl-0001:row2:col8 |
-| PK (driver) | AUCtau,ss (µg × day/mL) — n | `Q18` · not captured | 27 | µg × day/mL | not captured | llm (not captured) | cts12806-tbl-0001:row2:col11 |
-| PK (driver) | AUCtau,ss (µg × day/mL) — Mean (%CV) | `Q18` · not captured | 408 | µg × day/mL | not captured | llm (not captured) | cts12806-tbl-0001:row2:col12 |
-| PK (driver) | Cave,ss (µg/mL) — n | `Q34` · not captured | 28 | µg/mL | not captured | llm_corrected (not captured) | cts12806-tbl-0001:row3:col3 |
-| PK (driver) | Cave,ss (µg/mL) — Mean (%CV) | `Q34` · not captured | 8.31 | µg/mL | not captured | llm_corrected (not captured) | cts12806-tbl-0001:row3:col4 |
-| PK (driver) | Cave,ss (µg/mL) — n | `Q34` · not captured | 29 | µg/mL | not captured | llm_corrected (not captured) | cts12806-tbl-0001:row3:col7 |
-| PK (driver) | Cave,ss (µg/mL) — Mean (%CV) | `Q34` · not captured | 15.8 | µg/mL | not captured | llm_corrected (not captured) | cts12806-tbl-0001:row3:col8 |
-| PK (driver) | Cave,ss (µg/mL) — n | `Q34` · not captured | 27 | µg/mL | not captured | llm_corrected (not captured) | cts12806-tbl-0001:row3:col11 |
-| PK (driver) | Cave,ss (µg/mL) — Mean (%CV) | `Q34` · not captured | 29.2 | µg/mL | not captured | llm_corrected (not captured) | cts12806-tbl-0001:row3:col12 |
-| PK (driver) | Cmax,ss (µg/mL) — n | `Q32` · not captured | 28 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row4:col3 |
-| PK (driver) | Cmax,ss (µg/mL) — Mean (%CV) | `Q32` · not captured | 12.0 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row4:col4 |
-| PK (driver) | Cmax,ss (µg/mL) — n | `Q32` · not captured | 29 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row4:col7 |
-| PK (driver) | Cmax,ss (µg/mL) — Mean (%CV) | `Q32` · not captured | 23.3 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row4:col8 |
-| PK (driver) | Cmax,ss (µg/mL) — n | `Q32` · not captured | 27 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row4:col11 |
-| PK (driver) | Cmax,ss (µg/mL) — Mean (%CV) | `Q32` · not captured | 34.4 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row4:col12 |
-| PK (driver) | Cmin,ss (µg/mL) — n | `Q36` · not captured | 28 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row5:col3 |
-| PK (driver) | Cmin,ss (µg/mL) — Mean (%CV) | `Q36` · not captured | 4.81 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row5:col4 |
-| PK (driver) | Cmin,ss (µg/mL) — n | `Q36` · not captured | 29 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row5:col7 |
-| PK (driver) | Cmin,ss (µg/mL) — Mean (%CV) | `Q36` · not captured | 8.77 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row5:col8 |
-| PK (driver) | Cmin,ss (µg/mL) — n | `Q36` · not captured | 27 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row5:col11 |
-| PK (driver) | Cmin,ss (µg/mL) — Mean (%CV) | `Q36` · not captured | 25.4 | µg/mL | not captured | llm_confirmed (not captured) | cts12806-tbl-0001:row5:col12 |
-| PK (driver) | Tmax (hour) — n | `Q56` · not captured | 28 | hour | not captured | exact (not captured) | cts12806-tbl-0001:row6:col3 |
-| PK (driver) | Tmax (hour) — Mean (%CV) | `Q56` · not captured | 124 | hour | not captured | exact (not captured) | cts12806-tbl-0001:row6:col4 |
-| PK (driver) | Tmax (hour) — n | `Q56` · not captured | 29 | hour | not captured | exact (not captured) | cts12806-tbl-0001:row6:col7 |
-| PK (driver) | Tmax (hour) — Mean (%CV) | `Q56` · not captured | 124 | hour | not captured | exact (not captured) | cts12806-tbl-0001:row6:col8 |
-| PK (driver) | Tmax (hour) — n | `Q56` · not captured | 27 | hour | not captured | exact (not captured) | cts12806-tbl-0001:row6:col11 |
-| PK (driver) | Tmax (hour) — Mean (%CV) | `Q56` · not captured | 98.6 | hour | not captured | exact (not captured) | cts12806-tbl-0001:row6:col12 |
-| PK (driver) | t 1/2 (hour) — n | `Q57` · not captured | 28 | hour | not captured | space_fold (not captured) | cts12806-tbl-0001:row7:col3 |
-| PK (driver) | t 1/2 (hour) — Mean (%CV) | `Q57` · not captured | 357 | hour | not captured | space_fold (not captured) | cts12806-tbl-0001:row7:col4 |
-| PK (driver) | t 1/2 (hour) — n | `Q57` · not captured | 29 | hour | not captured | space_fold (not captured) | cts12806-tbl-0001:row7:col7 |
-| PK (driver) | t 1/2 (hour) — Mean (%CV) | `Q57` · not captured | 340 | hour | not captured | space_fold (not captured) | cts12806-tbl-0001:row7:col8 |
-| PK (driver) | t 1/2 (hour) — n | `Q57` · not captured | 27 | hour | not captured | space_fold (not captured) | cts12806-tbl-0001:row7:col11 |
-| PK (driver) | t 1/2 (hour) — Mean (%CV) | `Q57` · not captured | 361 | hour | not captured | space_fold (not captured) | cts12806-tbl-0001:row7:col12 |
+| PD (effect) | K in | `Q327` · not captured | 11.8 | %/hour | not captured | llm (not captured) | Wang_2020:pdv3 |
+| PD (effect) | K out | `Q328` · not captured | 0.367 | hour–1 | not captured | llm (not captured) | Wang_2020:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 53.7 | % | not captured | llm (not captured) | Wang_2020:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 5.71 | µg/mL | not captured | llm (not captured) | Wang_2020:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

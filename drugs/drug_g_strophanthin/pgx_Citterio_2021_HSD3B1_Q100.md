@@ -14,8 +14,8 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Citterio_2021` — [doi](https://doi.org/10.1038/s41397-021-00214-y)
 - **gene:** HSD3B1
-- **mechanism:** target — the gene's product is what the drug acts on
-- **applies to:** pharmacodynamics (response)
+- **mechanism:** metabolism — the gene's enzyme clears the drug
+- **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
@@ -43,8 +43,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
-| `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss:120b` | `applies_to` | pk | not captured | mismatch |
+| `gpt-oss:120b` | `mechanism` | metabolism | not captured | mismatch |
 | `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |
 
 </details>

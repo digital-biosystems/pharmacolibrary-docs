@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;quinidine&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/&quot;},{&quot;label&quot;:&quot;Verme_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Verme1992_reference&quot;,&quot;label&quot;:&quot;Verme_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Verme1992_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinidine — `Quinidine_Verme1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,71 +21,54 @@
 
 The analyte-identity check failed: the disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a biomarker rather than quinidine or its metabolites, so the drug's own clearance is absent. The record was built from the abstract alone, so summary statistics stood in for a fitted model, and the builder substituted defaults for ka and Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input giving an apparent (/F) parameterization. A second reader disagreed on the parameterization (mechanistic rather than apparent) and returned no values for the 50 ml/min and 230 L parameters. Extracted — quinidine: V/F 230 L, CL 50 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:14.813081+00:00) predates the upstream re-run (2026-10-06 04:23:47.737897+00:00). Current validate status: `rejected`.
 
 ## Citation
 Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992)
   ·  DOI: [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005)
 
 ## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Verme1992_reference" status="rejected" stale="false" population="adult hospitalised men" measured-compound="quinidine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="quinidine" model-id="Quinidine_Verme1992_reference" status="rejected" stale="true" population="adult hospitalised men" measured-compound="quinidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| mean apparent volume of distribution (Vd) | `Q76` · V/F | 230 | L | 0.23 | [l] | not captured | llm_confirmed (0.6) | Verme_1992:abstract | — | not captured |
-| calculated creatinine clearance | `Q22` · CL | 50 | ml/min | 8.333333333333332e-07 | [ml] / [min] | not captured | llm_confirmed (0.6) | Verme_1992:abstract, Verme_1992:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- routed 'interpatient variability in CL' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinidine
+- table section residual_error: 'mean apparent volume of distribution (Vd)' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
+- table section residual_error: 'interpatient variability in CL' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
+- table section residual_error: 'intrapatient residual variability' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
+- table section residual_error: 'calculated creatinine clearance' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
+- table section residual_error: 'residual intrapatient CVs' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quinidine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Verme_1992_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>3 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[calculated creatinine clearance]` | 50 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean apparent volume of distribution]` | 230 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -97,15 +80,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Verme_1992:abstract', 'Verme_1992:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Verme_1992:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3 L/h | not captured | not captured | ['Verme_1992:abstract', 'Verme_1992:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 230 L | not captured | not captured | ['Verme_1992:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -140,13 +117,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1200 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1200 mg oral (C01BA01) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_quinidine/Quinidine_Verme1992_reference/Quinidine_Verme1992_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_quinidine/Quinidine_Verme1992_reference/Quinidine_Verme1992_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Quinidine_Verme1992_reference_params.json` · controls `Quinidine_Verme1992_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 04:23 UTC</sub>

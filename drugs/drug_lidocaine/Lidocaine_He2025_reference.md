@@ -4,7 +4,7 @@
 
 # lidocaine — `Lidocaine_He2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 The structure links lidocaine to MEGX and MEGX to GX via metabolism, but the GX metabolite is unlinked, leaving part of the model unreachable from the dose. The only extracted parameter is lidocaine total clearance, 26.1 L/h, which a second reader recorded as null rather than 26.1. No other parameter values were available to support the record. Extracted — lidocaine: CL 26.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of lidocaine clearance estimated by the final model: this record has 26.1, the second reading none. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:22.066529+00:00) predates the upstream re-run (2026-10-06 03:22:49.307848+00:00). Current validate status: `rejected`.
 
 ## Citation
 He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S485389](https://doi.org/10.2147/DDDT.S485389)
 
 ## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_He2025_reference" status="rejected" stale="false" population="partial hepatectomy patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="lidocaine" model-id="Lidocaine_He2025_reference" status="rejected" stale="true" population="partial hepatectomy patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -51,6 +53,14 @@ He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, developmen
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'CL' routed out of structural estimates ('Inter-Individual Variability (%CV)')
+- table section iiv: 'V1' routed out of structural estimates ('Inter-Individual Variability (%CV)')
+- table section iiv: 'CLFM' routed out of structural estimates ('Inter-Individual Variability (%CV)')
+- table section iiv: 'V2' routed out of structural estimates ('Inter-Individual Variability (%CV)')
+- table section iiv: 'CLD' routed out of structural estimates ('Inter-Individual Variability (%CV)')
+- table section residual_error: 'σ2Lidocaine' routed out of structural estimates ('Residual errors (%CV)')
+- table section residual_error: 'σ2MEGX' routed out of structural estimates ('Residual errors (%CV)')
+- table section residual_error: 'σ2GX' routed out of structural estimates ('Residual errors (%CV)')
 - dropped value-less row: 'CL (L/h)' (captured trailing unit 'L/h' for child rows)
 - dropped value-less row: 'V1 (L)' (captured trailing unit 'L' for child rows)
 - dropped value-less row: 'CLFM'
@@ -64,16 +74,14 @@ He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, developmen
 - dropped value-less row: 'The effect of TBW on CLFM'
 - dropped value-less row: 'The effect of DOSE on V2'
 - dropped value-less row: 'The effect of DOSE on CLG'
-- dropped value-less row: 'CL'
-- dropped value-less row: 'V1'
-- dropped value-less row: 'V2'
-- dropped value-less row: 'CLD'
 - dropped value-less row: 'CLG'
 - salvaged Q22 ('lidocaine clearance estimated by the final model'=26.1) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lidocaine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 11 linked by role; re-tagged parent→MEGX ×10, parent→GX ×6
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
@@ -116,20 +124,14 @@ He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, developmen
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
 
-<details><summary>1 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[lidocaine clearance estimated by the final model]` | 26.1 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -145,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 26.1 | not captured | not captured | ['He_2025:discussion_prose'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['CLFM', 'CLEFM'] | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['CLEFM'] | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 26.1 L/h | not captured | not captured | ['He_2025:discussion_prose'] |
 
 <details class="legend">
@@ -171,4 +173,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:22 UTC</sub>

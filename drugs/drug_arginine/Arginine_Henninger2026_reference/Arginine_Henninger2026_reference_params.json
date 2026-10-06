@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Arginine_Henninger2026_reference",
  "molar_masses": {
   "central.C": 0.174204
@@ -7,13 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  437.5,
-  875.0,
-  1750.0,
-  3500.0
  ],
  "parameters": {
   "Cl": 9.555555555555556e-07,
@@ -23,15 +16,15 @@
   "VdPerKg": 0.0011357142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0004375,
+  "adminMass": 0.0001,
   "ka": 9.999999999999999e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 24464.87671587657
+  "central.C": 24541.22365292793
  },
  "reference_peaks": {
-  "central.C": 0.003708030433810325
+  "central.C": 0.0008475440375084989
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

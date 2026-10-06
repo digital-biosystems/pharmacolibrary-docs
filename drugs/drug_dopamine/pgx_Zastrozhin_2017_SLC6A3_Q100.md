@@ -12,8 +12,8 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Zastrozhin_2017` — [doi](https://doi.org/10.2147/PGPM.S140700)
 - **gene:** SLC6A3
-- **mechanism:** target — the gene's product is what the drug acts on
-- **applies to:** pharmacodynamics (response)
+- **mechanism:** transport — the gene's transporter moves the drug
+- **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
@@ -41,8 +41,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `applies_to` | pd | pk | mismatch |
-| `gpt-oss:120b` | `mechanism` | target | transport | mismatch |
+| `gpt-oss:120b` | `applies_to` | pk | pd | mismatch |
+| `gpt-oss:120b` | `mechanism` | transport | target | mismatch |
 
 </details>
 

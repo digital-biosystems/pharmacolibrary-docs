@@ -1,17 +1,12 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Arginine_Yu2025_reference",
  "molar_masses": {
   "central.C": 0.174204
  },
- "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  245.0,
-  1750.0
  ],
  "parameters": {
   "Cl": 1.277777777777778e-07,
@@ -20,17 +15,16 @@
   "VdPerKg": 3.028571428571429e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.000245,
-  "k12": 2.5550314465408805e-05,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662011
+  "central.C": 660.0000000662
  },
  "reference_peaks": {
-  "central.C": 0.11341680336075191
+  "central.C": 0.004632708683563598
  },
  "stop_time": 86400.0,
- "template": "PK_2C",
- "template_fmu": "PK_2C.fmu"
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
 }

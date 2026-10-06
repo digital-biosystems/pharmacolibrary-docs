@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Awan_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Wang2018_reference&quot;,&quot;label&quot;:&quot;Wang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ArginineHydrochloride_Yeo2013_reference&quot;,&quot;label&quot;:&quot;Yeo_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arginine hydrochloride — `ArginineHydrochloride_Awan2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Total clearance for arginine hydrochloride is recorded as 1.0 mL/day, and the volume of distribution (0.0117 L, derived from CL·t½/ln2) is far below any plausible value for this molecule, so the clearance/volume pair falls outside the physiological window. The implausible magnitudes point to a unit or scale error in extraction. A second reader did not confirm the flagged value, leaving the finding on the recorded values uncorroborated. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 1, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 1, the second reading 1309; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:10.109051+00:00) predates the upstream re-run (2026-10-06 00:12:09.685408+00:00). Current validate status: `rejected`.
 
 ## Citation
 Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024)
   ·  DOI: [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375)
 
 ## Model component
-<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="true" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -58,18 +60,20 @@ Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.667 (2/3 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 1 | 1309 | mismatch |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 5 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | not captured | 50 | only_one_extracted |
 
 </details>
 
@@ -116,4 +120,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 09:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:12 UTC</sub>

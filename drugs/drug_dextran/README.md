@@ -17,7 +17,7 @@ Dextran, a glucose polymer, is used as a plasma substitute and as an anticoagula
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 04:15 | 7:44 | 0/1/0 | 0/0/0 | 0/0/0 | 135,082/15,040 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 1/17 | 18/0 | 0 |
+| 2026-10-05 21:55 | 8:14 | 0/1/0 | 0/0/0 | 0/0/0 | 151,961/18,663 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 1/17 | 18/0 | 0 |
 
 ## popPK records
 
@@ -80,9 +80,9 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Gao_2017 | not_relevant | 0 | 0 | The paper investigates the effect of gut microbiota on CYP3A and P-gp expression in a colitis model, not the effect of a host gene variant on the pharmacokinetics or pharmacodynamics of dextran. |
 | PGx | Gao_2018 | not_relevant | 0 | 0 | The paper investigates the regulation of UGT1A1 expression by gut microbiota in a colitis model, not the effect of a specific gene variant on the pharmacokinetics or pharmacodynamics of dextran. |
 | popPK | Gerstin_1992 | irrelevant | 0 | 0 | The study investigates the allosteric modulation of muscarinic receptors by dextran in rat heart homogenates, which is a mechanistic/pharmacodynamic study, not a pharmacokinetic study of dextran disposition. |
-| PGx | Gu_2018 | not_relevant | 0 | 0 | The paper studies the therapeutic effect of a GLP-2 analog in a DSS-induced colitis model, not the pharmacokinetics or pharmacodynamics of dextran itself, nor any genetic influence on dextran handling. |
+| PGx | Gu_2018 | not_relevant | 0 | 0 | The paper studies the therapeutic effect of a GLP-2 analog in a DSS-induced colitis model, not the pharmacokinetics or pharmacodynamics of dextran itself, nor any pharmacogenomic interaction. |
 | PGx | Hirano_2026 | not_relevant | 0 | 0 | The paper studies the effect of osteopontin gene knockout on dextran sulfate sodium (DSS)-induced colitis, where DSS is a chemical irritant used to model disease, not a therapeutic drug subject to pharmacokinetic/pharmacodynamic analysis. |
-| PGx | Hu_2020 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of omeprazole in a disease model (ulcerative colitis induced by dextran sulfate sodium), not the pharmacogenomics of dextran itself. |
+| PGx | Hu_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of omeprazole in a disease model (ulcerative colitis induced by dextran sulfate sodium), not the pharmacogenomics of dextran itself. |
 | popPK | Jin_2016 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of paeonol, using dextran sulfate sodium (DSS) only as an agent to induce colitis, not as the subject drug for PK analysis. |
 | PD | Jin_2016 | not_relevant | 0 | 0 | The paper studies paeonol and its metabolites, not dextran; dextran sulfate sodium (DSS) is only mentioned as an agent to induce colitis in the animal model, and no PD parameters for dextran are reported. |
 | PGx | Kaczmarek_2024 | not_relevant | 0 | 0 | The paper studies the immunosuppressive properties of a cyclic tetrapeptide and uses dextran sulfate only as an irritant to induce colitis in a mouse model; it does not report pharmacogenomic effects on the PK or PD of dextran. |
@@ -93,8 +93,8 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Kobuchi_2023 | not_relevant | 4 | 2 | The paper describes a PK/PD model for uracil-tegafur (5-FU), not dextran; dextran sulfate sodium is only used as a vehicle/inducer for the cancer model. |
 | PGx | Kong_2025 | not_relevant | 0 | 0 | The paper studies the therapeutic effect of a polysaccharide on dextran sulfate sodium-induced colitis, not the pharmacokinetics or pharmacodynamics of dextran itself. |
 | PGx | Li_2014 | not_relevant | 0 | 0 | The paper investigates the role of COMMD1 in colitis pathogenesis using dextran sodium sulfate as a disease inducer, not as a therapeutic drug, and does not report pharmacokinetic or pharmacodynamic parameters of dextran. |
-| PGx | Liao_2025 | not_relevant | 0 | 0 | The paper studies the effect of tanshinone IIA on intestinal barrier integrity in sepsis, using dextran only as a permeability marker, and does not report pharmacogenomic effects on dextran PK/PD. |
-| PGx | Liu_2018 | not_relevant | 0 | 0 | The paper studies the effect of imperatorin on dextran sulphate sodium-induced colitis, not the pharmacokinetics or pharmacodynamics of dextran itself, and does not report pharmacogenomic effects. |
+| PGx | Liao_2025 | not_relevant | 0 | 0 | The paper studies the effect of tanshinone IIA on intestinal permeability using dextran as a tracer, not the pharmacokinetics or pharmacodynamics of dextran itself, and contains no pharmacogenomic analysis. |
+| PGx | Liu_2018 | not_relevant | 0 | 0 | The paper investigates the mechanism of imperatorin in a dextran sulphate sodium-induced colitis model, not the pharmacokinetics or pharmacodynamics of dextran itself. |
 | PGx | Lloyd_2022 | not_relevant | 0 | 0 | The paper studies the effect of dextran on dopamine diffusion in a DAT knockout model, not the pharmacokinetics or pharmacodynamics of dextran itself. |
 | PGx | Mao_2021 | not_relevant | 0 | 0 | The paper investigates the role of decorin deficiency in colon cancer metastasis using dextran sodium sulfate as a chemical inducer of colitis, not as a therapeutic drug subject to pharmacogenomic analysis. |
 | popPK | McLaren_1993 | irrelevant | 0 | 0 | The study focuses on fluorescein kinetics, and dextran is used only as a reference molecule to determine bulk outflow, not as the subject of PK parameter estimation. |
@@ -110,20 +110,20 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Runwal_2025 | not_relevant | 0 | 0 | The paper investigates the effect of iron overload on blood-brain barrier proteins and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of dextran. |
 | popPK | Rüdiger_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium signaling in podocytes, not a pharmacokinetic study of dextran disposition. |
 | PGx | Schäfer_2023 | not_relevant | 0 | 0 | The paper investigates the effect of a gene variant on inflammation models (DSS colitis, paw edema) and eicosanoid levels, not on the pharmacokinetic or pharmacodynamic parameters of the drug dextran. |
-| PGx | Shimizu_2025 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of eggshell membrane and its effects on DSS-induced colitis, but does not report any pharmacogenomic effects on the PK/PD of dextran. |
+| PGx | Shimizu_2025 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of eggshell membrane and its effects on DSS-induced colitis, but does not report any pharmacogenomic effects on the PK or PD of dextran. |
 | PGx | Sliva_2012 | not_relevant | 0 | 0 | The paper studies the chemopreventive effects of a mushroom extract on colitis-associated carcinogenesis and does not report pharmacogenomic effects on the PK/PD of dextran. |
 | PGx | Tschurtschenthaler_2017 | not_relevant | 0 | 0 | The paper investigates the role of ATG16L1 and IRE1α in Crohn's disease-like ileitis and does not report any pharmacokinetic or pharmacodynamic effects of dextran. |
 | popPK | Tuvaanjav_2016 | irrelevant | 0 | 0 | The study focuses on the isolation and antiviral activity of polysaccharides from Cynomorium songaricum, using dextran sulfate only as a standard comparator for antiviral potency, not as a subject of pharmacokinetic analysis. |
 | PD | Tuvaanjav_2016 | not_relevant | 3 | 2 | The paper reports a single EC50 value for dextran sulfate as a reference standard in an antiviral assay, but does not provide a dose-response curve, multiple data points, or a PK/PD model for dextran itself. |
-| PGx | Vagnerová_2024 | not_relevant | 0 | 0 | The paper investigates the effect of butyrate on gene expression in mice and does not involve dextran or pharmacogenomics. |
+| PGx | Vagnerová_2024 | not_relevant | 0 | 0 | The paper investigates the effect of butyrate on gene expression in mice and does not involve dextran or pharmacogenomic effects on PK/PD parameters. |
 | PGx | Vázquez-Arreguín_2019 | not_relevant | 0 | 0 | The paper investigates the role of the transcription factor Oct1 in colon regeneration and cancer, using dextran sodium sulfate (DSS) only as a chemical inducer of colitis, not as a drug subject to pharmacogenomic analysis. |
-| PGx | Wang_2024 | not_relevant | 0 | 0 | The paper investigates the therapeutic effects of Yinhua Miyanling tablets on ulcerative colitis using DSS as a disease model, not the pharmacokinetics or pharmacodynamics of dextran itself, and contains no pharmacogenomic data. |
+| PGx | Wang_2024 | not_relevant | 0 | 0 | The paper investigates the therapeutic effects of a Chinese medicine on a dextran sodium sulfate-induced disease model, not the pharmacokinetics or pharmacodynamics of dextran itself, and contains no pharmacogenomic data. |
 | PGx | Wehl_2026 | not_relevant | 0 | 0 | The paper describes an in vitro cell culture model for drug metabolism and does not report any pharmacogenomic effects on dextran pharmacokinetics or pharmacodynamics. |
 | PGx | Wu_2016 | not_relevant | 0 | 0 | The paper studies the effect of isoliquiritigenin on gut microbiota and cancer incidence in a mouse model, not the pharmacokinetics or pharmacodynamics of dextran. |
 | popPK | Yamamoto_1991 | irrelevant | 0 | 0 | Dextran is used only as an inflammatory agent (edema inducer) in a pharmacological screening study, not as the subject drug for PK analysis. |
 | PD | Yamamoto_1991 | not_relevant | 0 | 0 | The paper studies a plant extract (Ageratum conyzoides), not the drug dextran; dextran is only mentioned as an irritant agent in an inflammation model. |
 | PGx | Yang_2024 | not_relevant | 0 | 0 | The study investigates the effect of dextran sodium sulfate-induced colitis on theophylline pharmacokinetics, not the pharmacogenomics of dextran itself. |
-| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper investigates the anti-inflammatory mechanism of patchouli alcohol in DSS-induced colitis and does not report pharmacogenomic effects on the PK or PD of dextran. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper investigates the anti-inflammatory mechanism of patchouli alcohol in DSS-induced colitis, not the pharmacokinetics or pharmacodynamics of dextran itself. |
 | PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper discusses the structural modification of the enzyme dextransucrase to improve its stability, not the pharmacogenomics of dextran as a drug. |
 | PGx | Zhou_2021 | not_relevant | 0 | 0 | The paper investigates butyrate metabolism in ulcerative colitis and uses dextran sulfate sodium (DSS) as a chemical inducer of colitis in mice, not as a therapeutic drug subject to pharmacogenomic analysis. |
 

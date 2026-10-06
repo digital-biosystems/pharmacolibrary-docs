@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;voxelotor&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # voxelotor
 
@@ -15,25 +15,36 @@ Voxelotor is a hematological drug developed for the treatment of sickle cell ane
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q60761545](https://www.wikidata.org/wiki/Q60761545) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| voxelotor | parent | 337.379 | C19H19N3O3 | DrugBank | — | Savic_2022 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 13:59 | 4:53 | 0/0/1 | 1/0/0 | 0/0/0 | 108,001/7,380 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-06 01:56 | 11:33 | 1/0/0 | 1/0/0 | 0/0/0 | 176,978/29,456 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Savic_2022_reference](drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Savic_2022_reference](drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Green_2022_alanine_aminotransferase](drugs/drug_voxelotor/pd_Green_2022_alanine_aminotransferase.md) | name ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Green_2022_hemoglobin](drugs/drug_voxelotor/pd_Green_2022_hemoglobin.md) | name ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Green_2022_white_blood_cell_count](drugs/drug_voxelotor/pd_Green_2022_white_blood_cell_count.md) | name ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Green_2022_CFB_Hb](drugs/drug_voxelotor/pd_Green_2022_CFB_Hb.md) | change from baseline hemoglobin ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Green_2022_CFB_LDH](drugs/drug_voxelotor/pd_Green_2022_CFB_LDH.md) | percent change from baseline lactate dehydrogenase ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Green_2022_CFB_indirect_bilirubin](drugs/drug_voxelotor/pd_Green_2022_CFB_indirect_bilirubin.md) | percent change from baseline indirect bilirubin ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Green_2022_CFB_reticulocytes](drugs/drug_voxelotor/pd_Green_2022_CFB_reticulocytes.md) | percent change from baseline reticulocytes ← voxelotor · direct linear effect | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Green_2022_Grade_1_decreased_WBC](drugs/drug_voxelotor/pd_Green_2022_Grade_1_decreased_WBC.md) | grade greater than or equal to 1 decreased white blood cell count ← voxelotor · categorical (graded) response model | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Green_2022_Grade_1_increased_ALT](drugs/drug_voxelotor/pd_Green_2022_Grade_1_increased_ALT.md) | grade greater than or equal to 1 increased alanine aminotransferase ← voxelotor · categorical (graded) response model | — | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
 
 ## ADME sites
 
@@ -59,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
@@ -67,8 +78,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Egesa_2022 | not_relevant | 0 | 0 | The paper is a general review of sickle cell disease epidemiology and management, mentioning voxelotor only as an approved therapy without reporting any pharmacogenomic data or PK/PD parameters. |
-| popPK | Green_2022 | irrelevant | 2 | 1 | The paper is an exposure-response analysis that uses PK parameters derived from a separate population PK study (Savic et al. 2021) rather than reporting original quantitative disposition parameters (CL, V, Q, ka) for voxelotor. |
-| popPK | Rivenbark_2026 | irrelevant | 0 | 0 | The paper is a claims-based epidemiological study analyzing prescription rates and does not report any pharmacokinetic parameters for voxelotor. |
+| popPK | Green_2022 | irrelevant | 4 | 2 | The paper is an exposure-response analysis that uses PK parameters (AUC, Cmax) derived from a separate PopPK model, but it does not report the underlying quantitative disposition parameters (CL, V, Q, ka) or the PopPK model estimates themselves. |
+| popPK | Rivenbark_2026 | irrelevant | 0 | 0 | The study is a claims analysis of prescription rates for sickle cell disease medications and does not report any pharmacokinetic parameters for voxelotor. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-19 13:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 01:47 UTC</sub>

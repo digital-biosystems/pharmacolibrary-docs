@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;hydroxyethylstarch&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/&quot;},{&quot;label&quot;:&quot;Yamakage_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxyethylstarch_Asskali1999_reference&quot;,&quot;label&quot;:&quot;Asskali_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Yamakage2012_reference&quot;,&quot;label&quot;:&quot;Yamakage_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxyethylstarch_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxyethylstarch_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Yamakage2012_reference&quot;,&quot;label&quot;:&quot;Yamakage_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydroxyethylstarch — `Hydroxyethylstarch_Yamakage2012_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is hydroxyethylstarch's own; they describe hydroxyethyl starch 130/0.4.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of rapid and slow elimination half-lives: this record has 1.12, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has hydroxyethylstarch 130/0.4, the second reading hydroxyethyl starch; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:13.731560+00:00) predates the upstream re-run (2026-10-05 22:50:38.763027+00:00). Current validate status: `extracted`.
 
 ## Citation
 Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012)
   ·  DOI: [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6)
 
 ## Model component
-<dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Yamakage2012_reference" status="curated_candidate" stale="false" population="healthy male Japanese volunteers" measured-compound="hydroxyethyl starch 130/0.4" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Yamakage2012_reference" status="extracted" stale="true" population="healthy male Japanese volunteers" measured-compound="hydroxyethylstarch 130/0.4" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -52,7 +54,9 @@ Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anest
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hydroxyethyl starch 130/0.4
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hydroxyethylstarch 130/0.4
+- molar mass: none of 1 PubChem candidate(s) is 'hydroxyethylstarch 130/0.4' (LLM) — left in mass units
+- molar mass: none found for 'hydroxyethylstarch 130/0.4' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -62,20 +66,26 @@ Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anest
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[rapid and slow elimination half-lives]` | 1.12 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rapid elimination half-life]` | not captured | 1.12 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[slow elimination half-life]` | not captured | 9.98 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total plasma clearance]` | not captured | 1.14 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total plasma clearance]` | 1.14 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 4.76 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 4.76 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | hydroxyethylstarch 130/0.4 | hydroxyethyl starch | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | hydroxyethylstarch 130/0.4 | hydroxyethyl starch | mismatch |
 
 </details>
 
@@ -130,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference/Hydroxyethylstarch_Yamakage2012_reference_modelica.zip" download>Hydroxyethylstarch_Yamakage2012_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference/Hydroxyethylstarch_Yamakage2012_reference_modelica.zip" download>Hydroxyethylstarch_Yamakage2012_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference/Hydroxyethylstarch_Yamakage2012_reference_fmi.zip" download>Hydroxyethylstarch_Yamakage2012_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference/Hydroxyethylstarch_Yamakage2012_reference_matlab.zip" download>Hydroxyethylstarch_Yamakage2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference/Hydroxyethylstarch_Yamakage2012_reference_matlab_simbio.zip" download>Hydroxyethylstarch_Yamakage2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -152,4 +162,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 07:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 22:50 UTC</sub>

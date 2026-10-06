@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Wang_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Wang2018_reference&quot;,&quot;label&quot;:&quot;Wang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ArginineHydrochloride_Yeo2013_reference&quot;,&quot;label&quot;:&quot;Yeo_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arginine hydrochloride — `ArginineHydrochloride_Wang2018_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -23,9 +23,11 @@
 
 The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading arginine_hydrochloride; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:36:10.113558+00:00) predates the upstream re-run (2026-10-06 00:13:20.709255+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `arginine glutamate`, measured `arginine`.
 
@@ -34,14 +36,16 @@ Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate
   ·  DOI: [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745)
 
 ## Model component
-<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Wang2018_reference" status="accepted_with_caveats" stale="false" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Wang2018_reference" status="needs_review" stale="true" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL | `Q22` · CL | 44.1 | L/h | 1.225e-05 | [l] / [h] | not captured | exact (1.0) | Wang_2018:abstract | — | not captured |
@@ -72,16 +76,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[arginine cl]` | not captured | 44.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 44.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd]` | 61.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | arginine glutamate | arginine_hydrochloride | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | arginine | arginine_hydrochloride | mismatch |
+| `gpt-oss:120b` | `parameters[high dose]` | not captured | 20 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[low dose]` | not captured | 10 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v low dose]` | not captured | 23.1 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | arginine glutamate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | arginine | unknown | mismatch |
 
 </details>
 
@@ -136,25 +143,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_modelica.zip" download>ArginineHydrochloride_Wang2018_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_fmi.zip" download>ArginineHydrochloride_Wang2018_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_fmi.zip" download>ArginineHydrochloride_Wang2018_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_matlab.zip" download>ArginineHydrochloride_Wang2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_matlab_simbio.zip" download>ArginineHydrochloride_Wang2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_sbml.zip" download>ArginineHydrochloride_Wang2018_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_cellml.zip" download>ArginineHydrochloride_Wang2018_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference.svg" alt="ArginineHydrochloride_Wang2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference/ArginineHydrochloride_Wang2018_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `ArginineHydrochloride_Wang2018_reference_params.json` · controls `ArginineHydrochloride_Wang2018_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 09:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 00:13 UTC</sub>

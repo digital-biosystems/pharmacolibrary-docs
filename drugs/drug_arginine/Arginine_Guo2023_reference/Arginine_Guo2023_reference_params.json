@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Arginine_Guo2023_reference",
  "molar_masses": {
   "central.C": 0.174204
@@ -7,15 +7,6 @@
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  0.5,
-  1.0,
-  2.0,
-  4.0,
-  6.0,
-  8.0
  ],
  "parameters": {
   "Cl": 2.6472222222222222e-06,
@@ -25,17 +16,17 @@
   "VdPerKg": 0.002285714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 5e-07,
+  "adminMass": 0.0001,
   "k12": 4.5486111111111114e-05,
   "k21": 2.5536062378167638e-05,
   "ka": 0.0006416666666666667,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3636.072144288577
+  "central.C": 3846.397343886198
  },
  "reference_peaks": {
-  "central.C": 1.8577519844327662e-06
+  "central.C": 0.00037184612909240734
  },
  "stop_time": 259200.0,
  "template": "PK_2C_enteral",

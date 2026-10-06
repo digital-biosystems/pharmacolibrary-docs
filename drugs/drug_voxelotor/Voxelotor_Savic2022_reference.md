@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;voxelotor&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/&quot;},{&quot;label&quot;:&quot;Savic_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # voxelotor — `Voxelotor_Savic2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ The paper reports kabs = 2.38 1/h for voxelotor, yet the model builder substitut
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:42:08.671638+00:00) predates the upstream re-run (2026-10-06 01:47:00.210136+00:00). Current validate status: `extracted`.
+
 ## Citation
 Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731)
 
 ## Model component
-<dbs-pgx drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="needs_review" stale="false" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="extracted" stale="true" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.
@@ -38,16 +40,14 @@ Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometric
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 6.14 | L/h | 1.7055555555555554e-06 | [l] / [h] | 2.8 | exact (1.0) | psp412731-tbl-0002:row1:col1 | — | 0.1 (123% RSE) |
 | V c/F (L) | `Q290` · V1/F | 333 | L | 0.333 | [l] | 0.5 | space_fold (0.95) | psp412731-tbl-0002:row2:col1 | — | not captured |
 | Q/F (L/h) | `Q69` · Q/F | 0.39 | L/h | 1.0833333333333335e-07 | [l] / [h] | 1.9 | exact (1.0) | psp412731-tbl-0002:row3:col1 | — | not captured |
 | V p/F (L) | `Q82` · V2/F | 72.3 | L | 0.0723 | [l] | 0.8 | space_fold (0.95) | psp412731-tbl-0002:row4:col1 | — | not captured |
-| K bp (1/h) | `Q410` · Kp | 0.43 | not captured | not captured | not captured | 6.6 | llm (0.6) | psp412731-tbl-0002:row5:col1 | — | not captured |
-| K a (1/h) | `Q49` · kabs | 2.38 | not captured | not captured | not captured | not captured | space_fold (0.95) | psp412731-tbl-0002:row7:col1 | — | not captured |
+| K bp (1/h) | `Q47` · kel | 0.43 | 1/h | 0.00011944444444444444 | 1/h | 6.6 | llm (0.6) | psp412731-tbl-0002:row5:col1 | — | not captured |
+| K a (1/h) | `Q49` · kabs | 2.38 | 1/h | 0.0006611111111111111 | 1/h | not captured | space_fold (0.95) | psp412731-tbl-0002:row7:col1 | — | not captured |
 | cyp3a4_inducer_on_cl_f_expth | `Q900` · cyp3a4_inducer_on_cl_f_expth | 0.39 | not captured | not captured | not captured | 4.9 | not captured (not captured) | psp412731-tbl-0002:row10:col1 | — | not captured |
 
 <details class="legend">
@@ -58,16 +58,27 @@ Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometric
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
 
 **Interpretation flags:**
+- table section iiv: 'BSV CL/F, % CV' routed out of structural estimates ('Between subject or occasion variability')
+- table section iiv: 'CL/F‐V c/F BSV correlation' routed out of structural estimates ('Between subject or occasion variability')
+- table section iiv: 'BSV V c/F, % CV' routed out of structural estimates ('Between subject or occasion variability')
+- table section iiv: 'BSV K bp, % CV' routed out of structural estimates ('Between subject or occasion variability')
+- table section iiv: 'K bp‐R bp BSV correlation' routed out of structural estimates ('Between subject or occasion variability')
+- table section iiv: 'BSV R bp, % CV' routed out of structural estimates ('Between subject or occasion variability')
+- table section iiv: 'BOV on CL/F, % CV' routed out of structural estimates ('Between subject or occasion variability')
+- table section residual_error: 'Proportional error, plasma (%)' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Proportional error, whole blood (%)' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Additive error, whole blood (ng/ml)' routed out of structural estimates ('Residual variability')
 - dropped unlinked row (NIL): 'R bp' — extend the ontology if this is a real PK parameter (source ['psp412731-tbl-0002:row6:col1'])
 - dropped unlinked row (NIL): 'Blood volume on V c/F, (BLV/3.89 c )TH' — extend the ontology if this is a real PK parameter (source ['psp412731-tbl-0002:row8:col1'])
 - dropped unlinked row (NIL): 'Hematocrit on R bp, (HCT/27.8)TH' — extend the ontology if this is a real PK parameter (source ['psp412731-tbl-0002:row9:col1'])
 - covariate level 'CYP3A4 inducer on CL/F, expTH' → Q900:cyp3a4_inducer_on_cl_f_expth = 0.39 (linear_fractional on Q27)
 - dropped unlinked row (NIL): 'Nominal dose on R bp, (dose/900)TH' — extend the ontology if this is a real PK parameter (source ['psp412731-tbl-0002:row11:col1'])
+- implicit units: 'K bp (1/h)' → 1/h (from the paper text: 'The text states: "The typical estimates of K a, K bp, and R bp were 2.38 h−1, 0.43 h−1, and 16.6, respectively."')
+- implicit units: 'K a (1/h)' → 1/h (from the paper text: 'The text states: "The typical estimates of K a, K bp, and R bp were 2.38 h−1, 0.43 h−1, and 16.6, respectively."')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=voxelotor
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -86,9 +97,10 @@ Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometric
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412731-tbl-0002:row1:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412731-tbl-0002:row2:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412731-tbl-0002:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412731-tbl-0002:row7:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412731-tbl-0002:row3:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412731-tbl-0002:row4:col1'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['psp412731-tbl-0002:row7:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 6.14 L/h | not captured | not captured | ['psp412731-tbl-0002:row1:col1'] |
@@ -126,8 +138,8 @@ Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometric
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_modelica.zip" download>Voxelotor_Savic2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_fmi.zip" download>Voxelotor_Savic2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_modelica.zip" download>Voxelotor_Savic2022_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_fmi.zip" download>Voxelotor_Savic2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_matlab.zip" download>Voxelotor_Savic2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_matlab_simbio.zip" download>Voxelotor_Savic2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_sbml.zip" download>Voxelotor_Savic2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -139,7 +151,7 @@ Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometric
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 500, 600, 900, 1000, 1500 mg.
+**Administration: oral** — 500 mg, single dose, first-order absorption (ka 2.38 /h, F 1). Doses in the paper: 500, 600, 900, 1000, 1500 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_sim_controls.json"></dbs-fmusim>
 
@@ -148,4 +160,4 @@ Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometric
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 13:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 01:47 UTC</sub>

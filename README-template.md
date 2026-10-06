@@ -1,9 +1,7 @@
 # Pharmacolibrary
+v26.09 (built 06/10/2026)
 
-A pharmaceutical knowledge base of **pharmacokinetic (PK), pharmacodynamic (PD) and
-pharmacogenomic (PGx) parameters extracted from the published literature**, one page per drug,
-with the numbers linked back to the paper and table they came from — and, where a model could
-be built, a simulatable model to download.
+**pharmacokinetic (PK), pharmacodynamic (PD) and pharmacogenomic (PGx)** knowledge base extracted from the published literature
 
 ## What you will find here
 
@@ -18,7 +16,8 @@ be built, a simulatable model to download.
 - **Downloadable models.** Where the parameters supported one, the record page's *Models* tab
   offers the same model as Modelica, MATLAB (plain and SimBiology), SBML and CellML — each
   archive holding the model source, a script that simulates it, and a README.
-- **Toxins.** The same pipeline applied to toxicokinetics and toxicodynamics, listed separately
+  **Simulation**
+- **Toxins.** (in construction) - the same pipeline applied to toxicokinetics and toxicodynamics, listed separately
   in the sidebar because a toxin has no ATC code and the question asked of it is exposure
   rather than therapy.
 
@@ -31,10 +30,7 @@ than summarised, then checked for internal consistency (does the reported cleara
 volume and half-life?) and plausibility before a record is accepted.
 
 Nothing here is hand-typed, and nothing is invented: a value that could not be traced to a
-table, or that failed its checks, is marked rather than quietly dropped. The status badge on
-every record says which it is.
-
-## How to read a record
+table, or that failed its checks, is marked. The status badge on every record says which it is.
 
 | badge | meaning |
 |---|---|
@@ -45,7 +41,7 @@ every record says which it is.
 | **stale** | the reviewer's verdict predates the latest re-run of the paper |
 
 Each record page has three tabs: **Information** (the parameters and their provenance),
-**Models** (the downloadable bundles), and **Simulation** (an in-browser run, coming).
+**Models** (the downloadable bundles), and **Simulation** (an in-browser run).
 
 ## Please read this before using a value
 
@@ -53,14 +49,3 @@ These records are a **machine extraction of published parameters**, useful as a 
 and as a map of what the literature reports. They are not clinically validated, not a
 substitute for the primary paper, and not medical advice. Every page links its source: check
 there before relying on a number.
-
-## Getting around
-
-The sidebar lists the curated panels first, then the toxins, then every drug with a page
-arranged by its ATC class. The table below is the extraction ledger — what has been processed,
-how much full text was obtained, and how many records came out of it.
-
-## Local rendering
-```
-docsify serve . 
-```

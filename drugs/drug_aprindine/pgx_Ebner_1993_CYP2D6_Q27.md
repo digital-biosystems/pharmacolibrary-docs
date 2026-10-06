@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;aprindine&quot;,&quot;href&quot;:&quot;drugs/drug_aprindine/&quot;},{&quot;label&quot;:&quot;Ebner_1993 \u00b7 PGx CYP2D6&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,11 +18,12 @@
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL/F (`Q27`)
 - **effect:** not quantified
-- **phenotype groups:** groups defined by genotype (e.g. *1/*1, *1/*3), as the paper reports them
+- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
 
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
+- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation
@@ -30,18 +31,20 @@ Ebner T et al., The metabolism of aprindine in relation…, British journal of c
   ·  DOI: [10.1111/j.1365-2125.1993.tb04161.x](https://doi.org/10.1111/j.1365-2125.1993.tb04161.x)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `mechanism` | metabolism | formation | mismatch |
+| `gpt-oss:120b` | `applies_to` | pk | not captured | mismatch |
+| `gpt-oss:120b` | `mechanism` | metabolism | not captured | mismatch |
+| `gpt-oss:120b` | `target_parameter_id` | Q27 | not captured | mismatch |
 
 </details>
 

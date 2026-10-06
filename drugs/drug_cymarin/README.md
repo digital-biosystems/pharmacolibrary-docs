@@ -18,19 +18,11 @@ Cymarin is a Strophanthus cardiac glycoside with cardiotonic and antiarrhythmic 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 12:36 | 4:32 | 0/0/0 | 1/0/0 | 0/0/0 | 148,060/2,130 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 01:58 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 44,121/693 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023_asexual_parasite_killing](drugs/drug_cymarin/pd_Carucci_2023_asexual_parasite_killing.md) | name ← TD-6450 · inhibition effect | — | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023_gametocyte_killing](drugs/drug_cymarin/pd_Carucci_2023_gametocyte_killing.md) | name ← TD-6450 · inhibition effect | — | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023_gametocyte_stiffening](drugs/drug_cymarin/pd_Carucci_2023_gametocyte_stiffening.md) | name ← TD-6450 · inhibition effect | — | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -51,25 +43,25 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Strobach_1986.pdf` | Strobach H et al., Absorption, metabolism and elimination…, Naunyn-Schmiedeberg's archi… (1986) | popPK | 8 | [10.1007/BF00569392](https://doi.org/10.1007/BF00569392) | [3821940](https://pubmed.ncbi.nlm.nih.gov/3821940) | The study reports quantitative PK parameters for cymarin, including bioavailability (47%) and elimination half-life (13 h i.v., 23 h p.o.), but lacks explicit clearance or volume of distribution values. |
+| `Strobach_1986.pdf` | Strobach H et al., Absorption, metabolism and elimination…, Naunyn-Schmiedeberg's archi… (1986) | popPK | 8 | [10.1007/BF00569392](https://doi.org/10.1007/BF00569392) | [3821940](https://pubmed.ncbi.nlm.nih.gov/3821940) | The study reports quantitative PK parameters for cymarin in humans, including bioavailability (47%) and elimination half-life (13 h i.v., 23 h p.o.), but lacks explicit clearance or volume of distribution values. |
 | `Gozalpour_2014.pdf` | Gozalpour E et al., Convallatoxin: a new P-glycoprotein sub…, European journal of pharmac… (2014) | pgx | 7 | [10.1016/j.ejphar.2014.09.031](https://doi.org/10.1016/j.ejphar.2014.09.031) | [25264938](https://www.ncbi.nlm.nih.gov/pubmed/25264938) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 
-<sub>queue written 2026-09-19T12:33:46.214071+00:00</sub>
+<sub>queue written 2026-10-06T01:58:10.487201+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Carucci_2023 | irrelevant | 0 | 0 | The paper is a malaria transmission-blocking screening study where cymarin is only listed as a compound in a library (Table S1) with in-vitro IC50 values, and no pharmacokinetic parameters for cymarin are reported. |
+| popPK | Carucci_2023 | irrelevant | 0 | 0 | The paper is a malaria drug screening study where cymarin (listed as Cymarine) is only a compound in a library table with in-vitro IC50 values, and no pharmacokinetic parameters are reported for it. |
 | PGx | Gozalpour_2013 | not_relevant | 0 | 0 | The paper investigates the binding affinity of cymarin to P-glycoprotein mutants in vitro, which is a mechanistic study of transporter interaction, not a report of a pharmacogenomic effect on a pharmacokinetic or pharmacodynamic parameter in a clinical or physiological context. |
-| popPK | Gozalpour_2014 | irrelevant | 0 | 0 | The study focuses on convallatoxin as a P-gp substrate, not cymarin, and does not report pharmacokinetic parameters for cymarin. |
+| popPK | Gozalpour_2014 | irrelevant | 0 | 0 | The study focuses on convallatoxin and P-glycoprotein transport, not the pharmacokinetics of cymarin. |
 | PGx | Gozalpour_2014 | not_relevant | 0 | 0 | The paper studies convallatoxin, not cymarin, and focuses on transporter interactions rather than pharmacogenomic effects on cymarin PK/PD. |
-| popPK | Hori_1988 | irrelevant | 0 | 0 | The paper is a mechanistic study on ion efflux in guinea-pig smooth muscle where cymarin is used as a pharmacological inhibitor, not a pharmacokinetic study. |
+| popPK | Hori_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion flux in guinea-pig muscle where cymarin is used as a pharmacological tool, not a PK study. |
 | PD | Hori_1988 | not_relevant | 1 | 1 | The paper reports a single qualitative inhibition of palytoxin-induced K+ efflux by cymarin at a fixed concentration (3 x 10^-8 M) without providing a dose-response curve or numeric PD parameters (e.g., IC50, Emax) for cymarin. |
 | popPK | Ozaki_1985 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of palytoxin and cardiac glycosides on ATPase, not a pharmacokinetic study of cymarin. |
 | popPK | Shang_2020 | irrelevant | 0 | 0 | The study investigates the acaricidal mechanism and active compounds of a plant extract, with cymarin serving only as a mechanistic target ligand, and contains no pharmacokinetic data. |
 | PGx | Tzeng_2026 | not_relevant | 0 | 0 | The paper investigates cymarin as a therapeutic agent targeting ANT2 in breast cancer, but does not report any pharmacogenomic effects (gene variants altering PK/PD) of cymarin. |
-| popPK | van_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of PPARα transactivation and gene expression, containing no pharmacokinetic parameters for cymarin. |
+| popPK | van_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of PPARα transactivation and apoA-I transcription, not a pharmacokinetic study. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

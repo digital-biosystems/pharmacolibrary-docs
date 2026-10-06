@@ -17,7 +17,7 @@ Ecallantide is a drug used to treat hereditary angioedema. It is an approved med
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 11:39 | 2:03 | 0/0/0 | 0/0/0 | 0/0/0 | 41,913/1,179 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 01:45 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 30,325/454 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -52,25 +52,25 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Al-Adimi_2024.pdf` | Al-Adimi G et al., Extension of the circulatory half-life…, Journal of biotechnology (2024) | popPK | 8 | [10.1016/j.jbiotec.2024.06.002](https://doi.org/10.1016/j.jbiotec.2024.06.002) | [38844246](https://pubmed.ncbi.nlm.nih.gov/38844246) | The study reports in-vivo PK parameters (AUC, half-life) for ecallantide fusion proteins in mice, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only relative fold-changes. |
+| `Al-Adimi_2024.pdf` | Al-Adimi G et al., Extension of the circulatory half-life…, Journal of biotechnology (2024) | popPK | 8 | [10.1016/j.jbiotec.2024.06.002](https://doi.org/10.1016/j.jbiotec.2024.06.002) | [38844246](https://pubmed.ncbi.nlm.nih.gov/38844246) | The study reports in vivo PK parameters (AUC, half-life) for ecallantide fusion proteins in mice, with specific fold-change values provided in the text. |
 
-<sub>queue written 2026-09-19T11:39:14.574910+00:00</sub>
+<sub>queue written 2026-10-06T01:44:51.044757+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Al-Adimi_2024 | relevant | 8 | 2 | The study reports in-vivo PK parameters (AUC, half-life) for ecallantide fusion proteins in mice, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only relative fold-changes. |
-| popPK | Bernstein_2010 | irrelevant | 1 | 0 | The provided text is a qualitative summary of pharmacology and clinical efficacy without any quantitative pharmacokinetic parameter values. |
-| popPK | Cole_2013 | irrelevant | 0 | 0 | The paper is a review of icatibant, not ecallantide, and ecallantide is only mentioned as a cost comparator without any PK parameters. |
+| popPK | Al-Adimi_2024 | relevant | 8 | 4 | The study reports in vivo PK parameters (AUC, half-life) for ecallantide fusion proteins in mice, with specific fold-change values provided in the text. |
+| popPK | Bernstein_2010 | irrelevant | 2 | 0 | The provided text is a qualitative review summary that mentions pharmacokinetics but contains no quantitative disposition parameters (CL, V, t1/2, etc.) for ecallantide. |
+| popPK | Cole_2013 | irrelevant | 0 | 0 | The paper is a review of icatibant, and ecallantide is only mentioned as a cost comparator without any pharmacokinetic data. |
 | popPK | Craig_2009 | irrelevant | 0 | 0 | The paper is a review discussing the clinical indication for prophylaxis and mentions ecallantide's short half-life qualitatively, but it does not report quantitative pharmacokinetic parameters or models. |
 | popPK | Kafil_2020 | irrelevant | 0 | 0 | The paper is a review of antibody scaffolds for cancer therapy and mentions ecallantide only as an example of a mimetic antibody without providing any pharmacokinetic data. |
 | PD | Kafil_2020 | not_relevant | 1 | 0 | The text is a review discussing antibody scaffolds and mentions ecallantide only as an example of a mimetic antibody with improved properties, without providing any specific numeric PD parameters or exposure-response data. |
 | popPK | Longhurst_2017 | irrelevant | 0 | 0 | The paper is a clinical consensus review focusing on efficacy and safety outcomes (time to improvement/resolution) rather than reporting quantitative pharmacokinetic parameters (CL, V, t1/2) for ecallantide. |
 | PD | Longhurst_2017 | not_relevant | 1 | 0 | The paper is a qualitative expert consensus review that mentions ecallantide's efficacy and safety but does not report any numeric pharmacodynamic parameters, concentration-effect curves, or dose-response data. |
-| popPK | Martello_2012 | irrelevant | 1 | 0 | The paper is a clinical review that discusses pharmacokinetics qualitatively but does not report specific quantitative disposition parameters (e.g., CL, V, t1/2) for ecallantide. |
+| popPK | Martello_2012 | irrelevant | 2 | 0 | This is a narrative review of ecallantide that discusses pharmacokinetics qualitatively but does not provide specific quantitative disposition parameters (CL, V, t1/2) in the text. |
 | popPK | Sabharwal_2015 | irrelevant | 0 | 0 | The paper is a review discussing the mechanism and clinical use of ecallantide as a comparator, without reporting any original quantitative pharmacokinetic parameters. |
-| popPK | Sanhajariya_2020 | irrelevant | 0 | 0 | The paper is an in silico simulation study on snake venom toxins and does not report pharmacokinetic parameters for ecallantide. |
+| popPK | Sanhajariya_2020 | irrelevant | 0 | 0 | The study is an in silico simulation of snake venom toxins and does not involve the drug ecallantide. |
 | PD | Sanhajariya_2020 | not_relevant | 0 | 0 | The paper is an in silico pharmacokinetic (PK) simulation study of snake venom components and does not report any pharmacodynamic (PD) or exposure-response relationships for ecallantide or any other drug. |
 | popPK | Stolz_2010 | irrelevant | 0 | 0 | The text is a clinical review of ecallantide's efficacy and safety in HAE and contains no pharmacokinetic parameters or quantitative disposition data. |
 | popPK | Sun_2024 | irrelevant | 0 | 0 | The study focuses on a novel factor XIa inhibitor (DX-88mut) and does not report pharmacokinetic parameters for ecallantide. |

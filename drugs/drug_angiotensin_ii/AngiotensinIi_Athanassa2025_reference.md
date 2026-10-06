@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;angiotensin II&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/&quot;},{&quot;label&quot;:&quot;Athanassa_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # angiotensin II — `AngiotensinIi_Athanassa2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,12 +21,14 @@
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:09.362699+00:00) predates the upstream re-run (2026-10-06 04:04:00.265352+00:00). Current validate status: `extracted`.
+
 ## Citation
 Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090)
 
 ## Model component
-<dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Athanassa2025_reference" status="curated_candidate" stale="false" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Athanassa2025_reference" status="extracted" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -116,8 +118,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_modelica.zip" download>AngiotensinIi_Athanassa2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_fmi.zip" download>AngiotensinIi_Athanassa2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_modelica.zip" download>AngiotensinIi_Athanassa2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_fmi.zip" download>AngiotensinIi_Athanassa2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_matlab.zip" download>AngiotensinIi_Athanassa2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_matlab_simbio.zip" download>AngiotensinIi_Athanassa2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_sbml.zip" download>AngiotensinIi_Athanassa2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -138,4 +140,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 16:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 04:04 UTC</sub>

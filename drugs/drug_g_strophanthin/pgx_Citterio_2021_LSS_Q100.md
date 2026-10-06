@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;g-strophanthin&quot;,&quot;href&quot;:&quot;drugs/drug_g_strophanthin/&quot;},{&quot;label&quot;:&quot;Citterio_2021 \u00b7 PGx LSS&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# LSS — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.01).">human + animal</span>
+# LSS — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.01).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -32,14 +32,22 @@ Citterio L et al., Antihypertensive treatment guided by ge…, The pharmacogenom
   ·  DOI: [10.1038/s41397-021-00214-y](https://doi.org/10.1038/s41397-021-00214-y)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
-_Every reader agrees on every compared field of this PGx record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

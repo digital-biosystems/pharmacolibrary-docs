@@ -17,20 +17,19 @@ Donidalorsen is used to treat hereditary angioedema. It is an approved medicine 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 11:37 | 2:42 | 0/0/1 | 1/0/1 | 0/0/0 | 115,880/3,686 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 01:44 | 1:28 | 0/0/1 | 1/0/0 | 0/0/0 | 49,347/1,903 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Diep_2026_reference](drugs/drug_donidalorsen/Donidalorsen_Diep2026_reference.md) | held back | 2-compartment, oral | 5 (+4 cov.) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q290, Q69, Q76, Q49 — no SI va…</sub><br><sub>route_to: `human_review`</sub> | [Diep_2026_reference](drugs/drug_donidalorsen/Donidalorsen_Diep2026_reference.md) | — | 2-compartment (no model) | 5 (+4 cov.) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span> | [Singh_2025_HAE_attack_rate](drugs/drug_donidalorsen/pd_Singh_2025_HAE_attack_rate.md) | per-4-week normalized HAE attack rate ← prekallikrein · direct sigmoid Emax (Hill) effect | — | Singh P et al., Exposure-Response Analysis of Donidalor…, Clinical and translational… (2025) | [10.1111/cts.70388](https://doi.org/10.1111/cts.70388) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026_PKK](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | prekallikrein ← donidalorsen · indirect response — drug inhibits the production of prekallikrein | model (no simulator) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026_PKK](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | prekallikrein ← donidalorsen · indirect response — drug inhibits the production of prekallikrein | — | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## ADME sites
 
@@ -53,14 +52,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Singh_2025 | irrelevant | 2 | 0 | The paper is an exposure-response analysis that references a separate population PK model but does not report quantitative PK parameters (CL, V, etc.) for donidalorsen in the provided text. |
+| popPK | Singh_2025 | irrelevant | 2 | 0 | The paper focuses on exposure-response modeling of HAE attack rates and prekallikrein concentrations, and explicitly states that the population PK model details and parameters are published separately or on file, not in this text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-19 11:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 01:43 UTC</sub>

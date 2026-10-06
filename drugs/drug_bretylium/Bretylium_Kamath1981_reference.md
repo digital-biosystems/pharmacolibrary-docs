@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;Bretylium&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/&quot;},{&quot;label&quot;:&quot;Kamath_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Bretylium — `Bretylium_Kamath1981_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,11 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bretylium tosylate, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:20.411310+00:00) predates the upstream re-run (2026-10-06 02:51:30.413320+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `bretylium tosylate`, measured `bretylium`.
 
@@ -32,10 +36,10 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
   ·  DOI: [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623)
 
 ## Model component
-<dbs-pgx drug="Bretylium" model-id="Bretylium_Kamath1981_reference" status="curated_candidate" stale="false" population="rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="Bretylium" model-id="Bretylium_Kamath1981_reference" status="extracted" stale="true" population="male Charles River rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 7 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -48,7 +52,6 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
 | plasma clearance | `Q22` · CL | 1.93 | liters/hr/kg | 3.752777777777778e-05 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | Kamath_1981:abstract | — | not captured |
 | renal clearance | `Q26` · CLR | 1.27 | liters/hr/kg | 2.4694444444444444e-05 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Kamath_1981:abstract | — | not captured |
 | excretion rate constants | `Q50` · kexcr | 1.24 | hr-1 | 0.0003444444444444444 | [1] / [h] | not captured | llm_corrected (0.6) | Kamath_1981:abstract | — | not captured |
-| population mean absorption rate constant | `Q49` · kabs | 0.537 | h−1 | 0.00014916666666666667 | 1/h | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,18 +61,53 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag', 'k12', 'k21']
+- `defaulted_parameters`: ['ka', 'Tlag', 'k12', 'k21']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bretylium
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q49 (kabs) from Greenberg_2022's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kamath_1981_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | 15 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent volume of the central compartment]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent volume of the central compartment]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[beta half-life]` | 5.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[beta half-life]` | not captured | 5.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[excretion rate constants]` | 1.24 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[excretion rate constants]` | not captured | 1.24 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma clearance]` | 1.93 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma clearance]` | not captured | 1.93 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance]` | 1.27 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance]` | not captured | 1.27 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | bretylium tosylate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | bretylium | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -81,7 +119,6 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kamath_1981:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kamath_1981:abstract'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kamath_1981:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Greenberg_2022:review'] |
 | C5_dimension_Q50 | pass | 1 / [time] | not captured | not captured | not captured | ['Kamath_1981:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Kamath_1981:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kamath_1981:abstract'] |
@@ -122,12 +159,12 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_modelica.zip" download>Bretylium_Kamath1981_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_fmi.zip" download>Bretylium_Kamath1981_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_matlab.zip" download>Bretylium_Kamath1981_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_matlab_simbio.zip" download>Bretylium_Kamath1981_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_sbml.zip" download>Bretylium_Kamath1981_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_cellml.zip" download>Bretylium_Kamath1981_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_modelica.zip" download>Bretylium_Kamath1981_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_fmi.zip" download>Bretylium_Kamath1981_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_matlab.zip" download>Bretylium_Kamath1981_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_matlab_simbio.zip" download>Bretylium_Kamath1981_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_sbml.zip" download>Bretylium_Kamath1981_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_cellml.zip" download>Bretylium_Kamath1981_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -135,7 +172,7 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.537 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference_sim_controls.json"></dbs-fmusim>
 
@@ -144,4 +181,4 @@ Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmac
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 14:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 02:51 UTC</sub>

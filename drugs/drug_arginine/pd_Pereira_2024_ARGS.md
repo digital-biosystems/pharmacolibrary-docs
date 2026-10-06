@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;Arginine&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/&quot;},{&quot;label&quot;:&quot;Pereira_2024 \u00b7 PD ARGS&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Aurlie2023_reference&quot;,&quot;label&quot;:&quot;Aur\u00e9lie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Aurlie2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Schaedeli2024_reference&quot;,&quot;label&quot;:&quot;Schaedeli_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Schaedeli2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Wang2018_reference&quot;,&quot;label&quot;:&quot;Wang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Wang2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arginine_Camargo2025_reference&quot;,&quot;label&quot;:&quot;Camargo_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Camargo2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Henninger2026_reference&quot;,&quot;label&quot;:&quot;Henninger_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Henninger2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Arginine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/Arginine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ARGS — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
@@ -16,9 +16,9 @@
 
 ## What this record describes
 
-**As extracted:** M6495 drives ARGS (in nM): indirect response — drug inhibits the production of ARGS.
+**As extracted:** M6495 (measured concentrations) drives ARGS (in nM): indirect response — drug inhibits the production of ARGS.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > M6495 plasma concentrations inhibit the synthesis of the serum biomarker ARGS (nM) in an indirect response model, where kin is the ARGS synthesis rate, kout the ARGS elimination rate constant, Imax the maximal inhibition of ARGS synthesis (0.725) and IC50 the concentration giving 50% of maximal inhibition; the record lists IC50 in mg/L and kout in /h but the excerpts give no numeric values for IC50, kin or kout.
 >
@@ -26,9 +26,9 @@
 
 - **paper:** `Pereira_2024`
 - **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharmacokinetics… (2024)
@@ -37,18 +37,55 @@ Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharm
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | V1 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q63` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row2:col2 |
-| PK (driver) | Q (L/kg/h) — IIV (CV%) (Relative Standard Error %) | `Q30` · not captured | 0 | L/kg/h | not captured | exact (not captured) | Tab1:row3:col2 |
-| PK (driver) | V2 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q64` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row4:col2 |
-| PK (driver) | Km (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q1` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row6:col2 |
-| PD (effect) | Kout (/h) — IIV (CV%) (Relative Standard Error %) | `Q328` · not captured | 0 | /h | not captured | exact (not captured) | Tab1:row9:col2 |
-| PD (effect) | IC50 (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q322` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row11:col2 |
-| PD (effect) | IMax | `Q323` · not captured | 0.725 | NA | not captured | review_gapfill (not captured) | Pereira_2024:review |
+| PD (effect) | Kout | `Q328` · not captured | 0.0401 | /h | not captured | llm (not captured) | Pereira_2024:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 0.725 | not captured | not captured | llm (not captured) | Pereira_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 1.17 | mg/L | not captured | llm (not captured) | Pereira_2024:pdv3 |
+| PD (effect) | BASE | `Q324` · not captured | 0.36 | nM | not captured | llm (not captured) | Pereira_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Arginine_Pereira2024_PD_args` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.36 nM | — |
+| Emax | 0.725 | — |
+| EC50 | 1.17 mg/L | 0.00117 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.36, `at_EC50` = 0.2295, `at_inf` = 0.099
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_off_target_driver` — driver compound 'M6495' is not 'arginine' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- off_target_driver: 'M6495' is not 'arginine' (S12)
+
+Advisory:
+
+- defaulted: gamma (convention)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
