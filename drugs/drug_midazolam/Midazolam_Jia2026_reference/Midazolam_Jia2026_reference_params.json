@@ -2,17 +2,17 @@
  "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
  "model_id": "Midazolam_Jia2026_reference",
  "molar_masses": {
-  "C_central": 0.325767
+  "central.C": 0.325767
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.077777777777778e-06,
   "F": 1.0,
   "MM": 0.325767,
-  "Tlag": 0.0,
+  "Tlag": 4428.0,
   "VdPerKg": 6.785714285714286e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -21,10 +21,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 6466.594712133407
+  "central.C": 10894.47407199127
  },
  "reference_peaks": {
-  "C_central": 0.00022163588931867076
+  "central.C": 0.00022163693152981579
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

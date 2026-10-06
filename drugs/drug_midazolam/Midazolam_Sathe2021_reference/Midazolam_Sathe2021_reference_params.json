@@ -2,31 +2,31 @@
  "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
  "model_id": "Midazolam_Sathe2021_reference",
  "molar_masses": {
-  "C_central": 0.325767
+  "central.C": 0.325767
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.052777777777778e-05,
   "F": 1.0,
   "MM": 0.325767,
-  "Tlag": 288.0,
+  "Tlag": 4428.0,
   "VdPerKg": 0.00165,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1.5e-05,
-  "ka": 3.888888888888889e-05,
+  "ka": 0.0004916666666666666,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 11687.374749498998
+  "central.C": 8055.140959823714
  },
  "reference_peaks": {
-  "C_central": 1.856366256966053e-05
+  "central.C": 7.290340138043502e-05
  },
- "stop_time": 97200.0,
+ "stop_time": 86400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

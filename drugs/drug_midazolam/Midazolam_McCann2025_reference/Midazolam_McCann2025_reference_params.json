@@ -1,36 +1,32 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
  "model_id": "Midazolam_McCann2025_reference",
  "molar_masses": {
-  "C_central": 0.325767
+  "central.C": 0.325767
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  2.0
+  "central.C"
  ],
  "parameters": {
   "Cl": 4.077777777777778e-06,
   "F": 0.9,
   "MM": 0.325767,
-  "Tlag": 288.0,
+  "Tlag": 4428.0,
   "VdPerKg": 0.00010128571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 2e-06,
+  "adminMass": 1.5e-05,
   "k12": 0.001751684688920232,
   "k21": 0.00036452728043570424,
-  "ka": 3.888888888888889e-05,
+  "ka": 0.0004916666666666666,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 42593.9879759519
+  "central.C": 12120.240480961924
  },
  "reference_peaks": {
-  "C_central": 3.3326960504418964e-06
+  "central.C": 3.936112782046318e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

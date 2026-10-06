@@ -18,7 +18,7 @@ Pentosan polysulfate sodium is a heparin-like drug used as an anticoagulant and,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 10:09 | 1:52 | 0/0/0 | 0/0/0 | 0/0/0 | 2,102/206 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 21:40 | 0:46 | 0/0/0 | 0/0/0 | 0/0/0 | 19,453/1,074 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -48,15 +48,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dawes_1986.pdf` | Dawes J et al., Absorption of heparin, LMW heparin and…, Thrombosis research (1986) | popPK | 8 | [10.1016/0049-3848(86)90169-6](https://doi.org/10.1016/0049-3848(86)90169-6) | [2433788](https://pubmed.ncbi.nlm.nih.gov/2433788) | The study reports PK parameters (AUC, Tmax) for pentosan polysulfate, but specific numeric values are not present in the provided text. |
-| `Dol_1986.pdf` | Dol F et al., Effect of pentosan polysulphate adminis…, Thrombosis and haemostasis (1986) | popPK | 8 | not captured | [2436330](https://pubmed.ncbi.nlm.nih.gov/2436330) | The study reports on the clearance of pentosan polysulfate sodium in humans, but the evidence only provides qualitative detection times (e.g., detectable at 8h) and lacks specific numeric PK parameter values like CL, V, or half-life. |
-| `MacGregor_1985.pdf` | MacGregor IR et al., Metabolism of sodium pentosan polysulph…, Thrombosis and haemostasis (1985) | popPK | 8 | not captured | [2413564](https://pubmed.ncbi.nlm.nih.gov/2413564) | The study is a human PK study of pentosan polysulfate sodium reporting clearance and concentration-dose relationships, but specific numeric parameter values (e.g., CL, V, t1/2) are not explicitly listed in the provided text. |
+| `Dol_1986.pdf` | Dol F et al., Effect of pentosan polysulphate adminis…, Thrombosis and haemostasis (1986) | popPK | 8 | not captured | [2436330](https://pubmed.ncbi.nlm.nih.gov/2436330) | The study reports the clearance of pentosan polysulfate in humans and provides qualitative time-course data (detectability at 6-8h) but lacks specific numeric PK parameter values (CL, V, t1/2) in the provided text. |
+| `MacGregor_1985.pdf` | MacGregor IR et al., Metabolism of sodium pentosan polysulph…, Thrombosis and haemostasis (1985) | popPK | 8 | not captured | [2413564](https://pubmed.ncbi.nlm.nih.gov/2413564) | The study reports pharmacokinetic parameters (clearance, peak plasma concentration) for pentosan polysulfate sodium in humans, but specific numeric values are not provided in the text evidence. |
 
-<sub>queue written 2026-09-30T10:09:16.496883+00:00</sub>
+<sub>queue written 2026-10-06T21:39:52.842086+00:00</sub>
 
 ## Screened and excluded
 
@@ -65,20 +64,20 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Akiyama_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytoprotective activity, not a pharmacokinetic study, and pentosan polysulfate is used only as a comparator agent. |
 | PD | Akiyama_2000 | not_relevant | 3 | 2 | The paper describes a qualitative cytoprotective effect of pentosan polysulfate in an in vitro assay but does not provide numeric PD parameters (e.g., IC50, Emax) or a quantitative dose-response curve for the drug. |
 | popPK | Cadroy_1987 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
-| popPK | Dawes_1986 | relevant | 8 | 2 | The study reports PK parameters (AUC, Tmax) for pentosan polysulfate, but specific numeric values are not present in the provided text. |
+| popPK | Dawes_1986 | irrelevant | 2 | 0 | The study reports qualitative trends in absorption and clearance for pentosan polysulfate but does not provide specific quantitative PK parameters (CL, V, ka, t1/2) in the evidence. |
 | popPK | Dellis_2014 | irrelevant | 0 | 0 | The paper is a review of intravesical treatments for bladder pain syndrome and does not report any quantitative pharmacokinetic parameters for pentosan polysulfate sodium. |
 | PD | Dellis_2014 | not_relevant | 0 | 0 | The paper is a narrative review focusing on botulinum toxin for bladder pain syndrome and only qualitatively mentions pentosan polysulfate sodium without providing any pharmacodynamic data or numeric parameters. |
 | popPK | Dieu_2022 | irrelevant | 0 | 0 | The paper is a cross-sectional ophthalmic imaging study describing retinopathy, not a pharmacokinetic study, and contains no PK parameters. |
 | PD | Dieu_2022 | not_relevant | 1 | 0 | The paper is a cross-sectional imaging study describing the prevalence and spectrum of retinopathy in PPS users; it reports exposure metrics (dose/duration) and binary toxicity outcomes but does not provide a quantitative dose-response curve or numeric PD parameters (e.g., EC50, Emax). |
-| popPK | Dol_1986 | relevant | 8 | 2 | The study reports on the clearance of pentosan polysulfate sodium in humans, but the evidence only provides qualitative detection times (e.g., detectable at 8h) and lacks specific numeric PK parameter values like CL, V, or half-life. |
+| popPK | Dol_1986 | relevant | 8 | 2 | The study reports the clearance of pentosan polysulfate in humans and provides qualitative time-course data (detectability at 6-8h) but lacks specific numeric PK parameter values (CL, V, t1/2) in the provided text. |
 | popPK | Feo_2026 | irrelevant | 0 | 0 | The paper is a retrospective case series on clinical toxicity (maculopathy and colopathy) and does not report any pharmacokinetic parameters. |
 | PD | Feo_2026 | not_relevant | 0 | 0 | The paper is a retrospective case series describing clinical associations and toxicity outcomes (maculopathy and colopathy) without reporting any pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters. |
-| popPK | Forloni_2013 | irrelevant | 0 | 0 | The paper is a review of therapy in prion diseases and mentions pentosan polysulfate only as a compound that reached clinical evaluation, without reporting any pharmacokinetic parameters or numeric values. |
+| popPK | Forloni_2013 | irrelevant | 0 | 0 | The paper is a review of therapy in prion diseases and mentions pentosan polysulfate only as a compound that reached clinical evaluation, without reporting any pharmacokinetic parameters. |
 | popPK | Fung_2026 | irrelevant | 0 | 0 | The paper is a clinical case series regarding retinal toxicity (maculopathy) and does not report quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Fung_2026 | not_relevant | 1 | 0 | The paper is a retrospective case series of 3 patients describing clinical toxicity and cumulative dose ranges, but it does not report any quantitative exposure-response relationship, concentration-effect curve, or numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Gebska_2002 | irrelevant | 0 | 0 | The paper is a mechanistic study on cell death and heparin binding, using pentosan polysulfate only as a competitive inhibitor, and contains no pharmacokinetic parameters. |
-| popPK | Goebeler_2016 | irrelevant | 0 | 0 | The study focuses on blinatumomab, and pentosan polysulfate is only a co-administered agent for neurotoxicity mitigation without PK parameters reported. |
-| popPK | Hall_2025 | irrelevant | 0 | 0 | The paper is a clinical review of PPS maculopathy (retinal toxicity) and does not report any pharmacokinetic parameters or quantitative disposition data. |
+| popPK | Gebska_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of heparin binding to apoptotic cells, using pentosan polysulfate only as a competitive inhibitor, and reports no pharmacokinetic parameters. |
+| popPK | Goebeler_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of blinatumomab, and pentosan polysulfate is only mentioned as a co-administered agent in a small subset of patients without any PK data reported for it. |
+| popPK | Hall_2025 | irrelevant | 0 | 0 | The paper is a clinical review of PPS maculopathy (retinal toxicity) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Hall_2025 | not_relevant | 1 | 0 | The paper is a review discussing the qualitative dose-response relationship and causality of PPS maculopathy but does not provide numeric PD parameters or extractable concentration-effect data. |
 | popPK | Honda_2018 | irrelevant | 0 | 0 | The paper focuses on the anti-prion activity of poly-L-histidine, with pentosan polysulfate mentioned only as a background comparator, and contains no pharmacokinetic data. |
 | PD | Honda_2018 | not_relevant | 0 | 0 | The paper studies poly-L-histidine, not pentosan polysulfate sodium, and reports an IC50 for the wrong compound. |
@@ -86,18 +85,18 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Leung_2021 | not_relevant | 3 | 2 | The paper reports a retrospective association between cumulative dose/duration and the binary outcome of retinopathy, but it does not provide a quantitative exposure-response model, concentration-effect curve, or specific PD parameters (e.g., EC50, Emax). |
 | popPK | Liu_2023 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for osteoarthritis and dyslipidemia that does not report any pharmacokinetic parameters or disposition data for pentosan polysulfate sodium. |
 | PD | Liu_2023 | not_relevant | 0 | 0 | The study is a clinical trial reporting efficacy outcomes (lipid levels, pain scores) without any pharmacokinetic data, exposure measurements, or dose-response modeling. |
-| popPK | Ludwig_2020 | irrelevant | 0 | 0 | The study is a retrospective claims database analysis investigating the association between PPS use and maculopathy, reporting no pharmacokinetic parameters. |
+| popPK | Ludwig_2020 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis of maculopathy risk and does not report any pharmacokinetic parameters for pentosan polysulfate sodium. |
 | PD | Ludwig_2020 | not_relevant | 0 | 0 | The study is a retrospective claims analysis assessing the association between drug exposure and clinical outcomes (maculopathy) using Cox proportional hazards models, not a pharmacodynamic or exposure-response analysis with numeric PD parameters. |
-| popPK | MacGregor_1985 | relevant | 8 | 2 | The study is a human PK study of pentosan polysulfate sodium reporting clearance and concentration-dose relationships, but specific numeric parameter values (e.g., CL, V, t1/2) are not explicitly listed in the provided text. |
-| popPK | MacGregor_2004 | irrelevant | 0 | 0 | The paper is a review of vCJD and blood transfusion safety, mentioning pentosan polysulfate only as a potential therapeutic agent without reporting any pharmacokinetic parameters. |
-| popPK | Modi_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of warfarin, with pentosan polysulfate sodium serving only as a co-administered agent to test for interactions, rather than being the subject drug for PK parameter extraction. |
+| popPK | MacGregor_1985 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (clearance, peak plasma concentration) for pentosan polysulfate sodium in humans, but specific numeric values are not provided in the text evidence. |
+| popPK | MacGregor_2004 | irrelevant | 0 | 0 | The paper is a review of vCJD and blood transfusion safety, mentioning pentosan polysulfate only as a potential therapeutic agent without providing any pharmacokinetic data. |
+| popPK | Modi_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of warfarin, with pentosan polysulfate sodium acting only as a co-administered agent to test for interactions, not as the subject drug. |
 | PD | Modi_2005 | not_relevant | 0 | 0 | The study reports a lack of interaction (no change in PK or PD parameters like INR) but does not provide a concentration-effect curve, Emax, EC50, or any numeric PD model parameters for pentosan polysulfate sodium. |
 | popPK | Nickel_2005 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for interstitial cystitis and does not report any pharmacokinetic parameters for pentosan polysulfate sodium. |
 | PD | Nickel_2005 | not_relevant | 3 | 2 | The study reports dose-response data (300, 600, 900 mg) but concludes the response is not dose-dependent and does not provide concentration-effect data or fitted PD parameters (Emax, EC50). |
 | popPK | Peters_1991 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
-| popPK | Philip_2023 | irrelevant | 0 | 0 | The paper is a retrospective ophthalmology study on PPS maculopathy prevalence and dose-dependency, reporting no pharmacokinetic parameters. |
-| popPK | Schwedler_1999 | irrelevant | 0 | 0 | The study is a mechanistic/toxicology investigation of pentosan polysulfate's effect on cyclosporine-induced nephropathy and does not report pharmacokinetic parameters for pentosan polysulfate. |
-| popPK | Tao_2025 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of the risk of maculopathy (a safety/toxicity outcome) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Philip_2023 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis of PPS maculopathy prevalence and dose-dependency, reporting no pharmacokinetic parameters. |
+| popPK | Schwedler_1999 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicology investigation of pentosan polysulfate's effect on cyclosporine-induced nephropathy, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for pentosan polysulfate. |
+| popPK | Tao_2025 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of the risk of maculopathy (a safety/toxicity outcome) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Wang_2020 | irrelevant | 0 | 0 | The paper is a clinical ophthalmology study describing the prevalence and imaging findings of PPS-associated maculopathy, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Wang_2020 | not_relevant | 3 | 2 | The paper reports a qualitative association between cumulative dose and toxicity severity with threshold values (500g, 1500g) but does not provide a quantitative dose-response curve or numeric PD parameters like Emax or EC50. |
 

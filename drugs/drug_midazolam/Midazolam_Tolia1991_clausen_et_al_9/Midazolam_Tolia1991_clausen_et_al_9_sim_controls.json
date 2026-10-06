@@ -90,8 +90,8 @@
   "label": "Simulated time",
   "unit": "h",
   "scale": 0.0002777777777777778,
-  "min": 5.0,
-  "max": 76.0,
+  "min": 3.0,
+  "max": 48.0,
   "step": 1.0,
   "sim": true
  }

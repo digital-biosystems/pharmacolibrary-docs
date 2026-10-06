@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05B&quot;,&quot;href&quot;:&quot;atc/C05B.md&quot;},{&quot;label&quot;:&quot;phenol&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/&quot;},{&quot;label&quot;:&quot;Nichols_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # phenol — `Phenol_Nichols2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Nishida_1995, Thoueille_2023) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenyl glucuronide: CL 15.7 ml/kg/h, kfm 0.049 /h; phenol: V 2.66e+03 L, kabs 0.0069 min-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has phenol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has phenol, the second reading phenyl glucuronide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:11.999145+00:00) predates the upstream re-run (2026-10-06 21:45:41.650056+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008)
   ·  DOI: [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123)
 
 ## Model component
-<dbs-pgx drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="false" population="rainbow trout" measured-compound="phenol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="true" population="rainbow trout" measured-compound="phenol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -58,7 +60,7 @@ Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism a
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenol
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 2 linked by role; re-tagged phenol→phenyl glucuronide ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Thoueille_2023's review values (primary lacked it)
@@ -77,22 +79,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[depurated for]` | not captured | 48 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fitted pg clearance constant]` | not captured | 15.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[glucuronidation rate as percent of total rate of ph elimination]` | not captured | 7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[glucuronidation rate averaged]` | not captured | 0.049 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[glucuronidation rate]` | 0.049 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[infused pg was eliminated in urine during the depuration period]` | not captured | 93 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak concentrations of pg in urine averaged]` | not captured | 3.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[pg clearance constant]` | 15.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | phenol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | phenol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | phenol | phenyl glucuronide | mismatch |
 
 </details>
 
@@ -151,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 20:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 21:45 UTC</sub>

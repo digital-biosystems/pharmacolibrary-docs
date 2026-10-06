@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05B&quot;,&quot;href&quot;:&quot;atc/C05B.md&quot;},{&quot;label&quot;:&quot;phenol&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/&quot;},{&quot;label&quot;:&quot;Thoueille_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # phenol — `Phenol_Thoueille2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record for phenol reports CL/F 39.9 L/h, V 2660.0 L and an absorption rate constant of 2.0 h−1, but bioavailability was assumed to be 1, the metabolite fraction 1, and no molar correction was applied, which the adjudication judged not acceptable for an apparent parameterization. The lag time before absorption was defaulted rather than estimated. A second reader also disagreed on several values, reading 39.9 where the record holds 30, leaving the 39.9 elsewhere unassigned, and reading 90 where the record has none, and considered the parameterization mechanistic rather than apparent, so the extracted numbers are not settled. Extracted — phenol: CL/F 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 30, the second reading 39.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 30, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:18.593892+00:00) predates the upstream re-run (2026-10-06 21:42:42.745018+00:00). Current validate status: `extracted`.
 
 ## Citation
 Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103)
 
 ## Model component
-<dbs-pgx drug="phenol" model-id="Phenol_Thoueille2023_reference" status="needs_review" stale="false" population="" measured-compound="phenol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="phenol" model-id="Phenol_Thoueille2023_reference" status="extracted" stale="true" population="" measured-compound="phenol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,8 +40,6 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLTFV | `Q27` · CL/F | 39.9 | L/h | 1.1083333333333333e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
@@ -63,23 +63,20 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss:120b` | partly confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `values[Q22]` | 30 | 39.9 | mismatch |
-| `gpt-oss:120b` | `values[Q27]` | 39.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q33]` | not captured | 90 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 30 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 10 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q40]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q57]` | 0.5 | not captured | only_one_extracted |
 
 </details>
 
@@ -157,4 +154,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 20:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 21:42 UTC</sub>

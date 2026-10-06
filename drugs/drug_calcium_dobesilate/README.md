@@ -17,11 +17,18 @@ Calcium dobesilate is a vasoprotective drug that has been used to treat vein pro
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 09:58 | 0:43 | 0/0/0 | 0/0/0 | 0/0/0 | 1,576/156 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/2 | 2/0 | 0 |
+| 2026-10-06 21:07 | 1:11 | 0/0/0 | 1/0/0 | 0/0/0 | 40,367/1,087 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/2 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Alda_2011_MDA](drugs/drug_calcium_dobesilate/pd_Alda_2011_MDA.md) | Malondialdehyde ← calcium dobesilate · direct Emax (saturable) effect | — | Alda O et al., In vitro effect of calcium dobesilate o…, Phlebology (2011) | [10.1258/phleb.2010.010052](https://doi.org/10.1258/phleb.2010.010052) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Alda_2011_TAS](drugs/drug_calcium_dobesilate/pd_Alda_2011_TAS.md) | Total antioxidant status ← calcium dobesilate · direct Emax (saturable) effect | — | Alda O et al., In vitro effect of calcium dobesilate o…, Phlebology (2011) | [10.1258/phleb.2010.010052](https://doi.org/10.1258/phleb.2010.010052) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -32,7 +39,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -44,19 +51,18 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Ruiz_1998.pdf` | Ruiz E et al., Calcium dobesilate increased endotheliu…, General pharmacology (1998) | pd | 4 | [10.1016/s0306-3623(97)00343-1](https://doi.org/10.1016/s0306-3623(97)00343-1) | [9559323](https://www.ncbi.nlm.nih.gov/pubmed/9559323) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-30T09:58:18.083765+00:00</sub>
+<sub>queue written 2026-10-06T21:07:06.211188+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abbott_2024 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study on potassium channels where calcium dobesilate is only mentioned as a structural analog in a structure-activity relationship, with no pharmacokinetic parameters reported. |
+| popPK | Abbott_2024 | irrelevant | 0 | 0 | The paper is a pharmacological study on potassium channels (Kv7.2/3) and does not report any pharmacokinetic parameters (CL, V, etc.) for calcium dobesilate, which is only mentioned as a structural analog. |
 | popPK | Alda_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of oxidative stress markers, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Altinoz_2018 | not_relevant | 0 | 0 | The paper discusses aspirin and its metabolite gentisic acid, not calcium dobesilate, and does not report pharmacogenomic effects on PK/PD parameters for the target drug. |
 | popPK | Brunet_1998 | irrelevant | 0 | 0 | The paper reports in vitro antioxidant properties (IC50 values) rather than pharmacokinetic disposition parameters. |
 | popPK | Cuevas_2005 | irrelevant | 0 | 0 | no_text gate: only 156 chars of text extracted (&lt; 400) |
 | PD | Cuevas_2005 | not_relevant | 0 | 0 | The provided text contains no abstract or content, making it impossible to verify any pharmacodynamic or exposure-response data for calcium dobesilate. |
-| popPK | Liu_2023 | relevant | 4 | 8 | The study reports non-compartmental PK parameters (Cmax, AUC, t1/2) for calcium dobesilate, but lacks compartmental model parameters (CL, V, Q, ka) required for population PK extraction. |
 | popPK | Mingqi_2026 | irrelevant | 0 | 0 | The study focuses on analytical interference in urinary protein detection methods and reports only urinary drug concentrations, not pharmacokinetic disposition parameters like clearance or volume. |
 | popPK | Ruiz_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular effects, not a pharmacokinetic study reporting disposition parameters. |
 

@@ -2,11 +2,11 @@
  "dose_source": "paper",
  "model_id": "Midazolam_Zhou2014_reference",
  "molar_masses": {
-  "C_central": 0.325767
+  "central.C": 0.325767
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
@@ -16,23 +16,23 @@
   "Cl": 1e-05,
   "F": 0.9,
   "MM": 0.325767,
-  "Tlag": 288.0,
+  "Tlag": 4428.0,
   "VdPerKg": 0.0019,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 1e-05,
   "k12": 5.4302422723475354e-05,
   "k21": 4.946727549467276e-05,
-  "ka": 3.888888888888889e-05,
+  "ka": 0.0004916666666666666,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 23230.46092184369
+  "central.C": 9176.753507014027
  },
  "reference_peaks": {
-  "C_central": 1.4317904921354447e-05
+  "central.C": 3.4574673315593016e-05
  },
- "stop_time": 126000.0,
+ "stop_time": 86400.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }
