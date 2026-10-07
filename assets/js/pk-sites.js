@@ -363,7 +363,12 @@
       h += '<tr' + (focus && focus !== d.slug ? ' class="dim"' : '') + '><th class="drug"><i style="background:' + COLORS[di] + '"></i>' + esc(d.name) + (showDDI ? partnerCodes(M, d.slug) : '') + '</th>';
       cols.forEach(function (c, k) {
         var cl = cellOf(M, d.slug, c[0], c[1]); var aff = showDDI ? affectedAt(M, d.slug, c[0], c[1]) : [];
-        h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '" tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '">' + perpDots(M, aff) +
+        // data-n: how many OTHER drugs of the set act on this drug here (0..3, 3 = 3 or more) —
+        // the CSS shades the evidence colour by it, light for none, dark for 3+. Only with the
+        // co-administration layer on; off, every cell keeps its tier's base colour.
+        var nPerp = {}; aff.forEach(function (a) { nPerp[a.perpetrator] = 1; });
+        var dn = showDDI && cl.w ? ' data-n="' + Math.min(3, Object.keys(nPerp).length) + '"' : '';
+        h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '"' + dn + ' tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '">' + perpDots(M, aff) +
           (function (hits) { return hits.length ? '<span class="pks-pgxm" title="' + esc(pgxTitle(M, hits)) + '">' + pgxGlyph(hits) + '</span>' : ''; })(pgxAt(M, d.slug, c[1], c[0])) + '</td>';
         if (k + 1 < cols.length && cols[k + 1][0] !== c[0]) h += '<td class="gap"></td>';
       });

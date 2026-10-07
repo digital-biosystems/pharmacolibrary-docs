@@ -239,9 +239,28 @@
     .pks-hm td { width: 30px; height: 30px; border-radius: 4px; background: var(--pks-ev0); }
     .pks-hm td.e1 { background: var(--pks-ev1); } .pks-hm td.e2 { background: var(--pks-ev2); }
     .pks-hm td.e3 { background: var(--pks-ev3); }
+    /* the evidence colour shaded by how many other drugs of the set act on this drug here
+       (data-n from pk-sites.js; absent when the co-administration layer is off): the hue
+       says which evidence, the shade how crowded the site is — 0 very light … 3+ dark */
+    .pks-hm td.e1 { --pks-c: var(--pks-ev1); } .pks-hm td.e2 { --pks-c: var(--pks-ev2); }
+    .pks-hm td.e3 { --pks-c: var(--pks-ev3); }
+    .pks-hm td[data-n="0"] { background: color-mix(in srgb, var(--pks-c) 38%, #fff); }
+    .pks-hm td[data-n="1"] { background: var(--pks-c); }
+    .pks-hm td[data-n="2"] { background: color-mix(in srgb, var(--pks-c) 72%, #1e293b); }
+    .pks-hm td[data-n="3"] { background: color-mix(in srgb, var(--pks-c) 48%, #1e293b); }
+    .pks-hm td[data-n="3"] .pks-pgxm { color: #fff; }
+    .pks-evkey .shade { display: inline-flex; gap: 2px; vertical-align: -2px; margin-right: 4px; }
+    .pks-evkey .shade b { width: 11px; height: 13px; border-radius: 2px; background: var(--pks-ev3); }
+    .pks-evkey .shade b:nth-child(1) { background: color-mix(in srgb, var(--pks-ev3) 38%, #fff); }
+    .pks-evkey .shade b:nth-child(3) { background: color-mix(in srgb, var(--pks-ev3) 72%, #1e293b); }
+    .pks-evkey .shade b:nth-child(4) { background: color-mix(in srgb, var(--pks-ev3) 48%, #1e293b); }
     .pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); position: relative; }
     /* perpetrator dots in an affected cell: filled = inhibits, hollow = induces, colour = the drug */
-    .pks-hm .pks-dots { position: absolute; right: 3px; bottom: 3px; display: flex; gap: 2px; pointer-events: none; }
+    /* a centred block three dots wide: the first row sits at the bottom of the square, a 4th
+       and further dots start a row above it (wrap-reverse), filling toward the middle */
+    .pks-hm .pks-dots { position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%);
+      width: 25px; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 2px;
+      pointer-events: none; }
     .pks-hm .pks-dots i { display: block; width: 7px; height: 7px; border-radius: 50%; box-sizing: border-box;
       border: 2px solid transparent; box-shadow: 0 0 0 1px #fff; }
     .pks-hm .pks-dots i.ind { background: #fff; }
