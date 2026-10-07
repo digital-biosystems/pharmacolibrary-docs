@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;Foster_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methadone — `Methadone_Foster2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -26,111 +27,74 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:54.533684+00:00) predates the upstream re-run (2026-10-07 03:32:59.081882+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `rac-methadone`, measured `(R)-methadone`.
+
 ## Citation
 Foster DJ et al., Population pharmacokinetics of (R)-, (S…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2004.02079.x](https://doi.org/10.1111/j.1365-2125.2004.02079.x)
 
 ## Model component
-<dbs-pgx drug="methadone" model-id="Methadone_Foster2004_reference" status="model_quarantined" stale="false" population="methadone maintenance patients" measured-compound="methadone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="methadone" model-id="Methadone_Foster2004_reference" status="needs_review" stale="true" population="methadone maintenance patients" measured-compound="(R)-methadone" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (l h -1 ) | `Q27` · CL/F | 0.19 | l h -1 | 5.277777777777778e-08 | [l] / [h] | not captured | exact (1.0) | tab_1:row1:col4 | — | not captured |
-| k 12 (h -1 ) | `Q301` · k12 | 0.16 | h -1 | 4.4444444444444447e-05 | [1] / [h] | not captured | llm (0.5) | tab_1:row3:col4 | — | not captured |
-| AUC t (mg.hr. ml -1 ) † | `Q88` · AUC | 0.026 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row12:col4 | — | not captured |
-| C last (ng.ml -1 ) † | `Q75` · Ct | 0.24 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row15:col4 | — | not captured |
+| k 12 (h -1 ) | `Q301` · k12 | 0.16 | h -1 | 4.4444444444444447e-05 | [1] / [h] | not captured | space_fold (0.95) | tab_1:row3:col4 | — | not captured |
+| AUC t (mg.hr. ml -1 ) † | `Q19` · AUCt | 0.026 | mg.hr. ml -1 | not captured | [[h] · [mg]] / [ml] | not captured | space_fold (0.95) | tab_1:row12:col4 | — | not captured |
+| C last (ng.ml -1 ) † | `Q75` · Ct | 0.24 | ng.ml -1 | not captured | [ng] / [ml] | not captured | llm (0.6) | tab_1:row15:col4 | — | not captured |
+| apparent volume of distribution for R-methadone | `Q76` · V/F | 496.0 | L | 0.496 | L | not captured | review_gapfill (0.7) | Packiasabapathy_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CLA | Q22 | not captured | tv_prefix |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V/F' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- covariate category for ktr from footnote/prose kept as documentation only (['tab_1:footnote'])
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'tlag' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 't1/2z' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'AUCSS' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'MRT' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'tmax' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'Cmax' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'Ctrough' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=methadone
+- column 'significance (p-value) ‡' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'F-test (P-value)' — extend the ontology if this is a real PK parameter (source ['Foster_2004_table_3:row7:col1', 'Foster_2004_table_3:row7:col2', 'Foster_2004_table_3:row7:col3'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 70 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 35 (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=(R)-methadone
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- bound model equation to Q22 (CL): CLA = TVCL*(BW/70)^0.75*(PNA/6.8)^θPNA
+- Q22 (CL) is equation-defined: value moved to equation-variable 'CLA'; equation kept verbatim
+- gap-filled Q76 (V/F) from Packiasabapathy_2020's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_1:row1:col1 = '8.5 (7.6, 9.5)'
 - unparsed cell tab_1:row1:col2 = '8.7 (7.9, 9.6)'
 - unparsed cell tab_1:row1:col3 = '8.3 (7.3, 9.5)'
-- unparsed cell tab_1:row2:col1 = '112 (107, 118)'
-- unparsed cell tab_1:row2:col2 = '145 (138, 152)'
-- unparsed cell tab_1:row2:col3 = '94 (89, 99)'
-- unparsed cell tab_1:row2:col4 = '&lt;0.0001'
 - unparsed cell tab_1:row3:col1 = '0.57 (0.52, 0.61)'
 - unparsed cell tab_1:row3:col2 = '0.54 (0.50, 0.58)'
 - unparsed cell tab_1:row3:col3 = '0.55 (0.51, 0.59)'
-- unparsed cell tab_1:row4:col1 = '0.20 (0.19, 0.21)'
-- unparsed cell tab_1:row4:col2 = '0.18 (0.16, 0.19)'
-- unparsed cell tab_1:row4:col3 = '0.21 (0.20, 0.23)'
-- unparsed cell tab_1:row4:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row5:col1 = '0.59 (0.54, 0.63)'
-- unparsed cell tab_1:row5:col2 = '0.55 (0.51, 0.60)'
-- unparsed cell tab_1:row5:col3 = '0.62 (0.57, 0.67)'
-- unparsed cell tab_1:row5:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row6:col1 = '0.45 (0.40, 0.49)'
-- unparsed cell tab_1:row6:col2 = '0.53 (0.49, 0.58)'
-- unparsed cell tab_1:row6:col3 = '0.39 (0.35, 0.43)'
-- unparsed cell tab_1:row6:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row7:col1 = '0.83 (0.78, 0.88)'
-- unparsed cell tab_1:row7:col2 = '0.90 (0.85, 0.95)'
-- unparsed cell tab_1:row7:col3 = '0.82 (0.78, 0.87)'
-- unparsed cell tab_1:row7:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row8:col1 = '39 (35, 43)'
-- unparsed cell tab_1:row8:col2 = '51 (45, 57)'
-- unparsed cell tab_1:row8:col3 = '31 (28, 35)'
-- unparsed cell tab_1:row8:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row9:col1 = '440 (398, 487)'
-- unparsed cell tab_1:row9:col2 = '597 (538, 663)'
-- unparsed cell tab_1:row9:col3 = '345 (312, 382)'
-- unparsed cell tab_1:row9:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row10:col1 = '321 (283, 364)'
-- unparsed cell tab_1:row10:col2 = '444 (390, 504)'
-- unparsed cell tab_1:row10:col3 = '246 (217, 279)'
-- unparsed cell tab_1:row10:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row11:col1 = '474 (428, 525)'
-- unparsed cell tab_1:row11:col2 = '637 (573, 707)'
-- unparsed cell tab_1:row11:col3 = '376 (339, 417)'
-- unparsed cell tab_1:row11:col4 = '&lt;0.0001'
 - unparsed cell tab_1:row12:col1 = '8.27 (7.39, 9.26)'
 - unparsed cell tab_1:row12:col2 = '4.02 (3.64, 4.44)'
 - unparsed cell tab_1:row12:col3 = '4.20 (3.69, 4.79)'
-- unparsed cell tab_1:row13:col1 = '52 (46, 58)'
-- unparsed cell tab_1:row13:col2 = '69 (61, 77)'
-- unparsed cell tab_1:row13:col3 = '41 (37, 47)'
-- unparsed cell tab_1:row13:col4 = '&lt;0.0001'
-- unparsed cell tab_1:row14:col1 = '494 (448, 544)'
-- unparsed cell tab_1:row14:col2 = '225 (206, 246)'
-- unparsed cell tab_1:row14:col3 = '268 (241, 298)'
-- unparsed cell tab_1:row14:col4 = '&lt;0.0001'
 - unparsed cell tab_1:row15:col1 = '269 (236, 308)'
 - unparsed cell tab_1:row15:col2 = '139 (124, 156)'
 - unparsed cell tab_1:row15:col3 = '128 (109, 150)'
-- unparsed cell tab_1:row16:col1 = '2.3 (2.2, 2.5)'
-- unparsed cell tab_1:row16:col2 = '2.5 (2.3, 2.7)'
-- unparsed cell tab_1:row16:col3 = '2.2 (2.1, 2.4)'
-- unparsed cell tab_1:row16:col4 = '&lt;0.0001'
+- companion parameter table 3 transcribed (3 record(s))
+- LLM selected parameter table(s) 2, 3
+- captured model equation CLA = TVCL*(BW/70)^0.75*(PNA/6.8)^θPNA
 
 ## Validation
 
@@ -161,16 +125,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row12:col4'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col4'] |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row3:col4'] |
-| C5_unit_missing_Q75 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row15:col4'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row12:col4'] |
+| C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row15:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Packiasabapathy_2020:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.19 L/h | not captured | not captured | ['tab_1:row1:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 496 L | not captured | not captured | ['Packiasabapathy_2020:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -231,4 +197,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:32 UTC</sub>

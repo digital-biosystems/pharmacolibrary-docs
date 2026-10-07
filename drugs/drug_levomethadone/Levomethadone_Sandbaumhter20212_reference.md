@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;levomethadone&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/&quot;},{&quot;label&quot;:&quot;Sandbaumh\u00fcter_2021_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levomethadone_Gittel2021v2_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levomethadone — `Levomethadone_Sandbaumhter20212_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.842). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.842). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -26,17 +27,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `racemic methadone`, measured `methadone enantiomers`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:27.748082+00:00) predates the upstream re-run (2026-10-07 03:30:26.163176+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `racemic methadone`, measured `l-methadone`.
 
 ## Citation
 Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electrophoresis (2021)
   ·  DOI: [10.1002/elps.202100115](https://doi.org/10.1002/elps.202100115)
 
 ## Model component
-<dbs-pgx drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="false" population="anesthetized Shetland ponies" measured-compound="methadone enantiomers" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="levomethadone" model-id="Levomethadone_Sandbaumhter20212_reference" status="rejected" stale="true" population="anesthetized Shetland ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 15 extracted.
+**Parameters:** 13 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,21 +48,20 @@ Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electropho
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| A (ng/mL) | `Q75` · Ct | 2746.1 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.5) | tab_0:row2:col1, tab_0:row2:col3 | — | not captured |
-| α (L/min) | `Q67` · λ1 | 0.887 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | tab_0:row4:col1, tab_0:row4:col3 | — | not captured |
-| β (L/min) | `Q68` · λ2 | 0.017 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | tab_0:row5:col1, tab_0:row5:col3 | — | not captured |
-| t 1/2 α (min) | `Q59` · t1/2α | 0.939 | min | 56.339999999999996 | [min] | not captured | llm (0.5) | tab_0:row6:col1, tab_0:row6:col3 | — | not captured |
-| t 1/2 β (min) | `Q60` · t1/2β | 50.72 | min | 3043.2 | [min] | not captured | llm (0.5) | tab_0:row7:col1, tab_0:row7:col3 | — | not captured |
-| k10 (L/min) | `Q47` · kel | 0.245 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | tab_0:row8:col1, tab_0:row8:col3 | — | not captured |
-| k12 (L/min) | `Q301` · k12 | 0.591 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | tab_0:row9:col1, tab_0:row9:col3 | — | not captured |
-| k21 (L/min) * | `Q302` · k21 | 0.067 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_0:row10:col1, tab_0:row10:col3 | — | not captured |
-| V2 (L/kg) * | `Q64` · V2 | 0.823 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_0:row11:col1, tab_0:row11:col3 | — | not captured |
-| V1 (L/kg) | `Q63` · V1 | 0.091 | L/kg | 0.00637 | [l] / [kg] | not captured | exact (1.0) | tab_0:row12:col1, tab_0:row12:col3 | — | not captured |
-| V ss (L/kg) * | `Q65` · Vss | 0.915 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row13:col1, tab_0:row13:col3 | — | not captured |
-| AUC (0→∞) (min ng/L) * | `Q88` · AUC | 13.32 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_0:row14:col1, tab_0:row14:col3 | — | not captured |
-| MRT (min) | `Q53` · MRT | 56.25 | min | 3375.0 | [min] | not captured | exact (1.0) | tab_0:row15:col1, tab_0:row15:col3 | — | not captured |
-| Cl B (mL/min/kg) * | `Q22` · CL | 17.63 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_0:row16:col1, tab_0:row16:col3 | — | not captured |
-| C 0 (ng/mL) | `Q86` · C0 | 2904.9 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.5) | tab_0:row17:col1, tab_0:row17:col3 | — | not captured |
+| A (ng/mL) | `Q900` · equation variable | 2936.1 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | elps7427-tbl-0001:row2:col1 | — | not captured |
+| α (L/min) | `Q67` · λ1 | 0.860 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | elps7427-tbl-0001:row4:col1 | — | not captured |
+| β (L/min) | `Q47` · kel | 0.014 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | elps7427-tbl-0001:row5:col1 | — | not captured |
+| t 1/2α (min) | `Q59` · t1/2α | 0.973 | min | 58.379999999999995 | [min] | not captured | space_fold (0.95) | elps7427-tbl-0001:row6:col1 | — | not captured |
+| t 1/2β (min) | `Q60` · t1/2β | 53.88 | min | 3232.8 | [min] | not captured | space_fold (0.95) | elps7427-tbl-0001:row7:col1 | — | not captured |
+| k12 (L/min) | `Q301` · k12 | 0.641 | L/min | not captured | [l] / [min] | not captured | exact (1.0) | elps7427-tbl-0001:row9:col1 | — | not captured |
+| k21 (L/min)* | `Q302` · k21 | 0.114 | unit | not captured | [unit] | not captured | llm_confirmed (0.6) | elps7427-tbl-0001:row10:col1 | — | not captured |
+| V2 (L/kg)* | `Q64` · V2 | 0.393 | unit | not captured | [unit] | not captured | llm_confirmed (0.6) | elps7427-tbl-0001:row11:col1 | — | not captured |
+| V1 (L/kg) | `Q63` · V1 | 0.078 | L/kg | 0.00546 | [l] / [kg] | not captured | exact (1.0) | elps7427-tbl-0001:row12:col1 | — | not captured |
+| Vss (L/kg)* | `Q65` · Vss | 0.471 | unit | not captured | [unit] | not captured | llm_confirmed (0.6) | elps7427-tbl-0001:row13:col1 | — | not captured |
+| AUC (0→∞) (min ng/L)* | `Q17` · AUC∞ | 33.42 | unit | not captured | [unit] | not captured | llm_corrected (0.6) | elps7427-tbl-0001:row14:col1 | — | not captured |
+| MRT (min) | `Q53` · MRT | 69.43 | min | 4165.8 | [min] | not captured | exact (1.0) | elps7427-tbl-0001:row15:col1 | — | not captured |
+| ClB (mL/min/kg) * | `Q23` · CLb | 7.44 | unit | not captured | [unit] | not captured | llm_confirmed (0.6) | elps7427-tbl-0001:row16:col1 | — | not captured |
+| C0 (ng/mL) | `Q86` · C0 | 3320.3 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | elps7427-tbl-0001:row17:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -69,50 +71,59 @@ Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electropho
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'B (ng/mL) *' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col1', 'tab_0:row3:col3'])
+- dropped duplicate Q900 ('B (ng/mL)*', value '384.2') — already have one for this compound
 - unit_dimension_mismatch: 'α (L/min)' → Q67 (unit '[length] ** 3 / [time]' vs ontology '[mass] / [time]') — route to review
-- unit_dimension_mismatch: 'β (L/min)' → Q68 (unit '[length] ** 3 / [time]' vs ontology '[mass] / [time]') — route to review
+- unit_dimension_mismatch: 'β (L/min)' → Q47 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
 - unit_dimension_mismatch: 'k10 (L/min)' → Q47 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q47 ('k10 (L/min)', value '0.119') — already have one for this compound
 - unit_dimension_mismatch: 'k12 (L/min)' → Q301 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'C 0 (ng/mL)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methadone enantiomers
+- unit_dimension_mismatch: 'k21 (L/min)*' → Q302 (unit '[luminosity] / [length] ** 2' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'V2 (L/kg)*' → Q64 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Vss (L/kg)*' → Q65 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUC (0→∞) (min ng/L)*' → Q17 (unit '[luminosity] / [length] ** 2' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'ClB (mL/min/kg) *' → Q23 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'C0 (ng/mL)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped value-less row: '* = p &lt; 0.05 between methadone enantiomers assessed with the Mann–Whitney Rank Sum test'
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=l-methadone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_0:row2:col2 = '2455.5 (1450.5-5263.8)'
-- unparsed cell tab_0:row2:col4 = '2403.5 (1275.5-4683.2)'
-- unparsed cell tab_0:row3:col2 = '379.7 (265.8-490.9)'
-- unparsed cell tab_0:row3:col4 = '162.9 (70.74-204.1)'
-- unparsed cell tab_0:row4:col2 = '0.873 (0.365-1.516)'
-- unparsed cell tab_0:row4:col4 = '0.921 (0.368-1.475)'
-- unparsed cell tab_0:row5:col2 = '0.014 (0.008-0.021)'
-- unparsed cell tab_0:row5:col4 = '0.016 (0.007-0.033)'
-- unparsed cell tab_0:row6:col2 = '0.794 (0.457-1.901)'
-- unparsed cell tab_0:row6:col4 = '0.753 (0.470-1.885)'
-- unparsed cell tab_0:row7:col2 = '51.41 (33.71-85.27)'
-- unparsed cell tab_0:row7:col4 = '43.53 (20.72-104.12)'
-- unparsed cell tab_0:row8:col2 = '0.080 (0.048-0.306)'
-- unparsed cell tab_0:row8:col4 = '0.186 (0.096-0.587)'
-- unparsed cell tab_0:row9:col2 = '0.660 (0.241-1.128)'
-- unparsed cell tab_0:row9:col4 = '0.627 (0.253-0.837)'
-- unparsed cell tab_0:row10:col2 = '0.102 (0.067-0.162)'
-- unparsed cell tab_0:row10:col4 = '0.071 (0.026-0.094)'
-- unparsed cell tab_0:row11:col2 = '0.407 (0.317-0.467)'
-- unparsed cell tab_0:row11:col4 = '0.676 (0.460-1.644)'
-- unparsed cell tab_0:row12:col2 = '0.076 (0.040-0.131)'
-- unparsed cell tab_0:row12:col4 = '0.086 (0.046-0.166)'
-- unparsed cell tab_0:row13:col2 = '0.467 (0.390-0.598)'
-- unparsed cell tab_0:row13:col4 = '0.751 (0.506-1.180)'
-- unparsed cell tab_0:row14:col2 = '34.94 (18.21-50.48)'
-- unparsed cell tab_0:row14:col4 = '13.87 (8.27-15.80)'
-- unparsed cell tab_0:row15:col2 = '65.96 (39.49-114.88)'
-- unparsed cell tab_0:row15:col4 = '48.35 (18.68-113.92)'
-- unparsed cell tab_0:row16:col2 = '6.42 (4.44-12.30)'
-- unparsed cell tab_0:row16:col4 = '16.15 (14.18-27.08)'
-- unparsed cell tab_0:row17:col2 = '2944.1 (1716.2-5566.8)'
-- unparsed cell tab_0:row17:col4 = '2605.8 (1346.2-4853.7)'
+- unparsed cell elps7427-tbl-0001:row2:col2 = '2455.5 (1450.5–5263.8)'
+- unparsed cell elps7427-tbl-0001:row2:col4 = '2403.5 (1275.5–4683.2)'
+- unparsed cell elps7427-tbl-0001:row3:col2 = '379.7 (265.8–490.9)'
+- unparsed cell elps7427-tbl-0001:row3:col4 = '162.9 (70.74–204.1)'
+- unparsed cell elps7427-tbl-0001:row4:col2 = '0.873 (0.365–1.516)'
+- unparsed cell elps7427-tbl-0001:row4:col4 = '0.921 (0.368–1.475)'
+- unparsed cell elps7427-tbl-0001:row5:col2 = '0.014 (0.008–0.021)'
+- unparsed cell elps7427-tbl-0001:row5:col4 = '0.016 (0.007–0.033)'
+- unparsed cell elps7427-tbl-0001:row6:col2 = '0.794 (0.457–1.901)'
+- unparsed cell elps7427-tbl-0001:row6:col4 = '0.753 (0.470–1.885)'
+- unparsed cell elps7427-tbl-0001:row7:col2 = '51.41 (33.71–85.27)'
+- unparsed cell elps7427-tbl-0001:row7:col4 = '43.53 (20.72–104.12)'
+- unparsed cell elps7427-tbl-0001:row8:col2 = '0.080 (0.048–0.306)'
+- unparsed cell elps7427-tbl-0001:row8:col4 = '0.186 (0.096–0.587)'
+- unparsed cell elps7427-tbl-0001:row9:col2 = '0.660 (0.241–1.128)'
+- unparsed cell elps7427-tbl-0001:row9:col4 = '0.627 (0.253–0.837)'
+- unparsed cell elps7427-tbl-0001:row10:col2 = '0.102 (0.067–0.162)'
+- unparsed cell elps7427-tbl-0001:row10:col4 = '0.071 (0.026–0.094)'
+- unparsed cell elps7427-tbl-0001:row11:col2 = '0.407 (0.317–0.467)'
+- unparsed cell elps7427-tbl-0001:row11:col4 = '0.676 (0.460–1.644)'
+- unparsed cell elps7427-tbl-0001:row12:col2 = '0.076 (0.040–0.131)'
+- unparsed cell elps7427-tbl-0001:row12:col4 = '0.086 (0.046–0.166)'
+- unparsed cell elps7427-tbl-0001:row13:col2 = '0.467 (0.390–0.598)'
+- unparsed cell elps7427-tbl-0001:row13:col4 = '0.751 (0.506–1.180)'
+- unparsed cell elps7427-tbl-0001:row14:col2 = '34.94 (18.21–50.48)'
+- unparsed cell elps7427-tbl-0001:row14:col4 = '13.87 (8.27–15.80)'
+- unparsed cell elps7427-tbl-0001:row15:col2 = '65.96 (39.49–114.88)'
+- unparsed cell elps7427-tbl-0001:row15:col4 = '48.35 (18.68–113.92)'
+- unparsed cell elps7427-tbl-0001:row16:col2 = '6.42 (4.44–12.30)'
+- unparsed cell elps7427-tbl-0001:row16:col4 = '16.15 (14.18–27.08)'
+- unparsed cell elps7427-tbl-0001:row17:col2 = '2944.1 (1716.2–5566.8)'
+- unparsed cell elps7427-tbl-0001:row17:col4 = '2605.8 (1346.2–4853.7)'
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -143,27 +154,25 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 15 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q301 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['tab_0:row9:col1', 'tab_0:row9:col3'] |
-| C5_dimension_Q47 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['tab_0:row8:col1', 'tab_0:row8:col3'] |
-| C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['tab_0:row15:col1', 'tab_0:row15:col3'] |
-| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['tab_0:row6:col1', 'tab_0:row6:col3'] |
-| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row12:col1', 'tab_0:row12:col3'] |
-| C5_dimension_Q67 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col3'] |
-| C5_dimension_Q68 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col3'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row2:col1', 'tab_0:row2:col3'] |
-| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/mL | not captured | not captured | ['tab_0:row17:col1', 'tab_0:row17:col3'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row16:col1', 'tab_0:row16:col3'] |
-| C5_unit_missing_Q302 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_0:row10:col1', 'tab_0:row10:col3'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row11:col1', 'tab_0:row11:col3'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row13:col1', 'tab_0:row13:col3'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row14:col1', 'tab_0:row14:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.63 | not captured | not captured | ['tab_0:row16:col1', 'tab_0:row16:col3'] |
+| C5_dimension_Q17 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['elps7427-tbl-0001:row14:col1'] |
+| C5_dimension_Q23 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['elps7427-tbl-0001:row16:col1'] |
+| C5_dimension_Q301 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['elps7427-tbl-0001:row9:col1'] |
+| C5_dimension_Q302 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['elps7427-tbl-0001:row10:col1'] |
+| C5_dimension_Q47 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['elps7427-tbl-0001:row5:col1'] |
+| C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['elps7427-tbl-0001:row15:col1'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['elps7427-tbl-0001:row6:col1'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['elps7427-tbl-0001:row7:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['elps7427-tbl-0001:row12:col1'] |
+| C5_dimension_Q64 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['elps7427-tbl-0001:row11:col1'] |
+| C5_dimension_Q65 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['elps7427-tbl-0001:row13:col1'] |
+| C5_dimension_Q67 | fail | [length] ** 3 / [time] | L/min | not captured | not captured | ['elps7427-tbl-0001:row4:col1'] |
+| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/mL | not captured | not captured | ['elps7427-tbl-0001:row17:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.44 | not captured | not captured | ['elps7427-tbl-0001:row16:col1'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 6.37 L | not captured | not captured | ['tab_0:row12:col1', 'tab_0:row12:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.46 L | not captured | not captured | ['elps7427-tbl-0001:row12:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -188,4 +197,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:30 UTC</sub>

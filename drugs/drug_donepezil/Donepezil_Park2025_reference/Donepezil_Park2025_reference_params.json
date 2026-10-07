@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Donepezil_Park2025_reference",
+ "molar_masses": {
+  "central.C": 0.3795
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  70.0,
+  140.0,
+  280.0
+ ],
+ "parameters": {
+  "Cl": 2.6583333333333334e-06,
+  "F": 0.9,
+  "MM": 0.3795,
+  "Tlag": 1076400.0,
+  "VdPerKg": 0.0008314285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "k12": 0.0004772814051164567,
+  "k21": 1.3550135501355015e-05,
+  "ka": 4.805555555555556e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2372460.000000016
+ },
+ "reference_peaks": {
+  "central.C": 6.108796091798451e-06
+ },
+ "stop_time": 6652800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

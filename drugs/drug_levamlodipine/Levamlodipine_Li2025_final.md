@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;levamlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamlodipine_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levamlodipine_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamlodipine_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levamlodipine_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levamlodipine — `Levamlodipine_Li2025_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record lacks explicit estimates for bioavailability and lag time, relying instead on placeholder values that affect the simulated profile. A second reader disagreed on the primary analyte identity and extracted different values for clearance (58.71 L/h) and volume (3410 L) than the recorded 59.61 L/h and 3572 L. Extracted — levamlodipine: kabs 0.79 1/h, V 3.57e+03 L, CL 59.6 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has levamlodipine besylate, the second reading levamlodipine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has levamlodipine besylate, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 18:27:10.302003+00:00) predates the upstream re-run (2026-10-07 03:26:10.784690+00:00). Current validate status: `extracted`.
 
 ## Citation
 Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762)
 
 ## Model component
-<dbs-pgx drug="levamlodipine" model-id="Levamlodipine_Li2025_final" status="needs_review" stale="false" population="smoking patients" measured-compound="levamlodipine besylate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="levamlodipine" model-id="Levamlodipine_Li2025_final" status="extracted" stale="true" population="smoking patients" measured-compound="levamlodipine besylate" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,8 +40,6 @@ Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, developmen
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | tvKa | `Q49` · kabs | 0.79 | 1/h | 0.00021944444444444444 | 1/h | not captured | tv_prefix (0.95) | t0006:row2:col1, t0006:row2:col3 | — | not captured |
@@ -95,15 +95,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[tvcl].value` | 59.61 | 58.71 | mismatch |
 | `gpt-oss:120b` | `parameters[tvv].value` | 3572 | 3410 | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | levamlodipine besylate | levamlodipine | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | levamlodipine besylate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | levamlodipine besylate | unknown | mismatch |
 
 </details>
 
@@ -158,8 +159,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levamlodipine/Levamlodipine_Li2025_final/Levamlodipine_Li2025_final_modelica.zip" download>Levamlodipine_Li2025_final_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levamlodipine/Levamlodipine_Li2025_final/Levamlodipine_Li2025_final_modelica.zip" download>Levamlodipine_Li2025_final_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levamlodipine/Levamlodipine_Li2025_final/Levamlodipine_Li2025_final_fmi.zip" download>Levamlodipine_Li2025_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levamlodipine/Levamlodipine_Li2025_final/Levamlodipine_Li2025_final_matlab.zip" download>Levamlodipine_Li2025_final_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_levamlodipine/Levamlodipine_Li2025_final/Levamlodipine_Li2025_final_matlab_simbio.zip" download>Levamlodipine_Li2025_final_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levamlodipine/Levamlodipine_Li2025_final/Levamlodipine_Li2025_final_sbml.zip" download>Levamlodipine_Li2025_final_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -180,4 +181,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 08:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:26 UTC</sub>

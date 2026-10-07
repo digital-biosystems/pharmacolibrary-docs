@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Nintedanib_Schmid2018v2_reference",
+ "molar_masses": {
+  "central.C": 0.5396248
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  150.0,
+  200.0,
+  250.0
+ ],
+ "parameters": {
+  "Cl": 0.0002491666666666667,
+  "F": 1.0,
+  "MM": 0.5396248,
+  "Tlag": 0.0,
+  "VdPerKg": 0.006642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00015,
+  "ka": 1.0444444444444445e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7791.583166332665
+ },
+ "reference_peaks": {
+  "central.C": 5.813448872277268e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

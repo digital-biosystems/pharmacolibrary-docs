@@ -26,25 +26,13 @@ Cilnidipine is a dihydropyridine calcium channel blocker with mainly vascular ef
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 07:46 | 19:52 | 0/1/0 | 2/0/0 | 0/0/0 | 214,090/17,993 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/4 | 3/0 | 0 |
+| 2026-10-07 02:58 | 1:18 | 0/1/0 | 0/0/0 | 0/0/0 | 47,898/932 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/4 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Suryawanshi_2026_reference](drugs/drug_cilnidipine/Cilnidipine_Suryawanshi2026_reference.md) | — | 1-compartment (no model) | 5 | Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026) | [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_CFU](drugs/drug_cilnidipine/pd_Kim_2025_CFU.md) | intracellular Brucella CFU recovered from THP-1 macrophages ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, bioRxiv : the preprint serv… (2025) | [10.1101/2025.05.10.653276](https://doi.org/10.1101/2025.05.10.653276) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_Ca](drugs/drug_cilnidipine/pd_Kim_2025_Ca.md) | THP-1 macrophage calcium content ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, bioRxiv : the preprint serv… (2025) | [10.1101/2025.05.10.653276](https://doi.org/10.1101/2025.05.10.653276) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_Mn](drugs/drug_cilnidipine/pd_Kim_2025_Mn.md) | THP-1 macrophage manganese content ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, bioRxiv : the preprint serv… (2025) | [10.1101/2025.05.10.653276](https://doi.org/10.1101/2025.05.10.653276) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_percent_of_untreated_control](drugs/drug_cilnidipine/pd_Kim_2025_percent_of_untreated_control.md) | intracellular B. ovis growth (luminescence) ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, bioRxiv : the preprint serv… (2025) | [10.1101/2025.05.10.653276](https://doi.org/10.1101/2025.05.10.653276) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_2_CFU](drugs/drug_cilnidipine/pd_Kim_2025_2_CFU.md) | intracellular Brucella CFU ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, PLoS genetics (2025) | [10.1371/journal.pgen.1011795](https://doi.org/10.1371/journal.pgen.1011795) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_2_normalized_OD](drugs/drug_cilnidipine/pd_Kim_2025_2_normalized_OD.md) | axenic B. ovis growth (optical density) ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, PLoS genetics (2025) | [10.1371/journal.pgen.1011795](https://doi.org/10.1371/journal.pgen.1011795) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">sheep</span> | [Kim_2025_2_normalized_luminescence](drugs/drug_cilnidipine/pd_Kim_2025_2_normalized_luminescence.md) | intracellular B. ovis growth (luminescence) ← cilnidipine · direct sigmoid Emax (Hill) effect | — | Kim T et al., Reversion of a RND transporter pseudoge…, PLoS genetics (2025) | [10.1371/journal.pgen.1011795](https://doi.org/10.1371/journal.pgen.1011795) |
 
 ## ADME sites
 
@@ -72,23 +60,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 29 matched, 29 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 2
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Anand_2024.pdf` | Anand K et al., Evaluation of cilnidipine-loaded self-m…, Annales pharmaceutiques fra… (2024) | popPK | 8 | [10.1016/j.pharma.2024.07.007](https://doi.org/10.1016/j.pharma.2024.07.007) | [39089366](https://pubmed.ncbi.nlm.nih.gov/39089366) | The study reports quantitative PK parameters (Cmax, Tmax) for cilnidipine in rats, but lacks clearance, volume, or half-life values in the provided text. |
-| `Suryawanshi_2026.pdf` | Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026) | popPK | 8 | [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010) | [42217543](https://pubmed.ncbi.nlm.nih.gov/42217543) | The study reports quantitative PK parameters (Cmax, AUC, MRT, Tmax) for cilnidipine in rats, but specific compartmental parameters like clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Krosuri_2026.pdf` | Krosuri P et al., Pharmacokinetic Studies and Toxicity As…, Cardiovascular & hematologi… (2026) | popPK | 8 | [10.2174/011871529X435644260126080638](https://doi.org/10.2174/011871529X435644260126080638) | [41941298](https://pubmed.ncbi.nlm.nih.gov/41941298) | The study reports non-compartmental PK parameters (t1/2, Tmax, relative bioavailability) for a cilnidipine analogue in rabbits, but specific values for the parent drug cilnidipine are not explicitly listed in the provided text. |
 | `Tres_2019.pdf` | Tres F et al., The Effect of Promiscuous Aggregation o…, Pharmaceutical research (2019) | pd | 4 | [10.1007/s11095-019-2713-5](https://doi.org/10.1007/s11095-019-2713-5) | [31654151](https://www.ncbi.nlm.nih.gov/pubmed/31654151) | metadata signals extractable PD data (IC50) |
 | `Uneyama_1999.pdf` | Uneyama H et al., Selectivity of dihydropyridines for car…, European journal of pharmac… (1999) | pd | 4 | [10.1016/s0014-2999(99)00237-x](https://doi.org/10.1016/s0014-2999(99)00237-x) | [10408255](https://www.ncbi.nlm.nih.gov/pubmed/10408255) | metadata signals extractable PD data (IC50) |
 | `Kumar_2025.pdf` | Kumar M et al., Mechanistic investigation of methadone,…, Inflammopharmacology (2025) | pgx | 7 | [10.1007/s10787-025-01845-4](https://doi.org/10.1007/s10787-025-01845-4) | [40622465](https://www.ncbi.nlm.nih.gov/pubmed/40622465) | metadata signals extractable PGX data (SLC6A3, PK/PD-context) |
 
-<sub>queue written 2026-09-29T07:38:29.242206+00:00</sub>
+<sub>queue written 2026-10-07T02:57:35.760480+00:00</sub>
 
 ## Screened and excluded
 
@@ -104,10 +91,10 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Diwan_2020 | not_relevant | 3 | 2 | The paper reports qualitative pharmacodynamic outcomes (max % decrease in blood pressure and duration) and PK parameters, but does not provide a concentration-effect curve, Emax/EC50, or any numeric PD model parameters. |
 | popPK | Diwan_2021 | irrelevant | 2 | 0 | The study reports only bioavailability (Fabs) and pharmacodynamic data, lacking specific quantitative PK parameters like clearance, volume, or half-life. |
 | PD | Diwan_2021 | not_relevant | 2 | 1 | The paper reports a comparative pharmacodynamic effect (percent reduction in SBP) between two formulations but does not provide a concentration-effect or dose-response curve, nor does it derive numeric PD parameters like Emax or EC50. |
-| popPK | Dorairaj_2026 | irrelevant | 0 | 0 | The study is a clinical trial comparing blood pressure efficacy of calcium channel blockers and does not report any pharmacokinetic parameters for cilnidipine. |
+| popPK | Dorairaj_2026 | irrelevant | 0 | 0 | The study is a clinical trial comparing blood pressure efficacy of three calcium channel blockers and does not report any pharmacokinetic parameters for cilnidipine. |
 | PD | Dorairaj_2026 | not_relevant | 0 | 0 | The paper is a clinical comparison of blood pressure outcomes across three drugs without any pharmacokinetic data, concentration-effect modeling, or derivation of PD parameters like Emax or EC50. |
 | popPK | Fujii_1997 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of calcium channel inhibition and does not report any pharmacokinetic parameters. |
-| popPK | Hao_2022 | irrelevant | 0 | 0 | The paper describes a deep learning framework for drug toxicity prediction and does not contain any pharmacokinetic data or parameters for cilnidipine. |
+| popPK | Hao_2022 | irrelevant | 0 | 0 | The paper describes a deep learning framework for drug toxicity prediction and does not report any pharmacokinetic parameters for cilnidipine. |
 | PD | Hao_2022 | not_relevant | 0 | 0 | The paper describes a deep learning framework for drug toxicity prediction and does not report any pharmacodynamic or exposure-response data for cilnidipine. |
 | popPK | Hermida_2004 | irrelevant | 1 | 0 | The paper is a review of chronotherapy that mentions cilnidipine only in the context of blood pressure effects, without reporting any quantitative pharmacokinetic parameters. |
 | PD | Hermida_2004 | not_relevant | 1 | 0 | The text is a review summarizing chronotherapy concepts and mentions qualitative dose-response dependencies for cilnidipine and other drugs, but it does not provide any numeric PD parameters, concentration-effect curves, or specific quantitative data for cilnidipine. |
@@ -115,7 +102,6 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Ikemura_2019 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (IC50, Ki) for CYP2J2, not pharmacodynamic exposure-response or dose-response relationships for the drug's clinical effect. |
 | popPK | Kim_2025 | irrelevant | 0 | 0 | The paper is a microbiology study investigating the mechanism of cilnidipine resistance in Brucella bacteria, not a pharmacokinetic study reporting disposition parameters for the drug. |
 | popPK | Kim_2025_2 | irrelevant | 0 | 0 | The paper is a microbiology study investigating the genetic basis of Brucella resistance to cilnidipine, not a pharmacokinetic study reporting disposition parameters for the drug. |
-| popPK | Krosuri_2026 | irrelevant | 2 | 1 | The study focuses on analogues of cilnidipine rather than the parent drug, and only reports non-compartmental parameters (t1/2, Tmax) for the analogue without clearance or volume values for cilnidipine itself. |
 | PGx | Kumar_2025 | not_relevant | 0 | 0 | The paper is a network pharmacology study identifying potential molecular targets and pathways for cilnidipine in TBI, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Lee_2014 | irrelevant | 2 | 0 | The study reports only non-compartmental summary statistics (Cmax, AUC) for a drug interaction assessment, lacking the specific compartmental or population PK parameters (CL, V, Q, ka) required for extraction. |
 | PD | Lee_2014 | not_relevant | 2 | 1 | The study reports qualitative additive blood pressure effects and PK parameters (AUC, Cmax) but does not provide numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve for cilnidipine. |
@@ -131,7 +117,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Shimizu_2021 | not_relevant | 3 | 2 | The study reports an epidemiological dose-response association (odds ratios for rupture risk by dose) rather than a pharmacodynamic exposure-response relationship with numeric PD parameters like Emax or EC50. |
 | PD | Suryawanshi_2026 | not_relevant | 2 | 1 | The study reports comparative PK and PD efficacy (blood pressure reduction) between two formulations but does not provide a concentration-effect model, Emax/EC50 parameters, or a dose-response curve. |
 | popPK | Takahara_2018 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel blocker selectivity on isolated tissues, reporting no pharmacokinetic parameters for cilnidipine. |
-| popPK | Tomiyama_2001 | irrelevant | 0 | 0 | The study is a clinical pharmacodynamic trial comparing platelet activation and sympathetic markers, reporting no pharmacokinetic parameters for cilnidipine. |
+| popPK | Tomiyama_2001 | irrelevant | 0 | 0 | The study is a clinical pharmacodynamic trial comparing platelet activation and sympathetic markers, not a pharmacokinetic study reporting disposition parameters for cilnidipine. |
 | PD | Tomiyama_2001 | not_relevant | 2 | 1 | The study compares clinical effects (platelet activation, catecholamines) between two drugs but does not report drug concentrations or fit a concentration-effect/dose-response model to derive PD parameters like Emax or EC50. |
 | popPK | Tres_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug aggregation effects on enzyme inhibition, not a pharmacokinetic study reporting disposition parameters for cilnidipine. |
 | PD | Tres_2019 | not_relevant | 3 | 2 | The paper reports in vitro enzyme inhibition (IC50) due to promiscuous aggregation, which is a physicochemical artifact and not a pharmacodynamic exposure-response relationship for the drug's therapeutic effect. |

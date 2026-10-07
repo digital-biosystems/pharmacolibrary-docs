@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 0.33 mg parenteral (M05BX04)",
+ "model_id": "Denosumab_Sutjandra2011_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.477563131313132e-09,
+  "F": 1.0,
+  "VdPerKg": 3.772727272727273e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.3e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662021
+ },
+ "reference_peaks": {
+  "central.C": 0.00012486507071203157
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Donepezil_Khwarg2024_final_model",
+ "molar_masses": {
+  "central.C": 0.3795
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  70.0,
+  140.0,
+  280.0
+ ],
+ "parameters": {
+  "Cl": 3.986111111111111e-06,
+  "F": 0.9,
+  "MM": 0.3795,
+  "Tlag": 3351.6000000000004,
+  "VdPerKg": 0.0005819571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 5.833333333333333e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16773.547094188376
+ },
+ "reference_peaks": {
+  "central.C": 6.137018647805846e-05
+ },
+ "stop_time": 90000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

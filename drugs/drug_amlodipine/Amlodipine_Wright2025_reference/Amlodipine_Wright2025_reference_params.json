@@ -1,0 +1,31 @@
+{
+ "dose_source": "library default",
+ "model_id": "Amlodipine_Wright2025_reference",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.000371388888888889,
+  "F": 1.0,
+  "MM": 0.40887599999999996,
+  "VdPerKg": 0.24549999999999997,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 3.383118352568455e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662155
+ },
+ "reference_peaks": {
+  "central.C": 5.781494051387289e-07
+ },
+ "stop_time": 162000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;nifedipine&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/&quot;},{&quot;label&quot;:&quot;Chung_1987 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Li2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Fu2022_reference&quot;,&quot;label&quot;:&quot;Fu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Fu2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nifedipine — `Nifedipine_Chung1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nifedipine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nifedipine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-29 06:44:34.336300+00:00) predates the upstream re-run (2026-10-07 03:43:53.078763+00:00). Current validate status: `rejected`.
 
 ## Citation
 Chung M et al., Clinical pharmacokinetics of nifedipine…, The American journal of med… (1987)
   ·  DOI: [10.1016/0002-9343(87)90630-9](https://doi.org/10.1016/0002-9343(87)90630-9)
 
 ## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_Chung1987_reference" status="rejected" stale="false" population="adults" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nifedipine" model-id="Nifedipine_Chung1987_reference" status="rejected" stale="true" population="adults" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -70,14 +72,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 68 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of the gits dosage form]` | not captured | 65 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability of the gits dosage form (relative to the capsule) after a single dose]` | not captured | 65 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral bioavailability]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral bioavailability]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | not captured | not captured | only_one_extracted |
@@ -126,4 +129,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 06:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 03:43 UTC</sub>

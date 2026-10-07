@@ -18,17 +18,11 @@ Barnidipine is a dihydropyridine calcium channel blocker, a drug class mainly af
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 06:55 | 8:07 | 0/0/0 | 1/0/0 | 0/0/0 | 23,001/1,694 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 3/0 | 1/0 | 0 |
+| 2026-10-07 02:14 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 21,565/553 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 3/0 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ikemura_2019_CYP2J2_activity_luciferin_2J2_4F12_O_dealkylation](drugs/drug_barnidipine/pd_Ikemura_2019_CYP2J2_activity_luciferin_2J2_4F12_O_dealkylati.md) | CYP2J2 activity (luciferin-2J2/4F12 O-dealkylation) ← manidipine · inhibition effect | — | Ikemura N et al., Inhibitory effects of antihypertensive…, Chemico-biological interact… (2019) | [10.1016/j.cbi.2019.04.005](https://doi.org/10.1016/j.cbi.2019.04.005) |
 
 ## ADME sites
 
@@ -67,7 +61,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Katoh_2000.pdf` | Katoh M et al., Inhibitory potencies of 1,4-dihydropyri…, Pharmaceutical research (2000) | pd | 4 | [10.1023/a:1007568811691](https://doi.org/10.1023/a:1007568811691) | [11145223](https://www.ncbi.nlm.nih.gov/pubmed/11145223) | metadata signals extractable PD data (IC50) |
 | `Teramura_1997.pdf` | Teramura T et al., Examination of metabolic pathways and i…, Xenobiotica; the fate of fo… (1997) | pd | 4 | [10.1080/004982597240064](https://doi.org/10.1080/004982597240064) | [9381730](https://www.ncbi.nlm.nih.gov/pubmed/9381730) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T06:54:47.047418+00:00</sub>
+<sub>queue written 2026-10-07T02:14:21.389651+00:00</sub>
 
 ## Screened and excluded
 
@@ -81,11 +75,11 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Katoh_2000 | not_relevant | 0 | 0 | The paper reports in vitro inhibitory potencies of barnidipine on P-gp transport but does not investigate the effect of any gene variant or genotype on these parameters. |
 | PGx | Katoh_2000_2 | not_relevant | 0 | 0 | The paper investigates in vitro CYP inhibition by barnidipine to predict drug-drug interactions, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Nakayama_1989 | irrelevant | 0 | 0 | The study focuses on the pharmacological actions of mepirodipine (YM-09730-5) in pig coronary arteries and does not involve barnidipine or report pharmacokinetic parameters. |
-| popPK | Shimada_1996 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding barnidipine pharmacokinetics. |
+| popPK | Shimada_1996 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics (effect compartment, EC50, binding affinity) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for barnidipine. |
 | PD | Shimada_1996 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain the scientific content of the paper, nor any pharmacodynamic data for barnidipine. |
 | popPK | Teramura_1997 | irrelevant | 0 | 0 | no_text gate: only 165 chars of text extracted (&lt; 400) |
 | PD | Teramura_1997 | not_relevant | 0 | 0 | The paper focuses on metabolic pathways and CYP450 isozyme identification, containing no pharmacodynamic or exposure-response analysis. |
-| popPK | Wegener_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of calcium channel block in rat cardiomyocytes and does not report pharmacokinetic disposition parameters. |
+| popPK | Wegener_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of calcium channel block in rat cardiomyocytes and does not report pharmacokinetic disposition parameters. |
 | popPK | Wegener_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of pharmacodynamic effects (vascular smooth muscle relaxation and calcium channel currents) and does not report any pharmacokinetic parameters. |
 | popPK | Yamada_1992 | irrelevant | 0 | 0 | The study investigates mepirodipine, not barnidipine, and focuses on receptor occupancy rather than pharmacokinetic parameters. |
 | popPK | Yao_2000 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding barnidipine pharmacokinetics. |

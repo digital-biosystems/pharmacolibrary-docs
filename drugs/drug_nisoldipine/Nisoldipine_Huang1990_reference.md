@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nisoldipine&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/&quot;},{&quot;label&quot;:&quot;Huang_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Herington_2015_AUC&quot;,&quot;label&quot;:&quot;Herington_2015 \u00b7 AUC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/pd_Herington_2015_AUC.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Herington_2015_Ca2_RFU&quot;,&quot;label&quot;:&quot;Herington_2015 \u00b7 Ca2+ (RFU)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/pd_Herington_2015_Ca2_RFU.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Herington_2015_contraction_amplitude&quot;,&quot;label&quot;:&quot;Herington_2015 \u00b7 contraction amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/pd_Herington_2015_contraction_amplitude.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Herington_2015_contraction_frequency&quot;,&quot;label&quot;:&quot;Herington_2015 \u00b7 contraction frequency&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nisoldipine/pd_Herington_2015_contraction_frequency.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nisoldipine — `Nisoldipine_Huang1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,15 +22,17 @@
 
 The record lists total clearance as 9 min.kg, which is not a valid pharmacokinetic unit. This dimensional error triggered a rejection for a structural parameter mismatch. Additionally, the record was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — m-nisoldipine: t1/2α 4.3 min, t1/2β 63.6 min, V 0.805 L/kg, CL 9 min.kg, t1/2z 84.8 min, tmax 31.2 min, Cmax 50 micrograms/L.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has m-nisoldipine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-29 18:27:18.773957+00:00) predates the upstream re-run (2026-10-07 04:45:58.110721+00:00). Current validate status: `rejected`.
 
 ## Citation
 Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue bao = A… (1990)
 
 ## Model component
-<dbs-pgx drug="nisoldipine" model-id="Nisoldipine_Huang1990_reference" status="rejected" stale="false" population="rabbits and rats" measured-compound="m-nisoldipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nisoldipine" model-id="Nisoldipine_Huang1990_reference" status="rejected" stale="true" population="rabbits and rats" measured-compound="m-nisoldipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -75,14 +76,35 @@ Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.111 (2/18 fields) | 16 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | 9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | not captured | 49.97 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | 49.97 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 alpha]` | not captured | 4.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 alpha]` | 4.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 beta]` | not captured | 63.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 beta]` | 63.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2]` | not captured | 84.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2]` | 84.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | not captured | 31.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | 31.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd]` | not captured | 0.805 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd]` | 0.805 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | m-nisoldipine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | m-nisoldipine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -131,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 11:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:45 UTC</sub>

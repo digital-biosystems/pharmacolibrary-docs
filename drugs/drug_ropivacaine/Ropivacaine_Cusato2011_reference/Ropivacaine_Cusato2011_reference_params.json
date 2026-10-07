@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Ropivacaine_Cusato2011_reference",
+ "molar_masses": {
+  "central.C": 0.2744011
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4805555555555557e-06,
+  "F": 0.9,
+  "MM": 0.2744011,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0013164285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.008888888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1183.8201561637534
+ },
+ "reference_peaks": {
+  "central.C": 0.0009638412875669735
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}
