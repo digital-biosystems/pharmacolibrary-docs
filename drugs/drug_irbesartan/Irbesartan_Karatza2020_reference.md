@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;irbesartan&quot;,&quot;href&quot;:&quot;drugs/drug_irbesartan/&quot;},{&quot;label&quot;:&quot;Karatza_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Irbesartan_Carlucci2013_reference&quot;,&quot;label&quot;:&quot;Carlucci_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Irbesartan_Karatza2020_reference&quot;,&quot;label&quot;:&quot;Karatza_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_irbesartan/Irbesartan_Karatza2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Irbesartan_Carlucci2013_reference&quot;,&quot;label&quot;:&quot;Carlucci_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Irbesartan_Karatza2020_reference&quot;,&quot;label&quot;:&quot;Karatza_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_irbesartan/Irbesartan_Karatza2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # irbesartan — `Irbesartan_Karatza2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,14 +21,18 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has irbesartan, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-30 19:56:30.296687+00:00) predates the upstream re-run (2026-10-07 07:47:48.013481+00:00). Current validate status: `extracted`.
 
 ## Citation
 Karatza E et al., Delay differential equations for the de…, European journal of pharmac… (2020)
   ·  DOI: [10.1016/j.ejps.2020.105498](https://doi.org/10.1016/j.ejps.2020.105498)
 
 ## Model component
-<dbs-pgx drug="irbesartan" model-id="Irbesartan_Karatza2020_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="irbesartan" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="irbesartan" model-id="Irbesartan_Karatza2020_reference" status="extracted" stale="true" population="unknown" measured-compound="irbesartan" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.
@@ -39,7 +43,6 @@ Karatza E et al., Delay differential equations for the de…, European journal o
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka | `Q49` · kabs | 0.304 | h-1 | 8.444444444444444e-05 | [1] / [h] | not captured | exact (1.0) | Karatza_2020:abstract | — | not captured |
-| T | `Q900` · equation variable | 1.68 | h | not captured | [h] | not captured | llm (0.6) | Karatza_2020:abstract | — | not captured |
 | V1/F | `Q290` · V1/F | 13.8 | L | 0.013800000000000002 | [l] | not captured | exact (1.0) | Karatza_2020:abstract | — | not captured |
 | V2/F | `Q82` · V2/F | 85.8 | L | 0.0858 | [l] | not captured | exact (1.0) | Karatza_2020:abstract | — | not captured |
 | CL/F | `Q27` · CL/F | 13.5 | L/h | 3.75e-06 | [l] / [h] | not captured | exact (1.0) | Karatza_2020:abstract | — | not captured |
@@ -57,6 +60,7 @@ Karatza E et al., Delay differential equations for the de…, European journal o
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'T' — extend the ontology if this is a real PK parameter (source ['Karatza_2020:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=irbesartan
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -65,6 +69,38 @@ Karatza E et al., Delay differential equations for the de…, European journal o
 - no GROBID TEI available — transcribed from abstract in Karatza_2020_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl/f]` | 13.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 13.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 0.304 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.304 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/f]` | 17.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/f]` | not captured | 17.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f]` | 13.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1/f]` | not captured | 13.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f]` | 85.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2/f]` | not captured | 85.8 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | irbesartan | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | irbesartan | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -115,8 +151,8 @@ Karatza E et al., Delay differential equations for the de…, European journal o
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_irbesartan/Irbesartan_Karatza2020_reference/Irbesartan_Karatza2020_reference_modelica.zip" download>Irbesartan_Karatza2020_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_irbesartan/Irbesartan_Karatza2020_reference/Irbesartan_Karatza2020_reference_modelica.zip" download>Irbesartan_Karatza2020_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_irbesartan/Irbesartan_Karatza2020_reference/Irbesartan_Karatza2020_reference_fmi.zip" download>Irbesartan_Karatza2020_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Karatza2020_reference/Irbesartan_Karatza2020_reference_matlab.zip" download>Irbesartan_Karatza2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Karatza2020_reference/Irbesartan_Karatza2020_reference_matlab_simbio.zip" download>Irbesartan_Karatza2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Karatza2020_reference/Irbesartan_Karatza2020_reference_sbml.zip" download>Irbesartan_Karatza2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -137,4 +173,4 @@ Karatza E et al., Delay differential equations for the de…, European journal o
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 17:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:47 UTC</sub>

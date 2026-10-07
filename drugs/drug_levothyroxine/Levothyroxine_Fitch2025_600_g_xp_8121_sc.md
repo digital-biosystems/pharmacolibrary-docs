@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Fitch_2025 \u00b7 600_g_xp_8121_sc&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Levothyroxine — `Levothyroxine_Fitch2025_600_g_xp_8121_sc`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:27:19.646319+00:00) predates the upstream re-run (2026-10-07 09:41:09.278860+00:00). Current validate status: `rejected`.
+
 ## Citation
 Fitch R et al., Phase 1 Study Evaluating the Pharmacoki…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70244](https://doi.org/10.1111/cts.70244)
 
 ## Model component
-<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Fitch2025_600_g_xp_8121_sc" status="rejected" stale="false" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Fitch2025_600_g_xp_8121_sc" status="rejected" stale="true" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -40,7 +42,14 @@ Fitch R et al., Phase 1 Study Evaluating the Pharmacoki…, Clinical and transla
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SD | `Q900` · equation variable | 7.8 | not captured | not captured | not captured | not captured | llm (0.6) | Fitch_2025_table_2:row3:col1, Fitch_2025_table_2:row11:col1, Fitch_2025_table_2:row16:col1, Fitch_2025_table_2:row20:col1, Fitch_2025_table_2:row24:col1 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
@@ -51,7 +60,6 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Mean' — extend the ontology if this is a real PK parameter (source ['Fitch_2025_table_2:row2:col1', 'Fitch_2025_table_2:row6:col1', 'Fitch_2025_table_2:row10:col1', 'Fitch_2025_table_2:row15:col1', 'Fitch_2025_table_2:row19:col1', 'Fitch_2025_table_2:row23:col1'])
-- dropped unlinked row (NIL): 'SD' — extend the ontology if this is a real PK parameter (source ['Fitch_2025_table_2:row3:col1', 'Fitch_2025_table_2:row11:col1', 'Fitch_2025_table_2:row16:col1', 'Fitch_2025_table_2:row20:col1', 'Fitch_2025_table_2:row24:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levothyroxine
 - population split: '600 μg xp‐8121 sc' subgroup of Fitch_2025 (paper reports 4 populations: 1200 μg xp‐8121 sc, 1500 μg xp‐8121 sc, 600 μg oral lt4, 600 μg xp‐8121 sc)
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
@@ -60,6 +68,7 @@ _No resolved parameters._
 - LLM selected parameter table(s) 2
 - unparsed cell Fitch_2025_table_2:row7:col1 = '79. 2'
 - unparsed cell Fitch_2025_table_2:row7:col2 = '1. 6'
+- LLM region Fitch_2025:discussion_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 10:12:20 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
@@ -116,4 +125,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 16:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 09:41 UTC</sub>

@@ -14,15 +14,26 @@ Olmesartan is an angiotensin II receptor blocker used to treat high blood pressu
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q421156](https://www.wikidata.org/wiki/Q421156) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| olmesartan (olmesartan_medoxomil) | parent | 446.502 | C24H26N6O3 | DrugBank | [158781](https://pubchem.ncbi.nlm.nih.gov/compound/158781) | Kodati_2017, Yoshihara_2005 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 19:06 | 27:37 | 0/0/0 | 0/0/0 | 0/0/0 | 178,430/37,178 | openai / gpt-6-luna | 10 | 3/14 | 10/0 | 0 |
+| 2026-10-07 08:23 | 7:38 | 1/0/1 | 0/0/0 | 0/0/0 | 134,777/17,568 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/14 | 12/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kodati_2017_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Kodati2017_reference.md) | held back | 1-compartment, oral | 2 | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Yoshihara_2005_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Yoshihara2005_reference.md) | — | 1-compartment (no model) | 5 | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) |
 
 ## ADME sites
 
@@ -49,24 +60,23 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 148 matched, 87 returned
-- **screened:** 8  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 10  ·  **relevant:** 2
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chae_2014.pdf` | Chae JW et al., Development of a population pharmacokin…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP202046](https://doi.org/10.5414/CP202046) | [24849193](https://pubmed.ncbi.nlm.nih.gov/24849193) | A population-PK model for olmesartan medoxomil is described, but no numeric parameter values are provided in the evidence. |
-| `Rohatagi_2008.pdf` | Rohatagi S et al., Evaluation of population pharmacokineti…, Journal of clinical pharmac… (2008) | popPK | 10 | [10.1177/0091270008317847](https://doi.org/10.1177/0091270008317847) | [18490496](https://pubmed.ncbi.nlm.nih.gov/18490496) | Olmesartan population-PK models are reported, but no numeric disposition parameter values are provided in the evidence. |
-| `Hassan_2022.pdf` | Hassan RH et al., Chitosan nanoparticles for intranasal d…, International journal of ph… (2022) | popPK | 8 | [10.1016/j.ijpharm.2022.122278](https://doi.org/10.1016/j.ijpharm.2022.122278) | [36243325](https://pubmed.ncbi.nlm.nih.gov/36243325) | This is an original PK study of OLM, but the evidence gives only relative bioavailability and no numeric disposition-parameter values. |
-| `Salazar_2012.pdf` | Salazar DE et al., The use of modeling and simulation to g…, Clinical pharmacology and t… (2012) | popPK | 8 | [10.1038/clpt.2011.220](https://doi.org/10.1038/clpt.2011.220) | [22205195](https://pubmed.ncbi.nlm.nih.gov/22205195) | It models olmesartan PK and gives a weight–clearance exponent, but no actual clearance or other disposition parameter values are provided. |
-| `Sengupta_2012.pdf` | Sengupta P et al., Development of safety profile evaluatin…, Regulatory toxicology and p… (2012) | popPK | 8 | [10.1016/j.yrtph.2011.12.008](https://doi.org/10.1016/j.yrtph.2011.12.008) | [22203042](https://pubmed.ncbi.nlm.nih.gov/22203042) | The study evaluates olmesartan medoxomil pharmacokinetics in rats, but no numeric disposition values are present in the provided evidence. |
-| `Tanigawara_2009.pdf` | Tanigawara Y et al., Comparative pharmacodynamics of olmesar…, Drug metabolism and pharmac… (2009) | popPK | 8 | [10.2133/dmpk.24.376](https://doi.org/10.2133/dmpk.24.376) | [19745564](https://pubmed.ncbi.nlm.nih.gov/19745564) | The study uses a population PK/PD model for olmesartan, but no numeric PK parameter values are provided in the evidence. |
+| `Chae_2014.pdf` | Chae JW et al., Development of a population pharmacokin…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP202046](https://doi.org/10.5414/CP202046) | [24849193](https://pubmed.ncbi.nlm.nih.gov/24849193) | The study describes a population PK model for olmesartan medoxomil, but the specific numeric parameter values are not present in the provided evidence. |
+| `Kodati_2017.pdf` | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | popPK | 10 | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) | [27535556](https://pubmed.ncbi.nlm.nih.gov/27535556) | The study reports a population PK model for olmesartan (active metabolite of olmesartan medoxomil) with specific numeric values for CL/F and V/F provided in the abstract. |
+| `Rohatagi_2008.pdf` | Rohatagi S et al., Evaluation of population pharmacokineti…, Journal of clinical pharmac… (2008) | popPK | 10 | [10.1177/0091270008317847](https://doi.org/10.1177/0091270008317847) | [18490496](https://pubmed.ncbi.nlm.nih.gov/18490496) | The paper describes a population PK model for olmesartan medoxomil, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Yoshihara_2005.pdf` | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | popPK | 10 | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) | [16372830](https://pubmed.ncbi.nlm.nih.gov/16372830) | The paper reports a population pharmacokinetic model for olmesartan (the active metabolite of olmesartan medoxomil) with specific numeric values for CL/F, absorption rate, and elimination rate constants provided in the abstract. |
+| `Tanigawara_2009.pdf` | Tanigawara Y et al., Comparative pharmacodynamics of olmesar…, Drug metabolism and pharmac… (2009) | popPK | 8 | [10.2133/dmpk.24.376](https://doi.org/10.2133/dmpk.24.376) | [19745564](https://pubmed.ncbi.nlm.nih.gov/19745564) | The study is a population PK/PD analysis of olmesartan medoxomil in humans, but the specific numeric parameter values are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-30T19:02:52.075601+00:00</sub>
+<sub>queue written 2026-10-07T08:16:50.769519+00:00</sub>
 
 ## Screened and excluded
 
@@ -76,29 +86,29 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Abd_2026 | not_relevant | 2 | 1 | Reports comparative blood-pressure effects and effect-time summaries, but no numeric exposure- or dose-response relationship or derivable concentration-effect parameters. |
 | popPK | Albash_2019 | irrelevant | 2 | 0 | The study evaluates olmesartan medoxomil pharmacokinetics but provides no quantitative disposition parameters; AUC is only described qualitatively. |
 | PD | Albash_2019 | not_relevant | 2 | 0 | The abstract only qualitatively mentions pharmacodynamic superiority of PB15 over oral tablets and reports no numeric PD parameters or exposure-/dose-response relationship. |
-| popPK | Battini_2024 | irrelevant | 0 | 0 | This DDI signal-detection study reports no quantitative olmesartan_medoxomil disposition parameters. |
+| popPK | Battini_2024 | irrelevant | 0 | 0 | The paper describes a machine learning method for drug-drug interaction signal detection in the FAERS database and does not report any pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Battini_2024 | not_relevant | 0 | 0 | The paper analyzes DDI reporting signals and co-exposure timing, not an olmesartan medoxomil exposure- or dose-response relationship with numeric PD parameters. |
 | popPK | Beg_2015 | irrelevant | 2 | 0 | The rat formulation study mentions pharmacokinetics but gives no qualifying disposition parameters or numeric values in the supplied evidence. |
 | PD | Beg_2015 | not_relevant | 2 | 0 | The abstract mentions in vivo pharmacodynamic studies and improved performance but reports no numeric exposure- or dose-response relationship or derivable PD parameters. |
-| popPK | Benz-de_2014 | irrelevant | 0 | 0 | The study reports methotrexate pharmacokinetics, not olmesartan_medoxomil. |
+| popPK | Benz-de_2014 | irrelevant | 0 | 0 | The study focuses on methotrexate pharmacokinetics and does not involve olmesartan_medoxomil. |
 | PD | Benz-de_2014 | not_relevant | 0 | 0 | The paper studies methotrexate clearance and urinary coproporphyrin ratios, with no olmesartan exposure- or dose-response analysis. |
 | popPK | Brunner_2001 | irrelevant | 1 | 0 | Olmesartan medoxomil is studied for pharmacodynamic dose response, but no quantitative disposition parameters are reported. |
 | popPK | Brunner_2002 | irrelevant | 1 | 1 | This is a review with cited PK summaries, not original qualifying disposition parameters; no CL, volume, or PK model values are provided. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | This narrative review provides no quantitative olmesartan_medoxomil pharmacokinetic parameters. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | This narrative review text reports no olmesartan medoxomil exposure- or dose-response analysis or numeric PD parameters. |
-| popPK | Cazaubon_2019 | irrelevant | 0 | 0 | The reported PK parameters are for mitotane, not olmesartan_medoxomil. |
+| popPK | Cazaubon_2019 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for mitotane, not olmesartan_medoxomil. |
 | PD | Cazaubon_2019 | not_relevant | 0 | 0 | The text describes mitotane pharmacokinetics and target-attainment simulations, not olmesartan medoxomil or a numeric exposure–response relationship. |
-| popPK | Chae_2014 | relevant | 10 | 0 | A population-PK model for olmesartan medoxomil is described, but no numeric parameter values are provided in the evidence. |
+| popPK | Chae_2014 | relevant | 10 | 0 | The study describes a population PK model for olmesartan medoxomil, but the specific numeric parameter values are not present in the provided evidence. |
 | PD | Chae_2014 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics only and provides no pharmacodynamic or exposure-response analysis. |
-| popPK | Chae_2019 | irrelevant | 0 | 0 | This is a blood-pressure modeling study with no olmesartan_medoxomil pharmacokinetic parameters. |
+| popPK | Chae_2019 | irrelevant | 0 | 0 | The study characterizes circadian blood pressure patterns in healthy volunteers and does not report pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Chae_2019 | not_relevant | 0 | 0 | The study models pre-drug circadian blood pressure patterns and reports no olmesartan exposure- or dose-response relationship. |
 | popPK | Chen_2012 | irrelevant | 2 | 1 | The study includes olmesartan pharmacokinetics but reports no quantitative disposition parameters; only Tmax is numeric. |
 | PD | Chen_2012 | not_relevant | 2 | 0 | The paper qualitatively describes a concentration-dependent blood-pressure effect, but reports no numeric exposure-response relationship or derivable PD parameters. |
-| popPK | Duarte_2021 | irrelevant | 0 | 0 | This is a telmisartan clinical trial, not an olmesartan_medoxomil pharmacokinetic study, and no disposition parameters are reported. |
+| popPK | Duarte_2021 | irrelevant | 0 | 0 | The study investigates telmisartan for the treatment of Covid-19 and does not report pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Duarte_2021 | not_relevant | 0 | 0 | The text reports a fixed-dose telmisartan treatment trial, not olmesartan medoxomil, and provides no dose- or exposure-response analysis or numeric PD parameters. |
 | popPK | El-Dahmy_2023 | irrelevant | 1 | 0 | The study reports relative bioavailability but no quantitative disposition parameters for OLM. |
 | PD | El-Dahmy_2023 | not_relevant | 2 | 0 | The text mentions a qualitative blood-pressure and heart-rate benefit but reports no numeric exposure- or dose-response relationship or derivable PD parameters. |
-| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | Olmesartan medoxomil is only listed for AKI potential; no quantitative pharmacokinetic parameters are reported. |
+| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | The paper is a review of drug-induced acute kidney injury potential and does not report pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Fernández-Llaneza_2025 | not_relevant | 0 | 0 | The paper aggregates AKI safety signals and adverse-event frequencies; it reports no olmesartan medoxomil dose- or exposure-response analysis or numeric PD parameters. |
 | popPK | Gorain_2014 | irrelevant | 2 | 1 | The rat study reports a 2.8-fold AUC increase but no numeric disposition parameters for olmesartan medoxomil. |
 | PD | Gorain_2014 | not_relevant | 2 | 0 | The text mentions prolonged antihypertensive activity and a three-fold dose reduction qualitatively, but provides no numeric effect-versus-exposure or dose relationship or derivable PD parameters. |
@@ -110,10 +120,9 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Hazan_2010 | not_relevant | 3 | 0 | The text states a statistically significant dose response but provides no numeric blood-pressure effects or dose-effect parameters to extract. |
 | popPK | Kamo_2017 | irrelevant | 0 | 0 | Olmesartan medoxomil is only a transporter-assay inhibitor, with no quantitative disposition parameters reported. |
 | PD | Kamo_2017 | not_relevant | 2 | 0 | Olmesartan medoxomil is reported to inhibit PGE2 uptake by more than 90% in a screening assay, but no concentration, concentration-response curve, or numeric PD parameter is provided. |
-| popPK | Kim_2022 | irrelevant | 0 | 0 | Olmesartan is tested for neuroprotection, with no pharmacokinetic parameters or numeric PK values reported. |
+| popPK | Kim_2022 | irrelevant | 0 | 0 | The study is a neuroprotective screening assay in zebrafish and does not report pharmacokinetic parameters for olmesartan. |
 | PD | Kim_2022 | not_relevant | 2 | 0 | Olmesartan is reported to protect dopamine neurons, but no dose- or concentration-response relationship or numeric PD parameters are stated or derivable. |
-| popPK | Kitamura_2007 | irrelevant | 0 | 0 | The study reports glucose outcomes, not quantitative olmesartan pharmacokinetic parameters. |
-| popPK | Kodati_2017 | irrelevant | 1 | 1 | The reported numeric parameters are for olmesartan, the active metabolite, not olmesartan medoxomil. |
+| popPK | Kitamura_2007 | irrelevant | 0 | 0 | The study is a longitudinal survey of blood glucose and HbA1c levels in hypertensive patients, not a pharmacokinetic study, and reports no PK parameters for olmesartan medoxomil. |
 | popPK | Komesli_2019 | irrelevant | 0 | 0 | The study evaluates formulation and bioavailability but reports no quantitative PK disposition parameters for olmesartan medoxomil. |
 | PD | Komesli_2019 | not_relevant | 2 | 0 | Blood pressure was measured and a 3.1-fold formulation efficacy comparison is stated, but no numeric dose- or exposure-response relationship or derivable PD parameters are reported. |
 | popPK | Komesli_2021 | irrelevant | 0 | 0 | This rat study evaluates pharmacodynamics and adverse effects but reports no quantitative pharmacokinetic parameters. |
@@ -122,15 +131,15 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Li_2024 | not_relevant | 0 | 0 | The reported IC50 is an immunoassay detection parameter, not an olmesartan exposure- or dose-response pharmacodynamic parameter. |
 | popPK | Manoria_2006 | irrelevant | 1 | 0 | This is a clinical review with no quantitative disposition parameters for olmesartan medoxomil in the provided evidence. |
 | PD | Manoria_2006 | not_relevant | 2 | 0 | Review-level summary reports blood-pressure reductions with 10–40 mg dosing but provides no extractable dose/exposure-response relationship or numeric PD parameters. |
-| popPK | Morita_2026 | irrelevant | 0 | 0 | The study models pemetrexed exposure and reports no olmesartan_medoxomil disposition parameters or values. |
+| popPK | Morita_2026 | irrelevant | 0 | 0 | The study focuses on pemetrexed pharmacokinetics and neutropenia risk, not olmesartan medoxomil. |
 | PD | Morita_2026 | not_relevant | 0 | 0 | The paper models pemetrexed exposure and neutrophil suppression; it reports no olmesartan medoxomil exposure- or dose-response relationship. |
 | popPK | Muir_2010 | irrelevant | 0 | 0 | This clinical efficacy summary reports no quantitative pharmacokinetic parameters or values. |
 | PD | Muir_2010 | not_relevant | 2 | 0 | The review qualitatively reports dose-dependent BP reduction, but provides no numerical dose-effect results or derivable PD parameters. |
 | popPK | Nakamura_2005 | irrelevant | 1 | 0 | Olmesartan medoxomil is studied in animals, but no quantitative pharmacokinetic disposition parameters are reported in the provided evidence. |
 | PD | Nakamura_2005 | not_relevant | 3 | 1 | The study qualitatively reports dose-dependent effects and gives tested doses, but provides no numeric effect data or extractable PD parameters or concentration-effect curve. |
-| popPK | Ren_2022 | irrelevant | 0 | 0 | This review mentions olmesartan only in discussion of sartans and provides no numeric olmesartan disposition parameters in the evidence. |
+| popPK | Ren_2022 | irrelevant | 0 | 0 | The paper is a review/tutorial on pharmacodynamic modeling of slow reversible binding and does not report pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Ren_2022 | not_relevant | 0 | 0 | The text reports PK/PD fits for candesartan and noberastine and simulations for a hypothetical drug, but no olmesartan medoxomil exposure-response relationship or numeric PD parameters. |
-| popPK | Rohatagi_2008 | relevant | 10 | 0 | Olmesartan population-PK models are reported, but no numeric disposition parameter values are provided in the evidence. |
+| popPK | Rohatagi_2008 | relevant | 10 | 0 | The paper describes a population PK model for olmesartan medoxomil, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | PD | Rohatagi_2008 | not_relevant | 9 | 0 | The abstract reports population exposure–response models for olmesartan, including an Emax model, but provides no numeric PD parameters, curve, or data from which they can be derived. |
 | popPK | Rump_2011 | irrelevant | 0 | 0 | This is an antihypertensive efficacy trial and reports no quantitative pharmacokinetic parameters for olmesartan medoxomil. |
 | popPK | Salazar_2012 | relevant | 8 | 2 | It models olmesartan PK and gives a weight–clearance exponent, but no actual clearance or other disposition parameter values are provided. |
@@ -146,27 +155,26 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Song_2016 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | Song_2016 | not_relevant | 8 | 0 | The title indicates a linear mixed-effects QTc model, but the provided text contains no numeric PD parameters or effect-versus-exposure results to extract. |
 | popPK | Srinivas_2017 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
-| popPK | Tanigawara_2009 | relevant | 8 | 0 | The study uses a population PK/PD model for olmesartan, but no numeric PK parameter values are provided in the evidence. |
+| popPK | Tanigawara_2009 | relevant | 8 | 0 | The study is a population PK/PD analysis of olmesartan medoxomil in humans, but the specific numeric parameter values are not present in the provided abstract text. |
 | PD | Tanigawara_2009 | not_relevant | 9 | 0 | A population PK/PD model with an olmesartan Emax effect is described, but no numeric PD estimates or effect-versus-concentration values are provided or derivable from this text. |
-| popPK | Tharmalingam_2026 | irrelevant | 0 | 0 | The paper studies candesartan cilexetil, not olmesartan medoxomil, and provides no numeric olmesartan PK parameters; the bioavailability entry has no values. |
+| popPK | Tharmalingam_2026 | irrelevant | 0 | 0 | The study investigates the antimicrobial mechanism of Candesartan cilexetil against MRSA, not the pharmacokinetics of olmesartan medoxomil. |
 | PD | Tharmalingam_2026 | not_relevant | 0 | 0 | The paper studies candesartan cilexetil, not olmesartan medoxomil, so it reports no PD relationship for the queried drug. |
-| popPK | Thoueille_2023 | irrelevant | 0 | 0 | This study models tenofovir, not olmesartan_medoxomil; no olmesartan parameters are reported. |
+| popPK | Thoueille_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tenofovir, not olmesartan_medoxomil. |
 | PD | Thoueille_2023 | not_relevant | 0 | 0 | The paper models tenofovir/tenofovir alafenamide pharmacokinetics and reports no pharmacodynamic or exposure-response relationship for olmesartan medoxomil. |
-| popPK | Tonial_2025 | irrelevant | 0 | 0 | This reports clinical outcomes, not olmesartan disposition parameters, and provides no PK values. |
+| popPK | Tonial_2025 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis of adverse events (hyperkalemia/AKI) and does not report any pharmacokinetic parameters for olmesartan. |
 | PD | Tonial_2025 | not_relevant | 0 | 0 | The study compares adverse-event risks between antibiotic co-prescriptions and reports no olmesartan-specific dose- or exposure-response analysis or numeric PD parameters. |
-| popPK | Webb_2016 | irrelevant | 0 | 0 | The study is of azilsartan medoxomil, not olmesartan medoxomil; its PK parameter estimates are referenced in supplementary Table S2. |
+| popPK | Webb_2016 | irrelevant | 0 | 0 | The study investigates azilsartan medoxomil, not olmesartan medoxomil. |
 | PD | Webb_2016 | not_relevant | 0 | 0 | The paper concerns azilsartan medoxomil and reports PK exposure and safety, with no olmesartan analysis or numeric PD/exposure-response relationship. |
 | popPK | Weiss_2010 | irrelevant | 0 | 0 | This is an in-vitro transporter study and reports no quantitative disposition parameters for olmesartan_medoxomil. |
 | PD | Weiss_2010 | not_relevant | 0 | 0 | Olmesartan medoxomil was tested, but the text reports no drug-specific concentration- or dose-response relationship or numeric PD parameter for it. |
-| popPK | Yang_2025 | irrelevant | 0 | 0 | This review provides no olmesartan_medoxomil-specific quantitative PK values. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The paper is a review on in silico and AI modeling tools and does not report specific quantitative pharmacokinetic parameters for olmesartan_medoxomil. |
 | PD | Yang_2025 | not_relevant | 0 | 0 | This review does not report an olmesartan medoxomil dose- or exposure-response analysis or numeric PD parameters. |
-| popPK | Yoshihara_2005 | irrelevant | 1 | 0 | The numeric population-PK parameters are for active olmesartan, not olmesartan medoxomil. |
 | popPK | Zeitlinger_2021 | irrelevant | 0 | 0 | no_text gate: only 26 chars of text extracted (&lt; 400) |
 | PD | Zeitlinger_2021 | not_relevant | 0 | 0 | The provided text contains only the meeting title and reports no olmesartan medoxomil PD or exposure-response data. |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study concerns PDE5 inhibitors, not olmesartan_medoxomil, and reports no olmesartan PK values. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of PDE5 inhibitors and does not involve olmesartan medoxomil or any pharmacokinetic parameters. |
 | PD | Zhang_2024 | not_relevant | 0 | 0 | The paper analyzes PDE5 inhibitor adverse-event reports using disproportionality methods and reports no olmesartan medoxomil exposure-response or dose-response relationship or numeric PD parameters. |
-| popPK | Şenkal_2020 | irrelevant | 0 | 0 | This is a COVID-19 outcomes study, not an olmesartan_medoxomil pharmacokinetic study. |
+| popPK | Şenkal_2020 | irrelevant | 0 | 0 | The study is a retrospective clinical cohort analyzing clinical outcomes (severe disease odds) in COVID-19 patients using ARBs/ACEi, and contains no pharmacokinetic parameters for olmesartan medoxomil. |
 | PD | Şenkal_2020 | not_relevant | 0 | 0 | Reports a categorical association for antihypertensive classes, not an olmesartan-specific dose- or concentration-response relationship or numeric PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 08:17 UTC</sub>

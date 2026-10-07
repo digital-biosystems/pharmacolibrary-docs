@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;Olmesartan&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/&quot;},{&quot;label&quot;:&quot;Yoshihara_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Olmesartan — `Olmesartan_Yoshihara2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,19 +21,23 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — olmesartan: CL/F 6.66 L/h, kabs 1.46 h-1, kel 0.193 h-1, k12 0.061 h-1, k21 0.079 h-1, tlag 0.427 h.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption lag-time: this record has none, the second reading 0.427; it also differs on 10 more fields. That field does not shape the model.
+
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `olmesartan medoxomil (CS-866)`, measured `olmesartan (RNH-6270)`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:28:31.177735+00:00) predates the upstream re-run (2026-10-07 08:04:54.654511+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `olmesartan medoxomil`, measured `olmesartan`.
 
 ## Citation
 Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005)
   ·  DOI: [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011)
 
 ## Model component
-<dbs-pgx drug="Olmesartan" model-id="Olmesartan_Yoshihara2005_reference" status="needs_review" stale="false" population="healthy volunteers and hypertensive patients" measured-compound="olmesartan (RNH-6270)" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Olmesartan" model-id="Olmesartan_Yoshihara2005_reference" status="needs_review" stale="true" population="healthy volunteers and hypertensive patients" measured-compound="olmesartan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -45,9 +49,8 @@ Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmac
 | CL/F | `Q27` · CL/F | 6.66 | L/h | 1.85e-06 | [l] / [h] | not captured | exact (1.0) | Yoshihara_2005:abstract | — | not captured |
 | absorption rate constant | `Q49` · kabs | 1.46 | h-1 | 0.00040555555555555554 | [1] / [h] | not captured | exact (1.0) | Yoshihara_2005:abstract | — | not captured |
 | elimination rate constant | `Q47` · kel | 0.193 | h-1 | 5.3611111111111115e-05 | [1] / [h] | not captured | exact (1.0) | Yoshihara_2005:abstract | — | not captured |
-| rate constant from the central to peripheral compartment | `Q301` · k12 | 0.061 | h-1 | 1.6944444444444446e-05 | [1] / [h] | not captured | llm (0.6) | Yoshihara_2005:abstract | — | not captured |
-| rate constant from the peripheral to central compartment | `Q302` · k21 | 0.079 | h-1 | 2.1944444444444445e-05 | [1] / [h] | not captured | llm (0.6) | Yoshihara_2005:abstract | — | not captured |
-| absorption lag-time | `Q83` · tlag | 0.427 | h | 1537.2 | [h] | not captured | exact (1.0) | Yoshihara_2005:abstract | — | not captured |
+| rate constant from the central to peripheral compartment | `Q302` · k21 | 0.061 | h-1 | 1.6944444444444446e-05 | [1] / [h] | not captured | llm (0.6) | Yoshihara_2005:abstract | — | not captured |
+| absorption lag-time | `Q83` · tlag | 0.427 | h | 1537.2 | [h] | not captured | llm_confirmed (0.6) | Yoshihara_2005:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,10 +60,9 @@ Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=olmesartan (RNH-6270)
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
+- dropped duplicate Q302 ('rate constant from the peripheral to central compartment', value 0.079) — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=olmesartan
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 4 linked by role; re-tagged olmesartan (RNH-6270)→olmesartan ×6
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
@@ -70,15 +72,45 @@ Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmac
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[absorption lag-time]` | not captured | 0.427 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption lag-time]` | 0.427 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 1.46 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate constant]` | 1.46 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 6.66 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 6.66 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination rate constant]` | not captured | 0.193 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination rate constant]` | 0.193 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rate constant from the central to peripheral compartment]` | not captured | 0.061 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rate constant from the central to peripheral compartment]` | 0.061 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rate constant from the peripheral to central compartment]` | not captured | 0.079 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yoshihara_2005:abstract'] |
-| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Yoshihara_2005:abstract'] |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Yoshihara_2005:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Yoshihara_2005:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Yoshihara_2005:abstract'] |
@@ -120,4 +152,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 18:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:04 UTC</sub>

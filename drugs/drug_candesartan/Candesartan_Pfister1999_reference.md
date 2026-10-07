@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;candesartan&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/&quot;},{&quot;label&quot;:&quot;Pfister_1999 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Candesartan_Kassem2021_estimates&quot;,&quot;label&quot;:&quot;Kassem_2021_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/Candesartan_Kassem2021_estimates.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Candesartan_Kassem2021_final_model&quot;,&quot;label&quot;:&quot;Kassem_2021_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/Candesartan_Kassem2021_final_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # candesartan — `Candesartan_Pfister1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +21,11 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
+Independently confirmed by `gpt-oss:120b`.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:24.263927+00:00) predates the upstream re-run (2026-10-07 07:24:36.826030+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `candesartan cilexetil`, measured `candesartan`.
 
@@ -29,7 +34,7 @@ Pfister M et al., Pharmacokinetics and haemodynamics of c…, British journal of
   ·  DOI: [10.1046/j.1365-2125.1999.00939.x](https://doi.org/10.1046/j.1365-2125.1999.00939.x)
 
 ## Model component
-<dbs-pgx drug="candesartan" model-id="Candesartan_Pfister1999_reference" status="rejected" stale="false" population="hypertensive male patients with end-stage renal disease on regular haemodialysis" measured-compound="candesartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="candesartan" model-id="Candesartan_Pfister1999_reference" status="rejected" stale="true" population="hypertensive patients on regular haemodialysis" measured-compound="candesartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -41,7 +46,7 @@ Pfister M et al., Pharmacokinetics and haemodynamics of c…, British journal of
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k a (10 -3 min -1 ) Q (ml min -1 ) | `Q30` · Q | 1.06 | ml min -1 | 1.7666666666666666e-08 | [ml] / [min] | not captured | exact (1.0) | tab_0:row2:col2 | — | not captured |
+| k a (10 -3 min -1 ) Q (ml min -1 ) | `Q30` · Q | 1.06 | ml min -1 | 1.7666666666666666e-08 | [ml] / [min] | not captured | llm (0.6) | tab_0:row2:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,9 +57,8 @@ Pfister M et al., Pharmacokinetics and haemodynamics of c…, British journal of
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=candesartan
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 1 linked by role
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_0:row2:col1 = '1.75 9.9'
@@ -62,6 +66,21 @@ Pfister M et al., Pharmacokinetics and haemodynamics of c…, British journal of
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
+
+_Every reader agrees on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -95,4 +114,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 16:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:24 UTC</sub>

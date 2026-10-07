@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;Olmesartan&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/&quot;},{&quot;label&quot;:&quot;Thoueille_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Olmesartan — `Olmesartan_Thoueille2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,28 +21,30 @@
 
 The record reports clearance, volume of distribution and absorption rate constant for olmesartan, but the bioavailability F and the absorption lag time Tlag have no extracted values; library placeholders would stand in for them. These parameters affect the simulated profile yet are not supported by the paper, so the record is flagged for review rather than published. No other failed checks are reported. Extracted — olmesartan: CL 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 30, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:28:31.170409+00:00) predates the upstream re-run (2026-10-07 08:04:02.274688+00:00). Current validate status: `extracted`.
 
 ## Citation
 Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103)
 
 ## Model component
-<dbs-pgx drug="Olmesartan" model-id="Olmesartan_Thoueille2023_reference" status="needs_review" stale="false" population="" measured-compound="olmesartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Olmesartan" model-id="Olmesartan_Thoueille2023_reference" status="extracted" stale="true" population="" measured-compound="olmesartan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLTFV | `Q22` · CL | 39.9 | L/h | 1.1083333333333333e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
+| CLTFV | `Q27` · CL/F | 39.9 | L/h | 1.1083333333333333e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
 | VTFV | `Q61` · V | 2660.0 | L | 2.66 | L | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-| ka | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | 1/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
+| first-order absorption rate of tenofovir (ka) | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | 1/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,13 +54,37 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - built from REVIEW reference values (Thoueille_2023) — secondary source
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.727 (8/11 fields) | 3 |
+
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 30 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 10 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 1 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -67,12 +93,12 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Thoueille_2023:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Thoueille_2023:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Thoueille_2023:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Thoueille_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 39.9 | not captured | not captured | ['Thoueille_2023:review'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 39.9 L/h | not captured | not captured | ['Thoueille_2023:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 39.9 L/h | not captured | not captured | ['Thoueille_2023:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.66e+03 L | not captured | not captured | ['Thoueille_2023:review'] |
 
 **Reviewer per-scenario checks:**
@@ -110,7 +136,7 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_matlab.zip" download>Olmesartan_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_matlab_simbio.zip" download>Olmesartan_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_sbml.zip" download>Olmesartan_Thoueille2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_cellml.zip" download>Olmesartan_Thoueille2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_cellml.zip" download>Olmesartan_Thoueille2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -118,7 +144,7 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference/Olmesartan_Thoueille2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -127,4 +153,4 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 18:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:04 UTC</sub>

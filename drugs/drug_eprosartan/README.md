@@ -18,11 +18,18 @@ Eprosartan is an angiotensin II receptor blocker used to treat high blood pressu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 16:54 | 9:08 | 0/0/0 | 0/0/0 | 0/0/0 | 57,030/16,083 | openai / gpt-6-luna | 0 | 1/0 | 0/0 | 0 |
+| 2026-10-07 07:36 | 1:23 | 0/0/0 | 0/1/1 | 0/0/0 | 28,285/1,461 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [van_2013_SBP](drugs/drug_eprosartan/pd_van_2013_SBP.md) | systolic blood pressure ← eprosartan · direct log-linear effect | — | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine](drugs/drug_eprosartan/pd_Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine.md) | stimulation-induced efflux of [(3)H]norepinephrine ← eprosartan · direct sigmoid Emax (Hill) effect | — | Shetty SS et al., Differential inhibition of the prejunct…, The Journal of pharmacology… (2000) | — |
 
 ## ADME sites
 
@@ -46,24 +53,25 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 46 matched, 43 returned
+- **PubMed hits:** 46 matched, 44 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `van_2013.pdf` | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | popPK | 10 | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) | [23696281](https://pubmed.ncbi.nlm.nih.gov/23696281) | Eprosartan is the subject of a population PK-PD model, but no numeric disposition parameters are provided in the evidence. |
+| `van_2013.pdf` | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | popPK | 10 | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) | [23696281](https://pubmed.ncbi.nlm.nih.gov/23696281) | The paper describes a population PK/PD model for eprosartan in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Edwards_1999.pdf` | Edwards RM et al., Transport of [3H]losartan across isolat…, The Journal of pharmacology… (1999) | pd | 4 | not captured | [10381757](https://www.ncbi.nlm.nih.gov/pubmed/10381757) | metadata signals extractable PD data (IC50) |
 | `Nap_2004.pdf` | Nap A et al., Different prejunctional and postjunctio…, Journal of cardiovascular p… (2004) | pd | 4 | [10.1097/00005344-200403000-00015](https://doi.org/10.1097/00005344-200403000-00015) | [15076228](https://www.ncbi.nlm.nih.gov/pubmed/15076228) | metadata signals extractable PD data (Emax) |
 | `Taavitsainen_2000.pdf` | Taavitsainen P et al., In vitro inhibition screening of human…, European journal of clinica… (2000) | pd | 4 | [10.1007/s002280050731](https://doi.org/10.1007/s002280050731) | [10877007](https://www.ncbi.nlm.nih.gov/pubmed/10877007) | metadata signals extractable PD data (IC50) |
 | `Weiss_2010.pdf` | Weiss J et al., Interaction of angiotensin receptor typ…, Biopharmaceutics & drug dis… (2010) | pgx | 7 | [10.1002/bdd.699](https://doi.org/10.1002/bdd.699) | [20222053](https://www.ncbi.nlm.nih.gov/pubmed/20222053) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Yang_2016.pdf` | Yang R et al., Drug Interactions with Angiotensin Rece…, Current drug metabolism (2016) | pgx | 7 | [10.2174/1389200217666160524143843](https://doi.org/10.2174/1389200217666160524143843) | [27216792](https://www.ncbi.nlm.nih.gov/pubmed/27216792) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-09-30T16:52:49.458462+00:00</sub>
+<sub>queue written 2026-10-07T07:35:33.551204+00:00</sub>
 
 ## Screened and excluded
 
@@ -80,12 +88,12 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Benson_2008 | not_relevant | 2 | 0 | Eprosartan is reported to have little or no antiproliferative effect up to 10 µmol/L, but no numeric concentration-effect data or PD parameters are provided. |
 | popPK | Blum_1999 | irrelevant | 1 | 0 | This is a review without quantitative disposition parameters; no numeric values or supplementary material are provided. |
 | PD | Blum_1999 | not_relevant | 1 | 0 | The review only qualitatively states that eprosartan did not affect warfarin or glyburide pharmacodynamics; it reports no eprosartan exposure- or dose-response relationship or numeric PD parameters. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | This narrative review provides no eprosartan disposition parameters or numeric PK values. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for eprosartan. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The review text does not mention eprosartan or report an eprosartan exposure- or dose-response relationship. |
 | popPK | Derosa_2004 | irrelevant | 1 | 10 | This is an antihypertensive trial, not a PK study; cited eprosartan half-life and volume values are readable in the text. |
 | PD | Derosa_2004 | not_relevant | 2 | 0 | Fixed-dose clinical outcomes are reported, but no eprosartan exposure- or dose-response analysis or numeric PD parameters are stated or derivable; PK/PD is mentioned only speculatively. |
 | popPK | Edwards_1996 | irrelevant | 0 | 0 | Eprosartan is tested only in an in-vitro urate-transport assay, with no pharmacokinetic disposition parameters reported. |
-| popPK | Guimarães_2004 | irrelevant | 0 | 0 | This is an in-vitro receptor study and reports no eprosartan pharmacokinetic parameters or values. |
+| popPK | Guimarães_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of angiotensin receptor subtypes in rabbit aorta, using eprosartan only as a comparative antagonist, and does not report any pharmacokinetic parameters for eprosartan. |
 | PD | Guimarães_2004 | not_relevant | 2 | 0 | Eprosartan is mentioned qualitatively, but no numeric eprosartan concentration- or dose-response parameters or effect-versus-concentration data are reported or derivable. |
 | popPK | Hollenberg_2001 | irrelevant | 0 | 0 | This is a review and reports no quantitative eprosartan disposition parameters. |
 | PD | Hollenberg_2001 | not_relevant | 2 | 0 | Review qualitatively mentions a dose-response difference for renal blood supply but provides no numeric PD parameters or extractable effect-versus-dose data. |
@@ -98,15 +106,16 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Kazierad_1998 | not_relevant | 2 | 0 | Reports only a qualitative no-effect comparison at one eprosartan dose, with no extractable exposure- or dose-response relationship or numeric PD parameters. |
 | popPK | Martin_1997 | irrelevant | 0 | 0 | This is a pharmacodynamic interaction study and reports no eprosartan disposition parameters or numeric PK values. |
 | PD | Martin_1997 | not_relevant | 0 | 0 | The study reports a fixed-dose treatment comparison for glucose, not an eprosartan exposure- or dose-response relationship or numeric PD parameters. |
-| popPK | Nap_2003 | irrelevant | 0 | 0 | This is a receptor-potency study, not a PK study, and reports no eprosartan disposition parameters. |
-| popPK | Nap_2003_2 | irrelevant | 0 | 0 | This is an ex vivo pharmacology study reporting eprosartan potency, not pharmacokinetic disposition parameters. |
-| popPK | Nap_2004 | irrelevant | 0 | 0 | This is a pharmacodynamic tissue study and reports no eprosartan pharmacokinetic parameters. |
+| popPK | Nap_2003 | irrelevant | 0 | 0 | The study reports pharmacodynamic potency (pIC50, pA2) in an in-vitro rabbit aorta model, not pharmacokinetic disposition parameters. |
+| popPK | Nap_2003_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor pharmacology (AT1 antagonism) in rabbit aorta, not a pharmacokinetic study reporting disposition parameters for eprosartan. |
+| popPK | Nap_2004 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
 | popPK | Porta_2005 | irrelevant | 0 | 0 | This is a therapeutic-interchange study and reports no quantitative eprosartan disposition parameters. |
 | PD | Porta_2005 | not_relevant | 1 | 0 | Eprosartan is mentioned only as part of a therapeutic-interchange discussion; no dose- or exposure-response analysis or numeric PD parameters are reported. |
 | popPK | Ramkanth_2021 | irrelevant | 1 | 0 | Eprosartan is studied in a delivery formulation, but no quantitative pharmacokinetic disposition parameters are reported. |
 | PD | Ramkanth_2021 | not_relevant | 2 | 0 | The text mentions antihypertensive pharmacodynamic studies comparing formulations, but reports no eprosartan exposure- or dose-response analysis or numeric PD parameters. |
 | popPK | Schmidt_2004 | irrelevant | 0 | 0 | This is a review and provides no numeric eprosartan disposition parameters. |
 | PD | Schmidt_2004 | not_relevant | 2 | 0 | This is a qualitative review; it mentions pharmacodynamic data for ARBs generally but reports no extractable eprosartan exposure- or dose-response relationship or numeric PD parameters. |
+| PGx | Sharma_2021 | not_relevant | 4 | 5 | The paper reports in silico binding affinity changes, which are mechanistic proxies for pharmacodynamics, but does not report actual clinical PK or PD parameter changes (e.g., blood pressure, receptor occupancy) in humans. |
 | popPK | Shekhawat_2019 | irrelevant | 2 | 2 | Eprosartan exposure values are reported, but no quantitative disposition parameters or model values are provided in the evidence. |
 | PD | Shekhawat_2019 | not_relevant | 2 | 0 | The text qualitatively reports antihypertensive effects, but gives no numeric blood-pressure effects or extractable dose/exposure-response parameters. |
 | popPK | Shetty_2000 | irrelevant | 0 | 0 | The study reports pharmacodynamic IC₅₀ values, not eprosartan pharmacokinetic disposition parameters. |
@@ -116,15 +125,15 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Stokes_2003 | not_relevant | 2 | 0 | Eprosartan was tested at a single dose, but no numeric eprosartan effect or exposure-/dose-response relationship is reported. |
 | popPK | Taavitsainen_2000 | irrelevant | 0 | 0 | This is an in-vitro enzyme inhibition study and reports no eprosartan disposition parameters. |
 | PD | Taavitsainen_2000 | not_relevant | 0 | 0 | The reported Ki for eprosartan concerns in vitro CYP inhibition and drug-metabolism interactions, not a pharmacodynamic or therapeutic exposure-response relationship. |
-| PGx | Taavitsainen_2000 | not_relevant | 0 | 0 | The paper tests CYP inhibition in vitro and reports no gene variant/genotype/phenotype effect on an eprosartan PK or PD parameter. |
+| PGx | Taavitsainen_2000 | not_relevant | 0 | 0 | The paper reports in vitro P450 inhibition screening and does not contain pharmacogenomic data or human PK/PD parameters for eprosartan. |
 | popPK | Unger_2003 | irrelevant | 0 | 0 | This review only discusses eprosartan’s interaction potential and reports no quantitative disposition parameters. |
 | PD | Unger_2003 | not_relevant | 2 | 0 | This is a qualitative review of drug interactions and does not report an eprosartan exposure- or dose-response analysis or extractable numeric PD parameters. |
 | popPK | Weiss_2010 | irrelevant | 1 | 0 | Eprosartan is tested only for in-vitro transporter effects, with no quantitative disposition parameters reported. |
 | PD | Weiss_2010 | not_relevant | 1 | 0 | Eprosartan is qualitatively reported to induce MRP2 mRNA, but no eprosartan dose/concentration-effect relationship or numeric PD parameters are reported. |
-| PGx | Weiss_2010 | not_relevant | 0 | 0 | Reports in-vitro induction of MRP2 by eprosartan, not a gene variant/genotype/phenotype effect on its PK or PD. |
+| PGx | Weiss_2010 | not_relevant | 0 | 0 | The paper discusses ARBs and transporters generally but does not report specific pharmacogenomic effects on eprosartan PK/PD parameters. |
 | popPK | White_1996 | irrelevant | 0 | 0 | The study reports blood-pressure effects only, with no eprosartan pharmacokinetic parameters or values. |
-| PGx | Yang_2016 | not_relevant | 0 | 0 | The review discusses CYP-mediated drug interactions but reports no gene variant, genotype, or phenotype effect on eprosartan PK or PD. |
-| popPK | van_2013 | relevant | 10 | 0 | Eprosartan is the subject of a population PK-PD model, but no numeric disposition parameters are provided in the evidence. |
+| PGx | Yang_2016 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions mediated by CYP enzymes and explicitly states that CYP450 has no influence on eprosartan metabolism, reporting no pharmacogenomic effects. |
+| popPK | van_2013 | relevant | 10 | 0 | The paper describes a population PK/PD model for eprosartan in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

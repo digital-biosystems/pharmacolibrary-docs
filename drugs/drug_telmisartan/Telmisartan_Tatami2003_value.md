@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Tatami_2003 \u00b7 value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_K&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_K.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final_estimates_of_the_model_paramete&quot;,&quot;label&quot;:&quot;Tatami_2003_final_estimates_of_the_model_parameters&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final_estimates_of_the_model_paramete.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_K&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_K.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,11 +21,11 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has telmisartan, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1: this record has none, the second reading 60; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:35.971671+00:00) predates the upstream re-run (2026-10-02 17:26:36.725573+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:35.971671+00:00) predates the upstream re-run (2026-10-07 08:28:15.793374+00:00). Current validate status: `rejected`.
 
 ## Citation
 Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and pharmac… (2003)
@@ -73,7 +73,7 @@ Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and
 - dropped unlinked row (NIL): '6M a l e6 0' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row6:col2', 'Tatami_2003_table_3:row6:col3', 'Tatami_2003_table_3:row6:col4', 'Tatami_2003_table_3:row6:col6', 'Tatami_2003_table_3:row6:col7', 'Tatami_2003_table_3:row6:col8', 'Tatami_2003_table_3:row6:col10', 'Tatami_2003_table_3:row6:col11'])
 - dropped unlinked row (NIL): '7M a l e6 0' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row7:col2', 'Tatami_2003_table_3:row7:col3', 'Tatami_2003_table_3:row7:col4', 'Tatami_2003_table_3:row7:col6', 'Tatami_2003_table_3:row7:col7', 'Tatami_2003_table_3:row7:col8', 'Tatami_2003_table_3:row7:col10', 'Tatami_2003_table_3:row7:col11'])
 - dropped unlinked row (NIL): '8M a l e6 0' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row8:col2', 'Tatami_2003_table_3:row8:col3', 'Tatami_2003_table_3:row8:col4', 'Tatami_2003_table_3:row8:col6', 'Tatami_2003_table_3:row8:col7', 'Tatami_2003_table_3:row8:col8', 'Tatami_2003_table_3:row8:col10', 'Tatami_2003_table_3:row8:col11'])
-- dropped unlinked row (NIL): 'CLW F' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row0:col4'])
+- dropped duplicate Q27 ('CLW F', value '100.8') — already have one for this compound
 - dropped duplicate Q290 ('V 1 W F', value '105.6') — already have one for this compound
 - dropped duplicate Q82 ('V 2 W F', value '106.4') — already have one for this compound
 - dropped duplicate Q83 ('Absorption lag time', value '101.2') — already have one for this compound
@@ -82,9 +82,24 @@ Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and
 - implicit units: 'Q W F' → L/h (from the paper text: "The paper text explicitly defines the unit for the inter-compartmental clearance: 'inter-compartmental clearance (Q W F,")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- population split: 'value' subgroup of Tatami_2003 (paper reports 3 populations: estimated parameters, final estimates of the model parameters, value)
+- population split: 'value' subgroup of Tatami_2003 (paper reports 5 populations: estimated parameters, estimated value, final estimates of the model parameters, hypothesized value, value)
 
 **Extraction notes:**
+- unparsed cell Tatami_2003_table_2:row0:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row2:col2 = 'V 2 W F'
+- unparsed cell Tatami_2003_table_2:row2:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row3:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row4:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row5:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row8:col2 = 'V 1 W F'
+- unparsed cell Tatami_2003_table_2:row8:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row9:col2 = 'V 1 W F'
+- unparsed cell Tatami_2003_table_2:row9:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row10:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row11:col2 = 'V 2 W F'
+- unparsed cell Tatami_2003_table_2:row11:col6 = 'pº0.01'
+- unparsed cell Tatami_2003_table_2:row12:col2 = 'V 2 W F'
+- companion parameter table 2 transcribed (39 record(s))
 - unparsed cell Tatami_2003_table_3:row6:col1 = '5 0No'
 - unparsed cell Tatami_2003_table_3:row7:col1 = '5 0Y e s'
 - unparsed cell Tatami_2003_table_3:row8:col1 = '5 0Y e s'
@@ -97,7 +112,7 @@ Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and
 - unparsed cell Tatami_2003_table_4:row5:col3 = '(0.345, 0.484)'
 - unparsed cell Tatami_2003_table_4:row7:col3 = '(0.140, 0.742)'
 - companion parameter table 4 transcribed (21 record(s))
-- LLM selected parameter table(s) 3, 4
+- LLM selected parameter table(s) 2, 3, 4
 
 ## Validation
 
@@ -106,16 +121,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (8/12 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[1]` | not captured | 60 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[2]` | not captured | 60 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[3m a l e80]` | not captured | 40 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | telmisartan | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | telmisartan | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[7m a l e6 0]` | not captured | 20 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q w f].parameter_id` | Q30 | Q69 | mismatch |
 
 </details>
 
@@ -159,4 +175,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 17:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:28 UTC</sub>

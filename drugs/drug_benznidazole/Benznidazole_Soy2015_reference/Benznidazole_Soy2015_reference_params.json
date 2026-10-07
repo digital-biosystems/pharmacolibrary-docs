@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg oral (P01CA02)",
+ "model_id": "Benznidazole_Soy2015_reference",
+ "molar_masses": {
+  "central.C": 0.260253
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.805555555555556e-07,
+  "F": 1.0,
+  "MM": 0.260253,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0012799999999999999,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "ka": 0.0003194444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13391.596944929654
+ },
+ "reference_peaks": {
+  "central.C": 0.004163232871681553
+ },
+ "stop_time": 691200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

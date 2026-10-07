@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Candesartan_Kassem2021_final_model",
+ "molar_masses": {
+  "central.C": 0.440454
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  4.0,
+  8.0,
+  16.0,
+  32.0
+ ],
+ "parameters": {
+  "Cl": 2.3972222222222225e-06,
+  "F": 1.0,
+  "MM": 0.440454,
+  "Tlag": 594.0,
+  "VdPerKg": 0.00017857142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-06,
+  "ka": 3.638888888888889e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11716.232464929859
+ },
+ "reference_peaks": {
+  "central.C": 4.113665586257302e-05
+ },
+ "stop_time": 100800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

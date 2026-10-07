@@ -1,0 +1,110 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01E&quot;,&quot;href&quot;:&quot;atc/J01E.md&quot;},{&quot;label&quot;:&quot;sulfamethoxazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfamethoxazole_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfamethoxazole_Hess1993_reference&quot;,&quot;label&quot;:&quot;Hess_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Hess1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+
+# sulfamethoxazole
+
+- **generic name:** sulfamethoxazole
+- **ATC codes:** `J01EC01`, `J01EE01`, `J04AM08`
+- **DrugBank:** [DB01015](https://go.drugbank.com/drugs/DB01015) · **PubChem:** [CID 5329](https://pubchem.ncbi.nlm.nih.gov/compound/5329)
+- **molar mass:** 253.278 g/mol (C10H11N3O3S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Sulfamethoxazole is a sulfonamide antibiotic used to treat bacterial infections such as urinary tract infections, otitis media, acute bronchitis, toxoplasmosis, nocardiosis, and gram-negative infections. It remains in use, often combined with trimethoprim, and is also included in combination regimens for tuberculosis treatment.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q415843](https://www.wikidata.org/wiki/Q415843) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| sulfamethoxazole | parent | 253.278 | C10H11N3O3S | DrugBank | [5329](https://pubchem.ncbi.nlm.nih.gov/compound/5329) | Boulanger_2024, Boulanger_2025, Chen_2025, Ekstrand_2026, Hess_1993, Leegwater_2025 |
+| N-acetyl sulfamethoxazole | metabolite | — (mass units only) | — | — | — | — |
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 11:04 | 9:09 | 2/1/3 | 0/1/0 | 0/0/0 | 296,188/50,282 | einfracz / qwen3.8-27b | 16 | 1/7 | 8/0 | 0 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Ekstrand_2026_reference](drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference.md) | ▶ model + simulator | 3-compartment, oral | 7 | Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary research (2026) | [10.1186/s12917-026-05604-7](https://doi.org/10.1186/s12917-026-05604-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hess_1993_reference](drugs/drug_sulfamethoxazole/Sulfamethoxazole_Hess1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Hess MM et al., Trimethoprim-sulfamethoxazole pharmacok…, Pharmacotherapy (1993) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q65, Q17 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Boulanger_2024_reference](drugs/drug_sulfamethoxazole/Sulfamethoxazole_Boulanger2024_reference.md) | — | 2-compartment (no model) | 9 | Boulanger M et al., Pharmacokinetic modeling of sulfamethox…, Poultry science (2024) | [10.1016/j.psj.2024.104200](https://doi.org/10.1016/j.psj.2024.104200) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q357 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Chen_2025_reference](drugs/drug_sulfamethoxazole/Sulfamethoxazole_Chen2025_reference.md) | — | 1-compartment (no model) | 3 | Chen B et al., Population pharmacokinetics and Monte C…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00519-25](https://doi.org/10.1128/aac.00519-25) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Leegwater_2025_reference](drugs/drug_sulfamethoxazole/Sulfamethoxazole_Leegwater2025_reference.md) | — | parent + metabolite (no model) | 6 (+1 cov.) | Leegwater E et al., Population Pharmacokinetics of Trimetho…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3421](https://doi.org/10.1002/cpt.3421) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Boulanger_2025_reference](drugs/drug_sulfamethoxazole/Sulfamethoxazole_Boulanger2025_reference.md) | — | 1-compartment (no model) | 2 | Boulanger M et al., Population pharmacokinetic modeling of…, The veterinary quarterly (2025) | [10.1080/01652176.2025.2565351](https://doi.org/10.1080/01652176.2025.2565351) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hirai_2022_K](drugs/drug_sulfamethoxazole/pd_Hirai_2022_K.md) | serum potassium ← trimethoprim · indirect response — drug inhibits the production of serum potassium | — | Hirai T et al., Population kinetic-pharmacodynamic anal…, Basic & clinical pharmacolo… (2022) | [10.1111/bcpt.13783](https://doi.org/10.1111/bcpt.13783) |
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sulfamethoxazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | blood | `NAT1` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` inhibitor/substrate, `CYP3A4` substrate, `NAT1` substrate, `NAT2` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `NAT2` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | liver | `ABCB11` inhibitor | DrugBank actor |
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 106 matched, 20 returned
+- **screened:** 6  ·  **relevant:** 6
+- **records:** 6  ·  extracted 2  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Autmizguine_2018.pdf` | Autmizguine J et al., Population Pharmacokinetics of Trimetho…, Antimicrobial agents and ch… (2018) | popPK | 10 | [10.1128/AAC.01813-17](https://doi.org/10.1128/AAC.01813-17) | [29084742](https://pubmed.ncbi.nlm.nih.gov/29084742) | The study reports a population PK model for sulfamethoxazole in humans, but the specific numeric parameter values (CL, V, etc.) are not provided in the extracted text evidence. |
+| `Hess_1993.pdf` | Hess MM et al., Trimethoprim-sulfamethoxazole pharmacok…, Pharmacotherapy (1993) | popPK | 10 | not captured | [8302685](https://pubmed.ncbi.nlm.nih.gov/8302685) | The study reports quantitative pharmacokinetic parameters (volume, half-life, clearance) for sulfamethoxazole in human trauma patients. |
+| `Wang_2026.pdf` | Wang M et al., Population pharmacokinetic modeling and…, European journal of clinica… (2026) | popPK | 10 | [10.1007/s00228-026-04019-5](https://doi.org/10.1007/s00228-026-04019-5) | [41912902](https://pubmed.ncbi.nlm.nih.gov/41912902) | The study presents a population pharmacokinetic model for sulfamethoxazole in humans, but the abstract only describes the model structure and significant covariates without providing the specific numeric parameter estimates. |
+| `Wang_2022.pdf` | Wang F et al., Antibacterial activity of combined adit…, Journal of veterinary pharm… (2022) | popPK | 8 | [10.1111/jvp.13006](https://doi.org/10.1111/jvp.13006) | [34435681](https://pubmed.ncbi.nlm.nih.gov/34435681) | The study reports PK-PD modeling for sulfamethoxazole in pigs and provides non-compartmental parameters (Cmax, AUC) in the text, but lacks specific quantitative values for clearance, volume, or rate constants (ka) in the provided evidence. |
+
+<sub>queue written 2026-10-07T10:56:53.420965+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Autmizguine_2018 | relevant | 10 | 0 | The study reports a population PK model for sulfamethoxazole in humans, but the specific numeric parameter values (CL, V, etc.) are not provided in the extracted text evidence. |
+| popPK | Hirai_2022 | irrelevant | 1 | 0 | The study reports a pharmacokinetic model for trimethoprim (TMP) to predict hyperkalemia, not for sulfamethoxazole (SMZ), which is only the co-administered drug in the combination product. |
+| popPK | Johansson_2014 | irrelevant | 0 | 0 | The study is an ecological toxicity assessment of marine biofilms, reporting EC50 and NOEC values rather than pharmacokinetic parameters. |
+| popPK | Mead_2026 | irrelevant | 1 | 0 | The study focuses on pharmacodynamic interactions and MICs, and while PK is used in simulations, no specific quantitative PK parameter values for sulfamethoxazole are reported in the evidence. |
+| popPK | Rayamajhi_2025 | irrelevant | 0 | 0 | The study is an in-vitro toxicity/physiological assay on microalgae (Haematococcus lacustris) using sulfamethoxazole as a stress agent, not a pharmacokinetic study. |
+| popPK | Torumkuney_2020 | irrelevant | 0 | 0 | This is an antimicrobial susceptibility study measuring MICs and using PK/PD breakpoints for antibiotics, not a pharmacokinetic study measuring disposition parameters for sulfamethoxazole. |
+| popPK | Torumkuney_2025 | irrelevant | 0 | 0 | The paper is an antimicrobial susceptibility surveillance study reporting MIC and breakpoint data for bacteria, not a pharmacokinetic study with disposition parameters for sulfamethoxazole. |
+| popPK | Vouloumanou_2011 | irrelevant | 0 | 0 | The paper is a review of Trimethoprim/Sulfametrole (SMT) with only brief qualitative comparisons to Sulfamethoxazole (SMX) and no original quantitative PK parameters for SMX. |
+| popPK | Wang_2022 | relevant | 8 | 3 | The study reports PK-PD modeling for sulfamethoxazole in pigs and provides non-compartmental parameters (Cmax, AUC) in the text, but lacks specific quantitative values for clearance, volume, or rate constants (ka) in the provided evidence. |
+| popPK | Wang_2026 | relevant | 10 | 0 | The study presents a population pharmacokinetic model for sulfamethoxazole in humans, but the abstract only describes the model structure and significant covariates without providing the specific numeric parameter estimates. |
+| popPK | Wu_2021 | irrelevant | 2 | 0 | The study evaluates population PK models of sulfamethoxazole in pediatric patients, but the provided evidence contains no quantitative PK parameter values (e.g., CL, V) or the specific PK data, only qualitative performance metrics and overprediction amounts. |
+| popPK | Xiong_2019 | irrelevant | 0 | 0 | The study is an ecotoxicological assessment of antibiotic degradation by microalgae, not a pharmacokinetic study reporting disposition parameters for sulfamethoxazole. |
+| popPK | Zuo_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tacrolimus, and sulfamethoxazole is only mentioned as a co-administered drug affecting tacrolimus clearance. |
+| popPK | de_2023 | irrelevant | 0 | 0 | The study is an ecotoxicological bioassay measuring reproductive effects in worms, not a pharmacokinetic study of sulfamethoxazole disposition. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 10:57 UTC</sub>

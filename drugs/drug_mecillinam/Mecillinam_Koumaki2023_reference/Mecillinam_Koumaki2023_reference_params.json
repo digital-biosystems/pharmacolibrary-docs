@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1200 mg parenteral (J01CA11)",
+ "model_id": "Mecillinam_Koumaki2023_reference",
+ "molar_masses": {
+  "central.C": 0.325426
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.025e-06,
+  "F": 1.0,
+  "MM": 0.325426,
+  "VdPerKg": 0.00012312,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0012,
+  "k12": 0.0009123889971843188,
+  "k21": 0.0013944058258854683,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662008
+ },
+ "reference_peaks": {
+  "central.C": 0.024859951236888132
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}
