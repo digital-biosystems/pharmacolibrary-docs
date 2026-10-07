@@ -1909,6 +1909,29 @@
   "slug": "alclofenac",
   "stale": 0
  },
+ "drug_alclometasone": {
+  "atc_codes": [
+   "D07AB10",
+   "S01BA10"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_alclometasone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "alclometasone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "alclometasone",
+  "stale": 0
+ },
  "drug_alcuronium": {
   "atc_codes": [
    "M03AA01"
@@ -3511,6 +3534,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "ambroxol",
+  "stale": 0
+ },
+ "drug_amcinonide": {
+  "atc_codes": [
+   "D07AC11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_amcinonide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "amcinonide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "amcinonide",
   "stale": 0
  },
  "drug_amenamevir": {
@@ -21159,6 +21204,76 @@
   "slug": "clobenzorex",
   "stale": 0
  },
+ "drug_clobetasol": {
+  "atc_codes": [
+   "D07AD01",
+   "D07CD01",
+   "S01BA17"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_clobetasol",
+  "extracted": 0,
+  "last_change": null,
+  "name": "clobetasol",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "clobetasol",
+  "stale": 0
+ },
+ "drug_clobetasone": {
+  "atc_codes": [
+   "D07AB01",
+   "S01BA09",
+   "S01CA11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_clobetasone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "clobetasone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "clobetasone",
+  "stale": 0
+ },
+ "drug_clocortolone": {
+  "atc_codes": [
+   "D07AB21"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_clocortolone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "clocortolone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "clocortolone",
+  "stale": 0
+ },
  "drug_clodantoin": {
   "atc_codes": [
    "G01AX01"
@@ -26425,6 +26540,53 @@
   "slug": "desogestrel",
   "stale": 0
  },
+ "drug_desonide": {
+  "atc_codes": [
+   "D07AB08",
+   "D07BB02",
+   "S01BA11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_desonide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "desonide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "desonide",
+  "stale": 0
+ },
+ "drug_desoximetasone": {
+  "atc_codes": [
+   "D07AC03",
+   "D07XC02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_desoximetasone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "desoximetasone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "desoximetasone",
+  "stale": 0
+ },
  "drug_desoxycortone": {
   "atc_codes": [
    "H02AA03"
@@ -28074,6 +28236,52 @@
   "slug": "difetarsone",
   "stale": 0
  },
+ "drug_diflorasone": {
+  "atc_codes": [
+   "D07AC10"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_diflorasone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "diflorasone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "diflorasone",
+  "stale": 0
+ },
+ "drug_diflucortolone": {
+  "atc_codes": [
+   "D07AC06",
+   "D07BC04",
+   "D07XC04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_diflucortolone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "diflucortolone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "diflucortolone",
+  "stale": 0
+ },
  "drug_diflunisal": {
   "atc_codes": [
    "N02BA11"
@@ -28100,6 +28308,29 @@
   "rendered": true,
   "slug": "diflunisal",
   "stale": 1
+ },
+ "drug_difluprednate": {
+  "atc_codes": [
+   "D07AC19",
+   "S01BA16"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_difluprednate",
+  "extracted": 0,
+  "last_change": null,
+  "name": "difluprednate",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "difluprednate",
+  "stale": 0
  },
  "drug_digitalis_antitoxin": {
   "atc_codes": [
@@ -39902,6 +40133,28 @@
   "slug": "fluciclovine_18f",
   "stale": 0
  },
+ "drug_fluclorolone": {
+  "atc_codes": [
+   "D07AC02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_fluclorolone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "fluclorolone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "fluclorolone",
+  "stale": 0
+ },
  "drug_flucloxacillin": {
   "atc_codes": [
    "J01CF05"
@@ -40167,6 +40420,29 @@
   "slug": "fludrocortisone",
   "stale": 0
  },
+ "drug_fludroxycortide": {
+  "atc_codes": [
+   "D07AC07",
+   "D07CC03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_fludroxycortide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "fludroxycortide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "fludroxycortide",
+  "stale": 0
+ },
  "drug_flufenamic_acid": {
   "atc_codes": [
    "M01AG03"
@@ -40313,6 +40589,32 @@
   "rejected": 2,
   "rendered": true,
   "slug": "flumequine",
+  "stale": 0
+ },
+ "drug_flumetasone": {
+  "atc_codes": [
+   "D07AB03",
+   "D07BB01",
+   "D07CB05",
+   "D07XB01",
+   "S02CA02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_flumetasone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "flumetasone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "flumetasone",
   "stale": 0
  },
  "drug_flunarizine": {
@@ -70641,6 +70943,37 @@
   "slug": "opium",
   "stale": 0
  },
+ "drug_opium_alkaloids_with_morphine": {
+  "atc_codes": [
+   "R05DA05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Simons_2023 \u00b7 reference",
+    "model_id": "OpiumAlkaloidsWithMorphine_Simons2023_reference"
+   },
+   {
+    "label": "S\u00e4we_1981 \u00b7 reference",
+    "model_id": "OpiumAlkaloidsWithMorphine_Swe1981_reference"
+   }
+  ],
+  "dir": "drug_opium_alkaloids_with_morphine",
+  "extracted": 1,
+  "last_change": "2026-10-07T21:00:52.307561+00:00",
+  "name": "opium alkaloids with morphine",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "opium_alkaloids_with_morphine",
+  "stale": 0
+ },
  "drug_oportuzumab_monatox": {
   "atc_codes": [
    "L01FX16"
@@ -71790,6 +72123,28 @@
   "slug": "oxedrine",
   "stale": 0
  },
+ "drug_oxeladin": {
+  "atc_codes": [
+   "R05DB09"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_oxeladin",
+  "extracted": 0,
+  "last_change": null,
+  "name": "oxeladin",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "oxeladin",
+  "stale": 0
+ },
  "drug_oxetacaine": {
   "atc_codes": [
    "C05AD06"
@@ -71974,6 +72329,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "oxitropium_bromide",
+  "stale": 0
+ },
+ "drug_oxolamine": {
+  "atc_codes": [
+   "R05DB07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_oxolamine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "oxolamine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "oxolamine",
   "stale": 0
  },
  "drug_oxolinic_acid": {
@@ -75259,6 +75636,28 @@
   "slug": "pentoxifylline",
   "stale": 0
  },
+ "drug_pentoxyverine": {
+  "atc_codes": [
+   "R05DB05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_pentoxyverine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "pentoxyverine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "pentoxyverine",
+  "stale": 0
+ },
  "drug_pepsin": {
   "atc_codes": [
    "A09AA03",
@@ -76823,6 +77222,28 @@
   "slug": "phloroglucinol",
   "stale": 0
  },
+ "drug_pholcodine": {
+  "atc_codes": [
+   "R05DA08"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_pholcodine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "pholcodine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "pholcodine",
+  "stale": 0
+ },
  "drug_phospholipids": {
   "atc_codes": [
    "A05BA10"
@@ -77364,6 +77785,28 @@
   "slug": "pipamperone",
   "stale": 0
  },
+ "drug_pipazetate": {
+  "atc_codes": [
+   "R05DB11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_pipazetate",
+  "extracted": 0,
+  "last_change": null,
+  "name": "pipazetate",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "pipazetate",
+  "stale": 0
+ },
  "drug_pipecuronium": {
   "atc_codes": [
    "M03AC06"
@@ -77611,6 +78054,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "piperazine",
+  "stale": 0
+ },
+ "drug_piperidione": {
+  "atc_codes": [
+   "R05DB23"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_piperidione",
+  "extracted": 0,
+  "last_change": null,
+  "name": "piperidione",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "piperidione",
   "stale": 0
  },
  "drug_piperidolate": {
@@ -80372,6 +80837,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "prenalterol",
+  "stale": 0
+ },
+ "drug_prenoxdiazine": {
+  "atc_codes": [
+   "R05DB18"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_prenoxdiazine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "prenoxdiazine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "prenoxdiazine",
   "stale": 0
  },
  "drug_prenylamine": {
@@ -97618,6 +98105,28 @@
   "slug": "thallium_201tl_chloride",
   "stale": 0
  },
+ "drug_thebacon": {
+  "atc_codes": [
+   "R05DA10"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_thebacon",
+  "extracted": 0,
+  "last_change": null,
+  "name": "thebacon",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "thebacon",
+  "stale": 0
+ },
  "drug_thenalidine": {
   "atc_codes": [
    "D04AA03",
@@ -99342,6 +99851,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "tioxolone",
+  "stale": 0
+ },
+ "drug_tipepidine": {
+  "atc_codes": [
+   "R05DB24"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_tipepidine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "tipepidine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tipepidine",
   "stale": 0
  },
  "drug_tipranavir": {
@@ -107279,6 +107810,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "zinc_sulfate",
+  "stale": 0
+ },
+ "drug_zipeprol": {
+  "atc_codes": [
+   "R05DB15"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_zipeprol",
+  "extracted": 0,
+  "last_change": null,
+  "name": "zipeprol",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "zipeprol",
   "stale": 0
  },
  "drug_ziprasidone": {

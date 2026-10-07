@@ -2117,24 +2117,24 @@
         - tromantadine <sub>(0/0/0)</sub>
     - D07 Corticosteroids, Dermatological Preparations
       - [D07A Corticosteroids, Plain](atc/D07A.md)
-        - alclometasone <sub>(0/0/0)</sub>
-        - amcinonide <sub>(0/0/0)</sub>
+        - [alclometasone <sub>(0/0/0)</sub>](drugs/drug_alclometasone/)
+        - [amcinonide <sub>(0/0/0)</sub>](drugs/drug_amcinonide/)
         - [beclometasone <sub>(0/0/0)</sub>](drugs/drug_beclometasone/)
         - [betamethasone <sub>(1/0/0)</sub>](drugs/drug_betamethasone/)
         - [budesonide <sub>(0/3/0)</sub>](drugs/drug_budesonide/)
-        - clobetasol <sub>(0/0/0)</sub>
-        - clobetasone <sub>(0/0/0)</sub>
-        - clocortolone <sub>(0/0/0)</sub>
+        - [clobetasol <sub>(0/0/0)</sub>](drugs/drug_clobetasol/)
+        - [clobetasone <sub>(0/0/0)</sub>](drugs/drug_clobetasone/)
+        - [clocortolone <sub>(0/0/0)</sub>](drugs/drug_clocortolone/)
         - combinations of corticosteroids <sub>(0/0/0)</sub>
-        - desonide <sub>(0/0/0)</sub>
-        - desoximetasone <sub>(0/0/0)</sub>
+        - [desonide <sub>(0/0/0)</sub>](drugs/drug_desonide/)
+        - [desoximetasone <sub>(0/0/0)</sub>](drugs/drug_desoximetasone/)
         - [dexamethasone <sub>(2/4/0)</sub>](drugs/drug_dexamethasone/)
-        - diflorasone <sub>(0/0/0)</sub>
-        - diflucortolone <sub>(0/0/0)</sub>
-        - difluprednate <sub>(0/0/0)</sub>
-        - fluclorolone <sub>(0/0/0)</sub>
-        - fludroxycortide <sub>(0/0/0)</sub>
-        - flumetasone <sub>(0/0/0)</sub>
+        - [diflorasone <sub>(0/0/0)</sub>](drugs/drug_diflorasone/)
+        - [diflucortolone <sub>(0/0/0)</sub>](drugs/drug_diflucortolone/)
+        - [difluprednate <sub>(0/0/0)</sub>](drugs/drug_difluprednate/)
+        - [fluclorolone <sub>(0/0/0)</sub>](drugs/drug_fluclorolone/)
+        - [fludroxycortide <sub>(0/0/0)</sub>](drugs/drug_fludroxycortide/)
+        - [flumetasone <sub>(0/0/0)</sub>](drugs/drug_flumetasone/)
         - [fluocinolone acetonide <sub>(0/1/0)</sub>](drugs/drug_fluocinolone_acetonide/)
         - [fluocinonide <sub>(0/0/0)</sub>](drugs/drug_fluocinonide/)
         - fluocortin <sub>(0/0/0)</sub>
@@ -2159,8 +2159,11 @@
       - [D07B Corticosteroids, Combinations With Antiseptics](atc/D07B.md)
         - [betamethasone <sub>(1/0/0)</sub>](drugs/drug_betamethasone/)
         - betamethasone and antiseptics <sub>(0/0/0)</sub>
+        - [desonide <sub>(0/0/0)</sub>](drugs/drug_desonide/)
         - desonide and antiseptics <sub>(0/0/0)</sub>
+        - [diflucortolone <sub>(0/0/0)</sub>](drugs/drug_diflucortolone/)
         - diflucortolone and antiseptics <sub>(0/0/0)</sub>
+        - [flumetasone <sub>(0/0/0)</sub>](drugs/drug_flumetasone/)
         - flumetasone and antiseptics <sub>(0/0/0)</sub>
         - [fluocinolone acetonide <sub>(0/1/0)</sub>](drugs/drug_fluocinolone_acetonide/)
         - fluocinolone acetonide and antiseptics <sub>(0/0/0)</sub>
@@ -2177,10 +2180,13 @@
         - beclometasone and antibiotics <sub>(0/0/0)</sub>
         - [betamethasone <sub>(1/0/0)</sub>](drugs/drug_betamethasone/)
         - betamethasone and antibiotics <sub>(0/0/0)</sub>
+        - [clobetasol <sub>(0/0/0)</sub>](drugs/drug_clobetasol/)
         - clobetasol and antibiotics <sub>(0/0/0)</sub>
         - [dexamethasone <sub>(2/4/0)</sub>](drugs/drug_dexamethasone/)
         - dexamethasone and antibiotics <sub>(0/0/0)</sub>
+        - [fludroxycortide <sub>(0/0/0)</sub>](drugs/drug_fludroxycortide/)
         - fludroxycortide and antibiotics <sub>(0/0/0)</sub>
+        - [flumetasone <sub>(0/0/0)</sub>](drugs/drug_flumetasone/)
         - flumetasone and antibiotics <sub>(0/0/0)</sub>
         - [fluocinolone acetonide <sub>(0/1/0)</sub>](drugs/drug_fluocinolone_acetonide/)
         - fluocinolone acetonide and antibiotics <sub>(0/0/0)</sub>
@@ -2200,7 +2206,10 @@
         - triamcinolone and antibiotics <sub>(0/0/0)</sub>
       - [D07X Corticosteroids, Other Combinations](atc/D07X.md)
         - [betamethasone <sub>(1/0/0)</sub>](drugs/drug_betamethasone/)
+        - [desoximetasone <sub>(0/0/0)</sub>](drugs/drug_desoximetasone/)
         - [dexamethasone <sub>(2/4/0)</sub>](drugs/drug_dexamethasone/)
+        - [diflucortolone <sub>(0/0/0)</sub>](drugs/drug_diflucortolone/)
+        - [flumetasone <sub>(0/0/0)</sub>](drugs/drug_flumetasone/)
         - [fluocortolone <sub>(0/2/0)</sub>](drugs/drug_fluocortolone/)
         - [fluorometholone <sub>(0/0/0)</sub>](drugs/drug_fluorometholone/)
         - [hydrocortisone <sub>(0/0/0)</sub>](drugs/drug_hydrocortisone/)
@@ -5575,18 +5584,18 @@
         - normethadone <sub>(0/0/0)</sub>
         - noscapine <sub>(0/0/0)</sub>
         - opium alkaloids and derivatives r05da20 <sub>(0/0/0)</sub>
-        - opium alkaloids with morphine <sub>(0/0/0)</sub>
+        - [opium alkaloids with morphine <sub>(1/0/0)</sub>](drugs/drug_opium_alkaloids_with_morphine/)
         - other cough suppressants r05db20 <sub>(0/0/0)</sub>
-        - oxeladin <sub>(0/0/0)</sub>
-        - oxolamine <sub>(0/0/0)</sub>
-        - pentoxyverine <sub>(0/0/0)</sub>
-        - pholcodine <sub>(0/0/0)</sub>
-        - pipazetate <sub>(0/0/0)</sub>
-        - piperidione <sub>(0/0/0)</sub>
-        - prenoxdiazine <sub>(0/0/0)</sub>
-        - thebacon <sub>(0/0/0)</sub>
-        - tipepidine <sub>(0/0/0)</sub>
-        - zipeprol <sub>(0/0/0)</sub>
+        - [oxeladin <sub>(0/0/0)</sub>](drugs/drug_oxeladin/)
+        - [oxolamine <sub>(0/0/0)</sub>](drugs/drug_oxolamine/)
+        - [pentoxyverine <sub>(0/0/0)</sub>](drugs/drug_pentoxyverine/)
+        - [pholcodine <sub>(0/1/0)</sub>](drugs/drug_pholcodine/)
+        - [pipazetate <sub>(0/0/0)</sub>](drugs/drug_pipazetate/)
+        - [piperidione <sub>(0/0/0)</sub>](drugs/drug_piperidione/)
+        - [prenoxdiazine <sub>(0/0/0)</sub>](drugs/drug_prenoxdiazine/)
+        - [thebacon <sub>(0/0/0)</sub>](drugs/drug_thebacon/)
+        - [tipepidine <sub>(0/0/0)</sub>](drugs/drug_tipepidine/)
+        - [zipeprol <sub>(0/0/0)</sub>](drugs/drug_zipeprol/)
     - R06 Antihistamines For Systemic Use
       - [R06A Antihistamines For Systemic Use](atc/R06A.md)
         - acrivastine <sub>(0/0/0)</sub>
@@ -5765,13 +5774,18 @@
         - [vidarabine <sub>(0/2/0)</sub>](drugs/drug_vidarabine/)
         - [zinc compounds <sub>(0/0/0)</sub>](drugs/drug_zinc_compounds/)
       - [S01B Antiinflammatory Agents](atc/S01B.md)
+        - [alclometasone <sub>(0/0/0)</sub>](drugs/drug_alclometasone/)
         - [bendazac <sub>(0/0/0)</sub>](drugs/drug_bendazac/)
         - [betamethasone <sub>(1/0/0)</sub>](drugs/drug_betamethasone/)
         - betamethasone and mydriatics <sub>(0/0/0)</sub>
         - [bromfenac <sub>(0/0/0)</sub>](drugs/drug_bromfenac/)
+        - [clobetasol <sub>(0/0/0)</sub>](drugs/drug_clobetasol/)
+        - [clobetasone <sub>(0/0/0)</sub>](drugs/drug_clobetasone/)
         - [cortisone <sub>(0/1/0)</sub>](drugs/drug_cortisone/)
+        - [desonide <sub>(0/0/0)</sub>](drugs/drug_desonide/)
         - [dexamethasone <sub>(2/4/0)</sub>](drugs/drug_dexamethasone/)
         - [diclofenac <sub>(2/4/3)</sub>](drugs/drug_diclofenac/)
+        - [difluprednate <sub>(0/0/0)</sub>](drugs/drug_difluprednate/)
         - [fluocinolone acetonide <sub>(0/1/0)</sub>](drugs/drug_fluocinolone_acetonide/)
         - [fluorometholone <sub>(0/0/0)</sub>](drugs/drug_fluorometholone/)
         - fluorometholone and mydriatics <sub>(0/0/0)</sub>
@@ -5797,6 +5811,7 @@
         - betamethasone and antiinfectives <sub>(0/0/0)</sub>
         - [Chloroprednisone <sub>(0/0/0)</sub>](drugs/drug_chloroprednisone/)
         - chloroprednisone and antiinfectives <sub>(0/0/0)</sub>
+        - [clobetasone <sub>(0/0/0)</sub>](drugs/drug_clobetasone/)
         - clobetasone and antiinfectives <sub>(0/0/0)</sub>
         - [dexamethasone <sub>(2/4/0)</sub>](drugs/drug_dexamethasone/)
         - dexamethasone and antiinfectives <sub>(0/0/0)</sub>
@@ -5977,6 +5992,7 @@
       - [S02C Corticosteroids And Antiinfectives In Combination](atc/S02C.md)
         - [dexamethasone <sub>(2/4/0)</sub>](drugs/drug_dexamethasone/)
         - [fludrocortisone <sub>(0/1/0)</sub>](drugs/drug_fludrocortisone/)
+        - [flumetasone <sub>(0/0/0)</sub>](drugs/drug_flumetasone/)
         - flumetasone and antiinfectives <sub>(0/0/0)</sub>
         - [fluocinolone acetonide <sub>(0/1/0)</sub>](drugs/drug_fluocinolone_acetonide/)
         - [hydrocortisone <sub>(0/0/0)</sub>](drugs/drug_hydrocortisone/)
