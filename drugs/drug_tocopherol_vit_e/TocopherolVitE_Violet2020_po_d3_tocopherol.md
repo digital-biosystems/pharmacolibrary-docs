@@ -24,14 +24,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:49.907787+00:00) predates the upstream re-run (2026-10-05 08:59:35.595449+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:49.907787+00:00) predates the upstream re-run (2026-10-07 17:04:52.413816+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `deuterated α-tocopherols`, measured `d6-α-tocopherol`.
 
 ## Citation
 Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
   ·  DOI: [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309)
 
 ## Model component
-<dbs-pgx drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -43,11 +45,11 @@ Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Elimination rate (Ke) | `Q47` · kel | 0.019 | Ke | not captured | [ke] | not captured | exact (1.0) | Violet_2020_table_2:row0:col4, Violet_2020_table_2:row1:col4 | — | not captured |
-| Half-life (h) | `Q57` · t1/2z | 39.0 | h | 140400.0 | [h] | not captured | llm (0.6) | Violet_2020_table_2:row2:col4, Violet_2020_table_2:row3:col4 | — | not captured |
-| Cmax (µM)A | `Q32` · Cmax | 0.20 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row4:col4, Violet_2020_table_2:row5:col4 | — | not captured |
-| Tmax (h)B | `Q56` · tmax | 8.5 | h | 30600.0 | h | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row6:col4, Violet_2020_table_2:row7:col4 | — | not captured |
-| AUC0–72h (µM × h)C | `Q19` · AUCt | 8.6 | not captured | not captured | not captured | not captured | llm (0.6) | Violet_2020_table_2:row10:col4, Violet_2020_table_2:row11:col4 | — | not captured |
+| Elimination rate (Ke) | `Q47` · kel | 0.022 | Ke | not captured | [ke] | not captured | exact (1.0) | Violet_2020_table_2:row0:col4 | — | not captured |
+| Half-life (h) | `Q57` · t1/2z | 31.5 | h | 113400.0 | [h] | not captured | llm (0.6) | Violet_2020_table_2:row2:col4 | — | not captured |
+| Cmax (µM)A | `Q32` · Cmax | 0.28 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row4:col4 | — | not captured |
+| Tmax (h)B | `Q56` · tmax | 11.4 | h | 41040.0 | h | not captured | llm_confirmed (0.6) | Violet_2020_table_2:row6:col4 | — | not captured |
+| AUC0–72h (µM × h)C | `Q19` · AUCt | 10.7 | not captured | not captured | not captured | not captured | llm (0.6) | Violet_2020_table_2:row10:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,24 +59,26 @@ Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'po d3-α-tocopherol' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_mismatch: 'Elimination rate (Ke)' → Q47 (unit '[current] * [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q19 ('AUC0–8h (µM × h)C', value '0.80') — already have one for this compound
+- dropped duplicate Q19 ('AUC0–8h (µM × h)C', value '1.19') — already have one for this compound
 - implicit units: 'Cmax (µM)A' — the LLM proposed 'µM', whose dimension does not fit Q32; left unset
-- implicit units: 'Tmax (h)B' → h (from the paper text: "The parameter label in the input explicitly includes the unit: 'Tmax (h)B = 8.5'.")
+- implicit units: 'Tmax (h)B' → h (from the paper text: "The provided parameter list includes the unit in parentheses immediately following the parameter name: 'Tmax (h)B = 11.4")
 - implicit units: 'AUC0–72h (µM × h)C' — the LLM proposed 'µM × h', whose dimension does not fit Q19; left unset
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=alpha-tocopherol
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=d6-α-tocopherol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'po d3-α-tocopherol' subgroup of Violet_2020 (paper reports 2 populations: iv d6-α-tocopherol, po d3-α-tocopherol)
+- molar mass: no plausible PubChem entry for 'd6-α-tocopherol' ('d6-α-tocopherol') — left in mass units
 - molar mass: none found for 'tocopherol_vit_e' — its concentrations stay mass-only
+- molar mass: none found for 'd6-α-tocopherol' — its concentrations stay mass-only
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- LLM selected parameter table(s) 2
-- unparsed cell Violet_2020_table_2:row9:col4 = '67.5% ± 8.3%'
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -110,14 +114,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q47 | fail | 0.019 | 0.024 | 1.2632 | 0.05 | footnote reference category |
-| C2_base_Q56 | fail | 8.5 | 7.7 | 0.9059 | 0.05 | footnote reference category |
-| C2_base_Q57 | fail | 39.0 | 30.0 | 0.7692 | 0.05 | footnote reference category |
-| C5_dimension_Q47 | fail | [current] * [time] | Ke | not captured | not captured | ['Violet_2020_table_2:row0:col4', 'Violet_2020_table_2:row1:col4'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row6:col4', 'Violet_2020_table_2:row7:col4'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row2:col4', 'Violet_2020_table_2:row3:col4'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Violet_2020_table_2:row10:col4', 'Violet_2020_table_2:row11:col4'] |
-| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Violet_2020_table_2:row4:col4', 'Violet_2020_table_2:row5:col4'] |
+| C2_base_Q47 | fail | 0.022 | 0.024 | 1.0909 | 0.05 | footnote reference category |
+| C2_base_Q56 | fail | 11.4 | 7.7 | 0.6754 | 0.05 | footnote reference category |
+| C2_base_Q57 | pass | 31.5 | 30.0 | 0.9524 | 0.05 | footnote reference category |
+| C5_dimension_Q47 | fail | [current] * [time] | Ke | not captured | not captured | ['Violet_2020_table_2:row0:col4'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row6:col4'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Violet_2020_table_2:row2:col4'] |
+| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Violet_2020_table_2:row10:col4'] |
+| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Violet_2020_table_2:row4:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -143,4 +147,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 08:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:04 UTC</sub>

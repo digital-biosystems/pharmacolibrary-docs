@@ -4,7 +4,7 @@
 
 # ibritumomab tiuxetan (90Y) — `IbritumomabTiuxetan90y_Morschhauser2018_f1`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 The clearance parameter for ibritumomab tiuxetan carries the verbatim unit ml.min rather than ml/min, so its dimension is inconsistent with a clearance and no SI value could be derived. The other reported parameters (Cmax 0.308 µg.mL−1, terminal half-life 83.6 h, MRT 114.1 h, AUC 1708.1 µg.min.mL−1, AUCt 261.98 µg.min.mL−1) were extracted, but the clearance unit could not be converted to SI units. A second reader also disagreed on the analyte (ibritumomab tiuxetan_90y vs ibritumomab tiuxetan, and ibritumomab tiuxetan_111in as primary analyte) and on the classification of the two AUC parameters, and read additional parameters (AUCcum 7d 558.03, blood 4131.0, vertebrae L2-L4 7.84) absent from this record. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibritumomab tiuxetan, the second reading 90Y-ibritumomab tiuxetan; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibritumomab_tiuxetan_90y, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:14.024743+00:00) predates the upstream re-run (2026-10-07 16:57:48.731829+00:00). Current validate status: `rejected`.
 
 ## Citation
 Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018)
   ·  DOI: [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0)
 
 ## Model component
-<dbs-pgx drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_f1" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_f1" status="rejected" stale="true" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan_90y" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -44,7 +46,7 @@ Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific re
 | Cmax* (µg.mL−1) | `Q32` · Cmax | 0.308 | µg.mL−1 | not captured | [µg] / [ml] | not captured | llm_confirmed (0.6) | Morschhauser_2018_table_3:row1:col1, Morschhauser_2018_table_3:row1:col2, Morschhauser_2018_table_3:row7:col1, Morschhauser_2018_table_3:row7:col2, Morschhauser_2018_table_3:row14:col1, Morschhauser_2018_table_3:row14:col2, Morschhauser_2018_table_3:row21:col1, Morschhauser_2018_table_3:row21:col2 | — | not captured |
 | T1/2* (h) | `Q57` · t1/2z | 83.6 | h | 300960.0 | [h] | not captured | llm_confirmed (0.6) | Morschhauser_2018_table_3:row2:col1, Morschhauser_2018_table_3:row2:col2 | — | not captured |
 | MRT* (h) | `Q53` · MRT | 114.1 | h | 410760.0 | [h] | not captured | llm_confirmed (0.6) | Morschhauser_2018_table_3:row3:col1, Morschhauser_2018_table_3:row3:col2, Morschhauser_2018_table_3:row10:col1, Morschhauser_2018_table_3:row10:col2, Morschhauser_2018_table_3:row17:col1, Morschhauser_2018_table_3:row17:col2, Morschhauser_2018_table_3:row24:col1, Morschhauser_2018_table_3:row24:col2 | — | not captured |
-| Clearance* (ml.min) | `Q22` · CL | 1.03 | ml.min | not captured | [min] · [ml] | not captured | llm_confirmed (0.6) | Morschhauser_2018_table_3:row4:col1, Morschhauser_2018_table_3:row4:col2 | — | not captured |
+| Clearance* (ml.min) | `Q22` · CL | 1.03 | ml.min | 1.7166666666666665e-08 | [min] · [ml] | not captured | llm_confirmed (0.6) | Morschhauser_2018_table_3:row4:col1, Morschhauser_2018_table_3:row4:col2 | — | not captured |
 | AUC Total* (µg.min.mL−1) | `Q88` · AUC | 1708.1 | µg.min.mL−1 | not captured | [[min] · [µg]] / [ml] | not captured | llm_confirmed (0.6) | Morschhauser_2018_table_3:row5:col1, Morschhauser_2018_table_3:row5:col2 | — | not captured |
 | AUCcum 4d* (µg.min.mL−1) | `Q19` · AUCt | 261.98 | µg.min.mL−1 | not captured | [[min] · [µg]] / [ml] | not captured | llm (0.6) | Morschhauser_2018_table_3:row11:col1, Morschhauser_2018_table_3:row11:col2, Morschhauser_2018_table_3:row18:col1, Morschhauser_2018_table_3:row18:col2, Morschhauser_2018_table_3:row25:col1, Morschhauser_2018_table_3:row25:col2 | — | not captured |
 
@@ -62,11 +64,13 @@ Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific re
 - dropped duplicate Q19 ('AUCcum 7d* (µg.min.mL−1)', value '558.03') — already have one for this compound
 - dropped unlinked row (NIL): 'Liver' — extend the ontology if this is a real PK parameter (source ['Morschhauser_2018_table_3:row13:col2'])
 - dropped unlinked row (NIL): 'Spleen' — extend the ontology if this is a real PK parameter (source ['Morschhauser_2018_table_3:row20:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibritumomab tiuxetan
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibritumomab_tiuxetan_90y
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'f1' subgroup of Morschhauser_2018 (paper reports 5 populations: f1, f2, liver, lumbar vertebrae l2-l4, spleen)
-- review gap-fill skipped: this record measures 'ibritumomab tiuxetan', not ibritumomab_tiuxetan_90y — the review values are the parent's
+- molar mass: none found for 'ibritumomab_tiuxetan_90y' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell Morschhauser_2018_table_3:row8:col1 = '1.11 E-4 (1.31 E-4)'
@@ -91,17 +95,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[blood]` | not captured | 4131.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auccum 4d*]` | 261.98 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[liver]` | not captured | 489.61 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vertebrae l2-l4]` | not captured | 7.84 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | ibritumomab tiuxetan | 90Y-ibritumomab tiuxetan | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | ibritumomab tiuxetan | 111In-ibritumomab tiuxetan | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | ibritumomab_tiuxetan_90y | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | ibritumomab_tiuxetan_90y | unknown | mismatch |
 
 </details>
 
@@ -126,6 +129,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Morschhauser_2018_table_3:row5:col1', 'Morschhauser_2018_table_3:row5:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.03 | not captured | not captured | ['Morschhauser_2018_table_3:row4:col1', 'Morschhauser_2018_table_3:row4:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0618 L/h | not captured | not captured | ['Morschhauser_2018_table_3:row4:col1', 'Morschhauser_2018_table_3:row4:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -150,4 +154,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-25 05:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:57 UTC</sub>

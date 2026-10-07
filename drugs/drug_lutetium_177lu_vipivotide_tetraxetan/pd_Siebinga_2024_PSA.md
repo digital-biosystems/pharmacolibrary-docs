@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PD prostate-specific antigen&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PD PSA&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# prostate-specific antigen — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+# PSA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,19 +14,19 @@
 
 ## What this record describes
 
-**As extracted:** [177Lu]Lu-PSMA-I&T tumor concentration drives prostate-specific antigen: disease-progression model.
+**As extracted:** [177Lu]Lu-PSMA-I&T drives PSA (in µg/L): delayed effect through an effect compartment.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > The model describes the inhibition of PSA growth by [177Lu]Lu-PSMA-I&T tumor concentration using a linear direct effect and a linear delayed effect, with a first-order PSA growth rate (kG) of 0.000408 h−1 and a direct effect parameter (KD, direct) of 0.000335 L·day−1·GBq−1. The paper does not specify the exact mechanistic pathway for the delayed effect, suggesting possibilities such as tumor microenvironment changes or a radiation-induced bystander response.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Siebinga_2024`
-- **model family:** `disease_progression`
+- **model family:** `effect_compartment`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024)
@@ -35,14 +35,50 @@ Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Tumor volume on baseline PSA (µg/L)b — 95% CI | `Q336` · not captured | 15.5 | µg/L | not captured | llm_corrected (not captured) | Tab3:row3:col2 |
-| PD (effect) | PSA growth rate (kG) (h−1) — 95% CI | `Q340` · not captured | 0.000286 | h−1 | not captured | llm (not captured) | Tab3:row4:col2 |
-| PD (effect) | Baseline PSA (CV%) — 95% CI | `Q324` · not captured | 151 | not captured | not captured | baseline_identity (not captured) | Tab3:row10:col2 |
+| PD (effect) | Baseline PSA | `Q324` · not captured | 140 | µg/L | not captured | llm (not captured) | Siebinga_2024:pdv3 |
+| PD (effect) | PSA growth rate | `Q340` · not captured | 0.000408 | h−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
+| PD (effect) | Direct drug-induced effect | `Q335` · not captured | 0.00335 | L·day−1·GBq−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
+| PD (effect) | Rate constant effect compartment | `Q326` · not captured | 0.00128 | h−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
+| PD (effect) | Delayed drug-induced effect | `Q335` · not captured | 0.0000328 | L·day−1·MBq−1 | not captured | llm (not captured) | Siebinga_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
+
+
+## Exposure-response model
+
+`Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 140 µg/L | 0.00014 kg/m3 |
+| slope | 0.00335 L·day−1·GBq−1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.00014, `per_exposure_unit` = 0.00335
+
+Deviations:
+
+- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
+- `pd_binding_off_target_driver` — driver compound '[177Lu]Lu-PSMA-I&T' is not 'lutetium_177lu_vipivotide_tetraxetan' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+Blocking:
+
+- off_target_driver: '[177Lu]Lu-PSMA-I&T' is not 'lutetium_177lu_vipivotide_tetraxetan' (S12)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  

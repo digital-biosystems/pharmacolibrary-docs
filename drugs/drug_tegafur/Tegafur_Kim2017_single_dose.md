@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Kim_2017 \u00b7 single_dose&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tegafur — `Tegafur_Kim2017_single_dose`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,23 +25,21 @@ The model does not reproduce the paper's time of the peak (tmax): paper 1.7 h ve
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:27.580258+00:00) predates the upstream re-run (2026-10-07 17:20:04.806217+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Switzerla… (2017)
   ·  DOI: [10.3390/molecules22091488](https://doi.org/10.3390/molecules22091488)
 
 ## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_single_dose" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_single_dose" status="extracted" stale="true" population="rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 7 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tmax (h) | `Q56` · tmax | 1.3 | h | 4680.0 | [h] | not captured | exact (1.0) | Kim_2017_table_1:row2:col2, Kim_2017_table_1:row2:col3, Kim_2017_table_1:row9:col2, Kim_2017_table_1:row9:col3, Kim_2017_table_1:row15:col2, Kim_2017_table_1:row15:col3 | — | not captured |
@@ -50,7 +48,8 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 | AUCinf (ng·h/mL) | `Q17` · AUC∞ | 42945.5 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Kim_2017_table_1:row5:col2, Kim_2017_table_1:row5:col3, Kim_2017_table_1:row12:col2, Kim_2017_table_1:row12:col3, Kim_2017_table_1:row18:col2, Kim_2017_table_1:row18:col3 | — | not captured |
 | CL/F (mL/min/kg) | `Q27` · CL/F | 2.1 | mL/min/kg | 2.45e-06 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Kim_2017_table_1:row6:col2, Kim_2017_table_1:row6:col3, Kim_2017_table_1:row19:col2, Kim_2017_table_1:row19:col3 | — | not captured |
 | Vz/F (L/kg) | `Q76` · V/F | 0.4 | L/kg | 0.028 | [l] / [kg] | not captured | exact (1.0) | Kim_2017_table_1:row7:col3, Kim_2017_table_1:row20:col2, Kim_2017_table_1:row20:col3 | — | not captured |
-| AUCmeta/AUCparent (%) | `Q21` · AUC ratio | 3.3 | not captured | not captured | not captured | not captured | llm (0.6) | Kim_2017_table_1:row13:col2, Kim_2017_table_1:row13:col3 | — | not captured |
+| AUCmeta/AUCparent (%) | `Q84` · AUC%ext | 3.3 | not captured | not captured | not captured | not captured | llm (0.6) | Kim_2017_table_1:row13:col2, Kim_2017_table_1:row13:col3 | — | not captured |
+| Ka | `Q49` · kabs | 0.08 | h-1 | 2.2222222222222223e-05 | 1/h | not captured | review_gapfill (0.7) | Zuo_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,10 +59,8 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Control (n = 5)' — extend the ontology if this is a real PK parameter (source ['Kim_2017_table_1:row0:col2', 'Kim_2017_table_1:row0:col3'])
@@ -71,7 +68,15 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 - dropped unlinked row (NIL): '5-FU' — extend the ontology if this is a real PK parameter (source ['Kim_2017_table_1:row8:col2', 'Kim_2017_table_1:row8:col3'])
 - dropped unlinked row (NIL): 'Gimeracil' — extend the ontology if this is a real PK parameter (source ['Kim_2017_table_1:row14:col2', 'Kim_2017_table_1:row14:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tegafur
-- population split: 'single dose' subgroup of Kim_2017 (paper reports 6 populations: multiple dose, parameter, population mean (bsv), single dose, symbol, unit)
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [0] (site presystemic: 'To determine the effect of SDT multiple dose pretreatment, the oral absorption rate of tegafur (Ka), metabolic conversio')
+- population split: 'single dose' subgroup of Kim_2017 (paper reports 3 populations: multiple dose, population mean (bsv), single dose)
+- row roles: 2 per-group rows of tegafur absorption_rate_constant but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of 5-FU formation_rate_constant but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of 5-FU clearance but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 24 linked by role; re-tagged parent→5-FU ×22, parent→gimeracil ×5
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Zuo_2024's review values (primary lacked it)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
@@ -103,6 +108,7 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Kim_2017_table_1:row5:col2', 'Kim_2017_table_1:row5:col3', 'Kim_2017_table_1:row12:col2', 'Kim_2017_table_1:row12:col3', 'Kim_2017_table_1:row18:col2', 'Kim_2017_table_1:row18:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kim_2017_table_1:row6:col2', 'Kim_2017_table_1:row6:col3', 'Kim_2017_table_1:row19:col2', 'Kim_2017_table_1:row19:col3'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Kim_2017_table_1:row3:col2', 'Kim_2017_table_1:row3:col3', 'Kim_2017_table_1:row10:col2', 'Kim_2017_table_1:row10:col3', 'Kim_2017_table_1:row16:col2', 'Kim_2017_table_1:row16:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zuo_2024:review'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Kim_2017_table_1:row2:col2', 'Kim_2017_table_1:row2:col3', 'Kim_2017_table_1:row9:col2', 'Kim_2017_table_1:row9:col3', 'Kim_2017_table_1:row15:col2', 'Kim_2017_table_1:row15:col3'] |
 | C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Kim_2017_table_1:row4:col2', 'Kim_2017_table_1:row4:col3', 'Kim_2017_table_1:row11:col2', 'Kim_2017_table_1:row11:col3', 'Kim_2017_table_1:row17:col2', 'Kim_2017_table_1:row17:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kim_2017_table_1:row7:col3', 'Kim_2017_table_1:row20:col2', 'Kim_2017_table_1:row20:col3'] |
@@ -152,13 +158,24 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_modelica.zip" download>Tegafur_Kim2017_single_dose_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_fmi.zip" download>Tegafur_Kim2017_single_dose_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_matlab.zip" download>Tegafur_Kim2017_single_dose_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_matlab_simbio.zip" download>Tegafur_Kim2017_single_dose_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_sbml.zip" download>Tegafur_Kim2017_single_dose_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_cellml.zip" download>Tegafur_Kim2017_single_dose_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose.svg" alt="Tegafur_Kim2017_single_dose diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 350 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 350 mg.
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 0.08 /h, F 1). Dose in the paper: 350 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tegafur/Tegafur_Kim2017_single_dose/Tegafur_Kim2017_single_dose_sim_controls.json"></dbs-fmusim>
 
@@ -167,4 +184,4 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 07:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:20 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;pemetrexed&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/&quot;},{&quot;label&quot;:&quot;Cao_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pemetrexed — `Pemetrexed_Cao2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,12 +21,14 @@
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:24.312269+00:00) predates the upstream re-run (2026-10-07 17:11:52.193203+00:00). Current validate status: `extracted`.
+
 ## Citation
 Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242)
 
 ## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Cao2022_reference" status="curated_candidate" stale="false" population="Chinese primary advanced non-small cell lung carcinoma patients" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Cao2022_reference" status="extracted" stale="true" population="Chinese patients with primary advanced non-small cell lung carcinoma" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -36,10 +38,11 @@ Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacol
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (L) | `Q63` · V1 | 18.94 | L | 0.018940000000000002 | [l] | not captured | exact (1.0) | T2:row2:col1, T2:row2:col2, T2:row2:col4, T2:row2:col5, T2:row2:col6 | — | not captured |
-| V2 (L) | `Q64` · V2 | 5.12 | L | 0.00512 | [l] | not captured | exact (1.0) | T2:row3:col1, T2:row3:col2, T2:row3:col4, T2:row3:col5, T2:row3:col6 | — | not captured |
-| CL (L·h−1) | `Q22` · CL | 8.29 | L·h−1 | 2.3027777777777774e-06 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4, T2:row4:col5, T2:row4:col6 | — | not captured |
-| Q (L·h−1) | `Q30` · Q | 0.10 | L·h−1 | 2.777777777777778e-08 | [l] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4, T2:row5:col5, T2:row5:col6 | — | not captured |
+| V1 (L) | `Q63` · V1 | 17.53 | L | 0.01753 | [l] | not captured | exact (1.0) | T2:row2:col1, T2:row2:col2, T2:row2:col4, T2:row2:col5, T2:row2:col6 | — | not captured |
+| V2 (L) | `Q64` · V2 | 3.86 | L | 0.00386 | [l] | not captured | exact (1.0) | T2:row3:col1, T2:row3:col2, T2:row3:col4, T2:row3:col5, T2:row3:col6 | — | not captured |
+| CL (L·h−1) | `Q22` · CL | 7.63 | L·h−1 | 2.1194444444444444e-06 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4, T2:row4:col5, T2:row4:col6 | — | not captured |
+| Q (L·h−1) | `Q30` · Q | 0.08 | L·h−1 | 2.2222222222222224e-08 | [l] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4, T2:row5:col5, T2:row5:col6 | — | not captured |
+| θ3 | `Q900` · equation variable | 0.11 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row8:col1, T2:row8:col2, T2:row8:col4, T2:row8:col5, T2:row8:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,13 +52,13 @@ Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacol
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'σ (%)' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'ε-shrinkage (%)' routed out of structural estimates ('Residual variability')
 - column 'bias (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col4', 'T2:row6:col5', 'T2:row6:col6'])
 - dropped unlinked row (NIL): 'θ2' — extend the ontology if this is a real PK parameter (source ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col4', 'T2:row7:col5', 'T2:row7:col6'])
-- dropped unlinked row (NIL): 'θ3' — extend the ontology if this is a real PK parameter (source ['T2:row8:col1', 'T2:row8:col2', 'T2:row8:col4', 'T2:row8:col5', 'T2:row8:col6'])
 - dropped diagnostic row 'ηCL -shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped diagnostic row 'ηQ -shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped diagnostic row 'ε-shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pemetrexed
 - model equation 'θi = θ×exp(θCov)' not bound — neither LHS nor base term 'θ' linked to an ontology parameter
 
@@ -76,11 +79,11 @@ Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacol
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4', 'T2:row5:col5', 'T2:row5:col6'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col4', 'T2:row2:col5', 'T2:row2:col6'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.29 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.63 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.29 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 18.9 L | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col4', 'T2:row2:col5', 'T2:row2:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 5.12 L | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7.63 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4', 'T2:row4:col5', 'T2:row4:col6'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 17.5 L | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col4', 'T2:row2:col5', 'T2:row2:col6'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.86 L | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
 
 **Reviewer per-scenario checks:**
 
@@ -112,7 +115,7 @@ Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacol
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_modelica.zip" download>Pemetrexed_Cao2022_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_modelica.zip" download>Pemetrexed_Cao2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_fmi.zip" download>Pemetrexed_Cao2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_matlab.zip" download>Pemetrexed_Cao2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference/Pemetrexed_Cao2022_reference_matlab_simbio.zip" download>Pemetrexed_Cao2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -134,4 +137,4 @@ Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacol
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 07:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:11 UTC</sub>

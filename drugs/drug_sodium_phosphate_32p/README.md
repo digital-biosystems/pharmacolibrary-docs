@@ -7,11 +7,17 @@
 - **DrugBank:** [DB09370](https://go.drugbank.com/drugs/DB09370) · **PubChem:** not captured
 - **groups:** approved
 
+## About
+
+Sodium phosphate P-32 is a radioactive phosphorus compound used as a therapeutic radiopharmaceutical. It is an approved drug, but details on how widely it is used are not given in the available facts.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q27285197](https://www.wikidata.org/wiki/Q27285197) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:24 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 1,523/345 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 17:47 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 465/115 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

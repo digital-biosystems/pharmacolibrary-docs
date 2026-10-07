@@ -17,13 +17,13 @@ Strontium-89 chloride is a bone-seeking radiopharmaceutical used to relieve pain
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 19:53 | 1:22 | 0/1/0 | 0/0/0 | 0/0/0 | 6,713/2,883 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 16:45 | 1:44 | 0/1/0 | 0/0/0 | 0/0/0 | 13,061/3,664 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Blake_1986_reference](drugs/drug_strontium_89sr_chloride/Strontium89srChloride_Blake1986_reference.md) | — | 1-compartment (no model) | 0 | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Blake_1986_reference](drugs/drug_strontium_89sr_chloride/Strontium89srChloride_Blake1986_reference.md) | — | 1-compartment (no model) | 0 | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) |
 
 ## ADME sites
 
@@ -47,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -56,19 +56,19 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Sips_1996.pdf` | Sips AJ et al., Intestinal absorption of strontium chlo…, British journal of clinical… (1996) | popPK | 9 | [10.1046/j.1365-2125.1996.33411.x](https://doi.org/10.1046/j.1365-2125.1996.33411.x) | [8799520](https://pubmed.ncbi.nlm.nih.gov/8799520) | The paper is a PK study of strontium chloride (stable isotope, same chemical entity) reporting bioavailability and model structure, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
-| `Blake_1986.pdf` | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | popPK | 8 | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) | [3102236](https://pubmed.ncbi.nlm.nih.gov/3102236) | The paper reports quantitative pharmacokinetic parameters (renal plasma clearance range 1.6-11.6 l/day and retention percentages) for strontium-89 in patients, with values explicitly stated in the abstract. |
+| `Sips_1996.pdf` | Sips AJ et al., Intestinal absorption of strontium chlo…, British journal of clinical… (1996) | popPK | 9 | [10.1046/j.1365-2125.1996.33411.x](https://doi.org/10.1046/j.1365-2125.1996.33411.x) | [8799520](https://pubmed.ncbi.nlm.nih.gov/8799520) | The study reports quantitative PK parameters (bioavailability, absorption kinetics) for strontium chloride in humans, but specific numeric values for clearance, volume, or rate constants are not explicitly listed in the provided text. |
+| `Blake_1986.pdf` | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | popPK | 8 | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) | [3102236](https://pubmed.ncbi.nlm.nih.gov/3102236) | The study reports quantitative pharmacokinetic parameters (renal plasma clearance, retention rates, power law coefficients) for strontium-89 in human patients. |
 
-<sub>queue written 2026-10-01T19:51:56.116532+00:00</sub>
+<sub>queue written 2026-10-07T16:43:57.203070+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dahl_2001 | irrelevant | 2 | 0 | The paper is a qualitative review of strontium distribution and incorporation mechanisms without reporting specific quantitative pharmacokinetic parameters (CL, V, t1/2) for strontium-89 chloride. |
-| popPK | Giammarile_2001 | irrelevant | 0 | 0 | The paper is a clinical review of pain palliation outcomes and does not report quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life) for strontium-89. |
+| popPK | Dahl_2001 | irrelevant | 2 | 0 | The paper discusses qualitative distribution and incorporation mechanisms of strontium in bone without reporting quantitative pharmacokinetic parameters (CL, V, ka) for strontium-89 chloride specifically. |
+| popPK | Giammarile_2001 | irrelevant | 0 | 0 | The paper is a clinical review of pain palliation outcomes and does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for strontium-89. |
 | PD | Giammarile_2001 | not_relevant | 1 | 0 | The text is a qualitative review that explicitly states there is no clear dose-response relationship and provides no numeric PD parameters or concentration-effect data. |
-| popPK | Sips_1996 | relevant | 9 | 2 | The paper is a PK study of strontium chloride (stable isotope, same chemical entity) reporting bioavailability and model structure, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
+| popPK | Sips_1996 | relevant | 9 | 4 | The study reports quantitative PK parameters (bioavailability, absorption kinetics) for strontium chloride in humans, but specific numeric values for clearance, volume, or rate constants are not explicitly listed in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-25 05:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:44 UTC</sub>

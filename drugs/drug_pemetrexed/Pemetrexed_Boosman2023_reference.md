@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;pemetrexed&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/&quot;},{&quot;label&quot;:&quot;Boosman_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Srinivasan2019_reference&quot;,&quot;label&quot;:&quot;Srinivasan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Srinivasan2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pemetrexed — `Pemetrexed_Boosman2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,23 +21,26 @@
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:24.305985+00:00) predates the upstream re-run (2026-10-07 17:11:50.179283+00:00). Current validate status: `extracted`.
+
 ## Citation
 Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520)
 
 ## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Boosman2023_reference" status="curated_candidate" stale="false" population="patients with lung cancer and mesothelioma" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Boosman2023_reference" status="extracted" stale="true" population="patients with lung cancer and mesothelioma" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| F | `Q40` · Fab | 1 | n = 10 | not captured | not captured | not captured | exact (1.0) | Boosman_2023_table_2:row7:col1 | — | not captured |
 | Cl (L/h) | `Q22` · CL | 2.32 | L/h | 6.444444444444444e-07 | L/h | not captured | exact (1.0) | Boosman_2023:other_prose | — | not captured |
-| Volume of distribution Central compartment (L) | `Q61` · V | 4.07 | L | 0.004070000000000001 | L | not captured | boundary (0.8) | Boosman_2023:other_prose | — | not captured |
+| Volume of distribution Central compartment (L) | `Q61` · V | 4.07 | L | 0.004070000000000001 | L | not captured | boundary_compartment (0.9) | Boosman_2023:other_prose | — | not captured |
 | Q (L/h) | `Q30` · Q | 4.53 | L/h | 1.2583333333333333e-06 | L/h | not captured | exact (1.0) | Boosman_2023:other_prose | — | not captured |
 
 <details class="legend">
@@ -49,18 +52,18 @@ Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal o
 
 **Interpretation flags:**
 - salvaged Q22 ('Cl (L/h)'=2.32) from results prose — parameter table was unreadable
-- salvaged Q61 ('Volume of distribution Central compartment (L)'=4.07) from results prose — parameter table was unreadable
+- salvaged Q63 ('Volume of distribution Central compartment (L)'=4.07) from results prose — parameter table was unreadable
 - salvaged Q30 ('Q (L/h)'=4.53) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pemetrexed
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Volume of distribution Central compartment (L)' is the general volume)
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2
-- text-pointer recovery found no readable extracted parameter table
 
 ## Validation
 
@@ -68,7 +71,7 @@ Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal o
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.32 | not captured | not captured | ['Boosman_2023:other_prose'] |
@@ -106,7 +109,7 @@ Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal o
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference/Pemetrexed_Boosman2023_reference_modelica.zip" download>Pemetrexed_Boosman2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference/Pemetrexed_Boosman2023_reference_modelica.zip" download>Pemetrexed_Boosman2023_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference/Pemetrexed_Boosman2023_reference_fmi.zip" download>Pemetrexed_Boosman2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference/Pemetrexed_Boosman2023_reference_matlab.zip" download>Pemetrexed_Boosman2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference/Pemetrexed_Boosman2023_reference_matlab_simbio.zip" download>Pemetrexed_Boosman2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -128,4 +131,4 @@ Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal o
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 07:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:11 UTC</sub>

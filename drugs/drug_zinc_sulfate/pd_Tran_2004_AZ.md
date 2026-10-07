@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Zinc sulfate (the dose) drives absorbed zinc (in mg): direct sigmoid Emax (Hill) effect.
+**As extracted:** Zinc_sulfate (the dose) drives absorbed zinc (in mg): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -25,7 +25,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Tran CD et al., Zinc absorption as a function of the do…, The American journal of cli… (2004)

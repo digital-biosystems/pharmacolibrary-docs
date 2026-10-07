@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) oxodotreotide&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/&quot;},{&quot;label&quot;:&quot;Barakat_2023 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base_structural_model&quot;,&quot;label&quot;:&quot;Barakat_2023_base_structural_model_estimate_value_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base_structural_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lutetium (177Lu) oxodotreotide — `Lutetium177luOxodotreotide_Barakat2023_base`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:35.735033+00:00) predates the upstream re-run (2026-10-07 17:09:30.123856+00:00). Current validate status: `extracted`.
+
 ## Citation
 Barakat A et al., Clinical Pharmacokinetics of Radiopharm…, European journal of drug me… (2023)
   ·  DOI: [10.1007/s13318-023-00829-5](https://doi.org/10.1007/s13318-023-00829-5)
 
 ## Model component
-<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Barakat2023_base" status="curated_candidate" stale="false" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Barakat2023_base" status="extracted" stale="true" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -38,10 +40,10 @@ Barakat A et al., Clinical Pharmacokinetics of Radiopharm…, European journal o
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 2.68 | L/h | 7.444444444444444e-07 | [l] / [h] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row0:col1 | — | not captured |
-| V1 (L) | `Q63` · V1 | 77.9 | L | 0.07790000000000001 | [l] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row1:col1 | — | not captured |
-| Q (L/h) | `Q30` · Q | 6.78 | L/h | 1.8833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row2:col1 | — | not captured |
-| V2 (L) | `Q64` · V2 | 190 | L | 0.19 | [l] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row3:col1 | — | not captured |
+| CL (L/h) | `Q22` · CL | 4.99 | L/h | 1.3861111111111112e-06 | [l] / [h] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row0:col2 | — | not captured |
+| V1 (L) | `Q63` · V1 | 8.18 | L | 0.00818 | [l] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row1:col2 | — | 28.9 (None% RSE) |
+| Q (L/h) | `Q30` · Q | 9.84 | L/h | 2.733333333333333e-06 | [l] / [h] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row2:col2 | — | not captured |
+| V2 (L) | `Q64` · V2 | 7.80 | L | 0.0078 | [l] | not captured | exact (1.0) | Barakat_2023_table_p7_2:row3:col2 | — | 30.1 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,12 +53,11 @@ Barakat A et al., Clinical Pharmacokinetics of Radiopharm…, European journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'structural model estimate value (cv, %)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lutetium_177lu_oxodotreotide
-- model-stage split: 'structural model estimate value (cv, %)' is the base model of Barakat_2023 (paper reports 3 stages: final model estimate value (cv, %), structural model % rse, structural model estimate value (cv, %)); same population, different model-building step
+- model-stage split: 'structural model % rse' is the base model of Barakat_2023 (paper reports 3 stages: final model estimate value (cv, %), structural model % rse, structural model estimate value (cv, %)); same population, different model-building step
+- molar mass: none found for 'lutetium_177lu_oxodotreotide' — its concentrations stay mass-only
 
 **Extraction notes:**
-- final table tab_2: grid unusable → re-running vision table extraction for Barakat_2023
 - unparsed cell Barakat_2023_table_p7_2:row0:col5 = '2.61 [2.28–2.96]'
 - unparsed cell Barakat_2023_table_p7_2:row1:col5 = '75.2 [60.4–91.4]'
 - unparsed cell Barakat_2023_table_p7_2:row2:col5 = '6.80 [4.96–9.11]'
@@ -123,15 +124,15 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row0:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row2:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row1:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row3:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.68 | not captured | not captured | ['Barakat_2023_table_p7_2:row0:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row0:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row2:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row1:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Barakat_2023_table_p7_2:row3:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.99 | not captured | not captured | ['Barakat_2023_table_p7_2:row0:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.68 L/h | not captured | not captured | ['Barakat_2023_table_p7_2:row0:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 77.9 L | not captured | not captured | ['Barakat_2023_table_p7_2:row1:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 190 L | not captured | not captured | ['Barakat_2023_table_p7_2:row3:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.99 L/h | not captured | not captured | ['Barakat_2023_table_p7_2:row0:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 8.18 L | not captured | not captured | ['Barakat_2023_table_p7_2:row1:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 7.8 L | not captured | not captured | ['Barakat_2023_table_p7_2:row3:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -163,7 +164,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base/Lutetium177luOxodotreotide_Barakat2023_base_modelica.zip" download>Lutetium177luOxodotreotide_Barakat2023_base_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base/Lutetium177luOxodotreotide_Barakat2023_base_modelica.zip" download>Lutetium177luOxodotreotide_Barakat2023_base_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base/Lutetium177luOxodotreotide_Barakat2023_base_fmi.zip" download>Lutetium177luOxodotreotide_Barakat2023_base_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base/Lutetium177luOxodotreotide_Barakat2023_base_matlab.zip" download>Lutetium177luOxodotreotide_Barakat2023_base_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base/Lutetium177luOxodotreotide_Barakat2023_base_matlab_simbio.zip" download>Lutetium177luOxodotreotide_Barakat2023_base_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -185,4 +186,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-25 06:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:09 UTC</sub>

@@ -7,11 +7,17 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Tositumomab, given with iodine-131 as a radiolabelled monoclonal antibody, was used to treat certain types of non-Hodgkin lymphoma. It is no longer marketed, having been withdrawn because of limited commercial demand.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3995913](https://www.wikidata.org/wiki/Q3995913) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:27 | 0:51 | 0/0/0 | 0/0/0 | 0/0/0 | 1,894/232 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-07 17:49 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 27,134/1,525 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
@@ -28,32 +34,32 @@ _not available_
 - **PubMed hits:** 24 matched, 20 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Beeson_2003 | irrelevant | 2 | 0 | The paper describes a novel conditionally cleavable radioimmunoconjugate (RIC) using tositumomab as a model in mice, reporting biodistribution percentages (%ID/g) rather than quantitative PK parameters (CL, V, t1/2) for the standard drug tositumomab_iodine_131i_tositumomab. |
-| popPK | Bischof_2003 | irrelevant | 1 | 0 | The paper is a general review of radioimmunotherapy in NHL that discusses the mechanism and dosimetry requirements for 131I-tositumomab but does not report specific quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life values) for the drug. |
-| popPK | Chamarthy_2011 | irrelevant | 1 | 0 | The paper is a review article discussing radioimmunotherapy generally and does not provide original quantitative pharmacokinetic parameter values for tositumomab_iodine_131i_tositumomab. |
-| popPK | Davies_2005 | irrelevant | 1 | 0 | The paper is a review of clinical efficacy and safety without reporting original quantitative pharmacokinetic parameter values. |
-| popPK | Guleria_2017 | irrelevant | 0 | 0 | The study focuses on 177Lu-Rituximab, not tositumomab_iodine_131i_tositumomab, and does not report quantitative PK parameters for the target drug. |
-| popPK | Kaminski_2000 | irrelevant | 2 | 0 | The paper is a clinical efficacy study reporting response rates and survival, not a pharmacokinetic study with quantitative disposition parameters like clearance or volume. |
-| popPK | Leonard_2005 | irrelevant | 0 | 0 | The paper is a review discussing anti-CD20 therapies and mentions tositumomab only as a context for radioimmunoconjugates without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Beeson_2003 | irrelevant | 2 | 0 | The study is a preclinical mechanistic investigation in mice using a novel cleavable linker construct, reporting only biodistribution percentages (%ID/g) rather than quantitative compartmental PK parameters (CL, V, t1/2) for the standard drug. |
+| popPK | Bischof_2003 | irrelevant | 1 | 0 | The paper is a general review of nuclear medicine in NHL that discusses the mechanism and dosimetry requirements for 131I-tositumomab but does not report specific quantitative pharmacokinetic parameters (CL, V, Q, ka) or compartmental model values. |
+| popPK | Chamarthy_2011 | irrelevant | 2 | 0 | The paper is a review article discussing radioimmunotherapy generally and does not provide original quantitative pharmacokinetic parameter values for tositumomab_iodine_131i_tositumomab. |
+| popPK | Davies_2005 | irrelevant | 2 | 0 | The paper is a review of clinical efficacy and safety without reporting specific quantitative pharmacokinetic parameter values (CL, V, etc.) for tositumomab_iodine_131i_tositumomab. |
+| popPK | Guleria_2017 | irrelevant | 0 | 0 | The study focuses on the preparation and biodistribution of 177Lu-Rituximab, not the pharmacokinetics of tositumomab_iodine_131i_tositumomab. |
+| popPK | Kaminski_2000 | irrelevant | 2 | 0 | The paper is a clinical efficacy study reporting response rates and survival, not a pharmacokinetic study with quantitative disposition parameters (CL, V, etc.). |
+| popPK | Leonard_2005 | irrelevant | 0 | 0 | The paper is a review discussing anti-CD20 therapies and mentions tositumomab only as a context for radioimmunoconjugates, without reporting any quantitative pharmacokinetic parameters. |
 | popPK | Lewington_2005 | irrelevant | 1 | 0 | The paper is a review of the development and clinical efficacy of 131I-tositumomab, discussing dosing based on total-body dose rather than reporting quantitative pharmacokinetic parameters like clearance or volume of distribution. |
-| popPK | Li_2015 | irrelevant | 1 | 0 | The study focuses on a novel nanocomb construct (PPRT) and only qualitatively mentions reduced clearance without providing quantitative PK parameters for tositumomab_iodine_131i_tositumomab. |
-| popPK | Ren_2015 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell death pathways and does not report pharmacokinetic parameters for tositumomab_iodine_131i_tositumomab. |
-| popPK | Roberson_2011 | irrelevant | 2 | 0 | The paper focuses on a bio-effect model for tumor response and absorbed dose estimation rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for the drug. |
+| popPK | Li_2015 | irrelevant | 0 | 0 | The study focuses on a novel nanocomb construct (PPRT) and does not report quantitative PK parameters for the specific drug tositumomab_iodine_131i_tositumomab. |
+| popPK | Ren_2015 | irrelevant | 0 | 0 | The paper describes the mechanism of action (lysosome-mediated cell death) of tositumomab in cell lines and does not report any pharmacokinetic parameters. |
+| popPK | Roberson_2011 | irrelevant | 2 | 0 | The study focuses on absorbed dose estimation and biological effect modeling (radiation sensitivity/cold effect) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for the drug. |
 | popPK | Roberson_2014 | irrelevant | 2 | 0 | The study focuses on biological-effect modeling (radiation sensitivity parameters alpha and lambda) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for the drug. |
-| popPK | Scheidhauer_2002 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rituximab (anti-CD20 MAB IDEC-C2B8), not tositumomab, which is only mentioned as a comparator. |
-| popPK | Schipper_2012 | irrelevant | 2 | 0 | The study focuses on tumor dosimetry and time-activity curve fitting rather than systemic population pharmacokinetic parameters (CL, V, Q), and no specific PK numeric values are provided in the evidence. |
-| popPK | Sgouros_2003 | irrelevant | 2 | 0 | The paper focuses on dosimetry and tumor response rather than reporting quantitative pharmacokinetic parameters (CL, V, ka) for tositumomab. |
-| popPK | Smith-Jones_2004 | irrelevant | 0 | 0 | The paper is a review focusing on (177)Lu-huJ591 for prostate cancer, mentioning tositumomab only as a background example without providing any quantitative PK parameters. |
-| popPK | Wahl_2003 | irrelevant | 2 | 0 | The paper is a review discussing the clinical importance of dosimetry and mentions qualitative variability in clearance but does not report specific quantitative PK parameter values (CL, V, t1/2) for tositumomab_iodine_131i_tositumomab. |
-| popPK | Wahl_2005 | irrelevant | 2 | 0 | The paper is a clinical review of efficacy and safety that mentions pharmacokinetics only in the context of dosimetric calculations (residence time) without reporting specific quantitative PK parameters like clearance or volume. |
-| popPK | Wu_2005 | irrelevant | 1 | 0 | The paper is a review of immunoconjugates that mentions tositumomab-131I only as an approved agent without reporting any original quantitative pharmacokinetic parameters (CL, V, etc.) for it. |
-| popPK | Zelenetz_2020 | irrelevant | 2 | 0 | The study reports total body residence time (a dosimetric parameter) but does not provide standard compartmental PK parameters (CL, V, Q, ka) or a population PK model for tositumomab_iodine_131i_tositumomab. |
+| popPK | Scheidhauer_2002 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rituximab (IDEC-C2B8), not tositumomab, which is only mentioned as a comparator. |
+| popPK | Schipper_2012 | irrelevant | 2 | 0 | The study focuses on tumor dosimetry and time-activity curve fitting for absorbed dose prediction, not on systemic pharmacokinetic parameters (CL, V, ka) for the drug. |
+| popPK | Sgouros_2003 | irrelevant | 2 | 0 | The study focuses on 3D dosimetry and tumor response rather than reporting quantitative population pharmacokinetic parameters (CL, V, ka) for tositumomab. |
+| popPK | Smith-Jones_2004 | irrelevant | 0 | 0 | The paper is a review focusing on (177)Lu-huJ591 for prostate cancer, mentioning (131)I-tositumomab only as a background example without providing any quantitative PK parameters. |
+| popPK | Wahl_2003 | irrelevant | 2 | 0 | The paper is a review discussing the clinical importance of dosimetry and mentions qualitative variability in clearance but provides no quantitative PK parameter values (CL, V, t1/2) for tositumomab_iodine_131i_tositumomab. |
+| popPK | Wahl_2005 | irrelevant | 2 | 0 | This is a clinical review of therapeutic efficacy and toxicity that mentions the use of patient-specific pharmacokinetics (residence time) for dosimetry but does not report quantitative PK parameter values (CL, V, etc.) for the drug. |
+| popPK | Wu_2005 | irrelevant | 0 | 0 | The paper is a general review of immunoconjugates and does not report specific quantitative pharmacokinetic parameters (CL, V, etc.) for tositumomab_iodine_131i_tositumomab. |
+| popPK | Zelenetz_2020 | relevant | 4 | 2 | The study reports a pharmacokinetic parameter (total body residence time) for the subject drug in humans, but lacks standard compartmental parameters (CL, V, Q) and the value is a single median summary statistic. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

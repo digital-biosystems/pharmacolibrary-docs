@@ -18,7 +18,7 @@ Potassium chloride is used to treat or prevent low potassium levels in the blood
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 09:00 | 2:27 | 0/5/0 | 0/0/0 | 0/0/0 | 87,658/2,370 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 3/6 | 9/0 | 0 |
+| 2026-10-07 17:12 | 1:59 | 0/5/0 | 0/0/0 | 0/0/0 | 123,388/2,310 | einfracz / qwen3.8-27b | 18 | 3/15 | 18/0 | 0 |
 
 ## popPK records
 
@@ -58,64 +58,57 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ma_2001.pdf` | Ma YM et al., [Relative bioavailability of effervesce…, Yao xue xue bao = Acta phar… (2001) | popPK | 9 | not captured | [12580112](https://pubmed.ncbi.nlm.nih.gov/12580112) | The study reports quantitative pharmacokinetic parameters (half-lives, rate constants) for potassium chloride in humans, with values explicitly listed in the abstract. |
-| `Ali_2023.pdf` | Ali N et al., Atorvastatin and Fluvastatin Potentiate…, Medicina (Kaunas, Lithuania) (2023) | pd | 4 | [10.3390/medicina59061023](https://doi.org/10.3390/medicina59061023) | [37374229](https://www.ncbi.nlm.nih.gov/pubmed/37374229) | metadata signals extractable PD data (EC50) |
-| `Boly_2021.pdf` | Boly R et al., Pharmacological Evaluation of the Bronc…, Evidence-based complementar… (2021) | pd | 4 | [10.1155/2021/5535727](https://doi.org/10.1155/2021/5535727) | [33995545](https://www.ncbi.nlm.nih.gov/pubmed/33995545) | metadata signals extractable PD data (EC50) |
+| `Ma_2001.pdf` | Ma YM et al., [Relative bioavailability of effervesce…, Yao xue xue bao = Acta phar… (2001) | popPK | 10 | not captured | [12580112](https://pubmed.ncbi.nlm.nih.gov/12580112) | The study reports quantitative PK parameters (T1/2 ke, T1/2 ka, ku) for potassium chloride in healthy volunteers, with values explicitly listed in the abstract. |
 | `Hoenicka_2022.pdf` | Hoenicka M et al., Preservation of Adrenoceptor and Endoth…, Journal of vascular research (2022) | pd | 4 | [10.1159/000524922](https://doi.org/10.1159/000524922) | [35728582](https://www.ncbi.nlm.nih.gov/pubmed/35728582) | metadata signals extractable PD data (EC50) |
-| `Makam_2022.pdf` | Makam R et al., The impact of antiarrhythmics on human…, Journal of clinical and tra… (2022) | pd | 4 | not captured | [35991084](https://www.ncbi.nlm.nih.gov/pubmed/35991084) | metadata signals extractable PD data (EC50) |
-| `Bloothooft_2025.pdf` | Bloothooft M et al., Exploring the Cell Biological and Funct…, Journal of cellular physiol… (2025) | pgx | 8 | [10.1002/jcp.70124](https://doi.org/10.1002/jcp.70124) | [41414942](https://www.ncbi.nlm.nih.gov/pubmed/41414942) | metadata signals extractable PGX data (SLC12A4, PK/PD-context) |
-| `Xu_2026.pdf` | Xu C et al., Unmasking of a Heterozygous SLC12A3 Var…, Kidney medicine (2026) | pgx | 8 | [10.1016/j.xkme.2026.101255](https://doi.org/10.1016/j.xkme.2026.101255) | [41767689](https://www.ncbi.nlm.nih.gov/pubmed/41767689) | metadata signals extractable PGX data (SLC12A3, PK/PD-context) |
-| `Salleh_2016.pdf` | Salleh NA et al., Effects of Curcuma xanthorrhiza Extract…, Pharmacognosy research (2016) | pgx | 7 | [10.4103/0974-8490.188873](https://doi.org/10.4103/0974-8490.188873) | [27695274](https://www.ncbi.nlm.nih.gov/pubmed/27695274) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
-| `He_2020.pdf` | He G et al., Type 2 diabetes mellitus caused by Gite…, Medicine (2020) | pgx | 5 | [10.1097/MD.0000000000021123](https://doi.org/10.1097/MD.0000000000021123) | [32702863](https://www.ncbi.nlm.nih.gov/pubmed/32702863) | metadata signals extractable PGX data (SLC12A3) |
 
-<sub>queue written 2026-10-05T08:59:01.052007+00:00</sub>
+<sub>queue written 2026-10-07T17:11:38.389939+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Akhter_2019 | not_relevant | 0 | 0 | The paper investigates the regulation of the KCC2 transporter in motoneurons following nerve injury, not the pharmacokinetics or pharmacodynamics of the drug potassium chloride. |
-| popPK | Ali_2023 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| PGx | Akhter_2019 | not_relevant | 0 | 0 | The paper studies the biological potassium-chloride co-transporter (KCC2) in nerve injury models, not the pharmacokinetics or pharmacodynamics of the potassium chloride drug. |
+| popPK | Ali_2023 | irrelevant | 0 | 0 | The study uses potassium chloride (KCl) as a tool to induce contractions in isolated aortic strips, not as a subject drug for pharmacokinetic analysis. |
 | PD | Ali_2023 | not_relevant | 0 | 0 | The paper investigates the interaction between statins and amlodipine, not potassium chloride. |
-| popPK | Bai_2010 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of amlodipine's effect on vasoconstriction, using potassium chloride only as a non-specific vasoconstrictor agent, not as a subject drug for PK analysis. |
+| popPK | Bai_2010 | irrelevant | 0 | 0 | The study investigates the pharmacological effect of amlodipine on potassium chloride-induced vasoconstriction in isolated arteries; potassium chloride is used as a non-selective vasoconstrictor/probe, not as the subject drug for pharmacokinetic analysis. |
 | PD | Bai_2010 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50, relaxation %) for amlodipine, not for potassium chloride; KCl is used only as a non-specific vasoconstrictor to induce precontraction. |
-| popPK | Blanchard_2019 | irrelevant | 0 | 0 | The study evaluates the validity of point-of-care testing devices for measuring electrolytes (including potassium) and does not report pharmacokinetic parameters for potassium chloride. |
-| PGx | Bloothooft_2025 | not_relevant | 0 | 0 | The paper investigates the functional impact of a KCC1 gene variant on the endogenous cotransporter protein, not the pharmacokinetics or pharmacodynamics of the drug potassium chloride. |
-| popPK | Boly_2021 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
+| popPK | Blanchard_2019 | irrelevant | 0 | 0 | The study evaluates the validity and usability of point-of-care blood testing devices, not the pharmacokinetics of potassium chloride. |
+| PGx | Bloothooft_2025 | not_relevant | 0 | 0 | The study investigates the intrinsic functional activity of a genetic variant in the KCC1 transporter protein using cell-based assays, rather than reporting pharmacokinetic or pharmacodynamic changes resulting from the administration of the drug potassium chloride. |
+| popPK | Boly_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of plant extracts on rat trachea where potassium chloride is used solely as a contractile agent, not as the subject of pharmacokinetic analysis. |
 | PD | Boly_2021 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to evaluate a PD relationship. |
-| popPK | Chalwin_2012 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy and safety of infusion regimens for potassium supplementation, not a pharmacokinetic study reporting disposition parameters like clearance or volume of distribution. |
-| PGx | Conte_2018 | not_relevant | 0 | 0 | The paper is a review of Bartter syndrome pathophysiology and does not report pharmacogenomic effects on the PK/PD of potassium chloride. |
-| popPK | Cox_2012 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on fibrocyte differentiation where potassium chloride is used as a chemical probe/comparator, not a pharmacokinetic study of the drug. |
-| PGx | Fatemi_2019 | not_relevant | 0 | 0 | The paper studies the physiological response of a plant (Aeluropus littoralis) to salt stress, not the pharmacokinetics or pharmacodynamics of potassium chloride in humans or animals. |
-| popPK | Ferreira_2020 | irrelevant | 0 | 0 | The study analyzes the effect of eplerenone on loop diuretic dosing in heart failure patients and does not report pharmacokinetic parameters for potassium chloride. |
-| popPK | Fredeen_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of calcium (45Ca) in goats, not potassium chloride. |
-| PGx | He_2020 | not_relevant | 0 | 0 | The paper reports a case of Gitelman syndrome (SLC12A3 mutation) and its association with T2DM, but does not report a pharmacogenomic effect on the PK or PD parameters of potassium chloride. |
+| popPK | Chalwin_2012 | irrelevant | 0 | 0 | The paper is a clinical trial comparing infusion regimens for safety and efficacy (plasma potassium levels) and does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for potassium chloride. |
+| PGx | Conte_2018 | not_relevant | 0 | 0 | The paper reviews the genetics of Bartter syndrome and the lack of specific therapy, but does not report pharmacogenomic effects on PK/PD parameters for potassium chloride. |
+| popPK | Cox_2012 | irrelevant | 0 | 0 | The study investigates the in vitro effect of potassium chloride on fibrocyte differentiation, not its pharmacokinetics. |
+| PGx | Fatemi_2019 | not_relevant | 0 | 0 | The paper studies the effect of KCl stress on gene expression in plants, not the effect of human gene variants on the pharmacokinetics of potassium chloride. |
+| popPK | Ferreira_2020 | irrelevant | 0 | 0 | The study analyzes the effect of eplerenone on loop diuretic doses in heart failure patients and does not report pharmacokinetic parameters for potassium chloride. |
+| popPK | Fredeen_1988 | irrelevant | 0 | 0 | The study examines the kinetics of calcium metabolism in goats, not the pharmacokinetics of potassium chloride. |
+| PGx | He_2020 | not_relevant | 0 | 0 | The paper discusses the impact of SLC12A3 variants on blood potassium levels and glucose metabolism (diabetes risk), but it does not report pharmacokinetic or pharmacodynamic changes specifically caused by the administration of the drug potassium_chloride relative to genotype. |
 | popPK | Hoenicka_2022 | irrelevant | 0 | 0 | no_text gate: only 185 chars of text extracted (&lt; 400) |
 | PD | Hoenicka_2022 | not_relevant | 0 | 0 | The paper focuses on the preservation of vascular reactivity in explanted vessels after cold storage and does not report any pharmacodynamic or exposure-response analysis for potassium chloride. |
-| PGx | Khairy_2016 | not_relevant | 0 | 0 | The paper studies plant physiology and heavy metal toxicity in tobacco, not human pharmacogenomics or potassium chloride. |
-| popPK | Kim_2017 | irrelevant | 0 | 0 | The study focuses on furosemide tolerance in pediatric patients and does not report pharmacokinetic parameters for potassium chloride. |
-| PGx | Liu_2021 | not_relevant | 0 | 0 | The paper reports a case of Gitelman syndrome and discusses the impact of correcting electrolyte imbalances on glucose metabolism and hypoglycemic drug choice, but it does not report a pharmacogenomic effect of a gene variant on the pharmacokinetic or pharmacodynamic parameters of potassium chloride. |
-| popPK | Makam_2022 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
+| PGx | Khairy_2016 | not_relevant | 0 | 0 | The paper studies plant physiology and heavy metal toxicity in tobacco plants, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium chloride. |
+| popPK | Kim_2017 | irrelevant | 0 | 0 | The study focuses on furosemide therapy in pediatric patients and does not report pharmacokinetic parameters for potassium chloride. |
+| PGx | Liu_2021 | not_relevant | 0 | 0 | The paper describes a clinical case report regarding the management of diabetes and electrolytes in Gitelman syndrome, but it does not report a pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of potassium chloride itself. |
+| popPK | Makam_2022 | irrelevant | 0 | 0 | The study is an ex vivo pharmacodynamic investigation of amiodarone and digoxin on human pulmonary arteries, where potassium chloride is used only as a viability control reagent, not as the subject of a pharmacokinetic study. |
 | PD | Makam_2022 | not_relevant | 0 | 0 | The paper focuses on the effects of antiarrhythmics on pulmonary arteries and does not report any pharmacodynamic or exposure-response data for potassium chloride. |
-| popPK | Nardou_2011 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on neuronal chloride transporters and GABA mechanisms, not a pharmacokinetic study of potassium chloride. |
-| popPK | Noguchi_2024 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of piperine and piperlongumine on porcine coronary arteries, using potassium chloride (KCl) only as a tool to induce depolarization, not as the subject drug for pharmacokinetic analysis. |
-| popPK | Nurullahoglu-Atalik_2013 | irrelevant | 0 | 0 | The study uses potassium chloride (KCl) as a non-selective depolarizing agent to induce smooth muscle contraction in rat urinary bladders, not as a subject drug for pharmacokinetic analysis. |
-| popPK | Reynolds_2010 | irrelevant | 0 | 0 | The study reports reference intervals for plasma electrolytes (including potassium and chloride) in healthy cats, not pharmacokinetic parameters for potassium chloride. |
-| popPK | Salem_2017 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of levetiracetam on rat duodenum, using KCl only as a tool to induce contractions, and contains no pharmacokinetic data for potassium chloride. |
+| popPK | Nardou_2011 | irrelevant | 0 | 0 | The paper is an in vitro study on neuronal chloride transporters and GABA, where "potassium chloride cotransporter 2" refers to a protein, not the drug potassium chloride. |
+| popPK | Noguchi_2024 | irrelevant | 0 | 0 | The study investigates the vascular effects of piperine and piperlongumine in porcine coronary arteries, where potassium chloride (KCl) is used only as a reagent to induce depolarization, not as the subject of pharmacokinetic analysis. |
+| popPK | Nurullahoglu-Atalik_2013 | irrelevant | 0 | 0 | This study is an in vitro pharmacological investigation of acrylamide's effects on rat bladder smooth muscle contraction, using KCl as a depolarizing agent rather than a subject drug for pharmacokinetic modeling. |
+| popPK | Reynolds_2010 | irrelevant | 0 | 0 | The study reports reference intervals for plasma electrolytes including potassium, but does not model or report pharmacokinetic parameters (CL, V, etc.) for the drug potassium chloride. |
+| popPK | Salem_2017 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study of levetiracetam where KCl is used as a control agonist, not a PK study of potassium chloride. |
 | PD | Salem_2017 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of levetiracetam, not potassium chloride; KCl is used only as a tool compound to induce contractions. |
-| PGx | Salleh_2016 | not_relevant | 0 | 0 | The paper investigates the effects of Curcuma xanthorrhiza extracts on drug-metabolizing enzymes (UGT/GST) and does not report any pharmacogenomic effects on the PK/PD of potassium chloride. |
-| PGx | Schurman_2001 | not_relevant | 0 | 0 | The paper describes clinical phenotypes and genotypes in Bartter syndrome patients but does not report pharmacogenomic effects on the PK or PD parameters of potassium chloride. |
-| popPK | Sterkers_1982 | irrelevant | 0 | 0 | The study investigates the kinetics of potassium and chloride ions in specific body fluids (endolymph, perilymph, CSF) in rats, not the systemic pharmacokinetics of the drug potassium chloride. |
-| PGx | Suman_2016 | not_relevant | 0 | 0 | The paper investigates the biochemical release of arginase by KCl in a laboratory setting, not the pharmacokinetics or pharmacodynamics of potassium chloride as a drug in relation to genetic variants. |
-| PGx | Tom_2014 | not_relevant | 0 | 0 | The paper studies the antihypertensive effects of a plant extract in rats and does not involve potassium chloride or any pharmacogenomic analysis. |
-| PGx | Vormfelde_2004 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of torsemide, not potassium_chloride. |
-| popPK | Wheeler_1980 | irrelevant | 0 | 0 | The study is an in-vitro enzymology paper investigating the effect of potassium chloride on adenylate deaminase activity, not a pharmacokinetic study of potassium chloride disposition. |
+| PGx | Salleh_2016 | not_relevant | 0 | 0 | The paper investigates the effect of plant extracts on drug-metabolizing enzymes, not the pharmacogenomic effect of a gene variant on potassium chloride PK/PD. |
+| PGx | Schurman_2001 | not_relevant | 1 | 1 | The paper describes clinical outcomes of potassium chloride therapy in patients with a specific genotype (ClC-Kb deletion) but does not report changes in pharmacokinetic parameters (e.g., serum concentration-time profile) or specific pharmacodynamic biomarkers of the drug itself, rather than the disease state (hypokalemia). |
+| popPK | Sterkers_1982 | irrelevant | 0 | 0 | The study investigates the compartmental kinetics of radioactive tracers (42K, 36Cl) into specific body fluids in rats, which is a physiological/distribution study rather than a pharmacokinetic analysis of the drug potassium chloride (typically assessed by serum concentrations, clearance, and volume of distribution). |
+| PGx | Suman_2016 | not_relevant | 0 | 0 | The paper studies the biochemical isolation of mitochondrial arginase using KCl in a laboratory setting, not the pharmacokinetic or pharmacodynamic response to KCl administration in patients with specific genetic variants. |
+| PGx | Tom_2014 | not_relevant | 0 | 0 | The study evaluates the antihypertensive efficacy of a plant extract in rats and does not investigate the pharmacokinetics or pharmacodynamics of potassium chloride. |
+| PGx | Vormfelde_2004 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for torsemide, not potassium_chloride. |
+| popPK | Wheeler_1980 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on adenylate deaminase, not a pharmacokinetic study of potassium chloride. |
 | PD | Wheeler_1980 | not_relevant | 0 | 0 | The paper describes in vitro enzyme kinetics (adenylate deaminase) and the effect of KCl concentration on enzyme affinity and activation, which is not a pharmacodynamic exposure-response relationship for the drug potassium chloride in a biological system. |
-| PGx | Xu_2026 | not_relevant | 2 | 5 | The paper describes a pharmacodynamic interaction where a drug (chlorthalidone) unmasked a genetic phenotype (SLC12A3 variant), but it does not report how the gene variant changes the PK/PD parameters of the specific drug potassium_chloride. |
+| PGx | Xu_2026 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect of a gene variant on the pharmacodynamic response to chlorthalidone and hydrochlorothiazide (diuretics), not on the pharmacokinetic or pharmacodynamic parameters of potassium_chloride. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 08:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:11 UTC</sub>

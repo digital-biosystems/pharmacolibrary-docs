@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Jung_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Muthukrishnan2025_reference&quot;,&quot;label&quot;:&quot;Muthukrishnan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Bremnes1989_reference&quot;,&quot;label&quot;:&quot;Bremnes_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Kamel1988_reference&quot;,&quot;label&quot;:&quot;Kamel_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Kamel1988_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Blackman2026_reference&quot;,&quot;label&quot;:&quot;Blackman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Blackman2026_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,7 +25,7 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:55.417985+00:00) predates the upstream re-run (2026-10-03 19:49:08.326880+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:55.417985+00:00) predates the upstream re-run (2026-10-07 17:00:25.021570+00:00). Current validate status: `rejected`.
 
 ## Citation
 Jung YS et al., A population pharmacokinetic model of m…, British journal of clinical… (2024)
@@ -44,11 +44,11 @@ Jung YS et al., A population pharmacokinetic model of m…, British journal of c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θV1 (L) | `Q63` · V1 | 24.67 | L | 0.02467 | [l] | 3.6 | llm_confirmed (0.6) | Jung_2024_table_p6_1:row0:col1, Jung_2024_table_p6_1:row0:col2 | — | not captured |
-| θV2 (L) | `Q64` · V2 | 17.93 | L | 0.01793 | [l] | 11.2 | llm_confirmed (0.6) | Jung_2024_table_p6_1:row1:col1, Jung_2024_table_p6_1:row1:col2 | — | not captured |
-| θCL | `Q900` · θCL | 12.93 | L/h | 3.591666666666667e-06 | not captured | 5.0 | not captured (not captured) | Jung_2024_table_p6_1:row2:col1, Jung_2024_table_p6_1:row2:col2 | — | not captured |
-| θQ | `Q900` · θQ | 0.657 | L/h | 1.825e-07 | not captured | 10.2 | not captured (not captured) | Jung_2024_table_p6_1:row3:col1, Jung_2024_table_p6_1:row3:col2 | — | not captured |
-| absorption rate constant | `Q49` · kabs | 0.268 | day−1 | 3.101851851851852e-06 | 1/h | not captured | review_gapfill (0.7) | Pan_2026:review | — | not captured |
+| θV1 (L) | `Q63` · V1 | 25.09 | L | 0.02509 | [l] | 3.6 | llm_confirmed (0.6) | Jung_2024_table_p6_1:row0:col1, Jung_2024_table_p6_1:row0:col2 | — | not captured |
+| θV2 (L) | `Q64` · V2 | 17.65 | L | 0.01765 | [l] | 11.2 | llm_confirmed (0.6) | Jung_2024_table_p6_1:row1:col1, Jung_2024_table_p6_1:row1:col2 | — | not captured |
+| θCL | `Q900` · θCL | 12.89 | L/h | 3.5805555555555557e-06 | not captured | 5.0 | not captured (not captured) | Jung_2024_table_p6_1:row2:col1, Jung_2024_table_p6_1:row2:col2 | — | not captured |
+| θQ | `Q900` · θQ | 0.655 | L/h | 1.8194444444444446e-07 | not captured | 10.2 | not captured (not captured) | Jung_2024_table_p6_1:row3:col1, Jung_2024_table_p6_1:row3:col2 | — | not captured |
+| ka (/day) | `Q49` · kabs | 0.268 | /day | 3.101851851851852e-06 | 1/h | not captured | review_gapfill (0.7) | Pan_2026:review | — | not captured |
 | t lag,oral | `Q83` · tlag | 0.36 | hour | 1296.0 | h | not captured | review_gapfill (0.7) | Tan_2024:review | — | not captured |
 
 <details class="legend">
@@ -65,10 +65,11 @@ Jung YS et al., A population pharmacokinetic model of m…, British journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q64 ('θAge−V2', value '-0.2418') — already have one for this compound
-- unit_dimension_mismatch: 'θAge−CL (year−1)' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('θAge−CL (year−1)', value '-0.0086') — already have one for this compound
-- dropped duplicate Q22 ('θCr−CL', value '-0.3180') — already have one for this compound
+- column 'final model estimate (rse%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'bootstrap result mean (rse%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q64 ('θAge−V2', value '-0.2464') — already have one for this compound
+- dropped unlinked row (NIL): 'θAge−CL (year−1)' — extend the ontology if this is a real PK parameter (source ['Jung_2024_table_p6_1:row5:col1', 'Jung_2024_table_p6_1:row5:col2'])
+- dropped duplicate Q22 ('θCr−CL', value '-0.3176') — already have one for this compound
 - dropped unlinked row (NIL): 'Factor' — extend the ontology if this is a real PK parameter (source ['Jung_2024_table_p6_1:row7:col1', 'Jung_2024_table_p6_1:row7:col2'])
 - dropped unlinked row (NIL): 'π2V1 (CV%)' — extend the ontology if this is a real PK parameter (source ['Jung_2024_table_p6_1:row12:col1', 'Jung_2024_table_p6_1:row12:col2'])
 - dropped unlinked row (NIL): 'π2CL (CV%)' — extend the ontology if this is a real PK parameter (source ['Jung_2024_table_p6_1:row13:col1', 'Jung_2024_table_p6_1:row13:col2'])
@@ -133,8 +134,8 @@ _Every reader agrees on every compared field of this record._
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jung_2024_table_p6_1:row1:col1', 'Jung_2024_table_p6_1:row1:col2'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tan_2024:review'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 24.7 L | not captured | not captured | ['Jung_2024_table_p6_1:row0:col1', 'Jung_2024_table_p6_1:row0:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 17.9 L | not captured | not captured | ['Jung_2024_table_p6_1:row1:col1', 'Jung_2024_table_p6_1:row1:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 25.1 L | not captured | not captured | ['Jung_2024_table_p6_1:row0:col1', 'Jung_2024_table_p6_1:row0:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 17.6 L | not captured | not captured | ['Jung_2024_table_p6_1:row1:col1', 'Jung_2024_table_p6_1:row1:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -159,4 +160,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 19:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:00 UTC</sub>

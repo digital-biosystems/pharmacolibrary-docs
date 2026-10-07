@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;melphalan&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan/&quot;},{&quot;label&quot;:&quot;Shah_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melphalan_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan/Melphalan_Li2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # melphalan — `Melphalan_Shah2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -22,24 +23,26 @@ The model was built, but melphalan's clearance had no value, so a library placeh
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:40.889502+00:00) predates the upstream re-run (2026-10-07 17:32:27.042660+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z)
 
 ## Model component
-<dbs-pgx drug="melphalan" model-id="Melphalan_Shah2022_reference" status="model_quarantined" stale="false" population="adult patients receiving hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="melphalan" model-id="Melphalan_Shah2022_reference" status="needs_review" stale="true" population="adults with autologous and allogeneic hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| central volume of distribution | `Q61` · V | 24.2 | L | 0.0242 | L | not captured | boundary (0.8) | Shah_2022:discussion_prose | — | not captured |
+| The central volume of distribution | `Q61` · V | 24.2 | L | 0.0242 | L | not captured | boundary_compartment (0.9) | Shah_2022:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,9 +54,10 @@ Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokin
 **Interpretation flags:**
 - dropped value-less row: 'CLi=CLpop*FFMFFMmeank*1+GFRbaselineGFRbaseline,mean*l−GFRdelta*m'
 - dropped value-less row: 'V1,i=V1,pop*FFMFFMmeann'
-- salvaged Q61 ('central volume of distribution'=24.2) from results prose — parameter table was unreadable
+- salvaged Q63 ('The central volume of distribution'=24.2) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=melphalan
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'The central volume of distribution' is the general volume)
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -118,4 +122,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 04:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:32 UTC</sub>

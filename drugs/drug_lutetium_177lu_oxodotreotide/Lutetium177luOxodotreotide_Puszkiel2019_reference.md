@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) oxodotreotide&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/&quot;},{&quot;label&quot;:&quot;Puszkiel_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base_structural_model&quot;,&quot;label&quot;:&quot;Barakat_2023_base_structural_model_estimate_value_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base_structural_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lutetium (177Lu) oxodotreotide — `Lutetium177luOxodotreotide_Puszkiel2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_oxodotreotide, the second reading 177Lu-Dotatate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:35.742547+00:00) predates the upstream re-run (2026-10-07 17:09:46.280518+00:00). Current validate status: `rejected`.
 
 ## Citation
 Puszkiel A et al., Evaluation of the Interaction of Amino…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0674-1](https://doi.org/10.1007/s40262-018-0674-1)
 
 ## Model component
-<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Puszkiel2019_reference" status="rejected" stale="false" population="cancer patients" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Puszkiel2019_reference" status="rejected" stale="true" population="cancer patients" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -54,21 +56,14 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | lutetium_177lu_oxodotreotide | 177Lu-Dotatate | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | lutetium_177lu_oxodotreotide | 177Lu-Dotatate | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -107,4 +102,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-25 06:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:09 UTC</sub>

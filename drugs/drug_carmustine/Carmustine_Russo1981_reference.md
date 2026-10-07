@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;carmustine&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/&quot;},{&quot;label&quot;:&quot;Russo_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carmustine_Russo1981_reference&quot;,&quot;label&quot;:&quot;Russo_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Russo1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carmustine_Levin1978_reference&quot;,&quot;label&quot;:&quot;Levin_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Levin1978_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carmustine_Russo1981_reference&quot;,&quot;label&quot;:&quot;Russo_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Russo1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carmustine — `Carmustine_Russo1981_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,15 @@ Only the abstract was available, so reported summary statistics stand in for a f
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:48.671160+00:00) predates the upstream re-run (2026-10-07 16:22:01.397382+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `carmustine`, measured `BCNU`.
+
 ## Citation
 Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981)
 
 ## Model component
-<dbs-pgx drug="carmustine" model-id="Carmustine_Russo1981_reference" status="curated_candidate" stale="false" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carmustine" model-id="Carmustine_Russo1981_reference" status="extracted" stale="true" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -103,8 +107,8 @@ Russo R et al., Differential pulse polarographic determ…, Cancer treatment rep
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_modelica.zip" download>Carmustine_Russo1981_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_fmi.zip" download>Carmustine_Russo1981_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_modelica.zip" download>Carmustine_Russo1981_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_fmi.zip" download>Carmustine_Russo1981_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_matlab.zip" download>Carmustine_Russo1981_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_matlab_simbio.zip" download>Carmustine_Russo1981_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carmustine/Carmustine_Russo1981_reference/Carmustine_Russo1981_reference_sbml.zip" download>Carmustine_Russo1981_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -125,4 +129,4 @@ Russo R et al., Differential pulse polarographic determ…, Cancer treatment rep
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 13:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:22 UTC</sub>

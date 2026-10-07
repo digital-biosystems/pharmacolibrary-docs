@@ -7,11 +7,17 @@
 - **DrugBank:** [DB16748](https://go.drugbank.com/drugs/DB16748) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+It remains investigational and is not yet an approved medicine.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:11 | 0:35 | 0/0/0 | 0/0/0 | 0/0/0 | 1,817/417 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 17:08 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 563/139 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

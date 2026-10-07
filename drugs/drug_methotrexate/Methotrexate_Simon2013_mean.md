@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Simon_2013 \u00b7 mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Muthukrishnan2025_reference&quot;,&quot;label&quot;:&quot;Muthukrishnan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Bremnes1989_reference&quot;,&quot;label&quot;:&quot;Bremnes_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Bremnes1989_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Kamel1988_reference&quot;,&quot;label&quot;:&quot;Kamel_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Kamel1988_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Blackman2026_reference&quot;,&quot;label&quot;:&quot;Blackman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Blackman2026_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methotrexate_Pan2026_reference&quot;,&quot;label&quot;:&quot;Pan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Pignon1994_reference&quot;,&quot;label&quot;:&quot;Pignon_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Pignon1994_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Wei2025_reference&quot;,&quot;label&quot;:&quot;Wei_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methotrexate_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/Methotrexate_van2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -30,7 +30,7 @@ Simon N et al., Impact of ABCC2 polymorphisms on high-d…, The pharmacogenomics
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Simon2013_mean" status="needs_review" stale="false" population="patients with lymphoid malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
@@ -46,8 +46,8 @@ Simon N et al., Impact of ABCC2 polymorphisms on high-d…, The pharmacogenomics
 | Q3 (l h-1) | `Q308` · Q3 | 0.032 | l h-1 | 8.888888888888889e-09 | [l] / [h] | not captured | exact (1.0) | Simon_2013_table_p4_1:row13:col2 | — | not captured |
 | V3 (l) | `Q77` · V3 | 3.19 | l | 0.00319 | [l] | not captured | exact (1.0) | Simon_2013_table_p4_1:row14:col2 | — | not captured |
 | ω (V1) (%) | `Q63` · V1 | 28.9 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Simon_2013_table_p4_1:row17:col2 | — | not captured |
-| CL | `Q22` · CL | 7.63 | L/hour | 2.1194444444444444e-06 | L/h | not captured | review_gapfill (0.7) | Blackman_2026:review | — | not captured |
-| absorption rate constant | `Q49` · kabs | 0.268 | day−1 | 3.101851851851852e-06 | 1/h | not captured | review_gapfill (0.7) | Pan_2026:review | — | not captured |
+| CL L | `Q22` · CL | 0.159 | L/day | 1.840277777777778e-09 | L/h | not captured | review_gapfill (0.7) | Rosario_2017:review | — | not captured |
+| ka (/day) | `Q49` · kabs | 0.268 | /day | 3.101851851851852e-06 | 1/h | not captured | review_gapfill (0.7) | Pan_2026:review | — | not captured |
 | t lag,oral | `Q83` · tlag | 0.36 | hour | 1296.0 | h | not captured | review_gapfill (0.7) | Tan_2024:review | — | not captured |
 
 <details class="legend">
@@ -66,7 +66,7 @@ Simon N et al., Impact of ABCC2 polymorphisms on high-d…, The pharmacogenomics
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methotrexate
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - population split: 'mean' subgroup of Simon_2013 (paper reports 2 populations: mean, mean ± s.e.)
-- gap-filled Q22 (CL) from Blackman_2026's review values (primary lacked it)
+- gap-filled Q22 (CL) from Rosario_2017's review values (primary lacked it)
 - gap-filled Q49 (kabs) from Pan_2026's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Tan_2024's review values (primary lacked it)
 
@@ -82,7 +82,7 @@ Simon N et al., Impact of ABCC2 polymorphisms on high-d…, The pharmacogenomics
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Blackman_2026:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rosario_2017:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Simon_2013_table_p4_1:row11:col2'] |
 | C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Simon_2013_table_p4_1:row13:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Pan_2026:review'] |
@@ -91,9 +91,9 @@ Simon N et al., Impact of ABCC2 polymorphisms on high-d…, The pharmacogenomics
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tan_2024:review'] |
 | C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['Simon_2013_table_p4_1:row17:col2'] |
 | C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Simon_2013_table_p4_1:row5:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.63 | not captured | not captured | ['Blackman_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.159 | not captured | not captured | ['Rosario_2017:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.63 L/h | not captured | not captured | ['Blackman_2026:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00663 L/h | not captured | not captured | ['Rosario_2017:review'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.93 L | not captured | not captured | ['Simon_2013_table_p4_1:row12:col2'] |
 
 <details class="legend">

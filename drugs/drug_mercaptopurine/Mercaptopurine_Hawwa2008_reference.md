@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Hawwa2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,6 +24,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:40.947935+00:00) predates the upstream re-run (2026-10-07 16:52:29.119091+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `6-mercaptopurine`, measured `6-thioguanine nucleotides`.
 
 ## Citation
@@ -31,32 +33,40 @@ Hawwa AF et al., Population pharmacokinetic and pharmaco…, British journal of 
   ·  DOI: [10.1111/j.1365-2125.2008.03281.x](https://doi.org/10.1111/j.1365-2125.2008.03281.x)
 
 ## Model component
-<dbs-pgx drug="mercaptopurine" model-id="Mercaptopurine_Hawwa2008_reference" status="rejected" stale="false" population="paediatric patients with acute lymphoblastic leukaemia" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="mercaptopurine" model-id="Mercaptopurine_Hawwa2008_reference" status="rejected" stale="true" population="paediatric patients with acute lymphoblastic leukaemia" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 0 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| theta_q45_tpmt | `Q900` · theta_q45_tpmt | 0.0191 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row1:col1 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'FM3 (no TPMT mutation)' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1'])
-- dropped unlinked row (NIL): 'FM3 (with TPMT mutation)' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col1'])
+- covariate effect for Q45 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-thioguanine nucleotides
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- refused review gap-fill of the disposition families: this record measures '6-thioguanine nucleotides', not mercaptopurine, and reports no metabolite CL/V — a parent value cannot stand in for the analyte
+- topology: 2 first-order transfer(s) across 2 compounds → general_linear
+- template fit: none — only the metabolite is modelled — no parent compartment
+- row roles: per-genotype parameters — typical value from the reference group: FM3 (no TPMT mutation)
+- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 1 linked by role; re-tagged parent→6-thioguanine nucleotides ×1
+- molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
+- molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures '6-thioguanine nucleotides', not mercaptopurine — the review values are the parent's
 
 **Extraction notes:**
-- unparsed cell tab_1:row0:col1 = 'Median (P5, P95)'
-- unparsed cell tab_1:row3:col1 = '0.0112 (0.0046, 0.0235)'
-- unparsed cell tab_1:row4:col1 = '0.0226 (0.0153, 0.0310)'
-- unparsed cell tab_1:row5:col1 = '0.0082 (0.0059, 0.0151)'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -114,4 +124,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:52 UTC</sub>

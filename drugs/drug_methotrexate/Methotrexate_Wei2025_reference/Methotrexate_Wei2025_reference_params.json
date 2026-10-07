@@ -18,15 +18,15 @@
   "adminDuration": 600.0,
   "adminMass": 2.5e-06,
   "k12": 3.314770617873243e-07,
-  "k21": 2.0885547201336676e-06,
+  "k21": 6.734006734006734e-06,
   "ka": 3.101851851851852e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 54021.64328657315
+  "central.C": 51943.887775551106
  },
  "reference_peaks": {
-  "central.C": 2.4256019856807396e-06
+  "central.C": 2.519498676301855e-06
  },
  "stop_time": 1036800.0,
  "template": "PK_2C_enteral",

@@ -18,18 +18,11 @@ Carboquone is an alkylating agent that has been used as an anticancer (antineopl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 02:55 | 4:19 | 0/0/0 | 1/0/0 | 0/0/0 | 46,554/1,279 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 3/0 | 2/0 | 0 |
+| 2026-10-07 16:19 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 29,833/289 | einfracz / qwen3.8-27b | 2 | 3/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Lin_1990_colony_number](drugs/drug_carboquone/pd_Lin_1990_colony_number.md) | name ← carboquone · inhibition effect | — | Lin ST, [Study on chemosensitivity test (in vit…, Nihon Ika Daigaku zasshi (1990) | [10.1272/jnms1923.57.127](https://doi.org/10.1272/jnms1923.57.127) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Lin_1990_optical_density](drugs/drug_carboquone/pd_Lin_1990_optical_density.md) | name ← carboquone · inhibition effect | — | Lin ST, [Study on chemosensitivity test (in vit…, Nihon Ika Daigaku zasshi (1990) | [10.1272/jnms1923.57.127](https://doi.org/10.1272/jnms1923.57.127) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -48,9 +41,9 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hisaoka_1982 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding carboquone pharmacokinetics. |
+| popPK | Hisaoka_1982 | irrelevant | 0 | 0 | The provided text contains no scientific data, mentioning only software metadata (GROBID). |
 | popPK | Kido_1991 | irrelevant | 0 | 0 | The paper is an in-vitro chemosensitivity study reporting IC50 values, not a pharmacokinetic study with disposition parameters for carboquone. |
-| popPK | Lin_1990 | irrelevant | 0 | 0 | The paper is an in-vitro chemosensitivity study (MTT assay) and does not report pharmacokinetic parameters for carboquone. |
+| popPK | Lin_1990 | irrelevant | 0 | 0 | The study is an in-vitro chemosensitivity assay (MTT and clonogenic) of human carcinoma cell lines, reporting IC50/ID50 values for cytotoxicity, not pharmacokinetic disposition parameters (CL, V, ka) for carboquone. |
 | popPK | Machida_1980 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding carboquone pharmacokinetics. |
 | PD | Machida_1980 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any scientific content regarding carboquone or pharmacodynamics. |
 | popPK | Mizuno_1984 | irrelevant | 0 | 0 | The paper studies the antitumor efficacy of FU-O-G, with carboquone only mentioned as a co-administered agent in combination therapy, and no pharmacokinetic parameters are reported. |
@@ -59,7 +52,7 @@ _not available_
 | PD | Ninomiya_1984 | not_relevant | 1 | 0 | The paper reports qualitative enhancement of anti-tumor effects in combination chemotherapy but provides no numeric PD parameters, concentration-effect curves, or dose-response data for carboquone. |
 | popPK | Shibata_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitomycin C resistance where carboquone is only mentioned as a comparator drug to which the cell lines were not resistant, with no PK parameters reported. |
 | PD | Shibata_1995 | not_relevant | 0 | 0 | The paper focuses on mitomycin C resistance mechanisms; carboquone is only mentioned as a drug to which the resistant cell lines were not resistant, with no exposure-response or dose-response analysis or numeric PD parameters provided for it. |
-| popPK | Suzuki_2008 | irrelevant | 0 | 0 | The study is a mechanistic toxicology investigation of micronucleus formation where carboquone is used only as a test mutagen, with no pharmacokinetic parameters reported. |
+| popPK | Suzuki_2008 | irrelevant | 0 | 0 | The paper is a mechanistic study on micronucleus formation and erythropoiesis, using carboquone only as one of several mutagens to test the effect of cAMP pretreatment, with no PK parameters reported. |
 | PD | Suzuki_2008 | not_relevant | 1 | 0 | The paper mentions carboquone only as one of several mutagens whose effects were qualitatively increased by cAMP pretreatment, without providing any numeric dose-response data, concentration-effect curves, or PD parameters for carboquone. |
 | popPK | Yoh_1983 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of adriamycin, and carboquone is only mentioned as a co-administered agent without any reported PK parameters. |
 | PD | Yoh_1983 | not_relevant | 0 | 0 | The paper reports clinical response rates and qualitative PK comparisons for adriamycin, but provides no concentration-effect data, dose-response curves, or numeric PD parameters for carboquone. |

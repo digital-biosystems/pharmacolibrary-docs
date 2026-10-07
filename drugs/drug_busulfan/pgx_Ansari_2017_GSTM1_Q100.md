@@ -12,8 +12,8 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Ansari_2017` — [doi](https://doi.org/10.18632/oncotarget.20310)
 - **gene:** GSTM1
-- **mechanism:** not stated in the paper
-- **applies to:** not stated in the paper
+- **mechanism:** metabolism — the gene's enzyme clears the drug
+- **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes

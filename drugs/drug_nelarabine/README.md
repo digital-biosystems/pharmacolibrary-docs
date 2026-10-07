@@ -18,7 +18,7 @@ Nelarabine is a purine analogue anticancer drug used to treat precursor T-cell l
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 06:47 | 11:49 | 0/0/0 | 2/0/0 | 0/0/1 | 156,599/3,461 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/9 | 6/0 | 0 |
+| 2026-10-07 17:11 | 0:35 | 0/0/0 | 1/0/0 | 0/0/1 | 103,358/1,398 | einfracz / qwen3.8-27b | 6 | 1/9 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Eletskaya_2023_unknown](drugs/drug_nelarabine/pd_Eletskaya_2023_unknown.md) | U937 cell survival ← 2-chloropurine arabinonucleosides (specifically serine derivative 4b) · inhibition effect | — | Eletskaya BZ et al., Enzymatic Synthesis of 2-Chloropurine A…, International journal of mo… (2023) | [10.3390/ijms24076223](https://doi.org/10.3390/ijms24076223) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tohidian_2025_unknown](drugs/drug_nelarabine/pd_Tohidian_2025_unknown.md) | FOXO1 expression ← nelarabine · inhibition effect | — | Tohidian M et al., The niosomal nelarabine as a promising…, Annals of medicine and surg… (2025) | [10.1097/MS9.0000000000002821](https://doi.org/10.1097/MS9.0000000000002821) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Eletskaya_2023_Cell_Survival](drugs/drug_nelarabine/pd_Eletskaya_2023_Cell_Survival.md) | U937 cell survival ← Nelarabine · inhibition effect | — | Eletskaya BZ et al., Enzymatic Synthesis of 2-Chloropurine A…, International journal of mo… (2023) | [10.3390/ijms24076223](https://doi.org/10.3390/ijms24076223) |
 
 ## Pharmacogenomics (PGx)
 
@@ -75,18 +74,18 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Berg_2007.pdf` | Berg SL et al., Plasma and cerebrospinal fluid pharmaco…, Cancer chemotherapy and pha… (2007) | popPK | 10 | [10.1007/s00280-006-0328-0](https://doi.org/10.1007/s00280-006-0328-0) | [16953392](https://pubmed.ncbi.nlm.nih.gov/16953392) | The paper reports quantitative pharmacokinetic parameters (clearance, half-life, AUC) for nelarabine in nonhuman primates, and all numeric values are explicitly present in the text. |
-| `Kisor_2000.pdf` | Kisor DF et al., Pharmacokinetics of nelarabine and 9-be…, Journal of clinical oncolog… (2000) | popPK | 10 | [10.1200/JCO.2000.18.5.995](https://doi.org/10.1200/JCO.2000.18.5.995) | [10694549](https://pubmed.ncbi.nlm.nih.gov/10694549) | The paper reports quantitative pharmacokinetic parameters for nelarabine (half-life) and its active metabolite ara-G (clearance, volume of distribution, half-life) directly in the text. |
+| `Berg_2007.pdf` | Berg SL et al., Plasma and cerebrospinal fluid pharmaco…, Cancer chemotherapy and pha… (2007) | popPK | 10 | [10.1007/s00280-006-0328-0](https://doi.org/10.1007/s00280-006-0328-0) | [16953392](https://pubmed.ncbi.nlm.nih.gov/16953392) | The study reports quantitative PK parameters (AUC, t1/2, clearance) for nelarabine and its metabolite ara-G in nonhuman primates directly in the abstract. |
+| `Kisor_2000.pdf` | Kisor DF et al., Pharmacokinetics of nelarabine and 9-be…, Journal of clinical oncolog… (2000) | popPK | 10 | [10.1200/JCO.2000.18.5.995](https://doi.org/10.1200/JCO.2000.18.5.995) | [10694549](https://pubmed.ncbi.nlm.nih.gov/10694549) | The abstract explicitly reports quantitative PK parameters including half-life and clearance values for both nelarabine and its metabolite ara-G. |
 | `Rabie_2022.pdf` | Rabie AM et al., A Series of Adenosine Analogs as the Fi…, ChemistrySelect (2022) | pd | 4 | [10.1002/slct.202201912](https://doi.org/10.1002/slct.202201912) | [36718467](https://www.ncbi.nlm.nih.gov/pubmed/36718467) | metadata signals extractable PD data (EC50) |
 | `Vaskó_2019.pdf` | Vaskó B et al., Inhibitor selectivity of CNTs and ENTs, Xenobiotica; the fate of fo… (2019) | pd | 4 | [10.1080/00498254.2018.1501832](https://doi.org/10.1080/00498254.2018.1501832) | [30022699](https://www.ncbi.nlm.nih.gov/pubmed/30022699) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-15T06:44:15.198958+00:00</sub>
+<sub>queue written 2026-10-07T17:10:52.183368+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdalla_2023 | irrelevant | 0 | 0 | The paper is a computational and in-vitro antiviral study where nelarabine is only one of several nucleoside analogs tested for SARS-CoV-2 inhibition, with no pharmacokinetic parameters reported. |
+| popPK | Abdalla_2023 | irrelevant | 0 | 0 | The study focuses on the antiviral activity and molecular docking of nucleoside analogs against SARS-CoV-2 enzymes, containing no pharmacokinetic parameters for nelarabine. |
 | popPK | Beesley_2007 | irrelevant | 0 | 0 | The paper reports in vitro cytotoxicity (IC50) values, not pharmacokinetic disposition parameters. |
 | popPK | Buie_2007 | irrelevant | 2 | 0 | The paper is a narrative review of pharmacology and clinical efficacy that does not report original quantitative pharmacokinetic parameter values (e.g., CL, V, ka) for nelarabine. |
 | PD | Buie_2007 | not_relevant | 2 | 0 | The paper is a narrative review that qualitatively describes dose-dependent accumulation and clinical response rates but does not provide numeric PD parameters (e.g., Emax, EC50) or an extractable concentration-effect curve. |
@@ -94,27 +93,27 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Gandhi_2001 | irrelevant | 2 | 0 | The study focuses on cellular pharmacokinetics (intracellular ara-GTP levels) rather than reporting quantitative systemic disposition parameters (CL, V, Q) for nelarabine. |
 | popPK | Gandhi_2006 | irrelevant | 0 | 0 | The paper is a review article summarizing general findings without providing original quantitative pharmacokinetic parameter values for nelarabine. |
 | PD | Gandhi_2006 | not_relevant | 1 | 0 | The text is a review summary that qualitatively mentions pharmacodynamic investigations and the importance of triphosphate levels but does not provide any numeric PD parameters, dose-response curves, or specific exposure-response data for nelarabine. |
-| popPK | Ianevski_2026 | irrelevant | 0 | 0 | The paper is a multiomics profiling and drug screening study of T-cell leukemia cell lines, and nelarabine is only mentioned in a reference citation, not as a subject of pharmacokinetic analysis. |
+| popPK | Ianevski_2026 | irrelevant | 0 | 0 | The paper is a multiomics and pharmacogenomic profiling study of T-cell leukemia cell lines that does not report any pharmacokinetic parameters for nelarabine. |
 | PD | Ianevski_2026 | not_relevant | 2 | 0 | The paper reports cell line sensitivity scores (DSS) and correlations with gene expression, but does not provide numeric PK/PD parameters (e.g., EC50, Emax) or exposure-response curves for nelarabine. |
-| popPK | Kisor_2005 | irrelevant | 2 | 1 | The paper is a review article that summarizes pharmacokinetic data rather than reporting original quantitative disposition parameters for nelarabine, and the specific numeric values provided are for the metabolite ara-G, not the subject drug. |
-| popPK | Rabie_2022 | irrelevant | 0 | 0 | The paper focuses on anti-SARS-CoV-2 adenosine analogs and does not report pharmacokinetic parameters for nelarabine. |
+| popPK | Kisor_2005 | irrelevant | 4 | 3 | This is a review article that lacks a primary population pharmacokinetic model for nelarabine, reporting only general half-life and clearance values for its metabolite (ara-G). |
+| popPK | Rabie_2022 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
 | PD | Rabie_2022 | not_relevant | 0 | 0 | The paper focuses on adenosine analogs against SARS-CoV-2 and does not mention nelarabine or report any pharmacodynamic parameters for it. |
-| popPK | Rabie_2023 | irrelevant | 0 | 0 | The paper is an in-silico and in-vitro antiviral study where nelarabine is a screened compound, not a pharmacokinetic study reporting disposition parameters. |
-| PGx | Robak_2012 | not_relevant | 0 | 0 | The paper is a general review of purine nucleoside analogs and does not report any pharmacogenomic effects on the PK or PD of nelarabine. |
-| popPK | Saez-Ayala_2023 | irrelevant | 0 | 0 | The paper describes the development of deoxycytidine kinase (dCK) inhibitors for leukemia and does not report pharmacokinetic parameters for nelarabine. |
+| popPK | Rabie_2023 | irrelevant | 0 | 0 | The study is an in-silico/in-vitro antiviral screening and docking study that includes nelarabine as a candidate compound but does not report pharmacokinetic disposition parameters (CL, V, etc.). |
+| PGx | Robak_2012 | not_relevant | 0 | 0 | This is a general review of purine nucleoside analogs' mechanisms and PK/PD, but it does not report any specific pharmacogenomic effects (gene variants influencing parameters) for nelarabine. |
+| popPK | Saez-Ayala_2023 | irrelevant | 0 | 0 | The study focuses on deoxycytidine kinase inhibitors (masitinib/OR0642) for leukemia and does not report pharmacokinetic parameters for nelarabine. |
 | PD | Saez-Ayala_2023 | not_relevant | 0 | 0 | The paper focuses on the development of a deoxycytidine kinase inhibitor (OR0642) for leukemia and does not mention nelarabine or report any pharmacodynamic parameters for it. |
 | popPK | Song_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and toxicity of a new compound (YLS010), using nelarabine only as a positive control/comparator without reporting any pharmacokinetic parameters for it. |
 | popPK | Tohidian_2025 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity and gene expression analysis of niosomal nelarabine, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Toksvang_2025 | irrelevant | 2 | 0 | The paper is a narrative review of therapeutic drug monitoring in ALL and does not report original quantitative pharmacokinetic parameter values for nelarabine. |
 | PD | Toksvang_2025 | not_relevant | 2 | 0 | The text is a narrative review abstract that mentions nelarabine in the context of TDM but does not report specific numeric PD parameters or exposure-response relationships. |
-| PGx | Toksvang_2025 | not_relevant | 2 | 5 | The paper is a narrative review of TDM and pharmacogenetics in ALL; it does not report specific fitted pharmacogenomic effect sizes on nelarabine PK/PD parameters. |
+| PGx | Toksvang_2025 | not_relevant | 3 | 5 | The text is a narrative review abstract covering multiple drugs and pharmacogenetic factors, but it does not report specific, fitted pharmacogenomic effects on PK or PD parameters for nelarabine in this extract. |
 | popPK | Tsesmetzis_2018 | irrelevant | 1 | 0 | The paper is a review of resistance mechanisms and metabolism of nucleoside analogues that mentions nelarabine only in the context of its prodrug conversion and solubility, without reporting any quantitative pharmacokinetic parameters. |
 | PD | Tsesmetzis_2018 | not_relevant | 1 | 0 | The paper is a review article discussing general mechanisms of resistance and pharmacodynamics for nucleoside analogues, including nelarabine, but does not report specific numeric PD parameters or exposure-response data. |
 | popPK | Vaskó_2019 | irrelevant | 0 | 0 | The provided evidence consists only of a title regarding transporter selectivity, with no pharmacokinetic data or numeric parameters for nelarabine. |
 | PD | Vaskó_2019 | not_relevant | 0 | 0 | The provided text is a title regarding transporter selectivity and contains no information about nelarabine, pharmacodynamics, or exposure-response relationships. |
-| PGx | Wang_2022 | not_relevant | 2 | 0 | The paper investigates the mechanism of action of nelarabine (RNR hyperactivation) and synthetic lethality with DUSP6, but does not report how a specific gene variant/genotype alters a pharmacokinetic or pharmacodynamic parameter of nelarabine. |
-| PGx | Yoshimura_2024 | not_relevant | 2 | 1 | The paper reports differential drug sensitivity (PD) between age groups and molecular subtypes, but does not report a specific gene variant/genotype effect on a PK/PD parameter for nelarabine. |
-| popPK | unknown_2016 | irrelevant | 0 | 0 | The paper does not mention nelarabine or report any pharmacokinetic parameters for it. |
+| PGx | Wang_2022 | not_relevant | 3 | 0 | The paper investigates the mechanism of action of nelarabine involving RRM2 and dNTP imbalance but does not report a pharmacogenomic effect (gene variant/genotype) on specific PK or PD parameters of nelarabine. |
+| PGx | Yoshimura_2024 | not_relevant | 2 | 1 | The paper reports *ex vivo* drug sensitivity and molecular subtype differences associated with age, but does not measure or report pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., Cmax, AUC, IC50 in patient plasma/urine) driven by specific gene variants. |
+| popPK | unknown_2016 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | unknown_2016 | not_relevant | 0 | 0 | The provided text contains abstracts regarding G-CSF timing, cancer registry data, splicing mutations, DDAVP response, qualitative interviews, survival disparities, and dexrazoxane cardiac outcomes; it does not contain any pharmacodynamic or exposure-response analysis for nelarabine. |
 
 ---

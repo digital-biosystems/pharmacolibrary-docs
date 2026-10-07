@@ -4,7 +4,7 @@
 
 # radium (223Ra) dichloride — `Radium223raDichloride_Hllriegl2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.143). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has radium_223ra_dichloride, the second reading radium-223 dichloride; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has radium_223ra_dichloride → radon_219 (metabolism); radon_219 → polonium_215 (metabolism); polonium_215 → lead_211 (metabolism) …, the second reading radium_223ra_dichloride → 219rn (interconversion); 219rn → 215po (interconversion); 215po → 211pb (interconversion) …; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:31.000316+00:00) predates the upstream re-run (2026-10-07 17:37:11.456557+00:00). Current validate status: `rejected`.
 
 ## Citation
 Höllriegl V et al., Radiopharmacokinetic modelling and radi…, EJNMMI physics (2021)
   ·  DOI: [10.1186/s40658-021-00388-1](https://doi.org/10.1186/s40658-021-00388-1)
 
 ## Model component
-<dbs-pgx drug="radium (223Ra) dichloride" model-id="Radium223raDichloride_Hllriegl2021_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="radium_223ra_dichloride" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="radium (223Ra) dichloride" model-id="Radium223raDichloride_Hllriegl2021_reference" status="rejected" stale="true" population="patients with metastatic castration-resistant prostate cancer" measured-compound="radium_223ra_dichloride" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -80,7 +82,9 @@ _No resolved parameters._
 - table mostly unlinked (33/33 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=radium_223ra_dichloride
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 33/33 row label(s) assigned, 0 linked by role
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
@@ -115,18 +119,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.143 (1/7 fields) | 6 |
+| `gpt-oss:120b` | primary re-run | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['radium_223ra_dichloride', 'radon_219', 'metabolism'], ['radon_219', 'polonium_215', 'metabolism'], ['polonium_215', 'lead_211', 'metabolism'], ['lead_211', 'bismuth_211', 'metabolism'], ['bismuth_211', 'polonium_211', 'metabolism'], ['polonium_211', 'thallium_207', 'metabolism']] | [['radium-223 dichloride', '219rn', 'interconversion'], ['219rn', '215po', 'interconversion'], ['215po', '211pb', 'interconversion'], ['211pb', '211bi', 'interconversion'], ['211bi', '211po', 'interconversion'], ['211po', '207pb', 'interconversion']] | mismatch |
-| `gpt-oss:120b` | `parameters[blood]` | not captured | 0.000041 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cortical bone surface]` | not captured | 0.116 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[nonexch cortical bone volume]` | not captured | 0.0000821 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | radium_223ra_dichloride | radium-223 dichloride | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | radium_223ra_dichloride | radium-223 dichloride | mismatch |
+| `gpt-oss:120b` | `model.links` | [['radium_223ra_dichloride', 'radon_219', 'metabolism'], ['radon_219', 'polonium_215', 'metabolism'], ['polonium_215', 'lead_211', 'metabolism'], ['lead_211', 'bismuth_211', 'metabolism'], ['bismuth_211', 'polonium_211', 'metabolism'], ['polonium_211', 'thallium_207', 'metabolism']] | [['radium_223ra_dichloride', '219rn', 'interconversion'], ['219rn', '215po', 'interconversion'], ['215po', '211pb', 'interconversion'], ['211pb', '211bi', 'interconversion'], ['211bi', '211po', 'interconversion'], ['211po', '207tl', 'interconversion']] | mismatch |
+| `gpt-oss:120b` | `parameters[cortical bone volume]` | not captured | 14.14 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cortical marrow]` | not captured | 0.04 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[liver]` | not captured | 5.12 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[skin]` | not captured | 0.43 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[urinary bladder content]` | not captured | 0.04 | only_one_extracted |
 
 </details>
 
@@ -167,4 +171,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-25 06:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:37 UTC</sub>

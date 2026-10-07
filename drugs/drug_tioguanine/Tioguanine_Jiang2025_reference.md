@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tioguanine&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/&quot;},{&quot;label&quot;:&quot;Jiang_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tioguanine — `Tioguanine_Jiang2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:41:49.611484+00:00) predates the upstream re-run (2026-10-07 17:32:45.193734+00:00). Current validate status: `extracted`.
+
 ## Citation
 Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878)
 
 ## Model component
-<dbs-pgx drug="tioguanine" model-id="Tioguanine_Jiang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tioguanine" model-id="Tioguanine_Jiang2025_reference" status="extracted" stale="true" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,9 +40,9 @@ Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, develop
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
-| V/F (L) | `Q76` · V/F | 140.0 | L | 0.14 | L | not captured | review (0.7) | Jiang_2025:review | — | not captured |
-| Ka (h−1) | `Q49` · kabs | 1.3 | h−1 | 0.00036111111111111115 | 1/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| CL/F | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| V/F | `Q76` · V/F | 140.0 | L | 0.14 | L | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| Ka (fixed) | `Q49` · kabs | 1.3 | h−1 | 0.00036111111111111115 | 1/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -127,7 +129,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_modelica.zip" download>Tioguanine_Jiang2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_modelica.zip" download>Tioguanine_Jiang2025_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_fmi.zip" download>Tioguanine_Jiang2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_matlab.zip" download>Tioguanine_Jiang2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_matlab_simbio.zip" download>Tioguanine_Jiang2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -149,4 +151,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 08:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:32 UTC</sub>

@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Pyridoxine (measured concentrations) drives SARS-CoV-2-induced cytopathic effect (CPE) (in %): direct Emax (saturable) effect.
+**As extracted:** Pyridoxine (measured concentrations) drives SARS-CoV-2-induced cytopathic effect (CPE) (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -24,10 +24,10 @@
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Bello_2023`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Bello SO et al., Erythromycin, retapamulin, pyridoxine,…, Frontiers in cellular and i… (2023)

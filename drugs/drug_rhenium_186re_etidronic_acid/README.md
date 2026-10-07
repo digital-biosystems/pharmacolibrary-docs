@@ -7,11 +7,17 @@
 - **DrugBank:** not captured · **PubChem:** not captured
 - **groups:** not captured
 
+## About
+
+Rhenium etidronic acid is a radiopharmaceutical used to relieve pain from cancer that has spread to the bone. It is classified among bone-seeking pain palliation radiopharmaceuticals, used mainly in nuclear medicine for this purpose.
+
+<small>⚠️ **Unverified** — written by `glm-5.3-flash` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 19:50 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 1,448/516 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 16:42 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 440/174 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

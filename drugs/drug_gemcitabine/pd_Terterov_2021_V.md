@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;gemcitabine&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/&quot;},{&quot;label&quot;:&quot;Terterov_2021 \u00b7 PD tumor volume&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gemcitabine_Doi2017_reference&quot;,&quot;label&quot;:&quot;Doi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Blaauboer_2022_unknown&quot;,&quot;label&quot;:&quot;Blaauboer_2022 \u00b7 unknown&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/pd_Blaauboer_2022_unknown.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yao_2023_net_body_weight&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 net body weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/pd_Yao_2023_net_body_weight.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yao_2023_tumor_volume&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 tumor volume&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/pd_Yao_2023_tumor_volume.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gemcitabine_Doi2017_reference&quot;,&quot;label&quot;:&quot;Doi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Jiang2008_reference&quot;,&quot;label&quot;:&quot;Jiang_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Jiang2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_RamnLpez2012_reference&quot;,&quot;label&quot;:&quot;Ram\u00f3n-L\u00f3pez_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_RamnLpez2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Serdjebi2017_reference&quot;,&quot;label&quot;:&quot;Serdjebi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Serdjebi2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yao_2023_Tumor_volume&quot;,&quot;label&quot;:&quot;Yao_2023 \u00b7 Tumor volume&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/pd_Yao_2023_Tumor_volume.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tumor volume — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
@@ -16,7 +16,7 @@
 
 ## What this record describes
 
-**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives tumor volume (in unknown): delayed effect through an effect compartment.
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives tumor volume (in cm 3): disease-progression model.
 
 **Model:** No model was generated from this record.
 
@@ -25,7 +25,7 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Terterov_2021`
-- **model family:** `effect_compartment`
+- **model family:** `disease_progression`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/proportional
@@ -37,29 +37,8 @@ Terterov IN et al., Minimal PK/PD model for simultaneous de…, Cancer chemother
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.24 | not captured | not captured | llm (not captured) | tab_0:row2:col1 |
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] — MM Cooperative | `Q1` · not captured | 0.25 | not captured | not captured | llm (not captured) | tab_0:row2:col4 |
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 131 | not captured | not captured | llm (not captured) | tab_0:row2:col5 |
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.25 | not captured | not captured | llm (not captured) | tab_0:row2:col7 |
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 230 | not captured | not captured | llm (not captured) | tab_0:row2:col8 |
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.11 | not captured | not captured | llm (not captured) | tab_0:row2:col10 |
-| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 307 | not captured | not captured | llm (not captured) | tab_0:row2:col11 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.45 | not captured | not captured | llm (not captured) | tab_0:row3:col1 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] — MM Heavisidel | `Q59` · not captured | 16 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] — MM Cooperative | `Q59` · not captured | 0.46 | not captured | not captured | llm (not captured) | tab_0:row3:col4 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 29 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.40 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 435 | not captured | not captured | llm (not captured) | tab_0:row3:col8 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.46 | not captured | not captured | llm (not captured) | tab_0:row3:col10 |
-| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 83 | not captured | not captured | llm (not captured) | tab_0:row3:col11 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0043 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col1 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] — MM Heavisidel | `Q322` · not captured | 67 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col2 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] — MM Cooperative | `Q322` · not captured | 0.0042 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 129 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0065 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col7 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 1422 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col8 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0153 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col10 |
-| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 4656 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col11 |
+| PD (effect) | 𝐼𝐶 50 | `Q322` · not captured | 0.0043 | 𝜇𝑀 | not captured | llm (not captured) | Terterov_2021:pdv3 |
+| PD (effect) | 𝛼 | `Q326` · not captured | 0.45 | 𝑑𝑎𝑦 -1 | not captured | llm (not captured) | Terterov_2021:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

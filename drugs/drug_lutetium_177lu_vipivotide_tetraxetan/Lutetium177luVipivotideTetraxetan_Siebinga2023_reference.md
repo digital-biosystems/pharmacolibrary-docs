@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lutetium (177Lu) vipivotide tetraxetan — `Lutetium177luVipivotideTetraxetan_Siebinga2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.72). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.87). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -21,37 +21,36 @@
 
 The declared topology is a two-compartment model, but the parameter set includes transfers to a second and third peripheral compartment (k13/k31 and k14/k41) and a volume V3 of 30.4 L, leaving compartments with no place in the stated structure — the orphan-compartment finding. The second reader also disagreed on several parameters: they read a Bmax of 40.4 for compartment 2, a k15 of 0.000248 h−1 with tumor-volume effect 0.705, and no compartment-2/3 volumes, whereas this record lists V2 24.6 L and V3 30.4 L. Disagreements on dose compound and primary analyte were only naming variants of the same molecule. Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, V1 10.3 L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_vipivotide_tetraxetan, the second reading lutetium-177 lu vipivotide tetraxetan; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_vipivotide_tetraxetan, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:35.838300+00:00) predates the upstream re-run (2026-10-07 17:24:20.669132+00:00). Current validate status: `extracted`.
 
 ## Citation
 Siebinga H et al., Population pharmacokinetic dosimetry mo…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12914](https://doi.org/10.1002/psp4.12914)
 
 ## Model component
-<dbs-pgx drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference" status="rejected" stale="false" population="patients with low volume metastatic prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference" status="extracted" stale="true" population="patients with low volume metastatic prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k 10 (h−1) | `Q47` · kel | 0.288 | h−1 | 7.999999999999999e-05 | [1] / [h] | 7.6 | space_fold (0.95) | psp412914-tbl-0002:row2:col1, psp412914-tbl-0002:row2:col2 | — | not captured |
+| k 10 (h−1) | `Q47` · kel | 0.288 | h−1 | 7.999999999999999e-05 | [1] / [h] | 7.6 | space_fold (0.95) | psp412914-tbl-0002:row2:col1, psp412914-tbl-0002:row2:col2 | — | 17.2 (13.7% RSE) |
 | k 12 (h−1) | `Q301` · k12 | 0.0238 | h−1 | 6.6111111111111115e-06 | [1] / [h] | 12.4 | space_fold (0.95) | psp412914-tbl-0002:row3:col1, psp412914-tbl-0002:row3:col2 | — | not captured |
 | k 21 (h−1) | `Q302` · k21 | 0.0307 | h−1 | 8.527777777777779e-06 | [1] / [h] | 5.8 | space_fold (0.95) | psp412914-tbl-0002:row4:col1, psp412914-tbl-0002:row4:col2 | — | not captured |
-| k 13 (h−1) | `Q303` · k13 | 0.00867 | h−1 | 2.4083333333333337e-06 | [1] / [h] | 8.6 | space_fold (0.95) | psp412914-tbl-0002:row5:col1, psp412914-tbl-0002:row5:col2 | — | not captured |
+| k 13 (h−1) | `Q303` · k13 | 0.00867 | h−1 | 2.4083333333333337e-06 | [1] / [h] | 8.6 | space_fold (0.95) | psp412914-tbl-0002:row5:col1, psp412914-tbl-0002:row5:col2 | — | 16.1 (16.8% RSE) |
 | k 31 (h−1) | `Q304` · k31 | 0.0141 | h−1 | 3.916666666666667e-06 | [1] / [h] | 4.7 | space_fold (0.95) | psp412914-tbl-0002:row6:col1, psp412914-tbl-0002:row6:col2 | — | not captured |
 | k 14 (h−1) | `Q347` · k14 | 0.0238 | h−1 | 6.6111111111111115e-06 | [1] / [h] | 7.9 | space_fold (0.95) | psp412914-tbl-0002:row7:col1, psp412914-tbl-0002:row7:col2 | — | not captured |
-| k 41 (h−1) | `Q348` · k41 | 0.0283 | h−1 | 7.86111111111111e-06 | [1] / [h] | 4.6 | space_fold (0.95) | psp412914-tbl-0002:row8:col1, psp412914-tbl-0002:row8:col2 | — | not captured |
-| V1 (L) | `Q63` · V1 | 10.3 | L | 0.0103 | [l] | 4.5 | exact (1.0) | psp412914-tbl-0002:row13:col1, psp412914-tbl-0002:row13:col2 | — | not captured |
-| Compartment 2 | `Q64` · V2 | 24.6 | not captured | not captured | not captured | 11.7 | llm (0.6) | psp412914-tbl-0002:row28:col1, psp412914-tbl-0002:row28:col2 | — | not captured |
-| Compartment 3 | `Q77` · V3 | 30.4 | not captured | not captured | not captured | 11.2 | llm (0.6) | psp412914-tbl-0002:row29:col1, psp412914-tbl-0002:row29:col2 | — | not captured |
+| k 41 (h−1) | `Q348` · k41 | 0.0283 | h−1 | 7.86111111111111e-06 | [1] / [h] | 4.6 | space_fold (0.95) | psp412914-tbl-0002:row8:col1, psp412914-tbl-0002:row8:col2 | — | 9.5 (16.8% RSE) |
+| k 15 (h−1) | `Q48` · kcomp | 0.000248 | h−1 | 6.888888888888889e-08 | [1] / [h] | 14.0 | space_fold (0.95) | psp412914-tbl-0002:row9:col1, psp412914-tbl-0002:row9:col2 | — | 58.8 (17.3% RSE) |
+| V1 (L) | `Q61` · V | 10.3 | L | 0.0103 | [l] | 4.5 | exact (1.0) | psp412914-tbl-0002:row13:col1, psp412914-tbl-0002:row13:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,28 +60,30 @@ Siebinga H et al., Population pharmacokinetic dosimetry mo…, CPT: pharmacometr
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'k 15 (h−1)' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row9:col1', 'psp412914-tbl-0002:row9:col2'])
-- dropped unlinked row (NIL): 'k 51 (h−1)' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row10:col1', 'psp412914-tbl-0002:row10:col2'])
-- dropped unlinked row (NIL): 'k 16 (h−1)' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row11:col1', 'psp412914-tbl-0002:row11:col2'])
-- dropped unlinked row (NIL): 'k 61 (h−1)' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row12:col1', 'psp412914-tbl-0002:row12:col2'])
+- table section iiv: 'k 10' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'k 13' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'k 41' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'k 15' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'BMAX compartment 2' routed out of structural estimates ('IIV (CV%)')
+- table section iov: 'k 15' routed out of structural estimates ('IOV (CV%)')
+- table section residual_error: 'Compartment 1 (blood samples)' routed out of structural estimates ('RUV (proportional, CV%)')
+- table section residual_error: 'Compartment 1 (SPECT data)' routed out of structural estimates ('RUV (proportional, CV%)')
+- table section residual_error: 'Compartment 2' routed out of structural estimates ('RUV (proportional, CV%)')
+- table section residual_error: 'Compartment 3' routed out of structural estimates ('RUV (proportional, CV%)')
+- table section residual_error: 'Compartment 4' routed out of structural estimates ('RUV (proportional, CV%)')
+- table section residual_error: 'Compartment 5' routed out of structural estimates ('RUV (proportional, CV%)')
+- table section residual_error: 'Compartment 1 a (MBq/L)' routed out of structural estimates ('RUV (additive)')
+- dropped duplicate Q48 ('k 51 (h−1)', value '0.00902') — already have one for this compound
+- dropped duplicate Q48 ('k 16 (h−1)', value '1.05') — already have one for this compound
+- dropped duplicate Q48 ('k 61 (h−1)', value '0.744') — already have one for this compound
 - dropped unlinked row (NIL): 'BMAX compartment 2 (MBq)' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row14:col1', 'psp412914-tbl-0002:row14:col2'])
-- dropped duplicate Q47 ('k 10', value '17.2') — already have one for this compound
-- dropped duplicate Q303 ('k 13', value '16.1') — already have one for this compound
-- dropped duplicate Q348 ('k 41', value '9.5') — already have one for this compound
-- dropped unlinked row (NIL): 'k 15' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row19:col1', 'psp412914-tbl-0002:row19:col2', 'psp412914-tbl-0002:row24:col1', 'psp412914-tbl-0002:row24:col2'])
-- dropped unlinked row (NIL): 'BMAX compartment 2' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row20:col1', 'psp412914-tbl-0002:row20:col2'])
 - dropped unlinked row (NIL): 'Tumor volume on k 15' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row22:col1', 'psp412914-tbl-0002:row22:col2'])
-- unit_dimension_unknown: 'blood samples' (V1)
-- dropped duplicate Q63 ('Compartment 1 (blood samples)', value '19.3') — already have one for this compound
-- unit_dimension_unknown: 'SPECT data' (V1)
-- dropped duplicate Q63 ('Compartment 1 (SPECT data)', value '56.0') — already have one for this compound
-- dropped unlinked row (NIL): 'Compartment 4' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row30:col1', 'psp412914-tbl-0002:row30:col2'])
-- dropped unlinked row (NIL): 'Compartment 5' — extend the ontology if this is a real PK parameter (source ['psp412914-tbl-0002:row31:col1', 'psp412914-tbl-0002:row31:col2'])
-- unit_dimension_unknown: 'MBq/L' (V1)
-- dropped duplicate Q63 ('Compartment 1 a (MBq/L)', value '0.25') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lutetium_177lu_vipivotide_tetraxetan
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1 (L)' is the general volume)
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- derived CL=2.9664 L/h from Ke × V = CL (Q47 × Q61); not separately reported
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -94,19 +95,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.72 (18/25 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.87 (20/23 fields) | 3 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[bmax compartment 2]` | not captured | 40.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[compartment 2]` | 24.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[compartment 3]` | 30.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k 15]` | not captured | 0.000248 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tumor volume on k 15]` | not captured | 0.705 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | lutetium_177lu_vipivotide_tetraxetan | lutetium-177 lu vipivotide tetraxetan | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | lutetium_177lu_vipivotide_tetraxetan | lutetium-177 lu vipivotide tetraxetan | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | lutetium_177lu_vipivotide_tetraxetan | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | lutetium_177lu_vipivotide_tetraxetan | unknown | mismatch |
 
 </details>
 
@@ -120,7 +117,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412914-tbl-0002:row3:col1', 'psp412914-tbl-0002:row3:col2'] |
@@ -130,11 +127,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q347 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412914-tbl-0002:row7:col1', 'psp412914-tbl-0002:row7:col2'] |
 | C5_dimension_Q348 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412914-tbl-0002:row8:col1', 'psp412914-tbl-0002:row8:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412914-tbl-0002:row2:col1', 'psp412914-tbl-0002:row2:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412914-tbl-0002:row13:col1', 'psp412914-tbl-0002:row13:col2'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['psp412914-tbl-0002:row28:col1', 'psp412914-tbl-0002:row28:col2'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | not captured | not captured | not captured | ['psp412914-tbl-0002:row29:col1', 'psp412914-tbl-0002:row29:col2'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 10.3 L | not captured | not captured | ['psp412914-tbl-0002:row13:col1', 'psp412914-tbl-0002:row13:col2'] |
+| C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412914-tbl-0002:row9:col1', 'psp412914-tbl-0002:row9:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412914-tbl-0002:row13:col1', 'psp412914-tbl-0002:row13:col2'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.3 L | not captured | not captured | ['psp412914-tbl-0002:row13:col1', 'psp412914-tbl-0002:row13:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -148,15 +144,30 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_modelica.zip" download>Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_fmi.zip" download>Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.svg" alt="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_params.json` · controls `Lutetium177luVipivotideTetraxetan_Siebinga2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-25 06:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:24 UTC</sub>

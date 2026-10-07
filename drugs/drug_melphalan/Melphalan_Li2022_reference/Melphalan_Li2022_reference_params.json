@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Melphalan_Li2022_reference",
+ "molar_masses": {
+  "central.C": 0.30519999999999997
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4855555555555557e-05,
+  "F": 1.0,
+  "MM": 0.30519999999999997,
+  "VdPerKg": 0.00034,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0004052287581699346,
+  "k21": 0.0005938697318007664,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662079
+ },
+ "reference_peaks": {
+  "central.C": 0.00015314691722662492
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

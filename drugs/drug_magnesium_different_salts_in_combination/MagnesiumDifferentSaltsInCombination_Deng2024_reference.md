@@ -25,16 +25,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:38.500393+00:00) predates the upstream re-run (2026-10-05 09:34:14.623415+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:38.500393+00:00) predates the upstream re-run (2026-10-07 17:16:20.611520+00:00). Current validate status: `extracted`.
 
-> **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium`.
+> **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium_different_salts_in_combination`.
 
 ## Citation
 Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and childbirth (2024)
   ·  DOI: [10.1186/s12884-024-06620-x](https://doi.org/10.1186/s12884-024-06620-x)
 
 ## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Deng2024_reference" status="extracted" stale="true" population="Chinese preeclampsia population" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Deng2024_reference" status="extracted" stale="true" population="Chinese preeclampsia population" measured-compound="magnesium_different_salts_in_combination" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -44,8 +44,8 @@ Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and chi
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvV(L) | `Q61` · V | 25.07 | L | 0.025070000000000002 | [l] | not captured | tv_prefix (0.95) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5, Tab2:row3:col6, Tab2:row3:col7, Tab2:row3:col8 | — | not captured |
-| tvCL (L/h) | `Q22` · CL | 2.98 | L/h | 8.277777777777777e-07 | [l] / [h] | not captured | tv_prefix (0.95) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5, Tab2:row4:col6, Tab2:row4:col7, Tab2:row4:col8 | — | 0.082 (13.05% RSE) |
+| tvCL (L/h) | `Q22` · CL | 2.98 | L/h | 8.277777777777777e-07 | L/h | not captured | review (0.7) | Deng_2024:review | — | not captured |
+| tvV(L) | `Q61` · V | 25.07 | L | 0.025070000000000002 | L | not captured | review (0.7) | Deng_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,25 +55,8 @@ Deng J et al., Population pharmacokinetics and dose op…, BMC pregnancy and chi
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'ω2 V (%)' routed out of structural estimates ('Inter-individual variability')
-- table section iiv: 'ω2 CL (%)' routed out of structural estimates ('Inter-individual variability')
-- table section residual_error: 'stdev0' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q61 ('dVdfurosemide', value '-0.25') — already have one for this compound
-- dropped duplicate Q22 ('dCLdfurosemide', value '-0.16') — already have one for this compound
-- dropped duplicate Q22 ('dCLdCCR', value '0.39') — already have one for this compound
-- dropped duplicate Q22 ('dCLdBMI', value '-0.54') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
-- molar mass: none found for 'magnesium_different_salts_in_combination' — its concentrations stay mass-only
-- review gap-fill skipped: this record measures 'magnesium', not magnesium_different_salts_in_combination — the review values are the parent's
-
-**Extraction notes:**
-- unparsed cell Tab2:row5:col4 = '(-0.34)-(-0.16)'
-- unparsed cell Tab2:row5:col8 = '(-0.33)-(-0.16)'
-- unparsed cell Tab2:row6:col4 = '(-0.22)-(-0.096)'
-- unparsed cell Tab2:row6:col8 = '(-0.23)-(-0.080)'
-- unparsed cell Tab2:row8:col4 = '(-0.70)-(-0.38)'
-- unparsed cell Tab2:row8:col8 = '(-0.77)-(-0.22)'
-- LLM selected parameter table(s) 2
+- built from REVIEW reference values (Deng_2024) — secondary source
+- volume reported by review
 
 ## Validation
 
@@ -107,12 +90,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row4:col8'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.98 | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row4:col8'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Deng_2024:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Deng_2024:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.98 | not captured | not captured | ['Deng_2024:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.98 L/h | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row4:col8'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 25.1 L | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5', 'Tab2:row3:col6', 'Tab2:row3:col7', 'Tab2:row3:col8'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.98 L/h | not captured | not captured | ['Deng_2024:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 25.1 L | not captured | not captured | ['Deng_2024:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -144,8 +127,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab_simbio.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_sbml.zip" download>MagnesiumDifferentSaltsInCombination_Deng2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -157,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 5000 mg infusion over 10 min, single dose. Doses in the paper: 5000, 10000 mg.
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Deng2024_reference/MagnesiumDifferentSaltsInCombination_Deng2024_reference_sim_controls.json"></dbs-fmusim>
 
@@ -166,4 +149,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 09:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:16 UTC</sub>

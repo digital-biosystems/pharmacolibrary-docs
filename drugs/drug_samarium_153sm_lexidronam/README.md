@@ -17,7 +17,7 @@ Samarium (153Sm) lexidronam is a radiopharmaceutical used to relieve pain from c
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 19:51 | 1:16 | 0/0/0 | 0/0/0 | 0/0/0 | 9,033/331 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 16:43 | 1:00 | 0/0/0 | 0/0/0 | 0/0/0 | 22,434/1,360 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -34,18 +34,19 @@ _not available_
 - **PubMed hits:** 21 matched, 19 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bartlett_2002.pdf` | Bartlett ML et al., Dosimetry and toxicity of Quadramet for…, European journal of nuclear… (2002) | popPK | 8 | [10.1007/s00259-002-0934-y](https://doi.org/10.1007/s00259-002-0934-y) | [12397466](https://pubmed.ncbi.nlm.nih.gov/12397466) | The paper reports quantitative pharmacokinetic parameters (median biological half-life of 1.4 h and 24-h retention percentages) for samarium-153 EDTMP (Quadramet) in human patients. |
-| `Louw_1996.pdf` | Louw WK et al., Evaluation of samarium-153 and holmium-…, Nuclear medicine and biology (1996) | popPK | 8 | [10.1016/s0969-8051(96)00117-5](https://doi.org/10.1016/s0969-8051(96)00117-5) | [9004281](https://pubmed.ncbi.nlm.nih.gov/9004281) | The paper describes a pharmacokinetic study of samarium-153-EDTMP (lexidronam) in baboons using multicompartmental analysis, but the specific numeric parameter values are not present in the provided evidence. |
+| `Bartlett_2002.pdf` | Bartlett ML et al., Dosimetry and toxicity of Quadramet for…, European journal of nuclear… (2002) | popPK | 8 | [10.1007/s00259-002-0934-y](https://doi.org/10.1007/s00259-002-0934-y) | [12397466](https://pubmed.ncbi.nlm.nih.gov/12397466) | The study reports quantitative pharmacokinetic parameters (median biological half-life of 1.4 h and 24-h retention percentages) for samarium-153 EDTMP (Quadramet) in humans. |
+| `Dormehl_1998.pdf` | Dormehl IC et al., Uptake of ethylenediamine tetramethylen…, Arzneimittel-Forschung (1998) | popPK | 8 | not captured | [9608885](https://pubmed.ncbi.nlm.nih.gov/9608885) | The study reports pharmacokinetic and biodistribution data for samarium-153-EDTMP in baboons, but specific quantitative parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
+| `Louw_1996.pdf` | Louw WK et al., Evaluation of samarium-153 and holmium-…, Nuclear medicine and biology (1996) | popPK | 8 | [10.1016/s0969-8051(96)00117-5](https://doi.org/10.1016/s0969-8051(96)00117-5) | [9004281](https://pubmed.ncbi.nlm.nih.gov/9004281) | The study reports multicompartmental pharmacokinetic analysis for samarium-153-EDTMP (lexidronam) in baboons, but the specific numeric parameter values are not present in the provided evidence. |
 
-<sub>queue written 2026-10-01T19:51:37.608836+00:00</sub>
+<sub>queue written 2026-10-07T16:43:24.888146+00:00</sub>
 
 ## Screened and excluded
 
@@ -54,22 +55,22 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Bartlett_2002 | not_relevant | 3 | 2 | The paper reports radiation dosimetry (absorbed dose per administered activity) and qualitative toxicity outcomes, but does not provide a pharmacodynamic model or numeric concentration-effect parameters (e.g., Emax, EC50) for the drug's biological effect. |
 | popPK | Bianchi_2009 | irrelevant | 2 | 0 | The study focuses on dosimetry and bone uptake percentages for 153Sm-EDTMP (a different compound than samarium_153sm_lexidronam) and does not report compartmental PK parameters like clearance or volume. |
 | PD | Bianchi_2009 | not_relevant | 0 | 0 | The paper reports a correlation between surrogate dosimetry parameters (Tc-MDP uptake vs Sm-EDTMP uptake) for dose optimization, but does not report a pharmacodynamic exposure-response or dose-response relationship (e.g., pain relief vs. concentration/dose) with numeric PD parameters. |
-| popPK | Das_2014 | irrelevant | 0 | 0 | The study focuses on 177Lu-EDTMP, not samarium_153sm_lexidronam, and does not report quantitative PK parameters for the target drug. |
-| popPK | Dormehl_1998 | irrelevant | 2 | 0 | The study is a non-human primate biodistribution and scintigraphy study that reports qualitative uptake trends and blocking effects rather than quantitative compartmental PK parameters (CL, V, Q) for samarium-153-lexidronam. |
-| popPK | Eary_1993 | irrelevant | 2 | 0 | The study focuses on dosimetry and biodistribution of 153Sm-EDTMP (a different compound than 153Sm-lexidronam) and does not report compartmental PK parameters like clearance or volume of distribution. |
-| popPK | Garnuszek_2003 | irrelevant | 1 | 0 | The paper evaluates a formulation kit and compares biodistribution qualitatively without reporting quantitative PK parameters (CL, V, t1/2) for samarium-153. |
-| popPK | Goeckeler_1987 | irrelevant | 2 | 0 | The study focuses on biodistribution and scintigraphic imaging of samarium-153 EDTMP in animals, reporting qualitative uptake and lesion ratios rather than quantitative compartmental pharmacokinetic parameters (CL, V, ka) for the specific drug samarium_153sm_lexidronam. |
-| popPK | Goeckeler_1993 | irrelevant | 2 | 0 | The study focuses on the chemical integrity of the drug in urine (complexation analysis) rather than reporting quantitative pharmacokinetic parameters like clearance, volume, or half-life. |
-| popPK | Hassfjell_1998 | irrelevant | 1 | 0 | The study focuses on the physical characterization of a radioguided surgery probe and simulation of detectability, not on the pharmacokinetic disposition parameters (CL, V, etc.) of samarium-153 lexidronam. |
-| popPK | Ketring_1987 | irrelevant | 2 | 0 | The paper is a review summarizing biokinetics without providing specific quantitative PK parameter values (CL, V, t1/2) for samarium-153 EDTMP in the provided text. |
+| popPK | Das_2014 | irrelevant | 0 | 0 | The study focuses on 177Lu-EDTMP, not samarium-153 lexidronam, and does not report PK parameters for the target drug. |
+| popPK | Dormehl_1998 | relevant | 8 | 2 | The study reports pharmacokinetic and biodistribution data for samarium-153-EDTMP in baboons, but specific quantitative parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
+| popPK | Eary_1993 | irrelevant | 2 | 0 | The study reports biodistribution and dosimetry for Samarium-153-EDTMP (a different chelate than lexidronam) and does not provide quantitative compartmental PK parameters (CL, V, Q) for the target drug. |
+| popPK | Garnuszek_2003 | irrelevant | 0 | 0 | The study evaluates a formulation kit for EDTMP-based radiopharmaceuticals and compares biodistribution of 177Lu-EDTMP and 99mTc-EDTMP to 153Sm-EDTMP, but does not report quantitative PK parameters (CL, V, etc.) for samarium_153sm_lexidronam (which is a different compound, SM-401, not 153Sm-EDTMP). |
+| popPK | Goeckeler_1987 | irrelevant | 2 | 0 | The study focuses on biodistribution and imaging characteristics (uptake, lesion ratios) rather than quantitative compartmental pharmacokinetic parameters (CL, V, t1/2) for samarium-153 lexidronam specifically. |
+| popPK | Goeckeler_1993 | irrelevant | 2 | 0 | The study analyzes the chemical integrity of the drug in urine (complexation analysis) rather than reporting quantitative pharmacokinetic parameters like clearance, volume, or half-life. |
+| popPK | Hassfjell_1998 | irrelevant | 0 | 0 | The study focuses on the physical characterization of a radioguided surgery probe and simulation of detectability, not on the pharmacokinetic parameters (CL, V, etc.) of samarium-153 lexidronam. |
+| popPK | Ketring_1987 | irrelevant | 2 | 0 | The paper is a review summarizing biokinetics without providing specific quantitative PK parameter values (CL, V, t1/2) in the text. |
 | popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper describes a computational framework for drug repurposing against fusion proteins and does not contain any pharmacokinetic data for samarium_153sm_lexidronam. |
 | PD | Kumar_2026 | not_relevant | 0 | 0 | The paper describes a computational drug repurposing framework for fusion proteins and does not involve samarium (153Sm) lexidronam or report any pharmacodynamic or exposure-response data. |
-| popPK | Lamb_1997 | irrelevant | 2 | 0 | The text describes clinical efficacy and qualitative clearance timing (hours) but lacks quantitative pharmacokinetic parameters (CL, V, ka) or compartmental model values. |
-| popPK | Louw_1996 | relevant | 8 | 0 | The paper describes a pharmacokinetic study of samarium-153-EDTMP (lexidronam) in baboons using multicompartmental analysis, but the specific numeric parameter values are not present in the provided evidence. |
-| popPK | Popwell_2014 | irrelevant | 0 | 0 | The paper focuses on the synthesis of new polymeric phosphonates for radionuclide delivery and does not report pharmacokinetic parameters for samarium-153 lexidronam. |
+| popPK | Lamb_1997 | irrelevant | 2 | 0 | The text describes qualitative clearance kinetics (time to complete clearance) and efficacy/toxicity data but lacks quantitative compartmental PK parameters (CL, V, t1/2) or a population PK model. |
+| popPK | Louw_1996 | relevant | 8 | 0 | The study reports multicompartmental pharmacokinetic analysis for samarium-153-EDTMP (lexidronam) in baboons, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Popwell_2014 | irrelevant | 0 | 0 | The paper describes the synthesis and biodistribution of novel polymeric phosphonates for radionuclide delivery, not the pharmacokinetics of the specific drug samarium_153_sm_lexidronam. |
 | popPK | Pusuwan_1996 | irrelevant | 0 | 0 | no_text gate: only 74 chars of text extracted (&lt; 400) |
-| popPK | Singh_1989 | irrelevant | 0 | 0 | The study investigates samarium-153 EDTMP, which is a different drug from the target samarium-153 lexidronam. |
-| popPK | Turner_1989 | irrelevant | 2 | 0 | The paper focuses on clinical dosimetry and biodistribution percentages rather than reporting quantitative compartmental pharmacokinetic parameters (CL, V, Q, ka) for samarium-153 lexidronam. |
+| popPK | Singh_1989 | irrelevant | 0 | 0 | The study investigates samarium-153 EDTMP, which is a different chemical entity from the target drug samarium-153 lexidronam (EDTMP vs. lexidronam/SM-153). |
+| popPK | Turner_1989 | irrelevant | 2 | 1 | The study focuses on dosimetry and therapeutic efficacy of 153Sm-EDTMP (a different compound than samarium_153sm_lexidronam/EDTMP) and does not report quantitative PK parameters (CL, V, t1/2) for the subject drug. |
 | popPK | da_2002 | irrelevant | 0 | 0 | The study focuses on cytogenetic effects (chromosome aberrations) rather than pharmacokinetic disposition parameters like clearance or volume. |
 
 ---

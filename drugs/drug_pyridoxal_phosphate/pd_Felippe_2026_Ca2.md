@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;pyridoxal phosphate&quot;,&quot;href&quot;:&quot;drugs/drug_pyridoxal_phosphate/&quot;},{&quot;label&quot;:&quot;Felippe_2026 \u00b7 PD Ca2+ responses evoked by \u03b1, \u03b2-methylene ATP&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;pyridoxal phosphate&quot;,&quot;href&quot;:&quot;drugs/drug_pyridoxal_phosphate/&quot;},{&quot;label&quot;:&quot;Felippe_2026 \u00b7 PD intra-cellular Ca2+ responses evoked by \u03b1, \u03b2-methylene ATP&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Ca2+ responses evoked by α, β-methylene ATP — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+# intra-cellular Ca2+ responses evoked by α, β-methylene ATP — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** PLP (measured concentrations) drives Ca2+ responses evoked by α, β-methylene ATP: direct Emax (saturable) effect.
+**As extracted:** Pyridoxal_phosphate (measured concentrations) drives intra-cellular Ca2+ responses evoked by α, β-methylene ATP: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -24,7 +24,7 @@
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Felippe_2026`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown

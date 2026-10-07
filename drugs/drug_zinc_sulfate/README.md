@@ -18,7 +18,7 @@ Zinc sulfate is a zinc salt used as a mineral supplement to treat or prevent zin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 10:17 | 1:48 | 0/0/0 | 2/0/0 | 0/0/1 | 64,601/2,345 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/6 | 3/0 | 0 |
+| 2026-10-07 17:30 | 0:52 | 0/0/0 | 2/1/0 | 0/0/1 | 69,138/2,572 | einfracz / qwen3.8-27b | 6 | 2/7 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Nusetti_2010_3H_taurine_uptake](drugs/drug_zinc_sulfate/pd_Nusetti_2010_3H_taurine_uptake.md) | [3H]taurine uptake ← zinc sulfate · direct Emax (saturable) effect | — | Nusetti S et al., Effects of zinc ex vivo on taurine upta…, Journal of biomedical scien… (2010) | [10.1186/1423-0127-17-S1-S13](https://doi.org/10.1186/1423-0127-17-S1-S13) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tran_2004_AZ](drugs/drug_zinc_sulfate/pd_Tran_2004_AZ.md) | absorbed zinc ← zinc sulfate · direct sigmoid Emax (Hill) effect | — | Tran CD et al., Zinc absorption as a function of the do…, The American journal of cli… (2004) | [10.1093/ajcn/80.6.1570](https://doi.org/10.1093/ajcn/80.6.1570) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Nusetti_2010_3H_taurine_transport](drugs/drug_zinc_sulfate/pd_Nusetti_2010_3H_taurine_transport.md) | [3H]taurine transport ← zinc sulfate · direct Emax (saturable) effect | — | Nusetti S et al., Effects of zinc ex vivo on taurine upta…, Journal of biomedical scien… (2010) | [10.1186/1423-0127-17-S1-S13](https://doi.org/10.1186/1423-0127-17-S1-S13) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tran_2004_AZ](drugs/drug_zinc_sulfate/pd_Tran_2004_AZ.md) | absorbed zinc ← zinc_sulfate · direct sigmoid Emax (Hill) effect | — | Tran CD et al., Zinc absorption as a function of the do…, The American journal of cli… (2004) | [10.1093/ajcn/80.6.1570](https://doi.org/10.1093/ajcn/80.6.1570) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Weston_1977_chemotaxis](drugs/drug_zinc_sulfate/pd_Weston_1977_chemotaxis.md) | chemotaxis ← zinc sulfate · direct linear effect | — | Weston WL et al., Zinc correction of defective chemotaxis…, Archives of dermatology (1977) | — |
 
 ## Pharmacogenomics (PGx)
 
@@ -72,24 +73,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Guillard_1984.pdf` | Guillard O et al., Comparative pharmacokinetics of [65Zn]z…, Journal of pharmaceutical s… (1984) | popPK | 9 | [10.1002/jps.2600731139](https://doi.org/10.1002/jps.2600731139) | [6520772](https://pubmed.ncbi.nlm.nih.gov/6520772) | The study reports a two-compartment PK model for zinc sulfate in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Guillard_1984.pdf` | Guillard O et al., Comparative pharmacokinetics of [65Zn]z…, Journal of pharmaceutical s… (1984) | popPK | 9 | [10.1002/jps.2600731139](https://doi.org/10.1002/jps.2600731139) | [6520772](https://pubmed.ncbi.nlm.nih.gov/6520772) | The paper describes a comparative pharmacokinetic study of zinc sulfate in rabbits using a two-compartment model, but no specific numeric parameter values (CL, V, t1/2, etc.) are present in the provided evidence. |
 | `Cunningham_2020.pdf` | Cunningham B et al., Effects of three zinc-containing sunscr…, Aquatic toxicology (Amsterd… (2020) | pd | 5 | [10.1016/j.aquatox.2019.105355](https://doi.org/10.1016/j.aquatox.2019.105355) | [31790937](https://www.ncbi.nlm.nih.gov/pubmed/31790937) | metadata signals extractable PD data (EC50) |
 | `Skornik_1983.pdf` | Skornik WA et al., Relative toxicity of inhaled metal sulf…, The American review of resp… (1983) | pd | 5 | [10.1164/arrd.1983.128.2.297](https://doi.org/10.1164/arrd.1983.128.2.297) | [6309044](https://www.ncbi.nlm.nih.gov/pubmed/6309044) | metadata signals extractable PD data (EC50) |
-| `Fani_2020.pdf` | Fani M et al., Zinc Sulfate in Narrow Range as an In V…, Biological trace element re… (2020) | pd | 4 | [10.1007/s12011-019-01728-0](https://doi.org/10.1007/s12011-019-01728-0) | [31028520](https://www.ncbi.nlm.nih.gov/pubmed/31028520) | metadata signals extractable PD data (IC50) |
 | `Jorge_2005.pdf` | Jorge RA et al., Use of sodium dodecyl sulfate and zinc…, Ecotoxicology and environme… (2005) | pd | 4 | [10.1016/j.ecoenv.2004.09.005](https://doi.org/10.1016/j.ecoenv.2004.09.005) | [15883100](https://www.ncbi.nlm.nih.gov/pubmed/15883100) | metadata signals extractable PD data (IC50) |
-| `Shabbir_2023.pdf` | Shabbir Awan S et al., Ailanthus altissima leaf extract mediat…, Saudi journal of biological… (2023) | pd | 4 | [10.1016/j.sjbs.2022.103487](https://doi.org/10.1016/j.sjbs.2022.103487) | [36387031](https://www.ncbi.nlm.nih.gov/pubmed/36387031) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-05T10:16:17.971056+00:00</sub>
+<sub>queue written 2026-10-07T17:30:18.441445+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akbaba_2020 | irrelevant | 0 | 0 | The study is an in vitro cytogenetic toxicity assessment in onion root tips, not a pharmacokinetic study. |
+| popPK | Akbaba_2020 | irrelevant | 0 | 0 | The study is an in vitro/in planta toxicity assessment using Allium cepa root cells, reporting mitotic and chromosome aberration indices rather than pharmacokinetic parameters like clearance or volume. |
 | popPK | Cao_2013 | irrelevant | 0 | 0 | The paper is a microbiology study on bacterial growth and metal tolerance, not a pharmacokinetic study of zinc sulfate in humans or animals. |
 | popPK | Careli_2025 | irrelevant | 0 | 0 | The study is a bioavailability and growth performance trial in pigs, not a pharmacokinetic study, and does not report PK parameters like clearance or volume for zinc sulfate. |
 | PD | Careli_2025 | not_relevant | 3 | 2 | The study reports dose-response trends (linear/quadratic) for growth and tissue zinc concentrations but does not provide specific numeric PD parameters (e.g., Emax, EC50) or a fitted concentration-effect curve for zinc sulfate. |
@@ -107,12 +106,12 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Feldmann_2019 | not_relevant | 2 | 1 | The study reports clinical efficacy (hazard ratios, weight gain differences) for fixed doses but does not model the relationship between measured serum zinc concentrations and the pharmacodynamic effects, nor does it provide a dose-response curve with parameters like Emax or EC50. |
 | popPK | Fodil_2024 | irrelevant | 0 | 0 | The study focuses on the synthesis and antibacterial/antioxidant properties of zinc oxide nanoparticles, not the pharmacokinetics of zinc sulfate. |
 | PD | Fodil_2024 | not_relevant | 2 | 1 | The study reports IC50 values for antioxidant activity and uses polynomial modeling for antibacterial effects, but it is a materials science/nanoparticle characterization study, not a pharmacodynamic analysis of zinc sulfate as a drug in a biological system. |
-| popPK | Georgiou_2022 | irrelevant | 0 | 0 | The study investigates the effect of experimenter sex on mouse behavior and neural responses to ketamine, not the pharmacokinetics of zinc sulfate. |
+| popPK | Georgiou_2022 | irrelevant | 0 | 0 | The study investigates the effect of human experimenter sex on mouse behavior in response to ketamine, and does not involve zinc_sulfate or its pharmacokinetics. |
 | PD | Georgiou_2022 | not_relevant | 0 | 0 | The paper investigates the effect of experimenter sex on ketamine response in mice and does not report any pharmacodynamic or exposure-response relationship for zinc sulfate. |
-| popPK | Guillard_1984 | relevant | 9 | 0 | The study reports a two-compartment PK model for zinc sulfate in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Irfan_2026 | irrelevant | 2 | 0 | The study reports longitudinal serum zinc concentrations (pharmacodynamics) rather than pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Guillard_1984 | relevant | 9 | 0 | The paper describes a comparative pharmacokinetic study of zinc sulfate in rabbits using a two-compartment model, but no specific numeric parameter values (CL, V, t1/2, etc.) are present in the provided evidence. |
+| popPK | Irfan_2026 | irrelevant | 1 | 1 | The study is a clinical trial of zinc sulfate efficacy in pediatric diarrhea that reports serum concentration changes but provides no quantitative pharmacokinetic parameters (CL, V, t1/2) or compartmental model. |
 | popPK | Jorge_2005 | irrelevant | 0 | 0 | The paper is an ecotoxicology study on mussels reporting NOEC/IC50 values, not a pharmacokinetic study with disposition parameters for zinc sulfate. |
-| popPK | Jäger_2024 | irrelevant | 0 | 0 | The study focuses on the mechanism of action of antifungal drugs (oteseconazole, etc.) on adrenal steroidogenesis in vitro and does not involve zinc sulfate or its pharmacokinetics. |
+| popPK | Jäger_2024 | irrelevant | 0 | 0 | The paper discusses the pharmacological effects of antifungal tetrazoles on steroidogenesis in cell lines and is completely unrelated to zinc sulfate pharmacokinetics. |
 | PD | Jäger_2024 | not_relevant | 0 | 0 | The paper studies oteseconazole and other tetrazole antifungals, not zinc sulfate, and does not report numeric PD parameters for the target drug. |
 | popPK | Kalaba_2024 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial study using zinc sulfate only as a precursor for synthesizing zinc oxide nanoparticles, and it does not report any pharmacokinetic parameters for zinc sulfate. |
 | PD | Kalaba_2024 | not_relevant | 3 | 2 | The paper reports MICs, FIC indices, and cytotoxicity IC50s for a nanoparticle combination, but does not provide a pharmacokinetic-pharmacodynamic (PK/PD) model or exposure-response analysis for zinc sulfate. |
@@ -120,51 +119,51 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Khan_2023 | not_relevant | 0 | 0 | The paper reports the synthesis and characterization of a ternary metal oxide nanocomposite, not a pharmacodynamic or exposure-response analysis of zinc sulfate as a drug. |
 | popPK | Larson_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rapamycin in dogs, not zinc_sulfate. |
 | PD | Larson_2016 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (Cmax, AUC, t1/2) for rapamycin in dogs and contains no pharmacodynamic, exposure-response, or dose-response data. |
-| PGx | Li_2023 | not_relevant | 0 | 0 | The paper investigates the effect of a gene variant on the efficacy of lipoic acid, not zinc sulfate, and does not report pharmacokinetic or pharmacodynamic parameters for zinc sulfate. |
+| PGx | Li_2023 | not_relevant | 3 | 0 | While a pharmacogenomic association is reported (miR-146a rs2910164 effect on zinc sulfate therapy), the specific PK/PD parameter values are only described qualitatively (higher/lower), and the data tables containing the quantitative effect sizes are missing from the provided text. |
 | popPK | Li_2023_2 | irrelevant | 0 | 0 | The paper focuses on the identification of ACE-inhibitory peptides and their interaction with zinc ions, not on the pharmacokinetics of zinc sulfate. |
 | PD | Li_2023_2 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic inhibition (IC50) and chelation properties of a peptide, not a pharmacodynamic exposure-response or dose-response relationship for zinc sulfate in a biological system. |
 | popPK | Lin_2021 | irrelevant | 0 | 0 | The paper is a plant physiology study on blueberry budbreak using zinc sulfate as a defoliant, not a pharmacokinetic study of zinc sulfate in humans or animals. |
 | PD | Lin_2021 | not_relevant | 2 | 1 | The paper reports a lack of significant dose-response for zinc sulfate and focuses on qualitative phytohormone dynamics rather than extractable numeric PD parameters (e.g., EC50, Emax) for the drug. |
-| popPK | Liu_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine A, not zinc sulfate. |
+| popPK | Liu_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine A, not zinc sulfate, and does not contain any data for the target drug. |
 | PD | Liu_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of Cyclosporine A and the effect of Baicalin on it; it does not study Zinc Sulfate or report any pharmacodynamic (exposure-response) parameters. |
 | popPK | Ma_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle contraction, not a pharmacokinetic study, and reports no disposition parameters. |
-| PGx | Nagamine_2000 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of zinc sulfate in hepatitis C patients but does not report any pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of the drug. |
-| popPK | Noreikaitė_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mycophenolic acid (MPA) and mycophenolate mofetil (MMF), not zinc sulfate. |
+| PGx | Nagamine_2000 | not_relevant | 0 | 0 | The study evaluates the efficacy of zinc sulfate combination therapy in Hepatitis C patients with a specific viral genotype (genotype 1b), but does not investigate how human genetic variants affect the pharmacokinetics or pharmacodynamics of zinc sulfate itself. |
+| popPK | Noreikaitė_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mycophenolic acid (MMF metabolite) and the effects of cyclosporine/everolimus, with no mention of zinc_sulfate. |
 | PD | Noreikaitė_2017 | not_relevant | 0 | 0 | The paper analyzes the effect of cyclosporine and everolimus on mycophenolate mofetil pharmacokinetics, not the pharmacodynamics of zinc sulfate. |
 | popPK | Nusetti_2010 | irrelevant | 0 | 0 | The study is an in vitro/ex vivo mechanistic investigation of zinc's effect on taurine transport in goldfish retinal cells, not a pharmacokinetic study of zinc sulfate disposition. |
-| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain pharmacokinetic data for zinc sulfate. |
+| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review on radiomitigators for radiation injury and does not contain any pharmacokinetic data for zinc sulfate. |
 | PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain any specific data, analysis, or numeric parameters for zinc sulfate. |
-| popPK | Paixão_2008 | irrelevant | 0 | 0 | The study is an ecotoxicology assay validation using zinc sulfate as a reference toxicant, not a pharmacokinetic study. |
+| popPK | Paixão_2008 | irrelevant | 0 | 0 | The study is an in vitro ecotoxicology assay on algae using zinc sulfate as a reference toxicant, not a pharmacokinetic study. |
 | PD | Paixão_2008 | not_relevant | 4 | 2 | The paper reports EC50 values for zinc sulfate as part of a method validation study, but the specific numeric values are not provided in the abstract, making them non-extractable from the given text. |
-| PGx | Rao_2018 | not_relevant | 0 | 0 | The paper is a case report describing the co-occurrence of Wilson disease and oculocutaneous albinism, and while it mentions zinc sulfate treatment, it does not report any pharmacogenomic effects on PK or PD parameters. |
-| PGx | Ren_2025 | not_relevant | 0 | 0 | The paper investigates the mechanism of lavender's sleep-promoting effects and uses zinc sulfate only as a tool to block olfactory pathways, not as the primary drug subject to pharmacogenomic analysis. |
-| popPK | Richard_2022 | irrelevant | 0 | 0 | The paper investigates brown adipose tissue glucose uptake and microbiome changes in response to high-fructose diets, with no mention of zinc sulfate pharmacokinetics. |
+| PGx | Rao_2018 | not_relevant | 0 | 0 | The paper is a case report on the co-occurrence of Wilson disease and oculocutaneous albinism; it does not investigate how gene variants affect the pharmacokinetics or pharmacodynamics of zinc sulfate. |
+| PGx | Ren_2025 | not_relevant | 0 | 0 | The paper studies the sleep-promoting effects of lavender oil in mice and uses zinc sulfate only as a control agent to block olfactory pathways, not as the primary drug for pharmacogenomic analysis. |
+| popPK | Richard_2022 | irrelevant | 0 | 0 | The study investigates the effects of a high-fructose diet on brown adipose tissue glucose uptake and the gut microbiome, with no mention of zinc sulfate pharmacokinetics. |
 | PD | Richard_2022 | not_relevant | 0 | 0 | The paper investigates the effect of high-fructose diet on brown adipose tissue glucose uptake and does not involve zinc sulfate or report any pharmacodynamic parameters. |
 | popPK | Ringeling_2022 | irrelevant | 0 | 0 | The paper is a bioanalytical method validation study for vancomycin and clindamycin, where zinc sulfate is used only as a reagent for protein precipitation, not as the subject drug for pharmacokinetic analysis. |
 | PD | Ringeling_2022 | not_relevant | 0 | 0 | The paper describes a bioanalytical method for vancomycin and clindamycin; zinc sulfate is used only as a precipitation reagent in sample preparation, and no pharmacodynamic or exposure-response relationship for zinc sulfate is reported. |
 | popPK | Saadh_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition, not a pharmacokinetic study, and reports no disposition parameters for zinc sulfate. |
 | PD | Saadh_2021 | not_relevant | 3 | 2 | The paper reports an IC50 for punicalagin and a qualitative fold-change for the combination with zinc, but does not provide a specific dose-response curve or numeric PD parameters (like Emax or EC50) for zinc sulfate alone or the combination. |
-| popPK | Saeed_2015 | irrelevant | 0 | 0 | The study is an ecotoxicological assessment of zinc sulfate in fish embryos, reporting toxicity endpoints (EC50/LC50) rather than pharmacokinetic disposition parameters. |
+| popPK | Saeed_2015 | irrelevant | 0 | 0 | This is a toxicology study reporting EC50/LC50 values for zinc sulfate in fish, not a pharmacokinetic study of disposition parameters. |
 | popPK | Scott_2003 | irrelevant | 0 | 0 | The paper describes an in-vitro biochemical assay for kinase activity using zinc sulfate as a reagent, not a pharmacokinetic study of zinc sulfate as a drug. |
 | PD | Scott_2003 | not_relevant | 0 | 0 | The paper describes a biochemical assay method for kinase activity using zinc sulfate as a reagent, not a pharmacodynamic study of zinc sulfate as a therapeutic agent. |
 | popPK | Shabbir_2023 | irrelevant | 0 | 0 | no_text gate: only 135 chars of text extracted (&lt; 400) |
 | PD | Shabbir_2023 | not_relevant | 0 | 0 | The paper focuses on the green synthesis of zinc oxide nanoparticles and their antibacterial/antioxidant properties, not on the pharmacokinetics or pharmacodynamics of zinc sulfate in a biological system. |
-| PGx | Sharquie_2023 | not_relevant | 0 | 0 | The paper reports clinical outcomes of topical zinc sulfate in Xeroderma Pigmentosum patients but does not investigate pharmacogenomic effects on PK or PD parameters. |
-| PGx | Singh_2017 | not_relevant | 0 | 0 | The study investigates the mechanism of zinc-induced neurotoxicity involving nNOS and oxidative stress, but does not report any pharmacogenomic effects (gene variants) on the PK or PD parameters of zinc sulfate. |
+| PGx | Sharquie_2023 | not_relevant | 0 | 0 | The paper describes the clinical use of topical zinc sulfate for treating xeroderma pigmentosum lesions but contains no data on gene variants or their impact on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Singh_2017 | not_relevant | 0 | 0 | The study investigates the neurotoxic mechanisms of zinc sulfate involving nitric oxide synthase but does not report any pharmacogenomic associations or genotype-based differences in PK/PD parameters. |
 | popPK | Skornik_1983 | irrelevant | 0 | 0 | no_text gate: only 74 chars of text extracted (&lt; 400) |
 | popPK | Song_2014 | irrelevant | 0 | 0 | The study is a toxicological investigation of element distribution and homeostasis, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, ka, etc.) for zinc sulfate. |
 | popPK | Tang_2013 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity and gene expression analysis, not a pharmacokinetic study, and reports no disposition parameters for zinc sulfate. |
-| popPK | Tran_2004 | irrelevant | 2 | 2 | The study reports total absorbed zinc mass and a saturation model for absorption efficiency, but does not provide standard pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Tran_2004 | irrelevant | 2 | 3 | The study measures total absorbed zinc mass using stable isotope ratios but does not report compartmental pharmacokinetic parameters such as clearance, volume of distribution, or bioavailability fractions. |
 | popPK | Vietri_2002 | irrelevant | 0 | 0 | The study focuses on the sulfation of apomorphine, and zinc sulfate is used only as a reagent for precipitation, not as the subject drug for pharmacokinetic analysis. |
 | PD | Vietri_2002 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Km, Vmax, IC50) for apomorphine sulfation and its inhibition, not a pharmacodynamic exposure-response relationship for zinc sulfate. |
-| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarriers for diabetic wound healing and does not report pharmacokinetic parameters for zinc sulfate. |
+| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarriers for phytochemicals in diabetic wound healing and does not mention zinc sulfate or report any pharmacokinetic parameters. |
 | PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a review on nanocarrier delivery of phytochemicals for diabetic wound healing and does not report any pharmacodynamic or exposure-response data for zinc sulfate. |
 | popPK | Weston_1977 | irrelevant | 0 | 0 | The study focuses on the immunological correction of chemotaxis defects in acrodermatitis enteropathica and does not report any pharmacokinetic parameters for zinc sulfate. |
 | popPK | Woillard_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ciclosporin, not zinc_sulfate. |
 | PD | Woillard_2014 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PK) modeling and Bayesian estimation of Ciclosporin AUC for dose adjustment, with no mention of zinc sulfate or any pharmacodynamic (PD) or exposure-response analysis. |
-| PGx | Wu_2003 | not_relevant | 0 | 0 | The paper reports the efficacy of zinc sulfate in Wilson disease patients but does not investigate how specific gene variants affect the pharmacokinetics or pharmacodynamics of the drug. |
+| PGx | Wu_2003 | not_relevant | 0 | 0 | The paper reports the efficacy of zinc sulfate therapy in Wilson disease patients but does not investigate how specific gene variants or genotypes affect the pharmacokinetic or pharmacodynamic parameters of zinc. |
 | popPK | Wuehler_2008 | irrelevant | 1 | 0 | The study is a clinical trial measuring plasma zinc concentrations and morbidity outcomes, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume of distribution. |
-| popPK | Yang_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxcarbazepine (and its metabolite MHD), not zinc sulfate. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxcarbazepine (OXC) and its metabolite MHD, not zinc_sulfate. |
 | PD | Yang_2023 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PPK) model for oxcarbazepine's metabolite, not a pharmacodynamic (PD) or exposure-response model, and does not involve zinc sulfate. |
 | popPK | de_1992 | irrelevant | 0 | 0 | The study is a mechanistic cell biology investigation using zinc sulfate as an inducer of gene expression, not a pharmacokinetic study of zinc sulfate disposition. |
 | PD | de_1992 | not_relevant | 4 | 2 | The paper describes a qualitative dose-response relationship between zinc sulfate-induced ras protein levels and gap junction loss, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for the drug itself. |

@@ -25,7 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:38.492765+00:00) predates the upstream re-run (2026-10-05 09:34:49.013600+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:38.492765+00:00) predates the upstream re-run (2026-10-07 17:16:28.103211+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium`.
 
@@ -37,7 +37,7 @@ Chuan FS et al., Population pharmacokinetics of magnesiu…, American journal of
 <dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Chuan2001_reference" status="extracted" stale="true" population="patients with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -46,7 +46,8 @@ Chuan FS et al., Population pharmacokinetics of magnesiu…, American journal of
 |---|---|---|---|---|---|---|---|---|---|---|
 | systemic clearance | `Q22` · CL | 4.28 | L/h | 1.188888888888889e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Chuan_2001:abstract | — | not captured |
 | volume of distribution | `Q61` · V | 32.3 | L | 0.032299999999999995 | [l] | not captured | exact (1.0) | Chuan_2001:abstract | — | not captured |
-| average half-life | `Q57` · t1/2z | 5.2 | hours | 18720.0 | [h] | not captured | llm (0.6) | Chuan_2001:abstract | — | not captured |
+| baseline concentration | `Q38` · E | 0.811 | mmol/L | not captured | [mM] / [l] | not captured | llm_corrected (0.6) | Chuan_2001:abstract | — | not captured |
+| half-life | `Q57` · t1/2z | 5.2 | hours | 18720.0 | [h] | not captured | llm (0.6) | Chuan_2001:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,7 +57,6 @@ Chuan FS et al., Population pharmacokinetics of magnesiu…, American journal of
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'baseline concentration' — extend the ontology if this is a real PK parameter (source ['Chuan_2001:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
 - molar mass: none found for 'magnesium_different_salts_in_combination' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -100,7 +100,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chuan_2001:abstract'] |
@@ -141,7 +141,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference/MagnesiumDifferentSaltsInCombination_Chuan2001_reference_modelica.zip" download>MagnesiumDifferentSaltsInCombination_Chuan2001_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference/MagnesiumDifferentSaltsInCombination_Chuan2001_reference_modelica.zip" download>MagnesiumDifferentSaltsInCombination_Chuan2001_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference/MagnesiumDifferentSaltsInCombination_Chuan2001_reference_fmi.zip" download>MagnesiumDifferentSaltsInCombination_Chuan2001_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference/MagnesiumDifferentSaltsInCombination_Chuan2001_reference_matlab.zip" download>MagnesiumDifferentSaltsInCombination_Chuan2001_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_different_salts_in_combination/MagnesiumDifferentSaltsInCombination_Chuan2001_reference/MagnesiumDifferentSaltsInCombination_Chuan2001_reference_matlab_simbio.zip" download>MagnesiumDifferentSaltsInCombination_Chuan2001_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -163,4 +163,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 09:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:16 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # lutetium (177Lu) vipivotide tetraxetan
 
@@ -14,25 +14,33 @@ Lutetium vipivotide tetraxetan is a therapeutic radiopharmaceutical used to trea
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q111353661](https://www.wikidata.org/wiki/Q111353661) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| lutetium_177lu_vipivotide_tetraxetan | metabolite | 1214.1 | C49H68LuN9O16 | PubChem | [122706785](https://pubchem.ncbi.nlm.nih.gov/compound/122706785) | Siebinga_2023 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:16 | 0:07 | 1/2/0 | 0/1/0 | 0/0/0 | 2,424/226 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/11 | 10/1 | 0 |
+| 2026-10-07 17:36 | 15:07 | 2/1/0 | 0/1/0 | 0/0/0 | 323,530/35,392 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/11 | 10/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Shi_2026_reference](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi H et al., A phase II study evaluating pharmacokin…, EJNMMI research (2026) | [10.1186/s13550-026-01401-3](https://doi.org/10.1186/s13550-026-01401-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.72). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Siebinga_2023_reference](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md) | — | 2-compartment (no model) | 10 | Siebinga H et al., Population pharmacokinetic dosimetry mo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12914](https://doi.org/10.1002/psp4.12914) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Siebinga_2024_reference](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2024_reference.md) | — | 1-compartment (no model) | 0 | Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024) | [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shi_2026_reference](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi H et al., A phase II study evaluating pharmacokin…, EJNMMI research (2026) | [10.1186/s13550-026-01401-3](https://doi.org/10.1186/s13550-026-01401-3) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.87). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Siebinga_2023_reference](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 9 | Siebinga H et al., Population pharmacokinetic dosimetry mo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12914](https://doi.org/10.1002/psp4.12914) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Siebinga_2024_reference](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2024_reference.md) | — | 1-compartment (no model) | 0 | Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024) | [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Siebinga_2024_PSA](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/pd_Siebinga_2024_PSA.md) | prostate-specific antigen ← [177Lu]Lu-PSMA-I&T tumor concentration · disease-progression model | — | Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024) | [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Siebinga_2024_PSA](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/pd_Siebinga_2024_PSA.md) | PSA ← [177Lu]Lu-PSMA-I&T · delayed effect through an effect compartment | model (no simulator) | Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024) | [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2) |
 
 ## ADME sites
 
@@ -54,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 41 matched, 35 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -65,52 +73,52 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Zha_2022.pdf` | Zha Z et al., New PSMA-Targeting Ligands: Transformat…, Journal of medicinal chemis… (2022) | pd | 5 | [10.1021/acs.jmedchem.2c00852](https://doi.org/10.1021/acs.jmedchem.2c00852) | [36103652](https://www.ncbi.nlm.nih.gov/pubmed/36103652) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-25T06:28:50.568709+00:00</sub>
+<sub>queue written 2026-10-07T17:24:12.119177+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Brighi_2023 | irrelevant | 0 | 0 | The study focuses on [68Ga]Ga-PSMA-617 and [18F]FET PET imaging in glioblastoma and does not involve lutetium_177lu_vipivotide_tetraxetan or report its pharmacokinetic parameters. |
+| popPK | Brighi_2023 | irrelevant | 0 | 0 | The study evaluates [68Ga]Ga-PSMA-617 and [18F]FET as imaging biomarkers in glioblastoma and does not involve lutetium_177lu_vipivotide_tetraxetan or report its pharmacokinetic parameters. |
 | PD | Brighi_2023 | not_relevant | 0 | 0 | The paper evaluates [68Ga]Ga-PSMA-617 as an imaging biomarker in glioblastoma and does not involve lutetium (177Lu) vipivotide tetraxetan or report any pharmacodynamic or exposure-response parameters. |
-| popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on a novel bifunctional chelator (2E-C-NETA) conjugated to Herceptin, not lutetium_177lu_vipivotide_tetraxetan, and does not report PK parameters for the target drug. |
-| popPK | Civelek_2026 | irrelevant | 0 | 0 | The paper is a review article discussing clinical applications and future directions of PSMA-based radiopharmaceuticals, containing no original quantitative pharmacokinetic parameter values for lutetium_177lu_vipivotide_tetraxetan. |
-| popPK | Di_2025 | irrelevant | 0 | 0 | The paper is a review of alpha-particle therapy radionuclides (e.g., Ac-225, Ra-223) and does not contain pharmacokinetic data for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on a novel bifunctional chelator (2E-C-NETA) conjugated to Herceptin, not lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Civelek_2026 | irrelevant | 0 | 0 | The paper is a narrative review of PSMA-based radiopharmaceuticals and does not report original quantitative pharmacokinetic parameter values for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Di_2025 | irrelevant | 0 | 0 | The paper is a review of alpha-particle therapy radionuclides (e.g., Ac-225, Ra-223) and does not contain pharmacokinetic data for lutetium-177 vipivotide tetraxetan. |
 | PD | Di_2025 | not_relevant | 0 | 0 | The paper is a review of alpha-particle therapy radionuclides (e.g., Ac-225, Ra-223) and does not contain any pharmacodynamic or exposure-response data for lutetium (177Lu) vipivotide tetraxetan. |
-| popPK | Duong_2025 | irrelevant | 2 | 1 | The study focuses on 177Lu-PSMA-617 (a different drug) and reports dosimetry parameters (LDV, dose) rather than standard population PK parameters (CL, V) for lutetium_177lu_vipivotide_tetraxetan. |
-| popPK | Geis_2026 | irrelevant | 2 | 0 | The study focuses on novel PSMA-617 analogues (PS1-PS11) and uses [177Lu]Lu-PSMA-617 only as a reference/comparator without reporting specific quantitative PK parameters (CL, V, t1/2) for the subject drug. |
+| popPK | Duong_2025 | irrelevant | 0 | 0 | The study focuses on 177Lu-PSMA-617 and 18F-DCFPyL, not lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T). |
+| popPK | Geis_2026 | irrelevant | 1 | 0 | The study focuses on novel PSMA-617 analogues (PS1-PS11) in mice, using [177Lu]Lu-vipivotide tetraxetan only as a reference/comparator without reporting its specific quantitative PK parameters (CL, V, etc.). |
 | PD | Geis_2026 | not_relevant | 2 | 2 | The paper reports in vitro binding affinities (IC50) and in vivo PET imaging data for analogs, but does not provide a pharmacodynamic exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for the therapeutic agent. |
 | PGx | Geis_2026 | not_relevant | 0 | 0 | The paper investigates structure-activity relationships of chemical linker modifications, not pharmacogenomic effects of gene variants. |
 | popPK | Gómez-Perales_2021 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
 | PD | Gómez-Perales_2021 | not_relevant | 0 | 0 | The paper discusses the concept of iodine allergy in nuclear medicine and does not contain any pharmacokinetic or pharmacodynamic data, models, or numeric parameters for lutetium (177Lu) vipivotide tetraxetan. |
-| popPK | Hakim_2026 | irrelevant | 2 | 0 | The study focuses on dosimetry accuracy and precision metrics (RMSE, MAPE) for [177Lu]Lu-PSMA-617 rather than reporting standard population pharmacokinetic parameters (CL, V, Q) for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Hakim_2026 | irrelevant | 0 | 0 | The study focuses on [177Lu]Lu-PSMA-617, which is a different drug from the subject lutetium_177lu_vipivotide_tetraxetan. |
 | PD | Hakim_2026 | not_relevant | 0 | 0 | The paper focuses on the accuracy and precision of renal dosimetry (time-integrated activity) using nonlinear mixed-effects modeling, not on pharmacodynamic or exposure-response relationships. |
-| popPK | Hardiansyah_2025 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic modeling in radiopharmaceutical therapy and does not report original quantitative PK parameters for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Hardiansyah_2025 | irrelevant | 2 | 0 | This is a review article summarizing PopPK methodologies in radiopharmaceutical therapy and does not report original quantitative PK parameter values for lutetium-177 vipivotide tetraxetan. |
 | PD | Hardiansyah_2025 | not_relevant | 1 | 0 | The paper is a review of population PK modeling in radiopharmaceutical therapy and does not report specific numeric PD parameters or exposure-response curves for lutetium (177Lu) vipivotide tetraxetan. |
-| popPK | Jackson_2020 | irrelevant | 2 | 0 | The study focuses on radiation dosimetry and dose conversion factors for 177Lu-PSMA-617, not on reporting quantitative pharmacokinetic parameters (CL, V, Q, ka) for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Jackson_2020 | irrelevant | 0 | 0 | The study focuses on 177Lu-PSMA-617, which is a different drug from the subject lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T). |
 | popPK | Kumar_2021 | irrelevant | 0 | 0 | The paper is a review of Iodine-124 radiochemistry and immunoPET imaging, and does not contain any pharmacokinetic data for lutetium_177lu_vipivotide_tetraxetan. |
 | PD | Kumar_2021 | not_relevant | 0 | 0 | The paper is a review of Iodine-124 radiochemistry and immunoPET imaging, containing no data or analysis for Lutetium-177 vipivotide tetraxetan or any pharmacodynamic modeling. |
 | popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a narrative review on nanotechnology in prostate cancer and does not report quantitative pharmacokinetic parameters for lutetium_177lu_vipivotide_tetraxetan. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper is a narrative review on nanotechnology in prostate cancer and does not report any specific pharmacodynamic or exposure-response data for lutetium (177Lu) vipivotide tetraxetan. |
-| popPK | Li_2026_2 | irrelevant | 0 | 0 | The paper is a perspective/review discussing different PSMA-targeting agents (P16-093, P17-087, P17-088) and does not report quantitative PK parameters for lutetium_177lu_vipivotide_tetraxetan (PSMA-617). |
+| popPK | Li_2026_2 | irrelevant | 0 | 0 | The paper is a perspective/review discussing PSMA-targeting agents and does not report quantitative pharmacokinetic parameters for lutetium_177lu_vipivotide_tetraxetan. |
 | popPK | Liu_2023 | irrelevant | 2 | 0 | The paper is a review summarizing pharmacology and clinical studies without providing original quantitative PK parameter values in the evidence. |
 | popPK | Mahajan_2022 | irrelevant | 0 | 0 | The paper is a review focused on salivary gland toxicity and imaging, not a pharmacokinetic study reporting quantitative disposition parameters for lutetium_177lu_vipivotide_tetraxetan. |
 | popPK | Ordas_2026 | irrelevant | 0 | 0 | The paper is a general review of radiopharmaceutical therapy and does not report specific quantitative pharmacokinetic parameters for lutetium_177lu_vipivotide_tetraxetan. |
-| popPK | Peng_2025 | irrelevant | 2 | 0 | The study investigates 177Lu-PSMA-617, which is a different drug from the target lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T), and no quantitative compartmental PK parameters (CL, V, Q) are reported. |
-| popPK | Peter_2024 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics and dosimetry of [225Ac]Ac-Macropa-PEG4-YS5, not lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Peng_2025 | irrelevant | 0 | 0 | The study investigates 177Lu-PSMA-617, which is a different drug from the target lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T). |
+| popPK | Peter_2024 | irrelevant | 0 | 0 | The study investigates the dosimetry of [225Ac]Ac-Macropa-PEG4-YS5 in mice, not the pharmacokinetics of lutetium_177lu_vipivotide_tetraxetan. |
 | PD | Peter_2024 | not_relevant | 0 | 0 | The paper focuses on 3D dosimetry and tumor control probability (TCP) for a 225Ac radiopharmaceutical, not on the pharmacodynamic exposure-response relationship of lutetium (177Lu) vipivotide tetraxetan. |
-| popPK | Russell_2025 | irrelevant | 2 | 1 | The study reports effective half-lives for [177Lu]Lu-PSMA-617 (Pluvicto), which is a different drug from the subject lutetium_177lu_vipivotide_tetraxetan. |
-| popPK | Schuderer_2026 | irrelevant | 0 | 0 | The study focuses on novel chimeric peptide radiopharmaceuticals (Comb-1/Comb-2) and does not report pharmacokinetic parameters for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Russell_2025 | irrelevant | 2 | 2 | The study reports effective half-lives for [177Lu]Lu-PSMA-617 (Pluvicto), which is a different drug from lutetium_177lu_vipivotide_tetraxetan (Lutathera). |
+| popPK | Schuderer_2026 | irrelevant | 0 | 0 | The study investigates novel chimeric peptide radiopharmaceuticals (Comb-1/Comb-2) labeled with Ga-67 or Lu-177, not lutetium_177lu_vipivotide_tetraxetan. |
 | PD | Schuderer_2026 | not_relevant | 0 | 0 | The paper describes the synthesis, in vitro properties, and biodistribution of new radiopharmaceuticals, but does not report any pharmacodynamic or exposure-response analysis for lutetium-177 vipivotide tetraxetan. |
-| popPK | Schütze_2026 | irrelevant | 2 | 2 | The study reports effective half-lives for radiation protection/discharge purposes rather than compartmental PK parameters (CL, V, Q), and the specific drug lutetium_177lu_vipivotide_tetraxetan is not explicitly identified (only generic "ihPSMA" or commercial names like Pluvicto/Lutathera are listed). |
-| popPK | Shi_2026 | irrelevant | 2 | 8 | The study reports quantitative PK parameters for 177Lu-PSMA-617, which is a different drug from the target lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T). |
+| popPK | Schütze_2026 | irrelevant | 2 | 2 | The study reports effective half-lives for radiation protection/discharge criteria rather than compartmental PK parameters (CL, V, Q) for lutetium_177lu_vipivotide_tetraxetan specifically. |
+| popPK | Shi_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for 177Lu-PSMA-617, which is a different drug from the target lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T). |
 | popPK | Straub_2023 | irrelevant | 2 | 0 | The study reports imaging-based uptake reduction percentages (%IDred) for prognostication, not quantitative compartmental pharmacokinetic parameters (CL, V, Q, ka) for the drug. |
-| popPK | Szponar_2023 | irrelevant | 0 | 0 | The paper is a narrative review of PSMA-targeted radionuclide therapy that discusses clinical outcomes (PSA reduction, survival) and side effects, but it does not report quantitative pharmacokinetic parameters (CL, V, Q, ka) or compartmental models for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Szponar_2023 | irrelevant | 0 | 0 | The paper is a narrative review of PSMA-targeted radionuclide therapy that discusses clinical outcomes (PSA reduction, survival) and side effects, but does not report quantitative pharmacokinetic parameters (CL, V, Q, ka) or compartmental models for lutetium_177lu_vipivotide_tetraxetan. |
 | popPK | Tran_2025 | irrelevant | 0 | 0 | The paper is a general review of the radiotheranostic landscape and does not report specific quantitative pharmacokinetic parameters for lutetium_177lu_vipivotide_tetraxetan. |
-| popPK | Usmani_2026 | irrelevant | 0 | 0 | The paper is a clinical case series focusing on safety and efficacy in renal disease, not a pharmacokinetic study reporting quantitative disposition parameters for lutetium_177lu_vipivotide_tetraxetan. |
-| popPK | Violet_2019 | irrelevant | 2 | 1 | The study reports radiation dosimetry (absorbed dose in Gy) rather than standard pharmacokinetic parameters (CL, V, Q, ka) for lutetium_177lu_vipivotide_tetraxetan. |
+| popPK | Usmani_2026 | irrelevant | 0 | 0 | The study is a clinical case series focusing on safety and efficacy in renal disease, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for the drug. |
+| popPK | Violet_2019 | irrelevant | 0 | 0 | The study investigates the dosimetry of 177Lu-PSMA-617, which is a different drug from lutetium_177lu_vipivotide_tetraxetan (177Lu-PSMA-I&T). |
 | popPK | Zha_2022 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Zha_2022 | not_relevant | 0 | 0 | The paper is a review discussing the development and clinical application of PSMA-targeting ligands, but it does not report specific pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for lutetium (177Lu) vipivotide tetraxetan. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-25 06:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:24 UTC</sub>

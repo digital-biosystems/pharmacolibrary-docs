@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Kim_2017 \u00b7 population_mean_bsv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tegafur — `Tegafur_Kim2017_population_mean_bsv`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,61 +25,51 @@ A model needs both clearance and volume; without the volume it could only be bui
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:18.461222+00:00) predates the upstream re-run (2026-10-07 17:20:04.806217+00:00). Current validate status: `rejected`.
 
 ## Citation
 Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Switzerla… (2017)
   ·  DOI: [10.3390/molecules22091488](https://doi.org/10.3390/molecules22091488)
 
 ## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_population_mean_bsv" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_population_mean_bsv" status="rejected" stale="true" population="rats" measured-compound="tegafur" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 2 extracted, plus 6 covariate effects.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Formation rate constant of 5-FU precursor from gut compartment in control group | `Q305` · kfm | 0.122 | BSV | not captured | [bsv] | not captured | llm_confirmed (0.6) | molecules-22-01488-t002:row3:col3 | — | not captured |
-| theta_q49_category | `Q900` · theta_q49_category | 0.296 | not captured | not captured | not captured | not captured | not captured (not captured) | molecules-22-01488-t002:row1:col3 | — | not captured |
-| theta_q22_category | `Q900` · theta_q22_category | 0.0813 | not captured | not captured | not captured | not captured | not captured (not captured) | molecules-22-01488-t002:row6:col3 | — | not captured |
-| theta_q30_category | `Q900` · theta_q30_category | 0.184 | not captured | not captured | not captured | not captured | not captured (not captured) | molecules-22-01488-t002:row10:col3 | — | not captured |
-| theta_q61_category | `Q900` · theta_q61_category | 0.0464 | not captured | not captured | not captured | not captured | not captured (not captured) | molecules-22-01488-t002:row12:col3 | — | not captured |
-| theta_q63_category | `Q900` · theta_q63_category | 0.623 | not captured | not captured | not captured | not captured | not captured (not captured) | molecules-22-01488-t002:row13:col3 | — | not captured |
-| theta_q64_category | `Q900` · theta_q64_category | 0.137 | not captured | not captured | not captured | not captured | not captured (not captured) | molecules-22-01488-t002:row14:col3 | — | not captured |
-| estimated 5-FU clearance | `Q22` · CL | 1.68 | fold | not captured | fold | not captured | boundary (0.8) | Kim_2017:discussion_prose | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'BSV' (kfm)
-- dropped duplicate Q305 ('Formation rate constant of 5-FU precursor from gut compartment in SDT pretreatment group', value '0.0595') — already have one for this compound
-- dropped duplicate Q305 ('Formation rate constant of 5-FU from 5-FU precursor', value '2.88') — already have one for this compound
-- dropped unlinked row (NIL): 'Fraction of 5-FU clearance for 5-FU precursor formation' — extend the ontology if this is a real PK parameter (source ['molecules-22-01488-t002:row7:col3'])
-- covariate effect for Q49 has no base parameter row (kept as unattached equation-variable)
-- dropped duplicate covariate effect 'category'/'' on Q49 — ambiguous identity (two shifts cannot share one category)
-- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
-- dropped duplicate covariate effect 'category'/'' on Q22 — ambiguous identity (two shifts cannot share one category)
-- covariate effect for Q30 has no base parameter row (kept as unattached equation-variable)
-- dropped duplicate covariate effect 'category'/'' on Q30 — ambiguous identity (two shifts cannot share one category)
-- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q63 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q64 has no base parameter row (kept as unattached equation-variable)
-- dropped duplicate covariate effect 'category'/'' on Q64 — ambiguous identity (two shifts cannot share one category)
-- salvaged Q22 ('estimated 5-FU clearance'=1.68) from results prose — parameter table was unreadable
+- table section iiv: 'Absorption rate constant for tegafur in control group' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Absorption rate constant for tegafur in SDT pretreatment group' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Formation rate constant of 5-FU precursor from gut compartment in control group' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Formation rate constant of 5-FU precursor from gut compartment in SDT pretreatment group' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Formation rate constant of 5-FU from 5-FU precursor' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Clearance for tegafur' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Fraction of 5-FU clearance for 5-FU precursor formation' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Clearance for 5-FU in control group' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Clearance for 5-FU in SDT pretreatment group' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Distribution clearance for tegafur' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Distribution clearance for 5-FU' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Central volume of distribution for tegafur' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Central volume of distribution for 5-FU' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Peripheral volume of distribution for tegafur' routed out of structural estimates ('Population Mean (BSV)')
+- table section iiv: 'Peripheral volume of distribution for 5-FU' routed out of structural estimates ('Population Mean (BSV)')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tegafur
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- population split: 'population mean (bsv)' subgroup of Kim_2017 (paper reports 6 populations: multiple dose, parameter, population mean (bsv), single dose, symbol, unit)
+- template fit: none — only the metabolite is modelled — no parent compartment (site presystemic: 'To determine the effect of SDT multiple dose pretreatment, the oral absorption rate of tegafur (Ka), metabolic conversio')
+- population split: 'population mean (bsv)' subgroup of Kim_2017 (paper reports 3 populations: multiple dose, population mean (bsv), single dose)
+- row roles: 2 per-group rows of tegafur absorption_rate_constant but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of 5-FU formation_rate_constant but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of 5-FU clearance but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 24 linked by role; re-tagged parent→5-FU ×22, parent→gimeracil ×5
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - unparsed cell Kim_2017_table_1:row1:col3 = '3.5 ± 0.7 *'
@@ -104,12 +94,8 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | fold | not captured | not captured | ['Kim_2017:discussion_prose'] |
-| C5_unit_missing_Q305 | fail | 1 / [time] | BSV | not captured | not captured | ['molecules-22-01488-t002:row3:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.68 | not captured | not captured | ['Kim_2017:discussion_prose'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -124,19 +110,9 @@ Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Swi
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -145,4 +121,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 07:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:20 UTC</sub>

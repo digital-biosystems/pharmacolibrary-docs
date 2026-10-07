@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Sodium chloride (measured concentrations) drives growth rate (in h−1): direct sigmoid Emax (Hill) effect.
+**As extracted:** Sodium_chloride (measured concentrations) drives growth rate (in h−1): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -27,7 +27,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Fernández-Naveira Á et al., Effect of salinity on C1-gas fermentati…, AMB Express (2019)
@@ -36,6 +36,7 @@ Fernández-Naveira Á et al., Effect of salinity on C1-gas fermentati…, AMB Ex
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 | `Q322` · not captured | 11 | g/L | not captured | llm (not captured) | Fernández-Naveira_2019:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 10.79 | g/L | not captured | llm (not captured) | Fernández-Naveira_2019:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 11.02 | g/L | not captured | llm (not captured) | Fernández-Naveira_2019:pdv3 |
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tioguanine&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/&quot;},{&quot;label&quot;:&quot;Bayoumy_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tioguanine — `Tioguanine_Bayoumy2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,6 +23,8 @@ The record lists V/F for 6-thioguanine nucleotides as 270.5 with unit L/h, but V
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:49.596114+00:00) predates the upstream re-run (2026-10-07 17:33:33.324931+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `thioguanine`, measured `6-thioguanine nucleotides`.
 
 ## Citation
@@ -30,26 +32,17 @@ Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmaco
   ·  DOI: [10.1007/s40262-025-01532-1](https://doi.org/10.1007/s40262-025-01532-1)
 
 ## Model component
-<dbs-pgx drug="tioguanine" model-id="Tioguanine_Bayoumy2025_reference" status="rejected" stale="false" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tioguanine" model-id="Tioguanine_Bayoumy2025_reference" status="rejected" stale="true" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 0 extracted.
 
-**Parameterization:** CL/F, V/F — apparent_wrt_Fm, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** apparent_wrt_Fm.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review_gapfill (0.7) | Jiang_2025:review | — | not captured |
-| V/F | `Q76` · V/F | 270.5 | L/h | 7.51388888888889e-05 | L | not captured | review_gapfill (0.7) | Bayoumy_2025:review | — | not captured |
-| Ka | `Q49` · kabs | 0.33 | /h | 9.166666666666667e-05 | 1/h | not captured | review_gapfill (0.7) | Bayoumy_2025:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
@@ -63,12 +56,12 @@ Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmaco
 - $THETA(1) has no $PK binding — index may be misassigned
 - apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
 - theta_crosscheck: skipped (no in-paper final table to compare)
+- template fit: none — other model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
-- gap-filled Q27 (CL/F) from Jiang_2025's review values (primary lacked it)
-- gap-filled Q76 (V/F) from Bayoumy_2025's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Bayoumy_2025's review values (primary lacked it)
+- row roles (LLM): model_class=other; 0/3 row label(s) assigned, 0 linked by role
+- molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
+- molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 ## Validation
 
@@ -76,16 +69,10 @@ Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmaco
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jiang_2025:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bayoumy_2025:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bayoumy_2025:review'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 21.6 L/h | not captured | not captured | ['Jiang_2025:review'] |
-| C9_phys_window_Q76 | fail | volume within physiological range | 0.0751 L | not captured | not captured | ['Bayoumy_2025:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,4 +97,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 08:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:33 UTC</sub>
