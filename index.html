@@ -206,8 +206,8 @@
     .pks-evkey i.e0 { background: var(--pks-ev0); } .pks-evkey i.e1 { background: var(--pks-ev1); }
     .pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
     .pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
-    .pks-evkey i.dot { border-radius: 50%; width: 11px; height: 11px; background: #64748b; border: 0;
-      color: #fff; font: 700 8px/11px system-ui, sans-serif; font-style: normal; text-align: center; }
+    .pks-evkey i.dot { border-radius: 50%; width: 11px; height: 11px; background: #94a3b8; border: 0;
+      color: #000; font: 700 8px/11px system-ui, sans-serif; font-style: normal; text-align: center; }
     .pks-scroll { overflow-x: auto; }
     /* who-affects-whom: the partner codes on a heat-map row label and the directed matrix */
     .pks-partners { font-size: 11px; color: #64748b; white-space: nowrap; margin-left: 4px; }
@@ -262,9 +262,9 @@
     .pks-hm .pks-dots { position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%);
       width: 26px; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 1px;
       pointer-events: none; }
-    /* a filled dot in the perpetrator's colour with its action inside: ⊣ inhibits, ↑ induces */
+    /* a filled dot in the perpetrator's colour, no ring, its action in black: ⊣ inhibits, ↑ induces */
     .pks-hm .pks-dots i { display: block; width: 8px; height: 8px; border-radius: 50%;
-      box-shadow: 0 0 0 1px #fff; color: #fff; font: 700 6.5px/8px system-ui, sans-serif;
+      color: #000; font: 700 6.5px/8px system-ui, sans-serif;
       font-style: normal; text-align: center; overflow: hidden; }
     .pks-hm td:focus-visible { outline: 2px solid #1e293b; outline-offset: 1px; }
     .pks-hm .gap { background: transparent; width: 8px; }
