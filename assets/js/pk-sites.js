@@ -582,6 +582,13 @@
   // tissue in the tooltip. Every drug of the set sits on both axes so an EMPTY row or column
   // is itself readable (this drug affects nothing / is affected by nothing here). The
   // shared-actors list below carries the same facts undirected; this is the directed view.
+  // a drug's name as a link to its page on this site; plain text for a drug with no extracted
+  // record, which has no page (adme_drug.has_records)
+  function drugLink(d) {
+    return d.has_records ? '<a href="#/drugs/drug_' + esc(d.slug) + '/" title="' + esc(d.name) + ' — drug page">' + esc(d.name) + '</a>'
+                         : esc(d.name);
+  }
+
   function renderDdi(root, M, opts) {
     var focus = opts.focus, showDDI = opts.ddi !== false;
     if (!showDDI) { root.innerHTML = '<p class="pks-empty">co-administration layer is off.</p>'; return; }
@@ -594,10 +601,10 @@
       if (a.tissue && v.tissues.indexOf(a.tissue) < 0) v.tissues.push(a.tissue);
     });
     var h = '<table class="pks-ddi"><tr><th class="corner"><span>perpetrator \u2193 \u00b7 victim \u2192</span></th>';
-    M.drugs.forEach(function (d, i) { h += '<th class="victim' + (focus && focus !== d.slug ? ' dim' : '') + '"><i style="background:' + COLORS[i] + '"></i>' + esc(d.name) + '</th>'; });
+    M.drugs.forEach(function (d, i) { h += '<th class="victim' + (focus && focus !== d.slug ? ' dim' : '') + '"><i style="background:' + COLORS[i] + '"></i>' + drugLink(d) + '</th>'; });
     h += '</tr>';
     M.drugs.forEach(function (p, i) {
-      h += '<tr' + (focus && focus !== p.slug ? ' class="dim"' : '') + '><th class="perp"><i style="background:' + COLORS[i] + '"></i>' + esc(p.name) + '</th>';
+      h += '<tr' + (focus && focus !== p.slug ? ' class="dim"' : '') + '><th class="perp"><i style="background:' + COLORS[i] + '"></i>' + drugLink(p) + '</th>';
       M.drugs.forEach(function (v) {
         if (v.slug === p.slug) { h += '<td class="self"></td>'; return; }
         var c = cell[p.slug + '|' + v.slug];
