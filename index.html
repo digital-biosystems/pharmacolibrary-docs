@@ -1249,8 +1249,22 @@
           draw();
         }).catch(function (e) { status(String(e.message || e), true); });
       }
+      // The page's six views are tabs (sites.md marks them up): one panel shown at a time, the
+      // reader's choice kept for this browser session. Panels are rendered whether shown or not —
+      // nothing in pk-sites.js measures the layout while drawing — so switching costs nothing.
+      function tab(name) {
+        var bs = document.querySelectorAll('.markdown-section [data-pkstab]');
+        if (!bs.length) return;
+        if (!Array.prototype.some.call(bs, function (b) { return b.dataset.pkstab === name; })) name = bs[0].dataset.pkstab;
+        bs.forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.pkstab === name)); });
+        document.querySelectorAll('.markdown-section [data-pkspanel]').forEach(function (p) { p.hidden = p.dataset.pkspanel !== name; });
+        try { sessionStorage.setItem('pks-tab', name); } catch (e) {}
+      }
       hook.doneEach(function () {
         if (!document.getElementById('pk-sites')) return;      // every other page stops here
+        var saved = null;
+        try { saved = sessionStorage.getItem('pks-tab'); } catch (e) {}
+        if (saved) tab(saved);
         boot();
         if (wired) return;
         wired = true;
@@ -1268,6 +1282,8 @@
           if (first) { add(first.dataset.add); t.value = ''; el('pks-results').innerHTML = ''; }
         });
         document.addEventListener('click', function (ev) {
+          var tb = ev.target && ev.target.closest && ev.target.closest('button[data-pkstab]');
+          if (tb) { tab(tb.dataset.pkstab); return; }
           var t = ev.target; if (!t || !DB) return;
           var b = t.closest && t.closest('button[data-add]');
           if (b) { add(b.dataset.add); var p = el('pks-pick'); if (p) p.value = ''; el('pks-results').innerHTML = ''; return; }
