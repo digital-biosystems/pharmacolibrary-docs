@@ -239,7 +239,8 @@
     .pks-hm td { width: 30px; height: 30px; border-radius: 4px; background: var(--pks-ev0); }
     .pks-hm td.e1 { background: var(--pks-ev1); } .pks-hm td.e2 { background: var(--pks-ev2); }
     .pks-hm td.e3 { background: var(--pks-ev3); }
-    /* the evidence colour shaded by how many other drugs of the set act on this drug here
+    /* the evidence colour shaded by how many interactions act on this drug here — other drugs
+       of the set and the patient's pharmacogenes
        (data-n from pk-sites.js; absent when the co-administration layer is off): the hue
        says which evidence, the shade how crowded the site is — 0 very light … 3+ dark */
     .pks-hm td.e1 { --pks-c: var(--pks-ev1); } .pks-hm td.e2 { --pks-c: var(--pks-ev2); }
