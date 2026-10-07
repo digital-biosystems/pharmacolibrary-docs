@@ -330,7 +330,7 @@
       var k = a.perpetrator + (ind ? '|ind' : '|inh');
       if (seen[k]) return; seen[k] = 1;
       var col = COLORS[slugs.indexOf(a.perpetrator)];
-      dots.push('<i class="' + (ind ? 'ind' : 'inh') + '" style="background:' + col + '" title="' + esc(nameOf(M, a.perpetrator) + ' ' + a.effect + ' ' + a.actor) + '">' + (ind ? '↑' : '⊣') + '</i>');
+      dots.push('<i class="' + (ind ? 'ind' : 'inh') + '" style="--pd:' + col + '" title="' + esc(nameOf(M, a.perpetrator) + ' ' + a.effect + ' ' + a.actor) + '">' + (ind ? '↑' : '⊣') + '</i>');
     });
     return '<span class="pks-dots">' + dots.join('') + '</span>';
   }

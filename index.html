@@ -265,6 +265,7 @@
     /* a filled dot in the perpetrator's colour, no ring, its action in black: ⊣ inhibits, ↑ induces */
     .pks-hm .pks-dots i { display: block; width: 8px; height: 8px; border-radius: 50%;
       color: #000; font: 700 6.5px/8px system-ui, sans-serif;
+      background: color-mix(in srgb, var(--pd, #64748b) 55%, #fff);   /* the perpetrator's colour, lightened for the black symbol */
       font-style: normal; text-align: center; overflow: hidden; }
     .pks-hm td:focus-visible { outline: 2px solid #1e293b; outline-offset: 1px; }
     .pks-hm .gap { background: transparent; width: 8px; }
