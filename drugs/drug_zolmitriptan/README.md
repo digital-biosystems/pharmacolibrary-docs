@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;zolmitriptan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolmitriptan_Zhou2017_reference&quot;,&quot;label&quot;:&quot;Zhou_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolmitriptan_Zhou2017_reference&quot;,&quot;label&quot;:&quot;Zhou_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # zolmitriptan
 
@@ -15,23 +15,33 @@ Zolmitriptan is a serotonin 5-HT1 receptor agonist used to treat migraine attack
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q218820](https://www.wikidata.org/wiki/Q218820) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| zolmitriptan | parent | 287.357 | C16H21N3O2 | DrugBank | [60857](https://pubchem.ncbi.nlm.nih.gov/compound/60857) | Zhou_2017 |
+| 183C91 | metabolite | 273.336 | C15H19N3O2 | PubChem | [178536](https://pubchem.ncbi.nlm.nih.gov/compound/178536) | Zhou_2017 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 22:19 | 0:11 | 0/1/0 | 0/1/0 | 0/0/0 | 3,020/475 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 06:45 | 0:36 | 1/0/0 | 1/0/1 | 0/0/0 | 57,713/3,128 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [MaassenVanDenBrink_1998_unknown](drugs/drug_zolmitriptan/pd_MaassenVanDenBrink_1998_unknown.md) | coronary artery contraction ← unknown · direct Emax (saturable) effect | — | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wurch_2000_inositol_phosphate_formation](drugs/drug_zolmitriptan/pd_Wurch_2000_inositol_phosphate_formation.md) | inositol phosphate formation ← zolmitriptan · direct Emax (saturable) effect | — | Wurch T et al., Coupling of canine serotonin 5-HT(1B) a…, Journal of neurochemistry (2000) | [10.1046/j.1471-4159.2000.0751180.x](https://doi.org/10.1046/j.1471-4159.2000.0751180.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [MaassenVanDenBrink_1998_contraction](drugs/drug_zolmitriptan/pd_MaassenVanDenBrink_1998_contraction.md) | Coronary artery contraction ← zolmitriptan · direct Emax (saturable) effect | model (no simulator) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 
 ## ADME sites
 
@@ -63,7 +73,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 28 matched, 28 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -72,7 +82,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhou_2017.pdf` | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) | [28581633](https://pubmed.ncbi.nlm.nih.gov/28581633) | The paper is a population PK study for zolmitriptan and explicitly reports numeric values for clearance (121 L/h) and volume of distribution (136 L) in the text. |
+| `Zhou_2017.pdf` | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) | [28581633](https://pubmed.ncbi.nlm.nih.gov/28581633) | The evidence explicitly provides quantitative population PK parameters (clearance, volume of distribution) and variability for zolmitriptan. |
 | `Pauwels_1998.pdf` | Pauwels PJ et al., Pharmacological analysis of G-protein a…, British journal of pharmaco… (1998) | pd | 5 | [10.1038/sj.bjp.0701584](https://doi.org/10.1038/sj.bjp.0701584) | [9484854](https://www.ncbi.nlm.nih.gov/pubmed/9484854) | metadata signals extractable PD data (Emax) |
 | `Moghaddam_2019.pdf` | Moghaddam RA et al., Evaluation of Isolated Vascular Respons…, Drug research (2019) | pd | 4 | [10.1055/a-0800-8391](https://doi.org/10.1055/a-0800-8391) | [30536257](https://www.ncbi.nlm.nih.gov/pubmed/30536257) | metadata signals extractable PD data (EC50) |
 | `Murray_2011.pdf` | Murray KC et al., Polysynaptic excitatory postsynaptic po…, Journal of neurophysiology (2011) | pd | 4 | [10.1152/jn.01011.2010](https://doi.org/10.1152/jn.01011.2010) | [21653728](https://www.ncbi.nlm.nih.gov/pubmed/21653728) | metadata signals extractable PD data (sigmoid) |
@@ -80,35 +90,34 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Karjalainen_2008.pdf` | Karjalainen MJ et al., In vitro inhibition of CYP1A2 by model…, Basic & clinical pharmacolo… (2008) | pgx | 7 | [10.1111/j.1742-7843.2008.00252.x](https://doi.org/10.1111/j.1742-7843.2008.00252.x) | [18816299](https://www.ncbi.nlm.nih.gov/pubmed/18816299) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Yu_2003.pdf` | Yu LS et al., In vitro metabolism of zolmitriptan in…, Chemico-biological interact… (2003) | pgx | 7 | [10.1016/j.cbi.2003.08.001](https://doi.org/10.1016/j.cbi.2003.08.001) | [14642738](https://www.ncbi.nlm.nih.gov/pubmed/14642738) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-21T08:01:18.055135+00:00</sub>
+<sub>queue written 2026-10-07T06:44:54.803165+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Capi_2016 | not_relevant | 0 | 0 | The paper reviews eletriptan, not zolmitriptan, and does not report pharmacogenomic effects on PK/PD parameters. |
-| PGx | Han_2021 | not_relevant | 2 | 0 | The study investigates the metabolic mechanism of zolmitriptan activation by CYP2D6 in rats but does not report human pharmacogenomic effects on PK or PD parameters. |
-| PGx | Karjalainen_2008 | not_relevant | 0 | 0 | The paper studies in vitro CYP1A2 inhibition by zolmitriptan and other drugs, but does not report pharmacogenomic effects on zolmitriptan's PK or PD parameters. |
-| popPK | Liu_2015 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter-mediated transport, not a pharmacokinetic study reporting quantitative disposition parameters for zolmitriptan. |
-| popPK | MaassenVanDenBrink_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of coronary artery contraction, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for zolmitriptan. |
-| PGx | Matthaei_2016 | not_relevant | 2 | 0 | The paper reports pharmacokinetic data for sumatriptan, not zolmitriptan, although it notes that OCT1 transports zolmitriptan. |
-| popPK | Moghaddam_2019 | irrelevant | 0 | 0 | The study is an in-vitro vascular pharmacology experiment using zolmitriptan as a receptor agonist, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Murray_2011 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology investigation of serotonin receptors in spinal cord injury, not a pharmacokinetic study, and reports no disposition parameters for zolmitriptan. |
-| popPK | Pauwels_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor-mediated cell growth, not a pharmacokinetic study, and reports no disposition parameters for zolmitriptan. |
-| popPK | Pauwels_1998 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study of receptor binding and G-protein activation, not a pharmacokinetic study, and contains no disposition parameters for zolmitriptan. |
+| PGx | Capi_2016 | not_relevant | 0 | 0 | The paper discusses eletriptan, not zolmitriptan, and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Han_2021 | not_relevant | 0 | 0 | The paper reports CYP2D6-mediated metabolic activation in rats but does not assess human genetic variants or report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Karjalainen_2008 | not_relevant | 0 | 0 | The study reports in vitro CYP1A2 inhibition by zolmitriptan, not pharmacokinetic changes driven by genetic variants in zolmitriptan. |
+| popPK | Liu_2015 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of transporter-mediated transport and does not report population pharmacokinetic parameters (CL, V, ka, etc.) for zolmitriptan. |
+| popPK | MaassenVanDenBrink_1998 | irrelevant | 1 | 0 | This is an in-vitro pharmacodynamic study measuring coronary artery contraction (EC50/Emax) for multiple drugs including zolmitriptan, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Moghaddam_2019 | irrelevant | 0 | 0 | The study is an in-vitro organ bath assessment of vascular reactivity in rats, not a pharmacokinetic study. |
+| popPK | Murray_2011 | irrelevant | 0 | 0 | The study is a neurophysiological investigation of 5-HT receptors in rat spinal cord injury models, using zolmitriptan as an agonist rather than measuring its pharmacokinetic disposition. |
+| popPK | Pauwels_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of cell growth stimulation, not a pharmacokinetic study, and reports receptor affinity/EC50 values rather than disposition parameters. |
+| popPK | Pauwels_1998 | irrelevant | 0 | 0 | The study characterizes G-protein activation and receptor binding affinity (pharmacodynamics) for zolmitriptan in an in vitro system, not its pharmacokinetic parameters. |
 | PD | Pauwels_1998 | not_relevant | 3 | 2 | The paper reports in vitro receptor pharmacology (binding affinity and G-protein activation potency/efficacy) rather than a pharmacokinetic-pharmacodynamic (PK/PD) exposure-response relationship for the drug in a biological system. |
-| popPK | Perez_1998 | irrelevant | 0 | 0 | The paper is an in-vitro/in-vivo pharmacological study of a sumatriptan dimer, with zolmitriptan serving only as a comparator and no PK parameters reported. |
+| popPK | Perez_1998 | irrelevant | 0 | 0 | The paper describes an in-vitro receptor binding and pharmacodynamic study of a novel compound, with zolmitriptan used only as a comparator, and contains no pharmacokinetic parameters. |
 | PD | Perez_1998 | not_relevant | 1 | 2 | The paper reports in vitro receptor binding and functional assay data (Ki, EC50, pD2) for a new dimeric compound, comparing it to zolmitriptan, but does not provide a pharmacokinetic or exposure-response analysis for zolmitriptan itself. |
-| PGx | Pöstges_2023 | not_relevant | 0 | 0 | The paper focuses on the metabolism of sumatriptan, not zolmitriptan, and does not report pharmacogenomic effects on PK/PD parameters for the target drug. |
-| popPK | Roon_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor-mediated vascular contraction, not a pharmacokinetic study, and reports no disposition parameters for zolmitriptan. |
-| PGx | Sternieri_2006 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions and does not report pharmacogenomic effects (gene variants) on zolmitriptan PK/PD. |
-| PGx | Tepper_2001 | not_relevant | 0 | 0 | The paper discusses general safety and drug-drug interactions (e.g., cimetidine) but does not report pharmacogenomic effects of gene variants on zolmitriptan PK/PD. |
-| popPK | Tfelt-Hansen_2019 | irrelevant | 1 | 0 | The paper is a review of clinical efficacy and therapeutic delay, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, ka) for zolmitriptan. |
+| PGx | Pöstges_2023 | not_relevant | 0 | 0 | The paper investigates the in vitro metabolism of sumatriptan and zolmitriptan using recombinant enzymes, but it does not report in vivo pharmacokinetic or pharmacodynamic parameters linked to human genetic variants or genotypes. |
+| popPK | Roon_1999 | irrelevant | 0 | 0 | The study reports pharmacodynamic potency (pD2) and efficacy (Emax) in an in vitro bovine model, not pharmacokinetic parameters. |
+| PGx | Sternieri_2006 | not_relevant | 2 | 0 | The paper is a review of pharmacokinetic drug-drug interactions and mentions CYP2D6 substrates, but it does not report specific pharmacogenomic effects (gene variants) on the PK or PD parameters of zolmitriptan. |
+| PGx | Tepper_2001 | not_relevant | 1 | 2 | The text mentions a drug-drug interaction between zolmitriptan and cimetidine but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Tfelt-Hansen_2019 | irrelevant | 1 | 0 | The paper is a review of therapeutic efficacy and delay of effect in RCTs, not a primary pharmacokinetic study reporting quantitative PK parameters (CL, V, etc.) for zolmitriptan. |
 | PD | Tfelt-Hansen_2019 | not_relevant | 2 | 1 | The paper is a qualitative review discussing the delay of effect and comparing time to maximum effect (Emax) with Tmax, but it does not provide numeric concentration-effect parameters (like EC50 or slope) or a derivable PD curve for zolmitriptan. |
-| popPK | Wainscott_1998 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding and mechanistic study, not a pharmacokinetic study, and contains no disposition parameters for zolmitriptan. |
-| PGx | Wild_1999 | not_relevant | 0 | 0 | The paper identifies the metabolic enzymes (CYP1A2, MAO-A) involved in zolmitriptan metabolism but does not report any pharmacogenomic effects of specific gene variants or genotypes on PK/PD parameters. |
-| popPK | Wurch_2000 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of receptor signaling (inositol phosphate formation) and does not report pharmacokinetic parameters for zolmitriptan. |
-| PGx | Yu_2003 | not_relevant | 0 | 0 | The study investigates in vitro metabolism and drug-drug interactions in rat microsomes, not the effect of human gene variants on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Wainscott_1998 | irrelevant | 0 | 0 | This is an in vitro receptor binding study (pharmacodynamics) correlating receptor potency with plasma protein extravasation, containing no pharmacokinetic disposition parameters (CL, V, ka, etc.) for zolmitriptan. |
+| PGx | Wild_1999 | not_relevant | 0 | 0 | The study identifies the metabolic enzymes (CYP1A2, MAO-A) involved in zolmitriptan clearance but does not report any data linking specific genetic variants or genotypes to changes in PK parameters. |
+| popPK | Wurch_2000 | irrelevant | 0 | 0 | The study is a mechanistic in vitro analysis of receptor signaling (inositole phosphate formation) and does not report any pharmacokinetic disposition parameters for zolmitriptan. |
+| PGx | Yu_2003 | not_relevant | 0 | 1 | The paper investigates in vitro metabolism and drug-drug interactions in rat liver microsomes but does not study the effect of human gene variants on zolmitriptan's pharmacokinetics or pharmacodynamics. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 08:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:44 UTC</sub>

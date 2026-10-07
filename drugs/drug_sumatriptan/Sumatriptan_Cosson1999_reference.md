@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;sumatriptan&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/&quot;},{&quot;label&quot;:&quot;Cosson_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sumatriptan_Cosson1999_reference&quot;,&quot;label&quot;:&quot;Cosson_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sumatriptan_Cosson1999_reference&quot;,&quot;label&quot;:&quot;Cosson_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sumatriptan — `Sumatriptan_Cosson1999_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:31.817657+00:00) predates the upstream re-run (2026-10-07 06:41:15.436539+00:00). Current validate status: `extracted`.
+
 ## Citation
 Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmacokinetics… (1999)
   ·  DOI: [10.1023/a:1020601906027](https://doi.org/10.1023/a:1020601906027)
 
 ## Model component
-<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Cosson1999_reference" status="needs_review" stale="false" population="healthy subjects and migraine patients" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Cosson1999_reference" status="extracted" stale="true" population="healthy subjects and migraine patients" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -38,8 +40,6 @@ Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmac
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total clearance | `Q22` · CL | 71.2 | L/hr | 1.9777777777777778e-05 | [l] / [h] | not captured | exact (1.0) | Cosson_1999:abstract | — | not captured |
@@ -56,13 +56,14 @@ Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmac
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'combination of age and height on clearance' — extend the ontology if this is a real PK parameter (source ['Cosson_1999:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sumatriptan
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Cosson_1999_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Cosson_1999_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -118,8 +119,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_modelica.zip" download>Sumatriptan_Cosson1999_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_modelica.zip" download>Sumatriptan_Cosson1999_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_fmi.zip" download>Sumatriptan_Cosson1999_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_matlab.zip" download>Sumatriptan_Cosson1999_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_matlab_simbio.zip" download>Sumatriptan_Cosson1999_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_sbml.zip" download>Sumatriptan_Cosson1999_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -140,4 +141,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 07:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:41 UTC</sub>

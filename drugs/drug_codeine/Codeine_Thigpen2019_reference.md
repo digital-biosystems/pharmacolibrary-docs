@@ -40,7 +40,7 @@ James C Thigpen et al., Opioids: A Review of Pharmacokinetics a…, European jou
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| median clearance | `Q22` · CL | 8.0 | mL/kg/ min | 9.333333333333334e-06 | L/h | not captured | review (0.7) | Thigpen_2019:review | — | not captured |
+| median clearance | `Q22` · CL | 8.0 | mL/kg/min | 9.333333333333334e-06 | L/h | not captured | review (0.7) | Thigpen_2019:review | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 5.2 | L/kg | 0.36400000000000005 | L | not captured | review (0.7) | Thigpen_2019:review | — | not captured |
 
 <details class="legend">

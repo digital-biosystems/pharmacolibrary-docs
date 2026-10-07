@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;buprenorphine&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/&quot;},{&quot;label&quot;:&quot;Walsh_2024 \u00b7 PD Clinical Opiate Withdrawal Scale score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Walsh_2024_COWS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 COWS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_COWS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Walsh_2024_desire_to_use_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 desire to use VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_desire_to_use_VAS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_drug_liking_E_max_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 drug liking E max VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_drug_liking_E_max_VAS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;buprenorphine&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/&quot;},{&quot;label&quot;:&quot;Walsh_2024 \u00b7 PD Clinical Opiate Withdrawal Scale (COWS) score&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Buprenorphine_Kraft2018_reference&quot;,&quot;label&quot;:&quot;Kraft_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Kraft2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Robertson2005_i_v&quot;,&quot;label&quot;:&quot;Robertson_2005_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Robertson2005_i_v.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Robertson2005_otm&quot;,&quot;label&quot;:&quot;Robertson_2005_otm&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Robertson2005_otm.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Clinical Opiate Withdrawal Scale score — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span>
+# Clinical Opiate Withdrawal Scale (COWS) score — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,9 +14,9 @@
 
 ## What this record describes
 
-**As extracted:** Buprenorphine (concentrations from the PK model of Nelson_2024) drives Clinical Opiate Withdrawal Scale score (in score): direct sigmoid Emax (Hill) effect.
+**As extracted:** Buprenorphine (concentrations from the PK model of Castro-Cuellar_2023) drives Clinical Opiate Withdrawal Scale (COWS) score: direct sigmoid Emax (Hill) effect.
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 > Buprenorphine plasma concentration (ng/mL) directly inhibits the COWS score via a sigmoid Imax model (VAS(Cp) = BASE·(1 − Imax·Cp^γ/(IC50^γ + Cp^γ))), with baseline 45.3, Imax fixed to 1.00, IC50 0.075 ng/mL, and IC90 0.109 ng/mL; the paper does not state a γ value for COWS.
 >
@@ -25,6 +25,7 @@
 - **paper:** `Walsh_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
+- **tier:** population
 - **effect:** inhibition/unknown
 
 ## Citation
@@ -34,62 +35,12 @@ Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmaco
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline — Value | `Q324` · not captured | 45.3 | not captured | not captured | exact (not captured) | tab_0:row2:col2 |
-| PD (effect) | Baseline — RSE (%) | `Q324` · not captured | 2.40 | not captured | not captured | exact (not captured) | tab_0:row2:col3 |
-| PD (effect) | IC 50 — Value | `Q322` · not captured | 0.075 | ng/mL | not captured | llm (not captured) | tab_0:row3:col2 |
-| PD (effect) | IC 50 — RSE (%) | `Q322` · not captured | 30.4 | ng/mL | not captured | llm (not captured) | tab_0:row3:col3 |
-| PD (effect) | I max — Value | `Q323` · not captured | 1.00 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
-| PD (effect) | IIV Baseline — Value | `Q324` · not captured | 0.106 | not captured | not captured | boundary (not captured) | tab_0:row5:col2 |
-| PD (effect) | IIV Baseline — RSE (%) | `Q324` · not captured | 19.8 | not captured | not captured | boundary (not captured) | tab_0:row5:col3 |
-| PD (effect) | IIV Baseline — Shrinkage (%) | `Q324` · not captured | 11.6 | not captured | not captured | boundary (not captured) | tab_0:row5:col4 |
-| variability | IIV IC 50 — Value | `Q312` · not captured | 1.90 | not captured | not captured | boundary (not captured) | tab_0:row6:col2 |
-| variability | IIV IC 50 — RSE (%) | `Q312` · not captured | 10.3 | not captured | not captured | boundary (not captured) | tab_0:row6:col3 |
-| variability | IIV IC 50 — Shrinkage (%) | `Q312` · not captured | 13.3 | not captured | not captured | boundary (not captured) | tab_0:row6:col4 |
-| variability | IIV I max — Value | `Q312` · not captured | 0 | not captured | not captured | boundary (not captured) | tab_0:row7:col2 |
-| variability | Additive — Value | `Q317` · not captured | 0.744 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
-| variability | Additive — Shrinkage (%) | `Q318` · not captured | 9.39 | not captured | not captured | llm (not captured) | tab_0:row8:col4 |
-| variability | IC 90 — Shrinkage (%) | `Q318` · not captured | 0.109 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
+| — | IC 90 | `Q100` · not captured | 0.109 | ng/mL | not captured | nil (not captured) | Walsh_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Buprenorphine_Walsh2024_PD_cows` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 45.3 score | — |
-| Emax | -1 score | — |
-| EC50 | 0.075 ng/mL | 7.5e-08 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 45.3, `at_EC50` = 44.8, `at_inf` = 44.3
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | the response falls, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -120,22 +71,19 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_modelica.zip" download>Buprenorphine_Walsh2024_PD_cows_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_fmi.zip" download>Buprenorphine_Walsh2024_PD_cows_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_matlab.zip" download>Buprenorphine_Walsh2024_PD_cows_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_sbml.zip" download>Buprenorphine_Walsh2024_PD_cows_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_cellml.zip" download>Buprenorphine_Walsh2024_PD_cows_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Buprenorphine_Walsh2024_PD_cows_params.json` · controls `Buprenorphine_Walsh2024_PD_cows_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

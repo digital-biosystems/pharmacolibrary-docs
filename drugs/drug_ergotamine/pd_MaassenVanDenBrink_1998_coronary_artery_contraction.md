@@ -1,8 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;ergotamine&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/&quot;},{&quot;label&quot;:&quot;MaassenVanDenBrink_1998 \u00b7 PD coronary artery contraction&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Kudupoje_2018_NE_normalized_contraction&quot;,&quot;label&quot;:&quot;Kudupoje_2018 \u00b7 NE-normalized % contraction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/pd_Kudupoje_2018_NE_normalized_contraction.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_MaassenVanDenBrink_1998_coronary_artery_contraction&quot;,&quot;label&quot;:&quot;MaassenVanDenBrink_1998 \u00b7 coronary artery contraction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/pd_MaassenVanDenBrink_1998_coronary_artery_contraction.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# coronary artery contraction — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span>
+# coronary artery contraction — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,19 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Ergotamine (concentrations from the PK model of Tfelt-Hansen_1985) drives coronary artery contraction (in % of contraction elicited by 100 mmol/L K+): direct Emax (saturable) effect.
+**As extracted:** Ergotamine (concentrations from the PK model of Tfelt-Hansen_1985) drives coronary artery contraction (in % of contraction elicited by 100 mmol/L K+ (or mN)): direct sigmoid Emax (Hill) effect.
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 > Ergotamine stimulates coronary artery contraction in human isolated segments, with the response expressed as a percentage of the contraction elicited by 100 mmol/L K+. The paper reports an Emax of 20.5% K+ and an EC50 of 17 nmol/L, but does not specify the underlying mechanism (e.g., receptor subtype or signaling pathway) or kinetic rate parameters.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `MaassenVanDenBrink_1998`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998)
@@ -46,63 +45,25 @@ MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circula
 </details>
 
 
-## Exposure-response model
-
-`Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | 20.5 %K+ | — |
-| EC50 | 17 nmol/L | 1.7e-05 mol/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 10.25, `at_inf` = 20.5
-
-Deviations:
-
-- `defaulted_parameters` — E0, gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | the response rises, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-
-
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_modelica.zip" download>Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_fmi.zip" download>Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_matlab.zip" download>Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_matlab.zip</a> <span class="pk-size">(2.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_sbml.zip" download>Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_cellml.zip" download>Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_ergotamine/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac/Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_params.json` · controls `Ergotamine_MaassenVanDenBrink1998_PD_coronary_artery_contrac_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

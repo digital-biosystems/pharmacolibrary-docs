@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Healy_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tramadol — `Tramadol_Healy2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.64). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.64). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,17 +25,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:33:21.142974+00:00) predates the upstream re-run (2026-10-07 05:46:45.192016+00:00). Current validate status: `rejected`.
+
 ## Citation
 Healy P et al., Evaluation of the effect of CYP2D6 and…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.16201](https://doi.org/10.1111/bcp.16201)
 
 ## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Healy2025_reference" status="rejected" stale="false" population="neonatal patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tramadol" model-id="Tramadol_Healy2025_reference" status="rejected" stale="true" population="neonatal patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 9 extracted, plus 2 covariate effects.
+**Parameters:** 10 extracted, plus 6 covariate effects.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -46,11 +48,16 @@ Healy P et al., Evaluation of the effect of CYP2D6 and…, British journal of cl
 | QP | `Q30` · Q | 111 | L/h | 3.0833333333333335e-05 | L/h | 58.3 | exact (1.0) | bcp16201-tbl-0005:row5:col1, bcp16201-tbl-0005:row5:col2, bcp16201-tbl-0005:row5:col3 | — | not captured |
 | VP1 | `Q63` · V1 | 0.211 | L | 0.000211 | L | 62.2 | exact (1.0) | bcp16201-tbl-0005:row6:col1, bcp16201-tbl-0005:row6:col2, bcp16201-tbl-0005:row6:col3, bcp16201-tbl-0005:row24:col2 | — | not captured |
 | VP2 | `Q64` · V2 | 102 | L | 0.10200000000000001 | L | 73.6 | exact (1.0) | bcp16201-tbl-0005:row7:col1, bcp16201-tbl-0005:row7:col2, bcp16201-tbl-0005:row7:col3 | — | not captured |
-| CLMO (OCT1‐G2) | `Q22` · CL | 62.2 | L/h | 1.7277777777777778e-05 | L/h | 32 | exact (1.0) | bcp16201-tbl-0005:row10:col1, bcp16201-tbl-0005:row10:col2, bcp16201-tbl-0005:row10:col3 | — | not captured |
+| CLMO (OCT1‐G0) | `Q22` · CL | 57.7 | L/h | 1.6027777777777778e-05 | L/h | 35 | exact (1.0) | bcp16201-tbl-0005:row8:col1, bcp16201-tbl-0005:row8:col2, bcp16201-tbl-0005:row8:col3 | — | not captured |
 | QM | `Q30` · Q | 1.98 | L/h | 5.5e-07 | L/h | not captured | exact (1.0) | bcp16201-tbl-0005:row11:col1, bcp16201-tbl-0005:row11:col2, bcp16201-tbl-0005:row29:col2 | — | not captured |
 | VM1 | `Q63` · V1 | 1.45 | L | 0.00145 | L | not captured | exact (1.0) | bcp16201-tbl-0005:row12:col1, bcp16201-tbl-0005:row12:col2, bcp16201-tbl-0005:row30:col2 | — | not captured |
 | VM2 | `Q64` · V2 | 101 | L | 0.101 | L | 101 | exact (1.0) | bcp16201-tbl-0005:row13:col1, bcp16201-tbl-0005:row13:col2, bcp16201-tbl-0005:row13:col3 | — | not captured |
+| TM50 CLPM | `Q351` · CLm/F | 39.8 | L/h | 1.1055555555555554e-05 | L/h | not captured | llm_corrected (0.6) | bcp16201-tbl-0005:row19:col2 | — | not captured |
+| theta_q22_cyp2d6 | `Q900` · theta_q22_cyp2d6 | 28.7 | not captured | not captured | not captured | 11.7 | not captured (not captured) | bcp16201-tbl-0005:row1:col1, bcp16201-tbl-0005:row1:col2, bcp16201-tbl-0005:row1:col3 | — | not captured |
+| theta_q22_cyp2d6 | `Q900` · theta_q22_cyp2d6 | 36.3 | not captured | not captured | not captured | 7.8 | not captured (not captured) | bcp16201-tbl-0005:row2:col1, bcp16201-tbl-0005:row2:col2, bcp16201-tbl-0005:row2:col3 | — | not captured |
 | theta_q22_cyp2d6 | `Q900` · theta_q22_cyp2d6 | 43 | not captured | not captured | not captured | 7.9 | not captured (not captured) | bcp16201-tbl-0005:row3:col1, bcp16201-tbl-0005:row3:col2, bcp16201-tbl-0005:row3:col3 | — | not captured |
+| theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 5.08 | not captured | not captured | not captured | 35 | not captured (not captured) | bcp16201-tbl-0005:row14:col1, bcp16201-tbl-0005:row14:col2, bcp16201-tbl-0005:row14:col3 | — | not captured |
+| theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 11.4 | not captured | not captured | not captured | 35 | not captured (not captured) | bcp16201-tbl-0005:row15:col1, bcp16201-tbl-0005:row15:col2, bcp16201-tbl-0005:row15:col3 | — | not captured |
 | theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 14.7 | not captured | not captured | not captured | 32 | not captured (not captured) | bcp16201-tbl-0005:row16:col1, bcp16201-tbl-0005:row16:col2, bcp16201-tbl-0005:row16:col3 | — | not captured |
 | kₐ | `Q49` · kabs | 0.65 | 1/h | 0.00018055555555555557 | 1/h | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
 
@@ -67,10 +74,13 @@ Healy P et al., Evaluation of the effect of CYP2D6 and…, British journal of cl
 - table section residual_error: 'Proportional error (M1)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive error (M1)' routed out of structural estimates ('Residual variability')
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_unknown: 'OCT1‐G0' (CL)
+- unit_dimension_unknown: 'OCT1‐G1' (CL)
+- dropped duplicate Q22 ('CLMO (OCT1‐G1)', value '78.7') — already have one for this compound
 - unit_dimension_unknown: 'OCT1‐G2' (CL)
+- dropped duplicate Q22 ('CLMO (OCT1‐G2)', value '62.2') — already have one for this compound
 - dropped unlinked row (NIL): 'TM50 CLPO' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row17:col2'])
 - dropped PD-category row 'Hill coefficient CLPO' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp16201-tbl-0005:row18:col2'])
-- dropped unlinked row (NIL): 'TM50 CLPM' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row19:col2'])
 - dropped PD-category row 'Hill coefficient CLPM' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp16201-tbl-0005:row20:col2'])
 - dropped unlinked row (NIL): 'TM50 CLMO' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row21:col2'])
 - dropped PD-category row 'Hill coefficient CLMO' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp16201-tbl-0005:row22:col2'])
@@ -87,20 +97,23 @@ Healy P et al., Evaluation of the effect of CYP2D6 and…, British journal of cl
 - dropped duplicate Q22 ('CLPM (CYP3)', value '0.00878') — already have one for this compound
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CLPO' → L/h (from the popPK convention: 'CLPO is a clearance parameter (Total clearance following oral administration adjusted for bioavailability). In populatio')
-- implicit units: 'QP' → L/h (from the popPK convention: 'QP is an intercompartmental clearance. By convention, intercompartmental clearances are expressed in L/h. The value 111 ')
-- implicit units: 'VP1' → L (from the popPK convention: 'VP1 is a volume of distribution (central compartment). By convention, volumes are expressed in L. The value 0.211 is con')
-- implicit units: 'VP2' → L (from the popPK convention: 'VP2 is a volume of distribution (peripheral compartment). By convention, volumes are expressed in L. The value 102 is co')
-- implicit units: 'CLMO (OCT1‐G2)' → L/h (from the popPK convention: 'CLMO is a clearance parameter (Total clearance of M1). By convention, clearances are expressed in L/h. The value 62.2 is')
-- implicit units: 'QM' → L/h (from the popPK convention: 'QM is an intercompartmental clearance. By convention, intercompartmental clearances are expressed in L/h. The value 1.98')
-- implicit units: 'VM1' → L (from the popPK convention: 'VM1 is a volume of distribution (central compartment of M1). By convention, volumes are expressed in L. The value 1.45 i')
-- implicit units: 'VM2' → L (from the popPK convention: 'VM2 is a volume of distribution (peripheral compartment of M1). By convention, volumes are expressed in L. The value 101')
+- implicit units: 'CLPO' → L/h (from the popPK convention: 'Clearance parameters in population PK are conventionally expressed in L/h. The model uses allometric scaling with a stan')
+- implicit units: 'QP' → L/h (from the popPK convention: 'Intercompartmental clearance (QP) is conventionally expressed in L/h. A value of 111 is consistent with L/h for a pediat')
+- implicit units: 'VP1' → L (from the popPK convention: 'Volume of distribution (VP1) is conventionally expressed in L. The text states volumes are standardized to a body weight')
+- implicit units: 'VP2' → L (from the popPK convention: 'Volume of distribution (VP2) is conventionally expressed in L. The value 102 is consistent with L for a peripheral compa')
+- implicit units: 'CLMO (OCT1‐G0)' → L/h (from the popPK convention: 'Clearance parameters (CLMO) are conventionally expressed in L/h. The value 57.7 is consistent with L/h for metabolite cl')
+- implicit units: 'QM' → L/h (from the popPK convention: 'Intercompartmental clearance (QM) is conventionally expressed in L/h. A value of 1.98 is consistent with L/h for metabol')
+- implicit units: 'VM1' → L (from the paper text: 'The text states: "estimates for the central volume of distribution (VM1) were fixed to a value of 78.9 L/70 kg". While t')
+- implicit units: 'VM2' → L (from the popPK convention: 'Volume of distribution (VM2) is conventionally expressed in L. Consistent with other volume parameters in the model.')
+- implicit units: 'TM50 CLPM' → L/h (from the popPK convention: 'Metabolite formation clearance (CLPM) is conventionally expressed in L/h. The value 39.8 is consistent with L/h.')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tramadol
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [2]
-- row roles: 3 per-group rows of O-desmethyltramadol covariate_effect but 0 reference group(s) — kept as printed
-- row roles: per-genotype parameters — typical value from the reference group: CLPP (CYP2D6‐G3), CLMO (OCT1‐G2), CLPM (CYP2D6‐G3)
-- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 31 linked by role; re-tagged parent→O-desmethyltramadol ×29
+- row roles: 3 per-group rows of tramadol clearance but 0 reference group(s) — kept as printed
+- row roles: 3 per-group rows of O-desmethyltramadol clearance but 0 reference group(s) — kept as printed
+- row roles: 3 per-group rows of O-desmethyltramadol formation_clearance but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 49 linked by role; re-tagged parent→O-desmethyltramadol ×41
 - gap-filled Q49 (kabs) from Ekstrand_2026's review values (primary lacked it)
+- skipped review gap-fill of TLAG from Roulet_2021: its label names a different analyte ('actiona') — 'Onset of actiona Tramadol M1'
 
 **Extraction notes:**
 - LLM selected parameter table(s) 5
@@ -140,13 +153,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row10:col1', 'bcp16201-tbl-0005:row10:col2', 'bcp16201-tbl-0005:row10:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row8:col1', 'bcp16201-tbl-0005:row8:col2', 'bcp16201-tbl-0005:row8:col3'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row4:col1', 'bcp16201-tbl-0005:row4:col2', 'bcp16201-tbl-0005:row4:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row5:col1', 'bcp16201-tbl-0005:row5:col2', 'bcp16201-tbl-0005:row5:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row11:col1', 'bcp16201-tbl-0005:row11:col2', 'bcp16201-tbl-0005:row29:col2'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row19:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekstrand_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row6:col1', 'bcp16201-tbl-0005:row6:col2', 'bcp16201-tbl-0005:row6:col3', 'bcp16201-tbl-0005:row24:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row12:col1', 'bcp16201-tbl-0005:row12:col2', 'bcp16201-tbl-0005:row30:col2'] |
@@ -154,7 +168,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row13:col1', 'bcp16201-tbl-0005:row13:col2', 'bcp16201-tbl-0005:row13:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 62.2 L/h | not captured | not captured | ['bcp16201-tbl-0005:row10:col1', 'bcp16201-tbl-0005:row10:col2', 'bcp16201-tbl-0005:row10:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 57.7 L/h | not captured | not captured | ['bcp16201-tbl-0005:row8:col1', 'bcp16201-tbl-0005:row8:col2', 'bcp16201-tbl-0005:row8:col3'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 25.6 L/h | not captured | not captured | ['bcp16201-tbl-0005:row4:col1', 'bcp16201-tbl-0005:row4:col2', 'bcp16201-tbl-0005:row4:col3'] |
 | C9_phys_window_Q63 | fail | volume within physiological range | 0.211 L | not captured | not captured | ['bcp16201-tbl-0005:row6:col1', 'bcp16201-tbl-0005:row6:col2', 'bcp16201-tbl-0005:row6:col3', 'bcp16201-tbl-0005:row24:col2'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 1.45 L | not captured | not captured | ['bcp16201-tbl-0005:row12:col1', 'bcp16201-tbl-0005:row12:col2', 'bcp16201-tbl-0005:row30:col2'] |
@@ -184,4 +198,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:46 UTC</sub>

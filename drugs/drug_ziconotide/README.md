@@ -17,7 +17,7 @@ Ziconotide is a non-opioid painkiller used for severe chronic pain, including co
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 21:17 | 1:38 | 0/0/0 | 0/0/0 | 0/0/0 | 40,288/748 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/5 | 4/0 | 0 |
+| 2026-10-07 06:18 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 60,212/1,284 | einfracz / qwen3.8-27b | 4 | 2/5 | 4/0 | 0 |
 
 ## popPK records
 
@@ -53,12 +53,12 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wermeling_2003.pdf` | Wermeling D et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | popPK | 10 | not captured | [12817525](https://pubmed.ncbi.nlm.nih.gov/12817525) | The evidence explicitly reports quantitative non-compartmental PK parameters (half-life, clearance, volume of distribution) for ziconotide in CSF. |
-| `Yaksh_2012.pdf` | Yaksh TL et al., Pharmacokinetic analysis of ziconotide…, Neuromodulation : journal o… (2012) | popPK | 9 | [10.1111/j.1525-1403.2012.00479.x](https://doi.org/10.1111/j.1525-1403.2012.00479.x) | [22748108](https://pubmed.ncbi.nlm.nih.gov/22748108) | The paper reports quantitative pharmacokinetic parameters (half-lives, concentration ratios, and steady-state concentrations) for ziconotide in dogs, with specific numeric values provided in the text. |
-| `Manda_2016.pdf` | Manda P et al., Delivery of ziconotide to cerebrospinal…, Journal of controlled relea… (2016) | popPK | 8 | [10.1016/j.jconrel.2015.12.044](https://doi.org/10.1016/j.jconrel.2015.12.044) | [26732557](https://pubmed.ncbi.nlm.nih.gov/26732557) | The study reports quantitative pharmacokinetic parameters (elimination rate constants, Cmax, Tmax) for ziconotide in rat CSF, which are explicitly present in the text. |
+| `Manda_2016.pdf` | Manda P et al., Delivery of ziconotide to cerebrospinal…, Journal of controlled relea… (2016) | popPK | 10 | [10.1016/j.jconrel.2015.12.044](https://doi.org/10.1016/j.jconrel.2015.12.044) | [26732557](https://pubmed.ncbi.nlm.nih.gov/26732557) | The paper is a preclinical PK study in rats reporting specific numeric parameters (elimination rate constants, Cmax, Tmax) for ziconotide in CSF. |
+| `Wermeling_2003.pdf` | Wermeling D et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | popPK | 10 | not captured | [12817525](https://pubmed.ncbi.nlm.nih.gov/12817525) | The paper reports specific quantitative PK parameters for ziconotide (half-life, clearance, volume of distribution) in the abstract, derived from a clinical study. |
+| `Yaksh_2012.pdf` | Yaksh TL et al., Pharmacokinetic analysis of ziconotide…, Neuromodulation : journal o… (2012) | popPK | 10 | [10.1111/j.1525-1403.2012.00479.x](https://doi.org/10.1111/j.1525-1403.2012.00479.x) | [22748108](https://pubmed.ncbi.nlm.nih.gov/22748108) | The study reports quantitative pharmacokinetic parameters for ziconotide in dogs, including half-lives (0.14, 1.77, 2.47 hours) and concentration ratios, which are explicitly provided in the abstract. |
 | `Swensen_2014.pdf` | Swensen AM et al., Characterization of the triazine, T4, a…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.10.037](https://doi.org/10.1016/j.ejphar.2014.10.037) | [25446431](https://www.ncbi.nlm.nih.gov/pubmed/25446431) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-01T21:16:34.011492+00:00</sub>
+<sub>queue written 2026-10-07T06:18:52.010138+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,32 +66,32 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Abbadie_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and mechanism of action of TROX-1, with ziconotide mentioned only as a background comparator, and no pharmacokinetic parameters for ziconotide are reported. |
 | PD | Abbadie_2010 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of a new compound (TROX-1) and only mentions ziconotide qualitatively as a comparator without providing any exposure-response or dose-response data for ziconotide. |
-| popPK | Antunes_2020 | irrelevant | 0 | 0 | The study is a behavioral pharmacology trial in rats where ziconotide is used only as a comparator, and no pharmacokinetic parameters are reported. |
-| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of functional seafoods and marine bioactive compounds and does not contain any pharmacokinetic data or parameters for ziconotide. |
+| popPK | Antunes_2020 | irrelevant | 0 | 0 | The study evaluates the antinociceptive efficacy of a new spider-derived peptide using ziconotide only as a comparator, and explicitly states that pharmacokinetics were not determined. |
+| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of marine bioactive compounds and contains no data or parameters for the drug ziconotide. |
 | PD | Davran_2026 | not_relevant | 0 | 0 | The paper is a general review of marine bioactive compounds and does not contain specific pharmacodynamic modeling or numeric exposure-response data for ziconotide. |
 | popPK | Deer_2017 | irrelevant | 0 | 0 | The paper is a consensus guideline on intrathecal drug delivery safety and does not report quantitative pharmacokinetic parameters for ziconotide. |
 | PD | Deer_2017 | not_relevant | 1 | 0 | The paper is a consensus guideline and literature review regarding intrathecal drug delivery safety, not a primary study reporting specific pharmacodynamic or exposure-response data for ziconotide. |
 | popPK | Finley_2010 | irrelevant | 0 | 0 | The paper is a mechanistic/drug discovery study on small-molecule calcium channel antagonists where ziconotide is used only as a reference compound, with no pharmacokinetic parameters reported. |
 | PD | Finley_2010 | not_relevant | 0 | 0 | The paper focuses on the discovery of small-molecule Cav2.2 inhibitors using in vitro assays and does not report any pharmacodynamic or exposure-response data for ziconotide. |
-| popPK | Fong_2025 | irrelevant | 0 | 0 | The paper is an in-silico study focusing on montelukast binding to Cav3.1 channels, and ziconotide is only mentioned in the introduction as a background example of a calcium channel blocker without any pharmacokinetic data. |
+| popPK | Fong_2025 | irrelevant | 0 | 0 | The study is an in silico modeling study of montelukast targeting T-type calcium channels and does not report pharmacokinetic parameters for ziconotide. |
 | PD | Fong_2025 | not_relevant | 0 | 0 | The paper focuses on in silico docking and MCell simulations for montelukast targeting Cav3.1 channels; it does not report any pharmacodynamic or exposure-response data for ziconotide. |
-| popPK | Hamadou_2026 | irrelevant | 1 | 0 | The paper is a review of bioactive peptides where ziconotide is mentioned only as a clinical precedent/comparator, and no specific quantitative PK parameters for ziconotide are reported in the evidence. |
-| popPK | Hirasawa_2022 | irrelevant | 2 | 0 | The paper is a PBPK modeling study of CSF physiology using ziconotide only as one of several comparator molecules to validate the model, and no specific quantitative PK parameter values for ziconotide are reported in the provided text. |
+| popPK | Hamadou_2026 | irrelevant | 0 | 0 | The paper is a review of bioactive peptide pharmacology where ziconotide is cited only as a clinical precedent/comparator, with no original PK data reported for ziconotide itself. |
+| popPK | Hirasawa_2022 | irrelevant | 0 | 0 | The study is a PBPK modeling study in rats focusing on CSF flow dynamics and using sucrose as a marker, not a study of ziconotide's pharmacokinetics. |
 | PD | Hirasawa_2022 | not_relevant | 0 | 0 | The paper focuses on a physiologically based pharmacokinetic (PBPK) model for CSF flow and does not report any pharmacodynamic (PD) or exposure-response analysis for ziconotide. |
 | popPK | Hu_1999 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on analogues of ziconotide, reporting in vitro and in vivo efficacy (IC50, ED50) but no pharmacokinetic disposition parameters for ziconotide. |
 | PD | Hu_1999 | not_relevant | 3 | 2 | The paper reports IC50 and ED50 values for a novel analogue (compound 11), not for ziconotide, and does not provide a concentration-effect curve or PK/PD model for ziconotide. |
-| popPK | Jain_2000 | irrelevant | 0 | 0 | The text is a qualitative review of ziconotide's mechanism and clinical profile without reporting any quantitative pharmacokinetic parameters. |
-| popPK | Karri_2021 | irrelevant | 0 | 0 | The paper is a narrative review of combination intrathecal drug therapy strategies and does not report original quantitative pharmacokinetic parameters for ziconotide. |
+| popPK | Jain_2000 | irrelevant | 0 | 0 | The text is a qualitative review of intrathecal ziconotide that discusses mechanisms and clinical approval without reporting quantitative pharmacokinetic parameters. |
+| popPK | Karri_2021 | irrelevant | 1 | 0 | This is a narrative review of combination intrathecal drug therapy strategies and does not report original quantitative pharmacokinetic parameter values for ziconotide. |
 | PD | Karri_2021 | not_relevant | 1 | 0 | The paper is a narrative review of combination intrathecal drug therapy strategies and does not report specific numeric PD parameters or exposure-response curves for ziconotide. |
-| popPK | Klotz_2006 | irrelevant | 2 | 1 | The paper is a short review that mentions a single clearance value (0.38 ml/min) but lacks a compartmental model, volume of distribution, or other quantitative PK parameters required for population-PK extraction. |
+| popPK | Klotz_2006 | irrelevant | 4 | 3 | This is a short review that provides a single qualitative clearance value for ziconotide in the CSF but lacks a compartmental population-PK model, volume of distribution, or detailed quantitative disposition parameters. |
 | popPK | Kolosov_2011 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of leconotide (a different drug) and morphine, not the pharmacokinetics of ziconotide. |
-| popPK | Lin_2024 | irrelevant | 2 | 0 | The paper is a comprehensive review without original quantitative PK parameter values for ziconotide. |
+| popPK | Lin_2024 | irrelevant | 2 | 0 | This is a comprehensive review article summarizing the literature on ziconotide pharmacokinetics and does not present original quantitative parameter values in the provided evidence. |
 | popPK | Luo_2015 | irrelevant | 0 | 0 | The paper focuses on the characterization of a new conotoxin (GeXIVA) and only mentions ziconotide as a structural comparator, providing no pharmacokinetic parameters for ziconotide. |
 | PD | Luo_2015 | not_relevant | 0 | 0 | The paper focuses on the characterization of a new conotoxin (GeXIVA) and only mentions ziconotide as a structural comparison without providing any pharmacodynamic or exposure-response data for ziconotide. |
-| popPK | McDowell_2016 | irrelevant | 1 | 0 | The paper is a clinical review of dosing strategies and does not report original quantitative pharmacokinetic parameters (e.g., clearance, volume) for ziconotide. |
-| popPK | Pope_2013 | irrelevant | 1 | 0 | The paper is a clinical update and pharmacologic review that discusses ziconotide's pharmacokinetics qualitatively but does not provide original quantitative disposition parameters or numeric values in the provided evidence. |
+| popPK | McDowell_2016 | irrelevant | 1 | 0 | This is a clinical review of dosing and administration strategies for ziconotide that lacks original pharmacokinetic studies and specific quantitative disposition parameters (CL, V, half-life). |
+| popPK | Pope_2013 | irrelevant | 2 | 0 | This is a narrative review that discusses pharmacokinetics in general terms but does not present original quantitative disposition parameters or numeric values for ziconotide. |
 | PD | Pope_2013 | not_relevant | 2 | 1 | The text is a qualitative review summary that mentions pharmacodynamics and the therapeutic window but does not provide specific numeric PD parameters or concentration-effect data. |
-| popPK | Pope_2017 | irrelevant | 1 | 0 | The paper is a narrative review of intrathecal pharmacology without original quantitative PK parameter values for ziconotide. |
+| popPK | Pope_2017 | irrelevant | 0 | 0 | The paper is a narrative review summarizing existing literature and does not report original quantitative pharmacokinetic parameter values for ziconotide. |
 | popPK | Samii_1999 | irrelevant | 0 | 0 | The study is a mechanistic investigation of calcium accumulation following traumatic brain injury and does not report any pharmacokinetic parameters for ziconotide. |
 | popPK | Schroeder_2004 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on small molecule mimics of omega-conotoxins and does not report pharmacokinetic parameters for ziconotide. |
 | PD | Schroeder_2004 | not_relevant | 1 | 1 | The paper reports an IC50 for newly synthesized small molecule analogs, not for ziconotide, and does not provide a concentration-effect curve or population PD model for the drug of interest. |
@@ -106,9 +106,9 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Williams_2008 | not_relevant | 2 | 0 | The paper is a qualitative review that mentions a steep dose-response curve but does not provide numeric PD parameters or extractable concentration-effect data. |
 | popPK | Yang_2017 | irrelevant | 0 | 0 | The paper studies a novel conotoxin (TsIIIA) and uses ziconotide only as a comparator in an analgesic assay, reporting no pharmacokinetic parameters for ziconotide. |
 | PD | Yang_2017 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50) for a novel conotoxin (TsIIIA), not for ziconotide; ziconotide is only mentioned as a comparator in a qualitative statement. |
-| popPK | Yaseen_2026 | irrelevant | 0 | 0 | The paper is a general review of peptide therapeutics that mentions ziconotide only as an example of a venom-derived peptide, without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Yaseen_2026 | irrelevant | 0 | 0 | This is a review article on peptide therapeutics that mentions ziconotide only as an example of a venom-derived peptide, providing no original pharmacokinetic data or quantitative parameters. |
 | PD | Yaseen_2026 | not_relevant | 1 | 0 | The text is a general review of peptide therapeutics that mentions ziconotide only as an example of a venom-derived peptide, without providing any specific pharmacodynamic data, exposure-response analysis, or numeric parameters. |
-| popPK | Zhou_2024 | irrelevant | 0 | 0 | The paper focuses on the discovery of an EGFR inhibitor (CDDO-Me) for lung cancer and does not involve ziconotide or pharmacokinetic parameters. |
+| popPK | Zhou_2024 | irrelevant | 0 | 0 | The paper discusses the discovery of an EGFR inhibitor (CDDO-Me) for lung cancer and contains no data or mention of ziconotide pharmacokinetics. |
 | PD | Zhou_2024 | not_relevant | 0 | 0 | The paper investigates CDDO-Me, not ziconotide. |
 
 ---

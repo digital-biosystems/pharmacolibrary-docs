@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 20 mg oral (N07XX07)",
+ "model_id": "Fampridine_Renou2026_reference",
+ "molar_masses": {
+  "central.C": 0.0941145
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.1944444444444445e-08,
+  "F": 1.0,
+  "MM": 0.0941145,
+  "Tlag": 0.0,
+  "VdPerKg": 7.528571428571428e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "k12": 2.67235926628716e-05,
+  "k21": 5.7956104252400534e-05,
+  "ka": 0.00039166666666666663,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14293.98289770028
+ },
+ "reference_peaks": {
+  "central.C": 0.0005718988607372203
+ },
+ "stop_time": 518400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Reed_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Introna2026_reference&quot;,&quot;label&quot;:&quot;Introna_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Introna2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.255991+00:00) predates the upstream re-run (2026-10-03 13:15:36.623794+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.255991+00:00) predates the upstream re-run (2026-10-07 04:59:13.795078+00:00). Current validate status: `rejected`.
 
 ## Citation
 Reed RA et al., The pharmacokinetics and pharmacodynami…, Frontiers in pain research… (2024)
@@ -47,7 +47,7 @@ Reed RA et al., The pharmacokinetics and pharmacodynami…, Frontiers in pain re
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | tvAlpha (1/h) | `Q67` · λ1 | 17.8 | not captured | not captured | not captured | 34.8 | tv_prefix (0.95) | T2:row4:col1, T2:row4:col2 | — | 0.12 (None% RSE) |
-| tvBeta (1/h) | `Q47` · kel | 2.12 | 1/h | 0.0005888888888888889 | 1/h | 15.4 | tv_prefix (0.95) | T2:row5:col1, T2:row5:col2 | — | 0.004 (None% RSE) |
+| tvBeta (1/h) | `Q47` · kel | 2.12 | not captured | not captured | not captured | 15.4 | tv_prefix (0.95) | T2:row5:col1, T2:row5:col2 | — | 0.004 (None% RSE) |
 | t1/2α (h) | `Q59` · t1/2α | 0.039 | h | 140.4 | [h] | 34.8 | exact (1.0) | T2:row7:col1, T2:row7:col2 | — | not captured |
 | t1/2β (h) | `Q60` · t1/2β | 0.327 | h | 1177.2 | [h] | 15.4 | exact (1.0) | T2:row8:col1, T2:row8:col2 | — | not captured |
 | t1/2γ (h) | `Q89` · t1/2γ | 1.85 | h | 6660.0 | [h] | 12.5 | exact (1.0) | T2:row9:col1, T2:row9:col2 | — | not captured |
@@ -56,7 +56,7 @@ Reed RA et al., The pharmacokinetics and pharmacodynami…, Frontiers in pain re
 | V1 (L/kg) | `Q63` · V1 | 0.191 | L/kg | 0.01337 | [l] / [kg] | 17.1 | exact (1.0) | T2:row12:col1, T2:row12:col2 | — | not captured |
 | V2 (L/kg) | `Q64` · V2 | 0.185 | L/kg | 0.01295 | [l] / [kg] | 10.1 | exact (1.0) | T2:row13:col1, T2:row13:col2 | — | not captured |
 | V3 (L/kg) | `Q77` · V3 | 0.351 | L/kg | 0.024569999999999998 | [l] / [kg] | 21.3 | exact (1.0) | T2:row14:col1, T2:row14:col2 | — | not captured |
-| absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002777777777777778 | 1/h | not captured | review_gapfill (0.7) | Eleveld_2026:review | — | not captured |
+| t1pp ranged from | `Q83` · tlag | 15.0 | min | 900.0 | h | not captured | review_gapfill (0.7) | Andersen_1986:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -72,21 +72,40 @@ Reed RA et al., The pharmacokinetics and pharmacodynami…, Frontiers in pain re
 - table section iiv: 'Alpha' routed out of structural estimates ('Between subject variability (%CV)')
 - table section iiv: 'Beta' routed out of structural estimates ('Between subject variability (%CV)')
 - table section iiv: 'Gamma' routed out of structural estimates ('Between subject variability (%CV)')
+- column 'target dose(mg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'dose absorbed (mg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'tvA (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row1:col1', 'T2:row1:col2'])
 - dropped unlinked row (NIL): 'tvB (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row2:col1', 'T2:row2:col2'])
 - dropped unlinked row (NIL): 'tvC (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row3:col1', 'T2:row3:col2'])
 - dropped PD-category row 'tvGamma (1/h)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row6:col1', 'T2:row6:col2'])
-- dropped unlinked row (NIL): 'stdev0' — extend the ontology if this is a real PK parameter (source ['T2:row15:col1', 'T2:row15:col2'])
-- implicit units: 'tvAlpha (1/h)' — the LLM proposed '1/h', whose dimension does not fit Q67; left unset
-- implicit units: 'tvBeta (1/h)' → 1/h (from the popPK convention: 'The parameter is the elimination rate constant (terminal/beta phase). In population pharmacokinetics, first-order rate c')
+- routed 'stdev0' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'LDF' — extend the ontology if this is a real PK parameter (source ['Reed_2024_table_3:row0:col1', 'Reed_2024_table_3:row0:col2', 'Reed_2024_table_3:row0:col3'])
+- dropped unlinked row (NIL): 'MDF' — extend the ontology if this is a real PK parameter (source ['Reed_2024_table_3:row1:col1', 'Reed_2024_table_3:row1:col2', 'Reed_2024_table_3:row1:col3'])
+- dropped unlinked row (NIL): 'HDF' — extend the ontology if this is a real PK parameter (source ['Reed_2024_table_3:row2:col1', 'Reed_2024_table_3:row2:col2', 'Reed_2024_table_3:row2:col3'])
+- dropped value-less row: 'tvA'
+- dropped value-less row: 'tvB'
+- dropped value-less row: 'tvC'
+- dropped value-less row: 'tvalpha'
+- dropped value-less row: 'tvbeta'
+- dropped value-less row: 'tvgamma'
+- dropped value-less row: 'V1'
+- dropped value-less row: 'V2'
+- dropped value-less row: 'V3'
+- dropped value-less row: 'Vss'
+- dropped value-less row: 't1/2α'
+- dropped value-less row: 't1/2β'
+- dropped value-less row: 't1/2γ'
+- dropped value-less row: 'AUClast'
+- dropped value-less row: 'Cl'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell T2:row20:col1 = '1.48 × 10−6'
-- LLM selected parameter table(s) 2
+- companion parameter table 3 transcribed (9 record(s))
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -119,15 +138,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row11:col1', 'T2:row11:col2'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eleveld_2026:review'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['T2:row8:col1', 'T2:row8:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row12:col1', 'T2:row12:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row13:col1', 'T2:row13:col2'] |
 | C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['T2:row10:col1', 'T2:row10:col2'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row14:col1', 'T2:row14:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Andersen_1986:review'] |
 | C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2'] |
+| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2'] |
 | C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 722.4 | not captured | not captured | ['T2:row11:col1', 'T2:row11:col2'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
@@ -158,4 +177,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:59 UTC</sub>

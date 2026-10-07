@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;nalbuphine&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/&quot;},{&quot;label&quot;:&quot;Nie_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalbuphine_Nie2023_reference&quot;,&quot;label&quot;:&quot;Nie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Nalbuphine_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalbuphine_EudyByrne2023_reference&quot;,&quot;label&quot;:&quot;Eudy-Byrne_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_EudyByrne2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Gao2022_reference&quot;,&quot;label&quot;:&quot;Gao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Gao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Nie2023_estimates&quot;,&quot;label&quot;:&quot;Nie_2023_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Nie2023_final_model&quot;,&quot;label&quot;:&quot;Nie_2023_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nalbuphine — `Nalbuphine_Nie2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,14 +23,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:06.457265+00:00) predates the upstream re-run (2026-10-07 05:33:06.239706+00:00). Current validate status: `extracted`.
+
 ## Citation
 Nie X et al., Population pharmacokinetics of nalbuphi…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1130287](https://doi.org/10.3389/fphar.2023.1130287)
 
 ## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Nie2023_reference" status="curated_candidate" stale="false" population="adults undergoing general anesthesia surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Nie2023_reference" status="extracted" stale="true" population="adults undergoing general anesthesia surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
@@ -38,11 +40,11 @@ Nie X et al., Population pharmacokinetics of nalbuphi…, Frontiers in pharmacol
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 32.9 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row3:col1, T4:row3:col2 | — | not captured |
-| V1 | `Q63` · V1 | 32.5 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row4:col1, T4:row4:col2 | — | not captured |
-| Q | `Q30` · Q | 245 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row5:col1, T4:row5:col2 | — | not captured |
-| V2 | `Q64` · V2 | 83.5 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row6:col1, T4:row6:col2 | — | not captured |
-| KA (h-1) | `Q49` · kabs | 0.357 | h-1 | 9.916666666666666e-05 | 1/h | not captured | review_gapfill (0.7) | Zhu_2024:review | — | not captured |
+| CL | `Q22` · CL | 32.9 | L/h | 9.13888888888889e-06 | L/h | not captured | exact (1.0) | Nie_2023_table_2:row1:col1 | — | not captured |
+| V1 | `Q63` · V1 | 31 | L | 0.031 | L | not captured | exact (1.0) | Nie_2023_table_2:row2:col1 | — | not captured |
+| Q | `Q30` · Q | 261 | L/h | 7.25e-05 | L/h | not captured | exact (1.0) | Nie_2023_table_2:row3:col1 | — | not captured |
+| V2 | `Q64` · V2 | 85.9 | L | 0.0859 | L | not captured | exact (1.0) | Nie_2023_table_2:row4:col1 | — | not captured |
+| -KA (1/h) θ 5 First order absorption rate constant | `Q49` · kabs | 0.826 | 1/h | 0.00022944444444444444 | 1/h | not captured | review_gapfill (0.7) | Eudy-Byrne_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,16 +54,17 @@ Nie X et al., Population pharmacokinetics of nalbuphi…, Frontiers in pharmacol
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'HNF on Q' — extend the ontology if this is a real PK parameter (source ['T4:row7:col1', 'T4:row7:col2'])
-- dropped unlinked row (NIL): 'ωCL (%CV)' — extend the ontology if this is a real PK parameter (source ['T4:row9:col1', 'T4:row9:col2', 'T4:row9:col3'])
-- dropped unlinked row (NIL): 'ωV1 (%CV)' — extend the ontology if this is a real PK parameter (source ['T4:row10:col1', 'T4:row10:col2', 'T4:row10:col3'])
-- dropped unlinked row (NIL): 'ωQ (%CV)' — extend the ontology if this is a real PK parameter (source ['T4:row11:col1', 'T4:row11:col2', 'T4:row11:col3'])
-- dropped unlinked row (NIL): 'ωV2 (%CV)' — extend the ontology if this is a real PK parameter (source ['T4:row12:col1', 'T4:row12:col2', 'T4:row12:col3'])
+- table section iiv: 'ωCL (%CV)' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'ωV1 (%CV)' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'ωQ (%CV)' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'ωV2 (%CV)' routed out of structural estimates ('Between-subject variability')
+- implicit units: 'CL' → L/h (from the paper text: "The text states: 'The typical values of nalbuphine PK parameters from the final model were 32.9 L/h for CL...'")
+- implicit units: 'V1' → L (from the paper text: "The text states: '...32.9 L/h for CL, 32.5 L for V1...'")
+- implicit units: 'Q' → L/h (from the paper text: "The text states: '...32.9 L/h for CL, 32.5 L for V1, 245 L/h for Q...'")
+- implicit units: 'V2' → L (from the paper text: "The text states: '...245 L/h for Q and 83.5 L for V2.'")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nalbuphine
-- model-stage split: 'final model' is the final model of Nie_2023 (paper reports 2 stages: estimates, final model); same population, different model-building step
-- gap-filled Q49 (kabs) from Zhu_2024's review values (primary lacked it)
-- built from REVIEW reference values (Nie_2023) — secondary source
-- volume reported by review
+- population split: 'estimates' subgroup of Nie_2023 (paper reports 2 populations: estimates, final model)
+- gap-filled Q49 (kabs) from Eudy-Byrne_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - companion parameter table 2 transcribed (26 record(s))
@@ -98,13 +101,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zhu_2024:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row3:col1', 'T4:row3:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row5:col1', 'T4:row5:col2'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['T4:row4:col1', 'T4:row4:col2'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['T4:row6:col1', 'T4:row6:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.9 | not captured | not captured | ['T4:row3:col1', 'T4:row3:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nie_2023_table_2:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nie_2023_table_2:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eudy-Byrne_2023:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nie_2023_table_2:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nie_2023_table_2:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.9 | not captured | not captured | ['Nie_2023_table_2:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 32.9 L/h | not captured | not captured | ['Nie_2023_table_2:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 31 L | not captured | not captured | ['Nie_2023_table_2:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 85.9 L | not captured | not captured | ['Nie_2023_table_2:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -137,25 +143,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_modelica.zip" download>Nalbuphine_Nie2023_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_fmi.zip" download>Nalbuphine_Nie2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_fmi.zip" download>Nalbuphine_Nie2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_matlab.zip" download>Nalbuphine_Nie2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_matlab_simbio.zip" download>Nalbuphine_Nie2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_sbml.zip" download>Nalbuphine_Nie2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_cellml.zip" download>Nalbuphine_Nie2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference.svg" alt="Nalbuphine_Nie2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 15 mg infusion over 10 min, single dose. Dose in the paper: 15 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference/Nalbuphine_Nie2023_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Nalbuphine_Nie2023_reference_params.json` · controls `Nalbuphine_Nie2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-28 05:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:33 UTC</sub>

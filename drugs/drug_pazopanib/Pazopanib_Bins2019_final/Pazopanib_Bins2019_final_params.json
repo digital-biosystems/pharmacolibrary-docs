@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pazopanib_Bins2019_final",
+ "molar_masses": {
+  "central.C": 0.43751799999999996
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  200.0,
+  1000.0
+ ],
+ "parameters": {
+  "Cl": 7.777777777777778e-08,
+  "F": 466.0,
+  "MM": 0.43751799999999996,
+  "Tlag": 3492.0,
+  "VdPerKg": 3.4285714285714284e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "k12": 0.00011226851851851852,
+  "k21": 1.1088248742569729e-05,
+  "ka": 0.00010833333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 57845.29058116233
+ },
+ "reference_peaks": {
+  "central.C": 0.1444131412875728
+ },
+ "stop_time": 136800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

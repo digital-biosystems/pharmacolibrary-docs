@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pethidine&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/&quot;},{&quot;label&quot;:&quot;Groll_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pethidine_Chmelar1975_reference&quot;,&quot;label&quot;:&quot;Chmelar_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_Chmelar1975_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pethidine_HamamotoHardman2020_reference&quot;,&quot;label&quot;:&quot;Hamamoto-Hardman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_HamamotoHardman2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pethidine_Qiao1993_reference&quot;,&quot;label&quot;:&quot;Qiao_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_Qiao1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pethidine_Koska1981_reference&quot;,&quot;label&quot;:&quot;Koska_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_Koska1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pethidine_Morse2022_reference&quot;,&quot;label&quot;:&quot;Morse_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_Morse2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pethidine_Zhang2014_reference&quot;,&quot;label&quot;:&quot;Zhang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_Zhang2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pethidine_HamamotoHardman2020_reference&quot;,&quot;label&quot;:&quot;Hamamoto-Hardman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_HamamotoHardman2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pethidine_Zhang2014_reference&quot;,&quot;label&quot;:&quot;Zhang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pethidine/Pethidine_Zhang2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pethidine — `Pethidine_Groll2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,17 +27,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.486472+00:00) predates the upstream re-run (2026-10-07 05:33:45.147087+00:00). Current validate status: `rejected`.
+
 ## Citation
 Groll AH et al., Clinical Pharmacokinetics, Pharmacodyna…, Clinical infectious disease… (2019)
   ·  DOI: [10.1093/cid/ciz076](https://doi.org/10.1093/cid/ciz076)
 
 ## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Groll2019_reference" status="rejected" stale="false" population="" measured-compound="pethidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="pethidine" model-id="Pethidine_Groll2019_reference" status="rejected" stale="true" population="" measured-compound="pethidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -45,7 +47,7 @@ Groll AH et al., Clinical Pharmacokinetics, Pharmacodyna…, Clinical infectious
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Clearance | `Q22` · CL | 0.637 | L/h | 1.7694444444444443e-07 | L/h | not captured | review (0.7) | Groll_2019:review | — | not captured |
-| apparent volume of distribution of LAmB | `Q76` · V/F | 0.42 | L/kg | 0.029400000000000003 | L | not captured | review (0.7) | Groll_2019:review | — | not captured |
+| V1 | `Q63` · V1 | 18.6 | L | 0.018600000000000002 | L | not captured | review (0.7) | Groll_2019:review | — | not captured |
 | V2 | `Q64` · V2 | 49.2 | L | 0.0492 | L | not captured | review (0.7) | Groll_2019:review | — | not captured |
 
 <details class="legend">
@@ -94,13 +96,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Groll_2019:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Groll_2019:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Groll_2019:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Groll_2019:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.637 | not captured | not captured | ['Groll_2019:review'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.637 L/h | not captured | not captured | ['Groll_2019:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 18.6 L | not captured | not captured | ['Groll_2019:review'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 49.2 L | not captured | not captured | ['Groll_2019:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 29.4 L | not captured | not captured | ['Groll_2019:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -125,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 20:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:33 UTC</sub>

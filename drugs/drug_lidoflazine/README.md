@@ -18,7 +18,7 @@ Lidoflazine is a calcium channel blocker and vasodilator used for cardiovascular
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 19:01 | 12:07 | 0/0/0 | 0/0/0 | 0/0/0 | 1,714/152 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 05:01 | 1:06 | 0/0/0 | 0/0/0 | 0/0/0 | 32,351/707 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -48,20 +48,19 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **PubMed hits:** 27 matched, 26 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Katchman_2006.pdf` | Katchman AN et al., Comparative evaluation of HERG currents…, The Journal of pharmacology… (2006) | pd | 5 | [10.1124/jpet.105.093393](https://doi.org/10.1124/jpet.105.093393) | [16278312](https://www.ncbi.nlm.nih.gov/pubmed/16278312) | metadata signals extractable PD data (IC50) |
 | `Janis_1984.pdf` | Janis RA et al., Characteristics of the binding of [3H]n…, The Journal of pharmacology… (1984) | pd | 4 | not captured | [6208356](https://www.ncbi.nlm.nih.gov/pubmed/6208356) | metadata signals extractable PD data (IC50) |
 | `Pirovano_1990.pdf` | Pirovano IM et al., Inhibition of nucleoside uptake in huma…, European journal of pharmac… (1990) | pd | 4 | [10.1016/0922-4106(90)90040-5](https://doi.org/10.1016/0922-4106(90)90040-5) | [2073930](https://www.ncbi.nlm.nih.gov/pubmed/2073930) | metadata signals extractable PD data (IC50) |
-| `Reimão_2016.pdf` | Reimão JQ et al., Investigation of Calcium Channel Blocke…, Evidence-based complementar… (2016) | pd | 4 | [10.1155/2016/1523691](https://doi.org/10.1155/2016/1523691) | [26941821](https://www.ncbi.nlm.nih.gov/pubmed/26941821) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T19:01:18.042608+00:00</sub>
+<sub>queue written 2026-10-07T05:00:52.625742+00:00</sub>
 
 ## Screened and excluded
 
@@ -73,13 +72,13 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Griffiths_1997 | not_relevant | 0 | 0 | The paper reports molecular cloning and transporter characterization (Km, IC50 for inhibition) but does not report a pharmacodynamic exposure-response or dose-response relationship for lidoflazine in a clinical or physiological context. |
 | popPK | Hammond_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of nucleoside transport in tumor cells where lidoflazine derivatives are used only as inhibitors, not as the subject of pharmacokinetic analysis. |
 | PD | Hammond_1991 | not_relevant | 0 | 0 | The paper reports in vitro transporter inhibition kinetics (IC50) for a lidoflazine derivative, not a pharmacodynamic exposure-response or dose-response relationship for lidoflazine itself. |
-| popPK | Hugtenburg_1989 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of calcium antagonists on cardiac contractility, not a pharmacokinetic study, and reports no disposition parameters for lidoflazine. |
-| popPK | Ijzerman_1989 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on nucleoside transport inhibition and does not report pharmacokinetic parameters for lidoflazine. |
+| popPK | Hugtenburg_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium antagonists on cardiac contractility, not a pharmacokinetic study. |
+| popPK | Ijzerman_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of nucleoside transport inhibition and does not report pharmacokinetic disposition parameters for lidoflazine. |
 | popPK | Janis_1984 | irrelevant | 0 | 0 | no_text gate: only 173 chars of text extracted (&lt; 400) |
 | PD | Janis_1984 | not_relevant | 0 | 0 | The paper focuses on the binding characteristics of nitrendipine and other calcium channel antagonists to rabbit ventricular membranes, with no mention of lidoflazine or any pharmacodynamic/exposure-response analysis for it. |
 | popPK | Kang_2012 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel pharmacology, not a pharmacokinetic study, and lidoflazine is used only as a comparator antagonist. |
 | popPK | Katchman_2006 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel blockade and does not report any pharmacokinetic parameters for lidoflazine. |
-| popPK | Kenny_1990 | irrelevant | 0 | 0 | The paper is a pharmacological study on fluspirilene's calcium channel effects, and lidoflazine is only mentioned as a comparator in binding assays with no PK parameters reported. |
+| popPK | Kenny_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of fluspirilene's calcium channel antagonism, with lidoflazine mentioned only as a comparator in binding assays, and no pharmacokinetic parameters are reported. |
 | PD | Kenny_1990 | not_relevant | 0 | 0 | The paper focuses on fluspirilene; lidoflazine is only mentioned as a comparator in binding assays without specific numeric PD parameters or dose-response curves provided for it. |
 | popPK | Nakagawa_1986 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium entry blocking activity in dog coronary artery strips, not a pharmacokinetic study, and reports no disposition parameters for lidoflazine. |
 | popPK | Palmer_1993 | irrelevant | 0 | 0 | The study is a pharmacological evaluation of anticonvulsant properties in mice and reports no pharmacokinetic parameters for lidoflazine. |
@@ -93,8 +92,8 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ridley_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel blockade and does not report any pharmacokinetic parameters for lidoflazine. |
 | popPK | Singh_1986 | irrelevant | 0 | 0 | The paper is a review of the mechanism of action of calcium antagonists and does not report any quantitative pharmacokinetic parameters for lidoflazine. |
 | PD | Singh_1986 | not_relevant | 1 | 0 | The text is a qualitative review classifying calcium antagonists and mentions lidoflazine only as a Type IV agent without providing any numeric PD parameters or exposure-response data. |
-| popPK | Smith_1985 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel blockers in cat papillary muscles and does not report any pharmacokinetic parameters for lidoflazine. |
-| popPK | Thorn_1996 | irrelevant | 0 | 0 | The paper is a review of adenosine transporters where lidoflazine is mentioned only as a transport inhibitor, with no pharmacokinetic parameters reported. |
+| popPK | Smith_1985 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel blocking effects in cat papillary muscles, not a pharmacokinetic study. |
+| popPK | Thorn_1996 | irrelevant | 0 | 0 | The paper is a review of adenosine transporters and mentions lidoflazine only as a transport inhibitor, providing no pharmacokinetic parameters for lidoflazine. |
 | popPK | Zimmerman_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of superoxide anion generation, not a pharmacokinetic study, and reports no disposition parameters for lidoflazine. |
 
 ---

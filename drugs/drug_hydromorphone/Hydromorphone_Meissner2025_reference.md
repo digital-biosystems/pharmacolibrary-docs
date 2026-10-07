@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;hydromorphone&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/&quot;},{&quot;label&quot;:&quot;Meissner_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydromorphone_Wimbish2024_reference&quot;,&quot;label&quot;:&quot;Wimbish_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_COWS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 COWS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/pd_Walsh_2024_COWS.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/pd_Walsh_2024_VAS.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydromorphone_Balyan2020_reference&quot;,&quot;label&quot;:&quot;Balyan_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Balyan2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydromorphone_Guedes2008_reference&quot;,&quot;label&quot;:&quot;Guedes_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Guedes2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydromorphone_Meissner2025_reference&quot;,&quot;label&quot;:&quot;Meissner_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydromorphone_Wimbish2024_reference&quot;,&quot;label&quot;:&quot;Wimbish_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydromorphone — `Hydromorphone_Meissner2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,25 +25,27 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:13.441799+00:00) predates the upstream re-run (2026-10-07 05:08:29.452608+00:00). Current validate status: `extracted`.
+
 ## Citation
 Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025)
   ·  DOI: [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042)
 
 ## Model component
-<dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Meissner2025_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="morphine and hydromorphone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Meissner2025_reference" status="extracted" stale="true" population="healthy adults" measured-compound="hydromorphone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| MTT | `Q81` · MTT | 0.315 | not captured | not captured | not captured | not captured | exact (1.0) | tab_0:row4:col2, tab_0:row4:col3 | — | not captured |
+| s R | `Q900` · equation variable | 0.286 | h À1 | not captured | [1] / [h] | not captured | llm (0.6) | tab_0:row5:col2, tab_0:row5:col3, tab_0:row9:col2, tab_0:row9:col3 | — | not captured |
+| V 1 (L) | `Q63` · V1 | 13.6 | L | 0.0136 | L | not captured | space_fold (0.95) | Meissner_2025:other_prose | — | not captured |
 | CL 1 (L h À1 )* | `Q22` · CL | 83.8 | L h À1 | 2.3277777777777778e-05 | L/h | not captured | boundary (0.8) | Meissner_2025:other_prose | — | not captured |
-| central volume of distribution | `Q61` · V | 7 | % | not captured | % | not captured | boundary (0.8) | Meissner_2025:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,39 +55,36 @@ Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 's R,MOR' — extend the ontology if this is a real PK parameter (source ['tab_1:row11:col2', 'tab_1:row11:col3'])
-- dropped unlinked row (NIL): 's A,MOR' — extend the ontology if this is a real PK parameter (source ['tab_1:row12:col2', 'tab_1:row12:col3'])
-- dropped unlinked row (NIL): 's R,HMO' — extend the ontology if this is a real PK parameter (source ['tab_1:row13:col2', 'tab_1:row13:col3'])
-- dropped unlinked row (NIL): 's A,HMO' — extend the ontology if this is a real PK parameter (source ['tab_1:row14:col2', 'tab_1:row14:col3'])
+- dropped unlinked row (NIL): 's A' — extend the ontology if this is a real PK parameter (source ['tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row10:col2', 'tab_0:row10:col3'])
+- dropped value-less row: 's R,MOR'
+- dropped value-less row: 's A,MOR'
+- dropped value-less row: 's R,HMO'
+- dropped value-less row: 's A,HMO'
+- salvaged Q63 ('V 1 (L)'=13.6) from results prose — parameter table was unreadable
 - salvaged Q22 ('CL 1 (L h À1 )*'=83.8) from results prose — parameter table was unreadable
-- salvaged Q61 ('central volume of distribution'=7) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=morphine and hydromorphone
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hydromorphone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged morphine-glucuronides→morphine ×4, morphine-glucuronides→parent ×4
+- molar mass: no plausible PubChem entry for 'morphine-glucuronides' ('no full name in the paper') — left in mass units
+- molar mass: none found for 'morphine-glucuronides' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
-- unparsed cell tab_1:row0:col2 = 'u 2 (SEE)'
-- unparsed cell tab_1:row0:col4 = 'u 2 (SEE)'
-- unparsed cell tab_1:row1:col1 = '16.9 (1.5) 9 5.4 (0.4) 7 5.1 (0.5) 10 1.36 (0.05) 4 1.2 (0.1) 11 0.32 (0.03) 8'
-- unparsed cell tab_1:row1:col2 = 'e 0.009 (0.006) e e 0.05 (0.03) 0.09 (0.04)'
-- unparsed cell tab_1:row1:col3 = 'e 9 e e 21 31'
-- unparsed cell tab_1:row1:col4 = '0.020 (0.005) e 0.031 (0.008) 0.009 (0.006) e 0 FIX (morphine) 0.188 (0.080)'
-- unparsed cell tab_1:row1:col5 = '14 17 9 45'
-- unparsed cell tab_1:row3:col1 = '0.82 (0.07) 8'
-- unparsed cell tab_1:row4:col1 = '1.08 (0.07) 7'
-- unparsed cell tab_1:row5:col1 = '1.22 (0.08) 7'
-- unparsed cell tab_1:row6:col1 = '1.12 (0.03) 3'
-- unparsed cell tab_1:row7:col1 = '1.15 (0.09) 8'
-- unparsed cell tab_1:row8:col1 = '1.15 (0.06) 6'
-- unparsed cell tab_1:row9:col1 = '1*'
-- unparsed cell tab_1:row10:col1 = '0.93 (0.05) 5'
-- unparsed cell tab_1:row11:col1 = '0.070 (0.005) 7'
-- unparsed cell tab_1:row12:col1 = '0.092 (0.004) 4'
-- unparsed cell tab_1:row13:col1 = '0.09 (0.02) 18'
-- unparsed cell tab_1:row14:col1 = '0.044 (0.007) 16'
+- unparsed cell tab_0:row4:col1 = '0.614 (0.089) 14'
+- unparsed cell tab_0:row5:col1 = '0.057 (0.005) 9'
+- unparsed cell tab_0:row6:col1 = '0.510 (0.066)13'
+- unparsed cell tab_0:row9:col1 = '0.037 (0.004) 11'
+- unparsed cell tab_0:row10:col1 = '2.400 (0.364) 15'
+- unparsed cell Meissner_2025_table_2:row10:col1 = '0.070 (0.005) 7'
+- unparsed cell Meissner_2025_table_2:row11:col1 = '0.092 (0.004) 4'
+- unparsed cell Meissner_2025_table_2:row12:col1 = '0.09 (0.02) 18'
+- unparsed cell Meissner_2025_table_2:row13:col1 = '0.044 (0.007) 16'
+- companion parameter table 2 transcribed (8 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -119,13 +118,13 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | % | not captured | not captured | ['Meissner_2025:discussion_prose'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 83.8 | not captured | not captured | ['Meissner_2025:other_prose'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 83.8 L/h | not captured | not captured | ['Meissner_2025:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 13.6 L | not captured | not captured | ['Meissner_2025:other_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -139,15 +138,30 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_modelica.zip" download>Hydromorphone_Meissner2025_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_fmi.zip" download>Hydromorphone_Meissner2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_matlab.zip" download>Hydromorphone_Meissner2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_matlab_simbio.zip" download>Hydromorphone_Meissner2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_sbml.zip" download>Hydromorphone_Meissner2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_cellml.zip" download>Hydromorphone_Meissner2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference.svg" alt="Hydromorphone_Meissner2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 3.5 mg infusion over 10 min, single dose. Doses in the paper: 3.5, 7, 14 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference/Hydromorphone_Meissner2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Hydromorphone_Meissner2025_reference_params.json` · controls `Hydromorphone_Meissner2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:08 UTC</sub>

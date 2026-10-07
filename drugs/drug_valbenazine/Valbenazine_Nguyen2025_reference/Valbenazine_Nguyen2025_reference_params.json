@@ -1,0 +1,70 @@
+{
+ "dose_source": "paper",
+ "model_id": "Valbenazine_Nguyen2025_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0,
+  40.0,
+  60.0,
+  80.0
+ ],
+ "parameters": {
+  "Cl": 8.611111111111112e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0032285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "ka": 0.0023416666666666664,
+  "weight": 70.0
+ },
+ "pgx": {
+  "effects": {
+   "Poor": [
+    {
+     "compound": "[+]-α-HTBZ",
+     "parameter": "13 CLM (L/h)",
+     "reference": 31.0,
+     "scale": "linear_fractional",
+     "theta": -0.516,
+     "value": 18.5040051729051
+    }
+   ]
+  },
+  "gene": "genotype",
+  "labels": {
+   "Normal": "Normal metabolizer (reference)",
+   "Poor": "Poor metabolizer"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Poor",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Normal": {},
+   "Poor": {
+    "Cl": 5.140001436918083e-06
+   }
+  },
+  "record": "Nguyen_2025",
+  "reference": "Normal",
+  "sources": [
+   "Nguyen_2025 covariate theta_cl_poor_metabolizer"
+  ]
+ },
+ "reference_peak_times": {
+  "central.C": 2197.2636117352454
+ },
+ "reference_peaks": {
+  "central.C": 8.255690748872249e-05
+ },
+ "stop_time": 93600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Propofol_Eleveld2018_reference",
+ "molar_masses": {
+  "central.C": 0.1782707
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.9833333333333335e-05,
+  "F": 1.0,
+  "MM": 0.1782707,
+  "VdPerKg": 8.971428571428571e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.004644373673036093,
+  "k21": 0.0011437908496732025,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662072
+ },
+ "reference_peaks": {
+  "central.C": 3.9839768018817965e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

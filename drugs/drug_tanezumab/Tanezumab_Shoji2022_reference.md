@@ -4,7 +4,7 @@
 
 # tanezumab — `Tanezumab_Shoji2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,15 +24,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:39.555358+00:00) predates the upstream re-run (2026-10-07 06:17:50.394729+00:00). Current validate status: `rejected`.
+
 ## Citation
 Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259)
 
 ## Model component
-<dbs-pgx drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="false" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="true" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,30 +47,26 @@ Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of c
 | Vc | `Q63` · V1 | 2.6 | L | 0.0026000000000000003 | [l] | not captured | exact (1.0) | Shoji_2022:abstract | — | not captured |
 | Vp | `Q64` · V2 | 1.77 | L | 0.00177 | [l] | not captured | exact (1.0) | Shoji_2022:abstract | — | not captured |
 | KM | `Q1` · Km | 31.2 | μg L-1 | not captured | [µg] / [l] | not captured | exact (1.0) | Shoji_2022:abstract | — | not captured |
+| Cmax | `Q32` · Cmax | 8.9 | days | not captured | [d] | not captured | exact (1.0) | Shoji_2022:abstract, Shoji_2022:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Cmax | Q32 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'Cmax' → Q32 (unit '[time]' vs ontology '[mass] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'tanezumab clearance' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('tanezumab clearance', value None) — already have one for this compound
+- dropped unlinked row (NIL): 'tanezumab clearance' — extend the ontology if this is a real PK parameter (source ['Shoji_2022:abstract', 'Shoji_2022:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tanezumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'tanezumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Shoji_2022_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Shoji_2022_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -110,12 +108,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Shoji_2022:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shoji_2022:abstract'] |
-| C5_dimension_Q32 | fail | [time] | days | not captured | not captured | ['Shoji_2022:abstract'] |
+| C5_dimension_Q32 | fail | [time] | days | not captured | not captured | ['Shoji_2022:abstract', 'Shoji_2022:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shoji_2022:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shoji_2022:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.133 | not captured | not captured | ['Shoji_2022:abstract'] |
@@ -147,4 +145,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:17 UTC</sub>

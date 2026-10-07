@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Ashraf2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:54.228740+00:00) predates the upstream re-run (2026-10-07 04:56:23.257737+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Ashraf2024_reference" status="needs_review" stale="false" population="ambulatory surgical patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Ashraf2024_reference" status="needs_review" stale="true" population="ambulatory surgical patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 10 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,9 +44,10 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka,cod | `Q49` · kabs | 6.49 | 1/h | 0.001802777777777778 | 1/h | not captured | llm_confirmed (0.6) | Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
-| CLcod | `Q22` · CL | 59.6 | L/h | 1.6555555555555556e-05 | L/h | not captured | exact (1.0) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5 | — | not captured |
+| ka,cod | `Q95` · t1/2ka | 6.49 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
+| CLcod | `Q22` · CL | 59.6 | L/h | 1.6555555555555556e-05 | L/h | not captured | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5 | — | not captured |
 | Vc,cod | `Q63` · V1 | 231.2 | L | 0.2312 | L | not captured | llm_confirmed (0.6) | Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5 | — | not captured |
+| Fcod | `Q900` · equation variable | 0.4556 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3, Tab2:row5:col4, Tab2:row5:col5 | — | not captured |
 | CLmor | `Q22` · CL | 178.2 | L/h | 4.95e-05 | L/h | not captured | exact (1.0) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col4, Tab2:row6:col5 | — | not captured |
 | Vc,mor | `Q61` · V | 9.447 | L | 0.009446999999999999 | L | not captured | exact (1.0) | Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col4, Tab2:row7:col5 | — | not captured |
 | fmor | `Q45` · fm | 0.108 | not captured | not captured | not captured | not captured | exact (1.0) | Tab2:row8:col2, Tab2:row8:col3, Tab2:row8:col4, Tab2:row8:col5 | — | not captured |
@@ -52,6 +55,7 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 | Vc,C6G | `Q61` · V | 5.36 | L | 0.00536 | L | not captured | exact (1.0) | Tab2:row11:col2, Tab2:row11:col4, Tab2:row11:col5 | — | not captured |
 | CLM3G | `Q22` · CL | 4.67 | L/h | 1.297222222222222e-06 | L/h | not captured | exact (1.0) | Tab2:row12:col1, Tab2:row12:col2, Tab2:row12:col3, Tab2:row12:col4, Tab2:row12:col5 | — | not captured |
 | Vc,M3G | `Q61` · V | 4.17 | L | 0.00417 | L | not captured | exact (1.0) | Tab2:row13:col2, Tab2:row13:col3, Tab2:row13:col4, Tab2:row13:col5 | — | not captured |
+| ηVc,cod | `Q61` · V | 0.158 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row15:col2, Tab2:row15:col3, Tab2:row15:col4, Tab2:row15:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,40 +65,35 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'sir results' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'descriptiona' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- linked 'CLcod' as 'CL' → Q22 (CL) for  — compound marker removed
-- dropped unlinked row (NIL): 'Fcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col5'])
 - dropped unlinked row (NIL): 'GENeff' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col2', 'Tab2:row9:col3', 'Tab2:row9:col4', 'Tab2:row9:col5'])
-- dropped duplicate Q49 ('ηka,cod', value '2.96') — already have one for this compound
-- dropped duplicate Q63 ('ηVc,cod', value '0.158') — already have one for this compound
+- dropped unlinked row (NIL): 'ηka,cod' — extend the ontology if this is a real PK parameter (source ['Tab2:row14:col2', 'Tab2:row14:col3', 'Tab2:row14:col4', 'Tab2:row14:col5'])
 - dropped unlinked row (NIL): 'ηFcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row16:col2', 'Tab2:row16:col3', 'Tab2:row16:col4', 'Tab2:row16:col5'])
-- dropped unlinked row (NIL): 'ηCLmor' — extend the ontology if this is a real PK parameter (source ['Tab2:row17:col2', 'Tab2:row17:col3', 'Tab2:row17:col4', 'Tab2:row17:col5'])
+- relinked 'ηCLmor' Q370 → Q22 for morphine: a metabolite's own clearance is its elimination, not its formation
+- dropped duplicate Q22 ('ηCLmor', value '0.046') — already have one for this compound
 - dropped unlinked row (NIL): 'ηRmor' — extend the ontology if this is a real PK parameter (source ['Tab2:row18:col2', 'Tab2:row18:col3', 'Tab2:row18:col4', 'Tab2:row18:col5'])
 - dropped unlinked row (NIL): 'εcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row19:col2', 'Tab2:row19:col3', 'Tab2:row19:col4', 'Tab2:row19:col5'])
 - dropped unlinked row (NIL): 'εmor' — extend the ontology if this is a real PK parameter (source ['Tab2:row20:col2', 'Tab2:row20:col3', 'Tab2:row20:col4', 'Tab2:row20:col5'])
 - dropped unlinked row (NIL): 'εC6G' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col2', 'Tab2:row21:col3', 'Tab2:row21:col4', 'Tab2:row21:col5'])
 - dropped unlinked row (NIL): 'εM3G' — extend the ontology if this is a real PK parameter (source ['Tab2:row22:col2', 'Tab2:row22:col3', 'Tab2:row22:col4', 'Tab2:row22:col5'])
-- implicit units: 'ka,cod' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 6.49 is consis')
-- implicit units: 'CLcod' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 59.6 L/h is consistent with the high clearance of cod')
-- implicit units: 'Vc,cod' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 231.2 L is consistent with the large volume of di')
-- implicit units: 'CLmor' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 178.2 L/h is consistent with the high renal clearance')
-- implicit units: 'Vc,mor' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 9.447 L is consistent with the volume of distribu')
-- implicit units: 'CLC6G' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 4.28 L/h is consistent with the clearance of codeine-')
-- implicit units: 'Vc,C6G' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 5.36 L is consistent with the volume of distribut')
-- implicit units: 'CLM3G' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 4.67 L/h is consistent with the clearance of morphine')
-- implicit units: 'Vc,M3G' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 4.17 L is consistent with the volume of distribut')
+- implicit units: 'ka,cod' — the LLM proposed '1/h', whose dimension does not fit Q95; left unset
+- implicit units: 'CLcod' → L/h (from the popPK convention: 'Parameter CL is total clearance. The standard unit for clearance in population PK models, especially when concentrations')
+- implicit units: 'Vc,cod' → L (from the popPK convention: 'Parameter Vc is the volume of distribution of the central compartment. The standard unit is Liters (L). The value 231.2 ')
+- implicit units: 'CLmor' → L/h (from the popPK convention: 'Parameter CL is total clearance for morphine. Standard unit is L/h. The value 178.2 L/h is consistent with the high clea')
+- implicit units: 'Vc,mor' → L (from the popPK convention: 'Parameter Vc is the volume of distribution of the central compartment for morphine. Standard unit is Liters (L). The val')
+- implicit units: 'CLC6G' → L/h (from the popPK convention: 'Parameter CL is total clearance for codeine-6-glucuronide. Standard unit is L/h.')
+- implicit units: 'Vc,C6G' → L (from the popPK convention: 'Parameter Vc is the volume of distribution of the central compartment for codeine-6-glucuronide. Standard unit is Liters')
+- implicit units: 'CLM3G' → L/h (from the popPK convention: 'Parameter CL is total clearance for morphine-3-glucuronide. Standard unit is L/h.')
+- implicit units: 'Vc,M3G' → L (from the popPK convention: 'Parameter Vc is the volume of distribution of the central compartment for morphine-3-glucuronide. Standard unit is Liter')
 - metabolite volume: 'Vc,mor' Q63→Q61 for morphine — it is 1-compartment, so its central volume is its only volume
 - metabolite volume: 'Vc,C6G' Q63→Q61 for codeine-6-glucuronide — it is 1-compartment, so its central volume is its only volume
 - metabolite volume: 'Vc,M3G' Q63→Q61 for morphine-3-glucuronide — it is 1-compartment, so its central volume is its only volume
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CLcod); Q63 (Vc,cod); Q22 (CLmor); Q61 (Vc,mor); Q22 (CLC6G); Q61 (Vc,C6G); Q22 (CLM3G); Q61 (Vc,M3G)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=codeine
 - topology: 3 first-order transfer(s) across 4 compounds → general_linear
 - template fit: none — 3 metabolites — the templates hold two
-- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 41 linked by role; re-tagged codeine→parent ×32, codeine→morphine ×28, codeine→codeine-6-glucuronide ×12, codeine→morphine-3-glucuronide ×13
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 41 linked by role; re-tagged codeine→parent ×36, codeine→morphine ×24, codeine→codeine-6-glucuronide ×12, codeine→morphine-3-glucuronide ×13
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell Tab2:row2:col1 = 'Codeine absorption rate constant (h-1)'
@@ -142,18 +141,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col2', 'Tab2:row6:col3', 'Tab2:row6:col4', 'Tab2:row6:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row10:col1', 'Tab2:row10:col2', 'Tab2:row10:col3', 'Tab2:row10:col4', 'Tab2:row10:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row12:col1', 'Tab2:row12:col2', 'Tab2:row12:col3', 'Tab2:row12:col4', 'Tab2:row12:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Tab2:row2:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col4', 'Tab2:row7:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row11:col2', 'Tab2:row11:col4', 'Tab2:row11:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row13:col2', 'Tab2:row13:col3', 'Tab2:row13:col4', 'Tab2:row13:col5'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row15:col2', 'Tab2:row15:col3', 'Tab2:row15:col4', 'Tab2:row15:col5'] |
+| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4', 'Tab2:row2:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 59.6 | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 59.6 L/h | not captured | not captured | ['Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
@@ -196,14 +196,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_modelica.zip" download>Codeine_Ashraf2024_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_matlab.zip" download>Codeine_Ashraf2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_matlab_simbio.zip" download>Codeine_Ashraf2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_sbml.zip" download>Codeine_Ashraf2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_codeine/Codeine_Ashraf2024_reference/Codeine_Ashraf2024_reference_cellml.zip" download>Codeine_Ashraf2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -213,4 +213,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:56 UTC</sub>

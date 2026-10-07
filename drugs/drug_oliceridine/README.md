@@ -18,7 +18,7 @@ Oliceridine is an opioid painkiller (analgesic) used to treat pain. It is an app
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-28 06:09 | 15:23 | 0/0/0 | 0/4/2 | 0/0/1 | 388,115/5,521 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 2/10 | 9/0 | 0 |
+| 2026-10-07 05:38 | 0:52 | 0/0/0 | 1/1/1 | 0/0/1 | 130,379/3,584 | einfracz / qwen3.8-27b | 9 | 2/10 | 9/0 | 0 |
 
 ## popPK records
 
@@ -28,13 +28,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Song_2025_NA](drugs/drug_oliceridine/pd_Song_2025_NA.md) | Successful anesthesia ← oliceridine · categorical (graded) response model | — | Song CZ et al., Determination of the 90% Effective Dose…, Drug design, development an… (2025) | [10.2147/DDDT.S546489](https://doi.org/10.2147/DDDT.S546489) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2025_bronchoscopy_response](drugs/drug_oliceridine/pd_Wu_2025_bronchoscopy_response.md) | name ← oliceridine · categorical (graded) response model | — | Wu D et al., Estimation of ED50 and ED95 of Olicerid…, Drug design, development an… (2025) | [10.2147/DDDT.S535435](https://doi.org/10.2147/DDDT.S535435) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Buchwald_2023_Gprt](drugs/drug_oliceridine/pd_Buchwald_2023_Gprt.md) | G protein activation ← unknown · delayed effect through transit (transduction) compartments | — | Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Buchwald_2023_betaArr](drugs/drug_oliceridine/pd_Buchwald_2023_betaArr.md) | beta-arrestin2 recruitment ← unknown · delayed effect through transit (transduction) compartments | — | Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Pedersen_2020_unknown](drugs/drug_oliceridine/pd_Pedersen_2020_unknown.md) | unknown ← oliceridine · direct sigmoid Emax (Hill) effect | — | Pedersen MF et al., Biased agonism of clinically approved μ…, Neuropharmacology (2020) | [10.1016/j.neuropharm.2019.107718](https://doi.org/10.1016/j.neuropharm.2019.107718) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Simons_2023_V_E55](drugs/drug_oliceridine/pd_Simons_2023_V_E55.md) | V̇E55 ← oliceridine · inhibition effect | — | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2026_unknown](drugs/drug_oliceridine/pd_Zhao_2026_unknown.md) | cardiovascular response to tracheal intubation ← remifentanil · direct Emax (saturable) effect | — | Zhao Z et al., EC, Drug design, development an… (2026) | [10.2147/DDDT.S571007](https://doi.org/10.2147/DDDT.S571007) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Simons_2023_V_E55](drugs/drug_oliceridine/pd_Simons_2023_V_E55.md) | Ventilation at an extrapolated end-tidal Pco 2 of 55 mmHg ← oliceridine · direct sigmoid Emax (Hill) effect | — | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Song_2025_successful_anesthesia_absence_of_body_movement_during_cervical_dilation](drugs/drug_oliceridine/pd_Song_2025_successful_anesthesia_absence_of_body_movement_dur.md) | successful anesthesia (absence of body movement during cervical dilation) ← oliceridine · categorical (graded) response model | — | Song CZ et al., Determination of the 90% Effective Dose…, Drug design, development an… (2025) | [10.2147/DDDT.S546489](https://doi.org/10.2147/DDDT.S546489) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Buchwald_2023_Arr](drugs/drug_oliceridine/pd_Buchwald_2023_Arr.md) | β-arrestin2 recruitment ← oliceridine · delayed effect through transit (transduction) compartments | — | Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Buchwald_2023_Gprt](drugs/drug_oliceridine/pd_Buchwald_2023_Gprt.md) | G protein activation ← oliceridine · delayed effect through transit (transduction) compartments | — | Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065) |
 
 ## Pharmacogenomics (PGx)
 
@@ -78,34 +75,44 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Fossler_2018.pdf` | Fossler MJ et al., Oliceridine (TRV130), a Novel G Protein…, Journal of clinical pharmac… (2018) | popPK | 9 | [10.1002/jcph.1076](https://doi.org/10.1002/jcph.1076) | [29412458](https://pubmed.ncbi.nlm.nih.gov/29412458) | The paper describes a population PK/PD model for oliceridine in humans and reports one quantitative parameter (EC50) in the text, but the specific PK parameters (CL, V, Q, etc.) are not listed in the provided evidence. |
+| `Dahan_2020.pdf` | Dahan A et al., Benefit and Risk Evaluation of Biased μ…, Anesthesiology (2020) | popPK | 6 | [10.1097/ALN.0000000000003441](https://doi.org/10.1097/ALN.0000000000003441) | [32788558](https://pubmed.ncbi.nlm.nih.gov/32788558) | The study performs a population PK-PD analysis for oliceridine, but the extracted evidence only reports PD potency parameters (EC50, potency) rather than specific quantitative PK parameters (CL, V, ka) which are likely in the full text or supplementary material not provided. |
 | `Lu_2026.pdf` | Lu ZQ et al., Oliceridine Reduces the EC50 of Remifen…, Neuro endocrinology letters (2026) | pd | 5 | not captured | [42460910](https://www.ncbi.nlm.nih.gov/pubmed/42460910) | metadata signals extractable PD data (EC50) |
-| `Fossler_2018.pdf` | Fossler MJ et al., Oliceridine (TRV130), a Novel G Protein…, Journal of clinical pharmac… (2018) | pgx | 8 | [10.1002/jcph.1076](https://doi.org/10.1002/jcph.1076) | [29412458](https://www.ncbi.nlm.nih.gov/pubmed/29412458) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-08-28T06:02:47.397659+00:00</sub>
+<sub>queue written 2026-10-07T05:38:09.442016+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Buchwald_2023 | irrelevant | 0 | 0 | The paper is a mechanistic pharmacodynamic study using the SABRE receptor model to analyze oliceridine's signaling bias at the mu-opioid receptor, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Buchwald_2023 | irrelevant | 0 | 0 | The paper is a mechanistic study of receptor signaling (pharmacodynamics/biochemistry) using in vitro cell assays, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Dahan_2020 | relevant | 6 | 2 | The study performs a population PK-PD analysis for oliceridine, but the extracted evidence only reports PD potency parameters (EC50, potency) rather than specific quantitative PK parameters (CL, V, ka) which are likely in the full text or supplementary material not provided. |
+| popPK | Fossler_2018 | relevant | 9 | 2 | The paper describes a population PK/PD model for oliceridine in humans and reports one quantitative parameter (EC50) in the text, but the specific PK parameters (CL, V, Q, etc.) are not listed in the provided evidence. |
+| popPK | Fossler_2018_2 | irrelevant | 2 | 0 | The paper is a simulation study of study designs based on an existing PK/PD model and does not report new quantitative disposition parameter values (CL, V, etc.) for oliceridine in the provided evidence. |
+| PGx | Fossler_2018_2 | not_relevant | 5 | 2 | The paper describes simulations involving CYP2D6 poor metabolizers, but it is a model-based study, not a report of observed pharmacogenomic data with fitted quantitative effect sizes. |
 | popPK | Goudra_2021 | irrelevant | 1 | 0 | The paper is a review that discusses oliceridine's mechanism and clinical use but explicitly states that pharmacokinetic data (such as context-sensitive half-times) are not yet available for oliceridine, providing no quantitative PK parameters. |
 | PD | Goudra_2021 | not_relevant | 1 | 0 | The text is a qualitative review discussing the mechanism of action and general dose-dependent effects of oliceridine without providing specific numeric PD parameters or exposure-response data. |
-| popPK | Miao_2026 | irrelevant | 0 | 0 | The study reports ED50 values for analgesia (pharmacodynamics) but explicitly states that blood drug concentrations were not monitored, so no pharmacokinetic parameters are reported. |
+| popPK | Lu_2026 | irrelevant | 0 | 0 | The study is a clinical pharmacodynamic trial measuring remifentanil EC50 and hemodynamic responses, not a pharmacokinetic study reporting disposition parameters for oliceridine. |
+| popPK | Miao_2026 | irrelevant | 2 | 0 | The study reports pharmacodynamic ED50 values, not quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life). |
+| popPK | Moss_2023 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (neurocognitive and analgesic) and reports effect-site concentrations (C50), but does not report quantitative population pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life for oliceridine. |
 | popPK | Ok_2018 | relevant | 4 | 3 | The paper is a review that reports some quantitative PK parameters (half-life 1.6-2.7 h, clearance ~34 L/h) for oliceridine, but lacks a full compartmental or population PK model with volume of distribution or intercompartmental clearance. |
 | PD | Ok_2018 | not_relevant | 2 | 0 | The paper is a review article describing the mechanism of action and general pharmacodynamics of oliceridine without reporting specific numeric PD parameters or concentration-effect curves. |
 | popPK | Pedersen_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of receptor binding kinetics and biased agonism, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Simons_2023 | relevant | 10 | 0 | The paper is a population PK/PD study of oliceridine, but the specific numeric parameter estimates are located in Table 1, which is not included in the provided evidence. |
+| popPK | Simons_2023 | relevant | 10 | 2 | The paper describes a population pharmacokinetic-pharmacodynamic study for oliceridine and explicitly states that parameter estimates are in Table 1, but the table content is not included in the provided evidence. |
 | popPK | Song_2025 | irrelevant | 0 | 0 | The study is a pharmacodynamic dose-finding trial (ED90) for anesthesia efficacy and safety, not a pharmacokinetic study, and reports no disposition parameters (CL, V, t1/2, etc.) for oliceridine. |
-| popPK | Wallach_2023 | irrelevant | 0 | 0 | The paper is a mechanistic study on 5-HT2A receptor signaling and psychedelic potential, mentioning oliceridine only as a background example of a biased opioid agonist without reporting any pharmacokinetic parameters. |
+| popPK | Stahl_2022 | irrelevant | 0 | 0 | The paper is a mechanistic reanalysis of receptor signaling data (intrinsic efficacy and bias) in vitro, containing no pharmacokinetic parameters for oliceridine. |
+| popPK | Wallach_2023 | irrelevant | 0 | 0 | The study focuses on 5-HT2A receptor signaling and psychedelic potential in mice and does not involve oliceridine or report any pharmacokinetic parameters. |
 | PD | Wallach_2023 | not_relevant | 0 | 0 | The paper focuses on 5-HT2A receptor signaling and psychedelic potential of various ligands (e.g., 25N series, DOI, LSD) and does not mention or analyze oliceridine. |
 | popPK | Wu_2025 | irrelevant | 0 | 0 | The study reports pharmacodynamic parameters (ED50/ED95) for oliceridine, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Yang_2022 | irrelevant | 0 | 0 | The paper focuses on a novel compound (LPM3480392) and oliceridine is only used as a structural reference/comparator; no pharmacokinetic parameters for oliceridine are reported. |
 | popPK | Ye_2023 | irrelevant | 0 | 0 | The study evaluates the subacute toxicity and toxicokinetics of LPM3480392, not oliceridine, which is only mentioned as a comparator or lead compound. |
 | PD | Ye_2023 | not_relevant | 2 | 1 | The paper is a subacute toxicity study reporting qualitative dose-dependent adverse effects and PK parameters, but it does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Zhao_2026 | irrelevant | 0 | 0 | The study is a pharmacodynamic trial measuring the EC50 of remifentanil, not a pharmacokinetic study reporting disposition parameters for oliceridine. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The study is a pharmacodynamic trial measuring the EC50 of remifentanil, not a pharmacokinetic study reporting disposition parameters (CL, V, Q, ka) for oliceridine. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 63 chars of text extracted (&lt; 400) |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

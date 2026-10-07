@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 PD monthly migraine days&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 PD Monthly migraine days&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_2_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_2_modela&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# monthly migraine days — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# Monthly migraine days — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Atogepant (concentrations from the PK model of Schlachter_2026::phase_1_model) drives monthly migraine days (in counts/month): direct Emax (saturable) effect.
+**As extracted:** Atogepant (concentrations from the PK model of Schlachter_2026::phase_1_model) drives Monthly migraine days (in days): direct Emax (saturable) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -26,7 +26,7 @@
 - **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Schlachter L et al., Exposure-Response Modeling of Monthly M…, CPT: pharmacometrics & syst… (2026)
@@ -36,9 +36,9 @@ Schlachter L et al., Exposure-Response Modeling of Monthly M…, CPT: pharmacome
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Atogepant C min EC50 | `Q321` · not captured | 0.412 | nM | not captured | llm (not captured) | Schlachter_2026_2:pdv3 |
-| PD (effect) | Atogepant C min E max | `Q323` · not captured | 0.665 | not captured | not captured | llm (not captured) | Schlachter_2026_2:pdv3 |
-| PD (effect) | Placebo effect | `Q341` · not captured | 0.852 | not captured | not captured | llm (not captured) | Schlachter_2026_2:pdv3 |
-| PD (effect) | TEF50 | `Q338` · not captured | 0.407 | month | not captured | llm (not captured) | Schlachter_2026_2:pdv3 |
+| PD (effect) | Atogepant C min E max | `Q323` · not captured | 0.665 | not captured | not captured | direction (not captured) | Schlachter_2026_2:pdv3 |
+| PD (effect) | Placebo effect | `Q324` · not captured | 0.852 | not captured | not captured | llm (not captured) | Schlachter_2026_2:pdv3 |
+| model term | TEF50 | `Q900` · not captured | 0.407 | month | not captured | llm (not captured) | Schlachter_2026_2:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,16 +52,16 @@ Schlachter L et al., Exposure-Response Modeling of Monthly M…, CPT: pharmacome
 
 | parameter | value (paper units) | SI |
 |---|---|---|
-| E0 | 0 | — |
-| Emax | -0.665 counts/month | -2.529e-07 1/s |
+| E0 | 0.852 days | 7.361e+04 s |
+| Emax | -0.665 days | -5.746e+04 s |
 | EC50 | 0.412 nM | — |
 | gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -1.264e-07, `at_inf` = -2.529e-07
+Closed-form check points (response, SI): `at_0` = 7.361e+04, `at_EC50` = 4.488e+04, `at_inf` = 1.616e+04
 
 Deviations:
 
-- `defaulted_parameters` — E0, gamma
+- `defaulted_parameters` — gamma
 - `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 - `pd_binding_exposure_unit_unresolved` — 'nM' — the x axis is in the paper's unit, not SI
 
@@ -76,11 +76,11 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.05%) |
 | `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
 
 Advisory:
 
-- defaulted: E0 — a row the paper has and the record lacks
+- defaulted: gamma (convention)
 - exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
@@ -90,11 +90,11 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_modelica.zip" download>Atogepant_Schlachter2026v2_PD_mmd_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_fmi.zip" download>Atogepant_Schlachter2026v2_PD_mmd_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_modelica.zip" download>Atogepant_Schlachter2026v2_PD_mmd_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_fmi.zip" download>Atogepant_Schlachter2026v2_PD_mmd_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_matlab.zip" download>Atogepant_Schlachter2026v2_PD_mmd_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_sbml.zip" download>Atogepant_Schlachter2026v2_PD_mmd_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_sbml.zip" download>Atogepant_Schlachter2026v2_PD_mmd_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026v2_PD_mmd/Atogepant_Schlachter2026v2_PD_mmd_cellml.zip" download>Atogepant_Schlachter2026v2_PD_mmd_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>

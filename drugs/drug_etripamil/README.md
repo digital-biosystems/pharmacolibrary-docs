@@ -18,7 +18,7 @@ Etripamil is a phenylalkylamine calcium channel blocker, a drug class used for h
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 18:29 | 2:37 | 0/0/0 | 0/0/0 | 0/0/0 | 1,436/152 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/0 | 0/0 | 0 |
+| 2026-10-07 04:19 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 20,810/228 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -62,20 +62,19 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ascah_2025.pdf` | Ascah A et al., Cardiovascular and Pharmacokinetic Prof…, International journal of to… (2025) | popPK | 8 | [10.1177/10915818251327963](https://doi.org/10.1177/10915818251327963) | [40166953](https://pubmed.ncbi.nlm.nih.gov/40166953) | The study reports quantitative PK parameters (AUC, Cmax, half-life) for etripamil in cynomolgus monkeys, though specific clearance and volume values are not explicitly listed in the text. |
-| `Ip_2024.pdf` | Ip JE et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacology in dr… (2024) | popPK | 8 | [10.1002/cpdd.1383](https://doi.org/10.1002/cpdd.1383) | [38315144](https://pubmed.ncbi.nlm.nih.gov/38315144) | The paper reports PK parameters for etripamil, but the evidence only provides qualitative descriptions and a range for half-life, lacking specific numeric values for clearance, volume, or absorption rate constants. |
+| `Ip_2024.pdf` | Ip JE et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacology in dr… (2024) | popPK | 9 | [10.1002/cpdd.1383](https://doi.org/10.1002/cpdd.1383) | [38315144](https://pubmed.ncbi.nlm.nih.gov/38315144) | The paper reports non-compartmental PK parameters for etripamil in humans, including half-life and Tmax, but specific values for clearance (CL) and volume of distribution (V) are not explicitly listed in the provided abstract text. |
 
-<sub>queue written 2026-09-29T18:29:23.886795+00:00</sub>
+<sub>queue written 2026-10-07T04:18:49.344259+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ip_2024 | relevant | 8 | 2 | The paper reports PK parameters for etripamil, but the evidence only provides qualitative descriptions and a range for half-life, lacking specific numeric values for clearance, volume, or absorption rate constants. |
+| popPK | Ip_2024 | relevant | 9 | 4 | The paper reports non-compartmental PK parameters for etripamil in humans, including half-life and Tmax, but specific values for clearance (CL) and volume of distribution (V) are not explicitly listed in the provided abstract text. |
 | popPK | Stambler_2022 | irrelevant | 2 | 0 | The paper is a clinical trial protocol/summary for etripamil efficacy in PSVT and lacks quantitative pharmacokinetic parameters (CL, V, Q, ka) or compartmental models. |
 | PD | Stambler_2022 | not_relevant | 0 | 0 | The paper is a study design protocol for a Phase 3 clinical trial and does not report any pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
 | popPK | unknown_2026 | irrelevant | 0 | 0 | no_text gate: only 77 chars of text extracted (&lt; 400) |

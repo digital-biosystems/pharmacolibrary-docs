@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026 \u00b7 phase_1_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_2_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_2_modela&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atogepant — `Atogepant_Schlachter2026_phase_1_model`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,31 +27,34 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:13.729055+00:00) predates the upstream re-run (2026-10-07 06:23:55.690380+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
 
 ## Model component
-<dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_1_model" status="model_quarantined" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_1_model" status="needs_review" stale="true" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted, plus 2 covariate effects.
+**Parameters:** 8 extracted, plus 2 covariate effects.
 
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant [ka (/h)] | `Q49` · kabs | 2.44 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row2:col1 | — | not captured |
-| Apparent clearance healthy participants [CL/F (L/h)] | `Q27` · CL/F | 19.82 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row4:col1 | — | not captured |
-| Apparent central volume of distribution [V1/F (L)] | `Q290` · V1/F | 73.52 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row6:col1 | — | not captured |
-| Apparent first intercompartmental clearance [Q/F (L/h)] | `Q69` · Q/F | 2.75 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row7:col1 | — | not captured |
-| Apparent first peripheral volume of distribution [V2/F (L)] | `Q82` · V2/F | 47.97 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row8:col1 | — | not captured |
-| Lag time [ALAG (h)] | `Q83` · tlag | 0.30 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row11:col1 | — | not captured |
+| Absorption rate constant [ka (/h)] | `Q49` · kabs | 2.44 | 1/h | 0.0006777777777777778 | 1/h | not captured | boundary_llm_dim_refused (0.8) | Tab2:row2:col1 | — | not captured |
+| Apparent clearance healthy participants [CL/F (L/h)] | `Q27` · CL/F | 19.82 | L/h | 5.5055555555555555e-06 | L/h | not captured | llm_confirmed (0.6) | Tab2:row4:col1 | — | not captured |
+| Apparent central volume of distribution [V1/F (L)] | `Q290` · V1/F | 73.52 | L | 0.07352 | L | not captured | llm_confirmed (0.6) | Tab2:row6:col1 | — | not captured |
+| Apparent first intercompartmental clearance [Q/F (L/h)] | `Q69` · Q/F | 2.75 | L/h | 7.638888888888888e-07 | L/h | not captured | llm_corrected (0.6) | Tab2:row7:col1 | — | not captured |
+| Apparent first peripheral volume of distribution [V2/F (L)] | `Q64` · V2 | 47.97 | L | 0.04797 | L | not captured | boundary_compartment (0.9) | Tab2:row8:col1 | — | not captured |
+| Lag time [ALAG (h)] | `Q83` · tlag | 0.30 | h | 1080.0 | h | not captured | llm_confirmed (0.6) | Tab2:row11:col1 | — | not captured |
 | female_sex_on_cl_f | `Q900` · female_sex_on_cl_f | -0.19 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row12:col1 | — | not captured |
 | Famotidine pre-treatment on Frel | `Q87` · Frel | -0.15 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row13:col1 | — | not captured |
+| Famotidine pre-treatment on ka | `Q95` · t1/2ka | -0.51 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row15:col1 | — | not captured |
 | theta_kabs_weight_power | `Q900` · theta_kabs_weight_power | -0.41 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row34:col1 | — | not captured |
 
 <details class="legend">
@@ -68,7 +71,12 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 
 **Interpretation flags:**
 - covariate level 'Female sex on CL/F' → Q900:female_sex_on_cl_f = -0.19 (linear_fractional on Q27)
-- dropped duplicate Q49 ('Famotidine pre-treatment on ka', value '-0.51') — already have one for this compound
+- implicit units: 'Absorption rate constant [ka (/h)]' → 1/h (from the paper text: "The paper states 'derived first-order absorption rate constant (ka) was 2.48/h' and defines the relationship 'ka = Fk0/[")
+- implicit units: 'Apparent clearance healthy participants [CL/F (L/h)]' → L/h (from the paper text: "The paper explicitly states 'CL/F ... was 22.9 L/h in healthy participants' and the model equation block shows 'CL/F = .")
+- implicit units: 'Apparent central volume of distribution [V1/F (L)]' → L (from the paper text: "The paper explicitly states 'The apparent central volume of distribution (V1/F) was 86.1 L'.")
+- implicit units: 'Apparent first intercompartmental clearance [Q/F (L/h)]' → L/h (from the popPK convention: 'Intercompartmental clearance (Q) is a flow rate parameter. In population PK, it is standardly expressed in L/h, and the ')
+- implicit units: 'Apparent first peripheral volume of distribution [V2/F (L)]' → L (from the popPK convention: 'Volume of distribution (V) is a volumetric parameter. In population PK, it is standardly expressed in L, and the value 4')
+- implicit units: 'Lag time [ALAG (h)]' → h (from the paper text: "The paper explicitly states 'lengthened absorption lag time from 0.276 to 0.46 h'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atogepant
 - bound model equation to Q40 (Fab): F = 86.1 * (bodyweight/76.8)^
 - Q40 (Fab) is equation-defined: value moved to equation-variable 'F'; equation kept verbatim
@@ -83,7 +91,6 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 - unparsed cell Tab2:row32:col1 = '−0.44/−0.42'
 - unparsed cell Tab2:row32:col5 = '(−0.507 to −0.198)'
 - LLM selected parameter table(s) 2
-- LLM region Schlachter_2026:other_prose: no JSON records returned
 - captured model equation F = 86.1 * (bodyweight/76.8)^
 
 ## Validation
@@ -118,18 +125,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1'] |
-| C5_unit_missing_Q290 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1'] |
-| C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col1'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Tab2:row11:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row11:col1'] |
+| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['Tab2:row15:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 19.8 L/h | not captured | not captured | ['Tab2:row4:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 73.5 L | not captured | not captured | ['Tab2:row6:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 48 L | not captured | not captured | ['Tab2:row8:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -179,4 +190,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:23 UTC</sub>

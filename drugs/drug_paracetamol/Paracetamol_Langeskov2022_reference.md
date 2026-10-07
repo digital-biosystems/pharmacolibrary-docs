@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Langeskov_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Langeskov2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,29 +25,35 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:09.771258+00:00) predates the upstream re-run (2026-10-07 06:04:56.733321+00:00). Current validate status: `rejected`.
+
 ## Citation
 Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology research & per… (2022)
   ·  DOI: [10.1002/prp2.962](https://doi.org/10.1002/prp2.962)
 
 ## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Langeskov2022_reference" status="needs_review" stale="false" population="healthy obese adults" measured-compound="paracetamol" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="paracetamol" model-id="Paracetamol_Langeskov2022_reference" status="rejected" stale="true" population="healthy obese adults" measured-compound="paracetamol" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (h−1) (Placebo) | `Q49` · kabs | 9.4 | 1/h | 0.0026111111111111114 | 1/h | not captured | space_fold (0.95) | prp2962-tbl-0002:row1:col1 | — | 0.514 (None% RSE) |
-| V1/F (L) | `Q290` · V1/F | 48.5 | L | 0.0485 | [l] | not captured | exact (1.0) | prp2962-tbl-0002:row3:col1 | — | 0.270 (None% RSE) |
-| Cl/F (L/h) | `Q27` · CL/F | 25.9 | L/h | 7.194444444444444e-06 | [l] / [h] | not captured | exact (1.0) | prp2962-tbl-0002:row5:col1 | — | 0.0606 (None% RSE) |
-| V2/F (L) | `Q82` · V2/F | 55.4 | L | 0.0554 | [l] | not captured | exact (1.0) | prp2962-tbl-0002:row6:col1 | — | 0.0703 (None% RSE) |
-| Cl2/F (L/h) | `Q69` · Q/F | 199 | L/h | 5.5277777777777783e-05 | [l] / [h] | not captured | special_case (0.95) | prp2962-tbl-0002:row7:col1 | — | not captured |
-| Tlag (h) | `Q83` · tlag | 0.16 | h | 576.0 | [h] | not captured | exact (1.0) | prp2962-tbl-0002:row8:col1 | — | 0.0586 (None% RSE) |
+| ka (h−1) (Placebo) | `Q49` · kabs | 9.4 | 1/h | 0.0026111111111111114 | 1/h | not captured | space_fold (0.95) | prp2962-tbl-0003:row1:col1, Langeskov_2022_table_2:row0:col1 | — | 2.03 (None% RSE) |
+| ktr (h−1) (Placebo) | `Q306` · ktr | 7.28 | 1/h | 0.002022222222222222 | 1/h | not captured | space_fold (0.95) | prp2962-tbl-0003:row3:col1 | — | 1.82 (None% RSE) |
+| V1/F (L) a | `Q290` · V1/F | 1843 | Units | not captured | [units] | not captured | llm_confirmed (0.6) | prp2962-tbl-0003:row5:col1 | — | 0.625 (None% RSE) |
+| Cl/F (L/h) a | `Q27` · CL/F | 620 | Units | not captured | [units] | not captured | llm_confirmed (0.6) | prp2962-tbl-0003:row6:col1 | — | 0.151 (None% RSE) |
+| V2/F(L) a | `Q82` · V2/F | 4184 | Units | not captured | [units] | not captured | llm_confirmed (0.6) | prp2962-tbl-0003:row7:col1 | — | 0.111 (None% RSE) |
+| Cl2/F (L/h) a | `Q80` · Q2/F | 873 | Units | not captured | [units] | not captured | llm (0.6) | prp2962-tbl-0003:row8:col1 | — | not captured |
+| Cl2/F (L/h) | `Q69` · Q/F | 199 | L/h | 5.5277777777777783e-05 | [l] / [h] | not captured | special_case (0.95) | Langeskov_2022_table_2:row6:col1 | — | not captured |
+| Tlag (h) | `Q83` · tlag | 0.16 | h | 576.0 | [h] | not captured | exact (1.0) | Langeskov_2022_table_2:row7:col1 | — | 0.0586 (None% RSE) |
+| Θkacovariate | `Q900` · Θkacovariate | 0.525 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| Θktrcovariate | `Q900` · Θktrcovariate | 0.791 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,10 +62,13 @@ Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology re
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
+- table section iiv: 'ω2 Ka' routed out of structural estimates ('Between subject variability (ω2)')
+- table section iiv: 'ω2 Ktr' routed out of structural estimates ('Between subject variability (ω2)')
+- table section iiv: 'ω2 V1/F' routed out of structural estimates ('Between subject variability (ω2)')
+- table section iiv: 'ω2 Cl/f' routed out of structural estimates ('Between subject variability (ω2)')
+- table section iiv: 'ω2 V2/F' routed out of structural estimates ('Between subject variability (ω2)')
+- table section iiv: 'Residual unexplained variability (Ceps)' routed out of structural estimates ('Between subject variability (ω2)')
 - table section iiv: 'ω2 Ka' routed out of structural estimates ('Between subject variablity (ω2)')
 - table section iiv: 'ω2 V1/F' routed out of structural estimates ('Between subject variablity (ω2)')
 - table section iiv: 'ω2 Cl/f' routed out of structural estimates ('Between subject variablity (ω2)')
@@ -67,34 +76,66 @@ Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology re
 - table section iiv: 'ω2 Tlag' routed out of structural estimates ('Between subject variablity (ω2)')
 - table section iiv: 'Residual unexplained variability (Ceps)' routed out of structural estimates ('Between subject variablity (ω2)')
 - unit_dimension_unknown: 'Placebo' (kabs)
-- routed 'Θkacovariate' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- unit_dimension_mismatch: 'ΘV1/Fcovariate' → Q290 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q290 ('ΘV1/Fcovariate', value '0.0312') — already have one for this compound
-- implicit units: 'ka (h−1) (Placebo)' → 1/h (from the paper text: "The paper text explicitly states the unit for the absorption rate constant in the discussion of previous findings: 'The ")
+- kept covariate coefficient Θkacovariate=0.525 (covariate kacovariate) — not an ontology parameter
+- unit_dimension_unknown: 'Placebo' (ktr)
+- kept covariate coefficient Θktrcovariate=0.791 (covariate ktrcovariate) — not an ontology parameter
+- unit_dimension_mismatch: 'V1/F (L) a' → Q290 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Cl/F (L/h) a' → Q27 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'V2/F(L) a' → Q82 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Cl2/F (L/h) a' → Q80 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q290 ('V1/F (L)', value '48.5') — already have one for this compound
+- routed 'ΘV1/Fcovariate' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- dropped duplicate Q27 ('Cl/F (L/h)', value '25.9') — already have one for this compound
+- dropped duplicate Q82 ('V2/F (L)', value '55.4') — already have one for this compound
+- implicit units: 'ka (h−1) (Placebo)' → 1/h (from the popPK convention: "The paper states that ka is the absorption rate constant and compares its value to '4.33 h-1' and '5.7 h-1' in the text,")
+- implicit units: 'ktr (h−1) (Placebo)' → 1/h (from the popPK convention: "The paper states that ktr is a first-order transit rate constant and compares its value to '5.7 h-1' (ka) and implies si")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=paracetamol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
-- unparsed cell prp2962-tbl-0002:row1:col3 = '11.8 [6.2–27.8]'
-- unparsed cell prp2962-tbl-0002:row2:col3 = '0.534 [0.298–0.745]'
-- unparsed cell prp2962-tbl-0002:row3:col3 = '50.8 [28.6–83.3]'
-- unparsed cell prp2962-tbl-0002:row4:col3 = '0.0312 [0.0178–0.0456]'
-- unparsed cell prp2962-tbl-0002:row5:col3 = '25.9 [24.1–27.7]'
-- unparsed cell prp2962-tbl-0002:row6:col3 = '53.6 [24.4–70.5]'
-- unparsed cell prp2962-tbl-0002:row7:col3 = '196 [83.2–271]'
-- unparsed cell prp2962-tbl-0002:row8:col3 = '0.17 [0.11–0.20]'
-- unparsed cell prp2962-tbl-0002:row10:col2 = '35.3 [15]'
-- unparsed cell prp2962-tbl-0002:row10:col3 = '0.586 [0.212–1.31]'
-- unparsed cell prp2962-tbl-0002:row11:col2 = '33.2 [16]'
-- unparsed cell prp2962-tbl-0002:row11:col3 = '0.280 [0.0672–0.713]'
-- unparsed cell prp2962-tbl-0002:row12:col2 = '27.4 [5.7]'
-- unparsed cell prp2962-tbl-0002:row12:col3 = '0.0626 [0.033–0.111]'
-- unparsed cell prp2962-tbl-0002:row13:col2 = '26.8 [28]'
-- unparsed cell prp2962-tbl-0002:row13:col3 = '0.0936 [0.0187–0.32]'
-- unparsed cell prp2962-tbl-0002:row14:col2 = '34.7 [34]'
-- unparsed cell prp2962-tbl-0002:row14:col3 = '0.0467 [0.00783–0.187]'
-- unparsed cell prp2962-tbl-0002:row15:col2 = '10.5[20]'
-- unparsed cell prp2962-tbl-0002:row15:col3 = '0.0934 [0.0731–0.114]'
-- LLM selected parameter table(s) 2
+- unparsed cell prp2962-tbl-0003:row1:col3 = '6.56 [3.29–12.1]'
+- unparsed cell prp2962-tbl-0003:row2:col3 = '0.821 [0.649–0.925]'
+- unparsed cell prp2962-tbl-0003:row3:col3 = '10.4 [4.48–44.0]'
+- unparsed cell prp2962-tbl-0003:row4:col3 = '0.820 [0.629–0.972]'
+- unparsed cell prp2962-tbl-0003:row5:col3 = '1709 [1253–2224]'
+- unparsed cell prp2962-tbl-0003:row6:col3 = '617 [551–691]'
+- unparsed cell prp2962-tbl-0003:row7:col3 = '4229 [3573–4918]'
+- unparsed cell prp2962-tbl-0003:row8:col3 = '890 [668–1122]'
+- unparsed cell prp2962-tbl-0003:row10:col2 = '17.6 [31]'
+- unparsed cell prp2962-tbl-0003:row10:col3 = '2.21 [1.41–3.32]'
+- unparsed cell prp2962-tbl-0003:row11:col2 = '35.8 [46]'
+- unparsed cell prp2962-tbl-0003:row11:col3 = '1.82 [0.390–3.17]'
+- unparsed cell prp2962-tbl-0003:row12:col2 = '23.3 [21]'
+- unparsed cell prp2962-tbl-0003:row12:col3 = '0.517 [0.218–0.822]'
+- unparsed cell prp2962-tbl-0003:row13:col2 = '22.4 [2.7]'
+- unparsed cell prp2962-tbl-0003:row13:col3 = '0.140 [0.079–0.211]'
+- unparsed cell prp2962-tbl-0003:row14:col2 = '22.1 [19]'
+- unparsed cell prp2962-tbl-0003:row14:col3 = '0.110 [0.0655–0.172]'
+- unparsed cell prp2962-tbl-0003:row15:col2 = '4.67 [13]'
+- unparsed cell prp2962-tbl-0003:row15:col3 = '0.322 [0.292–0.353]'
+- unparsed cell Langeskov_2022_table_2:row0:col3 = '11.8 [6.2–27.8]'
+- unparsed cell Langeskov_2022_table_2:row1:col3 = '0.534 [0.298–0.745]'
+- unparsed cell Langeskov_2022_table_2:row2:col3 = '50.8 [28.6–83.3]'
+- unparsed cell Langeskov_2022_table_2:row3:col3 = '0.0312 [0.0178–0.0456]'
+- unparsed cell Langeskov_2022_table_2:row4:col3 = '25.9 [24.1–27.7]'
+- unparsed cell Langeskov_2022_table_2:row5:col3 = '53.6 [24.4–70.5]'
+- unparsed cell Langeskov_2022_table_2:row6:col3 = '196 [83.2–271]'
+- unparsed cell Langeskov_2022_table_2:row7:col3 = '0.17 [0.11–0.20]'
+- unparsed cell Langeskov_2022_table_2:row9:col2 = '35.3 [15]'
+- unparsed cell Langeskov_2022_table_2:row9:col3 = '0.586 [0.212–1.31]'
+- unparsed cell Langeskov_2022_table_2:row10:col2 = '33.2 [16]'
+- unparsed cell Langeskov_2022_table_2:row10:col3 = '0.280 [0.0672–0.713]'
+- unparsed cell Langeskov_2022_table_2:row11:col2 = '27.4 [5.7]'
+- unparsed cell Langeskov_2022_table_2:row11:col3 = '0.0626 [0.033–0.111]'
+- unparsed cell Langeskov_2022_table_2:row12:col2 = '26.8 [28]'
+- unparsed cell Langeskov_2022_table_2:row12:col3 = '0.0936 [0.0187–0.32]'
+- unparsed cell Langeskov_2022_table_2:row13:col2 = '34.7 [34]'
+- unparsed cell Langeskov_2022_table_2:row13:col3 = '0.0467 [0.00783–0.187]'
+- unparsed cell Langeskov_2022_table_2:row14:col2 = '10.5[20]'
+- unparsed cell Langeskov_2022_table_2:row14:col3 = '0.0934 [0.0731–0.114]'
+- companion parameter table 2 transcribed (22 record(s), model stage 'final')
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -137,20 +178,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['prp2962-tbl-0002:row5:col1'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['prp2962-tbl-0002:row3:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['prp2962-tbl-0002:row1:col1'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['prp2962-tbl-0002:row7:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['prp2962-tbl-0002:row6:col1'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['prp2962-tbl-0002:row8:col1'] |
+| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['prp2962-tbl-0003:row6:col1'] |
+| C5_dimension_Q290 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['prp2962-tbl-0003:row5:col1'] |
+| C5_dimension_Q306 | pass | 1 / [time] | not captured | not captured | not captured | ['prp2962-tbl-0003:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['prp2962-tbl-0003:row1:col1', 'Langeskov_2022_table_2:row0:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Langeskov_2022_table_2:row6:col1'] |
+| C5_dimension_Q80 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['prp2962-tbl-0003:row8:col1'] |
+| C5_dimension_Q82 | fail | [luminosity] / [length] ** 2 | Units | not captured | not captured | ['prp2962-tbl-0003:row7:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Langeskov_2022_table_2:row7:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 25.9 L/h | not captured | not captured | ['prp2962-tbl-0002:row5:col1'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 48.5 L | not captured | not captured | ['prp2962-tbl-0002:row3:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 55.4 L | not captured | not captured | ['prp2962-tbl-0002:row6:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -179,30 +219,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_modelica.zip" download>Paracetamol_Langeskov2022_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_fmi.zip" download>Paracetamol_Langeskov2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_matlab.zip" download>Paracetamol_Langeskov2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_matlab_simbio.zip" download>Paracetamol_Langeskov2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_sbml.zip" download>Paracetamol_Langeskov2022_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_cellml.zip" download>Paracetamol_Langeskov2022_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference.svg" alt="Paracetamol_Langeskov2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1500 mg, single dose, first-order absorption (ka 9.4 /h, lag 9.6 min, F 1). Dose in the paper: 1500 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference/Paracetamol_Langeskov2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Paracetamol_Langeskov2022_reference_params.json` · controls `Paracetamol_Langeskov2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 14:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:04 UTC</sub>

@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Shah1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,26 +27,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:56.251220+00:00) predates the upstream re-run (2026-10-07 04:56:25.919396+00:00). Current validate status: `rejected`.
+
 ## Citation
 Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Shah1990_reference" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Shah1990_reference" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The weight normalized volume of distribution of (Vdarea) | `Q352` · Vnorm | 5.1 | liters/kg | 0.357 | [l] / [kg] | not captured | llm_confirmed (0.6) | Shah_1990:abstract | — | not captured |
+| weight normalized volume of distribution of (Vdarea) | `Q352` · Vnorm | 5.1 | liters/kg | 0.357 | [l] / [kg] | not captured | llm_confirmed (0.6) | Shah_1990:abstract | — | not captured |
 | total body clearance (CL) | `Q22` · CL | 6.2 | liters/kg/hr | 0.00012055555555555557 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | Shah_1990:abstract | — | not captured |
-| The ratio of AUCmorphine/AUCcodeine | `Q21` · AUC ratio | 0.05 | not captured | not captured | not captured | not captured | llm (0.6) | Shah_1990:abstract | — | not captured |
-| The absolute bioavailability of codeine calculated | `Q40` · Fab | 8.3 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Shah_1990:abstract | — | not captured |
+| ratio of AUCmorphine/AUCcodeine | `Q21` · AUC ratio | 0.05 | not captured | not captured | not captured | not captured | llm (0.6) | Shah_1990:abstract | — | not captured |
+| absolute bioavailability of codeine | `Q40` · Fab | 8.3 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Shah_1990:abstract | — | not captured |
+| anti-SdrG V 1 | `Q61` · V | 73.0 | ml | 7.3e-05 | L | not captured | review_gapfill (0.7) | Capparelli_2005:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +63,7 @@ Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and d
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q61 (V) from Capparelli_2005's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -107,9 +111,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shah_1990:abstract'] |
 | C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shah_1990:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Capparelli_2005:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.2 | not captured | not captured | ['Shah_1990:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 434 L/h | not captured | not captured | ['Shah_1990:abstract'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.073 L | not captured | not captured | ['Capparelli_2005:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -123,19 +129,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -144,4 +140,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:56 UTC</sub>

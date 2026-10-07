@@ -1,0 +1,43 @@
+{
+ "dose_source": "WHO ATC DDD 80 mg oral (L01EB04)",
+ "model_id": "Osimertinib_Westra2025_reference",
+ "molar_masses": {
+  "C_M1": 0.48559199999999997,
+  "central.C": 0.49961900000000004
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "AZ5104",
+  "C_central": "osimertinib"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 1.2861111111111112e-05,
+  "F": 1.0,
+  "MW": 0.49961900000000004,
+  "MW_m1": 0.48559199999999997,
+  "Tlag": 0.0,
+  "Vd1": 0.966,
+  "Vd1m1": 0.181,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-05,
+  "ka": 6.666666666666667e-05,
+  "q1_m11": 5.277777777777778e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 62332.66533066132,
+  "central.C": 41555.11022044088
+ },
+ "reference_peaks": {
+  "C_M1": 2.507741651661396e-05,
+  "central.C": 6.623920157023145e-05
+ },
+ "stop_time": 691200.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

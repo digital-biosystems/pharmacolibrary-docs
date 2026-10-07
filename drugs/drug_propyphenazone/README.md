@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Propyphenazone is a non-steroidal anti-inflammatory agent with analgesic effects.[A275063, A275068]
+Propyphenazone is a pyrazolone non-steroidal anti-inflammatory drug used as an analgesic and antipyretic for pain and fever. It is classified as investigational in DrugBank and has no European Union authorisation, so its current availability appears limited.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q425111](https://www.wikidata.org/wiki/Q425111) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 21:07 | 0:59 | 0/0/0 | 0/0/0 | 0/0/0 | 15,307/627 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 3/2 | 5/0 | 0 |
+| 2026-10-07 06:10 | 0:16 | 0/0/0 | 0/0/0 | 0/0/0 | 14,080/535 | einfracz / qwen3.8-27b | 4 | 3/2 | 4/0 | 0 |
 
 ## popPK records
 
@@ -48,18 +50,18 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bornschein_1985 | irrelevant | 0 | 0 | The study is an in-vitro bioavailability assessment of suppositories and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for propyphenazone. |
-| popPK | Brent_2011 | irrelevant | 0 | 0 | The paper is a review of caffeine's reproductive risks and does not contain any data for propyphenazone. |
+| popPK | Bornschein_1985 | irrelevant | 1 | 0 | The study is explicitly in-vitro and reports relative availability/release behavior without quantitative pharmacokinetic parameters (CL, V, ka, t1/2) for propyphenazone. |
+| popPK | Brent_2011 | irrelevant | 0 | 0 | The paper is a review of caffeine's reproductive risks and does not contain pharmacokinetic data for propyphenazone. |
 | PD | Brent_2011 | not_relevant | 0 | 0 | The paper is a review of caffeine reproductive toxicity and does not contain any pharmacodynamic or exposure-response data for propyphenazone. |
-| popPK | Brune_1986 | irrelevant | 0 | 0 | The paper is a general review of non-opioid analgesics and does not report specific quantitative pharmacokinetic parameters for propyphenazone. |
-| popPK | Gafiţanu_1991 | irrelevant | 2 | 0 | The study focuses on formulation and bioavailability comparison without reporting quantitative pharmacokinetic parameters (CL, V, ka) for propyphenazone. |
-| popPK | Hackenberger_1986 | irrelevant | 2 | 0 | The study focuses on bioavailability and bioequivalence (AUC) rather than reporting specific quantitative disposition parameters like clearance, volume, or half-life for propyphenazone. |
-| popPK | Mazzarino_2010 | irrelevant | 0 | 0 | The study investigates the effect of propyphenazone on steroid detection methods (analytical interference) rather than reporting pharmacokinetic parameters for propyphenazone itself. |
+| popPK | Brune_1986 | irrelevant | 2 | 0 | The paper is a review of analgesics and pharmacology without original quantitative PK parameter values for propyphenazone in the provided text. |
+| popPK | Gafiţanu_1991 | irrelevant | 2 | 1 | The study focuses on formulation (lyophilized vs. compressed) and reports only qualitative or semi-quantitative observations (desaggregation time, peak times) without specific PK parameters (CL, V, AUC, Cmax) or population models. |
+| popPK | Hackenberger_1986 | irrelevant | 3 | 0 | The paper reports bioequivalence and relative bioavailability (AUC/Cmax comparisons) but does not provide absolute quantitative disposition parameters (CL, V, t1/2) in the evidence. |
+| popPK | Mazzarino_2010 | irrelevant | 0 | 0 | The study investigates the effect of propyphenazone on the analytical detection of steroids, explicitly stating that observed effects are not due to pharmacokinetic alterations, and does not report quantitative PK parameters for propyphenazone. |
 | popPK | Mendoza_2015 | irrelevant | 0 | 0 | The paper is an environmental study measuring propyphenazone concentrations in hospital wastewater, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Mendoza_2015 | not_relevant | 0 | 0 | The paper is an environmental risk assessment of pharmaceuticals in wastewater and does not report any pharmacodynamic or exposure-response data for propyphenazone. |
 | popPK | Radwan_2014 | irrelevant | 0 | 0 | The paper focuses on the synthesis and pharmacological activity (COX inhibition, analgesia) of propyphenazone-based prodrugs and analogues, without reporting quantitative pharmacokinetic parameters for propyphenazone itself. |
 | PD | Radwan_2014 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for a specific analogue (ANT-MP) and qualitative in vivo efficacy, but does not provide a concentration-effect or dose-response curve with numeric PD parameters (Emax, EC50, slope) for propyphenazone itself or a PK/PD model. |
-| popPK | Rohdewald_1981 | irrelevant | 0 | 0 | The paper describes a thin-layer chromatography method for analyzing drug concentrations in saliva and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for propyphenazone. |
+| popPK | Rohdewald_1981 | irrelevant | 0 | 0 | The paper describes an analytical method (TLC) for detection in saliva and does not report pharmacokinetic parameters (CL, V, t1/2, etc.) for propyphenazone. |
 | popPK | Shaheen_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of bisoprolol, using propyphenazone only as a derivatization reagent, and does not report PK parameters for propyphenazone itself. |
 | popPK | Volz_1980 | relevant | 4 | 5 | The paper is a review that reports limited quantitative PK parameters (Vd, t1/2, Cmax) for propyphenazone in humans and animals, but lacks a compartmental model or clearance values. |
 | popPK | Wiedow_1996 | irrelevant | 0 | 0 | The paper is a clinical diagnostic study on analgesic intolerance and does not report any pharmacokinetic parameters for propyphenazone. |

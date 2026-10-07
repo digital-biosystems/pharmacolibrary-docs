@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 30 mg parenteral (N02AA05)",
  "model_id": "Oxycodone_Shi2026_reference",
  "molar_masses": {
   "central.C": 0.3153636
@@ -8,10 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  7.0
- ],
  "parameters": {
   "Cl": 1.056388888888889e-05,
   "F": 1.0,
@@ -19,14 +15,14 @@
   "VdPerKg": 0.0035821428571428575,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 7e-06,
+  "adminMass": 3e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662046
+  "central.C": 660.0000000662042
  },
  "reference_peaks": {
-  "central.C": 2.756651861103932e-05
+  "central.C": 0.00011814170856480567
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

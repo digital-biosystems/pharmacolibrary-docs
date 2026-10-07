@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/&quot;},{&quot;label&quot;:&quot;Khalil_2020 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Khalil2020_final&quot;,&quot;label&quot;:&quot;Khalil_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tapentadol — `Tapentadol_Khalil2020_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,32 +25,32 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:00.561531+00:00) predates the upstream re-run (2026-10-07 05:41:35.831045+00:00). Current validate status: `extracted`.
+
 ## Citation
 Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020)
   ·  DOI: [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549)
 
 ## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Khalil2020_final" status="needs_review" stale="false" population="pediatric patients from birth to &lt;18 years old" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tapentadol" model-id="Tapentadol_Khalil2020_final" status="extracted" stale="true" population="children from birth to &lt;18 years old with acute pain" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 94.6 | L/h | 2.6277777777777777e-05 | [l] / [h] | not captured | exact (1.0) | t0003:row2:col1, t0003:row2:col2, t0003:row2:col3 | — | 0.0961 (None% RSE) |
-| V (L) | `Q61` · V | 414 | L | 0.41400000000000003 | [l] | not captured | exact (1.0) | t0003:row3:col1, t0003:row3:col2, t0003:row3:col3 | — | 0.13 (None% RSE) |
-| Ka (h−1) | `Q49` · kabs | 2.19 | h−1 | 0.0006083333333333333 | [1] / [h] | not captured | exact (1.0) | t0003:row4:col1, t0003:row4:col2, t0003:row4:col3 | — | 2 (None% RSE) |
-| F | `Q40` · Fab | 0.349 | not captured | not captured | not captured | not captured | exact (1.0) | t0003:row5:col1, t0003:row5:col2, t0003:row5:col3 | — | not captured |
-| TLAG (h) | `Q83` · tlag | 0.266 | h | 957.6 | [h] | not captured | exact (1.0) | t0003:row6:col1, t0003:row6:col2, t0003:row6:col3 | — | not captured |
-| k (wks −1) | `Q47` · kel | 0.122 | wks −1 | not captured | [1] / [wks] | not captured | exact (1.0) | t0003:row9:col1, t0003:row9:col2, t0003:row9:col3 | — | not captured |
-| theta_q325_weight_power | `Q900` · theta_q325_weight_power | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | t0003:row8:col1 | — | not captured |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | t0003:row10:col1 | — | not captured |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | t0003:row11:col1 | — | not captured |
+| CL (L/h) | `Q22` · CL | 45.9 | L/h | 1.2749999999999998e-05 | [l] / [h] | not captured | exact (1.0) | t0003:row2:col4, t0003:row2:col5, t0003:row2:col6 | — | 0.053 (None% RSE) |
+| V (L) | `Q61` · V | 188 | L | 0.188 | [l] | not captured | exact (1.0) | t0003:row3:col4, t0003:row3:col5, t0003:row3:col6 | — | 0.039 (None% RSE) |
+| Ka (h−1) | `Q49` · kabs | 1.64 | h−1 | 0.0004555555555555555 | [1] / [h] | not captured | exact (1.0) | t0003:row4:col4, t0003:row4:col5, t0003:row4:col6 | — | 1.020 (None% RSE) |
+| F | `Q40` · Fab | 0.195 | not captured | not captured | not captured | not captured | exact (1.0) | t0003:row5:col4, t0003:row5:col5, t0003:row5:col6 | — | not captured |
+| TLAG (h) | `Q83` · tlag | 0.257 | h | 925.2 | [h] | not captured | exact (1.0) | t0003:row6:col4, t0003:row6:col5, t0003:row6:col6 | — | not captured |
+| k (wks −1) | `Q47` · kel | 0.013 | 1/week | not captured | 1/week | not captured | exact (1.0) | t0003:row9:col4, t0003:row9:col5, t0003:row9:col6 | — | not captured |
+| theta_q325_weight_power | `Q900` · theta_q325_weight_power | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | t0003:row8:col4 | — | not captured |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.42 | not captured | not captured | not captured | not captured | not captured (not captured) | t0003:row10:col4, t0003:row10:col5, t0003:row10:col6 | — | not captured |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.68 | not captured | not captured | not captured | not captured | not captured (not captured) | t0003:row11:col4, t0003:row11:col5, t0003:row11:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,17 +60,16 @@ Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain res
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Pop. Estimate' — extend the ontology if this is a real PK parameter (source ['t0003:row1:col2'])
-- dropped unlinked row (NIL): 'PMA50 (wks)' — extend the ontology if this is a real PK parameter (source ['t0003:row7:col1', 't0003:row7:col2', 't0003:row7:col3'])
+- dropped unlinked row (NIL): 'Pop. Estimate' — extend the ontology if this is a real PK parameter (source ['t0003:row1:col5'])
+- dropped unlinked row (NIL): 'PMA50 (wks)' — extend the ontology if this is a real PK parameter (source ['t0003:row7:col4', 't0003:row7:col5', 't0003:row7:col6'])
 - unit_dimension_unknown: 'wks −1' (kel)
-- dropped duplicate Q22 ('Cov CL-V', value '0.0867') — already have one for this compound
+- dropped duplicate Q22 ('Cov CL-V', value '0.031') — already have one for this compound
 - covariate effect for Q325 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'k (wks −1)' → 1/week (from the paper text: "The parameter string provided in the input is 'k (wks −1) = 0.013', which explicitly states the unit as 'wks −1' (invers")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tapentadol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at route_to_review — not promoted
-- model-stage split: 'final model with fixed exponents' is the final model of Khalil_2020 (paper reports 2 stages: final model with estimated exponents, final model with fixed exponents); same population, different model-building step
+- model-stage split: 'final model with estimated exponents' is the final model of Khalil_2020 (paper reports 2 stages: final model with estimated exponents, final model with fixed exponents); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -119,15 +118,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0003:row4:col1', 't0003:row4:col2', 't0003:row4:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0003:row3:col1', 't0003:row3:col2', 't0003:row3:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['t0003:row6:col1', 't0003:row6:col2', 't0003:row6:col3'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | wks −1 | not captured | not captured | ['t0003:row9:col1', 't0003:row9:col2', 't0003:row9:col3'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 94.6 | not captured | not captured | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['t0003:row9:col4', 't0003:row9:col5', 't0003:row9:col6'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0003:row4:col4', 't0003:row4:col5', 't0003:row4:col6'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0003:row3:col4', 't0003:row3:col5', 't0003:row3:col6'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['t0003:row6:col4', 't0003:row6:col5', 't0003:row6:col6'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 45.9 | not captured | not captured | ['t0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 94.6 L/h | not captured | not captured | ['t0003:row2:col1', 't0003:row2:col2', 't0003:row2:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 414 L | not captured | not captured | ['t0003:row3:col1', 't0003:row3:col2', 't0003:row3:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 45.9 L/h | not captured | not captured | ['t0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 188 L | not captured | not captured | ['t0003:row3:col4', 't0003:row3:col5', 't0003:row3:col6'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -145,21 +144,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_modelica.zip" download>Tapentadol_Khalil2020_final_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_fmi.zip" download>Tapentadol_Khalil2020_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_matlab.zip" download>Tapentadol_Khalil2020_final_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_matlab_simbio.zip" download>Tapentadol_Khalil2020_final_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_sbml.zip" download>Tapentadol_Khalil2020_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_cellml.zip" download>Tapentadol_Khalil2020_final_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final.svg" alt="Tapentadol_Khalil2020_final diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 21 mg, single dose, first-order absorption (ka 1.64 /h, lag 15.4 min, F 0.195). Doses in the paper: 21, 35, 42, 52.5, 70, 87.5 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tapentadol/Tapentadol_Khalil2020_final/Tapentadol_Khalil2020_final_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Tapentadol_Khalil2020_final_params.json` · controls `Tapentadol_Khalil2020_final_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 21:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:41 UTC</sub>

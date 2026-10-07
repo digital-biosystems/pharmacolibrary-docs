@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxymorphone&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/&quot;},{&quot;label&quot;:&quot;Sadiq_2013 \u00b7 original_data_set&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_original_data_set&quot;,&quot;label&quot;:&quot;Sadiq_2013_original_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_bootstrap_resampling&quot;,&quot;label&quot;:&quot;Sadiq_2013_bootstrap_resampling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_original_data_set&quot;,&quot;label&quot;:&quot;Sadiq_2013_original_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxymorphone — `Oxymorphone_Sadiq2013_original_data_set`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,27 +25,29 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:16.901948+00:00) predates the upstream re-run (2026-10-07 05:54:49.127489+00:00). Current validate status: `extracted`.
+
 ## Citation
 Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013)
   ·  DOI: [10.1002/jps.23492](https://doi.org/10.1002/jps.23492)
 
 ## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_original_data_set" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_original_data_set" status="extracted" stale="true" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (mL/min) | `Q22` · CL | 54.5 | mL/min | 9.083333333333332e-07 | [ml] / [min] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col4 | — | not captured |
-| V c (mL) | `Q61` · V | 1170 | mL | 0.00117 | [ml] | not captured | llm (0.6) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col4 | — | not captured |
+| CL (mL/min) | `Q22` · CL | 54.5 | mL/min | 9.083333333333332e-07 | [ml] / [min] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col4 | — | 0.030 (None% RSE) |
+| V c (mL) | `Q61` · V | 1170 | mL | 0.00117 | [ml] | not captured | space_fold (0.95) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col4 | — | 0.036 (None% RSE) |
 | Q (mL/min) | `Q30` · Q | 5.74 | mL/min | 9.566666666666666e-08 | [ml] / [min] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col4 | — | not captured |
-| Fu (%) | `Q46` · fu | 0.49 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col4 | — | not captured |
+| Fu (%) | `Q46` · fu | 0.49 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col4 | — | 0.37 (None% RSE) |
+| K p,uu | `Q410` · Kp | 1.87 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row10:col1, tab_1:row10:col2, tab_1:row10:col4 | — | not captured |
+| ka | `Q49` · kabs | 15.3 | h−1 | 0.00425 | 1/h | not captured | review_gapfill (0.7) | Noh_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,24 +56,23 @@ Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmace
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
 - dropped duplicate Q30 ('Q av (mL/min)', value '56.6') — already have one for this compound
 - dropped unlinked row (NIL): 'REC blood (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col4'])
 - dropped unlinked row (NIL): 'REC brain (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col1', 'tab_1:row8:col2', 'tab_1:row8:col4'])
 - dropped duplicate Q22 ('CL in (mL/min)', value '0.123') — already have one for this compound
-- dropped unlinked row (NIL): 'K p,uu' — extend the ontology if this is a real PK parameter (source ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col4'])
 - dropped PD-category row 'Baseline effect (s)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col4'])
 - dropped PD-category row 'E max (s)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row12:col1', 'tab_1:row12:col4'])
 - dropped PD-category row 'EC 50 (ng/mL)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row13:col1', 'tab_1:row13:col4'])
-- dropped duplicate Q22 ('ω CL', value '0.030') — already have one for this compound
-- dropped duplicate Q63 ('ω Vc', value '0.036') — already have one for this compound
-- routed 'ω fu' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'ω Base' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- dropped PD-category row 'ω EC50' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row19:col1', 'tab_1:row19:col2', 'tab_1:row19:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxymorphone
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V c (mL)' is the general volume)
 - population split: 'original data set' subgroup of Sadiq_2013 (paper reports 2 populations: bootstrap resampling, original data set)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Noh_2017's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col2 = '8 .3'
@@ -98,12 +99,13 @@ Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmace
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 14.0 | 14.88 | 1.0629 | 0.25 | reported t½β |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Noh_2017:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 54.5 | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -141,26 +143,26 @@ Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmace
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_modelica.zip" download>Oxymorphone_Sadiq2013_original_data_set_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_fmi.zip" download>Oxymorphone_Sadiq2013_original_data_set_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_matlab.zip" download>Oxymorphone_Sadiq2013_original_data_set_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_matlab_simbio.zip" download>Oxymorphone_Sadiq2013_original_data_set_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_sbml.zip" download>Oxymorphone_Sadiq2013_original_data_set_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_cellml.zip" download>Oxymorphone_Sadiq2013_original_data_set_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_modelica.zip" download>Oxymorphone_Sadiq2013_original_data_set_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_fmi.zip" download>Oxymorphone_Sadiq2013_original_data_set_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_matlab.zip" download>Oxymorphone_Sadiq2013_original_data_set_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_matlab_simbio.zip" download>Oxymorphone_Sadiq2013_original_data_set_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_sbml.zip" download>Oxymorphone_Sadiq2013_original_data_set_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_cellml.zip" download>Oxymorphone_Sadiq2013_original_data_set_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set.svg" alt="Oxymorphone_Sadiq2013_original_data_set diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 2.1 mg infusion over 10 min, single dose. Doses in the paper: 2.1, 21 mg.
+**Administration: oral** — 2.1 mg, single dose, first-order absorption (ka 15.3 /h, F 0.9). Doses in the paper: 2.1, 21 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Oxymorphone_Sadiq2013_original_data_set_params.json` · controls `Oxymorphone_Sadiq2013_original_data_set_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Oxymorphone_Sadiq2013_original_data_set_params.json` · controls `Oxymorphone_Sadiq2013_original_data_set_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-28 06:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:54 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Al-Zubaydi_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gabapentin — `Gabapentin_AlZubaydi2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,24 +23,29 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:07.572294+00:00) predates the upstream re-run (2026-10-07 06:11:07.801996+00:00). Current validate status: `rejected`.
+
 ## Citation
 Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514)
 
 ## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="curated_candidate" stale="false" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="true" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (h−1) | `Q49` · kabs | 0.778 | h−1 | 0.00021611111111111112 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row2:col1, pharmaceutics-16-01514-t002:row2:col2 | — | not captured |
 | Vd (L) | `Q61` · V | 44.61 | L | 0.044610000000000004 | [l] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row3:col1 | — | 0.77 (None% RSE) |
 | Cl (L/h) | `Q22` · CL | 5.73 | L/h | 1.591666666666667e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row4:col1 | — | 0.28 (None% RSE) |
+| β Cl_SCR | `Q24` · CLu | -0.89 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-16-01514-t002:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,13 +54,10 @@ Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - column 'population estimates (rses (%))' classified 'rse' by the LLM but kept as the estimate: the header names the point value
-- dropped unlinked row (NIL): 'β Cl_SCR' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-16-01514-t002:row5:col1'])
 - dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-16-01514-t002:row10:col1'])
+- implicit units: 'β Cl_SCR' — the LLM proposed '1/mg/dL', whose dimension does not fit Q24; left unset
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Vd (L)); Q22 (Cl (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gabapentin
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -92,13 +94,15 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_sign_Q24 | fail | not captured | -0.89 | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row2:col1', 'pharmaceutics-16-01514-t002:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row3:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.73 | not captured | not captured | ['pharmaceutics-16-01514-t002:row4:col1'] |
+| C5_unit_missing_Q24 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -0.89 | not captured | not captured | ['pharmaceutics-16-01514-t002:row5:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.73 L/h | not captured | not captured | ['pharmaceutics-16-01514-t002:row4:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 44.6 L | not captured | not captured | ['pharmaceutics-16-01514-t002:row3:col1'] |
@@ -129,30 +133,15 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_modelica.zip" download>Gabapentin_AlZubaydi2024_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_fmi.zip" download>Gabapentin_AlZubaydi2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_matlab.zip" download>Gabapentin_AlZubaydi2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_matlab_simbio.zip" download>Gabapentin_AlZubaydi2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_sbml.zip" download>Gabapentin_AlZubaydi2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_cellml.zip" download>Gabapentin_AlZubaydi2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference.svg" alt="Gabapentin_AlZubaydi2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.778 /h, F 0.9). Doses in the paper: 100–1200 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Gabapentin_AlZubaydi2024_reference_params.json` · controls `Gabapentin_AlZubaydi2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 23:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:11 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;zavegepant&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zavegepant_Shahin2025_reference&quot;,&quot;label&quot;:&quot;Shahin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zavegepant/Zavegepant_Shahin2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zavegepant_Shahin2025_reference&quot;,&quot;label&quot;:&quot;Shahin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zavegepant/Zavegepant_Shahin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # zavegepant
 
@@ -19,14 +19,14 @@ Zavegepant is a CGRP antagonist used as an antimigraine medicine for the acute t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 22:19 | 0:08 | 0/1/1 | 0/0/0 | 0/0/0 | 2,867/306 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 06:44 | 0:11 | 1/1/0 | 0/0/0 | 0/0/0 | 17,313/815 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Shahin_2025_reference](drugs/drug_zavegepant/Zavegepant_Shahin2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shahin MH et al., A Pharmacokinetic Study of Zavegepant N…, Clinical and translational… (2025) | [10.1111/cts.70199](https://doi.org/10.1111/cts.70199) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Comisar_2025_reference](drugs/drug_zavegepant/Zavegepant_Comisar2025_reference.md) | — | 1-compartment (no model) | 2 | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shahin_2025_reference](drugs/drug_zavegepant/Zavegepant_Shahin2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shahin MH et al., A Pharmacokinetic Study of Zavegepant N…, Clinical and translational… (2025) | [10.1111/cts.70199](https://doi.org/10.1111/cts.70199) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Comisar_2025_reference](drugs/drug_zavegepant/Zavegepant_Comisar2025_reference.md) | — | 1-compartment (no model) | 0 | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) |
 
 ## ADME sites
 
@@ -59,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -68,22 +68,22 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Comisar_2025.pdf` | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | popPK | 10 | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) | [39492601](https://pubmed.ncbi.nlm.nih.gov/39492601) | The paper is a population PK study for zavegepant and provides specific numeric values for bioavailability and absorption rate constants, though central clearance and volume values are not explicitly listed in the provided text. |
+| `Comisar_2025.pdf` | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | popPK | 10 | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) | [39492601](https://pubmed.ncbi.nlm.nih.gov/39492601) | The abstract provides specific quantitative parameters including bioavailability (5.1% intranasal, 0.65% oral) and absorption rate constants (5.8 and 0.8 h-1), though central PK values like CL and V are not explicitly listed in the text. |
 | `Bhardwaj_2024.pdf` | Bhardwaj R et al., Deconvoluting zavegepant drug-drug inte…, Clinical and translational… (2024) | pgx | 7 | [10.1111/cts.70048](https://doi.org/10.1111/cts.70048) | [39602316](https://www.ncbi.nlm.nih.gov/pubmed/39602316) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-21T07:59:48.675454+00:00</sub>
+<sub>queue written 2026-10-07T06:44:36.932593+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Bhardwaj_2024 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic (PK) parameters (AUC, Cmax) and safety data; it does not report any pharmacodynamic (PD) or exposure-response relationship. |
-| PGx | Bhardwaj_2024_2 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (DDIs) with rifampin and itraconazole, not pharmacogenomic effects of gene variants. |
-| popPK | Hughes_2024 | irrelevant | 2 | 0 | The paper is a cardiac safety (QTc) analysis that mentions PK data but does not report quantitative disposition parameters (CL, V, ka, etc.) for zavegepant in the provided evidence. |
-| PGx | Lipton_2026 | not_relevant | 0 | 0 | The paper is a narrative review of clinical practice and efficacy/safety profiles, containing no pharmacogenomic data or genotype-specific PK/PD parameters. |
-| PGx | Takizawa_2023 | not_relevant | 0 | 0 | The paper is a narrative review discussing drug-drug interactions (CYP3A4) and does not report pharmacogenomic effects of gene variants on zavegepant PK/PD. |
+| PGx | Bhardwaj_2024_2 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (effects of rifampin and itraconazole) on pharmacokinetics, but does not investigate the impact of genetic variants, genotypes, or pharmacogenomic factors. |
+| popPK | Hughes_2024 | irrelevant | 2 | 0 | The study focuses on cardiac safety (QTc) and concentration-QTc modeling; while PK was measured, no quantitative disposition parameters (CL, V, t1/2, etc.) for zavegepant are reported in the evidence. |
+| PGx | Lipton_2026 | not_relevant | 0 | 0 | The text is a general clinical review of gepants for migraine and does not report specific pharmacogenomic effects on the PK/PD of zavegepant. |
+| PGx | Takizawa_2023 | not_relevant | 1 | 2 | The paper is a narrative review discussing drug-drug interactions (specifically CYP3A4 inhibition by Paxlovid) and general toxicological considerations, not pharmacogenomic effects of genetic variants on zavegepant PK/PD. |
 | PD | unknown_2023 | not_relevant | 1 | 0 | The text is a title or brief mention of "Drugs for migraine" without providing any specific data, models, or numeric parameters for zavegepant. |
 | PD | unknown_2023_2 | not_relevant | 0 | 0 | The provided text is only a title and does not contain any data, analysis, or numeric parameters regarding pharmacodynamics or exposure-response relationships. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 07:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:44 UTC</sub>

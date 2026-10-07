@@ -1,0 +1,33 @@
+{
+ "dose_source": "library default",
+ "model_id": "Oxymorphone_Noh2017_reference",
+ "molar_masses": {
+  "central.C": 0.3013371
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00023333333333333333,
+  "F": 0.9,
+  "MM": 0.3013371,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002785714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0015655270655270655,
+  "ka": 0.00425,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 670.5151216567255
+ },
+ "reference_peaks": {
+  "central.C": 0.0005667725348438102
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

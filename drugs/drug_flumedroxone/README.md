@@ -8,6 +8,12 @@
 - **molar mass:** 398.466 g/mol (C22H29F3O3) — DrugBank
 - **groups:** experimental
 
+## About
+
+Flumedroxone is a corticosteroid derivative classified as an antimigraine preparation, used for migraine. It appears only as an experimental compound, with no marketing authorisation found, so its current use is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q8564075](https://www.wikidata.org/wiki/Q8564075) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

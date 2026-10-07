@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;butorphanol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Butorphanol_Pypendop2021_reference&quot;,&quot;label&quot;:&quot;Pypendop_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Butorphanol_Knych2024_estimate&quot;,&quot;label&quot;:&quot;Knych_2024_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Butorphanol_Knych2024_shrinkage&quot;,&quot;label&quot;:&quot;Knych_2024_shrinkage&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # butorphanol
 
@@ -15,28 +14,36 @@ Butorphanol is an opioid painkiller used to treat pain, including migraine, and 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q1185089](https://www.wikidata.org/wiki/Q1185089) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| butorphanol | parent | 327.461 | C21H29NO2 | DrugBank | [6916249](https://pubchem.ncbi.nlm.nih.gov/compound/6916249) | Knych_2024, Saeed_2026 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 14:00 | 16:45 | 1/1/2 | 0/2/0 | 0/0/1 | 180,663/20,340 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 4/5 | 8/1 | 0 |
+| 2026-10-07 04:55 | 1:59 | 0/5/0 | 1/0/0 | 0/0/1 | 191,593/11,212 | einfracz / qwen3.8-27b | 9 | 4/5 | 8/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span> | [Pypendop_2021_reference](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 10 | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_estimate](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md) | ▶ model + simulator | 3-compartment, oral | 12 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_shrinkage](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md) | ▶ model + simulator | 3-compartment, oral | 8 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026_reference](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | — | 1-compartment (no model) | 1 (+1 cov.) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Groenendaal_2008_reference](drugs/drug_butorphanol/Butorphanol_Groenendaal2008_reference.md) | — | 1-compartment (no model) | 0 | Groenendaal D et al., Pharmacokinetic/pharmacodynamic modelli…, European journal of pharmac… (2008) | [10.1016/j.ejps.2008.03.003](https://doi.org/10.1016/j.ejps.2008.03.003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2024_estimate](drugs/drug_butorphanol/Butorphanol_Knych2024_reference.md) | — | 2-compartment (no model) | 6 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2024_shrinkage](drugs/drug_butorphanol/Butorphanol_Knych2024_reference.md) | — | 2-compartment (no model) | 6 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pypendop_2021_reference](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | — | 1-compartment (no model) | 0 | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026_reference](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | — | 1-compartment (no model) | 3 (+1 cov.) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2023_unknown](drugs/drug_butorphanol/pd_Guo_2023_unknown.md) | awakening ← propofol · stimulation effect | — | Guo F et al., Efficacy and safety of propofol target-…, World journal of clinical c… (2023) | [10.12998/wjcc.v11.i3.610](https://doi.org/10.12998/wjcc.v11.i3.610) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2020_betaarr2](drugs/drug_butorphanol/pd_Vandeputte_2020_betaarr2.md) | beta-arrestin2 recruitment ← unknown · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2020_mini_Gi](drugs/drug_butorphanol/pd_Vandeputte_2020_mini_Gi.md) | G protein (mini-Gi) recruitment ← unknown · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2020_arr2](drugs/drug_butorphanol/pd_Vandeputte_2020_arr2.md) | β-arrestin 2 (βarr2) recruitment ← butorphanol · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2020_mini_Gi](drugs/drug_butorphanol/pd_Vandeputte_2020_mini_Gi.md) | mini-Gi (G protein) recruitment ← butorphanol · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
 
 ## Pharmacogenomics (PGx)
 
@@ -80,29 +87,43 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 27 matched, 25 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Groenendaal_2008.pdf` | Groenendaal D et al., Pharmacokinetic/pharmacodynamic modelli…, European journal of pharmac… (2008) | pd | 5 | [10.1016/j.ejps.2008.03.003](https://doi.org/10.1016/j.ejps.2008.03.003) | [18467078](https://www.ncbi.nlm.nih.gov/pubmed/18467078) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Portnoy_1992.pdf` | Portnoy LG et al., Pharmacokinetics of butorphanol tartrat…, American journal of veterin… (1992) | popPK | 10 | not captured | [1586025](https://pubmed.ncbi.nlm.nih.gov/1586025) | The study reports quantitative pharmacokinetic parameters (half-life) for butorphanol in rabbits. |
+| `Riggs_2008.pdf` | Riggs SM et al., Pharmacokinetics of butorphanol tartrat…, American journal of veterin… (2008) | popPK | 10 | [10.2460/ajvr.69.5.596](https://doi.org/10.2460/ajvr.69.5.596) | [18447789](https://pubmed.ncbi.nlm.nih.gov/18447789) | The study reports quantitative pharmacokinetic parameters (half-life, bioavailability, model types) for butorphanol in birds, with values present in the abstract. |
+| `Singh_2011.pdf` | Singh PM et al., Pharmacokinetics of butorphanol in broi…, The Veterinary record (2011) | popPK | 10 | [10.1136/vr.d1191](https://doi.org/10.1136/vr.d1191) | [21628341](https://pubmed.ncbi.nlm.nih.gov/21628341) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, half-life, rate constants) for butorphanol in broiler chickens with all numeric values present in the abstract. |
+| `Groenendaal_2008.pdf` | Groenendaal D et al., Pharmacokinetic/pharmacodynamic modelli…, European journal of pharmac… (2008) | popPK | 5 | [10.1016/j.ejps.2008.03.003](https://doi.org/10.1016/j.ejps.2008.03.003) | [18467078](https://pubmed.ncbi.nlm.nih.gov/18467078) | The study reports population PK/PD parameters (biophase distribution rate constants k1e and keo) for butorphanol, though it focuses on the PD effect (EEG) rather than traditional disposition parameters like CL or V. |
 
-<sub>queue written 2026-08-27T13:49:10.327599+00:00</sub>
+<sub>queue written 2026-10-07T04:53:37.755192+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Basler_2026 | irrelevant | 0 | 0 | The study focuses on ventilation distribution in alpacas using EIT, and butorphanol is only used as a sedative agent without any pharmacokinetic parameter reporting. |
-| popPK | Guo_2023 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of butorphanol as an adjunct to propofol for sedation, reporting no pharmacokinetic parameters (CL, V, etc.) for butorphanol. |
-| popPK | Su_2026 | irrelevant | 0 | 0 | The study is a clinical trial determining the EC50 of ropivacaine with butorphanol as an adjuvant, and it does not report any pharmacokinetic parameters (CL, V, ka, etc.) for butorphanol. |
-| popPK | Vandeputte_2020 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of MOR receptor activation (EC50/Emax) and does not report any pharmacokinetic disposition parameters for butorphanol. |
-| PGx | Wen_2015 | not_relevant | 0 | 0 | The paper investigates butorphanol as an inhibitor of the ABCB1 transporter in leukemia cells, not the effect of a gene variant on butorphanol's pharmacokinetics or pharmacodynamics. |
+| PGx | Anderson_2011 | not_relevant | 0 | 0 | The paper is a general review of pharmacokinetics and pharmacodynamics of systemic opioids and does not report pharmacogenomic effects or gene variant-specific changes in PK/PD parameters. |
+| popPK | Basler_2026 | irrelevant | 0 | 0 | The study evaluates ventilation distribution using electrical impedance tomography in alpacas; butorphanol is used only as a sedative agent, and no pharmacokinetic parameters (e.g., clearance, volume, half-life) for butorphanol are reported. |
+| popPK | Best_2024 | irrelevant | 0 | 0 | The study evaluates sedation scores and butorphanol is a co-administered sedative, not the subject of a pharmacokinetic analysis. |
+| PGx | Cook_2000 | not_relevant | 0 | 0 | The paper investigates sex differences in opioid sensitivity, not the effect of a specific gene variant/genotype on the pharmacokinetics or pharmacodynamics of butorphanol. |
+| popPK | Emmerson_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of opioid receptor binding and G-protein activation in C6 glioma cells, reporting binding affinities and functional EC50s rather than pharmacokinetic disposition parameters for butorphanol. |
+| popPK | Gittel_2021 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of l-methadone, with butorphanol used only as a sedative agent for induction and not as the subject of PK analysis. |
+| popPK | Grechko_2017 | irrelevant | 0 | 0 | The study assesses pharmacodynamic effects (respiratory depression, GI transit) rather than pharmacokinetic parameters (CL, Vd, half-life). |
+| popPK | Groenendaal_2005 | irrelevant | 1 | 0 | The paper describes the development of an analytical method for quantifying butorphanol but does not report any pharmacokinetic parameters. |
+| popPK | Guo_2023 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy and safety of propofol combined with butorphanol for sedation, focusing on propofol's EC50 and adverse events, without reporting any pharmacokinetic parameters (e.g., clearance, volume, half-life) for butorphanol. |
+| popPK | Manneveau_2018 | irrelevant | 0 | 0 | This is a study on the physiological effects of sedation protocols on the pharynx and larynx in horses, containing no pharmacokinetic parameters for butorphanol. |
+| popPK | Su_2026 | irrelevant | 0 | 0 | The study measures the median effective concentration (EC50) of ropivacaine for nerve block, not pharmacokinetic parameters (clearance, volume, half-life) of butorphanol. |
+| PGx | Terner_2003 | not_relevant | 1 | 0 | The study examines sex and rat strain differences in antinociception (a functional behavioral PD endpoint) rather than a specific gene variant altering the PK or PD of butorphanol. |
+| popPK | Vandeputte_2020 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study reporting receptor potency (EC50) and efficacy, not pharmacokinetic disposition parameters. |
+| popPK | VonVoigtlander_1983 | irrelevant | 0 | 0 | The study investigates pharmacodynamic physical dependence (withdrawal hyperalgesia) in mice and does not report any pharmacokinetic parameters for butorphanol. |
+| PGx | Wen_2015 | not_relevant | 0 | 0 | The paper investigates the interaction between butorphanol and the ABCB1 transporter in leukemia cells to reverse multidrug resistance, but it does not report any pharmacogenomic effects (gene variants changing PK/PD) for butorphanol itself. |
+| popPK | Yabaluri_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor down-regulation and G-protein coupling, reporting no pharmacokinetic disposition parameters (CL, V, t1/2) for butorphanol. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-08-27 13:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 04:53 UTC</sub>

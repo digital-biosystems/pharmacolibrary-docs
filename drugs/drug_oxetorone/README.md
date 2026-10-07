@@ -8,11 +8,17 @@
 - **molar mass:** 319.404 g/mol (C21H21NO2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Oxetorone is an antimigraine preparation, classified under other antimigraine preparations for the nervous system. It is currently considered experimental, with no established marketing authorisation, so its current availability is unclear.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3359164](https://www.wikidata.org/wiki/Q3359164) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 22:09 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 1,418/197 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 06:32 | 0:17 | 0/0/0 | 0/0/0 | 0/0/0 | 430/57 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

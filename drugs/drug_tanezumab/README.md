@@ -17,14 +17,14 @@ Tanezumab is an investigational monoclonal antibody analgesic studied for osteoa
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 21:15 | 3:26 | 0/2/0 | 0/0/0 | 0/0/0 | 44,598/11,596 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-07 06:18 | 0:45 | 0/2/0 | 0/0/0 | 0/0/0 | 60,267/2,174 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jonsson_2016_reference](drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md) | — | 2-compartment (no model) | 6 (+5 cov.) | Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016) | [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Shoji_2022_reference](drugs/drug_tanezumab/Tanezumab_Shoji2022_reference.md) | — | 2-compartment (no model) | 4 | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jonsson_2016_reference](drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md) | — | 2-compartment (no model) | 6 (+5 cov.) | Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016) | [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Shoji_2022_reference](drugs/drug_tanezumab/Tanezumab_Shoji2022_reference.md) | — | 2-compartment (no model) | 5 | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -36,7 +36,7 @@ Tanezumab is an investigational monoclonal antibody analgesic studied for osteoa
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 3  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -45,17 +45,17 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shoji_2022.pdf` | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | popPK | 10 | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) | [35112378](https://pubmed.ncbi.nlm.nih.gov/35112378) | The paper reports a population PK model for tanezumab with explicit numeric values for clearance, volumes, and bioavailability in the text. |
+| `Shoji_2022.pdf` | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | popPK | 10 | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) | [35112378](https://pubmed.ncbi.nlm.nih.gov/35112378) | The paper reports a population PK model with explicit numeric values for clearance, central volume, peripheral volume, and bioavailability in humans. |
 
-<sub>queue written 2026-10-01T21:11:42.697045+00:00</sub>
+<sub>queue written 2026-10-07T06:17:47.831419+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Lian_2022 | not_relevant | 1 | 0 | The paper is a meta-analysis of clinical trials reporting aggregate efficacy outcomes (mean differences in pain scores) and safety, but it does not report any pharmacokinetic data, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Shoji_2023 | relevant | 5 | 1 | The study uses a population PK model for tanezumab but fixes the PK parameters to values from a previous study (reference 13/Table S1), which are not provided in the evidence, reporting only NGF-related parameters. |
+| popPK | Shoji_2023 | irrelevant | 2 | 1 | The study focuses on target-mediated drug disposition (TMDD) modeling of NGF, and the specific population PK parameters for tanezumab (CL, V, etc.) are explicitly stated to be fixed from a previous reference and provided in Table S1, which is not included in the evidence. |
 | PD | Tahir_2023 | not_relevant | 2 | 1 | The paper is a meta-analysis of clinical trial outcomes (dose-response in terms of fixed doses vs placebo) but does not report pharmacokinetic data, concentration-effect relationships, or formal PD model parameters (Emax, EC50, etc.). |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 03:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:17 UTC</sub>

@@ -1,0 +1,31 @@
+{
+ "dose_source": "library default",
+ "model_id": "Fampridine_Matcha2025_reference",
+ "molar_masses": {
+  "central.C": 0.0941145
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7777777777777777e-08,
+  "F": 1.0,
+  "MM": 0.0941145,
+  "VdPerKg": 1.83e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 1.1926446352675861e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662056
+ },
+ "reference_peaks": {
+  "central.C": 0.007769452281306369
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

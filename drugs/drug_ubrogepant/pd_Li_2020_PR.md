@@ -36,8 +36,8 @@ Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translati
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax | `Q320` · not captured | 1.12 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 41.9 | nM | not captured | llm (not captured) | Li_2020:pdv3 |
-| PD (effect) | β0 | `Q344` · not captured | -2.09 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
-| PD (effect) | β1,pbo | `Q344` · not captured | 1.83 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
+| PD (effect) | β0 | `Q344` · not captured | –2.09 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
+| model term | β1,pbo | `Q900` · not captured | 1.83 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
 | model term | Headache severity | `Q900` · not captured | -0.563 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
 
 <details class="legend">

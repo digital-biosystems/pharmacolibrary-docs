@@ -14,15 +14,25 @@ Almotriptan is a serotonin receptor agonist used to treat migraine attacks. It i
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q409729](https://www.wikidata.org/wiki/Q409729) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| almotriptan | parent | 335.464 | C17H25N3O2S | DrugBank | [123606](https://pubchem.ncbi.nlm.nih.gov/compound/123606) | Jansat_2002 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 21:23 | 1:07 | 0/0/0 | 0/0/0 | 0/0/0 | 14,938/411 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 2/1 | 0 |
+| 2026-10-07 06:23 | 0:59 | 0/1/0 | 0/0/0 | 0/0/0 | 80,155/6,292 | einfracz / qwen3.8-27b | 3 | 2/1 | 2/1 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jansat_2002_reference](drugs/drug_almotriptan/Almotriptan_Jansat2002_reference.md) | — | 1-compartment (no model) | 5 | Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinical pharmac… (2002) | [10.1177/0091270002042012006](https://doi.org/10.1177/0091270002042012006) |
 
 ## ADME sites
 
@@ -47,8 +57,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 25 matched, 25 returned
-- **screened:** 1  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -57,13 +67,13 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Jansat_2002.pdf` | Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinical pharmac… (2002) | popPK | 10 | [10.1177/0091270002042012006](https://doi.org/10.1177/0091270002042012006) | [12463724](https://pubmed.ncbi.nlm.nih.gov/12463724) | The study is a primary PK investigation of almotriptan, but the evidence text only provides qualitative descriptions and ranges (e.g., t1/2 3.4-3.6 h) without specific numeric values for clearance, volume, or rate constants. |
+| `Jansat_2002.pdf` | Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinical pharmac… (2002) | popPK | 9 | [10.1177/0091270002042012006](https://doi.org/10.1177/0091270002042012006) | [12463724](https://pubmed.ncbi.nlm.nih.gov/12463724) | The paper reports PK parameters for almotriptan in humans, including half-life, bioavailability, and clearance percentages, but lacks specific numeric values for absolute clearance (L/hr) and volume (L) in the provided text. |
 | `Nirogi_2013.pdf` | Nirogi R et al., LC-MS/MS method for the quantification…, Journal of pharmaceutical a… (2013) | pd | 5 | [10.1016/j.jpba.2013.04.008](https://doi.org/10.1016/j.jpba.2013.04.008) | [23666253](https://www.ncbi.nlm.nih.gov/pubmed/23666253) | metadata signals extractable PD data (PK/PD) |
 | `Fleishaker_2000.pdf` | Fleishaker JC et al., Pharmacokinetic interaction between ver…, Clinical pharmacology and t… (2000) | pgx | 7 | [10.1067/mcp.2000.106292](https://doi.org/10.1067/mcp.2000.106292) | [10824628](https://www.ncbi.nlm.nih.gov/pubmed/10824628) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Fleishaker_2003.pdf` | Fleishaker JC et al., Interaction between ketoconazole and al…, Journal of clinical pharmac… (2003) | pgx | 7 | [10.1177/0091270003252242](https://doi.org/10.1177/0091270003252242) | [12723463](https://www.ncbi.nlm.nih.gov/pubmed/12723463) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `McEnroe_2005.pdf` | McEnroe JD et al., Clinical pharmacokinetics of almotripta…, Clinical pharmacokinetics (2005) | pgx | 7 | [10.2165/00003088-200544030-00002](https://doi.org/10.2165/00003088-200544030-00002) | [15762767](https://www.ncbi.nlm.nih.gov/pubmed/15762767) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-01T21:23:44.886543+00:00</sub>
+<sub>queue written 2026-10-07T06:22:32.497886+00:00</sub>
 
 ## Screened and excluded
 
@@ -73,28 +83,27 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Belvis_2014 | not_relevant | 1 | 0 | The text is a general review discussing the clinical use and profiles of triptans, including almotriptan, but does not present any specific pharmacokinetic or pharmacodynamic data, models, or numeric parameters. |
 | popPK | Belvís_2009 | irrelevant | 0 | 0 | The paper is a review discussing triptan selection and does not report original quantitative pharmacokinetic parameters for almotriptan. |
 | PD | Belvís_2009 | not_relevant | 1 | 0 | The text is a qualitative review of triptan selection and does not report any specific numeric pharmacodynamic parameters or exposure-response data for almotriptan. |
-| popPK | Bou_2000 | irrelevant | 0 | 0 | The paper is a pharmacological characterization study focusing on receptor affinity and vasoconstriction, containing no pharmacokinetic disposition parameters. |
-| popPK | Bou_2001 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of vascular contractility, not a pharmacokinetic study reporting disposition parameters. |
-| PGx | Buzzi_2008 | not_relevant | 2 | 0 | The paper is a review discussing the potential of pharmacogenetics for triptans and almotriptan's metabolic pathways, but it does not report specific experimental data or fitted effect sizes linking gene variants to PK/PD parameters. |
-| popPK | Chryssafidis_2022 | irrelevant | 2 | 0 | The paper is a methodological study using almotriptan as a test case for model fitting, and the specific numeric PK parameters for almotriptan are not provided in the text, only references to figures and notes that parameters cannot be determined reliably. |
+| popPK | Bou_2000 | irrelevant | 0 | 0 | The paper is a pharmacological study focusing on receptor binding affinity and functional vascular responses (vasoconstriction), reporting no pharmacokinetic disposition parameters (CL, V, t1/2) for almotriptan. |
+| popPK | Bou_2001 | irrelevant | 0 | 0 | The study reports in vitro pharmacodynamic data (contractile EC50) rather than quantitative pharmacokinetic disposition parameters. |
+| PGx | Buzzi_2008 | not_relevant | 5 | 0 | The paper is a qualitative review discussing general pharmacogenetic pathways for triptans and does not report specific quantitative PK/PD effects for almotriptan. |
+| popPK | Chryssafidis_2022 | irrelevant | 2 | 0 | The paper models almotriptan data using a general equation but explicitly states that parameter uncertainties prevent reliable determination of any pharmacokinetic parameters, and no numeric values are provided in the text. |
 | popPK | Dowson_2004 | irrelevant | 1 | 0 | The paper is a clinical review of efficacy and tolerability that mentions pharmacokinetic properties qualitatively but provides no quantitative disposition parameters. |
 | PD | Dowson_2004 | not_relevant | 2 | 1 | The text is a qualitative review summarizing clinical efficacy and PK properties without providing specific numeric PD parameters (e.g., EC50, Emax) or concentration-effect curves. |
-| PGx | Fleishaker_2000 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (verapamil) affecting almotriptan PK, not a pharmacogenomic effect based on gene variants. |
-| PGx | Fleishaker_2003 | not_relevant | 0 | 0 | The study examines a drug-drug interaction (ketoconazole) rather than a pharmacogenomic effect (gene variant/genotype). |
-| popPK | Jansat_2002 | relevant | 10 | 2 | The study is a primary PK investigation of almotriptan, but the evidence text only provides qualitative descriptions and ranges (e.g., t1/2 3.4-3.6 h) without specific numeric values for clearance, volume, or rate constants. |
+| PGx | Fleishaker_2000 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction with verapamil, not the effect of a specific gene variant or genotype on almotriptan pharmacokinetics. |
+| PGx | Fleishaker_2003 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (ketoconazole) rather than a pharmacogenomic effect based on gene variants or genotypes. |
 | popPK | McEnroe_2005 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | McEnroe_2005 | not_relevant | 0 | 0 | The paper focuses on the clinical pharmacokinetics of almotriptan and does not report any pharmacodynamic, exposure-response, or dose-response analysis with numeric PD parameters. |
-| PGx | McEnroe_2005 | not_relevant | 0 | 0 | The paper describes the general clinical pharmacokinetics of almotriptan but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | McEnroe_2005 | not_relevant | 0 | 0 | The title indicates a general clinical pharmacokinetics study without specific mention of a pharmacogenomic effect (gene variant influencing PK). |
 | popPK | Negro_2013 | irrelevant | 2 | 0 | The paper is a review article discussing pharmacokinetic aspects of almotriptan but does not present original quantitative disposition parameters or numeric values in the provided evidence. |
 | PD | Negro_2013 | not_relevant | 2 | 0 | The text is a review summary that qualitatively discusses pharmacodynamic aspects but does not provide specific numeric PD parameters or concentration-effect data. |
 | popPK | Nirogi_2013 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
 | PD | Nirogi_2013 | not_relevant | 0 | 0 | The paper describes an LC-MS/MS method and a microdialysis study for quantifying almotriptan, but does not report any pharmacodynamic or exposure-response analysis. |
-| popPK | Ou_2024 | irrelevant | 0 | 0 | The paper is about optical imaging and tissue transparency in mice, not pharmacokinetics of almotriptan. |
+| popPK | Ou_2024 | irrelevant | 0 | 0 | The paper concerns optical imaging and tissue clearing in mice, not the pharmacokinetics of almotriptan. |
 | PD | Ou_2024 | not_relevant | 0 | 0 | The paper discusses optical physics and tissue clearing in mice, containing no pharmacological data, PK/PD analysis, or mention of almotriptan. |
-| PGx | Salva_2003 | not_relevant | 2 | 0 | The paper identifies metabolic enzymes (CYP3A4, CYP2D6, MAO-A) but does not report specific pharmacogenomic effects of gene variants on PK/PD parameters, only stating that no dose changes are required. |
+| PGx | Salva_2003 | not_relevant | 1 | 0 | The paper identifies the enzymes involved in almotriptan metabolism using in vitro methods and confirms their role in vivo but does not report pharmacogenomic effects of specific genetic variants on PK or PD parameters. |
 | popPK | Tfelt-Hansen_2000 | irrelevant | 1 | 0 | The paper is a comparative review of triptans that discusses efficacy and general pharmacokinetic properties (like bioavailability and half-life) but does not report specific quantitative disposition parameters (CL, V, Q, ka) for almotriptan. |
 | PD | Tfelt-Hansen_2000 | not_relevant | 2 | 1 | The text is a comparative review that lists therapeutic gains (efficacy outcomes) for various triptans, including almotriptan, but does not report any pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response/dose-response curves. |
 | popPK | Tfelt-Hansen_2011 | irrelevant | 1 | 0 | The paper is a clinical review of dose-response and tolerability, not a pharmacokinetic study, and it does not report quantitative disposition parameters (CL, V, ka, etc.) for almotriptan. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:22 UTC</sub>

@@ -4,7 +4,7 @@
  "molar_masses": {
   "central.C": 0.263381
  },
- "note": "Values for the shared PK_3C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
@@ -27,12 +27,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3798.4654996931595
+  "central.C": 3506.7779920394423
  },
  "reference_peaks": {
-  "central.C": 0.00010236783039321687
+  "central.C": 0.0001279218339569674
  },
- "stop_time": 151200.0,
- "template": "PK_3C_enteral",
- "template_fmu": "PK_3C_enteral.fmu"
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
 }

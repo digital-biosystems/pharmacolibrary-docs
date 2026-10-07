@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;buprenorphine&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/&quot;},{&quot;label&quot;:&quot;Juul_2014 \u00b7 PD PeakAmp&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Walsh_2024_COWS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 COWS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_COWS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_desire_to_use_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 desire to use VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_desire_to_use_VAS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_drug_liking_E_max_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 drug liking E max VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_drug_liking_E_max_VAS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Buprenorphine_Kraft2018_reference&quot;,&quot;label&quot;:&quot;Kraft_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Kraft2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Robertson2005_i_v&quot;,&quot;label&quot;:&quot;Robertson_2005_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Robertson2005_i_v.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Robertson2005_otm&quot;,&quot;label&quot;:&quot;Robertson_2005_otm&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Robertson2005_otm.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # PeakAmp — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.521). The first reading is what the record holds.">cross-check: disputed</span>
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Buprenorphine (concentrations from the PK model of Nelson_2024) drives PeakAmp (in unknown): direct log-linear effect.
+**As extracted:** Buprenorphine (concentrations from the PK model of Castro-Cuellar_2023) drives PeakAmp (in μV): direct log-linear effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
@@ -25,7 +25,8 @@
 - **paper:** `Juul_2014`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`
-- **effect:** unknown/unknown
+- **tier:** population
+- **effect:** inhibition/additive
 
 ## Citation
 Juul RV et al., Pharmacodynamic modelling of placebo an…, Basic & clinical pharmacolo… (2014)
@@ -34,31 +35,10 @@ Juul RV et al., Pharmacodynamic modelling of placebo an…, Basic & clinical pha
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline — PeakAmp | `Q324` · not captured | 24.9 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
-| PD (effect) | Baseline | `Q324` · not captured | 18.2 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
-| PD (effect) | Baseline — PeakLat | `Q324` · not captured | 138 | not captured | not captured | exact (not captured) | tab_0:row3:col5 |
-| PD (effect) | Baseline | `Q324` · not captured | 2.1 | not captured | not captured | exact (not captured) | tab_0:row3:col6 |
-| PD (effect) | Baseline | `Q324` · not captured | 25.6 | not captured | not captured | exact (not captured) | tab_0:row3:col9 |
-| PK (driver) | h 2 — PeakLat | `Q56` · not captured | 0.000349 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
-| variability | x BSV (baseline) — PeakAmp | `Q312` · not captured | 10.1 | baseline | not captured | boundary (not captured) | tab_0:row7:col2 |
-| variability | x BSV (baseline) | `Q312` · not captured | 108.8 | baseline | not captured | boundary (not captured) | tab_0:row7:col3 |
-| variability | x BSV (baseline) | `Q312` · not captured | 32.4 | baseline | not captured | boundary (not captured) | tab_0:row7:col6 |
-| variability | x BSV (baseline) — MeanAmp | `Q312` · not captured | 5.11 | baseline | not captured | boundary (not captured) | tab_0:row7:col8 |
-| variability | x BSV (baseline) | `Q312` · not captured | 45.6 | baseline | not captured | boundary (not captured) | tab_0:row7:col9 |
-| variability | x BOV (baseline) — PeakAmp | `Q313` · not captured | 6.10 | baseline | not captured | boundary (not captured) | tab_0:row8:col2 |
-| variability | x BOV (baseline) | `Q313` · not captured | 80.9 | baseline | not captured | boundary (not captured) | tab_0:row8:col3 |
-| variability | x BOV (baseline) | `Q313` · not captured | 37.4 | baseline | not captured | boundary (not captured) | tab_0:row8:col6 |
-| variability | x BOV (baseline) — MeanAmp | `Q313` · not captured | 1.85 | baseline | not captured | boundary (not captured) | tab_0:row8:col8 |
-| variability | x BOV (baseline) | `Q313` · not captured | 48.3 | baseline | not captured | boundary (not captured) | tab_0:row8:col9 |
-| PK (driver) | CovGroup — PeakLat | `Q56` · not captured | 0.634 | not captured | not captured | llm (not captured) | tab_0:row11:col5 |
-| PD (effect) | K e0 — PeakAmp | `Q324` · not captured | 0.442 | not captured | not captured | boundary (not captured) | tab_0:row15:col2 |
-| PD (effect) | K e0 | `Q324` · not captured | 85.5 | not captured | not captured | boundary (not captured) | tab_0:row15:col3 |
-| PD (effect) | e proportional | `Q335` · not captured | 98.1 | not captured | not captured | llm (not captured) | tab_0:row18:col3 |
-| PD (effect) | e proportional | `Q335` · not captured | 66.9 | not captured | not captured | llm (not captured) | tab_0:row18:col6 |
-| PD (effect) | e proportional | `Q335` · not captured | 55.2 | not captured | not captured | llm (not captured) | tab_0:row18:col9 |
-| variability | e additive | `Q317` · not captured | 53.7 | not captured | not captured | llm (not captured) | tab_0:row19:col3 |
-| variability | e additive | `Q317` · not captured | 106.7 | not captured | not captured | llm (not captured) | tab_0:row19:col6 |
-| variability | e additive | `Q317` · not captured | 10.6 | not captured | not captured | llm (not captured) | tab_0:row19:col9 |
+| PD (effect) | Drug slope | `Q335` · not captured | 0.501 | -2 | not captured | llm (not captured) | Juul_2014:pdv3 |
+| PD (effect) | K e0 | `Q326` · not captured | 0.442 | hr | not captured | llm (not captured) | Juul_2014:pdv3 |
+| PD (effect) | Baseline | `Q324` · not captured | 24.9 | μV | not captured | llm (not captured) | Juul_2014:pdv3 |
+| variability | x BSV (Drug slope) | `Q312` · not captured | 1.45 | not captured | not captured | llm (not captured) | Juul_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -72,10 +52,10 @@ Juul RV et al., Pharmacodynamic modelling of placebo an…, Basic & clinical pha
 
 | parameter | value (paper units) | SI |
 |---|---|---|
-| E0 | 18.2 | — |
-| slope | 98.1 | — |
+| E0 | 24.9 μV | — |
+| slope | 0.501 -2 | — |
 
-Closed-form check points (response, SI): `at_1` = 18.2, `per_e_fold` = 98.1
+Closed-form check points (response, SI): `at_1` = 24.9, `per_e_fold` = 0.501
 
 ## Review
 
@@ -140,7 +120,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_modelica.zip" download>Buprenorphine_Juul2014_PD_peakamp_modelica.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_modelica.zip" download>Buprenorphine_Juul2014_PD_peakamp_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_matlab.zip" download>Buprenorphine_Juul2014_PD_peakamp_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

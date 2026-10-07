@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Lemmens_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Introna2026_reference&quot;,&quot;label&quot;:&quot;Introna_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Introna2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,14 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.231167+00:00) predates the upstream re-run (2026-10-03 13:15:29.645112+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.231167+00:00) predates the upstream re-run (2026-10-07 04:58:19.011192+00:00). Current validate status: `rejected`.
 
 ## Citation
 Lemmens HJ et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacology and t… (1994)
   ·  DOI: [10.1038/clpt.1994.136](https://doi.org/10.1038/clpt.1994.136)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="trefentanil, fentanyl, alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -45,12 +45,13 @@ Lemmens HJ et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmaco
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | α (min-1) | `Q67` · λ1 | 0.628 | min-1 | not captured | [1] / [min] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row2:col1, Lemmens_1994_table_p7_2:row2:col2 | — | not captured |
+| B | `Q900` · equation variable | 0.168 | not captured | not captured | not captured | not captured | llm (0.6) | Lemmens_1994_table_p7_2:row3:col1, Lemmens_1994_table_p7_2:row3:col2 | — | not captured |
 | β (min-1) | `Q47` · kel | 0.053 | min-1 | 0.0008833333333333333 | [1] / [min] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row4:col1, Lemmens_1994_table_p7_2:row4:col2 | — | not captured |
 | t½γ (min) | `Q89` · t1/2γ | 128 | min | 7680.0 | [min] | not captured | llm (0.6) | Lemmens_1994_table_p7_2:row7:col1, Lemmens_1994_table_p7_2:row7:col2 | — | not captured |
 | VC (L) | `Q61` · V | 4.5 | L | 0.0045000000000000005 | [l] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row8:col1, Lemmens_1994_table_p7_2:row8:col2 | — | not captured |
 | Vss (L) | `Q65` · Vss | 39.3 | L | 0.039299999999999995 | [l] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row9:col1, Lemmens_1994_table_p7_2:row9:col2 | — | not captured |
 | CLC (L/min) | `Q22` · CL | 0.483 | L/min | 8.05e-06 | [l] / [min] | not captured | central_subscript (0.9) | Lemmens_1994_table_p7_2:row10:col1, Lemmens_1994_table_p7_2:row10:col2 | — | not captured |
-| absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002777777777777778 | 1/h | not captured | review_gapfill (0.7) | Eleveld_2026:review | — | not captured |
+| t1pp ranged from | `Q83` · tlag | 15.0 | min | 900.0 | h | not captured | review_gapfill (0.7) | Andersen_1986:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,19 +64,15 @@ Lemmens HJ et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmaco
 - dropped unlinked row (NIL): 'Dose (mg)' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row0:col1', 'Lemmens_1994_table_p7_2:row0:col2'])
 - dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row1:col1', 'Lemmens_1994_table_p7_2:row1:col2'])
 - unit_dimension_mismatch: 'α (min-1)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row3:col1', 'Lemmens_1994_table_p7_2:row3:col2'])
 - dropped unlinked row (NIL): 'C' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row5:col1', 'Lemmens_1994_table_p7_2:row5:col2'])
 - dropped duplicate Q22 ('CLdis (L/min)', value '1.27') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=trefentanil, fentanyl, alfentanil
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'VC (L)' is the general volume)
 - status held at route_to_review — not promoted
-- molar mass: no plausible PubChem entry for 'trefentanil, fentanyl, alfentanil' ('trefentanil, fentanyl, alfentanil') — left in mass units
-- molar mass: none found for 'trefentanil, fentanyl, alfentanil' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 ## Validation
 
@@ -111,10 +108,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row4:col1', 'Lemmens_1994_table_p7_2:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eleveld_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row8:col1', 'Lemmens_1994_table_p7_2:row8:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row9:col1', 'Lemmens_1994_table_p7_2:row9:col2'] |
 | C5_dimension_Q67 | fail | 1 / [time] | min-1 | not captured | not captured | ['Lemmens_1994_table_p7_2:row2:col1', 'Lemmens_1994_table_p7_2:row2:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Andersen_1986:review'] |
 | C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row7:col1', 'Lemmens_1994_table_p7_2:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.483 | not captured | not captured | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -145,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:58 UTC</sub>

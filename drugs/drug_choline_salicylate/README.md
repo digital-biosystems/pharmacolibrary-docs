@@ -18,7 +18,7 @@ Choline salicylate is a salicylic acid derivative used as an analgesic and antip
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:59 | 49:31 | 0/0/0 | 3/0/0 | 0/0/0 | 576,788/17,208 | ollama / qwen3.8:27b-mtp-q8_0 | 90 | 13/83 | 85/5 | 0 |
+| 2026-10-07 06:03 | 7:27 | 0/0/0 | 3/0/0 | 0/0/0 | 508,610/15,551 | einfracz / qwen3.8-27b | 90 | 13/83 | 85/5 | 0 |
 
 ## popPK records
 
@@ -28,9 +28,13 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Kakehata_1996_Cm_pk](drugs/drug_choline_salicylate/pd_Kakehata_1996_Cm_pk.md) | nonlinear peak capacitance ← salicylate · direct sigmoid Emax (Hill) effect | — | Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of neuroscience… (1996) | [10.1523/JNEUROSCI.16-16-04881.1996](https://doi.org/10.1523/JNEUROSCI.16-16-04881.1996) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Koh_2025_TXB2](drugs/drug_choline_salicylate/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | model (no simulator) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">pig</span> | [Tunstall_1995_membrane_capacitance](drugs/drug_choline_salicylate/pd_Tunstall_1995_membrane_capacitance.md) | membrane capacitance ← salicylate · direct sigmoid Emax (Hill) effect | — | Tunstall MJ et al., Action of salicylate on membrane capaci…, The Journal of physiology 4… (1995) | [10.1113/jphysiol.1995.sp020765](https://doi.org/10.1113/jphysiol.1995.sp020765) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Kakehata_1996_Cm_pk](drugs/drug_choline_salicylate/pd_Kakehata_1996_Cm_pk.md) | reduction in nonlinear peak capacitance (Cm pk) ← salicylate · direct sigmoid Emax (Hill) effect | — | Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of neuroscience… (1996) | [10.1523/JNEUROSCI.16-16-04881.1996](https://doi.org/10.1523/JNEUROSCI.16-16-04881.1996) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Koh_2025_TXB2](drugs/drug_choline_salicylate/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | — | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Matthew_1992_defecation](drugs/drug_choline_salicylate/pd_Matthew_1992_defecation.md) | defecation ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Matthew_1992_rate_of_rise_of_core_temperature](drugs/drug_choline_salicylate/pd_Matthew_1992_rate_of_rise_of_core_temperature.md) | rate of rise of core temperature ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Matthew_1992_running_time_to_exhaustion](drugs/drug_choline_salicylate/pd_Matthew_1992_running_time_to_exhaustion.md) | running time to exhaustion ← physostigmine salicylate · inhibition effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Matthew_1992_salivation](drugs/drug_choline_salicylate/pd_Matthew_1992_salivation.md) | salivation ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Matthew_1992_tremors](drugs/drug_choline_salicylate/pd_Matthew_1992_tremors.md) | tremors ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
 
 ## ADME sites
 
@@ -110,294 +114,293 @@ _38 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Sundaravadivel_2025.pdf` | Sundaravadivel P et al., Association of platelet ADP receptor va…, Personalized medicine (2025) | pgx | 5 | [10.1080/17410541.2025.2530381](https://doi.org/10.1080/17410541.2025.2530381) | [40644802](https://www.ncbi.nlm.nih.gov/pubmed/40644802) | metadata signals extractable PGX data (UGT1A6) |
 | `Wang_2016.pdf` | Wang SH et al., Comparison of the antiplatelet effect o…, Genetics and molecular rese… (2016) | pgx | 5 | [10.4238/gmr.15027136](https://doi.org/10.4238/gmr.15027136) | [27173230](https://www.ncbi.nlm.nih.gov/pubmed/27173230) | metadata signals extractable PGX data (CYP2C19*2) |
 
-<sub>queue written 2026-10-01T20:55:53.263020+00:00</sub>
+<sub>queue written 2026-10-07T06:00:58.276998+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Aaron_2018 | irrelevant | 0 | 0 | The paper is a clinical review of ear wax removal efficacy and does not report any pharmacokinetic parameters for choline salicylate. |
-| PGx | Abe_2007 | not_relevant | 0 | 0 | The paper studies ameloblast differentiation in rats using sodium salicylate as a signaling modulator, not the pharmacogenomics of choline salicylate. |
+| PGx | Abe_2007 | not_relevant | 0 | 0 | The paper investigates tooth development mechanisms and the effect of sodium salicylate on gene expression in ameloblasts, with no discussion of pharmacogenomics or PK/PD parameters for choline salicylate. |
 | PD | Alam_2020 | not_relevant | 0 | 0 | The paper studies the pharmacological properties of a plant extract (Millettia peguensis) and does not report any pharmacodynamic or exposure-response data for choline salicylate. |
-| PGx | Alarfaj_2023 | not_relevant | 0 | 0 | The paper investigates mucosal gene expression in IBD patients treated with 5-ASA or anti-TNF drugs, not the pharmacokinetics or pharmacodynamics of choline salicylate. |
-| popPK | Ali_2003 | irrelevant | 0 | 0 | The study investigates DL-lysine-acetyl salicylate, not choline salicylate, which is the required subject drug. |
-| popPK | Aljanabi_2026 | irrelevant | 0 | 0 | The paper describes a computational web server for retrosynthesis and ADMET prediction and does not report any experimental pharmacokinetic parameters for choline salicylate. |
-| PGx | Allegaert_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics (CYP2D6) for tramadol, not choline salicylate. |
-| PGx | Asakawa_2017 | not_relevant | 0 | 0 | The paper investigates the metabolic conversion of the odorant acetophenone to methyl salicylate by CYP1a2 in the context of olfaction, not the pharmacokinetics or pharmacodynamics of the drug choline salicylate. |
+| PGx | Alarfaj_2023 | not_relevant | 0 | 0 | The study focuses on gene expression changes in the inflamed mucosa of IBD patients treated with 5-ASA or anti-TNF, not pharmacogenomic effects on choline salicylate pharmacokinetics or pharmacodynamics. |
+| popPK | Ali_2003 | irrelevant | 0 | 0 | The study investigates DL-lysine-acetyl salicylate, not choline salicylate, in camel, sheep, and goat models. |
+| popPK | Aljanabi_2026 | irrelevant | 0 | 0 | The paper describes a computational web server for retrosynthesis and ADMET prediction and does not report any pharmacokinetic data or parameters for choline salicylate. |
+| PGx | Allegaert_2008 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic parameters for paracetamol, ibuprofen, tramadol, and propofol, but does not report on choline salicylate. |
+| PGx | Asakawa_2017 | not_relevant | 0 | 0 | The paper studies the conversion of acetophenone to methyl salicylate by CYP1a2 in olfactory receptors, which is unrelated to the pharmacogenomics of choline salicylate. |
 | PD | Aslan_2017 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for phenolic compounds, not a pharmacodynamic or exposure-response relationship for choline salicylate in a biological system. |
 | PD | Banerjee_2025 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for metformin-phenolic acid conjugates, not choline salicylate, and does not contain any pharmacokinetic or exposure-response data. |
 | PD | Barroso-Neto_2012 | not_relevant | 1 | 0 | The paper is a quantum chemistry study of COX-1 binding and only qualitatively mentions IC50 values without providing a pharmacodynamic model or extractable exposure-response data for choline salicylate. |
-| PGx | Basu_2004 | not_relevant | 0 | 0 | The paper discusses UGT1A10 activity and phosphorylation but does not report pharmacogenomic effects on the PK/PD of choline salicylate. |
-| PGx | Bermejo_2010 | not_relevant | 0 | 0 | The paper discusses the clinical management of ulcerative colitis and the interaction between 5-ASA and thiopurines, but does not report pharmacogenomic effects on the PK or PD of choline salicylate. |
-| PGx | Bharti_2019 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on plant physiology (chickpea) under salt stress, not the pharmacogenomics of choline salicylate in humans. |
-| PGx | Bitarishvili_2023 | not_relevant | 0 | 0 | The paper studies cadmium tolerance in barley plants, not the pharmacogenomics of choline salicylate in humans. |
+| PGx | Basu_2004 | not_relevant | 0 | 0 | The paper focuses on UGT1A10 phosphorylation and metabolism of estrogens/general NSAIDs/salicylic acid, not the pharmacogenomic effect on choline salicylate PK/PD. |
+| PGx | Bermejo_2010 | not_relevant | 0 | 0 | The paper discusses 5-aminosalicylic acid (5-ASA) and thiopurines, not choline salicylate, and describes clinical management rather than pharmacogenomic effects on PK/PD parameters. |
+| PGx | Bharti_2019 | not_relevant | 0 | 0 | The paper studies salt tolerance in chickpea plants using salicylic acid, which is unrelated to the pharmacogenomics of the drug choline salicylate in humans. |
+| PGx | Bitarishvili_2023 | not_relevant | 0 | 0 | The paper studies cadmium tolerance and plant physiology in barley cultivars; it does not report pharmacogenomic effects on the PK or PD of choline salicylate in humans. |
 | PD | Blanch_2020 | not_relevant | 0 | 0 | The paper investigates the agronomic effect of salicylic acid on grape phenolic content, not the pharmacodynamics of choline salicylate in a biological system. |
-| popPK | Bloch_1980 | irrelevant | 0 | 0 | The paper describes a computer simulation model ("MacDope") and uses aspirin/salicylate as an illustrative example, but does not report original experimental pharmacokinetic parameters for choline salicylate. |
-| popPK | Brouwers_1994 | irrelevant | 0 | 0 | The paper is a general review of NSAID drug interactions and does not report specific quantitative pharmacokinetic parameters for choline salicylate. |
+| popPK | Bloch_1980 | irrelevant | 0 | 0 | The paper describes a general pharmacokinetic simulation software ("MacDope") and uses aspirin/salicylate as a demonstration example, but does not report original quantitative population-PK parameter estimates for choline salicylate. |
+| popPK | Brouwers_1994 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic-pharmacodynamic interactions of NSAIDs in general and does not report quantitative disposition parameters for choline salicylate. |
 | PD | Brouwers_1994 | not_relevant | 0 | 0 | The text is a general review of pharmacokinetic and pharmacodynamic drug interactions involving NSAIDs and does not report any specific concentration-effect or dose-response data for choline salicylate. |
 | popPK | Caboni_2013 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Caboni_2013 | not_relevant | 0 | 0 | The paper discusses the nematicidal activity of mint extracts against nematodes and does not mention choline salicylate or report any pharmacodynamic parameters. |
-| popPK | Cai_2025 | irrelevant | 0 | 0 | The paper describes a deep learning method for detecting spiral ganglion neurons in cochleae and contains no pharmacokinetic data for choline salicylate. |
-| popPK | Caminada_2006 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay in fish cell lines, not a pharmacokinetic study, and does not report disposition parameters for choline salicylate. |
-| popPK | Cao_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not choline salicylate. |
-| popPK | Carpenter_2016 | irrelevant | 0 | 0 | The study focuses on milk yield and metabolic markers in dairy cows treated with sodium salicylate, not pharmacokinetic parameters for choline salicylate. |
+| popPK | Cai_2025 | irrelevant | 0 | 0 | The paper describes a deep learning method for detecting spiral ganglion neurons in cochleae and contains no pharmacokinetic data or parameters for choline_salicylate. |
+| popPK | Caminada_2006 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity evaluation of pharmaceuticals in fish cell lines, not a pharmacokinetic study of choline salicylate. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of KJ103 (an IgG degrading enzyme), not choline salicylate. |
+| popPK | Carpenter_2016 | irrelevant | 0 | 0 | The study investigates the production response of sodium salicylate (not choline salicylate) in dairy cows and does not report any pharmacokinetic parameters. |
 | PD | Cazzaniga_2025 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and MIC values for novel MtbI inhibitors, but does not contain any pharmacokinetic data, exposure-response analysis, or pharmacodynamic modeling for choline salicylate or any other drug. |
-| popPK | Cha_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for zolpidem, not choline salicylate. |
-| popPK | Chen_1978 | irrelevant | 0 | 0 | The study focuses on salicylate (the metabolite) in dogs, not choline salicylate, and no quantitative PK parameters for the subject drug are provided. |
-| popPK | Chen_1994 | irrelevant | 0 | 0 | The study investigates benorilate (a prodrug of salicylic acid and paracetamol), not choline salicylate, and reports bioavailability parameters for the hydrolyzates rather than the subject drug. |
-| PGx | Chen_2007 | not_relevant | 0 | 0 | The paper studies aspirin (acetylsalicylic acid), not choline salicylate. |
-| popPK | Cheng_2026 | irrelevant | 0 | 0 | The paper is a review of paclitaxel nanomedicines and does not contain any data or parameters for choline salicylate. |
-| popPK | Chung_2007 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vasomotor function in Marfan syndrome using salicylate derivatives as pharmacological tools, not a pharmacokinetic study of choline salicylate. |
+| popPK | Cha_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of zolpidem, not choline salicylate. |
+| popPK | Chen_1978 | irrelevant | 2 | 0 | The study focuses on salicylate (likely sodium salicylate) in dogs, whereas the target drug is choline salicylate in humans, and no numeric parameter values are provided in the evidence. |
+| popPK | Chen_1994 | irrelevant | 0 | 0 | The study investigates the bioavailability of benorilate, not choline salicylate, and reports parameters for its metabolites salicylic acid and paracetamol. |
+| popPK | Cheng_2026 | irrelevant | 0 | 0 | The paper is a narrative review regarding Paclitaxel nanomedicines and does not contain data for choline salicylate. |
+| popPK | Chung_2007 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vasomotor function in Marfan syndrome mice using COX inhibitors and does not report pharmacokinetic parameters for choline salicylate. |
 | PD | Chung_2007 | not_relevant | 0 | 0 | The paper studies the effect of indomethacin and valeryl salicylate (not choline salicylate) on aortic vasomotor function in a Marfan mouse model, reporting no PD parameters for choline salicylate. |
-| PGx | Clappers_2008 | not_relevant | 0 | 0 | The paper studies acetyl salicylic acid (aspirin), not choline salicylate, and reports on clinical thrombotic events rather than specific PK/PD parameters of the target drug. |
-| popPK | Cleveland_1984 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenytoin, with salicylate acting only as a co-administered agent affecting phenytoin disposition, not as the subject drug. |
+| PGx | Clappers_2008 | not_relevant | 1 | 0 | The study investigates the effect of a genotype on the clinical efficacy (risk of thrombotic events) of acetylsalicylic acid, not on a pharmacokinetic or pharmacodynamic parameter of choline salicylate. |
+| popPK | Cleveland_1984 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenytoin, with salicylate acting as a co-administered agent affecting phenytoin's disposition, rather than studying choline salicylate itself. |
 | PGx | Colizza_2007 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of CP-122,721, not choline salicylate. |
-| PGx | Confort_2025 | not_relevant | 0 | 0 | The paper studies sugarcane resistance to nematodes and does not involve choline salicylate or human pharmacogenomics. |
+| PGx | Confort_2025 | not_relevant | 0 | 0 | The paper studies sugarcane transcriptomics in response to a nematode and does not mention choline salicylate or pharmacokinetics. |
 | PD | Conrath_1995 | not_relevant | 0 | 0 | The paper studies plant defense responses and catalase inhibition by salicylic acid and INA, not the pharmacodynamics of choline salicylate in a clinical or pharmacological context. |
-| PGx | Cosme_2021 | not_relevant | 0 | 0 | The paper studies plant-microbe interactions (arbuscular mycorrhizal colonization) and does not involve the drug choline_salicylate or human pharmacogenomics. |
+| PGx | Cosme_2021 | not_relevant | 0 | 0 | The paper concerns plant-mycorrhizal symbiosis and does not mention choline salicylate or human pharmacogenomics. |
 | popPK | Costa_2014 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | PD | Costa_2014 | not_relevant | 0 | 0 | The paper focuses on the toxicity of ionic liquids and does not mention choline salicylate or report any pharmacodynamic parameters for it. |
-| PGx | Coutinho_2019 | not_relevant | 0 | 0 | The paper discusses drought tolerance in transgenic soybeans and salicylic acid levels in plants, which is unrelated to human pharmacogenomics or choline salicylate PK/PD. |
-| popPK | Cronstein_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on neutrophil adhesion and does not report pharmacokinetic parameters for choline salicylate. |
-| popPK | Cuesta-Gragera_2015 | irrelevant | 0 | 0 | The study focuses on acetylsalicylic acid (ASA), not choline salicylate, and does not report PK parameters for the target drug. |
-| popPK | Dang_2025 | irrelevant | 0 | 0 | The paper investigates gut microbiome signatures for predicting 5-ASA efficacy in ulcerative colitis and does not report pharmacokinetic parameters for choline salicylate. |
-| PGx | Deng_2017 | not_relevant | 0 | 0 | The paper studies a rice mutant and salicylic acid signaling in plants, not human pharmacogenomics of choline salicylate. |
-| popPK | Deshpande_2001 | irrelevant | 0 | 0 | The paper describes the synthesis and antiviral activity of influenza fusion inhibitors, not the pharmacokinetics of choline salicylate. |
-| popPK | Ding_2026 | irrelevant | 0 | 0 | The paper is a multi-omics study on sheep temperament and gut microbiome, containing no pharmacokinetic data for choline salicylate. |
+| PGx | Coutinho_2019 | not_relevant | 0 | 0 | The study analyzes drought tolerance in soybean plants, not human pharmacogenomics of choline salicylate. |
+| popPK | Cronstein_1994 | irrelevant | 0 | 0 | This is a mechanistic study on neutrophil adhesion, not a pharmacokinetic study, and does not report disposition parameters for choline salicylate. |
+| popPK | Cuesta-Gragera_2015 | irrelevant | 0 | 0 | The study focuses on acetylsalicylic acid (ASA), not choline salicylate. |
+| popPK | Dang_2025 | irrelevant | 0 | 0 | The study investigates gut microbiome signatures predicting efficacy of 5-ASA (5-aminosalicylic acid) and contains no pharmacokinetic parameters for choline salicylate. |
+| PGx | Deng_2017 | not_relevant | 0 | 0 | The paper is about a rice mutant and does not involve human pharmacogenomics or choline salicylate. |
+| popPK | Deshpande_2001 | irrelevant | 0 | 0 | The paper describes the structure-activity relationship of influenza virus inhibitors, not the pharmacokinetics of choline salicylate. |
+| popPK | Ding_2026 | irrelevant | 0 | 0 | The paper is a study on gut microbiome and temperament in sheep and contains no pharmacokinetic data for choline salicylate. |
 | popPK | Dittert_1977 | irrelevant | 0 | 0 | The paper is a review discussing pharmacokinetic modeling for various drugs (sulfamethazine, dicloxacillin, salicylate) but does not report quantitative PK parameters for choline salicylate. |
-| PGx | Divya_2016 | not_relevant | 0 | 0 | The paper discusses plant genetics and resistance to insect pests, not human pharmacogenomics or choline salicylate. |
-| PGx | Dong_2017 | not_relevant | 0 | 0 | The paper studies plant proteomics and insect resistance, not human pharmacogenomics or choline salicylate PK/PD. |
-| popPK | Dubovská_1995 | irrelevant | 0 | 0 | The study focuses on acetylsalicylic acid (ASA) and salicylic acid, not choline salicylate. |
-| PGx | Fabro_2008 | not_relevant | 0 | 0 | The paper studies plant gene expression in response to fungal infection and is unrelated to human pharmacogenomics or choline salicylate. |
-| PGx | Ferreira_2025 | not_relevant | 0 | 0 | The paper studies wheat plant pathology and resistance to a fungal pathogen, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of choline salicylate. |
-| PGx | Fuller_2018 | not_relevant | 0 | 0 | The paper evaluates the safety pharmacology of 2-hydroxybenzylamine (2-HOBA), not choline salicylate, and does not report pharmacogenomic effects. |
-| popPK | Galbiati_2017 | irrelevant | 0 | 0 | The study is an in vitro toxicology assay for skin sensitization and does not report pharmacokinetic parameters for choline salicylate. |
-| PGx | Galindo-González_2020 | not_relevant | 0 | 0 | The paper studies plant-pathogen interactions in Brassica napus, not human pharmacogenomics or choline salicylate. |
-| PGx | Gautier_2018 | not_relevant | 0 | 0 | The paper studies somatic embryogenesis in Douglas-fir plants and does not involve human pharmacogenomics or the drug choline salicylate. |
+| PGx | Divya_2016 | not_relevant | 0 | 0 | The paper investigates plant genetics regarding rice resistance to gall midges and mentions salicylic acid in the context of plant defense mechanisms, not human pharmacogenomics of choline salicylate. |
+| PGx | Dong_2017 | not_relevant | 0 | 0 | The paper analyzes plant defense responses (salicylic acid pathways) in rice genotypes against an insect pest and does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
+| popPK | Dubovská_1995 | irrelevant | 0 | 0 | The paper studies acetylsalicylic acid (aspirin) and its metabolites, not choline salicylate. |
+| PGx | Fabro_2008 | not_relevant | 0 | 0 | The paper reports on plant gene expression in response to fungal infection, not human pharmacogenomics of choline salicylate. |
+| PGx | Ferreira_2025 | not_relevant | 0 | 0 | The paper studies wheat plant defense mechanisms against a fungal pathogen, not human pharmacogenomics. |
+| PGx | Fuller_2018 | not_relevant | 0 | 0 | The paper studies the safety pharmacology of 2-hydroxybenzylamine (2-HOBA), not choline salicylate, and does not report pharmacogenomic effects. |
+| popPK | Galbiati_2017 | irrelevant | 0 | 0 | The study is an in vitro toxicology study on skin sensitization using benzyl salicylate (not choline salicylate) and reports no pharmacokinetic parameters. |
+| PGx | Galindo-González_2020 | not_relevant | 0 | 0 | The paper studies plant-pathogen interactions in Brassica napus, not the pharmacogenomics of the drug choline salicylate. |
+| PGx | Gautier_2018 | not_relevant | 0 | 0 | The paper focuses on plant somatic embryogenesis in Douglas-fir and does not report pharmacogenomic effects on human pharmacokinetic or pharmacodynamic parameters for choline salicylate. |
 | popPK | Gawarammana_2011 | irrelevant | 0 | 0 | The paper is a review of paraquat poisoning and does not report pharmacokinetic parameters for choline salicylate. |
-| PGx | Gebauer_2017 | not_relevant | 0 | 0 | The paper studies plant genetics (Arabidopsis) and plant defense mechanisms, not human pharmacogenomics or the drug choline salicylate. |
-| popPK | Gousiadou_2023 | irrelevant | 0 | 0 | The paper is an in silico QSAR study on PAMPA permeability for SARS-CoV-2 drugs and does not report pharmacokinetic parameters for choline salicylate. |
+| PGx | Gebauer_2017 | not_relevant | 0 | 0 | The paper studies plant genetics (Arabidopsis SWEET mutants) and defense responses to fungal pathogens, and has no relevance to human pharmacogenomics or choline salicylate. |
+| popPK | Gousiadou_2023 | irrelevant | 0 | 0 | The paper is a QSAR study on PAMPA permeability of SARS-CoV-2 candidate molecules and does not study choline salicylate or report its pharmacokinetic parameters. |
 | popPK | Gu_2018 | irrelevant | 0 | 0 | no_text gate: only 184 chars of text extracted (&lt; 400) |
-| popPK | Guinea_2008 | irrelevant | 0 | 0 | The paper describes the electrochemical degradation of salicylic acid in an aqueous medium, which is a chemical engineering/environmental study, not a pharmacokinetic study of choline salicylate. |
+| popPK | Guinea_2008 | irrelevant | 0 | 0 | The paper is an in-vitro study on the electrochemical mineralization of salicylic acid, not a pharmacokinetic study of choline salicylate in vivo. |
 | PD | Gupta_1982 | not_relevant | 0 | 0 | The paper reports PK parameters (AUC, t1/2) for aspirin and phenylbutazone, not PD parameters or exposure-response relationships for choline salicylate. |
-| PGx | Gómez-Tabales_2020 | not_relevant | 0 | 0 | The paper studies the modulation of CYP2C9 activity by cytochrome b5 using salicylic acid as a substrate, but it does not report pharmacogenomic effects (gene variants) on the PK/PD of choline salicylate. |
-| popPK | Hadi_2025 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of rosiglitazone in tramadol-induced Parkinsonian rats and does not report pharmacokinetic parameters for choline salicylate. |
-| PGx | Haigler_1992 | not_relevant | 0 | 0 | The paper describes microbial biodegradation of aromatic compounds and does not involve human pharmacogenomics or choline salicylate PK/PD. |
-| popPK | Han_2023 | irrelevant | 0 | 0 | The paper studies plant physiology and signal transmission in Salvia miltiorrhiza, not the pharmacokinetics of choline salicylate. |
+| PGx | Gómez-Tabales_2020 | not_relevant | 2 | 1 | The study investigates the modulation of salicylic acid (salicylate) hydroxylation by cytochrome b5 using antibodies and recombinant proteins in vitro, rather than a genetic variant's effect on the pharmacokinetics of choline salicylate. |
+| popPK | Hadi_2025 | irrelevant | 0 | 0 | The study focuses on the neuroprotective effects of rosiglitazone in a rat model of Parkinson's disease and does not investigate the pharmacokinetics of choline salicylate. |
+| PGx | Haigler_1992 | not_relevant | 0 | 0 | The paper describes the biodegradation of aromatic compounds by bacteria, not the pharmacokinetics or pharmacodynamics of choline salicylate in humans. |
+| popPK | Han_2023 | irrelevant | 0 | 0 | The study is a plant biology investigation into signal transduction in Salvia miltiorrhiza (Danshen) and does not involve the drug choline_salicylate. |
 | PD | Hartwig-Otto_1983 | not_relevant | 1 | 0 | The text is a general review of pharmacokinetics and pharmacodynamics principles for analgesics, mentioning salicylate elimination kinetics but providing no specific exposure-response or dose-response data or numeric PD parameters for choline salicylate. |
-| popPK | Henschel_1997 | irrelevant | 0 | 0 | The paper is an ecotoxicological study of salicylic acid and other drugs, not a pharmacokinetic study of choline salicylate. |
+| popPK | Henschel_1997 | irrelevant | 0 | 0 | The paper is an environmental hazard assessment examining the toxicity and degradability of pharmaceuticals (including salicylic acid, a metabolite related to choline salicylate) in aquatic organisms, containing no pharmacokinetic data. |
 | PD | Henschel_1997 | not_relevant | 0 | 0 | The paper reports ecotoxicological EC50 values for salicylic acid (a metabolite), not choline salicylate, and does not provide a pharmacodynamic exposure-response model or numeric PD parameters for the specified drug. |
-| PGx | Hill_2016 | not_relevant | 0 | 0 | The paper studies plant transcriptomics in kiwifruit, not human pharmacogenomics or choline salicylate. |
-| popPK | Hiromoto_2006 | irrelevant | 0 | 0 | The paper describes the molecular mechanism of a bacterial transcriptional regulator (MobR) and does not contain any pharmacokinetic data for choline salicylate. |
+| PGx | Hill_2016 | not_relevant | 0 | 0 | The paper investigates plant physiology and transcriptome changes in kiwifruit, unrelated to human pharmacogenomics or choline salicylate. |
+| popPK | Hiromoto_2006 | irrelevant | 0 | 0 | The paper describes the molecular biology of a bacterial transcriptional regulator (MobR) in Comamonas testosteroni and contains no pharmacokinetic data for choline salicylate. |
 | popPK | Ho_2020 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Ho_2020 | not_relevant | 0 | 0 | The paper investigates the allelopathic potential of rice extracts and identifies specific allelochemicals (e.g., salicylic acid, cinnamic acid) via metabolomics, but it does not report a pharmacodynamic or exposure-response relationship for choline salicylate. |
-| popPK | Hou_2026 | irrelevant | 0 | 0 | The paper investigates selenium peptides for Parkinson's disease and does not study choline salicylate pharmacokinetics. |
-| PGx | Huang_2016 | not_relevant | 0 | 0 | The paper studies plant biocontrol and gene expression in tomatoes, not human pharmacogenomics or choline salicylate PK/PD. |
-| PGx | Huang_2018 | not_relevant | 0 | 0 | The paper studies sugarcane plant genetics and fungal disease resistance, not human pharmacogenomics or choline salicylate. |
-| popPK | Hung_1998 | irrelevant | 0 | 0 | The study investigates O-acyl esters of salicylic acid (aspirin analogues) in rat liver, not choline salicylate. |
+| popPK | Hou_2026 | irrelevant | 0 | 0 | The paper investigates selenium peptides in Parkinson's disease models and does not involve choline salicylate or report pharmacokinetic parameters for it. |
+| PGx | Huang_2016 | not_relevant | 0 | 0 | The paper concerns plant biocontrol and gene expression in tomatoes, not human pharmacogenomics of choline salicylate. |
+| PGx | Huang_2018 | not_relevant | 0 | 0 | The paper studies gene expression in sugarcane plants in response to a fungal infection and is unrelated to the pharmacogenomics of choline salicylate. |
+| popPK | Hung_1998 | irrelevant | 1 | 2 | The study investigates the pharmacokinetics of O-acyl salicylic acid esters (aspirin analogues) in rat livers, not the drug choline salicylate. |
 | popPK | Hurni_1993 | irrelevant | 0 | 0 | no_text gate: only 225 chars of text extracted (&lt; 400) |
 | PD | Hurni_1993 | not_relevant | 0 | 0 | The paper studies sodium salicylate, not choline salicylate, and focuses on permeability enhancement mechanisms rather than pharmacodynamic exposure-response modeling. |
-| popPK | Hussein_1994 | irrelevant | 0 | 0 | The study investigates salicylic acid (not choline salicylate) in an isolated perfused rat liver model, which does not report population PK parameters for the target drug. |
+| popPK | Hussein_1994 | irrelevant | 1 | 1 | The study investigates the distribution of salicylic acid in an isolated rat liver model, not the population pharmacokinetics of the parent drug choline salicylate. |
 | PD | Ibrahim_2024 | not_relevant | 0 | 0 | The text consists solely of supplementary figure captions for chemical characterization (NMR, Mass Spec) and molecular docking interactions, containing no pharmacodynamic, exposure-response, or dose-response data. |
 | PD | Iguchi_2022 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for natural compounds from Betula alba, not a pharmacodynamic or exposure-response relationship for the drug choline salicylate. |
-| popPK | Isla_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for fosfomycin calcium, not choline salicylate. |
-| PGx | Jiang_2023 | not_relevant | 0 | 0 | The paper analyzes genetic diversity in tea plants and their aroma metabolites, not the pharmacogenomics of choline salicylate in humans. |
-| PGx | Jisha_2015 | not_relevant | 0 | 0 | The paper studies plant stress tolerance in rice and does not involve human pharmacogenomics or the drug choline salicylate. |
-| PGx | Joo_2015 | not_relevant | 0 | 0 | The paper evaluates UGT inhibition by NSAIDs in vitro and does not report pharmacogenomic effects on the PK/PD of choline salicylate. |
-| popPK | Jordan_2009 | irrelevant | 0 | 0 | The paper is a study on insect odorant receptors and their response to volatile compounds, not a pharmacokinetic study of choline salicylate. |
+| popPK | Isla_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for fosfomycin, not choline salicylate. |
+| PGx | Jiang_2023 | not_relevant | 0 | 0 | The paper analyzes genetic diversity in tea plants and the association of SNPs with volatile aroma compounds, not the pharmacogenomics of choline_salicylate in humans or animals. |
+| PGx | Jisha_2015 | not_relevant | 0 | 0 | The paper focuses on plant biology and stress tolerance in rice, not human pharmacogenomics or the pharmacokinetics of choline salicylate. |
+| PGx | Joo_2015 | not_relevant | 0 | 0 | The paper investigates UGT inhibition by NSAIDs (including salicylic acid, not choline salicylate) in vitro and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Jordan_2009 | irrelevant | 0 | 0 | The paper describes odorant receptors in moths and their recognition of methyl salicylate, which is a different compound from choline salicylate, and contains no pharmacokinetic data. |
 | PD | Jordan_2009 | not_relevant | 0 | 0 | The paper reports odorant receptor sensitivity (EC50) for methyl salicylate and citral in insects, which is unrelated to the pharmacodynamics of the drug choline salicylate. |
-| popPK | Jordan_2021 | irrelevant | 0 | 0 | The paper is a medical education study comparing teaching methods for salicylate toxicity and contains no pharmacokinetic data for choline salicylate. |
-| PGx | Joshi_2026 | not_relevant | 0 | 0 | The paper studies plant gene regulation in Ocimum sanctum and Arabidopsis, not human pharmacogenomics or choline salicylate PK/PD. |
-| popPK | Jovanović_2024 | irrelevant | 0 | 0 | The paper is a population pharmacokinetic study of vedolizumab, not choline salicylate. |
-| popPK | Julien_1988 | irrelevant | 0 | 0 | The paper is a mechanistic study on red blood cell anion transport inhibition and does not report pharmacokinetic parameters for choline salicylate. |
+| popPK | Jordan_2021 | irrelevant | 0 | 0 | The paper is a medical education study regarding active learning techniques, not a pharmacokinetic study, and contains no PK parameters for choline salicylate. |
+| PGx | Joshi_2026 | not_relevant | 0 | 0 | The paper focuses on the transcriptional regulation of phenylpropanoid metabolism in plants (Ocimum sanctum) and has no relation to human pharmacogenomics or the drug choline_salicylate. |
+| popPK | Jovanović_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vedolizumab, not choline salicylate. |
+| popPK | Julien_1988 | irrelevant | 0 | 0 | The paper studies the mechanism of anion transport inhibition in red blood cells and mentions salicylate only as a secondary inhibitor, containing no pharmacokinetic parameters for choline salicylate. |
 | PD | Julien_1988 | not_relevant | 0 | 0 | The paper studies the inactivation of anion transport by arginine-specific reagents (HNPG, phenylglyoxal) and mentions salicylate only as a protective agent, without reporting any pharmacodynamic or exposure-response parameters for choline salicylate. |
-| popPK | Kakehata_1996 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on guinea-pig outer hair cells investigating the mechanism of salicylate action, not a pharmacokinetic study reporting disposition parameters for choline salicylate. |
-| popPK | Kaldestad_1975 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of indomethacin, with salicylate (from acetylsalicylic acid) serving only as a co-administered agent for interaction assessment, and no PK parameters for choline salicylate are reported. |
-| PGx | Kanupriya_2025 | not_relevant | 0 | 0 | The paper studies sunburn mitigation in dragon fruit plants and does not involve human pharmacogenomics or choline salicylate. |
-| PGx | Karimi_2025 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on plant stress tolerance, not the pharmacogenomics of choline salicylate in humans. |
-| popPK | Kaur_2025 | irrelevant | 0 | 0 | The study is an in vitro mechanistic and molecular modeling investigation of novel NSAID analogues, not a pharmacokinetic study of choline salicylate. |
-| PGx | Kaya_2020 | not_relevant | 0 | 0 | The paper studies salicylic acid in maize plants, not choline salicylate in humans, and does not involve pharmacogenomics. |
-| PGx | Khan_2025 | not_relevant | 0 | 0 | The paper studies arsenic and submergence stress in rice genotypes, not the pharmacogenomics of choline salicylate in humans. |
-| popPK | Khan_2026 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study analyzing adverse drug withdrawal events in databases and does not report any pharmacokinetic parameters for choline salicylate. |
+| popPK | Kakehata_1996 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of the mechanism of action of salicylate on outer hair cells, not a pharmacokinetic study. |
+| popPK | Kaldestad_1975 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of indomethacin and the interaction with acetylsalicylic acid, not choline salicylate. |
+| PGx | Kanupriya_2025 | not_relevant | 0 | 0 | The paper is a plant physiology study on dragon fruit sunburn mitigation and contains no data on human pharmacogenomics, pharmacokinetics, or the drug choline salicylate. |
+| PGx | Karimi_2025 | not_relevant | 0 | 0 | The paper studies the effects of salicylic acid on plant stress tolerance and genotype response, not human pharmacogenomics of choline salicylate. |
+| popPK | Kaur_2025 | irrelevant | 0 | 0 | The study focuses on the in vitro synthesis and COX inhibition of aspirin/ibuprofen analogues, not on the pharmacokinetics of choline salicylate. |
+| PGx | Kaya_2020 | not_relevant | 0 | 0 | The paper studies salicylic acid in maize plants and is unrelated to human pharmacogenomics or choline salicylate. |
+| PGx | Khan_2025 | not_relevant | 0 | 0 | The paper investigates plant physiology (rice) and arsenic tolerance, not human pharmacogenomics of choline salicylate. |
+| popPK | Khan_2026 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study on adverse drug withdrawal events and does not report pharmacokinetic parameters for choline salicylate. |
 | popPK | Khatua_2015 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | Khatua_2015 | not_relevant | 0 | 0 | The paper studies the taxonomy and antioxidant/antimicrobial properties of a mushroom extract (Russula senecis) and does not report any pharmacodynamic or exposure-response data for choline salicylate. |
-| popPK | Kim_2025 | irrelevant | 0 | 0 | The paper is a horticultural study on the vase life of cut lisianthus flowers using salicylic acid, not a pharmacokinetic study of choline salicylate. |
-| popPK | Kimitsuki_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ototoxic drugs on hair cell channels and does not report pharmacokinetic parameters for choline salicylate. |
+| popPK | Kim_2025 | irrelevant | 0 | 0 | The paper studies the vase life of cut lisianthus flowers treated with salicylic acid, which is unrelated to the pharmacokinetics of choline salicylate. |
+| popPK | Kimitsuki_1994 | irrelevant | 0 | 0 | The study investigates the mechanism of action (MET channel blockade) of ototoxic drugs in chick hair cells and does not report pharmacokinetic parameters for choline salicylate. |
 | PD | Kimitsuki_1994 | not_relevant | 0 | 0 | The paper investigates dihydrostreptomycin, cisplatin, and acetyl salicylate, but does not report any pharmacodynamic data or parameters for choline salicylate. |
 | popPK | Koh_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for aspirin (ASA) and its metabolite salicylic acid (SA), not for the specific drug choline salicylate. |
-| popPK | Kotschwar_2009 | irrelevant | 2 | 2 | The study reports pharmacokinetic parameters for sodium salicylate, not the target drug choline salicylate. |
-| PGx | Kováčik_2012 | not_relevant | 0 | 0 | The paper studies aluminum uptake in plants using salicylic acid, not the pharmacogenomics of choline salicylate in humans. |
-| PGx | Kuehl_2006 | not_relevant | 0 | 0 | The paper investigates the enzymatic glucuronidation of salicylic acid (an aspirin metabolite) by UGTs but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters for choline salicylate. |
-| PGx | Kuzmina_2025 | not_relevant | 0 | 0 | The paper analyzes transcriptomic responses in pea plants to symbiotic inoculation and does not involve human pharmacogenomics or the drug choline salicylate. |
+| popPK | Kotschwar_2009 | irrelevant | 0 | 0 | The study investigates sodium salicylate, a different chemical entity than the target drug choline salicylate. |
+| PGx | Kováčik_2012 | not_relevant | 0 | 0 | The paper focuses on the effect of metabolic regulators on aluminum uptake and toxicity in chamomile plants, not on human pharmacogenomics or choline salicylate pharmacokinetics/dynamics. |
+| PGx | Kuehl_2006 | not_relevant | 0 | 0 | The paper characterizes UGT enzymes responsible for salicylate glucuronidation in vitro but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters of choline salicylate. |
+| PGx | Kuzmina_2025 | not_relevant | 0 | 0 | The paper analyzes transcriptomic responses in pea plants to symbiotic inoculation and does not involve human pharmacogenomics or choline salicylate. |
 | PD | Laneuville_1994 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition kinetics (IC50) for various NSAIDs, but does not mention choline salicylate or provide in vivo pharmacodynamic/exposure-response data. |
-| popPK | Ledwidge_2012 | irrelevant | 0 | 0 | The study focuses on the prodrug ST0702 (niacin-aspirin) in non-human primates, not choline salicylate. |
-| PGx | Lennard_1998 | not_relevant | 0 | 0 | The paper discusses thiopurine methyltransferase and thiopurines, not choline salicylate. |
-| PGx | Li_2017_2 | not_relevant | 0 | 0 | The paper studies plant genetics and insect pest resistance in rice, not human pharmacogenomics or the pharmacokinetics of choline salicylate. |
+| popPK | Ledwidge_2012 | irrelevant | 0 | 0 | The study investigates the prodrug isosorbide-5-nicotinate-2-aspirinate (ST0702) and its metabolites (aspirin/niacin/salicylic acid), not choline salicylate. |
+| PGx | Lennard_1998 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of thiopurines and mentions aspirin/salicylic acid only as a potential inhibitor of TPMT, without reporting any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of choline salicylate. |
+| PGx | Li_2017 | not_relevant | 2 | 0 | The study reports an association with a pharmacokinetic parameter (salicylic acid concentration), but the exposure is aspirin (which metabolizes to salicylate), not choline_salicylate, and it reports an association rather than a fitted pharmacogenomic effect size. |
+| PGx | Li_2017_2 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in rice against insects and does not involve human pharmacogenomics or the drug choline salicylate. |
 | PD | Li_2019 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for PTP1B inhibition, which is a pharmacological potency metric, not a pharmacodynamic (exposure-response or dose-response) relationship in a biological system with numeric PD parameters like Emax or EC50. |
 | PD | Li_2024 | not_relevant | 0 | 0 | The paper focuses on the endocrine-disrupting mechanism of salicylates on neurosteroidogenesis (5α-reductase inhibition) and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for choline salicylate. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the preparation and efficacy of chitosan nanocarriers for plant disease control, not the pharmacokinetics of choline salicylate. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on chitosan nanocarriers for plant disease control in ginseng, not the pharmacokinetics of choline salicylate. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper studies chitosan nanocarriers loaded with salicylic acid and berberine for plant disease control, not the pharmacodynamics of choline salicylate in humans or animals. |
-| PGx | Liao_2026 | not_relevant | 0 | 0 | The paper investigates plant salt tolerance and microbiome interactions, not human pharmacogenomics or the pharmacokinetics of choline salicylate. |
-| PGx | Liao_2026_2 | not_relevant | 0 | 0 | The paper studies endophytic microbiomes and metabolomics in cucumber plants, not human pharmacogenomics or choline salicylate pharmacokinetics. |
-| PGx | Lihavainen_2023 | not_relevant | 0 | 0 | The paper studies plant physiology and salicylic acid metabolism in aspen trees, not human pharmacogenomics or the pharmacokinetics of choline salicylate. |
-| PGx | Liu_2015 | not_relevant | 0 | 0 | The paper studies plant physiology and nitric oxide in Trifolium repens, not human pharmacogenomics or choline salicylate. |
+| PGx | Liao_2026 | not_relevant | 0 | 0 | The paper focuses on plant salt tolerance, microbiome interactions, and metabolic pathways in poplar trees, and does not involve human pharmacogenomics or the drug choline_salicylate. |
+| PGx | Liao_2026_2 | not_relevant | 0 | 0 | The paper focuses on plant microbiomics and metabolomics in cucumbers and has no relevance to human pharmacogenomics or drug pharmacokinetics. |
+| PGx | Lihavainen_2023 | not_relevant | 0 | 0 | The paper investigates plant physiology and salicylic acid signaling in aspen trees, not human pharmacogenomics of choline salicylate. |
+| PGx | Liu_2015 | not_relevant | 0 | 0 | The paper studies the physiological effects of nitric oxide modulators on plant physiology (Trifolium repens) under cadmium stress, containing no data on humans, genetics, or choline salicylate pharmacokinetics/pharmacodynamics. |
 | PD | Liu_2016 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and cellular activity for PTP1B inhibitors, not a pharmacodynamic exposure-response or dose-response relationship for choline salicylate. |
-| popPK | Liu_2020_2 | irrelevant | 0 | 0 | The study focuses on methyl, ethyl, and glycol salicylates, not choline salicylate, and primarily deals with in vitro skin permeation and diffusion modeling. |
-| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper investigates phenolic extracts from rapeseed meal and their effect on alpha-glucosidase, not the pharmacogenomics of choline salicylate. |
-| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a plant biology study on Isatis indigotica cultivars and does not involve the drug choline salicylate or any pharmacokinetic analysis. |
-| PGx | Lornac_2020 | not_relevant | 0 | 0 | The paper studies sulfur metabolism in Arabidopsis plants and does not involve the drug choline salicylate or human pharmacogenomics. |
-| popPK | Lourenço-Silva_2026 | irrelevant | 0 | 0 | The paper is a clinical effectiveness study on allergic rhinitis medications (antihistamines and corticosteroids) and does not involve choline salicylate or pharmacokinetic parameters. |
-| popPK | Lu_2026 | irrelevant | 0 | 0 | The study focuses on tigecycline-associated acute pancreatitis and does not report pharmacokinetic parameters for choline salicylate. |
-| PGx | Luchessi_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of salicylic acid metabolites in the context of aspirin and clopidogrel therapy, not choline salicylate. |
-| PGx | Luis_2025 | not_relevant | 0 | 0 | The paper investigates plant genetics and induced systemic resistance in tomatoes, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of choline salicylate. |
-| popPK | Luo_2026 | irrelevant | 0 | 0 | The paper studies cinnamic acid derivatives for plant viral disease control and does not involve choline salicylate pharmacokinetics. |
+| popPK | Liu_2020_2 | irrelevant | 0 | 0 | The study focuses on methyl, ethyl, and glycol salicylates, not choline salicylate, and is primarily an in-vitro/in-vivo correlation study. |
+| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper characterizes phenolic compounds from rapeseed meal and their effects on alpha-glucosidase, with no mention of choline salicylate or pharmacogenomic interactions. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a comparative metabolomic and transcriptomic study of Isatis indigotica plant varieties, unrelated to the pharmacokinetics of choline salicylate. |
+| PGx | Lornac_2020 | not_relevant | 0 | 0 | The paper investigates sulfur metabolism in Arabidopsis plants and is completely unrelated to human pharmacogenomics or the pharmacokinetics/pharmacodynamics of choline salicylate. |
+| popPK | Lourenço-Silva_2026 | irrelevant | 0 | 0 | The paper is a clinical study on allergic rhinitis medications and does not report pharmacokinetic parameters for choline salicylate. |
+| popPK | Lu_2026 | irrelevant | 0 | 0 | The paper studies tigecycline-associated acute pancreatitis in humans and does not involve choline salicylate or pharmacokinetic parameter estimation. |
+| PGx | Luchessi_2017 | not_relevant | 0 | 0 | The paper investigates the PK of salicylic acid metabolites (from aspirin) and clopidogrel, not choline salicylate. |
+| PGx | Luis_2025 | not_relevant | 0 | 0 | The paper investigates induced systemic resistance in tomato genotypes and mentions salicylic acid signaling pathways in plants, but it does not report any pharmacogenomic effects on the PK/PD of the drug choline salicylate in humans or other mammalian systems. |
+| popPK | Luo_2026 | irrelevant | 0 | 0 | The paper is a study on novel cinnamic acid derivatives for plant viral disease control in tobacco and does not report pharmacokinetic parameters for choline salicylate. |
 | PD | Luo_2026 | not_relevant | 0 | 0 | The paper studies cinnamic acid derivatives (specifically Compound B7) for plant viral disease control, not choline salicylate. |
-| PGx | Löwhagen_2000 | not_relevant | 0 | 0 | The paper discusses azathioprine and mentions salicylic acid derivatives as inhibitors of TPMT, but it does not report pharmacogenomic effects on the PK/PD of choline salicylate itself. |
-| PGx | Ma_2021 | not_relevant | 0 | 0 | The paper studies flowering time in alfalfa plants and is unrelated to human pharmacogenomics or choline salicylate. |
-| PGx | Maestro-Gaitán_2025 | not_relevant | 0 | 0 | The paper investigates drought tolerance in quinoa plants and does not involve the drug choline_salicylate or human pharmacogenomics. |
-| popPK | Magavern_2025 | irrelevant | 0 | 0 | The study focuses on pharmacogenomics and family history of amitriptyline discontinuation, and does not involve choline salicylate or report any pharmacokinetic parameters. |
+| PGx | Löwhagen_2000 | not_relevant | 0 | 0 | The paper discusses the pharmacogenomics of azathioprine and the interaction with salicylic acid derivatives, but does not report PK/PD parameters for choline_salicylate itself. |
+| PGx | Ma_2021 | not_relevant | 0 | 0 | The paper investigates flowering time regulation in alfalfa plants, which is unrelated to human pharmacogenomics or the pharmacokinetics/pharmacodynamics of choline salicylate. |
+| PGx | Maestro-Gaitán_2025 | not_relevant | 0 | 0 | The paper investigates drought tolerance in quinoa plants and does not involve human pharmacogenomics or the drug choline salicylate. |
+| popPK | Magavern_2025 | irrelevant | 0 | 0 | The paper investigates pharmacogenomics and medication discontinuation of amitriptyline, not the pharmacokinetics of choline salicylate. |
 | PD | Makhaeva_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50, Ki) for tacrine-salicylic acid conjugates, not pharmacodynamic exposure-response data for choline salicylate. |
-| PGx | Mangwanda_2016 | not_relevant | 0 | 0 | The paper studies plant-pathogen interactions and phytohormone signaling, not human pharmacogenomics or choline salicylate. |
-| PGx | Mano_2007 | not_relevant | 0 | 0 | The study investigates in vitro enzyme inhibition of UGT2B7 by NSAIDs and does not report pharmacogenomic effects on the PK/PD of choline salicylate. |
-| popPK | Marcin_2023 | irrelevant | 0 | 0 | The paper is an ecotoxicological study on UV filters (including 2-ethylhexyl salicylate) and does not report pharmacokinetic parameters for choline salicylate. |
+| PGx | Mangwanda_2016 | not_relevant | 0 | 0 | The paper studies fungal pathogenicity in plants, not the pharmacogenomics of choline salicylate in humans. |
+| PGx | Mano_2007 | not_relevant | 0 | 0 | The paper investigates in vitro enzyme inhibition of UGT2B7 by various NSAIDs, including salicylic acid, but does not report any pharmacogenomic studies, gene variants, or clinical pharmacokinetic/pharmacodynamic parameters for choline salicylate. |
+| popPK | Marcin_2023 | irrelevant | 0 | 0 | The study is an ecotoxicology assessment of UV filters and does not involve choline salicylate or any pharmacokinetic analysis. |
 | PD | Marcin_2023 | not_relevant | 0 | 0 | The paper reports ecotoxicological LC50/EC50 values for UV filters, not pharmacodynamic exposure-response relationships for the drug choline salicylate. |
-| popPK | Matared_2026 | irrelevant | 0 | 0 | The paper is a plant pathology study on biocontrol bacteria and does not involve the drug choline salicylate or any pharmacokinetic analysis. |
-| popPK | Mathurkar_2018 | irrelevant | 0 | 0 | The study investigates sodium salicylate (salicylic acid) in sheep, not choline salicylate. |
+| popPK | Matared_2026 | irrelevant | 0 | 0 | The paper is a plant pathology study on biocontrol bacteria and defense signaling, containing no pharmacokinetic data for choline salicylate. |
+| popPK | Mathurkar_2018 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of salicylic acid from sodium salicylate, which is a different chemical entity from choline salicylate. |
 | PD | Mathurkar_2018 | not_relevant | 1 | 0 | The paper reports only pharmacokinetic parameters and explicitly states that PK/PD modelling is required to determine the effective concentration range, providing no numeric PD parameters or dose-response analysis. |
-| PGx | Mei_2015 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on copper toxicity in cotton plants, not the pharmacogenomics of choline salicylate in humans. |
+| PGx | Mei_2015 | not_relevant | 0 | 0 | The study investigates the effect of salicylic acid on cotton plants under copper stress, which is unrelated to human pharmacogenomics of choline salicylate. |
 | PD | Mitchell_1993 | not_relevant | 0 | 0 | The paper does not mention choline salicylate; it evaluates other NSAIDs (including sodium salicylate) and does not report PK/PD or exposure-response relationships. |
-| popPK | Moore_2024 | irrelevant | 0 | 0 | The study focuses on salicylic acid and nicotine, not choline salicylate, and does not report systemic PK parameters for the target drug. |
-| PGx | Mostofa_2019 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on cadmium toxicity in rice plants, not the pharmacogenomics of choline salicylate in humans. |
+| popPK | Moore_2024 | irrelevant | 0 | 0 | The study focuses on salicylic acid and nicotine, not choline salicylate, and investigates topical skin bioavailability rather than systemic pharmacokinetic parameters. |
+| PGx | Mostofa_2019 | not_relevant | 0 | 0 | The paper studies the physiological effects of salicylic acid on rice plants exposed to cadmium stress, which is unrelated to human pharmacogenomics or choline salicylate. |
 | popPK | Mota_2021 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Mota_2021 | not_relevant | 0 | 0 | The paper studies ionic liquids and IL-APIs (including benzethonium salicylate and sodium salicylate) but does not report data for choline salicylate. |
-| popPK | Mukherjee_2025 | irrelevant | 0 | 0 | The study focuses on anti-tubercular drugs (kanamycin, fluoroquinolones, ethionamide, PASA, cycloserine) and does not involve choline salicylate. |
+| popPK | Mukherjee_2025 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Mukherjee_2025 | not_relevant | 2 | 1 | The paper does not study choline salicylate (it studies PASA and other anti-TB drugs) and reports no numeric PD parameters, only qualitative comparisons of PK indices (Cmax/MIC) between responders and non-responders. |
-| PGx | Mukherjee_2025 | not_relevant | 0 | 0 | The paper focuses on second-line anti-tubercular drugs in children and does not mention choline salicylate or pharmacogenomic effects. |
-| PGx | Murakoshi_2022 | not_relevant | 0 | 0 | The paper investigates the effect of salicylate derivatives on the protein localization of a specific SLC26A4 variant in cell culture, not the pharmacokinetic or pharmacodynamic parameters of choline salicylate in humans. |
-| popPK | Muramatsu_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cyclooxygenase inhibition and does not report pharmacokinetic parameters for choline salicylate. |
-| popPK | Nakijoba_2025 | irrelevant | 0 | 0 | The paper is a cross-sectional survey on medication use and safety during breastfeeding in Uganda and does not report any pharmacokinetic parameters for choline salicylate. |
-| PGx | Namdjoyan_2017 | not_relevant | 0 | 0 | The study investigates the physiological effects of salicylic acid on safflower plants under zinc stress, not the pharmacogenomics of choline salicylate in humans. |
-| PGx | Navarro_2011 | not_relevant | 0 | 0 | The paper focuses on aspirin metabolism and UGT induction, not choline salicylate pharmacogenomics. |
-| popPK | Ndovi_2006 | irrelevant | 1 | 0 | The study measures salicylate (the metabolite of aspirin, not choline salicylate) and reports tissue-to-blood ratios rather than standard PK parameters like clearance or volume. |
-| PGx | Nozaki_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between NSAIDs (including salicylate) and methotrexate, not the pharmacogenomics of choline salicylate. |
-| popPK | Obata_1999 | irrelevant | 0 | 0 | The study investigates dopamine oxidation and hydroxyl radical formation in rat striatum, using salicylic acid derivatives as a trapping agent, and does not report pharmacokinetic parameters for choline salicylate. |
-| PGx | Orf_2022 | not_relevant | 0 | 0 | The paper studies plant-pathogen interactions in Arabidopsis, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of choline salicylate. |
+| PGx | Mukherjee_2025 | not_relevant | 0 | 0 | The paper focuses on second-line anti-tubercular drugs, not choline salicylate. |
+| PGx | Murakoshi_2022 | not_relevant | 0 | 0 | The paper investigates the effects of salicylate derivatives on the protein localization of a variant (p.H723R) and cell toxicity in a cell culture model, rather than the pharmacokinetic or pharmacodynamic parameters of choline salicylate in humans. |
+| popPK | Muramatsu_1984 | irrelevant | 0 | 0 | The study is an in-vitro investigation of cyclooxygenase inhibition by NSAIDs and does not report any pharmacokinetic parameters for choline salicylate. |
+| popPK | Nakijoba_2025 | irrelevant | 0 | 0 | The paper is a cross-sectional survey on medication use among breastfeeding women in Uganda and does not report any pharmacokinetic parameters for choline salicylate. |
+| PGx | Namdjoyan_2017 | not_relevant | 0 | 0 | The study investigates the effects of salicylic acid on safflower plants (botany), not the pharmacogenomics of choline salicylate in humans. |
+| PGx | Navarro_2011 | not_relevant | 2 | 2 | The study focuses on Aspirin (not Choline Salicylate), finds no effect for the tested UGT1A6 genotype, and attributes PK changes to diet/sex/ethnicity rather than pharmacogenomics. |
+| popPK | Ndovi_2006 | irrelevant | 0 | 0 | The study examines the pharmacokinetics of aspirin (measured as salicylate) and chloroquine, not choline salicylate. |
+| PGx | Nozaki_2007 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving methotrexate and salicylate, but does not report pharmacogenomic effects on choline salicylate. |
+| popPK | Obata_1999 | irrelevant | 0 | 0 | The study investigates hydroxyl radical formation and dopamine release in rat striatum, using salicylic acid as a trapping agent, but does not study choline salicylate pharmacokinetics. |
+| PGx | Orf_2022 | not_relevant | 0 | 0 | The paper analyzes plant pathogen resistance in Arabidopsis, not human pharmacogenomics or drug pharmacokinetics. |
 | PD | Othman_2023 | not_relevant | 0 | 0 | The paper reports IC50 values for novel 5-aminosalicylamide-4-thiazolinone hybrids, not choline salicylate, and does not provide a pharmacodynamic model or exposure-response relationship for the target drug. |
 | PD | Pacifici_1991 | not_relevant | 0 | 0 | The paper studies the metabolism of benzoic acid and the inhibition of hippuric acid formation by salicylic acid (a metabolite/related compound), not the pharmacodynamics of choline salicylate. |
-| popPK | Paclíková_2025 | irrelevant | 0 | 0 | The study investigates platelet aggregation and antiplatelet drug efficacy in diabetic patients, not the pharmacokinetics of choline salicylate. |
-| popPK | Page_2011 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro activity of a Stat3 inhibitor, not the pharmacokinetics of choline salicylate. |
-| PGx | Palikhe_2011 | not_relevant | 0 | 0 | The study investigates the association between gene polymorphisms and the clinical phenotype of aspirin-intolerant urticaria, but does not report changes in pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
-| PGx | Palmer_1992 | not_relevant | 0 | 0 | The paper investigates plant tissue culture and shoot regeneration in Brassica campestris, not human pharmacogenomics or choline salicylate. |
+| popPK | Paclíková_2025 | irrelevant | 0 | 0 | The paper investigates platelet aggregation and the effect of acetylsalicylic acid (ASA) and other antiplatelet drugs, not the pharmacokinetics of choline salicylate. |
+| popPK | Page_2011 | irrelevant | 0 | 0 | The paper is a mechanistic study on a Stat3 inhibitor ligand, not a pharmacokinetic study of choline salicylate. |
+| PGx | Palikhe_2011 | not_relevant | 0 | 0 | The study investigates associations between polymorphisms and the adverse reaction of urticaria, not the pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
+| PGx | Palmer_1992 | not_relevant | 0 | 0 | The paper discusses plant tissue culture and salicylic acid effects on *Brassica campestris*, which is unrelated to the pharmacogenomics of choline salicylate in humans. |
 | PD | Pan_2018 | not_relevant | 1 | 0 | The paper is a review discussing the potential synergy of aspirin and dietary components, mentioning dose-response concepts qualitatively but providing no numeric PD parameters or specific exposure-response data for choline salicylate. |
 | PD | Park_1988 | not_relevant | 0 | 0 | The text is a qualitative review of warfarin's mechanism of action and metabolism, mentioning salicylate only as a structural analog without providing any numeric PD parameters or exposure-response data for choline salicylate. |
-| popPK | Parton_2000 | irrelevant | 0 | 0 | The study investigates carprofen and DL-lysine acetyl salicylate (aspirin), not choline salicylate. |
+| popPK | Parton_2000 | irrelevant | 0 | 0 | The study investigates carprofen and acetylsalicylate (aspirin) in cats, not choline salicylate. |
 | PD | Paulus_1973 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters regarding choline salicylate or any other drug. |
 | popPK | Picone_2021 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Picone_2021 | not_relevant | 0 | 0 | The paper studies the effect of fragrance materials on copepods and does not mention choline salicylate or report any pharmacodynamic parameters. |
 | popPK | Pinder_2019 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
 | PD | Pinder_2019 | not_relevant | 0 | 0 | The paper focuses on physostigmine, not choline salicylate. |
-| popPK | Poźniak_2013 | irrelevant | 0 | 0 | The study investigates acetylsalicylic acid and sodium salicylate, not choline salicylate. |
-| popPK | Poźniak_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sodium salicylate (salicylate), not choline salicylate, which is a different chemical entity. |
-| PGx | Prerostova_2020 | not_relevant | 0 | 0 | The paper studies plant physiology (Arabidopsis thaliana) and does not involve human pharmacogenomics or the drug choline salicylate. |
-| PGx | Prescott_1983 | not_relevant | 0 | 0 | The paper discusses drug interactions involving aspirin and acetaminophen but does not report any pharmacogenomic effects on choline salicylate. |
-| PGx | Pál_2019 | not_relevant | 0 | 0 | The paper studies polyamine signaling in wheat plants, not human pharmacogenomics or choline salicylate. |
-| popPK | Rajakulendran_2025 | irrelevant | 0 | 0 | The paper is a natural product isolation and structural characterization study of N-salicyl-amino acids, not a pharmacokinetic study of choline salicylate. |
+| popPK | Poźniak_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acetylsalicylic acid (ASA) and sodium salicylate in chickens and turkeys, not choline salicylate. |
+| popPK | Poźniak_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sodium salicylate (salicylate) in chickens, not choline salicylate. |
+| PGx | Prerostova_2020 | not_relevant | 0 | 0 | Paper studies plant physiology (cold stress in Arabidopsis) and is unrelated to human pharmacogenomics of choline_salicylate. |
+| PGx | Prescott_1983 | not_relevant | 0 | 0 | The paper discusses drug interactions (ethanol, cimetidine) affecting analgesic toxicity but does not report any pharmacogenomic effects (gene variants) on the pharmacokinetics or pharmacodynamics of choline salicylate. |
+| PGx | Pál_2019 | not_relevant | 0 | 0 | The paper studies polyamine signaling in wheat plants and mentions salicylic acid as a plant hormone, not the pharmacogenomic effect of the drug choline salicylate. |
+| popPK | Rajakulendran_2025 | irrelevant | 0 | 0 | The paper describes the isolation and biological activity of N-salicyl-amino acid derivatives, not the pharmacokinetics of choline salicylate. |
 | PD | Rajakulendran_2025 | not_relevant | 0 | 0 | The paper reports the isolation and structural elucidation of N-salicyl-amino acids and their in-vitro antiparasitic activity (EC50), but does not study choline salicylate or report any pharmacokinetic/pharmacodynamic modeling or exposure-response relationships. |
 | PD | Ranade_2001 | not_relevant | 0 | 0 | The paper is a review of magnesium salts and does not contain any data, analysis, or numeric parameters for choline salicylate. |
-| popPK | Raschka_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lysine acetylsalicylate and acetylsalicylic acid, not choline salicylate. |
-| PGx | Redzic_2020 | not_relevant | 0 | 0 | The paper describes a clinical trial for treating warts with salicylic acid and an antiviral, focusing on HPV genotyping for treatment response, not pharmacogenomics of choline salicylate PK/PD. |
+| popPK | Raschka_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acetylsalicylic acid (Aspirin) and its prodrug Lys-ASA, not choline salicylate. |
+| PGx | Redzic_2020 | not_relevant | 0 | 0 | The paper is a study protocol for an antiviral/salicylic acid combination and does not investigate pharmacogenomic effects on PK/PD parameters. |
 | PD | Reingardiene_2006 | not_relevant | 1 | 0 | The text is a review article discussing general aspects of salicylate poisoning and treatment without providing specific numeric PD parameters or concentration-effect data for choline salicylate. |
-| PGx | Ren_2026 | not_relevant | 0 | 0 | The paper investigates plant microbiome and resistance to bacterial wilt in peanuts, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of choline salicylate. |
+| PGx | Ren_2026 | not_relevant | 0 | 0 | The paper investigates plant microbiology and resistance to bacterial wilt, not human pharmacogenomics. |
 | popPK | Roch-Ramel_1997 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
-| PGx | Rodríguez-Azorín_2025 | not_relevant | 0 | 0 | The paper studies plant stress responses in citrus and does not involve human pharmacogenomics or the drug choline salicylate. |
+| PGx | Rodríguez-Azorín_2025 | not_relevant | 0 | 0 | The paper studies plant stress physiology (citrus plants) and does not involve human pharmacogenomics or the drug choline salicylate. |
 | popPK | Rolli_2016 | irrelevant | 0 | 0 | no_text gate: only 171 chars of text extracted (&lt; 400) |
 | PD | Rolli_2016 | not_relevant | 0 | 0 | The paper focuses on the phytotoxic effects of plant extracts and does not involve choline salicylate or any pharmacodynamic modeling. |
-| PGx | Rosado_2021 | not_relevant | 0 | 0 | The paper studies bacterial succession during vermicomposting of a plant and does not involve human pharmacogenomics or choline salicylate pharmacokinetics. |
+| PGx | Rosado_2021 | not_relevant | 0 | 0 | The paper investigates bacterial succession in vermicomposting and is unrelated to choline salicylate pharmacology. |
 | popPK | Saeed_2019 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Saeed_2019 | not_relevant | 0 | 0 | The paper focuses on phytochemical profiles and antioxidant/antiproliferative activities of kiwifruit cultivars and does not mention choline salicylate or report any pharmacodynamic parameters. |
-| PGx | Salhab_2022 | not_relevant | 0 | 0 | The paper describes an analytical method for quantifying diclofenac metabolites and does not report pharmacogenomic effects on choline salicylate PK/PD. |
-| popPK | Santamaria_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rupatadine, not choline salicylate. |
-| PGx | Savani_2023 | not_relevant | 0 | 0 | The paper studies the agricultural application of salicylic acid nanoparticles in cotton plants, not the pharmacogenomics of choline salicylate in humans. |
-| popPK | Sharma_2011 | irrelevant | 0 | 0 | The paper describes the synthesis and biological evaluation of HIV-1 integrase inhibitors, not the pharmacokinetics of choline salicylate. |
+| PGx | Salhab_2022 | not_relevant | 0 | 0 | The paper focuses on the development of an HPLC method for quantifying diclofenac metabolites and does not report any pharmacogenomic data or effects on the PK/PD of choline salicylate. |
+| popPK | Santamaria_2021 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for rupatadine, not choline salicylate. |
+| PGx | Savani_2023 | not_relevant | 0 | 0 | The study focuses on agricultural nanotechnology and plant physiology (cotton), not human pharmacogenomics. |
+| popPK | Sharma_2011 | irrelevant | 0 | 0 | The paper describes the synthesis and antiviral activity (QSAR/IC50) of HIV-1 integrase inhibitors, not the pharmacokinetics of choline salicylate. |
 | popPK | Shen_2016 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Shen_2016 | not_relevant | 0 | 0 | The paper focuses on aspirin and warfarin interactions, not choline salicylate, and does not report PD parameters for the specified drug. |
-| popPK | Shen_2025 | irrelevant | 0 | 0 | The paper studies 3-hydroxydecanoic acid as a biopesticide and does not report pharmacokinetic parameters for choline salicylate. |
+| popPK | Shen_2025 | irrelevant | 0 | 0 | The study evaluates 3-hydroxydecanoic acid as a biopesticide in wheat and does not investigate the pharmacokinetics of choline salicylate. |
 | PD | Shen_2025 | not_relevant | 0 | 0 | The paper studies 3-hydroxydecanoic acid (3-HDA) as a biopesticide, not choline salicylate, and reports no pharmacodynamic parameters for the target drug. |
-| popPK | Shintaku_2007 | irrelevant | 0 | 0 | The study investigates salicylic acid (the metabolite) in an ex-vivo placental perfusion model, not the pharmacokinetics of the subject drug choline salicylate in vivo. |
-| popPK | Smith_1980 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on leucocyte chemokinesis and does not report pharmacokinetic parameters for choline salicylate. |
+| popPK | Shintaku_2007 | irrelevant | 1 | 0 | The study examines the parent compound salicylic acid (not choline salicylate) using an in vitro human placental perfusion model, reporting transport parameters rather than systemic pharmacokinetic parameters for choline salicylate. |
+| popPK | Smith_1980 | irrelevant | 0 | 0 | The study is an in vitro investigation of leukocyte chemokinesis, not a pharmacokinetic study of choline salicylate. |
 | PD | Smith_1980 | not_relevant | 0 | 0 | The paper reports dose-response data for salicylic acid, not choline salicylate, and does not provide specific numeric PD parameters (e.g., IC50) for the tested compounds. |
-| popPK | Song_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of p-aminobenzoic acid (PABA) and its metabolites, not choline salicylate. |
-| PGx | Stare_2015 | not_relevant | 0 | 0 | The paper studies plant-virus interactions and salicylic acid in potatoes, not human pharmacogenomics of choline salicylate. |
-| popPK | Steppan_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular signaling pathways using salicylate as an inhibitor, not a pharmacokinetic study of choline salicylate. |
-| popPK | Sturkenboom_2021 | irrelevant | 0 | 0 | The paper is a review of anti-tuberculosis drugs and does not contain any data or parameters for choline salicylate. |
-| PGx | Sundaravadivel_2025 | not_relevant | 0 | 0 | The study investigates aspirin, not choline salicylate. |
-| PGx | Suo_2012 | not_relevant | 0 | 0 | The paper reports the isolation of phenolic lipids from cashew nuts and their biological activities, not the pharmacogenomics of choline salicylate. |
-| popPK | Takechi_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for nemolizumab, not choline salicylate. |
-| popPK | Tan_2026 | irrelevant | 0 | 0 | The paper investigates plant alkaloids for antiviral activity in plants and does not involve choline salicylate or pharmacokinetic studies. |
-| popPK | Tang_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal bioactivity of arecoline derivatives, not the pharmacokinetics of choline salicylate. |
+| popPK | Song_1996 | irrelevant | 0 | 0 | The study investigates p-aminobenzoic acid (PABA) and its metabolites, not choline salicylate. |
+| PGx | Stare_2015 | not_relevant | 0 | 0 | The paper studies the interaction between Potato virus Y and potato plants, focusing on photosynthesis and metabolic responses, and does not involve the drug choline_salicylate or human pharmacogenomics. |
+| popPK | Steppan_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasoconstriction pathways using salicylate as a tool compound, not a pharmacokinetic study of choline salicylate. |
+| popPK | Sturkenboom_2021 | irrelevant | 0 | 0 | The paper is a review of anti-tuberculosis drugs (such as isoniazid, rifampicin, and ethambutol) and does not mention or report pharmacokinetic data for choline salicylate. |
+| PGx | Suo_2012 | not_relevant | 0 | 0 | The paper reports on the isolation and biological activity of phenolic lipids from cashew nuts, not the pharmacogenomics of choline salicylate. |
+| popPK | Takechi_2025 | irrelevant | 0 | 0 | The paper describes pharmacokinetic modeling for nemolizumab, not choline salicylate. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The paper concerns the isolation of alkaloids from lupine seeds and their anti-viral activity in plants, with no pharmacokinetic data for choline salicylate. |
+| popPK | Tang_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal bioactivity of novel arecoline derivatives, containing no pharmacokinetic data for choline salicylate. |
 | popPK | Thiessen_1983 | irrelevant | 0 | 0 | no_text gate: only 53 chars of text extracted (&lt; 400) |
 | PD | Thiessen_1983 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters regarding choline salicylate or any other drug. |
-| popPK | Thiessen_1984 | irrelevant | 0 | 0 | The study investigates acetylsalicylic acid and salicylic acid, not choline salicylate. |
-| PGx | Thomas_2015 | not_relevant | 0 | 0 | The study investigates gene expression and PGE2 levels in colon tissue, not pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
-| popPK | Tian_2017 | irrelevant | 0 | 0 | The study investigates aspirin (ASA) and its metabolite salicylic acid, not choline salicylate, and reports non-compartmental parameters for the wrong drug. |
-| popPK | Tian_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Panax notoginseng saponins with aspirin as a co-administered agent, not choline salicylate. |
-| PGx | Tlaye_2025 | not_relevant | 2 | 5 | The study explicitly states that genetic variants (SNPs) were not associated with aspirin nonresponsiveness or PK parameters; the reported effect is due to placental enzyme expression (GLYAT), not a germline gene variant. |
+| popPK | Thiessen_1984 | irrelevant | 0 | 0 | The study investigates acetylsalicylic acid (aspirin) and salicylic acid, not choline salicylate, and is conducted in ewes. |
+| PGx | Thomas_2015 | not_relevant | 1 | 0 | The study investigates gene expression changes in colon tissue, not pharmacokinetic or pharmacodynamic parameters (such as plasma concentration or receptor response) of choline salicylate. |
+| popPK | Tian_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aspirin (ASA) and its metabolite salicylic acid, not choline salicylate. |
+| popPK | Tian_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Panax notoginseng saponins with aspirin as an interacting agent, not on choline salicylate. |
+| PGx | Tlaye_2025 | not_relevant | 2 | 5 | The study explicitly states that SNPs of genes involved in aspirin pharmacokinetics were not associated with nonresponsiveness, and while it identifies a protein expression difference (GLYAT), it does not report a genotype-driven change in standard PK/PD parameters. |
 | PD | Toraman_2024 | not_relevant | 0 | 0 | The paper reports IC50 values for a crude algae extract, not for the specific drug choline salicylate, and does not provide a concentration-effect relationship or PD parameters for choline salicylate. |
-| popPK | Trdá_2019 | irrelevant | 0 | 0 | The paper studies the antifungal and plant defense elicitor properties of the saponin aescin in plants and fungi, and does not involve the drug choline salicylate or any pharmacokinetic parameters. |
-| popPK | Tunstall_1995 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of salicylate's effect on outer hair cell membrane capacitance, not a pharmacokinetic study of choline salicylate. |
+| popPK | Trdá_2019 | irrelevant | 0 | 0 | The paper studies the antifungal activity of the saponin aescin in plants and contains no data regarding choline salicylate pharmacokinetics. |
+| popPK | Tunstall_1995 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of salicylate's effect on guinea-pig outer hair cells, reporting no pharmacokinetic parameters (CL, V, etc.) for choline salicylate. |
 | PD | Tzima_2023 | not_relevant | 0 | 0 | The paper discusses the theoretical implementation of salicylate anions in lead detoxification but does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for choline salicylate. |
-| popPK | Udebuani_2021 | irrelevant | 0 | 0 | The study assesses acute toxicity of effluent and pharmaceuticals (including salicylic acid, not choline salicylate) on freshwater organisms and does not report pharmacokinetic parameters. |
+| popPK | Udebuani_2021 | irrelevant | 0 | 0 | This is an acute toxicity study in freshwater organisms assessing environmental impact, not a pharmacokinetic study for choline salicylate. |
 | PD | Udebuani_2021 | not_relevant | 0 | 0 | The paper reports acute toxicity (EC50/LC50) for a mixture of veterinary pharmaceuticals (including salicylic acid, not choline salicylate) on freshwater organisms, which is an environmental toxicology study, not a pharmacodynamic exposure-response analysis for a drug in a clinical or physiological context. |
 | popPK | Udebuani_2023 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Udebuani_2023 | not_relevant | 0 | 0 | The paper investigates the ecological risk of veterinary pharmaceuticals (including salicylic acid, not choline salicylate) in aquatic organisms and does not report pharmacodynamic or exposure-response relationships for choline salicylate. |
-| popPK | Ullah_2026 | irrelevant | 0 | 0 | The paper investigates the phytochemical and pharmacological properties of the plant Fingerhuthia africana, not the pharmacokinetics of choline salicylate. |
-| PGx | Veszelka_2018 | not_relevant | 0 | 0 | The paper compares in vitro cell culture models for BBB permeability and does not report pharmacogenomic effects on the PK/PD of choline salicylate. |
+| popPK | Ullah_2026 | irrelevant | 0 | 0 | The study focuses on the phytochemical and pharmacological evaluation of the plant *Fingerhuthia africana* and does not involve the drug choline salicylate. |
+| PGx | Veszelka_2018 | not_relevant | 0 | 0 | The paper compares cell culture models for BBB permeability using salicylate as a test compound, but does not report pharmacogenomic effects of gene variants on PK/PD parameters for choline salicylate. |
 | PD | Vidhya_2020 | not_relevant | 0 | 0 | The paper focuses on troxerutin and elastase inhibition, not choline salicylate. |
-| PGx | Visagie_2024 | not_relevant | 2 | 0 | The paper is a review discussing aspirin pharmacokinetics and mentions genetic variants as a factor in interindividual variation, but it does not report specific pharmacogenomic effects on PK/PD parameters for choline salicylate. |
-| popPK | Vitali_2006 | irrelevant | 0 | 0 | The paper describes the purification and characterization of a plant protein and does not contain any pharmacokinetic data for choline salicylate. |
-| PGx | Voora_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of aspirin's effect on gene expression (RUNX1) and disease outcomes, but does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
-| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper studies clopidogrel, not choline salicylate. |
-| PGx | Wang_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of salicylate-induced bacterial persistence in E. coli, not the pharmacokinetics or pharmacodynamics of choline salicylate in humans or the influence of human gene variants on its efficacy. |
-| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in tea plants against insects and does not involve human pharmacogenomics or the drug choline salicylate. |
-| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper is a study on plant agrochemicals and bacterial infection, not a pharmacokinetic study of choline salicylate. |
+| PGx | Visagie_2024 | not_relevant | 0 | 0 | The paper is a review of aspirin pharmacokinetics that explicitly identifies the lack of data on genetic variants as a shortcoming, but does not report any specific pharmacogenomic effect. |
+| popPK | Vitali_2006 | irrelevant | 0 | 0 | The paper describes the purification and characterization of a plant protein, not the pharmacokinetics of choline salicylate. |
+| PGx | Voora_2016 | not_relevant | 2 | 3 | The paper describes a pharmacogenomic effect of aspirin on gene expression (RUNX1) and cardiovascular outcomes, but it does not report a gene variant/genotype effect on the PK or PD parameters of choline salicylate (e.g., AUC, Cmax, or specific platelet inhibition metrics driven by genetics). |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The study focuses on the pharmacodynamics of clopidogrel (CYP2C19 polymorphisms), not on choline salicylate or its pharmacokinetics/pharmacodynamics. |
+| PGx | Wang_2017 | not_relevant | 0 | 0 | The paper investigates bacterial persistence induced by salicylate in E. coli, which is a microbiological mechanism, not a human pharmacogenomic effect on the PK or PD of choline salicylate. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in Camellia sinensis and does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on plant activators for bacterial diseases and does not involve the pharmacokinetics of choline salicylate. |
 | PD | Wang_2022 | not_relevant | 0 | 0 | The paper studies androst-4-ene derivatives as plant activators, not choline salicylate, and reports no exposure-response or PD relationship for the target drug. |
-| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper focuses on microbial metabolic engineering for salicylic acid production, not human pharmacogenomics or pharmacokinetics of choline salicylate. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a phytochemical study on plant diterpenoids and viral activity, unrelated to choline salicylate pharmacokinetics. |
-| PGx | Wassermann_2013 | not_relevant | 0 | 0 | The paper studies ABCG2 transport in dairy animals and mentions sodium salicylate, but does not report pharmacogenomic effects on PK/PD parameters for choline salicylate in humans. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | This paper concerns synthetic biology and industrial fermentation of salicylic acid in E. coli, not human pharmacogenomics. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper describes plant phytochemistry and antiviral activity against Tomato spotted wilt virus, with no pharmacokinetic data for choline salicylate. |
+| PGx | Wassermann_2013 | not_relevant | 0 | 0 | The study examines in vitro transport of sodium salicylate (a metabolite/related compound, not choline salicylate) via ABCG2 in dairy animal models, not human pharmacogenomic effects on PK/PD. |
 | PD | Watanabe_1994 | not_relevant | 0 | 0 | The paper studies MCI-186, not choline salicylate; salicylate is used only as a substrate in an in vitro assay. |
-| PGx | Wei_2018 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on tomato plants under cadmium stress, not the pharmacogenomics of choline salicylate in humans. |
-| popPK | Wilkinson_2005 | irrelevant | 0 | 0 | The paper is a structural biology study on a bacterial transcriptional regulator (HucR) and does not involve choline salicylate pharmacokinetics. |
+| PGx | Wei_2018 | not_relevant | 0 | 0 | The paper studies salicylic acid and Cd tolerance in tomato plants, not the pharmacogenomics of choline salicylate in humans. |
+| popPK | Wilkinson_2005 | irrelevant | 0 | 0 | The study investigates the molecular mechanism of uric acid binding to the bacterial transcriptional regulator HucR, not the pharmacokinetics of choline salicylate. |
 | PD | Wilson_1982 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the pharmacodynamic relationship. |
-| popPK | Winne_1987 | irrelevant | 0 | 0 | The study focuses on salicylic acid (not choline salicylate) in an in-situ rat model and does not report systemic pharmacokinetic parameters like clearance or volume for the subject drug. |
-| PGx | Wu_2001 | not_relevant | 0 | 0 | The paper studies sodium salicylate (not choline salicylate) and reports on CYP2E1 modulation and toxicity in cell lines, not pharmacogenomic effects on PK/PD parameters. |
-| popPK | Wu_2026 | irrelevant | 0 | 0 | The study investigates the toxicological mechanisms of 2-ethylhexyl salicylate (a different chemical) in yeast, not the pharmacokinetics of choline salicylate. |
-| PGx | Xie_2012 | not_relevant | 0 | 0 | The paper studies the metabolism of phospho-aspirin (MDC-22), not choline salicylate, and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Winne_1987 | irrelevant | 0 | 0 | The study investigates salicylic acid, not choline salicylate, and focuses on intestinal absorption mechanisms in rats rather than systemically dosing choline salicylate to determine its PK parameters. |
+| PGx | Wu_2001 | not_relevant | 0 | 0 | The paper investigates the effect of salicylate on CYP2E1-mediated toxicity, but it does not report any genetic variants or genotypes influencing the pharmacokinetic or pharmacodynamic parameters of choline salicylate. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The study investigates the toxicological mechanisms of 2-ethylhexyl salicylate (a different chemical) in yeast (Saccharomyces cerevisiae), not the pharmacokinetics of choline salicylate. |
+| PGx | Xie_2012 | not_relevant | 0 | 0 | The study focuses on phospho-aspirin (MDC-22), a different compound, and reports in vitro/in vivo metabolic profiles without specific pharmacogenomic analysis of choline salicylate. |
 | popPK | Xie_2020 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Xie_2020 | not_relevant | 0 | 0 | The paper focuses on the synthesis and antibacterial activity of fluorinated amychelin siderophores against Pseudomonas aeruginosa and does not mention choline salicylate or report any pharmacodynamic parameters for it. |
-| popPK | Xue_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of salicylic acid (a metabolite of aspirin), not choline salicylate, which is a distinct chemical entity. |
-| PGx | Yadu_2017 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on plant stress tolerance in Pisum sativum, not human pharmacogenomics or PK/PD of choline salicylate. |
-| popPK | Yang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of DEHA and MEHA in rats, not choline salicylate. |
-| popPK | Yao_2025 | irrelevant | 0 | 0 | The paper studies the insecticidal and antifungal bioactivity of methyl salicylate (MeSA) from essential oils, not the pharmacokinetics of choline salicylate. |
+| popPK | Xue_2018 | irrelevant | 3 | 0 | The study measures the metabolite salicylic acid rather than the parent drug choline salicylate, and no numeric parameter values are provided in the evidence. |
+| PGx | Yadu_2017 | not_relevant | 0 | 0 | The paper discusses the use of salicylic acid in plants (Pisum sativum) for salinity tolerance, which is unrelated to human pharmacogenomics or choline salicylate PK/PD. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of DEHA (Di(2-ethylhexyl) adipate) and its metabolite MEHA in rats, not choline salicylate. |
+| popPK | Yao_2025 | irrelevant | 0 | 0 | no_text gate: only 155 chars of text extracted (&lt; 400) |
 | PD | Yao_2025 | not_relevant | 0 | 0 | The paper studies methyl salicylate (a different compound) in an in vitro/insect bioassay context, not choline salicylate pharmacodynamics in a biological system. |
-| popPK | Yoon_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bepotastine, not choline salicylate. |
-| popPK | Yoshida_2007 | irrelevant | 0 | 0 | The study investigates salicylate (SA) or sodium salicylate, not choline salicylate, which is a different chemical entity. |
-| popPK | Yoshida_2008 | irrelevant | 2 | 1 | The study uses salicylate as a model compound to investigate the effects of vasoactive agents on dermatopharmacokinetics, rather than reporting standard population PK parameters for choline salicylate. |
-| PGx | Yu_2007 | not_relevant | 0 | 0 | The paper discusses a salicylic acid-based inhibitor of Lyp (PTPN22) in the context of autoimmune diseases, not the pharmacogenomics of choline salicylate. |
-| popPK | Yu_2023 | irrelevant | 0 | 0 | The paper is a plant physiology study on salicylic acid elicitation in plant roots, not a pharmacokinetic study of choline salicylate. |
+| popPK | Yoon_2024 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for bepotastine, not choline salicylate. |
+| popPK | Yoshida_2007 | irrelevant | 2 | 4 | The study investigates sodium salicylate (SA-Na), not choline salicylate, which is a different prodrug entity with distinct absorption and disposition characteristics. |
+| popPK | Yoshida_2008 | irrelevant | 0 | 0 | The study investigates the model compound salicylate, not the specific drug choline salicylate. |
+| PGx | Yu_2007 | not_relevant | 0 | 0 | The paper discusses Lyp inhibitors and autoimmune diseases, containing no data on choline_salicylate or pharmacogenomic effects. |
+| popPK | Yu_2023 | irrelevant | 0 | 0 | The study is an in vitro plant cell culture experiment examining salicylic acid as an elicitor for metabolite production, not a pharmacokinetic study of choline salicylate. |
 | PD | Yu_2023 | not_relevant | 0 | 0 | The paper studies salicylic acid as a plant elicitor in Oplopanax elatus roots, not choline salicylate in a pharmacological context, and reports no drug PD parameters. |
-| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper reviews pesticide metabolism in plants and does not discuss human pharmacogenomics or choline salicylate. |
-| popPK | Zhang_2022 | irrelevant | 0 | 0 | The paper is a systematic review of methotrexate pharmacokinetics, not choline salicylate, and contains no quantitative PK parameters for the subject drug. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper reviews pesticide metabolism in plants and is unrelated to human pharmacogenomics or choline salicylate. |
+| popPK | Zhang_2022 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
 | PGx | Zhang_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of methotrexate, not choline salicylate. |
 | popPK | Zhang_2024 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
 | PD | Zhang_2024 | not_relevant | 0 | 0 | The paper focuses on the isolation and biological activities of compounds from Thermopsis lupinoides and does not mention choline salicylate or report any pharmacodynamic parameters for it. |
-| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper investigates plant defense mechanisms against nematodes and does not involve human pharmacogenomics or the drug choline salicylate. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource for drug exposure detection and does not report pharmacokinetic parameters for choline salicylate. |
-| popPK | Zhao_2026 | irrelevant | 0 | 0 | The study investigates the therapeutic efficacy of a sialidase inhibitor (oseltamivir) in ulcerative colitis and does not report pharmacokinetic parameters for choline salicylate. |
-| popPK | Zhu_2018 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and fungicidal activity of phenazine-salicylic acid conjugates, containing no pharmacokinetic data for choline salicylate. |
-| PGx | Zhu_2020 | not_relevant | 0 | 0 | The paper studies plant genetics (rice blast resistance) and salicylic acid biosynthesis, not human pharmacogenomics of choline salicylate. |
-| PGx | van_2009 | not_relevant | 0 | 0 | The paper studies acetylsalicylic acid (ASA), not choline salicylate. |
-| PGx | van_2015 | not_relevant | 0 | 0 | The paper investigates genetic variation in the GLYAT gene and glycine conjugation pathway conservation, but does not report pharmacokinetic or pharmacodynamic effects of choline salicylate. |
-| PGx | van_2016 | not_relevant | 0 | 0 | The paper is a review that explicitly states there is no data on the influence of SNPs on enzyme activity or aspirin metabolism. |
+| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper discusses plant defense mechanisms against soybean cyst nematodes and is unrelated to human pharmacogenomics or choline salicylate. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a metabolomics database resource for drug detection and does not report pharmacokinetic parameters for choline salicylate. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper investigates the therapeutic efficacy of a sialidase inhibitor (oseltamivir) in ulcerative colitis, with no pharmacokinetic modeling or parameter reporting for choline salicylate. |
+| popPK | Zhu_2018 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on fungicidal activity and does not report pharmacokinetic parameters for choline salicylate. |
+| PGx | Zhu_2020 | not_relevant | 0 | 0 | The paper focuses on plant genetics and rice blast resistance, not human pharmacogenomics or choline salicylate pharmacokinetics. |
+| PGx | van_2009 | not_relevant | 0 | 0 | The paper investigates acetylsalicylic acid (ASA), not choline_salicylate. |
+| PGx | van_2015 | not_relevant | 0 | 0 | The paper discusses genetic variation in the GLYAT gene and glycine conjugation pathways but does not report pharmacokinetic or pharmacodynamic parameters for choline salicylate. |
+| PGx | van_2016 | not_relevant | 1 | 0 | The paper is a review explicitly stating that currently no data exist on the influence of SNPs on the enzyme activity of these ligases and that reported associations are incorrect. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

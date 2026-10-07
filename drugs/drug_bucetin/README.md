@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Bucetin is an analgesic and antipyretic medication which was approved for use in Germany but was withdrawn from the market in 1986 due to renal toxicity caused by the medication.[A175636]
+Bucetin is an anilide analgesic and antipyretic that was used to relieve pain and fever. It has been withdrawn from the market, largely because of concerns about kidney damage and cancer risk.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4982520](https://www.wikidata.org/wiki/Q4982520) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:04 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 1,406/165 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 05:48 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 426/55 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

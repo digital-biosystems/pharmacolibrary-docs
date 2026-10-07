@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Elghazali_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tramadol — `Tramadol_Elghazali2008_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: other animal.** This record comes from an animal study (other animal), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -27,31 +27,34 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 09:33:11.189075+00:00) predates the upstream re-run (2026-10-07 05:46:51.743656+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journal (London,… (2008)
   ·  DOI: [10.1016/j.tvjl.2007.07.008](https://doi.org/10.1016/j.tvjl.2007.07.008)
 
 ## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Elghazali2008_reference" status="curated_candidate" stale="false" population="camels" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tramadol" model-id="Tramadol_Elghazali2008_reference" status="needs_review" stale="true" population="camels" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 11 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | distribution half-life (t(1/2)(alpha)) | `Q59` · t1/2α | 0.22 | h | 792.0 | [h] | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
 | elimination half-life (t(1/2)(beta)) | `Q60` · t1/2β | 1.33 | h | 4788.0 | [h] | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
-| total body clearance (Cl(T)) | `Q22` · CL | 1.94 | L/h | 5.388888888888888e-07 | L/h | not captured | llm_confirmed (0.6) | Elghazali_2008:abstract | — | not captured |
+| total body clearance (Cl(T)) | `Q22` · CL | 1.94 | L h kg(-1) | not captured | [[h] · [l]] / [kg] | not captured | llm_confirmed (0.6) | Elghazali_2008:abstract | — | not captured |
 | volume of distribution at steady state (Vd(ss)) | `Q65` · Vss | 2.58 | L kg(-1) | 0.1806 | [l] / [kg] | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
-| area under the concentration vs. time curve (AUC(0-infinity)) | `Q17` · AUC∞ | 1.25 | mg*h/L | not captured | mg*h/L | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
+| area under the concentration vs. time curve (AUC(0-infinity)) | `Q17` · AUC∞ | 1.25 | mg h L(-1) | not captured | [[h] · [mg]] / [l] | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
 | maximal plasma tramadol concentration (C(max)) | `Q32` · Cmax | 0.44 | microg mL(-1) | not captured | [µg] / [ml] | not captured | llm (0.6) | Elghazali_2008:abstract | — | not captured |
 | time (T(max)) | `Q56` · tmax | 0.57 | h | 2052.0 | [h] | not captured | llm (0.6) | Elghazali_2008:abstract | — | not captured |
 | absorption half-life (t(1/2 ka)) | `Q95` · t1/2ka | 0.17 | h | 612.0 | [h] | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
 | (Vd(area)) | `Q61` · V | 8.94 | L kg(-1) | 0.6258 | [l] / [kg] | not captured | llm_confirmed (0.6) | Elghazali_2008:abstract | — | not captured |
-| mean systemic bioavailability (F) | `Q40` · Fab | 101.62 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Elghazali_2008:abstract | — | not captured |
 | kₐ | `Q49` · kabs | 0.65 | 1/h | 0.00018055555555555557 | 1/h | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
 
 <details class="legend">
@@ -61,18 +64,13 @@ Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journ
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-
 **Interpretation flags:**
 - unit_dimension_unknown: 'L h kg(-1)' (CL)
 - unit_dimension_unknown: 'mg h L(-1)' (AUC∞)
-- dropped duplicate Q60 ('(t(1/2)(beta))', value 3.24) — already have one for this compound
-- dropped duplicate Q17 ('(AUC(0-infinity))', value 1.27) — already have one for this compound
+- dropped duplicate Q60 ('(t(1/2)(beta))', value '3.24') — already have one for this compound
+- dropped duplicate Q17 ('(AUC(0-infinity))', value '1.27') — already have one for this compound
 - dropped unlinked row (NIL): 'urinary detection times for tramadol' — extend the ontology if this is a real PK parameter (source ['Elghazali_2008:abstract'])
-- dropped unlinked row (NIL): 'urinary detection times for O-desmethyltramadol' — extend the ontology if this is a real PK parameter (source ['Elghazali_2008:abstract'])
-- implicit units: 'total body clearance (Cl(T))' → L/h (from the popPK convention: 'Total body clearance is conventionally expressed in L/h in population PK studies, and the value 1.94 is consistent with ')
-- implicit units: 'area under the concentration vs. time curve (AUC(0-infinity))' → mg*h/L (from the popPK convention: 'AUC is conventionally expressed as concentration multiplied by time (e.g., mg*h/L). The value 1.25 is consistent with th')
+- dropped unlinked row (NIL): 'urinary detection times for ... O-desmethyltramadol' — extend the ontology if this is a real PK parameter (source ['Elghazali_2008:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tramadol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -81,6 +79,7 @@ Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journ
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekstrand_2026's review values (primary lacked it)
+- skipped review gap-fill of TLAG from Roulet_2021: its label names a different analyte ('actiona') — 'Onset of actiona Tramadol M1'
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Elghazali_2008_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
@@ -106,11 +105,9 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekstrand_2026:review'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
@@ -119,9 +116,10 @@ _Every reader agrees on every compared field of this record._
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
+| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | mg h L(-1) | not captured | not captured | ['Elghazali_2008:abstract'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L h kg(-1) | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.94 | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.94 L/h | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 626 L | not captured | not captured | ['Elghazali_2008:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 181 L | not captured | not captured | ['Elghazali_2008:abstract'] |
 
@@ -156,25 +154,20 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_modelica.zip" download>Tramadol_Elghazali2008_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_fmi.zip" download>Tramadol_Elghazali2008_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_fmi.zip" download>Tramadol_Elghazali2008_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_matlab.zip" download>Tramadol_Elghazali2008_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_matlab_simbio.zip" download>Tramadol_Elghazali2008_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_sbml.zip" download>Tramadol_Elghazali2008_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_cellml.zip" download>Tramadol_Elghazali2008_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference.svg" alt="Tramadol_Elghazali2008_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.65 /h, F 101.62). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N02AX02) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_Elghazali2008_reference/Tramadol_Elghazali2008_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Tramadol_Elghazali2008_reference_params.json` · controls `Tramadol_Elghazali2008_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:46 UTC</sub>

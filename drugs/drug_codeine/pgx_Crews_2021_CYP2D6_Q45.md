@@ -13,7 +13,7 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Crews_2021` — [doi](https://doi.org/10.1002/cpt.2149)
 - **gene:** CYP2D6
-- **mechanism:** formation — the gene's enzyme forms an active metabolite
+- **mechanism:** metabolism — the gene's enzyme clears the drug
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** fm (`Q45`)
 - **effect:** not quantified
@@ -22,7 +22,7 @@
 
 ### Notes from the extraction
 
-- SNP→toxicity association (adverse outcome, not a PK/PD parameter effect) — risk_association, not a covariate θ
+- SNP→adverse event association (adverse outcome, not a PK/PD parameter effect) — risk_association, not a covariate θ
 - genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 

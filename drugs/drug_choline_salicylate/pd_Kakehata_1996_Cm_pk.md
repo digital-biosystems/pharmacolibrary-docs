@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;choline salicylate&quot;,&quot;href&quot;:&quot;drugs/drug_choline_salicylate/&quot;},{&quot;label&quot;:&quot;Kakehata_1996 \u00b7 PD nonlinear peak capacitance&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;choline salicylate&quot;,&quot;href&quot;:&quot;drugs/drug_choline_salicylate/&quot;},{&quot;label&quot;:&quot;Kakehata_1996 \u00b7 PD reduction in nonlinear peak capacitance (Cm pk)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# nonlinear peak capacitance — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+# reduction in nonlinear peak capacitance (Cm pk) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Salicylate (measured concentrations) drives nonlinear peak capacitance (in pF): direct sigmoid Emax (Hill) effect.
+**As extracted:** Salicylate (measured concentrations) drives reduction in nonlinear peak capacitance (Cm pk): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -36,7 +36,7 @@ Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of ne
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | K 1/2 | `Q331` · not captured | 1.6 | mM | not captured | llm (not captured) | Kakehata_1996:pdv3 |
+| PD (effect) | KD | `Q331` · not captured | 1.6 | mM | not captured | llm (not captured) | Kakehata_1996:pdv3 |
 | PD (effect) | n | `Q325` · not captured | 1.0 | not captured | not captured | llm (not captured) | Kakehata_1996:pdv3 |
 
 <details class="legend">

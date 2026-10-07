@@ -18,21 +18,11 @@ Floctafenine is a non-steroidal analgesic and anti-inflammatory drug that was us
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 23:36 | 1:46 | 0/0/0 | 0/1/0 | 0/0/0 | 16,824/742 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/1 | 2/2 | 0 |
+| 2026-10-07 06:07 | 0:11 | 0/0/0 | 0/0/0 | 0/0/0 | 19,660/190 | einfracz / qwen3.8-27b | 4 | 1/1 | 2/2 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Maenthaisong_2013_AA_induced_platelet_aggregation](drugs/drug_floctafenine/pd_Maenthaisong_2013_AA_induced_platelet_aggregation.md) | name ← floctafenic acid · inhibition effect | — | Maenthaisong R et al., Clinical pharmacology of cyclooxygenase…, International journal of im… (2013) | [10.1177/039463201302600213](https://doi.org/10.1177/039463201302600213) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Maenthaisong_2013_platelet_COX_1_activity](drugs/drug_floctafenine/pd_Maenthaisong_2013_platelet_COX_1_activity.md) | name ← floctafenic acid · inhibition effect | — | Maenthaisong R et al., Clinical pharmacology of cyclooxygenase…, International journal of im… (2013) | [10.1177/039463201302600213](https://doi.org/10.1177/039463201302600213) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Maenthaisong_2013_platelet_thromboxane_A2_generation](drugs/drug_floctafenine/pd_Maenthaisong_2013_platelet_thromboxane_A2_generation.md) | name ← floctafenic acid · inhibition effect | — | Maenthaisong R et al., Clinical pharmacology of cyclooxygenase…, International journal of im… (2013) | [10.1177/039463201302600213](https://doi.org/10.1177/039463201302600213) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Maenthaisong_2013_whole_blood_COX_1_activity](drugs/drug_floctafenine/pd_Maenthaisong_2013_whole_blood_COX_1_activity.md) | name ← floctafenic acid · inhibition effect | — | Maenthaisong R et al., Clinical pharmacology of cyclooxygenase…, International journal of im… (2013) | [10.1177/039463201302600213](https://doi.org/10.1177/039463201302600213) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Maenthaisong_2013_whole_blood_COX_2_activity](drugs/drug_floctafenine/pd_Maenthaisong_2013_whole_blood_COX_2_activity.md) | name ← floctafenic acid · inhibition effect | — | Maenthaisong R et al., Clinical pharmacology of cyclooxygenase…, International journal of im… (2013) | [10.1177/039463201302600213](https://doi.org/10.1177/039463201302600213) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -51,8 +41,8 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Duvignaud_2020 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for treating SARS-CoV-2 and does not report pharmacogenomic effects on the PK/PD of floctafenine. |
-| popPK | Ennachachibi_1988 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of glafenine, using floctafenine only as an internal standard for the HPLC assay. |
+| PGx | Duvignaud_2020 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for repurposed drugs (hydroxychloroquine, imatinib, favipiravir, telmisartan) to treat SARS-CoV-2, with no pharmacogenomic study or PK/PD analysis of floctafenine. |
+| popPK | Ennachachibi_1988 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of glafenine, using floctafenine only as an internal standard for HPLC analysis. |
 | popPK | James_1978 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of hyperalgesia and does not report any pharmacokinetic parameters for floctafenine. |
 | PD | James_1978 | not_relevant | 3 | 2 | The paper describes qualitative dose-response relationships for potentiating agents (PGE1, PGE2, AA) and the blocking effect of floctafenine, but does not provide numeric PD parameters (e.g., IC50, Emax) or a quantitative concentration-effect curve for floctafenine itself. |
 | popPK | Maenthaisong_2013 | irrelevant | 2 | 0 | The study focuses on COX inhibition and antiplatelet effects, mentioning only a general half-life value without reporting quantitative PK parameters like clearance or volume. |

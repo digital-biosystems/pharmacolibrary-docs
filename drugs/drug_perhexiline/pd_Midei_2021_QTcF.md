@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08E&quot;,&quot;href&quot;:&quot;atc/C08E.md&quot;},{&quot;label&quot;:&quot;perhexiline&quot;,&quot;href&quot;:&quot;drugs/drug_perhexiline/&quot;},{&quot;label&quot;:&quot;Midei_2021 \u00b7 PD QTcF change from baseline (ddQTcF)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08E&quot;,&quot;href&quot;:&quot;atc/C08E.md&quot;},{&quot;label&quot;:&quot;perhexiline&quot;,&quot;href&quot;:&quot;drugs/drug_perhexiline/&quot;},{&quot;label&quot;:&quot;Midei_2021 \u00b7 PD QTcF&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QTcF change from baseline (ddQTcF) — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# QTcF — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,15 +13,15 @@
 
 ## What this record describes
 
-**As extracted:** Perhexiline (measured concentrations) drives QTcF change from baseline (ddQTcF): direct linear effect.
+**As extracted:** Perhexiline (measured concentrations) drives QTcF (in msec): direct linear effect.
 
 **Model:** No model was generated from this record.
 
 - **paper:** `Midei_2021`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
-- **tier:** descriptive
-- **effect:** unknown/unknown
+- **tier:** population
+- **effect:** stimulation/additive
 
 ## Citation
 Midei MG et al., Electrophysiological and ECG Effects of…, Journal of clinical pharmac… (2021)
@@ -30,14 +30,8 @@ Midei MG et al., Electrophysiological and ECG Effects of…, Journal of clinical
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | hERG (GLP)* — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 167 | non-GLP | not captured | llm (not captured) | tab_0:row2:col1 |
-| PD (effect) | Late hNav1.5 — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 1359 | non-GLP | not captured | llm (not captured) | tab_0:row3:col1 |
-| PD (effect) | hNav1.5 Tonic — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 1324 | non-GLP | not captured | llm (not captured) | tab_0:row4:col1 |
-| PD (effect) | hNav1.5 Phasic — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 1069 | non-GLP | not captured | llm (not captured) | tab_0:row5:col1 |
-| PD (effect) | hCav1.2 — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 247 | non-GLP | not captured | llm (not captured) | tab_0:row6:col1 |
-| PD (effect) | hKvLQT1/hminK — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 1212 | non-GLP | not captured | llm (not captured) | tab_0:row7:col1 |
-| PD (effect) | hKv1.5 — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 2455 | non-GLP | not captured | llm (not captured) | tab_0:row8:col1 |
-| PD (effect) | hKv4.3/hKChip2.2 — IC 50 (ng/mL) (+/-)-Perhexiline | `Q322` · not captured | 5874 | non-GLP | not captured | llm (not captured) | tab_0:row9:col1 |
+| PD (effect) | slope | `Q335` · not captured | 0.018 | msec per ng/mL | not captured | llm (not captured) | Midei_2021:pdv3 |
+| model term | intercept | `Q900` · not captured | 10.2 | msec | not captured | llm (not captured) | Midei_2021:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

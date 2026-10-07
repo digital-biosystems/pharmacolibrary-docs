@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;Metamizole&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/&quot;},{&quot;label&quot;:&quot;Blaser_2021 \u00b7 naproxen_n_7&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Metamizole — `Metamizole_Blaser2021_naproxen_n_7`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,67 +23,26 @@ Every extracted parameter (kabs 0.538, V1/F 3.27 L, k12 0.185, k14 1.334, kel 0.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:50.884701+00:00) predates the upstream re-run (2026-10-07 06:17:33.284081+00:00). Current validate status: `not captured`.
 
 ## Citation
 Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635)
 
 ## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Blaser2021_naproxen_n_7" status="model_quarantined" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="Metamizole" model-id="Metamizole_Blaser2021_naproxen_n_7" status="" stale="true" population="salt-depleted healthy male volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 7 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Ka (1/h) | `Q49` · kabs | 0.538 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row1:col2, T3:row1:col3 | — | not captured |
-| V1/F (L) | `Q290` · V1/F | 3.27 | L | 0.00327 | [l] | not captured | exact (1.0) | T3:row2:col3 | — | not captured |
-| k12 (1/h) | `Q301` · k12 | 0.185 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row3:col2, T3:row3:col3 | — | not captured |
-| k14 (1/h) | `Q347` · k14 | 1.334 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row4:col2, T3:row4:col3 | — | not captured |
-| k10 (1/h) | `Q47` · kel | 0.213 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row5:col2, T3:row5:col3 | — | not captured |
-| k23 (1/h) | `Q48` · kcomp | 0.009 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row7:col2, T3:row7:col3 | — | not captured |
-| T1/2 K01 (h) | `Q57` · t1/2z | 1.708 | h | 6148.8 | [h] | not captured | llm_confirmed (0.6) | T3:row15:col2, T3:row15:col3 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| V2/F (L) | Q82 | not captured | exact |
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- dropped unlinked row (NIL): 'Metamizole (n = 8)' — extend the ontology if this is a real PK parameter (source ['T3:row0:col2', 'T3:row0:col3'])
-- unit_dimension_unknown: 'n = 7' (kabs)
-- unit_dimension_unknown: 'n = 7' (k12)
-- unit_dimension_unknown: 'n = 7' (k14)
-- unit_dimension_unknown: 'n = 7' (kel)
-- unit_dimension_unknown: 'n = 7' (kcomp)
-- dropped duplicate Q48 ('k24 (1/h)', value '2.275') — already have one for this compound
-- dropped duplicate Q57 ('T1/2 4-MAA (h)', value None) — already have one for this compound
-- dropped duplicate Q57 ('T1/2 4-AA (h)', value '2.14') — already have one for this compound
-- dropped duplicate Q57 ('T1/2 4-AAA (h)', value '1.00') — already have one for this compound
-- dropped duplicate Q57 ('T1/2 4-FAA (h)', value None) — already have one for this compound
-- dropped PD-category row 'EC50 (µM)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T3:row20:col3'])
-- dropped unlinked row (NIL): 'N' — extend the ontology if this is a real PK parameter (source ['T3:row21:col3'])
-- dropped PD-category row 'E0 b' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T3:row22:col3'])
-- dropped unlinked row (NIL): 'Emax b' — extend the ontology if this is a real PK parameter (source ['T3:row23:col3'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=4-methylaminoantipyrine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 4 first-order transfer(s) across 5 compounds → general_linear
-- status held at route_to_review — not promoted
-- population split: 'naproxen (n = 7)' subgroup of Blaser_2021 (paper reports 2 populations: metamizole (n = 8), naproxen (n = 7))
-- review gap-fill skipped: this record measures '4-methylaminoantipyrine', not metamizole — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell T3:row6:col3 = '16.8 ± 5.58a'
@@ -95,25 +54,6 @@ Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharm
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row2:col3'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row15:col2', 'T3:row15:col3'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row6:col2'] |
-| C5_unit_missing_Q301 | fail | 1 / [time] | n = 7 | not captured | not captured | ['T3:row3:col2', 'T3:row3:col3'] |
-| C5_unit_missing_Q347 | fail | 1 / [time] | n = 7 | not captured | not captured | ['T3:row4:col2', 'T3:row4:col3'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | n = 7 | not captured | not captured | ['T3:row5:col2', 'T3:row5:col3'] |
-| C5_unit_missing_Q48 | fail | 1 / [time] | n = 7 | not captured | not captured | ['T3:row7:col2', 'T3:row7:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | n = 7 | not captured | not captured | ['T3:row1:col2', 'T3:row1:col3'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 3.27 L | not captured | not captured | ['T3:row2:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -163,4 +103,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 00:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:17 UTC</sub>

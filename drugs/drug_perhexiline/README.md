@@ -18,7 +18,7 @@ Perhexiline is a calcium channel blocker and vasodilator used as a cardiovascula
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 19:07 | 5:52 | 0/0/0 | 1/2/0 | 0/0/0 | 1,690/164 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/3 | 5/0 | 0 |
+| 2026-10-07 05:05 | 4:06 | 0/0/0 | 2/0/1 | 0/0/1 | 112,194/5,780 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 4/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,10 +28,23 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Midei_2021_JTpeak](drugs/drug_perhexiline/pd_Midei_2021_JTpeak.md) | JTpeak interval ← perhexiline · direct linear effect | — | Midei MG et al., Electrophysiological and ECG Effects of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1934](https://doi.org/10.1002/jcph.1934) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Midei_2021_QTcF](drugs/drug_perhexiline/pd_Midei_2021_QTcF.md) | QTcF change from baseline (ddQTcF) ← perhexiline · direct linear effect | — | Midei MG et al., Electrophysiological and ECG Effects of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1934](https://doi.org/10.1002/jcph.1934) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Bouwmeester_2023_viability](drugs/drug_perhexiline/pd_Bouwmeester_2023_viability.md) | cell viability relative to vehicle control ← acetaminophen, diclofenac, perhexiline, troglitazone, valproic acid · direct sigmoid Emax (Hill) effect | — | Bouwmeester MC et al., Drug Metabolism of Hepatocyte-like Orga…, Molecules (Basel, Switzerla… (2023) | [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Obara_2025_fraction_of_DMSO_control](drugs/drug_perhexiline/pd_Obara_2025_fraction_of_DMSO_control.md) | relative cell viability ← perhexiline · direct sigmoid Emax (Hill) effect | — | Obara C et al., Development of a CYP2D6-enhanced HepaRG…, PloS one (2025) | [10.1371/journal.pone.0339559](https://doi.org/10.1371/journal.pone.0339559) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bouwmeester_2023_cell_viability](drugs/drug_perhexiline/pd_Bouwmeester_2023_cell_viability.md) | cell viability ← perhexiline · direct Emax (saturable) effect | — | Bouwmeester MC et al., Drug Metabolism of Hepatocyte-like Orga…, Molecules (Basel, Switzerla… (2023) | [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Obara_2025_Relative_cell_viability](drugs/drug_perhexiline/pd_Obara_2025_Relative_cell_viability.md) | Relative cell viability ← perhexiline · direct sigmoid Emax (Hill) effect | — | Obara C et al., Development of a CYP2D6-enhanced HepaRG…, PloS one (2025) | [10.1371/journal.pone.0339559](https://doi.org/10.1371/journal.pone.0339559) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Midei_2021_JTpeak_c](drugs/drug_perhexiline/pd_Midei_2021_JTpeak_c.md) | JTpeak_c ← perhexiline · direct linear effect | — | Midei MG et al., Electrophysiological and ECG Effects of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1934](https://doi.org/10.1002/jcph.1934) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Midei_2021_QTcF](drugs/drug_perhexiline/pd_Midei_2021_QTcF.md) | QTcF ← perhexiline · direct linear effect | — | Midei MG et al., Electrophysiological and ECG Effects of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1934](https://doi.org/10.1002/jcph.1934) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP2D6** | `Q22` · CL | metabolism | [Chong_2015](drugs/drug_perhexiline/pgx_Chong_2015_CYP2D6_Q22.md) | Chong CR et al., Stereoselective handling of perhexiline…, European journal of clinica… (2015) | [10.1007/s00228-015-1934-8](https://doi.org/10.1007/s00228-015-1934-8) |
+
+<details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## ADME sites
 
@@ -40,8 +53,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` substrate, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CPT1A (inhibitor), CPT1B (inhibitor), CPT2 (inhibitor), KCNH2 (unknown).</sub>
@@ -87,33 +100,33 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Kerry_1994.pdf` | Kerry NL et al., The role of CYP2D6 in primary and secon…, British journal of clinical… (1994) | pgx | 5 | [10.1111/j.1365-2125.1994.tb04348.x](https://doi.org/10.1111/j.1365-2125.1994.tb04348.x) | [7826826](https://www.ncbi.nlm.nih.gov/pubmed/7826826) | metadata signals extractable PGX data (CYP2D6) |
 | `Zhang_2009.pdf` | Zhang M et al., Determination of perhexiline and its me…, Journal of chromatography.… (2009) | pgx | 5 | [10.1016/j.jchromb.2009.07.021](https://doi.org/10.1016/j.jchromb.2009.07.021) | [19646935](https://www.ncbi.nlm.nih.gov/pubmed/19646935) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-29T19:07:09.774306+00:00</sub>
+<sub>queue written 2026-10-07T05:01:57.954139+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arshad_2019 | irrelevant | 0 | 0 | The paper is a methodological study on visual predictive checks for mixture models using simulated data and irinotecan, mentioning perhexiline only as a literature example without providing any original PK parameters for it. |
+| popPK | Arshad_2019 | irrelevant | 0 | 0 | The paper focuses on methodological development for visual predictive checks using simulated data and an irinotecan case study, with no mention of perhexiline. |
 | PD | Arshad_2019 | not_relevant | 0 | 0 | The paper focuses on methodological development of visual predictive checks for mixture models using irinotecan PK data, with no mention of perhexiline or any pharmacodynamic/exposure-response analysis. |
-| popPK | Batra_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cell proliferation and does not report pharmacokinetic parameters for perhexiline. |
-| popPK | Bouwmeester_2023 | irrelevant | 0 | 0 | The study is an in-vitro toxicity assessment using cell models and reports EC50 values for perhexiline, but it does not report pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Batra_1991 | irrelevant | 0 | 0 | The study is an in-vitro cell proliferation assay measuring EC50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Bouwmeester_2023 | irrelevant | 0 | 0 | The study is an in vitro toxicity assessment using perhexiline as a probe compound to determine EC50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PGx | Bouwmeester_2023 | not_relevant | 0 | 0 | The paper evaluates in vitro toxicity and drug metabolism in organoids but does not report pharmacogenomic effects on perhexiline PK/PD parameters. |
 | popPK | Brogden_1987 | irrelevant | 0 | 0 | The paper is a review of disopyramide, and perhexiline is only mentioned as a comparator drug without any pharmacokinetic data provided. |
 | PD | Brogden_1987 | not_relevant | 0 | 0 | The paper is a review of disopyramide and only mentions perhexiline in a list of comparable drugs without providing any specific pharmacodynamic data or parameters for it. |
-| popPK | Carlsson_2009 | irrelevant | 0 | 0 | The paper is a methodological study on NONMEM mixture modeling and does not report pharmacokinetic parameters for perhexiline. |
+| popPK | Carlsson_2009 | irrelevant | 0 | 0 | The paper is a methodological study on NONMEM mixture models and does not report pharmacokinetic parameters for perhexiline. |
 | PD | Carlsson_2009 | not_relevant | 0 | 0 | The paper is a methodological study on NONMEM mixture subroutines and does not report any pharmacodynamic or exposure-response data for perhexiline. |
-| PGx | Chong_2015 | not_relevant | 3 | 5 | The paper discusses CYP2D6 metaboliser status and its impact on plasma concentrations, but the primary analysis focuses on stereoselective myocardial uptake and correlates like age and heart rate, without providing a fitted quantitative pharmacogenomic effect size for a specific PK/PD parameter. |
-| PGx | Chong_2022 | not_relevant | 0 | 0 | The paper reports clinical pharmacodynamic effects of perhexiline in a general patient population but does not investigate the influence of specific gene variants or genotypes on these parameters. |
+| PGx | Chong_2015 | not_relevant | 5 | 2 | The paper mentions CYP2D6 status but focuses on stereoselective myocardial accumulation and does not report specific pharmacokinetic or pharmacodynamic effect sizes for perhexiline based on genotype. |
+| PGx | Chong_2022 | not_relevant | 2 | 0 | The paper mentions CYP2D6 poor metabolizer phenotype requiring dosage reduction, but does not report quantitative pharmacokinetic or pharmacodynamic parameters for this genotype. |
 | PGx | Clark_1988 | not_relevant | 2 | 0 | The paper investigates the association between sparteine oxidation phenotype and adverse drug reactions, but does not report specific pharmacokinetic or pharmacodynamic parameter changes for perhexiline. |
 | popPK | Coppens-Exandier_2026 | irrelevant | 0 | 0 | The paper describes lentiviral vector construction for CYP2D6 expression in HepaRG cells and does not report pharmacokinetic parameters for perhexiline. |
 | PD | Coppens-Exandier_2026 | not_relevant | 0 | 0 | The text describes the generation of CYP2D6-expressing HepaRG cell lines using lentiviral vectors and CRISPR/Cas9, with no mention of perhexiline or any pharmacodynamic/exposure-response analysis. |
-| PGx | Coppens-Exandier_2026 | not_relevant | 0 | 0 | The text describes the construction of lentiviral vectors for CYP2D6 expression in HepaRG cells and does not report any pharmacokinetic or pharmacodynamic data for perhexiline. |
+| PGx | Coppens-Exandier_2026 | not_relevant | 2 | 5 | The paper reports in vitro toxicity differences (IC50) in CYP2D6-transgenic cells versus parental cells, but does not report a pharmacogenomic effect on PK/PD parameters in humans or a specific genotype-phenotype correlation for perhexiline. |
 | PGx | Corkindale_2007 | not_relevant | 0 | 0 | The paper is a qualitative study on the adoption of pharmacogenetic testing in Australia and does not report any pharmacokinetic or pharmacodynamic data for perhexiline. |
 | PGx | Crespi_1995 | not_relevant | 0 | 0 | The paper studies CYP2D6 variants using bufuralol, debrisoquine, metoprolol, and sparteine as substrates; perhexiline is only mentioned as an inhibitor, not as the substrate for which PK/PD parameters are being analyzed. |
 | PGx | Davies_2006_2 | not_relevant | 2 | 0 | The paper describes a new analytical method for measuring perhexiline enantiomers and mentions CYP2D6 polymorphism as background context, but it does not report pharmacogenomic data or quantify the effect of genotypes on PK parameters. |
-| PGx | Davies_2006_3 | not_relevant | 2 | 5 | The paper describes an analytical method for perhexiline metabolites and reports PK data only for CYP2D6 extensive metabolizers, lacking a comparison with poor metabolizers or other genotypes to demonstrate a pharmacogenomic effect. |
+| PGx | Davies_2006_3 | not_relevant | 2 | 5 | The paper describes an analytical method for perhexiline metabolites and reports PK data only for CYP2D6 extensive metabolizers, without comparing different genotypes to demonstrate a pharmacogenomic effect. |
 | popPK | Dhakal_2022 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity investigation of perhexiline on cancer cells and does not report any pharmacokinetic parameters. |
-| popPK | Duan_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on perhexiline's effect on KRAS mutant organoids and does not report any pharmacokinetic parameters. |
+| popPK | Duan_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study identifying perhexiline as a KRAS inhibitor in organoids and does not report pharmacokinetic parameters. |
 | PD | Duan_2024 | not_relevant | 0 | 0 | The text describes a drug screening and mechanism of action study but does not report any quantitative exposure-response or dose-response analysis with numeric PD parameters. |
 | popPK | Ehrlich_2006 | irrelevant | 0 | 0 | The paper is an electrophysiological study characterizing potassium currents in pig atrium, where perhexiline is used only as a pharmacological tool to block Kv1.5 channels, not as a subject for pharmacokinetic analysis. |
 | PGx | Eichelbaum_1984 | not_relevant | 2 | 0 | The paper mentions perhexiline only as an example of a drug with impaired metabolism in poor metabolizers, without reporting specific PK/PD data or quantitative effects for perhexiline. |
@@ -129,13 +142,13 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Hamdan_2001 | not_relevant | 1 | 0 | The paper reports IC50 values for S-15176 and mentions perhexiline as a comparator, but does not provide numeric PD parameters or an exposure-response relationship for perhexiline itself. |
 | popPK | Hussein_2001 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
 | PD | Hussein_2001 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetics (PK) of perhexiline and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| PGx | Hussein_2001 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics using routine monitoring data and does not report pharmacogenomic effects or gene variant associations. |
-| PGx | Islam_1991 | not_relevant | 0 | 0 | The paper describes a molecular modeling template for CYP2D6 substrates and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Hussein_2001 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics using routine monitoring data and does not report any pharmacogenomic effects or gene variant associations. |
+| PGx | Islam_1991 | not_relevant | 0 | 0 | The paper describes a structural molecular template for CYP2D6 substrates and does not report pharmacogenomic effects on PK or PD parameters. |
 | PGx | Jones_2004 | not_relevant | 0 | 0 | The study analyzes intra- and inter-day variability in perhexiline concentrations in a general patient population without stratifying by genotype or reporting pharmacogenomic effects. |
 | popPK | Kennedy_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition (CPT-1) and does not report pharmacokinetic disposition parameters for perhexiline. |
 | popPK | Kennedy_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on enzyme inhibition (CPT-1) and does not report pharmacokinetic parameters for perhexiline. |
 | PD | Kennedy_1998 | not_relevant | 3 | 5 | The paper reports an IC50 for perhexiline (77 umol/L) in a comparative enzymatic assay, but it is a single-point potency value from a mechanistic study, not a full exposure-response or dose-response relationship analysis for the drug's clinical effect. |
-| popPK | Kennedy_1999 | irrelevant | 0 | 0 | The study investigates the mechanism of coronary vasodilation (pharmacodynamics) in rat hearts, not pharmacokinetic disposition parameters. |
+| popPK | Kennedy_1999 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic mechanism of coronary vasodilation in rat hearts, not pharmacokinetic disposition parameters. |
 | popPK | Kennedy_2000 | irrelevant | 0 | 0 | no_text gate: only 137 chars of text extracted (&lt; 400) |
 | PD | Kennedy_2000 | not_relevant | 0 | 0 | The paper describes a functional study of perhexiline on isolated rat hearts but does not report a quantitative exposure-response or dose-response relationship with numeric PD parameters. |
 | popPK | Kennedy_2006 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
@@ -149,8 +162,8 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Meyer_1982 | not_relevant | 2 | 0 | The text mentions perhexiline as a substrate affected by debrisoquine hydroxylase polymorphisms but provides no specific data, effect sizes, or quantitative PK/PD parameters for perhexiline. |
 | popPK | Midei_2021 | irrelevant | 2 | 1 | The study is a thorough QT (TQT) assessment focused on cardiac ion channel effects and ECG parameters, reporting only sparse PK summary statistics (Cmax, Tmax) without quantitative disposition parameters like clearance, volume, or half-life. |
 | PGx | Neul_2021 | not_relevant | 0 | 0 | The study explicitly states that OCT- and MATE1-dependent transport of perhexiline was not detected, and its toxicity appears independent from these transporters. |
-| popPK | Obara_2025 | irrelevant | 0 | 0 | The study is an in-vitro cell model development paper that uses perhexiline only as a substrate for toxicity assays, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
-| PGx | Obara_2025 | not_relevant | 2 | 5 | The paper reports in vitro cell viability changes (toxicity) in transgenic cell lines, not in vivo pharmacokinetic or pharmacodynamic parameters in humans stratified by genotype. |
+| popPK | Obara_2025 | irrelevant | 0 | 0 | The study is an in-vitro cell model development paper that uses perhexiline only as a substrate to demonstrate CYP2D6 activity and cytotoxicity, without reporting any pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| PGx | Obara_2025 | not_relevant | 2 | 5 | The paper reports an in vitro cell model study showing that increased CYP2D6 expression reduces perhexiline cytotoxicity, but it does not report a pharmacogenomic effect (genotype-based) on a PK or PD parameter in humans. |
 | popPK | Perrier_1992 | irrelevant | 0 | 0 | The paper is a mechanistic study on calcium channels in rat brain slices where perhexiline is used only as a pharmacological probe and found to be inactive, with no pharmacokinetic parameters reported. |
 | PD | Perrier_1992 | not_relevant | 0 | 0 | The paper reports that perhexiline was inactive in the assay and provides no numeric PD parameters or concentration-effect relationship for it. |
 | popPK | Rampe_1995 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
@@ -164,10 +177,10 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Sinnappah_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of metformin, not perhexiline. |
 | PD | Sinnappah_2020 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of metformin in haemodialysis patients and does not report any pharmacodynamic or exposure-response relationship for perhexiline. |
 | popPK | Smith_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel blockers in cat papillary muscles and does not report pharmacokinetic parameters for perhexiline. |
-| PGx | Tseng_2017 | not_relevant | 0 | 0 | The paper reports the synthesis of perhexiline analogues to avoid CYP2D6 metabolism, but does not report pharmacogenomic effects of gene variants on the PK/PD of perhexiline itself. |
+| PGx | Tseng_2017 | not_relevant | 0 | 0 | The paper reports the development of new chemical analogues to avoid CYP2D6 metabolism, not the effect of a specific human gene variant on the PK/PD of perhexiline. |
 | popPK | Walker_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of HERG channel inhibition and does not report pharmacokinetic disposition parameters. |
 | PGx | Zhang_2009 | not_relevant | 0 | 0 | The paper describes the development of an LC-MS/MS assay for perhexiline and mentions CYP2D6 polymorphism in the introduction, but it does not report any data or results regarding the effect of genetic variants on PK or PD parameters. |
-| popPK | Zhu_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on myocardial ferroptosis where perhexiline is used only as a therapeutic agent to test biological effects, with no pharmacokinetic parameters reported. |
+| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study investigates the mechanism of TRIM28 in myocardial ferroptosis and uses perhexiline only as a therapeutic agent to test efficacy, without reporting any pharmacokinetic parameters. |
 | PD | Zhu_2026 | not_relevant | 1 | 0 | The paper mentions perhexiline qualitatively as an inhibitor of ferroptosis but provides no concentration-effect data, dose-response curves, or numeric PD parameters. |
 
 ---

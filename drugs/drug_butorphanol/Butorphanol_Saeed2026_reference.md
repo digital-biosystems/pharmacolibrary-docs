@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;butorphanol&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/&quot;},{&quot;label&quot;:&quot;Saeed_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Butorphanol_Pypendop2021_reference&quot;,&quot;label&quot;:&quot;Pypendop_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Butorphanol_Knych2024_estimate&quot;,&quot;label&quot;:&quot;Knych_2024_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Butorphanol_Knych2024_shrinkage&quot;,&quot;label&quot;:&quot;Knych_2024_shrinkage&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # butorphanol — `Butorphanol_Saeed2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +24,17 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:22.832818+00:00) predates the upstream re-run (2026-10-07 04:53:41.353128+00:00). Current validate status: `rejected`.
+
 ## Citation
 Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293)
 
 ## Model component
-<dbs-pgx drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="false" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="true" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted, plus 1 covariate effect.
+**Parameters:** 3 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -42,6 +43,9 @@ Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometric
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| f t1 | `Q900` · equation variable | 0.708 | units | not captured | [units] | 4.1 | llm (0.6) | tab_1:row2:col2, tab_1:row2:col3 | — | not captured |
+| K p | `Q410` · Kp | 3.55 | units | not captured | [units] | 5.3 | space_fold (0.95) | tab_1:row7:col2, tab_1:row7:col3 | — | not captured |
+| f d1, horse | `Q310` · D1 | 0.0191 | units | not captured | [units] | 18.5 | llm_confirmed (0.6) | tab_1:row8:col2, tab_1:row8:col3 | — | not captured |
 | k a, SC (h -1 ) | `Q49` · kabs | 1.96 | h -1 | 0.0005444444444444444 | [1] / [h] | not captured | llm (0.6) | tab_1:row12:col3 | — | not captured |
 | theta_kabs_im | `Q900` · theta_kabs_im | 3.48 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row10:col3 | — | not captured |
 
@@ -53,20 +57,21 @@ Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometric
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'f t1' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col2', 'tab_1:row2:col3'])
+- column 'estimate (cv%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'f t2' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col2', 'tab_1:row3:col3'])
 - dropped unlinked row (NIL): 'f d1' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col2', 'tab_1:row4:col3'])
-- dropped unlinked row (NIL): 'f d2' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col2', 'tab_1:row5:col3'])
+- dropped duplicate Q900 ('f d2', value '0.628') — already have one for this compound
 - dropped unlinked row (NIL): 'f dtotal' — extend the ontology if this is a real PK parameter (source ['tab_1:row6:col2', 'tab_1:row6:col3'])
-- dropped unlinked row (NIL): 'K p' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col2', 'tab_1:row7:col3'])
-- dropped unlinked row (NIL): 'f d1, horse' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col2', 'tab_1:row8:col3'])
-- dropped unlinked row (NIL): 'K p,horse' — extend the ontology if this is a real PK parameter (source ['tab_1:row9:col2', 'tab_1:row9:col3'])
+- unit_dimension_mismatch: 'K p' → Q410 (unit '[luminosity] / [length] ** 2' vs ontology 'dimensionless') — route to review
+- unit_dimension_mismatch: 'f d1, horse' → Q310 (unit '[luminosity] / [length] ** 2' vs ontology '[time]') — route to review
+- unit_dimension_mismatch: 'K p,horse' → Q410 (unit '[luminosity] / [length] ** 2' vs ontology 'dimensionless') — route to review
+- dropped duplicate Q410 ('K p,horse', value '1.10') — already have one for this compound
 - dropped unlinked row (NIL): 'F IM' — extend the ontology if this is a real PK parameter (source ['tab_1:row11:col3'])
 - dropped unlinked row (NIL): 'F SC' — extend the ontology if this is a real PK parameter (source ['tab_1:row13:col3'])
 - dropped duplicate Q49 ('k a,IN (h -1 )', value '0.868') — already have one for this compound
 - dropped unlinked row (NIL): 'F IN' — extend the ontology if this is a real PK parameter (source ['tab_1:row15:col3'])
-- table mostly unlinked (11/14 table-cell rows NIL) — likely the wrong table was located, not 3 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=butorphanol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -87,9 +92,11 @@ Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometric
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q310 | fail | [luminosity] / [length] ** 2 | units | not captured | not captured | ['tab_1:row8:col2', 'tab_1:row8:col3'] |
+| C5_dimension_Q410 | fail | [luminosity] / [length] ** 2 | units | not captured | not captured | ['tab_1:row7:col2', 'tab_1:row7:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row12:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -116,4 +123,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-27 13:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:53 UTC</sub>

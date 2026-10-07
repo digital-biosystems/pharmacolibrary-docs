@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Riluzole_Nguyen2021_reference",
+ "molar_masses": {
+  "central.C": 0.23419800000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0,
+  100.0
+ ],
+ "parameters": {
+  "Cl": 1.375e-05,
+  "F": 1.0,
+  "MM": 0.23419800000000002,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00795857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3372.036920422275
+ },
+ "reference_peaks": {
+  "central.C": 8.339306563764227e-05
+ },
+ "stop_time": 144000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

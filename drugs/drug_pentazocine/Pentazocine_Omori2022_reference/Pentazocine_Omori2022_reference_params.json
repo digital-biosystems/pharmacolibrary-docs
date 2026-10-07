@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg parenteral (N02AD01)",
+ "model_id": "Pentazocine_Omori2022_reference",
+ "molar_masses": {
+  "central.C": 0.285431
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.3138888888888884e-05,
+  "F": 1.0,
+  "MM": 0.285431,
+  "VdPerKg": 0.0010400000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "k12": 0.0009188034188034187,
+  "k21": 0.0003164091243561442,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662096
+ },
+ "reference_peaks": {
+  "central.C": 0.0009271753717045235
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

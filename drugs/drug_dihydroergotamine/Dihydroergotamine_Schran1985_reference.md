@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;dihydroergotamine&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/&quot;},{&quot;label&quot;:&quot;Schran_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_MaassenVanDenBrink_1998_coronary_artery_contraction&quot;,&quot;label&quot;:&quot;MaassenVanDenBrink_1998 \u00b7 coronary artery contraction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/pd_MaassenVanDenBrink_1998_coronary_artery_contraction.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dihydroergotamine — `Dihydroergotamine_Schran1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,14 +24,16 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:39.465095+00:00) predates the upstream re-run (2026-10-07 06:26:13.260151+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985)
 
 ## Model component
-<dbs-pgx drug="dihydroergotamine" model-id="Dihydroergotamine_Schran1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dihydroergotamine" model-id="Dihydroergotamine_Schran1985_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -41,10 +42,9 @@ Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International jour
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| overall volume of distribution | `Q61` · V | 14.6 | l/kg | 1.022 | [l] / [kg] | not captured | llm_confirmed (0.6) | Schran_1985:abstract | — | not captured |
-| plasma clearance | `Q22` · CL | 1814 | ml/min | 3.023333333333333e-05 | [ml] / [min] | not captured | llm_confirmed (0.6) | Schran_1985:abstract | — | not captured |
+| The overall volume of distribution | `Q61` · V | 14.6 | l/kg | 1.022 | [l] / [kg] | not captured | llm_confirmed (0.6) | Schran_1985:abstract | — | not captured |
+| The plasma clearance | `Q22` · CL | 1814 | ml/min | 3.023333333333333e-05 | [ml] / [min] | not captured | llm_confirmed (0.6) | Schran_1985:abstract | — | not captured |
 | renal clearance | `Q26` · CLR | 91 | ml/min | 1.5166666666666664e-06 | [ml] / [min] | not captured | exact (1.0) | Schran_1985:abstract | — | not captured |
-| dose excreted unchanged in the urine | `Q44` · fe | 5 | % | not captured | [%] | not captured | llm (0.6) | Schran_1985:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,7 +60,7 @@ Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International jour
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Schran_1985_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Schran_1985_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -83,12 +83,11 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schran_1985:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schran_1985:abstract'] |
-| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Schran_1985:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schran_1985:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1814.0 | not captured | not captured | ['Schran_1985:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -128,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 04:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:26 UTC</sub>

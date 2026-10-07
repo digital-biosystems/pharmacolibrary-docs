@@ -18,7 +18,7 @@ Dextropropoxyphene is an opioid painkiller that was used to treat mild to modera
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 15:56 | 20:40 | 0/0/0 | 0/0/0 | 0/0/0 | 132,343/1,701 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/0 | 5/1 | 0 |
+| 2026-10-07 05:17 | 0:43 | 0/0/0 | 0/0/0 | 0/0/0 | 49,896/2,106 | einfracz / qwen3.8-27b | 6 | 3/1 | 5/1 | 0 |
 
 ## popPK records
 
@@ -53,10 +53,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Gram_1984.pdf` | Gram LF et al., D-propoxyphene kinetics in man: signifi…, European journal of clinica… (1984) | popPK | 9 | [10.1007/BF00541937](https://doi.org/10.1007/BF00541937) | [6489415](https://pubmed.ncbi.nlm.nih.gov/6489415) | The paper reports a 3-compartment PK model for dextropropoxyphene, but the specific numeric parameter values are not listed in the provided text. |
 | `Choi_1988.pdf` | Choi DW et al., Opioids and non-opioid enantiomers sele…, European journal of pharmac… (1988) | pd | 5 | [10.1016/0014-2999(88)90399-8](https://doi.org/10.1016/0014-2999(88)90399-8) | [3072212](https://www.ncbi.nlm.nih.gov/pubmed/3072212) | metadata signals extractable PD data (EC50) |
 | `Wu_1994.pdf` | Wu C et al., Interaction between ethanol and opioids…, Human & experimental toxico… (1994) | pd | 4 | [10.1177/096032719401300301](https://doi.org/10.1177/096032719401300301) | [7909674](https://www.ncbi.nlm.nih.gov/pubmed/7909674) | metadata signals extractable PD data (EC50) |
 | `Somogyi_2004.pdf` | Somogyi AA et al., CYP3A4 mediates dextropropoxyphene N-de…, Xenobiotica; the fate of fo… (2004) | pgx | 8 | [10.1080/00498250400008371](https://doi.org/10.1080/00498250400008371) | [15764408](https://www.ncbi.nlm.nih.gov/pubmed/15764408) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -66,27 +67,50 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Spina_1996.pdf` | Spina E et al., Clinically significant pharmacokinetic…, Clinical pharmacokinetics (1996) | pgx | 7 | [10.2165/00003088-199631030-00004](https://doi.org/10.2165/00003088-199631030-00004) | [8877250](https://www.ncbi.nlm.nih.gov/pubmed/8877250) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Spigset_1997.pdf` | Spigset O et al., Seizures and myoclonus associated with…, Acta psychiatrica Scandinav… (1997) | pgx | 5 | [10.1111/j.1600-0447.1997.tb09933.x](https://doi.org/10.1111/j.1600-0447.1997.tb09933.x) | [9395157](https://www.ncbi.nlm.nih.gov/pubmed/9395157) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-08-27T15:51:05.080022+00:00</sub>
+<sub>queue written 2026-10-07T05:16:42.325696+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Bonnet_2003 | not_relevant | 0 | 0 | The paper is a review of moclobemide's therapeutic use and does not report pharmacogenomic effects on dextropropoxyphene PK/PD parameters. |
-| PGx | Cottrill_2021 | not_relevant | 0 | 0 | The paper reports genotype-phenotype classifications (e.g., poor/intermediate metabolizer) and lists dextropropoxyphene as a drug metabolized by CYP3A4/3A5, but it does not report specific pharmacokinetic or pharmacodynamic parameter values (e.g., AUC, Cmax, ED50) or quantitative effect sizes for dextropropoxyphene. |
-| popPK | Jordan_2023 | irrelevant | 0 | 0 | The paper is a systematic scoping review of databases regarding breastfeeding and infant outcomes, not a pharmacokinetic study, and dextropropoxyphene is only mentioned as a drug associated with adverse events in one cited study without any PK parameters. |
+| PGx | Armstrong_2009 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions mediated by CYP3A4, not a report on pharmacogenomic effects of specific genetic variants on dextropropoxyphene. |
+| PGx | Beyeler_1994 | not_relevant | 0 | 0 | The paper reports that dextropropoxyphene interfered with the phenotyping probe (debrisoquin) rather than reporting a pharmacogenomic effect on dextropropoxyphene's own PK or PD parameters. |
+| PGx | Bonnet_2003 | not_relevant | 0 | 0 | The paper discusses moclobemide, not dextropropoxyphene, and does not report pharmacogenomic data. |
+| popPK | Choi_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neurotoxicity attenuation, not a pharmacokinetic study, and does not report any disposition parameters for dextropropoxyphene. |
+| PGx | Cottrill_2021 | not_relevant | 0 | 0 | The paper describes a dataset of gene profiles and metabolic pathways for a list of drugs including dextropropoxyphene, but does not report specific pharmacokinetic or pharmacodynamic effects or measurements for this drug. |
+| PGx | DArcy_1984 | not_relevant | 3 | 0 | The paper is a review that mentions propoxyphene as having a clinically significant interaction with tobacco smoking (induction), but it does not provide specific gene variants or quantitative pharmacokinetic parameters required to assess a pharmacogenomic effect. |
+| popPK | Gram_1984 | relevant | 9 | 2 | The paper reports a 3-compartment PK model for dextropropoxyphene, but the specific numeric parameter values are not listed in the provided text. |
+| PGx | Jerling_1994 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions involving amitriptyline and nortriptyline, not the pharmacogenomics of dextropropoxyphene. |
+| popPK | Jordan_2023 | irrelevant | 0 | 0 | The paper is a systematic scoping review regarding databases linking infant outcomes and breastfeeding, containing no original pharmacokinetic data for dextropropoxyphene. |
 | PD | Jordan_2023 | not_relevant | 0 | 0 | The paper is a systematic scoping review of databases regarding breastfeeding and medicine exposure; it does not report any specific pharmacodynamic or exposure-response analysis for dextropropoxyphene. |
-| PGx | Kerry_1994 | not_relevant | 0 | 0 | The paper studies the metabolism of dextromethorphan; dextropropoxyphene is only used as an inhibitor in the assays, not as the drug of interest for pharmacogenomic PK/PD analysis. |
+| PGx | Kerry_1993 | not_relevant | 0 | 0 | The paper studies the pharmacogenetics of dextromethorhan metabolism in rats, with dextropropoxyphene only mentioned as an inhibitor, not as the subject of PK/PD analysis. |
+| PGx | Kerry_1994 | not_relevant | 2 | 10 | The study characterizes the metabolism of dextromethorphan; dextropropoxyphene is used only as an inhibitor to demonstrate CYP2D6 involvement, and no PK/PD parameters for dextropropoxyphene are reported. |
 | popPK | Koski_2003 | irrelevant | 0 | 0 | The paper is a forensic toxicology study analyzing postmortem blood concentrations in fatal poisonings, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| PGx | Mannheimer_2010 | not_relevant | 0 | 0 | The paper is a pharmacoepidemiological study analyzing prescribing patterns and adherence to drug interaction labels, not a pharmacogenomic study measuring PK/PD parameters. |
+| PGx | Levy_1995 | not_relevant | 0 | 0 | The paper discusses the metabolism of phenytoin and carbamazepine, not dextropropoxyphene. |
+| PGx | Mannheimer_2010 | not_relevant | 0 | 0 | The study analyzes prescription patterns of drug-drug interactions, not the effect of gene variants on the pharmacokinetics or pharmacodynamics of dextropropoxyphene. |
+| PGx | Marraffa_2006 | not_relevant | 0 | 0 | The paper describes a pharmacodynamic drug-drug interaction (CYP2D6 inhibition by propoxyphene affecting metoprolol) and does not report any pharmacogenomic effect (gene variant) on the PK/PD of dextropropoxyphene. |
 | popPK | McQuay_1998 | irrelevant | 0 | 0 | The paper is a systematic review of analgesic efficacy and safety, not a pharmacokinetic study, and contains no quantitative disposition parameters for dextropropoxyphene. |
 | PD | McQuay_1998 | not_relevant | 1 | 0 | The paper is a systematic review of clinical trials for postoperative analgesia and vomiting, focusing on efficacy and safety outcomes rather than pharmacokinetic or pharmacodynamic modeling; it does not report numeric PD parameters (e.g., Emax, EC50) or concentration-effect curves for dextropropoxyphene. |
-| popPK | Milligan_2002 | irrelevant | 0 | 0 | The provided text is corrupted with encoding errors (cid characters) and contains no readable information regarding dextropropoxyphene or pharmacokinetic parameters. |
+| popPK | Milligan_2002 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sildenafil citrate, not dextropropoxyphene. |
 | PD | Milligan_2002 | not_relevant | 0 | 0 | The provided text is garbled and does not contain readable information regarding dextropropoxyphene or any pharmacodynamic parameters. |
-| popPK | Schmidli_2005 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for imatinib, not dextropropoxyphene. |
+| popPK | Nerella_1993 | relevant | 4 | 0 | The study uses dextropropoxyphene (propoxyphene napsylate) bioequivalence data to demonstrate the impact of lag time, but the extracted evidence does not provide specific numeric PK parameter values (CL, V, etc.) for the drug itself, only a range of rate constants used in simulations. |
+| PGx | Raungrut_2010 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving dextropropoxyphene and does not report any gene variants or pharmacogenomic effects. |
+| popPK | Schmidli_2005 | irrelevant | 0 | 0 | The study investigates the population pharmacokinetics of imatinib mesylate, not dextropropoxyphene. |
 | PD | Schmidli_2005 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of imatinib, not dextropropoxyphene, and contains no pharmacodynamic (PD) or exposure-response modeling for the target drug. |
+| popPK | Seibert_2002 | irrelevant | 1 | 0 | This is an in vitro study characterizing protein binding effects on cytotoxic potency (EC50) using dextropropoxyphene as one of several test compounds, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Somogyi_2004 | not_relevant | 0 | 0 | The paper explicitly states that CYP2D6 genotype does not affect the pharmacokinetics of dextropropoxyphene, and does not report a pharmacogenomic effect for CYP3A4 either. |
+| PGx | Spigset_1997 | not_relevant | 0 | 0 | The paper studies adverse events (seizures/myoclonus) associated with antidepressants, not the pharmacokinetics or pharmacodynamics of dextropropoxyphene itself. |
+| PGx | Spina_1996 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction where propoxyphene inhibits carbamazepine metabolism, but it does not report a pharmacogenomic effect (gene variant) influencing propoxyphene's PK/PD. |
 | popPK | Tyers_1980 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study of antinociception (pain relief) in animals, not a pharmacokinetic study, and reports no disposition parameters for dextropropoxyphene. |
-| popPK | unknown_2018 | irrelevant | 0 | 0 | The paper is a collection of intensive care meeting abstracts and does not contain any pharmacokinetic data or parameters for dextropropoxyphene. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper focuses on theophylline, and dextropropoxyphene is listed only as a drug that does not influence theophylline kinetics, with no pharmacogenomic data. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetic drugs for postoperative nausea and vomiting and does not mention dextropropoxyphene or report any pharmacokinetic parameters. |
+| popPK | Weinstein_2018 | irrelevant | 0 | 0 | This is a systematic review on regional anaesthesia for pain prevention and contains no pharmacokinetic parameters for dextropropoxyphene. |
+| popPK | Weinstein_2018_2 | irrelevant | 0 | 0 | This is a systematic review of regional anesthesia for postoperative pain prevention and contains no pharmacokinetic data for dextropropoxyphene. |
+| popPK | Wu_1994 | irrelevant | 0 | 0 | The study is an in-vitro protozoan assay measuring EC50 values for motility reduction, not pharmacokinetic parameters like clearance or volume. |
+| popPK | Xiao_2001 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of action (nicotinic receptor blockade) of methadone and structurally related analogs, not the pharmacokinetics of dextropropoxyphene. |
+| PGx | Yue_1997 | not_relevant | 0 | 0 | The paper studies the inhibition of codeine metabolism by dextropropoxyphene and does not report pharmacogenomic effects on the PK/PD of dextropropoxyphene. |
+| popPK | unknown_1988 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
+| popPK | unknown_2018 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
 | PD | unknown_2018 | not_relevant | 0 | 0 | The paper consists of meeting abstracts regarding ICU diagnostics (viral PCR, citrulline, procalcitonin) and does not mention dextropropoxyphene or any pharmacodynamic modeling. |
 
 ---

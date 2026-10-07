@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Wu_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paracetamol_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paracetamol_Anderson2015_reference&quot;,&quot;label&quot;:&quot;Anderson_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/Paracetamol_Anderson2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Anderson_2015_VAS&quot;,&quot;label&quot;:&quot;Anderson_2015 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Anderson_2015_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gibb_2008_VAS&quot;,&quot;label&quot;:&quot;Gibb_2008 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/pd_Gibb_2008_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paracetamol — `Paracetamol_Wu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,26 +25,31 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:30:09.800412+00:00) predates the upstream re-run (2026-10-07 06:05:00.012248+00:00). Current validate status: `rejected`.
+
 ## Citation
 Wu Y et al., A Novel Maturation Equation for Hepatic…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70080](https://doi.org/10.1002/jcph.70080)
 
 ## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Wu2025_reference" status="rejected" stale="false" population="preterm and term neonates, infants, children, and adults" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="paracetamol" model-id="Paracetamol_Wu2025_reference" status="rejected" stale="true" population="preterm and term neonates, infants, children, and adults" measured-compound="paracetamol" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 3 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θBWc | `Q900` · θBWc | 0.738 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| TVCLbirth | `Q27` · CL/F | 0 | not captured | not captured | not captured | not captured | llm (0.6) | jcph70080-tbl-0003:row53:col1 | — | not captured |
+| θBWc | `Q900` · θBWc | 0.0 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 | θGAPNA50 | `Q900` · θGAPNA50 | 0.0 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 | θBWb | `Q900` · θBWb | 0.0 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| apparent volume of distribution of the S(-) enantiomer | `Q76` · V/F | 0.82 | L/kg | 0.0574 | L | not captured | review_gapfill (0.7) | Anderson_2015:review | — | not captured |
+| Tlag | `Q83` · tlag | 4.2 | min | 252.0 | h | not captured | review_gapfill (0.7) | Gibb_2008:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -68,16 +73,20 @@ Wu Y et al., A Novel Maturation Equation for Hepatic…, Journal of clinical pha
 - table section iiv: 'CLformation,OXI(L/h)=TVCLbirth×BWb1750θBWb+(TVCLmax×BWc1750θBWc−TVCLbirth×BWb1750θBWb)×PNAHill(GA34θGAPNA50×TVPNA50)Hill+PNAHill' routed out of structural estimates ('IIV (RSE %) [Shrinkage %]')
 - table section iiv: 'CLr,SULF(L/h)=fSULF×GFR+CLsecretion,SULF CLsecretion,SULF=TVCLbirth×BWb1750θBWb+(TVCLmax×BWc1750θBWc−TVCLbirth×BWb1750θBWb)×PNAHill(GA34θGAPNA50×TVPNA50)Hill+PNAHill' routed out of structural estimates ('IIV (RSE %) [Shrinkage %]')
 - table section iiv: 'Correction factor for urine volume' routed out of structural estimates ('IIV (RSE %) [Shrinkage %]')
-- kept covariate coefficient θBWc=0.738 (covariate BWc) — not an ontology parameter
+- column 'estimates (rse%)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
+- kept covariate coefficient θBWc=0 (covariate BWc) — not an ontology parameter
 - kept covariate coefficient θGAPNA50=0 (covariate GAPNA50) — not an ontology parameter
-- dropped unlinked row (NIL): 'TVCLbirth' — extend the ontology if this is a real PK parameter (source ['jcph70080-tbl-0003:row53:col1'])
 - kept covariate coefficient θBWb=0 (covariate BWb) — not an ontology parameter
 - dropped PD-category row 'Hill' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['jcph70080-tbl-0003:row59:col1'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paracetamol
-- topology: 3 first-order transfer(s) across 4 compounds → general_linear
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=paracetamol
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 12 linked by role; re-tagged parent→paracetamol-glucuronide ×3, parent→paracetamol-sulfate ×6, parent→paracetamol-oxidative metabolites ×3
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 12 linked by role; re-tagged parent→paracetamol-glucuronide ×5, parent→paracetamol-sulfate ×6, parent→paracetamol-oxidative metabolites ×3
+- gap-filled Q76 (V/F) from Anderson_2015's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q83 (tlag) from Gibb_2008's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell jcph70080-tbl-0003:row7:col3 = '0 (0‐0)'
@@ -131,9 +140,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Anderson_2015:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Gibb_2008:review'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph70080-tbl-0003:row53:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C9_phys_window_Q76 | pass | volume within physiological range | 57.4 L | not captured | not captured | ['Anderson_2015:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -158,4 +173,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 14:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:05 UTC</sub>

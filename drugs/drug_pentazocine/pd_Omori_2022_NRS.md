@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pentazocine&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/&quot;},{&quot;label&quot;:&quot;Omori_2022 \u00b7 PD name&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pentazocine&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/&quot;},{&quot;label&quot;:&quot;Omori_2022 \u00b7 PD Pain severity&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Pain severity — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,19 +14,19 @@
 
 ## What this record describes
 
-**As extracted:** Pentazocine drives name (in unknown): indirect response — drug inhibits the production of name.
+**As extracted:** Pentazocine (concentrations from this paper's PK model) drives Pain severity: indirect response — drug inhibits the loss of Pain severity.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > Pentazocine plasma concentration acts on the NRS pain score via an indirect response model in which the drug inhibits the production of pain (with an additional time-dependent effect on pain increase), fitted sequentially with a two-compartment PK model. For the original dataset, the reported estimates are EC50 = 176.3 ng/mL, kout = 3.35 /h, PT max = 0.57, PT 50 = 17.9 h, and γ time = 0.63; Emax was fixed at 1.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Omori_2022`
-- **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **model family:** `indirect_response_ii`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022)
@@ -34,55 +35,13 @@ Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | PT 50 (h) — Bootstrap result (n = 500) | `Q57` · not captured | 17.9 | h | not captured | llm (not captured) | tab_2:row4:col7 |
-| PK (driver) | PT max | `Q56` · not captured | 0.567 | not captured | not captured | llm (not captured) | tab_2:row5:col1 |
-| PK (driver) | PT max | `Q56` · not captured | 0.00266 | not captured | not captured | llm (not captured) | tab_2:row5:col2 |
-| PK (driver) | PT max | `Q56` · not captured | 0.56 | not captured | not captured | llm (not captured) | tab_2:row5:col3 |
-| PK (driver) | PT max — Original dataset | `Q56` · not captured | 0.57 | not captured | not captured | llm (not captured) | tab_2:row5:col4 |
-| PK (driver) | PT max | `Q56` · not captured | 0.55 | not captured | not captured | llm (not captured) | tab_2:row5:col5 |
-| PK (driver) | PT max | `Q56` · not captured | 0.396 | not captured | not captured | llm (not captured) | tab_2:row5:col6 |
-| PK (driver) | PT max — Bootstrap result (n = 500) | `Q56` · not captured | 0.70 | n = 500 | not captured | llm (not captured) | tab_2:row5:col7 |
-| PK (driver) | γ time | `Q89` · not captured | 0.373 | not captured | not captured | llm (not captured) | tab_2:row6:col1 |
-| PK (driver) | γ time | `Q89` · not captured | 0.129 | not captured | not captured | llm (not captured) | tab_2:row6:col2 |
-| PK (driver) | γ time | `Q89` · not captured | 0.12 | not captured | not captured | llm (not captured) | tab_2:row6:col3 |
-| PK (driver) | γ time — Original dataset | `Q89` · not captured | 0.63 | not captured | not captured | llm (not captured) | tab_2:row6:col4 |
-| PK (driver) | γ time | `Q89` · not captured | 0.38 | not captured | not captured | llm (not captured) | tab_2:row6:col5 |
-| PK (driver) | γ time | `Q89` · not captured | 0.0044 | not captured | not captured | llm (not captured) | tab_2:row6:col6 |
-| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 144 | ng/mL | not captured | llm (not captured) | tab_2:row7:col1 |
-| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 16.5 | ng/mL | not captured | llm (not captured) | tab_2:row7:col2 |
-| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 111.7 | ng/mL | not captured | llm (not captured) | tab_2:row7:col3 |
-| PD (effect) | EC 50 (ng/mL) — Original dataset | `Q321` · not captured | 176.3 | ng/mL | not captured | llm (not captured) | tab_2:row7:col4 |
-| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 143 | ng/mL | not captured | llm (not captured) | tab_2:row7:col5 |
-| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 48.4 | ng/mL | not captured | llm (not captured) | tab_2:row7:col6 |
-| PD (effect) | EC 50 (ng/mL) — Bootstrap result (n = 500) | `Q321` · not captured | 1747 | ng/mL | not captured | llm (not captured) | tab_2:row7:col7 |
-| PD (effect) | E max | `Q320` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col1 |
-| PD (effect) | k out (/h) | `Q328` · not captured | 2.82 | /h | not captured | llm (not captured) | tab_2:row9:col1 |
-| PD (effect) | k out (/h) | `Q328` · not captured | 0.268 | /h | not captured | llm (not captured) | tab_2:row9:col2 |
-| PD (effect) | k out (/h) | `Q328` · not captured | 2.29 | /h | not captured | llm (not captured) | tab_2:row9:col3 |
-| PD (effect) | k out (/h) — Original dataset | `Q328` · not captured | 3.35 | /h | not captured | llm (not captured) | tab_2:row9:col4 |
-| PD (effect) | k out (/h) | `Q328` · not captured | 2.75 | /h | not captured | llm (not captured) | tab_2:row9:col5 |
-| PD (effect) | k out (/h) | `Q328` · not captured | 0.961 | /h | not captured | llm (not captured) | tab_2:row9:col6 |
-| PD (effect) | k out (/h) — Bootstrap result (n = 500) | `Q328` · not captured | 10.70 | /h | not captured | llm (not captured) | tab_2:row9:col7 |
-| variability | ω 2 | `Q315` · not captured | 1.32 | not captured | not captured | llm (not captured) | tab_2:row10:col2 |
-| variability | ω 2 | `Q315` · not captured | 0.0089 | not captured | not captured | llm (not captured) | tab_2:row10:col3 |
-| variability | ω 2 — Original dataset | `Q312` · not captured | 1.30 | not captured | not captured | llm (not captured) | tab_2:row10:col4 |
-| variability | ω 2 | `Q315` · not captured | 1.34 | not captured | not captured | llm (not captured) | tab_2:row10:col5 |
-| variability | ω 2 | `Q315` · not captured | 1.3 | not captured | not captured | llm (not captured) | tab_2:row10:col6 |
-| variability | ω 2 | `Q315` · not captured | 1.69 | not captured | not captured | llm (not captured) | tab_2:row10:col8 |
-| PD (effect) | ω 2 EC50 | `Q321` · not captured | 4.03 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col1 |
-| PD (effect) | ω 2 EC50 | `Q321` · not captured | 0.0816 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col2 |
-| PD (effect) | ω 2 EC50 | `Q321` · not captured | 3.87 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col3 |
-| PD (effect) | ω 2 EC50 — Original dataset | `Q321` · not captured | 4.19 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col4 |
-| PD (effect) | ω 2 EC50 | `Q321` · not captured | 4.23 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col5 |
-| PD (effect) | ω 2 EC50 | `Q321` · not captured | 2.12 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col6 |
-| PD (effect) | ω 2 EC50 — Bootstrap result (n = 500) | `Q321` · not captured | 10.5 | n = 500 | not captured | llm_confirmed (not captured) | tab_2:row11:col7 |
-| variability | σ | `Q315` · not captured | 1.78 | not captured | not captured | llm (not captured) | tab_2:row12:col2 |
-| variability | σ | `Q315` · not captured | 0.0404 | not captured | not captured | llm (not captured) | tab_2:row12:col3 |
-| variability | σ — Original dataset | `Q315` · not captured | 1.70 | not captured | not captured | llm (not captured) | tab_2:row12:col4 |
-| variability | σ | `Q315` · not captured | 1.86 | not captured | not captured | llm (not captured) | tab_2:row12:col5 |
-| variability | σ | `Q315` · not captured | 1.78 | not captured | not captured | llm (not captured) | tab_2:row12:col6 |
-| variability | σ — Bootstrap result (n = 500) | `Q315` · not captured | 1.67 | n = 500 | not captured | llm (not captured) | tab_2:row12:col7 |
-| variability | σ | `Q315` · not captured | 1.89 | not captured | not captured | llm (not captured) | tab_2:row12:col8 |
+| PD (effect) | Pain base | `Q324` · not captured | 0.397 | × 10 Pain scale | not captured | llm (not captured) | Omori_2022:pdv3 |
+| model term | PT 50 | `Q900` · not captured | 17.1 | h | not captured | llm (not captured) | Omori_2022:pdv3 |
+| model term | PT max | `Q900` · not captured | 0.567 | not captured | not captured | llm (not captured) | Omori_2022:pdv3 |
+| model term | γ time | `Q900` · not captured | 0.373 | not captured | not captured | llm (not captured) | Omori_2022:pdv3 |
+| PD (effect) | EC 50 | `Q321` · not captured | 144 | ng/mL | not captured | llm (not captured) | Omori_2022:pdv3 |
+| PD (effect) | k out | `Q328` · not captured | 2.82 | /h | not captured | llm (not captured) | Omori_2022:pdv3 |
+| PD (effect) | E max | `Q320` · not captured | 1 | not captured | not captured | review_gapfill (not captured) | Omori_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -90,11 +49,56 @@ Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmac
 </details>
 
 
+## Exposure-response model
+
+`Pentazocine_Omori2022_PD_nrs` — turnover (indirect response type II), `response = E0/(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.397 × 10 Pain scale | — |
+| Emax | 1 | — |
+| EC50 | 144 ng/mL | 0.000144 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.397, `at_EC50` = 0.794, `at_inf` = inf
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | effect_direction 'inhibition' |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pentazocine/Pentazocine_Omori2022_PD_nrs/Pentazocine_Omori2022_PD_nrs_modelica.zip" download>Pentazocine_Omori2022_PD_nrs_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pentazocine/Pentazocine_Omori2022_PD_nrs/Pentazocine_Omori2022_PD_nrs_matlab.zip" download>Pentazocine_Omori2022_PD_nrs_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pentazocine/Pentazocine_Omori2022_PD_nrs/Pentazocine_Omori2022_PD_nrs_sbml.zip" download>Pentazocine_Omori2022_PD_nrs_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pentazocine/Pentazocine_Omori2022_PD_nrs/Pentazocine_Omori2022_PD_nrs_cellml.zip" download>Pentazocine_Omori2022_PD_nrs_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;rimegepant&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rimegepant_Comisar2025v2_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rimegepant_Comisar2025v2_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # rimegepant
 
@@ -15,18 +15,27 @@ Rimegepant is a calcitonin gene-related peptide receptor antagonist used to trea
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q27272184](https://www.wikidata.org/wiki/Q27272184) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| rimegepant | parent | 534.568 | C28H28F2N6O3 | DrugBank | [51049968](https://pubchem.ncbi.nlm.nih.gov/compound/51049968) | Comisar_2025, Comisar_2025_2, Lim_2026 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 22:11 | 0:15 | 2/0/0 | 0/0/0 | 0/0/0 | 6,303/440 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 2/1 | 0 |
+| 2026-10-07 06:38 | 4:33 | 2/0/1 | 0/0/0 | 0/0/0 | 247,404/10,404 | einfracz / qwen3.8-27b | 8 | 2/4 | 7/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Comisar_2025_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+7 cov.) | Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and translational… (2025) | [10.1111/cts.70360](https://doi.org/10.1111/cts.70360) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> | [Comisar_2025_2_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Comisar_2025_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+7 cov.) | Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and translational… (2025) | [10.1111/cts.70360](https://doi.org/10.1111/cts.70360) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Comisar_2025_2_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Lim_2026_reference](drugs/drug_rimegepant/Rimegepant_Lim2026_reference.md) | — | 1-compartment (no model) | 4 | Lim CN et al., A phase 1, multicenter, open-label stud…, Headache (2026) | [10.1111/head.15074](https://doi.org/10.1111/head.15074) |
 
 ## ADME sites
 
@@ -57,9 +66,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 24 matched, 22 returned
-- **screened:** 4  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **PubMed hits:** 40 matched, 39 returned
+- **screened:** 5  ·  **relevant:** 3
+- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -68,27 +77,29 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Comisar_2025_2.pdf` | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | popPK | 10 | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) | [40614133](https://pubmed.ncbi.nlm.nih.gov/40614133) | The paper is a population PK study for rimegepant and explicitly lists numeric values for CL/F, Vc/F, Q/F, Vp/F, and ka in the text. |
-| `Lim_2026.pdf` | Lim CN et al., A phase 1, multicenter, open-label stud…, Headache (2026) | popPK | 8 | [10.1111/head.15074](https://doi.org/10.1111/head.15074) | [41133671](https://pubmed.ncbi.nlm.nih.gov/41133671) | The study reports population PK modeling and summary exposure metrics (Cmax, AUC) for rimegepant, but specific disposition parameters like clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Comisar_2025_2.pdf` | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | popPK | 10 | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) | [40614133](https://pubmed.ncbi.nlm.nih.gov/40614133) | The paper provides a population pharmacokinetic model for rimegepant in humans with all key quantitative parameters (CL/F, Vc/F, Q/F, Vp/F, ka) explicitly listed in the text. |
+| `Lim_2026.pdf` | Lim CN et al., A phase 1, multicenter, open-label stud…, Headache (2026) | popPK | 9 | [10.1111/head.15074](https://doi.org/10.1111/head.15074) | [41133671](https://pubmed.ncbi.nlm.nih.gov/41133671) | The study reports quantitative PK parameters (Cmax, AUC, Tmax) and utilizes a population PK model for rimegepant in humans. |
 | `Bhardwaj_2025.pdf` | Bhardwaj R et al., Characterization of rimegepant drug-dru…, Headache (2025) | pgx | 7 | [10.1111/head.14836](https://doi.org/10.1111/head.14836) | [39364583](https://www.ncbi.nlm.nih.gov/pubmed/39364583) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Mehta_2024.pdf` | Mehta P et al., Concomitant use of calcitonin gene-rela…, Journal of oncology pharmac… (2024) | pgx | 7 | [10.1177/10781552241265884](https://doi.org/10.1177/10781552241265884) | [39052976](https://www.ncbi.nlm.nih.gov/pubmed/39052976) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-21T07:22:28.720113+00:00</sub>
+<sub>queue written 2026-10-07T06:35:58.480747+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Baker_2022 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters (plasma/milk concentrations, RID) but contains no pharmacodynamic or exposure-response analysis. |
-| PGx | Bhardwaj_2025 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (DDIs) involving CYP3A4/2C9 inhibitors and inducers, not pharmacogenomic effects based on genetic variants or genotypes. |
-| PGx | Comisar_2025_2 | not_relevant | 0 | 0 | The paper reports population PK covariates (weight, hepatic impairment, CYP3A4 inhibitors) but does not analyze or report any genetic variants or pharmacogenomic effects. |
+| PGx | Bhardwaj_2025 | not_relevant | 0 | 0 | The paper characterizes drug-drug interactions mediated by CYP enzymes (pharmacokinetic variability due to external drugs), not pharmacogenomic effects caused by genetic variants. |
+| PGx | Comisar_2025_2 | not_relevant | 0 | 0 | The paper investigates standard population PK covariates (hepatic/renal function, demographics, food) but does not report pharmacogenomic gene variant or genotype effects. |
+| popPK | Comisar_2025_3 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for zavegepant, not rimegepant. |
 | PD | DeFalco_2021 | not_relevant | 1 | 0 | The paper is a clinical review summarizing efficacy and safety outcomes from RCTs but does not report or derive numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response relationships. |
 | PD | Dermitzakis_2024 | not_relevant | 0 | 0 | The paper reports clinical efficacy outcomes (pain freedom, VAS reduction) for a fixed dose but does not provide drug concentration data or fit a pharmacodynamic model to derive parameters like Emax or EC50. |
 | PD | Dong_2023 | not_relevant | 1 | 0 | The paper is a meta-analysis of adverse drug reaction incidence and correlates (demographics, dosage), not a pharmacodynamic exposure-response or dose-response analysis with numeric PD parameters. |
-| popPK | Lim_2026 | relevant | 8 | 2 | The study reports population PK modeling and summary exposure metrics (Cmax, AUC) for rimegepant, but specific disposition parameters like clearance (CL) and volume (V) are not explicitly listed in the provided text. |
-| PGx | Lipton_2026 | not_relevant | 0 | 0 | The paper is a narrative review comparing gepants and triptans for migraine treatment and does not report pharmacogenomic effects on PK or PD parameters. |
-| PGx | Mehta_2024 | not_relevant | 0 | 0 | The paper reports on drug-drug interactions (CYP3A4 inhibition) and clinical safety outcomes, not pharmacogenomic effects of gene variants on PK/PD parameters. |
-| PGx | Szkutnik-Fiedler_2020 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions and does not report pharmacogenomic effects (gene variants) on rimegepant PK/PD. |
+| popPK | Giner-Soriano_2025 | irrelevant | 0 | 0 | This is a clinical trial protocol for migraine prevention comparing older drugs (propranolol, amitriptyline, flunarizine, topiramate) and does not study rimegepant pharmacokinetics or report PK parameters. |
+| PGx | Lipton_2026 | not_relevant | 0 | 0 | The paper is a narrative review of clinical efficacy and safety comparing gepants and triptans, containing no data on pharmacogenomic variants affecting PK/PD. |
+| popPK | Martinelli_2026 | irrelevant | 0 | 0 | The paper is a protocol for a biomarker study of erenumab (a monoclonal antibody), not a pharmacokinetic study of rimegepant. |
+| PGx | Mehta_2024 | not_relevant | 0 | 0 | The paper discusses a drug-drug interaction (CYP3A4 inhibition by azoles) and safety outcomes, not the effect of a genetic variant on pharmacokinetics or pharmacodynamics. |
+| PGx | Szkutnik-Fiedler_2020 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions and does not discuss genetic variants or pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of rimegepant. |
 | PD | unknown_2020 | not_relevant | 0 | 0 | The provided text is only a title ("Drugs for Migraine") and contains no data, analysis, or numeric parameters. |
 | PD | unknown_2020_2 | not_relevant | 0 | 0 | The provided text is only a title and does not contain any data, analysis, or numeric parameters regarding pharmacodynamics or exposure-response relationships. |
 | PD | unknown_2021 | not_relevant | 0 | 0 | The provided text is a title for a paper on atogepant, not rimegepant, and contains no data or PD parameters. |
@@ -97,4 +108,4 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | unknown_2023_2 | not_relevant | 0 | 0 | The provided text is a title for zavegepant, not rimegepant, and contains no data or PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 07:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:36 UTC</sub>

@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Gretler2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,15 +27,17 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:56.245987+00:00) predates the upstream re-run (2026-10-07 04:56:24.118510+00:00). Current validate status: `rejected`.
+
 ## Citation
 Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020)
   ·  DOI: [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="false" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,6 +49,8 @@ Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaest
 | Cmax | `Q32` · Cmax | 270.7 | ng mL-1 | not captured | [ng] / [ml] | not captured | exact (1.0) | Gretler_2020:abstract | — | not captured |
 | tmax | `Q56` · tmax | 0.438 | hours | 1576.8 | [h] | not captured | exact (1.0) | Gretler_2020:abstract | — | not captured |
 | elimination t½ | `Q57` · t1/2z | 2.0 | hours | 7200.0 | [h] | not captured | llm_confirmed (0.6) | Gretler_2020:abstract | — | not captured |
+| anti-ClfA CL | `Q22` · CL | 0.18 | ml/h | 5e-11 | L/h | not captured | review_gapfill (0.7) | Capparelli_2005:review | — | not captured |
+| anti-SdrG V 1 | `Q61` · V | 73.0 | ml | 7.3e-05 | L | not captured | review_gapfill (0.7) | Capparelli_2005:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,7 +67,8 @@ Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaest
 - dropped duplicate Q32 ('norcodeine Cmax', value 1.42) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=codeine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL from Capparelli_2005: its label names a different analyte ('anti-clfa') — 'For anti-ClfA and anti-SdrG, the final PK model estimates for CL were 0.18 ml/h and 0.21 ml/h, FIG. respectively; those for V 1 were 66 ml and 73 ml, respectively; those for V ss were 179 ml and 204 ml, respectively; and those for the elimination half-life were 719 h and 701 h, respectively.'
+- gap-filled Q22 (CL) from Capparelli_2005's review values (primary lacked it)
+- gap-filled Q61 (V) from Capparelli_2005's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -92,11 +97,16 @@ _Every reader agrees on every compared field of this record._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Capparelli_2005:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Gretler_2020:abstract'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Gretler_2020:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Gretler_2020:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Capparelli_2005:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.18 | not captured | not captured | ['Capparelli_2005:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | fail | clearance within physiological range | 0.00018 L/h | not captured | not captured | ['Capparelli_2005:review'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.073 L | not captured | not captured | ['Capparelli_2005:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -121,4 +131,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:56 UTC</sub>

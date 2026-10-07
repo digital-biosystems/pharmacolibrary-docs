@@ -4,7 +4,7 @@
 
 # tanezumab — `Tanezumab_Jonsson2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +24,14 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:39.552711+00:00) predates the upstream re-run (2026-10-07 06:17:49.296438+00:00). Current validate status: `rejected`.
+
 ## Citation
 Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850)
 
 ## Model component
-<dbs-pgx drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="true" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 5 covariate effects.
@@ -47,11 +49,11 @@ Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal o
 | V 2 † (l) | `Q64` · V2 | 1.98 | l | 0.00198 | [l] | not captured | space_fold (0.95) | bcp12850-tbl-0002:row4:col1 | — | not captured |
 | KM (ng ml –1) | `Q1` · Km | 27.7 | ng ml –1 | not captured | [ng] / [ml] | not captured | exact (1.0) | bcp12850-tbl-0002:row6:col1 | — | not captured |
 | VM (μg day –1) | `Q66` · Vmax | 8.03 | μg day –1 | not captured | [µg] / [d] | not captured | special_case (0.95) | bcp12850-tbl-0002:row7:col1 | — | not captured |
+| gender_on_cl | `Q900` · gender_on_cl | 0.143 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row14:col1 | — | not captured |
 | theta_cl_wt | `Q900` · theta_cl_wt | 0.77 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row8:col1 | — | not captured |
-| theta_v1_wt | `Q900` · theta_v1_wt | 0.554 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row9:col1 | — | not captured |
-| theta_v2_wt | `Q900` · theta_v2_wt | 0.302 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row10:col1 | — | not captured |
+| theta_q3_wt | `Q900` · theta_q3_wt | 0.554 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row9:col1 | — | not captured |
+| theta_q314_wt | `Q900` · theta_q314_wt | 0.302 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row10:col1 | — | not captured |
 | theta_v1_gender | `Q900` · theta_v1_gender | 0.175 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row13:col1 | — | not captured |
-| theta_cl_gender | `Q900` · theta_cl_gender | 0.143 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row14:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,14 +66,18 @@ Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal o
 - dropped value-less row: 'Parameter'
 - dropped unlinked row (NIL): 'Mixture probability with low RSV' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row5:col1'])
 - unit_dimension_mismatch: 'VM (μg day –1)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q22 ('CL cr on CL', value '0.108') — already have one for this compound
-- dropped unlinked row (NIL): 'Dose on CL' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row12:col1'])
+- dropped unlinked row (NIL): 'CL cr on CL' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row11:col1'])
+- dropped duplicate Q22 ('Dose on CL', value '0.0669') — already have one for this compound
+- covariate level 'Gender on CL' → Q900:gender_on_cl = 0.143 (linear_fractional on Q22)
 - routed 'Cov CL‐V 1 ‡' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'Low RSV, %CV' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row20:col1'])
 - dropped unlinked row (NIL): 'High RSV, %CV' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row21:col1'])
+- covariate effect for Q3 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tanezumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'tanezumab' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell bcp12850-tbl-0002:row1:col2 = '0.129, 0.14'
@@ -157,4 +163,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:17 UTC</sub>

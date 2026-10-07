@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Rimazolium is an experimental analgesic drug [A176186].
+Rimazolium is classified as an other analgesic and antipyretic, indicating it was intended for pain relief and fever. It appears only as an experimental compound and is not an approved medicine, so it is not in general use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7334399](https://www.wikidata.org/wiki/Q7334399) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 21:07 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 1,412/168 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 06:10 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 428/56 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

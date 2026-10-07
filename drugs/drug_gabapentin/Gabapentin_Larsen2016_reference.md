@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Larsen_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gabapentin — `Gabapentin_Larsen2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,12 +27,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:07.589090+00:00) predates the upstream re-run (2026-10-07 06:11:15.771900+00:00). Current validate status: `rejected`.
+
 ## Citation
 Larsen MS et al., Pharmacokinetic/Pharmacodynamic Relatio…, Pharmaceutical research (2016)
   ·  DOI: [10.1007/s11095-016-1859-7](https://doi.org/10.1007/s11095-016-1859-7)
 
 ## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="false" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="true" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -59,7 +61,7 @@ Larsen MS et al., Pharmacokinetic/Pharmacodynamic Relatio…, Pharmaceutical res
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'K m' → Q1 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'V max' → Q66 (unit '[mass] ** 2 / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'V max' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped PD-category row 'EC 50, plasma' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Larsen_2016:abstract'])
 - dropped PD-category row 'EC 50, brain' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Larsen_2016:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gabapentin
@@ -111,7 +113,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q1 | fail | [mass] | mg/kg | not captured | not captured | ['Larsen_2016:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
-| C5_dimension_Q66 | fail | [mass] ** 2 / [time] | mg/h∙kg | not captured | not captured | ['Larsen_2016:abstract'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h∙kg | not captured | not captured | ['Larsen_2016:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 160.67 | not captured | not captured | ['Adrian_2018:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -140,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 23:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:11 UTC</sub>

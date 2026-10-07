@@ -1,17 +1,9 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Erenumab_Kielbasa2019_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  5.0,
-  50.0,
-  120.0,
-  240.0,
-  300.0
  ],
  "parameters": {
   "Cl": 2.222222222222222e-09,
@@ -20,15 +12,15 @@
   "VdPerKg": 9.285714285714286e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 5e-06,
+  "adminMass": 0.0001,
   "ka": 5.555555555555556e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 545410.8216432866
+  "central.C": 539250.7864900106
  },
  "reference_peaks": {
-  "central.C": 0.0006406538556276413
+  "central.C": 0.012813989306580242
  },
  "stop_time": 10886400.0,
  "template": "PK_1C_enteral",

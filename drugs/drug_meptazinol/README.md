@@ -14,22 +14,25 @@ Meptazinol is an opioid compound with pain-relieving (analgesic) and narcotic pr
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q410618](https://www.wikidata.org/wiki/Q410618) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| meptazinol | parent | 233.355 | C15H23NO | DrugBank | — | Gepts_1987 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 21:24 | 4:24 | 0/0/0 | 0/1/0 | 0/0/0 | 33,992/1,793 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 05:12 | 0:59 | 0/0/1 | 0/0/0 | 0/0/0 | 41,771/2,103 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
-_not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Xie_2017_AChE_inhibition](drugs/drug_meptazinol/pd_Xie_2017_AChE_inhibition.md) | name ← (−)-meptazinol phenylcarbamate (43) · inhibition effect | — | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Xie_2017_A_42_levels](drugs/drug_meptazinol/pd_Xie_2017_A_42_levels.md) | name ← (−)-meptazinol phenylcarbamate (43) · inhibition effect | — | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gepts_1987_reference](drugs/drug_meptazinol/Meptazinol_Gepts1987_reference.md) | — | 1-compartment (no model) | 5 | Gepts E et al., Pharmacokinetics of intravenously admin…, European journal of anaesth… (1987) | — |
 
 ## ADME sites
 
@@ -49,27 +52,32 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 18 matched, 16 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Gepts_1987.pdf` | Gepts E et al., Pharmacokinetics of intravenously admin…, European journal of anaesth… (1987) | popPK | 10 | not captured | [3582376](https://pubmed.ncbi.nlm.nih.gov/3582376) | The abstract provides explicit numeric values for a three-compartment model, including half-lives, clearance, and volume of distribution. |
+| `Rosseel_1975.pdf` | Rosseel MT et al., Meptazinol (Wy 22811), a new analgesic:…, Current medical research an… (1975) | popPK | 5 | [10.1185/03007997509113668](https://doi.org/10.1185/03007997509113668) | [1149487](https://pubmed.ncbi.nlm.nih.gov/1149487) | The paper describes a pharmacokinetic study but the evidence provided contains only qualitative descriptions (e.g., "two compartment open system model") without any specific numeric parameter values like clearance or volume. |
 | `Meyer_2019.pdf` | Meyer MJ et al., Opioids as Substrates and Inhibitors of…, Journal of medicinal chemis… (2019) | pd | 5 | [10.1021/acs.jmedchem.9b01301](https://doi.org/10.1021/acs.jmedchem.9b01301) | [31597043](https://www.ncbi.nlm.nih.gov/pubmed/31597043) | metadata signals extractable PD data (IC50) |
 | `Spiegel_1984.pdf` | Spiegel K et al., Meptazinol: a novel Mu-1 selective opio…, The Journal of pharmacology… (1984) | pd | 4 | not captured | [6141283](https://www.ncbi.nlm.nih.gov/pubmed/6141283) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-08-27T21:23:11.971260+00:00</sub>
+<sub>queue written 2026-10-07T05:12:00.608388+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Gabka_1982 | irrelevant | 0 | 0 | The study is a pharmacodynamic dose-response analysis using pain thresholds, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for meptazinol. |
+| PGx | Meyer_2019 | not_relevant | 0 | 0 | The paper identifies meptazinol as an OCT1 substrate in vitro but does not report pharmacokinetic or pharmacodynamic effects in humans based on genotype. |
+| popPK | Rosseel_1975 | irrelevant | 5 | 0 | The paper describes a pharmacokinetic study but the evidence provided contains only qualitative descriptions (e.g., "two compartment open system model") without any specific numeric parameter values like clearance or volume. |
+| popPK | Wali_1986 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of cholinergic effects on rat diaphragm and ileum, reporting EC50 and potency data rather than population pharmacokinetic parameters (CL, V, ka). |
 | popPK | Xie_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on meptazinol carbamate derivatives for Alzheimer's disease, reporting in-vitro enzyme kinetics and toxicity, but contains no pharmacokinetic disposition parameters (CL, V, etc.) for meptazinol. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 05:12 UTC</sub>

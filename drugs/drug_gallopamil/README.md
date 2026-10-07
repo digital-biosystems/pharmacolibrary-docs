@@ -18,11 +18,18 @@ Gallopamil is a calcium channel blocker of the phenylalkylamine type, developed 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 18:33 | 4:16 | 0/0/0 | 0/0/0 | 0/0/0 | 1,662/112 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 04:21 | 2:48 | 0/0/0 | 1/1/0 | 0/0/0 | 54,560/1,896 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">dog</span> | [Matsuzaki_1993_arrhythmic_ratio](drugs/drug_gallopamil/pd_Matsuzaki_1993_arrhythmic_ratio.md) | arrhythmic ratio ← gallopamil · inhibition effect | — | Matsuzaki T et al., Effects of gallopamil, a Ca2+ channel b…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90111-t](https://doi.org/10.1016/0014-2999(93)90111-t) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [Tarabova_2007_ICa](drugs/drug_gallopamil/pd_Tarabova_2007_ICa.md) | I(Ca) ← gallopamil · direct sigmoid Emax (Hill) effect | — | Tarabova B et al., Effects of phenylalkylamines and benzot…, European journal of pharmac… (2007) | [10.1016/j.ejphar.2007.06.050](https://doi.org/10.1016/j.ejphar.2007.06.050) |
 
 ## ADME sites
 
@@ -49,19 +56,17 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 63 matched, 60 returned
+- **PubMed hits:** 63 matched, 62 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_14 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Gross_2000.pdf` | Gross AS et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2000) | popPK | 10 | [10.1046/j.1365-2125.2000.00115.x](https://doi.org/10.1046/j.1365-2125.2000.00115.x) | [10671907](https://pubmed.ncbi.nlm.nih.gov/10671907) | The study reports quantitative pharmacokinetic parameters (clearance, half-life, protein binding) for gallopamil in humans with specific numeric values provided in the text. |
-| `Gross_1997.pdf` | Gross AS et al., Pharmacokinetics and pharmacodynamics o…, The Journal of pharmacology… (1997) | popPK | 9 | not captured | [9190842](https://pubmed.ncbi.nlm.nih.gov/9190842) | The study reports quantitative pharmacokinetic parameters (apparent oral clearance) for gallopamil enantiomers in humans, with specific numeric values provided in the text. |
 | `Sewing_1983.pdf` | Sewing KF et al., Calcium channel antagonists verapamil a…, Pharmacology (1983) | pd | 5 | [10.1159/000137824](https://doi.org/10.1159/000137824) | [6310646](https://www.ncbi.nlm.nih.gov/pubmed/6310646) | metadata signals extractable PD data (IC50) |
 | `Usune_1995.pdf` | Usune S et al., Discrimination by nimodipine, but not b…, Canadian journal of physiol… (1995) | pd | 5 | [10.1139/y95-721](https://doi.org/10.1139/y95-721) | [8789414](https://www.ncbi.nlm.nih.gov/pubmed/8789414) | metadata signals extractable PD data (IC50) |
 | `Hofmann_1989.pdf` | Hofmann HP et al., (S)-emopamil, a novel calcium and serot…, Arzneimittel-Forschung (1989) | pd | 4 | not captured | [2757655](https://www.ncbi.nlm.nih.gov/pubmed/2757655) | metadata signals extractable PD data (EC50) |
@@ -75,7 +80,7 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Suzuki_1999.pdf` | Suzuki A et al., Identification of human cytochrome P-45…, Drug metabolism and disposi… (1999) | pgx | 7 | not captured | [10534309](https://www.ncbi.nlm.nih.gov/pubmed/10534309) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Wang_2001.pdf` | Wang E et al., Quantitative distinctions of active sit…, Chemical research in toxico… (2001) | pgx | 7 | [10.1021/tx010125x](https://doi.org/10.1021/tx010125x) | [11743742](https://www.ncbi.nlm.nih.gov/pubmed/11743742) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-29T18:33:40.297346+00:00</sub>
+<sub>queue written 2026-10-07T04:20:53.719748+00:00</sub>
 
 ## Screened and excluded
 
@@ -87,10 +92,10 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Brogden_1994 | not_relevant | 2 | 0 | The text is a qualitative review summary that discusses pharmacodynamic properties and therapeutic potential but does not provide specific numeric PD parameters, concentration-effect curves, or quantitative exposure-response data. |
 | popPK | Caldirola_1997 | irrelevant | 0 | 0 | The study focuses on the pharmacological characterization of VUF 8929, with gallopamil serving only as a comparator in binding assays, and no PK parameters for gallopamil are reported. |
 | PD | Caldirola_1997 | not_relevant | 1 | 0 | The paper focuses on the characterization of VUF 8929; gallopamil is only mentioned as a comparator in binding assays, and no exposure-response or dose-response PD parameters for gallopamil are reported. |
-| popPK | Coonen_2026 | irrelevant | 0 | 0 | The study is an in-vitro pharmacology assay using gallopamil as a reference compound, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Glossmann_1983 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study where gallopamil is used only as a ligand to characterize binding sites, not a pharmacokinetic study. |
+| popPK | Coonen_2026 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay using gallopamil as a reference compound to standardize vascular tissue, not a pharmacokinetic study. |
+| popPK | Glossmann_1983 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay for diltiazem, where gallopamil is only mentioned as a recognized ligand, and no pharmacokinetic parameters are reported. |
 | PD | Glossmann_1983 | not_relevant | 0 | 0 | The paper reports radioligand binding affinity (KD, Bmax) and allosteric modulation by 1,4-dihydropyridines, but does not report a pharmacodynamic exposure-response or dose-response relationship for gallopamil itself. |
-| popPK | Gouw_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium entry blockers on isolated rat tissues, not a pharmacokinetic study, and reports no disposition parameters for gallopamil. |
+| popPK | Gouw_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium entry blockers on rat vascular smooth muscle contractions, not a pharmacokinetic study of gallopamil. |
 | PD | Gross_1997 | not_relevant | 4 | 2 | The paper describes a qualitative concentration-effect relationship for (S)-gallopamil and PR interval but does not provide numeric PD parameters (Emax, EC50) or a quantitative curve in the text. |
 | PD | Gross_2000 | not_relevant | 2 | 1 | The paper reports PK parameters and a single mean PD effect (PR interval prolongation) but does not provide a concentration-effect relationship, curve, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Herzig_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological/mechanistic investigation of gallopamil's cardiac effects and does not report pharmacokinetic parameters. |
@@ -98,7 +103,7 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Hofmann_1989 | not_relevant | 0 | 0 | The paper focuses on (S)-emopamil, not gallopamil, and does not report PD parameters for the specified drug. |
 | popPK | Hopf_1989 | irrelevant | 0 | 0 | The study reports dose-response relationships for anti-ischemic effects (ST-depression) rather than pharmacokinetic disposition parameters like clearance or volume. |
 | PD | Hopf_1989 | not_relevant | 0 | 0 | not captured |
-| popPK | Jackowski_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of muscle contraction, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Jackowski_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of muscle contraction inhibition, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Janero_1988 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on lipid peroxidation and does not report any pharmacokinetic parameters for gallopamil. |
 | popPK | Kirchengast_1993 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of thrombus formation and platelet aggregation in dogs, where gallopamil serves only as a comparator agent, and no pharmacokinetic parameters are reported. |
 | popPK | Lehmann_1985 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic interactions (cardiovascular effects) in dogs and does not report quantitative pharmacokinetic parameters such as clearance or volume of distribution for gallopamil. |
@@ -116,10 +121,10 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Neuhoff_2000 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
 | PD | Neuhoff_2000 | not_relevant | 0 | 0 | The paper focuses on in vitro binding affinities (Kd) of various compounds to P-glycoprotein, not on pharmacodynamic exposure-response or dose-response relationships for gallopamil. |
 | popPK | Neumann_1992 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of gallopamil on neutrophil function and does not report any pharmacokinetic parameters. |
-| popPK | Noguchi_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological comparison of calcium channel antagonists and does not report pharmacokinetic parameters for gallopamil. |
+| popPK | Noguchi_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological comparison of potency (EC50) in guinea-pig tissue, not a pharmacokinetic study reporting disposition parameters for gallopamil. |
 | popPK | Pauwels_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neuroprotection in rat neuronal cultures, not a pharmacokinetic study, and reports no disposition parameters for gallopamil. |
 | PD | Pauwels_1990 | not_relevant | 3 | 2 | The paper reports a qualitative potency ranking for gallopamil but does not provide specific numeric IC50 or concentration-effect parameters for it, unlike the nonselective antagonists. |
-| popPK | Pfaffendorf_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of spasmolytic potency in guinea-pig bile ducts, not a pharmacokinetic study, and reports no disposition parameters for gallopamil. |
+| popPK | Pfaffendorf_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay measuring spasmolytic potency (EC50) in guinea-pig bile ducts, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Pong_1985 | irrelevant | 0 | 0 | The study is an in-vitro binding assay investigating dantrolene's effect on nitrendipine binding, with gallopamil serving only as a comparator agent, and no pharmacokinetic parameters are reported. |
 | popPK | Reddy_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antioxidant effects on lipid peroxidation, not a pharmacokinetic study, and reports no disposition parameters for gallopamil. |
 | popPK | Richardt_1991 | irrelevant | 0 | 0 | The study is a mechanistic investigation of noradrenaline release in isolated rat hearts, not a pharmacokinetic study, and reports no disposition parameters for gallopamil. |
@@ -133,16 +138,16 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Stein_1990 | irrelevant | 0 | 0 | The study is an in-vitro embryotoxicity assay measuring morphological effects, not a pharmacokinetic study reporting disposition parameters for gallopamil. |
 | PGx | Suzuki_1999 | not_relevant | 0 | 0 | The study identifies CYP3A4 as the major enzyme metabolizing gallopamil using in vitro microsomes and recombinant CYPs, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Tarabova_2007 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring channel block (IC50) in mouse hair cells, not a pharmacokinetic study reporting disposition parameters for gallopamil. |
-| popPK | Theodore_1986 | irrelevant | 0 | 0 | The paper is a mechanistic study on a chemoaffinity ligand derived from verapamil, using gallopamil only as a radioligand/comparator for binding assays, and reports no pharmacokinetic parameters. |
-| popPK | Theodore_1990 | irrelevant | 0 | 0 | The paper is a mechanistic study of a photoaffinity probe where gallopamil is used only as a comparator for binding affinity and inotropic effects, with no pharmacokinetic parameters reported. |
+| popPK | Theodore_1986 | irrelevant | 0 | 0 | no_text gate: only 181 chars of text extracted (&lt; 400) |
+| popPK | Theodore_1990 | irrelevant | 0 | 0 | The study is a mechanistic/pharmacological investigation of a photoaffinity probe, using gallopamil only as a comparator for potency and binding, with no pharmacokinetic parameters reported. |
 | popPK | Usune_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel blockers on guinea-pig taenia coli contractions and does not report any pharmacokinetic parameters for gallopamil. |
 | popPK | Vilchez_1992 | irrelevant | 0 | 0 | The study is a pharmacodynamic/clinical efficacy trial assessing antianginal effects and does not report quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Vilchez_1992 | not_relevant | 2 | 1 | The study reports clinical efficacy (exercise time) at specific time points after a fixed dose, but does not provide plasma concentration data or fit a concentration-effect model to derive numeric PD parameters like Emax or EC50. |
 | popPK | Walday_1992 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
 | popPK | Wang_2001 | irrelevant | 0 | 0 | The paper is a mechanistic study on enzyme inhibition (P-gp vs CYP3A4) and does not report pharmacokinetic disposition parameters for gallopamil. |
 | PD | Wang_2001 | not_relevant | 1 | 0 | The paper reports an IC50 for P-gp inhibition, which is a pharmacological potency parameter, but does not provide a pharmacodynamic exposure-response or dose-response relationship (e.g., Emax, EC50 for a clinical effect, or concentration-effect curve) for gallopamil. |
-| PGx | Wang_2001 | not_relevant | 0 | 0 | The paper discusses the in vitro inhibition of P-gp and CYP3A4 by gallopamil but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Werner_1991 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of calcium channel ligands on isolated tissues, not a pharmacokinetic study, and reports no disposition parameters for gallopamil. |
+| PGx | Wang_2001 | not_relevant | 0 | 0 | The paper discusses molecular recognition by P-gp and CYP3A4 but does not report pharmacogenomic effects on gallopamil PK/PD parameters. |
+| popPK | Werner_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel ligands on isolated tissues, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Weymann_1989 | irrelevant | 2 | 0 | The paper describes the qualitative metabolic pathways and mass balance of gallopamil but does not report quantitative pharmacokinetic parameters such as clearance values, volume of distribution, or half-life. |
 | PD | Weymann_1989 | not_relevant | 0 | 0 | The paper focuses exclusively on the metabolism and pharmacokinetics of gallopamil, explicitly stating that metabolites had no relevance to pharmacodynamic action, and provides no concentration-effect or dose-response data. |
 | popPK | Zucchi_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of gallopamil's effect on cardiac sarcoplasmic reticulum function and does not report any pharmacokinetic parameters. |

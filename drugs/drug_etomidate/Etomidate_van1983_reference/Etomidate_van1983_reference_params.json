@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Etomidate_van1983_reference",
+ "molar_masses": {
+  "central.C": 0.24428899999999998
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4816666666666665e-05,
+  "F": 1.0,
+  "MM": 0.24428899999999998,
+  "VdPerKg": 0.0089,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662067
+ },
+ "reference_peaks": {
+  "central.C": 1.593742289010168e-05
+ },
+ "stop_time": 162000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

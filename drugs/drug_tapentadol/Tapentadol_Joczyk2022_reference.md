@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/&quot;},{&quot;label&quot;:&quot;Jo\u0144czyk_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Khalil2020_final&quot;,&quot;label&quot;:&quot;Khalil_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tapentadol — `Tapentadol_Joczyk2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:00.558528+00:00) predates the upstream re-run (2026-10-07 05:41:34.680254+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain research (2022)
   ·  DOI: [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902)
 
 ## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Joczyk2022_reference" status="needs_review" stale="false" population="children aged 2 to &lt;7 years" measured-compound="tapentadol" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="tapentadol" model-id="Tapentadol_Joczyk2022_reference" status="needs_review" stale="true" population="children aged 2 to &lt;7 years with acute pain" measured-compound="tapentadol" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -45,7 +47,6 @@ Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain r
 | Cmax,sd (ng/mL) | `Q32` · Cmax | 159.3 | ng/mL | not captured | [ng] / [ml] | 51.6 | llm_confirmed (0.6) | t0003:row0:col3, t0003:row0:col4, t0003:row0:col5, t0003:row0:col6, t0003:row0:col8, t0003:row0:col9, t0003:row0:col10, t0003:row0:col11, t0003:row0:col13, t0003:row0:col14, t0003:row0:col15, t0003:row0:col16 | — | not captured |
 | Cmin,sd (ng/mL) | `Q36` · Cmin | 22.2 | ng/mL | not captured | [ng] / [ml] | 72.9 | llm_confirmed (0.6) | t0003:row1:col3, t0003:row1:col4, t0003:row1:col5, t0003:row1:col6, t0003:row1:col8, t0003:row1:col9, t0003:row1:col10, t0003:row1:col11, t0003:row1:col13, t0003:row1:col14, t0003:row1:col15, t0003:row1:col16 | — | not captured |
 | AUCτ,sd (h•ng/mL) | `Q19` · AUCt | 230.7 | h•ng/mL | not captured | [[h] · [ng]] / [ml] | 34.9 | llm_confirmed (0.6) | t0003:row2:col3, t0003:row2:col4, t0003:row2:col5, t0003:row2:col6, t0003:row2:col8, t0003:row2:col9, t0003:row2:col10, t0003:row2:col11, t0003:row2:col13, t0003:row2:col14, t0003:row2:col15, t0003:row2:col16 | — | not captured |
-| AUCτ,ss (h•ng/mL) | `Q18` · AUCSS | 292.3 | h•ng/mL | not captured | [[h] · [ng]] / [ml] | 41.4 | llm_corrected (0.6) | t0003:row5:col3, t0003:row5:col4, t0003:row5:col5, t0003:row5:col6, t0003:row5:col8, t0003:row5:col9, t0003:row5:col10, t0003:row5:col11, t0003:row5:col13, t0003:row5:col14, t0003:row5:col15, t0003:row5:col16 | — | not captured |
 | Tapentadol mature CL | `Q22` · CL | 93.7 | L/h | 2.602777777777778e-05 | L/h | not captured | boundary (0.8) | Jończyk_2022:other_prose | — | not captured |
 | CL/F | `Q27` · CL/F | 272 | L/h | 7.555555555555556e-05 | L/h | not captured | exact (1.0) | Jończyk_2022:other_prose | — | not captured |
 | V/F | `Q76` · V/F | 1203 | L | 1.203 | L | not captured | exact (1.0) | Jończyk_2022:other_prose | — | not captured |
@@ -61,19 +62,20 @@ Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain r
 - unit_dimension_unknown: 'h•ng/mL' (AUCt)
 - dropped duplicate Q32 ('Cmax,ss (ng/mL)', value '201.2') — already have one for this compound
 - dropped duplicate Q36 ('Cmin,ss (ng/mL)', value '29.3') — already have one for this compound
-- unit_dimension_unknown: 'h•ng/mL' (AUCSS)
+- dropped duplicate Q19 ('AUCτ,ss (h•ng/mL)', value '292.3') — already have one for this compound
 - dropped unlinked row (NIL): 'AF' — extend the ontology if this is a real PK parameter (source ['t0003:row6:col3', 't0003:row6:col4', 't0003:row6:col5', 't0003:row6:col6', 't0003:row6:col8', 't0003:row6:col9', 't0003:row6:col10', 't0003:row6:col11', 't0003:row6:col13', 't0003:row6:col14', 't0003:row6:col15', 't0003:row6:col16'])
 - salvaged Q22 ('Tapentadol mature CL'=93.7) from results prose — parameter table was unreadable
 - salvaged Q27 ('CL/F'=272) from results prose — parameter table was unreadable
 - salvaged Q76 ('V/F'=1203) from results prose — parameter table was unreadable
 - implicit units: 'AUCτ,sd (h•ng/mL)' — the LLM proposed 'h•ng/mL', whose dimension does not fit Q19; left unset
-- implicit units: 'AUCτ,ss (h•ng/mL)' — the LLM proposed 'h•ng/mL', whose dimension does not fit Q18; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tapentadol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - transposed table t0003: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -110,12 +112,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['t0003:row0:col3', 't0003:row0:col4', 't0003:row0:col5', 't0003:row0:col6', 't0003:row0:col8', 't0003:row0:col9', 't0003:row0:col10', 't0003:row0:col11', 't0003:row0:col13', 't0003:row0:col14', 't0003:row0:col15', 't0003:row0:col16'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['t0003:row1:col3', 't0003:row1:col4', 't0003:row1:col5', 't0003:row1:col6', 't0003:row1:col8', 't0003:row1:col9', 't0003:row1:col10', 't0003:row1:col11', 't0003:row1:col13', 't0003:row1:col14', 't0003:row1:col15', 't0003:row1:col16'] |
-| C5_unit_missing_Q18 | fail | [mass] * [time] / [length] ** 3 | h•ng/mL | not captured | not captured | ['t0003:row5:col3', 't0003:row5:col4', 't0003:row5:col5', 't0003:row5:col6', 't0003:row5:col8', 't0003:row5:col9', 't0003:row5:col10', 't0003:row5:col11', 't0003:row5:col13', 't0003:row5:col14', 't0003:row5:col15', 't0003:row5:col16'] |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | h•ng/mL | not captured | not captured | ['t0003:row2:col3', 't0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6', 't0003:row2:col8', 't0003:row2:col9', 't0003:row2:col10', 't0003:row2:col11', 't0003:row2:col13', 't0003:row2:col14', 't0003:row2:col15', 't0003:row2:col16'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -156,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:41 UTC</sub>

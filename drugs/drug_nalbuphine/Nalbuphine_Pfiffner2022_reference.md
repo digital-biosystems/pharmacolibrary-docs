@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;nalbuphine&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/&quot;},{&quot;label&quot;:&quot;Pfiffner_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalbuphine_Nie2023_reference&quot;,&quot;label&quot;:&quot;Nie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalbuphine_EudyByrne2023_reference&quot;,&quot;label&quot;:&quot;Eudy-Byrne_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_EudyByrne2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Gao2022_reference&quot;,&quot;label&quot;:&quot;Gao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Gao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Nie2023_estimates&quot;,&quot;label&quot;:&quot;Nie_2023_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Nie2023_final_model&quot;,&quot;label&quot;:&quot;Nie_2023_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nalbuphine — `Nalbuphine_Pfiffner2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:06.491546+00:00) predates the upstream re-run (2026-10-07 05:33:07.340818+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Pfiffner M et al., Pharmacometric Analysis of Intranasal a…, Frontiers in pediatrics (2022)
   ·  DOI: [10.3389/fped.2022.837492](https://doi.org/10.3389/fped.2022.837492)
 
 ## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Pfiffner2022_reference" status="needs_review" stale="false" population="infants 1-3 months old" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Pfiffner2022_reference" status="needs_review" stale="true" population="infants 1–3 months old" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.
@@ -45,8 +47,8 @@ Pfiffner M et al., Pharmacometric Analysis of Intranasal a…, Frontiers in pedi
 | theta_q22_category | `Q900` · theta_q22_category | 20.2 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row4:col2, T2:row4:col4, T2:row4:col6 | — | not captured |
 | theta_q63_category | `Q900` · theta_q63_category | 26.7 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row5:col2, T2:row5:col4, T2:row5:col6 | — | not captured |
 | theta_q30_category | `Q900` · theta_q30_category | 15.4 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row7:col1, T2:row7:col3, T2:row7:col5 | — | not captured |
-| Cl (ml min À1 ) Intercept | `Q22` · CL | 20.0 | ml min À1 | 3.333333333333333e-07 | L/h | not captured | review_gapfill (0.7) | Groenendaal_2007:review | — | not captured |
-| Vd | `Q61` · V | 137.69 | L | 0.13769 | L | not captured | review_gapfill (0.7) | Nie_2023:review | — | not captured |
+| CL | `Q22` · CL | 33.42 | L/h | 9.283333333333335e-06 | L/h | not captured | review_gapfill (0.7) | Gao_2022:review | — | not captured |
+| Vd | `Q61` · V | 137.69 | L | 0.13769 | L | not captured | review_gapfill (0.7) | Gao_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,8 +67,8 @@ Pfiffner M et al., Pharmacometric Analysis of Intranasal a…, Frontiers in pedi
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- gap-filled Q22 (CL) from Groenendaal_2007's review values (primary lacked it)
-- gap-filled Q61 (V) from Nie_2023's review values (primary lacked it)
+- gap-filled Q22 (CL) from Gao_2022's review values (primary lacked it)
+- gap-filled Q61 (V) from Gao_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -92,14 +94,14 @@ Pfiffner M et al., Pharmacometric Analysis of Intranasal a…, Frontiers in pedi
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 3.3 | 4.772 | 1.4461 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Groenendaal_2007:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nie_2023:review'] |
+| C1_half_life_beta | pass | 3.3 | 2.856 | 0.8655 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gao_2022:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Gao_2022:review'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] | n = 38 individuals | not captured | not captured | ['T2:row3:col2', 'T2:row3:col3', 'T2:row3:col4', 'T2:row3:col5', 'T2:row3:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 20.0 | not captured | not captured | ['Groenendaal_2007:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 33.42 | not captured | not captured | ['Gao_2022:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.2 L/h | not captured | not captured | ['Groenendaal_2007:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 138 L | not captured | not captured | ['Nie_2023:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 33.4 L/h | not captured | not captured | ['Gao_2022:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 138 L | not captured | not captured | ['Gao_2022:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -134,4 +136,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-28 05:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:33 UTC</sub>

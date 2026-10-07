@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Hampton_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gabapentin — `Gabapentin_Hampton2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,12 +27,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:07.581127+00:00) predates the upstream re-run (2026-10-07 06:11:14.370050+00:00). Current validate status: `rejected`.
+
 ## Citation
 Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veterinary pharm… (2021)
   ·  DOI: [10.1111/jvp.12977](https://doi.org/10.1111/jvp.12977)
 
 ## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="false" population="healthy adult Duroc swine" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="true" population="healthy adult Duroc pigs" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.
@@ -51,7 +53,7 @@ Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veteri
 | absorption half-life | `Q95` · t1/2ka | 58 | min | 3480.0 | [min] | not captured | llm_corrected (0.6) | Hampton_2021:abstract | — | not captured |
 | estimated maximal plasma concentration | `Q32` · Cmax | 9155 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Hampton_2021:abstract | — | not captured |
 | time to reach maximal plasma concentration | `Q56` · tmax | 194 | min | 11640.0 | [min] | not captured | llm (0.6) | Hampton_2021:abstract | — | not captured |
-| Estimated oral bioavailability | `Q40` · Fab | 47 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Hampton_2021:abstract | — | not captured |
+| oral bioavailability | `Q40` · Fab | 47 | % | not captured | not captured | not captured | exact (1.0) | Hampton_2021:abstract | — | not captured |
 | K01 (1/hr) | `Q49` · kabs | 5.24 | 1/hr | 0.0014555555555555556 | 1/h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
 | TLAG (hr) | `Q83` · tlag | 0.45 | hr | 1620.0 | h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
 
@@ -154,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 23:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:11 UTC</sub>

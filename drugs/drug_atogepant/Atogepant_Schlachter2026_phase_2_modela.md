@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026 \u00b7 phase_2_modela&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_2_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_2_modela&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atogepant — `Atogepant_Schlachter2026_phase_2_modela`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -27,33 +27,32 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:13.739827+00:00) predates the upstream re-run (2026-10-07 06:23:55.690380+00:00). Current validate status: `extracted`.
+
 ## Citation
 Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
 
 ## Model component
-<dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_2_modela" status="model_quarantined" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_2_modela" status="extracted" stale="true" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 9 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted, plus 2 covariate effects.
 
-**Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, Q2/F, V1/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant [ka (/h)] | `Q49` · kabs | 1.31 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row2:col2 | — | not captured |
-| Apparent clearance patients [CL/F (L/h)] | `Q27` · CL/F | 18.2 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row3:col2 | — | not captured |
-| Apparent central volume of distribution [V1/F (L)] | `Q290` · V1/F | 72.9 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row6:col2 | — | not captured |
-| Apparent first intercompartmental clearance [Q/F (L/h)] | `Q69` · Q/F | 0.771 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row7:col2 | — | not captured |
-| Apparent first peripheral volume of distribution [V2/F (L)] | `Q82` · V2/F | 91.7 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row8:col2 | — | not captured |
-| Apparent second intercompartmental clearance [Q2/F (L/h)] | `Q80` · Q2/F | 1.99 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row9:col2 | — | not captured |
-| Apparent second peripheral volume of distribution [V3/F (L)] | `Q78` · V3/F | 22.3 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row10:col2 | — | not captured |
-| Lag time [ALAG (h)] | `Q83` · tlag | 0.298 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row11:col2 | — | not captured |
-| exponential_effect_of_dose_on_frel | `Q900` · exponential_effect_of_dose_on_frel | 0.163 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row22:col2 | — | not captured |
-| Effect of solution on Frel | `Q87` · Frel | -0.547 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row23:col2 | — | not captured |
+| Absorption rate constant [ka (/h)] | `Q49` · kabs | 1.31 | 1/h | 0.0003638888888888889 | 1/h | not captured | boundary_llm_dim_refused (0.8) | Tab2:row2:col2 | — | not captured |
+| Apparent clearance patients [CL/F (L/h)] | `Q27` · CL/F | 18.2 | L/h | 5.0555555555555555e-06 | L/h | not captured | llm_confirmed (0.6) | Tab2:row3:col2 | — | not captured |
+| Apparent central volume of distribution [V1/F (L)] | `Q290` · V1/F | 72.9 | L | 0.0729 | L | not captured | llm_confirmed (0.6) | Tab2:row6:col2 | — | not captured |
+| Apparent first intercompartmental clearance [Q/F (L/h)] | `Q69` · Q/F | 0.771 | L/h | 2.1416666666666667e-07 | L/h | not captured | llm_corrected (0.6) | Tab2:row7:col2 | — | not captured |
+| Apparent first peripheral volume of distribution [V2/F (L)] | `Q64` · V2 | 91.7 | L | 0.0917 | L | not captured | boundary_compartment (0.9) | Tab2:row8:col2 | — | not captured |
+| Apparent second intercompartmental clearance [Q2/F (L/h)] | `Q80` · Q2/F | 1.99 | L/h | 5.527777777777778e-07 | L/h | not captured | llm_corrected (0.6) | Tab2:row9:col2 | — | not captured |
+| Apparent second peripheral volume of distribution [V3/F (L)] | `Q78` · V3/F | 22.3 | L | 0.0223 | L | not captured | llm_confirmed (0.6) | Tab2:row10:col2 | — | not captured |
+| Lag time [ALAG (h)] | `Q83` · tlag | 0.298 | h | 1072.8 | h | not captured | llm_confirmed (0.6) | Tab2:row11:col2 | — | not captured |
+| theta_q87_weight_power | `Q900` · theta_q87_weight_power | 0.163 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row22:col2 | — | not captured |
 | theta_kabs_weight_power | `Q900` · theta_kabs_weight_power | -0.252 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row24:col2 | — | not captured |
 
 <details class="legend">
@@ -68,13 +67,25 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped duplicate Q27 ('Apparent clearance healthy participants [CL/F (L/h)]', value '18.2') — already have one for this compound
 - dropped unlinked row (NIL): 'Blood-plasma ratio' — extend the ontology if this is a real PK parameter (source ['Tab2:row17:col2'])
 - dropped duplicate Q27 ('Itraconazole effect on CL/F', value '-0.691') — already have one for this compound
 - dropped duplicate Q27 ('Rifampin effect on CL/F following multiple doses', value '1.10') — already have one for this compound
-- dropped duplicate Q83 ('Effect of solution on ALAG', value '-0.191') — already have one for this compound
-- covariate level 'Exponential effect of dose on Frel' → Q900:exponential_effect_of_dose_on_frel = 0.163 (power on Q27)
+- dropped unlinked row (NIL): 'Effect of solution on ALAG' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col2'])
+- dropped unlinked row (NIL): 'Effect of solution on Frel' — extend the ontology if this is a real PK parameter (source ['Tab2:row23:col2'])
+- covariate effect for Q87 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Absorption rate constant [ka (/h)]' → 1/h (from the paper text: "The text states: 'the derived first-order absorption rate constant (ka) was 2.48/h'.")
+- implicit units: 'Apparent clearance patients [CL/F (L/h)]' → L/h (from the paper text: "The text states: 'apparent clearance (CL/F), which was 22.9 L/h in healthy participants and was found to be 23.7% lower ")
+- implicit units: 'Apparent central volume of distribution [V1/F (L)]' → L (from the paper text: "The text states: 'The apparent central volume of distribution (V1/F) was 86.1 L'.")
+- implicit units: 'Apparent first intercompartmental clearance [Q/F (L/h)]' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Q/F in the text, but Q/F represents an intercompartmental clearance. In')
+- implicit units: 'Apparent first peripheral volume of distribution [V2/F (L)]' → L (from the popPK convention: 'The paper does not explicitly state the unit for V2/F in the text, but it represents a volume of distribution. In popula')
+- implicit units: 'Apparent second intercompartmental clearance [Q2/F (L/h)]' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Q2/F in the text, but it represents an intercompartmental clearance. In')
+- implicit units: 'Apparent second peripheral volume of distribution [V3/F (L)]' → L (from the popPK convention: 'The paper does not explicitly state the unit for V3/F in the text, but it represents a volume of distribution. In popula')
+- implicit units: 'Lag time [ALAG (h)]' → h (from the popPK convention: 'The paper does not explicitly state the unit for ALAG in the text, but it represents a lag time. In population PK, lag t')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atogepant
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - bound model equation to Q40 (Fab): F = 86.1 * (bodyweight/76.8)^
@@ -90,7 +101,6 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 - unparsed cell Tab2:row32:col1 = '−0.44/−0.42'
 - unparsed cell Tab2:row32:col5 = '(−0.507 to −0.198)'
 - LLM selected parameter table(s) 2
-- LLM region Schlachter_2026:other_prose: no JSON records returned
 - captured model equation F = 86.1 * (bodyweight/76.8)^
 
 ## Validation
@@ -128,20 +138,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2'] |
-| C5_unit_missing_Q290 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2'] |
-| C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col2'] |
-| C5_unit_missing_Q78 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row10:col2'] |
-| C5_unit_missing_Q80 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row9:col2'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col2'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Tab2:row11:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col2'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row10:col2'] |
+| C5_dimension_Q80 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row9:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row11:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 18.2 L/h | not captured | not captured | ['Tab2:row3:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 72.9 L | not captured | not captured | ['Tab2:row6:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 91.7 L | not captured | not captured | ['Tab2:row8:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -174,21 +187,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_modelica.zip" download>Atogepant_Schlachter2026_phase_2_modela_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_fmi.zip" download>Atogepant_Schlachter2026_phase_2_modela_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_matlab.zip" download>Atogepant_Schlachter2026_phase_2_modela_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_matlab_simbio.zip" download>Atogepant_Schlachter2026_phase_2_modela_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_sbml.zip" download>Atogepant_Schlachter2026_phase_2_modela_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_cellml.zip" download>Atogepant_Schlachter2026_phase_2_modela_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela.svg" alt="Atogepant_Schlachter2026_phase_2_modela diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 1.31 /h, lag 17.9 min, F 1). Doses in the paper: 10, 30, 60, 170, 300 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Atogepant_Schlachter2026_phase_2_modela_params.json` · controls `Atogepant_Schlachter2026_phase_2_modela_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:23 UTC</sub>

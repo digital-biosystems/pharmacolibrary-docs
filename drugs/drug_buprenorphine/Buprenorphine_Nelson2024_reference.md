@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;buprenorphine&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/&quot;},{&quot;label&quot;:&quot;Nelson_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Walsh_2024_COWS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 COWS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_COWS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_desire_to_use_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 desire to use VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_desire_to_use_VAS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2024_drug_liking_E_max_VAS&quot;,&quot;label&quot;:&quot;Walsh_2024 \u00b7 drug liking E max VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/pd_Walsh_2024_drug_liking_E_max_VAS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Buprenorphine_Kraft2018_reference&quot;,&quot;label&quot;:&quot;Kraft_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Kraft2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Robertson2005_i_v&quot;,&quot;label&quot;:&quot;Robertson_2005_i_v&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Robertson2005_i_v.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Robertson2005_otm&quot;,&quot;label&quot;:&quot;Robertson_2005_otm&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Robertson2005_otm.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # buprenorphine — `Buprenorphine_Nelson2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -27,26 +27,30 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:21.043810+00:00) predates the upstream re-run (2026-10-07 04:48:12.314338+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024)
   ·  DOI: [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001)
 
 ## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="model_quarantined" stale="false" population="horses" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="needs_review" stale="true" population="horses aged 6-12 years" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| C max (ng mL e1 ) | `Q32` · Cmax | 0.091 | ng mL e1 | not captured | [ng] · [ml] · [e1] | not captured | llm (0.5) | tab_0:row2:col2, tab_0:row2:col3, tab_0:row2:col4 | — | not captured |
-| T max (hours) | `Q56` · tmax | 5.88 | hours | 21168.0 | h | not captured | llm (0.5) | tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4 | — | not captured |
-| AUC inf (hours ng mL e1 ) | `Q88` · AUC | 3.96 | hours ng mL e1 | not captured | [h] · [ng] · [ml] · [e1] | not captured | boundary (0.8) | tab_0:row6:col1, tab_0:row6:col2, tab_0:row6:col3, tab_0:row6:col4 | — | not captured |
+| C max (ng mL e1 ) | `Q32` · Cmax | 0.042 | ng/mL | not captured | ng/mL | not captured | space_fold (0.95) | tab_0:row2:col2, tab_0:row2:col3, tab_0:row2:col4 | — | not captured |
+| T max (hours) | `Q56` · tmax | 8.25 | hours | 29700.0 | [h] | not captured | space_fold (0.95) | tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4 | — | not captured |
+| AUC inf (hours ng mL e1 ) | `Q17` · AUC∞ | 4.16 | h·ng/mL | not captured | h·ng/mL | not captured | space_fold (0.95) | tab_0:row6:col1, tab_0:row6:col2, tab_0:row6:col3, tab_0:row6:col4 | — | not captured |
+| Mean clearance | `Q22` · CL | 3.5 | L/hr/kg | 6.805555555555555e-05 | L/h | not captured | review_gapfill (0.7) | Kraft_2018:review | — | not captured |
+| mean volume of distribution | `Q61` · V | 2.8 | L/kg | 0.196 | L | not captured | review_gapfill (0.7) | Tang_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,11 +61,17 @@ Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthe
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'ng mL e1' (Cmax)
-- unit_dimension_unknown: 'hours ng mL e1' (AUC)
+- unit_dimension_unknown: 'hours ng mL e1' (AUC∞)
+- implicit units: 'C max (ng mL e1 )' → ng/mL (from the paper text: "The caption for Figure 1 states: 'ng/mL to ng mL e1', establishing the unit for plasma buprenorphine concentrations (and")
+- implicit units: 'AUC inf (hours ng mL e1 )' → h·ng/mL (from the paper text: "The input parameters list 'AUC inf (hours ng mL e1)', and the paper text consistently uses 'ng mL e1' (ng/mL) for concen")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=buprenorphine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- unit re-normalised: tmax 'hours' now converts (value unchanged)
+- gap-filled Q22 (CL) from Kraft_2018's review values (primary lacked it)
+- gap-filled Q61 (V) from Tang_2021's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -85,11 +95,16 @@ _Every reader agrees on every compared field of this record._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row6:col1', 'tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row6:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kraft_2018:review'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row2:col4'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4'] |
-| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | ng mL e1 | not captured | not captured | ['tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row2:col4'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | hours ng mL e1 | not captured | not captured | ['tab_0:row6:col1', 'tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row6:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tang_2021:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.5 | not captured | not captured | ['Kraft_2018:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 245 L/h | not captured | not captured | ['Kraft_2018:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 196 L | not captured | not captured | ['Tang_2021:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 10:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:48 UTC</sub>

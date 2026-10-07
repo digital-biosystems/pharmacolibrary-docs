@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;nalbuphine&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/&quot;},{&quot;label&quot;:&quot;Bressolle_2011 \u00b7 basic_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalbuphine_Nie2023_reference&quot;,&quot;label&quot;:&quot;Nie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalbuphine_EudyByrne2023_reference&quot;,&quot;label&quot;:&quot;Eudy-Byrne_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_EudyByrne2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Gao2022_reference&quot;,&quot;label&quot;:&quot;Gao_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Gao2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Nie2023_estimates&quot;,&quot;label&quot;:&quot;Nie_2023_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Nie2023_final_model&quot;,&quot;label&quot;:&quot;Nie_2023_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Nie2023_final_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalbuphine_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/Nalbuphine_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nalbuphine — `Nalbuphine_Bressolle2011_basic_model`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,15 +23,17 @@ The check had no reference to compare the clearance against, so the value is unv
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:06.410319+00:00) predates the upstream re-run (2026-10-07 05:31:29.558876+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal of anaesthe… (2011)
   ·  DOI: [10.1093/bja/aer001](https://doi.org/10.1093/bja/aer001)
 
 ## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_basic_model" status="needs_review" stale="false" population="children after surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_basic_model" status="needs_review" stale="true" population="paediatric patients" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -40,11 +42,12 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (litre h 21 ) 130 | `Q22` · CL | 131 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_5:row6:col2 | — | not captured |
-| V 1 (litre) | `Q63` · V1 | 208 | litre | 0.20800000000000002 | [l] | not captured | llm (0.6) | tab_5:row7:col3, Bressolle_2011_table_2:row4:col1 | — | not captured |
-| V 2 (litre) | `Q64` · V2 | 153 | litre | 0.153 | [l] | not captured | llm (0.6) | tab_5:row8:col3, Bressolle_2011_table_2:row6:col1 | — | not captured |
-| Q (litre h 21 ) 75.6 | `Q30` · Q | 75.8 | not captured | not captured | not captured | not captured | llm (0.6) | tab_5:row9:col2 | — | not captured |
-| KA (h-1) | `Q49` · kabs | 0.357 | h-1 | 9.916666666666666e-05 | 1/h | not captured | review_gapfill (0.7) | Zhu_2024:review | — | not captured |
+| CL (litre h 21 ) 130 | `Q22` · CL | 131 | L/h | 3.638888888888889e-05 | L/h | not captured | llm_confirmed (0.6) | tab_5:row6:col2 | — | 0.0324 (None% RSE) |
+| V 1 (litre) | `Q63` · V1 | 208 | litre | 0.20800000000000002 | [l] | not captured | space_fold (0.95) | tab_5:row7:col3, Bressolle_2011_table_2:row4:col1 | — | not captured |
+| V 2 (litre) | `Q64` · V2 | 153 | litre | 0.153 | [l] | not captured | space_fold (0.95) | tab_5:row8:col3, Bressolle_2011_table_2:row6:col1 | — | not captured |
+| Q (litre h 21 ) 75.6 | `Q30` · Q | 75.8 | L/h | 2.1055555555555553e-05 | L/h | not captured | llm (0.6) | tab_5:row9:col2 | — | not captured |
+| v 2 Q | `Q99` · Q2 | 0.123 | not captured | not captured | not captured | not captured | llm (0.6) | tab_5:row16:col3 | — | not captured |
+| -KA (1/h) θ 5 First order absorption rate constant | `Q49` · kabs | 0.826 | 1/h | 0.00022944444444444444 | 1/h | not captured | review_gapfill (0.7) | Eudy-Byrne_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,9 +57,8 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q64 ('v 2 CL', value '0.0324') — already have one for this compound
-- dropped duplicate Q64 ('v 2 V 1', value '0.0929') — already have one for this compound
-- dropped duplicate Q64 ('v 2 Q', value '0.123') — already have one for this compound
+- table section iiv: 'v 2 CL' routed out of structural estimates ('Inter-individual variability')
+- table section iiv: 'v 2 V 1' routed out of structural estimates ('Inter-individual variability')
 - routed 'variability, s 2' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - unit_dimension_unknown: 'litre h 21' (CL)
 - dropped duplicate Q22 ('CL (litre h 21 )', value '41.6') — already have one for this compound
@@ -65,13 +67,13 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 - dropped PD-category row 's (%)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Bressolle_2011_table_2:row10:col1'])
 - dropped unlinked row (NIL): '(DV vs IPRED)' — extend the ontology if this is a real PK parameter (source ['Bressolle_2011_table_2:row12:col1', 'Bressolle_2011_table_2:row15:col1'])
 - dropped unlinked row (NIL): '(DV vs PRED)' — extend the ontology if this is a real PK parameter (source ['Bressolle_2011_table_2:row13:col1', 'Bressolle_2011_table_2:row16:col1'])
-- dropped duplicate Q22 ('CL', value '0.0979') — already have one for this compound
-- dropped duplicate Q63 ('V 1', value '0.153') — already have one for this compound
-- dropped duplicate Q64 ('V 2', value '0.473') — already have one for this compound
-- dropped duplicate Q30 ('Q', value '0.050') — already have one for this compound
+- implicit units: 'CL (litre h 21 ) 130' → L/h (from the paper text: "The paper text states: 'clearance 130 litre h 21 70 kg 21'.")
+- implicit units: 'Q (litre h 21 ) 75.6' → L/h (from the paper text: "The paper text states: 'inter-compartment clearance 75.6 litre h 21 70 kg 21'.")
+- implicit units: 'v 2 Q' — the LLM proposed '1/h', whose dimension does not fit Q99; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nalbuphine
-- population split: 'basic model' subgroup of Bressolle_2011 (paper reports 4 populations: basic model, final covariate model (allometric model), iiv (%), mean)
-- gap-filled Q49 (kabs) from Zhu_2024's review values (primary lacked it)
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- population split: 'basic model' subgroup of Bressolle_2011 (paper reports 3 populations: basic model, final covariate model (allometric model), mean)
+- gap-filled Q49 (kabs) from Eudy-Byrne_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell tab_5:row6:col1 = '115, 145'
@@ -99,8 +101,7 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 - unparsed cell Bressolle_2011_table_2:row9:col5 = '34.8 (53.5), 34.4'
 - companion parameter table 2 transcribed (18 record(s))
 - companion parameter table 3 transcribed (12 record(s))
-- companion parameter table 4 transcribed (13 record(s))
-- LLM selected parameter table(s) 2, 3, 4, 6
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -108,16 +109,18 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zhu_2024:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_5:row6:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_5:row9:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eudy-Byrne_2023:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_5:row7:col3', 'Bressolle_2011_table_2:row4:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_5:row8:col3', 'Bressolle_2011_table_2:row6:col1'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_5:row6:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_5:row9:col2'] |
+| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_5:row16:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 131.0 | not captured | not captured | ['tab_5:row6:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 131 L/h | not captured | not captured | ['tab_5:row6:col2'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 208 L | not captured | not captured | ['tab_5:row7:col3', 'Bressolle_2011_table_2:row4:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 153 L | not captured | not captured | ['tab_5:row8:col3', 'Bressolle_2011_table_2:row6:col1'] |
 
@@ -154,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-28 05:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:31 UTC</sub>

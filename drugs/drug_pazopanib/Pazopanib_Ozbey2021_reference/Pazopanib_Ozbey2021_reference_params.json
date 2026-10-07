@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 800 mg oral (L01EX03)",
+ "model_id": "Pazopanib_Ozbey2021_reference",
+ "molar_masses": {
+  "central.C": 0.43751799999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2722222222222223e-07,
+  "F": 1.0,
+  "MM": 0.43751799999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0003185714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0008,
+  "ka": 0.00027111111111111113,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14914.1013613781
+ },
+ "reference_peaks": {
+  "central.C": 0.03301642226835068
+ },
+ "stop_time": 691200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

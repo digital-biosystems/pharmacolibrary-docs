@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Soria-Chacartegui_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tramadol — `Tramadol_SoriaChacartegui2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.679). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.679). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,35 +25,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:33:27.576093+00:00) predates the upstream re-run (2026-10-07 05:46:49.222786+00:00). Current validate status: `extracted`.
+
 ## Citation
 Soria-Chacartegui P et al., Role of Pharmacogenetics on Tramadol Ph…, European journal of drug me… (2026)
   ·  DOI: [10.1007/s13318-026-00986-3](https://doi.org/10.1007/s13318-026-00986-3)
 
 ## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tramadol" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="extracted" stale="true" population="healthy adults" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 12 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 51.1 | L/h | 1.4194444444444445e-05 | [l] / [h] | 6.5 | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col4, Tab2:row2:col5, Soria-Chacartegui_2026_table_3:row5:col4 | — | 30.5 (13.7% RSE) |
+| CL (L/h) | `Q22` · CL | 51.1 | L/h | 1.4194444444444445e-05 | [l] / [h] | 2.67 | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col4, Tab2:row2:col5, Soria-Chacartegui_2026_table_3:row5:col4 | — | 30.5 (13.7% RSE) |
 | Vc (L) | `Q63` · V1 | 126 | L | 0.126 | [l] | 14.3 | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Tab2:row3:col5 | — | 68.4 (20.1% RSE) |
 | Ka (h−1) | `Q49` · kabs | 3.09 | h−1 | 0.0008583333333333333 | [1] / [h] | 20 | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col4, Tab2:row4:col5 | — | 108 (27.3% RSE) |
 | MTT (h) | `Q81` · MTT | 0.24 | h | not captured | [h] | 5.4 | exact (1.0) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col4, Tab2:row5:col5 | — | 20.7 (20.9% RSE) |
 | Q (L/h) | `Q30` · Q | 175 | L/h | 4.8611111111111115e-05 | [l] / [h] | 14.3 | exact (1.0) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col4, Tab2:row7:col5 | — | not captured |
 | Vp (L) | `Q64` · V2 | 171 | L | 0.171 | [l] | 8.2 | exact (1.0) | Tab2:row8:col1, Tab2:row8:col2, Tab2:row8:col4, Tab2:row8:col5 | — | not captured |
-| AUC0→24 (ng × h/mL) | `Q19` · AUCt | 2.43 | ng × h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Soria-Chacartegui_2026_table_3:row0:col4 | — | not captured |
-| AUC0→∞ (ng × h/mL) | `Q17` · AUC∞ | 2.14 | ng × h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Soria-Chacartegui_2026_table_3:row1:col4 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 3.24 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Soria-Chacartegui_2026_table_3:row2:col4 | — | not captured |
-| tmax (h) | `Q56` · tmax | 8.00 | h | 28800.0 | [h] | not captured | exact (1.0) | Soria-Chacartegui_2026_table_3:row3:col4 | — | not captured |
-| t1/2 (h) | `Q57` · t1/2z | 8.05 | h | 28980.000000000004 | [h] | not captured | exact (1.0) | Soria-Chacartegui_2026_table_3:row4:col4 | — | not captured |
-| Vd (L) | `Q61` · V | 6.36 | L | 0.00636 | [l] | not captured | exact (1.0) | Soria-Chacartegui_2026_table_3:row6:col4 | — | not captured |
 | theta_cl_cyp2d6 | `Q900` · theta_cl_cyp2d6 | -0.198 | L/h | not captured | not captured | 30.7 | not captured (not captured) | Tab2:row10:col1, Tab2:row10:col2, Tab2:row10:col4 | — | not captured |
 | theta_v1_weight | `Q900` · theta_v1_weight | 0.0311 | L | not captured | not captured | 31.3 | not captured (not captured) | Tab2:row11:col1, Tab2:row11:col2, Tab2:row11:col4, Tab2:row11:col5 | — | not captured |
 
@@ -64,16 +58,21 @@ Soria-Chacartegui P et al., Role of Pharmacogenetics on Tramadol Ph…, European
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
 - column 'bootstrap with 1000 runs (92.4% successful)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'relative pe (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'NCMT' — extend the ontology if this is a real PK parameter (source ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5'])
-- unit_dimension_unknown: 'ng × h/mL' (AUCt)
-- unit_dimension_unknown: 'ng × h/mL' (AUC∞)
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q63 (Vc (L)); Q30 (Q (L/h)); Q64 (Vp (L)); Q61 (Vd (L))
+- dropped value-less row: 'AUC0→24 (ng × h/mL)' (captured trailing unit 'ng × h/mL' for child rows)
+- dropped value-less row: 'AUC0→∞ (ng × h/mL)' (captured trailing unit 'ng × h/mL' for child rows)
+- dropped value-less row: 'Cmax (ng/mL)' (captured trailing unit 'ng/mL' for child rows)
+- dropped value-less row: 'tmax (h)' (captured trailing unit 'h' for child rows)
+- dropped value-less row: 't1/2 (h)' (captured trailing unit 'h' for child rows)
+- dropped value-less row: 'Vd (L)' (captured trailing unit 'L' for child rows)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q63 (Vc (L)); Q30 (Q (L/h)); Q64 (Vp (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tramadol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -101,7 +100,8 @@ Soria-Chacartegui P et al., Role of Pharmacogenetics on Tramadol Ph…, European
 - unparsed cell Soria-Chacartegui_2026_table_3:row6:col2 = '327 (29.7%)'
 - unparsed cell Soria-Chacartegui_2026_table_3:row6:col3 = '0.94 (0.91, 0.99)'
 - companion parameter table 3 transcribed (7 record(s))
-- LLM selected parameter table(s) 3
+- companion parameter table 4 transcribed (0 record(s))
+- LLM selected parameter table(s) 3, 4
 - dropped sensitivity-analysis table(s) 2 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
@@ -139,25 +139,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 4.2 | 4.446 | 1.0586 | 0.25 | reported t½β |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Tab2:row2:col5', 'Soria-Chacartegui_2026_table_3:row5:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row2:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row3:col4'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row4:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row6:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2', 'Tab2:row8:col4', 'Tab2:row8:col5'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | ng × h/mL | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row1:col4'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | ng × h/mL | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row0:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 51.1 | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Tab2:row2:col5', 'Soria-Chacartegui_2026_table_3:row5:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 51.1 L/h | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col4', 'Tab2:row2:col5', 'Soria-Chacartegui_2026_table_3:row5:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 6.36 L | not captured | not captured | ['Soria-Chacartegui_2026_table_3:row6:col4'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 126 L | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 171 L | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2', 'Tab2:row8:col4', 'Tab2:row8:col5'] |
 
@@ -177,21 +171,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_modelica.zip" download>Tramadol_SoriaChacartegui2026_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_fmi.zip" download>Tramadol_SoriaChacartegui2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_modelica.zip" download>Tramadol_SoriaChacartegui2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_fmi.zip" download>Tramadol_SoriaChacartegui2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_matlab.zip" download>Tramadol_SoriaChacartegui2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_matlab_simbio.zip" download>Tramadol_SoriaChacartegui2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_sbml.zip" download>Tramadol_SoriaChacartegui2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_cellml.zip" download>Tramadol_SoriaChacartegui2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference.svg" alt="Tramadol_SoriaChacartegui2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 37.5 mg, single dose, first-order absorption (ka 3.09 /h, F 0.9). Dose in the paper: 37.5 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference/Tramadol_SoriaChacartegui2026_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Tramadol_SoriaChacartegui2026_reference_params.json` · controls `Tramadol_SoriaChacartegui2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:46 UTC</sub>

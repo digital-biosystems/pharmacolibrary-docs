@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 400 mg parenteral (N02AB02)",
  "model_id": "Pethidine_HamamotoHardman2020_reference",
  "molar_masses": {
   "central.C": 0.2473327
@@ -8,12 +8,6 @@
  "observables": [
   "central.C"
  ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  17.5,
-  35.0,
-  70.0
- ],
  "parameters": {
   "Cl": 2.1e-05,
   "F": 1.0,
@@ -21,14 +15,14 @@
   "VdPerKg": 0.003007153543228955,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1.75e-05,
+  "adminMass": 0.0004,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662096
+  "central.C": 660.0000000662027
  },
  "reference_peaks": {
-  "central.C": 8.0696279237309e-05
+  "central.C": 0.001844477306432194
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

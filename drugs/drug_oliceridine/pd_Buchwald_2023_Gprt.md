@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oliceridine&quot;,&quot;href&quot;:&quot;drugs/drug_oliceridine/&quot;},{&quot;label&quot;:&quot;Buchwald_2023 \u00b7 PD G protein activation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# G protein activation — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# G protein activation — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -11,9 +11,11 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+
 ## What this record describes
 
-**As extracted:** Unknown drives G protein activation (in fractional response): delayed effect through transit (transduction) compartments.
+**As extracted:** Oliceridine drives G protein activation (in %): delayed effect through transit (transduction) compartments.
 
 **Model:** No model was generated from this record.
 
@@ -34,42 +36,7 @@ Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacolog
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | log EC50,Gprt — McPherson et al. (2010) | `Q321` · not captured | -7.95 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col1 |
-| PD (effect) | log EC50,Gprt — McPherson et al. (2010) | `Q321` · not captured | -7.01 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col2 |
-| PD (effect) | log EC50,Gprt — Hothersall et al. (2017) | `Q321` · not captured | -7.72 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col3 |
-| PD (effect) | log EC50,Gprt — Hothersall et al. (2017) | `Q321` · not captured | -7.24 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col4 |
-| PD (effect) | log EC50,Gprt — Pedersen et al. (2019) | `Q321` · not captured | -8.61 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col5 |
-| PD (effect) | log EC50,Gprt — Pedersen et al. (2019) | `Q321` · not captured | -8.17 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col6 |
-| PD (effect) | logEC50,βArr — McPherson et al. (2010) | `Q321` · not captured | -6.38 | unknown | not captured | llm (not captured) | T1:row5:col1 |
-| PD (effect) | logEC50,βArr — McPherson et al. (2010) | `Q321` · not captured | -6.49 | unknown | not captured | llm (not captured) | T1:row5:col2 |
-| PD (effect) | logEC50,βArr — Hothersall et al. (2017) | `Q321` · not captured | -6.02 | unknown | not captured | llm (not captured) | T1:row5:col3 |
-| PD (effect) | logEC50,βArr — Hothersall et al. (2017) | `Q321` · not captured | -6.54 | unknown | not captured | llm (not captured) | T1:row5:col4 |
-| PD (effect) | logEC50,βArr — Pedersen et al. (2019) | `Q321` · not captured | -6.10 | unknown | not captured | llm (not captured) | T1:row5:col5 |
-| PD (effect) | logEC50,βArr — Pedersen et al. (2019) | `Q321` · not captured | -6.00 | unknown | not captured | llm (not captured) | T1:row5:col6 |
-| PD (effect) | E max, Gprt — McPherson et al. (2010) | `Q320` · not captured | 100.0 | not captured | not captured | llm (not captured) | T1:row6:col1 |
-| PD (effect) | E max, Gprt — McPherson et al. (2010) | `Q320` · not captured | 94.2 | not captured | not captured | llm (not captured) | T1:row6:col2 |
-| PD (effect) | E max, Gprt — Hothersall et al. (2017) | `Q320` · not captured | 96.8 | not captured | not captured | llm (not captured) | T1:row6:col3 |
-| PD (effect) | E max, Gprt — Hothersall et al. (2017) | `Q320` · not captured | 92.9 | not captured | not captured | llm (not captured) | T1:row6:col4 |
-| PD (effect) | E max, Gprt — Pedersen et al. (2019) | `Q320` · not captured | 99.0 | not captured | not captured | llm (not captured) | T1:row6:col5 |
-| PD (effect) | E max, Gprt — Pedersen et al. (2019) | `Q320` · not captured | 98.0 | not captured | not captured | llm (not captured) | T1:row6:col6 |
-| PD (effect) | E max,βArr — McPherson et al. (2010) | `Q320` · not captured | 99.2 | not captured | not captured | llm (not captured) | T1:row7:col1 |
-| PD (effect) | E max,βArr — McPherson et al. (2010) | `Q320` · not captured | 15.2 | not captured | not captured | llm (not captured) | T1:row7:col2 |
-| PD (effect) | E max,βArr — Hothersall et al. (2017) | `Q320` · not captured | 77.7 | not captured | not captured | llm (not captured) | T1:row7:col3 |
-| PD (effect) | E max,βArr — Hothersall et al. (2017) | `Q320` · not captured | 7.5 | not captured | not captured | llm (not captured) | T1:row7:col4 |
-| PD (effect) | E max,βArr — Pedersen et al. (2019) | `Q320` · not captured | 99.0 | not captured | not captured | llm (not captured) | T1:row7:col5 |
-| PD (effect) | E max,βArr — Pedersen et al. (2019) | `Q320` · not captured | 25.0 | not captured | not captured | llm (not captured) | T1:row7:col6 |
-| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 18.62 | not captured | not captured | llm (not captured) | T1:row8:col5 |
-| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 14.13 | not captured | not captured | llm (not captured) | T1:row8:col6 |
-| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.058 | not captured | not captured | llm (not captured) | T1:row9:col5 |
-| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.095 | not captured | not captured | llm (not captured) | T1:row9:col6 |
-| PK (driver) | γGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.51 | not captured | not captured | llm (not captured) | T1:row11:col5 |
-| PK (driver) | γGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.51 | not captured | not captured | llm (not captured) | T1:row11:col6 |
-| PK (driver) | γβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.059 | not captured | not captured | llm (not captured) | T1:row12:col5 |
-| PK (driver) | γβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.059 | not captured | not captured | llm (not captured) | T1:row12:col6 |
-| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.49 | not captured | not captured | llm (not captured) | T1:row14:col5 |
-| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 12.94 | not captured | not captured | llm (not captured) | T1:row14:col6 |
-| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.06 | not captured | not captured | llm (not captured) | T1:row15:col5 |
-| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.226 | not captured | not captured | llm (not captured) | T1:row15:col6 |
+| — | ε | `Q100` · not captured | 0.382 | not captured | not captured | nil (not captured) | Buchwald_2023:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

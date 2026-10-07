@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # oxycodone
 
@@ -15,18 +15,41 @@ Oxycodone is an opioid painkiller used to treat pain, including pain from injury
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q407535](https://www.wikidata.org/wiki/Q407535) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| oxycodone | parent | 315.364 | C18H21NO4 | DrugBank | [5284603](https://pubchem.ncbi.nlm.nih.gov/compound/5284603) | Ladebo_2020, Morse_2021, Saari_2012 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-28 06:15 | 5:45 | 1/1/0 | 0/0/0 | 0/0/0 | 146,180/14,807 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 4/1 | 5/0 | 0 |
+| 2026-10-07 05:40 | 2:25 | 2/3/2 | 3/0/0 | 0/0/0 | 232,172/13,546 | einfracz / qwen3.8-27b | 16 | 5/1 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012_reference](drugs/drug_oxycodone/Oxycodone_Saari2012_reference.md) | — | 3-compartment (no model) | 8 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Morse_2021_reference](drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 9 | Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthesia (2021) | [10.1111/pan.14283](https://doi.org/10.1111/pan.14283) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Ladebo_2020_reference](drugs/drug_oxycodone/Oxycodone_Ladebo2020_reference.md) | — | 1-compartment (no model) | 5 | Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020) | [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: not captured</sub> | [Saari_2012_reference](drugs/drug_oxycodone/Oxycodone_Saari2012_reference.md) | — | — (no model) | 0 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chaw_2023_reference](drugs/drug_oxycodone/Oxycodone_Chaw2023_reference.md) | — | 1-compartment (no model) | 0 | Chaw SH et al., Population Pharmacokinetics and Dosing…, European journal of drug me… (2023) | [10.1007/s13318-022-00795-4](https://doi.org/10.1007/s13318-022-00795-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012_covariate_model](drugs/drug_oxycodone/Oxycodone_Saari2012_covariate_model.md) | — | 3-compartment (no model) | 8 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012_population_estimates](drugs/drug_oxycodone/Oxycodone_Saari2012_population_estimates.md) | — | 3-compartment (no model) | 8 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ing_2012_somatic_pain_skin_electrical](drugs/drug_oxycodone/pd_Ing_2012_somatic_pain_skin_electrical.md) | somatic pain (skin) electrical ← oxycodone · direct linear effect | — | Ing Lorenzini K et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2012) | [10.1111/j.1742-7843.2011.00814.x](https://doi.org/10.1111/j.1742-7843.2011.00814.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ing_2012_somatic_pain_skin_thermal](drugs/drug_oxycodone/pd_Ing_2012_somatic_pain_skin_thermal.md) | somatic pain (skin) thermal ← oxycodone · direct linear effect | — | Ing Lorenzini K et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2012) | [10.1111/j.1742-7843.2011.00814.x](https://doi.org/10.1111/j.1742-7843.2011.00814.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ing_2012_visceral_pain_threshold](drugs/drug_oxycodone/pd_Ing_2012_visceral_pain_threshold.md) | visceral pain threshold ← oxycodone · direct linear effect | — | Ing Lorenzini K et al., Pharmacokinetic-pharmacodynamic modelli…, Basic & clinical pharmacolo… (2012) | [10.1111/j.1742-7843.2011.00814.x](https://doi.org/10.1111/j.1742-7843.2011.00814.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ladebo_2020_pupil_diameter](drugs/drug_oxycodone/pd_Ladebo_2020_pupil_diameter.md) | pupil diameter ← oxycodone · direct Emax (saturable) effect | — | Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020) | [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nallani_2022_drug_liking](drugs/drug_oxycodone/pd_Nallani_2022_drug_liking.md) | drug liking ← oxycodone · direct sigmoid Emax (Hill) effect | — | Nallani SC et al., Concentration-Response Model of Immedia…, Pain medicine (Malden, Mass… (2022) | [10.1093/pm/pnab339](https://doi.org/10.1093/pm/pnab339) |
 
 ## ADME sites
 
@@ -52,19 +75,46 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 95 matched, 20 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 7  ·  extracted 2  ·  needs_review 1  ·  rejected 3  ·  stale 2
 - **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Agema_2021.pdf` | Agema BC et al., Population Pharmacokinetics of Oxycodon…, Cancers (2021) | popPK | 10 | [10.3390/cancers13112768](https://doi.org/10.3390/cancers13112768) | [34199534](https://pubmed.ncbi.nlm.nih.gov/34199534) | The study develops a population-PK model for oxycodone, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Chaw_2023.pdf` | Chaw SH et al., Population Pharmacokinetics and Dosing…, European journal of drug me… (2023) | popPK | 10 | [10.1007/s13318-022-00795-4](https://doi.org/10.1007/s13318-022-00795-4) | [36207565](https://pubmed.ncbi.nlm.nih.gov/36207565) | The study reports a population PK model for oxycodone with specific numeric values for clearance (28.5 l/h per 70 kg) and central volume of distribution (56.4 l per 70 kg) directly in the text. |
+| `Ladebo_2020.pdf` | Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020) | popPK | 10 | [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330) | [31597014](https://pubmed.ncbi.nlm.nih.gov/31597014) | Reports PK parameters (ka, model structure) for oxycodone in humans, but only specific absorption rates and lag times are provided, lacking standard disposition parameters like CL or V. |
+| `Morse_2021.pdf` | Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthesia (2021) | popPK | 10 | [10.1111/pan.14283](https://doi.org/10.1111/pan.14283) | [34469607](https://pubmed.ncbi.nlm.nih.gov/34469607) | The paper reports a full population pharmacokinetic model for oxycodone with explicit numeric values for clearance, volume, and intercompartmental clearances in the abstract. |
+| `Choi_2017.pdf` | Choi BM et al., Population pharmacokinetics and analges…, British journal of clinical… (2017) | popPK | 8 | [10.1111/bcp.13101](https://doi.org/10.1111/bcp.13101) | [27558774](https://pubmed.ncbi.nlm.nih.gov/27558774) | The study reports a 3-compartment population PK model for oxycodone but the abstract does not provide the specific numeric values for clearance, volume, or Q, which are likely in the full text or supplementary material not included. |
+| `Hellinga_2023.pdf` | Hellinga M et al., Oral Oxycodone-Induced Respiratory Depr…, Clinical pharmacology and t… (2023) | popPK | 8 | [10.1002/cpt.2863](https://doi.org/10.1002/cpt.2863) | [36744649](https://pubmed.ncbi.nlm.nih.gov/36744649) | The study is a PK/PD modeling study of oxycodone in humans, but specific quantitative PK parameter values (CL, V, ka, t1/2) are not provided in the abstract or text, likely residing in the full results or supplementary material. |
+| `Olsen_2016.pdf` | Olsen R et al., Modelling the PKPD of oxycodone in expe…, European journal of pharmac… (2016) | popPK | 6 | [10.1016/j.ejps.2016.02.021](https://doi.org/10.1016/j.ejps.2016.02.021) | [26946441](https://pubmed.ncbi.nlm.nih.gov/26946441) | The paper describes a population PK/PD model for oxycodone, but the abstract lacks specific numeric parameter values (CL, V, etc.), and the evidence provided does not include the results section or tables containing these estimates. |
+
+<sub>queue written 2026-10-07T05:38:54.881205+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ing_2012 | irrelevant | 1 | 0 | The paper is a review of PK/PD modeling in analgesics that discusses oxycodone qualitatively but does not report original quantitative disposition parameters (CL, V, etc.) for oxycodone. |
+| popPK | Agema_2021 | relevant | 10 | 2 | The study develops a population-PK model for oxycodone, but the specific numeric parameter values are not present in the provided abstract text. |
+| popPK | Alhaj-Suliman_2020 | irrelevant | 0 | 0 | The study is a model-based meta-analysis focusing on efficacy and safety endpoints for osteoarthritis, reporting pharmacodynamic parameters (ED50) rather than pharmacokinetic disposition parameters (CL, Vd) for oxycodone. |
+| popPK | Benziger_1997 | irrelevant | 4 | 2 | The study reports bioequivalence parameters (AUC, Cmax ratios) and pharmacodynamic correlations rather than compartmental PK parameters (CL, V, ka) or population model values. |
+| popPK | Choi_2017 | relevant | 8 | 4 | The study reports a 3-compartment population PK model for oxycodone but the abstract does not provide the specific numeric values for clearance, volume, or Q, which are likely in the full text or supplementary material not included. |
+| popPK | Dari_2021 | relevant | 9 | 0 | The paper describes a population PK-PD meta-analysis model for oxycodone with parameters listed in the text (ka, ke, V), but the specific numeric values are referenced as being in Table 2 which is not present in the provided evidence. |
+| popPK | Hellinga_2023 | relevant | 8 | 0 | The study is a PK/PD modeling study of oxycodone in humans, but specific quantitative PK parameter values (CL, V, ka, t1/2) are not provided in the abstract or text, likely residing in the full results or supplementary material. |
+| popPK | Ing_2012 | irrelevant | 1 | 0 | The paper is a MiniReview summarizing PK/PD concepts for various opioids; it does not report original quantitative PK parameter values for oxycodone. |
 | PD | Ing_2012 | not_relevant | 2 | 0 | The paper is a mini-review that discusses PK/PD concepts and models for opioids, including oxycodone, but does not report specific numeric PD parameters (e.g., Emax, EC50) or extractable concentration-effect data for oxycodone in the provided text. |
-| popPK | Jansen_2026 | relevant | 9 | 1 | The study reports population PK parameters for oxycodone, but the specific numeric values are located in the Supplemental Digital Content which is not provided. |
-| popPK | Shram_2023 | irrelevant | 0 | 0 | The study evaluates the abuse potential of esmethadone using oxycodone only as a positive control, and no quantitative pharmacokinetic parameters (CL, V, etc.) for oxycodone are reported in the provided text. |
+| popPK | Jansen_2026 | relevant | 8 | 2 | The study develops a population PK model for oxycodone, but the specific numeric parameter values (CL, V, ka) are not listed in the provided text and are likely in the referenced supplementary material or figures. |
+| popPK | Ji_2021 | irrelevant | 0 | 0 | The study uses a PBPK model for in silico simulation of a drug-drug interaction and does not report specific quantitative disposition parameter values (e.g., CL, V) for oxycodone. |
+| popPK | Kaiko_1996 | irrelevant | 3 | 0 | The study reports AUC comparisons and PK-PD relationships but lacks specific quantitative disposition parameters (CL, V, ka) and no numeric values are provided in the evidence. |
+| popPK | Nallani_2022 | irrelevant | 4 | 0 | The study focuses on concentration-response pharmacodynamics (drug liking) and non-compartmental analysis of subjective effects rather than estimating specific quantitative disposition parameters like clearance, volume of distribution, or compartmental model constants. |
+| popPK | Olkkola_2013 | irrelevant | 3 | 0 | The paper is a critical review of oxycodone pharmacology and does not report original quantitative PK parameter values in the provided text. |
+| popPK | Olsen_2016 | relevant | 6 | 0 | The paper describes a population PK/PD model for oxycodone, but the abstract lacks specific numeric parameter values (CL, V, etc.), and the evidence provided does not include the results section or tables containing these estimates. |
+| popPK | Shram_2023 | irrelevant | 1 | 0 | The study is an abuse potential trial where oxycodone is a positive control comparator, not the subject drug, and no numeric PK parameters are provided in the text. |
 | PD | Shram_2023 | not_relevant | 0 | 0 | The paper evaluates the abuse potential of esmethadone using oxycodone as a positive control, but it does not report any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters (e.g., EC50, Emax) for oxycodone itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-19 01:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 05:38 UTC</sub>

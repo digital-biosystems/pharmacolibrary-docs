@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;erenumab&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/&quot;},{&quot;label&quot;:&quot;Vu_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # erenumab — `Erenumab_Vu2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:55.614172+00:00) predates the upstream re-run (2026-10-07 06:34:40.358220+00:00). Current validate status: `rejected`.
+
 ## Citation
 Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017)
   ·  DOI: [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6)
 
 ## Model component
-<dbs-pgx drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="false" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="true" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -42,14 +44,14 @@ Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nonspecific linear clearance (CL)a | `Q22` · CL | 0.214 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab3:row1:col2 | — | 25.1 (None% RSE) |
-| Central volume of distribution (Vc)a | `Q63` · V1 | 4.27 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab3:row2:col2 | — | 43.8 (None% RSE) |
-| Intercompartmental clearance (Q) | `Q30` · Q | 3.34 | Q | not captured | [q] | not captured | exact (1.0) | Tab3:row3:col2 | — | not captured |
-| Peripheral volume (Vp) | `Q64` · V2 | 2.73 | Vp | not captured | [vp] | not captured | exact (1.0) | Tab3:row4:col2 | — | not captured |
+| Central volume of distribution (Vc)a | `Q63` · V1 | 4.27 | L | 0.0042699999999999995 | L | not captured | boundary_compartment (0.9) | Tab3:row2:col2 | — | 43.8 (None% RSE) |
+| Intercompartmental clearance (Q) | `Q30` · Q | 3.34 | L/day | 3.865740740740741e-08 | L/h | not captured | exact (1.0) | Tab3:row3:col2 | — | not captured |
+| Peripheral volume (Vp) | `Q64` · V2 | 2.73 | L | 0.0027300000000000002 | L | not captured | exact (1.0) | Tab3:row4:col2 | — | not captured |
 | Absorption rate (ka) | `Q49` · kabs | 0.432 | ka | not captured | [ka] | not captured | exact (1.0) | Tab3:row5:col1, Tab3:row5:col2 | — | 59.5 (None% RSE) |
 | Bioavailability (F) | `Q40` · Fab | 74 | F | not captured | not captured | not captured | exact (1.0) | Tab3:row6:col2 | — | not captured |
-| Binding affinity (Kss) | `Q331` · KD | 18.8 | Kss | not captured | [kss] | not captured | exact (1.0) | Tab3:row9:col2 | — | not captured |
-| Internalization rate (kint) | `Q334` · kint | 0.0345 | kint | not captured | [kint] | not captured | llm (0.6) | Tab3:row10:col1, Tab3:row10:col2 | — | 42.3 (None% RSE) |
+| Binding affinity (Kss) | `Q331` · KD | 18.8 | ng/mL | not captured | ng/mL | not captured | exact (1.0) | Tab3:row9:col2 | — | not captured |
+| Internalization rate (kint) | `Q334` · kint | 0.0345 | 1/day | 3.993055555555556e-07 | 1/h | not captured | llm (0.6) | Tab3:row10:col1, Tab3:row10:col2 | — | 42.3 (None% RSE) |
+| central CL | `Q22` · CL | 0.0902 | L/d | 1.0439814814814816e-09 | L/h | not captured | review_gapfill (0.7) | Fiedler-Kelly_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,19 +62,26 @@ Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research
 
 **Interpretation flags:**
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Nonspecific linear clearance (CL)a' — extend the ontology if this is a real PK parameter (source ['Tab3:row1:col2'])
 - unit_dimension_unknown: 'Q' (Q)
 - unit_dimension_unknown: 'Vp' (V2)
 - unit_dimension_mismatch: 'Absorption rate (ka)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
 - dropped PD-category row 'Receptor production rate (ksyn)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row7:col2'])
-- dropped unlinked row (NIL): 'Receptor degradation rate (kdeg)' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1', 'Tab3:row8:col2'])
+- dropped PD-category row 'Receptor degradation rate (kdeg)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row8:col1', 'Tab3:row8:col2'])
 - unit_dimension_unknown: 'Kss' (KD)
 - unit_dimension_unknown: 'kint' (kint)
 - dropped value-less row: '95% CI'
-- dropped value-less row: 'Mean CL and Vc estimates at 70 kg; individual body weight effect on CL and Vc were estimated as Individual CL = 0.214 (weight/70)0.75 L/day and Individual Vc = 4.27 (weight/70) L'
-- dropped value-less row: 'CV'
+- dropped value-less row: 'Mean CL and Vc estimates at 70 kg; individual body weight effect on CL and Vc were estimated as'
+- implicit units: 'Central volume of distribution (Vc)a' → L (from the paper text: 'The paper text explicitly states: "...and the central volume of distribution was 4.27 L..."')
+- implicit units: 'Intercompartmental clearance (Q)' → L/day (from the popPK convention: 'Intercompartmental clearance (Q) is a flow term. In this paper, clearances are reported in L/day (e.g., linear clearance')
+- implicit units: 'Peripheral volume (Vp)' → L (from the popPK convention: 'Peripheral volume (Vp) is a volume of distribution. The central volume (Vc) is explicitly stated as 4.27 L in the text. ')
+- implicit units: 'Binding affinity (Kss)' → ng/mL (from the popPK convention: 'Binding affinity (Kss) is an equilibrium dissociation constant, representing a concentration. For monoclonal antibodies ')
+- implicit units: 'Internalization rate (kint)' → 1/day (from the paper text: 'The paper text explicitly states: "The rate constant of the complex internalization (kint: 0.0345 day−1)...')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=erenumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: none found for 'erenumab' — its concentrations stay mass-only
+- gap-filled Q22 (CL) from Fiedler-Kelly_2019's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -122,18 +131,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row3:col2'] |
+| C5_dimension_Q331 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab3:row9:col2'] |
+| C5_dimension_Q334 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row10:col1', 'Tab3:row10:col2'] |
 | C5_dimension_Q49 | fail | [time] | ka | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row5:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row1:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | Q | not captured | not captured | ['Tab3:row3:col2'] |
-| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 | Kss | not captured | not captured | ['Tab3:row9:col2'] |
-| C5_unit_missing_Q334 | fail | 1 / [time] | kint | not captured | not captured | ['Tab3:row10:col1', 'Tab3:row10:col2'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row2:col2'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | Vp | not captured | not captured | ['Tab3:row4:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.214 | not captured | not captured | ['Tab3:row1:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0902 | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00376 L/h | not captured | not captured | ['Fiedler-Kelly_2019:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.27 L | not captured | not captured | ['Tab3:row2:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.73 L | not captured | not captured | ['Tab3:row4:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -158,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 04:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:34 UTC</sub>

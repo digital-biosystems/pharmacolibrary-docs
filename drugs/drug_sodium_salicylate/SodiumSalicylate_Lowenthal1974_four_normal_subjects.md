@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;sodium salicylate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_salicylate/&quot;},{&quot;label&quot;:&quot;Lowenthal_1974 \u00b7 four_normal_subjects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumSalicylate_Mathurkar2018_reference&quot;,&quot;label&quot;:&quot;Mathurkar_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_salicylate/SodiumSalicylate_Mathurkar2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium salicylate — `SodiumSalicylate_Lowenthal1974_four_normal_subjects`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +24,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:31.533864+00:00) predates the upstream re-run (2026-10-07 06:13:56.554236+00:00). Current validate status: `needs_review`.
+
 > **Dose compound ≠ measured compound:** dosed `sodium salicylate`, measured `salicylic acid`.
 
 ## Citation
@@ -32,10 +33,10 @@ Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of 
   ·  DOI: [10.1172/JCI107865](https://doi.org/10.1172/JCI107865)
 
 ## Model component
-<dbs-pgx drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_four_normal_subjects" status="needs_review" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_four_normal_subjects" status="needs_review" stale="true" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,10 +45,8 @@ Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Vo, liter | `Q61` · V | 5.43 | liter | 0.00543 | [l] | not captured | llm (0.6) | Lowenthal_1974_table_3:row5:col2 | — | not captured |
-| t½ (β), min | `Q60` · t1/2β | 247 | min | 14820.0 | [min] | not captured | llm (0.6) | Lowenthal_1974_table_3:row7:col2 | — | not captured |
-| clearance | `Q22` · CL | 0.04 | L/h/kg | 7.777777777777778e-07 | L/h | not captured | review_gapfill (0.7) | Mathurkar_2018:review | — | not captured |
-| Ka | `Q49` · kabs | 0.64 | 1/h | 0.00017777777777777779 | 1/h | not captured | review_gapfill (0.7) | Mathurkar_2018:review | — | not captured |
+| Vₐ, liter | `Q61` · V | 5.43 | liter | 0.00543 | [l] | not captured | llm (0.6) | Lowenthal_1974_table_3:row5:col2 | — | not captured |
+| tₔ (β), min | `Q60` · t1/2β | 247 | min | 14820.0 | [min] | not captured | llm (0.6) | Lowenthal_1974_table_3:row7:col2 | — | not captured |
 | lag time | `Q83` · tlag | 0.42 | h | 1512.0 | h | not captured | review_gapfill (0.7) | Somani_2016:review | — | not captured |
 
 <details class="legend">
@@ -58,21 +57,20 @@ Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q61 ('Vd (area), liter', value '9.18') — already have one for this compound
+- dropped duplicate Q61 ('Vₐ (area), liter', value '9.18') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salicylic acid
-- population split: 'four normal subjects*' subgroup of Lowenthal_1974 (paper reports 2 populations: four normal subjects*, six anephric patients)
-- gap-filled Q22 (CL) from Mathurkar_2018's review values (primary lacked it)
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- population split: 'four normal subjects*' subgroup of Lowenthal_1974 (paper reports 3 populations: four normal subjects*, patients, six anephric patients)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Mathurkar_2018's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Somani_2016's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2, 3
-- unparsed cell Lowenthal_1974_table_3:row5:col3 = '&gt;0.7'
-- unparsed cell Lowenthal_1974_table_3:row6:col3 = '&gt;0.8'
-- unparsed cell Lowenthal_1974_table_3:row7:col3 = '&gt;0.1'
+- unparsed cell Lowenthal_1974_table_3:row5:col3 = '&gt; 0.7'
+- unparsed cell Lowenthal_1974_table_3:row6:col3 = '&gt; 0.8'
+- unparsed cell Lowenthal_1974_table_3:row7:col3 = '&gt; 0.1'
 
 ## Validation
 
@@ -108,14 +106,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Mathurkar_2018:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Mathurkar_2018:review'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Lowenthal_1974_table_3:row7:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lowenthal_1974_table_3:row5:col2'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Somani_2016:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.04 | not captured | not captured | ['Mathurkar_2018:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.8 L/h | not captured | not captured | ['Mathurkar_2018:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 5.43 L | not captured | not captured | ['Lowenthal_1974_table_3:row5:col2'] |
 
 **Reviewer per-scenario checks:**
@@ -167,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:13 UTC</sub>

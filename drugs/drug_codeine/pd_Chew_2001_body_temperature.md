@@ -33,8 +33,8 @@ Chew M et al., Precipitated withdrawal following codei…, European journal of p
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC(50) | `Q321` · not captured | 556 | ng/ml | not captured | llm (not captured) | Chew_2001:pdv3 |
-| PD (effect) | n | `Q325` · not captured | 2.9 | not captured | not captured | llm (not captured) | Chew_2001:pdv3 |
+| PD (effect) | EC(50) | `Q321` · not captured | 556 +/- 121 | ng/ml | not captured | llm (not captured) | Chew_2001:pdv3 |
+| PD (effect) | n | `Q325` · not captured | 2.9 +/- 1.5 | not captured | not captured | llm (not captured) | Chew_2001:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

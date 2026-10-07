@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Choi_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Introna2026_reference&quot;,&quot;label&quot;:&quot;Introna_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Introna2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Choi2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,28 +25,31 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.107460+00:00) predates the upstream re-run (2026-10-03 13:15:19.778616+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.107460+00:00) predates the upstream re-run (2026-10-07 04:58:15.807384+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Choi L et al., Population Pharmacokinetics of Fentanyl…, Critical care medicine (2016)
   ·  DOI: [10.1097/CCM.0000000000001347](https://doi.org/10.1097/CCM.0000000000001347)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Choi2016_reference" status="extracted" stale="true" population="critically ill adults" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Choi2016_reference" status="needs_review" stale="true" population="critically ill patients with acute respiratory failure and/or shock" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL = θ1 + θ2Wgtc + θ3SLDCHF | `Q22` · CL | 32 | L/h | 8.888888888888888e-06 | L/h | not captured | llm_confirmed (0.6) | T2:row3:col4 | — | not captured |
+| θ2 | `Q900` · equation variable | 0.19 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row5:col1 | — | not captured |
 | V1 | `Q63` · V1 | 203 | L | 0.203 | L | not captured | exact (1.0) | T2:row7:col1, T2:row7:col4 | — | not captured |
 | V2 = θ4+ θ5Wgtc | `Q64` · V2 | 474 | L | 0.47400000000000003 | L | not captured | llm_confirmed (0.6) | T2:row8:col4 | — | not captured |
 | Q | `Q30` · Q | 55 | L/h | 1.5277777777777777e-05 | L/h | not captured | exact (1.0) | T2:row11:col1, T2:row11:col4 | — | not captured |
-| absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002777777777777778 | 1/h | not captured | review_gapfill (0.7) | Eleveld_2026:review | — | not captured |
+| the total body clearance was | `Q22` · CL | 83.7 | ml/min/kg | 9.765e-05 | L/h | not captured | review_gapfill (0.7) | Andersen_1986:review | — | not captured |
+| t1pp ranged from | `Q83` · tlag | 15.0 | min | 900.0 | h | not captured | review_gapfill (0.7) | Andersen_1986:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,18 +60,18 @@ Choi L et al., Population Pharmacokinetics of Fentanyl…, Critical care medicin
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Covariate Model(Obj = 599)' — extend the ontology if this is a real PK parameter (source ['T2:row0:col3'])
+- dropped unlinked row (NIL): 'CL = θ1 + θ2Wgtc + θ3SLDCHF' — extend the ontology if this is a real PK parameter (source ['T2:row3:col4'])
 - dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['T2:row4:col1'])
-- dropped unlinked row (NIL): 'θ2' — extend the ontology if this is a real PK parameter (source ['T2:row5:col1'])
-- dropped unlinked row (NIL): 'θ3' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1'])
+- dropped duplicate Q900 ('θ3', value '-10.6') — already have one for this compound
 - dropped unlinked row (NIL): 'θ4' — extend the ontology if this is a real PK parameter (source ['T2:row9:col1'])
-- dropped unlinked row (NIL): 'θ5' — extend the ontology if this is a real PK parameter (source ['T2:row10:col1'])
-- implicit units: 'CL = θ1 + θ2Wgtc + θ3SLDCHF' → L/h (from the paper text: "The text states: 'The estimates of CL, Q, V1, and V2 ... were 35 L/hr (95% confidence interval [CI]: 32 to 39 L/hr), 55 ")
-- implicit units: 'V1' → L (from the paper text: "The text states: 'The estimates of CL, Q, V1, and V2 ... were 35 L/hr ..., 55 L/hr ..., 203 L (95% confidence interval [")
-- implicit units: 'V2 = θ4+ θ5Wgtc' → L (from the paper text: "The text states: 'The estimates of CL, Q, V1, and V2 ... were 35 L/hr ..., 55 L/hr ..., 203 L ..., and 523 L (95% confid")
-- implicit units: 'Q' → L/h (from the paper text: "The text states: 'The estimates of CL, Q, V1, and V2 ... were 35 L/hr (95% confidence interval [CI]: 32 to 39 L/hr), 55 ")
+- dropped duplicate Q900 ('θ5', value '7.1') — already have one for this compound
+- implicit units: 'V1' → L (from the paper text: 'The text states: "...203 L (95% confidence interval [CI]: 140 to 266 L)" for V1.')
+- implicit units: 'V2 = θ4+ θ5Wgtc' → L (from the paper text: 'The text states: "...and 523 L (95% confidence interval [CI]: 428 to 618 L), respectively" for V2.')
+- implicit units: 'Q' → L/h (from the paper text: 'The text states: "...55 L/hr (95% confidence interval [CI]: 42 to 68 L/hr)" for Q.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - model equation 'CLi = [θ1+θ2(Wgti−92)+θ3SLDCHFi]×exp(ηiCL) V1i=θ6×exp(ηiV1) V2i=[θ4+θ5(Wgti−92)]×exp(ηiV2) Q=θ7' not bound — neither LHS nor base term 'θ1' linked to an ontology parameter
-- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
+- gap-filled Q22 (CL) from Andersen_1986's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Andersen_1986's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell T2:row3:col5 = '29 to 34'
@@ -129,17 +132,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col4'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Andersen_1986:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row11:col1', 'T2:row11:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eleveld_2026:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row8:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.0 | not captured | not captured | ['T2:row3:col4'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Andersen_1986:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 83.7 | not captured | not captured | ['Andersen_1986:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 32 L/h | not captured | not captured | ['T2:row3:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 352 L/h | not captured | not captured | ['Andersen_1986:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 203 L | not captured | not captured | ['T2:row7:col1', 'T2:row7:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 474 L | not captured | not captured | ['T2:row8:col4'] |
 
@@ -176,4 +179,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:58 UTC</sub>

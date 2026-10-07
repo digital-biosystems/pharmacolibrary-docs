@@ -8,6 +8,12 @@
 - **molar mass:** 264.285 g/mol (C12H16N4O3) — DrugBank
 - **groups:** experimental
 
+## About
+
+Iprazochrome is a serotonin antagonist classified as an antimigraine preparation, used for migraine. It appears to be only an experimental compound, with no evidence of current authorisation or widespread use.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6065428](https://www.wikidata.org/wiki/Q6065428) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;piritramide&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/&quot;},{&quot;label&quot;:&quot;Kietzmann_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piritramide_Kietzmann1996_reference&quot;,&quot;label&quot;:&quot;Kietzmann_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Kietzmann1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Piritramide_Mller2006_reference&quot;,&quot;label&quot;:&quot;M\u00fcller_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Mller2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Hinrichs2017_reference&quot;,&quot;label&quot;:&quot;Hinrichs_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Hinrichs2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piritramide_Bouillon2004_reference&quot;,&quot;label&quot;:&quot;Bouillon_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Bouillon2004_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Kietzmann1996_reference&quot;,&quot;label&quot;:&quot;Kietzmann_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Kietzmann1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Piritramide_Mller2006_reference&quot;,&quot;label&quot;:&quot;M\u00fcller_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Mller2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # piritramide — `Piritramide_Kietzmann1996_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:25.060709+00:00) predates the upstream re-run (2026-10-07 05:39:55.072750+00:00). Current validate status: `extracted`.
+
 ## Citation
 Kietzmann D et al., Pharmacokinetics of piritramide after a…, Acta anaesthesiologica Scan… (1996)
   ·  DOI: [10.1111/j.1399-6576.1996.tb04557.x](https://doi.org/10.1111/j.1399-6576.1996.tb04557.x)
 
 ## Model component
-<dbs-pgx drug="piritramide" model-id="Piritramide_Kietzmann1996_reference" status="curated_candidate" stale="false" population="surgical patients" measured-compound="piritramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="piritramide" model-id="Piritramide_Kietzmann1996_reference" status="extracted" stale="true" population="surgical patients" measured-compound="piritramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 5 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,7 +46,6 @@ Kietzmann D et al., Pharmacokinetics of piritramide after a…, Acta anaesthesio
 | systemic plasma clearance | `Q22` · CL | 7.8 | ml/kg/min | 9.1e-06 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Kietzmann_1996:abstract | — | not captured |
 | Renal clearance of unchanged piritramide | `Q26` · CLR | 0.13 | ml/kg/min | 1.5166666666666666e-07 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Kietzmann_1996:abstract | — | not captured |
 | terminal elimination half-life | `Q57` · t1/2z | 8.0 | h | 28800.0 | [h] | not captured | llm (0.6) | Kietzmann_1996:abstract | — | not captured |
-| Verteilungsvolumens von | `Q61` · V | 4.7 | l/kg | 0.329 | L | not captured | review_gapfill (0.7) | Hinrichs_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,10 +54,12 @@ Kietzmann D et al., Pharmacokinetics of piritramide after a…, Acta anaesthesio
 
 ## Departures & gaps
 
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
+
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=piritramide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Hinrichs_2017's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -100,12 +103,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kietzmann_1996:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kietzmann_1996:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Kietzmann_1996:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hinrichs_2017:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kietzmann_1996:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.8 | not captured | not captured | ['Kietzmann_1996:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 32.8 L/h | not captured | not captured | ['Kietzmann_1996:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 329 L | not captured | not captured | ['Hinrichs_2017:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 329 L | not captured | not captured | ['Kietzmann_1996:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -138,12 +139,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_modelica.zip" download>Piritramide_Kietzmann1996_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_fmi.zip" download>Piritramide_Kietzmann1996_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_matlab.zip" download>Piritramide_Kietzmann1996_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_matlab_simbio.zip" download>Piritramide_Kietzmann1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_sbml.zip" download>Piritramide_Kietzmann1996_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_cellml.zip" download>Piritramide_Kietzmann1996_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_modelica.zip" download>Piritramide_Kietzmann1996_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_fmi.zip" download>Piritramide_Kietzmann1996_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_matlab.zip" download>Piritramide_Kietzmann1996_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_matlab_simbio.zip" download>Piritramide_Kietzmann1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_sbml.zip" download>Piritramide_Kietzmann1996_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Kietzmann1996_reference/Piritramide_Kietzmann1996_reference_cellml.zip" download>Piritramide_Kietzmann1996_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -160,4 +161,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 21:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:39 UTC</sub>

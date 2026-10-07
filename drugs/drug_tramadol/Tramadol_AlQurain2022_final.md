@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Al-Qurain_2022 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tramadol — `Tramadol_AlQurain2022_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.208). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.208). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:54.572884+00:00) predates the upstream re-run (2026-10-07 05:46:35.801733+00:00). Current validate status: `rejected`.
+
 ## Citation
 Al-Qurain AA et al., Population Pharmacokinetic Model for Tr…, European journal of drug me… (2022)
   ·  DOI: [10.1007/s13318-022-00756-x](https://doi.org/10.1007/s13318-022-00756-x)
 
 ## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_AlQurain2022_final" status="rejected" stale="false" population="older patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tramadol" model-id="Tramadol_AlQurain2022_final" status="rejected" stale="true" population="older patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.
@@ -47,7 +49,7 @@ Al-Qurain AA et al., Population Pharmacokinetic Model for Tr…, European journa
 | Q, l/h | `Q30` · Q | 0.0426 | l/h | 1.1833333333333333e-08 | [l] / [h] | not captured | exact (1.0) | Tab3:row4:col3, Tab3:row4:col4 | — | 0.0219 (None% RSE) |
 | V2/F, l | `Q82` · V2/F | 0.379 | l | 0.000379 | [l] | not captured | exact (1.0) | Tab3:row6:col3, Tab3:row6:col4 | — | 0.974 (None% RSE) |
 | CL/F, l/h | `Q27` · CL/F | 0.00604 | l/h | 1.677777777777778e-09 | [l] / [h] | not captured | exact (1.0) | Tab3:row8:col3, Tab3:row8:col4 | — | 0.0661 (None% RSE) |
-| Kt, l/h | `Q370` · CLfm | 0.0492 | l/h | 1.3666666666666668e-08 | [l] / [h] | not captured | exact (1.0) | Tab3:row10:col3, Tab3:row10:col4 | — | not captured |
+| Kt, l/h | `Q305` · kfm | 0.0492 | l/h | not captured | [l] / [h] | not captured | exact (1.0) | Tab3:row10:col3, Tab3:row10:col4 | — | not captured |
 | CLm/F, l/h | `Q27` · CL/F | 0.143 | l/h | 3.972222222222222e-08 | [l] / [h] | not captured | exact (1.0) | Tab3:row11:col3, Tab3:row11:col4 | — | not captured |
 | theta_v2_f_crcl | `Q900` · theta_v2_f_crcl | 0.0119 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row7:col3, Tab3:row7:col4 | — | not captured |
 | theta_cl_f_crcl | `Q900` · theta_cl_f_crcl | 0.00498 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row9:col3, Tab3:row9:col4 | — | not captured |
@@ -61,11 +63,14 @@ Al-Qurain AA et al., Population Pharmacokinetic Model for Tr…, European journa
 
 **Interpretation flags:**
 - dropped duplicate Q30 ('ISAR effect on Q', value '0.255') — already have one for this compound
+- unit_dimension_mismatch: 'Kt, l/h' → Q305 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
 - dropped unlinked row (NIL): 'Tramadol, b (%)' — extend the ontology if this is a real PK parameter (source ['Tab3:row20:col3', 'Tab3:row20:col4'])
 - dropped unlinked row (NIL): 'O-desmethyltramadol, a (%)' — extend the ontology if this is a real PK parameter (source ['Tab3:row21:col3', 'Tab3:row21:col4'])
 - dropped unlinked row (NIL): 'O-desmethyltramadol, b (%)' — extend the ontology if this is a real PK parameter (source ['Tab3:row22:col3', 'Tab3:row22:col4'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tramadol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- status held at route_to_review — not promoted
 - model-stage split: 'final model' is the final model of Al-Qurain_2022 (paper reports 2 stages: base model, final model); same population, different model-building step
 - row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 28 linked by role; re-tagged parent→O-desmethyltramadol ×24
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -126,7 +131,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row11:col3', 'Tab3:row11:col4'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col3', 'Tab3:row3:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row4:col3', 'Tab3:row4:col4'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row10:col3', 'Tab3:row10:col4'] |
+| C5_dimension_Q305 | fail | [length] ** 3 / [time] | l/h | not captured | not captured | ['Tab3:row10:col3', 'Tab3:row10:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row2:col3', 'Tab3:row2:col4'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row6:col3', 'Tab3:row6:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -159,4 +164,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:46 UTC</sub>

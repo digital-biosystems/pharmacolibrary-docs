@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;piritramide&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/&quot;},{&quot;label&quot;:&quot;Bouillon_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piritramide_Kietzmann1996_reference&quot;,&quot;label&quot;:&quot;Kietzmann_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Kietzmann1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Mller2006_reference&quot;,&quot;label&quot;:&quot;M\u00fcller_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Mller2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Hinrichs2017_reference&quot;,&quot;label&quot;:&quot;Hinrichs_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Hinrichs2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piritramide_Bouillon2004_reference&quot;,&quot;label&quot;:&quot;Bouillon_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Bouillon2004_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Piritramide_Kietzmann1996_reference&quot;,&quot;label&quot;:&quot;Kietzmann_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Kietzmann1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Mller2006_reference&quot;,&quot;label&quot;:&quot;M\u00fcller_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Mller2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # piritramide — `Piritramide_Bouillon2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:25.037814+00:00) predates the upstream re-run (2026-10-07 05:39:53.541599+00:00). Current validate status: `extracted`.
+
 ## Citation
 Bouillon T et al., The pharmacokinetics of piritramide aft…, European journal of anaesth… (2004)
   ·  DOI: [10.1017/s0265021504009019](https://doi.org/10.1017/s0265021504009019)
 
 ## Model component
-<dbs-pgx drug="piritramide" model-id="Piritramide_Bouillon2004_reference" status="model_quarantined" stale="false" population="intensive care patients" measured-compound="piritramide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="piritramide" model-id="Piritramide_Bouillon2004_reference" status="extracted" stale="true" population="intensive care patients" measured-compound="piritramide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted.
@@ -38,15 +40,13 @@ Bouillon T et al., The pharmacokinetics of piritramide aft…, European journal 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 | `Q63` · V1 | 47.9 | L | 0.0479 | [l] | not captured | exact (1.0) | Bouillon_2004:abstract | — | not captured |
+| volumes of distribution V1 | `Q63` · V1 | 47.9 | L | 0.0479 | [l] | not captured | llm_confirmed (0.6) | Bouillon_2004:abstract | — | not captured |
 | V2 | `Q64` · V2 | 402 | L | 0.402 | [l] | not captured | exact (1.0) | Bouillon_2004:abstract | — | not captured |
 | V3 | `Q77` · V3 | 332 | L | 0.332 | [l] | not captured | exact (1.0) | Bouillon_2004:abstract | — | not captured |
-| Cl1 | `Q22` · CL | 66.5 | Lh(-1) | not captured | [1] / [[h] · [l]] | not captured | llm (0.6) | Bouillon_2004:abstract | — | not captured |
-| Cl2 | `Q30` · Q | 215 | Lh(-1) | not captured | [1] / [[h] · [l]] | not captured | special_case (0.95) | Bouillon_2004:abstract | — | not captured |
+| clearances Cl1 | `Q22` · CL | 66.5 | L/h | 1.8472222222222224e-05 | L/h | not captured | llm (0.6) | Bouillon_2004:abstract | — | not captured |
+| Cl2 | `Q30` · Q | 215 | L/h | 5.972222222222222e-05 | L/h | not captured | special_case (0.95) | Bouillon_2004:abstract | — | not captured |
 | steady-state volume of distribution | `Q65` · Vss | 782 | L | 0.782 | [l] | not captured | llm_corrected (0.6) | Bouillon_2004:abstract | — | not captured |
 | terminal elimination half-life | `Q57` · t1/2z | 17.4 | h | 62639.99999999999 | [h] | not captured | llm (0.6) | Bouillon_2004:abstract | — | not captured |
 
@@ -61,10 +61,10 @@ Bouillon T et al., The pharmacokinetics of piritramide aft…, European journal 
 - unit_dimension_unknown: 'Lh(-1)' (CL)
 - unit_dimension_unknown: 'Lh(-1)' (Q)
 - dropped duplicate Q22 ('Cl3', value 18.4) — already have one for this compound
+- implicit units: 'clearances Cl1' → L/h (from the popPK convention: 'No unit provided in text or table. Clearance is conventionally expressed in L/h, and the magnitude 66.5 is consistent wi')
+- implicit units: 'Cl2' → L/h (from the popPK convention: 'No unit provided in text or table. Intercompartmental clearance (Q) is conventionally expressed in L/h, and the magnitud')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=piritramide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -106,15 +106,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bouillon_2004:abstract'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | Lh(-1) | not captured | not captured | ['Bouillon_2004:abstract'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | Lh(-1) | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 66.5 | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 66.5 L/h | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 47.9 L | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 402 L | not captured | not captured | ['Bouillon_2004:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 782 L | not captured | not captured | ['Bouillon_2004:abstract'] |
@@ -147,21 +148,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_modelica.zip" download>Piritramide_Bouillon2004_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_fmi.zip" download>Piritramide_Bouillon2004_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_matlab.zip" download>Piritramide_Bouillon2004_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_matlab_simbio.zip" download>Piritramide_Bouillon2004_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_sbml.zip" download>Piritramide_Bouillon2004_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_cellml.zip" download>Piritramide_Bouillon2004_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference.svg" alt="Piritramide_Bouillon2004_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 45 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 45 mg parenteral (N02AC03) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_piritramide/Piritramide_Bouillon2004_reference/Piritramide_Bouillon2004_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Piritramide_Bouillon2004_reference_params.json` · controls `Piritramide_Bouillon2004_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 21:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:39 UTC</sub>

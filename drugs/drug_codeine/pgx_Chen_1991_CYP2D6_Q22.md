@@ -13,7 +13,7 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Chen_1991` — [doi](https://doi.org/10.1111/j.1365-2125.1991.tb05550.x)
 - **gene:** CYP2D6
-- **mechanism:** formation — the gene's enzyme forms an active metabolite
+- **mechanism:** metabolism — the gene's enzyme clears the drug
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL (`Q22`)
 - **effect:** not quantified

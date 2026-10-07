@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dihydrocodeine&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/&quot;},{&quot;label&quot;:&quot;Webb_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dihydrocodeine — `Dihydrocodeine_Webb2001_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,32 +22,28 @@ The record, built from the abstract of Webb_2001 alone, reports CL/F 43 L/h, V/F
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:23.200361+00:00) predates the upstream re-run (2026-10-07 04:55:18.876520+00:00). Current validate status: `rejected`.
+
 ## Citation
 Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001)
   ·  DOI: [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x)
 
 ## Model component
-<dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite dihydromorphine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
-**Parameters:** 9 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 2 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 43 | L/h | 1.1944444444444446e-05 | L/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| V/F | `Q76` · V/F | 203 | l | 0.203 | [l] | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| ka | `Q49` · kabs | 11 | 1/h | 0.0030555555555555557 | 1/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| t lag | `Q83` · tlag | 0.3 | h | 1080.0 | [h] | not captured | space_fold (0.95) | Webb_2001:abstract | — | not captured |
-| kel | `Q47` · kel | 0.216 | 1/h | 6e-05 | 1/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| fm(DHM) systemic | `Q45` · fm | 0.015 | not captured | not captured | not captured | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| k(DHM) | `Q47` · kel | 0.339 | 1/h | 9.416666666666667e-05 | 1/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| V(DHM) | `Q61` · V | 200 | L | 0.2 | L | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| half-life of elimination from effect compartment | `Q57` · t1/2z | 13 | min | 780.0 | [min] | not captured | llm (0.6) | Webb_2001:abstract | — | not captured |
+| CPT time point ( | `Q900` · equation variable | 0.25 | h | not captured | [h] | not captured | llm (0.6) | Webb_2001:abstract, Webb_2001:abstract, Webb_2001:abstract, Webb_2001:abstract, Webb_2001:abstract | — | not captured |
+| half-life of elimination from effect compartment= | `Q57` · t1/2z | 13 | min | 780.0 | [min] | not captured | llm (0.6) | Webb_2001:abstract | — | not captured |
+| first‐order absorption rate constant | `Q49` · kabs | 2.6 | h−1 | 0.0007222222222222223 | 1/h | not captured | review_gapfill (0.7) | Rezaee_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,38 +52,22 @@ Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['q12/q21 (hepatic flow, 90 L/h)']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'P' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
-- dropped unlinked row (NIL): 'Mean pain AUC changes' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
-- dropped unlinked row (NIL): 'Caucasians' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
-- dropped unlinked row (NIL): 'Asians' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
-- dropped unlinked row (NIL): 'aged' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
-- dropped unlinked row (NIL): 'DHC/DHM ratio' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
-- unit_dimension_unknown: 'lhx1' (CL/F)
-- unit_dimension_unknown: 'hx1' (kabs)
-- unit_dimension_unknown: 'hx1' (kel)
-- dropped duplicate Q45 ('fm(DHM) 1stpass', value 0.022) — already have one for this compound
-- unit_dimension_unknown: 'DHM' (kel)
-- unit_dimension_unknown: 'DHM' (V1)
-- dropped PD-category row 'ke0' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Webb_2001:abstract', 'Webb_2001:abstract', 'Webb_2001:abstract'])
-- implicit units: 'CL/F' → L/h (from the popPK convention: 'CL/F is a clearance parameter. In population PK, clearance is conventionally expressed in L/h. The value 43 is consisten')
-- implicit units: 'ka' → 1/h (from the popPK convention: 'ka is a first-order absorption rate constant. Rate constants are conventionally expressed in 1/h. The value 11 is consis')
-- implicit units: 'kel' → 1/h (from the popPK convention: 'kel is a first-order elimination rate constant. Rate constants are conventionally expressed in 1/h. The value 0.216 is c')
-- implicit units: 'k(DHM)' → 1/h (from the popPK convention: 'k(DHM) is described as an elimination rate constant. Rate constants are conventionally expressed in 1/h. The value 0.339')
-- implicit units: 'V(DHM)' → L (from the popPK convention: 'V(DHM) is a volume of distribution parameter. Volumes are conventionally expressed in L. The value 200 is consistent wit')
-- metabolite volume: 'V(DHM)' Q63→Q61 for dihydromorphine — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dihydrocodeine
-- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [1] (site presystemic: 'Intercept constant of DHM while fm(DHM) was proportional could be fixed AT 0 (model 9) or be calculated as part of conve')
-- row roles: 3 per-group rows of none other but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 9 linked by role; re-tagged dihydrocodeine→parent ×5, dihydrocodeine→dihydromorphine ×4
+- dropped unlinked row (NIL): 'P=' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
+- dropped unlinked row (NIL): 'aged' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract', 'Webb_2001:abstract'])
+- dropped unlinked row (NIL): 'DHC/DHM ratio=' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
+- dropped PD-category row 'ke0,' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Webb_2001:abstract'])
+- dropped PD-category row 'ke0' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Webb_2001:abstract', 'Webb_2001:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dihydrocodeine
+- template fit: none — only the metabolite is modelled — no parent compartment (site presystemic: 'Intercept constant of DHM while fm(DHM) was proportional could be fixed AT 0 (model 9) or be calculated as part of conve')
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Rezaee_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from cached Webb_2001_extracted.txt (19 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from cached Webb_2001_extracted.txt (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -96,22 +75,11 @@ Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of c
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Rezaee_2025:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 43 L/h | not captured | not captured | ['Webb_2001:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 200 L | not captured | not captured | ['Webb_2001:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 203 L | not captured | not captured | ['Webb_2001:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -144,30 +112,15 @@ Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of c
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_modelica.zip" download>Dihydrocodeine_Webb2001_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_fmi.zip" download>Dihydrocodeine_Webb2001_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_matlab.zip" download>Dihydrocodeine_Webb2001_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_sbml.zip" download>Dihydrocodeine_Webb2001_reference_sbml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_cellml.zip" download>Dihydrocodeine_Webb2001_reference_cellml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3M_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference.svg" alt="Dihydrocodeine_Webb2001_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 90 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 11 /h, lag 18 min, F 1). Dose in the paper: 90 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3M_3C` · parameters `Dihydrocodeine_Webb2001_reference_params.json` · controls `Dihydrocodeine_Webb2001_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:55 UTC</sub>

@@ -1,0 +1,31 @@
+{
+ "dose_source": "WHO ATC DDD 30 mg parenteral (N02AA05)",
+ "model_id": "Oxycodone_Morse2021_reference",
+ "molar_masses": {
+  "central.C": 0.3153636
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.0009450000000000001,
+  "F": 1.0,
+  "MM": 0.3153636,
+  "VdPerKg": 0.09820000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "k12": 0.0006223127404390134,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662021
+ },
+ "reference_peaks": {
+  "central.C": 4.189353185447353e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}
