@@ -4,7 +4,7 @@
 
 # fludarabine — `Fludarabine_Ivaturi2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 ### Reviewer guidance
 
@@ -22,25 +22,26 @@ The record describes fludarabine in pediatric hematopoietic cell transplant reci
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:52.729527+00:00) predates the upstream re-run (2026-10-07 16:51:42.925002+00:00). Current validate status: `extracted`.
+
 ## Citation
 Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood and marrow… (2017)
   ·  DOI: [10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021)
 
 ## Model component
-<dbs-pgx drug="fludarabine" model-id="Fludarabine_Ivaturi2017_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplant recipients" measured-compound="fludarabine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="fludarabine" model-id="Fludarabine_Ivaturi2017_reference" status="extracted" stale="true" population="pediatric hematopoietic cell transplant recipients" measured-compound="fludarabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 5 extracted, plus 1 covariate effect.
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Typical value forf-ara-a CL, L/h/15 kg | `Q22` · CL | 3.1 | L/h | 8.611111111111112e-07 | L/h | not captured | exact (1.0) | T2:row2:col1, T2:row2:col2, T2:row2:col3, T2:row2:col4 | — | not captured |
 | Vc, L/kg | `Q63` · V1 | 13.4 | L/kg | 0.9380000000000001 | [l] / [kg] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
+| Intercompartmental CL, L/h/kg | `Q30` · Q | 2.2 | L/h/kg | 4.2777777777777785e-05 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | T2:row5:col1, T2:row5:col2, T2:row5:col3, T2:row5:col4 | — | not captured |
 | Vp, L/15 | `Q64` · V2 | 13.4 | L | 0.0134 | L | not captured | exact (1.0) | T2:row6:col1, T2:row6:col2, T2:row6:col3, T2:row6:col4 | — | not captured |
 | Kin† | `Q305` · kfm | 0.005 | 1/h | 1.388888888888889e-06 | 1/h | not captured | exact (1.0) | T2:row7:col1, T2:row7:col2, T2:row7:col3 | — | not captured |
 | Kout‡ | `Q47` · kel | 0.09 | 1/h | 2.4999999999999998e-05 | 1/h | not captured | exact (1.0) | T2:row9:col1, T2:row9:col2, T2:row9:col3 | — | not captured |
@@ -54,19 +55,20 @@ Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood a
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('Intercompartmental CL, L/h/kg', value '2.2') — already have one for this compound
 - unit_dimension_unknown: 'L/15' (V2)
-- dropped PD-category row 'Time effect on kin' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row8:col1', 'T2:row8:col2', 'T2:row8:col3'])
+- dropped unlinked row (NIL): 'Time effect on kin' — extend the ontology if this is a real PK parameter (source ['T2:row8:col1', 'T2:row8:col2', 'T2:row8:col3'])
 - dropped diagnostic row 'Interindividual variability on CL§ (% shrinkage)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped diagnostic row 'Interindividual variability on Vc§ (% shrinkage)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped diagnostic row 'Interindividual variability on Kin§ (% shrinkage)' → Q318 (shrinkage) — reported statistic, not a parameter
-- implicit units: 'Typical value forf-ara-a CL, L/h/15 kg' → L/h (from the paper text: "The text states: 'where, 3.1L/hour is the typical value of f-ara-a CL'.")
-- implicit units: 'Vp, L/15' → L (from the popPK convention: 'The parameter is a volume of distribution (Vp). In population PK, volumes are typically expressed in liters (L). The val')
-- implicit units: 'Kin†' → 1/h (from the popPK convention: 'The parameter is a first-order rate constant (Kin). First-order rate constants are expressed in reciprocal time units, t')
-- implicit units: 'Kout‡' → 1/h (from the popPK convention: 'The parameter is a first-order rate constant (Kout). First-order rate constants are expressed in reciprocal time units, ')
+- implicit units: 'Typical value forf-ara-a CL, L/h/15 kg' → L/h (from the paper text: 'The text states: "where, 3.1L/hour is the typical value of f-ara-a CL". Although the table caption lists it as \'L/h/15 k')
+- implicit units: 'Vp, L/15' → L (from the popPK convention: 'Vp (Volume of distribution of the peripheral compartment) is a volume parameter. In population PK, volumes are typically')
+- implicit units: 'Kin†' → 1/h (from the popPK convention: "Kin is described in the table footnote as a 'First-order rate constant'. First-order rate constants are dimensionally in")
+- implicit units: 'Kout‡' → 1/h (from the popPK convention: "Kout is described in the text as a 'first-order rate constant for elimination'. First-order rate constants are dimension")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fludarabine
+- topology: 1 first-order transfer(s) across 2 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
 - row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 22 linked by role; re-tagged parent→f-ara-ATP ×17
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell T2:row3:col4 = '.004-.008'
@@ -81,17 +83,18 @@ Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood a
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3', 'T2:row5:col4'] |
 | C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col3'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col3', 'T2:row6:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.1 | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.1 L/h | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 938 L | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 13.4 L | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col3', 'T2:row6:col4'] |
@@ -108,9 +111,19 @@ Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood a
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_modelica.zip" download>Fludarabine_Ivaturi2017_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_matlab.zip" download>Fludarabine_Ivaturi2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_matlab_simbio.zip" download>Fludarabine_Ivaturi2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_sbml.zip" download>Fludarabine_Ivaturi2017_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_cellml.zip" download>Fludarabine_Ivaturi2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -119,4 +132,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:51 UTC</sub>

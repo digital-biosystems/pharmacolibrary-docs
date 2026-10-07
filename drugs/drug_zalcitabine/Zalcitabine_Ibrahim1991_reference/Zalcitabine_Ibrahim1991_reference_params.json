@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 2.25 mg oral (J05AF03)",
+ "model_id": "Zalcitabine_Ibrahim1991_reference",
+ "molar_masses": {
+  "central.C": 0.211221
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.877777777777778e-05,
+  "F": 0.9,
+  "MM": 0.211221,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.25e-06,
+  "ka": 0.013888888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 741.470687631359
+ },
+ "reference_peaks": {
+  "central.C": 3.739839752684953e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

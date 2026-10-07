@@ -3324,15 +3324,22 @@
         - [valaciclovir <sub>(0/1/0)</sub>](drugs/drug_valaciclovir/)
         - [valganciclovir <sub>(0/0/0)</sub>](drugs/drug_valganciclovir/)
         - [Velpatasvir <sub>(0/1/0)</sub>](drugs/drug_velpatasvir/)
-        - vidarabine <sub>(0/0/0)</sub>
-        - voxilaprevir <sub>(0/0/0)</sub>
-        - zalcitabine <sub>(0/0/0)</sub>
-        - zanamivir <sub>(0/0/0)</sub>
-        - zidovudine <sub>(0/0/0)</sub>
+        - [vidarabine <sub>(0/2/0)</sub>](drugs/drug_vidarabine/)
+        - [Voxilaprevir <sub>(0/1/0)</sub>](drugs/drug_voxilaprevir/)
+        - [zalcitabine <sub>(2/0/0)</sub>](drugs/drug_zalcitabine/)
+        - [zanamivir <sub>(4/0/0)</sub>](drugs/drug_zanamivir/)
+        - [zidovudine <sub>(1/2/0)</sub>](drugs/drug_zidovudine/)
         - zidovudine and lamivudine <sub>(0/0/0)</sub>
         - zidovudine lamivudine and abacavir <sub>(0/0/0)</sub>
         - zidovudine lamivudine and nevirapine <sub>(0/0/0)</sub>
     - J06 Immune Sera And Immunoglobulins
+      - [J06A Immune Sera](atc/J06A.md)
+        - [botulinum antitoxin <sub>(0/0/0)</sub>](drugs/drug_botulinum_antitoxin/)
+        - [diphtheria antitoxin <sub>(0/0/0)</sub>](drugs/drug_diphtheria_antitoxin/)
+        - [gas-gangrene sera <sub>(0/0/0)</sub>](drugs/drug_gas_gangrene_sera/)
+        - [rabies serum <sub>(0/0/0)</sub>](drugs/drug_rabies_serum/)
+        - [snake venom antiserum <sub>(0/0/0)</sub>](drugs/drug_snake_venom_antiserum/)
+        - [tetanus antitoxin <sub>(0/0/0)</sub>](drugs/drug_tetanus_antitoxin/)
       - [J06B Immunoglobulins](atc/J06B.md)
         - [ansuvimab <sub>(0/0/0)</sub>](drugs/drug_ansuvimab/)
         - [anthrax immunoglobulin <sub>(0/0/0)</sub>](drugs/drug_anthrax_immunoglobulin/)
@@ -3511,17 +3518,17 @@
         - [trofosfamide <sub>(0/0/0)</sub>](drugs/drug_trofosfamide/)
         - [uramustine <sub>(0/0/0)</sub>](drugs/drug_uramustine/)
       - [L01B Antimetabolites](atc/L01B.md)
-        - [azacitidine <sub>(0/2/0)</sub>](drugs/drug_azacitidine/)
-        - [capecitabine <sub>(0/0/1)</sub>](drugs/drug_capecitabine/)
-        - [carmofur <sub>(0/3/0)</sub>](drugs/drug_carmofur/)
-        - [cladribine <sub>(1/0/0)</sub>](drugs/drug_cladribine/)
-        - [clofarabine <sub>(0/0/0)</sub>](drugs/drug_clofarabine/)
-        - [cytarabine <sub>(0/0/0)</sub>](drugs/drug_cytarabine/)
-        - [decitabine <sub>(0/0/0)</sub>](drugs/drug_decitabine/)
+        - [azacitidine <sub>(0/0/0)</sub>](drugs/drug_azacitidine/)
+        - [capecitabine <sub>(4/1/29)</sub>](drugs/drug_capecitabine/)
+        - [carmofur <sub>(0/0/0)</sub>](drugs/drug_carmofur/)
+        - [cladribine <sub>(3/1/0)</sub>](drugs/drug_cladribine/)
+        - [clofarabine <sub>(1/0/0)</sub>](drugs/drug_clofarabine/)
+        - [cytarabine <sub>(0/1/0)</sub>](drugs/drug_cytarabine/)
+        - [decitabine <sub>(0/1/0)</sub>](drugs/drug_decitabine/)
         - decitabine combinations <sub>(0/0/0)</sub>
-        - [floxuridine <sub>(0/1/0)</sub>](drugs/drug_floxuridine/)
-        - [fludarabine <sub>(0/0/0)</sub>](drugs/drug_fludarabine/)
-        - [fluorouracil <sub>(3/7/46)</sub>](drugs/drug_fluorouracil/)
+        - [floxuridine <sub>(0/0/0)</sub>](drugs/drug_floxuridine/)
+        - [fludarabine <sub>(1/0/0)</sub>](drugs/drug_fludarabine/)
+        - [fluorouracil <sub>(6/4/42)</sub>](drugs/drug_fluorouracil/)
         - fluorouracil combinations <sub>(0/0/0)</sub>
         - [gemcitabine <sub>(2/8/1)</sub>](drugs/drug_gemcitabine/)
         - [mercaptopurine <sub>(0/0/0)</sub>](drugs/drug_mercaptopurine/)
@@ -3786,7 +3793,7 @@
         - ciltacabtagene autoleucel <sub>(0/0/0)</sub>
         - [cisplatin <sub>(0/0/0)</sub>](drugs/drug_cisplatin/)
         - [cobimetinib <sub>(3/1/0)</sub>](drugs/drug_cobimetinib/)
-        - [cytarabine <sub>(0/0/0)</sub>](drugs/drug_cytarabine/)
+        - [cytarabine <sub>(0/1/0)</sub>](drugs/drug_cytarabine/)
         - cytarabine and daunorubicin <sub>(0/0/0)</sub>
         - darinaparsin <sub>(0/0/0)</sub>
         - [daunorubicin <sub>(4/4/0)</sub>](drugs/drug_daunorubicin/)
@@ -4012,7 +4019,7 @@
         - [cendakimab <sub>(0/1/0)</sub>](drugs/drug_cendakimab/)
         - [certolizumab pegol <sub>(1/1/0)</sub>](drugs/drug_certolizumab_pegol/)
         - [ciclosporin <sub>(2/1/0)</sub>](drugs/drug_ciclosporin/)
-        - [cladribine <sub>(1/0/0)</sub>](drugs/drug_cladribine/)
+        - [cladribine <sub>(3/1/0)</sub>](drugs/drug_cladribine/)
         - [crovalimab <sub>(0/0/0)</sub>](drugs/drug_crovalimab/)
         - [daclizumab <sub>(0/0/0)</sub>](drugs/drug_daclizumab/)
         - [danicopan <sub>(0/1/0)</sub>](drugs/drug_danicopan/)
@@ -5745,6 +5752,7 @@
         - [tosufloxacin <sub>(0/0/0)</sub>](drugs/drug_tosufloxacin/)
         - trifluridine <sub>(0/0/0)</sub>
         - [vancomycin <sub>(3/1/1)</sub>](drugs/drug_vancomycin/)
+        - [vidarabine <sub>(0/2/0)</sub>](drugs/drug_vidarabine/)
         - zinc compounds <sub>(0/0/0)</sub>
       - [S01B Antiinflammatory Agents](atc/S01B.md)
         - [bendazac <sub>(0/0/0)</sub>](drugs/drug_bendazac/)
@@ -6121,6 +6129,48 @@
       - [V06D Other Nutrients](atc/V06D.md)
         - fructose <sub>(0/0/0)</sub>
         - [glucose <sub>(5/0/0)</sub>](drugs/drug_glucose/)
+    - V08 Contrast Media
+      - [V08A X-Ray Contrast Media, Iodinated](atc/V08A.md)
+        - acetrizoic acid <sub>(0/0/0)</sub>
+        - adipiodone <sub>(0/0/0)</sub>
+        - calcium iopodate <sub>(0/0/0)</sub>
+        - diatrizoic acid <sub>(0/0/0)</sub>
+        - diodone <sub>(0/0/0)</sub>
+        - ethyl esters of iodised fatty acids <sub>(0/0/0)</sub>
+        - iobenzamic acid <sub>(0/0/0)</sub>
+        - iobitridol <sub>(0/0/0)</sub>
+        - iocarmic acid <sub>(0/0/0)</sub>
+        - iocetamic acid <sub>(0/0/0)</sub>
+        - iodamide <sub>(0/0/0)</sub>
+        - iodixanol <sub>(0/0/0)</sub>
+        - iodoxamic acid <sub>(0/0/0)</sub>
+        - iofendylate <sub>(0/0/0)</sub>
+        - ioglicic acid <sub>(0/0/0)</sub>
+        - ioglycamic acid <sub>(0/0/0)</sub>
+        - iohexol <sub>(0/0/0)</sub>
+        - iomeprol <sub>(0/0/0)</sub>
+        - iopamidol <sub>(0/0/0)</sub>
+        - iopanoic acid <sub>(0/0/0)</sub>
+        - iopentol <sub>(0/0/0)</sub>
+        - iopromide <sub>(0/0/0)</sub>
+        - iopydol <sub>(0/0/0)</sub>
+        - iotalamic acid <sub>(0/0/0)</sub>
+        - [iotrolan <sub>(0/0/0)</sub>](drugs/drug_iotrolan/)
+        - [iotroxic acid <sub>(0/0/0)</sub>](drugs/drug_iotroxic_acid/)
+        - [ioversol <sub>(0/0/0)</sub>](drugs/drug_ioversol/)
+        - [ioxaglic acid <sub>(0/0/0)</sub>](drugs/drug_ioxaglic_acid/)
+        - [ioxilan <sub>(0/0/0)</sub>](drugs/drug_ioxilan/)
+        - [ioxitalamic acid <sub>(0/0/0)</sub>](drugs/drug_ioxitalamic_acid/)
+        - [methiodal <sub>(0/0/0)</sub>](drugs/drug_methiodal/)
+        - [metrizamide <sub>(0/0/0)</sub>](drugs/drug_metrizamide/)
+        - [metrizoic acid <sub>(0/0/0)</sub>](drugs/drug_metrizoic_acid/)
+        - [propyliodone <sub>(0/0/0)</sub>](drugs/drug_propyliodone/)
+        - [sodium iopodate <sub>(0/0/0)</sub>](drugs/drug_sodium_iopodate/)
+        - [tyropanoic acid <sub>(0/0/0)</sub>](drugs/drug_tyropanoic_acid/)
+      - [V08B X-Ray Contrast Media, Non-Iodinated](atc/V08B.md)
+        - [Barium sulfate <sub>(0/0/0)</sub>](drugs/drug_barium_sulfate/)
+        - [barium sulfate with suspending agents <sub>(0/0/0)</sub>](drugs/drug_barium_sulfate_with_suspending_agents/)
+        - [barium sulfate without suspending agents <sub>(0/0/0)</sub>](drugs/drug_barium_sulfate_without_suspending_agents/)
     - V09 Diagnostic Radiopharmaceuticals
       - [V09H Inflammation And Infection Detection](atc/V09H.md)
         - [gallium (67Ga) citrate <sub>(0/0/0)</sub>](drugs/drug_gallium_67ga_citrate/)
@@ -6145,19 +6195,19 @@
         - [fluoroethylcholine (18F) <sub>(0/0/0)</sub>](drugs/drug_fluoroethylcholine_18f/)
         - [gallium (68Ga) edotreotide <sub>(0/0/0)</sub>](drugs/drug_gallium_68ga_edotreotide/)
         - [gallium (68Ga) gozetotide <sub>(0/0/0)</sub>](drugs/drug_gallium_68ga_gozetotide/)
-        - indium 111in antiovariumcarcinoma antibody <sub>(0/0/0)</sub>
-        - indium 111in capromab pendetide <sub>(0/0/0)</sub>
-        - indium 111in pentetreotide <sub>(0/0/0)</sub>
-        - indium 111in satumomab pendetide <sub>(0/0/0)</sub>
-        - iobenguane <sub>(0/0/0)</sub>
-        - iobenguane 123i <sub>(0/0/0)</sub>
-        - iobenguane 131i <sub>(0/0/0)</sub>
-        - iodine 125i cc49 monoclonal antibody <sub>(0/0/0)</sub>
-        - methionine 11c <sub>(0/0/0)</sub>
-        - piflufolastat 18f <sub>(0/0/0)</sub>
-        - psma 1007 18f <sub>(0/0/0)</sub>
-        - sodium fluoride 18f <sub>(0/0/0)</sub>
-        - technetium 99mtc anticarcinoembryonicantigen antibody <sub>(0/0/0)</sub>
+        - [indium (111In) antiovariumcarcinoma antibody <sub>(0/0/0)</sub>](drugs/drug_indium_111in_antiovariumcarcinoma_antibody/)
+        - [indium (111In) capromab pendetide <sub>(0/0/0)</sub>](drugs/drug_indium_111in_capromab_pendetide/)
+        - [indium (111In) pentetreotide <sub>(0/0/0)</sub>](drugs/drug_indium_111in_pentetreotide/)
+        - [indium (111In) satumomab pendetide <sub>(0/0/0)</sub>](drugs/drug_indium_111in_satumomab_pendetide/)
+        - [Iobenguane <sub>(0/0/0)</sub>](drugs/drug_iobenguane/)
+        - [iobenguane (123I) <sub>(0/0/0)</sub>](drugs/drug_iobenguane_123i/)
+        - [iobenguane (131I) <sub>(0/0/0)</sub>](drugs/drug_iobenguane_131i/)
+        - [iodine (125I) CC49-monoclonal antibody <sub>(0/0/0)</sub>](drugs/drug_iodine_125i_cc49_monoclonal_antibody/)
+        - [methionine (11C) <sub>(0/0/0)</sub>](drugs/drug_methionine_11c/)
+        - [piflufolastat (18F) <sub>(0/0/0)</sub>](drugs/drug_piflufolastat_18f/)
+        - [PSMA-1007 (18F) <sub>(0/0/0)</sub>](drugs/drug_psma_1007_18f/)
+        - [sodium fluoride (18F) <sub>(0/0/0)</sub>](drugs/drug_sodium_fluoride_18f/)
+        - [technetium (99mTc) antiCarcinoEmbryonicAntigen antibody <sub>(0/0/0)</sub>](drugs/drug_technetium_99mtc_anticarcinoembryonicantigen_antibody/)
         - [technetium (99mTc) antimelanoma antibody <sub>(0/0/0)</sub>](drugs/drug_technetium_99mtc_antimelanoma_antibody/)
         - [technetium (99mTc) arcitumomab <sub>(0/0/0)</sub>](drugs/drug_technetium_99mtc_arcitumomab/)
         - [technetium (99mTc) depreotide <sub>(0/0/0)</sub>](drugs/drug_technetium_99mtc_depreotide/)
@@ -6195,6 +6245,8 @@
       - [V10X Other Therapeutic Radiopharmaceuticals](atc/V10X.md)
         - [ibritumomab tiuxetan <sub>(0/0/0)</sub>](drugs/drug_ibritumomab_tiuxetan/)
         - [ibritumomab tiuxetan (90Y) <sub>(0/0/0)</sub>](drugs/drug_ibritumomab_tiuxetan_90y/)
+        - [Iobenguane <sub>(0/0/0)</sub>](drugs/drug_iobenguane/)
+        - [iobenguane (131I) <sub>(0/0/0)</sub>](drugs/drug_iobenguane_131i/)
         - [iodine (131I) apamistamab <sub>(0/0/0)</sub>](drugs/drug_iodine_131i_apamistamab/)
         - [iodine (131I) omburtamab <sub>(0/0/0)</sub>](drugs/drug_iodine_131i_omburtamab/)
         - [lutetium (177Lu) oxodotreotide <sub>(4/0/0)</sub>](drugs/drug_lutetium_177lu_oxodotreotide/)
@@ -6224,7 +6276,7 @@
     - [doxazosin <sub>(3/3/1)</sub>](drugs/drug_doxazosin/)
     - [doxorubicin <sub>(10/12/0)</sub>](drugs/drug_doxorubicin/)
     - [fentanyl <sub>(6/7/3)</sub>](drugs/drug_fentanyl/)
-    - [fluorouracil <sub>(3/7/46)</sub>](drugs/drug_fluorouracil/)
+    - [fluorouracil <sub>(6/4/42)</sub>](drugs/drug_fluorouracil/)
     - [hydrochlorothiazide <sub>(8/4/2)</sub>](drugs/drug_hydrochlorothiazide/)
     - [ibuprofen <sub>(7/2/8)</sub>](drugs/drug_ibuprofen/)
     - [midazolam <sub>(11/14/5)</sub>](drugs/drug_midazolam/)

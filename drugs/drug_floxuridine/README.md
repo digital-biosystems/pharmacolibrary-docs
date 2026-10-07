@@ -18,21 +18,13 @@ Floxuridine is an antimetabolite cancer drug used to treat cancers of the stomac
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 07:29 | 5:53 | 0/1/0 | 1/0/0 | 0/0/0 | 28,529/1,136 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-07 16:50 | 2:17 | 0/0/1 | 0/0/0 | 0/0/0 | 36,403/374 | einfracz / qwen3.8-27b | 7 | 0/4 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | — | — (no model) | 0 | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Yeo_2018_Human_neutrophil_viability](drugs/drug_floxuridine/pd_Yeo_2018_Human_neutrophil_viability.md) | name ← floxuridine · inhibition effect | — | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Yeo_2018_Murine_survival](drugs/drug_floxuridine/pd_Yeo_2018_Murine_survival.md) | name ← floxuridine · inhibition effect | — | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span> | [Yeo_2018_Sae_regulated_promoter_activity](drugs/drug_floxuridine/pd_Yeo_2018_Sae_regulated_promoter_activity.md) | name ← floxuridine · inhibition effect | — | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: not captured</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | — | — (no model) | 0 | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
 
 ## ADME sites
 
@@ -54,35 +46,36 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 22 matched, 14 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **PubMed hits:** 38 matched, 38 returned
+- **screened:** 1  ·  **relevant:** 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Port_1999.pdf` | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | popPK | 8 | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) | [10367751](https://pubmed.ncbi.nlm.nih.gov/10367751) | The study reports quantitative local disposition parameters (half-lives) for floxuridine in rats using compartmental models, with specific numeric values provided in the text. |
 | `Chen_2018.pdf` | Chen M et al., Ultrasound Triggered Conversion of Porp…, ACS nano (2018) | pgx | 7 | [10.1021/acsnano.8b03674](https://doi.org/10.1021/acsnano.8b03674) | [29901986](https://www.ncbi.nlm.nih.gov/pubmed/29901986) | metadata signals extractable PGX data (ABCG2, PK/PD-context) |
 
-<sub>queue written 2026-09-15T07:27:35.933556+00:00</sub>
+<sub>queue written 2026-10-07T16:50:31.137329+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Attilio_1984 | not_relevant | 0 | 0 | The text is a bibliography description for ambulatory infusion therapy and does not contain any pharmacodynamic data, models, or numeric parameters for floxuridine. |
-| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper describes a drug delivery system and mechanism of action for overcoming multidrug resistance, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper focuses on a drug delivery system and overcoming multidrug resistance via ABCG2 downregulation, reporting no pharmacogenomic effects (gene variants/genotypes) on the PK or PD of floxuridine. |
 | PD | Galmarini_2008 | not_relevant | 2 | 1 | The paper reports qualitative cytotoxicity and dose comparisons (e.g., 4x lower dose) but does not provide numeric PD parameters (Emax, EC50) or extractable concentration-effect curves for floxuridine. |
-| popPK | Heath_1989 | irrelevant | 0 | 0 | The study focuses on fluorodeoxyuridine (FdUR) and fluorodeoxyuridine monophosphate (FdUMP) in an in-vitro liposome delivery assay, not floxuridine pharmacokinetics. |
+| popPK | Heath_1989 | irrelevant | 0 | 0 | The study is an in-vitro assay regarding liposome delivery of fluorodeoxyuridine, not a pharmacokinetic study of floxuridine. |
 | PD | Hu_2015 | not_relevant | 0 | 0 | The paper describes the synthesis and in vitro efficacy of a drug-drug conjugate but does not report any pharmacokinetic data, concentration-effect curves, or numeric PD parameters for floxuridine. |
 | PD | Newman_2002 | not_relevant | 0 | 0 | The paper is a clinical trial report on neoadjuvant chemotherapy outcomes and does not contain any pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for floxuridine. |
 | PD | ODonnell_2025 | not_relevant | 0 | 0 | The paper is a clinical review of locoregional therapies (radiation, TARE, HAIP, transplant) and does not report any pharmacokinetic or pharmacodynamic modeling, concentration-effect data, or numeric PD parameters for floxuridine. |
+| popPK | Owolabi_2024 | irrelevant | 0 | 0 | The paper investigates the antimicrobial activity of plant extracts against Salmonella Typhi and contains no data regarding floxuridine pharmacokinetics. |
+| popPK | Port_1999 | relevant | 4 | 6 | The study reports local disposition half-lives and compartment model analyses for floxuridine in rats, but lacks standard systemic PK parameters (CL, V) and represents a non-systemic, local tissue kinetic analysis. |
 | PD | Shahraki_2024 | not_relevant | 0 | 0 | The paper investigates in vitro protein binding and fluorescence quenching (molecular interaction), not pharmacodynamic exposure-response or dose-effect relationships in a biological system. |
 | PD | Wilkinson_1993 | not_relevant | 2 | 1 | The paper reports clinical dose-response outcomes (response rates at specific dose levels) but lacks pharmacokinetic data or a formal pharmacodynamic model with numeric parameters like Emax or EC50. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-15 07:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:50 UTC</sub>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;clofarabine&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/&quot;},{&quot;label&quot;:&quot;Nijstad_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clofarabine_Bonate2011_reference&quot;,&quot;label&quot;:&quot;Bonate_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clofarabine/Clofarabine_Bonate2011_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clofarabine — `Clofarabine_Nijstad2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -22,26 +23,27 @@ The model was built, but clofarabine's clearance and volume of distribution had 
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:00.713433+00:00) predates the upstream re-run (2026-10-07 16:39:03.743560+00:00). Current validate status: `rejected`.
+
 ## Citation
 Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738)
 
 ## Model component
-<dbs-pgx drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="model_quarantined" stale="false" population="paediatric patients undergoing allogeneic hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="rejected" stale="true" population="paediatric patients and one adult undergoing allogeneic HCT" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLnon − renal,70kg (L/h) | `Q79` · CLNR | 24.0 | L/h | 6.666666666666667e-06 | [l] / [h] | not captured | llm (0.6) | bcp14738-tbl-0002:row3:col1, bcp14738-tbl-0002:row3:col2 | — | not captured |
 | CLrenal,70kg (L/h) | `Q26` · CLR | 29.8 | L/h | 8.277777777777778e-06 | [l] / [h] | not captured | llm (0.6) | bcp14738-tbl-0002:row4:col1, bcp14738-tbl-0002:row4:col2 | — | not captured |
-| V270kg (L) | `Q61` · V | 186 | L | 0.186 | [l] | not captured | llm (0.6) | bcp14738-tbl-0002:row8:col1, bcp14738-tbl-0002:row8:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,14 +56,16 @@ Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal o
 | CL=CLnon−renal+CLrenal×RF×BW700.75 | Q22 | not captured | llm_confirmed |
 | V1=V170kg×BW701 | Q63 | not captured | llm_confirmed |
 | V2=V270kg×BW701 | Q64 | not captured | llm_confirmed |
-| Q=Q70kg×BW700.75 | Q30 | not captured | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'Unexplained interindividual variability in exposure clearance' routed out of structural estimates ('Unexplained interindividual variability in exposure clearance was observed (17.8%, 95% CI 14.6–22.4).')
 - dropped unlinked row (NIL): 'RF=eGFRL/h×70BWeGFRSTD' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row2:col1', 'bcp14738-tbl-0002:row2:col2'])
 - dropped duplicate Q63 ('V170kg (L)', value '268') — already have one for this compound
-- dropped duplicate Q30 ('Q70kg (L/h)', value '33.2') — already have one for this compound
+- dropped unlinked row (NIL): 'V270kg (L)' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row8:col1', 'bcp14738-tbl-0002:row8:col2'])
+- dropped unlinked row (NIL): 'Q=Q70kg×BW700.75' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row9:col1', 'bcp14738-tbl-0002:row9:col2'])
+- dropped unlinked row (NIL): 'Q70kg (L/h)' — extend the ontology if this is a real PK parameter (source ['bcp14738-tbl-0002:row10:col1', 'bcp14738-tbl-0002:row10:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clofarabine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 
@@ -74,14 +78,11 @@ Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal o
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp14738-tbl-0002:row4:col1', 'bcp14738-tbl-0002:row4:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp14738-tbl-0002:row8:col1', 'bcp14738-tbl-0002:row8:col2'] |
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp14738-tbl-0002:row3:col1', 'bcp14738-tbl-0002:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 186 L | not captured | not captured | ['bcp14738-tbl-0002:row8:col1', 'bcp14738-tbl-0002:row8:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -107,19 +108,9 @@ Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal o
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -128,4 +119,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 06:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>

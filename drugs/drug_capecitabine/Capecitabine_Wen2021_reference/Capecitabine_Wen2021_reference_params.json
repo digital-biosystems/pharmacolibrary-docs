@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "library default",
  "model_id": "Capecitabine_Wen2021_reference",
  "molar_masses": {
   "central.C": 0.3593501
@@ -7,13 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  80.0,
-  160.0,
-  400.0,
-  480.0
  ],
  "parameters": {
   "Cl": 4.0833333333333334e-05,
@@ -23,7 +16,7 @@
   "VdPerKg": 0.054571428571428576,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 8e-05,
+  "adminMass": 0.0001,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
@@ -31,7 +24,7 @@
   "central.C": 20084.96993987976
  },
  "reference_peaks": {
-  "central.C": 1.6909371078066177e-05
+  "central.C": 2.1136743877824538e-05
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

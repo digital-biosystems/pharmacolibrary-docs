@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Schmulenson_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # capecitabine — `Capecitabine_Schmulenson2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,32 +25,32 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `capecitabine and regorafenib`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:45.661888+00:00) predates the upstream re-run (2026-10-07 16:28:21.532606+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `regorafenib, capecitabine`, measured `capecitabine`.
 
 ## Citation
 Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461)
 
 ## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="model_quarantined" stale="false" population="patients with locally advanced rectal cancer" measured-compound="capecitabine and regorafenib" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="extracted" stale="true" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.
 
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLRegorafenib/F [L/h] | `Q27` · CL/F | 1.94 | relative standard error, % | not captured | [relativestandarderror] | not captured | llm (0.5) | Schmulenson_2022_table_p7_1:row0:col1 | — | not captured |
-| Vc/F [L] | `Q290` · V1/F | 10.4 | relative standard error, % | not captured | [relativestandarderror] | not captured | boundary (0.8) | Schmulenson_2022_table_p7_1:row1:col1 | — | not captured |
-| MATRegorafenib [h] | `Q73` · MAT | 3.01 | relative standard error, % | not captured | [relativestandarderror] | not captured | llm (0.5) | Schmulenson_2022_table_p7_1:row2:col1 | — | not captured |
-| Vp/F [L] | `Q82` · V2/F | 63.9 | relative standard error, % | not captured | [relativestandarderror] | not captured | boundary (0.8) | Schmulenson_2022_table_p7_1:row3:col1 | — | not captured |
-| Q/F [L/h] | `Q69` · Q/F | 13.5 | relative standard error, % | not captured | [relativestandarderror] | not captured | boundary (0.8) | Schmulenson_2022_table_p7_1:row4:col1 | — | not captured |
-| k8,met [1/h] | `Q51` · kmet | 0.265 | relative standard error, % | not captured | [relativestandarderror] | not captured | llm (0.5) | Schmulenson_2022_table_p7_1:row6:col1 | — | not captured |
-| M-5 [%] | `Q84` · AUC%ext | 4.7 | not captured | not captured | not captured | not captured | llm (0.5) | Schmulenson_2022_table_p7_1:row18:col1, Schmulenson_2022_table_p7_1:row18:col2 | — | not captured |
+| CLRegorafenib/F [L/h] | `Q27` · CL/F | 1.94 | L/h | 5.388888888888888e-07 | [l] / [h] | 12.1 | llm (0.6) | Schmulenson_2022_table_p7_1:row0:col1 | — | not captured |
+| Vc/F [L] | `Q290` · V1/F | 10.4 | L | 0.010400000000000001 | [l] | 33.2 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row1:col1 | — | not captured |
+| MATRegorafenib [h] | `Q73` · MAT | 3.01 | h | 10836.0 | [h] | 9.6 | llm (0.6) | Schmulenson_2022_table_p7_1:row2:col1 | — | 21.7 (24.7% RSE) |
+| Vp/F [L] | `Q82` · V2/F | 63.9 | L | 0.0639 | [l] | 8.7 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row3:col1 | — | 131.5 (24.2% RSE) |
+| Q/F [L/h] | `Q69` · Q/F | 13.5 | L/h | 3.75e-06 | [l] / [h] | 10.8 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row4:col1 | — | not captured |
+| CLM-2/F [L/h] | `Q351` · CLm/F | 0.936 | L/h | 2.6000000000000005e-07 | [l] / [h] | 10.8 | llm_confirmed (0.6) | Schmulenson_2022_table_p7_1:row5:col1 | — | 25.2 (33.6% RSE) |
+| k8,met [1/h] | `Q51` · kmet | 0.265 | 1/h | 7.361111111111111e-05 | [1] / [h] | 12.8 | llm (0.6) | Schmulenson_2022_table_p7_1:row6:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,30 +59,26 @@ Schmulenson E et al., Population pharmacokinetic analyses of…, British journal
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- unit_dimension_unknown: 'relative standard error, %' (CL/F)
-- unit_dimension_unknown: 'relative standard error, %' (V1/F)
-- unit_dimension_unknown: 'relative standard error, %' (MAT)
-- unit_dimension_unknown: 'relative standard error, %' (V2/F)
-- unit_dimension_unknown: 'relative standard error, %' (Q/F)
-- dropped duplicate Q27 ('CLM-2/F [L/h]', value '0.936') — already have one for this compound
-- unit_dimension_unknown: 'relative standard error, %' (kmet)
+- table section iiv: 'CLRegorafenib/F [%]' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'Vp/F [%]' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'MAT (Regorafenib) [%]' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'CLM-2/F [%]' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'CLM-5/F [%]' routed out of structural estimates ('Interindividual variability')
+- table section residual_error: 'Regorafenib [%]' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'M-2 [%]' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'M-5 [%]' routed out of structural estimates ('Residual variability')
 - dropped duplicate Q73 ('MATM-2 [h]', value '1.90') — already have one for this compound
-- dropped duplicate Q27 ('CLM-5/F [L/h]', value '2.01') — already have one for this compound
-- dropped duplicate Q27 ('CLRegorafenib/F [%]', value '3.1') — already have one for this compound
-- dropped duplicate Q82 ('Vp/F [%]', value '3.7') — already have one for this compound
-- dropped duplicate Q73 ('MAT (Regorafenib) [%]', value '4.4') — already have one for this compound
-- dropped unlinked row (NIL): 'CLM-2/F [%]' — extend the ontology if this is a real PK parameter (source ['Schmulenson_2022_table_p7_1:row13:col1', 'Schmulenson_2022_table_p7_1:row13:col2'])
-- dropped unlinked row (NIL): 'CLM-5/F [%]' — extend the ontology if this is a real PK parameter (source ['Schmulenson_2022_table_p7_1:row14:col1', 'Schmulenson_2022_table_p7_1:row14:col2'])
-- dropped unlinked row (NIL): 'Regorafenib [%]' — extend the ontology if this is a real PK parameter (source ['Schmulenson_2022_table_p7_1:row16:col1', 'Schmulenson_2022_table_p7_1:row16:col2'])
-- dropped unlinked row (NIL): 'M-2 [%]' — extend the ontology if this is a real PK parameter (source ['Schmulenson_2022_table_p7_1:row17:col1', 'Schmulenson_2022_table_p7_1:row17:col2'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=capecitabine and regorafenib
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 4 first-order transfer(s) across 6 compounds → general_linear
-- status held at route_to_review — not promoted
+- dropped duplicate Q351 ('CLM-5/F [L/h]', value '2.01') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=capecitabine
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - unparsed cell Schmulenson_2022_table_p7_1:row0:col3 = '1.91 (1.47–2.46)'
 - unparsed cell Schmulenson_2022_table_p7_1:row1:col3 = '9.83 (2.37–23.2)'
 - unparsed cell Schmulenson_2022_table_p7_1:row2:col3 = '3.05 (2.03–4.05)'
@@ -100,7 +96,6 @@ Schmulenson E et al., Population pharmacokinetic analyses of…, British journal
 - unparsed cell Schmulenson_2022_table_p7_1:row16:col3 = '51.2 (42.5–59.0)'
 - unparsed cell Schmulenson_2022_table_p7_1:row17:col3 = '57.9 (52.2–63.6)'
 - unparsed cell Schmulenson_2022_table_p7_1:row18:col3 = '53.6 (48.1–59.4)'
-- LLM region Schmulenson_2022:results_prose: no JSON records returned
 
 ## Validation
 
@@ -136,14 +131,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | relative standard error, % | not captured | not captured | ['Schmulenson_2022_table_p7_1:row0:col1'] |
-| C5_unit_missing_Q290 | fail | [length] ** 3 | relative standard error, % | not captured | not captured | ['Schmulenson_2022_table_p7_1:row1:col1'] |
-| C5_unit_missing_Q51 | fail | 1 / [time] | relative standard error, % | not captured | not captured | ['Schmulenson_2022_table_p7_1:row6:col1'] |
-| C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | relative standard error, % | not captured | not captured | ['Schmulenson_2022_table_p7_1:row4:col1'] |
-| C5_unit_missing_Q73 | fail | [time] | relative standard error, % | not captured | not captured | ['Schmulenson_2022_table_p7_1:row2:col1'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | relative standard error, % | not captured | not captured | ['Schmulenson_2022_table_p7_1:row3:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row0:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row1:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row5:col1'] |
+| C5_dimension_Q51 | pass | 1 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row6:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row4:col1'] |
+| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row2:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schmulenson_2022_table_p7_1:row3:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.94 L/h | not captured | not captured | ['Schmulenson_2022_table_p7_1:row0:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 10.4 L | not captured | not captured | ['Schmulenson_2022_table_p7_1:row1:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 63.9 L | not captured | not captured | ['Schmulenson_2022_table_p7_1:row3:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -174,21 +173,26 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_modelica.zip" download>Capecitabine_Schmulenson2022_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_fmi.zip" download>Capecitabine_Schmulenson2022_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_matlab.zip" download>Capecitabine_Schmulenson2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_matlab_simbio.zip" download>Capecitabine_Schmulenson2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_sbml.zip" download>Capecitabine_Schmulenson2022_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_cellml.zip" download>Capecitabine_Schmulenson2022_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference.svg" alt="Capecitabine_Schmulenson2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 40 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 40, 80, 120, 825 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Capecitabine_Schmulenson2022_reference_params.json` · controls `Capecitabine_Schmulenson2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 13:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:28 UTC</sub>

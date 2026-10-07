@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Blesch_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # capecitabine — `Capecitabine_Blesch2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,32 +23,33 @@ The record covers only 4 of the 6 expected parameters: kabs and tlag were neithe
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `5-FU`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:45.530277+00:00) predates the upstream re-run (2026-10-07 16:28:00.760680+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Blesch KS et al., Clinical pharmacokinetic/pharmacodynami…, Investigational new drugs (2003)
   ·  DOI: [10.1023/a:1023525513696](https://doi.org/10.1023/a:1023525513696)
 
 ## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Blesch2003_reference" status="model_quarantined" stale="false" population="cancer patients" measured-compound="5-FU" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="capecitabine" model-id="Capecitabine_Blesch2003_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 8 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | KA | `Q49` · kabs | 1.09 | not captured | not captured | not captured | 0.0788 | exact (1.0) | tab_0:row1:col2, tab_0:row1:col3, tab_0:row1:col4, tab_0:row1:col5, tab_0:row10:col4, tab_0:row10:col5 | — | not captured |
 | TLAG | `Q83` · tlag | 5.52E-4 | not captured | not captured | not captured | 2.02E-4 | exact (1.0) | tab_0:row2:col2, tab_0:row2:col3 | — | not captured |
-| V1 | `Q63` · V1 | 90.6 | not captured | not captured | not captured | 30 | exact (1.0) | tab_0:row3:col2, tab_0:row3:col3, tab_0:row3:col4 | — | not captured |
-| CL1 | `Q22` · CL | 75.8 | not captured | not captured | not captured | 0.00952 | llm (0.6) | tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4, tab_0:row4:col5 | — | not captured |
-| V2 | `Q64` · V2 | 17.8 | not captured | not captured | not captured | not captured | exact (1.0) | tab_0:row5:col2 | — | not captured |
-| CL2 | `Q30` · Q | 1190 | not captured | not captured | not captured | 0.0337 | special_case (0.95) | tab_0:row6:col2, tab_0:row6:col3, tab_0:row6:col4, tab_0:row6:col5 | — | not captured |
-| V3 | `Q77` · V3 | 73.6 | not captured | not captured | not captured | 0.0213 | exact (1.0) | tab_0:row7:col2, tab_0:row7:col3, tab_0:row7:col4, tab_0:row7:col5 | — | not captured |
+| V1 | `Q61` · V | 90.6 | not captured | not captured | not captured | 30 | exact (1.0) | tab_0:row3:col2, tab_0:row3:col3, tab_0:row3:col4 | — | not captured |
+| CL1 | `Q22` · CL | 75.8 | not captured | not captured | not captured | 0.00952 | exact (1.0) | tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4, tab_0:row4:col5 | — | not captured |
+| V2 | `Q61` · V | 17.8 | not captured | not captured | not captured | not captured | exact (1.0) | tab_0:row5:col2 | — | not captured |
+| CL2 | `Q22` · CL | 1190 | not captured | not captured | not captured | 0.0337 | exact (1.0) | tab_0:row6:col2, tab_0:row6:col3, tab_0:row6:col4, tab_0:row6:col5 | — | not captured |
+| V3 | `Q61` · V | 73.6 | not captured | not captured | not captured | 0.0213 | exact (1.0) | tab_0:row7:col2, tab_0:row7:col3, tab_0:row7:col4, tab_0:row7:col5 | — | not captured |
+| CL3 | `Q22` · CL | 27.5 | not captured | not captured | not captured | 0.0276 | exact (1.0) | tab_0:row8:col2, tab_0:row8:col3, tab_0:row8:col4, tab_0:row8:col5 | — | not captured |
 | CLRCL3 | `Q26` · CLR | 0.615 | not captured | not captured | not captured | 0.0769 | llm (0.6) | tab_0:row14:col2, tab_0:row14:col3 | — | not captured |
 
 <details class="legend">
@@ -59,17 +60,23 @@ Blesch KS et al., Clinical pharmacokinetic/pharmacodynami…, Investigational ne
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'CL3' — extend the ontology if this is a real PK parameter (source ['tab_0:row8:col2', 'tab_0:row8:col3', 'tab_0:row8:col4', 'tab_0:row8:col5'])
 - dropped unlinked row (NIL): 'BSAV3' — extend the ontology if this is a real PK parameter (source ['tab_0:row12:col2', 'tab_0:row12:col3'])
-- dropped unlinked row (NIL): 'CLRV3' — extend the ontology if this is a real PK parameter (source ['tab_0:row16:col2', 'tab_0:row16:col3'])
+- dropped duplicate Q26 ('CLRV3', value '0.394') — already have one for this compound
 - dropped value-less row: 'APHCL2'
 - dropped value-less row: 'Res. Error 5 H -DFUR'
 - dropped value-less row: 'Res. Error 5-FU'
-- routed 'Res. Error FBAL 1' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V1); Q22 (CL1); Q64 (V2); Q30 (CL2)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=5-FU
+- dropped unlinked row (NIL): 'Res. Error FBAL 1' — extend the ontology if this is a real PK parameter (source ['tab_0:row26:col2', 'tab_0:row26:col3'])
+- implicit units: LLM call failed (JSONDecodeError) — units left missing
+- metabolite volume: 'V1' Q63→Q61 for 5'-DFUR — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'V2' Q63→Q61 for 5-FU — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'V3' Q63→Q61 for FBAL — it is 1-compartment, so its central volume is its only volume
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V1); Q22 (CL1); Q61 (V2); Q22 (CL2); Q61 (V3); Q22 (CL3)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=capecitabine
 - topology: 4 first-order transfer(s) across 5 compounds → general_linear
-- review gap-fill skipped: this record measures '5-FU', not capecitabine — the review values are the parent's
+- template fit: none — only the metabolite is modelled — no parent compartment
+- row roles (LLM): model_class=compartmental; 15/15 row label(s) assigned, 28 linked by role; re-tagged parent→5'-DFUR ×8, parent→5-FU ×7, parent→FBAL ×16
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_0:row2:col4 = '49 498'
@@ -86,16 +93,17 @@ Blesch KS et al., Clinical pharmacokinetic/pharmacodynami…, Investigational ne
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4', 'tab_0:row4:col5'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row6:col4', 'tab_0:row6:col5'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row8:col2', 'tab_0:row8:col3', 'tab_0:row8:col4', 'tab_0:row8:col5'] |
 | C5_unit_missing_Q26 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row14:col2', 'tab_0:row14:col3'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row6:col4', 'tab_0:row6:col5'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_0:row1:col2', 'tab_0:row1:col3', 'tab_0:row1:col4', 'tab_0:row1:col5', 'tab_0:row10:col4', 'tab_0:row10:col5'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row5:col2'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row7:col2', 'tab_0:row7:col3', 'tab_0:row7:col4', 'tab_0:row7:col5'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row5:col2'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row7:col2', 'tab_0:row7:col3', 'tab_0:row7:col4', 'tab_0:row7:col5'] |
 | C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['tab_0:row2:col2', 'tab_0:row2:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 75.8 | not captured | not captured | ['tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4', 'tab_0:row4:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -147,4 +155,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 13:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:28 UTC</sub>

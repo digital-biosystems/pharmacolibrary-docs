@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Lunar_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # capecitabine — `Capecitabine_Lunar2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,64 +25,26 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:45.646506+00:00) predates the upstream re-run (2026-10-07 16:28:08.819761+00:00). Current validate status: `not captured`.
+
 ## Citation
 Lunar N et al., Population pharmacokinetic and pharmaco…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-020-04208-8](https://doi.org/10.1007/s00280-020-04208-8)
 
 ## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="model_quarantined" stale="false" population="patients with metastatic breast cancer" measured-compound="capecitabine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="" stale="true" population="patients with metastatic breast cancer" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 10 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ka 1 (/h) | `Q49` · kabs | 13.6 | /h | 0.0037777777777777775 | 1/h | not captured | boundary (0.8) | tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col5, tab_0:row5:col6 | — | not captured |
-| t lag1 (h) | `Q83` · tlag | 10.9 | h | 39240.0 | [h] | not captured | llm (0.5) | tab_0:row7:col2, tab_0:row7:col3, tab_0:row7:col5, tab_0:row7:col6 | — | not captured |
-| F 1 | `Q87` · Frel | 14.4 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row9:col2, tab_0:row9:col3, tab_0:row9:col5, tab_0:row9:col6 | — | not captured |
-| V c /F Cap (L) | `Q76` · V/F | 11.8 | L | 0.011800000000000001 | [l] | not captured | llm (0.5) | tab_0:row10:col2, tab_0:row10:col3 | — | not captured |
-| k 10 (/h) | `Q47` · kel | 12.2 | /h | 0.0033888888888888888 | 1/h | not captured | llm (0.5) | tab_0:row11:col2, tab_0:row11:col3, tab_0:row11:col5, tab_0:row11:col6 | — | not captured |
-| k 23 (/h) | `Q303` · k13 | 11.6 | /h | 0.0032222222222222222 | 1/h | not captured | llm (0.5) | tab_0:row12:col2, tab_0:row12:col3, tab_0:row12:col5, tab_0:row12:col6 | — | not captured |
-| k 34 (/h) | `Q304` · k31 | 12.4 | /h | 0.0034444444444444444 | 1/h | not captured | llm (0.5) | tab_0:row13:col2, tab_0:row13:col3, tab_0:row13:col5, tab_0:row13:col6 | — | not captured |
-| k 12 (/h) | `Q301` · k12 | 14.9 | /h | 0.004138888888888889 | 1/h | not captured | llm (0.5) | tab_0:row15:col2, tab_0:row15:col3 | — | not captured |
-| beta_k 40 _t Ratio | `Q21` · AUC ratio | 24 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row17:col1, tab_0:row17:col2, tab_0:row17:col3 | — | not captured |
-| beta_k 23 _t CDA | `Q60` · t1/2β | 44.9 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row18:col2, tab_0:row18:col3 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- unit_dimension_unknown: '/h' (kabs)
-- dropped duplicate Q49 ('ka 2 (/h)', value '12.4') — already have one for this compound
-- dropped duplicate Q83 ('t lag2 (h)', value '13.6') — already have one for this compound
-- unit_dimension_unknown: '/h' (kel)
-- unit_dimension_unknown: '/h' (k13)
-- unit_dimension_unknown: '/h' (k31)
-- dropped duplicate Q47 ('k 40 (/h)', value '16') — already have one for this compound
-- unit_dimension_unknown: '/h' (k12)
-- dropped unlinked row (NIL): 'beta_k 40 _t Age' — extend the ontology if this is a real PK parameter (source ['tab_0:row16:col2', 'tab_0:row16:col3', 'tab_0:row16:col4'])
-- dropped duplicate Q60 ('beta_k 34 _t ALP', value '27.3') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=capecitabine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 3 first-order transfer(s) across 4 compounds → general_linear
-- status held at route_to_review — not promoted
-- unit re-normalised: kabs '/h' now converts (value unchanged)
-- unit re-normalised: kel '/h' now converts (value unchanged)
-- unit re-normalised: k13 '/h' now converts (value unchanged)
-- unit re-normalised: k31 '/h' now converts (value unchanged)
-- unit re-normalised: k12 '/h' now converts (value unchanged)
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_0:row16:col1 = 'Effect of age on k 40'
@@ -91,6 +53,8 @@ Lunar N et al., Population pharmacokinetic and pharmaco…, Cancer chemotherapy 
 - unparsed cell tab_0:row18:col4 = '&lt; 0.001'
 - unparsed cell tab_0:row19:col1 = 'Effect of ALP on k 34'
 - unparsed cell tab_0:row19:col4 = '&lt; 0.001'
+- companion parameter table 2 transcribed (48 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -118,20 +82,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row10:col2', 'tab_0:row10:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_0:row7:col2', 'tab_0:row7:col3', 'tab_0:row7:col5', 'tab_0:row7:col6'] |
-| C5_unit_missing_Q60 | fail | [time] | not captured | not captured | not captured | ['tab_0:row18:col2', 'tab_0:row18:col3'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q76 | pass | volume within physiological range | 11.8 L | not captured | not captured | ['tab_0:row10:col2', 'tab_0:row10:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -180,4 +130,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 13:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:28 UTC</sub>
