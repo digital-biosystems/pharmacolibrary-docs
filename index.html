@@ -164,9 +164,12 @@
     }
     /* ── sites page ────────────────────────────────────────────────────────────
        Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
-       plugin below and never on any other page). Evidence tiers are one blue ramp; the
-       drug colours are the fixed categorical order pk-sites.js carries. */
-    :root { --pks-ev0: #f1f0eb; --pks-ev1: #86b6ef; --pks-ev2: #3987e5; --pks-ev3: #1c5cab;
+       plugin below and never on any other page). Evidence tiers are three light hues —
+       cyan (ADME prose), azure (paper PGx gene), violet (DrugBank actor) — each lighter and
+       cooler than every drug colour, so a tier reads apart from its neighbour (the old single
+       blue ramp did not) and from the drug dots drawn on it; the drug colours are the fixed
+       categorical order pk-sites.js carries. */
+    :root { --pks-ev0: #f1f0eb; --pks-ev1: #9be3e6; --pks-ev2: #8cc4f7; --pks-ev3: #b9a3f0;
       --pks-kid1: #f0a3a3; --pks-kid2: #d94a4a; --pks-kid3: #a3201f;   /* the kidney's and the blood's own ramp on the body */
       --pks-warn: #b4530f; --pks-organ: #e6e4dd; --pks-organ-line: #b9b5aa; --pks-body: #f3f2ed; }
     .pks-results { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
@@ -265,7 +268,7 @@
     .pks-body .slot.e0 { fill: var(--pks-ev0); } .pks-body .slot.e1 { fill: var(--pks-ev1); }
     .pks-body .slot.e2 { fill: var(--pks-ev2); } .pks-body .slot.e3 { fill: var(--pks-ev3); }
     .pks-body .cd { font: 600 7.5px ui-monospace, Menlo, monospace; fill: #94a3b8; pointer-events: none; }
-    .pks-body .cd.on { fill: #fff; }
+    .pks-body .cd.on { fill: #1e293b; }   /* the tiers are light: dark letters on them */
     .pks-body .aff { fill: none; stroke: var(--pks-warn); stroke-width: 2; stroke-dasharray: 3 2; }
     .pks-body .arrow { fill: none; stroke-width: 2; marker-end: url(#pks-ah); }
     .pks-detailbox h4 { margin: 0 0 6px; font-size: 14px; } .pks-detailbox h4.warn { color: var(--pks-warn); margin-top: 12px; }
